@@ -6,6 +6,7 @@ be present. No private assessment sources are read by this tool.
 from pathlib import Path
 import argparse
 import ast
+import copy
 import hashlib
 import json
 import math
@@ -74,53 +75,159 @@ def arithmetic(expression):
     return visit(ast.parse(expression, mode="eval").body)
 
 
+def plan_sources(sources, patches):
+    """Build every proposed file in memory; support original, intermediate or final banks."""
+    parsed = {game: inspect(source) for game, source in sources.items()}
+    locations = {}
+    for game, (sections, records) in parsed.items():
+        # The declaration names, rather than their order, identify auxiliary maps.
+        names = [m[1] for m in DECLARATION.finditer(sources[game])]
+        for name, (_, _, pools) in zip(names, sections):
+            for pool, questions in pools.items():
+                for question in questions:
+                    locations[(game, str(question['id']))] = (name, pool, question, questions)
+    chains = {}
+    for patch in patches:
+        seen = set()
+        for change in patch['changes']:
+            key = (change['game'], str(change['id']))
+            if key in seen or key[0] not in GAMES:
+                raise ValueError(f'Invalid patch identity: {key}')
+            seen.add(key)
+            chain = chains.setdefault(key, [])
+            if chain and change['before'] != chain[-1]['after']:
+                raise ValueError(f'Discontinuous patch history: {key}')
+            chain.append(change)
+    pending = {game: 0 for game in GAMES}
+    destinations = set()
+    for key, chain in chains.items():
+        last = chain[-1]
+        destination = last.get('destination')
+        destination_key = (destination['game'], str(destination['id'])) if destination else key
+        if destination_key in destinations:
+            raise ValueError(f'Duplicate patch destination: {destination_key}')
+        destinations.add(destination_key)
+        if destination_key != key and key in locations and destination_key in locations:
+            raise ValueError(f'Relocation collision: {key} -> {destination_key}; no files written')
+        location = locations.get(key) or locations.get(destination_key)
+        current = fingerprint(location[2]) if location else None
+        accepted = {change['before'] for change in chain} | {change['after'] for change in chain}
+        if current not in accepted:
+            raise ValueError(f'Upstream conflict: {key[0]}/{key[1]}; no files written')
+        if location and destination and current != last['after']:
+            source_location = last.get('source')
+            if source_location and (location[0], location[1]) != (source_location['container'], source_location['pool']):
+                raise ValueError(f'Unexpected source pool: {key}; no files written')
+        already = current == last['after'] and (not destination or (
+            location and destination_key in locations and
+            (location[0], location[1]) == (destination['container'], destination['pool'])))
+        if already:
+            continue
+        record = copy.deepcopy(location[2]) if location else copy.deepcopy(chain[0].get('record'))
+        if record is None:
+            raise ValueError(f'Missing source record: {key}')
+        for change in chain:
+            record.update(change.get('fields', {}))
+            for field in change.get('removeFields', []):
+                record.pop(field, None)
+        if fingerprint(record) != last['after']:
+            raise ValueError(f'Patch fingerprint mismatch: {key}')
+        if destination:
+            target_sections = parsed[destination['game']][0]
+            target_names = [m[1] for m in DECLARATION.finditer(sources[destination['game']])]
+            target_pools = target_sections[target_names.index(destination['container'])][2]
+            target = target_pools[destination['pool']]
+        else:
+            target = location[3]
+        if location and target is location[3]:
+            target[target.index(location[2])] = record
+        else:
+            if location:
+                location[3].remove(location[2])
+            target.append(record)
+        pending[key[0]] += 1
+        if destination_key[0] != key[0]:
+            pending[destination_key[0]] += 1
+    proposed = {}
+    counts = {}
+    for game, (sections, _) in parsed.items():
+        records = {}
+        for _, _, pools in sections:
+            for questions in pools.values():
+                for record in questions:
+                    key = str(record['id'])
+                    if key in records:
+                        raise ValueError(f'Duplicate final ID: {game}/{key}')
+                    records[key] = record
+        validate_records(records)
+        counts[game] = {'records': len(records), 'pending': pending[game]}
+        source = sources[game]
+        if pending[game]:
+            for start, end, pools in reversed(sections):
+                source = source[:start] + json.dumps(pools, ensure_ascii=False, indent=2) + source[end:]
+        proposed[game] = source
+    numeric_checks = [check for patch in patches for check in patch['numericChecks']]
+    for check in numeric_checks:
+        if not math.isclose(arithmetic(check['expression']), check['expected'], abs_tol=1e-9):
+            raise ValueError(f"Numeric check failed: {check['game']}/{check['id']}")
+    return proposed, counts, len(numeric_checks)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true")
     parser.add_argument("--validate", action="store_true")
     args = parser.parse_args()
-    patch = json.loads((HERE / "content-patch.json").read_text(encoding="utf-8"))
-    proposed = []
-    counts = {}
-    seen_changes = set()
-    for change in patch["changes"]:
-        identity = (change["game"], str(change["id"]))
-        if identity in seen_changes or change["game"] not in GAMES:
-            raise ValueError(f"Invalid patch identity: {identity}")
-        seen_changes.add(identity)
+    patches = [json.loads((HERE / name).read_text(encoding='utf-8'))
+               for name in ('content-patch.json', 'continuation-patch.json')]
+    paths = {}
+    sources = {}
     for game in GAMES:
         path = ROOT / "play/managerial-intelligence-directorate" / game / (game.replace("-", "_") + "_question_bank_student.js")
-        source = path.read_text(encoding="utf-8-sig")
-        sections, records = inspect(source)
-        pending = 0
-        for change in patch["changes"]:
-            if change["game"] != game:
-                continue
-            record = records.get(str(change["id"]))
-            current = fingerprint(record) if record else None
-            if current not in (change["before"], change["after"]):
-                raise ValueError(f"Upstream conflict: {game}/{change['id']}; no files written")
-            if current == change["before"]:
-                pending += 1
-                record.update(change["fields"])
-                if fingerprint(record) != change["after"]:
-                    raise ValueError("Patch fingerprint mismatch")
-        validate_records(records)
-        if args.validate and pending:
-            raise ValueError(f"{game}: {pending} pending changes")
-        counts[game] = {"records": len(records), "pending": pending}
-        if pending:
-            for start, end, pools in reversed(sections):
-                source = source[:start] + json.dumps(pools, ensure_ascii=False, indent=2) + source[end:]
-            proposed.append((path, source))
-    for check in patch["numericChecks"]:
-        if not math.isclose(arithmetic(check["expression"]), check["expected"], abs_tol=1e-9):
-            raise ValueError(f"Numeric check failed: {check['game']}/{check['id']}")
+        paths[game] = path
+        sources[game] = path.read_text(encoding='utf-8-sig')
+    proposed, counts, numeric_count = plan_sources(sources, patches)
+    package = json.loads((HERE / 'package-patch.json').read_text(encoding='utf-8'))
+    text_proposals = {}
+    package_pending = 0
+    def public_path(relative):
+        path = (ROOT / relative).resolve()
+        if not path.is_relative_to(ROOT / 'play/managerial-intelligence-directorate'):
+            raise ValueError('Package path escapes Directorate')
+        return path
+    for change in package['textChanges']:
+        path = public_path(change['path'])
+        source = text_proposals.get(path, path.read_text(encoding='utf-8-sig'))
+        if change['after'] in source and change['before'] not in source:
+            continue
+        if source.count(change['before']) != 1 or change['after'] in source:
+            raise ValueError(f'Package text conflict: {path.name}; no files written')
+        text_proposals[path] = source.replace(change['before'], change['after'], 1)
+        package_pending += 1
+    for asset in package['requiredAssets']:
+        path = public_path(asset['path'])
+        if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest() != asset['sha256']:
+            raise ValueError(f'Required practice asset missing or changed: {path.name}')
+    retired = []
+    for asset in package['retiredAssets']:
+        path = public_path(asset['path'])
+        if path.exists():
+            if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest() != asset['sha256']:
+                raise ValueError(f'Retired asset conflict: {path.name}; no files written')
+            retired.append(path)
+            package_pending += 1
+    if args.validate and (any(count['pending'] for count in counts.values()) or package_pending):
+        raise ValueError('Pending changes remain')
     # All upstream, answer, and arithmetic checks finish before the first write.
     if not args.check and not args.validate:
-        for path, source in proposed:
-            path.write_text(source, encoding="utf-8", newline="\n")
-    print(json.dumps({"pass": True, "games": counts, "numericChecks": len(patch["numericChecks"]), "readOnly": args.check or args.validate}))
+        for game, source in proposed.items():
+            if source != sources[game]:
+                paths[game].write_text(source, encoding="utf-8", newline="\n")
+        for path, source in text_proposals.items():
+            path.write_text(source, encoding='utf-8', newline='\n')
+        for path in retired:
+            path.unlink()
+    print(json.dumps({"pass": True, "games": counts, "packagePending": package_pending, "numericChecks": numeric_count, "readOnly": args.check or args.validate}))
 
 
 if __name__ == "__main__":

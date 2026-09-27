@@ -1931,7 +1931,7 @@ const questionBanks = {
     {
       "id": 86,
       "sourceGame": "marketSignal",
-      "q": "At what output does a profit-maximizing monopolist produce?",
+      "q": "For a single-price monopolist with a smooth, concave profit function and a positive interior optimum, which condition determines output?",
       "options": [
         "Where price equals average total cost",
         "Where marginal revenue equals marginal cost",
@@ -1942,18 +1942,18 @@ const questionBanks = {
       "type": "conceptual",
       "objective": "LO9.6",
       "difficulty": "easy",
-      "conceptCluster": "monopoly_analysis",
+      "conceptCluster": "easy_marketSignal_monopoly_output_rule",
       "primarySkill": "monopoly_output_rule",
       "secondarySkills": [],
       "repairSkill": "monopoly_output_rule",
       "commonError": "Using the competitive condition P = MC for a monopolist's output choice",
-      "feedback": "A monopolist chooses output where MR = MC, then uses demand to find price.",
+      "feedback": "At a positive interior profit maximum, marginal revenue equals marginal cost. Price is then read from demand; shutdown and boundary cases require separate checks.",
       "aHash": "50c8a1fd61282ffe57d11f5b914e2326187837ce2d4c0f50378922d5b8af544c"
     },
     {
       "id": 87,
       "sourceGame": "marketSignal",
-      "q": "Compared with a perfectly competitive market, a profit-maximizing monopoly typically charges what price and produces what output?",
+      "q": "Holding demand and cost conditions fixed, how does a single-price monopoly typically compare with a competitive market?",
       "options": [
         "A lower price and higher output",
         "A higher price and higher output",
@@ -1964,7 +1964,7 @@ const questionBanks = {
       "type": "conceptual",
       "objective": "LO9.6",
       "difficulty": "easy",
-      "conceptCluster": "monopoly_analysis",
+      "conceptCluster": "easy_marketSignal_monopoly_market_effects",
       "primarySkill": "monopoly_market_effects",
       "secondarySkills": [],
       "repairSkill": "monopoly_market_effects",
@@ -1986,7 +1986,7 @@ const questionBanks = {
       "type": "conceptual",
       "objective": "LO9.6",
       "difficulty": "easy",
-      "conceptCluster": "monopoly_analysis",
+      "conceptCluster": "easy_marketSignal_barriers_to_entry",
       "primarySkill": "barriers_to_entry",
       "secondarySkills": [],
       "repairSkill": "barriers_to_entry",
@@ -2059,6 +2059,54 @@ const questionBanks = {
       "commonError": "chooses_ex_post_negotiation",
       "feedback": "A clear commitment before the specific investment is made reduces the chance of opportunistic renegotiation after the supplier is locked in.",
       "aHash": "e377f4930797d3d2b06f90ca27bc88a8911251b1fb6a19315989380bbf3467d6"
+    },
+    {
+      "id": 286,
+      "sourceGame": "marketSignal",
+      "q": "A monopolist earns high profit because a license legally excludes rivals. Which change most directly threatens that profit?",
+      "options": [
+        "Fixed cost becomes sunk",
+        "Consumers receive more information about the same product",
+        "The licensing restriction is removed",
+        "The firm reports higher accounting revenue"
+      ],
+      "tag": "legal_barrier_removal",
+      "type": "application",
+      "objective": "LO9.6",
+      "difficulty": "easy",
+      "conceptCluster": "easy_marketSignal_barriers_to_entry",
+      "primarySkill": "barriers_to_entry",
+      "secondarySkills": [],
+      "repairSkill": "barriers_to_entry",
+      "commonError": "Focusing on past cost rather than the source of market power",
+      "feedback": "Removing the legal barrier permits entry and weakens monopoly pricing power.",
+      "aHash": "91baf043e3abb7efd397c8ba96724753bac0c8d57da02e254e3f61dda2f29651"
+    },
+    {
+      "id": 357,
+      "sourceGame": "marketSignal",
+      "q": "Refer to the graph. Which paired shocks move equilibrium from S2/D2 to S1/D1?",
+      "options": [
+        "An increase in demand and a decrease in supply",
+        "A decrease in demand and an increase in supply",
+        "A decrease in both demand and supply",
+        "An increase in both demand and supply"
+      ],
+      "tag": "reverse_engineer_graph_shifts",
+      "type": "graph",
+      "objective": "LO8.3",
+      "difficulty": "easy",
+      "conceptCluster": "easy_marketSignal_comparative_statics",
+      "primarySkill": "comparative_statics",
+      "secondarySkills": [
+        "shock_identification"
+      ],
+      "repairSkill": "comparative_statics",
+      "commonError": "Reading the final price alone and ignoring the curve labels",
+      "feedback": "Moving D2 to D1 is a demand decrease; moving S2 to S1 is a supply increase.",
+      "image": "market_curves_independent.svg",
+      "graphRequired": true,
+      "aHash": "6e165861ca509c544223df71ec7f74a9bcd121faf80bba1d4e4546dcf393166e"
     }
   ],
   "medium": [
@@ -3405,50 +3453,50 @@ const questionBanks = {
       "sourceGame": "marketSignal",
       "q": "Refer to the graph. Which price and quantity occur where S2 intersects D1?",
       "options": [
-        "$14 and 65 units",
-        "$16 and 40 units",
-        "$18 and 65 units",
-        "$16 and 80 units"
+        "$48 and 72 units",
+        "$60 and 48 units",
+        "$72 and 72 units",
+        "$60 and 96 units"
       ],
       "tag": "numeric_equilibrium_reading",
       "type": "graph",
       "objective": "LO8.3",
       "difficulty": "medium",
-      "conceptCluster": "market_equilibrium",
+      "conceptCluster": "medium_marketSignal_graph_equilibrium_reading",
       "primarySkill": "graph_equilibrium_reading",
       "secondarySkills": [],
       "repairSkill": "graph_equilibrium_reading",
       "commonError": "Reading values from the wrong pair of curves",
-      "feedback": "S2 and D1 intersect at price $16 and quantity 40.",
-      "image": "demand_supply_two.png",
+      "feedback": "S2 and D1 intersect at price $60 and quantity 48.",
+      "image": "market_curves_independent.svg",
       "graphRequired": true,
-      "aHash": "83e8d109c8a4f39e0ac7467b1adaaba712fb68c7303d39fc86755f2b3befb24a"
+      "aHash": "b7e6e3ce145cfba77117d08ca10b4f56d6560b5ab572a8bdaf4d3a4e43bb343c"
     },
     {
       "id": 161,
       "sourceGame": "marketSignal",
-      "q": "Refer to the graph. The market is initially at S2 and D1. If a price ceiling is set at $14, what shortage results?",
+      "q": "The market is initially at S2 and D1 in the supplied graph. A price ceiling of $48 is enforced. What shortage results?",
       "options": [
-        "15 units",
-        "25 units",
-        "65 units",
-        "40 units"
+        "96 units",
+        "24 units",
+        "72 units",
+        "48 units"
       ],
       "tag": "price_ceiling_graph",
       "type": "graph_calculation",
       "objective": "LO8.3",
       "difficulty": "medium",
-      "conceptCluster": "market_equilibrium",
+      "conceptCluster": "medium_marketSignal_shortage_surplus_calculation",
       "primarySkill": "shortage_surplus_calculation",
       "secondarySkills": [
         "graph_equilibrium_reading"
       ],
       "repairSkill": "shortage_surplus_calculation",
       "commonError": "Using equilibrium quantities rather than quantities at the controlled price",
-      "feedback": "At $14, demand on D1 is 65 and supply on S2 is 25, producing a shortage of 40.",
-      "image": "demand_supply_two.png",
+      "feedback": "At P=48, D1 gives Qd=72 and S2 gives Qs=24. The shortage is 72-24=48 units.",
+      "image": "market_curves_independent.svg",
       "graphRequired": true,
-      "aHash": "36ebe0425d5dd2a9a3acf9ce39a1c0264e2a4990822c8ba77839516f6709fc7a"
+      "aHash": "22378163dd57f31f264b621af3fbfe78ef49660081b63c3dd37dea3f48739a23"
     },
     {
       "id": 162,
@@ -3479,72 +3527,72 @@ const questionBanks = {
       "sourceGame": "marketSignal",
       "q": "Refer to the graph. The market starts at S2 and D1. A fall in input prices shifts supply to S1 while demand stays at D1. What is the new equilibrium?",
       "options": [
-        "$16 and 40 units",
-        "$16 and 80 units",
-        "$18 and 65 units",
-        "$14 and 65 units"
+        "$60 and 48 units",
+        "$60 and 96 units",
+        "$72 and 72 units",
+        "$48 and 72 units"
       ],
       "tag": "supply_shift_graph",
       "type": "graph",
       "objective": "LO8.4",
       "difficulty": "medium",
-      "conceptCluster": "comparative_statics",
+      "conceptCluster": "medium_marketSignal_supply_shift_analysis",
       "primarySkill": "supply_shift_analysis",
       "secondarySkills": [],
       "repairSkill": "supply_shift_analysis",
       "commonError": "Shifting demand when the shock changes production cost",
-      "feedback": "The supply increase moves equilibrium from S2-D1 to S1-D1: price $14, quantity 65.",
-      "image": "demand_supply_two.png",
+      "feedback": "The supply increase moves equilibrium from S2-D1 to S1-D1: price $48, quantity 72.",
+      "image": "market_curves_independent.svg",
       "graphRequired": true,
-      "aHash": "8bc3042cd4eb121c9e5ec73dde043f6244992784ceeff712a20e3887f0b2f1a7"
+      "aHash": "859fc440afca0364bf4995226ff0e0548c5831225e93b09dcc0b23a58063c2fb"
     },
     {
       "id": 164,
       "sourceGame": "marketSignal",
       "q": "Refer to the graph. The market starts at S2 and D1. Demand rises to D2 while supply remains S2. What is the new equilibrium?",
       "options": [
-        "$14 and 65 units",
-        "$18 and 65 units",
-        "$16 and 40 units",
-        "$16 and 80 units"
+        "$48 and 72 units",
+        "$72 and 72 units",
+        "$60 and 48 units",
+        "$60 and 96 units"
       ],
       "tag": "demand_shift_numeric_graph",
       "type": "graph",
       "objective": "LO8.4",
       "difficulty": "medium",
-      "conceptCluster": "comparative_statics",
+      "conceptCluster": "medium_marketSignal_demand_shift_analysis",
       "primarySkill": "demand_shift_analysis",
       "secondarySkills": [],
       "repairSkill": "demand_shift_analysis",
       "commonError": "Reading the intersection with the shifted supply curve",
-      "feedback": "The S2-D2 intersection is price $18 and quantity 65.",
-      "image": "demand_supply_two.png",
+      "feedback": "The S2-D2 intersection is price $72 and quantity 72.",
+      "image": "market_curves_independent.svg",
       "graphRequired": true,
-      "aHash": "7a4d1d67c34813756a5ac2b405777fd6e60d42bc85a5e9afadcece4f98c641a8"
+      "aHash": "b252583dee97de3971d0b43d3fa26ecd48109f66bf37014e042158898c341bf9"
     },
     {
       "id": 165,
       "sourceGame": "marketSignal",
       "q": "Refer to the graph. The market starts at S2 and D1. Demand rises to D2 and supply rises to S1. What happens?",
       "options": [
-        "Quantity rises to 80 while price remains $16",
-        "Price rises to $18 while quantity stays 40",
-        "Price falls to $14 while quantity stays 40",
-        "Quantity falls to 25 while price remains $16"
+        "Quantity rises to 96 while price remains $60",
+        "Price rises to $72 while quantity stays 48",
+        "Price falls to $48 while quantity stays 48",
+        "Quantity falls to 24 while price remains $60"
       ],
       "tag": "simultaneous_increases_graph",
       "type": "graph",
       "objective": "LO8.4",
       "difficulty": "medium",
-      "conceptCluster": "comparative_statics",
+      "conceptCluster": "medium_marketSignal_simultaneous_shift_analysis",
       "primarySkill": "simultaneous_shift_analysis",
       "secondarySkills": [],
       "repairSkill": "simultaneous_shift_analysis",
       "commonError": "Analyzing only one shift or assuming both price and quantity must change",
-      "feedback": "The market moves from S2-D1 to S1-D2; quantity doubles from 40 to 80 while price stays $16.",
-      "image": "demand_supply_two.png",
+      "feedback": "The market moves from S2-D1 to S1-D2; quantity doubles from 48 to 96 while price stays $60.",
+      "image": "market_curves_independent.svg",
       "graphRequired": true,
-      "aHash": "2a96cdfb2e5c688ea970d241fb1696b8406ea4a9dfc5a8f376fac5d749c4d3c7"
+      "aHash": "357706c390f1a3edc2e626f3be696cec68c9eb0f3bbeca55b063732945896bed"
     },
     {
       "id": 166,
@@ -3984,7 +4032,7 @@ const questionBanks = {
       "type": "calculation",
       "objective": "LO9.6",
       "difficulty": "medium",
-      "conceptCluster": "monopoly_analysis",
+      "conceptCluster": "medium_marketSignal_monopoly_marginal_revenue",
       "primarySkill": "monopoly_marginal_revenue",
       "secondarySkills": [],
       "repairSkill": "monopoly_marginal_revenue",
@@ -4006,7 +4054,7 @@ const questionBanks = {
       "type": "calculation",
       "objective": "LO9.6",
       "difficulty": "medium",
-      "conceptCluster": "monopoly_analysis",
+      "conceptCluster": "medium_marketSignal_monopoly_profit_calculation",
       "primarySkill": "monopoly_profit_calculation",
       "secondarySkills": [],
       "repairSkill": "monopoly_profit_calculation",
@@ -4028,7 +4076,7 @@ const questionBanks = {
       "type": "conceptual",
       "objective": "LO9.6",
       "difficulty": "medium",
-      "conceptCluster": "monopoly_analysis",
+      "conceptCluster": "medium_marketSignal_monopoly_market_effects",
       "primarySkill": "monopoly_market_effects",
       "secondarySkills": [],
       "repairSkill": "monopoly_market_effects",
@@ -4145,6 +4193,274 @@ const questionBanks = {
       "commonError": "misses_renegotiation_risk",
       "feedback": "The key is specificity. Once the investment is made, its value is tied to one relationship, which creates renegotiation risk.",
       "aHash": "86579f3129d1d25e0d1529a9395ac83a183f635b057a7a0ad6c2c5dafef1cf6f"
+    },
+    {
+      "id": 255,
+      "sourceGame": "marketSignal",
+      "q": "Using the numerical graph, the market begins at S2 and D1. Demand rises to D2 while supply rises to S1. What is the final equilibrium?",
+      "options": [
+        "$48 and 72 units",
+        "$72 and 72 units",
+        "$60 and 48 units",
+        "$60 and 96 units"
+      ],
+      "tag": "graph_two_shift_numeric",
+      "type": "graph",
+      "objective": "LO8.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_simultaneous_shift_analysis",
+      "primarySkill": "simultaneous_shift_analysis",
+      "secondarySkills": [],
+      "repairSkill": "simultaneous_shift_analysis",
+      "commonError": "Stopping after only one curve shifts",
+      "feedback": "The final intersection of S1 and D2 is price $60 and quantity 96.",
+      "image": "market_curves_independent.svg",
+      "graphRequired": true,
+      "aHash": "47d40ca16e75404b0ab5e6f86a780ccebef8ec7c2ec217b77b66937a5dcc390f"
+    },
+    {
+      "id": 256,
+      "sourceGame": "marketSignal",
+      "q": "Using the numerical graph, the market begins at S1 and D1. Demand increases to D2. What are the changes in equilibrium price and quantity?",
+      "options": [
+        "Price rises by $12 and quantity rises by 24",
+        "Price falls by $12 and quantity rises by 24",
+        "Price rises by $24 and quantity rises by 48",
+        "Price stays at $48 and quantity rises by 48"
+      ],
+      "tag": "graph_demand_shift_numeric",
+      "type": "graph",
+      "objective": "LO8.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_equilibrium_change_calculation",
+      "primarySkill": "equilibrium_change_calculation",
+      "secondarySkills": [],
+      "repairSkill": "equilibrium_change_calculation",
+      "commonError": "Reading the starting equilibrium from S2 instead of S1",
+      "feedback": "The market moves from $48, 72 to $60, 96.",
+      "image": "market_curves_independent.svg",
+      "graphRequired": true,
+      "aHash": "828143e5547060b9a3d47f376b954994f77d8b8084ab9f755ef6cf18795bdd99"
+    },
+    {
+      "id": 257,
+      "sourceGame": "marketSignal",
+      "q": "Using the numerical graph, the market begins at S2 and D2. Supply increases to S1. What happens to equilibrium?",
+      "options": [
+        "Price rises by $12 and quantity rises by 24",
+        "Price falls by $12 and quantity rises by 24",
+        "Price falls by $24 and quantity rises by 48",
+        "Price remains $72 and quantity rises by 48"
+      ],
+      "tag": "graph_supply_shift_numeric",
+      "type": "graph",
+      "objective": "LO8.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_equilibrium_change_calculation",
+      "primarySkill": "equilibrium_change_calculation",
+      "secondarySkills": [],
+      "repairSkill": "equilibrium_change_calculation",
+      "commonError": "Following the wrong supply curve",
+      "feedback": "The market moves from $72, 72 to $60, 96.",
+      "image": "market_curves_independent.svg",
+      "graphRequired": true,
+      "aHash": "07e176fa9bf6f353e0ff6a827a88f2905e6df187e829d29ae82eab8a0f8fbf7c"
+    },
+    {
+      "id": 281,
+      "sourceGame": "marketSignal",
+      "q": "A monopolist can sell 5 units at $50 each or 6 units at $46 each. What is marginal revenue from the sixth unit?",
+      "options": [
+        "$46",
+        "$26",
+        "$30",
+        "$276"
+      ],
+      "tag": "discrete_monopoly_mr",
+      "type": "calculation",
+      "objective": "LO9.6",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_monopoly_marginal_revenue",
+      "primarySkill": "monopoly_marginal_revenue",
+      "secondarySkills": [],
+      "repairSkill": "monopoly_marginal_revenue",
+      "commonError": "Using the new price as marginal revenue",
+      "feedback": "Total revenue rises from $250 to $276, so marginal revenue is $26.",
+      "aHash": "cacb3ebb9daea349b98ecba89f0a89f62e4973b77eea3be2521cc61625c88301"
+    },
+    {
+      "id": 282,
+      "sourceGame": "marketSignal",
+      "q": "A monopolist charges $60, sells 40 units, has variable cost of $20 per unit, and fixed cost of $400. What is profit?",
+      "options": [
+        "$800",
+        "$1,600",
+        "$1,200",
+        "$2,000"
+      ],
+      "tag": "monopoly_profit_hard",
+      "type": "calculation",
+      "objective": "LO9.6",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_monopoly_profit_calculation",
+      "primarySkill": "monopoly_profit_calculation",
+      "secondarySkills": [],
+      "repairSkill": "monopoly_profit_calculation",
+      "commonError": "Ignoring fixed cost or using revenue as profit",
+      "feedback": "Profit is ($60 - $20)×40 - $400 = $1,200.",
+      "aHash": "1dcc7619134cdb1de916b106a96326de3a8ac9eb25d79c57ce00de777b3203e1"
+    },
+    {
+      "id": 287,
+      "sourceGame": "marketSignal",
+      "q": "A regulator forces a natural monopoly to charge price equal to average total cost rather than its unregulated monopoly price. What is the intended result?",
+      "options": [
+        "Maximum monopoly profit",
+        "Price below average variable cost",
+        "Permanent positive economic profit sufficient to attract new competitors into the regulated market",
+        "Lower price while allowing the firm to cover total cost"
+      ],
+      "tag": "average_cost_regulation",
+      "type": "application",
+      "objective": "LO9.6",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_monopoly_regulation",
+      "primarySkill": "monopoly_regulation",
+      "secondarySkills": [],
+      "repairSkill": "monopoly_regulation",
+      "commonError": "Confusing average-cost regulation with marginal-cost pricing or profit maximization",
+      "feedback": "Average-cost pricing aims to limit price while preserving financial viability.",
+      "aHash": "4b2055e748f61ee2ab70b6b3c6eab70dd07a0e0531b34d1f6393678f87a593f9"
+    },
+    {
+      "id": 386,
+      "sourceGame": "marketSignal",
+      "q": "A monopolist sells 30 units at $70. To sell 31 units it must lower price to $68 on all units. What is marginal revenue of the 31st unit?",
+      "options": [
+        "$68",
+        "$60",
+        "$8",
+        "-$2"
+      ],
+      "tag": "discrete_monopoly_marginal_revenue",
+      "type": "calculation",
+      "objective": "LO9.6",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_monopoly_output_rule",
+      "primarySkill": "monopoly_output_rule",
+      "secondarySkills": [
+        "total_revenue"
+      ],
+      "repairSkill": "monopoly_output_rule",
+      "commonError": "Treating the new unit’s price as marginal revenue and ignoring the price cut on prior units",
+      "feedback": "Revenue rises from $2,100 to $2,108, so marginal revenue is $8.",
+      "aHash": "5282dcb73b7e25acd120ba7db666af3861553abaa9cfa5968b124049b9ed1d94"
+    },
+    {
+      "id": 9057,
+      "sourceGame": "marketSignal",
+      "q": "A market begins at S2 and D1. Demand rises to D2 while supply rises to S1. What happens to equilibrium price and quantity?",
+      "options": [
+        "Price rises to $72 and quantity rises to 72",
+        "Price remains $60; quantity becomes 96",
+        "Price falls to $48 and quantity rises to 72",
+        "Price remains $60 and quantity remains 48"
+      ],
+      "tag": "numeric_graph_double_shift",
+      "type": "graph_analysis",
+      "objective": "LO8.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_simultaneous_shift_analysis",
+      "primarySkill": "simultaneous_shift_analysis",
+      "secondarySkills": [
+        "graph_equilibrium_reading",
+        "reverse_shift_inference"
+      ],
+      "repairSkill": "simultaneous_market_changes",
+      "commonError": "Following only one shift or assuming two increases must raise price",
+      "feedback": "The move from S2/D1 to S1/D2 doubles quantity while the opposing price effects cancel.",
+      "image": "market_curves_independent.svg",
+      "graphRequired": true,
+      "aHash": "13b11b27dfacbbd6ac6f410d6583fb99e3284b3f23107148353e76fc5c6c5447"
+    },
+    {
+      "id": 9058,
+      "sourceGame": "marketSignal",
+      "q": "The market begins at S1 and D2. A production-cost increase shifts supply to S2 while demand simultaneously falls to D1. Where does the market end?",
+      "options": [
+        "At price $72 and quantity 72",
+        "At price $48 and quantity 72",
+        "At price $60 and quantity 48",
+        "At price $60 and quantity 96"
+      ],
+      "tag": "numeric_graph_reverse_double_shift",
+      "type": "graph_analysis",
+      "objective": "LO8.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_simultaneous_shift_analysis",
+      "primarySkill": "simultaneous_shift_analysis",
+      "secondarySkills": [
+        "graph_equilibrium_reading",
+        "supply_shift_analysis"
+      ],
+      "repairSkill": "simultaneous_market_changes",
+      "commonError": "Reading the wrong starting supply curve or reversing the direction of a cost increase",
+      "feedback": "A cost increase moves supply left from S1 to S2; a demand decrease moves D2 to D1. Their intersection is $60 and 48.",
+      "image": "market_curves_independent.svg",
+      "graphRequired": true,
+      "aHash": "36febedf5c7758cc0a913ada33e0c4e32badcc478114facf2b9948888a2e27e6"
+    },
+    {
+      "id": 9153,
+      "sourceGame": "marketSignal",
+      "q": "Refer to the numerical graph. Which pair of distinct curve combinations produces the same equilibrium quantity of 72 but different prices?",
+      "options": [
+        "S2 with D1 produces $60, while S1 with D2 produces $60",
+        "S2 with D2 produces $72, while S1 with D1 produces $48",
+        "S2 with D2 produces $60, while S1 with D1 produces $72",
+        "S2 with D1 produces $48, while S1 with D2 produces $72"
+      ],
+      "tag": "boss_numeric_graph_same_quantity",
+      "type": "graph_analysis",
+      "objective": "LO8.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_graph_equilibrium_reading",
+      "primarySkill": "graph_equilibrium_reading",
+      "secondarySkills": [
+        "demand_supply_shifts",
+        "equilibrium_comparison"
+      ],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Matching a price label with the wrong curve intersection",
+      "feedback": "The graph shows Q=72 at S2-D2 with P=$72 and at S1-D1 with P=$48.",
+      "image": "market_curves_independent.svg",
+      "graphRequired": true,
+      "aHash": "b6faa71fcf2856defe71e6ddb90a7350a9057ac94fc0e185d98d9dc13c350d18"
+    },
+    {
+      "id": 9183,
+      "sourceGame": "marketSignal",
+      "q": "A monopolist sells 100 units at $50. To sell 110 units, it must cut price to $48 on all units. What is marginal revenue per additional unit over this expansion?",
+      "options": [
+        "$48 per unit",
+        "$30 per unit",
+        "-$2 per unit",
+        "$28 per unit"
+      ],
+      "tag": "boss_discrete_marginal_revenue",
+      "type": "calculation",
+      "objective": "LO9.6",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_monopoly_marginal_revenue",
+      "primarySkill": "monopoly_marginal_revenue",
+      "secondarySkills": [
+        "total_revenue",
+        "monopoly_output_rule"
+      ],
+      "repairSkill": "monopoly_output_profit",
+      "commonError": "Using the new price as marginal revenue or looking only at the $2 price cut",
+      "feedback": "Total revenue rises from $5,000 to $5,280, a $280 gain over 10 units, so MR is $28 per unit.",
+      "aHash": "b3dedcdf57c3805b4dc9b02425ce83ac5712964d692038b046f1748abd1253d0"
     }
   ],
   "hard": [
@@ -5185,50 +5501,50 @@ const questionBanks = {
     {
       "id": 247,
       "sourceGame": "marketSignal",
-      "q": "Using the graph, the market begins at S2 and D2. A price ceiling of $14 creates what immediate outcome?",
+      "q": "Using the graph, the market begins at S2 and D2. A price ceiling of $48 creates what immediate outcome?",
       "options": [
-        "A surplus of 70 units",
-        "A shortage of 40 units",
-        "No shortage because $14 is an equilibrium price",
-        "A shortage of 70 units"
+        "A surplus of 96 units",
+        "A shortage of 48 units",
+        "No shortage because $48 is an equilibrium price",
+        "A shortage of 96 units"
       ],
       "tag": "graph_price_ceiling",
       "type": "graph",
       "objective": "LO8.3",
       "difficulty": "hard",
-      "conceptCluster": "market_equilibrium",
+      "conceptCluster": "hard_marketSignal_price_control_analysis",
       "primarySkill": "price_control_analysis",
       "secondarySkills": [],
       "repairSkill": "price_control_analysis",
       "commonError": "Reading quantities from the wrong curves",
-      "feedback": "At $14, quantity demanded on D2 is 95 and quantity supplied on S2 is 25, so shortage is 70.",
-      "image": "demand_supply_two.png",
+      "feedback": "At $48, quantity demanded on D2 is 120 and quantity supplied on S2 is 24, so shortage is 96.",
+      "image": "market_curves_independent.svg",
       "graphRequired": true,
-      "aHash": "6a0551c655ea7771eec732880d40eb3a9e35814dc4ca58fd611e5cef3b7acae7"
+      "aHash": "f86513a4d50220671966a282abf0ed56a8d36f638584fa143232570854ecc01f"
     },
     {
       "id": 248,
       "sourceGame": "marketSignal",
-      "q": "Using the graph, the market begins at S1 and D1. A price floor of $18 creates what immediate outcome?",
+      "q": "Using the graph, the market begins at S1 and D1. A price floor of $72 creates what immediate outcome?",
       "options": [
-        "A surplus of 70 units",
-        "A shortage of 70 units",
-        "A surplus of 30 units",
-        "No surplus because $18 is below equilibrium"
+        "A surplus of 96 units",
+        "A shortage of 96 units",
+        "A surplus of 48 units",
+        "No surplus because $72 is below equilibrium"
       ],
       "tag": "graph_price_floor",
       "type": "graph",
       "objective": "LO8.3",
       "difficulty": "hard",
-      "conceptCluster": "market_equilibrium",
+      "conceptCluster": "hard_marketSignal_price_control_analysis",
       "primarySkill": "price_control_analysis",
       "secondarySkills": [],
       "repairSkill": "price_control_analysis",
       "commonError": "Reversing demanded and supplied quantities",
-      "feedback": "At $18, supply on S1 is 95 and demand on D1 is 25, creating a 70-unit surplus.",
-      "image": "demand_supply_two.png",
+      "feedback": "At $72, supply on S1 is 120 and demand on D1 is 24, creating a 96-unit surplus.",
+      "image": "market_curves_independent.svg",
       "graphRequired": true,
-      "aHash": "7cfe132a6cbc2031a6507fc713bba946e9d46e34965a006db020c4d65d2d7d22"
+      "aHash": "6553530ff518d7f3b791c323cbec0210ee3fcef493d21744ad5ccca5a751f52d"
     },
     {
       "id": 249,
@@ -5369,78 +5685,6 @@ const questionBanks = {
       "image": "demand_supply.png",
       "graphRequired": true,
       "aHash": "8e7f68745bb606048950a396f2a91fd4250ba2596dae0d59f2faa3208135e19a"
-    },
-    {
-      "id": 255,
-      "sourceGame": "marketSignal",
-      "q": "Using the numerical graph, the market begins at S2 and D1. Demand rises to D2 while supply rises to S1. What is the final equilibrium?",
-      "options": [
-        "$14 and 65 units",
-        "$18 and 65 units",
-        "$16 and 40 units",
-        "$16 and 80 units"
-      ],
-      "tag": "graph_two_shift_numeric",
-      "type": "graph",
-      "objective": "LO8.4",
-      "difficulty": "hard",
-      "conceptCluster": "comparative_statics",
-      "primarySkill": "simultaneous_shift_analysis",
-      "secondarySkills": [],
-      "repairSkill": "simultaneous_shift_analysis",
-      "commonError": "Stopping after only one curve shifts",
-      "feedback": "The final intersection of S1 and D2 is price $16 and quantity 80.",
-      "image": "demand_supply_two.png",
-      "graphRequired": true,
-      "aHash": "6f556cf01c84d78b94798d81c4143d28ad3413d05487f7b54573ae40e36c342e"
-    },
-    {
-      "id": 256,
-      "sourceGame": "marketSignal",
-      "q": "Using the numerical graph, the market begins at S1 and D1. Demand increases to D2. What are the changes in equilibrium price and quantity?",
-      "options": [
-        "Price rises by $2 and quantity rises by 15",
-        "Price falls by $2 and quantity rises by 15",
-        "Price rises by $4 and quantity rises by 40",
-        "Price stays at $14 and quantity rises by 30"
-      ],
-      "tag": "graph_demand_shift_numeric",
-      "type": "graph",
-      "objective": "LO8.4",
-      "difficulty": "hard",
-      "conceptCluster": "comparative_statics",
-      "primarySkill": "equilibrium_change_calculation",
-      "secondarySkills": [],
-      "repairSkill": "equilibrium_change_calculation",
-      "commonError": "Reading the starting equilibrium from S2 instead of S1",
-      "feedback": "The market moves from $14, 65 to $16, 80.",
-      "image": "demand_supply_two.png",
-      "graphRequired": true,
-      "aHash": "3f44445ce57881fc326800aab4ee5b126e076098b1145d350e361bcb219721b4"
-    },
-    {
-      "id": 257,
-      "sourceGame": "marketSignal",
-      "q": "Using the numerical graph, the market begins at S2 and D2. Supply increases to S1. What happens to equilibrium?",
-      "options": [
-        "Price rises by $2 and quantity rises by 15",
-        "Price falls by $2 and quantity rises by 15",
-        "Price falls by $4 and quantity rises by 40",
-        "Price remains $18 and quantity rises by 30"
-      ],
-      "tag": "graph_supply_shift_numeric",
-      "type": "graph",
-      "objective": "LO8.4",
-      "difficulty": "hard",
-      "conceptCluster": "comparative_statics",
-      "primarySkill": "equilibrium_change_calculation",
-      "secondarySkills": [],
-      "repairSkill": "equilibrium_change_calculation",
-      "commonError": "Following the wrong supply curve",
-      "feedback": "The market moves from $18, 65 to $16, 80.",
-      "image": "demand_supply_two.png",
-      "graphRequired": true,
-      "aHash": "97514b234d440ecc152959ef546d9c04686b2b945ee9c378a9a210e84a1cb07b"
     },
     {
       "id": 258,
@@ -5946,7 +6190,7 @@ const questionBanks = {
       "type": "calculation",
       "objective": "LO9.6",
       "difficulty": "hard",
-      "conceptCluster": "monopoly_analysis",
+      "conceptCluster": "hard_marketSignal_monopoly_price_output",
       "primarySkill": "monopoly_price_output",
       "secondarySkills": [],
       "repairSkill": "monopoly_price_output",
@@ -5955,53 +6199,9 @@ const questionBanks = {
       "aHash": "48eb01c7764e23f1783cbc18c3da53c8b2112e54df71d0fd2b428350acdd0917"
     },
     {
-      "id": 281,
-      "sourceGame": "marketSignal",
-      "q": "A monopolist can sell 5 units at $50 each or 6 units at $46 each. What is marginal revenue from the sixth unit?",
-      "options": [
-        "$46",
-        "$26",
-        "$30",
-        "$276"
-      ],
-      "tag": "discrete_monopoly_mr",
-      "type": "calculation",
-      "objective": "LO9.6",
-      "difficulty": "hard",
-      "conceptCluster": "monopoly_analysis",
-      "primarySkill": "monopoly_marginal_revenue",
-      "secondarySkills": [],
-      "repairSkill": "monopoly_marginal_revenue",
-      "commonError": "Using the new price as marginal revenue",
-      "feedback": "Total revenue rises from $250 to $276, so marginal revenue is $26.",
-      "aHash": "cacb3ebb9daea349b98ecba89f0a89f62e4973b77eea3be2521cc61625c88301"
-    },
-    {
-      "id": 282,
-      "sourceGame": "marketSignal",
-      "q": "A monopolist charges $60, sells 40 units, has variable cost of $20 per unit, and fixed cost of $400. What is profit?",
-      "options": [
-        "$800",
-        "$1,600",
-        "$1,200",
-        "$2,000"
-      ],
-      "tag": "monopoly_profit_hard",
-      "type": "calculation",
-      "objective": "LO9.6",
-      "difficulty": "hard",
-      "conceptCluster": "monopoly_analysis",
-      "primarySkill": "monopoly_profit_calculation",
-      "secondarySkills": [],
-      "repairSkill": "monopoly_profit_calculation",
-      "commonError": "Ignoring fixed cost or using revenue as profit",
-      "feedback": "Profit is ($60 - $20)×40 - $400 = $1,200.",
-      "aHash": "1dcc7619134cdb1de916b106a96326de3a8ac9eb25d79c57ce00de777b3203e1"
-    },
-    {
       "id": 283,
       "sourceGame": "marketSignal",
-      "q": "A competitive market would produce 80 units at $20, but a monopolist produces 40 units at $60. Which statement is correct?",
+      "q": "Demand is P = 100 - Q and marginal cost is $20, with no externalities or fixed costs. Competition produces 80 units at $20; single-price monopoly produces 40 at $60. Which statement is correct?",
       "options": [
         "All lost consumer surplus becomes monopoly profit, so no total surplus is destroyed",
         "Monopoly raises total surplus because price is higher",
@@ -6012,35 +6212,13 @@ const questionBanks = {
       "type": "application",
       "objective": "LO9.6",
       "difficulty": "hard",
-      "conceptCluster": "monopoly_analysis",
+      "conceptCluster": "hard_marketSignal_monopoly_market_effects",
       "primarySkill": "monopoly_market_effects",
       "secondarySkills": [],
       "repairSkill": "monopoly_market_effects",
       "commonError": "Treating every consumer loss as a transfer to the monopolist",
       "feedback": "Some consumer surplus becomes profit, but mutually beneficial trades between 40 and 80 units disappear.",
       "aHash": "b02f550b84479e2aa2f1913ebf746cfbb5ab3a0d2d9d3b4b3a2c279e50291c34"
-    },
-    {
-      "id": 284,
-      "sourceGame": "marketSignal",
-      "q": "A monopolist can separate two markets. In market A, demand is P = 80 - Q. In market B, demand is P = 50 - 0.5Q. Marginal cost is $20. What prices maximize profit?",
-      "options": [
-        "$50 in A and $35 in B",
-        "$40 in A and $30 in B",
-        "$60 in A and $40 in B",
-        "$50 in both markets"
-      ],
-      "tag": "third_degree_price_discrimination",
-      "type": "calculation",
-      "objective": "LO9.6",
-      "difficulty": "hard",
-      "conceptCluster": "monopoly_analysis",
-      "primarySkill": "price_discrimination_calculation",
-      "secondarySkills": [],
-      "repairSkill": "price_discrimination_calculation",
-      "commonError": "Charging one price or equating price directly to marginal cost",
-      "feedback": "Set each market’s marginal revenue to $20: QA = 30 and QB = 30, giving prices $50 and $35.",
-      "aHash": "2a9e98bdf86a8cf0f937b7571f78fd2f2174f379481092a2ba726536340fd216"
     },
     {
       "id": 285,
@@ -6056,57 +6234,13 @@ const questionBanks = {
       "type": "calculation",
       "objective": "LO9.6",
       "difficulty": "hard",
-      "conceptCluster": "monopoly_analysis",
+      "conceptCluster": "hard_marketSignal_monopoly_price_output",
       "primarySkill": "monopoly_price_output",
       "secondarySkills": [],
       "repairSkill": "monopoly_price_output",
       "commonError": "Using the competitive rule P = MC",
       "feedback": "With MR = 70 - 2Q, Q falls from 30 to 25; demand then gives prices $40 and $45.",
       "aHash": "de8cc8c55b06c3516eaa8eb385067193a32ce39125e33d29658f0cdbcc0020ba"
-    },
-    {
-      "id": 286,
-      "sourceGame": "marketSignal",
-      "q": "A monopolist earns high profit because a license legally excludes rivals. Which change most directly threatens that profit?",
-      "options": [
-        "Fixed cost becomes sunk",
-        "Consumers receive more information about the same product",
-        "The licensing restriction is removed",
-        "The firm reports higher accounting revenue"
-      ],
-      "tag": "legal_barrier_removal",
-      "type": "application",
-      "objective": "LO9.6",
-      "difficulty": "hard",
-      "conceptCluster": "monopoly_analysis",
-      "primarySkill": "barriers_to_entry",
-      "secondarySkills": [],
-      "repairSkill": "barriers_to_entry",
-      "commonError": "Focusing on past cost rather than the source of market power",
-      "feedback": "Removing the legal barrier permits entry and weakens monopoly pricing power.",
-      "aHash": "91baf043e3abb7efd397c8ba96724753bac0c8d57da02e254e3f61dda2f29651"
-    },
-    {
-      "id": 287,
-      "sourceGame": "marketSignal",
-      "q": "A regulator forces a natural monopoly to charge price equal to average total cost rather than its unregulated monopoly price. What is the intended result?",
-      "options": [
-        "Maximum monopoly profit",
-        "Price below average variable cost",
-        "Permanent positive economic profit sufficient to attract new competitors into the regulated market",
-        "Lower price while allowing the firm to cover total cost"
-      ],
-      "tag": "average_cost_regulation",
-      "type": "application",
-      "objective": "LO9.6",
-      "difficulty": "hard",
-      "conceptCluster": "monopoly_analysis",
-      "primarySkill": "monopoly_regulation",
-      "secondarySkills": [],
-      "repairSkill": "monopoly_regulation",
-      "commonError": "Confusing average-cost regulation with marginal-cost pricing or profit maximization",
-      "feedback": "Average-cost pricing aims to limit price while preserving financial viability.",
-      "aHash": "4b2055e748f61ee2ab70b6b3c6eab70dd07a0e0531b34d1f6393678f87a593f9"
     },
     {
       "id": 290,
@@ -6217,6 +6351,386 @@ const questionBanks = {
       "commonError": "misses_renegotiation_risk",
       "feedback": "Joint value is high enough, but the supplier expects only $35,000 while paying $40,000. That private loss can prevent efficient investment.",
       "aHash": "a6659023475c02977531155156d33261c3880ee877f5c43ebe9b32faddd0486c"
+    },
+    {
+      "id": 9165,
+      "sourceGame": "marketSignal",
+      "q": "Refer to the numerical graph. The market is observed at price $72 and quantity 72. A later observation shows price $48 and quantity 72. Which change is consistent with the graph?",
+      "options": [
+        "Demand increased and supply decreased",
+        "Demand fell (D2 to D1); supply rose (S2 to S1)",
+        "Only supply decreased",
+        "Only demand increased"
+      ],
+      "tag": "boss_numeric_graph_reverse_transition",
+      "type": "graph_analysis",
+      "objective": "LO8.4",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_reverse_shift_inference",
+      "primarySkill": "reverse_shift_inference",
+      "secondarySkills": [
+        "graph_equilibrium_reading",
+        "simultaneous_shift_analysis"
+      ],
+      "repairSkill": "simultaneous_market_changes",
+      "commonError": "Explaining the price change with a single curve while quantity stays fixed",
+      "feedback": "The $72,72 point is S2-D2. The $48,72 point is S1-D1. Demand shifted left while supply shifted right.",
+      "image": "market_curves_independent.svg",
+      "graphRequired": true,
+      "aHash": "3c6e1b38cfff854fd3eabab0c44b370fb6c31f205282c0c6e7b07020f24bba4b"
+    },
+    {
+      "id": 9178,
+      "sourceGame": "marketSignal",
+      "q": "A regulator can finance a natural monopoly with a lump-sum subsidy that does not change marginal incentives. MC is below ATC at efficient output, and there are no externalities. Which policy combines efficient usage and cost recovery?",
+      "options": [
+        "Set P = MC and require the firm to cover the shortfall from the same sales revenue",
+        "Set P = ATC and describe the resulting output as fully allocatively efficient",
+        "Set P = MC and subsidize the remaining total-cost shortfall",
+        "Set P above ATC to maximize cost recovery regardless of lost trades"
+      ],
+      "tag": "boss_natural_monopoly_regulation",
+      "type": "analysis",
+      "objective": "LO9.6",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_monopoly_regulation",
+      "primarySkill": "monopoly_regulation",
+      "secondarySkills": [
+        "market_efficiency",
+        "cost_recovery"
+      ],
+      "repairSkill": "monopoly_welfare_regulation",
+      "commonError": "Assuming marginal-cost pricing automatically covers large fixed cost",
+      "feedback": "P = MC implements efficient usage in this model; a separate lump-sum subsidy covers TC minus revenue without changing the marginal price.",
+      "aHash": "ecfd2ed7fb1cd2b147ecc9ee3fdc14a77a56be55c348a219d824cad6e00c9709"
+    },
+    {
+      "id": 9184,
+      "sourceGame": "marketSignal",
+      "q": "A monopolist faces P = 120 - Q and MC = $20. A regulator imposes a binding price cap of $50. Assuming the firm must charge one price and will serve demand while price exceeds MC, what output results?",
+      "options": [
+        "Q = 70, which is above the unregulated monopoly quantity of 50 but below the efficient quantity of 100",
+        "Q = 50, because regulation cannot change monopoly output",
+        "Q = 100, because any price cap forces marginal-cost pricing",
+        "Q = 20, because the cap equals marginal cost plus $30"
+      ],
+      "tag": "boss_monopoly_price_cap_output",
+      "type": "calculation",
+      "objective": "LO9.6",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_monopoly_regulation",
+      "primarySkill": "monopoly_regulation",
+      "secondarySkills": [
+        "monopoly_output_profit",
+        "market_efficiency"
+      ],
+      "repairSkill": "monopoly_welfare_regulation",
+      "commonError": "Keeping the unregulated MR=MC quantity after the cap changes the firm's feasible revenue schedule",
+      "feedback": "Unregulated MR=120-2Q gives Q=50. At capped price $50, demand is Q=70, and serving those units remains profitable because $50>$20.",
+      "aHash": "54ad45cd9c3b0742f8d1d36f120ac295d10a36183c39e5d37b24e51f859612ed"
+    },
+    {
+      "id": 356,
+      "sourceGame": "marketSignal",
+      "q": "Refer to the graph. The market begins at S2 and D1. Demand rises to D2, then production costs fall and supply moves to S1. What is the complete equilibrium path?",
+      "options": [
+        "$60 and 48, then $72 and 72, then $60 and 96",
+        "$60 and 48, then $48 and 72, then $60 and 96",
+        "$72 and 72, then $60 and 96, then $48 and 72",
+        "$60 and 96, then $72 and 72, then $60 and 48"
+      ],
+      "tag": "numeric_graph_sequence",
+      "type": "graph",
+      "objective": "LO8.3",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_comparative_statics",
+      "primarySkill": "comparative_statics",
+      "secondarySkills": [
+        "demand_shift",
+        "supply_shift"
+      ],
+      "repairSkill": "comparative_statics",
+      "commonError": "Jumping directly to the final point or reversing one of the shifts",
+      "feedback": "The initial equilibrium is S2/D1; demand moves it to S2/D2; lower costs then move it to S1/D2.",
+      "image": "market_curves_independent.svg",
+      "graphRequired": true,
+      "aHash": "04e9f786163fdd8428738c75089883bf3eba01e366b56d03526651df8ad23379"
+    },
+    {
+      "id": 384,
+      "sourceGame": "marketSignal",
+      "q": "A monopolist faces P = 138 - 2Q and constant MC = $30. There is no avoidable fixed cost. Which price-output pair maximizes profit?",
+      "options": [
+        "Q = 27 and P = $84",
+        "Q = 54 and P = $30",
+        "Q = 34.5 and P = $69",
+        "Q = 27 and P = $54"
+      ],
+      "tag": "linear_monopoly_solution",
+      "type": "calculation",
+      "objective": "LO9.6",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_monopoly_output_rule",
+      "primarySkill": "monopoly_output_rule",
+      "secondarySkills": [
+        "inverse_demand"
+      ],
+      "repairSkill": "monopoly_output_rule",
+      "commonError": "Setting price equal to marginal cost rather than marginal revenue equal to marginal cost",
+      "feedback": "MR = 138 - 4Q. Setting it equal to 30 gives Q = 27; demand gives P = 84.",
+      "aHash": "6aac7193953fcd38555ccba8284b4c7667056db514454f9c8005c8125cf84f7b"
+    },
+    {
+      "id": 385,
+      "sourceGame": "marketSignal",
+      "q": "Using P=100-Q and MC=20, what deadweight-loss triangle results from monopoly relative to competition?",
+      "options": [
+        "$400",
+        "$800",
+        "$1,600",
+        "$3,200"
+      ],
+      "tag": "monopoly_deadweight_loss",
+      "type": "calculation",
+      "objective": "LO9.6",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_monopoly_market_effects",
+      "primarySkill": "monopoly_market_effects",
+      "secondarySkills": [
+        "welfare_analysis"
+      ],
+      "repairSkill": "monopoly_market_effects",
+      "commonError": "Using the monopoly profit rectangle instead of the lost-trade triangle",
+      "feedback": "Competitive Q is 80, monopoly Q is 40, and the wedge at Q=40 is $40; DWL=.5(40)(40)=$800.",
+      "aHash": "752cf93704f4a6dea555249feb7cfecec1f2587839021a6b4040f57170baae9c"
+    },
+    {
+      "id": 387,
+      "sourceGame": "marketSignal",
+      "q": "A natural monopoly has declining average total cost and MC below ATC at the quantity demanded when P = MC. What is the cost-recovery problem?",
+      "options": [
+        "The firm must include all fixed cost in the marginal cost of its last unit",
+        "Sales revenue covers total cost whenever each unit is priced at marginal cost",
+        "The firm must raise output until marginal cost exceeds the demand price",
+        "Sales revenue fails to cover total cost, even though the last unit covers its marginal cost"
+      ],
+      "tag": "natural_monopoly_regulation",
+      "type": "analysis",
+      "objective": "LO9.6",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_monopoly_market_effects",
+      "primarySkill": "monopoly_market_effects",
+      "secondarySkills": [
+        "natural_monopoly"
+      ],
+      "repairSkill": "monopoly_market_effects",
+      "commonError": "Assuming efficient marginal-cost pricing automatically covers fixed cost",
+      "feedback": "Marginal-cost pricing supports efficient use in this model but leaves a total-cost shortfall. A subsidy can finance that gap; specialized tariff design is a separate pricing topic.",
+      "aHash": "e4e70d1073b7170451b7d1fcd52871b1374b2e9f9f53d1f272f2dccb42458277"
+    },
+    {
+      "id": 9059,
+      "sourceGame": "marketSignal",
+      "q": "The market begins at S2 and D1. A subsidy shifts supply to S1, but a binding price floor remains at $60. Relative to the new competitive equilibrium, what condition results?",
+      "options": [
+        "A shortage because the competitive price would be $72",
+        "No imbalance because the old equilibrium price is always binding",
+        "A surplus because demand shifts to D2",
+        "A surplus because the competitive price would be $48"
+      ],
+      "tag": "graph_price_floor_after_supply_shift",
+      "type": "graph_analysis",
+      "objective": "LO8.4",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_price_control_analysis",
+      "primarySkill": "price_control_analysis",
+      "secondarySkills": [
+        "supply_shift_analysis",
+        "graph_equilibrium_reading"
+      ],
+      "repairSkill": "market_interventions",
+      "commonError": "Treating a previously equilibrium price as automatically nonbinding after supply changes",
+      "feedback": "With S1 and D1, the competitive equilibrium price is $48, so a floor at $60 is above equilibrium and creates surplus.",
+      "image": "market_curves_independent.svg",
+      "graphRequired": true,
+      "aHash": "97ce62032581f3806cc81481338b798c9a1e2d4dd2916f16cf949d72e1955c0b"
+    },
+    {
+      "id": 9083,
+      "sourceGame": "marketSignal",
+      "q": "A monopolist faces P=160-2Q and constant MC=$40. What quantity and price maximize profit?",
+      "options": [
+        "Q=60 and P=$40",
+        "Q=40 and P=$80",
+        "Q=20 and P=$120",
+        "Q=30 and P=$100"
+      ],
+      "tag": "linear_monopoly_solution_legendary",
+      "type": "calculation",
+      "objective": "LO9.6",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_monopoly_output_rule",
+      "primarySkill": "monopoly_output_rule",
+      "secondarySkills": [
+        "inverse_demand",
+        "marginal_revenue"
+      ],
+      "repairSkill": "monopoly_output_profit",
+      "commonError": "Setting price equal to marginal cost instead of marginal revenue equal to marginal cost",
+      "feedback": "MR=160-4Q. Setting MR=40 gives Q=30; demand gives P=$100.",
+      "aHash": "6d9ad2f5c8bf31ca5caf602f265a29ea3494158223af4e04326974fae0501984"
+    },
+    {
+      "id": 9084,
+      "sourceGame": "marketSignal",
+      "q": "For P=160-2Q and MC=$40, what is monopoly profit if fixed cost is $600?",
+      "options": [
+        "$1,200",
+        "$600",
+        "$1,800",
+        "$3,000"
+      ],
+      "tag": "monopoly_profit_with_fixed_cost",
+      "type": "calculation",
+      "objective": "LO9.6",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_monopoly_profit_calculation",
+      "primarySkill": "monopoly_profit_calculation",
+      "secondarySkills": [
+        "monopoly_output_rule",
+        "fixed_cost"
+      ],
+      "repairSkill": "monopoly_output_profit",
+      "commonError": "Using revenue minus fixed cost while ignoring variable cost",
+      "feedback": "At Q=30 and P=$100, contribution is ($100-$40)(30)=$1,800. Subtract $600 fixed cost for $1,200.",
+      "aHash": "1dcc7619134cdb1de916b106a96326de3a8ac9eb25d79c57ce00de777b3203e1"
+    },
+    {
+      "id": 9085,
+      "sourceGame": "marketSignal",
+      "q": "For P=160-2Q and MC=$40, what deadweight loss results from monopoly relative to competition?",
+      "options": [
+        "$600",
+        "$900",
+        "$1,200",
+        "$1,800"
+      ],
+      "tag": "monopoly_deadweight_loss_legendary",
+      "type": "calculation",
+      "objective": "LO9.6",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_monopoly_market_effects",
+      "primarySkill": "monopoly_market_effects",
+      "secondarySkills": [
+        "welfare_analysis",
+        "competitive_equilibrium"
+      ],
+      "repairSkill": "monopoly_welfare_regulation",
+      "commonError": "Using the monopoly profit rectangle rather than the lost-trade triangle",
+      "feedback": "Competitive quantity is 60 and monopoly quantity is 30. The wedge at Q=30 is $60, so DWL=0.5(30)(60)=$900.",
+      "aHash": "956b060488349227afaaff8545deb2dd38abd82b579e52fe145684bae4bb6856"
+    },
+    {
+      "id": 9086,
+      "sourceGame": "marketSignal",
+      "q": "A natural monopoly must recover all cost from sales and receives no subsidy. Its ATC exceeds MC throughout the relevant range. What tradeoff arises when it charges P = ATC instead of P = MC?",
+      "options": [
+        "Output reaches the efficient level because economic profit is zero",
+        "Cost recovery improves and the last unit necessarily satisfies P = MC",
+        "Cost recovery improves, but output is below the allocatively efficient level",
+        "Cost recovery fails because fixed cost cannot be recovered through prices"
+      ],
+      "tag": "natural_monopoly_subsidy",
+      "type": "analysis",
+      "objective": "LO9.6",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_monopoly_regulation",
+      "primarySkill": "monopoly_regulation",
+      "secondarySkills": [
+        "cost_recovery",
+        "market_efficiency"
+      ],
+      "repairSkill": "monopoly_welfare_regulation",
+      "commonError": "Assuming efficient pricing automatically guarantees financial break-even",
+      "feedback": "Average-cost pricing can cover total cost, but P exceeds MC. Some units with value above marginal cost remain unserved.",
+      "aHash": "72c082c0ed9cd5b56f9c53fb142ba46fef0a4eb6d7e973e8fe518a48e2ac4350"
+    },
+    {
+      "id": 9152,
+      "sourceGame": "marketSignal",
+      "q": "Refer to the numerical supply-and-demand graph. The market starts at S2 and D1. A fall in an input price shifts supply to S1, while a successful advertising campaign shifts demand to D2. What is the final equilibrium and the net change?",
+      "options": [
+        "Price remains $60 and quantity rises from 48 to 96",
+        "Price falls to $48 and quantity rises from 48 to 72",
+        "Price rises to $72 and quantity rises from 48 to 72",
+        "Price remains $60 and quantity rises from 72 to 96"
+      ],
+      "tag": "boss_numeric_graph_joint_shift",
+      "type": "graph_analysis",
+      "objective": "LO8.4",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_simultaneous_shift_analysis",
+      "primarySkill": "simultaneous_shift_analysis",
+      "secondarySkills": [
+        "graph_equilibrium_reading",
+        "supply_shift_analysis"
+      ],
+      "repairSkill": "simultaneous_market_changes",
+      "commonError": "Reporting one intermediate equilibrium instead of the final intersection",
+      "feedback": "S2-D1 is $60 and 48. S1-D2 is $60 and 96, so quantity doubles while price returns to its initial level.",
+      "image": "market_curves_independent.svg",
+      "graphRequired": true,
+      "aHash": "6bf69b1846eab0cea471fb09e325ef9b722c50de52dc5a6abe1418cdd11fbfba"
+    },
+    {
+      "id": 9175,
+      "sourceGame": "marketSignal",
+      "q": "A monopolist faces P = 100 - Q, constant marginal cost of $20, and fixed cost of $400. What are the monopoly quantity, price, and profit?",
+      "options": [
+        "Q = 80, P = $20, profit = -$400",
+        "Q = 40, P = $40, profit = $400",
+        "Q = 30, P = $70, profit = $1,100",
+        "Q = 40, P = $60, profit = $1,200"
+      ],
+      "tag": "boss_monopoly_linear_demand_profit",
+      "type": "calculation",
+      "objective": "LO9.6",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_monopoly_output_profit",
+      "primarySkill": "monopoly_output_profit",
+      "secondarySkills": [
+        "monopoly_marginal_revenue",
+        "profit_calculation"
+      ],
+      "repairSkill": "monopoly_output_profit",
+      "commonError": "Setting price equal to marginal cost or treating demand as marginal revenue",
+      "feedback": "MR=100-2Q. Set MR=20 to get Q=40; demand gives P=$60. Profit=(60-20)40-400=$1,200.",
+      "aHash": "1d39e746584a3a00fcaac0ec074e5712191639e1add86ae0bdaf42da9035712c"
+    },
+    {
+      "id": 9176,
+      "sourceGame": "marketSignal",
+      "q": "Using P = 100 - Q and MC = $20, a monopolist chooses Q = 40 and P = $60. What is the deadweight loss relative to the competitive outcome?",
+      "options": [
+        "$800",
+        "$1,600",
+        "$400",
+        "$3,200"
+      ],
+      "tag": "boss_monopoly_deadweight_loss",
+      "type": "calculation",
+      "objective": "LO9.6",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_monopoly_market_effects",
+      "primarySkill": "monopoly_market_effects",
+      "secondarySkills": [
+        "consumer_surplus",
+        "competitive_quantity"
+      ],
+      "repairSkill": "monopoly_welfare_regulation",
+      "commonError": "Calculating monopoly profit instead of the lost-surplus triangle",
+      "feedback": "Competitive quantity is 80. DWL=.5(80-40)(60-20)=$800.",
+      "aHash": "752cf93704f4a6dea555249feb7cfecec1f2587839021a6b4040f57170baae9c"
     }
   ],
   "elite": [
@@ -7565,59 +8079,6 @@ const questionBanks = {
       "aHash": "12a617cc2618dad0f82d991070283a971868212e658232abfef9cc1782e4d807"
     },
     {
-      "id": 356,
-      "sourceGame": "marketSignal",
-      "q": "Refer to the graph. The market begins at S2 and D1. Demand rises to D2, then production costs fall and supply moves to S1. What is the complete equilibrium path?",
-      "options": [
-        "$16 and 40, then $18 and 65, then $16 and 80",
-        "$16 and 40, then $14 and 65, then $16 and 80",
-        "$18 and 65, then $16 and 80, then $14 and 65",
-        "$16 and 80, then $18 and 65, then $16 and 40"
-      ],
-      "tag": "numeric_graph_sequence",
-      "type": "graph",
-      "objective": "LO8.3",
-      "difficulty": "elite",
-      "conceptCluster": "market_equilibrium",
-      "primarySkill": "comparative_statics",
-      "secondarySkills": [
-        "demand_shift",
-        "supply_shift"
-      ],
-      "repairSkill": "comparative_statics",
-      "commonError": "Jumping directly to the final point or reversing one of the shifts",
-      "feedback": "The initial equilibrium is S2/D1; demand moves it to S2/D2; lower costs then move it to S1/D2.",
-      "image": "demand_supply_two.png",
-      "graphRequired": true,
-      "aHash": "bad7049b5884e8a7cbd5c7ae018083337b2211332e7b7deff87a0239378a477d"
-    },
-    {
-      "id": 357,
-      "sourceGame": "marketSignal",
-      "q": "Refer to the graph. Which paired shocks move equilibrium from S2/D2 to S1/D1?",
-      "options": [
-        "An increase in demand and a decrease in supply",
-        "A decrease in demand and an increase in supply",
-        "A decrease in both demand and supply",
-        "An increase in both demand and supply"
-      ],
-      "tag": "reverse_engineer_graph_shifts",
-      "type": "graph",
-      "objective": "LO8.3",
-      "difficulty": "elite",
-      "conceptCluster": "market_equilibrium",
-      "primarySkill": "comparative_statics",
-      "secondarySkills": [
-        "shock_identification"
-      ],
-      "repairSkill": "comparative_statics",
-      "commonError": "Reading the final price alone and ignoring the curve labels",
-      "feedback": "Moving D2 to D1 is a demand decrease; moving S2 to S1 is a supply increase.",
-      "image": "demand_supply_two.png",
-      "graphRequired": true,
-      "aHash": "6e165861ca509c544223df71ec7f74a9bcd121faf80bba1d4e4546dcf393166e"
-    },
-    {
       "id": 358,
       "sourceGame": "marketSignal",
       "q": "Refer to the graph. Starting at S0/D0, demand increases to D1 while supply later increases to S1. Which result is certain from initial to final equilibrium?",
@@ -8252,102 +8713,6 @@ const questionBanks = {
       "commonError": "Assuming observed entry means barriers are economically unimportant",
       "feedback": "Network effects can starve entrants of scale, allowing the incumbent to restore market power later.",
       "aHash": "4c7973c466b97babceb79af99e697c770392e7c61b5052469e558e7b16b4bd3e"
-    },
-    {
-      "id": 384,
-      "sourceGame": "marketSignal",
-      "q": "A monopolist faces P=100-Q and constant MC=20 with no fixed cost. What quantity and price maximize profit?",
-      "options": [
-        "Q=40 and P=$60",
-        "Q=80 and P=$20",
-        "Q=20 and P=$80",
-        "Q=50 and P=$50"
-      ],
-      "tag": "linear_monopoly_solution",
-      "type": "calculation",
-      "objective": "LO9.6",
-      "difficulty": "elite",
-      "conceptCluster": "monopoly_analysis",
-      "primarySkill": "monopoly_output_rule",
-      "secondarySkills": [
-        "inverse_demand"
-      ],
-      "repairSkill": "monopoly_output_rule",
-      "commonError": "Setting price equal to marginal cost rather than marginal revenue equal to marginal cost",
-      "feedback": "MR=100-2Q. Setting MR=20 gives Q=40; demand then gives P=$60.",
-      "aHash": "72c033b273c73e30e6ff8f23d310ebc7d71a62464d6e71a764f40e4a12ec04c9"
-    },
-    {
-      "id": 385,
-      "sourceGame": "marketSignal",
-      "q": "Using P=100-Q and MC=20, what deadweight-loss triangle results from monopoly relative to competition?",
-      "options": [
-        "$400",
-        "$800",
-        "$1,600",
-        "$3,200"
-      ],
-      "tag": "monopoly_deadweight_loss",
-      "type": "calculation",
-      "objective": "LO9.6",
-      "difficulty": "elite",
-      "conceptCluster": "monopoly_analysis",
-      "primarySkill": "monopoly_market_effects",
-      "secondarySkills": [
-        "welfare_analysis"
-      ],
-      "repairSkill": "monopoly_market_effects",
-      "commonError": "Using the monopoly profit rectangle instead of the lost-trade triangle",
-      "feedback": "Competitive Q is 80, monopoly Q is 40, and the wedge at Q=40 is $40; DWL=.5(40)(40)=$800.",
-      "aHash": "752cf93704f4a6dea555249feb7cfecec1f2587839021a6b4040f57170baae9c"
-    },
-    {
-      "id": 386,
-      "sourceGame": "marketSignal",
-      "q": "A monopolist sells 30 units at $70. To sell 31 units it must lower price to $68 on all units. What is marginal revenue of the 31st unit?",
-      "options": [
-        "$68",
-        "$60",
-        "$8",
-        "-$2"
-      ],
-      "tag": "discrete_monopoly_marginal_revenue",
-      "type": "calculation",
-      "objective": "LO9.6",
-      "difficulty": "elite",
-      "conceptCluster": "monopoly_analysis",
-      "primarySkill": "monopoly_output_rule",
-      "secondarySkills": [
-        "total_revenue"
-      ],
-      "repairSkill": "monopoly_output_rule",
-      "commonError": "Treating the new unit’s price as marginal revenue and ignoring the price cut on prior units",
-      "feedback": "Revenue rises from $2,100 to $2,108, so marginal revenue is $8.",
-      "aHash": "5282dcb73b7e25acd120ba7db666af3861553abaa9cfa5968b124049b9ed1d94"
-    },
-    {
-      "id": 387,
-      "sourceGame": "marketSignal",
-      "q": "A regulated natural monopoly has declining ATC over the relevant output range. Why can forcing P=MC create a financing problem?",
-      "options": [
-        "Marginal-cost pricing always guarantees positive profit",
-        "Average total cost must rise when marginal cost falls",
-        "Regulation eliminates fixed costs",
-        "Price may fall below ATC, requiring a subsidy or two-part tariff to cover total cost"
-      ],
-      "tag": "natural_monopoly_regulation",
-      "type": "analysis",
-      "objective": "LO9.6",
-      "difficulty": "elite",
-      "conceptCluster": "monopoly_analysis",
-      "primarySkill": "monopoly_market_effects",
-      "secondarySkills": [
-        "natural_monopoly"
-      ],
-      "repairSkill": "monopoly_market_effects",
-      "commonError": "Assuming efficient marginal-cost pricing automatically covers fixed cost",
-      "feedback": "With scale economies, MC can lie below ATC, so efficient pricing may not recover total cost.",
-      "aHash": "08daaf9a8bb6aaddd871e5a546d2808fb10e8433f1003f441377aa7d96f7e8ac"
     },
     {
       "id": 390,
@@ -9882,87 +10247,6 @@ const questionBanks = {
       "aHash": "6c08e9b4568d3768b566c3ed1751c8ab4f44596b3c48ba76e29879dcf3580892"
     },
     {
-      "id": 9057,
-      "sourceGame": "marketSignal",
-      "q": "A market begins at S2 and D1. Demand rises to D2 while supply rises to S1. What happens to equilibrium price and quantity?",
-      "options": [
-        "Price rises to $18 and quantity rises to 65",
-        "Price remains $16; quantity becomes 80",
-        "Price falls to $14 and quantity rises to 65",
-        "Price remains $16 and quantity remains 40"
-      ],
-      "tag": "numeric_graph_double_shift",
-      "type": "graph_analysis",
-      "objective": "LO8.4",
-      "difficulty": "legendary",
-      "conceptCluster": "market_changes",
-      "primarySkill": "simultaneous_shift_analysis",
-      "secondarySkills": [
-        "graph_equilibrium_reading",
-        "reverse_shift_inference"
-      ],
-      "repairSkill": "simultaneous_market_changes",
-      "commonError": "Following only one shift or assuming two increases must raise price",
-      "feedback": "The move from S2/D1 to S1/D2 doubles quantity while the opposing price effects cancel.",
-      "image": "demand_supply_two.png",
-      "graphRequired": true,
-      "aHash": "05827fccebb1e7f32d06acb093d7aa425315b7c2eceb08d46bcbdb84bffcdf0a"
-    },
-    {
-      "id": 9058,
-      "sourceGame": "marketSignal",
-      "q": "The market begins at S1 and D2. A production-cost increase shifts supply to S2 while demand simultaneously falls to D1. Where does the market end?",
-      "options": [
-        "At price $18 and quantity 65",
-        "At price $14 and quantity 65",
-        "At price $16 and quantity 40",
-        "At price $16 and quantity 80"
-      ],
-      "tag": "numeric_graph_reverse_double_shift",
-      "type": "graph_analysis",
-      "objective": "LO8.4",
-      "difficulty": "legendary",
-      "conceptCluster": "market_changes",
-      "primarySkill": "simultaneous_shift_analysis",
-      "secondarySkills": [
-        "graph_equilibrium_reading",
-        "supply_shift_analysis"
-      ],
-      "repairSkill": "simultaneous_market_changes",
-      "commonError": "Reading the wrong starting supply curve or reversing the direction of a cost increase",
-      "feedback": "A cost increase moves supply left from S1 to S2; a demand decrease moves D2 to D1. Their intersection is $16 and 40.",
-      "image": "demand_supply_two.png",
-      "graphRequired": true,
-      "aHash": "810512ac7c1d50ce73e02ad4ed50c63c0b0f3a9f1683a6d1083e01cf2329f0ff"
-    },
-    {
-      "id": 9059,
-      "sourceGame": "marketSignal",
-      "q": "The market begins at S2 and D1. A subsidy shifts supply to S1, but a binding price floor remains at $16. Relative to the new competitive equilibrium, what condition results?",
-      "options": [
-        "A shortage because the competitive price would be $18",
-        "No imbalance because the old equilibrium price is always binding",
-        "A surplus because demand shifts to D2",
-        "A surplus because the competitive price would be $14"
-      ],
-      "tag": "graph_price_floor_after_supply_shift",
-      "type": "graph_analysis",
-      "objective": "LO8.4",
-      "difficulty": "legendary",
-      "conceptCluster": "market_changes",
-      "primarySkill": "price_control_analysis",
-      "secondarySkills": [
-        "supply_shift_analysis",
-        "graph_equilibrium_reading"
-      ],
-      "repairSkill": "market_interventions",
-      "commonError": "Treating a previously equilibrium price as automatically nonbinding after supply changes",
-      "feedback": "With S1 and D1, the competitive equilibrium price is $14, so a floor at $16 is above equilibrium and creates surplus.",
-      "image": "demand_supply_two.png",
-      "graphRequired": true,
-      "aHash": "99437b1ce143b7d3942ee5546497062f87f016712f8ea14dbd2440c181b80ff9"
-    },
-    {
       "id": 9060,
       "sourceGame": "marketSignal",
       "q": "On the symbolic graph, the market moves from S0/D0 to S1/D1 and price returns to P1 while quantity rises from QA to QD. What can be inferred?",
@@ -10550,131 +10834,6 @@ const questionBanks = {
       "commonError": "Assuming any observed entry is enough to discipline the incumbent permanently",
       "feedback": "If the strategy deters or expels entrants, monopoly profit can recover after the threat passes.",
       "aHash": "e9289a5f8455d0d1837168efec34e39a50657bb6378299f54ec1154a234529bd"
-    },
-    {
-      "id": 9083,
-      "sourceGame": "marketSignal",
-      "q": "A monopolist faces P=160-2Q and constant MC=$40. What quantity and price maximize profit?",
-      "options": [
-        "Q=60 and P=$40",
-        "Q=40 and P=$80",
-        "Q=20 and P=$120",
-        "Q=30 and P=$100"
-      ],
-      "tag": "linear_monopoly_solution_legendary",
-      "type": "calculation",
-      "objective": "LO9.6",
-      "difficulty": "legendary",
-      "conceptCluster": "monopoly_analysis",
-      "primarySkill": "monopoly_output_rule",
-      "secondarySkills": [
-        "inverse_demand",
-        "marginal_revenue"
-      ],
-      "repairSkill": "monopoly_output_profit",
-      "commonError": "Setting price equal to marginal cost instead of marginal revenue equal to marginal cost",
-      "feedback": "MR=160-4Q. Setting MR=40 gives Q=30; demand gives P=$100.",
-      "aHash": "6d9ad2f5c8bf31ca5caf602f265a29ea3494158223af4e04326974fae0501984"
-    },
-    {
-      "id": 9084,
-      "sourceGame": "marketSignal",
-      "q": "For P=160-2Q and MC=$40, what is monopoly profit if fixed cost is $600?",
-      "options": [
-        "$1,200",
-        "$600",
-        "$1,800",
-        "$3,000"
-      ],
-      "tag": "monopoly_profit_with_fixed_cost",
-      "type": "calculation",
-      "objective": "LO9.6",
-      "difficulty": "legendary",
-      "conceptCluster": "monopoly_analysis",
-      "primarySkill": "monopoly_profit_calculation",
-      "secondarySkills": [
-        "monopoly_output_rule",
-        "fixed_cost"
-      ],
-      "repairSkill": "monopoly_output_profit",
-      "commonError": "Using revenue minus fixed cost while ignoring variable cost",
-      "feedback": "At Q=30 and P=$100, contribution is ($100-$40)(30)=$1,800. Subtract $600 fixed cost for $1,200.",
-      "aHash": "1dcc7619134cdb1de916b106a96326de3a8ac9eb25d79c57ce00de777b3203e1"
-    },
-    {
-      "id": 9085,
-      "sourceGame": "marketSignal",
-      "q": "For P=160-2Q and MC=$40, what deadweight loss results from monopoly relative to competition?",
-      "options": [
-        "$600",
-        "$900",
-        "$1,200",
-        "$1,800"
-      ],
-      "tag": "monopoly_deadweight_loss_legendary",
-      "type": "calculation",
-      "objective": "LO9.6",
-      "difficulty": "legendary",
-      "conceptCluster": "monopoly_analysis",
-      "primarySkill": "monopoly_market_effects",
-      "secondarySkills": [
-        "welfare_analysis",
-        "competitive_equilibrium"
-      ],
-      "repairSkill": "monopoly_welfare_regulation",
-      "commonError": "Using the monopoly profit rectangle rather than the lost-trade triangle",
-      "feedback": "Competitive quantity is 60 and monopoly quantity is 30. The wedge at Q=30 is $60, so DWL=0.5(30)(60)=$900.",
-      "aHash": "956b060488349227afaaff8545deb2dd38abd82b579e52fe145684bae4bb6856"
-    },
-    {
-      "id": 9086,
-      "sourceGame": "marketSignal",
-      "q": "A natural monopoly has MC below ATC over the relevant output range. Why can marginal-cost pricing require a subsidy?",
-      "options": [
-        "Marginal-cost pricing always raises monopoly profit",
-        "A subsidy is needed because demand becomes perfectly inelastic",
-        "P=MC can fall below ATC, leaving revenue short of total cost",
-        "Average total cost must be below marginal cost"
-      ],
-      "tag": "natural_monopoly_subsidy",
-      "type": "analysis",
-      "objective": "LO9.6",
-      "difficulty": "legendary",
-      "conceptCluster": "monopoly_analysis",
-      "primarySkill": "monopoly_regulation",
-      "secondarySkills": [
-        "cost_recovery",
-        "market_efficiency"
-      ],
-      "repairSkill": "monopoly_welfare_regulation",
-      "commonError": "Assuming efficient pricing automatically guarantees financial break-even",
-      "feedback": "With scale economies, MC may be below ATC; pricing at MC achieves efficiency but not cost recovery.",
-      "aHash": "b8416801967b731b937ebedac0973cfa8ca2ff72475947322318790e5d0fb0ef"
-    },
-    {
-      "id": 9087,
-      "sourceGame": "marketSignal",
-      "q": "A monopolist can perfectly price discriminate and has no resale. Relative to single-price monopoly, what is the likely effect?",
-      "options": [
-        "Output falls and consumer surplus rises",
-        "Deadweight loss rises because every buyer pays a different price",
-        "Price discrimination forces price to equal average total cost for every unit",
-        "Output rises and deadweight loss falls; seller surplus grows"
-      ],
-      "tag": "perfect_price_discrimination_welfare",
-      "type": "analysis",
-      "objective": "LO9.6",
-      "difficulty": "legendary",
-      "conceptCluster": "monopoly_analysis",
-      "primarySkill": "monopoly_market_effects",
-      "secondarySkills": [
-        "price_discrimination_design",
-        "welfare_analysis"
-      ],
-      "repairSkill": "monopoly_welfare_regulation",
-      "commonError": "Assuming all price discrimination necessarily reduces output",
-      "feedback": "Perfect discrimination can serve buyers down to MC, eliminating the lost trades while transferring much of the surplus to the monopolist.",
-      "aHash": "7cd055d33b811101d840befa4e20a247f5938298386f2888dde26c3454810a7c"
     },
     {
       "id": 9090,
@@ -11909,16 +12068,16 @@ const questionBanks = {
       "sourceGame": "marketSignal",
       "q": "The graph begins at S2 and D1. A production technology lowers sellers’ costs, shifting supply to S1 while demand stays at D1. What is the new equilibrium?",
       "options": [
-        "Price $18 and quantity 65",
-        "Price $14 and quantity 65",
-        "Price $16 and quantity 80",
-        "Price $16 and quantity 40"
+        "Price $72 and quantity 72",
+        "Price $48 and quantity 72",
+        "Price $60 and quantity 96",
+        "Price $60 and quantity 48"
       ],
       "tag": "final_boss_graph_supply_innovation",
       "type": "graph",
       "objective": "LO8.4",
       "difficulty": "finalBoss",
-      "conceptCluster": "final_boss_industry_adjustment",
+      "conceptCluster": "finalBoss_marketSignal_supply_shift_analysis",
       "primarySkill": "supply_shift_analysis",
       "secondarySkills": [
         "graph_equilibrium_reading",
@@ -11926,26 +12085,26 @@ const questionBanks = {
       ],
       "repairSkill": "supply_shift_analysis",
       "commonError": "Following the wrong demand curve or treating a cost reduction as a demand shift",
-      "feedback": "S1 and D1 intersect at price $14 and quantity 65.",
-      "image": "demand_supply_two.png",
+      "feedback": "S1 and D1 intersect at price $48 and quantity 72.",
+      "image": "market_curves_independent.svg",
       "graphRequired": true,
-      "aHash": "7b9385dd78d322a27d9d35dd1e89644729184512674316346cfd435694e98db2"
+      "aHash": "8e4963cb7b3943a74ecb5b4fc5428d25c5d197beec9009b35a539b6bfd6e64bf"
     },
     {
       "id": 4010,
       "sourceGame": "marketSignal",
-      "q": "Continue with supply at S1. Consumer demand then rises from D1 to D2. What final equilibrium does the graph show?",
+      "q": "The market is initially at S1 and D1 in the supplied graph. With supply remaining S1, demand rises to D2. What final equilibrium does the graph show?",
       "options": [
-        "Price $14 and quantity 65",
-        "Price $18 and quantity 65",
-        "Price $16 and quantity 80",
-        "Price $16 and quantity 40"
+        "Price $48 and quantity 72",
+        "Price $72 and quantity 72",
+        "Price $60 and quantity 96",
+        "Price $60 and quantity 48"
       ],
       "tag": "final_boss_graph_demand_after_supply",
       "type": "graph",
       "objective": "LO8.4",
       "difficulty": "finalBoss",
-      "conceptCluster": "final_boss_industry_adjustment",
+      "conceptCluster": "finalBoss_marketSignal_simultaneous_shift_analysis",
       "primarySkill": "simultaneous_shift_analysis",
       "secondarySkills": [
         "graph_equilibrium_reading",
@@ -11953,15 +12112,15 @@ const questionBanks = {
       ],
       "repairSkill": "simultaneous_shift_analysis",
       "commonError": "Stopping after the supply shift and failing to move to the new demand curve",
-      "feedback": "S1 and D2 intersect at price $16 and quantity 80.",
-      "image": "demand_supply_two.png",
+      "feedback": "S1 and D2 intersect at price $60 and quantity 96.",
+      "image": "market_curves_independent.svg",
       "graphRequired": true,
-      "aHash": "fb576ec8da25dc25b845479790f8b0b2505e86b2dfead90a357c2b1208b3d9b7"
+      "aHash": "3ecf24e044e0d1587c5d6fb8d900a0a2bd2d68ed967e0dddc08d5ab512344fd8"
     },
     {
       "id": 4011,
       "sourceGame": "marketSignal",
-      "q": "The market moved from S2-D1 to S1-D2, leaving price unchanged at $16 while quantity doubled. Which interpretation best connects the market shifts to industry structure?",
+      "q": "The market moved from S2-D1 to S1-D2, leaving price unchanged at $60 while quantity doubled. Which interpretation best connects the market shifts to industry structure?",
       "options": [
         "Unchanged price proves that neither buyer preferences nor seller costs changed anywhere in the market",
         "The demand increase alone eliminated every incentive for entry",
@@ -11972,7 +12131,7 @@ const questionBanks = {
       "type": "synthesis",
       "objective": "LO8.4",
       "difficulty": "finalBoss",
-      "conceptCluster": "final_boss_industry_adjustment",
+      "conceptCluster": "finalBoss_marketSignal_industry_level_changes",
       "primarySkill": "industry_level_changes",
       "secondarySkills": [
         "entry_response",
@@ -11981,7 +12140,7 @@ const questionBanks = {
       "repairSkill": "industry_level_changes",
       "commonError": "Looking only at the unchanged price and ignoring the large increase in quantity",
       "feedback": "Demand pushed price upward, while expanded supply pushed price downward. Their price effects offset, but both shifts increased quantity.",
-      "image": "demand_supply_two.png",
+      "image": "market_curves_independent.svg",
       "graphRequired": true,
       "aHash": "ad676a00cb319fa66496d84238abd0656b0c6429d17adccf754c8dd20ac7e2be"
     },
@@ -12387,7 +12546,7 @@ const questionBanks = {
       "type": "calculation",
       "objective": "LO9.6",
       "difficulty": "finalBoss",
-      "conceptCluster": "final_boss_monopoly_welfare",
+      "conceptCluster": "finalBoss_marketSignal_competitive_equilibrium",
       "primarySkill": "competitive_equilibrium",
       "secondarySkills": [
         "gains_from_trade",
@@ -12412,7 +12571,7 @@ const questionBanks = {
       "type": "calculation",
       "objective": "LO9.6",
       "difficulty": "finalBoss",
-      "conceptCluster": "final_boss_monopoly_welfare",
+      "conceptCluster": "finalBoss_marketSignal_monopoly_price_output",
       "primarySkill": "monopoly_price_output",
       "secondarySkills": [
         "monopoly_marginal_revenue",
@@ -12437,7 +12596,7 @@ const questionBanks = {
       "type": "synthesis",
       "objective": "LO9.6",
       "difficulty": "finalBoss",
-      "conceptCluster": "final_boss_monopoly_welfare",
+      "conceptCluster": "finalBoss_marketSignal_monopoly_welfare_regulation",
       "primarySkill": "monopoly_welfare_regulation",
       "secondarySkills": [
         "consumer_surplus",
@@ -13754,60 +13913,6 @@ const questionBanks = {
       "aHash": "689b9af7a179837dd12effa02fa9967e431835ae2cec357178b5ac5a5f80775c"
     },
     {
-      "id": 9152,
-      "sourceGame": "marketSignal",
-      "q": "Refer to the numerical supply-and-demand graph. The market starts at S2 and D1. A fall in an input price shifts supply to S1, while a successful advertising campaign shifts demand to D2. What is the final equilibrium and the net change?",
-      "options": [
-        "Price remains $16 and quantity rises from 40 to 80",
-        "Price falls to $14 and quantity rises from 40 to 65",
-        "Price rises to $18 and quantity rises from 40 to 65",
-        "Price remains $16 and quantity rises from 65 to 80"
-      ],
-      "tag": "boss_numeric_graph_joint_shift",
-      "type": "graph_analysis",
-      "objective": "LO8.4",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_markets",
-      "primarySkill": "simultaneous_shift_analysis",
-      "secondarySkills": [
-        "graph_equilibrium_reading",
-        "supply_shift_analysis"
-      ],
-      "repairSkill": "simultaneous_market_changes",
-      "commonError": "Reporting one intermediate equilibrium instead of the final intersection",
-      "feedback": "S2-D1 is $16 and 40. S1-D2 is $16 and 80, so quantity doubles while price returns to its initial level.",
-      "image": "demand_supply_two.png",
-      "graphRequired": true,
-      "aHash": "1ee55ee5b6974eb8845c46fa7e861967e127e9a9a17cb6c3efa95e1cb0eebb22"
-    },
-    {
-      "id": 9153,
-      "sourceGame": "marketSignal",
-      "q": "Refer to the numerical graph. Which pair of distinct curve combinations produces the same equilibrium quantity of 65 but different prices?",
-      "options": [
-        "S2 with D1 produces $16, while S1 with D2 produces $16",
-        "S2 with D2 produces $18, while S1 with D1 produces $14",
-        "S2 with D2 produces $16, while S1 with D1 produces $18",
-        "S2 with D1 produces $14, while S1 with D2 produces $18"
-      ],
-      "tag": "boss_numeric_graph_same_quantity",
-      "type": "graph_analysis",
-      "objective": "LO8.3",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_markets",
-      "primarySkill": "graph_equilibrium_reading",
-      "secondarySkills": [
-        "demand_supply_shifts",
-        "equilibrium_comparison"
-      ],
-      "repairSkill": "equilibrium_shortage_surplus",
-      "commonError": "Matching a price label with the wrong curve intersection",
-      "feedback": "The graph shows Q=65 at S2-D2 with P=$18 and at S1-D1 with P=$14.",
-      "image": "demand_supply_two.png",
-      "graphRequired": true,
-      "aHash": "b56994572d85380fac7c19ea8eb80ae501fe87528b1762e1cc15e6049e8963f9"
-    },
-    {
       "id": 9154,
       "sourceGame": "marketSignal",
       "q": "At the current market price, the marginal buyer values the good at $72 and the marginal seller's opportunity cost is $68. What does this imply about expanding trade by one unit?",
@@ -14082,33 +14187,6 @@ const questionBanks = {
       "aHash": "ff54682553ffae0beaee2083530e98ff881ae51654f449fb9bfb0f147391a741"
     },
     {
-      "id": 9165,
-      "sourceGame": "marketSignal",
-      "q": "Refer to the numerical graph. The market is observed at price $18 and quantity 65. A later observation shows price $14 and quantity 65. Which change is consistent with the graph?",
-      "options": [
-        "Demand increased and supply decreased",
-        "Demand fell from D2 to D1 while supply increased from S2 to S1",
-        "Only supply decreased",
-        "Only demand increased"
-      ],
-      "tag": "boss_numeric_graph_reverse_transition",
-      "type": "graph_analysis",
-      "objective": "LO8.4",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_markets",
-      "primarySkill": "reverse_shift_inference",
-      "secondarySkills": [
-        "graph_equilibrium_reading",
-        "simultaneous_shift_analysis"
-      ],
-      "repairSkill": "simultaneous_market_changes",
-      "commonError": "Explaining the price change with a single curve while quantity stays fixed",
-      "feedback": "The $18,65 point is S2-D2. The $14,65 point is S1-D1. Demand shifted left while supply shifted right.",
-      "image": "demand_supply_two.png",
-      "graphRequired": true,
-      "aHash": "afcf0baf6c7027ae63371cea49e7d1620b188c4b5dc5204e1d384a10f4166077"
-    },
-    {
       "id": 9166,
       "sourceGame": "marketSignal",
       "q": "A competitive firm sells 40,000 units at $28. At that output, average total cost is $22 and average variable cost is $16. What is economic profit, and what long-run force does it trigger?",
@@ -14342,106 +14420,6 @@ const questionBanks = {
       "aHash": "91bbdcfe0c62794d449eccee40e29009cc2401122fc6a0d6727c44acafa71866"
     },
     {
-      "id": 9175,
-      "sourceGame": "marketSignal",
-      "q": "A monopolist faces P = 100 - Q, constant marginal cost of $20, and fixed cost of $400. What are the monopoly quantity, price, and profit?",
-      "options": [
-        "Q = 80, P = $20, profit = -$400",
-        "Q = 40, P = $40, profit = $400",
-        "Q = 30, P = $70, profit = $1,100",
-        "Q = 40, P = $60, profit = $1,200"
-      ],
-      "tag": "boss_monopoly_linear_demand_profit",
-      "type": "calculation",
-      "objective": "LO9.6",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_monopoly",
-      "primarySkill": "monopoly_output_profit",
-      "secondarySkills": [
-        "monopoly_marginal_revenue",
-        "profit_calculation"
-      ],
-      "repairSkill": "monopoly_output_profit",
-      "commonError": "Setting price equal to marginal cost or treating demand as marginal revenue",
-      "feedback": "MR=100-2Q. Set MR=20 to get Q=40; demand gives P=$60. Profit=(60-20)40-400=$1,200.",
-      "aHash": "1d39e746584a3a00fcaac0ec074e5712191639e1add86ae0bdaf42da9035712c"
-    },
-    {
-      "id": 9176,
-      "sourceGame": "marketSignal",
-      "q": "Using P = 100 - Q and MC = $20, a monopolist chooses Q = 40 and P = $60. What is the deadweight loss relative to the competitive outcome?",
-      "options": [
-        "$800",
-        "$1,600",
-        "$400",
-        "$3,200"
-      ],
-      "tag": "boss_monopoly_deadweight_loss",
-      "type": "calculation",
-      "objective": "LO9.6",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_monopoly",
-      "primarySkill": "monopoly_market_effects",
-      "secondarySkills": [
-        "consumer_surplus",
-        "competitive_quantity"
-      ],
-      "repairSkill": "monopoly_welfare_regulation",
-      "commonError": "Calculating monopoly profit instead of the lost-surplus triangle",
-      "feedback": "Competitive quantity is 80. DWL=.5(80-40)(60-20)=$800.",
-      "aHash": "752cf93704f4a6dea555249feb7cfecec1f2587839021a6b4040f57170baae9c"
-    },
-    {
-      "id": 9177,
-      "sourceGame": "marketSignal",
-      "q": "One hundred identical consumers each have demand q = 10 - P. Marginal cost is $2 and fixed cost is zero. Under a two-part tariff that preserves efficient usage and extracts all consumer surplus, what usage price and membership fee should the monopolist set?",
-      "options": [
-        "Usage price $6 and membership fee $16",
-        "Usage price $2 and membership fee $32 per consumer",
-        "Usage price $10 and membership fee $0",
-        "Usage price $2 and membership fee $64"
-      ],
-      "tag": "boss_two_part_tariff",
-      "type": "calculation",
-      "objective": "LO9.6",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_monopoly",
-      "primarySkill": "monopoly_price_output",
-      "secondarySkills": [
-        "price_discrimination_design",
-        "consumer_surplus"
-      ],
-      "repairSkill": "monopoly_welfare_regulation",
-      "commonError": "Charging monopoly usage price and then trying to extract surplus twice",
-      "feedback": "Set usage price equal to MC for q=8. Consumer surplus is .5(10-2)8=$32, which becomes the fee.",
-      "aHash": "2a587345e295e03974b237087df4f57fe31052735f0d4b1034b59516530b4e82"
-    },
-    {
-      "id": 9178,
-      "sourceGame": "marketSignal",
-      "q": "A natural monopoly has falling average total cost over the relevant output range. Price equal to marginal cost would create a loss. Which regulation most directly preserves efficient output while keeping the firm solvent?",
-      "options": [
-        "Set price at average total cost and claim the outcome is fully allocatively efficient",
-        "Set price above the unregulated monopoly price",
-        "Set price at marginal cost and finance the resulting fixed-cost shortfall with a transparent lump-sum subsidy",
-        "Require zero output whenever marginal cost is below average cost"
-      ],
-      "tag": "boss_natural_monopoly_regulation",
-      "type": "analysis",
-      "objective": "LO9.6",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_monopoly",
-      "primarySkill": "monopoly_regulation",
-      "secondarySkills": [
-        "market_efficiency",
-        "cost_recovery"
-      ],
-      "repairSkill": "monopoly_welfare_regulation",
-      "commonError": "Assuming marginal-cost pricing automatically covers large fixed cost",
-      "feedback": "Marginal-cost pricing gives efficient usage, but a separate subsidy is needed to cover the fixed-cost gap.",
-      "aHash": "83b78d95413585c655edab766b836313973433e55815668691dc0438cb784a9c"
-    },
-    {
       "id": 9179,
       "sourceGame": "marketSignal",
       "q": "A patented drug earns high margins. The patent expires, generic producers can copy the formula, and pharmacies treat approved generics as close substitutes. What sequence is most likely?",
@@ -14540,56 +14518,6 @@ const questionBanks = {
       "commonError": "Comparing undiscounted operating profit with an immediate sunk entry cost",
       "feedback": "PV of the three $8,000 contributions is about $19,895, below the $20,000 entry cost.",
       "aHash": "3f9532c8adeb78e127220db4e754ca1800e8541e4b89c926a198a0cfa2b80465"
-    },
-    {
-      "id": 9183,
-      "sourceGame": "marketSignal",
-      "q": "A monopolist sells 100 units at $50. To sell 110 units, it must cut price to $48 on all units. What is marginal revenue per additional unit over this expansion?",
-      "options": [
-        "$48 per unit",
-        "$30 per unit",
-        "-$2 per unit",
-        "$28 per unit"
-      ],
-      "tag": "boss_discrete_marginal_revenue",
-      "type": "calculation",
-      "objective": "LO9.6",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_monopoly",
-      "primarySkill": "monopoly_marginal_revenue",
-      "secondarySkills": [
-        "total_revenue",
-        "monopoly_output_rule"
-      ],
-      "repairSkill": "monopoly_output_profit",
-      "commonError": "Using the new price as marginal revenue or looking only at the $2 price cut",
-      "feedback": "Total revenue rises from $5,000 to $5,280, a $280 gain over 10 units, so MR is $28 per unit.",
-      "aHash": "b3dedcdf57c3805b4dc9b02425ce83ac5712964d692038b046f1748abd1253d0"
-    },
-    {
-      "id": 9184,
-      "sourceGame": "marketSignal",
-      "q": "A monopolist faces P = 120 - Q and MC = $20. A regulator imposes a binding price cap of $50. Assuming the firm must charge one price and will serve demand while price exceeds MC, what output results?",
-      "options": [
-        "Q = 70, which is above the unregulated monopoly quantity of 50 but below the efficient quantity of 100",
-        "Q = 50, because regulation cannot change monopoly output",
-        "Q = 100, because any price cap forces marginal-cost pricing",
-        "Q = 20, because the cap equals marginal cost plus $30"
-      ],
-      "tag": "boss_monopoly_price_cap_output",
-      "type": "calculation",
-      "objective": "LO9.6",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_monopoly",
-      "primarySkill": "monopoly_regulation",
-      "secondarySkills": [
-        "monopoly_output_profit",
-        "market_efficiency"
-      ],
-      "repairSkill": "monopoly_welfare_regulation",
-      "commonError": "Keeping the unregulated MR=MC quantity after the cap changes the firm's feasible revenue schedule",
-      "feedback": "Unregulated MR=120-2Q gives Q=50. At capped price $50, demand is Q=70, and serving those units remains profitable because $50>$20.",
-      "aHash": "54ad45cd9c3b0742f8d1d36f120ac295d10a36183c39e5d37b24e51f859612ed"
     },
     {
       "id": 9185,
@@ -16743,10 +16671,10 @@ const bridgePoolGroups = {
       "sourceGame": "marketSignal",
       "q": "On the supplied graph, the market moves from S2/D1 to S1/D2. What is the new equilibrium?",
       "options": [
-        "Price $18 and quantity 65",
-        "Price $14 and quantity 65",
-        "Price $16 and quantity 40",
-        "Price $16 and quantity 80"
+        "Price $72 and quantity 72",
+        "Price $48 and quantity 72",
+        "Price $60 and quantity 48",
+        "Price $60 and quantity 96"
       ],
       "tag": "bridge_simultaneous_market_changes_2",
       "type": "graph",
@@ -16757,9 +16685,9 @@ const bridgePoolGroups = {
       "secondarySkills": [],
       "repairSkill": "simultaneous_market_changes",
       "commonError": "Reading only one shifted curve",
-      "feedback": "The intersection of S1 and D2 is at price $16 and quantity 80.",
-      "image": "demand_supply_two.png",
-      "aHash": "fb576ec8da25dc25b845479790f8b0b2505e86b2dfead90a357c2b1208b3d9b7"
+      "feedback": "The intersection of S1 and D2 is at price $60 and quantity 96.",
+      "image": "market_curves_independent.svg",
+      "aHash": "3ecf24e044e0d1587c5d6fb8d900a0a2bd2d68ed967e0dddc08d5ab512344fd8"
     }
   ],
   "market_interventions": [

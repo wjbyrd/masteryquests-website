@@ -2648,6 +2648,2698 @@ const questionBanks = {
       "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
       "feedback": "The metric encouraged speed, but the real goal also included quality.",
       "aHash": "79de11dab6fad86c7328642400f673f31a972f143ef4639fe24e6700bf989cb1"
+    },
+    {
+      "id": 200,
+      "sourceGame": "agencyProtocol",
+      "q": "A low-risk customer and a high-risk customer both apply for the same insurance plan, but the insurer cannot tell them apart before setting the premium. What is the core problem?",
+      "options": [
+        "Adverse selection caused by hidden risk type before the transaction",
+        "Moral hazard caused by hidden effort after the transaction",
+        "A transfer pricing problem between divisions",
+        "A budget game created by cost-center managers"
+      ],
+      "tag": "adverse_selection",
+      "type": "trap",
+      "objective": "LO19.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_hidden_information_before_contract",
+      "primarySkill": "hidden_information_before_contract",
+      "secondarySkills": [],
+      "repairSkill": "hidden_information_before_contract",
+      "commonError": "confuses_hidden_information_before_contract_with_hidden_action_after_contract",
+      "feedback": "The insurer faces adverse selection because customers know more about their own risk before the insurance contract is written.",
+      "aHash": "80536947bd24d337c6a9fbb4d2d9d895df0f02db9f64762f9fe7dff0b6e36673"
+    },
+    {
+      "id": 202,
+      "sourceGame": "agencyProtocol",
+      "q": "A buyer worries that a used phone may have a bad battery, but the seller knows the phone's true condition. Which problem is present before the sale?",
+      "options": [
+        "Adverse selection due to hidden product quality",
+        "Moral hazard because the buyer may use the phone carelessly later",
+        "Shirking because the seller is not working hard enough",
+        "Transfer pricing because the phone is sold internally"
+      ],
+      "tag": "adverse_selection",
+      "type": "interpretation",
+      "objective": "LO19.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_hidden_information_before_contract",
+      "primarySkill": "hidden_information_before_contract",
+      "secondarySkills": [],
+      "repairSkill": "hidden_information_before_contract",
+      "commonError": "confuses_hidden_information_before_contract_with_hidden_action_after_contract",
+      "feedback": "The seller has private information about quality before the transaction, so this is adverse selection.",
+      "aHash": "7dff50a80fa18c07f6c878fc0e81e31afa2038511a8921eb25b6df351f1431ca"
+    },
+    {
+      "id": 7004,
+      "sourceGame": "agencyProtocol",
+      "q": "A platform shows verified purchase reviews, seller history, dispute rates, and return policies. Which information problem is mostly being reduced?",
+      "options": [
+        "Adverse selection caused by hidden seller quality before buyers purchase",
+        "Moral hazard caused by sellers changing buyer behavior after purchase",
+        "Principal-agent conflict caused by managers shirking inside the platform",
+        "Residual loss caused by owners delegating pricing authority to sellers"
+      ],
+      "tag": "reputation",
+      "type": "conceptual",
+      "objective": "LO19.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_reputation_systems_and_market_quality",
+      "primarySkill": "reputation_systems_and_market_quality",
+      "secondarySkills": [],
+      "repairSkill": "reputation_systems_and_market_quality",
+      "commonError": "treats_reviews_as_perfect_information_instead_of_noisy_market_discipline",
+      "feedback": "Reputation systems make hidden seller quality more observable before future buyers decide whether to trade.",
+      "aHash": "3a4e1881cbb7973e6a9559fc2a7c1b3a4ef78840523758b2f4771c9856fda2fa"
+    },
+    {
+      "id": 7006,
+      "sourceGame": "agencyProtocol",
+      "q": "A buyer says, 'Seller reviews are old information, so they cannot affect adverse selection today.' What is wrong with that reasoning?",
+      "options": [
+        "Reviews reduce moral hazard but cannot affect the composition of sellers buyers choose from",
+        "Reviews matter only after a transaction and therefore cannot change buyer expectations",
+        "Past reviews become current information for future buyers before they purchase",
+        "Reviews are useful only when every seller has identical quality"
+      ],
+      "tag": "reputation",
+      "type": "conceptual",
+      "objective": "LO19.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_reputation_systems_and_market_quality",
+      "primarySkill": "reputation_systems_and_market_quality",
+      "secondarySkills": [],
+      "repairSkill": "reputation_systems_and_market_quality",
+      "commonError": "treats_reviews_as_perfect_information_instead_of_noisy_market_discipline",
+      "feedback": "Past transactions create reputation data that future buyers use before making their own purchase decisions.",
+      "aHash": "42dd9c7b2d9a2fb1f0178b038765f623b7aa3a2d20587944007ff31174e0d9a0"
+    },
+    {
+      "id": 7008,
+      "sourceGame": "agencyProtocol",
+      "q": "A health plan has no copays, and patients begin using care even when the benefit is small. Adding copays reduces unnecessary use. What principle is being applied?",
+      "options": [
+        "Cost sharing reduces moral hazard by making patients bear part of the marginal cost",
+        "Cost sharing reduces adverse selection by revealing patient risk before enrollment",
+        "Copays signal provider quality by separating high-quality doctors from low-quality doctors",
+        "Copays eliminate the need for monitoring because all patients now choose efficient care"
+      ],
+      "tag": "moral_hazard",
+      "type": "conceptual",
+      "objective": "LO20.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_hidden_action_after_contract",
+      "primarySkill": "hidden_action_after_contract",
+      "secondarySkills": [],
+      "repairSkill": "hidden_action_after_contract",
+      "commonError": "confuses_post_contract_behavior_with_pre_contract_type_selection",
+      "feedback": "Copays reduce overuse because patients no longer face a zero price at the point of care.",
+      "aHash": "f89e7a7a340d9f1a393657dd8fdb36033fefa0f59fa7065932954958e9b5193d"
+    },
+    {
+      "id": 7010,
+      "sourceGame": "agencyProtocol",
+      "q": "A borrower has little of their own money invested and chooses a project with high upside but high default risk. Why is the lender worried?",
+      "options": [
+        "The lender has eliminated moral hazard by issuing the loan at the start",
+        "The borrower is signaling high quality because risky projects always reveal confidence",
+        "The borrower captures much of the upside while shifting much of the downside to the lender",
+        "The project creates no incentive conflict because both parties prefer high returns"
+      ],
+      "tag": "lending",
+      "type": "conceptual",
+      "objective": "LO20.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_borrower_incentives_and_lender_risk",
+      "primarySkill": "borrower_incentives_and_lender_risk",
+      "secondarySkills": [],
+      "repairSkill": "borrower_incentives_and_lender_risk",
+      "commonError": "assumes_borrowers_and_lenders_share_the_same_risk_incentives_after_funding",
+      "feedback": "Weak borrower skin in the game creates moral hazard because the borrower may take risks the lender would not want.",
+      "aHash": "14568df1b03bd7e636affc60e1a0df46b4758cdf03c9f08803003180d01bbb67"
+    },
+    {
+      "id": 7011,
+      "sourceGame": "agencyProtocol",
+      "q": "A remote worker is productive when tasks are visible but slows down when effort is hard to observe. The firm responds with output targets and random audits. What is the best explanation?",
+      "options": [
+        "This is bonding because the firm accepts limits on its own behavior to reassure the worker",
+        "This is adverse selection because the worker's effort changed after being hired",
+        "This is signaling because the worker reveals high productivity only when watched",
+        "This is shirking, a hidden-action problem controlled through measurement and monitoring"
+      ],
+      "tag": "shirking",
+      "type": "conceptual",
+      "objective": "LO20.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_shirking_and_effort_incentives",
+      "primarySkill": "shirking_and_effort_incentives",
+      "secondarySkills": [],
+      "repairSkill": "shirking_and_effort_incentives",
+      "commonError": "ignores_hidden_effort_and_free_riding_in_team_or_employee_settings",
+      "feedback": "Shirking is a hidden-action problem. The worker changes effort when effort is hard to observe.",
+      "aHash": "a7e29f3ab7df8cc4c4761c2e92c7db6f8d3a9e04a209274402b2cc130cf033e3"
+    },
+    {
+      "id": 7014,
+      "sourceGame": "agencyProtocol",
+      "q": "A shareholder wants long-run firm value. A manager wants perks, prestige, and a larger staff. The manager also knows more about daily operations. What creates the principal-agent problem?",
+      "options": [
+        "A seller reputation system before purchase",
+        "A lack of any decision authority by the manager",
+        "Delegation, incentive conflict, and information asymmetry",
+        "A transfer price between two unrelated firms"
+      ],
+      "tag": "principal_agent",
+      "type": "conceptual",
+      "objective": "LO21.1",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_principal_agent_conflict",
+      "primarySkill": "principal_agent_conflict",
+      "secondarySkills": [],
+      "repairSkill": "principal_agent_conflict",
+      "commonError": "assumes_principal_and_agent_objectives_are_automatically_aligned",
+      "feedback": "Agency problems arise when an agent acts for a principal but has different incentives and better information.",
+      "aHash": "49a3f64388ac269b05acf29a50a70e5b722b7a1ba5a50f18fa13c8a37f60a30c"
+    },
+    {
+      "id": 7015,
+      "sourceGame": "agencyProtocol",
+      "q": "A nonprofit rewards local directors for number of people served. Directors start counting quick, low-impact contacts instead of harder cases. What is happening?",
+      "options": [
+        "The directors are solving adverse selection because client type is now observable",
+        "The directors are signaling high quality by choosing easier cases",
+        "The nonprofit has eliminated residual loss because the measured number increased",
+        "Agents are gaming the measured target while missing the organization's real goal"
+      ],
+      "tag": "gaming",
+      "type": "conceptual",
+      "objective": "LO21.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_gaming",
+      "primarySkill": "gaming",
+      "secondarySkills": [],
+      "repairSkill": "gaming",
+      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
+      "feedback": "The metric is easy to measure, but it does not fully capture the true mission.",
+      "aHash": "9ba9bc86d98fe9eb8ddc2f3adfa5e7e61229f06cc278d8e048d10b971030f425"
+    },
+    {
+      "id": 7017,
+      "sourceGame": "agencyProtocol",
+      "q": "A manager accepts restrictions on personal spending authority and agrees to audited reports to reassure owners. What agency-control concept is this closest to?",
+      "options": [
+        "Monitoring by customers",
+        "Bonding by the agent",
+        "Residual loss by the principal",
+        "Screening by the manager after hiring"
+      ],
+      "tag": "agency_costs",
+      "type": "conceptual",
+      "objective": "LO21.3",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_agency_costs_and_alignment",
+      "primarySkill": "agency_costs_and_alignment",
+      "secondarySkills": [],
+      "repairSkill": "agency_costs_and_alignment",
+      "commonError": "treats_monitoring_costs_as_the_only_agency_cost",
+      "feedback": "Bonding occurs when the agent accepts constraints or commitments to reduce the principal's risk.",
+      "aHash": "d5856c9733d41c99abdea6d68f10f57be7779459bf45a760ce0653a463aa9248"
+    },
+    {
+      "id": 7018,
+      "sourceGame": "agencyProtocol",
+      "q": "After monitoring and incentive pay, some manager decisions still fail to maximize owner value. What is the remaining agency cost called?",
+      "options": [
+        "Bonding surplus",
+        "Screening gain",
+        "Residual loss",
+        "Monitoring recovery"
+      ],
+      "tag": "agency_costs",
+      "type": "conceptual",
+      "objective": "LO21.3",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_agency_costs_and_alignment",
+      "primarySkill": "agency_costs_and_alignment",
+      "secondarySkills": [],
+      "repairSkill": "agency_costs_and_alignment",
+      "commonError": "treats_monitoring_costs_as_the_only_agency_cost",
+      "feedback": "Residual loss is the remaining value lost because the agent's choices are still not perfectly aligned with the principal's interests.",
+      "aHash": "958d7da9729a604154ced5e5894a03ccec8d8591897bdfe230cee05bb70398ec"
+    },
+    {
+      "id": 7022,
+      "sourceGame": "agencyProtocol",
+      "q": "A company decentralizes service recovery decisions because front-line managers know the local customer context better than headquarters. What condition supports decentralization?",
+      "options": [
+        "Incentives cannot be gamed when decisions are local",
+        "Headquarters has perfect information about every customer",
+        "Local information is valuable and timely decisions matter",
+        "Coordination costs are always zero after decentralization"
+      ],
+      "tag": "organization",
+      "type": "conceptual",
+      "objective": "LO21.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_organization",
+      "primarySkill": "organization",
+      "secondarySkills": [],
+      "repairSkill": "organization",
+      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
+      "feedback": "Decentralization works best when local information is important and the firm can still manage incentives.",
+      "aHash": "ddbcc153af69af216f5747fab1c4c561af81a9635f54bf562eba7f0a9653c167"
+    },
+    {
+      "id": 7025,
+      "sourceGame": "agencyProtocol",
+      "q": "The parent company forces Division A to accept a transfer price that hurts Division A's score but raises total company profit. What principle is headquarters applying?",
+      "options": [
+        "Each division should always maximize its own profit even if the company loses",
+        "The parent company should maximize total firm profit, not each division's separate score",
+        "Cost centers should set all internal prices above average cost",
+        "Budget games should be rewarded when they raise local reported profit"
+      ],
+      "tag": "parent_company",
+      "type": "conceptual",
+      "objective": "LO22.1",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_parent_company",
+      "primarySkill": "parent_company",
+      "secondarySkills": [],
+      "repairSkill": "parent_company",
+      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
+      "feedback": "The parent company's concern is total firm value. Division-level metrics can conflict with that goal.",
+      "aHash": "b2f8db7ab99acfa77b6879ea704d3c1eb7568ec17a98a15e9488bcc495209a0e"
+    },
+    {
+      "id": 7026,
+      "sourceGame": "agencyProtocol",
+      "q": "A division manager rejects an internal transfer because accepting it lowers the division's measured profit, even though the transfer raises total firm profit. What is the best diagnosis?",
+      "options": [
+        "A pure screening solution because the manager revealed their type before employment",
+        "A seller reputation problem caused by hidden product quality before purchase",
+        "A transfer pricing and incentive-alignment problem",
+        "A health-insurance moral hazard problem caused by overuse after coverage begins"
+      ],
+      "tag": "transfer_pricing",
+      "type": "conceptual",
+      "objective": "LO22.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_transfer_pricing_internal_trade",
+      "primarySkill": "transfer_pricing_internal_trade",
+      "secondarySkills": [],
+      "repairSkill": "transfer_pricing_internal_trade",
+      "commonError": "sets_transfer_price_from_division_politics_instead_of_opportunity_cost_and_total_firm_value",
+      "feedback": "The internal price and performance metric make the manager's local incentive conflict with total firm value.",
+      "aHash": "d47b14c489de94aaf16bdf728a9cf57e96f0a8e67f103dcf116a81b84bba225b"
+    },
+    {
+      "id": 7027,
+      "sourceGame": "agencyProtocol",
+      "q": "A support department is evaluated only on keeping costs low. It cuts training and response quality, making other divisions less productive. What is the issue?",
+      "options": [
+        "The issue is adverse selection before employment because workers dislike training",
+        "Cost centers always maximize total firm profit because lower cost is always better",
+        "The department is signaling high quality by spending less",
+        "Cost-center metrics can encourage cost cutting that reduces overall value"
+      ],
+      "tag": "cost_center",
+      "type": "conceptual",
+      "objective": "LO22.3",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_cost_center_evaluation",
+      "primarySkill": "cost_center_evaluation",
+      "secondarySkills": [],
+      "repairSkill": "cost_center_evaluation",
+      "commonError": "equates_cost_reduction_with_value_creation",
+      "feedback": "A cost center can look good by cutting costs even when those cuts damage the rest of the firm.",
+      "aHash": "24b5866f87b60c00eb82b837c89d65552b2e782a1c20b3da988bba900c1fd175"
+    },
+    {
+      "id": 7028,
+      "sourceGame": "agencyProtocol",
+      "q": "A product division controls its own revenue decisions and cost decisions and is evaluated on profit. What kind of unit is it?",
+      "options": [
+        "Profit center",
+        "Cost center",
+        "Screening center",
+        "Bonding center"
+      ],
+      "tag": "profit_center",
+      "type": "conceptual",
+      "objective": "LO22.3",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_profit_center_evaluation",
+      "primarySkill": "profit_center_evaluation",
+      "secondarySkills": [],
+      "repairSkill": "profit_center_evaluation",
+      "commonError": "assumes_local_profit_center_success_always_improves_total_firm_profit",
+      "feedback": "A profit center is evaluated on profit, which depends on both revenues and costs.",
+      "aHash": "dfd57101f2a54b4af13825a383f92362f3f5b47c1bb66f32c1e6b221a2301dc8"
+    },
+    {
+      "id": 7032,
+      "sourceGame": "agencyProtocol",
+      "q": "A company grows from one product line to many unrelated business lines. Headquarters wants each major business to have clearer responsibility for results. What structure is most likely useful?",
+      "options": [
+        "A multidivisional structure",
+        "A pure functional structure only",
+        "A seller-review system",
+        "A deductible-based insurance structure"
+      ],
+      "tag": "multidivisional",
+      "type": "conceptual",
+      "objective": "LO22.6",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_multidivisional_accountability",
+      "primarySkill": "multidivisional_accountability",
+      "secondarySkills": [],
+      "repairSkill": "multidivisional_accountability",
+      "commonError": "assumes_divisional_accountability_eliminates_coordination_and_agency_problems",
+      "feedback": "A multidivisional structure works well when a firm needs separate responsibility across products, regions, or businesses.",
+      "aHash": "418c5f6b768f59ca9d576079eece48f247e374e0a3ff3c34fc5fa5e5e6413bf7"
+    },
+    {
+      "id": 7033,
+      "sourceGame": "agencyProtocol",
+      "q": "A division manager understates expected revenue and overstates expected costs so next year's target will be easier to beat. What is this?",
+      "options": [
+        "A credible signal of high ability",
+        "Budget slack created through budget gaming",
+        "A solution to adverse selection",
+        "A marginal-cost transfer price"
+      ],
+      "tag": "budget_games",
+      "type": "conceptual",
+      "objective": "LO22.7",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_budget_slack_and_target_manipulation",
+      "primarySkill": "budget_slack_and_target_manipulation",
+      "secondarySkills": [],
+      "repairSkill": "budget_slack_and_target_manipulation",
+      "commonError": "mistakes_budget_compliance_for_honest_forecasting_or_value_creation",
+      "feedback": "The manager pads the budget or sandbags the forecast to make future performance look better.",
+      "aHash": "e167177f151c55acef56a3d379d74844e6cdcc883c79132a1d88470bc83bed86"
+    },
+    {
+      "id": 7034,
+      "sourceGame": "agencyProtocol",
+      "q": "A department spends unnecessary money at the end of the year because unspent funds may reduce next year's allocation. What is the incentive problem?",
+      "options": [
+        "The department is reducing adverse selection by signaling that it needs resources",
+        "The department is maximizing total firm profit by spending its full budget",
+        "The budget rule rewards wasteful spending to protect future resources",
+        "The department is solving moral hazard because spending is observable"
+      ],
+      "tag": "budget_games",
+      "type": "conceptual",
+      "objective": "LO22.7",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_budget_slack_and_target_manipulation",
+      "primarySkill": "budget_slack_and_target_manipulation",
+      "secondarySkills": [],
+      "repairSkill": "budget_slack_and_target_manipulation",
+      "commonError": "mistakes_budget_compliance_for_honest_forecasting_or_value_creation",
+      "feedback": "Use-it-or-lose-it budgeting can encourage wasteful spending even when the department does not need the resources.",
+      "aHash": "91086a0ac2851bac786431d470c5f653bc952bcc2701a2d16ed03331d1ec6645"
+    },
+    {
+      "id": 9002,
+      "sourceGame": "agencyProtocol",
+      "q": "A platform sees new sellers with no track record, fake reviews, and low-quality products pooling with high-quality sellers. Which solution most directly attacks the hidden-quality problem?",
+      "options": [
+        "A transfer price between the platform and sellers",
+        "A deductible paid by buyers after delivery",
+        "Verified reputation systems that make seller history credible before buyers purchase",
+        "A budget target for the platform's support department"
+      ],
+      "tag": "reputation",
+      "type": "conceptual",
+      "objective": "LO19.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_reputation_systems_and_market_quality",
+      "primarySkill": "reputation_systems_and_market_quality",
+      "secondarySkills": [],
+      "repairSkill": "reputation_systems_and_market_quality",
+      "commonError": "treats_reviews_as_perfect_information_instead_of_noisy_market_discipline",
+      "feedback": "Verified reputation reduces adverse selection by making hidden seller quality more visible before the transaction.",
+      "aHash": "85064c56b6ab41c27bd2af0dfa9e2d21835715227c048f546bce640314e4ca7a"
+    },
+    {
+      "id": 9005,
+      "sourceGame": "agencyProtocol",
+      "q": "A seller voluntarily buys an expensive certification that low-quality sellers rarely find worthwhile. What makes this a signal rather than screening?",
+      "options": [
+        "The buyer forces every seller through the certification process",
+        "The informed seller chooses to reveal quality instead of the buyer imposing the test",
+        "The certification changes seller effort after the sale",
+        "The certification is an internal transfer price"
+      ],
+      "tag": "signaling",
+      "type": "conceptual",
+      "objective": "LO19.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_credible_signaling_hidden_type",
+      "primarySkill": "credible_signaling_hidden_type",
+      "secondarySkills": [],
+      "repairSkill": "credible_signaling_hidden_type",
+      "commonError": "assumes_any_claim_is_a_credible_signal_without_costly_verification",
+      "feedback": "Signaling comes from the informed side. Screening comes from the uninformed side.",
+      "aHash": "05d9d373b8b38a9bce1fe8b28e337eb08da13c6de667a367c16da8076eaa1ce4"
+    },
+    {
+      "id": 9007,
+      "sourceGame": "agencyProtocol",
+      "q": "A lender requires collateral, monitors borrower behavior, and restricts how loan funds can be used. What common problem are these tools trying to reduce?",
+      "options": [
+        "Functional silos inside a multidivisional firm",
+        "Seller adverse selection in an online market",
+        "A cost-center manager cutting service quality",
+        "Borrower moral hazard after the loan is made"
+      ],
+      "tag": "lending",
+      "type": "conceptual",
+      "objective": "LO20.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_borrower_incentives_and_lender_risk",
+      "primarySkill": "borrower_incentives_and_lender_risk",
+      "secondarySkills": [],
+      "repairSkill": "borrower_incentives_and_lender_risk",
+      "commonError": "assumes_borrowers_and_lenders_share_the_same_risk_incentives_after_funding",
+      "feedback": "Once the borrower has the funds, the lender worries about hidden actions and risk-taking. Collateral, monitoring, and covenants reduce that problem.",
+      "aHash": "1660cbc6bdb477396284e701635fa4bda4a96c48124378dc87d437b936c39706"
+    },
+    {
+      "id": 9009,
+      "sourceGame": "agencyProtocol",
+      "q": "An employee is paid by the hour, works remotely, and output is hard to observe. The firm adds milestone-based pay and random audits. What problem is being targeted?",
+      "options": [
+        "Adverse selection from hidden risk before insurance purchase",
+        "Shirking from hidden effort after employment begins",
+        "Transfer pricing between divisions",
+        "Budget slack created before annual planning"
+      ],
+      "tag": "shirking",
+      "type": "conceptual",
+      "objective": "LO20.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_shirking_and_effort_incentives",
+      "primarySkill": "shirking_and_effort_incentives",
+      "secondarySkills": [],
+      "repairSkill": "shirking_and_effort_incentives",
+      "commonError": "ignores_hidden_effort_and_free_riding_in_team_or_employee_settings",
+      "feedback": "Shirking is hidden effort after the relationship begins, so output measures and audits can reduce it.",
+      "aHash": "fe4d9acfdf4d864f34bd077831c12e34c8457019dbf514d7e45495c8ceb2b4d3"
+    },
+    {
+      "id": 9010,
+      "sourceGame": "agencyProtocol",
+      "q": "A sales agent receives a bonus for every customer signed, regardless of default risk. Sales rise, but bad accounts explode. What is the best diagnosis?",
+      "options": [
+        "The principal-agent problem disappears because sales increased",
+        "The agent solved adverse selection by bringing in more customers",
+        "The incentive metric rewards volume while ignoring customer quality, creating an agency problem",
+        "The problem is only transfer pricing because customers are external"
+      ],
+      "tag": "principal_agent",
+      "type": "conceptual",
+      "objective": "LO21.6",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_principal_agent_conflict",
+      "primarySkill": "principal_agent_conflict",
+      "secondarySkills": [],
+      "repairSkill": "principal_agent_conflict",
+      "commonError": "assumes_principal_and_agent_objectives_are_automatically_aligned",
+      "feedback": "The agent's reward does not match the principal's broader objective, so the agent chases the rewarded metric.",
+      "aHash": "d4f485df7ad01aacb3d0b44e4d8501f906b249794fd0d2942d30bba447ba57fe"
+    },
+    {
+      "id": 9013,
+      "sourceGame": "agencyProtocol",
+      "q": "A manager must personally reimburse the firm if reported results are later restated. What kind of agency-control device is this closest to?",
+      "options": [
+        "Screening, because the principal learns hidden risk before hiring",
+        "Bonding, because the agent commits resources or penalties to reassure the principal",
+        "A seller rating, because outside buyers observe quality",
+        "A cost-center rule, because only expenses matter"
+      ],
+      "tag": "agency_costs",
+      "type": "conceptual",
+      "objective": "LO21.3",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_agency_costs_and_alignment",
+      "primarySkill": "agency_costs_and_alignment",
+      "secondarySkills": [],
+      "repairSkill": "agency_costs_and_alignment",
+      "commonError": "treats_monitoring_costs_as_the_only_agency_cost",
+      "feedback": "Bonding gives the agent something at stake, reducing the principal's concern about agent behavior.",
+      "aHash": "9b0d014c10d3b8bccd04b4a38bacfc26601f14df3821e8ace8fbf5dc711625b1"
+    },
+    {
+      "id": 9014,
+      "sourceGame": "agencyProtocol",
+      "q": "A call center pays workers only for the number of calls handled. Calls become shorter, but unresolved cases rise. What is the failure?",
+      "options": [
+        "The firm created perfect incentive alignment because quantity rose",
+        "Workers are reducing adverse selection by revealing type",
+        "Workers are gaming a narrow metric that ignores true service quality",
+        "The issue is only moral hazard in lending"
+      ],
+      "tag": "gaming",
+      "type": "conceptual",
+      "objective": "LO21.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_gaming",
+      "primarySkill": "gaming",
+      "secondarySkills": [],
+      "repairSkill": "gaming",
+      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
+      "feedback": "The metric is incomplete, so agents optimize the measurable target instead of the real objective.",
+      "aHash": "517045b27aac39af4195801e30e7d51f8ff2e2e96876519870df76fec6d0ea98"
+    },
+    {
+      "id": 9015,
+      "sourceGame": "agencyProtocol",
+      "q": "A school rewards teachers only for test-score gains, and teachers narrow instruction to tested material. What economic lesson carries over to firms?",
+      "options": [
+        "Monitoring and metrics always eliminate residual loss",
+        "Any performance measure perfectly captures the principal's objective",
+        "Agents ignore incentives when they care about mission",
+        "Performance measures shape behavior, and narrow measures can distort real goals"
+      ],
+      "tag": "gaming",
+      "type": "conceptual",
+      "objective": "LO21.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_gaming",
+      "primarySkill": "gaming",
+      "secondarySkills": [],
+      "repairSkill": "gaming",
+      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
+      "feedback": "Agents respond to metrics. Badly chosen metrics can create high measured performance and low real performance.",
+      "aHash": "9641a213fe224e178a11bb5ca5c87f3e87a165b62d9c6c7d6289ed643bcc03bc"
+    },
+    {
+      "id": 9017,
+      "sourceGame": "agencyProtocol",
+      "q": "Headquarters centralizes pricing after branches repeatedly discount products to hit local volume targets. What is headquarters trying to prevent?",
+      "options": [
+        "Adverse selection before customers enter the market",
+        "Local decisions that improve branch metrics while harming total firm profit",
+        "Borrower moral hazard after a loan is approved",
+        "Seller signaling through warranties"
+      ],
+      "tag": "organization",
+      "type": "conceptual",
+      "objective": "LO21.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_organization",
+      "primarySkill": "organization",
+      "secondarySkills": [],
+      "repairSkill": "organization",
+      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
+      "feedback": "Centralization can reduce harmful local discretion when local managers chase distorted incentives.",
+      "aHash": "ef9f9ae391fb6754c441298a915dbd5e3c2de93fc3cabfc217d57cce17f63914"
+    },
+    {
+      "id": 9018,
+      "sourceGame": "agencyProtocol",
+      "q": "A decentralized division sees a profitable local opportunity that headquarters would reject because it lacks local knowledge. What is the strongest argument for decentralization?",
+      "options": [
+        "Headquarters should never use performance measures",
+        "Lower-level managers always have incentives perfectly aligned with the firm",
+        "Lower-level managers may possess better local information for certain decisions",
+        "Decentralization removes the need for coordination across units"
+      ],
+      "tag": "organization",
+      "type": "conceptual",
+      "objective": "LO21.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_organization",
+      "primarySkill": "organization",
+      "secondarySkills": [],
+      "repairSkill": "organization",
+      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
+      "feedback": "Decentralization is valuable when local information matters, but it still requires incentive controls.",
+      "aHash": "f2b3e87a07bdc7cf88717738ff69270d4ea2519c4ce120204799bb6f1bb253fe"
+    },
+    {
+      "id": 9021,
+      "sourceGame": "agencyProtocol",
+      "q": "When an intermediate market exists, why can market-based transfer pricing sometimes work well?",
+      "options": [
+        "It forces every division to ignore outside prices",
+        "It gives divisions an outside benchmark that reflects opportunity cost",
+        "It makes all internal trades automatically profitable for both divisions",
+        "It eliminates moral hazard in employment contracts"
+      ],
+      "tag": "transfer_pricing",
+      "type": "conceptual",
+      "objective": "LO22.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_transfer_pricing_internal_trade",
+      "primarySkill": "transfer_pricing_internal_trade",
+      "secondarySkills": [],
+      "repairSkill": "transfer_pricing_internal_trade",
+      "commonError": "sets_transfer_price_from_division_politics_instead_of_opportunity_cost_and_total_firm_value",
+      "feedback": "A market price can discipline internal pricing by showing the opportunity cost of transferring internally.",
+      "aHash": "ba0a8a4ee71d75c0cec3c909875ce12b0d9b1015ac63e8f6dbd4dff430e9cae8"
+    },
+    {
+      "id": 9022,
+      "sourceGame": "agencyProtocol",
+      "q": "A production unit is evaluated as a cost center, so it delays maintenance and cuts training to meet this year's target. What is the hidden danger?",
+      "options": [
+        "The unit is signaling product quality to buyers",
+        "Cost centers always maximize value because all costs are bad",
+        "Measured cost falls while total organizational value may fall even more",
+        "The problem is adverse selection before a loan"
+      ],
+      "tag": "cost_center",
+      "type": "conceptual",
+      "objective": "LO22.3",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_cost_center_evaluation",
+      "primarySkill": "cost_center_evaluation",
+      "secondarySkills": [],
+      "repairSkill": "cost_center_evaluation",
+      "commonError": "equates_cost_reduction_with_value_creation",
+      "feedback": "Cost control is useful only when it does not damage quality, reliability, or downstream productivity.",
+      "aHash": "8a35b0fc35c2e94d3755b7433da473757355173e56181fce662ff6604bb4a818"
+    },
+    {
+      "id": 9024,
+      "sourceGame": "agencyProtocol",
+      "q": "Marketing, finance, operations, and HR each become highly skilled but stop sharing information. Which structure created the strength and the weakness?",
+      "options": [
+        "Functional organization: specialization improves, but silos and coordination problems can rise",
+        "Multidivisional organization: every product division has complete autonomy and no specialization",
+        "Insurance pooling: risks are transferred across departments",
+        "Screening: hidden types are sorted before hiring"
+      ],
+      "tag": "functional_units",
+      "type": "conceptual",
+      "objective": "LO22.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_functional_specialization",
+      "primarySkill": "functional_specialization",
+      "secondarySkills": [],
+      "repairSkill": "functional_specialization",
+      "commonError": "ignores_silos_created_by_functional_specialization",
+      "feedback": "Functional units promote specialization, but coordination across functions can become harder.",
+      "aHash": "8d31e544d83953ebf42819b7533b698e0415d5bd2591b7ffcac6b501e4ac8df5"
+    },
+    {
+      "id": 9025,
+      "sourceGame": "agencyProtocol",
+      "q": "A product launch fails because sales promised custom features before operations and finance approved capacity and cost. What is the best fix?",
+      "options": [
+        "Move all decisions to the sales department permanently",
+        "Improve cross-functional coordination before commitments are made",
+        "Evaluate operations only on lower costs regardless of sales impact",
+        "Replace all internal coordination with seller ratings"
+      ],
+      "tag": "coordination",
+      "type": "conceptual",
+      "objective": "LO22.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_cross_functional_coordination",
+      "primarySkill": "cross_functional_coordination",
+      "secondarySkills": [],
+      "repairSkill": "cross_functional_coordination",
+      "commonError": "treats_divisions_as_independent_when_outputs_are_interdependent",
+      "feedback": "Departments are interdependent. Coordination prevents one function from creating problems for another.",
+      "aHash": "4617463b9298d132b756471a9f2c862bc3be20d259268ad6647391e5aa7be1ac"
+    },
+    {
+      "id": 9026,
+      "sourceGame": "agencyProtocol",
+      "q": "A firm expands into unrelated product lines and headquarters struggles to judge performance inside one giant functional structure. What organizational change may help?",
+      "options": [
+        "A seller warranty system to signal quality",
+        "A larger cost center for all departments combined",
+        "A multidivisional structure with clearer accountability by business line",
+        "A deductible to reduce customer moral hazard"
+      ],
+      "tag": "multidivisional",
+      "type": "conceptual",
+      "objective": "LO22.6",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_multidivisional_accountability",
+      "primarySkill": "multidivisional_accountability",
+      "secondarySkills": [],
+      "repairSkill": "multidivisional_accountability",
+      "commonError": "assumes_divisional_accountability_eliminates_coordination_and_agency_problems",
+      "feedback": "Multidivisional structures can improve accountability when firms become complex across products, regions, or lines of business.",
+      "aHash": "01b35f9f5c4cb52fdee3d743e8ecd201853d80e12c54e8c2c0b129c228068e31"
+    },
+    {
+      "id": 9028,
+      "sourceGame": "agencyProtocol",
+      "q": "A manager pads expected costs, understates expected revenue, and then beats the target easily. What is the economic problem?",
+      "options": [
+        "Budget slack created because the manager has incentives to manipulate the planning process",
+        "A credible signal of high managerial ability",
+        "Screening by the uninformed side before a transaction",
+        "A transfer price that reflects outside market value"
+      ],
+      "tag": "budget_games",
+      "type": "conceptual",
+      "objective": "LO22.7",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_budget_slack_and_target_manipulation",
+      "primarySkill": "budget_slack_and_target_manipulation",
+      "secondarySkills": [],
+      "repairSkill": "budget_slack_and_target_manipulation",
+      "commonError": "mistakes_budget_compliance_for_honest_forecasting_or_value_creation",
+      "feedback": "Budget games occur when managers manipulate targets, forecasts, or spending rules to make themselves look better.",
+      "aHash": "50323bc5a2b748a22a82ffc95be201f63fd54b413be880930290e1bde653ddcb"
+    },
+    {
+      "id": 9034,
+      "sourceGame": "agencyProtocol",
+      "q": "A division has private information about its costs and also wants a lower target next year. How can this affect budgeting?",
+      "options": [
+        "The parent company can ignore incentives if costs are private",
+        "The division will always reveal true costs because budgets are neutral",
+        "The division may misreport information to create budget slack",
+        "The problem must be solved with customer warranties"
+      ],
+      "tag": "budget_games",
+      "type": "conceptual",
+      "objective": "LO22.7",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_budget_slack_and_target_manipulation",
+      "primarySkill": "budget_slack_and_target_manipulation",
+      "secondarySkills": [],
+      "repairSkill": "budget_slack_and_target_manipulation",
+      "commonError": "mistakes_budget_compliance_for_honest_forecasting_or_value_creation",
+      "feedback": "Private information gives managers room to manipulate budget requests and performance targets.",
+      "aHash": "9396c618de4c61c553ef1248172b2f06cfb1656d392d52d45f8d94418a94b9cd"
+    },
+    {
+      "id": 9040,
+      "sourceGame": "agencyProtocol",
+      "q": "A remote employee works hard when output is clearly measured but shirks on collaborative tasks nobody owns. What does this show?",
+      "options": [
+        "Hidden effort can shift to poorly measured margins even when some output is monitored",
+        "Shirking disappears if any output metric exists",
+        "The employee is signaling quality before being hired",
+        "The firm has solved agency costs by measuring one task"
+      ],
+      "tag": "shirking",
+      "type": "conceptual",
+      "objective": "LO20.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_shirking_and_effort_incentives",
+      "primarySkill": "shirking_and_effort_incentives",
+      "secondarySkills": [],
+      "repairSkill": "shirking_and_effort_incentives",
+      "commonError": "ignores_hidden_effort_and_free_riding_in_team_or_employee_settings",
+      "feedback": "Agents may move effort away from unmeasured tasks when metrics are incomplete.",
+      "aHash": "d1861691d0ba0c52a18f1fe58828b34cb64633968957225c34a9d482102dee57"
+    },
+    {
+      "id": 9041,
+      "sourceGame": "agencyProtocol",
+      "q": "A seller with excellent ratings offers a warranty, while the platform verifies reviews. Which statement is strongest?",
+      "options": [
+        "Reputation and signaling are identical because both must come from the buyer",
+        "Reputation and signaling can work together to reduce hidden-quality concerns",
+        "Warranties only solve budget games inside firms",
+        "Verified reviews create moral hazard by hiding seller quality"
+      ],
+      "tag": "reputation",
+      "type": "conceptual",
+      "objective": "LO19.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_reputation_systems_and_market_quality",
+      "primarySkill": "reputation_systems_and_market_quality",
+      "secondarySkills": [],
+      "repairSkill": "reputation_systems_and_market_quality",
+      "commonError": "treats_reviews_as_perfect_information_instead_of_noisy_market_discipline",
+      "feedback": "A seller can signal quality, and platform reputation systems can make that signal more credible.",
+      "aHash": "84f6c4a6282963ba01652b8f2466aaac677d0e9126fef08fad42336ea9a4e3d1"
+    },
+    {
+      "id": 9043,
+      "sourceGame": "agencyProtocol",
+      "q": "A chief operating officer sees low morale, manipulated metrics, poor coordination, and division conflict. What should they avoid?",
+      "options": [
+        "Considering whether local incentives conflict with total firm value",
+        "Separating adverse selection from moral hazard when timing differs",
+        "Checking whether performance measures capture the real objective",
+        "Treating all problems as one generic 'bad manager' problem instead of diagnosing the specific incentive and information failures"
+      ],
+      "tag": "principal_agent",
+      "type": "conceptual",
+      "objective": "LO21.6",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_principal_agent_conflict",
+      "primarySkill": "principal_agent_conflict",
+      "secondarySkills": [],
+      "repairSkill": "principal_agent_conflict",
+      "commonError": "assumes_principal_and_agent_objectives_are_automatically_aligned",
+      "feedback": "Careful diagnosis means naming the exact mechanism: hidden type, hidden action, gaming, coordination failure, or local-vs-total conflict.",
+      "aHash": "0e58fd35489fe89097fcdc850fedbd30a1eba2330b89f182065c8d0b3b5e41ec"
+    },
+    {
+      "id": 9045,
+      "sourceGame": "agencyProtocol",
+      "q": "A warranty is offered only by high-quality sellers because low-quality sellers expect too many claims. What role does the warranty play?",
+      "options": [
+        "It is monitoring of worker effort after hiring",
+        "It becomes a costly signal of seller quality",
+        "It is a transfer price between divisions",
+        "It is budget slack created during planning"
+      ],
+      "tag": "signaling",
+      "type": "conceptual",
+      "objective": "LO19.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_credible_signaling_hidden_type",
+      "primarySkill": "credible_signaling_hidden_type",
+      "secondarySkills": [
+        "hidden_information_before_contract"
+      ],
+      "repairSkill": "credible_signaling_hidden_type",
+      "commonError": "treats_all_advertising_or_promises_as_credible_signals",
+      "feedback": "A signal is credible when it is cheaper or more valuable for high-quality sellers than for low-quality sellers.",
+      "aHash": "55c9240ec5e48bca46b79beef60ab1726e6d5bc68b960c82e966994a0e4f6fe8"
+    },
+    {
+      "id": 9046,
+      "sourceGame": "agencyProtocol",
+      "q": "An insurer charges one average premium. Low-risk customers leave, high-risk customers remain, and the pool becomes worse. What is the chain of events?",
+      "options": [
+        "Screening fails because the insurer observes every buyer perfectly",
+        "Moral hazard reduces risk because high-risk customers buy more coverage",
+        "Adverse selection raises the average risk of the insured pool and can unravel the market",
+        "Monitoring solves the problem by making claims impossible"
+      ],
+      "tag": "adverse_selection",
+      "type": "conceptual",
+      "objective": "LO19.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_hidden_information_before_contract",
+      "primarySkill": "hidden_information_before_contract",
+      "secondarySkills": [
+        "risk_transfer_and_pooling"
+      ],
+      "repairSkill": "hidden_information_before_contract",
+      "commonError": "thinks_high_premiums_always_improve_the_pool_without_driving_out_low_risk_buyers",
+      "feedback": "With one average premium, low-risk buyers may exit. The remaining pool becomes riskier, forcing premiums higher again.",
+      "aHash": "eb604dd6f199ee9993931db501040bec86a0e421cf56e283953dbbe2c71496d1"
+    },
+    {
+      "id": 9048,
+      "sourceGame": "agencyProtocol",
+      "q": "A commission plan boosts sales, but salespeople sell poor-fit products that increase refunds and damage repeat business. What went wrong?",
+      "options": [
+        "The measured incentive improved one metric while damaging total firm value",
+        "The plan eliminated all agency costs because sales rose",
+        "The firm solved adverse selection by paying more commission",
+        "The salespeople became cost centers rather than agents"
+      ],
+      "tag": "gaming_incentives",
+      "type": "conceptual",
+      "objective": "LO21.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_metric_gaming_and_unintended_responses",
+      "primarySkill": "metric_gaming_and_unintended_responses",
+      "secondarySkills": [
+        "total_firm_profit_alignment",
+        "principal_agent_conflict"
+      ],
+      "repairSkill": "metric_gaming_and_unintended_responses",
+      "commonError": "equates_metric_improvement_with_real_performance_improvement",
+      "feedback": "Incentives can be gamed. A sales metric can rise while customer fit, refunds, and total value worsen.",
+      "aHash": "0d1c5abba22d627acf8ca62fce8255ba58ed5320ebc4bb5703e3da856d8a5990"
+    },
+    {
+      "id": 9054,
+      "sourceGame": "agencyProtocol",
+      "q": "A team bonus is paid equally. One worker quietly reduces effort because the group reward barely changes. What is the cleanest diagnosis?",
+      "options": [
+        "Transfer pricing caused by internal sales between divisions",
+        "Adverse selection caused by hidden type before hiring only",
+        "Shirking caused by hidden effort and weak individual accountability",
+        "Budget slack caused by overstated future costs"
+      ],
+      "tag": "shirking",
+      "type": "conceptual",
+      "objective": "LO20.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_shirking_and_effort_incentives",
+      "primarySkill": "shirking_and_effort_incentives",
+      "secondarySkills": [
+        "hidden_action_after_contract",
+        "principal_agent_conflict"
+      ],
+      "repairSkill": "shirking_and_effort_incentives",
+      "commonError": "confuses_hidden_effort_after_contract_with_hidden_type_before_contract",
+      "feedback": "The worker’s effort is hard to observe after the agreement is in place. That is shirking as moral hazard.",
+      "aHash": "58123afa7b1a746a4c09801c87a955c79ce8e9892c380205c56974cecf3b5c75"
+    },
+    {
+      "id": 9056,
+      "sourceGame": "agencyProtocol",
+      "q": "An online marketplace shows verified purchases, seller response rates, and dispute outcomes. Why does this help buyers?",
+      "options": [
+        "It turns repeated behavior into information that reduces uncertainty about seller reliability",
+        "It eliminates every incentive problem because reviews are perfect",
+        "It creates moral hazard by hiding seller behavior before purchase",
+        "It sets the correct transfer price between buyer and seller"
+      ],
+      "tag": "reputation",
+      "type": "conceptual",
+      "objective": "LO19.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_reputation_systems_and_market_quality",
+      "primarySkill": "reputation_systems_and_market_quality",
+      "secondarySkills": [
+        "hidden_information_before_contract",
+        "credible_signaling_hidden_type"
+      ],
+      "repairSkill": "reputation_systems_and_market_quality",
+      "commonError": "treats_reputation_scores_as_perfect_information",
+      "feedback": "Reputation systems make past performance visible. They reduce information asymmetry, but they are still noisy and imperfect.",
+      "aHash": "aa699c030f9dfbfda8932341b5cb958a06b909fb9d8285cb678452783486910b"
+    },
+    {
+      "id": 9057,
+      "sourceGame": "agencyProtocol",
+      "q": "A firm requires applicants to complete a difficult unpaid skills test. Strong applicants pass cheaply because they already have the skill; weak applicants find it costly. What is this?",
+      "options": [
+        "Signaling, because the applicant independently chooses a costly signal with no firm filter",
+        "Screening, because the firm designs a test to reveal hidden applicant type",
+        "Moral hazard, because effort falls after hiring",
+        "Transfer pricing, because two divisions trade internally"
+      ],
+      "tag": "screening",
+      "type": "conceptual",
+      "objective": "LO19.3",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_screening_hidden_type",
+      "primarySkill": "screening_hidden_type",
+      "secondarySkills": [
+        "hidden_information_before_contract"
+      ],
+      "repairSkill": "screening_hidden_type",
+      "commonError": "confuses_screening_with_signaling_because_both_reveal_type",
+      "feedback": "The less-informed party designs the filter. That makes it screening, even though the applicant’s response reveals type.",
+      "aHash": "5fc400cd56d9610c47735d990b25534fb55b78bed4f30deed55ee72a7841686c"
+    },
+    {
+      "id": 9058,
+      "sourceGame": "agencyProtocol",
+      "q": "A consultant voluntarily earns a hard certification before bidding for contracts. Clients did not require it, but they treat it as credible. Why?",
+      "options": [
+        "It is moral hazard because consultants become careless after winning bids",
+        "It is screening because clients designed the certification for this specific contract",
+        "The certification is a signal if high-quality consultants can obtain it at lower net cost or greater benefit",
+        "It is budget gaming because the consultant is protecting next year’s target"
+      ],
+      "tag": "signaling",
+      "type": "conceptual",
+      "objective": "LO19.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_credible_signaling_hidden_type",
+      "primarySkill": "credible_signaling_hidden_type",
+      "secondarySkills": [
+        "hidden_information_before_contract"
+      ],
+      "repairSkill": "credible_signaling_hidden_type",
+      "commonError": "calls_a_signal_credible_even_when_it_is_equally_easy_for_low_quality_types",
+      "feedback": "A signal must separate types. It works only if the cost-benefit tradeoff differs across quality levels.",
+      "aHash": "49d4f743fd8d8fc824b9fe1ceb53174ed0a952da8a5da11dbb5155f150dc6a9a"
+    },
+    {
+      "id": 9065,
+      "sourceGame": "agencyProtocol",
+      "q": "An insurance buyer installs fewer alarms after buying full coverage. Which contract change most directly targets the problem?",
+      "options": [
+        "A single average premium with no risk classification",
+        "A deductible or co-pay that keeps the buyer exposed to some loss",
+        "A rule banning all screening by insurers",
+        "A transfer price equal to the buyer’s premium"
+      ],
+      "tag": "moral_hazard",
+      "type": "conceptual",
+      "objective": "LO20.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_hidden_action_after_contract",
+      "primarySkill": "hidden_action_after_contract",
+      "secondarySkills": [
+        "risk_transfer_and_pooling"
+      ],
+      "repairSkill": "hidden_action_after_contract",
+      "commonError": "uses_pre_contract_screening_for_a_post_contract_behavior_problem",
+      "feedback": "The problem is behavior after coverage. Deductibles and co-pays preserve incentives to take care.",
+      "aHash": "1418e0deb4e5ecee77da309a2f56cbcc3cde12a6716e2306fd15ce6b59c812c5"
+    },
+    {
+      "id": 9066,
+      "sourceGame": "agencyProtocol",
+      "q": "A lender cannot perfectly observe whether a borrower takes a safe or risky project after receiving funds. Which tool best targets the post-loan problem?",
+      "options": [
+        "A seller warranty before the loan is issued",
+        "A higher average premium for all insurance buyers",
+        "Covenants and monitoring tied to project behavior",
+        "A functional structure separating marketing and finance"
+      ],
+      "tag": "lending",
+      "type": "conceptual",
+      "objective": "LO20.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_borrower_incentives_and_lender_risk",
+      "primarySkill": "borrower_incentives_and_lender_risk",
+      "secondarySkills": [
+        "monitoring_and_incentive_control",
+        "hidden_action_after_contract"
+      ],
+      "repairSkill": "borrower_incentives_and_lender_risk",
+      "commonError": "treats_post_loan_project_choice_as_pre_loan_hidden_type_only",
+      "feedback": "Once funds are issued, the lender worries about hidden action. Covenants and monitoring constrain risky behavior.",
+      "aHash": "aba1d8f3442d599ba3b9eaa532191972a3334c39971616d8768c7cefd2c8dafa"
+    },
+    {
+      "id": 9067,
+      "sourceGame": "agencyProtocol",
+      "q": "A firm pays plant managers for output volume. Quality falls, warranty claims rise, and customer retention drops. What is the incentive lesson?",
+      "options": [
+        "Quality loss is impossible when output is observable",
+        "Volume pay always aligns agents with firm profit",
+        "Warranty claims prove the original applicants were high risk",
+        "Narrow performance measures can induce agents to sacrifice unmeasured value"
+      ],
+      "tag": "gaming_incentives",
+      "type": "conceptual",
+      "objective": "LO21.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_metric_gaming_and_unintended_responses",
+      "primarySkill": "metric_gaming_and_unintended_responses",
+      "secondarySkills": [
+        "principal_agent_conflict",
+        "total_firm_profit_alignment"
+      ],
+      "repairSkill": "metric_gaming_and_unintended_responses",
+      "commonError": "trusts_single_metrics_even_when_agents_can_shift_costs_to_unmeasured_dimensions",
+      "feedback": "Agents respond to the metric. If quality and retention are not rewarded, volume incentives can damage total value.",
+      "aHash": "345c9a5d1af9c23a6d49d0d5face39c84805c74f661bbcce8fc1d06d40fcfb1a"
+    },
+    {
+      "id": 9071,
+      "sourceGame": "agencyProtocol",
+      "q": "An employee accepts a job after passing a screening test, then later works less hard because effort is hard to observe. What sequence occurred?",
+      "options": [
+        "Insurance eliminated both hidden type and hidden action",
+        "Signaling occurred after hiring; adverse selection appeared after monitoring",
+        "Transfer pricing addressed hidden effort; budget gaming appeared before hiring",
+        "Screening addressed hidden type before hiring; moral hazard appeared after hiring"
+      ],
+      "tag": "moral_hazard",
+      "type": "conceptual",
+      "objective": "LO21.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_hidden_action_after_contract",
+      "primarySkill": "hidden_action_after_contract",
+      "secondarySkills": [
+        "screening_hidden_type",
+        "principal_agent_conflict"
+      ],
+      "repairSkill": "hidden_action_after_contract",
+      "commonError": "fails_to_separate_before_contract_type_from_after_contract_action",
+      "feedback": "The timing matters. Screening targets hidden type before hiring; hidden effort after hiring is moral hazard.",
+      "aHash": "c9cf47d7564018156ce727ea8f36bcfc00b0a21fc99e62f62e783f3fb2ddfbd7"
+    },
+    {
+      "id": 9103,
+      "sourceGame": "agencyProtocol",
+      "q": "A platform is flooded with unknown sellers. Some sellers buy fake reviews, while reliable sellers offer costly warranties. What matters most for the warranty to work?",
+      "options": [
+        "It must be set by the platform as a transfer price",
+        "It must be free for every seller to copy",
+        "It must be hidden from buyers until after purchase",
+        "It must be credible and harder for low-quality sellers to mimic"
+      ],
+      "tag": "signaling",
+      "type": "conceptual",
+      "objective": "LO19.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_credible_signaling_hidden_type",
+      "primarySkill": "credible_signaling_hidden_type",
+      "secondarySkills": [],
+      "repairSkill": "credible_signaling_hidden_type",
+      "commonError": "assumes_any_claim_is_a_credible_signal_without_costly_verification",
+      "feedback": "Signals work when imitation is costly for low-quality types.",
+      "aHash": "a8fbcbb0c136e3040da49c18ee661ca919411885733bbffb8abf636bce8b91b6"
+    },
+    {
+      "id": 9104,
+      "sourceGame": "agencyProtocol",
+      "q": "A buyer uses verified reviews, inspection reports, and seller histories before purchase. What is the buyer doing?",
+      "options": [
+        "Screening to reduce hidden-quality problems before the transaction",
+        "Creating moral hazard after the sale",
+        "Bonding the seller after employment begins",
+        "Gaming a budget target"
+      ],
+      "tag": "screening",
+      "type": "conceptual",
+      "objective": "LO19.3",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_screening_hidden_type",
+      "primarySkill": "screening_hidden_type",
+      "secondarySkills": [],
+      "repairSkill": "screening_hidden_type",
+      "commonError": "confuses_screening_by_the_less_informed_party_with_signaling_by_the_informed_party",
+      "feedback": "The uninformed side is gathering information before purchase, so this is screening.",
+      "aHash": "58c3085107a2ce181614f4aa984acc02af3d040ed9baebcc88a46d4c904063e9"
+    },
+    {
+      "id": 9105,
+      "sourceGame": "agencyProtocol",
+      "q": "A marketplace combines verified reviews with penalties for fake ratings. Why does that improve the reputation system?",
+      "options": [
+        "It hides seller quality from buyers",
+        "It makes reputation information more credible and reduces adverse selection",
+        "It rewards low-quality sellers for pooling with good sellers",
+        "It changes internal division accountability"
+      ],
+      "tag": "reputation",
+      "type": "conceptual",
+      "objective": "LO19.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_reputation_systems_and_market_quality",
+      "primarySkill": "reputation_systems_and_market_quality",
+      "secondarySkills": [],
+      "repairSkill": "reputation_systems_and_market_quality",
+      "commonError": "treats_reviews_as_perfect_information_instead_of_noisy_market_discipline",
+      "feedback": "Reputation systems only help if the information is credible enough for buyers to trust.",
+      "aHash": "319e34321b41ee94dd7d8d22da601cb8155b5d183f7a537aa6ff883230a51f1d"
+    },
+    {
+      "id": 9106,
+      "sourceGame": "agencyProtocol",
+      "q": "The Auditor sees a borrower take a loan for a safe project, then secretly shift funds into a risky project with private upside. What is the strongest diagnosis?",
+      "options": [
+        "A transfer-pricing conflict between divisions",
+        "Adverse selection from seller quality before purchase",
+        "Moral hazard in lending after funds are received",
+        "A functional coordination failure"
+      ],
+      "tag": "lending",
+      "type": "conceptual",
+      "objective": "LO20.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_borrower_incentives_and_lender_risk",
+      "primarySkill": "borrower_incentives_and_lender_risk",
+      "secondarySkills": [],
+      "repairSkill": "borrower_incentives_and_lender_risk",
+      "commonError": "assumes_borrowers_and_lenders_share_the_same_risk_incentives_after_funding",
+      "feedback": "The borrower changes action after the loan is made, and the lender cannot perfectly observe or control it.",
+      "aHash": "1bf0e12d47b0f3bbc9eb76e18a3286b018c7e5ef21a4c5c5f2dd50b3f7a4a3e1"
+    },
+    {
+      "id": 9109,
+      "sourceGame": "agencyProtocol",
+      "q": "The Principal watches managers hit every metric while customers leave, quality falls, and long-term value declines. What went wrong?",
+      "options": [
+        "The agents ignored incentives completely",
+        "The measured incentives were not aligned with the principal's real objective",
+        "The firm had too much adverse selection before hiring and no moral hazard after hiring",
+        "The firm should evaluate only one simple metric forever"
+      ],
+      "tag": "gaming",
+      "type": "conceptual",
+      "objective": "LO21.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_gaming",
+      "primarySkill": "gaming",
+      "secondarySkills": [],
+      "repairSkill": "gaming",
+      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
+      "feedback": "Agents can hit the measured target while missing the real goal. That is incentive gaming.",
+      "aHash": "7fc2e046fda2999dc09e61efbf2c394317d665c3f21bedd12221ed801e285e2e"
+    },
+    {
+      "id": 9114,
+      "sourceGame": "agencyProtocol",
+      "q": "A regional division rejects a policy that would lower its own score but raise total company profit. What is headquarters' problem?",
+      "options": [
+        "The parent should maximize only the division's score",
+        "The division is solving adverse selection through screening",
+        "Local incentives conflict with parent-company value maximization",
+        "The issue is only employee shirking"
+      ],
+      "tag": "parent_company",
+      "type": "conceptual",
+      "objective": "LO22.1",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_parent_company",
+      "primarySkill": "parent_company",
+      "secondarySkills": [],
+      "repairSkill": "parent_company",
+      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
+      "feedback": "The parent company must care about total firm profit, not just division-level scores.",
+      "aHash": "3f04fcd41aaccc2b036aa7866748f8f3719e28a99e1f6f9b8f827d797f6e0dff"
+    },
+    {
+      "id": 9118,
+      "sourceGame": "agencyProtocol",
+      "q": "A support department is evaluated only on cost reduction, but its cuts slow every revenue-producing division. What should change?",
+      "options": [
+        "The parent should ignore downstream effects",
+        "The support department should be rewarded only for deeper cuts",
+        "Evaluation should include service quality or downstream value, not cost alone",
+        "The support unit should become invisible to measurement"
+      ],
+      "tag": "cost_center",
+      "type": "conceptual",
+      "objective": "LO22.3",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_cost_center_evaluation",
+      "primarySkill": "cost_center_evaluation",
+      "secondarySkills": [],
+      "repairSkill": "cost_center_evaluation",
+      "commonError": "equates_cost_reduction_with_value_creation",
+      "feedback": "Cost control must be balanced against the value the unit creates for the rest of the firm.",
+      "aHash": "38a2bc0b0ca357de3a2811c1ba469122f0c8e978d1f904f308be9fbdc709a998"
+    },
+    {
+      "id": 9119,
+      "sourceGame": "agencyProtocol",
+      "q": "Marketing, operations, and finance each optimize their own function, but product launches keep failing. What organizational weakness is exposed?",
+      "options": [
+        "Seller signaling through warranties",
+        "Adverse selection in insurance markets",
+        "Borrower moral hazard after lending",
+        "Functional silos and poor cross-functional coordination"
+      ],
+      "tag": "functional_units",
+      "type": "conceptual",
+      "objective": "LO22.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_functional_specialization",
+      "primarySkill": "functional_specialization",
+      "secondarySkills": [],
+      "repairSkill": "functional_specialization",
+      "commonError": "ignores_silos_created_by_functional_specialization",
+      "feedback": "Functional expertise helps, but departments must coordinate to execute shared outcomes.",
+      "aHash": "d7e03c749d2cb33d1a60cddb8ee4a01e4ee566bd0f82952e281f11275f581a37"
+    },
+    {
+      "id": 9120,
+      "sourceGame": "agencyProtocol",
+      "q": "A firm moves from functional departments to product divisions after expanding into several unrelated businesses. Why?",
+      "options": [
+        "Multidivisional structure can improve accountability for each business line",
+        "Functional structure always works better as complexity rises",
+        "Product divisions eliminate all coordination and incentive problems",
+        "The firm is mainly reducing buyer adverse selection"
+      ],
+      "tag": "multidivisional",
+      "type": "conceptual",
+      "objective": "LO22.6",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_multidivisional_accountability",
+      "primarySkill": "multidivisional_accountability",
+      "secondarySkills": [],
+      "repairSkill": "multidivisional_accountability",
+      "commonError": "assumes_divisional_accountability_eliminates_coordination_and_agency_problems",
+      "feedback": "Business-line divisions make performance responsibility clearer in complex firms.",
+      "aHash": "f3fe6cb72f17d52f4be8252789480404ba9e5f436de23e5becf2a42a7926c9fb"
+    },
+    {
+      "id": 9125,
+      "sourceGame": "agencyProtocol",
+      "q": "A firm screens applicants carefully but still needs monitoring and incentive pay after hiring. Why?",
+      "options": [
+        "Screening solves all agency problems forever",
+        "Screening reduces hidden type problems but does not eliminate hidden action after employment begins",
+        "Monitoring is only useful before hiring",
+        "Incentive pay only solves seller reputation problems"
+      ],
+      "tag": "principal_agent",
+      "type": "conceptual",
+      "objective": "LO21.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_principal_agent_conflict",
+      "primarySkill": "principal_agent_conflict",
+      "secondarySkills": [],
+      "repairSkill": "principal_agent_conflict",
+      "commonError": "assumes_principal_and_agent_objectives_are_automatically_aligned",
+      "feedback": "Good selection helps, but agents still make choices after the relationship begins.",
+      "aHash": "66eca034f93e85ea08ded77f578d1a0acc999317ce2fd2a4eb2b1f7a9b36af30"
+    },
+    {
+      "id": 9127,
+      "sourceGame": "agencyProtocol",
+      "q": "A firm tries to fix every problem by adding one more metric. Why can that backfire?",
+      "options": [
+        "Metrics make coordination unnecessary",
+        "More metrics always create perfect alignment",
+        "Metrics eliminate all hidden information before contracts",
+        "Agents may optimize measured margins while neglecting unmeasured value"
+      ],
+      "tag": "gaming",
+      "type": "conceptual",
+      "objective": "LO21.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_gaming",
+      "primarySkill": "gaming",
+      "secondarySkills": [],
+      "repairSkill": "gaming",
+      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
+      "feedback": "More measurement is not automatically better. Bad or incomplete metrics invite gaming.",
+      "aHash": "ed259299b36318cb6cdde824256735a584fa131a7ed0b955fcc165c7ffa846ca"
+    },
+    {
+      "id": 9130,
+      "sourceGame": "agencyProtocol",
+      "q": "The Underwriter offers insurance to risk-averse customers facing rare but devastating losses. Why can both sides gain from the deal?",
+      "options": [
+        "Customers gain only when they file claims",
+        "Insurance creates value by making losses impossible",
+        "Customers value risk reduction and the insurer can pool risk across many policyholders",
+        "The insurer gains only by refusing all claims"
+      ],
+      "tag": "insurance",
+      "type": "conceptual",
+      "objective": "LO19.1",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_risk_transfer_and_pooling",
+      "primarySkill": "risk_transfer_and_pooling",
+      "secondarySkills": [],
+      "repairSkill": "risk_transfer_and_pooling",
+      "commonError": "treats_insurance_as_eliminating_risk_instead_of_transferring_and_pooling_it",
+      "feedback": "Insurance creates value through risk transfer and pooling, not magic loss elimination.",
+      "aHash": "155b7278936c9a90d99aac5629be314b778d38b60e03738cde6bb6a377fb4846"
+    },
+    {
+      "id": 9131,
+      "sourceGame": "agencyProtocol",
+      "q": "A customer willingly pays a premium that exceeds their expected claim. Why is this not irrational?",
+      "options": [
+        "Insurance buyers never compare costs and benefits",
+        "The customer must believe a claim is guaranteed",
+        "Premiums are not prices and have no opportunity cost",
+        "The customer is risk averse and values protection from uncertainty"
+      ],
+      "tag": "insurance",
+      "type": "conceptual",
+      "objective": "LO19.1",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_risk_transfer_and_pooling",
+      "primarySkill": "risk_transfer_and_pooling",
+      "secondarySkills": [],
+      "repairSkill": "risk_transfer_and_pooling",
+      "commonError": "treats_insurance_as_eliminating_risk_instead_of_transferring_and_pooling_it",
+      "feedback": "Risk-averse people may pay more than expected loss to avoid severe uncertainty.",
+      "aHash": "58bc8b92ca62b937a4f93b349378ea496220f309595a886e2add6b765ab0b390"
+    },
+    {
+      "id": 9132,
+      "sourceGame": "agencyProtocol",
+      "q": "A small firm buys property insurance so one fire will not bankrupt it. What economic value is insurance providing?",
+      "options": [
+        "Pooling exposure to a large uncertain loss",
+        "Increasing the probability of fire",
+        "Guaranteeing profit for the firm",
+        "Replacing all need for prevention"
+      ],
+      "tag": "insurance",
+      "type": "conceptual",
+      "objective": "LO19.1",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_risk_transfer_and_pooling",
+      "primarySkill": "risk_transfer_and_pooling",
+      "secondarySkills": [],
+      "repairSkill": "risk_transfer_and_pooling",
+      "commonError": "treats_insurance_as_eliminating_risk_instead_of_transferring_and_pooling_it",
+      "feedback": "Insurance helps manage low-probability, high-cost risks by pooling them.",
+      "aHash": "66001111c99fb5a50bd06074f23428ae0625808b57e6a16d0492b1d9c55e8e6c"
+    },
+    {
+      "id": 9133,
+      "sourceGame": "agencyProtocol",
+      "q": "A used-car buyer cannot observe vehicle quality, and low-quality sellers are most eager to sell at the average price. What is the problem?",
+      "options": [
+        "Moral hazard from hidden effort after purchase",
+        "Adverse selection from hidden quality before the transaction",
+        "Transfer pricing between divisions",
+        "Budget gaming by the buyer"
+      ],
+      "tag": "adverse_selection",
+      "type": "conceptual",
+      "objective": "LO19.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_hidden_information_before_contract",
+      "primarySkill": "hidden_information_before_contract",
+      "secondarySkills": [],
+      "repairSkill": "hidden_information_before_contract",
+      "commonError": "confuses_hidden_information_before_contract_with_hidden_action_after_contract",
+      "feedback": "Hidden quality before purchase creates adverse selection.",
+      "aHash": "1ff4bce59c6756600216274d2188501ba4adf66d11364ef9da0ab9d76f1f3c19"
+    },
+    {
+      "id": 9134,
+      "sourceGame": "agencyProtocol",
+      "q": "If low-risk insurance buyers leave after premiums rise, what happens to the pool?",
+      "options": [
+        "The insurer has solved moral hazard permanently",
+        "The pool becomes safer because high-risk buyers leave first",
+        "The pool becomes riskier, which can push premiums even higher",
+        "The problem turns into functional specialization"
+      ],
+      "tag": "adverse_selection",
+      "type": "conceptual",
+      "objective": "LO19.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_hidden_information_before_contract",
+      "primarySkill": "hidden_information_before_contract",
+      "secondarySkills": [],
+      "repairSkill": "hidden_information_before_contract",
+      "commonError": "confuses_hidden_information_before_contract_with_hidden_action_after_contract",
+      "feedback": "Adverse selection can create a worsening pool when low-risk buyers drop out.",
+      "aHash": "ec7bf6f3b34e7546d3d9dba4d6aeee06dc641b8cf8b72304fa0021f97f8c54a9"
+    },
+    {
+      "id": 9135,
+      "sourceGame": "agencyProtocol",
+      "q": "A market collapses because buyers cannot tell good products from bad products and offer only a low average price. What mechanism is driving collapse?",
+      "options": [
+        "Transfer prices eliminate external market uncertainty",
+        "Low-quality sellers leave because the price is too high",
+        "Monitoring after purchase fully solves hidden quality",
+        "High-quality sellers exit when the price fails to reflect their quality"
+      ],
+      "tag": "adverse_selection",
+      "type": "conceptual",
+      "objective": "LO19.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_hidden_information_before_contract",
+      "primarySkill": "hidden_information_before_contract",
+      "secondarySkills": [],
+      "repairSkill": "hidden_information_before_contract",
+      "commonError": "confuses_hidden_information_before_contract_with_hidden_action_after_contract",
+      "feedback": "When quality is hidden, good sellers may leave, worsening the market.",
+      "aHash": "1cbbe9aa47895a0935324409b1fd97f60705749f4783b64a21d9abe55c84b670"
+    },
+    {
+      "id": 9136,
+      "sourceGame": "agencyProtocol",
+      "q": "An insurer requires applicants to answer health questions and provide records before coverage. What is the insurer trying to do?",
+      "options": [
+        "Screen applicants to classify risk before selling coverage",
+        "Create moral hazard after coverage begins",
+        "Let high-risk customers hide information more easily",
+        "Set a transfer price for claims"
+      ],
+      "tag": "screening",
+      "type": "conceptual",
+      "objective": "LO19.3",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_screening_hidden_type",
+      "primarySkill": "screening_hidden_type",
+      "secondarySkills": [],
+      "repairSkill": "screening_hidden_type",
+      "commonError": "confuses_screening_by_the_less_informed_party_with_signaling_by_the_informed_party",
+      "feedback": "The insurer is the less-informed side trying to learn hidden risk before the contract.",
+      "aHash": "3c5c24d8a23bd6689746332152e514a51b3c6b83ac42472f6dba6d359cccaeda"
+    },
+    {
+      "id": 9137,
+      "sourceGame": "agencyProtocol",
+      "q": "A lender checks credit history before approving a loan. Why is this screening?",
+      "options": [
+        "The borrower voluntarily reveals quality after receiving the loan",
+        "The lender uses information before the transaction to sort borrower risk",
+        "The lender changes borrower behavior after funding",
+        "The loan becomes a cost center"
+      ],
+      "tag": "screening",
+      "type": "conceptual",
+      "objective": "LO19.3",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_screening_hidden_type",
+      "primarySkill": "screening_hidden_type",
+      "secondarySkills": [],
+      "repairSkill": "screening_hidden_type",
+      "commonError": "confuses_screening_by_the_less_informed_party_with_signaling_by_the_informed_party",
+      "feedback": "Screening happens before the deal and is initiated by the less-informed side.",
+      "aHash": "74c199f7f18a25137d680927a86b93f1e64964afb30aea615e4d50edbde9de0b"
+    },
+    {
+      "id": 9138,
+      "sourceGame": "agencyProtocol",
+      "q": "A firm makes job candidates complete a work sample that weaker candidates rarely pass. What is the likely benefit?",
+      "options": [
+        "It eliminates the need for incentives",
+        "It prevents all shirking after hiring",
+        "It reduces hidden-ability problems before hiring",
+        "It sets internal prices between departments"
+      ],
+      "tag": "screening",
+      "type": "conceptual",
+      "objective": "LO19.3",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_screening_hidden_type",
+      "primarySkill": "screening_hidden_type",
+      "secondarySkills": [],
+      "repairSkill": "screening_hidden_type",
+      "commonError": "confuses_screening_by_the_less_informed_party_with_signaling_by_the_informed_party",
+      "feedback": "Work samples can screen applicants before the employment relationship starts.",
+      "aHash": "b2fbec0c760e043c9e0bd1a43a3f0f740a3ff61425530b65df1790c7f0f3a95b"
+    },
+    {
+      "id": 9139,
+      "sourceGame": "agencyProtocol",
+      "q": "A seller offers a money-back guarantee because low-quality sellers would expect too many returns. What does the guarantee do?",
+      "options": [
+        "It centralizes decision rights",
+        "It screens buyers because buyers created the guarantee",
+        "It creates budget slack in the seller's department",
+        "It signals quality when it is more costly for low-quality sellers to copy"
+      ],
+      "tag": "signaling",
+      "type": "conceptual",
+      "objective": "LO19.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_credible_signaling_hidden_type",
+      "primarySkill": "credible_signaling_hidden_type",
+      "secondarySkills": [],
+      "repairSkill": "credible_signaling_hidden_type",
+      "commonError": "assumes_any_claim_is_a_credible_signal_without_costly_verification",
+      "feedback": "A costly-to-copy guarantee can separate high-quality sellers from low-quality sellers.",
+      "aHash": "c84f164ff8315d8e58adb648e7a679d7a46cc5dd4193a3607bdfcdb13f59bf4d"
+    },
+    {
+      "id": 9140,
+      "sourceGame": "agencyProtocol",
+      "q": "An applicant earns a difficult certification before entering the labor market. Why might employers care?",
+      "options": [
+        "The certification can signal ability if it is harder for low-ability applicants to obtain",
+        "The certification creates moral hazard after hiring by hiding effort",
+        "The certification is a transfer price across divisions",
+        "The certification prevents any need for screening"
+      ],
+      "tag": "signaling",
+      "type": "conceptual",
+      "objective": "LO19.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_credible_signaling_hidden_type",
+      "primarySkill": "credible_signaling_hidden_type",
+      "secondarySkills": [],
+      "repairSkill": "credible_signaling_hidden_type",
+      "commonError": "assumes_any_claim_is_a_credible_signal_without_costly_verification",
+      "feedback": "Signals work when they credibly reveal hidden quality or ability.",
+      "aHash": "ab51c9021d59875a4ed27c311d545561b7f08da957633680e55a1f7b2b149916"
+    },
+    {
+      "id": 9141,
+      "sourceGame": "agencyProtocol",
+      "q": "A signal loses value after fake certificates become cheap and common. Why?",
+      "options": [
+        "The signal becomes more credible as imitation becomes easier",
+        "The signal no longer separates high-quality types from low-quality types",
+        "The problem has turned into collateralized lending",
+        "The signal now measures hidden effort after hiring"
+      ],
+      "tag": "signaling",
+      "type": "conceptual",
+      "objective": "LO19.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_credible_signaling_hidden_type",
+      "primarySkill": "credible_signaling_hidden_type",
+      "secondarySkills": [],
+      "repairSkill": "credible_signaling_hidden_type",
+      "commonError": "assumes_any_claim_is_a_credible_signal_without_costly_verification",
+      "feedback": "If everyone can copy the signal cheaply, it stops revealing type.",
+      "aHash": "b5d0426abd5bf46d3c1a37d1ad3cd5d03fa755d27888560b40df71910db5876a"
+    },
+    {
+      "id": 9142,
+      "sourceGame": "agencyProtocol",
+      "q": "A platform weights verified-purchase reviews more heavily than anonymous reviews. What is it trying to improve?",
+      "options": [
+        "The transfer price between divisions",
+        "The insured party's deductible after a claim",
+        "The credibility of reputation information used by future buyers",
+        "The employee's effort after hiring"
+      ],
+      "tag": "reputation",
+      "type": "conceptual",
+      "objective": "LO19.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_reputation_systems_and_market_quality",
+      "primarySkill": "reputation_systems_and_market_quality",
+      "secondarySkills": [],
+      "repairSkill": "reputation_systems_and_market_quality",
+      "commonError": "treats_reviews_as_perfect_information_instead_of_noisy_market_discipline",
+      "feedback": "Verified reviews make reputation more reliable and reduce hidden-quality problems.",
+      "aHash": "2186abf0289a6dbf0de51dba5fbbbb45bc0c117a44cfa21150b0879b66272566"
+    },
+    {
+      "id": 9143,
+      "sourceGame": "agencyProtocol",
+      "q": "A seller with poor ratings must lower price to attract buyers. What role are ratings playing?",
+      "options": [
+        "They function as a divisional budget target",
+        "They create moral hazard by hiding all seller actions",
+        "They eliminate the need for buyers to compare products",
+        "They make hidden quality more visible and affect buyer willingness to pay"
+      ],
+      "tag": "reputation",
+      "type": "conceptual",
+      "objective": "LO19.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_reputation_systems_and_market_quality",
+      "primarySkill": "reputation_systems_and_market_quality",
+      "secondarySkills": [],
+      "repairSkill": "reputation_systems_and_market_quality",
+      "commonError": "treats_reviews_as_perfect_information_instead_of_noisy_market_discipline",
+      "feedback": "Reputation systems transmit quality information to future buyers.",
+      "aHash": "cab70309f292774b7642be83f439704f157faddc3795469f3376c730ed2ba77c"
+    },
+    {
+      "id": 9144,
+      "sourceGame": "agencyProtocol",
+      "q": "A platform bans sellers who repeatedly receive verified complaints. How can that affect market quality?",
+      "options": [
+        "It can improve the seller pool by removing low-quality sellers",
+        "It worsens adverse selection by protecting bad sellers",
+        "It removes all need for prices and warranties",
+        "It creates moral hazard in lending"
+      ],
+      "tag": "reputation",
+      "type": "conceptual",
+      "objective": "LO19.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_reputation_systems_and_market_quality",
+      "primarySkill": "reputation_systems_and_market_quality",
+      "secondarySkills": [],
+      "repairSkill": "reputation_systems_and_market_quality",
+      "commonError": "treats_reviews_as_perfect_information_instead_of_noisy_market_discipline",
+      "feedback": "Enforcement attached to ratings can strengthen reputation and improve the pool.",
+      "aHash": "55fe57ab31ac29774dbe0ebebc68b1965790d78f889a270042081439ea8ddfb8"
+    },
+    {
+      "id": 9145,
+      "sourceGame": "agencyProtocol",
+      "q": "A driver faces no deductible and no premium increase after accidents. What behavior problem is most likely?",
+      "options": [
+        "Adverse selection because the driver revealed type after the accident",
+        "Moral hazard because the driver bears too little cost from risky behavior",
+        "Screening because the insurer observes every action",
+        "Transfer pricing because claims are internal"
+      ],
+      "tag": "moral_hazard",
+      "type": "conceptual",
+      "objective": "LO20.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_hidden_action_after_contract",
+      "primarySkill": "hidden_action_after_contract",
+      "secondarySkills": [],
+      "repairSkill": "hidden_action_after_contract",
+      "commonError": "confuses_post_contract_behavior_with_pre_contract_type_selection",
+      "feedback": "When insured parties do not bear much cost from risky behavior, care may fall.",
+      "aHash": "ba4b5e89994fd1d22403e4f645fc4497d5096dfdc6b2c58660f04a6b0cf2e189"
+    },
+    {
+      "id": 9147,
+      "sourceGame": "agencyProtocol",
+      "q": "A company reimburses all travel expenses with no review, and spending jumps. What control most directly addresses the problem?",
+      "options": [
+        "Use seller warranties instead of reimbursement rules",
+        "Raise every employee's travel budget automatically",
+        "Hide travel prices from employees",
+        "Require documentation, caps, or cost sharing so employees bear or justify some cost"
+      ],
+      "tag": "moral_hazard",
+      "type": "conceptual",
+      "objective": "LO20.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_hidden_action_after_contract",
+      "primarySkill": "hidden_action_after_contract",
+      "secondarySkills": [],
+      "repairSkill": "hidden_action_after_contract",
+      "commonError": "confuses_post_contract_behavior_with_pre_contract_type_selection",
+      "feedback": "The issue is hidden action after reimbursement rules change incentives.",
+      "aHash": "334aaa6036a446b5861fe1cabc4fbb273171954cc39c8741d454cb4b96376b69"
+    },
+    {
+      "id": 9149,
+      "sourceGame": "agencyProtocol",
+      "q": "A warehouse installs scanners that record pick rates and error rates. What agency problem is it targeting?",
+      "options": [
+        "Hidden product quality before external buyers purchase",
+        "Hidden effort and hidden action during work",
+        "Division conflict over internal prices",
+        "Budget slack before targets are set"
+      ],
+      "tag": "monitoring",
+      "type": "conceptual",
+      "objective": "LO20.3",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_monitoring_and_incentive_control",
+      "primarySkill": "monitoring_and_incentive_control",
+      "secondarySkills": [],
+      "repairSkill": "monitoring_and_incentive_control",
+      "commonError": "assumes_monitoring_always_solves_incentive_problems_without_costs_or_distortion",
+      "feedback": "Monitoring makes worker actions or outcomes more observable.",
+      "aHash": "1aae36fe0084e4168792cf83b6be5283799ef819e119b251effd69434e9525d0"
+    },
+    {
+      "id": 9150,
+      "sourceGame": "agencyProtocol",
+      "q": "Monitoring focuses only on speed, and workers begin making more mistakes. What did the firm miss?",
+      "options": [
+        "Errors prove adverse selection before employment is the only issue",
+        "Monitoring always improves every outcome equally",
+        "Monitoring must measure the right dimensions or it can distort behavior",
+        "The solution is to remove all feedback"
+      ],
+      "tag": "monitoring",
+      "type": "conceptual",
+      "objective": "LO20.3",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_monitoring_and_incentive_control",
+      "primarySkill": "monitoring_and_incentive_control",
+      "secondarySkills": [],
+      "repairSkill": "monitoring_and_incentive_control",
+      "commonError": "assumes_monitoring_always_solves_incentive_problems_without_costs_or_distortion",
+      "feedback": "Bad monitoring can redirect effort toward measured dimensions and away from unmeasured quality.",
+      "aHash": "7cffe5a4f8f0eb4f8aa69b3e088d12db65b07ee8362f6f98fd4982844b4aa1f1"
+    },
+    {
+      "id": 9151,
+      "sourceGame": "agencyProtocol",
+      "q": "A shareholder hires a manager to run the company. What creates the principal-agent problem?",
+      "options": [
+        "The firm has no delegation",
+        "The shareholder and manager are always the same person",
+        "The manager cannot affect firm value",
+        "The manager makes decisions for the shareholder but may have different information and incentives"
+      ],
+      "tag": "principal_agent",
+      "type": "conceptual",
+      "objective": "LO21.1",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_principal_agent_conflict",
+      "primarySkill": "principal_agent_conflict",
+      "secondarySkills": [],
+      "repairSkill": "principal_agent_conflict",
+      "commonError": "assumes_principal_and_agent_objectives_are_automatically_aligned",
+      "feedback": "Agency problems arise when one party delegates decisions to another whose incentives may differ.",
+      "aHash": "9dfca06e0f3641492a8cba086946a748c30b3a52b6d7ac7a71914b9762ee870c"
+    },
+    {
+      "id": 9152,
+      "sourceGame": "agencyProtocol",
+      "q": "A patient relies on a doctor to recommend treatment. Why can this become a principal-agent relationship?",
+      "options": [
+        "The doctor has expertise and acts on behalf of the patient, but incentives may not perfectly match",
+        "The patient always has more medical information than the doctor",
+        "No decision is delegated",
+        "Doctors cannot be affected by payment incentives"
+      ],
+      "tag": "principal_agent",
+      "type": "conceptual",
+      "objective": "LO21.1",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_principal_agent_conflict",
+      "primarySkill": "principal_agent_conflict",
+      "secondarySkills": [],
+      "repairSkill": "principal_agent_conflict",
+      "commonError": "assumes_principal_and_agent_objectives_are_automatically_aligned",
+      "feedback": "Agents often have expertise and discretion, which creates room for incentive conflict.",
+      "aHash": "bd270db180caeaa20c5d034064e5e359c9496678b4fa2e2aa3af066fd251f659"
+    },
+    {
+      "id": 9153,
+      "sourceGame": "agencyProtocol",
+      "q": "An owner cannot personally manage every store and hires regional managers. What problem must the owner now manage?",
+      "options": [
+        "Delegation eliminates all monitoring needs",
+        "Delegated authority creates agency risk if managers pursue their own objectives",
+        "The owner has solved incentive conflict by hiring more agents",
+        "The issue is only buyer reputation"
+      ],
+      "tag": "principal_agent",
+      "type": "conceptual",
+      "objective": "LO21.1",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_principal_agent_conflict",
+      "primarySkill": "principal_agent_conflict",
+      "secondarySkills": [],
+      "repairSkill": "principal_agent_conflict",
+      "commonError": "assumes_principal_and_agent_objectives_are_automatically_aligned",
+      "feedback": "Delegation is necessary in complex organizations, but it introduces agency concerns.",
+      "aHash": "8589f5855483943bd9c9c1df7a78ebd4465d9f38c2217f6b33faf945e5a4e0fc"
+    },
+    {
+      "id": 9154,
+      "sourceGame": "agencyProtocol",
+      "q": "A firm screens managers carefully before hiring and later ties pay to audited performance. Which two agency margins are being addressed?",
+      "options": [
+        "Only reputation and seller warranties",
+        "Only transfer pricing and cost-center evaluation",
+        "Hidden type before hiring and hidden action after hiring",
+        "Only buyer adverse selection after the sale"
+      ],
+      "tag": "principal_agent",
+      "type": "conceptual",
+      "objective": "LO21.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_principal_agent_conflict",
+      "primarySkill": "principal_agent_conflict",
+      "secondarySkills": [],
+      "repairSkill": "principal_agent_conflict",
+      "commonError": "assumes_principal_and_agent_objectives_are_automatically_aligned",
+      "feedback": "Screening targets selection; incentive pay and auditing target behavior after selection.",
+      "aHash": "7b3a646f6e6dc608823724078b8942ba899eba32728f87f60ce83471774a98c2"
+    },
+    {
+      "id": 9155,
+      "sourceGame": "agencyProtocol",
+      "q": "A low-ability applicant gets hired because ability was hard to observe; later the applicant exerts low effort because effort is hard to observe. What sequence is this?",
+      "options": [
+        "Coordination followed by functional specialization",
+        "Moral hazard followed by signaling",
+        "Transfer pricing followed by budgeting",
+        "Adverse selection followed by moral hazard"
+      ],
+      "tag": "principal_agent",
+      "type": "conceptual",
+      "objective": "LO21.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_principal_agent_conflict",
+      "primarySkill": "principal_agent_conflict",
+      "secondarySkills": [],
+      "repairSkill": "principal_agent_conflict",
+      "commonError": "assumes_principal_and_agent_objectives_are_automatically_aligned",
+      "feedback": "Hidden ability before hiring is adverse selection; hidden effort after hiring is moral hazard.",
+      "aHash": "ff1809505b5db8d1e613f9be50f3c565110ed34b0ff13497905caf81ba315551"
+    },
+    {
+      "id": 9156,
+      "sourceGame": "agencyProtocol",
+      "q": "An executive compensation plan uses restricted stock that vests over several years. What problem is it trying to reduce?",
+      "options": [
+        "Short-term gaming by aligning the agent with longer-term firm value",
+        "Adverse selection in online seller markets",
+        "A deductible problem in health insurance",
+        "Functional silos in marketing"
+      ],
+      "tag": "incentives",
+      "type": "conceptual",
+      "objective": "LO21.3",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_incentives",
+      "primarySkill": "incentives",
+      "secondarySkills": [],
+      "repairSkill": "incentives",
+      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
+      "feedback": "Longer vesting can reduce incentives to boost short-term metrics at long-term cost.",
+      "aHash": "add093f79b8776026745730220c451d00c471bbbe575a802aa96406423604b1e"
+    },
+    {
+      "id": 9157,
+      "sourceGame": "agencyProtocol",
+      "q": "A company gives a regional manager decision authority but also charges the region for resources it uses from headquarters. What broad design issue is involved?",
+      "options": [
+        "Eliminating all local information from decisions",
+        "Aligning local choices with their full costs and benefits",
+        "Turning every customer into an insurer",
+        "Replacing incentives with hidden quality"
+      ],
+      "tag": "incentives",
+      "type": "conceptual",
+      "objective": "LO21.6",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_incentives",
+      "primarySkill": "incentives",
+      "secondarySkills": [],
+      "repairSkill": "incentives",
+      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
+      "feedback": "Good controls make agents internalize more of the consequences of their choices.",
+      "aHash": "2ee62d9e9a405206bb4a65256eb7e50b7bedb55814d1bf5dfae04f11754cb959"
+    },
+    {
+      "id": 9158,
+      "sourceGame": "agencyProtocol",
+      "q": "A bad incentive plan increases sales, increases returns, lowers customer trust, and hurts profit. What should the diagnosis focus on?",
+      "options": [
+        "Only the agent's personality, not the metric",
+        "Only the number of sales because sales rose",
+        "The difference between the measured target and the principal's true objective",
+        "Only whether the firm has a functional structure"
+      ],
+      "tag": "gaming",
+      "type": "conceptual",
+      "objective": "LO21.6",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_gaming",
+      "primarySkill": "gaming",
+      "secondarySkills": [],
+      "repairSkill": "gaming",
+      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
+      "feedback": "The key is whether the metric captures what the principal actually values.",
+      "aHash": "692cd18cceeb0418d62f750680ea6210e01d66ce2bf47f875af4ac9609a4e67c"
+    },
+    {
+      "id": 9159,
+      "sourceGame": "agencyProtocol",
+      "q": "A support unit exists inside a functional organization. Why might specialization still require coordination?",
+      "options": [
+        "Functional units eliminate all interdependence",
+        "Specialization means departments never affect each other",
+        "Coordination is only needed in insurance markets",
+        "Specialized units depend on one another to create the final outcome"
+      ],
+      "tag": "functional_units",
+      "type": "conceptual",
+      "objective": "LO22.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_functional_specialization",
+      "primarySkill": "functional_specialization",
+      "secondarySkills": [],
+      "repairSkill": "functional_specialization",
+      "commonError": "ignores_silos_created_by_functional_specialization",
+      "feedback": "Functional specialization increases expertise but also creates interdependence.",
+      "aHash": "78ee3a9c88a2ef5c44a84866ad99d18188a1559aa5860e77ee72050891b17bc3"
+    },
+    {
+      "id": 9160,
+      "sourceGame": "agencyProtocol",
+      "q": "A finance department rejects every risky project, while marketing wants every growth project. What organizational issue is likely?",
+      "options": [
+        "Functional units may apply specialized priorities that need coordination and balancing",
+        "The firm has no specialization",
+        "The issue is borrower collateral only",
+        "The problem is seller signaling only"
+      ],
+      "tag": "functional_units",
+      "type": "conceptual",
+      "objective": "LO22.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_functional_specialization",
+      "primarySkill": "functional_specialization",
+      "secondarySkills": [],
+      "repairSkill": "functional_specialization",
+      "commonError": "ignores_silos_created_by_functional_specialization",
+      "feedback": "Functional departments view decisions through specialized lenses, which can create conflict.",
+      "aHash": "6b4c07486bd1be8eeea4ac57229a17dfb28ae0ce1c6fb7815309bc0affb5f0b3"
+    },
+    {
+      "id": 9162,
+      "sourceGame": "agencyProtocol",
+      "q": "Operations saves money by reducing quality checks, but sales loses customers from defects. What is the organizational problem?",
+      "options": [
+        "A seller warranty acting as a perfect signal",
+        "A pure adverse selection problem before insurance purchase",
+        "A coordination failure across functional units with local cost savings creating broader losses",
+        "A loan covenant reducing borrower risk"
+      ],
+      "tag": "coordination",
+      "type": "conceptual",
+      "objective": "LO22.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_cross_functional_coordination",
+      "primarySkill": "cross_functional_coordination",
+      "secondarySkills": [],
+      "repairSkill": "cross_functional_coordination",
+      "commonError": "treats_divisions_as_independent_when_outputs_are_interdependent",
+      "feedback": "One department's choices affect another department's outcomes, so coordination matters.",
+      "aHash": "dbc5d54729b3de8d73f9a2271e768d7d550aceb6bdaec7571d86247d331f08d0"
+    },
+    {
+      "id": 9163,
+      "sourceGame": "agencyProtocol",
+      "q": "A company creates cross-functional launch teams for new products. What problem is this meant to reduce?",
+      "options": [
+        "Budget slack from sandbagging forecasts",
+        "Risk pooling in insurance markets",
+        "Borrower moral hazard after funding",
+        "Silo behavior and poor coordination among specialized functions"
+      ],
+      "tag": "coordination",
+      "type": "conceptual",
+      "objective": "LO22.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_cross_functional_coordination",
+      "primarySkill": "cross_functional_coordination",
+      "secondarySkills": [],
+      "repairSkill": "cross_functional_coordination",
+      "commonError": "treats_divisions_as_independent_when_outputs_are_interdependent",
+      "feedback": "Cross-functional teams force information sharing across specialized departments.",
+      "aHash": "16bc1d3194b5fe92a1170e8749fa966db9c3231623ebff616779f323455df6a7"
+    },
+    {
+      "id": 9167,
+      "sourceGame": "agencyProtocol",
+      "q": "A budget process asks managers for private forecasts, then punishes every forecast error. What bad behavior might follow?",
+      "options": [
+        "The issue becomes seller adverse selection only",
+        "Managers will always reveal perfect information",
+        "Forecasting rules cannot affect incentives",
+        "Managers may distort forecasts defensively instead of revealing honest information"
+      ],
+      "tag": "budget_games",
+      "type": "conceptual",
+      "objective": "LO22.7",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_budget_slack_and_target_manipulation",
+      "primarySkill": "budget_slack_and_target_manipulation",
+      "secondarySkills": [],
+      "repairSkill": "budget_slack_and_target_manipulation",
+      "commonError": "mistakes_budget_compliance_for_honest_forecasting_or_value_creation",
+      "feedback": "Budget systems need incentives for truth-telling, not just punishment.",
+      "aHash": "e1eb939427fdd4e398162c803184c54cf461e776dccb6f4805eb8ff84beaa5d9"
+    },
+    {
+      "id": 9168,
+      "sourceGame": "agencyProtocol",
+      "q": "A parent company wants divisions to reveal private information honestly during planning. What helps?",
+      "options": [
+        "Audits, benchmark comparisons, and rewards for forecast accuracy",
+        "Automatic approval of every inflated request",
+        "Punishing all unused funds without review",
+        "Letting each division set its own transfer price without oversight"
+      ],
+      "tag": "parent_company",
+      "type": "conceptual",
+      "objective": "LO22.1",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_parent_company",
+      "primarySkill": "parent_company",
+      "secondarySkills": [],
+      "repairSkill": "parent_company",
+      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
+      "feedback": "The parent needs planning systems that encourage honest information and total-firm thinking.",
+      "aHash": "ec8f1c3d7e247a233c512db8a839e330701f298a1e1baf824fb19bf0b932f5f4"
+    },
+    {
+      "id": 9169,
+      "sourceGame": "agencyProtocol",
+      "q": "The final boss presents one case with hidden customer risk, hidden employee effort, bad sales bonuses, and internal trade conflict. What should a strong answer do first?",
+      "options": [
+        "Call everything moral hazard because behavior changed somewhere",
+        "Separate the mechanisms instead of forcing one label onto the entire case",
+        "Call everything adverse selection because some information was hidden",
+        "Ignore timing and incentives because all problems are managerial"
+      ],
+      "tag": "principal_agent",
+      "type": "conceptual",
+      "objective": "LO21.6",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_principal_agent_conflict",
+      "primarySkill": "principal_agent_conflict",
+      "secondarySkills": [],
+      "repairSkill": "principal_agent_conflict",
+      "commonError": "assumes_principal_and_agent_objectives_are_automatically_aligned",
+      "feedback": "Careful diagnosis starts by sorting mechanisms: timing, information, incentives, and organizational conflict.",
+      "aHash": "3e6f3b80678aea9839b8d7d2006ad4042ccc47c4f0461be7264750201bc9ab73"
+    },
+    {
+      "id": 9170,
+      "sourceGame": "agencyProtocol",
+      "q": "A borrower knows the lender will share losses but the borrower keeps most upside from a risky project. What lending problem remains?",
+      "options": [
+        "The borrower is signaling product quality to buyers",
+        "The lender has solved all moral hazard through the interest rate alone",
+        "The borrower may still choose too much risk after receiving funds",
+        "The issue is functional coordination"
+      ],
+      "tag": "lending",
+      "type": "conceptual",
+      "objective": "LO20.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_borrower_incentives_and_lender_risk",
+      "primarySkill": "borrower_incentives_and_lender_risk",
+      "secondarySkills": [],
+      "repairSkill": "borrower_incentives_and_lender_risk",
+      "commonError": "assumes_borrowers_and_lenders_share_the_same_risk_incentives_after_funding",
+      "feedback": "Lending moral hazard can remain whenever borrower upside and lender downside are not perfectly aligned.",
+      "aHash": "e28cac6b30c8a3d907e04b1658e6e456c6c5b0e156a1942a962aa8100504a36f"
+    },
+    {
+      "id": 9171,
+      "sourceGame": "agencyProtocol",
+      "q": "A remote worker appears productive on tracked tasks but avoids untracked teamwork. What does this show about shirking?",
+      "options": [
+        "The solution is a transfer price",
+        "Tracking one task eliminates hidden effort everywhere",
+        "The problem is adverse selection before insurance purchase",
+        "Agents can shift low effort toward activities that are harder to observe"
+      ],
+      "tag": "shirking",
+      "type": "conceptual",
+      "objective": "LO20.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_shirking_and_effort_incentives",
+      "primarySkill": "shirking_and_effort_incentives",
+      "secondarySkills": [],
+      "repairSkill": "shirking_and_effort_incentives",
+      "commonError": "ignores_hidden_effort_and_free_riding_in_team_or_employee_settings",
+      "feedback": "Shirking can move to unmeasured margins when only part of effort is visible.",
+      "aHash": "4d3bc0a8f4eed0d166785a7ec967f78967031d554ace5160ede7cf59875a9b21"
+    },
+    {
+      "id": 9172,
+      "sourceGame": "agencyProtocol",
+      "q": "A firm pays only for individual output, and workers stop helping teammates. Why is this a shirking-adjacent agency problem?",
+      "options": [
+        "Important cooperative effort is hidden and unrewarded",
+        "The workers are revealing hidden quality before hiring",
+        "The firm has no principal-agent relationship",
+        "The problem is only seller reputation"
+      ],
+      "tag": "shirking",
+      "type": "conceptual",
+      "objective": "LO20.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_shirking_and_effort_incentives",
+      "primarySkill": "shirking_and_effort_incentives",
+      "secondarySkills": [],
+      "repairSkill": "shirking_and_effort_incentives",
+      "commonError": "ignores_hidden_effort_and_free_riding_in_team_or_employee_settings",
+      "feedback": "When cooperative effort is hard to observe, workers may shirk on teamwork.",
+      "aHash": "aef3cf22a6186f4842c64afdc5cc0b455cd7e308c5e99a1c5c4b21c5f662ef01"
+    },
+    {
+      "id": 9173,
+      "sourceGame": "agencyProtocol",
+      "q": "Employees are rewarded for completing cases fast, so they classify difficult cases as easy closures. What is happening?",
+      "options": [
+        "They are solving adverse selection with screening",
+        "They are gaming the metric rather than improving the true outcome",
+        "They are signaling high product quality",
+        "They are setting an efficient transfer price"
+      ],
+      "tag": "gaming",
+      "type": "conceptual",
+      "objective": "LO21.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_gaming",
+      "primarySkill": "gaming",
+      "secondarySkills": [],
+      "repairSkill": "gaming",
+      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
+      "feedback": "The agents chase the measured target while undermining the principal's real goal.",
+      "aHash": "061cb2cd6db88a9c25b8d74f9122d9050822f0a1a596d8f4577373890740bdd5"
+    },
+    {
+      "id": 9175,
+      "sourceGame": "agencyProtocol",
+      "q": "Two divisions each maximize their own reported profit, yet the parent company earns less. What should headquarters prioritize?",
+      "options": [
+        "Only the selling division's accounting profit",
+        "The highest individual division score no matter the total effect",
+        "Only the buying division's accounting profit",
+        "Total firm profit, even when local divisional metrics point elsewhere"
+      ],
+      "tag": "parent_company",
+      "type": "conceptual",
+      "objective": "LO22.1",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_parent_company",
+      "primarySkill": "parent_company",
+      "secondarySkills": [],
+      "repairSkill": "parent_company",
+      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
+      "feedback": "The parent company's objective is total firm value, not local scores alone.",
+      "aHash": "e44ad904e7b2b3818a9f23702d6f107fc53152adbb302d8ab5dfb6ee0bb06eb7"
+    },
+    {
+      "id": 9177,
+      "sourceGame": "agencyProtocol",
+      "q": "A profit center boosts its own profit by shifting costs onto a shared service unit. What does this reveal?",
+      "options": [
+        "Profit centers automatically maximize total firm value",
+        "Profit-center evaluation can be distorted when costs and benefits spill across units",
+        "Cost allocation never affects behavior",
+        "The issue is only adverse selection in online markets"
+      ],
+      "tag": "profit_center",
+      "type": "conceptual",
+      "objective": "LO22.3",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_profit_center_evaluation",
+      "primarySkill": "profit_center_evaluation",
+      "secondarySkills": [],
+      "repairSkill": "profit_center_evaluation",
+      "commonError": "assumes_local_profit_center_success_always_improves_total_firm_profit",
+      "feedback": "Profit-center metrics can still be gamed when shared costs and spillovers exist.",
+      "aHash": "d3577e87ac7f419054ec63fa3e89ef19892e4c7a94ccb75d5c40204ae396d6f7"
+    },
+    {
+      "id": 9178,
+      "sourceGame": "agencyProtocol",
+      "q": "An insurer offers full coverage at one average premium. Low-risk buyers leave, high-risk buyers remain, and remaining buyers reduce precautions after purchase. Which diagnosis separates the two failures correctly?",
+      "options": [
+        "Both failures are transfer pricing because premiums are prices",
+        "Moral hazard worsens the pool before contracts; adverse selection reduces precautions after coverage",
+        "Adverse selection worsens the pool before contracts; moral hazard reduces precautions after coverage",
+        "Both failures are budget games because buyers manipulate targets"
+      ],
+      "tag": "adverse_selection",
+      "type": "conceptual",
+      "objective": "LO19.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_hidden_information_before_contract",
+      "primarySkill": "hidden_information_before_contract",
+      "secondarySkills": [
+        "hidden_action_after_contract",
+        "risk_transfer_and_pooling"
+      ],
+      "repairSkill": "hidden_information_before_contract",
+      "commonError": "collapses_adverse_selection_and_moral_hazard_into_one_timing_blind_category",
+      "feedback": "The pool changes before contracts because low-risk buyers exit. Precaution changes after coverage because insured buyers face weaker incentives.",
+      "aHash": "21949b9c9c51c8ac0474f50f64375a37257e364d7a0098a7f4a3078786fcf36e"
+    },
+    {
+      "id": 9180,
+      "sourceGame": "agencyProtocol",
+      "q": "A firm requires applicants to take a costly skills test, then later pays them by noisy output. Which two problems is the firm confronting?",
+      "options": [
+        "Hidden type before hiring and hidden effort after hiring",
+        "Transfer pricing before hiring and budget slack after hiring",
+        "Cost-center evaluation before hiring and profit-center evaluation after hiring",
+        "Functional silos before hiring and multidivisional accountability after hiring"
+      ],
+      "tag": "principal_agent",
+      "type": "conceptual",
+      "objective": "LO21.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_principal_agent_conflict",
+      "primarySkill": "principal_agent_conflict",
+      "secondarySkills": [
+        "screening_hidden_type",
+        "shirking_and_effort_incentives"
+      ],
+      "repairSkill": "principal_agent_conflict",
+      "commonError": "ignores_timing_and_treats_all_agency_problems_as_identical",
+      "feedback": "The test addresses hidden type before hiring. Noisy output pay deals imperfectly with hidden effort after hiring.",
+      "aHash": "c1e6c3c6670768a6f8fd39c1b13f29ebb33b9711a87b40d81d6d604c0c933dab"
+    },
+    {
+      "id": 9182,
+      "sourceGame": "agencyProtocol",
+      "q": "A sales division reports record revenue after pushing products customers do not need. Refunds, service costs, and churn explode. What did the agent optimize?",
+      "options": [
+        "A transfer price, because customers paid a price",
+        "Total firm profit, because revenue rose",
+        "A rewarded metric rather than total firm value",
+        "A cost-center target, because revenue is a cost"
+      ],
+      "tag": "gaming_incentives",
+      "type": "conceptual",
+      "objective": "LO21.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_metric_gaming_and_unintended_responses",
+      "primarySkill": "metric_gaming_and_unintended_responses",
+      "secondarySkills": [
+        "total_firm_profit_alignment",
+        "principal_agent_conflict"
+      ],
+      "repairSkill": "metric_gaming_and_unintended_responses",
+      "commonError": "calls_any_metric_increase_a_performance_increase",
+      "feedback": "Revenue went up, but unmeasured costs destroyed value. The agent gamed the metric.",
+      "aHash": "7722735a23d4b6317149a9db2c96ffd36a41017efdfc712a738541dd87d652f9"
+    },
+    {
+      "id": 9187,
+      "sourceGame": "agencyProtocol",
+      "q": "A manager pads expected costs, negotiates an easy target, then spends remaining funds in December to avoid a smaller future budget. What is the cleanest diagnosis?",
+      "options": [
+        "Transfer pricing plus functional specialization",
+        "Adverse selection plus insurance pooling",
+        "Screening plus signaling",
+        "Budget slack plus use-it-or-lose-it spending incentives"
+      ],
+      "tag": "budget_games",
+      "type": "conceptual",
+      "objective": "LO22.7",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_budget_slack_and_target_manipulation",
+      "primarySkill": "budget_slack_and_target_manipulation",
+      "secondarySkills": [
+        "metric_gaming_and_unintended_responses"
+      ],
+      "repairSkill": "budget_slack_and_target_manipulation",
+      "commonError": "mistakes_budget_spending_for_need_or_efficiency",
+      "feedback": "The manager manipulates the target up front and spending behavior later. That is classic budget gaming.",
+      "aHash": "00cad6819cb4a49b390c068e7f22c4f8133181b596d21f5bbbacf17a3fc69df3"
+    },
+    {
+      "id": 9189,
+      "sourceGame": "agencyProtocol",
+      "q": "A team bonus is equal for all members. Individual effort is hidden. One employee free rides while output barely changes. Which control best targets the failure without pretending it is free?",
+      "options": [
+        "A higher average insurance premium",
+        "Better monitoring or individual accountability, while recognizing measurement costs and distortions",
+        "A lower transfer price",
+        "A public seller rating system for customers"
+      ],
+      "tag": "shirking",
+      "type": "conceptual",
+      "objective": "LO20.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_shirking_and_effort_incentives",
+      "primarySkill": "shirking_and_effort_incentives",
+      "secondarySkills": [
+        "monitoring_and_incentive_control",
+        "hidden_action_after_contract"
+      ],
+      "repairSkill": "shirking_and_effort_incentives",
+      "commonError": "treats_team_output_as_perfectly_revealing_each_worker_effort",
+      "feedback": "Hidden individual effort creates shirking. Monitoring and individual accountability help, but they are not free or perfect.",
+      "aHash": "90ef4b9489f55a48a3e52d2eabc0fd17d1a5bb5e25d2562dcd9bd491f81f208d"
+    },
+    {
+      "id": 9190,
+      "sourceGame": "agencyProtocol",
+      "q": "A lender screens borrowers using credit scores, then uses covenants after lending to restrict risky projects. Why both?",
+      "options": [
+        "Both tools only solve moral hazard after lending",
+        "Both tools only solve adverse selection before lending",
+        "Credit scores address hidden type before lending; covenants address hidden action after lending",
+        "Credit scores are transfer prices and covenants are budget targets"
+      ],
+      "tag": "lending",
+      "type": "conceptual",
+      "objective": "LO20.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_borrower_incentives_and_lender_risk",
+      "primarySkill": "borrower_incentives_and_lender_risk",
+      "secondarySkills": [
+        "screening_hidden_type",
+        "hidden_action_after_contract"
+      ],
+      "repairSkill": "borrower_incentives_and_lender_risk",
+      "commonError": "fails_to_match_tool_to_timing_of_information_problem",
+      "feedback": "Screening evaluates borrower type before money changes hands. Covenants control borrower behavior afterward.",
+      "aHash": "dde45b099738296fdd94cba7a587556462026153df7a06dd86d3a5db949bec86"
+    },
+    {
+      "id": 9191,
+      "sourceGame": "agencyProtocol",
+      "q": "A firm monitors call-center workers intensely. Average call time falls, but complaint resolution and customer retention fall too. What is the lesson?",
+      "options": [
+        "The problem is transfer pricing because calls have prices",
+        "Monitoring always improves every outcome",
+        "The workers were adversely selected before hiring, so no incentive issue remains",
+        "Monitoring visible behavior can distort effort away from harder-to-measure value"
+      ],
+      "tag": "monitoring",
+      "type": "conceptual",
+      "objective": "LO20.3",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_monitoring_and_incentive_control",
+      "primarySkill": "monitoring_and_incentive_control",
+      "secondarySkills": [
+        "metric_gaming_and_unintended_responses"
+      ],
+      "repairSkill": "monitoring_and_incentive_control",
+      "commonError": "assumes_monitoring_cannot_create_perverse_task_allocation",
+      "feedback": "Monitoring changes behavior. Workers may optimize what is watched and neglect what matters but is harder to measure.",
+      "aHash": "290eaac384afd701dc4f262e1f4fe37a7e7c4864a95b4af8e007cb3b1b3abe3e"
+    },
+    {
+      "id": 9193,
+      "sourceGame": "agencyProtocol",
+      "q": "A certification is costly for weak consultants but cheap for strong consultants because strong consultants already know the material. Clients value the certification. What must be true for it to signal quality?",
+      "options": [
+        "The certification must be equally easy for every type",
+        "The cost-benefit difference must separate high-quality and low-quality consultants",
+        "The client must design the test for one specific applicant",
+        "The certification must occur after the contract to reduce shirking"
+      ],
+      "tag": "signaling",
+      "type": "conceptual",
+      "objective": "LO19.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_credible_signaling_hidden_type",
+      "primarySkill": "credible_signaling_hidden_type",
+      "secondarySkills": [
+        "hidden_information_before_contract"
+      ],
+      "repairSkill": "credible_signaling_hidden_type",
+      "commonError": "forgets_that_credible_signals_must_separate_types",
+      "feedback": "A credible signal separates types because low-quality sellers find it too costly relative to the benefit.",
+      "aHash": "d63fdb1a51736c475ac5d1228270891d47c597815a63fd0cc2eed12be4888884"
+    },
+    {
+      "id": 9194,
+      "sourceGame": "agencyProtocol",
+      "q": "A company gives applicants a work-sample test that the company designed. Strong applicants perform well; weak applicants do not. What is the best classification?",
+      "options": [
+        "Moral hazard, because effort changed after employment began",
+        "Signaling, because the applicant alone chose a voluntary costly action",
+        "Screening, because the less-informed firm creates a mechanism to reveal applicant type",
+        "Budget gaming, because applicants negotiated easier targets"
+      ],
+      "tag": "screening",
+      "type": "conceptual",
+      "objective": "LO19.3",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_screening_hidden_type",
+      "primarySkill": "screening_hidden_type",
+      "secondarySkills": [
+        "hidden_information_before_contract"
+      ],
+      "repairSkill": "screening_hidden_type",
+      "commonError": "confuses_screening_and_signaling_based_only_on_who_reveals_information",
+      "feedback": "The firm designed the filter. That makes this screening.",
+      "aHash": "ce30637b5c101f0e6a1b83e065d4104f0769991db924b1515c5cc613f6fd9ace"
+    },
+    {
+      "id": 9195,
+      "sourceGame": "agencyProtocol",
+      "q": "An insured homeowner stops maintaining smoke detectors after full coverage begins. The insurer responds with a deductible and premium discounts for verified alarms. What problems do those tools target?",
+      "options": [
+        "Both tools are budget games",
+        "The deductible creates adverse selection and verified alarms create transfer pricing",
+        "Both tools only raise total firm profit for divisions",
+        "The deductible preserves care incentives; verified alarms add monitoring/screening information"
+      ],
+      "tag": "moral_hazard",
+      "type": "conceptual",
+      "objective": "LO20.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_hidden_action_after_contract",
+      "primarySkill": "hidden_action_after_contract",
+      "secondarySkills": [
+        "monitoring_and_incentive_control",
+        "risk_transfer_and_pooling"
+      ],
+      "repairSkill": "hidden_action_after_contract",
+      "commonError": "uses_full_insurance_as_if_it_preserves_precaution_incentives",
+      "feedback": "Full coverage weakens care incentives. Deductibles and verified precautions reduce moral hazard.",
+      "aHash": "73ddf66e1f9d38d1a3a140020e11e3e81e3fae10b89221b2b5eeea30b9754150"
+    },
+    {
+      "id": 9196,
+      "sourceGame": "agencyProtocol",
+      "q": "A firm groups workers by function to deepen expertise, then creates cross-functional project teams for launches. What is it trying to balance?",
+      "options": [
+        "Specialist expertise with coordination across functions",
+        "Transfer pricing with insurance premiums",
+        "Adverse selection with budget slack",
+        "Moral hazard with seller reputation"
+      ],
+      "tag": "functional_units",
+      "type": "conceptual",
+      "objective": "LO22.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_functional_specialization",
+      "primarySkill": "functional_specialization",
+      "secondarySkills": [
+        "cross_functional_coordination"
+      ],
+      "repairSkill": "functional_specialization",
+      "commonError": "ignores_coordination_costs_after_praising_specialization",
+      "feedback": "Functional departments build expertise, but cross-functional teams help prevent silos during projects that require multiple specialties.",
+      "aHash": "1492130a275e981bd018350fd1c4164f5be294d6a568ca295d9490a7ccc3b92e"
+    },
+    {
+      "id": 9197,
+      "sourceGame": "agencyProtocol",
+      "q": "Marketing promises custom delivery dates without operations approval. Operations misses deadlines and customers blame the whole firm. What failed?",
+      "options": [
+        "Adverse selection before the customer entered the market",
+        "Coordination across functional divisions with interdependent outputs",
+        "A seller warranty signal",
+        "Insurance risk pooling"
+      ],
+      "tag": "coordination",
+      "type": "conceptual",
+      "objective": "LO22.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_cross_functional_coordination",
+      "primarySkill": "cross_functional_coordination",
+      "secondarySkills": [
+        "functional_specialization",
+        "total_firm_profit_alignment"
+      ],
+      "repairSkill": "cross_functional_coordination",
+      "commonError": "treats_department_decisions_as_independent",
+      "feedback": "Departments are specialized but interdependent. One unit’s promise can create costs for another and harm the firm.",
+      "aHash": "2ecf6246b84bf893c2bac2786c85c6c20bb2bcd80fa2ffd5bf62c66e07de4bad"
+    },
+    {
+      "id": 9200,
+      "sourceGame": "agencyProtocol",
+      "q": "A high-quality used-car seller offers an inspection report, a warranty, and a long verified sales history. Low-quality sellers avoid these tools. What is happening?",
+      "options": [
+        "Quality is being revealed through costly signals and reputation, reducing adverse selection",
+        "The seller is shirking because effort is hidden after sale",
+        "The buyer is setting a transfer price",
+        "The seller is creating budget slack"
+      ],
+      "tag": "adverse_selection",
+      "type": "conceptual",
+      "objective": "LO19.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_hidden_information_before_contract",
+      "primarySkill": "hidden_information_before_contract",
+      "secondarySkills": [
+        "credible_signaling_hidden_type",
+        "reputation_systems_and_market_quality"
+      ],
+      "repairSkill": "hidden_information_before_contract",
+      "commonError": "misses_that_signals_and_reputation_are_tools_against_adverse_selection",
+      "feedback": "The tools help buyers infer hidden quality before purchase. Strong sellers can bear them more easily than weak sellers.",
+      "aHash": "1ae54048bfe9fe79a56a7eef81ce3feeba0a3bc9c41fef8d4e93139f8c7d4e39"
+    },
+    {
+      "id": 9203,
+      "sourceGame": "agencyProtocol",
+      "q": "A seller’s refund policy is generous, but buyers discover claims are denied through fine print. What happens to the signal?",
+      "options": [
+        "It becomes a transfer price because refunds involve money",
+        "It becomes stronger because every written promise is a signal",
+        "It turns into moral hazard only after the buyer leaves a review",
+        "It loses credibility because the apparent warranty does not impose real cost on low-quality sellers"
+      ],
+      "tag": "signaling",
+      "type": "conceptual",
+      "objective": "LO19.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_credible_signaling_hidden_type",
+      "primarySkill": "credible_signaling_hidden_type",
+      "secondarySkills": [
+        "reputation_systems_and_market_quality"
+      ],
+      "repairSkill": "credible_signaling_hidden_type",
+      "commonError": "accepts_surface_promises_as_credible_without_checking_costly_commitment",
+      "feedback": "A signal must be costly or binding enough to separate types. Fine print can destroy credibility.",
+      "aHash": "131c375341021879cec53c39ec1ba75425bcdde4ac0bd9860058cd7901e2d7c6"
+    },
+    {
+      "id": 9204,
+      "sourceGame": "agencyProtocol",
+      "q": "An insurer uses health exams before issuing policies and co-pays after coverage begins. Why is this pairing sensible?",
+      "options": [
+        "Exams screen risk type before contracting; co-pays preserve care incentives after contracting",
+        "Exams solve moral hazard after contracting; co-pays solve adverse selection before contracting",
+        "Both tools only solve transfer pricing",
+        "Both tools are budget games used by managers"
+      ],
+      "tag": "insurance",
+      "type": "conceptual",
+      "objective": "LO20.1",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_hidden_action_after_contract",
+      "primarySkill": "hidden_action_after_contract",
+      "secondarySkills": [
+        "screening_hidden_type"
+      ],
+      "repairSkill": "hidden_action_after_contract",
+      "commonError": "fails_to_match_insurance_tools_to_before_and_after_contract_problems",
+      "feedback": "Insurance design often needs both: screening for hidden risk type and cost sharing for post-coverage behavior.",
+      "aHash": "211c51ae079518377af6bb93ff0ee8e29b2632faff39451c1f42fd1104b4f37b"
+    },
+    {
+      "id": 9205,
+      "sourceGame": "agencyProtocol",
+      "q": "A department is judged by number of cases closed. Employees close easy cases quickly and avoid hard cases that matter most. What is this?",
+      "options": [
+        "Adverse selection because customers have hidden type only",
+        "Gaming a narrow metric by shifting effort away from valuable unmeasured work",
+        "Transfer pricing because cases have internal prices",
+        "Risk pooling because cases are uncertain"
+      ],
+      "tag": "gaming_incentives",
+      "type": "conceptual",
+      "objective": "LO21.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_metric_gaming_and_unintended_responses",
+      "primarySkill": "metric_gaming_and_unintended_responses",
+      "secondarySkills": [
+        "monitoring_and_incentive_control"
+      ],
+      "repairSkill": "metric_gaming_and_unintended_responses",
+      "commonError": "mistakes_high_case_count_for_high_value_service",
+      "feedback": "Agents chase the measured target. If hard cases matter but are not rewarded, the metric can distort effort.",
+      "aHash": "48bd7d52c550003413825d1c08c76c679b31483b65d240a3a0d18ed1c66f5b3a"
+    },
+    {
+      "id": 9206,
+      "sourceGame": "agencyProtocol",
+      "q": "A division hides demand forecasts to negotiate a smaller target, then beats the target easily and earns a bonus. What is the agency issue?",
+      "options": [
+        "The firm solved coordination by decentralizing forecasts",
+        "The division signaled high quality by hiding information",
+        "Private information and budget gaming create an easy target that rewards misrepresentation",
+        "The target proves total firm profit rose"
+      ],
+      "tag": "budget_games",
+      "type": "conceptual",
+      "objective": "LO22.7",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_budget_slack_and_target_manipulation",
+      "primarySkill": "budget_slack_and_target_manipulation",
+      "secondarySkills": [
+        "principal_agent_conflict",
+        "metric_gaming_and_unintended_responses"
+      ],
+      "repairSkill": "budget_slack_and_target_manipulation",
+      "commonError": "treats_beating_an_easy_target_as_true_high_performance",
+      "feedback": "The agent uses private information to create slack, then gets rewarded for clearing an artificially low bar.",
+      "aHash": "b26bda6d84f10bf6b7d61ba7a3887ef145b86357a6849ffe3b5d6c4ec41702bf"
+    },
+    {
+      "id": 9207,
+      "sourceGame": "agencyProtocol",
+      "q": "A parent company lets divisions choose projects, but requires headquarters approval for projects that affect multiple divisions. What is the logic?",
+      "options": [
+        "Use insurance to pool project risk",
+        "Eliminate all local information from every project",
+        "Turn all divisions into cost centers",
+        "Keep local decision speed while centralizing choices with major spillovers"
+      ],
+      "tag": "centralization",
+      "type": "conceptual",
+      "objective": "LO21.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_agencyProtocol_decision_rights_and_decentralization",
+      "primarySkill": "decision_rights_and_decentralization",
+      "secondarySkills": [
+        "coordination",
+        "total_firm_profit_alignment"
+      ],
+      "repairSkill": "decision_rights_and_decentralization",
+      "commonError": "misses_that_decision_rights_can_be_split_by_type_of_decision",
+      "feedback": "Decision rights do not have to be all-or-nothing. Local choices can stay decentralized while spillover-heavy choices are coordinated centrally.",
+      "aHash": "cbd7b4ae1cfd8e060b98d61a0f38a13cfa7b689ea76398e24221fd7b91e0e27e"
     }
   ],
   "medium": [
@@ -2687,11 +5379,11 @@ const questionBanks = {
       "type": "interpretation",
       "objective": "LO19.2",
       "difficulty": "medium",
-      "conceptCluster": "medium_agency_protocol",
+      "conceptCluster": "medium_agencyProtocol_hidden_information_before_contract",
       "primarySkill": "hidden_information_before_contract",
       "secondarySkills": [],
       "repairSkill": "hidden_information_before_contract",
-      "commonError": "confuses_selected_risk_composition_with_post_contract_behavior",
+      "commonError": "confuses_selection_with_post_contract_behavior",
       "feedback": "The difference predates coverage, so it concerns who enrolled rather than a behavioral response to insurance. Selection of lower-risk customers is favorable selection; it is not evidence that coverage changed behavior.",
       "aHash": "35a8882d927c93c3f3ca25c0b1f80231f11545f9af95259fdeb1f8306fb9cb2c"
     },
@@ -3464,30 +6156,6 @@ const questionBanks = {
       "commonError": "mistakes_budget_compliance_for_honest_forecasting_or_value_creation",
       "feedback": "The manager is manipulating the budget process to protect or increase resources.",
       "aHash": "5687dac9f59661a8c311a959deda36a6981cfc76cc0efe78f2f5625978aea499"
-    }
-  ],
-  "hard": [
-    {
-      "id": 200,
-      "sourceGame": "agencyProtocol",
-      "q": "A low-risk customer and a high-risk customer both apply for the same insurance plan, but the insurer cannot tell them apart before setting the premium. What is the core problem?",
-      "options": [
-        "Adverse selection caused by hidden risk type before the transaction",
-        "Moral hazard caused by hidden effort after the transaction",
-        "A transfer pricing problem between divisions",
-        "A budget game created by cost-center managers"
-      ],
-      "tag": "adverse_selection",
-      "type": "trap",
-      "objective": "LO19.2",
-      "difficulty": "hard",
-      "conceptCluster": "hard_agency_protocol",
-      "primarySkill": "hidden_information_before_contract",
-      "secondarySkills": [],
-      "repairSkill": "hidden_information_before_contract",
-      "commonError": "confuses_hidden_information_before_contract_with_hidden_action_after_contract",
-      "feedback": "The insurer faces adverse selection because customers know more about their own risk before the insurance contract is written.",
-      "aHash": "80536947bd24d337c6a9fbb4d2d9d895df0f02db9f64762f9fe7dff0b6e36673"
     },
     {
       "id": 201,
@@ -3502,36 +6170,14 @@ const questionBanks = {
       "tag": "adverse_selection",
       "type": "multi-step",
       "objective": "LO19.2",
-      "difficulty": "hard",
-      "conceptCluster": "hard_agency_protocol",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_hidden_information_before_contract",
       "primarySkill": "hidden_information_before_contract",
       "secondarySkills": [],
       "repairSkill": "hidden_information_before_contract",
       "commonError": "confuses_hidden_information_before_contract_with_hidden_action_after_contract",
       "feedback": "Higher premiums can drive low-risk customers out, leaving a riskier pool behind. That is the adverse selection spiral.",
       "aHash": "00a00ad6fe8e038f855e9d9883587f63982e60b2eb45321bc3c9d8b6d8ee3320"
-    },
-    {
-      "id": 202,
-      "sourceGame": "agencyProtocol",
-      "q": "A buyer worries that a used phone may have a bad battery, but the seller knows the phone's true condition. Which problem is present before the sale?",
-      "options": [
-        "Adverse selection due to hidden product quality",
-        "Moral hazard because the buyer may use the phone carelessly later",
-        "Shirking because the seller is not working hard enough",
-        "Transfer pricing because the phone is sold internally"
-      ],
-      "tag": "adverse_selection",
-      "type": "interpretation",
-      "objective": "LO19.2",
-      "difficulty": "hard",
-      "conceptCluster": "hard_agency_protocol",
-      "primarySkill": "hidden_information_before_contract",
-      "secondarySkills": [],
-      "repairSkill": "hidden_information_before_contract",
-      "commonError": "confuses_hidden_information_before_contract_with_hidden_action_after_contract",
-      "feedback": "The seller has private information about quality before the transaction, so this is adverse selection.",
-      "aHash": "7dff50a80fa18c07f6c878fc0e81e31afa2038511a8921eb25b6df351f1431ca"
     },
     {
       "id": 203,
@@ -3546,8 +6192,8 @@ const questionBanks = {
       "tag": "adverse_selection",
       "type": "interpretation",
       "objective": "LO19.2",
-      "difficulty": "hard",
-      "conceptCluster": "hard_agency_protocol",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_hidden_information_before_contract",
       "primarySkill": "hidden_information_before_contract",
       "secondarySkills": [],
       "repairSkill": "hidden_information_before_contract",
@@ -3555,6 +6201,1386 @@ const questionBanks = {
       "feedback": "When high-risk people are more likely to enroll, the insured pool becomes more expensive.",
       "aHash": "3b8ab99227c8897e1ff1213d3c58ca82bac3fac4fec9a09504490a11588fff25"
     },
+    {
+      "id": 9001,
+      "sourceGame": "agencyProtocol",
+      "q": "An insurer uses medical exams, deductibles, and experience-rated premiums. Which pairing is strongest?",
+      "options": [
+        "Medical exams reduce moral hazard; deductibles reduce signaling; experience rating creates hidden type",
+        "Medical exams reduce adverse selection; deductibles and experience rating reduce moral hazard",
+        "All three tools only solve transfer pricing conflicts",
+        "All three tools eliminate the need for premiums"
+      ],
+      "tag": "insurance",
+      "type": "application",
+      "objective": "LO20.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_hidden_action_after_contract",
+      "primarySkill": "hidden_action_after_contract",
+      "secondarySkills": [
+        "screening_hidden_type"
+      ],
+      "repairSkill": "hidden_action_after_contract",
+      "commonError": "treats_insurance_as_eliminating_risk_instead_of_transferring_and_pooling_it",
+      "feedback": "Different tools attack different information problems. Exams sort types before the contract; deductibles and experience-rated prices affect behavior after it.",
+      "aHash": "f7091ae974994417f3e030e744c79f57fddd250ba64634cea2543ded641fb3f4"
+    },
+    {
+      "id": 9006,
+      "sourceGame": "agencyProtocol",
+      "q": "A health plan eliminates copays to improve access, but unnecessary visits rise sharply. What tradeoff is most likely?",
+      "options": [
+        "The policy solves adverse selection by hiding risk type",
+        "Lower out-of-pocket prices reduce moral hazard by making patients bear more cost",
+        "Lower out-of-pocket prices improve access but increase moral hazard from overuse",
+        "The policy creates transfer pricing conflict between divisions"
+      ],
+      "tag": "moral_hazard",
+      "type": "application",
+      "objective": "LO20.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_hidden_action_after_contract",
+      "primarySkill": "hidden_action_after_contract",
+      "secondarySkills": [],
+      "repairSkill": "hidden_action_after_contract",
+      "commonError": "confuses_post_contract_behavior_with_pre_contract_type_selection",
+      "feedback": "When patients face little marginal cost, they may consume care whose value is below its full cost.",
+      "aHash": "8a9751961b55a59d07e0c3339f329612a3b3166a921fdbecbaa693064f7e4641"
+    },
+    {
+      "id": 9008,
+      "sourceGame": "agencyProtocol",
+      "q": "A delivery company installs GPS tracking, but drivers respond by meeting location targets while rushing customer service. What happened?",
+      "options": [
+        "Monitoring reduced one hidden action but created a new incentive-gaming margin",
+        "Monitoring eliminated all agency costs permanently",
+        "The drivers are signaling hidden quality before employment",
+        "The company solved moral hazard without changing incentives"
+      ],
+      "tag": "monitoring",
+      "type": "application",
+      "objective": "LO20.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_monitoring_and_incentive_control",
+      "primarySkill": "monitoring_and_incentive_control",
+      "secondarySkills": [],
+      "repairSkill": "monitoring_and_incentive_control",
+      "commonError": "assumes_monitoring_always_solves_incentive_problems_without_costs_or_distortion",
+      "feedback": "Monitoring helps, but incomplete metrics can be gamed. Agents respond to what is measured.",
+      "aHash": "7bcab4847792d6ac69e612553f7b68484e083b4738775863034f66dc44936679"
+    },
+    {
+      "id": 9011,
+      "sourceGame": "agencyProtocol",
+      "q": "A CEO is paid entirely with short-term stock options and cuts maintenance to boost this year's numbers. What agency cost is most likely?",
+      "options": [
+        "A deductible that makes the CEO bear more loss",
+        "Screening cost from learning hidden type before hiring",
+        "A reputation signal that separates good sellers from bad sellers",
+        "Residual loss from actions that improve the metric while harming long-run firm value"
+      ],
+      "tag": "agency_costs",
+      "type": "application",
+      "objective": "LO21.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_agency_costs_and_alignment",
+      "primarySkill": "agency_costs_and_alignment",
+      "secondarySkills": [],
+      "repairSkill": "agency_costs_and_alignment",
+      "commonError": "treats_monitoring_costs_as_the_only_agency_cost",
+      "feedback": "Even after contracts and monitoring, some value can be lost when the agent pursues a distorted measure. That is residual loss.",
+      "aHash": "f5ca488564f45dc0d14a60fa7492ab73d48a61e20933db984a4ac54b7ab2bdbc"
+    },
+    {
+      "id": 9019,
+      "sourceGame": "agencyProtocol",
+      "q": "A parent company owns two divisions. Division A can produce a component at marginal cost below the outside market price, but its manager refuses to sell internally because the transfer price hurts A's measured profit. What is the core issue?",
+      "options": [
+        "The internal transfer price is irrelevant to incentives",
+        "The firm solved the agency problem by letting A maximize its own score",
+        "The issue is only adverse selection because quality is hidden before purchase",
+        "Local division profit conflicts with total parent-company profit"
+      ],
+      "tag": "parent_company",
+      "type": "application",
+      "objective": "LO22.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_parent_company",
+      "primarySkill": "parent_company",
+      "secondarySkills": [],
+      "repairSkill": "parent_company",
+      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
+      "feedback": "The parent cares about total firm profit, not whether one division's score looks better in isolation.",
+      "aHash": "d560ed7e530f0a8e92dc6cc99b14c9c9535578f8b7eb356240b02faaae47b91d"
+    },
+    {
+      "id": 9020,
+      "sourceGame": "agencyProtocol",
+      "q": "A transfer price is set above the outside market price, so the buying division purchases externally even though internal production would create more total surplus. What went wrong?",
+      "options": [
+        "The transfer price distorted divisional incentives away from total firm value",
+        "The buying division used screening to reduce hidden seller quality",
+        "The selling division solved shirking through monitoring",
+        "The parent company avoided all coordination costs"
+      ],
+      "tag": "transfer_pricing",
+      "type": "application",
+      "objective": "LO22.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_transfer_pricing_internal_trade",
+      "primarySkill": "transfer_pricing_internal_trade",
+      "secondarySkills": [],
+      "repairSkill": "transfer_pricing_internal_trade",
+      "commonError": "sets_transfer_price_from_division_politics_instead_of_opportunity_cost_and_total_firm_value",
+      "feedback": "Bad transfer prices can make local managers reject trades that would help the firm as a whole.",
+      "aHash": "2a66a17bec34d16d25f5330d2b4400c939407f0a74e4164a333efdf750124da6"
+    },
+    {
+      "id": 9023,
+      "sourceGame": "agencyProtocol",
+      "q": "A profit center raises its own margin by refusing support to another division, causing total company profit to fall. What is the lesson?",
+      "options": [
+        "The parent should ignore transfer prices and local metrics",
+        "Profit centers never create agency problems because profit is measured",
+        "Cost centers are the only units that respond to incentives",
+        "Profit-center metrics can still misalign local incentives with total firm profit"
+      ],
+      "tag": "profit_center",
+      "type": "application",
+      "objective": "LO22.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_profit_center_evaluation",
+      "primarySkill": "profit_center_evaluation",
+      "secondarySkills": [],
+      "repairSkill": "profit_center_evaluation",
+      "commonError": "assumes_local_profit_center_success_always_improves_total_firm_profit",
+      "feedback": "Even profit-based evaluation can be incomplete when one division's actions affect the rest of the firm.",
+      "aHash": "c98f7c3762aacea8742e0cc5f2ba90703f0a241a3090a66f638ce82884e80e44"
+    },
+    {
+      "id": 9027,
+      "sourceGame": "agencyProtocol",
+      "q": "Why can multidivisional firms still need strong headquarters oversight?",
+      "options": [
+        "Headquarters has no useful role once divisions exist",
+        "Divisions automatically maximize total firm profit without any controls",
+        "Multidivisional structure eliminates transfer pricing problems by definition",
+        "Divisions may optimize their own results while ignoring spillovers and total firm value"
+      ],
+      "tag": "multidivisional",
+      "type": "application",
+      "objective": "LO22.6",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_multidivisional_accountability",
+      "primarySkill": "multidivisional_accountability",
+      "secondarySkills": [],
+      "repairSkill": "multidivisional_accountability",
+      "commonError": "assumes_divisional_accountability_eliminates_coordination_and_agency_problems",
+      "feedback": "Divisional accountability helps, but local incentives can still conflict with the parent company's goal.",
+      "aHash": "9d3f71d6f2fe61ec65ca1b1c9a5454e083f1b7c51ccd55ac71951bc49c318013"
+    },
+    {
+      "id": 9029,
+      "sourceGame": "agencyProtocol",
+      "q": "A use-it-or-lose-it budget causes departments to spend wastefully in December. What change most directly weakens that incentive?",
+      "options": [
+        "Require every department to spend exactly its full budget faster",
+        "Allow justified carryover or evaluate value created, not simply whether funds were spent",
+        "Reward managers for increasing waste at year-end",
+        "Hide next year's budget rules from every department"
+      ],
+      "tag": "budget_games",
+      "type": "application",
+      "objective": "LO22.7",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_budget_slack_and_target_manipulation",
+      "primarySkill": "budget_slack_and_target_manipulation",
+      "secondarySkills": [],
+      "repairSkill": "budget_slack_and_target_manipulation",
+      "commonError": "mistakes_budget_compliance_for_honest_forecasting_or_value_creation",
+      "feedback": "If unused funds are automatically punished, managers spend to protect future allocations. Better rules reduce that gaming.",
+      "aHash": "42c537775970b9e160260f9c73c32b4e4e53d439639392b4957cefd1486f8380"
+    },
+    {
+      "id": 9030,
+      "sourceGame": "agencyProtocol",
+      "q": "An online labor platform uses ratings from prior clients, work samples, and escrow payments. Which mapping is most accurate?",
+      "options": [
+        "All three tools only address functional coordination",
+        "Ratings create moral hazard; samples create transfer pricing; escrow creates budget slack",
+        "Ratings and samples reduce adverse selection; escrow can reduce moral hazard after work begins",
+        "All three tools eliminate the principal-agent relationship"
+      ],
+      "tag": "adverse_selection",
+      "type": "application",
+      "objective": "LO19.5",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_hidden_information_before_contract",
+      "primarySkill": "hidden_information_before_contract",
+      "secondarySkills": [],
+      "repairSkill": "hidden_information_before_contract",
+      "commonError": "confuses_hidden_information_before_contract_with_hidden_action_after_contract",
+      "feedback": "Ratings and samples reveal quality before contracting, while escrow can shape behavior once work begins.",
+      "aHash": "55ca519811a69a48c057f35d2908f589ef97dd1ce33366dcf7f878943008926c"
+    },
+    {
+      "id": 9032,
+      "sourceGame": "agencyProtocol",
+      "q": "A firm hires a manager after weak screening, then pays a bonus based only on revenue. The manager turns out low ability and also cuts price aggressively to inflate sales. What are the two problems?",
+      "options": [
+        "Adverse selection before hiring and incentive gaming after hiring",
+        "Moral hazard before hiring and screening after hiring",
+        "Transfer pricing before hiring and signaling after hiring",
+        "Budget slack before hiring and reputation after hiring"
+      ],
+      "tag": "principal_agent",
+      "type": "application",
+      "objective": "LO21.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_principal_agent_conflict",
+      "primarySkill": "principal_agent_conflict",
+      "secondarySkills": [],
+      "repairSkill": "principal_agent_conflict",
+      "commonError": "assumes_principal_and_agent_objectives_are_automatically_aligned",
+      "feedback": "The firm first chose a hidden type poorly, then created a metric the agent could game.",
+      "aHash": "a857277ca4bd1d8a9aa6c3afa9c96ed478f8555b62031128dba5f0543bfc4802"
+    },
+    {
+      "id": 9033,
+      "sourceGame": "agencyProtocol",
+      "q": "A principal can improve outcomes by screening applicants, monitoring effort, bonding agents, and redesigning pay. Why are multiple tools often needed?",
+      "options": [
+        "One tool always eliminates every information and incentive problem",
+        "Agency problems combine hidden type, hidden action, measurement limits, and incentive conflict",
+        "Only monitoring matters because all agency problems occur after hiring",
+        "Only screening matters because all agency problems occur before hiring"
+      ],
+      "tag": "incentives",
+      "type": "application",
+      "objective": "LO21.6",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_incentives",
+      "primarySkill": "incentives",
+      "secondarySkills": [],
+      "repairSkill": "incentives",
+      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
+      "feedback": "Real agency problems are layered. Different tools target different margins of hidden information and hidden action.",
+      "aHash": "d1d31937dfd09a9b2185ad912afc0ab078e8457e079208e057f06b0da7739a95"
+    },
+    {
+      "id": 9036,
+      "sourceGame": "agencyProtocol",
+      "q": "A firm gives local managers freedom because local information is valuable, then uses profit sharing and audits. What is the logic?",
+      "options": [
+        "Decentralize decision rights while using controls to reduce agency costs",
+        "Centralize every decision while pretending local information matters",
+        "Eliminate incentives because local managers never pursue private goals",
+        "Use seller reputation to solve internal moral hazard"
+      ],
+      "tag": "organization",
+      "type": "application",
+      "objective": "LO21.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_organization",
+      "primarySkill": "organization",
+      "secondarySkills": [],
+      "repairSkill": "organization",
+      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
+      "feedback": "Good design often combines local discretion with incentive and monitoring systems.",
+      "aHash": "f08c8db8f4af322aca8db7463ab209f63162d856f5f98f075fc002e540c65468"
+    },
+    {
+      "id": 9037,
+      "sourceGame": "agencyProtocol",
+      "q": "A worker accepts lower pay in exchange for a bonus forfeited if quality defects exceed a threshold. What agency-control idea is closest?",
+      "options": [
+        "Adverse selection because the worker's type is hidden before hiring only",
+        "Bonding and incentive alignment because the worker has something at risk tied to quality",
+        "Transfer pricing because the worker sells output to another division",
+        "Functional specialization because the worker is in one department"
+      ],
+      "tag": "incentives",
+      "type": "application",
+      "objective": "LO21.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_incentives",
+      "primarySkill": "incentives",
+      "secondarySkills": [],
+      "repairSkill": "incentives",
+      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
+      "feedback": "The worker has skin in the game, so the contract both bonds performance and aligns incentives.",
+      "aHash": "8e92d8f0d3108b8860413e8da7254abefc625d656296d9679c5feaf642c1bf3b"
+    },
+    {
+      "id": 9038,
+      "sourceGame": "agencyProtocol",
+      "q": "A firm notices that more surveillance reduces shirking but also lowers morale and drives away good employees. What is the best economic conclusion?",
+      "options": [
+        "The firm should never monitor because monitoring cannot affect behavior",
+        "More monitoring is always better because shirking is always possible",
+        "Monitoring has benefits and costs, so the best policy balances both",
+        "The problem is adverse selection only and cannot involve moral hazard"
+      ],
+      "tag": "monitoring",
+      "type": "application",
+      "objective": "LO20.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_monitoring_and_incentive_control",
+      "primarySkill": "monitoring_and_incentive_control",
+      "secondarySkills": [],
+      "repairSkill": "monitoring_and_incentive_control",
+      "commonError": "assumes_monitoring_always_solves_incentive_problems_without_costs_or_distortion",
+      "feedback": "Monitoring can reduce hidden action, but excessive monitoring can create other costs.",
+      "aHash": "ac5e7966ab9f43c6c8249300f16f1488fb88a0de171b0f0249aa08a3941f82e1"
+    },
+    {
+      "id": 9039,
+      "sourceGame": "agencyProtocol",
+      "q": "A borrower pledges collateral but also has private upside from a risky project. Why might collateral still not fully solve lending moral hazard?",
+      "options": [
+        "Collateral creates adverse selection after the loan is repaid",
+        "Collateral eliminates all borrower incentives to take risk",
+        "Collateral is only a seller rating and has no role in loans",
+        "Collateral gives skin in the game but may not perfectly align the borrower's risk choice with the lender's preferred risk"
+      ],
+      "tag": "lending",
+      "type": "application",
+      "objective": "LO20.5",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_borrower_incentives_and_lender_risk",
+      "primarySkill": "borrower_incentives_and_lender_risk",
+      "secondarySkills": [],
+      "repairSkill": "borrower_incentives_and_lender_risk",
+      "commonError": "assumes_borrowers_and_lenders_share_the_same_risk_incentives_after_funding",
+      "feedback": "Collateral helps, but incentives may remain imperfect when borrower upside and lender downside are asymmetric.",
+      "aHash": "580c2c820d81da05dfeaddcaa901cd8760f01f1d3cfff0412247c44f5fd39ad0"
+    },
+    {
+      "id": 9042,
+      "sourceGame": "agencyProtocol",
+      "q": "A firm groups by function early in its life, then later shifts to divisions by product line. What changed?",
+      "options": [
+        "Product divisions eliminate every agency problem",
+        "The firm no longer needs expertise after it grows",
+        "The value of specialization was overtaken by the need for accountability and coordination across complex business lines",
+        "Functional structure only works when there is adverse selection"
+      ],
+      "tag": "functional_units",
+      "type": "application",
+      "objective": "LO22.6",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_multidivisional_accountability",
+      "primarySkill": "multidivisional_accountability",
+      "secondarySkills": [],
+      "repairSkill": "multidivisional_accountability",
+      "commonError": "ignores_silos_created_by_functional_specialization",
+      "feedback": "As firms grow, the best structure can shift from specialization toward clearer accountability by business line.",
+      "aHash": "12e82d35c01ac5901a1722fee15e84c0b0f7338c91d2cf2ae08b118a2e1b56d8"
+    },
+    {
+      "id": 9044,
+      "sourceGame": "agencyProtocol",
+      "q": "A platform verifies seller identity, displays verified transaction history, and requires a deposit forfeited for proven misrepresentation. Buyers use these records before purchasing. Which problem is this information primarily helping buyers address?",
+      "options": [
+        "Adverse selection, because buyers need credible information about seller type before purchase and no single signal is perfect",
+        "Moral hazard, because buyers become careless after purchase and deposits eliminate that behavior",
+        "Budget gaming, because sellers are trying to create slack in future budgets",
+        "Transfer pricing, because the platform must choose the internal price between divisions"
+      ],
+      "tag": "adverse_selection",
+      "type": "application",
+      "objective": "LO19.5",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_hidden_information_before_contract",
+      "primarySkill": "hidden_information_before_contract",
+      "secondarySkills": [
+        "credible_signaling_hidden_type",
+        "reputation_systems_and_market_quality"
+      ],
+      "repairSkill": "hidden_information_before_contract",
+      "commonError": "calls_every_information_problem_moral_hazard",
+      "feedback": "Identity and credible history inform buyers about seller reliability before purchase. A forfeitable deposit may also deter later misconduct; it does not by itself prove a seller's type.",
+      "aHash": "57ee9abf9c5972650fd4e9e12883e6faf982cdc9b536a80ace663b88be76ebbf"
+    },
+    {
+      "id": 9050,
+      "sourceGame": "agencyProtocol",
+      "q": "A division manager rejects a project that lowers her division profit by $20,000 but raises another division profit by $80,000. What should the parent company see?",
+      "options": [
+        "The project is irrelevant because divisions should never coordinate",
+        "Rejecting the project creates $20,000 in total firm value",
+        "Rejecting the project protects local profit but destroys $60,000 in total firm value",
+        "The project is adverse selection because project quality is hidden before purchase"
+      ],
+      "tag": "total_firm_profit",
+      "type": "calculation",
+      "objective": "LO22.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_total_firm_profit_alignment",
+      "primarySkill": "total_firm_profit_alignment",
+      "secondarySkills": [
+        "coordination",
+        "profit_center_evaluation"
+      ],
+      "repairSkill": "total_firm_profit_alignment",
+      "commonError": "uses_local_profit_effect_instead_of_total_firm_effect",
+      "feedback": "The firm-level effect is -20,000 + 80,000 = +60,000. Local incentives can reject projects that help the whole firm.",
+      "aHash": "0102537fe0dda9e4fa7ca997a36cd990cc734689f2f4f7ee1bcc78647959d675"
+    },
+    {
+      "id": 9053,
+      "sourceGame": "agencyProtocol",
+      "q": "A firm centralizes pricing to prevent division managers from poaching customers from one another, but local managers complain headquarters lacks market knowledge. What tradeoff is being exposed?",
+      "options": [
+        "Decentralization always eliminates agency costs",
+        "Centralization can improve coordination but sacrifice local information",
+        "Centralization is always a form of adverse selection",
+        "Local information never matters when incentives are aligned"
+      ],
+      "tag": "centralization",
+      "type": "application",
+      "objective": "LO21.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_decision_rights_and_decentralization",
+      "primarySkill": "decision_rights_and_decentralization",
+      "secondarySkills": [
+        "coordination",
+        "agency_costs_and_alignment"
+      ],
+      "repairSkill": "decision_rights_and_decentralization",
+      "commonError": "assumes_one_decision_rights_structure_is_always_best",
+      "feedback": "Centralization can control conflicts across units. Decentralization can use local knowledge. The right design depends on the tradeoff.",
+      "aHash": "1012eff3d656cdcb43b8417707382c2b87d36a604417b1f0460da16e4a1075e2"
+    },
+    {
+      "id": 9055,
+      "sourceGame": "agencyProtocol",
+      "q": "A manager says, “We solved the agency problem because we monitor employees every minute.” What is wrong with that claim?",
+      "options": [
+        "Monitoring makes incentives unnecessary because agents stop responding to pay",
+        "Monitoring eliminates all hidden action at zero cost",
+        "Monitoring solves adverse selection before hiring but not moral hazard",
+        "Monitoring can reduce shirking but is costly and may distort effort toward visible tasks"
+      ],
+      "tag": "monitoring",
+      "type": "application",
+      "objective": "LO20.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_monitoring_and_incentive_control",
+      "primarySkill": "monitoring_and_incentive_control",
+      "secondarySkills": [
+        "agency_costs_and_alignment",
+        "shirking_and_effort_incentives"
+      ],
+      "repairSkill": "monitoring_and_incentive_control",
+      "commonError": "assumes_more_monitoring_is_always_free_and_always_better",
+      "feedback": "Monitoring is useful but not magic. It costs resources and can push employees toward what is observed instead of what is valuable.",
+      "aHash": "de3707d14a18ce36766db92d8318ad476b4dfa2bb7c171091650a23ba1577ddf"
+    },
+    {
+      "id": 9059,
+      "sourceGame": "agencyProtocol",
+      "q": "A CEO is paid heavily in stock options. The plan aligns incentives with shareholders, but also encourages very risky projects. What should the board recognize?",
+      "options": [
+        "The CEO has become a cost center rather than an agent",
+        "Stock options eliminate residual loss and monitoring costs entirely",
+        "Risky projects prove adverse selection occurred before hiring",
+        "Incentive alignment can reduce one agency problem while creating another distortion"
+      ],
+      "tag": "agency_costs",
+      "type": "application",
+      "objective": "LO21.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_agency_costs_and_alignment",
+      "primarySkill": "agency_costs_and_alignment",
+      "secondarySkills": [
+        "principal_agent_conflict",
+        "metric_gaming_and_unintended_responses"
+      ],
+      "repairSkill": "agency_costs_and_alignment",
+      "commonError": "assumes_any_incentive_pay_fully_solves_agency_costs",
+      "feedback": "Incentive contracts are tradeoffs. They can improve alignment while changing the agent’s risk-taking incentives.",
+      "aHash": "cea4bc624cdae062663bb54ab315f0adc15f3fac1a5e915fe2e1b79a927f3ea8"
+    },
+    {
+      "id": 9060,
+      "sourceGame": "agencyProtocol",
+      "q": "A principal cannot observe an agent’s effort, only noisy output. A storm lowers output despite strong effort. Why is this hard?",
+      "options": [
+        "Output-based pay may punish bad luck and reward luck, not just effort",
+        "The problem disappears because output is observable",
+        "The problem is only adverse selection before the contract",
+        "The solution is always to centralize every decision"
+      ],
+      "tag": "principal_agent",
+      "type": "application",
+      "objective": "LO21.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_principal_agent_conflict",
+      "primarySkill": "principal_agent_conflict",
+      "secondarySkills": [
+        "monitoring_and_incentive_control",
+        "agency_costs_and_alignment"
+      ],
+      "repairSkill": "principal_agent_conflict",
+      "commonError": "assumes_observable_output_perfectly_reveals_agent_effort",
+      "feedback": "Principal-agent problems are harder when effort is hidden and outcomes are noisy. Output is evidence, not perfect proof.",
+      "aHash": "02795430bd823a69ca7413eda2a5c81091b067a903b3bdebf2a7815c4ff1732b"
+    },
+    {
+      "id": 9061,
+      "sourceGame": "agencyProtocol",
+      "q": "A hotel unit must discount rooms to support a package. Food service must add labor. Together the package raises firm profit, but the hotel is judged only on room revenue and food service only on its own labor cost. What is missing?",
+      "options": [
+        "More adverse selection among hotel guests",
+        "Coordination across divisions and incentives tied to total firm value",
+        "A warranty signal from the food division",
+        "A lower insurance premium for travelers"
+      ],
+      "tag": "coordination",
+      "type": "application",
+      "objective": "LO22.5",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_cross_functional_coordination",
+      "primarySkill": "cross_functional_coordination",
+      "secondarySkills": [
+        "total_firm_profit_alignment",
+        "profit_center_evaluation"
+      ],
+      "repairSkill": "cross_functional_coordination",
+      "commonError": "analyzes_each_division_in_isolation_despite_joint_value_creation",
+      "feedback": "Specialized divisions can block valuable joint actions when their metrics reward local performance instead of the full package outcome.",
+      "aHash": "0904255022899637b6de6bd702ca28fc7e5e1727f57c8a3b0c54e9ce2916a1e9"
+    },
+    {
+      "id": 9062,
+      "sourceGame": "agencyProtocol",
+      "q": "A functional organization produces deep expertise, but projects stall because finance, operations, and marketing protect their own priorities. What is the tradeoff?",
+      "options": [
+        "Functional units always outperform multidivisional structures",
+        "Functional units eliminate coordination costs by separating workers",
+        "Functional specialization improves expertise but can create silos that require coordination mechanisms",
+        "The issue must be moral hazard because every delay is shirking"
+      ],
+      "tag": "functional_units",
+      "type": "application",
+      "objective": "LO22.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_functional_specialization",
+      "primarySkill": "functional_specialization",
+      "secondarySkills": [
+        "cross_functional_coordination"
+      ],
+      "repairSkill": "functional_specialization",
+      "commonError": "sees_specialization_benefits_but_ignores_silo_costs",
+      "feedback": "Functional units create expertise. The cost is that specialized departments can become silos unless coordination is managed.",
+      "aHash": "f873e9a44c6dda32e0ad764ced85271464ad7e005722a38844c695f76a9f4700"
+    },
+    {
+      "id": 9063,
+      "sourceGame": "agencyProtocol",
+      "q": "A multidivisional firm lets each product division manage operations and profit, but shared brand damage from one division hurts all divisions. What does this show?",
+      "options": [
+        "Each division should ignore total firm profit once profit centers exist",
+        "Multidivisional structure eliminates all external effects between divisions",
+        "Shared brand damage is only adverse selection before purchase",
+        "Divisional accountability helps, but interdependence still creates coordination and agency problems"
+      ],
+      "tag": "multidivisional",
+      "type": "application",
+      "objective": "LO22.6",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_multidivisional_accountability",
+      "primarySkill": "multidivisional_accountability",
+      "secondarySkills": [
+        "coordination",
+        "total_firm_profit_alignment"
+      ],
+      "repairSkill": "multidivisional_accountability",
+      "commonError": "assumes_divisional_structure_solves_all_coordination_problems",
+      "feedback": "Divisions improve accountability, but shared assets like brand reputation still require firm-level coordination.",
+      "aHash": "c2466e11c7197f6ad63272669e00a3cdc6cc0749c6b8a3351fae41f5c3e10c58"
+    },
+    {
+      "id": 9064,
+      "sourceGame": "agencyProtocol",
+      "q": "A seller offers a money-back guarantee, collects strong reviews over time, and accepts platform penalties for disputes. Which explanation is strongest?",
+      "options": [
+        "The seller is combining signals and reputation to reduce buyer fear of hidden quality",
+        "The seller is using monitoring to prevent employee shirking",
+        "The seller is creating budget slack for next year",
+        "The seller is setting an internal transfer price"
+      ],
+      "tag": "reputation",
+      "type": "application",
+      "objective": "LO19.5",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_reputation_systems_and_market_quality",
+      "primarySkill": "reputation_systems_and_market_quality",
+      "secondarySkills": [
+        "credible_signaling_hidden_type",
+        "hidden_information_before_contract"
+      ],
+      "repairSkill": "reputation_systems_and_market_quality",
+      "commonError": "misses_that_multiple_information_tools_can_stack",
+      "feedback": "Guarantees, reviews, and penalties all make hidden quality less hidden. They work together against information asymmetry.",
+      "aHash": "617bb11214a61f7772a5bc11f9315bee41c8003ceeb5029f8afe99eda26ba4cc"
+    },
+    {
+      "id": 9068,
+      "sourceGame": "agencyProtocol",
+      "q": "A local manager has superior customer information but also strong incentives to boost her division’s numbers at headquarters’ expense. What governance question is being asked?",
+      "options": [
+        "How much decision authority should be decentralized given both local knowledge and agency costs",
+        "Whether insurance can eliminate every risk",
+        "Whether reputation systems always create perfect information",
+        "Whether transfer prices should always be zero"
+      ],
+      "tag": "centralization",
+      "type": "application",
+      "objective": "LO21.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_decision_rights_and_decentralization",
+      "primarySkill": "decision_rights_and_decentralization",
+      "secondarySkills": [
+        "agency_costs_and_alignment",
+        "principal_agent_conflict"
+      ],
+      "repairSkill": "decision_rights_and_decentralization",
+      "commonError": "ignores_either_local_information_or_local_incentive_conflict",
+      "feedback": "Decentralization uses local knowledge but gives power to agents with their own incentives. Governance balances both.",
+      "aHash": "222ad0d2d442c29f3695946ab6f711a0410d217add26f63cfb32e189d1295a5a"
+    },
+    {
+      "id": 9069,
+      "sourceGame": "agencyProtocol",
+      "q": "Two divisions can complete an internal transfer. Seller opportunity cost is $40, buyer value is $70, and the transfer price is set at $80. What happens?",
+      "options": [
+        "The transfer must occur because the buyer value exceeds seller opportunity cost",
+        "The transfer may be rejected even though it creates $30 of total firm value",
+        "The transfer destroys $10 of total firm value",
+        "The transfer price proves there is adverse selection"
+      ],
+      "tag": "transfer_pricing",
+      "type": "calculation",
+      "objective": "LO22.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_transfer_pricing_internal_trade",
+      "primarySkill": "transfer_pricing_internal_trade",
+      "secondarySkills": [
+        "total_firm_profit_alignment"
+      ],
+      "repairSkill": "transfer_pricing_internal_trade",
+      "commonError": "uses_transfer_price_as_total_firm_value_instead_of_internal_allocation",
+      "feedback": "The real firm value is $70 - $40 = $30. But at a price of $80, the buyer division refuses. Bad transfer pricing blocks value.",
+      "aHash": "558acfc3266653c9dd812dac9d9b193ae21844c47a4b67baa558a6f01182eafb"
+    },
+    {
+      "id": 9070,
+      "sourceGame": "agencyProtocol",
+      "q": "A profit center earns an extra $25,000 by refusing to share capacity with another unit, causing the other unit to lose $90,000. What is the firm-level result?",
+      "options": [
+        "Total firm gain of $90,000 because the other unit was disciplined",
+        "Total firm gain of $25,000 because the profit center improved",
+        "Local gain of $25,000 but total firm loss of $65,000",
+        "No firm-level effect because divisions are separate"
+      ],
+      "tag": "profit_center",
+      "type": "calculation",
+      "objective": "LO22.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_profit_center_evaluation",
+      "primarySkill": "profit_center_evaluation",
+      "secondarySkills": [
+        "coordination",
+        "total_firm_profit_alignment"
+      ],
+      "repairSkill": "profit_center_evaluation",
+      "commonError": "stops_analysis_at_the_profit_center_result",
+      "feedback": "The firm-level effect is +25,000 - 90,000 = -65,000. Profit-center incentives can harm total firm value.",
+      "aHash": "b0c2d80a0afee392a91d7464376f732e5357a9385cdcab4b27493d44cf69e7e1"
+    },
+    {
+      "id": 9072,
+      "sourceGame": "agencyProtocol",
+      "q": "A buyer says, “This seller has 10,000 five-star reviews, so there is no information asymmetry.” What is the best response?",
+      "options": [
+        "Reviews reduce uncertainty, but they are noisy and can be manipulated or outdated",
+        "Reviews create perfect information and eliminate all market failure",
+        "Reviews are only useful after the contract for monitoring employee effort",
+        "Reviews are transfer prices set by customers"
+      ],
+      "tag": "reputation",
+      "type": "application",
+      "objective": "LO19.5",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_reputation_systems_and_market_quality",
+      "primarySkill": "reputation_systems_and_market_quality",
+      "secondarySkills": [
+        "hidden_information_before_contract"
+      ],
+      "repairSkill": "reputation_systems_and_market_quality",
+      "commonError": "treats_reputation_as_perfect_information",
+      "feedback": "Reputation systems reduce adverse selection, but they do not make hidden quality perfectly observable.",
+      "aHash": "200bf03e6fa6ee9516f4bc0761f87983b8c127cd2d68ad087ba01e75bf2652d0"
+    },
+    {
+      "id": 9073,
+      "sourceGame": "agencyProtocol",
+      "q": "A parent company wants divisions to act like owners but also wants them to cooperate on shared customers. Which measurement problem is central?",
+      "options": [
+        "Choosing a premium that eliminates moral hazard for all buyers",
+        "Designing metrics that reward local accountability without punishing cooperation that raises total firm profit",
+        "Preventing all signaling because signals are always wasteful",
+        "Ensuring cost centers maximize revenues instead of controlling costs"
+      ],
+      "tag": "multidivisional",
+      "type": "application",
+      "objective": "LO22.6",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_multidivisional_accountability",
+      "primarySkill": "multidivisional_accountability",
+      "secondarySkills": [
+        "coordination",
+        "profit_center_evaluation",
+        "total_firm_profit_alignment"
+      ],
+      "repairSkill": "multidivisional_accountability",
+      "commonError": "chooses_local_accountability_or_coordination_as_if_they_cannot_both_matter",
+      "feedback": "Multidivisional structures need accountability, but shared customers and firm-wide value require coordination across divisions.",
+      "aHash": "efb74c219f304cd64fcd27633cd2b455540b1ff81aeb9e65a7062591761d4371"
+    },
+    {
+      "id": 9100,
+      "sourceGame": "agencyProtocol",
+      "q": "The Underwriter's final file shows generous coverage attracting the riskiest customers before purchase, then those customers taking fewer precautions after purchase. What two problems must be separated?",
+      "options": [
+        "Adverse selection before the contract and moral hazard after the contract",
+        "Moral hazard before the contract and adverse selection after the contract",
+        "Transfer pricing before the contract and budget gaming after the contract",
+        "Screening after the contract and signaling before the contract"
+      ],
+      "tag": "adverse_selection",
+      "type": "application",
+      "objective": "LO20.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_hidden_information_before_contract",
+      "primarySkill": "hidden_information_before_contract",
+      "secondarySkills": [],
+      "repairSkill": "hidden_information_before_contract",
+      "commonError": "confuses_hidden_information_before_contract_with_hidden_action_after_contract",
+      "feedback": "Start with timing. Hidden type before the deal is adverse selection; hidden action after the deal is moral hazard.",
+      "aHash": "a7944835f26d6888d29dd7eec3a08bb7f9007a47810f702ce3a7f2c3c4149792"
+    },
+    {
+      "id": 9101,
+      "sourceGame": "agencyProtocol",
+      "q": "An insurer uses medical exams and waiting periods to sort applicants before coverage, then uses deductibles and inspections to preserve precautions after coverage. Which grouping matches these stated purposes?",
+      "options": [
+        "Deductibles screen hidden risk before purchase; medical exams reduce careless behavior after coverage",
+        "Medical exams and waiting periods screen before coverage; deductibles and monitoring affect behavior after coverage",
+        "All tools only solve seller reputation problems",
+        "All tools only affect transfer prices inside a firm"
+      ],
+      "tag": "screening",
+      "type": "application",
+      "objective": "LO20.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_screening_hidden_type",
+      "primarySkill": "screening_hidden_type",
+      "secondarySkills": [],
+      "repairSkill": "screening_hidden_type",
+      "commonError": "confuses_screening_by_the_less_informed_party_with_signaling_by_the_informed_party",
+      "feedback": "In this case, the first tools sort types and the latter tools affect post-contract care. A deductible menu can also screen types in a different contract design.",
+      "aHash": "dfe0c629216edc762629ec4fd8dc1d948e0be70dbf6d3d8695cb16a065357544"
+    },
+    {
+      "id": 9102,
+      "sourceGame": "agencyProtocol",
+      "q": "If an insurer ignores adverse selection and moral hazard at the same time, what happens to the pool and behavior?",
+      "options": [
+        "Premiums become irrelevant because risk disappears",
+        "Only low-risk buyers remain and everyone becomes more careful",
+        "The pool may become riskier and insured parties may take less care",
+        "The issue turns into a cost-center problem only"
+      ],
+      "tag": "insurance",
+      "type": "application",
+      "objective": "LO20.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_risk_transfer_and_pooling",
+      "primarySkill": "risk_transfer_and_pooling",
+      "secondarySkills": [],
+      "repairSkill": "risk_transfer_and_pooling",
+      "commonError": "treats_insurance_as_eliminating_risk_instead_of_transferring_and_pooling_it",
+      "feedback": "Bad insurance design can worsen both who enters the pool and how people behave after coverage.",
+      "aHash": "c21d80b090dd2b07c451269c1038c3e46a381f7a30327d3cd57c536e518862db"
+    },
+    {
+      "id": 9107,
+      "sourceGame": "agencyProtocol",
+      "q": "A lender uses collateral, covenants, and staged funding. Why not just use a higher interest rate?",
+      "options": [
+        "Staged funding is a seller reputation system",
+        "A higher rate eliminates all borrower moral hazard automatically",
+        "Collateral and covenants are only screening tools before the loan application",
+        "A higher rate can worsen risk-taking incentives, while controls give the borrower skin in the game and restrict hidden actions"
+      ],
+      "tag": "lending",
+      "type": "application",
+      "objective": "LO20.5",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_borrower_incentives_and_lender_risk",
+      "primarySkill": "borrower_incentives_and_lender_risk",
+      "secondarySkills": [],
+      "repairSkill": "borrower_incentives_and_lender_risk",
+      "commonError": "assumes_borrowers_and_lenders_share_the_same_risk_incentives_after_funding",
+      "feedback": "Loan contracts must manage behavior after funding, not merely price the loan.",
+      "aHash": "1709ac159cd004bfbf141164894c00908f8d346ec3ccc412ae88040e38e3e8a7"
+    },
+    {
+      "id": 9108,
+      "sourceGame": "agencyProtocol",
+      "q": "A manager wants to reduce shirking without destroying useful discretion. What policy is most balanced?",
+      "options": [
+        "Measure meaningful outputs, use selective monitoring, and preserve autonomy where local information matters",
+        "Monitor every action constantly and ignore morale or local knowledge",
+        "Eliminate all incentives because monitoring is imperfect",
+        "Use only seller ratings to evaluate employees"
+      ],
+      "tag": "shirking",
+      "type": "application",
+      "objective": "LO20.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_shirking_and_effort_incentives",
+      "primarySkill": "shirking_and_effort_incentives",
+      "secondarySkills": [],
+      "repairSkill": "shirking_and_effort_incentives",
+      "commonError": "ignores_hidden_effort_and_free_riding_in_team_or_employee_settings",
+      "feedback": "The goal is efficient control, not maximum control at any cost.",
+      "aHash": "086caaefd51889c710a24fc5b9fd048ee8a817d24a70b49d5a30ddabc91afcfe"
+    },
+    {
+      "id": 9117,
+      "sourceGame": "agencyProtocol",
+      "q": "A cost center cuts support quality to stay under budget; a profit center refuses cooperation to protect its margin. What is the common lesson?",
+      "options": [
+        "Cost centers and profit centers cannot have agency problems",
+        "Incomplete performance measures can make units improve local scores while hurting total value",
+        "Only cost centers respond to incentives",
+        "Only profit centers require coordination"
+      ],
+      "tag": "profit_center",
+      "type": "application",
+      "objective": "LO22.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_profit_center_evaluation",
+      "primarySkill": "profit_center_evaluation",
+      "secondarySkills": [],
+      "repairSkill": "profit_center_evaluation",
+      "commonError": "assumes_local_profit_center_success_always_improves_total_firm_profit",
+      "feedback": "Different unit types can still face the same basic agency problem: the measured target is not the true objective.",
+      "aHash": "2faed949378f309a789806de05157bada78688162918a8bea5176e594efa82f6"
+    },
+    {
+      "id": 9121,
+      "sourceGame": "agencyProtocol",
+      "q": "A product division gets clear accountability but starts duplicating support functions and ignoring spillovers with other divisions. What is the lesson?",
+      "options": [
+        "Multidivisional structure eliminates every organizational tradeoff",
+        "Multidivisional structure improves accountability but can create duplication and interdivision coordination problems",
+        "Functional structure and multidivisional structure are identical",
+        "Division accountability removes the need for headquarters"
+      ],
+      "tag": "multidivisional",
+      "type": "application",
+      "objective": "LO22.6",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_multidivisional_accountability",
+      "primarySkill": "multidivisional_accountability",
+      "secondarySkills": [],
+      "repairSkill": "multidivisional_accountability",
+      "commonError": "assumes_divisional_accountability_eliminates_coordination_and_agency_problems",
+      "feedback": "No structure is magic. Divisions solve some problems and create others.",
+      "aHash": "49b0f29b64a44cdf03d79152df6f57b3d7414e696b75454b15e82ecd6c8083ec"
+    },
+    {
+      "id": 9124,
+      "sourceGame": "agencyProtocol",
+      "q": "The Principal sees hidden worker ability before hiring, hidden worker effort after hiring, and a bonus that rewards the wrong output. What is the cleanest diagnosis?",
+      "options": [
+        "Adverse selection, moral hazard, and incentive gaming are layered together",
+        "Only adverse selection is present because everything starts before hiring",
+        "Only moral hazard is present because employment already began",
+        "Only transfer pricing is present because all firms have internal prices"
+      ],
+      "tag": "principal_agent",
+      "type": "application",
+      "objective": "LO21.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_principal_agent_conflict",
+      "primarySkill": "principal_agent_conflict",
+      "secondarySkills": [],
+      "repairSkill": "principal_agent_conflict",
+      "commonError": "assumes_principal_and_agent_objectives_are_automatically_aligned",
+      "feedback": "Hard cases often stack multiple agency problems. Name each layer instead of flattening the case.",
+      "aHash": "7ac8ed1d39e68d5eb4fb7a47cda8cf4c967cfd67c252256ab19c0609b1f59ac0"
+    },
+    {
+      "id": 9128,
+      "sourceGame": "agencyProtocol",
+      "q": "A department's local decision helps its own budget, hurts another department, and lowers total firm profit. Which concepts are most directly involved?",
+      "options": [
+        "Coordination failure and local incentives conflicting with total firm value",
+        "Only seller reputation and signaling",
+        "Only consumer insurance deductibles",
+        "Only borrower collateral"
+      ],
+      "tag": "coordination",
+      "type": "application",
+      "objective": "LO22.5",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_cross_functional_coordination",
+      "primarySkill": "cross_functional_coordination",
+      "secondarySkills": [],
+      "repairSkill": "cross_functional_coordination",
+      "commonError": "treats_divisions_as_independent_when_outputs_are_interdependent",
+      "feedback": "Functional and divisional units must coordinate because local wins can impose costs on the rest of the firm.",
+      "aHash": "ed359c3bc8647577862a2662450a0c6fc78e4d0bad6e7ce4a59c2cdc8dd8e112"
+    },
+    {
+      "id": 9129,
+      "sourceGame": "agencyProtocol",
+      "q": "The final protocol asks for the common thread across insurance design, lending contracts, employee pay, transfer pricing, and budgets. What is it?",
+      "options": [
+        "Every problem is solved by raising prices",
+        "Information and incentive problems must be diagnosed before controls can be designed",
+        "Every problem is solved by removing all discretion",
+        "All business problems are the same as adverse selection"
+      ],
+      "tag": "incentives",
+      "type": "application",
+      "objective": "LO21.6",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_incentives",
+      "primarySkill": "incentives",
+      "secondarySkills": [],
+      "repairSkill": "incentives",
+      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
+      "feedback": "The whole unit is about diagnosing information asymmetry and incentive conflict, then choosing controls that fit the mechanism.",
+      "aHash": "36b831955faad4a81c27868323f2baee052019710af3e32aced085174007945e"
+    },
+    {
+      "id": 9146,
+      "sourceGame": "agencyProtocol",
+      "q": "A deductible reduces but does not eliminate moral hazard. Why?",
+      "options": [
+        "It solves only hidden type before the contract and never affects behavior",
+        "It makes the insurer bear no cost at all",
+        "It makes the insured bear some marginal cost, but incentives may still be imperfect",
+        "It turns the policy into a profit center"
+      ],
+      "tag": "moral_hazard",
+      "type": "application",
+      "objective": "LO20.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_hidden_action_after_contract",
+      "primarySkill": "hidden_action_after_contract",
+      "secondarySkills": [],
+      "repairSkill": "hidden_action_after_contract",
+      "commonError": "confuses_post_contract_behavior_with_pre_contract_type_selection",
+      "feedback": "Deductibles create skin in the game, but they rarely make incentives perfect.",
+      "aHash": "2e016789551e327bdd6b3340977b67f23af33b5476b281cdeb610f60c7d132e2"
+    },
+    {
+      "id": 9148,
+      "sourceGame": "agencyProtocol",
+      "q": "A firm audits expense reports randomly rather than checking every receipt. What is the economic reason?",
+      "options": [
+        "Monitoring is costly, so selective auditing can deter abuse without maximum monitoring cost",
+        "Random audits cannot affect behavior because they are not constant",
+        "The audit only screens hidden type before employment",
+        "Expense reports are transfer prices"
+      ],
+      "tag": "monitoring",
+      "type": "application",
+      "objective": "LO20.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_monitoring_and_incentive_control",
+      "primarySkill": "monitoring_and_incentive_control",
+      "secondarySkills": [],
+      "repairSkill": "monitoring_and_incentive_control",
+      "commonError": "assumes_monitoring_always_solves_incentive_problems_without_costs_or_distortion",
+      "feedback": "Selective monitoring can change expected costs of bad behavior while controlling monitoring expense.",
+      "aHash": "0441e6d21c16b698c7768e28f0dd04e26f706eea5d6588d8535f6dd17ff93473"
+    },
+    {
+      "id": 9161,
+      "sourceGame": "agencyProtocol",
+      "q": "A functional structure works well in a small focused firm but strains as products multiply. Why?",
+      "options": [
+        "Functional units stop having expertise as firms grow",
+        "Specialized departments may struggle to coordinate across diverse product lines",
+        "Product complexity removes all agency problems",
+        "The firm now needs only insurance screening"
+      ],
+      "tag": "functional_units",
+      "type": "application",
+      "objective": "LO22.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_functional_specialization",
+      "primarySkill": "functional_specialization",
+      "secondarySkills": [],
+      "repairSkill": "functional_specialization",
+      "commonError": "ignores_silos_created_by_functional_specialization",
+      "feedback": "As complexity rises, coordination and accountability demands can exceed the benefits of simple functional specialization.",
+      "aHash": "656e9efce61dc77c09c5588e10e88337de40fefa686652f47b5a31513bd97665"
+    },
+    {
+      "id": 9164,
+      "sourceGame": "agencyProtocol",
+      "q": "A division manager is accountable for a product line's profit, but depends on shared services controlled elsewhere. What must the parent manage?",
+      "options": [
+        "Coordination and fair performance evaluation across interdependent units",
+        "Only customer reputation scores",
+        "Only insurance deductibles",
+        "Only hidden seller quality before purchase"
+      ],
+      "tag": "multidivisional",
+      "type": "application",
+      "objective": "LO22.6",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_multidivisional_accountability",
+      "primarySkill": "multidivisional_accountability",
+      "secondarySkills": [],
+      "repairSkill": "multidivisional_accountability",
+      "commonError": "assumes_divisional_accountability_eliminates_coordination_and_agency_problems",
+      "feedback": "Divisions improve accountability, but shared dependencies still require coordination.",
+      "aHash": "b5ed917a3f0777f4514322e88b19ceba0b2960c776da24f87a37c46123673537"
+    },
+    {
+      "id": 9165,
+      "sourceGame": "agencyProtocol",
+      "q": "A multidivisional firm evaluates each division independently. What risk remains?",
+      "options": [
+        "Division managers stop responding to incentives",
+        "Managers may neglect costly spillovers on other divisions",
+        "Headquarters no longer needs strategy",
+        "Internal trades become impossible"
+      ],
+      "tag": "multidivisional",
+      "type": "application",
+      "objective": "LO22.6",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_multidivisional_accountability",
+      "primarySkill": "multidivisional_accountability",
+      "secondarySkills": [],
+      "repairSkill": "multidivisional_accountability",
+      "commonError": "assumes_divisional_accountability_eliminates_coordination_and_agency_problems",
+      "feedback": "Local accountability can create local optimization unless headquarters manages spillovers.",
+      "aHash": "0f780922f9d8ed8b4321ec3c73f59c17d0c8392f8c3dc45354a57834ffd1a829"
+    },
+    {
+      "id": 9179,
+      "sourceGame": "agencyProtocol",
+      "q": "A platform forces sellers to verify identity, accept dispute penalties, and build public transaction histories. What is the strongest explanation?",
+      "options": [
+        "The platform centralizes all decisions to eliminate local knowledge",
+        "The platform uses transfer pricing to move profit across divisions",
+        "The platform creates moral hazard because buyers become careless after buying",
+        "The platform layers screening, signaling, and reputation to reduce hidden-quality problems before exchange"
+      ],
+      "tag": "reputation",
+      "type": "application",
+      "objective": "LO19.5",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_reputation_systems_and_market_quality",
+      "primarySkill": "reputation_systems_and_market_quality",
+      "secondarySkills": [
+        "screening_hidden_type",
+        "credible_signaling_hidden_type"
+      ],
+      "repairSkill": "reputation_systems_and_market_quality",
+      "commonError": "treats_one_information_tool_as_the_whole_system",
+      "feedback": "The system combines several tools. Verification screens, penalties create credible stakes, and histories build reputation.",
+      "aHash": "68c9bbf223ce9d7c4fd7d58816b0c280b87494de0e48191da5a5fc339796280c"
+    },
+    {
+      "id": 9181,
+      "sourceGame": "agencyProtocol",
+      "q": "The board pays executives with stock options. Monitoring costs fall, but executives now prefer high-upside risky projects that shareholders would reject. What is the best lesson?",
+      "options": [
+        "Stock options eliminate residual loss by definition",
+        "Incentive alignment can reduce some agency costs while creating risk-taking distortions",
+        "Monitoring costs are the only agency cost that matters",
+        "Risk-taking proves the executive was adversely selected before hiring"
+      ],
+      "tag": "agency_costs",
+      "type": "application",
+      "objective": "LO21.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_agency_costs_and_alignment",
+      "primarySkill": "agency_costs_and_alignment",
+      "secondarySkills": [
+        "principal_agent_conflict",
+        "metric_gaming_and_unintended_responses"
+      ],
+      "repairSkill": "agency_costs_and_alignment",
+      "commonError": "assumes_one_incentive_contract_solves_all_agency_problems",
+      "feedback": "Agency design is a tradeoff. A contract can improve alignment on one margin while distorting another.",
+      "aHash": "7d3195c0c7cd32dc4914ede25b79f2f8420771b8e1252e5d635f20f0d1147916"
+    },
+    {
+      "id": 9183,
+      "sourceGame": "agencyProtocol",
+      "q": "A transfer between two divisions has seller opportunity cost $55 and buyer value $100. Headquarters sets the transfer price at $115. What is the firm-level and behavioral problem?",
+      "options": [
+        "The price proves the seller is low quality",
+        "The transfer destroys $15 of firm value and should always be rejected",
+        "The seller loses $60 if the transfer occurs",
+        "The transfer creates $45 of firm value but may be rejected by the buyer division"
+      ],
+      "tag": "transfer_pricing",
+      "type": "calculation",
+      "objective": "LO22.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_transfer_pricing_internal_trade",
+      "primarySkill": "transfer_pricing_internal_trade",
+      "secondarySkills": [
+        "total_firm_profit_alignment",
+        "profit_center_evaluation"
+      ],
+      "repairSkill": "transfer_pricing_internal_trade",
+      "commonError": "uses_internal_transfer_price_as_social_cost_or_benefit",
+      "feedback": "Firm value is 100 - 55 = 45. But at price 115, the buyer division refuses despite positive total value.",
+      "aHash": "1eff7149960952293277d11da35533553ff197acd4d78a793fa0f26a172fc863"
+    },
+    {
+      "id": 9184,
+      "sourceGame": "agencyProtocol",
+      "q": "Division A loses $30,000 from helping Division B, but Division B gains $95,000. A’s manager refuses because her bonus is local profit. What should headquarters do?",
+      "options": [
+        "Recognize a $65,000 total firm gain and redesign incentives or authority to support the project",
+        "Accept the refusal because local profit is the only objective",
+        "Call it adverse selection because A’s manager has hidden type",
+        "Lower all insurance premiums to pool the risk"
+      ],
+      "tag": "total_firm_profit",
+      "type": "calculation",
+      "objective": "LO22.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_total_firm_profit_alignment",
+      "primarySkill": "total_firm_profit_alignment",
+      "secondarySkills": [
+        "profit_center_evaluation",
+        "coordination"
+      ],
+      "repairSkill": "total_firm_profit_alignment",
+      "commonError": "stops_at_the_refusing_division_local_loss",
+      "feedback": "The net effect is -30,000 + 95,000 = +65,000. Local metrics block a profitable firm-wide move.",
+      "aHash": "72f25956a739920d52870e4160834ea0fdd64d51ea9ebcc9f9e90f779784ea21"
+    },
+    {
+      "id": 9185,
+      "sourceGame": "agencyProtocol",
+      "q": "A cost center cuts $80,000 from maintenance. Production downtime rises by $260,000. What is the net firm effect and lesson?",
+      "options": [
+        "Net gain of $80,000; the cost center performed well",
+        "Net loss of $180,000; cost control alone can destroy value",
+        "Net gain of $260,000 because downtime is another division’s issue",
+        "No effect because cost centers do not affect revenue"
+      ],
+      "tag": "cost_center",
+      "type": "calculation",
+      "objective": "LO22.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_cost_center_evaluation",
+      "primarySkill": "cost_center_evaluation",
+      "secondarySkills": [
+        "total_firm_profit_alignment",
+        "coordination"
+      ],
+      "repairSkill": "cost_center_evaluation",
+      "commonError": "ignores_downstream_costs_created_by_local_cost_cutting",
+      "feedback": "Savings of 80,000 minus downtime cost of 260,000 equals -180,000. Local cost success can be firm failure.",
+      "aHash": "60cfe47682dd6c8fdafd640ce83d537cf14aa7653372dff355da0b7fcd9fd575"
+    },
+    {
+      "id": 9186,
+      "sourceGame": "agencyProtocol",
+      "q": "A profit center boosts its own margin by refusing an internal request, gaining $40,000 while causing another division to lose $110,000. What happened?",
+      "options": [
+        "The other division’s loss proves hidden information before contract",
+        "The firm gained $40,000 because only the measured division matters",
+        "The profit-center metric rewarded a local gain that caused a $70,000 firm-wide loss",
+        "The profit center became a cost center"
+      ],
+      "tag": "profit_center",
+      "type": "calculation",
+      "objective": "LO22.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_profit_center_evaluation",
+      "primarySkill": "profit_center_evaluation",
+      "secondarySkills": [
+        "coordination",
+        "total_firm_profit_alignment"
+      ],
+      "repairSkill": "profit_center_evaluation",
+      "commonError": "treats_profit_center_profit_as_total_firm_profit",
+      "feedback": "The total effect is +40,000 - 110,000 = -70,000. Local profit can conflict with parent-company profit.",
+      "aHash": "f482d24ff316c855b90d2e99c7c04d6eafbef8fa84a77ce889e144e42e8f4509"
+    },
+    {
+      "id": 9188,
+      "sourceGame": "agencyProtocol",
+      "q": "A decentralized branch knows local demand better than headquarters, but it also discounts aggressively to steal customers from sister branches. What is the governance tradeoff?",
+      "options": [
+        "Local information favors decentralization; cross-branch conflict favors more coordination or central control",
+        "Decentralization always eliminates agency costs",
+        "Centralization always improves local information",
+        "The problem is only moral hazard in insurance"
+      ],
+      "tag": "centralization",
+      "type": "application",
+      "objective": "LO21.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_decision_rights_and_decentralization",
+      "primarySkill": "decision_rights_and_decentralization",
+      "secondarySkills": [
+        "coordination",
+        "agency_costs_and_alignment"
+      ],
+      "repairSkill": "decision_rights_and_decentralization",
+      "commonError": "chooses_centralization_or_decentralization_without_weighing_both_margins",
+      "feedback": "Decision rights balance local knowledge against local incentives that may harm the larger organization.",
+      "aHash": "50c3a8fb5dcbb22b542ea8cc8b97c13d5971e6699cc57701c0ada4dbbd5dbeab"
+    },
+    {
+      "id": 9192,
+      "sourceGame": "agencyProtocol",
+      "q": "A buyer trusts a seller because the seller has a long record, accepts penalties, and offers a warranty. Which answer best explains why this helps but does not make the market perfect?",
+      "options": [
+        "These tools reduce hidden quality concerns, but ratings and promises remain noisy and imperfect",
+        "They eliminate all adverse selection and moral hazard forever",
+        "They only matter after the sale because information never matters before exchange",
+        "They are internal transfer prices between buyer and seller"
+      ],
+      "tag": "reputation",
+      "type": "application",
+      "objective": "LO19.5",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_reputation_systems_and_market_quality",
+      "primarySkill": "reputation_systems_and_market_quality",
+      "secondarySkills": [
+        "credible_signaling_hidden_type",
+        "hidden_information_before_contract"
+      ],
+      "repairSkill": "reputation_systems_and_market_quality",
+      "commonError": "treats_stacked_market_signals_as_perfect_information",
+      "feedback": "Reputation and warranties reduce uncertainty. They do not eliminate noise, manipulation, or future behavior problems.",
+      "aHash": "bcd3da5f833e75d43e0d489f223a16ebc6f31de90f619fccbb9f969259a60a08"
+    },
+    {
+      "id": 9198,
+      "sourceGame": "agencyProtocol",
+      "q": "A multidivisional firm gives product divisions profit responsibility, but shared technology investments are underfunded because no single division gets enough credit. What is the issue?",
+      "options": [
+        "The technology team must be a seller in an online market",
+        "Multidivisional structures eliminate shared-resource problems",
+        "Divisional accountability can underprovide shared resources without firm-level coordination",
+        "The issue is adverse selection because project type is hidden before purchase"
+      ],
+      "tag": "multidivisional",
+      "type": "application",
+      "objective": "LO22.6",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_multidivisional_accountability",
+      "primarySkill": "multidivisional_accountability",
+      "secondarySkills": [
+        "coordination",
+        "total_firm_profit_alignment"
+      ],
+      "repairSkill": "multidivisional_accountability",
+      "commonError": "assumes_profit_responsibility_solves_shared_investment_problems",
+      "feedback": "Divisions focus on their own results. Shared investments may need central support because benefits spill across divisions.",
+      "aHash": "f16d5d2d27e3a1d791e6fe470fc06a54e3aa63a65b6a0e070440856fd9fd809d"
+    },
+    {
+      "id": 9199,
+      "sourceGame": "agencyProtocol",
+      "q": "A manager is evaluated by staying under budget, so she delays useful training. Training savings are $20,000, but productivity losses are $75,000. What is the net effect?",
+      "options": [
+        "No effect because training is not part of profit",
+        "A $20,000 firm-level gain because the budget was protected",
+        "A $75,000 firm-level gain because training was avoided",
+        "A $55,000 firm-level loss caused by a narrow cost target"
+      ],
+      "tag": "cost_center",
+      "type": "calculation",
+      "objective": "LO22.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_cost_center_evaluation",
+      "primarySkill": "cost_center_evaluation",
+      "secondarySkills": [
+        "total_firm_profit_alignment"
+      ],
+      "repairSkill": "cost_center_evaluation",
+      "commonError": "counts_savings_without_productivity_loss",
+      "feedback": "The net effect is 20,000 - 75,000 = -55,000. Cost targets can reward value destruction.",
+      "aHash": "46e3bf4ac67dc505ddcf4b9eeb92b5fdc58d5290f9307b2f8feed6165adf8d77"
+    },
+    {
+      "id": 9201,
+      "sourceGame": "agencyProtocol",
+      "q": "A manager says, “If we just give every division its own profit target, total firm profit will automatically rise.” What is the correct response?",
+      "options": [
+        "Profit centers always eliminate agency costs",
+        "Profit targets help accountability but can create local decisions that reduce total firm profit",
+        "Profit targets are only useful for cost centers",
+        "Division profit and total firm profit are always identical"
+      ],
+      "tag": "profit_center",
+      "type": "application",
+      "objective": "LO22.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_profit_center_evaluation",
+      "primarySkill": "profit_center_evaluation",
+      "secondarySkills": [
+        "total_firm_profit_alignment",
+        "coordination"
+      ],
+      "repairSkill": "profit_center_evaluation",
+      "commonError": "assumes_profit_center_accountability_automatically_aligns_the_whole_firm",
+      "feedback": "Profit centers improve responsibility, but local optimization can conflict with firm-wide value.",
+      "aHash": "01f2e36dbbb992b51637c51bb574e43eeae1dcd65c1622a2c762f8e2b57315ec"
+    },
+    {
+      "id": 9202,
+      "sourceGame": "agencyProtocol",
+      "q": "A principal can choose between fixed salary, output pay, and close monitoring. Effort is hidden and output is noisy. What is the central design problem?",
+      "options": [
+        "Choosing a transfer price for every worker",
+        "Eliminating all risk from society through insurance",
+        "Balancing risk sharing, incentive strength, and monitoring cost",
+        "Preventing all specialization across functional units"
+      ],
+      "tag": "principal_agent",
+      "type": "application",
+      "objective": "LO21.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_agencyProtocol_principal_agent_conflict",
+      "primarySkill": "principal_agent_conflict",
+      "secondarySkills": [
+        "agency_costs_and_alignment",
+        "monitoring_and_incentive_control"
+      ],
+      "repairSkill": "principal_agent_conflict",
+      "commonError": "assumes_one_contract_form_dominates_without_tradeoffs",
+      "feedback": "Output pay gives incentives but exposes agents to noise. Salary shares risk but weakens effort incentives. Monitoring helps but costs money.",
+      "aHash": "060fb4b59a1f3a425104d3e222d2b318275db5f35f7337eddd8198a16189ae17"
+    }
+  ],
+  "hard": [
     {
       "id": 204,
       "sourceGame": "agencyProtocol",
@@ -5314,1859 +9340,598 @@ const questionBanks = {
       "commonError": "mistakes_budget_compliance_for_honest_forecasting_or_value_creation",
       "feedback": "The budget rule encourages wasteful spending to protect next year's budget.",
       "aHash": "d2645fcead3fc2f443cd202a145bb82c4c958e5c2c629852d4778fe625daedd7"
+    },
+    {
+      "id": 7016,
+      "sourceGame": "agencyProtocol",
+      "q": "A repair firm can reward speed or verified durable repairs. Speed pay adds 30 contribution but 24 callback costs. Durable-repair pay adds 22 contribution, 5 callback costs and 4 verification cost. Other effects are equal. Which is better?",
+      "options": [
+        "Durable-repair pay by 7: net 13 versus 6",
+        "Speed pay by 8 because contribution is higher",
+        "Durable-repair pay by 17 because verification is not a repair cost",
+        "Speed pay because measurable completion always captures customer value"
+      ],
+      "tag": "incentives",
+      "type": "integration",
+      "objective": "LO21.6",
+      "difficulty": "hard",
+      "conceptCluster": "hard_agencyProtocol_incentives",
+      "primarySkill": "incentives",
+      "secondarySkills": [],
+      "repairSkill": "incentives",
+      "commonError": "ignores_control_tradeoffs_or_omitted_consequences",
+      "feedback": "Speed nets 30-24=6. Durable repairs net 22-5-4=13. The better metric earns less gross contribution but more after consequences.",
+      "aHash": "45ca36815aa03d7f809a1b9f65fac6d1e5d1ec4c39eb3fc3f5381b0c0fa4d098"
+    },
+    {
+      "id": 7019,
+      "sourceGame": "agencyProtocol",
+      "q": "Local managers observe urgent demand; headquarters observes congestion across branches. A central approval queue loses valuable orders, but unrestricted local promises overload shared capacity. Which information design best supports delegated authority?",
+      "options": [
+        "Delegate every quote and treat capacity spillovers as headquarters' problem",
+        "Send local managers last year's average costs and reward revenue only",
+        "Centralize all quotes without transmitting urgent local demand",
+        "Give local managers current shared-capacity prices and escalate orders with large cross-branch effects"
+      ],
+      "tag": "organization",
+      "type": "integration",
+      "objective": "LO21.4",
+      "difficulty": "hard",
+      "conceptCluster": "hard_agencyProtocol_organization",
+      "primarySkill": "organization",
+      "secondarySkills": [],
+      "repairSkill": "organization",
+      "commonError": "ignores_control_tradeoffs_or_omitted_consequences",
+      "feedback": "Decision rights work better when local knowledge is combined with current shared-resource opportunity costs. Escalation can address large spillovers without delaying every order.",
+      "aHash": "97997ebd211a0ea34b4642d73d82610d87fd1a2b661a96e74b62546d55e47b39"
+    },
+    {
+      "id": 7035,
+      "sourceGame": "agencyProtocol",
+      "q": "Customer defaults rise after signup bonuses, maintenance is deferred under annual profit targets, and divisions reject valuable internal trades. Which diagnostic approach best fits the evidence?",
+      "options": [
+        "Raise all existing bonuses because stronger incentives necessarily improve firm value",
+        "Replace every manager after a stronger ability test because all three are hidden-type problems",
+        "Centralize every decision because one headquarters metric automatically captures all costs",
+        "Trace each reward and omitted cost separately, then design customer-quality, long-horizon and transfer-pricing controls for the respective margins"
+      ],
+      "tag": "principal_agent",
+      "type": "integration",
+      "objective": "LO21.6",
+      "difficulty": "hard",
+      "conceptCluster": "hard_agencyProtocol_principal_agent_conflict",
+      "primarySkill": "principal_agent_conflict",
+      "secondarySkills": [],
+      "repairSkill": "principal_agent_conflict",
+      "commonError": "ignores_control_tradeoffs_or_omitted_consequences",
+      "feedback": "The shared principal-agent framework does not imply one identical remedy. Each case has a different rewarded margin and omitted consequence.",
+      "aHash": "c0ed6a75369b93c6669805986759a09de3decb9edfcd546e731dfe1e3f8441f1"
     }
   ],
   "elite": [
     {
       "id": 7000,
       "sourceGame": "agencyProtocol",
-      "q": "A health insurer offers one generous plan at a single premium. High-risk customers enroll heavily, low-risk customers leave, and premiums rise again. Which explanation best identifies the mechanism?",
+      "q": "An insurer observes unchanged claim rates within low- and high-risk groups, but high-risk enrollment grows as low-risk buyers leave. It proposes a deductible to repair the pool. Which diagnosis best evaluates that proposal?",
       "options": [
-        "Adverse selection worsens the pool because the single premium attracts higher-risk buyers and pushes lower-risk buyers out",
-        "Moral hazard worsens the pool because insured customers use more care after coverage begins, causing low-risk buyers to become high-risk",
-        "Signaling improves the pool because high-risk customers reveal themselves by accepting the higher premium",
-        "Experience rating solves the pool problem because one premium lets the insurer price each customer according to risk"
+        "The pool changed; a care incentive alone does not establish improved selection",
+        "The unchanged within-group rates prove there is no information problem",
+        "Higher average claims prove existing customers became less careful",
+        "A deductible necessarily keeps every low-risk buyer in the pool"
       ],
       "tag": "adverse_selection",
       "type": "integration",
       "objective": "LO19.2",
       "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
+      "conceptCluster": "elite_agencyProtocol_hidden_information_before_contract",
       "primarySkill": "hidden_information_before_contract",
       "secondarySkills": [],
       "repairSkill": "hidden_information_before_contract",
       "commonError": "confuses_hidden_information_before_contract_with_hidden_action_after_contract",
-      "feedback": "The problem occurs before coverage behavior changes. A single premium attracts high-risk buyers and drives away low-risk buyers, worsening the risk pool.",
-      "aHash": "d87b6d74a9b5a765e91b8fa60058294aac7ef513d5840c86e7a546b33cf4e9d9"
+      "feedback": "Average claims can rise without behavior changing. The proposal must address who enrolls; post-contract incentives are a separate margin.",
+      "aHash": "9b5e66016f983b21985909dc375553ebff908e9448ae902bcab8f847f1126cf9"
     },
     {
       "id": 7001,
       "sourceGame": "agencyProtocol",
-      "q": "A driver privately knows they take risks, buys full insurance, and then drives even more recklessly after coverage begins. Which answer best separates the two information problems?",
+      "q": "An insurer compares applicants' risk before purchase and customers' care afterward. A new contract attracts safer applicants but makes each customer less careful after enrollment. Average claims stay unchanged. What follows?",
       "options": [
-        "Buying coverage because of hidden risk is adverse selection; driving more recklessly after coverage begins is moral hazard",
-        "Buying coverage because of hidden risk is moral hazard; driving more recklessly after coverage begins is adverse selection",
-        "Both are adverse selection because the insurer cannot observe the driver's behavior after coverage begins",
-        "Both are moral hazard because insurance always changes the composition of the risk pool before purchase"
+        "No information problem changed because average claims did not change",
+        "Selection improved while moral hazard worsened; unchanged average claims conceal offsetting effects",
+        "Both adverse selection and moral hazard improved because applicants are safer",
+        "Only adverse selection matters because applicant risk is observed first"
       ],
       "tag": "adverse_selection",
-      "type": "trap",
+      "type": "integration",
       "objective": "LO20.1",
       "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
+      "conceptCluster": "elite_agencyProtocol_hidden_information_before_contract",
       "primarySkill": "hidden_information_before_contract",
       "secondarySkills": [],
       "repairSkill": "hidden_information_before_contract",
-      "commonError": "confuses_hidden_information_before_contract_with_hidden_action_after_contract",
-      "feedback": "Hidden type before the contract is adverse selection. Hidden behavior after protection begins is moral hazard.",
-      "aHash": "b3cf76fa206b3a0c8e08be5c655c9e18382fa9b445bc46c7a3b9ae3c83665d9f"
+      "commonError": "ignores_control_tradeoffs_or_omitted_consequences",
+      "feedback": "Composition and behavior move in opposite directions. An unchanged aggregate does not show either margin is unchanged.",
+      "aHash": "00570edbcf11329459dc8932d18bf514f1925df76cf78e7ba30bc74837347ad0"
     },
     {
       "id": 7002,
       "sourceGame": "agencyProtocol",
-      "q": "A company cannot observe applicant ability directly. It uses a skills test before hiring and then later ties part of pay to verified performance. Which pairing is most accurate?",
+      "q": "A firm screens applicants with a work sample, then pays on output. Test scores predict ability, but storms make output noisy and the bonus encourages neglect of teamwork. Which control gap remains?",
       "options": [
-        "The test screens hidden ability before hiring; performance pay controls hidden effort after hiring",
-        "The test controls hidden effort after hiring; performance pay screens hidden ability before hiring",
-        "Both tools solve only adverse selection because all information problems happen before hiring",
-        "Both tools solve only moral hazard because workers can change behavior after hiring"
+        "Output pay eliminates moral hazard whenever entry ability is measured",
+        "A harder entry test alone eliminates both output noise and post-hire gaming",
+        "Screening helps selection; pay still needs to address noise and unmeasured cooperative effort",
+        "The storm proves the work-sample test selected low-ability employees"
       ],
       "tag": "screening",
       "type": "integration",
       "objective": "LO21.2",
       "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
+      "conceptCluster": "elite_agencyProtocol_screening_hidden_type",
       "primarySkill": "screening_hidden_type",
       "secondarySkills": [],
       "repairSkill": "screening_hidden_type",
-      "commonError": "confuses_screening_by_the_less_informed_party_with_signaling_by_the_informed_party",
-      "feedback": "The test screens hidden ability before hiring. Performance pay helps control hidden effort after hiring.",
-      "aHash": "c4ba7a81365c951a9316add9f84636161cc228b0d779d9ecd82dd9f4816163c5"
+      "commonError": "ignores_control_tradeoffs_or_omitted_consequences",
+      "feedback": "Selection, uncontrollable noise and later effort allocation are different margins. A successful ability test cannot fully repair a distorted performance measure.",
+      "aHash": "702023c53fa0183b67ac706e8d85eb94e0bde20044b79d933f86dace32a93d0f"
     },
     {
       "id": 7003,
       "sourceGame": "agencyProtocol",
-      "q": "A seller with a reliable product offers a costly warranty that low-quality sellers would find expensive to imitate. Why can this reduce adverse selection?",
+      "q": "A voluntary warranty earns a $30 premium. Expected claims cost reliable sellers $10 and unreliable sellers $40, so only reliable sellers offer it. Buyer care then falls under coverage; costs become $35 and $65, while the premium stays $30. Seller quality has not changed. What follows?",
       "options": [
-        "The warranty can act as a credible signal because it is less costly for high-quality sellers to offer",
-        "The warranty creates moral hazard because buyers now know the seller is high quality before purchase",
-        "The warranty works only because it forces all sellers into a pooling equilibrium",
-        "The warranty eliminates the need for buyer judgment because all sellers will now offer the same warranty"
+        "Both types offer it because any warranty premium makes a signal profitable",
+        "It remains a separating signal because reliable sellers still have lower claims cost",
+        "Unreliable sellers now offer it because coverage lowers buyer care",
+        "Both types now prefer not to offer it; buyer moral hazard has undermined the separating signal"
       ],
       "tag": "signaling",
-      "type": "trap",
+      "type": "integration",
       "objective": "LO19.4",
       "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
+      "conceptCluster": "elite_agencyProtocol_credible_signaling_hidden_type",
       "primarySkill": "credible_signaling_hidden_type",
       "secondarySkills": [],
       "repairSkill": "credible_signaling_hidden_type",
-      "commonError": "assumes_any_claim_is_a_credible_signal_without_costly_verification",
-      "feedback": "The informed seller signals quality. The signal works when it is more credible or less costly for high-quality sellers than for low-quality sellers.",
-      "aHash": "330b1fbc3c31b3725e343d4510dba783c08919af7c5ad8a3dbca8273a076e97d"
-    },
-    {
-      "id": 7004,
-      "sourceGame": "agencyProtocol",
-      "q": "A platform shows verified purchase reviews, seller history, dispute rates, and return policies. Which information problem is mostly being reduced?",
-      "options": [
-        "Adverse selection caused by hidden seller quality before buyers purchase",
-        "Moral hazard caused by sellers changing buyer behavior after purchase",
-        "Principal-agent conflict caused by managers shirking inside the platform",
-        "Residual loss caused by owners delegating pricing authority to sellers"
-      ],
-      "tag": "reputation",
-      "type": "integration",
-      "objective": "LO19.5",
-      "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
-      "primarySkill": "reputation_systems_and_market_quality",
-      "secondarySkills": [],
-      "repairSkill": "reputation_systems_and_market_quality",
-      "commonError": "treats_reviews_as_perfect_information_instead_of_noisy_market_discipline",
-      "feedback": "Reputation systems make hidden seller quality more observable before future buyers decide whether to trade.",
-      "aHash": "3a4e1881cbb7973e6a9559fc2a7c1b3a4ef78840523758b2f4771c9856fda2fa"
+      "commonError": "confuses_type_composition_with_behavior_or_signal_incentives",
+      "feedback": "Initially net gains are 20 and -10. After reduced care they are -5 and -35. Relative cost advantage alone does not make signaling worthwhile; behavior on the other side can change the incentive to signal.",
+      "aHash": "3c8d448bfeb1410c5909acce8eaa62d6dde4389f8257910f6de2e0c92b94b8c2"
     },
     {
       "id": 7005,
       "sourceGame": "agencyProtocol",
-      "q": "An online marketplace removes sellers with repeated complaints and lets sellers build ratings over time. Which statement best separates the two mechanisms?",
+      "q": "A platform chooses between two rating reforms. A verified-history system costs $18,000 and is expected to prevent $32,000 of buyer losses. A deposit rule costs $6,000 to run, prevents $25,000 of losses, but blocks reliable new sellers who would create $12,000 of surplus. Which reform creates more net value?",
       "options": [
-        "Removing bad sellers screens the pool; ratings let reliable sellers build reputation and signal quality over time",
-        "Removing bad sellers mainly controls moral hazard after purchase; ratings mainly create a transfer price between buyers and sellers",
-        "Removing bad sellers eliminates adverse selection completely; ratings are unnecessary once low-quality sellers are removed",
-        "Ratings screen out bad sellers before any transaction occurs; complaint removal is only a form of buyer moral hazard"
+        "Deposits: $19,000 versus $14,000 from verified history",
+        "Verified history: $14,000 versus $7,000 from deposits",
+        "Verified history: $32,000 versus $25,000 from deposits",
+        "Deposits: lower administration cost settles the comparison"
       ],
       "tag": "reputation",
-      "type": "multi-step",
+      "type": "integration",
       "objective": "LO19.5",
       "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
+      "conceptCluster": "elite_agencyProtocol_reputation_systems_and_market_quality",
       "primarySkill": "reputation_systems_and_market_quality",
       "secondarySkills": [],
       "repairSkill": "reputation_systems_and_market_quality",
       "commonError": "treats_reviews_as_perfect_information_instead_of_noisy_market_discipline",
-      "feedback": "Complaint removal improves the seller pool by screening out repeated poor performers. Ratings create reputation information that helps reliable sellers separate themselves from unreliable sellers over time.",
-      "aHash": "ee43b7b546eb302d92a121f0330b20a48c1af760e98189925b64465ca23512f7"
-    },
-    {
-      "id": 7006,
-      "sourceGame": "agencyProtocol",
-      "q": "A buyer says, 'Seller reviews are old information, so they cannot affect adverse selection today.' What is wrong with that reasoning?",
-      "options": [
-        "Past reviews become current information for future buyers before they purchase",
-        "Reviews matter only after a transaction and therefore cannot change buyer expectations",
-        "Reviews reduce moral hazard but cannot affect the composition of sellers buyers choose from",
-        "Reviews are useful only when every seller has identical quality"
-      ],
-      "tag": "reputation",
-      "type": "trap",
-      "objective": "LO19.5",
-      "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
-      "primarySkill": "reputation_systems_and_market_quality",
-      "secondarySkills": [],
-      "repairSkill": "reputation_systems_and_market_quality",
-      "commonError": "treats_reviews_as_perfect_information_instead_of_noisy_market_discipline",
-      "feedback": "Past transactions create reputation data that future buyers use before making their own purchase decisions.",
-      "aHash": "42dd9c7b2d9a2fb1f0178b038765f623b7aa3a2d20587944007ff31174e0d9a0"
+      "feedback": "History nets 32-18=14 thousand. Deposits net 25-6-12=7 thousand after the entry cost. A control can improve credibility while excluding valuable sellers.",
+      "aHash": "21767c0c9818f10f7c522b85787b8cc28b497df2b8589e09bacb3b4f455a867e"
     },
     {
       "id": 7007,
       "sourceGame": "agencyProtocol",
-      "q": "An insured homeowner installs fewer safety devices because the insurer will pay for losses. The insurer responds with deductibles and inspections. What is the main problem and response?",
+      "q": "Full insurance creates expected avoidable loss of 40. A deductible prevents 18 of that loss but costs customers 13 in valued risk protection. Inspections prevent 15 and use 7 in real resources. These are mutually exclusive reforms. Which creates more net value?",
       "options": [
-        "Moral hazard controlled through cost sharing and monitoring",
-        "Adverse selection controlled through signaling and pooling",
-        "Moral hazard controlled by hiding more information from the insurer",
-        "Adverse selection controlled by lowering the homeowner's out-of-pocket cost"
+        "Deductible: reduced risk protection is not an economic cost",
+        "Deductible: it prevents 18 rather than 15",
+        "Inspections: they eliminate all moral hazard without a tradeoff",
+        "Inspections: 8 versus 5 for the deductible"
       ],
       "tag": "moral_hazard",
       "type": "integration",
       "objective": "LO20.2",
       "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
+      "conceptCluster": "elite_agencyProtocol_hidden_action_after_contract",
       "primarySkill": "hidden_action_after_contract",
       "secondarySkills": [],
       "repairSkill": "hidden_action_after_contract",
-      "commonError": "confuses_post_contract_behavior_with_pre_contract_type_selection",
-      "feedback": "The homeowner changes behavior after protection begins. Deductibles and inspections reduce moral hazard by restoring cost exposure and observability.",
-      "aHash": "0832e08f436c9869dcaefb5f0082ce0ab159d678561c191ad625fb7551c4c8ce"
-    },
-    {
-      "id": 7008,
-      "sourceGame": "agencyProtocol",
-      "q": "A health plan has no copays, and patients begin using care even when the benefit is small. Adding copays reduces unnecessary use. What principle is being applied?",
-      "options": [
-        "Cost sharing reduces moral hazard by making patients bear part of the marginal cost",
-        "Cost sharing reduces adverse selection by revealing patient risk before enrollment",
-        "Copays signal provider quality by separating high-quality doctors from low-quality doctors",
-        "Copays eliminate the need for monitoring because all patients now choose efficient care"
-      ],
-      "tag": "moral_hazard",
-      "type": "trap",
-      "objective": "LO20.2",
-      "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
-      "primarySkill": "hidden_action_after_contract",
-      "secondarySkills": [],
-      "repairSkill": "hidden_action_after_contract",
-      "commonError": "confuses_post_contract_behavior_with_pre_contract_type_selection",
-      "feedback": "Copays reduce overuse because patients no longer face a zero price at the point of care.",
-      "aHash": "f89e7a7a340d9f1a393657dd8fdb36033fefa0f59fa7065932954958e9b5193d"
+      "commonError": "ignores_control_tradeoffs_or_omitted_consequences",
+      "feedback": "Net gains are 15-7=8 and 18-13=5. Cost sharing strengthens care incentives but sacrifices insurance value.",
+      "aHash": "fa8d439ba648c2164cf87d491b6f6fc60ff7169ffcf46d0c461d741f6d7fabf1"
     },
     {
       "id": 7009,
       "sourceGame": "agencyProtocol",
-      "q": "A bank screens borrowers carefully before lending, then requires collateral and financial reports after lending. Which pairing is correct?",
+      "q": "A bank begins using credit checks and project covenants. New borrowers default less, but the same borrowers still switch secretly to riskier projects after receiving funds. Which assessment is strongest?",
       "options": [
-        "Screening addresses adverse selection before the loan; collateral and reports address moral hazard after the loan",
-        "Screening addresses moral hazard after the loan; collateral and reports address adverse selection before the loan",
-        "Screening and collateral both address only adverse selection because loan risk exists before lending",
-        "Financial reports solve adverse selection, while screening solves only post-loan borrower behavior"
+        "The lower new-borrower default rate proves covenants eliminated hidden action",
+        "Selection may have improved; the continuing project switches show a post-loan control gap",
+        "The project switches show only screening failure because risk existed before lending",
+        "All covenants should be removed because credit checks already affect default"
       ],
       "tag": "lending",
       "type": "integration",
       "objective": "LO20.5",
       "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
+      "conceptCluster": "elite_agencyProtocol_borrower_incentives_and_lender_risk",
       "primarySkill": "borrower_incentives_and_lender_risk",
       "secondarySkills": [],
       "repairSkill": "borrower_incentives_and_lender_risk",
       "commonError": "assumes_borrowers_and_lenders_share_the_same_risk_incentives_after_funding",
-      "feedback": "The bank first tries to identify borrower risk, then uses collateral and reporting to control borrower behavior after the money is lent.",
-      "aHash": "ceb152218c0912e39fe19dd3ce164d7602f9ab5c7377ebcd185fc13c07954bff"
-    },
-    {
-      "id": 7010,
-      "sourceGame": "agencyProtocol",
-      "q": "A borrower has little of their own money invested and chooses a project with high upside but high default risk. Why is the lender worried?",
-      "options": [
-        "The borrower captures much of the upside while shifting much of the downside to the lender",
-        "The borrower is signaling high quality because risky projects always reveal confidence",
-        "The lender has eliminated moral hazard by issuing the loan at the start",
-        "The project creates no incentive conflict because both parties prefer high returns"
-      ],
-      "tag": "lending",
-      "type": "trap",
-      "objective": "LO20.5",
-      "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
-      "primarySkill": "borrower_incentives_and_lender_risk",
-      "secondarySkills": [],
-      "repairSkill": "borrower_incentives_and_lender_risk",
-      "commonError": "assumes_borrowers_and_lenders_share_the_same_risk_incentives_after_funding",
-      "feedback": "Weak borrower skin in the game creates moral hazard because the borrower may take risks the lender would not want.",
-      "aHash": "14568df1b03bd7e636affc60e1a0df46b4758cdf03c9f08803003180d01bbb67"
-    },
-    {
-      "id": 7011,
-      "sourceGame": "agencyProtocol",
-      "q": "A remote worker is productive when tasks are visible but slows down when effort is hard to observe. The firm responds with output targets and random audits. What is the best explanation?",
-      "options": [
-        "This is shirking, a hidden-action problem controlled through measurement and monitoring",
-        "This is adverse selection because the worker's effort changed after being hired",
-        "This is signaling because the worker reveals high productivity only when watched",
-        "This is bonding because the firm accepts limits on its own behavior to reassure the worker"
-      ],
-      "tag": "shirking",
-      "type": "integration",
-      "objective": "LO20.4",
-      "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
-      "primarySkill": "shirking_and_effort_incentives",
-      "secondarySkills": [],
-      "repairSkill": "shirking_and_effort_incentives",
-      "commonError": "ignores_hidden_effort_and_free_riding_in_team_or_employee_settings",
-      "feedback": "Shirking is a hidden-action problem. The worker changes effort when effort is hard to observe.",
-      "aHash": "a7e29f3ab7df8cc4c4761c2e92c7db6f8d3a9e04a209274402b2cc130cf033e3"
+      "feedback": "Evidence about entrants and evidence about later actions identify different margins. Better selection does not establish that project choice is controlled.",
+      "aHash": "c9afa9064a5b4905698393349b554842fd03cd5c994352b54c470b47c90f48bd"
     },
     {
       "id": 7012,
       "sourceGame": "agencyProtocol",
-      "q": "A firm pays warehouse workers by the number of boxes scanned. Workers scan faster, but errors and customer complaints rise. What is the deeper agency lesson?",
+      "q": "A warehouse pays per scan. Rescanning the same box raises measured output without increasing shipments; rushing also raises errors. Which paired change targets both gaming margins?",
       "options": [
-        "The metric reduced shirking on speed but encouraged gaming because unmeasured quality was sacrificed",
-        "The metric solved the agency problem because measured output increased",
-        "The problem is adverse selection because workers revealed low ability before being hired",
-        "The firm should remove monitoring because performance pay already aligns all incentives"
+        "Count unique verified shipments and include independently checked error costs",
+        "Count every scan but raise the piece rate",
+        "Audit only worker arrival time and retain scan-count pay",
+        "Reward error-free scans only, even if the same item is counted repeatedly"
       ],
       "tag": "gaming",
-      "type": "multi-step",
+      "type": "integration",
       "objective": "LO21.5",
       "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
+      "conceptCluster": "elite_agencyProtocol_gaming",
       "primarySkill": "gaming",
       "secondarySkills": [],
       "repairSkill": "gaming",
-      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "The incentive improved the measured task but damaged unmeasured quality. Agents respond to what is rewarded, not necessarily to the principal's full objective.",
-      "aHash": "3977008cb8c2cf9f83cfbce8c3650675f7c7a8ad1da2c9fe7bca43f1fc409db7"
+      "commonError": "ignores_control_tradeoffs_or_omitted_consequences",
+      "feedback": "Unique shipment IDs address duplicate counting; error verification addresses sacrificed quality. Correcting only one leaves the other profitable.",
+      "aHash": "6f9a5e50707dd217d3ae0ed2ee1e538acd253158547b762b5b3d6afd1bc68317"
     },
     {
       "id": 7013,
       "sourceGame": "agencyProtocol",
-      "q": "A company monitors employees constantly. Effort rises, but monitoring costs become very high and morale falls. What does this show?",
+      "q": "A firm can add a broad audit costing $24,000 that prevents $31,000 of misconduct loss but creates $10,000 of delay. A targeted audit costs $12,000, prevents $25,000 of loss, and creates $3,000 of delay. Which choice has the higher net benefit relative to no added audit?",
       "options": [
-        "Controlling agency problems has costs and tradeoffs",
-        "Monitoring eliminates residual loss as long as effort increases",
-        "Monitoring is always efficient because hidden action is always costly",
-        "Agency costs disappear when the principal observes more behavior"
+        "Broad audit: +$7,000 versus +$13,000, because it prevents more total loss",
+        "Targeted audit: +$10,000 versus -$3,000 for broad auditing",
+        "Broad audit: +$31,000 versus +$25,000, since delay is not misconduct",
+        "Neither audit: all monitoring expenditure is an agency loss with no benefit"
       ],
       "tag": "agency_costs",
       "type": "integration",
       "objective": "LO21.3",
       "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
+      "conceptCluster": "elite_agencyProtocol_agency_costs_and_alignment",
       "primarySkill": "agency_costs_and_alignment",
       "secondarySkills": [],
       "repairSkill": "agency_costs_and_alignment",
       "commonError": "treats_monitoring_costs_as_the_only_agency_cost",
-      "feedback": "Monitoring can reduce hidden action, but it is not free. Agency control requires balancing costs and benefits.",
-      "aHash": "b60a5b766fb96ba5e7dd638085ebb81cc995b15e9d5309622e09ff6855aa24e4"
-    },
-    {
-      "id": 7014,
-      "sourceGame": "agencyProtocol",
-      "q": "A shareholder wants long-run firm value. A manager wants perks, prestige, and a larger staff. The manager also knows more about daily operations. What creates the principal-agent problem?",
-      "options": [
-        "Delegation, incentive conflict, and information asymmetry",
-        "A lack of any decision authority by the manager",
-        "A seller reputation system before purchase",
-        "A transfer price between two unrelated firms"
-      ],
-      "tag": "principal_agent",
-      "type": "definition",
-      "objective": "LO21.1",
-      "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
-      "primarySkill": "principal_agent_conflict",
-      "secondarySkills": [],
-      "repairSkill": "principal_agent_conflict",
-      "commonError": "assumes_principal_and_agent_objectives_are_automatically_aligned",
-      "feedback": "Agency problems arise when an agent acts for a principal but has different incentives and better information.",
-      "aHash": "49a3f64388ac269b05acf29a50a70e5b722b7a1ba5a50f18fa13c8a37f60a30c"
-    },
-    {
-      "id": 7015,
-      "sourceGame": "agencyProtocol",
-      "q": "A nonprofit rewards local directors for number of people served. Directors start counting quick, low-impact contacts instead of harder cases. What is happening?",
-      "options": [
-        "Agents are gaming the measured target while missing the organization's real goal",
-        "The directors are signaling high quality by choosing easier cases",
-        "The nonprofit has eliminated residual loss because the measured number increased",
-        "The directors are solving adverse selection because client type is now observable"
-      ],
-      "tag": "gaming",
-      "type": "integration",
-      "objective": "LO21.5",
-      "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
-      "primarySkill": "gaming",
-      "secondarySkills": [],
-      "repairSkill": "gaming",
-      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "The metric is easy to measure, but it does not fully capture the true mission.",
-      "aHash": "9ba9bc86d98fe9eb8ddc2f3adfa5e7e61229f06cc278d8e048d10b971030f425"
-    },
-    {
-      "id": 7016,
-      "sourceGame": "agencyProtocol",
-      "q": "A repair company pays technicians per completed job. Repairs become faster, but callbacks rise because quality falls. What should management conclude?",
-      "options": [
-        "The incentive system needs a quality measure or penalty, not just a speed measure",
-        "The firm should reward only speed because output rose",
-        "The problem is adverse selection by customers before repairs",
-        "The firm has no agency problem because workers are productive"
-      ],
-      "tag": "incentives",
-      "type": "multi-step",
-      "objective": "LO21.6",
-      "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
-      "primarySkill": "incentives",
-      "secondarySkills": [],
-      "repairSkill": "incentives",
-      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "Good incentive design must anticipate how agents can game the metric.",
-      "aHash": "e71dfecd83d920e571b06625cf33b426633161a48d4b32c919003064256c13b7"
-    },
-    {
-      "id": 7017,
-      "sourceGame": "agencyProtocol",
-      "q": "A manager accepts restrictions on personal spending authority and agrees to audited reports to reassure owners. What agency-control concept is this closest to?",
-      "options": [
-        "Bonding by the agent",
-        "Monitoring by customers",
-        "Residual loss by the principal",
-        "Screening by the manager after hiring"
-      ],
-      "tag": "agency_costs",
-      "type": "trap",
-      "objective": "LO21.3",
-      "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
-      "primarySkill": "agency_costs_and_alignment",
-      "secondarySkills": [],
-      "repairSkill": "agency_costs_and_alignment",
-      "commonError": "treats_monitoring_costs_as_the_only_agency_cost",
-      "feedback": "Bonding occurs when the agent accepts constraints or commitments to reduce the principal's risk.",
-      "aHash": "d5856c9733d41c99abdea6d68f10f57be7779459bf45a760ce0653a463aa9248"
-    },
-    {
-      "id": 7018,
-      "sourceGame": "agencyProtocol",
-      "q": "After monitoring and incentive pay, some manager decisions still fail to maximize owner value. What is the remaining agency cost called?",
-      "options": [
-        "Residual loss",
-        "Screening gain",
-        "Bonding surplus",
-        "Monitoring recovery"
-      ],
-      "tag": "agency_costs",
-      "type": "definition",
-      "objective": "LO21.3",
-      "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
-      "primarySkill": "agency_costs_and_alignment",
-      "secondarySkills": [],
-      "repairSkill": "agency_costs_and_alignment",
-      "commonError": "treats_monitoring_costs_as_the_only_agency_cost",
-      "feedback": "Residual loss is the remaining value lost because the agent's choices are still not perfectly aligned with the principal's interests.",
-      "aHash": "958d7da9729a604154ced5e5894a03ccec8d8591897bdfe230cee05bb70398ec"
-    },
-    {
-      "id": 7019,
-      "sourceGame": "agencyProtocol",
-      "q": "Headquarters has strong company-wide information, but local managers understand customer conditions better. The firm must decide who gets pricing authority. What is the core tradeoff?",
-      "options": [
-        "Centralized control and coordination versus decentralized use of local information",
-        "Adverse selection before hiring versus moral hazard after hiring",
-        "Insurance pooling versus expected loss",
-        "Cost-center accounting versus public-good underprovision"
-      ],
-      "tag": "organization",
-      "type": "integration",
-      "objective": "LO21.4",
-      "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
-      "primarySkill": "organization",
-      "secondarySkills": [],
-      "repairSkill": "organization",
-      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "Centralization improves control and coordination; decentralization makes better use of local knowledge.",
-      "aHash": "429a76d325a11fce68dd782bcb79bc43e34df028ec71821f4f0bcd06b849b6e3"
+      "feedback": "Net benefits are 25-12-3=10 and 31-24-10=-3 thousand. Monitoring should be judged by all incremental consequences, including delay.",
+      "aHash": "f457b5589f9d65e0389ef7e4d36fb38be3b4f50e13b45912cbff1f1e7a640d24"
     },
     {
       "id": 7020,
       "sourceGame": "agencyProtocol",
-      "q": "A restaurant chain decentralizes menu decisions to local managers, but each manager chooses items that complicate purchasing and reduce company-wide scale economies. What is the problem?",
+      "q": "Local menu changes create 75 in customer value and 30 in added ingredient costs, but impose 55 in chain-wide purchasing losses. A common menu avoids those effects. What should headquarters infer?",
       "options": [
-        "Decentralization uses local knowledge but can create coordination and scale costs",
-        "Centralization always destroys local information and should never be used",
-        "The firm has solved all incentive problems because local managers know customers",
-        "The issue is adverse selection because customers cannot observe menu quality before purchase"
+        "The local changes lose 10 overall; local knowledge alone does not justify unrestricted menu authority",
+        "The local changes gain 45 because purchasing losses belong to another unit",
+        "The local changes gain 75 because customer fit dominates coordination",
+        "The common menu is always best even if the purchasing loss disappears"
       ],
       "tag": "organization",
-      "type": "trap",
+      "type": "integration",
       "objective": "LO21.4",
       "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
+      "conceptCluster": "elite_agencyProtocol_organization",
       "primarySkill": "organization",
       "secondarySkills": [],
       "repairSkill": "organization",
-      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "Decentralization can improve local fit while weakening coordination across the company.",
-      "aHash": "f06831a94587c559184ca8a5fcbe21de5cda1c0b2eebdff49d9c5103f9b5dbfa"
+      "commonError": "ignores_control_tradeoffs_or_omitted_consequences",
+      "feedback": "Net effect is 75-30-55=-10. With a smaller coordination cost the conclusion could reverse, so the result is conditional rather than a blanket centralization rule.",
+      "aHash": "76deac87c21091ec63d9ca4ae1fdd8ccc27a20be49b9d08fad8a598b89d2588e"
     },
     {
       "id": 7021,
       "sourceGame": "agencyProtocol",
-      "q": "A firm centralizes discount approval because sales managers use deep discounts to hit revenue targets while lowering profit. Why does centralization help?",
+      "q": "Headquarters centralizes discount approval after revenue bonuses cause unprofitable sales. Profit improves, but response delays lose some high-margin customers. Which next comparison is most useful?",
       "options": [
-        "It limits local decisions that improve a metric while damaging total firm profit",
-        "It gives local managers more freedom to chase revenue",
-        "It eliminates the need to measure profit because headquarters now decides everything",
-        "It turns every sales manager into a profit center with perfectly aligned incentives"
+        "Restore revenue-only rewards because any delay proves delegation is superior",
+        "Compare central approval with delegated margin-based pay and targeted audits, including both delay and control costs",
+        "Keep full centralization because higher profit proves no better design exists",
+        "Stop measuring margin because measurement caused the original problem"
       ],
       "tag": "organization",
-      "type": "multi-step",
+      "type": "integration",
       "objective": "LO21.4",
       "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
+      "conceptCluster": "elite_agencyProtocol_organization",
       "primarySkill": "organization",
       "secondarySkills": [],
       "repairSkill": "organization",
-      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "Centralization can control local incentive problems when decentralized decisions harm the overall objective.",
-      "aHash": "2ddda647e5d2e65e6560351d502c08d811f0988a6416f1b38f6ccc6847a52ea9"
-    },
-    {
-      "id": 7022,
-      "sourceGame": "agencyProtocol",
-      "q": "A company decentralizes service recovery decisions because front-line managers know the local customer context better than headquarters. What condition supports decentralization?",
-      "options": [
-        "Local information is valuable and timely decisions matter",
-        "Headquarters has perfect information about every customer",
-        "Incentives cannot be gamed when decisions are local",
-        "Coordination costs are always zero after decentralization"
-      ],
-      "tag": "organization",
-      "type": "interpretation",
-      "objective": "LO21.4",
-      "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
-      "primarySkill": "organization",
-      "secondarySkills": [],
-      "repairSkill": "organization",
-      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "Decentralization works best when local information is important and the firm can still manage incentives.",
-      "aHash": "ddbcc153af69af216f5747fab1c4c561af81a9635f54bf562eba7f0a9653c167"
+      "commonError": "ignores_control_tradeoffs_or_omitted_consequences",
+      "feedback": "The observed improvement establishes a gain over the old design, not optimality. A hybrid may retain local speed while addressing the original metric distortion.",
+      "aHash": "164a6816ff6d1b7410b51aeddc40c60ce126ca1d3d8a5a56120ff253befc42b8"
     },
     {
       "id": 7023,
       "sourceGame": "agencyProtocol",
-      "q": "Division A can sell a component externally for $50. Division B wants the component internally. If headquarters sets a transfer price of $30, what concern might Division A have?",
+      "q": "Division A can sell every unit externally for $74, with $41 production cost and $6 external selling expense. Internal transfer avoids that selling expense. Division B can buy the same item outside for $72. With no other effects, what internal-price interval leaves both divisions strictly better off?",
       "options": [
-        "Division A may resist because the internal sale makes its own reported profit look worse",
-        "Division B will always reject the component because the internal price is below the outside price",
-        "The parent company cannot care about total firm profit once divisions are measured separately",
-        "Transfer prices affect accounting records but cannot affect manager incentives"
+        "Exactly $68; every other price destroys total firm value",
+        "More than $41 and less than $72",
+        "More than $74 and less than $72, so no trade is possible",
+        "More than $68 and less than $72"
       ],
       "tag": "transfer_pricing",
       "type": "integration",
       "objective": "LO22.2",
       "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
+      "conceptCluster": "elite_agencyProtocol_transfer_pricing_internal_trade",
       "primarySkill": "transfer_pricing_internal_trade",
       "secondarySkills": [],
       "repairSkill": "transfer_pricing_internal_trade",
       "commonError": "sets_transfer_price_from_division_politics_instead_of_opportunity_cost_and_total_firm_value",
-      "feedback": "Transfer prices affect reported division profit, so division managers may resist trades that help the whole firm.",
-      "aHash": "bd35b1e4c7484a78f621bb479b9faa84d259424e8dd4ec45b09d470e720c1e0d"
+      "feedback": "A sacrifices net external revenue of 74-6=68 per unit. B avoids 72. Internal trade creates 4 of firm value, and a price strictly between 68 and 72 shares it.",
+      "aHash": "d15e84bcd10677d29301c66a8aee15945d2af036254406debf3069b7be7be6e0"
     },
     {
       "id": 7024,
       "sourceGame": "agencyProtocol",
-      "q": "Division A has idle capacity and can produce an internal component at marginal cost of $20. There is no outside sale being sacrificed. What transfer price is most likely to encourage efficient internal trade?",
+      "q": "An internal supplier has idle capacity and MC $20. The buyer can buy outside for $33. An internal order also requires a one-time $800 setup for 100 units. Which sourcing decision is correct?",
       "options": [
-        "A price close to marginal cost",
-        "A price far above the external market price",
-        "A price designed only to maximize Division A's reported profit",
-        "No transfer price because internal trades have no cost"
-      ],
-      "tag": "transfer_pricing",
-      "type": "multi-step",
-      "objective": "LO22.2",
-      "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
-      "primarySkill": "transfer_pricing_internal_trade",
-      "secondarySkills": [],
-      "repairSkill": "transfer_pricing_internal_trade",
-      "commonError": "sets_transfer_price_from_division_politics_instead_of_opportunity_cost_and_total_firm_value",
-      "feedback": "When there is idle capacity and no opportunity cost, marginal cost is a good guide for an efficient transfer price.",
-      "aHash": "8a899f7d77c36ced22abf0703e20d181a8d60209c47f9342d339baa40655ec1c"
-    },
-    {
-      "id": 7025,
-      "sourceGame": "agencyProtocol",
-      "q": "The parent company forces Division A to accept a transfer price that hurts Division A's score but raises total company profit. What principle is headquarters applying?",
-      "options": [
-        "The parent company should maximize total firm profit, not each division's separate score",
-        "Each division should always maximize its own profit even if the company loses",
-        "Cost centers should set all internal prices above average cost",
-        "Budget games should be rewarded when they raise local reported profit"
-      ],
-      "tag": "parent_company",
-      "type": "trap",
-      "objective": "LO22.1",
-      "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
-      "primarySkill": "parent_company",
-      "secondarySkills": [],
-      "repairSkill": "parent_company",
-      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "The parent company's concern is total firm value. Division-level metrics can conflict with that goal.",
-      "aHash": "b2f8db7ab99acfa77b6879ea704d3c1eb7568ec17a98a15e9488bcc495209a0e"
-    },
-    {
-      "id": 7026,
-      "sourceGame": "agencyProtocol",
-      "q": "A division manager rejects an internal transfer because accepting it lowers the division's measured profit, even though the transfer raises total firm profit. What is the best diagnosis?",
-      "options": [
-        "A transfer pricing and incentive-alignment problem",
-        "A seller reputation problem caused by hidden product quality before purchase",
-        "A pure screening solution because the manager revealed their type before employment",
-        "A health-insurance moral hazard problem caused by overuse after coverage begins"
+        "Buy internally: $1,300 gross savings minus $800 setup leaves $500",
+        "Buy internally for a $1,300 gain because setup is fixed",
+        "Buy outside because any setup cost rules out marginal-cost pricing",
+        "Be indifferent because an internal price only transfers profit"
       ],
       "tag": "transfer_pricing",
       "type": "integration",
       "objective": "LO22.2",
       "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
+      "conceptCluster": "elite_agencyProtocol_transfer_pricing_internal_trade",
       "primarySkill": "transfer_pricing_internal_trade",
       "secondarySkills": [],
       "repairSkill": "transfer_pricing_internal_trade",
-      "commonError": "sets_transfer_price_from_division_politics_instead_of_opportunity_cost_and_total_firm_value",
-      "feedback": "The internal price and performance metric make the manager's local incentive conflict with total firm value.",
-      "aHash": "d47b14c489de94aaf16bdf728a9cf57e96f0a8e67f103dcf116a81b84bba225b"
-    },
-    {
-      "id": 7027,
-      "sourceGame": "agencyProtocol",
-      "q": "A support department is evaluated only on keeping costs low. It cuts training and response quality, making other divisions less productive. What is the issue?",
-      "options": [
-        "Cost-center metrics can encourage cost cutting that reduces overall value",
-        "Cost centers always maximize total firm profit because lower cost is always better",
-        "The department is signaling high quality by spending less",
-        "The issue is adverse selection before employment because workers dislike training"
-      ],
-      "tag": "cost_center",
-      "type": "trap",
-      "objective": "LO22.3",
-      "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
-      "primarySkill": "cost_center_evaluation",
-      "secondarySkills": [],
-      "repairSkill": "cost_center_evaluation",
-      "commonError": "equates_cost_reduction_with_value_creation",
-      "feedback": "A cost center can look good by cutting costs even when those cuts damage the rest of the firm.",
-      "aHash": "24b5866f87b60c00eb82b837c89d65552b2e782a1c20b3da988bba900c1fd175"
-    },
-    {
-      "id": 7028,
-      "sourceGame": "agencyProtocol",
-      "q": "A product division controls its own revenue decisions and cost decisions and is evaluated on profit. What kind of unit is it?",
-      "options": [
-        "Profit center",
-        "Cost center",
-        "Screening center",
-        "Bonding center"
-      ],
-      "tag": "profit_center",
-      "type": "definition",
-      "objective": "LO22.3",
-      "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
-      "primarySkill": "profit_center_evaluation",
-      "secondarySkills": [],
-      "repairSkill": "profit_center_evaluation",
-      "commonError": "assumes_local_profit_center_success_always_improves_total_firm_profit",
-      "feedback": "A profit center is evaluated on profit, which depends on both revenues and costs.",
-      "aHash": "dfd57101f2a54b4af13825a383f92362f3f5b47c1bb66f32c1e6b221a2301dc8"
+      "commonError": "ignores_control_tradeoffs_or_omitted_consequences",
+      "feedback": "Internal production uses 2,000+800=2,800 of resources versus 3,300 outside. Transfer prices are internal, but production and avoidable setup costs are real.",
+      "aHash": "e2ecdede24f19915b11afe2fa8b64be98de458838d3ff1850c477210de095ec6"
     },
     {
       "id": 7029,
       "sourceGame": "agencyProtocol",
-      "q": "A cost center and a profit center both respond to incentives. What is the danger if the performance measure is incomplete?",
+      "q": "A unit controls purchasing cost but cannot choose product prices. It is assigned a profit target, and a headquarters price cut reduces its reported profit despite improved purchasing. Which evaluation change follows controllability without ignoring service quality?",
       "options": [
-        "Managers may improve the measured score while hurting the organization's real goal",
-        "Managers will automatically maximize total firm profit if any metric is used",
-        "Incentives eliminate all residual loss once a unit is classified correctly",
-        "The unit will stop needing coordination because measurement replaces management"
+        "Reward reported profit alone because every unit can control all profit components",
+        "Evaluate controllable cost and service outcomes, separating headquarters price effects",
+        "Evaluate cost alone, even when service cuts harm other divisions",
+        "Remove all performance measures because one input is uncontrollable"
       ],
       "tag": "incentives",
       "type": "integration",
       "objective": "LO22.3",
       "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
+      "conceptCluster": "elite_agencyProtocol_incentives",
       "primarySkill": "incentives",
       "secondarySkills": [],
       "repairSkill": "incentives",
-      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "Whether a unit is a cost center or profit center, the chosen metric shapes behavior.",
-      "aHash": "8c86eb74b4df85a1d1826e11bae605a2cb91388aec04255b0d937e0d7e34b79b"
+      "commonError": "ignores_control_tradeoffs_or_omitted_consequences",
+      "feedback": "The unit should face consequences for decisions it can influence. Service outcomes prevent a narrow cost target from sacrificing the value it supports.",
+      "aHash": "fcfb316d735623ff3d2ed438b4724be607c963c1792b53ab0966ef1f09eaa3d8"
     },
     {
       "id": 7030,
       "sourceGame": "agencyProtocol",
-      "q": "A company organizes by function: marketing, finance, operations, and human resources. Marketing launches a promotion without checking whether operations can handle demand. What problem does this reveal?",
+      "q": "Marketing can promise customized delivery that adds 48 contribution. Operations incurs 19 extra handling cost and delays another order with 34 contribution. Marketing does not see those costs. What coordinated decision is justified?",
       "options": [
-        "Functional specialization can create coordination problems across departments",
-        "Functional units prevent specialization because experts are separated by task",
-        "The firm has no need for cross-department communication if each function is strong",
-        "The issue is moral hazard in lending because customers used too much credit"
+        "Accept for a 29 gain because displaced contribution is not a handling invoice",
+        "Accept: marketing's 48 contribution is positive",
+        "Decline or redesign the promise: its total incremental effect is -5",
+        "Decline every customized order because functional specialization prevents coordination"
       ],
       "tag": "coordination",
       "type": "integration",
       "objective": "LO22.5",
       "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
+      "conceptCluster": "elite_agencyProtocol_cross_functional_coordination",
       "primarySkill": "cross_functional_coordination",
       "secondarySkills": [],
       "repairSkill": "cross_functional_coordination",
-      "commonError": "treats_divisions_as_independent_when_outputs_are_interdependent",
-      "feedback": "Functional units create specialization, but departments can become silos if coordination is weak.",
-      "aHash": "cc88532b8aca1e35c62f312ade7ee4d7e54f63e165ce98cdde2d45eeee6d2727"
+      "commonError": "ignores_control_tradeoffs_or_omitted_consequences",
+      "feedback": "The net effect is 48-19-34=-5. Shared information about handling and displaced work can change a locally attractive decision.",
+      "aHash": "8bcc471e5651fc715a7f3d8a463248a9f49c68cee22bdc381f2962223763f8d4"
     },
     {
       "id": 7031,
       "sourceGame": "agencyProtocol",
-      "q": "A functional structure groups similar experts together. A multidivisional structure groups around products or regions. Which statement is strongest?",
+      "q": "A growing firm compares structures. Keeping functional units and adding launch teams costs $90,000 and recovers $150,000 of coordination losses. Moving to product divisions recovers $230,000 but adds $140,000 duplicate support and $45,000 headquarters oversight. Other effects are equal. Which choice is supported?",
       "options": [
-        "Functional structure improves specialization; multidivisional structure improves accountability for business-unit performance",
-        "Functional structure eliminates all coordination problems; multidivisional structure eliminates all transfer pricing problems",
-        "Both structures are identical except for names",
-        "Multidivisional structure prevents managers from being evaluated"
+        "Keep the current structure: coordination gains are not revenue and cannot count",
+        "Product divisions: $230,000 exceeds $150,000 before costs",
+        "Product divisions: clearer accountability makes duplicate support irrelevant",
+        "Functional units plus teams: $60,000 net versus $45,000 for divisions"
       ],
       "tag": "multidivisional",
       "type": "integration",
       "objective": "LO22.6",
       "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
+      "conceptCluster": "elite_agencyProtocol_multidivisional_accountability",
       "primarySkill": "multidivisional_accountability",
       "secondarySkills": [],
       "repairSkill": "multidivisional_accountability",
       "commonError": "assumes_divisional_accountability_eliminates_coordination_and_agency_problems",
-      "feedback": "Functional structures emphasize specialization. Multidivisional structures often give clearer responsibility to product, region, or business units.",
-      "aHash": "62e7a44609c7a06c3931db34aab6191fd6c699455b24f1625a6596d33512d34d"
+      "feedback": "Functional teams net 150-90=60 thousand. Divisions net 230-140-45=45 thousand. Organizational labels alone do not rank the alternatives.",
+      "aHash": "fd6970cc581ee0997e1425c2730aff2ddecdac62970e26d734746d5c3b7ee85d"
     },
     {
-      "id": 7032,
+      "id": 9004,
       "sourceGame": "agencyProtocol",
-      "q": "A company grows from one product line to many unrelated business lines. Headquarters wants each major business to have clearer responsibility for results. What structure is most likely useful?",
+      "q": "A firm has 80 capable and 20 weak applicants. A work-sample test passes 90% of capable applicants and 40% of weak applicants. Use expected counts. What share of passing applicants is weak, and what does the test establish about later effort?",
       "options": [
-        "A multidivisional structure",
-        "A pure functional structure only",
-        "A seller-review system",
-        "A deductible-based insurance structure"
+        "10% are weak; screening improves selection but does not ensure post-hire effort",
+        "20% are weak; the test changes neither selection nor incentives",
+        "40% are weak; the pass rate among weak applicants is the share among all passes",
+        "0% are weak; a test eliminates both hidden type and hidden action"
       ],
-      "tag": "multidivisional",
-      "type": "interpretation",
-      "objective": "LO22.6",
-      "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
-      "primarySkill": "multidivisional_accountability",
-      "secondarySkills": [],
-      "repairSkill": "multidivisional_accountability",
-      "commonError": "assumes_divisional_accountability_eliminates_coordination_and_agency_problems",
-      "feedback": "A multidivisional structure works well when a firm needs separate responsibility across products, regions, or businesses.",
-      "aHash": "418c5f6b768f59ca9d576079eece48f247e374e0a3ff3c34fc5fa5e5e6413bf7"
-    },
-    {
-      "id": 7033,
-      "sourceGame": "agencyProtocol",
-      "q": "A division manager understates expected revenue and overstates expected costs so next year's target will be easier to beat. What is this?",
-      "options": [
-        "Budget slack created through budget gaming",
-        "A credible signal of high ability",
-        "A solution to adverse selection",
-        "A marginal-cost transfer price"
-      ],
-      "tag": "budget_games",
-      "type": "interpretation",
-      "objective": "LO22.7",
-      "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
-      "primarySkill": "budget_slack_and_target_manipulation",
-      "secondarySkills": [],
-      "repairSkill": "budget_slack_and_target_manipulation",
-      "commonError": "mistakes_budget_compliance_for_honest_forecasting_or_value_creation",
-      "feedback": "The manager pads the budget or sandbags the forecast to make future performance look better.",
-      "aHash": "e167177f151c55acef56a3d379d74844e6cdcc883c79132a1d88470bc83bed86"
-    },
-    {
-      "id": 7034,
-      "sourceGame": "agencyProtocol",
-      "q": "A department spends unnecessary money at the end of the year because unspent funds may reduce next year's allocation. What is the incentive problem?",
-      "options": [
-        "The budget rule rewards wasteful spending to protect future resources",
-        "The department is maximizing total firm profit by spending its full budget",
-        "The department is reducing adverse selection by signaling that it needs resources",
-        "The department is solving moral hazard because spending is observable"
-      ],
-      "tag": "budget_games",
-      "type": "trap",
-      "objective": "LO22.7",
-      "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
-      "primarySkill": "budget_slack_and_target_manipulation",
-      "secondarySkills": [],
-      "repairSkill": "budget_slack_and_target_manipulation",
-      "commonError": "mistakes_budget_compliance_for_honest_forecasting_or_value_creation",
-      "feedback": "Use-it-or-lose-it budgeting can encourage wasteful spending even when the department does not need the resources.",
-      "aHash": "91086a0ac2851bac786431d470c5f653bc952bcc2701a2d16ed03331d1ec6645"
-    },
-    {
-      "id": 7035,
-      "sourceGame": "agencyProtocol",
-      "q": "A company notices three problems: sales agents bring in bad customers to earn signup bonuses, managers delay maintenance to boost short-term profit, and divisions reject internal trades that would help the firm overall. What is the common thread?",
-      "options": [
-        "Agents are responding to incentives that conflict with the principal's broader objective",
-        "The company has only adverse selection and no moral hazard",
-        "The problems can all be solved by eliminating transfer prices",
-        "The company should ignore performance metrics completely"
-      ],
-      "tag": "principal_agent",
+      "tag": "screening",
       "type": "integration",
-      "objective": "LO21.6",
+      "objective": "LO19.3",
       "difficulty": "elite",
-      "conceptCluster": "elite_agency_protocol",
-      "primarySkill": "principal_agent_conflict",
+      "conceptCluster": "elite_agencyProtocol_screening_hidden_type",
+      "primarySkill": "screening_hidden_type",
       "secondarySkills": [],
-      "repairSkill": "principal_agent_conflict",
-      "commonError": "assumes_principal_and_agent_objectives_are_automatically_aligned",
-      "feedback": "Each case shows an agent responding to a local incentive in a way that harms the principal's broader goal.",
-      "aHash": "61fc96af6812d17e3cce8473ed163e7db154a3fa41f96b3e2fc0b89653f0ba83"
+      "repairSkill": "screening_hidden_type",
+      "commonError": "confuses_type_composition_with_behavior_or_signal_incentives",
+      "feedback": "Expected passes are 72 capable and 8 weak, so 8/80=10% are weak. Better selection does not remove the need for post-hire effort controls.",
+      "aHash": "0d020f09ad73e46a7b931cc5666f92a9b144a09ccaa73c5d0ac2a95ce5080d25"
+    },
+    {
+      "id": 9031,
+      "sourceGame": "agencyProtocol",
+      "q": "A commercial insurer expects 60 low-risk clients with annual expected losses of $24 each and 40 high-risk clients with losses of $96 each. It sets a $60 premium with no administration cost. Low-risk clients will pay at most $50 and leave; high-risk clients remain. Behavior does not change after coverage. Which conclusion follows?",
+      "options": [
+        "All clients remain because the premium is below the high-risk group's expected loss",
+        "The insurer retains its initial expected $7.20 margin because the premium exceeds pooled expected loss",
+        "Moral hazard raises each client's expected loss from $24 to $96 after coverage",
+        "The initial $52.80 pooled expected loss rises to $96 among enrollees, producing an expected $36 loss per policy"
+      ],
+      "tag": "adverse_selection",
+      "type": "integration",
+      "objective": "LO19.2",
+      "difficulty": "elite",
+      "conceptCluster": "elite_agencyProtocol_hidden_information_before_contract",
+      "primarySkill": "hidden_information_before_contract",
+      "secondarySkills": [],
+      "repairSkill": "hidden_information_before_contract",
+      "commonError": "confuses_type_composition_with_behavior_or_signal_incentives",
+      "feedback": "The forecast mixed-pool loss is .6×24+.4×96=52.8. Once low-risk clients leave, expected claims are 96 versus premium 60. Composition changed; individual behavior did not.",
+      "aHash": "3707658ca173a4b4de2cdd535fd1bf087b7e1adbefc08fb421a94f044636a033"
     }
   ],
   "legendary": [
     {
       "id": 9000,
       "sourceGame": "agencyProtocol",
-      "q": "A generous insurance policy attracts high-risk buyers, and after purchase some buyers also take fewer precautions. What is the correct diagnosis?",
+      "q": "An insurer has two findings: new subscribers had high accident rates before joining; among continuing subscribers, precautions fall only after deductibles are removed. Reinstating deductibles restores precautions but high-risk entry continues. What remaining policy need follows?",
       "options": [
-        "Adverse selection explains who enters before the contract; moral hazard explains behavior after coverage begins",
-        "Both problems are adverse selection because all insurance problems happen before purchase",
-        "Both problems are moral hazard because all insurance problems happen after purchase",
-        "Neither problem matters if the insurer raises premiums for everyone"
+        "Separate selection controls are still needed; restored care does not repair entry composition",
+        "The deductible has solved both problems because continuing customers behave better",
+        "Only moral hazard ever existed because both observations involve accidents",
+        "Only adverse selection exists because all insured people had risk before purchase"
       ],
       "tag": "moral_hazard",
       "type": "integration",
       "objective": "LO20.1",
       "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
+      "conceptCluster": "legendary_agencyProtocol_hidden_action_after_contract",
       "primarySkill": "hidden_action_after_contract",
       "secondarySkills": [],
       "repairSkill": "hidden_action_after_contract",
       "commonError": "confuses_post_contract_behavior_with_pre_contract_type_selection",
-      "feedback": "Legendary items often combine problems. Here the hidden-risk pool forms before the deal, while careless behavior appears after coverage begins.",
-      "aHash": "85e615840192bc0419bc7c468f5abb4b259014907cad0384eea9193621459553"
-    },
-    {
-      "id": 9001,
-      "sourceGame": "agencyProtocol",
-      "q": "An insurer uses medical exams, deductibles, and experience-rated premiums. Which pairing is strongest?",
-      "options": [
-        "Medical exams reduce adverse selection; deductibles and experience rating reduce moral hazard",
-        "Medical exams reduce moral hazard; deductibles reduce signaling; experience rating creates hidden type",
-        "All three tools only solve transfer pricing conflicts",
-        "All three tools eliminate the need for premiums"
-      ],
-      "tag": "insurance",
-      "type": "integration",
-      "objective": "LO19.1",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "risk_transfer_and_pooling",
-      "secondarySkills": [],
-      "repairSkill": "risk_transfer_and_pooling",
-      "commonError": "treats_insurance_as_eliminating_risk_instead_of_transferring_and_pooling_it",
-      "feedback": "Different tools attack different information problems. Exams sort types before the contract; deductibles and experience-rated prices affect behavior after it.",
-      "aHash": "f7091ae974994417f3e030e744c79f57fddd250ba64634cea2543ded641fb3f4"
-    },
-    {
-      "id": 9002,
-      "sourceGame": "agencyProtocol",
-      "q": "A platform sees new sellers with no track record, fake reviews, and low-quality products pooling with high-quality sellers. Which solution most directly attacks the hidden-quality problem?",
-      "options": [
-        "Verified reputation systems that make seller history credible before buyers purchase",
-        "A deductible paid by buyers after delivery",
-        "A transfer price between the platform and sellers",
-        "A budget target for the platform's support department"
-      ],
-      "tag": "reputation",
-      "type": "integration",
-      "objective": "LO19.5",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "reputation_systems_and_market_quality",
-      "secondarySkills": [],
-      "repairSkill": "reputation_systems_and_market_quality",
-      "commonError": "treats_reviews_as_perfect_information_instead_of_noisy_market_discipline",
-      "feedback": "Verified reputation reduces adverse selection by making hidden seller quality more visible before the transaction.",
-      "aHash": "85064c56b6ab41c27bd2af0dfa9e2d21835715227c048f546bce640314e4ca7a"
+      "feedback": "Preexisting risk among entrants supports selection; changed care among continuing members supports moral hazard. Evidence that a behavior remedy works does not establish an improved risk pool.",
+      "aHash": "326a39d4808357908d0702f02e228a150610815904958ec5ac0611a5b38161a5"
     },
     {
       "id": 9003,
       "sourceGame": "agencyProtocol",
-      "q": "A warranty is useful only if bad sellers find it costly to imitate. Why?",
+      "q": "A voluntary quality certificate earns a seller a $900 price premium. Verification costs a reliable seller $200 and an unreliable seller $1,200. A subsidy of $500 is then offered to every certified seller; buyers initially keep paying the premium. Which prediction follows?",
       "options": [
-        "A signal works when it separates high-quality sellers from low-quality sellers",
-        "A signal works only when every seller can copy it cheaply",
-        "A signal is the same thing as monitoring after the sale",
-        "A signal reduces moral hazard only by hiding quality from buyers"
+        "Certification was never a signal because verification had a fee",
+        "Certification remains separating because the two types still have different costs",
+        "The subsidy improves separation because every seller faces lower net cost",
+        "Certification initially separates types, but the subsidy makes imitation profitable for unreliable sellers and can erode the premium"
       ],
       "tag": "signaling",
-      "type": "trap",
+      "type": "integration",
       "objective": "LO19.4",
       "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
+      "conceptCluster": "legendary_agencyProtocol_credible_signaling_hidden_type",
       "primarySkill": "credible_signaling_hidden_type",
       "secondarySkills": [],
       "repairSkill": "credible_signaling_hidden_type",
       "commonError": "assumes_any_claim_is_a_credible_signal_without_costly_verification",
-      "feedback": "Credible signals separate types. If low-quality sellers can mimic the signal cheaply, the signal collapses.",
-      "aHash": "a9df03c7a0da3c7ab987efe04ec3777730adff1f5da02d83f92233c4f023bf40"
-    },
-    {
-      "id": 9004,
-      "sourceGame": "agencyProtocol",
-      "q": "A firm requires applicants to pass a costly technical test before hiring. Strong applicants pass; weak applicants often avoid applying. What is the most precise description?",
-      "options": [
-        "The firm is screening applicants by forcing hidden ability to reveal itself before hiring",
-        "Applicants are shirking because effort after hiring is hidden",
-        "The firm is setting a transfer price between departments",
-        "The applicants are creating residual loss after employment begins"
-      ],
-      "tag": "screening",
-      "type": "interpretation",
-      "objective": "LO19.3",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "screening_hidden_type",
-      "secondarySkills": [],
-      "repairSkill": "screening_hidden_type",
-      "commonError": "confuses_screening_by_the_less_informed_party_with_signaling_by_the_informed_party",
-      "feedback": "The test is imposed by the less-informed side before the transaction, so it is screening.",
-      "aHash": "7867718684691caa5606ad79e1c34adcaaf1de3a69944cdd4a31891120cfda89"
-    },
-    {
-      "id": 9005,
-      "sourceGame": "agencyProtocol",
-      "q": "A seller voluntarily buys an expensive certification that low-quality sellers rarely find worthwhile. What makes this a signal rather than screening?",
-      "options": [
-        "The informed seller chooses to reveal quality instead of the buyer imposing the test",
-        "The buyer forces every seller through the certification process",
-        "The certification changes seller effort after the sale",
-        "The certification is an internal transfer price"
-      ],
-      "tag": "signaling",
-      "type": "trap",
-      "objective": "LO19.4",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "credible_signaling_hidden_type",
-      "secondarySkills": [],
-      "repairSkill": "credible_signaling_hidden_type",
-      "commonError": "assumes_any_claim_is_a_credible_signal_without_costly_verification",
-      "feedback": "Signaling comes from the informed side. Screening comes from the uninformed side.",
-      "aHash": "05d9d373b8b38a9bce1fe8b28e337eb08da13c6de667a367c16da8076eaa1ce4"
-    },
-    {
-      "id": 9006,
-      "sourceGame": "agencyProtocol",
-      "q": "A health plan eliminates copays to improve access, but unnecessary visits rise sharply. What tradeoff is most likely?",
-      "options": [
-        "Lower out-of-pocket prices improve access but increase moral hazard from overuse",
-        "Lower out-of-pocket prices reduce moral hazard by making patients bear more cost",
-        "The policy solves adverse selection by hiding risk type",
-        "The policy creates transfer pricing conflict between divisions"
-      ],
-      "tag": "moral_hazard",
-      "type": "multi-step",
-      "objective": "LO20.2",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "hidden_action_after_contract",
-      "secondarySkills": [],
-      "repairSkill": "hidden_action_after_contract",
-      "commonError": "confuses_post_contract_behavior_with_pre_contract_type_selection",
-      "feedback": "When patients face little marginal cost, they may consume care whose value is below its full cost.",
-      "aHash": "8a9751961b55a59d07e0c3339f329612a3b3166a921fdbecbaa693064f7e4641"
-    },
-    {
-      "id": 9007,
-      "sourceGame": "agencyProtocol",
-      "q": "A lender requires collateral, monitors borrower behavior, and restricts how loan funds can be used. What common problem are these tools trying to reduce?",
-      "options": [
-        "Borrower moral hazard after the loan is made",
-        "Seller adverse selection in an online market",
-        "A cost-center manager cutting service quality",
-        "Functional silos inside a multidivisional firm"
-      ],
-      "tag": "lending",
-      "type": "integration",
-      "objective": "LO20.5",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "borrower_incentives_and_lender_risk",
-      "secondarySkills": [],
-      "repairSkill": "borrower_incentives_and_lender_risk",
-      "commonError": "assumes_borrowers_and_lenders_share_the_same_risk_incentives_after_funding",
-      "feedback": "Once the borrower has the funds, the lender worries about hidden actions and risk-taking. Collateral, monitoring, and covenants reduce that problem.",
-      "aHash": "1660cbc6bdb477396284e701635fa4bda4a96c48124378dc87d437b936c39706"
-    },
-    {
-      "id": 9008,
-      "sourceGame": "agencyProtocol",
-      "q": "A delivery company installs GPS tracking, but drivers respond by meeting location targets while rushing customer service. What happened?",
-      "options": [
-        "Monitoring reduced one hidden action but created a new incentive-gaming margin",
-        "Monitoring eliminated all agency costs permanently",
-        "The drivers are signaling hidden quality before employment",
-        "The company solved moral hazard without changing incentives"
-      ],
-      "tag": "monitoring",
-      "type": "integration",
-      "objective": "LO20.3",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "monitoring_and_incentive_control",
-      "secondarySkills": [],
-      "repairSkill": "monitoring_and_incentive_control",
-      "commonError": "assumes_monitoring_always_solves_incentive_problems_without_costs_or_distortion",
-      "feedback": "Monitoring helps, but incomplete metrics can be gamed. Agents respond to what is measured.",
-      "aHash": "7bcab4847792d6ac69e612553f7b68484e083b4738775863034f66dc44936679"
-    },
-    {
-      "id": 9009,
-      "sourceGame": "agencyProtocol",
-      "q": "An employee is paid by the hour, works remotely, and output is hard to observe. The firm adds milestone-based pay and random audits. What problem is being targeted?",
-      "options": [
-        "Shirking from hidden effort after employment begins",
-        "Adverse selection from hidden risk before insurance purchase",
-        "Transfer pricing between divisions",
-        "Budget slack created before annual planning"
-      ],
-      "tag": "shirking",
-      "type": "interpretation",
-      "objective": "LO20.4",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "shirking_and_effort_incentives",
-      "secondarySkills": [],
-      "repairSkill": "shirking_and_effort_incentives",
-      "commonError": "ignores_hidden_effort_and_free_riding_in_team_or_employee_settings",
-      "feedback": "Shirking is hidden effort after the relationship begins, so output measures and audits can reduce it.",
-      "aHash": "fe4d9acfdf4d864f34bd077831c12e34c8457019dbf514d7e45495c8ceb2b4d3"
-    },
-    {
-      "id": 9010,
-      "sourceGame": "agencyProtocol",
-      "q": "A sales agent receives a bonus for every customer signed, regardless of default risk. Sales rise, but bad accounts explode. What is the best diagnosis?",
-      "options": [
-        "The incentive metric rewards volume while ignoring customer quality, creating an agency problem",
-        "The agent solved adverse selection by bringing in more customers",
-        "The principal-agent problem disappears because sales increased",
-        "The problem is only transfer pricing because customers are external"
-      ],
-      "tag": "principal_agent",
-      "type": "integration",
-      "objective": "LO21.6",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "principal_agent_conflict",
-      "secondarySkills": [],
-      "repairSkill": "principal_agent_conflict",
-      "commonError": "assumes_principal_and_agent_objectives_are_automatically_aligned",
-      "feedback": "The agent's reward does not match the principal's broader objective, so the agent chases the rewarded metric.",
-      "aHash": "d4f485df7ad01aacb3d0b44e4d8501f906b249794fd0d2942d30bba447ba57fe"
-    },
-    {
-      "id": 9011,
-      "sourceGame": "agencyProtocol",
-      "q": "A CEO is paid entirely with short-term stock options and cuts maintenance to boost this year's numbers. What agency cost is most likely?",
-      "options": [
-        "Residual loss from actions that improve the metric while harming long-run firm value",
-        "Screening cost from learning hidden type before hiring",
-        "A reputation signal that separates good sellers from bad sellers",
-        "A deductible that makes the CEO bear more loss"
-      ],
-      "tag": "agency_costs",
-      "type": "multi-step",
-      "objective": "LO21.3",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "agency_costs_and_alignment",
-      "secondarySkills": [],
-      "repairSkill": "agency_costs_and_alignment",
-      "commonError": "treats_monitoring_costs_as_the_only_agency_cost",
-      "feedback": "Even after contracts and monitoring, some value can be lost when the agent pursues a distorted measure. That is residual loss.",
-      "aHash": "f5ca488564f45dc0d14a60fa7492ab73d48a61e20933db984a4ac54b7ab2bdbc"
+      "feedback": "Initially reliable sellers gain 700 while unreliable sellers lose 300. With the subsidy, the gains are 1,200 and 200. Both now want certification under the old premium, undermining the beliefs that supported it.",
+      "aHash": "69da8dc037bb0a4e2850f564cb7ef27679ea5d6bffb7a8a8a751429859aab0ac"
     },
     {
       "id": 9012,
       "sourceGame": "agencyProtocol",
-      "q": "A firm can spend more on monitoring managers, but each additional dollar of monitoring catches less misconduct than the last. What is the smart conclusion?",
+      "q": "A board compares mutually exclusive control packages. No change leaves $70,000 residual loss. Monitoring costs $22,000 and leaves $28,000 loss. Bonding costs the agent $14,000, reimbursed through pay, plus $5,000 verification, and leaves $24,000 loss. Combined controls cost $45,000 and leave $8,000 loss. Which package minimizes total agency cost?",
       "options": [
-        "The efficient amount of monitoring balances marginal benefit and marginal cost; it is not always maximum monitoring",
-        "The firm should monitor infinitely because agency costs are always bad",
-        "The firm should stop monitoring because any monitoring creates moral hazard",
-        "The firm should replace monitoring with transfer pricing in every case"
+        "Bonding: $43,000 total",
+        "Monitoring: $50,000 total",
+        "Combined controls: $53,000 total but the smallest residual loss must be optimal",
+        "No change: zero control spending means zero agency cost"
       ],
       "tag": "agency_costs",
-      "type": "multi-step",
-      "objective": "LO21.3",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "agency_costs_and_alignment",
-      "secondarySkills": [],
-      "repairSkill": "agency_costs_and_alignment",
-      "commonError": "treats_monitoring_costs_as_the_only_agency_cost",
-      "feedback": "Monitoring is costly. The goal is not zero agency cost at any price; it is efficient control.",
-      "aHash": "f3584b3ec1f0a7b38aff10ad06cf11a94516f67b3ab2b3749d6b3ef57337c298"
-    },
-    {
-      "id": 9013,
-      "sourceGame": "agencyProtocol",
-      "q": "A manager must personally reimburse the firm if reported results are later restated. What kind of agency-control device is this closest to?",
-      "options": [
-        "Bonding, because the agent commits resources or penalties to reassure the principal",
-        "Screening, because the principal learns hidden risk before hiring",
-        "A seller rating, because outside buyers observe quality",
-        "A cost-center rule, because only expenses matter"
-      ],
-      "tag": "agency_costs",
-      "type": "definition",
-      "objective": "LO21.3",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "agency_costs_and_alignment",
-      "secondarySkills": [],
-      "repairSkill": "agency_costs_and_alignment",
-      "commonError": "treats_monitoring_costs_as_the_only_agency_cost",
-      "feedback": "Bonding gives the agent something at stake, reducing the principal's concern about agent behavior.",
-      "aHash": "9b0d014c10d3b8bccd04b4a38bacfc26601f14df3821e8ace8fbf5dc711625b1"
-    },
-    {
-      "id": 9014,
-      "sourceGame": "agencyProtocol",
-      "q": "A call center pays workers only for the number of calls handled. Calls become shorter, but unresolved cases rise. What is the failure?",
-      "options": [
-        "Workers are gaming a narrow metric that ignores true service quality",
-        "Workers are reducing adverse selection by revealing type",
-        "The firm created perfect incentive alignment because quantity rose",
-        "The issue is only moral hazard in lending"
-      ],
-      "tag": "gaming",
-      "type": "trap",
-      "objective": "LO21.5",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "gaming",
-      "secondarySkills": [],
-      "repairSkill": "gaming",
-      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "The metric is incomplete, so agents optimize the measurable target instead of the real objective.",
-      "aHash": "517045b27aac39af4195801e30e7d51f8ff2e2e96876519870df76fec6d0ea98"
-    },
-    {
-      "id": 9015,
-      "sourceGame": "agencyProtocol",
-      "q": "A school rewards teachers only for test-score gains, and teachers narrow instruction to tested material. What economic lesson carries over to firms?",
-      "options": [
-        "Performance measures shape behavior, and narrow measures can distort real goals",
-        "Any performance measure perfectly captures the principal's objective",
-        "Agents ignore incentives when they care about mission",
-        "Monitoring and metrics always eliminate residual loss"
-      ],
-      "tag": "gaming",
       "type": "integration",
-      "objective": "LO21.5",
+      "objective": "LO21.3",
       "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "gaming",
+      "conceptCluster": "legendary_agencyProtocol_agency_costs_and_alignment",
+      "primarySkill": "agency_costs_and_alignment",
       "secondarySkills": [],
-      "repairSkill": "gaming",
-      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "Agents respond to metrics. Badly chosen metrics can create high measured performance and low real performance.",
-      "aHash": "9641a213fe224e178a11bb5ca5c87f3e87a165b62d9c6c7d6289ed643bcc03bc"
+      "repairSkill": "agency_costs_and_alignment",
+      "commonError": "treats_monitoring_costs_as_the_only_agency_cost",
+      "feedback": "Count control resources and remaining loss. Totals are 70, 50, 43 and 53 thousand. Agent-borne costs still matter when compensated; minimizing residual loss alone overcontrols.",
+      "aHash": "83d2d5c2de98a5472374adf2076769fc77dcce085d0208cb61afec1107937c57"
     },
     {
       "id": 9016,
       "sourceGame": "agencyProtocol",
-      "q": "A local branch manager knows the local market better than headquarters, but may favor pet projects. What is the key organizational tradeoff?",
+      "q": "Local branches have timely customer information but discount to win sales from sister branches. Headquarters can observe cross-branch overlap but learns local demand slowly. Which design most directly addresses both limits?",
       "options": [
-        "Decentralization uses local information but can worsen incentive-control problems",
-        "Centralization always uses local information better than branches",
-        "Decentralization eliminates the need for monitoring",
-        "Centralization guarantees every decision maximizes local and total profit"
+        "Delegate ordinary pricing using contribution-based rewards, and require joint approval for deals affecting sister branches",
+        "Centralize every quote and keep sales-volume rewards for branches",
+        "Delegate every quote and reward gross revenue so branches use more local information",
+        "Keep local authority but send headquarters cost averages without changing rewards"
       ],
       "tag": "organization",
-      "type": "multi-step",
+      "type": "integration",
       "objective": "LO21.4",
       "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
+      "conceptCluster": "legendary_agencyProtocol_organization",
       "primarySkill": "organization",
       "secondarySkills": [],
       "repairSkill": "organization",
       "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "Pushing decisions downward uses local knowledge, but headquarters must still control incentives.",
-      "aHash": "7be1e1d3187819a316feac7793f0481ce48075c6182d543ef2107931d812f9dd"
-    },
-    {
-      "id": 9017,
-      "sourceGame": "agencyProtocol",
-      "q": "Headquarters centralizes pricing after branches repeatedly discount products to hit local volume targets. What is headquarters trying to prevent?",
-      "options": [
-        "Local decisions that improve branch metrics while harming total firm profit",
-        "Adverse selection before customers enter the market",
-        "Borrower moral hazard after a loan is approved",
-        "Seller signaling through warranties"
-      ],
-      "tag": "organization",
-      "type": "interpretation",
-      "objective": "LO21.4",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "organization",
-      "secondarySkills": [],
-      "repairSkill": "organization",
-      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "Centralization can reduce harmful local discretion when local managers chase distorted incentives.",
-      "aHash": "ef9f9ae391fb6754c441298a915dbd5e3c2de93fc3cabfc217d57cce17f63914"
-    },
-    {
-      "id": 9018,
-      "sourceGame": "agencyProtocol",
-      "q": "A decentralized division sees a profitable local opportunity that headquarters would reject because it lacks local knowledge. What is the strongest argument for decentralization?",
-      "options": [
-        "Lower-level managers may possess better local information for certain decisions",
-        "Lower-level managers always have incentives perfectly aligned with the firm",
-        "Headquarters should never use performance measures",
-        "Decentralization removes the need for coordination across units"
-      ],
-      "tag": "organization",
-      "type": "trap",
-      "objective": "LO21.4",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "organization",
-      "secondarySkills": [],
-      "repairSkill": "organization",
-      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "Decentralization is valuable when local information matters, but it still requires incentive controls.",
-      "aHash": "f2b3e87a07bdc7cf88717738ff69270d4ea2519c4ce120204799bb6f1bb253fe"
-    },
-    {
-      "id": 9019,
-      "sourceGame": "agencyProtocol",
-      "q": "A parent company owns two divisions. Division A can produce a component at marginal cost below the outside market price, but its manager refuses to sell internally because the transfer price hurts A's measured profit. What is the core issue?",
-      "options": [
-        "Local division profit conflicts with total parent-company profit",
-        "The firm solved the agency problem by letting A maximize its own score",
-        "The issue is only adverse selection because quality is hidden before purchase",
-        "The internal transfer price is irrelevant to incentives"
-      ],
-      "tag": "parent_company",
-      "type": "multi-step",
-      "objective": "LO22.1",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "parent_company",
-      "secondarySkills": [],
-      "repairSkill": "parent_company",
-      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "The parent cares about total firm profit, not whether one division's score looks better in isolation.",
-      "aHash": "d560ed7e530f0a8e92dc6cc99b14c9c9535578f8b7eb356240b02faaae47b91d"
-    },
-    {
-      "id": 9020,
-      "sourceGame": "agencyProtocol",
-      "q": "A transfer price is set above the outside market price, so the buying division purchases externally even though internal production would create more total surplus. What went wrong?",
-      "options": [
-        "The transfer price distorted divisional incentives away from total firm value",
-        "The buying division used screening to reduce hidden seller quality",
-        "The selling division solved shirking through monitoring",
-        "The parent company avoided all coordination costs"
-      ],
-      "tag": "transfer_pricing",
-      "type": "multi-step",
-      "objective": "LO22.2",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "transfer_pricing_internal_trade",
-      "secondarySkills": [],
-      "repairSkill": "transfer_pricing_internal_trade",
-      "commonError": "sets_transfer_price_from_division_politics_instead_of_opportunity_cost_and_total_firm_value",
-      "feedback": "Bad transfer prices can make local managers reject trades that would help the firm as a whole.",
-      "aHash": "2a66a17bec34d16d25f5330d2b4400c939407f0a74e4164a333efdf750124da6"
-    },
-    {
-      "id": 9021,
-      "sourceGame": "agencyProtocol",
-      "q": "When an intermediate market exists, why can market-based transfer pricing sometimes work well?",
-      "options": [
-        "It gives divisions an outside benchmark that reflects opportunity cost",
-        "It forces every division to ignore outside prices",
-        "It makes all internal trades automatically profitable for both divisions",
-        "It eliminates moral hazard in employment contracts"
-      ],
-      "tag": "transfer_pricing",
-      "type": "interpretation",
-      "objective": "LO22.2",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "transfer_pricing_internal_trade",
-      "secondarySkills": [],
-      "repairSkill": "transfer_pricing_internal_trade",
-      "commonError": "sets_transfer_price_from_division_politics_instead_of_opportunity_cost_and_total_firm_value",
-      "feedback": "A market price can discipline internal pricing by showing the opportunity cost of transferring internally.",
-      "aHash": "ba0a8a4ee71d75c0cec3c909875ce12b0d9b1015ac63e8f6dbd4dff430e9cae8"
-    },
-    {
-      "id": 9022,
-      "sourceGame": "agencyProtocol",
-      "q": "A production unit is evaluated as a cost center, so it delays maintenance and cuts training to meet this year's target. What is the hidden danger?",
-      "options": [
-        "Measured cost falls while total organizational value may fall even more",
-        "Cost centers always maximize value because all costs are bad",
-        "The unit is signaling product quality to buyers",
-        "The problem is adverse selection before a loan"
-      ],
-      "tag": "cost_center",
-      "type": "trap",
-      "objective": "LO22.3",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "cost_center_evaluation",
-      "secondarySkills": [],
-      "repairSkill": "cost_center_evaluation",
-      "commonError": "equates_cost_reduction_with_value_creation",
-      "feedback": "Cost control is useful only when it does not damage quality, reliability, or downstream productivity.",
-      "aHash": "8a35b0fc35c2e94d3755b7433da473757355173e56181fce662ff6604bb4a818"
-    },
-    {
-      "id": 9023,
-      "sourceGame": "agencyProtocol",
-      "q": "A profit center raises its own margin by refusing support to another division, causing total company profit to fall. What is the lesson?",
-      "options": [
-        "Profit-center metrics can still misalign local incentives with total firm profit",
-        "Profit centers never create agency problems because profit is measured",
-        "Cost centers are the only units that respond to incentives",
-        "The parent should ignore transfer prices and local metrics"
-      ],
-      "tag": "profit_center",
-      "type": "integration",
-      "objective": "LO22.3",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "profit_center_evaluation",
-      "secondarySkills": [],
-      "repairSkill": "profit_center_evaluation",
-      "commonError": "assumes_local_profit_center_success_always_improves_total_firm_profit",
-      "feedback": "Even profit-based evaluation can be incomplete when one division's actions affect the rest of the firm.",
-      "aHash": "c98f7c3762aacea8742e0cc5f2ba90703f0a241a3090a66f638ce82884e80e44"
-    },
-    {
-      "id": 9024,
-      "sourceGame": "agencyProtocol",
-      "q": "Marketing, finance, operations, and HR each become highly skilled but stop sharing information. Which structure created the strength and the weakness?",
-      "options": [
-        "Functional organization: specialization improves, but silos and coordination problems can rise",
-        "Multidivisional organization: every product division has complete autonomy and no specialization",
-        "Insurance pooling: risks are transferred across departments",
-        "Screening: hidden types are sorted before hiring"
-      ],
-      "tag": "functional_units",
-      "type": "integration",
-      "objective": "LO22.4",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "functional_specialization",
-      "secondarySkills": [],
-      "repairSkill": "functional_specialization",
-      "commonError": "ignores_silos_created_by_functional_specialization",
-      "feedback": "Functional units promote specialization, but coordination across functions can become harder.",
-      "aHash": "8d31e544d83953ebf42819b7533b698e0415d5bd2591b7ffcac6b501e4ac8df5"
-    },
-    {
-      "id": 9025,
-      "sourceGame": "agencyProtocol",
-      "q": "A product launch fails because sales promised custom features before operations and finance approved capacity and cost. What is the best fix?",
-      "options": [
-        "Improve cross-functional coordination before commitments are made",
-        "Move all decisions to the sales department permanently",
-        "Evaluate operations only on lower costs regardless of sales impact",
-        "Replace all internal coordination with seller ratings"
-      ],
-      "tag": "coordination",
-      "type": "interpretation",
-      "objective": "LO22.5",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "cross_functional_coordination",
-      "secondarySkills": [],
-      "repairSkill": "cross_functional_coordination",
-      "commonError": "treats_divisions_as_independent_when_outputs_are_interdependent",
-      "feedback": "Departments are interdependent. Coordination prevents one function from creating problems for another.",
-      "aHash": "4617463b9298d132b756471a9f2c862bc3be20d259268ad6647391e5aa7be1ac"
-    },
-    {
-      "id": 9026,
-      "sourceGame": "agencyProtocol",
-      "q": "A firm expands into unrelated product lines and headquarters struggles to judge performance inside one giant functional structure. What organizational change may help?",
-      "options": [
-        "A multidivisional structure with clearer accountability by business line",
-        "A larger cost center for all departments combined",
-        "A seller warranty system to signal quality",
-        "A deductible to reduce customer moral hazard"
-      ],
-      "tag": "multidivisional",
-      "type": "interpretation",
-      "objective": "LO22.6",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "multidivisional_accountability",
-      "secondarySkills": [],
-      "repairSkill": "multidivisional_accountability",
-      "commonError": "assumes_divisional_accountability_eliminates_coordination_and_agency_problems",
-      "feedback": "Multidivisional structures can improve accountability when firms become complex across products, regions, or lines of business.",
-      "aHash": "01b35f9f5c4cb52fdee3d743e8ecd201853d80e12c54e8c2c0b129c228068e31"
-    },
-    {
-      "id": 9027,
-      "sourceGame": "agencyProtocol",
-      "q": "Why can multidivisional firms still need strong headquarters oversight?",
-      "options": [
-        "Divisions may optimize their own results while ignoring spillovers and total firm value",
-        "Divisions automatically maximize total firm profit without any controls",
-        "Multidivisional structure eliminates transfer pricing problems by definition",
-        "Headquarters has no useful role once divisions exist"
-      ],
-      "tag": "multidivisional",
-      "type": "trap",
-      "objective": "LO22.6",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "multidivisional_accountability",
-      "secondarySkills": [],
-      "repairSkill": "multidivisional_accountability",
-      "commonError": "assumes_divisional_accountability_eliminates_coordination_and_agency_problems",
-      "feedback": "Divisional accountability helps, but local incentives can still conflict with the parent company's goal.",
-      "aHash": "9d3f71d6f2fe61ec65ca1b1c9a5454e083f1b7c51ccd55ac71951bc49c318013"
-    },
-    {
-      "id": 9028,
-      "sourceGame": "agencyProtocol",
-      "q": "A manager pads expected costs, understates expected revenue, and then beats the target easily. What is the economic problem?",
-      "options": [
-        "Budget slack created because the manager has incentives to manipulate the planning process",
-        "A credible signal of high managerial ability",
-        "Screening by the uninformed side before a transaction",
-        "A transfer price that reflects outside market value"
-      ],
-      "tag": "budget_games",
-      "type": "interpretation",
-      "objective": "LO22.7",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "budget_slack_and_target_manipulation",
-      "secondarySkills": [],
-      "repairSkill": "budget_slack_and_target_manipulation",
-      "commonError": "mistakes_budget_compliance_for_honest_forecasting_or_value_creation",
-      "feedback": "Budget games occur when managers manipulate targets, forecasts, or spending rules to make themselves look better.",
-      "aHash": "50323bc5a2b748a22a82ffc95be201f63fd54b413be880930290e1bde653ddcb"
-    },
-    {
-      "id": 9029,
-      "sourceGame": "agencyProtocol",
-      "q": "A use-it-or-lose-it budget causes departments to spend wastefully in December. What change most directly weakens that incentive?",
-      "options": [
-        "Allow justified carryover or evaluate value created, not simply whether funds were spent",
-        "Require every department to spend exactly its full budget faster",
-        "Reward managers for increasing waste at year-end",
-        "Hide next year's budget rules from every department"
-      ],
-      "tag": "budget_games",
-      "type": "multi-step",
-      "objective": "LO22.7",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "budget_slack_and_target_manipulation",
-      "secondarySkills": [],
-      "repairSkill": "budget_slack_and_target_manipulation",
-      "commonError": "mistakes_budget_compliance_for_honest_forecasting_or_value_creation",
-      "feedback": "If unused funds are automatically punished, managers spend to protect future allocations. Better rules reduce that gaming.",
-      "aHash": "42c537775970b9e160260f9c73c32b4e4e53d439639392b4957cefd1486f8380"
-    },
-    {
-      "id": 9030,
-      "sourceGame": "agencyProtocol",
-      "q": "An online labor platform uses ratings from prior clients, work samples, and escrow payments. Which mapping is most accurate?",
-      "options": [
-        "Ratings and samples reduce adverse selection; escrow can reduce moral hazard after work begins",
-        "Ratings create moral hazard; samples create transfer pricing; escrow creates budget slack",
-        "All three tools only address functional coordination",
-        "All three tools eliminate the principal-agent relationship"
-      ],
-      "tag": "adverse_selection",
-      "type": "integration",
-      "objective": "LO19.5",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "hidden_information_before_contract",
-      "secondarySkills": [],
-      "repairSkill": "hidden_information_before_contract",
-      "commonError": "confuses_hidden_information_before_contract_with_hidden_action_after_contract",
-      "feedback": "Ratings and samples reveal quality before contracting, while escrow can shape behavior once work begins.",
-      "aHash": "55ca519811a69a48c057f35d2908f589ef97dd1ce33366dcf7f878943008926c"
-    },
-    {
-      "id": 9031,
-      "sourceGame": "agencyProtocol",
-      "q": "A customer hides high risk before buying coverage, then behaves carelessly after coverage begins. Which sequence is correct?",
-      "options": [
-        "Adverse selection first, moral hazard second",
-        "Moral hazard first, adverse selection second",
-        "Screening first, signaling second, with no incentive problem",
-        "Transfer pricing first, budget gaming second"
-      ],
-      "tag": "adverse_selection",
-      "type": "trap",
-      "objective": "LO19.2",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "hidden_information_before_contract",
-      "secondarySkills": [],
-      "repairSkill": "hidden_information_before_contract",
-      "commonError": "confuses_hidden_information_before_contract_with_hidden_action_after_contract",
-      "feedback": "The timing matters. Hidden type before the deal is adverse selection. Hidden action after the deal is moral hazard.",
-      "aHash": "a50da0d85c0013a8a007edfd571011e39315c2645497ce48872da1ac95956f67"
-    },
-    {
-      "id": 9032,
-      "sourceGame": "agencyProtocol",
-      "q": "A firm hires a manager after weak screening, then pays a bonus based only on revenue. The manager turns out low ability and also cuts price aggressively to inflate sales. What are the two problems?",
-      "options": [
-        "Adverse selection before hiring and incentive gaming after hiring",
-        "Moral hazard before hiring and screening after hiring",
-        "Transfer pricing before hiring and signaling after hiring",
-        "Budget slack before hiring and reputation after hiring"
-      ],
-      "tag": "principal_agent",
-      "type": "integration",
-      "objective": "LO21.2",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "principal_agent_conflict",
-      "secondarySkills": [],
-      "repairSkill": "principal_agent_conflict",
-      "commonError": "assumes_principal_and_agent_objectives_are_automatically_aligned",
-      "feedback": "The firm first chose a hidden type poorly, then created a metric the agent could game.",
-      "aHash": "a857277ca4bd1d8a9aa6c3afa9c96ed478f8555b62031128dba5f0543bfc4802"
-    },
-    {
-      "id": 9033,
-      "sourceGame": "agencyProtocol",
-      "q": "A principal can improve outcomes by screening applicants, monitoring effort, bonding agents, and redesigning pay. Why are multiple tools often needed?",
-      "options": [
-        "Agency problems combine hidden type, hidden action, measurement limits, and incentive conflict",
-        "One tool always eliminates every information and incentive problem",
-        "Only monitoring matters because all agency problems occur after hiring",
-        "Only screening matters because all agency problems occur before hiring"
-      ],
-      "tag": "incentives",
-      "type": "integration",
-      "objective": "LO21.6",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "incentives",
-      "secondarySkills": [],
-      "repairSkill": "incentives",
-      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "Real agency problems are layered. Different tools target different margins of hidden information and hidden action.",
-      "aHash": "d1d31937dfd09a9b2185ad912afc0ab078e8457e079208e057f06b0da7739a95"
-    },
-    {
-      "id": 9034,
-      "sourceGame": "agencyProtocol",
-      "q": "A division has private information about its costs and also wants a lower target next year. How can this affect budgeting?",
-      "options": [
-        "The division may misreport information to create budget slack",
-        "The division will always reveal true costs because budgets are neutral",
-        "The parent company can ignore incentives if costs are private",
-        "The problem must be solved with customer warranties"
-      ],
-      "tag": "budget_games",
-      "type": "multi-step",
-      "objective": "LO22.7",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "budget_slack_and_target_manipulation",
-      "secondarySkills": [],
-      "repairSkill": "budget_slack_and_target_manipulation",
-      "commonError": "mistakes_budget_compliance_for_honest_forecasting_or_value_creation",
-      "feedback": "Private information gives managers room to manipulate budget requests and performance targets.",
-      "aHash": "9396c618de4c61c553ef1248172b2f06cfb1656d392d52d45f8d94418a94b9cd"
+      "feedback": "The first design keeps local information useful, improves incentives, and assigns spillover decisions to a coordinating process. Either all-or-nothing authority choice leaves one of the specified problems untreated.",
+      "aHash": "a7598ab366dbe94fd02e3d4267cc7a64cdf23925d11b393e90ca59b5c7e86b1a"
     },
     {
       "id": 9035,
       "sourceGame": "agencyProtocol",
-      "q": "A parent company sets a transfer price to make the selling division cover fixed costs, but the buying division rejects efficient internal purchases. What lesson follows?",
+      "q": "An internal supplier has spare capacity, MC $28 and unavoidable fixed costs. A buyer division can buy the identical unit outside for $39. Headquarters sets a $44 transfer price to recover the supplier's fixed costs; the buyer buys outside. Which redesign best separates sourcing incentives from evaluation?",
       "options": [
-        "Using transfer prices for evaluation and coordination at the same time can create conflicts",
-        "Higher transfer prices always improve total firm profit",
-        "Buying divisions should ignore opportunity cost",
-        "Fixed costs are the only relevant cost for internal trade decisions"
+        "Require outside purchase at $39 because the supplier's accounting cost is $44",
+        "Keep $44 because allocated fixed cost is always the opportunity cost of an internal unit",
+        "Set the price to zero and judge the supplier only on its unreimbursed profit",
+        "Charge the buyer $28 per unit and fund an agreed fixed-cost allowance separately from each transfer"
       ],
       "tag": "transfer_pricing",
-      "type": "multi-step",
+      "type": "integration",
       "objective": "LO22.2",
       "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
+      "conceptCluster": "legendary_agencyProtocol_transfer_pricing_internal_trade",
       "primarySkill": "transfer_pricing_internal_trade",
       "secondarySkills": [],
       "repairSkill": "transfer_pricing_internal_trade",
       "commonError": "sets_transfer_price_from_division_politics_instead_of_opportunity_cost_and_total_firm_value",
-      "feedback": "Transfer prices serve multiple roles. A price that helps one evaluation goal may distort internal trade decisions.",
-      "aHash": "5b1df9f910290fe904ce4eb5f9ca1a12935960c39fa9bae512dad3375933df9a"
-    },
-    {
-      "id": 9036,
-      "sourceGame": "agencyProtocol",
-      "q": "A firm gives local managers freedom because local information is valuable, then uses profit sharing and audits. What is the logic?",
-      "options": [
-        "Decentralize decision rights while using controls to reduce agency costs",
-        "Centralize every decision while pretending local information matters",
-        "Eliminate incentives because local managers never pursue private goals",
-        "Use seller reputation to solve internal moral hazard"
-      ],
-      "tag": "organization",
-      "type": "integration",
-      "objective": "LO21.4",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "organization",
-      "secondarySkills": [],
-      "repairSkill": "organization",
-      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "Good design often combines local discretion with incentive and monitoring systems.",
-      "aHash": "f08c8db8f4af322aca8db7463ab209f63162d856f5f98f075fc002e540c65468"
-    },
-    {
-      "id": 9037,
-      "sourceGame": "agencyProtocol",
-      "q": "A worker accepts lower pay in exchange for a bonus forfeited if quality defects exceed a threshold. What agency-control idea is closest?",
-      "options": [
-        "Bonding and incentive alignment because the worker has something at risk tied to quality",
-        "Adverse selection because the worker's type is hidden before hiring only",
-        "Transfer pricing because the worker sells output to another division",
-        "Functional specialization because the worker is in one department"
-      ],
-      "tag": "incentives",
-      "type": "interpretation",
-      "objective": "LO21.3",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "incentives",
-      "secondarySkills": [],
-      "repairSkill": "incentives",
-      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "The worker has skin in the game, so the contract both bonds performance and aligns incentives.",
-      "aHash": "8e92d8f0d3108b8860413e8da7254abefc625d656296d9679c5feaf642c1bf3b"
-    },
-    {
-      "id": 9038,
-      "sourceGame": "agencyProtocol",
-      "q": "A firm notices that more surveillance reduces shirking but also lowers morale and drives away good employees. What is the best economic conclusion?",
-      "options": [
-        "Monitoring has benefits and costs, so the best policy balances both",
-        "More monitoring is always better because shirking is always possible",
-        "The firm should never monitor because monitoring cannot affect behavior",
-        "The problem is adverse selection only and cannot involve moral hazard"
-      ],
-      "tag": "monitoring",
-      "type": "multi-step",
-      "objective": "LO20.3",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "monitoring_and_incentive_control",
-      "secondarySkills": [],
-      "repairSkill": "monitoring_and_incentive_control",
-      "commonError": "assumes_monitoring_always_solves_incentive_problems_without_costs_or_distortion",
-      "feedback": "Monitoring can reduce hidden action, but excessive monitoring can create other costs.",
-      "aHash": "ac5e7966ab9f43c6c8249300f16f1488fb88a0de171b0f0249aa08a3941f82e1"
-    },
-    {
-      "id": 9039,
-      "sourceGame": "agencyProtocol",
-      "q": "A borrower pledges collateral but also has private upside from a risky project. Why might collateral still not fully solve lending moral hazard?",
-      "options": [
-        "Collateral gives skin in the game but may not perfectly align the borrower's risk choice with the lender's preferred risk",
-        "Collateral eliminates all borrower incentives to take risk",
-        "Collateral is only a seller rating and has no role in loans",
-        "Collateral creates adverse selection after the loan is repaid"
-      ],
-      "tag": "lending",
-      "type": "trap",
-      "objective": "LO20.5",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "borrower_incentives_and_lender_risk",
-      "secondarySkills": [],
-      "repairSkill": "borrower_incentives_and_lender_risk",
-      "commonError": "assumes_borrowers_and_lenders_share_the_same_risk_incentives_after_funding",
-      "feedback": "Collateral helps, but incentives may remain imperfect when borrower upside and lender downside are asymmetric.",
-      "aHash": "580c2c820d81da05dfeaddcaa901cd8760f01f1d3cfff0412247c44f5fd39ad0"
-    },
-    {
-      "id": 9040,
-      "sourceGame": "agencyProtocol",
-      "q": "A remote employee works hard when output is clearly measured but shirks on collaborative tasks nobody owns. What does this show?",
-      "options": [
-        "Hidden effort can shift to poorly measured margins even when some output is monitored",
-        "Shirking disappears if any output metric exists",
-        "The employee is signaling quality before being hired",
-        "The firm has solved agency costs by measuring one task"
-      ],
-      "tag": "shirking",
-      "type": "integration",
-      "objective": "LO20.4",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "shirking_and_effort_incentives",
-      "secondarySkills": [],
-      "repairSkill": "shirking_and_effort_incentives",
-      "commonError": "ignores_hidden_effort_and_free_riding_in_team_or_employee_settings",
-      "feedback": "Agents may move effort away from unmeasured tasks when metrics are incomplete.",
-      "aHash": "d1861691d0ba0c52a18f1fe58828b34cb64633968957225c34a9d482102dee57"
-    },
-    {
-      "id": 9041,
-      "sourceGame": "agencyProtocol",
-      "q": "A seller with excellent ratings offers a warranty, while the platform verifies reviews. Which statement is strongest?",
-      "options": [
-        "Reputation and signaling can work together to reduce hidden-quality concerns",
-        "Reputation and signaling are identical because both must come from the buyer",
-        "Warranties only solve budget games inside firms",
-        "Verified reviews create moral hazard by hiding seller quality"
-      ],
-      "tag": "reputation",
-      "type": "integration",
-      "objective": "LO19.5",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "reputation_systems_and_market_quality",
-      "secondarySkills": [],
-      "repairSkill": "reputation_systems_and_market_quality",
-      "commonError": "treats_reviews_as_perfect_information_instead_of_noisy_market_discipline",
-      "feedback": "A seller can signal quality, and platform reputation systems can make that signal more credible.",
-      "aHash": "84f6c4a6282963ba01652b8f2466aaac677d0e9126fef08fad42336ea9a4e3d1"
-    },
-    {
-      "id": 9042,
-      "sourceGame": "agencyProtocol",
-      "q": "A firm groups by function early in its life, then later shifts to divisions by product line. What changed?",
-      "options": [
-        "The value of specialization was overtaken by the need for accountability and coordination across complex business lines",
-        "The firm no longer needs expertise after it grows",
-        "Product divisions eliminate every agency problem",
-        "Functional structure only works when there is adverse selection"
-      ],
-      "tag": "functional_units",
-      "type": "integration",
-      "objective": "LO22.6",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "functional_specialization",
-      "secondarySkills": [],
-      "repairSkill": "functional_specialization",
-      "commonError": "ignores_silos_created_by_functional_specialization",
-      "feedback": "As firms grow, the best structure can shift from specialization toward clearer accountability by business line.",
-      "aHash": "12e82d35c01ac5901a1722fee15e84c0b0f7338c91d2cf2ae08b118a2e1b56d8"
-    },
-    {
-      "id": 9043,
-      "sourceGame": "agencyProtocol",
-      "q": "A chief operating officer sees low morale, manipulated metrics, poor coordination, and division conflict. What should they avoid?",
-      "options": [
-        "Treating all problems as one generic 'bad manager' problem instead of diagnosing the specific incentive and information failures",
-        "Separating adverse selection from moral hazard when timing differs",
-        "Checking whether performance measures capture the real objective",
-        "Considering whether local incentives conflict with total firm value"
-      ],
-      "tag": "principal_agent",
-      "type": "integration",
-      "objective": "LO21.6",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "principal_agent_conflict",
-      "secondarySkills": [],
-      "repairSkill": "principal_agent_conflict",
-      "commonError": "assumes_principal_and_agent_objectives_are_automatically_aligned",
-      "feedback": "Legendary diagnosis means naming the exact mechanism: hidden type, hidden action, gaming, coordination failure, or local-vs-total conflict.",
-      "aHash": "0e58fd35489fe89097fcdc850fedbd30a1eba2330b89f182065c8d0b3b5e41ec"
-    },
-    {
-      "id": 9044,
-      "sourceGame": "agencyProtocol",
-      "q": "A platform requires sellers to post refundable deposits, verifies identities, and displays transaction history. Which problem is the platform mostly attacking, and why are three tools being used?",
-      "options": [
-        "Adverse selection, because buyers need credible information about seller type before purchase and no single signal is perfect",
-        "Moral hazard, because buyers become careless after purchase and deposits eliminate that behavior",
-        "Budget gaming, because sellers are trying to create slack in future budgets",
-        "Transfer pricing, because the platform must choose the internal price between divisions"
-      ],
-      "tag": "adverse_selection",
-      "type": "multi-step diagnosis",
-      "objective": "LO19.5",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "hidden_information_before_contract",
-      "secondarySkills": [
-        "credible_signaling_hidden_type",
-        "reputation_systems_and_market_quality"
-      ],
-      "repairSkill": "hidden_information_before_contract",
-      "commonError": "calls_every_information_problem_moral_hazard",
-      "feedback": "The tools work before exchange by making seller type more observable. Deposits, verification, and history reduce adverse selection, though none is perfect alone.",
-      "aHash": "57ee9abf9c5972650fd4e9e12883e6faf982cdc9b536a80ace663b88be76ebbf"
-    },
-    {
-      "id": 9045,
-      "sourceGame": "agencyProtocol",
-      "q": "A warranty is offered only by high-quality sellers because low-quality sellers expect too many claims. What role does the warranty play?",
-      "options": [
-        "It becomes a costly signal of seller quality",
-        "It is monitoring of worker effort after hiring",
-        "It is a transfer price between divisions",
-        "It is budget slack created during planning"
-      ],
-      "tag": "signaling",
-      "type": "application",
-      "objective": "LO19.4",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "credible_signaling_hidden_type",
-      "secondarySkills": [
-        "hidden_information_before_contract"
-      ],
-      "repairSkill": "credible_signaling_hidden_type",
-      "commonError": "treats_all_advertising_or_promises_as_credible_signals",
-      "feedback": "A signal is credible when it is cheaper or more valuable for high-quality sellers than for low-quality sellers.",
-      "aHash": "55c9240ec5e48bca46b79beef60ab1726e6d5bc68b960c82e966994a0e4f6fe8"
-    },
-    {
-      "id": 9046,
-      "sourceGame": "agencyProtocol",
-      "q": "An insurer charges one average premium. Low-risk customers leave, high-risk customers remain, and the pool becomes worse. What is the chain of events?",
-      "options": [
-        "Adverse selection raises the average risk of the insured pool and can unravel the market",
-        "Moral hazard reduces risk because high-risk customers buy more coverage",
-        "Screening fails because the insurer observes every buyer perfectly",
-        "Monitoring solves the problem by making claims impossible"
-      ],
-      "tag": "adverse_selection",
-      "type": "causal chain",
-      "objective": "LO19.2",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "hidden_information_before_contract",
-      "secondarySkills": [
-        "risk_transfer_and_pooling"
-      ],
-      "repairSkill": "hidden_information_before_contract",
-      "commonError": "thinks_high_premiums_always_improve_the_pool_without_driving_out_low_risk_buyers",
-      "feedback": "With one average premium, low-risk buyers may exit. The remaining pool becomes riskier, forcing premiums higher again.",
-      "aHash": "eb604dd6f199ee9993931db501040bec86a0e421cf56e283953dbbe2c71496d1"
+      "feedback": "The internal unit saves 39-28=11 for the firm. A per-unit fixed-cost markup blocks this gain. A separately budgeted allowance can address cost recovery without raising the buyer's marginal sourcing price.",
+      "aHash": "e0b3c0a06e28eab0582fc5ffbd0f9a20c8039068ec60c7dfee3e8d355cae67e1"
     },
     {
       "id": 9047,
       "sourceGame": "agencyProtocol",
-      "q": "A lender requires collateral and then continues checking borrower behavior after the loan is issued. Which pairing is correct?",
+      "q": "A lender offers a collateral contract and calls the applicants who accept it safer. Acceptance depends on both wealth and risk tolerance. After lending, collateral also discourages project switching. What is the sound conclusion?",
       "options": [
-        "Collateral can screen borrower type before lending; monitoring can reduce moral hazard after lending",
-        "Collateral is only a budget game; monitoring is only transfer pricing",
-        "Both tools only solve adverse selection because all lending problems occur before funding",
-        "Both tools only solve moral hazard because borrower type never matters"
+        "The observed project discipline proves the original applicant pool was efficiently screened",
+        "Collateral proves low default risk because only safe borrowers own pledgeable assets",
+        "Collateral cannot affect behavior because it is pledged before lending",
+        "Collateral may improve post-loan incentives, but acceptance alone does not identify borrower risk without separating wealth and risk effects"
       ],
       "tag": "lending",
       "type": "integration",
       "objective": "LO20.5",
       "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
+      "conceptCluster": "legendary_agencyProtocol_borrower_incentives_and_lender_risk",
       "primarySkill": "borrower_incentives_and_lender_risk",
       "secondarySkills": [
         "screening_hidden_type",
@@ -7174,49 +9939,24 @@ const questionBanks = {
       ],
       "repairSkill": "borrower_incentives_and_lender_risk",
       "commonError": "collapses_screening_and_monitoring_into_one_undifferentiated_control",
-      "feedback": "Collateral can reveal borrower confidence or risk type before the loan. Monitoring controls behavior after the lender’s money is at risk.",
-      "aHash": "0d2a248c4acdf398d09ddb9b88ff57d59df51fe4e9192240e742581ca4ee4cc0"
-    },
-    {
-      "id": 9048,
-      "sourceGame": "agencyProtocol",
-      "q": "A commission plan boosts sales, but salespeople sell poor-fit products that increase refunds and damage repeat business. What went wrong?",
-      "options": [
-        "The measured incentive improved one metric while damaging total firm value",
-        "The plan eliminated all agency costs because sales rose",
-        "The firm solved adverse selection by paying more commission",
-        "The salespeople became cost centers rather than agents"
-      ],
-      "tag": "gaming_incentives",
-      "type": "diagnosis",
-      "objective": "LO21.5",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "metric_gaming_and_unintended_responses",
-      "secondarySkills": [
-        "total_firm_profit_alignment",
-        "principal_agent_conflict"
-      ],
-      "repairSkill": "metric_gaming_and_unintended_responses",
-      "commonError": "equates_metric_improvement_with_real_performance_improvement",
-      "feedback": "Incentives can be gamed. A sales metric can rise while customer fit, refunds, and total value worsen.",
-      "aHash": "0d1c5abba22d627acf8ca62fce8255ba58ed5320ebc4bb5703e3da856d8a5990"
+      "feedback": "One instrument can affect both selection and behavior. A wealth constraint can exclude safe but poor borrowers, so behavioral benefit does not establish accurate type screening.",
+      "aHash": "fedb306fc115f86ee04e7d42c920a6c8aa87c7592c1a9bbee338a3d3662818e3"
     },
     {
       "id": 9049,
       "sourceGame": "agencyProtocol",
-      "q": "Headquarters sets a very low transfer price so the buying division looks profitable, but the selling division rejects outside orders with higher margins. What is the main issue?",
+      "q": "Division A has one unit of capacity. An outside sale pays $92, costs $50 to make and $7 to deliver. An internal request avoids delivery and lets B avoid a $90 outside purchase. A is judged on profit and must accept internal transfers at $60. What is the firm gain and incentive problem?",
       "options": [
-        "The internal price is distorting division incentives away from total firm profit",
-        "The buying division has solved moral hazard by lowering costs",
-        "The selling division is signaling low quality",
-        "The firm has eliminated coordination problems through decentralization"
+        "Internal trade gains $40, and A gains $10 because outside use is irrelevant",
+        "Internal trade gains $5, but A loses $25 of reported profit, so its metric discourages cooperation",
+        "Internal trade loses $32 because $60 is below the outside sale price",
+        "Internal trade gains $30, and the transfer price is real new revenue for the parent"
       ],
       "tag": "transfer_pricing",
-      "type": "multi-step diagnosis",
+      "type": "integration",
       "objective": "LO22.2",
       "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
+      "conceptCluster": "legendary_agencyProtocol_transfer_pricing_internal_trade",
       "primarySkill": "transfer_pricing_internal_trade",
       "secondarySkills": [
         "total_firm_profit_alignment",
@@ -7224,49 +9964,24 @@ const questionBanks = {
       ],
       "repairSkill": "transfer_pricing_internal_trade",
       "commonError": "focuses_only_on_which_division_wins_instead_of_total_firm_profit",
-      "feedback": "Transfer prices affect internal behavior. A bad transfer price can make one division look good while the firm sacrifices higher-value opportunities.",
-      "aHash": "939fe07ae1d091516463fb1da7f1385781eb989dda472aeb991ebc3a07e884b8"
-    },
-    {
-      "id": 9050,
-      "sourceGame": "agencyProtocol",
-      "q": "A division manager rejects a project that lowers her division profit by $20,000 but raises another division profit by $80,000. What should the parent company see?",
-      "options": [
-        "Rejecting the project protects local profit but destroys $60,000 in total firm value",
-        "Rejecting the project creates $20,000 in total firm value",
-        "The project is irrelevant because divisions should never coordinate",
-        "The project is adverse selection because project quality is hidden before purchase"
-      ],
-      "tag": "total_firm_profit",
-      "type": "calculation",
-      "objective": "LO22.1",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "total_firm_profit_alignment",
-      "secondarySkills": [
-        "coordination",
-        "profit_center_evaluation"
-      ],
-      "repairSkill": "total_firm_profit_alignment",
-      "commonError": "uses_local_profit_effect_instead_of_total_firm_effect",
-      "feedback": "The firm-level effect is -20,000 + 80,000 = +60,000. Local incentives can reject projects that help the whole firm.",
-      "aHash": "0102537fe0dda9e4fa7ca997a36cd990cc734689f2f4f7ee1bcc78647959d675"
+      "feedback": "Internal opportunity cost is 92-7=85; B avoids 90, so firm gain is 5. A earns 35 externally versus 10 internally, a 25 local loss. The transfer price redistributes profit but does not change the 5 total gain.",
+      "aHash": "dd76924eddf0a0d047b93da609d96e736ede07bf59e090c29363b3ff3156fe42"
     },
     {
       "id": 9051,
       "sourceGame": "agencyProtocol",
-      "q": "A support unit is evaluated only on cost. It cuts response time staffing, saves $50,000, and causes $200,000 in lost sales elsewhere. What is the correct diagnosis?",
+      "q": "A support unit saves $50,000 by cutting staffing. Elsewhere sales fall by $200,000; those lost sales would have contributed 30% after avoidable production costs. Restoring staffing would recover all lost sales, and no other costs change. What should the parent do?",
       "options": [
-        "The cost-center metric rewarded local cost reduction that reduced total firm value",
-        "The unit improved firm value by saving $50,000",
-        "The unit solved transfer pricing by lowering its internal price",
-        "The unit used signaling to reveal high quality"
+        "Keep the cut because revenue effects never belong in cost-center evaluation",
+        "Restore staffing for a $150,000 gain because all lost sales are lost profit",
+        "Keep the cut because the support unit met its cost target",
+        "Restore staffing: recovered contribution is $60,000, exceeding $50,000 cost by $10,000"
       ],
       "tag": "cost_center",
-      "type": "calculation",
+      "type": "integration",
       "objective": "LO22.3",
       "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
+      "conceptCluster": "legendary_agencyProtocol_cost_center_evaluation",
       "primarySkill": "cost_center_evaluation",
       "secondarySkills": [
         "total_firm_profit_alignment",
@@ -7274,3012 +9989,310 @@ const questionBanks = {
       ],
       "repairSkill": "cost_center_evaluation",
       "commonError": "equates_cost_savings_with_value_creation",
-      "feedback": "The net firm effect is -$150,000. Cost-center evaluation can encourage cuts that hurt other parts of the organization.",
-      "aHash": "34232ca79b69677c616512a0ecc0d3d7ef27a1cd3115dc68fa0b43d2795229c5"
+      "feedback": "Lost contribution is .30×200,000=60,000. The cut saves 50,000 but destroys 60,000, a net 10,000 loss. Evaluate downstream contribution, not revenue alone or the local cost score.",
+      "aHash": "8d2575c5f495110d83761157cb7fdb988d129b43596ac7863e953d9bea0d81de"
     },
     {
       "id": 9052,
       "sourceGame": "agencyProtocol",
-      "q": "A manager creates budget slack, then later spends the entire budget to protect next year’s target. Which two incentive failures are present?",
+      "q": "A division's forecast sets both inventory plans and the manager's bonus hurdle. Honest high forecasts raise the hurdle; inflated cost requests make it easier. Headquarters proposes paying only for beating the submitted plan. Which redesign best addresses the conflict?",
       "options": [
-        "Understating capability during planning and wasteful end-of-period spending",
-        "Screening before hiring and signaling after hiring",
-        "Risk pooling and adverse selection",
-        "Transfer pricing and warranty signaling"
+        "Separate an audited rolling planning forecast from the bonus hurdle, and evaluate forecast accuracy and value creation using independent benchmarks",
+        "Increase the reward for beating each manager's submitted forecast",
+        "Punish every unfavorable forecast revision even when new information arrives",
+        "Permit unused funds to carry over but continue setting bonuses solely from each manager's own target"
       ],
       "tag": "budget_games",
       "type": "integration",
       "objective": "LO22.7",
       "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
+      "conceptCluster": "legendary_agencyProtocol_budget_slack_and_target_manipulation",
       "primarySkill": "budget_slack_and_target_manipulation",
       "secondarySkills": [
         "metric_gaming_and_unintended_responses"
       ],
       "repairSkill": "budget_slack_and_target_manipulation",
       "commonError": "treats_budget_compliance_as_honest_performance",
-      "feedback": "Budget games can appear twice: managers bargain for easier targets and then spend wastefully to defend future budgets.",
-      "aHash": "f377edf8134993eac6213d9e89f312cc5cbe3d1154c58176152c4bfddd67117e"
-    },
-    {
-      "id": 9053,
-      "sourceGame": "agencyProtocol",
-      "q": "A firm centralizes pricing to prevent division managers from poaching customers from one another, but local managers complain headquarters lacks market knowledge. What tradeoff is being exposed?",
-      "options": [
-        "Centralization can improve coordination but sacrifice local information",
-        "Decentralization always eliminates agency costs",
-        "Centralization is always a form of adverse selection",
-        "Local information never matters when incentives are aligned"
-      ],
-      "tag": "centralization",
-      "type": "tradeoff",
-      "objective": "LO21.4",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "decision_rights_and_decentralization",
-      "secondarySkills": [
-        "coordination",
-        "agency_costs_and_alignment"
-      ],
-      "repairSkill": "decision_rights_and_decentralization",
-      "commonError": "assumes_one_decision_rights_structure_is_always_best",
-      "feedback": "Centralization can control conflicts across units. Decentralization can use local knowledge. The right design depends on the tradeoff.",
-      "aHash": "1012eff3d656cdcb43b8417707382c2b87d36a604417b1f0460da16e4a1075e2"
-    },
-    {
-      "id": 9054,
-      "sourceGame": "agencyProtocol",
-      "q": "A team bonus is paid equally. One worker quietly reduces effort because the group reward barely changes. What is the cleanest diagnosis?",
-      "options": [
-        "Shirking caused by hidden effort and weak individual accountability",
-        "Adverse selection caused by hidden type before hiring only",
-        "Transfer pricing caused by internal sales between divisions",
-        "Budget slack caused by overstated future costs"
-      ],
-      "tag": "shirking",
-      "type": "diagnosis",
-      "objective": "LO20.4",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "shirking_and_effort_incentives",
-      "secondarySkills": [
-        "hidden_action_after_contract",
-        "principal_agent_conflict"
-      ],
-      "repairSkill": "shirking_and_effort_incentives",
-      "commonError": "confuses_hidden_effort_after_contract_with_hidden_type_before_contract",
-      "feedback": "The worker’s effort is hard to observe after the agreement is in place. That is shirking as moral hazard.",
-      "aHash": "58123afa7b1a746a4c09801c87a955c79ce8e9892c380205c56974cecf3b5c75"
-    },
-    {
-      "id": 9055,
-      "sourceGame": "agencyProtocol",
-      "q": "A manager says, “We solved the agency problem because we monitor employees every minute.” What is wrong with that claim?",
-      "options": [
-        "Monitoring can reduce shirking but is costly and may distort effort toward visible tasks",
-        "Monitoring eliminates all hidden action at zero cost",
-        "Monitoring solves adverse selection before hiring but not moral hazard",
-        "Monitoring makes incentives unnecessary because agents stop responding to pay"
-      ],
-      "tag": "monitoring",
-      "type": "critique",
-      "objective": "LO20.3",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "monitoring_and_incentive_control",
-      "secondarySkills": [
-        "agency_costs_and_alignment",
-        "shirking_and_effort_incentives"
-      ],
-      "repairSkill": "monitoring_and_incentive_control",
-      "commonError": "assumes_more_monitoring_is_always_free_and_always_better",
-      "feedback": "Monitoring is useful but not magic. It costs resources and can push employees toward what is observed instead of what is valuable.",
-      "aHash": "de3707d14a18ce36766db92d8318ad476b4dfa2bb7c171091650a23ba1577ddf"
-    },
-    {
-      "id": 9056,
-      "sourceGame": "agencyProtocol",
-      "q": "An online marketplace shows verified purchases, seller response rates, and dispute outcomes. Why does this help buyers?",
-      "options": [
-        "It turns repeated behavior into information that reduces uncertainty about seller reliability",
-        "It eliminates every incentive problem because reviews are perfect",
-        "It creates moral hazard by hiding seller behavior before purchase",
-        "It sets the correct transfer price between buyer and seller"
-      ],
-      "tag": "reputation",
-      "type": "application",
-      "objective": "LO19.5",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "reputation_systems_and_market_quality",
-      "secondarySkills": [
-        "hidden_information_before_contract",
-        "credible_signaling_hidden_type"
-      ],
-      "repairSkill": "reputation_systems_and_market_quality",
-      "commonError": "treats_reputation_scores_as_perfect_information",
-      "feedback": "Reputation systems make past performance visible. They reduce information asymmetry, but they are still noisy and imperfect.",
-      "aHash": "aa699c030f9dfbfda8932341b5cb958a06b909fb9d8285cb678452783486910b"
-    },
-    {
-      "id": 9057,
-      "sourceGame": "agencyProtocol",
-      "q": "A firm requires applicants to complete a difficult unpaid skills test. Strong applicants pass cheaply because they already have the skill; weak applicants find it costly. What is this?",
-      "options": [
-        "Screening, because the firm designs a test to reveal hidden applicant type",
-        "Signaling, because the applicant independently chooses a costly signal with no firm filter",
-        "Moral hazard, because effort falls after hiring",
-        "Transfer pricing, because two divisions trade internally"
-      ],
-      "tag": "screening",
-      "type": "classification",
-      "objective": "LO19.3",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "screening_hidden_type",
-      "secondarySkills": [
-        "hidden_information_before_contract"
-      ],
-      "repairSkill": "screening_hidden_type",
-      "commonError": "confuses_screening_with_signaling_because_both_reveal_type",
-      "feedback": "The less-informed party designs the filter. That makes it screening, even though the applicant’s response reveals type.",
-      "aHash": "5fc400cd56d9610c47735d990b25534fb55b78bed4f30deed55ee72a7841686c"
-    },
-    {
-      "id": 9058,
-      "sourceGame": "agencyProtocol",
-      "q": "A consultant voluntarily earns a hard certification before bidding for contracts. Clients did not require it, but they treat it as credible. Why?",
-      "options": [
-        "The certification is a signal if high-quality consultants can obtain it at lower net cost or greater benefit",
-        "It is screening because clients designed the certification for this specific contract",
-        "It is moral hazard because consultants become careless after winning bids",
-        "It is budget gaming because the consultant is protecting next year’s target"
-      ],
-      "tag": "signaling",
-      "type": "classification",
-      "objective": "LO19.4",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "credible_signaling_hidden_type",
-      "secondarySkills": [
-        "hidden_information_before_contract"
-      ],
-      "repairSkill": "credible_signaling_hidden_type",
-      "commonError": "calls_a_signal_credible_even_when_it_is_equally_easy_for_low_quality_types",
-      "feedback": "A signal must separate types. It works only if the cost-benefit tradeoff differs across quality levels.",
-      "aHash": "49d4f743fd8d8fc824b9fe1ceb53174ed0a952da8a5da11dbb5155f150dc6a9a"
-    },
-    {
-      "id": 9059,
-      "sourceGame": "agencyProtocol",
-      "q": "A CEO is paid heavily in stock options. The plan aligns incentives with shareholders, but also encourages very risky projects. What should the board recognize?",
-      "options": [
-        "Incentive alignment can reduce one agency problem while creating another distortion",
-        "Stock options eliminate residual loss and monitoring costs entirely",
-        "Risky projects prove adverse selection occurred before hiring",
-        "The CEO has become a cost center rather than an agent"
-      ],
-      "tag": "agency_costs",
-      "type": "tradeoff",
-      "objective": "LO21.3",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "agency_costs_and_alignment",
-      "secondarySkills": [
-        "principal_agent_conflict",
-        "metric_gaming_and_unintended_responses"
-      ],
-      "repairSkill": "agency_costs_and_alignment",
-      "commonError": "assumes_any_incentive_pay_fully_solves_agency_costs",
-      "feedback": "Incentive contracts are tradeoffs. They can improve alignment while changing the agent’s risk-taking incentives.",
-      "aHash": "cea4bc624cdae062663bb54ab315f0adc15f3fac1a5e915fe2e1b79a927f3ea8"
-    },
-    {
-      "id": 9060,
-      "sourceGame": "agencyProtocol",
-      "q": "A principal cannot observe an agent’s effort, only noisy output. A storm lowers output despite strong effort. Why is this hard?",
-      "options": [
-        "Output-based pay may punish bad luck and reward luck, not just effort",
-        "The problem disappears because output is observable",
-        "The problem is only adverse selection before the contract",
-        "The solution is always to centralize every decision"
-      ],
-      "tag": "principal_agent",
-      "type": "conceptual",
-      "objective": "LO21.1",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "principal_agent_conflict",
-      "secondarySkills": [
-        "monitoring_and_incentive_control",
-        "agency_costs_and_alignment"
-      ],
-      "repairSkill": "principal_agent_conflict",
-      "commonError": "assumes_observable_output_perfectly_reveals_agent_effort",
-      "feedback": "Principal-agent problems are harder when effort is hidden and outcomes are noisy. Output is evidence, not perfect proof.",
-      "aHash": "02795430bd823a69ca7413eda2a5c81091b067a903b3bdebf2a7815c4ff1732b"
-    },
-    {
-      "id": 9061,
-      "sourceGame": "agencyProtocol",
-      "q": "A hotel division is rewarded for room revenue, while food service is penalized for labor cost. A high-service package would raise total profit, but both divisions resist. What is missing?",
-      "options": [
-        "Coordination across divisions and incentives tied to total firm value",
-        "More adverse selection among hotel guests",
-        "A warranty signal from the food division",
-        "A lower insurance premium for travelers"
-      ],
-      "tag": "coordination",
-      "type": "integration",
-      "objective": "LO22.5",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "cross_functional_coordination",
-      "secondarySkills": [
-        "total_firm_profit_alignment",
-        "profit_center_evaluation"
-      ],
-      "repairSkill": "cross_functional_coordination",
-      "commonError": "analyzes_each_division_in_isolation_despite_joint_value_creation",
-      "feedback": "Specialized divisions can block valuable joint actions when their metrics reward local performance instead of the full package outcome.",
-      "aHash": "0904255022899637b6de6bd702ca28fc7e5e1727f57c8a3b0c54e9ce2916a1e9"
-    },
-    {
-      "id": 9062,
-      "sourceGame": "agencyProtocol",
-      "q": "A functional organization produces deep expertise, but projects stall because finance, operations, and marketing protect their own priorities. What is the tradeoff?",
-      "options": [
-        "Functional specialization improves expertise but can create silos that require coordination mechanisms",
-        "Functional units eliminate coordination costs by separating workers",
-        "Functional units always outperform multidivisional structures",
-        "The issue must be moral hazard because every delay is shirking"
-      ],
-      "tag": "functional_units",
-      "type": "tradeoff",
-      "objective": "LO22.4",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "functional_specialization",
-      "secondarySkills": [
-        "cross_functional_coordination"
-      ],
-      "repairSkill": "functional_specialization",
-      "commonError": "sees_specialization_benefits_but_ignores_silo_costs",
-      "feedback": "Functional units create expertise. The cost is that specialized departments can become silos unless coordination is managed.",
-      "aHash": "f873e9a44c6dda32e0ad764ced85271464ad7e005722a38844c695f76a9f4700"
-    },
-    {
-      "id": 9063,
-      "sourceGame": "agencyProtocol",
-      "q": "A multidivisional firm lets each product division manage operations and profit, but shared brand damage from one division hurts all divisions. What does this show?",
-      "options": [
-        "Divisional accountability helps, but interdependence still creates coordination and agency problems",
-        "Multidivisional structure eliminates all external effects between divisions",
-        "Shared brand damage is only adverse selection before purchase",
-        "Each division should ignore total firm profit once profit centers exist"
-      ],
-      "tag": "multidivisional",
-      "type": "application",
-      "objective": "LO22.6",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "multidivisional_accountability",
-      "secondarySkills": [
-        "coordination",
-        "total_firm_profit_alignment"
-      ],
-      "repairSkill": "multidivisional_accountability",
-      "commonError": "assumes_divisional_structure_solves_all_coordination_problems",
-      "feedback": "Divisions improve accountability, but shared assets like brand reputation still require firm-level coordination.",
-      "aHash": "c2466e11c7197f6ad63272669e00a3cdc6cc0749c6b8a3351fae41f5c3e10c58"
-    },
-    {
-      "id": 9064,
-      "sourceGame": "agencyProtocol",
-      "q": "A seller offers a money-back guarantee, collects strong reviews over time, and accepts platform penalties for disputes. Which explanation is strongest?",
-      "options": [
-        "The seller is combining signals and reputation to reduce buyer fear of hidden quality",
-        "The seller is using monitoring to prevent employee shirking",
-        "The seller is creating budget slack for next year",
-        "The seller is setting an internal transfer price"
-      ],
-      "tag": "reputation",
-      "type": "integration",
-      "objective": "LO19.5",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "reputation_systems_and_market_quality",
-      "secondarySkills": [
-        "credible_signaling_hidden_type",
-        "hidden_information_before_contract"
-      ],
-      "repairSkill": "reputation_systems_and_market_quality",
-      "commonError": "misses_that_multiple_information_tools_can_stack",
-      "feedback": "Guarantees, reviews, and penalties all make hidden quality less hidden. They work together against information asymmetry.",
-      "aHash": "617bb11214a61f7772a5bc11f9315bee41c8003ceeb5029f8afe99eda26ba4cc"
-    },
-    {
-      "id": 9065,
-      "sourceGame": "agencyProtocol",
-      "q": "An insurance buyer installs fewer alarms after buying full coverage. Which contract change most directly targets the problem?",
-      "options": [
-        "A deductible or co-pay that keeps the buyer exposed to some loss",
-        "A single average premium with no risk classification",
-        "A rule banning all screening by insurers",
-        "A transfer price equal to the buyer’s premium"
-      ],
-      "tag": "moral_hazard",
-      "type": "policy application",
-      "objective": "LO20.2",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "hidden_action_after_contract",
-      "secondarySkills": [
-        "risk_transfer_and_pooling"
-      ],
-      "repairSkill": "hidden_action_after_contract",
-      "commonError": "uses_pre_contract_screening_for_a_post_contract_behavior_problem",
-      "feedback": "The problem is behavior after coverage. Deductibles and co-pays preserve incentives to take care.",
-      "aHash": "1418e0deb4e5ecee77da309a2f56cbcc3cde12a6716e2306fd15ce6b59c812c5"
-    },
-    {
-      "id": 9066,
-      "sourceGame": "agencyProtocol",
-      "q": "A lender cannot perfectly observe whether a borrower takes a safe or risky project after receiving funds. Which tool best targets the post-loan problem?",
-      "options": [
-        "Covenants and monitoring tied to project behavior",
-        "A higher average premium for all insurance buyers",
-        "A seller warranty before the loan is issued",
-        "A functional structure separating marketing and finance"
-      ],
-      "tag": "lending",
-      "type": "policy application",
-      "objective": "LO20.5",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "borrower_incentives_and_lender_risk",
-      "secondarySkills": [
-        "monitoring_and_incentive_control",
-        "hidden_action_after_contract"
-      ],
-      "repairSkill": "borrower_incentives_and_lender_risk",
-      "commonError": "treats_post_loan_project_choice_as_pre_loan_hidden_type_only",
-      "feedback": "Once funds are issued, the lender worries about hidden action. Covenants and monitoring constrain risky behavior.",
-      "aHash": "aba1d8f3442d599ba3b9eaa532191972a3334c39971616d8768c7cefd2c8dafa"
-    },
-    {
-      "id": 9067,
-      "sourceGame": "agencyProtocol",
-      "q": "A firm pays plant managers for output volume. Quality falls, warranty claims rise, and customer retention drops. What is the incentive lesson?",
-      "options": [
-        "Narrow performance measures can induce agents to sacrifice unmeasured value",
-        "Volume pay always aligns agents with firm profit",
-        "Warranty claims prove the original applicants were high risk",
-        "Quality loss is impossible when output is observable"
-      ],
-      "tag": "gaming_incentives",
-      "type": "application",
-      "objective": "LO21.5",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "metric_gaming_and_unintended_responses",
-      "secondarySkills": [
-        "principal_agent_conflict",
-        "total_firm_profit_alignment"
-      ],
-      "repairSkill": "metric_gaming_and_unintended_responses",
-      "commonError": "trusts_single_metrics_even_when_agents_can_shift_costs_to_unmeasured_dimensions",
-      "feedback": "Agents respond to the metric. If quality and retention are not rewarded, volume incentives can damage total value.",
-      "aHash": "345c9a5d1af9c23a6d49d0d5face39c84805c74f661bbcce8fc1d06d40fcfb1a"
-    },
-    {
-      "id": 9068,
-      "sourceGame": "agencyProtocol",
-      "q": "A local manager has superior customer information but also strong incentives to boost her division’s numbers at headquarters’ expense. What governance question is being asked?",
-      "options": [
-        "How much decision authority should be decentralized given both local knowledge and agency costs",
-        "Whether insurance can eliminate every risk",
-        "Whether reputation systems always create perfect information",
-        "Whether transfer prices should always be zero"
-      ],
-      "tag": "centralization",
-      "type": "tradeoff",
-      "objective": "LO21.4",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "decision_rights_and_decentralization",
-      "secondarySkills": [
-        "agency_costs_and_alignment",
-        "principal_agent_conflict"
-      ],
-      "repairSkill": "decision_rights_and_decentralization",
-      "commonError": "ignores_either_local_information_or_local_incentive_conflict",
-      "feedback": "Decentralization uses local knowledge but gives power to agents with their own incentives. Governance balances both.",
-      "aHash": "222ad0d2d442c29f3695946ab6f711a0410d217add26f63cfb32e189d1295a5a"
-    },
-    {
-      "id": 9069,
-      "sourceGame": "agencyProtocol",
-      "q": "Two divisions can complete an internal transfer. Seller opportunity cost is $40, buyer value is $70, and the transfer price is set at $80. What happens?",
-      "options": [
-        "The transfer may be rejected even though it creates $30 of total firm value",
-        "The transfer must occur because the buyer value exceeds seller opportunity cost",
-        "The transfer destroys $10 of total firm value",
-        "The transfer price proves there is adverse selection"
-      ],
-      "tag": "transfer_pricing",
-      "type": "calculation",
-      "objective": "LO22.2",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "transfer_pricing_internal_trade",
-      "secondarySkills": [
-        "total_firm_profit_alignment"
-      ],
-      "repairSkill": "transfer_pricing_internal_trade",
-      "commonError": "uses_transfer_price_as_total_firm_value_instead_of_internal_allocation",
-      "feedback": "The real firm value is $70 - $40 = $30. But at a price of $80, the buyer division refuses. Bad transfer pricing blocks value.",
-      "aHash": "558acfc3266653c9dd812dac9d9b193ae21844c47a4b67baa558a6f01182eafb"
-    },
-    {
-      "id": 9070,
-      "sourceGame": "agencyProtocol",
-      "q": "A profit center earns an extra $25,000 by refusing to share capacity with another unit, causing the other unit to lose $90,000. What is the firm-level result?",
-      "options": [
-        "Local gain of $25,000 but total firm loss of $65,000",
-        "Total firm gain of $25,000 because the profit center improved",
-        "Total firm gain of $90,000 because the other unit was disciplined",
-        "No firm-level effect because divisions are separate"
-      ],
-      "tag": "profit_center",
-      "type": "calculation",
-      "objective": "LO22.3",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "profit_center_evaluation",
-      "secondarySkills": [
-        "coordination",
-        "total_firm_profit_alignment"
-      ],
-      "repairSkill": "profit_center_evaluation",
-      "commonError": "stops_analysis_at_the_profit_center_result",
-      "feedback": "The firm-level effect is +25,000 - 90,000 = -65,000. Profit-center incentives can harm total firm value.",
-      "aHash": "b0c2d80a0afee392a91d7464376f732e5357a9385cdcab4b27493d44cf69e7e1"
-    },
-    {
-      "id": 9071,
-      "sourceGame": "agencyProtocol",
-      "q": "An employee accepts a job after passing a screening test, then later works less hard because effort is hard to observe. What sequence occurred?",
-      "options": [
-        "Screening addressed hidden type before hiring; moral hazard appeared after hiring",
-        "Signaling occurred after hiring; adverse selection appeared after monitoring",
-        "Transfer pricing addressed hidden effort; budget gaming appeared before hiring",
-        "Insurance eliminated both hidden type and hidden action"
-      ],
-      "tag": "moral_hazard",
-      "type": "timeline integration",
-      "objective": "LO21.2",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "hidden_action_after_contract",
-      "secondarySkills": [
-        "screening_hidden_type",
-        "principal_agent_conflict"
-      ],
-      "repairSkill": "hidden_action_after_contract",
-      "commonError": "fails_to_separate_before_contract_type_from_after_contract_action",
-      "feedback": "The timing matters. Screening targets hidden type before hiring; hidden effort after hiring is moral hazard.",
-      "aHash": "c9cf47d7564018156ce727ea8f36bcfc00b0a21fc99e62f62e783f3fb2ddfbd7"
-    },
-    {
-      "id": 9072,
-      "sourceGame": "agencyProtocol",
-      "q": "A buyer says, “This seller has 10,000 five-star reviews, so there is no information asymmetry.” What is the best response?",
-      "options": [
-        "Reviews reduce uncertainty, but they are noisy and can be manipulated or outdated",
-        "Reviews create perfect information and eliminate all market failure",
-        "Reviews are only useful after the contract for monitoring employee effort",
-        "Reviews are transfer prices set by customers"
-      ],
-      "tag": "reputation",
-      "type": "critique",
-      "objective": "LO19.5",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "reputation_systems_and_market_quality",
-      "secondarySkills": [
-        "hidden_information_before_contract"
-      ],
-      "repairSkill": "reputation_systems_and_market_quality",
-      "commonError": "treats_reputation_as_perfect_information",
-      "feedback": "Reputation systems reduce adverse selection, but they do not make hidden quality perfectly observable.",
-      "aHash": "200bf03e6fa6ee9516f4bc0761f87983b8c127cd2d68ad087ba01e75bf2652d0"
-    },
-    {
-      "id": 9073,
-      "sourceGame": "agencyProtocol",
-      "q": "A parent company wants divisions to act like owners but also wants them to cooperate on shared customers. Which measurement problem is central?",
-      "options": [
-        "Designing metrics that reward local accountability without punishing cooperation that raises total firm profit",
-        "Choosing a premium that eliminates moral hazard for all buyers",
-        "Preventing all signaling because signals are always wasteful",
-        "Ensuring cost centers maximize revenues instead of controlling costs"
-      ],
-      "tag": "multidivisional",
-      "type": "synthesis",
-      "objective": "LO22.6",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_agency_protocol",
-      "primarySkill": "multidivisional_accountability",
-      "secondarySkills": [
-        "coordination",
-        "profit_center_evaluation",
-        "total_firm_profit_alignment"
-      ],
-      "repairSkill": "multidivisional_accountability",
-      "commonError": "chooses_local_accountability_or_coordination_as_if_they_cannot_both_matter",
-      "feedback": "Multidivisional structures need accountability, but shared customers and firm-wide value require coordination across divisions.",
-      "aHash": "efb74c219f304cd64fcd27633cd2b455540b1ff81aeb9e65a7062591761d4371"
+      "feedback": "Planning needs truthful information, while a self-set bonus hurdle rewards distortion. Carryover can reduce waste but does not by itself fix dishonest forecasts. Independent benchmarks and auditable revisions address both roles.",
+      "aHash": "f9ae7f642ab8ca76ac56c14e6d3560cba20165dda29086c417c1d7a6c420be58"
     }
   ],
   "legendaryBoss": [
     {
-      "id": 9100,
-      "sourceGame": "agencyProtocol",
-      "q": "The Underwriter's final file shows generous coverage attracting the riskiest customers before purchase, then those customers taking fewer precautions after purchase. What two problems must be separated?",
-      "options": [
-        "Adverse selection before the contract and moral hazard after the contract",
-        "Moral hazard before the contract and adverse selection after the contract",
-        "Transfer pricing before the contract and budget gaming after the contract",
-        "Screening after the contract and signaling before the contract"
-      ],
-      "tag": "adverse_selection",
-      "type": "integration",
-      "objective": "LO20.1",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "hidden_information_before_contract",
-      "secondarySkills": [],
-      "repairSkill": "hidden_information_before_contract",
-      "commonError": "confuses_hidden_information_before_contract_with_hidden_action_after_contract",
-      "feedback": "Boss rule: timing first. Hidden type before the deal is adverse selection; hidden action after the deal is moral hazard.",
-      "aHash": "a7944835f26d6888d29dd7eec3a08bb7f9007a47810f702ce3a7f2c3c4149792"
-    },
-    {
-      "id": 9101,
-      "sourceGame": "agencyProtocol",
-      "q": "The Underwriter can use medical exams, waiting periods, deductibles, and monitoring. Which grouping is correct?",
-      "options": [
-        "Medical exams and waiting periods screen before coverage; deductibles and monitoring affect behavior after coverage",
-        "Deductibles screen hidden risk before purchase; medical exams reduce careless behavior after coverage",
-        "All tools only solve seller reputation problems",
-        "All tools only affect transfer prices inside a firm"
-      ],
-      "tag": "screening",
-      "type": "integration",
-      "objective": "LO20.1",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "screening_hidden_type",
-      "secondarySkills": [],
-      "repairSkill": "screening_hidden_type",
-      "commonError": "confuses_screening_by_the_less_informed_party_with_signaling_by_the_informed_party",
-      "feedback": "Screening tools sort types before the contract. Deductibles and monitoring change incentives after the contract.",
-      "aHash": "dfe0c629216edc762629ec4fd8dc1d948e0be70dbf6d3d8695cb16a065357544"
-    },
-    {
-      "id": 9102,
-      "sourceGame": "agencyProtocol",
-      "q": "If an insurer ignores adverse selection and moral hazard at the same time, what happens to the pool and behavior?",
-      "options": [
-        "The pool may become riskier and insured parties may take less care",
-        "Only low-risk buyers remain and everyone becomes more careful",
-        "Premiums become irrelevant because risk disappears",
-        "The issue turns into a cost-center problem only"
-      ],
-      "tag": "insurance",
-      "type": "multi-step",
-      "objective": "LO20.1",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "risk_transfer_and_pooling",
-      "secondarySkills": [],
-      "repairSkill": "risk_transfer_and_pooling",
-      "commonError": "treats_insurance_as_eliminating_risk_instead_of_transferring_and_pooling_it",
-      "feedback": "Bad insurance design can worsen both who enters the pool and how people behave after coverage.",
-      "aHash": "c21d80b090dd2b07c451269c1038c3e46a381f7a30327d3cd57c536e518862db"
-    },
-    {
-      "id": 9103,
-      "sourceGame": "agencyProtocol",
-      "q": "A platform is flooded with unknown sellers. Some sellers buy fake reviews, while reliable sellers offer costly warranties. What matters most for the warranty to work?",
-      "options": [
-        "It must be credible and harder for low-quality sellers to mimic",
-        "It must be free for every seller to copy",
-        "It must be hidden from buyers until after purchase",
-        "It must be set by the platform as a transfer price"
-      ],
-      "tag": "signaling",
-      "type": "trap",
-      "objective": "LO19.4",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "credible_signaling_hidden_type",
-      "secondarySkills": [],
-      "repairSkill": "credible_signaling_hidden_type",
-      "commonError": "assumes_any_claim_is_a_credible_signal_without_costly_verification",
-      "feedback": "Signals work when imitation is costly for low-quality types.",
-      "aHash": "a8fbcbb0c136e3040da49c18ee661ca919411885733bbffb8abf636bce8b91b6"
-    },
-    {
-      "id": 9104,
-      "sourceGame": "agencyProtocol",
-      "q": "A buyer uses verified reviews, inspection reports, and seller histories before purchase. What is the buyer doing?",
-      "options": [
-        "Screening to reduce hidden-quality problems before the transaction",
-        "Creating moral hazard after the sale",
-        "Bonding the seller after employment begins",
-        "Gaming a budget target"
-      ],
-      "tag": "screening",
-      "type": "interpretation",
-      "objective": "LO19.3",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "screening_hidden_type",
-      "secondarySkills": [],
-      "repairSkill": "screening_hidden_type",
-      "commonError": "confuses_screening_by_the_less_informed_party_with_signaling_by_the_informed_party",
-      "feedback": "The uninformed side is gathering information before purchase, so this is screening.",
-      "aHash": "58c3085107a2ce181614f4aa984acc02af3d040ed9baebcc88a46d4c904063e9"
-    },
-    {
-      "id": 9105,
-      "sourceGame": "agencyProtocol",
-      "q": "A marketplace combines verified reviews with penalties for fake ratings. Why does that improve the reputation system?",
-      "options": [
-        "It makes reputation information more credible and reduces adverse selection",
-        "It hides seller quality from buyers",
-        "It rewards low-quality sellers for pooling with good sellers",
-        "It changes internal division accountability"
-      ],
-      "tag": "reputation",
-      "type": "integration",
-      "objective": "LO19.5",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "reputation_systems_and_market_quality",
-      "secondarySkills": [],
-      "repairSkill": "reputation_systems_and_market_quality",
-      "commonError": "treats_reviews_as_perfect_information_instead_of_noisy_market_discipline",
-      "feedback": "Reputation systems only help if the information is credible enough for buyers to trust.",
-      "aHash": "319e34321b41ee94dd7d8d22da601cb8155b5d183f7a537aa6ff883230a51f1d"
-    },
-    {
-      "id": 9106,
-      "sourceGame": "agencyProtocol",
-      "q": "The Auditor sees a borrower take a loan for a safe project, then secretly shift funds into a risky project with private upside. What is the strongest diagnosis?",
-      "options": [
-        "Moral hazard in lending after funds are received",
-        "Adverse selection from seller quality before purchase",
-        "A transfer-pricing conflict between divisions",
-        "A functional coordination failure"
-      ],
-      "tag": "lending",
-      "type": "interpretation",
-      "objective": "LO20.5",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "borrower_incentives_and_lender_risk",
-      "secondarySkills": [],
-      "repairSkill": "borrower_incentives_and_lender_risk",
-      "commonError": "assumes_borrowers_and_lenders_share_the_same_risk_incentives_after_funding",
-      "feedback": "The borrower changes action after the loan is made, and the lender cannot perfectly observe or control it.",
-      "aHash": "1bf0e12d47b0f3bbc9eb76e18a3286b018c7e5ef21a4c5c5f2dd50b3f7a4a3e1"
-    },
-    {
-      "id": 9107,
-      "sourceGame": "agencyProtocol",
-      "q": "A lender uses collateral, covenants, and staged funding. Why not just use a higher interest rate?",
-      "options": [
-        "A higher rate can worsen risk-taking incentives, while controls give the borrower skin in the game and restrict hidden actions",
-        "A higher rate eliminates all borrower moral hazard automatically",
-        "Collateral and covenants are only screening tools before the loan application",
-        "Staged funding is a seller reputation system"
-      ],
-      "tag": "lending",
-      "type": "multi-step",
-      "objective": "LO20.5",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "borrower_incentives_and_lender_risk",
-      "secondarySkills": [],
-      "repairSkill": "borrower_incentives_and_lender_risk",
-      "commonError": "assumes_borrowers_and_lenders_share_the_same_risk_incentives_after_funding",
-      "feedback": "Loan contracts must manage behavior after funding, not merely price the loan.",
-      "aHash": "1709ac159cd004bfbf141164894c00908f8d346ec3ccc412ae88040e38e3e8a7"
-    },
-    {
-      "id": 9108,
-      "sourceGame": "agencyProtocol",
-      "q": "A manager wants to reduce shirking without destroying useful discretion. What policy is most balanced?",
-      "options": [
-        "Measure meaningful outputs, use selective monitoring, and preserve autonomy where local information matters",
-        "Monitor every action constantly and ignore morale or local knowledge",
-        "Eliminate all incentives because monitoring is imperfect",
-        "Use only seller ratings to evaluate employees"
-      ],
-      "tag": "shirking",
-      "type": "integration",
-      "objective": "LO20.4",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "shirking_and_effort_incentives",
-      "secondarySkills": [],
-      "repairSkill": "shirking_and_effort_incentives",
-      "commonError": "ignores_hidden_effort_and_free_riding_in_team_or_employee_settings",
-      "feedback": "The goal is efficient control, not maximum control at any cost.",
-      "aHash": "086caaefd51889c710a24fc5b9fd048ee8a817d24a70b49d5a30ddabc91afcfe"
-    },
-    {
-      "id": 9109,
-      "sourceGame": "agencyProtocol",
-      "q": "The Principal watches managers hit every metric while customers leave, quality falls, and long-term value declines. What went wrong?",
-      "options": [
-        "The measured incentives were not aligned with the principal's real objective",
-        "The agents ignored incentives completely",
-        "The firm had too much adverse selection before hiring and no moral hazard after hiring",
-        "The firm should evaluate only one simple metric forever"
-      ],
-      "tag": "gaming",
-      "type": "integration",
-      "objective": "LO21.5",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "gaming",
-      "secondarySkills": [],
-      "repairSkill": "gaming",
-      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "Agents can hit the measured target while missing the real goal. That is incentive gaming.",
-      "aHash": "7fc2e046fda2999dc09e61efbf2c394317d665c3f21bedd12221ed801e285e2e"
-    },
-    {
       "id": 9110,
       "sourceGame": "agencyProtocol",
-      "q": "A principal pays for audits, requires manager guarantees, and still loses value from imperfect decisions. Which agency-cost trio is present?",
+      "q": "A board compares three contracts, with annual costs in thousands. Audit-only: audit 18, remaining value loss 29. Agent guarantee: agent resource cost 12 reimbursed through pay, verification 8, remaining loss 24. Combined: control resources 35, remaining loss 12. Which minimizes total agency cost?",
       "options": [
-        "Monitoring costs, bonding costs, and residual loss",
-        "Premiums, deductibles, and claims",
-        "Market prices, marginal costs, and fixed costs",
-        "Functional units, product divisions, and seller ratings"
+        "Audit-only at 18 because the principal pays the audit directly",
+        "Combined at 12 because only remaining loss counts",
+        "Agent guarantee at 44; audit-only and combined both cost 47",
+        "Agent guarantee at 32 because compensated agent costs do not count"
       ],
       "tag": "agency_costs",
-      "type": "definition",
+      "type": "integration",
       "objective": "LO21.3",
       "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
+      "conceptCluster": "legendaryBoss_agencyProtocol_agency_costs_and_alignment",
       "primarySkill": "agency_costs_and_alignment",
       "secondarySkills": [],
       "repairSkill": "agency_costs_and_alignment",
       "commonError": "treats_monitoring_costs_as_the_only_agency_cost",
-      "feedback": "Agency costs include monitoring, bonding, and residual loss.",
-      "aHash": "7382488a9d87a0e5578f851063a670da7b1609f0b22dd07c8518988111fc9730"
+      "feedback": "The totals are 18+29=47, 12+8+24=44 and 35+12=47. Bonding is not free merely because resources are initially committed by the agent.",
+      "aHash": "869cb0bb2783759edbc86efdaf4e3d19f926a3ae830a5ca561140e21f4b22370",
+      "bossStage": "opening"
     },
     {
       "id": 9111,
       "sourceGame": "agencyProtocol",
-      "q": "A bonus based on short-term profit causes deferred maintenance, employee burnout, and lower long-term firm value. What should be redesigned?",
+      "q": "A board can replace the guarantee contract costing 44 in total agency cost with output pay. Output pay leaves 15 residual loss, requires 9 measurement cost and 24 extra pay to compensate the agent for uncontrollable output risk. All figures are thousands and no costs overlap. Which decision follows?",
       "options": [
-        "The incentive measure, because it rewards a narrow proxy rather than durable value creation",
-        "The warranty system, because warranties solve all principal-agent conflicts",
-        "The transfer price only, because all internal problems are transfer pricing problems",
-        "The screening test only, because all problems occur before hiring"
+        "Keep the guarantee only if output pay fails to increase measured effort",
+        "Use output pay: 15 is below the guarantee's residual loss of 24",
+        "Use output pay: compensation for risk is a transfer and never affects the firm's contract cost",
+        "Keep the guarantee: output pay costs 48, despite its lower residual loss"
       ],
       "tag": "incentives",
-      "type": "multi-step",
+      "type": "integration",
       "objective": "LO21.3",
       "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
+      "conceptCluster": "legendaryBoss_agencyProtocol_incentives",
       "primarySkill": "incentives",
       "secondarySkills": [],
       "repairSkill": "incentives",
       "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "Pay should be tied to measures that better match the principal's full objective.",
-      "aHash": "518b09d9c31fbcbc60be4b5bf5cac5d5f78e78cac14808b2c9c60680bf40fd72"
+      "feedback": "From the principal's contract-cost perspective, 15+9+24=48 exceeds 44. Stronger incentives can be outweighed by measurement and risk-compensation costs.",
+      "aHash": "5da1b9ea7099637c653d7843a8bc720b580ca31de9a01f65578d1b05003d5e9e",
+      "bossStage": "middle"
     },
     {
       "id": 9112,
       "sourceGame": "agencyProtocol",
-      "q": "A firm decentralizes because branch managers know local customers, but branches manipulate discounts to inflate local sales. What is the best design response?",
+      "q": "Branches have private local-demand information. Local pricing creates 90 of contribution but 25 of cross-branch poaching losses. Central pricing avoids poaching but creates only 60 because quotes are slow. A joint-review rule retains 85 contribution, reduces poaching to 8 and costs 6 to administer. Which structure yields the most net value?",
       "options": [
-        "Keep useful local decision rights while changing metrics and controls to reduce local gaming",
-        "Centralize every tiny decision forever because local information is worthless",
-        "Let branches maximize any local metric because decentralization solves agency conflict",
-        "Stop measuring outcomes because measurement creates all problems"
+        "Joint review at 71, versus local 65 and central 60",
+        "Pure local pricing at 90 because poaching moves revenue within the firm",
+        "Pure central pricing at 60 because any spillover makes decentralization inefficient",
+        "Joint review at 79 because review cost is a fixed administrative expense"
       ],
       "tag": "organization",
       "type": "integration",
       "objective": "LO21.4",
       "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
+      "conceptCluster": "legendaryBoss_agencyProtocol_organization",
       "primarySkill": "organization",
       "secondarySkills": [],
       "repairSkill": "organization",
       "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "Good organization design balances information advantages against incentive-control problems.",
-      "aHash": "ed0cbee1357f71a16e4d83871195cabc05700c94eab08fc4f1e3684a8034c472"
+      "feedback": "Compare all consequences: local 90-25=65; central 60; joint review 85-8-6=71. The hybrid exploits local knowledge while coordinating costly spillovers.",
+      "aHash": "3a4e2a1e21030c6cce1e6384e2a43136dd343b093a8acff8b1301e90399eb017",
+      "bossStage": "opening"
     },
     {
       "id": 9113,
       "sourceGame": "agencyProtocol",
-      "q": "A headquarters team knows less about local demand but cares more about total firm profit. A branch knows demand but cares about its own bonus. What is the tradeoff?",
+      "q": "The joint-review rule yields net value 71 before any further change. Headquarters proposes reviewing every quote. That prevents the remaining 8 of poaching loss, but adds 5 review cost and loses 9 contribution from slower response. What should it do?",
       "options": [
-        "Centralization improves control; decentralization uses local information",
-        "Centralization always improves local information and control",
-        "Decentralization always aligns incentives perfectly",
-        "Neither structure affects information or incentives"
+        "Review every quote: eliminating poaching is the only relevant goal",
+        "Keep targeted review: broader review reduces net value by 6",
+        "Review every quote: the saved 8 exceeds the 5 review invoice",
+        "Remove all review: delay means coordination can never create value"
       ],
       "tag": "organization",
-      "type": "trap",
+      "type": "integration",
       "objective": "LO21.4",
       "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
+      "conceptCluster": "legendaryBoss_agencyProtocol_organization",
       "primarySkill": "organization",
       "secondarySkills": [],
       "repairSkill": "organization",
       "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "Decision rights determine who uses information and whose incentives matter most.",
-      "aHash": "9f09b03e77da60d26f7431dd716548e0b6d0e275fdfa77210f3db7dfe259711a"
-    },
-    {
-      "id": 9114,
-      "sourceGame": "agencyProtocol",
-      "q": "A regional division rejects a policy that would lower its own score but raise total company profit. What is headquarters' problem?",
-      "options": [
-        "Local incentives conflict with parent-company value maximization",
-        "The division is solving adverse selection through screening",
-        "The parent should maximize only the division's score",
-        "The issue is only employee shirking"
-      ],
-      "tag": "parent_company",
-      "type": "interpretation",
-      "objective": "LO22.1",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "parent_company",
-      "secondarySkills": [],
-      "repairSkill": "parent_company",
-      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "The parent company must care about total firm profit, not just division-level scores.",
-      "aHash": "3f04fcd41aaccc2b036aa7866748f8f3719e28a99e1f6f9b8f827d797f6e0dff"
+      "feedback": "Broad review changes value by +8-5-9=-6. A remaining coordination loss does not imply that eliminating it is worth the information and delay costs.",
+      "aHash": "3a78f20d2377d1cf2b4fd67c91fb3426f3a3d9e38022a4a3e2af1a32583d3a71",
+      "bossStage": "middle"
     },
     {
       "id": 9115,
       "sourceGame": "agencyProtocol",
-      "q": "Division A has spare capacity and can produce internally below the outside price. Division B buys outside because the internal transfer price is too high. What should headquarters ask?",
+      "q": "A supplier division has 100 spare units, then must displace outside sales. MC is $24. Outside price is $60 with $4 avoidable selling cost. A buyer division needs 140 units and can buy outside at $58. What is the total firm saving from internal sourcing?",
       "options": [
-        "Whether the transfer price reflects the true opportunity cost and total-firm objective",
-        "Whether buyer reviews are verified before purchase",
-        "Whether employees are shirking after hiring",
-        "Whether customers have deductibles"
+        "$280: every unit must use the full-capacity opportunity cost",
+        "$4,760: all 140 units save 34",
+        "$4,400: 100×34 plus 40×25",
+        "$3,480: 100×34 plus 40×2"
       ],
       "tag": "transfer_pricing",
-      "type": "multi-step",
+      "type": "integration",
       "objective": "LO22.2",
       "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
+      "conceptCluster": "legendaryBoss_agencyProtocol_transfer_pricing_internal_trade",
       "primarySkill": "transfer_pricing_internal_trade",
       "secondarySkills": [],
       "repairSkill": "transfer_pricing_internal_trade",
       "commonError": "sets_transfer_price_from_division_politics_instead_of_opportunity_cost_and_total_firm_value",
-      "feedback": "The right internal price should guide decisions toward total firm value, not just local accounting wins.",
-      "aHash": "a2451edf5062093fcfe782001a18ee981f247a99cbcabaad7707a5504bba36ce"
+      "feedback": "The first 100 cost the firm 24 rather than 58, saving 34 each. The remaining 40 forgo net outside revenue of 60-4=56 and save 58-56=2 each. Capacity changes the relevant transfer margin.",
+      "aHash": "5d21035976b00ede635f6eb29fe41d9ce9c1cd5d120a780b0c15f4773894fb3f",
+      "bossStage": "opening"
     },
     {
       "id": 9116,
       "sourceGame": "agencyProtocol",
-      "q": "A transfer price is used both to motivate the selling division and to guide the buying division's sourcing decision. Why is this hard?",
+      "q": "The supplier has 100 spare units; its MC is $24. Further internal units displace external sales at $60 with $4 avoided selling cost. The buyer can buy outside at $58. Which transfer rule makes both divisions strictly prefer all 140 efficient internal units?",
       "options": [
-        "One price may not perfectly serve both performance evaluation and efficient coordination",
-        "One price always solves every local-vs-total conflict",
-        "Transfer prices matter only for external market transactions",
-        "The buying division never responds to internal prices"
+        "A price between 24 and 58 for the first 100, and between 56 and 58 for the last 40",
+        "A uniform price of 24 for every unit, with no evaluation adjustment",
+        "A uniform price of 60 for every unit",
+        "A price of 56 for every unit, with strict supplier preference claimed for the last 40"
       ],
       "tag": "transfer_pricing",
-      "type": "trap",
+      "type": "integration",
       "objective": "LO22.2",
       "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
+      "conceptCluster": "legendaryBoss_agencyProtocol_transfer_pricing_internal_trade",
       "primarySkill": "transfer_pricing_internal_trade",
       "secondarySkills": [],
       "repairSkill": "transfer_pricing_internal_trade",
       "commonError": "sets_transfer_price_from_division_politics_instead_of_opportunity_cost_and_total_firm_value",
-      "feedback": "Transfer prices have multiple jobs. That is why they can create conflict.",
-      "aHash": "a0e7b409e1a9dc3dcdf73e8263b1a5b5e2ad78c2424ce55aa55609e5acc48687"
-    },
-    {
-      "id": 9117,
-      "sourceGame": "agencyProtocol",
-      "q": "A cost center cuts support quality to stay under budget; a profit center refuses cooperation to protect its margin. What is the common lesson?",
-      "options": [
-        "Incomplete performance measures can make units improve local scores while hurting total value",
-        "Cost centers and profit centers cannot have agency problems",
-        "Only cost centers respond to incentives",
-        "Only profit centers require coordination"
-      ],
-      "tag": "profit_center",
-      "type": "integration",
-      "objective": "LO22.3",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "profit_center_evaluation",
-      "secondarySkills": [],
-      "repairSkill": "profit_center_evaluation",
-      "commonError": "assumes_local_profit_center_success_always_improves_total_firm_profit",
-      "feedback": "Different unit types can still face the same basic agency problem: the measured target is not the true objective.",
-      "aHash": "2faed949378f309a789806de05157bada78688162918a8bea5176e594efa82f6"
-    },
-    {
-      "id": 9118,
-      "sourceGame": "agencyProtocol",
-      "q": "A support department is evaluated only on cost reduction, but its cuts slow every revenue-producing division. What should change?",
-      "options": [
-        "Evaluation should include service quality or downstream value, not cost alone",
-        "The support department should be rewarded only for deeper cuts",
-        "The parent should ignore downstream effects",
-        "The support unit should become invisible to measurement"
-      ],
-      "tag": "cost_center",
-      "type": "multi-step",
-      "objective": "LO22.3",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "cost_center_evaluation",
-      "secondarySkills": [],
-      "repairSkill": "cost_center_evaluation",
-      "commonError": "equates_cost_reduction_with_value_creation",
-      "feedback": "Cost control must be balanced against the value the unit creates for the rest of the firm.",
-      "aHash": "38a2bc0b0ca357de3a2811c1ba469122f0c8e978d1f904f308be9fbdc709a998"
-    },
-    {
-      "id": 9119,
-      "sourceGame": "agencyProtocol",
-      "q": "Marketing, operations, and finance each optimize their own function, but product launches keep failing. What organizational weakness is exposed?",
-      "options": [
-        "Functional silos and poor cross-functional coordination",
-        "Adverse selection in insurance markets",
-        "Borrower moral hazard after lending",
-        "Seller signaling through warranties"
-      ],
-      "tag": "functional_units",
-      "type": "interpretation",
-      "objective": "LO22.5",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "functional_specialization",
-      "secondarySkills": [],
-      "repairSkill": "functional_specialization",
-      "commonError": "ignores_silos_created_by_functional_specialization",
-      "feedback": "Functional expertise helps, but departments must coordinate to execute shared outcomes.",
-      "aHash": "d7e03c749d2cb33d1a60cddb8ee4a01e4ee566bd0f82952e281f11275f581a37"
-    },
-    {
-      "id": 9120,
-      "sourceGame": "agencyProtocol",
-      "q": "A firm moves from functional departments to product divisions after expanding into several unrelated businesses. Why?",
-      "options": [
-        "Multidivisional structure can improve accountability for each business line",
-        "Functional structure always works better as complexity rises",
-        "Product divisions eliminate all coordination and incentive problems",
-        "The firm is mainly reducing buyer adverse selection"
-      ],
-      "tag": "multidivisional",
-      "type": "interpretation",
-      "objective": "LO22.6",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "multidivisional_accountability",
-      "secondarySkills": [],
-      "repairSkill": "multidivisional_accountability",
-      "commonError": "assumes_divisional_accountability_eliminates_coordination_and_agency_problems",
-      "feedback": "Business-line divisions make performance responsibility clearer in complex firms.",
-      "aHash": "f3fe6cb72f17d52f4be8252789480404ba9e5f436de23e5becf2a42a7926c9fb"
-    },
-    {
-      "id": 9121,
-      "sourceGame": "agencyProtocol",
-      "q": "A product division gets clear accountability but starts duplicating support functions and ignoring spillovers with other divisions. What is the lesson?",
-      "options": [
-        "Multidivisional structure improves accountability but can create duplication and interdivision coordination problems",
-        "Multidivisional structure eliminates every organizational tradeoff",
-        "Functional structure and multidivisional structure are identical",
-        "Division accountability removes the need for headquarters"
-      ],
-      "tag": "multidivisional",
-      "type": "trap",
-      "objective": "LO22.6",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "multidivisional_accountability",
-      "secondarySkills": [],
-      "repairSkill": "multidivisional_accountability",
-      "commonError": "assumes_divisional_accountability_eliminates_coordination_and_agency_problems",
-      "feedback": "No structure is magic. Divisions solve some problems and create others.",
-      "aHash": "49b0f29b64a44cdf03d79152df6f57b3d7414e696b75454b15e82ecd6c8083ec"
+      "feedback": "At spare capacity the minimum economic charge is 24. At full capacity it is 56. Strictly interior prices share positive surplus; a price of 56 leaves the supplier indifferent on displaced units.",
+      "aHash": "84eb46e012e498ee721f295dd2d2c37fc49b952e6589f144e41fd34437098c92",
+      "bossStage": "middle"
     },
     {
       "id": 9122,
       "sourceGame": "agencyProtocol",
-      "q": "A manager sandbags revenue forecasts, pads cost estimates, and spends leftover funds in December. What connects these behaviors?",
+      "q": "A manager's own cost forecast becomes the target for a bonus paid when actual cost is lower. Unspent funds also reduce next year's allocation. What pair of changes addresses both predictable responses?",
       "options": [
-        "Budget rules create incentives to manipulate targets and protect future resources",
-        "The manager is credibly signaling high ability",
-        "The manager is reducing moral hazard through monitoring",
-        "The manager is solving transfer pricing conflict"
+        "Audit only year-end spending while allowing the manager to set an unchecked target",
+        "Allow carryover but keep a larger bonus for beating the manager's self-set target",
+        "Use an independently benchmarked performance target and allow justified carryover subject to value review",
+        "Punish every forecast revision and require full spending by year-end"
       ],
       "tag": "budget_games",
       "type": "integration",
       "objective": "LO22.7",
       "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
+      "conceptCluster": "legendaryBoss_agencyProtocol_budget_slack_and_target_manipulation",
       "primarySkill": "budget_slack_and_target_manipulation",
       "secondarySkills": [],
       "repairSkill": "budget_slack_and_target_manipulation",
       "commonError": "mistakes_budget_compliance_for_honest_forecasting_or_value_creation",
-      "feedback": "Budget games happen when managers manipulate forecasts, targets, or spending to look better or protect resources.",
-      "aHash": "ea14c8200f450a1dc98b70ebe11929a9176a52cea12cff562f30c997a6b9161c"
+      "feedback": "A self-set hurdle rewards padding before work begins; automatic cuts reward waste afterward. Each requires a separate response. Carryover alone does not make the initial forecast truthful.",
+      "aHash": "8feee2ef94b2f1491540a9258ff0ad1578653cddcf80e280c42fccbc281178de",
+      "bossStage": "opening"
     },
     {
       "id": 9123,
       "sourceGame": "agencyProtocol",
-      "q": "A company wants honest budgets. Which rule is most likely to reduce budget games?",
+      "q": "A division expects cost of either 80 or 120 with equal probability. Planning wants the expected cost; the manager earns 10 if actual cost is below its submitted target. Targets can be 100 or 121. Ignoring other rewards, what conflict exists?",
       "options": [
-        "Use rolling forecasts, audit assumptions, reward accuracy, and avoid automatic punishment for unused funds",
-        "Reward managers for padding costs because it creates slack",
-        "Cut next year's allocation automatically whenever money is left over",
-        "Evaluate managers only on whether they beat easy targets"
+        "The two targets give the same bonus chance because expected cost is unchanged",
+        "Expected cost is 121 because the manager prefers that target",
+        "Target 100 guarantees the bonus because it equals expected cost",
+        "Expected cost is 100, but 121 gives a certain bonus instead of a 50% bonus chance"
       ],
       "tag": "budget_games",
-      "type": "multi-step",
+      "type": "integration",
       "objective": "LO22.7",
       "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
+      "conceptCluster": "legendaryBoss_agencyProtocol_budget_slack_and_target_manipulation",
       "primarySkill": "budget_slack_and_target_manipulation",
       "secondarySkills": [],
       "repairSkill": "budget_slack_and_target_manipulation",
       "commonError": "mistakes_budget_compliance_for_honest_forecasting_or_value_creation",
-      "feedback": "Budget systems should reward accurate planning and value creation, not sandbagging or waste.",
-      "aHash": "749a9947843deb6d5063bac5b9d89c16617ae3979518dedfac4f0e394b54f944"
-    },
-    {
-      "id": 9124,
-      "sourceGame": "agencyProtocol",
-      "q": "The Principal sees hidden worker ability before hiring, hidden worker effort after hiring, and a bonus that rewards the wrong output. What is the cleanest diagnosis?",
-      "options": [
-        "Adverse selection, moral hazard, and incentive gaming are layered together",
-        "Only adverse selection is present because everything starts before hiring",
-        "Only moral hazard is present because employment already began",
-        "Only transfer pricing is present because all firms have internal prices"
-      ],
-      "tag": "principal_agent",
-      "type": "integration",
-      "objective": "LO21.2",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "principal_agent_conflict",
-      "secondarySkills": [],
-      "repairSkill": "principal_agent_conflict",
-      "commonError": "assumes_principal_and_agent_objectives_are_automatically_aligned",
-      "feedback": "Hard cases often stack multiple agency problems. Name each layer instead of flattening the case.",
-      "aHash": "7ac8ed1d39e68d5eb4fb7a47cda8cf4c967cfd67c252256ab19c0609b1f59ac0"
-    },
-    {
-      "id": 9125,
-      "sourceGame": "agencyProtocol",
-      "q": "A firm screens applicants carefully but still needs monitoring and incentive pay after hiring. Why?",
-      "options": [
-        "Screening reduces hidden type problems but does not eliminate hidden action after employment begins",
-        "Screening solves all agency problems forever",
-        "Monitoring is only useful before hiring",
-        "Incentive pay only solves seller reputation problems"
-      ],
-      "tag": "principal_agent",
-      "type": "trap",
-      "objective": "LO21.2",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "principal_agent_conflict",
-      "secondarySkills": [],
-      "repairSkill": "principal_agent_conflict",
-      "commonError": "assumes_principal_and_agent_objectives_are_automatically_aligned",
-      "feedback": "Good selection helps, but agents still make choices after the relationship begins.",
-      "aHash": "66eca034f93e85ea08ded77f578d1a0acc999317ce2fd2a4eb2b1f7a9b36af30"
+      "feedback": "Expected cost is .5×80+.5×120=100. At target 100, only cost 80 earns the bonus; at 121 both states do. Using the planning forecast as the hurdle rewards distortion.",
+      "aHash": "9085590090fa1f8dee0ca7915890034bc9c75d97831e002833357e505836ff86",
+      "bossStage": "middle"
     },
     {
       "id": 9126,
       "sourceGame": "agencyProtocol",
-      "q": "An agency contract can never perfectly observe every action or outcome. What implication follows?",
+      "q": "The current guarantee contract has total agency cost 44, including residual loss 24. A proposed audit adds 7 control cost, reduces residual loss to 14, and creates 5 lost contribution from delayed decisions. Which recommendation uses the marginal comparison?",
       "options": [
-        "Some residual loss may remain even after monitoring, bonding, and incentive alignment",
-        "Agency costs must always be zero if a contract exists",
-        "The principal should ignore agent behavior",
-        "The agent always maximizes the principal's goal automatically"
+        "Add the audit: its 7 invoice is below the 10 saved loss, so delay can be ignored",
+        "Add the audit: residual loss falls from 24 to 14",
+        "Decline the audit: it saves 10 but costs 12, raising total cost to 46",
+        "Decline all controls: any remaining loss proves contracting cannot help"
       ],
       "tag": "agency_costs",
-      "type": "definition",
+      "type": "integration",
       "objective": "LO21.3",
       "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
+      "conceptCluster": "legendaryBoss_agencyProtocol_agency_costs_and_alignment",
       "primarySkill": "agency_costs_and_alignment",
       "secondarySkills": [],
       "repairSkill": "agency_costs_and_alignment",
       "commonError": "treats_monitoring_costs_as_the_only_agency_cost",
-      "feedback": "Residual loss is the remaining value gap when control systems are imperfect.",
-      "aHash": "474708e1049766b8e67730b76e2e07825330d82142b7e1bc8dfb8bd691e01b59"
-    },
-    {
-      "id": 9127,
-      "sourceGame": "agencyProtocol",
-      "q": "A firm tries to fix every problem by adding one more metric. Why can that backfire?",
-      "options": [
-        "Agents may optimize measured margins while neglecting unmeasured value",
-        "More metrics always create perfect alignment",
-        "Metrics eliminate all hidden information before contracts",
-        "Metrics make coordination unnecessary"
-      ],
-      "tag": "gaming",
-      "type": "trap",
-      "objective": "LO21.5",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "gaming",
-      "secondarySkills": [],
-      "repairSkill": "gaming",
-      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "More measurement is not automatically better. Bad or incomplete metrics invite gaming.",
-      "aHash": "ed259299b36318cb6cdde824256735a584fa131a7ed0b955fcc165c7ffa846ca"
-    },
-    {
-      "id": 9128,
-      "sourceGame": "agencyProtocol",
-      "q": "A department's local decision helps its own budget, hurts another department, and lowers total firm profit. Which concepts are most directly involved?",
-      "options": [
-        "Coordination failure and local incentives conflicting with total firm value",
-        "Only seller reputation and signaling",
-        "Only consumer insurance deductibles",
-        "Only borrower collateral"
-      ],
-      "tag": "coordination",
-      "type": "integration",
-      "objective": "LO22.5",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "cross_functional_coordination",
-      "secondarySkills": [],
-      "repairSkill": "cross_functional_coordination",
-      "commonError": "treats_divisions_as_independent_when_outputs_are_interdependent",
-      "feedback": "Functional and divisional units must coordinate because local wins can impose costs on the rest of the firm.",
-      "aHash": "ed359c3bc8647577862a2662450a0c6fc78e4d0bad6e7ce4a59c2cdc8dd8e112"
-    },
-    {
-      "id": 9129,
-      "sourceGame": "agencyProtocol",
-      "q": "The final protocol asks for the common thread across insurance design, lending contracts, employee pay, transfer pricing, and budgets. What is it?",
-      "options": [
-        "Information and incentive problems must be diagnosed before controls can be designed",
-        "Every problem is solved by raising prices",
-        "Every problem is solved by removing all discretion",
-        "All business problems are the same as adverse selection"
-      ],
-      "tag": "incentives",
-      "type": "integration",
-      "objective": "LO21.6",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "incentives",
-      "secondarySkills": [],
-      "repairSkill": "incentives",
-      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "The whole unit is about diagnosing information asymmetry and incentive conflict, then choosing controls that fit the mechanism.",
-      "aHash": "36b831955faad4a81c27868323f2baee052019710af3e32aced085174007945e"
-    },
-    {
-      "id": 9130,
-      "sourceGame": "agencyProtocol",
-      "q": "The Underwriter offers insurance to risk-averse customers facing rare but devastating losses. Why can both sides gain from the deal?",
-      "options": [
-        "Customers value risk reduction and the insurer can pool risk across many policyholders",
-        "Insurance creates value by making losses impossible",
-        "Customers gain only when they file claims",
-        "The insurer gains only by refusing all claims"
-      ],
-      "tag": "insurance",
-      "type": "integration",
-      "objective": "LO19.1",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "risk_transfer_and_pooling",
-      "secondarySkills": [],
-      "repairSkill": "risk_transfer_and_pooling",
-      "commonError": "treats_insurance_as_eliminating_risk_instead_of_transferring_and_pooling_it",
-      "feedback": "Insurance creates value through risk transfer and pooling, not magic loss elimination.",
-      "aHash": "155b7278936c9a90d99aac5629be314b778d38b60e03738cde6bb6a377fb4846"
-    },
-    {
-      "id": 9131,
-      "sourceGame": "agencyProtocol",
-      "q": "A customer willingly pays a premium that exceeds their expected claim. Why is this not irrational?",
-      "options": [
-        "The customer is risk averse and values protection from uncertainty",
-        "The customer must believe a claim is guaranteed",
-        "Premiums are not prices and have no opportunity cost",
-        "Insurance buyers never compare costs and benefits"
-      ],
-      "tag": "insurance",
-      "type": "trap",
-      "objective": "LO19.1",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "risk_transfer_and_pooling",
-      "secondarySkills": [],
-      "repairSkill": "risk_transfer_and_pooling",
-      "commonError": "treats_insurance_as_eliminating_risk_instead_of_transferring_and_pooling_it",
-      "feedback": "Risk-averse people may pay more than expected loss to avoid severe uncertainty.",
-      "aHash": "58bc8b92ca62b937a4f93b349378ea496220f309595a886e2add6b765ab0b390"
-    },
-    {
-      "id": 9132,
-      "sourceGame": "agencyProtocol",
-      "q": "A small firm buys property insurance so one fire will not bankrupt it. What economic value is insurance providing?",
-      "options": [
-        "Smoothing risk by transferring a large uncertain loss to a risk pool",
-        "Increasing the probability of fire",
-        "Guaranteeing profit for the firm",
-        "Replacing all need for prevention"
-      ],
-      "tag": "insurance",
-      "type": "interpretation",
-      "objective": "LO19.1",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "risk_transfer_and_pooling",
-      "secondarySkills": [],
-      "repairSkill": "risk_transfer_and_pooling",
-      "commonError": "treats_insurance_as_eliminating_risk_instead_of_transferring_and_pooling_it",
-      "feedback": "Insurance helps manage low-probability, high-cost risks by pooling them.",
-      "aHash": "634578477cb40af578669b06c73cb6f4fb8362173c2621634370faeb33f16b58"
-    },
-    {
-      "id": 9133,
-      "sourceGame": "agencyProtocol",
-      "q": "A used-car buyer cannot observe vehicle quality, and low-quality sellers are most eager to sell at the average price. What is the problem?",
-      "options": [
-        "Adverse selection from hidden quality before the transaction",
-        "Moral hazard from hidden effort after purchase",
-        "Transfer pricing between divisions",
-        "Budget gaming by the buyer"
-      ],
-      "tag": "adverse_selection",
-      "type": "definition",
-      "objective": "LO19.2",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "hidden_information_before_contract",
-      "secondarySkills": [],
-      "repairSkill": "hidden_information_before_contract",
-      "commonError": "confuses_hidden_information_before_contract_with_hidden_action_after_contract",
-      "feedback": "Hidden quality before purchase creates adverse selection.",
-      "aHash": "1ff4bce59c6756600216274d2188501ba4adf66d11364ef9da0ab9d76f1f3c19"
-    },
-    {
-      "id": 9134,
-      "sourceGame": "agencyProtocol",
-      "q": "If low-risk insurance buyers leave after premiums rise, what happens to the pool?",
-      "options": [
-        "The pool becomes riskier, which can push premiums even higher",
-        "The pool becomes safer because high-risk buyers leave first",
-        "The insurer has solved moral hazard permanently",
-        "The problem turns into functional specialization"
-      ],
-      "tag": "adverse_selection",
-      "type": "multi-step",
-      "objective": "LO19.2",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "hidden_information_before_contract",
-      "secondarySkills": [],
-      "repairSkill": "hidden_information_before_contract",
-      "commonError": "confuses_hidden_information_before_contract_with_hidden_action_after_contract",
-      "feedback": "Adverse selection can create a worsening pool when low-risk buyers drop out.",
-      "aHash": "ec7bf6f3b34e7546d3d9dba4d6aeee06dc641b8cf8b72304fa0021f97f8c54a9"
-    },
-    {
-      "id": 9135,
-      "sourceGame": "agencyProtocol",
-      "q": "A market collapses because buyers cannot tell good products from bad products and offer only a low average price. What mechanism is driving collapse?",
-      "options": [
-        "High-quality sellers exit when the price fails to reflect their quality",
-        "Low-quality sellers leave because the price is too high",
-        "Monitoring after purchase fully solves hidden quality",
-        "Transfer prices eliminate external market uncertainty"
-      ],
-      "tag": "adverse_selection",
-      "type": "integration",
-      "objective": "LO19.2",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "hidden_information_before_contract",
-      "secondarySkills": [],
-      "repairSkill": "hidden_information_before_contract",
-      "commonError": "confuses_hidden_information_before_contract_with_hidden_action_after_contract",
-      "feedback": "When quality is hidden, good sellers may leave, worsening the market.",
-      "aHash": "1cbbe9aa47895a0935324409b1fd97f60705749f4783b64a21d9abe55c84b670"
-    },
-    {
-      "id": 9136,
-      "sourceGame": "agencyProtocol",
-      "q": "An insurer requires applicants to answer health questions and provide records before coverage. What is the insurer trying to do?",
-      "options": [
-        "Screen applicants to classify risk before selling coverage",
-        "Create moral hazard after coverage begins",
-        "Let high-risk customers hide information more easily",
-        "Set a transfer price for claims"
-      ],
-      "tag": "screening",
-      "type": "interpretation",
-      "objective": "LO19.3",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "screening_hidden_type",
-      "secondarySkills": [],
-      "repairSkill": "screening_hidden_type",
-      "commonError": "confuses_screening_by_the_less_informed_party_with_signaling_by_the_informed_party",
-      "feedback": "The insurer is the less-informed side trying to learn hidden risk before the contract.",
-      "aHash": "3c5c24d8a23bd6689746332152e514a51b3c6b83ac42472f6dba6d359cccaeda"
-    },
-    {
-      "id": 9137,
-      "sourceGame": "agencyProtocol",
-      "q": "A lender checks credit history before approving a loan. Why is this screening?",
-      "options": [
-        "The lender uses information before the transaction to sort borrower risk",
-        "The borrower voluntarily reveals quality after receiving the loan",
-        "The lender changes borrower behavior after funding",
-        "The loan becomes a cost center"
-      ],
-      "tag": "screening",
-      "type": "trap",
-      "objective": "LO19.3",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "screening_hidden_type",
-      "secondarySkills": [],
-      "repairSkill": "screening_hidden_type",
-      "commonError": "confuses_screening_by_the_less_informed_party_with_signaling_by_the_informed_party",
-      "feedback": "Screening happens before the deal and is initiated by the less-informed side.",
-      "aHash": "74c199f7f18a25137d680927a86b93f1e64964afb30aea615e4d50edbde9de0b"
-    },
-    {
-      "id": 9138,
-      "sourceGame": "agencyProtocol",
-      "q": "A firm makes job candidates complete a work sample that weaker candidates rarely pass. What is the likely benefit?",
-      "options": [
-        "It reduces hidden-ability problems before hiring",
-        "It prevents all shirking after hiring",
-        "It eliminates the need for incentives",
-        "It sets internal prices between departments"
-      ],
-      "tag": "screening",
-      "type": "integration",
-      "objective": "LO19.3",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "screening_hidden_type",
-      "secondarySkills": [],
-      "repairSkill": "screening_hidden_type",
-      "commonError": "confuses_screening_by_the_less_informed_party_with_signaling_by_the_informed_party",
-      "feedback": "Work samples can screen applicants before the employment relationship starts.",
-      "aHash": "b2fbec0c760e043c9e0bd1a43a3f0f740a3ff61425530b65df1790c7f0f3a95b"
-    },
-    {
-      "id": 9139,
-      "sourceGame": "agencyProtocol",
-      "q": "A seller offers a money-back guarantee because low-quality sellers would expect too many returns. What does the guarantee do?",
-      "options": [
-        "It signals quality when it is more costly for low-quality sellers to copy",
-        "It screens buyers because buyers created the guarantee",
-        "It creates budget slack in the seller's department",
-        "It centralizes decision rights"
-      ],
-      "tag": "signaling",
-      "type": "interpretation",
-      "objective": "LO19.4",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "credible_signaling_hidden_type",
-      "secondarySkills": [],
-      "repairSkill": "credible_signaling_hidden_type",
-      "commonError": "assumes_any_claim_is_a_credible_signal_without_costly_verification",
-      "feedback": "A costly-to-copy guarantee can separate high-quality sellers from low-quality sellers.",
-      "aHash": "c84f164ff8315d8e58adb648e7a679d7a46cc5dd4193a3607bdfcdb13f59bf4d"
-    },
-    {
-      "id": 9140,
-      "sourceGame": "agencyProtocol",
-      "q": "An applicant earns a difficult certification before entering the labor market. Why might employers care?",
-      "options": [
-        "The certification can signal ability if it is harder for low-ability applicants to obtain",
-        "The certification creates moral hazard after hiring by hiding effort",
-        "The certification is a transfer price across divisions",
-        "The certification prevents any need for screening"
-      ],
-      "tag": "signaling",
-      "type": "definition",
-      "objective": "LO19.4",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "credible_signaling_hidden_type",
-      "secondarySkills": [],
-      "repairSkill": "credible_signaling_hidden_type",
-      "commonError": "assumes_any_claim_is_a_credible_signal_without_costly_verification",
-      "feedback": "Signals work when they credibly reveal hidden quality or ability.",
-      "aHash": "ab51c9021d59875a4ed27c311d545561b7f08da957633680e55a1f7b2b149916"
-    },
-    {
-      "id": 9141,
-      "sourceGame": "agencyProtocol",
-      "q": "A signal loses value after fake certificates become cheap and common. Why?",
-      "options": [
-        "The signal no longer separates high-quality types from low-quality types",
-        "The signal becomes more credible as imitation becomes easier",
-        "The problem has turned into collateralized lending",
-        "The signal now measures hidden effort after hiring"
-      ],
-      "tag": "signaling",
-      "type": "trap",
-      "objective": "LO19.4",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "credible_signaling_hidden_type",
-      "secondarySkills": [],
-      "repairSkill": "credible_signaling_hidden_type",
-      "commonError": "assumes_any_claim_is_a_credible_signal_without_costly_verification",
-      "feedback": "If everyone can copy the signal cheaply, it stops revealing type.",
-      "aHash": "b5d0426abd5bf46d3c1a37d1ad3cd5d03fa755d27888560b40df71910db5876a"
-    },
-    {
-      "id": 9142,
-      "sourceGame": "agencyProtocol",
-      "q": "A platform weights verified-purchase reviews more heavily than anonymous reviews. What is it trying to improve?",
-      "options": [
-        "The credibility of reputation information used by future buyers",
-        "The insured party's deductible after a claim",
-        "The transfer price between divisions",
-        "The employee's effort after hiring"
-      ],
-      "tag": "reputation",
-      "type": "interpretation",
-      "objective": "LO19.5",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "reputation_systems_and_market_quality",
-      "secondarySkills": [],
-      "repairSkill": "reputation_systems_and_market_quality",
-      "commonError": "treats_reviews_as_perfect_information_instead_of_noisy_market_discipline",
-      "feedback": "Verified reviews make reputation more reliable and reduce hidden-quality problems.",
-      "aHash": "2186abf0289a6dbf0de51dba5fbbbb45bc0c117a44cfa21150b0879b66272566"
-    },
-    {
-      "id": 9143,
-      "sourceGame": "agencyProtocol",
-      "q": "A seller with poor ratings must lower price to attract buyers. What role are ratings playing?",
-      "options": [
-        "They make hidden quality more visible and affect buyer willingness to pay",
-        "They create moral hazard by hiding all seller actions",
-        "They eliminate the need for buyers to compare products",
-        "They function as a divisional budget target"
-      ],
-      "tag": "reputation",
-      "type": "multi-step",
-      "objective": "LO19.5",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "reputation_systems_and_market_quality",
-      "secondarySkills": [],
-      "repairSkill": "reputation_systems_and_market_quality",
-      "commonError": "treats_reviews_as_perfect_information_instead_of_noisy_market_discipline",
-      "feedback": "Reputation systems transmit quality information to future buyers.",
-      "aHash": "cab70309f292774b7642be83f439704f157faddc3795469f3376c730ed2ba77c"
-    },
-    {
-      "id": 9144,
-      "sourceGame": "agencyProtocol",
-      "q": "A platform bans sellers who repeatedly receive verified complaints. How can that affect market quality?",
-      "options": [
-        "It can improve the seller pool by removing low-quality sellers",
-        "It worsens adverse selection by protecting bad sellers",
-        "It removes all need for prices and warranties",
-        "It creates moral hazard in lending"
-      ],
-      "tag": "reputation",
-      "type": "integration",
-      "objective": "LO19.5",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "reputation_systems_and_market_quality",
-      "secondarySkills": [],
-      "repairSkill": "reputation_systems_and_market_quality",
-      "commonError": "treats_reviews_as_perfect_information_instead_of_noisy_market_discipline",
-      "feedback": "Enforcement attached to ratings can strengthen reputation and improve the pool.",
-      "aHash": "55fe57ab31ac29774dbe0ebebc68b1965790d78f889a270042081439ea8ddfb8"
-    },
-    {
-      "id": 9145,
-      "sourceGame": "agencyProtocol",
-      "q": "A driver faces no deductible and no premium increase after accidents. What behavior problem is most likely?",
-      "options": [
-        "Moral hazard because the driver bears too little cost from risky behavior",
-        "Adverse selection because the driver revealed type after the accident",
-        "Screening because the insurer observes every action",
-        "Transfer pricing because claims are internal"
-      ],
-      "tag": "moral_hazard",
-      "type": "interpretation",
-      "objective": "LO20.2",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "hidden_action_after_contract",
-      "secondarySkills": [],
-      "repairSkill": "hidden_action_after_contract",
-      "commonError": "confuses_post_contract_behavior_with_pre_contract_type_selection",
-      "feedback": "When insured parties do not bear much cost from risky behavior, care may fall.",
-      "aHash": "ba4b5e89994fd1d22403e4f645fc4497d5096dfdc6b2c58660f04a6b0cf2e189"
-    },
-    {
-      "id": 9146,
-      "sourceGame": "agencyProtocol",
-      "q": "A deductible reduces but does not eliminate moral hazard. Why?",
-      "options": [
-        "It makes the insured bear some marginal cost, but incentives may still be imperfect",
-        "It makes the insurer bear no cost at all",
-        "It solves only hidden type before the contract and never affects behavior",
-        "It turns the policy into a profit center"
-      ],
-      "tag": "moral_hazard",
-      "type": "multi-step",
-      "objective": "LO20.2",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "hidden_action_after_contract",
-      "secondarySkills": [],
-      "repairSkill": "hidden_action_after_contract",
-      "commonError": "confuses_post_contract_behavior_with_pre_contract_type_selection",
-      "feedback": "Deductibles create skin in the game, but they rarely make incentives perfect.",
-      "aHash": "2e016789551e327bdd6b3340977b67f23af33b5476b281cdeb610f60c7d132e2"
-    },
-    {
-      "id": 9147,
-      "sourceGame": "agencyProtocol",
-      "q": "A company reimburses all travel expenses with no review, and spending jumps. What control most directly addresses the problem?",
-      "options": [
-        "Require documentation, caps, or cost sharing so employees bear or justify some cost",
-        "Raise every employee's travel budget automatically",
-        "Hide travel prices from employees",
-        "Use seller warranties instead of reimbursement rules"
-      ],
-      "tag": "moral_hazard",
-      "type": "integration",
-      "objective": "LO20.2",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "hidden_action_after_contract",
-      "secondarySkills": [],
-      "repairSkill": "hidden_action_after_contract",
-      "commonError": "confuses_post_contract_behavior_with_pre_contract_type_selection",
-      "feedback": "The issue is hidden action after reimbursement rules change incentives.",
-      "aHash": "334aaa6036a446b5861fe1cabc4fbb273171954cc39c8741d454cb4b96376b69"
-    },
-    {
-      "id": 9148,
-      "sourceGame": "agencyProtocol",
-      "q": "A firm audits expense reports randomly rather than checking every receipt. What is the economic reason?",
-      "options": [
-        "Monitoring is costly, so selective auditing can deter abuse without maximum monitoring cost",
-        "Random audits cannot affect behavior because they are not constant",
-        "The audit only screens hidden type before employment",
-        "Expense reports are transfer prices"
-      ],
-      "tag": "monitoring",
-      "type": "multi-step",
-      "objective": "LO20.3",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "monitoring_and_incentive_control",
-      "secondarySkills": [],
-      "repairSkill": "monitoring_and_incentive_control",
-      "commonError": "assumes_monitoring_always_solves_incentive_problems_without_costs_or_distortion",
-      "feedback": "Selective monitoring can change expected costs of bad behavior while controlling monitoring expense.",
-      "aHash": "0441e6d21c16b698c7768e28f0dd04e26f706eea5d6588d8535f6dd17ff93473"
-    },
-    {
-      "id": 9149,
-      "sourceGame": "agencyProtocol",
-      "q": "A warehouse installs scanners that record pick rates and error rates. What agency problem is it targeting?",
-      "options": [
-        "Hidden effort and hidden action during work",
-        "Hidden product quality before external buyers purchase",
-        "Division conflict over internal prices",
-        "Budget slack before targets are set"
-      ],
-      "tag": "monitoring",
-      "type": "interpretation",
-      "objective": "LO20.3",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "monitoring_and_incentive_control",
-      "secondarySkills": [],
-      "repairSkill": "monitoring_and_incentive_control",
-      "commonError": "assumes_monitoring_always_solves_incentive_problems_without_costs_or_distortion",
-      "feedback": "Monitoring makes worker actions or outcomes more observable.",
-      "aHash": "1aae36fe0084e4168792cf83b6be5283799ef819e119b251effd69434e9525d0"
-    },
-    {
-      "id": 9150,
-      "sourceGame": "agencyProtocol",
-      "q": "Monitoring focuses only on speed, and workers begin making more mistakes. What did the firm miss?",
-      "options": [
-        "Monitoring must measure the right dimensions or it can distort behavior",
-        "Monitoring always improves every outcome equally",
-        "Errors prove adverse selection before employment is the only issue",
-        "The solution is to remove all feedback"
-      ],
-      "tag": "monitoring",
-      "type": "trap",
-      "objective": "LO20.3",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "monitoring_and_incentive_control",
-      "secondarySkills": [],
-      "repairSkill": "monitoring_and_incentive_control",
-      "commonError": "assumes_monitoring_always_solves_incentive_problems_without_costs_or_distortion",
-      "feedback": "Bad monitoring can redirect effort toward measured dimensions and away from unmeasured quality.",
-      "aHash": "7cffe5a4f8f0eb4f8aa69b3e088d12db65b07ee8362f6f98fd4982844b4aa1f1"
-    },
-    {
-      "id": 9151,
-      "sourceGame": "agencyProtocol",
-      "q": "A shareholder hires a manager to run the company. What creates the principal-agent problem?",
-      "options": [
-        "The manager makes decisions for the shareholder but may have different information and incentives",
-        "The shareholder and manager are always the same person",
-        "The manager cannot affect firm value",
-        "The firm has no delegation"
-      ],
-      "tag": "principal_agent",
-      "type": "definition",
-      "objective": "LO21.1",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "principal_agent_conflict",
-      "secondarySkills": [],
-      "repairSkill": "principal_agent_conflict",
-      "commonError": "assumes_principal_and_agent_objectives_are_automatically_aligned",
-      "feedback": "Agency problems arise when one party delegates decisions to another whose incentives may differ.",
-      "aHash": "9dfca06e0f3641492a8cba086946a748c30b3a52b6d7ac7a71914b9762ee870c"
-    },
-    {
-      "id": 9152,
-      "sourceGame": "agencyProtocol",
-      "q": "A patient relies on a doctor to recommend treatment. Why can this become a principal-agent relationship?",
-      "options": [
-        "The doctor has expertise and acts on behalf of the patient, but incentives may not perfectly match",
-        "The patient always has more medical information than the doctor",
-        "No decision is delegated",
-        "Doctors cannot be affected by payment incentives"
-      ],
-      "tag": "principal_agent",
-      "type": "interpretation",
-      "objective": "LO21.1",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "principal_agent_conflict",
-      "secondarySkills": [],
-      "repairSkill": "principal_agent_conflict",
-      "commonError": "assumes_principal_and_agent_objectives_are_automatically_aligned",
-      "feedback": "Agents often have expertise and discretion, which creates room for incentive conflict.",
-      "aHash": "bd270db180caeaa20c5d034064e5e359c9496678b4fa2e2aa3af066fd251f659"
-    },
-    {
-      "id": 9153,
-      "sourceGame": "agencyProtocol",
-      "q": "An owner cannot personally manage every store and hires regional managers. What problem must the owner now manage?",
-      "options": [
-        "Delegated authority creates agency risk if managers pursue their own objectives",
-        "Delegation eliminates all monitoring needs",
-        "The owner has solved incentive conflict by hiring more agents",
-        "The issue is only buyer reputation"
-      ],
-      "tag": "principal_agent",
-      "type": "integration",
-      "objective": "LO21.1",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "principal_agent_conflict",
-      "secondarySkills": [],
-      "repairSkill": "principal_agent_conflict",
-      "commonError": "assumes_principal_and_agent_objectives_are_automatically_aligned",
-      "feedback": "Delegation is necessary in complex organizations, but it introduces agency concerns.",
-      "aHash": "8589f5855483943bd9c9c1df7a78ebd4465d9f38c2217f6b33faf945e5a4e0fc"
-    },
-    {
-      "id": 9154,
-      "sourceGame": "agencyProtocol",
-      "q": "A firm screens managers carefully before hiring and later ties pay to audited performance. Which two agency margins are being addressed?",
-      "options": [
-        "Hidden type before hiring and hidden action after hiring",
-        "Only transfer pricing and cost-center evaluation",
-        "Only reputation and seller warranties",
-        "Only buyer adverse selection after the sale"
-      ],
-      "tag": "principal_agent",
-      "type": "integration",
-      "objective": "LO21.2",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "principal_agent_conflict",
-      "secondarySkills": [],
-      "repairSkill": "principal_agent_conflict",
-      "commonError": "assumes_principal_and_agent_objectives_are_automatically_aligned",
-      "feedback": "Screening targets selection; incentive pay and auditing target behavior after selection.",
-      "aHash": "7b3a646f6e6dc608823724078b8942ba899eba32728f87f60ce83471774a98c2"
-    },
-    {
-      "id": 9155,
-      "sourceGame": "agencyProtocol",
-      "q": "A low-ability applicant gets hired because ability was hard to observe; later the applicant exerts low effort because effort is hard to observe. What sequence is this?",
-      "options": [
-        "Adverse selection followed by moral hazard",
-        "Moral hazard followed by signaling",
-        "Transfer pricing followed by budgeting",
-        "Coordination followed by functional specialization"
-      ],
-      "tag": "principal_agent",
-      "type": "trap",
-      "objective": "LO21.2",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "principal_agent_conflict",
-      "secondarySkills": [],
-      "repairSkill": "principal_agent_conflict",
-      "commonError": "assumes_principal_and_agent_objectives_are_automatically_aligned",
-      "feedback": "Hidden ability before hiring is adverse selection; hidden effort after hiring is moral hazard.",
-      "aHash": "ff1809505b5db8d1e613f9be50f3c565110ed34b0ff13497905caf81ba315551"
-    },
-    {
-      "id": 9156,
-      "sourceGame": "agencyProtocol",
-      "q": "An executive compensation plan uses restricted stock that vests over several years. What problem is it trying to reduce?",
-      "options": [
-        "Short-term gaming by aligning the agent with longer-term firm value",
-        "Adverse selection in online seller markets",
-        "A deductible problem in health insurance",
-        "Functional silos in marketing"
-      ],
-      "tag": "incentives",
-      "type": "interpretation",
-      "objective": "LO21.3",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "incentives",
-      "secondarySkills": [],
-      "repairSkill": "incentives",
-      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "Longer vesting can reduce incentives to boost short-term metrics at long-term cost.",
-      "aHash": "add093f79b8776026745730220c451d00c471bbbe575a802aa96406423604b1e"
-    },
-    {
-      "id": 9157,
-      "sourceGame": "agencyProtocol",
-      "q": "A company gives a regional manager decision authority but also charges the region for resources it uses from headquarters. What broad design issue is involved?",
-      "options": [
-        "Aligning local decisions with the costs and benefits they create for the firm",
-        "Eliminating all local information from decisions",
-        "Turning every customer into an insurer",
-        "Replacing incentives with hidden quality"
-      ],
-      "tag": "incentives",
-      "type": "integration",
-      "objective": "LO21.6",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "incentives",
-      "secondarySkills": [],
-      "repairSkill": "incentives",
-      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "Good controls make agents internalize more of the consequences of their choices.",
-      "aHash": "5aa56f30c263184fc9e0591cf0c5716ff3afd678640c04eb49df8620bcf23400"
-    },
-    {
-      "id": 9158,
-      "sourceGame": "agencyProtocol",
-      "q": "A bad incentive plan increases sales, increases returns, lowers customer trust, and hurts profit. What should the diagnosis focus on?",
-      "options": [
-        "The difference between the measured target and the principal's true objective",
-        "Only the number of sales because sales rose",
-        "Only the agent's personality, not the metric",
-        "Only whether the firm has a functional structure"
-      ],
-      "tag": "gaming",
-      "type": "multi-step",
-      "objective": "LO21.6",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "gaming",
-      "secondarySkills": [],
-      "repairSkill": "gaming",
-      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "The key is whether the metric captures what the principal actually values.",
-      "aHash": "692cd18cceeb0418d62f750680ea6210e01d66ce2bf47f875af4ac9609a4e67c"
-    },
-    {
-      "id": 9159,
-      "sourceGame": "agencyProtocol",
-      "q": "A support unit exists inside a functional organization. Why might specialization still require coordination?",
-      "options": [
-        "Specialized units depend on one another to create the final outcome",
-        "Specialization means departments never affect each other",
-        "Coordination is only needed in insurance markets",
-        "Functional units eliminate all interdependence"
-      ],
-      "tag": "functional_units",
-      "type": "definition",
-      "objective": "LO22.4",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "functional_specialization",
-      "secondarySkills": [],
-      "repairSkill": "functional_specialization",
-      "commonError": "ignores_silos_created_by_functional_specialization",
-      "feedback": "Functional specialization increases expertise but also creates interdependence.",
-      "aHash": "78ee3a9c88a2ef5c44a84866ad99d18188a1559aa5860e77ee72050891b17bc3"
-    },
-    {
-      "id": 9160,
-      "sourceGame": "agencyProtocol",
-      "q": "A finance department rejects every risky project, while marketing wants every growth project. What organizational issue is likely?",
-      "options": [
-        "Functional units may apply specialized priorities that need coordination and balancing",
-        "The firm has no specialization",
-        "The issue is borrower collateral only",
-        "The problem is seller signaling only"
-      ],
-      "tag": "functional_units",
-      "type": "interpretation",
-      "objective": "LO22.4",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "functional_specialization",
-      "secondarySkills": [],
-      "repairSkill": "functional_specialization",
-      "commonError": "ignores_silos_created_by_functional_specialization",
-      "feedback": "Functional departments view decisions through specialized lenses, which can create conflict.",
-      "aHash": "6b4c07486bd1be8eeea4ac57229a17dfb28ae0ce1c6fb7815309bc0affb5f0b3"
-    },
-    {
-      "id": 9161,
-      "sourceGame": "agencyProtocol",
-      "q": "A functional structure works well in a small focused firm but strains as products multiply. Why?",
-      "options": [
-        "Specialized departments may struggle to coordinate across diverse product lines",
-        "Functional units stop having expertise as firms grow",
-        "Product complexity removes all agency problems",
-        "The firm now needs only insurance screening"
-      ],
-      "tag": "functional_units",
-      "type": "multi-step",
-      "objective": "LO22.4",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "functional_specialization",
-      "secondarySkills": [],
-      "repairSkill": "functional_specialization",
-      "commonError": "ignores_silos_created_by_functional_specialization",
-      "feedback": "As complexity rises, coordination and accountability demands can exceed the benefits of simple functional specialization.",
-      "aHash": "656e9efce61dc77c09c5588e10e88337de40fefa686652f47b5a31513bd97665"
-    },
-    {
-      "id": 9162,
-      "sourceGame": "agencyProtocol",
-      "q": "Operations saves money by reducing quality checks, but sales loses customers from defects. What is the organizational problem?",
-      "options": [
-        "A coordination failure across functional units with local cost savings creating broader losses",
-        "A pure adverse selection problem before insurance purchase",
-        "A seller warranty acting as a perfect signal",
-        "A loan covenant reducing borrower risk"
-      ],
-      "tag": "coordination",
-      "type": "integration",
-      "objective": "LO22.5",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "cross_functional_coordination",
-      "secondarySkills": [],
-      "repairSkill": "cross_functional_coordination",
-      "commonError": "treats_divisions_as_independent_when_outputs_are_interdependent",
-      "feedback": "One department's choices affect another department's outcomes, so coordination matters.",
-      "aHash": "dbc5d54729b3de8d73f9a2271e768d7d550aceb6bdaec7571d86247d331f08d0"
-    },
-    {
-      "id": 9163,
-      "sourceGame": "agencyProtocol",
-      "q": "A company creates cross-functional launch teams for new products. What problem is this meant to reduce?",
-      "options": [
-        "Silo behavior and poor coordination among specialized functions",
-        "Risk pooling in insurance markets",
-        "Borrower moral hazard after funding",
-        "Budget slack from sandbagging forecasts"
-      ],
-      "tag": "coordination",
-      "type": "interpretation",
-      "objective": "LO22.5",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "cross_functional_coordination",
-      "secondarySkills": [],
-      "repairSkill": "cross_functional_coordination",
-      "commonError": "treats_divisions_as_independent_when_outputs_are_interdependent",
-      "feedback": "Cross-functional teams force information sharing across specialized departments.",
-      "aHash": "16bc1d3194b5fe92a1170e8749fa966db9c3231623ebff616779f323455df6a7"
-    },
-    {
-      "id": 9164,
-      "sourceGame": "agencyProtocol",
-      "q": "A division manager is accountable for a product line's profit, but depends on shared services controlled elsewhere. What must the parent manage?",
-      "options": [
-        "Coordination and fair performance evaluation across interdependent units",
-        "Only customer reputation scores",
-        "Only insurance deductibles",
-        "Only hidden seller quality before purchase"
-      ],
-      "tag": "multidivisional",
-      "type": "integration",
-      "objective": "LO22.6",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "multidivisional_accountability",
-      "secondarySkills": [],
-      "repairSkill": "multidivisional_accountability",
-      "commonError": "assumes_divisional_accountability_eliminates_coordination_and_agency_problems",
-      "feedback": "Divisions improve accountability, but shared dependencies still require coordination.",
-      "aHash": "b5ed917a3f0777f4514322e88b19ceba0b2960c776da24f87a37c46123673537"
-    },
-    {
-      "id": 9165,
-      "sourceGame": "agencyProtocol",
-      "q": "A multidivisional firm evaluates each division independently. What risk remains?",
-      "options": [
-        "Division managers may ignore spillovers that affect other divisions or total firm value",
-        "Division managers stop responding to incentives",
-        "Headquarters no longer needs strategy",
-        "Internal trades become impossible"
-      ],
-      "tag": "multidivisional",
-      "type": "multi-step",
-      "objective": "LO22.6",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "multidivisional_accountability",
-      "secondarySkills": [],
-      "repairSkill": "multidivisional_accountability",
-      "commonError": "assumes_divisional_accountability_eliminates_coordination_and_agency_problems",
-      "feedback": "Local accountability can create local optimization unless headquarters manages spillovers.",
-      "aHash": "82a9569e2eedf16eb76c1f35bc44b5b9347e637812138a21819c5ddc96d8e084"
+      "feedback": "Incremental benefit is 24-14=10; cost is 7+5=12. The new total is 44-10+12=46. Minimizing residual loss is different from minimizing total agency cost.",
+      "aHash": "2dac4cd507156a8cc0e52b6004eeb45324de14f1f2155c3291a8c76d0ed10cd7",
+      "bossStage": "final"
     },
     {
       "id": 9166,
       "sourceGame": "agencyProtocol",
-      "q": "A manager gets rewarded for beating budget, so the manager negotiates an easy target. What is the core incentive problem?",
+      "q": "Headquarters separates planning forecasts from bonus targets and adds a penalty for forecast errors. A new supplier shock makes the original honest forecast obsolete. Which rule best preserves informative updates while limiting renewed gaming?",
       "options": [
-        "The reward encourages target manipulation rather than true performance improvement",
-        "The manager is signaling high quality to buyers",
-        "The manager is reducing hidden action through monitoring",
-        "The manager is improving total firm value automatically"
+        "Accept any revised target and reset bonuses whenever a manager reports bad news",
+        "Freeze the old forecast and penalize every deviation regardless of new information",
+        "Permit documented revisions using independently verifiable new information, and evaluate accuracy relative to information available when each forecast was made",
+        "Reward only favorable errors, since low realized costs must prove honesty"
       ],
       "tag": "budget_games",
-      "type": "trap",
+      "type": "integration",
       "objective": "LO22.7",
       "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
+      "conceptCluster": "legendaryBoss_agencyProtocol_budget_slack_and_target_manipulation",
       "primarySkill": "budget_slack_and_target_manipulation",
       "secondarySkills": [],
       "repairSkill": "budget_slack_and_target_manipulation",
       "commonError": "mistakes_budget_compliance_for_honest_forecasting_or_value_creation",
-      "feedback": "When rewards depend on beating targets, managers may try to make targets easier.",
-      "aHash": "0112f68ff9da5170f6d054a1b8de9dbd1bef54930dba84d34e34bec966d2c485"
-    },
-    {
-      "id": 9167,
-      "sourceGame": "agencyProtocol",
-      "q": "A budget process asks managers for private forecasts, then punishes every forecast error. What bad behavior might follow?",
-      "options": [
-        "Managers may distort forecasts defensively instead of revealing honest information",
-        "Managers will always reveal perfect information",
-        "Forecasting rules cannot affect incentives",
-        "The issue becomes seller adverse selection only"
-      ],
-      "tag": "budget_games",
-      "type": "multi-step",
-      "objective": "LO22.7",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "budget_slack_and_target_manipulation",
-      "secondarySkills": [],
-      "repairSkill": "budget_slack_and_target_manipulation",
-      "commonError": "mistakes_budget_compliance_for_honest_forecasting_or_value_creation",
-      "feedback": "Budget systems need incentives for truth-telling, not just punishment.",
-      "aHash": "e1eb939427fdd4e398162c803184c54cf461e776dccb6f4805eb8ff84beaa5d9"
-    },
-    {
-      "id": 9168,
-      "sourceGame": "agencyProtocol",
-      "q": "A parent company wants divisions to reveal private information honestly during planning. What helps?",
-      "options": [
-        "Audits, benchmark comparisons, and rewards for forecast accuracy",
-        "Automatic approval of every inflated request",
-        "Punishing all unused funds without review",
-        "Letting each division set its own transfer price without oversight"
-      ],
-      "tag": "parent_company",
-      "type": "integration",
-      "objective": "LO22.1",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "parent_company",
-      "secondarySkills": [],
-      "repairSkill": "parent_company",
-      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "The parent needs planning systems that encourage honest information and total-firm thinking.",
-      "aHash": "ec8f1c3d7e247a233c512db8a839e330701f298a1e1baf824fb19bf0b932f5f4"
-    },
-    {
-      "id": 9169,
-      "sourceGame": "agencyProtocol",
-      "q": "The final boss presents one case with hidden customer risk, hidden employee effort, bad sales bonuses, and internal trade conflict. What should a strong answer do first?",
-      "options": [
-        "Separate the mechanisms instead of forcing one label onto the entire case",
-        "Call everything moral hazard because behavior changed somewhere",
-        "Call everything adverse selection because some information was hidden",
-        "Ignore timing and incentives because all problems are managerial"
-      ],
-      "tag": "principal_agent",
-      "type": "integration",
-      "objective": "LO21.6",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "principal_agent_conflict",
-      "secondarySkills": [],
-      "repairSkill": "principal_agent_conflict",
-      "commonError": "assumes_principal_and_agent_objectives_are_automatically_aligned",
-      "feedback": "Legendary boss reasoning starts by sorting mechanisms: timing, information, incentives, and organizational conflict.",
-      "aHash": "3e6f3b80678aea9839b8d7d2006ad4042ccc47c4f0461be7264750201bc9ab73"
-    },
-    {
-      "id": 9170,
-      "sourceGame": "agencyProtocol",
-      "q": "A borrower knows the lender will share losses but the borrower keeps most upside from a risky project. What lending problem remains?",
-      "options": [
-        "The borrower may still choose too much risk after receiving funds",
-        "The lender has solved all moral hazard through the interest rate alone",
-        "The borrower is signaling product quality to buyers",
-        "The issue is functional coordination"
-      ],
-      "tag": "lending",
-      "type": "trap",
-      "objective": "LO20.5",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "borrower_incentives_and_lender_risk",
-      "secondarySkills": [],
-      "repairSkill": "borrower_incentives_and_lender_risk",
-      "commonError": "assumes_borrowers_and_lenders_share_the_same_risk_incentives_after_funding",
-      "feedback": "Lending moral hazard can remain whenever borrower upside and lender downside are not perfectly aligned.",
-      "aHash": "e28cac6b30c8a3d907e04b1658e6e456c6c5b0e156a1942a962aa8100504a36f"
-    },
-    {
-      "id": 9171,
-      "sourceGame": "agencyProtocol",
-      "q": "A remote worker appears productive on tracked tasks but avoids untracked teamwork. What does this show about shirking?",
-      "options": [
-        "Agents can shift low effort toward activities that are harder to observe",
-        "Tracking one task eliminates hidden effort everywhere",
-        "The problem is adverse selection before insurance purchase",
-        "The solution is a transfer price"
-      ],
-      "tag": "shirking",
-      "type": "integration",
-      "objective": "LO20.4",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "shirking_and_effort_incentives",
-      "secondarySkills": [],
-      "repairSkill": "shirking_and_effort_incentives",
-      "commonError": "ignores_hidden_effort_and_free_riding_in_team_or_employee_settings",
-      "feedback": "Shirking can move to unmeasured margins when only part of effort is visible.",
-      "aHash": "4d3bc0a8f4eed0d166785a7ec967f78967031d554ace5160ede7cf59875a9b21"
-    },
-    {
-      "id": 9172,
-      "sourceGame": "agencyProtocol",
-      "q": "A firm pays only for individual output, and workers stop helping teammates. Why is this a shirking-adjacent agency problem?",
-      "options": [
-        "Important cooperative effort is hidden and unrewarded",
-        "The workers are revealing hidden quality before hiring",
-        "The firm has no principal-agent relationship",
-        "The problem is only seller reputation"
-      ],
-      "tag": "shirking",
-      "type": "multi-step",
-      "objective": "LO20.4",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "shirking_and_effort_incentives",
-      "secondarySkills": [],
-      "repairSkill": "shirking_and_effort_incentives",
-      "commonError": "ignores_hidden_effort_and_free_riding_in_team_or_employee_settings",
-      "feedback": "When cooperative effort is hard to observe, workers may shirk on teamwork.",
-      "aHash": "aef3cf22a6186f4842c64afdc5cc0b455cd7e308c5e99a1c5c4b21c5f662ef01"
-    },
-    {
-      "id": 9173,
-      "sourceGame": "agencyProtocol",
-      "q": "Employees are rewarded for completing cases fast, so they classify difficult cases as easy closures. What is happening?",
-      "options": [
-        "They are gaming the metric rather than improving the true outcome",
-        "They are solving adverse selection with screening",
-        "They are signaling high product quality",
-        "They are setting an efficient transfer price"
-      ],
-      "tag": "gaming",
-      "type": "interpretation",
-      "objective": "LO21.5",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "gaming",
-      "secondarySkills": [],
-      "repairSkill": "gaming",
-      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "The agents chase the measured target while undermining the principal's real goal.",
-      "aHash": "061cb2cd6db88a9c25b8d74f9122d9050822f0a1a596d8f4577373890740bdd5"
+      "feedback": "A useful system distinguishes deliberate slack from news and noise. Documented, verifiable revisions preserve planning information without automatically resetting the performance hurdle.",
+      "aHash": "4c994f3472a1f083f1bccb7d0edc997c2c4812ea511a2f8979a3be406138e76d",
+      "bossStage": "final"
     },
     {
       "id": 9174,
       "sourceGame": "agencyProtocol",
-      "q": "A branch has better local information, but headquarters has a better view of company-wide spillovers. What must organization design balance?",
+      "q": "Targeted review requires branches to identify deals affecting sister branches. Their bonuses still reward local revenue, and branches hide overlap. Which repair addresses the weak point while retaining timely local decisions?",
       "options": [
-        "Information advantages from decentralization against control and coordination advantages from centralization",
-        "Decentralization against insurance pooling only",
-        "Centralization against seller warranties only",
-        "Transfer prices against online reputation"
+        "Centralize every quote and continue using local revenue as the only performance score",
+        "Keep revenue bonuses and ask branches to volunteer more accurate overlap reports",
+        "Audit customer overlap and reward net contribution after verified spillovers, with targeted review for flagged deals",
+        "Remove review and assume local demand knowledge guarantees firm-value maximization"
       ],
       "tag": "organization",
       "type": "integration",
       "objective": "LO21.4",
       "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
+      "conceptCluster": "legendaryBoss_agencyProtocol_organization",
       "primarySkill": "organization",
       "secondarySkills": [],
       "repairSkill": "organization",
       "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "Decision rights should reflect both information location and incentive-control needs.",
-      "aHash": "c008530802bcdf489d2c7cec346ec5c2d102a0f801ade2d8d604f02252dbf78d"
-    },
-    {
-      "id": 9175,
-      "sourceGame": "agencyProtocol",
-      "q": "Two divisions each maximize their own reported profit, yet the parent company earns less. What should headquarters prioritize?",
-      "options": [
-        "Total firm profit, even when local divisional metrics point elsewhere",
-        "The highest individual division score no matter the total effect",
-        "Only the buying division's accounting profit",
-        "Only the selling division's accounting profit"
-      ],
-      "tag": "parent_company",
-      "type": "trap",
-      "objective": "LO22.1",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "parent_company",
-      "secondarySkills": [],
-      "repairSkill": "parent_company",
-      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "The parent company's objective is total firm value, not local scoreboard worship.",
-      "aHash": "e44ad904e7b2b3818a9f23702d6f107fc53152adbb302d8ab5dfb6ee0bb06eb7"
+      "feedback": "The hybrid fails if agents gain by concealing spillovers. Verification and a measure that internalizes them complement the allocation of decision rights.",
+      "aHash": "35603d7dce9d75c37135f1d1e6a06fd9375fd8becaa6d96b90f00f21c55755a2",
+      "bossStage": "final"
     },
     {
       "id": 9176,
       "sourceGame": "agencyProtocol",
-      "q": "Division A refuses to transfer output internally unless it receives a high price, while Division B refuses unless the price is low. What is headquarters designing?",
+      "q": "Headquarters charges the buyer $30 and credits the supplier $57 for each of 140 internal units. The first 100 use spare capacity at MC $24; the last 40 displace sales with net revenue $56. Outside purchase would cost the buyer $58. Which evaluation is correct?",
       "options": [
-        "A transfer-pricing rule that balances local incentives with efficient internal trade",
-        "A seller rating system for external buyers",
-        "A health-insurance deductible",
-        "A screening test for job applicants"
+        "Both divisions prefer internal trade, but headquarters must reconcile the $3,780 internal credit gap; the real sourcing gain remains $3,480",
+        "The firm creates an extra $3,780 of real profit from the difference between the two internal prices",
+        "The trade destroys $3,780 because internal credits are resource costs",
+        "The supplier rejects all units because the buyer is charged only $30"
       ],
       "tag": "transfer_pricing",
-      "type": "interpretation",
+      "type": "integration",
       "objective": "LO22.2",
       "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
+      "conceptCluster": "legendaryBoss_agencyProtocol_transfer_pricing_internal_trade",
       "primarySkill": "transfer_pricing_internal_trade",
       "secondarySkills": [],
       "repairSkill": "transfer_pricing_internal_trade",
       "commonError": "sets_transfer_price_from_division_politics_instead_of_opportunity_cost_and_total_firm_value",
-      "feedback": "Transfer pricing sets incentives for both buying and selling divisions.",
-      "aHash": "f69e898e4bc953addeab02a6e57a39237941ac6a507ad6c589810188f3696317"
-    },
-    {
-      "id": 9177,
-      "sourceGame": "agencyProtocol",
-      "q": "A profit center boosts its own profit by shifting costs onto a shared service unit. What does this reveal?",
-      "options": [
-        "Profit-center evaluation can be distorted when costs and benefits spill across units",
-        "Profit centers automatically maximize total firm value",
-        "Cost allocation never affects behavior",
-        "The issue is only adverse selection in online markets"
-      ],
-      "tag": "profit_center",
-      "type": "trap",
-      "objective": "LO22.3",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "profit_center_evaluation",
-      "secondarySkills": [],
-      "repairSkill": "profit_center_evaluation",
-      "commonError": "assumes_local_profit_center_success_always_improves_total_firm_profit",
-      "feedback": "Profit-center metrics can still be gamed when shared costs and spillovers exist.",
-      "aHash": "d3577e87ac7f419054ec63fa3e89ef19892e4c7a94ccb75d5c40204ae396d6f7"
-    },
-    {
-      "id": 9178,
-      "sourceGame": "agencyProtocol",
-      "q": "Final audit: An insurer offers full coverage at one average premium. Low-risk buyers leave, high-risk buyers remain, and remaining buyers reduce precautions after purchase. Which diagnosis separates the two failures correctly?",
-      "options": [
-        "Adverse selection worsens the pool before contracts; moral hazard reduces precautions after coverage",
-        "Moral hazard worsens the pool before contracts; adverse selection reduces precautions after coverage",
-        "Both failures are transfer pricing because premiums are prices",
-        "Both failures are budget games because buyers manipulate targets"
-      ],
-      "tag": "adverse_selection",
-      "type": "boss integration",
-      "objective": "LO19.2",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "hidden_information_before_contract",
-      "secondarySkills": [
-        "hidden_action_after_contract",
-        "risk_transfer_and_pooling"
-      ],
-      "repairSkill": "hidden_information_before_contract",
-      "commonError": "collapses_adverse_selection_and_moral_hazard_into_one_timing_blind_category",
-      "feedback": "The pool changes before contracts because low-risk buyers exit. Precaution changes after coverage because insured buyers face weaker incentives.",
-      "aHash": "21949b9c9c51c8ac0474f50f64375a37257e364d7a0098a7f4a3078786fcf36e"
-    },
-    {
-      "id": 9179,
-      "sourceGame": "agencyProtocol",
-      "q": "Boss file: A platform forces sellers to verify identity, accept dispute penalties, and build public transaction histories. What is the strongest explanation?",
-      "options": [
-        "The platform layers screening, signaling, and reputation to reduce hidden-quality problems before exchange",
-        "The platform uses transfer pricing to move profit across divisions",
-        "The platform creates moral hazard because buyers become careless after buying",
-        "The platform centralizes all decisions to eliminate local knowledge"
-      ],
-      "tag": "reputation",
-      "type": "boss synthesis",
-      "objective": "LO19.5",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "reputation_systems_and_market_quality",
-      "secondarySkills": [
-        "screening_hidden_type",
-        "credible_signaling_hidden_type"
-      ],
-      "repairSkill": "reputation_systems_and_market_quality",
-      "commonError": "treats_one_information_tool_as_the_whole_system",
-      "feedback": "The system combines several tools. Verification screens, penalties create credible stakes, and histories build reputation.",
-      "aHash": "68c9bbf223ce9d7c4fd7d58816b0c280b87494de0e48191da5a5fc339796280c"
-    },
-    {
-      "id": 9180,
-      "sourceGame": "agencyProtocol",
-      "q": "A firm requires applicants to take a costly skills test, then later pays them by noisy output. Which two problems is the firm confronting?",
-      "options": [
-        "Hidden type before hiring and hidden effort after hiring",
-        "Transfer pricing before hiring and budget slack after hiring",
-        "Cost-center evaluation before hiring and profit-center evaluation after hiring",
-        "Functional silos before hiring and multidivisional accountability after hiring"
-      ],
-      "tag": "principal_agent",
-      "type": "boss timeline",
-      "objective": "LO21.2",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "principal_agent_conflict",
-      "secondarySkills": [
-        "screening_hidden_type",
-        "shirking_and_effort_incentives"
-      ],
-      "repairSkill": "principal_agent_conflict",
-      "commonError": "ignores_timing_and_treats_all_agency_problems_as_identical",
-      "feedback": "The test addresses hidden type before hiring. Noisy output pay deals imperfectly with hidden effort after hiring.",
-      "aHash": "c1e6c3c6670768a6f8fd39c1b13f29ebb33b9711a87b40d81d6d604c0c933dab"
-    },
-    {
-      "id": 9181,
-      "sourceGame": "agencyProtocol",
-      "q": "The board pays executives with stock options. Monitoring costs fall, but executives now prefer high-upside risky projects that shareholders would reject. What is the best lesson?",
-      "options": [
-        "Incentive alignment can reduce some agency costs while creating risk-taking distortions",
-        "Stock options eliminate residual loss by definition",
-        "Monitoring costs are the only agency cost that matters",
-        "Risk-taking proves the executive was adversely selected before hiring"
-      ],
-      "tag": "agency_costs",
-      "type": "boss tradeoff",
-      "objective": "LO21.3",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "agency_costs_and_alignment",
-      "secondarySkills": [
-        "principal_agent_conflict",
-        "metric_gaming_and_unintended_responses"
-      ],
-      "repairSkill": "agency_costs_and_alignment",
-      "commonError": "assumes_one_incentive_contract_solves_all_agency_problems",
-      "feedback": "Agency design is a tradeoff. A contract can improve alignment on one margin while distorting another.",
-      "aHash": "7d3195c0c7cd32dc4914ede25b79f2f8420771b8e1252e5d635f20f0d1147916"
-    },
-    {
-      "id": 9182,
-      "sourceGame": "agencyProtocol",
-      "q": "A sales division reports record revenue after pushing products customers do not need. Refunds, service costs, and churn explode. What did the agent optimize?",
-      "options": [
-        "A rewarded metric rather than total firm value",
-        "Total firm profit, because revenue rose",
-        "A transfer price, because customers paid a price",
-        "A cost-center target, because revenue is a cost"
-      ],
-      "tag": "gaming_incentives",
-      "type": "boss diagnosis",
-      "objective": "LO21.5",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "metric_gaming_and_unintended_responses",
-      "secondarySkills": [
-        "total_firm_profit_alignment",
-        "principal_agent_conflict"
-      ],
-      "repairSkill": "metric_gaming_and_unintended_responses",
-      "commonError": "calls_any_metric_increase_a_performance_increase",
-      "feedback": "Revenue went up, but unmeasured costs destroyed value. The agent gamed the metric.",
-      "aHash": "7722735a23d4b6317149a9db2c96ffd36a41017efdfc712a738541dd87d652f9"
-    },
-    {
-      "id": 9183,
-      "sourceGame": "agencyProtocol",
-      "q": "A transfer between two divisions has seller opportunity cost $55 and buyer value $100. Headquarters sets the transfer price at $115. What is the firm-level and behavioral problem?",
-      "options": [
-        "The transfer creates $45 of firm value but may be rejected by the buyer division",
-        "The transfer destroys $15 of firm value and should always be rejected",
-        "The seller loses $60 if the transfer occurs",
-        "The price proves the seller is low quality"
-      ],
-      "tag": "transfer_pricing",
-      "type": "boss calculation",
-      "objective": "LO22.2",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "transfer_pricing_internal_trade",
-      "secondarySkills": [
-        "total_firm_profit_alignment",
-        "profit_center_evaluation"
-      ],
-      "repairSkill": "transfer_pricing_internal_trade",
-      "commonError": "uses_internal_transfer_price_as_social_cost_or_benefit",
-      "feedback": "Firm value is 100 - 55 = 45. But at price 115, the buyer division refuses despite positive total value.",
-      "aHash": "1eff7149960952293277d11da35533553ff197acd4d78a793fa0f26a172fc863"
-    },
-    {
-      "id": 9184,
-      "sourceGame": "agencyProtocol",
-      "q": "Division A loses $30,000 from helping Division B, but Division B gains $95,000. A’s manager refuses because her bonus is local profit. What should headquarters do?",
-      "options": [
-        "Recognize a $65,000 total firm gain and redesign incentives or authority to support the project",
-        "Accept the refusal because local profit is the only objective",
-        "Call it adverse selection because A’s manager has hidden type",
-        "Lower all insurance premiums to pool the risk"
-      ],
-      "tag": "total_firm_profit",
-      "type": "boss calculation",
-      "objective": "LO22.1",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "total_firm_profit_alignment",
-      "secondarySkills": [
-        "profit_center_evaluation",
-        "coordination"
-      ],
-      "repairSkill": "total_firm_profit_alignment",
-      "commonError": "stops_at_the_refusing_division_local_loss",
-      "feedback": "The net effect is -30,000 + 95,000 = +65,000. Local metrics block a profitable firm-wide move.",
-      "aHash": "72f25956a739920d52870e4160834ea0fdd64d51ea9ebcc9f9e90f779784ea21"
-    },
-    {
-      "id": 9185,
-      "sourceGame": "agencyProtocol",
-      "q": "A cost center cuts $80,000 from maintenance. Production downtime rises by $260,000. What is the net firm effect and lesson?",
-      "options": [
-        "Net loss of $180,000; cost control alone can destroy value",
-        "Net gain of $80,000; the cost center performed well",
-        "Net gain of $260,000 because downtime is another division’s issue",
-        "No effect because cost centers do not affect revenue"
-      ],
-      "tag": "cost_center",
-      "type": "boss calculation",
-      "objective": "LO22.3",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "cost_center_evaluation",
-      "secondarySkills": [
-        "total_firm_profit_alignment",
-        "coordination"
-      ],
-      "repairSkill": "cost_center_evaluation",
-      "commonError": "ignores_downstream_costs_created_by_local_cost_cutting",
-      "feedback": "Savings of 80,000 minus downtime cost of 260,000 equals -180,000. Local cost success can be firm failure.",
-      "aHash": "60cfe47682dd6c8fdafd640ce83d537cf14aa7653372dff355da0b7fcd9fd575"
-    },
-    {
-      "id": 9186,
-      "sourceGame": "agencyProtocol",
-      "q": "A profit center boosts its own margin by refusing an internal request, gaining $40,000 while causing another division to lose $110,000. What happened?",
-      "options": [
-        "The profit-center metric rewarded a local gain that caused a $70,000 firm-wide loss",
-        "The firm gained $40,000 because only the measured division matters",
-        "The other division’s loss proves hidden information before contract",
-        "The profit center became a cost center"
-      ],
-      "tag": "profit_center",
-      "type": "boss calculation",
-      "objective": "LO22.3",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "profit_center_evaluation",
-      "secondarySkills": [
-        "coordination",
-        "total_firm_profit_alignment"
-      ],
-      "repairSkill": "profit_center_evaluation",
-      "commonError": "treats_profit_center_profit_as_total_firm_profit",
-      "feedback": "The total effect is +40,000 - 110,000 = -70,000. Local profit can conflict with parent-company profit.",
-      "aHash": "f482d24ff316c855b90d2e99c7c04d6eafbef8fa84a77ce889e144e42e8f4509"
-    },
-    {
-      "id": 9187,
-      "sourceGame": "agencyProtocol",
-      "q": "A manager pads expected costs, negotiates an easy target, then spends remaining funds in December to avoid a smaller future budget. What is the cleanest diagnosis?",
-      "options": [
-        "Budget slack plus use-it-or-lose-it spending incentives",
-        "Adverse selection plus insurance pooling",
-        "Screening plus signaling",
-        "Transfer pricing plus functional specialization"
-      ],
-      "tag": "budget_games",
-      "type": "boss integration",
-      "objective": "LO22.7",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "budget_slack_and_target_manipulation",
-      "secondarySkills": [
-        "metric_gaming_and_unintended_responses"
-      ],
-      "repairSkill": "budget_slack_and_target_manipulation",
-      "commonError": "mistakes_budget_spending_for_need_or_efficiency",
-      "feedback": "The manager manipulates the target up front and spending behavior later. That is classic budget gaming.",
-      "aHash": "00cad6819cb4a49b390c068e7f22c4f8133181b596d21f5bbbacf17a3fc69df3"
-    },
-    {
-      "id": 9188,
-      "sourceGame": "agencyProtocol",
-      "q": "A decentralized branch knows local demand better than headquarters, but it also discounts aggressively to steal customers from sister branches. What is the governance tradeoff?",
-      "options": [
-        "Local information favors decentralization; cross-branch conflict favors more coordination or central control",
-        "Decentralization always eliminates agency costs",
-        "Centralization always improves local information",
-        "The problem is only moral hazard in insurance"
-      ],
-      "tag": "centralization",
-      "type": "boss tradeoff",
-      "objective": "LO21.4",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "decision_rights_and_decentralization",
-      "secondarySkills": [
-        "coordination",
-        "agency_costs_and_alignment"
-      ],
-      "repairSkill": "decision_rights_and_decentralization",
-      "commonError": "chooses_centralization_or_decentralization_without_weighing_both_margins",
-      "feedback": "Decision rights balance local knowledge against local incentives that may harm the larger organization.",
-      "aHash": "50c3a8fb5dcbb22b542ea8cc8b97c13d5971e6699cc57701c0ada4dbbd5dbeab"
-    },
-    {
-      "id": 9189,
-      "sourceGame": "agencyProtocol",
-      "q": "A team bonus is equal for all members. Individual effort is hidden. One employee free rides while output barely changes. Which control best targets the failure without pretending it is free?",
-      "options": [
-        "Better monitoring or individual accountability, while recognizing measurement costs and distortions",
-        "A higher average insurance premium",
-        "A lower transfer price",
-        "A public seller rating system for customers"
-      ],
-      "tag": "shirking",
-      "type": "boss application",
-      "objective": "LO20.4",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "shirking_and_effort_incentives",
-      "secondarySkills": [
-        "monitoring_and_incentive_control",
-        "hidden_action_after_contract"
-      ],
-      "repairSkill": "shirking_and_effort_incentives",
-      "commonError": "treats_team_output_as_perfectly_revealing_each_worker_effort",
-      "feedback": "Hidden individual effort creates shirking. Monitoring and individual accountability help, but they are not free or perfect.",
-      "aHash": "90ef4b9489f55a48a3e52d2eabc0fd17d1a5bb5e25d2562dcd9bd491f81f208d"
-    },
-    {
-      "id": 9190,
-      "sourceGame": "agencyProtocol",
-      "q": "A lender screens borrowers using credit scores, then uses covenants after lending to restrict risky projects. Why both?",
-      "options": [
-        "Credit scores address hidden type before lending; covenants address hidden action after lending",
-        "Both tools only solve adverse selection before lending",
-        "Both tools only solve moral hazard after lending",
-        "Credit scores are transfer prices and covenants are budget targets"
-      ],
-      "tag": "lending",
-      "type": "boss timeline",
-      "objective": "LO20.5",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "borrower_incentives_and_lender_risk",
-      "secondarySkills": [
-        "screening_hidden_type",
-        "hidden_action_after_contract"
-      ],
-      "repairSkill": "borrower_incentives_and_lender_risk",
-      "commonError": "fails_to_match_tool_to_timing_of_information_problem",
-      "feedback": "Screening evaluates borrower type before money changes hands. Covenants control borrower behavior afterward.",
-      "aHash": "dde45b099738296fdd94cba7a587556462026153df7a06dd86d3a5db949bec86"
-    },
-    {
-      "id": 9191,
-      "sourceGame": "agencyProtocol",
-      "q": "A firm monitors call-center workers intensely. Average call time falls, but complaint resolution and customer retention fall too. What is the lesson?",
-      "options": [
-        "Monitoring visible behavior can distort effort away from harder-to-measure value",
-        "Monitoring always improves every outcome",
-        "The workers were adversely selected before hiring, so no incentive issue remains",
-        "The problem is transfer pricing because calls have prices"
-      ],
-      "tag": "monitoring",
-      "type": "boss critique",
-      "objective": "LO20.3",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "monitoring_and_incentive_control",
-      "secondarySkills": [
-        "metric_gaming_and_unintended_responses"
-      ],
-      "repairSkill": "monitoring_and_incentive_control",
-      "commonError": "assumes_monitoring_cannot_create_perverse_task_allocation",
-      "feedback": "Monitoring changes behavior. Workers may optimize what is watched and neglect what matters but is harder to measure.",
-      "aHash": "290eaac384afd701dc4f262e1f4fe37a7e7c4864a95b4af8e007cb3b1b3abe3e"
-    },
-    {
-      "id": 9192,
-      "sourceGame": "agencyProtocol",
-      "q": "A buyer trusts a seller because the seller has a long record, accepts penalties, and offers a warranty. Which answer best explains why this helps but does not make the market perfect?",
-      "options": [
-        "These tools reduce hidden quality concerns, but ratings and promises remain noisy and imperfect",
-        "They eliminate all adverse selection and moral hazard forever",
-        "They only matter after the sale because information never matters before exchange",
-        "They are internal transfer prices between buyer and seller"
-      ],
-      "tag": "reputation",
-      "type": "boss synthesis",
-      "objective": "LO19.5",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "reputation_systems_and_market_quality",
-      "secondarySkills": [
-        "credible_signaling_hidden_type",
-        "hidden_information_before_contract"
-      ],
-      "repairSkill": "reputation_systems_and_market_quality",
-      "commonError": "treats_stacked_market_signals_as_perfect_information",
-      "feedback": "Reputation and warranties reduce uncertainty. They do not eliminate noise, manipulation, or future behavior problems.",
-      "aHash": "bcd3da5f833e75d43e0d489f223a16ebc6f31de90f619fccbb9f969259a60a08"
-    },
-    {
-      "id": 9193,
-      "sourceGame": "agencyProtocol",
-      "q": "A certification is costly for weak consultants but cheap for strong consultants because strong consultants already know the material. Clients value the certification. What must be true for it to signal quality?",
-      "options": [
-        "The cost-benefit difference must separate high-quality and low-quality consultants",
-        "The certification must be equally easy for every type",
-        "The client must design the test for one specific applicant",
-        "The certification must occur after the contract to reduce shirking"
-      ],
-      "tag": "signaling",
-      "type": "boss concept",
-      "objective": "LO19.4",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "credible_signaling_hidden_type",
-      "secondarySkills": [
-        "hidden_information_before_contract"
-      ],
-      "repairSkill": "credible_signaling_hidden_type",
-      "commonError": "forgets_that_credible_signals_must_separate_types",
-      "feedback": "A credible signal separates types because low-quality sellers find it too costly relative to the benefit.",
-      "aHash": "d63fdb1a51736c475ac5d1228270891d47c597815a63fd0cc2eed12be4888884"
-    },
-    {
-      "id": 9194,
-      "sourceGame": "agencyProtocol",
-      "q": "A company gives applicants a work-sample test that the company designed. Strong applicants perform well; weak applicants do not. What is the best classification?",
-      "options": [
-        "Screening, because the less-informed firm creates a mechanism to reveal applicant type",
-        "Signaling, because the applicant alone chose a voluntary costly action",
-        "Moral hazard, because effort changed after employment began",
-        "Budget gaming, because applicants negotiated easier targets"
-      ],
-      "tag": "screening",
-      "type": "boss classification",
-      "objective": "LO19.3",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "screening_hidden_type",
-      "secondarySkills": [
-        "hidden_information_before_contract"
-      ],
-      "repairSkill": "screening_hidden_type",
-      "commonError": "confuses_screening_and_signaling_based_only_on_who_reveals_information",
-      "feedback": "The firm designed the filter. That makes this screening.",
-      "aHash": "ce30637b5c101f0e6a1b83e065d4104f0769991db924b1515c5cc613f6fd9ace"
-    },
-    {
-      "id": 9195,
-      "sourceGame": "agencyProtocol",
-      "q": "An insured homeowner stops maintaining smoke detectors after full coverage begins. The insurer responds with a deductible and premium discounts for verified alarms. What problems do those tools target?",
-      "options": [
-        "The deductible preserves care incentives; verified alarms add monitoring/screening information",
-        "The deductible creates adverse selection and verified alarms create transfer pricing",
-        "Both tools only raise total firm profit for divisions",
-        "Both tools are budget games"
-      ],
-      "tag": "moral_hazard",
-      "type": "boss application",
-      "objective": "LO20.2",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "hidden_action_after_contract",
-      "secondarySkills": [
-        "monitoring_and_incentive_control",
-        "risk_transfer_and_pooling"
-      ],
-      "repairSkill": "hidden_action_after_contract",
-      "commonError": "uses_full_insurance_as_if_it_preserves_precaution_incentives",
-      "feedback": "Full coverage weakens care incentives. Deductibles and verified precautions reduce moral hazard.",
-      "aHash": "73ddf66e1f9d38d1a3a140020e11e3e81e3fae10b89221b2b5eeea30b9754150"
-    },
-    {
-      "id": 9196,
-      "sourceGame": "agencyProtocol",
-      "q": "A firm groups workers by function to deepen expertise, then creates cross-functional project teams for launches. What is it trying to balance?",
-      "options": [
-        "Specialization benefits from functional units with coordination needs across those units",
-        "Transfer pricing with insurance premiums",
-        "Adverse selection with budget slack",
-        "Moral hazard with seller reputation"
-      ],
-      "tag": "functional_units",
-      "type": "boss tradeoff",
-      "objective": "LO22.4",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "functional_specialization",
-      "secondarySkills": [
-        "cross_functional_coordination"
-      ],
-      "repairSkill": "functional_specialization",
-      "commonError": "ignores_coordination_costs_after_praising_specialization",
-      "feedback": "Functional departments build expertise, but cross-functional teams help prevent silos during projects that require multiple specialties.",
-      "aHash": "530849459d4cded14a22ff56d5532b5f8c72d6a8ae7a74fb2fcde2af14208504"
-    },
-    {
-      "id": 9197,
-      "sourceGame": "agencyProtocol",
-      "q": "Marketing promises custom delivery dates without operations approval. Operations misses deadlines and customers blame the whole firm. What failed?",
-      "options": [
-        "Coordination across functional divisions with interdependent outputs",
-        "Adverse selection before the customer entered the market",
-        "A seller warranty signal",
-        "Insurance risk pooling"
-      ],
-      "tag": "coordination",
-      "type": "boss diagnosis",
-      "objective": "LO22.5",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "cross_functional_coordination",
-      "secondarySkills": [
-        "functional_specialization",
-        "total_firm_profit_alignment"
-      ],
-      "repairSkill": "cross_functional_coordination",
-      "commonError": "treats_department_decisions_as_independent",
-      "feedback": "Departments are specialized but interdependent. One unit’s promise can create costs for another and harm the firm.",
-      "aHash": "2ecf6246b84bf893c2bac2786c85c6c20bb2bcd80fa2ffd5bf62c66e07de4bad"
-    },
-    {
-      "id": 9198,
-      "sourceGame": "agencyProtocol",
-      "q": "A multidivisional firm gives product divisions profit responsibility, but shared technology investments are underfunded because no single division gets enough credit. What is the issue?",
-      "options": [
-        "Divisional accountability can underprovide shared resources without firm-level coordination",
-        "Multidivisional structures eliminate shared-resource problems",
-        "The technology team must be a seller in an online market",
-        "The issue is adverse selection because project type is hidden before purchase"
-      ],
-      "tag": "multidivisional",
-      "type": "boss synthesis",
-      "objective": "LO22.6",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "multidivisional_accountability",
-      "secondarySkills": [
-        "coordination",
-        "total_firm_profit_alignment"
-      ],
-      "repairSkill": "multidivisional_accountability",
-      "commonError": "assumes_profit_responsibility_solves_shared_investment_problems",
-      "feedback": "Divisions focus on their own results. Shared investments may need central support because benefits spill across divisions.",
-      "aHash": "f16d5d2d27e3a1d791e6fe470fc06a54e3aa63a65b6a0e070440856fd9fd809d"
-    },
-    {
-      "id": 9199,
-      "sourceGame": "agencyProtocol",
-      "q": "A manager is evaluated by staying under budget, so she delays useful training. Training savings are $20,000, but productivity losses are $75,000. What is the net effect?",
-      "options": [
-        "A $55,000 firm-level loss caused by a narrow cost target",
-        "A $20,000 firm-level gain because the budget was protected",
-        "A $75,000 firm-level gain because training was avoided",
-        "No effect because training is not part of profit"
-      ],
-      "tag": "cost_center",
-      "type": "boss calculation",
-      "objective": "LO22.3",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "cost_center_evaluation",
-      "secondarySkills": [
-        "total_firm_profit_alignment"
-      ],
-      "repairSkill": "cost_center_evaluation",
-      "commonError": "counts_savings_without_productivity_loss",
-      "feedback": "The net effect is 20,000 - 75,000 = -55,000. Cost targets can reward value destruction.",
-      "aHash": "46e3bf4ac67dc505ddcf4b9eeb92b5fdc58d5290f9307b2f8feed6165adf8d77"
-    },
-    {
-      "id": 9200,
-      "sourceGame": "agencyProtocol",
-      "q": "A high-quality used-car seller offers an inspection report, a warranty, and a long verified sales history. Low-quality sellers avoid these tools. What is happening?",
-      "options": [
-        "Quality is being revealed through costly signals and reputation, reducing adverse selection",
-        "The seller is shirking because effort is hidden after sale",
-        "The buyer is setting a transfer price",
-        "The seller is creating budget slack"
-      ],
-      "tag": "adverse_selection",
-      "type": "boss integration",
-      "objective": "LO19.4",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "hidden_information_before_contract",
-      "secondarySkills": [
-        "credible_signaling_hidden_type",
-        "reputation_systems_and_market_quality"
-      ],
-      "repairSkill": "hidden_information_before_contract",
-      "commonError": "misses_that_signals_and_reputation_are_tools_against_adverse_selection",
-      "feedback": "The tools help buyers infer hidden quality before purchase. Strong sellers can bear them more easily than weak sellers.",
-      "aHash": "1ae54048bfe9fe79a56a7eef81ce3feeba0a3bc9c41fef8d4e93139f8c7d4e39"
-    },
-    {
-      "id": 9201,
-      "sourceGame": "agencyProtocol",
-      "q": "A manager says, “If we just give every division its own profit target, total firm profit will automatically rise.” What is the correct response?",
-      "options": [
-        "Profit targets help accountability but can create local decisions that reduce total firm profit",
-        "Profit centers always eliminate agency costs",
-        "Profit targets are only useful for cost centers",
-        "Division profit and total firm profit are always identical"
-      ],
-      "tag": "profit_center",
-      "type": "boss critique",
-      "objective": "LO22.3",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "profit_center_evaluation",
-      "secondarySkills": [
-        "total_firm_profit_alignment",
-        "coordination"
-      ],
-      "repairSkill": "profit_center_evaluation",
-      "commonError": "assumes_profit_center_accountability_automatically_aligns_the_whole_firm",
-      "feedback": "Profit centers improve responsibility, but local optimization can conflict with firm-wide value.",
-      "aHash": "01f2e36dbbb992b51637c51bb574e43eeae1dcd65c1622a2c762f8e2b57315ec"
-    },
-    {
-      "id": 9202,
-      "sourceGame": "agencyProtocol",
-      "q": "A principal can choose between fixed salary, output pay, and close monitoring. Effort is hidden and output is noisy. What is the central design problem?",
-      "options": [
-        "Balancing risk sharing, incentive strength, and monitoring cost",
-        "Eliminating all risk from society through insurance",
-        "Choosing a transfer price for every worker",
-        "Preventing all specialization across functional units"
-      ],
-      "tag": "principal_agent",
-      "type": "boss synthesis",
-      "objective": "LO21.1",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "principal_agent_conflict",
-      "secondarySkills": [
-        "agency_costs_and_alignment",
-        "monitoring_and_incentive_control"
-      ],
-      "repairSkill": "principal_agent_conflict",
-      "commonError": "assumes_one_contract_form_dominates_without_tradeoffs",
-      "feedback": "Output pay gives incentives but exposes agents to noise. Salary shares risk but weakens effort incentives. Monitoring helps but costs money.",
-      "aHash": "060fb4b59a1f3a425104d3e222d2b318275db5f35f7337eddd8198a16189ae17"
-    },
-    {
-      "id": 9203,
-      "sourceGame": "agencyProtocol",
-      "q": "A seller’s refund policy is generous, but buyers discover claims are denied through fine print. What happens to the signal?",
-      "options": [
-        "It loses credibility because the apparent warranty does not impose real cost on low-quality sellers",
-        "It becomes stronger because every written promise is a signal",
-        "It turns into moral hazard only after the buyer leaves a review",
-        "It becomes a transfer price because refunds involve money"
-      ],
-      "tag": "signaling",
-      "type": "boss critique",
-      "objective": "LO19.4",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "credible_signaling_hidden_type",
-      "secondarySkills": [
-        "reputation_systems_and_market_quality"
-      ],
-      "repairSkill": "credible_signaling_hidden_type",
-      "commonError": "accepts_surface_promises_as_credible_without_checking_costly_commitment",
-      "feedback": "A signal must be costly or binding enough to separate types. Fine print can destroy credibility.",
-      "aHash": "131c375341021879cec53c39ec1ba75425bcdde4ac0bd9860058cd7901e2d7c6"
-    },
-    {
-      "id": 9204,
-      "sourceGame": "agencyProtocol",
-      "q": "An insurer uses health exams before issuing policies and co-pays after coverage begins. Why is this pairing sensible?",
-      "options": [
-        "Exams screen risk type before contracting; co-pays preserve care incentives after contracting",
-        "Exams solve moral hazard after contracting; co-pays solve adverse selection before contracting",
-        "Both tools only solve transfer pricing",
-        "Both tools are budget games used by managers"
-      ],
-      "tag": "insurance",
-      "type": "boss timeline",
-      "objective": "LO19.1",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "risk_transfer_and_pooling",
-      "secondarySkills": [
-        "screening_hidden_type",
-        "hidden_action_after_contract"
-      ],
-      "repairSkill": "risk_transfer_and_pooling",
-      "commonError": "fails_to_match_insurance_tools_to_before_and_after_contract_problems",
-      "feedback": "Insurance design often needs both: screening for hidden risk type and cost sharing for post-coverage behavior.",
-      "aHash": "211c51ae079518377af6bb93ff0ee8e29b2632faff39451c1f42fd1104b4f37b"
-    },
-    {
-      "id": 9205,
-      "sourceGame": "agencyProtocol",
-      "q": "A department is judged by number of cases closed. Employees close easy cases quickly and avoid hard cases that matter most. What is this?",
-      "options": [
-        "Gaming a narrow metric by shifting effort away from valuable unmeasured work",
-        "Adverse selection because customers have hidden type only",
-        "Transfer pricing because cases have internal prices",
-        "Risk pooling because cases are uncertain"
-      ],
-      "tag": "gaming_incentives",
-      "type": "boss diagnosis",
-      "objective": "LO21.5",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "metric_gaming_and_unintended_responses",
-      "secondarySkills": [
-        "monitoring_and_incentive_control"
-      ],
-      "repairSkill": "metric_gaming_and_unintended_responses",
-      "commonError": "mistakes_high_case_count_for_high_value_service",
-      "feedback": "Agents chase the measured target. If hard cases matter but are not rewarded, the metric can distort effort.",
-      "aHash": "48bd7d52c550003413825d1c08c76c679b31483b65d240a3a0d18ed1c66f5b3a"
-    },
-    {
-      "id": 9206,
-      "sourceGame": "agencyProtocol",
-      "q": "A division hides demand forecasts to negotiate a smaller target, then beats the target easily and earns a bonus. What is the agency issue?",
-      "options": [
-        "Private information and budget gaming create an easy target that rewards misrepresentation",
-        "The division signaled high quality by hiding information",
-        "The firm solved coordination by decentralizing forecasts",
-        "The target proves total firm profit rose"
-      ],
-      "tag": "budget_games",
-      "type": "boss diagnosis",
-      "objective": "LO22.7",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "budget_slack_and_target_manipulation",
-      "secondarySkills": [
-        "principal_agent_conflict",
-        "metric_gaming_and_unintended_responses"
-      ],
-      "repairSkill": "budget_slack_and_target_manipulation",
-      "commonError": "treats_beating_an_easy_target_as_true_high_performance",
-      "feedback": "The agent uses private information to create slack, then gets rewarded for clearing an artificially low bar.",
-      "aHash": "b26bda6d84f10bf6b7d61ba7a3887ef145b86357a6849ffe3b5d6c4ec41702bf"
-    },
-    {
-      "id": 9207,
-      "sourceGame": "agencyProtocol",
-      "q": "A parent company lets divisions choose projects, but requires headquarters approval for projects that affect multiple divisions. What is the logic?",
-      "options": [
-        "Keep local decision speed while centralizing choices with major spillovers",
-        "Eliminate all local information from every project",
-        "Turn all divisions into cost centers",
-        "Use insurance to pool project risk"
-      ],
-      "tag": "centralization",
-      "type": "boss governance",
-      "objective": "LO21.4",
-      "difficulty": "legendaryBoss",
-      "conceptCluster": "legendary_boss_agency_protocol",
-      "primarySkill": "decision_rights_and_decentralization",
-      "secondarySkills": [
-        "coordination",
-        "total_firm_profit_alignment"
-      ],
-      "repairSkill": "decision_rights_and_decentralization",
-      "commonError": "misses_that_decision_rights_can_be_split_by_type_of_decision",
-      "feedback": "Decision rights do not have to be all-or-nothing. Local choices can stay decentralized while spillover-heavy choices are coordinated centrally.",
-      "aHash": "cbd7b4ae1cfd8e060b98d61a0f38a13cfa7b689ea76398e24221fd7b91e0e27e"
+      "feedback": "The supplier sees 57, above 24 or 56; the buyer sees 30, below 58. The 27×140=3,780 reconciliation is an internal accounting gap, not new value. Real gain remains 100×34+40×2=3,480.",
+      "aHash": "2026336c433302396bde3b675155f754a3f87a46ca81bc0fa2aa996bd37c261a",
+      "bossStage": "final"
     }
   ]
 };
@@ -10357,24 +10370,24 @@ const microSkillRepairPools = {
     {
       "id": 5003,
       "sourceGame": "agencyProtocol",
-      "q": "A high-risk customer is more likely to buy generous insurance. This is...",
+      "q": "New policyholders had lower loss risk before buying coverage. Their behavior did not change afterward. Why is calling this moral hazard a mistake?",
       "options": [
-        "Adverse selection",
-        "Moral hazard",
-        "Transfer pricing",
-        "Shirking"
+        "The evidence concerns selection of lower-risk types, not a post-contract change in action",
+        "Moral hazard always requires the insurer to lose money",
+        "Lower observed losses prove coverage caused safer behavior",
+        "All differences between insured and uninsured groups are adverse selection"
       ],
       "tag": "adverse_selection",
-      "type": "interpretation",
+      "type": "conceptual",
       "objective": "LO19.2",
       "difficulty": "repair",
       "conceptCluster": "repair_agency_protocol_adverse_selection",
       "primarySkill": "hidden_information_before_contract",
       "secondarySkills": [],
       "repairSkill": "hidden_information_before_contract",
-      "commonError": "confuses_hidden_information_before_contract_with_hidden_action_after_contract",
-      "feedback": "The customer’s risk type is hidden before the insurance contract is made.",
-      "aHash": "31e55046b3ece7183b1f616a145a03936065f7548d4dae52c5583dd6e87e8bb0"
+      "commonError": "confuses_selection_with_post_contract_behavior",
+      "feedback": "This is favorable selection: the enrolled group was already lower risk. The timing separates who enters from how protection changes later behavior.",
+      "aHash": "80a1eeb91c9288dc2062a943ed1808d9c0dfa4b6b66bd066e8a27eae9a4f328b"
     }
   ],
   "screening": [
@@ -11372,24 +11385,24 @@ const microSkillBridgePools = {
     {
       "id": 6003,
       "sourceGame": "agencyProtocol",
-      "q": "A used-car seller knows the car has hidden mechanical problems, but buyers cannot observe that before buying. This is...",
+      "q": "A maintenance warranty attracts equipment owners whose machines had fewer failures before enrollment. After enrollment those owners reduce preventive maintenance, but their total failure rate remains below that of nonmembers. Which conclusion is supported?",
       "options": [
-        "Adverse selection",
-        "Moral hazard",
-        "Shirking",
-        "A cost-center problem"
+        "Favorable selection and moral hazard can coexist; the lower overall rate does not prove maintenance incentives improved",
+        "Only favorable selection exists because insured machines still fail less often",
+        "Only moral hazard exists because every difference must be caused by coverage",
+        "The warranty must have caused lower failure rates because members have fewer failures"
       ],
       "tag": "adverse_selection",
-      "type": "diagnostic",
+      "type": "integration",
       "objective": "LO19.2",
       "difficulty": "bridge",
       "conceptCluster": "bridge_agency_protocol_adverse_selection",
       "primarySkill": "hidden_information_before_contract",
       "secondarySkills": [],
       "repairSkill": "hidden_information_before_contract",
-      "commonError": "confuses_hidden_information_before_contract_with_hidden_action_after_contract",
-      "feedback": "The seller has hidden quality information before the sale.",
-      "aHash": "31e55046b3ece7183b1f616a145a03936065f7548d4dae52c5583dd6e87e8bb0"
+      "commonError": "confuses_selection_with_post_contract_behavior",
+      "feedback": "Lower pre-enrollment risk identifies favorable selection. Reduced maintenance afterward is a behavior response. Opposing effects make the overall comparison insufficient for a causal claim.",
+      "aHash": "b2a406b657b3b724b184617f4669f6fe848931f0ada2ade9a30fda9c90cd74db"
     }
   ],
   "screening": [

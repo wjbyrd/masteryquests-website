@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "textChanges": [
+    {
+      "path": "play/managerial-intelligence-directorate/market-signal/index.html",
+      "before": "    \"LO9.6\": \"LO9.6\"",
+      "after": "    \"LO9.6\": \"Analyze how monopoly firms determine price and output, identify barriers to entry, and explain how monopoly affects profits, consumer surplus, and market efficiency.\""
+    },
+    {
+      "path": "play/managerial-intelligence-directorate/market-signal/index.html",
+      "before": "    \"demand_supply_two.png\": {\n        \"imageAlt\": \"Supply and demand graph with multiple demand and supply curves and labeled prices and quantities.\",\n        \"graphDescription\": \"A supply-and-demand diagram with multiple demand and supply curves used for equilibrium, shortage, surplus, and comparative-statics questions. Read the labeled intersections and axis values shown in the figure.\"\n    }",
+      "after": "    \"market_curves_independent.svg\": {\n        \"imageAlt\": \"Independent practice diagram with demand curves D1 and D2 and supply curves S1 and S2.\",\n        \"graphDescription\": \"Quantity is horizontal and price is vertical. D1: P=84-0.5Q; D2: P=108-0.5Q; S1: P=12+0.5Q; S2: P=36+0.5Q. Labeled quantity ticks are 0, 24, 48, 72, 96, 120 and 144. Price ticks run from 0 to 108 in increments of 12.\"\n    }"
+    }
+  ],
+  "requiredAssets": [
+    {
+      "path": "play/managerial-intelligence-directorate/market-signal/market_curves_independent.svg",
+      "sha256": "da479344ea8bf99e66914d643fb624ecfab18faf627869fef2af272c3270625f"
+    }
+  ],
+  "retiredAssets": [
+    {
+      "path": "play/managerial-intelligence-directorate/market-signal/demand_supply_two.png",
+      "sha256": "c6da7b52b1c240c1c4f9613096d3dd4dfa7a95c2b4bce47cabe8ac1304eb4dc1"
+    }
+  ]
+}

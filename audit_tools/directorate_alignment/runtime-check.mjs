@@ -26,11 +26,13 @@ try{
   const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.goto(`${origin}/play/managerial-intelligence-directorate/${game}/`);
   const result=await page.evaluate(async()=>{
+   let randomState=0x6655;
+   Math.random=()=>((randomState=(Math.imul(1664525,randomState)+1013904223)>>>0)/4294967296);
    const bank=Object.values(questionBanks).flat();
    const repairs=Object.values(microSkillRepairPools).flat();const bridges=Object.values(microSkillBridgePools).flat();
    const rows=[...bank,...repairs,...bridges];let checks=0;const invalid=[];
    for(const q of rows){let matches=0;for(const option of q.options){matches+=await isPublishedAnswerCorrect(q,option)?1:0;checks++;}if(matches!==1)invalid.push(q.id);}
-   const routeIssues=[];let routeChecks=0;
+   const routeIssues=[];const routeObjectiveMismatches=[];let routeChecks=0;
    gameMode='standard';room=25;
    for(const q of bank){
     const state={active:true,skill:getSkillKey(q),objective:inferObjective(q),tag:q.tag,originQuestionId:q.id};
@@ -40,6 +42,7 @@ try{
      if(!selected)routeIssues.push({id:q.id,stage,issue:'No selection'});
      else if(stage==='repair'&&!repairs.some(r=>r.id===selected.id))routeIssues.push({id:q.id,stage,selected:selected.id,issue:'Main-bank fallback instead of repair'});
      else if(stage==='bridge'&&!bridges.some(r=>r.id===selected.id))routeIssues.push({id:q.id,stage,selected:selected.id,issue:'Main-bank fallback instead of bridge'});
+     if(selected && getBossObjectiveKey(selected)!==getBossObjectiveKey(q))routeObjectiveMismatches.push({id:q.id,stage,selected:selected.id,sourceObjective:q.objective,selectedObjective:selected.objective});
     }
    }
    const bossIssues=[];let bossChecks=0;
@@ -52,14 +55,16 @@ try{
      }
     }
    }
-   return {records:rows.length,answerChecks:checks,invalidAnswers:invalid,standardPreflight:validateFacultyMode('standard'),routeChecks,routeIssues,bossChecks,bossIssues};
+   const modes=typeof FACULTY_MODE_REQUIREMENTS==='object'?Object.keys(FACULTY_MODE_REQUIREMENTS):['standard','timed','exam','quiz','unlimited','legendary','score'];
+   const modePreflights=Object.fromEntries(modes.map(mode=>[mode,validateFacultyMode(mode)]));
+   return {records:rows.length,answerChecks:checks,invalidAnswers:invalid,standardPreflight:validateFacultyMode('standard'),modePreflights,routeChecks,routeIssues,routeObjectiveMismatches,bossChecks,bossIssues};
   });
   result.game=game;result.pageErrors=errors;results.push(result);
-  console.log(JSON.stringify({game,records:result.records,invalidAnswers:result.invalidAnswers.length,standardPreflight:result.standardPreflight.ok,routeIssues:result.routeIssues.length,bossIssues:result.bossIssues.length,pageErrors:errors}));
+  console.log(JSON.stringify({game,records:result.records,invalidAnswers:result.invalidAnswers.length,standardPreflight:result.standardPreflight.ok,routeIssues:result.routeIssues.length,routeObjectiveMismatches:result.routeObjectiveMismatches.length,bossIssues:result.bossIssues.length,pageErrors:errors}));
   await context.close();
  }
  const out=path.join(root,'_private_course_sources/eco6655/alignment-audit/runtime-validation.json');
  fs.writeFileSync(out,JSON.stringify(results,null,2));
- if(results.some(r=>r.invalidAnswers.length||!r.standardPreflight.ok||r.routeIssues.length||r.bossIssues.length||r.pageErrors.length))process.exitCode=1;
+ if(results.some(r=>r.invalidAnswers.length||Object.values(r.modePreflights).some(p=>!p.ok)||r.routeIssues.length||r.bossIssues.length||r.pageErrors.length))process.exitCode=1;
 }finally{await browser?.close();await new Promise(r=>server.close(r));}
 
