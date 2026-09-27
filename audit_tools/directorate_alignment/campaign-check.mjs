@@ -15,12 +15,15 @@ const server=http.createServer((req,res)=>{
 });
 await new Promise(r=>server.listen(0,'127.0.0.1',r));
 const origin='http://127.0.0.1:'+server.address().port;
-const out=path.join(root,'_private_course_sources/eco6655/alignment-audit/continuation-2026-09-27');
+const out=process.env.AUDIT_OUTPUT_DIR||path.join(root,'_private_course_sources/eco6655/alignment-audit/continuation-2026-09-27');
+const allGames=['cost-directive','market-signal','strategy-desk','agency-protocol'];
+if(process.env.AUDIT_GAME&&!allGames.includes(process.env.AUDIT_GAME))throw Error('Unknown AUDIT_GAME');
+const games=process.env.AUDIT_GAME?[process.env.AUDIT_GAME]:allGames;
 let browser;
 try{
  browser=await chromium.launch({channel:'msedge',headless:true});
  const results=[];
- for(const game of ['cost-directive','market-signal','strategy-desk','agency-protocol']){
+ for(const game of games){
   const context=await browser.newContext();
   await context.route('**/*',r=>new URL(r.request().url()).origin===origin?r.continue():r.abort());
   const page=await context.newPage();
@@ -79,9 +82,11 @@ try{
   }
   await context.close();
  }
+ if(games.includes('market-signal')){
  const graph=await browser.newPage({viewport:{width:760,height:530}});
  await graph.goto(`${origin}/play/managerial-intelligence-directorate/market-signal/market_curves_independent.svg`);
  await graph.screenshot({path:path.join(out,'independent-market-graph.png')});
  await graph.close();
+ }
  fs.writeFileSync(path.join(out,'campaign-exposure.json'),JSON.stringify({method:'Actual loadQuestion and recordAdaptiveAttempt, seeded RNG, fresh state per traversal, all answers correct; direct room advance bypasses UI delays and telemetry. Two response-time profiles. These are controlled selection samples, not observed student behavior or miss/retreat simulations.',results},null,2));
 }finally{await browser?.close();await new Promise(r=>server.close(r));}

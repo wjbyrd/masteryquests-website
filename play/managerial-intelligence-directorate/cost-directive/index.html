@@ -4956,15 +4956,19 @@ function getQuestionsMatchingNeed(pool, objectiveKey, tag, excludeIds = [], skil
             resolveRecordSkill(question) === skillKey
         );
         if(skillMatches.length > 0) return skillMatches;
+        // Retry matching content without recent-history exclusions before drifting.
+        if(pool.some(question => resolveRecordSkill(question) === skillKey)) return [];
     }
 
     const objectiveMatches = candidates.filter(question =>
         inferObjective(question) === objectiveKey
     );
     if(objectiveMatches.length > 0) return objectiveMatches;
+    if(pool.some(question => inferObjective(question) === objectiveKey)) return [];
 
     const tagMatches = candidates.filter(question => question.tag === tag);
     if(tagMatches.length > 0) return tagMatches;
+    if(pool.some(question => question.tag === tag)) return [];
 
     return candidates;
 }

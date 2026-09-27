@@ -47,7 +47,7 @@ const questionBanks = {
         "Copy the strategy used by the best-performing region without adjustment"
       ],
       "tag": "problem_solving_steps",
-      "type": "definition",
+      "type": "application",
       "objective": "LO1.1",
       "difficulty": "easy",
       "conceptCluster": "easy_costDirective_problem_solving_steps",
@@ -85,10 +85,10 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "A supervisor wants to improve output. Which question best fits the first step of problem solving?",
       "options": [
-        "Which solution will sound most decisive?",
-        "Can the decision be postponed until next quarter?",
+        "Which output bonus should we introduce?",
+        "Which overtime schedule should we adopt?",
         "What decision is being made, and by whom?",
-        "Which worker has the weakest recent performance?"
+        "Which worker should receive additional training?"
       ],
       "tag": "problem_solving_steps",
       "type": "application",
@@ -107,9 +107,9 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "Which statement belongs in the rational-actor paradigm?",
       "options": [
-        "People always choose the option society prefers",
-        "People ignore incentives when choices are repeated",
-        "People act randomly whenever money is involved",
+        "People count monetary payments but exclude time and effort",
+        "People choose the action that maximizes total social benefit",
+        "People must know all consequences with certainty before choosing",
         "People respond to costs and benefits when making choices"
       ],
       "tag": "rational_actor_paradigm",
@@ -164,7 +164,7 @@ const questionBanks = {
       "primarySkill": "rational_actor_paradigm",
       "secondarySkills": [],
       "repairSkill": "rational_actor_paradigm",
-      "commonError": "confuses_rational_with_altruistic",
+      "commonError": "counts_only_money",
       "feedback": "Purposeful choice can include time, reliability and other valued outcomes, not just the invoice price.",
       "aHash": "0aa87b5c58a9e95e31e1f1ffd3f9c728a3d920dfed4ea66fe147509812cbc61f"
     },
@@ -197,9 +197,9 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "A sales team earns a bonus for each verified new account. What role does the bonus play?",
       "options": [
-        "It removes the need to measure performance",
-        "It guarantees every worker has the same effort",
-        "It turns a fixed cost into an opportunity cost",
+        "It guarantees equal effort from all salespeople",
+        "It measures the number of accounts opened",
+        "It specifies the minimum acceptable sales target",
         "It raises the reward for the desired action"
       ],
       "tag": "incentive_system_design",
@@ -245,10 +245,10 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "A well-designed organization gives decision makers:",
       "options": [
-        "complete freedom without performance measurement",
+        "relevant information while leaving rewards unrelated to firm value",
         "the information and incentives needed to make value-creating choices",
-        "large budgets without defined objectives",
-        "authority separated from all consequences"
+        "profit-based rewards even when relevant information is unavailable",
+        "decision authority evaluated only by the volume of activity"
       ],
       "tag": "organization_design_info_incentives",
       "type": "definition",
@@ -293,10 +293,10 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "Why does information matter in organizational design?",
       "options": [
-        "Information matters only after profits are reported",
-        "More reports always remove incentive problems",
-        "Information replaces the need for clear objectives",
-        "Employees cannot make good choices without knowing relevant facts"
+        "Strong incentives compensate for missing decision-relevant facts",
+        "A complete accounting report is sufficient for every decision",
+        "Information becomes useful only after rewards are determined",
+        "Employees need relevant facts to compare alternatives"
       ],
       "tag": "organization_design_info_incentives",
       "type": "definition",
@@ -310,7 +310,7 @@ const questionBanks = {
       "repairSkill": "organization_design_info_incentives",
       "commonError": "treats_information_as_optional",
       "feedback": "Decision makers need relevant information before they can choose well on behalf of the organization.",
-      "aHash": "e1a828eb0d2afb0be006ec051280d0c19028589e061edde8fd2a614f1ce52226"
+      "aHash": "6e30ae6e3bd0e5203cce2acd4457a408bd306e6e47cdb78dd8f89a98e8e46896"
     },
     {
       "id": 13,
@@ -318,9 +318,9 @@ const questionBanks = {
       "q": "When diagnosing a business problem, which question is most useful?",
       "options": [
         "What behavior is the current incentive system encouraging?",
-        "Which solution can be announced most quickly?",
-        "Which past cost looks largest on the ledger?",
-        "Can the issue be described without naming a decision maker?"
+        "Which employee should receive additional supervision?",
+        "Which expense category should be reduced first?",
+        "Which successful policy from another division should be adopted?"
       ],
       "tag": "managerial_problem_diagnosis",
       "type": "application",
@@ -365,10 +365,10 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "Which question helps separate a symptom from a cause?",
       "options": [
+        "Which solution produced the quickest result last year?",
         "Which department should absorb the accounting charge?",
-        "Can the firm choose the most familiar fix?",
         "What constraint or incentive leads people to act this way?",
-        "Which solution has the shortest written description?"
+        "Which supervisor should receive additional training?"
       ],
       "tag": "managerial_problem_diagnosis",
       "type": "identification",
@@ -483,9 +483,9 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "A machine is worth more to Firm B than Firm A, but legal restrictions prevent a sale. What is the problem?",
       "options": [
-        "The machine has no opportunity cost in either firm",
-        "The current owner must value the asset most",
-        "The restriction creates surplus for both firms",
+        "Any payment to A would eliminate B’s potential gain",
+        "Current ownership proves A is the highest-valued user",
+        "A change of ownership cannot change the asset’s value in use",
         "An impediment blocks movement to a higher-valued use"
       ],
       "tag": "barriers_to_trade",
@@ -527,10 +527,10 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "In business decisions, efficiency means:",
       "options": [
-        "every worker receives the same pay",
+        "all available capacity is kept busy",
         "resources are used where they create the most value",
-        "every cost is treated as fixed",
-        "output is maximized regardless of cost"
+        "the alternative with the lowest cash expense is selected",
+        "output is maximized regardless of its incremental cost"
       ],
       "tag": "efficiency_business_value",
       "type": "definition",
@@ -549,10 +549,10 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "A firm moves trucks from a low-demand route to a high-demand route. Why might this improve efficiency?",
       "options": [
-        "The accounting cost of the trucks disappears",
-        "The fixed cost becomes a variable cost",
-        "The same asset is used where it creates more value",
-        "The firm avoids comparing alternatives"
+        "More deliveries prove efficiency even if their extra cost exceeds value",
+        "The reallocation eliminates the trucks’ original purchase costs",
+        "The same asset may create more net value on another route",
+        "Reallocation creates value only if the firm buys additional trucks"
       ],
       "tag": "efficiency_business_value",
       "type": "application",
@@ -564,17 +564,17 @@ const questionBanks = {
       "repairSkill": "efficiency_business_value",
       "commonError": "misses_value_of_reallocation",
       "feedback": "Efficiency improves when existing resources are shifted to higher-valued uses.",
-      "aHash": "57d25eab6dc7e0fda502bbce2961242452cb4d257fbfe9493af11c19f2e74732"
+      "aHash": "0f49292a1995cdaa049c66d627b71deb3bec606d88bf2a49e12ff676a3f78a68"
     },
     {
       "id": 24,
       "sourceGame": "costDirective",
       "q": "Which statement best links efficiency to profit?",
       "options": [
-        "Efficiency matters only for nonprofit organizations",
-        "Profit rises whenever total output rises",
-        "A firm is efficient if every worker is busy",
-        "Using resources better can raise value without raising cost as much"
+        "Efficiency requires a higher selling price for unchanged output",
+        "Higher total output necessarily means higher profit",
+        "Keeping every employee busy necessarily maximizes value",
+        "Using resources better can raise value relative to cost"
       ],
       "tag": "efficiency_business_value",
       "type": "definition",
@@ -586,17 +586,17 @@ const questionBanks = {
       "repairSkill": "efficiency_business_value",
       "commonError": "confuses_activity_with_value",
       "feedback": "Efficiency helps business when resources create more value relative to their cost.",
-      "aHash": "4e91283418b460188f7c46068d6b6b458f59d02bfe2f5809e06456511dc037a9"
+      "aHash": "d7dd767beff5108d9f3fdbc9dd3c2c4ca960b730b36ac70cfa13ec44988b08e5"
     },
     {
       "id": 25,
       "sourceGame": "costDirective",
-      "q": "A money-making opportunity exists when:",
+      "q": "Before pursuing a money-making opportunity, which condition should a manager look for?",
       "options": [
-        "an asset can be moved from a lower-valued use to a higher-valued use",
-        "a firm has already spent money on the asset",
-        "the current price equals every buyer's value",
-        "the asset cannot legally be transferred"
+        "An asset can generate extra value exceeding the costs of moving it",
+        "The asset’s original purchase price exceeds its current book value",
+        "A prospective buyer values the asset more, even if transfer costs exceed the gain",
+        "The current owner has already recovered the asset’s purchase cost"
       ],
       "tag": "value_gap_opportunities",
       "type": "definition",
@@ -609,8 +609,8 @@ const questionBanks = {
       ],
       "repairSkill": "value_gap_opportunities",
       "commonError": "confuses_past_spending_with_opportunity",
-      "feedback": "Profit opportunities arise when someone can create value by moving resources to higher-valued uses.",
-      "aHash": "8989c38cd57f3d5e573cff2b1bea6af928fe8fc4d9d5d2e10312d9d4c8c2c37f"
+      "feedback": "A value gap is an opportunity when the gains exceed transfer costs and the firm can capture enough of those gains.",
+      "aHash": "24145b1b1bf46039282232fb7a16b0aac8068065cb30c823ea2ee30273b1670d"
     },
     {
       "id": 26,
@@ -665,10 +665,10 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "How can organizational design help create wealth?",
       "options": [
-        "It hides performance measures from employees",
-        "It makes all decisions depend on past spending",
-        "It rewards departments for protecting unused assets",
-        "It places decision rights with people who have useful information and aligned incentives"
+        "It centralizes decisions even when useful local information cannot be transmitted",
+        "It delegates decisions without providing relevant performance information",
+        "It rewards divisions solely for keeping assets under their control",
+        "It aligns decision rights, information and incentives with value creation"
       ],
       "tag": "organization_wealth_creation",
       "type": "definition",
@@ -680,7 +680,7 @@ const questionBanks = {
       "repairSkill": "organization_wealth_creation",
       "commonError": "misses_decision_rights",
       "feedback": "Organizations create wealth when decision rights, information, and incentives support value-creating choices.",
-      "aHash": "cc7558ca598ebd4731603bd81ea52310e16ff81d7f7ae9b37d7c6b47a2ca3db1"
+      "aHash": "c758f7acb1bba0c3b6cf0c7bc60bd67aa889b8881c9de91e413a7679fe6fdd4a"
     },
     {
       "id": 29,
@@ -688,9 +688,9 @@ const questionBanks = {
       "q": "A store manager knows local demand but is punished for trying new product mixes. What is the design issue?",
       "options": [
         "Useful information exists, but incentives discourage using it",
-        "The manager has too much accounting data",
-        "The store has no fixed costs to consider",
-        "The market has no possible wealth gains"
+        "The main problem is a lack of information about local demand",
+        "The penalty itself proves the current product mix maximizes value",
+        "Giving more demand reports alone removes the incentive against experimentation"
       ],
       "tag": "organization_wealth_creation",
       "type": "application",
@@ -709,10 +709,10 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "Which change most directly supports wealth creation inside a firm?",
       "options": [
-        "Centralize every decision regardless of local knowledge",
-        "Let informed employees make decisions while tying rewards to results",
-        "Reward managers for keeping assets in their own division",
-        "Measure only historical costs when judging new choices"
+        "Centralize every decision regardless of where relevant knowledge resides",
+        "Let informed employees decide and reward value-creating results",
+        "Reward managers for keeping resources within their division",
+        "Judge new choices mainly by recovery of historical expenditures"
       ],
       "tag": "organization_wealth_creation",
       "type": "application",
@@ -724,7 +724,7 @@ const questionBanks = {
       "repairSkill": "organization_wealth_creation",
       "commonError": "centralizes_against_information",
       "feedback": "A firm creates wealth by matching decision authority with information and incentives.",
-      "aHash": "1afd080161bc681d7545e6b2b23ead5e6b54a4930fdbd932cc330bec40ffffe3"
+      "aHash": "d59934a1e87e8cbf922123c386e829d585df8c4eedd142fea469f3fedeabbfe2"
     },
     {
       "id": 31,
@@ -751,7 +751,7 @@ const questionBanks = {
     {
       "id": 32,
       "sourceGame": "costDirective",
-      "q": "A consultant can earn $70,000 in a job or $95,000 running a business. What is the opportunity cost of running the business?",
+      "q": "A consultant's best alternative to running a business is a job paying $70,000. What is the annual opportunity cost of the owner's time in the business?",
       "options": [
         "The $95,000 business revenue",
         "The difference between both incomes",
@@ -882,43 +882,19 @@ const questionBanks = {
         "relevant_benefits"
       ],
       "repairSkill": "relevant_costs_benefits",
-      "commonError": "counts_same_benefit_twice",
+      "commonError": "counts_common_or_past_benefits",
       "feedback": "A benefit is relevant if it differs across the alternatives being compared.",
       "aHash": "824ad7ccf93b865cfd65595647c3876227129c839ffbad57cfd75862290f4584"
-    },
-    {
-      "id": 38,
-      "sourceGame": "costDirective",
-      "q": "A manager says, 'Ignore costs that stay the same either way.' What idea is the manager using?",
-      "options": [
-        "Every fixed cost should be added to the decision",
-        "Only differences between alternatives are relevant",
-        "Past spending determines the best current option",
-        "Accounting profit is the same as economic profit"
-      ],
-      "tag": "relevant_costs_benefits",
-      "type": "identification",
-      "objective": "LO3.2",
-      "difficulty": "easy",
-      "conceptCluster": "easy_costDirective_relevant_costs",
-      "primarySkill": "relevant_costs_benefits",
-      "secondarySkills": [
-        "relevant_costs"
-      ],
-      "repairSkill": "relevant_costs_benefits",
-      "commonError": "treats_common_costs_as_decisive",
-      "feedback": "Costs that do not change across alternatives should not drive the decision.",
-      "aHash": "d1ea3482ea5fe56e07adac9a12695b582aba9c2102ab6eb12a458ee068091483"
     },
     {
       "id": 39,
       "sourceGame": "costDirective",
       "q": "A fixed cost is a cost that:",
       "options": [
-        "rises with every additional unit produced",
-        "equals total cost divided by output",
-        "does not change when output changes in the short run",
-        "must be ignored in every business report"
+        "stays constant per unit as output rises",
+        "rises by the same amount for each additional unit",
+        "does not change with output within the relevant range and period",
+        "cannot be avoided under any possible future decision"
       ],
       "tag": "fixed_variable_costs",
       "type": "definition",
@@ -932,16 +908,16 @@ const questionBanks = {
       "repairSkill": "fixed_variable_costs",
       "commonError": "confuses_fixed_with_variable",
       "feedback": "Fixed costs do not vary with the level of output over the relevant range.",
-      "aHash": "4337275de8a371bcd83e6ff5a6abc72988fb0b0a909369417cbeb2e707c1990c"
+      "aHash": "a99f6884783272205f00af411e92ebc9887f3c03c3e74de3b3c170b6af2c2d34"
     },
     {
       "id": 40,
       "sourceGame": "costDirective",
       "q": "A variable cost is a cost that:",
       "options": [
-        "stays constant even when output changes",
-        "was paid before production started",
-        "equals revenue minus accounting profit",
+        "is any payment made after production has started",
+        "is unchanged in total when output changes",
+        "always remains constant per unit at every output level",
         "changes as the firm produces more or fewer units"
       ],
       "tag": "fixed_variable_costs",
@@ -983,30 +959,6 @@ const questionBanks = {
       "aHash": "532ebdb15f4e0696b6858af42b2f682e2269f5756ea6572edadde9a5fa5e9ade"
     },
     {
-      "id": 42,
-      "sourceGame": "costDirective",
-      "q": "If output rises from 100 units to 140 units, which cost is most likely to rise?",
-      "options": [
-        "Monthly building rent",
-        "Materials used in production",
-        "Annual software license paid upfront",
-        "A past consulting fee"
-      ],
-      "tag": "fixed_variable_costs",
-      "type": "application",
-      "objective": "LO3.3",
-      "difficulty": "easy",
-      "conceptCluster": "easy_costDirective_variable_costs",
-      "primarySkill": "fixed_variable_costs",
-      "secondarySkills": [
-        "variable_costs"
-      ],
-      "repairSkill": "fixed_variable_costs",
-      "commonError": "ignores_output_link",
-      "feedback": "Materials are variable costs because more output usually requires more materials.",
-      "aHash": "f93eb130c9d6d4b6457d83b46050af975032dff00058876ccbe0148d90ecb5f3"
-    },
-    {
       "id": 43,
       "sourceGame": "costDirective",
       "q": "Accounting profit equals:",
@@ -1035,10 +987,10 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "Economic profit equals:",
       "options": [
-        "total revenue minus only cash expenses",
-        "accounting profit plus fixed cost",
-        "marginal revenue minus average cost",
-        "total revenue minus explicit and opportunity costs"
+        "total revenue minus implicit costs alone",
+        "total revenue minus explicit costs alone",
+        "accounting profit plus the owner’s forgone salary",
+        "total revenue minus explicit costs and implicit opportunity costs"
       ],
       "tag": "accounting_economic_profit",
       "type": "definition",
@@ -1052,7 +1004,7 @@ const questionBanks = {
       "repairSkill": "accounting_economic_profit",
       "commonError": "ignores_opportunity_costs",
       "feedback": "Economic profit subtracts both explicit costs and opportunity costs.",
-      "aHash": "7fef64b609ae5b4b5f37fc49c782d965bca872a68a5c89c74eb625a3b4f456e2"
+      "aHash": "76c274856bfc1c3e6d80ac4748b38da38b95477a0f0c0ce07ce3c5529b0769be"
     },
     {
       "id": 45,
@@ -1127,11 +1079,11 @@ const questionBanks = {
     {
       "id": 48,
       "sourceGame": "costDirective",
-      "q": "A firm keeps a failing product because the factory lease must be paid either way. What mistake is this?",
+      "q": "A product brings in less revenue than its avoidable costs. A firm keeps it solely because the factory lease must be paid either way. What mistake is this?",
       "options": [
+        "Counting the forgone use of capacity twice",
         "Hidden-cost fallacy",
-        "Economies of scope",
-        "Diminishing marginal returns",
+        "Confusing revenue with contribution margin",
         "Fixed-cost fallacy"
       ],
       "tag": "fixed_cost_fallacy",
@@ -1167,28 +1119,6 @@ const questionBanks = {
       "commonError": "includes_common_fixed_cost",
       "feedback": "Rent already owed is not relevant to the marginal weekend-shift decision.",
       "aHash": "73adedf5f3a97f3c64ede6f6c6fc188c4850efa700d21bca37d0f4d02fd9048c"
-    },
-    {
-      "id": 50,
-      "sourceGame": "costDirective",
-      "q": "Which statement avoids the fixed-cost fallacy?",
-      "options": [
-        "Keep producing until fixed costs are fully recovered",
-        "Do not let unavoidable costs determine whether the next action is worthwhile",
-        "Choose the option with the largest past investment",
-        "Treat rent as variable whenever output changes"
-      ],
-      "tag": "fixed_cost_fallacy",
-      "type": "definition",
-      "objective": "LO3.5",
-      "difficulty": "easy",
-      "conceptCluster": "easy_costDirective_fixed_cost_fallacy",
-      "primarySkill": "fixed_cost_fallacy",
-      "secondarySkills": [],
-      "repairSkill": "fixed_cost_fallacy",
-      "commonError": "tries_to_recover_sunk_or_fixed_costs",
-      "feedback": "Current decisions should focus on costs and benefits that change because of the decision.",
-      "aHash": "b7657ca15201616439721a3c252554095e824ec613d240513d91c562c7d1bb88"
     },
     {
       "id": 51,
@@ -1257,36 +1187,14 @@ const questionBanks = {
       "aHash": "6127aab70020acbeda7f5a2e83c33c9465101ed6c1008a7e8363258f944f4334"
     },
     {
-      "id": 54,
-      "sourceGame": "costDirective",
-      "q": "Which question helps prevent the hidden-cost fallacy?",
-      "options": [
-        "How much money has already been spent?",
-        "What resources will this decision use that could have been used elsewhere?",
-        "Which fixed cost is largest on the report?",
-        "Can we ignore opportunity costs to simplify the file?"
-      ],
-      "tag": "hidden_cost_fallacy",
-      "type": "application",
-      "objective": "LO3.6",
-      "difficulty": "easy",
-      "conceptCluster": "easy_costDirective_hidden_cost_fallacy",
-      "primarySkill": "hidden_cost_fallacy",
-      "secondarySkills": [],
-      "repairSkill": "hidden_cost_fallacy",
-      "commonError": "fails_to_ask_about_resource_use",
-      "feedback": "Looking for alternative uses of resources helps reveal costs that are easy to miss.",
-      "aHash": "5a596b8653a69d9644d578e35d276a67f43b3575166fa3361fea8084968da493"
-    },
-    {
       "id": 55,
       "sourceGame": "costDirective",
       "q": "Average cost is:",
       "options": [
-        "the change in total cost from one more unit",
-        "total revenue divided by fixed cost",
+        "the change in total cost per additional unit",
+        "variable cost divided by the number of units produced",
         "total cost divided by the number of units produced",
-        "the selling price of the last unit"
+        "fixed cost divided by the number of units produced"
       ],
       "tag": "average_vs_marginal_cost",
       "type": "definition",
@@ -1307,9 +1215,9 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "Marginal cost is:",
       "options": [
-        "the total cost divided by all units",
-        "the fixed cost paid before production",
-        "the average revenue from all units",
+        "the total variable cost of all units produced",
+        "total cost divided by all units",
+        "the total fixed cost committed before production",
         "the extra cost of producing one more unit"
       ],
       "tag": "average_vs_marginal_cost",
@@ -1332,8 +1240,8 @@ const questionBanks = {
       "q": "If total cost is $500 for 100 units, what is average cost?",
       "options": [
         "$5 per unit",
-        "$100 per unit",
-        "$400 per unit",
+        "$0.20 per unit",
+        "$50 per unit",
         "$500 per unit"
       ],
       "tag": "average_vs_marginal_cost",
@@ -1379,10 +1287,10 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "Marginal revenue is:",
       "options": [
-        "total revenue divided by total cost",
-        "the extra cost of producing one more unit",
+        "extra revenue less extra cost from one more unit",
+        "total revenue divided by all units sold",
         "the extra revenue from selling one more unit",
-        "fixed cost divided by output"
+        "the extra cost of producing one more unit"
       ],
       "tag": "ac_mc_mr_calculation",
       "type": "definition",
@@ -1428,8 +1336,8 @@ const questionBanks = {
       "q": "A firm has total cost of $1,200 at 40 units. What is average cost?",
       "options": [
         "$30 per unit",
-        "$40 per unit",
-        "$1,160 per unit",
+        "$3 per unit",
+        "$300 per unit",
         "$1,200 per unit"
       ],
       "tag": "ac_mc_mr_calculation",
@@ -1449,7 +1357,7 @@ const questionBanks = {
     {
       "id": 62,
       "sourceGame": "costDirective",
-      "q": "Total cost rises from $1,200 to $1,260 when output rises by 3 units. What is marginal cost per added unit?",
+      "q": "Total cost rises from $1,200 to $1,260 when output rises by 3 units. What is the average incremental cost per added unit?",
       "options": [
         "$3",
         "$20",
@@ -1467,18 +1375,18 @@ const questionBanks = {
       ],
       "repairSkill": "ac_mc_mr_calculation",
       "commonError": "does_not_divide_change_by_units",
-      "feedback": "The change in cost is $60 over 3 more units, so marginal cost is $20.",
+      "feedback": "The $60 cost increase divided by 3 additional units is $20 per unit over this interval; individual units may have different marginal costs.",
       "aHash": "1f67972ce8b9d3da71256e750035aa4ffd0a58c0796b2172492afd8b96426416"
     },
     {
       "id": 63,
       "sourceGame": "costDirective",
-      "q": "For an extent decision, the basic rule is to continue an activity while:",
+      "q": "When successive net marginal gains are decreasing, the basic extent rule is to continue an activity while:",
       "options": [
-        "average cost is higher than total revenue",
-        "fixed cost is larger than variable cost",
+        "average cost exceeds marginal cost",
+        "total revenue remains positive",
         "marginal benefit or revenue is at least marginal cost",
-        "past spending is greater than current revenue"
+        "the original investment remains unrecovered"
       ],
       "tag": "mr_mc_extent_rule",
       "type": "definition",
@@ -1571,10 +1479,10 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "A pure fixed salary usually gives workers:",
       "options": [
-        "the strongest pay link to each extra sale",
-        "a commission on every unit sold",
-        "weaker direct incentives to increase extra effort",
-        "no base pay but high risk-sharing"
+        "the same marginal sales reward as any commission plan",
+        "a larger payment for every extra sale than a commission",
+        "weaker direct pay incentives for extra sales effort than a commission",
+        "a direct cash penalty for each sale beyond target"
       ],
       "tag": "incentive_compensation_effort",
       "type": "definition",
@@ -1588,17 +1496,17 @@ const questionBanks = {
       "repairSkill": "incentive_compensation_effort",
       "commonError": "overstates_fixed_salary_incentives",
       "feedback": "A fixed salary provides income certainty but weakens the direct link between extra effort and pay.",
-      "aHash": "e899b233c6874cc1e0e0c48197341f5222ab08baf8e7f6082a5730ce236a86fa"
+      "aHash": "9330a11fd11a1736b93afacadf6a2e459d685384d8c8d6c7100370dcce9a211e"
     },
     {
       "id": 68,
       "sourceGame": "costDirective",
       "q": "A commission plan tends to increase effort because it:",
       "options": [
-        "removes all risk from the worker",
-        "makes performance impossible to measure",
-        "turns revenue into a fixed cost",
-        "raises the worker's payoff from each additional sale"
+        "rewards additional hours even when they produce no sales",
+        "raises fixed income without changing the payoff to another sale",
+        "eliminates the worker’s uncertainty about sales income",
+        "raises the worker’s payoff from each additional sale"
       ],
       "tag": "incentive_compensation_effort",
       "type": "definition",
@@ -1612,7 +1520,7 @@ const questionBanks = {
       "repairSkill": "incentive_compensation_effort",
       "commonError": "misses_marginal_pay_link",
       "feedback": "Commission raises the marginal benefit of making another sale.",
-      "aHash": "74fa3c592b2633f38f240c2d12fb15488bfbd769716328ee8234a2bb7d855ddc"
+      "aHash": "eb4b9d9d0d29717e761a7604a4339411a5e4139f0eefe04ea746767fc3429432"
     },
     {
       "id": 69,
@@ -1620,9 +1528,9 @@ const questionBanks = {
       "q": "Why might a worker prefer a salary plus small commission to pure commission?",
       "options": [
         "The salary reduces income risk while the commission still rewards sales",
-        "The salary makes effort unrelated to pay in every way",
-        "The commission eliminates the need to sell products",
-        "The plan guarantees the firm pays less in all outcomes"
+        "The salary raises the commission earned from each additional sale",
+        "A smaller commission always produces a higher expected income",
+        "The fixed salary makes income equally sensitive to sales fluctuations"
       ],
       "tag": "incentive_compensation_effort",
       "type": "application",
@@ -1641,12 +1549,12 @@ const questionBanks = {
     {
       "id": 70,
       "sourceGame": "costDirective",
-      "q": "Diminishing marginal returns means that, as more of one input is added:",
+      "q": "Holding other inputs and technology fixed, diminishing marginal returns means that, as more of one input is added:",
       "options": [
-        "total output must immediately fall below zero",
+        "total output must fall whenever marginal output falls",
         "the extra output from each added input eventually falls",
-        "average fixed cost rises with every unit",
-        "long-run scale economies always disappear"
+        "every added unit of input contributes the same output",
+        "all inputs must be increased in the same proportion"
       ],
       "tag": "diminishing_marginal_returns",
       "type": "definition",
@@ -1665,10 +1573,10 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "A kitchen adds more cooks while keeping the same grill space. Extra output eventually rises more slowly. What is this?",
       "options": [
-        "Economies of scope",
-        "Accounting profit",
+        "A learning effect from cumulative experience",
+        "Decreasing returns to scale from expanding all inputs",
         "Diminishing marginal returns",
-        "Voluntary exchange"
+        "Constant marginal product of labor"
       ],
       "tag": "diminishing_marginal_returns",
       "type": "identification",
@@ -1685,12 +1593,12 @@ const questionBanks = {
     {
       "id": 72,
       "sourceGame": "costDirective",
-      "q": "Which example fits diminishing marginal returns?",
+      "q": "Holding technology unchanged, which example fits diminishing marginal returns?",
       "options": [
         "Doubling all inputs exactly doubles output",
         "Two products are cheaper to produce together",
         "Average cost falls as the plant gets larger",
-        "Each added worker increases output, but by fewer units than the previous worker"
+        "Each added worker increases output by fewer units while equipment and other inputs stay fixed"
       ],
       "tag": "diminishing_marginal_returns",
       "type": "application",
@@ -1702,7 +1610,7 @@ const questionBanks = {
       "repairSkill": "diminishing_marginal_returns",
       "commonError": "confuses_returns_to_scale_with_marginal_returns",
       "feedback": "Diminishing marginal returns occurs when additional units of one input add less extra output.",
-      "aHash": "5beff911112146720da434a3c2bdd3ce22cf67d8889661009896b92f3bbe1f9d"
+      "aHash": "56e959b5156522276d775a2a0d002c442c61ca9d67f80f3fcb2cff416fbb09f5"
     },
     {
       "id": 73,
@@ -1733,10 +1641,10 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "A buyer requests a large rush order. Which information helps the seller negotiate responsibly?",
       "options": [
-        "Only the seller's original building cost",
+        "Only the seller’s original building cost",
         "Whether marginal cost rises at the requested output level",
-        "The buyer's logo and advertising budget",
-        "Last year's sunk product-development cost"
+        "Only average cost at the current production volume",
+        "Only the original development cost already incurred"
       ],
       "tag": "cost_curves_contracts",
       "type": "application",
@@ -1755,12 +1663,12 @@ const questionBanks = {
     {
       "id": 75,
       "sourceGame": "costDirective",
-      "q": "Which contract mistake comes from misunderstanding cost curves?",
+      "q": "Which contract decision ignores the cost of the additional output?",
       "options": [
-        "Rejecting a price below the original sunk cost of equipment",
-        "Comparing buyer value with seller production cost",
-        "Accepting a low price for output that pushes production into high marginal cost",
-        "Checking whether capacity limits affect the order"
+        "Comparing extra revenue with extra production costs",
+        "Rejecting an order that displaces more valuable work",
+        "Accepting an order whose added revenue is below its added cost",
+        "Checking whether the order requires overtime or added capacity"
       ],
       "tag": "cost_curves_contracts",
       "type": "application",
@@ -1773,17 +1681,17 @@ const questionBanks = {
       ],
       "repairSkill": "cost_curves_contracts",
       "commonError": "assumes_cost_constant_over_quantity",
-      "feedback": "A firm can lose money if it prices a large order as if marginal cost stayed low at all quantities.",
-      "aHash": "18e120b4f9d52201c321c663a423e4ab29b49ee11e262ab552dff70ab83222fc"
+      "feedback": "If the additional contract revenue is below the cost caused by that contract, accepting it reduces profit even when the current average cost is low.",
+      "aHash": "e3de298a82277e43db448864fb221831e4e4c66a995d3591438a24583610314a"
     },
     {
       "id": 76,
       "sourceGame": "costDirective",
       "q": "Average cost falls when output rises if:",
       "options": [
-        "fixed cost rises faster than output",
-        "marginal revenue is always negative",
-        "each added unit has no variable cost recorded",
+        "average fixed cost falls, regardless of variable-cost behavior",
+        "total cost rises in the same proportion as output",
+        "total cost rises by proportionally more than output",
         "total cost rises by proportionally less than output"
       ],
       "tag": "average_cost_output",
@@ -1804,9 +1712,9 @@ const questionBanks = {
       "q": "A firm pays $1,000 in fixed cost. What happens to average fixed cost when output rises?",
       "options": [
         "It falls because the fixed cost is spread over more units",
-        "It rises because fixed cost changes with every unit",
-        "It stays equal to total fixed cost at every output",
-        "It becomes the same as marginal revenue"
+        "It stays constant because total fixed cost is unchanged",
+        "It rises in proportion to the increase in output",
+        "It falls only if the total fixed cost payment falls"
       ],
       "tag": "average_cost_output",
       "type": "definition",
@@ -1829,8 +1737,8 @@ const questionBanks = {
       "options": [
         "It rises from $10 to $16 per unit",
         "It falls from $10 to $8 per unit",
-        "It stays fixed at $500 per unit",
-        "It cannot be calculated from total cost"
+        "It rises from $500 to $800 per unit",
+        "It stays at $10 because cost increased with output"
       ],
       "tag": "average_cost_output",
       "type": "calculation",
@@ -1871,9 +1779,9 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "Constant returns to scale occur when doubling all inputs:",
       "options": [
+        "leaves output unchanged",
         "less than doubles output",
         "more than doubles output",
-        "causes marginal product to become negative",
         "doubles output"
       ],
       "tag": "returns_to_scale",
@@ -1896,7 +1804,7 @@ const questionBanks = {
         "less than doubles",
         "exactly doubles",
         "more than doubles",
-        "falls to zero"
+        "cannot be classified without knowing the selling price"
       ],
       "tag": "returns_to_scale",
       "type": "definition",
@@ -1915,10 +1823,10 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "Minimum efficient scale is the output level where:",
       "options": [
-        "total revenue first equals total fixed cost",
+        "total revenue first equals total cost",
         "long-run average cost first reaches its lowest level",
-        "marginal revenue first becomes zero",
-        "a firm first hires a second worker"
+        "the difference between total revenue and total cost is largest",
+        "total cost reaches its lowest possible level"
       ],
       "tag": "minimum_efficient_scale",
       "type": "definition",
@@ -1937,10 +1845,10 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "Why can operating near minimum efficient scale be useful?",
       "options": [
-        "The firm avoids all variable costs",
-        "The firm no longer faces opportunity costs",
+        "The firm’s profit must be highest at that output for any price",
+        "The firm is guaranteed enough demand to sell that output",
         "The firm can produce at a low long-run average cost",
-        "The firm can ignore rival prices"
+        "The firm minimizes total cost rather than cost per unit"
       ],
       "tag": "minimum_efficient_scale",
       "type": "definition",
@@ -1959,9 +1867,9 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "A small plant has much higher average cost than a larger plant near efficient scale. What is the larger plant's advantage?",
       "options": [
-        "Higher sunk cost from old equipment",
-        "No need to compare marginal cost",
-        "A guarantee that demand will increase",
+        "Recovery of its initial investment regardless of selling price",
+        "A guarantee that its extra units cost nothing to produce",
+        "Higher profits at every possible level of demand",
         "Lower average cost at the efficient output range"
       ],
       "tag": "minimum_efficient_scale",
@@ -1982,9 +1890,9 @@ const questionBanks = {
       "q": "A learning curve describes how cost often changes as:",
       "options": [
         "workers gain experience from cumulative production",
-        "rent rises automatically with output",
-        "fixed cost becomes a sunk cost",
-        "buyers stop responding to price"
+        "current plant output rises with no change in experience",
+        "suppliers reduce input prices without a process improvement",
+        "fixed costs are allocated across more current units"
       ],
       "tag": "learning_curve",
       "type": "definition",
@@ -2003,10 +1911,10 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "A team builds its 100th unit faster than its 1st unit because it learned better methods. What explains this?",
       "options": [
-        "A price ceiling",
+        "A quantity discount on purchased materials",
         "A learning-curve effect",
-        "A hidden fixed cost",
-        "A decrease in total output"
+        "A scale effect from a larger current plant",
+        "A reduction in output quality requirements"
       ],
       "tag": "learning_curve",
       "type": "identification",
@@ -2025,10 +1933,10 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "Why should managers look over a product's life cycle when learning curves matter?",
       "options": [
-        "Opportunity costs disappear after the first unit",
-        "Average cost must rise at every production level",
+        "Only the lowest forecast future unit cost should enter the appraisal",
+        "Current losses can be ignored whenever future learning is possible",
         "Early costs may be high even though later costs fall with experience",
-        "Marginal revenue cannot change over time"
+        "Every repeated task must eventually become profitable"
       ],
       "tag": "learning_curve",
       "type": "application",
@@ -2047,9 +1955,9 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "Economies of scope occur when:",
       "options": [
-        "one product becomes cheaper only because output doubles",
-        "fixed cost is ignored in every product line",
-        "a firm raises price after demand increases",
+        "a larger buyer receives a lower input price for the same production process",
+        "one product becomes cheaper only because current output doubles",
+        "one product becomes cheaper through cumulative experience",
         "two products are cheaper to produce together than separately"
       ],
       "tag": "economies_of_scope",
@@ -2069,10 +1977,10 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "A bakery can use the same ovens and staff to make bread and pastries. This may create:",
       "options": [
-        "economies of scope",
-        "diseconomies of scale",
-        "a fixed-cost fallacy",
-        "marginal revenue"
+        "economies of scope if joint costs are below separate costs",
+        "economies of scale merely because two products are offered",
+        "learning effects even if cumulative experience is unchanged",
+        "cost savings equal to all costs of the second product"
       ],
       "tag": "economies_of_scope",
       "type": "identification",
@@ -2084,17 +1992,17 @@ const questionBanks = {
       "repairSkill": "economies_of_scope",
       "commonError": "confuses_shared_inputs_with_scale_only",
       "feedback": "Shared inputs across products can make joint production cheaper than separate production.",
-      "aHash": "cf9cdabc57e330c328ceab504e71e51de7b3bb8d005c531b89f8b0a31e2cfa5c"
+      "aHash": "7b5712ae7e3802c3bc2471fe07410d42e00ab81fba165ace78312fb823a4b48a"
     },
     {
       "id": 90,
       "sourceGame": "costDirective",
       "q": "Why can economies of scope shape acquisition strategy?",
       "options": [
-        "A buyer should acquire firms only to recover sunk costs",
-        "A buyer may lower cost by combining products or capabilities with its own",
-        "An acquisition removes the need to measure costs",
-        "Scope means all firms have identical production methods"
+        "Any shared resource justifies paying any acquisition premium",
+        "A buyer may lower joint costs by combining products or capabilities",
+        "Producing more of the same product is the defining scope gain",
+        "Gross production savings guarantee a profitable acquisition"
       ],
       "tag": "economies_of_scope",
       "type": "application",
@@ -2106,47 +2014,23 @@ const questionBanks = {
       "repairSkill": "economies_of_scope",
       "commonError": "misses_joint_cost_savings",
       "feedback": "Acquisitions can create value when combining products or capabilities lowers total cost.",
-      "aHash": "5ae86523e380dc432f18491c52444c28d852da40a59694531ba018adc3c6a16c"
-    }
-  ],
-  "medium": [
-    {
-      "id": 100,
-      "sourceGame": "costDirective",
-      "q": "A store manager sees customer wait times rising. Which first step best frames the problem before choosing a staffing plan?",
-      "options": [
-        "Identify the decision maker, objective, constraints, information, and feasible alternatives",
-        "Choose the staffing plan used by the highest-sales location last quarter",
-        "Raise wages first and then measure whether employee morale improves",
-        "Ask which worker caused the longest wait time during the week"
-      ],
-      "tag": "problem_solving_steps",
-      "type": "application",
-      "objective": "LO1.1",
-      "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_problem_solving_steps",
-      "primarySkill": "problem_solving_steps",
-      "secondarySkills": [],
-      "repairSkill": "problem_solving_steps",
-      "commonError": "jumps_to_solution",
-      "feedback": "Medium problem solving starts by framing the decision, not by jumping to a favored solution.",
-      "aHash": "940231b33a7b5dd105266a73d6c24d0e048cd32408140c68929418fdd3fb4cde"
+      "aHash": "151ee3fcb5b9658b6de5da70a9c0edb9a8cd46d77127b729a82575f6366dc7fa"
     },
     {
       "id": 101,
       "sourceGame": "costDirective",
       "q": "A production manager can approve overtime, hire temporary workers, or reduce the product line. What makes this a managerial decision problem?",
       "options": [
-        "The manager can avoid tradeoffs by asking each department what it prefers",
+        "The lowest hourly wage necessarily identifies the best alternative",
         "The manager must compare alternatives against an objective under constraints",
-        "The manager should select the option with the lowest visible wage cost",
-        "The manager needs a policy that makes every employee equally satisfied"
+        "The option with the most output is best regardless of costs",
+        "Departmental preferences can replace a common objective"
       ],
       "tag": "problem_solving_steps",
       "type": "application",
       "objective": "LO1.1",
-      "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_problem_solving_steps",
+      "difficulty": "easy",
+      "conceptCluster": "easy_costDirective_problem_solving_steps",
       "primarySkill": "problem_solving_steps",
       "secondarySkills": [],
       "repairSkill": "problem_solving_steps",
@@ -2159,44 +2043,44 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "A team recommends replacing a supplier after one late shipment. What question should the manager ask before accepting that recommendation?",
       "options": [
-        "Can the supplier be removed quickly enough to show decisive leadership?",
-        "Was the late shipment embarrassing to the purchasing department?",
-        "Is the supplier the cause of the problem, and what alternatives have been compared?",
-        "Which replacement supplier has the most polished sales presentation?"
+        "What penalty should be imposed on the current supplier?",
+        "Which replacement can begin shipping immediately?",
+        "Is the supplier the cause, and what alternatives have been compared?",
+        "Which new delivery deadline should be announced?"
       ],
       "tag": "problem_solving_steps",
       "type": "trap",
       "objective": "LO1.1",
-      "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_problem_solving_steps",
+      "difficulty": "easy",
+      "conceptCluster": "easy_costDirective_problem_solving_steps",
       "primarySkill": "problem_solving_steps",
       "secondarySkills": [],
       "repairSkill": "problem_solving_steps",
       "commonError": "confuses_symptom_with_cause",
       "feedback": "A good diagnosis checks cause and alternatives before treating one visible symptom as the whole problem.",
-      "aHash": "adc89de00815a3f1d7500c3c354fd24c425c4b60840404b724cd048a574007ed"
+      "aHash": "e872ac02c63e0f9e5eb92c1cf4c179eae86bbf51616529e24b6e76aedfa1b028"
     },
     {
       "id": 103,
       "sourceGame": "costDirective",
       "q": "A salesperson chooses the commission plan that gives the highest expected personal income. Under the rational-actor paradigm, this behavior is best described as:",
       "options": [
-        "irrational behavior because the agent is not maximizing company profit",
-        "unselfish behavior because commission pay benefits the whole team",
-        "random behavior because sales outcomes are uncertain before the contract is signed",
-        "purposeful choice based on the agent's incentives and objective"
+        "a choice that must maximize total employee-and-firm surplus",
+        "irrational behavior because it does not maximize company profit",
+        "proof that the agent has perfect information about future sales",
+        "purposeful choice based on the agent’s incentives and objective"
       ],
       "tag": "rational_actor_paradigm",
       "type": "application",
       "objective": "LO1.2",
-      "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_rational_actor_paradigm",
+      "difficulty": "easy",
+      "conceptCluster": "easy_costDirective_rational_actor_paradigm",
       "primarySkill": "rational_actor_paradigm",
       "secondarySkills": [],
       "repairSkill": "rational_actor_paradigm",
       "commonError": "treats_rational_as_firm_centered",
       "feedback": "Rational actors choose according to their own objectives and incentives; those may differ from the firm's objective.",
-      "aHash": "aa68b77b548b33c2ee8273c3ac44a9f3ff7a510ac7d7465e81ce58a6fdc0bf4e"
+      "aHash": "55980089c1396646b729df9fe6a0b5b497e75d2ae0ae4e9a12eedefd03ff4500"
     },
     {
       "id": 104,
@@ -2211,8 +2095,8 @@ const questionBanks = {
       "tag": "rational_actor_paradigm",
       "type": "application",
       "objective": "LO1.2",
-      "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_rational_actor_paradigm",
+      "difficulty": "easy",
+      "conceptCluster": "easy_costDirective_rational_actor_paradigm",
       "primarySkill": "rational_actor_paradigm",
       "secondarySkills": [],
       "repairSkill": "rational_actor_paradigm",
@@ -2221,42 +2105,20 @@ const questionBanks = {
       "aHash": "687530979f9ac5424d32b6b43d772a989053c3e5c5f0eb12be8ad86312df2bca"
     },
     {
-      "id": 105,
-      "sourceGame": "costDirective",
-      "q": "Which claim is most consistent with the rational-actor paradigm?",
-      "options": [
-        "People respond only to formal rules, not to informal rewards",
-        "Changing rewards or costs can change behavior",
-        "A rational employee always chooses what is best for the firm",
-        "A well-intentioned manager does not need to consider incentives"
-      ],
-      "tag": "rational_actor_paradigm",
-      "type": "identification",
-      "objective": "LO1.2",
-      "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_rational_actor_paradigm",
-      "primarySkill": "rational_actor_paradigm",
-      "secondarySkills": [],
-      "repairSkill": "rational_actor_paradigm",
-      "commonError": "ignores_incentives",
-      "feedback": "The rational-actor paradigm predicts that behavior changes when costs, benefits, or constraints change.",
-      "aHash": "c5d0ed2f6c13c610aea64cb5d4957eb63dfced089872b04a4803de492b82da09"
-    },
-    {
       "id": 106,
       "sourceGame": "costDirective",
       "q": "A company pays a bonus only when orders ship on time and quality complaints stay below a target. Which incentive component is most clearly present?",
       "options": [
-        "A guaranteed payment unrelated to employee behavior",
-        "A punishment system with no stated performance standard",
+        "A reward whose earning criteria are left unspecified",
+        "A performance measure without any consequence for pay",
         "A measurable performance target linked to a reward",
-        "A broad mission statement that employees can interpret freely"
+        "An activity target that excludes shipment quality"
       ],
       "tag": "incentive_system_design",
       "type": "application",
       "objective": "LO1.3",
-      "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_incentive_systems",
+      "difficulty": "easy",
+      "conceptCluster": "easy_costDirective_incentive_system_design",
       "primarySkill": "incentive_system_design",
       "secondarySkills": [
         "incentive_systems"
@@ -2267,13 +2129,307 @@ const questionBanks = {
       "aHash": "3d3d6cc8d1f41a709c8c959b05a373206df64f183fff77eb760eab31ea4f9ac7"
     },
     {
+      "id": 110,
+      "sourceGame": "costDirective",
+      "q": "A firm lets store managers order inventory but does not show them demand forecasts or stockout costs. What weakness is most likely?",
+      "options": [
+        "Providing authority necessarily makes stockout information unnecessary",
+        "The primary weakness is that managers lack permission to place orders",
+        "Managers have decision authority without enough information to use it well",
+        "The firm should assess managers only by the number of orders placed"
+      ],
+      "tag": "organization_design_info_incentives",
+      "type": "application",
+      "objective": "LO1.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_costDirective_organization_design_info_incentives",
+      "primarySkill": "organization_design_info_incentives",
+      "secondarySkills": [
+        "organization_design"
+      ],
+      "repairSkill": "organization_design_info_incentives",
+      "commonError": "treats_authority_as_sufficient",
+      "feedback": "Authority alone is not enough; decision makers need information that fits the decision.",
+      "aHash": "fce4090ad79adbfaf7717b4b74642696b3cdd9e366c279c63475a95ba6f47f59"
+    },
+    {
+      "id": 121,
+      "sourceGame": "costDirective",
+      "q": "A plant redesign reduces labor hours per unit without lowering quality. How does this efficiency gain help the business?",
+      "options": [
+        "It creates value only when the product price rises",
+        "It lowers the resources needed to produce the same output",
+        "It proves total profit rises regardless of the redesign’s implementation cost",
+        "It improves efficiency only if total output also increases"
+      ],
+      "tag": "efficiency_business_value",
+      "type": "application",
+      "objective": "LO2.3",
+      "difficulty": "easy",
+      "conceptCluster": "easy_costDirective_efficiency_business_value",
+      "primarySkill": "efficiency_business_value",
+      "secondarySkills": [],
+      "repairSkill": "efficiency_business_value",
+      "commonError": "confuses_efficiency_with_price_increase",
+      "feedback": "Efficiency helps because the firm can produce the same value using fewer resources.",
+      "aHash": "ccacde7e21b757f9f0ac55b3c71313344a428afd1044ce28a35bc0854b0c6449"
+    },
+    {
+      "id": 123,
+      "sourceGame": "costDirective",
+      "q": "A restaurant switches to prep routines that reduce food waste from 9% to 5% with the same menu quality. What is the business value?",
+      "options": [
+        "The firm is less efficient because it purchases fewer ingredients",
+        "The improvement matters only if menu prices rise",
+        "Lower waste proves that total sales must rise",
+        "The same customer value is produced with fewer inputs lost to waste"
+      ],
+      "tag": "efficiency_business_value",
+      "type": "application",
+      "objective": "LO2.3",
+      "difficulty": "easy",
+      "conceptCluster": "easy_costDirective_efficiency_business_value",
+      "primarySkill": "efficiency_business_value",
+      "secondarySkills": [],
+      "repairSkill": "efficiency_business_value",
+      "commonError": "misses_input_saving",
+      "feedback": "Reducing waste improves efficiency by lowering input use for the same output quality.",
+      "aHash": "c8f5499f2ad2d9975abb7b63327532e7ac736da95de653d33bde5ace472b7131"
+    },
+    {
+      "id": 133,
+      "sourceGame": "costDirective",
+      "q": "A designer spends $3,000 on software last year. The software cannot be resold. Which statement is correct for today's decision?",
+      "options": [
+        "The $3,000 must be recovered before any new project is accepted",
+        "The $3,000 is sunk and should not control the current choice",
+        "The $3,000 is marginal cost for the next design project",
+        "The $3,000 is relevant because it appears in accounting records"
+      ],
+      "tag": "relevant_costs_benefits",
+      "type": "identification",
+      "objective": "LO3.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_costDirective_relevant_costs_benefits",
+      "primarySkill": "relevant_costs_benefits",
+      "secondarySkills": [],
+      "repairSkill": "relevant_costs_benefits",
+      "commonError": "includes_sunk_cost",
+      "feedback": "A sunk cost has already been incurred and cannot be changed by the current decision.",
+      "aHash": "dd51c0ec401409ea25d44c0f2f6b1925585696c6e2b87711508129af7abe31aa"
+    },
+    {
+      "id": 135,
+      "sourceGame": "costDirective",
+      "q": "A company can accept a special order that uses idle capacity. Which cost is most relevant to the decision?",
+      "options": [
+        "The full monthly rent allocated to the product line",
+        "The original equipment purchase price from last year",
+        "The average accounting cost of all units produced this year",
+        "The additional labor and materials required by the order"
+      ],
+      "tag": "relevant_costs_benefits",
+      "type": "application",
+      "objective": "LO3.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_costDirective_relevant_costs_benefits",
+      "primarySkill": "relevant_costs_benefits",
+      "secondarySkills": [],
+      "repairSkill": "relevant_costs_benefits",
+      "commonError": "uses_allocated_average_cost",
+      "feedback": "Relevant costs are the additional costs that change because of the decision.",
+      "aHash": "68096567b54d1e0a49b0b53a37877157efb0de2d9f61f64b04ed81438d4af4c9"
+    },
+    {
+      "id": 170,
+      "sourceGame": "costDirective",
+      "q": "If successive net marginal gains are decreasing, a firm should stop expanding output when:",
+      "options": [
+        "total revenue is positive",
+        "average fixed cost is falling",
+        "the next unit's marginal cost exceeds its marginal revenue",
+        "the original investment has not been recovered"
+      ],
+      "tag": "mr_mc_extent_rule",
+      "type": "definition",
+      "objective": "LO4.3",
+      "difficulty": "easy",
+      "conceptCluster": "easy_costDirective_mr_mc_extent_rule",
+      "primarySkill": "mr_mc_extent_rule",
+      "secondarySkills": [
+        "extent_decisions"
+      ],
+      "repairSkill": "mr_mc_extent_rule",
+      "commonError": "confuses_positive_revenue_with_profit",
+      "feedback": "Expansion should stop when the next unit costs more than it brings in.",
+      "aHash": "aa891a139d79b7054d001e7d8944aa8813b8e52eb4be2dd9998d0df8566a9713"
+    },
+    {
+      "id": 172,
+      "sourceGame": "costDirective",
+      "q": "A salesperson earns a fixed salary with no commission. Compared with a commission plan, what incentive issue may arise?",
+      "options": [
+        "The marginal private benefit of extra sales effort may be weaker",
+        "A fixed salary creates the same direct reward per sale as a positive commission",
+        "A fixed salary removes the personal cost of extra effort",
+        "Guaranteed income necessarily makes the worker choose the firm’s preferred effort"
+      ],
+      "tag": "incentive_compensation_effort",
+      "type": "application",
+      "objective": "LO4.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_costDirective_incentive_compensation_effort",
+      "primarySkill": "incentive_compensation_effort",
+      "secondarySkills": [],
+      "repairSkill": "incentive_compensation_effort",
+      "commonError": "ignores_effort_incentives",
+      "feedback": "A fixed salary may weaken the link between additional effort and additional pay.",
+      "aHash": "afe4386d96713a7beed061ca69841834c2b2f795c898d9efb5f9cb053cba8866"
+    },
+    {
+      "id": 174,
+      "sourceGame": "costDirective",
+      "q": "A worker earns 20% commission on each sale. If a sale is worth $500, the worker's marginal pay from that sale is:",
+      "options": [
+        "$20",
+        "$400",
+        "$100",
+        "$500"
+      ],
+      "tag": "incentive_compensation_effort",
+      "type": "calculation",
+      "objective": "LO4.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_costDirective_incentive_compensation_effort",
+      "primarySkill": "incentive_compensation_effort",
+      "secondarySkills": [],
+      "repairSkill": "incentive_compensation_effort",
+      "commonError": "calculates_commission_incorrectly",
+      "feedback": "Marginal pay is 20% of $500 = $100.",
+      "aHash": "797c7d463af6ea7fa7f88d50602cea0531e3e0da8cb59be3b0983bb98958cce8"
+    },
+    {
+      "id": 185,
+      "sourceGame": "costDirective",
+      "q": "A firm increases all inputs by 20%, and output rises by 30%. This indicates:",
+      "options": [
+        "decreasing returns to scale",
+        "increasing returns to scale",
+        "constant returns to scale",
+        "diminishing marginal returns with another input held fixed"
+      ],
+      "tag": "returns_to_scale",
+      "type": "calculation",
+      "objective": "LO7.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_costDirective_returns_to_scale",
+      "primarySkill": "returns_to_scale",
+      "secondarySkills": [],
+      "repairSkill": "returns_to_scale",
+      "commonError": "compares_levels_not_percentages",
+      "feedback": "Output rose by a larger percentage than inputs, so returns to scale are increasing.",
+      "aHash": "b43902336e49d926263d77e4900a3b47a9fe58bddd8460b227efbb785a750b06"
+    },
+    {
+      "id": 187,
+      "sourceGame": "costDirective",
+      "q": "Why can operating near minimum efficient scale matter in competition?",
+      "options": [
+        "It minimizes total cost rather than long-run cost per unit",
+        "It guarantees enough demand to sell the efficient output",
+        "It identifies the profit-maximizing output for every market price",
+        "It helps avoid a cost disadvantage from operating below an efficient volume"
+      ],
+      "tag": "minimum_efficient_scale",
+      "type": "application",
+      "objective": "LO7.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_costDirective_minimum_efficient_scale",
+      "primarySkill": "minimum_efficient_scale",
+      "secondarySkills": [],
+      "repairSkill": "minimum_efficient_scale",
+      "commonError": "overstates_mes",
+      "feedback": "A firm far below efficient scale may have higher average cost than larger rivals.",
+      "aHash": "acef0a89752152a836af3aca33e12bd434578abc72a9e8ca899468ff72ca6a7a"
+    },
+    {
+      "id": 213,
+      "sourceGame": "costDirective",
+      "q": "A manager choosing among three software systems should ignore which item when applying a structured decision process?",
+      "options": [
+        "The objective the new system is supposed to achieve",
+        "The amount already spent on a failed software system that cannot be recovered",
+        "The feasible alternatives that can still be chosen",
+        "The constraints on implementation time and staff capacity"
+      ],
+      "tag": "relevant_costs_benefits",
+      "type": "trap",
+      "objective": "LO3.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_costDirective_relevant_costs_benefits",
+      "primarySkill": "relevant_costs_benefits",
+      "secondarySkills": [],
+      "repairSkill": "relevant_costs_benefits",
+      "commonError": "includes_sunk_cost",
+      "feedback": "The problem should be framed around objectives, alternatives, information, constraints, and incentives. Unrecoverable past spending should not drive the current choice.",
+      "aHash": "3a8870c2dc0da10d7f57ac5d0f568899c3a38c380b0fdbe6d1deb6c0e0a8a5b2"
+    },
+    {
+      "id": 242,
+      "sourceGame": "costDirective",
+      "q": "A software team rejects a new client because the project would require senior engineers who are already assigned to a more profitable launch. What cost concept is driving the decision?",
+      "options": [
+        "Fixed cost",
+        "Accounting depreciation",
+        "Opportunity cost",
+        "Sunk cost"
+      ],
+      "tag": "opportunity_cost",
+      "type": "identification",
+      "objective": "LO3.1",
+      "difficulty": "easy",
+      "conceptCluster": "easy_costDirective_opportunity_cost",
+      "primarySkill": "opportunity_cost",
+      "secondarySkills": [
+        "opportunity_cost_decision"
+      ],
+      "repairSkill": "opportunity_cost",
+      "commonError": "ignores_resource_alternative",
+      "feedback": "Using engineers on one project means they cannot work on the other. The sacrificed launch profit is an opportunity cost.",
+      "aHash": "1b7bbb8854d4cc1c1fe153947e240b142a27fccc15457a39cdd97c1cf8f7be23"
+    }
+  ],
+  "medium": [
+    {
+      "id": 100,
+      "sourceGame": "costDirective",
+      "q": "A store’s queues grew after a new checkout procedure began. Arrivals and staffing were unchanged. Which evidence would most help distinguish slower processing from a staffing shortage?",
+      "options": [
+        "Compare service time per customer before and after the procedure",
+        "Compare total payroll with the largest competitor",
+        "Count employees without examining processing times",
+        "Choose the busiest day’s queue as the sole staffing target"
+      ],
+      "tag": "problem_solving_steps",
+      "type": "diagnosis",
+      "objective": "LO1.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_problem_solving_steps",
+      "primarySkill": "problem_solving_steps",
+      "secondarySkills": [],
+      "repairSkill": "problem_solving_steps",
+      "commonError": "jumps_to_solution",
+      "feedback": "With arrivals and staffing unchanged, service-time evidence helps test whether the new procedure reduced effective capacity.",
+      "aHash": "a23934f41a23b963836720db37f93781dd41f142a3842694149c044b6ef3854b"
+    },
+    {
       "id": 107,
       "sourceGame": "costDirective",
       "q": "A bonus plan rewards only total units produced. After the plan begins, defect rates rise. What is the likely incentive-design problem?",
       "options": [
-        "The plan uses a performance measure, so employee behavior should not change",
-        "The plan should remove rewards and rely only on supervision",
-        "The plan creates too many objectives because it mentions production",
+        "The rise in output proves the current metric tracks firm value",
+        "The plan should increase the same unit bonus to correct defects",
+        "The plan needs a more precise count of output but no quality measure",
         "The plan rewards quantity but does not measure quality"
       ],
       "tag": "incentive_system_design",
@@ -2319,10 +2475,10 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "A well-designed organization gives local managers pricing authority only if they also receive market data and face profit-based incentives. Why?",
       "options": [
-        "Central managers should avoid giving employees any discretion",
+        "Local information removes the need for profit accountability",
         "Decision rights work best when information and incentives are aligned",
-        "Profit-based incentives replace the need for useful information",
-        "Local managers should make decisions only after headquarters approves every detail"
+        "Profit accountability removes the need for market information",
+        "Delegating authority alone establishes that managers maximize firm value"
       ],
       "tag": "organization_design_info_incentives",
       "type": "application",
@@ -2339,41 +2495,17 @@ const questionBanks = {
       "aHash": "3c88d3c7d5396fb54e3d5ab582781fcc05bf19867293cc42dcfc9e447a72ba21"
     },
     {
-      "id": 110,
-      "sourceGame": "costDirective",
-      "q": "A firm lets store managers order inventory but does not show them demand forecasts or stockout costs. What weakness is most likely?",
-      "options": [
-        "Managers have too much information and too little authority",
-        "Managers face no tradeoff because inventory is a fixed cost",
-        "Managers have decision authority without enough information to use it well",
-        "The firm has solved the incentive problem by decentralizing decisions"
-      ],
-      "tag": "organization_design_info_incentives",
-      "type": "application",
-      "objective": "LO1.4",
-      "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_organization_design",
-      "primarySkill": "organization_design_info_incentives",
-      "secondarySkills": [
-        "organization_design"
-      ],
-      "repairSkill": "organization_design_info_incentives",
-      "commonError": "treats_authority_as_sufficient",
-      "feedback": "Authority alone is not enough; decision makers need information that fits the decision.",
-      "aHash": "fce4090ad79adbfaf7717b4b74642696b3cdd9e366c279c63475a95ba6f47f59"
-    },
-    {
       "id": 111,
       "sourceGame": "costDirective",
-      "q": "Which change best reflects a well-designed organization?",
+      "q": "Branch staff know local demand but cannot see expedited shipping charges before quoting. They already earn bonuses on contribution after shipping. Which change directly fills the missing organizational component?",
       "options": [
-        "Let supervisors choose any goal as long as they report activity each week",
-        "Move all decisions to executives who are farthest from local information",
-        "Pay everyone the same bonus while asking for higher individual accountability",
-        "Give warehouse supervisors delivery data and rewards tied to on-time, accurate shipments"
+        "Rank staff by number of quotations issued",
+        "Replace contribution bonuses with revenue bonuses",
+        "Increase authority without changing the cost information",
+        "Provide shipping-cost estimates before staff quote"
       ],
       "tag": "organization_design_info_incentives",
-      "type": "application",
+      "type": "diagnosis",
       "objective": "LO1.4",
       "difficulty": "medium",
       "conceptCluster": "medium_costDirective_organization_design",
@@ -2382,9 +2514,9 @@ const questionBanks = {
         "organization_design"
       ],
       "repairSkill": "organization_design_info_incentives",
-      "commonError": "weak_alignment",
-      "feedback": "Good design aligns decision rights, information, and incentives with the organization's objective.",
-      "aHash": "2c7c68f08396d781f8f7c826fe3b977373b641865ba89b6c94099f8d5389d0a6"
+      "commonError": "treats_incentives_as_substitute_for_information",
+      "feedback": "The reward already includes the relevant cost. Timely information lets staff anticipate the consequences of their decisions.",
+      "aHash": "830a30488f8bdde70c2dd05d4ac1cded9ac91bdba5927056dcff39de6fec26a5"
     },
     {
       "id": 112,
@@ -2393,8 +2525,8 @@ const questionBanks = {
       "options": [
         "Whether bonuses account for the cost of defective deliveries",
         "Whether buyers need access to the defect reports they already receive",
-        "Whether the invoice discounts should be made larger",
-        "Whether all supplier decisions should require the same order quantity"
+        "Whether increasing the invoice-discount bonus would align quality choices",
+        "Whether measuring only the count of deliveries would fix the tradeoff"
       ],
       "tag": "managerial_problem_diagnosis",
       "type": "application",
@@ -2413,10 +2545,10 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "A service firm blames low renewal rates on customer laziness. Which question better follows managerial problem solving?",
       "options": [
-        "How can the firm make the renewal form longer so customers value it more?",
+        "Which discount should be offered before examining reasons for nonrenewal?",
         "What choices do customers face, and what incentives or frictions affect renewal?",
-        "Which employee can be assigned blame for the lowest renewal month?",
-        "Can the firm assume customers will renew if the product is good enough?"
+        "Which reminder frequency should be adopted without testing customer response?",
+        "Should every customer receive the same contract regardless of renewal barriers?"
       ],
       "tag": "managerial_problem_diagnosis",
       "type": "application",
@@ -2477,15 +2609,15 @@ const questionBanks = {
     {
       "id": 116,
       "sourceGame": "costDirective",
-      "q": "A repair shop values a tool at $900, while its current owner values it at $650. If they trade at $740, why does the transaction create wealth?",
+      "q": "A repair shop values a tool at $900; its owner values keeping it at $650. They trade at $740 with no other costs. How are the gains divided?",
       "options": [
-        "The asset moves to a user who values it more",
-        "The seller receives more than the buyer's value",
-        "The sale price becomes the total surplus created",
-        "The buyer's accounting profit is guaranteed after the trade"
+        "Buyer $160; seller $90",
+        "Buyer $250; seller $0",
+        "Buyer $90; seller $160",
+        "Buyer $740; seller $650"
       ],
       "tag": "voluntary_transactions_surplus",
-      "type": "application",
+      "type": "calculation",
       "objective": "LO2.1",
       "difficulty": "medium",
       "conceptCluster": "medium_costDirective_voluntary_transactions_surplus",
@@ -2493,13 +2625,13 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "voluntary_transactions_surplus",
       "commonError": "confuses_price_with_surplus",
-      "feedback": "Voluntary trade creates wealth when assets move from lower-valued to higher-valued uses.",
-      "aHash": "2c3ad3493f9a69cb7f72970aa72c193e8d9920040d311f06cd9813bcf3247f7e"
+      "feedback": "Buyer gain is 900 − 740 = $160; seller gain is 740 − 650 = $90. Total gains are $250 regardless of this split.",
+      "aHash": "cb63d2790d18ec021f639caf4b396c023b285ce010ad5003885409ccc2fcbab5"
     },
     {
       "id": 117,
       "sourceGame": "costDirective",
-      "q": "A caterer can prepare lunch for $12 per guest. A client values the lunch at $20 per guest and pays $16. What is the surplus per guest?",
+      "q": "A caterer can prepare lunch for $12 per guest. A client values the lunch at $20 per guest and pays $16. What is the total buyer-plus-seller surplus per guest?",
       "options": [
         "$4",
         "$8",
@@ -2523,10 +2655,10 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "A warehouse has old equipment worth $10,000 to the current owner and $16,000 to another firm. Which policy is most likely to help move the equipment to its higher-valued use?",
       "options": [
-        "Require the current owner to keep the equipment until it fully depreciates",
-        "Ban resale because the equipment was already purchased once",
+        "Require a transfer fee greater than the potential gain",
+        "Require a resale price below the current owner’s value",
         "Reduce transaction costs that make the sale difficult",
-        "Set a price ceiling below the current owner's value"
+        "Prevent transfer until the asset is fully depreciated"
       ],
       "tag": "barriers_to_trade",
       "type": "application",
@@ -2552,17 +2684,17 @@ const questionBanks = {
         "A shortage of 90 units",
         "A surplus of 30 units"
       ],
-      "tag": "barriers_to_trade",
-      "type": "identification",
+      "tag": "price_control_quantity_gap",
+      "type": "calculation",
       "objective": "LO2.2",
       "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_assets_to_higher_value_use",
-      "primarySkill": "barriers_to_trade",
+      "conceptCluster": "medium_costDirective_price_control_quantity_gap",
+      "primarySkill": "price_control_quantity_gap",
       "secondarySkills": [
-        "assets_to_higher_value_use"
+        "barriers_to_trade"
       ],
-      "repairSkill": "barriers_to_trade",
-      "commonError": "labels_transaction_cost_as_fixed_cost",
+      "repairSkill": "price_control_quantity_gap",
+      "commonError": "confuses_surplus_with_shortage",
       "feedback": "Offered quantity exceeds requested quantity by 90 - 60 = 30 units. These stated quantities are sufficient; no graph is needed.",
       "aHash": "c6728498d61f226fe9fd26a590f11bdb48a1375fdbe322992b3a85e9861993aa"
     },
@@ -2576,51 +2708,29 @@ const questionBanks = {
         "All 140 requests can be filled at the cap.",
         "Raising the cap would necessarily create exactly 45 more rentals."
       ],
-      "tag": "barriers_to_trade",
-      "type": "application",
+      "tag": "price_control_quantity_gap",
+      "type": "calculation",
       "objective": "LO2.2",
       "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_assets_to_higher_value_use",
-      "primarySkill": "barriers_to_trade",
+      "conceptCluster": "medium_costDirective_price_control_quantity_gap",
+      "primarySkill": "price_control_quantity_gap",
       "secondarySkills": [
-        "assets_to_higher_value_use"
+        "barriers_to_trade"
       ],
-      "repairSkill": "barriers_to_trade",
-      "commonError": "assumes_regulation_is_costless",
+      "repairSkill": "price_control_quantity_gap",
+      "commonError": "confuses_shortage_with_surplus",
       "feedback": "The shortage is 140 - 95 = 45 rentals. The supplied numbers do not establish how quantities would respond to another price.",
       "aHash": "38bc9b2cb029ef8a00a5c8eabae82dbe31d8b47f150063d2f0e23e975d22474f"
-    },
-    {
-      "id": 121,
-      "sourceGame": "costDirective",
-      "q": "A plant redesign reduces labor hours per unit without lowering quality. How does this efficiency gain help the business?",
-      "options": [
-        "It raises fixed cost and therefore increases profit",
-        "It lowers the resources needed to produce the same output",
-        "It creates value only if the selling price immediately rises",
-        "It removes the need to compare marginal cost and marginal benefit"
-      ],
-      "tag": "efficiency_business_value",
-      "type": "application",
-      "objective": "LO2.3",
-      "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_efficiency_business_value",
-      "primarySkill": "efficiency_business_value",
-      "secondarySkills": [],
-      "repairSkill": "efficiency_business_value",
-      "commonError": "confuses_efficiency_with_price_increase",
-      "feedback": "Efficiency helps because the firm can produce the same value using fewer resources.",
-      "aHash": "ccacde7e21b757f9f0ac55b3c71313344a428afd1044ce28a35bc0854b0c6449"
     },
     {
       "id": 122,
       "sourceGame": "costDirective",
       "q": "A trucking company reduces empty return trips by matching drivers with backhaul loads. Why is this an efficiency improvement?",
       "options": [
-        "The company avoids all variable costs once a truck leaves the terminal",
-        "The accounting cost of the truck becomes irrelevant to every decision",
-        "Existing trucks create more value from the same driving capacity",
-        "More miles are driven, so efficiency must fall"
+        "Backhaul revenue is pure profit because the truck is already owned",
+        "Any increase in distance traveled proves greater efficiency",
+        "Existing trucks create more net value when backhaul benefits exceed added costs",
+        "A fixed lease means truck capacity has no opportunity cost"
       ],
       "tag": "efficiency_business_value",
       "type": "application",
@@ -2632,39 +2742,17 @@ const questionBanks = {
       "repairSkill": "efficiency_business_value",
       "commonError": "counts_activity_not_value",
       "feedback": "Efficiency improves when underused resources are put to higher-valued uses.",
-      "aHash": "864c4b51c7dc55ef42b67d63729b704b3d2d70697de88607db0fcc88b608beed"
-    },
-    {
-      "id": 123,
-      "sourceGame": "costDirective",
-      "q": "A restaurant switches to prep routines that reduce food waste from 9% to 5% with the same menu quality. What is the business value?",
-      "options": [
-        "The firm should ignore waste because ingredients are variable costs",
-        "The firm becomes efficient only if menu prices increase at the same time",
-        "The firm has created economies of scope between unrelated products",
-        "The firm produces the same customer value with fewer inputs lost to waste"
-      ],
-      "tag": "efficiency_business_value",
-      "type": "application",
-      "objective": "LO2.3",
-      "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_efficiency_business_value",
-      "primarySkill": "efficiency_business_value",
-      "secondarySkills": [],
-      "repairSkill": "efficiency_business_value",
-      "commonError": "misses_input_saving",
-      "feedback": "Reducing waste improves efficiency by lowering input use for the same output quality.",
-      "aHash": "8b63cfa1c5e790aedb51b9c4b7b91b921ab0fc973169fef42c73fcc3645fce10"
+      "aHash": "961201a8cf4b8adba9b3a62a9f81bea86a9ccb3f9f05889fe17cb5e81064eea4"
     },
     {
       "id": 124,
       "sourceGame": "costDirective",
       "q": "A firm notices that customers value weekend delivery at $18, while the extra delivery cost is $11. What does this reveal?",
       "options": [
-        "A money-making opportunity exists if the firm can charge more than the extra cost",
-        "The service should be rejected because any extra cost reduces profit",
-        "The opportunity exists only if the firm has no fixed costs",
-        "The firm should offer weekend delivery for free to create surplus"
+        "A price between $11 and $18 can give both sides a gain",
+        "Any price above $18 captures more of the stated customer value",
+        "The $18 willingness to pay is all profit before considering cost",
+        "The $11 cost must be deducted from the customer’s payment twice"
       ],
       "tag": "value_gap_opportunities",
       "type": "calculation",
@@ -2678,17 +2766,17 @@ const questionBanks = {
       "repairSkill": "value_gap_opportunities",
       "commonError": "sees_cost_but_not_value",
       "feedback": "If willingness to pay exceeds the additional cost, the firm may profit by creating and capturing part of that value.",
-      "aHash": "2a9b9317046a3919b2cce25eeaac4b768726d98e48875d284d5b1890f19df349"
+      "aHash": "22676a816b352547a7d94357fa6a48c9b22d39315e89bf2f4d49e18e6ab8caa2"
     },
     {
       "id": 125,
       "sourceGame": "costDirective",
       "q": "A gym has unused capacity at 2 p.m. and some customers value a discounted daytime membership. What money-making opportunity might exist?",
       "options": [
-        "Close during the afternoon because unused capacity has no possible value",
-        "Sell access to customers whose value exceeds the added cost of serving them",
-        "Raise all memberships to the highest price any customer will pay",
-        "Ignore daytime customers because the building rent is already fixed"
+        "Any positive daytime price is profitable because the rent is fixed",
+        "Sell access when added receipts exceed service costs and any displaced full-price contribution",
+        "Set the discount without considering whether existing members switch",
+        "Reject daytime service whenever price is below average total cost"
       ],
       "tag": "value_gap_opportunities",
       "type": "application",
@@ -2702,17 +2790,17 @@ const questionBanks = {
       "repairSkill": "value_gap_opportunities",
       "commonError": "ignores_unused_capacity",
       "feedback": "A firm can profit by serving customers whose willingness to pay exceeds the marginal cost of service.",
-      "aHash": "2d7b248747ca98067c64b1b810824fc5d828aded0f5f80c1fc5aa3226c1685da"
+      "aHash": "75f9faa2d3010ef40ddc71bcd37bd6f714ecc02877cab3942455d72ad092a5f1"
     },
     {
       "id": 126,
       "sourceGame": "costDirective",
       "q": "A clinic finds that patients will pay $40 for text reminders that cost $7 per patient to provide. What is the main managerial question?",
       "options": [
-        "Should the clinic reject the service because reminders are not the core product?",
-        "Can the clinic classify the reminder cost as fixed to make it disappear?",
-        "Can the clinic price and deliver the service so it captures part of the surplus?",
-        "Should every patient receive the service even if they do not value it?"
+        "Must price equal $7 for a voluntary trade to create value?",
+        "Should it treat the full $40 customer value as profit before costs?",
+        "Can it charge between $7 and $40 while covering all additional service costs?",
+        "Does charging $20 reduce total gains from $33 to $13?"
       ],
       "tag": "value_gap_opportunities",
       "type": "application",
@@ -2726,17 +2814,17 @@ const questionBanks = {
       "repairSkill": "value_gap_opportunities",
       "commonError": "misses_surplus_capture",
       "feedback": "The opportunity depends on creating value and capturing enough of it to exceed the added cost.",
-      "aHash": "ebc0684db2a3670b7ad4c99e360f69d9c816e925d68e889ad95b73f941d4842c"
+      "aHash": "fd8b09e4d629aa8285a52892ac4ade679f7ece4ae492e98fe552a991b0acdbaa"
     },
     {
       "id": 127,
       "sourceGame": "costDirective",
       "q": "A store has sales associates who know local demand but receive bonuses only for keeping inventory low. What organizational design issue could reduce wealth creation?",
       "options": [
-        "The associates should have less information so they follow rules more closely",
-        "Inventory decisions create value only when headquarters makes every order",
-        "Bonuses tied to inventory levels always maximize customer value",
-        "Information and incentives are not aligned with profitable inventory decisions"
+        "Moving orders to headquarters guarantees the best use of local knowledge",
+        "Giving more local demand information necessarily fixes the reward conflict",
+        "Every inventory reduction increases wealth regardless of lost sales",
+        "The inventory-only reward can favor low stocks despite profitable demand"
       ],
       "tag": "organization_wealth_creation",
       "type": "application",
@@ -2748,7 +2836,7 @@ const questionBanks = {
       "repairSkill": "organization_wealth_creation",
       "commonError": "ignores_alignment",
       "feedback": "Organizations create wealth when decision makers have useful information and incentives aligned with value creation.",
-      "aHash": "f8ad263ec259e5a662fca436250528d87ec85549ae10aa7ac1015e57cb32974e"
+      "aHash": "45dd92f8761cc14ba3eca430d191a2dd9673c20908e6e8edc67a5a1b5c1a9606"
     },
     {
       "id": 128,
@@ -2756,9 +2844,9 @@ const questionBanks = {
       "q": "A company moves pricing decisions to regional managers after giving them demand reports and profit targets. Why might this create wealth?",
       "options": [
         "Local information and aligned incentives can improve pricing decisions",
-        "Regional managers can set prices without considering costs",
-        "Decentralization creates wealth even when incentives are unrelated to profit",
-        "Demand reports matter only for accounting profit, not economic decisions"
+        "Demand information alone makes any revenue target profit-aligned",
+        "Decentralization creates wealth regardless of decision makers’ incentives",
+        "A higher sales volume establishes that every local price is profitable"
       ],
       "tag": "organization_wealth_creation",
       "type": "application",
@@ -2775,15 +2863,15 @@ const questionBanks = {
     {
       "id": 129,
       "sourceGame": "costDirective",
-      "q": "A firm rewards purchasing managers for the lowest purchase price, and product failures rise. What is the likely design flaw?",
+      "q": "A purchasing manager earns a bonus for invoice savings. Supplier A costs $40 plus $9 expected repair cost; B costs $44 plus $2 expected repair cost. Both estimates are known. Which appraisal supports wealth creation?",
       "options": [
-        "The purchasing managers have too much information about suppliers",
-        "The incentive ignores quality costs that matter to firm value",
-        "The firm should measure only price because quality is hard to observe",
-        "The incentive works because lower purchase price always creates wealth"
+        "Choose A: its invoice is $4 lower",
+        "Choose B: its $46 total is $3 below A",
+        "Choose A: repairs belong in the service budget",
+        "Choose B only if its invoice also falls below $40"
       ],
       "tag": "organization_wealth_creation",
-      "type": "application",
+      "type": "diagnosis",
       "objective": "LO2.5",
       "difficulty": "medium",
       "conceptCluster": "medium_costDirective_organization_wealth_creation",
@@ -2791,18 +2879,18 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "organization_wealth_creation",
       "commonError": "narrow_metric_problem",
-      "feedback": "An organization can destroy value when incentives reward one visible metric while ignoring relevant costs.",
-      "aHash": "32a269e69dfaf917260a02e92986c9815cf92478edf12d01726a28bc012ba3ae"
+      "feedback": "Known expected repair costs are attributable to the purchase. A costs $49; B costs $46. The incentive should reflect total value, not one expense line.",
+      "aHash": "83ef1a62ee984c97cdddc977dca23a871d3d78bffef4dbae440984acc9436d37"
     },
     {
       "id": 130,
       "sourceGame": "costDirective",
       "q": "A firm lets call-center workers solve customer problems directly and rewards first-contact resolution. What makes this design potentially wealth creating?",
       "options": [
-        "It removes the need to measure whether customers are helped",
-        "It guarantees lower costs because workers have more discretion",
-        "It combines local information with an incentive tied to customer problem solving",
-        "It shifts all decisions to workers even when they lack customer information"
+        "A first-contact metric removes the need to check actual resolution",
+        "Discretion alone guarantees every resolution has positive net value",
+        "It combines local information with an incentive tied to resolving customer problems",
+        "A lower escalation count proves customer problems are solved"
       ],
       "tag": "organization_wealth_creation",
       "type": "application",
@@ -2814,79 +2902,29 @@ const questionBanks = {
       "repairSkill": "organization_wealth_creation",
       "commonError": "sees_discretion_only",
       "feedback": "Decision rights, information, and incentives are more valuable when they point toward the same objective.",
-      "aHash": "f5e40329738dc530306aa25c767ea1aa8f36bcd2a1d692d2ffe672775ccdadd3"
-    },
-    {
-      "id": 131,
-      "sourceGame": "costDirective",
-      "q": "A chef can earn $48,000 working for a hotel or open a food truck. In the truck decision, the $48,000 is:",
-      "options": [
-        "a sunk cost because it has not been earned yet",
-        "a fixed cost of producing each meal",
-        "an accounting cost paid to the hotel",
-        "an opportunity cost of opening the food truck"
-      ],
-      "tag": "opportunity_cost",
-      "type": "identification",
-      "objective": "LO3.1",
-      "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_opportunity_costs",
-      "primarySkill": "opportunity_cost",
-      "secondarySkills": [
-        "opportunity_costs"
-      ],
-      "repairSkill": "opportunity_cost",
-      "commonError": "misses_forgone_alternative",
-      "feedback": "The forgone salary is the value of the next-best alternative, so it is an opportunity cost.",
-      "aHash": "d26226443979cbf5df1c8148760c5260b1d4c6bac2b1d8eb593e1718545c2081"
+      "aHash": "154ddbfa537eb5479276cf0fcef9ea0a03b0ac92e78e16fa261ea8904a8ee276"
     },
     {
       "id": 132,
       "sourceGame": "costDirective",
-      "q": "A firm owns a building that could be rented to another business for $6,000 per month. If the firm uses the building itself, how should the forgone rent be treated?",
+      "q": "A field supervisor knows which replacement part is needed but must wait two days for approval from a manager who lacks site information. Both are rewarded for verified low-cost repairs. Which change addresses the stated weakness?",
       "options": [
-        "As an opportunity cost of using the building internally",
-        "As irrelevant because the firm already owns the building",
-        "As a variable cost only when output changes by one unit",
-        "As accounting profit because no check is written"
+        "Delegate bounded parts approval to the informed supervisor",
+        "Send the distant manager more summary payroll reports",
+        "Reward only the number of approval requests processed",
+        "Remove the supervisor’s access to parts information"
       ],
-      "tag": "opportunity_cost",
-      "type": "application",
-      "objective": "LO3.1",
+      "tag": "organization_design_info_incentives",
+      "type": "diagnosis",
+      "objective": "LO1.4",
       "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_opportunity_costs",
-      "primarySkill": "opportunity_cost",
-      "secondarySkills": [
-        "opportunity_costs"
-      ],
-      "repairSkill": "opportunity_cost",
-      "commonError": "ignores_implicit_cost",
-      "feedback": "Using an owned asset still has a cost when the firm gives up the best alternative use.",
-      "aHash": "1585e1da800bb66d27903640ed77cbe04802af5c0c776083214a5f1c50b66f1c"
-    },
-    {
-      "id": 133,
-      "sourceGame": "costDirective",
-      "q": "A designer spends $3,000 on software last year. The software cannot be resold. Which statement is correct for today's decision?",
-      "options": [
-        "The $3,000 must be recovered before any new project is accepted",
-        "The $3,000 is sunk and should not control the current choice",
-        "The $3,000 is marginal cost for the next design project",
-        "The $3,000 is relevant because it appears in accounting records"
-      ],
-      "tag": "opportunity_cost",
-      "type": "identification",
-      "objective": "LO3.1",
-      "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_opportunity_costs",
-      "primarySkill": "opportunity_cost",
-      "secondarySkills": [
-        "opportunity_costs"
-      ],
-      "repairSkill": "opportunity_cost",
-      "commonError": "treats_sunk_as_relevant",
-      "feedback": "A sunk cost has already been incurred and cannot be changed by the current decision.",
-      "aHash": "dd51c0ec401409ea25d44c0f2f6b1925585696c6e2b87711508129af7abe31aa"
+      "conceptCluster": "medium_costDirective_organization_design_info_incentives",
+      "primarySkill": "organization_design_info_incentives",
+      "secondarySkills": [],
+      "repairSkill": "organization_design_info_incentives",
+      "commonError": "separates_authority_from_information",
+      "feedback": "The stated bottleneck is decision authority separated from local information; incentives are already aligned.",
+      "aHash": "f95d0a5c2b4f6463ff595ec779ffa888f232ce4471f54ff8b2cf4ac73d3afcac"
     },
     {
       "id": 134,
@@ -2913,28 +2951,6 @@ const questionBanks = {
       "aHash": "4f76e2ae19ed1d85dfa3c6d5069440ebeeed5730294daf321e69238b4ddee425"
     },
     {
-      "id": 135,
-      "sourceGame": "costDirective",
-      "q": "A company can accept a special order that uses idle capacity. Which cost is most relevant to the decision?",
-      "options": [
-        "The full monthly rent allocated to the product line",
-        "The original equipment purchase price from last year",
-        "The average accounting cost of all units produced this year",
-        "The additional labor and materials required by the order"
-      ],
-      "tag": "relevant_costs_benefits",
-      "type": "application",
-      "objective": "LO3.2",
-      "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_relevant_costs_benefits",
-      "primarySkill": "relevant_costs_benefits",
-      "secondarySkills": [],
-      "repairSkill": "relevant_costs_benefits",
-      "commonError": "uses_allocated_average_cost",
-      "feedback": "Relevant costs are the additional costs that change because of the decision.",
-      "aHash": "68096567b54d1e0a49b0b53a37877157efb0de2d9f61f64b04ed81438d4af4c9"
-    },
-    {
       "id": 136,
       "sourceGame": "costDirective",
       "q": "A firm is deciding whether to repair a machine or replace it. Which item is most likely irrelevant?",
@@ -2955,28 +2971,6 @@ const questionBanks = {
       "commonError": "includes_sunk_cost",
       "feedback": "The original purchase price is sunk if it cannot be changed or recovered.",
       "aHash": "8d37f2ffb077fc7709e346abde3bfb1fab90246bc920264ad4514788cd27a105"
-    },
-    {
-      "id": 137,
-      "sourceGame": "costDirective",
-      "q": "A hotel has empty rooms tonight. The extra cleaning and breakfast cost for one guest is $28. A traveler offers $70. What is the relevant comparison?",
-      "options": [
-        "$70 in revenue versus the hotel's average cost per room for the year",
-        "$70 in added revenue versus $28 in added cost",
-        "$70 in revenue versus the original construction cost of the hotel",
-        "$28 in cleaning cost versus the hotel's total monthly payroll"
-      ],
-      "tag": "relevant_costs_benefits",
-      "type": "calculation",
-      "objective": "LO3.2",
-      "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_relevant_costs_benefits",
-      "primarySkill": "relevant_costs_benefits",
-      "secondarySkills": [],
-      "repairSkill": "relevant_costs_benefits",
-      "commonError": "uses_average_total_cost",
-      "feedback": "For an empty room, the relevant comparison is added revenue versus added cost.",
-      "aHash": "e7cc5352d6d429819f1f27c359aba116dc2b747aa779ebaf6214133fe054f68d"
     },
     {
       "id": 138,
@@ -3045,48 +3039,28 @@ const questionBanks = {
       "aHash": "5438e051fbfef19d51c1d290c2635e3a0d743a2856dd76aeea389ef0a1b4fd25"
     },
     {
-      "id": 141,
-      "sourceGame": "costDirective",
-      "q": "If output rises, which cost usually changes directly with the number of units produced?",
-      "options": [
-        "Sunk cost",
-        "Variable cost",
-        "Fixed cost",
-        "Implicit cost only"
-      ],
-      "tag": "fixed_variable_costs",
-      "type": "identification",
-      "objective": "LO3.3",
-      "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_fixed_variable_costs",
-      "primarySkill": "fixed_variable_costs",
-      "secondarySkills": [],
-      "repairSkill": "fixed_variable_costs",
-      "commonError": "confuses_fixed_and_variable",
-      "feedback": "Variable costs change with output; fixed costs do not change over the relevant range.",
-      "aHash": "562faa65e991d2e9a03552f0f4f0a4622c42b77c1479355a56339a363a6116c8"
-    },
-    {
       "id": 142,
       "sourceGame": "costDirective",
-      "q": "A landscaper pays $1,500 monthly for truck insurance and $12 of fuel per job. At 80 jobs, total variable cost is:",
+      "q": "At a binding equipment-rental price cap, 160 units are requested and 110 offered. Which statement follows?",
       "options": [
-        "$1,500",
-        "$2,460",
-        "$960",
-        "$120"
+        "All 160 units trade because requests measure transactions",
+        "There is a surplus of 50 because the price is low",
+        "There is a shortage of 50; the cap can obstruct mutually beneficial rentals",
+        "Removing the cap must add exactly 50 offered units"
       ],
-      "tag": "fixed_variable_costs",
+      "tag": "price_control_quantity_gap",
       "type": "calculation",
-      "objective": "LO3.3",
+      "objective": "LO2.2",
       "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_fixed_variable_costs",
-      "primarySkill": "fixed_variable_costs",
-      "secondarySkills": [],
-      "repairSkill": "fixed_variable_costs",
-      "commonError": "includes_fixed_cost",
-      "feedback": "Variable cost is $12 × 80 = $960. Insurance is fixed for this decision.",
-      "aHash": "8eb8e2faccd6826e4c643697e036d556b43cda8630693dd7e9e72acf9d52beba"
+      "conceptCluster": "medium_costDirective_price_control_quantity_gap",
+      "primarySkill": "price_control_quantity_gap",
+      "secondarySkills": [
+        "barriers_to_trade"
+      ],
+      "repairSkill": "price_control_quantity_gap",
+      "commonError": "confuses_shortage_with_surplus",
+      "feedback": "The quantity gap is 160 − 110 = 50. The figures identify a shortage, but do not give supply at another price.",
+      "aHash": "af6bc7faaa372907b204720a4baac9a25e13626df982a5aa27fb42c85eeef1b0"
     },
     {
       "id": 143,
@@ -3135,78 +3109,80 @@ const questionBanks = {
     {
       "id": 145,
       "sourceGame": "costDirective",
-      "q": "A photographer has revenue of $90,000, explicit costs of $38,000, and a forgone salary of $45,000. Accounting profit is:",
+      "q": "A manager sees more late deliveries. Dispatchers receive no traffic reports but are rewarded for on-time arrivals and can choose routes. Which first change addresses the stated information gap?",
       "options": [
-        "$7,000",
-        "$52,000",
-        "$45,000",
-        "-$7,000"
+        "Raise the existing arrival bonus without improving information",
+        "Provide current traffic and travel-time information before route choice",
+        "Give route authority that dispatchers already possess",
+        "Rank drivers by total distance rather than arrival performance"
       ],
-      "tag": "accounting_economic_profit",
-      "type": "calculation",
-      "objective": "LO3.4",
+      "tag": "managerial_problem_diagnosis",
+      "type": "diagnosis",
+      "objective": "LO1.5",
       "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_accounting_economic_profit",
-      "primarySkill": "accounting_economic_profit",
+      "conceptCluster": "medium_costDirective_managerial_problem_diagnosis",
+      "primarySkill": "managerial_problem_diagnosis",
       "secondarySkills": [],
-      "repairSkill": "accounting_economic_profit",
-      "commonError": "subtracts_implicit_cost_from_accounting_profit",
-      "feedback": "Accounting profit subtracts explicit costs only: $90,000 - $38,000 = $52,000.",
-      "aHash": "b4936c38b206a69d4da9914b21db0632928be63c921b8bb8f35ceb7c2bf7e6e4"
+      "repairSkill": "managerial_problem_diagnosis",
+      "commonError": "changes_incentives_when_information_is_missing",
+      "feedback": "The objective, reward and route authority are already aligned in the facts. Missing timely information is the stated weakness; more reward alone does not supply it.",
+      "aHash": "cbf016c7aa72775a7b20265f40d0c71618ba0fba9d045575f05bbadf08f497de"
     },
     {
       "id": 146,
       "sourceGame": "costDirective",
-      "q": "A business has accounting profit of $70,000. The owner's best alternative salary is $85,000. What is economic profit?",
+      "q": "Before a tax, a rental cost $40. Afterward customers pay $43 and owners retain $38; 90 rentals occur. What are the buyer burden and total tax revenue?",
       "options": [
-        "$70,000",
-        "$85,000",
-        "-$15,000",
-        "$155,000"
+        "$3 per rental; $270 revenue",
+        "$5 per rental; $450 revenue",
+        "$3 per rental; $450 revenue",
+        "$43 per rental; $90 revenue"
       ],
-      "tag": "accounting_economic_profit",
+      "tag": "tax_wedge_and_trade",
       "type": "calculation",
-      "objective": "LO3.4",
+      "objective": "LO2.2",
       "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_accounting_economic_profit",
-      "primarySkill": "accounting_economic_profit",
-      "secondarySkills": [],
-      "repairSkill": "accounting_economic_profit",
-      "commonError": "ignores_opportunity_cost",
-      "feedback": "Economic profit subtracts the owner's opportunity cost: $70,000 - $85,000 = -$15,000.",
-      "aHash": "74a7ac327d80c195f934ee1bb23c5f7b26a7002735926e2d48f01a4efd976a36"
+      "conceptCluster": "medium_costDirective_tax_wedge_and_trade",
+      "primarySkill": "tax_wedge_and_trade",
+      "secondarySkills": [
+        "barriers_to_trade"
+      ],
+      "repairSkill": "tax_wedge_and_trade",
+      "commonError": "confuses_buyer_burden_with_tax_wedge",
+      "feedback": "The buyer price rises $3. The tax wedge is 43 − 38 = $5, collected on 90 rentals: $450.",
+      "aHash": "dff3ac94822fbc1f8099626b2a15bc3dafc902a921c6c849de0729eeb22c9e25"
     },
     {
       "id": 147,
       "sourceGame": "costDirective",
-      "q": "Which statement correctly distinguishes accounting profit from economic profit?",
+      "q": "An optional course costs an employee $120 in travel and personal time. It brings her an expected $80 bonus and creates $300 of value for the firm. With no other private benefits, which inference follows?",
       "options": [
-        "Accounting profit subtracts opportunity costs, but economic profit does not",
-        "Economic profit counts only cash costs paid to outside suppliers",
-        "Accounting profit and economic profit are always equal in the long run",
-        "Economic profit subtracts explicit and implicit costs; accounting profit subtracts explicit costs"
+        "Declining proves she misunderstands the bonus",
+        "Rationality requires accepting whenever firm value exceeds $120",
+        "The $300 firm benefit is automatically part of her personal payoff",
+        "Declining can be privately rational even though training creates net firm value"
       ],
-      "tag": "accounting_economic_profit",
-      "type": "definition",
-      "objective": "LO3.4",
+      "tag": "rational_actor_paradigm",
+      "type": "application",
+      "objective": "LO1.2",
       "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_accounting_economic_profit",
-      "primarySkill": "accounting_economic_profit",
+      "conceptCluster": "medium_costDirective_rational_actor_paradigm",
+      "primarySkill": "rational_actor_paradigm",
       "secondarySkills": [],
-      "repairSkill": "accounting_economic_profit",
-      "commonError": "reverses_profit_definitions",
-      "feedback": "Economic profit includes opportunity costs; accounting profit focuses on explicit costs.",
-      "aHash": "70c1d54d13c82110cfc898649286f391b2a0d9a93922efabb4226b1879517c3a"
+      "repairSkill": "rational_actor_paradigm",
+      "commonError": "confuses_private_payoff_with_firm_value",
+      "feedback": "The employee compares an $80 private benefit with $120 private cost. The firm may need to change the incentive if it wants the valuable training.",
+      "aHash": "e7c59a00b347015dc19858bca61524655fac7ad0435e707ea88c87851ea0e221"
     },
     {
       "id": 148,
       "sourceGame": "costDirective",
-      "q": "A firm refuses a profitable special order because the allocated factory rent makes the order look unprofitable. What fallacy may be occurring?",
+      "q": "An idle-capacity special order covers every cost it causes, but a manager rejects it after allocating factory rent that is unchanged either way. What error is occurring?",
       "options": [
-        "Fixed-cost fallacy",
-        "Hidden-cost fallacy",
-        "Economies of scope",
-        "Diminishing marginal returns"
+        "Fixed-cost fallacy: unchanged rent is treated as caused by the order",
+        "Hidden-cost fallacy: a new order-specific cost is omitted",
+        "Opportunity-cost error: profitable regular work is displaced",
+        "Variable-cost error: output-dependent materials are treated as fixed"
       ],
       "tag": "fixed_cost_fallacy",
       "type": "identification",
@@ -3218,61 +3194,63 @@ const questionBanks = {
       "repairSkill": "fixed_cost_fallacy",
       "commonError": "confuses_fixed_and_hidden_cost_fallacies",
       "feedback": "The fixed-cost fallacy occurs when unchanged fixed costs are treated as relevant to the decision.",
-      "aHash": "b92d2734f614fc22f80f4c304a6322e2c16b86857929bf071c015d65d6fee11f"
+      "aHash": "5cf047bb6785e5bad2d32ce8d3d6f79c44f196d0dc38ac3e3d42bacdbcb004e6"
     },
     {
       "id": 149,
       "sourceGame": "costDirective",
-      "q": "A movie theater rejects a private rental because allocated monthly rent per hour is high, even though staff and cleaning costs are low. What is the mistake?",
+      "q": "A service team proposes either faster appointments at higher staffing cost or fewer appointments at lower cost. Leadership has not decided whether the priority is net contribution or maximum access. What must be clarified before ranking these plans?",
       "options": [
-        "Ignoring an opportunity cost created by the rental",
-        "Including fixed costs that do not change because of the rental",
-        "Counting marginal revenue but not average revenue",
-        "Treating variable costs as sunk costs"
+        "Which plan has the smaller payroll alone",
+        "The objective and acceptable service constraints",
+        "Which plan was suggested by the senior manager",
+        "Which plan serves the largest number regardless of cost"
       ],
-      "tag": "fixed_cost_fallacy",
+      "tag": "problem_solving_steps",
       "type": "application",
-      "objective": "LO3.5",
+      "objective": "LO1.1",
       "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_fixed_cost_fallacy",
-      "primarySkill": "fixed_cost_fallacy",
+      "conceptCluster": "medium_costDirective_problem_solving_steps",
+      "primarySkill": "problem_solving_steps",
       "secondarySkills": [],
-      "repairSkill": "fixed_cost_fallacy",
-      "commonError": "uses_allocated_fixed_cost",
-      "feedback": "If rent does not change, it should not drive the accept-or-reject decision.",
-      "aHash": "1ffae0d6871f5e043151ee351034192af0d9e3ffe419ea08c4478e40e82a6429"
+      "repairSkill": "problem_solving_steps",
+      "commonError": "selects_alternative_before_defining_objective",
+      "feedback": "Plans cannot be ranked consistently without the objective and constraints. Cost or volume alone selects a criterion before leadership has defined success.",
+      "aHash": "8f04023640aab9d0c0bc5c8ae61922f5591f1ef7435ba9ef63906a101e58fa81"
     },
     {
       "id": 150,
       "sourceGame": "costDirective",
-      "q": "A factory keeps producing a product because the product must 'cover its share' of headquarters rent, even though rent will not change. This reasoning most directly reflects:",
+      "q": "An owner values a machine at $800; another user values it at $1,100. A transfer uses $120 in real moving resources. What total gain is available to divide between them?",
       "options": [
-        "the hidden-cost fallacy",
-        "economies of scale",
-        "the fixed-cost fallacy",
-        "marginal revenue pricing"
+        "$1,100",
+        "$300",
+        "$180",
+        "$420"
       ],
-      "tag": "fixed_cost_fallacy",
-      "type": "identification",
-      "objective": "LO3.5",
+      "tag": "voluntary_transactions_surplus",
+      "type": "calculation",
+      "objective": "LO2.1",
       "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_fixed_cost_fallacy",
-      "primarySkill": "fixed_cost_fallacy",
-      "secondarySkills": [],
-      "repairSkill": "fixed_cost_fallacy",
-      "commonError": "mislabels_fallacy",
-      "feedback": "The fixed-cost fallacy treats unavoidable fixed costs as if they should determine the decision.",
-      "aHash": "ce099be5353245b1ba7c2250712300b05aa52a469097d54a3a6a3a2fc1f10978"
+      "conceptCluster": "medium_costDirective_voluntary_transactions_surplus",
+      "primarySkill": "voluntary_transactions_surplus",
+      "secondarySkills": [
+        "transaction_costs_surplus"
+      ],
+      "repairSkill": "voluntary_transactions_surplus",
+      "commonError": "ignores_transaction_costs",
+      "feedback": "Net gains are 1100 − 800 − 120 = $180. A payment divides that gain; it is not an additional resource cost.",
+      "aHash": "8ca9d742288ff056110c48836189f89fd16f1df80e1e202ffd5b4dc223637760"
     },
     {
       "id": 151,
       "sourceGame": "costDirective",
       "q": "A firm can sell an extra unit for $35. The unit adds $22 in variable cost and no additional fixed cost. Rejecting the unit because average total cost is $40 would be:",
       "options": [
-        "a hidden-cost fallacy",
-        "a learning-curve effect",
-        "a returns-to-scale decision",
-        "a fixed-cost fallacy"
+        "a correct rejection: an extra unit cannot contribute to fixed costs",
+        "a hidden-cost fallacy: average cost should be added again",
+        "a correct rejection: a price below any reported average lowers profit",
+        "a fixed-cost fallacy: unchanged allocations block a $13 gain"
       ],
       "tag": "fixed_cost_fallacy",
       "type": "calculation",
@@ -3284,7 +3262,7 @@ const questionBanks = {
       "repairSkill": "fixed_cost_fallacy",
       "commonError": "uses_average_instead_of_marginal",
       "feedback": "The extra unit adds $13 before fixed cost allocation; average total cost can mislead when fixed cost does not change.",
-      "aHash": "5de903483e54badcc3d85143e89b7e7367985568d618d0f25075b2f847cbc01a"
+      "aHash": "6eba09f8d326ef239f069059db02129ad3e021a4db11eb82ba90d924b3f6e8cf"
     },
     {
       "id": 152,
@@ -3311,46 +3289,46 @@ const questionBanks = {
     {
       "id": 153,
       "sourceGame": "costDirective",
-      "q": "A company accepts a rush order after counting material cost but ignoring overtime premiums needed to finish it. What is the problem?",
+      "q": "An employee values an evening at $70. Overtime pays $95, but requires $15 travel and $20 childcare. Assuming no other effects, what does rational-actor reasoning predict?",
       "options": [
-        "A sunk cost was included in the decision",
-        "A relevant cost was left out of the decision",
-        "A fixed cost was allocated across too few units",
-        "An accounting profit was mistaken for economic loss"
+        "Accepting is required because the employer gains from the work",
+        "Declining is consistent with a $10 private net loss",
+        "Accepting is required because $95 exceeds $70 before other costs",
+        "Declining proves the employee does not value money"
       ],
-      "tag": "hidden_cost_fallacy",
-      "type": "application",
-      "objective": "LO3.6",
+      "tag": "rational_actor_paradigm",
+      "type": "calculation",
+      "objective": "LO1.2",
       "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_hidden_cost_fallacy",
-      "primarySkill": "hidden_cost_fallacy",
+      "conceptCluster": "medium_costDirective_rational_actor_paradigm",
+      "primarySkill": "rational_actor_paradigm",
       "secondarySkills": [],
-      "repairSkill": "hidden_cost_fallacy",
-      "commonError": "omits_relevant_cost",
-      "feedback": "Ignoring overtime premiums understates the true cost of the rush order.",
-      "aHash": "0e7032fb7c986613f7944a7a7c90de1282a41c049e8f55638f62b9dcf91fa064"
+      "repairSkill": "rational_actor_paradigm",
+      "commonError": "omits_private_time_or_cash_cost",
+      "feedback": "Private net gain is 95 − 70 − 15 − 20 = − 10. Compare all private costs, including noncash time and extra cash expenses.",
+      "aHash": "b55ead7ddb430062fbd544e2ed03b536f029cdd3397ca397598d4b2db6b7729c"
     },
     {
       "id": 154,
       "sourceGame": "costDirective",
-      "q": "A restaurant expands delivery but ignores the extra driver wait time and order errors created by the change. This is most likely:",
+      "q": "A branch can send idle equipment worth $600 locally to another branch where it creates $1,000 value, with $100 moving cost. Internal rules charge the receiving branch $1,200 based on historical book value, so it rejects the transfer. Which diagnosis fits?",
       "options": [
-        "fixed-cost fallacy",
-        "diseconomies of scope by definition",
-        "hidden-cost fallacy",
-        "constant returns to scale"
+        "No wealth is possible because both branches share an owner",
+        "The historical charge proves the receiving use is worth less",
+        "An internal accounting rule blocks a $300 net value gain",
+        "The sending branch’s local value should be ignored because equipment is idle"
       ],
-      "tag": "hidden_cost_fallacy",
-      "type": "application",
-      "objective": "LO3.6",
+      "tag": "organization_wealth_creation",
+      "type": "diagnosis",
+      "objective": "LO2.5",
       "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_hidden_cost_fallacy",
-      "primarySkill": "hidden_cost_fallacy",
+      "conceptCluster": "medium_costDirective_organization_wealth_creation",
+      "primarySkill": "organization_wealth_creation",
       "secondarySkills": [],
-      "repairSkill": "hidden_cost_fallacy",
-      "commonError": "ignores_operating_side_effects",
-      "feedback": "Hidden costs are real costs that matter even if they are not obvious in the first calculation.",
-      "aHash": "0057e633a04590aebeb4614f73f7c455a8447e9407486f3e07a02fc5f95d27f7"
+      "repairSkill": "organization_wealth_creation",
+      "commonError": "uses_book_transfer_charge_instead_of_firm_value",
+      "feedback": "Firm gain is 1000 − 600 − 100 = 300. An internal charge is not a new resource cost, but it can distort the receiving manager’s acceptance decision.",
+      "aHash": "04a55cf13a8ef6141c676913c2221bb4247d20bbc3048afbb7db3f467b6e90de"
     },
     {
       "id": 155,
@@ -3399,7 +3377,7 @@ const questionBanks = {
     {
       "id": 157,
       "sourceGame": "costDirective",
-      "q": "Total cost rises from $4,800 at 120 units to $4,950 at 125 units. What is marginal cost per additional unit?",
+      "q": "Total cost rises from $4,800 at 120 units to $4,950 at 125 units. What is average incremental cost per additional unit?",
       "options": [
         "$150",
         "$30",
@@ -3418,78 +3396,6 @@ const questionBanks = {
       "repairSkill": "average_vs_marginal_cost",
       "commonError": "uses_total_cost_average",
       "feedback": "Marginal cost is change in total cost divided by change in output: $150 / 5 = $30.",
-      "aHash": "e3aae7bc0e5ad26dcf3912c166846dff1e00a3887aeb53c3363722bba19b16bd"
-    },
-    {
-      "id": 158,
-      "sourceGame": "costDirective",
-      "q": "A firm produces 500 units with total cost of $8,000. Average cost is:",
-      "options": [
-        "$8,000",
-        "$500",
-        "$16",
-        "$15"
-      ],
-      "tag": "average_vs_marginal_cost",
-      "type": "calculation",
-      "objective": "LO4.1",
-      "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_average_marginal_costs",
-      "primarySkill": "average_vs_marginal_cost",
-      "secondarySkills": [
-        "average_marginal_costs"
-      ],
-      "repairSkill": "average_vs_marginal_cost",
-      "commonError": "confuses_total_and_average",
-      "feedback": "Average cost is total cost divided by output: $8,000 / 500 = $16.",
-      "aHash": "347171706e97699c7e9fe896480e8e8fb50e4b978c8daae1b218b19eebf4b733"
-    },
-    {
-      "id": 159,
-      "sourceGame": "costDirective",
-      "q": "Which statement is correct?",
-      "options": [
-        "Average cost and marginal cost are always equal when output rises",
-        "Marginal cost spreads fixed cost across every unit produced",
-        "Average cost measures only the variable cost of the last unit",
-        "Average cost spreads total cost over all units; marginal cost measures the cost of one more unit"
-      ],
-      "tag": "average_vs_marginal_cost",
-      "type": "definition",
-      "objective": "LO4.1",
-      "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_average_marginal_costs",
-      "primarySkill": "average_vs_marginal_cost",
-      "secondarySkills": [
-        "average_marginal_costs"
-      ],
-      "repairSkill": "average_vs_marginal_cost",
-      "commonError": "confuses_average_and_marginal",
-      "feedback": "Average cost is a per-unit average; marginal cost is the incremental cost of additional output.",
-      "aHash": "3d14c7e3ed2fea97b4c63fe95af6dc42fbad5bdb692d7f9ed89d34348f5301e9"
-    },
-    {
-      "id": 160,
-      "sourceGame": "costDirective",
-      "q": "If total cost rises by $90 when output rises from 30 units to 33 units, marginal cost is:",
-      "options": [
-        "$30",
-        "$90",
-        "$3",
-        "$33"
-      ],
-      "tag": "average_vs_marginal_cost",
-      "type": "calculation",
-      "objective": "LO4.1",
-      "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_average_marginal_costs",
-      "primarySkill": "average_vs_marginal_cost",
-      "secondarySkills": [
-        "average_marginal_costs"
-      ],
-      "repairSkill": "average_vs_marginal_cost",
-      "commonError": "does_not_divide_by_output_change",
-      "feedback": "Marginal cost per unit is $90 divided by 3 additional units = $30.",
       "aHash": "e3aae7bc0e5ad26dcf3912c166846dff1e00a3887aeb53c3363722bba19b16bd"
     },
     {
@@ -3539,50 +3445,6 @@ const questionBanks = {
       "aHash": "dab9ef26f503251d5b460d0a9514d71390477eedc9a02b51aa739694e693e861"
     },
     {
-      "id": 163,
-      "sourceGame": "costDirective",
-      "q": "A firm sells each extra unit for $45. Total revenue rises from $9,000 to $9,045 when output rises by one unit. Marginal revenue is:",
-      "options": [
-        "$9,045",
-        "$9,000",
-        "$90",
-        "$45"
-      ],
-      "tag": "ac_mc_mr_calculation",
-      "type": "calculation",
-      "objective": "LO4.2",
-      "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_ac_mc_mr_calculation",
-      "primarySkill": "ac_mc_mr_calculation",
-      "secondarySkills": [],
-      "repairSkill": "ac_mc_mr_calculation",
-      "commonError": "uses_total_revenue",
-      "feedback": "Marginal revenue is the change in total revenue from one more unit: $45.",
-      "aHash": "d503dcfdd44cb6216b22dba5a43ecacce36079e0f6445b5906ba9b0a4daaf2dc"
-    },
-    {
-      "id": 164,
-      "sourceGame": "costDirective",
-      "q": "A table shows total cost of $2,200 at 40 units and $2,260 at 42 units. What is marginal cost?",
-      "options": [
-        "$30 per unit",
-        "$60 per unit",
-        "$55 per unit",
-        "$2,260 per unit"
-      ],
-      "tag": "ac_mc_mr_calculation",
-      "type": "calculation",
-      "objective": "LO4.2",
-      "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_ac_mc_mr_calculation",
-      "primarySkill": "ac_mc_mr_calculation",
-      "secondarySkills": [],
-      "repairSkill": "ac_mc_mr_calculation",
-      "commonError": "uses_change_without_dividing",
-      "feedback": "Cost rises by $60 over 2 units, so marginal cost is $30 per unit.",
-      "aHash": "f7270f084139ba1500c773b0aab50d9c383372ae7db247723da46166c1219088"
-    },
-    {
       "id": 165,
       "sourceGame": "costDirective",
       "q": "A firm has total revenue of $7,500 and total cost of $6,300 at 150 units. At 151 units, revenue is $7,560 and cost is $6,355. MR and MC for the 151st unit are:",
@@ -3627,30 +3489,6 @@ const questionBanks = {
       "aHash": "a5e5e8d362fb74d764de0ae02c1301975aa694ee1175c61c2cc45a60a78245ec"
     },
     {
-      "id": 167,
-      "sourceGame": "costDirective",
-      "q": "A firm can produce one more unit for marginal cost of $18 and sell it for marginal revenue of $24. What should it do?",
-      "options": [
-        "Reject the unit because any extra cost lowers profit",
-        "Produce only if average total cost is below $18",
-        "Reject the unit because fixed cost has already been paid",
-        "Produce the unit because MR exceeds MC"
-      ],
-      "tag": "mr_mc_extent_rule",
-      "type": "application",
-      "objective": "LO4.3",
-      "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_extent_decisions",
-      "primarySkill": "mr_mc_extent_rule",
-      "secondarySkills": [
-        "extent_decisions"
-      ],
-      "repairSkill": "mr_mc_extent_rule",
-      "commonError": "ignores_marginal_rule",
-      "feedback": "For an extent decision, expand output when marginal revenue exceeds marginal cost.",
-      "aHash": "e82fb20f036111d628da466b064b5f910e7dea54b313c435e6160106604930c5"
-    },
-    {
       "id": 168,
       "sourceGame": "costDirective",
       "q": "A contractor can take one extra job for $900 in revenue. The job adds $620 in labor and materials. Existing insurance does not change. What is the decision rule result?",
@@ -3673,54 +3511,6 @@ const questionBanks = {
       "commonError": "allocates_fixed_cost",
       "feedback": "The job adds $900 - $620 = $280 before unchanged insurance, so it increases profit.",
       "aHash": "b6ab09813b148be1a280c55938f6010fe296ca7ecb975bc69dfec26f0af96097"
-    },
-    {
-      "id": 169,
-      "sourceGame": "costDirective",
-      "q": "A company is deciding whether to increase output from 1,000 to 1,001 units. Which comparison matters most?",
-      "options": [
-        "Average fixed cost of the first 1,000 units versus total revenue",
-        "Marginal revenue of the 1,001st unit versus marginal cost of the 1,001st unit",
-        "Total accounting cost from the previous year versus current rent",
-        "The original machine cost versus the firm's preferred output target"
-      ],
-      "tag": "mr_mc_extent_rule",
-      "type": "identification",
-      "objective": "LO4.3",
-      "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_extent_decisions",
-      "primarySkill": "mr_mc_extent_rule",
-      "secondarySkills": [
-        "extent_decisions"
-      ],
-      "repairSkill": "mr_mc_extent_rule",
-      "commonError": "uses_total_or_sunk_values",
-      "feedback": "Extent decisions are made at the margin: compare added benefit to added cost.",
-      "aHash": "d8da74803d8219d331a1de7ca4078100df293ae8c3af8b753960226a35a7a78e"
-    },
-    {
-      "id": 170,
-      "sourceGame": "costDirective",
-      "q": "A firm should stop expanding output when:",
-      "options": [
-        "total revenue is positive",
-        "average fixed cost is falling",
-        "the next unit's marginal cost exceeds its marginal revenue",
-        "the original investment has not been recovered"
-      ],
-      "tag": "mr_mc_extent_rule",
-      "type": "definition",
-      "objective": "LO4.3",
-      "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_extent_decisions",
-      "primarySkill": "mr_mc_extent_rule",
-      "secondarySkills": [
-        "extent_decisions"
-      ],
-      "repairSkill": "mr_mc_extent_rule",
-      "commonError": "confuses_positive_revenue_with_profit",
-      "feedback": "Expansion should stop when the next unit costs more than it brings in.",
-      "aHash": "aa891a139d79b7054d001e7d8944aa8813b8e52eb4be2dd9998d0df8566a9713"
     },
     {
       "id": 171,
@@ -3747,28 +3537,6 @@ const questionBanks = {
       "aHash": "f158ebf96a1d405b2555afd1c00a551586e7e852cd488d7d387cfbafa0d65408"
     },
     {
-      "id": 172,
-      "sourceGame": "costDirective",
-      "q": "A salesperson earns a fixed salary with no commission. Compared with a commission plan, what incentive issue may arise?",
-      "options": [
-        "The marginal private benefit of extra sales effort may be weaker",
-        "The salesperson faces no opportunity cost for extra effort",
-        "The firm has automatically solved every effort problem",
-        "The salesperson receives stronger rewards for each additional sale"
-      ],
-      "tag": "incentive_compensation_effort",
-      "type": "application",
-      "objective": "LO4.4",
-      "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_incentive_compensation_effort",
-      "primarySkill": "incentive_compensation_effort",
-      "secondarySkills": [],
-      "repairSkill": "incentive_compensation_effort",
-      "commonError": "ignores_effort_incentives",
-      "feedback": "A fixed salary may weaken the link between additional effort and additional pay.",
-      "aHash": "afe4386d96713a7beed061ca69841834c2b2f795c898d9efb5f9cb053cba8866"
-    },
-    {
       "id": 173,
       "sourceGame": "costDirective",
       "q": "A contractor is paid a fixed fee for completing a project. Which behavior might the firm need to monitor?",
@@ -3791,35 +3559,13 @@ const questionBanks = {
       "aHash": "c19f7a39bd4c39d30d9d2f0d029aad18166365e614a7277826ed9c5e1cb9261f"
     },
     {
-      "id": 174,
-      "sourceGame": "costDirective",
-      "q": "A worker earns 20% commission on each sale. If a sale is worth $500, the worker's marginal pay from that sale is:",
-      "options": [
-        "$20",
-        "$400",
-        "$100",
-        "$500"
-      ],
-      "tag": "incentive_compensation_effort",
-      "type": "calculation",
-      "objective": "LO4.4",
-      "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_incentive_compensation_effort",
-      "primarySkill": "incentive_compensation_effort",
-      "secondarySkills": [],
-      "repairSkill": "incentive_compensation_effort",
-      "commonError": "calculates_commission_incorrectly",
-      "feedback": "Marginal pay is 20% of $500 = $100.",
-      "aHash": "797c7d463af6ea7fa7f88d50602cea0531e3e0da8cb59be3b0983bb98958cce8"
-    },
-    {
       "id": 175,
       "sourceGame": "costDirective",
       "q": "A firm shifts from hourly pay to piece-rate pay. What is the likely incentive effect?",
       "options": [
-        "Workers have no reason to change effort because pay is still labor cost",
-        "Workers will always improve quality even if quality is not measured",
-        "The firm eliminates the need to supervise safety and defects",
+        "Piece-rate income cannot change with a worker’s additional effort",
+        "Pay for output necessarily rewards quality that is not measured",
+        "A larger unit count establishes that all aspects of performance improved",
         "Workers have a stronger reward for producing additional measured units"
       ],
       "tag": "incentive_compensation_effort",
@@ -3840,9 +3586,9 @@ const questionBanks = {
       "q": "A customer-service bonus rewards calls handled per hour, and complaint rates rise. What is the likely issue?",
       "options": [
         "The incentive rewards speed but not service quality",
-        "The employees lack a fixed fee, so effort must fall",
-        "The firm should ignore complaints because output rose",
-        "The bonus creates no behavioral response because it is monetary"
+        "The increase in call count proves complaints are economically irrelevant",
+        "Increasing the same speed bonus necessarily corrects quality",
+        "The problem is solved by measuring calls more precisely without checking outcomes"
       ],
       "tag": "incentive_compensation_effort",
       "type": "application",
@@ -3855,50 +3601,6 @@ const questionBanks = {
       "commonError": "ignores_multi_task_incentives",
       "feedback": "Incentives tied to one measure can distort behavior if other important outcomes are not measured.",
       "aHash": "9e46fbe206e5dbd5873a1fb63ebfc4b3db7b29018ad6a70a0c2366fb5d671fa1"
-    },
-    {
-      "id": 177,
-      "sourceGame": "costDirective",
-      "q": "A sandwich shop adds a fourth worker in a small kitchen. Output rises, but by less than it rose when the third worker was added. This illustrates:",
-      "options": [
-        "economies of scope",
-        "diminishing marginal returns",
-        "constant returns to scale",
-        "fixed-cost fallacy"
-      ],
-      "tag": "diminishing_marginal_returns",
-      "type": "identification",
-      "objective": "LO7.1",
-      "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_diminishing_marginal_returns",
-      "primarySkill": "diminishing_marginal_returns",
-      "secondarySkills": [],
-      "repairSkill": "diminishing_marginal_returns",
-      "commonError": "confuses_scale_and_marginal_returns",
-      "feedback": "Diminishing marginal returns occur when an additional input adds less output than the previous input, holding other inputs fixed.",
-      "aHash": "3fb9c70a70c4d59f72107654414444bea302e05072b3b6d4b418349eb64ef404"
-    },
-    {
-      "id": 178,
-      "sourceGame": "costDirective",
-      "q": "A farm keeps land fixed and adds workers. If each additional worker eventually adds fewer bushels than the previous worker, the farm is experiencing:",
-      "options": [
-        "economies of scale",
-        "economic profit",
-        "diminishing marginal returns",
-        "minimum efficient scale"
-      ],
-      "tag": "diminishing_marginal_returns",
-      "type": "application",
-      "objective": "LO7.1",
-      "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_diminishing_marginal_returns",
-      "primarySkill": "diminishing_marginal_returns",
-      "secondarySkills": [],
-      "repairSkill": "diminishing_marginal_returns",
-      "commonError": "uses_long_run_scale_language",
-      "feedback": "With at least one input fixed, adding more of another input can eventually produce smaller marginal gains.",
-      "aHash": "3fb9c70a70c4d59f72107654414444bea302e05072b3b6d4b418349eb64ef404"
     },
     {
       "id": 179,
@@ -3949,10 +3651,10 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "A manufacturer negotiates a contract that requires a small batch each week. The supplier warns that small batches have high average cost. What should the buyer consider?",
       "options": [
-        "Whether the supplier's original equipment cost should be reimbursed in full",
-        "Whether the order size prevents the supplier from reaching an efficient production scale",
-        "Whether small batches remove variable costs from the supplier's decision",
-        "Whether average cost must be identical at every output level"
+        "Whether the supplier’s sunk purchase price should be repaid for every batch",
+        "Whether setup and batch size prevent low cost per unit at the requested schedule",
+        "Whether a small batch can use the same average cost as any larger batch",
+        "Whether lower total batch cost proves lower cost per unit"
       ],
       "tag": "cost_curves_contracts",
       "type": "application",
@@ -3964,12 +3666,12 @@ const questionBanks = {
       "repairSkill": "cost_curves_contracts",
       "commonError": "misses_batch_size_cost_effect",
       "feedback": "Contract terms can affect the supplier's cost by changing output scale, setup costs, and average cost.",
-      "aHash": "bb337e1cbb8070795ceb57cc4082498bc2d484fc25ce570787974be0e88bb67c"
+      "aHash": "3fb87a693251dcd87819bf632f49c9c512f42915cfce20cd63e6307db0ff7071"
     },
     {
       "id": 182,
       "sourceGame": "costDirective",
-      "q": "A firm doubles output and average cost falls from $14 to $10. What does this suggest?",
+      "q": "With unchanged input prices, a firm doubles output and long-run average cost falls from $14 to $10. What does this suggest?",
       "options": [
         "Diseconomies of scale over that output range",
         "Diminishing marginal returns by definition",
@@ -3985,18 +3687,18 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "average_cost_output",
       "commonError": "confuses_average_cost_with_total_cost",
-      "feedback": "Falling average cost as output rises suggests economies of scale over that range.",
+      "feedback": "Falling long-run average cost over this output range is economies of scale. A fixed-plant average-cost comparison alone would not establish that.",
       "aHash": "0a28baac1acdb8857c2c6a001e1fe147479ef9345ee853c0b0317b8bbdbc39f8"
     },
     {
       "id": 183,
       "sourceGame": "costDirective",
-      "q": "If output rises and average cost stays about the same, the firm is most likely experiencing:",
+      "q": "At unchanged input prices, long-run average cost stays constant as output expands over a range. Which cost description fits?",
       "options": [
-        "economies of scope",
-        "diseconomies of scale",
-        "fixed-cost fallacy",
-        "constant returns to scale over that range"
+        "Learning from cumulative experience is proven",
+        "Economies of scope between distinct products",
+        "Rising long-run unit cost",
+        "Constant long-run unit cost over that range"
       ],
       "tag": "average_cost_output",
       "type": "interpretation",
@@ -4007,62 +3709,18 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "average_cost_output",
       "commonError": "misreads_flat_average_cost",
-      "feedback": "Constant average cost as output expands suggests constant returns to scale over that range.",
-      "aHash": "7e77c657de3d5a799ac4a046ab570901ffd2c390c21d222d228dff0d985d1e50"
-    },
-    {
-      "id": 184,
-      "sourceGame": "costDirective",
-      "q": "A firm doubles all inputs and output also doubles. This is:",
-      "options": [
-        "constant returns to scale",
-        "increasing returns to scale",
-        "decreasing returns to scale",
-        "diminishing marginal returns"
-      ],
-      "tag": "returns_to_scale",
-      "type": "definition",
-      "objective": "LO7.4",
-      "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_returns_to_scale",
-      "primarySkill": "returns_to_scale",
-      "secondarySkills": [],
-      "repairSkill": "returns_to_scale",
-      "commonError": "confuses_scale_with_short_run_returns",
-      "feedback": "When all inputs and output rise in the same proportion, returns to scale are constant.",
-      "aHash": "4afcedd9184d58c718cce4e396cd98b89fbea90ad79a74521565ac77f5c36fad"
-    },
-    {
-      "id": 185,
-      "sourceGame": "costDirective",
-      "q": "A firm increases all inputs by 20%, and output rises by 30%. This indicates:",
-      "options": [
-        "decreasing returns to scale",
-        "increasing returns to scale",
-        "constant returns to scale",
-        "fixed-cost fallacy"
-      ],
-      "tag": "returns_to_scale",
-      "type": "calculation",
-      "objective": "LO7.4",
-      "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_returns_to_scale",
-      "primarySkill": "returns_to_scale",
-      "secondarySkills": [],
-      "repairSkill": "returns_to_scale",
-      "commonError": "compares_levels_not_percentages",
-      "feedback": "Output rose by a larger percentage than inputs, so returns to scale are increasing.",
-      "aHash": "b43902336e49d926263d77e4900a3b47a9fe58bddd8460b227efbb785a750b06"
+      "feedback": "A flat long-run average cost curve means constant unit cost. Cost observations alone need not identify a particular physical production technology.",
+      "aHash": "edd4299049ad049280570c3d784607ce70196f5ab695b3d48e3d5875a68109ca"
     },
     {
       "id": 186,
       "sourceGame": "costDirective",
-      "q": "A plant's average cost is $18 at 20,000 units, $12 at 50,000 units, and $12 at 70,000 units. Minimum efficient scale is closest to:",
+      "q": "The only feasible long-run plant plans cost $18 per unit at 20,000 units, $12 at 50,000 and $12 at 70,000. Which plan is minimum efficient scale?",
       "options": [
-        "20,000 units",
         "70,000 units",
+        "20,000 units",
         "50,000 units",
-        "140,000 units"
+        "Both 50,000 and 70,000 units because their unit costs tie"
       ],
       "tag": "minimum_efficient_scale",
       "type": "interpretation",
@@ -4077,55 +3735,9 @@ const questionBanks = {
       "aHash": "c0d682ad24207f0616d78fa4823332327a66321a0e9ebb31c7769ce5adf585c1"
     },
     {
-      "id": 187,
-      "sourceGame": "costDirective",
-      "q": "Why can operating near minimum efficient scale matter in competition?",
-      "options": [
-        "It guarantees the firm can charge any price it wants",
-        "It removes the need to track marginal cost",
-        "It means fixed costs are irrelevant to all decisions",
-        "It helps the firm avoid a cost disadvantage from producing too little"
-      ],
-      "tag": "minimum_efficient_scale",
-      "type": "application",
-      "objective": "LO7.5",
-      "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_minimum_efficient_scale",
-      "primarySkill": "minimum_efficient_scale",
-      "secondarySkills": [],
-      "repairSkill": "minimum_efficient_scale",
-      "commonError": "overstates_mes",
-      "feedback": "A firm far below efficient scale may have higher average cost than larger rivals.",
-      "aHash": "3b37e1fea0d5de9f724ef89cf1938e5518eb94f98b68e25ccaf8e8006d82753c"
-    },
-    {
-      "id": 188,
-      "sourceGame": "costDirective",
-      "q": "A firm cuts unit cost from $80 to $68 after workers repeat the same production process over many batches. This is most directly a:",
-      "options": [
-        "learning-curve effect",
-        "fixed-cost fallacy",
-        "price-ceiling effect",
-        "decreasing returns to scale"
-      ],
-      "tag": "learning_curve",
-      "type": "application",
-      "objective": "LO7.6",
-      "difficulty": "medium",
-      "conceptCluster": "medium_costDirective_learning_curves",
-      "primarySkill": "learning_curve",
-      "secondarySkills": [
-        "learning_curves"
-      ],
-      "repairSkill": "learning_curve",
-      "commonError": "confuses_learning_with_policy",
-      "feedback": "Learning curves describe cost reductions that come from accumulated experience and process improvement.",
-      "aHash": "88a453eced66da054fbafee8f7d8d96b6556e97ac548a7e99df9e7ea66c0f707"
-    },
-    {
       "id": 189,
       "sourceGame": "costDirective",
-      "q": "A company can produce phone cases and tablet cases together for $180,000. Producing them separately would cost $110,000 and $95,000. What is the scope saving?",
+      "q": "A company can produce phone cases and tablet cases together for $180,000. Producing them separately would cost $110,000 and $95,000. These alternatives supply the same quantities and quality. What is the scope saving?",
       "options": [
         "$15,000",
         "$25,000",
@@ -4143,31 +3755,1084 @@ const questionBanks = {
       "commonError": "uses_joint_cost_as_saving",
       "feedback": "Separate production costs $205,000. Joint production costs $180,000, so the scope saving is $25,000.",
       "aHash": "0dab70deb56594f491a9c0477be71448bd9eac3597944423f995528db904d3ff"
+    },
+    {
+      "id": 208,
+      "sourceGame": "costDirective",
+      "q": "A buyer selects a component priced $6 lower, but the choice adds $9 of expected rework per component. The buyer sees rework reports and is paid on invoice savings. Which diagnosis fits?",
+      "options": [
+        "The information exists, but the rewarded measure favors the costlier choice.",
+        "The main problem is missing rework information.",
+        "The component reduces firm cost because the invoice is lower.",
+        "Delegating purchasing is sufficient to align the buyer's objective."
+      ],
+      "tag": "managerial_problem_diagnosis",
+      "type": "diagnosis",
+      "objective": "LO1.5",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_managerial_problem_diagnosis",
+      "primarySkill": "managerial_problem_diagnosis",
+      "secondarySkills": [
+        "diagnostic_questions"
+      ],
+      "repairSkill": "managerial_problem_diagnosis",
+      "commonError": "rewards_invoice_savings_while_ignoring_known_rework_cost",
+      "feedback": "The firm spends $3 more per component overall. Existing information does not fix a bonus that excludes rework.",
+      "aHash": "c52fe4b1267948fd9f4a839419c86342af969db8811016e7d52b8f4a405022dd"
+    },
+    {
+      "id": 202,
+      "sourceGame": "costDirective",
+      "q": "An analyst is paid for avoiding budget overruns. She declines a trial costing $4,000 that is expected to save the firm $7,000; savings are credited to another team. Which inference is justified?",
+      "options": [
+        "Her choice proves she believes the expected savings are zero.",
+        "Rational behavior requires her to maximize the firm's net savings.",
+        "Her choice may serve her rewarded objective while reducing firm value.",
+        "A trial that increases current spending cannot have economic value."
+      ],
+      "tag": "rational_actor_paradigm",
+      "type": "diagnosis",
+      "objective": "LO1.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_rational_actor_paradigm",
+      "primarySkill": "rational_actor_paradigm",
+      "secondarySkills": [],
+      "repairSkill": "rational_actor_paradigm",
+      "commonError": "confuses_rational_with_loyal",
+      "feedback": "The trial's expected net gain is $3,000, but the analyst's measure counts its expense without its benefit. The behavior can be privately rational.",
+      "aHash": "59883f055f849bb2edeed90af4eb0251a8cdc41e5872adffd2f538a977f1f0b2"
+    },
+    {
+      "id": 203,
+      "sourceGame": "costDirective",
+      "q": "A sales team is paid only for total revenue. Discounts rise sharply, but unit sales also rise. What should a rational-actor diagnosis emphasize?",
+      "options": [
+        "The sales team is behaving irrationally because discounts reduce company profit",
+        "The firm should assume the discounts are harmless because revenue increased",
+        "The problem is solved if managers remind workers that profit matters",
+        "The compensation rule rewards sales volume or revenue even when discounts reduce profit"
+      ],
+      "tag": "rational_actor_paradigm",
+      "type": "diagnosis",
+      "objective": "LO1.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_rational_actor_paradigm",
+      "primarySkill": "rational_actor_paradigm",
+      "secondarySkills": [
+        "rational_actor_incentives"
+      ],
+      "repairSkill": "rational_actor_paradigm",
+      "commonError": "ignores_incentive_response",
+      "feedback": "The team may be acting rationally under the plan it was given. The incentive pays for revenue, not necessarily profitable revenue.",
+      "aHash": "23d5bef92c7b1164d108d0a3a4f635e6291e7ac8bd4378f3429cf447d421cf9d"
+    },
+    {
+      "id": 204,
+      "sourceGame": "costDirective",
+      "q": "A bonus pays warehouse teams for items packed per hour. Accuracy falls. Which missing incentive-system component is most likely causing the problem?",
+      "options": [
+        "The metric rewards speed without accounting for errors",
+        "The bonus should be larger for the same counted items",
+        "The firm needs a more accurate item count without an accuracy measure",
+        "Quality will recover if pay is tied only to total hours worked"
+      ],
+      "tag": "incentive_system_design",
+      "type": "diagnosis",
+      "objective": "LO1.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_incentive_system_design",
+      "primarySkill": "incentive_system_design",
+      "secondarySkills": [
+        "incentive_design"
+      ],
+      "repairSkill": "incentive_system_design",
+      "commonError": "single_metric_tunnel_vision",
+      "feedback": "A good incentive system needs measures that match the desired behavior. A speed-only metric can create error incentives.",
+      "aHash": "3fe7edede1cd2080bf058a111dc24d592554f99f09cc98f172e0a8fe32c80b03"
+    },
+    {
+      "id": 211,
+      "sourceGame": "costDirective",
+      "q": "A rental manager can cut cleaning expense by $400, but doing so is expected to cause $900 in refund claims. Which bonus measure best supports profitable service?",
+      "options": [
+        "Rental revenue before refunds",
+        "Cleaning expense per booking alone",
+        "Number of bookings accepted before cleaning",
+        "Rental contribution after cleaning and attributable refund costs"
+      ],
+      "tag": "incentive_system_design",
+      "type": "calculation",
+      "objective": "LO1.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_incentive_system_design",
+      "primarySkill": "incentive_system_design",
+      "secondarySkills": [
+        "incentive_design"
+      ],
+      "repairSkill": "incentive_system_design",
+      "commonError": "rewards_activity_not_value",
+      "feedback": "The apparent saving reduces expected contribution by $500. A measure including both effects aligns the cleaning choice with the objective.",
+      "aHash": "a8e130876c1a9ef578dce71c6b6f9161b43f2fb199f73f1641d0c4ec7b02fe9b"
+    },
+    {
+      "id": 216,
+      "sourceGame": "costDirective",
+      "q": "A tool-rental rule sets a daily maximum of $24, below the stated clearing price of $32. At $24, 180 rentals are requested and 125 are offered. Which conclusion follows without predicting behavior at other prices?",
+      "options": [
+        "There is a shortage of 55 rentals at the controlled price.",
+        "There is a surplus of 55 rentals at the controlled price.",
+        "Exactly 180 rentals will occur because buyers request them.",
+        "Exactly 55 rentals would be added if the maximum rose by $1."
+      ],
+      "tag": "price_control_quantity_gap",
+      "type": "calculation",
+      "objective": "LO2.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_price_control_quantity_gap",
+      "primarySkill": "price_control_quantity_gap",
+      "secondarySkills": [
+        "barriers_to_trade"
+      ],
+      "repairSkill": "price_control_quantity_gap",
+      "commonError": "confuses_shortage_with_surplus",
+      "feedback": "The stated quantity gap is 180 - 125 = 55 unfilled requests. The problem does not provide responses to alternative prices.",
+      "aHash": "a5b8dd4f58e2e31daa0295648754639ce25140eed947b7230afe8417c21c8058"
+    },
+    {
+      "id": 217,
+      "sourceGame": "costDirective",
+      "q": "A city requires a minimum of $46 for an equipment rental; the stated clearing price is $38. At $46, owners offer 150 rentals and customers request 105. Which outcome can be established from those figures?",
+      "options": [
+        "45 customer requests lack an offered rental at that price.",
+        "45 offered rentals have no matching request at that price.",
+        "All 150 rentals occur because the price floor binds.",
+        "The 45 unmatched rentals must be sold illegally below the floor."
+      ],
+      "tag": "price_control_quantity_gap",
+      "type": "calculation",
+      "objective": "LO2.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_price_control_quantity_gap",
+      "primarySkill": "price_control_quantity_gap",
+      "secondarySkills": [
+        "barriers_to_trade"
+      ],
+      "repairSkill": "price_control_quantity_gap",
+      "commonError": "confuses_shortage_with_surplus",
+      "feedback": "Offered rentals exceed requests by 45. A surplus follows numerically; an illegal market is possible but is not guaranteed by those figures.",
+      "aHash": "b5e93382f526f372e4e2f74c9d3ac61be986acb3f4903531ec0884df6736d3a1"
+    },
+    {
+      "id": 218,
+      "sourceGame": "costDirective",
+      "q": "A packing redesign saves $2 in materials per order but adds $3 in expected damage costs. Delivery value to customers is unchanged. What does this show?",
+      "options": [
+        "Resource efficiency improves by $2 because materials are the targeted input.",
+        "Resource cost falls by $5 because both changes concern the same order.",
+        "The measured material saving conceals a $1 increase in resource cost per order.",
+        "The redesign has no efficiency effect unless the sale price changes."
+      ],
+      "tag": "efficiency_business_value",
+      "type": "calculation",
+      "objective": "LO2.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_efficiency_business_value",
+      "primarySkill": "efficiency_business_value",
+      "secondarySkills": [
+        "efficiency_and_value"
+      ],
+      "repairSkill": "efficiency_business_value",
+      "commonError": "confuses_efficiency_with_guaranteed_profit",
+      "feedback": "With customer value unchanged, total relevant resource cost rises by 3 - 2 = $1. A lower expense line alone is not evidence of efficiency.",
+      "aHash": "13651d78ca2eb4d31a14edaf76d6c2c20823493beac920fd469fe9e16cc42d97"
+    },
+    {
+      "id": 220,
+      "sourceGame": "costDirective",
+      "q": "A buyer values a used machine at $80,000. The seller values keeping it at $62,000. Moving it requires $7,000 in shipping and paperwork. Is there a wealth-creating transaction?",
+      "options": [
+        "Yes, because net surplus is $11,000 after transaction costs",
+        "Yes, because net surplus is $18,000 before subtracting moving costs",
+        "No, because moving costs should be added to the buyer’s value",
+        "No, because only the seller’s $62,000 value determines total gains"
+      ],
+      "tag": "voluntary_transactions_surplus",
+      "type": "calculation",
+      "objective": "LO2.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_voluntary_transactions_surplus",
+      "primarySkill": "voluntary_transactions_surplus",
+      "secondarySkills": [
+        "transaction_costs_surplus"
+      ],
+      "repairSkill": "voluntary_transactions_surplus",
+      "commonError": "ignores_transaction_costs",
+      "feedback": "Net surplus is $80,000 - $62,000 - $7,000 = $11,000, so a transaction can create wealth.",
+      "aHash": "06909fef722d176940d4d8f16327446de25592a75509433d6e84aa83bd342666"
+    },
+    {
+      "id": 223,
+      "sourceGame": "costDirective",
+      "q": "A depot moves an idle scanner to a busy location. The busy location gains $900 in weekly value, the original location loses $200, and transport costs $100 for that week. Which description fits?",
+      "options": [
+        "A $900 net improvement because only the receiving location matters",
+        "A $1,100 net improvement because both locations' values add",
+        "A $300 loss because transfers create no new equipment",
+        "A $600 net value improvement through reallocation"
+      ],
+      "tag": "efficiency_business_value",
+      "type": "calculation",
+      "objective": "LO2.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_efficiency_business_value",
+      "primarySkill": "efficiency_business_value",
+      "secondarySkills": [
+        "efficiency_and_value"
+      ],
+      "repairSkill": "efficiency_business_value",
+      "commonError": "confuses_activity_with_value",
+      "feedback": "The same asset creates more value elsewhere. Net improvement is 900 - 200 - 100 = $600; new production of equipment is not required.",
+      "aHash": "248735f4d906763c44ea35fffed9222453a4dbd021adc4bf480d710249f73daa"
+    },
+    {
+      "id": 224,
+      "sourceGame": "costDirective",
+      "q": "A customer values a job at $340 and the provider's reservation amount is $265. A $60 per-job tax is payable only if they trade; there are no other costs. Can a price leave both strictly better off?",
+      "options": [
+        "Yes; their combined gain after tax is $15.",
+        "No; any positive tax prevents a mutually beneficial transaction.",
+        "Yes; their combined gain after tax is $75.",
+        "No; the provider must receive the customer's full $340 value."
+      ],
+      "tag": "barriers_to_trade",
+      "type": "calculation",
+      "objective": "LO2.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_barriers_to_trade",
+      "primarySkill": "barriers_to_trade",
+      "secondarySkills": [
+        "private_gains_after_tax"
+      ],
+      "repairSkill": "barriers_to_trade",
+      "commonError": "ignores_tax_wedge",
+      "feedback": "The private gain available to divide is 340 - 265 - 60 = $15. A price splitting that gain can benefit both. Tax revenue is a transfer to government, not itself a resource loss.",
+      "aHash": "33b790700549e3b659a991c3a4ddfe96fcb2eb7d5e773e3f6090a601f22a28c2"
+    },
+    {
+      "id": 226,
+      "sourceGame": "costDirective",
+      "q": "A decentralized firm gives plant managers local purchasing authority, but bonuses depend only on plant output. Input quality problems spread across the company. What is the organizational-design issue?",
+      "options": [
+        "The company should reward local volume more strongly to offset quality losses",
+        "More local supplier information necessarily fixes the output-only reward",
+        "Local authority is paired with incentives that omit firm-wide quality effects",
+        "Centralizing purchases guarantees that all downstream costs will be counted"
+      ],
+      "tag": "organization_wealth_creation",
+      "type": "application",
+      "objective": "LO2.5",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_organization_wealth_creation",
+      "primarySkill": "organization_wealth_creation",
+      "secondarySkills": [
+        "organizational_design_wealth"
+      ],
+      "repairSkill": "organization_wealth_creation",
+      "commonError": "ignores_external_effects_inside_firm",
+      "feedback": "Organization design affects wealth creation by assigning decisions, information, and incentives. Plant-level metrics may ignore firm-wide costs.",
+      "aHash": "f9ed719c296b20c4fbc7332ac6fd242b7cedcd68284e0c1a67c4235fa903e59f"
+    },
+    {
+      "id": 229,
+      "sourceGame": "costDirective",
+      "q": "A division refuses to sell excess materials to another division because the transfer would lower its own reported inventory buffer. What is the best interpretation?",
+      "options": [
+        "Sending more valuation reports necessarily removes the inventory-bonus conflict",
+        "Internal incentives can block movement to higher-valued uses",
+        "A transfer within one company cannot change value in use",
+        "Any positive sending-division inventory value rules out a beneficial transfer"
+      ],
+      "tag": "organization_wealth_creation",
+      "type": "application",
+      "objective": "LO2.5",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_organization_wealth_creation",
+      "primarySkill": "organization_wealth_creation",
+      "secondarySkills": [
+        "organizational_design_wealth"
+      ],
+      "repairSkill": "organization_wealth_creation",
+      "commonError": "ignores_metric_incentive",
+      "feedback": "The organization can destroy value if local metrics discourage transfers that would increase total firm value.",
+      "aHash": "8b889344381a4920fd232423286e58cc6511cf7c7b122d482b0b23f4a6d4adf1"
+    },
+    {
+      "id": 236,
+      "sourceGame": "costDirective",
+      "q": "For one month, a mill's rent and supervisor pay are fixed. Its ledger is incomplete.<table><thead><tr><th scope=\"col\">Output</th><th scope=\"col\">Variable cost</th><th scope=\"col\">Total cost</th></tr></thead><tbody><tr><td>0</td><td>$0</td><td>$2,400</td></tr><tr><td>400</td><td>?</td><td>$5,600</td></tr><tr><td>600</td><td>$4,500</td><td>?</td></tr></tbody></table>What variable cost belongs in the 400-unit row?",
+      "options": [
+        "$3,200",
+        "$5,600",
+        "$2,400",
+        "$8 per unit"
+      ],
+      "tag": "fixed_variable_costs",
+      "type": "calculation",
+      "objective": "LO3.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_fixed_variable_costs",
+      "primarySkill": "fixed_variable_costs",
+      "secondarySkills": [
+        "variable_cost_calculation"
+      ],
+      "repairSkill": "fixed_variable_costs",
+      "commonError": "includes_fixed_costs",
+      "feedback": "The zero-output row reveals fixed cost of $2,400. Variable cost at 400 is 5,600 - 2,400 = $3,200. Dividing gives a per-unit amount, not the requested total.",
+      "aHash": "156bc4af87073d790d7b129e3908f47d088f03ef0277e64fe7f92b24733a7423"
+    },
+    {
+      "id": 238,
+      "sourceGame": "costDirective",
+      "q": "A manager compares two options. Option A earns $90,000 after explicit costs. Option B earns $104,000 after explicit costs. Choosing A also provides better training worth $20,000 to the manager. Which option has the higher combined financial and training value to this manager?",
+      "options": [
+        "Option B, because accounting profit is always the full economic value",
+        "Option B, because training value is not paid in cash",
+        "Option A, because $90,000 plus $20,000 in value exceeds Option B",
+        "Option A only if the training value is recorded as revenue"
+      ],
+      "tag": "opportunity_cost",
+      "type": "application",
+      "objective": "LO3.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_opportunity_cost",
+      "primarySkill": "opportunity_cost",
+      "secondarySkills": [
+        "economic_value_choice"
+      ],
+      "repairSkill": "opportunity_cost",
+      "commonError": "ignores_noncash_benefits",
+      "feedback": "Economic value includes relevant benefits and costs, not only accounting income. A's total value is $110,000.",
+      "aHash": "8049317541918f0d843095f867fe20a771c00adc74676b407f338de492c11725"
+    },
+    {
+      "id": 247,
+      "sourceGame": "costDirective",
+      "q": "For a single market day, a seller owes a $140 permit and a $260 guaranteed assistant payment regardless of meals sold. Ingredients cost $3 per meal. At 120 meals, what are total cost and total variable cost?",
+      "options": [
+        "$760 total; $620 variable",
+        "$500 total; $360 variable",
+        "$400 total; $760 variable",
+        "$760 total; $360 variable"
+      ],
+      "tag": "fixed_variable_costs",
+      "type": "calculation",
+      "objective": "LO3.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_fixed_variable_costs",
+      "primarySkill": "fixed_variable_costs",
+      "secondarySkills": [
+        "fixed_vs_variable_cost"
+      ],
+      "repairSkill": "fixed_variable_costs",
+      "commonError": "misclassifies_labor_or_permit",
+      "feedback": "The explicitly guaranteed daily commitments are fixed for this decision. Ingredients cost 120 × 3 = $360; total cost is 140 + 260 + 360 = $760.",
+      "aHash": "d2cba89ca75b0e0fa6a0a3b6ba3cc64a758b79f0358e481aafaddca5574a311b"
+    },
+    {
+      "id": 250,
+      "sourceGame": "costDirective",
+      "q": "A firm says it cannot drop a product because it carries $50,000 of allocated overhead. Dropping the product would not reduce that overhead, but would save $18,000 in avoidable costs and lose $14,000 in revenue. What should it do?",
+      "options": [
+        "Keep the product because allocated overhead is larger than avoidable cost",
+        "Keep the product because revenue is positive",
+        "Drop the product because avoidable costs exceed lost revenue by $4,000",
+        "Drop the product only if all fixed costs disappear immediately"
+      ],
+      "tag": "relevant_costs_benefits",
+      "type": "calculation",
+      "objective": "LO3.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_relevant_costs_benefits",
+      "primarySkill": "relevant_costs_benefits",
+      "secondarySkills": [
+        "avoidable_vs_unavoidable_cost"
+      ],
+      "repairSkill": "relevant_costs_benefits",
+      "commonError": "overweights_allocated_overhead",
+      "feedback": "The allocated overhead does not change. Dropping saves $18,000 and loses $14,000, so profit rises by $4,000.",
+      "aHash": "82d0986317262077b42ef08cfa515a6f94a1cbf9aca2092c0ce64545c976f0b3"
+    },
+    {
+      "id": 251,
+      "sourceGame": "costDirective",
+      "q": "A manager says, 'We already trained the staff, so we must launch the service.' Future revenue is $25,000 and future operating cost is $31,000. What is the correct decision logic?",
+      "options": [
+        "Launch because training spending should be recovered through the service",
+        "Launch because future revenue is positive",
+        "Do not launch because all trained staff are now fixed costs",
+        "Do not launch unless there are additional future benefits, because training is sunk and operations lose $6,000"
+      ],
+      "tag": "fixed_cost_fallacy",
+      "type": "trap",
+      "objective": "LO3.5",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_fixed_cost_fallacy",
+      "primarySkill": "fixed_cost_fallacy",
+      "secondarySkills": [],
+      "repairSkill": "fixed_cost_fallacy",
+      "commonError": "sunk_training_cost",
+      "feedback": "The training cost is sunk. The future operating comparison is $25,000 - $31,000 = -$6,000.",
+      "aHash": "9b04fac029ce06be69a1b6303dd64435cfb3edd37d72211db50d38b5335d50e4"
+    },
+    {
+      "id": 255,
+      "sourceGame": "costDirective",
+      "q": "An extra product sells for $48 without changing receipts from earlier units. Producing one more unit raises total cost from $7,620 to $7,655. What should the firm do for that unit?",
+      "options": [
+        "Reject it because total cost is larger than the selling price",
+        "Reject it because average cost must be falling first",
+        "Produce it only if fixed cost also rises",
+        "Produce it because marginal revenue exceeds marginal cost by $13"
+      ],
+      "tag": "mr_mc_extent_rule",
+      "type": "calculation",
+      "objective": "LO4.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_mr_mc_extent_rule",
+      "primarySkill": "mr_mc_extent_rule",
+      "secondarySkills": [
+        "mr_mc_decision"
+      ],
+      "repairSkill": "mr_mc_extent_rule",
+      "commonError": "compares_price_to_total_cost",
+      "feedback": "Marginal cost is $35 and marginal revenue is $48. Since MR > MC, the unit adds $13.",
+      "aHash": "d19850653c1d945c07e180e13251003fec1a2596308ce11ffb8ee72795fe88de"
+    },
+    {
+      "id": 257,
+      "sourceGame": "costDirective",
+      "q": "A firm can sell extra units for $22 each. An indivisible extra 100-unit batch, with no other effects, adds $2,600 to total cost. What does marginal analysis imply?",
+      "options": [
+        "Produce them because total revenue is positive",
+        "Do not produce the extra 100 units because marginal cost per unit is $26",
+        "Produce them because fixed costs are already paid",
+        "Do not produce them because average cost must equal price"
+      ],
+      "tag": "mr_mc_extent_rule",
+      "type": "calculation",
+      "objective": "LO4.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_mr_mc_extent_rule",
+      "primarySkill": "mr_mc_extent_rule",
+      "secondarySkills": [
+        "mr_mc_decision"
+      ],
+      "repairSkill": "mr_mc_extent_rule",
+      "commonError": "focuses_on_revenue_only",
+      "feedback": "Marginal cost is $2,600 / 100 = $26, which is greater than marginal revenue of $22.",
+      "aHash": "32e92905423e32e5636d06046e58574bea1acc8bfaad390d312b99ba476123fa"
+    },
+    {
+      "id": 258,
+      "sourceGame": "costDirective",
+      "q": "A rep earns $24,000 plus 4% of collected sales under A, or 16% with no salary under B. A $500 follow-up order takes extra effort and is certainly collected. Which claim correctly compares the added pay?",
+      "options": [
+        "A adds more because its guaranteed salary is larger than the order.",
+        "Both add $500 because both collect the same order.",
+        "B adds $80 versus A's $20, regardless of their current total pay.",
+        "The comparison requires including the full annual salary in the order's pay."
+      ],
+      "tag": "incentive_compensation_effort",
+      "type": "calculation",
+      "objective": "LO4.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_incentive_compensation_effort",
+      "primarySkill": "incentive_compensation_effort",
+      "secondarySkills": [
+        "marginal_incentive"
+      ],
+      "repairSkill": "incentive_compensation_effort",
+      "commonError": "confuses_total_pay_with_marginal_pay",
+      "feedback": "Marginal pay is the commission on this order: 0.16 × 500 = $80 versus 0.04 × 500 = $20. Salary changes total pay, not this increment.",
+      "aHash": "47f0230d30bf3bcb0651cf5acc814a144e4e4f903f351efbbd27d3908e8616ae"
+    },
+    {
+      "id": 261,
+      "sourceGame": "costDirective",
+      "q": "A repair shop can extend opening by one hour. Total receipts would rise from $3,900 to $4,180 and avoidable daily expenses from $2,100 to $2,340. Rent is unchanged. What does this imply?",
+      "options": [
+        "The extra hour adds $280 because rent is unchanged.",
+        "The extra hour adds $40 to profit.",
+        "The extra hour loses $240 because operating expenses rise.",
+        "The decision requires the original cost of the shop."
+      ],
+      "tag": "mr_mc_extent_rule",
+      "type": "calculation",
+      "objective": "LO4.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_mr_mc_extent_rule",
+      "primarySkill": "mr_mc_extent_rule",
+      "secondarySkills": [
+        "mr_mc_decision"
+      ],
+      "repairSkill": "mr_mc_extent_rule",
+      "commonError": "uses_revenue_change_without_cost_change",
+      "feedback": "The relevant changes are $280 revenue and $240 cost, leaving a $40 gain.",
+      "aHash": "3ec66fe47f3b2b3219c5ff5082ce80cb344e0e8b102951ebcb518791f80f6dce"
+    },
+    {
+      "id": 263,
+      "sourceGame": "costDirective",
+      "q": "Installers choose whether to spend extra time checking connections. That check reduces expected customer rework, but a bonus is paid on initial job completion. Which change most directly improves the incentive?",
+      "options": [
+        "Increase the bonus for initial completion alone.",
+        "Make the fixed daily wage higher without changing verification.",
+        "Count each return visit as another bonus-eligible completion.",
+        "Pay for verified completions after a defined rework window."
+      ],
+      "tag": "incentive_compensation_effort",
+      "type": "diagnosis",
+      "objective": "LO4.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_incentive_compensation_effort",
+      "primarySkill": "incentive_compensation_effort",
+      "secondarySkills": [
+        "marginal_incentive"
+      ],
+      "repairSkill": "incentive_compensation_effort",
+      "commonError": "raises_fixed_pay_only",
+      "feedback": "Verification ties the reward to durable completion. Paying twice for a failed installation can reward the rework the firm wants to prevent.",
+      "aHash": "b9f918b84be2612e36b8128fa2b61025dbd9fe2ca1fc7c83182c44e507b643cb"
+    },
+    {
+      "id": 264,
+      "sourceGame": "costDirective",
+      "q": "A firm sells units for $16. Output from 1,000 to 1,100 units raises total cost from $14,000 to $15,300. What is the profit effect of the extra 100 units?",
+      "options": [
+        "Profit rises by $300",
+        "Profit falls by $1,300",
+        "Profit rises by $1,600",
+        "Profit falls by $300"
+      ],
+      "tag": "mr_mc_extent_rule",
+      "type": "calculation",
+      "objective": "LO4.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_mr_mc_extent_rule",
+      "primarySkill": "mr_mc_extent_rule",
+      "secondarySkills": [
+        "mr_mc_decision"
+      ],
+      "repairSkill": "mr_mc_extent_rule",
+      "commonError": "subtracts_total_cost_not_change",
+      "feedback": "Extra revenue is 100 × $16 = $1,600. Extra cost is $1,300. Profit rises by $300.",
+      "aHash": "c792304493769e8daad3c9bebb2dd8cf9b85e6f152b0054f3497faf7c5683761"
+    },
+    {
+      "id": 266,
+      "sourceGame": "costDirective",
+      "q": "A plant considers the extra output in this schedule.<table><thead><tr><th scope=\"col\">Units</th><th scope=\"col\">Revenue</th><th scope=\"col\">Total cost</th></tr></thead><tbody><tr><td>200</td><td>$6,000</td><td>$5,000</td></tr><tr><td>250</td><td>$7,250</td><td>$6,100</td></tr></tbody></table>Which comparison identifies the profit effect of expanding?",
+      "options": [
+        "The $7,250 total revenue versus the $1,100 cost increase",
+        "The $1,250 revenue increase versus the $6,100 total cost",
+        "The $1,250 revenue increase versus the $1,100 cost increase",
+        "The original $1,000 profit versus the new $7,250 revenue"
+      ],
+      "tag": "mr_mc_extent_rule",
+      "type": "identification",
+      "objective": "LO4.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_mr_mc_extent_rule",
+      "primarySkill": "mr_mc_extent_rule",
+      "secondarySkills": [
+        "mr_mc_decision"
+      ],
+      "repairSkill": "mr_mc_extent_rule",
+      "commonError": "uses_total_or_sunk_cost",
+      "feedback": "Both sides of an extent decision must use changes over the same interval. Expansion adds $150 to profit.",
+      "aHash": "b98301005a19096afe787e2b0adeff0667ce5e095ffc35c96443a4133bce3d57"
+    },
+    {
+      "id": 268,
+      "sourceGame": "costDirective",
+      "q": "A collector receives $100 per day plus 6% of recovered balances. Spending an extra hour raises certain collections by $400 and costs the collector $18 in valued time. Which element creates a net reason to spend that hour?",
+      "options": [
+        "The $24 extra commission exceeds the $18 time cost.",
+        "The $100 fixed payment exceeds the $18 time cost.",
+        "The full $400 collection belongs to the collector.",
+        "The $18 time cost is irrelevant because it is not invoiced."
+      ],
+      "tag": "incentive_compensation_effort",
+      "type": "calculation",
+      "objective": "LO4.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_incentive_compensation_effort",
+      "primarySkill": "incentive_compensation_effort",
+      "secondarySkills": [
+        "fixed_fees_and_effort"
+      ],
+      "repairSkill": "incentive_compensation_effort",
+      "commonError": "confuses_fixed_and_marginal_pay",
+      "feedback": "Marginal commission is 0.06 × 400 = $24. Subtracting the personal time cost leaves $6; the fixed daily payment does not change.",
+      "aHash": "e04fac0f698b9df2d7ab23a0d8ecec13be6255f91a943b58971962695336cb26"
+    },
+    {
+      "id": 272,
+      "sourceGame": "costDirective",
+      "q": "Average cost is $18 at 1,000 units. The next 100 units have marginal cost of $12 each. What happens to average cost if those units are produced?",
+      "options": [
+        "Average cost falls because marginal cost is below current average cost",
+        "Average cost rises because total cost rises",
+        "Average cost stays at $18 because fixed cost is unchanged",
+        "Average cost becomes $12 because marginal cost replaces average cost"
+      ],
+      "tag": "average_vs_marginal_cost",
+      "type": "interpretation",
+      "objective": "LO4.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_average_vs_marginal_cost",
+      "primarySkill": "average_vs_marginal_cost",
+      "secondarySkills": [
+        "ac_mc_relationship"
+      ],
+      "repairSkill": "average_vs_marginal_cost",
+      "commonError": "total_cost_rises_means_ac_rises",
+      "feedback": "Total cost rises, but average cost falls because the added units cost less than the current average.",
+      "aHash": "de382cdf749d0c3bb8d352498305c2dd5b4e13b5967276635e31a2a388ec6e0f"
+    },
+    {
+      "id": 274,
+      "sourceGame": "costDirective",
+      "q": "With the same two test benches, 3 technicians complete 90 tests daily, 4 complete 124, and 5 complete 150. Which change demonstrates diminishing marginal returns?",
+      "options": [
+        "Total tests rise from 124 to 150.",
+        "Average tests per technician are positive at each staffing level.",
+        "The fifth technician adds 26 tests versus 34 from the fourth.",
+        "Five technicians use more labor than four, proving decreasing returns to scale."
+      ],
+      "tag": "diminishing_marginal_returns",
+      "type": "calculation",
+      "objective": "LO7.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_diminishing_marginal_returns",
+      "primarySkill": "diminishing_marginal_returns",
+      "secondarySkills": [],
+      "repairSkill": "diminishing_marginal_returns",
+      "commonError": "confuses_short_run_and_scale",
+      "feedback": "Marginal output falls from 124 - 90 = 34 to 150 - 124 = 26 while bench capacity stays fixed. An all-input scale comparison is not provided.",
+      "aHash": "665c92004c107e944e6f9235ce7898b183e1fff3fec00a700497fff4803c7372"
+    },
+    {
+      "id": 276,
+      "sourceGame": "costDirective",
+      "q": "A fixed plant can produce 100 units at $3,000 total cost or 150 units at $4,200. The larger plan's total cost is higher. What does the average-cost evidence show?",
+      "options": [
+        "Average cost falls from $30 to $28; total cost alone does not show unit cost.",
+        "Average cost rises by $1,200 per unit.",
+        "Marginal cost must equal the new $28 average.",
+        "This proves economies of scale from changing all inputs."
+      ],
+      "tag": "average_cost_output",
+      "type": "interpretation",
+      "objective": "LO7.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_average_cost_output",
+      "primarySkill": "average_cost_output",
+      "secondarySkills": [
+        "average_cost_output_relationship"
+      ],
+      "repairSkill": "average_cost_output",
+      "commonError": "confuses_total_and_average",
+      "feedback": "Average cost is 3,000/100 = $30 versus 4,200/150 = $28. This is a fixed-plant comparison, not proof about all-input scale changes.",
+      "aHash": "bdb6328823c2a56d9836b487cd770db11c0208c833db627bd1850cf38e760ef6"
+    },
+    {
+      "id": 280,
+      "sourceGame": "costDirective",
+      "q": "A factory keeps its hourly output, machines and input prices unchanged. As accumulated experience doubles, setup mistakes fall and unit cost drops from $75 to $60. Which explanation fits best?",
+      "options": [
+        "Learning from cumulative experience, with a 20% cost reduction",
+        "Economies of scope from producing two products",
+        "Economies of scale from a larger current production rate",
+        "Diminishing marginal returns from adding workers to fixed machines"
+      ],
+      "tag": "learning_curve",
+      "type": "calculation",
+      "objective": "LO7.6",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_learning_curve",
+      "primarySkill": "learning_curve",
+      "secondarySkills": [],
+      "repairSkill": "learning_curve",
+      "commonError": "confuses_learning_with_scale",
+      "feedback": "The controlled current production rate separates experience from scale. Cost falls 15/75 = 20%; the new cost is 80% of the old cost.",
+      "aHash": "3487c8dc30ca66764ebb999ebcac64fcac64cb4e04a47b2cff8bb7236a2a9fbc"
+    },
+    {
+      "id": 284,
+      "sourceGame": "costDirective",
+      "q": "Only four plant sizes are feasible. Their long-run cost data are shown.<table><thead><tr><th scope=\"col\">Output</th><th scope=\"col\">Total cost</th></tr></thead><tbody><tr><td>1000</td><td>$18,000</td></tr><tr><td>2000</td><td>$28,000</td></tr><tr><td>3000</td><td>$36,000</td></tr><tr><td>4000</td><td>$48,000</td></tr></tbody></table>What is minimum efficient scale among these plans?",
+      "options": [
+        "3,000 units",
+        "1,000 units",
+        "2,000 units",
+        "4,000 units"
+      ],
+      "tag": "minimum_efficient_scale",
+      "type": "calculation",
+      "objective": "LO7.5",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_minimum_efficient_scale",
+      "primarySkill": "minimum_efficient_scale",
+      "secondarySkills": [
+        "average_cost_output"
+      ],
+      "repairSkill": "minimum_efficient_scale",
+      "commonError": "misreads_flat_ac",
+      "feedback": "Average costs are $18, $14, $12 and $12. The smallest output attaining the minimum is 3,000.",
+      "aHash": "996adbd19abe24894b643215a7fbd0081f39fe937dc887b07af9ba44195a7774"
+    },
+    {
+      "id": 285,
+      "sourceGame": "costDirective",
+      "q": "Plant A increases labor and machines by 40% and output by 40%. Plant B holds machines fixed while extra workers add progressively less output. Which classification is appropriate?",
+      "options": [
+        "A: increasing returns to scale; B: economies of scope",
+        "A: constant returns to scale; B: diminishing marginal returns",
+        "A: diminishing marginal returns; B: constant returns to scale",
+        "A and B: decreasing returns to scale"
+      ],
+      "tag": "returns_to_scale",
+      "type": "identification",
+      "objective": "LO7.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_returns_to_scale",
+      "primarySkill": "returns_to_scale",
+      "secondarySkills": [],
+      "repairSkill": "returns_to_scale",
+      "commonError": "confuses_output_growth_with_increasing_returns",
+      "feedback": "A changes every input proportionally with proportional output. B varies labor against fixed machines. The relevant comparison differs between the two.",
+      "aHash": "aab0a00cbed167db346977a576d12700a5f0dc18667213003b8c21cc24c13e47"
+    },
+    {
+      "id": 287,
+      "sourceGame": "costDirective",
+      "q": "A field-service firm compares equal outputs: water testing alone costs $44,000, soil testing alone $38,000, and both together $70,000 including coordination. Which interpretation fits?",
+      "options": [
+        "This proves increasing returns to scale in a single product.",
+        "Joint provision costs $70,000 more than separate provision.",
+        "Learning is proven because the combined cost is lower.",
+        "Joint provision saves $12,000 through economies of scope."
+      ],
+      "tag": "economies_of_scope",
+      "type": "calculation",
+      "objective": "LO7.7",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_economies_of_scope",
+      "primarySkill": "economies_of_scope",
+      "secondarySkills": [],
+      "repairSkill": "economies_of_scope",
+      "commonError": "confuses_scope_and_scale",
+      "feedback": "Joint cost is less than the sum of separate costs by 44,000 + 38,000 - 70,000 = $12,000. The comparison is across products, not cumulative experience or a proportional input expansion.",
+      "aHash": "c4bd03452486c593e3f0c4332eaae41590d06084b889a1aaee81d793b8ee03d2"
+    },
+    {
+      "id": 303,
+      "sourceGame": "costDirective",
+      "q": "A worker can spend two hours improving documentation. It reduces coworkers' future effort by six hours, but brings her no pay or recognition and costs her $50 in valued time. Which interpretation best separates private and organizational objectives?",
+      "options": [
+        "Declining proves she does not understand the six-hour saving.",
+        "A rational worker must treat coworkers' saved time as her own reward.",
+        "The firm should count only the worker's pay because time lacks economic value.",
+        "Declining can be privately rational even when the documentation creates more firm value."
+      ],
+      "tag": "rational_actor_paradigm",
+      "type": "interpretation",
+      "objective": "LO1.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_rational_actor_paradigm",
+      "primarySkill": "rational_actor_paradigm",
+      "secondarySkills": [
+        "rational_actor_reasoning"
+      ],
+      "repairSkill": "rational_actor_paradigm",
+      "commonError": "confuses_rational_with_always_cooperative",
+      "feedback": "Her private effort cost is $50 with no stated private return. The saved coworker time may create firm value, but its dollar amount is unspecified; she need not privately capture it.",
+      "aHash": "179f3574006098de3104510c88545f41e414a81dfe7e881df912494d335017ea"
+    },
+    {
+      "id": 307,
+      "sourceGame": "costDirective",
+      "q": "A sales bonus is based on total regional revenue, but individual employees have little control over regional demand. What is the strongest concern?",
+      "options": [
+        "A high regional total guarantees each employee contributed additional effort",
+        "A larger regional bonus necessarily fixes the lack of individual influence",
+        "A regional measure perfectly isolates each employee’s effort",
+        "Employees may have little control over the measured outcome, weakening its incentive signal"
+      ],
+      "tag": "incentive_system_design",
+      "type": "trap",
+      "objective": "LO1.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_incentive_system_design",
+      "primarySkill": "incentive_system_design",
+      "secondarySkills": [
+        "incentive_alignment",
+        "incentive_components"
+      ],
+      "repairSkill": "incentive_system_design",
+      "commonError": "ignores_controllability",
+      "feedback": "Incentives work best when performance measures are clear, observable, and meaningfully influenced by the worker.",
+      "aHash": "be9f6c3b0d0bd8d310932a38d27df2c64ecad954d431b5b9beb1a6c3d9bb60eb"
+    },
+    {
+      "id": 310,
+      "sourceGame": "costDirective",
+      "q": "A firm decentralizes pricing decisions to local managers but judges them only on revenue, not profit. What is the likely risk?",
+      "options": [
+        "More frequent revenue reports remove the incentive conflict",
+        "Local demand information necessarily makes revenue a sufficient performance measure",
+        "Managers may cut prices to raise revenue while reducing profit",
+        "Decentralization itself guarantees that all incremental costs enter pricing"
+      ],
+      "tag": "organization_design_info_incentives",
+      "type": "trap",
+      "objective": "LO1.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_organization_design_info_incentives",
+      "primarySkill": "organization_design_info_incentives",
+      "secondarySkills": [
+        "information_incentive_alignment",
+        "organization_design"
+      ],
+      "repairSkill": "organization_design_info_incentives",
+      "commonError": "uses_wrong_performance_measure",
+      "feedback": "Decision rights and performance measures must align with the objective being pursued.",
+      "aHash": "3eaed6cebc1b1bee8457d02f8e72c8ed885b42e73dabd584ae4d0f5f409fbda8"
+    },
+    {
+      "id": 319,
+      "sourceGame": "costDirective",
+      "q": "Equipment is worth $8,000 to its current owner and $11,000 to a buyer if its condition is verified. Without verification, the buyer offers only $6,000 because of uncertainty. What can block the higher-valued use?",
+      "options": [
+        "A higher potential buyer value guarantees a trade at the current $6,000 offer",
+        "The owner’s original purchase price necessarily exceeds the buyer’s value",
+        "Any positive buyer uncertainty means the equipment creates no value",
+        "Unverifiable condition can prevent a price both parties accept"
+      ],
+      "tag": "barriers_to_trade",
+      "type": "diagnosis",
+      "objective": "LO2.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_barriers_to_trade",
+      "primarySkill": "barriers_to_trade",
+      "secondarySkills": [
+        "information_barriers",
+        "impediments_to_trade"
+      ],
+      "repairSkill": "barriers_to_trade",
+      "commonError": "confuses_trade_with_barrier",
+      "feedback": "The current offer is below the owner’s reservation value. Information that verifies condition may enable a mutually beneficial agreement.",
+      "aHash": "4aaaed6f7aca6f0d0fc605ca9a7444e2afa692453b86bffba863765d58aa1817"
+    },
+    {
+      "id": 325,
+      "sourceGame": "costDirective",
+      "q": "A manager notices unused warehouse space could be rented for $12,000 net per month or used for a project earning $9,000 per month after explicit costs. With no other differences, what should the manager infer?",
+      "options": [
+        "The project creates $9,000 of economic profit because explicit costs are covered",
+        "Using the space internally has a $12,000 opportunity cost",
+        "The rental option is irrelevant because no cash is paid to use owned space",
+        "The space has no value unless it appears as depreciation expense"
+      ],
+      "tag": "value_gap_opportunities",
+      "type": "trap",
+      "objective": "LO2.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_value_gap_opportunities",
+      "primarySkill": "value_gap_opportunities",
+      "secondarySkills": [
+        "LO3.1",
+        "opportunity_cost",
+        "money_making_opportunities"
+      ],
+      "repairSkill": "value_gap_opportunities",
+      "commonError": "ignores_owned_asset_opportunity_cost",
+      "feedback": "The forgone rental income is an opportunity cost of using the space internally.",
+      "aHash": "7579f0c5ceb003909e181e701e7f3635f423ccc8bd02c31d6fc12bae5362d03b"
+    },
+    {
+      "id": 360,
+      "sourceGame": "costDirective",
+      "q": "A plant holds equipment fixed.<table><thead><tr><th scope=\"col\">Workers</th><th scope=\"col\">Units per day</th></tr></thead><tbody><tr><td>2</td><td>60</td></tr><tr><td>3</td><td>105</td></tr><tr><td>4</td><td>140</td></tr><tr><td>5</td><td>165</td></tr></tbody></table>When do diminishing marginal returns first appear in the observed additions?",
+      "options": [
+        "With the fourth worker, whose 35 units are below the third's 45",
+        "With the third worker, because total output is only 105",
+        "With the fifth worker, because only then does total output fall",
+        "With no worker, because output rises throughout"
+      ],
+      "tag": "diminishing_marginal_returns",
+      "type": "identification",
+      "objective": "LO7.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_diminishing_marginal_returns",
+      "primarySkill": "diminishing_marginal_returns",
+      "secondarySkills": [
+        "diminishing_returns"
+      ],
+      "repairSkill": "diminishing_marginal_returns",
+      "commonError": "confuses_short_run_with_scale",
+      "feedback": "The third, fourth and fifth workers add 45, 35 and 25 units. The first observed decline is at the fourth worker; total output need not fall.",
+      "aHash": "de2e6a48a256a9fbdb1bdd0c712a967fca2a284151830548b677c8217c01458f"
+    },
+    {
+      "id": 365,
+      "sourceGame": "costDirective",
+      "q": "A supplier wins a bid by pricing below average cost at low volume, expecting the buyer's volume to grow. Which cost-curve belief could justify the bid?",
+      "options": [
+        "Any lower average cost later is enough, regardless of volumes and early losses",
+        "Expected gains at later volume exceed early losses and other account costs",
+        "A low initial price establishes that marginal cost is zero",
+        "More units guarantee that every future contract price covers cost"
+      ],
+      "tag": "cost_curves_contracts",
+      "type": "application",
+      "objective": "LO7.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_cost_curves_contracts",
+      "primarySkill": "cost_curves_contracts",
+      "secondarySkills": [
+        "cost_curves_in_contracts"
+      ],
+      "repairSkill": "cost_curves_contracts",
+      "commonError": "ignores_scale_expectation",
+      "feedback": "Lower average cost at higher volume can support the bid only if expected later gains cover early losses and other relevant costs over the account’s life.",
+      "aHash": "a2b34b959cc4dd6b3a64e277315ea0873e79a875fe5a4fc77d29d8f6270974b1"
+    },
+    {
+      "id": 368,
+      "sourceGame": "costDirective",
+      "q": "A manager says falling average cost means every extra unit is profitable. What is the problem with that claim?",
+      "options": [
+        "Falling average cost does not guarantee marginal revenue exceeds marginal cost",
+        "Falling average cost proves every selling price covers incremental cost",
+        "The lowest average cost always identifies the largest total profit",
+        "Current average cost is the relevant cost of every additional unit"
+      ],
+      "tag": "average_cost_output",
+      "type": "trap",
+      "objective": "LO7.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_average_cost_output",
+      "primarySkill": "average_cost_output",
+      "secondarySkills": [
+        "LO4.3",
+        "average_vs_marginal"
+      ],
+      "repairSkill": "average_cost_output",
+      "commonError": "confuses_ac_with_profit_rule",
+      "feedback": "Profitability of extra units depends on marginal revenue and marginal cost, not average cost alone.",
+      "aHash": "5434ea54c30d2e7035dec5642fde027445a01d925b27c7b62af0ae17a41ade1f"
+    },
+    {
+      "id": 373,
+      "sourceGame": "costDirective",
+      "q": "Why can minimum efficient scale matter for market structure?",
+      "options": [
+        "A large MES guarantees enough demand for every entrant to operate efficiently",
+        "A large MES relative to demand may support only a few producers at minimum unit cost",
+        "Market size is irrelevant because a firm can allocate fixed costs differently",
+        "A small MES implies that all firms must merge to lower unit cost"
+      ],
+      "tag": "minimum_efficient_scale",
+      "type": "application",
+      "objective": "LO7.5",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_minimum_efficient_scale",
+      "primarySkill": "minimum_efficient_scale",
+      "secondarySkills": [],
+      "repairSkill": "minimum_efficient_scale",
+      "commonError": "ignores_market_size",
+      "feedback": "A large MES relative to market demand can support fewer efficient producers.",
+      "aHash": "761dde6ea75f64794249c26ebf797a3d429f8ef6d1e134671179cb800cf6a141"
+    },
+    {
+      "id": 377,
+      "sourceGame": "costDirective",
+      "q": "A supplier quotes a high first-year price for a new component but expects cost to fall with cumulative production. What contract term directly addresses the learning issue?",
+      "options": [
+        "A permanent price based only on first-unit cost",
+        "A scheduled price reduction tied to cumulative volume milestones",
+        "A discount tied solely to calendar time regardless of accumulated experience",
+        "A price reduction tied only to current plant size without cumulative experience"
+      ],
+      "tag": "learning_curve",
+      "type": "application",
+      "objective": "LO7.6",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_learning_curve",
+      "primarySkill": "learning_curve",
+      "secondarySkills": [
+        "LO7.2",
+        "learning_curve_contracts",
+        "learning_curves"
+      ],
+      "repairSkill": "learning_curve",
+      "commonError": "ignores_learning_in_contract",
+      "feedback": "When learning lowers cost, contracts can share expected cost reductions over time.",
+      "aHash": "20a2a4b24be7e6200ccf4ab196a10c8e1faca5ec12128dee8a7ea0bceec96d1d"
+    },
+    {
+      "id": 382,
+      "sourceGame": "costDirective",
+      "q": "A manager keeps a product line because it covers allocated overhead, but dropping it would free workers for a project with higher contribution. What should be compared?",
+      "options": [
+        "The product line's allocated overhead versus its accounting revenue",
+        "The product line's original launch cost versus current sales",
+        "The product line's contribution versus the best alternative use of the workers",
+        "The number of employees assigned to each project"
+      ],
+      "tag": "opportunity_cost",
+      "type": "integration",
+      "objective": "LO3.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_opportunity_cost",
+      "primarySkill": "opportunity_cost",
+      "secondarySkills": [
+        "LO3.2"
+      ],
+      "repairSkill": "opportunity_cost",
+      "commonError": "ignores_alternative_use",
+      "feedback": "The best alternative use of scarce resources is an opportunity cost of keeping the product line.",
+      "aHash": "4e77040c163861c961efc38db104a11d9fd77640489fde6b4eb727ce8f720941"
+    },
+    {
+      "id": 385,
+      "sourceGame": "costDirective",
+      "q": "A supplier's marginal cost is low at current volume but rises sharply after capacity is reached. A buyer wants a contract with unlimited units at the current price. What is the supplier's concern?",
+      "options": [
+        "Current average cost is necessarily the cost of every future unit",
+        "Additional units may cost more than the quoted price once capacity is strained",
+        "A larger order guarantees falling unit cost at every quantity",
+        "Only already-committed fixed costs can change when capacity is exceeded"
+      ],
+      "tag": "cost_curves_contracts",
+      "type": "integration",
+      "objective": "LO7.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_costDirective_cost_curves_contracts",
+      "primarySkill": "cost_curves_contracts",
+      "secondarySkills": [
+        "LO4.1",
+        "cost_curves_in_contracts"
+      ],
+      "repairSkill": "cost_curves_contracts",
+      "commonError": "ignores_capacity_costs",
+      "feedback": "Contract terms should account for how marginal cost changes when output approaches capacity.",
+      "aHash": "c90105c8a628276f8ead02dab707fae8c3e181ce4af3ddd3a22a424894aad712"
     }
   ],
   "hard": [
-    {
-      "id": 200,
-      "sourceGame": "costDirective",
-      "q": "A distribution center has late shipments, overtime spikes, and rising complaints. Before recommending automation, what should the manager do first?",
-      "options": [
-        "Define the decision problem by identifying objectives, constraints, information, incentives, and alternatives",
-        "Compare automation vendors and choose the lowest-cost proposal",
-        "Ask employees which department should receive the most blame",
-        "Cut overtime immediately and then observe whether complaints fall"
-      ],
-      "tag": "problem_solving_steps",
-      "type": "application",
-      "objective": "LO1.1",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_problem_solving_steps",
-      "primarySkill": "problem_solving_steps",
-      "secondarySkills": [],
-      "repairSkill": "problem_solving_steps",
-      "commonError": "jumps_to_solution",
-      "feedback": "Hard problem solving begins by structuring the decision. A proposed fix comes after the objective, constraints, incentives, information, and alternatives are clear.",
-      "aHash": "17995d6b8eee15ff64487e1fce3b6ee45658c85af066a07745bbac06b0be0704"
-    },
     {
       "id": 201,
       "sourceGame": "costDirective",
@@ -4191,76 +4856,6 @@ const questionBanks = {
       "commonError": "focuses_on_blame",
       "feedback": "Both the information available and the rewarded measure may favor departures over successful delivery. Investigating both is more informative than refining the same proxy.",
       "aHash": "4c3a6292f4448ac36ebdec5fb2b5ed3510d4456cd78fcb23c7443c097def2ab1"
-    },
-    {
-      "id": 202,
-      "sourceGame": "costDirective",
-      "q": "An analyst is paid for avoiding budget overruns. She declines a trial costing $4,000 that is expected to save the firm $7,000; savings are credited to another team. Which inference is justified?",
-      "options": [
-        "Her choice proves she believes the expected savings are zero.",
-        "Rational behavior requires her to maximize the firm's net savings.",
-        "Her choice may serve her rewarded objective while reducing firm value.",
-        "A trial that increases current spending cannot have economic value."
-      ],
-      "tag": "rational_actor_paradigm",
-      "type": "trap",
-      "objective": "LO1.2",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_rational_actor_paradigm",
-      "primarySkill": "rational_actor_paradigm",
-      "secondarySkills": [],
-      "repairSkill": "rational_actor_paradigm",
-      "commonError": "confuses_rational_with_loyal",
-      "feedback": "The trial's expected net gain is $3,000, but the analyst's measure counts its expense without its benefit. The behavior can be privately rational.",
-      "aHash": "59883f055f849bb2edeed90af4eb0251a8cdc41e5872adffd2f538a977f1f0b2"
-    },
-    {
-      "id": 203,
-      "sourceGame": "costDirective",
-      "q": "A sales team is paid only for total revenue. Discounts rise sharply, but unit sales also rise. What should a rational-actor diagnosis emphasize?",
-      "options": [
-        "The sales team is behaving irrationally because discounts reduce company profit",
-        "The firm should assume the discounts are harmless because revenue increased",
-        "The problem is solved if managers remind workers that profit matters",
-        "The compensation rule rewards sales volume or revenue even when discounts reduce profit"
-      ],
-      "tag": "rational_actor_paradigm",
-      "type": "application",
-      "objective": "LO1.2",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_rational_actor_incentives",
-      "primarySkill": "rational_actor_paradigm",
-      "secondarySkills": [
-        "rational_actor_incentives"
-      ],
-      "repairSkill": "rational_actor_paradigm",
-      "commonError": "ignores_incentive_response",
-      "feedback": "The team may be acting rationally under the plan it was given. The incentive pays for revenue, not necessarily profitable revenue.",
-      "aHash": "23d5bef92c7b1164d108d0a3a4f635e6291e7ac8bd4378f3429cf447d421cf9d"
-    },
-    {
-      "id": 204,
-      "sourceGame": "costDirective",
-      "q": "A bonus pays warehouse teams for items packed per hour. Accuracy falls. Which missing incentive-system component is most likely causing the problem?",
-      "options": [
-        "The metric rewards speed without also rewarding accuracy or penalizing errors",
-        "The bonus is too transparent, so workers understand how to earn it",
-        "The plan includes a measurable performance target instead of subjective ratings",
-        "The firm tied rewards to a specific behavior rather than seniority"
-      ],
-      "tag": "incentive_system_design",
-      "type": "application",
-      "objective": "LO1.3",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_incentive_design",
-      "primarySkill": "incentive_system_design",
-      "secondarySkills": [
-        "incentive_design"
-      ],
-      "repairSkill": "incentive_system_design",
-      "commonError": "single_metric_tunnel_vision",
-      "feedback": "A good incentive system needs measures that match the desired behavior. A speed-only metric can create error incentives.",
-      "aHash": "c3e7ca6cbe0bcfdd864070a4a1a35aaa8211bc31484c8a4e859dee852c411e56"
     },
     {
       "id": 205,
@@ -4287,103 +4882,6 @@ const questionBanks = {
       "aHash": "ef9c7f457e2d72350c1a1844ce7b706350951d7384b0b869db6d424e83de6f07"
     },
     {
-      "id": 206,
-      "sourceGame": "costDirective",
-      "q": "A restaurant gives kitchen managers full authority over staffing but no information about hourly demand patterns. What organizational-design problem is present?",
-      "options": [
-        "The restaurant gives managers too much information about daily operations",
-        "The managers are irrational because authority should overcome uncertainty",
-        "Decision rights are assigned without the information needed to make good decisions",
-        "The firm should centralize all decisions even if headquarters lacks local knowledge"
-      ],
-      "tag": "organization_design_info_incentives",
-      "type": "application",
-      "objective": "LO1.4",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_information_and_decision_rights",
-      "primarySkill": "organization_design_info_incentives",
-      "secondarySkills": [
-        "information_and_decision_rights",
-        "well_designed_organization"
-      ],
-      "repairSkill": "organization_design_info_incentives",
-      "commonError": "separates_authority_from_information",
-      "feedback": "A well-designed organization places decisions with people who have both the information and incentives to act well.",
-      "aHash": "b9a811fff7c8ea25c792b05bbd4c38155b4cf388e3a817d09bd244ebe2a58459"
-    },
-    {
-      "id": 207,
-      "sourceGame": "costDirective",
-      "q": "A firm lets regional managers choose suppliers. The managers are evaluated only on lowest purchase price, not quality failures. Which organizational element is misaligned?",
-      "options": [
-        "Information is too local, so headquarters should ignore supplier performance",
-        "The decision right is worthless because supplier quality cannot be measured",
-        "The firm has too many alternatives and should use only one supplier",
-        "Incentives reward a narrow cost measure instead of the firm's broader performance objective"
-      ],
-      "tag": "organization_design_info_incentives",
-      "type": "application",
-      "objective": "LO1.4",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_well_designed_organization",
-      "primarySkill": "organization_design_info_incentives",
-      "secondarySkills": [
-        "well_designed_organization"
-      ],
-      "repairSkill": "organization_design_info_incentives",
-      "commonError": "ignores_incentive_alignment",
-      "feedback": "Supplier decisions affect price and quality. Incentives should reflect the full objective, not just the purchase price.",
-      "aHash": "22987e3de6dbf43dbba2b61167137f567415fb0c91add187a5be722e732ec1c9"
-    },
-    {
-      "id": 208,
-      "sourceGame": "costDirective",
-      "q": "A buyer selects a component priced $6 lower, but the choice adds $9 of expected rework per component. The buyer sees rework reports and is paid on invoice savings. Which diagnosis fits?",
-      "options": [
-        "The information exists, but the rewarded measure favors the costlier choice.",
-        "The main problem is missing rework information.",
-        "The component reduces firm cost because the invoice is lower.",
-        "Delegating purchasing is sufficient to align the buyer's objective."
-      ],
-      "tag": "managerial_problem_diagnosis",
-      "type": "diagnosis",
-      "objective": "LO1.5",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_diagnostic_questions",
-      "primarySkill": "managerial_problem_diagnosis",
-      "secondarySkills": [
-        "diagnostic_questions"
-      ],
-      "repairSkill": "managerial_problem_diagnosis",
-      "commonError": "rewards_invoice_savings_while_ignoring_known_rework_cost",
-      "feedback": "The firm spends $3 more per component overall. Existing information does not fix a bonus that excludes rework.",
-      "aHash": "c52fe4b1267948fd9f4a839419c86342af969db8811016e7d52b8f4a405022dd"
-    },
-    {
-      "id": 209,
-      "sourceGame": "costDirective",
-      "q": "A manager says, 'The plan failed, so the analyst must have been careless.' What question would better fit the problem-solving framework?",
-      "options": [
-        "How can the analyst be replaced before the next review meeting?",
-        "What information and incentives did the analyst have when choosing the plan?",
-        "Which completed report can be used to justify the original plan?",
-        "Can the failed plan be reclassified as a learning expense?"
-      ],
-      "tag": "managerial_problem_diagnosis",
-      "type": "trap",
-      "objective": "LO1.5",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_diagnostic_questions",
-      "primarySkill": "managerial_problem_diagnosis",
-      "secondarySkills": [
-        "diagnostic_questions"
-      ],
-      "repairSkill": "managerial_problem_diagnosis",
-      "commonError": "blame_instead_of_diagnosis",
-      "feedback": "Managerial diagnosis looks at the decision environment, not just the person who can be blamed after the fact.",
-      "aHash": "1323e74fffc648e328d61c77f494fbf4c42f5e4bad4768c54114bdae9e82d23c"
-    },
-    {
       "id": 210,
       "sourceGame": "costDirective",
       "q": "Maintenance staff lose a bonus whenever they log equipment downtime. After the rule starts, logged downtime falls but emergency repair purchases rise. Which interpretation is best supported?",
@@ -4394,7 +4892,7 @@ const questionBanks = {
         "The bonus cannot affect reporting because it does not pay for repairs."
       ],
       "tag": "rational_actor_paradigm",
-      "type": "application",
+      "type": "diagnosis",
       "objective": "LO1.2",
       "difficulty": "hard",
       "conceptCluster": "hard_costDirective_rational_actor_incentives",
@@ -4406,30 +4904,6 @@ const questionBanks = {
       "commonError": "ignores_reporting_incentives",
       "feedback": "The incentive changes the cost of revealing information. The two indicators warrant checking reporting and actual reliability without assuming dishonesty is proven.",
       "aHash": "eee4dc892c988697e5e428deedfe666ffe7bd5026fde0ee6bba2de4801ff5947"
-    },
-    {
-      "id": 211,
-      "sourceGame": "costDirective",
-      "q": "A rental manager can cut cleaning expense by $400, but doing so is expected to cause $900 in refund claims. Which bonus measure best supports profitable service?",
-      "options": [
-        "Rental revenue before refunds",
-        "Cleaning expense per booking alone",
-        "Number of bookings accepted before cleaning",
-        "Rental contribution after cleaning and attributable refund costs"
-      ],
-      "tag": "incentive_system_design",
-      "type": "application",
-      "objective": "LO1.3",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_incentive_design",
-      "primarySkill": "incentive_system_design",
-      "secondarySkills": [
-        "incentive_design"
-      ],
-      "repairSkill": "incentive_system_design",
-      "commonError": "rewards_activity_not_value",
-      "feedback": "The apparent saving reduces expected contribution by $500. A measure including both effects aligns the cleaning choice with the objective.",
-      "aHash": "a8e130876c1a9ef578dce71c6b6f9161b43f2fb199f73f1641d0c4ec7b02fe9b"
     },
     {
       "id": 212,
@@ -4454,30 +4928,6 @@ const questionBanks = {
       "commonError": "overcorrects_to_centralization",
       "feedback": "Local knowledge is useful, but branches also need service-cost information and a reason to use it. Each partial fix leaves a key problem unresolved.",
       "aHash": "a4f9389ddfef3509927186c062ddbb91f51c3f2222089231215b1ebdf48acb0f"
-    },
-    {
-      "id": 213,
-      "sourceGame": "costDirective",
-      "q": "A manager choosing among three software systems should ignore which item when applying a structured decision process?",
-      "options": [
-        "The objective the new system is supposed to achieve",
-        "The amount already spent on a failed software system that cannot be recovered",
-        "The feasible alternatives that can still be chosen",
-        "The constraints on implementation time and staff capacity"
-      ],
-      "tag": "problem_solving_steps",
-      "type": "trap",
-      "objective": "LO1.1",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_problem_solving_steps",
-      "primarySkill": "problem_solving_steps",
-      "secondarySkills": [
-        "sunk_costs"
-      ],
-      "repairSkill": "problem_solving_steps",
-      "commonError": "includes_sunk_cost",
-      "feedback": "The problem should be framed around objectives, alternatives, information, constraints, and incentives. Unrecoverable past spending should not drive the current choice.",
-      "aHash": "3a8870c2dc0da10d7f57ac5d0f568899c3a38c380b0fdbe6d1deb6c0e0a8a5b2"
     },
     {
       "id": 214,
@@ -4528,78 +4978,6 @@ const questionBanks = {
       "aHash": "bc5c80402d2fd50185cd1747db8c25765028cf69fc71162a549703226e62f252"
     },
     {
-      "id": 216,
-      "sourceGame": "costDirective",
-      "q": "A tool-rental rule sets a daily maximum of $24, below the stated clearing price of $32. At $24, 180 rentals are requested and 125 are offered. Which conclusion follows without predicting behavior at other prices?",
-      "options": [
-        "There is a shortage of 55 rentals at the controlled price.",
-        "There is a surplus of 55 rentals at the controlled price.",
-        "Exactly 180 rentals will occur because buyers request them.",
-        "Exactly 55 rentals would be added if the maximum rose by $1."
-      ],
-      "tag": "barriers_to_trade",
-      "type": "application",
-      "objective": "LO2.2",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_higher_valued_use",
-      "primarySkill": "barriers_to_trade",
-      "secondarySkills": [
-        "higher_valued_use"
-      ],
-      "repairSkill": "barriers_to_trade",
-      "commonError": "ignores_opportunity_value",
-      "feedback": "The stated quantity gap is 180 - 125 = 55 unfilled requests. The problem does not provide responses to alternative prices.",
-      "aHash": "a5b8dd4f58e2e31daa0295648754639ce25140eed947b7230afe8417c21c8058"
-    },
-    {
-      "id": 217,
-      "sourceGame": "costDirective",
-      "q": "A city requires a minimum of $46 for an equipment rental; the stated clearing price is $38. At $46, owners offer 150 rentals and customers request 105. Which outcome can be established from those figures?",
-      "options": [
-        "45 customer requests lack an offered rental at that price.",
-        "45 offered rentals have no matching request at that price.",
-        "All 150 rentals occur because the price floor binds.",
-        "The 45 unmatched rentals must be sold illegally below the floor."
-      ],
-      "tag": "barriers_to_trade",
-      "type": "application",
-      "objective": "LO2.2",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_barriers_to_asset_movement",
-      "primarySkill": "barriers_to_trade",
-      "secondarySkills": [
-        "barriers_to_asset_movement"
-      ],
-      "repairSkill": "barriers_to_trade",
-      "commonError": "treats_barrier_as_value",
-      "feedback": "Offered rentals exceed requests by 45. A surplus follows numerically; an illegal market is possible but is not guaranteed by those figures.",
-      "aHash": "b5e93382f526f372e4e2f74c9d3ac61be986acb3f4903531ec0884df6736d3a1"
-    },
-    {
-      "id": 218,
-      "sourceGame": "costDirective",
-      "q": "A packing redesign saves $2 in materials per order but adds $3 in expected damage costs. Delivery value to customers is unchanged. What does this show?",
-      "options": [
-        "Resource efficiency improves by $2 because materials are the targeted input.",
-        "Resource cost falls by $5 because both changes concern the same order.",
-        "The measured material saving conceals a $1 increase in resource cost per order.",
-        "The redesign has no efficiency effect unless the sale price changes."
-      ],
-      "tag": "efficiency_business_value",
-      "type": "application",
-      "objective": "LO2.3",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_efficiency_and_value",
-      "primarySkill": "efficiency_business_value",
-      "secondarySkills": [
-        "efficiency_and_value"
-      ],
-      "repairSkill": "efficiency_business_value",
-      "commonError": "confuses_efficiency_with_guaranteed_profit",
-      "feedback": "With customer value unchanged, total relevant resource cost rises by 3 - 2 = $1. A lower expense line alone is not evidence of efficiency.",
-      "aHash": "13651d78ca2eb4d31a14edaf76d6c2c20823493beac920fd469fe9e16cc42d97"
-    },
-    {
       "id": 219,
       "sourceGame": "costDirective",
       "q": "A print shop has a vacant Saturday. A club offers $1,900 for a batch; paper and hourly labor cost $1,100, and accepting requires a $250 cleaning visit. The monthly lease is already committed. What opportunity is available?",
@@ -4625,30 +5003,6 @@ const questionBanks = {
       "aHash": "f66594a8591d2a5660d3004377acd74379290b39bc053567ee7119cdf834f7c9"
     },
     {
-      "id": 220,
-      "sourceGame": "costDirective",
-      "q": "A buyer values a used machine at $80,000. The seller values keeping it at $62,000. Moving it requires $7,000 in shipping and paperwork. Is there a wealth-creating transaction?",
-      "options": [
-        "Yes, because net surplus is $11,000 after transaction costs",
-        "Yes, because the buyer's value is positive before transaction costs",
-        "No, because transaction costs make every exchange inefficient",
-        "No, because the seller's value must be greater than the buyer's value"
-      ],
-      "tag": "voluntary_transactions_surplus",
-      "type": "calculation",
-      "objective": "LO2.1",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_transaction_costs_surplus",
-      "primarySkill": "voluntary_transactions_surplus",
-      "secondarySkills": [
-        "transaction_costs_surplus"
-      ],
-      "repairSkill": "voluntary_transactions_surplus",
-      "commonError": "ignores_transaction_costs",
-      "feedback": "Net surplus is $80,000 - $62,000 - $7,000 = $11,000, so a transaction can create wealth.",
-      "aHash": "06909fef722d176940d4d8f16327446de25592a75509433d6e84aa83bd342666"
-    },
-    {
       "id": 221,
       "sourceGame": "costDirective",
       "q": "Before a per-unit tax, customers paid $50. Afterward they pay $54, sellers retain $47, and 120 units sell. Which statement correctly assigns the tax?",
@@ -4658,17 +5012,17 @@ const questionBanks = {
         "Buyers bear $4 per unit; sellers bear $3; revenue is $480.",
         "Buyers bear $54 per unit; sellers bear $47; revenue is $120."
       ],
-      "tag": "barriers_to_trade",
-      "type": "application",
+      "tag": "tax_wedge_and_trade",
+      "type": "multi-step",
       "objective": "LO2.2",
       "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_internal_asset_allocation",
-      "primarySkill": "barriers_to_trade",
+      "conceptCluster": "hard_costDirective_tax_wedge_and_trade",
+      "primarySkill": "tax_wedge_and_trade",
       "secondarySkills": [
-        "internal_asset_allocation"
+        "barriers_to_trade"
       ],
-      "repairSkill": "barriers_to_trade",
-      "commonError": "ignores_internal_information",
+      "repairSkill": "tax_wedge_and_trade",
+      "commonError": "confuses_price_change_with_tax_wedge",
       "feedback": "The buyer's price rises $4 and the seller's receipt falls $3. The $7 wedge on 120 actual sales produces $840 in tax revenue.",
       "aHash": "6557023ab1eda4e59cb720e61a76fe5c02e52fab06e14c195b6c6c684e4b040f"
     },
@@ -4697,54 +5051,6 @@ const questionBanks = {
       "aHash": "b538b822ae7ed7d0389dfa77f6077738b9a62e02338c0c9dd29c9ee2ae62cd09"
     },
     {
-      "id": 223,
-      "sourceGame": "costDirective",
-      "q": "A depot moves an idle scanner to a busy location. The busy location gains $900 in weekly value, the original location loses $200, and transport costs $100 for that week. Which description fits?",
-      "options": [
-        "A $900 net improvement because only the receiving location matters",
-        "A $1,100 net improvement because both locations' values add",
-        "A $300 loss because transfers create no new equipment",
-        "A $600 net value improvement through reallocation"
-      ],
-      "tag": "efficiency_business_value",
-      "type": "identification",
-      "objective": "LO2.3",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_efficiency_and_value",
-      "primarySkill": "efficiency_business_value",
-      "secondarySkills": [
-        "efficiency_and_value"
-      ],
-      "repairSkill": "efficiency_business_value",
-      "commonError": "confuses_activity_with_value",
-      "feedback": "The same asset creates more value elsewhere. Net improvement is 900 - 200 - 100 = $600; new production of equipment is not required.",
-      "aHash": "248735f4d906763c44ea35fffed9222453a4dbd021adc4bf480d710249f73daa"
-    },
-    {
-      "id": 224,
-      "sourceGame": "costDirective",
-      "q": "A customer values a job at $340 and the provider's reservation amount is $265. A $60 per-job tax is payable only if they trade; there are no other costs. Can a price leave both strictly better off?",
-      "options": [
-        "Yes; their combined gain after tax is $15.",
-        "No; any positive tax prevents a mutually beneficial transaction.",
-        "Yes; their combined gain after tax is $75.",
-        "No; the provider must receive the customer's full $340 value."
-      ],
-      "tag": "barriers_to_trade",
-      "type": "calculation",
-      "objective": "LO2.2",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_transaction_costs_surplus",
-      "primarySkill": "barriers_to_trade",
-      "secondarySkills": [
-        "transaction_costs_surplus"
-      ],
-      "repairSkill": "barriers_to_trade",
-      "commonError": "ignores_bargaining_cost",
-      "feedback": "The private gain available to divide is 340 - 265 - 60 = $15. A price splitting that gain can benefit both. Tax revenue is a transfer to government, not itself a resource loss.",
-      "aHash": "33b790700549e3b659a991c3a4ddfe96fcb2eb7d5e773e3f6090a601f22a28c2"
-    },
-    {
       "id": 225,
       "sourceGame": "costDirective",
       "q": "A repair firm can offer pickup for $30. Each pickup uses $12 of driver time, $6 of fuel and $4 of extra handling. Customers value pickup at $35. Which condition supports offering it?",
@@ -4767,30 +5073,6 @@ const questionBanks = {
       "commonError": "ignores_incremental_cost",
       "feedback": "Relevant cost is $22; firm gain is $8 and customer gain is $5. Total gains are $13, with the $30 price dividing them.",
       "aHash": "c38bc9043151a96e8f9a377f7740dd4ebc1e0290d5c6dacf24e748702253a354"
-    },
-    {
-      "id": 226,
-      "sourceGame": "costDirective",
-      "q": "A decentralized firm gives plant managers local purchasing authority, but bonuses depend only on plant output. Input quality problems spread across the company. What is the organizational-design issue?",
-      "options": [
-        "Local managers should always buy the cheapest inputs because output is measurable",
-        "The firm should remove all local information from purchasing decisions",
-        "Local managers have authority, but incentives do not reflect firm-wide quality effects",
-        "The problem is that plant managers face too many accounting categories"
-      ],
-      "tag": "organization_wealth_creation",
-      "type": "application",
-      "objective": "LO2.5",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_organizational_design_wealth",
-      "primarySkill": "organization_wealth_creation",
-      "secondarySkills": [
-        "organizational_design_wealth"
-      ],
-      "repairSkill": "organization_wealth_creation",
-      "commonError": "ignores_external_effects_inside_firm",
-      "feedback": "Organization design affects wealth creation by assigning decisions, information, and incentives. Plant-level metrics may ignore firm-wide costs.",
-      "aHash": "2c0f4f309a05b672066d5b83a7432bbd0a3a62358c0b8e3de26d624914b24737"
     },
     {
       "id": 227,
@@ -4834,86 +5116,56 @@ const questionBanks = {
       "conceptCluster": "hard_costDirective_barriers_to_asset_movement",
       "primarySkill": "barriers_to_trade",
       "secondarySkills": [
-        "barriers_to_asset_movement"
+        "tax_wedge_trade_threshold"
       ],
       "repairSkill": "barriers_to_trade",
-      "commonError": "ignores_dissipated_surplus",
+      "commonError": "ignores_blocked_private_gains",
       "feedback": "The first pair has $7 in gains before tax: positive after a $4 tax but negative after $9. The other gaps exceed $9. This is a transaction test using stated values.",
       "aHash": "6e726ae38e57ac0533f88254217e0711f43dff0f2019e6486ba600fd30da00fc"
     },
     {
-      "id": 229,
-      "sourceGame": "costDirective",
-      "q": "A division refuses to sell excess materials to another division because the transfer would lower its own reported inventory buffer. What is the best interpretation?",
-      "options": [
-        "The transfer cannot create wealth because both units are inside one company",
-        "Internal incentives can block assets from moving to higher-valued uses",
-        "The division is irrational because materials have no opportunity cost internally",
-        "The firm should measure only each division's inventory level, not value created"
-      ],
-      "tag": "organization_wealth_creation",
-      "type": "application",
-      "objective": "LO2.5",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_organizational_design_wealth",
-      "primarySkill": "organization_wealth_creation",
-      "secondarySkills": [
-        "organizational_design_wealth"
-      ],
-      "repairSkill": "organization_wealth_creation",
-      "commonError": "ignores_metric_incentive",
-      "feedback": "The organization can destroy value if local metrics discourage transfers that would increase total firm value.",
-      "aHash": "99cf1e14506655b83c57de1e17ea52d75452ab500a1a819b073d785b6197c62a"
-    },
-    {
       "id": 230,
       "sourceGame": "costDirective",
-      "q": "A restaurant paid $14,000 for a smoker that cannot be resold. A catering event would bring in $3,200 and require $1,900 in food and extra labor. Should the event be accepted?",
+      "q": "A claims team can close a case quickly for a $12 bonus. Careful verification takes effort valued at $5 and avoids $18 of expected firm rework, but leaves the bonus unchanged. Staff already see rework data. Which change addresses the diagnosed gap?",
       "options": [
-        "No, because the $14,000 smoker cost must be recovered first",
-        "No, because total accounting cost exceeds the event revenue",
-        "Yes, because the event adds $1,300 and the smoker cost is sunk",
-        "Yes, because all revenue from idle equipment is pure profit"
+        "Increase the quick-closure bonus to $18",
+        "Send the same rework report more frequently without changing pay",
+        "Reward verified resolution sufficiently to compensate the added effort",
+        "Count a reopened case as a second bonus-eligible closure"
       ],
-      "tag": "relevant_costs_benefits",
-      "type": "trap",
-      "objective": "LO3.2",
+      "tag": "incentive_system_design",
+      "type": "diagnosis",
+      "objective": "LO1.3",
       "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_sunk_cost_relevance",
-      "primarySkill": "relevant_costs_benefits",
-      "secondarySkills": [
-        "fixed_cost_fallacy",
-        "sunk_cost_relevance"
-      ],
-      "repairSkill": "relevant_costs_benefits",
-      "commonError": "counts_sunk_cost",
-      "feedback": "Only costs that change with the event are relevant. Revenue $3,200 minus added cost $1,900 gives $1,300.",
-      "aHash": "fc41c495478b36616a87f90e70a2b0ef57bc25f2d06540b3844121dc354aad01"
+      "conceptCluster": "hard_costDirective_incentive_system_design",
+      "primarySkill": "incentive_system_design",
+      "secondarySkills": [],
+      "repairSkill": "incentive_system_design",
+      "commonError": "treats_information_as_incentive_alignment",
+      "feedback": "The information is already available, while verification brings no additional private reward. Align the reward with the $18 firm benefit and account for the $5 effort cost.",
+      "aHash": "2b361d2a580fd13037a11df4dcdbd2e77bbc671c233fcd30748125ecc44cd03a"
     },
     {
       "id": 231,
       "sourceGame": "costDirective",
-      "q": "A consultant project pays $22,000. Travel and subcontractor costs are $9,000. Taking the project also means rejecting another project with $6,500 in profit. What is the economic gain from taking it?",
+      "q": "A warehouse tests a new picking procedure only on its simplest orders and reports fewer errors than the old procedure used on all orders. It proposes adopting the new procedure everywhere. What should the manager establish before choosing?",
       "options": [
-        "$13,000",
-        "$15,500",
-        "$22,000",
-        "$6,500"
+        "Whether total errors fell without considering which orders were tested",
+        "Whether the new procedure has a more detailed written manual",
+        "Whether all employees prefer the new procedure",
+        "Whether comparable orders show an improvement under the new procedure"
       ],
-      "tag": "opportunity_cost",
-      "type": "calculation",
-      "objective": "LO3.1",
+      "tag": "problem_solving_steps",
+      "type": "diagnosis",
+      "objective": "LO1.1",
       "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_opportunity_cost_decision",
-      "primarySkill": "opportunity_cost",
-      "secondarySkills": [
-        "relevant_costs",
-        "opportunity_cost_decision"
-      ],
-      "repairSkill": "opportunity_cost",
-      "commonError": "ignores_foregone_profit",
-      "feedback": "Net benefit is $22,000 - $9,000 - $6,500 = $6,500. The rejected project is an opportunity cost.",
-      "aHash": "81f639959157d116638732869239e0265a391ff118c935d96fdfc6225e24dbd9"
+      "conceptCluster": "hard_costDirective_problem_solving_steps",
+      "primarySkill": "problem_solving_steps",
+      "secondarySkills": [],
+      "repairSkill": "problem_solving_steps",
+      "commonError": "accepts_noncomparable_evidence",
+      "feedback": "The pilot changes both the procedure and the mix of orders. Comparing like orders helps distinguish a process effect from the easier test population before choosing a remedy.",
+      "aHash": "a819c5b623b96765370502d6418ba1d9373db5a97bd5918f8ce5fafbf8259b3e"
     },
     {
       "id": 232,
@@ -5008,30 +5260,6 @@ const questionBanks = {
       "aHash": "642c5b0452506b76f3bc04c999f22eb1ea1845fcab36b209fb32b2c2c62966d9"
     },
     {
-      "id": 236,
-      "sourceGame": "costDirective",
-      "q": "For one month, a mill's rent and supervisor pay are fixed. Its ledger is incomplete.<table><thead><tr><th scope=\"col\">Output</th><th scope=\"col\">Variable cost</th><th scope=\"col\">Total cost</th></tr></thead><tbody><tr><td>0</td><td>$0</td><td>$2,400</td></tr><tr><td>400</td><td>?</td><td>$5,600</td></tr><tr><td>600</td><td>$4,500</td><td>?</td></tr></tbody></table>What variable cost belongs in the 400-unit row?",
-      "options": [
-        "$3,200",
-        "$5,600",
-        "$2,400",
-        "$8 per unit"
-      ],
-      "tag": "fixed_variable_costs",
-      "type": "calculation",
-      "objective": "LO3.3",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_variable_cost_calculation",
-      "primarySkill": "fixed_variable_costs",
-      "secondarySkills": [
-        "variable_cost_calculation"
-      ],
-      "repairSkill": "fixed_variable_costs",
-      "commonError": "includes_fixed_costs",
-      "feedback": "The zero-output row reveals fixed cost of $2,400. Variable cost at 400 is 5,600 - 2,400 = $3,200. Dividing gives a per-unit amount, not the requested total.",
-      "aHash": "156bc4af87073d790d7b129e3908f47d088f03ef0277e64fe7f92b24733a7423"
-    },
-    {
       "id": 237,
       "sourceGame": "costDirective",
       "q": "A repair shop can take a fleet contract for $18,000. Parts and overtime cost $11,500. It would require canceling regular work with contribution margin of $4,200. What is the net effect?",
@@ -5056,52 +5284,28 @@ const questionBanks = {
       "aHash": "8f6051acbbd1d707aa8fb9584afa7344ed60c20cd8f983d1aa9a0a23ff30d046"
     },
     {
-      "id": 238,
-      "sourceGame": "costDirective",
-      "q": "A manager compares two options. Option A earns $90,000 after explicit costs. Option B earns $104,000 after explicit costs. Choosing A also provides better training worth $20,000 to the manager. Which option has the higher economic value?",
-      "options": [
-        "Option B, because accounting profit is always the full economic value",
-        "Option B, because training value is not paid in cash",
-        "Option A, because $90,000 plus $20,000 in value exceeds Option B",
-        "Option A only if the training value is recorded as revenue"
-      ],
-      "tag": "opportunity_cost",
-      "type": "application",
-      "objective": "LO3.1",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_economic_value_choice",
-      "primarySkill": "opportunity_cost",
-      "secondarySkills": [
-        "economic_value_choice"
-      ],
-      "repairSkill": "opportunity_cost",
-      "commonError": "ignores_noncash_benefits",
-      "feedback": "Economic value includes relevant benefits and costs, not only accounting income. A's total value is $110,000.",
-      "aHash": "8049317541918f0d843095f867fe20a771c00adc74676b407f338de492c11725"
-    },
-    {
       "id": 239,
       "sourceGame": "costDirective",
-      "q": "A printing firm paid $30,000 for a trade-show booth. Attending now requires $9,000 in travel and staffing and is expected to bring $12,000 in new contribution. Should it attend?",
+      "q": "An item is worth $250 to a buyer and $180 to its seller. They agree on a $200 seller receipt. A 30% tax on that $200 is paid by the buyer, and price cannot be renegotiated. Does this agreement remain strictly attractive to both?",
       "options": [
-        "No, because total spending would be $39,000 and expected contribution is $12,000",
-        "Yes, because the booth cost must be recovered by attending",
-        "No, because sunk costs are always variable costs",
-        "Yes, because the future benefit exceeds the future cost by $3,000"
+        "No: the seller receives $140 after paying a buyer-only tax",
+        "Yes: the buyer pays only the agreed $200",
+        "Yes: the tax is 30% of the $70 total surplus",
+        "No: the buyer pays $260, above the $250 value"
       ],
-      "tag": "relevant_costs_benefits",
-      "type": "trap",
-      "objective": "LO3.2",
+      "tag": "tax_wedge_and_trade",
+      "type": "multi-step",
+      "objective": "LO2.2",
       "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_sunk_cost_relevance",
-      "primarySkill": "relevant_costs_benefits",
+      "conceptCluster": "hard_costDirective_tax_wedge_and_trade",
+      "primarySkill": "tax_wedge_and_trade",
       "secondarySkills": [
-        "sunk_cost_relevance"
+        "barriers_to_trade"
       ],
-      "repairSkill": "relevant_costs_benefits",
-      "commonError": "counts_sunk_cost",
-      "feedback": "The booth cost is sunk. The relevant comparison is $12,000 benefit versus $9,000 additional cost.",
-      "aHash": "a141ba15146c30cd2ab1273e4aa7e709d396b954c18d3f796dd7d2b134aa894b"
+      "repairSkill": "tax_wedge_and_trade",
+      "commonError": "uses_wrong_tax_base",
+      "feedback": "The specified tax base is $200 and the buyer owes $60, giving a $260 total payment. The agreement fails the buyer’s participation test; a different negotiable price would be a different question.",
+      "aHash": "8db64f877bee8ba81e29aa2ef118ca8034d1de5288ca8152bbda5ea531637add"
     },
     {
       "id": 240,
@@ -5131,74 +5335,46 @@ const questionBanks = {
     {
       "id": 241,
       "sourceGame": "costDirective",
-      "q": "A repair business earns $104,000 a year and pays $47,000 to suppliers and employees. It uses the owner's garage, which could earn $12,000 net rent, and her time, which could earn $39,000 elsewhere. What is economic profit?",
+      "q": "A branch knows evening demand and earns rewards on net contribution. An extra shift would add $900 after all costs, but staffing rules prohibit any shift change without an approval that arrives after the booking deadline. Which diagnosis is supported?",
       "options": [
-        "$57,000",
-        "$6,000",
-        "$18,000",
-        "$45,000"
+        "The branch mainly needs another copy of its demand forecast",
+        "The decision process prevents informed, aligned staff from acting in time",
+        "The branch’s reward must be changed from contribution to revenue",
+        "The branch rejected the shift because its contribution is negative"
       ],
-      "tag": "accounting_economic_profit",
-      "type": "calculation",
-      "objective": "LO3.4",
+      "tag": "managerial_problem_diagnosis",
+      "type": "diagnosis",
+      "objective": "LO1.5",
       "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_economic_profit",
-      "primarySkill": "accounting_economic_profit",
-      "secondarySkills": [
-        "economic_profit"
-      ],
-      "repairSkill": "accounting_economic_profit",
-      "commonError": "ignores_implicit_rent",
-      "feedback": "Accounting profit is $57,000. The garage and owner's labor have separate, simultaneously forgone alternatives totaling $51,000, leaving $6,000.",
-      "aHash": "f455ed4209cdc909730b6b732fb242e1933fdebcfac5fdf35dd9f2bac7cb51b0"
-    },
-    {
-      "id": 242,
-      "sourceGame": "costDirective",
-      "q": "A software team rejects a new client because the project would require senior engineers who are already assigned to a more profitable launch. What cost concept is driving the decision?",
-      "options": [
-        "Fixed cost",
-        "Accounting depreciation",
-        "Opportunity cost",
-        "Sunk cost"
-      ],
-      "tag": "opportunity_cost",
-      "type": "identification",
-      "objective": "LO3.1",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_opportunity_cost_decision",
-      "primarySkill": "opportunity_cost",
-      "secondarySkills": [
-        "opportunity_cost_decision"
-      ],
-      "repairSkill": "opportunity_cost",
-      "commonError": "ignores_resource_alternative",
-      "feedback": "Using engineers on one project means they cannot work on the other. The sacrificed launch profit is an opportunity cost.",
-      "aHash": "1b7bbb8854d4cc1c1fe153947e240b142a27fccc15457a39cdd97c1cf8f7be23"
+      "conceptCluster": "hard_costDirective_managerial_problem_diagnosis",
+      "primarySkill": "managerial_problem_diagnosis",
+      "secondarySkills": [],
+      "repairSkill": "managerial_problem_diagnosis",
+      "commonError": "misdiagnoses_authority_constraint_as_incentive_problem",
+      "feedback": "Useful information and aligned rewards are stated. The binding obstacle is timely decision authority; increasing information or replacing the metric does not remove the approval delay.",
+      "aHash": "f0d860546918bfab3eefc15af8ad8ef019f30eb498a8db48a43631509563af0c"
     },
     {
       "id": 243,
       "sourceGame": "costDirective",
-      "q": "A manager says, 'We should keep this division because headquarters overhead is allocated to it.' The overhead will not change if the division closes. What mistake is this?",
+      "q": "A repair unit is rewarded for avoiding repeat visits. It now rejects difficult but profitable repairs, which never enter its repeat-visit measure. Which revision best preserves quality incentives while addressing this response?",
       "options": [
-        "Ignoring a variable cost that changes when the division closes",
-        "Using opportunity cost when only accounting cost matters",
-        "Confusing marginal revenue with average revenue",
-        "Treating an unavoidable allocated cost as relevant to the decision"
+        "Measure only elapsed time on completed repairs",
+        "Raise the existing no-repeat bonus and keep rejection data outside the measure",
+        "Reward every accepted request before checking repair quality",
+        "Assess verified successful repairs and audit rejected requests as well as completed work"
       ],
-      "tag": "relevant_costs_benefits",
-      "type": "trap",
-      "objective": "LO3.2",
+      "tag": "incentive_system_design",
+      "type": "diagnosis",
+      "objective": "LO1.3",
       "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_avoidable_vs_unavoidable_cost",
-      "primarySkill": "relevant_costs_benefits",
-      "secondarySkills": [
-        "avoidable_vs_unavoidable_cost"
-      ],
-      "repairSkill": "relevant_costs_benefits",
-      "commonError": "treats_allocated_cost_as_relevant",
-      "feedback": "Allocated overhead that does not change is not relevant. The decision should use avoidable costs and lost revenue.",
-      "aHash": "7c181f127fc4272995d338e3bc5856ae5dcfbc9d4c3defc4811423932f6da577"
+      "conceptCluster": "hard_costDirective_incentive_system_design",
+      "primarySkill": "incentive_system_design",
+      "secondarySkills": [],
+      "repairSkill": "incentive_system_design",
+      "commonError": "ignores_excluded_cases_in_metric",
+      "feedback": "The current denominator excludes work that is rejected. Checking both admission and resolution addresses selection around the quality metric without discarding quality.",
+      "aHash": "3f8e157746c0fe7437615ae1ed3eb7c55c50de35a7ac91c20accc6e3ea8ed272"
     },
     {
       "id": 244,
@@ -5211,7 +5387,7 @@ const questionBanks = {
         "The $1,270 sum of the class costs and forgone rent"
       ],
       "tag": "relevant_costs_benefits",
-      "type": "application",
+      "type": "multi-step",
       "objective": "LO3.2",
       "difficulty": "hard",
       "conceptCluster": "hard_costDirective_incremental_cost_benefit",
@@ -5220,31 +5396,31 @@ const questionBanks = {
         "incremental_cost_benefit"
       ],
       "repairSkill": "relevant_costs_benefits",
-      "commonError": "includes_sunk_equipment",
+      "commonError": "ignores_forgone_rental",
       "feedback": "The class adds 1,600 - 280 - 500 = $820 before the room's opportunity cost. Compared with rental, it adds $370.",
       "aHash": "83655cb579f3b16a60b511f0698aaa6b5d506fed85c624757e8b3dab71e80e03"
     },
     {
       "id": 245,
       "sourceGame": "costDirective",
-      "q": "A company refuses to close an unprofitable branch because it would make the original expansion look bad. Which concept is most directly violated?",
+      "q": "An owner values equipment at $4,000 and a buyer at $5,200, but the buyer cannot verify title. Title verification costs $300 and moving costs $200, both real resource costs. What does resolving title make possible?",
       "options": [
-        "All fixed costs are avoidable when managers dislike them",
-        "Sunk costs should not determine current choices",
-        "Accounting profit should ignore explicit costs",
-        "Variable costs should be treated as sunk once output begins"
+        "A $1,200 net gain because verification and moving do not affect value",
+        "A verified transfer with $700 net gains available to divide",
+        "A $5,200 profit for the buyer regardless of the payment",
+        "No beneficial trade because clear title itself costs money"
       ],
-      "tag": "fixed_cost_fallacy",
-      "type": "trap",
-      "objective": "LO3.5",
+      "tag": "barriers_to_trade",
+      "type": "multi-step",
+      "objective": "LO2.2",
       "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_fixed_cost_fallacy",
-      "primarySkill": "fixed_cost_fallacy",
+      "conceptCluster": "hard_costDirective_barriers_to_trade",
+      "primarySkill": "barriers_to_trade",
       "secondarySkills": [],
-      "repairSkill": "fixed_cost_fallacy",
-      "commonError": "emotional_commitment_to_sunk_cost",
-      "feedback": "Past expansion spending cannot be recovered. Current decisions should depend on future costs and benefits.",
-      "aHash": "0a021e36fe2b4e65b3e766db06a24ab0bc261357365f63872602f3e42df98ae3"
+      "repairSkill": "barriers_to_trade",
+      "commonError": "ignores_verification_and_transfer_costs",
+      "feedback": "Net gains are 5200 − 4000 − 300 − 200 = $700. Verification can remove an information barrier when its cost is below the gain it enables.",
+      "aHash": "bb18f6ad86382c7ec33c940d93b27603187a25037c9d9f7e4056f8bdac5a69f9"
     },
     {
       "id": 246,
@@ -5269,30 +5445,6 @@ const questionBanks = {
       "commonError": "ignores_capacity_constraint",
       "feedback": "The delay credits are caused by accepting the job. Net effect is 2,500 - 1,800 - 900 = -$200.",
       "aHash": "633da63229f1e305647bceee7ad02f73e2e41730fdd8243f99c662afb92a739c"
-    },
-    {
-      "id": 247,
-      "sourceGame": "costDirective",
-      "q": "For a single market day, a seller owes a $140 permit and a $260 guaranteed assistant payment regardless of meals sold. Ingredients cost $3 per meal. At 120 meals, what are total cost and total variable cost?",
-      "options": [
-        "$760 total; $620 variable",
-        "$500 total; $360 variable",
-        "$400 total; $760 variable",
-        "$760 total; $360 variable"
-      ],
-      "tag": "fixed_variable_costs",
-      "type": "calculation",
-      "objective": "LO3.3",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_fixed_vs_variable_cost",
-      "primarySkill": "fixed_variable_costs",
-      "secondarySkills": [
-        "fixed_vs_variable_cost"
-      ],
-      "repairSkill": "fixed_variable_costs",
-      "commonError": "misclassifies_labor_or_permit",
-      "feedback": "The explicitly guaranteed daily commitments are fixed for this decision. Ingredients cost 120 × 3 = $360; total cost is 140 + 260 + 360 = $760.",
-      "aHash": "d2cba89ca75b0e0fa6a0a3b6ba3cc64a758b79f0358e481aafaddca5574a311b"
     },
     {
       "id": 248,
@@ -5343,75 +5495,26 @@ const questionBanks = {
       "aHash": "99df00631f36e1ea43cfbfe1159f37c1eb0cc58d1c2c8abf1f627c88c11653d3"
     },
     {
-      "id": 250,
-      "sourceGame": "costDirective",
-      "q": "A firm says it cannot drop a product because it carries $50,000 of allocated overhead. Dropping the product would not reduce that overhead, but would save $18,000 in avoidable costs and lose $14,000 in revenue. What should it do?",
-      "options": [
-        "Keep the product because allocated overhead is larger than avoidable cost",
-        "Keep the product because revenue is positive",
-        "Drop the product because avoidable costs exceed lost revenue by $4,000",
-        "Drop the product only if all fixed costs disappear immediately"
-      ],
-      "tag": "relevant_costs_benefits",
-      "type": "calculation",
-      "objective": "LO3.2",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_avoidable_vs_unavoidable_cost",
-      "primarySkill": "relevant_costs_benefits",
-      "secondarySkills": [
-        "avoidable_vs_unavoidable_cost"
-      ],
-      "repairSkill": "relevant_costs_benefits",
-      "commonError": "overweights_allocated_overhead",
-      "feedback": "The allocated overhead does not change. Dropping saves $18,000 and loses $14,000, so profit rises by $4,000.",
-      "aHash": "82d0986317262077b42ef08cfa515a6f94a1cbf9aca2092c0ce64545c976f0b3"
-    },
-    {
-      "id": 251,
-      "sourceGame": "costDirective",
-      "q": "A manager says, 'We already trained the staff, so we must launch the service.' Future revenue is $25,000 and future operating cost is $31,000. What is the correct decision logic?",
-      "options": [
-        "Launch because training spending should be recovered through the service",
-        "Launch because future revenue is positive",
-        "Do not launch because all trained staff are now fixed costs",
-        "Do not launch unless there are additional future benefits, because training is sunk and operations lose $6,000"
-      ],
-      "tag": "fixed_cost_fallacy",
-      "type": "trap",
-      "objective": "LO3.5",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_fixed_cost_fallacy",
-      "primarySkill": "fixed_cost_fallacy",
-      "secondarySkills": [],
-      "repairSkill": "fixed_cost_fallacy",
-      "commonError": "sunk_training_cost",
-      "feedback": "The training cost is sunk. The future operating comparison is $25,000 - $31,000 = -$6,000.",
-      "aHash": "9b04fac029ce06be69a1b6303dd64435cfb3edd37d72211db50d38b5335d50e4"
-    },
-    {
       "id": 252,
       "sourceGame": "costDirective",
-      "q": "A plant accepts a government contract because it covers variable costs, but the contract blocks a private order with higher contribution margin. What did the plant overlook?",
+      "q": "A supervisor can spend time arranging a cross-team transfer that saves the firm $900. The time costs her $120 in valued effort and reduces her output bonus by $80. A proposed transfer bonus is $150. Assuming these are her only consequences, is that bonus sufficient?",
       "options": [
-        "The opportunity cost of using limited capacity for the government contract",
-        "The sunk cost of capacity already built",
-        "The accounting depreciation on the plant",
-        "The fixed cost that does not change with either order"
+        "No; private costs are $200, so the $150 bonus leaves a $50 loss",
+        "Yes; the $900 firm saving is automatically her private benefit",
+        "Yes; the bonus exceeds the $120 effort cost",
+        "No; any bonus below the full $900 saving is insufficient"
       ],
-      "tag": "opportunity_cost",
-      "type": "application",
-      "objective": "LO3.1",
+      "tag": "rational_actor_paradigm",
+      "type": "multi-step",
+      "objective": "LO1.2",
       "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_opportunity_cost_decision",
-      "primarySkill": "opportunity_cost",
-      "secondarySkills": [
-        "hidden_cost_fallacy",
-        "opportunity_cost_decision"
-      ],
-      "repairSkill": "opportunity_cost",
-      "commonError": "ignores_foregone_order",
-      "feedback": "Capacity is scarce, so using it for one order sacrifices the contribution from another. That sacrificed contribution is an opportunity cost.",
-      "aHash": "28fb24b2dd333bca74c94a63ca174924739ceb578005e26b1abec7ea824a3018"
+      "conceptCluster": "hard_costDirective_rational_actor_paradigm",
+      "primarySkill": "rational_actor_paradigm",
+      "secondarySkills": [],
+      "repairSkill": "rational_actor_paradigm",
+      "commonError": "omits_private_opportunity_cost",
+      "feedback": "Both effort and lost output bonus matter to her choice. $150 − $120 − $80 = − $50; a bonus above $200 would make this action strictly privately attractive under the stated assumptions.",
+      "aHash": "5d60d8e101bbad1d35f5036b2e54cfd66cb9aabcb322cb707361e78383446282"
     },
     {
       "id": 253,
@@ -5462,30 +5565,6 @@ const questionBanks = {
       "aHash": "9c770d65e30e715bd62bfbd5d797cce7d9d6c058d0537f00fa581e4fb1c7d889"
     },
     {
-      "id": 255,
-      "sourceGame": "costDirective",
-      "q": "A product sells for $48. Producing one more unit raises total cost from $7,620 to $7,655. What should the firm do for that unit?",
-      "options": [
-        "Reject it because total cost is larger than the selling price",
-        "Reject it because average cost must be falling first",
-        "Produce it only if fixed cost also rises",
-        "Produce it because marginal revenue exceeds marginal cost by $13"
-      ],
-      "tag": "mr_mc_extent_rule",
-      "type": "calculation",
-      "objective": "LO4.3",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_mr_mc_decision",
-      "primarySkill": "mr_mc_extent_rule",
-      "secondarySkills": [
-        "mr_mc_decision"
-      ],
-      "repairSkill": "mr_mc_extent_rule",
-      "commonError": "compares_price_to_total_cost",
-      "feedback": "Marginal cost is $35 and marginal revenue is $48. Since MR > MC, the unit adds $13.",
-      "aHash": "d19850653c1d945c07e180e13251003fec1a2596308ce11ffb8ee72795fe88de"
-    },
-    {
       "id": 256,
       "sourceGame": "costDirective",
       "q": "A firm has total cost of $9,000 at 300 units and $9,840 at 340 units. Which statement is correct?",
@@ -5504,56 +5583,8 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "average_vs_marginal_cost",
       "commonError": "confuses_ac_mc",
-      "feedback": "Average cost is $9,840 / 340 = $28.94. Marginal cost is $840 / 40 = $21.",
+      "feedback": "AC is 9840/340≈$28.94. The average incremental cost over the 40-unit range is 840/40 = $21; this need not be each individual unit’s cost.",
       "aHash": "1b86702717077f7c7edad67693a350ace51d78a4b4113c1e77ce84ffd7426ea3"
-    },
-    {
-      "id": 257,
-      "sourceGame": "costDirective",
-      "q": "A firm can sell extra units for $22 each. The next 100 units add $2,600 to total cost. What does marginal analysis imply?",
-      "options": [
-        "Produce them because total revenue is positive",
-        "Do not produce the extra 100 units because marginal cost per unit is $26",
-        "Produce them because fixed costs are already paid",
-        "Do not produce them because average cost must equal price"
-      ],
-      "tag": "mr_mc_extent_rule",
-      "type": "calculation",
-      "objective": "LO4.3",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_mr_mc_decision",
-      "primarySkill": "mr_mc_extent_rule",
-      "secondarySkills": [
-        "mr_mc_decision"
-      ],
-      "repairSkill": "mr_mc_extent_rule",
-      "commonError": "focuses_on_revenue_only",
-      "feedback": "Marginal cost is $2,600 / 100 = $26, which is greater than marginal revenue of $22.",
-      "aHash": "32e92905423e32e5636d06046e58574bea1acc8bfaad390d312b99ba476123fa"
-    },
-    {
-      "id": 258,
-      "sourceGame": "costDirective",
-      "q": "A rep earns $24,000 plus 4% of collected sales under A, or 16% with no salary under B. A $500 follow-up order takes extra effort and is certainly collected. Which claim correctly compares the added pay?",
-      "options": [
-        "A adds more because its guaranteed salary is larger than the order.",
-        "Both add $500 because both collect the same order.",
-        "B adds $80 versus A's $20, regardless of their current total pay.",
-        "The comparison requires including the full annual salary in the order's pay."
-      ],
-      "tag": "incentive_compensation_effort",
-      "type": "calculation",
-      "objective": "LO4.4",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_marginal_incentive",
-      "primarySkill": "incentive_compensation_effort",
-      "secondarySkills": [
-        "marginal_incentive"
-      ],
-      "repairSkill": "incentive_compensation_effort",
-      "commonError": "confuses_total_pay_with_marginal_pay",
-      "feedback": "Marginal pay is the commission on this order: 0.16 × 500 = $80 versus 0.04 × 500 = $20. Salary changes total pay, not this increment.",
-      "aHash": "47f0230d30bf3bcb0651cf5acc814a144e4e4f903f351efbbd27d3908e8616ae"
     },
     {
       "id": 259,
@@ -5604,100 +5635,6 @@ const questionBanks = {
       "aHash": "c9c00811aa4a56814ddaed0c826d87138076a4db6a2c4cca14fc533b55a98d1a"
     },
     {
-      "id": 261,
-      "sourceGame": "costDirective",
-      "q": "A repair shop can extend opening by one hour. Total receipts would rise from $3,900 to $4,180 and avoidable daily expenses from $2,100 to $2,340. Rent is unchanged. What does this imply?",
-      "options": [
-        "The extra hour adds $280 because rent is unchanged.",
-        "The extra hour adds $40 to profit.",
-        "The extra hour loses $240 because operating expenses rise.",
-        "The decision requires the original cost of the shop."
-      ],
-      "tag": "mr_mc_extent_rule",
-      "type": "identification",
-      "objective": "LO4.3",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_mr_mc_decision",
-      "primarySkill": "mr_mc_extent_rule",
-      "secondarySkills": [
-        "mr_mc_decision"
-      ],
-      "repairSkill": "mr_mc_extent_rule",
-      "commonError": "requires_zero_fixed_cost",
-      "feedback": "The relevant changes are $280 revenue and $240 cost, leaving a $40 gain.",
-      "aHash": "3ec66fe47f3b2b3219c5ff5082ce80cb344e0e8b102951ebcb518791f80f6dce"
-    },
-    {
-      "id": 262,
-      "sourceGame": "costDirective",
-      "q": "A plant produces 2,000 units at total cost $88,000. At 2,100 units, total cost is $91,300. Which is true?",
-      "options": [
-        "Average cost at 2,000 is $33 and marginal cost is $44",
-        "Average cost at 2,100 is exactly $33",
-        "Average cost at 2,000 is $44 and marginal cost of the next 100 units is $33",
-        "Marginal cost is $3,300 per unit"
-      ],
-      "tag": "average_vs_marginal_cost",
-      "type": "calculation",
-      "objective": "LO4.1",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_average_vs_marginal_cost",
-      "primarySkill": "average_vs_marginal_cost",
-      "secondarySkills": [],
-      "repairSkill": "average_vs_marginal_cost",
-      "commonError": "divides_wrong_base",
-      "feedback": "Average cost is $88,000 / 2,000 = $44. Marginal cost is $3,300 / 100 = $33.",
-      "aHash": "246051d7aaa1a024e36e12ee4a0d9b4031720852f55b52a1a0cfeac75f6f7b8a"
-    },
-    {
-      "id": 263,
-      "sourceGame": "costDirective",
-      "q": "Installers choose whether to spend extra time checking connections. That check reduces expected customer rework, but a bonus is paid on initial job completion. Which change most directly improves the incentive?",
-      "options": [
-        "Increase the bonus for initial completion alone.",
-        "Make the fixed daily wage higher without changing verification.",
-        "Count each return visit as another bonus-eligible completion.",
-        "Pay for verified completions after a defined rework window."
-      ],
-      "tag": "incentive_compensation_effort",
-      "type": "application",
-      "objective": "LO4.4",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_marginal_incentive",
-      "primarySkill": "incentive_compensation_effort",
-      "secondarySkills": [
-        "marginal_incentive"
-      ],
-      "repairSkill": "incentive_compensation_effort",
-      "commonError": "raises_fixed_pay_only",
-      "feedback": "Verification ties the reward to durable completion. Paying twice for a failed installation can reward the rework the firm wants to prevent.",
-      "aHash": "b9f918b84be2612e36b8128fa2b61025dbd9fe2ca1fc7c83182c44e507b643cb"
-    },
-    {
-      "id": 264,
-      "sourceGame": "costDirective",
-      "q": "A firm sells units for $16. Output from 1,000 to 1,100 units raises total cost from $14,000 to $15,300. What is the profit effect of the extra 100 units?",
-      "options": [
-        "Profit rises by $300",
-        "Profit falls by $1,300",
-        "Profit rises by $1,600",
-        "Profit falls by $300"
-      ],
-      "tag": "mr_mc_extent_rule",
-      "type": "calculation",
-      "objective": "LO4.3",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_mr_mc_decision",
-      "primarySkill": "mr_mc_extent_rule",
-      "secondarySkills": [
-        "mr_mc_decision"
-      ],
-      "repairSkill": "mr_mc_extent_rule",
-      "commonError": "subtracts_total_cost_not_change",
-      "feedback": "Extra revenue is 100 × $16 = $1,600. Extra cost is $1,300. Profit rises by $300.",
-      "aHash": "c792304493769e8daad3c9bebb2dd8cf9b85e6f152b0054f3497faf7c5683761"
-    },
-    {
       "id": 265,
       "sourceGame": "costDirective",
       "q": "A workshop makes 50 units for $1,500 total cost. It can make 10 more for $240 in added cost. A manager says the average must rise because total cost rises. What is the correction?",
@@ -5720,30 +5657,6 @@ const questionBanks = {
       "commonError": "misreads_ac_mc_relationship",
       "feedback": "New average cost is (1,500 + 240)/60 = $29. An increment below the original $30 average pulls that average down.",
       "aHash": "f5bb52c23a38640a6ba3a8e50b969ca4406378be7177ef815131435f9defbe3f"
-    },
-    {
-      "id": 266,
-      "sourceGame": "costDirective",
-      "q": "A plant considers the extra output in this schedule.<table><thead><tr><th scope=\"col\">Units</th><th scope=\"col\">Revenue</th><th scope=\"col\">Total cost</th></tr></thead><tbody><tr><td>200</td><td>$6,000</td><td>$5,000</td></tr><tr><td>250</td><td>$7,250</td><td>$6,100</td></tr></tbody></table>Which comparison identifies the profit effect of expanding?",
-      "options": [
-        "The $7,250 total revenue versus the $1,100 cost increase",
-        "The $1,250 revenue increase versus the $6,100 total cost",
-        "The $1,250 revenue increase versus the $1,100 cost increase",
-        "The original $1,000 profit versus the new $7,250 revenue"
-      ],
-      "tag": "mr_mc_extent_rule",
-      "type": "identification",
-      "objective": "LO4.3",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_mr_mc_decision",
-      "primarySkill": "mr_mc_extent_rule",
-      "secondarySkills": [
-        "mr_mc_decision"
-      ],
-      "repairSkill": "mr_mc_extent_rule",
-      "commonError": "uses_total_or_sunk_cost",
-      "feedback": "Both sides of an extent decision must use changes over the same interval. Expansion adds $150 to profit.",
-      "aHash": "b98301005a19096afe787e2b0adeff0667ce5e095ffc35c96443a4133bce3d57"
     },
     {
       "id": 267,
@@ -5770,30 +5683,6 @@ const questionBanks = {
       "aHash": "5282dcb73b7e25acd120ba7db666af3861553abaa9cfa5968b124049b9ed1d94"
     },
     {
-      "id": 268,
-      "sourceGame": "costDirective",
-      "q": "A collector receives $100 per day plus 6% of recovered balances. Spending an extra hour raises certain collections by $400 and costs the collector $18 in valued time. Which element creates a net reason to spend that hour?",
-      "options": [
-        "The $24 extra commission exceeds the $18 time cost.",
-        "The $100 fixed payment exceeds the $18 time cost.",
-        "The full $400 collection belongs to the collector.",
-        "The $18 time cost is irrelevant because it is not invoiced."
-      ],
-      "tag": "incentive_compensation_effort",
-      "type": "identification",
-      "objective": "LO4.4",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_fixed_fees_and_effort",
-      "primarySkill": "incentive_compensation_effort",
-      "secondarySkills": [
-        "fixed_fees_and_effort"
-      ],
-      "repairSkill": "incentive_compensation_effort",
-      "commonError": "confuses_fixed_and_marginal_pay",
-      "feedback": "Marginal commission is 0.06 × 400 = $24. Subtracting the personal time cost leaves $6; the fixed daily payment does not change.",
-      "aHash": "e04fac0f698b9df2d7ab23a0d8ecec13be6255f91a943b58971962695336cb26"
-    },
-    {
       "id": 269,
       "sourceGame": "costDirective",
       "q": "A bakery can choose 0, 1, 2 or 3 evening batches, in sequence. Cumulative added receipts are $0, $320, $590, $800; cumulative added costs are $0, $210, $450, $720. Which plan maximizes added profit?",
@@ -5818,30 +5707,6 @@ const questionBanks = {
       "aHash": "347860547af3910856b6dc6c032ad436239739dc14f19b73bf0ba596b4d86e36"
     },
     {
-      "id": 270,
-      "sourceGame": "costDirective",
-      "q": "A shop's total cost is $5,000 at 200 units and $5,700 at 250 units. If price is $12, should it produce the extra 50 units?",
-      "options": [
-        "Yes, because total revenue from all units is positive",
-        "Yes, because average cost at 250 units is below total cost",
-        "No, because marginal cost is $14 per unit and price is $12",
-        "No, because fixed cost cannot be spread over more units"
-      ],
-      "tag": "mr_mc_extent_rule",
-      "type": "calculation",
-      "objective": "LO4.3",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_mr_mc_decision",
-      "primarySkill": "mr_mc_extent_rule",
-      "secondarySkills": [
-        "mr_mc_decision"
-      ],
-      "repairSkill": "mr_mc_extent_rule",
-      "commonError": "uses_total_revenue",
-      "feedback": "Marginal cost is $700 / 50 = $14. If marginal revenue is the $12 price, the extra units reduce profit.",
-      "aHash": "85a1775e1428beaf1a3c89719068018f3a69b706d154b438849c422164b993f6"
-    },
-    {
       "id": 271,
       "sourceGame": "costDirective",
       "q": "A processor pays staff per accepted claim. Staff can hide difficult claims by reclassifying them as incomplete, and only accepted claims are audited. Which adjustment best retains useful effort incentives?",
@@ -5852,7 +5717,7 @@ const questionBanks = {
         "Audit a sample of rejected claims as well as accepted claims and count valid resolutions."
       ],
       "tag": "incentive_compensation_effort",
-      "type": "application",
+      "type": "diagnosis",
       "objective": "LO4.4",
       "difficulty": "hard",
       "conceptCluster": "hard_costDirective_quality_adjusted_incentives",
@@ -5864,77 +5729,6 @@ const questionBanks = {
       "commonError": "ignores_quality_metric",
       "feedback": "Quality screening only the paid output leaves a way to avoid legitimate difficult work. Checking both acceptance and rejection decisions helps align effort with valid resolution.",
       "aHash": "e2ba51e3f2ae68f48a3f89ded2eaed68feaedeec9ad7484688ce5cdbb120d728"
-    },
-    {
-      "id": 272,
-      "sourceGame": "costDirective",
-      "q": "Average cost is $18 at 1,000 units. The next 100 units have marginal cost of $12 each. What happens to average cost if those units are produced?",
-      "options": [
-        "Average cost falls because marginal cost is below current average cost",
-        "Average cost rises because total cost rises",
-        "Average cost stays at $18 because fixed cost is unchanged",
-        "Average cost becomes $12 because marginal cost replaces average cost"
-      ],
-      "tag": "average_vs_marginal_cost",
-      "type": "interpretation",
-      "objective": "LO4.1",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_ac_mc_relationship",
-      "primarySkill": "average_vs_marginal_cost",
-      "secondarySkills": [
-        "ac_mc_relationship"
-      ],
-      "repairSkill": "average_vs_marginal_cost",
-      "commonError": "total_cost_rises_means_ac_rises",
-      "feedback": "Total cost rises, but average cost falls because the added units cost less than the current average.",
-      "aHash": "de382cdf749d0c3bb8d352498305c2dd5b4e13b5967276635e31a2a388ec6e0f"
-    },
-    {
-      "id": 273,
-      "sourceGame": "costDirective",
-      "q": "A company pays a franchisee a fixed monthly fee to operate under the brand. Once the fee is paid, what should guide the franchisee's decision to stay open one extra hour?",
-      "options": [
-        "The full monthly franchise fee divided by the number of business hours",
-        "The extra revenue from the hour compared with the extra operating cost",
-        "The original cost of joining the franchise",
-        "The total revenue earned earlier in the month"
-      ],
-      "tag": "mr_mc_extent_rule",
-      "type": "application",
-      "objective": "LO4.3",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_incremental_cost_benefit",
-      "primarySkill": "mr_mc_extent_rule",
-      "secondarySkills": [
-        "fixed_fees_and_effort",
-        "incremental_cost_benefit"
-      ],
-      "repairSkill": "mr_mc_extent_rule",
-      "commonError": "allocates_fixed_fee_to_margin",
-      "feedback": "The extra hour is an extent decision. The fixed monthly fee is not changed by that hour.",
-      "aHash": "886694dd55a8f798eb4879ff0d3fda0d94112bfd9220b7982ea376c1c840e34d"
-    },
-    {
-      "id": 274,
-      "sourceGame": "costDirective",
-      "q": "With the same two test benches, 3 technicians complete 90 tests daily, 4 complete 124, and 5 complete 150. Which change demonstrates diminishing marginal returns?",
-      "options": [
-        "Total tests rise from 124 to 150.",
-        "Average tests per technician are positive at each staffing level.",
-        "The fifth technician adds 26 tests versus 34 from the fourth.",
-        "Five technicians use more labor than four, proving decreasing returns to scale."
-      ],
-      "tag": "diminishing_marginal_returns",
-      "type": "identification",
-      "objective": "LO7.1",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_diminishing_marginal_returns",
-      "primarySkill": "diminishing_marginal_returns",
-      "secondarySkills": [],
-      "repairSkill": "diminishing_marginal_returns",
-      "commonError": "confuses_short_run_and_scale",
-      "feedback": "Marginal output falls from 124 - 90 = 34 to 150 - 124 = 26 while bench capacity stays fixed. An all-input scale comparison is not provided.",
-      "aHash": "665c92004c107e944e6f9235ce7898b183e1fff3fec00a700497fff4803c7372"
     },
     {
       "id": 275,
@@ -5959,30 +5753,6 @@ const questionBanks = {
       "commonError": "ignores_capacity_cost_curve",
       "feedback": "Revenue is $3,400. Production cost rises $2,600 and testing adds $600, leaving $200. The job-specific fee is relevant.",
       "aHash": "1bc1eec751cb1a5449be57243e567a1a069fb4d6b9b2c6e5cdd164fce46d8980"
-    },
-    {
-      "id": 276,
-      "sourceGame": "costDirective",
-      "q": "A fixed plant can produce 100 units at $3,000 total cost or 150 units at $4,200. The larger plan's total cost is higher. What does the average-cost evidence show?",
-      "options": [
-        "Average cost falls from $30 to $28; total cost alone does not show unit cost.",
-        "Average cost rises by $1,200 per unit.",
-        "Marginal cost must equal the new $28 average.",
-        "This proves economies of scale from changing all inputs."
-      ],
-      "tag": "average_cost_output",
-      "type": "interpretation",
-      "objective": "LO7.3",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_average_cost_output_relationship",
-      "primarySkill": "average_cost_output",
-      "secondarySkills": [
-        "average_cost_output_relationship"
-      ],
-      "repairSkill": "average_cost_output",
-      "commonError": "confuses_total_and_average",
-      "feedback": "Average cost is 3,000/100 = $30 versus 4,200/150 = $28. This is a fixed-plant comparison, not proof about all-input scale changes.",
-      "aHash": "bdb6328823c2a56d9836b487cd770db11c0208c833db627bd1850cf38e760ef6"
     },
     {
       "id": 277,
@@ -6049,28 +5819,6 @@ const questionBanks = {
       "commonError": "confuses_total_and_average_cost",
       "feedback": "The smallest available output at the minimum $12 unit cost is 6,000. A 4,000-unit order leaves a 2,000-unit gap; accounting allocation does not remove it.",
       "aHash": "d74150451ca589f2143602449a6e8e763587df6f693f5357d77919de7828e757"
-    },
-    {
-      "id": 280,
-      "sourceGame": "costDirective",
-      "q": "A factory keeps its hourly output, machines and input prices unchanged. As accumulated experience doubles, setup mistakes fall and unit cost drops from $75 to $60. Which explanation fits best?",
-      "options": [
-        "Learning from cumulative experience, with a 20% cost reduction",
-        "Economies of scope from producing two products",
-        "Economies of scale from a larger current production rate",
-        "Diminishing marginal returns from adding workers to fixed machines"
-      ],
-      "tag": "learning_curve",
-      "type": "identification",
-      "objective": "LO7.6",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_learning_curve",
-      "primarySkill": "learning_curve",
-      "secondarySkills": [],
-      "repairSkill": "learning_curve",
-      "commonError": "confuses_learning_with_scale",
-      "feedback": "The controlled current production rate separates experience from scale. Cost falls 15/75 = 20%; the new cost is 80% of the old cost.",
-      "aHash": "3487c8dc30ca66764ebb999ebcac64fcac64cb4e04a47b2cff8bb7236a2a9fbc"
     },
     {
       "id": 281,
@@ -6141,52 +5889,6 @@ const questionBanks = {
       "aHash": "446b06ca7c570ea2f242352c9e28dcd9cc32c20f13ab94e0a3234352a6bfa534"
     },
     {
-      "id": 284,
-      "sourceGame": "costDirective",
-      "q": "Only four plant sizes are feasible. Their long-run cost data are shown.<table><thead><tr><th scope=\"col\">Output</th><th scope=\"col\">Total cost</th></tr></thead><tbody><tr><td>1000</td><td>$18,000</td></tr><tr><td>2000</td><td>$28,000</td></tr><tr><td>3000</td><td>$36,000</td></tr><tr><td>4000</td><td>$48,000</td></tr></tbody></table>What is minimum efficient scale among these plans?",
-      "options": [
-        "3,000 units",
-        "1,000 units",
-        "2,000 units",
-        "4,000 units"
-      ],
-      "tag": "minimum_efficient_scale",
-      "type": "interpretation",
-      "objective": "LO7.5",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_minimum_efficient_scale",
-      "primarySkill": "minimum_efficient_scale",
-      "secondarySkills": [
-        "average_cost_output"
-      ],
-      "repairSkill": "minimum_efficient_scale",
-      "commonError": "misreads_flat_ac",
-      "feedback": "Average costs are $18, $14, $12 and $12. The smallest output attaining the minimum is 3,000.",
-      "aHash": "996adbd19abe24894b643215a7fbd0081f39fe937dc887b07af9ba44195a7774"
-    },
-    {
-      "id": 285,
-      "sourceGame": "costDirective",
-      "q": "Plant A increases labor and machines by 40% and output by 40%. Plant B holds machines fixed while extra workers add progressively less output. Which classification is appropriate?",
-      "options": [
-        "A: increasing returns to scale; B: economies of scope",
-        "A: constant returns to scale; B: diminishing marginal returns",
-        "A: diminishing marginal returns; B: constant returns to scale",
-        "A and B: decreasing returns to scale"
-      ],
-      "tag": "returns_to_scale",
-      "type": "identification",
-      "objective": "LO7.4",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_returns_to_scale",
-      "primarySkill": "returns_to_scale",
-      "secondarySkills": [],
-      "repairSkill": "returns_to_scale",
-      "commonError": "confuses_output_growth_with_increasing_returns",
-      "feedback": "A changes every input proportionally with proportional output. B varies labor against fixed machines. The relevant comparison differs between the two.",
-      "aHash": "aab0a00cbed167db346977a576d12700a5f0dc18667213003b8c21cc24c13e47"
-    },
-    {
       "id": 286,
       "sourceGame": "costDirective",
       "q": "A supplier's current cost is $50 per unit. Experience is expected to lower it to $40 on later comparable units while current production rate stays fixed. A manager uses $40 to justify a $43 price on all current units. What is the concern?",
@@ -6209,28 +5911,6 @@ const questionBanks = {
       "commonError": "uses_current_cost_as_permanent",
       "feedback": "At present cost, each $43 sale loses $7. Later margins may offset that loss, but the quantities and timing must be assessed; a forecast is not current cost.",
       "aHash": "880a3dfc5f40bcba164cc932a544af321ea31dbf5fd12b4fbce166d1a5113fd9"
-    },
-    {
-      "id": 287,
-      "sourceGame": "costDirective",
-      "q": "A field-service firm compares equal outputs: water testing alone costs $44,000, soil testing alone $38,000, and both together $70,000 including coordination. Which interpretation fits?",
-      "options": [
-        "This proves increasing returns to scale in a single product.",
-        "Joint provision costs $70,000 more than separate provision.",
-        "Learning is proven because the combined cost is lower.",
-        "Joint provision saves $12,000 through economies of scope."
-      ],
-      "tag": "economies_of_scope",
-      "type": "identification",
-      "objective": "LO7.7",
-      "difficulty": "hard",
-      "conceptCluster": "hard_costDirective_economies_of_scope",
-      "primarySkill": "economies_of_scope",
-      "secondarySkills": [],
-      "repairSkill": "economies_of_scope",
-      "commonError": "confuses_scope_and_scale",
-      "feedback": "Joint cost is less than the sum of separate costs by 44,000 + 38,000 - 70,000 = $12,000. The comparison is across products, not cumulative experience or a proportional input expansion.",
-      "aHash": "c4bd03452486c593e3f0c4332eaae41590d06084b889a1aaee81d793b8ee03d2"
     },
     {
       "id": 288,
@@ -6278,57 +5958,6 @@ const questionBanks = {
       "commonError": "subtracts_joint_from_one_product",
       "feedback": "The joint option costs 94,000 + 20,000 = $114,000, exceeding separate cost of $110,000. Avoidable coordination cost must be counted.",
       "aHash": "36b058a7a1f81c7856d3988115af12cd808499d8bdd01cc97ffd385b3bbbe882"
-    }
-  ],
-  "elite": [
-    {
-      "id": 300,
-      "sourceGame": "costDirective",
-      "q": "A fulfillment unit's profit fell after a speed bonus began. Orders per hour rose, paid hours stayed constant, and refunds rose. The supervisor proposes another packer. Which next step best distinguishes a capacity problem from a metric problem?",
-      "options": [
-        "Link refunds to order handling and bonus exposure, then compare net value under feasible staffing choices.",
-        "Approve the packer because lower profit establishes a labor shortage.",
-        "Double the speed bonus because measured productivity already improved.",
-        "Cancel all refunds so the original productivity improvement reaches reported profit."
-      ],
-      "tag": "problem_solving_steps",
-      "type": "integration",
-      "objective": "LO1.1",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_problem_solving",
-      "primarySkill": "problem_solving_steps",
-      "secondarySkills": [
-        "incentives",
-        "problem_diagnosis"
-      ],
-      "repairSkill": "problem_solving_steps",
-      "commonError": "solution_before_diagnosis",
-      "feedback": "The same facts are consistent with faster but less reliable work. Diagnosis needs evidence connecting decisions to downstream cost before selecting a staffing or incentive fix.",
-      "aHash": "7abb146d95c627d83fbcdaddb3b57e3491aa7d1720b688abe1fb955a21eafb07"
-    },
-    {
-      "id": 301,
-      "sourceGame": "costDirective",
-      "q": "A regional office misses its sales target. Senior leaders want to know whether the sales team, pricing policy, or product mix is the real issue. Which question best advances the diagnosis?",
-      "options": [
-        "Which manager has the highest title in the region?",
-        "What objective is being missed, and which choices could realistically change it?",
-        "Can the firm cut travel spending before examining sales activity?",
-        "Which explanation creates the least conflict among departments?"
-      ],
-      "tag": "problem_solving_steps",
-      "type": "application",
-      "objective": "LO1.1",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_problem_solving",
-      "primarySkill": "problem_solving_steps",
-      "secondarySkills": [
-        "problem_diagnosis"
-      ],
-      "repairSkill": "problem_solving_steps",
-      "commonError": "focuses_on_blame",
-      "feedback": "A useful diagnosis clarifies the objective and the decision levers that could affect it.",
-      "aHash": "c6bf6b2fdabf1bd4014e0f02c8e375036c7fc3278fa4034f4e6ea70f67558b01"
     },
     {
       "id": 302,
@@ -6343,8 +5972,8 @@ const questionBanks = {
       "tag": "problem_solving_steps",
       "type": "trap",
       "objective": "LO1.1",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_problem_solving",
+      "difficulty": "hard",
+      "conceptCluster": "hard_costDirective_problem_solving_steps",
       "primarySkill": "problem_solving_steps",
       "secondarySkills": [
         "problem_diagnosis"
@@ -6353,54 +5982,6 @@ const questionBanks = {
       "commonError": "accepts_surface_symptom",
       "feedback": "The evidence points to information timing and the booking objective, not simply the quantity of reception labor. It does not prove a single cause but challenges the stated diagnosis.",
       "aHash": "40cb5133804950cf72857fca216102aaee2fb3caf0780febb5524499de8bd5a0"
-    },
-    {
-      "id": 303,
-      "sourceGame": "costDirective",
-      "q": "A worker can spend two hours improving documentation. It reduces coworkers' future effort by six hours, but brings her no pay or recognition and costs her $50 in valued time. Which interpretation best separates private and organizational objectives?",
-      "options": [
-        "Declining proves she does not understand the six-hour saving.",
-        "A rational worker must treat coworkers' saved time as her own reward.",
-        "The firm should count only the worker's pay because time lacks economic value.",
-        "Declining can be privately rational even when the documentation creates more firm value."
-      ],
-      "tag": "rational_actor_paradigm",
-      "type": "interpretation",
-      "objective": "LO1.2",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_rational_actor",
-      "primarySkill": "rational_actor_paradigm",
-      "secondarySkills": [
-        "rational_actor_reasoning"
-      ],
-      "repairSkill": "rational_actor_paradigm",
-      "commonError": "confuses_rational_with_always_cooperative",
-      "feedback": "The benefits accrue elsewhere while she bears the effort cost. Management should investigate whether information and rewards let her share in valuable improvements.",
-      "aHash": "179f3574006098de3104510c88545f41e414a81dfe7e881df912494d335017ea"
-    },
-    {
-      "id": 304,
-      "sourceGame": "costDirective",
-      "q": "A manager says, 'If workers were rational, they would always choose the option that helps the company most.' What is wrong with that statement?",
-      "options": [
-        "Rational actors optimize according to their own incentives and constraints",
-        "Rational actors never respond to workplace incentives or constraints",
-        "Rationality means decisions are random when information is incomplete",
-        "Rationality requires employees to maximize accounting profit for the firm"
-      ],
-      "tag": "rational_actor_paradigm",
-      "type": "trap",
-      "objective": "LO1.2",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_rational_actor",
-      "primarySkill": "rational_actor_paradigm",
-      "secondarySkills": [
-        "rational_actor_reasoning"
-      ],
-      "repairSkill": "rational_actor_paradigm",
-      "commonError": "equates_rationality_with_firm_goal",
-      "feedback": "Rational behavior depends on the actor's own payoff, information, and constraints.",
-      "aHash": "b0f3bad4513d1fb431db4c104397d661ef286d6b2a7666e38b35cc822ba59719"
     },
     {
       "id": 305,
@@ -6415,8 +5996,8 @@ const questionBanks = {
       "tag": "rational_actor_paradigm",
       "type": "application",
       "objective": "LO1.2",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_rational_actor",
+      "difficulty": "hard",
+      "conceptCluster": "hard_costDirective_rational_actor_paradigm",
       "primarySkill": "rational_actor_paradigm",
       "secondarySkills": [
         "LO1.3",
@@ -6427,6 +6008,518 @@ const questionBanks = {
       "commonError": "treats_rules_as_behavior",
       "feedback": "A costs $17 in total and B $16. The bonus values the $3 invoice saving while ignoring the $4 extra failure cost.",
       "aHash": "ec6b4c577a0a4628ffe991270eb3b53001d58369f2bf736096c417aac9af1792"
+    },
+    {
+      "id": 313,
+      "sourceGame": "costDirective",
+      "q": "A depot considers a second shift bringing $14,000 in added receipts. It needs $6,000 labor, $3,000 materials and $2,000 security. It also displaces a rental earning $4,000 net. A pilot report counts only labor and materials. Which diagnosis matters before approval?",
+      "options": [
+        "The report understates the gain because rent is never an opportunity cost.",
+        "The report omits security and a forgone rental, turning a claimed $5,000 gain into a $1,000 loss.",
+        "The original building purchase must replace all pilot costs in the decision.",
+        "The shift should launch because revenue exceeds the two largest expense lines."
+      ],
+      "tag": "managerial_problem_diagnosis",
+      "type": "integration",
+      "objective": "LO1.5",
+      "difficulty": "hard",
+      "conceptCluster": "hard_costDirective_managerial_problem_diagnosis",
+      "primarySkill": "managerial_problem_diagnosis",
+      "secondarySkills": [
+        "LO3.2",
+        "LO4.3",
+        "managerial_questioning",
+        "relevant_costs"
+      ],
+      "repairSkill": "managerial_problem_diagnosis",
+      "commonError": "omits_security_and_forgone_rental",
+      "feedback": "The full comparison is 14,000 - 6,000 - 3,000 - 2,000 - 4,000 = -$1,000. The pilot's narrower arithmetic is correct but incomplete.",
+      "aHash": "c4e63ccaf04174c825940aea4ac4d25e6059f802ec07d80f61a1b5d2a8ea9eb9"
+    },
+    {
+      "id": 318,
+      "sourceGame": "costDirective",
+      "q": "A good sold for $28 before tax. After a tax, buyers pay $31 and sellers receive $24; sales fall from 500 to 420. Which conclusion is correct?",
+      "options": [
+        "Buyers bear the full $7; revenue is $3,500 on the original 500 units.",
+        "Buyers bear $3 and sellers $4; revenue is $1,260.",
+        "Buyers bear $3 and sellers $4 per surviving sale; tax revenue is $2,940.",
+        "The lost 80 sales themselves produce $560 of tax revenue."
+      ],
+      "tag": "tax_wedge_and_trade",
+      "type": "multi-step",
+      "objective": "LO2.2",
+      "difficulty": "hard",
+      "conceptCluster": "hard_costDirective_tax_wedge_and_trade",
+      "primarySkill": "tax_wedge_and_trade",
+      "secondarySkills": [
+        "barriers_to_trade"
+      ],
+      "repairSkill": "tax_wedge_and_trade",
+      "commonError": "uses_pretax_quantity_or_partial_wedge",
+      "feedback": "The price changes split the $7 wedge into $3 and $4. Revenue uses actual taxed sales: 420×7 = $2,940. Lost trades pay no tax.",
+      "aHash": "eb824bba6edb4228c000f8aa83200b7e330cd10ef9fa5d32a72cd64cd3187b3a"
+    },
+    {
+      "id": 320,
+      "sourceGame": "costDirective",
+      "q": "A venue rental floor is $75, above a stated clearing price of $60. At the floor, 100 slots are offered and 70 requested. A separate rule caps equipment rentals at $20; at that cap 95 are requested and 65 offered. Which report is accurate?",
+      "options": [
+        "Venue surplus 30; equipment shortage 30; quantities traded require matching assumptions.",
+        "Both markets have a shortage of 30 because both rules bind.",
+        "Venue shortage 30; equipment surplus 30.",
+        "Both markets must trade their larger stated quantity."
+      ],
+      "tag": "price_control_quantity_gap",
+      "type": "interpretation",
+      "objective": "LO2.2",
+      "difficulty": "hard",
+      "conceptCluster": "hard_costDirective_price_control_quantity_gap",
+      "primarySkill": "price_control_quantity_gap",
+      "secondarySkills": [
+        "barriers_to_trade"
+      ],
+      "repairSkill": "price_control_quantity_gap",
+      "commonError": "confuses_shortage_with_surplus",
+      "feedback": "At the floor, offered minus requested is 30. At the cap, requested minus offered is 30. These gaps alone do not guarantee completed matching or allocation efficiency.",
+      "aHash": "29f7df5f5facba4ebea04cff9985a9c95a18dc0d6d70ed2d0d91ff6dc83804a4"
+    },
+    {
+      "id": 321,
+      "sourceGame": "costDirective",
+      "q": "A technician can complete either 4 calibrations, each worth $180 to customers with $50 other cost, or 6 inspections, each worth $110 with $20 other cost. Technician time is the same and there are no other differences. Which assignment creates more total value?",
+      "options": [
+        "Calibrations, by $70 because each has a larger per-job gap",
+        "Inspections, by $20 for the shift",
+        "Calibrations, by $60 because their total customer value is higher",
+        "Both, because the same labor time is used"
+      ],
+      "tag": "efficiency_business_value",
+      "type": "application",
+      "objective": "LO2.3",
+      "difficulty": "hard",
+      "conceptCluster": "hard_costDirective_efficiency_business_value",
+      "primarySkill": "efficiency_business_value",
+      "secondarySkills": [
+        "asset_reallocation",
+        "efficiency_and_business"
+      ],
+      "repairSkill": "efficiency_business_value",
+      "commonError": "equates_activity_with_value",
+      "feedback": "Calibration gains are 4×(180-50) = $520; inspection gains are 6×(110-20) = $540. Compare value over the same scarce shift, not per job.",
+      "aHash": "b59b2f4c56eb3cc1fc935f295929404b9f30dc478ce8cd597a09e2b2992a2770"
+    },
+    {
+      "id": 327,
+      "sourceGame": "costDirective",
+      "q": "A branch can transfer spare inventory that is worth $12,000 locally to another branch where it is worth $19,000. Moving costs $2,000. Its manager loses an inventory-retention bonus if it transfers. Which change addresses the lost wealth?",
+      "options": [
+        "Retain the bonus and tell the manager the destination value again.",
+        "Transfer only if the receiving branch pays the original purchase cost regardless of current values.",
+        "Reward the sending branch for keeping inventory even when it has a better use elsewhere.",
+        "Credit the manager for verified firm-wide transfer gains of $5,000."
+      ],
+      "tag": "organization_wealth_creation",
+      "type": "integration",
+      "objective": "LO2.5",
+      "difficulty": "hard",
+      "conceptCluster": "hard_costDirective_organization_wealth_creation",
+      "primarySkill": "organization_wealth_creation",
+      "secondarySkills": [
+        "LO1.4",
+        "decision_rights"
+      ],
+      "repairSkill": "organization_wealth_creation",
+      "commonError": "misaligns_decision_rights",
+      "feedback": "Net gain is 19,000 - 12,000 - 2,000 = $5,000. The relevant information is available; the performance rule discourages using it.",
+      "aHash": "33304326dbf1b3b6256e0b356bf57ebf23e842c98c9a724d685f8f9153237412"
+    },
+    {
+      "id": 332,
+      "sourceGame": "costDirective",
+      "q": "A hall can host one workshop or rent to a club this weekend. Workshop receipts are $4,800, catering is $1,400 and extra staffing $900. The club pays $2,200 but needs $300 cleaning. Unchanged building costs are $700. How much better is the workshop?",
+      "options": [
+        "$600",
+        "$300",
+        "$2,500",
+        "-$100"
+      ],
+      "tag": "opportunity_cost",
+      "type": "calculation",
+      "objective": "LO3.1",
+      "difficulty": "hard",
+      "conceptCluster": "hard_costDirective_opportunity_cost",
+      "primarySkill": "opportunity_cost",
+      "secondarySkills": [
+        "LO3.2"
+      ],
+      "repairSkill": "opportunity_cost",
+      "commonError": "ignores_forgone_alternative",
+      "feedback": "Workshop contribution is $2,500; rental net is $1,900. Their difference is $600. Neither alternative changes the $700 building cost.",
+      "aHash": "2afd4624f5de4d9eb184259dd84cbc3275c7f984e204c0d286a2fdfc7b1ce7f8"
+    },
+    {
+      "id": 333,
+      "sourceGame": "costDirective",
+      "q": "A company prepaid a $12,000 prototype with no recovery value. Finishing costs $7,000 and yields $13,000 sales. Canceling now permits selling unused materials for $2,000; finishing consumes them. What does relevant-cost reasoning recommend?",
+      "options": [
+        "Finish; it adds $6,000 because materials are already owned.",
+        "Finish; it adds $4,000 compared with canceling.",
+        "Cancel; including the prototype makes the project lose $6,000.",
+        "Cancel; resale value is relevant only when a sale has already occurred."
+      ],
+      "tag": "relevant_costs_benefits",
+      "type": "trap",
+      "objective": "LO3.2",
+      "difficulty": "hard",
+      "conceptCluster": "hard_costDirective_relevant_costs_benefits",
+      "primarySkill": "relevant_costs_benefits",
+      "secondarySkills": [
+        "sunk_cost_reasoning",
+        "relevant_costs"
+      ],
+      "repairSkill": "relevant_costs_benefits",
+      "commonError": "includes_sunk_cost",
+      "feedback": "Finishing nets $6,000 in future cash but sacrifices the $2,000 cancellation receipt. Its advantage is $4,000; the sunk prototype does not change.",
+      "aHash": "ca34fae07a445afc7f6a955676b35793f25cb3eebe34cc8bba49102d3aee6179"
+    },
+    {
+      "id": 336,
+      "sourceGame": "costDirective",
+      "q": "A cost table covers one month with unchanged fixed commitments.<table><thead><tr><th scope=\"col\">Units</th><th scope=\"col\">Fixed cost</th><th scope=\"col\">Variable cost</th><th scope=\"col\">Total cost</th></tr></thead><tbody><tr><td>0</td><td>?</td><td>$0</td><td>$1,600</td></tr><tr><td>200</td><td>?</td><td>$2,400</td><td>?</td></tr><tr><td>300</td><td>?</td><td>?</td><td>$5,500</td></tr></tbody></table>What are AVC at 300 and the total cost increase from 200 to 300?",
+      "options": [
+        "$13 per unit; $1,500",
+        "$18.33 per unit; $1,500",
+        "$13 per unit; $3,100",
+        "$12 per unit; $1,600"
+      ],
+      "tag": "fixed_variable_costs",
+      "type": "calculation",
+      "objective": "LO3.3",
+      "difficulty": "hard",
+      "conceptCluster": "hard_costDirective_fixed_variable_costs",
+      "primarySkill": "fixed_variable_costs",
+      "secondarySkills": [
+        "variable_cost"
+      ],
+      "repairSkill": "fixed_variable_costs",
+      "commonError": "includes_fixed_cost",
+      "feedback": "Fixed cost is $1,600. VC at 300 is $3,900, so AVC is $13. TC at 200 is $4,000; the increase is $1,500.",
+      "aHash": "fba5822545f9a1fe48deffa17bcbd797cca364bc7956e78e253ed93101fea70f"
+    },
+    {
+      "id": 338,
+      "sourceGame": "costDirective",
+      "q": "A plant guarantees $2,000 rent and $1,000 supervisor pay monthly. Materials cost $4 and piecework $3 per unit. Beyond 500 units it must hire an extra supervisor for $800 for the month. What is the cost increase from 400 to 600 units?",
+      "options": [
+        "$1,400",
+        "$5,200",
+        "$2,200",
+        "$800"
+      ],
+      "tag": "fixed_variable_costs",
+      "type": "calculation",
+      "objective": "LO3.3",
+      "difficulty": "hard",
+      "conceptCluster": "hard_costDirective_fixed_variable_costs",
+      "primarySkill": "fixed_variable_costs",
+      "secondarySkills": [
+        "variable_cost"
+      ],
+      "repairSkill": "fixed_variable_costs",
+      "commonError": "adds_unchanged_fixed_cost",
+      "feedback": "The extra 200 units cost $1,400 in variable inputs and trigger an avoidable $800 step cost. Existing commitments do not change, but the new supervisor cost does.",
+      "aHash": "262d72bc5bed331d13453691a705ba3e784e41db9a185f78c277840ed985dac4"
+    },
+    {
+      "id": 339,
+      "sourceGame": "costDirective",
+      "q": "Annual receipts are $230,000. Paid payroll is $78,000, supplies $46,000 and rent $22,000. The owner's time could earn $65,000 and her invested capital could earn $9,000, independently. With no other costs, what are accounting and economic profit?",
+      "options": [
+        "$10,000 and $84,000",
+        "$84,000 and $19,000",
+        "$106,000 and $32,000",
+        "$84,000 and $10,000"
+      ],
+      "tag": "accounting_economic_profit",
+      "type": "calculation",
+      "objective": "LO3.4",
+      "difficulty": "hard",
+      "conceptCluster": "hard_costDirective_accounting_economic_profit",
+      "primarySkill": "accounting_economic_profit",
+      "secondarySkills": [
+        "economic_profit",
+        "accounting_vs_economic_profit"
+      ],
+      "repairSkill": "accounting_economic_profit",
+      "commonError": "ignores_implicit_costs",
+      "feedback": "Explicit costs total $146,000; accounting profit is $84,000. Both owner labor and capital alternatives are implicit costs, leaving $10,000.",
+      "aHash": "3d4e9ef2cadf7b309c6bc205796aac2f082ac78b53d6a6d411d1a4a151e111b2"
+    },
+    {
+      "id": 342,
+      "sourceGame": "costDirective",
+      "q": "A team receives $500 only if monthly shipments reach 100, with no payment for additional shipments. At 99 it can finish one order early at $80 extra cost to the firm; the customer values early delivery at only $20. Employees bear no extra private cost. What is the incentive-design concern?",
+      "options": [
+        "No incentive exists because the payment is a fixed $500 amount",
+        "The threshold guarantees the marginal reward equals the firm’s marginal benefit",
+        "The threshold can reward acceleration that costs $60 more than its added value",
+        "Any completed shipment creates at least $500 of firm value"
+      ],
+      "tag": "incentive_system_design",
+      "type": "diagnosis",
+      "objective": "LO1.3",
+      "difficulty": "hard",
+      "conceptCluster": "hard_costDirective_incentive_system_design",
+      "primarySkill": "incentive_system_design",
+      "secondarySkills": [],
+      "repairSkill": "incentive_system_design",
+      "commonError": "treats_threshold_bonus_as_no_marginal_incentive",
+      "feedback": "Crossing the threshold changes private pay by 500, while acceleration adds 20 value and 80 resource cost. A lump-sum bonus can create a strong marginal incentive at its cutoff.",
+      "aHash": "8a5e686b11fd599a0abdd00ae4533697a82dc3ea2e41f8a2370c44ecc0ae0a4e"
+    },
+    {
+      "id": 344,
+      "sourceGame": "costDirective",
+      "q": "A firm paid $40,000 for custom displays with no resale value. Switching layouts costs $6,000 now and raises contribution $1,800 monthly for the next four months only. Ignore discounting and other effects. Which amount should drive the choice?",
+      "options": [
+        "A $1,200 gain from switching",
+        "A $38,800 loss including the old display cost",
+        "A $7,200 gain ignoring the new layout cost",
+        "A $6,000 loss because making the old display idle destroys that amount"
+      ],
+      "tag": "fixed_cost_fallacy",
+      "type": "application",
+      "objective": "LO3.5",
+      "difficulty": "hard",
+      "conceptCluster": "hard_costDirective_fixed_cost_fallacy",
+      "primarySkill": "fixed_cost_fallacy",
+      "secondarySkills": [],
+      "repairSkill": "fixed_cost_fallacy",
+      "commonError": "sunk_cost_bias",
+      "feedback": "Future contribution is 4×1,800 = $7,200, less $6,000 switching cost. The old display outlay is unrecoverable under either choice.",
+      "aHash": "02d0a607133000727821fe897a43b356100f84372ef1f5bbd28731eaad702ba8"
+    },
+    {
+      "id": 349,
+      "sourceGame": "costDirective",
+      "q": "A ledger gives 80 units at $2,400 total cost. At 100 units, AVC is $21 and fixed cost is $900, unchanged across rows. What is incremental cost per unit for the added output?",
+      "options": [
+        "$21",
+        "$30",
+        "$24",
+        "$600"
+      ],
+      "tag": "average_vs_marginal_cost",
+      "type": "calculation",
+      "objective": "LO4.1",
+      "difficulty": "hard",
+      "conceptCluster": "hard_costDirective_average_vs_marginal_cost",
+      "primarySkill": "average_vs_marginal_cost",
+      "secondarySkills": [
+        "marginal_cost",
+        "average_marginal_cost"
+      ],
+      "repairSkill": "average_vs_marginal_cost",
+      "commonError": "divides_total_cost_by_total_output",
+      "feedback": "TC at 100 is 100×21 + 900 = $3,000. The increase is $600 over 20 units, or $30 each. AVC at the endpoint is not interval MC.",
+      "aHash": "e3aae7bc0e5ad26dcf3912c166846dff1e00a3887aeb53c3363722bba19b16bd"
+    },
+    {
+      "id": 351,
+      "sourceGame": "costDirective",
+      "q": "Fixed monthly cost is unchanged in this schedule.<table><thead><tr><th scope=\"col\">Units</th><th scope=\"col\">VC</th><th scope=\"col\">TC</th><th scope=\"col\">Revenue</th></tr></thead><tbody><tr><td>0</td><td>$0</td><td>$600</td><td>$0</td></tr><tr><td>40</td><td>$1,000</td><td>?</td><td>$1,800</td></tr><tr><td>60</td><td>?</td><td>$2,200</td><td>$2,500</td></tr></tbody></table>What are MC and MR per extra unit from 40 to 60?",
+      "options": [
+        "MC $36.67; MR $41.67",
+        "MC $60; MR $35",
+        "MC $600; MR $700",
+        "MC $30; MR $35"
+      ],
+      "tag": "ac_mc_mr_calculation",
+      "type": "multi-step",
+      "objective": "LO4.2",
+      "difficulty": "hard",
+      "conceptCluster": "hard_costDirective_ac_mc_mr_calculation",
+      "primarySkill": "ac_mc_mr_calculation",
+      "secondarySkills": [
+        "ac_mc_calculation",
+        "compute_ac_mc_mr"
+      ],
+      "repairSkill": "ac_mc_mr_calculation",
+      "commonError": "confuses_total_and_marginal",
+      "feedback": "TC at 40 is $1,600, so the $600 increase over 20 units gives MC $30. Revenue rises $700, giving MR $35.",
+      "aHash": "7e4da8914e13546321999b06e32de9e8046900ffe69cd58b7ba8f724ca00c828"
+    },
+    {
+      "id": 367,
+      "sourceGame": "costDirective",
+      "q": "A workshop's total cost is $6,000 at 200 units. At 300 units its average cost is $26. What is the cost per added unit, and why can AC fall while total cost rises?",
+      "options": [
+        "$26; marginal cost equals the new average by definition.",
+        "$78; divide the new total cost by only the extra units.",
+        "$30; the original average is the cost of all future units.",
+        "$18; added units cost less than the original $30 average."
+      ],
+      "tag": "average_cost_output",
+      "type": "multi-step",
+      "objective": "LO7.3",
+      "difficulty": "hard",
+      "conceptCluster": "hard_costDirective_average_cost_output",
+      "primarySkill": "average_cost_output",
+      "secondarySkills": [
+        "average_cost_calculation"
+      ],
+      "repairSkill": "average_cost_output",
+      "commonError": "uses_change_in_cost_only",
+      "feedback": "New TC is 300×26 = $7,800. The $1,800 increase over 100 units is $18 each, pulling the original $30 average down.",
+      "aHash": "eb2d15c2297f64f2b22052a19973b20af4cb6eef8f8ff76e9d2a30b6b349d62d"
+    },
+    {
+      "id": 369,
+      "sourceGame": "costDirective",
+      "q": "All inputs rise by 25% and output rises from 400 to 520. Input prices are unchanged, so cost rises from $8,000 to $10,000. Which pair of conclusions fits?",
+      "options": [
+        "Decreasing returns to scale; AC rises because total cost rises.",
+        "Increasing returns to scale; AC falls from $20 to about $19.23.",
+        "Constant returns to scale; output and input both increase.",
+        "Diminishing marginal returns; machinery was held fixed."
+      ],
+      "tag": "returns_to_scale",
+      "type": "calculation",
+      "objective": "LO7.4",
+      "difficulty": "hard",
+      "conceptCluster": "hard_costDirective_returns_to_scale",
+      "primarySkill": "returns_to_scale",
+      "secondarySkills": [],
+      "repairSkill": "returns_to_scale",
+      "commonError": "confuses_scale_with_dmr",
+      "feedback": "Output grows 30%, more than all inputs' 25%. AC is 8,000/400 = $20 versus 10,000/520 ≈ $19.23.",
+      "aHash": "a8a2190c5381ce7ec296809aa52d500f88d527ab1ab577615d7b09ec275cd8d4"
+    },
+    {
+      "id": 376,
+      "sourceGame": "costDirective",
+      "q": "A two-batch contract pays $46 per unit for 100 units in each batch. Forecast unit costs are $55 then $35 due to learning, with no other costs or discounting. Which evaluation is correct?",
+      "options": [
+        "The full contract earns $200 despite losing $900 on the first batch.",
+        "Reject automatically because the first batch's price is below its cost.",
+        "The contract earns $2,200 because the learned cost applies to all units.",
+        "The contract loses $1,800 because the first cost persists throughout."
+      ],
+      "tag": "learning_curve",
+      "type": "multi-step",
+      "objective": "LO7.6",
+      "difficulty": "hard",
+      "conceptCluster": "hard_costDirective_learning_curve",
+      "primarySkill": "learning_curve",
+      "secondarySkills": [
+        "learning_curve_strategy",
+        "learning_curves"
+      ],
+      "repairSkill": "learning_curve",
+      "commonError": "ignores_future_cost_decline",
+      "feedback": "Revenue is 200×46 = $9,200; forecast cost is 100×55 + 100×35 = $9,000. First-batch loss is $900; second-batch gain is $1,100.",
+      "aHash": "25d1178f71c9329dc7b793754f88097bb1531f9ba08c7061049c8f703a257166"
+    },
+    {
+      "id": 378,
+      "sourceGame": "costDirective",
+      "q": "Separate production of two diagnostic kits costs $96,000 and $74,000 annually. Shared production costs $142,000 plus $11,000 coordination and $9,000 additional expected warranty cost. Same outputs and quality obligations apply. What is the net scope saving?",
+      "options": [
+        "$28,000",
+        "$17,000",
+        "$8,000",
+        "-$8,000"
+      ],
+      "tag": "economies_of_scope",
+      "type": "multi-step",
+      "objective": "LO7.7",
+      "difficulty": "hard",
+      "conceptCluster": "hard_costDirective_economies_of_scope",
+      "primarySkill": "economies_of_scope",
+      "secondarySkills": [],
+      "repairSkill": "economies_of_scope",
+      "commonError": "confuses_joint_cost_with_savings",
+      "feedback": "All-in joint cost is $162,000 versus $170,000 separately. Ignoring coordination or warranty exaggerates the saving.",
+      "aHash": "c94f532439ac07e039fde3052a4e3c0fc4761288418d39e622ac0e25116da0c8"
+    },
+    {
+      "id": 387,
+      "sourceGame": "costDirective",
+      "q": "A firm adds a second product that uses the same warehouse. Joint warehousing lowers total distribution cost, but managers are rewarded by product-line profit after allocated warehouse charges. What problem could occur?",
+      "options": [
+        "Sharing a warehouse proves no additional coordination costs can arise",
+        "Allocated product charges necessarily equal the costs caused by adding the product",
+        "Any product with a negative allocated margin must reduce total firm value",
+        "Managers may reject a scope-saving product because allocation hides joint savings"
+      ],
+      "tag": "economies_of_scope",
+      "type": "integration",
+      "objective": "LO7.7",
+      "difficulty": "hard",
+      "conceptCluster": "hard_costDirective_economies_of_scope",
+      "primarySkill": "economies_of_scope",
+      "secondarySkills": [
+        "LO2.5",
+        "LO3.2"
+      ],
+      "repairSkill": "economies_of_scope",
+      "commonError": "uses_allocation_as_marginal_cost",
+      "feedback": "Accounting allocations can hide joint cost savings from economies of scope.",
+      "aHash": "d747241b2a2825316d104a0f009b7dfb962f563ba356beca0785b084a8df79cb"
+    },
+    {
+      "id": 389,
+      "sourceGame": "costDirective",
+      "q": "A pilot loses $8,000 this month but creates experience expected to reduce relevant cost by $3 per unit on 4,000 later units. Later orders are committed; the pilot has no other benefits or costs and discounting is ignored. What lifecycle evaluation is appropriate?",
+      "options": [
+        "Reject because a current loss can never be recovered through learning.",
+        "Proceed on these forecasts: later savings exceed the pilot loss by $4,000.",
+        "Proceed with a $12,000 net gain because the pilot loss is irrelevant before approval.",
+        "Proceed because future learning proves the firm is already at MES."
+      ],
+      "tag": "learning_curve",
+      "type": "multi-step",
+      "objective": "LO7.6",
+      "difficulty": "hard",
+      "conceptCluster": "hard_costDirective_learning_curve",
+      "primarySkill": "learning_curve",
+      "secondarySkills": [
+        "LO7.5",
+        "learning_curve_strategy",
+        "learning_curves"
+      ],
+      "repairSkill": "learning_curve",
+      "commonError": "single_period_thinking",
+      "feedback": "Before approval, the pilot loss is avoidable and must be counted. Forecast savings are 3×4,000 = $12,000, exceeding $8,000 by $4,000. This does not prove MES.",
+      "aHash": "2f32b044fe18051debe5314080bd7198c324fa053fa55d90ea666a88e977586a"
+    }
+  ],
+  "elite": [
+    {
+      "id": 300,
+      "sourceGame": "costDirective",
+      "q": "A fulfillment unit's profit fell after a speed bonus began. Orders per hour rose, paid hours stayed constant, and refunds rose. The supervisor proposes another packer. Which next step best distinguishes a capacity problem from a metric problem?",
+      "options": [
+        "Link refunds to order handling and bonus exposure, then compare net value under feasible staffing choices",
+        "Approve the packer because lower profit establishes a labor shortage",
+        "Double the speed bonus because measured productivity improved",
+        "Rank teams by orders per hour without accounting for attributable refunds"
+      ],
+      "tag": "problem_solving_steps",
+      "type": "integration",
+      "objective": "LO1.1",
+      "difficulty": "elite",
+      "conceptCluster": "elite_costDirective_problem_solving",
+      "primarySkill": "problem_solving_steps",
+      "secondarySkills": [
+        "incentives",
+        "problem_diagnosis"
+      ],
+      "repairSkill": "problem_solving_steps",
+      "commonError": "solution_before_diagnosis",
+      "feedback": "The same facts are consistent with faster but less reliable work. Diagnosis needs evidence connecting decisions to downstream cost before selecting a staffing or incentive fix.",
+      "aHash": "33fe9a30a2a5a1b27256763fcf7d608c6f57fe9e4e5ae2589f45078dc7f962b3"
     },
     {
       "id": 306,
@@ -6454,31 +6547,6 @@ const questionBanks = {
       "aHash": "dc4f16194b31d176330ce4903d676a7964f7c4c112c3e7763e28956106590e15"
     },
     {
-      "id": 307,
-      "sourceGame": "costDirective",
-      "q": "A sales bonus is based on total regional revenue, but individual employees have little control over regional demand. What is the strongest concern?",
-      "options": [
-        "The reward will be too large if demand is high",
-        "The system is invalid because all bonuses must be based on seniority",
-        "The firm should remove all performance measures from compensation",
-        "The metric may be weak because employees cannot clearly affect it"
-      ],
-      "tag": "incentive_system_design",
-      "type": "trap",
-      "objective": "LO1.3",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_incentive_design",
-      "primarySkill": "incentive_system_design",
-      "secondarySkills": [
-        "incentive_alignment",
-        "incentive_components"
-      ],
-      "repairSkill": "incentive_system_design",
-      "commonError": "ignores_controllability",
-      "feedback": "Incentives work best when performance measures are clear, observable, and meaningfully influenced by the worker.",
-      "aHash": "1256769083299e5329e0ada41124b05b7a769f8265df1003e51e0b465df3dbf0"
-    },
-    {
       "id": 308,
       "sourceGame": "costDirective",
       "q": "A shop can reward units started or accepted units net of rework. A team starts 120, delivers 100 accepted units, and incurs $240 rework cost; another starts 110, delivers 105, and incurs $60 rework. Each accepted unit contributes $20 before rework. Which measure ranks the teams consistently with value?",
@@ -6489,7 +6557,7 @@ const questionBanks = {
         "Rework spending alone; it captures all customer value and output differences."
       ],
       "tag": "incentive_system_design",
-      "type": "integration",
+      "type": "multi-step",
       "objective": "LO1.3",
       "difficulty": "elite",
       "conceptCluster": "elite_costDirective_incentive_design",
@@ -6503,56 +6571,6 @@ const questionBanks = {
       "commonError": "ignores_multitasking_tradeoff",
       "feedback": "Net values are 100×20 - 240 = $1,760 and 105×20 - 60 = $2,040. The measure includes both useful output and its quality cost.",
       "aHash": "eb8ecb493c99de50c22b5d7bbd6675b2e19c297bd7401b535dbe8d794d1982cd"
-    },
-    {
-      "id": 309,
-      "sourceGame": "costDirective",
-      "q": "Store managers see local sales prospects. Central analysts see delivery costs, and managers receive bonuses for revenue. A locally attractive order loses money after delivery. Which organizational change is most complete?",
-      "options": [
-        "Share delivery estimates but continue to reward only sales revenue.",
-        "Share delivery-cost estimates with managers and reward contribution after those costs.",
-        "Centralize all orders while discarding managers' local customer information.",
-        "Reward order count so that delivery costs average out automatically."
-      ],
-      "tag": "organization_design_info_incentives",
-      "type": "application",
-      "objective": "LO1.4",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_organization_design",
-      "primarySkill": "organization_design_info_incentives",
-      "secondarySkills": [
-        "information_incentive_alignment",
-        "organization_design"
-      ],
-      "repairSkill": "organization_design_info_incentives",
-      "commonError": "separates_information_from_incentives",
-      "feedback": "Good decision rights require relevant information and aligned incentives together. Neither a data feed nor a narrower sales target by itself fixes both weaknesses.",
-      "aHash": "73cd4abf4ffc8471e3a090f4b4f7e1f6a879653a89da1e68a0f056f4dbfd71ce"
-    },
-    {
-      "id": 310,
-      "sourceGame": "costDirective",
-      "q": "A firm decentralizes pricing decisions to local managers but judges them only on revenue, not profit. What is the likely risk?",
-      "options": [
-        "Local managers will lack any information about their markets",
-        "Decentralization always creates diseconomies of scale",
-        "Managers may cut prices to raise revenue while reducing profit",
-        "Profit will rise because revenue and profit are identical"
-      ],
-      "tag": "organization_design_info_incentives",
-      "type": "trap",
-      "objective": "LO1.4",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_organization_design",
-      "primarySkill": "organization_design_info_incentives",
-      "secondarySkills": [
-        "information_incentive_alignment",
-        "organization_design"
-      ],
-      "repairSkill": "organization_design_info_incentives",
-      "commonError": "uses_wrong_performance_measure",
-      "feedback": "Decision rights and performance measures must align with the objective being pursued.",
-      "aHash": "3eaed6cebc1b1bee8457d02f8e72c8ed885b42e73dabd584ae4d0f5f409fbda8"
     },
     {
       "id": 311,
@@ -6605,58 +6623,6 @@ const questionBanks = {
       "aHash": "594e33c7c25b047651ea7cbd40ca84721a3bf7da92170692d87f3f3ba2493432"
     },
     {
-      "id": 313,
-      "sourceGame": "costDirective",
-      "q": "A depot considers a second shift bringing $14,000 in added receipts. It needs $6,000 labor, $3,000 materials and $2,000 security. It also displaces a rental earning $4,000 net. A pilot report counts only labor and materials. Which diagnosis matters before approval?",
-      "options": [
-        "The report understates the gain because rent is never an opportunity cost.",
-        "The report omits security and a forgone rental, turning a claimed $5,000 gain into a $1,000 loss.",
-        "The original building purchase must replace all pilot costs in the decision.",
-        "The shift should launch because revenue exceeds the two largest expense lines."
-      ],
-      "tag": "managerial_problem_diagnosis",
-      "type": "integration",
-      "objective": "LO1.5",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_problem_questions",
-      "primarySkill": "managerial_problem_diagnosis",
-      "secondarySkills": [
-        "LO3.2",
-        "LO4.3",
-        "managerial_questioning",
-        "relevant_costs"
-      ],
-      "repairSkill": "managerial_problem_diagnosis",
-      "commonError": "uses_accounting_categories_only",
-      "feedback": "The full comparison is 14,000 - 6,000 - 3,000 - 2,000 - 4,000 = -$1,000. The pilot's narrower arithmetic is correct but incomplete.",
-      "aHash": "c4e63ccaf04174c825940aea4ac4d25e6059f802ec07d80f61a1b5d2a8ea9eb9"
-    },
-    {
-      "id": 314,
-      "sourceGame": "costDirective",
-      "q": "A manager says, 'The solution is obvious: outsource delivery.' Which response best applies disciplined problem solving?",
-      "options": [
-        "Outsourcing is usually cheaper, so the proposal should be accepted",
-        "The firm should reject outsourcing because outside suppliers always shirk",
-        "First compare in-house and outsourced delivery on cost, quality, control, and incentives",
-        "Only accounting costs matter because delivery is an operating expense"
-      ],
-      "tag": "managerial_problem_diagnosis",
-      "type": "trap",
-      "objective": "LO1.5",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_problem_questions",
-      "primarySkill": "managerial_problem_diagnosis",
-      "secondarySkills": [
-        "managerial_questioning",
-        "problem_solving_questions"
-      ],
-      "repairSkill": "managerial_problem_diagnosis",
-      "commonError": "solution_before_diagnosis",
-      "feedback": "The manager should analyze the objective, alternatives, and tradeoffs before selecting a solution.",
-      "aHash": "16407cbe9416c73ecd9d836cfda24d30995311f70e3a8316131ef584d421fea7"
-    },
-    {
       "id": 315,
       "sourceGame": "costDirective",
       "q": "A seller requires $120 net for a device and a buyer values it at $190. Buyer-paid delivery consumes $10 of resources and a seller-remitted tax is $20. A price of $150 is paid to the seller before tax. What are buyer gain, seller gain and government revenue?",
@@ -6667,7 +6633,7 @@ const questionBanks = {
         "$30, $10 and $20 respectively"
       ],
       "tag": "voluntary_transactions_surplus",
-      "type": "calculation",
+      "type": "multi-step",
       "objective": "LO2.1",
       "difficulty": "elite",
       "conceptCluster": "elite_costDirective_voluntary_exchange",
@@ -6680,31 +6646,6 @@ const questionBanks = {
       "commonError": "confuses_price_with_surplus",
       "feedback": "Buyer gain is 190 - 150 - 10 = $30; seller gain is 150 - 20 - 120 = $10. Government receives $20. Private gains plus revenue total $60, equal to value minus reservation cost and delivery.",
       "aHash": "18c519d7191a124eb035a1b19896433abd45ef05d78d376a61e436bf2c7ae57c"
-    },
-    {
-      "id": 316,
-      "sourceGame": "costDirective",
-      "q": "Two firms voluntarily trade only if each expects to be better off. What does this imply about value creation?",
-      "options": [
-        "Trade can create wealth even though the price only divides the surplus",
-        "Every voluntary trade makes both sides equally better off",
-        "Trade creates wealth only when the seller receives the full buyer value",
-        "Voluntary exchange cannot create wealth because cash merely changes hands"
-      ],
-      "tag": "voluntary_transactions_surplus",
-      "type": "interpretation",
-      "objective": "LO2.1",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_voluntary_exchange",
-      "primarySkill": "voluntary_transactions_surplus",
-      "secondarySkills": [
-        "surplus_reasoning",
-        "surplus_from_trade"
-      ],
-      "repairSkill": "voluntary_transactions_surplus",
-      "commonError": "sees_trade_as_zero_sum",
-      "feedback": "Voluntary exchange can move goods or assets to higher-valued uses, creating surplus.",
-      "aHash": "3150c781bb434896ff2b8ce89e68576d4fb5f99420d69d65c234446f9030e6a0"
     },
     {
       "id": 317,
@@ -6731,131 +6672,6 @@ const questionBanks = {
       "commonError": "ignores_blocked_surplus",
       "feedback": "Without the cap, efficient matching yields gaps $60, $22 and -$25, so two trades create gains. At a maximum payment of $55, only the $40-cost seller can be paid enough.",
       "aHash": "c3d065cdece670107f79620981d15415ee8daddae66da41033e5bbe2f1ed2f3b"
-    },
-    {
-      "id": 318,
-      "sourceGame": "costDirective",
-      "q": "A good sold for $28 before tax. After a tax, buyers pay $31 and sellers receive $24; sales fall from 500 to 420. Which conclusion is correct?",
-      "options": [
-        "Buyers bear the full $7; revenue is $3,500 on the original 500 units.",
-        "Buyers bear $3 and sellers $4; revenue is $1,260.",
-        "Buyers bear $3 and sellers $4 per surviving sale; tax revenue is $2,940.",
-        "The lost 80 sales themselves produce $560 of tax revenue."
-      ],
-      "tag": "barriers_to_trade",
-      "type": "application",
-      "objective": "LO2.2",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_impediments",
-      "primarySkill": "barriers_to_trade",
-      "secondarySkills": [
-        "transaction_costs",
-        "impediments_to_trade"
-      ],
-      "repairSkill": "barriers_to_trade",
-      "commonError": "ignores_transaction_costs",
-      "feedback": "The price changes split the $7 wedge into $3 and $4. Revenue uses actual taxed sales: 420×7 = $2,940. Lost trades pay no tax.",
-      "aHash": "eb824bba6edb4228c000f8aa83200b7e330cd10ef9fa5d32a72cd64cd3187b3a"
-    },
-    {
-      "id": 319,
-      "sourceGame": "costDirective",
-      "q": "Which situation best illustrates an information problem impeding movement to a higher-valued use?",
-      "options": [
-        "A buyer pays a high price for a machine that all parties understand perfectly",
-        "A firm shifts a machine to the unit that values it most highly",
-        "A tax form is easy to file and does not change any trading decision",
-        "A seller refuses to sell equipment because buyers cannot verify its condition"
-      ],
-      "tag": "barriers_to_trade",
-      "type": "identification",
-      "objective": "LO2.2",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_impediments",
-      "primarySkill": "barriers_to_trade",
-      "secondarySkills": [
-        "information_barriers",
-        "impediments_to_trade"
-      ],
-      "repairSkill": "barriers_to_trade",
-      "commonError": "confuses_trade_with_barrier",
-      "feedback": "When quality or condition cannot be verified, good trades may fail.",
-      "aHash": "298baad437f99e220362a2e55d52e9452e0d6a7ad219c970dd594e5e70c523dc"
-    },
-    {
-      "id": 320,
-      "sourceGame": "costDirective",
-      "q": "A venue rental floor is $75, above a stated clearing price of $60. At the floor, 100 slots are offered and 70 requested. A separate rule caps equipment rentals at $20; at that cap 95 are requested and 65 offered. Which report is accurate?",
-      "options": [
-        "Venue surplus 30; equipment shortage 30; quantities traded require matching assumptions.",
-        "Both markets have a shortage of 30 because both rules bind.",
-        "Venue shortage 30; equipment surplus 30.",
-        "Both markets must trade their larger stated quantity."
-      ],
-      "tag": "barriers_to_trade",
-      "type": "application",
-      "objective": "LO2.2",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_impediments",
-      "primarySkill": "barriers_to_trade",
-      "secondarySkills": [
-        "barriers_to_entry",
-        "impediments_to_trade"
-      ],
-      "repairSkill": "barriers_to_trade",
-      "commonError": "ignores_asset_mobility",
-      "feedback": "At the floor, offered minus requested is 30. At the cap, requested minus offered is 30. These gaps alone do not guarantee completed matching or allocation efficiency.",
-      "aHash": "29f7df5f5facba4ebea04cff9985a9c95a18dc0d6d70ed2d0d91ff6dc83804a4"
-    },
-    {
-      "id": 321,
-      "sourceGame": "costDirective",
-      "q": "A technician can complete either 4 calibrations, each worth $180 to customers with $50 other cost, or 6 inspections, each worth $110 with $20 other cost. Technician time is the same and there are no other differences. Which assignment creates more total value?",
-      "options": [
-        "Calibrations, by $70 because each has a larger per-job gap",
-        "Inspections, by $20 for the shift",
-        "Calibrations, by $60 because their total customer value is higher",
-        "Both, because the same labor time is used"
-      ],
-      "tag": "efficiency_business_value",
-      "type": "application",
-      "objective": "LO2.3",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_efficiency",
-      "primarySkill": "efficiency_business_value",
-      "secondarySkills": [
-        "asset_reallocation",
-        "efficiency_and_business"
-      ],
-      "repairSkill": "efficiency_business_value",
-      "commonError": "equates_activity_with_value",
-      "feedback": "Calibration gains are 4×(180-50) = $520; inspection gains are 6×(110-20) = $540. Compare value over the same scarce shift, not per job.",
-      "aHash": "b59b2f4c56eb3cc1fc935f295929404b9f30dc478ce8cd597a09e2b2992a2770"
-    },
-    {
-      "id": 322,
-      "sourceGame": "costDirective",
-      "q": "A factory reduces material waste while producing the same output and quality. Which statement best explains why this helps the business?",
-      "options": [
-        "It raises fixed cost so the firm can report a larger asset base",
-        "It proves marginal cost must exceed marginal revenue",
-        "It lowers resource use per unit without reducing customer value",
-        "It creates value only if employees work longer hours"
-      ],
-      "tag": "efficiency_business_value",
-      "type": "interpretation",
-      "objective": "LO2.3",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_efficiency",
-      "primarySkill": "efficiency_business_value",
-      "secondarySkills": [
-        "cost_efficiency",
-        "efficiency_and_business"
-      ],
-      "repairSkill": "efficiency_business_value",
-      "commonError": "ignores_resource_savings",
-      "feedback": "Using fewer resources to produce the same value improves efficiency and can increase profit.",
-      "aHash": "8be6f53a6dc17827e410c3c257b5aa9ec3bb99a41fdfecdda44ff84ee574b62e"
     },
     {
       "id": 323,
@@ -6893,7 +6709,7 @@ const questionBanks = {
         "$1,392"
       ],
       "tag": "value_gap_opportunities",
-      "type": "calculation",
+      "type": "multi-step",
       "objective": "LO2.4",
       "difficulty": "elite",
       "conceptCluster": "elite_costDirective_opportunities",
@@ -6906,32 +6722,6 @@ const questionBanks = {
       "commonError": "confuses_revenue_with_profit",
       "feedback": "Receipts are 16×85 + 4×8 = $1,392. Purchase, repair and testing total 800 + 240 + 120 = $1,160, leaving $232. Failed items still cost money to acquire.",
       "aHash": "fcd2f9e946fb715a0dfe0746cb13f434ae47f589ee53a58cea57cfe0b0cb71ae"
-    },
-    {
-      "id": 325,
-      "sourceGame": "costDirective",
-      "q": "A manager notices unused warehouse space could be rented for $12,000 per month or used for a project earning $9,000 per month after explicit costs. What should the manager infer?",
-      "options": [
-        "The project creates $9,000 of economic profit because explicit costs are covered",
-        "Using the space internally has a $12,000 opportunity cost",
-        "The rental option is irrelevant because no cash is paid to use owned space",
-        "The space has no value unless it appears as depreciation expense"
-      ],
-      "tag": "value_gap_opportunities",
-      "type": "trap",
-      "objective": "LO2.4",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_opportunities",
-      "primarySkill": "value_gap_opportunities",
-      "secondarySkills": [
-        "LO3.1",
-        "opportunity_cost",
-        "money_making_opportunities"
-      ],
-      "repairSkill": "value_gap_opportunities",
-      "commonError": "ignores_owned_asset_opportunity_cost",
-      "feedback": "The forgone rental income is an opportunity cost of using the space internally.",
-      "aHash": "7579f0c5ceb003909e181e701e7f3635f423ccc8bd02c31d6fc12bae5362d03b"
     },
     {
       "id": 326,
@@ -6959,31 +6749,6 @@ const questionBanks = {
       "aHash": "45cff4f07b4f2485e5b550dcd694690c7d02bea16ea273a69af313598aaefd35"
     },
     {
-      "id": 327,
-      "sourceGame": "costDirective",
-      "q": "A branch can transfer spare inventory that is worth $12,000 locally to another branch where it is worth $19,000. Moving costs $2,000. Its manager loses an inventory-retention bonus if it transfers. Which change addresses the lost wealth?",
-      "options": [
-        "Retain the bonus and tell the manager the destination value again.",
-        "Transfer only if the receiving branch pays the original purchase cost regardless of current values.",
-        "Reward the sending branch for keeping inventory even when it has a better use elsewhere.",
-        "Credit the manager for verified firm-wide transfer gains of $5,000."
-      ],
-      "tag": "organization_wealth_creation",
-      "type": "integration",
-      "objective": "LO2.5",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_org_wealth",
-      "primarySkill": "organization_wealth_creation",
-      "secondarySkills": [
-        "LO1.4",
-        "decision_rights"
-      ],
-      "repairSkill": "organization_wealth_creation",
-      "commonError": "misaligns_decision_rights",
-      "feedback": "Net gain is 19,000 - 12,000 - 2,000 = $5,000. The relevant information is available; the performance rule discourages using it.",
-      "aHash": "33304326dbf1b3b6256e0b356bf57ebf23e842c98c9a724d685f8f9153237412"
-    },
-    {
       "id": 328,
       "sourceGame": "costDirective",
       "q": "Engineering can save $18 per unit by changing a part. Service expects an extra 10% chance of a $240 repair per unit, charged to its budget. Engineering is evaluated only on part costs. What is the organizational risk?",
@@ -7008,30 +6773,6 @@ const questionBanks = {
       "aHash": "cb4c142e9d3e231f31f1c323b32deae02049de4323705d6935416cf0b7d370ed"
     },
     {
-      "id": 329,
-      "sourceGame": "costDirective",
-      "q": "Which change most directly improves organizational wealth creation?",
-      "options": [
-        "Require every decision to be approved by the highest-ranking executive",
-        "Give the employee with local knowledge authority and a profit-linked measure",
-        "Reward each division for shifting costs to other divisions",
-        "Replace performance information with broad morale surveys"
-      ],
-      "tag": "organization_wealth_creation",
-      "type": "application",
-      "objective": "LO2.5",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_org_wealth",
-      "primarySkill": "organization_wealth_creation",
-      "secondarySkills": [
-        "decision_rights"
-      ],
-      "repairSkill": "organization_wealth_creation",
-      "commonError": "confuses_hierarchy_with_design",
-      "feedback": "The best design gives informed employees authority and incentives tied to firm value.",
-      "aHash": "89c02fa9c344aee86047226b0d86fec27f1d6a0d72ffa9a8b21f106ceb2a9e9e"
-    },
-    {
       "id": 330,
       "sourceGame": "costDirective",
       "q": "A consultant can take a contract paying $31,000 with $8,000 travel and subcontracting, or a job paying $21,000 with $1,000 commuting. The contract also prevents a separate $3,000 net weekend assignment that fits alongside the job. What is the contract's economic advantage?",
@@ -7042,7 +6783,7 @@ const questionBanks = {
         "-$3,000"
       ],
       "tag": "opportunity_cost",
-      "type": "calculation",
+      "type": "multi-step",
       "objective": "LO3.1",
       "difficulty": "elite",
       "conceptCluster": "elite_costDirective_opportunity_costs",
@@ -7055,102 +6796,6 @@ const questionBanks = {
       "commonError": "ignores_implicit_cost",
       "feedback": "Contract net is $23,000. The feasible alternative combines 21,000 - 1,000 + 3,000 = $23,000. Opportunity cost is the best feasible combination, not just one payment.",
       "aHash": "ce66470e18f3579ac7665d2a660da03089cd89698b57c5e900e8ba608bb394ee"
-    },
-    {
-      "id": 331,
-      "sourceGame": "costDirective",
-      "q": "A firm owns a machine that could be sold for $40,000 or used in-house for one more year. Which statement is correct?",
-      "options": [
-        "The machine is free to use because it was purchased in the past",
-        "The original purchase price is the relevant cost of using the machine now",
-        "The resale value matters only if the machine appears on the income statement",
-        "The $40,000 resale value is an opportunity cost of keeping the machine"
-      ],
-      "tag": "opportunity_cost",
-      "type": "trap",
-      "objective": "LO3.1",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_opportunity_costs",
-      "primarySkill": "opportunity_cost",
-      "secondarySkills": [],
-      "repairSkill": "opportunity_cost",
-      "commonError": "treats_owned_assets_as_free",
-      "feedback": "Keeping an owned asset means giving up what it could earn in its next-best use.",
-      "aHash": "8a539963a4c6da735bad99657a5dde517892983152cc621aeefa1f7fb8be8657"
-    },
-    {
-      "id": 332,
-      "sourceGame": "costDirective",
-      "q": "A hall can host one workshop or rent to a club this weekend. Workshop receipts are $4,800, catering is $1,400 and extra staffing $900. The club pays $2,200 but needs $300 cleaning. Unchanged building costs are $700. How much better is the workshop?",
-      "options": [
-        "$600",
-        "$300",
-        "$2,500",
-        "-$100"
-      ],
-      "tag": "opportunity_cost",
-      "type": "calculation",
-      "objective": "LO3.1",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_opportunity_costs",
-      "primarySkill": "opportunity_cost",
-      "secondarySkills": [
-        "LO3.2"
-      ],
-      "repairSkill": "opportunity_cost",
-      "commonError": "ignores_forgone_alternative",
-      "feedback": "Workshop contribution is $2,500; rental net is $1,900. Their difference is $600. Neither alternative changes the $700 building cost.",
-      "aHash": "2afd4624f5de4d9eb184259dd84cbc3275c7f984e204c0d286a2fdfc7b1ce7f8"
-    },
-    {
-      "id": 333,
-      "sourceGame": "costDirective",
-      "q": "A company prepaid a $12,000 prototype with no recovery value. Finishing costs $7,000 and yields $13,000 sales. Canceling now permits selling unused materials for $2,000; finishing consumes them. What does relevant-cost reasoning recommend?",
-      "options": [
-        "Finish; it adds $6,000 because materials are already owned.",
-        "Finish; it adds $4,000 compared with canceling.",
-        "Cancel; including the prototype makes the project lose $6,000.",
-        "Cancel; resale value is relevant only when a sale has already occurred."
-      ],
-      "tag": "relevant_costs_benefits",
-      "type": "trap",
-      "objective": "LO3.2",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_relevant_costs",
-      "primarySkill": "relevant_costs_benefits",
-      "secondarySkills": [
-        "sunk_cost_reasoning",
-        "relevant_costs"
-      ],
-      "repairSkill": "relevant_costs_benefits",
-      "commonError": "includes_sunk_cost",
-      "feedback": "Finishing nets $6,000 in future cash but sacrifices the $2,000 cancellation receipt. Its advantage is $4,000; the sunk prototype does not change.",
-      "aHash": "ca34fae07a445afc7f6a955676b35793f25cb3eebe34cc8bba49102d3aee6179"
-    },
-    {
-      "id": 334,
-      "sourceGame": "costDirective",
-      "q": "A company is choosing between keeping a process or outsourcing it. Which cost is relevant?",
-      "options": [
-        "The office rent that stays the same under both options",
-        "The original cost of equipment bought five years ago",
-        "The supervisor salary that disappears only if outsourcing occurs",
-        "The depreciation recorded regardless of the decision"
-      ],
-      "tag": "relevant_costs_benefits",
-      "type": "identification",
-      "objective": "LO3.2",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_relevant_costs",
-      "primarySkill": "relevant_costs_benefits",
-      "secondarySkills": [
-        "avoidable_costs",
-        "relevant_costs"
-      ],
-      "repairSkill": "relevant_costs_benefits",
-      "commonError": "uses_accounting_cost_not_decision_cost",
-      "feedback": "Relevant costs are future costs that differ across alternatives.",
-      "aHash": "331d0a565bd6264c35a8b266cc46aa4b2c886ffa5df5d4209d7b539c607f1cc1"
     },
     {
       "id": 335,
@@ -7178,101 +6823,26 @@ const questionBanks = {
       "aHash": "656beb29c200052c0f6222ac7c0520c000931356f85c7ab0404e773b14425177"
     },
     {
-      "id": 336,
-      "sourceGame": "costDirective",
-      "q": "A cost table covers one month with unchanged fixed commitments.<table><thead><tr><th scope=\"col\">Units</th><th scope=\"col\">Fixed cost</th><th scope=\"col\">Variable cost</th><th scope=\"col\">Total cost</th></tr></thead><tbody><tr><td>0</td><td>?</td><td>$0</td><td>$1,600</td></tr><tr><td>200</td><td>?</td><td>$2,400</td><td>?</td></tr><tr><td>300</td><td>?</td><td>?</td><td>$5,500</td></tr></tbody></table>What are AVC at 300 and the total cost increase from 200 to 300?",
-      "options": [
-        "$13 per unit; $1,500",
-        "$18.33 per unit; $1,500",
-        "$13 per unit; $3,100",
-        "$12 per unit; $1,600"
-      ],
-      "tag": "fixed_variable_costs",
-      "type": "calculation",
-      "objective": "LO3.3",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_fixed_variable",
-      "primarySkill": "fixed_variable_costs",
-      "secondarySkills": [
-        "variable_cost"
-      ],
-      "repairSkill": "fixed_variable_costs",
-      "commonError": "includes_fixed_cost",
-      "feedback": "Fixed cost is $1,600. VC at 300 is $3,900, so AVC is $13. TC at 200 is $4,000; the increase is $1,500.",
-      "aHash": "fba5822545f9a1fe48deffa17bcbd797cca364bc7956e78e253ed93101fea70f"
-    },
-    {
       "id": 337,
       "sourceGame": "costDirective",
-      "q": "A delivery company pays drivers per route and leases dispatch software for a fixed monthly fee. Which statement is most accurate for a decision to add routes this month?",
+      "q": "A firm has two machines. Machine A produces $900 value in its current use and $1,300 in a proposed use, with a $150 move cost. Machine B produces $700 now and $1,100 after a $250 move. Only one can be moved this week. Which move creates more net value?",
       "options": [
-        "Both costs are fixed because the company already operates delivery routes",
-        "Driver pay is variable, while the unchanged software lease is fixed for this decision",
-        "Both costs are variable because each appears in the operating budget",
-        "The software lease is variable because software helps drivers complete routes"
+        "Move B, because its current value is lower",
+        "Move A, adding $250 rather than B’s $150",
+        "Either move, because both gross value increases are $400",
+        "Move both, because each move has positive net value"
       ],
-      "tag": "fixed_variable_costs",
-      "type": "application",
-      "objective": "LO3.3",
+      "tag": "efficiency_business_value",
+      "type": "integration",
+      "objective": "LO2.3",
       "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_fixed_variable",
-      "primarySkill": "fixed_variable_costs",
-      "secondarySkills": [
-        "fixed_variable_classification"
-      ],
-      "repairSkill": "fixed_variable_costs",
-      "commonError": "classifies_by_category_not_behavior",
-      "feedback": "A cost is variable for a decision if it changes with the activity being chosen.",
-      "aHash": "c7a75ddb5a88e1d63b7d73602e5d70446d545dd76e7f950efa47e59fed53e2dd"
-    },
-    {
-      "id": 338,
-      "sourceGame": "costDirective",
-      "q": "A plant guarantees $2,000 rent and $1,000 supervisor pay monthly. Materials cost $4 and piecework $3 per unit. Beyond 500 units it must hire an extra supervisor for $800 for the month. What is the cost increase from 400 to 600 units?",
-      "options": [
-        "$1,400",
-        "$5,200",
-        "$2,200",
-        "$800"
-      ],
-      "tag": "fixed_variable_costs",
-      "type": "calculation",
-      "objective": "LO3.3",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_fixed_variable",
-      "primarySkill": "fixed_variable_costs",
-      "secondarySkills": [
-        "variable_cost"
-      ],
-      "repairSkill": "fixed_variable_costs",
-      "commonError": "adds_unchanged_fixed_cost",
-      "feedback": "The extra 200 units cost $1,400 in variable inputs and trigger an avoidable $800 step cost. Existing commitments do not change, but the new supervisor cost does.",
-      "aHash": "262d72bc5bed331d13453691a705ba3e784e41db9a185f78c277840ed985dac4"
-    },
-    {
-      "id": 339,
-      "sourceGame": "costDirective",
-      "q": "Annual receipts are $230,000. Paid payroll is $78,000, supplies $46,000 and rent $22,000. The owner's time could earn $65,000 and her invested capital could earn $9,000, independently. With no other costs, what are accounting and economic profit?",
-      "options": [
-        "$10,000 and $84,000",
-        "$84,000 and $19,000",
-        "$106,000 and $32,000",
-        "$84,000 and $10,000"
-      ],
-      "tag": "accounting_economic_profit",
-      "type": "calculation",
-      "objective": "LO3.4",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_profit",
-      "primarySkill": "accounting_economic_profit",
-      "secondarySkills": [
-        "economic_profit",
-        "accounting_vs_economic_profit"
-      ],
-      "repairSkill": "accounting_economic_profit",
-      "commonError": "ignores_implicit_costs",
-      "feedback": "Explicit costs total $146,000; accounting profit is $84,000. Both owner labor and capital alternatives are implicit costs, leaving $10,000.",
-      "aHash": "3d4e9ef2cadf7b309c6bc205796aac2f082ac78b53d6a6d411d1a4a151e111b2"
+      "conceptCluster": "elite_costDirective_efficiency_business_value",
+      "primarySkill": "efficiency_business_value",
+      "secondarySkills": [],
+      "repairSkill": "efficiency_business_value",
+      "commonError": "ignores_transfer_cost_and_constraint",
+      "feedback": "Compare each net gain under the one-move constraint: A gains 1300 − 900 − 150 = 250; B gains 1100 − 700 − 250 = 150.",
+      "aHash": "1c151a9ae22dc1d9a422ffd14ca567a3197669099ad5d8f420d404cd9460647b"
     },
     {
       "id": 340,
@@ -7285,7 +6855,7 @@ const questionBanks = {
         "-$5,000"
       ],
       "tag": "accounting_economic_profit",
-      "type": "calculation",
+      "type": "multi-step",
       "objective": "LO3.4",
       "difficulty": "elite",
       "conceptCluster": "elite_costDirective_profit",
@@ -7302,93 +6872,48 @@ const questionBanks = {
     {
       "id": 341,
       "sourceGame": "costDirective",
-      "q": "Which statement best explains why a business can have positive accounting profit but negative economic profit?",
+      "q": "Two supervisors each report 120 completed orders. A has 20 cancellations and $600 of avoidable rework; B has 10 cancellations and $900 of rework. Each uncancelled order contributes $30 before rework. Which appraisal best aligns rewards with value?",
       "options": [
-        "Economic profit ignores cash expenses paid during the year",
-        "Accounting profit ignores some implicit opportunity costs",
-        "Accounting profit subtracts opportunity cost twice",
-        "Economic profit is always lower because taxes are counted twice"
+        "A creates more because its rework expense is $300 lower",
+        "Both create $2,400 after cancellations and rework",
+        "B creates $300 more because it has ten more uncancelled orders",
+        "Both create $3,600 because cancellations occur after completion"
       ],
-      "tag": "accounting_economic_profit",
-      "type": "interpretation",
-      "objective": "LO3.4",
+      "tag": "incentive_system_design",
+      "type": "integration",
+      "objective": "LO1.3",
       "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_profit",
-      "primarySkill": "accounting_economic_profit",
-      "secondarySkills": [
-        "economic_profit",
-        "accounting_vs_economic_profit"
-      ],
-      "repairSkill": "accounting_economic_profit",
-      "commonError": "ignores_implicit_costs",
-      "feedback": "Economic profit includes explicit costs and implicit opportunity costs.",
-      "aHash": "d2ef5a21d15286ab9470e2db63d22060df11f1918b3f4b1273184f7a83bf6a00"
-    },
-    {
-      "id": 342,
-      "sourceGame": "costDirective",
-      "q": "A manager's preferred launch earns $12,000 after future production costs, but requires a new $14,000 permit. He argues that last year's nonrefundable research fee makes launch necessary. Which diagnosis is correct?",
-      "options": [
-        "He overlooks the research fee as an avoidable launch cost.",
-        "The permit is irrelevant because it is fixed per launch.",
-        "He uses sunk research to justify a launch with a $2,000 future loss.",
-        "Positive receipts establish that launching covers its opportunity cost."
-      ],
-      "tag": "fixed_cost_fallacy",
-      "type": "identification",
-      "objective": "LO3.5",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_fixed_cost_fallacy",
-      "primarySkill": "fixed_cost_fallacy",
+      "conceptCluster": "elite_costDirective_incentive_system_design",
+      "primarySkill": "incentive_system_design",
       "secondarySkills": [],
-      "repairSkill": "fixed_cost_fallacy",
-      "commonError": "confuses_sunk_with_relevant",
-      "feedback": "The new permit is avoidable, unlike the research fee. The future net is 12,000 - 14,000 = -$2,000.",
-      "aHash": "c226d1a8f1ee79ff2589bde9e46b8e26bf3854bf8a19b4f6ba06212a96fc3386"
+      "repairSkill": "incentive_system_design",
+      "commonError": "judges_single_metric_instead_of_net_value",
+      "feedback": "A creates (120 − 20) × 30 − 600 = 2400. B creates (120 − 10) × 30 − 900 = 2400. Counting outcomes and their costs avoids favoring one isolated measure.",
+      "aHash": "c9d45c5b174b07b7a378b0e15400421984728ad39c2c3a7dd6f9abee198723c6"
     },
     {
       "id": 343,
       "sourceGame": "costDirective",
-      "q": "A manager says, 'We must keep using the old database because the license cost $200,000.' The license cannot be refunded. A better database would raise future profit. What is the issue?",
+      "q": "Three independent trades have buyer-value-minus-seller-cost gaps of $9, $16 and $24. A $12 tax is charged only on completed trades, and parties can negotiate price. There are no external effects or resource costs. Which result is correct?",
       "options": [
-        "The manager is correctly protecting accounting profit",
-        "The manager is applying marginal analysis correctly",
-        "The manager is avoiding a hidden opportunity cost",
-        "The manager is treating a sunk fixed cost as relevant"
+        "Only one remains beneficial because the tax must be less than half the gain",
+        "All three remain beneficial; revenue is $36",
+        "Two remain beneficial; tax revenue itself is a $24 resource loss",
+        "Two trades remain mutually beneficial; revenue is $24 and blocked gains are $9"
       ],
-      "tag": "fixed_cost_fallacy",
-      "type": "trap",
-      "objective": "LO3.5",
+      "tag": "tax_wedge_and_trade",
+      "type": "integration",
+      "objective": "LO2.2",
       "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_fixed_cost_fallacy",
-      "primarySkill": "fixed_cost_fallacy",
-      "secondarySkills": [],
-      "repairSkill": "fixed_cost_fallacy",
-      "commonError": "includes_sunk_cost",
-      "feedback": "Past, unrecoverable spending should not determine whether the firm switches now.",
-      "aHash": "d30e8ee69cda770288d43f53650bb55dd80889c595c799dc4ca946f69cbda7b9"
-    },
-    {
-      "id": 344,
-      "sourceGame": "costDirective",
-      "q": "A firm paid $40,000 for custom displays with no resale value. Switching layouts costs $6,000 now and raises contribution $1,800 monthly for the next four months only. Ignore discounting and other effects. Which amount should drive the choice?",
-      "options": [
-        "A $1,200 gain from switching",
-        "A $38,800 loss including the old display cost",
-        "A $7,200 gain ignoring the new layout cost",
-        "A $6,000 loss because making the old display idle destroys that amount"
+      "conceptCluster": "elite_costDirective_tax_wedge_and_trade",
+      "primarySkill": "tax_wedge_and_trade",
+      "secondarySkills": [
+        "barriers_to_trade"
       ],
-      "tag": "fixed_cost_fallacy",
-      "type": "application",
-      "objective": "LO3.5",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_fixed_cost_fallacy",
-      "primarySkill": "fixed_cost_fallacy",
-      "secondarySkills": [],
-      "repairSkill": "fixed_cost_fallacy",
-      "commonError": "sunk_cost_bias",
-      "feedback": "Future contribution is 4×1,800 = $7,200, less $6,000 switching cost. The old display outlay is unrecoverable under either choice.",
-      "aHash": "02d0a607133000727821fe897a43b356100f84372ef1f5bbd28731eaad702ba8"
+      "repairSkill": "tax_wedge_and_trade",
+      "commonError": "confuses_tax_transfer_with_blocked_gains",
+      "feedback": "Only gaps above 12 leave positive private gains to divide. Two trades pay 24 tax. The blocked 9 gain is lost; the revenue is a transfer to government.",
+      "aHash": "66a3d7acea51899908dba9ac001096c474c8b956612d509712645eb925b1be39"
     },
     {
       "id": 345,
@@ -7415,27 +6940,26 @@ const questionBanks = {
     {
       "id": 346,
       "sourceGame": "costDirective",
-      "q": "A firm accepts a rush order because materials cost only $9,000. It ignores that the order displaces a $14,000 contribution from regular customers. What is the error?",
+      "q": "A manager can release an idle employee to another team for one day. The receiving team gains $500, and the sending team sacrifices $100 of useful standby coverage. The manager loses a $150 utilization bonus, while arranging the transfer takes $40 of private effort. Which policy best addresses the incentive barrier without ignoring firm costs?",
       "options": [
-        "Fixed-cost fallacy because regular customers are already known",
-        "No fallacy because materials are the only explicit cost",
-        "Hidden-cost fallacy because the displaced contribution is relevant",
-        "Economies of scope because two customer groups use the same plant"
+        "Offer no reward because the manager already knows the $500 benefit",
+        "Offer $100 because that is the firm’s only sacrificed resource value",
+        "Credit verified net firm gains and offer a transfer reward above $190 but below $400",
+        "Reward every transfer $500 without verifying standby costs or destination value"
       ],
-      "tag": "hidden_cost_fallacy",
-      "type": "trap",
-      "objective": "LO3.6",
+      "tag": "organization_design_info_incentives",
+      "type": "integration",
+      "objective": "LO1.4",
       "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_hidden_cost_fallacy",
-      "primarySkill": "hidden_cost_fallacy",
+      "conceptCluster": "elite_costDirective_organization_design_info_incentives",
+      "primarySkill": "organization_design_info_incentives",
       "secondarySkills": [
-        "LO3.1",
-        "LO3.2"
+        "rational_actor_paradigm"
       ],
-      "repairSkill": "hidden_cost_fallacy",
-      "commonError": "ignores_opportunity_cost",
-      "feedback": "The forgone contribution from regular customers is a relevant opportunity cost.",
-      "aHash": "e655ebd84cebcf88ec0eb67ea37431ddcb994fec0b454f6c0f3638f974173762"
+      "repairSkill": "organization_design_info_incentives",
+      "commonError": "ignores_private_cost_of_coordination",
+      "feedback": "Net firm gain is 500 − 100 = 400. The manager’s private cost is 150+40 = 190; a reward between those values can align the decision while preserving a net firm benefit.",
+      "aHash": "a1262aaacdc84ac375090debaf8b2ae48faca6fa2fb37a6bccfb9ae54a20ec8c"
     },
     {
       "id": 347,
@@ -7448,7 +6972,7 @@ const questionBanks = {
         "Additional failure and inspection costs exceed the saving by $300."
       ],
       "tag": "hidden_cost_fallacy",
-      "type": "application",
+      "type": "multi-step",
       "objective": "LO3.6",
       "difficulty": "elite",
       "conceptCluster": "elite_costDirective_hidden_cost_fallacy",
@@ -7470,7 +6994,7 @@ const questionBanks = {
         "Average cost rises because total cost increases by $1,000."
       ],
       "tag": "average_vs_marginal_cost",
-      "type": "interpretation",
+      "type": "multi-step",
       "objective": "LO4.1",
       "difficulty": "elite",
       "conceptCluster": "elite_costDirective_average_marginal",
@@ -7483,31 +7007,6 @@ const questionBanks = {
       "commonError": "uses_average_for_margin",
       "feedback": "Original TC is $5,000; new AC is 6,000/250 = $24. Added receipts are $950 against $1,000 added cost. Falling AC does not substitute for the marginal decision.",
       "aHash": "ac819874bb8797d3416e30675535761dc2543671ebfcd3b02e73b2ab4187e273"
-    },
-    {
-      "id": 349,
-      "sourceGame": "costDirective",
-      "q": "A ledger gives 80 units at $2,400 total cost. At 100 units, AVC is $21 and fixed cost is $900, unchanged across rows. What is incremental cost per unit for the added output?",
-      "options": [
-        "$21",
-        "$30",
-        "$24",
-        "$600"
-      ],
-      "tag": "average_vs_marginal_cost",
-      "type": "calculation",
-      "objective": "LO4.1",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_average_marginal",
-      "primarySkill": "average_vs_marginal_cost",
-      "secondarySkills": [
-        "marginal_cost",
-        "average_marginal_cost"
-      ],
-      "repairSkill": "average_vs_marginal_cost",
-      "commonError": "divides_total_cost_by_total_output",
-      "feedback": "TC at 100 is 100×21 + 900 = $3,000. The increase is $600 over 20 units, or $30 each. AVC at the endpoint is not interval MC.",
-      "aHash": "e3aae7bc0e5ad26dcf3912c166846dff1e00a3887aeb53c3363722bba19b16bd"
     },
     {
       "id": 350,
@@ -7534,31 +7033,6 @@ const questionBanks = {
       "commonError": "average_cost_trap",
       "feedback": "Relevant cost is 1,200 + 300 + 400 = $1,900, above $1,800 revenue. Current average cost omits this order's particular consequences.",
       "aHash": "82e7bd91b6561e6750286d806fa6b0a246fe722a3edae2c347bd72838712d128"
-    },
-    {
-      "id": 351,
-      "sourceGame": "costDirective",
-      "q": "Fixed monthly cost is unchanged in this schedule.<table><thead><tr><th scope=\"col\">Units</th><th scope=\"col\">VC</th><th scope=\"col\">TC</th><th scope=\"col\">Revenue</th></tr></thead><tbody><tr><td>0</td><td>$0</td><td>$600</td><td>$0</td></tr><tr><td>40</td><td>$1,000</td><td>?</td><td>$1,800</td></tr><tr><td>60</td><td>?</td><td>$2,200</td><td>$2,500</td></tr></tbody></table>What are MC and MR per extra unit from 40 to 60?",
-      "options": [
-        "MC $36.67; MR $41.67",
-        "MC $60; MR $35",
-        "MC $600; MR $700",
-        "MC $30; MR $35"
-      ],
-      "tag": "ac_mc_mr_calculation",
-      "type": "calculation",
-      "objective": "LO4.2",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_cost_calculation",
-      "primarySkill": "ac_mc_mr_calculation",
-      "secondarySkills": [
-        "ac_mc_calculation",
-        "compute_ac_mc_mr"
-      ],
-      "repairSkill": "ac_mc_mr_calculation",
-      "commonError": "confuses_total_and_marginal",
-      "feedback": "TC at 40 is $1,600, so the $600 increase over 20 units gives MC $30. Revenue rises $700, giving MR $35.",
-      "aHash": "7e4da8914e13546321999b06e32de9e8046900ffe69cd58b7ba8f724ca00c828"
     },
     {
       "id": 352,
@@ -7596,7 +7070,7 @@ const questionBanks = {
         "$600, $700 and $1,300"
       ],
       "tag": "ac_mc_mr_calculation",
-      "type": "calculation",
+      "type": "multi-step",
       "objective": "LO4.2",
       "difficulty": "elite",
       "conceptCluster": "elite_costDirective_cost_calculation",
@@ -7611,31 +7085,6 @@ const questionBanks = {
       "aHash": "29e7aa7d6eae4d6c79403bc773d95ef763d91ec4276f3a24beacbd4abfae4e49"
     },
     {
-      "id": 354,
-      "sourceGame": "costDirective",
-      "q": "A shop chooses 0, 1, 2 or 3 additional service blocks in sequence.<table><thead><tr><th scope=\"col\">Blocks</th><th scope=\"col\">Added receipts</th><th scope=\"col\">Added costs</th></tr></thead><tbody><tr><td>0</td><td>$0</td><td>$0</td></tr><tr><td>1</td><td>$800</td><td>$500</td></tr><tr><td>2</td><td>$1,500</td><td>$1,100</td></tr><tr><td>3</td><td>$2,000</td><td>$1,800</td></tr></tbody></table>Which plan maximizes added profit?",
-      "options": [
-        "3 blocks, earning $200",
-        "1 block, earning $300",
-        "2 blocks, earning $400",
-        "0 blocks, because total cost grows"
-      ],
-      "tag": "mr_mc_extent_rule",
-      "type": "application",
-      "objective": "LO4.3",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_extent_decision",
-      "primarySkill": "mr_mc_extent_rule",
-      "secondarySkills": [
-        "mr_mc_rule",
-        "mr_mc_decision"
-      ],
-      "repairSkill": "mr_mc_extent_rule",
-      "commonError": "ignores_incremental_profit",
-      "feedback": "Profits are 0, 300, 400 and 200. The second block adds $100; the third subtracts $200. Compare the full feasible schedule.",
-      "aHash": "1717a9c1984ec41a0ba90f7dfd05d230dfd6704a29cb0eaf38a7a310e38861f2"
-    },
-    {
       "id": 355,
       "sourceGame": "costDirective",
       "q": "A depot can add up to 3 sequential drivers. Total deliveries with 4, 5, 6 and 7 drivers are 200, 260, 310 and 340. Each delivery earns $12 and uses $3 fuel; each added driver costs $400. How many drivers beyond the current 4 maximize profit?",
@@ -7646,7 +7095,7 @@ const questionBanks = {
         "2 extra drivers"
       ],
       "tag": "mr_mc_extent_rule",
-      "type": "calculation",
+      "type": "multi-step",
       "objective": "LO4.3",
       "difficulty": "elite",
       "conceptCluster": "elite_costDirective_extent_decision",
@@ -7696,7 +7145,7 @@ const questionBanks = {
         "Neither induces the effort because the fixed salary does not change."
       ],
       "tag": "incentive_compensation_effort",
-      "type": "interpretation",
+      "type": "multi-step",
       "objective": "LO4.4",
       "difficulty": "elite",
       "conceptCluster": "elite_costDirective_compensation",
@@ -7709,31 +7158,6 @@ const questionBanks = {
       "commonError": "confuses_total_pay_with_marginal_pay",
       "feedback": "At current sales A pays $23,000 versus B's $20,000. The effort earns 5%×20,000 = $1,000 under A and $4,000 under B. Marginal incentives differ from pay levels.",
       "aHash": "ba9c4039651dbd9b482ca2cf6938add8f6f60503606f0a1862525a87c2d66aa2"
-    },
-    {
-      "id": 358,
-      "sourceGame": "costDirective",
-      "q": "A repair contractor charges a flat fee per month regardless of completed repairs. Which concern is strongest?",
-      "options": [
-        "The contractor will always work harder because income is guaranteed",
-        "The flat fee creates a direct reward for each completed repair",
-        "The contractor may have weak marginal incentive to complete additional repairs quickly",
-        "The client guarantees high effort by paying in advance"
-      ],
-      "tag": "incentive_compensation_effort",
-      "type": "application",
-      "objective": "LO4.4",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_compensation",
-      "primarySkill": "incentive_compensation_effort",
-      "secondarySkills": [
-        "fixed_fee_incentives",
-        "incentive_compensation"
-      ],
-      "repairSkill": "incentive_compensation_effort",
-      "commonError": "ignores_marginal_incentive",
-      "feedback": "A fixed fee can weaken the incentive to provide extra effort once payment does not vary with performance.",
-      "aHash": "5bda8e5e86d2eb01bda278f58f1a7bf41d0de60bc3a4e44f1b6db1230b801fa8"
     },
     {
       "id": 359,
@@ -7762,79 +7186,29 @@ const questionBanks = {
       "aHash": "c9e93da8b77c00d1619cad01ddbf7c04ec32c9c25f530230398591ba5a92022c"
     },
     {
-      "id": 360,
-      "sourceGame": "costDirective",
-      "q": "A plant holds equipment fixed.<table><thead><tr><th scope=\"col\">Workers</th><th scope=\"col\">Units per day</th></tr></thead><tbody><tr><td>2</td><td>60</td></tr><tr><td>3</td><td>105</td></tr><tr><td>4</td><td>140</td></tr><tr><td>5</td><td>165</td></tr></tbody></table>When do diminishing marginal returns first appear in the observed additions?",
-      "options": [
-        "With the fourth worker, whose 35 units are below the third's 45",
-        "With the third worker, because total output is only 105",
-        "With the fifth worker, because only then does total output fall",
-        "With no worker, because output rises throughout"
-      ],
-      "tag": "diminishing_marginal_returns",
-      "type": "identification",
-      "objective": "LO7.1",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_diminishing_returns",
-      "primarySkill": "diminishing_marginal_returns",
-      "secondarySkills": [
-        "diminishing_returns"
-      ],
-      "repairSkill": "diminishing_marginal_returns",
-      "commonError": "confuses_short_run_with_scale",
-      "feedback": "The third, fourth and fifth workers add 45, 35 and 25 units. The first observed decline is at the fourth worker; total output need not fall.",
-      "aHash": "de2e6a48a256a9fbdb1bdd0c712a967fca2a284151830548b677c8217c01458f"
-    },
-    {
       "id": 361,
       "sourceGame": "costDirective",
-      "q": "With fixed machinery, a fifth worker adds 40 accepted units and a sixth adds 25. Each costs $200 per day. Materials remain $3 per accepted unit. How does incremental cost per unit change?",
+      "q": "At a fixed plant, the next worker adds 40 units per day and the following worker adds 25. Each costs $200 per day; materials cost $3 per unit and output sells for $10. A $90 daily equipment rental would raise only the following worker’s added output from 25 to 40 units. With no other changes, which expansion earns the most additional daily profit?",
       "options": [
-        "It stays $203 because wage and materials are unchanged.",
-        "It rises from $8 to $11.",
-        "It falls from $11 to $8 as total output rises.",
-        "It rises from $5 to $8, including all production inputs."
+        "Hire both without rental: $130 added daily profit",
+        "Hire only the next worker: $80 added daily profit",
+        "Hire both with rental: $160 added daily profit",
+        "Hire neither: hiring even the next worker loses $25 per day"
       ],
       "tag": "diminishing_marginal_returns",
       "type": "integration",
       "objective": "LO7.1",
       "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_diminishing_returns",
+      "conceptCluster": "elite_costDirective_diminishing_marginal_returns",
       "primarySkill": "diminishing_marginal_returns",
       "secondarySkills": [
-        "LO4.1",
-        "diminishing_returns_costs",
-        "diminishing_returns"
+        "ac_mc_mr_calculation",
+        "mr_mc_extent_rule"
       ],
       "repairSkill": "diminishing_marginal_returns",
       "commonError": "misses_cost_connection",
-      "feedback": "Worker cost per added unit rises from 200/40 = $5 to 200/25 = $8. Adding materials gives $8 and $11. The $5/$8 pair omits materials.",
-      "aHash": "535a93f6df27c0318b1825279d50128cc4bd45003785c406f16d93784d9e8c1d"
-    },
-    {
-      "id": 362,
-      "sourceGame": "costDirective",
-      "q": "Which evidence points to diminishing marginal returns rather than decreasing returns to scale?",
-      "options": [
-        "All inputs double and output less than doubles",
-        "All inputs double and output exactly doubles",
-        "Labor increases while plant size is fixed, and each added worker adds less output",
-        "Two products cost less together than separately"
-      ],
-      "tag": "diminishing_marginal_returns",
-      "type": "trap",
-      "objective": "LO7.1",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_diminishing_returns",
-      "primarySkill": "diminishing_marginal_returns",
-      "secondarySkills": [
-        "short_run_vs_long_run",
-        "diminishing_returns"
-      ],
-      "repairSkill": "diminishing_marginal_returns",
-      "commonError": "confuses_dmr_with_scale",
-      "feedback": "Diminishing marginal returns is a short-run concept with at least one fixed input.",
-      "aHash": "c7e66942aebcda11361196064d489ddc23c8f13f7a7084e565f9289f3f31c8e4"
+      "feedback": "At fixed capacity, worker contributions are 40 × (10 − 3) − 200 = $80 and 25 × (10 − 3) − 200 = − $25. Renting raises the second contribution to $80 but costs $90, so adding that worker with rental changes profit by − $10. Diminishing marginal product raises unit cost; expanding capital must also pass an incremental-profit test.",
+      "aHash": "b2d926f19fb3d696d02b0c25116327324c0322a07ce2bc363a4568906f28c412"
     },
     {
       "id": 363,
@@ -7847,7 +7221,7 @@ const questionBanks = {
         "At $12 the order loses $100; the break-even whole-order price is $12.20 per unit."
       ],
       "tag": "cost_curves_contracts",
-      "type": "application",
+      "type": "multi-step",
       "objective": "LO7.2",
       "difficulty": "elite",
       "conceptCluster": "elite_costDirective_contract_curves",
@@ -7885,30 +7259,6 @@ const questionBanks = {
       "aHash": "262e9c7c7943307e0839681678bebc87ed38cf3bbdc4e739566e119e44e2a4d2"
     },
     {
-      "id": 365,
-      "sourceGame": "costDirective",
-      "q": "A supplier wins a bid by pricing below average cost at low volume, expecting the buyer's volume to grow. Which cost-curve belief could justify the bid?",
-      "options": [
-        "Marginal cost is always equal to fixed cost at higher output",
-        "Average cost will fall enough at higher output to make the account profitable",
-        "Diminishing marginal returns will eliminate all variable cost",
-        "Economic profit can be positive even when revenue never covers future cost"
-      ],
-      "tag": "cost_curves_contracts",
-      "type": "application",
-      "objective": "LO7.2",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_contract_curves",
-      "primarySkill": "cost_curves_contracts",
-      "secondarySkills": [
-        "cost_curves_in_contracts"
-      ],
-      "repairSkill": "cost_curves_contracts",
-      "commonError": "ignores_scale_expectation",
-      "feedback": "A supplier may price aggressively if expected volume moves it down its average cost curve.",
-      "aHash": "b39594cfe399bdc3bf887f3717cab18154dc25904abf5dffdbabaaee7ca37f69"
-    },
-    {
       "id": 366,
       "sourceGame": "costDirective",
       "q": "A plant has $4,000 monthly fixed cost and $8 variable cost per unit. It expands from 500 to 1,000 units, with no change in plant or variable unit cost. Which inference is justified?",
@@ -7933,99 +7283,6 @@ const questionBanks = {
       "aHash": "193584da9515e5d397fa7d5d8b313e537d6b9365189d28ad35a60f1ef384151a"
     },
     {
-      "id": 367,
-      "sourceGame": "costDirective",
-      "q": "A workshop's total cost is $6,000 at 200 units. At 300 units its average cost is $26. What is the cost per added unit, and why can AC fall while total cost rises?",
-      "options": [
-        "$26; marginal cost equals the new average by definition.",
-        "$78; divide the new total cost by only the extra units.",
-        "$30; the original average is the cost of all future units.",
-        "$18; added units cost less than the original $30 average."
-      ],
-      "tag": "average_cost_output",
-      "type": "calculation",
-      "objective": "LO7.3",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_ac_output",
-      "primarySkill": "average_cost_output",
-      "secondarySkills": [
-        "average_cost_calculation"
-      ],
-      "repairSkill": "average_cost_output",
-      "commonError": "uses_change_in_cost_only",
-      "feedback": "New TC is 300×26 = $7,800. The $1,800 increase over 100 units is $18 each, pulling the original $30 average down.",
-      "aHash": "eb2d15c2297f64f2b22052a19973b20af4cb6eef8f8ff76e9d2a30b6b349d62d"
-    },
-    {
-      "id": 368,
-      "sourceGame": "costDirective",
-      "q": "A manager says falling average cost means every extra unit is profitable. What is the problem with that claim?",
-      "options": [
-        "Falling average cost does not guarantee marginal revenue exceeds marginal cost",
-        "Falling average cost means marginal cost must be zero",
-        "Falling average cost proves total cost is falling",
-        "Falling average cost means fixed cost is rising faster than output"
-      ],
-      "tag": "average_cost_output",
-      "type": "trap",
-      "objective": "LO7.3",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_ac_output",
-      "primarySkill": "average_cost_output",
-      "secondarySkills": [
-        "LO4.3",
-        "average_vs_marginal"
-      ],
-      "repairSkill": "average_cost_output",
-      "commonError": "confuses_ac_with_profit_rule",
-      "feedback": "Profitability of extra units depends on marginal revenue and marginal cost, not average cost alone.",
-      "aHash": "5434ea54c30d2e7035dec5642fde027445a01d925b27c7b62af0ae17a41ade1f"
-    },
-    {
-      "id": 369,
-      "sourceGame": "costDirective",
-      "q": "All inputs rise by 25% and output rises from 400 to 520. Input prices are unchanged, so cost rises from $8,000 to $10,000. Which pair of conclusions fits?",
-      "options": [
-        "Decreasing returns to scale; AC rises because total cost rises.",
-        "Increasing returns to scale; AC falls from $20 to about $19.23.",
-        "Constant returns to scale; output and input both increase.",
-        "Diminishing marginal returns; machinery was held fixed."
-      ],
-      "tag": "returns_to_scale",
-      "type": "calculation",
-      "objective": "LO7.4",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_returns_scale",
-      "primarySkill": "returns_to_scale",
-      "secondarySkills": [],
-      "repairSkill": "returns_to_scale",
-      "commonError": "confuses_scale_with_dmr",
-      "feedback": "Output grows 30%, more than all inputs' 25%. AC is 8,000/400 = $20 versus 10,000/520 ≈ $19.23.",
-      "aHash": "a8a2190c5381ce7ec296809aa52d500f88d527ab1ab577615d7b09ec275cd8d4"
-    },
-    {
-      "id": 370,
-      "sourceGame": "costDirective",
-      "q": "A manufacturer increases all inputs by 40%, and output also rises by 40%. What is the scale result?",
-      "options": [
-        "Increasing returns to scale",
-        "Decreasing returns to scale",
-        "Constant returns to scale",
-        "Diminishing marginal returns"
-      ],
-      "tag": "returns_to_scale",
-      "type": "identification",
-      "objective": "LO7.4",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_returns_scale",
-      "primarySkill": "returns_to_scale",
-      "secondarySkills": [],
-      "repairSkill": "returns_to_scale",
-      "commonError": "confuses_level_with_percentage",
-      "feedback": "Output rising in the same proportion as all inputs indicates constant returns to scale.",
-      "aHash": "4afcedd9184d58c718cce4e396cd98b89fbea90ad79a74521565ac77f5c36fad"
-    },
-    {
       "id": 371,
       "sourceGame": "costDirective",
       "q": "A producer doubles every physical input and output rises from 600 to 1,320. At the same time, all input prices increase 20%. Which statement is correct?",
@@ -8036,7 +7293,7 @@ const questionBanks = {
         "Physical returns to scale increase, yet average monetary cost rises."
       ],
       "tag": "returns_to_scale",
-      "type": "calculation",
+      "type": "multi-step",
       "objective": "LO7.4",
       "difficulty": "elite",
       "conceptCluster": "elite_costDirective_returns_scale",
@@ -8046,50 +7303,6 @@ const questionBanks = {
       "commonError": "confuses_output_growth_with_scale",
       "feedback": "Physical output grows by 2.2 times for twice the inputs. Money cost grows by 2×1.2 = 2.4 times, so AC multiplies by 2.4/2.2, above one. Input-price changes separate these concepts.",
       "aHash": "ec27b8ad30cc0d47edd11a8752899eab8a7e1662e5496e8f10bde3aca2c1cbe6"
-    },
-    {
-      "id": 372,
-      "sourceGame": "costDirective",
-      "q": "Only four long-run plans are available: 1,000 units at $20,000 TC; 2,000 at $30,000; 3,000 at $42,000; 4,000 at $56,000. An analyst chooses 1,000 because TC is lowest. What corrects the MES analysis?",
-      "options": [
-        "MES is 3,000, the first plan with the minimum $14 average cost.",
-        "MES is 1,000 because the smallest total cost defines efficiency.",
-        "MES is 4,000 because it is the last point on the flat average.",
-        "MES is 2,000 because it cuts AC by the largest dollar amount."
-      ],
-      "tag": "minimum_efficient_scale",
-      "type": "interpretation",
-      "objective": "LO7.5",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_mes",
-      "primarySkill": "minimum_efficient_scale",
-      "secondarySkills": [],
-      "repairSkill": "minimum_efficient_scale",
-      "commonError": "picks_end_of_flat_range",
-      "feedback": "Average costs are $20, $15, $14 and $14. Minimum efficient scale selects the smallest output at minimum long-run average cost, not minimum total cost.",
-      "aHash": "c0e1ccae3b329de5cda84f4d05c5a4c072dc2382f4acbfcd23057827ea422672"
-    },
-    {
-      "id": 373,
-      "sourceGame": "costDirective",
-      "q": "Why can minimum efficient scale matter for market structure?",
-      "options": [
-        "If MES is small, no firm can cover variable cost",
-        "If MES is large relative to market demand, few firms may operate efficiently",
-        "If MES is large, economies of scope are impossible",
-        "If MES is small, marginal cost must exceed average cost"
-      ],
-      "tag": "minimum_efficient_scale",
-      "type": "application",
-      "objective": "LO7.5",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_mes",
-      "primarySkill": "minimum_efficient_scale",
-      "secondarySkills": [],
-      "repairSkill": "minimum_efficient_scale",
-      "commonError": "ignores_market_size",
-      "feedback": "A large MES relative to market demand can support fewer efficient producers.",
-      "aHash": "729e4de1ba985dfc0e063c49336d22bb87e85ed378e11550a697ea6afd2e5b4e"
     },
     {
       "id": 374,
@@ -8102,7 +7315,7 @@ const questionBanks = {
         "Making is always preferable because MES is known."
       ],
       "tag": "minimum_efficient_scale",
-      "type": "application",
+      "type": "multi-step",
       "objective": "LO7.5",
       "difficulty": "elite",
       "conceptCluster": "elite_costDirective_mes",
@@ -8124,7 +7337,7 @@ const questionBanks = {
         "$51.20; 36% reduction"
       ],
       "tag": "learning_curve",
-      "type": "calculation",
+      "type": "multi-step",
       "objective": "LO7.6",
       "difficulty": "elite",
       "conceptCluster": "elite_costDirective_learning",
@@ -8139,101 +7352,6 @@ const questionBanks = {
       "aHash": "e64f56cfcf1053e05501300304153cb9443a0bbff7d240780c9e5e14234716a9"
     },
     {
-      "id": 376,
-      "sourceGame": "costDirective",
-      "q": "A two-batch contract pays $46 per unit for 100 units in each batch. Forecast unit costs are $55 then $35 due to learning, with no other costs or discounting. Which evaluation is correct?",
-      "options": [
-        "The full contract earns $200 despite losing $900 on the first batch.",
-        "Reject automatically because the first batch's price is below its cost.",
-        "The contract earns $2,200 because the learned cost applies to all units.",
-        "The contract loses $1,800 because the first cost persists throughout."
-      ],
-      "tag": "learning_curve",
-      "type": "interpretation",
-      "objective": "LO7.6",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_learning",
-      "primarySkill": "learning_curve",
-      "secondarySkills": [
-        "learning_curve_strategy",
-        "learning_curves"
-      ],
-      "repairSkill": "learning_curve",
-      "commonError": "ignores_future_cost_decline",
-      "feedback": "Revenue is 200×46 = $9,200; forecast cost is 100×55 + 100×35 = $9,000. First-batch loss is $900; second-batch gain is $1,100.",
-      "aHash": "25d1178f71c9329dc7b793754f88097bb1531f9ba08c7061049c8f703a257166"
-    },
-    {
-      "id": 377,
-      "sourceGame": "costDirective",
-      "q": "A supplier quotes a high first-year price for a new component but expects cost to fall with cumulative production. What contract term directly addresses the learning issue?",
-      "options": [
-        "A permanent price based only on first-unit cost",
-        "A scheduled price reduction tied to cumulative volume milestones",
-        "A clause ignoring future production cost changes",
-        "A requirement that fixed cost be paid again each year"
-      ],
-      "tag": "learning_curve",
-      "type": "application",
-      "objective": "LO7.6",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_learning",
-      "primarySkill": "learning_curve",
-      "secondarySkills": [
-        "LO7.2",
-        "learning_curve_contracts",
-        "learning_curves"
-      ],
-      "repairSkill": "learning_curve",
-      "commonError": "ignores_learning_in_contract",
-      "feedback": "When learning lowers cost, contracts can share expected cost reductions over time.",
-      "aHash": "20a2a4b24be7e6200ccf4ab196a10c8e1faca5ec12128dee8a7ea0bceec96d1d"
-    },
-    {
-      "id": 378,
-      "sourceGame": "costDirective",
-      "q": "Separate production of two diagnostic kits costs $96,000 and $74,000 annually. Shared production costs $142,000 plus $11,000 coordination and $9,000 additional expected warranty cost. Same outputs and quality obligations apply. What is the net scope saving?",
-      "options": [
-        "$28,000",
-        "$17,000",
-        "$8,000",
-        "-$8,000"
-      ],
-      "tag": "economies_of_scope",
-      "type": "calculation",
-      "objective": "LO7.7",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_scope",
-      "primarySkill": "economies_of_scope",
-      "secondarySkills": [],
-      "repairSkill": "economies_of_scope",
-      "commonError": "confuses_joint_cost_with_savings",
-      "feedback": "All-in joint cost is $162,000 versus $170,000 separately. Ignoring coordination or warranty exaggerates the saving.",
-      "aHash": "c94f532439ac07e039fde3052a4e3c0fc4761288418d39e622ac0e25116da0c8"
-    },
-    {
-      "id": 379,
-      "sourceGame": "costDirective",
-      "q": "Which situation best illustrates economies of scope?",
-      "options": [
-        "A factory lowers average cost by producing more of one product",
-        "A team adds workers until each worker contributes less output",
-        "A firm doubles all inputs and output exactly doubles",
-        "A dairy uses the same distribution network for milk and yogurt at lower joint cost"
-      ],
-      "tag": "economies_of_scope",
-      "type": "identification",
-      "objective": "LO7.7",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_scope",
-      "primarySkill": "economies_of_scope",
-      "secondarySkills": [],
-      "repairSkill": "economies_of_scope",
-      "commonError": "confuses_scope_with_scale",
-      "feedback": "Economies of scope occur when producing different products together is cheaper than producing them separately.",
-      "aHash": "1f8d699b186bf13c9e0ecd8c5fe17f51c6edca1f875f548494887b741866cd38"
-    },
-    {
       "id": 380,
       "sourceGame": "costDirective",
       "q": "An acquisition would reduce combined annual production cost from $220,000 to $180,000 at unchanged outputs. Integration adds $25,000 per year. The seller also asks a one-time $50,000 premium. For a two-year horizon with no discounting or resale premium recovery, what does the scope argument establish?",
@@ -8244,7 +7362,7 @@ const questionBanks = {
         "The production saving alone guarantees a worthwhile purchase at any premium."
       ],
       "tag": "economies_of_scope",
-      "type": "application",
+      "type": "multi-step",
       "objective": "LO7.7",
       "difficulty": "elite",
       "conceptCluster": "elite_costDirective_scope",
@@ -8258,57 +7376,6 @@ const questionBanks = {
       "aHash": "60a82e6fca15d95dd8f5effa3dd6d47ac89606cbed722765ba61d8671c152c50"
     },
     {
-      "id": 381,
-      "sourceGame": "costDirective",
-      "q": "A firm is deciding whether to accept a one-time order. The order price is below average cost but above marginal cost, and it will not affect regular sales. Which reasoning is strongest?",
-      "options": [
-        "Reject because price below average cost always lowers profit",
-        "Accept if the order's marginal revenue exceeds its marginal cost",
-        "Reject because fixed cost must be recovered on every unit",
-        "Accept only if the order raises average cost"
-      ],
-      "tag": "mr_mc_extent_rule",
-      "type": "integration",
-      "objective": "LO4.3",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_integration_mr_mc_ac",
-      "primarySkill": "mr_mc_extent_rule",
-      "secondarySkills": [
-        "LO4.1",
-        "LO3.2",
-        "marginal_decision",
-        "mr_mc_decision"
-      ],
-      "repairSkill": "mr_mc_extent_rule",
-      "commonError": "uses_average_cost",
-      "feedback": "The one-time order should be judged by incremental revenue and incremental cost when it does not affect other sales.",
-      "aHash": "392d132bb9dd5effe6bc8a92c8e0e49ef5939465db37d343c8ef0a4b5af5f28c"
-    },
-    {
-      "id": 382,
-      "sourceGame": "costDirective",
-      "q": "A manager keeps a product line because it covers allocated overhead, but dropping it would free workers for a project with higher contribution. What should be compared?",
-      "options": [
-        "The product line's allocated overhead versus its accounting revenue",
-        "The product line's original launch cost versus current sales",
-        "The product line's contribution versus the best alternative use of the workers",
-        "The number of employees assigned to each project"
-      ],
-      "tag": "opportunity_cost",
-      "type": "integration",
-      "objective": "LO3.1",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_integration_opportunity_relevant",
-      "primarySkill": "opportunity_cost",
-      "secondarySkills": [
-        "LO3.2"
-      ],
-      "repairSkill": "opportunity_cost",
-      "commonError": "ignores_alternative_use",
-      "feedback": "The best alternative use of scarce resources is an opportunity cost of keeping the product line.",
-      "aHash": "4e77040c163861c961efc38db104a11d9fd77640489fde6b4eb727ce8f720941"
-    },
-    {
       "id": 383,
       "sourceGame": "costDirective",
       "q": "A plant manager is rewarded for low reported AC. Making 1,000 units costs $20,000; making 1,200 costs $22,800, but only 1,000 can sell. Extra inventory has no future value and costs $400 to dispose of. What is the incentive problem?",
@@ -8319,7 +7386,7 @@ const questionBanks = {
         "AC falls from $20 to $19 while overproduction destroys $3,200 of value."
       ],
       "tag": "incentive_system_design",
-      "type": "integration",
+      "type": "multi-step",
       "objective": "LO1.3",
       "difficulty": "elite",
       "conceptCluster": "elite_costDirective_integration_incentive_cost",
@@ -8338,52 +7405,24 @@ const questionBanks = {
     {
       "id": 384,
       "sourceGame": "costDirective",
-      "q": "A company owns a truck with no loan payment. A manager says delivery is free because the truck is paid off. What costs are still relevant?",
+      "q": "A buyer values verified equipment at $6,000 and its owner values keeping it at $4,500. An inspection costing $200 would establish condition; moving costs $400. Without inspection the buyer offers $4,000. If inspection succeeds as expected, which statement is correct?",
       "options": [
-        "Fuel, driver time, maintenance, and the truck's next-best use",
-        "Only depreciation because it appears in the accounting records",
-        "No costs because the truck has no current loan payment",
-        "Only fixed insurance cost because variable costs are avoidable"
+        "Verification can unlock $900 net gains; a negotiated payment must still satisfy both parties",
+        "Inspection alone creates $2,000 because the buyer’s offer rises",
+        "Moving the equipment creates $1,500 net gains regardless of inspection cost",
+        "The current $4,000 offer is sufficient because the buyer’s verified value is higher"
       ],
-      "tag": "opportunity_cost",
-      "type": "trap",
-      "objective": "LO3.1",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_integration_owned_asset",
-      "primarySkill": "opportunity_cost",
-      "secondarySkills": [
-        "LO3.2",
-        "LO3.3"
-      ],
-      "repairSkill": "opportunity_cost",
-      "commonError": "owned_asset_free",
-      "feedback": "Owned assets can have variable operating costs and opportunity costs.",
-      "aHash": "2c7687880c24de7874e4621dd7c2996cc6ae86f42852fcd6c8eb1aaaa459ccf9"
-    },
-    {
-      "id": 385,
-      "sourceGame": "costDirective",
-      "q": "A supplier's marginal cost is low at current volume but rises sharply after capacity is reached. A buyer wants a contract with unlimited units at the current price. What is the supplier's concern?",
-      "options": [
-        "The current price must equal average cost at every possible output",
-        "Future units may cost more than the contract price once capacity is strained",
-        "Unlimited volume guarantees economies of scale forever",
-        "Capacity constraints matter only for fixed cost, not marginal cost"
-      ],
-      "tag": "cost_curves_contracts",
+      "tag": "barriers_to_trade",
       "type": "integration",
-      "objective": "LO7.2",
+      "objective": "LO2.2",
       "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_integration_contract_capacity",
-      "primarySkill": "cost_curves_contracts",
-      "secondarySkills": [
-        "LO4.1",
-        "cost_curves_in_contracts"
-      ],
-      "repairSkill": "cost_curves_contracts",
-      "commonError": "ignores_capacity_costs",
-      "feedback": "Contract terms should account for how marginal cost changes when output approaches capacity.",
-      "aHash": "abd3a64ba0b5194ee36635bd72c2f4fdebb8928ac9c321bc4c528454a0928078"
+      "conceptCluster": "elite_costDirective_barriers_to_trade",
+      "primarySkill": "barriers_to_trade",
+      "secondarySkills": [],
+      "repairSkill": "barriers_to_trade",
+      "commonError": "ignores_cost_of_resolving_information_barrier",
+      "feedback": "The existing offer is below the owner’s reservation value. Net potential gains after verification and movement are 6000 − 4500 − 200 − 400 = 900.",
+      "aHash": "e2db1dbada66852ac96ae9db268f05d88088f0adeb27850cf1f3fd0f5bdbaac7"
     },
     {
       "id": 386,
@@ -8396,7 +7435,7 @@ const questionBanks = {
         "$88,000"
       ],
       "tag": "accounting_economic_profit",
-      "type": "calculation",
+      "type": "multi-step",
       "objective": "LO3.4",
       "difficulty": "elite",
       "conceptCluster": "elite_costDirective_integration_profit",
@@ -8410,83 +7449,6 @@ const questionBanks = {
       "commonError": "ignores_implicit_costs",
       "feedback": "Distinct implicit costs total 54,000 + 21,000 + 8,000 = $83,000. Deduct the building's rental alternative once, leaving $5,000.",
       "aHash": "9268d0f3ef03795caf9a49883e4557382c23b99292886f428e0c8742eaa2929c"
-    },
-    {
-      "id": 387,
-      "sourceGame": "costDirective",
-      "q": "A firm adds a second product that uses the same warehouse. Joint warehousing lowers total distribution cost, but managers are rewarded by product-line profit after allocated warehouse charges. What problem could occur?",
-      "options": [
-        "Managers will always accept the product because accounting allocations show true opportunity cost",
-        "The firm cannot have economies of scope when products share a warehouse",
-        "Allocated warehouse charges are always the correct marginal cost",
-        "Managers may reject a scope-saving product because allocation hides joint savings"
-      ],
-      "tag": "economies_of_scope",
-      "type": "integration",
-      "objective": "LO7.7",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_integration_scope_org",
-      "primarySkill": "economies_of_scope",
-      "secondarySkills": [
-        "LO2.5",
-        "LO3.2"
-      ],
-      "repairSkill": "economies_of_scope",
-      "commonError": "uses_allocation_as_marginal_cost",
-      "feedback": "Accounting allocations can hide joint cost savings from economies of scope.",
-      "aHash": "d747241b2a2825316d104a0f009b7dfb962f563ba356beca0785b084a8df79cb"
-    },
-    {
-      "id": 388,
-      "sourceGame": "costDirective",
-      "q": "A worker paid a flat salary chooses low effort on tasks that are hard to observe. The firm adds measurable performance bonuses, but quality falls. What lesson fits best?",
-      "options": [
-        "Incentives changed effort, but the measured task crowded out unmeasured quality",
-        "The flat salary created the strongest marginal incentive for quality",
-        "Performance bonuses cannot change behavior when workers are rational",
-        "Quality is irrelevant if the measured output target improves"
-      ],
-      "tag": "incentive_compensation_effort",
-      "type": "integration",
-      "objective": "LO4.4",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_integration_compensation_quality",
-      "primarySkill": "incentive_compensation_effort",
-      "secondarySkills": [
-        "LO1.3",
-        "performance_pay_tradeoffs",
-        "incentive_compensation"
-      ],
-      "repairSkill": "incentive_compensation_effort",
-      "commonError": "ignores_multitask_distortion",
-      "feedback": "Incentives can improve measured effort while creating distortions on unmeasured tasks.",
-      "aHash": "678c3f703aa2313f3283b5a720c630aa331990aeb4dfb5ee562b79d8d609b77f"
-    },
-    {
-      "id": 389,
-      "sourceGame": "costDirective",
-      "q": "A pilot loses $8,000 this month but creates experience expected to reduce relevant cost by $3 per unit on 4,000 later units. Later orders are committed; the pilot has no other benefits or costs and discounting is ignored. What lifecycle evaluation is appropriate?",
-      "options": [
-        "Reject because a current loss can never be recovered through learning.",
-        "Proceed on these forecasts: later savings exceed the pilot loss by $4,000.",
-        "Proceed with a $12,000 net gain because the pilot loss is irrelevant before approval.",
-        "Proceed because future learning proves the firm is already at MES."
-      ],
-      "tag": "learning_curve",
-      "type": "integration",
-      "objective": "LO7.6",
-      "difficulty": "elite",
-      "conceptCluster": "elite_costDirective_integration_scale_learning",
-      "primarySkill": "learning_curve",
-      "secondarySkills": [
-        "LO7.5",
-        "learning_curve_strategy",
-        "learning_curves"
-      ],
-      "repairSkill": "learning_curve",
-      "commonError": "single_period_thinking",
-      "feedback": "Before approval, the pilot loss is avoidable and must be counted. Forecast savings are 3×4,000 = $12,000, exceeding $8,000 by $4,000. This does not prove MES.",
-      "aHash": "2f32b044fe18051debe5314080bd7198c324fa053fa55d90ea666a88e977586a"
     }
   ],
   "legendary": [
@@ -13106,7 +12068,7 @@ const questionBanks = {
     {
       "id": 2000,
       "sourceGame": "costDirective",
-      "q": "A manager owns a delivery van that could be used for the firm or rented to another business for $1,800 per month. If the firm uses the van itself, what cost belongs in the decision?",
+      "q": "A manager owns a delivery van that could be used for the firm or rented to another business for $1,800 net per month. If the firm uses the van itself, what cost belongs in the decision?",
       "options": [
         "$1,800 opportunity cost",
         "$0 because the van is already owned",
@@ -13114,7 +12076,7 @@ const questionBanks = {
         "Only fuel and maintenance"
       ],
       "tag": "opportunity_cost",
-      "type": "boss_definition",
+      "type": "boss_application",
       "objective": "LO3.1",
       "difficulty": "easyBoss",
       "conceptCluster": "easyBoss_costDirective_opportunity_cost",
@@ -13152,24 +12114,24 @@ const questionBanks = {
     {
       "id": 2002,
       "sourceGame": "costDirective",
-      "q": "A machine hour can produce Product X with $900 contribution or Product Y with $700 contribution. If the firm uses the hour for Product X, which statement is correct?",
+      "q": "A machine has two free hours. Product X uses both and earns $900 contribution. Product Y earns $420 per hour and can use both; Z earns $500 but can use only one hour. Costs are already deducted. What is the best alternative forgone by choosing X?",
       "options": [
-        "There is no opportunity cost because the machine is already owned",
-        "The opportunity cost is $900 because Product X was chosen",
-        "The opportunity cost is $700 from the forgone Product Y use",
-        "The opportunity cost is the average accounting cost of the machine"
+        "X itself, earning $900",
+        "Y alone for one hour, earning $420",
+        "Y and Z together, earning $920",
+        "Both Y hours plus Z, earning $1,340"
       ],
       "tag": "opportunity_cost",
-      "type": "boss_application",
+      "type": "boss_integration",
       "objective": "LO3.1",
       "difficulty": "easyBoss",
       "conceptCluster": "easyBoss_costDirective_opportunity_cost",
       "primarySkill": "opportunity_cost",
       "secondarySkills": [],
       "repairSkill": "opportunity_cost",
-      "commonError": "ignores_scarce_capacity_cost",
-      "feedback": "Scarce capacity has an opportunity cost equal to its next-best use.",
-      "aHash": "ff91cd1b6cb7f617609335d56181327da2191d156d49f6665c297b6e1afeb5be",
+      "commonError": "ignores_best_feasible_combination",
+      "feedback": "One Z hour plus one Y hour is feasible and earns $920, more than two Y hours at $840. The opportunity cost of X is $920, so choosing X gives up $20 of additional contribution.",
+      "aHash": "18c865a2b6fb9634dbecb11cc67d9585f4553fdb39a51bf2232fd6983109318b",
       "bossStage": "final"
     },
     {
@@ -13223,10 +12185,10 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "A manager rejects a special order because its price is below average total cost. The order uses otherwise idle capacity, has no effect on regular sales, and its price exceeds all incremental cost. What mistake is being made?",
       "options": [
-        "Correctly applying the relevant-cost rule",
+        "Rejecting an order because it displaces more profitable work",
         "Using average cost instead of the costs and benefits that change",
-        "Ignoring that fixed costs are always avoidable",
-        "Treating revenue as irrelevant"
+        "Rejecting an order whose avoidable setup exceeds its contribution",
+        "Counting the extra materials the order requires"
       ],
       "tag": "relevant_costs_benefits",
       "type": "boss_trap",
@@ -13292,10 +12254,10 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "The dispatcher earns a booking bonus and knows fragile orders lose money after cancellations. Which change most directly addresses the incentive problem?",
       "options": [
-        "Reclassify cancellations as fixed costs on the report",
         "Send the same cancellation report again while keeping booking pay",
+        "Increase the bonus for every booking regardless of cancellation",
         "Tie rewards to verified contribution after cancellation costs",
-        "Raise the booking bonus to offset her personal effort cost"
+        "Pay a second booking bonus whenever a canceled order is rebooked"
       ],
       "tag": "rational_actor_paradigm",
       "type": "boss_application",
@@ -13315,9 +12277,9 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "A service team is told that quality matters, but its bonus uses only call count. Which component of the incentive needs revision?",
       "options": [
-        "The number of completed calls in last year's accounts",
-        "The historical cost of the call center",
-        "The timing of a fixed salary that never depends on performance",
+        "The timing of an unchanged fixed salary alone",
+        "The clarity of a call-count rule that employees already understand",
+        "The size of the same call-count bonus alone",
         "The performance measure linked to the reward"
       ],
       "tag": "incentive_system_design",
@@ -13415,9 +12377,9 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "A branch receives accurate margin data but still earns a bonus only for revenue. Discounts increase sales and reduce contribution. Which diagnosis remains?",
       "options": [
-        "The branch needs only more copies of the same margin report",
-        "The margin data have removed every incentive conflict",
-        "Local customer information has become worthless",
+        "A larger revenue bonus necessarily corrects the discounting incentive",
+        "The primary remaining problem is lack of access to margin data",
+        "Local decision authority by itself ensures that margins drive choices",
         "The reward still favors revenue over contribution"
       ],
       "tag": "managerial_problem_diagnosis",
@@ -13465,10 +12427,10 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "A studio values an unused license at $120; another firm values it at $210. Transfer uses $15 in real resources. What creates wealth?",
       "options": [
-        "Keeping the license unused because its original cost is sunk",
+        "Raising the negotiated price without changing who uses the license",
         "Moving the license to the higher-valued use when transfer costs are covered",
-        "Changing the sale price without moving the license",
-        "Increasing the studio's historical purchase price"
+        "Treating the buyer’s full 210 value as newly created surplus",
+        "Keeping the license because original spending exceeds its current use value"
       ],
       "tag": "voluntary_transactions_surplus",
       "type": "boss_application",
@@ -13530,7 +12492,7 @@ const questionBanks = {
         "barriers_to_trade"
       ],
       "repairSkill": "voluntary_transactions_surplus",
-      "commonError": "confuses_price_with_total_gains",
+      "commonError": "ignores_transfer_resources_in_blocked_gains",
       "feedback": "Net gain is 210 - 120 - 15 = 75. The sale price divides this gain but does not determine its total.",
       "aHash": "0cfe0f649dc2b884bb4896a779c0d09a145b49e7c25ea2b566b64ec381e68433",
       "bossStage": "final"
@@ -13632,7 +12594,7 @@ const questionBanks = {
     {
       "id": 3004,
       "sourceGame": "costDirective",
-      "q": "Output rises from 500 to 520 units. Total revenue rises from $15,000 to $15,700. What is marginal revenue per added unit?",
+      "q": "Output rises from 500 to 520 units. Total revenue rises from $15,000 to $15,700. What is average incremental revenue per added unit?",
       "options": [
         "$30",
         "$700",
@@ -13655,30 +12617,30 @@ const questionBanks = {
     {
       "id": 3005,
       "sourceGame": "costDirective",
-      "q": "At 1,000 units, total cost is $42,000. At 1,050 units, total cost is $44,250. What is marginal cost per added unit over this range?",
+      "q": "At 1,000 units fixed cost is $12,000 and variable cost $30,000. At 1,050 units total cost is $44,250. Revenue rises by $2,500 over that interval. What are added cost per unit and the profit change?",
       "options": [
-        "$44,250",
-        "$42",
-        "$2,250",
-        "$45"
+        "$45 per unit; profit falls $250",
+        "$42 per unit; profit rises $400",
+        "$2,250 per unit; profit rises $250",
+        "$45 per unit; profit rises $250"
       ],
       "tag": "ac_mc_mr_calculation",
-      "type": "boss_calculation",
+      "type": "boss_multi_step",
       "objective": "LO4.2",
       "difficulty": "mediumBoss",
       "conceptCluster": "mediumBoss_costDirective_ac_mc_mr_calculation",
       "primarySkill": "ac_mc_mr_calculation",
       "secondarySkills": [],
       "repairSkill": "ac_mc_mr_calculation",
-      "commonError": "uses_average_cost_instead_of_change_in_cost",
-      "feedback": "Marginal cost per added unit is ($44,250 - $42,000) / 50 = $45.",
-      "aHash": "d503dcfdd44cb6216b22dba5a43ecacce36079e0f6445b5906ba9b0a4daaf2dc",
+      "commonError": "uses_average_cost_instead_of_increment",
+      "feedback": "Initial total cost is $42,000. Added cost is $2,250 over 50 units, or $45 each. Added revenue of $2,500 exceeds that cost by $250. Use changes over the same interval.",
+      "aHash": "1e3d6753ac8981fa958da7a703aa3a15da0ebd41ac255adbbfc4b17ed70b522b",
       "bossStage": "final"
     },
     {
       "id": 3006,
       "sourceGame": "costDirective",
-      "q": "A firm should expand output as long as which condition holds?",
+      "q": "When successive net marginal gains are decreasing, which comparison supports expanding by the next unit?",
       "options": [
         "Marginal revenue is greater than marginal cost",
         "Average cost is greater than price",
@@ -13785,7 +12747,7 @@ const questionBanks = {
       "primarySkill": "incentive_compensation_effort",
       "secondarySkills": [],
       "repairSkill": "incentive_compensation_effort",
-      "commonError": "ignores_base_salary",
+      "commonError": "confuses_fixed_payment_with_marginal_reward",
       "feedback": "The marginal reward is .20×2,400 = 480; subtract effort cost 350 for a net gain of 130. The fixed payment cancels.",
       "aHash": "b2ca23119881ffa239023f1ee03beddbfec68e2372e982851cf5161fcaacbea5",
       "bossStage": "middle"
@@ -13893,8 +12855,8 @@ const questionBanks = {
       "options": [
         "Accounting profit subtracts implicit costs but not explicit costs",
         "Economic profit subtracts implicit costs as well as explicit costs",
-        "Economic profit ignores opportunity cost",
-        "Accounting profit always equals zero"
+        "Economic profit subtracts only payments made to outside parties",
+        "Accounting profit deducts the owner’s forgone salary even when no salary is paid"
       ],
       "tag": "accounting_economic_profit",
       "type": "boss_definition",
@@ -13917,7 +12879,7 @@ const questionBanks = {
         "$110,000",
         "$65,000",
         "$15,000",
-        "$255,000"
+        "-$15,000"
       ],
       "tag": "accounting_economic_profit",
       "type": "boss_calculation",
@@ -13935,7 +12897,7 @@ const questionBanks = {
     {
       "id": 2011,
       "sourceGame": "costDirective",
-      "q": "An owner reports $65,000 accounting profit. Her best salaried alternative pays $50,000, and owned capital could earn $20,000 elsewhere. All other costs are already recorded. Which conclusion follows?",
+      "q": "An owner reports $65,000 accounting profit. Her best salaried alternative pays $50,000, and owned capital could earn $20,000 elsewhere. These alternatives can be earned together; all other costs are already recorded. Which conclusion follows?",
       "options": [
         "-$70,000 economic profit; accounting profit must be ignored",
         "$15,000 economic profit; only forgone salary belongs in cost",
@@ -13985,10 +12947,10 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "A restaurant has already paid a nonrefundable $3,000 permit fee. A one-night event would add $2,200 in labor and food costs and bring $2,800 in revenue. Should the restaurant host the event?",
       "options": [
-        "No, because revenue is below $3,000",
-        "Yes, because the event adds $600 before considering the sunk permit fee",
-        "No, because total historical cost is $5,200",
-        "Yes, because sunk costs always increase profit"
+        "No, because revenue is below the sunk $3,000 permit",
+        "Yes, because the event adds $600 and the permit is sunk",
+        "No, because historical permit plus new costs total $5,200",
+        "Yes, because the entire $2,800 is profit once a permit has been paid"
       ],
       "tag": "fixed_cost_fallacy",
       "type": "boss_calculation",
@@ -14000,7 +12962,7 @@ const questionBanks = {
       "repairSkill": "fixed_cost_fallacy",
       "commonError": "includes_sunk_fixed_fee",
       "feedback": "The permit fee is sunk. The event adds $2,800 - $2,200 = $600.",
-      "aHash": "25b704a645f38c592924c143b23162c31f05d76d22e61c1acd1c61f1c1f334b4",
+      "aHash": "57d58441225f7734eb4c78fb7b3551d095a27e3b5e18ccb7a27a074c3b00e64f",
       "bossStage": "middle"
     },
     {
@@ -14107,10 +13069,10 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "A plant has fixed equipment. Labor rises from 8 to 9 workers, and output rises from 880 to 930 units. Labor rises from 9 to 10 workers, and output rises from 930 to 960 units. What does this show?",
       "options": [
-        "Marginal product fell from 50 to 30 units, showing diminishing marginal returns",
-        "Average product must be rising forever",
-        "All inputs doubled and output less than doubled",
-        "Economies of scope are present because labor is shared"
+        "Marginal product fell from 50 to 30 with equipment fixed",
+        "Marginal product rose because total output rose from 930 to 960",
+        "Decreasing returns to scale are established although equipment is fixed",
+        "The tenth worker must reduce profit because marginal product fell"
       ],
       "tag": "diminishing_marginal_returns",
       "type": "final_boss_concept",
@@ -14120,9 +13082,9 @@ const questionBanks = {
       "primarySkill": "diminishing_marginal_returns",
       "secondarySkills": [],
       "repairSkill": "diminishing_marginal_returns",
-      "commonError": "director_trap",
+      "commonError": "confuses_total_with_marginal_product",
       "feedback": "Diminishing marginal returns requires at least one fixed input in the short run.",
-      "aHash": "37ae10407677129a453cc9ebd2f527def7775f3d443e7ff8ca6f1f6284bd26a4",
+      "aHash": "bc9dd9e878555d6b26e7d7c2093bf0afbcac48c7f6706f6604faa33b1ef96a80",
       "bossStage": "opening"
     },
     {
@@ -14145,7 +13107,7 @@ const questionBanks = {
         "mr_mc_extent_rule"
       ],
       "repairSkill": "diminishing_marginal_returns",
-      "commonError": "director_trap",
+      "commonError": "stops_hiring_when_marginal_product_falls",
       "feedback": "Added contributions are 252, 186 and 108. The first two exceed 150; the eighth does not. Diminishing returns alone does not mean hiring should stop immediately.",
       "aHash": "aade9cc6578065f0e7d8d33f4f95cb7c7b32ff4f3f95b77859f45beb378fc1e9",
       "bossStage": "middle"
@@ -14171,7 +13133,7 @@ const questionBanks = {
         "mr_mc_extent_rule"
       ],
       "repairSkill": "diminishing_marginal_returns",
-      "commonError": "director_trap",
+      "commonError": "infers_scale_and_profit_from_marginal_product",
       "feedback": "Fixed-input diminishing returns does not identify returns to scale. A worker with a lower marginal product can still add more revenue than cost.",
       "aHash": "c3d1ca0bc800e0d6f2cc03debe202f87c3fcf848c2d8bdc5f624fbf0b569f145",
       "bossStage": "final"
@@ -14181,10 +13143,10 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "A supplier quotes $18 per unit for 5,000 units and $12 per unit for 30,000 units because setup and specialized equipment can be spread over more output. What should the buyer understand?",
       "options": [
-        "The supplier is admitting that marginal cost is always zero",
-        "The buyer should use only the supplier’s historical sunk cost",
-        "The lower price proves the small order has no opportunity cost",
-        "Volume can change the supplier’s average cost and feasible price"
+        "A lower average cost guarantees profitable production at any price",
+        "The large-order unit cost is automatically feasible at any small volume",
+        "A lower quoted price proves every additional unit costs zero",
+        "Volume can change average cost and the price supported by a commitment"
       ],
       "tag": "cost_curves_contracts",
       "type": "final_boss_application",
@@ -14194,9 +13156,9 @@ const questionBanks = {
       "primarySkill": "cost_curves_contracts",
       "secondarySkills": [],
       "repairSkill": "cost_curves_contracts",
-      "commonError": "director_trap",
+      "commonError": "uses_large_volume_cost_at_small_volume",
       "feedback": "Cost curves help explain feasible prices, commitments, and supplier scale.",
-      "aHash": "a6b6ec1b58b61396172836d808b56aaf882a56109ce0103c72908809420441da",
+      "aHash": "9b4f3209db744a34e6e423695b1dc3d2f72df60217165f5bcd2249025752f8cb",
       "bossStage": "opening"
     },
     {
@@ -14219,7 +13181,7 @@ const questionBanks = {
         "ac_mc_mr_calculation"
       ],
       "repairSkill": "cost_curves_contracts",
-      "commonError": "director_trap",
+      "commonError": "confuses_average_with_incremental_cost",
       "feedback": "At 12,000 units, AC=120,000/12,000=10. The extra 6,000 units cost 30,000, or 5 each. Both measures inform negotiations but answer different questions.",
       "aHash": "972fdab675f105e8ded62bd409bdc9732bea891750b74f2efdcc85d8a9d4daef",
       "bossStage": "middle"
@@ -14242,7 +13204,7 @@ const questionBanks = {
       "primarySkill": "cost_curves_contracts",
       "secondarySkills": [],
       "repairSkill": "cost_curves_contracts",
-      "commonError": "director_trap",
+      "commonError": "ignores_volume_commitment_before_investment",
       "feedback": "Cost curves help explain feasible prices, commitments, and supplier scale.",
       "aHash": "cb06568444e598e5e9670527ab923d6723d533500ce77cbc3c4070d33ceea562",
       "bossStage": "final"
@@ -14252,10 +13214,10 @@ const questionBanks = {
       "sourceGame": "costDirective",
       "q": "A facility costs $96,000 to operate at 8,000 units and $120,000 at 12,000 units. What happens to average cost?",
       "options": [
-        "It rises from $8 to $12 per unit",
-        "It stays fixed at $24 per unit",
+        "It falls from $12 to $6 per unit",
+        "It rises from $12 to $15 per unit",
         "It falls from $12 to $10 per unit",
-        "It falls from $120,000 to $96,000"
+        "It stays at $12 because total cost rises"
       ],
       "tag": "average_cost_output",
       "type": "final_boss_calculation",
@@ -14265,7 +13227,7 @@ const questionBanks = {
       "primarySkill": "average_cost_output",
       "secondarySkills": [],
       "repairSkill": "average_cost_output",
-      "commonError": "director_trap",
+      "commonError": "confuses_total_and_average_cost",
       "feedback": "Average cost equals total cost divided by output.",
       "aHash": "57db9b98d5bc203cb7f6d474f0f012640f0b6480bab4d48ea70402995dda64bd",
       "bossStage": "opening"
@@ -14291,7 +13253,7 @@ const questionBanks = {
         "relevant_costs_benefits"
       ],
       "repairSkill": "average_cost_output",
-      "commonError": "director_trap",
+      "commonError": "omits_avoidable_setup",
       "feedback": "Revenue rises 32,000; production cost rises 24,000; setup adds 5,000. Net gain is 3,000 even though the price is below both reported average costs.",
       "aHash": "b885aa10e776e4d0fed9d2c96e68183470518f987f19bc629d8f2a4e9953094b",
       "bossStage": "middle"
@@ -14299,24 +13261,24 @@ const questionBanks = {
     {
       "id": 4008,
       "sourceGame": "costDirective",
-      "q": "A small buyer wants a price based on a supplier’s average cost at 100,000 units, but the buyer orders only 2,000 units. What is the likely flaw?",
+      "q": "A supplier has no other sales. A 2,000-unit standalone plan costs $32,000; a 10,000-unit plan costs $100,000. A buyer requests 2,000 units at $10 each and argues that the larger plan proves the quote is profitable. What is the correction?",
       "options": [
-        "The buyer is using an average cost from a scale the order does not support",
-        "The buyer has proven marginal cost is zero",
-        "The buyer has identified decreasing returns to scale",
-        "The buyer has eliminated setup costs by ordering less"
+        "The standalone quote loses $12,000; the larger plan’s $10 average is unavailable at this volume",
+        "The quote breaks even because $100,000 divided by 10,000 is $10",
+        "The quote earns $12,000 because the smaller plan uses fewer units",
+        "The supplier should subtract the two average costs and ignore requested quantity"
       ],
       "tag": "average_cost_output",
-      "type": "final_boss_application",
+      "type": "final_boss_integration",
       "objective": "LO7.3",
       "difficulty": "finalBoss",
       "conceptCluster": "finalBoss_costDirective_average_cost_output",
       "primarySkill": "average_cost_output",
       "secondarySkills": [],
       "repairSkill": "average_cost_output",
-      "commonError": "director_trap",
-      "feedback": "Average cost equals total cost divided by output.",
-      "aHash": "aceb4b71fc7f3d8ce33532499a99451e31e3dd30f39798b346585a7a8e1c1286",
+      "commonError": "uses_unattainable_scale_average",
+      "feedback": "At the requested volume, revenue is 2,000 × $10 = $20,000 against $32,000 cost. The larger plan requires additional demand; its average cost is not available at the smaller volume.",
+      "aHash": "751fd2ee159e5a2521842f3e101ad2204ef8d5193c90255ac71975d86b66dfe3",
       "bossStage": "final"
     },
     {
@@ -14337,7 +13299,7 @@ const questionBanks = {
       "primarySkill": "returns_to_scale",
       "secondarySkills": [],
       "repairSkill": "returns_to_scale",
-      "commonError": "director_trap",
+      "commonError": "confuses_output_level_with_proportional_scale",
       "feedback": "Returns to scale asks what happens when all inputs change together.",
       "aHash": "b43902336e49d926263d77e4900a3b47a9fe58bddd8460b227efbb785a750b06",
       "bossStage": "opening"
@@ -14362,7 +13324,7 @@ const questionBanks = {
         "average_cost_output"
       ],
       "repairSkill": "returns_to_scale",
-      "commonError": "director_trap",
+      "commonError": "miscomputes_average_cost_after_scale_change",
       "feedback": "Initial AC is 100,000/25,000=4. New AC is 200,000/65,000≈3.08. Output rises more than proportionally to input cost.",
       "aHash": "afa52b7569af6b0d43c5e8c195625f8194d2b3a7ed02aead1947f4adef7d6f52",
       "bossStage": "middle"
@@ -14388,7 +13350,7 @@ const questionBanks = {
         "mr_mc_extent_rule"
       ],
       "repairSkill": "returns_to_scale",
-      "commonError": "director_trap",
+      "commonError": "ignores_demand_limit",
       "feedback": "Replacement revenue is 40,000×4=160,000 against 200,000 cost. The current plant breaks even. A technological scale advantage does not guarantee a profitable expansion at actual demand.",
       "aHash": "b97ed81fde006526a5fb6a45c1641842442d2a146d1eebbfb551ffae5b239920",
       "bossStage": "final"
@@ -14411,7 +13373,7 @@ const questionBanks = {
       "primarySkill": "minimum_efficient_scale",
       "secondarySkills": [],
       "repairSkill": "minimum_efficient_scale",
-      "commonError": "director_trap",
+      "commonError": "chooses_last_point_on_minimum_cost_range",
       "feedback": "MES is the smallest output where long-run average cost reaches its minimum.",
       "aHash": "cfc3340a8ab29de8297120f562de9c7590bce8824ee9178500261a8f158894b1",
       "bossStage": "opening"
@@ -14434,8 +13396,8 @@ const questionBanks = {
       "primarySkill": "minimum_efficient_scale",
       "secondarySkills": [],
       "repairSkill": "minimum_efficient_scale",
-      "commonError": "director_trap",
-      "feedback": "MES is the smallest output where long-run average cost reaches its minimum.",
+      "commonError": "treats_scale_advantage_as_sufficient_for_outsourcing",
+      "feedback": "At attainable volumes the large supplier may have lower unit cost. A make-or-buy comparison must still use its quoted price, coordination costs, quality and avoidable internal costs.",
       "aHash": "59721c03fa8d5229e7309483b56641aa3a44488645596f52357ec12e451eba55",
       "bossStage": "middle"
     },
@@ -14459,7 +13421,7 @@ const questionBanks = {
         "relevant_costs_benefits"
       ],
       "repairSkill": "minimum_efficient_scale",
-      "commonError": "director_trap",
+      "commonError": "omits_coordination_cost",
       "feedback": "Make costs 90,000+8×10,000=170,000. Buy costs 15×10,000+14,000=164,000. The supplier's scale advantage must be weighed with coordination cost at the firm's actual volume.",
       "aHash": "352cf43005163cac876b0e0c677bc875a341d98b9093ecbc1544fc2a164770fb",
       "bossStage": "final"
@@ -14484,20 +13446,20 @@ const questionBanks = {
         "relevant_costs_benefits"
       ],
       "repairSkill": "learning_curve",
-      "commonError": "director_trap",
+      "commonError": "ignores_early_losses_or_setup",
       "feedback": "Revenue is 2,000×44 = 88,000. Total relevant cost is 51,000 + 34,000 + 2,000 = 87,000. Both batches and setup belong in the comparison.",
       "aHash": "5101c9638b2d2781151db487a22ab4407af938151d891f67c126136f30a0aae9",
-      "bossStage": "opening"
+      "bossStage": "middle"
     },
     {
       "id": 4016,
       "sourceGame": "costDirective",
-      "q": "Two firms use the same equipment. Firm A has produced 500,000 units and has fewer defects and faster setup. Firm B is new. What explains Firm A’s lower cost most directly?",
+      "q": "Two firms use the same equipment, current production rate and input prices. Firm A has far more cumulative production experience, fewer defects and faster setup. What most directly explains its lower unit cost?",
       "options": [
-        "Learning-curve advantage from cumulative experience",
-        "Minimum efficient scale only because all inputs doubled",
-        "Post-investment hold-up by the buyer",
-        "The fixed-cost fallacy"
+        "Learning from cumulative production experience",
+        "Economies of scale caused by a larger current production rate",
+        "Lower input prices paid by the experienced firm",
+        "Joint production of a second product at lower combined cost"
       ],
       "tag": "learning_curve",
       "type": "final_boss_application",
@@ -14507,20 +13469,20 @@ const questionBanks = {
       "primarySkill": "learning_curve",
       "secondarySkills": [],
       "repairSkill": "learning_curve",
-      "commonError": "director_trap",
+      "commonError": "confuses_learning_with_current_scale",
       "feedback": "Learning curves reflect cost reductions from cumulative experience.",
-      "aHash": "3aa16fc1095614a26abb71ba0d602c4fd44d5c2543379e864a69570b25db3046",
-      "bossStage": "middle"
+      "aHash": "c896034998594eb02dea590b05fd0bd8652b54fe3e727804edcb40b97cd49948",
+      "bossStage": "opening"
     },
     {
       "id": 4017,
       "sourceGame": "costDirective",
       "q": "A repeat contract is profitable only if later unit costs fall with experience. Which evidence most directly tests that assumption?",
       "options": [
-        "The first batch has high total fixed cost",
+        "Unit costs fall solely because input suppliers reduce their prices",
         "Costs fall across repeated batches while batch size and input prices remain similar",
-        "The sale price exceeds last year's accounting revenue per unit",
-        "The buyer promises to place one batch and may cancel every later batch"
+        "Current output increases with unchanged cumulative experience",
+        "A buyer promises one batch but can cancel every later batch"
       ],
       "tag": "learning_curve",
       "type": "final_boss_trap",
@@ -14530,7 +13492,7 @@ const questionBanks = {
       "primarySkill": "learning_curve",
       "secondarySkills": [],
       "repairSkill": "learning_curve",
-      "commonError": "director_trap",
+      "commonError": "attributes_input_price_savings_to_learning",
       "feedback": "Holding current scale and input prices similar helps distinguish accumulated learning from scale or cheaper inputs. A cancellation option also limits whether expected later gains are realizable.",
       "aHash": "42b36d9254c981372ce87a9451de869e453a96ceefc3e8020522be4cc78b335d",
       "bossStage": "final"
@@ -14538,7 +13500,7 @@ const questionBanks = {
     {
       "id": 4018,
       "sourceGame": "costDirective",
-      "q": "Product A costs $140,000 alone and Product B costs $90,000 alone. Joint production costs $205,000. What are economies-of-scope savings?",
+      "q": "Product A costs $140,000 alone and Product B costs $90,000 alone. Joint production costs $205,000. These plans supply the same outputs and quality. What are economies-of-scope savings?",
       "options": [
         "$205,000",
         "$230,000",
@@ -14553,20 +13515,20 @@ const questionBanks = {
       "primarySkill": "economies_of_scope",
       "secondarySkills": [],
       "repairSkill": "economies_of_scope",
-      "commonError": "director_trap",
+      "commonError": "confuses_joint_cost_with_scope_saving",
       "feedback": "Scope economies mean joint production costs less than separate production.",
       "aHash": "0dab70deb56594f491a9c0477be71448bd9eac3597944423f995528db904d3ff",
-      "bossStage": "opening"
+      "bossStage": "middle"
     },
     {
       "id": 4019,
       "sourceGame": "costDirective",
       "q": "A logistics firm adds refrigerated medicine delivery using trucks, routing software, and dispatchers already used for grocery delivery. What cost logic supports the expansion?",
       "options": [
-        "All inputs doubled, so this is returns to scale only",
-        "The new service must be rejected if average cost is positive",
-        "The firm is avoiding all opportunity costs",
-        "Shared inputs can make joint production cheaper than separate systems"
+        "A positive allocated average cost rules out a valuable second service",
+        "Existing ownership means the new service uses no scarce resources",
+        "Any increase in deliveries proves economies of scope",
+        "Shared inputs may lower joint costs relative to separate systems"
       ],
       "tag": "economies_of_scope",
       "type": "final_boss_application",
@@ -14576,10 +13538,10 @@ const questionBanks = {
       "primarySkill": "economies_of_scope",
       "secondarySkills": [],
       "repairSkill": "economies_of_scope",
-      "commonError": "director_trap",
+      "commonError": "assumes_shared_assets_are_free",
       "feedback": "Scope economies mean joint production costs less than separate production.",
-      "aHash": "b03bce7baedf7c1afcf83464862cf31bb17af42dc2267e75bfc87c801ecb8126",
-      "bossStage": "middle"
+      "aHash": "05b473e6c68e60aca536383200030133269ef916e6678175c74167e471a4e37f",
+      "bossStage": "opening"
     },
     {
       "id": 4020,
@@ -14602,7 +13564,7 @@ const questionBanks = {
         "opportunity_cost"
       ],
       "repairSkill": "economies_of_scope",
-      "commonError": "director_trap",
+      "commonError": "ignores_coordination_and_displaced_work",
       "feedback": "Gross scope saving is 80,000. Subtract 45,000 coordination cost and 50,000 opportunity cost for -15,000.",
       "aHash": "9de22676a010f70317b2d0e189144927238b835f4c79c4c351e86e85c59abee3",
       "bossStage": "final"
@@ -14628,7 +13590,7 @@ const questionBanks = {
         "relevant_costs_benefits"
       ],
       "repairSkill": "mr_mc_extent_rule",
-      "commonError": "ignores_avoidable_setup_or_learning_costs",
+      "commonError": "continues_after_negative_marginal_gain",
       "feedback": "The batch gains are 400, 200 and -150. Total gain is greatest after the second batch.",
       "aHash": "8e12b5700c6815487d511846811b23fcf4f9f2412810f0d49e20809527c2cb35",
       "bossStage": "opening"
@@ -14654,7 +13616,7 @@ const questionBanks = {
         "relevant_costs_benefits"
       ],
       "repairSkill": "mr_mc_extent_rule",
-      "commonError": "ignores_avoidable_setup_or_learning_costs",
+      "commonError": "ignores_avoidable_setup",
       "feedback": "Two batches contribute 400 + 200 = 600 before the avoidable setup. Net gain is -50. Marginal batch comparisons do not eliminate an entry or setup cost.",
       "aHash": "4b8919e32fd5d6dbe9cb94b15d3b7ffaf237bc208a926bbc373d6cc60926693b",
       "bossStage": "middle"
@@ -14680,7 +13642,7 @@ const questionBanks = {
         "relevant_costs_benefits"
       ],
       "repairSkill": "mr_mc_extent_rule",
-      "commonError": "ignores_avoidable_setup_or_learning_costs",
+      "commonError": "counts_learning_savings_outside_decision_horizon",
       "feedback": "Expected incremental profit is 600 - 650 + 120 = 70. Savings outside the order or based only on an unsupported scale change would not justify this forecast.",
       "aHash": "b3146afe99e71f6eea037ecef5ab0b328fd4cb58051540618f7e0d0b96841a99",
       "bossStage": "final"
@@ -14696,86 +13658,64 @@ const microSkillRepairPools = {
       "q": "Before choosing a fix, what should a manager identify first?",
       "options": [
         "Decision maker, objective, constraints, information, and alternatives",
-        "The department with the loudest complaint",
-        "The option with the lowest accounting cost",
-        "The competitor with the flashiest strategy"
+        "The cheapest proposal before defining the objective",
+        "The first remedy suggested by a department",
+        "The competitor's policy without examining local constraints"
       ],
       "tag": "problem_solving_steps",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO1.1",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_problem_solving_steps",
       "primarySkill": "problem_solving_steps",
       "secondarySkills": [],
       "repairSkill": "problem_solving_steps",
-      "commonError": "needs_basic_repair",
-      "feedback": "Start by structuring the decision before jumping to a fix.",
+      "commonError": "jumps_to_solution",
+      "feedback": "Frame the decision, objective, constraints, information and alternatives before selecting a fix.",
       "aHash": "fe44aa1698dff401938753a485b00825c5f9c698e3c1687f157d7d4f2a914668"
     },
     {
       "id": 5001,
       "sourceGame": "costDirective",
-      "q": "Why is “try something and see what happens” usually weak problem solving?",
+      "q": "Why is changing a policy without first defining the problem or a measure of success weak problem solving?",
       "options": [
-        "It always costs too much money",
+        "Any experiment is inferior to making no change",
         "It skips the decision structure and objective",
-        "It proves the manager is risk averse",
-        "It is only useful in accounting decisions"
+        "Trying a remedy proves the manager knows its cause",
+        "A trial eliminates the need to define success"
       ],
       "tag": "problem_solving_steps",
-      "type": "repair",
+      "type": "application",
       "objective": "LO1.1",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_problem_solving_steps",
       "primarySkill": "problem_solving_steps",
       "secondarySkills": [],
       "repairSkill": "problem_solving_steps",
-      "commonError": "needs_basic_repair",
-      "feedback": "Start by structuring the decision before jumping to a fix.",
+      "commonError": "confuses_unstructured_action_with_experiment",
+      "feedback": "Unstructured action lacks a stated objective and a way to evaluate results. A planned experiment with a hypothesis can be good problem solving.",
       "aHash": "e364ad65219c5ab64937df32e46c0487bbfc2798ac7f8d44c2672d48cd21d877"
-    },
-    {
-      "id": 5002,
-      "sourceGame": "costDirective",
-      "q": "Which item belongs in the first step of disciplined problem solving?",
-      "options": [
-        "A preferred answer before evidence is collected",
-        "A promise that everyone will be satisfied",
-        "A clear statement of the decision being made",
-        "A list of sunk costs to justify the current plan"
-      ],
-      "tag": "problem_solving_steps",
-      "type": "repair",
-      "objective": "LO1.1",
-      "difficulty": "microSkillRepair",
-      "conceptCluster": "repair_costDirective_problem_solving_steps",
-      "primarySkill": "problem_solving_steps",
-      "secondarySkills": [],
-      "repairSkill": "problem_solving_steps",
-      "commonError": "needs_basic_repair",
-      "feedback": "Start by structuring the decision before jumping to a fix.",
-      "aHash": "055850a3d9dbb0845dd805f30ef55642e206c0dff3b2dbe7573019687aefe05d"
     },
     {
       "id": 5003,
       "sourceGame": "costDirective",
       "q": "A manager says, “Sales are down, so cut price.” What is missing?",
       "options": [
-        "A larger advertising budget before any analysis",
-        "A rule that prices should always fall when sales fall",
-        "A focus on last year’s fixed costs",
+        "Only which employee should implement the price cut",
+        "Only the amount of the price reduction",
+        "Only which advertising channel should be used",
         "A diagnosis of why sales are down and what objective the decision serves"
       ],
       "tag": "problem_solving_steps",
-      "type": "repair",
+      "type": "application",
       "objective": "LO1.1",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_problem_solving_steps",
       "primarySkill": "problem_solving_steps",
       "secondarySkills": [],
       "repairSkill": "problem_solving_steps",
-      "commonError": "needs_basic_repair",
-      "feedback": "Start by structuring the decision before jumping to a fix.",
+      "commonError": "assumes_symptom_identifies_cause",
+      "feedback": "Falling sales alone do not establish whether price, availability or customer demand caused the decline.",
       "aHash": "8fc9c05ce503578abaf10c95a48bad0a5710ed8ab851f50ab9f0cb6fdf883029"
     }
   ],
@@ -14786,87 +13726,43 @@ const microSkillRepairPools = {
       "q": "In the rational-actor paradigm, how do people respond to incentives?",
       "options": [
         "They compare costs and benefits and choose what serves their interests",
-        "They always choose what helps the firm most",
-        "They ignore rewards once rules are written",
-        "They behave randomly whenever money is involved"
+        "They always choose the action maximizing firm profit",
+        "They need perfect information before making any choice",
+        "They count money but exclude effort and time"
       ],
       "tag": "rational_actor_paradigm",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO1.2",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_rational_actor_paradigm",
       "primarySkill": "rational_actor_paradigm",
       "secondarySkills": [],
       "repairSkill": "rational_actor_paradigm",
-      "commonError": "needs_basic_repair",
-      "feedback": "Rational actors respond to the payoffs they actually face.",
+      "commonError": "confuses_private_and_firm_objectives",
+      "feedback": "Rational choice compares perceived private costs and benefits. It need not maximize firm profit or imply perfect information.",
       "aHash": "e69848febd9aa744cf1abe854e24447e7c5050a975781415091dbf0a3f2c4ee9"
-    },
-    {
-      "id": 5005,
-      "sourceGame": "costDirective",
-      "q": "Which phrase best fits rational self-interest?",
-      "options": [
-        "Choosing the option preferred by headquarters every time",
-        "Choosing the option that best advances the decision maker’s objective",
-        "Choosing the option with the highest sunk cost",
-        "Choosing the option with the most paperwork"
-      ],
-      "tag": "rational_actor_paradigm",
-      "type": "repair",
-      "objective": "LO1.2",
-      "difficulty": "microSkillRepair",
-      "conceptCluster": "repair_costDirective_rational_actor_paradigm",
-      "primarySkill": "rational_actor_paradigm",
-      "secondarySkills": [],
-      "repairSkill": "rational_actor_paradigm",
-      "commonError": "needs_basic_repair",
-      "feedback": "Rational actors respond to the payoffs they actually face.",
-      "aHash": "c2be14dbbee6650ee785a4f57d632fccf6c46e5142afeff66f422cf3d576587b"
     },
     {
       "id": 5006,
       "sourceGame": "costDirective",
       "q": "What should a manager ask when behavior looks “irrational”?",
       "options": [
-        "Which employee has the worst attitude by personality type",
-        "How to remove all incentives from the workplace",
+        "Which rule expresses the firm's preferred action?",
+        "Which punishment will change behavior before studying its cause?",
         "What incentives or constraints make the behavior reasonable to that person?",
-        "Whether accounting profit is positive"
+        "Which supervisor is most disappointed by the outcome?"
       ],
       "tag": "rational_actor_paradigm",
-      "type": "repair",
+      "type": "application",
       "objective": "LO1.2",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_rational_actor_paradigm",
       "primarySkill": "rational_actor_paradigm",
       "secondarySkills": [],
       "repairSkill": "rational_actor_paradigm",
-      "commonError": "needs_basic_repair",
-      "feedback": "Rational actors respond to the payoffs they actually face.",
+      "commonError": "labels_behavior_without_examining_payoffs",
+      "feedback": "A choice can make sense given the actor's rewards and constraints even when it harms the organization.",
       "aHash": "8622a6e155dfb205a6eb4cae5aaced84e1e1b62c516176fe27b9768f9d8a6483"
-    },
-    {
-      "id": 5007,
-      "sourceGame": "costDirective",
-      "q": "Rational behavior in managerial economics means behavior is judged relative to what?",
-      "options": [
-        "The firm’s mission statement only",
-        "The manager’s preferred answer",
-        "The oldest rule in the employee handbook",
-        "The decision maker’s perceived costs, benefits, and objectives"
-      ],
-      "tag": "rational_actor_paradigm",
-      "type": "repair",
-      "objective": "LO1.2",
-      "difficulty": "microSkillRepair",
-      "conceptCluster": "repair_costDirective_rational_actor_paradigm",
-      "primarySkill": "rational_actor_paradigm",
-      "secondarySkills": [],
-      "repairSkill": "rational_actor_paradigm",
-      "commonError": "needs_basic_repair",
-      "feedback": "Rational actors respond to the payoffs they actually face.",
-      "aHash": "87ba9a0dc3e32f2878160c9d10087b62b717002402643315cd48a0eb8fd6462b"
     }
   ],
   "incentive_system_design": [
@@ -14876,20 +13772,20 @@ const microSkillRepairPools = {
       "q": "What does a strong incentive system connect?",
       "options": [
         "Performance measures, rewards, and desired behavior",
-        "Fixed costs, sunk costs, and old budgets",
-        "Average cost, rent, and depreciation only",
-        "Employee titles, office size, and seniority"
+        "A performance target without a reward consequence",
+        "A reward whose earning criteria are unspecified",
+        "A count of activity without regard to the desired outcome"
       ],
       "tag": "incentive_system_design",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO1.3",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_incentive_system_design",
       "primarySkill": "incentive_system_design",
       "secondarySkills": [],
       "repairSkill": "incentive_system_design",
-      "commonError": "needs_basic_repair",
-      "feedback": "Good incentives connect measurement, reward, and desired behavior.",
+      "commonError": "misses_measure_reward_link",
+      "feedback": "The measure must identify desired behavior, and the reward must make that behavior attractive.",
       "aHash": "ffe807a04243d6eedc44bd90f06542208641644b6cdb9b77e2b736850d1268e8"
     },
     {
@@ -14897,21 +13793,21 @@ const microSkillRepairPools = {
       "sourceGame": "costDirective",
       "q": "Why can vague rewards fail?",
       "options": [
-        "Vague rewards always raise marginal cost",
+        "Employees can infer every undisclosed criterion accurately",
         "Employees may not know which actions create the reward",
-        "Vague rewards remove all opportunity costs",
-        "Employees never respond to rewards"
+        "The reward's size alone determines whether it directs effort",
+        "A vague reward guarantees more discretion produces more value"
       ],
       "tag": "incentive_system_design",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO1.3",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_incentive_system_design",
       "primarySkill": "incentive_system_design",
       "secondarySkills": [],
       "repairSkill": "incentive_system_design",
-      "commonError": "needs_basic_repair",
-      "feedback": "Good incentives connect measurement, reward, and desired behavior.",
+      "commonError": "ignores_reward_transparency",
+      "feedback": "A worker cannot reliably respond to a reward rule when the actions that earn it are unclear.",
       "aHash": "cacf942e364b382a1527bfdec3bba637ab542fa6d0feacefbc7d6cf87ffe6937"
     },
     {
@@ -14919,21 +13815,21 @@ const microSkillRepairPools = {
       "sourceGame": "costDirective",
       "q": "What is one danger of measuring only one performance target?",
       "options": [
-        "The target automatically becomes irrelevant",
-        "The firm can no longer calculate fixed cost",
+        "Adding precision to the same metric resolves all omitted outcomes",
+        "Improving any measured outcome guarantees higher firm value",
         "Employees may improve that target while damaging unmeasured outcomes",
-        "All employees become risk neutral"
+        "A stated target makes its unmeasured consequences irrelevant"
       ],
       "tag": "incentive_system_design",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO1.3",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_incentive_system_design",
       "primarySkill": "incentive_system_design",
       "secondarySkills": [],
       "repairSkill": "incentive_system_design",
-      "commonError": "needs_basic_repair",
-      "feedback": "Good incentives connect measurement, reward, and desired behavior.",
+      "commonError": "ignores_unmeasured_quality",
+      "feedback": "Optimizing a narrow metric can damage valuable outcomes omitted from that metric.",
       "aHash": "8ed2f34c760c38734e48fac285d01eae6fcc41dcc7cab35ef2a319c7e36993e0"
     },
     {
@@ -14941,21 +13837,21 @@ const microSkillRepairPools = {
       "sourceGame": "costDirective",
       "q": "A bonus plan should reward behavior that is tied to what?",
       "options": [
-        "The easiest number to observe, regardless of consequences",
-        "The employee’s favorite task only",
-        "The largest sunk cost",
+        "A target based only on last year's spending",
+        "The easiest activity to count even if it reduces net value",
+        "The activity the employee already prefers regardless of firm benefit",
         "The organization’s real objective"
       ],
       "tag": "incentive_system_design",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO1.3",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_incentive_system_design",
       "primarySkill": "incentive_system_design",
       "secondarySkills": [],
       "repairSkill": "incentive_system_design",
-      "commonError": "needs_basic_repair",
-      "feedback": "Good incentives connect measurement, reward, and desired behavior.",
+      "commonError": "confuses_proxy_with_objective",
+      "feedback": "A convenient measure is useful only insofar as it supports the organization's actual objective.",
       "aHash": "286044dc42b5c5bf3b26f92d4d8f422f3dbce4946f52539a6dea5f1fe8536779"
     }
   ],
@@ -14966,20 +13862,20 @@ const microSkillRepairPools = {
       "q": "A well-designed organization gives decision rights to people who have what?",
       "options": [
         "Useful information and incentives aligned with the organization’s goals",
-        "The highest title regardless of information",
-        "The largest office and longest tenure",
-        "The lowest accounting cost"
+        "Information alone regardless of incentives",
+        "Profit incentives even when needed information is unavailable",
+        "Authority alone without decision-relevant information"
       ],
       "tag": "organization_design_info_incentives",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO1.4",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_organization_design_info_incentives",
       "primarySkill": "organization_design_info_incentives",
       "secondarySkills": [],
       "repairSkill": "organization_design_info_incentives",
-      "commonError": "needs_basic_repair",
-      "feedback": "Decision rights, information, and incentives have to fit together.",
+      "commonError": "separates_information_authority_incentives",
+      "feedback": "Useful information is effective when the decision maker also has authority and incentives to use it well.",
       "aHash": "86dfc5e5e372c4660bbbe998206ec72aec444203fddfd8782d216e69e0f64b3c"
     },
     {
@@ -14987,65 +13883,43 @@ const microSkillRepairPools = {
       "sourceGame": "costDirective",
       "q": "What happens when employees have information but poor incentives?",
       "options": [
-        "They automatically maximize firm profit",
+        "Good information guarantees a privately rewarded choice serves the firm",
         "They may use good information in ways that do not serve the organization",
-        "They stop responding to rewards",
-        "They eliminate all transaction costs"
+        "More copies of the same report remove conflicting rewards",
+        "Accurate forecasts make performance incentives unnecessary"
       ],
       "tag": "organization_design_info_incentives",
-      "type": "repair",
+      "type": "application",
       "objective": "LO1.4",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_organization_design_info_incentives",
       "primarySkill": "organization_design_info_incentives",
       "secondarySkills": [],
       "repairSkill": "organization_design_info_incentives",
-      "commonError": "needs_basic_repair",
-      "feedback": "Decision rights, information, and incentives have to fit together.",
+      "commonError": "treats_information_as_alignment",
+      "feedback": "Knowing the consequences does not change which result earns the employee a reward.",
       "aHash": "3c3ad09e9c9a64eaef7547c5e9b89460c71bdcd2b300e60ce5c8edd0e4a694f6"
-    },
-    {
-      "id": 5014,
-      "sourceGame": "costDirective",
-      "q": "Good organization design matches decision rights with what two things?",
-      "options": [
-        "Sunk costs and fixed costs",
-        "Job titles and parking spaces",
-        "Relevant information and aligned incentives",
-        "Average cost and total revenue only"
-      ],
-      "tag": "organization_design_info_incentives",
-      "type": "repair",
-      "objective": "LO1.4",
-      "difficulty": "microSkillRepair",
-      "conceptCluster": "repair_costDirective_organization_design_info_incentives",
-      "primarySkill": "organization_design_info_incentives",
-      "secondarySkills": [],
-      "repairSkill": "organization_design_info_incentives",
-      "commonError": "needs_basic_repair",
-      "feedback": "Decision rights, information, and incentives have to fit together.",
-      "aHash": "2f47e59f565952508e74ccc91fc576343c2d042e4a5b0f6b73140340a3b0d735"
     },
     {
       "id": 5015,
       "sourceGame": "costDirective",
       "q": "Why can centralized decisions fail?",
       "options": [
-        "Centralized decisions always lower variable cost",
-        "Local managers never understand incentives",
-        "Centralized decisions eliminate opportunity cost",
+        "Centralizing decisions automatically aligns every employee's reward",
+        "Central authority necessarily has every relevant local fact",
+        "A higher job title substitutes for local demand information",
         "Headquarters may lack local information needed for the decision"
       ],
       "tag": "organization_design_info_incentives",
-      "type": "repair",
+      "type": "application",
       "objective": "LO1.4",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_organization_design_info_incentives",
       "primarySkill": "organization_design_info_incentives",
       "secondarySkills": [],
       "repairSkill": "organization_design_info_incentives",
-      "commonError": "needs_basic_repair",
-      "feedback": "Decision rights, information, and incentives have to fit together.",
+      "commonError": "ignores_local_information",
+      "feedback": "Headquarters may lack information held by local staff; centralization is neither always good nor always bad.",
       "aHash": "8bcc5c97b55791c0a374c18b7925fb7e22f2457e8779b6689f899e8253607775"
     }
   ],
@@ -15053,45 +13927,45 @@ const microSkillRepairPools = {
     {
       "id": 5016,
       "sourceGame": "costDirective",
-      "q": "A store expansion failed. What question best begins the diagnosis?",
+      "q": "A store expansion failed. Which question examines the decision environment?",
       "options": [
-        "Who made the decision, what was the goal, and what information and incentives shaped the choice?",
-        "Which sunk cost was most embarrassing?",
-        "Which employee should be blamed first?",
-        "Which competitor had the nicest store sign?"
+        "Who decided, using which information and rewards?",
+        "Which manager should be replaced before reviewing the decision?",
+        "Which advertising increase should be funded first?",
+        "Which expense cut would create the fastest visible result?"
       ],
       "tag": "managerial_problem_diagnosis",
-      "type": "repair",
+      "type": "application",
       "objective": "LO1.5",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_managerial_problem_diagnosis",
       "primarySkill": "managerial_problem_diagnosis",
       "secondarySkills": [],
       "repairSkill": "managerial_problem_diagnosis",
-      "commonError": "needs_basic_repair",
-      "feedback": "Diagnose the decision environment before prescribing a fix.",
-      "aHash": "43e3d3472c7a462c337c09d08d6be0ab34ee1686e98c66031a1922a9f7e26f77"
+      "commonError": "blames_before_diagnosis",
+      "feedback": "Identify who chose, with what information and rewards, before choosing an organizational remedy.",
+      "aHash": "73e5f6917f1737334f9e835537261fc535760ddee47995a4b85d8c0e9ed13b3e"
     },
     {
       "id": 5017,
       "sourceGame": "costDirective",
       "q": "Why ask whether decision makers had the right information?",
       "options": [
-        "Information never affects decisions",
+        "Aligned rewards guarantee accurate demand forecasts",
         "Bad information can produce bad choices even with good intentions",
-        "Only fixed costs matter in diagnosis",
-        "It proves all incentives are irrelevant"
+        "Decision authority ensures all relevant facts are known",
+        "Poor results establish that the decision maker had bad motives"
       ],
       "tag": "managerial_problem_diagnosis",
-      "type": "repair",
+      "type": "application",
       "objective": "LO1.5",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_managerial_problem_diagnosis",
       "primarySkill": "managerial_problem_diagnosis",
       "secondarySkills": [],
       "repairSkill": "managerial_problem_diagnosis",
-      "commonError": "needs_basic_repair",
-      "feedback": "Diagnose the decision environment before prescribing a fix.",
+      "commonError": "assumes_good_intentions_supply_information",
+      "feedback": "Good intentions do not supply missing facts about demand, costs or constraints.",
       "aHash": "5bc118b9c8bb3b69cfc0ea60b941f2be992c0afff10893932a247ad860a6b9a0"
     },
     {
@@ -15099,21 +13973,21 @@ const microSkillRepairPools = {
       "sourceGame": "costDirective",
       "q": "Which diagnosis question targets incentives?",
       "options": [
-        "What color was the monthly report?",
-        "Which cost was paid last year?",
+        "Who had authority to approve the decision?",
+        "What demand reports were available?",
         "How was the decision maker rewarded or penalized?",
-        "How many employees like the manager?"
+        "Which alternatives were technically feasible?"
       ],
       "tag": "managerial_problem_diagnosis",
-      "type": "repair",
+      "type": "application",
       "objective": "LO1.5",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_managerial_problem_diagnosis",
       "primarySkill": "managerial_problem_diagnosis",
       "secondarySkills": [],
       "repairSkill": "managerial_problem_diagnosis",
-      "commonError": "needs_basic_repair",
-      "feedback": "Diagnose the decision environment before prescribing a fix.",
+      "commonError": "confuses_information_with_incentive",
+      "feedback": "Rewards and penalties change private payoffs; available reports and authority answer different diagnostic questions.",
       "aHash": "c9a575157c3b351396acce5252df8fd2b6492de06646b79f83479343706a3680"
     },
     {
@@ -15121,21 +13995,21 @@ const microSkillRepairPools = {
       "sourceGame": "costDirective",
       "q": "Which diagnosis question targets alternatives?",
       "options": [
-        "Which option has the oldest sunk cost?",
-        "Which option looks best in a slogan?",
-        "Which option requires no evidence?",
+        "Which objective sounds easiest to communicate?",
+        "Which choice would work without any capacity constraint?",
+        "Which past proposal has already become unavailable?",
         "What other options were realistically available?"
       ],
       "tag": "managerial_problem_diagnosis",
-      "type": "repair",
+      "type": "application",
       "objective": "LO1.5",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_managerial_problem_diagnosis",
       "primarySkill": "managerial_problem_diagnosis",
       "secondarySkills": [],
       "repairSkill": "managerial_problem_diagnosis",
-      "commonError": "needs_basic_repair",
-      "feedback": "Diagnose the decision environment before prescribing a fix.",
+      "commonError": "ignores_feasible_alternatives",
+      "feedback": "The opportunity set consists of alternatives that could actually have been chosen under the constraints.",
       "aHash": "53d25dd25e29eebae456f4b5d83cc6d6098e19c4109bf4b4fdf3caa444553fe0"
     }
   ],
@@ -15143,24 +14017,24 @@ const microSkillRepairPools = {
     {
       "id": 5020,
       "sourceGame": "costDirective",
-      "q": "When does a voluntary exchange create wealth?",
+      "q": "With no external effects, a voluntary exchange creates net wealth when:",
       "options": [
-        "When an asset moves to a higher-valued use",
-        "When both sides report the same accounting profit",
-        "When price is always zero",
-        "When the seller has the largest sunk cost"
+        "Higher use value exceeds the resources used to transfer the asset",
+        "Both sides receive identical gains",
+        "The payment alone exceeds the seller’s historical spending",
+        "A payment changes hands even when use value falls"
       ],
       "tag": "voluntary_transactions_surplus",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO2.1",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_voluntary_transactions_surplus",
       "primarySkill": "voluntary_transactions_surplus",
       "secondarySkills": [],
       "repairSkill": "voluntary_transactions_surplus",
-      "commonError": "needs_basic_repair",
-      "feedback": "Wealth is created when assets move to higher-valued uses.",
-      "aHash": "0decbc411cd2e6e6c53a3e6f5d1739957923dec86cd28412728029f380d4dd50"
+      "commonError": "treats_trade_as_zero_sum",
+      "feedback": "Absent external effects, higher use value net of real transfer costs creates gains; a price divides those gains.",
+      "aHash": "b14a5bb7a38c3c3259e7d1debd74610d6b07af4c1ebb1e42e343e80ac66fa327"
     },
     {
       "id": 5021,
@@ -15173,37 +14047,37 @@ const microSkillRepairPools = {
         "$850"
       ],
       "tag": "voluntary_transactions_surplus",
-      "type": "repair",
+      "type": "calculation",
       "objective": "LO2.1",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_voluntary_transactions_surplus",
       "primarySkill": "voluntary_transactions_surplus",
       "secondarySkills": [],
       "repairSkill": "voluntary_transactions_surplus",
-      "commonError": "needs_basic_repair",
-      "feedback": "Wealth is created when assets move to higher-valued uses.",
+      "commonError": "uses_value_or_price_as_surplus",
+      "feedback": "With no other costs, total gains are 500 − 350 = $150; neither reservation value alone is the surplus.",
       "aHash": "da38f6d6a47ff722d1ed0c97c0cd44cd87f6016ecc541a0b65510c2c6d9692e7"
     },
     {
       "id": 5022,
       "sourceGame": "costDirective",
-      "q": "Total surplus from trade equals what?",
+      "q": "With no transfer costs or external effects, total surplus from trade equals what?",
       "options": [
-        "Price minus fixed cost",
-        "Accounting profit plus rent",
+        "The negotiated price minus seller cost only",
+        "Buyer value minus the negotiated price only",
         "Buyer value minus seller opportunity cost",
-        "Average cost times output"
+        "Buyer value plus seller opportunity cost"
       ],
       "tag": "voluntary_transactions_surplus",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO2.1",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_voluntary_transactions_surplus",
       "primarySkill": "voluntary_transactions_surplus",
       "secondarySkills": [],
       "repairSkill": "voluntary_transactions_surplus",
-      "commonError": "needs_basic_repair",
-      "feedback": "Wealth is created when assets move to higher-valued uses.",
+      "commonError": "confuses_price_with_total_surplus",
+      "feedback": "With no external effects or transfer costs, total surplus is buyer value minus seller opportunity cost. The price divides it.",
       "aHash": "8ba3cbb6a09f6a5ffd5e53d75269b785617611881024afae854bf05c04f37b51"
     },
     {
@@ -15211,21 +14085,21 @@ const microSkillRepairPools = {
       "sourceGame": "costDirective",
       "q": "If buyer value is below seller cost, what happens to gains from trade?",
       "options": [
-        "Surplus is always created anyway",
-        "The buyer captures all fixed cost",
-        "The sale must create economies of scope",
+        "Equal division of the gap turns it positive",
+        "Any positive selling price creates positive total gains",
+        "A high enough price can make both sides gain despite that negative gap",
         "There is no positive surplus to split"
       ],
       "tag": "voluntary_transactions_surplus",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO2.1",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_voluntary_transactions_surplus",
       "primarySkill": "voluntary_transactions_surplus",
       "secondarySkills": [],
       "repairSkill": "voluntary_transactions_surplus",
-      "commonError": "needs_basic_repair",
-      "feedback": "Wealth is created when assets move to higher-valued uses.",
+      "commonError": "assumes_positive_price_implies_gains",
+      "feedback": "When buyer value is below seller opportunity cost, no price can make both strictly better off absent other benefits.",
       "aHash": "86e044460bf08a6e00a3aad9fcbaec517eb4ac6a57ef7bfecf2e875238bc4a41"
     }
   ],
@@ -15233,67 +14107,71 @@ const microSkillRepairPools = {
     {
       "id": 5024,
       "sourceGame": "costDirective",
-      "q": "What do transaction costs do to wealth creation?",
+      "q": "Buyers pay $27 and sellers retain $22 after a per-unit tax. What is the tax wedge?",
       "options": [
-        "They can block trades that would otherwise create value",
-        "They guarantee all trades create surplus",
-        "They only matter after output is produced",
-        "They are always sunk and irrelevant"
+        "$5",
+        "$27",
+        "$22",
+        "$49"
       ],
-      "tag": "barriers_to_trade",
-      "type": "repair",
+      "tag": "tax_wedge_and_trade",
+      "type": "calculation",
       "objective": "LO2.2",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_barriers_to_trade",
-      "primarySkill": "barriers_to_trade",
-      "secondarySkills": [],
-      "repairSkill": "barriers_to_trade",
-      "commonError": "needs_basic_repair",
-      "feedback": "Transaction costs can block trades that would otherwise create surplus.",
-      "aHash": "c343731ec535e510291b3eca2dfdb35363ca34f9ddf2fcc92174187a0074ae7d"
+      "primarySkill": "tax_wedge_and_trade",
+      "secondarySkills": [
+        "barriers_to_trade"
+      ],
+      "repairSkill": "tax_wedge_and_trade",
+      "commonError": "uses_price_as_tax_wedge",
+      "feedback": "The wedge is the buyer payment minus seller receipt:27 − 22 = 5. It is not either price alone.",
+      "aHash": "4879e9c95387ed71c784881c6e1039027bef7552cfb5bae503e59995d2686bf2"
     },
     {
       "id": 5025,
       "sourceGame": "costDirective",
-      "q": "Which barrier can prevent a valuable exchange?",
+      "q": "At a binding price ceiling, 120 units are requested and 85 offered. How is the quantity gap described?",
       "options": [
-        "A lower fixed cost by itself",
-        "High search, bargaining, or enforcement costs",
-        "A positive value gap by itself",
-        "A clear opportunity cost calculation"
+        "A surplus of 35 units",
+        "A shortage of 35 units",
+        "A shortage of 85 units",
+        "120 completed trades"
       ],
-      "tag": "barriers_to_trade",
-      "type": "repair",
+      "tag": "price_control_quantity_gap",
+      "type": "calculation",
       "objective": "LO2.2",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_barriers_to_trade",
-      "primarySkill": "barriers_to_trade",
-      "secondarySkills": [],
-      "repairSkill": "barriers_to_trade",
-      "commonError": "needs_basic_repair",
-      "feedback": "Transaction costs can block trades that would otherwise create surplus.",
-      "aHash": "60420d31f9c8b99ef7f436dc733560c63a0b1d0c73da92991fa0fe9f2e5397b5"
+      "primarySkill": "price_control_quantity_gap",
+      "secondarySkills": [
+        "barriers_to_trade"
+      ],
+      "repairSkill": "price_control_quantity_gap",
+      "commonError": "confuses_shortage_with_surplus",
+      "feedback": "Requests exceed offered units by 120 − 85 = 35. Requested quantity is not completed sales.",
+      "aHash": "0c817ee7de474588f0a3d0f20eefb70a7331637d8b78a506ed7dadaebd1027d6"
     },
     {
       "id": 5026,
       "sourceGame": "costDirective",
-      "q": "A trade creates $500 of surplus but costs $600 to negotiate. What happens?",
+      "q": "A proposed trade has $500 gross gains, but negotiating it would use $600 of real resources. None of that cost is incurred yet. What follows?",
       "options": [
-        "The trade creates $1,100 of surplus",
-        "The cost should be ignored as sunk",
+        "Negotiation cost should be ignored even before commitment",
+        "The trade creates $1,100 net gains",
         "The transaction cost can destroy the net gain from trade",
-        "The seller always captures the entire surplus"
+        "The $500 gross gap guarantees both parties can gain"
       ],
       "tag": "barriers_to_trade",
-      "type": "repair",
+      "type": "calculation",
       "objective": "LO2.2",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_barriers_to_trade",
       "primarySkill": "barriers_to_trade",
       "secondarySkills": [],
       "repairSkill": "barriers_to_trade",
-      "commonError": "needs_basic_repair",
-      "feedback": "Transaction costs can block trades that would otherwise create surplus.",
+      "commonError": "adds_transaction_cost_instead_of_subtracting",
+      "feedback": "If the $600 negotiation cost is still avoidable, $500 gross gains minus $600 leave − $100; do not treat a future cost as sunk.",
       "aHash": "f3d0afc5f2ce8140c7ba25e249c94e5ee77aac3cbd6746b8cf1a70d0f14ef1f2"
     },
     {
@@ -15301,21 +14179,21 @@ const microSkillRepairPools = {
       "sourceGame": "costDirective",
       "q": "Transaction costs include the cost of doing what?",
       "options": [
-        "Only producing one more unit",
-        "Only dividing total cost by output",
-        "Only doubling all inputs",
+        "Only average production cost per unit",
+        "Only materials used to manufacture the good",
+        "Only the original purchase cost of the asset",
         "Finding, bargaining, monitoring, and enforcing exchange"
       ],
       "tag": "barriers_to_trade",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO2.2",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_barriers_to_trade",
       "primarySkill": "barriers_to_trade",
       "secondarySkills": [],
       "repairSkill": "barriers_to_trade",
-      "commonError": "needs_basic_repair",
-      "feedback": "Transaction costs can block trades that would otherwise create surplus.",
+      "commonError": "confuses_production_with_transaction_cost",
+      "feedback": "Search, bargaining, monitoring and enforcement are costs of organizing exchange, distinct from making the good.",
       "aHash": "41def11a75e7ddea351394f2da0b4f51d1833ea414312f33a573cf22a6b7b443"
     }
   ],
@@ -15326,20 +14204,20 @@ const microSkillRepairPools = {
       "q": "In managerial economics, efficiency means what?",
       "options": [
         "Using resources where they create the most value",
-        "Minimizing every accounting cost no matter what",
-        "Keeping assets in their current use forever",
-        "Choosing the option with the largest sunk cost"
+        "Minimizing cash expenditure regardless of forgone value",
+        "Maximizing output regardless of resource cost",
+        "Keeping every asset continuously busy regardless of its net return"
       ],
       "tag": "efficiency_business_value",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO2.3",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_efficiency_business_value",
       "primarySkill": "efficiency_business_value",
       "secondarySkills": [],
       "repairSkill": "efficiency_business_value",
-      "commonError": "needs_basic_repair",
-      "feedback": "Efficiency means resources are used where they create the most value.",
+      "commonError": "minimizes_expense_instead_of_maximizing_value",
+      "feedback": "Efficient allocation compares net value from feasible resource uses; cheapest or busiest is not necessarily best.",
       "aHash": "64af605c6f29065415022eeed83d1ebe5639f38351aa276da9fc7d23f1c71dde"
     },
     {
@@ -15347,21 +14225,21 @@ const microSkillRepairPools = {
       "sourceGame": "costDirective",
       "q": "Why can moving an asset to a better use create value?",
       "options": [
-        "The old use becomes free",
+        "Moving an owned asset eliminates its opportunity cost",
         "The same asset produces more value in the new use",
-        "Fixed cost disappears automatically",
-        "The asset no longer has opportunity cost"
+        "The old use's value should be added to the new use's value",
+        "Any larger gross value is beneficial regardless of movement costs"
       ],
       "tag": "efficiency_business_value",
-      "type": "repair",
+      "type": "application",
       "objective": "LO2.3",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_efficiency_business_value",
       "primarySkill": "efficiency_business_value",
       "secondarySkills": [],
       "repairSkill": "efficiency_business_value",
-      "commonError": "needs_basic_repair",
-      "feedback": "Efficiency means resources are used where they create the most value.",
+      "commonError": "counts_gross_value_without_alternative",
+      "feedback": "Reallocation can raise net value when its additional benefit exceeds the value sacrificed and movement costs.",
       "aHash": "10d7a9e61a9df066c2eb28d5df806c8b9687872045c5ddd16b4e5a5c0bc641eb"
     },
     {
@@ -15369,67 +14247,45 @@ const microSkillRepairPools = {
       "sourceGame": "costDirective",
       "q": "An efficient allocation puts assets where what is highest?",
       "options": [
+        "Their recorded depreciation charge",
         "Their historical purchase price",
-        "Their depreciation schedule",
         "Their value net of relevant costs",
-        "Their average accounting cost"
+        "Their gross receipts regardless of resource costs"
       ],
       "tag": "efficiency_business_value",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO2.3",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_efficiency_business_value",
       "primarySkill": "efficiency_business_value",
       "secondarySkills": [],
       "repairSkill": "efficiency_business_value",
-      "commonError": "needs_basic_repair",
-      "feedback": "Efficiency means resources are used where they create the most value.",
+      "commonError": "uses_book_value_for_allocation",
+      "feedback": "Current net value, not historical cost or depreciation, identifies the best feasible allocation.",
       "aHash": "bf5dd078965a9aefbd7dc34cbdabb0f307b527971dd4b165767196c7e4af9beb"
-    },
-    {
-      "id": 5031,
-      "sourceGame": "costDirective",
-      "q": "Efficiency is about maximizing value subject to what?",
-      "options": [
-        "Only last year’s budget",
-        "Only employee preferences",
-        "Only the number of departments",
-        "Scarce resources and constraints"
-      ],
-      "tag": "efficiency_business_value",
-      "type": "repair",
-      "objective": "LO2.3",
-      "difficulty": "microSkillRepair",
-      "conceptCluster": "repair_costDirective_efficiency_business_value",
-      "primarySkill": "efficiency_business_value",
-      "secondarySkills": [],
-      "repairSkill": "efficiency_business_value",
-      "commonError": "needs_basic_repair",
-      "feedback": "Efficiency means resources are used where they create the most value.",
-      "aHash": "c7e3ba9ea67f78380874a901832f94b11eb875ff5980f9a707a01b1e8bdc7a77"
     }
   ],
   "value_gap_opportunities": [
     {
       "id": 5032,
       "sourceGame": "costDirective",
-      "q": "What is a money-making opportunity?",
+      "q": "Which situation indicates a potential money-making opportunity?",
       "options": [
         "A gap between the value of an asset in its current use and a higher-valued use",
-        "Any action that raises accounting revenue",
-        "Any fixed cost that has already been paid",
-        "Any job with no variable cost listed"
+        "Any increase in revenue regardless of extra cost",
+        "Any large unrecovered historical expenditure",
+        "Any difference in gross values even if moving costs exceed it"
       ],
       "tag": "value_gap_opportunities",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO2.4",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_value_gap_opportunities",
       "primarySkill": "value_gap_opportunities",
       "secondarySkills": [],
       "repairSkill": "value_gap_opportunities",
-      "commonError": "needs_basic_repair",
-      "feedback": "A money-making opportunity comes from a value gap that can be captured.",
+      "commonError": "ignores_cost_of_capturing_value_gap",
+      "feedback": "A higher-valued use is a potential opportunity; moving and coordinating it must cost less than the gain, and some gain must be capturable.",
       "aHash": "64562160668476fea80a8badccf013e3a744fcadc1e17038889a88ccb2db30ef"
     },
     {
@@ -15437,65 +14293,43 @@ const microSkillRepairPools = {
       "sourceGame": "costDirective",
       "q": "A truck is worth $8,000 to its current owner and $11,000 to a delivery firm. What does the $3,000 gap represent?",
       "options": [
-        "A sunk cost that should control the choice",
+        "A guaranteed $3,000 profit for the buyer",
         "Potential surplus from reallocating the truck",
-        "The truck’s average cost",
-        "The seller’s accounting profit"
+        "The seller's guaranteed accounting profit",
+        "A historical expense that should be recovered"
       ],
       "tag": "value_gap_opportunities",
-      "type": "repair",
+      "type": "calculation",
       "objective": "LO2.4",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_value_gap_opportunities",
       "primarySkill": "value_gap_opportunities",
       "secondarySkills": [],
       "repairSkill": "value_gap_opportunities",
-      "commonError": "needs_basic_repair",
-      "feedback": "A money-making opportunity comes from a value gap that can be captured.",
+      "commonError": "confuses_value_gap_with_profit",
+      "feedback": "11000 − 8000 = $3000 is potential gain before transaction costs and negotiated division; it is not automatically either party's profit.",
       "aHash": "1e7d947776da12afd27609a11d3807d1d81caa9633968e51a7784b9b0accff85"
-    },
-    {
-      "id": 5034,
-      "sourceGame": "costDirective",
-      "q": "Value gaps matter because they reveal what?",
-      "options": [
-        "The largest historical cost",
-        "The only correct price ceiling",
-        "Assets that may be moved to higher-valued uses",
-        "The depreciation method"
-      ],
-      "tag": "value_gap_opportunities",
-      "type": "repair",
-      "objective": "LO2.4",
-      "difficulty": "microSkillRepair",
-      "conceptCluster": "repair_costDirective_value_gap_opportunities",
-      "primarySkill": "value_gap_opportunities",
-      "secondarySkills": [],
-      "repairSkill": "value_gap_opportunities",
-      "commonError": "needs_basic_repair",
-      "feedback": "A money-making opportunity comes from a value gap that can be captured.",
-      "aHash": "4c432737cdb02f0b492f5e8386309c7adcbab5c0ff63bbf28b9377f1cd643936"
     },
     {
       "id": 5035,
       "sourceGame": "costDirective",
       "q": "A money-making opportunity disappears when what exceeds the value gap?",
       "options": [
-        "The buyer’s willingness to pay",
-        "The seller’s explicit cost",
-        "The number of available alternatives",
+        "The number of alternative buyers",
+        "The seller's historical purchase price",
+        "The sum of both parties' reservation values",
         "The transaction or movement cost"
       ],
       "tag": "value_gap_opportunities",
-      "type": "repair",
+      "type": "application",
       "objective": "LO2.4",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_value_gap_opportunities",
       "primarySkill": "value_gap_opportunities",
       "secondarySkills": [],
       "repairSkill": "value_gap_opportunities",
-      "commonError": "needs_basic_repair",
-      "feedback": "A money-making opportunity comes from a value gap that can be captured.",
+      "commonError": "ignores_transfer_cost",
+      "feedback": "If movement and transaction costs exceed the gross value gap, no positive net gain remains under the stated alternatives.",
       "aHash": "5f47069b703a6c4ef8a23660ba8f2140827100d7df75462caf4806735f1f4257"
     }
   ],
@@ -15506,20 +14340,20 @@ const microSkillRepairPools = {
       "q": "How can organization design create wealth?",
       "options": [
         "By helping assets, information, and decisions move to higher-valued uses",
-        "By hiding all opportunity costs",
-        "By making every decision centralized",
-        "By increasing transaction costs"
+        "By centralizing every decision regardless of local knowledge",
+        "By rewarding each division for retaining idle resources",
+        "By treating every internal transfer as value creation regardless of costs"
       ],
       "tag": "organization_wealth_creation",
-      "type": "repair",
+      "type": "application",
       "objective": "LO2.5",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_organization_wealth_creation",
       "primarySkill": "organization_wealth_creation",
       "secondarySkills": [],
       "repairSkill": "organization_wealth_creation",
-      "commonError": "needs_basic_repair",
-      "feedback": "Organizations can create wealth by lowering transaction and coordination costs.",
+      "commonError": "assumes_hierarchy_alone_creates_value",
+      "feedback": "Organization can improve movement of information and resources when benefits exceed coordination costs.",
       "aHash": "b7f0d6eb30b9a2128ac4bfc9802cd1507b1c8940911158e4ea4721eb0df755e1"
     },
     {
@@ -15527,65 +14361,43 @@ const microSkillRepairPools = {
       "sourceGame": "costDirective",
       "q": "Why do firms exist in this framework?",
       "options": [
-        "They eliminate scarcity",
+        "They eliminate all scarcity within their boundaries",
         "They can reduce transaction costs and coordinate valuable activity",
-        "They make sunk costs relevant",
-        "They guarantee all managers share the same incentives"
+        "They guarantee each manager's private objective matches the firm",
+        "They make all internal coordination costless"
       ],
       "tag": "organization_wealth_creation",
-      "type": "repair",
+      "type": "application",
       "objective": "LO2.5",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_organization_wealth_creation",
       "primarySkill": "organization_wealth_creation",
       "secondarySkills": [],
       "repairSkill": "organization_wealth_creation",
-      "commonError": "needs_basic_repair",
-      "feedback": "Organizations can create wealth by lowering transaction and coordination costs.",
+      "commonError": "assumes_firms_eliminate_market_costs",
+      "feedback": "Firms can coordinate valuable activity at lower cost than separate transactions; this is a possible advantage, not a guarantee.",
       "aHash": "d0c1b352b09505a38b92405ff32dc0d1f480eef3e19605504528ef26b3e872a2"
-    },
-    {
-      "id": 5038,
-      "sourceGame": "costDirective",
-      "q": "A firm can create wealth by coordinating what?",
-      "options": [
-        "Only office furniture and job titles",
-        "Only past expenditures",
-        "Specialized assets, information, and incentives",
-        "Only fixed costs"
-      ],
-      "tag": "organization_wealth_creation",
-      "type": "repair",
-      "objective": "LO2.5",
-      "difficulty": "microSkillRepair",
-      "conceptCluster": "repair_costDirective_organization_wealth_creation",
-      "primarySkill": "organization_wealth_creation",
-      "secondarySkills": [],
-      "repairSkill": "organization_wealth_creation",
-      "commonError": "needs_basic_repair",
-      "feedback": "Organizations can create wealth by lowering transaction and coordination costs.",
-      "aHash": "65bec6c5c841896370b968db27723415c3b20f66c29c1b7670ea25d9788f4a43"
     },
     {
       "id": 5039,
       "sourceGame": "costDirective",
       "q": "Organization design is valuable when it lowers what?",
       "options": [
-        "The value of customer demand",
-        "The number of possible alternatives to zero",
-        "All marginal benefits",
+        "The visible purchase price while ignoring quality consequences",
+        "The reported expense of one division regardless of costs shifted elsewhere",
+        "The number of choices regardless of which valuable options disappear",
         "The cost of coordinating productive exchange and decisions"
       ],
       "tag": "organization_wealth_creation",
-      "type": "repair",
+      "type": "application",
       "objective": "LO2.5",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_organization_wealth_creation",
       "primarySkill": "organization_wealth_creation",
       "secondarySkills": [],
       "repairSkill": "organization_wealth_creation",
-      "commonError": "needs_basic_repair",
-      "feedback": "Organizations can create wealth by lowering transaction and coordination costs.",
+      "commonError": "ignores_coordination_cost",
+      "feedback": "Lower coordination costs can make productive decisions and exchanges worthwhile; hierarchy by itself is not the source of the gain.",
       "aHash": "1a1944f6a25d2e2cad1e55eb4f40c6bc0bf46305cc10b18e4b7e780d3cb451ef"
     }
   ],
@@ -15601,21 +14413,21 @@ const microSkillRepairPools = {
         "The lowest possible price"
       ],
       "tag": "opportunity_cost",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO3.1",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_opportunity_cost",
       "primarySkill": "opportunity_cost",
       "secondarySkills": [],
       "repairSkill": "opportunity_cost",
-      "commonError": "needs_basic_repair",
-      "feedback": "Opportunity cost is the value of the best alternative forgone.",
+      "commonError": "uses_cash_or_historical_cost_as_opportunity_cost",
+      "feedback": "Opportunity cost is the best feasible alternative sacrificed, not the chosen option's return or an old payment.",
       "aHash": "d08131d8bf226f2541ecfc9e97262668cbeedf912d45bcf9ff9c13a1be89b139"
     },
     {
       "id": 5041,
       "sourceGame": "costDirective",
-      "q": "A room could be rented for $900 but is used for storage. What opportunity cost belongs in the storage decision?",
+      "q": "A room could earn $900 net rent but is used for storage. What opportunity cost belongs in the storage decision?",
       "options": [
         "$0 because rent is already paid",
         "$900",
@@ -15623,38 +14435,16 @@ const microSkillRepairPools = {
         "$900 only if rent rises"
       ],
       "tag": "opportunity_cost",
-      "type": "repair",
+      "type": "calculation",
       "objective": "LO3.1",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_opportunity_cost",
       "primarySkill": "opportunity_cost",
       "secondarySkills": [],
       "repairSkill": "opportunity_cost",
-      "commonError": "needs_basic_repair",
-      "feedback": "Opportunity cost is the value of the best alternative forgone.",
+      "commonError": "treats_owned_space_as_free",
+      "feedback": "Using the room sacrifices its $900 net rental alternative even if no new cash payment is required.",
       "aHash": "956b060488349227afaaff8545deb2dd38abd82b579e52fe145684bae4bb6856"
-    },
-    {
-      "id": 5042,
-      "sourceGame": "costDirective",
-      "q": "Opportunity cost is forward-looking because it asks what?",
-      "options": [
-        "What was paid in the past",
-        "What looks best on the balance sheet",
-        "What must be given up by choosing this option now",
-        "What option feels most familiar"
-      ],
-      "tag": "opportunity_cost",
-      "type": "repair",
-      "objective": "LO3.1",
-      "difficulty": "microSkillRepair",
-      "conceptCluster": "repair_costDirective_opportunity_cost",
-      "primarySkill": "opportunity_cost",
-      "secondarySkills": [],
-      "repairSkill": "opportunity_cost",
-      "commonError": "needs_basic_repair",
-      "feedback": "Opportunity cost is the value of the best alternative forgone.",
-      "aHash": "cb8edbf793a312fb9a3de342a5e58b4bc25e0713755b7bf981145de1ea22b660"
     },
     {
       "id": 5043,
@@ -15667,15 +14457,15 @@ const microSkillRepairPools = {
         "The value of the best forgone use of that machine hour"
       ],
       "tag": "opportunity_cost",
-      "type": "repair",
+      "type": "application",
       "objective": "LO3.1",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_opportunity_cost",
       "primarySkill": "opportunity_cost",
       "secondarySkills": [],
       "repairSkill": "opportunity_cost",
-      "commonError": "needs_basic_repair",
-      "feedback": "Opportunity cost is the value of the best alternative forgone.",
+      "commonError": "ignores_scarce_capacity",
+      "feedback": "Scarce machine time can earn contribution elsewhere. Its opportunity cost is that best forgone contribution, not historical machine cost.",
       "aHash": "34013e8437f17c9b546c31928fbc29eaf648014882b0c1e1e029042fd93524dc"
     }
   ],
@@ -15691,15 +14481,15 @@ const microSkillRepairPools = {
         "Is fixed in every possible decision"
       ],
       "tag": "relevant_costs_benefits",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO3.2",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_relevant_costs_benefits",
       "primarySkill": "relevant_costs_benefits",
       "secondarySkills": [],
       "repairSkill": "relevant_costs_benefits",
-      "commonError": "needs_basic_repair",
-      "feedback": "Relevant items are the costs and benefits that change because of the decision.",
+      "commonError": "includes_common_or_sunk_cost",
+      "feedback": "A cost is relevant when it changes across the options being compared; being on a report is not sufficient.",
       "aHash": "ba693aaf94a63769c0309c1515a791b1c427e03175765e1822d02eb516c562d3"
     },
     {
@@ -15713,15 +14503,15 @@ const microSkillRepairPools = {
         "Additional labor needed for the order"
       ],
       "tag": "relevant_costs_benefits",
-      "type": "repair",
+      "type": "application",
       "objective": "LO3.2",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_relevant_costs_benefits",
       "primarySkill": "relevant_costs_benefits",
       "secondarySkills": [],
       "repairSkill": "relevant_costs_benefits",
-      "commonError": "needs_basic_repair",
-      "feedback": "Relevant items are the costs and benefits that change because of the decision.",
+      "commonError": "includes_sunk_cost",
+      "feedback": "The nonrefundable past payment cannot be changed. Added materials, shipping and labor are caused by accepting the order.",
       "aHash": "20b4a69f26f6c59bbdfa10461b4a75c79534afe5ecce4fe6e86934eeaea2504d"
     },
     {
@@ -15729,22 +14519,22 @@ const microSkillRepairPools = {
       "sourceGame": "costDirective",
       "q": "Relevant benefits are benefits that do what?",
       "options": [
-        "Were earned last year",
-        "Are identical under every option",
-        "Occur only if the option is chosen",
-        "Cannot be changed by the decision"
+        "Are identical under all options",
+        "Were earned before either option is chosen",
+        "Differ in amount between the alternatives",
+        "Appear on an accounting report even when unchanged"
       ],
       "tag": "relevant_costs_benefits",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO3.2",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_relevant_costs_benefits",
       "primarySkill": "relevant_costs_benefits",
       "secondarySkills": [],
       "repairSkill": "relevant_costs_benefits",
-      "commonError": "needs_basic_repair",
-      "feedback": "Relevant items are the costs and benefits that change because of the decision.",
-      "aHash": "a7f0507fa4c6b1411ce7694a80e45c0a5631ad230d549c9165ae63ae2de0f577"
+      "commonError": "counts_common_benefits",
+      "feedback": "Benefits are relevant to the extent that they differ across the alternatives; common revenue cancels.",
+      "aHash": "5d6779a8c75a71499cb5ea75d49998c03dab37eb50e83a5a04d3da1055d54cbf"
     },
     {
       "id": 5047,
@@ -15757,15 +14547,15 @@ const microSkillRepairPools = {
         "Incremental revenue versus incremental cost"
       ],
       "tag": "relevant_costs_benefits",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO3.2",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_relevant_costs_benefits",
       "primarySkill": "relevant_costs_benefits",
       "secondarySkills": [],
       "repairSkill": "relevant_costs_benefits",
-      "commonError": "needs_basic_repair",
-      "feedback": "Relevant items are the costs and benefits that change because of the decision.",
+      "commonError": "compares_total_instead_of_incremental",
+      "feedback": "A special order's gain equals added receipts less all costs it causes, including sacrificed alternatives.",
       "aHash": "14f9a1c3b1d81dd503d64f947c241eed4021574ebc804b43393fd1f95579fa0c"
     }
   ],
@@ -15776,20 +14566,20 @@ const microSkillRepairPools = {
       "q": "What makes a cost variable?",
       "options": [
         "It changes with output over the relevant range",
-        "It was paid in cash last year",
-        "It stays the same as output changes",
-        "It is always irrelevant"
+        "It was paid in cash rather than charged to credit",
+        "It stays unchanged in total when output changes",
+        "It can never be relevant to a current decision"
       ],
       "tag": "fixed_variable_costs",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO3.3",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_fixed_variable_costs",
       "primarySkill": "fixed_variable_costs",
       "secondarySkills": [],
       "repairSkill": "fixed_variable_costs",
-      "commonError": "needs_basic_repair",
-      "feedback": "Variable costs change with output over the relevant range; fixed costs do not.",
+      "commonError": "classifies_cost_by_payment_date",
+      "feedback": "Variable cost changes with output in the stated range; payment date alone does not classify its behavior.",
       "aHash": "f6836dfd994fe5c0f60016c89dc0cc1e8485bba4573b1090eb01696a55b1b6bc"
     },
     {
@@ -15803,15 +14593,15 @@ const microSkillRepairPools = {
         "$2,400"
       ],
       "tag": "fixed_variable_costs",
-      "type": "repair",
+      "type": "calculation",
       "objective": "LO3.3",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_fixed_variable_costs",
       "primarySkill": "fixed_variable_costs",
       "secondarySkills": [],
       "repairSkill": "fixed_variable_costs",
-      "commonError": "needs_basic_repair",
-      "feedback": "Variable costs change with output over the relevant range; fixed costs do not.",
+      "commonError": "uses_quantity_as_total_variable_cost",
+      "feedback": "Variable cost is 3 × 700 = $2100; $3 is per unit, not the total.",
       "aHash": "2345b8eac1ab98fd3e9de135cdcfd3567ca0e23a2195423f00053255c0ebebf9"
     },
     {
@@ -15819,21 +14609,21 @@ const microSkillRepairPools = {
       "sourceGame": "costDirective",
       "q": "What makes a cost fixed over a relevant range?",
       "options": [
-        "It changes with every unit",
-        "It has no opportunity cost ever",
+        "It stays constant per unit rather than in total",
+        "It changes by a constant amount with every added unit",
         "It does not change when output changes within that range",
-        "It must be sunk"
+        "It must have been paid and become unrecoverable"
       ],
       "tag": "fixed_variable_costs",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO3.3",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_fixed_variable_costs",
       "primarySkill": "fixed_variable_costs",
       "secondarySkills": [],
       "repairSkill": "fixed_variable_costs",
-      "commonError": "needs_basic_repair",
-      "feedback": "Variable costs change with output over the relevant range; fixed costs do not.",
+      "commonError": "confuses_fixed_with_sunk",
+      "feedback": "Fixed means unchanged with output over this range and period; a future fixed commitment may still be avoidable.",
       "aHash": "09f010135141bcd4ddc19b6f7ed999b3f6c293e05cdaa870403ffc733ac9df20"
     },
     {
@@ -15847,15 +14637,15 @@ const microSkillRepairPools = {
         "Direct materials used per unit"
       ],
       "tag": "fixed_variable_costs",
-      "type": "repair",
+      "type": "application",
       "objective": "LO3.3",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_fixed_variable_costs",
       "primarySkill": "fixed_variable_costs",
       "secondarySkills": [],
       "repairSkill": "fixed_variable_costs",
-      "commonError": "needs_basic_repair",
-      "feedback": "Variable costs change with output over the relevant range; fixed costs do not.",
+      "commonError": "ignores_output_link",
+      "feedback": "Materials used for extra units change with output; contracted rent and insurance do not over this range.",
       "aHash": "cd75a12e6d3dc55671a12b56bd6580aa7777f0a4bf468a892860bdcdae1ebba0"
     }
   ],
@@ -15866,20 +14656,20 @@ const microSkillRepairPools = {
       "q": "What does economic profit subtract that accounting profit often does not?",
       "options": [
         "Implicit opportunity costs",
-        "Only cash expenses paid this month",
-        "Only variable costs",
-        "Only taxes"
+        "The same explicit cost a second time",
+        "Only cash payments made this month",
+        "Only costs that vary with output"
       ],
       "tag": "accounting_economic_profit",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO3.4",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_accounting_economic_profit",
       "primarySkill": "accounting_economic_profit",
       "secondarySkills": [],
       "repairSkill": "accounting_economic_profit",
-      "commonError": "needs_basic_repair",
-      "feedback": "Economic profit includes implicit opportunity costs.",
+      "commonError": "omits_implicit_costs",
+      "feedback": "Economic profit includes forgone use of owner labor, capital or assets in addition to explicit costs.",
       "aHash": "043659570d45232f255257263acf0b3caa15137745186e586c216ea118e062f4"
     },
     {
@@ -15893,15 +14683,15 @@ const microSkillRepairPools = {
         "$90,000"
       ],
       "tag": "accounting_economic_profit",
-      "type": "repair",
+      "type": "calculation",
       "objective": "LO3.4",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_accounting_economic_profit",
       "primarySkill": "accounting_economic_profit",
       "secondarySkills": [],
       "repairSkill": "accounting_economic_profit",
-      "commonError": "needs_basic_repair",
-      "feedback": "Economic profit includes implicit opportunity costs.",
+      "commonError": "reports_accounting_instead_of_economic_profit",
+      "feedback": "Accounting profit is 100000 − 70000 = 30000. Subtract 20000 forgone salary once to obtain 10000 economic profit.",
       "aHash": "d7c2f19257f0c5f31dfe20885459483e1781e72e9d6103607b47d30bcf88314a"
     },
     {
@@ -15915,15 +14705,15 @@ const microSkillRepairPools = {
         "Only fixed costs"
       ],
       "tag": "accounting_economic_profit",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO3.4",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_accounting_economic_profit",
       "primarySkill": "accounting_economic_profit",
       "secondarySkills": [],
       "repairSkill": "accounting_economic_profit",
-      "commonError": "needs_basic_repair",
-      "feedback": "Economic profit includes implicit opportunity costs.",
+      "commonError": "subtracts_implicit_cost_from_accounting_profit",
+      "feedback": "Accounting profit deducts explicit accounting costs. Implicit owner alternatives are added when calculating economic profit.",
       "aHash": "6cac2e5496fdf6e0cfe9515a3ad11fbf5230b0b09fc645b0f46b497db21073d7"
     },
     {
@@ -15931,21 +14721,21 @@ const microSkillRepairPools = {
       "sourceGame": "costDirective",
       "q": "Economic profit is lower than accounting profit when what exists?",
       "options": [
-        "No explicit costs exist",
-        "All costs are variable",
-        "Revenue is zero",
+        "Fixed costs already deducted in accounting profit",
+        "Positive revenue even with no implicit costs",
+        "Variable costs already deducted in accounting profit",
         "Positive implicit opportunity costs"
       ],
       "tag": "accounting_economic_profit",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO3.4",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_accounting_economic_profit",
       "primarySkill": "accounting_economic_profit",
       "secondarySkills": [],
       "repairSkill": "accounting_economic_profit",
-      "commonError": "needs_basic_repair",
-      "feedback": "Economic profit includes implicit opportunity costs.",
+      "commonError": "ignores_positive_implicit_cost",
+      "feedback": "Positive implicit costs create a gap: economic profit equals accounting profit minus those additional costs.",
       "aHash": "e9f897c9af79bd54e8e7a9f984e1f1cf23e05589b4a23c14c07cfe320fa66c66"
     }
   ],
@@ -15961,15 +14751,15 @@ const microSkillRepairPools = {
         "Counting opportunity costs correctly"
       ],
       "tag": "fixed_cost_fallacy",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO3.5",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_fixed_cost_fallacy",
       "primarySkill": "fixed_cost_fallacy",
       "secondarySkills": [],
       "repairSkill": "fixed_cost_fallacy",
-      "commonError": "needs_basic_repair",
-      "feedback": "Sunk and unavoidable fixed costs should not drive the next choice.",
+      "commonError": "lets_unavoidable_cost_drive_choice",
+      "feedback": "An unchanged fixed cost cannot favor one current alternative; avoidable future costs and foregone opportunities still count.",
       "aHash": "f06c3f017f2f9cad459a4017d90517a56be59b90699aafe4a451e000e4d543c4"
     },
     {
@@ -15977,21 +14767,21 @@ const microSkillRepairPools = {
       "sourceGame": "costDirective",
       "q": "A nonrefundable $5,000 fee has already been paid. What should it do to the next production decision?",
       "options": [
-        "It should force production to continue",
+        "It should force production until the fee is recovered",
         "Nothing, because it cannot be changed",
-        "It should be counted as marginal cost",
-        "It should be doubled to punish delay"
+        "It should be treated as the marginal cost of the next unit",
+        "It should be allocated to the option with higher revenue"
       ],
       "tag": "fixed_cost_fallacy",
-      "type": "repair",
+      "type": "application",
       "objective": "LO3.5",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_fixed_cost_fallacy",
       "primarySkill": "fixed_cost_fallacy",
       "secondarySkills": [],
       "repairSkill": "fixed_cost_fallacy",
-      "commonError": "needs_basic_repair",
-      "feedback": "Sunk and unavoidable fixed costs should not drive the next choice.",
+      "commonError": "tries_to_recover_sunk_cost",
+      "feedback": "A paid nonrefundable fee is unchanged whichever production choice follows; count the future differences.",
       "aHash": "515bd4bbc9ed3a42f1466bc40372114bb9a4f1ca33f0badf7b00e9436b80d4e7"
     },
     {
@@ -16005,38 +14795,16 @@ const microSkillRepairPools = {
         "A future opportunity cost"
       ],
       "tag": "fixed_cost_fallacy",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO3.5",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_fixed_cost_fallacy",
       "primarySkill": "fixed_cost_fallacy",
       "secondarySkills": [],
       "repairSkill": "fixed_cost_fallacy",
-      "commonError": "needs_basic_repair",
-      "feedback": "Sunk and unavoidable fixed costs should not drive the next choice.",
+      "commonError": "confuses_sunk_with_future_fixed",
+      "feedback": "A sunk cost is already incurred and unrecoverable. Not every fixed cost is sunk.",
       "aHash": "850e67a04a9b485227d31778f016b8de98fa19727762fed29765f72aac398b54"
-    },
-    {
-      "id": 5059,
-      "sourceGame": "costDirective",
-      "q": "Which advice avoids the fixed-cost fallacy?",
-      "options": [
-        "Keep spending until past spending is recovered",
-        "Never stop a project with fixed costs",
-        "Use historical cost as the main rule",
-        "Base the next decision on future costs and benefits that change"
-      ],
-      "tag": "fixed_cost_fallacy",
-      "type": "repair",
-      "objective": "LO3.5",
-      "difficulty": "microSkillRepair",
-      "conceptCluster": "repair_costDirective_fixed_cost_fallacy",
-      "primarySkill": "fixed_cost_fallacy",
-      "secondarySkills": [],
-      "repairSkill": "fixed_cost_fallacy",
-      "commonError": "needs_basic_repair",
-      "feedback": "Sunk and unavoidable fixed costs should not drive the next choice.",
-      "aHash": "4db0b238fb79720b1712c4b27195ffb4ba7cd2d95e16c76af4ebc7e50cd06da0"
     }
   ],
   "hidden_cost_fallacy": [
@@ -16045,43 +14813,43 @@ const microSkillRepairPools = {
       "sourceGame": "costDirective",
       "q": "The hidden-cost fallacy means ignoring what?",
       "options": [
-        "A real opportunity cost that is not obvious in accounting records",
-        "A sunk cost that cannot change",
-        "A cost that appears clearly on an invoice",
-        "The definition of average cost"
+        "A relevant cost caused by the decision",
+        "A payment unchanged under all current alternatives",
+        "An unrecoverable past payment",
+        "A cost already included fully in the decision estimate"
       ],
       "tag": "hidden_cost_fallacy",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO3.6",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_hidden_cost_fallacy",
       "primarySkill": "hidden_cost_fallacy",
       "secondarySkills": [],
       "repairSkill": "hidden_cost_fallacy",
-      "commonError": "needs_basic_repair",
-      "feedback": "Hidden costs are real opportunity costs even when no invoice appears.",
-      "aHash": "543e6461c38d10a2af5d4487005fc46a22e9e6772cd809d155abe4acec1fd832"
+      "commonError": "omits_relevant_cost",
+      "feedback": "The hidden-cost fallacy omits a decision-caused cost, including either an overlooked invoice or an implicit opportunity cost.",
+      "aHash": "08381b8349b8ec3fdc496e01b481aec1d9ece272acb8d5c054a5d2c8093b4cbc"
     },
     {
       "id": 5061,
       "sourceGame": "costDirective",
       "q": "A manager says worker time is free because workers are already salaried. What is likely being ignored?",
       "options": [
-        "The workers’ sunk wage from last year",
+        "The full salary regardless of alternative uses",
         "The value of the workers’ next-best use",
-        "The firm’s economies of scope",
-        "The selling price of the final product"
+        "Last year's already-paid wages",
+        "The chosen project's gross revenue rather than forgone work"
       ],
       "tag": "hidden_cost_fallacy",
-      "type": "repair",
+      "type": "application",
       "objective": "LO3.6",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_hidden_cost_fallacy",
       "primarySkill": "hidden_cost_fallacy",
       "secondarySkills": [],
       "repairSkill": "hidden_cost_fallacy",
-      "commonError": "needs_basic_repair",
-      "feedback": "Hidden costs are real opportunity costs even when no invoice appears.",
+      "commonError": "treats_salaried_time_as_free",
+      "feedback": "An unchanged salary does not remove the value of other work the employee could perform.",
       "aHash": "1e34362ca0f044eb1bd58d140dacc224261aa53e023d843f7e50f1e18c2b588c"
     },
     {
@@ -16095,15 +14863,15 @@ const microSkillRepairPools = {
         "An accounting depreciation entry with no decision effect"
       ],
       "tag": "hidden_cost_fallacy",
-      "type": "repair",
+      "type": "application",
       "objective": "LO3.6",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_hidden_cost_fallacy",
       "primarySkill": "hidden_cost_fallacy",
       "secondarySkills": [],
       "repairSkill": "hidden_cost_fallacy",
-      "commonError": "needs_basic_repair",
-      "feedback": "Hidden costs are real opportunity costs even when no invoice appears.",
+      "commonError": "omits_non_cash_opportunity_cost",
+      "feedback": "Scarce capacity has a cost when its use displaces other contribution, even without a new invoice.",
       "aHash": "fe68137ce27e01e94f007f505b2682cc3f79d4c81d44624c8befcebcfc20af89"
     },
     {
@@ -16111,21 +14879,21 @@ const microSkillRepairPools = {
       "sourceGame": "costDirective",
       "q": "Why are hidden costs dangerous?",
       "options": [
-        "They make fixed costs disappear",
-        "They prove all projects are profitable",
-        "They eliminate opportunity cost",
+        "They are irrelevant whenever they were absent from the first estimate",
+        "They make actual resource use disappear",
+        "They increase true profit while leaving revenue unchanged",
         "They make an option look cheaper than it really is"
       ],
       "tag": "hidden_cost_fallacy",
-      "type": "repair",
+      "type": "application",
       "objective": "LO3.6",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_hidden_cost_fallacy",
       "primarySkill": "hidden_cost_fallacy",
       "secondarySkills": [],
       "repairSkill": "hidden_cost_fallacy",
-      "commonError": "needs_basic_repair",
-      "feedback": "Hidden costs are real opportunity costs even when no invoice appears.",
+      "commonError": "ignores_omitted_future_invoice",
+      "feedback": "An omitted cost overstates a project's gain, whether it is an implicit alternative or a future cash expense.",
       "aHash": "6e1d1fc6e627b665a5fa255a9a2159de118c2e735c1f46126963ea7375fb9b1f"
     }
   ],
@@ -16141,15 +14909,15 @@ const microSkillRepairPools = {
         "Profit from the best forgone alternative"
       ],
       "tag": "average_vs_marginal_cost",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO4.1",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_average_vs_marginal_cost",
       "primarySkill": "average_vs_marginal_cost",
       "secondarySkills": [],
       "repairSkill": "average_vs_marginal_cost",
-      "commonError": "needs_basic_repair",
-      "feedback": "Average cost is per unit overall; marginal cost is the cost of one more unit.",
+      "commonError": "uses_marginal_for_average",
+      "feedback": "Average cost is TC/Q over all units. Incremental cost is a different question.",
       "aHash": "537901ce950735b0d89faf808a07c7aa2ec11fa07073a1ea6bbc039cc1c327df"
     },
     {
@@ -16157,22 +14925,22 @@ const microSkillRepairPools = {
       "sourceGame": "costDirective",
       "q": "Marginal cost answers which question?",
       "options": [
-        "Total cost divided by output",
-        "How much total cost changes when output increases",
-        "Total revenue divided by output",
-        "The value of sunk equipment"
+        "Total cost divided by all units produced",
+        "The change in total cost per additional unit",
+        "Total variable cost at the final output",
+        "Total fixed cost divided by output"
       ],
       "tag": "average_vs_marginal_cost",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO4.1",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_average_vs_marginal_cost",
       "primarySkill": "average_vs_marginal_cost",
       "secondarySkills": [],
       "repairSkill": "average_vs_marginal_cost",
-      "commonError": "needs_basic_repair",
-      "feedback": "Average cost is per unit overall; marginal cost is the cost of one more unit.",
-      "aHash": "6b428e23666fc8299dfe9234813645e74fdd045b114220c293a39f5155b1d042"
+      "commonError": "uses_total_change_without_quantity",
+      "feedback": "Marginal cost is the change in total cost per additional unit; for a range divide by the output change.",
+      "aHash": "eeffbcbbbab9939f18bf62b791b1297f632c871c03359216ab579fc82cd874d8"
     },
     {
       "id": 5066,
@@ -16185,15 +14953,15 @@ const microSkillRepairPools = {
         "Accounting depreciation only"
       ],
       "tag": "average_vs_marginal_cost",
-      "type": "repair",
+      "type": "application",
       "objective": "LO4.1",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_average_vs_marginal_cost",
       "primarySkill": "average_vs_marginal_cost",
       "secondarySkills": [],
       "repairSkill": "average_vs_marginal_cost",
-      "commonError": "needs_basic_repair",
-      "feedback": "Average cost is per unit overall; marginal cost is the cost of one more unit.",
+      "commonError": "uses_average_for_extra_unit",
+      "feedback": "The next unit is governed by its additional cost, compared with its additional revenue; past averages are not that increment.",
       "aHash": "560e4bab5153693c58045ef7baff539145b91e212e65f6436d2c7348c981ff0f"
     },
     {
@@ -16201,21 +14969,21 @@ const microSkillRepairPools = {
       "sourceGame": "costDirective",
       "q": "If marginal cost is below average cost, what happens to average cost?",
       "options": [
-        "Average cost must rise",
-        "Average cost becomes zero",
-        "Average cost equals total revenue",
+        "Average cost immediately becomes equal to marginal cost",
+        "Average cost rises because total cost rises",
+        "Average cost stays fixed because original cost is unchanged",
         "Average cost falls"
       ],
       "tag": "average_vs_marginal_cost",
-      "type": "repair",
+      "type": "application",
       "objective": "LO4.1",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_average_vs_marginal_cost",
       "primarySkill": "average_vs_marginal_cost",
       "secondarySkills": [],
       "repairSkill": "average_vs_marginal_cost",
-      "commonError": "needs_basic_repair",
-      "feedback": "Average cost is per unit overall; marginal cost is the cost of one more unit.",
+      "commonError": "total_cost_rises_means_average_rises",
+      "feedback": "Adding units below the existing average cost pulls the average down, although total cost rises.",
       "aHash": "16b7bc5abbaa71091209c6da1d88e0fe229721df440965401a54caf923ccc013"
     }
   ],
@@ -16231,15 +14999,15 @@ const microSkillRepairPools = {
         "$1,080"
       ],
       "tag": "ac_mc_mr_calculation",
-      "type": "repair",
+      "type": "calculation",
       "objective": "LO4.2",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_ac_mc_mr_calculation",
       "primarySkill": "ac_mc_mr_calculation",
       "secondarySkills": [],
       "repairSkill": "ac_mc_mr_calculation",
-      "commonError": "needs_basic_repair",
-      "feedback": "Divide the change by the change in output to get marginal values.",
+      "commonError": "omits_quantity_denominator",
+      "feedback": "The cost change 80 spread over 4 added units is 20 per unit over the interval.",
       "aHash": "1f67972ce8b9d3da71256e750035aa4ffd0a58c0796b2172492afd8b96426416"
     },
     {
@@ -16253,15 +15021,15 @@ const microSkillRepairPools = {
         "$2,150"
       ],
       "tag": "ac_mc_mr_calculation",
-      "type": "repair",
+      "type": "calculation",
       "objective": "LO4.2",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_ac_mc_mr_calculation",
       "primarySkill": "ac_mc_mr_calculation",
       "secondarySkills": [],
       "repairSkill": "ac_mc_mr_calculation",
-      "commonError": "needs_basic_repair",
-      "feedback": "Divide the change by the change in output to get marginal values.",
+      "commonError": "uses_total_revenue_change_as_per_unit",
+      "feedback": "The revenue change 150 divided by 5 extra units is 30 per unit over the interval.",
       "aHash": "e3aae7bc0e5ad26dcf3912c166846dff1e00a3887aeb53c3363722bba19b16bd"
     },
     {
@@ -16269,21 +15037,21 @@ const microSkillRepairPools = {
       "sourceGame": "costDirective",
       "q": "Average cost is calculated by dividing what?",
       "options": [
-        "Change in cost by change in revenue",
-        "Price by marginal cost",
+        "Total variable cost divided by output",
+        "Change in total cost divided by change in output",
         "Total cost by output",
-        "Total revenue by fixed cost"
+        "Total revenue divided by output"
       ],
       "tag": "ac_mc_mr_calculation",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO4.2",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_ac_mc_mr_calculation",
       "primarySkill": "ac_mc_mr_calculation",
       "secondarySkills": [],
       "repairSkill": "ac_mc_mr_calculation",
-      "commonError": "needs_basic_repair",
-      "feedback": "Divide the change by the change in output to get marginal values.",
+      "commonError": "confuses_average_and_incremental_formula",
+      "feedback": "Average cost uses total cost divided by total output; differences are used for incremental measures.",
       "aHash": "e7ba6f26a2514fbc5a108ee0f5a08404d532f41abe127f1435f130f5d1149d76"
     },
     {
@@ -16291,21 +15059,21 @@ const microSkillRepairPools = {
       "sourceGame": "costDirective",
       "q": "Marginal revenue over a range equals what?",
       "options": [
-        "Total revenue divided by total cost",
-        "Average cost minus fixed cost",
-        "Output divided by total cost",
+        "Final selling price regardless of changes to earlier-unit receipts",
+        "Total revenue divided by total output",
+        "Change in total revenue without dividing by added units",
         "Change in total revenue divided by change in quantity"
       ],
       "tag": "ac_mc_mr_calculation",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO4.2",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_ac_mc_mr_calculation",
       "primarySkill": "ac_mc_mr_calculation",
       "secondarySkills": [],
       "repairSkill": "ac_mc_mr_calculation",
-      "commonError": "needs_basic_repair",
-      "feedback": "Divide the change by the change in output to get marginal values.",
+      "commonError": "uses_average_revenue_as_marginal",
+      "feedback": "Average incremental revenue uses change in revenue divided by change in quantity, not total revenue over all sales.",
       "aHash": "2fe1e12e4ad681d07ab147bf76a9fe9ed64e1266d847ddca7a11319fe20b32fd"
     }
   ],
@@ -16316,20 +15084,20 @@ const microSkillRepairPools = {
       "q": "What is the basic rule for an extent decision?",
       "options": [
         "Do more if marginal benefit exceeds marginal cost",
-        "Do more whenever average cost is positive",
-        "Do less whenever fixed cost exists",
-        "Do the same amount regardless of marginal values"
+        "Do more whenever total revenue is positive",
+        "Do more whenever average cost is falling",
+        "Stop whenever there is any fixed cost"
       ],
       "tag": "mr_mc_extent_rule",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO4.3",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_mr_mc_extent_rule",
       "primarySkill": "mr_mc_extent_rule",
       "secondarySkills": [],
       "repairSkill": "mr_mc_extent_rule",
-      "commonError": "needs_basic_repair",
-      "feedback": "Keep expanding while marginal benefit or marginal revenue exceeds marginal cost.",
+      "commonError": "ignores_marginal_net_gain",
+      "feedback": "For the next increment, added benefit above added cost raises value. For a whole schedule compare all feasible choices.",
       "aHash": "4137c1163d205676786bb7babd737965db955d9ad3a09f2f3c66fd612e0d6e99"
     },
     {
@@ -16343,21 +15111,21 @@ const microSkillRepairPools = {
         "Profit is unchanged"
       ],
       "tag": "mr_mc_extent_rule",
-      "type": "repair",
+      "type": "calculation",
       "objective": "LO4.3",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_mr_mc_extent_rule",
       "primarySkill": "mr_mc_extent_rule",
       "secondarySkills": [],
       "repairSkill": "mr_mc_extent_rule",
-      "commonError": "needs_basic_repair",
-      "feedback": "Keep expanding while marginal benefit or marginal revenue exceeds marginal cost.",
+      "commonError": "reverses_marginal_profit_sign",
+      "feedback": "Added profit is 40 − 31 = $9; summing revenue and cost is not profit.",
       "aHash": "4f37062cc0cf822dbabf002c56c8195d15ab2360ea0cd4bee935b3eef6e05954"
     },
     {
       "id": 5074,
       "sourceGame": "costDirective",
-      "q": "When should a firm stop expanding an activity?",
+      "q": "When successive net marginal gains are decreasing, when should a firm stop expanding?",
       "options": [
         "When total fixed cost is positive",
         "When average cost is below price",
@@ -16365,15 +15133,15 @@ const microSkillRepairPools = {
         "When sunk cost is large"
       ],
       "tag": "mr_mc_extent_rule",
-      "type": "repair",
+      "type": "application",
       "objective": "LO4.3",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_mr_mc_extent_rule",
       "primarySkill": "mr_mc_extent_rule",
       "secondarySkills": [],
       "repairSkill": "mr_mc_extent_rule",
-      "commonError": "needs_basic_repair",
-      "feedback": "Keep expanding while marginal benefit or marginal revenue exceeds marginal cost.",
+      "commonError": "uses_average_cost_as_stop_rule",
+      "feedback": "With decreasing net marginal gains, stop before an increment whose cost exceeds its benefit; a nonmonotone schedule requires full comparison.",
       "aHash": "30ad9e83c58013fb10c8fb9a8956e5481920a6fb717cbf9c4b124a550dee9d9e"
     },
     {
@@ -16381,21 +15149,21 @@ const microSkillRepairPools = {
       "sourceGame": "costDirective",
       "q": "Extent decisions are about choosing what?",
       "options": [
-        "Whether past costs were wise",
-        "Which sunk cost to recover first",
-        "Whether all inputs doubled",
+        "Which historical expense should be recovered first",
+        "Whether to enter an activity before choosing any amount",
+        "Whether past expenditure was justified",
         "How much of an activity to do"
       ],
       "tag": "mr_mc_extent_rule",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO4.3",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_mr_mc_extent_rule",
       "primarySkill": "mr_mc_extent_rule",
       "secondarySkills": [],
       "repairSkill": "mr_mc_extent_rule",
-      "commonError": "needs_basic_repair",
-      "feedback": "Keep expanding while marginal benefit or marginal revenue exceeds marginal cost.",
+      "commonError": "confuses_extent_with_entry",
+      "feedback": "Extent asks how much of an activity to undertake, as distinct from whether to enter at all.",
       "aHash": "74ab27f1546727be9352c0781821942da228143b97c7d322442090b867d9ff12"
     }
   ],
@@ -16406,20 +15174,20 @@ const microSkillRepairPools = {
       "q": "Why can commission pay increase effort?",
       "options": [
         "It raises the employee’s reward from additional sales",
-        "It removes all risk from employees",
-        "It makes marginal cost zero",
-        "It guarantees high-margin sales"
+        "It guarantees high profit margins on every sale",
+        "It makes sales income independent of uncertain demand",
+        "It raises only fixed pay without changing pay per sale"
       ],
       "tag": "incentive_compensation_effort",
-      "type": "repair",
+      "type": "application",
       "objective": "LO4.4",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_incentive_compensation_effort",
       "primarySkill": "incentive_compensation_effort",
       "secondarySkills": [],
       "repairSkill": "incentive_compensation_effort",
-      "commonError": "needs_basic_repair",
-      "feedback": "Compensation changes behavior by changing the reward from effort.",
+      "commonError": "confuses_fixed_and_marginal_reward",
+      "feedback": "Commission makes extra verified sales change pay; a salary changes the level of pay without that direct marginal link.",
       "aHash": "21a067696ee4bf1b141cd4e8bc305a018d4f0f590b24ef3e0e58c4f92dcf6d47"
     },
     {
@@ -16427,21 +15195,21 @@ const microSkillRepairPools = {
       "sourceGame": "costDirective",
       "q": "What is a danger of a badly chosen performance metric?",
       "options": [
-        "Employees stop responding to incentives",
+        "Any accurately counted activity is a sufficient objective",
         "Employees may chase the metric instead of the firm’s real objective",
-        "The firm cannot calculate revenue",
-        "Average cost must rise"
+        "Increasing the same metric's bonus fixes every omitted outcome",
+        "A clear metric guarantees profitable actions"
       ],
       "tag": "incentive_compensation_effort",
-      "type": "repair",
+      "type": "application",
       "objective": "LO4.4",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_incentive_compensation_effort",
       "primarySkill": "incentive_compensation_effort",
       "secondarySkills": [],
       "repairSkill": "incentive_compensation_effort",
-      "commonError": "needs_basic_repair",
-      "feedback": "Compensation changes behavior by changing the reward from effort.",
+      "commonError": "optimizes_proxy_not_objective",
+      "feedback": "Employees can improve the measured count while harming quality or net value omitted from the measure.",
       "aHash": "b9190fc7c2466aea1b79811e5c3411bd34391b07ef737a857fa2bfc4fe9ba8df"
     },
     {
@@ -16449,21 +15217,21 @@ const microSkillRepairPools = {
       "sourceGame": "costDirective",
       "q": "A fixed salary gives weak extra effort incentives because what is low?",
       "options": [
-        "The firm’s fixed rent",
-        "The seller’s reservation price",
+        "The employee's ability to value personal time",
+        "The employee's total guaranteed salary",
         "The employee’s marginal reward from extra output",
-        "The product’s total surplus"
+        "The firm's total revenue from all previous sales"
       ],
       "tag": "incentive_compensation_effort",
-      "type": "repair",
+      "type": "application",
       "objective": "LO4.4",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_incentive_compensation_effort",
       "primarySkill": "incentive_compensation_effort",
       "secondarySkills": [],
       "repairSkill": "incentive_compensation_effort",
-      "commonError": "needs_basic_repair",
-      "feedback": "Compensation changes behavior by changing the reward from effort.",
+      "commonError": "confuses_salary_level_with_marginal_pay",
+      "feedback": "A pure fixed salary adds no direct cash reward for one more unit; other career, intrinsic or monitoring incentives can still matter.",
       "aHash": "e9ea9e867aa0d5c219a44d496ac263c413581d585c4ad642125b727dae06dd1a"
     },
     {
@@ -16471,21 +15239,21 @@ const microSkillRepairPools = {
       "sourceGame": "costDirective",
       "q": "A good compensation plan balances effort incentives with what?",
       "options": [
-        "Only employee seniority",
-        "Only sunk costs",
-        "Only the highest possible commission rate",
+        "Only whether the output count is easy to collect",
+        "Only the largest feasible commission percentage",
+        "Only whether total pay exceeds last year's pay",
         "Risk, measurement accuracy, and the firm’s objective"
       ],
       "tag": "incentive_compensation_effort",
-      "type": "repair",
+      "type": "application",
       "objective": "LO4.4",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_incentive_compensation_effort",
       "primarySkill": "incentive_compensation_effort",
       "secondarySkills": [],
       "repairSkill": "incentive_compensation_effort",
-      "commonError": "needs_basic_repair",
-      "feedback": "Compensation changes behavior by changing the reward from effort.",
+      "commonError": "ignores_risk_and_measurement",
+      "feedback": "Strong pay incentives can expose workers to noise and shift effort to measured tasks. Consider risk, controllability and the desired outcome.",
       "aHash": "581a5a20b6bbbd620e387771f6d92c6b9f617f703ebbe5f38acf35a03232ceb3"
     }
   ],
@@ -16493,23 +15261,23 @@ const microSkillRepairPools = {
     {
       "id": 5084,
       "sourceGame": "costDirective",
-      "q": "Diminishing marginal returns happens when what is fixed?",
+      "q": "In a diminishing-marginal-returns comparison, what is held fixed while one input increases?",
       "options": [
         "At least one input",
-        "All inputs change together",
-        "No inputs are scarce",
-        "Output is fixed"
+        "Every input must increase proportionally",
+        "The output level must remain fixed",
+        "The added input itself must remain fixed"
       ],
       "tag": "diminishing_marginal_returns",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO7.1",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_diminishing_marginal_returns",
       "primarySkill": "diminishing_marginal_returns",
       "secondarySkills": [],
       "repairSkill": "diminishing_marginal_returns",
-      "commonError": "needs_basic_repair",
-      "feedback": "Diminishing marginal returns requires at least one fixed input in the short run.",
+      "commonError": "confuses_fixed_input_with_all_input_scaling",
+      "feedback": "Diminishing marginal returns varies one input while at least one other input and technology are held fixed.",
       "aHash": "ad9ab4ff245fe6842b482b0e5160f259d623903448fb9498b6a2d673357b0e49"
     },
     {
@@ -16523,60 +15291,38 @@ const microSkillRepairPools = {
         "435 units"
       ],
       "tag": "diminishing_marginal_returns",
-      "type": "repair",
+      "type": "calculation",
       "objective": "LO7.1",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_diminishing_marginal_returns",
       "primarySkill": "diminishing_marginal_returns",
       "secondarySkills": [],
       "repairSkill": "diminishing_marginal_returns",
-      "commonError": "needs_basic_repair",
-      "feedback": "Diminishing marginal returns requires at least one fixed input in the short run.",
+      "commonError": "uses_total_output_as_marginal_product",
+      "feedback": "The added worker contributes 235 − 200 = 35 units; endpoint output is not that worker's increment.",
       "aHash": "b90414251665009702c6a4a758da8a718da9d690c5febe15f071a91cba09dc23"
     },
     {
       "id": 5086,
       "sourceGame": "costDirective",
-      "q": "Diminishing marginal returns means each added variable input eventually adds what?",
+      "q": "With other inputs and technology fixed, diminishing marginal returns means each added variable input eventually adds what?",
       "options": [
-        "More additional output forever",
-        "The same output forever",
+        "The same additional output as every preceding unit",
+        "More additional output than the previous unit indefinitely",
         "Less additional output than the previous unit",
-        "No output from the first unit"
+        "Lower total output whenever marginal output falls"
       ],
       "tag": "diminishing_marginal_returns",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO7.1",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_diminishing_marginal_returns",
       "primarySkill": "diminishing_marginal_returns",
       "secondarySkills": [],
       "repairSkill": "diminishing_marginal_returns",
-      "commonError": "needs_basic_repair",
-      "feedback": "Diminishing marginal returns requires at least one fixed input in the short run.",
+      "commonError": "confuses_total_and_marginal_product",
+      "feedback": "With other inputs and technology fixed, later units of the variable input eventually add less output; total output may still rise.",
       "aHash": "10d89092fcf075b1678caf5dfca71c45ec8f36d77f4f1b1c8ae4b84362f50b4d"
-    },
-    {
-      "id": 5087,
-      "sourceGame": "costDirective",
-      "q": "Why is diminishing marginal returns short-run?",
-      "options": [
-        "Because all inputs double",
-        "Because fixed costs are always sunk",
-        "Because firms never change labor",
-        "Because at least one input cannot be adjusted"
-      ],
-      "tag": "diminishing_marginal_returns",
-      "type": "repair",
-      "objective": "LO7.1",
-      "difficulty": "microSkillRepair",
-      "conceptCluster": "repair_costDirective_diminishing_marginal_returns",
-      "primarySkill": "diminishing_marginal_returns",
-      "secondarySkills": [],
-      "repairSkill": "diminishing_marginal_returns",
-      "commonError": "needs_basic_repair",
-      "feedback": "Diminishing marginal returns requires at least one fixed input in the short run.",
-      "aHash": "cc2ea19a81c446a0107cf378d4363c0aafd4712273ef882670b56af3d1b40d6c"
     }
   ],
   "cost_curves_contracts": [
@@ -16586,20 +15332,20 @@ const microSkillRepairPools = {
       "q": "Why do cost curves matter in supplier negotiations?",
       "options": [
         "Order size can affect the supplier’s average cost and feasible price",
-        "Supplier cost is unrelated to volume",
-        "Only sunk costs matter in contracts",
-        "Every order has the same marginal revenue"
+        "Current average cost is valid for every future quantity",
+        "Only the supplier's historical investment determines a quote",
+        "A large order necessarily has zero incremental cost"
       ],
       "tag": "cost_curves_contracts",
-      "type": "repair",
+      "type": "application",
       "objective": "LO7.2",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_cost_curves_contracts",
       "primarySkill": "cost_curves_contracts",
       "secondarySkills": [],
       "repairSkill": "cost_curves_contracts",
-      "commonError": "needs_basic_repair",
-      "feedback": "Cost curves help explain feasible prices, commitments, and supplier scale.",
+      "commonError": "ignores_quantity_dependent_contract_cost",
+      "feedback": "Order volume may change setup cost per unit and capacity costs. The quote must fit the requested quantity.",
       "aHash": "e91acf15fd8049b2ee7704eb8a6a07236bd2ed83e94a3954ef31db224d3efdde"
     },
     {
@@ -16607,21 +15353,21 @@ const microSkillRepairPools = {
       "sourceGame": "costDirective",
       "q": "A volume commitment can help a supplier do what?",
       "options": [
-        "Avoid all fixed costs forever",
+        "Eliminate every variable production cost",
         "Operate at a more efficient scale",
-        "Make average cost irrelevant",
-        "Guarantee no learning occurs"
+        "Treat any forecast as a binding customer order",
+        "Recover investment regardless of the volume actually purchased"
       ],
       "tag": "cost_curves_contracts",
-      "type": "repair",
+      "type": "application",
       "objective": "LO7.2",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_cost_curves_contracts",
       "primarySkill": "cost_curves_contracts",
       "secondarySkills": [],
       "repairSkill": "cost_curves_contracts",
-      "commonError": "needs_basic_repair",
-      "feedback": "Cost curves help explain feasible prices, commitments, and supplier scale.",
+      "commonError": "treats_uncommitted_volume_as_guaranteed",
+      "feedback": "A credible commitment may support output near a lower-cost scale; it does not guarantee demand outside the contract.",
       "aHash": "e6d017d9ec599bfaca95430b7aa3f94a3f78e48afee5c4d95215ef148ceda06b"
     },
     {
@@ -16629,44 +15375,22 @@ const microSkillRepairPools = {
       "sourceGame": "costDirective",
       "q": "Why might a supplier quote a lower unit price for a larger order?",
       "options": [
-        "Marginal cost must always exceed price",
-        "Large orders always raise transaction costs",
+        "A larger order necessarily makes all fixed costs disappear",
+        "Every extra unit must cost less than the selling price",
         "Average cost may fall at higher output",
-        "Fixed cost becomes the buyer’s profit"
+        "More units guarantee that total production cost falls"
       ],
       "tag": "cost_curves_contracts",
-      "type": "repair",
+      "type": "application",
       "objective": "LO7.2",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_cost_curves_contracts",
       "primarySkill": "cost_curves_contracts",
       "secondarySkills": [],
       "repairSkill": "cost_curves_contracts",
-      "commonError": "needs_basic_repair",
-      "feedback": "Cost curves help explain feasible prices, commitments, and supplier scale.",
+      "commonError": "assumes_flat_average_cost",
+      "feedback": "Larger volume can spread setup or support efficient methods; it need not always reduce cost.",
       "aHash": "6996332295a60d92223fdf0d345e0e88c0d201d76fc714357ad2b8d687076630"
-    },
-    {
-      "id": 5091,
-      "sourceGame": "costDirective",
-      "q": "Contract terms should account for cost curves because what changes with scale?",
-      "options": [
-        "The definition of opportunity cost",
-        "The existence of buyer value",
-        "Whether sunk costs are sunk",
-        "Feasible cost and pricing ranges"
-      ],
-      "tag": "cost_curves_contracts",
-      "type": "repair",
-      "objective": "LO7.2",
-      "difficulty": "microSkillRepair",
-      "conceptCluster": "repair_costDirective_cost_curves_contracts",
-      "primarySkill": "cost_curves_contracts",
-      "secondarySkills": [],
-      "repairSkill": "cost_curves_contracts",
-      "commonError": "needs_basic_repair",
-      "feedback": "Cost curves help explain feasible prices, commitments, and supplier scale.",
-      "aHash": "2f11ddb95d07ccea455b26c84790008b5e1506613d6d8a619abdadead3a58433"
     }
   ],
   "average_cost_output": [
@@ -16676,20 +15400,20 @@ const microSkillRepairPools = {
       "q": "How do you compute average cost?",
       "options": [
         "Total cost divided by output",
-        "Change in cost divided by change in output",
-        "Total revenue divided by fixed cost",
-        "Price minus marginal cost"
+        "Change in total cost divided by change in output",
+        "Variable cost divided by output",
+        "Total revenue divided by output"
       ],
       "tag": "average_cost_output",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO7.3",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_average_cost_output",
       "primarySkill": "average_cost_output",
       "secondarySkills": [],
       "repairSkill": "average_cost_output",
-      "commonError": "needs_basic_repair",
-      "feedback": "Average cost equals total cost divided by output.",
+      "commonError": "confuses_ac_with_mc",
+      "feedback": "Average cost is total cost divided by the total quantity at that production level.",
       "aHash": "edf35369ee31055d813d9b9461cd4d02b02fc12701ae6db339c39b1f1425cae0"
     },
     {
@@ -16703,15 +15427,15 @@ const microSkillRepairPools = {
         "$52,000"
       ],
       "tag": "average_cost_output",
-      "type": "repair",
+      "type": "calculation",
       "objective": "LO7.3",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_average_cost_output",
       "primarySkill": "average_cost_output",
       "secondarySkills": [],
       "repairSkill": "average_cost_output",
-      "commonError": "needs_basic_repair",
-      "feedback": "Average cost equals total cost divided by output.",
+      "commonError": "uses_total_cost_as_average",
+      "feedback": "48000/4000 = $12 per unit. Use consistent units, not total cost or total output as the answer.",
       "aHash": "da2b74cad5bfd34ccf1ea271bc7aad174f31556ca58fb967aa44a1870edf85bd"
     },
     {
@@ -16719,68 +15443,46 @@ const microSkillRepairPools = {
       "sourceGame": "costDirective",
       "q": "Average cost falls when output rises and total cost rises less than proportionally. What does that suggest?",
       "options": [
-        "Marginal cost must be infinite",
-        "Revenue is falling to zero",
-        "Costs are being spread or efficiencies are appearing",
-        "All inputs doubled exactly"
+        "Total cost must have fallen",
+        "All inputs must have doubled",
+        "Cost per unit is lower, but the cause requires more information",
+        "Learning is proven without observing experience"
       ],
       "tag": "average_cost_output",
-      "type": "repair",
+      "type": "application",
       "objective": "LO7.3",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_average_cost_output",
       "primarySkill": "average_cost_output",
       "secondarySkills": [],
       "repairSkill": "average_cost_output",
-      "commonError": "needs_basic_repair",
-      "feedback": "Average cost equals total cost divided by output.",
-      "aHash": "ee5723c47c45631cab7a6e863e86b66aa3f0d103032fd53eaea157852e77350c"
-    },
-    {
-      "id": 5095,
-      "sourceGame": "costDirective",
-      "q": "Average cost is useful for what kind of question?",
-      "options": [
-        "Whether one more unit should be produced when marginal values are known",
-        "The buyer’s maximum willingness to pay",
-        "The value of a sunk fee",
-        "Cost per unit over a production level"
-      ],
-      "tag": "average_cost_output",
-      "type": "repair",
-      "objective": "LO7.3",
-      "difficulty": "microSkillRepair",
-      "conceptCluster": "repair_costDirective_average_cost_output",
-      "primarySkill": "average_cost_output",
-      "secondarySkills": [],
-      "repairSkill": "average_cost_output",
-      "commonError": "needs_basic_repair",
-      "feedback": "Average cost equals total cost divided by output.",
-      "aHash": "19c832c528c8e135928b4db93d749938a2284a47acfb938d3a55a75b478d14e6"
+      "commonError": "infers_long_run_scale_from_any_ac_decline",
+      "feedback": "The arithmetic establishes lower cost per unit. It does not alone distinguish fixed-cost spreading, technology or learning.",
+      "aHash": "1a5b029b64616a728464ebf654ea14ea398d3be1b6e49c989f7fd82f38c55131"
     }
   ],
   "returns_to_scale": [
     {
       "id": 5096,
       "sourceGame": "costDirective",
-      "q": "Returns to scale asks what happens when what changes?",
+      "q": "Holding technology fixed, returns to scale asks what happens when:",
       "options": [
-        "All inputs change together",
-        "Only labor changes while capital is fixed",
-        "Only price changes",
-        "Only sunk cost changes"
+        "All physical inputs change in the same proportion",
+        "Only labor changes with capital fixed",
+        "Only product price changes",
+        "Only current output changes without specifying inputs"
       ],
       "tag": "returns_to_scale",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO7.4",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_returns_to_scale",
       "primarySkill": "returns_to_scale",
       "secondarySkills": [],
       "repairSkill": "returns_to_scale",
-      "commonError": "needs_basic_repair",
-      "feedback": "Returns to scale asks what happens when all inputs change together.",
-      "aHash": "ced55729f2b5396377de334aa346d58e16d955237780a2da5cf8e16b5a0447c1"
+      "commonError": "confuses_all_inputs_with_one_variable_input",
+      "feedback": "Returns to scale changes all physical inputs in the same proportion, holding technology fixed.",
+      "aHash": "df21cc0e921d432a1e8fd2c6d3f19ae06eff242d0ad8f32b8593709a78d7c5f0"
     },
     {
       "id": 5097,
@@ -16793,15 +15495,15 @@ const microSkillRepairPools = {
         "Diminishing marginal returns"
       ],
       "tag": "returns_to_scale",
-      "type": "repair",
+      "type": "application",
       "objective": "LO7.4",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_returns_to_scale",
       "primarySkill": "returns_to_scale",
       "secondarySkills": [],
       "repairSkill": "returns_to_scale",
-      "commonError": "needs_basic_repair",
-      "feedback": "Returns to scale asks what happens when all inputs change together.",
+      "commonError": "misclassifies_proportional_scaling",
+      "feedback": "Doubling all inputs and output is constant returns to scale; compare proportions.",
       "aHash": "4afcedd9184d58c718cce4e396cd98b89fbea90ad79a74521565ac77f5c36fad"
     },
     {
@@ -16809,21 +15511,21 @@ const microSkillRepairPools = {
       "sourceGame": "costDirective",
       "q": "If all inputs double and output more than doubles, what is the pattern?",
       "options": [
-        "Constant returns to scale",
         "Decreasing returns to scale",
+        "Constant returns to scale",
         "Increasing returns to scale",
-        "Fixed-cost fallacy"
+        "Diminishing marginal returns with an input fixed"
       ],
       "tag": "returns_to_scale",
-      "type": "repair",
+      "type": "application",
       "objective": "LO7.4",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_returns_to_scale",
       "primarySkill": "returns_to_scale",
       "secondarySkills": [],
       "repairSkill": "returns_to_scale",
-      "commonError": "needs_basic_repair",
-      "feedback": "Returns to scale asks what happens when all inputs change together.",
+      "commonError": "compares_levels_not_proportions",
+      "feedback": "More-than-doubled output for doubled inputs is increasing returns to scale.",
       "aHash": "b43902336e49d926263d77e4900a3b47a9fe58bddd8460b227efbb785a750b06"
     },
     {
@@ -16831,21 +15533,21 @@ const microSkillRepairPools = {
       "sourceGame": "costDirective",
       "q": "If all inputs double and output less than doubles, what is the pattern?",
       "options": [
+        "Diminishing marginal returns with an input held fixed",
         "Increasing returns to scale",
-        "Economies of scope",
-        "Accounting profit",
+        "Constant returns to scale",
         "Decreasing returns to scale"
       ],
       "tag": "returns_to_scale",
-      "type": "repair",
+      "type": "application",
       "objective": "LO7.4",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_returns_to_scale",
       "primarySkill": "returns_to_scale",
       "secondarySkills": [],
       "repairSkill": "returns_to_scale",
-      "commonError": "needs_basic_repair",
-      "feedback": "Returns to scale asks what happens when all inputs change together.",
+      "commonError": "confuses_output_growth_with_increasing_scale",
+      "feedback": "Output can grow yet less than double when all inputs double; that is decreasing returns to scale.",
       "aHash": "1ccfca62406e75b88927edb55372aeb324dc8a3fd1a6214eddcbea139fe034d6"
     }
   ],
@@ -16856,87 +15558,43 @@ const microSkillRepairPools = {
       "q": "Minimum efficient scale is the smallest output where what happens?",
       "options": [
         "Long-run average cost reaches its minimum",
-        "Marginal revenue reaches zero",
-        "Total cost reaches zero",
-        "All sunk costs become relevant"
+        "Total revenue first equals total cost",
+        "Total profit reaches its maximum",
+        "Total cost is minimized"
       ],
       "tag": "minimum_efficient_scale",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO7.5",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_minimum_efficient_scale",
       "primarySkill": "minimum_efficient_scale",
       "secondarySkills": [],
       "repairSkill": "minimum_efficient_scale",
-      "commonError": "needs_basic_repair",
-      "feedback": "MES is the smallest output where long-run average cost reaches its minimum.",
+      "commonError": "confuses_mes_with_other_optima",
+      "feedback": "MES is the first output attaining the minimum long-run average cost, not break-even or maximum profit.",
       "aHash": "3993d14ee2b7bf70fc61474a69a4548cd166fade611886987b957670b2f0a46f"
-    },
-    {
-      "id": 5101,
-      "sourceGame": "costDirective",
-      "q": "Why can large incumbents have a cost advantage?",
-      "options": [
-        "They always ignore marginal cost",
-        "They may already operate near minimum efficient scale",
-        "They have no opportunity costs",
-        "They always have higher average cost"
-      ],
-      "tag": "minimum_efficient_scale",
-      "type": "repair",
-      "objective": "LO7.5",
-      "difficulty": "microSkillRepair",
-      "conceptCluster": "repair_costDirective_minimum_efficient_scale",
-      "primarySkill": "minimum_efficient_scale",
-      "secondarySkills": [],
-      "repairSkill": "minimum_efficient_scale",
-      "commonError": "needs_basic_repair",
-      "feedback": "MES is the smallest output where long-run average cost reaches its minimum.",
-      "aHash": "d29869212ea2b284508c8d750885beaf002812c8660caefd6c58cd7037de21c4"
     },
     {
       "id": 5102,
       "sourceGame": "costDirective",
       "q": "MES matters because below it a firm may have what?",
       "options": [
-        "Zero variable cost",
-        "No fixed inputs",
+        "Necessarily zero variable cost",
+        "Necessarily lower total profit at every possible selling price",
         "Higher long-run average cost",
-        "No need for contracts"
+        "A guarantee that demand will grow to the efficient scale"
       ],
       "tag": "minimum_efficient_scale",
-      "type": "repair",
+      "type": "application",
       "objective": "LO7.5",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_minimum_efficient_scale",
       "primarySkill": "minimum_efficient_scale",
       "secondarySkills": [],
       "repairSkill": "minimum_efficient_scale",
-      "commonError": "needs_basic_repair",
-      "feedback": "MES is the smallest output where long-run average cost reaches its minimum.",
+      "commonError": "ignores_small_volume_cost_disadvantage",
+      "feedback": "Below the minimum efficient scale, long-run unit cost may exceed its minimum even if total cost is lower.",
       "aHash": "df0e46a5e4031adb67c1c73657d1116bf0dbce45e2dc673ba2a42d9456f3a59b"
-    },
-    {
-      "id": 5103,
-      "sourceGame": "costDirective",
-      "q": "A firm reaches MES when further output increases no longer lower what?",
-      "options": [
-        "Total revenue",
-        "Buyer value",
-        "Sunk cost",
-        "Long-run average cost"
-      ],
-      "tag": "minimum_efficient_scale",
-      "type": "repair",
-      "objective": "LO7.5",
-      "difficulty": "microSkillRepair",
-      "conceptCluster": "repair_costDirective_minimum_efficient_scale",
-      "primarySkill": "minimum_efficient_scale",
-      "secondarySkills": [],
-      "repairSkill": "minimum_efficient_scale",
-      "commonError": "needs_basic_repair",
-      "feedback": "MES is the smallest output where long-run average cost reaches its minimum.",
-      "aHash": "35221b88048c121490d593f03121722f8f7cc7a1cc192e0b56ac72dd11a8d265"
     }
   ],
   "learning_curve": [
@@ -16946,20 +15604,20 @@ const microSkillRepairPools = {
       "q": "What drives a learning-curve cost reduction?",
       "options": [
         "Cumulative production experience",
-        "Doubling all inputs once",
-        "Ignoring opportunity cost",
-        "Raising fixed costs"
+        "A larger current production rate without more experience",
+        "A supplier discount without any process improvement",
+        "A higher product selling price"
       ],
       "tag": "learning_curve",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO7.6",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_learning_curve",
       "primarySkill": "learning_curve",
       "secondarySkills": [],
       "repairSkill": "learning_curve",
-      "commonError": "needs_basic_repair",
-      "feedback": "Learning curves reflect cost reductions from cumulative experience.",
+      "commonError": "confuses_experience_with_current_scale",
+      "feedback": "Learning comes from accumulated production experience, as distinct from a larger current plant or cheaper inputs.",
       "aHash": "858bef73c9b37f6fad101bc029196ea8328d3b5e3cc079c6a235752589a58b4b"
     },
     {
@@ -16973,15 +15631,15 @@ const microSkillRepairPools = {
         "$18"
       ],
       "tag": "learning_curve",
-      "type": "repair",
+      "type": "calculation",
       "objective": "LO7.6",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_learning_curve",
       "primarySkill": "learning_curve",
       "secondarySkills": [],
       "repairSkill": "learning_curve",
-      "commonError": "needs_basic_repair",
-      "feedback": "Learning curves reflect cost reductions from cumulative experience.",
+      "commonError": "confuses_reduction_with_remaining_cost",
+      "feedback": "The dollar reduction is 10 − 8 = $2; the new cost is 8, not the reduction.",
       "aHash": "fc4d602aa16170b89bda4c70d75d89e6183b14f994516aa7b3e032c3f18cbb4e"
     },
     {
@@ -16989,44 +15647,44 @@ const microSkillRepairPools = {
       "sourceGame": "costDirective",
       "q": "Learning curves usually come from improvements in what?",
       "options": [
-        "Higher sunk costs alone",
-        "Random changes in buyer value",
+        "A larger current plant with unchanged experience",
+        "A lower input price with unchanged production methods",
         "Process knowledge, fewer mistakes, and faster setup",
-        "More paperwork"
+        "A higher selling price for the same output"
       ],
       "tag": "learning_curve",
-      "type": "repair",
+      "type": "application",
       "objective": "LO7.6",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_learning_curve",
       "primarySkill": "learning_curve",
       "secondarySkills": [],
       "repairSkill": "learning_curve",
-      "commonError": "needs_basic_repair",
-      "feedback": "Learning curves reflect cost reductions from cumulative experience.",
+      "commonError": "attributes_learning_to_input_prices",
+      "feedback": "Better process knowledge, fewer mistakes and faster setup can come from practice; unchanged tasks with cheaper inputs are a different mechanism.",
       "aHash": "234fb3ad4a8974268adb47564ffca0cfaa9d910aafcc28194fe63a8a1294e497"
     },
     {
       "id": 5107,
       "sourceGame": "costDirective",
-      "q": "Learning effects depend on cumulative output rather than what?",
+      "q": "Which quantity distinguishes a learning effect from a current-period scale effect?",
       "options": [
-        "Total cost divided by output",
-        "Buyer willingness to pay",
-        "The existence of fixed rent",
-        "Only current-period output"
+        "Only the current quantity ordered by one buyer",
+        "Only the number of workers employed today",
+        "Only the selling price charged today",
+        "Cumulative production experience rather than only current-period output"
       ],
       "tag": "learning_curve",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO7.6",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_learning_curve",
       "primarySkill": "learning_curve",
       "secondarySkills": [],
       "repairSkill": "learning_curve",
-      "commonError": "needs_basic_repair",
-      "feedback": "Learning curves reflect cost reductions from cumulative experience.",
-      "aHash": "a77ce45a4e5dd0d267e0ce5e9971acfcb3e646587a6c9ede2c5f3c12f9c12e66"
+      "commonError": "uses_current_output_instead_of_experience",
+      "feedback": "Cumulative output measures accumulated experience; current output measures production in one period.",
+      "aHash": "e7e81e3500a83220ad0cb0895d42fc8a5910d57b63dcb19819883ae17d7b19d7"
     }
   ],
   "economies_of_scope": [
@@ -17036,20 +15694,20 @@ const microSkillRepairPools = {
       "q": "Economies of scope exist when production is cheaper how?",
       "options": [
         "Together rather than separately",
-        "Separately rather than together",
-        "Only when output is zero",
-        "Only when price equals average cost"
+        "More of the same single product at lower unit cost",
+        "The same product becoming cheaper through experience",
+        "A larger buyer receiving an input-price discount"
       ],
       "tag": "economies_of_scope",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO7.7",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_economies_of_scope",
       "primarySkill": "economies_of_scope",
       "secondarySkills": [],
       "repairSkill": "economies_of_scope",
-      "commonError": "needs_basic_repair",
-      "feedback": "Scope economies mean joint production costs less than separate production.",
+      "commonError": "confuses_scope_with_scale",
+      "feedback": "For the same outputs and quality, joint production below the sum of separate costs is economies of scope.",
       "aHash": "6a9609898208ba0476f1a2943d4200e7751bcf035761c4d18c7543e9ded62483"
     },
     {
@@ -17063,15 +15721,15 @@ const microSkillRepairPools = {
         "$30,000"
       ],
       "tag": "economies_of_scope",
-      "type": "repair",
+      "type": "calculation",
       "objective": "LO7.7",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_economies_of_scope",
       "primarySkill": "economies_of_scope",
       "secondarySkills": [],
       "repairSkill": "economies_of_scope",
-      "commonError": "needs_basic_repair",
-      "feedback": "Scope economies mean joint production costs less than separate production.",
+      "commonError": "uses_joint_cost_as_saving",
+      "feedback": "Separate costs total 70000; subtract 60000 joint cost to get 10000 savings.",
       "aHash": "d7c2f19257f0c5f31dfe20885459483e1781e72e9d6103607b47d30bcf88314a"
     },
     {
@@ -17079,21 +15737,21 @@ const microSkillRepairPools = {
       "sourceGame": "costDirective",
       "q": "Scope economies usually come from sharing what?",
       "options": [
-        "Only one product’s fixed cost with no sharing",
-        "A price ceiling",
+        "Improving one product through cumulative repetition",
+        "Producing more units of one product only",
         "Inputs, facilities, information, or distribution across products",
-        "A sunk cost that cannot change"
+        "Ignoring all costs of shared resources because they are owned"
       ],
       "tag": "economies_of_scope",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO7.7",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_economies_of_scope",
       "primarySkill": "economies_of_scope",
       "secondarySkills": [],
       "repairSkill": "economies_of_scope",
-      "commonError": "needs_basic_repair",
-      "feedback": "Scope economies mean joint production costs less than separate production.",
+      "commonError": "assumes_sharing_eliminates_costs",
+      "feedback": "Sharing facilities or distribution can avoid duplicated resources across products, if joint costs are lower.",
       "aHash": "eb42acbfbbf2120970d1dd61ca32bfa8be662538c3e344e78b804cdbfbf79ff6"
     },
     {
@@ -17101,21 +15759,21 @@ const microSkillRepairPools = {
       "sourceGame": "costDirective",
       "q": "Scope differs from scale because it involves what?",
       "options": [
-        "Producing more of one product only",
-        "Changing only labor with capital fixed",
-        "Computing accounting profit",
+        "Accumulating experience on an unchanged production task",
+        "Producing more of the same product only",
+        "Adding labor while holding capital fixed",
         "Producing multiple products together"
       ],
       "tag": "economies_of_scope",
-      "type": "repair",
+      "type": "definition",
       "objective": "LO7.7",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_costDirective_economies_of_scope",
       "primarySkill": "economies_of_scope",
       "secondarySkills": [],
       "repairSkill": "economies_of_scope",
-      "commonError": "needs_basic_repair",
-      "feedback": "Scope economies mean joint production costs less than separate production.",
+      "commonError": "confuses_scope_and_scale",
+      "feedback": "Scope compares joint versus separate production of multiple products; scale concerns output expansion.",
       "aHash": "8a0165d1454032fe6134c08f8a5a0cdcb471937d360a4e4530417633f7fca54e"
     }
   ]
@@ -17128,88 +15786,44 @@ const microSkillBridgePools = {
       "sourceGame": "costDirective",
       "q": "A team blames low profits on “bad employees” before checking demand, price, cost, and incentives. What is the problem-solving flaw?",
       "options": [
-        "They used marginal analysis too carefully",
+        "They should select a replacement worker before examining demand",
         "They jumped to a cause before structuring the decision and evidence",
-        "They ignored only explicit accounting costs",
-        "They measured average cost instead of fixed cost"
+        "They should use only last month's payroll to choose a cause",
+        "They should assume any fall in profit proves inadequate effort"
       ],
       "tag": "problem_solving_steps",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO1.1",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_problem_solving_steps",
       "primarySkill": "problem_solving_steps",
       "secondarySkills": [],
       "repairSkill": "problem_solving_steps",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Start by structuring the decision before jumping to a fix.",
+      "commonError": "blames_before_collecting_evidence",
+      "feedback": "The team has selected a cause without comparing explanations or evidence; diagnose before choosing a personnel remedy.",
       "aHash": "b896fc764ff945dc8cadaa3161f1656de5c917698fe6bc941442b9b366a9910b"
-    },
-    {
-      "id": 6001,
-      "sourceGame": "costDirective",
-      "q": "A manager must choose between outsourcing, automation, or retraining. What should come before choosing one?",
-      "options": [
-        "Pick the cheapest-looking alternative immediately",
-        "Ask employees which option feels least disruptive",
-        "Define the objective, constraints, alternatives, and relevant information",
-        "Use last year’s budget as the only rule"
-      ],
-      "tag": "problem_solving_steps",
-      "type": "bridge",
-      "objective": "LO1.1",
-      "difficulty": "microSkillBridge",
-      "conceptCluster": "bridge_costDirective_problem_solving_steps",
-      "primarySkill": "problem_solving_steps",
-      "secondarySkills": [],
-      "repairSkill": "problem_solving_steps",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Start by structuring the decision before jumping to a fix.",
-      "aHash": "bdf95156ae22cd66db8b3d60e51c93afe3bfc8a1121401e7c74359387d0d355d"
     },
     {
       "id": 6002,
       "sourceGame": "costDirective",
       "q": "A production delay could be caused by machine downtime or supplier lateness. What should the manager do next?",
       "options": [
-        "Punish the production team immediately",
-        "Buy a new machine because it sounds decisive",
-        "Raise price to cover the delay cost",
+        "Choose whichever explanation requires the fastest action",
+        "Buy new equipment before checking downtime records",
+        "Replace the supplier before checking delivery records",
         "Collect evidence that distinguishes the possible causes"
       ],
       "tag": "problem_solving_steps",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO1.1",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_problem_solving_steps",
       "primarySkill": "problem_solving_steps",
       "secondarySkills": [],
       "repairSkill": "problem_solving_steps",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Start by structuring the decision before jumping to a fix.",
+      "commonError": "treats_possible_cause_as_established",
+      "feedback": "Machine downtime and late deliveries are competing explanations. Compare time-stamped evidence that can distinguish them.",
       "aHash": "ffe980cdc6319c15eee63e1bba178b04aacddf75178008ddf750affa6f3a00c4"
-    },
-    {
-      "id": 6003,
-      "sourceGame": "costDirective",
-      "q": "A policy fails twice, but the team keeps changing small details without naming the decision problem. What is missing?",
-      "options": [
-        "A clear diagnosis of the decision, objective, and constraints",
-        "A larger sunk cost to justify staying the course",
-        "A focus on average revenue only",
-        "A guarantee that all alternatives have equal cost"
-      ],
-      "tag": "problem_solving_steps",
-      "type": "bridge",
-      "objective": "LO1.1",
-      "difficulty": "microSkillBridge",
-      "conceptCluster": "bridge_costDirective_problem_solving_steps",
-      "primarySkill": "problem_solving_steps",
-      "secondarySkills": [],
-      "repairSkill": "problem_solving_steps",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Start by structuring the decision before jumping to a fix.",
-      "aHash": "371540695e2bff12dd028261b3e594948c84674ce6ce4a36c665705ce5fdf981"
     }
   ],
   "rational_actor_paradigm": [
@@ -17218,21 +15832,21 @@ const microSkillBridgePools = {
       "sourceGame": "costDirective",
       "q": "A driver speeds through routes because pay is based only on deliveries per hour. What does the rational-actor view predict?",
       "options": [
-        "The driver must be irrational because quality matters",
+        "The driver must be irrational whenever quality falls",
         "The driver responds to the measured reward even if service quality suffers",
-        "The firm has solved the incentive problem completely",
-        "The behavior proves fixed costs are too high"
+        "Accurate delivery counts guarantee the reward tracks total value",
+        "Giving service-quality reports alone necessarily removes the pay conflict"
       ],
       "tag": "rational_actor_paradigm",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO1.2",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_rational_actor_paradigm",
       "primarySkill": "rational_actor_paradigm",
       "secondarySkills": [],
       "repairSkill": "rational_actor_paradigm",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Rational actors respond to the payoffs they actually face.",
+      "commonError": "confuses_rational_with_firm_optimal",
+      "feedback": "A deliveries-per-hour reward can encourage speed at the expense of service quality; privately rewarded behavior need not maximize firm value.",
       "aHash": "f3dedf850ecb1c594a867a47cf8fd52d48f497e461594345f90bd4d2cd03f91e"
     },
     {
@@ -17240,21 +15854,21 @@ const microSkillBridgePools = {
       "sourceGame": "costDirective",
       "q": "A worker rejects overtime because the bonus is too small relative to lost family time. How should the choice be read?",
       "options": [
-        "As proof that workers never respond to pay",
-        "As a fixed-cost fallacy",
+        "As proof that personal time has no economic cost",
+        "As irrational whenever overtime brings any extra pay",
         "As a rational tradeoff using that worker’s costs and benefits",
-        "As an economies-of-scope problem"
+        "As evidence that the employer's benefit must enter the worker's payoff directly"
       ],
       "tag": "rational_actor_paradigm",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO1.2",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_rational_actor_paradigm",
       "primarySkill": "rational_actor_paradigm",
       "secondarySkills": [],
       "repairSkill": "rational_actor_paradigm",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Rational actors respond to the payoffs they actually face.",
+      "commonError": "excludes_nonmoney_cost",
+      "feedback": "Family time is a valued alternative. A bonus below that opportunity cost can rationally be declined.",
       "aHash": "d067b997717a823a7d13499fde7bb9541f5a924ec40fd6397b7b65d3b1e60034"
     },
     {
@@ -17262,21 +15876,21 @@ const microSkillBridgePools = {
       "sourceGame": "costDirective",
       "q": "A branch manager overorders inventory because stockouts are punished but excess inventory is ignored. What explains the behavior?",
       "options": [
-        "The manager forgot that average cost equals total cost divided by output",
-        "The firm is experiencing decreasing returns to scale",
-        "The branch is creating a value gap through trade",
+        "Sending demand information alone guarantees the manager will balance both costs",
+        "The manager must prefer waste independent of rewards",
+        "More inventory always increases total firm value",
         "The manager is rationally avoiding the penalty the system emphasizes"
       ],
       "tag": "rational_actor_paradigm",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO1.2",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_rational_actor_paradigm",
       "primarySkill": "rational_actor_paradigm",
       "secondarySkills": [],
       "repairSkill": "rational_actor_paradigm",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Rational actors respond to the payoffs they actually face.",
+      "commonError": "ignores_asymmetric_penalties",
+      "feedback": "Stockouts are penalized while excess stock is omitted, so the private reward can favor costly overordering.",
       "aHash": "21989ef5d22c798a4372df43289c3c4953a864db7a4c0df118564a26ac3e7baf"
     },
     {
@@ -17285,20 +15899,20 @@ const microSkillBridgePools = {
       "q": "A salesperson chooses low-margin deals because the commission rewards revenue, not margin. What is the managerial lesson?",
       "options": [
         "The salesperson’s rational choice follows the compensation metric",
-        "Salespeople cannot be modeled with incentives",
-        "The firm should ignore compensation design",
-        "Revenue and profit are always identical"
+        "A revenue reward necessarily maximizes firm profit",
+        "Rational workers must ignore the metric whenever margin is low",
+        "More precise revenue records alone eliminate the distortion"
       ],
       "tag": "rational_actor_paradigm",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO1.2",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_rational_actor_paradigm",
       "primarySkill": "rational_actor_paradigm",
       "secondarySkills": [],
       "repairSkill": "rational_actor_paradigm",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Rational actors respond to the payoffs they actually face.",
+      "commonError": "confuses_revenue_with_contribution_incentive",
+      "feedback": "Revenue commission can favor low-margin deals; the reward should reflect attributable value, not just receipts.",
       "aHash": "ac2f0fb7126d708a72c3358311e2027705a71c1e6efb4a1e745c154127fac9c7"
     }
   ],
@@ -17308,21 +15922,21 @@ const microSkillBridgePools = {
       "sourceGame": "costDirective",
       "q": "A call center rewards short calls, and agents start ending calls before problems are solved. What design failed?",
       "options": [
-        "The firm used implicit costs instead of explicit costs",
+        "A more precise call timer necessarily fixes quality",
         "The measure rewarded speed without measuring resolution quality",
-        "The firm reached minimum efficient scale",
-        "The agents misunderstood economies of scope"
+        "A larger speed bonus necessarily improves resolution",
+        "The existence of a stated measure guarantees aligned effort"
       ],
       "tag": "incentive_system_design",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO1.3",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_incentive_system_design",
       "primarySkill": "incentive_system_design",
       "secondarySkills": [],
       "repairSkill": "incentive_system_design",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Good incentives connect measurement, reward, and desired behavior.",
+      "commonError": "omits_resolution_quality",
+      "feedback": "Pay for short calls excludes whether the problem is resolved, so early termination can earn rewards.",
       "aHash": "b5fc66c70781772c5c8466f9212b0b02c2fec712b92d20e59287652d9b4fd132"
     },
     {
@@ -17330,21 +15944,21 @@ const microSkillBridgePools = {
       "sourceGame": "costDirective",
       "q": "A warehouse bonus counts boxes shipped but not picking errors. What improvement best fits incentive design?",
       "options": [
-        "Pay everyone the same no matter what happens",
-        "Ignore the errors because output increased",
+        "Treat all returns as outside the team's performance measure",
+        "Increase the bonus on boxes alone",
         "Add an accuracy measure so speed and quality are both rewarded",
-        "Use average cost as the only bonus formula"
+        "Count replacement shipments as additional successful output without checking errors"
       ],
       "tag": "incentive_system_design",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO1.3",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_incentive_system_design",
       "primarySkill": "incentive_system_design",
       "secondarySkills": [],
       "repairSkill": "incentive_system_design",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Good incentives connect measurement, reward, and desired behavior.",
+      "commonError": "ignores_quality_dimension",
+      "feedback": "Add verified picking accuracy while retaining shipment incentives; merely increasing the box-count reward strengthens the distortion.",
       "aHash": "11f5c107aadbef8c6c9ee4684050d77922060b114b0a3e964438bac2aa9bc669"
     },
     {
@@ -17352,21 +15966,21 @@ const microSkillBridgePools = {
       "sourceGame": "costDirective",
       "q": "A manager wants salespeople to sell profitable bundles, not just high revenue. Which metric is better?",
       "options": [
+        "Units shipped without regard to their contribution",
         "Gross revenue alone",
-        "Number of customer calls only",
-        "The size of last year’s commission pool",
+        "Number of customer contacts regardless of sales",
         "Contribution margin or profit-weighted sales"
       ],
       "tag": "incentive_system_design",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO1.3",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_incentive_system_design",
       "primarySkill": "incentive_system_design",
       "secondarySkills": [],
       "repairSkill": "incentive_system_design",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Good incentives connect measurement, reward, and desired behavior.",
+      "commonError": "uses_activity_as_value_proxy",
+      "feedback": "Contribution accounts for attributable costs as well as receipts. Calls and gross revenue do not measure profitable bundles.",
       "aHash": "4118b504e6fdba162d1c459c59e336505459d52d6e4c87931d1687c24386c484"
     },
     {
@@ -17375,20 +15989,20 @@ const microSkillBridgePools = {
       "q": "A performance plan is easy to understand but rewards the wrong behavior. What is the verdict?",
       "options": [
         "Clear incentives still fail when the metric is misaligned",
-        "Clear incentives are always enough",
-        "The plan fails only if fixed cost is high",
-        "The plan is a learning-curve issue"
+        "Clear wording guarantees the rewarded activity creates value",
+        "A larger bonus necessarily corrects a wrong metric",
+        "A metric is aligned whenever every worker can calculate it"
       ],
       "tag": "incentive_system_design",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO1.3",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_incentive_system_design",
       "primarySkill": "incentive_system_design",
       "secondarySkills": [],
       "repairSkill": "incentive_system_design",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Good incentives connect measurement, reward, and desired behavior.",
+      "commonError": "treats_clarity_as_alignment",
+      "feedback": "Employees can understand a rule perfectly and still be rewarded for behavior that reduces firm value.",
       "aHash": "178b76cf1c59bd1b0fc5486db3287d850ae4944962d0bedad7c11fc503d2e2c6"
     }
   ],
@@ -17398,21 +16012,21 @@ const microSkillBridgePools = {
       "sourceGame": "costDirective",
       "q": "Store managers know local demand, but headquarters sets identical prices everywhere. What design issue may appear?",
       "options": [
-        "The firm has no fixed costs",
+        "Central authority necessarily possesses all local demand facts",
         "Decision rights are separated from local information",
-        "Average cost must equal marginal cost",
-        "The problem is only post-investment hold-up"
+        "Identical prices establish that all branches face identical demand",
+        "A higher management level guarantees value-maximizing local prices"
       ],
       "tag": "organization_design_info_incentives",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO1.4",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_organization_design_info_incentives",
       "primarySkill": "organization_design_info_incentives",
       "secondarySkills": [],
       "repairSkill": "organization_design_info_incentives",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Decision rights, information, and incentives have to fit together.",
+      "commonError": "separates_local_information_from_authority",
+      "feedback": "Uniform headquarters pricing may disregard relevant local demand. The facts identify a possible information/authority gap, not automatic failure.",
       "aHash": "4353abb4df7a54148870cbf086f4a7306a9ecae2189656ce10c054f08c5eaa00"
     },
     {
@@ -17420,21 +16034,21 @@ const microSkillBridgePools = {
       "sourceGame": "costDirective",
       "q": "A branch can choose inventory but is evaluated only on revenue, not margin or stockouts. What is misaligned?",
       "options": [
-        "Decision rights and information are perfectly matched",
-        "The branch is solving a sunk-cost problem",
+        "Revenue measures every inventory opportunity cost",
+        "Delegating inventory authority guarantees aligned incentives",
         "Decision authority exists, but incentives do not match the firm objective",
-        "The issue is constant returns to scale"
+        "More authority alone corrects a revenue-only bonus"
       ],
       "tag": "organization_design_info_incentives",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO1.4",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_organization_design_info_incentives",
       "primarySkill": "organization_design_info_incentives",
       "secondarySkills": [],
       "repairSkill": "organization_design_info_incentives",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Decision rights, information, and incentives have to fit together.",
+      "commonError": "uses_revenue_only_inventory_measure",
+      "feedback": "Inventory authority without margin and availability consequences can reward choices inconsistent with firm value.",
       "aHash": "9531393e8bfa6916d8ec52168cb14a3cd3cf1f19cdcf43788fac2a6835b038c6"
     },
     {
@@ -17442,21 +16056,21 @@ const microSkillBridgePools = {
       "sourceGame": "costDirective",
       "q": "A firm gives engineers authority to choose materials but rewards purchasing only for lowest price. What conflict can result?",
       "options": [
-        "The engineers cannot calculate accounting profit",
-        "The firm must have economies of scope",
-        "Learning curves no longer matter",
+        "A lower invoice necessarily means the informed technical choice is inferior",
+        "More accurate invoice totals alone reconcile every quality tradeoff",
+        "Technical authority eliminates the effect of purchasing incentives",
         "The purchasing incentive may undermine the informed technical decision"
       ],
       "tag": "organization_design_info_incentives",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO1.4",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_organization_design_info_incentives",
       "primarySkill": "organization_design_info_incentives",
       "secondarySkills": [],
       "repairSkill": "organization_design_info_incentives",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Decision rights, information, and incentives have to fit together.",
+      "commonError": "creates_conflicting_department_metrics",
+      "feedback": "Technical specifications and purchasing rewards can conflict if only invoice price is rewarded.",
       "aHash": "c3b274b29d85db26c5ffeec982226f07d03db9eee9afdf203b57ef3e81019e29"
     },
     {
@@ -17465,20 +16079,20 @@ const microSkillBridgePools = {
       "q": "Which change best improves organization design for local pricing?",
       "options": [
         "Let local managers use local demand information and judge them on profit contribution",
-        "Move all pricing to the person farthest from customers",
-        "Reward units sold while ignoring margins",
-        "Base prices only on last year’s fixed rent"
+        "Delegate prices while retaining volume-only rewards",
+        "Centralize decisions without transmitting local demand information",
+        "Give demand reports but reward only the number of discounts"
       ],
       "tag": "organization_design_info_incentives",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO1.4",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_organization_design_info_incentives",
       "primarySkill": "organization_design_info_incentives",
       "secondarySkills": [],
       "repairSkill": "organization_design_info_incentives",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Decision rights, information, and incentives have to fit together.",
+      "commonError": "ignores_profit_alignment",
+      "feedback": "Local pricing needs demand information, decision authority and incentives reflecting contribution, including attributable costs.",
       "aHash": "8b7463b8413b37246b7798a0c860940921c0cd5cfc64a904e552a8e819856e43"
     }
   ],
@@ -17488,21 +16102,21 @@ const microSkillBridgePools = {
       "sourceGame": "costDirective",
       "q": "Profits fall after a new sales bonus. Which diagnosis question comes first?",
       "options": [
-        "Should the firm ignore behavior and cut rent?",
+        "Increase the same sales bonus before studying the changed behavior",
         "Did the bonus change what salespeople had reason to sell?",
-        "Which employee has the worst personality?",
-        "Can accounting profit be computed without revenue?"
+        "Rank salespeople by personality before examining deal margins",
+        "Treat the fall in profit as proof the team needs more sales calls"
       ],
       "tag": "managerial_problem_diagnosis",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO1.5",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_managerial_problem_diagnosis",
       "primarySkill": "managerial_problem_diagnosis",
       "secondarySkills": [],
       "repairSkill": "managerial_problem_diagnosis",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Diagnose the decision environment before prescribing a fix.",
+      "commonError": "assumes_bonus_improves_every_outcome",
+      "feedback": "Check whether the new bonus encouraged a different mix of deals before assuming a demand or staffing explanation.",
       "aHash": "8f9924ae8611448a2233dc6f23e017e7ea2a916482f9ee644899f70d6e126868"
     },
     {
@@ -17510,112 +16124,68 @@ const microSkillBridgePools = {
       "sourceGame": "costDirective",
       "q": "A delivery unit misses deadlines after route authority is moved to headquarters. What should be diagnosed?",
       "options": [
-        "Whether all variable costs became fixed",
-        "Whether scope economies vanished overnight",
+        "Whether more detailed payroll data can replace route information",
+        "Whether the central decision maker's higher title proves better knowledge",
         "Whether decision rights moved away from useful local information",
-        "Whether price should equal average cost"
+        "Whether all branches should be given the same route regardless of conditions"
       ],
       "tag": "managerial_problem_diagnosis",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO1.5",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_managerial_problem_diagnosis",
       "primarySkill": "managerial_problem_diagnosis",
       "secondarySkills": [],
       "repairSkill": "managerial_problem_diagnosis",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Diagnose the decision environment before prescribing a fix.",
+      "commonError": "ignores_information_lost_through_centralization",
+      "feedback": "Moving route authority can separate decisions from local traffic and customer information; inspect that mechanism.",
       "aHash": "e1eed0c4914e0b69fbceef126cfcd7475a6885533729f7b2dac164f235d8064c"
-    },
-    {
-      "id": 6018,
-      "sourceGame": "costDirective",
-      "q": "A product line misses targets because teams chase volume over margin. What question fits the managerial approach?",
-      "options": [
-        "Which sunk cost should be defended?",
-        "How many units were produced in 2019?",
-        "Why is every employee irrational?",
-        "What metric told teams that volume mattered more than margin?"
-      ],
-      "tag": "managerial_problem_diagnosis",
-      "type": "bridge",
-      "objective": "LO1.5",
-      "difficulty": "microSkillBridge",
-      "conceptCluster": "bridge_costDirective_managerial_problem_diagnosis",
-      "primarySkill": "managerial_problem_diagnosis",
-      "secondarySkills": [],
-      "repairSkill": "managerial_problem_diagnosis",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Diagnose the decision environment before prescribing a fix.",
-      "aHash": "84093971453740a2d79f5d090c50bd560693fb406ef936831f122d4bf659af6a"
-    },
-    {
-      "id": 6019,
-      "sourceGame": "costDirective",
-      "q": "A repeated problem survives three “quick fixes.” What diagnosis step was probably skipped?",
-      "options": [
-        "Identifying the actual decision maker, objective, constraints, and incentives",
-        "Calculating only average fixed cost",
-        "Raising output until average cost rises",
-        "Choosing the loudest proposed solution"
-      ],
-      "tag": "managerial_problem_diagnosis",
-      "type": "bridge",
-      "objective": "LO1.5",
-      "difficulty": "microSkillBridge",
-      "conceptCluster": "bridge_costDirective_managerial_problem_diagnosis",
-      "primarySkill": "managerial_problem_diagnosis",
-      "secondarySkills": [],
-      "repairSkill": "managerial_problem_diagnosis",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Diagnose the decision environment before prescribing a fix.",
-      "aHash": "f76d7cfea00b8ee6f54776688c2705cd8a60889a919c3de0bdbb56d6bbc93c0b"
     }
   ],
   "voluntary_transactions_surplus": [
     {
       "id": 6020,
       "sourceGame": "costDirective",
-      "q": "A buyer values a license at $12,000 and the seller values keeping it at $8,500. What is the potential surplus?",
+      "q": "A license is worth $8,500 to its owner and $12,000 to a buyer. With no other costs, which proposed price leaves both strictly better off?",
       "options": [
-        "$8,500",
-        "$3,500",
-        "$12,000",
-        "$20,500"
+        "$8,000",
+        "$10,000",
+        "$12,500",
+        "$13,000"
       ],
       "tag": "voluntary_transactions_surplus",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO2.1",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_voluntary_transactions_surplus",
       "primarySkill": "voluntary_transactions_surplus",
       "secondarySkills": [],
       "repairSkill": "voluntary_transactions_surplus",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Wealth is created when assets move to higher-valued uses.",
-      "aHash": "f99516d0b5ecc4dd4d25f852563bff68064313f65e99cecb1a187b785ca7e376"
+      "commonError": "confuses_feasible_price_with_total_surplus",
+      "feedback": "A price strictly between $8,500 and $12,000 shares the $3,500 gain. At $10,000 the buyer gains $2,000 and the seller $1,500.",
+      "aHash": "d7c2f19257f0c5f31dfe20885459483e1781e72e9d6103607b47d30bcf88314a"
     },
     {
       "id": 6021,
       "sourceGame": "costDirective",
-      "q": "A buyer values service at $900 and the provider’s opportunity cost is $640. A $310 permit fee is required. What is the net surplus?",
+      "q": "A buyer values service at $900, and the provider’s opportunity cost is $640. A $310 permit fee must be paid to government only if they trade. What is their combined private gain after the fee?",
       "options": [
-        "$260, so the trade is unaffected",
-        "$950, so both sides gain automatically",
-        "-$50, so the fee blocks the wealth-creating trade",
-        "$310, because the fee is the surplus"
+        "$310, because the fee equals their gains",
+        "$260, because any government fee can be ignored privately",
+        "-$50, so no price leaves both privately better off",
+        "$570, because the fee adds to the buyer’s value"
       ],
       "tag": "voluntary_transactions_surplus",
-      "type": "bridge",
+      "type": "calculation",
       "objective": "LO2.1",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_voluntary_transactions_surplus",
       "primarySkill": "voluntary_transactions_surplus",
       "secondarySkills": [],
       "repairSkill": "voluntary_transactions_surplus",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Wealth is created when assets move to higher-valued uses.",
-      "aHash": "2850b88dff83ac95753ef80a08357069f96f4742bba3b4218c5ea820cfc6466f"
+      "commonError": "confuses_fee_transfer_with_resource_cost",
+      "feedback": "Private surplus is 900 − 640 − 310 = − 50, so no negotiated price can benefit both parties after the fee. A fee paid to government is a transfer, not itself a 310 resource loss.",
+      "aHash": "ce736da7d7f636df1bd681f4d7aa0222d3a9b358ee9f033f939319d447faa1b6"
     },
     {
       "id": 6022,
@@ -17628,15 +16198,15 @@ const microSkillBridgePools = {
         "$9,000"
       ],
       "tag": "voluntary_transactions_surplus",
-      "type": "bridge",
+      "type": "calculation",
       "objective": "LO2.1",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_voluntary_transactions_surplus",
       "primarySkill": "voluntary_transactions_surplus",
       "secondarySkills": [],
       "repairSkill": "voluntary_transactions_surplus",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Wealth is created when assets move to higher-valued uses.",
+      "commonError": "ignores_movement_cost",
+      "feedback": "Net gains are 53000 − 40000 − 4000 = 9000; the moving resources must be deducted, unlike the payment between firms.",
       "aHash": "1c7c5e17361e9ef8e222ef46a6ed4c8589cc8ad5cc02847797174ac099b63bdb"
     },
     {
@@ -17650,15 +16220,15 @@ const microSkillBridgePools = {
         "$70"
       ],
       "tag": "voluntary_transactions_surplus",
-      "type": "bridge",
+      "type": "calculation",
       "objective": "LO2.1",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_voluntary_transactions_surplus",
       "primarySkill": "voluntary_transactions_surplus",
       "secondarySkills": [],
       "repairSkill": "voluntary_transactions_surplus",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Wealth is created when assets move to higher-valued uses.",
+      "commonError": "uses_one_party_surplus_as_total",
+      "feedback": "Buyer gain 30 plus seller gain 25 totals 55; the price 70 divides the value 100 minus cost 45.",
       "aHash": "5b2cea7a812abc42d624ae2d295c7f8769bed7a83a932d4682056d043cd45c6d"
     }
   ],
@@ -17666,23 +16236,23 @@ const microSkillBridgePools = {
     {
       "id": 6024,
       "sourceGame": "costDirective",
-      "q": "Two firms could create $30,000 by trading a permit, but legal approval costs $35,000. What is the likely result?",
+      "q": "Two firms have $30,000 potential gains from transferring a permit, but obtaining approval would use $35,000 in legal-work resources. None is incurred yet. What is the result?",
       "options": [
-        "The trade creates $65,000 of net surplus",
+        "The transfer creates 65000 net gains by adding approval cost",
         "The barrier prevents a value-increasing transfer",
-        "The permit has no opportunity cost",
-        "The firms have economies of scope"
+        "The 30000 gross gap guarantees a worthwhile transfer",
+        "The approval cost is irrelevant merely because it is a fixed fee"
       ],
       "tag": "barriers_to_trade",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO2.2",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_barriers_to_trade",
       "primarySkill": "barriers_to_trade",
       "secondarySkills": [],
       "repairSkill": "barriers_to_trade",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Transaction costs can block trades that would otherwise create surplus.",
+      "commonError": "ignores_avoidable_approval_cost",
+      "feedback": "If approval uses 35000 of real resources, it exceeds the 30000 gross gain; the net transfer opportunity is − 5000.",
       "aHash": "d66b26a1c26b24e7bb38fb4e6ba6bcd0a0788b978905a9b3115acc36a9a6bfa2"
     },
     {
@@ -17690,66 +16260,70 @@ const microSkillBridgePools = {
       "sourceGame": "costDirective",
       "q": "A supplier and buyer both benefit from a contract, but quality is hard to verify and disputes are costly. What barrier matters?",
       "options": [
-        "Minimum efficient scale only",
-        "The fixed-cost fallacy only",
+        "Only the buyer's previous spending",
+        "Only the supplier's original equipment purchase",
         "Enforcement and monitoring costs",
-        "Accounting profit only"
+        "The negotiated payment itself, regardless of verification difficulty"
       ],
       "tag": "barriers_to_trade",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO2.2",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_barriers_to_trade",
       "primarySkill": "barriers_to_trade",
       "secondarySkills": [],
       "repairSkill": "barriers_to_trade",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Transaction costs can block trades that would otherwise create surplus.",
+      "commonError": "ignores_verification_cost",
+      "feedback": "Verifying quality and enforcing commitments can use resources and prevent otherwise valuable contracting.",
       "aHash": "da26f97856814b4d86360c764569b97cbaa3a5be8f2125adc199029927e187c3"
     },
     {
       "id": 6026,
       "sourceGame": "costDirective",
-      "q": "A buyer cannot find sellers who have the needed asset, even though gains from trade exist. What cost is blocking exchange?",
+      "q": "Before tax, a good sold for $20. After tax, buyers pay $23 and sellers receive $18; 80 units are sold. What are the buyer burden and tax revenue?",
       "options": [
-        "Marginal revenue",
-        "Average fixed cost",
-        "Learning cost from experience",
-        "Search cost"
+        "$23 per unit; $80 revenue",
+        "$5 per unit; $400 revenue",
+        "$3 per unit; $240 revenue",
+        "$3 per unit; $400 revenue"
       ],
-      "tag": "barriers_to_trade",
-      "type": "bridge",
+      "tag": "tax_wedge_and_trade",
+      "type": "calculation",
       "objective": "LO2.2",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_barriers_to_trade",
-      "primarySkill": "barriers_to_trade",
-      "secondarySkills": [],
-      "repairSkill": "barriers_to_trade",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Transaction costs can block trades that would otherwise create surplus.",
-      "aHash": "ca392964934974bcf9bd3adcdcfd8b1b8e831a732f5d218fbb40f08a069bd9ff"
+      "primarySkill": "tax_wedge_and_trade",
+      "secondarySkills": [
+        "barriers_to_trade"
+      ],
+      "repairSkill": "tax_wedge_and_trade",
+      "commonError": "confuses_partial_burden_with_total_tax",
+      "feedback": "Buyer burden is 23 − 20 = 3. The wedge 23 − 18 = 5 times 80 actual sales yields 400 revenue.",
+      "aHash": "1417b5d3126d2e924bec8a90d473b043c69f747f2d4f3835de6fd05d1a8fb421"
     },
     {
       "id": 6027,
       "sourceGame": "costDirective",
-      "q": "A price control creates a shortage even though many buyers value apartments above suppliers’ costs. What does it block?",
+      "q": "A price floor leads to 140 units offered and 100 requested. A separate price ceiling gives 90 requested and 70 offered. Which pair is correct?",
       "options": [
-        "Mutually beneficial exchanges between some landlords and tenants",
-        "All transaction costs forever",
-        "The definition of economic profit",
-        "The existence of variable cost"
+        "Floor surplus 40; ceiling shortage 20",
+        "Floor shortage 40; ceiling surplus 20",
+        "Both markets have shortages",
+        "Both trade their larger stated quantity"
       ],
-      "tag": "barriers_to_trade",
-      "type": "bridge",
+      "tag": "price_control_quantity_gap",
+      "type": "interpretation",
       "objective": "LO2.2",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_barriers_to_trade",
-      "primarySkill": "barriers_to_trade",
-      "secondarySkills": [],
-      "repairSkill": "barriers_to_trade",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Transaction costs can block trades that would otherwise create surplus.",
-      "aHash": "a742058d7bb4c2fbc8a63410232da58c682a61f920b587ff729dc33556fed3e0"
+      "primarySkill": "price_control_quantity_gap",
+      "secondarySkills": [
+        "barriers_to_trade"
+      ],
+      "repairSkill": "price_control_quantity_gap",
+      "commonError": "confuses_shortage_with_surplus",
+      "feedback": "For the floor, offered minus requested is 40. For the ceiling, requested minus offered is 20. These gaps do not establish completed matching.",
+      "aHash": "0cb522248ed36866bd6f7ed0f7d89c9ee9f2cf27f5f5ae98773a19c4f6cd0fc0"
     }
   ],
   "efficiency_business_value": [
@@ -17758,21 +16332,21 @@ const microSkillBridgePools = {
       "sourceGame": "costDirective",
       "q": "A warehouse is used for low-margin storage but could support high-margin fulfillment. What is the efficiency question?",
       "options": [
-        "Which use has the oldest lease payment",
+        "Which use has the larger gross receipts regardless of costs",
         "Where the warehouse creates more value after relevant costs",
-        "Which use makes fixed cost disappear",
-        "Which use has the same accounting label"
+        "Which use best recovers the original building price",
+        "Which department can absorb the largest allocated charge"
       ],
       "tag": "efficiency_business_value",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO2.3",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_efficiency_business_value",
       "primarySkill": "efficiency_business_value",
       "secondarySkills": [],
       "repairSkill": "efficiency_business_value",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Efficiency means resources are used where they create the most value.",
+      "commonError": "compares_gross_revenue_not_net_use_value",
+      "feedback": "Compare the value created by each feasible use after its relevant costs, not only margin labels or historical lease cost.",
       "aHash": "289a18b844a5597f1642bc775b825bf692d5aaca37229e64f194a7d1969cf226"
     },
     {
@@ -17786,15 +16360,15 @@ const microSkillBridgePools = {
         "$900"
       ],
       "tag": "efficiency_business_value",
-      "type": "bridge",
+      "type": "calculation",
       "objective": "LO2.3",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_efficiency_business_value",
       "primarySkill": "efficiency_business_value",
       "secondarySkills": [],
       "repairSkill": "efficiency_business_value",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Efficiency means resources are used where they create the most value.",
+      "commonError": "ignores_current_use_and_moving_cost",
+      "feedback": "Net gain is 6500 − 4000 − 900 = 1600; subtract both current-use value and moving cost.",
       "aHash": "17e2a167586551942e8f6133b9bc7dbc5e57b87e8c157dcec2bd13ab42c55420"
     },
     {
@@ -17802,21 +16376,21 @@ const microSkillBridgePools = {
       "sourceGame": "costDirective",
       "q": "A manager says an idle room is “free” because rent is paid. What efficiency issue is being ignored?",
       "options": [
-        "The room has no possible opportunity cost",
-        "The rent should always decide the next use",
-        "Average cost must rise",
+        "Unused space has no value even when someone offers to rent it",
+        "Paid rent makes every use equally valuable",
+        "The room's original purchase price must decide its next use",
         "The room may have a higher-valued alternative use"
       ],
       "tag": "efficiency_business_value",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO2.3",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_efficiency_business_value",
       "primarySkill": "efficiency_business_value",
       "secondarySkills": [],
       "repairSkill": "efficiency_business_value",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Efficiency means resources are used where they create the most value.",
+      "commonError": "treats_paid_space_as_free",
+      "feedback": "Paid rent is common, but a valuable alternative use can make room capacity costly at the margin.",
       "aHash": "b68fa56927041487e53c90bfff92d7caf187bed56c66c77b9cc223cb5293118b"
     },
     {
@@ -17825,20 +16399,20 @@ const microSkillBridgePools = {
       "q": "Which choice best fits efficiency?",
       "options": [
         "Assign a scarce specialist to the project where her time creates the highest net value",
-        "Assign her to the oldest project because it already spent money",
-        "Assign her randomly to prove fairness",
-        "Assign her to the project with the lowest revenue only"
+        "Choose the project with the largest revenue regardless of extra costs",
+        "Choose the project with the largest past spending",
+        "Choose the longest task to keep the specialist occupied"
       ],
       "tag": "efficiency_business_value",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO2.3",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_efficiency_business_value",
       "primarySkill": "efficiency_business_value",
       "secondarySkills": [],
       "repairSkill": "efficiency_business_value",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Efficiency means resources are used where they create the most value.",
+      "commonError": "allocates_by_activity_not_value",
+      "feedback": "Assign the scarce time to its highest net-value feasible use, counting costs and benefits consistently.",
       "aHash": "5e02d6e4e3b8500338e4ccb8765e86acc2d110ee2ec9e343824f2767f59435e5"
     }
   ],
@@ -17854,15 +16428,15 @@ const microSkillBridgePools = {
         "$37,000"
       ],
       "tag": "value_gap_opportunities",
-      "type": "bridge",
+      "type": "calculation",
       "objective": "LO2.4",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_value_gap_opportunities",
       "primarySkill": "value_gap_opportunities",
       "secondarySkills": [],
       "repairSkill": "value_gap_opportunities",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "A money-making opportunity comes from a value gap that can be captured.",
+      "commonError": "omits_transfer_cost",
+      "feedback": "22000 − 15000 − 3000 = 4000; the gross 7000 gap is reduced by moving cost.",
       "aHash": "62f94a766e91456302c1bd8335149ca4073344830e5a0e80fb35b688f0fe8218"
     },
     {
@@ -17870,27 +16444,27 @@ const microSkillBridgePools = {
       "sourceGame": "costDirective",
       "q": "A firm notices customers value faster delivery more than the added delivery cost. What is the opportunity?",
       "options": [
-        "Ignore the gap because revenue is not fixed cost",
-        "Choose the slower option because it is current practice",
+        "Treat the full customer value as profit without subtracting delivery cost",
+        "Charge above every customer's value to capture the full gap",
         "Capture the value gap between customer value and incremental cost",
-        "Treat the added delivery cost as sunk"
+        "Reject any service whose incremental cost is positive"
       ],
       "tag": "value_gap_opportunities",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO2.4",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_value_gap_opportunities",
       "primarySkill": "value_gap_opportunities",
       "secondarySkills": [],
       "repairSkill": "value_gap_opportunities",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "A money-making opportunity comes from a value gap that can be captured.",
+      "commonError": "fails_to_capture_value_gap",
+      "feedback": "If customer value exceeds added cost, a feasible price can let both parties gain; price and additional costs still must be checked.",
       "aHash": "31a0a8e5cc30b704164435eb69690d8d6ca57b9e12a720c4cbf8ddbce5845955"
     },
     {
       "id": 6034,
       "sourceGame": "costDirective",
-      "q": "A vacant lot creates $2,000 value as storage and $9,000 as paid parking, with $1,500 setup cost. What is the net gain?",
+      "q": "Over the same one-year period, a lot provides $2,000 net value as storage or $9,000 as parking before an additional $1,500 setup cost. What is the gain from switching to parking?",
       "options": [
         "$7,000",
         "$10,500",
@@ -17898,15 +16472,15 @@ const microSkillBridgePools = {
         "$5,500"
       ],
       "tag": "value_gap_opportunities",
-      "type": "bridge",
+      "type": "calculation",
       "objective": "LO2.4",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_value_gap_opportunities",
       "primarySkill": "value_gap_opportunities",
       "secondarySkills": [],
       "repairSkill": "value_gap_opportunities",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "A money-making opportunity comes from a value gap that can be captured.",
+      "commonError": "ignores_current_use_value",
+      "feedback": "Net gain is 9000 − 2000 − 1500 = 5500 assuming these are comparable-period net values and setup is additional.",
       "aHash": "fa2526aa85e4731b5b4fa3c0f005349023c7bb6c259fef6a73953b2aad058525"
     },
     {
@@ -17915,20 +16489,20 @@ const microSkillBridgePools = {
       "q": "Why do entrepreneurs look for assets in low-valued uses?",
       "options": [
         "Moving them can create surplus if transaction costs are low enough",
-        "Low-valued assets never have opportunity costs",
-        "They guarantee decreasing returns to scale",
-        "They eliminate the need for contracts"
+        "A low-valued current use has zero opportunity cost by definition",
+        "Any higher gross value guarantees profitable reallocation",
+        "The entire receiving use's value is newly created surplus"
       ],
       "tag": "value_gap_opportunities",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO2.4",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_value_gap_opportunities",
       "primarySkill": "value_gap_opportunities",
       "secondarySkills": [],
       "repairSkill": "value_gap_opportunities",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "A money-making opportunity comes from a value gap that can be captured.",
+      "commonError": "ignores_transaction_cost_threshold",
+      "feedback": "Reallocation creates net gains only when the higher use value exceeds the sacrificed use and transfer costs.",
       "aHash": "7f6bc4e41674dcb4120fc3aa8771c46de51bdd2f3bce2ed875516f3623009a82"
     }
   ],
@@ -17938,21 +16512,21 @@ const microSkillBridgePools = {
       "sourceGame": "costDirective",
       "q": "A firm brings design, production, and sales into one team to reduce delays and handoff disputes. What wealth-creation logic fits?",
       "options": [
-        "The firm has made all fixed costs relevant",
+        "Putting teams together guarantees zero communication cost",
         "The organization lowers coordination and transaction costs",
-        "The firm has ended opportunity cost",
-        "The firm has guaranteed constant returns to scale"
+        "More hierarchy necessarily raises net value",
+        "Integration makes the previous use of staff time irrelevant"
       ],
       "tag": "organization_wealth_creation",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO2.5",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_organization_wealth_creation",
       "primarySkill": "organization_wealth_creation",
       "secondarySkills": [],
       "repairSkill": "organization_wealth_creation",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Organizations can create wealth by lowering transaction and coordination costs.",
+      "commonError": "assumes_integration_is_costless",
+      "feedback": "Joint teams may reduce costly handoffs and disputes; gains must still exceed any new coordination costs.",
       "aHash": "7509507f7b89fe9ab939b27d241ad62ee9349c040762e72a8dee18035145a2bb"
     },
     {
@@ -17960,21 +16534,21 @@ const microSkillBridgePools = {
       "sourceGame": "costDirective",
       "q": "A marketplace platform makes it easier for buyers and sellers to find each other and enforce ratings. How does it create wealth?",
       "options": [
-        "It raises transaction costs to stop trade",
-        "It makes price irrelevant",
+        "Higher prices alone establish greater wealth creation",
+        "Every platform fee is itself newly created total surplus",
         "It reduces search and trust costs that block exchange",
-        "It converts all costs into sunk costs"
+        "Ratings remove the need to consider resource costs of the platform"
       ],
       "tag": "organization_wealth_creation",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO2.5",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_organization_wealth_creation",
       "primarySkill": "organization_wealth_creation",
       "secondarySkills": [],
       "repairSkill": "organization_wealth_creation",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Organizations can create wealth by lowering transaction and coordination costs.",
+      "commonError": "ignores_market_matching_cost",
+      "feedback": "A platform can lower search and verification frictions, enabling exchanges whose gains previously did not cover those costs.",
       "aHash": "80b7284d4ba10d64199bb43b1cb697afafc8084ec1b420c96cfd00ecf3fe45d9"
     },
     {
@@ -17982,21 +16556,21 @@ const microSkillBridgePools = {
       "sourceGame": "costDirective",
       "q": "A company gives local stores inventory authority because they know local demand. What value can this create?",
       "options": [
-        "Higher sunk cost by design",
-        "Lower value from every exchange",
-        "No need for performance measures",
+        "More local authority always requires keeping more inventory",
+        "Delegation guarantees profit even with conflicting rewards",
+        "Local information makes stockholding costs irrelevant",
         "Better use of local information in decisions"
       ],
       "tag": "organization_wealth_creation",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO2.5",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_organization_wealth_creation",
       "primarySkill": "organization_wealth_creation",
       "secondarySkills": [],
       "repairSkill": "organization_wealth_creation",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Organizations can create wealth by lowering transaction and coordination costs.",
+      "commonError": "delegates_without_information",
+      "feedback": "Local authority can let useful local demand information affect inventory choices; incentives still need alignment.",
       "aHash": "0b0539005afee8835712b6c74ead47e826fc3a80f09f18adf46b9015d2e7498d"
     },
     {
@@ -18005,20 +16579,20 @@ const microSkillBridgePools = {
       "q": "A firm reorganizes so engineers and purchasing jointly choose suppliers. Why might that create wealth?",
       "options": [
         "It combines technical information with cost information for better sourcing",
-        "It prevents all renegotiation forever",
-        "It makes supplier quality impossible to measure",
-        "It treats every purchase as fixed cost"
+        "The lowest invoice automatically captures engineering quality needs",
+        "Joint decisions eliminate all future supplier uncertainty",
+        "A larger committee guarantees better decisions regardless of its costs"
       ],
       "tag": "organization_wealth_creation",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO2.5",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_organization_wealth_creation",
       "primarySkill": "organization_wealth_creation",
       "secondarySkills": [],
       "repairSkill": "organization_wealth_creation",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Organizations can create wealth by lowering transaction and coordination costs.",
+      "commonError": "separates_quality_and_cost_information",
+      "feedback": "Combining technical and cost information may improve sourcing; joint choice should still count coordination costs.",
       "aHash": "fbc814cf7bd71a7cee5b9e2ec0497c3a745fce15e40ce60b960abcc09ea6cf04"
     }
   ],
@@ -18026,7 +16600,7 @@ const microSkillBridgePools = {
     {
       "id": 6040,
       "sourceGame": "costDirective",
-      "q": "A café owner can use a patio for seating worth $1,500 per month or rent it to another vendor for $1,100. If she uses it for seating, what is the opportunity cost?",
+      "q": "A café owner can use a patio for seating worth $1,500 per month or rent it to another vendor for $1,100 net. If she uses it for seating, what is the opportunity cost?",
       "options": [
         "$1,500",
         "$1,100",
@@ -18034,60 +16608,38 @@ const microSkillBridgePools = {
         "$2,600"
       ],
       "tag": "opportunity_cost",
-      "type": "bridge",
+      "type": "calculation",
       "objective": "LO3.1",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_opportunity_cost",
       "primarySkill": "opportunity_cost",
       "secondarySkills": [],
       "repairSkill": "opportunity_cost",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Opportunity cost is the value of the best alternative forgone.",
+      "commonError": "uses_chosen_value_as_opportunity_cost",
+      "feedback": "The forgone net rental value is 1100, not the 1500 seating return or 400 advantage.",
       "aHash": "dc1781123985298d61e6f3fa734950549099dac24e15dc4397e405ec9fa884e9"
-    },
-    {
-      "id": 6041,
-      "sourceGame": "costDirective",
-      "q": "A worker chooses Shift A paying $180 over Shift B paying $140. What is the opportunity cost of choosing Shift A?",
-      "options": [
-        "$180",
-        "$40",
-        "$140",
-        "$320"
-      ],
-      "tag": "opportunity_cost",
-      "type": "bridge",
-      "objective": "LO3.1",
-      "difficulty": "microSkillBridge",
-      "conceptCluster": "bridge_costDirective_opportunity_cost",
-      "primarySkill": "opportunity_cost",
-      "secondarySkills": [],
-      "repairSkill": "opportunity_cost",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Opportunity cost is the value of the best alternative forgone.",
-      "aHash": "6b0bb84f258e77b07ffe326e3725b507e0b8b8e1227ca05360f78b4ff98b1142"
     },
     {
       "id": 6042,
       "sourceGame": "costDirective",
-      "q": "A machine hour can earn $600 on Job A or $475 on Job B. If used for Job A, what cost should be counted?",
+      "q": "A machine hour yields $600 net contribution on Job A. Job B needs half an hour and yields $240; two B jobs are available. If the full hour is used for A, what is its opportunity cost?",
       "options": [
+        "$120",
+        "$240",
         "$600",
-        "$125",
-        "$1,075",
-        "$475"
+        "$480"
       ],
       "tag": "opportunity_cost",
-      "type": "bridge",
+      "type": "calculation",
       "objective": "LO3.1",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_opportunity_cost",
       "primarySkill": "opportunity_cost",
       "secondarySkills": [],
       "repairSkill": "opportunity_cost",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Opportunity cost is the value of the best alternative forgone.",
-      "aHash": "6556c237bc0eb0a6b6ef21fc970f940f4f240d64fa6c889954a2d4a566f89260"
+      "commonError": "ignores_feasible_combination",
+      "feedback": "The best alternative is two B jobs, earning 2 × $240 = $480. The $120 advantage of A is not its opportunity cost.",
+      "aHash": "2fa3ce0ad31ce6bfa977b82d3e60cb2f8ce3870ad51c088ca732efed3def3a02"
     },
     {
       "id": 6043,
@@ -18100,15 +16652,15 @@ const microSkillBridgePools = {
         "A variable cost per unit sold"
       ],
       "tag": "opportunity_cost",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO3.1",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_opportunity_cost",
       "primarySkill": "opportunity_cost",
       "secondarySkills": [],
       "repairSkill": "opportunity_cost",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Opportunity cost is the value of the best alternative forgone.",
+      "commonError": "ignores_owner_labor_alternative",
+      "feedback": "The forgone 70000 job is an implicit opportunity cost even without a payroll payment to the owner.",
       "aHash": "4a610d3f0fbdd2ca0181bbae518b57f72db307a45700f33311093e165c827277"
     }
   ],
@@ -18124,15 +16676,15 @@ const microSkillBridgePools = {
         "-$280"
       ],
       "tag": "relevant_costs_benefits",
-      "type": "bridge",
+      "type": "calculation",
       "objective": "LO3.2",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_relevant_costs_benefits",
       "primarySkill": "relevant_costs_benefits",
       "secondarySkills": [],
       "repairSkill": "relevant_costs_benefits",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Relevant items are the costs and benefits that change because of the decision.",
+      "commonError": "includes_unchanged_fixed_cost",
+      "feedback": "Incremental profit is 900 − 620 = 280. Unchanged rent cancels from the alternatives.",
       "aHash": "b7494930a919b3b4b70082ef7174d84be48c4403310d5d4d0286351dd1008ac9"
     },
     {
@@ -18146,21 +16698,21 @@ const microSkillBridgePools = {
         "Last year’s advertising campaign"
       ],
       "tag": "relevant_costs_benefits",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO3.2",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_relevant_costs_benefits",
       "primarySkill": "relevant_costs_benefits",
       "secondarySkills": [],
       "repairSkill": "relevant_costs_benefits",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Relevant items are the costs and benefits that change because of the decision.",
+      "commonError": "omits_avoidable_overtime",
+      "feedback": "Rush-order overtime occurs only with the order. Unchanged rent and sunk design/advertising are not caused by it.",
       "aHash": "45aabd38340cc43f29cd5c88c7d2c22e927768b62531fa3de92a69fb4c3e8347"
     },
     {
       "id": 6046,
       "sourceGame": "costDirective",
-      "q": "A project uses materials already in inventory that could be sold for $2,000. What is relevant?",
+      "q": "A project uses materials already in inventory that could be sold for $2,000 net. What is relevant?",
       "options": [
         "Zero because the materials are on hand",
         "The original purchase price only",
@@ -18168,38 +16720,16 @@ const microSkillBridgePools = {
         "The $2,000 forgone sale value"
       ],
       "tag": "relevant_costs_benefits",
-      "type": "bridge",
+      "type": "calculation",
       "objective": "LO3.2",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_relevant_costs_benefits",
       "primarySkill": "relevant_costs_benefits",
       "secondarySkills": [],
       "repairSkill": "relevant_costs_benefits",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Relevant items are the costs and benefits that change because of the decision.",
+      "commonError": "treats_inventory_as_free",
+      "feedback": "Using materials sacrifices their 2000 net resale value; ownership does not eliminate an alternative receipt.",
       "aHash": "d20f9b74f1c24baf3a3297e9abe208e65b7e4535781b22a937d9c0ac42370029"
-    },
-    {
-      "id": 6047,
-      "sourceGame": "costDirective",
-      "q": "A contract adds $12,000 revenue and $9,300 avoidable cost while fixed salary stays unchanged. What should the firm do on incremental grounds?",
-      "options": [
-        "Accept because incremental profit is $2,700",
-        "Reject because fixed salary exists",
-        "Reject because total cost may be larger",
-        "Accept only if sunk costs rise"
-      ],
-      "tag": "relevant_costs_benefits",
-      "type": "bridge",
-      "objective": "LO3.2",
-      "difficulty": "microSkillBridge",
-      "conceptCluster": "bridge_costDirective_relevant_costs_benefits",
-      "primarySkill": "relevant_costs_benefits",
-      "secondarySkills": [],
-      "repairSkill": "relevant_costs_benefits",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Relevant items are the costs and benefits that change because of the decision.",
-      "aHash": "08b46bb77edd42cb9cba99bb1a7b1b852caa7699730ac1475682f877b4bfbf8b"
     }
   ],
   "fixed_variable_costs": [
@@ -18214,15 +16744,15 @@ const microSkillBridgePools = {
         "$5"
       ],
       "tag": "fixed_variable_costs",
-      "type": "bridge",
+      "type": "calculation",
       "objective": "LO3.3",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_fixed_variable_costs",
       "primarySkill": "fixed_variable_costs",
       "secondarySkills": [],
       "repairSkill": "fixed_variable_costs",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Variable costs change with output over the relevant range; fixed costs do not.",
+      "commonError": "adds_fixed_cost_to_variable_cost",
+      "feedback": "Variable cost is 300 × 5 = 1500. Adding 2000 rent would compute total cost, not variable cost.",
       "aHash": "f479335aedf0d3a8139c1cea6585d38074eaafd812534da4bc42b477645ca0a9"
     },
     {
@@ -18230,66 +16760,44 @@ const microSkillBridgePools = {
       "sourceGame": "costDirective",
       "q": "If output rises and rent stays unchanged, how should rent be treated for the output increase?",
       "options": [
-        "As variable for every added unit",
-        "As marginal revenue",
+        "As avoidable merely because output rises",
+        "As variable because it is paid in cash",
         "As fixed over that range",
-        "As the only relevant cost"
+        "As proportional to every additional unit"
       ],
       "tag": "fixed_variable_costs",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO3.3",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_fixed_variable_costs",
       "primarySkill": "fixed_variable_costs",
       "secondarySkills": [],
       "repairSkill": "fixed_variable_costs",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Variable costs change with output over the relevant range; fixed costs do not.",
+      "commonError": "confuses_fixed_total_with_variable_cost",
+      "feedback": "An unchanged rent is fixed over this output range. That does not mean all fixed payments are sunk.",
       "aHash": "81a459cdaf39063e60261bd02fab065c7829302fa0b0ea9aeeb08e86a0c33429"
     },
     {
       "id": 6050,
       "sourceGame": "costDirective",
-      "q": "A bakery makes 600 loaves using flour at $0.80 per loaf. What is variable flour cost?",
+      "q": "A bakery makes 600 loaves. Total cost is $780, including $300 fixed rent and flour as the only variable input. What is variable cost per loaf?",
       "options": [
-        "$600",
-        "$0.80",
-        "$750",
-        "$480"
+        "$480",
+        "$1.30",
+        "$0.50",
+        "$0.80"
       ],
       "tag": "fixed_variable_costs",
-      "type": "bridge",
+      "type": "calculation",
       "objective": "LO3.3",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_fixed_variable_costs",
       "primarySkill": "fixed_variable_costs",
       "secondarySkills": [],
       "repairSkill": "fixed_variable_costs",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Variable costs change with output over the relevant range; fixed costs do not.",
-      "aHash": "2fa3ce0ad31ce6bfa977b82d3e60cb2f8ce3870ad51c088ca732efed3def3a02"
-    },
-    {
-      "id": 6051,
-      "sourceGame": "costDirective",
-      "q": "A delivery firm pays a monthly software fee that does not change from 100 to 150 deliveries. For that range, the fee is what?",
-      "options": [
-        "Fixed cost",
-        "Variable cost",
-        "Marginal revenue",
-        "Economic profit"
-      ],
-      "tag": "fixed_variable_costs",
-      "type": "bridge",
-      "objective": "LO3.3",
-      "difficulty": "microSkillBridge",
-      "conceptCluster": "bridge_costDirective_fixed_variable_costs",
-      "primarySkill": "fixed_variable_costs",
-      "secondarySkills": [],
-      "repairSkill": "fixed_variable_costs",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Variable costs change with output over the relevant range; fixed costs do not.",
-      "aHash": "d2b36292639e581bee8dfdcd0a56ce4fa5ce32636ee5bc9925f27307cc477871"
+      "commonError": "uses_total_cost_for_avc",
+      "feedback": "Variable cost is $780 − $300 = $480; dividing by 600 gives $0.80 per loaf. Total cost per loaf of $1.30 includes rent.",
+      "aHash": "7899e956e672e522d2eed1e2aae02a5e8c741731e6eed654c3d50f40cd954f1f"
     }
   ],
   "accounting_economic_profit": [
@@ -18304,38 +16812,16 @@ const microSkillBridgePools = {
         "$54,000"
       ],
       "tag": "accounting_economic_profit",
-      "type": "bridge",
+      "type": "calculation",
       "objective": "LO3.4",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_accounting_economic_profit",
       "primarySkill": "accounting_economic_profit",
       "secondarySkills": [],
       "repairSkill": "accounting_economic_profit",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Economic profit includes implicit opportunity costs.",
+      "commonError": "omits_forgone_salary",
+      "feedback": "Economic profit is 90000 − 60000 − 24000 = 6000 after the implicit salary cost.",
       "aHash": "f455ed4209cdc909730b6b732fb242e1933fdebcfac5fdf35dd9f2bac7cb51b0"
-    },
-    {
-      "id": 6053,
-      "sourceGame": "costDirective",
-      "q": "If accounting profit is $40,000 and implicit costs are $55,000, what is economic profit?",
-      "options": [
-        "$95,000",
-        "$40,000",
-        "-$15,000",
-        "$15,000"
-      ],
-      "tag": "accounting_economic_profit",
-      "type": "bridge",
-      "objective": "LO3.4",
-      "difficulty": "microSkillBridge",
-      "conceptCluster": "bridge_costDirective_accounting_economic_profit",
-      "primarySkill": "accounting_economic_profit",
-      "secondarySkills": [],
-      "repairSkill": "accounting_economic_profit",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Economic profit includes implicit opportunity costs.",
-      "aHash": "74a7ac327d80c195f934ee1bb23c5f7b26a7002735926e2d48f01a4efd976a36"
     },
     {
       "id": 6054,
@@ -18348,15 +16834,15 @@ const microSkillBridgePools = {
         "$40,000"
       ],
       "tag": "accounting_economic_profit",
-      "type": "bridge",
+      "type": "calculation",
       "objective": "LO3.4",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_accounting_economic_profit",
       "primarySkill": "accounting_economic_profit",
       "secondarySkills": [],
       "repairSkill": "accounting_economic_profit",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Economic profit includes implicit opportunity costs.",
+      "commonError": "omits_capital_opportunity_return",
+      "feedback": "250000 − 180000 − 30000 = 40000; the owner's capital return is an implicit cost in addition to explicit payments.",
       "aHash": "bdfceb551413090f550cd1fa2e5e71d1dcb51f2329ed3aebb809ab35b76307f9"
     },
     {
@@ -18365,20 +16851,20 @@ const microSkillBridgePools = {
       "q": "A business shows positive accounting profit but negative economic profit. What does that mean?",
       "options": [
         "It failed to cover the owner’s opportunity costs",
-        "It has no explicit costs",
-        "It must have zero revenue",
-        "It has no fixed costs"
+        "It failed to cover all explicit payments despite positive accounting profit",
+        "Its total revenue must be negative",
+        "Its implicit costs were already subtracted twice in accounting profit"
       ],
       "tag": "accounting_economic_profit",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO3.4",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_accounting_economic_profit",
       "primarySkill": "accounting_economic_profit",
       "secondarySkills": [],
       "repairSkill": "accounting_economic_profit",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Economic profit includes implicit opportunity costs.",
+      "commonError": "assumes_accounting_profit_covers_all_costs",
+      "feedback": "Positive accounting profit covers recorded explicit costs, but a negative economic profit leaves part of the implicit opportunity cost uncovered.",
       "aHash": "bbd7bddf4e3d5608bc71d5ec65eee89b7d9952a5f950966551cdabd200ec8a06"
     }
   ],
@@ -18386,23 +16872,23 @@ const microSkillBridgePools = {
     {
       "id": 6056,
       "sourceGame": "costDirective",
-      "q": "A firm spent $80,000 developing a product. Launching now would add $30,000 cost and only $22,000 revenue. What should it do?",
+      "q": "A firm spent $80,000 developing a product; that cost is unrecoverable. Launching now would add $30,000 cost and only $22,000 revenue. What should it do?",
       "options": [
-        "Launch because $80,000 was already spent",
+        "Launch to recover the 80000 past spending",
         "Do not launch; the sunk development cost does not justify an $8,000 loss",
-        "Launch because average past cost is high",
-        "Ignore the $30,000 added cost"
+        "Launch because 22000 positive revenue is enough",
+        "Treat the 30000 new cost as sunk because development is complete"
       ],
       "tag": "fixed_cost_fallacy",
-      "type": "bridge",
+      "type": "calculation",
       "objective": "LO3.5",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_fixed_cost_fallacy",
       "primarySkill": "fixed_cost_fallacy",
       "secondarySkills": [],
       "repairSkill": "fixed_cost_fallacy",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Sunk and unavoidable fixed costs should not drive the next choice.",
+      "commonError": "sunk_cost_justifies_future_loss",
+      "feedback": "The 80000 development cost is sunk if unrecoverable. Launch adds 22000 − 30000 = − 8000; past spending does not make that worthwhile.",
       "aHash": "9abdf1f02f71f8bc0d76bb1cd8a364ba10761c3edd1f9a70255b3b852688c092"
     },
     {
@@ -18410,21 +16896,21 @@ const microSkillBridgePools = {
       "sourceGame": "costDirective",
       "q": "A theater paid a nonrefundable license fee. An extra show would add $4,000 revenue and $2,700 cost. Should it run the show?",
       "options": [
-        "No, because the license fee must be recovered first",
-        "No, because sunk costs are always marginal",
+        "Reject because any past fixed cost is marginal cost",
+        "Reject because the license must be recovered first",
         "Yes, because future incremental profit is $1,300",
-        "Yes only if the license fee rises"
+        "Accept with 4000 profit because license payment makes new costs irrelevant"
       ],
       "tag": "fixed_cost_fallacy",
-      "type": "bridge",
+      "type": "calculation",
       "objective": "LO3.5",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_fixed_cost_fallacy",
       "primarySkill": "fixed_cost_fallacy",
       "secondarySkills": [],
       "repairSkill": "fixed_cost_fallacy",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Sunk and unavoidable fixed costs should not drive the next choice.",
+      "commonError": "includes_sunk_license",
+      "feedback": "The extra show adds 4000 − 2700 = 1300. The nonrefundable license is unchanged.",
       "aHash": "983119bbd372eafa4cd8c5fa24ee6133a65aa78c337cc26f742aef1fea562d72"
     },
     {
@@ -18432,51 +16918,29 @@ const microSkillBridgePools = {
       "sourceGame": "costDirective",
       "q": "A manager says, “We have spent too much to quit.” What question cuts through the fallacy?",
       "options": [
-        "How large was the sunk cost exactly?",
-        "Can we make the sunk cost feel smaller?",
-        "Which department authorized the past expense?",
+        "How long must the project run to match its historical budget?",
+        "Which past expenditure was largest?",
+        "Which department should be charged for the sunk cost?",
         "What future benefits and future costs change if we continue?"
       ],
       "tag": "fixed_cost_fallacy",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO3.5",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_fixed_cost_fallacy",
       "primarySkill": "fixed_cost_fallacy",
       "secondarySkills": [],
       "repairSkill": "fixed_cost_fallacy",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Sunk and unavoidable fixed costs should not drive the next choice.",
+      "commonError": "defends_past_spending",
+      "feedback": "The continuation choice compares future differences; recovering or assigning blame for past spending cannot change those differences.",
       "aHash": "101d650e52f40ac4e7f72f947dacbf4e31792b122cec21058655fdaf360c9f32"
-    },
-    {
-      "id": 6059,
-      "sourceGame": "costDirective",
-      "q": "A machine has no resale value. Keeping a product line open adds $12,000 revenue and $15,000 avoidable cost. What matters?",
-      "options": [
-        "The line loses $3,000 going forward",
-        "The original machine price controls the decision",
-        "The machine’s sunk cost makes the line profitable",
-        "Avoidable cost should be ignored"
-      ],
-      "tag": "fixed_cost_fallacy",
-      "type": "bridge",
-      "objective": "LO3.5",
-      "difficulty": "microSkillBridge",
-      "conceptCluster": "bridge_costDirective_fixed_cost_fallacy",
-      "primarySkill": "fixed_cost_fallacy",
-      "secondarySkills": [],
-      "repairSkill": "fixed_cost_fallacy",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Sunk and unavoidable fixed costs should not drive the next choice.",
-      "aHash": "b00ced1ff390db79c53e877119a51c066b568de1ffde56a8663986487d401c03"
     }
   ],
   "hidden_cost_fallacy": [
     {
       "id": 6060,
       "sourceGame": "costDirective",
-      "q": "A salaried engineer spends a week on a side project instead of client work worth $6,000. What is the hidden cost?",
+      "q": "A salaried engineer spends a week on a side project instead of client work earning $6,000 net contribution after avoidable costs. What is the hidden cost?",
       "options": [
         "$0 because salary is fixed",
         "$6,000",
@@ -18484,15 +16948,15 @@ const microSkillBridgePools = {
         "$12,000 because two tasks exist"
       ],
       "tag": "hidden_cost_fallacy",
-      "type": "bridge",
+      "type": "calculation",
       "objective": "LO3.6",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_hidden_cost_fallacy",
       "primarySkill": "hidden_cost_fallacy",
       "secondarySkills": [],
       "repairSkill": "hidden_cost_fallacy",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Hidden costs are real opportunity costs even when no invoice appears.",
+      "commonError": "treats_salary_as_zero_opportunity_cost",
+      "feedback": "The side project sacrifices 6000 net contribution from other feasible work even though salary stays fixed.",
       "aHash": "f455ed4209cdc909730b6b732fb242e1933fdebcfac5fdf35dd9f2bac7cb51b0"
     },
     {
@@ -18506,38 +16970,16 @@ const microSkillBridgePools = {
         "The sunk rent from prior months"
       ],
       "tag": "hidden_cost_fallacy",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO3.6",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_hidden_cost_fallacy",
       "primarySkill": "hidden_cost_fallacy",
       "secondarySkills": [],
       "repairSkill": "hidden_cost_fallacy",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Hidden costs are real opportunity costs even when no invoice appears.",
+      "commonError": "ignores_best_shelf_use",
+      "feedback": "Shelf capacity can earn contribution with another item; compare its best alternative, not just historical construction cost.",
       "aHash": "31aae593ba02c8b2e8bb52e6c16a3f739dc74eb575a1bc7a117e1d9052dc70dc"
-    },
-    {
-      "id": 6062,
-      "sourceGame": "costDirective",
-      "q": "A company uses a truck it owns for an internal route, giving up rental income of $1,200. What is the relevant hidden cost?",
-      "options": [
-        "$0 because the truck is owned",
-        "$1,200 only if the truck breaks",
-        "The truck’s original purchase price",
-        "$1,200"
-      ],
-      "tag": "hidden_cost_fallacy",
-      "type": "bridge",
-      "objective": "LO3.6",
-      "difficulty": "microSkillBridge",
-      "conceptCluster": "bridge_costDirective_hidden_cost_fallacy",
-      "primarySkill": "hidden_cost_fallacy",
-      "secondarySkills": [],
-      "repairSkill": "hidden_cost_fallacy",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Hidden costs are real opportunity costs even when no invoice appears.",
-      "aHash": "1dcc7619134cdb1de916b106a96326de3a8ac9eb25d79c57ce00de777b3203e1"
     },
     {
       "id": 6063,
@@ -18545,20 +16987,20 @@ const microSkillBridgePools = {
       "q": "A project uses excess capacity that could be sold to another customer. What is the mistake if that value is ignored?",
       "options": [
         "Hidden-cost fallacy",
-        "Fixed-cost fallacy only",
-        "Learning-curve effect",
-        "Increasing returns to scale"
+        "Fixed-cost fallacy from including an unchanged allocation",
+        "A sunk-cost error from counting original equipment spending",
+        "Double counting of an already-included cash expense"
       ],
       "tag": "hidden_cost_fallacy",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO3.6",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_hidden_cost_fallacy",
       "primarySkill": "hidden_cost_fallacy",
       "secondarySkills": [],
       "repairSkill": "hidden_cost_fallacy",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Hidden costs are real opportunity costs even when no invoice appears.",
+      "commonError": "omits_capacity_opportunity_cost",
+      "feedback": "Saleable capacity has a forgone receipt; omitting it is a hidden-cost error, not proof capacity is free.",
       "aHash": "0057e633a04590aebeb4614f73f7c455a8447e9407486f3e07a02fc5f95d27f7"
     }
   ],
@@ -18566,7 +17008,7 @@ const microSkillBridgePools = {
     {
       "id": 6064,
       "sourceGame": "costDirective",
-      "q": "Average cost is $18, marginal cost is $11, and the next unit sells for $14. What should guide the decision?",
+      "q": "Average cost is $18, marginal cost is $11, and the next unit sells for $14. There are no other effects. What should guide the decision?",
       "options": [
         "Reject because price is below average cost",
         "Produce the unit because price exceeds marginal cost",
@@ -18574,60 +17016,38 @@ const microSkillBridgePools = {
         "Produce only if average cost rises"
       ],
       "tag": "average_vs_marginal_cost",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO4.1",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_average_vs_marginal_cost",
       "primarySkill": "average_vs_marginal_cost",
       "secondarySkills": [],
       "repairSkill": "average_vs_marginal_cost",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Average cost is per unit overall; marginal cost is the cost of one more unit.",
+      "commonError": "uses_ac_to_reject_positive_increment",
+      "feedback": "With no other effects, the unit adds 14 − 11 = 3 despite a price below 18 AC. Incremental costs and receipts decide.",
       "aHash": "ef6e73571cbcfbb9acc62d9ee823fe81c9c9c95bb53685101b06f0d9cebb594d"
-    },
-    {
-      "id": 6065,
-      "sourceGame": "costDirective",
-      "q": "A manager rejects an order because price is below average cost even though price exceeds the added cost. What mistake is this?",
-      "options": [
-        "Ignoring sunk revenue",
-        "Using opportunity cost correctly",
-        "Confusing average cost with marginal cost for an incremental decision",
-        "Measuring returns to scale"
-      ],
-      "tag": "average_vs_marginal_cost",
-      "type": "bridge",
-      "objective": "LO4.1",
-      "difficulty": "microSkillBridge",
-      "conceptCluster": "bridge_costDirective_average_vs_marginal_cost",
-      "primarySkill": "average_vs_marginal_cost",
-      "secondarySkills": [],
-      "repairSkill": "average_vs_marginal_cost",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Average cost is per unit overall; marginal cost is the cost of one more unit.",
-      "aHash": "7d91dc24d5255e6a43c9d2465c969a9a0c739ef051f6dbfb8679d9795e86142c"
     },
     {
       "id": 6066,
       "sourceGame": "costDirective",
-      "q": "Total cost is $10,000 at 1,000 units and $10,040 at 1,002 units. What is marginal cost per added unit?",
+      "q": "Total cost is $10,000 at 1,000 units and $10,040 at 1,002. The extra two units sell for $24 each, with no other effects. What is the profit gain?",
       "options": [
-        "$10.04",
+        "-$8",
+        "$48",
         "$40",
-        "$5,020",
-        "$20"
+        "$8"
       ],
       "tag": "average_vs_marginal_cost",
-      "type": "bridge",
+      "type": "calculation",
       "objective": "LO4.1",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_average_vs_marginal_cost",
       "primarySkill": "average_vs_marginal_cost",
       "secondarySkills": [],
       "repairSkill": "average_vs_marginal_cost",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Average cost is per unit overall; marginal cost is the cost of one more unit.",
-      "aHash": "1f67972ce8b9d3da71256e750035aa4ffd0a58c0796b2172492afd8b96426416"
+      "commonError": "uses_average_cost_instead_of_increment",
+      "feedback": "Revenue rises 2 × $24 = $48; cost rises $40. The batch gains $8, or $4 per extra unit.",
+      "aHash": "5282dcb73b7e25acd120ba7db666af3861553abaa9cfa5968b124049b9ed1d94"
     },
     {
       "id": 6067,
@@ -18635,20 +17055,20 @@ const microSkillBridgePools = {
       "q": "Why can average cost mislead a special-order decision?",
       "options": [
         "It includes costs that may not change with the order",
-        "It always excludes fixed cost",
-        "It is always identical to marginal revenue",
-        "It ignores all output"
+        "Average cost always excludes fixed costs",
+        "Current average cost necessarily equals the cost of each extra unit",
+        "A lower average cost guarantees a profitable order at any price"
       ],
       "tag": "average_vs_marginal_cost",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO4.1",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_average_vs_marginal_cost",
       "primarySkill": "average_vs_marginal_cost",
       "secondarySkills": [],
       "repairSkill": "average_vs_marginal_cost",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Average cost is per unit overall; marginal cost is the cost of one more unit.",
+      "commonError": "assumes_average_equals_incremental",
+      "feedback": "Average cost includes common costs and averages unlike units; an order's actual increment can differ in either direction.",
       "aHash": "3ee1c45b871fba44e3a3fb4c3d6800112f070b5de8a097b4b86d493855022b41"
     }
   ],
@@ -18664,15 +17084,15 @@ const microSkillBridgePools = {
         "$863"
       ],
       "tag": "ac_mc_mr_calculation",
-      "type": "bridge",
+      "type": "calculation",
       "objective": "LO4.2",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_ac_mc_mr_calculation",
       "primarySkill": "ac_mc_mr_calculation",
       "secondarySkills": [],
       "repairSkill": "ac_mc_mr_calculation",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Divide the change by the change in output to get marginal values.",
+      "commonError": "uses_total_change_as_per_unit",
+      "feedback": "5180 − 5000 = 180 across 6 units gives 30 each over the interval; divide by added quantity.",
       "aHash": "e3aae7bc0e5ad26dcf3912c166846dff1e00a3887aeb53c3363722bba19b16bd"
     },
     {
@@ -18686,59 +17106,15 @@ const microSkillBridgePools = {
         "$1,920"
       ],
       "tag": "ac_mc_mr_calculation",
-      "type": "bridge",
+      "type": "calculation",
       "objective": "LO4.2",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_ac_mc_mr_calculation",
       "primarySkill": "ac_mc_mr_calculation",
       "secondarySkills": [],
       "repairSkill": "ac_mc_mr_calculation",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Divide the change by the change in output to get marginal values.",
-      "aHash": "e3aae7bc0e5ad26dcf3912c166846dff1e00a3887aeb53c3363722bba19b16bd"
-    },
-    {
-      "id": 6070,
-      "sourceGame": "costDirective",
-      "q": "Total cost is $12,400 at 200 units and $12,760 at 212 units. What is marginal cost per unit over the range?",
-      "options": [
-        "$360",
-        "$60.19",
-        "$12",
-        "$30"
-      ],
-      "tag": "ac_mc_mr_calculation",
-      "type": "bridge",
-      "objective": "LO4.2",
-      "difficulty": "microSkillBridge",
-      "conceptCluster": "bridge_costDirective_ac_mc_mr_calculation",
-      "primarySkill": "ac_mc_mr_calculation",
-      "secondarySkills": [],
-      "repairSkill": "ac_mc_mr_calculation",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Divide the change by the change in output to get marginal values.",
-      "aHash": "e3aae7bc0e5ad26dcf3912c166846dff1e00a3887aeb53c3363722bba19b16bd"
-    },
-    {
-      "id": 6071,
-      "sourceGame": "costDirective",
-      "q": "Revenue rises from $18,000 to $18,900 when output rises from 300 to 330. What is marginal revenue?",
-      "options": [
-        "$30",
-        "$900",
-        "$60",
-        "$630"
-      ],
-      "tag": "ac_mc_mr_calculation",
-      "type": "bridge",
-      "objective": "LO4.2",
-      "difficulty": "microSkillBridge",
-      "conceptCluster": "bridge_costDirective_ac_mc_mr_calculation",
-      "primarySkill": "ac_mc_mr_calculation",
-      "secondarySkills": [],
-      "repairSkill": "ac_mc_mr_calculation",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Divide the change by the change in output to get marginal values.",
+      "commonError": "uses_revenue_change_as_unit_revenue",
+      "feedback": "240/8 = 30 per added unit; the whole revenue change is not per-unit revenue.",
       "aHash": "e3aae7bc0e5ad26dcf3912c166846dff1e00a3887aeb53c3363722bba19b16bd"
     }
   ],
@@ -18748,21 +17124,21 @@ const microSkillBridgePools = {
       "sourceGame": "costDirective",
       "q": "The next unit has marginal revenue of $46 and marginal cost of $39. What should the firm do?",
       "options": [
-        "Reject it because total cost is positive",
+        "Reject solely because producing the unit costs money",
         "Produce it because it adds $7 to profit",
-        "Reject it because average cost might be higher",
-        "Produce it only if fixed cost changes"
+        "Reject whenever average cost is above 46",
+        "Produce only if committed fixed cost also falls"
       ],
       "tag": "mr_mc_extent_rule",
-      "type": "bridge",
+      "type": "calculation",
       "objective": "LO4.3",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_mr_mc_extent_rule",
       "primarySkill": "mr_mc_extent_rule",
       "secondarySkills": [],
       "repairSkill": "mr_mc_extent_rule",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Keep expanding while marginal benefit or marginal revenue exceeds marginal cost.",
+      "commonError": "rejects_positive_marginal_profit",
+      "feedback": "46 − 39 = 7 extra profit; positive cost alone is not a reason to reject a profitable increment.",
       "aHash": "c863170b452224a6a9236e54839dd8cd11947b1e89ff0fcb643a3071b76aefad"
     },
     {
@@ -18776,15 +17152,15 @@ const microSkillBridgePools = {
         "Profit is unchanged"
       ],
       "tag": "mr_mc_extent_rule",
-      "type": "bridge",
+      "type": "calculation",
       "objective": "LO4.3",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_mr_mc_extent_rule",
       "primarySkill": "mr_mc_extent_rule",
       "secondarySkills": [],
       "repairSkill": "mr_mc_extent_rule",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Keep expanding while marginal benefit or marginal revenue exceeds marginal cost.",
+      "commonError": "reverses_negative_increment",
+      "feedback": "28 − 35 = − 7; the extra unit reduces profit even though revenue is positive.",
       "aHash": "426939cefc110acff2b94ca53e72d4ce61edbeacb0ac3ffe58ed28e8a00233f7"
     },
     {
@@ -18798,21 +17174,21 @@ const microSkillBridgePools = {
         "2"
       ],
       "tag": "mr_mc_extent_rule",
-      "type": "bridge",
+      "type": "calculation",
       "objective": "LO4.3",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_mr_mc_extent_rule",
       "primarySkill": "mr_mc_extent_rule",
       "secondarySkills": [],
       "repairSkill": "mr_mc_extent_rule",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Keep expanding while marginal benefit or marginal revenue exceeds marginal cost.",
+      "commonError": "maximizes_units_instead_of_profit",
+      "feedback": "Net gains of $8, $2 and − $6 mean the first two units maximize cumulative profit; the third reduces it.",
       "aHash": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
     },
     {
       "id": 6075,
       "sourceGame": "costDirective",
-      "q": "A service call adds $75 revenue and $52 cost, but uses a technician who could earn $30 elsewhere. What is the net marginal effect?",
+      "q": "A service call adds $75 revenue and $52 cost, but uses a technician who could earn $30 net contribution elsewhere, separate from those direct costs. What is the net marginal effect?",
       "options": [
         "-$7",
         "$23",
@@ -18820,15 +17196,15 @@ const microSkillBridgePools = {
         "$30"
       ],
       "tag": "mr_mc_extent_rule",
-      "type": "bridge",
+      "type": "calculation",
       "objective": "LO4.3",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_mr_mc_extent_rule",
       "primarySkill": "mr_mc_extent_rule",
       "secondarySkills": [],
       "repairSkill": "mr_mc_extent_rule",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Keep expanding while marginal benefit or marginal revenue exceeds marginal cost.",
+      "commonError": "omits_opportunity_contribution",
+      "feedback": "75 − 52 − 30 = − 7 when 30 is net forgone contribution and is distinct from the 52 direct cost.",
       "aHash": "6f5cb16ad5b9c5686015db225e9ac4336a70707635516925b768b8bb1b51527e"
     }
   ],
@@ -18838,21 +17214,21 @@ const microSkillBridgePools = {
       "sourceGame": "costDirective",
       "q": "A salesperson gets paid on revenue and starts selling low-margin products. What is the likely compensation issue?",
       "options": [
-        "The worker has no incentive to sell anything",
+        "A larger revenue commission necessarily improves product margins",
         "The metric rewards sales volume without enough attention to profit",
-        "The firm has solved moral hazard perfectly",
-        "Average cost is being calculated incorrectly"
+        "Revenue already deducts every attributable product cost",
+        "More sales information alone guarantees aligned incentives"
       ],
       "tag": "incentive_compensation_effort",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO4.4",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_incentive_compensation_effort",
       "primarySkill": "incentive_compensation_effort",
       "secondarySkills": [],
       "repairSkill": "incentive_compensation_effort",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Compensation changes behavior by changing the reward from effort.",
+      "commonError": "rewards_revenue_instead_of_profit",
+      "feedback": "A revenue commission can reward low-margin deals; compare costs and contribution rather than receipts alone.",
       "aHash": "1f594979cb9ee2c0d6aa16ffcefc44e926014cbd5bb4343a865bffad1ace1dc2"
     },
     {
@@ -18860,21 +17236,21 @@ const microSkillBridgePools = {
       "sourceGame": "costDirective",
       "q": "A bonus pays mechanics per repair completed, and rework rises. What should the firm add?",
       "options": [
-        "A larger reward for speed alone",
-        "A rule ignoring customer complaints",
+        "Pay again for every repeat repair without checking its cause",
+        "Increase the same count-only bonus",
         "A quality or repeat-failure measure",
-        "A sunk-cost recovery target"
+        "Exclude complaints from the performance measure"
       ],
       "tag": "incentive_compensation_effort",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO4.4",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_incentive_compensation_effort",
       "primarySkill": "incentive_compensation_effort",
       "secondarySkills": [],
       "repairSkill": "incentive_compensation_effort",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Compensation changes behavior by changing the reward from effort.",
+      "commonError": "omits_rework_quality",
+      "feedback": "Reward verified durable repairs rather than counting both initial repairs and avoidable rework as success.",
       "aHash": "26a644e8c5bb4c85a70564f3ec24caaffc54b442496693bb5fb2abadf9a78489"
     },
     {
@@ -18888,15 +17264,15 @@ const microSkillBridgePools = {
         "Contract B pays $54,000 versus $50,000 under A"
       ],
       "tag": "incentive_compensation_effort",
-      "type": "bridge",
+      "type": "calculation",
       "objective": "LO4.4",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_incentive_compensation_effort",
       "primarySkill": "incentive_compensation_effort",
       "secondarySkills": [],
       "repairSkill": "incentive_compensation_effort",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Compensation changes behavior by changing the reward from effort.",
+      "commonError": "confuses_base_pay_with_commission",
+      "feedback": "A pays 35000+.05 × 300000 = 50000; B pays.18 × 300000 = 54000. Levels do not by themselves identify effort incentives.",
       "aHash": "c88e4d8b4cd16fdfd34868e9e567d94d9147952004adba8f01ace56a23de7e3a"
     },
     {
@@ -18905,89 +17281,45 @@ const microSkillBridgePools = {
       "q": "Why might high commission create risk for employees?",
       "options": [
         "Pay becomes more dependent on uncertain sales outcomes",
-        "It eliminates effort incentives",
-        "It makes all costs fixed",
-        "It makes price equal average cost"
+        "Commission guarantees the same income in weak and strong demand",
+        "Only fixed salary exposes workers to demand fluctuations",
+        "Any positive commission eliminates the personal cost of effort"
       ],
       "tag": "incentive_compensation_effort",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO4.4",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_incentive_compensation_effort",
       "primarySkill": "incentive_compensation_effort",
       "secondarySkills": [],
       "repairSkill": "incentive_compensation_effort",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Compensation changes behavior by changing the reward from effort.",
+      "commonError": "ignores_income_risk",
+      "feedback": "Commission makes pay depend on uncertain sales, which workers may partly be unable to control.",
       "aHash": "eb4987c6de94480b3d2cafe3c75076b2c2d38bb9236fcef7ea4049cb178e13a1"
     }
   ],
   "diminishing_marginal_returns": [
     {
-      "id": 6084,
-      "sourceGame": "costDirective",
-      "q": "A kitchen has fixed grill space. Adding cooks eventually causes crowding and smaller output gains. What concept fits?",
-      "options": [
-        "Increasing returns to scale",
-        "Diminishing marginal returns",
-        "Economies of scope",
-        "Accounting profit"
-      ],
-      "tag": "diminishing_marginal_returns",
-      "type": "bridge",
-      "objective": "LO7.1",
-      "difficulty": "microSkillBridge",
-      "conceptCluster": "bridge_costDirective_diminishing_marginal_returns",
-      "primarySkill": "diminishing_marginal_returns",
-      "secondarySkills": [],
-      "repairSkill": "diminishing_marginal_returns",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Diminishing marginal returns requires at least one fixed input in the short run.",
-      "aHash": "3fb9c70a70c4d59f72107654414444bea302e05072b3b6d4b418349eb64ef404"
-    },
-    {
       "id": 6085,
       "sourceGame": "costDirective",
-      "q": "Workers rise from 8 to 9, and output rises from 640 to 690. What is marginal product of the ninth worker?",
+      "q": "With equipment fixed, the eighth worker adds 70 units. Hiring the ninth increases total output from 640 to 690. What does the comparison show?",
       "options": [
-        "690 units",
-        "640 units",
-        "50 units",
-        "1,330 units"
+        "Total output falls by 20",
+        "Marginal product rises to 690",
+        "Marginal product falls from 70 to 50 while total output rises",
+        "All-input returns to scale are decreasing"
       ],
       "tag": "diminishing_marginal_returns",
-      "type": "bridge",
+      "type": "interpretation",
       "objective": "LO7.1",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_diminishing_marginal_returns",
       "primarySkill": "diminishing_marginal_returns",
       "secondarySkills": [],
       "repairSkill": "diminishing_marginal_returns",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Diminishing marginal returns requires at least one fixed input in the short run.",
-      "aHash": "5d34b5d33991002e240b697dffbebbde02ce217da683a745f21da01347591d47"
-    },
-    {
-      "id": 6086,
-      "sourceGame": "costDirective",
-      "q": "Output gains from added workers are 70, 55, and 38 while equipment is fixed. What is happening?",
-      "options": [
-        "All inputs are doubling",
-        "Average cost must be zero",
-        "Scope economies are rising",
-        "Marginal product is diminishing"
-      ],
-      "tag": "diminishing_marginal_returns",
-      "type": "bridge",
-      "objective": "LO7.1",
-      "difficulty": "microSkillBridge",
-      "conceptCluster": "bridge_costDirective_diminishing_marginal_returns",
-      "primarySkill": "diminishing_marginal_returns",
-      "secondarySkills": [],
-      "repairSkill": "diminishing_marginal_returns",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Diminishing marginal returns requires at least one fixed input in the short run.",
-      "aHash": "3bb3d3ae4cfd3bb084220cec3406d0e712ce3d431a67541446ec0935cfd10241"
+      "commonError": "confuses_total_with_marginal_output",
+      "feedback": "The ninth worker adds 690 − 640 = 50, below 70. This is diminishing marginal product with fixed equipment, not an all-input scale experiment.",
+      "aHash": "4aaa6901c864107cb76aff375f07ef69939e5c511314b3dc61d3ff69bc9c6fb1"
     },
     {
       "id": 6087,
@@ -19000,15 +17332,15 @@ const microSkillBridgePools = {
         "Joint cost versus separate cost"
       ],
       "tag": "diminishing_marginal_returns",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO7.1",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_diminishing_marginal_returns",
       "primarySkill": "diminishing_marginal_returns",
       "secondarySkills": [],
       "repairSkill": "diminishing_marginal_returns",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Diminishing marginal returns requires at least one fixed input in the short run.",
+      "commonError": "confuses_fixed_input_with_scale",
+      "feedback": "Compare successive labor increments with capital fixed; an all-input expansion is a different scale experiment.",
       "aHash": "d7cc17fb6f5864724ad659c9f2ab4176e2bf0521144b7fc51af50c89ea4d01f6"
     }
   ],
@@ -19020,19 +17352,19 @@ const microSkillBridgePools = {
       "options": [
         "A smaller order with no commitment",
         "A credible volume commitment",
-        "A request to ignore all scale effects",
-        "A rule requiring price above old average cost"
+        "A nonbinding forecast treated as a guaranteed purchase",
+        "A price demand unsupported by any volume commitment"
       ],
       "tag": "cost_curves_contracts",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO7.2",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_cost_curves_contracts",
       "primarySkill": "cost_curves_contracts",
       "secondarySkills": [],
       "repairSkill": "cost_curves_contracts",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Cost curves help explain feasible prices, commitments, and supplier scale.",
+      "commonError": "uses_uncommitted_demand_to_claim_low_cost",
+      "feedback": "A credible large-volume commitment may support lower AC. A low-volume order cannot claim the large-volume cost without supporting demand.",
       "aHash": "87be207e73a706afc0c5204b5288b69f18432200307f56d612e6b4358c9b1ded"
     },
     {
@@ -19040,21 +17372,21 @@ const microSkillBridgePools = {
       "sourceGame": "costDirective",
       "q": "A buyer asks for rush delivery that raises setup and overtime costs. What should negotiation recognize?",
       "options": [
-        "The supplier’s cost curve cannot matter",
-        "The rush cost is always sunk",
+        "The ordinary-order average must apply regardless of overtime",
+        "The rush fee is irrelevant because it is fixed per order",
         "The order changes the supplier’s relevant cost curve",
-        "The buyer should use accounting profit only"
+        "Only the supplier's original equipment price belongs in the quote"
       ],
       "tag": "cost_curves_contracts",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO7.2",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_cost_curves_contracts",
       "primarySkill": "cost_curves_contracts",
       "secondarySkills": [],
       "repairSkill": "cost_curves_contracts",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Cost curves help explain feasible prices, commitments, and supplier scale.",
+      "commonError": "ignores_rush_cost",
+      "feedback": "Rush timing can cause additional setup and overtime. Include those incremental costs in the quote rather than treating them as sunk.",
       "aHash": "8651f452f0c6f6c6ff95b9dc84ea76d3e5ff04c73f119ca61694bff782a1971b"
     },
     {
@@ -19062,112 +17394,68 @@ const microSkillBridgePools = {
       "sourceGame": "costDirective",
       "q": "A long-term contract lets a supplier invest in specialized equipment that lowers unit cost. What cost logic supports it?",
       "options": [
-        "The contract eliminates all marginal costs",
-        "The investment has no hold-up risk",
-        "The buyer should ignore volume",
+        "Specialized investment eliminates every risk of changed demand",
+        "The contract removes all marginal production cost",
+        "Any commitment makes equipment investment worthwhile at any price",
         "The commitment can move production to a lower-cost range"
       ],
       "tag": "cost_curves_contracts",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO7.2",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_cost_curves_contracts",
       "primarySkill": "cost_curves_contracts",
       "secondarySkills": [],
       "repairSkill": "cost_curves_contracts",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Cost curves help explain feasible prices, commitments, and supplier scale.",
+      "commonError": "ignores_volume_needed_for_investment",
+      "feedback": "A credible commitment can support investment and scale, but the avoided unit cost must justify investment and coordination costs.",
       "aHash": "1e598c05c1ae574f1bccb7c4371a4ea1f34a883956ebb5fb08e8a001f2cbb0d3"
     },
     {
       "id": 6091,
       "sourceGame": "costDirective",
-      "q": "A supplier quotes high price for a tiny custom batch. What is the likely cost-curve reason?",
+      "q": "A supplier needs a $600 setup plus $4 materials per unit. What is average cost for a 100-unit custom batch compared with a 300-unit batch, within the same capacity?",
       "options": [
-        "Small volume may leave fixed setup costs spread over few units",
-        "Small volume always creates economies of scope",
-        "Tiny orders eliminate average cost",
-        "The supplier has no variable costs"
+        "$10 versus $6",
+        "$6 versus $10",
+        "$4 for both",
+        "$600 for both"
       ],
       "tag": "cost_curves_contracts",
-      "type": "bridge",
+      "type": "calculation",
       "objective": "LO7.2",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_cost_curves_contracts",
       "primarySkill": "cost_curves_contracts",
       "secondarySkills": [],
       "repairSkill": "cost_curves_contracts",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Cost curves help explain feasible prices, commitments, and supplier scale.",
-      "aHash": "4ea2c3ed5aa50d5d7080ffaf0f78b22fb5e8299673b8f60340e2614b9ba1223c"
+      "commonError": "ignores_setup_cost_per_unit",
+      "feedback": "Average cost is $600/Q + $4: $10 at 100 units and $6 at 300. Setup does not disappear; it is spread across more units.",
+      "aHash": "1b237bc8f8aacdb527cf30f5d0d5312c9daefe82e3576b4da2dbd95cf0d1c8a2"
     }
   ],
   "average_cost_output": [
-    {
-      "id": 6092,
-      "sourceGame": "costDirective",
-      "q": "Total cost is $72,000 for 6,000 units. What is average cost?",
-      "options": [
-        "$6",
-        "$12",
-        "$72,000",
-        "$78,000"
-      ],
-      "tag": "average_cost_output",
-      "type": "bridge",
-      "objective": "LO7.3",
-      "difficulty": "microSkillBridge",
-      "conceptCluster": "bridge_costDirective_average_cost_output",
-      "primarySkill": "average_cost_output",
-      "secondarySkills": [],
-      "repairSkill": "average_cost_output",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Average cost equals total cost divided by output.",
-      "aHash": "da2b74cad5bfd34ccf1ea271bc7aad174f31556ca58fb967aa44a1870edf85bd"
-    },
     {
       "id": 6093,
       "sourceGame": "costDirective",
       "q": "Average cost falls from $18 to $14 as output rises. What does that suggest over this range?",
       "options": [
-        "Marginal cost must exceed average cost",
-        "The firm has no fixed costs",
-        "The firm is gaining scale or spreading fixed costs",
-        "Output should automatically stop"
+        "Every fixed cost must have disappeared",
+        "Marginal cost must exceed the original average cost",
+        "Cost per unit fell; the source of the decline needs more evidence",
+        "Learning is proven without information about cumulative experience"
       ],
       "tag": "average_cost_output",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO7.3",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_average_cost_output",
       "primarySkill": "average_cost_output",
       "secondarySkills": [],
       "repairSkill": "average_cost_output",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Average cost equals total cost divided by output.",
-      "aHash": "8c110e013f16b3101ee539fc9238d64aa023263c9f2d6cac55e63b4c33d0d98a"
-    },
-    {
-      "id": 6094,
-      "sourceGame": "costDirective",
-      "q": "A plant costs $150,000 to run and produces 12,500 units. What is average cost?",
-      "options": [
-        "$150,000",
-        "$12,500",
-        "$137,500",
-        "$12"
-      ],
-      "tag": "average_cost_output",
-      "type": "bridge",
-      "objective": "LO7.3",
-      "difficulty": "microSkillBridge",
-      "conceptCluster": "bridge_costDirective_average_cost_output",
-      "primarySkill": "average_cost_output",
-      "secondarySkills": [],
-      "repairSkill": "average_cost_output",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Average cost equals total cost divided by output.",
-      "aHash": "da2b74cad5bfd34ccf1ea271bc7aad174f31556ca58fb967aa44a1870edf85bd"
+      "commonError": "infers_cause_from_ac_alone",
+      "feedback": "Falling AC establishes lower cost per unit, but its cause requires information about plant scale, experience and input prices.",
+      "aHash": "3b2ad62dcb263ecede10cfb22d0d92b3f9d5ee600fed5643ffdcac8e0d86f8d8"
     },
     {
       "id": 6095,
@@ -19175,20 +17463,20 @@ const microSkillBridgePools = {
       "q": "A supplier’s average cost is high at low output because setup cost is spread over few units. What would likely lower average cost?",
       "options": [
         "A larger production run, if within the relevant range",
-        "A smaller production run",
-        "Ignoring fixed setup cost in total cost",
-        "Raising sunk cost"
+        "A smaller run with the same setup amount",
+        "Deleting setup from the cost calculation without avoiding it",
+        "Increasing the setup cost while keeping output unchanged"
       ],
       "tag": "average_cost_output",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO7.3",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_average_cost_output",
       "primarySkill": "average_cost_output",
       "secondarySkills": [],
       "repairSkill": "average_cost_output",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Average cost equals total cost divided by output.",
+      "commonError": "ignores_relevant_range",
+      "feedback": "A larger run can spread setup over more units, provided extra capacity or other rising costs do not offset that saving.",
       "aHash": "a63cda7b977278b04024c3520346bf929f6a1b0e3a290b282020d2e65e1d603f"
     }
   ],
@@ -19204,15 +17492,15 @@ const microSkillBridgePools = {
         "Diminishing marginal returns"
       ],
       "tag": "returns_to_scale",
-      "type": "bridge",
+      "type": "calculation",
       "objective": "LO7.4",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_returns_to_scale",
       "primarySkill": "returns_to_scale",
       "secondarySkills": [],
       "repairSkill": "returns_to_scale",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Returns to scale asks what happens when all inputs change together.",
+      "commonError": "compares_absolute_output_instead_of_ratio",
+      "feedback": "900 exceeds twice 400 = 800 for doubled inputs, so returns to scale increase.",
       "aHash": "b43902336e49d926263d77e4900a3b47a9fe58bddd8460b227efbb785a750b06"
     },
     {
@@ -19226,15 +17514,15 @@ const microSkillBridgePools = {
         "Learning curve"
       ],
       "tag": "returns_to_scale",
-      "type": "bridge",
+      "type": "calculation",
       "objective": "LO7.4",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_returns_to_scale",
       "primarySkill": "returns_to_scale",
       "secondarySkills": [],
       "repairSkill": "returns_to_scale",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Returns to scale asks what happens when all inputs change together.",
+      "commonError": "equates_output_growth_with_increasing_returns",
+      "feedback": "700 is below twice 400 = 800 despite being above 400; returns to scale decrease.",
       "aHash": "1ccfca62406e75b88927edb55372aeb324dc8a3fd1a6214eddcbea139fe034d6"
     },
     {
@@ -19242,21 +17530,21 @@ const microSkillBridgePools = {
       "sourceGame": "costDirective",
       "q": "A firm doubles labor, machines, and materials; output rises from 1,000 to 2,000. What is shown?",
       "options": [
-        "Diminishing marginal returns",
-        "Economies of scope",
-        "Post-investment hold-up",
+        "Diminishing marginal returns with fixed capital",
+        "Increasing returns to scale",
+        "Decreasing returns to scale",
         "Constant returns to scale"
       ],
       "tag": "returns_to_scale",
-      "type": "bridge",
+      "type": "calculation",
       "objective": "LO7.4",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_returns_to_scale",
       "primarySkill": "returns_to_scale",
       "secondarySkills": [],
       "repairSkill": "returns_to_scale",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Returns to scale asks what happens when all inputs change together.",
+      "commonError": "confuses_proportional_change_with_dmr",
+      "feedback": "All inputs and output double, so returns to scale are constant. No input is held fixed.",
       "aHash": "4afcedd9184d58c718cce4e396cd98b89fbea90ad79a74521565ac77f5c36fad"
     },
     {
@@ -19265,20 +17553,20 @@ const microSkillBridgePools = {
       "q": "What separates returns to scale from diminishing marginal returns?",
       "options": [
         "Returns to scale changes all inputs; diminishing marginal returns changes one input with another fixed",
-        "They are the same concept with different names",
-        "Returns to scale uses sunk costs only",
-        "Diminishing returns requires all inputs to double"
+        "They are identical because both compare output",
+        "Scale holds capital fixed while diminishing returns doubles every input",
+        "Diminishing marginal returns means total output must fall"
       ],
       "tag": "returns_to_scale",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO7.4",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_returns_to_scale",
       "primarySkill": "returns_to_scale",
       "secondarySkills": [],
       "repairSkill": "returns_to_scale",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Returns to scale asks what happens when all inputs change together.",
+      "commonError": "confuses_all_input_and_single_input_experiments",
+      "feedback": "Scale changes all inputs proportionally; diminishing marginal returns concerns successive additions with another input fixed. Canonical shared exam wording is appropriate.",
       "aHash": "6b4f29f1dc5230673886b298e1ad3d078b895b47b5550d73f1e67e4818442b97"
     }
   ],
@@ -19286,23 +17574,23 @@ const microSkillBridgePools = {
     {
       "id": 6100,
       "sourceGame": "costDirective",
-      "q": "Average cost is $11 at 20,000 units, $8 at 40,000 units, and $8 at 70,000 units. What is minimum efficient scale?",
+      "q": "The only feasible long-run plans have unit costs $11 at 20,000 units, $8 at 40,000 and $8 at 70,000. Which is minimum efficient scale?",
       "options": [
         "20,000 units",
         "40,000 units",
         "70,000 units",
-        "90,000 units"
+        "Both 40,000 and 70,000 units because their unit costs tie"
       ],
       "tag": "minimum_efficient_scale",
-      "type": "bridge",
+      "type": "calculation",
       "objective": "LO7.5",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_minimum_efficient_scale",
       "primarySkill": "minimum_efficient_scale",
       "secondarySkills": [],
       "repairSkill": "minimum_efficient_scale",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "MES is the smallest output where long-run average cost reaches its minimum.",
+      "commonError": "chooses_largest_minimum_cost_plan",
+      "feedback": "Among the stated feasible long-run plans, 40000 is the smallest output with 8 unit cost; 70000 is also at the minimum but is larger.",
       "aHash": "1906ebe7f68f65e99429fe77116596c793de04909fe752e2327df6a7fcd29a13"
     },
     {
@@ -19310,44 +17598,22 @@ const microSkillBridgePools = {
       "sourceGame": "costDirective",
       "q": "Why might a small entrant struggle against a large incumbent near MES?",
       "options": [
-        "The entrant has no variable costs",
-        "The incumbent must have lower total revenue",
+        "The incumbent has no variable cost once it reachesMES",
+        "The entrant necessarily has lower total profit at every possible price",
         "The entrant may have higher average cost at low volume",
-        "MES makes all products identical"
+        "The entrant can obtain minimum unit cost merely by reallocating accounts"
       ],
       "tag": "minimum_efficient_scale",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO7.5",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_minimum_efficient_scale",
       "primarySkill": "minimum_efficient_scale",
       "secondarySkills": [],
       "repairSkill": "minimum_efficient_scale",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "MES is the smallest output where long-run average cost reaches its minimum.",
+      "commonError": "ignores_attainable_scale",
+      "feedback": "An entrant belowMES may have higher unit cost. Demand, supplier prices and coordination still determine the best business choice.",
       "aHash": "8691b8bbc208c7a9f6b4c6a9d7e21d6d1d7e565b50c57563aaddb40b2412420f"
-    },
-    {
-      "id": 6102,
-      "sourceGame": "costDirective",
-      "q": "Average cost is $25 at 5,000 units, $18 at 15,000, $15 at 30,000, and $15 at 50,000. What is MES?",
-      "options": [
-        "5,000 units",
-        "15,000 units",
-        "50,000 units",
-        "30,000 units"
-      ],
-      "tag": "minimum_efficient_scale",
-      "type": "bridge",
-      "objective": "LO7.5",
-      "difficulty": "microSkillBridge",
-      "conceptCluster": "bridge_costDirective_minimum_efficient_scale",
-      "primarySkill": "minimum_efficient_scale",
-      "secondarySkills": [],
-      "repairSkill": "minimum_efficient_scale",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "MES is the smallest output where long-run average cost reaches its minimum.",
-      "aHash": "04939d07aa699c92c12afb920380b4dec6e3ea44fac10df193f2582881c72b6a"
     },
     {
       "id": 6103,
@@ -19355,20 +17621,20 @@ const microSkillBridgePools = {
       "q": "How can a volume contract help a supplier reach MES?",
       "options": [
         "It gives enough expected output to operate near the minimum-cost range",
-        "It makes fixed costs sunk after every unit",
-        "It eliminates all bargaining costs",
-        "It forces output below the efficient range"
+        "It guarantees zero fixed cost per unit at every quantity",
+        "It eliminates every transaction cost regardless of terms",
+        "It reachesMES simply by lowering the quoted price"
       ],
       "tag": "minimum_efficient_scale",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO7.5",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_minimum_efficient_scale",
       "primarySkill": "minimum_efficient_scale",
       "secondarySkills": [],
       "repairSkill": "minimum_efficient_scale",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "MES is the smallest output where long-run average cost reaches its minimum.",
+      "commonError": "ignores_volume_commitment",
+      "feedback": "A credible volume contract may support output in the minimum-unit-cost range; it does not remove fixed or coordination costs.",
       "aHash": "5f2f6e314ffab74a59c40073983c4c4a6eadb0e79a08ac1d38d0bfad98dc2128"
     }
   ],
@@ -19384,15 +17650,15 @@ const microSkillBridgePools = {
         "80%"
       ],
       "tag": "learning_curve",
-      "type": "bridge",
+      "type": "calculation",
       "objective": "LO7.6",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_learning_curve",
       "primarySkill": "learning_curve",
       "secondarySkills": [],
       "repairSkill": "learning_curve",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Learning curves reflect cost reductions from cumulative experience.",
+      "commonError": "confuses_progress_ratio_with_reduction",
+      "feedback": "The reduction is (25 − 20)/25 = 20%; 20/25 = 80% is the remaining-cost ratio, not the reduction.",
       "aHash": "dc934fe30a942bca07b4c288b4b3e48aa79a717d6db2b586553cd2416dc8b9b8"
     },
     {
@@ -19400,73 +17666,51 @@ const microSkillBridgePools = {
       "sourceGame": "costDirective",
       "q": "Why might an experienced producer have lower cost than a new producer?",
       "options": [
-        "Experience eliminates all variable cost",
-        "New producers cannot have fixed costs",
+        "Learning is defined as all physical inputs doubling",
+        "Experience guarantees zero variable cost",
         "Accumulated learning reduces mistakes and setup time",
-        "Learning means all inputs doubled"
+        "Only a larger current output, never prior experience, can lower costs"
       ],
       "tag": "learning_curve",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO7.6",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_learning_curve",
       "primarySkill": "learning_curve",
       "secondarySkills": [],
       "repairSkill": "learning_curve",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Learning curves reflect cost reductions from cumulative experience.",
+      "commonError": "confuses_experience_with_scale",
+      "feedback": "Accumulated practice can reduce errors and setup time. It need not require a larger current plant or all inputs doubling.",
       "aHash": "0777ba36109999284dba431129ab23b2eedeedc4aec918bb97f50f62fcb3a7e3"
-    },
-    {
-      "id": 6106,
-      "sourceGame": "costDirective",
-      "q": "A first batch costs $40 per unit, but repeated production is expected to lower cost to $28. What concept should the manager consider?",
-      "options": [
-        "Fixed-cost fallacy",
-        "Price ceiling",
-        "Constant returns to scale only",
-        "Learning curve"
-      ],
-      "tag": "learning_curve",
-      "type": "bridge",
-      "objective": "LO7.6",
-      "difficulty": "microSkillBridge",
-      "conceptCluster": "bridge_costDirective_learning_curve",
-      "primarySkill": "learning_curve",
-      "secondarySkills": [],
-      "repairSkill": "learning_curve",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Learning curves reflect cost reductions from cumulative experience.",
-      "aHash": "8781dc147e847a17e64634bf61c2e1c1d7063294c14f81767266604c7c5b5701"
     },
     {
       "id": 6107,
       "sourceGame": "costDirective",
-      "q": "A buyer offers a large repeat order that may move the supplier down the learning curve. What should the supplier evaluate?",
+      "q": "A repeat order pays $32 per unit for 100 units now and 100 later. Forecast costs are $38 then $24 per unit, with no other costs or discounting. What does the lifecycle comparison imply?",
       "options": [
-        "Life-cycle marginal costs and benefits, not just first-batch average cost",
-        "Only the first unit’s average cost",
-        "Only sunk tooling from prior years",
-        "Only accounting profit before learning"
+        "Expected profit is $200 despite an initial $600 loss",
+        "Reject automatically because the first units lose money",
+        "Expected profit is $1,600 because all units should use the learned cost",
+        "Expected loss is $1,200 because first-batch cost persists"
       ],
       "tag": "learning_curve",
-      "type": "bridge",
+      "type": "calculation",
       "objective": "LO7.6",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_learning_curve",
       "primarySkill": "learning_curve",
       "secondarySkills": [],
       "repairSkill": "learning_curve",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Learning curves reflect cost reductions from cumulative experience.",
-      "aHash": "785566603944433b90eb5eaa51f2e27523de1a89e50ecf05cba772e84aa03299"
+      "commonError": "uses_single_period_cost_for_lifecycle",
+      "feedback": "Revenue is 200 × $32 = $6,400; forecast cost is 100 × $38 + 100 × $24 = $6,200. The later $800 gain exceeds the early $600 loss by $200.",
+      "aHash": "4a667c4dbf13a167e07874d8c37ed237023b6cac4d05fd9dcdb5ddadefed3f25"
     }
   ],
   "economies_of_scope": [
     {
       "id": 6108,
       "sourceGame": "costDirective",
-      "q": "Separate production costs are $80,000 and $55,000. Joint production costs $120,000. What are scope savings?",
+      "q": "Separate production costs are $80,000 and $55,000. Joint production costs $120,000. Outputs and quality are identical under both arrangements. What are scope savings?",
       "options": [
         "$135,000",
         "$15,000",
@@ -19474,15 +17718,15 @@ const microSkillBridgePools = {
         "$25,000"
       ],
       "tag": "economies_of_scope",
-      "type": "bridge",
+      "type": "calculation",
       "objective": "LO7.7",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_economies_of_scope",
       "primarySkill": "economies_of_scope",
       "secondarySkills": [],
       "repairSkill": "economies_of_scope",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Scope economies mean joint production costs less than separate production.",
+      "commonError": "uses_joint_cost_as_scope_saving",
+      "feedback": "80000+55000 − 120000 = 15000 for equal outputs and quality; joint cost is not the saving.",
       "aHash": "208bd9cfd4e08ea0e562d793c5f0e8c93c62473aa2d72f363127750b41e7bbae"
     },
     {
@@ -19490,66 +17734,22 @@ const microSkillBridgePools = {
       "sourceGame": "costDirective",
       "q": "A firm uses the same warehouse and delivery team for two product lines, lowering joint cost. What concept is this?",
       "options": [
-        "Diminishing marginal returns",
-        "Economic profit",
+        "A learning effect solely from accumulated repetitions",
+        "Economies of scale from making more of one product only",
         "Economies of scope",
-        "Post-investment hold-up"
+        "Diminishing marginal returns from adding labor to fixed equipment"
       ],
       "tag": "economies_of_scope",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO7.7",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_costDirective_economies_of_scope",
       "primarySkill": "economies_of_scope",
       "secondarySkills": [],
       "repairSkill": "economies_of_scope",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Scope economies mean joint production costs less than separate production.",
+      "commonError": "confuses_scope_with_scale",
+      "feedback": "Two product lines share distribution at lower joint cost; that is scope, rather than simply more of one product.",
       "aHash": "cf9cdabc57e330c328ceab504e71e51de7b3bb8d005c531b89f8b0a31e2cfa5c"
-    },
-    {
-      "id": 6110,
-      "sourceGame": "costDirective",
-      "q": "A hospital shares billing, scheduling, and imaging across two services, lowering total cost. What is the source of savings?",
-      "options": [
-        "Doubling all inputs for one service",
-        "Ignoring opportunity cost",
-        "Producing below MES by design",
-        "Shared inputs across services"
-      ],
-      "tag": "economies_of_scope",
-      "type": "bridge",
-      "objective": "LO7.7",
-      "difficulty": "microSkillBridge",
-      "conceptCluster": "bridge_costDirective_economies_of_scope",
-      "primarySkill": "economies_of_scope",
-      "secondarySkills": [],
-      "repairSkill": "economies_of_scope",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Scope economies mean joint production costs less than separate production.",
-      "aHash": "a41cfd2051422ae12c1ea25f7fd386929df1e1cefe7464ae60bcd51d44df86a1"
-    },
-    {
-      "id": 6111,
-      "sourceGame": "costDirective",
-      "q": "Product A alone costs $48,000, Product B alone costs $42,000, and joint production costs $83,000. What are scope savings?",
-      "options": [
-        "$7,000",
-        "$90,000",
-        "$83,000",
-        "$5,000"
-      ],
-      "tag": "economies_of_scope",
-      "type": "bridge",
-      "objective": "LO7.7",
-      "difficulty": "microSkillBridge",
-      "conceptCluster": "bridge_costDirective_economies_of_scope",
-      "primarySkill": "economies_of_scope",
-      "secondarySkills": [],
-      "repairSkill": "economies_of_scope",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Scope economies mean joint production costs less than separate production.",
-      "aHash": "24929d1b822720a920162ca6691886650635ae9aa147f274e046b4100b15ad9b"
     }
   ]
 };

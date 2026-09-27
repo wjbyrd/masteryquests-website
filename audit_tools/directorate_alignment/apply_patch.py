@@ -114,10 +114,24 @@ def plan_sources(sources, patches):
         accepted = {change['before'] for change in chain} | {change['after'] for change in chain}
         if current not in accepted:
             raise ValueError(f'Upstream conflict: {key[0]}/{key[1]}; no files written')
-        if location and destination and current != last['after']:
-            source_location = last.get('source')
-            if source_location and (location[0], location[1]) != (source_location['container'], source_location['pool']):
+        if location and current != last['after']:
+            accepted_locations = set()
+            for change in chain:
+                source_location = change.get('source')
+                target_location = change.get('destination') or source_location
+                if current == change['before'] and source_location:
+                    accepted_locations.add((source_location['container'], source_location['pool']))
+                if current == change['after'] and target_location:
+                    accepted_locations.add((target_location['container'], target_location['pool']))
+            if accepted_locations and (location[0], location[1]) not in accepted_locations:
                 raise ValueError(f'Unexpected source pool: {key}; no files written')
+        if last['after'] is None:
+            if not last.get('retire') or destination:
+                raise ValueError(f'Invalid retirement: {key}; no files written')
+            if location:
+                location[3].remove(location[2])
+                pending[key[0]] += 1
+            continue
         already = current == last['after'] and (not destination or (
             location and destination_key in locations and
             (location[0], location[1]) == (destination['container'], destination['pool'])))
@@ -179,7 +193,7 @@ def main():
     parser.add_argument("--validate", action="store_true")
     args = parser.parse_args()
     patches = [json.loads((HERE / name).read_text(encoding='utf-8'))
-               for name in ('content-patch.json', 'continuation-patch.json')]
+               for name in ('content-patch.json', 'continuation-patch.json', 'cost-standard-patch.json')]
     paths = {}
     sources = {}
     for game in GAMES:
@@ -195,7 +209,7 @@ def main():
         if not path.is_relative_to(ROOT / 'play/managerial-intelligence-directorate'):
             raise ValueError('Package path escapes Directorate')
         return path
-    for change in package['textChanges']:
+    for change in package['textChanges'] + [change for patch in patches for change in patch.get('textChanges', [])]:
         path = public_path(change['path'])
         source = text_proposals.get(path, path.read_text(encoding='utf-8-sig'))
         if change['after'] in source and change['before'] not in source:
