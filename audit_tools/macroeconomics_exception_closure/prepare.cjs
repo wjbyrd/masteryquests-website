@@ -1,0 +1,24 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),assert=require('node:assert/strict'),{execFileSync}=require('node:child_process');
+const root=path.resolve(__dirname,'../..'),work=path.join(root,'tmp/macroeconomics_exception_closure'),cdir=path.join(root,'build/faculty-build-composer');
+const core=require(path.join(cdir,'composer-core.js')),contracts=require(path.join(cdir,'tests/composer-integrity-contracts.js'));
+const sha=x=>crypto.createHash('sha256').update(x).digest('hex'),read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
+const source=fs.readFileSync(path.join(cdir,'data/composer_library.js'),'utf8'),lib=JSON.parse(source.slice('window.MQ_COMPOSER_LIBRARY='.length).trim().replace(/;$/,''));
+require(path.join(cdir,'tests/macroeconomics-approved-revisions.js')).assertCurrentLibrary(lib);
+const verification=read('faculty_exports/audits/macroeconomics_final_verification.json'),audit=read('faculty_exports/audits/macroeconomics_audit_findings.json');
+assert.equal(sha(source),verification.currentSourceSHA256,'Start at independently verified source');
+const records=new Map(),locations={};for(const r of contracts.questionRecords(lib)){const id=String(r.question.id);records.set(id,r.question);(locations[id]||=[]).push([r.conceptId,r.pool]);}for(const v of Object.values(locations))v.sort();
+const area=require(path.join(cdir,'course-area-model.js')).create(lib.registry.concepts),areas={general:new Set(),micro:new Set(),macro:new Set()};
+for(const cid of Object.keys(lib.concepts))for(const q of core.ContentScope.allQuestions(core.resolveConceptModule(lib,cid)))for(const a of area.areasFor(cid))areas[a].add(String(q.id));
+const targets=verification.exceptions.map(e=>e.questionID).sort(),protectedIDs=[...new Set([...areas.general,...areas.micro])].sort();
+assert.equal(targets.length,45);assert.equal(new Set(targets).size,45);for(const id of targets){assert(areas.macro.has(id));assert(!protectedIDs.includes(id),'STOP: unexpected shared target '+id);}
+assert.deepEqual(Object.fromEntries(Object.entries(areas).map(([a,ids])=>[a,ids.size])),{general:1589,micro:6301,macro:4745});assert.equal(records.size,9779);
+fs.mkdirSync(work,{recursive:true});fs.mkdirSync(path.join(__dirname,'inputs'),{recursive:true});
+const ref=execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim(),files=execFileSync('git',['ls-files','-z'],{cwd:root,encoding:'utf8',maxBuffer:16e6}).split('\0').filter(Boolean);
+for(const dir of ['faculty_exports/audits'])for(const f of fs.readdirSync(path.join(root,dir),{recursive:true,withFileTypes:true}))if(f.isFile())files.push(path.relative(root,path.join(f.parentPath||f.path,f.name)).replaceAll('\\','/'));
+const hashes={};for(const p of [...new Set(files)])if(fs.existsSync(path.join(root,p)))hashes[p]=sha(fs.readFileSync(path.join(root,p)));
+const baseline={ref,sourceSHA256:sha(source),targets,protectedIDs,areaIDs:Object.fromEntries(Object.entries(areas).map(([a,ids])=>[a,[...ids].sort()])),fileHashes:hashes};
+const out=path.join(__dirname,'inputs/baseline.json');assert(!fs.existsSync(out),'Do not replace frozen closure baseline');fs.writeFileSync(out,JSON.stringify(baseline,null,2));
+fs.writeFileSync(path.join(work,'baseline_records.json'),JSON.stringify(Object.fromEntries([...records].map(([id,q])=>[id,{q,locations:locations[id]}])),null,2));
+fs.writeFileSync(path.join(__dirname,'inputs/before_targets.json'),JSON.stringify(targets.map(id=>({id,question:records.get(id),locations:locations[id],exception:verification.exceptions.find(e=>e.questionID===id),originalFindings:audit.findings.filter(f=>f.affectedQuestionIDs.includes(id))})),null,2));
+console.log(JSON.stringify({ref,sourceSHA256:sha(source),targets:targets.length,macroExclusive:true,protectedIDs:protectedIDs.length,protectedFiles:Object.keys(hashes).length}));

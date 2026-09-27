@@ -1,0 +1,1340 @@
+{
+  "sourceSHA256": "a3a2401485eac1b5119ca9ed8bb80087d0fcdfcafd31d483f9e14d796595da91",
+  "integrity": {
+    "concepts": 149,
+    "questions": 9779,
+    "graphs": 1147,
+    "assets": 507
+  },
+  "changedIDs": [
+    "43088",
+    "43096",
+    "43132",
+    "ECON-EC-FINALBOSS-19010",
+    "ECON-EC-MEDIUMBOSS-18022",
+    "ECON-NL-ELITE-349",
+    "ECON-NL-ELITE-355",
+    "ECON-NL-FINALBOSS-4009",
+    "ECON-NL-FINALBOSS-4015",
+    "ECON-NL-FINALBOSS-4036",
+    "ECON-NL-HARD-249",
+    "ECON-NL-HARD-270",
+    "ECON-NL-LEGENDARY-9064",
+    "ECON-NL-MEDIUMBOSS-3014",
+    "ECON-NL-MEDIUMBOSS-3015",
+    "ECON-NL-MEDIUMBOSS-3019",
+    "ECON-NL-MEDIUMBOSS-3024",
+    "ECON-NL-NOMINAL-VS-REAL-GDP-6006",
+    "ECON-NL-SUBSTITUTION-BIAS-6011",
+    "ECON-NL-UNIONS-EFFICIENCY-WAGES-6035",
+    "ECON-SP-EASYBOSS-2005",
+    "ECON-SP-EASYBOSS-2011",
+    "ECON-SP-HARD-202",
+    "ECON-SP-LEGENDARY-9000",
+    "ECON-SP-LEGENDARY-9022",
+    "ECON-SP-MOVE-ALONG-SRPC-6041",
+    "ECON-SP-TAX-CUT-AD-6033",
+    "LG-B-6003",
+    "LG-Q-200",
+    "LG-Q-2001",
+    "LG-Q-2011",
+    "LG-Q-259",
+    "LG-Q-9044",
+    "LG-Q-9049",
+    "LG-Q-9111",
+    "LG-Q-9113",
+    "P52A-AD-B2-001",
+    "P52A-AD-LB-002",
+    "PM2A-DIS-BR-021",
+    "PM2A-LRPC-BR-022",
+    "PM2B3-SRC-FB-005",
+    "PM2B4-LMI-MB-005",
+    "PM2B4-UTYPE-EB-003",
+    "PM2B4-UTYPE-MB-006",
+    "PM2C1-FED-MB-003"
+  ],
+  "unauthorizedChanges": [],
+  "unchangedCanonicalIDs": 9734,
+  "unchangedMacroIDs": 4700,
+  "sharedProtectedRecords": 6623,
+  "sharedRegressions": [],
+  "counts": {
+    "general": 1589,
+    "micro": 6301,
+    "macro": 4745
+  },
+  "answerChecks": [
+    {
+      "id": "P52A-AD-B2-001",
+      "answerIndex": 3,
+      "key": "Lower money demand lowers the rate; lower supply raises it; investment’s net change is undetermined",
+      "hash": "a3dbf0479a9c8182238e5649d7330151e18f08c0f6eb538b918bd2845d23baf5",
+      "valid": true
+    },
+    {
+      "id": "P52A-AD-LB-002",
+      "answerIndex": 0,
+      "key": "The rate channel restrains investment but optimism outweighs it; with the price level fixed, investment would rise even more",
+      "hash": "bd7337ede1601ed03e31d0cdece5113ee7a537817f917658e65f7c34ca34aae3",
+      "valid": true
+    },
+    {
+      "id": "LG-B-6003",
+      "answerIndex": 0,
+      "key": "Obtain $8,000 additional reserves",
+      "hash": "9a140065996f6e66c9bbe4ad7b3c1cc5e529d62d4e115589865165f7f1a7542a",
+      "valid": true
+    },
+    {
+      "id": "43096",
+      "answerIndex": 0,
+      "key": "A $1 trillion federal budget deficit",
+      "hash": "61400923d3cfba608a9f12a0ce78edd2ccb13e9ab41c142acd9f3cc93a9c29f5",
+      "valid": true
+    },
+    {
+      "id": "PM2C1-FED-MB-003",
+      "answerIndex": 1,
+      "key": "Reserves rise; lending still depends on demand, risk and capital.",
+      "hash": "72694460dc0ff51c32b3e3387b786ec9bb9387f154abc50d0bc92e0df6c4df62",
+      "valid": true
+    },
+    {
+      "id": "ECON-SP-EASYBOSS-2005",
+      "answerIndex": 0,
+      "key": "The bank may reject the requested cut on inflation grounds while explaining how its decision serves the mandate",
+      "hash": "8cb50f8ef91f1f1563dcb533e62a123b84434347f3e531fb1e5bb52e28dee4b0",
+      "valid": true
+    },
+    {
+      "id": "LG-Q-9111",
+      "answerIndex": 2,
+      "key": "Reserves rise; lending still depends on demand, risk and capital.",
+      "hash": "72694460dc0ff51c32b3e3387b786ec9bb9387f154abc50d0bc92e0df6c4df62",
+      "valid": true
+    },
+    {
+      "id": "ECON-NL-SUBSTITUTION-BIAS-6011",
+      "answerIndex": 1,
+      "key": "Overstates by $4: fixed-basket cost rises $4; the equally satisfactory basket’s cost is unchanged",
+      "hash": "0f7a23702e8c4b38f46d9f3ed335f2f7a54c0e07a2f5ad861bb2aa0f5954d2c8",
+      "valid": true
+    },
+    {
+      "id": "43132",
+      "answerIndex": 0,
+      "key": "Nominal GDP grew faster than debt",
+      "hash": "a7b7bad5fe8ff684e7ef000a97c6faac618d6393d89bfcb1d39f1c62cb834924",
+      "valid": true
+    },
+    {
+      "id": "43088",
+      "answerIndex": 1,
+      "key": "$40; subtract initial debt and the first deficit from the ending stock",
+      "hash": "f0b1fc1074cff5a92ead9b2848fda16d50fde5a531d5411bc71a166c2665f9dd",
+      "valid": true
+    },
+    {
+      "id": "ECON-SP-HARD-202",
+      "answerIndex": 2,
+      "key": "8",
+      "hash": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
+      "valid": true
+    },
+    {
+      "id": "ECON-SP-EASYBOSS-2011",
+      "answerIndex": 0,
+      "key": "$20 million decrease in reserves; the eventual deposit decrease is five times that initial change",
+      "hash": "335198e5fc543cdfe76e49a428ff51848d817ed2eb36c61c9b6fd4e7aecccc94",
+      "valid": true
+    },
+    {
+      "id": "PM2A-DIS-BR-021",
+      "answerIndex": 2,
+      "key": "206; disinflation",
+      "hash": "1789cc9ff4a9394ea26a82e7725e26e41aceabcd470bfbe631e0d0ebdccfccc1",
+      "valid": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9064",
+      "answerIndex": 0,
+      "key": "Total GDP may rise while output per person falls",
+      "hash": "fb51ec063099ca4357d1353fe2306124ba7db21d548e4561fd2882faab09c885",
+      "valid": true
+    },
+    {
+      "id": "ECON-SP-TAX-CUT-AD-6033",
+      "answerIndex": 1,
+      "key": "Government purchases add $10 more",
+      "hash": "a65612d51fc90876e53972875ab3a0befc0e422f683094af47505e105bed52da",
+      "valid": true
+    },
+    {
+      "id": "LG-Q-9044",
+      "answerIndex": 0,
+      "key": "15 percent",
+      "hash": "3a80ef26532983831652bbe72f1db7e9d7161f7cab573daa2e300097f2c17019",
+      "valid": true
+    },
+    {
+      "id": "ECON-SP-LEGENDARY-9000",
+      "answerIndex": 1,
+      "key": "Demand tightening can close the gap sooner; without it, rising wages/expected prices can shift SRAS left toward potential",
+      "hash": "6e32251257713df645481f071cfa4ce84cf31b13fe1ff8b301d2fefa9bca5bb0",
+      "valid": true
+    },
+    {
+      "id": "PM2B4-LMI-MB-005",
+      "answerIndex": 2,
+      "key": "The minimum changes from nonbinding to binding; employment is 90 and the labor surplus is 30",
+      "hash": "051752801b102371191ab0c1f47aa679e1a46750908b512d95dcd082a15f1b43",
+      "valid": true
+    },
+    {
+      "id": "ECON-NL-UNIONS-EFFICIENCY-WAGES-6035",
+      "answerIndex": 2,
+      "key": "90 employed; 30 workers in excess supply",
+      "hash": "1407c14cb555d226ce6d46c38fb8b7f104a9c74a3839d79b91e28313508de0c8",
+      "valid": true
+    },
+    {
+      "id": "LG-Q-259",
+      "answerIndex": 0,
+      "key": "Interest rates rise.",
+      "hash": "f8f05912af6bde1181809212fa51728244feef1e73591cf75e252df11713aa95",
+      "valid": true
+    },
+    {
+      "id": "PM2A-LRPC-BR-022",
+      "answerIndex": 0,
+      "key": "5% unemployment and 6% inflation, on an LRPC to the right of the old one",
+      "hash": "30ad0943d12472548f9d19b1416c6cc6d87fe50f114ee0e24f7766054b703dd5",
+      "valid": true
+    },
+    {
+      "id": "LG-Q-2011",
+      "answerIndex": 2,
+      "key": "Excess reserves: $140→$70; actual lending also depends on bank and borrower responses.",
+      "hash": "9cb7ba1c0a9509ee35821fb4192ef2bac520d4810dc6d86cbcfd993a217fea73",
+      "valid": true
+    },
+    {
+      "id": "LG-Q-9113",
+      "answerIndex": 0,
+      "key": "Excess reserves: $220→$110; actual lending also depends on bank and borrower responses.",
+      "hash": "2f36772daa81a38ebf24f96057d0d68b805dc9d75a9e4821a242063e4dc9966f",
+      "valid": true
+    },
+    {
+      "id": "ECON-SP-LEGENDARY-9022",
+      "answerIndex": 0,
+      "key": "Monetary policy works mainly through money supply, interest rates, and investment.",
+      "hash": "16b142c3efc75d2554366deecbaa35d20bca92db594b2f09bae553557c1e6db6",
+      "valid": true
+    },
+    {
+      "id": "LG-Q-200",
+      "answerIndex": 0,
+      "key": "Medium of exchange, unit of account, store of value",
+      "hash": "c5432a096de4e07be7e4c5624710cfef5a6eac830edd9c957e78ac5642783be0",
+      "valid": true
+    },
+    {
+      "id": "LG-Q-2001",
+      "answerIndex": 3,
+      "key": "Reliable for exchange and price comparison; impaired for preserving purchasing power between pay periods",
+      "hash": "74c8d15e83bb6f8210dc4d6ed17868511da2faf439742cdc94c25c4edfac89fd",
+      "valid": true
+    },
+    {
+      "id": "LG-Q-9049",
+      "answerIndex": 0,
+      "key": "P falls from 4 to 2, so each dollar buys more.",
+      "hash": "5a2796db1f47f617464b5456291c3a1db0696c4150c845a17687ea18cfec6908",
+      "valid": true
+    },
+    {
+      "id": "ECON-NL-NOMINAL-VS-REAL-GDP-6006",
+      "answerIndex": 1,
+      "key": "$550",
+      "hash": "e789e987bfc9d5a48e3402267cdee80841171d7399ab25d3e38580b9f2ca4bae",
+      "valid": true
+    },
+    {
+      "id": "ECON-SP-MOVE-ALONG-SRPC-6041",
+      "answerIndex": 0,
+      "key": "6% inflation; an upward shift of the SRPC",
+      "hash": "002bb9d331b14fec7b1fa7b94a6e2831779ee9dd86bc0c14f16645483e8aa8ee",
+      "valid": true
+    },
+    {
+      "id": "ECON-NL-ELITE-355",
+      "answerIndex": 0,
+      "key": "Scarce capital has high returns, which fall as capital accumulates",
+      "hash": "128e4215f6659650f64f2b02c3fbdcb7dbd576b304c6662486771bd67766929a",
+      "valid": true
+    },
+    {
+      "id": "ECON-NL-HARD-249",
+      "answerIndex": 0,
+      "key": "Capital, worker skills, and technology",
+      "hash": "d74115bf265f09f4abfd2fdf8e758f19acbcbcb01927cf7acf96962b6c0de3e7",
+      "valid": true
+    },
+    {
+      "id": "ECON-NL-ELITE-349",
+      "answerIndex": 0,
+      "key": "Capital, skills, and technology/infrastructure",
+      "hash": "5569beeaa14c6215e0cdd728dc87e867bb3acf15e9ec077eb70a8e2737b73315",
+      "valid": true
+    },
+    {
+      "id": "ECON-NL-MEDIUMBOSS-3014",
+      "answerIndex": 2,
+      "key": "The investment preserves 20 units per hour relative to no replacement, despite no rise from last year",
+      "hash": "4ca8b0745f12b011b84a14c11d1986165b2aacfbbcf6b6643c66e577c59eb1b1",
+      "valid": true
+    },
+    {
+      "id": "ECON-NL-MEDIUMBOSS-3015",
+      "answerIndex": 1,
+      "key": "Compare trained and untrained workers using the same machines and the same method for equal hours",
+      "hash": "4e9f3783582f26f5bd8f8610d1927a199980b3ed4bc9e67fc5cb7ba19be224f1",
+      "valid": true
+    },
+    {
+      "id": "ECON-NL-MEDIUMBOSS-3019",
+      "answerIndex": 1,
+      "key": "The method is the supported source; A’s output per hour rises 20% relative to its unchanged-hours baseline",
+      "hash": "757d7d77885eebdba11116e2289e426678cad2682cbf3120703dddbac485c215",
+      "valid": true
+    },
+    {
+      "id": "ECON-NL-MEDIUMBOSS-3024",
+      "answerIndex": 1,
+      "key": "Output per hour falls 4%; output growth alone does not establish a productivity gain",
+      "hash": "10f03bf9a2b2bca331f6741a260755026a8a61a5924780117a019fa20ec7d16e",
+      "valid": true
+    },
+    {
+      "id": "PM2B3-SRC-FB-005",
+      "answerIndex": 0,
+      "key": "A produces 96 and B produces 115; A’s larger productivity gain is outweighed by its hours reduction",
+      "hash": "45d26dfb639fffe4d865d268f59669b35e6cad293011277f910301bfcedbebd5",
+      "valid": true
+    },
+    {
+      "id": "ECON-EC-FINALBOSS-19010",
+      "answerIndex": 0,
+      "key": "Machine gains remain positive but shrink from 10 to 6; training adds human capital and a further gain of 8",
+      "hash": "1e0a5b1156e2a63154ab929a1c49b6b7434ddad4216cde03197b9d18457566b2",
+      "valid": true
+    },
+    {
+      "id": "ECON-EC-MEDIUMBOSS-18022",
+      "answerIndex": 3,
+      "key": "Training; its gain of 8 exceeds the next machine gain, which is below 6",
+      "hash": "63fbef6bbb97711d7f15071e7a3f656fbf1847e47b36930a2c863a0393911f5f",
+      "valid": true
+    },
+    {
+      "id": "ECON-NL-HARD-270",
+      "answerIndex": 0,
+      "key": "Cyclical and frictional",
+      "hash": "08e61242cde2ea8af54ef5c63ef140400b45c7e79099743c60e6d8cc28d70f71",
+      "valid": true
+    },
+    {
+      "id": "ECON-NL-FINALBOSS-4009",
+      "answerIndex": 0,
+      "key": "The natural rate falls from 5% to 4%, and final actual unemployment is 4%",
+      "hash": "d71fed87a4eb0dd2804908e647ba236bed647419f4abdea9eb4e9042cff9045b",
+      "valid": true
+    },
+    {
+      "id": "ECON-NL-FINALBOSS-4015",
+      "answerIndex": 3,
+      "key": "An initially cyclical loss has become a structural mismatch, so the remaining barrier requires skills or matching adjustment",
+      "hash": "534849fce6c67de8f2a340cac62c676810b17b70741b951fb6bca8870dcbd8fa",
+      "valid": true
+    },
+    {
+      "id": "ECON-NL-FINALBOSS-4036",
+      "answerIndex": 0,
+      "key": "The natural rate falls 2 points, while rising cyclical unemployment offsets that improvement in the measured total",
+      "hash": "825bcd101d86a94522e4634d72d30fd1acd6c29e1beec34a18c18f7b401ac341",
+      "valid": true
+    },
+    {
+      "id": "PM2B4-UTYPE-EB-003",
+      "answerIndex": 3,
+      "key": "A’s cyclical unemployment should recede; B’s frictional search can remain",
+      "hash": "8f25727e87e25af39de644b2f5fac5c852951c7200f48f9fbe6749c280d9f272",
+      "valid": true
+    },
+    {
+      "id": "PM2B4-UTYPE-MB-006",
+      "answerIndex": 0,
+      "key": "Employment stays at 94 and the labor force falls to 98; the lower rate does not establish a jobs recovery",
+      "hash": "898312b25e668c7c3046e96c904fca1f1686f670a87ffbb42ecf926e43e6a471",
+      "valid": true
+    }
+  ],
+  "repairChecks": [
+    {
+      "id": "ECON-NL-NOMINAL-VS-REAL-GDP-6006",
+      "conceptId": "real-versus-nominal-gdp",
+      "primarySkill": "nominal_vs_real_gdp",
+      "repairSkill": "nominal_vs_real_gdp",
+      "repairIDs": [
+        "ECON-NL-NOMINAL-VS-REAL-GDP-5012",
+        "ECON-NL-NOMINAL-VS-REAL-GDP-5013"
+      ],
+      "expectedRepairIDs": [
+        "ECON-NL-NOMINAL-VS-REAL-GDP-5012",
+        "ECON-NL-NOMINAL-VS-REAL-GDP-5013"
+      ],
+      "repairs": [
+        {
+          "id": "ECON-NL-NOMINAL-VS-REAL-GDP-5012",
+          "q": "Nominal GDP rises while quantities are unchanged. Does that prove production increased?",
+          "options": [
+            "No; higher current prices can raise nominal GDP",
+            "Yes; nominal GDP measures only changes in physical quantities",
+            "Yes; every nominal increase establishes the same real growth",
+            "No; nominal GDP deliberately excludes every change in prices"
+          ],
+          "feedback": "Compare nominal and real GDP to separate price changes from changes in production."
+        },
+        {
+          "id": "ECON-NL-NOMINAL-VS-REAL-GDP-5013",
+          "q": "Is real GDP calculated by simply subtracting the inflation rate from nominal GDP?",
+          "options": [
+            "Yes; subtract the inflation percentage directly from the nominal dollar level",
+            "Yes; but only when the measured inflation rate remains positive",
+            "No; value current quantities at current prices in both measures",
+            "No; value current quantities at consistent base-year prices"
+          ],
+          "feedback": "Multiply current quantities by the designated base-year prices and add across final goods."
+        }
+      ],
+      "bridgeRetestIDs": [
+        "ECON-NL-NOMINAL-VS-REAL-GDP-6006"
+      ],
+      "singleConceptRouting": true
+    },
+    {
+      "id": "ECON-NL-SUBSTITUTION-BIAS-6011",
+      "conceptId": "cpi-bias",
+      "primarySkill": "substitution_bias",
+      "repairSkill": "substitution_bias",
+      "repairIDs": [
+        "ECON-NL-SUBSTITUTION-BIAS-5023",
+        "ECON-NL-SUBSTITUTION-BIAS-5022"
+      ],
+      "expectedRepairIDs": [
+        "ECON-NL-SUBSTITUTION-BIAS-5022",
+        "ECON-NL-SUBSTITUTION-BIAS-5023"
+      ],
+      "repairs": [
+        {
+          "id": "ECON-NL-SUBSTITUTION-BIAS-5023",
+          "q": "If beef gets expensive and consumers buy more chicken, the CPI may:",
+          "options": [
+            "Overstate the rise in cost of living",
+            "Perfectly capture the change",
+            "Measure unemployment instead",
+            "Ignore all food"
+          ],
+          "feedback": "The fixed CPI basket may miss substitution toward cheaper chicken."
+        },
+        {
+          "id": "ECON-NL-SUBSTITUTION-BIAS-5022",
+          "q": "Substitution bias happens because consumers:",
+          "options": [
+            "Switch toward relatively cheaper goods",
+            "Never respond to prices",
+            "Only buy imports",
+            "Stop buying all goods"
+          ],
+          "feedback": "Consumers substitute toward goods that become relatively cheaper."
+        }
+      ],
+      "bridgeRetestIDs": [
+        "ECON-NL-SUBSTITUTION-BIAS-6011"
+      ],
+      "singleConceptRouting": true
+    },
+    {
+      "id": "ECON-SP-MOVE-ALONG-SRPC-6041",
+      "conceptId": "short-run-phillips-curve",
+      "primarySkill": "expectations_adjustment",
+      "repairSkill": "expectations_adjustment",
+      "repairIDs": [
+        "ECON-SP-DEFINE-PHILLIPS-CURVE-5048",
+        "ECON-SP-MOVE-ALONG-SRPC-5050",
+        "ECON-SP-NATURAL-RATE-HYPOTHESIS-5052",
+        "ECON-SP-READ-PC-AXES-5049",
+        "ECON-SP-READ-PC-POINTS-5091"
+      ],
+      "expectedRepairIDs": [
+        "ECON-SP-MOVE-ALONG-SRPC-5050"
+      ],
+      "repairs": [
+        {
+          "id": "ECON-SP-DEFINE-PHILLIPS-CURVE-5048",
+          "q": "A demand increase raises inflation and lowers unemployment while expectations are unchanged. Is this a movement or a shift?",
+          "options": [
+            "A movement along the current SRPC",
+            "An upward shift of the entire SRPC",
+            "A leftward shift of the LRPC",
+            "A downward shift of the entire SRPC"
+          ],
+          "feedback": "With expected inflation initially fixed, a demand change moves the economy along the current SRPC."
+        },
+        {
+          "id": "ECON-SP-MOVE-ALONG-SRPC-5050",
+          "q": "Expected inflation rises while unemployment is held fixed. What happens to the SRPC?",
+          "options": [
+            "The economy moves up the same SRPC",
+            "It shifts downward",
+            "The LRPC becomes horizontal",
+            "It shifts upward"
+          ],
+          "feedback": "A changed inflation-unemployment relationship shifts the SRPC; it is not movement along the same curve."
+        },
+        {
+          "id": "ECON-SP-NATURAL-RATE-HYPOTHESIS-5052",
+          "q": "On a Phillips graph, moving upward and left along one SRPC means what?",
+          "options": [
+            "Inflation falls while unemployment rises",
+            "Inflation and unemployment both fall",
+            "Inflation rises while unemployment falls",
+            "Inflation and unemployment both rise"
+          ],
+          "feedback": "On a given SRPC, lower unemployment is associated with higher inflation only in the short run."
+        },
+        {
+          "id": "ECON-SP-READ-PC-AXES-5049",
+          "q": "Can a downward-sloping SRPC guarantee permanently lower unemployment from higher inflation?",
+          "options": [
+            "No, because demand never affects unemployment",
+            "No, because expected inflation adjusts",
+            "Yes, because the same SRPC is permanent",
+            "Yes, because natural unemployment becomes zero"
+          ],
+          "feedback": "On a given SRPC, lower unemployment is associated with higher inflation only in the short run."
+        },
+        {
+          "id": "ECON-SP-READ-PC-POINTS-5091",
+          "q": "An adverse supply shock raises inflation and unemployment together. What curve change is indicated?",
+          "options": [
+            "An upward shift of the SRPC",
+            "Movement up-left along the same SRPC",
+            "A downward shift of the SRPC",
+            "A vertical movement along the LRPC"
+          ],
+          "feedback": "A changed inflation-unemployment relationship shifts the SRPC; it is not movement along the same curve."
+        }
+      ],
+      "bridgeRetestIDs": [
+        "ECON-SP-MOVE-ALONG-SRPC-6041"
+      ],
+      "singleConceptRouting": true
+    },
+    {
+      "id": "ECON-SP-TAX-CUT-AD-6033",
+      "conceptId": "fiscal-policy-and-aggregate-demand",
+      "primarySkill": "tax_cut_ad",
+      "repairSkill": "tax_cut_ad",
+      "repairIDs": [
+        "ECON-SP-TAX-CUT-AD-5042"
+      ],
+      "expectedRepairIDs": [
+        "ECON-SP-TAX-CUT-AD-5042"
+      ],
+      "repairs": [
+        {
+          "id": "ECON-SP-TAX-CUT-AD-5042",
+          "q": "A $40 billion tax cut raises disposable income and MPC is 0.75. Before later multiplier rounds, how much does consumption increase?",
+          "options": [
+            "$30 billion.",
+            "$40 billion.",
+            "$10 billion.",
+            "$53.3 billion."
+          ],
+          "feedback": "The first-round consumption effect equals the change in disposable income times MPC."
+        }
+      ],
+      "bridgeRetestIDs": [
+        "ECON-SP-TAX-CUT-AD-6033"
+      ],
+      "singleConceptRouting": true
+    },
+    {
+      "id": "LG-B-6003",
+      "conceptId": "bank-balance-sheets-reserves-and-capital",
+      "primarySkill": "required_reserves_formula",
+      "repairSkill": "calculate_required_reserves",
+      "repairIDs": [
+        "ECON-SP-CALCULATE-REQUIRED-RESERVES-5006"
+      ],
+      "expectedRepairIDs": [
+        "ECON-SP-CALCULATE-REQUIRED-RESERVES-5006"
+      ],
+      "repairs": [
+        {
+          "id": "ECON-SP-CALCULATE-REQUIRED-RESERVES-5006",
+          "q": "Deposits are $1,000 and the reserve requirement is 10 percent. Required reserves are:",
+          "options": [
+            "$100",
+            "$10",
+            "$900",
+            "$1,100"
+          ],
+          "feedback": "Required reserves equal deposits times the reserve requirement: $1,000 x 0.10 = $100."
+        }
+      ],
+      "bridgeRetestIDs": [
+        "ECON-SP-CALCULATE-REQUIRED-RESERVES-6004",
+        "LG-B-6003"
+      ],
+      "singleConceptRouting": true
+    },
+    {
+      "id": "PM2A-DIS-BR-021",
+      "conceptId": "disinflation-and-policy",
+      "primarySkill": "policy_path",
+      "repairSkill": "policy_path",
+      "repairIDs": [
+        "ECON-SP-DISINFLATION-UNEMPLOYMENT-COST-5057",
+        "ECON-SP-MONETARY-POLICY-PC-TRANSITION-5056"
+      ],
+      "expectedRepairIDs": [
+        "ECON-SP-DISINFLATION-UNEMPLOYMENT-COST-5057"
+      ],
+      "repairs": [
+        {
+          "id": "ECON-SP-DISINFLATION-UNEMPLOYMENT-COST-5057",
+          "q": "Inflation falls from 5% to 2% but remains positive. Did the price level fall?",
+          "options": [
+            "No; it rose more slowly",
+            "Yes; any inflation decline lowers prices",
+            "Yes; disinflation and deflation are identical",
+            "No; the price level stayed exactly fixed"
+          ],
+          "feedback": "Disinflation is a decline in the inflation rate; deflation is a decline in the price level."
+        },
+        {
+          "id": "ECON-SP-MONETARY-POLICY-PC-TRANSITION-5056",
+          "q": "Contractionary disinflation raises unemployment in the short run. Is that necessarily permanent?",
+          "options": [
+            "Yes; every contraction shifts LRPC right",
+            "Yes; the SRPC never shifts after policy",
+            "No; unemployment must fall below natural immediately",
+            "No; unemployment can return toward natural as expectations adjust"
+          ],
+          "feedback": "Contraction reduces aggregate demand and inflation pressure, normally creating a short-run output gap and higher unemployment."
+        }
+      ],
+      "bridgeRetestIDs": [
+        "PM2A-DIS-BR-021"
+      ],
+      "singleConceptRouting": true
+    },
+    {
+      "id": "PM2A-LRPC-BR-022",
+      "conceptId": "long-run-phillips-curve",
+      "primarySkill": "natural_rate_hypothesis",
+      "repairSkill": "natural_rate_hypothesis",
+      "repairIDs": [
+        "ECON-SP-IDENTIFY-LRPC-5051",
+        "ECON-SP-IDENTIFY-NATURAL-UNEMPLOYMENT-5077"
+      ],
+      "expectedRepairIDs": [
+        "ECON-SP-IDENTIFY-LRPC-5051",
+        "ECON-SP-IDENTIFY-NATURAL-UNEMPLOYMENT-5077"
+      ],
+      "repairs": [
+        {
+          "id": "ECON-SP-IDENTIFY-LRPC-5051",
+          "q": "Why does higher inflation not permanently lower unemployment in the natural-rate model?",
+          "options": [
+            "Expected inflation adjusts and unemployment returns toward natural",
+            "Aggregate demand has no short-run effect",
+            "The natural rate always falls with inflation",
+            "Nominal wages never respond to prices"
+          ],
+          "feedback": "The LRPC is vertical at the natural rate because expected inflation adjusts in the long run."
+        },
+        {
+          "id": "ECON-SP-IDENTIFY-NATURAL-UNEMPLOYMENT-5077",
+          "q": "Structural unemployment falls because matching improves. Is that movement along or a shift of LRPC?",
+          "options": [
+            "Movement upward along the LRPC",
+            "Movement left along a fixed LRPC",
+            "An upward shift of SRPC only",
+            "A leftward shift of the LRPC"
+          ],
+          "feedback": "A change in labor-market structure can shift the vertical LRPC to a new natural rate."
+        }
+      ],
+      "bridgeRetestIDs": [
+        "ECON-SP-IDENTIFY-LRPC-6042",
+        "PM2A-LRPC-BR-021",
+        "PM2A-LRPC-BR-022"
+      ],
+      "singleConceptRouting": true
+    },
+    {
+      "id": "ECON-NL-UNIONS-EFFICIENCY-WAGES-6035",
+      "conceptId": "labor-market-institutions",
+      "primarySkill": "unions_efficiency_wages",
+      "repairSkill": "unions_efficiency_wages",
+      "repairIDs": [
+        "ECON-NL-UNIONS-EFFICIENCY-WAGES-5055"
+      ],
+      "expectedRepairIDs": [
+        "ECON-NL-UNIONS-EFFICIENCY-WAGES-5055"
+      ],
+      "repairs": [
+        {
+          "id": "ECON-NL-UNIONS-EFFICIENCY-WAGES-5055",
+          "q": "Unions and efficiency wages can both create unemployment when they:",
+          "options": [
+            "Keep wages above equilibrium",
+            "Lower wages below equilibrium",
+            "Eliminate labor supply",
+            "Make CPI rise"
+          ],
+          "feedback": "Above-equilibrium wages can create a surplus of labor."
+        }
+      ],
+      "bridgeRetestIDs": [
+        "ECON-NL-UNIONS-EFFICIENCY-WAGES-6035"
+      ],
+      "singleConceptRouting": true
+    },
+    {
+      "id": "LG-Q-9111",
+      "conceptId": "central-bank-and-federal-reserve",
+      "primarySkill": "reserve_supply_vs_lending",
+      "repairSkill": "reserve_supply_vs_lending",
+      "repairIDs": [
+        "PM2C1-FED-M-001",
+        "PM2C1-FED-H-002"
+      ],
+      "expectedRepairIDs": [
+        "PM2C1-FED-M-001",
+        "PM2C1-FED-H-002"
+      ],
+      "repairs": [
+        {
+          "id": "PM2C1-FED-M-001",
+          "q": "A commercial bank approves a loan and credits the borrower’s checking account. In a separate transaction, the Federal Reserve credits a bank’s reserve account during an asset purchase. Which distinction is correct?",
+          "options": [
+            "The commercial bank creates a deposit liability; the Fed creates central-bank reserves",
+            "The Fed creates the borrower’s commercial-bank deposit, while the bank creates central-bank reserves",
+            "Both transactions create only physical currency held by the public",
+            "Neither transaction changes any bank liability or reserve balance"
+          ],
+          "feedback": "Commercial banks create deposit liabilities when they lend; the central bank creates reserve balances/base money used by banks."
+        },
+        {
+          "id": "PM2C1-FED-H-002",
+          "q": "A central-bank asset purchase sharply increases reserve balances, yet commercial-bank lending changes little. Which statement best separates the institutions’ roles?",
+          "options": [
+            "The central bank failed to create any reserve balances because commercial banks did not expand loans after the asset purchase",
+            "Commercial banks create central-bank reserves whenever they choose not to lend",
+            "Reserve balances are identical to bank capital, so unchanged lending proves capital was unchanged",
+            "The central bank creates reserves; commercial-bank deposit creation still depends on lending and borrowing"
+          ],
+          "feedback": "The central bank can supply reserves, but broad deposit creation also depends on banks, borrowers, and redepositing behavior."
+        }
+      ],
+      "bridgeRetestIDs": [],
+      "singleConceptRouting": true
+    },
+    {
+      "id": "LG-Q-2011",
+      "conceptId": "monetary-policy-tools",
+      "primarySkill": "compare_excess_reserves_after_policy_change",
+      "repairSkill": "reserve_requirement_effect",
+      "repairIDs": [
+        "LG-R-5018"
+      ],
+      "expectedRepairIDs": [
+        "LG-R-5018"
+      ],
+      "repairs": [
+        {
+          "id": "LG-R-5018",
+          "q": "If the reserve requirement is lowered, other things equal, what happens to the amount of deposits banks must hold as required reserves?",
+          "options": [
+            "It falls, leaving more reserves potentially available for lending",
+            "It rises, leaving fewer reserves potentially available for lending",
+            "It is unchanged because reserve requirements affect only currency",
+            "It becomes equal to total bank capital"
+          ],
+          "feedback": "A lower reserve requirement reduces the amount of deposits that must be held as required reserves, leaving more reserves potentially available for lending."
+        }
+      ],
+      "bridgeRetestIDs": [],
+      "singleConceptRouting": true
+    },
+    {
+      "id": "LG-Q-9113",
+      "conceptId": "monetary-policy-tools",
+      "primarySkill": "compare_excess_reserves_after_policy_change",
+      "repairSkill": "reserve_requirement_effect",
+      "repairIDs": [
+        "LG-R-5018"
+      ],
+      "expectedRepairIDs": [
+        "LG-R-5018"
+      ],
+      "repairs": [
+        {
+          "id": "LG-R-5018",
+          "q": "If the reserve requirement is lowered, other things equal, what happens to the amount of deposits banks must hold as required reserves?",
+          "options": [
+            "It falls, leaving more reserves potentially available for lending",
+            "It rises, leaving fewer reserves potentially available for lending",
+            "It is unchanged because reserve requirements affect only currency",
+            "It becomes equal to total bank capital"
+          ],
+          "feedback": "A lower reserve requirement reduces the amount of deposits that must be held as required reserves, leaving more reserves potentially available for lending."
+        }
+      ],
+      "bridgeRetestIDs": [],
+      "singleConceptRouting": true
+    },
+    {
+      "id": "PM2C1-FED-MB-003",
+      "conceptId": "central-bank-and-federal-reserve",
+      "primarySkill": "reserve_supply_vs_lending",
+      "repairSkill": "reserve_supply_vs_lending",
+      "repairIDs": [
+        "PM2C1-FED-M-001",
+        "PM2C1-FED-H-002"
+      ],
+      "expectedRepairIDs": [
+        "PM2C1-FED-M-001",
+        "PM2C1-FED-H-002"
+      ],
+      "repairs": [
+        {
+          "id": "PM2C1-FED-M-001",
+          "q": "A commercial bank approves a loan and credits the borrower’s checking account. In a separate transaction, the Federal Reserve credits a bank’s reserve account during an asset purchase. Which distinction is correct?",
+          "options": [
+            "The commercial bank creates a deposit liability; the Fed creates central-bank reserves",
+            "The Fed creates the borrower’s commercial-bank deposit, while the bank creates central-bank reserves",
+            "Both transactions create only physical currency held by the public",
+            "Neither transaction changes any bank liability or reserve balance"
+          ],
+          "feedback": "Commercial banks create deposit liabilities when they lend; the central bank creates reserve balances/base money used by banks."
+        },
+        {
+          "id": "PM2C1-FED-H-002",
+          "q": "A central-bank asset purchase sharply increases reserve balances, yet commercial-bank lending changes little. Which statement best separates the institutions’ roles?",
+          "options": [
+            "The central bank failed to create any reserve balances because commercial banks did not expand loans after the asset purchase",
+            "Commercial banks create central-bank reserves whenever they choose not to lend",
+            "Reserve balances are identical to bank capital, so unchanged lending proves capital was unchanged",
+            "The central bank creates reserves; commercial-bank deposit creation still depends on lending and borrowing"
+          ],
+          "feedback": "The central bank can supply reserves, but broad deposit creation also depends on banks, borrowers, and redepositing behavior."
+        }
+      ],
+      "bridgeRetestIDs": [],
+      "singleConceptRouting": true
+    },
+    {
+      "id": "ECON-SP-LEGENDARY-9000",
+      "conceptId": "integrated-macroeconomic-analysis",
+      "primarySkill": "choose_stabilization_response",
+      "repairSkill": "choose_stabilization_response",
+      "repairIDs": [
+        "ECON-SP-CHOOSE-STABILIZATION-RESPONSE-5063"
+      ],
+      "repairs": [
+        {
+          "id": "ECON-SP-CHOOSE-STABILIZATION-RESPONSE-5063",
+          "q": "If output is below potential because AD is weak, policy that shifts AD right is:",
+          "feedback": "Expansionary policy shifts AD right and can help close a recessionary gap."
+        }
+      ],
+      "singleConceptRouting": false,
+      "context": "Full Macro: the integrated supplement uses the existing stabilization-policy repair."
+    }
+  ],
+  "difficultyChecks": [
+    {
+      "id": "43096",
+      "before": "easy",
+      "after": "medium",
+      "locations": [
+        [
+          "budget-accounting-and-public-saving",
+          "medium"
+        ]
+      ],
+      "contentUnchanged": true
+    },
+    {
+      "id": "43132",
+      "before": "easy",
+      "after": "medium",
+      "locations": [
+        [
+          "debt-measures-burden-and-fiscal-data",
+          "medium"
+        ]
+      ],
+      "contentUnchanged": true
+    },
+    {
+      "id": "ECON-NL-ELITE-349",
+      "before": "hard",
+      "after": "medium",
+      "locations": [
+        [
+          "sources-of-productivity",
+          "medium"
+        ]
+      ],
+      "contentUnchanged": true
+    },
+    {
+      "id": "ECON-NL-HARD-249",
+      "before": "hard",
+      "after": "medium",
+      "locations": [
+        [
+          "sources-of-productivity",
+          "medium"
+        ]
+      ],
+      "contentUnchanged": true
+    },
+    {
+      "id": "ECON-NL-ELITE-355",
+      "before": "hard",
+      "after": "easy",
+      "locations": [
+        [
+          "sources-of-productivity",
+          "easy"
+        ]
+      ],
+      "contentUnchanged": true
+    },
+    {
+      "id": "ECON-NL-HARD-270",
+      "before": "hard",
+      "after": "medium",
+      "locations": [
+        [
+          "unemployment-types",
+          "medium"
+        ]
+      ],
+      "contentUnchanged": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9064",
+      "before": "hard",
+      "after": "medium",
+      "locations": [
+        [
+          "economic-growth-policy",
+          "medium"
+        ]
+      ],
+      "contentUnchanged": true
+    },
+    {
+      "id": "ECON-SP-HARD-202",
+      "before": "easy",
+      "after": "medium",
+      "locations": [
+        [
+          "deposit-creation-and-money-multiplier",
+          "calculation"
+        ]
+      ],
+      "contentUnchanged": true
+    },
+    {
+      "id": "ECON-SP-LEGENDARY-9022",
+      "before": "hard",
+      "after": "medium",
+      "locations": [
+        [
+          "monetary-policy-transmission",
+          "medium"
+        ]
+      ],
+      "contentUnchanged": true
+    },
+    {
+      "id": "LG-Q-200",
+      "before": "hard",
+      "after": "medium",
+      "locations": [
+        [
+          "money-functions-and-measures",
+          "medium"
+        ]
+      ],
+      "contentUnchanged": true
+    },
+    {
+      "id": "LG-Q-259",
+      "before": "hard",
+      "after": "medium",
+      "locations": [
+        [
+          "liquidity-preference-and-money-market",
+          "medium"
+        ]
+      ],
+      "contentUnchanged": true
+    },
+    {
+      "id": "LG-Q-9044",
+      "before": "hard",
+      "after": "medium",
+      "locations": [
+        [
+          "inflation-costs",
+          "medium"
+        ]
+      ],
+      "contentUnchanged": true
+    },
+    {
+      "id": "LG-Q-9049",
+      "before": "hard",
+      "after": "medium",
+      "locations": [
+        [
+          "quantity-theory-of-money",
+          "medium"
+        ]
+      ],
+      "contentUnchanged": true
+    }
+  ],
+  "scopeAdapterProbes": {
+    "unauthorizedRecordRejected": "ECON-SP-EASY-38",
+    "unauthorizedTargetValueRejected": "43088"
+  },
+  "inventorySelections": 89,
+  "newUnavailableCombinations": 11,
+  "newAvailableCombinations": 0,
+  "publication": {
+    "canonicalMacro": 4745,
+    "published": 4743,
+    "omitted": [
+      "ECON-SP-MAP-AD-AS-TO-PC-5061",
+      "ECON-SP-MAP-AD-AS-TO-PC-6052"
+    ],
+    "newOmissions": [],
+    "allTargetsPresent": true,
+    "parityFailures": [],
+    "modes": [
+      {
+        "mode": "standard",
+        "label": "Standard Campaign",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 671
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 1057
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 732
+          },
+          {
+            "pool": "easyBoss",
+            "minimum": 3,
+            "count": 232
+          },
+          {
+            "pool": "mediumBoss",
+            "minimum": 3,
+            "count": 244
+          },
+          {
+            "pool": "finalBoss",
+            "minimum": 3,
+            "count": 281
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 337
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 245
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "timed",
+        "label": "Timed Trial",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 671
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 1057
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 732
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 337
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 245
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "exam",
+        "label": "Exam Drill",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 671
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 1057
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 732
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 337
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 245
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "quiz",
+        "label": "Quiz",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 5,
+            "count": 671
+          },
+          {
+            "pool": "medium",
+            "minimum": 5,
+            "count": 1057
+          },
+          {
+            "pool": "hard",
+            "minimum": 5,
+            "count": 732
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "unlimited",
+        "label": "Unlimited Practice",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 671
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 1057
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 732
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 337
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 245
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "legendary",
+        "label": "Legendary Mode",
+        "requirements": [
+          {
+            "pool": "legendary",
+            "minimum": 6,
+            "count": 401
+          },
+          {
+            "pool": "legendaryBoss",
+            "minimum": 3,
+            "count": 272
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "score",
+        "label": "Score Attack",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 671
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 1057
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 732
+          },
+          {
+            "pool": "easyBoss",
+            "minimum": 3,
+            "count": 232
+          },
+          {
+            "pool": "mediumBoss",
+            "minimum": 3,
+            "count": 244
+          },
+          {
+            "pool": "finalBoss",
+            "minimum": 3,
+            "count": 281
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 337
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 245
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "trialGraph",
+        "label": "Trial by Graph",
+        "requirements": [
+          {
+            "pool": "graphSafe",
+            "minimum": 10,
+            "count": 374
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "fadingFortune",
+        "label": "Fading Fortune",
+        "requirements": [
+          {
+            "pool": "fadingFortuneEligible",
+            "minimum": 10,
+            "count": 3015
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "riskReward",
+        "label": "Risk & Reward",
+        "requirements": [
+          {
+            "pool": "riskRewardEligible",
+            "minimum": 10,
+            "count": 3015
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      }
+    ],
+    "answerVerification": {
+      "ok": true,
+      "questionCount": 4743,
+      "issues": []
+    },
+    "inlineScriptsCompiled": 1
+  }
+}

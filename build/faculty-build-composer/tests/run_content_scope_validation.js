@@ -19,6 +19,8 @@ core.compose = (library,input) => {
 const helper = require(path.join(root, 'tests/composer-test-helpers.js'));
 const area = require(path.join(root, 'course-area-model.js'));
 const library = helper.loadComposerLibrary();
+const closure = require('./macroeconomics-exception-approved-revisions.js');
+closure.assertCurrentLibrary(library);
 const recipe = (id, depth, skillIds) => ({title:'Scope regression',slug:'scope-regression',supportedModes:['quiz'],selectedConceptIds:[id],...(depth ? {contentScopes:{[id]:{depth,...(skillIds ? {skillIds} : {})}}} : {})});
 const all = composition => [...Object.values(composition.banks).flat(),...Object.values(composition.challengeQuestionBanks).flat(),...composition.repairQuestions,...composition.bridgeQuestions,...Object.values(composition.microSkillRepairPools).flat(),...Object.values(composition.skillRepairSeedPools).flat(),...Object.values(composition.microSkillBridgePools).flat()];
 const ids = questions => [...new Set(questions.map(core.idOf))].sort();
@@ -35,7 +37,10 @@ async function run(){
     check(description.brief.length > 0,id+' has explicit Brief curriculum');
     check(subset(description.brief,description.standard),id+' core is within Standard');
     for(const skill of (core.ContentScope.BRIEF[id]||'').split(' ')) check(description.full.includes(skill),id+': existing canonical core skill '+skill);
-    for(const skill of (core.ContentScope.EXTENSIONS[id]||'').split(' ').filter(Boolean)) check(description.full.includes(skill),id+': existing extension '+skill);
+    for(const skill of (core.ContentScope.EXTENSIONS[id]||'').split(' ').filter(Boolean)) {
+      if(closure.retiredScopeSkills[id]?.[skill]) check(!description.full.includes(skill),id+': exact approved obsolete extension removed '+skill);
+      else check(description.full.includes(skill),id+': existing extension '+skill);
+    }
     if(core.migrateRecipe(recipe(id),library).recipe.selectedConceptIds.length>1){
       const excluded=core.compose(library,recipe(id,'exclude'));
       check(all(excluded).length===0,'Retired parent exclusion propagates to migrated children');

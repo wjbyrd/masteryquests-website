@@ -1,0 +1,199 @@
+{
+  "43088": {
+    "ordinaryComparison": [
+      "43081"
+    ],
+    "oldOperation": "Public debt begins at $200. The government runs deficits of $20 and $40 in two years. Ignore valuation changes and other stock-flow adjustments. Which ending stock and explanation are correct?",
+    "checkpointOperation": "Public debt starts at $200 and ends two years later at $260. The first-year budget deficit is $20. Assume deficits are financed entirely by borrowing and there are no other debt adjustments. An analyst calls the $260 ending debt the second-year deficit. What second-year deficit and correction follow?",
+    "addedMasteryEvidence": "Infer a missing period flow backward from two stocks and a known flow; diagnose the stock-flow error.",
+    "result": "PASS — ADDITIONAL MASTERY EVIDENCE",
+    "exceptionID": "MFV-001"
+  },
+  "ECON-EC-FINALBOSS-19010": {
+    "ordinaryComparison": [
+      "ECON-NL-HARD-249",
+      "ECON-NL-HARD-254"
+    ],
+    "oldOperation": "A factory buys more machines, while another trains workers to maintain its existing machines. Which distinction and implication are sound?",
+    "checkpointOperation": "With worker hours, skills and methods fixed, two equal additions of machines raise output per hour first from 100 to 110, then from 110 to 116. Training then raises it to 124 without more machines. A report says diminishing returns made the second machine addition harmful and that only machines can raise productivity. Which assessment fits all the evidence?",
+    "addedMasteryEvidence": "Compare marginal gains, reject a negative-return inference, and separate the subsequent human-capital effect.",
+    "result": "PASS — ADDITIONAL MASTERY EVIDENCE",
+    "exceptionID": "MFV-002"
+  },
+  "ECON-EC-MEDIUMBOSS-18022": {
+    "ordinaryComparison": [
+      "ECON-NL-HARD-254",
+      "ECON-NL-HARD-255"
+    ],
+    "oldOperation": "A new production method lets the same 140 workers and machines produce more output. A capital-only explanation predicts no gain because the machine stock did not rise. Which correction is right?",
+    "checkpointOperation": "At fixed worker hours and methods, equal successive machine investments have raised output per hour by 10 and then 6 units. Assume positive diminishing marginal returns continue. An equally costly training option would raise output per hour by 8 units. Which choice gives the larger next productivity gain?",
+    "addedMasteryEvidence": "Use diminishing returns to bound an unobserved marginal gain and choose between two investments.",
+    "result": "PASS — ADDITIONAL MASTERY EVIDENCE",
+    "exceptionID": "MFV-003"
+  },
+  "ECON-NL-MEDIUMBOSS-3014": {
+    "ordinaryComparison": [
+      "ECON-NL-HARD-251"
+    ],
+    "oldOperation": "A new production method lets the same 190 workers and machines produce more output. A capital-only explanation predicts no gain because the machine stock did not rise. Which correction is right?",
+    "checkpointOperation": "A factory replaces failing machines while keeping worker hours and skills fixed. Output stays at 100 units per hour. Without replacement it would have fallen to 80. A manager says unchanged observed productivity proves the physical-capital investment added nothing. Which evaluation uses the relevant comparison?",
+    "addedMasteryEvidence": "Assess physical capital using a no-investment counterfactual rather than the observed time change.",
+    "result": "PASS — ADDITIONAL MASTERY EVIDENCE",
+    "exceptionID": "MFV-004"
+  },
+  "ECON-NL-MEDIUMBOSS-3019": {
+    "ordinaryComparison": [
+      "ECON-NL-HARD-252"
+    ],
+    "oldOperation": "A new production method lets the same 240 workers and machines produce more output. A capital-only explanation predicts no gain because the machine stock did not rise. Which correction is right?",
+    "checkpointOperation": "Two otherwise identical workshops keep the same machines, worker skills and total hours. Only Workshop A adopts a new production method: its output rises from 100 to 120, while B stays at 100. An analyst attributes A’s gain to capital deepening. Which explanation and productivity comparison are supported?",
+    "addedMasteryEvidence": "Use controlled evidence to reject competing productivity sources and infer output-per-hour growth.",
+    "result": "PASS — ADDITIONAL MASTERY EVIDENCE",
+    "exceptionID": "MFV-005"
+  },
+  "ECON-NL-MEDIUMBOSS-3024": {
+    "ordinaryComparison": [
+      "ECON-NL-HARD-249"
+    ],
+    "oldOperation": "A new production method lets the same 290 workers and machines produce more output. A capital-only explanation predicts no gain because the machine stock did not rise. Which correction is right?",
+    "checkpointOperation": "A factory hires more workers using the same production method. Total output rises 20%, but total worker hours rise 25%. A report calls this a 20% productivity improvement. What correction follows?",
+    "addedMasteryEvidence": "Reconcile opposing numerator/denominator changes and diagnose a productivity claim.",
+    "result": "PASS — ADDITIONAL MASTERY EVIDENCE",
+    "exceptionID": "MFV-006"
+  },
+  "PM2B3-SRC-FB-005": {
+    "ordinaryComparison": [
+      "ECON-NL-HARD-249"
+    ],
+    "oldOperation": "A new production method lets the same 340 workers and machines produce more output. A capital-only explanation predicts no gain because the machine stock did not rise. Which correction is right?",
+    "checkpointOperation": "Two plants each initially produce 100 units in 100 worker hours. New machines raise A’s output per hour 20%; training raises B’s output per hour 15%. A then cuts hours to 80, while B keeps 100 hours. A report predicts A must have the larger total output because its productivity gain is larger. Which comparison is correct?",
+    "addedMasteryEvidence": "Use physical/human-capital gains with changed hours to distinguish productivity rankings from total-output rankings.",
+    "result": "PASS — ADDITIONAL MASTERY EVIDENCE",
+    "exceptionID": "MFV-007"
+  },
+  "ECON-NL-MEDIUMBOSS-3015": {
+    "ordinaryComparison": [
+      "ECON-NL-HARD-249"
+    ],
+    "oldOperation": "A firm licenses a better production method and separately trains staff to use it. An analyst calls both investments an increase in worker headcount. Which correction separates the two productivity channels?",
+    "checkpointOperation": "After staff training and a new production method arrive together, output per hour rises. Management wants evidence that isolates the human-capital contribution. Which follow-up comparison best does that, with otherwise comparable workers?",
+    "addedMasteryEvidence": "Select evidence that separates human capital from technology rather than merely label either source.",
+    "result": "PASS — ADDITIONAL MASTERY EVIDENCE",
+    "exceptionID": "MFV-013"
+  },
+  "ECON-NL-FINALBOSS-4009": {
+    "ordinaryComparison": [
+      "ECON-NL-HARD-270",
+      "ECON-NL-ELITE-370"
+    ],
+    "oldOperation": "A worker leaves a job voluntarily to search for a better match, one is laid off during falling economy-wide sales, and another cannot qualify for new vacancies after a permanent technology change. In a study of 140 similar cases, which full classification should be used?",
+    "checkpointOperation": "With a fixed labor force, unemployment initially consists of 2 percentage points from normal job search, 3 from persistent skill mismatch and 4 from recession layoffs. Recovery removes the recession component, while improved matching reduces normal search to 1 point. What happens to the natural rate and the final actual unemployment rate?",
+    "addedMasteryEvidence": "Use classifications to distinguish a recovery from a change in the natural-rate benchmark.",
+    "result": "PASS — ADDITIONAL MASTERY EVIDENCE",
+    "exceptionID": "MFV-008"
+  },
+  "ECON-NL-FINALBOSS-4015": {
+    "ordinaryComparison": [
+      "ECON-NL-HARD-270"
+    ],
+    "oldOperation": "A worker leaves a job voluntarily to search for a better match, one is laid off during falling economy-wide sales, and another cannot qualify for new vacancies after a permanent technology change. In a study of 190 similar cases, which full classification should be used?",
+    "checkpointOperation": "A worker is first laid off because recession reduces sales. Sales later recover, but the old job has been permanently automated and available vacancies require skills the worker lacks. Why might restoring aggregate demand alone no longer remove this worker’s unemployment?",
+    "addedMasteryEvidence": "Track a change in the mechanism over time and infer why the original remedy is no longer sufficient.",
+    "result": "PASS — ADDITIONAL MASTERY EVIDENCE",
+    "exceptionID": "MFV-009"
+  },
+  "ECON-NL-FINALBOSS-4036": {
+    "ordinaryComparison": [
+      "ECON-NL-ELITE-370",
+      "ECON-NL-ELITE-371"
+    ],
+    "oldOperation": "A worker leaves a job voluntarily to search for a better match, one is laid off during falling economy-wide sales, and another cannot qualify for new vacancies after a permanent technology change. In a study of 240 similar cases, which full classification should be used?",
+    "checkpointOperation": "A retraining program reduces unemployment caused by persistent skill mismatch by 2 percentage points. At the same time a recession raises unemployment from weak sales by 2 points. Frictional unemployment and the labor force are unchanged. A report says the unchanged total proves retraining did not lower the natural rate. Which conclusion follows?",
+    "addedMasteryEvidence": "Separate an underlying natural-rate improvement from an opposing cyclical movement.",
+    "result": "PASS — ADDITIONAL MASTERY EVIDENCE",
+    "exceptionID": "MFV-010"
+  },
+  "PM2B4-UTYPE-EB-003": {
+    "ordinaryComparison": [
+      "ECON-NL-HARD-270"
+    ],
+    "oldOperation": "A worker leaves a job voluntarily to search for a better match, one is laid off during falling economy-wide sales, and another cannot qualify for new vacancies after a permanent technology change. In a study of 290 similar cases, which full classification should be used?",
+    "checkpointOperation": "Group A lost jobs because economy-wide sales fell; their skills still match the jobs firms would offer at normal sales. Group B is searching between jobs even at normal sales. If the economy returns to potential output with matching conditions unchanged, which forecast follows?",
+    "addedMasteryEvidence": "Apply the classifications to predict which unemployment a recovery removes and which can persist.",
+    "result": "PASS — ADDITIONAL MASTERY EVIDENCE",
+    "exceptionID": "MFV-011"
+  },
+  "PM2B4-UTYPE-MB-006": {
+    "ordinaryComparison": [
+      "ECON-NL-HARD-270"
+    ],
+    "oldOperation": "A worker leaves a job voluntarily to search for a better match, one is laid off during falling economy-wide sales, and another cannot qualify for new vacancies after a permanent technology change. In a study of 340 similar cases, which full classification should be used?",
+    "checkpointOperation": "Six of 100 labor-force participants are unemployed, including two laid off during a recession. Those two become discouraged and stop searching; nobody gains or loses a job. An official calls the resulting lower unemployment rate proof that recovery restored employment. Which assessment is correct?",
+    "addedMasteryEvidence": "Interpret a transition out of measured cyclical unemployment without confusing participation loss with recovery.",
+    "result": "PASS — ADDITIONAL MASTERY EVIDENCE",
+    "exceptionID": "MFV-012"
+  },
+  "ECON-SP-EASYBOSS-2005": {
+    "ordinaryComparison": [
+      "LG-Q-9020",
+      "P52B-S1-FED-L-001"
+    ],
+    "oldOperation": "Election-year pressure pushes the central bank toward an expansionary money policy for political reasons. What role does central bank independence play in this situation?",
+    "checkpointOperation": "Before an election, elected officials demand an immediate rate cut while inflation remains above the central bank’s target. The bank has instrument independence within a public mandate and must explain its decisions. Which response is consistent with that arrangement?",
+    "addedMasteryEvidence": "Apply institutional independence to a conflicting rate demand while preserving mandate and accountability.",
+    "result": "PASS — ADDITIONAL MASTERY EVIDENCE",
+    "exceptionID": "MFV-014"
+  },
+  "ECON-SP-EASYBOSS-2011": {
+    "ordinaryComparison": [
+      "ECON-SP-HARD-202"
+    ],
+    "oldOperation": "Under a simple money-multiplier model of 5, the Fed sells $20 million of bonds. What is the maximum resulting contraction in the money supply?",
+    "checkpointOperation": "In a textbook system with multiplier 5, all reserve adjustments work through deposits, with no currency leakage or excess-reserve holding. A central-bank bond sale is intended to cause a maximum $100 million deposit contraction. What initial reserve change is required, and how does it compare with the total deposit change?",
+    "addedMasteryEvidence": "Infer the initial policy input from the desired total effect and distinguish reserve change from deposit change.",
+    "result": "PASS — ADDITIONAL MASTERY EVIDENCE",
+    "exceptionID": "MFV-015"
+  },
+  "LG-Q-2001": {
+    "ordinaryComparison": [
+      "LG-Q-200"
+    ],
+    "oldOperation": "A person uses dollars to buy groceries, compares dollar prices, and saves dollars for next month. Which ordered mapping correctly identifies the function used in each action?",
+    "checkpointOperation": "A digital payment unit is widely accepted for purchases, and shops consistently quote and compare prices in that unit. Its purchasing power falls sharply between pay periods. Someone concludes it therefore performs none of money’s functions. Which assessment best fits the three stated uses?",
+    "addedMasteryEvidence": "Evaluate an all-or-nothing claim using a constraint that impairs one money function while the others remain demonstrated.",
+    "result": "PASS — ADDITIONAL MASTERY EVIDENCE",
+    "exceptionID": "MFV-016"
+  },
+  "P52A-AD-B2-001": {
+    "ordinaryComparison": [
+      "ECON-SP-MEDIUM-121",
+      "ECON-SP-MEDIUM-139"
+    ],
+    "oldOperation": "In a closed-economy liquidity-preference explanation, a higher price level raises transaction money demand. With nominal money supply fixed, firms planning $50 of investment face a changed rate. Which chain explains movement along AD?",
+    "checkpointOperation": "In the liquidity-preference model, a lower price level reduces transaction money demand. At the same time the central bank independently reduces nominal money supply. The relative sizes of the changes are not given, and other investment determinants are fixed. Which interest-rate and investment conclusion is warranted?",
+    "addedMasteryEvidence": "Distinguish two opposing mechanisms and identify the outcome that cannot be signed.",
+    "result": "PASS — ADDITIONAL MASTERY EVIDENCE",
+    "exceptionID": "MFV-017"
+  },
+  "P52A-AD-LB-002": {
+    "ordinaryComparison": [
+      "LG-Q-259"
+    ],
+    "oldOperation": "In a closed-economy liquidity-preference explanation, a higher price level raises transaction money demand. With nominal money supply fixed, firms planning $90 of investment face a changed rate. Which chain explains movement along AD?",
+    "checkpointOperation": "With nominal money supply fixed, the price level and borrowing rate both rise. Firms also become more optimistic, shifting desired investment outward at every rate, and observed investment rises. Other influences are unchanged. Which account fits the evidence, and what would investment have done had the price level stayed fixed?",
+    "addedMasteryEvidence": "Use observed signs to diagnose an offsetting investment-demand shift, then reason through a price-level counterfactual.",
+    "result": "PASS — ADDITIONAL MASTERY EVIDENCE",
+    "exceptionID": "MFV-018"
+  },
+  "PM2B4-LMI-MB-005": {
+    "ordinaryComparison": [
+      "ECON-NL-EASY-78",
+      "ECON-NL-MEDIUM-175"
+    ],
+    "oldOperation": "A minimum wage of $12 is proposed where the competitive equilibrium wage is $15. A forecast predicts a labor surplus solely because a legal minimum exists. Which condition is missing?",
+    "checkpointOperation": "A competitive labor market initially clears at $15 with a legal minimum of $12. Labor demand then falls so that the new market-clearing wage would be $10. The minimum stays $12; at that wage firms demand 90 workers and 120 offer labor. What changes under the competitive wage-floor model?",
+    "addedMasteryEvidence": "Reassess the same legal floor after a demand change and infer employment and labor surplus.",
+    "result": "PASS — ADDITIONAL MASTERY EVIDENCE",
+    "exceptionID": "MFV-019"
+  }
+}

@@ -1,0 +1,59 @@
+PASS run_faculty_outcome_validation.js
+FAIL run_content_scope_validation.js
+AssertionError [ERR_ASSERTION]: bank-balance-sheets-reserves-and-capital: existing canonical core skill required_reserves_formula
+    at check (C:\Users\Jennings\Documents\GitHub\masteryquests-website\build\faculty-build-composer\tests\run_content_scope_validation.js:27:32)
+    at run (C:\Users\Jennings\Documents\GitHub\masteryquests-website\build\faculty-build-composer\tests\run_content_scope_validation.js:37:70)
+    at Object.<anonymous> (C:\Users\Jennings\Documents\GitHub\masteryquests-website\build\faculty-build-composer\tests\run_content_scope_validation.js:123:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+PASS run_default_character_set_validation.js
+PASS run_exam_navigation_boss_reveal_validation.js
+PASS run_checkpoint_artifact_exam_integrity_validation.js
+PASS run_guide_intro_validation.js
+PASS run_phase1_targeted_repair_validation.js
+PASS run_phase15_production_hardening_validation.js
+PASS run_visibility_aware_telemetry_validation.js
+PASS run_generated_telemetry_smoke.js
+PASS run_phase3a_official_theme_validation.js
+PASS run_phase3b_custom_asset_validation.js
+PASS run_phase3e_graph_question_sync_validation.mjs
+PASS run_question_quality_auditor_validation.mjs
+PASS run_macro_phase2_taxonomy_validation.mjs
+PASS run_checkpoint_remediation_design_change_validation.mjs
+PASS run_legendary_final_checkpoint_validation.mjs
+PASS run_question_bank_comprehensive_validation.mjs
+PASS run_concept_review_integration.js
+PASS run_mastery_report_concept_reviews.js
+PASS run_mastery_report_2_validation.js
+PASS run_mastery_report_state_leak_hotfix.js
+PASS run_mode_availability_fix.js
+PASS run_quiz_mode_validation.js
+PASS run_unlimited_practice_validation.js
+PASS run_trial_by_graph_validation.js
+PASS run_fading_fortune_validation.js
+PASS run_risk_reward_validation.js
+PASS run_risk_reward_state_validation.js
+{
+  "ok": false,
+  "total": 29,
+  "passed": 28,
+  "failed": [
+    {
+      "runner": "run_content_scope_validation.js",
+      "passed": false,
+      "durationMs": 465
+    }
+  ]
+}

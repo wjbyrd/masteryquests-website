@@ -1,0 +1,328 @@
+{
+  "sourceSHA256": "a3a2401485eac1b5119ca9ed8bb80087d0fcdfcafd31d483f9e14d796595da91",
+  "checks": [
+    {
+      "id": "43088",
+      "studentStem": "Public debt starts at $200 and ends two years later at $260. The first-year budget deficit is $20. Assume deficits are financed entirely by borrowing and there are no other debt adjustments. An analyst calls the $260 ending debt the second-year deficit. What second-year deficit and correction follow?",
+      "parsedVisibleNumbers": [
+        200.0,
+        260.0,
+        20.0,
+        260.0
+      ],
+      "computed": 40.0,
+      "key": "$40; subtract initial debt and the first deficit from the ending stock",
+      "feedback": "The two-year debt increase is 260−200=60. Subtract the known first-year deficit 20 to infer the missing second-year deficit 40. The ending stock includes earlier borrowing; it is not a one-year flow.",
+      "independentReasoning": "Ending stock 260 minus initial 200 minus first-period deficit 20 leaves a missing flow of 40.",
+      "result": "PASS"
+    },
+    {
+      "id": "ECON-EC-FINALBOSS-19010",
+      "studentStem": "With worker hours, skills and methods fixed, two equal additions of machines raise output per hour first from 100 to 110, then from 110 to 116. Training then raises it to 124 without more machines. A report says diminishing returns made the second machine addition harmful and that only machines can raise productivity. Which assessment fits all the evidence?",
+      "parsedVisibleNumbers": [
+        100.0,
+        110.0,
+        110.0,
+        116.0,
+        124.0
+      ],
+      "computed": [
+        10.0,
+        6.0,
+        8.0
+      ],
+      "key": "Machine gains remain positive but shrink from 10 to 6; training adds human capital and a further gain of 8",
+      "feedback": "The successive machine gains are 110−100=10 and 116−110=6: diminishing marginal gains are still positive. The further 124−116=8 occurs without new machines and is attributed to worker training, a human-capital improvement.",
+      "independentReasoning": "Successive differences, not levels, establish declining positive capital gains; the later training difference is separate.",
+      "result": "PASS"
+    },
+    {
+      "id": "ECON-EC-MEDIUMBOSS-18022",
+      "studentStem": "At fixed worker hours and methods, equal successive machine investments have raised output per hour by 10 and then 6 units. Assume positive diminishing marginal returns continue. An equally costly training option would raise output per hour by 8 units. Which choice gives the larger next productivity gain?",
+      "parsedVisibleNumbers": [
+        10.0,
+        6.0,
+        8.0
+      ],
+      "computed": 2.0,
+      "key": "Training; its gain of 8 exceeds the next machine gain, which is below 6",
+      "feedback": "Continued diminishing marginal returns imply that the next equal machine investment adds less than 6 units, though its gain remains positive. The stated training gain of 8 is larger. Compare marginal gains from the next choice, not total past gains.",
+      "independentReasoning": "Positive diminishing returns bound the next machine gain below the last gain 6; training 8 exceeds even that bound by 2.",
+      "result": "PASS"
+    },
+    {
+      "id": "ECON-NL-MEDIUMBOSS-3014",
+      "studentStem": "A factory replaces failing machines while keeping worker hours and skills fixed. Output stays at 100 units per hour. Without replacement it would have fallen to 80. A manager says unchanged observed productivity proves the physical-capital investment added nothing. Which evaluation uses the relevant comparison?",
+      "parsedVisibleNumbers": [
+        100.0,
+        80.0
+      ],
+      "computed": 20.0,
+      "key": "The investment preserves 20 units per hour relative to no replacement, despite no rise from last year",
+      "feedback": "The effect of replacement compares output with and without it: 100−80=20 units per hour. Comparing 100 this year with 100 last year misses the deterioration that replacement prevented.",
+      "independentReasoning": "Investment effect compares the observed 100 with the specified no-replacement counterfactual 80.",
+      "result": "PASS"
+    },
+    {
+      "id": "ECON-NL-MEDIUMBOSS-3019",
+      "studentStem": "Two otherwise identical workshops keep the same machines, worker skills and total hours. Only Workshop A adopts a new production method: its output rises from 100 to 120, while B stays at 100. An analyst attributes A’s gain to capital deepening. Which explanation and productivity comparison are supported?",
+      "parsedVisibleNumbers": [
+        100.0,
+        120.0,
+        100.0
+      ],
+      "computed": 19.999999999999996,
+      "key": "The method is the supported source; A’s output per hour rises 20% relative to its unchanged-hours baseline",
+      "feedback": "Machines, skills and hours are held constant, while method adoption differs. That supports technological knowledge rather than capital deepening or training. With hours fixed, output growth of (120−100)/100=20% is also productivity growth.",
+      "independentReasoning": "Constant worker hours make output growth equal output-per-hour growth; controls distinguish technology from machines and training.",
+      "result": "PASS"
+    },
+    {
+      "id": "ECON-NL-MEDIUMBOSS-3024",
+      "studentStem": "A factory hires more workers using the same production method. Total output rises 20%, but total worker hours rise 25%. A report calls this a 20% productivity improvement. What correction follows?",
+      "parsedVisibleNumbers": [
+        20.0,
+        25.0,
+        20.0
+      ],
+      "computed": -4.0000000000000036,
+      "key": "Output per hour falls 4%; output growth alone does not establish a productivity gain",
+      "feedback": "Productivity is output divided by hours. Its factor is 1.20/1.25=.96, so output per hour falls 4%. More labor can raise total production without raising productivity.",
+      "independentReasoning": "Productivity growth is 1.20/1.25−1, not 20−25 as an exact percentage.",
+      "result": "PASS"
+    },
+    {
+      "id": "PM2B3-SRC-FB-005",
+      "studentStem": "Two plants each initially produce 100 units in 100 worker hours. New machines raise A’s output per hour 20%; training raises B’s output per hour 15%. A then cuts hours to 80, while B keeps 100 hours. A report predicts A must have the larger total output because its productivity gain is larger. Which comparison is correct?",
+      "parsedVisibleNumbers": [
+        100.0,
+        100.0,
+        20.0,
+        15.0,
+        80.0,
+        100.0
+      ],
+      "computed": [
+        96.0,
+        114.99999999999999
+      ],
+      "key": "A produces 96 and B produces 115; A’s larger productivity gain is outweighed by its hours reduction",
+      "feedback": "Initially each produces one unit per hour. A’s new rate is 1.2 and output is 1.2×80=96; B’s rate is 1.15 and output is 1.15×100=115. Productivity and total output need not rank plants the same way, and equal opposite percentage changes do not cancel multiplicatively.",
+      "independentReasoning": "Output per hour must be multiplied by the final hours for each plant separately.",
+      "result": "PASS"
+    },
+    {
+      "id": "ECON-NL-FINALBOSS-4009",
+      "studentStem": "With a fixed labor force, unemployment initially consists of 2 percentage points from normal job search, 3 from persistent skill mismatch and 4 from recession layoffs. Recovery removes the recession component, while improved matching reduces normal search to 1 point. What happens to the natural rate and the final actual unemployment rate?",
+      "parsedVisibleNumbers": [
+        2.0,
+        3.0,
+        4.0,
+        1.0
+      ],
+      "computed": [
+        5.0,
+        4.0
+      ],
+      "key": "The natural rate falls from 5% to 4%, and final actual unemployment is 4%",
+      "feedback": "Normal search is frictional and persistent mismatch is structural, so the initial natural rate is 2+3=5%. Better matching makes it 1+3=4%. Recovery removes cyclical unemployment; final actual unemployment therefore equals that 4% natural rate.",
+      "independentReasoning": "Frictional plus structural components determine the natural rate; recovery removes the cyclical component.",
+      "result": "PASS"
+    },
+    {
+      "id": "ECON-NL-FINALBOSS-4036",
+      "studentStem": "A retraining program reduces unemployment caused by persistent skill mismatch by 2 percentage points. At the same time a recession raises unemployment from weak sales by 2 points. Frictional unemployment and the labor force are unchanged. A report says the unchanged total proves retraining did not lower the natural rate. Which conclusion follows?",
+      "parsedVisibleNumbers": [
+        2.0,
+        2.0
+      ],
+      "computed": [
+        -2.0,
+        0.0
+      ],
+      "key": "The natural rate falls 2 points, while rising cyclical unemployment offsets that improvement in the measured total",
+      "feedback": "Retraining reduces structural unemployment, a component of the natural rate. Cyclical unemployment is outside that benchmark. Its increase offsets the structural fall in actual unemployment, not in the natural rate.",
+      "independentReasoning": "The structural change affects the natural rate; the equal opposite cyclical change offsets only actual unemployment.",
+      "result": "PASS"
+    },
+    {
+      "id": "PM2B4-UTYPE-MB-006",
+      "studentStem": "Six of 100 labor-force participants are unemployed, including two laid off during a recession. Those two become discouraged and stop searching; nobody gains or loses a job. An official calls the resulting lower unemployment rate proof that recovery restored employment. Which assessment is correct?",
+      "parsedVisibleNumbers": [
+        6.0,
+        100.0,
+        2.0,
+        2.0
+      ],
+      "computed": [
+        94.0,
+        98.0,
+        4.081632653061225
+      ],
+      "key": "Employment stays at 94 and the labor force falls to 98; the lower rate does not establish a jobs recovery",
+      "feedback": "Initial employment is 100−6=94. The two unemployed searchers exit the labor force, leaving U=4 and LF=98, with E=94 unchanged. The measured rate falls from 6% to about 4.08% because of exit, not reemployment after the recession.",
+      "independentReasoning": "Unemployed exits lower U and LF by two but leave employment 94 unchanged; the new rate is 4/98.",
+      "result": "PASS"
+    },
+    {
+      "id": "ECON-SP-EASYBOSS-2011",
+      "studentStem": "In a textbook system with multiplier 5, all reserve adjustments work through deposits, with no currency leakage or excess-reserve holding. A central-bank bond sale is intended to cause a maximum $100 million deposit contraction. What initial reserve change is required, and how does it compare with the total deposit change?",
+      "parsedVisibleNumbers": [
+        5.0,
+        100.0
+      ],
+      "computed": 20.0,
+      "key": "$20 million decrease in reserves; the eventual deposit decrease is five times that initial change",
+      "feedback": "Work backward from the total deposit change: 100/5=20 million. The bond sale must withdraw reserves, not add them. The initial reserve withdrawal and eventual maximum deposit contraction are different magnitudes under the stated model.",
+      "independentReasoning": "Invert the stated multiplier to infer the required reserve withdrawal from the desired deposit contraction.",
+      "result": "PASS"
+    },
+    {
+      "id": "PM2B4-LMI-MB-005",
+      "studentStem": "A competitive labor market initially clears at $15 with a legal minimum of $12. Labor demand then falls so that the new market-clearing wage would be $10. The minimum stays $12; at that wage firms demand 90 workers and 120 offer labor. What changes under the competitive wage-floor model?",
+      "parsedVisibleNumbers": [
+        15.0,
+        12.0,
+        10.0,
+        12.0,
+        90.0,
+        120.0
+      ],
+      "computed": [
+        90.0,
+        30.0
+      ],
+      "key": "The minimum changes from nonbinding to binding; employment is 90 and the labor surplus is 30",
+      "feedback": "Initially $12 is below equilibrium and does not bind. After equilibrium falls to $10, the unchanged $12 floor binds. Firms hire the 90 workers demanded at that wage; 120−90=30 workers are the excess supply of labor.",
+      "independentReasoning": "12<15 initially, then 12>10; the final demand quantity gives employment and 120−90 gives excess supply.",
+      "result": "PASS"
+    },
+    {
+      "id": "ECON-NL-NOMINAL-VS-REAL-GDP-6006",
+      "studentStem": "An economy produces only one good. In the base year its price is $5 and quantity is 100. In the next year price is $6 and quantity is 110. What is next-year real GDP measured at base-year prices?",
+      "parsedVisibleNumbers": [
+        5.0,
+        100.0,
+        6.0,
+        110.0
+      ],
+      "computed": 550.0,
+      "key": "$550",
+      "feedback": "Real GDP uses current quantity at the base-year price: 110×$5=$550. Using $6 gives nominal GDP $660; holding quantity at 100 would miss the real production increase.",
+      "independentReasoning": "Value current quantity 110 at base-year price 5; current-price nominal valuation would be 660.",
+      "result": "PASS"
+    },
+    {
+      "id": "ECON-NL-SUBSTITUTION-BIAS-6011",
+      "studentStem": "A household initially buys two apples and two pears at $1 each, costing $4. Apples then cost $3 and pears still $1. The old basket now costs $8, but four pears cost $4 and are stipulated to give this household the same satisfaction. How much does the fixed-basket cost increase overstate the increase needed for that satisfaction?",
+      "parsedVisibleNumbers": [
+        1.0,
+        4.0,
+        3.0,
+        1.0,
+        8.0,
+        4.0
+      ],
+      "computed": 4,
+      "key": "Overstates by $4: fixed-basket cost rises $4; the equally satisfactory basket’s cost is unchanged",
+      "feedback": "The fixed basket’s increase is 8−4=4. The equally satisfactory adjusted basket’s increase is 4−4=0. The fixed basket therefore overstates the needed increase by $4. The supplied satisfaction assumption makes this a cost comparison rather than a claim that arbitrary bundles are equivalent.",
+      "independentReasoning": "Fixed-basket increase is 4, equally satisfactory substitute-basket increase is 0; overstatement is 4.",
+      "result": "PASS"
+    },
+    {
+      "id": "ECON-SP-MOVE-ALONG-SRPC-6041",
+      "studentStem": "An SRPC predicts 4% inflation at 5% unemployment. Expected inflation then rises 2 percentage points; in this model it shifts the SRPC up one-for-one, with other supply conditions unchanged. At 5% unemployment, what inflation and curve change follow?",
+      "parsedVisibleNumbers": [
+        4.0,
+        5.0,
+        2.0,
+        5.0
+      ],
+      "computed": 6.0,
+      "key": "6% inflation; an upward shift of the SRPC",
+      "feedback": "At the same unemployment rate, the two-point expectations increase adds two points to predicted inflation: 4+2=6%. Changing inflation at fixed unemployment locates a shifted curve, not movement along the old curve.",
+      "independentReasoning": "At unchanged unemployment, one-for-one expectations transmission adds 2 to inflation 4; this changes the curve.",
+      "result": "PASS"
+    },
+    {
+      "id": "ECON-SP-TAX-CUT-AD-6033",
+      "studentStem": "A $100 tax cut with MPC=.8 generates $80 of first-round consumption. An alternative is $90 of additional government purchases. At fixed prices, ignoring offsets and later induced spending rounds, which policy adds more to initial aggregate demand, and by how much?",
+      "parsedVisibleNumbers": [
+        100.0,
+        0.8,
+        80.0,
+        90.0
+      ],
+      "computed": 10.0,
+      "key": "Government purchases add $10 more",
+      "feedback": "The repaired consumption result is $80. Direct government purchases add $90 to initial spending, so the purchase policy adds 90−80=$10 more. This compares initial effects, not full multipliers.",
+      "independentReasoning": "Compare the supplied first-round consumption 80 with direct purchases 90; no multiplier rounds enter.",
+      "result": "PASS"
+    },
+    {
+      "id": "LG-B-6003",
+      "studentStem": "In a hypothetical system with a 12% reserve requirement, a bank has $900,000 deposits and $100,000 reserves. What reserve adjustment meets the requirement?",
+      "parsedVisibleNumbers": [
+        12.0,
+        900000.0,
+        100000.0
+      ],
+      "computed": 8000.0,
+      "key": "Obtain $8,000 additional reserves",
+      "feedback": "Required reserves=.12×900000=108000. Existing reserves 100000 leave a shortfall 8000.",
+      "independentReasoning": "Required reserves 108,000 exceed actual 100,000 by 8,000.",
+      "result": "PASS"
+    },
+    {
+      "id": "PM2A-DIS-BR-021",
+      "studentStem": "A price index is 200. Over the next year inflation slows from the previous year’s 6% to 3%, remaining positive. What is the new index, and does this year illustrate disinflation or deflation?",
+      "parsedVisibleNumbers": [
+        200.0,
+        6.0,
+        3.0
+      ],
+      "computed": 206.0,
+      "key": "206; disinflation",
+      "feedback": "The index rises to 200×1.03=206. A lower but positive inflation rate means prices rise more slowly: disinflation. Subtracting 3% would incorrectly turn it into deflation; using 6% would ignore the new rate.",
+      "independentReasoning": "A positive 3% rate multiplies the existing index 200 by 1.03; slower inflation is not a price-level decline.",
+      "result": "PASS"
+    },
+    {
+      "id": "PM2A-LRPC-BR-022",
+      "studentStem": "A persistent labor-market change raises natural unemployment from 4% to 5%. Policymakers maintain 6% inflation, which eventually becomes fully expected. What long-run point follows in the natural-rate model?",
+      "parsedVisibleNumbers": [
+        4.0,
+        5.0,
+        6.0
+      ],
+      "computed": [
+        5.0,
+        6.0
+      ],
+      "key": "5% unemployment and 6% inflation, on an LRPC to the right of the old one",
+      "feedback": "The new natural rate puts the vertical LRPC at 5% unemployment. Once 6% inflation is fully anticipated it does not keep unemployment below that benchmark, so the long-run point is (u=5%, inflation=6%).",
+      "independentReasoning": "After expectations adjust, unemployment equals the new natural rate 5 regardless of the fully expected inflation rate 6.",
+      "result": "PASS"
+    },
+    {
+      "id": "ECON-NL-UNIONS-EFFICIENCY-WAGES-6035",
+      "studentStem": "A labor market would clear at $18. Firms instead maintain a $22 efficiency wage to reduce costly quits. At $22, 120 workers offer labor and firms want to hire 90. In this simple model, what employment and labor surplus result while firms maintain that wage?",
+      "parsedVisibleNumbers": [
+        18.0,
+        22.0,
+        22.0,
+        120.0,
+        90.0
+      ],
+      "computed": [
+        90.0,
+        30.0
+      ],
+      "key": "90 employed; 30 workers in excess supply",
+      "feedback": "At the maintained wage, firms hire the 90 workers demanded. Labor supplied exceeds labor demanded by 120−90=30. The turnover incentive can explain maintaining the high wage without eliminating the associated excess supply.",
+      "independentReasoning": "At the maintained wage firms demand 90; labor supply 120 leaves 30 in excess supply.",
+      "result": "PASS"
+    }
+  ],
+  "failures": []
+}

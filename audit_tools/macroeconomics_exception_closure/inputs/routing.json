@@ -1,0 +1,37 @@
+[
+  {
+    "concept": "bank-balance-sheets-reserves-and-capital",
+    "map": "microSkillBridgePools",
+    "from": "required_reserves_formula",
+    "to": "calculate_required_reserves",
+    "id": "LG-B-6003",
+    "reason": "Use unchanged repair ECON-SP-CALCULATE-REQUIRED-RESERVES-5006, then apply its result to a reserve shortfall."
+  },
+  {
+    "concept": "central-bank-and-federal-reserve",
+    "map": "directSkillRepairRoutes",
+    "skill": "reserve_supply_vs_lending",
+    "ids": [
+      "PM2C1-FED-M-001",
+      "PM2C1-FED-H-002"
+    ],
+    "reason": "Reuse two unchanged, focused canonical questions as repair references: commercial deposits versus reserves; reserve creation does not guarantee lending. They remain in their ordinary storage pools."
+  },
+  {
+    "concept": "monetary-policy-tools",
+    "map": "directSkillRepairRoutes",
+    "skill": "reserve_requirement_effect",
+    "ids": [
+      "LG-R-5018"
+    ],
+    "reason": "The existing repair explains how a reserve-ratio change alters required reserves and potential lending capacity."
+  },
+  {
+    "concept": "long-run-phillips-curve",
+    "map": "microSkillBridgePools",
+    "from": "sacrifice_ratio_meaning",
+    "to": null,
+    "id": "PM2A-LRPC-BR-022",
+    "reason": "The authorized bridge now applies the natural-rate/LRPC repair; it must not be served as sacrifice-ratio practice."
+  }
+]

@@ -1,0 +1,85 @@
+{
+  "ECON-NL-NOMINAL-VS-REAL-GDP-6006": {
+    "repairIDs": [
+      "ECON-NL-NOMINAL-VS-REAL-GDP-5012",
+      "ECON-NL-NOMINAL-VS-REAL-GDP-5013"
+    ],
+    "runtimeSkill": "nominal_vs_real_gdp",
+    "repairOperation": "Distinguish price changes from production changes and value current quantities at base-year prices.",
+    "finalBridgeOperation": "An economy produces only one good. In the base year its price is $5 and quantity is 100. In the next year price is $6 and quantity is 110. What is next-year real GDP measured at base-year prices?",
+    "newTransferStep": "Use the repaired base-year rule to value a new year’s actual quantity.",
+    "result": "PASS"
+  },
+  "ECON-NL-SUBSTITUTION-BIAS-6011": {
+    "repairIDs": [
+      "ECON-NL-SUBSTITUTION-BIAS-5022",
+      "ECON-NL-SUBSTITUTION-BIAS-5023"
+    ],
+    "runtimeSkill": "substitution_bias",
+    "repairOperation": "Recognize that a fixed basket misses substitution toward relatively cheaper goods.",
+    "finalBridgeOperation": "A household initially buys two apples and two pears at $1 each, costing $4. Apples then cost $3 and pears still $1. The old basket now costs $8, but four pears cost $4 and are stipulated to give this household the same satisfaction. How much does the fixed-basket cost increase overstate the increase needed for that satisfaction?",
+    "newTransferStep": "Compare fixed and adjusted basket costs to measure the overstatement in a new case.",
+    "result": "PASS"
+  },
+  "ECON-SP-MOVE-ALONG-SRPC-6041": {
+    "repairIDs": [
+      "ECON-SP-MOVE-ALONG-SRPC-5050"
+    ],
+    "runtimeSkill": "expectations_adjustment",
+    "repairOperation": "Higher expected inflation shifts the SRPC upward at a fixed unemployment rate.",
+    "finalBridgeOperation": "An SRPC predicts 4% inflation at 5% unemployment. Expected inflation then rises 2 percentage points; in this model it shifts the SRPC up one-for-one, with other supply conditions unchanged. At 5% unemployment, what inflation and curve change follow?",
+    "newTransferStep": "Apply a specified expectations shift to the inflation coordinate of a supplied point.",
+    "result": "PASS"
+  },
+  "ECON-SP-TAX-CUT-AD-6033": {
+    "repairIDs": [
+      "ECON-SP-TAX-CUT-AD-5042"
+    ],
+    "runtimeSkill": "tax_cut_ad",
+    "repairOperation": "Apply the MPC to a tax cut to obtain first-round consumption.",
+    "finalBridgeOperation": "A $100 tax cut with MPC=.8 generates $80 of first-round consumption. An alternative is $90 of additional government purchases. At fixed prices, ignoring offsets and later induced spending rounds, which policy adds more to initial aggregate demand, and by how much?",
+    "newTransferStep": "Use that first-round result to compare the initial spending impact with a direct purchase.",
+    "result": "PASS"
+  },
+  "LG-B-6003": {
+    "repairIDs": [
+      "ECON-SP-CALCULATE-REQUIRED-RESERVES-5006"
+    ],
+    "runtimeSkill": "calculate_required_reserves",
+    "repairOperation": "Calculate the required reserve amount from deposits and the ratio.",
+    "finalBridgeOperation": "In a hypothetical system with a 12% reserve requirement, a bank has $900,000 deposits and $100,000 reserves. What reserve adjustment meets the requirement?",
+    "newTransferStep": "Compare the required amount with actual reserves to identify the additional reserves needed.",
+    "result": "PASS"
+  },
+  "PM2A-DIS-BR-021": {
+    "repairIDs": [
+      "ECON-SP-DISINFLATION-UNEMPLOYMENT-COST-5057"
+    ],
+    "runtimeSkill": "policy_path",
+    "repairOperation": "Distinguish lower positive inflation from a falling price level.",
+    "finalBridgeOperation": "A price index is 200. Over the next year inflation slows from the previous year’s 6% to 3%, remaining positive. What is the new index, and does this year illustrate disinflation or deflation?",
+    "newTransferStep": "Apply the new lower inflation rate to a supplied price index rather than repeat the label.",
+    "result": "PASS"
+  },
+  "PM2A-LRPC-BR-022": {
+    "repairIDs": [
+      "ECON-SP-IDENTIFY-LRPC-5051",
+      "ECON-SP-IDENTIFY-NATURAL-UNEMPLOYMENT-5077"
+    ],
+    "runtimeSkill": "natural_rate_hypothesis",
+    "repairOperation": "Distinguish the natural-rate position of LRPC from temporary inflation surprises.",
+    "finalBridgeOperation": "A persistent labor-market change raises natural unemployment from 4% to 5%. Policymakers maintain 6% inflation, which eventually becomes fully expected. What long-run point follows in the natural-rate model?",
+    "newTransferStep": "Locate the long-run unemployment/inflation point after a persistent natural-rate change and full expectations adjustment.",
+    "result": "PASS"
+  },
+  "ECON-NL-UNIONS-EFFICIENCY-WAGES-6035": {
+    "repairIDs": [
+      "ECON-NL-UNIONS-EFFICIENCY-WAGES-5055"
+    ],
+    "runtimeSkill": "unions_efficiency_wages",
+    "repairOperation": "Above-equilibrium wages can create excess labor supply.",
+    "finalBridgeOperation": "A labor market would clear at $18. Firms instead maintain a $22 efficiency wage to reduce costly quits. At $22, 120 workers offer labor and firms want to hire 90. In this simple model, what employment and labor surplus result while firms maintain that wage?",
+    "newTransferStep": "Use supplied labor quantities at the retained efficiency wage to infer employment and labor surplus.",
+    "result": "PASS"
+  }
+}

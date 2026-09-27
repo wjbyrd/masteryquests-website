@@ -1,0 +1,334 @@
+{
+  "sourceSHA256": "a3a2401485eac1b5119ca9ed8bb80087d0fcdfcafd31d483f9e14d796595da91",
+  "integrity": {
+    "concepts": 149,
+    "questions": 9779,
+    "graphs": 1147,
+    "assets": 507
+  },
+  "changedIDs": 45,
+  "unauthorizedChanges": [],
+  "unchangedCanonicalIDs": 9734,
+  "unchangedMacroIDs": 4700,
+  "sharedProtectedRecords": 6623,
+  "sharedRegressions": [],
+  "counts": {
+    "general": 1589,
+    "micro": 6301,
+    "macro": 4745
+  },
+  "answerChecks": 45,
+  "repairChecks": 13,
+  "difficultyChecks": 13,
+  "scopeAdapterProbes": {
+    "unauthorizedRecordRejected": "ECON-SP-EASY-38",
+    "unauthorizedTargetValueRejected": "43088"
+  },
+  "inventorySelections": 89,
+  "newUnavailableCombinations": 11,
+  "newAvailableCombinations": 0,
+  "publication": {
+    "canonicalMacro": 4745,
+    "published": 4743,
+    "omitted": [
+      "ECON-SP-MAP-AD-AS-TO-PC-5061",
+      "ECON-SP-MAP-AD-AS-TO-PC-6052"
+    ],
+    "newOmissions": [],
+    "allTargetsPresent": true,
+    "parityFailures": [],
+    "modes": [
+      {
+        "mode": "standard",
+        "label": "Standard Campaign",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 671
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 1057
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 732
+          },
+          {
+            "pool": "easyBoss",
+            "minimum": 3,
+            "count": 232
+          },
+          {
+            "pool": "mediumBoss",
+            "minimum": 3,
+            "count": 244
+          },
+          {
+            "pool": "finalBoss",
+            "minimum": 3,
+            "count": 281
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 337
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 245
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "timed",
+        "label": "Timed Trial",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 671
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 1057
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 732
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 337
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 245
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "exam",
+        "label": "Exam Drill",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 671
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 1057
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 732
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 337
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 245
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "quiz",
+        "label": "Quiz",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 5,
+            "count": 671
+          },
+          {
+            "pool": "medium",
+            "minimum": 5,
+            "count": 1057
+          },
+          {
+            "pool": "hard",
+            "minimum": 5,
+            "count": 732
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "unlimited",
+        "label": "Unlimited Practice",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 671
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 1057
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 732
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 337
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 245
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "legendary",
+        "label": "Legendary Mode",
+        "requirements": [
+          {
+            "pool": "legendary",
+            "minimum": 6,
+            "count": 401
+          },
+          {
+            "pool": "legendaryBoss",
+            "minimum": 3,
+            "count": 272
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "score",
+        "label": "Score Attack",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 671
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 1057
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 732
+          },
+          {
+            "pool": "easyBoss",
+            "minimum": 3,
+            "count": 232
+          },
+          {
+            "pool": "mediumBoss",
+            "minimum": 3,
+            "count": 244
+          },
+          {
+            "pool": "finalBoss",
+            "minimum": 3,
+            "count": 281
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 337
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 245
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "trialGraph",
+        "label": "Trial by Graph",
+        "requirements": [
+          {
+            "pool": "graphSafe",
+            "minimum": 10,
+            "count": 374
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "fadingFortune",
+        "label": "Fading Fortune",
+        "requirements": [
+          {
+            "pool": "fadingFortuneEligible",
+            "minimum": 10,
+            "count": 3015
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "riskReward",
+        "label": "Risk & Reward",
+        "requirements": [
+          {
+            "pool": "riskRewardEligible",
+            "minimum": 10,
+            "count": 3015
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      }
+    ],
+    "answerVerification": {
+      "ok": true,
+      "questionCount": 4743,
+      "issues": []
+    },
+    "inlineScriptsCompiled": 1
+  }
+}

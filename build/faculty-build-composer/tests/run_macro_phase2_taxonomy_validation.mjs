@@ -9,7 +9,7 @@ import {fileURLToPath} from 'node:url';
 
 const require=createRequire(import.meta.url);
 const {assertCanonicalIntegrity}=require('./composer-integrity-contracts.js');
-const micro=require('./macroeconomics-approved-revisions.js');
+const micro=require('./macroeconomics-exception-approved-revisions.js');
 const approvedRoutes=micro.ledger.routing.filter(r=>r.removeFromMicro);
 const routeIds=approvedRoutes.map(r=>r.id);
 const macroRoutes=micro.macroLedger.routing;
