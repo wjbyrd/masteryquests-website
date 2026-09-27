@@ -345,6 +345,14 @@ body::after{
         0 0 70px rgba(0,0,0,0.86);
 }
 
+/* Market graph audit: preserve readable labels on small-screen expanded graphs.
+   The modal scrolls horizontally instead of shrinking a two-panel figure. */
+@media(max-width:768px){
+    #graphLightbox.active{ overflow: auto; justify-content: flex-start; backdrop-filter: none; }
+    #graphLightbox.active img{ flex: 0 0 auto; width: 800px; max-width: none; max-height: none; margin: auto 0; }
+    #graphLightbox.active::after{ content: "Scroll horizontally to view the full graph"; position: fixed; bottom: 12px; left: 12px; padding: 6px 10px; border-radius: 6px; background: #020617; color: #fff; font-size: 12px; pointer-events: none; }
+}
+
 #graphLightboxClose{
     position: fixed;
     top: calc(env(safe-area-inset-top, 0px) + 14px);
@@ -4983,15 +4991,19 @@ function getQuestionsMatchingNeed(pool, objectiveKey, tag, excludeIds = [], skil
             resolveRecordSkill(question) === skillKey
         );
         if(skillMatches.length > 0) return skillMatches;
+        // Retry matching content without recent-history exclusions before drifting.
+        if(pool.some(question => resolveRecordSkill(question) === skillKey)) return [];
     }
 
     const objectiveMatches = candidates.filter(question =>
         inferObjective(question) === objectiveKey
     );
     if(objectiveMatches.length > 0) return objectiveMatches;
+    if(pool.some(question => inferObjective(question) === objectiveKey)) return [];
 
     const tagMatches = candidates.filter(question => question.tag === tag);
     if(tagMatches.length > 0) return tagMatches;
+    if(pool.some(question => question.tag === tag)) return [];
 
     return candidates;
 }
@@ -7130,7 +7142,7 @@ const embeddedQuestionAssets = {};
 const questionAssetMetadata = {
     "demand_supply.png": {
         "imageAlt": "Supply and demand graph with labeled demand and supply curves, equilibrium points, prices, and quantities.",
-        "graphDescription": "A supply-and-demand diagram used to compare equilibrium before and after demand or supply changes. Read the labeled curves, equilibrium points, prices, and quantities shown in the figure."
+        "graphDescription": "Price is vertical, with P0 below P1 below P2. Quantity is horizontal, with QA, QB, QC and QD from left to right. Demand slopes down: D1 is right of D0. Supply slopes up: S1 is right of S0. Intersections: S0/D0 at P1/QA; S0/D1 at P2/QB; S1/D0 at P0/QC; S1/D1 at P1/QD. Labels are symbolic, not a numerical scale."
     },
     "market_curves_independent.svg": {
         "imageAlt": "Independent practice diagram with demand curves D1 and D2 and supply curves S1 and S2.",
@@ -7138,11 +7150,11 @@ const questionAssetMetadata = {
     },
     "long_run_competition.png": {
         "imageAlt": "Two-panel long-run competitive market graph showing a representative firm and the market during entry and profit adjustment.",
-        "graphDescription": "A two-panel long-run competition diagram linking a representative firm to the market. The figure is used to trace short-run profit signals, entry or exit, and movement toward a long-run competitive equilibrium."
+        "graphDescription": "Left panel: upward-sloping MC intersects minimum ATC at Q1 and price P1. At higher price P2, MC selects Q2 and ATC is below P2. P0 is below minimum ATC; no AVC curve is shown. Right panel: demand D1 is right of D0 and supply S1 is right of S0. A is S0/D0 at P1/QA; B is S0/D1 at P2/QB; C is S1/D0 at P0/QC; D is S1/D1 at P1/QD. Quantity labels QA, QB, QC and QD increase from left to right. These are symbolic levels."
     }
 };
-// The July deep audit reviewed every graph-linked question against these supplied graph assets.
-const trialGraphQuestionIds = [159, 160, 161, 162, 163, 164, 165, 169, 173, 174, 247, 248, 251, 252, 253, 254, 255, 256, 257, 264, 265, 266, 356, 357, 358, 363, 368, 370, 371, 9057, 9058, 9059, 9060, 9061, 9065, 9069, 9070, 9071, 9072, 4009, 4010, 4011, 4012, 4013, 4014, 4015, 4016, 4017, 4024, 9150, 9151, 9152, 9153, 9165, 9167, 9168, 9169, 9170];
+// September semantic graph audit: only ordinary-tier questions requiring the figure enter Trial by Graph.
+const trialGraphQuestionIds = [159, 160, 161, 162, 163, 164, 165, 169, 173, 174, 248, 252, 253, 254, 256, 257, 264, 266, 356, 357, 358, 363, 368, 371, 9057, 9058, 9059, 9061, 9069, 9070, 9071, 9153, 9165];
 const trialGraphQuestionIdSet = new Set(trialGraphQuestionIds.map(String));
 Object.values(questionBanks || {}).forEach(pool => (pool || []).forEach(question => {
     const id = String(question?.id ?? question?.questionId ?? "");

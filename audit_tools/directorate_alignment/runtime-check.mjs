@@ -29,7 +29,7 @@ try{
   await context.route('**/*',r=>new URL(r.request().url()).origin===origin?r.continue():r.abort());
   const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.goto(`${origin}/play/managerial-intelligence-directorate/${game}/`);
-  const result=await page.evaluate(async({standardOnly,checkCost})=>{
+  const result=await page.evaluate(async({standardOnly,checkCost,checkMarket})=>{
    let randomState=0x6655;
    Math.random=()=>((randomState=(Math.imul(1664525,randomState)+1013904223)>>>0)/4294967296);
    const bank=Object.values(questionBanks).flat();
@@ -52,7 +52,7 @@ try{
     }
    }
    const costRouteSelections=[],costRouteIssues=[],historyRegression=[];
-   if(checkCost){
+   if(checkCost||checkMarket){
     // Exercise room-appropriate retests, including the final-boss Elite pool.
     for(const [poolName,atRoom] of [['easy',5],['medium',15],['hard',25],['elite',25],['easyBoss',10],['mediumBoss',20],['finalBoss',30]]){
      room=atRoom;
@@ -63,7 +63,13 @@ try{
        const selected=getRemediationQuestion({...state,stage});
        const entry={id:q.id,room:atRoom,cycle,stage,selected:selected?.id,sourceSkill:state.skill,selectedSkill:selected?getSkillKey(selected):null};
        costRouteSelections.push(entry);
-       if(!selected||entry.sourceSkill!==entry.selectedSkill)costRouteIssues.push(entry);
+       // Reviewed Market transfers: a single shift returns as a two-shift
+       // application; monopoly output returns inside a regulation comparison.
+       const reviewedTransfer=checkMarket&&selected&&(
+        ([4009,4010,4011].includes(q.id)&&[310,359].includes(selected.id))||
+        ([4027,4028].includes(q.id)&&selected.id===375)
+       );
+       if(!selected||(entry.sourceSkill!==entry.selectedSkill&&!reviewedTransfer))costRouteIssues.push(entry);
       }
      }
     }
@@ -89,10 +95,21 @@ try{
      }
     }
    }
+   let trialGraph=null;
+   if(checkMarket){
+    const candidates=getTrialGraphCandidates();
+    trialGraph={ids:candidates.map(q=>q.id),supported:getTrialGraphSupportedTargets(),decks:[]};
+    for(const target of trialGraph.supported)for(let seed=1;seed<=20;seed++){
+     randomState=seed;
+     const deck=buildTrialGraphDeck(target);
+     if(deck.length!==target||new Set(deck.map(q=>q.id)).size!==target||deck.some(q=>!q.graphRequired||!q.image||!trialGraphQuestionIds.includes(q.id)))throw Error('Unsafe graph deck');
+     trialGraph.decks.push({target,seed,ids:deck.map(q=>q.id)});
+    }
+   }
    const modes=typeof FACULTY_MODE_REQUIREMENTS==='object'?Object.keys(FACULTY_MODE_REQUIREMENTS):['standard','timed','exam','quiz','unlimited','legendary','score'];
    const modePreflights=Object.fromEntries(modes.map(mode=>[mode,validateFacultyMode(mode)]));
-   return {records:rows.length,answerChecks:checks,invalidAnswers:invalid,standardPreflight:validateFacultyMode('standard'),modePreflights,routeChecks,routeIssues,routeObjectiveMismatches,routeSelections,bossChecks,bossIssues,costRouteSelections,costRouteIssues,historyRegression};
-  },{standardOnly,checkCost:game==='cost-directive'});
+   return {records:rows.length,answerChecks:checks,invalidAnswers:invalid,standardPreflight:validateFacultyMode('standard'),modePreflights,routeChecks,routeIssues,routeObjectiveMismatches,routeSelections,bossChecks,bossIssues,costRouteSelections,costRouteIssues,historyRegression,trialGraph};
+  },{standardOnly,checkCost:game==='cost-directive',checkMarket:game==='market-signal'});
   result.game=game;result.pageErrors=errors;results.push(result);
   console.log(JSON.stringify({game,records:result.records,invalidAnswers:result.invalidAnswers.length,standardPreflight:result.standardPreflight.ok,routeIssues:result.routeIssues.length,routeObjectiveMismatches:result.routeObjectiveMismatches.length,bossIssues:result.bossIssues.length,pageErrors:errors}));
   await context.close();

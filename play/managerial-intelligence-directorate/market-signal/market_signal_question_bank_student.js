@@ -42,9 +42,9 @@ const questionBanks = {
       "q": "What does a discount rate measure when a firm compares money today with money received later?",
       "options": [
         "The trade-off between current sacrifice and future gain",
-        "The accounting cost already recorded",
-        "The number of years before a project ends",
-        "The amount of fixed cost recovered over the entire operating life of the project"
+        "The rate at which historical spending is recovered",
+        "The percentage of revenue reported as accounting profit",
+        "The number of years needed to recover an investment"
       ],
       "tag": "discount_rate_meaning",
       "type": "conceptual",
@@ -53,15 +53,16 @@ const questionBanks = {
       "conceptCluster": "capital_allocation",
       "primarySkill": "discount_rate_interpretation",
       "secondarySkills": [],
-      "repairSkill": "discount_rate_interpretation",
+      "repairSkill": "present_value_discounting",
       "commonError": "Treating the discount rate as an accounting expense",
       "feedback": "A discount rate converts future gains into comparable current values and reflects the value of waiting.",
-      "aHash": "d4a42623f31475db015525ffab6a4707fddd205e46ca8b8b899bbcc75afc99f5"
+      "aHash": "d4a42623f31475db015525ffab6a4707fddd205e46ca8b8b899bbcc75afc99f5",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 2,
       "sourceGame": "marketSignal",
-      "q": "How does a higher discount rate affect the present value of a future payment?",
+      "q": "Holding a positive future payment and its date fixed, how does a higher discount rate affect its present value?",
       "options": [
         "It raises the present value",
         "It lowers the present value",
@@ -77,10 +78,11 @@ const questionBanks = {
       "secondarySkills": [
         "present_value_direction"
       ],
-      "repairSkill": "discount_rate_interpretation",
+      "repairSkill": "present_value_discounting",
       "commonError": "Reversing the relationship between discount rates and present value",
       "feedback": "A higher discount rate places less current value on money received in the future.",
-      "aHash": "04cc90d07faba1618838fa1cea8b2483f3928aabe8781bce2444ab6eaa15fb5b"
+      "aHash": "04cc90d07faba1618838fa1cea8b2483f3928aabe8781bce2444ab6eaa15fb5b",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 3,
@@ -101,42 +103,21 @@ const questionBanks = {
       "secondarySkills": [
         "discount_rate_interpretation"
       ],
-      "repairSkill": "present_value_calculation",
+      "repairSkill": "present_value_discounting",
       "commonError": "Multiplying the future payment by 1.10 instead of dividing",
       "feedback": "Present value equals $110 divided by 1.10, which is $100.",
-      "aHash": "797c7d463af6ea7fa7f88d50602cea0531e3e0da8cb59be3b0983bb98958cce8"
-    },
-    {
-      "id": 4,
-      "sourceGame": "marketSignal",
-      "q": "A payment of $210 will be received one year from now. At a 5% discount rate, what is its present value?",
-      "options": [
-        "$199.50",
-        "$210",
-        "$220.50",
-        "$200"
-      ],
-      "tag": "one_period_present_value",
-      "type": "calculation",
-      "objective": "LO5.1",
-      "difficulty": "easy",
-      "conceptCluster": "capital_allocation",
-      "primarySkill": "present_value_calculation",
-      "secondarySkills": [],
-      "repairSkill": "present_value_calculation",
-      "commonError": "Compounding the future payment rather than discounting it",
-      "feedback": "The present value is $210 divided by 1.05, or $200.",
-      "aHash": "981d56ae89e6190172955cbf003de4d1732e9612b5c2759cbff5a7dc0e932685"
+      "aHash": "797c7d463af6ea7fa7f88d50602cea0531e3e0da8cb59be3b0983bb98958cce8",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 5,
       "sourceGame": "marketSignal",
       "q": "Which formula gives the present value of a payment received one year from now?",
       "options": [
-        "Future value divided by 1 plus the discount rate",
-        "Future value multiplied by 1 plus the discount rate",
-        "Future value minus the discount rate",
-        "Future value divided by the number of years"
+        "PV = FV / (1 + r)",
+        "PV = FV × (1 + r)",
+        "PV = FV × (1 − r)",
+        "PV = FV / r"
       ],
       "tag": "present_value_formula",
       "type": "conceptual",
@@ -145,44 +126,21 @@ const questionBanks = {
       "conceptCluster": "capital_allocation",
       "primarySkill": "present_value_formula",
       "secondarySkills": [],
-      "repairSkill": "present_value_formula",
+      "repairSkill": "present_value_discounting",
       "commonError": "Using the compounding formula for a present-value problem",
       "feedback": "For one period, PV = FV/(1+r).",
-      "aHash": "9d1cdc6416ccf9c3901bc8f3123ebb7a00bf63a08fa0abd2a4d668e8b4969c5e"
-    },
-    {
-      "id": 6,
-      "sourceGame": "marketSignal",
-      "q": "If a firm's discount rate falls from 12% to 8%, which project cash flows become more valuable today?",
-      "options": [
-        "Past sunk costs",
-        "Future cash inflows",
-        "Current fixed costs",
-        "Previously paid expenses"
-      ],
-      "tag": "discount_rate_change",
-      "type": "application",
-      "objective": "LO5.1",
-      "difficulty": "easy",
-      "conceptCluster": "capital_allocation",
-      "primarySkill": "discount_rate_interpretation",
-      "secondarySkills": [
-        "cash_flow_timing"
-      ],
-      "repairSkill": "discount_rate_interpretation",
-      "commonError": "Applying discounting to costs that have already occurred",
-      "feedback": "A lower discount rate raises the present value of future cash inflows.",
-      "aHash": "179d8f19ec8b4d2ba95978fe9b76c44159a17d2b0584287ebf721c9d0ba18643"
+      "aHash": "7add5e3ce9ea61b4b21c87440d48ef907bfca2ba1c95ccee56f3adb4d5bebdc3",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 7,
       "sourceGame": "marketSignal",
       "q": "A firm's cost of capital is best described as which of the following?",
       "options": [
-        "The project's total accounting revenue",
-        "The total amount of cash and financial assets currently held by the firm",
+        "The expected accounting profit divided by sales",
+        "The cash outlay required to start the project",
         "The minimum return needed to justify an investment",
-        "The fixed cost paid before production"
+        "The interest rate on the cheapest loan regardless of project risk"
       ],
       "tag": "cost_of_capital",
       "type": "conceptual",
@@ -191,19 +149,20 @@ const questionBanks = {
       "conceptCluster": "capital_allocation",
       "primarySkill": "cost_of_capital_interpretation",
       "secondarySkills": [],
-      "repairSkill": "cost_of_capital_interpretation",
+      "repairSkill": "cost_of_capital_npv",
       "commonError": "Confusing the cost of capital with a project's cash outlay",
       "feedback": "The cost of capital is the opportunity cost of funding and acts as a required return.",
-      "aHash": "800ffdc8fde658ea8963e99da24b66fa79a33859cb736b625976359654cf1d09"
+      "aHash": "800ffdc8fde658ea8963e99da24b66fa79a33859cb736b625976359654cf1d09",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 8,
       "sourceGame": "marketSignal",
-      "q": "A project is expected to return 9%, while the firm's cost of capital is 7%. Based only on these rates, what should the firm do?",
+      "q": "A project's expected return is 9%, and the appropriate cost of capital for its risk and horizon is 7%. Based only on these rates, what should the firm do?",
       "options": [
-        "Reject the project",
-        "Ignore both rates",
-        "Accept only if the project has no fixed cost",
+        "Reject unless the entire initial outlay is recovered immediately",
+        "Reject because the required return is below the expected return",
+        "Accept only if the expected return equals the required return",
         "Accept the project"
       ],
       "tag": "return_vs_cost_of_capital",
@@ -213,15 +172,16 @@ const questionBanks = {
       "conceptCluster": "capital_allocation",
       "primarySkill": "investment_hurdle_comparison",
       "secondarySkills": [],
-      "repairSkill": "investment_hurdle_comparison",
+      "repairSkill": "cost_of_capital_npv",
       "commonError": "Rejecting a project even though its expected return exceeds the funding cost",
       "feedback": "A project clears the basic hurdle when its expected return exceeds the cost of capital.",
-      "aHash": "ab286895d8ea98ed6ef03180c98cbdc829ef7c7370f4fe1bc8a96b97f2a09167"
+      "aHash": "ab286895d8ea98ed6ef03180c98cbdc829ef7c7370f4fe1bc8a96b97f2a09167",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 9,
       "sourceGame": "marketSignal",
-      "q": "A project is expected to return 6%, and the firm's cost of capital is 8%. What does this comparison suggest?",
+      "q": "A project's expected return is 6%, and the appropriate cost of capital for its risk and horizon is 8%. What does this comparison suggest?",
       "options": [
         "The project does not cover the cost of capital",
         "The project creates value because 6% is positive",
@@ -235,20 +195,21 @@ const questionBanks = {
       "conceptCluster": "capital_allocation",
       "primarySkill": "investment_hurdle_comparison",
       "secondarySkills": [],
-      "repairSkill": "investment_hurdle_comparison",
+      "repairSkill": "cost_of_capital_npv",
       "commonError": "Accepting any project with a positive return",
       "feedback": "A positive return can still destroy value when it falls below the cost of capital.",
-      "aHash": "19083d5f3ec3d98ec854e8db1e3a3328752271ff849afff879a98ef607f98e40"
+      "aHash": "19083d5f3ec3d98ec854e8db1e3a3328752271ff849afff879a98ef607f98e40",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 10,
       "sourceGame": "marketSignal",
-      "q": "Why does a riskier project usually face a higher required return?",
+      "q": "Why does a project with more risk that investors require compensation to bear generally face a higher required return?",
       "options": [
-        "Risk always reduces every future cash flow by the same predictable percentage",
+        "Because all uncertain projects have a guaranteed lower payoff",
         "Investors require compensation for bearing more risk",
-        "Fixed costs automatically increase with risk",
-        "Accounting rules require a larger profit margin"
+        "Because greater volatility always raises the present value of the same expected payoff",
+        "Because a risk premium reimburses all losses after they occur"
       ],
       "tag": "risk_adjusted_hurdle",
       "type": "conceptual",
@@ -259,20 +220,21 @@ const questionBanks = {
       "secondarySkills": [
         "risk_premium"
       ],
-      "repairSkill": "risk_adjusted_cost_of_capital",
+      "repairSkill": "cost_of_capital_npv",
       "commonError": "Assuming risk changes accounting costs rather than required compensation",
       "feedback": "Greater risk generally raises the return investors require.",
-      "aHash": "0208a30926fb12f74eca8ddffd68956ce3e87a5dca5d1bf66d3059c2b889df55"
+      "aHash": "0208a30926fb12f74eca8ddffd68956ce3e87a5dca5d1bf66d3059c2b889df55",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 11,
       "sourceGame": "marketSignal",
-      "q": "Two projects have the same expected cash flows, but Project A is riskier. Which project should generally use the higher discount rate?",
+      "q": "Two projects have matching expected cash-flow amounts and dates, but A has more risk that investors require compensation to bear. Which should generally use the higher discount rate?",
       "options": [
-        "Project B",
-        "Both must use a zero rate",
+        "The same rate, because only expected cash amounts matter",
+        "Project B, because safer cash flows need more discounting",
         "Project A",
-        "Neither project should be discounted"
+        "The same rate, because different risk never changes opportunity cost"
       ],
       "tag": "risk_adjusted_discount_rate",
       "type": "application",
@@ -281,32 +243,11 @@ const questionBanks = {
       "conceptCluster": "capital_allocation",
       "primarySkill": "risk_adjusted_cost_of_capital",
       "secondarySkills": [],
-      "repairSkill": "risk_adjusted_cost_of_capital",
+      "repairSkill": "cost_of_capital_npv",
       "commonError": "Using the same required return despite different risk",
       "feedback": "The riskier project generally receives the higher discount rate.",
-      "aHash": "d9caf6fe542ff838298baf2597e45b9d61c7d905495f445fc6dcbb324012ad86"
-    },
-    {
-      "id": 12,
-      "sourceGame": "marketSignal",
-      "q": "What is the basic decision rule when comparing a project's expected return with the cost of capital?",
-      "options": [
-        "Invest whenever the expected return is positive even when it remains below the cost of capital",
-        "Invest only when the cost of capital is zero",
-        "Reject whenever the project has an initial cost",
-        "Invest when the expected return exceeds the cost of capital"
-      ],
-      "tag": "investment_hurdle_rule",
-      "type": "conceptual",
-      "objective": "LO5.2",
-      "difficulty": "easy",
-      "conceptCluster": "capital_allocation",
-      "primarySkill": "investment_hurdle_comparison",
-      "secondarySkills": [],
-      "repairSkill": "investment_hurdle_comparison",
-      "commonError": "Ignoring the opportunity cost of the funds used",
-      "feedback": "Expected return must clear the firm's required return, not merely be above zero.",
-      "aHash": "18ba2aeb751bf175ec97f334e73beb8906951c8ed620f74239d2b76943f7ade7"
+      "aHash": "d9caf6fe542ff838298baf2597e45b9d61c7d905495f445fc6dcbb324012ad86",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 13,
@@ -325,10 +266,11 @@ const questionBanks = {
       "conceptCluster": "investment_analysis",
       "primarySkill": "npv_interpretation",
       "secondarySkills": [],
-      "repairSkill": "npv_interpretation",
+      "repairSkill": "cost_of_capital_npv",
       "commonError": "Treating positive NPV as a guarantee rather than an expected value result",
       "feedback": "A positive NPV means discounted benefits exceed the initial cost.",
-      "aHash": "0ed483cf868acef231e2b8a7e2076d51ba526d57708029aaf583b2494a0bc16c"
+      "aHash": "0ed483cf868acef231e2b8a7e2076d51ba526d57708029aaf583b2494a0bc16c",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 14,
@@ -349,10 +291,11 @@ const questionBanks = {
       "secondarySkills": [
         "present_value_calculation"
       ],
-      "repairSkill": "npv_calculation",
+      "repairSkill": "cost_of_capital_npv",
       "commonError": "Subtracting the initial cost before discounting the future cash flow",
       "feedback": "The $1,100 future payment has a present value of $1,000, so NPV equals zero.",
-      "aHash": "ce66470e18f3579ac7665d2a660da03089cd89698b57c5e900e8ba608bb394ee"
+      "aHash": "ce66470e18f3579ac7665d2a660da03089cd89698b57c5e900e8ba608bb394ee",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 15,
@@ -371,19 +314,20 @@ const questionBanks = {
       "conceptCluster": "investment_analysis",
       "primarySkill": "npv_calculation",
       "secondarySkills": [],
-      "repairSkill": "npv_calculation",
+      "repairSkill": "cost_of_capital_npv",
       "commonError": "Adding the investment cost to the present value of inflows",
       "feedback": "NPV equals $1,000 minus $900, or $100.",
-      "aHash": "797c7d463af6ea7fa7f88d50602cea0531e3e0da8cb59be3b0983bb98958cce8"
+      "aHash": "797c7d463af6ea7fa7f88d50602cea0531e3e0da8cb59be3b0983bb98958cce8",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 16,
       "sourceGame": "marketSignal",
       "q": "Under the NPV rule, what should a firm do with a project whose NPV is negative?",
       "options": [
-        "Accept it",
-        "Ignore the initial cost",
-        "Accept it only because revenue is positive",
+        "Omit the initial outlay and apply the rule to receipts alone",
+        "Accept because any future receipts add value",
+        "Accept because a positive undiscounted inflow establishes positive NPV",
         "Reject it"
       ],
       "tag": "npv_rule",
@@ -393,10 +337,11 @@ const questionBanks = {
       "conceptCluster": "investment_analysis",
       "primarySkill": "npv_decision_rule",
       "secondarySkills": [],
-      "repairSkill": "npv_decision_rule",
+      "repairSkill": "cost_of_capital_npv",
       "commonError": "Accepting a project because it produces revenue despite destroying value",
       "feedback": "A negative NPV means the project does not cover its opportunity cost.",
-      "aHash": "9c75c99985edc7ab1ae46695e134796050c1883157dd27a44fa97164a0116e80"
+      "aHash": "9c75c99985edc7ab1ae46695e134796050c1883157dd27a44fa97164a0116e80",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 17,
@@ -415,15 +360,16 @@ const questionBanks = {
       "conceptCluster": "investment_analysis",
       "primarySkill": "payback_period_interpretation",
       "secondarySkills": [],
-      "repairSkill": "payback_period_interpretation",
+      "repairSkill": "payback_period",
       "commonError": "Confusing payback with NPV or rate of return",
-      "feedback": "The payback period counts the time needed for cumulative cash inflows to recover the initial outlay.",
-      "aHash": "21c27af56deb15e22a9f516c2d5df173ef08c1f799070f0667b6cfc81fa5d011"
+      "feedback": "Undiscounted payback counts the time until cumulative net cash inflows recover the initial outlay.",
+      "aHash": "21c27af56deb15e22a9f516c2d5df173ef08c1f799070f0667b6cfc81fa5d011",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 18,
       "sourceGame": "marketSignal",
-      "q": "A $12,000 investment produces $4,000 in cash inflow each year. Ignoring discounting, what is its payback period?",
+      "q": "A $12,000 investment produces $4,000 in net cash inflow each year. Ignoring discounting, what is its payback period?",
       "options": [
         "2 years",
         "3 years",
@@ -437,20 +383,21 @@ const questionBanks = {
       "conceptCluster": "investment_analysis",
       "primarySkill": "payback_period_calculation",
       "secondarySkills": [],
-      "repairSkill": "payback_period_calculation",
+      "repairSkill": "payback_period",
       "commonError": "Dividing annual inflow by the initial investment",
       "feedback": "The payback period is $12,000 divided by $4,000 per year, or 3 years.",
-      "aHash": "50a85bc5620bccce3bd18d3de2fd413e4711b0afff5d687d2e6c677135d04b4d"
+      "aHash": "50a85bc5620bccce3bd18d3de2fd413e4711b0afff5d687d2e6c677135d04b4d",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 19,
       "sourceGame": "marketSignal",
       "q": "What is a major weakness of the payback-period rule?",
       "options": [
-        "It requires every project to have identical annual cash flows before it can be calculated",
-        "It cannot be used when an initial cost exists",
+        "It always includes terminal asset value even after recovery",
+        "It necessarily weights later cash flows more heavily than earlier flows",
         "It can ignore cash flows received after the cutoff date",
-        "It includes every future cash flow in full detail"
+        "It discounts every cash flow at the project’s cost of capital"
       ],
       "tag": "payback_weakness",
       "type": "conceptual",
@@ -459,20 +406,21 @@ const questionBanks = {
       "conceptCluster": "investment_analysis",
       "primarySkill": "payback_period_interpretation",
       "secondarySkills": [],
-      "repairSkill": "payback_period_interpretation",
+      "repairSkill": "payback_period",
       "commonError": "Assuming payback captures all project value",
       "feedback": "Payback can favor quick recovery while ignoring valuable later cash flows.",
-      "aHash": "87e312d5a94f7e71b528bc3114dbde89206f8eb8f3dbc12f5705cb9a0b40df71"
+      "aHash": "87e312d5a94f7e71b528bc3114dbde89206f8eb8f3dbc12f5705cb9a0b40df71",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 20,
       "sourceGame": "marketSignal",
-      "q": "Which formula gives break-even quantity when price and variable cost per unit are known?",
+      "q": "With fixed cost F, price P and constant variable cost per unit v, where P exceeds v, which formula gives break-even quantity?",
       "options": [
-        "Fixed cost divided by price plus variable cost per unit",
-        "Price divided by fixed cost minus variable cost",
-        "Variable cost divided by price minus fixed cost",
-        "Fixed cost divided by price minus variable cost per unit"
+        "F / (P + v)",
+        "F / P",
+        "F / v",
+        "F / (P − v)"
       ],
       "tag": "break_even_formula",
       "type": "conceptual",
@@ -481,10 +429,11 @@ const questionBanks = {
       "conceptCluster": "break_even_shutdown",
       "primarySkill": "break_even_quantity_formula",
       "secondarySkills": [],
-      "repairSkill": "break_even_quantity_formula",
+      "repairSkill": "break_even_technology",
       "commonError": "Adding variable cost to price instead of finding contribution margin",
       "feedback": "Break-even quantity equals fixed cost divided by contribution margin per unit.",
-      "aHash": "af4379cc457af757a6027a6132bfa7e65c61a1a9f4467ec6be9bcde0c1e3be9c"
+      "aHash": "c1a8ae09d5a55aa076e6052f97053a6e7b045578cd3380081a838c3d49a6b41f",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 21,
@@ -503,32 +452,11 @@ const questionBanks = {
       "conceptCluster": "break_even_shutdown",
       "primarySkill": "break_even_quantity_calculation",
       "secondarySkills": [],
-      "repairSkill": "break_even_quantity_calculation",
+      "repairSkill": "break_even_technology",
       "commonError": "Dividing fixed cost by price rather than contribution margin",
       "feedback": "Contribution margin is $4, so break-even quantity is $400/$4 = 100.",
-      "aHash": "3e589980c9996db4652f95cb72678a6144020e2161dbe4cf75f8e0f5f594ab56"
-    },
-    {
-      "id": 22,
-      "sourceGame": "marketSignal",
-      "q": "A firm has fixed cost of $600, sells its product for $8, and has variable cost of $5 per unit. What is its break-even quantity?",
-      "options": [
-        "75 units",
-        "200 units",
-        "120 units",
-        "600 units"
-      ],
-      "tag": "break_even_quantity",
-      "type": "calculation",
-      "objective": "LO5.4",
-      "difficulty": "easy",
-      "conceptCluster": "break_even_shutdown",
-      "primarySkill": "break_even_quantity_calculation",
-      "secondarySkills": [],
-      "repairSkill": "break_even_quantity_calculation",
-      "commonError": "Using revenue per unit instead of contribution margin",
-      "feedback": "Each unit contributes $3 toward fixed cost, so $600/$3 = 200 units.",
-      "aHash": "fd25fd8da2abb4375b035140c5214f3ca6b11253aaa12c403f0beac9dd8ee8fc"
+      "aHash": "3e589980c9996db4652f95cb72678a6144020e2161dbe4cf75f8e0f5f594ab56",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 23,
@@ -547,20 +475,21 @@ const questionBanks = {
       "conceptCluster": "break_even_shutdown",
       "primarySkill": "break_even_price_calculation",
       "secondarySkills": [],
-      "repairSkill": "break_even_price_calculation",
+      "repairSkill": "break_even_technology",
       "commonError": "Ignoring the fixed cost allocated across expected sales",
       "feedback": "Break-even price equals variable cost plus fixed cost per unit: $7 + $900/300 = $10.",
-      "aHash": "a5e5e8d362fb74d764de0ae02c1301975aa694ee1175c61c2cc45a60a78245ec"
+      "aHash": "a5e5e8d362fb74d764de0ae02c1301975aa694ee1175c61c2cc45a60a78245ec",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 24,
       "sourceGame": "marketSignal",
-      "q": "When should a competitive firm shut down in the short run?",
+      "q": "With fixed costs unavoidable in the short run, when should a price-taking firm shut down rather than produce a positive output?",
       "options": [
-        "When price remains below average total cost for at least two consecutive periods",
-        "When price falls below average fixed cost",
-        "Whenever economic profit is negative",
-        "When price falls below average variable cost"
+        "When price is below average fixed cost at the chosen output",
+        "Whenever price is below average total cost at the chosen output",
+        "Whenever total economic profit is negative",
+        "When price is below minimum average variable cost"
       ],
       "tag": "shutdown_rule",
       "type": "conceptual",
@@ -569,20 +498,21 @@ const questionBanks = {
       "conceptCluster": "break_even_shutdown",
       "primarySkill": "short_run_shutdown_rule",
       "secondarySkills": [],
-      "repairSkill": "short_run_shutdown_rule",
+      "repairSkill": "shutdown_decisions",
       "commonError": "Confusing the shutdown point with the break-even point",
-      "feedback": "A firm can operate at a loss in the short run if price still covers average variable cost.",
-      "aHash": "4208f5ef47a3671bc15fc693f368205a2533ab2f6dd58f14531fd09b84bfd52c"
+      "feedback": "If no positive output covers its variable cost at the market price, shutdown avoids those variable costs. Comparing price with minimum AVC gives the shutdown threshold.",
+      "aHash": "b24efe6e2389247cca93a1902ac21479c5c83331a72c661b0fa037faa32dae2e",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 25,
       "sourceGame": "marketSignal",
-      "q": "A competitive firm's price is below average total cost but above average variable cost. What should it do in the short run?",
+      "q": "At its best positive output, a competitive firm's price is below ATC but above AVC. Fixed costs are unavoidable in the short run. What should it do?",
       "options": [
         "Continue producing at the profit-maximizing output",
-        "Shut down immediately",
-        "Raise the market price",
-        "Produce zero until the firm has recovered all fixed costs paid in earlier periods"
+        "Shut down because any economic loss makes production worse",
+        "Choose a higher selling price while remaining a price taker",
+        "Continue only if this period can repay all historical fixed spending"
       ],
       "tag": "operate_at_loss",
       "type": "application",
@@ -593,10 +523,11 @@ const questionBanks = {
       "secondarySkills": [
         "loss_minimization"
       ],
-      "repairSkill": "short_run_shutdown_rule",
+      "repairSkill": "shutdown_decisions",
       "commonError": "Shutting down whenever price is below average total cost",
       "feedback": "Producing covers variable cost and part of fixed cost, which reduces the firm's loss.",
-      "aHash": "bc46abf4894c416bdfb8a01bd405222664b0918b8744def47ac5ceaec531307d"
+      "aHash": "bc46abf4894c416bdfb8a01bd405222664b0918b8744def47ac5ceaec531307d",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 26,
@@ -615,41 +546,20 @@ const questionBanks = {
       "conceptCluster": "break_even_shutdown",
       "primarySkill": "contribution_margin",
       "secondarySkills": [],
-      "repairSkill": "contribution_margin",
+      "repairSkill": "break_even_technology",
       "commonError": "Using price or variable cost alone as contribution margin",
       "feedback": "Contribution margin equals price minus variable cost: $12 - $8 = $4.",
-      "aHash": "8237f5502e21c9b92304abaa68f4ad1e2814264cfc72663f178e31089e0d7f9b"
-    },
-    {
-      "id": 27,
-      "sourceGame": "marketSignal",
-      "q": "Technology A has fixed cost of $100 and variable cost of $5 per unit. Technology B has fixed cost of $300 and variable cost of $3 per unit. At what output are total costs equal?",
-      "options": [
-        "50 units",
-        "150 units",
-        "100 units",
-        "200 units"
-      ],
-      "tag": "technology_indifference",
-      "type": "calculation",
-      "objective": "LO5.4",
-      "difficulty": "easy",
-      "conceptCluster": "break_even_shutdown",
-      "primarySkill": "technology_cost_comparison",
-      "secondarySkills": [],
-      "repairSkill": "technology_cost_comparison",
-      "commonError": "Comparing only fixed costs or only variable costs",
-      "feedback": "Set 100 + 5Q equal to 300 + 3Q; solving gives Q = 100.",
-      "aHash": "3e589980c9996db4652f95cb72678a6144020e2161dbe4cf75f8e0f5f594ab56"
+      "aHash": "8237f5502e21c9b92304abaa68f4ad1e2814264cfc72663f178e31089e0d7f9b",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 28,
       "sourceGame": "marketSignal",
-      "q": "At output below the indifference quantity, which production technology is usually preferred?",
+      "q": "Two technologies have constant unit variable costs. One has lower fixed cost but higher unit variable cost; their total costs cross at a positive output. Below that output, which is cheaper?",
       "options": [
-        "The technology with the higher fixed cost",
-        "The technology with the highest total cost",
-        "The technology with no contribution margin",
+        "Whichever has lower unit variable cost regardless of fixed cost",
+        "The technology with higher fixed cost and lower unit variable cost",
+        "Both technologies at every output below the crossing",
         "The technology with the lower fixed cost"
       ],
       "tag": "technology_choice",
@@ -659,10 +569,11 @@ const questionBanks = {
       "conceptCluster": "break_even_shutdown",
       "primarySkill": "technology_cost_comparison",
       "secondarySkills": [],
-      "repairSkill": "technology_cost_comparison",
+      "repairSkill": "break_even_technology",
       "commonError": "Choosing low marginal cost without considering output scale",
-      "feedback": "At low output, avoiding a large fixed cost often matters more than saving a small amount per unit.",
-      "aHash": "9733e477eda3242d31b1d6a32441bc65b4e139a3d701998c732c0d4fbd191a1e"
+      "feedback": "Below the positive crossing, the fixed-cost saving exceeds the extra variable cost. Above it, the lower-variable-cost technology is cheaper.",
+      "aHash": "9733e477eda3242d31b1d6a32441bc65b4e139a3d701998c732c0d4fbd191a1e",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 29,
@@ -670,9 +581,9 @@ const questionBanks = {
       "q": "Why should a sunk cost be ignored in a current investment decision?",
       "options": [
         "It cannot be recovered regardless of the decision",
-        "It changes across every current alternative and can still be recovered through production",
-        "It is always smaller than variable cost",
-        "It represents a future cash inflow"
+        "Because past spending proves that finishing must create value",
+        "Because an accounting write-off reverses the original cash outflow",
+        "Because ignoring the past also means ignoring future exit costs"
       ],
       "tag": "sunk_cost_rule",
       "type": "conceptual",
@@ -681,20 +592,21 @@ const questionBanks = {
       "conceptCluster": "contracts_and_commitment",
       "primarySkill": "sunk_cost_recognition",
       "secondarySkills": [],
-      "repairSkill": "sunk_cost_recognition",
+      "repairSkill": "sunk_cost_hold_up",
       "commonError": "Treating past spending as a reason to continue a bad project",
       "feedback": "A sunk cost is already incurred and does not change across current alternatives.",
-      "aHash": "612d8c6d4efaf0fe8d7a1502b08dd680966dec0a2d47a3db75aa8d1325d1763e"
+      "aHash": "612d8c6d4efaf0fe8d7a1502b08dd680966dec0a2d47a3db75aa8d1325d1763e",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 30,
       "sourceGame": "marketSignal",
-      "q": "A company spent $50,000 studying a project and now learns the project has a negative NPV. What should it do?",
+      "q": "A company spent $50,000 on a completed study. The remaining project cash flows now have negative NPV, excluding that study. With no other benefits, what should it do?",
       "options": [
-        "Accept the project to recover the study cost",
+        "Continue because the completed study must be recovered",
         "Reject the project and ignore the study cost",
-        "Add the study cost to future revenue",
-        "Accept whenever the study cost exceeds fixed cost"
+        "Subtract the study cost again from the remaining project’s NPV",
+        "Treat the study payment as a new benefit of continuing"
       ],
       "tag": "sunk_cost_decision",
       "type": "application",
@@ -705,20 +617,21 @@ const questionBanks = {
       "secondarySkills": [
         "npv_decision_rule"
       ],
-      "repairSkill": "sunk_cost_recognition",
+      "repairSkill": "sunk_cost_hold_up",
       "commonError": "Throwing good money after bad to justify prior spending",
       "feedback": "The study cost is sunk; the project should be judged using its remaining costs and benefits.",
-      "aHash": "c539d02f7836959d2433565b3943936c7eb796fce81849e4af320dd9c7a138b9"
+      "aHash": "c539d02f7836959d2433565b3943936c7eb796fce81849e4af320dd9c7a138b9",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 31,
       "sourceGame": "marketSignal",
       "q": "Two firms fear that one will exploit the other after a specialized investment is made. What problem are they facing?",
       "options": [
-        "Adverse selection before contracting",
-        "A short-run shutdown decision",
+        "Ordinary demand risk with equally good outside uses for the asset",
+        "Hidden quality that exists before either party commits",
         "Post-investment hold-up",
-        "A competitive-market shortage"
+        "A cost overrun that leaves bargaining positions unchanged"
       ],
       "tag": "hold_up_problem",
       "type": "conceptual",
@@ -727,19 +640,20 @@ const questionBanks = {
       "conceptCluster": "contracts_and_commitment",
       "primarySkill": "post_investment_hold_up",
       "secondarySkills": [],
-      "repairSkill": "post_investment_hold_up",
+      "repairSkill": "post_investment_holdup",
       "commonError": "Confusing opportunism after investment with hidden information before agreement",
       "feedback": "Hold-up arises when a party becomes vulnerable after making a relationship-specific investment.",
-      "aHash": "25c29e55916a96203a4831efb8fb78976119e470ca675277b37817e4578b6dc3"
+      "aHash": "25c29e55916a96203a4831efb8fb78976119e470ca675277b37817e4578b6dc3",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 32,
       "sourceGame": "marketSignal",
       "q": "How can an exchange of hostages reduce a post-investment hold-up problem?",
       "options": [
-        "It eliminates every unforeseen contingency and removes the need for later enforcement",
-        "It converts fixed cost into variable cost",
-        "It guarantees that market demand will rise",
+        "It makes the specialized investment valuable in every outside use",
+        "It lets one party commit while leaving the other free to exit at no cost",
+        "It substitutes a nonbinding promise for any costly commitment",
         "It gives both parties something valuable to lose from breaking the agreement"
       ],
       "tag": "exchange_of_hostages",
@@ -751,10 +665,11 @@ const questionBanks = {
       "secondarySkills": [
         "post_investment_hold_up"
       ],
-      "repairSkill": "contractual_safeguards",
-      "commonError": "Treating a hostage as a literal rather than economic commitment device",
+      "repairSkill": "post_investment_holdup",
+      "commonError": "ignores_mutual_commitments_that_make_opportunism_costly",
       "feedback": "Mutual valuable commitments make opportunistic behavior costly for both parties.",
-      "aHash": "80b8a032580bf6cdd9309f4e026d5a27765fa262e73916ca553e68af3a61dbbd"
+      "aHash": "80b8a032580bf6cdd9309f4e026d5a27765fa262e73916ca553e68af3a61dbbd",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 33,
@@ -773,32 +688,11 @@ const questionBanks = {
       "conceptCluster": "uncertainty_decisions",
       "primarySkill": "expected_value_calculation",
       "secondarySkills": [],
-      "repairSkill": "expected_value_calculation",
+      "repairSkill": "expected_value_probability",
       "commonError": "Selecting the most favorable outcome instead of probability-weighting outcomes",
       "feedback": "Expected value is 0.5($200) + 0.5($0) = $100.",
-      "aHash": "797c7d463af6ea7fa7f88d50602cea0531e3e0da8cb59be3b0983bb98958cce8"
-    },
-    {
-      "id": 34,
-      "sourceGame": "marketSignal",
-      "q": "A decision has a 25% chance of producing a $400 benefit and a 75% chance of producing no benefit. What is the expected benefit?",
-      "options": [
-        "$25",
-        "$100",
-        "$300",
-        "$400"
-      ],
-      "tag": "expected_value",
-      "type": "calculation",
-      "objective": "LO17.1",
-      "difficulty": "easy",
-      "conceptCluster": "uncertainty_decisions",
-      "primarySkill": "expected_value_calculation",
-      "secondarySkills": [],
-      "repairSkill": "expected_value_calculation",
-      "commonError": "Multiplying the zero outcome by the wrong probability",
-      "feedback": "The expected benefit is 0.25($400) + 0.75($0) = $100.",
-      "aHash": "797c7d463af6ea7fa7f88d50602cea0531e3e0da8cb59be3b0983bb98958cce8"
+      "aHash": "797c7d463af6ea7fa7f88d50602cea0531e3e0da8cb59be3b0983bb98958cce8",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 35,
@@ -817,15 +711,16 @@ const questionBanks = {
       "conceptCluster": "uncertainty_decisions",
       "primarySkill": "expected_value_calculation",
       "secondarySkills": [],
-      "repairSkill": "expected_value_calculation",
+      "repairSkill": "expected_value_probability",
       "commonError": "Failing to treat the loss as a negative value",
       "feedback": "Expected value is 0.6($100) + 0.4(-$50) = $40.",
-      "aHash": "6d1f50e6a259ccaee2fe099e9af5dda7c8da1b49014c8060991b516c22754f46"
+      "aHash": "6d1f50e6a259ccaee2fe099e9af5dda7c8da1b49014c8060991b516c22754f46",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 36,
       "sourceGame": "marketSignal",
-      "q": "What must the probabilities in a complete probability distribution add up to?",
+      "q": "Written as decimals, what must the probabilities of a mutually exclusive and exhaustive set of outcomes sum to?",
       "options": [
         "0",
         "50",
@@ -839,10 +734,11 @@ const questionBanks = {
       "conceptCluster": "uncertainty_decisions",
       "primarySkill": "probability_distribution",
       "secondarySkills": [],
-      "repairSkill": "probability_distribution",
+      "repairSkill": "expected_value_probability",
       "commonError": "Using percentage notation without converting it to a total probability",
       "feedback": "All mutually exclusive and exhaustive outcome probabilities sum to 1.",
-      "aHash": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+      "aHash": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 37,
@@ -852,7 +748,7 @@ const questionBanks = {
         "Project B",
         "Project A",
         "Both have the same expected value",
-        "Neither has a measurable expected value"
+        "Project B has an expected value of $250"
       ],
       "tag": "compare_expected_values",
       "type": "application",
@@ -861,20 +757,21 @@ const questionBanks = {
       "conceptCluster": "uncertainty_decisions",
       "primarySkill": "expected_value_comparison",
       "secondarySkills": [],
-      "repairSkill": "expected_value_comparison",
+      "repairSkill": "expected_value_probability",
       "commonError": "Choosing the certain outcome without first comparing expected values",
       "feedback": "Project A has EV $100; Project B has EV $125.",
-      "aHash": "f4d19f788de8deb4b1aaac6639918594fc44f0c5cd9cebfd5d7a1315d0cfe174"
+      "aHash": "f4d19f788de8deb4b1aaac6639918594fc44f0c5cd9cebfd5d7a1315d0cfe174",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 38,
       "sourceGame": "marketSignal",
       "q": "Why is expected value useful in repeated business decisions?",
       "options": [
-        "It guarantees the result of each decision",
+        "It identifies the most frequent outcome in every distribution",
         "It summarizes probability-weighted outcomes",
-        "It removes all uncertainty from the market",
-        "It identifies the largest possible payoff only"
+        "It shows the payoff that every individual trial must produce",
+        "It equals the best outcome whenever managers choose rationally"
       ],
       "tag": "expected_value_meaning",
       "type": "conceptual",
@@ -883,20 +780,21 @@ const questionBanks = {
       "conceptCluster": "uncertainty_decisions",
       "primarySkill": "expected_value_interpretation",
       "secondarySkills": [],
-      "repairSkill": "expected_value_interpretation",
+      "repairSkill": "expected_value_probability",
       "commonError": "Treating expected value as a guaranteed outcome",
       "feedback": "Expected value is a probability-weighted average, not a promise about one trial.",
-      "aHash": "415f75ffd715d83d1b1a24d8f2531b87b8e0fce3c772c23966ab9c9e25ae6c05"
+      "aHash": "415f75ffd715d83d1b1a24d8f2531b87b8e0fce3c772c23966ab9c9e25ae6c05",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 39,
       "sourceGame": "marketSignal",
-      "q": "A theater charges lower prices for weekday matinees than for Friday-night shows. What pricing practice is this?",
+      "q": "For identical seats at the same performance and equal service costs, a theater charges students less than other adults and checks student IDs. What practice is this?",
       "options": [
-        "Predatory pricing",
-        "A uniform price reduction based entirely on a temporary decrease in production cost",
+        "A price difference explained entirely by different service costs",
+        "Uniform pricing",
         "Price discrimination",
-        "Uniform pricing"
+        "A discount offered to every buyer on the same terms"
       ],
       "tag": "price_discrimination",
       "type": "conceptual",
@@ -905,19 +803,20 @@ const questionBanks = {
       "conceptCluster": "pricing_uncertainty",
       "primarySkill": "price_discrimination_recognition",
       "secondarySkills": [],
-      "repairSkill": "price_discrimination_recognition",
+      "repairSkill": "price_discrimination_uncertainty",
       "commonError": "Assuming every price difference reflects a cost difference",
-      "feedback": "Charging different prices to groups or times with different willingness to pay is price discrimination.",
-      "aHash": "ef14fd664d1bdadb4b6aacd751b16d8048557ebd426c4c44db1b202d08ce1d60"
+      "feedback": "Different buyer groups pay different prices for the same service, rather than a difference justified by serving costs.",
+      "aHash": "ef14fd664d1bdadb4b6aacd751b16d8048557ebd426c4c44db1b202d08ce1d60",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 40,
       "sourceGame": "marketSignal",
       "q": "Why might a firm test two different prices in separate markets?",
       "options": [
-        "To guarantee equal sales in both markets",
-        "To eliminate the need for a control group",
-        "To convert fixed costs into sunk costs",
+        "To establish that the higher price always yields more profit",
+        "To prove that every sales difference is caused by price without comparability checks",
+        "To estimate production cost directly from the posted prices",
         "To learn how demand responds to price"
       ],
       "tag": "pricing_experiment",
@@ -929,10 +828,11 @@ const questionBanks = {
       "secondarySkills": [
         "experimental_design"
       ],
-      "repairSkill": "pricing_response_estimation",
+      "repairSkill": "price_discrimination_uncertainty",
       "commonError": "Treating a price test as a way to force identical outcomes",
       "feedback": "Different prices can reveal customer sensitivity and reduce pricing uncertainty.",
-      "aHash": "ccadce2e9bd6d4f3ad13436455527fb3de67c4fbac5cff90e46607096c268c03"
+      "aHash": "ccadce2e9bd6d4f3ad13436455527fb3de67c4fbac5cff90e46607096c268c03",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 41,
@@ -940,9 +840,9 @@ const questionBanks = {
       "q": "For price discrimination to work, a firm must usually be able to do what?",
       "options": [
         "Separate customers and limit resale",
-        "Set marginal cost equal to zero",
-        "Prevent all competitors from entering",
-        "Charge every customer the same price"
+        "Allow low-price buyers to resell freely to high-price buyers",
+        "Use a buyer label unrelated to willingness to pay",
+        "Apply the same price to all groups regardless of demand differences"
       ],
       "tag": "price_discrimination_conditions",
       "type": "conceptual",
@@ -951,20 +851,21 @@ const questionBanks = {
       "conceptCluster": "pricing_uncertainty",
       "primarySkill": "price_discrimination_conditions",
       "secondarySkills": [],
-      "repairSkill": "price_discrimination_conditions",
+      "repairSkill": "price_discrimination_uncertainty",
       "commonError": "Ignoring resale that would undermine different prices",
       "feedback": "Customer separation and limited resale help a firm maintain different prices.",
-      "aHash": "489d51a32e246a43492bdae6c199b219e95029840840cfaf8d08807399d25430"
+      "aHash": "489d51a32e246a43492bdae6c199b219e95029840840cfaf8d08807399d25430",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 42,
       "sourceGame": "marketSignal",
       "q": "Why does a randomized experiment use a treatment group and a control group?",
       "options": [
-        "To ensure both groups receive the same treatment and therefore produce matching outcomes",
+        "To use the treated group’s earlier outcome as the only comparison",
         "To compare outcomes with and without the change",
-        "To remove the need to measure outcomes",
-        "To guarantee the treatment succeeds"
+        "To attribute every post-treatment change to the intervention",
+        "To choose the comparison group after seeing which outcomes favor the program"
       ],
       "tag": "treatment_control",
       "type": "conceptual",
@@ -973,20 +874,21 @@ const questionBanks = {
       "conceptCluster": "causal_inference",
       "primarySkill": "experimental_design",
       "secondarySkills": [],
-      "repairSkill": "experimental_design",
+      "repairSkill": "experiments_causality",
       "commonError": "Thinking the control group is unnecessary or should receive the same treatment",
       "feedback": "The control group provides the counterfactual comparison for the treatment group.",
-      "aHash": "61d7dc53399bc7b11ddad532103fbf3a90b72a580b9fbbdcfff68b10d3c23f19"
+      "aHash": "61d7dc53399bc7b11ddad532103fbf3a90b72a580b9fbbdcfff68b10d3c23f19",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 43,
       "sourceGame": "marketSignal",
       "q": "What is the main benefit of randomly assigning participants to treatment and control groups?",
       "options": [
-        "It guarantees that every participant in both groups will produce an identical outcome",
-        "It makes the sample larger automatically",
+        "It balances only the characteristics managers already measure",
+        "It ensures exact balance on every characteristic in each finite sample",
         "It reduces systematic differences between the groups",
-        "It prevents anyone from leaving the study"
+        "It proves a treatment works before outcomes are observed"
       ],
       "tag": "random_assignment",
       "type": "conceptual",
@@ -995,19 +897,20 @@ const questionBanks = {
       "conceptCluster": "causal_inference",
       "primarySkill": "random_assignment",
       "secondarySkills": [],
-      "repairSkill": "random_assignment",
+      "repairSkill": "experiments_causality",
       "commonError": "Believing randomization makes every participant identical",
       "feedback": "Random assignment tends to balance observed and unobserved characteristics across groups.",
-      "aHash": "7af73d382585d9470861e1fe1c60d8bdbff8ba868d5163438a8afda556a5bc6d"
+      "aHash": "7af73d382585d9470861e1fe1c60d8bdbff8ba868d5163438a8afda556a5bc6d",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 44,
       "sourceGame": "marketSignal",
       "q": "A gym compares members who voluntarily joined a coaching program with members who did not. What problem may bias the result?",
       "options": [
-        "A price ceiling",
-        "Mean reversion in profits",
-        "A sunk fixed cost",
+        "The untreated group shows what treated volunteers would have done without coaching with certainty",
+        "Random assignment has removed all differences in motivation",
+        "Any gain after coaching must be caused entirely by coaching",
         "Selection bias"
       ],
       "tag": "selection_bias",
@@ -1017,10 +920,11 @@ const questionBanks = {
       "conceptCluster": "causal_inference",
       "primarySkill": "selection_bias_recognition",
       "secondarySkills": [],
-      "repairSkill": "selection_bias_recognition",
+      "repairSkill": "experiments_causality",
       "commonError": "Assuming volunteers are automatically comparable to nonparticipants",
       "feedback": "People who choose coaching may differ in motivation before the program begins.",
-      "aHash": "c9f6b02c2f3f0c8e2095758060f763486b1f27cc0f755adb279c316258b937a1"
+      "aHash": "c9f6b02c2f3f0c8e2095758060f763486b1f27cc0f755adb279c316258b937a1",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 45,
@@ -1028,9 +932,9 @@ const questionBanks = {
       "q": "What question does a control group help answer?",
       "options": [
         "What would have happened without the treatment?",
-        "Which participant would have received the treatment without random assignment?",
-        "What price maximizes monopoly profit?",
-        "How quickly will competitors enter?"
+        "What happened to the treated group after treatment, without a comparison",
+        "Which group has the largest outcome regardless of its starting point",
+        "How participants selected their preferred treatment after seeing its results"
       ],
       "tag": "counterfactual",
       "type": "conceptual",
@@ -1039,20 +943,21 @@ const questionBanks = {
       "conceptCluster": "causal_inference",
       "primarySkill": "counterfactual_reasoning",
       "secondarySkills": [],
-      "repairSkill": "counterfactual_reasoning",
+      "repairSkill": "experiments_causality",
       "commonError": "Treating the observed treatment outcome as sufficient evidence",
       "feedback": "Causal effects require a comparison with the outcome that would occur without treatment.",
-      "aHash": "699a7031683b4c38790d89fabd91a322623d376a71f18672a0b473cdc5643d57"
+      "aHash": "699a7031683b4c38790d89fabd91a322623d376a71f18672a0b473cdc5643d57",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 46,
       "sourceGame": "marketSignal",
       "q": "A Type I error occurs when a manager does what?",
       "options": [
-        "Misses an effect that is actually present",
+        "Fails to detect an effect that is present",
         "Acts on an effect that is not actually present",
-        "Calculates expected value correctly",
-        "Uses a control group but fails to calculate the project's full accounting profit"
+        "Detects an effect that is present",
+        "Correctly concludes that no effect is present"
       ],
       "tag": "type_i_error",
       "type": "conceptual",
@@ -1061,20 +966,21 @@ const questionBanks = {
       "conceptCluster": "error_costs",
       "primarySkill": "type_i_error_recognition",
       "secondarySkills": [],
-      "repairSkill": "type_i_error_recognition",
+      "repairSkill": "error_costs",
       "commonError": "Confusing a false positive with a false negative",
       "feedback": "A Type I error is a false positive: concluding an effect exists when it does not.",
-      "aHash": "ed0c8382636a4367640ddac7ca1c9c5a87f652367f411e2054e00dea41e21371"
+      "aHash": "ed0c8382636a4367640ddac7ca1c9c5a87f652367f411e2054e00dea41e21371",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 47,
       "sourceGame": "marketSignal",
       "q": "A Type II error occurs when a manager does what?",
       "options": [
-        "Detects an effect that is absent",
-        "Rejects a real effect because the sample evidence fails to detect it clearly",
+        "Correctly detects a real effect",
+        "Concludes an effect exists when it does not",
         "Fails to detect an effect that is actually present",
-        "Assigns participants randomly"
+        "Correctly concludes there is no effect"
       ],
       "tag": "type_ii_error",
       "type": "conceptual",
@@ -1083,19 +989,20 @@ const questionBanks = {
       "conceptCluster": "error_costs",
       "primarySkill": "type_ii_error_recognition",
       "secondarySkills": [],
-      "repairSkill": "type_ii_error_recognition",
+      "repairSkill": "error_costs",
       "commonError": "Confusing a false negative with a false positive",
       "feedback": "A Type II error is a false negative: missing a real effect.",
-      "aHash": "f894c6d778900417850a3a1f09abaf280d286f940e970f25b563d092e031bdc8"
+      "aHash": "f894c6d778900417850a3a1f09abaf280d286f940e970f25b563d092e031bdc8",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 48,
       "sourceGame": "marketSignal",
-      "q": "When a false positive would be extremely costly, what should a decision maker generally require?",
+      "q": "Holding other error costs and benefits fixed, what should a decision maker generally require when a false positive becomes much more costly?",
       "options": [
-        "Weaker evidence before acting",
-        "No data before acting",
-        "A lower cost for the failed project",
+        "A threshold based only on the cost of false negatives",
+        "Weaker evidence so more proposals are accepted",
+        "The same threshold regardless of changes in error costs",
         "Stronger evidence before acting"
       ],
       "tag": "minimize_error_cost",
@@ -1105,10 +1012,11 @@ const questionBanks = {
       "conceptCluster": "error_costs",
       "primarySkill": "expected_error_cost",
       "secondarySkills": [],
-      "repairSkill": "expected_error_cost",
+      "repairSkill": "error_costs",
       "commonError": "Ignoring how the consequences of errors affect the evidence threshold",
       "feedback": "When false positives are costly, the decision rule should be more cautious.",
-      "aHash": "f80bf719578c1527ad7ed9ab5ba55becf8fd4a7c7a83773e3e5c6e45c66aef8c"
+      "aHash": "f80bf719578c1527ad7ed9ab5ba55becf8fd4a7c7a83773e3e5c6e45c66aef8c",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 49,
@@ -1116,9 +1024,9 @@ const questionBanks = {
       "q": "Which source is generally most useful for estimating the probability of equipment failure?",
       "options": [
         "Relevant historical failure data",
-        "A manager's favorite outcome",
-        "The equipment's purchase price alone",
-        "An unrelated industry's advertising budget"
+        "Failure counts pooled across unrelated equipment without exposure measures",
+        "The purchase price used directly as the probability",
+        "Only the machines still operating, excluding failed units"
       ],
       "tag": "probability_estimation",
       "type": "conceptual",
@@ -1127,20 +1035,21 @@ const questionBanks = {
       "conceptCluster": "uncertainty_estimation",
       "primarySkill": "probability_estimation",
       "secondarySkills": [],
-      "repairSkill": "probability_estimation",
+      "repairSkill": "uncertainty_estimation",
       "commonError": "Using irrelevant or wishful information instead of comparable data",
       "feedback": "Historical data from similar equipment provide a grounded estimate of failure risk.",
-      "aHash": "79551fe5b5f3bce27e5aed638be400cbaedc1c50731d21336bba0cc7c3c74f20"
+      "aHash": "79551fe5b5f3bce27e5aed638be400cbaedc1c50731d21336bba0cc7c3c74f20",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 50,
       "sourceGame": "marketSignal",
       "q": "Why might a company run a simulation before committing to a risky project?",
       "options": [
-        "To guarantee the best simulated outcome will occur once the project is launched",
+        "To prove the best simulated outcome will occur",
         "To examine outcomes under many possible assumptions",
-        "To eliminate the need for probability estimates",
-        "To recover sunk costs immediately"
+        "To infer the true probabilities without evidence or assumptions",
+        "To treat the average simulated payoff as certain"
       ],
       "tag": "simulation",
       "type": "conceptual",
@@ -1149,20 +1058,21 @@ const questionBanks = {
       "conceptCluster": "uncertainty_estimation",
       "primarySkill": "simulation_use",
       "secondarySkills": [],
-      "repairSkill": "simulation_use",
+      "repairSkill": "uncertainty_estimation",
       "commonError": "Treating simulation as a prediction guarantee",
       "feedback": "Simulation shows how results vary across plausible scenarios and assumptions.",
-      "aHash": "2c918303c57526bfd615a151dd0bdc339aebc9da04738ddc2e6856660a189372"
+      "aHash": "2c918303c57526bfd615a151dd0bdc339aebc9da04738ddc2e6856660a189372",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 51,
       "sourceGame": "marketSignal",
       "q": "Why do contracts sometimes include a renegotiation clause?",
       "options": [
-        "To make all past sunk costs recoverable regardless of what future conditions occur",
-        "To prevent any future market change",
+        "To remove any need for a process when the written terms leave a gap",
+        "To specify every possible future state without exception",
         "To address conditions that could not be fully predicted",
-        "To guarantee equal profit for both parties"
+        "To make a party’s initial forecast binding even after an unforeseen event"
       ],
       "tag": "renegotiation_clause",
       "type": "conceptual",
@@ -1171,19 +1081,20 @@ const questionBanks = {
       "conceptCluster": "contingency_design",
       "primarySkill": "contract_contingencies",
       "secondarySkills": [],
-      "repairSkill": "contract_contingencies",
+      "repairSkill": "contingency_contracts",
       "commonError": "Assuming a contract can specify every future state perfectly",
       "feedback": "Renegotiation clauses create a process for handling unforeseen conditions.",
-      "aHash": "483065d0e530f25297758633563b15aec5e02bd8816afb99221f20362e018d46"
+      "aHash": "483065d0e530f25297758633563b15aec5e02bd8816afb99221f20362e018d46",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 52,
       "sourceGame": "marketSignal",
       "q": "Which contract term best addresses a future event that can be clearly observed and verified?",
       "options": [
-        "An unwritten promise that leaves the response to the future event entirely unspecified",
-        "A random price chosen later",
-        "A requirement to ignore the event",
+        "A clause triggered only by a party’s unverifiable assertion",
+        "A price term that specifies no response to the event",
+        "A promise to decide later with no stated decision process",
         "A contingency clause tied to that event"
       ],
       "tag": "contingency_clause",
@@ -1193,10 +1104,11 @@ const questionBanks = {
       "conceptCluster": "contingency_design",
       "primarySkill": "contract_contingencies",
       "secondarySkills": [],
-      "repairSkill": "contract_contingencies",
+      "repairSkill": "contingency_contracts",
       "commonError": "Leaving a verifiable contingency unspecified",
       "feedback": "A contract can state in advance what happens when a verifiable event occurs.",
-      "aHash": "ca082fce64120ab6277bf5015e274490e4b017141e813c4e2e19a8bf8740dd1d"
+      "aHash": "ca082fce64120ab6277bf5015e274490e4b017141e813c4e2e19a8bf8740dd1d",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 53,
@@ -1204,9 +1116,9 @@ const questionBanks = {
       "q": "Before using supply and demand, what should an analyst define first?",
       "options": [
         "The relevant market",
-        "The firm's sunk cost",
-        "The project's payback period",
-        "The investor's discount rate"
+        "The desired price change before identifying buyers and sellers",
+        "The accounting boundary of one firm regardless of substitutes",
+        "The broadest available industry category regardless of product or place"
       ],
       "tag": "market_definition",
       "type": "conceptual",
@@ -1218,39 +1130,41 @@ const questionBanks = {
       "repairSkill": "market_definition",
       "commonError": "Jumping into curve shifts without identifying the product and geographic scope",
       "feedback": "Supply-and-demand conclusions depend on defining the relevant product, customers, place, and time.",
-      "aHash": "7988d3b7a45eb4d6195f16c7d3d4778f4fdb36089c15ae9c882f8d3c9d79d25c"
+      "aHash": "7988d3b7a45eb4d6195f16c7d3d4778f4fdb36089c15ae9c882f8d3c9d79d25c",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 54,
       "sourceGame": "marketSignal",
-      "q": "Which market definition is narrower?",
+      "q": "Which description has the narrowest product, place and time scope?",
       "options": [
-        "Food services in the United States",
-        "Lunch delivery in downtown Chicago",
-        "All consumer goods worldwide",
-        "Business activity in North America"
+        "All restaurant meals within downtown Chicago",
+        "Weekday lunch delivery within downtown Chicago",
+        "Lunch delivery throughout the Chicago metropolitan area",
+        "Downtown Chicago lunch delivery throughout the week"
       ],
       "tag": "market_scope",
-      "type": "conceptual",
+      "type": "application",
       "objective": "LO8.1",
       "difficulty": "easy",
       "conceptCluster": "market_analysis",
       "primarySkill": "market_scope",
       "secondarySkills": [],
-      "repairSkill": "market_scope",
+      "repairSkill": "market_definition",
       "commonError": "Choosing the broadest category rather than the most specific market",
-      "feedback": "A market defined by one service, location, and use is narrower.",
-      "aHash": "43fd210243f1bb3c988ad548fcf399d7daa7f9dade314cbc3b96088fa67a16f9"
+      "feedback": "The first scope restricts the product/use, geographic area and days. A narrower scope is not automatically the correct market for every question.",
+      "aHash": "66cf6fd4e748e8a850f8139261ea7c3a37d51a4faa3c415ff3ccd692c8272d4f",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 55,
       "sourceGame": "marketSignal",
       "q": "Why can defining a market too broadly create a bad analysis?",
       "options": [
-        "It always makes demand perfectly inelastic regardless of the substitutes consumers actually face",
-        "It eliminates every supplier",
+        "It reveals local competition even when the data combine unrelated regions",
+        "It guarantees stronger substitution between every included product",
         "It can combine products that are not close substitutes",
-        "It forces price below variable cost"
+        "It makes time and location irrelevant to substitution"
       ],
       "tag": "market_definition_error",
       "type": "conceptual",
@@ -1262,17 +1176,18 @@ const questionBanks = {
       "repairSkill": "market_definition",
       "commonError": "Assuming broader data are automatically more accurate",
       "feedback": "Combining weak substitutes can hide the actual competitive pressures faced by buyers and sellers.",
-      "aHash": "c3958b0ba3320c457302f1a9457ad770332536e47de183af55abe1c0a6f16f8d"
+      "aHash": "c3958b0ba3320c457302f1a9457ad770332536e47de183af55abe1c0a6f16f8d",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 56,
       "sourceGame": "marketSignal",
-      "q": "A coffee shop studies demand for iced coffee during weekday mornings near campus. Which feature is part of its market definition?",
+      "q": "A coffee shop defines its market as iced-coffee purchases near campus on weekday mornings. Which part specifies the time dimension?",
       "options": [
-        "Its past sunk advertising cost",
-        "Its owner's personal discount rate",
-        "Its accounting depreciation method",
-        "The time period"
+        "Purchases by coffee customers",
+        "Iced coffee",
+        "Near campus",
+        "Weekday mornings"
       ],
       "tag": "market_dimensions",
       "type": "application",
@@ -1281,15 +1196,16 @@ const questionBanks = {
       "conceptCluster": "market_analysis",
       "primarySkill": "market_scope",
       "secondarySkills": [],
-      "repairSkill": "market_scope",
+      "repairSkill": "market_definition",
       "commonError": "Ignoring time as part of the relevant market",
-      "feedback": "Product, geography, customers, and time can all define the market being studied.",
-      "aHash": "78df93ae788a2132fcd43dbdea639e3669afdcf2ad669549a8f107c8fca5dae3"
+      "feedback": "Weekday mornings specifies time; iced coffee specifies product and near campus specifies geography.",
+      "aHash": "45fee5e8e0063af9ebf77784e33b58dc575a8c33da3f7c155f66d28ecb8a2caf",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 57,
       "sourceGame": "marketSignal",
-      "q": "According to the law of demand, what usually happens to quantity demanded when price rises?",
+      "q": "Holding other demand determinants fixed, what usually happens to quantity demanded when the product’s own price rises?",
       "options": [
         "Quantity demanded falls",
         "Quantity demanded rises",
@@ -1303,15 +1219,16 @@ const questionBanks = {
       "conceptCluster": "buyer_seller_behavior",
       "primarySkill": "buyer_response_to_price",
       "secondarySkills": [],
-      "repairSkill": "buyer_response_to_price",
+      "repairSkill": "buyer_seller_behavior",
       "commonError": "Confusing a movement along demand with a shift in demand",
       "feedback": "A higher price causes a movement upward along the demand curve and lowers quantity demanded.",
-      "aHash": "eaa63d82c87d62cd1ee6b63e191554f372fa7709ca90cd3fe52b440c8b04ac72"
+      "aHash": "eaa63d82c87d62cd1ee6b63e191554f372fa7709ca90cd3fe52b440c8b04ac72",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 58,
       "sourceGame": "marketSignal",
-      "q": "According to the law of supply, what usually happens to quantity supplied when price rises?",
+      "q": "Holding other supply determinants fixed, what usually happens to quantity supplied when the product’s own price rises?",
       "options": [
         "Quantity supplied falls",
         "Quantity supplied rises",
@@ -1325,10 +1242,11 @@ const questionBanks = {
       "conceptCluster": "buyer_seller_behavior",
       "primarySkill": "seller_response_to_price",
       "secondarySkills": [],
-      "repairSkill": "seller_response_to_price",
+      "repairSkill": "buyer_seller_behavior",
       "commonError": "Confusing a movement along supply with a shift in supply",
       "feedback": "A higher price generally gives sellers an incentive to offer more units.",
-      "aHash": "84b5fa45fb955f2aa081f78e79b10315df19293e7d24dca774b6190246535cac"
+      "aHash": "84b5fa45fb955f2aa081f78e79b10315df19293e7d24dca774b6190246535cac",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 59,
@@ -1347,10 +1265,11 @@ const questionBanks = {
       "conceptCluster": "buyer_seller_behavior",
       "primarySkill": "movement_vs_shift",
       "secondarySkills": [],
-      "repairSkill": "movement_vs_shift",
+      "repairSkill": "buyer_seller_behavior",
       "commonError": "Calling every reduction in purchases a decrease in demand",
       "feedback": "A change caused by the product's own price is a movement along the demand curve.",
-      "aHash": "b5acfe3e64e7476053b9474741883bdb5cd70d67164f72d9bfdcf8eb98179a2b"
+      "aHash": "b5acfe3e64e7476053b9474741883bdb5cd70d67164f72d9bfdcf8eb98179a2b",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 60,
@@ -1369,10 +1288,11 @@ const questionBanks = {
       "conceptCluster": "buyer_seller_behavior",
       "primarySkill": "movement_vs_shift",
       "secondarySkills": [],
-      "repairSkill": "movement_vs_shift",
+      "repairSkill": "buyer_seller_behavior",
       "commonError": "Calling a response to the product's own price a supply shift",
       "feedback": "A price change causes movement along the existing supply curve.",
-      "aHash": "76bccb9fd5df93eeef34cd67f739838a52c299ac5660905244ff0a07dae32023"
+      "aHash": "76bccb9fd5df93eeef34cd67f739838a52c299ac5660905244ff0a07dae32023",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 61,
@@ -1380,9 +1300,9 @@ const questionBanks = {
       "q": "Market equilibrium occurs where which two quantities are equal?",
       "options": [
         "Quantity demanded and quantity supplied",
-        "The market price received by sellers and the total revenue earned by all firms",
-        "Price and total revenue",
-        "Consumer income and firm profit"
+        "Units actually sold and all units sellers would like to sell at any price",
+        "Quantity demanded at one price and quantity supplied at a different price",
+        "Total expenditure by buyers and total production cost"
       ],
       "tag": "market_equilibrium",
       "type": "conceptual",
@@ -1391,10 +1311,11 @@ const questionBanks = {
       "conceptCluster": "market_equilibrium",
       "primarySkill": "equilibrium_condition",
       "secondarySkills": [],
-      "repairSkill": "equilibrium_condition",
+      "repairSkill": "equilibrium_shortage_surplus",
       "commonError": "Using unrelated equalities as the market-clearing condition",
       "feedback": "At equilibrium, buyers want to purchase exactly what sellers want to offer.",
-      "aHash": "1f13682eedd3f83fda63193a2fd149d7d0f4f72e8a1ec7a9146964b933f754df"
+      "aHash": "1f13682eedd3f83fda63193a2fd149d7d0f4f72e8a1ec7a9146964b933f754df",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 62,
@@ -1403,8 +1324,8 @@ const questionBanks = {
       "options": [
         "A surplus",
         "A shortage",
-        "Zero demand",
-        "Long-run economic profit"
+        "Market clearing despite unequal desired purchases and sales",
+        "A demand-curve shift caused solely by the low posted price"
       ],
       "tag": "shortage",
       "type": "conceptual",
@@ -1413,20 +1334,21 @@ const questionBanks = {
       "conceptCluster": "market_equilibrium",
       "primarySkill": "shortage_surplus",
       "secondarySkills": [],
-      "repairSkill": "shortage_surplus",
+      "repairSkill": "equilibrium_shortage_surplus",
       "commonError": "Reversing the effects of prices above and below equilibrium",
       "feedback": "Below equilibrium, quantity demanded exceeds quantity supplied.",
-      "aHash": "688698ae5305f073cf6805bca8d8672bb6e5d39fe076593fa49e9af3160a4864"
+      "aHash": "688698ae5305f073cf6805bca8d8672bb6e5d39fe076593fa49e9af3160a4864",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 63,
       "sourceGame": "marketSignal",
       "q": "At a price above equilibrium, what usually occurs?",
       "options": [
+        "Market clearing despite sellers’ unsold desired output",
         "A shortage",
-        "Zero supply",
         "A surplus",
-        "A demand increase"
+        "A supply-curve shift caused solely by the high posted price"
       ],
       "tag": "surplus",
       "type": "conceptual",
@@ -1435,10 +1357,11 @@ const questionBanks = {
       "conceptCluster": "market_equilibrium",
       "primarySkill": "shortage_surplus",
       "secondarySkills": [],
-      "repairSkill": "shortage_surplus",
+      "repairSkill": "equilibrium_shortage_surplus",
       "commonError": "Reversing the effects of prices above and below equilibrium",
       "feedback": "Above equilibrium, quantity supplied exceeds quantity demanded.",
-      "aHash": "3de52d59b387f97534ba2f1ab586978f6e3295a94a2462010616e9f500965ac8"
+      "aHash": "3de52d59b387f97534ba2f1ab586978f6e3295a94a2462010616e9f500965ac8",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 64,
@@ -1457,10 +1380,11 @@ const questionBanks = {
       "conceptCluster": "market_equilibrium",
       "primarySkill": "shortage_surplus_calculation",
       "secondarySkills": [],
-      "repairSkill": "shortage_surplus_calculation",
+      "repairSkill": "equilibrium_shortage_surplus",
       "commonError": "Subtracting in the wrong direction or adding demanded and supplied quantities",
       "feedback": "Shortage equals quantity demanded minus quantity supplied: 90 - 60 = 30.",
-      "aHash": "e3dae7e47c5b0194263d162d6afdd0b8dda64a4e86c4711fae7413de71ec3e51"
+      "aHash": "e3dae7e47c5b0194263d162d6afdd0b8dda64a4e86c4711fae7413de71ec3e51",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 65,
@@ -1479,10 +1403,11 @@ const questionBanks = {
       "conceptCluster": "market_equilibrium",
       "primarySkill": "shortage_surplus_calculation",
       "secondarySkills": [],
-      "repairSkill": "shortage_surplus_calculation",
+      "repairSkill": "equilibrium_shortage_surplus",
       "commonError": "Subtracting in the wrong direction or adding quantities",
       "feedback": "Surplus equals quantity supplied minus quantity demanded: 80 - 50 = 30.",
-      "aHash": "c6728498d61f226fe9fd26a590f11bdb48a1375fdbe322992b3a85e9861993aa"
+      "aHash": "c6728498d61f226fe9fd26a590f11bdb48a1375fdbe322992b3a85e9861993aa",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 66,
@@ -1491,8 +1416,8 @@ const questionBanks = {
       "options": [
         "Downward pressure on price",
         "Upward pressure on price",
-        "Automatic disappearance of demand",
-        "A permanent ban on entry"
+        "No price pressure because the smaller traded quantity is already equilibrium",
+        "A demand shift left caused solely by bidding up the existing market price"
       ],
       "tag": "market_adjustment",
       "type": "conceptual",
@@ -1501,15 +1426,16 @@ const questionBanks = {
       "conceptCluster": "market_equilibrium",
       "primarySkill": "equilibrium_adjustment",
       "secondarySkills": [],
-      "repairSkill": "equilibrium_adjustment",
+      "repairSkill": "equilibrium_shortage_surplus",
       "commonError": "Assuming excess demand pushes price downward",
       "feedback": "Competing buyers and limited supply tend to bid price upward.",
-      "aHash": "cac8cf164bfead244814d51d0351bb718404fae00055405ae2834945c856f1f8"
+      "aHash": "cac8cf164bfead244814d51d0351bb718404fae00055405ae2834945c856f1f8",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 67,
       "sourceGame": "marketSignal",
-      "q": "What happens to demand for a normal good when consumer income rises?",
+      "q": "Holding other determinants fixed, what happens to demand for a normal good when consumer income rises?",
       "options": [
         "Demand decreases",
         "Supply increases",
@@ -1523,15 +1449,16 @@ const questionBanks = {
       "conceptCluster": "comparative_statics",
       "primarySkill": "demand_shifts",
       "secondarySkills": [],
-      "repairSkill": "demand_shifts",
+      "repairSkill": "demand_supply_shifts",
       "commonError": "Shifting supply or moving along demand instead of shifting demand",
       "feedback": "Higher income increases willingness to buy a normal good at each price.",
-      "aHash": "5d6430cb33754a2c2e17e473e166d8252640a6998bff427b9f199335f9bdc990"
+      "aHash": "5d6430cb33754a2c2e17e473e166d8252640a6998bff427b9f199335f9bdc990",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 68,
       "sourceGame": "marketSignal",
-      "q": "What happens to supply when a key input becomes cheaper?",
+      "q": "Holding other determinants fixed, what happens to supply when a key production input becomes cheaper?",
       "options": [
         "Supply decreases",
         "Demand increases",
@@ -1545,10 +1472,11 @@ const questionBanks = {
       "conceptCluster": "comparative_statics",
       "primarySkill": "supply_shifts",
       "secondarySkills": [],
-      "repairSkill": "supply_shifts",
+      "repairSkill": "demand_supply_shifts",
       "commonError": "Shifting demand in response to a seller cost change",
       "feedback": "Lower input costs make production profitable at lower prices, shifting supply right.",
-      "aHash": "cab8b05a6d023668f560e762d92016bbc9405ae3cadad98fbaceb58ea836877b"
+      "aHash": "cab8b05a6d023668f560e762d92016bbc9405ae3cadad98fbaceb58ea836877b",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 69,
@@ -1567,10 +1495,11 @@ const questionBanks = {
       "conceptCluster": "comparative_statics",
       "primarySkill": "demand_shifters",
       "secondarySkills": [],
-      "repairSkill": "demand_shifters",
+      "repairSkill": "demand_supply_shifts",
       "commonError": "Treating substitutes like complements",
       "feedback": "When tea becomes more expensive, some consumers switch toward coffee.",
-      "aHash": "1a6ba1fa8765945e1d3ddbd23e4d9d851ff606c003717b1d789b38d64469bf26"
+      "aHash": "1a6ba1fa8765945e1d3ddbd23e4d9d851ff606c003717b1d789b38d64469bf26",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 70,
@@ -1589,15 +1518,16 @@ const questionBanks = {
       "conceptCluster": "comparative_statics",
       "primarySkill": "demand_shifters",
       "secondarySkills": [],
-      "repairSkill": "demand_shifters",
+      "repairSkill": "demand_supply_shifts",
       "commonError": "Treating complements like substitutes",
       "feedback": "Fewer printers are purchased, reducing demand for cartridges used with them.",
-      "aHash": "c61bf917fc91c8d4d9d5cab1e4dcb35defc5dfc1e659a0e4b204a1fca260010d"
+      "aHash": "c61bf917fc91c8d4d9d5cab1e4dcb35defc5dfc1e659a0e4b204a1fca260010d",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 71,
       "sourceGame": "marketSignal",
-      "q": "If demand increases while supply stays unchanged, what happens to equilibrium price and quantity?",
+      "q": "With downward-sloping demand and upward-sloping supply, if demand increases while supply stays unchanged, what happens to equilibrium price and quantity?",
       "options": [
         "Both price and quantity decrease",
         "Price rises and quantity falls",
@@ -1611,15 +1541,16 @@ const questionBanks = {
       "conceptCluster": "comparative_statics",
       "primarySkill": "single_curve_shift",
       "secondarySkills": [],
-      "repairSkill": "single_curve_shift",
+      "repairSkill": "demand_supply_shifts",
       "commonError": "Reversing the equilibrium effects of a demand increase",
       "feedback": "A rightward demand shift raises both equilibrium price and quantity.",
-      "aHash": "017d5f5b382187cd4d00dd716abaffe2297480ff8ac30808798c95e73ae0aace"
+      "aHash": "017d5f5b382187cd4d00dd716abaffe2297480ff8ac30808798c95e73ae0aace",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 72,
       "sourceGame": "marketSignal",
-      "q": "If supply increases while demand stays unchanged, what happens to equilibrium price and quantity?",
+      "q": "With downward-sloping demand and upward-sloping supply, if supply increases while demand stays unchanged, what happens to equilibrium price and quantity?",
       "options": [
         "Price rises and quantity falls",
         "Both price and quantity rise",
@@ -1633,10 +1564,11 @@ const questionBanks = {
       "conceptCluster": "comparative_statics",
       "primarySkill": "single_curve_shift",
       "secondarySkills": [],
-      "repairSkill": "single_curve_shift",
+      "repairSkill": "demand_supply_shifts",
       "commonError": "Reversing the equilibrium effects of a supply increase",
       "feedback": "A rightward supply shift lowers equilibrium price and raises equilibrium quantity.",
-      "aHash": "4d202f7cc48aa834e5cece8bb5162f121d25c0ef94586e39e18fd193c6c8ecfc"
+      "aHash": "4d202f7cc48aa834e5cece8bb5162f121d25c0ef94586e39e18fd193c6c8ecfc",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 73,
@@ -1644,9 +1576,9 @@ const questionBanks = {
       "q": "In a perfectly competitive market with free entry and exit, what happens to economic profit in the long run?",
       "options": [
         "It is driven toward zero",
-        "It rises forever",
-        "It becomes equal to total revenue",
-        "It is guaranteed to remain negative"
+        "It stays positive because zero economic profit would make every firm shut down",
+        "It equals zero accounting profit, leaving owners no opportunity return",
+        "It remains negative because fixed costs cannot be covered in competition"
       ],
       "tag": "competitive_long_run_profit",
       "type": "conceptual",
@@ -1655,17 +1587,18 @@ const questionBanks = {
       "conceptCluster": "competition_and_returns",
       "primarySkill": "long_run_competitive_equilibrium",
       "secondarySkills": [],
-      "repairSkill": "long_run_competitive_equilibrium",
+      "repairSkill": "competitive_returns",
       "commonError": "Confusing zero economic profit with firms shutting down",
       "feedback": "Entry and exit push price toward average total cost, leaving zero economic profit.",
-      "aHash": "45f90c6ea9b4677601b2989a3530a8ea2dbb0a8b0b8645106d76fcc5b2a67f4c"
+      "aHash": "45f90c6ea9b4677601b2989a3530a8ea2dbb0a8b0b8645106d76fcc5b2a67f4c",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 74,
       "sourceGame": "marketSignal",
       "q": "A competitive firm sells 100 units at $12 each, and average total cost is $10. What is its economic profit?",
       "options": [
-        "$20",
+        "$2",
         "$200",
         "$1,000",
         "$1,200"
@@ -1677,20 +1610,21 @@ const questionBanks = {
       "conceptCluster": "competition_and_returns",
       "primarySkill": "profit_calculation",
       "secondarySkills": [],
-      "repairSkill": "profit_calculation",
+      "repairSkill": "competitive_returns",
       "commonError": "Using profit per unit as total profit",
       "feedback": "Profit is (price - average total cost) times quantity: ($12 - $10)(100) = $200.",
-      "aHash": "981d56ae89e6190172955cbf003de4d1732e9612b5c2759cbff5a7dc0e932685"
+      "aHash": "981d56ae89e6190172955cbf003de4d1732e9612b5c2759cbff5a7dc0e932685",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 75,
       "sourceGame": "marketSignal",
       "q": "What signal does positive economic profit send to potential entrants?",
       "options": [
-        "The industry must immediately shut down",
-        "Consumers no longer value the product",
+        "The opportunity cost of capital is already zero",
+        "The observed profit must persist after entry",
         "Resources may earn more in this industry",
-        "The market price is below variable cost"
+        "The reported profit guarantees every potential entrant will succeed"
       ],
       "tag": "profit_signal",
       "type": "conceptual",
@@ -1699,19 +1633,20 @@ const questionBanks = {
       "conceptCluster": "competition_and_returns",
       "primarySkill": "profit_as_market_signal",
       "secondarySkills": [],
-      "repairSkill": "profit_as_market_signal",
+      "repairSkill": "competitive_returns",
       "commonError": "Treating profit only as an accounting result rather than an entry signal",
       "feedback": "Positive economic profit attracts resources by signaling above-normal returns.",
-      "aHash": "2ed17e5f9831991329dc5d8abb5b9b43664dba56d5fabdf3530cb63e26aa08a0"
+      "aHash": "2ed17e5f9831991329dc5d8abb5b9b43664dba56d5fabdf3530cb63e26aa08a0",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 76,
       "sourceGame": "marketSignal",
       "q": "What does mean reversion in profits imply?",
       "options": [
-        "Every firm's profit grows at the same permanent rate regardless of entry or exit",
-        "High profits are permanent once earned",
-        "Low profits always become monopoly profits",
+        "Low current profit necessarily means permanently low future profit",
+        "Every firm must earn exactly the industry mean in the next period",
+        "An unusually profitable year guarantees the same excess return indefinitely",
         "Unusually high or low profits tend to move back toward normal levels"
       ],
       "tag": "mean_reversion",
@@ -1721,10 +1656,11 @@ const questionBanks = {
       "conceptCluster": "competition_and_returns",
       "primarySkill": "profit_mean_reversion",
       "secondarySkills": [],
-      "repairSkill": "profit_mean_reversion",
+      "repairSkill": "mean_reversion_entry_exit",
       "commonError": "Interpreting temporary profit as permanent",
       "feedback": "Competition and market adjustment tend to pull extreme returns back toward normal.",
-      "aHash": "22b1ea82c3d7d073826915f20e6e5762813dbe9f31da567d12ea8bba8b920dbe"
+      "aHash": "22b1ea82c3d7d073826915f20e6e5762813dbe9f31da567d12ea8bba8b920dbe",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 77,
@@ -1732,9 +1668,9 @@ const questionBanks = {
       "q": "A competitive industry is earning large economic profits. Which force helps profits revert toward normal?",
       "options": [
         "Entry by new firms",
-        "Exit by successful firms",
-        "A permanent fall in supply",
-        "A ban on imitation"
+        "Exit by firms in response to the positive profit signal",
+        "A leftward shift of market supply from new entry",
+        "An automatic fall in consumer demand caused solely by firms’ accounting profit"
       ],
       "tag": "entry_mean_reversion",
       "type": "conceptual",
@@ -1745,10 +1681,11 @@ const questionBanks = {
       "secondarySkills": [
         "entry_exit"
       ],
-      "repairSkill": "profit_mean_reversion",
+      "repairSkill": "mean_reversion_entry_exit",
       "commonError": "Choosing exit when the industry is profitable",
       "feedback": "Entry expands market supply and puts downward pressure on price and profit.",
-      "aHash": "ed7df001f92482943afcf66221c10020eb441e5f681b7878dd09773b9fe72b50"
+      "aHash": "ed7df001f92482943afcf66221c10020eb441e5f681b7878dd09773b9fe72b50",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 78,
@@ -1769,20 +1706,21 @@ const questionBanks = {
       "secondarySkills": [
         "entry_exit"
       ],
-      "repairSkill": "profit_mean_reversion",
+      "repairSkill": "mean_reversion_entry_exit",
       "commonError": "Choosing entry even though firms are losing money",
       "feedback": "Exit reduces market supply and can raise the price received by remaining firms.",
-      "aHash": "3e7542d7a395dce3eed8488c5d90d878e1b880c2a64afce0fc3408d5c897882d"
+      "aHash": "3e7542d7a395dce3eed8488c5d90d878e1b880c2a64afce0fc3408d5c897882d",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 79,
       "sourceGame": "marketSignal",
       "q": "Why might a dangerous job pay more than a similar safe job?",
       "options": [
-        "Danger automatically lowers worker productivity",
-        "The safe job has no labor demand",
+        "Higher wages necessarily eliminate the underlying hazard",
+        "The extra pay must prove workers have more skill despite otherwise similar jobs",
         "Workers require a compensating wage differential",
-        "All risky jobs are monopolies"
+        "Risk is compensated only by a guaranteed absence of accidents"
       ],
       "tag": "compensating_wage_differential",
       "type": "conceptual",
@@ -1791,19 +1729,20 @@ const questionBanks = {
       "conceptCluster": "risk_and_returns",
       "primarySkill": "compensating_wage_differential",
       "secondarySkills": [],
-      "repairSkill": "compensating_wage_differential",
+      "repairSkill": "compensating_differentials",
       "commonError": "Treating the higher wage as unrelated to undesirable job characteristics",
       "feedback": "Higher pay can compensate workers for risk or unpleasant conditions.",
-      "aHash": "1b02ee3441c99fd390b84e0ad792580e26cc80067232ea5792f367ca31b16cf5"
+      "aHash": "1b02ee3441c99fd390b84e0ad792580e26cc80067232ea5792f367ca31b16cf5",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 80,
       "sourceGame": "marketSignal",
       "q": "What is a compensating risk differential in an investment return?",
       "options": [
-        "A guaranteed payment that removes all risk",
-        "A lower return caused by safer cash flows",
-        "An accounting charge for fixed assets",
+        "A payment proving that no downside remains",
+        "The guaranteed realized gain on every risky investment",
+        "The entire expected return, including the comparable safer return",
         "Extra expected return for bearing greater risk"
       ],
       "tag": "compensating_risk_differential",
@@ -1813,42 +1752,21 @@ const questionBanks = {
       "conceptCluster": "risk_and_returns",
       "primarySkill": "compensating_risk_differential",
       "secondarySkills": [],
-      "repairSkill": "compensating_risk_differential",
+      "repairSkill": "compensating_differentials",
       "commonError": "Confusing risk compensation with a guaranteed return",
       "feedback": "Riskier assets generally must offer higher expected returns to attract investors.",
-      "aHash": "1817dc89b3b40eb9e55b59e5793d6d71fcfaa661464db8ab8dc489700c86acef"
-    },
-    {
-      "id": 81,
-      "sourceGame": "marketSignal",
-      "q": "Two jobs require the same skills, but one involves night shifts and hazardous conditions. Why may that job offer higher pay?",
-      "options": [
-        "To compensate workers for undesirable conditions",
-        "To guarantee higher worker productivity",
-        "To eliminate the firm's fixed cost",
-        "To make labor supply perfectly inelastic"
-      ],
-      "tag": "job_differentials",
-      "type": "application",
-      "objective": "LO9.3",
-      "difficulty": "easy",
-      "conceptCluster": "risk_and_returns",
-      "primarySkill": "compensating_wage_differential",
-      "secondarySkills": [],
-      "repairSkill": "compensating_wage_differential",
-      "commonError": "Attributing every wage difference solely to skill",
-      "feedback": "Pay differences can compensate for nonwage disadvantages such as danger and schedule.",
-      "aHash": "a658ef570a6056a4b8b604cceb6efd7125ee2f598f34f32be09f94a4c286a364"
+      "aHash": "1817dc89b3b40eb9e55b59e5793d6d71fcfaa661464db8ab8dc489700c86acef",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 82,
       "sourceGame": "marketSignal",
       "q": "What is a risk premium?",
       "options": [
-        "The full purchase price of a risky asset including every expected future payment",
+        "The risky asset’s entire expected return",
         "The extra expected return on a risky asset over a safer asset",
-        "A guaranteed loss on a safe asset",
-        "The fixed cost of entering a market"
+        "The safer return minus the risky expected return",
+        "A guaranteed realized payoff that removes the downside"
       ],
       "tag": "risk_premium",
       "type": "conceptual",
@@ -1857,20 +1775,21 @@ const questionBanks = {
       "conceptCluster": "risk_and_returns",
       "primarySkill": "risk_premium_interpretation",
       "secondarySkills": [],
-      "repairSkill": "risk_premium_interpretation",
+      "repairSkill": "risk_premium_portfolio",
       "commonError": "Confusing the premium with the asset's total return or price",
       "feedback": "The risk premium is the additional expected return demanded for bearing risk.",
-      "aHash": "8fe66791c4746a6c2c80274a920a9b08181b8ff0b6ebd4f33cefbf48fc325066"
+      "aHash": "8fe66791c4746a6c2c80274a920a9b08181b8ff0b6ebd4f33cefbf48fc325066",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 83,
       "sourceGame": "marketSignal",
       "q": "What may investors do when a risky asset's premium becomes too small?",
       "options": [
-        "Buy more risk at any price",
-        "Ignore the asset's expected return",
+        "Increase risky holdings solely because the expected return remains positive",
+        "Treat a smaller premium as proof that the risk has disappeared",
         "Move funds into safer assets",
-        "Treat the asset as having zero opportunity cost"
+        "Compare the risky return with zero rather than the safer alternative"
       ],
       "tag": "risk_premium_reallocation",
       "type": "application",
@@ -1879,19 +1798,20 @@ const questionBanks = {
       "conceptCluster": "risk_and_returns",
       "primarySkill": "portfolio_reallocation",
       "secondarySkills": [],
-      "repairSkill": "portfolio_reallocation",
+      "repairSkill": "risk_premium_portfolio",
       "commonError": "Assuming investors accept unchanged risk for inadequate compensation",
       "feedback": "When the premium no longer compensates for risk, investors shift toward safer alternatives.",
-      "aHash": "342a6bb32af1abd3184772a9f31ace6f49c117e1da6aaf1f9dd377d8c9af1a62"
+      "aHash": "342a6bb32af1abd3184772a9f31ace6f49c117e1da6aaf1f9dd377d8c9af1a62",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 84,
       "sourceGame": "marketSignal",
       "q": "How does entry tend to affect a monopolist's economic profit?",
       "options": [
-        "It guarantees higher profit",
-        "It eliminates consumer choice",
-        "It fixes the monopolist's price permanently",
+        "It transfers all entrants’ receipts to the incumbent",
+        "It preserves the incumbent’s old demand at every price",
+        "It raises the incumbent’s margin simply by increasing the number of sellers",
         "It reduces profit by increasing competition"
       ],
       "tag": "entry_erodes_profit",
@@ -1901,10 +1821,11 @@ const questionBanks = {
       "conceptCluster": "profit_erosion",
       "primarySkill": "entry_and_imitation",
       "secondarySkills": [],
-      "repairSkill": "entry_and_imitation",
+      "repairSkill": "profit_erosion_entry_imitation",
       "commonError": "Assuming high profit remains protected without barriers",
       "feedback": "Entry gives consumers alternatives and erodes the incumbent's market power and profit.",
-      "aHash": "afc6b4ec4142ef82f30bf12e8612a7a3a764ced1f89aa2fdcdb6c3692af0f3f9"
+      "aHash": "afc6b4ec4142ef82f30bf12e8612a7a3a764ced1f89aa2fdcdb6c3692af0f3f9",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 85,
@@ -1912,9 +1833,9 @@ const questionBanks = {
       "q": "How can imitation erode the profit from a successful product?",
       "options": [
         "Rivals copy valuable features and attract customers",
-        "It makes the original firm's sunk costs recoverable",
-        "It prevents all market entry",
-        "It guarantees the original product a patent"
+        "Copying necessarily raises buyers’ willingness to pay only for the original",
+        "Imitation leaves the original firm’s demand unchanged at every price",
+        "Customers cannot switch when rivals offer comparable features"
       ],
       "tag": "imitation_erodes_profit",
       "type": "conceptual",
@@ -1923,20 +1844,21 @@ const questionBanks = {
       "conceptCluster": "profit_erosion",
       "primarySkill": "entry_and_imitation",
       "secondarySkills": [],
-      "repairSkill": "entry_and_imitation",
+      "repairSkill": "profit_erosion_entry_imitation",
       "commonError": "Treating product success as permanently protected",
       "feedback": "Imitation spreads successful ideas and reduces the original firm's advantage.",
-      "aHash": "ee16e02d0d3a672a91e3ddc057a3dae49d5e71305fda1e73ab8fb9812fdb7504"
+      "aHash": "ee16e02d0d3a672a91e3ddc057a3dae49d5e71305fda1e73ab8fb9812fdb7504",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 86,
       "sourceGame": "marketSignal",
       "q": "For a single-price monopolist with a smooth, concave profit function and a positive interior optimum, which condition determines output?",
       "options": [
-        "Where price equals average total cost",
+        "Where price equals marginal cost",
         "Where marginal revenue equals marginal cost",
-        "Where total revenue is zero",
-        "Where demand equals fixed cost"
+        "Where marginal revenue equals average total cost",
+        "Where total revenue is maximized regardless of cost"
       ],
       "tag": "monopoly_profit_maximization",
       "type": "conceptual",
@@ -1945,10 +1867,11 @@ const questionBanks = {
       "conceptCluster": "easy_marketSignal_monopoly_output_rule",
       "primarySkill": "monopoly_output_rule",
       "secondarySkills": [],
-      "repairSkill": "monopoly_output_rule",
+      "repairSkill": "monopoly_output_profit",
       "commonError": "Using the competitive condition P = MC for a monopolist's output choice",
       "feedback": "At a positive interior profit maximum, marginal revenue equals marginal cost. Price is then read from demand; shutdown and boundary cases require separate checks.",
-      "aHash": "50c8a1fd61282ffe57d11f5b914e2326187837ce2d4c0f50378922d5b8af544c"
+      "aHash": "50c8a1fd61282ffe57d11f5b914e2326187837ce2d4c0f50378922d5b8af544c",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 87,
@@ -1967,10 +1890,11 @@ const questionBanks = {
       "conceptCluster": "easy_marketSignal_monopoly_market_effects",
       "primarySkill": "monopoly_market_effects",
       "secondarySkills": [],
-      "repairSkill": "monopoly_market_effects",
+      "repairSkill": "monopoly_output_profit",
       "commonError": "Reversing monopoly's price and output effects",
       "feedback": "Market power allows a monopolist to restrict output and charge a higher price.",
-      "aHash": "fba9908b5dcd9d5f92a2673dbe360cc3d6c5140741c685ae2892133fe1f8da91"
+      "aHash": "fba9908b5dcd9d5f92a2673dbe360cc3d6c5140741c685ae2892133fe1f8da91",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 88,
@@ -1989,32 +1913,11 @@ const questionBanks = {
       "conceptCluster": "easy_marketSignal_barriers_to_entry",
       "primarySkill": "barriers_to_entry",
       "secondarySkills": [],
-      "repairSkill": "barriers_to_entry",
+      "repairSkill": "profit_erosion_entry_imitation",
       "commonError": "Choosing a condition that increases rather than restricts competition",
       "feedback": "A patent grants temporary legal protection that can block imitation and entry.",
-      "aHash": "5533228d91754856fbeb9cf6dbecee803eb6844754654fab3bec5565544e57a4"
-    },
-    {
-      "id": 91,
-      "sourceGame": "marketSignal",
-      "q": "What is post-investment hold-up?",
-      "options": [
-        "Renegotiation after one side makes a specific investment that is hard to redeploy",
-        "A decline in average cost as cumulative output rises",
-        "A fixed-cost fallacy caused by refusing to abandon a project",
-        "A price ceiling that creates a shortage after demand rises"
-      ],
-      "tag": "post_investment_holdup",
-      "type": "definition",
-      "objective": "LO5.5",
-      "difficulty": "easy",
-      "conceptCluster": "easy_marketSignal_post_investment_holdup",
-      "primarySkill": "post_investment_holdup",
-      "secondarySkills": [],
-      "repairSkill": "post_investment_holdup",
-      "commonError": "confuses_holdup_with_sunk_cost",
-      "feedback": "Hold-up occurs when one side makes a relationship-specific investment and then faces pressure to renegotiate because the investment has poor value outside that relationship.",
-      "aHash": "6ee053598d5ca9dd1bd192c380be1c9b1994819183cf9f1ca336b57880e69f4b"
+      "aHash": "5533228d91754856fbeb9cf6dbecee803eb6844754654fab3bec5565544e57a4",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 92,
@@ -2036,17 +1939,18 @@ const questionBanks = {
       "repairSkill": "post_investment_holdup",
       "commonError": "misses_specificity",
       "feedback": "The custom mold is specific to one buyer. Once purchased, the supplier has weak outside options if the buyer tries to renegotiate.",
-      "aHash": "1d0c6bdfcdf3fe9d52f10990ecee6dedb298aad67307724ff4c4b3d56f6d27f0"
+      "aHash": "1d0c6bdfcdf3fe9d52f10990ecee6dedb298aad67307724ff4c4b3d56f6d27f0",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 93,
       "sourceGame": "marketSignal",
       "q": "A supplier must buy a $40,000 custom tool before serving one customer. Which contract feature most directly reduces hold-up risk?",
       "options": [
-        "A vague promise to discuss price after the tool is bought",
+        "An invoice specifying only when to pay after a price is renegotiated",
         "A written price and volume commitment before the tool is purchased",
-        "A rule that ignores the supplier’s outside options",
-        "A plan to renegotiate only after the supplier is locked in"
+        "A promise to discuss the price after the buyer-specific tool is installed",
+        "A right for the buyer to cancel without compensating the supplier"
       ],
       "tag": "post_investment_holdup",
       "type": "application",
@@ -2058,17 +1962,18 @@ const questionBanks = {
       "repairSkill": "post_investment_holdup",
       "commonError": "chooses_ex_post_negotiation",
       "feedback": "A clear commitment before the specific investment is made reduces the chance of opportunistic renegotiation after the supplier is locked in.",
-      "aHash": "e377f4930797d3d2b06f90ca27bc88a8911251b1fb6a19315989380bbf3467d6"
+      "aHash": "e377f4930797d3d2b06f90ca27bc88a8911251b1fb6a19315989380bbf3467d6",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 286,
       "sourceGame": "marketSignal",
       "q": "A monopolist earns high profit because a license legally excludes rivals. Which change most directly threatens that profit?",
       "options": [
-        "Fixed cost becomes sunk",
-        "Consumers receive more information about the same product",
+        "The incumbent records more accounting revenue without changing entry rules",
+        "Its historical fixed costs become sunk",
         "The licensing restriction is removed",
-        "The firm reports higher accounting revenue"
+        "The license term is extended while product demand is unchanged"
       ],
       "tag": "legal_barrier_removal",
       "type": "application",
@@ -2077,10 +1982,11 @@ const questionBanks = {
       "conceptCluster": "easy_marketSignal_barriers_to_entry",
       "primarySkill": "barriers_to_entry",
       "secondarySkills": [],
-      "repairSkill": "barriers_to_entry",
+      "repairSkill": "profit_erosion_entry_imitation",
       "commonError": "Focusing on past cost rather than the source of market power",
       "feedback": "Removing the legal barrier permits entry and weakens monopoly pricing power.",
-      "aHash": "91baf043e3abb7efd397c8ba96724753bac0c8d57da02e254e3f61dda2f29651"
+      "aHash": "91baf043e3abb7efd397c8ba96724753bac0c8d57da02e254e3f61dda2f29651",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 357,
@@ -2094,19 +2000,605 @@ const questionBanks = {
       ],
       "tag": "reverse_engineer_graph_shifts",
       "type": "graph",
-      "objective": "LO8.3",
+      "objective": "LO8.4",
       "difficulty": "easy",
       "conceptCluster": "easy_marketSignal_comparative_statics",
       "primarySkill": "comparative_statics",
       "secondarySkills": [
         "shock_identification"
       ],
-      "repairSkill": "comparative_statics",
+      "repairSkill": "simultaneous_market_changes",
       "commonError": "Reading the final price alone and ignoring the curve labels",
       "feedback": "Moving D2 to D1 is a demand decrease; moving S2 to S1 is a supply increase.",
       "image": "market_curves_independent.svg",
       "graphRequired": true,
-      "aHash": "6e165861ca509c544223df71ec7f74a9bcd121faf80bba1d4e4546dcf393166e"
+      "aHash": "6e165861ca509c544223df71ec7f74a9bcd121faf80bba1d4e4546dcf393166e",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 160,
+      "sourceGame": "marketSignal",
+      "q": "Refer to the graph. Which price and quantity occur where S2 intersects D1?",
+      "options": [
+        "$48 and 72 units",
+        "$60 and 48 units",
+        "$72 and 72 units",
+        "$60 and 96 units"
+      ],
+      "tag": "numeric_equilibrium_reading",
+      "type": "graph",
+      "objective": "LO8.3",
+      "difficulty": "easy",
+      "conceptCluster": "easy_marketSignal_graph_equilibrium_reading",
+      "primarySkill": "graph_equilibrium_reading",
+      "secondarySkills": [],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Reading values from the wrong pair of curves",
+      "feedback": "S2 and D1 intersect at price $60 and quantity 48.",
+      "image": "market_curves_independent.svg",
+      "graphRequired": true,
+      "aHash": "b7e6e3ce145cfba77117d08ca10b4f56d6560b5ab572a8bdaf4d3a4e43bb343c",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 187,
+      "sourceGame": "marketSignal",
+      "q": "Compared with competition, why does monopoly create deadweight loss?",
+      "options": [
+        "The difference between price and cost is itself the entire efficiency loss",
+        "All lost consumer surplus is transferred to the monopolist with no lost trades",
+        "Some units valued above marginal cost are not produced",
+        "Fixed cost disappears when output is restricted"
+      ],
+      "tag": "monopoly_deadweight_loss",
+      "type": "conceptual",
+      "objective": "LO9.6",
+      "difficulty": "easy",
+      "conceptCluster": "easy_marketSignal_monopoly_market_effects",
+      "primarySkill": "monopoly_market_effects",
+      "secondarySkills": [],
+      "repairSkill": "monopoly_welfare_regulation",
+      "commonError": "Treating every reduction in consumer surplus as a pure transfer",
+      "feedback": "By restricting output below the competitive level, monopoly prevents some beneficial trades.",
+      "aHash": "3054a61b4de551338be70f6ff20c4e2cafcf2e8aab781263a52db33268dfe3d7",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 118,
+      "sourceGame": "marketSignal",
+      "q": "Two firms fear that one will exploit the other after a relationship-specific investment is made. Each posts valuable collateral that is forfeited if it abandons the agreement. What device are they using?",
+      "options": [
+        "A nonbinding forecast of future orders",
+        "An exchange of hostages",
+        "An ordinary spot purchase with no later commitments",
+        "Insurance against general market demand changes"
+      ],
+      "tag": "exchange_of_hostages",
+      "type": "application",
+      "objective": "LO5.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_marketSignal_hold_up_mitigation",
+      "primarySkill": "hold_up_mitigation",
+      "secondarySkills": [],
+      "repairSkill": "post_investment_holdup",
+      "commonError": "Confusing a mutual commitment device with an ordinary purchase",
+      "feedback": "Mutually valuable collateral makes opportunistic withdrawal costly and helps control post-investment hold-up.",
+      "aHash": "57b0187baf34499d4be26b27139276bfa3346ed8be3ce4227de1d6608a3ec12d",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 122,
+      "sourceGame": "marketSignal",
+      "q": "A delivery failure costs a firm $50,000 and occurs with probability 0.08. What is the expected cost of the failure?",
+      "options": [
+        "$400",
+        "$8,000",
+        "$4,000",
+        "$46,000"
+      ],
+      "tag": "expected_cost",
+      "type": "calculation",
+      "objective": "LO17.1",
+      "difficulty": "easy",
+      "conceptCluster": "easy_marketSignal_expected_cost_calculation",
+      "primarySkill": "expected_cost_calculation",
+      "secondarySkills": [],
+      "repairSkill": "expected_value_probability",
+      "commonError": "Subtracting the probability from the loss or treating 8% as 0.8",
+      "feedback": "Expected cost is 0.08 × $50,000 = $4,000.",
+      "aHash": "62f94a766e91456302c1bd8335149ca4073344830e5a0e80fb35b688f0fe8218",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 124,
+      "sourceGame": "marketSignal",
+      "q": "Three mutually exclusive and exhaustive outcomes have probabilities 0.25, 0.35, and an unknown third probability. What must the third probability be?",
+      "options": [
+        "0.40",
+        "0.10",
+        "0.25",
+        "0.60"
+      ],
+      "tag": "probability_distribution",
+      "type": "calculation",
+      "objective": "LO17.1",
+      "difficulty": "easy",
+      "conceptCluster": "easy_marketSignal_probability_distribution",
+      "primarySkill": "probability_distribution",
+      "secondarySkills": [],
+      "repairSkill": "expected_value_probability",
+      "commonError": "Failing to make the probabilities sum to one",
+      "feedback": "Probabilities in a complete distribution sum to 1, so the missing probability is 0.40.",
+      "aHash": "9e812e813ab439de91dbfbaa420fe556dcea60505162dc1d10aaad3289d3be1c",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 140,
+      "sourceGame": "marketSignal",
+      "q": "Rule A has expected error cost of $420 per decision. Rule B has expected error cost of $360 but makes more total mistakes. Which rule minimizes expected error cost?",
+      "options": [
+        "Rule B",
+        "Rule A because it makes fewer mistakes",
+        "Either rule because only error counts matter",
+        "Rule A because fewer mistakes guarantee a lower cost despite the stated values"
+      ],
+      "tag": "choose_error_rule",
+      "type": "application",
+      "objective": "LO17.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_marketSignal_expected_error_cost_minimization",
+      "primarySkill": "expected_error_cost_minimization",
+      "secondarySkills": [],
+      "repairSkill": "error_costs",
+      "commonError": "Choosing the rule with fewer errors regardless of their severity",
+      "feedback": "Expected cost, not the raw number of mistakes, is the relevant decision criterion.",
+      "aHash": "69f1adc9da68b93230bc378d221b4a58b5f4b0b052d49e65e3874efd0861d20c",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 143,
+      "sourceGame": "marketSignal",
+      "q": "A random survey of 40 customers estimates that 70% like a product. An otherwise comparable random survey of 4,000 customers also estimates 70%. Which estimate is generally more precise?",
+      "options": [
+        "The larger sample necessarily eliminates every source of selection bias",
+        "The estimate from 40 customers",
+        "Both estimates have identical precision because the percentages match",
+        "The estimate from 4,000 customers"
+      ],
+      "tag": "sample_size_precision",
+      "type": "conceptual",
+      "objective": "LO17.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_marketSignal_estimate_precision",
+      "primarySkill": "estimate_precision",
+      "secondarySkills": [],
+      "repairSkill": "uncertainty_estimation",
+      "commonError": "Assuming identical point estimates have identical precision",
+      "feedback": "Larger samples generally reduce sampling variability when the sampling process is comparable.",
+      "aHash": "776052d62889cccef5793cd7e5e1bf58d7b42b74e78fc29242f3ad79e8d04843",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 154,
+      "sourceGame": "marketSignal",
+      "q": "A buyer is willing to pay at most $25 for a product, and the market price is $22. What is the buyer's consumer surplus if the purchase occurs?",
+      "options": [
+        "$3",
+        "$22",
+        "$25",
+        "$47"
+      ],
+      "tag": "buyer_reservation_price",
+      "type": "calculation",
+      "objective": "LO8.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_marketSignal_buyer_behavior",
+      "primarySkill": "buyer_behavior",
+      "secondarySkills": [],
+      "repairSkill": "buyer_seller_behavior",
+      "commonError": "Confusing willingness to pay with the amount paid",
+      "feedback": "Consumer surplus is willingness to pay minus price: $25 - $22 = $3.",
+      "aHash": "fe5fc5a67987b8b69b9e7ad38544df2a0b96b32370a14b679e9c3675dfb34643",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 155,
+      "sourceGame": "marketSignal",
+      "q": "A competitive seller's minimum acceptable price for one unit is $14, and the market price is $18. What is the seller's producer surplus on that unit?",
+      "options": [
+        "$14",
+        "$18",
+        "$4",
+        "$32"
+      ],
+      "tag": "seller_reservation_cost",
+      "type": "calculation",
+      "objective": "LO8.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_marketSignal_seller_behavior",
+      "primarySkill": "seller_behavior",
+      "secondarySkills": [],
+      "repairSkill": "buyer_seller_behavior",
+      "commonError": "Subtracting price from cost or treating revenue as surplus",
+      "feedback": "Producer surplus on the unit is price minus minimum acceptable cost: $18 - $14 = $4.",
+      "aHash": "8237f5502e21c9b92304abaa68f4ad1e2814264cfc72663f178e31089e0d7f9b",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 159,
+      "sourceGame": "marketSignal",
+      "q": "Refer to the graph. The market is on S0 and D0. What are the equilibrium labels?",
+      "options": [
+        "P0 and QC",
+        "P1 and QA",
+        "P2 and QB",
+        "P1 and QD"
+      ],
+      "tag": "symbolic_equilibrium_reading",
+      "type": "graph",
+      "objective": "LO8.3",
+      "difficulty": "easy",
+      "conceptCluster": "easy_marketSignal_graph_equilibrium_reading",
+      "primarySkill": "graph_equilibrium_reading",
+      "secondarySkills": [],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Matching a price from one intersection with a quantity from another",
+      "feedback": "The S0-D0 intersection is marked by price P1 and quantity QA.",
+      "image": "demand_supply.png",
+      "graphRequired": true,
+      "aHash": "04113ad4b7082a8722c84eccda99bb6b0db04dc8bbcd43ec5a1ec3adb5a1dfa2",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 171,
+      "sourceGame": "marketSignal",
+      "q": "With identical firms, unchanged input prices and free entry and exit, which condition characterizes a long-run competitive equilibrium?",
+      "options": [
+        "Price equals average fixed cost rather than total opportunity cost",
+        "Zero economic profit means owners receive no normal return",
+        "Price remains above minimum ATC despite unrestricted entry",
+        "Price equals minimum average total cost and economic profit is zero"
+      ],
+      "tag": "long_run_competitive_return",
+      "type": "conceptual",
+      "objective": "LO9.1",
+      "difficulty": "easy",
+      "conceptCluster": "easy_marketSignal_competitive_return_interpretation",
+      "primarySkill": "competitive_return_interpretation",
+      "secondarySkills": [],
+      "repairSkill": "competitive_returns",
+      "commonError": "Confusing zero economic profit with zero accounting profit or zero revenue",
+      "feedback": "Entry and exit tend to push price toward minimum ATC, leaving a normal return.",
+      "aHash": "7ae28d25663f1f07628c209dee82a5ec9b098b9280167be61ee8a2a28a4ae985",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 178,
+      "sourceGame": "marketSignal",
+      "q": "Which statement correctly distinguishes the two differentials?",
+      "options": [
+        "Either differential must be monopoly profit rather than compensation",
+        "A wage differential measures asset risk; a risk differential measures job discomfort",
+        "Both differentials are guaranteed realized payments without downside",
+        "A wage differential compensates for job conditions; a risk differential compensates for investment uncertainty"
+      ],
+      "tag": "differentiate_compensating_differentials",
+      "type": "conceptual",
+      "objective": "LO9.3",
+      "difficulty": "easy",
+      "conceptCluster": "easy_marketSignal_compensating_differential_comparison",
+      "primarySkill": "compensating_differential_comparison",
+      "secondarySkills": [],
+      "repairSkill": "compensating_differentials",
+      "commonError": "Reversing labor-market and asset-market compensation",
+      "feedback": "The wage differential applies to job attributes, while the risk differential applies to uncertain returns.",
+      "aHash": "d0ec4ae302562a1ad5436a59043706d2b9e2844d4bb4318ef2c2f46c65431c29",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 179,
+      "sourceGame": "marketSignal",
+      "q": "A risky asset has an expected total return of 8%, while a comparable safer asset has an expected return of 5%. What is the expected risk premium?",
+      "options": [
+        "3 percentage points",
+        "5 percentage points",
+        "8 percentage points",
+        "13 percentage points"
+      ],
+      "tag": "risk_premium_calculation",
+      "type": "calculation",
+      "objective": "LO9.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_marketSignal_risk_premium_calculation",
+      "primarySkill": "risk_premium_calculation",
+      "secondarySkills": [],
+      "repairSkill": "risk_premium_portfolio",
+      "commonError": "Adding the returns instead of subtracting the safe benchmark",
+      "feedback": "The premium is 8% - 5% = 3 percentage points.",
+      "aHash": "a1a5535ffb4a632c0530aed21a4ff518277f2de6570b9172a4daa7b4f02708e6",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 181,
+      "sourceGame": "marketSignal",
+      "q": "An asset acquires more risk that investors require compensation to bear while its expected return and the safe return remain unchanged. What should investors tend to do?",
+      "options": [
+        "Treat unchanged expected return as proof that the risk is unchanged",
+        "Buy more solely because risk has increased",
+        "Shift away from the asset because its premium no longer compensates as well for risk",
+        "Ignore the risk change because the premium is measured relative to the safe return"
+      ],
+      "tag": "risk_reallocation",
+      "type": "application",
+      "objective": "LO9.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_marketSignal_portfolio_reallocation",
+      "primarySkill": "portfolio_reallocation",
+      "secondarySkills": [],
+      "repairSkill": "risk_premium_portfolio",
+      "commonError": "Looking only at expected return and ignoring the amount of risk",
+      "feedback": "The same premium is less attractive when the asset carries more risk.",
+      "aHash": "1b8b9f3409b7cb8a525e6029011c135dc9a9502f981926e3f6334167870d6b67",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 182,
+      "sourceGame": "marketSignal",
+      "q": "A drug patent expires and generic producers enter. What is the most likely effect on the original firm's monopoly profit?",
+      "options": [
+        "It falls as substitutes expand and price competition increases",
+        "It stays protected solely because the original research spending is sunk",
+        "Entry leaves the incumbent’s demand unchanged at every price",
+        "The expired patent continues to prevent otherwise qualified rivals from selling"
+      ],
+      "tag": "patent_expiration_entry",
+      "type": "application",
+      "objective": "LO9.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_marketSignal_entry_and_imitation",
+      "primarySkill": "entry_and_imitation",
+      "secondarySkills": [],
+      "repairSkill": "profit_erosion_entry_imitation",
+      "commonError": "Assuming prior monopoly profit remains protected after the barrier expires",
+      "feedback": "Generic entry gives buyers alternatives and erodes the incumbent's price-cost margin.",
+      "aHash": "c3392d4a82e831b1b929defcbc60f582158666810425b8e028c1c79d956f2d75",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 184,
+      "sourceGame": "marketSignal",
+      "q": "Which condition makes unusually high profits more likely to persist?",
+      "options": [
+        "Free entry and easy copying by rivals with immediate access to the same technology",
+        "A durable barrier that makes entry or imitation difficult",
+        "Many close substitutes",
+        "Public knowledge of the production method"
+      ],
+      "tag": "durable_profit_barrier",
+      "type": "conceptual",
+      "objective": "LO9.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_marketSignal_barriers_to_entry",
+      "primarySkill": "barriers_to_entry",
+      "secondarySkills": [],
+      "repairSkill": "profit_erosion_entry_imitation",
+      "commonError": "Choosing a condition that speeds competitive erosion",
+      "feedback": "Profits persist longer when rivals cannot readily enter or imitate.",
+      "aHash": "c211b8557bafdb8e4854382b557995ae0a8bd12485da3823370386e1dec99db3",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 190,
+      "sourceGame": "marketSignal",
+      "q": "A manufacturer spends $80,000 adapting its line for one retailer. After the adaptation, the retailer demands a lower price because the equipment has little value elsewhere. What is the best diagnosis?",
+      "options": [
+        "Hidden product quality before the investment is made",
+        "Post-investment hold-up caused by a specific investment",
+        "A demand decline leaving the supplier’s outside option unchanged",
+        "Ordinary price competition among suppliers with equally useful outside customers"
+      ],
+      "tag": "post_investment_holdup",
+      "type": "application",
+      "objective": "LO5.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_marketSignal_post_investment_holdup",
+      "primarySkill": "post_investment_holdup",
+      "secondarySkills": [],
+      "repairSkill": "post_investment_holdup",
+      "commonError": "misses_renegotiation_risk",
+      "feedback": "The investment is specific to one trading relationship. After it is sunk, the retailer can pressure the manufacturer because the outside option is weak.",
+      "aHash": "318b16f726205ce17162be97fdfdf2f0d18039468d09e5b45d86278e3f307bd9",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 232,
+      "sourceGame": "marketSignal",
+      "q": "A fraud screen fails to flag a fraudulent transaction. Which classification is correct when the null is “the transaction is legitimate”?",
+      "options": [
+        "A Type II error",
+        "A Type I error",
+        "A true positive",
+        "A true negative"
+      ],
+      "tag": "type_two_error_context",
+      "type": "application",
+      "objective": "LO17.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_marketSignal_error_type_identification",
+      "primarySkill": "error_type_identification",
+      "secondarySkills": [],
+      "repairSkill": "error_costs",
+      "commonError": "Naming the error without defining the null hypothesis",
+      "feedback": "Failing to reject legitimacy when fraud is present is a false negative, or Type II error.",
+      "aHash": "9e2c44c18f98523faa507beb8b7d84d261601601dc26d3d97e760c5c3d5e8152",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 242,
+      "sourceGame": "marketSignal",
+      "q": "A buyer values a unit at $45, a seller’s marginal cost is $30, and the market price is $36. What total surplus does this trade create?",
+      "options": [
+        "$6",
+        "$9",
+        "$15",
+        "$21"
+      ],
+      "tag": "trade_surplus",
+      "type": "calculation",
+      "objective": "LO8.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_marketSignal_gains_from_trade",
+      "primarySkill": "gains_from_trade",
+      "secondarySkills": [],
+      "repairSkill": "buyer_seller_behavior",
+      "commonError": "Adding buyer and seller surplus incorrectly",
+      "feedback": "Total surplus is willingness to pay minus marginal cost: $45 - $30 = $15.",
+      "aHash": "012c420ecec5e4b1dec47c93a4043e027e2d9af669cb7be8deedd3c46e111110",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 249,
+      "sourceGame": "marketSignal",
+      "q": "Buyer quantities at prices $10, $8, and $6 are 20, 30, and 40. Seller quantities are 50, 30, and 10. What is equilibrium?",
+      "options": [
+        "$10 and 20 units",
+        "$8 and 30 units",
+        "$10 and 50 units",
+        "$6 and 40 units"
+      ],
+      "tag": "schedule_equilibrium_hard",
+      "type": "application",
+      "objective": "LO8.3",
+      "difficulty": "easy",
+      "conceptCluster": "easy_marketSignal_equilibrium_from_schedule",
+      "primarySkill": "equilibrium_from_schedule",
+      "secondarySkills": [],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Choosing the row with the highest quantity",
+      "feedback": "Equilibrium occurs where quantity demanded equals quantity supplied: 30 units at $8.",
+      "aHash": "03d1afc33267fa40d53885d7a34b7f34a5b8d4302f210401968c0c6ee9cf50e1",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 263,
+      "sourceGame": "marketSignal",
+      "q": "In long-run competitive equilibrium, a firm earns zero economic profit. What does that mean?",
+      "options": [
+        "Positive accounting profit would contradict zero economic profit",
+        "Its accounting profit must be zero before counting owners’ forgone alternatives",
+        "Its owners receive no normal opportunity return",
+        "Its revenue covers explicit and implicit opportunity costs"
+      ],
+      "tag": "zero_economic_profit_meaning",
+      "type": "conceptual",
+      "objective": "LO9.1",
+      "difficulty": "easy",
+      "conceptCluster": "easy_marketSignal_normal_return_interpretation",
+      "primarySkill": "normal_return_interpretation",
+      "secondarySkills": [],
+      "repairSkill": "competitive_returns",
+      "commonError": "Treating zero economic profit as zero accounting income",
+      "feedback": "Zero economic profit includes a normal return sufficient to keep resources in the industry.",
+      "aHash": "a2d3699373c4d13394a5a8b09095395aec707d17726e64d2c734b742881b9036",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 271,
+      "sourceGame": "marketSignal",
+      "q": "A scenic rural job pays less than an otherwise similar urban job. What is the best economic interpretation?",
+      "options": [
+        "The scenic setting must compensate the employer rather than the worker",
+        "A wage gap necessarily proves different worker productivity despite otherwise similar work",
+        "Equal skills require identical money wages regardless of amenities",
+        "Workers may accept lower pay in exchange for the amenity"
+      ],
+      "tag": "amenity_wage_differential",
+      "type": "application",
+      "objective": "LO9.3",
+      "difficulty": "easy",
+      "conceptCluster": "easy_marketSignal_compensating_wage_differential",
+      "primarySkill": "compensating_wage_differential",
+      "secondarySkills": [],
+      "repairSkill": "compensating_differentials",
+      "commonError": "Assuming every wage difference reflects exploitation or productivity",
+      "feedback": "A desirable nonwage attribute can offset part of monetary compensation.",
+      "aHash": "1e4ebfed299a67bcccb41f1381c6fb73c44c6380fdc9207833944d429d357419",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 344,
+      "sourceGame": "marketSignal",
+      "q": "A firm claims it has a monopoly because it is the only coffee shop on one campus, although students can walk to several nearby cafés. What is the key analytical issue?",
+      "options": [
+        "Whether the relevant market includes nearby cafés and other close substitutes",
+        "Whether the shop is the only seller within the campus property boundary",
+        "Whether its accounting category separates it from off-campus cafés",
+        "Whether its current customers have previously purchased from competitors"
+      ],
+      "tag": "relevant_market_substitutes",
+      "type": "analysis",
+      "objective": "LO8.1",
+      "difficulty": "easy",
+      "conceptCluster": "easy_marketSignal_market_definition",
+      "primarySkill": "market_definition",
+      "secondarySkills": [
+        "substitution"
+      ],
+      "repairSkill": "market_definition",
+      "commonError": "Defining the market around the firm rather than around consumer substitution",
+      "feedback": "Market boundaries depend on available substitutes and geographic switching, not the seller’s preferred label.",
+      "aHash": "e65740a47bd007d6d4f08d5be8481e871b1d1b82c40ad7a30e05752c8a1ca4fd",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 350,
+      "sourceGame": "marketSignal",
+      "q": "At a given price, buyers demand 500 units and sellers supply 380. Which adjustment pressure follows in an uncontrolled market?",
+      "options": [
+        "Sellers cut price because inventory is accumulating",
+        "Demand shifts left automatically",
+        "Buyers bid price upward, encouraging more supply and reducing quantity demanded",
+        "Supply shifts right immediately with no price change"
+      ],
+      "tag": "shortage_adjustment_process",
+      "type": "analysis",
+      "objective": "LO8.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_marketSignal_buyer_seller_behavior",
+      "primarySkill": "buyer_seller_behavior",
+      "secondarySkills": [
+        "shortage_surplus"
+      ],
+      "repairSkill": "buyer_seller_behavior",
+      "commonError": "Reversing the price pressure created by a shortage",
+      "feedback": "Excess demand creates upward price pressure until planned purchases and sales converge.",
+      "aHash": "591560c2935e4b2e4e270b504a42607bf20a18153e1d417f255d2330e8656dc5",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 369,
+      "sourceGame": "marketSignal",
+      "q": "A firm’s return on invested capital is 9%, while comparable-risk capital can earn 11% elsewhere. Which statement is economically correct?",
+      "options": [
+        "Positive accounting profit necessarily proves returns exceed opportunity cost",
+        "The firm earns a negative economic return despite possibly reporting accounting profit",
+        "The firm creates economic value whenever its return exceeds zero",
+        "The firm matches its opportunity cost because both returns are positive"
+      ],
+      "tag": "return_relative_to_opportunity_cost",
+      "type": "analysis",
+      "objective": "LO9.1",
+      "difficulty": "easy",
+      "conceptCluster": "easy_marketSignal_economic_profit_interpretation",
+      "primarySkill": "economic_profit_interpretation",
+      "secondarySkills": [
+        "cost_of_capital"
+      ],
+      "repairSkill": "competitive_returns",
+      "commonError": "Using zero rather than the opportunity cost as the benchmark for economic profit",
+      "feedback": "Economic return is judged relative to the best comparable-risk alternative.",
+      "aHash": "c7ab0133a6f8680254997f7274d530ff230b06833f7489ff866dead04b118df0",
+      "canonicalDifficulty": "easy"
     }
   ],
   "medium": [
@@ -2129,32 +2621,11 @@ const questionBanks = {
       "secondarySkills": [
         "discount_rate_interpretation"
       ],
-      "repairSkill": "present_value_calculation",
+      "repairSkill": "present_value_discounting",
       "commonError": "Discounting for only one year or compounding instead of discounting",
       "feedback": "PV = $2,420/(1.10)^2 = $2,000.",
-      "aHash": "4ccb899062c0080a49b32fba5350bd1bf6529bff1c9cb228b2c2bfbe50dc5cfc"
-    },
-    {
-      "id": 101,
-      "sourceGame": "marketSignal",
-      "q": "Two projects promise the same $50,000 payment in three years. Project A is discounted at 6%, while Project B is discounted at 10%. Which statement is correct?",
-      "options": [
-        "Project B has the higher present value",
-        "Both projects have the same present value",
-        "Project A has the higher present value",
-        "The discount rates cannot affect present value"
-      ],
-      "tag": "discount_rate_comparison",
-      "type": "application",
-      "objective": "LO5.1",
-      "difficulty": "medium",
-      "conceptCluster": "capital_allocation",
-      "primarySkill": "discount_rate_interpretation",
-      "secondarySkills": [],
-      "repairSkill": "discount_rate_interpretation",
-      "commonError": "Reversing the relationship between discount rates and present value",
-      "feedback": "The lower discount rate gives Project A's identical future payment a higher present value.",
-      "aHash": "cf112b314f3d0082f953495998f878255be90e988261d2db7e99c486d2240ee8"
+      "aHash": "4ccb899062c0080a49b32fba5350bd1bf6529bff1c9cb228b2c2bfbe50dc5cfc",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 102,
@@ -2163,7 +2634,7 @@ const questionBanks = {
       "options": [
         "5%",
         "10%",
-        "11%",
+        "10.5%",
         "21%"
       ],
       "tag": "implied_discount_rate",
@@ -2175,20 +2646,21 @@ const questionBanks = {
       "secondarySkills": [
         "future_value_calculation"
       ],
-      "repairSkill": "discount_rate_calculation",
+      "repairSkill": "present_value_discounting",
       "commonError": "Dividing the total gain by two without compounding",
       "feedback": "Because $1,000(1.10)^2 = $1,210, the annual return is 10%.",
-      "aHash": "3ccce1f4da948035fd36a399576a50a5248ddc02dd008f3c3668df57c0aa75b5"
+      "aHash": "3ccce1f4da948035fd36a399576a50a5248ddc02dd008f3c3668df57c0aa75b5",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 103,
       "sourceGame": "marketSignal",
-      "q": "If $5,000 is invested for two years at 6% compounded annually, what is its future value?",
+      "q": "A firm leaves a $7,200 reserve invested for two years at 5% compounded annually, with no withdrawals or fees. What is the ending balance?",
       "options": [
-        "$5,300",
-        "$5,618",
-        "$5,600",
-        "$6,000"
+        "$7,920",
+        "$7,938",
+        "$7,560",
+        "$6,531"
       ],
       "tag": "compound_future_value",
       "type": "calculation",
@@ -2197,78 +2669,11 @@ const questionBanks = {
       "conceptCluster": "capital_allocation",
       "primarySkill": "future_value_calculation",
       "secondarySkills": [],
-      "repairSkill": "future_value_calculation",
+      "repairSkill": "present_value_discounting",
       "commonError": "Using simple interest or compounding for the wrong number of years",
-      "feedback": "Future value is $5,000(1.06)^2 = $5,618.",
-      "aHash": "863f25edf8cc5690e27a5d9e6dd08e52fb3cb8a45213ede548290c91609a6aee"
-    },
-    {
-      "id": 104,
-      "sourceGame": "marketSignal",
-      "q": "A project has an expected return of 11% and a cost of capital of 9%. What is the basic investment signal?",
-      "options": [
-        "The project destroys value because its return is below 100%",
-        "The project must be rejected because the return is uncertain",
-        "The project clears the firm's required return",
-        "The two percentages cannot be compared"
-      ],
-      "tag": "return_above_cost_of_capital",
-      "type": "application",
-      "objective": "LO5.2",
-      "difficulty": "medium",
-      "conceptCluster": "capital_allocation",
-      "primarySkill": "investment_hurdle_comparison",
-      "secondarySkills": [],
-      "repairSkill": "investment_hurdle_comparison",
-      "commonError": "Treating any uncertainty as automatic rejection",
-      "feedback": "The expected return exceeds the 9% funding hurdle, so the project clears the basic test.",
-      "aHash": "d987fda3b9d31519280e32b0d031b4a048a5539a6cc8db449172f85bb88698cf"
-    },
-    {
-      "id": 105,
-      "sourceGame": "marketSignal",
-      "q": "A firm can borrow at 8%, but a proposed project is expected to return only 7%. Based on this comparison, what should the firm do?",
-      "options": [
-        "Reject the project",
-        "Accept because the return is positive",
-        "Accept because borrowing creates leverage",
-        "Ignore the cost of capital"
-      ],
-      "tag": "return_below_cost_of_capital",
-      "type": "application",
-      "objective": "LO5.2",
-      "difficulty": "medium",
-      "conceptCluster": "capital_allocation",
-      "primarySkill": "investment_hurdle_comparison",
-      "secondarySkills": [],
-      "repairSkill": "investment_hurdle_comparison",
-      "commonError": "Accepting any project with a positive expected return",
-      "feedback": "A 7% expected return does not cover an 8% cost of capital.",
-      "aHash": "a491a13ed021bf884a475e4357165aa8c5da889f62523c03f5a4e6cd9aca2766"
-    },
-    {
-      "id": 106,
-      "sourceGame": "marketSignal",
-      "q": "A project's expected cash flows do not change, but the firm's cost of capital rises. What happens to the project's NPV?",
-      "options": [
-        "It falls",
-        "It rises",
-        "It remains unchanged",
-        "It becomes equal to the initial cost"
-      ],
-      "tag": "cost_of_capital_npv",
-      "type": "conceptual",
-      "objective": "LO5.2",
-      "difficulty": "medium",
-      "conceptCluster": "capital_allocation",
-      "primarySkill": "cost_of_capital_interpretation",
-      "secondarySkills": [
-        "npv_interpretation"
-      ],
-      "repairSkill": "cost_of_capital_interpretation",
-      "commonError": "Assuming financing conditions do not affect discounted value",
-      "feedback": "A higher cost of capital discounts future cash flows more heavily and lowers NPV.",
-      "aHash": "51a961febd461ad1ea9db3f345c3907f42988e7937e56390ff5e6b439ae33884"
+      "feedback": "Compound both years: $7,200 × 1.05 × 1.05 = $7,938. Simple interest would give $7,920.",
+      "aHash": "767bef6fff098c2ef4da64176fa462ceef1af6e0805c0f16bb3754e5244f7bed",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 107,
@@ -2289,19 +2694,20 @@ const questionBanks = {
       "secondarySkills": [
         "present_value_calculation"
       ],
-      "repairSkill": "npv_calculation",
+      "repairSkill": "cost_of_capital_npv",
       "commonError": "Adding undiscounted cash flows or subtracting the cost before discounting",
       "feedback": "PV of the inflows is about $10,413, so NPV is about $413.",
-      "aHash": "900b997b182bfb606e920629ca81703d5cc6fedccbce491dfc6997021f1e7077"
+      "aHash": "900b997b182bfb606e920629ca81703d5cc6fedccbce491dfc6997021f1e7077",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 108,
       "sourceGame": "marketSignal",
       "q": "Project A repays its initial cost in two years but has an NPV of $5,000. Project B repays in three years but has an NPV of $12,000. Under the NPV rule, which project should the firm choose if it can select only one?",
       "options": [
-        "Project A",
-        "Either project because both repay the initial cost",
-        "Neither project because payback periods differ",
+        "Project A because cash after its payback date cannot count toward NPV",
+        "Project A because shorter payback always means higher value",
+        "Either project because recovering the outlay makes their values equal",
         "Project B"
       ],
       "tag": "npv_vs_payback",
@@ -2313,10 +2719,11 @@ const questionBanks = {
       "secondarySkills": [
         "payback_period_interpretation"
       ],
-      "repairSkill": "npv_decision_rule",
+      "repairSkill": "cost_of_capital_npv",
       "commonError": "Choosing the fastest payback even when another project creates more value",
       "feedback": "The NPV rule selects Project B because it adds more value despite the slower payback.",
-      "aHash": "f4d19f788de8deb4b1aaac6639918594fc44f0c5cd9cebfd5d7a1315d0cfe174"
+      "aHash": "f4d19f788de8deb4b1aaac6639918594fc44f0c5cd9cebfd5d7a1315d0cfe174",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 109,
@@ -2335,32 +2742,11 @@ const questionBanks = {
       "conceptCluster": "investment_analysis",
       "primarySkill": "payback_period_calculation",
       "secondarySkills": [],
-      "repairSkill": "payback_period_calculation",
+      "repairSkill": "payback_period",
       "commonError": "double_counts_cumulative_cash_receipts",
       "feedback": "After two years, $43,200 − $31,200 = $12,000 remains. At $2,000 per month, recovery requires six more months. Payback is 2.5 years; cumulative receipts must not be counted a second time.",
-      "aHash": "fd2497042ca4d30166e06a658d71653480c072289b4ce8271f2b922af10ad743"
-    },
-    {
-      "id": 110,
-      "sourceGame": "marketSignal",
-      "q": "A project costs $20,000 and produces discounted cash inflows of $8,000, $9,000, and $7,000. What is its NPV?",
-      "options": [
-        "-$4,000",
-        "$20,000",
-        "$4,000",
-        "$24,000"
-      ],
-      "tag": "npv_from_discounted_flows",
-      "type": "calculation",
-      "objective": "LO5.3",
-      "difficulty": "medium",
-      "conceptCluster": "investment_analysis",
-      "primarySkill": "npv_calculation",
-      "secondarySkills": [],
-      "repairSkill": "npv_calculation",
-      "commonError": "Failing to subtract the initial investment or subtracting the inflows from the cost",
-      "feedback": "The discounted inflows total $24,000; subtracting $20,000 gives a $4,000 NPV.",
-      "aHash": "62f94a766e91456302c1bd8335149ca4073344830e5a0e80fb35b688f0fe8218"
+      "aHash": "fd2497042ca4d30166e06a658d71653480c072289b4ce8271f2b922af10ad743",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 111,
@@ -2368,9 +2754,9 @@ const questionBanks = {
       "q": "A firm uses a two-year payback cutoff. A project pays back in 18 months but has a negative NPV. Which rule gives the stronger value-based recommendation?",
       "options": [
         "Reject it under the NPV rule",
-        "Accept it because payback is under two years",
-        "Accept it because both rules always agree",
-        "Ignore both rules and consider only accounting profit"
+        "Accept because meeting a payback cutoff guarantees value creation",
+        "Accept because undiscounted recovery proves the required return was earned",
+        "Ignore cash after the payback date and treat the remainder as zero"
       ],
       "tag": "payback_conflict",
       "type": "application",
@@ -2381,81 +2767,16 @@ const questionBanks = {
       "secondarySkills": [
         "payback_period_interpretation"
       ],
-      "repairSkill": "npv_decision_rule",
+      "repairSkill": "cost_of_capital_npv",
       "commonError": "Allowing a shortcut to override a negative NPV",
       "feedback": "Payback is a shortcut; a negative NPV indicates the project fails to cover its opportunity cost.",
-      "aHash": "23c6f37d20610499f16fd55d0c0152e5b5698c43ce3c6a6676c51cc72f08faa2"
-    },
-    {
-      "id": 112,
-      "sourceGame": "marketSignal",
-      "q": "A product has fixed cost of $24,000, price of $30, and variable cost of $18 per unit. What is the break-even quantity?",
-      "options": [
-        "800 units",
-        "2,000 units",
-        "1,333 units",
-        "4,000 units"
-      ],
-      "tag": "break_even_quantity",
-      "type": "calculation",
-      "objective": "LO5.4",
-      "difficulty": "medium",
-      "conceptCluster": "break_even_shutdown",
-      "primarySkill": "break_even_quantity_calculation",
-      "secondarySkills": [],
-      "repairSkill": "break_even_quantity_calculation",
-      "commonError": "Dividing fixed cost by price or by variable cost",
-      "feedback": "Contribution margin is $12, so break-even quantity is $24,000/$12 = 2,000.",
-      "aHash": "6d5d0fe3203b3349ce0216e662c3b34f0c7c25d73f545003664e8f44cf3625a9"
-    },
-    {
-      "id": 113,
-      "sourceGame": "marketSignal",
-      "q": "A firm expects to sell 3,000 units, has fixed cost of $18,000, and variable cost of $9 per unit. What price breaks even?",
-      "options": [
-        "$15",
-        "$6",
-        "$9",
-        "$18"
-      ],
-      "tag": "break_even_price",
-      "type": "calculation",
-      "objective": "LO5.4",
-      "difficulty": "medium",
-      "conceptCluster": "break_even_shutdown",
-      "primarySkill": "break_even_price_calculation",
-      "secondarySkills": [],
-      "repairSkill": "break_even_price_calculation",
-      "commonError": "Ignoring fixed cost per expected unit",
-      "feedback": "Break-even price is $9 + $18,000/3,000 = $15.",
-      "aHash": "012c420ecec5e4b1dec47c93a4043e027e2d9af669cb7be8deedd3c46e111110"
-    },
-    {
-      "id": 114,
-      "sourceGame": "marketSignal",
-      "q": "Technology A has fixed cost of $1,200 and variable cost of $2 per unit. Technology B has fixed cost of $400 and variable cost of $4 per unit. At what output are their total costs equal?",
-      "options": [
-        "400 units",
-        "200 units",
-        "600 units",
-        "800 units"
-      ],
-      "tag": "technology_indifference",
-      "type": "calculation",
-      "objective": "LO5.4",
-      "difficulty": "medium",
-      "conceptCluster": "break_even_shutdown",
-      "primarySkill": "technology_cost_comparison",
-      "secondarySkills": [],
-      "repairSkill": "technology_cost_comparison",
-      "commonError": "Equating fixed costs or variable costs instead of total costs",
-      "feedback": "Set 1,200 + 2Q equal to 400 + 4Q; the technologies tie at Q = 400.",
-      "aHash": "aab66715ff6211f6a0c928e6e811af6096a029a1e152bedcb2de43b7cea53c06"
+      "aHash": "23c6f37d20610499f16fd55d0c0152e5b5698c43ce3c6a6676c51cc72f08faa2",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 115,
       "sourceGame": "marketSignal",
-      "q": "A competitive firm is producing where MR = MC. Price is $7, average variable cost is $8, and average total cost is $11. What should it do in the short run?",
+      "q": "A competitive firm has found its best positive-output choice, where MR = MC. Fixed costs are unavoidable this period. Price is $7, average variable cost is $8, and average total cost is $11. What should it do in the short run?",
       "options": [
         "Continue because MR equals MC",
         "Shut down",
@@ -2469,20 +2790,21 @@ const questionBanks = {
       "conceptCluster": "break_even_shutdown",
       "primarySkill": "short_run_shutdown_rule",
       "secondarySkills": [],
-      "repairSkill": "short_run_shutdown_rule",
+      "repairSkill": "shutdown_decisions",
       "commonError": "Using MR = MC alone while ignoring that price does not cover variable cost",
       "feedback": "Because price is below average variable cost, producing increases the firm's loss.",
-      "aHash": "53a25cb618677731c944aa1925000f58506f7f22fef264615a0c3a36543afa08"
+      "aHash": "53a25cb618677731c944aa1925000f58506f7f22fef264615a0c3a36543afa08",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 116,
       "sourceGame": "marketSignal",
-      "q": "A competitive firm is producing where MR = MC. Price is $9, average variable cost is $6, and average total cost is $12. What should it do in the short run?",
+      "q": "A competitive firm has found its best positive-output choice, where MR = MC. Fixed costs are unavoidable this period. Price is $9, average variable cost is $6, and average total cost is $12. What should it do in the short run?",
       "options": [
-        "Shut down because it has an economic loss",
-        "Raise price to $12",
+        "Raise the selling price while remaining a price taker",
+        "Shut down because price is below ATC",
         "Continue producing",
-        "Produce zero until fixed cost disappears"
+        "Shut down because unavoidable fixed costs remain unpaid"
       ],
       "tag": "operate_at_loss",
       "type": "application",
@@ -2491,15 +2813,16 @@ const questionBanks = {
       "conceptCluster": "break_even_shutdown",
       "primarySkill": "short_run_shutdown_rule",
       "secondarySkills": [],
-      "repairSkill": "short_run_shutdown_rule",
+      "repairSkill": "shutdown_decisions",
       "commonError": "Shutting down whenever price is below average total cost",
       "feedback": "Price covers average variable cost and part of fixed cost, so operating minimizes the short-run loss.",
-      "aHash": "38496742946b6e9320a69e5fd6b54980a50ea5656b5471a7406bcc9ce4f8a033"
+      "aHash": "38496742946b6e9320a69e5fd6b54980a50ea5656b5471a7406bcc9ce4f8a033",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 117,
       "sourceGame": "marketSignal",
-      "q": "A firm has already spent $70,000 developing a product. Launching now requires another $20,000 and is expected to generate $25,000 in future revenue with no other costs. What should the firm do?",
+      "q": "A firm has already spent $70,000 developing a product. Launching now has $20,000 in remaining present-value costs and $25,000 in present-value receipts, with no other effects. What should it do?",
       "options": [
         "Cancel because total spending would reach $90,000",
         "Cancel because the $70,000 must be recovered first",
@@ -2513,56 +2836,11 @@ const questionBanks = {
       "conceptCluster": "contracts_and_commitment",
       "primarySkill": "sunk_cost_decision",
       "secondarySkills": [],
-      "repairSkill": "sunk_cost_decision",
+      "repairSkill": "sunk_cost_hold_up",
       "commonError": "Including an irrecoverable past cost in the forward-looking decision",
       "feedback": "The $70,000 is sunk; launching adds an expected $5,000 based on future revenue and future cost.",
-      "aHash": "137d9ddc6d892a5ab553d8292b390f9337f68a75a51290837982ecf60570bd58"
-    },
-    {
-      "id": 118,
-      "sourceGame": "marketSignal",
-      "q": "Two firms fear that one will exploit the other after a relationship-specific investment is made. Each posts valuable collateral that is forfeited if it abandons the agreement. What device are they using?",
-      "options": [
-        "A payback cutoff",
-        "An exchange of hostages",
-        "A spot-market auction",
-        "A shutdown rule based on variable cost"
-      ],
-      "tag": "exchange_of_hostages",
-      "type": "application",
-      "objective": "LO5.5",
-      "difficulty": "medium",
-      "conceptCluster": "contracts_and_commitment",
-      "primarySkill": "hold_up_mitigation",
-      "secondarySkills": [],
-      "repairSkill": "hold_up_mitigation",
-      "commonError": "Confusing a mutual commitment device with an ordinary purchase",
-      "feedback": "Mutually valuable collateral makes opportunistic withdrawal costly and helps control post-investment hold-up.",
-      "aHash": "57b0187baf34499d4be26b27139276bfa3346ed8be3ce4227de1d6608a3ec12d"
-    },
-    {
-      "id": 119,
-      "sourceGame": "marketSignal",
-      "q": "A supplier must buy specialized equipment for one buyer. Which contract term most directly reduces the supplier's hold-up risk?",
-      "options": [
-        "A promise to discuss price later",
-        "A clause allowing the buyer to cancel without cost",
-        "A requirement that the supplier ignore all future demand changes",
-        "A minimum-purchase commitment from the buyer"
-      ],
-      "tag": "hold_up_contract",
-      "type": "application",
-      "objective": "LO5.5",
-      "difficulty": "medium",
-      "conceptCluster": "contracts_and_commitment",
-      "primarySkill": "contract_design",
-      "secondarySkills": [
-        "sunk_cost_decision"
-      ],
-      "repairSkill": "contract_design",
-      "commonError": "Relying on an unenforceable promise after the specialized investment is sunk",
-      "feedback": "A minimum-purchase commitment protects recovery of the relationship-specific investment.",
-      "aHash": "e53eff60cd489450b3456c7b968fac41bdb1c924f985c98a45681cb4da57df6d"
+      "aHash": "137d9ddc6d892a5ab553d8292b390f9337f68a75a51290837982ecf60570bd58",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 120,
@@ -2581,10 +2859,11 @@ const questionBanks = {
       "conceptCluster": "uncertainty_analysis",
       "primarySkill": "expected_value_calculation",
       "secondarySkills": [],
-      "repairSkill": "expected_value_calculation",
+      "repairSkill": "expected_value_probability",
       "commonError": "Ignoring the loss outcome or averaging outcomes without probabilities",
       "feedback": "Expected value is 0.5($100,000) + 0.3($20,000) + 0.2(-$40,000) = $48,000.",
-      "aHash": "7b12ef665f012667df941a8005fe786134e43d662ed24399f3a5060f052941b4"
+      "aHash": "7b12ef665f012667df941a8005fe786134e43d662ed24399f3a5060f052941b4",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 121,
@@ -2603,76 +2882,11 @@ const questionBanks = {
       "conceptCluster": "uncertainty_analysis",
       "primarySkill": "expected_value_comparison",
       "secondarySkills": [],
-      "repairSkill": "expected_value_comparison",
+      "repairSkill": "expected_value_probability",
       "commonError": "Comparing only success probabilities or success payoffs",
       "feedback": "Project A's expected value is $124,000, while Project B's is $126,000.",
-      "aHash": "67480ced60f1b78ac60cc31eeb086a3c7c39b4f09f2cea6a32ff826f3a832ef8"
-    },
-    {
-      "id": 122,
-      "sourceGame": "marketSignal",
-      "q": "A delivery failure costs a firm $50,000 and occurs with probability 0.08. What is the expected cost of the failure?",
-      "options": [
-        "$400",
-        "$8,000",
-        "$4,000",
-        "$46,000"
-      ],
-      "tag": "expected_cost",
-      "type": "calculation",
-      "objective": "LO17.1",
-      "difficulty": "medium",
-      "conceptCluster": "uncertainty_analysis",
-      "primarySkill": "expected_cost_calculation",
-      "secondarySkills": [],
-      "repairSkill": "expected_cost_calculation",
-      "commonError": "Subtracting the probability from the loss or treating 8% as 0.8",
-      "feedback": "Expected cost is 0.08 × $50,000 = $4,000.",
-      "aHash": "62f94a766e91456302c1bd8335149ca4073344830e5a0e80fb35b688f0fe8218"
-    },
-    {
-      "id": 123,
-      "sourceGame": "marketSignal",
-      "q": "A firm can price a product at $80 and sell 1,000 units with probability 0.7, or price it at $100 and sell 850 units with probability 0.6. Unit cost is $40 in either case, and zero units are sold if demand does not materialize. Which price has the higher expected profit?",
-      "options": [
-        "The $100 price, with expected profit of $30,600",
-        "The $80 price, with expected profit of $28,000",
-        "The $100 price, with expected profit of $51,000",
-        "Both prices yield expected profit of $34,000"
-      ],
-      "tag": "expected_pricing_profit",
-      "type": "calculation",
-      "objective": "LO17.1",
-      "difficulty": "medium",
-      "conceptCluster": "uncertainty_analysis",
-      "primarySkill": "expected_profit_calculation",
-      "secondarySkills": [],
-      "repairSkill": "expected_profit_calculation",
-      "commonError": "Calculating expected revenue while ignoring unit cost",
-      "feedback": "The $80 strategy yields $28,000; the $100 strategy yields 0.6(850×$60) = $30,600.",
-      "aHash": "de98e070b41b25e52c57eb5b3577be3304301c2a2207ff98eaf3d34678647daa"
-    },
-    {
-      "id": 124,
-      "sourceGame": "marketSignal",
-      "q": "Three possible outcomes have probabilities 0.25, 0.35, and an unknown third probability. What must the third probability be?",
-      "options": [
-        "0.40",
-        "0.10",
-        "0.25",
-        "0.60"
-      ],
-      "tag": "probability_distribution",
-      "type": "calculation",
-      "objective": "LO17.1",
-      "difficulty": "medium",
-      "conceptCluster": "uncertainty_analysis",
-      "primarySkill": "probability_distribution",
-      "secondarySkills": [],
-      "repairSkill": "probability_distribution",
-      "commonError": "Failing to make the probabilities sum to one",
-      "feedback": "Probabilities in a complete distribution sum to 1, so the missing probability is 0.40.",
-      "aHash": "9e812e813ab439de91dbfbaa420fe556dcea60505162dc1d10aaad3289d3be1c"
+      "aHash": "67480ced60f1b78ac60cc31eeb086a3c7c39b4f09f2cea6a32ff826f3a832ef8",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 125,
@@ -2691,42 +2905,21 @@ const questionBanks = {
       "conceptCluster": "uncertainty_analysis",
       "primarySkill": "expected_value_calculation",
       "secondarySkills": [],
-      "repairSkill": "expected_value_calculation",
+      "repairSkill": "expected_value_probability",
       "commonError": "Ignoring the value retained after failure",
       "feedback": "Expected value is 0.65($180,000) + 0.35($40,000) = $131,000.",
-      "aHash": "01410a5c88bbb862073234d4970b70597d8e96bb5cdfff28145f89b11654d819"
-    },
-    {
-      "id": 126,
-      "sourceGame": "marketSignal",
-      "q": "A machine has a 5% annual chance of causing a $200,000 loss. Ignoring risk aversion and other costs, what is the maximum actuarially fair annual insurance premium?",
-      "options": [
-        "$5,000",
-        "$20,000",
-        "$190,000",
-        "$10,000"
-      ],
-      "tag": "actuarially_fair_premium",
-      "type": "calculation",
-      "objective": "LO17.1",
-      "difficulty": "medium",
-      "conceptCluster": "uncertainty_analysis",
-      "primarySkill": "expected_loss_calculation",
-      "secondarySkills": [],
-      "repairSkill": "expected_loss_calculation",
-      "commonError": "Using the probability as a dollar amount or insuring the full loss each year",
-      "feedback": "The expected annual loss is 0.05 × $200,000 = $10,000.",
-      "aHash": "d7c2f19257f0c5f31dfe20885459483e1781e72e9d6103607b47d30bcf88314a"
+      "aHash": "01410a5c88bbb862073234d4970b70597d8e96bb5cdfff28145f89b11654d819",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 127,
       "sourceGame": "marketSignal",
       "q": "An airline sells discounted nonrefundable tickets and higher-priced refundable tickets. What uncertainty problem does this pricing structure primarily address?",
       "options": [
-        "The airline cannot observe its own costs",
-        "Every passenger has identical demand and values flexibility in exactly the same way",
+        "A belief that every buyer values flexibility equally",
+        "A need to identify only the airline’s accounting depreciation",
         "Customers differ in their willingness to pay and need for flexibility",
-        "The airline must charge one price by law"
+        "A guarantee that the two fares have identical cancellation risk"
       ],
       "tag": "self_selection_pricing",
       "type": "application",
@@ -2735,20 +2928,21 @@ const questionBanks = {
       "conceptCluster": "pricing_under_uncertainty",
       "primarySkill": "price_discrimination_under_uncertainty",
       "secondarySkills": [],
-      "repairSkill": "price_discrimination_under_uncertainty",
+      "repairSkill": "price_discrimination_uncertainty",
       "commonError": "Treating price discrimination as unrelated to hidden customer differences",
       "feedback": "Ticket restrictions induce customers to sort themselves by flexibility and willingness to pay.",
-      "aHash": "cbe91ba8694cb9b37b221c53ad0e515d763e4fad41c370efa57ec955b4e9a793"
+      "aHash": "cbe91ba8694cb9b37b221c53ad0e515d763e4fad41c370efa57ec955b4e9a793",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 128,
       "sourceGame": "marketSignal",
       "q": "A software company offers a low-priced student edition after requiring proof of enrollment. Why can this increase profit?",
       "options": [
-        "It guarantees every customer pays the same price regardless of willingness to pay or eligibility",
+        "It makes every student willing to pay the higher price",
         "It serves price-sensitive buyers without cutting the price charged to less sensitive buyers",
-        "It eliminates uncertainty about production cost",
-        "It prevents all resale automatically"
+        "It guarantees extra sales are profitable even below incremental cost",
+        "It eliminates all resale risk solely by using a student label"
       ],
       "tag": "segment_price_discrimination",
       "type": "application",
@@ -2757,100 +2951,34 @@ const questionBanks = {
       "conceptCluster": "pricing_under_uncertainty",
       "primarySkill": "price_discrimination_under_uncertainty",
       "secondarySkills": [],
-      "repairSkill": "price_discrimination_under_uncertainty",
+      "repairSkill": "price_discrimination_uncertainty",
       "commonError": "Assuming one uniform price always maximizes revenue",
       "feedback": "Verified segmentation lets the firm reach students while preserving a higher price in another segment.",
-      "aHash": "af9700a95c11a87567df03722ad352bae476baae27f5f050a27f1eae91001a3d"
+      "aHash": "af9700a95c11a87567df03722ad352bae476baae27f5f050a27f1eae91001a3d",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 129,
       "sourceGame": "marketSignal",
-      "q": "A utility charges more during peak hours and less overnight. What information is the price structure using?",
+      "q": "Restaurant-meal demand rises at dinner time. With upward-sloping short-run supply and unchanged input costs and capacity, what happens relative to a quieter period?",
       "options": [
-        "Every hour has identical scarcity",
-        "Only fixed costs matter",
-        "Demand and capacity costs vary by time",
-        "Customers cannot change when they consume"
+        "Demand shifts left because meals become more expensive",
+        "Supply must shift right because more meals are purchased",
+        "Equilibrium price and quantity rise",
+        "Equilibrium quantity falls whenever price rises"
       ],
-      "tag": "peak_load_pricing",
+      "tag": "demand_shift_analysis",
       "type": "application",
-      "objective": "LO17.2",
+      "objective": "LO8.4",
       "difficulty": "medium",
-      "conceptCluster": "pricing_under_uncertainty",
-      "primarySkill": "price_discrimination_under_uncertainty",
+      "conceptCluster": "medium_marketSignal_demand_shift_analysis",
+      "primarySkill": "demand_shift_analysis",
       "secondarySkills": [],
-      "repairSkill": "price_discrimination_under_uncertainty",
-      "commonError": "Ignoring predictable differences in demand across time",
-      "feedback": "Peak-load pricing responds to time-specific demand and the higher opportunity cost of scarce capacity.",
-      "aHash": "9740501a42f209f5cf5b0fd75dd7386df02f2e48242bee76bcaf1272781fbf41"
-    },
-    {
-      "id": 130,
-      "sourceGame": "marketSignal",
-      "q": "A theater estimates that charging students $8 will attract 600 students, while charging them $12 will attract 350. Marginal cost is $2 per student. Which student price generates more contribution profit?",
-      "options": [
-        "$12, generating $3,500",
-        "$12, generating $4,200",
-        "Both prices generate $3,600",
-        "$8, generating $3,600"
-      ],
-      "tag": "segment_price_choice",
-      "type": "calculation",
-      "objective": "LO17.2",
-      "difficulty": "medium",
-      "conceptCluster": "pricing_under_uncertainty",
-      "primarySkill": "pricing_profit_comparison",
-      "secondarySkills": [
-        "price_discrimination_under_uncertainty"
-      ],
-      "repairSkill": "pricing_profit_comparison",
-      "commonError": "Comparing revenue instead of contribution profit",
-      "feedback": "At $8, contribution is $6×600 = $3,600; at $12 it is $10×350 = $3,500.",
-      "aHash": "418d82633c85bbc665fed9ca9592e95dbd4e3af1ac5978cae2beddb3ae8e6b23"
-    },
-    {
-      "id": 131,
-      "sourceGame": "marketSignal",
-      "q": "A firm evaluates a loyalty program by comparing customers who voluntarily joined with customers who did not. Why might the estimate be biased?",
-      "options": [
-        "The treatment and control groups are necessarily identical",
-        "Voluntary participation guarantees random assignment",
-        "Customers who joined may already have been more loyal",
-        "Loyalty cannot be measured with sales data"
-      ],
-      "tag": "selection_bias",
-      "type": "application",
-      "objective": "LO17.3",
-      "difficulty": "medium",
-      "conceptCluster": "causal_inference",
-      "primarySkill": "selection_bias_identification",
-      "secondarySkills": [],
-      "repairSkill": "selection_bias_identification",
-      "commonError": "Attributing preexisting differences to the program",
-      "feedback": "Self-selection can make participants systematically different before treatment.",
-      "aHash": "329e4e2e2a9b6e50cbc2c50adfb374a04cad915a9310ef6dcf7e3232387d8ce0"
-    },
-    {
-      "id": 132,
-      "sourceGame": "marketSignal",
-      "q": "Why does randomly assigning customers to treatment and control groups improve a pricing experiment?",
-      "options": [
-        "It ensures every treated customer buys at least once during the experiment",
-        "It removes all sampling error",
-        "It guarantees the treatment is profitable",
-        "It tends to balance other customer characteristics across groups"
-      ],
-      "tag": "random_assignment",
-      "type": "conceptual",
-      "objective": "LO17.3",
-      "difficulty": "medium",
-      "conceptCluster": "causal_inference",
-      "primarySkill": "randomized_experiment_design",
-      "secondarySkills": [],
-      "repairSkill": "randomized_experiment_design",
-      "commonError": "Treating randomization as a guarantee of a favorable result",
-      "feedback": "Random assignment makes the groups comparable on average, strengthening causal inference.",
-      "aHash": "6a5a71eefb6f86529034928dc99c377399e6d8a561b8bd071450d96b2fe0fbe2"
+      "repairSkill": "demand_supply_shifts",
+      "commonError": "confuses_price_induced_supply_movement_with_shift",
+      "feedback": "The time-specific demand increase moves the market to a higher price and quantity along the same supply curve; the price-induced seller response is not a supply shift.",
+      "aHash": "4c16d366d9dc963a68f1e4487edca9cc52378f333abdd13d69ad2d73e22b241b",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 133,
@@ -2869,10 +2997,11 @@ const questionBanks = {
       "conceptCluster": "causal_inference",
       "primarySkill": "difference_in_differences",
       "secondarySkills": [],
-      "repairSkill": "difference_in_differences",
+      "repairSkill": "experiments_causality",
       "commonError": "Using only the treated market's before-and-after change",
-      "feedback": "The treated market rises by $12,000 and the control by $6,000, leaving an estimated effect of $6,000.",
-      "aHash": "f455ed4209cdc909730b6b732fb242e1933fdebcfac5fdf35dd9f2bac7cb51b0"
+      "feedback": "The treated market rises by $12,000 and the control by $6,000, leaving an estimated effect of $6,000. Treating this contrast as causal additionally requires comparable untreated trends and no different concurrent shock.",
+      "aHash": "f455ed4209cdc909730b6b732fb242e1933fdebcfac5fdf35dd9f2bac7cb51b0",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 134,
@@ -2891,19 +3020,20 @@ const questionBanks = {
       "conceptCluster": "causal_inference",
       "primarySkill": "difference_in_differences",
       "secondarySkills": [],
-      "repairSkill": "difference_in_differences",
+      "repairSkill": "experiments_causality",
       "commonError": "Ignoring that the comparison group moved in the opposite direction",
-      "feedback": "The treated change is +60 and the comparison change is -20; 60 - (-20) = 80.",
-      "aHash": "ddd31c69fb8a28390db96f2aeaced9c4cb4737d06ae6f66cd27e93310b4ea11f"
+      "feedback": "The treated change is +60 and the comparison change is -20; 60 - (-20) = 80. Treating this contrast as causal additionally requires comparable untreated trends and no different concurrent shock.",
+      "aHash": "ddd31c69fb8a28390db96f2aeaced9c4cb4737d06ae6f66cd27e93310b4ea11f",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 135,
       "sourceGame": "marketSignal",
       "q": "A manager tests a training program only on the lowest-performing salespeople and observes improvement next month. What threatens the causal conclusion?",
       "options": [
-        "The treatment group is too profitable",
-        "The outcome cannot be measured over time",
-        "Random assignment made the groups identical and guaranteed the treatment would work",
+        "Selecting the weakest staff removes all preexisting differences",
+        "The improvement proves the training effect without a comparison",
+        "A later measurement automatically supplies a randomized control",
         "Regression toward the mean and nonrandom selection"
       ],
       "tag": "regression_to_mean",
@@ -2913,19 +3043,20 @@ const questionBanks = {
       "conceptCluster": "causal_inference",
       "primarySkill": "selection_bias_identification",
       "secondarySkills": [],
-      "repairSkill": "selection_bias_identification",
+      "repairSkill": "experiments_causality",
       "commonError": "Attributing a natural rebound entirely to the treatment",
       "feedback": "Extremely low performers may improve naturally, especially when selection is based on an unusual low result.",
-      "aHash": "e00d4b51872181a30a5eea53c36b6b0e7bffb501e60ccaca1d59bb2aea443307"
+      "aHash": "e00d4b51872181a30a5eea53c36b6b0e7bffb501e60ccaca1d59bb2aea443307",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 136,
       "sourceGame": "marketSignal",
       "q": "A retailer wants to test a storewide display, but customers frequently shop at multiple nearby stores. What is the best randomization unit?",
       "options": [
-        "Individual items within the same display",
-        "Individual customers without tracking cross-store shopping",
-        "Different days in one store with no controls",
+        "Products within the same storewide display assigned independently",
+        "Individual customers who use both treated and untreated stores",
+        "Nearby stores with frequent cross-shopping assigned independently",
         "Geographically separated store markets"
       ],
       "tag": "spillover_randomization",
@@ -2935,10 +3066,11 @@ const questionBanks = {
       "conceptCluster": "causal_inference",
       "primarySkill": "randomized_experiment_design",
       "secondarySkills": [],
-      "repairSkill": "randomized_experiment_design",
+      "repairSkill": "experiments_causality",
       "commonError": "Randomizing units that contaminate one another through spillovers",
       "feedback": "Separating store markets reduces treatment spillovers between the treatment and control groups.",
-      "aHash": "a23dafffc332889b278459f7db6ede94a7b9f461e97acb2c4d0af61bc6649b73"
+      "aHash": "a23dafffc332889b278459f7db6ede94a7b9f461e97acb2c4d0af61bc6649b73",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 137,
@@ -2957,20 +3089,21 @@ const questionBanks = {
       "conceptCluster": "error_costs",
       "primarySkill": "type_one_error_identification",
       "secondarySkills": [],
-      "repairSkill": "type_one_error_identification",
+      "repairSkill": "error_costs",
       "commonError": "Naming an error without tying it to the stated null hypothesis",
       "feedback": "A Type I error rejects a true null hypothesis.",
-      "aHash": "d78ff37c7aa448871f56528411618149d6cf94f42eb58c33a2592ae9d2d3eaa5"
+      "aHash": "d78ff37c7aa448871f56528411618149d6cf94f42eb58c33a2592ae9d2d3eaa5",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 138,
       "sourceGame": "marketSignal",
-      "q": "For a fire alarm, a missed fire is far more costly than a false alarm. How should that affect the detection threshold?",
+      "q": "For a fire alarm, a missed fire is far more costly than a false alarm. Holding other conditions fixed, how should that affect the detection threshold?",
       "options": [
-        "Use a higher threshold that increases missed fires but reduces the number of false alarms",
+        "Raise the threshold to minimize false alarms regardless of missed-fire cost",
         "Use a lower threshold that tolerates more false alarms",
-        "Ignore the relative error costs",
-        "Require certainty before sounding an alarm"
+        "Keep the threshold fixed solely to preserve the same total error count",
+        "Require certainty even if the delay raises expected missed-fire losses"
       ],
       "tag": "error_cost_threshold",
       "type": "application",
@@ -2979,15 +3112,16 @@ const questionBanks = {
       "conceptCluster": "error_costs",
       "primarySkill": "expected_error_cost_minimization",
       "secondarySkills": [],
-      "repairSkill": "expected_error_cost_minimization",
+      "repairSkill": "error_costs",
       "commonError": "Minimizing the number of errors instead of their expected cost",
       "feedback": "When false negatives are much costlier, the rule should favor sensitivity even at the price of more false positives.",
-      "aHash": "33a0b8c725b2b3238c83334023f21fd2af9bdad34ccc3e46b411963ec126eda9"
+      "aHash": "33a0b8c725b2b3238c83334023f21fd2af9bdad34ccc3e46b411963ec126eda9",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 139,
       "sourceGame": "marketSignal",
-      "q": "Screening Rule A creates a false positive 10% of the time at a cost of $1,000 and a false negative 4% of the time at a cost of $8,000. What is its expected error cost per case?",
+      "q": "Across all screened cases, Rule A produces a false positive with probability 0.10, costing $1,000, and a false negative with probability 0.04, costing $8,000. These are unconditional per-case probabilities. What is expected error cost per case?",
       "options": [
         "$180",
         "$900",
@@ -3001,32 +3135,11 @@ const questionBanks = {
       "conceptCluster": "error_costs",
       "primarySkill": "expected_error_cost_calculation",
       "secondarySkills": [],
-      "repairSkill": "expected_error_cost_calculation",
+      "repairSkill": "error_costs",
       "commonError": "Adding error rates or costs without probability weighting",
       "feedback": "Expected error cost is 0.10($1,000) + 0.04($8,000) = $420.",
-      "aHash": "6f24e0a71765edc5186214df27d874dbd8bd4e79312e7262d2f6d8964fa08def"
-    },
-    {
-      "id": 140,
-      "sourceGame": "marketSignal",
-      "q": "Rule A has expected error cost of $420 per decision. Rule B has expected error cost of $360 but makes more total mistakes. Which rule minimizes expected error cost?",
-      "options": [
-        "Rule B",
-        "Rule A because it makes fewer mistakes",
-        "Either rule because error counts are all that matter",
-        "Neither rule unless both have zero errors"
-      ],
-      "tag": "choose_error_rule",
-      "type": "application",
-      "objective": "LO17.4",
-      "difficulty": "medium",
-      "conceptCluster": "error_costs",
-      "primarySkill": "expected_error_cost_minimization",
-      "secondarySkills": [],
-      "repairSkill": "expected_error_cost_minimization",
-      "commonError": "Choosing the rule with fewer errors regardless of their severity",
-      "feedback": "Expected cost, not the raw number of mistakes, is the relevant decision criterion.",
-      "aHash": "69f1adc9da68b93230bc378d221b4a58b5f4b0b052d49e65e3874efd0861d20c"
+      "aHash": "6f24e0a71765edc5186214df27d874dbd8bd4e79312e7262d2f6d8964fa08def",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 141,
@@ -3034,9 +3147,9 @@ const questionBanks = {
       "q": "A company estimates demand using only its three best sales months. What is the main problem?",
       "options": [
         "The sample is not representative of normal demand",
-        "Three months always create a census",
-        "High-sales months remove uncertainty",
-        "The estimate must be unbiased because the data are real"
+        "Real observations are necessarily representative regardless of selection",
+        "Selecting high-sales months removes sampling bias",
+        "A smaller hand-picked sample must be more precise than a representative one"
       ],
       "tag": "representative_sample",
       "type": "application",
@@ -3045,20 +3158,21 @@ const questionBanks = {
       "conceptCluster": "uncertainty_estimation",
       "primarySkill": "estimate_quality_assessment",
       "secondarySkills": [],
-      "repairSkill": "estimate_quality_assessment",
+      "repairSkill": "uncertainty_estimation",
       "commonError": "Treating selected historical data as representative",
       "feedback": "Choosing unusually strong months creates an upward-biased demand estimate.",
-      "aHash": "45a54102a5bbeae3981495bc9ac075baa2275898d6e2ca13b9a313e272aaeee9"
+      "aHash": "45a54102a5bbeae3981495bc9ac075baa2275898d6e2ca13b9a313e272aaeee9",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 142,
       "sourceGame": "marketSignal",
-      "q": "A firm has limited historical data but knows plausible ranges for demand, price, and cost. Which method best explores many combinations of those uncertainties?",
+      "q": "A firm specifies candidate probability distributions and dependence assumptions for uncertain demand, price and cost. Which method explores many sampled combinations under those assumptions?",
       "options": [
         "Monte Carlo simulation",
-        "Ignoring low-probability outcomes",
-        "Using one manager's favorite scenario",
-        "Replacing every uncertain value with zero"
+        "Evaluate only the average input values once",
+        "Use only the most favorable combination",
+        "Treat each uncertain input as independent without checking the specified dependence"
       ],
       "tag": "simulation_estimation",
       "type": "application",
@@ -3067,32 +3181,11 @@ const questionBanks = {
       "conceptCluster": "uncertainty_estimation",
       "primarySkill": "simulation_reasoning",
       "secondarySkills": [],
-      "repairSkill": "simulation_reasoning",
+      "repairSkill": "uncertainty_estimation",
       "commonError": "Using a single point estimate when several inputs are uncertain",
-      "feedback": "Simulation repeatedly samples plausible inputs to estimate the distribution of outcomes.",
-      "aHash": "ae92034fcaf20165402482fb383827df1d32ce64b98fd592ed1572035c2f24d2"
-    },
-    {
-      "id": 143,
-      "sourceGame": "marketSignal",
-      "q": "A survey of 40 customers estimates that 70% like a product. A survey of 4,000 similar customers also estimates 70%. Which estimate is generally more precise?",
-      "options": [
-        "The estimate from 40 customers",
-        "Both estimates must have identical sampling error",
-        "Neither estimate can measure a proportion",
-        "The estimate from 4,000 customers"
-      ],
-      "tag": "sample_size_precision",
-      "type": "conceptual",
-      "objective": "LO17.5",
-      "difficulty": "medium",
-      "conceptCluster": "uncertainty_estimation",
-      "primarySkill": "estimate_precision",
-      "secondarySkills": [],
-      "repairSkill": "estimate_precision",
-      "commonError": "Assuming identical point estimates have identical precision",
-      "feedback": "Larger samples generally reduce sampling variability when the sampling process is comparable.",
-      "aHash": "776052d62889cccef5793cd7e5e1bf58d7b42b74e78fc29242f3ad79e8d04843"
+      "feedback": "Monte Carlo simulation repeatedly samples the specified uncertainty model. It explores the model’s implications rather than proving the input probabilities are correct.",
+      "aHash": "ae92034fcaf20165402482fb383827df1d32ce64b98fd592ed1572035c2f24d2",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 144,
@@ -3111,19 +3204,20 @@ const questionBanks = {
       "conceptCluster": "uncertainty_estimation",
       "primarySkill": "base_rate_reasoning",
       "secondarySkills": [],
-      "repairSkill": "base_rate_reasoning",
+      "repairSkill": "uncertainty_estimation",
       "commonError": "Ignoring how uncommon the target event is",
       "feedback": "Predictive value depends on both the model's conditional accuracy and the underlying frequency of fraud.",
-      "aHash": "600ca23cd3a669f59357522131bb7bc2878f22c5f476dd0bd54dd545dd3d0f41"
+      "aHash": "600ca23cd3a669f59357522131bb7bc2878f22c5f476dd0bd54dd545dd3d0f41",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 145,
       "sourceGame": "marketSignal",
-      "q": "A long-term supply contract faces uncertain energy prices. Which term best handles the unforeseen contingency while preserving the relationship?",
+      "q": "A long-term supply contract faces uncertain energy prices. Which term best handles this measurable uncertainty while preserving the relationship?",
       "options": [
-        "A fixed price that can never change even if measured energy costs double",
-        "No written procedure for renegotiation",
-        "Immediate termination after any cost increase",
+        "A termination rule triggered by any small index movement",
+        "A fixed price with no agreed process for the stated energy-price risk",
+        "A promise to negotiate only after one side threatens to stop deliveries",
         "A price-adjustment formula tied to an energy index"
       ],
       "tag": "contingent_contract",
@@ -3133,10 +3227,11 @@ const questionBanks = {
       "conceptCluster": "institution_design",
       "primarySkill": "contingent_contract_design",
       "secondarySkills": [],
-      "repairSkill": "contingent_contract_design",
+      "repairSkill": "contingency_contracts",
       "commonError": "Leaving a predictable uncertainty entirely unspecified",
       "feedback": "An indexed adjustment rule adapts the contract to a measurable change without requiring a new bargain each time.",
-      "aHash": "40abd9cab964b645c82e1f52071c9785c91b29444783f8173334046a374fce85"
+      "aHash": "40abd9cab964b645c82e1f52071c9785c91b29444783f8173334046a374fce85",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 146,
@@ -3144,9 +3239,9 @@ const questionBanks = {
       "q": "Partners cannot list every future event in a complex joint venture. Which governance feature is most useful?",
       "options": [
         "A defined renegotiation and dispute-resolution process",
-        "A ban on all future communication",
-        "A rule assigning every surprise to one partner regardless of who can manage it efficiently",
-        "An agreement with no decision rights"
+        "Detailed initial terms with no process for resolving omitted events",
+        "Decision rights that remain unspecified until a disagreement",
+        "One party’s informal assurance that no future adaptation will be needed"
       ],
       "tag": "incomplete_contract_governance",
       "type": "application",
@@ -3155,20 +3250,21 @@ const questionBanks = {
       "conceptCluster": "institution_design",
       "primarySkill": "institution_design_for_uncertainty",
       "secondarySkills": [],
-      "repairSkill": "institution_design_for_uncertainty",
+      "repairSkill": "contingency_contracts",
       "commonError": "Assuming an incomplete contract needs no process for adaptation",
       "feedback": "Renegotiation procedures and dispute resolution provide a structured response to events the contract did not specify.",
-      "aHash": "799bfb8ea32b08e06ce8cb4f5a1fcb115dccdcddf26259178e44fabb71f364e7"
+      "aHash": "799bfb8ea32b08e06ce8cb4f5a1fcb115dccdcddf26259178e44fabb71f364e7",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 147,
       "sourceGame": "marketSignal",
       "q": "A buyer is unsure whether it will need extra capacity next year. Which arrangement preserves flexibility without requiring immediate full investment?",
       "options": [
-        "An irreversible purchase of maximum capacity today before future demand is observed",
-        "A promise with no price or quantity terms",
+        "A nonbinding promise with no reserved capacity or exercise terms",
+        "An obligation to buy the maximum capacity regardless of realized demand",
         "An option to purchase additional capacity at a prearranged price",
-        "A requirement that demand remain unchanged"
+        "An irreversible full purchase before observing demand"
       ],
       "tag": "real_option_contract",
       "type": "application",
@@ -3177,19 +3273,20 @@ const questionBanks = {
       "conceptCluster": "institution_design",
       "primarySkill": "option_contract_design",
       "secondarySkills": [],
-      "repairSkill": "option_contract_design",
+      "repairSkill": "contingency_contracts",
       "commonError": "Treating uncertainty as a reason to make the largest irreversible commitment",
-      "feedback": "An option preserves the right, but not the obligation, to expand when uncertainty resolves.",
-      "aHash": "f3f4e8118433cea63f9257055f643b84ea8e5cb518b0b5c41591f7076956ad58"
+      "feedback": "An option preserves the right, rather than the obligation, to buy capacity at agreed terms. Its fee and exercise price still belong in the economic comparison.",
+      "aHash": "f3f4e8118433cea63f9257055f643b84ea8e5cb518b0b5c41591f7076956ad58",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 148,
       "sourceGame": "marketSignal",
       "q": "A coffee shop claims it has no competitors because it is the only café on its block. What is the first question before accepting that claim?",
       "options": [
-        "Whether its accounting year ends in December",
-        "Whether its tables are the same color",
-        "Whether every customer buys coffee daily and refuses to purchase any nearby substitute",
+        "Whether its accounting sales category includes every nearby seller",
+        "Whether the café’s internal product label is unique",
+        "Whether all potential substitutes share its exact street address",
         "Whether nearby cafés, convenience stores, and delivery options are close substitutes"
       ],
       "tag": "product_market_definition",
@@ -3202,7 +3299,8 @@ const questionBanks = {
       "repairSkill": "market_definition",
       "commonError": "Defining the market around the firm's own location and label",
       "feedback": "A market must include meaningful substitutes available to customers, not merely firms with the same exact description.",
-      "aHash": "49d938c08a40432b8fdf631b2a1b15e4e259e606b7059b4ebc97d71c03e78118"
+      "aHash": "49d938c08a40432b8fdf631b2a1b15e4e259e606b7059b4ebc97d71c03e78118",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 149,
@@ -3210,9 +3308,9 @@ const questionBanks = {
       "q": "A hospital merger is being evaluated. Why does the geographic market matter?",
       "options": [
         "Patients may be unwilling or unable to travel far for care",
-        "Geography determines the hospital's depreciation method",
-        "All medical services are identical nationwide and patients face no meaningful travel costs",
-        "Distance cannot affect substitution"
+        "Administrative boundaries always determine where patients can substitute",
+        "Equal procedure labels eliminate every travel constraint",
+        "National averages necessarily describe each patient’s available alternatives"
       ],
       "tag": "geographic_market_definition",
       "type": "application",
@@ -3224,17 +3322,18 @@ const questionBanks = {
       "repairSkill": "market_definition",
       "commonError": "Ignoring travel costs and local substitution",
       "feedback": "The relevant geographic market depends on where patients can realistically turn for alternatives.",
-      "aHash": "791ef5a68f0a23d0fa7291c6e158046f8597fc7a6f1600e616cac673ea83d4b4"
+      "aHash": "791ef5a68f0a23d0fa7291c6e158046f8597fc7a6f1600e616cac673ea83d4b4",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 150,
       "sourceGame": "marketSignal",
       "q": "A company defines its market as 'premium strawberry yogurt in six-ounce cups.' What is the main danger of such a narrow definition?",
       "options": [
-        "It will always include too many rivals even when consumers would never switch products",
+        "Any narrower label necessarily gives a more accurate market",
         "It may exclude products consumers view as substitutes",
-        "It prevents the firm from measuring price",
-        "It makes supply perfectly vertical"
+        "Different packaging guarantees customers never substitute",
+        "A firm’s own product name is sufficient to define all competition"
       ],
       "tag": "overly_narrow_market",
       "type": "application",
@@ -3246,117 +3345,8 @@ const questionBanks = {
       "repairSkill": "market_definition",
       "commonError": "Accepting a product label as the economic market",
       "feedback": "Consumers may switch to other yogurt sizes, flavors, or snack products when price changes.",
-      "aHash": "a9caabbcdb1a54c0c7b168ba77532addaf5a56f415dd32751ed95a551102800b"
-    },
-    {
-      "id": 151,
-      "sourceGame": "marketSignal",
-      "q": "Why should a firm define the market before interpreting a demand shift?",
-      "options": [
-        "Market definition fixes the equilibrium price permanently and prevents future curve shifts",
-        "The relevant buyers, sellers, and substitutes determine which curve is being analyzed",
-        "Demand can shift only in national markets",
-        "Supply and demand work without identifying the product"
-      ],
-      "tag": "market_definition_first",
-      "type": "conceptual",
-      "objective": "LO8.1",
-      "difficulty": "medium",
-      "conceptCluster": "market_structure",
-      "primarySkill": "market_definition",
-      "secondarySkills": [],
-      "repairSkill": "market_definition",
-      "commonError": "Applying supply and demand to an undefined collection of transactions",
-      "feedback": "Curve shifts are meaningful only after the product, customers, sellers, and geographic scope are identified.",
-      "aHash": "1435af02ccdfcfd3f41108f6c7d21d66e336495d3f7e3ea959de1f66f64b0e7a"
-    },
-    {
-      "id": 152,
-      "sourceGame": "marketSignal",
-      "q": "The price of a good rises while buyer income and preferences remain unchanged. What does the law of demand predict?",
-      "options": [
-        "A rightward shift of demand",
-        "A leftward shift of supply",
-        "A movement upward along the demand curve to a lower quantity demanded",
-        "A higher quantity demanded at every price because buyers respond positively to higher prices"
-      ],
-      "tag": "movement_along_demand",
-      "type": "application",
-      "objective": "LO8.2",
-      "difficulty": "medium",
-      "conceptCluster": "market_behavior",
-      "primarySkill": "buyer_behavior",
-      "secondarySkills": [],
-      "repairSkill": "buyer_behavior",
-      "commonError": "Calling a price-induced movement a shift in demand",
-      "feedback": "A change in the good's own price causes movement along the existing demand curve.",
-      "aHash": "8530d51191c2d0e5a89337cd5ffec0903d475458b3a2a3d300c6774da04eb5b2"
-    },
-    {
-      "id": 153,
-      "sourceGame": "marketSignal",
-      "q": "The market price rises and production technology is unchanged. What does the law of supply predict?",
-      "options": [
-        "A higher quantity supplied along the existing supply curve",
-        "A leftward shift of demand",
-        "A lower quantity supplied",
-        "A rightward shift of supply caused solely by a higher market price rather than lower costs"
-      ],
-      "tag": "movement_along_supply",
-      "type": "application",
-      "objective": "LO8.2",
-      "difficulty": "medium",
-      "conceptCluster": "market_behavior",
-      "primarySkill": "seller_behavior",
-      "secondarySkills": [],
-      "repairSkill": "seller_behavior",
-      "commonError": "Calling a price-induced movement a shift in supply",
-      "feedback": "A change in the good's own price changes quantity supplied along the existing curve.",
-      "aHash": "19ef675e2ba1f3ccea3b8307aa24d54c8949c2c113765b6cf9607d4d7742429b"
-    },
-    {
-      "id": 154,
-      "sourceGame": "marketSignal",
-      "q": "A buyer is willing to pay at most $25 for a product, and the market price is $22. What is the buyer's consumer surplus if the purchase occurs?",
-      "options": [
-        "$3",
-        "$22",
-        "$25",
-        "$47"
-      ],
-      "tag": "buyer_reservation_price",
-      "type": "calculation",
-      "objective": "LO8.2",
-      "difficulty": "medium",
-      "conceptCluster": "market_behavior",
-      "primarySkill": "buyer_behavior",
-      "secondarySkills": [],
-      "repairSkill": "buyer_behavior",
-      "commonError": "Confusing willingness to pay with the amount paid",
-      "feedback": "Consumer surplus is willingness to pay minus price: $25 - $22 = $3.",
-      "aHash": "fe5fc5a67987b8b69b9e7ad38544df2a0b96b32370a14b679e9c3675dfb34643"
-    },
-    {
-      "id": 155,
-      "sourceGame": "marketSignal",
-      "q": "A competitive seller's minimum acceptable price for one unit is $14, and the market price is $18. What is the seller's producer surplus on that unit?",
-      "options": [
-        "$14",
-        "$18",
-        "$4",
-        "$32"
-      ],
-      "tag": "seller_reservation_cost",
-      "type": "calculation",
-      "objective": "LO8.2",
-      "difficulty": "medium",
-      "conceptCluster": "market_behavior",
-      "primarySkill": "seller_behavior",
-      "secondarySkills": [],
-      "repairSkill": "seller_behavior",
-      "commonError": "Subtracting price from cost or treating revenue as surplus",
-      "feedback": "Producer surplus on the unit is price minus minimum acceptable cost: $18 - $14 = $4.",
-      "aHash": "8237f5502e21c9b92304abaa68f4ad1e2814264cfc72663f178e31089e0d7f9b"
+      "aHash": "a9caabbcdb1a54c0c7b168ba77532addaf5a56f415dd32751ed95a551102800b",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 156,
@@ -3375,10 +3365,11 @@ const questionBanks = {
       "conceptCluster": "market_equilibrium",
       "primarySkill": "equilibrium_calculation",
       "secondarySkills": [],
-      "repairSkill": "equilibrium_calculation",
+      "repairSkill": "equilibrium_shortage_surplus",
       "commonError": "Setting price equal to quantity or solving only one equation",
       "feedback": "Set demand equal to supply: 180 - 6P = 30 + 4P, so P = 15 and Q = 90.",
-      "aHash": "4e7f049e4cd469911f5d07fede404094725d958f2f56e4775ba9cc90b79f8e23"
+      "aHash": "4e7f049e4cd469911f5d07fede404094725d958f2f56e4775ba9cc90b79f8e23",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 157,
@@ -3390,87 +3381,18 @@ const questionBanks = {
         "A shortage of 75 units",
         "A surplus of 40 units"
       ],
-      "tag": "shortage_equations",
+      "tag": "remaining_shortage_after_supply_increase",
       "type": "calculation",
       "objective": "LO8.3",
       "difficulty": "medium",
       "conceptCluster": "market_equilibrium",
       "primarySkill": "shortage_surplus_calculation",
       "secondarySkills": [],
-      "repairSkill": "shortage_surplus_calculation",
+      "repairSkill": "equilibrium_shortage_surplus",
       "commonError": "confuses_supply_increase_with_surplus",
       "feedback": "Restored delivery raises quantity supplied to 135. Demand remains 170, so the shortage is 35 units. The delivery improvement reduces the shortage without eliminating it.",
-      "aHash": "0c817ee7de474588f0a3d0f20eefb70a7331637d8b78a506ed7dadaebd1027d6"
-    },
-    {
-      "id": 158,
-      "sourceGame": "marketSignal",
-      "q": "At a price of $30, buyers demand 70 units and sellers supply 95 units. What market condition exists?",
-      "options": [
-        "A shortage of 25 units",
-        "A surplus of 25 units",
-        "A surplus of 165 units",
-        "Equilibrium at 82.5 units"
-      ],
-      "tag": "surplus_from_quantities",
-      "type": "calculation",
-      "objective": "LO8.3",
-      "difficulty": "medium",
-      "conceptCluster": "market_equilibrium",
-      "primarySkill": "shortage_surplus_calculation",
-      "secondarySkills": [],
-      "repairSkill": "shortage_surplus_calculation",
-      "commonError": "Adding quantities instead of finding excess supply",
-      "feedback": "Quantity supplied exceeds quantity demanded by 25 units.",
-      "aHash": "f602b78ea0d083a641206d996fd818ff3efcc9838f7aa4a206cafbafad904664"
-    },
-    {
-      "id": 159,
-      "sourceGame": "marketSignal",
-      "q": "Refer to the graph. The market is on S0 and D0. What are the equilibrium labels?",
-      "options": [
-        "P0 and QC",
-        "P1 and QA",
-        "P2 and QB",
-        "P1 and QD"
-      ],
-      "tag": "symbolic_equilibrium_reading",
-      "type": "graph",
-      "objective": "LO8.3",
-      "difficulty": "medium",
-      "conceptCluster": "market_equilibrium",
-      "primarySkill": "graph_equilibrium_reading",
-      "secondarySkills": [],
-      "repairSkill": "graph_equilibrium_reading",
-      "commonError": "Matching a price from one intersection with a quantity from another",
-      "feedback": "The S0-D0 intersection is marked by price P1 and quantity QA.",
-      "image": "demand_supply.png",
-      "graphRequired": true,
-      "aHash": "04113ad4b7082a8722c84eccda99bb6b0db04dc8bbcd43ec5a1ec3adb5a1dfa2"
-    },
-    {
-      "id": 160,
-      "sourceGame": "marketSignal",
-      "q": "Refer to the graph. Which price and quantity occur where S2 intersects D1?",
-      "options": [
-        "$48 and 72 units",
-        "$60 and 48 units",
-        "$72 and 72 units",
-        "$60 and 96 units"
-      ],
-      "tag": "numeric_equilibrium_reading",
-      "type": "graph",
-      "objective": "LO8.3",
-      "difficulty": "medium",
-      "conceptCluster": "medium_marketSignal_graph_equilibrium_reading",
-      "primarySkill": "graph_equilibrium_reading",
-      "secondarySkills": [],
-      "repairSkill": "graph_equilibrium_reading",
-      "commonError": "Reading values from the wrong pair of curves",
-      "feedback": "S2 and D1 intersect at price $60 and quantity 48.",
-      "image": "market_curves_independent.svg",
-      "graphRequired": true,
-      "aHash": "b7e6e3ce145cfba77117d08ca10b4f56d6560b5ab572a8bdaf4d3a4e43bb343c"
+      "aHash": "0c817ee7de474588f0a3d0f20eefb70a7331637d8b78a506ed7dadaebd1027d6",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 161,
@@ -3491,21 +3413,22 @@ const questionBanks = {
       "secondarySkills": [
         "graph_equilibrium_reading"
       ],
-      "repairSkill": "shortage_surplus_calculation",
+      "repairSkill": "equilibrium_shortage_surplus",
       "commonError": "Using equilibrium quantities rather than quantities at the controlled price",
       "feedback": "At P=48, D1 gives Qd=72 and S2 gives Qs=24. The shortage is 72-24=48 units.",
       "image": "market_curves_independent.svg",
       "graphRequired": true,
-      "aHash": "22378163dd57f31f264b621af3fbfe78ef49660081b63c3dd37dea3f48739a23"
+      "aHash": "22378163dd57f31f264b621af3fbfe78ef49660081b63c3dd37dea3f48739a23",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 162,
       "sourceGame": "marketSignal",
       "q": "Refer to the graph. The market begins on S0 and D0. Consumer income rises for a normal good, shifting demand to D1. What is the new short-run equilibrium?",
       "options": [
-        "P0 and QC",
-        "P1 and QA",
-        "P1 and QD",
+        "P2 and QD",
+        "P2 and QA",
+        "P2 and QC",
         "P2 and QB"
       ],
       "tag": "single_demand_shift_graph",
@@ -3515,21 +3438,22 @@ const questionBanks = {
       "conceptCluster": "comparative_statics",
       "primarySkill": "demand_shift_analysis",
       "secondarySkills": [],
-      "repairSkill": "demand_shift_analysis",
+      "repairSkill": "demand_supply_shifts",
       "commonError": "Moving the supply curve or using the long-run adjustment without being asked",
       "feedback": "With S0 unchanged and demand at D1, equilibrium moves to P2 and QB.",
       "image": "demand_supply.png",
       "graphRequired": true,
-      "aHash": "8d81fd2c3da360e0e708777afaba6bbf2ee66e5c0d6943d4e596540a44e417c3"
+      "aHash": "8d81fd2c3da360e0e708777afaba6bbf2ee66e5c0d6943d4e596540a44e417c3",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 163,
       "sourceGame": "marketSignal",
       "q": "Refer to the graph. The market starts at S2 and D1. A fall in input prices shifts supply to S1 while demand stays at D1. What is the new equilibrium?",
       "options": [
-        "$60 and 48 units",
-        "$60 and 96 units",
-        "$72 and 72 units",
+        "$36 and 96 units",
+        "$48 and 48 units",
+        "$36 and 72 units",
         "$48 and 72 units"
       ],
       "tag": "supply_shift_graph",
@@ -3539,22 +3463,23 @@ const questionBanks = {
       "conceptCluster": "medium_marketSignal_supply_shift_analysis",
       "primarySkill": "supply_shift_analysis",
       "secondarySkills": [],
-      "repairSkill": "supply_shift_analysis",
+      "repairSkill": "demand_supply_shifts",
       "commonError": "Shifting demand when the shock changes production cost",
       "feedback": "The supply increase moves equilibrium from S2-D1 to S1-D1: price $48, quantity 72.",
       "image": "market_curves_independent.svg",
       "graphRequired": true,
-      "aHash": "859fc440afca0364bf4995226ff0e0548c5831225e93b09dcc0b23a58063c2fb"
+      "aHash": "859fc440afca0364bf4995226ff0e0548c5831225e93b09dcc0b23a58063c2fb",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 164,
       "sourceGame": "marketSignal",
       "q": "Refer to the graph. The market starts at S2 and D1. Demand rises to D2 while supply remains S2. What is the new equilibrium?",
       "options": [
-        "$48 and 72 units",
+        "$72 and 96 units",
         "$72 and 72 units",
-        "$60 and 48 units",
-        "$60 and 96 units"
+        "$84 and 72 units",
+        "$84 and 96 units"
       ],
       "tag": "demand_shift_numeric_graph",
       "type": "graph",
@@ -3563,12 +3488,13 @@ const questionBanks = {
       "conceptCluster": "medium_marketSignal_demand_shift_analysis",
       "primarySkill": "demand_shift_analysis",
       "secondarySkills": [],
-      "repairSkill": "demand_shift_analysis",
+      "repairSkill": "simultaneous_market_changes",
       "commonError": "Reading the intersection with the shifted supply curve",
       "feedback": "The S2-D2 intersection is price $72 and quantity 72.",
       "image": "market_curves_independent.svg",
       "graphRequired": true,
-      "aHash": "b252583dee97de3971d0b43d3fa26ecd48109f66bf37014e042158898c341bf9"
+      "aHash": "b252583dee97de3971d0b43d3fa26ecd48109f66bf37014e042158898c341bf9",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 165,
@@ -3576,9 +3502,9 @@ const questionBanks = {
       "q": "Refer to the graph. The market starts at S2 and D1. Demand rises to D2 and supply rises to S1. What happens?",
       "options": [
         "Quantity rises to 96 while price remains $60",
-        "Price rises to $72 while quantity stays 48",
-        "Price falls to $48 while quantity stays 48",
-        "Quantity falls to 24 while price remains $60"
+        "Quantity rises to 72 and price rises to $72",
+        "Quantity rises to 72 and price falls to $48",
+        "Quantity rises to 96 and price rises to $72"
       ],
       "tag": "simultaneous_increases_graph",
       "type": "graph",
@@ -3587,12 +3513,13 @@ const questionBanks = {
       "conceptCluster": "medium_marketSignal_simultaneous_shift_analysis",
       "primarySkill": "simultaneous_shift_analysis",
       "secondarySkills": [],
-      "repairSkill": "simultaneous_shift_analysis",
+      "repairSkill": "simultaneous_market_changes",
       "commonError": "Analyzing only one shift or assuming both price and quantity must change",
       "feedback": "The market moves from S2-D1 to S1-D2; quantity doubles from 48 to 96 while price stays $60.",
       "image": "market_curves_independent.svg",
       "graphRequired": true,
-      "aHash": "357706c390f1a3edc2e626f3be696cec68c9eb0f3bbeca55b063732945896bed"
+      "aHash": "357706c390f1a3edc2e626f3be696cec68c9eb0f3bbeca55b063732945896bed",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 166,
@@ -3611,10 +3538,11 @@ const questionBanks = {
       "conceptCluster": "comparative_statics",
       "primarySkill": "simultaneous_shift_analysis",
       "secondarySkills": [],
-      "repairSkill": "simultaneous_shift_analysis",
+      "repairSkill": "simultaneous_market_changes",
       "commonError": "Claiming a definite quantity change when the shifts push quantity in opposite directions",
       "feedback": "Both shifts raise price, while their effects on quantity conflict.",
-      "aHash": "024a79b3c8357790bf59c62806eb1e0ca1d1c0fc65dd45faf728dcf2d7f293b7"
+      "aHash": "024a79b3c8357790bf59c62806eb1e0ca1d1c0fc65dd45faf728dcf2d7f293b7",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 167,
@@ -3633,15 +3561,16 @@ const questionBanks = {
       "conceptCluster": "comparative_statics",
       "primarySkill": "simultaneous_shift_analysis",
       "secondarySkills": [],
-      "repairSkill": "simultaneous_shift_analysis",
+      "repairSkill": "simultaneous_market_changes",
       "commonError": "Treating both shocks as demand changes",
       "feedback": "A complement's higher price reduces demand and the innovation increases supply; both lower price, but quantity effects conflict.",
-      "aHash": "c127e07813bfdf9ba5de1a474671cc6a66da29362d50f9663b5d418546a9808e"
+      "aHash": "c127e07813bfdf9ba5de1a474671cc6a66da29362d50f9663b5d418546a9808e",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 168,
       "sourceGame": "marketSignal",
-      "q": "Consumer income rises for a normal good at the same time a per-unit tax is imposed on sellers. What is certain?",
+      "q": "Consumer income rises for a normal good at the same time a per-unit tax is imposed on sellers. With ordinary downward demand and upward supply, what is certain about the price buyers pay?",
       "options": [
         "The equilibrium quantity rises",
         "The equilibrium quantity falls",
@@ -3655,20 +3584,21 @@ const questionBanks = {
       "conceptCluster": "comparative_statics",
       "primarySkill": "simultaneous_shift_analysis",
       "secondarySkills": [],
-      "repairSkill": "simultaneous_shift_analysis",
+      "repairSkill": "market_interventions",
       "commonError": "Assuming the quantity effect is certain when demand and supply push it in opposite directions",
-      "feedback": "Higher demand and lower supply both raise price; the quantity effect depends on the relative shifts.",
-      "aHash": "5b75c86ef84579461e51bd715e1fada7263c02ceb273249a7bce06f35b38deee"
+      "feedback": "Demand rises while the seller tax raises the supply price paid by buyers. Both raise the buyer price; net-of-tax seller receipts and the quantity effect need not rise.",
+      "aHash": "5b75c86ef84579461e51bd715e1fada7263c02ceb273249a7bce06f35b38deee",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 169,
       "sourceGame": "marketSignal",
-      "q": "Refer to the graph. Starting at point A in panel (b), demand increases from D0 to D1. What is the immediate market outcome before entry occurs?",
+      "q": "Refer to the graph. Starting at point A in the right panel, demand increases from D0 to D1. What is the immediate market outcome before entry occurs?",
       "options": [
-        "Point B at price P2",
-        "Point C at price P0",
-        "Point D at price P1",
-        "A return to point A with no price change"
+        "Point B",
+        "Point C",
+        "Point D",
+        "Point A"
       ],
       "tag": "short_run_market_adjustment",
       "type": "graph",
@@ -3677,83 +3607,18 @@ const questionBanks = {
       "conceptCluster": "comparative_statics",
       "primarySkill": "short_run_market_adjustment",
       "secondarySkills": [],
-      "repairSkill": "short_run_market_adjustment",
+      "repairSkill": "demand_supply_shifts",
       "commonError": "Jumping directly to the long-run equilibrium and skipping the short-run price increase",
       "feedback": "With supply initially fixed at S0, the demand increase moves the market from A to B.",
       "image": "long_run_competition.png",
       "graphRequired": true,
-      "aHash": "6a585be1a8db4bb127c52987d75f18ae07502e0a72478bba9a212dab441dbe1c"
-    },
-    {
-      "id": 170,
-      "sourceGame": "marketSignal",
-      "q": "A competitive firm sells 500 units at $22. Its average total cost is $19. What is its economic profit?",
-      "options": [
-        "$1,500",
-        "$3",
-        "$9,500",
-        "$11,000"
-      ],
-      "tag": "competitive_profit",
-      "type": "calculation",
-      "objective": "LO9.1",
-      "difficulty": "medium",
-      "conceptCluster": "competitive_returns",
-      "primarySkill": "competitive_profit_calculation",
-      "secondarySkills": [],
-      "repairSkill": "competitive_profit_calculation",
-      "commonError": "Using price minus ATC without multiplying by output",
-      "feedback": "Profit is ($22 - $19) × 500 = $1,500.",
-      "aHash": "f479335aedf0d3a8139c1cea6585d38074eaafd812534da4bc42b477645ca0a9"
-    },
-    {
-      "id": 171,
-      "sourceGame": "marketSignal",
-      "q": "In long-run competitive equilibrium, which condition is expected for a typical firm?",
-      "options": [
-        "Price remains above average total cost forever because existing firms can block all entry",
-        "Price equals fixed cost",
-        "Marginal revenue is always zero",
-        "Price equals minimum average total cost and economic profit is zero"
-      ],
-      "tag": "long_run_competitive_return",
-      "type": "conceptual",
-      "objective": "LO9.1",
-      "difficulty": "medium",
-      "conceptCluster": "competitive_returns",
-      "primarySkill": "competitive_return_interpretation",
-      "secondarySkills": [],
-      "repairSkill": "competitive_return_interpretation",
-      "commonError": "Confusing zero economic profit with zero accounting profit or zero revenue",
-      "feedback": "Entry and exit tend to push price toward minimum ATC, leaving a normal return.",
-      "aHash": "7ae28d25663f1f07628c209dee82a5ec9b098b9280167be61ee8a2a28a4ae985"
-    },
-    {
-      "id": 172,
-      "sourceGame": "marketSignal",
-      "q": "A competitive industry earns unusually high rates of return. What market response should those returns attract when entry is possible?",
-      "options": [
-        "Permanent exit by profitable firms",
-        "A guaranteed fall in demand",
-        "New investment and entry",
-        "An immediate legal monopoly"
-      ],
-      "tag": "returns_attract_entry",
-      "type": "application",
-      "objective": "LO9.1",
-      "difficulty": "medium",
-      "conceptCluster": "competitive_returns",
-      "primarySkill": "entry_response",
-      "secondarySkills": [],
-      "repairSkill": "entry_response",
-      "commonError": "Treating high returns as a reason for capital to leave",
-      "feedback": "Capital is drawn toward returns above the competitive norm.",
-      "aHash": "f3b334da289451e46b862fa90b674f356566a109c54b47e37511f60c6b0f1156"
+      "aHash": "2921798e8321b2d9ec891c4a033f0599528027db652446ed8fcb30f94a3d4107",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 173,
       "sourceGame": "marketSignal",
-      "q": "Refer to the graph. The market moves from A to B after demand increases. What does the price P2 imply for the representative firm in panel (a)?",
+      "q": "Refer to the graph. The market moves from A to B after demand increases. What does the price P2 imply for the representative firm in the left panel?",
       "options": [
         "The firm produces Q1 and earns zero economic profit",
         "The firm shuts down at Q0",
@@ -3767,22 +3632,23 @@ const questionBanks = {
       "conceptCluster": "competitive_adjustment",
       "primarySkill": "mean_reversion",
       "secondarySkills": [],
-      "repairSkill": "mean_reversion",
+      "repairSkill": "mean_reversion_entry_exit",
       "commonError": "Reading the market price without carrying it into the firm's cost diagram",
       "feedback": "At P2, the firm chooses Q2 where price equals marginal cost, and price exceeds ATC.",
       "image": "long_run_competition.png",
       "graphRequired": true,
-      "aHash": "8bf81f1b66ed4fcbf72fd200738ff2f3e3b336808fb0280863547d43a60c465a"
+      "aHash": "8bf81f1b66ed4fcbf72fd200738ff2f3e3b336808fb0280863547d43a60c465a",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 174,
       "sourceGame": "marketSignal",
       "q": "Refer to the graph. Why does the market move from point B toward point D?",
       "options": [
-        "Economic profit attracts entry, shifting market supply from S0 to S1",
-        "Losses force firms to exit and reduce supply",
-        "Demand falls back from D1 to D0 after buyers permanently lose interest in the product",
-        "The representative firm raises the market price"
+        "Economic profit attracts entry, shifting supply from S0 to S1",
+        "Economic losses cause exit, shifting supply from S1 to S0",
+        "Weaker demand shifts D1 back to D0 with supply fixed",
+        "Higher demand shifts D0 to D1 with supply fixed"
       ],
       "tag": "entry_mean_reversion_graph",
       "type": "graph",
@@ -3791,122 +3657,13 @@ const questionBanks = {
       "conceptCluster": "competitive_adjustment",
       "primarySkill": "mean_reversion",
       "secondarySkills": [],
-      "repairSkill": "mean_reversion",
+      "repairSkill": "mean_reversion_entry_exit",
       "commonError": "Attributing the long-run adjustment to a demand reversal rather than entry",
       "feedback": "Profit at B attracts entry; increased industry supply returns price to P1 at D.",
       "image": "long_run_competition.png",
       "graphRequired": true,
-      "aHash": "57cb65b151fa5d8f3041b1b507c738aee963b22364897760fb846f187fcd7e98"
-    },
-    {
-      "id": 175,
-      "sourceGame": "marketSignal",
-      "q": "A group of firms reports profits far above the industry norm this year. With no durable barrier to entry, what does mean reversion predict?",
-      "options": [
-        "Profits must rise at the same rate forever because current performance predicts all future returns",
-        "Future profits will tend to move back toward normal levels",
-        "The firms will automatically become monopolies",
-        "The industry will permanently lose all competitors"
-      ],
-      "tag": "profit_mean_reversion",
-      "type": "application",
-      "objective": "LO9.2",
-      "difficulty": "medium",
-      "conceptCluster": "competitive_adjustment",
-      "primarySkill": "mean_reversion",
-      "secondarySkills": [],
-      "repairSkill": "mean_reversion",
-      "commonError": "Extrapolating an unusually high return indefinitely",
-      "feedback": "Entry, imitation, and competitive responses tend to erode unusually high profits.",
-      "aHash": "392f60fd4bc0363a0a4684c9288ff058089a5daff46a112582580b77a720ed4e"
-    },
-    {
-      "id": 176,
-      "sourceGame": "marketSignal",
-      "q": "Two jobs require the same skill, but one involves dangerous overnight work and pays more. What best explains the pay difference?",
-      "options": [
-        "A risk-free arbitrage gain available to every worker in the labor market",
-        "A compensating wage differential",
-        "A monopoly price markup",
-        "A difference in sunk cost"
-      ],
-      "tag": "compensating_wage",
-      "type": "application",
-      "objective": "LO9.3",
-      "difficulty": "medium",
-      "conceptCluster": "risk_and_returns",
-      "primarySkill": "compensating_wage_differential",
-      "secondarySkills": [],
-      "repairSkill": "compensating_wage_differential",
-      "commonError": "Attributing every wage difference to worker productivity",
-      "feedback": "The extra pay compensates workers for undesirable job conditions.",
-      "aHash": "a3e60c1c04ab4ccfad9d5ac6065500661309a4f89d096d54726b93997a6835e1"
-    },
-    {
-      "id": 177,
-      "sourceGame": "marketSignal",
-      "q": "Two investments have the same expected cash flow, but one has much more uncertainty. What return difference would investors generally require?",
-      "options": [
-        "A lower return on the riskier investment",
-        "Identical returns regardless of risk because expected cash flows are the same",
-        "A wage premium paid to the investor",
-        "A compensating risk differential on the riskier investment"
-      ],
-      "tag": "compensating_risk",
-      "type": "application",
-      "objective": "LO9.3",
-      "difficulty": "medium",
-      "conceptCluster": "risk_and_returns",
-      "primarySkill": "compensating_risk_differential",
-      "secondarySkills": [],
-      "repairSkill": "compensating_risk_differential",
-      "commonError": "Assuming risk does not affect required returns",
-      "feedback": "Investors generally require additional expected return to bear greater risk.",
-      "aHash": "fa1908f2db6b63a6728e3ec2992957a93ce1f50c5580e1a0151d78c3d4ca7bab"
-    },
-    {
-      "id": 178,
-      "sourceGame": "marketSignal",
-      "q": "Which statement correctly distinguishes the two differentials?",
-      "options": [
-        "Both apply only to hourly workers",
-        "Both measure monopoly profit",
-        "A wage differential measures investment volatility, while a risk differential measures unpleasant or dangerous working conditions",
-        "A wage differential compensates for job conditions; a risk differential compensates for investment uncertainty"
-      ],
-      "tag": "differentiate_compensating_differentials",
-      "type": "conceptual",
-      "objective": "LO9.3",
-      "difficulty": "medium",
-      "conceptCluster": "risk_and_returns",
-      "primarySkill": "compensating_differential_comparison",
-      "secondarySkills": [],
-      "repairSkill": "compensating_differential_comparison",
-      "commonError": "Reversing labor-market and asset-market compensation",
-      "feedback": "The wage differential applies to job attributes, while the risk differential applies to uncertain returns.",
-      "aHash": "d0ec4ae302562a1ad5436a59043706d2b9e2844d4bb4318ef2c2f46c65431c29"
-    },
-    {
-      "id": 179,
-      "sourceGame": "marketSignal",
-      "q": "A risky bond yields 8% while a comparable safe bond yields 5%. What is the risky bond's expected risk premium?",
-      "options": [
-        "3 percentage points",
-        "5 percentage points",
-        "8 percentage points",
-        "13 percentage points"
-      ],
-      "tag": "risk_premium_calculation",
-      "type": "calculation",
-      "objective": "LO9.4",
-      "difficulty": "medium",
-      "conceptCluster": "risk_and_returns",
-      "primarySkill": "risk_premium_calculation",
-      "secondarySkills": [],
-      "repairSkill": "risk_premium_calculation",
-      "commonError": "Adding the returns instead of subtracting the safe benchmark",
-      "feedback": "The premium is 8% - 5% = 3 percentage points.",
-      "aHash": "a1a5535ffb4a632c0530aed21a4ff518277f2de6570b9172a4daa7b4f02708e6"
+      "aHash": "51e3eb3025ed9a715d87c663af5dfc0ba34bf2aeddd78a49bdd566b4266feed4",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 180,
@@ -3925,98 +3682,11 @@ const questionBanks = {
       "conceptCluster": "risk_and_returns",
       "primarySkill": "risk_premium_calculation",
       "secondarySkills": [],
-      "repairSkill": "risk_premium_calculation",
+      "repairSkill": "risk_premium_portfolio",
       "commonError": "Ignoring the change in the safe alternative",
       "feedback": "The risky asset's excess return shrinks because the safe benchmark rises.",
-      "aHash": "fd89c829c62814fb5d2e7012954ac29e40b2ba9dc0ad20e1772a3794b68e83d6"
-    },
-    {
-      "id": 181,
-      "sourceGame": "marketSignal",
-      "q": "An asset becomes riskier while its expected return and the safe return remain unchanged. What should investors tend to do?",
-      "options": [
-        "Buy more because greater risk alone raises the asset's expected value even when returns do not change",
-        "Treat the asset as safer",
-        "Shift away from the asset because its premium no longer compensates as well for risk",
-        "Ignore the change because expected return is unchanged"
-      ],
-      "tag": "risk_reallocation",
-      "type": "application",
-      "objective": "LO9.4",
-      "difficulty": "medium",
-      "conceptCluster": "risk_and_returns",
-      "primarySkill": "portfolio_reallocation",
-      "secondarySkills": [],
-      "repairSkill": "portfolio_reallocation",
-      "commonError": "Looking only at expected return and ignoring the amount of risk",
-      "feedback": "The same premium is less attractive when the asset carries more risk.",
-      "aHash": "1b8b9f3409b7cb8a525e6029011c135dc9a9502f981926e3f6334167870d6b67"
-    },
-    {
-      "id": 182,
-      "sourceGame": "marketSignal",
-      "q": "A drug patent expires and generic producers enter. What is the most likely effect on the original firm's monopoly profit?",
-      "options": [
-        "It falls as substitutes expand and price competition increases",
-        "It rises because entry strengthens the expired patent and restores exclusive legal protection",
-        "It is guaranteed to remain unchanged",
-        "It becomes a sunk cost"
-      ],
-      "tag": "patent_expiration_entry",
-      "type": "application",
-      "objective": "LO9.5",
-      "difficulty": "medium",
-      "conceptCluster": "profit_erosion",
-      "primarySkill": "entry_and_imitation",
-      "secondarySkills": [],
-      "repairSkill": "entry_and_imitation",
-      "commonError": "Assuming prior monopoly profit remains protected after the barrier expires",
-      "feedback": "Generic entry gives buyers alternatives and erodes the incumbent's price-cost margin.",
-      "aHash": "c3392d4a82e831b1b929defcbc60f582158666810425b8e028c1c79d956f2d75"
-    },
-    {
-      "id": 183,
-      "sourceGame": "marketSignal",
-      "q": "A rival copies the useful features of a successful app and offers them at a lower price. What mechanism is eroding the original firm's profit?",
-      "options": [
-        "Imitation",
-        "Compounding",
-        "A compensating wage differential",
-        "Random assignment"
-      ],
-      "tag": "imitation_profit_erosion",
-      "type": "application",
-      "objective": "LO9.5",
-      "difficulty": "medium",
-      "conceptCluster": "profit_erosion",
-      "primarySkill": "entry_and_imitation",
-      "secondarySkills": [],
-      "repairSkill": "entry_and_imitation",
-      "commonError": "Treating a successful innovation as permanently exclusive",
-      "feedback": "Imitation reduces differentiation and gives consumers another option.",
-      "aHash": "f921321aaedb0bb53398796772f843dc4a5963edfba778ee3a6bd9f592e21795"
-    },
-    {
-      "id": 184,
-      "sourceGame": "marketSignal",
-      "q": "Which condition makes unusually high profits more likely to persist?",
-      "options": [
-        "Free entry and easy copying by rivals with immediate access to the same technology",
-        "A durable barrier that makes entry or imitation difficult",
-        "Many close substitutes",
-        "Public knowledge of the production method"
-      ],
-      "tag": "durable_profit_barrier",
-      "type": "conceptual",
-      "objective": "LO9.5",
-      "difficulty": "medium",
-      "conceptCluster": "profit_erosion",
-      "primarySkill": "barriers_to_entry",
-      "secondarySkills": [],
-      "repairSkill": "barriers_to_entry",
-      "commonError": "Choosing a condition that speeds competitive erosion",
-      "feedback": "Profits persist longer when rivals cannot readily enter or imitate.",
-      "aHash": "c211b8557bafdb8e4854382b557995ae0a8bd12485da3823370386e1dec99db3"
+      "aHash": "fd89c829c62814fb5d2e7012954ac29e40b2ba9dc0ad20e1772a3794b68e83d6",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 185,
@@ -4035,10 +3705,11 @@ const questionBanks = {
       "conceptCluster": "medium_marketSignal_monopoly_marginal_revenue",
       "primarySkill": "monopoly_marginal_revenue",
       "secondarySkills": [],
-      "repairSkill": "monopoly_marginal_revenue",
+      "repairSkill": "monopoly_output_profit",
       "commonError": "Using the new price as marginal revenue and ignoring the price cut on earlier units",
       "feedback": "Total revenue rises from $1,000 to $1,008, so marginal revenue is $8.",
-      "aHash": "5282dcb73b7e25acd120ba7db666af3861553abaa9cfa5968b124049b9ed1d94"
+      "aHash": "5282dcb73b7e25acd120ba7db666af3861553abaa9cfa5968b124049b9ed1d94",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 186,
@@ -4057,67 +3728,24 @@ const questionBanks = {
       "conceptCluster": "medium_marketSignal_monopoly_profit_calculation",
       "primarySkill": "monopoly_profit_calculation",
       "secondarySkills": [],
-      "repairSkill": "monopoly_profit_calculation",
+      "repairSkill": "monopoly_output_profit",
       "commonError": "Ignoring fixed cost or treating price as profit per unit",
       "feedback": "Profit is ($30 - $12)×200 - $1,000 = $2,600.",
-      "aHash": "e6f0c1693b63cda1c760315651ee1775d54514ebd48644c567afa16e1d773432"
-    },
-    {
-      "id": 187,
-      "sourceGame": "marketSignal",
-      "q": "Compared with competition, why does monopoly create deadweight loss?",
-      "options": [
-        "The monopolist produces every mutually beneficial unit",
-        "Consumer surplus always becomes zero",
-        "Some units valued above marginal cost are not produced",
-        "Fixed cost is counted twice"
-      ],
-      "tag": "monopoly_deadweight_loss",
-      "type": "conceptual",
-      "objective": "LO9.6",
-      "difficulty": "medium",
-      "conceptCluster": "medium_marketSignal_monopoly_market_effects",
-      "primarySkill": "monopoly_market_effects",
-      "secondarySkills": [],
-      "repairSkill": "monopoly_market_effects",
-      "commonError": "Treating every reduction in consumer surplus as a pure transfer",
-      "feedback": "By restricting output below the competitive level, monopoly prevents some beneficial trades.",
-      "aHash": "3054a61b4de551338be70f6ff20c4e2cafcf2e8aab781263a52db33268dfe3d7"
-    },
-    {
-      "id": 190,
-      "sourceGame": "marketSignal",
-      "q": "A manufacturer spends $80,000 adapting its line for one retailer. After the adaptation, the retailer demands a lower price because the equipment has little value elsewhere. What is the best diagnosis?",
-      "options": [
-        "Economies of scope from sharing production assets",
-        "Post-investment hold-up caused by a specific investment",
-        "Diminishing marginal returns from a fixed input",
-        "A fixed-cost fallacy because all future orders are unprofitable"
-      ],
-      "tag": "post_investment_holdup",
-      "type": "application",
-      "objective": "LO5.5",
-      "difficulty": "medium",
-      "conceptCluster": "medium_marketSignal_post_investment_holdup",
-      "primarySkill": "post_investment_holdup",
-      "secondarySkills": [],
-      "repairSkill": "post_investment_holdup",
-      "commonError": "misses_renegotiation_risk",
-      "feedback": "The investment is specific to one trading relationship. After it is sunk, the retailer can pressure the manufacturer because the outside option is weak.",
-      "aHash": "318b16f726205ce17162be97fdfdf2f0d18039468d09e5b45d86278e3f307bd9"
+      "aHash": "e6f0c1693b63cda1c760315651ee1775d54514ebd48644c567afa16e1d773432",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 191,
       "sourceGame": "marketSignal",
       "q": "A buyer asks a supplier to purchase specialized tooling first and promises to negotiate price afterward. Why might the supplier underinvest?",
       "options": [
-        "The supplier expects marginal cost to be zero after buying the tool",
-        "The buyer’s future demand must be perfectly elastic",
+        "Negotiating later guarantees the supplier all gains created by the relationship",
+        "The supplier can always recover the specific investment by selling it elsewhere",
         "The supplier fears the buyer will capture part of the return through later renegotiation",
-        "The supplier wants average cost to rise before accepting the order"
+        "The sunk nature of the future investment makes its initial cost irrelevant today"
       ],
       "tag": "post_investment_holdup",
-      "type": "trap",
+      "type": "application",
       "objective": "LO5.5",
       "difficulty": "medium",
       "conceptCluster": "medium_marketSignal_post_investment_holdup",
@@ -4126,39 +3754,18 @@ const questionBanks = {
       "repairSkill": "post_investment_holdup",
       "commonError": "misses_renegotiation_risk",
       "feedback": "Hold-up risk can cause underinvestment because the investing party may not receive enough of the future gains after renegotiation.",
-      "aHash": "3acaf4f7f4468d6ce9c7eba5ec68019b74ef7f28cde055067c6e7638e5ead739"
-    },
-    {
-      "id": 192,
-      "sourceGame": "marketSignal",
-      "q": "Which design choice best reduces post-investment hold-up between a buyer and a supplier?",
-      "options": [
-        "Delay every contract term until after the supplier buys specialized equipment",
-        "Use only short verbal agreements after the investment is sunk",
-        "Specify price, volume, and adjustment rules before the specific investment is made",
-        "Reward purchasing managers only for forcing price cuts after suppliers invest"
-      ],
-      "tag": "post_investment_holdup",
-      "type": "application",
-      "objective": "LO5.5",
-      "difficulty": "medium",
-      "conceptCluster": "medium_marketSignal_post_investment_holdup",
-      "primarySkill": "post_investment_holdup",
-      "secondarySkills": [],
-      "repairSkill": "post_investment_holdup",
-      "commonError": "misses_renegotiation_risk",
-      "feedback": "Contract terms set before the specific investment can protect both sides and support efficient investment.",
-      "aHash": "1c8e24c76cd2c25bd1216a2e8a68d418ed2134a2249a3045ba6e915559043e07"
+      "aHash": "3acaf4f7f4468d6ce9c7eba5ec68019b74ef7f28cde055067c6e7638e5ead739",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 193,
       "sourceGame": "marketSignal",
-      "q": "A supplier must make a $30,000 specific investment. The deal creates $50,000 of value if completed, but the supplier expects the buyer to renegotiate away $25,000 after the investment. What is the supplier’s expected net gain?",
+      "q": "A supplier must spend $30,000 on a buyer-specific investment. Its discounted receipts before renegotiation would be $50,000, but the buyer is expected to cut those receipts by $25,000 after investment. With no other costs or outside recovery, what is the supplier’s expected NPV?",
       "options": [
         "$20,000",
-        "-$5,000",
+        "−$5,000",
         "$25,000",
-        "-$30,000"
+        "−$30,000"
       ],
       "tag": "post_investment_holdup",
       "type": "calculation",
@@ -4169,54 +3776,9 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "post_investment_holdup",
       "commonError": "misses_renegotiation_risk",
-      "feedback": "The supplier expects to keep $25,000 of value after renegotiation, but must spend $30,000. Expected net gain is -$5,000, so underinvestment is likely.",
-      "aHash": "58cac24838078ca502979ba1a652cc98375d5f9107ccc612f27beab3939ffdb2"
-    },
-    {
-      "id": 194,
-      "sourceGame": "marketSignal",
-      "q": "Which phrase best describes the investment at the center of post-investment hold-up?",
-      "options": [
-        "A fully reversible cost with many outside uses",
-        "A relationship-specific investment with weak outside value",
-        "A sunk cost that should always be ignored for future decisions",
-        "A fixed cost that falls automatically as output increases"
-      ],
-      "tag": "post_investment_holdup",
-      "type": "identification",
-      "objective": "LO5.5",
-      "difficulty": "medium",
-      "conceptCluster": "medium_marketSignal_post_investment_holdup",
-      "primarySkill": "post_investment_holdup",
-      "secondarySkills": [],
-      "repairSkill": "post_investment_holdup",
-      "commonError": "misses_renegotiation_risk",
-      "feedback": "The key is specificity. Once the investment is made, its value is tied to one relationship, which creates renegotiation risk.",
-      "aHash": "86579f3129d1d25e0d1529a9395ac83a183f635b057a7a0ad6c2c5dafef1cf6f"
-    },
-    {
-      "id": 255,
-      "sourceGame": "marketSignal",
-      "q": "Using the numerical graph, the market begins at S2 and D1. Demand rises to D2 while supply rises to S1. What is the final equilibrium?",
-      "options": [
-        "$48 and 72 units",
-        "$72 and 72 units",
-        "$60 and 48 units",
-        "$60 and 96 units"
-      ],
-      "tag": "graph_two_shift_numeric",
-      "type": "graph",
-      "objective": "LO8.4",
-      "difficulty": "medium",
-      "conceptCluster": "medium_marketSignal_simultaneous_shift_analysis",
-      "primarySkill": "simultaneous_shift_analysis",
-      "secondarySkills": [],
-      "repairSkill": "simultaneous_shift_analysis",
-      "commonError": "Stopping after only one curve shifts",
-      "feedback": "The final intersection of S1 and D2 is price $60 and quantity 96.",
-      "image": "market_curves_independent.svg",
-      "graphRequired": true,
-      "aHash": "47d40ca16e75404b0ab5e6f86a780ccebef8ec7c2ec217b77b66937a5dcc390f"
+      "feedback": "Expected retained receipts are $25,000, less the $30,000 investment: NPV = −$5,000. Anticipated hold-up can deter an otherwise valuable investment.",
+      "aHash": "1f25756974f8cd9929d70d5f999033b65056b6f6e945dacf9a0cf06d4315ebac",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 256,
@@ -4229,18 +3791,19 @@ const questionBanks = {
         "Price stays at $48 and quantity rises by 48"
       ],
       "tag": "graph_demand_shift_numeric",
-      "type": "graph",
+      "type": "graph_calculation",
       "objective": "LO8.4",
       "difficulty": "medium",
       "conceptCluster": "medium_marketSignal_equilibrium_change_calculation",
       "primarySkill": "equilibrium_change_calculation",
       "secondarySkills": [],
-      "repairSkill": "equilibrium_change_calculation",
+      "repairSkill": "demand_supply_shifts",
       "commonError": "Reading the starting equilibrium from S2 instead of S1",
       "feedback": "The market moves from $48, 72 to $60, 96.",
       "image": "market_curves_independent.svg",
       "graphRequired": true,
-      "aHash": "828143e5547060b9a3d47f376b954994f77d8b8084ab9f755ef6cf18795bdd99"
+      "aHash": "828143e5547060b9a3d47f376b954994f77d8b8084ab9f755ef6cf18795bdd99",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 257,
@@ -4253,71 +3816,28 @@ const questionBanks = {
         "Price remains $72 and quantity rises by 48"
       ],
       "tag": "graph_supply_shift_numeric",
-      "type": "graph",
+      "type": "graph_calculation",
       "objective": "LO8.4",
       "difficulty": "medium",
       "conceptCluster": "medium_marketSignal_equilibrium_change_calculation",
       "primarySkill": "equilibrium_change_calculation",
       "secondarySkills": [],
-      "repairSkill": "equilibrium_change_calculation",
+      "repairSkill": "demand_supply_shifts",
       "commonError": "Following the wrong supply curve",
       "feedback": "The market moves from $72, 72 to $60, 96.",
       "image": "market_curves_independent.svg",
       "graphRequired": true,
-      "aHash": "07e176fa9bf6f353e0ff6a827a88f2905e6df187e829d29ae82eab8a0f8fbf7c"
-    },
-    {
-      "id": 281,
-      "sourceGame": "marketSignal",
-      "q": "A monopolist can sell 5 units at $50 each or 6 units at $46 each. What is marginal revenue from the sixth unit?",
-      "options": [
-        "$46",
-        "$26",
-        "$30",
-        "$276"
-      ],
-      "tag": "discrete_monopoly_mr",
-      "type": "calculation",
-      "objective": "LO9.6",
-      "difficulty": "medium",
-      "conceptCluster": "medium_marketSignal_monopoly_marginal_revenue",
-      "primarySkill": "monopoly_marginal_revenue",
-      "secondarySkills": [],
-      "repairSkill": "monopoly_marginal_revenue",
-      "commonError": "Using the new price as marginal revenue",
-      "feedback": "Total revenue rises from $250 to $276, so marginal revenue is $26.",
-      "aHash": "cacb3ebb9daea349b98ecba89f0a89f62e4973b77eea3be2521cc61625c88301"
-    },
-    {
-      "id": 282,
-      "sourceGame": "marketSignal",
-      "q": "A monopolist charges $60, sells 40 units, has variable cost of $20 per unit, and fixed cost of $400. What is profit?",
-      "options": [
-        "$800",
-        "$1,600",
-        "$1,200",
-        "$2,000"
-      ],
-      "tag": "monopoly_profit_hard",
-      "type": "calculation",
-      "objective": "LO9.6",
-      "difficulty": "medium",
-      "conceptCluster": "medium_marketSignal_monopoly_profit_calculation",
-      "primarySkill": "monopoly_profit_calculation",
-      "secondarySkills": [],
-      "repairSkill": "monopoly_profit_calculation",
-      "commonError": "Ignoring fixed cost or using revenue as profit",
-      "feedback": "Profit is ($60 - $20)×40 - $400 = $1,200.",
-      "aHash": "1dcc7619134cdb1de916b106a96326de3a8ac9eb25d79c57ce00de777b3203e1"
+      "aHash": "07e176fa9bf6f353e0ff6a827a88f2905e6df187e829d29ae82eab8a0f8fbf7c",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 287,
       "sourceGame": "marketSignal",
-      "q": "A regulator forces a natural monopoly to charge price equal to average total cost rather than its unregulated monopoly price. What is the intended result?",
+      "q": "At a financially viable output, a regulator requires a natural monopoly to charge average total cost, below its unregulated price. What is the intended result?",
       "options": [
-        "Maximum monopoly profit",
-        "Price below average variable cost",
-        "Permanent positive economic profit sufficient to attract new competitors into the regulated market",
+        "A price that intentionally prevents recovery of unavoidable total cost",
+        "Maximum unregulated monopoly profit",
+        "Price equal to marginal cost even when it is below ATC",
         "Lower price while allowing the firm to cover total cost"
       ],
       "tag": "average_cost_regulation",
@@ -4327,71 +3847,21 @@ const questionBanks = {
       "conceptCluster": "medium_marketSignal_monopoly_regulation",
       "primarySkill": "monopoly_regulation",
       "secondarySkills": [],
-      "repairSkill": "monopoly_regulation",
+      "repairSkill": "monopoly_welfare_regulation",
       "commonError": "Confusing average-cost regulation with marginal-cost pricing or profit maximization",
       "feedback": "Average-cost pricing aims to limit price while preserving financial viability.",
-      "aHash": "4b2055e748f61ee2ab70b6b3c6eab70dd07a0e0531b34d1f6393678f87a593f9"
-    },
-    {
-      "id": 386,
-      "sourceGame": "marketSignal",
-      "q": "A monopolist sells 30 units at $70. To sell 31 units it must lower price to $68 on all units. What is marginal revenue of the 31st unit?",
-      "options": [
-        "$68",
-        "$60",
-        "$8",
-        "-$2"
-      ],
-      "tag": "discrete_monopoly_marginal_revenue",
-      "type": "calculation",
-      "objective": "LO9.6",
-      "difficulty": "medium",
-      "conceptCluster": "medium_marketSignal_monopoly_output_rule",
-      "primarySkill": "monopoly_output_rule",
-      "secondarySkills": [
-        "total_revenue"
-      ],
-      "repairSkill": "monopoly_output_rule",
-      "commonError": "Treating the new unit’s price as marginal revenue and ignoring the price cut on prior units",
-      "feedback": "Revenue rises from $2,100 to $2,108, so marginal revenue is $8.",
-      "aHash": "5282dcb73b7e25acd120ba7db666af3861553abaa9cfa5968b124049b9ed1d94"
-    },
-    {
-      "id": 9057,
-      "sourceGame": "marketSignal",
-      "q": "A market begins at S2 and D1. Demand rises to D2 while supply rises to S1. What happens to equilibrium price and quantity?",
-      "options": [
-        "Price rises to $72 and quantity rises to 72",
-        "Price remains $60; quantity becomes 96",
-        "Price falls to $48 and quantity rises to 72",
-        "Price remains $60 and quantity remains 48"
-      ],
-      "tag": "numeric_graph_double_shift",
-      "type": "graph_analysis",
-      "objective": "LO8.4",
-      "difficulty": "medium",
-      "conceptCluster": "medium_marketSignal_simultaneous_shift_analysis",
-      "primarySkill": "simultaneous_shift_analysis",
-      "secondarySkills": [
-        "graph_equilibrium_reading",
-        "reverse_shift_inference"
-      ],
-      "repairSkill": "simultaneous_market_changes",
-      "commonError": "Following only one shift or assuming two increases must raise price",
-      "feedback": "The move from S2/D1 to S1/D2 doubles quantity while the opposing price effects cancel.",
-      "image": "market_curves_independent.svg",
-      "graphRequired": true,
-      "aHash": "13b11b27dfacbbd6ac6f410d6583fb99e3284b3f23107148353e76fc5c6c5447"
+      "aHash": "4b2055e748f61ee2ab70b6b3c6eab70dd07a0e0531b34d1f6393678f87a593f9",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 9058,
       "sourceGame": "marketSignal",
       "q": "The market begins at S1 and D2. A production-cost increase shifts supply to S2 while demand simultaneously falls to D1. Where does the market end?",
       "options": [
-        "At price $72 and quantity 72",
-        "At price $48 and quantity 72",
+        "At price $48 and quantity 48",
+        "At price $60 and quantity 24",
         "At price $60 and quantity 48",
-        "At price $60 and quantity 96"
+        "At price $72 and quantity 24"
       ],
       "tag": "numeric_graph_reverse_double_shift",
       "type": "graph_analysis",
@@ -4408,7 +3878,8 @@ const questionBanks = {
       "feedback": "A cost increase moves supply left from S1 to S2; a demand decrease moves D2 to D1. Their intersection is $60 and 48.",
       "image": "market_curves_independent.svg",
       "graphRequired": true,
-      "aHash": "36febedf5c7758cc0a913ada33e0c4e32badcc478114facf2b9948888a2e27e6"
+      "aHash": "36febedf5c7758cc0a913ada33e0c4e32badcc478114facf2b9948888a2e27e6",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 9153,
@@ -4435,12 +3906,13 @@ const questionBanks = {
       "feedback": "The graph shows Q=72 at S2-D2 with P=$72 and at S1-D1 with P=$48.",
       "image": "market_curves_independent.svg",
       "graphRequired": true,
-      "aHash": "b6faa71fcf2856defe71e6ddb90a7350a9057ac94fc0e185d98d9dc13c350d18"
+      "aHash": "b6faa71fcf2856defe71e6ddb90a7350a9057ac94fc0e185d98d9dc13c350d18",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 9183,
       "sourceGame": "marketSignal",
-      "q": "A monopolist sells 100 units at $50. To sell 110 units, it must cut price to $48 on all units. What is marginal revenue per additional unit over this expansion?",
+      "q": "A monopolist sells 100 units at $50. To sell 110 units, it must cut price to $48 on all units. What is average incremental revenue per additional unit over this expansion?",
       "options": [
         "$48 per unit",
         "$30 per unit",
@@ -4460,54 +3932,1688 @@ const questionBanks = {
       "repairSkill": "monopoly_output_profit",
       "commonError": "Using the new price as marginal revenue or looking only at the $2 price cut",
       "feedback": "Total revenue rises from $5,000 to $5,280, a $280 gain over 10 units, so MR is $28 per unit.",
-      "aHash": "b3dedcdf57c3805b4dc9b02425ce83ac5712964d692038b046f1748abd1253d0"
+      "aHash": "b3dedcdf57c3805b4dc9b02425ce83ac5712964d692038b046f1748abd1253d0",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 248,
+      "sourceGame": "marketSignal",
+      "q": "Using the graph, the market begins at S1 and D1. A price floor of $72 creates what immediate outcome?",
+      "options": [
+        "A surplus of 96 units",
+        "A shortage of 96 units",
+        "A surplus of 48 units",
+        "No surplus because $72 is below equilibrium"
+      ],
+      "tag": "graph_price_floor",
+      "type": "graph_calculation",
+      "objective": "LO8.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_price_control_analysis",
+      "primarySkill": "price_control_analysis",
+      "secondarySkills": [],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Reversing demanded and supplied quantities",
+      "feedback": "At $72, supply on S1 is 120 and demand on D1 is 24, creating a 96-unit surplus.",
+      "image": "market_curves_independent.svg",
+      "graphRequired": true,
+      "aHash": "6553530ff518d7f3b791c323cbec0210ee3fcef493d21744ad5ccca5a751f52d",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 387,
+      "sourceGame": "marketSignal",
+      "q": "A natural monopoly has declining average total cost and MC below ATC at the quantity demanded when P = MC. What is the cost-recovery problem?",
+      "options": [
+        "The firm must include all fixed cost in the marginal cost of its last unit",
+        "Sales revenue covers total cost whenever each unit is priced at marginal cost",
+        "The firm must raise output until marginal cost exceeds the demand price",
+        "Sales revenue fails to cover total cost, even though the last unit covers its marginal cost"
+      ],
+      "tag": "natural_monopoly_regulation",
+      "type": "analysis",
+      "objective": "LO9.6",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_monopoly_market_effects",
+      "primarySkill": "monopoly_market_effects",
+      "secondarySkills": [
+        "natural_monopoly"
+      ],
+      "repairSkill": "monopoly_welfare_regulation",
+      "commonError": "Assuming efficient marginal-cost pricing automatically covers fixed cost",
+      "feedback": "Marginal-cost pricing supports efficient use in this model but leaves a total-cost shortfall. A subsidy can finance that gap; specialized tariff design is a separate pricing topic.",
+      "aHash": "e4e70d1073b7170451b7d1fcd52871b1374b2e9f9f53d1f272f2dccb42458277",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 9086,
+      "sourceGame": "marketSignal",
+      "q": "A natural monopoly must recover all cost from sales and receives no subsidy. Its ATC exceeds MC throughout the relevant range. What tradeoff arises when it charges P = ATC instead of P = MC?",
+      "options": [
+        "Output reaches the efficient level because economic profit is zero",
+        "Cost recovery improves and the last unit necessarily satisfies P = MC",
+        "Cost recovery improves, but output is below the allocatively efficient level",
+        "Cost recovery fails because fixed cost cannot be recovered through prices"
+      ],
+      "tag": "natural_monopoly_subsidy",
+      "type": "analysis",
+      "objective": "LO9.6",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_monopoly_regulation",
+      "primarySkill": "monopoly_regulation",
+      "secondarySkills": [
+        "cost_recovery",
+        "market_efficiency"
+      ],
+      "repairSkill": "monopoly_welfare_regulation",
+      "commonError": "Assuming efficient pricing automatically guarantees financial break-even",
+      "feedback": "Average-cost pricing can cover total cost, but P exceeds MC. Some units with value above marginal cost remain unserved.",
+      "aHash": "72c082c0ed9cd5b56f9c53fb142ba46fef0a4eb6d7e973e8fe518a48e2ac4350",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 27,
+      "sourceGame": "marketSignal",
+      "q": "Technology A has fixed cost of $100 and variable cost of $5 per unit. Technology B has fixed cost of $300 and variable cost of $3 per unit. At what output are total costs equal?",
+      "options": [
+        "50 units",
+        "150 units",
+        "100 units",
+        "200 units"
+      ],
+      "tag": "technology_indifference",
+      "type": "calculation",
+      "objective": "LO5.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_technology_cost_comparison",
+      "primarySkill": "technology_cost_comparison",
+      "secondarySkills": [],
+      "repairSkill": "break_even_technology",
+      "commonError": "Comparing only fixed costs or only variable costs",
+      "feedback": "Set 100 + 5Q equal to 300 + 3Q; solving gives Q = 100.",
+      "aHash": "3e589980c9996db4652f95cb72678a6144020e2161dbe4cf75f8e0f5f594ab56",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 203,
+      "sourceGame": "marketSignal",
+      "q": "A project pays $5,000 in one year and $6,050 in two years. At a 10% discount rate, what is the total present value of the two payments?",
+      "options": [
+        "$10,000",
+        "$10,500",
+        "$11,050",
+        "$9,545"
+      ],
+      "tag": "multi_cashflow_present_value",
+      "type": "calculation",
+      "objective": "LO5.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_present_value_calculation",
+      "primarySkill": "present_value_calculation",
+      "secondarySkills": [],
+      "repairSkill": "present_value_discounting",
+      "commonError": "Discounting both payments for the same number of years",
+      "feedback": "The two present values are about $4,545 and $5,000, totaling $9,545.",
+      "aHash": "fc2e280e97e426f292077c752fe8e8e095c95c36bca6f1d519130178162bf220",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 205,
+      "sourceGame": "marketSignal",
+      "q": "Project A offers a 13% expected return with a 10% required return. Project B offers 15% with a 14% required return. Based on excess return over the risk-adjusted hurdle, which project is stronger?",
+      "options": [
+        "Project B",
+        "Project A",
+        "Both are equally attractive",
+        "Neither clears its hurdle"
+      ],
+      "tag": "risk_adjusted_hurdle_comparison",
+      "type": "application",
+      "objective": "LO5.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_investment_hurdle_comparison",
+      "primarySkill": "investment_hurdle_comparison",
+      "secondarySkills": [],
+      "repairSkill": "cost_of_capital_npv",
+      "commonError": "Choosing the project with the highest raw expected return",
+      "feedback": "Project A exceeds its hurdle by 3 percentage points, compared with 1 point for Project B.",
+      "aHash": "d9caf6fe542ff838298baf2597e45b9d61c7d905495f445fc6dcbb324012ad86",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 206,
+      "sourceGame": "marketSignal",
+      "q": "A firm finances a project with 60% debt costing 6% and 40% equity costing 12%. Ignoring taxes, what is the weighted cost of capital?",
+      "options": [
+        "7.2%",
+        "9.0%",
+        "8.4%",
+        "10.8%"
+      ],
+      "tag": "weighted_cost_of_capital",
+      "type": "calculation",
+      "objective": "LO5.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_cost_of_capital_calculation",
+      "primarySkill": "cost_of_capital_calculation",
+      "secondarySkills": [],
+      "repairSkill": "cost_of_capital_npv",
+      "commonError": "Taking a simple average rather than weighting the financing sources",
+      "feedback": "The weighted cost is 0.60(6%) + 0.40(12%) = 8.4%.",
+      "aHash": "6ebd9e174f1a8c7b15580cf5c48db282596a4621ba0ebc0325594ff12c1650d6",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 209,
+      "sourceGame": "marketSignal",
+      "q": "A project costs $35,000 today and pays $50,000 at the end of year 4. At an 8% discount rate, what is its approximate NPV?",
+      "options": [
+        "-$1,751",
+        "$1,751",
+        "$15,000",
+        "$36,751"
+      ],
+      "tag": "delayed_cashflow_npv",
+      "type": "calculation",
+      "objective": "LO5.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_npv_calculation",
+      "primarySkill": "npv_calculation",
+      "secondarySkills": [],
+      "repairSkill": "cost_of_capital_npv",
+      "commonError": "Discounting for too few years",
+      "feedback": "The payment is worth about $36,751 today, so NPV is about $1,751.",
+      "aHash": "409349943eadb879d75080de09c444345f10bb4ec58e0979a35da23969624c89",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 210,
+      "sourceGame": "marketSignal",
+      "q": "Two mutually exclusive projects each cost $10,000. A pays $12,000 in one year. B pays $14,000 in two years. At 10%, which project has the higher NPV?",
+      "options": [
+        "Project A",
+        "They have the same NPV",
+        "Project B",
+        "Neither has positive NPV"
+      ],
+      "tag": "mutually_exclusive_npv",
+      "type": "calculation",
+      "objective": "LO5.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_npv_comparison",
+      "primarySkill": "npv_comparison",
+      "secondarySkills": [],
+      "repairSkill": "cost_of_capital_npv",
+      "commonError": "Selecting the earlier cash flow without comparing discounted values",
+      "feedback": "A has NPV about $909; B has NPV about $1,570.",
+      "aHash": "f4d19f788de8deb4b1aaac6639918594fc44f0c5cd9cebfd5d7a1315d0cfe174",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 215,
+      "sourceGame": "marketSignal",
+      "q": "Two firms must make specialized investments before collaborating. Which contract best limits post-investment hold-up?",
+      "options": [
+        "A clause allowing one party to cancel without a defined buyout",
+        "An enforceable delivery deadline with no terms for early termination",
+        "An informal promise to renegotiate after both specific investments are sunk",
+        "Milestones with termination and buyout terms"
+      ],
+      "tag": "hold_up_contract_design",
+      "type": "application",
+      "objective": "LO5.5",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_hold_up_mitigation",
+      "primarySkill": "hold_up_mitigation",
+      "secondarySkills": [],
+      "repairSkill": "post_investment_holdup",
+      "commonError": "Relying on goodwill after both parties become locked in",
+      "feedback": "Milestones and exit terms define performance and reduce opportunistic renegotiation.",
+      "aHash": "18b3f4f9754b988ce9edd97ea360e3b05937c83d633164088e741b9fcb5fdaa9",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 220,
+      "sourceGame": "marketSignal",
+      "q": "A store expansion has NPVs of $40 million, $10 million, and -$20 million with probabilities 0.25, 0.50, and 0.25. The state values are already discounted. What is expected NPV?",
+      "options": [
+        "$10 million",
+        "$5 million",
+        "$15 million",
+        "$30 million"
+      ],
+      "tag": "expected_npv_distribution",
+      "type": "calculation",
+      "objective": "LO17.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_expected_value_calculation",
+      "primarySkill": "expected_value_calculation",
+      "secondarySkills": [],
+      "repairSkill": "expected_value_probability",
+      "commonError": "Averaging outcomes without probability weights",
+      "feedback": "Expected NPV is 0.25(40) + 0.50(10) + 0.25(-20) = $10 million.",
+      "aHash": "d34b6bf1fb9313fbd797efd3a5a4824f066a34624925cf3cae84e353fe53916c",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 221,
+      "sourceGame": "marketSignal",
+      "q": "A risk-neutral firm faces a 2% chance of a $100,000 loss. Full insurance costs $2,500. Based only on expected monetary cost, what should it do?",
+      "options": [
+        "Buy insurance",
+        "Remain uninsured",
+        "Be indifferent",
+        "Insure only half the loss"
+      ],
+      "tag": "insurance_expected_cost",
+      "type": "application",
+      "objective": "LO17.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_expected_cost_comparison",
+      "primarySkill": "expected_cost_comparison",
+      "secondarySkills": [],
+      "repairSkill": "expected_value_probability",
+      "commonError": "Buying insurance whenever any loss is possible",
+      "feedback": "Expected uninsured loss is $2,000, which is below the $2,500 premium.",
+      "aHash": "d7fec415446a8a5a40888897162cd7d5b5d9d9395855bbe3df0b24889bc29124",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 222,
+      "sourceGame": "marketSignal",
+      "q": "A company is uncertain whether business and household customers have different willingness to pay. Which approach best uses price discrimination to learn about demand?",
+      "options": [
+        "Let customers choose the test price before measuring their response",
+        "Give one segment only the high price and the other only the low price, then attribute every sales gap to price",
+        "Randomly vary offered prices within each segment while holding other treatment features fixed",
+        "Change price and advertising together and assign their entire effect to price"
+      ],
+      "tag": "segment_price_learning",
+      "type": "application",
+      "objective": "LO17.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_price_discrimination_experiment",
+      "primarySkill": "price_discrimination_experiment",
+      "secondarySkills": [],
+      "repairSkill": "price_discrimination_uncertainty",
+      "commonError": "Changing several factors at once or assuming identical demand",
+      "feedback": "Price variation within comparable randomized groups in each segment identifies segment-specific responses without making segment composition the price treatment.",
+      "aHash": "4afc8208b75dea089af3ee2e43feabdbdf151b67b59e541533793c0b7eba9f9f",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 223,
+      "sourceGame": "marketSignal",
+      "q": "At a price of $60, a firm expects an 80% chance of selling 1,000 units. At $90, it expects a 50% chance of selling 700 units. Zero units are sold in the other outcome. Ignoring cost, which price has higher expected revenue?",
+      "options": [
+        "$90",
+        "Both have equal expected revenue",
+        "Neither has positive expected revenue",
+        "$60"
+      ],
+      "tag": "expected_revenue_pricing",
+      "type": "calculation",
+      "objective": "LO17.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_expected_revenue_pricing",
+      "primarySkill": "expected_revenue_pricing",
+      "secondarySkills": [],
+      "repairSkill": "price_discrimination_uncertainty",
+      "commonError": "Comparing price alone rather than probability-weighted revenue",
+      "feedback": "$60 yields expected revenue of $48,000; $90 yields $31,500.",
+      "aHash": "4d6d3db3419983aad8d83f39e2bb8ad6a3e7ae94b08ddcf66c788db1d4434ee0",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 224,
+      "sourceGame": "marketSignal",
+      "q": "A firm sends randomly assigned $10 and $20 coupons within each customer segment. Why is this stronger than giving the larger coupon only to low-spending customers?",
+      "options": [
+        "It reduces customer-selection bias",
+        "It guarantees the larger coupon produces higher profit",
+        "It makes past spending irrelevant to predicting purchases",
+        "It eliminates uncertainty about the true demand response"
+      ],
+      "tag": "randomized_coupon_pricing",
+      "type": "application",
+      "objective": "LO17.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_pricing_experiment_design",
+      "primarySkill": "pricing_experiment_design",
+      "secondarySkills": [],
+      "repairSkill": "price_discrimination_uncertainty",
+      "commonError": "Confusing targeted selection with causal identification",
+      "feedback": "Randomization makes price-response comparisons less contaminated by customer selection.",
+      "aHash": "35ef51317ed1d37e8cea705605cfb87b0944ef43dd6a69c971c1772c68b04591",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 226,
+      "sourceGame": "marketSignal",
+      "q": "A retailer tests a new layout in 40 stores with very different baseline sales. What design best improves the randomized comparison?",
+      "options": [
+        "Assign one sales stratum entirely to treatment and another to control",
+        "Randomize without using the available baseline-sales information",
+        "Stratify stores by sales, then randomize",
+        "Let managers choose participation within each sales stratum"
+      ],
+      "tag": "stratified_randomization",
+      "type": "application",
+      "objective": "LO17.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_randomized_experiment_design",
+      "primarySkill": "randomized_experiment_design",
+      "secondarySkills": [],
+      "repairSkill": "experiments_causality",
+      "commonError": "Allowing baseline differences to line up with treatment status",
+      "feedback": "Stratified randomization balances an important predictor before treatment.",
+      "aHash": "34818dc3ee8f2911d6f99d2d53264dc57fe860e47ad89c8e582282762e36f74f",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 228,
+      "sourceGame": "marketSignal",
+      "q": "In a randomized subscription trial, 25% of treated customers drop out but only 5% of control customers do. What is the main threat?",
+      "options": [
+        "Dropout may bias the comparison",
+        "Initial randomization guarantees unbiased comparisons after any selective dropout",
+        "The dropout gap proves the treatment effect is negative",
+        "Only the total number remaining matters, regardless of who left"
+      ],
+      "tag": "differential_attrition",
+      "type": "application",
+      "objective": "LO17.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_attrition_bias",
+      "primarySkill": "attrition_bias",
+      "secondarySkills": [],
+      "repairSkill": "experiments_causality",
+      "commonError": "Assuming initial randomization cures later selective dropout",
+      "feedback": "Unequal dropout can leave the remaining groups systematically different.",
+      "aHash": "d175b7509964dde933da5a601eb96fa1efe33c04637c563164bbf55f452da143",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 229,
+      "sourceGame": "marketSignal",
+      "q": "A firm compares sales before and after a campaign, but a competitor exits during the same period. What is the core identification problem?",
+      "options": [
+        "The before-and-after difference isolates advertising because both outcomes are measured",
+        "Competitor exit confounds the estimate",
+        "Competitor exit can be ignored because it was not chosen by the advertiser",
+        "The two changes necessarily have equal and opposite sales effects"
+      ],
+      "tag": "confounded_before_after",
+      "type": "application",
+      "objective": "LO17.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_confounding_detection",
+      "primarySkill": "confounding_detection",
+      "secondarySkills": [],
+      "repairSkill": "experiments_causality",
+      "commonError": "Treating every time change as caused by the intervention",
+      "feedback": "A simultaneous market shock prevents a clean causal interpretation.",
+      "aHash": "b6c8e6096689dacd3fe07c74d1c0a02ffe9e57c9165da66242754b71be681ba7",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 233,
+      "sourceGame": "marketSignal",
+      "q": "Demand is highly volatile across regions. Which estimate is likely to be most reliable?",
+      "options": [
+        "A same-sized convenience sample concentrated in the largest city",
+        "A large stratified sample covering each region",
+        "An equally sized national sample with no representation of smaller regions",
+        "A single recent week treated as representative of every region"
+      ],
+      "tag": "stratified_uncertainty_estimate",
+      "type": "application",
+      "objective": "LO17.5",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_sampling_design",
+      "primarySkill": "sampling_design",
+      "secondarySkills": [],
+      "repairSkill": "uncertainty_estimation",
+      "commonError": "Using a convenient sample that misses systematic regional variation",
+      "feedback": "A broad stratified sample captures regional heterogeneity and reduces sampling error.",
+      "aHash": "b46ba95cb0970b12077f8a1213d37cc38835a0da09cb3481af9f2fa674dc94b5",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 236,
+      "sourceGame": "marketSignal",
+      "q": "Two firms propose a merger in premium coffee. What evidence is most useful for defining the relevant product market?",
+      "options": [
+        "Buyer switching after a sustained coffee price increase",
+        "The product category used in the firms’ accounting systems",
+        "Similarity in packaging without evidence of buyer switching",
+        "The firms’ preferred premium-brand description alone"
+      ],
+      "tag": "market_definition_substitution",
+      "type": "application",
+      "objective": "LO8.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_market_definition",
+      "primarySkill": "market_definition",
+      "secondarySkills": [],
+      "repairSkill": "market_definition",
+      "commonError": "Defining markets by labels rather than buyer substitution",
+      "feedback": "A relevant market is disciplined by products consumers view as practical substitutes.",
+      "aHash": "2592363fb5ae5d50fbff88541bf7a64266056253dc432361fbde090751c9f1f0",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 237,
+      "sourceGame": "marketSignal",
+      "q": "Concrete cannot be economically shipped beyond the local delivery area under current transport conditions. A supplier nevertheless counts every national seller as an equally available substitute for local buyers. Which scope is better supported?",
+      "options": [
+        "The entire country",
+        "The local delivery area",
+        "Every place using concrete",
+        "Only the supplier’s factory property"
+      ],
+      "tag": "geographic_market_shipping",
+      "type": "application",
+      "objective": "LO8.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_geographic_market_definition",
+      "primarySkill": "geographic_market_definition",
+      "secondarySkills": [],
+      "repairSkill": "market_definition",
+      "commonError": "Ignoring transportation costs that limit substitution",
+      "feedback": "Feasible delivered substitutes matter. Transportation constraints support a local delivery market rather than treating every national seller as equally available.",
+      "aHash": "16a2bdaec38ccd9903fb620745f012fe9667a79f2fd16682ae455140aadb5c84",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 238,
+      "sourceGame": "marketSignal",
+      "q": "Customers cannot cheaply store electricity or shift all afternoon consumption overnight. Why might peak afternoon and overnight transactions need separate supply-and-demand analysis?",
+      "options": [
+        "A common annual bill makes hourly scarcity irrelevant",
+        "Identical physical units guarantee perfect substitution across hours",
+        "Peak and off-peak substitution differs",
+        "Demand differences alone prove supply costs are identical at all times"
+      ],
+      "tag": "temporal_market_definition",
+      "type": "application",
+      "objective": "LO8.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_temporal_market_definition",
+      "primarySkill": "temporal_market_definition",
+      "secondarySkills": [],
+      "repairSkill": "market_definition",
+      "commonError": "Treating products delivered at different times as automatically interchangeable",
+      "feedback": "Peak and off-peak electricity can face different constraints and substitution possibilities.",
+      "aHash": "b67e7401b22744cc29ef91fea33992152955bcf478057116d5bd662f2f17f6c9",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 239,
+      "sourceGame": "marketSignal",
+      "q": "A smartphone producer argues that basic flip phones belong in the same market. Holding other demand determinants fixed, what evidence would weaken that claim?",
+      "options": [
+        "Customers frequently choosing flip phones instead when smartphone prices increase",
+        "Substantial switching from smartphones to flip phones when smartphone prices rise",
+        "Similar patterns of actual buyer substitution in both directions",
+        "A smartphone price increase causes almost no switching to flip phones"
+      ],
+      "tag": "cross_price_market_definition",
+      "type": "application",
+      "objective": "LO8.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_market_definition",
+      "primarySkill": "market_definition",
+      "secondarySkills": [],
+      "repairSkill": "market_definition",
+      "commonError": "Using shared physical features instead of substitution behavior",
+      "feedback": "Little switching after a price increase suggests flip phones do not strongly constrain smartphone pricing.",
+      "aHash": "349c1e835667e455b9312794c7270b1454b29ddd25ec67a7ce5a47d2df57dda2",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 243,
+      "sourceGame": "marketSignal",
+      "q": "With downward-sloping marginal buyer value, upward-sloping marginal seller cost and no externalities, the last traded unit has value $22 and cost $22. What does this equality indicate?",
+      "options": [
+        "Efficiency requires marginal buyer value to exceed marginal cost indefinitely",
+        "Every earlier traded unit also has zero surplus",
+        "Price equality proves every firm covers total fixed cost",
+        "The traded quantity is marginally efficient"
+      ],
+      "tag": "marginal_efficiency",
+      "type": "conceptual",
+      "objective": "LO8.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_marginal_trade_efficiency",
+      "primarySkill": "marginal_trade_efficiency",
+      "secondarySkills": [],
+      "repairSkill": "buyer_seller_behavior",
+      "commonError": "Confusing marginal efficiency with zero surplus for all traders",
+      "feedback": "At the crossing of marginal value and marginal resource cost, the quantity is marginally efficient under these assumptions. It does not eliminate surplus on earlier units.",
+      "aHash": "f84f3492ca92daf0304fd0d8166e30324badf0c2a0d96e4373e242fc209c49c9",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 245,
+      "sourceGame": "marketSignal",
+      "q": "Demand is Qd = 300 - 10P and supply is Qs = 60 + 5P. At a price of $12, what market condition exists?",
+      "options": [
+        "A surplus of 60 units",
+        "A shortage of 60 units",
+        "A shortage of 120 units",
+        "A surplus of 120 units"
+      ],
+      "tag": "linear_shortage",
+      "type": "calculation",
+      "objective": "LO8.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_shortage_surplus_calculation",
+      "primarySkill": "shortage_surplus_calculation",
+      "secondarySkills": [],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Reversing excess demand or calculating only one side",
+      "feedback": "At $12, demand is 180 and supply is 120, creating a 60-unit shortage.",
+      "aHash": "892d0367be0992e8d05b40bd7a49d32d0e1ddbe05068274bd4ac3c0696cd038f",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 252,
+      "sourceGame": "marketSignal",
+      "q": "Using the symbolic graph, the market starts at S0 and D1. Supply then increases to S1. Where does equilibrium move?",
+      "options": [
+        "P1 and QD",
+        "P2 and QB",
+        "P0 and QC",
+        "P1 and QA"
+      ],
+      "tag": "graph_supply_increase_symbolic",
+      "type": "graph",
+      "objective": "LO8.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_single_curve_shift",
+      "primarySkill": "single_curve_shift",
+      "secondarySkills": [],
+      "repairSkill": "demand_supply_shifts",
+      "commonError": "Following demand instead of the specified supply shift",
+      "feedback": "The intersection of S1 and D1 is P1, QD.",
+      "image": "demand_supply.png",
+      "graphRequired": true,
+      "aHash": "9995f2266c1f2f3559db4b78fecfe50bb248ecf9605708d2beb28024091832fc",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 253,
+      "sourceGame": "marketSignal",
+      "q": "Using the symbolic graph, both demand and supply increase from D0 and S0 to D1 and S1. What happens?",
+      "options": [
+        "Price rises to P2 and quantity rises to QD",
+        "Price remains P1 and quantity rises to QD",
+        "Price falls to P0 and quantity rises to QD",
+        "Price remains P1 and quantity rises to QC"
+      ],
+      "tag": "graph_double_increase_symbolic",
+      "type": "graph",
+      "objective": "LO8.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_simultaneous_shift_analysis",
+      "primarySkill": "simultaneous_shift_analysis",
+      "secondarySkills": [],
+      "repairSkill": "simultaneous_market_changes",
+      "commonError": "Analyzing only one of the two shifts",
+      "feedback": "The market moves from S0-D0 at P1, QA to S1-D1 at P1, QD.",
+      "image": "demand_supply.png",
+      "graphRequired": true,
+      "aHash": "6382ab58d96ac72db55c11416b8ca07a33844756b534070b477a85e194aa7173",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 254,
+      "sourceGame": "marketSignal",
+      "q": "In the symbolic graph, one observation is at price P2 and quantity QB; a later observation is at P1 and QD. Which pair of curve combinations matches these observations?",
+      "options": [
+        "First S1 with D1; then S0 with D1",
+        "First S0 with D0; then S1 with D1",
+        "First S0 with D1; then S1 with D1",
+        "First S0 with D1; then S1 with D0"
+      ],
+      "tag": "graph_reverse_inference_symbolic",
+      "type": "graph_analysis",
+      "objective": "LO8.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_reverse_shift_inference",
+      "primarySkill": "reverse_shift_inference",
+      "secondarySkills": [],
+      "repairSkill": "simultaneous_market_changes",
+      "commonError": "Inferring a demand shift even though demand is fixed",
+      "feedback": "P2/QB is the S0-D1 intersection; P1/QD is S1-D1. The graph identifies a supply increase with demand unchanged.",
+      "image": "demand_supply.png",
+      "graphRequired": true,
+      "aHash": "9f2f25f19f8e32f567c4f6280d0836e188addfecd8d5046ec984d7cd58873c0f",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 268,
+      "sourceGame": "marketSignal",
+      "q": "A dangerous job pays $32 per hour, while a similar safe job pays $26. Workers value the added injury risk at $4 per hour. What is the net wage premium beyond compensation for risk?",
+      "options": [
+        "$2 per hour",
+        "$4 per hour",
+        "$6 per hour",
+        "$10 per hour"
+      ],
+      "tag": "net_wage_risk_premium",
+      "type": "calculation",
+      "objective": "LO9.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_compensating_wage_differential",
+      "primarySkill": "compensating_wage_differential",
+      "secondarySkills": [],
+      "repairSkill": "compensating_differentials",
+      "commonError": "Calling the entire wage gap an excess return",
+      "feedback": "The $6 wage gap includes $4 compensation for risk, leaving a $2 net premium.",
+      "aHash": "20a8c1c51cfbc2835f1094db2574c47eca9990faec2b53317e9f115afe2c7c63",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 269,
+      "sourceGame": "marketSignal",
+      "q": "A bond promises 9% over the period. Expected default losses reduce that return by 2 percentage points; a comparable safe asset returns 5%. What is the expected excess return over the safe asset?",
+      "options": [
+        "4%",
+        "2%",
+        "6%",
+        "7%"
+      ],
+      "tag": "risk_adjusted_bond_return",
+      "type": "calculation",
+      "objective": "LO9.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_compensating_risk_differential",
+      "primarySkill": "compensating_risk_differential",
+      "secondarySkills": [],
+      "repairSkill": "compensating_differentials",
+      "commonError": "Ignoring expected loss in the risky asset’s return",
+      "feedback": "Expected return is 9% − 2% = 7%; the expected premium over 5% is 2 percentage points. This subtraction does not eliminate the remaining uncertainty.",
+      "aHash": "3342b7db5f17734b65d90e15e472a4cdc628e803a1347da132a320dbba907bd9",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 273,
+      "sourceGame": "marketSignal",
+      "q": "Investors require at least a 4% premium for a certain risky asset. Its expected return is 8% while the safe return is 6%. What should investors tend to do?",
+      "options": [
+        "Buy more because 8% exceeds 6%",
+        "Shift away because the 2% premium is too small",
+        "Remain indifferent because both returns are positive",
+        "Treat the risky asset as risk free"
+      ],
+      "tag": "required_risk_premium",
+      "type": "application",
+      "objective": "LO9.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_portfolio_reallocation",
+      "primarySkill": "portfolio_reallocation",
+      "secondarySkills": [],
+      "repairSkill": "risk_premium_portfolio",
+      "commonError": "Accepting any positive spread without comparing it with required compensation",
+      "feedback": "The asset offers only 2% extra return, below the 4% premium investors require.",
+      "aHash": "a32714a3bddefc758de636ae74309b2d6610ff20f73c193b5b18d04bcee6c12d",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 275,
+      "sourceGame": "marketSignal",
+      "q": "A bond promises 12%, and a comparable safe asset returns 5%. Expected default losses initially reduce the promised return by 5 percentage points, but that deduction rises to 8 points. Holding the quoted returns fixed, what does the revised comparison imply?",
+      "options": [
+        "The 12% promised return alone guarantees adequate compensation",
+        "Expected bond return remains 7% because the promised yield is unchanged",
+        "The risk premium remains 2 percentage points",
+        "Expected bond return is 4%, below the safe 5%, making it less attractive"
+      ],
+      "tag": "default_risk_reallocation",
+      "type": "application",
+      "objective": "LO9.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_portfolio_reallocation",
+      "primarySkill": "portfolio_reallocation",
+      "secondarySkills": [],
+      "repairSkill": "risk_premium_portfolio",
+      "commonError": "Focusing on promised yield instead of expected net return",
+      "feedback": "With the larger expected loss, expected return is 12% − 8% = 4%. Its expected premium over the safe alternative is −1 percentage point.",
+      "aHash": "198b5f62097b1ad28de0e0dd261a9c83ee4beba2d10ed725ba36f30adf07314e",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 278,
+      "sourceGame": "marketSignal",
+      "q": "Why can a natural monopoly retain market power longer than an ordinary high-profit firm?",
+      "options": [
+        "A large market share makes all future demand perfectly inelastic",
+        "High current profit alone prevents otherwise efficient rivals from entering",
+        "Large scale economies can make duplicate entry inefficient",
+        "Legal exclusivity follows automatically from producing at large scale"
+      ],
+      "tag": "natural_monopoly_entry",
+      "type": "conceptual",
+      "objective": "LO9.5",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_barriers_to_entry",
+      "primarySkill": "barriers_to_entry",
+      "secondarySkills": [],
+      "repairSkill": "profit_erosion_entry_imitation",
+      "commonError": "Assuming high profit alone creates a durable barrier",
+      "feedback": "When average cost falls over the relevant market range, one large producer may have a cost advantage over entrants.",
+      "aHash": "221d13763a47eb495c76298fcaf857a9f9c4ab02cc3dff8d5e37af7f2232e698",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 300,
+      "sourceGame": "marketSignal",
+      "q": "A firm can pay $80,000 today or $100,000 exactly three years from now. What annual discount rate makes the two payments equivalent?",
+      "options": [
+        "About 7.72%",
+        "About 6.25%",
+        "About 8.33%",
+        "About 12.50%"
+      ],
+      "tag": "implied_discount_rate_three_year",
+      "type": "calculation",
+      "objective": "LO5.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_discount_rate_calculation",
+      "primarySkill": "discount_rate_calculation",
+      "secondarySkills": [
+        "present_value_calculation"
+      ],
+      "repairSkill": "present_value_discounting",
+      "commonError": "Dividing the total 25% increase by three instead of solving a compound rate",
+      "feedback": "Solve $80,000(1+r)^3=$100,000, which gives r about 7.72%.",
+      "aHash": "3f6e3586c5d9cf1c0e320d27feca8fbd42621e7fd3dbc960de8ad77163ad736b",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 303,
+      "sourceGame": "marketSignal",
+      "q": "A project pays $20,000 at the end of year 1 and $40,000 at the end of year 4. At 9%, what is the approximate present value of the cash flows?",
+      "options": [
+        "About $50,600",
+        "About $55,000",
+        "About $60,000",
+        "About $46,700"
+      ],
+      "tag": "uneven_cashflow_present_value",
+      "type": "calculation",
+      "objective": "LO5.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_present_value_calculation",
+      "primarySkill": "present_value_calculation",
+      "secondarySkills": [
+        "cash_flow_timing"
+      ],
+      "repairSkill": "present_value_discounting",
+      "commonError": "Discounting both cash flows for the same number of periods",
+      "feedback": "PV is about $18,349 plus $28,337, totaling about $46,686.",
+      "aHash": "83a80017a1e1629228787c0ae4e033d99e3f4c937b382913569bbb418c6eac12",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 306,
+      "sourceGame": "marketSignal",
+      "q": "A project requires an initial outlay followed only by positive net receipts. Its NPV is positive at 9% and negative at 12%. Where is its internal rate of return?",
+      "options": [
+        "Its payback period lies between 9 and 12 years",
+        "Its accounting return must equal 10.5%",
+        "Its internal rate of return lies between 9% and 12%",
+        "Its cash flows are risk-free"
+      ],
+      "tag": "irr_bracketing",
+      "type": "inference",
+      "objective": "LO5.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_cost_of_capital_interpretation",
+      "primarySkill": "cost_of_capital_interpretation",
+      "secondarySkills": [
+        "npv_interpretation"
+      ],
+      "repairSkill": "cost_of_capital_npv",
+      "commonError": "Treating discount-rate bounds as a payback-period statement",
+      "feedback": "NPV changes sign around the internal rate of return, so the IRR lies between the two rates.",
+      "aHash": "62b2883f25c1d6abb4388c86e66aa41ae968e5c16cecbbbbaee11c23fbb720c9",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 312,
+      "sourceGame": "marketSignal",
+      "q": "Two projects are one-time mutually exclusive. Project A has NPV $40,000 and IRR 18%; Project B has NPV $55,000 and IRR 15%. Both exceed the 10% hurdle. Which should a value-maximizing firm select?",
+      "options": [
+        "Project B because it adds more total value",
+        "Project A because its IRR is higher",
+        "Both because each has positive NPV",
+        "Neither because their rankings conflict"
+      ],
+      "tag": "npv_irr_conflict",
+      "type": "application",
+      "objective": "LO5.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_npv_decision_rule",
+      "primarySkill": "npv_decision_rule",
+      "secondarySkills": [
+        "irr_interpretation"
+      ],
+      "repairSkill": "cost_of_capital_npv",
+      "commonError": "Automatically choosing the project with the highest percentage return",
+      "feedback": "For mutually exclusive projects, the higher NPV creates more total value.",
+      "aHash": "15e89f2e5597428d5ded4640ab62bd1617631fa7224da2f76641a4f124926b6e",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 318,
+      "sourceGame": "marketSignal",
+      "q": "A supplier must spend $2 million on equipment useful only to one buyer. The buyer cannot specify every future contingency. Which arrangement best reduces hold-up while preserving cooperation?",
+      "options": [
+        "The supplier finances the full investment under a cancellable spot contract",
+        "The buyer reimburses only variable production costs after delivery",
+        "The buyer co-invests and commits to a formula-based long-term purchase agreement",
+        "The buyer promises to negotiate a price after the tooling is installed"
+      ],
+      "tag": "relational_contract_hold_up",
+      "type": "application",
+      "objective": "LO5.5",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_hold_up_mitigation",
+      "primarySkill": "hold_up_mitigation",
+      "secondarySkills": [
+        "unforeseen_contingencies"
+      ],
+      "repairSkill": "post_investment_holdup",
+      "commonError": "Relying on a vague promise after one side becomes locked in",
+      "feedback": "Shared commitment and a pricing formula reduce opportunism when a complete contract is impossible.",
+      "aHash": "9908a9d9bc04dea7af12e4ad6fc936fdcbed4dd56974ef138dfc7681400987c5",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 323,
+      "sourceGame": "marketSignal",
+      "q": "Project A has expected payoff $100,000 with standard deviation $15,000. Project B has expected payoff $112,000 with standard deviation $60,000. Which conclusion follows from expected value alone?",
+      "options": [
+        "Project A dominates because its variance is lower",
+        "Project B dominates for every decision maker",
+        "The projects are equivalent because risk is unpriced",
+        "Project B is preferred, but risk preferences could reverse the choice"
+      ],
+      "tag": "expected_value_vs_risk",
+      "type": "analysis",
+      "objective": "LO17.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_expected_value_interpretation",
+      "primarySkill": "expected_value_interpretation",
+      "secondarySkills": [
+        "risk_preferences"
+      ],
+      "repairSkill": "expected_value_probability",
+      "commonError": "Treating the highest expected value as universally optimal regardless of risk",
+      "feedback": "Expected value favors B, but a sufficiently risk-averse decision maker may prefer A.",
+      "aHash": "491c19b9bfb90a5944299d657d141355afb0a1fe36e68a290da2293d16a41067",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 324,
+      "sourceGame": "marketSignal",
+      "q": "A firm can spend $20,000 on a test that changes its expected project payoff from $150,000 to $185,000 by improving the decision. What is the expected net value of the information?",
+      "options": [
+        "$15,000",
+        "$20,000",
+        "$35,000",
+        "$55,000"
+      ],
+      "tag": "value_of_information",
+      "type": "calculation",
+      "objective": "LO17.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_expected_value_calculation",
+      "primarySkill": "expected_value_calculation",
+      "secondarySkills": [
+        "information_value"
+      ],
+      "repairSkill": "expected_value_probability",
+      "commonError": "Reporting the gross improvement without subtracting the test cost",
+      "feedback": "The information improves expected payoff by $35,000 and costs $20,000, leaving $15,000 net.",
+      "aHash": "208bd9cfd4e08ea0e562d793c5f0e8c93c62473aa2d72f363127750b41e7bbae",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 325,
+      "sourceGame": "marketSignal",
+      "q": "A risk-neutral manager maximizes expected profit. A decision tree has a 60% chance of reaching a second stage. At that stage, the firm chooses the better of a sure $50,000 payoff or a gamble with expected payoff $70,000. The remaining 40% yields zero. What is the project’s expected value before any initial cost?",
+      "options": [
+        "$30,000",
+        "$42,000",
+        "$50,000",
+        "$70,000"
+      ],
+      "tag": "sequential_expected_value",
+      "type": "calculation",
+      "objective": "LO17.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_decision_tree_analysis",
+      "primarySkill": "decision_tree_analysis",
+      "secondarySkills": [
+        "expected_value_calculation"
+      ],
+      "repairSkill": "expected_value_probability",
+      "commonError": "Averaging all terminal values without following the optimal second-stage choice",
+      "feedback": "At stage two choose $70,000; multiplying by .60 gives $42,000.",
+      "aHash": "b9f3abcaa62ebc12408bab4fe3470ee1b3add75426e5217c38fad70fbae42fce",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 328,
+      "sourceGame": "marketSignal",
+      "q": "Assume matinee and evening screenings have the same marginal cost per viewer. A theater charges lower prices for weekday matinees. Which combination best supports this as price discrimination rather than simple cost-based pricing?",
+      "options": [
+        "Different customer groups self-select by time and have different demand elasticities",
+        "The theater’s fixed cost is higher on weekdays",
+        "Every customer values every show identically",
+        "Marginal cost rises sharply for matinee viewers"
+      ],
+      "tag": "time_based_price_discrimination",
+      "type": "analysis",
+      "objective": "LO17.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_price_discrimination_interpretation",
+      "primarySkill": "price_discrimination_interpretation",
+      "secondarySkills": [
+        "demand_elasticity"
+      ],
+      "repairSkill": "price_discrimination_uncertainty",
+      "commonError": "Attributing every price difference to production cost",
+      "feedback": "Time restrictions can separate more elastic customers from less elastic customers.",
+      "aHash": "c02d224a361424db93cdc8939278f843f78f34602804cd39db06f4e4a8af2cdd",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 329,
+      "sourceGame": "marketSignal",
+      "q": "A seller tests two prices in different cities, but one city also has much higher income. What is the strongest reason the observed sales difference does not identify the price effect?",
+      "options": [
+        "Higher city income proves that higher prices caused the extra sales",
+        "Customer type and price are confounded across cities",
+        "The price difference identifies a causal effect if each city has many customers",
+        "The higher-price city provides a valid control even if income changes demand"
+      ],
+      "tag": "pricing_experiment_confounding",
+      "type": "analysis",
+      "objective": "LO17.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_selection_bias_detection",
+      "primarySkill": "selection_bias_detection",
+      "secondarySkills": [
+        "price_discrimination_design"
+      ],
+      "repairSkill": "price_discrimination_uncertainty",
+      "commonError": "Assuming any cross-market price comparison isolates causality",
+      "feedback": "Income differences may drive sales, so the price effect cannot be separated without better design.",
+      "aHash": "cc383da86154d2a90357ef258163cf3fa4f32054e228ee2a0b2f9e25daa9461b",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 335,
+      "sourceGame": "marketSignal",
+      "q": "A medical-device firm tests H0: the device is unsafe. Rejecting H0 approves the device. Which event is a Type I error?",
+      "options": [
+        "Rejecting a device that is actually safe",
+        "Approving a device that is actually safe",
+        "Rejecting a device that is actually unsafe",
+        "Approving a device that is actually unsafe"
+      ],
+      "tag": "type_i_error_context",
+      "type": "application",
+      "objective": "LO17.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_type_i_type_ii_errors",
+      "primarySkill": "type_i_type_ii_errors",
+      "secondarySkills": [
+        "hypothesis_framing"
+      ],
+      "repairSkill": "error_costs",
+      "commonError": "Naming the error without first identifying the null hypothesis and decision",
+      "feedback": "A Type I error rejects a true null; here that means approving an unsafe device.",
+      "aHash": "ce610b9e9f16d93119883a2aec2bcdd6b8035154f043c00abf98d8b9f25030a1",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 337,
+      "sourceGame": "marketSignal",
+      "q": "A bank estimates that a looser approval rule adds 100 good loans worth $4,000 each but also 15 bad loans costing $30,000 each. What is the expected net effect?",
+      "options": [
+        "$50,000",
+        "-$50,000",
+        "$400,000",
+        "$450,000"
+      ],
+      "tag": "approval_rule_error_cost",
+      "type": "calculation",
+      "objective": "LO17.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_error_cost_minimization",
+      "primarySkill": "error_cost_minimization",
+      "secondarySkills": [
+        "expected_value_calculation"
+      ],
+      "repairSkill": "error_costs",
+      "commonError": "Counting added approvals without subtracting costly false positives",
+      "feedback": "Benefit is $400,000; expected bad-loan cost is $450,000, so net effect is -$50,000.",
+      "aHash": "05288c9819d1eae1ff85d2757250dc20917678fb1522017392790b8b77708cfb",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 338,
+      "sourceGame": "marketSignal",
+      "q": "A company estimates demand using only customers who completed a purchase. What uncertainty is likely understated?",
+      "options": [
+        "Observed purchase prices reveal the complete demand curve for potential buyers",
+        "The sample includes too many observations from low-value nonbuyers",
+        "Demand among visitors who considered the product but did not buy",
+        "Missing nonbuyers only affects sampling precision, not which population is represented"
+      ],
+      "tag": "survivorship_in_demand_estimation",
+      "type": "analysis",
+      "objective": "LO17.5",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_selection_bias_detection",
+      "primarySkill": "selection_bias_detection",
+      "secondarySkills": [
+        "data_quality"
+      ],
+      "repairSkill": "uncertainty_estimation",
+      "commonError": "Assuming observed buyers represent the full potential market",
+      "feedback": "Conditioning on purchase excludes nonbuyers and can overstate willingness to pay.",
+      "aHash": "17b0efd47c3ff411f4f0d697d8925e32568eee812fdb0085455f5d3384edbfa2",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 339,
+      "sourceGame": "marketSignal",
+      "q": "A simulation uses precise probabilities derived from only ten observations. What is the biggest problem?",
+      "options": [
+        "Discard simulated extreme outcomes to make the input estimates more reliable",
+        "Run more draws until the simulation output no longer reflects estimated-input uncertainty",
+        "Treat the ten-observation sample mean as the known population mean",
+        "The output may look precise while the probability estimates are highly uncertain"
+      ],
+      "tag": "false_precision_simulation",
+      "type": "analysis",
+      "objective": "LO17.5",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_probability_estimation",
+      "primarySkill": "probability_estimation",
+      "secondarySkills": [
+        "simulation_design"
+      ],
+      "repairSkill": "uncertainty_estimation",
+      "commonError": "Confusing numerical precision with evidentiary reliability",
+      "feedback": "A model cannot be more reliable than the uncertain inputs used to generate its results.",
+      "aHash": "cdbd5fb2cc812f745204cf6993ec700065aee4820f4ba29c705144c5e13e0586",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 345,
+      "sourceGame": "marketSignal",
+      "q": "A price increase for premium streaming causes many users to switch to ad-supported streaming but few to switch to movie theaters. What does this evidence suggest?",
+      "options": [
+        "The two streaming tiers cannot compete because their payment methods differ",
+        "The two streaming tiers likely belong to a closer relevant market than theaters",
+        "Movie theaters must be closer substitutes because they also show video",
+        "The evidence establishes that no customer substitutes beyond the two tiers"
+      ],
+      "tag": "cross_price_market_definition",
+      "type": "inference",
+      "objective": "LO8.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_market_definition",
+      "primarySkill": "market_definition",
+      "secondarySkills": [
+        "cross_price_elasticity"
+      ],
+      "repairSkill": "market_definition",
+      "commonError": "Using broad product similarity instead of observed substitution",
+      "feedback": "Strong switching between the streaming tiers indicates a tighter competitive relationship.",
+      "aHash": "415905683182d8e6066e6beef149bab0ff9f414001371d566f756068c278eda1",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 346,
+      "sourceGame": "marketSignal",
+      "q": "A merger analysis defines the market as “all beverages,” hiding a dominant share in energy drinks. What is the danger?",
+      "options": [
+        "A broad category gives a reliable share even if customers rarely switch within it",
+        "Weak substitutes should be included whenever they reduce measured concentration",
+        "An overly broad market can understate competitive power in the narrower product space",
+        "The narrow market is irrelevant whenever its products belong to a broader industry"
+      ],
+      "tag": "overbroad_market_definition",
+      "type": "analysis",
+      "objective": "LO8.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_market_definition",
+      "primarySkill": "market_definition",
+      "secondarySkills": [
+        "market_power"
+      ],
+      "repairSkill": "market_definition",
+      "commonError": "Assuming broader categories automatically produce more accurate competition measures",
+      "feedback": "Including weak substitutes dilutes market shares and can conceal power over a narrower set of buyers.",
+      "aHash": "bbb5fbb587c56a827f4a69570d4f00bb1adf340508103c7f3e7c4de5e7505f15",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 347,
+      "sourceGame": "marketSignal",
+      "q": "A firm sells industrial pumps worldwide, but emergency buyers can source only from suppliers within 200 miles. Which market definition is most defensible for emergency purchases?",
+      "options": [
+        "The local industrial-equipment market, including products that cannot replace pumps",
+        "The worldwide market, because some routine purchases are imported",
+        "The firm’s current sales territory, even where emergency substitutes are available",
+        "A regional emergency-supply market"
+      ],
+      "tag": "geographic_market_definition",
+      "type": "application",
+      "objective": "LO8.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_market_definition",
+      "primarySkill": "market_definition",
+      "secondarySkills": [
+        "geographic_substitution"
+      ],
+      "repairSkill": "market_definition",
+      "commonError": "Using the broadest possible geography despite severe switching constraints",
+      "feedback": "The relevant geography reflects where emergency buyers can realistically turn.",
+      "aHash": "1a7ed67d0a70376615767d4bd16938091e5e07fd42d1a8af77a6b16ea5d8f392",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 349,
+      "sourceGame": "marketSignal",
+      "q": "Demand is Qd=900-15P and supply is Qs=100+5P. A per-unit production tax shifts supply to Qs=100+5(P-8). What are the new equilibrium buyer price and quantity?",
+      "options": [
+        "$38 and 330 units",
+        "$42 and 270 units",
+        "$40 and 300 units",
+        "$46 and 210 units"
+      ],
+      "tag": "tax_shift_equilibrium",
+      "type": "calculation",
+      "objective": "LO8.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_equilibrium_calculation",
+      "primarySkill": "equilibrium_calculation",
+      "secondarySkills": [
+        "supply_behavior"
+      ],
+      "repairSkill": "buyer_seller_behavior",
+      "commonError": "Shifting demand or applying the tax to the buyer equation incorrectly",
+      "feedback": "Set 900-15P=100+5(P-8); equilibrium is P=$42 and Q=270.",
+      "aHash": "3130f89d4695c830b33ac36db53e9fd48d2b9b5660ef0ec680f99ddbf6bde9cb",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 351,
+      "sourceGame": "marketSignal",
+      "q": "A commodity price rises. Existing firms expand output along their supply curves, and new firms enter months later. Which statement correctly separates the responses?",
+      "options": [
+        "Both responses are movements along the same supply curve",
+        "Existing-firm expansion shifts demand right",
+        "Entry changes quantity supplied but never supply",
+        "Expansion by existing firms is movement along supply; entry shifts market supply right"
+      ],
+      "tag": "movement_vs_shift_supply",
+      "type": "analysis",
+      "objective": "LO8.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_supply_behavior",
+      "primarySkill": "supply_behavior",
+      "secondarySkills": [
+        "entry_exit"
+      ],
+      "repairSkill": "buyer_seller_behavior",
+      "commonError": "Calling every output increase a shift of supply",
+      "feedback": "A price change moves existing sellers along supply; entry changes the number of sellers and shifts supply.",
+      "aHash": "304d892c862acc206bdc3e8f490cbaef7d2e4807eae441d43959812ee6abba9f",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 353,
+      "sourceGame": "marketSignal",
+      "q": "A seller’s marginal costs for four units are $8, $14, $21, and $29. At price $22, how many units are supplied and what is producer surplus before fixed cost?",
+      "options": [
+        "2 units and $22",
+        "3 units and $23",
+        "3 units and $66",
+        "4 units and $16"
+      ],
+      "tag": "discrete_supply_surplus",
+      "type": "calculation",
+      "objective": "LO8.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_supply_behavior",
+      "primarySkill": "supply_behavior",
+      "secondarySkills": [
+        "producer_surplus"
+      ],
+      "repairSkill": "buyer_seller_behavior",
+      "commonError": "Producing a unit whose marginal cost exceeds price or confusing revenue with surplus",
+      "feedback": "The first three units are produced; surplus is 14+8+1=$23.",
+      "aHash": "9a7474cad9cbd6903fdf1168bd5723a03e6cfc1e7039b9d4b817ce2de1b2a404",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 354,
+      "sourceGame": "marketSignal",
+      "q": "A binding price ceiling below the otherwise market-clearing price produces persistent queues and resale. What allocation problem do those responses reflect?",
+      "options": [
+        "The ceiling is above equilibrium and causes a surplus",
+        "Demand has shifted left until the market clears",
+        "The controlled price is below the market-clearing price and nonprice rationing is allocating the shortage",
+        "Sellers face no opportunity cost"
+      ],
+      "tag": "nonprice_rationing",
+      "type": "inference",
+      "objective": "LO8.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_shortage_surplus",
+      "primarySkill": "shortage_surplus",
+      "secondarySkills": [
+        "price_controls"
+      ],
+      "repairSkill": "buyer_seller_behavior",
+      "commonError": "Treating the posted price as proof that the market is in equilibrium",
+      "feedback": "Queues and resale are signals of excess demand suppressed by the controlled price.",
+      "aHash": "c3c54077c160d6752e380f839a81fa3f52ae7007c4d497c70f04cf5261c8f8f2",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 355,
+      "sourceGame": "marketSignal",
+      "q": "Market demand is Qd=1,200-20P and supply is Qs=200+30P. The government sets price at $16. What shortage or surplus results?",
+      "options": [
+        "A surplus of 200 units",
+        "A shortage of 400 units",
+        "No imbalance",
+        "A shortage of 200 units"
+      ],
+      "tag": "equation_shortage",
+      "type": "calculation",
+      "objective": "LO8.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_shortage_surplus",
+      "primarySkill": "shortage_surplus",
+      "secondarySkills": [
+        "equilibrium_calculation"
+      ],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Subtracting demand from supply with the wrong sign",
+      "feedback": "At $16, Qd=880 and Qs=680, so shortage is 200.",
+      "aHash": "12a617cc2618dad0f82d991070283a971868212e658232abfef9cc1782e4d807",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 358,
+      "sourceGame": "marketSignal",
+      "q": "Refer to the graph. Starting at S0/D0, demand increases to D1 while supply later increases to S1. Which result is certain from initial to final equilibrium?",
+      "options": [
+        "Quantity rises from QA to QC while price returns to P1",
+        "Quantity rises from QA to QD while price stays at P2",
+        "Quantity rises from QA to QD while price returns to P1",
+        "Quantity rises from QA to QC while price falls to P0"
+      ],
+      "tag": "comparative_statics",
+      "type": "graph",
+      "objective": "LO8.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_comparative_statics",
+      "primarySkill": "comparative_statics",
+      "secondarySkills": [
+        "demand_shift",
+        "supply_shift"
+      ],
+      "repairSkill": "simultaneous_market_changes",
+      "commonError": "Using shift directions without reading final coordinates",
+      "feedback": "The final S1/D1 point is QD at P1: higher quantity with the original price restored.",
+      "image": "demand_supply.png",
+      "graphRequired": true,
+      "aHash": "3f4a4fba37a67e2fb66585066a47242e55c95207087056d3b761cf3fcd222926",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 360,
+      "sourceGame": "marketSignal",
+      "q": "With downward-sloping demand and upward-sloping supply, a market moves from price $30 and quantity 500 to price $30 and quantity 650. Which explanation is most consistent?",
+      "options": [
+        "Demand and supply both increased by offsetting amounts at the original price",
+        "Demand increased while supply decreased",
+        "Demand and supply both decreased",
+        "Only demand increased while supply stayed fixed"
+      ],
+      "tag": "unchanged_price_higher_quantity",
+      "type": "inference",
+      "objective": "LO8.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_comparative_statics",
+      "primarySkill": "comparative_statics",
+      "secondarySkills": [
+        "simultaneous_shifts"
+      ],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Assuming an unchanged price means no market change occurred",
+      "feedback": "Higher quantity with unchanged price can result when rightward demand and supply shifts offset in price.",
+      "aHash": "d0f51091ef88a8449cd62fd701ac3942eb6c3cb96debc55db547a882713c730a",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 363,
+      "sourceGame": "marketSignal",
+      "q": "In the supplied symbolic graph, the market starts at S0/D1 and moves to price P1 and quantity QD. Which event is consistent with that movement?",
+      "options": [
+        "A cheaper substitute decreases demand",
+        "Higher production costs decrease supply",
+        "Higher income increases demand for the normal good",
+        "Lower production costs increase supply"
+      ],
+      "tag": "graph_supply_shift_cause",
+      "type": "graph_analysis",
+      "objective": "LO8.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_industry_level_changes",
+      "primarySkill": "industry_level_changes",
+      "secondarySkills": [
+        "supply_shift"
+      ],
+      "repairSkill": "demand_supply_shifts",
+      "commonError": "Explaining a supply-curve movement with a demand determinant",
+      "feedback": "The final P1/QD intersection is S1/D1. Demand is unchanged and supply has shifted right from S0 to S1, as would occur after a reduction in production costs.",
+      "image": "demand_supply.png",
+      "graphRequired": true,
+      "aHash": "e67637c72fc51b61b530f148055866fac2aa48d7550c0f380ef43c2f9b91f7cf",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 365,
+      "sourceGame": "marketSignal",
+      "q": "A drought shifts supply left while consumers simultaneously learn the product is harmful, shifting demand left. What is certain?",
+      "options": [
+        "Equilibrium price and quantity both rise",
+        "Equilibrium quantity falls; the price change is ambiguous",
+        "Equilibrium price falls; quantity is ambiguous",
+        "Equilibrium quantity rises; price is ambiguous"
+      ],
+      "tag": "both_curves_left",
+      "type": "analysis",
+      "objective": "LO8.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_comparative_statics",
+      "primarySkill": "comparative_statics",
+      "secondarySkills": [
+        "simultaneous_shifts"
+      ],
+      "repairSkill": "simultaneous_market_changes",
+      "commonError": "Assuming the common direction of curve shifts determines price instead of quantity",
+      "feedback": "Both shifts reduce quantity, while supply raises price and demand lowers it.",
+      "aHash": "c9447a22474e34ccb5db73b135a173558c79e053d15388fa5f57ce4b26d6e0cb",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 367,
+      "sourceGame": "marketSignal",
+      "q": "A competitive industry’s price is $34. A representative firm produces 5,000 units at ATC=$30. What is the firm’s economic profit, and what market response does it invite?",
+      "options": [
+        "$150,000 profit, inviting exit",
+        "$20,000 loss, inviting exit",
+        "Zero profit, so no response",
+        "$20,000 profit, inviting entry"
+      ],
+      "tag": "profit_and_entry_signal",
+      "type": "calculation",
+      "objective": "LO9.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_profit_as_market_signal",
+      "primarySkill": "profit_as_market_signal",
+      "secondarySkills": [
+        "entry_exit"
+      ],
+      "repairSkill": "competitive_returns",
+      "commonError": "Using total revenue as profit or reversing the entry signal",
+      "feedback": "Profit is ($34-$30)(5,000)=$20,000; positive economic profit attracts entry.",
+      "aHash": "8cb2f51f2cf78e66b013ca9c0d90b40bfd1394343688cb7e2de254a28ca0ffca",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 370,
+      "sourceGame": "marketSignal",
+      "q": "Refer to the long-run competition graph. After demand rises from D0 to D1, why does the market move from B toward D rather than remain at B?",
+      "options": [
+        "Losses force firms to exit until price rises to P2",
+        "Demand automatically returns to D0",
+        "Positive profit attracts entry, shifting supply from S0 to S1 until price returns to P1",
+        "Incumbents collude to hold quantity at QB"
+      ],
+      "tag": "profit_mean_reversion_graph",
+      "type": "analysis",
+      "objective": "LO9.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_profit_mean_reversion",
+      "primarySkill": "profit_mean_reversion",
+      "secondarySkills": [
+        "entry_exit"
+      ],
+      "repairSkill": "mean_reversion_entry_exit",
+      "commonError": "Treating the short-run profit point as a permanent equilibrium",
+      "feedback": "Entry expands supply and erodes the temporary profit until firms again earn normal returns.",
+      "image": "long_run_competition.png",
+      "graphRequired": false,
+      "aHash": "6ac3563c0276abc36242055a6a8e729364216ea8cdf42613ee6b2dcb8aa3c27e",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 372,
+      "sourceGame": "marketSignal",
+      "q": "An industry’s profits are highly persistent despite imitation. Which fact most weakens the prediction of rapid mean reversion?",
+      "options": [
+        "Strong legal barriers and scarce specialized inputs block entry",
+        "Consumers can compare prices easily",
+        "Production knowledge is widely available",
+        "Capital can move freely across industries"
+      ],
+      "tag": "barriers_slow_mean_reversion",
+      "type": "analysis",
+      "objective": "LO9.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_profit_mean_reversion",
+      "primarySkill": "profit_mean_reversion",
+      "secondarySkills": [
+        "barriers_to_entry"
+      ],
+      "repairSkill": "mean_reversion_entry_exit",
+      "commonError": "Assuming mean reversion occurs at the same speed regardless of entry conditions",
+      "feedback": "Barriers and scarce inputs slow the competitive forces that normally erode excess returns.",
+      "aHash": "ffdb0efb99b31a358249b4ae48794054639ff65cdd9c360b208df1483c1b6b5d",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 373,
+      "sourceGame": "marketSignal",
+      "q": "Assume demand remains strong while new capacity takes four years to arrive. A commodity boom raises returns far above normal. Firms invest heavily, but new capacity takes four years to arrive. What pattern is most likely?",
+      "options": [
+        "Profits instantly return to zero",
+        "Profits remain elevated temporarily, then decline as delayed supply enters",
+        "High profits permanently increase because entry raises scarcity",
+        "Losses appear immediately before any capacity is added"
+      ],
+      "tag": "delayed_mean_reversion",
+      "type": "analysis",
+      "objective": "LO9.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_profit_mean_reversion",
+      "primarySkill": "profit_mean_reversion",
+      "secondarySkills": [
+        "entry_lag"
+      ],
+      "repairSkill": "mean_reversion_entry_exit",
+      "commonError": "Treating long-run adjustment as instantaneous",
+      "feedback": "Construction lags allow temporary persistence, but added capacity eventually pushes returns toward normal.",
+      "aHash": "4f42d5110a8725b33de0b9b15c6b4dd4e53a3f2560ef3a70e876e29df046130a",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 378,
+      "sourceGame": "marketSignal",
+      "q": "A stock’s expected return stays at 10%, but its perceived risk rises sharply while the safe rate remains 4%. What happens to its attractiveness?",
+      "options": [
+        "It becomes more attractive because risk rose",
+        "Its risk premium automatically rises even though expected return is unchanged",
+        "Its unchanged 6-point premium may no longer compensate investors for the greater risk",
+        "The safe rate becomes irrelevant"
+      ],
+      "tag": "risk_change_fixed_premium",
+      "type": "analysis",
+      "objective": "LO9.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_risk_premium_interpretation",
+      "primarySkill": "risk_premium_interpretation",
+      "secondarySkills": [
+        "portfolio_reallocation"
+      ],
+      "repairSkill": "risk_premium_portfolio",
+      "commonError": "Assuming a fixed return spread provides the same compensation at every risk level",
+      "feedback": "A larger risk requires more compensation; the unchanged premium can trigger reallocation.",
+      "aHash": "0578473e405d04e11e68f3c8dc71fa3f098b8fba50b0b0f86984e8f52c64f64b",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 379,
+      "sourceGame": "marketSignal",
+      "q": "Investors shift from risky assets to safe assets. Holding expected cash flows fixed, what immediate price pattern is most consistent?",
+      "options": [
+        "Neither price changes because expected cash flows are fixed",
+        "Risky prices rise and safe prices fall as portfolios rebalance",
+        "Both prices fall because selling risky assets reduces demand for all assets",
+        "Risky-asset prices fall and safe-asset prices rise"
+      ],
+      "tag": "flight_to_safety_prices",
+      "type": "analysis",
+      "objective": "LO9.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_portfolio_reallocation",
+      "primarySkill": "portfolio_reallocation",
+      "secondarySkills": [
+        "asset_pricing"
+      ],
+      "repairSkill": "risk_premium_portfolio",
+      "commonError": "Ignoring how portfolio demand affects asset prices",
+      "feedback": "Selling risky assets lowers their prices, while increased demand raises safe-asset prices.",
+      "aHash": "ec59e39bc3baa2d7dd151df30e895273bdbc9084db2b0a700f64a1e55fe21c16",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 380,
+      "sourceGame": "marketSignal",
+      "q": "A firm earns monopoly profit from a product feature that rivals can copy in six months. Which strategy most directly slows erosion without relying on legal exclusion?",
+      "options": [
+        "Continuously innovate so the firm moves to the next advantage before imitation catches up",
+        "Raise price indefinitely while output falls",
+        "Publish the full production process immediately",
+        "Stop investing once the first product succeeds"
+      ],
+      "tag": "dynamic_innovation_advantage",
+      "type": "application",
+      "objective": "LO9.5",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_entry_and_imitation",
+      "primarySkill": "entry_and_imitation",
+      "secondarySkills": [
+        "innovation_strategy"
+      ],
+      "repairSkill": "profit_erosion_entry_imitation",
+      "commonError": "Treating a temporary advantage as a permanent moat",
+      "feedback": "Value-creating innovation can renew a temporary advantage before rivals copy it. It is not a guarantee of permanent profit; the added value must justify the investment.",
+      "aHash": "f0baff5d71afb92248138755509c2fa7c42186131dc4ab718e13b2518a96cfe2",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 381,
+      "sourceGame": "marketSignal",
+      "q": "A monopolist’s patent expires. Entry occurs, but its profit remains high because consumers face large switching costs. What explains the persistence?",
+      "options": [
+        "Patent expiration guarantees immediate zero profit",
+        "Entry alone may not erase profit when customer lock-in limits effective substitution",
+        "Switching costs shift the monopolist’s marginal cost to zero",
+        "New firms necessarily charge a higher price"
+      ],
+      "tag": "switching_cost_profit_persistence",
+      "type": "analysis",
+      "objective": "LO9.5",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_entry_and_imitation",
+      "primarySkill": "entry_and_imitation",
+      "secondarySkills": [
+        "switching_costs"
+      ],
+      "repairSkill": "profit_erosion_entry_imitation",
+      "commonError": "Assuming legal entry automatically creates strong competitive pressure",
+      "feedback": "Entrants matter only if customers can and will switch to them.",
+      "aHash": "6b4b06e05ebd2ee1ef1cf38aea0775e447e6691c686a49dcc74ff7fb5ac49303",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 383,
+      "sourceGame": "marketSignal",
+      "q": "A dominant platform lowers fees just before entry and raises them after rivals leave. Which possible barrier, if independently established, may allow profits to recover repeatedly?",
+      "options": [
+        "Perfectly elastic supply by entrants",
+        "Absence of any customer switching cost",
+        "Free and instantaneous multihoming by all users",
+        "Network effects and strategic responses can make entry difficult to sustain"
+      ],
+      "tag": "strategic_entry_deterrence",
+      "type": "application",
+      "objective": "LO9.5",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_barriers_to_entry",
+      "primarySkill": "barriers_to_entry",
+      "secondarySkills": [
+        "network_effects"
+      ],
+      "repairSkill": "profit_erosion_entry_imitation",
+      "commonError": "Assuming observed entry means barriers are economically unimportant",
+      "feedback": "Network effects can starve entrants of scale, allowing the incumbent to restore market power later.",
+      "aHash": "4c7973c466b97babceb79af99e697c770392e7c61b5052469e558e7b16b4bd3e",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 394,
+      "sourceGame": "marketSignal",
+      "q": "A specific investment costs $100,000 and creates $140,000 in present value. An enforceable contract guarantees the supplier at least $110,000 in present-value receipts, whether the buyer accepts delivery or cancels. What is the main effect?",
+      "options": [
+        "It makes the investment privately viable by protecting the supplier’s expected payoff",
+        "It creates an additional $110,000 of joint value beyond the product’s value",
+        "It makes the investment efficient even if its resource cost exceeds total value",
+        "It prevents the buyer and supplier from sharing the remaining created value"
+      ],
+      "tag": "post_investment_holdup",
+      "type": "application",
+      "objective": "LO5.5",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_post_investment_holdup",
+      "primarySkill": "post_investment_holdup",
+      "secondarySkills": [],
+      "repairSkill": "post_investment_holdup",
+      "commonError": "misses_renegotiation_risk",
+      "feedback": "The clause protects the supplier from being pushed below cost after investing. That can support efficient investment.",
+      "aHash": "4658228b29448c5290bf13ee82193037075b157cd0466d3e0974801fa479b4f2",
+      "canonicalDifficulty": "medium"
     }
   ],
   "hard": [
-    {
-      "id": 200,
-      "sourceGame": "marketSignal",
-      "q": "What is the present value of $1,331 received three years from now at a 10% annual discount rate?",
-      "options": [
-        "$1,000",
-        "$1,100",
-        "$1,210",
-        "$1,464"
-      ],
-      "tag": "three_period_present_value",
-      "type": "calculation",
-      "objective": "LO5.1",
-      "difficulty": "hard",
-      "conceptCluster": "capital_allocation",
-      "primarySkill": "present_value_calculation",
-      "secondarySkills": [],
-      "repairSkill": "present_value_calculation",
-      "commonError": "Discounting for the wrong number of years",
-      "feedback": "PV = $1,331/(1.10)^3 = $1,000.",
-      "aHash": "5101c9638b2d2781151db487a22ab4407af938151d891f67c126136f30a0aae9"
-    },
-    {
-      "id": 201,
-      "sourceGame": "marketSignal",
-      "q": "An investment grows from $1,000 to $1,728 in three years. What annual compound return did it earn?",
-      "options": [
-        "12%",
-        "20%",
-        "18%",
-        "24%"
-      ],
-      "tag": "implied_compound_return",
-      "type": "calculation",
-      "objective": "LO5.1",
-      "difficulty": "hard",
-      "conceptCluster": "capital_allocation",
-      "primarySkill": "discount_rate_calculation",
-      "secondarySkills": [],
-      "repairSkill": "discount_rate_calculation",
-      "commonError": "Dividing the total percentage gain by three",
-      "feedback": "Because 1.20^3 = 1.728, the annual compound return is 20%.",
-      "aHash": "dc934fe30a942bca07b4c288b4b3e48aa79a717d6db2b586553cd2416dc8b9b8"
-    },
     {
       "id": 202,
       "sourceGame": "marketSignal",
@@ -4525,98 +5631,11 @@ const questionBanks = {
       "conceptCluster": "capital_allocation",
       "primarySkill": "cash_flow_timing",
       "secondarySkills": [],
-      "repairSkill": "cash_flow_timing",
+      "repairSkill": "present_value_discounting",
       "commonError": "Choosing the larger future payment without discounting its later arrival",
       "feedback": "Project A is worth about $10,288 today, while Project B is worth about $9,923.",
-      "aHash": "d9caf6fe542ff838298baf2597e45b9d61c7d905495f445fc6dcbb324012ad86"
-    },
-    {
-      "id": 203,
-      "sourceGame": "marketSignal",
-      "q": "A project pays $5,000 in one year and $6,050 in two years. At a 10% discount rate, what is the total present value of the two payments?",
-      "options": [
-        "$10,000",
-        "$10,500",
-        "$11,050",
-        "$9,545"
-      ],
-      "tag": "multi_cashflow_present_value",
-      "type": "calculation",
-      "objective": "LO5.1",
-      "difficulty": "hard",
-      "conceptCluster": "capital_allocation",
-      "primarySkill": "present_value_calculation",
-      "secondarySkills": [],
-      "repairSkill": "present_value_calculation",
-      "commonError": "Discounting both payments for the same number of years",
-      "feedback": "The two present values are about $4,545 and $5,000, totaling $9,545.",
-      "aHash": "fc2e280e97e426f292077c752fe8e8e095c95c36bca6f1d519130178162bf220"
-    },
-    {
-      "id": 204,
-      "sourceGame": "marketSignal",
-      "q": "A one-year project costs $9,000 and pays $9,900. It has positive NPV at an 8% cost of capital but negative NPV at a 12% cost of capital. What does this show?",
-      "options": [
-        "The cost of capital can reverse the investment decision",
-        "A positive future payoff always guarantees acceptance regardless of financing conditions",
-        "The initial cost should be treated as sunk",
-        "NPV is independent of financing conditions"
-      ],
-      "tag": "cost_of_capital_switch",
-      "type": "application",
-      "objective": "LO5.2",
-      "difficulty": "hard",
-      "conceptCluster": "capital_allocation",
-      "primarySkill": "cost_of_capital_interpretation",
-      "secondarySkills": [],
-      "repairSkill": "cost_of_capital_interpretation",
-      "commonError": "Treating the discount rate as irrelevant to the accept-reject decision",
-      "feedback": "A higher funding hurdle can turn a value-creating project into a value-destroying one.",
-      "aHash": "c813db9fc35aad7fdc34e49f974332bbc6d568eea118099cdc5ae41b209c9bf1"
-    },
-    {
-      "id": 205,
-      "sourceGame": "marketSignal",
-      "q": "Project A offers a 13% expected return with a 10% required return. Project B offers 15% with a 14% required return. Based on excess return over the risk-adjusted hurdle, which project is stronger?",
-      "options": [
-        "Project B",
-        "Project A",
-        "Both are equally attractive",
-        "Neither clears its hurdle"
-      ],
-      "tag": "risk_adjusted_hurdle_comparison",
-      "type": "application",
-      "objective": "LO5.2",
-      "difficulty": "hard",
-      "conceptCluster": "capital_allocation",
-      "primarySkill": "investment_hurdle_comparison",
-      "secondarySkills": [],
-      "repairSkill": "investment_hurdle_comparison",
-      "commonError": "Choosing the project with the highest raw expected return",
-      "feedback": "Project A exceeds its hurdle by 3 percentage points, compared with 1 point for Project B.",
-      "aHash": "d9caf6fe542ff838298baf2597e45b9d61c7d905495f445fc6dcbb324012ad86"
-    },
-    {
-      "id": 206,
-      "sourceGame": "marketSignal",
-      "q": "A firm finances a project with 60% debt costing 6% and 40% equity costing 12%. Ignoring taxes, what is the weighted cost of capital?",
-      "options": [
-        "7.2%",
-        "9.0%",
-        "8.4%",
-        "10.8%"
-      ],
-      "tag": "weighted_cost_of_capital",
-      "type": "calculation",
-      "objective": "LO5.2",
-      "difficulty": "hard",
-      "conceptCluster": "capital_allocation",
-      "primarySkill": "cost_of_capital_calculation",
-      "secondarySkills": [],
-      "repairSkill": "cost_of_capital_calculation",
-      "commonError": "Taking a simple average rather than weighting the financing sources",
-      "feedback": "The weighted cost is 0.60(6%) + 0.40(12%) = 8.4%.",
-      "aHash": "6ebd9e174f1a8c7b15580cf5c48db282596a4621ba0ebc0325594ff12c1650d6"
+      "aHash": "d9caf6fe542ff838298baf2597e45b9d61c7d905495f445fc6dcbb324012ad86",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 207,
@@ -4635,103 +5654,39 @@ const questionBanks = {
       "conceptCluster": "investment_analysis",
       "primarySkill": "npv_calculation",
       "secondarySkills": [],
-      "repairSkill": "npv_calculation",
+      "repairSkill": "cost_of_capital_npv",
       "commonError": "Adding undiscounted inflows or forgetting the initial cost",
       "feedback": "The discounted inflows total about $22,224, leaving NPV near $2,224.",
-      "aHash": "8fa39ee53d6c70ba6955c1c6d21294d52fe0da675dad59ac8059034492167d49"
-    },
-    {
-      "id": 208,
-      "sourceGame": "marketSignal",
-      "q": "Project A and Project B each cost $100. A pays $60, $40, and $20 over three years. B pays $30, $30, and $80. At 10%, A pays back sooner, but B has the higher NPV. Which rule should govern value creation?",
-      "options": [
-        "Choose Project B using NPV",
-        "Choose Project A using payback",
-        "Reject both because their costs match",
-        "Treat the two projects as equivalent"
-      ],
-      "tag": "npv_vs_payback",
-      "type": "application",
-      "objective": "LO5.3",
-      "difficulty": "hard",
-      "conceptCluster": "investment_analysis",
-      "primarySkill": "npv_decision_rule",
-      "secondarySkills": [],
-      "repairSkill": "npv_decision_rule",
-      "commonError": "Choosing the fastest payback while ignoring later discounted cash flows",
-      "feedback": "NPV includes timing and all project cash flows, so it is the better value criterion.",
-      "aHash": "83b763342eb2ac0f63ea754f958d553665eb078600421c8ab0e40fce4e1d22e9"
-    },
-    {
-      "id": 209,
-      "sourceGame": "marketSignal",
-      "q": "A project costs $35,000 today and pays $50,000 at the end of year 4. At an 8% discount rate, what is its approximate NPV?",
-      "options": [
-        "-$1,751",
-        "$1,751",
-        "$15,000",
-        "$36,751"
-      ],
-      "tag": "delayed_cashflow_npv",
-      "type": "calculation",
-      "objective": "LO5.3",
-      "difficulty": "hard",
-      "conceptCluster": "investment_analysis",
-      "primarySkill": "npv_calculation",
-      "secondarySkills": [],
-      "repairSkill": "npv_calculation",
-      "commonError": "Discounting for too few years",
-      "feedback": "The payment is worth about $36,751 today, so NPV is about $1,751.",
-      "aHash": "409349943eadb879d75080de09c444345f10bb4ec58e0979a35da23969624c89"
-    },
-    {
-      "id": 210,
-      "sourceGame": "marketSignal",
-      "q": "Two mutually exclusive projects each cost $10,000. A pays $12,000 in one year. B pays $14,000 in two years. At 10%, which project has the higher NPV?",
-      "options": [
-        "Project A",
-        "They have the same NPV",
-        "Project B",
-        "Neither has positive NPV"
-      ],
-      "tag": "mutually_exclusive_npv",
-      "type": "calculation",
-      "objective": "LO5.3",
-      "difficulty": "hard",
-      "conceptCluster": "investment_analysis",
-      "primarySkill": "npv_comparison",
-      "secondarySkills": [],
-      "repairSkill": "npv_comparison",
-      "commonError": "Selecting the earlier cash flow without comparing discounted values",
-      "feedback": "A has NPV about $909; B has NPV about $1,570.",
-      "aHash": "f4d19f788de8deb4b1aaac6639918594fc44f0c5cd9cebfd5d7a1315d0cfe174"
+      "aHash": "8fa39ee53d6c70ba6955c1c6d21294d52fe0da675dad59ac8059034492167d49",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 211,
       "sourceGame": "marketSignal",
-      "q": "A product has fixed cost of $120,000, price of $50, variable cost of $30, and a target profit of $40,000. How many units must be sold?",
+      "q": "A one-period facility can sell at most 25,000 units at $14 each. Technology A costs $120,000 fixed plus $8 per unit; B costs $240,000 fixed plus $4 per unit. All costs are avoidable before investment. Which technology can earn the required $40,000 profit at this price and sales limit?",
       "options": [
-        "4,000 units",
-        "6,000 units",
-        "10,000 units",
-        "8,000 units"
+        "Both: covering variable cost is enough to meet the profit target",
+        "A only: its lower fixed cost makes 25,000 units sufficient",
+        "B only: its lower unit cost makes 25,000 units sufficient",
+        "Neither: A needs at least 26,667 units and B needs 28,000"
       ],
       "tag": "target_profit_quantity",
-      "type": "calculation",
+      "type": "analysis",
       "objective": "LO5.4",
       "difficulty": "hard",
-      "conceptCluster": "break_even_shutdown",
+      "conceptCluster": "hard_marketSignal_target_profit_calculation",
       "primarySkill": "target_profit_calculation",
       "secondarySkills": [],
-      "repairSkill": "target_profit_calculation",
-      "commonError": "Using fixed cost alone in the numerator",
-      "feedback": "Required quantity is ($120,000 + $40,000)/($50 - $30) = 8,000.",
-      "aHash": "9acab01300b2d9825bfc0995ca22d3312f7328c06adc8953968de2f7e2db570f"
+      "repairSkill": "break_even_technology",
+      "commonError": "Ignoring the target profit or the feasible sales limit when comparing technologies",
+      "feedback": "A needs (120,000 + 40,000)/(14 − 8) = 26,666.67 units, rounded up to 26,667. B needs 280,000/10 = 28,000. Both exceed the 25,000-unit sales limit. Positive contribution is not enough to achieve the profit target.",
+      "aHash": "a168d27adba38b4b205beb13de492356fd3c24be79a7db919aeee9d0be56f1a9",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 212,
       "sourceGame": "marketSignal",
-      "q": "A competitive firm sells 6,000 units for $12 each. Variable cost is $8 per unit and fixed cost is $30,000. What should it do in the short run?",
+      "q": "A price-taking firm can sell up to its 6,000-unit capacity this period at $12 per unit. Variable cost is $8 per unit; $30,000 fixed cost is unavoidable even if it closes. With no other effects, what should it do?",
       "options": [
         "Continue producing and incur a $6,000 loss",
         "Shut down because total profit is negative",
@@ -4745,411 +5700,16 @@ const questionBanks = {
       "conceptCluster": "break_even_shutdown",
       "primarySkill": "short_run_shutdown_rule",
       "secondarySkills": [],
-      "repairSkill": "short_run_shutdown_rule",
+      "repairSkill": "shutdown_decisions",
       "commonError": "Shutting down whenever accounting profit is negative",
       "feedback": "Revenue covers all variable cost and $24,000 of fixed cost, reducing the loss to $6,000.",
-      "aHash": "3a774f8fd5d3986b0b23d41297ec05659b34da820c392490ccf548e73d4b0976"
-    },
-    {
-      "id": 213,
-      "sourceGame": "marketSignal",
-      "q": "Technology A has fixed cost of $200,000 and variable cost of $4 per unit. Technology B has fixed cost of $80,000 and variable cost of $7 per unit. At what output are total costs equal?",
-      "options": [
-        "20,000 units",
-        "40,000 units",
-        "60,000 units",
-        "120,000 units"
-      ],
-      "tag": "technology_crossover",
-      "type": "calculation",
-      "objective": "LO5.4",
-      "difficulty": "hard",
-      "conceptCluster": "break_even_shutdown",
-      "primarySkill": "technology_choice",
-      "secondarySkills": [],
-      "repairSkill": "technology_choice",
-      "commonError": "Dividing the fixed-cost difference by the wrong marginal-cost difference",
-      "feedback": "Set 200,000 + 4Q = 80,000 + 7Q, giving Q = 40,000.",
-      "aHash": "1906ebe7f68f65e99429fe77116596c793de04909fe752e2327df6a7fcd29a13"
-    },
-    {
-      "id": 214,
-      "sourceGame": "marketSignal",
-      "q": "A firm expects to sell 15,000 units. Fixed cost is $90,000 and variable cost is $4 per unit. What price produces zero economic profit?",
-      "options": [
-        "$6",
-        "$8",
-        "$10",
-        "$14"
-      ],
-      "tag": "break_even_price_hard",
-      "type": "calculation",
-      "objective": "LO5.4",
-      "difficulty": "hard",
-      "conceptCluster": "break_even_shutdown",
-      "primarySkill": "break_even_price_calculation",
-      "secondarySkills": [],
-      "repairSkill": "break_even_price_calculation",
-      "commonError": "Ignoring fixed cost per expected unit",
-      "feedback": "Break-even price is $4 + $90,000/15,000 = $10.",
-      "aHash": "a5e5e8d362fb74d764de0ae02c1301975aa694ee1175c61c2cc45a60a78245ec"
-    },
-    {
-      "id": 215,
-      "sourceGame": "marketSignal",
-      "q": "Two firms must make specialized investments before collaborating. Which contract best limits post-investment hold-up?",
-      "options": [
-        "A vague promise to negotiate later",
-        "An agreement that leaves all adaptation rights to one party",
-        "No written contract because trust lowers bargaining costs",
-        "Milestones with termination and buyout terms"
-      ],
-      "tag": "hold_up_contract_design",
-      "type": "application",
-      "objective": "LO5.5",
-      "difficulty": "hard",
-      "conceptCluster": "contract_design",
-      "primarySkill": "hold_up_mitigation",
-      "secondarySkills": [],
-      "repairSkill": "hold_up_mitigation",
-      "commonError": "Relying on goodwill after both parties become locked in",
-      "feedback": "Milestones and exit terms define performance and reduce opportunistic renegotiation.",
-      "aHash": "18b3f4f9754b988ce9edd97ea360e3b05937c83d633164088e741b9fcb5fdaa9"
-    },
-    {
-      "id": 216,
-      "sourceGame": "marketSignal",
-      "q": "Each partner posts a $100,000 bond that is forfeited if it abandons a joint venture after the other invests. What mechanism is being used?",
-      "options": [
-        "An exchange of hostages",
-        "A payback-period rule",
-        "A compensating differential",
-        "A randomized control"
-      ],
-      "tag": "exchange_of_hostages_hard",
-      "type": "application",
-      "objective": "LO5.5",
-      "difficulty": "hard",
-      "conceptCluster": "contract_design",
-      "primarySkill": "credible_commitment",
-      "secondarySkills": [],
-      "repairSkill": "credible_commitment",
-      "commonError": "Treating a forfeitable bond as an ordinary sunk cost",
-      "feedback": "The bond makes breach costly and therefore makes the commitment more credible.",
-      "aHash": "57b0187baf34499d4be26b27139276bfa3346ed8be3ce4227de1d6608a3ec12d"
-    },
-    {
-      "id": 217,
-      "sourceGame": "marketSignal",
-      "q": "A firm has spent $3 million developing a product. Completion requires another $2 million, but expected future revenue is only $1.5 million. What is the correct decision?",
-      "options": [
-        "Finish because $3 million has already been spent",
-        "Stop because future revenue is below future cost",
-        "Finish because total spending would otherwise be wasted",
-        "Continue until accounting profit becomes positive"
-      ],
-      "tag": "sunk_cost_completion",
-      "type": "application",
-      "objective": "LO5.5",
-      "difficulty": "hard",
-      "conceptCluster": "contract_design",
-      "primarySkill": "sunk_cost_reasoning",
-      "secondarySkills": [],
-      "repairSkill": "sunk_cost_reasoning",
-      "commonError": "Including irrecoverable past spending in the forward-looking decision",
-      "feedback": "The $3 million is sunk; only the additional $2 million and future $1.5 million matter now.",
-      "aHash": "fece5c215f89e8afab8612cee32e3ce18ab8272cf4df265c16335b13d18fce92"
-    },
-    {
-      "id": 218,
-      "sourceGame": "marketSignal",
-      "q": "A project pays $100,000 with probability 0.30, $20,000 with probability 0.50, and loses $50,000 with probability 0.20. What is its expected value?",
-      "options": [
-        "$20,000",
-        "$40,000",
-        "$30,000",
-        "$60,000"
-      ],
-      "tag": "three_state_expected_value",
-      "type": "calculation",
-      "objective": "LO17.1",
-      "difficulty": "hard",
-      "conceptCluster": "uncertainty_analysis",
-      "primarySkill": "expected_value_calculation",
-      "secondarySkills": [],
-      "repairSkill": "expected_value_calculation",
-      "commonError": "Ignoring the negative outcome or failing to weight all states",
-      "feedback": "Expected value is 0.30(100,000) + 0.50(20,000) - 0.20(50,000) = $30,000.",
-      "aHash": "b6b838f2dc6694bc400993035fc497064d7c1ad409d774c5bb83717749cd1f61"
-    },
-    {
-      "id": 219,
-      "sourceGame": "marketSignal",
-      "q": "Project A pays $80,000 if successful and loses $20,000 if not; success probability is 0.60. Project B pays $130,000 if successful and zero otherwise; success probability is 0.40. Which has the higher expected value?",
-      "options": [
-        "Project A",
-        "They have equal expected values",
-        "Neither has positive expected value",
-        "Project B"
-      ],
-      "tag": "project_expected_value_comparison",
-      "type": "calculation",
-      "objective": "LO17.1",
-      "difficulty": "hard",
-      "conceptCluster": "uncertainty_analysis",
-      "primarySkill": "expected_value_comparison",
-      "secondarySkills": [],
-      "repairSkill": "expected_value_comparison",
-      "commonError": "Choosing the project with the higher success probability",
-      "feedback": "A has expected value $40,000; B has expected value $52,000.",
-      "aHash": "f4d19f788de8deb4b1aaac6639918594fc44f0c5cd9cebfd5d7a1315d0cfe174"
-    },
-    {
-      "id": 220,
-      "sourceGame": "marketSignal",
-      "q": "A store expansion has NPVs of $40 million, $10 million, and -$20 million with probabilities 0.25, 0.50, and 0.25. What is expected NPV?",
-      "options": [
-        "$10 million",
-        "$5 million",
-        "$15 million",
-        "$30 million"
-      ],
-      "tag": "expected_npv_distribution",
-      "type": "calculation",
-      "objective": "LO17.1",
-      "difficulty": "hard",
-      "conceptCluster": "uncertainty_analysis",
-      "primarySkill": "expected_value_calculation",
-      "secondarySkills": [],
-      "repairSkill": "expected_value_calculation",
-      "commonError": "Averaging outcomes without probability weights",
-      "feedback": "Expected NPV is 0.25(40) + 0.50(10) + 0.25(-20) = $10 million.",
-      "aHash": "d34b6bf1fb9313fbd797efd3a5a4824f066a34624925cf3cae84e353fe53916c"
-    },
-    {
-      "id": 221,
-      "sourceGame": "marketSignal",
-      "q": "A risk-neutral firm faces a 2% chance of a $100,000 loss. Full insurance costs $2,500. Based only on expected monetary cost, what should it do?",
-      "options": [
-        "Buy insurance",
-        "Remain uninsured",
-        "Be indifferent",
-        "Insure only half the loss"
-      ],
-      "tag": "insurance_expected_cost",
-      "type": "application",
-      "objective": "LO17.1",
-      "difficulty": "hard",
-      "conceptCluster": "uncertainty_analysis",
-      "primarySkill": "expected_cost_comparison",
-      "secondarySkills": [],
-      "repairSkill": "expected_cost_comparison",
-      "commonError": "Buying insurance whenever any loss is possible",
-      "feedback": "Expected uninsured loss is $2,000, which is below the $2,500 premium.",
-      "aHash": "d7fec415446a8a5a40888897162cd7d5b5d9d9395855bbe3df0b24889bc29124"
-    },
-    {
-      "id": 222,
-      "sourceGame": "marketSignal",
-      "q": "A company is uncertain whether business and household customers have different willingness to pay. Which approach best uses price discrimination to learn about demand?",
-      "options": [
-        "Charge everyone the highest price immediately",
-        "Use one price and infer every segment has identical demand",
-        "Use controlled prices by customer segment",
-        "Change price and advertising at the same time in every segment"
-      ],
-      "tag": "segment_price_learning",
-      "type": "application",
-      "objective": "LO17.2",
-      "difficulty": "hard",
-      "conceptCluster": "pricing_under_uncertainty",
-      "primarySkill": "price_discrimination_experiment",
-      "secondarySkills": [],
-      "repairSkill": "price_discrimination_experiment",
-      "commonError": "Changing several factors at once or assuming identical demand",
-      "feedback": "Controlled price variation across segments reveals differences in willingness to pay.",
-      "aHash": "2656a07b18542231cb71bf1f714ab34508d34ae21e473a66ef01cacd839cad42"
-    },
-    {
-      "id": 223,
-      "sourceGame": "marketSignal",
-      "q": "At a price of $60, a firm expects an 80% chance of selling 1,000 units. At $90, it expects a 50% chance of selling 700 units. Ignoring cost, which price has higher expected revenue?",
-      "options": [
-        "$90",
-        "Both have equal expected revenue",
-        "Neither has positive expected revenue",
-        "$60"
-      ],
-      "tag": "expected_revenue_pricing",
-      "type": "calculation",
-      "objective": "LO17.2",
-      "difficulty": "hard",
-      "conceptCluster": "pricing_under_uncertainty",
-      "primarySkill": "expected_revenue_pricing",
-      "secondarySkills": [],
-      "repairSkill": "expected_revenue_pricing",
-      "commonError": "Comparing price alone rather than probability-weighted revenue",
-      "feedback": "$60 yields expected revenue of $48,000; $90 yields $31,500.",
-      "aHash": "4d6d3db3419983aad8d83f39e2bb8ad6a3e7ae94b08ddcf66c788db1d4434ee0"
-    },
-    {
-      "id": 224,
-      "sourceGame": "marketSignal",
-      "q": "A firm sends randomly assigned $10 and $20 coupons within each customer segment. Why is this stronger than giving the larger coupon only to low-spending customers?",
-      "options": [
-        "It reduces customer-selection bias",
-        "Larger coupons always create more profit",
-        "Low spenders form a natural control group",
-        "Randomization removes all market uncertainty"
-      ],
-      "tag": "randomized_coupon_pricing",
-      "type": "application",
-      "objective": "LO17.2",
-      "difficulty": "hard",
-      "conceptCluster": "pricing_under_uncertainty",
-      "primarySkill": "pricing_experiment_design",
-      "secondarySkills": [],
-      "repairSkill": "pricing_experiment_design",
-      "commonError": "Confusing targeted selection with causal identification",
-      "feedback": "Randomization makes price-response comparisons less contaminated by customer selection.",
-      "aHash": "35ef51317ed1d37e8cea705605cfb87b0944ef43dd6a69c971c1772c68b04591"
-    },
-    {
-      "id": 225,
-      "sourceGame": "marketSignal",
-      "q": "Beta users volunteer to test a new app feature and report unusually high engagement. Why may this overstate the feature’s effect?",
-      "options": [
-        "Engagement cannot be measured in a beta test",
-        "Volunteers may be unusually engaged",
-        "The treatment group is necessarily too large",
-        "Random assignment always creates volunteer bias"
-      ],
-      "tag": "beta_selection_bias",
-      "type": "application",
-      "objective": "LO17.3",
-      "difficulty": "hard",
-      "conceptCluster": "causal_inference",
-      "primarySkill": "selection_bias_detection",
-      "secondarySkills": [],
-      "repairSkill": "selection_bias_detection",
-      "commonError": "Attributing all group differences to treatment",
-      "feedback": "Self-selection can make beta users systematically different from ordinary users.",
-      "aHash": "443d42d727177abd144b66b1760ade998b94f9273c8cfb0f89200f369c24d8ff"
-    },
-    {
-      "id": 226,
-      "sourceGame": "marketSignal",
-      "q": "A retailer tests a new layout in 40 stores with very different baseline sales. What design best improves the randomized comparison?",
-      "options": [
-        "Put all high-sales stores in treatment",
-        "Let managers choose whether to participate",
-        "Stratify stores by sales, then randomize",
-        "Compare treatment stores only with last year"
-      ],
-      "tag": "stratified_randomization",
-      "type": "application",
-      "objective": "LO17.3",
-      "difficulty": "hard",
-      "conceptCluster": "causal_inference",
-      "primarySkill": "randomized_experiment_design",
-      "secondarySkills": [],
-      "repairSkill": "randomized_experiment_design",
-      "commonError": "Allowing baseline differences to line up with treatment status",
-      "feedback": "Stratified randomization balances an important predictor before treatment.",
-      "aHash": "34818dc3ee8f2911d6f99d2d53264dc57fe860e47ad89c8e582282762e36f74f"
-    },
-    {
-      "id": 227,
-      "sourceGame": "marketSignal",
-      "q": "Sales in treatment stores rise from 100 to 130, while sales in control stores rise from 90 to 105. What is the difference-in-differences estimate?",
-      "options": [
-        "10 units",
-        "25 units",
-        "30 units",
-        "15 units"
-      ],
-      "tag": "difference_in_differences_hard",
-      "type": "calculation",
-      "objective": "LO17.3",
-      "difficulty": "hard",
-      "conceptCluster": "causal_inference",
-      "primarySkill": "difference_in_differences",
-      "secondarySkills": [],
-      "repairSkill": "difference_in_differences",
-      "commonError": "Using the treatment change without subtracting the control change",
-      "feedback": "The treatment change is 30 and the control change is 15, so the estimate is 15.",
-      "aHash": "74621c847c2d91614266c7bbbacf769a8805f0e16e04d7c519f33342d1fccb84"
-    },
-    {
-      "id": 228,
-      "sourceGame": "marketSignal",
-      "q": "In a randomized subscription trial, 25% of treated customers drop out but only 5% of control customers do. What is the main threat?",
-      "options": [
-        "Dropout may bias the comparison",
-        "The sample is automatically too large",
-        "The treatment effect must be negative",
-        "Randomization makes dropout irrelevant"
-      ],
-      "tag": "differential_attrition",
-      "type": "application",
-      "objective": "LO17.3",
-      "difficulty": "hard",
-      "conceptCluster": "causal_inference",
-      "primarySkill": "attrition_bias",
-      "secondarySkills": [],
-      "repairSkill": "attrition_bias",
-      "commonError": "Assuming initial randomization cures later selective dropout",
-      "feedback": "Unequal dropout can leave the remaining groups systematically different.",
-      "aHash": "d175b7509964dde933da5a601eb96fa1efe33c04637c563164bbf55f452da143"
-    },
-    {
-      "id": 229,
-      "sourceGame": "marketSignal",
-      "q": "A firm compares sales before and after a campaign, but a competitor exits during the same period. What is the core identification problem?",
-      "options": [
-        "The campaign has no measurable outcome",
-        "Competitor exit confounds the estimate",
-        "The competitor’s exit becomes a sunk cost",
-        "The firm needs a higher discount rate"
-      ],
-      "tag": "confounded_before_after",
-      "type": "application",
-      "objective": "LO17.3",
-      "difficulty": "hard",
-      "conceptCluster": "causal_inference",
-      "primarySkill": "confounding_detection",
-      "secondarySkills": [],
-      "repairSkill": "confounding_detection",
-      "commonError": "Treating every time change as caused by the intervention",
-      "feedback": "A simultaneous market shock prevents a clean causal interpretation.",
-      "aHash": "b6c8e6096689dacd3fe07c74d1c0a02ffe9e57c9165da66242754b71be681ba7"
-    },
-    {
-      "id": 230,
-      "sourceGame": "marketSignal",
-      "q": "Approving a bad drug costs $1 million, while rejecting a good drug costs $100,000. Which decision rule is sensible, all else equal?",
-      "options": [
-        "Use a looser threshold to reduce false positives",
-        "Ignore the unequal error costs",
-        "Use a stricter approval threshold",
-        "Approve whenever estimated benefit is positive"
-      ],
-      "tag": "asymmetric_error_threshold",
-      "type": "application",
-      "objective": "LO17.4",
-      "difficulty": "hard",
-      "conceptCluster": "decision_errors",
-      "primarySkill": "error_cost_minimization",
-      "secondarySkills": [],
-      "repairSkill": "error_cost_minimization",
-      "commonError": "Using the same threshold despite sharply unequal error costs",
-      "feedback": "The much larger false-positive cost justifies demanding stronger evidence before approval.",
-      "aHash": "fff04302795317edbda32f249c37cb9c6ce7ea3706c3547949de8fab9ec31e77"
+      "aHash": "3a774f8fd5d3986b0b23d41297ec05659b34da820c392490ccf548e73d4b0976",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 231,
       "sourceGame": "marketSignal",
-      "q": "Rule A has a 10% chance of a $500,000 false-positive cost and a 20% chance of a $100,000 false-negative cost. Rule B has probabilities of 4% and 35%. Which rule has lower expected error cost?",
+      "q": "Across all cases, Rule A has a 0.10 probability of a false positive costing $500,000 and a 0.20 probability of a false negative costing $100,000. Rule B’s corresponding unconditional probabilities are 0.04 and 0.35. Which has lower expected error cost per case?",
       "options": [
         "Rule A",
         "They have the same expected error cost",
@@ -5163,64 +5723,21 @@ const questionBanks = {
       "conceptCluster": "decision_errors",
       "primarySkill": "expected_error_cost_calculation",
       "secondarySkills": [],
-      "repairSkill": "expected_error_cost_calculation",
+      "repairSkill": "error_costs",
       "commonError": "Comparing error probabilities without weighting their costs",
       "feedback": "Rule A costs $70,000 in expectation; Rule B costs $55,000.",
-      "aHash": "69f1adc9da68b93230bc378d221b4a58b5f4b0b052d49e65e3874efd0861d20c"
-    },
-    {
-      "id": 232,
-      "sourceGame": "marketSignal",
-      "q": "A fraud screen fails to flag a fraudulent transaction. Which classification is correct when the null is “the transaction is legitimate”?",
-      "options": [
-        "A Type II error",
-        "A Type I error",
-        "A correct rejection",
-        "A true positive"
-      ],
-      "tag": "type_two_error_context",
-      "type": "application",
-      "objective": "LO17.4",
-      "difficulty": "hard",
-      "conceptCluster": "decision_errors",
-      "primarySkill": "error_type_identification",
-      "secondarySkills": [],
-      "repairSkill": "error_type_identification",
-      "commonError": "Naming the error without defining the null hypothesis",
-      "feedback": "Failing to reject legitimacy when fraud is present is a false negative, or Type II error.",
-      "aHash": "9e2c44c18f98523faa507beb8b7d84d261601601dc26d3d97e760c5c3d5e8152"
-    },
-    {
-      "id": 233,
-      "sourceGame": "marketSignal",
-      "q": "Demand is highly volatile across regions. Which estimate is likely to be most reliable?",
-      "options": [
-        "A small convenience sample from the largest city",
-        "A large stratified sample covering each region",
-        "The single most recent week nationwide",
-        "A manager’s unweighted guess"
-      ],
-      "tag": "stratified_uncertainty_estimate",
-      "type": "application",
-      "objective": "LO17.5",
-      "difficulty": "hard",
-      "conceptCluster": "uncertainty_estimation",
-      "primarySkill": "sampling_design",
-      "secondarySkills": [],
-      "repairSkill": "sampling_design",
-      "commonError": "Using a convenient sample that misses systematic regional variation",
-      "feedback": "A broad stratified sample captures regional heterogeneity and reduces sampling error.",
-      "aHash": "b46ba95cb0970b12077f8a1213d37cc38835a0da09cb3481af9f2fa674dc94b5"
+      "aHash": "69f1adc9da68b93230bc378d221b4a58b5f4b0b052d49e65e3874efd0861d20c",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 234,
       "sourceGame": "marketSignal",
       "q": "A simulation treats commodity prices and shipping costs as independent even though they usually rise together. What is the likely problem?",
       "options": [
-        "It guarantees an upward-biased average profit",
-        "It eliminates every low-cost outcome",
+        "Independence necessarily raises expected profit for every payoff structure",
+        "The same marginal cost distributions guarantee the same joint-tail outcomes",
         "It understates joint high-cost outcomes",
-        "It converts probabilities into sunk costs"
+        "Simulating more independent draws automatically restores the missing dependence"
       ],
       "tag": "correlated_simulation_inputs",
       "type": "application",
@@ -5229,252 +5746,34 @@ const questionBanks = {
       "conceptCluster": "uncertainty_estimation",
       "primarySkill": "simulation_design",
       "secondarySkills": [],
-      "repairSkill": "simulation_design",
+      "repairSkill": "uncertainty_estimation",
       "commonError": "Ignoring correlation among uncertain inputs",
       "feedback": "Positive correlation makes adverse cost outcomes occur together more often than an independent model predicts.",
-      "aHash": "9bb6264d40a7f172c559a6e7983980bed6d08cc90497fb304a550b402349b31d"
-    },
-    {
-      "id": 235,
-      "sourceGame": "marketSignal",
-      "q": "A long-term supply contract cannot list every possible disruption. Which provision best handles unforeseen contingencies?",
-      "options": [
-        "A promise that neither party may ever adapt",
-        "A clause assigning every unknown risk to the weaker party",
-        "No exit or dispute procedure",
-        "Triggered renegotiation with neutral arbitration"
-      ],
-      "tag": "incomplete_contract_institution",
-      "type": "application",
-      "objective": "LO17.6",
-      "difficulty": "hard",
-      "conceptCluster": "institution_design",
-      "primarySkill": "contingency_contract_design",
-      "secondarySkills": [],
-      "repairSkill": "contingency_contract_design",
-      "commonError": "Trying to specify every future event or leaving adaptation entirely discretionary",
-      "feedback": "Triggers, renegotiation rules, and arbitration create a controlled response to events the contract cannot fully describe.",
-      "aHash": "b4f68658121ac7fd625ca43ad002038d61a5fa465ad23341025ada8795ff79e8"
-    },
-    {
-      "id": 236,
-      "sourceGame": "marketSignal",
-      "q": "Two firms propose a merger in premium coffee. What evidence is most useful for defining the relevant product market?",
-      "options": [
-        "Buyer switching after a sustained coffee price increase",
-        "Whether the firms use similar logos",
-        "Whether both firms describe themselves as premium coffee companies in marketing materials",
-        "Whether coffee has a long production history"
-      ],
-      "tag": "market_definition_substitution",
-      "type": "application",
-      "objective": "LO8.1",
-      "difficulty": "hard",
-      "conceptCluster": "market_structure",
-      "primarySkill": "market_definition",
-      "secondarySkills": [],
-      "repairSkill": "market_definition",
-      "commonError": "Defining markets by labels rather than buyer substitution",
-      "feedback": "A relevant market is disciplined by products consumers view as practical substitutes.",
-      "aHash": "2592363fb5ae5d50fbff88541bf7a64266056253dc432361fbde090751c9f1f0"
-    },
-    {
-      "id": 237,
-      "sourceGame": "marketSignal",
-      "q": "A concrete supplier claims its market is national, but shipping costs make sales beyond 100 miles unprofitable. What is the better geographic market?",
-      "options": [
-        "The entire country",
-        "The local delivery area",
-        "Every place using concrete",
-        "Only the supplier’s factory property"
-      ],
-      "tag": "geographic_market_shipping",
-      "type": "application",
-      "objective": "LO8.1",
-      "difficulty": "hard",
-      "conceptCluster": "market_structure",
-      "primarySkill": "geographic_market_definition",
-      "secondarySkills": [],
-      "repairSkill": "geographic_market_definition",
-      "commonError": "Ignoring transportation costs that limit substitution",
-      "feedback": "High shipping costs can confine effective competition to a local area.",
-      "aHash": "16a2bdaec38ccd9903fb620745f012fe9667a79f2fd16682ae455140aadb5c84"
-    },
-    {
-      "id": 238,
-      "sourceGame": "marketSignal",
-      "q": "Electricity demand and supply differ sharply between peak afternoon hours and overnight hours. Why might these be separate markets for analysis?",
-      "options": [
-        "Electricity has a single physical form",
-        "Every buyer pays the same annual bill",
-        "Peak and off-peak substitution differs",
-        "Time never affects market boundaries"
-      ],
-      "tag": "temporal_market_definition",
-      "type": "application",
-      "objective": "LO8.1",
-      "difficulty": "hard",
-      "conceptCluster": "market_structure",
-      "primarySkill": "temporal_market_definition",
-      "secondarySkills": [],
-      "repairSkill": "temporal_market_definition",
-      "commonError": "Treating products delivered at different times as automatically interchangeable",
-      "feedback": "Peak and off-peak electricity can face different constraints and substitution possibilities.",
-      "aHash": "b67e7401b22744cc29ef91fea33992152955bcf478057116d5bd662f2f17f6c9"
-    },
-    {
-      "id": 239,
-      "sourceGame": "marketSignal",
-      "q": "A smartphone producer argues that basic flip phones belong in the same market. What evidence would weaken that claim?",
-      "options": [
-        "Both products are sold nationwide through many of the same wireless carriers",
-        "Both devices are sold by carriers",
-        "Both devices contain batteries",
-        "A smartphone price increase causes almost no switching to flip phones"
-      ],
-      "tag": "cross_price_market_definition",
-      "type": "application",
-      "objective": "LO8.1",
-      "difficulty": "hard",
-      "conceptCluster": "market_structure",
-      "primarySkill": "market_definition",
-      "secondarySkills": [],
-      "repairSkill": "market_definition",
-      "commonError": "Using shared physical features instead of substitution behavior",
-      "feedback": "Little switching after a price increase suggests flip phones do not strongly constrain smartphone pricing.",
-      "aHash": "349c1e835667e455b9312794c7270b1454b29ddd25ec67a7ce5a47d2df57dda2"
-    },
-    {
-      "id": 240,
-      "sourceGame": "marketSignal",
-      "q": "The price of oranges falls and consumers buy more oranges, with all other demand determinants unchanged. What occurred?",
-      "options": [
-        "A movement along the demand curve",
-        "An outward demand shift",
-        "An inward supply shift",
-        "A movement along the supply curve"
-      ],
-      "tag": "movement_along_demand",
-      "type": "application",
-      "objective": "LO8.2",
-      "difficulty": "hard",
-      "conceptCluster": "buyer_seller_behavior",
-      "primarySkill": "demand_curve_movement",
-      "secondarySkills": [],
-      "repairSkill": "demand_curve_movement",
-      "commonError": "Calling a price-driven quantity response a demand shift",
-      "feedback": "A change in the good’s own price changes quantity demanded along the existing curve.",
-      "aHash": "c703fdf9f6da151d3c5de0f3d199f1dda386e3ebf24ec5483b69ec37e5644a88"
+      "aHash": "9bb6264d40a7f172c559a6e7983980bed6d08cc90497fb304a550b402349b31d",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 241,
       "sourceGame": "marketSignal",
-      "q": "A new production method lowers marginal cost at every output. How should the market supply relationship change?",
+      "q": "Initially Qd = 210 − 5P and Qs = −30 + 5P. A production improvement adds 40 units to supply at every price; demand is unchanged. Relative to the original equilibrium, how do price and quantity change?",
       "options": [
-        "Quantity supplied falls along the old curve",
-        "Supply shifts right",
-        "Demand shifts right",
-        "Supply shifts left"
+        "Price falls $8 and quantity rises 40 units",
+        "Price falls $4 and quantity rises 20 units",
+        "Price stays unchanged and quantity rises 40 units",
+        "Price rises $4 and quantity falls 20 units"
       ],
-      "tag": "technology_supply_shift",
-      "type": "application",
-      "objective": "LO8.2",
-      "difficulty": "hard",
-      "conceptCluster": "buyer_seller_behavior",
-      "primarySkill": "supply_shift_identification",
-      "secondarySkills": [],
-      "repairSkill": "supply_shift_identification",
-      "commonError": "Treating a cost change as movement along supply",
-      "feedback": "Lower marginal cost makes sellers willing to supply more at each price.",
-      "aHash": "5d67ec34faecd8e199be926ee6723b2ee6f1bd23d4182f85e48e4815d1cf937f"
-    },
-    {
-      "id": 242,
-      "sourceGame": "marketSignal",
-      "q": "A buyer values a unit at $45, a seller’s marginal cost is $30, and the market price is $36. What total surplus does this trade create?",
-      "options": [
-        "$6",
-        "$9",
-        "$15",
-        "$21"
-      ],
-      "tag": "trade_surplus",
+      "tag": "shifted_equilibrium_calculation",
       "type": "calculation",
-      "objective": "LO8.2",
+      "objective": "LO8.4",
       "difficulty": "hard",
-      "conceptCluster": "buyer_seller_behavior",
-      "primarySkill": "gains_from_trade",
+      "conceptCluster": "hard_marketSignal_shifted_equilibrium_calculation",
+      "primarySkill": "shifted_equilibrium_calculation",
       "secondarySkills": [],
-      "repairSkill": "gains_from_trade",
-      "commonError": "Adding buyer and seller surplus incorrectly",
-      "feedback": "Total surplus is willingness to pay minus marginal cost: $45 - $30 = $15.",
-      "aHash": "012c420ecec5e4b1dec47c93a4043e027e2d9af669cb7be8deedd3c46e111110"
-    },
-    {
-      "id": 243,
-      "sourceGame": "marketSignal",
-      "q": "At the current price, the marginal buyer values the last unit at $22 and the marginal seller’s cost is $22. What does this equality indicate?",
-      "options": [
-        "Every buyer and seller earns the same amount of surplus at this price",
-        "Every seller has zero fixed cost",
-        "Demand must shift outward",
-        "The traded quantity is marginally efficient"
-      ],
-      "tag": "marginal_efficiency",
-      "type": "conceptual",
-      "objective": "LO8.2",
-      "difficulty": "hard",
-      "conceptCluster": "buyer_seller_behavior",
-      "primarySkill": "marginal_trade_efficiency",
-      "secondarySkills": [],
-      "repairSkill": "marginal_trade_efficiency",
-      "commonError": "Confusing marginal efficiency with zero surplus for all traders",
-      "feedback": "At the efficient quantity, the last buyer’s value equals the last seller’s marginal cost.",
-      "aHash": "f84f3492ca92daf0304fd0d8166e30324badf0c2a0d96e4373e242fc209c49c9"
-    },
-    {
-      "id": 244,
-      "sourceGame": "marketSignal",
-      "q": "Market demand is Qd = 300 - 10P and supply is Qs = 60 + 5P. What are equilibrium price and quantity?",
-      "options": [
-        "$16 and 140 units",
-        "$12 and 180 units",
-        "$18 and 120 units",
-        "$24 and 60 units"
-      ],
-      "tag": "linear_equilibrium_hard",
-      "type": "calculation",
-      "objective": "LO8.3",
-      "difficulty": "hard",
-      "conceptCluster": "market_equilibrium",
-      "primarySkill": "equilibrium_calculation",
-      "secondarySkills": [],
-      "repairSkill": "equilibrium_calculation",
-      "commonError": "Solving only one equation or substituting incorrectly",
-      "feedback": "Setting demand equal to supply gives P = 16 and Q = 140.",
-      "aHash": "459580e0e3f804a15403da9d5e487a41496a85ea6ecc2ca70b628dff2c298987"
-    },
-    {
-      "id": 245,
-      "sourceGame": "marketSignal",
-      "q": "Demand is Qd = 300 - 10P and supply is Qs = 60 + 5P. At a price of $12, what market condition exists?",
-      "options": [
-        "A surplus of 60 units",
-        "A shortage of 60 units",
-        "A shortage of 120 units",
-        "A surplus of 120 units"
-      ],
-      "tag": "linear_shortage",
-      "type": "calculation",
-      "objective": "LO8.3",
-      "difficulty": "hard",
-      "conceptCluster": "market_equilibrium",
-      "primarySkill": "shortage_surplus_calculation",
-      "secondarySkills": [],
-      "repairSkill": "shortage_surplus_calculation",
-      "commonError": "Reversing excess demand or calculating only one side",
-      "feedback": "At $12, demand is 180 and supply is 120, creating a 60-unit shortage.",
-      "aHash": "892d0367be0992e8d05b40bd7a49d32d0e1ddbe05068274bd4ac3c0696cd038f"
+      "repairSkill": "demand_supply_shifts",
+      "commonError": "equates_horizontal_supply_shift_with_equilibrium_quantity_change",
+      "feedback": "Originally P = 24 and Q = 90. New supply is Qs = 10 + 5P, so P = 20 and Q = 110. A 40-unit horizontal shift is not a 40-unit equilibrium-quantity increase.",
+      "aHash": "1556be2b87e838151476f743d277ce378c2bd94698875fe826d555f3bb4b3d77",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 246,
@@ -5493,80 +5792,11 @@ const questionBanks = {
       "conceptCluster": "market_equilibrium",
       "primarySkill": "tax_wedge_calculation",
       "secondarySkills": [],
-      "repairSkill": "tax_wedge_calculation",
+      "repairSkill": "equilibrium_shortage_surplus",
       "commonError": "Using one price for buyers and sellers after a per-unit tax",
       "feedback": "Solving with the $8 wedge gives Ps = $14, Pc = $22, and Q = 90.",
-      "aHash": "e9b0c6b9b34dbf67d5b4f5ff67d33780e3941447ee52edca2e7d7d696c3cf14a"
-    },
-    {
-      "id": 247,
-      "sourceGame": "marketSignal",
-      "q": "Using the graph, the market begins at S2 and D2. A price ceiling of $48 creates what immediate outcome?",
-      "options": [
-        "A surplus of 96 units",
-        "A shortage of 48 units",
-        "No shortage because $48 is an equilibrium price",
-        "A shortage of 96 units"
-      ],
-      "tag": "graph_price_ceiling",
-      "type": "graph",
-      "objective": "LO8.3",
-      "difficulty": "hard",
-      "conceptCluster": "hard_marketSignal_price_control_analysis",
-      "primarySkill": "price_control_analysis",
-      "secondarySkills": [],
-      "repairSkill": "price_control_analysis",
-      "commonError": "Reading quantities from the wrong curves",
-      "feedback": "At $48, quantity demanded on D2 is 120 and quantity supplied on S2 is 24, so shortage is 96.",
-      "image": "market_curves_independent.svg",
-      "graphRequired": true,
-      "aHash": "f86513a4d50220671966a282abf0ed56a8d36f638584fa143232570854ecc01f"
-    },
-    {
-      "id": 248,
-      "sourceGame": "marketSignal",
-      "q": "Using the graph, the market begins at S1 and D1. A price floor of $72 creates what immediate outcome?",
-      "options": [
-        "A surplus of 96 units",
-        "A shortage of 96 units",
-        "A surplus of 48 units",
-        "No surplus because $72 is below equilibrium"
-      ],
-      "tag": "graph_price_floor",
-      "type": "graph",
-      "objective": "LO8.3",
-      "difficulty": "hard",
-      "conceptCluster": "hard_marketSignal_price_control_analysis",
-      "primarySkill": "price_control_analysis",
-      "secondarySkills": [],
-      "repairSkill": "price_control_analysis",
-      "commonError": "Reversing demanded and supplied quantities",
-      "feedback": "At $72, supply on S1 is 120 and demand on D1 is 24, creating a 96-unit surplus.",
-      "image": "market_curves_independent.svg",
-      "graphRequired": true,
-      "aHash": "6553530ff518d7f3b791c323cbec0210ee3fcef493d21744ad5ccca5a751f52d"
-    },
-    {
-      "id": 249,
-      "sourceGame": "marketSignal",
-      "q": "Buyer quantities at prices $10, $8, and $6 are 20, 30, and 40. Seller quantities are 50, 30, and 10. What is equilibrium?",
-      "options": [
-        "$10 and 20 units",
-        "$8 and 30 units",
-        "$10 and 50 units",
-        "$6 and 40 units"
-      ],
-      "tag": "schedule_equilibrium_hard",
-      "type": "calculation",
-      "objective": "LO8.3",
-      "difficulty": "hard",
-      "conceptCluster": "market_equilibrium",
-      "primarySkill": "equilibrium_from_schedule",
-      "secondarySkills": [],
-      "repairSkill": "equilibrium_from_schedule",
-      "commonError": "Choosing the row with the highest quantity",
-      "feedback": "Equilibrium occurs where quantity demanded equals quantity supplied: 30 units at $8.",
-      "aHash": "03d1afc33267fa40d53885d7a34b7f34a5b8d4302f210401968c0c6ee9cf50e1"
+      "aHash": "e9b0c6b9b34dbf67d5b4f5ff67d33780e3941447ee52edca2e7d7d696c3cf14a",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 250,
@@ -5580,253 +5810,72 @@ const questionBanks = {
       ],
       "tag": "equation_demand_shift",
       "type": "calculation",
-      "objective": "LO8.3",
+      "objective": "LO8.4",
       "difficulty": "hard",
       "conceptCluster": "market_equilibrium",
       "primarySkill": "shifted_equilibrium_calculation",
       "secondarySkills": [],
-      "repairSkill": "shifted_equilibrium_calculation",
+      "repairSkill": "demand_supply_shifts",
       "commonError": "Changing quantity but leaving the demand equation unchanged",
       "feedback": "New demand is 230 - 5P; equating it with supply gives P = 21.",
-      "aHash": "3d41d958955832461b3be9ef1a80cf7985932df222d73ebfb3f78d78a7b6120c"
-    },
-    {
-      "id": 251,
-      "sourceGame": "marketSignal",
-      "q": "Using the symbolic graph, the market starts at S0 and D0. Demand rises to D1 before supply can adjust. Where is the new short-run equilibrium?",
-      "options": [
-        "P1 and QA",
-        "P1 and QD",
-        "P0 and QC",
-        "P2 and QB"
-      ],
-      "tag": "graph_demand_increase_symbolic",
-      "type": "graph",
-      "objective": "LO8.4",
-      "difficulty": "hard",
-      "conceptCluster": "comparative_statics",
-      "primarySkill": "single_curve_shift",
-      "secondarySkills": [],
-      "repairSkill": "single_curve_shift",
-      "commonError": "Moving to the intersection of the wrong curves",
-      "feedback": "The new intersection of S0 and D1 is P2, QB.",
-      "image": "demand_supply.png",
-      "graphRequired": true,
-      "aHash": "8d81fd2c3da360e0e708777afaba6bbf2ee66e5c0d6943d4e596540a44e417c3"
-    },
-    {
-      "id": 252,
-      "sourceGame": "marketSignal",
-      "q": "Using the symbolic graph, the market starts at S0 and D1. Supply then increases to S1. Where does equilibrium move?",
-      "options": [
-        "P1 and QD",
-        "P2 and QB",
-        "P0 and QC",
-        "P1 and QA"
-      ],
-      "tag": "graph_supply_increase_symbolic",
-      "type": "graph",
-      "objective": "LO8.4",
-      "difficulty": "hard",
-      "conceptCluster": "comparative_statics",
-      "primarySkill": "single_curve_shift",
-      "secondarySkills": [],
-      "repairSkill": "single_curve_shift",
-      "commonError": "Following demand instead of the specified supply shift",
-      "feedback": "The intersection of S1 and D1 is P1, QD.",
-      "image": "demand_supply.png",
-      "graphRequired": true,
-      "aHash": "9995f2266c1f2f3559db4b78fecfe50bb248ecf9605708d2beb28024091832fc"
-    },
-    {
-      "id": 253,
-      "sourceGame": "marketSignal",
-      "q": "Using the symbolic graph, both demand and supply increase from D0 and S0 to D1 and S1. What happens?",
-      "options": [
-        "Price rises to P2 and quantity rises from QA to QB after only demand changes",
-        "Price remains at P1 and quantity rises from QA to QD",
-        "Price falls to P0 and quantity rises to QC",
-        "Price remains at P1 and quantity falls to QA"
-      ],
-      "tag": "graph_double_increase_symbolic",
-      "type": "graph",
-      "objective": "LO8.4",
-      "difficulty": "hard",
-      "conceptCluster": "comparative_statics",
-      "primarySkill": "simultaneous_shift_analysis",
-      "secondarySkills": [],
-      "repairSkill": "simultaneous_shift_analysis",
-      "commonError": "Analyzing only one of the two shifts",
-      "feedback": "The market moves from S0-D0 at P1, QA to S1-D1 at P1, QD.",
-      "image": "demand_supply.png",
-      "graphRequired": true,
-      "aHash": "9b4bf14dfbaef176d88d99ad97fbe1c2de6494006ed210e705b70198ed06fce4"
-    },
-    {
-      "id": 254,
-      "sourceGame": "marketSignal",
-      "q": "Using the symbolic graph, the market moves from P2, QB to P1, QD while demand remains D1. What change caused the movement?",
-      "options": [
-        "Demand decreased from D1 to D0",
-        "Supply decreased from S1 to S0",
-        "Supply increased from S0 to S1",
-        "Demand increased from D0 to D1"
-      ],
-      "tag": "graph_reverse_inference_symbolic",
-      "type": "graph",
-      "objective": "LO8.4",
-      "difficulty": "hard",
-      "conceptCluster": "comparative_statics",
-      "primarySkill": "reverse_shift_inference",
-      "secondarySkills": [],
-      "repairSkill": "reverse_shift_inference",
-      "commonError": "Inferring a demand shift even though demand is fixed",
-      "feedback": "Holding D1 constant, the move from its intersection with S0 to its intersection with S1 is a supply increase.",
-      "image": "demand_supply.png",
-      "graphRequired": true,
-      "aHash": "8e7f68745bb606048950a396f2a91fd4250ba2596dae0d59f2faa3208135e19a"
-    },
-    {
-      "id": 258,
-      "sourceGame": "marketSignal",
-      "q": "Demand increases while supply decreases. Which outcome is certain?",
-      "options": [
-        "Equilibrium quantity rises",
-        "Equilibrium quantity falls",
-        "Equilibrium price rises",
-        "Equilibrium price remains unchanged"
-      ],
-      "tag": "opposing_shift_ambiguity",
-      "type": "application",
-      "objective": "LO8.4",
-      "difficulty": "hard",
-      "conceptCluster": "comparative_statics",
-      "primarySkill": "simultaneous_shift_analysis",
-      "secondarySkills": [],
-      "repairSkill": "simultaneous_shift_analysis",
-      "commonError": "Claiming a definite quantity change when the shifts oppose one another",
-      "feedback": "Both shifts raise price, while their quantity effects work in opposite directions.",
-      "aHash": "024a79b3c8357790bf59c62806eb1e0ca1d1c0fc65dd45faf728dcf2d7f293b7"
+      "aHash": "3d41d958955832461b3be9ef1a80cf7985932df222d73ebfb3f78d78a7b6120c",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 259,
       "sourceGame": "marketSignal",
-      "q": "A drought reduces supply while a health report increases demand for oranges. If price rises sharply but quantity barely changes, what is the best inference?",
+      "q": "Port damage reduces freight-service supply while new export orders increase demand. The market price rises sharply, but total shipments barely change. What is the best inference, holding other determinants fixed?",
       "options": [
+        "Both shifts necessarily reduced the quantity traded",
         "Only demand changed",
         "Only supply changed",
-        "Both demand and supply shifted right, producing reinforcing quantity effects",
-        "The demand and supply quantity effects were roughly offsetting"
+        "The two shifts have roughly offsetting effects on quantity"
       ],
       "tag": "reverse_simultaneous_inference",
-      "type": "application",
+      "type": "analysis",
       "objective": "LO8.4",
       "difficulty": "hard",
       "conceptCluster": "comparative_statics",
       "primarySkill": "reverse_shift_inference",
       "secondarySkills": [],
-      "repairSkill": "reverse_shift_inference",
+      "repairSkill": "simultaneous_market_changes",
       "commonError": "Ignoring that opposing shifts can offset in quantity",
-      "feedback": "Demand raises quantity while reduced supply lowers it, so similar shift sizes can leave quantity nearly unchanged.",
-      "aHash": "bf2e4f3bcffc54c817cb3fa78c7417f0ecf90cb5938b65d71e683647894724f7"
-    },
-    {
-      "id": 260,
-      "sourceGame": "marketSignal",
-      "q": "A competitive firm sells 500 units at $24. Average total cost is $20. What is economic profit?",
-      "options": [
-        "$2,000",
-        "$500",
-        "$10,000",
-        "$12,000"
-      ],
-      "tag": "competitive_profit_calculation",
-      "type": "calculation",
-      "objective": "LO9.1",
-      "difficulty": "hard",
-      "conceptCluster": "competitive_returns",
-      "primarySkill": "competitive_profit_calculation",
-      "secondarySkills": [],
-      "repairSkill": "competitive_profit_calculation",
-      "commonError": "Using total revenue or profit per unit as total profit",
-      "feedback": "Profit is ($24 - $20) × 500 = $2,000.",
-      "aHash": "4ccb899062c0080a49b32fba5350bd1bf6529bff1c9cb228b2c2bfbe50dc5cfc"
-    },
-    {
-      "id": 261,
-      "sourceGame": "marketSignal",
-      "q": "A competitive industry earns returns well above comparable industries. What adjustment should occur if entry is easy?",
-      "options": [
-        "Firms exit, contracting supply and raising returns",
-        "Capital and firms enter, expanding supply and reducing returns",
-        "Demand automatically disappears",
-        "High returns persist because price-taking firms cannot affect the market price"
-      ],
-      "tag": "competitive_return_entry",
-      "type": "application",
-      "objective": "LO9.1",
-      "difficulty": "hard",
-      "conceptCluster": "competitive_returns",
-      "primarySkill": "return_adjustment",
-      "secondarySkills": [],
-      "repairSkill": "return_adjustment",
-      "commonError": "Treating high competitive returns as permanent",
-      "feedback": "Entry expands industry supply and pushes price and returns toward normal levels.",
-      "aHash": "42139b55b105485ddf2453a42a2e5932ec56592fba2ae40ed0272ebc8f7181c8"
+      "feedback": "The demand increase pushes quantity up while the supply reduction pushes it down. A nearly unchanged total can reflect offsetting effects; it does not mean neither curve moved.",
+      "aHash": "ac0bb1ca9dbc546a8cfd694bdd372669b0356487946bef5b9750c791143a29a3",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 262,
       "sourceGame": "marketSignal",
-      "q": "A business reports $150,000 accounting profit, but the owner forgoes a $90,000 salary and $30,000 return on invested funds. What is economic profit?",
+      "q": "A proprietor’s business reports $150,000 accounting profit after paying the proprietor a $30,000 salary. Alternatively, the proprietor could earn a $90,000 salary elsewhere and simultaneously earn $30,000 on the invested capital. All other costs are recorded, and these alternatives cannot be earned while running the business. What is economic profit?",
       "options": [
-        "$60,000",
-        "$90,000",
+        "$120,000",
         "$30,000",
-        "$120,000"
+        "$60,000",
+        "$150,000"
       ],
       "tag": "economic_profit_opportunity_cost",
-      "type": "calculation",
+      "type": "analysis",
       "objective": "LO9.1",
       "difficulty": "hard",
       "conceptCluster": "competitive_returns",
       "primarySkill": "economic_profit_calculation",
       "secondarySkills": [],
-      "repairSkill": "economic_profit_calculation",
-      "commonError": "Ignoring implicit opportunity costs",
-      "feedback": "Economic profit is $150,000 - $90,000 - $30,000 = $30,000.",
-      "aHash": "b6b838f2dc6694bc400993035fc497064d7c1ad409d774c5bb83717749cd1f61"
-    },
-    {
-      "id": 263,
-      "sourceGame": "marketSignal",
-      "q": "In long-run competitive equilibrium, a firm earns zero economic profit. What does that mean?",
-      "options": [
-        "Its accounting profit is zero after explicit payments but before opportunity costs",
-        "Its owners receive no normal return",
-        "Its fixed cost has disappeared",
-        "Its revenue covers explicit and implicit opportunity costs"
-      ],
-      "tag": "zero_economic_profit_meaning",
-      "type": "conceptual",
-      "objective": "LO9.1",
-      "difficulty": "hard",
-      "conceptCluster": "competitive_returns",
-      "primarySkill": "normal_return_interpretation",
-      "secondarySkills": [],
-      "repairSkill": "normal_return_interpretation",
-      "commonError": "Treating zero economic profit as zero accounting income",
-      "feedback": "Zero economic profit includes a normal return sufficient to keep resources in the industry.",
-      "aHash": "a2d3699373c4d13394a5a8b09095395aec707d17726e64d2c734b742881b9036"
+      "repairSkill": "competitive_returns",
+      "commonError": "double_counts_salary_already_deducted_in_accounting_profit",
+      "feedback": "Current owner return is $150,000 profit plus $30,000 salary. The feasible alternative returns total $120,000, leaving $60,000 economic profit. Equivalently deduct the $60,000 additional forgone salary and $30,000 capital return from accounting profit.",
+      "aHash": "20853a4386b20ccf92d0837acd59d74d310e210c627a1c04da3d399c4372dc2c",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 264,
       "sourceGame": "marketSignal",
       "q": "Using the long-run competition graph, demand rises from D0 to D1 while market supply is initially S0. What sequence follows?",
       "options": [
-        "A to B, then entry shifts supply toward S1 and equilibrium moves to D",
-        "A to C, followed by continued losses that force demand to rise automatically to D1",
-        "D to B, then demand returns to D0",
-        "B to A with no change in the number of firms"
+        "A → B → D",
+        "A → D → B",
+        "A → B → C",
+        "A → C → D"
       ],
       "tag": "long_run_entry_sequence",
       "type": "graph",
@@ -5835,36 +5884,13 @@ const questionBanks = {
       "conceptCluster": "long_run_competition",
       "primarySkill": "long_run_adjustment",
       "secondarySkills": [],
-      "repairSkill": "long_run_adjustment",
+      "repairSkill": "mean_reversion_entry_exit",
       "commonError": "Skipping the short-run profit signal or reversing entry",
       "feedback": "The demand increase first raises price at B; positive profit then attracts entry until price returns to P1 at D.",
       "image": "long_run_competition.png",
       "graphRequired": true,
-      "aHash": "0e46d09a9bf68ca7829e08c92b45df6d774c1c2570318f967226039cdbef240e"
-    },
-    {
-      "id": 265,
-      "sourceGame": "marketSignal",
-      "q": "At point B in the long-run competition graph, what is happening to a representative firm?",
-      "options": [
-        "It produces Q1 and earns zero economic profit",
-        "It produces Q2 and earns positive economic profit",
-        "It shuts down because price is below average variable cost",
-        "It produces Q2 and earns an economic loss"
-      ],
-      "tag": "firm_at_point_b",
-      "type": "graph",
-      "objective": "LO9.2",
-      "difficulty": "hard",
-      "conceptCluster": "long_run_competition",
-      "primarySkill": "firm_market_linkage",
-      "secondarySkills": [],
-      "repairSkill": "firm_market_linkage",
-      "commonError": "Reading the firm panel at P1 instead of P2",
-      "feedback": "At market price P2, the firm chooses Q2 where price exceeds ATC.",
-      "image": "long_run_competition.png",
-      "graphRequired": true,
-      "aHash": "38f953552d11db4dd0e3079b77045109a33d3d34e58339907b40cababaf8fb1c"
+      "aHash": "6dd426bf7dcb3d4fdefa687edb5821f4f77270ae0b7b669926144328809459b9",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 266,
@@ -5883,347 +5909,41 @@ const questionBanks = {
       "conceptCluster": "long_run_competition",
       "primarySkill": "loss_exit_adjustment",
       "secondarySkills": [],
-      "repairSkill": "loss_exit_adjustment",
+      "repairSkill": "mean_reversion_entry_exit",
       "commonError": "Inferring shutdown without an average variable cost curve",
       "feedback": "P0 is below minimum ATC, so firms lose money; the graph supports exit pressure, not a definite shutdown decision.",
       "image": "long_run_competition.png",
       "graphRequired": true,
-      "aHash": "244fe0ad1e4548af6c37788a046a63bf2f48df0a39f33f69fc9506a24ce139b8"
-    },
-    {
-      "id": 267,
-      "sourceGame": "marketSignal",
-      "q": "An innovator earns unusually high profit from a cost-saving process. Rivals then imitate it and new firms enter. What pattern does this illustrate?",
-      "options": [
-        "Permanent monopoly rent",
-        "A compensating wage differential",
-        "A Type I error",
-        "Mean reversion in profit"
-      ],
-      "tag": "profit_mean_reversion",
-      "type": "application",
-      "objective": "LO9.2",
-      "difficulty": "hard",
-      "conceptCluster": "long_run_competition",
-      "primarySkill": "mean_reversion",
-      "secondarySkills": [],
-      "repairSkill": "mean_reversion",
-      "commonError": "Treating an early advantage as permanently protected",
-      "feedback": "Imitation and entry push unusually high profit back toward a normal level.",
-      "aHash": "1a972c1f8c28070113a8c91c29b5da3f202d0a2e5bff63bfc62607c0e34b52de"
-    },
-    {
-      "id": 268,
-      "sourceGame": "marketSignal",
-      "q": "A dangerous job pays $32 per hour, while a similar safe job pays $26. Workers value the added injury risk at $4 per hour. What is the net wage premium beyond compensation for risk?",
-      "options": [
-        "$2 per hour",
-        "$4 per hour",
-        "$6 per hour",
-        "$10 per hour"
-      ],
-      "tag": "net_wage_risk_premium",
-      "type": "calculation",
-      "objective": "LO9.3",
-      "difficulty": "hard",
-      "conceptCluster": "risk_and_returns",
-      "primarySkill": "compensating_wage_differential",
-      "secondarySkills": [],
-      "repairSkill": "compensating_wage_differential",
-      "commonError": "Calling the entire wage gap an excess return",
-      "feedback": "The $6 wage gap includes $4 compensation for risk, leaving a $2 net premium.",
-      "aHash": "20a8c1c51cfbc2835f1094db2574c47eca9990faec2b53317e9f115afe2c7c63"
-    },
-    {
-      "id": 269,
-      "sourceGame": "marketSignal",
-      "q": "A risky bond yields 9%, a safe bond yields 5%, and expected default loss is 2%. What is the risk-adjusted excess return?",
-      "options": [
-        "4%",
-        "2%",
-        "6%",
-        "7%"
-      ],
-      "tag": "risk_adjusted_bond_return",
-      "type": "calculation",
-      "objective": "LO9.3",
-      "difficulty": "hard",
-      "conceptCluster": "risk_and_returns",
-      "primarySkill": "compensating_risk_differential",
-      "secondarySkills": [],
-      "repairSkill": "compensating_risk_differential",
-      "commonError": "Ignoring expected loss in the risky asset’s return",
-      "feedback": "Net risky return is 7%; compared with 5% safe return, excess return is 2%.",
-      "aHash": "3342b7db5f17734b65d90e15e472a4cdc628e803a1347da132a320dbba907bd9"
-    },
-    {
-      "id": 270,
-      "sourceGame": "marketSignal",
-      "q": "Which pairing is correct?",
-      "options": [
-        "Both are wage differentials",
-        "Both are risk differentials",
-        "Job amenities create wage differentials; asset risk creates risk differentials",
-        "The job premium is a risk differential and the asset premium is a wage differential"
-      ],
-      "tag": "differential_distinction_hard",
-      "type": "conceptual",
-      "objective": "LO9.3",
-      "difficulty": "hard",
-      "conceptCluster": "risk_and_returns",
-      "primarySkill": "differential_classification",
-      "secondarySkills": [],
-      "repairSkill": "differential_classification",
-      "commonError": "Switching labor-market and asset-market compensation",
-      "feedback": "Wage differentials compensate job attributes; risk differentials compensate uncertainty in asset returns.",
-      "aHash": "d4bde93a83dda632507591e1ce25f791dfd45725f997ca8e24d39fa5280ef26d"
-    },
-    {
-      "id": 271,
-      "sourceGame": "marketSignal",
-      "q": "A scenic rural job pays less than an otherwise similar urban job. What is the best economic interpretation?",
-      "options": [
-        "The rural labor market must be noncompetitive because identical jobs always pay equally",
-        "The wage gap proves selection bias",
-        "The urban job must have lower productivity",
-        "Workers may accept lower pay in exchange for the amenity"
-      ],
-      "tag": "amenity_wage_differential",
-      "type": "application",
-      "objective": "LO9.3",
-      "difficulty": "hard",
-      "conceptCluster": "risk_and_returns",
-      "primarySkill": "compensating_wage_differential",
-      "secondarySkills": [],
-      "repairSkill": "compensating_wage_differential",
-      "commonError": "Assuming every wage difference reflects exploitation or productivity",
-      "feedback": "A desirable nonwage attribute can offset part of monetary compensation.",
-      "aHash": "1e4ebfed299a67bcccb41f1381c6fb73c44c6380fdc9207833944d429d357419"
-    },
-    {
-      "id": 272,
-      "sourceGame": "marketSignal",
-      "q": "A risky asset yields 10% and a safe asset yields 4%. The safe yield rises to 7% while the risky yield stays at 10%. What happens to the risk premium?",
-      "options": [
-        "It falls from 6% to 3%",
-        "It rises from 6% to 7%",
-        "It remains 6%",
-        "It falls from 10% to 7%"
-      ],
-      "tag": "shrinking_risk_premium",
-      "type": "calculation",
-      "objective": "LO9.4",
-      "difficulty": "hard",
-      "conceptCluster": "risk_and_returns",
-      "primarySkill": "risk_premium_calculation",
-      "secondarySkills": [],
-      "repairSkill": "risk_premium_calculation",
-      "commonError": "Using the risky return alone as the premium",
-      "feedback": "Risk premium equals risky return minus safe return.",
-      "aHash": "3eaaced565fd8eed79577f32e6ac332e2797cfb2550d85d3ee17d8722f066f55"
-    },
-    {
-      "id": 273,
-      "sourceGame": "marketSignal",
-      "q": "Investors require at least a 4% premium for a certain risky asset. It yields 8% while the safe return is 6%. What should investors tend to do?",
-      "options": [
-        "Buy more because 8% exceeds 6%",
-        "Shift away because the 2% premium is too small",
-        "Remain indifferent because both returns are positive",
-        "Treat the risky asset as risk free"
-      ],
-      "tag": "required_risk_premium",
-      "type": "application",
-      "objective": "LO9.4",
-      "difficulty": "hard",
-      "conceptCluster": "risk_and_returns",
-      "primarySkill": "portfolio_reallocation",
-      "secondarySkills": [],
-      "repairSkill": "portfolio_reallocation",
-      "commonError": "Accepting any positive spread without comparing it with required compensation",
-      "feedback": "The asset offers only 2% extra return, below the 4% premium investors require.",
-      "aHash": "a32714a3bddefc758de636ae74309b2d6610ff20f73c193b5b18d04bcee6c12d"
-    },
-    {
-      "id": 274,
-      "sourceGame": "marketSignal",
-      "q": "A bond promises 12%, expected default loss is 5%, and the safe return is 5%. What is its expected risk premium?",
-      "options": [
-        "5%",
-        "7%",
-        "2%",
-        "12%"
-      ],
-      "tag": "default_adjusted_premium",
-      "type": "calculation",
-      "objective": "LO9.4",
-      "difficulty": "hard",
-      "conceptCluster": "risk_and_returns",
-      "primarySkill": "risk_premium_calculation",
-      "secondarySkills": [],
-      "repairSkill": "risk_premium_calculation",
-      "commonError": "Subtracting only the safe rate or only expected loss",
-      "feedback": "Expected net return is 7%; subtracting the 5% safe return leaves 2%.",
-      "aHash": "3342b7db5f17734b65d90e15e472a4cdc628e803a1347da132a320dbba907bd9"
-    },
-    {
-      "id": 275,
-      "sourceGame": "marketSignal",
-      "q": "The expected default loss on that bond rises from 5% to 8%, with promised and safe returns unchanged. What should happen?",
-      "options": [
-        "Investors buy more because a 12% promised yield fully offsets any increase in expected default loss",
-        "The risk premium remains 2%",
-        "The bond becomes equivalent to cash",
-        "Investors shift away because expected net return falls below the safe return"
-      ],
-      "tag": "default_risk_reallocation",
-      "type": "application",
-      "objective": "LO9.4",
-      "difficulty": "hard",
-      "conceptCluster": "risk_and_returns",
-      "primarySkill": "portfolio_reallocation",
-      "secondarySkills": [],
-      "repairSkill": "portfolio_reallocation",
-      "commonError": "Focusing on promised yield instead of expected net return",
-      "feedback": "Expected net return falls to 4%, below the 5% safe return.",
-      "aHash": "2d295c56a509563939d96492b1e9bf6cb331d842655bafee5ab1c9c56d788f6b"
-    },
-    {
-      "id": 276,
-      "sourceGame": "marketSignal",
-      "q": "Which condition best allows unusually high monopoly profit to persist?",
-      "options": [
-        "A durable barrier that blocks entry and imitation",
-        "Free access to the technology combined with rapid entry by informed rivals",
-        "Low customer switching costs",
-        "Free access to the same technology"
-      ],
-      "tag": "persistent_monopoly_profit",
-      "type": "conceptual",
-      "objective": "LO9.5",
-      "difficulty": "hard",
-      "conceptCluster": "profit_erosion",
-      "primarySkill": "barriers_to_entry",
-      "secondarySkills": [],
-      "repairSkill": "barriers_to_entry",
-      "commonError": "Choosing conditions that intensify competitive pressure",
-      "feedback": "Profits persist when rivals cannot readily enter or reproduce the advantage.",
-      "aHash": "7d44e797c4fd82cfce53b250b44ba9f8ae29dafaddb676b368d0d0f4a3c2968c"
-    },
-    {
-      "id": 277,
-      "sourceGame": "marketSignal",
-      "q": "A software firm introduces a popular feature. Within months, competitors copy it and prices fall. What caused profit erosion?",
-      "options": [
-        "A higher discount rate increased demand",
-        "Imitation reduced differentiation",
-        "Compensating wages raised consumer surplus",
-        "Random assignment lowered marginal cost"
-      ],
-      "tag": "software_imitation",
-      "type": "application",
-      "objective": "LO9.5",
-      "difficulty": "hard",
-      "conceptCluster": "profit_erosion",
-      "primarySkill": "entry_and_imitation",
-      "secondarySkills": [],
-      "repairSkill": "entry_and_imitation",
-      "commonError": "Treating innovation as permanently exclusive",
-      "feedback": "Copying gives consumers substitutes and weakens the original firm’s pricing power.",
-      "aHash": "19f5637e320ce18057ed520eb1a50523d0efd9a84c58b2d0a465d507cf65579e"
-    },
-    {
-      "id": 278,
-      "sourceGame": "marketSignal",
-      "q": "Why can a natural monopoly retain market power longer than an ordinary high-profit firm?",
-      "options": [
-        "Its customers face perfectly elastic demand at every output level in the market",
-        "Its fixed cost is zero",
-        "Large scale economies can make duplicate entry inefficient",
-        "It must charge marginal cost by law"
-      ],
-      "tag": "natural_monopoly_entry",
-      "type": "conceptual",
-      "objective": "LO9.5",
-      "difficulty": "hard",
-      "conceptCluster": "profit_erosion",
-      "primarySkill": "barriers_to_entry",
-      "secondarySkills": [],
-      "repairSkill": "barriers_to_entry",
-      "commonError": "Assuming high profit alone creates a durable barrier",
-      "feedback": "When average cost falls over the relevant market range, one large producer may have a cost advantage over entrants.",
-      "aHash": "221d13763a47eb495c76298fcaf857a9f9c4ab02cc3dff8d5e37af7f2232e698"
-    },
-    {
-      "id": 279,
-      "sourceGame": "marketSignal",
-      "q": "A pharmaceutical patent expires and generic firms enter. What is the expected long-run effect on the incumbent?",
-      "options": [
-        "Higher price and larger market share",
-        "Unchanged profit because the original research spending remains a permanent legal barrier",
-        "Automatic conversion into a natural monopoly",
-        "Lower price, lower market share, and reduced economic profit"
-      ],
-      "tag": "patent_expiration_effect",
-      "type": "application",
-      "objective": "LO9.5",
-      "difficulty": "hard",
-      "conceptCluster": "profit_erosion",
-      "primarySkill": "entry_and_imitation",
-      "secondarySkills": [],
-      "repairSkill": "entry_and_imitation",
-      "commonError": "Assuming sunk research cost protects future market power",
-      "feedback": "Generic entry expands substitutes and erodes the incumbent’s price-cost margin.",
-      "aHash": "28507cd6ebab482cd25e840d6bfc20232c3e22d9b5bb1d4a4d7c1634ff6841b6"
-    },
-    {
-      "id": 280,
-      "sourceGame": "marketSignal",
-      "q": "A monopolist faces demand P = 100 - Q and constant marginal cost of $20. What output and price maximize profit?",
-      "options": [
-        "40 units at $60",
-        "20 units at $80",
-        "60 units at $40",
-        "80 units at $20"
-      ],
-      "tag": "linear_monopoly_solution",
-      "type": "calculation",
-      "objective": "LO9.6",
-      "difficulty": "hard",
-      "conceptCluster": "hard_marketSignal_monopoly_price_output",
-      "primarySkill": "monopoly_price_output",
-      "secondarySkills": [],
-      "repairSkill": "monopoly_price_output",
-      "commonError": "Setting price equal to marginal cost instead of marginal revenue",
-      "feedback": "MR = 100 - 2Q. Setting MR = 20 gives Q = 40 and P = 60.",
-      "aHash": "48eb01c7764e23f1783cbc18c3da53c8b2112e54df71d0fd2b428350acdd0917"
+      "aHash": "244fe0ad1e4548af6c37788a046a63bf2f48df0a39f33f69fc9506a24ce139b8",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 283,
       "sourceGame": "marketSignal",
-      "q": "Demand is P = 100 - Q and marginal cost is $20, with no externalities or fixed costs. Competition produces 80 units at $20; single-price monopoly produces 40 at $60. Which statement is correct?",
+      "q": "Demand is P = 100 − Q and MC = $20, with no fixed costs or externalities. Competition produces 80 units at $20; a single-price monopoly produces 40 at $60. Of the reduction in consumer surplus, how much becomes monopoly profit and how much is lost total surplus?",
       "options": [
-        "All lost consumer surplus becomes monopoly profit, so no total surplus is destroyed",
-        "Monopoly raises total surplus because price is higher",
-        "The output reduction has no efficiency effect",
-        "It transfers some surplus and destroys gains from withheld output"
+        "$1,600 becomes profit and $1,600 is lost surplus",
+        "$2,400 becomes profit and no surplus is lost",
+        "$800 becomes profit and $1,600 is lost surplus",
+        "$1,600 becomes profit and $800 is lost surplus"
       ],
       "tag": "monopoly_surplus_effect",
-      "type": "application",
+      "type": "calculation",
       "objective": "LO9.6",
       "difficulty": "hard",
       "conceptCluster": "hard_marketSignal_monopoly_market_effects",
       "primarySkill": "monopoly_market_effects",
       "secondarySkills": [],
-      "repairSkill": "monopoly_market_effects",
+      "repairSkill": "monopoly_welfare_regulation",
       "commonError": "Treating every consumer loss as a transfer to the monopolist",
-      "feedback": "Some consumer surplus becomes profit, but mutually beneficial trades between 40 and 80 units disappear.",
-      "aHash": "b02f550b84479e2aa2f1913ebf746cfbb5ab3a0d2d9d3b4b3a2c279e50291c34"
+      "feedback": "Competitive consumer surplus is 0.5 × 80 × 80 = $3,200; monopoly consumer surplus is 0.5 × 40 × 40 = $800. The $2,400 reduction divides into $1,600 profit and $800 deadweight loss.",
+      "aHash": "fe63af52dc897069433c12a8c4c23297cafbecdd7ea38ace6fcdc63cf44cee31",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 285,
       "sourceGame": "marketSignal",
-      "q": "Demand is P = 70 - Q and marginal cost rises from $10 to $20. How does the monopoly solution change?",
+      "q": "Demand is P = 70 - Q and marginal cost rises from $10 to $20. There is no avoidable fixed cost. How does the monopoly solution change?",
       "options": [
         "Output rises from 30 to 40 while price falls because higher marginal cost expands supply",
         "Output falls from 30 to 25 and price rises from $40 to $45",
@@ -6237,45 +5957,24 @@ const questionBanks = {
       "conceptCluster": "hard_marketSignal_monopoly_price_output",
       "primarySkill": "monopoly_price_output",
       "secondarySkills": [],
-      "repairSkill": "monopoly_price_output",
+      "repairSkill": "monopoly_output_profit",
       "commonError": "Using the competitive rule P = MC",
       "feedback": "With MR = 70 - 2Q, Q falls from 30 to 25; demand then gives prices $40 and $45.",
-      "aHash": "de8cc8c55b06c3516eaa8eb385067193a32ce39125e33d29658f0cdbcc0020ba"
-    },
-    {
-      "id": 290,
-      "sourceGame": "marketSignal",
-      "q": "A software vendor builds a custom integration for one client. The client then threatens to cancel unless the vendor cuts the monthly fee. Which condition makes hold-up most likely?",
-      "options": [
-        "The integration can be sold unchanged to many clients",
-        "The vendor has already made client-specific investments with few alternative uses",
-        "The client paid the full contract price before work began",
-        "The vendor’s marginal cost is constant across all clients"
-      ],
-      "tag": "post_investment_holdup",
-      "type": "application",
-      "objective": "LO5.5",
-      "difficulty": "hard",
-      "conceptCluster": "hard_marketSignal_post_investment_holdup",
-      "primarySkill": "post_investment_holdup",
-      "secondarySkills": [],
-      "repairSkill": "post_investment_holdup",
-      "commonError": "misses_renegotiation_risk",
-      "feedback": "Hold-up is strongest when one side is locked in by a specific investment that has weak value outside the relationship.",
-      "aHash": "8c5cbb3b96309d1b4c2bc825d23bf36c6031c65c7b97031b6ccf9e21db3c5b73"
+      "aHash": "de8cc8c55b06c3516eaa8eb385067193a32ce39125e33d29658f0cdbcc0020ba",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 291,
       "sourceGame": "marketSignal",
-      "q": "A buyer and supplier can create $120,000 of value if the supplier first spends $70,000 on specialized equipment. Without protection, the supplier expects the buyer to renegotiate so the supplier keeps only $55,000 of the created value. What outcome is most likely?",
+      "q": "A proposed buyer-supplier project creates $120,000 of gross present value before a $70,000 supplier-specific investment. After anticipated renegotiation, the supplier expects only $55,000 in receipts, while bearing the full investment cost. With no other costs or outside recovery, which conclusion follows?",
       "options": [
-        "The supplier invests because total value is positive",
-        "The supplier underinvests because its private expected return is below its investment cost",
-        "The buyer underinvests because the equipment is generic",
-        "The deal is efficient because average cost is falling"
+        "The supplier gains $50,000 because it receives all joint value",
+        "The project has $50,000 joint net value but a $15,000 supplier loss, so it may not be undertaken",
+        "The supplier should ignore the $70,000 before deciding whether to invest",
+        "The project destroys $15,000 of total value because the supplier loses that amount"
       ],
       "tag": "post_investment_holdup",
-      "type": "multi-step",
+      "type": "analysis",
       "objective": "LO5.5",
       "difficulty": "hard",
       "conceptCluster": "hard_marketSignal_post_investment_holdup",
@@ -6283,84 +5982,42 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "post_investment_holdup",
       "commonError": "misses_renegotiation_risk",
-      "feedback": "The total surplus is positive, but the supplier expects to keep only $55,000 after spending $70,000. Private incentives can block a wealth-creating investment.",
-      "aHash": "ed2e5b9c35a8ff1aba7a9754066a4c646c7eb0a2e25cff487c21906696d06347"
+      "feedback": "Joint net value is $120,000 − $70,000 = $50,000. Supplier NPV is $55,000 − $70,000 = −$15,000. Private appropriation can prevent a jointly valuable specific investment.",
+      "aHash": "b8b7181a980bb395c33f4563804f46af90763966321cf48ccdfa7b70246f193a",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 292,
       "sourceGame": "marketSignal",
       "q": "A manager says, “The supplier already bought the custom equipment, so now we should force the lowest possible price.” What cost should the manager recognize?",
       "options": [
-        "The old equipment cost is relevant to every future order",
+        "Historical investment must be recovered on every new order regardless of alternatives",
         "Aggressive renegotiation may reduce future supplier investment or raise required contract protections",
-        "The supplier’s fixed cost becomes the buyer’s fixed cost",
-        "The buyer should ignore all future quality and delivery effects"
+        "Once equipment is sunk, future suppliers will disregard any history of renegotiation",
+        "A lower payment today guarantees greater total value over all future contracts"
       ],
       "tag": "post_investment_holdup",
-      "type": "trap",
+      "type": "analysis",
       "objective": "LO5.5",
       "difficulty": "hard",
       "conceptCluster": "hard_marketSignal_post_investment_holdup",
       "primarySkill": "post_investment_holdup",
       "secondarySkills": [],
       "repairSkill": "post_investment_holdup",
-      "commonError": "misses_renegotiation_risk",
+      "commonError": "ignores_future_investment_incentives_from_renegotiation",
       "feedback": "Squeezing a locked-in supplier may save money today but can destroy future investment incentives, quality, reliability, or willingness to contract.",
-      "aHash": "369dae494b2456405864e464b399edb963f9003a219d3f88960c6afeca46484e"
-    },
-    {
-      "id": 293,
-      "sourceGame": "marketSignal",
-      "q": "Which contract feature is most aimed at reducing hold-up when demand may change after a specific investment?",
-      "options": [
-        "No written terms until after the investment is complete",
-        "A price-adjustment formula tied to observable cost or demand conditions",
-        "A promise that either side can rewrite the contract at any time",
-        "A bonus for the buyer when the supplier’s outside option falls"
-      ],
-      "tag": "post_investment_holdup",
-      "type": "application",
-      "objective": "LO5.5",
-      "difficulty": "hard",
-      "conceptCluster": "hard_marketSignal_post_investment_holdup",
-      "primarySkill": "post_investment_holdup",
-      "secondarySkills": [],
-      "repairSkill": "post_investment_holdup",
-      "commonError": "misses_renegotiation_risk",
-      "feedback": "A pre-agreed adjustment formula can handle uncertainty without leaving one side exposed to opportunistic renegotiation.",
-      "aHash": "f8f5fb210ddc86dd01c258ee9132bab642eb76bf3d4ce3c31e0a6b75f6b41a57"
-    },
-    {
-      "id": 294,
-      "sourceGame": "marketSignal",
-      "q": "A supplier can make a specific investment costing $40,000. The investment creates $70,000 in joint value. If the supplier expects to keep only $35,000 after renegotiation, what happens?",
-      "options": [
-        "The supplier likely refuses because its expected private payoff is $5,000 below cost",
-        "The supplier invests because joint value exceeds cost by $30,000",
-        "The supplier invests because the cost is fixed after purchase",
-        "The buyer refuses because the supplier keeps all surplus"
-      ],
-      "tag": "post_investment_holdup",
-      "type": "calculation",
-      "objective": "LO5.5",
-      "difficulty": "hard",
-      "conceptCluster": "hard_marketSignal_post_investment_holdup",
-      "primarySkill": "post_investment_holdup",
-      "secondarySkills": [],
-      "repairSkill": "post_investment_holdup",
-      "commonError": "misses_renegotiation_risk",
-      "feedback": "Joint value is high enough, but the supplier expects only $35,000 while paying $40,000. That private loss can prevent efficient investment.",
-      "aHash": "a6659023475c02977531155156d33261c3880ee877f5c43ebe9b32faddd0486c"
+      "aHash": "369dae494b2456405864e464b399edb963f9003a219d3f88960c6afeca46484e",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 9165,
       "sourceGame": "marketSignal",
       "q": "Refer to the numerical graph. The market is observed at price $72 and quantity 72. A later observation shows price $48 and quantity 72. Which change is consistent with the graph?",
       "options": [
-        "Demand increased and supply decreased",
-        "Demand fell (D2 to D1); supply rose (S2 to S1)",
-        "Only supply decreased",
-        "Only demand increased"
+        "Demand D1 → D2 and supply S1 → S2",
+        "Demand D2 → D1 and supply S2 → S1",
+        "Demand D2 → D1 with supply remaining S2",
+        "Supply S2 → S1 with demand remaining D2"
       ],
       "tag": "boss_numeric_graph_reverse_transition",
       "type": "graph_analysis",
@@ -6377,7 +6034,8 @@ const questionBanks = {
       "feedback": "The $72,72 point is S2-D2. The $48,72 point is S1-D1. Demand shifted left while supply shifted right.",
       "image": "market_curves_independent.svg",
       "graphRequired": true,
-      "aHash": "3c6e1b38cfff854fd3eabab0c44b370fb6c31f205282c0c6e7b07020f24bba4b"
+      "aHash": "f5ffe52f13d47d2a18a2fc2dae614a314b9b9e0b10bdc4a267c299b5f4605045",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 9178,
@@ -6402,7 +6060,8 @@ const questionBanks = {
       "repairSkill": "monopoly_welfare_regulation",
       "commonError": "Assuming marginal-cost pricing automatically covers large fixed cost",
       "feedback": "P = MC implements efficient usage in this model; a separate lump-sum subsidy covers TC minus revenue without changing the marginal price.",
-      "aHash": "ecfd2ed7fb1cd2b147ecc9ee3fdc14a77a56be55c348a219d824cad6e00c9709"
+      "aHash": "ecfd2ed7fb1cd2b147ecc9ee3fdc14a77a56be55c348a219d824cad6e00c9709",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 9184,
@@ -6427,7 +6086,8 @@ const questionBanks = {
       "repairSkill": "monopoly_welfare_regulation",
       "commonError": "Keeping the unregulated MR=MC quantity after the cap changes the firm's feasible revenue schedule",
       "feedback": "Unregulated MR=120-2Q gives Q=50. At capped price $50, demand is Q=70, and serving those units remains profitable because $50>$20.",
-      "aHash": "54ad45cd9c3b0742f8d1d36f120ac295d10a36183c39e5d37b24e51f859612ed"
+      "aHash": "54ad45cd9c3b0742f8d1d36f120ac295d10a36183c39e5d37b24e51f859612ed",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 356,
@@ -6435,13 +6095,13 @@ const questionBanks = {
       "q": "Refer to the graph. The market begins at S2 and D1. Demand rises to D2, then production costs fall and supply moves to S1. What is the complete equilibrium path?",
       "options": [
         "$60 and 48, then $72 and 72, then $60 and 96",
-        "$60 and 48, then $48 and 72, then $60 and 96",
-        "$72 and 72, then $60 and 96, then $48 and 72",
-        "$60 and 96, then $72 and 72, then $60 and 48"
+        "$60 and 48, then $84 and 72, then $60 and 96",
+        "$48 and 48, then $60 and 72, then $48 and 96",
+        "$60 and 24, then $72 and 48, then $60 and 72"
       ],
       "tag": "numeric_graph_sequence",
       "type": "graph",
-      "objective": "LO8.3",
+      "objective": "LO8.4",
       "difficulty": "hard",
       "conceptCluster": "hard_marketSignal_comparative_statics",
       "primarySkill": "comparative_statics",
@@ -6449,12 +6109,13 @@ const questionBanks = {
         "demand_shift",
         "supply_shift"
       ],
-      "repairSkill": "comparative_statics",
+      "repairSkill": "simultaneous_market_changes",
       "commonError": "Jumping directly to the final point or reversing one of the shifts",
       "feedback": "The initial equilibrium is S2/D1; demand moves it to S2/D2; lower costs then move it to S1/D2.",
       "image": "market_curves_independent.svg",
       "graphRequired": true,
-      "aHash": "04e9f786163fdd8428738c75089883bf3eba01e366b56d03526651df8ad23379"
+      "aHash": "04e9f786163fdd8428738c75089883bf3eba01e366b56d03526651df8ad23379",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 384,
@@ -6475,15 +6136,16 @@ const questionBanks = {
       "secondarySkills": [
         "inverse_demand"
       ],
-      "repairSkill": "monopoly_output_rule",
+      "repairSkill": "monopoly_output_profit",
       "commonError": "Setting price equal to marginal cost rather than marginal revenue equal to marginal cost",
       "feedback": "MR = 138 - 4Q. Setting it equal to 30 gives Q = 27; demand gives P = 84.",
-      "aHash": "6aac7193953fcd38555ccba8284b4c7667056db514454f9c8005c8125cf84f7b"
+      "aHash": "6aac7193953fcd38555ccba8284b4c7667056db514454f9c8005c8125cf84f7b",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 385,
       "sourceGame": "marketSignal",
-      "q": "Using P=100-Q and MC=20, what deadweight-loss triangle results from monopoly relative to competition?",
+      "q": "A single-price monopolist faces demand P = 100 − Q and constant MC = $20, with no fixed costs or externalities. What is deadweight loss relative to competition?",
       "options": [
         "$400",
         "$800",
@@ -6499,47 +6161,24 @@ const questionBanks = {
       "secondarySkills": [
         "welfare_analysis"
       ],
-      "repairSkill": "monopoly_market_effects",
+      "repairSkill": "monopoly_welfare_regulation",
       "commonError": "Using the monopoly profit rectangle instead of the lost-trade triangle",
       "feedback": "Competitive Q is 80, monopoly Q is 40, and the wedge at Q=40 is $40; DWL=.5(40)(40)=$800.",
-      "aHash": "752cf93704f4a6dea555249feb7cfecec1f2587839021a6b4040f57170baae9c"
-    },
-    {
-      "id": 387,
-      "sourceGame": "marketSignal",
-      "q": "A natural monopoly has declining average total cost and MC below ATC at the quantity demanded when P = MC. What is the cost-recovery problem?",
-      "options": [
-        "The firm must include all fixed cost in the marginal cost of its last unit",
-        "Sales revenue covers total cost whenever each unit is priced at marginal cost",
-        "The firm must raise output until marginal cost exceeds the demand price",
-        "Sales revenue fails to cover total cost, even though the last unit covers its marginal cost"
-      ],
-      "tag": "natural_monopoly_regulation",
-      "type": "analysis",
-      "objective": "LO9.6",
-      "difficulty": "hard",
-      "conceptCluster": "hard_marketSignal_monopoly_market_effects",
-      "primarySkill": "monopoly_market_effects",
-      "secondarySkills": [
-        "natural_monopoly"
-      ],
-      "repairSkill": "monopoly_market_effects",
-      "commonError": "Assuming efficient marginal-cost pricing automatically covers fixed cost",
-      "feedback": "Marginal-cost pricing supports efficient use in this model but leaves a total-cost shortfall. A subsidy can finance that gap; specialized tariff design is a separate pricing topic.",
-      "aHash": "e4e70d1073b7170451b7d1fcd52871b1374b2e9f9f53d1f272f2dccb42458277"
+      "aHash": "752cf93704f4a6dea555249feb7cfecec1f2587839021a6b4040f57170baae9c",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 9059,
       "sourceGame": "marketSignal",
-      "q": "The market begins at S2 and D1. A subsidy shifts supply to S1, but a binding price floor remains at $60. Relative to the new competitive equilibrium, what condition results?",
+      "q": "In the numerical graph, demand is D1 and supply initially S2. A subsidy shifts supply to S1, while a price floor stays at $60. At that posted price on the new curves, what quantities and imbalance result?",
       "options": [
-        "A shortage because the competitive price would be $72",
-        "No imbalance because the old equilibrium price is always binding",
-        "A surplus because demand shifts to D2",
-        "A surplus because the competitive price would be $48"
+        "Qd = 24, Qs = 120: a 96-unit surplus",
+        "Qd = 96, Qs = 48: a 48-unit shortage",
+        "Qd = 48, Qs = 48: no imbalance",
+        "Qd = 48, Qs = 96: a 48-unit surplus"
       ],
       "tag": "graph_price_floor_after_supply_shift",
-      "type": "graph_analysis",
+      "type": "graph_calculation",
       "objective": "LO8.4",
       "difficulty": "hard",
       "conceptCluster": "hard_marketSignal_price_control_analysis",
@@ -6550,137 +6189,11 @@ const questionBanks = {
       ],
       "repairSkill": "market_interventions",
       "commonError": "Treating a previously equilibrium price as automatically nonbinding after supply changes",
-      "feedback": "With S1 and D1, the competitive equilibrium price is $48, so a floor at $60 is above equilibrium and creates surplus.",
+      "feedback": "At $60, D1 gives 48 demanded and S1 gives 96 supplied. The new competitive equilibrium would be $48, so the retained floor creates a 48-unit surplus.",
       "image": "market_curves_independent.svg",
       "graphRequired": true,
-      "aHash": "97ce62032581f3806cc81481338b798c9a1e2d4dd2916f16cf949d72e1955c0b"
-    },
-    {
-      "id": 9083,
-      "sourceGame": "marketSignal",
-      "q": "A monopolist faces P=160-2Q and constant MC=$40. What quantity and price maximize profit?",
-      "options": [
-        "Q=60 and P=$40",
-        "Q=40 and P=$80",
-        "Q=20 and P=$120",
-        "Q=30 and P=$100"
-      ],
-      "tag": "linear_monopoly_solution_legendary",
-      "type": "calculation",
-      "objective": "LO9.6",
-      "difficulty": "hard",
-      "conceptCluster": "hard_marketSignal_monopoly_output_rule",
-      "primarySkill": "monopoly_output_rule",
-      "secondarySkills": [
-        "inverse_demand",
-        "marginal_revenue"
-      ],
-      "repairSkill": "monopoly_output_profit",
-      "commonError": "Setting price equal to marginal cost instead of marginal revenue equal to marginal cost",
-      "feedback": "MR=160-4Q. Setting MR=40 gives Q=30; demand gives P=$100.",
-      "aHash": "6d9ad2f5c8bf31ca5caf602f265a29ea3494158223af4e04326974fae0501984"
-    },
-    {
-      "id": 9084,
-      "sourceGame": "marketSignal",
-      "q": "For P=160-2Q and MC=$40, what is monopoly profit if fixed cost is $600?",
-      "options": [
-        "$1,200",
-        "$600",
-        "$1,800",
-        "$3,000"
-      ],
-      "tag": "monopoly_profit_with_fixed_cost",
-      "type": "calculation",
-      "objective": "LO9.6",
-      "difficulty": "hard",
-      "conceptCluster": "hard_marketSignal_monopoly_profit_calculation",
-      "primarySkill": "monopoly_profit_calculation",
-      "secondarySkills": [
-        "monopoly_output_rule",
-        "fixed_cost"
-      ],
-      "repairSkill": "monopoly_output_profit",
-      "commonError": "Using revenue minus fixed cost while ignoring variable cost",
-      "feedback": "At Q=30 and P=$100, contribution is ($100-$40)(30)=$1,800. Subtract $600 fixed cost for $1,200.",
-      "aHash": "1dcc7619134cdb1de916b106a96326de3a8ac9eb25d79c57ce00de777b3203e1"
-    },
-    {
-      "id": 9085,
-      "sourceGame": "marketSignal",
-      "q": "For P=160-2Q and MC=$40, what deadweight loss results from monopoly relative to competition?",
-      "options": [
-        "$600",
-        "$900",
-        "$1,200",
-        "$1,800"
-      ],
-      "tag": "monopoly_deadweight_loss_legendary",
-      "type": "calculation",
-      "objective": "LO9.6",
-      "difficulty": "hard",
-      "conceptCluster": "hard_marketSignal_monopoly_market_effects",
-      "primarySkill": "monopoly_market_effects",
-      "secondarySkills": [
-        "welfare_analysis",
-        "competitive_equilibrium"
-      ],
-      "repairSkill": "monopoly_welfare_regulation",
-      "commonError": "Using the monopoly profit rectangle rather than the lost-trade triangle",
-      "feedback": "Competitive quantity is 60 and monopoly quantity is 30. The wedge at Q=30 is $60, so DWL=0.5(30)(60)=$900.",
-      "aHash": "956b060488349227afaaff8545deb2dd38abd82b579e52fe145684bae4bb6856"
-    },
-    {
-      "id": 9086,
-      "sourceGame": "marketSignal",
-      "q": "A natural monopoly must recover all cost from sales and receives no subsidy. Its ATC exceeds MC throughout the relevant range. What tradeoff arises when it charges P = ATC instead of P = MC?",
-      "options": [
-        "Output reaches the efficient level because economic profit is zero",
-        "Cost recovery improves and the last unit necessarily satisfies P = MC",
-        "Cost recovery improves, but output is below the allocatively efficient level",
-        "Cost recovery fails because fixed cost cannot be recovered through prices"
-      ],
-      "tag": "natural_monopoly_subsidy",
-      "type": "analysis",
-      "objective": "LO9.6",
-      "difficulty": "hard",
-      "conceptCluster": "hard_marketSignal_monopoly_regulation",
-      "primarySkill": "monopoly_regulation",
-      "secondarySkills": [
-        "cost_recovery",
-        "market_efficiency"
-      ],
-      "repairSkill": "monopoly_welfare_regulation",
-      "commonError": "Assuming efficient pricing automatically guarantees financial break-even",
-      "feedback": "Average-cost pricing can cover total cost, but P exceeds MC. Some units with value above marginal cost remain unserved.",
-      "aHash": "72c082c0ed9cd5b56f9c53fb142ba46fef0a4eb6d7e973e8fe518a48e2ac4350"
-    },
-    {
-      "id": 9152,
-      "sourceGame": "marketSignal",
-      "q": "Refer to the numerical supply-and-demand graph. The market starts at S2 and D1. A fall in an input price shifts supply to S1, while a successful advertising campaign shifts demand to D2. What is the final equilibrium and the net change?",
-      "options": [
-        "Price remains $60 and quantity rises from 48 to 96",
-        "Price falls to $48 and quantity rises from 48 to 72",
-        "Price rises to $72 and quantity rises from 48 to 72",
-        "Price remains $60 and quantity rises from 72 to 96"
-      ],
-      "tag": "boss_numeric_graph_joint_shift",
-      "type": "graph_analysis",
-      "objective": "LO8.4",
-      "difficulty": "hard",
-      "conceptCluster": "hard_marketSignal_simultaneous_shift_analysis",
-      "primarySkill": "simultaneous_shift_analysis",
-      "secondarySkills": [
-        "graph_equilibrium_reading",
-        "supply_shift_analysis"
-      ],
-      "repairSkill": "simultaneous_market_changes",
-      "commonError": "Reporting one intermediate equilibrium instead of the final intersection",
-      "feedback": "S2-D1 is $60 and 48. S1-D2 is $60 and 96, so quantity doubles while price returns to its initial level.",
-      "image": "market_curves_independent.svg",
-      "graphRequired": true,
-      "aHash": "6bf69b1846eab0cea471fb09e325ef9b722c50de52dc5a6abe1418cdd11fbfba"
+      "aHash": "067a84c732c2dfb9417373e25494cf06a85edfdd974b10ce26c1af4b741b568f",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 9175,
@@ -6705,226 +6218,109 @@ const questionBanks = {
       "repairSkill": "monopoly_output_profit",
       "commonError": "Setting price equal to marginal cost or treating demand as marginal revenue",
       "feedback": "MR=100-2Q. Set MR=20 to get Q=40; demand gives P=$60. Profit=(60-20)40-400=$1,200.",
-      "aHash": "1d39e746584a3a00fcaac0ec074e5712191639e1add86ae0bdaf42da9035712c"
+      "aHash": "1d39e746584a3a00fcaac0ec074e5712191639e1add86ae0bdaf42da9035712c",
+      "canonicalDifficulty": "hard"
     },
     {
-      "id": 9176,
+      "id": 9057,
       "sourceGame": "marketSignal",
-      "q": "Using P = 100 - Q and MC = $20, a monopolist chooses Q = 40 and P = $60. What is the deadweight loss relative to the competitive outcome?",
+      "q": "In the numerical graph, start at S2 and D1. First supply changes to S1 with demand fixed; then demand changes to D2 with S1 fixed. What fraction of the total quantity increase occurs in the first step?",
       "options": [
-        "$800",
-        "$1,600",
-        "$400",
-        "$3,200"
+        "One-quarter",
+        "One-half",
+        "Three-quarters",
+        "All of it"
       ],
-      "tag": "boss_monopoly_deadweight_loss",
-      "type": "calculation",
-      "objective": "LO9.6",
+      "tag": "numeric_graph_double_shift",
+      "type": "graph_calculation",
+      "objective": "LO8.4",
       "difficulty": "hard",
-      "conceptCluster": "hard_marketSignal_monopoly_market_effects",
-      "primarySkill": "monopoly_market_effects",
+      "conceptCluster": "hard_marketSignal_simultaneous_shift_analysis",
+      "primarySkill": "simultaneous_shift_analysis",
       "secondarySkills": [
-        "consumer_surplus",
-        "competitive_quantity"
+        "graph_equilibrium_reading",
+        "reverse_shift_inference"
       ],
-      "repairSkill": "monopoly_welfare_regulation",
-      "commonError": "Calculating monopoly profit instead of the lost-surplus triangle",
-      "feedback": "Competitive quantity is 80. DWL=.5(80-40)(60-20)=$800.",
-      "aHash": "752cf93704f4a6dea555249feb7cfecec1f2587839021a6b4040f57170baae9c"
-    }
-  ],
-  "elite": [
+      "repairSkill": "simultaneous_market_changes",
+      "commonError": "uses_final_quantity_instead_of_total_quantity_change",
+      "feedback": "Quantities are 48 initially, 72 after the supply change and 96 after the demand change. The first increase is 24 out of the total 48, or one-half. This decomposition follows the specified order.",
+      "image": "market_curves_independent.svg",
+      "graphRequired": true,
+      "aHash": "94ab96256dde16f8e91de3264091b03a40dbcd4231df3958a451aa6dbf64f0f7",
+      "canonicalDifficulty": "hard"
+    },
     {
-      "id": 300,
+      "id": 123,
       "sourceGame": "marketSignal",
-      "q": "A firm can pay $80,000 today or $100,000 exactly three years from now. What annual discount rate makes the two payments equivalent?",
+      "q": "A firm can price a product at $80 and sell 1,000 units with probability 0.7, or price it at $100 and sell 850 units with probability 0.6. Unit cost is $40 in either case, and zero units are sold if demand does not materialize. Which price has the higher expected profit? There are no fixed costs or other differences between the strategies.",
       "options": [
-        "About 7.72%",
-        "About 6.25%",
-        "About 8.33%",
-        "About 12.50%"
+        "The $100 price, with expected profit of $30,600",
+        "The $80 price, with expected profit of $28,000",
+        "The $100 price, with expected profit of $51,000",
+        "Both prices yield expected profit of $34,000"
       ],
-      "tag": "implied_discount_rate_three_year",
-      "type": "calculation",
-      "objective": "LO5.1",
-      "difficulty": "elite",
-      "conceptCluster": "capital_allocation",
-      "primarySkill": "discount_rate_calculation",
+      "tag": "expected_pricing_profit",
+      "type": "analysis",
+      "objective": "LO17.1",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_expected_profit_calculation",
+      "primarySkill": "expected_profit_calculation",
+      "secondarySkills": [],
+      "repairSkill": "expected_value_probability",
+      "commonError": "Calculating expected revenue while ignoring unit cost",
+      "feedback": "The $80 strategy yields $28,000; the $100 strategy yields 0.6(850×$60) = $30,600.",
+      "aHash": "de98e070b41b25e52c57eb5b3577be3304301c2a2207ff98eaf3d34678647daa",
+      "canonicalDifficulty": "hard"
+    },
+    {
+      "id": 130,
+      "sourceGame": "marketSignal",
+      "q": "A theater has 400 students and 200 other potential customers. At a uniform $15 price, expected sales are 100 students and 160 others. With verified segmentation, students face $10 and buy with probability 0.8; others face $20 and buy with probability 0.6. Each buys at most one ticket, MC is $4, resale is blocked, and verification costs $1,000. Which policy yields more expected contribution after verification?",
+      "options": [
+        "Uniform pricing: $3,900 versus segmented pricing: $3,840",
+        "Segmented pricing: $3,840 versus uniform pricing: $2,860",
+        "Segmented pricing: $2,840 versus uniform pricing: $2,600",
+        "Uniform pricing: $2,860 versus segmented pricing: $2,840"
+      ],
+      "tag": "segment_price_choice",
+      "type": "analysis",
+      "objective": "LO17.2",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_pricing_profit_comparison",
+      "primarySkill": "pricing_profit_comparison",
       "secondarySkills": [
-        "present_value_calculation"
+        "price_discrimination_under_uncertainty"
       ],
-      "repairSkill": "discount_rate_calculation",
-      "commonError": "Dividing the total 25% increase by three instead of solving a compound rate",
-      "feedback": "Solve $80,000(1+r)^3=$100,000, which gives r about 7.72%.",
-      "aHash": "3f6e3586c5d9cf1c0e320d27feca8fbd42621e7fd3dbc960de8ad77163ad736b"
+      "repairSkill": "price_discrimination_uncertainty",
+      "commonError": "Comparing gross segmented contribution without its verification cost",
+      "feedback": "Uniform contribution is (15 − 4) × 260 = $2,860. Segmented contribution is (10 − 4) × 320 + (20 − 4) × 120 − 1,000 = $2,840. Segmentation has higher gross contribution but its verification cost reverses the choice.",
+      "aHash": "f79fb8d5b0db23d7bbb0fe02d33b2fad53a6d6e9a162b8a065c4fd7faf03fc5c",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 301,
       "sourceGame": "marketSignal",
-      "q": "Project A pays $70,000 in two years. Project B pays $85,000 in five years. At 8%, which payment has the greater present value and by approximately how much?",
+      "q": "You can receive $70,000 in two years or $85,000 in five years. At an 8% annual discount rate, which receipt has the higher present value and by approximately how much?",
       "options": [
-        "Project B by about $4,900",
-        "Project A by about $2,200",
-        "Project A by about $21,600",
-        "Project B by about $15,100"
+        "The $85,000 receipt, by $15,000",
+        "The $70,000 receipt, by $2,164",
+        "The $85,000 receipt, by $2,164",
+        "The $70,000 receipt, by $12,164"
       ],
       "tag": "timing_and_present_value",
       "type": "calculation",
       "objective": "LO5.1",
-      "difficulty": "elite",
-      "conceptCluster": "capital_allocation",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_cash_flow_timing",
       "primarySkill": "cash_flow_timing",
       "secondarySkills": [
         "present_value_calculation"
       ],
-      "repairSkill": "cash_flow_timing",
+      "repairSkill": "present_value_discounting",
       "commonError": "Choosing the larger nominal payment without accounting for its later arrival",
-      "feedback": "A is worth about $60,014 today; B is worth about $57,846, so A is higher by roughly $2,168.",
-      "aHash": "780f298f1fde95ed3a99aca6d028318d6735db53599d80f1c8b597487d1643b9"
-    },
-    {
-      "id": 302,
-      "sourceGame": "marketSignal",
-      "q": "An asset is worth $48,000 today and is expected to be worth $64,000 in four years with no interim cash flows. What annual compound return is implied?",
-      "options": [
-        "About 5.93%",
-        "About 8.33%",
-        "About 7.46%",
-        "About 10.00%"
-      ],
-      "tag": "four_year_compound_return",
-      "type": "calculation",
-      "objective": "LO5.1",
-      "difficulty": "elite",
-      "conceptCluster": "capital_allocation",
-      "primarySkill": "discount_rate_calculation",
-      "secondarySkills": [
-        "future_value_calculation"
-      ],
-      "repairSkill": "discount_rate_calculation",
-      "commonError": "Using simple interest on the total gain",
-      "feedback": "The implied return is (64/48)^(1/4)-1, or about 7.46%.",
-      "aHash": "9dc208019c03a720ee6ce335baa985a57fa46165ac393b697923f0aafd5f7fe1"
-    },
-    {
-      "id": 303,
-      "sourceGame": "marketSignal",
-      "q": "A project pays $20,000 at the end of year 1 and $40,000 at the end of year 4. At 9%, what is the approximate present value of the cash flows?",
-      "options": [
-        "About $50,600",
-        "About $55,000",
-        "About $60,000",
-        "About $46,700"
-      ],
-      "tag": "uneven_cashflow_present_value",
-      "type": "calculation",
-      "objective": "LO5.1",
-      "difficulty": "elite",
-      "conceptCluster": "capital_allocation",
-      "primarySkill": "present_value_calculation",
-      "secondarySkills": [
-        "cash_flow_timing"
-      ],
-      "repairSkill": "present_value_calculation",
-      "commonError": "Discounting both cash flows for the same number of periods",
-      "feedback": "PV is about $18,349 plus $28,337, totaling about $46,686.",
-      "aHash": "83a80017a1e1629228787c0ae4e033d99e3f4c937b382913569bbb418c6eac12"
-    },
-    {
-      "id": 304,
-      "sourceGame": "marketSignal",
-      "q": "A project has an expected return of 14%. Its risk-adjusted cost of capital is 11%, but a safer project returns 10% against a 6% hurdle. Which creates the larger expected excess return over its hurdle?",
-      "options": [
-        "The safer project by 1 percentage point",
-        "The riskier project by 3 percentage points",
-        "The two projects have equal excess returns",
-        "The riskier project because its raw return is higher"
-      ],
-      "tag": "risk_adjusted_excess_return",
-      "type": "application",
-      "objective": "LO5.2",
-      "difficulty": "elite",
-      "conceptCluster": "capital_allocation",
-      "primarySkill": "investment_hurdle_comparison",
-      "secondarySkills": [
-        "risk_adjustment"
-      ],
-      "repairSkill": "investment_hurdle_comparison",
-      "commonError": "Choosing the highest raw expected return rather than the largest spread over the required return",
-      "feedback": "The first spread is 3 points; the safer project clears its hurdle by 4 points.",
-      "aHash": "7463fb01ef8d455a115f3bde7f038f778705bb28815b2f13280fb1f803120df5"
-    },
-    {
-      "id": 305,
-      "sourceGame": "marketSignal",
-      "q": "A firm finances a project with 40% debt at 5%, 20% preferred stock at 8%, and 40% equity at 13%. Ignoring taxes, what is the weighted cost of capital?",
-      "options": [
-        "7.6%",
-        "8.8%",
-        "9.4%",
-        "10.2%"
-      ],
-      "tag": "three_source_cost_of_capital",
-      "type": "calculation",
-      "objective": "LO5.2",
-      "difficulty": "elite",
-      "conceptCluster": "capital_allocation",
-      "primarySkill": "cost_of_capital_calculation",
-      "secondarySkills": [
-        "investment_hurdle_comparison"
-      ],
-      "repairSkill": "cost_of_capital_calculation",
-      "commonError": "Taking an unweighted average of the financing rates",
-      "feedback": "0.40(5%)+0.20(8%)+0.40(13%)=8.8%.",
-      "aHash": "237f9402a268e34d13bb713ea44b3c85eb4161f0a3864b367fc692bfa9c56490"
-    },
-    {
-      "id": 306,
-      "sourceGame": "marketSignal",
-      "q": "A project has positive NPV when discounted at 9% and negative NPV at 12%. Which conclusion is justified?",
-      "options": [
-        "Its payback period lies between 9 and 12 years",
-        "Its accounting return must equal 10.5%",
-        "Its internal rate of return lies between 9% and 12%",
-        "Its cash flows are risk-free"
-      ],
-      "tag": "irr_bracketing",
-      "type": "inference",
-      "objective": "LO5.2",
-      "difficulty": "elite",
-      "conceptCluster": "capital_allocation",
-      "primarySkill": "cost_of_capital_interpretation",
-      "secondarySkills": [
-        "npv_interpretation"
-      ],
-      "repairSkill": "cost_of_capital_interpretation",
-      "commonError": "Treating discount-rate bounds as a payback-period statement",
-      "feedback": "NPV changes sign around the internal rate of return, so the IRR lies between the two rates.",
-      "aHash": "62b2883f25c1d6abb4388c86e66aa41ae968e5c16cecbbbbaee11c23fbb720c9"
-    },
-    {
-      "id": 307,
-      "sourceGame": "marketSignal",
-      "q": "Two divisions evaluate the same cash flows. Division A uses an 8% hurdle and Division B uses 13% because its projects are riskier. Why can the same project be accepted by A and rejected by B?",
-      "options": [
-        "Division B must have lower fixed costs",
-        "Division A is ignoring the initial investment",
-        "The project has two different nominal cash-flow streams",
-        "The higher risk-adjusted hurdle can make the project destroy value for Division B"
-      ],
-      "tag": "division_specific_hurdles",
-      "type": "application",
-      "objective": "LO5.2",
-      "difficulty": "elite",
-      "conceptCluster": "capital_allocation",
-      "primarySkill": "cost_of_capital_interpretation",
-      "secondarySkills": [
-        "risk_adjustment"
-      ],
-      "repairSkill": "cost_of_capital_interpretation",
-      "commonError": "Assuming one universal discount rate applies regardless of risk",
-      "feedback": "A higher required return lowers present value and can reverse the accept-reject decision.",
-      "aHash": "158bb92e0bbf4bff2541f083b0eb69ae9ba702d84adb904084b7d1b5d64c3df2"
+      "feedback": "The present values are $60,013.72 and $57,849.57. The earlier receipt is worth $2,164.15 more today.",
+      "aHash": "491ab246d544a335bdbc1ad58f489f40ee63bc89c6f3121dce2d46ac7017220a",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 308,
@@ -6939,165 +6335,22 @@ const questionBanks = {
       "tag": "four_year_annuity_npv",
       "type": "calculation",
       "objective": "LO5.3",
-      "difficulty": "elite",
-      "conceptCluster": "investment_analysis",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_npv_calculation",
       "primarySkill": "npv_calculation",
       "secondarySkills": [
         "present_value_calculation"
       ],
-      "repairSkill": "npv_calculation",
+      "repairSkill": "cost_of_capital_npv",
       "commonError": "Subtracting the present value from the cost or failing to discount the annuity",
       "feedback": "The four-year annuity is worth about $142,640, leaving NPV near $22,640.",
-      "aHash": "01b13b9e90e3d2f698170ec5a473b67b04980c0da6457e2de74d36a34670ce5e"
-    },
-    {
-      "id": 309,
-      "sourceGame": "marketSignal",
-      "q": "Project A costs $50,000 and returns $30,000 in each of years 1 and 2. Project B costs $50,000 and returns $15,000, $20,000, and $30,000 in years 1–3. At 10%, which project has the higher NPV?",
-      "options": [
-        "Project B, by about $2,700",
-        "Project A, by about $4,300",
-        "Project A, by about $7,000",
-        "They have equal NPVs"
-      ],
-      "tag": "mutually_exclusive_npv_comparison",
-      "type": "calculation",
-      "objective": "LO5.3",
-      "difficulty": "elite",
-      "conceptCluster": "investment_analysis",
-      "primarySkill": "npv_comparison",
-      "secondarySkills": [
-        "cash_flow_timing"
-      ],
-      "repairSkill": "npv_comparison",
-      "commonError": "Choosing the project with the larger undiscounted total cash flow",
-      "feedback": "A has NPV about $7,025; B about $2,705, so A leads by roughly $4,320.",
-      "aHash": "9ae74d126884ead23377118fc0ddc855170e281b70c981347f295bcbf4887437"
-    },
-    {
-      "id": 310,
-      "sourceGame": "marketSignal",
-      "q": "A project costs $90,000. It returns $50,000 in year 1, $30,000 in year 2, and $25,000 in year 3. At 8%, the NPV is positive, but the firm rejects any project with a payback longer than two years. What is the central problem with the rejection?",
-      "options": [
-        "The NPV rule ignores liquidity risk",
-        "The project cannot have positive NPV if payback exceeds two years",
-        "The payback rule ignores the year-3 cash flow and the time value of money",
-        "The initial cost should be excluded because it is sunk"
-      ],
-      "tag": "payback_rule_failure",
-      "type": "analysis",
-      "objective": "LO5.3",
-      "difficulty": "elite",
-      "conceptCluster": "investment_analysis",
-      "primarySkill": "npv_decision_rule",
-      "secondarySkills": [
-        "payback_period"
-      ],
-      "repairSkill": "npv_decision_rule",
-      "commonError": "Treating payback as a complete measure of value creation",
-      "feedback": "A rigid payback cutoff can reject a positive-NPV project because it ignores later discounted value.",
-      "aHash": "e195fa91d8a2a886b66359b46fd03fd73dbbf9e3be26086a448f33e63d2d82da"
-    },
-    {
-      "id": 311,
-      "sourceGame": "marketSignal",
-      "q": "A project has NPV of $18,000 using expected cash flows. A downside scenario reduces the present value of inflows by $25,000. What is the project NPV in that scenario?",
-      "options": [
-        "$7,000",
-        "$18,000",
-        "$43,000",
-        "-$7,000"
-      ],
-      "tag": "scenario_npv_adjustment",
-      "type": "calculation",
-      "objective": "LO5.3",
-      "difficulty": "elite",
-      "conceptCluster": "investment_analysis",
-      "primarySkill": "npv_interpretation",
-      "secondarySkills": [
-        "sensitivity_analysis"
-      ],
-      "repairSkill": "npv_interpretation",
-      "commonError": "Adding the downside reduction instead of subtracting it",
-      "feedback": "The downside NPV is $18,000-$25,000=-$7,000.",
-      "aHash": "906e55649014de97fb29e27524f6fbd4a5540f32883b663540b3562d006e2566"
-    },
-    {
-      "id": 312,
-      "sourceGame": "marketSignal",
-      "q": "Two projects are mutually exclusive. Project A has NPV $40,000 and IRR 18%; Project B has NPV $55,000 and IRR 15%. Both exceed the 10% hurdle. Which should a value-maximizing firm select?",
-      "options": [
-        "Project B because it adds more total value",
-        "Project A because its IRR is higher",
-        "Both because each has positive NPV",
-        "Neither because their rankings conflict"
-      ],
-      "tag": "npv_irr_conflict",
-      "type": "application",
-      "objective": "LO5.3",
-      "difficulty": "elite",
-      "conceptCluster": "investment_analysis",
-      "primarySkill": "npv_decision_rule",
-      "secondarySkills": [
-        "irr_interpretation"
-      ],
-      "repairSkill": "npv_decision_rule",
-      "commonError": "Automatically choosing the project with the highest percentage return",
-      "feedback": "For mutually exclusive projects, the higher NPV creates more total value.",
-      "aHash": "15e89f2e5597428d5ded4640ab62bd1617631fa7224da2f76641a4f124926b6e"
-    },
-    {
-      "id": 313,
-      "sourceGame": "marketSignal",
-      "q": "A facility has fixed cost of $360,000, price of $18, and variable cost of $12 per unit. A process redesign raises fixed cost by $90,000 but lowers variable cost to $9. At what quantity are the two processes equally profitable?",
-      "options": [
-        "10,000 units",
-        "30,000 units",
-        "45,000 units",
-        "90,000 units"
-      ],
-      "tag": "technology_indifference_quantity",
-      "type": "calculation",
-      "objective": "LO5.4",
-      "difficulty": "elite",
-      "conceptCluster": "break_even_analysis",
-      "primarySkill": "technology_choice",
-      "secondarySkills": [
-        "contribution_margin"
-      ],
-      "repairSkill": "technology_choice",
-      "commonError": "Using total fixed cost rather than the difference in fixed costs",
-      "feedback": "Set -360,000+6Q=-450,000+9Q; the crossover is 30,000 units.",
-      "aHash": "04939d07aa699c92c12afb920380b4dec6e3ea44fac10df193f2582881c72b6a"
-    },
-    {
-      "id": 314,
-      "sourceGame": "marketSignal",
-      "q": "A firm has fixed cost of $80,000 and variable cost of $16. Demand is Q=60,000-2,000P. At what price does the firm exactly break even if it must sell the quantity demanded?",
-      "options": [
-        "$18",
-        "$22",
-        "$20",
-        "$24"
-      ],
-      "tag": "break_even_with_demand",
-      "type": "calculation",
-      "objective": "LO5.4",
-      "difficulty": "elite",
-      "conceptCluster": "break_even_analysis",
-      "primarySkill": "break_even_price",
-      "secondarySkills": [
-        "demand_equation"
-      ],
-      "repairSkill": "break_even_price",
-      "commonError": "Using price equal to variable cost or ignoring how price changes quantity demanded",
-      "feedback": "Profit is (P-16)(60,000-2,000P)-80,000. P=$20 yields 20,000 units and zero profit.",
-      "aHash": "1f67972ce8b9d3da71256e750035aa4ffd0a58c0796b2172492afd8b96426416"
+      "aHash": "01b13b9e90e3d2f698170ec5a473b67b04980c0da6457e2de74d36a34670ce5e",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 315,
       "sourceGame": "marketSignal",
-      "q": "A competitive firm has AVC=$14 at 8,000 units, ATC=$19, and market price=$16. What is the best short-run decision and the firm’s economic profit or loss?",
+      "q": "At its best positive output of 8,000 units, a price-taking firm receives $16 per unit, with AVC $14 and ATC $19. All fixed costs are unavoidable this period. What should it do, and why?",
       "options": [
         "Shut down and lose $40,000",
         "Produce and earn $16,000 profit",
@@ -7105,354 +6358,19 @@ const questionBanks = {
         "Produce and incur a $24,000 loss"
       ],
       "tag": "shutdown_and_loss_calculation",
-      "type": "calculation",
+      "type": "analysis",
       "objective": "LO5.4",
-      "difficulty": "elite",
-      "conceptCluster": "break_even_analysis",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_shutdown_decision",
       "primarySkill": "shutdown_decision",
       "secondarySkills": [
         "profit_calculation"
       ],
-      "repairSkill": "shutdown_decision",
+      "repairSkill": "shutdown_decisions",
       "commonError": "Shutting down whenever price is below average total cost",
       "feedback": "Because price exceeds AVC, produce. Loss=(16-19)(8,000)=-$24,000.",
-      "aHash": "930c3aa57d91d006d79238ccda47b9127388a37454a670ca80551ecfca7a4b4a"
-    },
-    {
-      "id": 316,
-      "sourceGame": "marketSignal",
-      "q": "A firm’s fixed cost is $150,000. At the profit-maximizing output, price is $22, AVC is $17, and quantity is 20,000. Which statement is correct?",
-      "options": [
-        "The firm should produce in the short run and loses $50,000",
-        "The firm should shut down and loses $150,000",
-        "The firm breaks even because price exceeds AVC",
-        "The firm earns $100,000 economic profit"
-      ],
-      "tag": "short_run_operating_loss",
-      "type": "calculation",
-      "objective": "LO5.4",
-      "difficulty": "elite",
-      "conceptCluster": "break_even_analysis",
-      "primarySkill": "shutdown_decision",
-      "secondarySkills": [
-        "profit_calculation"
-      ],
-      "repairSkill": "shutdown_decision",
-      "commonError": "Confusing contribution toward fixed cost with positive economic profit",
-      "feedback": "Contribution is $100,000, which covers part of fixed cost; the remaining loss is $50,000.",
-      "aHash": "ca1145993066be1694ed6d1b15019aa13d63d9534c8a9f82cdb34d10099f01c1"
-    },
-    {
-      "id": 317,
-      "sourceGame": "marketSignal",
-      "q": "A product sells for $50 with variable cost $30. Fixed cost is $500,000. If expected sales are 30,000 units but could fall 20%, what happens in the downside case?",
-      "options": [
-        "The firm sells 24,000 units and earns $20,000",
-        "The firm sells 24,000 units and loses $20,000",
-        "The firm sells 25,000 units and breaks even",
-        "The firm must shut down because price is below variable cost"
-      ],
-      "tag": "break_even_sensitivity",
-      "type": "calculation",
-      "objective": "LO5.4",
-      "difficulty": "elite",
-      "conceptCluster": "break_even_analysis",
-      "primarySkill": "break_even_quantity",
-      "secondarySkills": [
-        "sensitivity_analysis"
-      ],
-      "repairSkill": "break_even_quantity",
-      "commonError": "Applying the percentage decline to contribution margin rather than quantity",
-      "feedback": "Downside sales are 24,000; profit is $20(24,000)-$500,000=-$20,000.",
-      "aHash": "c9230ce974e60bd5748a0ebfa2aec580c264c5739568fe7b07fcb331c76458cb"
-    },
-    {
-      "id": 318,
-      "sourceGame": "marketSignal",
-      "q": "A supplier must spend $2 million on equipment useful only to one buyer. The buyer cannot specify every future contingency. Which arrangement best reduces hold-up while preserving cooperation?",
-      "options": [
-        "The supplier makes the investment first under a cancellable spot contract",
-        "The buyer waits until the equipment is installed before negotiating price",
-        "The buyer co-invests and commits to a formula-based long-term purchase agreement",
-        "The parties avoid all relationship-specific investment"
-      ],
-      "tag": "relational_contract_hold_up",
-      "type": "application",
-      "objective": "LO5.5",
-      "difficulty": "elite",
-      "conceptCluster": "contract_design",
-      "primarySkill": "hold_up_mitigation",
-      "secondarySkills": [
-        "unforeseen_contingencies"
-      ],
-      "repairSkill": "hold_up_mitigation",
-      "commonError": "Relying on a vague promise after one side becomes locked in",
-      "feedback": "Shared commitment and a pricing formula reduce opportunism when a complete contract is impossible.",
-      "aHash": "9908a9d9bc04dea7af12e4ad6fc936fdcbed4dd56974ef138dfc7681400987c5"
-    },
-    {
-      "id": 319,
-      "sourceGame": "marketSignal",
-      "q": "A firm has already spent $4 million developing software. Completing it costs $900,000 and the finished product is expected to generate $1.2 million in present value. What should the firm do?",
-      "options": [
-        "Abandon it because total spending would exceed revenue",
-        "Complete it only if the original $4 million can be recovered",
-        "Abandon it because sunk cost makes the project unprofitable",
-        "Complete the software because the incremental NPV is $300,000"
-      ],
-      "tag": "incremental_sunk_cost_decision",
-      "type": "calculation",
-      "objective": "LO5.5",
-      "difficulty": "elite",
-      "conceptCluster": "contract_design",
-      "primarySkill": "sunk_cost_reasoning",
-      "secondarySkills": [
-        "incremental_analysis"
-      ],
-      "repairSkill": "sunk_cost_reasoning",
-      "commonError": "Including irrecoverable past spending in the completion decision",
-      "feedback": "The $4 million is sunk; completion adds $1.2 million of value at a $900,000 incremental cost.",
-      "aHash": "73f3e00781e0ce1e549081743666b914278b10dcc682f6c0cce830d0b79934b3"
-    },
-    {
-      "id": 320,
-      "sourceGame": "marketSignal",
-      "q": "A manufacturer and distributor each must make specialized investments. Which feature most directly creates mutual rather than one-sided vulnerability?",
-      "options": [
-        "Each party posts a valuable hostage that loses value if cooperation ends",
-        "Only the manufacturer makes an irreversible investment",
-        "Either party may cancel at any time without penalty",
-        "The distributor receives all bargaining rights after investment"
-      ],
-      "tag": "mutual_hostages",
-      "type": "application",
-      "objective": "LO5.5",
-      "difficulty": "elite",
-      "conceptCluster": "contract_design",
-      "primarySkill": "hold_up_mitigation",
-      "secondarySkills": [
-        "credible_commitment"
-      ],
-      "repairSkill": "hold_up_mitigation",
-      "commonError": "Mistaking unilateral exposure for balanced commitment",
-      "feedback": "Mutual hostages make opportunism costly to both sides and support continued cooperation.",
-      "aHash": "a983088da559669856f5b1a561e401cc2d623e667b9bc83d2cd7227512390c51"
-    },
-    {
-      "id": 321,
-      "sourceGame": "marketSignal",
-      "q": "A contract fixes every price for ten years even though input costs are highly uncertain. What redesign best handles unforeseen contingencies without inviting constant renegotiation?",
-      "options": [
-        "Delete all adjustment provisions",
-        "Use an indexed price-adjustment rule tied to verifiable input costs",
-        "Allow either side to choose any price after investment",
-        "Require one side to absorb every possible cost shock"
-      ],
-      "tag": "contingent_contract_indexing",
-      "type": "application",
-      "objective": "LO5.5",
-      "difficulty": "elite",
-      "conceptCluster": "contract_design",
-      "primarySkill": "contingent_contracts",
-      "secondarySkills": [
-        "unforeseen_contingencies"
-      ],
-      "repairSkill": "contingent_contracts",
-      "commonError": "Choosing rigidity or unlimited discretion instead of a verifiable adjustment mechanism",
-      "feedback": "An objective index adapts the contract to shocks while limiting opportunistic reinterpretation.",
-      "aHash": "a319deb47db1857c7104dcce8e2a8b8702e2f5d31d3f2acb3f2eb8996c4981c6"
-    },
-    {
-      "id": 322,
-      "sourceGame": "marketSignal",
-      "q": "A project pays $400,000 with probability .35, $120,000 with probability .45, and loses $80,000 with probability .20. What is its expected payoff?",
-      "options": [
-        "$146,000",
-        "$194,000",
-        "$178,000",
-        "$240,000"
-      ],
-      "tag": "three_state_expected_value",
-      "type": "calculation",
-      "objective": "LO17.1",
-      "difficulty": "elite",
-      "conceptCluster": "uncertainty_and_decisions",
-      "primarySkill": "expected_value_calculation",
-      "secondarySkills": [
-        "probability_distribution"
-      ],
-      "repairSkill": "expected_value_calculation",
-      "commonError": "Ignoring the negative payoff or failing to weight each outcome",
-      "feedback": "Expected payoff is .35(400,000)+.45(120,000)+.20(-80,000)=$178,000.",
-      "aHash": "56ddd2c2125b16234bf526db16a10fa94510eb9091d575b973fd395d651a12cd"
-    },
-    {
-      "id": 323,
-      "sourceGame": "marketSignal",
-      "q": "Project A has expected payoff $100,000 with standard deviation $15,000. Project B has expected payoff $112,000 with standard deviation $60,000. Which conclusion follows from expected value alone?",
-      "options": [
-        "Project A dominates because its variance is lower",
-        "Project B dominates for every decision maker",
-        "The projects are equivalent because risk is unpriced",
-        "Project B is preferred, but risk preferences could reverse the choice"
-      ],
-      "tag": "expected_value_vs_risk",
-      "type": "analysis",
-      "objective": "LO17.1",
-      "difficulty": "elite",
-      "conceptCluster": "uncertainty_and_decisions",
-      "primarySkill": "expected_value_interpretation",
-      "secondarySkills": [
-        "risk_preferences"
-      ],
-      "repairSkill": "expected_value_interpretation",
-      "commonError": "Treating the highest expected value as universally optimal regardless of risk",
-      "feedback": "Expected value favors B, but a sufficiently risk-averse decision maker may prefer A.",
-      "aHash": "491c19b9bfb90a5944299d657d141355afb0a1fe36e68a290da2293d16a41067"
-    },
-    {
-      "id": 324,
-      "sourceGame": "marketSignal",
-      "q": "A firm can spend $20,000 on a test that changes its expected project payoff from $150,000 to $185,000 by improving the decision. What is the expected net value of the information?",
-      "options": [
-        "$15,000",
-        "$20,000",
-        "$35,000",
-        "$55,000"
-      ],
-      "tag": "value_of_information",
-      "type": "calculation",
-      "objective": "LO17.1",
-      "difficulty": "elite",
-      "conceptCluster": "uncertainty_and_decisions",
-      "primarySkill": "expected_value_calculation",
-      "secondarySkills": [
-        "information_value"
-      ],
-      "repairSkill": "expected_value_calculation",
-      "commonError": "Reporting the gross improvement without subtracting the test cost",
-      "feedback": "The information improves expected payoff by $35,000 and costs $20,000, leaving $15,000 net.",
-      "aHash": "208bd9cfd4e08ea0e562d793c5f0e8c93c62473aa2d72f363127750b41e7bbae"
-    },
-    {
-      "id": 325,
-      "sourceGame": "marketSignal",
-      "q": "A decision tree has a 60% chance of reaching a second stage. At that stage, the firm chooses the better of a sure $50,000 payoff or a gamble with expected payoff $70,000. The remaining 40% yields zero. What is the project’s expected value before any initial cost?",
-      "options": [
-        "$30,000",
-        "$42,000",
-        "$50,000",
-        "$70,000"
-      ],
-      "tag": "sequential_expected_value",
-      "type": "calculation",
-      "objective": "LO17.1",
-      "difficulty": "elite",
-      "conceptCluster": "uncertainty_and_decisions",
-      "primarySkill": "decision_tree_analysis",
-      "secondarySkills": [
-        "expected_value_calculation"
-      ],
-      "repairSkill": "decision_tree_analysis",
-      "commonError": "Averaging all terminal values without following the optimal second-stage choice",
-      "feedback": "At stage two choose $70,000; multiplying by .60 gives $42,000.",
-      "aHash": "b9f3abcaa62ebc12408bab4fe3470ee1b3add75426e5217c38fad70fbae42fce"
-    },
-    {
-      "id": 326,
-      "sourceGame": "marketSignal",
-      "q": "An airline knows business travelers are less price sensitive but cannot observe traveler type directly. Which design best screens customers without simply asking their type?",
-      "options": [
-        "Charge every customer the same low fare",
-        "Randomly assign prices after purchase",
-        "Offer a flexible high-price fare and a restricted low-price fare",
-        "Ban advance purchases"
-      ],
-      "tag": "self_selection_pricing",
-      "type": "application",
-      "objective": "LO17.2",
-      "difficulty": "elite",
-      "conceptCluster": "pricing_under_uncertainty",
-      "primarySkill": "price_discrimination_design",
-      "secondarySkills": [
-        "self_selection"
-      ],
-      "repairSkill": "price_discrimination_design",
-      "commonError": "Assuming price discrimination requires direct observation of customer type",
-      "feedback": "Restrictions induce travelers to reveal willingness to pay through their choice of fare.",
-      "aHash": "042ac478b2e1f0ca347da1ca891aa164b8d3c85411b8a089b8e84dddcf816e25"
-    },
-    {
-      "id": 327,
-      "sourceGame": "marketSignal",
-      "q": "A software firm offers Basic at $40 and Pro at $90. High-value users would pay $120 for Pro and $55 for Basic; low-value users would pay $65 for Pro and $50 for Basic. Which change most improves self-selection if too many high-value users choose Basic?",
-      "options": [
-        "Lower the Basic price",
-        "Add the same premium feature to both versions",
-        "Raise Pro price above $120",
-        "Reduce Basic features that high-value users particularly value"
-      ],
-      "tag": "versioning_self_selection",
-      "type": "analysis",
-      "objective": "LO17.2",
-      "difficulty": "elite",
-      "conceptCluster": "pricing_under_uncertainty",
-      "primarySkill": "price_discrimination_design",
-      "secondarySkills": [
-        "incentive_compatibility"
-      ],
-      "repairSkill": "price_discrimination_design",
-      "commonError": "Changing prices in a way that makes the low tier even more attractive to high-value users",
-      "feedback": "Degrading the low version selectively can move high-value users to Pro while preserving a low-price option.",
-      "aHash": "5985b3dda786bc0e12326ebdaeaa164d28f9622e0682849fff71086b92e922d9"
-    },
-    {
-      "id": 328,
-      "sourceGame": "marketSignal",
-      "q": "A theater charges lower prices for weekday matinees. Which combination best supports this as price discrimination rather than simple cost-based pricing?",
-      "options": [
-        "Different customer groups self-select by time and have different demand elasticities",
-        "The theater’s fixed cost is higher on weekdays",
-        "Every customer values every show identically",
-        "Marginal cost rises sharply for matinee viewers"
-      ],
-      "tag": "time_based_price_discrimination",
-      "type": "analysis",
-      "objective": "LO17.2",
-      "difficulty": "elite",
-      "conceptCluster": "pricing_under_uncertainty",
-      "primarySkill": "price_discrimination_interpretation",
-      "secondarySkills": [
-        "demand_elasticity"
-      ],
-      "repairSkill": "price_discrimination_interpretation",
-      "commonError": "Attributing every price difference to production cost",
-      "feedback": "Time restrictions can separate more elastic customers from less elastic customers.",
-      "aHash": "c02d224a361424db93cdc8939278f843f78f34602804cd39db06f4e4a8af2cdd"
-    },
-    {
-      "id": 329,
-      "sourceGame": "marketSignal",
-      "q": "A seller tests two prices in different cities, but one city also has much higher income. What is the strongest reason the observed sales difference does not identify the price effect?",
-      "options": [
-        "The seller used more than one price",
-        "Customer type and price are confounded across cities",
-        "Price discrimination is always illegal",
-        "Sales cannot be measured across markets"
-      ],
-      "tag": "pricing_experiment_confounding",
-      "type": "analysis",
-      "objective": "LO17.2",
-      "difficulty": "elite",
-      "conceptCluster": "pricing_under_uncertainty",
-      "primarySkill": "selection_bias_detection",
-      "secondarySkills": [
-        "price_discrimination_design"
-      ],
-      "repairSkill": "selection_bias_detection",
-      "commonError": "Assuming any cross-market price comparison isolates causality",
-      "feedback": "Income differences may drive sales, so the price effect cannot be separated without better design.",
-      "aHash": "cc383da86154d2a90357ef258163cf3fa4f32054e228ee2a0b2f9e25daa9461b"
+      "aHash": "930c3aa57d91d006d79238ccda47b9127388a37454a670ca80551ecfca7a4b4a",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 330,
@@ -7467,938 +6385,195 @@ const questionBanks = {
       "tag": "voluntary_selection_bias",
       "type": "analysis",
       "objective": "LO17.3",
-      "difficulty": "elite",
-      "conceptCluster": "causal_inference",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_selection_bias_detection",
       "primarySkill": "selection_bias_detection",
       "secondarySkills": [
         "difference_in_differences"
       ],
-      "repairSkill": "selection_bias_detection",
+      "repairSkill": "experiments_causality",
       "commonError": "Treating self-selected groups as if assignment were random",
-      "feedback": "The observed gap combines the program effect with preexisting differences between volunteers and others.",
-      "aHash": "acfc38d4b4ce1e11cb8c8b11284ba4b4794ecd497e0c5d6a5089ba8d474a4876"
+      "feedback": "The observed difference in improvement is 8 points. Self-selection may be associated with different improvement trends even without training. Constant starting-level differences alone do not invalidate difference-in-differences; parallel untreated trends are the key assumption.",
+      "aHash": "acfc38d4b4ce1e11cb8c8b11284ba4b4794ecd497e0c5d6a5089ba8d474a4876",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 331,
       "sourceGame": "marketSignal",
       "q": "A firm randomly assigns 2,000 customers to treatment and control, but 30% of treatment customers never see the message. What does the simple treatment-versus-control comparison estimate?",
       "options": [
-        "The effect only on customers who actually saw the message",
-        "The effect with perfect compliance",
-        "The selection bias from customer income",
+        "The causal effect of compliance, obtained by comparing compliers to noncompliers",
+        "The effect of receiving treatment for all participants, regardless of compliance",
+        "The effect for volunteers, obtained by dropping assigned nonparticipants",
         "The intention-to-treat effect of assignment"
       ],
       "tag": "intention_to_treat",
       "type": "analysis",
       "objective": "LO17.3",
-      "difficulty": "elite",
-      "conceptCluster": "causal_inference",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_experimental_design",
       "primarySkill": "experimental_design",
       "secondarySkills": [
         "noncompliance"
       ],
-      "repairSkill": "experimental_design",
+      "repairSkill": "experiments_causality",
       "commonError": "Dropping noncompliers and claiming the remaining comparison is still randomized",
       "feedback": "Random assignment identifies the effect of being assigned to treatment, including imperfect compliance.",
-      "aHash": "daea7b6a2a2c0fce141194311ee25a15141a23414e032a011533add9df7fc12e"
-    },
-    {
-      "id": 332,
-      "sourceGame": "marketSignal",
-      "q": "Sales rise from 200 to 260 in the treated region and from 180 to 220 in the control region. What is the difference-in-differences estimate?",
-      "options": [
-        "20 units",
-        "40 units",
-        "60 units",
-        "100 units"
-      ],
-      "tag": "difference_in_differences_elite",
-      "type": "calculation",
-      "objective": "LO17.3",
-      "difficulty": "elite",
-      "conceptCluster": "causal_inference",
-      "primarySkill": "difference_in_differences",
-      "secondarySkills": [
-        "selection_bias_detection"
-      ],
-      "repairSkill": "difference_in_differences",
-      "commonError": "Using the treated group’s raw increase as the causal effect",
-      "feedback": "The treated increase is 60 and the control increase is 40, so the estimate is 20.",
-      "aHash": "ff6d647b64d4b8c74e939144b409cde7dbeb4f275ba47d37c03a3ece82a3d694"
-    },
-    {
-      "id": 333,
-      "sourceGame": "marketSignal",
-      "q": "A randomized experiment has heavy attrition: 25% of treated subjects disappear, compared with 3% of controls. What is the main threat?",
-      "options": [
-        "Randomization guarantees unbiased results after any amount of attrition",
-        "Differential attrition can break comparability even though initial assignment was random",
-        "The treatment effect must be zero",
-        "Attrition matters only when sample size is below 30"
-      ],
-      "tag": "differential_attrition",
-      "type": "analysis",
-      "objective": "LO17.3",
-      "difficulty": "elite",
-      "conceptCluster": "causal_inference",
-      "primarySkill": "experimental_validity",
-      "secondarySkills": [
-        "random_assignment"
-      ],
-      "repairSkill": "experimental_validity",
-      "commonError": "Assuming randomization protects against all post-assignment data loss",
-      "feedback": "If attrition depends on treatment and outcomes, the observed groups need not remain comparable.",
-      "aHash": "4b68f984c9ba66bbc2d4d4e9489a300e94c36e4b23fe23c3e82d746caebafb3f"
-    },
-    {
-      "id": 334,
-      "sourceGame": "marketSignal",
-      "q": "A false positive costs $2 million and a false negative costs $200,000. Other things equal, how should the decision threshold change?",
-      "options": [
-        "Lower the threshold to reduce false positives",
-        "Ignore error costs and maximize the number of approvals",
-        "Raise the threshold to reduce false positives",
-        "Set the threshold at 50% regardless of consequences"
-      ],
-      "tag": "asymmetric_error_threshold",
-      "type": "application",
-      "objective": "LO17.4",
-      "difficulty": "elite",
-      "conceptCluster": "decision_errors",
-      "primarySkill": "error_cost_minimization",
-      "secondarySkills": [
-        "type_i_type_ii_errors"
-      ],
-      "repairSkill": "error_cost_minimization",
-      "commonError": "Changing the threshold in the wrong direction when false positives are more costly",
-      "feedback": "A stricter threshold sacrifices some true positives to avoid very expensive false approvals.",
-      "aHash": "d85741f8864822f7601d55e22b19f2e48dee7e9767ada45233cb5ca53be460ff"
-    },
-    {
-      "id": 335,
-      "sourceGame": "marketSignal",
-      "q": "A medical-device firm tests H0: the device is unsafe. Rejecting H0 approves the device. Which event is a Type I error?",
-      "options": [
-        "Rejecting a device that is actually safe",
-        "Approving a device that is actually safe",
-        "Rejecting a device that is actually unsafe",
-        "Approving a device that is actually unsafe"
-      ],
-      "tag": "type_i_error_context",
-      "type": "application",
-      "objective": "LO17.4",
-      "difficulty": "elite",
-      "conceptCluster": "decision_errors",
-      "primarySkill": "type_i_type_ii_errors",
-      "secondarySkills": [
-        "hypothesis_framing"
-      ],
-      "repairSkill": "type_i_type_ii_errors",
-      "commonError": "Naming the error without first identifying the null hypothesis and decision",
-      "feedback": "A Type I error rejects a true null; here that means approving an unsafe device.",
-      "aHash": "ce610b9e9f16d93119883a2aec2bcdd6b8035154f043c00abf98d8b9f25030a1"
-    },
-    {
-      "id": 336,
-      "sourceGame": "marketSignal",
-      "q": "A fraud screen can lower false negatives only by increasing false positives. Which choice minimizes expected error cost?",
-      "options": [
-        "Choose the threshold where the marginal expected cost of the two error types is balanced",
-        "Always eliminate false negatives completely",
-        "Always eliminate false positives completely",
-        "Use the threshold with the highest raw accuracy"
-      ],
-      "tag": "expected_error_cost_balance",
-      "type": "analysis",
-      "objective": "LO17.4",
-      "difficulty": "elite",
-      "conceptCluster": "decision_errors",
-      "primarySkill": "error_cost_minimization",
-      "secondarySkills": [
-        "classification_threshold"
-      ],
-      "repairSkill": "error_cost_minimization",
-      "commonError": "Maximizing accuracy without weighting the economic consequences of mistakes",
-      "feedback": "The optimal threshold depends on both error probabilities and their unequal costs.",
-      "aHash": "b595f227b945adc7962ac1d64d2b3c4d23c62deb7b639d623f57a5a5a42e96f8"
-    },
-    {
-      "id": 337,
-      "sourceGame": "marketSignal",
-      "q": "A bank estimates that a looser approval rule adds 100 good loans worth $4,000 each but also 15 bad loans costing $30,000 each. What is the expected net effect?",
-      "options": [
-        "$50,000",
-        "-$50,000",
-        "$400,000",
-        "$450,000"
-      ],
-      "tag": "approval_rule_error_cost",
-      "type": "calculation",
-      "objective": "LO17.4",
-      "difficulty": "elite",
-      "conceptCluster": "decision_errors",
-      "primarySkill": "error_cost_minimization",
-      "secondarySkills": [
-        "expected_value_calculation"
-      ],
-      "repairSkill": "error_cost_minimization",
-      "commonError": "Counting added approvals without subtracting costly false positives",
-      "feedback": "Benefit is $400,000; expected bad-loan cost is $450,000, so net effect is -$50,000.",
-      "aHash": "05288c9819d1eae1ff85d2757250dc20917678fb1522017392790b8b77708cfb"
-    },
-    {
-      "id": 338,
-      "sourceGame": "marketSignal",
-      "q": "A company estimates demand using only customers who completed a purchase. What uncertainty is likely understated?",
-      "options": [
-        "The arithmetic mean of observed purchases",
-        "The number of completed transactions",
-        "Demand among visitors who considered the product but did not buy",
-        "The posted price paid by buyers"
-      ],
-      "tag": "survivorship_in_demand_estimation",
-      "type": "analysis",
-      "objective": "LO17.5",
-      "difficulty": "elite",
-      "conceptCluster": "uncertainty_estimation",
-      "primarySkill": "selection_bias_detection",
-      "secondarySkills": [
-        "data_quality"
-      ],
-      "repairSkill": "selection_bias_detection",
-      "commonError": "Assuming observed buyers represent the full potential market",
-      "feedback": "Conditioning on purchase excludes nonbuyers and can overstate willingness to pay.",
-      "aHash": "17b0efd47c3ff411f4f0d697d8925e32568eee812fdb0085455f5d3384edbfa2"
-    },
-    {
-      "id": 339,
-      "sourceGame": "marketSignal",
-      "q": "A simulation uses precise probabilities derived from only ten observations. What is the biggest problem?",
-      "options": [
-        "Simulation automatically removes sampling error",
-        "Ten observations guarantee unbiased probabilities",
-        "More decimal places make the estimate more accurate",
-        "The output may look precise while the probability estimates are highly uncertain"
-      ],
-      "tag": "false_precision_simulation",
-      "type": "analysis",
-      "objective": "LO17.5",
-      "difficulty": "elite",
-      "conceptCluster": "uncertainty_estimation",
-      "primarySkill": "probability_estimation",
-      "secondarySkills": [
-        "simulation_design"
-      ],
-      "repairSkill": "probability_estimation",
-      "commonError": "Confusing numerical precision with evidentiary reliability",
-      "feedback": "A model cannot be more reliable than the uncertain inputs used to generate its results.",
-      "aHash": "cdbd5fb2cc812f745204cf6993ec700065aee4820f4ba29c705144c5e13e0586"
-    },
-    {
-      "id": 340,
-      "sourceGame": "marketSignal",
-      "q": "A forecast reports expected profit of $5 million but no range or scenario information. Which addition most improves the estimate of uncertainty?",
-      "options": [
-        "A distribution of outcomes with probabilities and sensitivity to key assumptions",
-        "A second copy of the same point estimate",
-        "A longer narrative describing the expected case",
-        "Rounding the estimate to the nearest dollar"
-      ],
-      "tag": "distributional_forecast",
-      "type": "application",
-      "objective": "LO17.5",
-      "difficulty": "elite",
-      "conceptCluster": "uncertainty_estimation",
-      "primarySkill": "probability_estimation",
-      "secondarySkills": [
-        "sensitivity_analysis"
-      ],
-      "repairSkill": "probability_estimation",
-      "commonError": "Treating a single expected value as a complete description of risk",
-      "feedback": "A distribution and sensitivity analysis reveal dispersion and dependence on uncertain assumptions.",
-      "aHash": "f8775b246add0c46a2b5900ce9ee18f9185525af04beda04c7b58b739c44f3a7"
-    },
-    {
-      "id": 341,
-      "sourceGame": "marketSignal",
-      "q": "A supply contract cannot specify every disruption. Which institution best supports adaptation while limiting opportunism?",
-      "options": [
-        "A clause allowing the stronger party to rewrite terms unilaterally",
-        "A neutral arbitration process using verifiable cost evidence",
-        "No dispute process and no renegotiation rule",
-        "Automatic termination after any minor shock"
-      ],
-      "tag": "adaptive_governance",
-      "type": "application",
-      "objective": "LO17.6",
-      "difficulty": "elite",
-      "conceptCluster": "institution_design",
-      "primarySkill": "contingent_contracts",
-      "secondarySkills": [
-        "dispute_resolution"
-      ],
-      "repairSkill": "contingent_contracts",
-      "commonError": "Choosing either total rigidity or unchecked discretion",
-      "feedback": "Neutral arbitration creates an adaptive mechanism without handing either side unlimited power.",
-      "aHash": "dd3e0a51f680b24bfe2f2f9eed9cda11695d4da43338c2b22a4f6bff5e608676"
+      "aHash": "daea7b6a2a2c0fce141194311ee25a15141a23414e032a011533add9df7fc12e",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 342,
       "sourceGame": "marketSignal",
       "q": "Two firms collaborate on innovation whose future applications are unknown. Which governance rule best addresses unforeseen opportunities?",
       "options": [
-        "Specify only today’s product price",
-        "Give both firms an unconditional veto over every minor decision",
+        "Give one side all future rights without a disclosure or dispute process",
+        "Fix today’s price and let each side interpret future rights independently",
         "Define decision rights, information sharing, and a formula for splitting gains from new uses",
-        "Prohibit any use not imagined at signing"
+        "List today’s known uses while leaving future decision authority unspecified"
       ],
       "tag": "innovation_contingency_governance",
       "type": "application",
       "objective": "LO17.6",
-      "difficulty": "elite",
-      "conceptCluster": "institution_design",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_unforeseen_contingencies",
       "primarySkill": "unforeseen_contingencies",
       "secondarySkills": [
         "decision_rights"
       ],
-      "repairSkill": "unforeseen_contingencies",
+      "repairSkill": "contingency_contracts",
       "commonError": "Trying to enumerate every future use instead of designing a process for adaptation",
       "feedback": "Governance rules can allocate control and gains when future contingencies cannot be fully written down.",
-      "aHash": "2850d87893ad3d08cd03d86a740cb82f456d642a06efc9a32db0fda8396ea60b"
+      "aHash": "2850d87893ad3d08cd03d86a740cb82f456d642a06efc9a32db0fda8396ea60b",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 343,
       "sourceGame": "marketSignal",
       "q": "A platform changes standards frequently, exposing complementors to expropriation after they invest. Which commitment most credibly encourages investment?",
       "options": [
-        "A vague promise that changes will be fair",
-        "Secret standards revised without notice",
-        "A rule allowing retroactive fees after investment",
+        "Require users to make additional specific investments before negotiating standards",
+        "Let the platform change terms immediately, with no compensation for specific investment",
+        "Guarantee today’s fee while allowing unrestricted changes to compatibility rules",
         "Transparent change procedures, notice periods, and compensation for stranded investments"
       ],
       "tag": "platform_commitment",
       "type": "application",
       "objective": "LO17.6",
-      "difficulty": "elite",
-      "conceptCluster": "institution_design",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_credible_commitment",
       "primarySkill": "credible_commitment",
       "secondarySkills": [
         "hold_up_mitigation"
       ],
-      "repairSkill": "credible_commitment",
+      "repairSkill": "contingency_contracts",
       "commonError": "Relying on unenforceable assurances after partners become dependent",
       "feedback": "Procedural limits and compensation reduce fear of post-investment rule changes.",
-      "aHash": "d2e8c2e3667141a56d6bedb5944e20a09cab2f5da0069333c5a768a1942acbf4"
-    },
-    {
-      "id": 344,
-      "sourceGame": "marketSignal",
-      "q": "A firm claims it has a monopoly because it is the only coffee shop on one campus, although students can walk to several nearby cafés. What is the key analytical issue?",
-      "options": [
-        "Whether the relevant market includes nearby cafés and other close substitutes",
-        "Whether the campus shop has positive fixed cost",
-        "Whether coffee is a normal good",
-        "Whether the shop uses marginal-cost pricing"
-      ],
-      "tag": "relevant_market_substitutes",
-      "type": "analysis",
-      "objective": "LO8.1",
-      "difficulty": "elite",
-      "conceptCluster": "market_definition",
-      "primarySkill": "market_definition",
-      "secondarySkills": [
-        "substitution"
-      ],
-      "repairSkill": "market_definition",
-      "commonError": "Defining the market around the firm rather than around consumer substitution",
-      "feedback": "Market boundaries depend on available substitutes and geographic switching, not the seller’s preferred label.",
-      "aHash": "e65740a47bd007d6d4f08d5be8481e871b1d1b82c40ad7a30e05752c8a1ca4fd"
-    },
-    {
-      "id": 345,
-      "sourceGame": "marketSignal",
-      "q": "A price increase for premium streaming causes many users to switch to ad-supported streaming but few to switch to movie theaters. What does this evidence suggest?",
-      "options": [
-        "Movie theaters are the only relevant market",
-        "The two streaming tiers likely belong to a closer relevant market than theaters",
-        "All entertainment products must be one market",
-        "Premium streaming has no substitutes"
-      ],
-      "tag": "cross_price_market_definition",
-      "type": "inference",
-      "objective": "LO8.1",
-      "difficulty": "elite",
-      "conceptCluster": "market_definition",
-      "primarySkill": "market_definition",
-      "secondarySkills": [
-        "cross_price_elasticity"
-      ],
-      "repairSkill": "market_definition",
-      "commonError": "Using broad product similarity instead of observed substitution",
-      "feedback": "Strong switching between the streaming tiers indicates a tighter competitive relationship.",
-      "aHash": "415905683182d8e6066e6beef149bab0ff9f414001371d566f756068c278eda1"
-    },
-    {
-      "id": 346,
-      "sourceGame": "marketSignal",
-      "q": "A merger analysis defines the market as “all beverages,” hiding a dominant share in energy drinks. What is the danger?",
-      "options": [
-        "A broad market always exaggerates concentration",
-        "Market definition cannot affect measured market share",
-        "An overly broad market can understate competitive power in the narrower product space",
-        "Energy drinks and water must have identical demand"
-      ],
-      "tag": "overbroad_market_definition",
-      "type": "analysis",
-      "objective": "LO8.1",
-      "difficulty": "elite",
-      "conceptCluster": "market_definition",
-      "primarySkill": "market_definition",
-      "secondarySkills": [
-        "market_power"
-      ],
-      "repairSkill": "market_definition",
-      "commonError": "Assuming broader categories automatically produce more accurate competition measures",
-      "feedback": "Including weak substitutes dilutes market shares and can conceal power over a narrower set of buyers.",
-      "aHash": "bbb5fbb587c56a827f4a69570d4f00bb1adf340508103c7f3e7c4de5e7505f15"
-    },
-    {
-      "id": 347,
-      "sourceGame": "marketSignal",
-      "q": "A firm sells industrial pumps worldwide, but emergency buyers can source only from suppliers within 200 miles. Which market definition is most defensible for emergency purchases?",
-      "options": [
-        "The entire global pump market",
-        "Only the single firm’s current customers",
-        "All industrial equipment regardless of function",
-        "A regional emergency-supply market"
-      ],
-      "tag": "geographic_market_definition",
-      "type": "application",
-      "objective": "LO8.1",
-      "difficulty": "elite",
-      "conceptCluster": "market_definition",
-      "primarySkill": "market_definition",
-      "secondarySkills": [
-        "geographic_substitution"
-      ],
-      "repairSkill": "market_definition",
-      "commonError": "Using the broadest possible geography despite severe switching constraints",
-      "feedback": "The relevant geography reflects where emergency buyers can realistically turn.",
-      "aHash": "1a7ed67d0a70376615767d4bd16938091e5e07fd42d1a8af77a6b16ea5d8f392"
+      "aHash": "d2e8c2e3667141a56d6bedb5944e20a09cab2f5da0069333c5a768a1942acbf4",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 348,
       "sourceGame": "marketSignal",
-      "q": "Evidence shows a 5% price increase causes enough customers to switch away that the increase becomes unprofitable. What does that imply about the proposed market?",
+      "q": "A candidate market contains all local repair shops. Together they sell 1,000 repairs at $100 each, with constant avoidable cost $60 per repair. A hypothetical sole supplier raises all their prices to $105. Buyers then shift 150 repairs to services outside the candidate market. Assume other costs and conditions do not change. What do the profit comparison and switching evidence suggest?",
       "options": [
-        "It is probably too narrow because important substitutes lie outside it",
-        "It is certainly too broad",
-        "The seller has perfect monopoly power",
-        "Supply must be perfectly inelastic"
+        "Contribution falls from $40,000 to $38,250; the candidate may exclude important substitutes",
+        "Contribution rises from $40,000 to $44,625; the candidate is broad enough",
+        "Contribution falls from $40,000 to $38,250; the candidate is necessarily too broad",
+        "Contribution rises by $5,000 because all original buyers pay $5 more"
       ],
       "tag": "hypothetical_monopolist_logic",
-      "type": "inference",
+      "type": "synthesis",
       "objective": "LO8.1",
-      "difficulty": "elite",
-      "conceptCluster": "market_definition",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_market_definition",
       "primarySkill": "market_definition",
       "secondarySkills": [
-        "substitution"
+        "substitution",
+        "contribution_margin"
       ],
       "repairSkill": "market_definition",
       "commonError": "Interpreting strong substitution as evidence of a self-contained market",
-      "feedback": "If a small price increase fails because buyers switch outward, the candidate market excludes meaningful substitutes.",
-      "aHash": "a51f7e1e5b311dc6476868205eb1c037e4743b7626c7d1aad8bcc2e5c0d723bc"
-    },
-    {
-      "id": 349,
-      "sourceGame": "marketSignal",
-      "q": "Demand is Qd=900-15P and supply is Qs=100+5P. A per-unit production tax shifts supply to Qs=100+5(P-8). What are the new equilibrium price and quantity?",
-      "options": [
-        "$38 and 330 units",
-        "$42 and 270 units",
-        "$40 and 300 units",
-        "$46 and 210 units"
-      ],
-      "tag": "tax_shift_equilibrium",
-      "type": "calculation",
-      "objective": "LO8.2",
-      "difficulty": "elite",
-      "conceptCluster": "market_behavior",
-      "primarySkill": "equilibrium_calculation",
-      "secondarySkills": [
-        "supply_behavior"
-      ],
-      "repairSkill": "equilibrium_calculation",
-      "commonError": "Shifting demand or applying the tax to the buyer equation incorrectly",
-      "feedback": "Set 900-15P=100+5(P-8); equilibrium is P=$42 and Q=270.",
-      "aHash": "3130f89d4695c830b33ac36db53e9fd48d2b9b5660ef0ec680f99ddbf6bde9cb"
-    },
-    {
-      "id": 350,
-      "sourceGame": "marketSignal",
-      "q": "At a given price, buyers demand 500 units and sellers supply 380. Which adjustment pressure follows in an uncontrolled market?",
-      "options": [
-        "Sellers cut price because inventory is accumulating",
-        "Demand shifts left automatically",
-        "Buyers bid price upward, encouraging more supply and reducing quantity demanded",
-        "Supply shifts right immediately with no price change"
-      ],
-      "tag": "shortage_adjustment_process",
-      "type": "analysis",
-      "objective": "LO8.2",
-      "difficulty": "elite",
-      "conceptCluster": "market_behavior",
-      "primarySkill": "buyer_seller_behavior",
-      "secondarySkills": [
-        "shortage_surplus"
-      ],
-      "repairSkill": "buyer_seller_behavior",
-      "commonError": "Reversing the price pressure created by a shortage",
-      "feedback": "Excess demand creates upward price pressure until planned purchases and sales converge.",
-      "aHash": "591560c2935e4b2e4e270b504a42607bf20a18153e1d417f255d2330e8656dc5"
-    },
-    {
-      "id": 351,
-      "sourceGame": "marketSignal",
-      "q": "A commodity price rises. Existing firms expand output along their supply curves, and new firms enter months later. Which statement correctly separates the responses?",
-      "options": [
-        "Both responses are movements along the same supply curve",
-        "Existing-firm expansion shifts demand right",
-        "Entry changes quantity supplied but never supply",
-        "Expansion by existing firms is movement along supply; entry shifts market supply right"
-      ],
-      "tag": "movement_vs_shift_supply",
-      "type": "analysis",
-      "objective": "LO8.2",
-      "difficulty": "elite",
-      "conceptCluster": "market_behavior",
-      "primarySkill": "supply_behavior",
-      "secondarySkills": [
-        "entry_exit"
-      ],
-      "repairSkill": "supply_behavior",
-      "commonError": "Calling every output increase a shift of supply",
-      "feedback": "A price change moves existing sellers along supply; entry changes the number of sellers and shifts supply.",
-      "aHash": "304d892c862acc206bdc3e8f490cbaef7d2e4807eae441d43959812ee6abba9f"
+      "feedback": "Initial contribution is 1,000×40 = $40,000. After switching, 850×45 = $38,250. The candidate-wide rise is unprofitable because buyers switch outward, suggesting that relevant substitutes were omitted. The inference depends on the stated baseline and unchanged costs.",
+      "aHash": "16c98da85e993f5c3e91c11393114a2fa4a3a31112825229483bebf1b287e872",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 352,
       "sourceGame": "marketSignal",
-      "q": "A buyer’s willingness to pay for successive units is $40, $32, $24, and $16. At a market price of $25, how many units are demanded and what is consumer surplus?",
+      "q": "Buyer A values successive units at $40, $32, $24 and $16; buyer B values them at $35, $27 and $19. A seller has successive marginal costs $8, $14, $21, $29 and $36. Each buyer buys only units worth at least the posted price, and the seller supplies units costing no more than that price. Among prices $25, $28 and $30, which clears the market, and what are total gains from trade?",
       "options": [
-        "2 units and $22",
-        "3 units and $21",
-        "2 units and $47",
-        "1 unit and $15"
+        "$28 clears 3 units and creates $64 in gains",
+        "$25 clears 4 units and creates $50 in gains",
+        "$30 clears 4 units and creates $64 in gains",
+        "$28 clears 3 units and creates $84 in gains"
       ],
       "tag": "discrete_demand_surplus",
-      "type": "calculation",
+      "type": "analysis",
       "objective": "LO8.2",
-      "difficulty": "elite",
-      "conceptCluster": "market_behavior",
-      "primarySkill": "demand_behavior",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_buyer_seller_behavior",
+      "primarySkill": "buyer_seller_behavior",
       "secondarySkills": [
         "consumer_surplus"
       ],
-      "repairSkill": "demand_behavior",
-      "commonError": "Buying a unit whose willingness to pay is below price or summing total value instead of surplus",
-      "feedback": "The buyer purchases the first two units; surplus is (40-25)+(32-25)=$22.",
-      "aHash": "6e195101f4a5810f45f3d883b7771e3e91b25099b6fd6981b111ac321b9326b9"
-    },
-    {
-      "id": 353,
-      "sourceGame": "marketSignal",
-      "q": "A seller’s marginal costs for four units are $8, $14, $21, and $29. At price $22, how many units are supplied and what is producer surplus before fixed cost?",
-      "options": [
-        "2 units and $22",
-        "3 units and $23",
-        "3 units and $66",
-        "4 units and $16"
-      ],
-      "tag": "discrete_supply_surplus",
-      "type": "calculation",
-      "objective": "LO8.2",
-      "difficulty": "elite",
-      "conceptCluster": "market_behavior",
-      "primarySkill": "supply_behavior",
-      "secondarySkills": [
-        "producer_surplus"
-      ],
-      "repairSkill": "supply_behavior",
-      "commonError": "Producing a unit whose marginal cost exceeds price or confusing revenue with surplus",
-      "feedback": "The first three units are produced; surplus is 14+8+1=$23.",
-      "aHash": "9a7474cad9cbd6903fdf1168bd5723a03e6cfc1e7039b9d4b817ce2de1b2a404"
-    },
-    {
-      "id": 354,
-      "sourceGame": "marketSignal",
-      "q": "A price ceiling creates persistent queues and resale. What does that behavior reveal?",
-      "options": [
-        "The ceiling is above equilibrium and causes a surplus",
-        "Demand has shifted left until the market clears",
-        "The controlled price is below the market-clearing price and nonprice rationing is allocating the shortage",
-        "Sellers face no opportunity cost"
-      ],
-      "tag": "nonprice_rationing",
-      "type": "analysis",
-      "objective": "LO8.2",
-      "difficulty": "elite",
-      "conceptCluster": "market_behavior",
-      "primarySkill": "shortage_surplus",
-      "secondarySkills": [
-        "price_controls"
-      ],
-      "repairSkill": "shortage_surplus",
-      "commonError": "Treating the posted price as proof that the market is in equilibrium",
-      "feedback": "Queues and resale are signals of excess demand suppressed by the controlled price.",
-      "aHash": "c3c54077c160d6752e380f839a81fa3f52ae7007c4d497c70f04cf5261c8f8f2"
-    },
-    {
-      "id": 355,
-      "sourceGame": "marketSignal",
-      "q": "Market demand is Qd=1,200-20P and supply is Qs=200+30P. The government sets price at $16. What shortage or surplus results?",
-      "options": [
-        "A surplus of 200 units",
-        "A shortage of 400 units",
-        "No imbalance",
-        "A shortage of 200 units"
-      ],
-      "tag": "equation_shortage",
-      "type": "calculation",
-      "objective": "LO8.3",
-      "difficulty": "elite",
-      "conceptCluster": "market_equilibrium",
-      "primarySkill": "shortage_surplus",
-      "secondarySkills": [
-        "equilibrium_calculation"
-      ],
-      "repairSkill": "shortage_surplus",
-      "commonError": "Subtracting demand from supply with the wrong sign",
-      "feedback": "At $16, Qd=880 and Qs=680, so shortage is 200.",
-      "aHash": "12a617cc2618dad0f82d991070283a971868212e658232abfef9cc1782e4d807"
-    },
-    {
-      "id": 358,
-      "sourceGame": "marketSignal",
-      "q": "Refer to the graph. Starting at S0/D0, demand increases to D1 while supply later increases to S1. Which result is certain from initial to final equilibrium?",
-      "options": [
-        "Price rises permanently to P2",
-        "Quantity falls from QA to QC",
-        "Quantity rises from QA to QD while price returns to P1",
-        "Price falls permanently to P0"
-      ],
-      "tag": "symbolic_graph_offsetting_shifts",
-      "type": "graph",
-      "objective": "LO8.3",
-      "difficulty": "elite",
-      "conceptCluster": "market_equilibrium",
-      "primarySkill": "comparative_statics",
-      "secondarySkills": [
-        "demand_shift",
-        "supply_shift"
-      ],
-      "repairSkill": "comparative_statics",
-      "commonError": "Assuming both shifts must move price in the same direction",
-      "feedback": "The final S1/D1 point is QD at P1: higher quantity with the original price restored.",
-      "image": "demand_supply.png",
-      "graphRequired": true,
-      "aHash": "3f4a4fba37a67e2fb66585066a47242e55c95207087056d3b761cf3fcd222926"
-    },
-    {
-      "id": 359,
-      "sourceGame": "marketSignal",
-      "q": "Demand and supply are Qd=600-10P and Qs=60+8P. A demand increase adds 90 units at every price while a supply increase adds 54 units. What is the new equilibrium price?",
-      "options": [
-        "$27",
-        "$30",
-        "$35",
-        "$32"
-      ],
-      "tag": "simultaneous_equation_shifts",
-      "type": "calculation",
-      "objective": "LO8.3",
-      "difficulty": "elite",
-      "conceptCluster": "market_equilibrium",
-      "primarySkill": "equilibrium_calculation",
-      "secondarySkills": [
-        "comparative_statics"
-      ],
-      "repairSkill": "equilibrium_calculation",
-      "commonError": "Applying only one shift or adding shifts to price rather than quantities",
-      "feedback": "New demand is 690-10P and supply is 114+8P; solving gives P=$32.",
-      "aHash": "f2011dae707ee9b1141a0de1147a115f9c05e41022d8c363087de560734e87c7"
-    },
-    {
-      "id": 360,
-      "sourceGame": "marketSignal",
-      "q": "A market moves from price $30 and quantity 500 to price $30 and quantity 650. Which explanation is most consistent?",
-      "options": [
-        "Demand and supply both increased by offsetting amounts at the original price",
-        "Demand increased while supply decreased",
-        "Demand and supply both decreased",
-        "Only demand increased while supply stayed fixed"
-      ],
-      "tag": "unchanged_price_higher_quantity",
-      "type": "inference",
-      "objective": "LO8.3",
-      "difficulty": "elite",
-      "conceptCluster": "market_equilibrium",
-      "primarySkill": "comparative_statics",
-      "secondarySkills": [
-        "simultaneous_shifts"
-      ],
-      "repairSkill": "comparative_statics",
-      "commonError": "Assuming an unchanged price means no market change occurred",
-      "feedback": "Higher quantity with unchanged price can result when rightward demand and supply shifts offset in price.",
-      "aHash": "d0f51091ef88a8449cd62fd701ac3942eb6c3cb96debc55db547a882713c730a"
-    },
-    {
-      "id": 361,
-      "sourceGame": "marketSignal",
-      "q": "An industry receives a production subsidy while a successful advertising campaign raises demand. What can be concluded without knowing the sizes of the two shifts?",
-      "options": [
-        "Price and quantity must both rise",
-        "Quantity rises, while the price effect depends on the relative shifts",
-        "Price and quantity must both fall",
-        "Quantity is ambiguous while price must rise"
-      ],
-      "tag": "simultaneous_shift_ambiguity",
-      "type": "application",
-      "objective": "LO8.4",
-      "difficulty": "elite",
-      "conceptCluster": "industry_adjustment",
-      "primarySkill": "comparative_statics",
-      "secondarySkills": [
-        "demand_shift",
-        "supply_shift"
-      ],
-      "repairSkill": "comparative_statics",
-      "commonError": "Forcing a definite price prediction when demand and supply move in opposite price directions",
-      "feedback": "Both shifts raise quantity; demand raises price while supply lowers it, making price ambiguous.",
-      "aHash": "a12e7aba2aa8b45588ca4f3d6298f671174348f45968cecee6c5ead73829b55b"
-    },
-    {
-      "id": 362,
-      "sourceGame": "marketSignal",
-      "q": "A temporary demand surge raises market price. Firms expand current output, then capacity enters over time. Which sequence best describes the industry adjustment?",
-      "options": [
-        "An immediate leftward demand shift followed by exit",
-        "A rightward demand shift followed by a leftward supply shift",
-        "Movement along short-run supply followed by a rightward shift of long-run market supply",
-        "No supply response because only demand changed initially"
-      ],
-      "tag": "short_run_long_run_supply_response",
-      "type": "analysis",
-      "objective": "LO8.4",
-      "difficulty": "elite",
-      "conceptCluster": "industry_adjustment",
-      "primarySkill": "industry_level_changes",
-      "secondarySkills": [
-        "entry_exit"
-      ],
-      "repairSkill": "industry_level_changes",
-      "commonError": "Collapsing current-firm output response and entry into one identical change",
-      "feedback": "Existing firms respond to price first; later capacity and entry shift the industry supply curve.",
-      "aHash": "60080ecefb767c7e7c6e441b590c680ebd800a7d234d45a35324e0308bb01960"
-    },
-    {
-      "id": 363,
-      "sourceGame": "marketSignal",
-      "q": "Refer to the graph. The market moves from S0/D1 to S1/D1. Which event best explains the change?",
-      "options": [
-        "An increase in consumer income for a normal good",
-        "A decrease in the number of sellers",
-        "A rise in the price of a complement",
-        "An increase in the number of sellers or a fall in production cost"
-      ],
-      "tag": "graph_supply_shift_cause",
-      "type": "graph",
-      "objective": "LO8.4",
-      "difficulty": "elite",
-      "conceptCluster": "industry_adjustment",
-      "primarySkill": "industry_level_changes",
-      "secondarySkills": [
-        "supply_shift"
-      ],
-      "repairSkill": "industry_level_changes",
-      "commonError": "Explaining a supply-curve movement with a demand determinant",
-      "feedback": "Moving from S0 to S1 at the same demand curve is an increase in supply.",
-      "image": "demand_supply.png",
-      "graphRequired": true,
-      "aHash": "c8cb3c79fb8ef0c71456d6d98ee70c041ee8b35bd66b4f857fc693cf2b0d7bb4"
+      "repairSkill": "buyer_seller_behavior",
+      "commonError": "Ignoring aggregation across buyers or counting price payments as gains from trade",
+      "feedback": "At $28, A buys two units and B buys one; the seller offers three. Their values total $107 and costs total $43, so gains are $64. At $25 demand4 exceeds supply3; at $30 demand3 is below supply4. Price allocates the gain rather than adding to it.",
+      "aHash": "c6c9544490c2ef7068b5b3fb3dba0ba592535ffd958a1a430c95fcb936bcbd96",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 364,
       "sourceGame": "marketSignal",
-      "q": "A market initially has equilibrium price $25 and quantity 1,000. After entry, price falls to $20 and quantity rises to 1,300. Which statement best captures the industry-level signal?",
+      "q": "Demand is unchanged and incumbent firms have upward-sloping marginal cost. After entry, market price falls from $25 to $20 and total quantity rises from 1,000 to 1,300. Which conclusion follows?",
       "options": [
-        "Entry expanded supply, transferring some gains to buyers through lower price and greater output",
-        "Demand must have decreased because price fell",
-        "Each incumbent necessarily increased its own output",
-        "The market became less competitive"
+        "Market output rises, but each otherwise unchanged incumbent reduces its own profit-maximizing output",
+        "Market output rises, so every incumbent must expand its own output",
+        "Market price falls, so the demand curve must have shifted left",
+        "Market price falls, so every incumbent must immediately shut down"
       ],
       "tag": "entry_market_effects",
       "type": "analysis",
       "objective": "LO8.4",
-      "difficulty": "elite",
-      "conceptCluster": "industry_adjustment",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_industry_level_changes",
       "primarySkill": "industry_level_changes",
       "secondarySkills": [
         "entry_exit"
       ],
-      "repairSkill": "industry_level_changes",
+      "repairSkill": "demand_supply_shifts",
       "commonError": "Inferring incumbent output from total market output or treating price decline as only demand driven",
-      "feedback": "Entry can increase total quantity even while reducing the output and profit of individual incumbents.",
-      "aHash": "f1decd8a18150a9e1c44924d230f71782fefc45dba940dc90997ed268c3c8455"
-    },
-    {
-      "id": 365,
-      "sourceGame": "marketSignal",
-      "q": "A drought shifts supply left while consumers simultaneously learn the product is harmful, shifting demand left. What is certain?",
-      "options": [
-        "Equilibrium price and quantity both rise",
-        "Equilibrium quantity falls; the price change is ambiguous",
-        "Equilibrium price falls; quantity is ambiguous",
-        "Equilibrium quantity rises; price is ambiguous"
-      ],
-      "tag": "both_curves_left",
-      "type": "analysis",
-      "objective": "LO8.4",
-      "difficulty": "elite",
-      "conceptCluster": "industry_adjustment",
-      "primarySkill": "comparative_statics",
-      "secondarySkills": [
-        "simultaneous_shifts"
-      ],
-      "repairSkill": "comparative_statics",
-      "commonError": "Assuming the common direction of curve shifts determines price instead of quantity",
-      "feedback": "Both shifts reduce quantity, while supply raises price and demand lowers it.",
-      "aHash": "c9447a22474e34ccb5db73b135a173558c79e053d15388fa5f57ce4b26d6e0cb"
-    },
-    {
-      "id": 366,
-      "sourceGame": "marketSignal",
-      "q": "A competitive firm earns accounting profit of $90,000, but the owner’s forgone salary and capital return total $110,000. What is its economic profit and long-run signal?",
-      "options": [
-        "$90,000, signaling entry",
-        "$20,000, signaling entry",
-        "-$20,000, signaling pressure to exit or redeploy resources",
-        "$200,000, signaling no adjustment"
-      ],
-      "tag": "economic_vs_accounting_profit",
-      "type": "calculation",
-      "objective": "LO9.1",
-      "difficulty": "elite",
-      "conceptCluster": "competition_and_returns",
-      "primarySkill": "economic_profit_interpretation",
-      "secondarySkills": [
-        "opportunity_cost"
-      ],
-      "repairSkill": "economic_profit_interpretation",
-      "commonError": "Ignoring implicit opportunity costs when measuring economic profit",
-      "feedback": "Economic profit is $90,000-$110,000=-$20,000, indicating resources earn more elsewhere.",
-      "aHash": "9e99f842dbf775e2c4acf5debcf547c59fb5fea3cc0bca5bb76eba679c871ed3"
-    },
-    {
-      "id": 367,
-      "sourceGame": "marketSignal",
-      "q": "A competitive industry’s price is $34. A representative firm produces 5,000 units at ATC=$30. What is the firm’s economic profit, and what market response does it invite?",
-      "options": [
-        "$150,000 profit, inviting exit",
-        "$20,000 loss, inviting exit",
-        "Zero profit, so no response",
-        "$20,000 profit, inviting entry"
-      ],
-      "tag": "profit_and_entry_signal",
-      "type": "calculation",
-      "objective": "LO9.1",
-      "difficulty": "elite",
-      "conceptCluster": "competition_and_returns",
-      "primarySkill": "profit_as_market_signal",
-      "secondarySkills": [
-        "entry_exit"
-      ],
-      "repairSkill": "profit_as_market_signal",
-      "commonError": "Using total revenue as profit or reversing the entry signal",
-      "feedback": "Profit is ($34-$30)(5,000)=$20,000; positive economic profit attracts entry.",
-      "aHash": "8cb2f51f2cf78e66b013ca9c0d90b40bfd1394343688cb7e2de254a28ca0ffca"
+      "feedback": "Entry shifts market supply right. The lower price reduces each unchanged incumbent’s chosen output along its MC curve, while entrants make total market output larger. Shutdown requires separate variable-cost information.",
+      "aHash": "bb3d23e5e060c54a21d5f8290e693975544d619590216b32e12bbaf4deafe940",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 368,
       "sourceGame": "marketSignal",
-      "q": "Refer to the long-run competition graph. At market point B, what is happening to the representative firm in panel (a)?",
+      "q": "Refer to the long-run competition graph. At market point B, what is happening to the representative firm in the left panel?",
       "options": [
-        "It receives P2, produces Q2, and earns positive economic profit",
-        "It receives P1, produces Q1, and earns zero economic profit",
-        "It receives P0 and must be earning positive profit",
-        "It receives P2 but produces Q1 at minimum ATC"
+        "It receives P2, produces Q2 and earns positive economic profit",
+        "It receives P2, produces Q1 and earns positive economic profit",
+        "It receives P1, produces Q2 and earns zero economic profit",
+        "It receives P2, produces Q2 and earns zero economic profit"
       ],
       "tag": "point_b_firm_profit",
       "type": "graph",
       "objective": "LO9.1",
-      "difficulty": "elite",
-      "conceptCluster": "competition_and_returns",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_firm_market_linkage",
       "primarySkill": "firm_market_linkage",
       "secondarySkills": [
         "economic_profit_interpretation"
       ],
-      "repairSkill": "firm_market_linkage",
+      "repairSkill": "competitive_returns",
       "commonError": "Reading the market panel without linking its price to the firm panel",
       "feedback": "Point B sets price P2; the firm chooses Q2 where MC=P2, with price above ATC.",
       "image": "long_run_competition.png",
       "graphRequired": true,
-      "aHash": "020265266472f299bad9a8cab453d75a9dc742b565ea1dec95fd687284f4647b"
-    },
-    {
-      "id": 369,
-      "sourceGame": "marketSignal",
-      "q": "A firm’s return on invested capital is 9%, while comparable-risk capital can earn 11% elsewhere. Which statement is economically correct?",
-      "options": [
-        "The firm earns positive economic profit because 9% is above zero",
-        "The firm earns a negative economic return despite possibly reporting accounting profit",
-        "The opportunity cost of capital is irrelevant",
-        "The firm must be a monopoly"
-      ],
-      "tag": "return_relative_to_opportunity_cost",
-      "type": "analysis",
-      "objective": "LO9.1",
-      "difficulty": "elite",
-      "conceptCluster": "competition_and_returns",
-      "primarySkill": "economic_profit_interpretation",
-      "secondarySkills": [
-        "cost_of_capital"
-      ],
-      "repairSkill": "economic_profit_interpretation",
-      "commonError": "Using zero rather than the opportunity cost as the benchmark for economic profit",
-      "feedback": "Economic return is judged relative to the best comparable-risk alternative.",
-      "aHash": "c7ab0133a6f8680254997f7274d530ff230b06833f7489ff866dead04b118df0"
-    },
-    {
-      "id": 370,
-      "sourceGame": "marketSignal",
-      "q": "Refer to the long-run competition graph. After demand rises from D0 to D1, why does the market move from B toward D rather than remain at B?",
-      "options": [
-        "Losses force firms to exit until price rises to P2",
-        "Demand automatically returns to D0",
-        "Positive profit attracts entry, shifting supply from S0 to S1 until price returns to P1",
-        "Incumbents collude to hold quantity at QB"
-      ],
-      "tag": "profit_mean_reversion_graph",
-      "type": "graph",
-      "objective": "LO9.2",
-      "difficulty": "elite",
-      "conceptCluster": "competition_and_returns",
-      "primarySkill": "profit_mean_reversion",
-      "secondarySkills": [
-        "entry_exit"
-      ],
-      "repairSkill": "profit_mean_reversion",
-      "commonError": "Treating the short-run profit point as a permanent equilibrium",
-      "feedback": "Entry expands supply and erodes the temporary profit until firms again earn normal returns.",
-      "image": "long_run_competition.png",
-      "graphRequired": true,
-      "aHash": "6ac3563c0276abc36242055a6a8e729364216ea8cdf42613ee6b2dcb8aa3c27e"
+      "aHash": "10c4674be86242875d5ee7600ee83d57498642dbf23bf9d3d3a6253c88bddcc9",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 371,
@@ -8413,114 +6588,19 @@ const questionBanks = {
       "tag": "loss_mean_reversion_graph",
       "type": "graph",
       "objective": "LO9.2",
-      "difficulty": "elite",
-      "conceptCluster": "competition_and_returns",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_profit_mean_reversion",
       "primarySkill": "profit_mean_reversion",
       "secondarySkills": [
         "entry_exit"
       ],
-      "repairSkill": "profit_mean_reversion",
+      "repairSkill": "mean_reversion_entry_exit",
       "commonError": "Choosing entry when the market price creates losses",
       "feedback": "At C price is P0; losses induce exit, reducing supply and restoring P1 at A.",
       "image": "long_run_competition.png",
       "graphRequired": true,
-      "aHash": "ac9d2a0576355cc9c2d2f362e9498f79a40dc73dd3632090d842c4aef9f0e8ef"
-    },
-    {
-      "id": 372,
-      "sourceGame": "marketSignal",
-      "q": "An industry’s profits are highly persistent despite imitation. Which fact most weakens the prediction of rapid mean reversion?",
-      "options": [
-        "Strong legal barriers and scarce specialized inputs block entry",
-        "Consumers can compare prices easily",
-        "Production knowledge is widely available",
-        "Capital can move freely across industries"
-      ],
-      "tag": "barriers_slow_mean_reversion",
-      "type": "analysis",
-      "objective": "LO9.2",
-      "difficulty": "elite",
-      "conceptCluster": "competition_and_returns",
-      "primarySkill": "profit_mean_reversion",
-      "secondarySkills": [
-        "barriers_to_entry"
-      ],
-      "repairSkill": "profit_mean_reversion",
-      "commonError": "Assuming mean reversion occurs at the same speed regardless of entry conditions",
-      "feedback": "Barriers and scarce inputs slow the competitive forces that normally erode excess returns.",
-      "aHash": "ffdb0efb99b31a358249b4ae48794054639ff65cdd9c360b208df1483c1b6b5d"
-    },
-    {
-      "id": 373,
-      "sourceGame": "marketSignal",
-      "q": "A commodity boom raises returns far above normal. Firms invest heavily, but new capacity takes four years to arrive. What pattern is most likely?",
-      "options": [
-        "Profits instantly return to zero",
-        "Profits remain elevated temporarily, then decline as delayed supply enters",
-        "High profits permanently increase because entry raises scarcity",
-        "Losses appear immediately before any capacity is added"
-      ],
-      "tag": "delayed_mean_reversion",
-      "type": "analysis",
-      "objective": "LO9.2",
-      "difficulty": "elite",
-      "conceptCluster": "competition_and_returns",
-      "primarySkill": "profit_mean_reversion",
-      "secondarySkills": [
-        "entry_lag"
-      ],
-      "repairSkill": "profit_mean_reversion",
-      "commonError": "Treating long-run adjustment as instantaneous",
-      "feedback": "Construction lags allow temporary persistence, but added capacity eventually pushes returns toward normal.",
-      "aHash": "4f42d5110a8725b33de0b9b15c6b4dd4e53a3f2560ef3a70e876e29df046130a"
-    },
-    {
-      "id": 374,
-      "sourceGame": "marketSignal",
-      "q": "Job A pays $70,000 with safe conditions. Job B has a 1% annual fatality risk and pays $100,000. What annual wage premium is being offered for the additional risk?",
-      "options": [
-        "$1,000",
-        "$70,000",
-        "$30,000",
-        "$100,000"
-      ],
-      "tag": "compensating_wage_premium",
-      "type": "calculation",
-      "objective": "LO9.3",
-      "difficulty": "elite",
-      "conceptCluster": "risk_and_returns",
-      "primarySkill": "compensating_wage_differential",
-      "secondarySkills": [
-        "risk_premium_interpretation"
-      ],
-      "repairSkill": "compensating_wage_differential",
-      "commonError": "Using the full risky-job wage rather than the wage difference",
-      "feedback": "The compensating wage differential is $100,000-$70,000=$30,000.",
-      "aHash": "b6b838f2dc6694bc400993035fc497064d7c1ad409d774c5bb83717749cd1f61"
-    },
-    {
-      "id": 375,
-      "sourceGame": "marketSignal",
-      "q": "Asset X has expected return 8% and is nearly risk-free. Asset Y has expected return 12% with substantial risk. What is Y’s compensating risk differential relative to X?",
-      "options": [
-        "8 percentage points",
-        "12 percentage points",
-        "20 percentage points",
-        "4 percentage points"
-      ],
-      "tag": "investment_risk_differential",
-      "type": "calculation",
-      "objective": "LO9.3",
-      "difficulty": "elite",
-      "conceptCluster": "risk_and_returns",
-      "primarySkill": "compensating_risk_differential",
-      "secondarySkills": [
-        "risk_premium_interpretation"
-      ],
-      "repairSkill": "compensating_risk_differential",
-      "commonError": "Calling the entire risky return the risk differential",
-      "feedback": "The extra expected return for bearing risk is 12%-8%=4 percentage points.",
-      "aHash": "da2d1bb28c021477d151517630e74f0870f78e8b04acbede5688a7818bd17f30"
+      "aHash": "ac9d2a0576355cc9c2d2f362e9498f79a40dc73dd3632090d842c4aef9f0e8ef",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 376,
@@ -8528,28 +6608,29 @@ const questionBanks = {
       "q": "Two equally skilled workers receive different wages because one works nights in a hazardous location. Which evidence would best distinguish a compensating differential from discrimination?",
       "options": [
         "Whether the wage gap tracks measurable job disamenities across otherwise comparable workers",
-        "Whether the higher-paid worker prefers the job",
-        "Whether the firm has positive accounting profit",
-        "Whether both workers pay the same income tax rate"
+        "Whether the gap remains without controlling for worker qualifications",
+        "Whether both workers receive more than the statutory minimum wage",
+        "Whether the hazardous employer pays more because it hires more productive workers"
       ],
       "tag": "identify_compensating_differential",
       "type": "analysis",
       "objective": "LO9.3",
-      "difficulty": "elite",
-      "conceptCluster": "risk_and_returns",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_compensating_wage_differential",
       "primarySkill": "compensating_wage_differential",
       "secondarySkills": [
         "empirical_identification"
       ],
-      "repairSkill": "compensating_wage_differential",
+      "repairSkill": "compensating_differentials",
       "commonError": "Labeling any wage gap as compensation without controlling for worker and job differences",
       "feedback": "A compensating differential should be systematically linked to undesirable job attributes, holding other factors constant.",
-      "aHash": "5f8bdc0e0f873d3300f4f53408040284d8c7468366e25cf9ce0abce16326db4e"
+      "aHash": "5f8bdc0e0f873d3300f4f53408040284d8c7468366e25cf9ce0abce16326db4e",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 377,
       "sourceGame": "marketSignal",
-      "q": "A risky bond yields 7.2% while a comparable Treasury yields 5.8%. If investors require at least a 2-point premium, what pressure follows?",
+      "q": "A risky bond has an expected return of 7.2% while a Treasury of the same horizon returns 5.8%. If investors require at least a 2-point premium, what pressure follows?",
       "options": [
         "Investors buy the risky bond, raising its price and lowering its yield",
         "Investors sell the risky bond, lowering its price and raising its yield",
@@ -8559,112 +6640,17 @@ const questionBanks = {
       "tag": "insufficient_bond_risk_premium",
       "type": "application",
       "objective": "LO9.4",
-      "difficulty": "elite",
-      "conceptCluster": "risk_and_returns",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_portfolio_reallocation",
       "primarySkill": "portfolio_reallocation",
       "secondarySkills": [
         "bond_price_yield"
       ],
-      "repairSkill": "portfolio_reallocation",
+      "repairSkill": "risk_premium_portfolio",
       "commonError": "Reversing the price-yield effect of selling a bond",
       "feedback": "The 1.4-point premium is inadequate; selling pushes the risky bond’s price down and yield up.",
-      "aHash": "1f9a6d5308eb34a2637fd34aea34e2ac34a7ca07bb54c32e43ad808bc9215ba5"
-    },
-    {
-      "id": 378,
-      "sourceGame": "marketSignal",
-      "q": "A stock’s expected return stays at 10%, but its perceived risk rises sharply while the safe rate remains 4%. What happens to its attractiveness?",
-      "options": [
-        "It becomes more attractive because risk rose",
-        "Its risk premium automatically rises even though expected return is unchanged",
-        "Its unchanged 6-point premium may no longer compensate investors for the greater risk",
-        "The safe rate becomes irrelevant"
-      ],
-      "tag": "risk_change_fixed_premium",
-      "type": "analysis",
-      "objective": "LO9.4",
-      "difficulty": "elite",
-      "conceptCluster": "risk_and_returns",
-      "primarySkill": "risk_premium_interpretation",
-      "secondarySkills": [
-        "portfolio_reallocation"
-      ],
-      "repairSkill": "risk_premium_interpretation",
-      "commonError": "Assuming a fixed return spread provides the same compensation at every risk level",
-      "feedback": "A larger risk requires more compensation; the unchanged premium can trigger reallocation.",
-      "aHash": "0578473e405d04e11e68f3c8dc71fa3f098b8fba50b0b0f86984e8f52c64f64b"
-    },
-    {
-      "id": 379,
-      "sourceGame": "marketSignal",
-      "q": "Investors shift from risky assets to safe assets. Holding expected cash flows fixed, what immediate price pattern is most consistent?",
-      "options": [
-        "Both prices rise equally",
-        "Risky-asset prices rise and safe-asset prices fall",
-        "Both prices remain fixed because preferences do not affect markets",
-        "Risky-asset prices fall and safe-asset prices rise"
-      ],
-      "tag": "flight_to_safety_prices",
-      "type": "analysis",
-      "objective": "LO9.4",
-      "difficulty": "elite",
-      "conceptCluster": "risk_and_returns",
-      "primarySkill": "portfolio_reallocation",
-      "secondarySkills": [
-        "asset_pricing"
-      ],
-      "repairSkill": "portfolio_reallocation",
-      "commonError": "Ignoring how portfolio demand affects asset prices",
-      "feedback": "Selling risky assets lowers their prices, while increased demand raises safe-asset prices.",
-      "aHash": "ec59e39bc3baa2d7dd151df30e895273bdbc9084db2b0a700f64a1e55fe21c16"
-    },
-    {
-      "id": 380,
-      "sourceGame": "marketSignal",
-      "q": "A firm earns monopoly profit from a product feature that rivals can copy in six months. Which strategy most directly slows erosion without relying on legal exclusion?",
-      "options": [
-        "Continuously innovate so the firm moves to the next advantage before imitation catches up",
-        "Raise price indefinitely while output falls",
-        "Publish the full production process immediately",
-        "Stop investing once the first product succeeds"
-      ],
-      "tag": "dynamic_innovation_advantage",
-      "type": "application",
-      "objective": "LO9.5",
-      "difficulty": "elite",
-      "conceptCluster": "profit_erosion",
-      "primarySkill": "entry_and_imitation",
-      "secondarySkills": [
-        "innovation_strategy"
-      ],
-      "repairSkill": "entry_and_imitation",
-      "commonError": "Treating a temporary advantage as a permanent moat",
-      "feedback": "Rapid innovation can sustain a moving advantage even when any single feature is imitable.",
-      "aHash": "f0baff5d71afb92248138755509c2fa7c42186131dc4ab718e13b2518a96cfe2"
-    },
-    {
-      "id": 381,
-      "sourceGame": "marketSignal",
-      "q": "A monopolist’s patent expires. Entry occurs, but its profit remains high because consumers face large switching costs. What explains the persistence?",
-      "options": [
-        "Patent expiration guarantees immediate zero profit",
-        "Entry alone may not erase profit when customer lock-in limits effective substitution",
-        "Switching costs shift the monopolist’s marginal cost to zero",
-        "New firms necessarily charge a higher price"
-      ],
-      "tag": "switching_cost_profit_persistence",
-      "type": "analysis",
-      "objective": "LO9.5",
-      "difficulty": "elite",
-      "conceptCluster": "profit_erosion",
-      "primarySkill": "entry_and_imitation",
-      "secondarySkills": [
-        "switching_costs"
-      ],
-      "repairSkill": "entry_and_imitation",
-      "commonError": "Assuming legal entry automatically creates strong competitive pressure",
-      "feedback": "Entrants matter only if customers can and will switch to them.",
-      "aHash": "6b4b06e05ebd2ee1ef1cf38aea0775e447e6691c686a49dcc74ff7fb5ac49303"
+      "aHash": "1f9a6d5308eb34a2637fd34aea34e2ac34a7ca07bb54c32e43ad808bc9215ba5",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 382,
@@ -8679,84 +6665,17 @@ const questionBanks = {
       "tag": "imitation_demand_elasticity",
       "type": "analysis",
       "objective": "LO9.5",
-      "difficulty": "elite",
-      "conceptCluster": "profit_erosion",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_entry_and_imitation",
       "primarySkill": "entry_and_imitation",
       "secondarySkills": [
         "demand_elasticity"
       ],
-      "repairSkill": "entry_and_imitation",
+      "repairSkill": "profit_erosion_entry_imitation",
       "commonError": "Assuming imitation changes only costs rather than customers’ alternatives",
       "feedback": "More substitutes make customers more responsive to price and erode the incumbent’s margin.",
-      "aHash": "f029be14a88fe7a6db21b41b8bc618bc887ee6cf3bda33f5b3b75901e98cd50b"
-    },
-    {
-      "id": 383,
-      "sourceGame": "marketSignal",
-      "q": "A dominant platform lowers fees just before entry and raises them after rivals leave. What barrier may allow profits to recover repeatedly?",
-      "options": [
-        "Perfectly elastic supply by entrants",
-        "Absence of any customer switching cost",
-        "Free and instantaneous multihoming by all users",
-        "Network effects and strategic responses can make entry difficult to sustain"
-      ],
-      "tag": "strategic_entry_deterrence",
-      "type": "analysis",
-      "objective": "LO9.5",
-      "difficulty": "elite",
-      "conceptCluster": "profit_erosion",
-      "primarySkill": "barriers_to_entry",
-      "secondarySkills": [
-        "network_effects"
-      ],
-      "repairSkill": "barriers_to_entry",
-      "commonError": "Assuming observed entry means barriers are economically unimportant",
-      "feedback": "Network effects can starve entrants of scale, allowing the incumbent to restore market power later.",
-      "aHash": "4c7973c466b97babceb79af99e697c770392e7c61b5052469e558e7b16b4bd3e"
-    },
-    {
-      "id": 390,
-      "sourceGame": "marketSignal",
-      "q": "A distributor will build a dedicated cold-storage room for one grocery chain only if the chain signs a three-year volume commitment. Why can that commitment create wealth?",
-      "options": [
-        "It guarantees that average cost will always fall",
-        "It protects a specific investment from later renegotiation risk, encouraging the efficient investment",
-        "It removes all opportunity costs from the distributor’s decision",
-        "It turns a variable cost into a sunk cost that should be ignored"
-      ],
-      "tag": "post_investment_holdup",
-      "type": "integration",
-      "objective": "LO5.5",
-      "difficulty": "elite",
-      "conceptCluster": "elite_marketSignal_post_investment_holdup",
-      "primarySkill": "post_investment_holdup",
-      "secondarySkills": [],
-      "repairSkill": "post_investment_holdup",
-      "commonError": "misses_renegotiation_risk",
-      "feedback": "The commitment reduces hold-up risk. That can make a value-creating specific investment privately worthwhile.",
-      "aHash": "607e0e5703f938049976377275e7db76219ecb1696cd129d3c6511dae29dab55"
-    },
-    {
-      "id": 391,
-      "sourceGame": "marketSignal",
-      "q": "A buyer values a customized component at $150,000. A supplier can produce it only after spending $90,000 on specialized tooling. The supplier’s next-best use of the tooling is $10,000. Which issue should be built into the contract before investment?",
-      "options": [
-        "Only the average cost of the supplier’s current output",
-        "The possibility that the buyer renegotiates after the supplier’s outside option falls",
-        "Whether the buyer can resell the component at a higher retail price",
-        "Whether the supplier’s accounting profit was positive last year"
-      ],
-      "tag": "post_investment_holdup",
-      "type": "multi-step",
-      "objective": "LO5.5",
-      "difficulty": "elite",
-      "conceptCluster": "elite_marketSignal_post_investment_holdup",
-      "primarySkill": "post_investment_holdup",
-      "secondarySkills": [],
-      "repairSkill": "post_investment_holdup",
-      "commonError": "misses_renegotiation_risk",
-      "feedback": "The tooling has little outside value. That creates hold-up risk unless the contract protects the investment before it is made.",
-      "aHash": "adb56a33860eb21975aab392ec34207d4742da7229b1362e97948225f25b42cb"
+      "aHash": "f029be14a88fe7a6db21b41b8bc618bc887ee6cf3bda33f5b3b75901e98cd50b",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 392,
@@ -8769,26 +6688,491 @@ const questionBanks = {
         "The buyer’s willingness to pay disappears once the supplier invests"
       ],
       "tag": "post_investment_holdup",
-      "type": "trap",
+      "type": "analysis",
       "objective": "LO5.5",
-      "difficulty": "elite",
-      "conceptCluster": "elite_marketSignal_post_investment_holdup",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_post_investment_holdup",
       "primarySkill": "post_investment_holdup",
       "secondarySkills": [],
       "repairSkill": "post_investment_holdup",
       "commonError": "misses_renegotiation_risk",
       "feedback": "The key decision happens before investment. If the supplier expects opportunistic renegotiation later, it may underinvest now.",
-      "aHash": "6ad4c9f63b93dada3e4d9e3a50b548e4d8f195eb34951ecb295be2277c5f9913"
+      "aHash": "6ad4c9f63b93dada3e4d9e3a50b548e4d8f195eb34951ecb295be2277c5f9913",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 393,
       "sourceGame": "marketSignal",
       "q": "A firm wants suppliers to invest in quality-specific equipment for its products. Which purchasing rule is most likely to damage that goal?",
       "options": [
-        "Use long-term contracts when investments are relationship-specific",
-        "Share verifiable demand forecasts before suppliers invest",
-        "Let suppliers recover agreed investment costs if the buyer cancels early",
+        "Include expected supplier underinvestment in procurement performance measures",
+        "Evaluate purchasing staff using joint value created over the contract term",
+        "Reward enforceable commitments that lower suppliers’ investment risk",
         "Reward buyers mainly for extracting price cuts after suppliers make specific investments"
+      ],
+      "tag": "post_investment_holdup",
+      "type": "application",
+      "objective": "LO5.5",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_post_investment_holdup",
+      "primarySkill": "post_investment_holdup",
+      "secondarySkills": [],
+      "repairSkill": "post_investment_holdup",
+      "commonError": "misses_renegotiation_risk",
+      "feedback": "Rewarding ex post price concessions can scare suppliers away from efficient specific investments.",
+      "aHash": "eed6022bd629990f5a2db3106df19b5cd8fa93436143b0aeebafd28dc2dbfd30",
+      "canonicalDifficulty": "hard"
+    }
+  ],
+  "elite": [
+    {
+      "id": 302,
+      "sourceGame": "marketSignal",
+      "q": "A hospital buys emergency oxygen within two hours. Local plants charge $100 per cylinder; distant plants offer $80 but need a day to deliver. Routine orders can wait. A 5% rise in all local emergency prices causes almost no switching, while routine buyers readily switch to distant plants. Which market analysis is best supported?",
+      "options": [
+        "Each local plant is a separate market because emergency customers switch infrequently",
+        "All oxygen purchases form one national market because the physical product is identical",
+        "Emergency and routine purchases may face different geographic markets because feasible substitution differs",
+        "Emergency purchases belong to the national market because distant posted prices are lower"
+      ],
+      "tag": "market_definition",
+      "type": "synthesis",
+      "objective": "LO8.1",
+      "difficulty": "elite",
+      "conceptCluster": "elite_marketSignal_market_definition",
+      "primarySkill": "market_definition",
+      "secondarySkills": [
+        "buyer_seller_behavior"
+      ],
+      "repairSkill": "market_definition",
+      "commonError": "Using national seller counts despite local switching constraints",
+      "feedback": "Delivery time makes distant plants ineffective substitutes for emergency purchases but effective substitutes for routine orders. Market boundaries depend on feasible alternatives in the relevant period; this evidence does not make each local seller a separate market.",
+      "aHash": "0b095522f073512f8e3af346bf43589cd77ebb61e9ed5cb9e72614b4eb5b8369",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 304,
+      "sourceGame": "marketSignal",
+      "q": "Three buyers each want at most one unit and value it at $50, $35 and $20. Three sellers can each supply one unit at costs $10, $25 and $40. There are no externalities or other costs. Which posted price clears planned purchases and sales, and what total gains from trade result?",
+      "options": [
+        "$30 clears two units and creates $50 in gains",
+        "$20 clears three units and creates $30 in gains",
+        "$40 clears two units and creates $50 in gains",
+        "$30 clears two units and creates $60 in gains"
+      ],
+      "tag": "buyer_seller_behavior",
+      "type": "synthesis",
+      "objective": "LO8.2",
+      "difficulty": "elite",
+      "conceptCluster": "elite_marketSignal_buyer_seller_behavior",
+      "primarySkill": "buyer_seller_behavior",
+      "secondarySkills": [
+        "demand_behavior",
+        "supply_behavior"
+      ],
+      "repairSkill": "buyer_seller_behavior",
+      "commonError": "Equating total desired purchases with feasible mutually beneficial trades",
+      "feedback": "At $30 the $50 and $35 buyers purchase, and the $10 and $25 sellers supply. Two units clear, creating (50 + 35) − (10 + 25) = $50. Price divides these gains rather than adding to their total.",
+      "aHash": "bdc683e3e058121169a766975b25542eb144e43e0cef0fcd4d9818322eb69800",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 305,
+      "sourceGame": "marketSignal",
+      "q": "Demand is Qd = 240 − 4Pb and supply is Qs = 40 + 6Ps, where Pb is buyers’ price and Ps is sellers’ net receipt. A $5 tax makes Pb = Ps + 5. A ceiling limits Pb to $21. With no government purchases or inventories, what are the unconstrained taxed buyer price and the maximum trade under the ceiling?",
+      "options": [
+        "$20 without the ceiling; at most 160 units under the ceiling",
+        "$23 without the ceiling; at most 136 units under the ceiling",
+        "$23 without the ceiling; at most 156 units under the ceiling",
+        "$25 without the ceiling; at most 166 units under the ceiling"
+      ],
+      "tag": "shortage_surplus",
+      "type": "synthesis",
+      "objective": "LO8.3",
+      "difficulty": "elite",
+      "conceptCluster": "elite_marketSignal_shortage_surplus",
+      "primarySkill": "shortage_surplus",
+      "secondarySkills": [
+        "equilibrium_calculation",
+        "market_interventions"
+      ],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Applying a tax to buyer and seller prices without the wedge",
+      "feedback": "Without the ceiling, 240 − 4Pb = 40 + 6(Pb − 5), so Pb = $23. At the ceiling, sellers receive $16 and offer 136, while buyers demand 156. The shortage is 20 and transactions cannot exceed 136.",
+      "aHash": "89b0a12dc605bece85cd98c59999d4b03e47848782f6229cf304797bdfd7e816",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 307,
+      "sourceGame": "marketSignal",
+      "q": "A division proposes paying $120,000 now for one expected net receipt of $140,000 in two years. Its usual 6% hurdle reflects safer projects, while comparable investments with this project’s risk require 10%. There are no other cash flows. Which valuation should govern the decision?",
+      "options": [
+        "Use the undiscounted $20,000 gain and accept",
+        "Use 6%: NPV is about $4,599, so accept",
+        "Use 8%: average the two rates and accept because NPV is about $27",
+        "Use 10%: NPV is about −$4,298, so reject"
+      ],
+      "tag": "division_specific_hurdles",
+      "type": "synthesis",
+      "objective": "LO5.2",
+      "difficulty": "elite",
+      "conceptCluster": "elite_marketSignal_cost_of_capital_interpretation",
+      "primarySkill": "cost_of_capital_interpretation",
+      "secondarySkills": [
+        "present_value_discounting",
+        "investment_decision"
+      ],
+      "repairSkill": "cost_of_capital_npv",
+      "commonError": "Assuming one universal discount rate applies regardless of risk",
+      "feedback": "The project’s own opportunity cost is 10%. Its PV is 140,000/1.1² = $115,702.48, so NPV is −$4,297.52. The safer division’s 6% average is inappropriate; averaging unrelated hurdles does not correct the mismatch.",
+      "aHash": "4eb2e631f2369c1981d8afc310b651778c81485cb0b10c04e2c7accb6ef6b618",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 309,
+      "sourceGame": "marketSignal",
+      "q": "A firm has a $100,000 budget and three one-time indivisible projects, with no interactions. A and B each cost $50,000 now. A pays $30,000 in years 1 and 2; B pays $15,000, $20,000 and $30,000 in years 1, 2 and 3. C costs $100,000 and has NPV $4,500 at the same 10% hurdle. Which feasible choice creates the most present value?",
+      "options": [
+        "C alone, with NPV $4,500",
+        "A and B together, with NPV about $4,771",
+        "B alone, with NPV about $2,705",
+        "A and C together, with NPV about $6,566"
+      ],
+      "tag": "mutually_exclusive_npv_comparison",
+      "type": "synthesis",
+      "objective": "LO5.3",
+      "difficulty": "elite",
+      "conceptCluster": "elite_marketSignal_npv_comparison",
+      "primarySkill": "npv_comparison",
+      "secondarySkills": [
+        "present_value_discounting",
+        "investment_decision"
+      ],
+      "repairSkill": "cost_of_capital_npv",
+      "commonError": "Choosing the project with the larger undiscounted total cash flow",
+      "feedback": "A’s NPV is $2,066.12 and B’s is $2,704.73. Their combined $4,770.85 exceeds C’s $4,500 and exactly uses the budget. A plus C exceeds the budget. Discounting, value ranking and feasibility must all be checked.",
+      "aHash": "3e89a3d6cf37672fc1248b1713c155c3f96a605065eb677e09cecec2d7994e97",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 310,
+      "sourceGame": "marketSignal",
+      "q": "Initially Qd = 300 − 5P and Qs = 60 + 3P. A marketing change adds 40 units of demand at every price and a process improvement adds 80 units of supply. A manager plans to raise the forecast market price because demand increased. Which revised forecast is justified?",
+      "options": [
+        "Price stays $30 and quantity rises from 150 to 270",
+        "Price rises from $30 to $35 and quantity rises from 150 to 165",
+        "Price falls from $30 to $25 and quantity rises from 150 to 215",
+        "Price falls from $30 to $20 and quantity rises from 150 to 240"
+      ],
+      "tag": "comparative_statics",
+      "type": "synthesis",
+      "objective": "LO8.4",
+      "difficulty": "elite",
+      "conceptCluster": "elite_marketSignal_comparative_statics",
+      "primarySkill": "comparative_statics",
+      "secondarySkills": [
+        "equilibrium_calculation",
+        "demand_shift_analysis",
+        "supply_shift_analysis"
+      ],
+      "repairSkill": "simultaneous_market_changes",
+      "commonError": "Using a demand increase alone to predict price after a cost change",
+      "feedback": "The initial equilibrium is $30 and 150. New equilibrium solves 340 − 5P = 140 + 3P, giving $25 and 215. Both shifts raise quantity, but the larger supply increase lowers price.",
+      "aHash": "4a40d60167830c71973783c17842ee34c47b21cdba8007c243e3029d1087b6b3",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 311,
+      "sourceGame": "marketSignal",
+      "q": "A competitive industry’s output rises from 10,000 to 13,000 after entry, while price falls from $30 to $24. An incumbent has MC = 10 + 0.02q and total cost TC = 4,000 + 10q + 0.01q². These costs and demand conditions other than entry are unchanged. What happens to this incumbent’s profit-maximizing output and economic profit?",
+      "options": [
+        "Output remains 1,000; profit falls from $6,000 to zero",
+        "Output rises from 1,000 to 1,300; profit rises with market output",
+        "Output falls from 1,000 to 700; profit becomes zero because entry occurred",
+        "Output falls from 1,000 to 700; profit falls from $6,000 to $900"
+      ],
+      "tag": "competitive_returns",
+      "type": "synthesis",
+      "objective": "LO9.1",
+      "difficulty": "elite",
+      "conceptCluster": "elite_marketSignal_competitive_returns",
+      "primarySkill": "competitive_returns",
+      "secondarySkills": [
+        "firm_market_linkage",
+        "economic_profit_interpretation"
+      ],
+      "repairSkill": "competitive_returns",
+      "commonError": "Inferring each incumbent’s output from expanding industry output",
+      "feedback": "Set price equal to MC: q changes from 1,000 to 700. Profit is Pq − TC: initially $30,000 − $24,000 = $6,000; afterward $16,800 − $15,900 = $900. Total industry output can grow while each incumbent contracts, and entry need not already have eliminated all profit.",
+      "aHash": "b8181936a7ab80e9c271f379d31b4af09626e86bb68a048dd760616ad7936087",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 314,
+      "sourceGame": "marketSignal",
+      "q": "A firm has fixed cost $80,000 and constant variable cost $16 per unit. Demand is Q = 60,000 − 2,000P. Which two prices each produce zero profit?",
+      "options": [
+        "$22 and $24",
+        "$18 and $28",
+        "$20 and $26",
+        "$16 and $30"
+      ],
+      "tag": "break_even_with_demand",
+      "type": "calculation",
+      "objective": "LO5.4",
+      "difficulty": "elite",
+      "conceptCluster": "break_even_analysis",
+      "primarySkill": "break_even_price",
+      "secondarySkills": [
+        "demand_behavior"
+      ],
+      "repairSkill": "break_even_technology",
+      "commonError": "Using price equal to variable cost or ignoring how price changes quantity demanded",
+      "feedback": "Profit is (P − 16)(60,000 − 2,000P) − 80,000 = −2,000(P − 20)(P − 26). Both $20 at 20,000 units and $26 at 8,000 units break even. Higher price also reduces sales.",
+      "aHash": "6d21cec9bc7fc1e725feb452c0bec9c78412463142b211a92b142f91722a8e9a",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 317,
+      "sourceGame": "marketSignal",
+      "q": "A risk-neutral manager chooses one facility for a single period. Price is $14, and sales are 20,000 units with probability 0.6 or 50,000 with probability 0.4. A costs $120,000 fixed plus $8 per unit; B costs $240,000 fixed plus $4 per unit. Both can meet all sales, and all costs are avoidable before choice. Which facility has higher expected profit?",
+      "options": [
+        "A: $72,000 versus B: $32,000",
+        "B: $80,000 versus A: $72,000",
+        "B: $208,000 versus A: $192,000",
+        "A: $0 versus B: −$40,000"
+      ],
+      "tag": "break_even_sensitivity",
+      "type": "synthesis",
+      "objective": "LO5.4",
+      "difficulty": "elite",
+      "conceptCluster": "elite_marketSignal_break_even_quantity",
+      "primarySkill": "break_even_quantity",
+      "secondarySkills": [
+        "expected_value_probability",
+        "break_even_technology"
+      ],
+      "repairSkill": "break_even_technology",
+      "commonError": "Applying the percentage decline to contribution margin rather than quantity",
+      "feedback": "Expected sales are 32,000. A earns (14 − 8)×32,000 −120,000 = $72,000; B earns (14 −4)×32,000 −240,000 = $80,000. B loses $40,000 in the low-sales state but has higher expected profit. That ranking follows the stated risk-neutral objective.",
+      "aHash": "67f944331b98f66ebdc5235d6496b8347fe43a6a584ede0f0edac99a81934eb9",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 319,
+      "sourceGame": "marketSignal",
+      "q": "A demand surge raises a competitive plant’s annual economic profit to $90,000 for the next two years. Committed rival capacity then enters and is expected to reduce annual economic profit to zero. A proposal to accelerate the plant’s opening costs $140,000 now and captures both year-end profits. At 10%, should it proceed if these are the only incremental flows?",
+      "options": [
+        "No: subtract the cost from only one year’s $90,000 profit",
+        "No: entry makes even the first two years of profit worth zero",
+        "Yes: capitalize $90,000 forever, giving a $760,000 NPV",
+        "Yes: temporary profits have PV about $156,198, exceeding cost by about $16,198"
+      ],
+      "tag": "mean_reversion_entry_exit",
+      "type": "synthesis",
+      "objective": "LO9.2",
+      "difficulty": "elite",
+      "conceptCluster": "elite_marketSignal_mean_reversion_entry_exit",
+      "primarySkill": "mean_reversion_entry_exit",
+      "secondarySkills": [
+        "present_value_discounting",
+        "entry_response"
+      ],
+      "repairSkill": "mean_reversion_entry_exit",
+      "commonError": "Capitalizing temporary scarcity profits as permanent income",
+      "feedback": "Mean reversion limits the profit window rather than erasing the early gains. PV is 90,000/1.1 + 90,000/1.1² = $156,198.35, so NPV is $16,198.35. Treating the temporary profit as a perpetuity overvalues the opportunity.",
+      "aHash": "f5f116f23583ea850c5bd76fccf3954f194c4ff72e26e8aa7b6865b322b0b579",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 322,
+      "sourceGame": "marketSignal",
+      "q": "A one-year risky bond costs $100 and pays $112 with probability 0.9 or $62 with probability 0.1. A same-horizon safe investment earns 4%. Investors require a 4-percentage-point expected premium for this bond’s risk. Holding payoffs and probabilities fixed, which price would just meet the required return?",
+      "options": [
+        "Exactly $100, because the promised 12% return exceeds 8%",
+        "About $103.70, so buying pressure should raise the current price",
+        "About $99.07, so selling pressure should lower the current price",
+        "About $95.54, because only the $112 successful payoff should be discounted"
+      ],
+      "tag": "risk_premium_portfolio",
+      "type": "synthesis",
+      "objective": "LO9.4",
+      "difficulty": "elite",
+      "conceptCluster": "elite_marketSignal_risk_premium_portfolio",
+      "primarySkill": "risk_premium_portfolio",
+      "secondarySkills": [
+        "expected_value_probability",
+        "bond_price_yield"
+      ],
+      "repairSkill": "risk_premium_portfolio",
+      "commonError": "Comparing a promised bond return directly with a safe return",
+      "feedback": "Expected payment is 0.9 × 112 + 0.1 × 62 = $107. The current expected return is 7%, only 3 points above safe. An 8% required expected return implies price 107/1.08 = $99.07. The promised payment alone overstates compensation.",
+      "aHash": "2fcc3f32514d0c04c7a4776b8c86a598b349413d0d9cc11b65b2d466468c9637",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 327,
+      "sourceGame": "marketSignal",
+      "q": "Basic service costs customers $40. A high-value customer values Basic at $55 and Pro at $120; a low-value customer values Basic at $50 and Pro at $65. Customers choose the option with the greatest value minus price. What is the highest whole-dollar Pro price that makes the high-value customer strictly prefer Pro while the low-value customer strictly prefers Basic?",
+      "options": [
+        "$120",
+        "$105",
+        "$110",
+        "$104"
+      ],
+      "tag": "versioning_self_selection",
+      "type": "synthesis",
+      "objective": "LO17.2",
+      "difficulty": "elite",
+      "conceptCluster": "pricing_under_uncertainty",
+      "primarySkill": "price_discrimination_design",
+      "secondarySkills": [
+        "incentive_compatibility"
+      ],
+      "repairSkill": "price_discrimination_uncertainty",
+      "commonError": "Ignoring net surplus, the strict preference condition, or the other customer type",
+      "feedback": "High-value Basic surplus is $15, so Pro requires 120 − P > 15, or P < 105. The highest whole-dollar price is $104. Low-value surplus is then −$39 for Pro versus $10 for Basic, so that customer chooses Basic.",
+      "aHash": "97c93a7c25dd75d35270f3b74cec4d9aecd4cf15cf7de0acfbdab1e8f22dae94",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 336,
+      "sourceGame": "marketSignal",
+      "q": "Fraud occurs in 2% of transactions. A false alarm costs $20 and missed fraud costs $1,000. Rule A flags 5% of legitimate transactions and misses 10% of fraud; Rule B flags 1% of legitimate transactions and misses 25% of fraud. Ignoring other costs, which rule minimizes expected error cost per transaction?",
+      "options": [
+        "A: $2.98 versus B: about $5.20",
+        "B: $5.20 versus A: $101.00",
+        "B: $0.20 versus A: $1.00",
+        "A: $100.00 versus B: $250.00"
+      ],
+      "tag": "expected_error_cost_balance",
+      "type": "synthesis",
+      "objective": "LO17.4",
+      "difficulty": "elite",
+      "conceptCluster": "decision_errors",
+      "primarySkill": "error_cost_minimization",
+      "secondarySkills": [
+        "classification_threshold"
+      ],
+      "repairSkill": "error_costs",
+      "commonError": "Ignoring base rates or weighting false positives and false negatives equally",
+      "feedback": "Weight each conditional error rate by its population share. A costs 0.98 × 0.05 × $20 + 0.02 × 0.10 × $1,000 = $2.98. B costs $0.196 + $5 = $5.196. B has fewer total errors, but its more costly missed fraud makes A preferable.",
+      "aHash": "a08bccb0285e7e0f8ddf07492f458c1d7add463c32484f7be4963a2a23f7f488",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 359,
+      "sourceGame": "marketSignal",
+      "q": "Demand is initially Qd = 600 − 10P and supply Qs = 60 + 8P. Later equilibrium is observed at P = $32 and Q = 370. Demand and supply slopes are unchanged, and any changes are parallel shifts. Which intercept changes explain the observation?",
+      "options": [
+        "Supply increases by 130 units at every price; demand is unchanged",
+        "Demand increases by 54 units at every price; supply increases by 90",
+        "Demand increases by 70 units at every price; supply is unchanged",
+        "Demand increases by 90 units at every price; supply increases by 54"
+      ],
+      "tag": "comparative_statics",
+      "type": "synthesis",
+      "objective": "LO8.4",
+      "difficulty": "elite",
+      "conceptCluster": "elite_marketSignal_comparative_statics",
+      "primarySkill": "comparative_statics",
+      "secondarySkills": [
+        "equilibrium_calculation",
+        "reverse_shift_inference"
+      ],
+      "repairSkill": "simultaneous_market_changes",
+      "commonError": "Applying only one shift or treating an intercept change as a price change",
+      "feedback": "At price $32, original demand would be 280 units, so reaching 370 requires a 90-unit increase. Original supply would be 316, so reaching 370 requires a 54-unit increase. Both curves shift right even though equilibrium price rises; a higher price alone does not establish that supply fell.",
+      "aHash": "753eef8d86ab4a68eb4fe21e69a309687d034d4033dd704eb2de8d6c6d77077c",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 361,
+      "sourceGame": "marketSignal",
+      "q": "Before imitation, an incumbent’s residual demand is P = 90 − Q. Entry changes it to P = 70 − Q even though total market demand is unchanged. The firm charges one price, has constant MC $10 and no fixed cost. How do its optimal output, price and profit change?",
+      "options": [
+        "Output 40 to 30; price $50 to $40; profit remains $1,600",
+        "Output 40 to 30; price $50 to $40; profit $1,600 to $900",
+        "Output remains 40; price remains $50; profit falls to $900",
+        "Output 80 to 60; price stays $10; profit stays zero"
+      ],
+      "tag": "profit_erosion_entry_imitation",
+      "type": "synthesis",
+      "objective": "LO9.5",
+      "difficulty": "elite",
+      "conceptCluster": "elite_marketSignal_profit_erosion_entry_imitation",
+      "primarySkill": "profit_erosion_entry_imitation",
+      "secondarySkills": [
+        "monopoly_price_output",
+        "entry_and_imitation"
+      ],
+      "repairSkill": "profit_erosion_entry_imitation",
+      "commonError": "Confusing unchanged market demand with unchanged demand for the incumbent",
+      "feedback": "Entry diverts buyers from the incumbent. MR = 90 − 2Q initially and 70 − 2Q afterward. Equating each with MC gives Q40 then30, P50 then40, and profits 40×40 = $1,600 then30×30 = $900. Unchanged total demand does not protect an individual seller’s residual demand.",
+      "aHash": "f1c5f4e5ea86f3207e35de7ee0ac1ce425c3afd787900e3565761805566f238c",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 374,
+      "sourceGame": "marketSignal",
+      "q": "A safer process eliminates a $3 hourly hazard premium for each of 20,000 annual labor hours. It also lowers priced project risk, reducing the required annual capital return from 12% to 9% on $500,000. Other productivity, financing and operating costs are unchanged. Which interpretation and annual cost reduction are correct?",
+      "options": [
+        "$3 less wage compensation plus $15,000 less capital-risk compensation, totaling $15,003",
+        "$60,000 less wage compensation plus $45,000 less capital-risk compensation, totaling $105,000",
+        "$60,000 less wage compensation plus $15,000 less capital-risk compensation, totaling $75,000",
+        "$75,000 less labor compensation, with no change in the cost of capital"
+      ],
+      "tag": "compensating_differentials",
+      "type": "synthesis",
+      "objective": "LO9.3",
+      "difficulty": "elite",
+      "conceptCluster": "elite_marketSignal_compensating_differentials",
+      "primarySkill": "compensating_differentials",
+      "secondarySkills": [
+        "risk_premium_interpretation",
+        "cost_of_capital_interpretation"
+      ],
+      "repairSkill": "compensating_differentials",
+      "commonError": "Mixing compensation to workers with compensation to capital providers",
+      "feedback": "The hazard premium is worker compensation: 3 × 20,000 = $60,000. The change in required capital return is investor compensation: (0.12 − 0.09) × 500,000 = $15,000. They operate in different markets but both affect resource cost.",
+      "aHash": "1d8a0bfc74b5b23f2159398ea807dd4de0c58540788d4b8358879080aae03d80",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 375,
+      "sourceGame": "marketSignal",
+      "q": "A natural monopoly has demand P = 50 − Q, constant MC $10 and fixed cost $300. It charges one price. A regulator can instead set $10, $20 or $30, without a subsidy. What is unregulated monopoly output, and which allowed regulated price serves the largest quantity while covering all costs?",
+      "options": [
+        "Monopoly output 30; regulated price $20 serves 30 and earns $300",
+        "Monopoly output 40; regulated price $10 serves 40 and breaks even",
+        "Monopoly output 20; regulated price $30 serves 20 and breaks even",
+        "Monopoly output 20; regulated price $20 serves 30 and breaks even"
+      ],
+      "tag": "monopoly_welfare_regulation",
+      "type": "synthesis",
+      "objective": "LO9.6",
+      "difficulty": "elite",
+      "conceptCluster": "elite_marketSignal_monopoly_welfare_regulation",
+      "primarySkill": "monopoly_welfare_regulation",
+      "secondarySkills": [
+        "monopoly_output_profit",
+        "market_efficiency"
+      ],
+      "repairSkill": "monopoly_welfare_regulation",
+      "commonError": "Assuming marginal-cost pricing finances a firm with fixed cost",
+      "feedback": "MR = 50 − 2Q equals MC of $10 at monopoly output 20, with price $30 and profit $100. At regulated price $10, sales of 40 leave a $300 fixed-cost loss. At $20, sales of 30 contribute $300 and break even. Price $30 earns $100 but serves fewer buyers. Among the feasible listed policies, $20 maximizes output.",
+      "aHash": "0e50b503a68a619e9a630d9c7bf42cc9ab9a265f9013e8dce8a1152c0f64ebb7",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 391,
+      "sourceGame": "marketSignal",
+      "q": "Buyer-specific tooling costs $90,000 now. For each of the next two years, an order creates $90,000 of gross buyer value and requires $10,000 of operating cost. Without commitment the buyer is expected to pay the supplier only $55,000 each year; an enforceable contract would guarantee $65,000 each year. Use a 10% discount rate for all flows. Which investment conclusion is correct?",
+      "options": [
+        "Positive joint value makes the supplier invest even with the $55,000 payments",
+        "The project creates joint value, but the supplier invests only with the $65,000 commitment",
+        "Neither payment supports investment because both are below the $90,000 tooling cost",
+        "The $55,000 payments suffice because their undiscounted total exceeds the tooling cost"
       ],
       "tag": "post_investment_holdup",
       "type": "application",
@@ -8796,33 +7180,15 @@ const questionBanks = {
       "difficulty": "elite",
       "conceptCluster": "elite_marketSignal_post_investment_holdup",
       "primarySkill": "post_investment_holdup",
-      "secondarySkills": [],
-      "repairSkill": "post_investment_holdup",
-      "commonError": "misses_renegotiation_risk",
-      "feedback": "Rewarding ex post price concessions can scare suppliers away from efficient specific investments.",
-      "aHash": "eed6022bd629990f5a2db3106df19b5cd8fa93436143b0aeebafd28dc2dbfd30"
-    },
-    {
-      "id": 394,
-      "sourceGame": "marketSignal",
-      "q": "A specific investment costs $100,000 and creates $140,000 of value. A contract clause guarantees the investing supplier at least $110,000 if the buyer cancels or renegotiates. What is the main effect?",
-      "options": [
-        "It makes the investment privately viable by protecting the supplier’s expected payoff",
-        "It eliminates marginal analysis from the decision",
-        "It proves the investment has no opportunity cost",
-        "It guarantees the buyer captures all created value"
+      "secondarySkills": [
+        "present_value_discounting",
+        "cost_of_capital_npv"
       ],
-      "tag": "post_investment_holdup",
-      "type": "calculation",
-      "objective": "LO5.5",
-      "difficulty": "elite",
-      "conceptCluster": "elite_marketSignal_post_investment_holdup",
-      "primarySkill": "post_investment_holdup",
-      "secondarySkills": [],
       "repairSkill": "post_investment_holdup",
       "commonError": "misses_renegotiation_risk",
-      "feedback": "The clause protects the supplier from being pushed below cost after investing. That can support efficient investment.",
-      "aHash": "4658228b29448c5290bf13ee82193037075b157cd0466d3e0974801fa479b4f2"
+      "feedback": "Joint NPV is 80,000/1.1 + 80,000/1.1² −90,000 = $48,842.98. Supplier NPV with $55,000 receipts is −$11,900.83 after operating cost; with $65,000 receipts it is $5,454.55. The contract protects a privately viable share of a positive joint surplus.",
+      "aHash": "a6937fbccfd72ecbb052ab6003f67e61fc36570d8313b26d76aa30a9269f6362",
+      "canonicalDifficulty": "elite"
     }
   ],
   "legendary": [
@@ -10257,7 +8623,7 @@ const questionBanks = {
         "Only supply increased"
       ],
       "tag": "symbolic_graph_offsetting_shifts",
-      "type": "graph_analysis",
+      "type": "analysis",
       "objective": "LO8.4",
       "difficulty": "legendary",
       "conceptCluster": "market_changes",
@@ -10270,7 +8636,7 @@ const questionBanks = {
       "commonError": "Inferring a single shift from a price that returns to its original level",
       "feedback": "The larger quantity with unchanged price requires rightward shifts of both demand and supply in the diagram.",
       "image": "demand_supply.png",
-      "graphRequired": true,
+      "graphRequired": false,
       "aHash": "03aa3660d42c1f554c1f7b0244616ece86f420dd5ccdc190504d91f9ad707c00"
     },
     {
@@ -10399,7 +8765,7 @@ const questionBanks = {
       "commonError": "Stopping at the short-run demand shift and ignoring entry",
       "feedback": "Positive profit attracts entry, expanding supply until economic profit is driven back toward normal.",
       "image": "long_run_competition.png",
-      "graphRequired": true,
+      "graphRequired": false,
       "aHash": "e73aa854feb66d5f235c5feb3ff88f389175b4361153035f3a45963b1bc47d6b"
     },
     {
@@ -10480,12 +8846,12 @@ const questionBanks = {
     {
       "id": 9069,
       "sourceGame": "marketSignal",
-      "q": "In panel (b), demand rises from D0 to D1 and the market moves from A to B. What condition exists for the representative firm in panel (a) at the corresponding price?",
+      "q": "In the right panel, demand rises from D0 to D1 and the market moves from A to B. What condition exists for the representative firm in the left panel at the corresponding price?",
       "options": [
-        "Price P2 is below AVC, so the firm shuts down",
+        "P2 equals ATC at Q2, so the firm earns zero economic profit",
         "P2 exceeds ATC at Q2, so the firm earns economic profit",
-        "Price P2 equals minimum ATC, so profit is zero",
-        "Price P2 is below ATC but above AVC, so the firm earns a loss"
+        "P2 is below ATC at Q2, so the firm incurs an economic loss",
+        "P2 equals MC at Q1, so the firm maximizes profit at Q1"
       ],
       "tag": "long_run_graph_short_run_profit",
       "type": "graph_analysis",
@@ -10509,10 +8875,10 @@ const questionBanks = {
       "sourceGame": "marketSignal",
       "q": "After the market moves from A to B, what sequence produces the long-run point D?",
       "options": [
-        "Losses cause exit, shifting supply from S1 to S0",
-        "Demand falls from D1 to D0 while supply remains fixed",
+        "Entry shifts supply to S1 and price down to P0",
+        "Exit shifts supply to S0 and price back to P1",
         "Entry shifts supply to S1 and price back to P1",
-        "Existing firms raise price until quantity falls to QA"
+        "Exit shifts supply to S0 and price up to P2"
       ],
       "tag": "long_run_graph_entry_sequence",
       "type": "graph_analysis",
@@ -10534,11 +8900,11 @@ const questionBanks = {
     {
       "id": 9071,
       "sourceGame": "marketSignal",
-      "q": "At point C in panel (b), what long-run force moves the market back toward A if demand is D0?",
+      "q": "At point C in the right panel, what long-run force moves the market back toward A if demand is D0?",
       "options": [
-        "Profits induce entry, shifting supply farther right",
-        "Demand automatically rises to D1",
-        "Firms individually raise the market price without changing industry supply",
+        "Profits cause entry; supply shifts toward S0 and price toward P1",
+        "Profits cause entry; supply shifts toward S1 and price toward P0",
+        "Losses cause exit; supply shifts toward S1 and price toward P0",
         "Losses cause exit; supply shifts toward S0 and price toward P1"
       ],
       "tag": "long_run_graph_exit_sequence",
@@ -10581,8 +8947,7 @@ const questionBanks = {
       "repairSkill": "mean_reversion_entry_exit",
       "commonError": "Assuming all above-normal returns disappear at the same speed regardless of market structure",
       "feedback": "Persistent excess returns suggest some force is slowing entry or imitation.",
-      "image": "long_run_competition.png",
-      "graphRequired": true,
+      "graphRequired": false,
       "aHash": "7cd2cacbac59566b48a793ad4a9db217ffb33a3ea08a017586a09e01704c9937"
     },
     {
@@ -10950,157 +9315,150 @@ const questionBanks = {
     {
       "id": 2000,
       "sourceGame": "marketSignal",
-      "q": "A firm is comparing cash received today with cash received later. What does the discount rate allow the firm to do?",
+      "q": "What condition defines a competitive market equilibrium at a given price?",
       "options": [
-        "Convert future cash flows into comparable present values",
-        "Recover fixed costs that have already been paid",
-        "Replace uncertain cash flows with guaranteed cash flows",
-        "Determine the accounting profit reported in the current period"
+        "Quantity buyers plan to buy equals quantity sellers plan to sell",
+        "Each seller has sold the same quantity as every rival",
+        "Quantity demanded equals the market’s maximum physical capacity",
+        "Total sales revenue equals every seller’s fixed cost"
       ],
-      "tag": "easy_boss_discount_rate_purpose",
+      "tag": "equilibrium_calculation",
       "type": "conceptual",
-      "objective": "LO5.1",
+      "objective": "LO8.3",
       "difficulty": "easyBoss",
-      "conceptCluster": "easy_boss_discounting",
-      "primarySkill": "discount_rate_interpretation",
-      "secondarySkills": [
-        "cash_flow_timing"
-      ],
-      "repairSkill": "present_value_discounting",
-      "commonError": "Treating the discount rate as an accounting cost rather than a tool for comparing cash across time",
-      "feedback": "Discounting places cash received at different dates on the same present-value basis.",
-      "aHash": "663ea8c20fdaae9aae6315988b61afc12e6f742905438887853f19498cd58905"
+      "conceptCluster": "easyBoss_marketSignal_equilibrium_calculation",
+      "primarySkill": "equilibrium_calculation",
+      "secondarySkills": [],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Confusing one side’s plans with market clearing",
+      "feedback": "Equilibrium requires planned purchases to equal planned sales at the same price. It does not require identical firms or full physical capacity.",
+      "aHash": "3f31c7a67b7f5335006437ed1321275529ea64335ab25b1579988a0c3bf66662",
+      "bossStage": "opening"
     },
     {
       "id": 2001,
       "sourceGame": "marketSignal",
-      "q": "A project will pay $12,100 two years from now. If the discount rate is 10% per year, what is the payment worth today?",
+      "q": "Demand is Qd = 180 − 3P and supply is Qs = 20 + 5P. What price and quantity clear the market?",
       "options": [
-        "$9,091",
-        "$10,000",
-        "$11,000",
-        "$14,641"
+        "$20 and 100 units",
+        "$20 and 120 units",
+        "$40 and 60 units",
+        "$16 and 132 units"
       ],
-      "tag": "easy_boss_two_period_present_value",
+      "tag": "equilibrium_calculation",
       "type": "calculation",
-      "objective": "LO5.1",
+      "objective": "LO8.3",
       "difficulty": "easyBoss",
-      "conceptCluster": "easy_boss_discounting",
-      "primarySkill": "present_value_calculation",
-      "secondarySkills": [
-        "discount_rate_interpretation"
-      ],
-      "repairSkill": "present_value_discounting",
-      "commonError": "Discounting for only one year or compounding the future payment",
-      "feedback": "$12,100/(1.10)^2 = $10,000.",
-      "aHash": "d7c2f19257f0c5f31dfe20885459483e1781e72e9d6103607b47d30bcf88314a"
+      "conceptCluster": "easyBoss_marketSignal_equilibrium_calculation",
+      "primarySkill": "equilibrium_calculation",
+      "secondarySkills": [],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Failing to equate demand and supply",
+      "feedback": "Set 180 − 3P = 20 + 5P, so 8P = 160. At P = $20 both quantities equal 120.",
+      "aHash": "4b9e0c223bfbcc293c6e02fe94d67f887e452280666aee60d7a9e6c97d8fc589",
+      "bossStage": "middle"
     },
     {
       "id": 2002,
       "sourceGame": "marketSignal",
-      "q": "A supplier offers either $10,000 today or $12,100 two years from now. The firm's discount rate is 10%. Which statement is correct?",
+      "q": "Demand is Qd = 180 − 3P and supply is Qs = 20 + 5P. At a posted price of $15, what imbalance and price pressure arise if price can adjust?",
       "options": [
-        "The future payment is better because its dollar amount is larger",
-        "The current payment is better because cash today is always strictly more valuable",
-        "The two offers have the same present value",
-        "The offers cannot be compared without knowing the supplier's fixed cost"
+        "A shortage of 135 units creates upward price pressure",
+        "A surplus of 40 units creates downward price pressure",
+        "A shortage of 40 units creates upward price pressure",
+        "A surplus of 95 units creates downward price pressure"
       ],
-      "tag": "easy_boss_cash_timing_comparison",
-      "type": "application",
-      "objective": "LO5.1",
+      "tag": "shortage_surplus",
+      "type": "analysis",
+      "objective": "LO8.3",
       "difficulty": "easyBoss",
-      "conceptCluster": "easy_boss_discounting",
-      "primarySkill": "cash_flow_timing",
-      "secondarySkills": [
-        "present_value_calculation",
-        "discount_rate_interpretation"
-      ],
-      "repairSkill": "present_value_discounting",
-      "commonError": "Comparing nominal dollar amounts without discounting the later payment",
-      "feedback": "At 10%, the present value of $12,100 in two years is exactly $10,000.",
-      "aHash": "945c2981470e61175db5bda69851872165e9bb57f31a5bcef9f331aeb8019fae"
+      "conceptCluster": "easyBoss_marketSignal_shortage_surplus",
+      "primarySkill": "shortage_surplus",
+      "secondarySkills": [],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Confusing excess demand with excess supply",
+      "feedback": "At $15 buyers want 135 units and sellers offer 95. The 40-unit shortage creates upward price pressure.",
+      "aHash": "1db29f9926ba44615cd48091fcd6c9577549a93f8a37660f973e14fc14ee2559",
+      "bossStage": "final"
     },
     {
       "id": 2003,
       "sourceGame": "marketSignal",
-      "q": "What role does the cost of capital play in an investment decision?",
+      "q": "Other things equal, which event shifts demand for a normal good to the right?",
       "options": [
-        "It measures the amount already spent on the project",
-        "It sets the minimum return needed to justify using the funds",
-        "It guarantees that the project's forecast will be accurate",
-        "It determines the project's total revenue before discounting"
+        "A decrease in the good’s own price",
+        "An increase in buyers’ income",
+        "A decrease in a substitute’s price",
+        "An increase in a complement’s price"
       ],
-      "tag": "easy_boss_cost_of_capital_role",
+      "tag": "demand_shift_analysis",
       "type": "conceptual",
-      "objective": "LO5.2",
+      "objective": "LO8.4",
       "difficulty": "easyBoss",
-      "conceptCluster": "easy_boss_cost_of_capital",
-      "primarySkill": "cost_of_capital_interpretation",
-      "secondarySkills": [
-        "investment_hurdle_comparison"
-      ],
-      "repairSkill": "cost_of_capital_npv",
-      "commonError": "Confusing the cost of capital with the project's initial cash outlay",
-      "feedback": "The cost of capital is the opportunity cost of funding and serves as the required return.",
-      "aHash": "0412a47d1a85994b613638d8e0727f80c9de16b09425c42eeb27fd381471f0d3"
+      "conceptCluster": "easyBoss_marketSignal_demand_shift_analysis",
+      "primarySkill": "demand_shift_analysis",
+      "secondarySkills": [],
+      "repairSkill": "demand_supply_shifts",
+      "commonError": "Treating an own-price change as a demand shift",
+      "feedback": "For a normal good, higher income raises desired purchases at each price. A change in the good’s own price produces movement along demand.",
+      "aHash": "0b6abba54fe3fe8703e7a735428f98e5911b098d80ef88f5fbd178df586b576a",
+      "bossStage": "opening"
     },
     {
       "id": 2004,
       "sourceGame": "marketSignal",
-      "q": "A routine project is expected to earn 9%, while the firm's cost of capital for projects of this risk is 7%. Based on this comparison, what should the firm do?",
+      "q": "A new manufacturing process reduces variable production cost throughout an industry. Demand slopes downward and is unchanged. Supply slopes upward. What happens to equilibrium?",
       "options": [
-        "Reject it because the return is below 10%",
-        "Reject it because every project must earn twice the cost of capital",
-        "Delay it until the cost of capital rises",
-        "Accept it because the expected return exceeds the required return"
+        "Price and quantity both fall",
+        "Price rises and quantity falls",
+        "Price and quantity both rise",
+        "Price falls and quantity rises"
       ],
-      "tag": "easy_boss_return_hurdle_comparison",
+      "tag": "supply_shift_analysis",
       "type": "application",
-      "objective": "LO5.2",
+      "objective": "LO8.4",
       "difficulty": "easyBoss",
-      "conceptCluster": "easy_boss_cost_of_capital",
-      "primarySkill": "investment_hurdle_comparison",
-      "secondarySkills": [
-        "cost_of_capital_interpretation"
-      ],
-      "repairSkill": "cost_of_capital_npv",
-      "commonError": "Using an arbitrary return target instead of the risk-appropriate cost of capital",
-      "feedback": "The project clears its hurdle because 9% exceeds 7%.",
-      "aHash": "1f657fcea842a2828c0da24608d67d71550133125a56f99736e98ec138530f5e"
+      "conceptCluster": "easyBoss_marketSignal_supply_shift_analysis",
+      "primarySkill": "supply_shift_analysis",
+      "secondarySkills": [],
+      "repairSkill": "demand_supply_shifts",
+      "commonError": "Shifting demand when production costs change",
+      "feedback": "Lower costs shift industry supply right. The new equilibrium has a lower price and more sales.",
+      "aHash": "4d202f7cc48aa834e5cece8bb5162f121d25c0ef94586e39e18fd193c6c8ecfc",
+      "bossStage": "middle"
     },
     {
       "id": 2005,
       "sourceGame": "marketSignal",
-      "q": "A routine upgrade has an expected return of 9% and a required return of 7%. A risky expansion has an expected return of 11% and a required return of 13%. Which investment rule is correct?",
+      "q": "Initially Qd = 180 − 3P and Qs = 20 + 5P. A preference change adds 24 units to demand at every price, while cheaper inputs add 24 units to supply at every price. What happens to equilibrium?",
       "options": [
-        "Accept the routine upgrade and reject the risky expansion",
-        "Reject the routine upgrade and accept the risky expansion",
-        "Accept both because each has a positive expected return",
-        "Reject both because neither earns at least 15%"
+        "Price stays $20 and quantity rises from 120 to 144",
+        "Price rises to $23 and quantity rises to 135",
+        "Price falls to $17 and quantity rises to 129",
+        "Price stays $20 and quantity rises from 120 to 168"
       ],
-      "tag": "easy_boss_risk_adjusted_hurdles",
+      "tag": "comparative_statics",
       "type": "analysis",
-      "objective": "LO5.2",
+      "objective": "LO8.4",
       "difficulty": "easyBoss",
-      "conceptCluster": "easy_boss_cost_of_capital",
-      "primarySkill": "risk_adjusted_cost_of_capital",
-      "secondarySkills": [
-        "investment_hurdle_comparison"
-      ],
-      "repairSkill": "cost_of_capital_npv",
-      "commonError": "Choosing the project with the higher raw return without comparing each project with its own risk-adjusted hurdle",
-      "feedback": "The routine project earns more than its 7% hurdle. The risky project earns less than its 13% hurdle.",
-      "aHash": "0203f08bf8914f6bfabba34ce466f908cb349cdae34878a7144585eb00989e2d"
+      "conceptCluster": "easyBoss_marketSignal_comparative_statics",
+      "primarySkill": "comparative_statics",
+      "secondarySkills": [],
+      "repairSkill": "simultaneous_market_changes",
+      "commonError": "Applying only one of two industry changes",
+      "feedback": "The new equations are 204 − 3P = 44 + 5P, giving P = $20 and Q = 144. Equal horizontal increases offset in price but increase quantity.",
+      "aHash": "2e7b89d5f0b6aeb2f396e24b5e4a548fb8f97b804734a474da93215f239db989",
+      "bossStage": "final"
     },
     {
       "id": 2006,
       "sourceGame": "marketSignal",
-      "q": "Under the net present value rule, when should a firm accept a project?",
+      "q": "For an independent project with no capital constraint, what does the NPV rule recommend?",
       "options": [
-        "Whenever its future revenue is positive",
-        "Whenever it pays back within one year",
+        "Whenever future revenue covers current fixed costs",
+        "Whenever undiscounted benefits exceed undiscounted costs",
         "When the present value of benefits exceeds the present value of costs",
-        "When its accounting profit is larger than its fixed cost"
+        "Whenever its payback is shorter than another project’s"
       ],
       "tag": "easy_boss_npv_rule",
       "type": "conceptual",
@@ -11113,8 +9471,9 @@ const questionBanks = {
       ],
       "repairSkill": "cost_of_capital_npv",
       "commonError": "Accepting a project because it has positive revenue or a short payback without measuring value creation",
-      "feedback": "A positive NPV means discounted benefits exceed discounted costs.",
-      "aHash": "25421bd7b4e2e780e8bf7315dcbe12394b4d627fded235971b417b9357666e1b"
+      "feedback": "Using a discount rate appropriate to the project’s risk and timing, positive NPV means discounted benefits exceed discounted costs.",
+      "aHash": "25421bd7b4e2e780e8bf7315dcbe12394b4d627fded235971b417b9357666e1b",
+      "bossStage": "opening"
     },
     {
       "id": 2007,
@@ -11139,16 +9498,17 @@ const questionBanks = {
       "repairSkill": "cost_of_capital_npv",
       "commonError": "Calling the total present value of inflows the NPV or failing to discount both payments",
       "feedback": "The inflows are worth about $52,066 today. Subtracting $50,000 gives an NPV near $2,066, so accept.",
-      "aHash": "236699782a1dcd1d0a39030c976dec2addd2adecb652a76988907a042d087467"
+      "aHash": "236699782a1dcd1d0a39030c976dec2addd2adecb652a76988907a042d087467",
+      "bossStage": "middle"
     },
     {
       "id": 2008,
       "sourceGame": "marketSignal",
       "q": "Project A costs $50,000 and pays $55,000 in one year. Project B costs $50,000 and pays $30,000 in year 1 and $30,000 in year 2. At 10%, Project A has an NPV of $0 and a one-year payback; Project B has an NPV of about $2,066 and a longer payback. Which should the firm choose?",
       "options": [
-        "Project A, because the shortest payback always creates the most value",
-        "Either project, because both recover the original investment",
-        "Reject both, because neither produces immediate cash",
+        "Project A, because benefits beyond the first year should be excluded",
+        "Project A, because the earlier payback outweighs the stated NPV difference",
+        "Either project, because recovering the outlay makes their values equal",
         "Project B, because the NPV rule takes priority over the payback shortcut"
       ],
       "tag": "easy_boss_npv_vs_payback",
@@ -11164,17 +9524,18 @@ const questionBanks = {
       "repairSkill": "cost_of_capital_npv",
       "commonError": "Treating the payback period as a complete value measure",
       "feedback": "Payback ignores cash-flow timing after the cutoff and the cost of capital. Project B has the higher NPV.",
-      "aHash": "9aaafef05fea0b692daf985eeb3338c811ffa2bb3f86c4f698776afeec274f4f"
+      "aHash": "9aaafef05fea0b692daf985eeb3338c811ffa2bb3f86c4f698776afeec274f4f",
+      "bossStage": "final"
     },
     {
       "id": 2009,
       "sourceGame": "marketSignal",
-      "q": "A proposed facility has fixed cost FC, price P, and variable cost per unit V. Which expression gives its break-even quantity?",
+      "q": "A facility has fixed cost FC, price P and unit variable cost V, with P > V. Which expression gives break-even quantity?",
       "options": [
-        "FC divided by P minus V",
-        "FC divided by P plus V",
-        "P minus V divided by FC",
-        "FC plus V divided by P"
+        "FC / (P − V)",
+        "FC / P",
+        "(FC + V) / P",
+        "(P − V) / FC"
       ],
       "tag": "easy_boss_break_even_formula",
       "type": "conceptual",
@@ -11188,7 +9549,8 @@ const questionBanks = {
       "repairSkill": "break_even_technology",
       "commonError": "Dividing fixed cost by price rather than by contribution margin",
       "feedback": "Each unit contributes P minus V toward fixed cost, so break-even quantity is FC/(P-V).",
-      "aHash": "1d7f33faab33a6532ed2149a31eff06966a6349afbc60828c365118fba22f6be"
+      "aHash": "ba097bb6db611f359284da4dd33bb1fb2aacc048a799d6e8622016a8dc7d97b0",
+      "bossStage": "opening"
     },
     {
       "id": 2010,
@@ -11212,12 +9574,13 @@ const questionBanks = {
       "repairSkill": "break_even_technology",
       "commonError": "Using price or variable cost alone in the denominator",
       "feedback": "Contribution margin is $15-$9=$6. Break-even quantity is $120,000/$6=20,000 units.",
-      "aHash": "ed9cf4055bc40af84bf2bf34e6a27be3b358ccffe5e0b0f6386b1dbd11f73fc6"
+      "aHash": "ed9cf4055bc40af84bf2bf34e6a27be3b358ccffe5e0b0f6386b1dbd11f73fc6",
+      "bossStage": "middle"
     },
     {
       "id": 2011,
       "sourceGame": "marketSignal",
-      "q": "The facility is expected to sell 18,000 units. Before construction, its $120,000 fixed cost is avoidable. After construction, that cost is sunk, while price remains $15 and variable cost remains $9. Which statement correctly separates the investment and shutdown decisions?",
+      "q": "A facility will operate for one period with no salvage value. It can sell 18,000 units at $15 each with $9 unit variable cost. Its $120,000 fixed cost is avoidable before construction but irrecoverable afterward. How do the investment and operating decisions differ?",
       "options": [
         "Build the facility, but shut it down after construction because sales are below break-even",
         "Do not build it at 18,000 expected units; if already built, continue operating because price exceeds variable cost",
@@ -11238,16 +9601,17 @@ const questionBanks = {
       "repairSkill": "shutdown_decisions",
       "commonError": "Using the break-even rule and the short-run shutdown rule as though they were identical",
       "feedback": "Expected sales are below the 20,000-unit investment break-even point, so do not build. Once fixed cost is sunk, operating contributes $6 per unit toward that cost.",
-      "aHash": "7d67493c1f27aee3ac335c3be9f23e09db047ef1eaf1cdbd1f328abeb578fab5"
+      "aHash": "7d67493c1f27aee3ac335c3be9f23e09db047ef1eaf1cdbd1f328abeb578fab5",
+      "bossStage": "final"
     },
     {
       "id": 2012,
       "sourceGame": "marketSignal",
       "q": "Why should a firm generally ignore a sunk cost when choosing what to do next?",
       "options": [
-        "The cost will be refunded if the firm changes its decision",
-        "The cost is always smaller than future variable cost",
-        "The cost does not appear in the firm's accounting records",
+        "The cost changes with current output even though it was paid earlier",
+        "The cost should be counted again to ensure that the original investment pays off",
+        "The cost is recoverable whenever the firm chooses a different output",
         "The cost cannot be recovered and is unchanged by the current choice"
       ],
       "tag": "easy_boss_sunk_cost_rule",
@@ -11259,10 +9623,11 @@ const questionBanks = {
       "secondarySkills": [
         "incremental_decision_making"
       ],
-      "repairSkill": "sunk_cost_hold_up",
+      "repairSkill": "post_investment_holdup",
       "commonError": "Continuing a bad decision merely to justify money already spent",
       "feedback": "A sunk cost is irrecoverable. The current decision should depend on future incremental costs and benefits.",
-      "aHash": "4929dc767a223a65b30c85ba4114dccce2d0a2bfe664d7bed26fa24f71c06cc3"
+      "aHash": "4929dc767a223a65b30c85ba4114dccce2d0a2bfe664d7bed26fa24f71c06cc3",
+      "bossStage": "opening"
     },
     {
       "id": 2013,
@@ -11270,9 +9635,9 @@ const questionBanks = {
       "q": "A supplier spends $200,000 on equipment useful only for one buyer. After the investment is made, the buyer threatens to cut the agreed price because the equipment has little value elsewhere. What problem is the supplier facing?",
       "options": [
         "A post-investment hold-up problem",
-        "A break-even pricing problem caused by excess demand",
-        "A compounding error in the supplier's cash-flow forecast",
-        "A shutdown problem caused by price falling below variable cost"
+        "A mutually agreed price change before any specific investment",
+        "A competitive price decline for equipment with equally valuable alternative uses",
+        "An increase in the supplier’s variable production cost"
       ],
       "tag": "easy_boss_hold_up_identification",
       "type": "application",
@@ -11284,15 +9649,16 @@ const questionBanks = {
         "asset_specificity",
         "sunk_cost_reasoning"
       ],
-      "repairSkill": "sunk_cost_hold_up",
+      "repairSkill": "post_investment_holdup",
       "commonError": "Treating opportunistic renegotiation after a specialized investment as an ordinary pricing decision",
       "feedback": "The specialized investment becomes sunk and leaves the supplier vulnerable to opportunistic renegotiation.",
-      "aHash": "25356308e0ab1570b004854b5f499639ffa45c330bfe29699b388888302ac5a8"
+      "aHash": "25356308e0ab1570b004854b5f499639ffa45c330bfe29699b388888302ac5a8",
+      "bossStage": "middle"
     },
     {
       "id": 2014,
       "sourceGame": "marketSignal",
-      "q": "Before the supplier buys the specialized equipment, which contract term would most directly reduce the buyer's ability to hold up the supplier later?",
+      "q": "A supplier is about to buy equipment useful only for one buyer. Which enforceable contract term most directly protects the supplier from opportunistic renegotiation after investment?",
       "options": [
         "A promise to discuss the price again after the equipment is installed",
         "A clause letting the buyer cancel at any time without payment",
@@ -11309,10 +9675,11 @@ const questionBanks = {
         "asset_specificity",
         "contingency_contracts"
       ],
-      "repairSkill": "sunk_cost_hold_up",
+      "repairSkill": "post_investment_holdup",
       "commonError": "Relying on an unenforceable promise or preserving a costless exit after the specialized investment",
       "feedback": "A minimum-purchase commitment and termination payment make opportunistic cancellation costly and protect the specialized investment.",
-      "aHash": "90183c0f3ed4f3e8346c8c70c5c13dd8c68b73beb31399dd7e4dee9c665f06eb"
+      "aHash": "90183c0f3ed4f3e8346c8c70c5c13dd8c68b73beb31399dd7e4dee9c665f06eb",
+      "bossStage": "final"
     }
   ],
   "mediumBoss": [
@@ -11338,7 +9705,8 @@ const questionBanks = {
       "repairSkill": "expected_value_probability",
       "commonError": "Ignoring the loss outcome or averaging the three payoffs without using their probabilities",
       "feedback": "Expected payoff = 0.35($180,000) + 0.45($60,000) + 0.20(-$120,000) = $66,000.",
-      "aHash": "cc2b3e6e66b88da0af1244435572512bca328318af1bb62ae671d7f90d3d3892"
+      "aHash": "cc2b3e6e66b88da0af1244435572512bca328318af1bb62ae671d7f90d3d3892",
+      "bossStage": "opening"
     },
     {
       "id": 3001,
@@ -11360,19 +9728,20 @@ const questionBanks = {
         "expected_value_calculation",
         "probability_distribution"
       ],
-      "repairSkill": "expected_value_comparison",
+      "repairSkill": "expected_value_probability",
       "commonError": "Choosing the strategy with the larger best-case payoff instead of comparing probability-weighted outcomes",
       "feedback": "Strategy A has expected payoff of $70,000. Strategy B has expected payoff of $76,000, so B leads by $6,000.",
-      "aHash": "77375a93011a77fda2abb2a7e4a1960fd9b2b1a24f5b705e9da77f1f0958e82d"
+      "aHash": "77375a93011a77fda2abb2a7e4a1960fd9b2b1a24f5b705e9da77f1f0958e82d",
+      "bossStage": "middle"
     },
     {
       "id": 3002,
       "sourceGame": "marketSignal",
       "q": "A market-entry project has net payoffs of $240,000 with probability 0.30, $60,000 with probability 0.50, and -$150,000 with probability 0.20. The firm can instead license the idea for a certain $70,000. If the firm is risk-neutral, what should it do?",
       "options": [
-        "License the idea because the certain payoff exceeds the project’s expected payoff by $8,000",
-        "Reject both choices because the project includes a possible loss",
-        "The firm is indifferent because both choices have an expected payoff of $70,000",
+        "Be indifferent because gross gains should be compared without the loss outcome",
+        "License because avoiding the project’s possible $150,000 loss takes priority over expected value",
+        "License because its $70,000 payoff exceeds the project’s modal $60,000 payoff",
         "Enter the market because its expected payoff is $72,000, which is $2,000 above licensing"
       ],
       "tag": "medium_boss_expected_value_outside_option",
@@ -11385,20 +9754,21 @@ const questionBanks = {
         "outside_option_comparison",
         "risk_neutrality"
       ],
-      "repairSkill": "expected_value_interpretation",
+      "repairSkill": "expected_value_probability",
       "commonError": "Rejecting any uncertain option that contains a loss or comparing only the most likely outcome",
       "feedback": "The project’s expected payoff is 0.30($240,000)+0.50($60,000)+0.20(-$150,000)=$72,000. A risk-neutral firm chooses it over the certain $70,000.",
-      "aHash": "5f8c36e8341d8108c201e251eb0cafec85d1c3365aad43f5dea8a2c0a24cc8e4"
+      "aHash": "5f8c36e8341d8108c201e251eb0cafec85d1c3365aad43f5dea8a2c0a24cc8e4",
+      "bossStage": "final"
     },
     {
       "id": 3003,
       "sourceGame": "marketSignal",
       "q": "When can price discrimination help a firm respond to uncertainty about customers’ willingness to pay?",
       "options": [
-        "When every buyer has identical demand and resale is costless",
+        "When customer groups have identical demand and verification is costly",
         "When customer groups differ in willingness to pay and resale can be limited",
-        "When the firm must charge every customer the same price but can vary fixed cost",
-        "When the firm knows total demand but cannot observe or influence customer groups"
+        "When low-price customers can freely resell to high-price customers",
+        "When the observed price difference merely covers a matching difference in service cost"
       ],
       "tag": "medium_boss_price_discrimination_conditions",
       "type": "conceptual",
@@ -11413,7 +9783,8 @@ const questionBanks = {
       "repairSkill": "price_discrimination_uncertainty",
       "commonError": "Assuming different prices create value even when customers are identical or can freely resell",
       "feedback": "Price discrimination is useful when demand differs across identifiable groups and resale does not undo the separation.",
-      "aHash": "81aa2bb01273a2674c3d68dcf7e2c3424bf2343a0338e015ce266fa09ee10af2"
+      "aHash": "81aa2bb01273a2674c3d68dcf7e2c3424bf2343a0338e015ce266fa09ee10af2",
+      "bossStage": "opening"
     },
     {
       "id": 3004,
@@ -11436,15 +9807,16 @@ const questionBanks = {
         "contribution_margin",
         "price_discrimination_design"
       ],
-      "repairSkill": "pricing_profit_comparison",
+      "repairSkill": "price_discrimination_uncertainty",
       "commonError": "Comparing revenue rather than contribution or failing to weight segment demand by purchase probability",
       "feedback": "Uniform contribution is ($50-$20)(700)=$21,000. Segmented contribution is ($40-$20)(540)+($80-$20)(280)=$27,600, a gain of $6,600.",
-      "aHash": "98b4e3b0640e9908cc83cd3f1026713f8853983557a148abd8b0d171e535f687"
+      "aHash": "98b4e3b0640e9908cc83cd3f1026713f8853983557a148abd8b0d171e535f687",
+      "bossStage": "middle"
     },
     {
       "id": 3005,
       "sourceGame": "marketSignal",
-      "q": "A firm can sell to 300 business customers at $100 and 700 verified students at $40. Every customer buys at the relevant price, marginal cost is $20, resale is blocked, and verification costs $10,000. The best uniform price is $100. Which policy maximizes expected contribution?",
+      "q": "A firm can identify 300 business customers willing to pay up to $100 and 700 students willing to pay up to $40. Each wants one unit and buys at a price equal to willingness to pay. Marginal cost is $20, capacity is sufficient and resale is blocked. Student verification costs $10,000; uniform pricing needs no verification. Which policy maximizes contribution after verification costs?",
       "options": [
         "Use price discrimination; it yields $28,000 versus $24,000 under uniform pricing",
         "Charge everyone $40; contribution is $38,000 after verification",
@@ -11462,19 +9834,20 @@ const questionBanks = {
         "implementation_cost",
         "uniform_pricing_comparison"
       ],
-      "repairSkill": "price_discrimination_under_uncertainty",
+      "repairSkill": "price_discrimination_uncertainty",
       "commonError": "Ignoring verification cost or comparing discriminatory revenue with uniform contribution",
       "feedback": "Discrimination produces $38,000 before verification and $28,000 after it. The best uniform policy produces $24,000, so discrimination adds $4,000.",
-      "aHash": "6cdc574bfa8f2d51e82e5a9acaf0cd5605a6b4fa503097216aa88556cbe9eca4"
+      "aHash": "6cdc574bfa8f2d51e82e5a9acaf0cd5605a6b4fa503097216aa88556cbe9eca4",
+      "bossStage": "final"
     },
     {
       "id": 3006,
       "sourceGame": "marketSignal",
       "q": "A company offers an optional productivity program. Employees who volunteer later outperform nonparticipants. Why does this comparison fail to establish the program’s causal effect?",
       "options": [
-        "The program has no control group because volunteers cannot be observed",
-        "Productivity cannot be measured after employees receive training",
-        "The company should compare only the highest-performing volunteers",
+        "Comparing only successful volunteers removes selection bias",
+        "A large enough volunteer sample makes initial group differences irrelevant",
+        "Any positive post-program gap is the treatment effect, regardless of selection",
         "Volunteers may differ before treatment, creating selection bias"
       ],
       "tag": "medium_boss_voluntary_program_selection_bias",
@@ -11487,10 +9860,11 @@ const questionBanks = {
         "causal_inference",
         "counterfactual_reasoning"
       ],
-      "repairSkill": "selection_bias_detection",
+      "repairSkill": "experiments_causality",
       "commonError": "Treating a post-program difference between self-selected groups as the causal treatment effect",
       "feedback": "Self-selection can make participants systematically different before treatment. Random assignment or a credible comparison strategy is needed.",
-      "aHash": "f5a8a682683354a21d66f29ef5903812ebecf7273796c3d8fddff0cb0b9d1c51"
+      "aHash": "f5a8a682683354a21d66f29ef5903812ebecf7273796c3d8fddff0cb0b9d1c51",
+      "bossStage": "opening"
     },
     {
       "id": 3007,
@@ -11512,10 +9886,11 @@ const questionBanks = {
         "control_group_comparison",
         "causal_effect_estimation"
       ],
-      "repairSkill": "difference_in_differences",
+      "repairSkill": "experiments_causality",
       "commonError": "Using the treatment market’s 90-unit increase without subtracting the control market’s 50-unit increase",
-      "feedback": "The estimate is (310-220)-(300-250)=90-50=40 units.",
-      "aHash": "36ebe0425d5dd2a9a3acf9ce39a1c0264e2a4990822c8ba77839516f6709fc7a"
+      "feedback": "The estimate is (310 − 220) − (300 − 250) = 40 units. Interpreting this as causal requires parallel untreated trends and no other differential shock.",
+      "aHash": "36ebe0425d5dd2a9a3acf9ce39a1c0264e2a4990822c8ba77839516f6709fc7a",
+      "bossStage": "middle"
     },
     {
       "id": 3008,
@@ -11538,10 +9913,11 @@ const questionBanks = {
         "intention_to_treat",
         "random_assignment"
       ],
-      "repairSkill": "attrition_bias",
+      "repairSkill": "experiments_causality",
       "commonError": "Assuming randomization automatically protects a comparison after treatment-related attrition",
       "feedback": "Differential attrition can destroy comparability among respondents. Intention-to-treat preserves the original assignment, while attrition must be examined directly.",
-      "aHash": "6044fdb6aa9c966002d9fa4f739d71c7b4a73ce0c57ee0898a63a56d55d44759"
+      "aHash": "6044fdb6aa9c966002d9fa4f739d71c7b4a73ce0c57ee0898a63a56d55d44759",
+      "bossStage": "final"
     },
     {
       "id": 3009,
@@ -11565,7 +9941,8 @@ const questionBanks = {
       "repairSkill": "error_costs",
       "commonError": "Confusing a false positive with the missed opportunity created by a false negative",
       "feedback": "A false positive occurs when the rule says yes even though the underlying condition is false.",
-      "aHash": "d5acbef0c2fa8a35a1a7dab435774aee4f1042eedf9d2b34a14f47595cc5a47e"
+      "aHash": "d5acbef0c2fa8a35a1a7dab435774aee4f1042eedf9d2b34a14f47595cc5a47e",
+      "bossStage": "opening"
     },
     {
       "id": 3010,
@@ -11587,20 +9964,21 @@ const questionBanks = {
         "type_i_type_ii_errors",
         "base_rates"
       ],
-      "repairSkill": "expected_error_cost_calculation",
+      "repairSkill": "error_costs",
       "commonError": "Applying error rates to all applications rather than to the relevant good or bad group",
       "feedback": "False approvals: 700(0.05)=35, costing $1.4 million. False rejections: 300(0.10)=30, costing $2.7 million. Total=$4.1 million.",
-      "aHash": "f3fb4604ab29b4f4385b03c794de2d69e9bdf5fdf1b07088a850a0da048b5296"
+      "aHash": "f3fb4604ab29b4f4385b03c794de2d69e9bdf5fdf1b07088a850a0da048b5296",
+      "bossStage": "middle"
     },
     {
       "id": 3011,
       "sourceGame": "marketSignal",
       "q": "A firm screens 800 bad projects and 200 good projects. Under a conservative rule, false-positive and false-negative rates are 2% and 20%. Under a lenient rule, they are 10% and 5%. A false positive costs $20,000 and a false negative costs $100,000. Which rule minimizes expected error cost?",
       "options": [
-        "The conservative rule, with expected error cost of $2.60 million",
+        "The conservative rule, with expected cost of $4.32 million",
         "The lenient rule, with expected error cost of $2.60 million",
-        "The conservative rule, because its false-positive rate is lower regardless of other costs",
-        "The rules are equivalent because their error rates sum to the same percentage"
+        "The conservative rule, using only its lower false-positive cost of $320,000",
+        "The lenient rule, but with expected cost of only $1.00 million"
       ],
       "tag": "medium_boss_threshold_error_cost_comparison",
       "type": "analysis",
@@ -11612,20 +9990,21 @@ const questionBanks = {
         "classification_thresholds",
         "expected_error_cost_calculation"
       ],
-      "repairSkill": "expected_error_cost_minimization",
+      "repairSkill": "error_costs",
       "commonError": "Choosing the rule with the lower false-positive rate without considering base rates and the much larger false-negative cost",
       "feedback": "Conservative cost is 16($20,000)+40($100,000)=$4.32 million. Lenient cost is 80($20,000)+10($100,000)=$2.60 million.",
-      "aHash": "a8d373db26ca453aac83be3bbeb75d2ea6626dc7a06e5b8ef66f31b7b0efb3e9"
+      "aHash": "a8d373db26ca453aac83be3bbeb75d2ea6626dc7a06e5b8ef66f31b7b0efb3e9",
+      "bossStage": "final"
     },
     {
       "id": 3012,
       "sourceGame": "marketSignal",
       "q": "Which approach is most likely to produce an accurate estimate of uncertain customer demand?",
       "options": [
-        "Use only the customers who responded first because they provide the freshest information",
-        "Average the most optimistic and pessimistic manager forecasts without examining data",
+        "Use only existing buyers to estimate purchase probabilities for all prospective customers",
+        "Use a large convenience sample and treat its size as a cure for selection bias",
         "Use a representative sample, consistent measurement, and report uncertainty",
-        "Select the region with the largest sales and treat its purchase rate as the national probability"
+        "Pool different measurement definitions without checking their comparability"
       ],
       "tag": "medium_boss_accurate_uncertainty_estimate",
       "type": "conceptual",
@@ -11640,7 +10019,8 @@ const questionBanks = {
       "repairSkill": "uncertainty_estimation",
       "commonError": "Treating a convenient or extreme sample as though it represented the target population",
       "feedback": "Accurate estimation requires a representative sample, consistent measurement, and an honest statement of remaining uncertainty.",
-      "aHash": "083581628c8841c5fb0e2deb629a0098943528475be6c70ad05120c8aa62bb01"
+      "aHash": "083581628c8841c5fb0e2deb629a0098943528475be6c70ad05120c8aa62bb01",
+      "bossStage": "opening"
     },
     {
       "id": 3013,
@@ -11662,20 +10042,21 @@ const questionBanks = {
         "population_weighting",
         "market_composition"
       ],
-      "repairSkill": "probability_estimation",
+      "repairSkill": "uncertainty_estimation",
       "commonError": "Taking the simple average of the two regional rates even though the regions differ greatly in size",
       "feedback": "The weighted probability is (800/1000)(0.30)+(200/1000)(0.60)=0.36, or 36%.",
-      "aHash": "16c0f5434ed3ac925b7cc3a45bcdfac1f6cce7a7574aa184469f81936b7fe428"
+      "aHash": "16c0f5434ed3ac925b7cc3a45bcdfac1f6cce7a7574aa184469f81936b7fe428",
+      "bossStage": "middle"
     },
     {
       "id": 3014,
       "sourceGame": "marketSignal",
-      "q": "A manufacturer wants to estimate the probability of a rare equipment failure. Which plan gives the most defensible estimate?",
+      "q": "A manufacturer wants the probability that a machine fails at least once during its next year of use. Which plan best estimates that probability for the target fleet?",
       "options": [
-        "Study only machines that failed because those observations contain the event of interest",
-        "Use the most recent failure rate from one plant and ignore differences in exposure time",
-        "Ask experienced engineers for one consensus percentage and treat it as known",
-        "Measure failures per machine-hour across all conditions and validate on later data"
+        "Average plant failure counts without weighting by the number of machines followed",
+        "Divide this year’s failures by the number of machines that failed in earlier years",
+        "Use the fraction failing during a short trial as the annual probability without adjustment",
+        "Follow a representative fleet for a full year, record each machine’s failure indicator, and validate on a later comparable cohort"
       ],
       "tag": "medium_boss_rare_event_estimation",
       "type": "analysis",
@@ -11690,18 +10071,19 @@ const questionBanks = {
       ],
       "repairSkill": "uncertainty_estimation",
       "commonError": "Estimating a failure probability from failures alone or without measuring the amount of exposure",
-      "feedback": "A probability requires both events and exposure. Broad data, relevant conditions, and later validation reduce selection and overfitting problems.",
-      "aHash": "f255650b21ec9c2fd7b73f0e6252afa20f7c46d7e90161833bf00291db1798f2"
+      "feedback": "Define a common one-year horizon and count both machines with and without failure. Representative conditions, complete follow-up and later validation make the estimate useful for the target fleet.",
+      "aHash": "361813225d1cad641470c8b3ab8bdfe3c26c8a49d6acdb634900a88882a29d40",
+      "bossStage": "final"
     },
     {
       "id": 3015,
       "sourceGame": "marketSignal",
       "q": "Because contracts cannot list every future event, what institutional features are most useful for handling unforeseen contingencies?",
       "options": [
-        "A promise that neither party will ever request a change",
+        "Fix today’s price but leave future decision authority and disputes unspecified",
         "Decision rights, adjustment rules, information requirements, and arbitration",
-        "A requirement that every future cost be treated as sunk",
-        "A clause automatically terminating the relationship after any unexpected event"
+        "Require renegotiation after any shock without defining information or dispute procedures",
+        "Give either party unrestricted discretion to change obligations after investment"
       ],
       "tag": "medium_boss_incomplete_contract_institutions",
       "type": "conceptual",
@@ -11716,7 +10098,8 @@ const questionBanks = {
       "repairSkill": "contingency_contracts",
       "commonError": "Trying to eliminate uncertainty with a vague promise or automatic termination rather than creating a process for adaptation",
       "feedback": "When not every state can be specified, the contract should govern who decides, what information is used, how adjustments occur, and how disputes are resolved.",
-      "aHash": "2dca5a2502737c3ae8a7966b30668080e78ab43767bbfd9535c5ebc1d620375d"
+      "aHash": "2dca5a2502737c3ae8a7966b30668080e78ab43767bbfd9535c5ebc1d620375d",
+      "bossStage": "opening"
     },
     {
       "id": 3016,
@@ -11742,17 +10125,18 @@ const questionBanks = {
       "repairSkill": "contingency_contracts",
       "commonError": "Using discretionary renegotiation or an inflexible fixed price when an observable cost index is available",
       "feedback": "Indexation creates an objective adjustment rule linked to the relevant shock and reduces room for strategic claims.",
-      "aHash": "27f8c96418a5b3db24c77e643ab31d51c3a4bd8742984f9432dcd296fc02d63a"
+      "aHash": "27f8c96418a5b3db24c77e643ab31d51c3a4bd8742984f9432dcd296fc02d63a",
+      "bossStage": "middle"
     },
     {
       "id": 3017,
       "sourceGame": "marketSignal",
       "q": "Two firms will make specialized investments in a joint venture, but future regulation may require redesign. Which governance package best protects investment while allowing efficient adaptation?",
       "options": [
-        "Make both investments immediately, leave redesign authority undefined, and rely on goodwill",
+        "Fix price and forbid adjustments, protect cancellation costs, but leave redesign authority undefined",
         "Use staged investment, verifiable triggers, decision rights, termination compensation, and arbitration",
-        "Give either firm a costless exit after investment and let the remaining firm absorb all redesign costs",
-        "Prohibit every contract modification so neither side can exploit the other after regulation changes"
+        "Allow unilateral redesign and costless cancellation, while publishing quarterly information",
+        "Define an arbitration process but leave investment timing, compensation and authority unspecified"
       ],
       "tag": "medium_boss_joint_venture_contingency_governance",
       "type": "analysis",
@@ -11769,80 +10153,84 @@ const questionBanks = {
       "repairSkill": "contingency_contracts",
       "commonError": "Choosing either unlimited discretion or complete rigidity rather than structured adaptation with commitment protections",
       "feedback": "The package limits exposure through staging, defines how adaptation occurs, protects sunk investment, verifies claims, and resolves disputes without destroying the venture.",
-      "aHash": "06dc23ff7c9c73f38031b823b71885de2bc39bccd926da5f506d7567380399a6"
+      "aHash": "06dc23ff7c9c73f38031b823b71885de2bc39bccd926da5f506d7567380399a6",
+      "bossStage": "final"
     },
     {
       "id": 3018,
       "sourceGame": "marketSignal",
-      "q": "A supplier buys a machine that only works for one buyer’s custom part. After the machine is installed, the buyer demands a lower price. What problem is this?",
+      "q": "A buyer values four successive units at $48, $36, $24 and $12. At a price of $30, how many units does the buyer choose?",
       "options": [
-        "Diminishing marginal returns",
-        "Economies of scope",
-        "Post-investment hold-up",
-        "The fixed-cost fallacy"
+        "3 units",
+        "1 unit",
+        "2 units",
+        "4 units"
       ],
-      "tag": "post_investment_holdup",
-      "type": "boss_definition",
-      "objective": "LO5.5",
+      "tag": "demand_behavior",
+      "type": "application",
+      "objective": "LO8.2",
       "difficulty": "mediumBoss",
-      "conceptCluster": "mediumBoss_marketSignal_post_investment_holdup",
-      "primarySkill": "post_investment_holdup",
+      "conceptCluster": "mediumBoss_marketSignal_demand_behavior",
+      "primarySkill": "demand_behavior",
       "secondarySkills": [],
-      "repairSkill": "post_investment_holdup",
-      "commonError": "misses_specific_investment_risk",
-      "feedback": "A specific investment creates bargaining vulnerability after the investment is sunk.",
-      "aHash": "25c29e55916a96203a4831efb8fb78976119e470ca675277b37817e4578b6dc3"
+      "repairSkill": "buyer_seller_behavior",
+      "commonError": "Buying a unit worth less than its price",
+      "feedback": "The first two units are worth at least $30; the third is worth only $24. The buyer chooses two units.",
+      "aHash": "d91e6e71e2662e025394fabaacff5799232b00161d319aa768a47437f9f706cd",
+      "bossStage": "opening"
     },
     {
       "id": 3019,
       "sourceGame": "marketSignal",
-      "q": "A supplier must spend $90,000 on buyer-specific tooling. If renegotiation risk means the buyer may capture $30,000 of the value after the investment, what is the likely effect before the investment is made?",
+      "q": "A seller can supply at most four units with successive marginal costs $10, $18, $26 and $34. At a market price of $30, how many units maximize contribution, and what is that contribution before fixed cost?",
       "options": [
-        "The hold-up risk disappears because the investment is productive",
-        "The supplier will automatically invest more",
-        "The buyer-specific tooling becomes a variable cost per unit",
-        "The supplier may underinvest or demand protection before investing"
+        "3 units and $90",
+        "2 units and $32",
+        "4 units and $32",
+        "3 units and $36"
       ],
-      "tag": "post_investment_holdup",
-      "type": "boss_application",
-      "objective": "LO5.5",
+      "tag": "supply_behavior",
+      "type": "calculation",
+      "objective": "LO8.2",
       "difficulty": "mediumBoss",
-      "conceptCluster": "mediumBoss_marketSignal_post_investment_holdup",
-      "primarySkill": "post_investment_holdup",
+      "conceptCluster": "mediumBoss_marketSignal_supply_behavior",
+      "primarySkill": "supply_behavior",
       "secondarySkills": [],
-      "repairSkill": "post_investment_holdup",
-      "commonError": "ignores_underinvestment_response",
-      "feedback": "Hold-up risk discourages efficient specific investment unless the parties design protection.",
-      "aHash": "15e7c9069bc93d5b245931929cfd8c38dc6ba06e87fedbf8b7c2cb9b2937d1f5"
+      "repairSkill": "buyer_seller_behavior",
+      "commonError": "Comparing price to total instead of marginal cost",
+      "feedback": "The first three units add $20, $12 and $4, totaling $36. The fourth would lose $4, so stop at three.",
+      "aHash": "6836356808c9b99ed90e832d13e565fe325dfb7d78c2a7a975f5ef5c80ccbe1a",
+      "bossStage": "middle"
     },
     {
       "id": 3020,
       "sourceGame": "marketSignal",
-      "q": "Which contract or organization design most directly reduces post-investment hold-up risk?",
+      "q": "At $30, 100 identical buyers each demand 2 units and 50 identical sellers each offer 3 units. There are no controls or barriers to price adjustment. With downward-sloping demand and upward-sloping supply, which adjustment moves the market toward equilibrium?",
       "options": [
-        "A long-term agreement with price terms, volume commitments, or ownership integration",
-        "A vague handshake after the machine is installed",
-        "A spot-market purchase with no commitment",
-        "A bonus based only on this month’s sales calls"
+        "A 50-unit shortage puts upward pressure on price; buyers reduce purchases and sellers expand offers",
+        "A 50-unit surplus puts downward pressure on price; buyers expand purchases and sellers reduce offers",
+        "A 150-unit shortage shifts demand right without changing price",
+        "A 200-unit surplus shifts supply left without changing price"
       ],
-      "tag": "post_investment_holdup",
-      "type": "boss_application",
-      "objective": "LO5.5",
+      "tag": "buyer_seller_behavior",
+      "type": "analysis",
+      "objective": "LO8.2",
       "difficulty": "mediumBoss",
-      "conceptCluster": "mediumBoss_marketSignal_post_investment_holdup",
-      "primarySkill": "post_investment_holdup",
+      "conceptCluster": "mediumBoss_marketSignal_buyer_seller_behavior",
+      "primarySkill": "buyer_seller_behavior",
       "secondarySkills": [],
-      "repairSkill": "post_investment_holdup",
-      "commonError": "chooses_unprotected_spot_market",
-      "feedback": "Contract design, commitments, and integration can protect specific investments and reduce underinvestment.",
-      "aHash": "2b2d842030931737d3cb123794cbea5e7248a981d24b42223da124d796083860"
+      "repairSkill": "buyer_seller_behavior",
+      "commonError": "Confusing aggregate plans with individual incentives",
+      "feedback": "Buyers demand 200 units while sellers supply 150. Higher price reduces quantity demanded and increases quantity supplied along the existing curves.",
+      "aHash": "79fea9db6a30e77cf430f6d4499cd78aedfbe95239b4d48d18d8baed2f225a27",
+      "bossStage": "final"
     }
   ],
   "finalBoss": [
     {
       "id": 4000,
       "sourceGame": "marketSignal",
-      "q": "A ready-mix concrete producer can deliver economically only within 35 miles because the product hardens quickly and transport is costly. Which market definition is most useful for analyzing competition?",
+      "q": "Ready-mix concrete hardens quickly. For a local construction project, the only practical substitutes are ready-mix suppliers within about 35 miles; more distant suppliers cannot deliver usable concrete economically. Which market definition is useful?",
       "options": [
         "Ready-mix concrete sold within the practical delivery radius",
         "All construction materials sold anywhere in the country",
@@ -11862,12 +10250,13 @@ const questionBanks = {
       "repairSkill": "market_definition",
       "commonError": "Defining the market so broadly that transport limits and actual substitutes disappear",
       "feedback": "The relevant market includes products buyers can realistically substitute and sellers that can economically serve them. For ready-mix concrete, the delivery radius matters.",
-      "aHash": "f497695cf11cd9f990887243bbf73f552483d8b7c461ddf08ff201ee07d1e595"
+      "aHash": "f497695cf11cd9f990887243bbf73f552483d8b7c461ddf08ff201ee07d1e595",
+      "bossStage": "opening"
     },
     {
       "id": 4001,
       "sourceGame": "marketSignal",
-      "q": "Within that 35-mile concrete market, only two firms operate and distant producers cannot profitably deliver. What is the strongest implication?",
+      "q": "In a ready-mix concrete market with a 35-mile delivery limit, only two firms operate. Distant firms cannot deliver economically, and scarce local plant permits prevent new local entry. What is the strongest implication?",
       "options": [
         "The firms must earn zero economic profit immediately",
         "Local market power and persistent returns are more plausible because entry is limited",
@@ -11884,15 +10273,16 @@ const questionBanks = {
         "market_power",
         "entry_barriers"
       ],
-      "repairSkill": "market_scope",
+      "repairSkill": "market_definition",
       "commonError": "Using a broad national industry count instead of the firms that can actually compete for local sales",
       "feedback": "A narrow feasible market with few sellers and costly outside entry can support market power and returns that would be missed by a national definition.",
-      "aHash": "69aaf54422ff64a7506df3a893e681e8fc8343c9bd65e7d8c6414842d3c61994"
+      "aHash": "69aaf54422ff64a7506df3a893e681e8fc8343c9bd65e7d8c6414842d3c61994",
+      "bossStage": "middle"
     },
     {
       "id": 4002,
       "sourceGame": "marketSignal",
-      "q": "A regulator defines the concrete market as all building materials sold nationwide. How would that error most likely distort the analysis of the two local firms?",
+      "q": "Two local concrete firms face a 35-mile delivery limit and barriers to new local plants. Buyers cannot readily substitute other materials. A regulator instead counts all building materials sold nationwide as their market. How would that error distort competition analysis?",
       "options": [
         "It would overstate local transportation costs but leave concentration unchanged",
         "It would make concrete demand appear less seasonal without changing entry conditions",
@@ -11912,7 +10302,8 @@ const questionBanks = {
       "repairSkill": "market_definition",
       "commonError": "Treating irrelevant sellers and products as effective competitors",
       "feedback": "An excessively broad market dilutes measured concentration and makes entry and substitution look easier than they really are.",
-      "aHash": "d82267de2a217c23371b49b41a98c619b31e05217ac9a9b271d1a65a6908b4ba"
+      "aHash": "d82267de2a217c23371b49b41a98c619b31e05217ac9a9b271d1a65a6908b4ba",
+      "bossStage": "final"
     },
     {
       "id": 4003,
@@ -11937,57 +10328,54 @@ const questionBanks = {
       "repairSkill": "buyer_seller_behavior",
       "commonError": "Calling a movement along the curves a shift in demand or supply",
       "feedback": "A higher market price reduces quantity demanded and increases quantity supplied when the curves themselves have not shifted.",
-      "aHash": "f57270943071a183752514c5e15325e09657cf59664d8c93f3419965a668f814"
+      "aHash": "f57270943071a183752514c5e15325e09657cf59664d8c93f3419965a668f814",
+      "bossStage": "opening"
     },
     {
       "id": 4004,
       "sourceGame": "marketSignal",
-      "q": "A tax credit shifts demand for solar installations right. Existing installers earn economic profit in the short run. What sequence is most consistent with a competitive industry?",
+      "q": "A price-taking installer can complete up to four jobs this week. Successive incremental costs are $4,000, $5,000, $6,500 and $8,000. Every job earns the market price of $7,000. Existing overhead is unavoidable. What output maximizes weekly contribution?",
       "options": [
-        "Price and profit rise first; entry later shifts supply right and pushes returns back toward normal",
-        "Price falls first; firms then exit and shift supply left until the remaining installers can maintain permanent monopoly returns",
-        "Quantity falls because sellers withhold output to preserve the higher price",
-        "Demand returns left automatically because economic profit cannot occur in competition"
+        "3 jobs, with contribution $5,500",
+        "2 jobs, with contribution $5,000",
+        "4 jobs, with contribution $4,500",
+        "1 job, with contribution $3,000"
       ],
-      "tag": "final_boss_demand_profit_entry_sequence",
-      "type": "analysis",
+      "tag": "supply_behavior",
+      "type": "calculation",
       "objective": "LO8.2",
       "difficulty": "finalBoss",
-      "conceptCluster": "final_boss_buyer_seller_behavior",
-      "primarySkill": "entry_response",
-      "secondarySkills": [
-        "demand_shift_analysis",
-        "competitive_returns"
-      ],
-      "repairSkill": "entry_response",
-      "commonError": "Assuming competitive firms can preserve short-run profit by restricting industry output",
-      "feedback": "The demand increase raises price and profit initially. Entry expands market supply and erodes the abnormal return.",
-      "aHash": "93f994d2ff8ffd2acf31714e1af8ee8028ce729deb9fe073ec4ee58ef7a381de"
+      "conceptCluster": "finalBoss_marketSignal_supply_behavior",
+      "primarySkill": "supply_behavior",
+      "secondarySkills": [],
+      "repairSkill": "buyer_seller_behavior",
+      "commonError": "Assuming price-taking sellers choose output using average cost",
+      "feedback": "The first three jobs add $3,000, $2,000 and $500. The fourth loses $1,000. Three jobs maximize contribution at $5,500.",
+      "aHash": "ad572aca3f9521af628bb38ef0c6436f36f9d6557ac348174f0d1014fc8aa852",
+      "bossStage": "middle"
     },
     {
       "id": 4005,
       "sourceGame": "marketSignal",
-      "q": "Suppose one solar installer instead owns an enforceable patent that blocks entry and close substitutes. Relative to the competitive adjustment, what outcome is more likely?",
+      "q": "At $7,000 per installation buyers request 240 jobs and sellers offer 210. No prices are controlled. A manager predicts that a higher price will increase both purchases and offers. What correction best describes the competitive adjustment?",
       "options": [
-        "Entry still drives price to minimum average total cost",
-        "The firm restricts output and keeps price above the competitive level",
-        "The firm expands output until price equals marginal cost because the patent removes risk",
-        "Buyer demand shifts left solely because the seller becomes a monopolist"
+        "Excess demand pushes price down; both quantities expand together",
+        "Excess demand pushes price up; quantity demanded falls while quantity supplied rises",
+        "Excess supply pushes price up; both curves shift right",
+        "Excess demand shifts demand right; the price increase then raises purchases"
       ],
-      "tag": "final_boss_patent_behavior_comparison",
-      "type": "synthesis",
+      "tag": "buyer_seller_behavior",
+      "type": "analysis",
       "objective": "LO8.2",
       "difficulty": "finalBoss",
-      "conceptCluster": "final_boss_buyer_seller_behavior",
-      "primarySkill": "monopoly_price_output",
-      "secondarySkills": [
-        "barriers_to_entry",
-        "buyer_behavior"
-      ],
-      "repairSkill": "monopoly_price_output",
-      "commonError": "Applying the competitive entry result when a barrier prevents entry",
-      "feedback": "A protected monopolist maximizes profit where marginal revenue equals marginal cost, normally producing less and charging more than a competitive market.",
-      "aHash": "e82b22912cb00176eb3818eae2465370bcf6161ae1d45d0ab7771cf149c10f47"
+      "conceptCluster": "finalBoss_marketSignal_buyer_seller_behavior",
+      "primarySkill": "buyer_seller_behavior",
+      "secondarySkills": [],
+      "repairSkill": "buyer_seller_behavior",
+      "commonError": "Treating a higher posted price as a shift of both curves",
+      "feedback": "There is a shortage of 30 jobs. As price rises, buyers move up their demand curve and reduce purchases while sellers expand along supply. Neither movement is itself a curve shift.",
+      "aHash": "b9dfbe98a5c30ab009d1808053ab116823933075ab85b76a7524ef865ab9a293",
+      "bossStage": "final"
     },
     {
       "id": 4006,
@@ -12008,60 +10396,57 @@ const questionBanks = {
       "secondarySkills": [
         "demand_supply_equations"
       ],
-      "repairSkill": "equilibrium_calculation",
+      "repairSkill": "equilibrium_shortage_surplus",
       "commonError": "Solving only one equation or failing to set quantity demanded equal to quantity supplied",
       "feedback": "Set 200 - 4P = 40 + 4P. This gives P = 20 and Q = 120.",
-      "aHash": "3377a924a2b4d015bfa34b0578800e46d8d21cc7b9c16f80a3a941e13073f4ec"
+      "aHash": "3377a924a2b4d015bfa34b0578800e46d8d21cc7b9c16f80a3a941e13073f4ec",
+      "bossStage": "opening"
     },
     {
       "id": 4007,
       "sourceGame": "marketSignal",
-      "q": "Continue with the same market. In inverse form, demand is P = 50 - 0.25Q and the industry marginal-cost curve is MC = -10 + 0.25Q. If one firm controls the market, what price and quantity maximize monopoly profit?",
+      "q": "Demand is Qd = 200 − 4P and supply is Qs = 40 + 4P. A binding price ceiling fixes P at $15. What are planned purchases, planned sales and the shortage?",
       "options": [
-        "P = $20 and Q = 120",
-        "P = $25 and Q = 100",
-        "P = $35 and Q = 60",
-        "P = $30 and Q = 80"
+        "140 demanded, 100 supplied, shortage 100",
+        "120 demanded, 120 supplied, shortage 0",
+        "100 demanded, 140 supplied, surplus 40",
+        "140 demanded, 100 supplied, shortage 40"
       ],
-      "tag": "final_boss_monopoly_from_market_curves",
+      "tag": "shortage_surplus",
       "type": "calculation",
       "objective": "LO8.3",
       "difficulty": "finalBoss",
-      "conceptCluster": "final_boss_equilibrium_to_monopoly",
-      "primarySkill": "monopoly_price_output",
-      "secondarySkills": [
-        "monopoly_marginal_revenue",
-        "equilibrium_calculation"
-      ],
-      "repairSkill": "monopoly_marginal_revenue",
-      "commonError": "Setting price equal to marginal cost instead of marginal revenue equal to marginal cost",
-      "feedback": "Marginal revenue is 50 - 0.5Q. Setting MR = MC gives Q = 80, and demand then gives P = 30.",
-      "aHash": "60515a72abeaebf6aad3241e084ca3983b652c88c171768b534246f42b14a40f"
+      "conceptCluster": "finalBoss_marketSignal_shortage_surplus",
+      "primarySkill": "shortage_surplus",
+      "secondarySkills": [],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Using equilibrium quantity at a controlled price",
+      "feedback": "Substitution at the controlled price gives demand 140 and supply 100. The 40-unit shortage is excess demand; it is not actual sales.",
+      "aHash": "d6ada1b5fa80f89a5733e12cbf71c8fd6d04d26acda30bf9d73e4f60760fc407",
+      "bossStage": "middle"
     },
     {
       "id": 4008,
       "sourceGame": "marketSignal",
-      "q": "Using the competitive and monopoly outcomes from the previous two questions, what deadweight loss results from monopoly?",
+      "q": "Demand is Qd = 200 − 4P and supply is Qs = 40 + 4P. At a binding $15 ceiling, buyers want 140 units and sellers offer 100. With no imports, inventories or forced sales, which statement is justified?",
       "options": [
-        "$400",
-        "$800",
-        "$1,200",
-        "$1,600"
+        "At most 100 units trade, and nonprice allocation determines which buyers receive them",
+        "All 140 desired units trade because demand sets the number of transactions",
+        "Exactly 120 units trade because that is the uncontrolled equilibrium quantity",
+        "The ceiling guarantees that the 100 buyers with the highest willingness to pay receive the units"
       ],
-      "tag": "final_boss_monopoly_dwl_from_equilibria",
-      "type": "calculation",
+      "tag": "shortage_surplus",
+      "type": "analysis",
       "objective": "LO8.3",
       "difficulty": "finalBoss",
-      "conceptCluster": "final_boss_equilibrium_to_monopoly",
-      "primarySkill": "monopoly_welfare_regulation",
-      "secondarySkills": [
-        "equilibrium_calculation",
-        "gains_from_trade"
-      ],
-      "repairSkill": "monopoly_welfare_regulation",
-      "commonError": "Treating the entire loss of consumer surplus as deadweight loss",
-      "feedback": "The lost trades run from Q = 80 to Q = 120. The wedge falls from $20 to $0, so deadweight loss is one-half times 40 times $20, or $400.",
-      "aHash": "78177f1b0aa4b2723c7b50b191004ac9e5bbbd6ae4fc6f30fd0f80d1513698e6"
+      "conceptCluster": "finalBoss_marketSignal_shortage_surplus",
+      "primarySkill": "shortage_surplus",
+      "secondarySkills": [],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Equating quantity demanded with completed sales under a ceiling",
+      "feedback": "Actual transactions cannot exceed offered supply. A shortage requires rationing, and a low posted price alone does not guarantee allocation to the highest-value buyers.",
+      "aHash": "6f8c94b8841fba81b67cceadd260d5892d826440bb34d155ee83ccbb3a3248ab",
+      "bossStage": "final"
     },
     {
       "id": 4009,
@@ -12083,25 +10468,26 @@ const questionBanks = {
         "graph_equilibrium_reading",
         "industry_level_changes"
       ],
-      "repairSkill": "supply_shift_analysis",
+      "repairSkill": "demand_supply_shifts",
       "commonError": "Following the wrong demand curve or treating a cost reduction as a demand shift",
       "feedback": "S1 and D1 intersect at price $48 and quantity 72.",
       "image": "market_curves_independent.svg",
       "graphRequired": true,
-      "aHash": "8e4963cb7b3943a74ecb5b4fc5428d25c5d197beec9009b35a539b6bfd6e64bf"
+      "aHash": "8e4963cb7b3943a74ecb5b4fc5428d25c5d197beec9009b35a539b6bfd6e64bf",
+      "bossStage": "opening"
     },
     {
       "id": 4010,
       "sourceGame": "marketSignal",
-      "q": "The market is initially at S1 and D1 in the supplied graph. With supply remaining S1, demand rises to D2. What final equilibrium does the graph show?",
+      "q": "In the supplied graph, supply stays at S1 while demand shifts from D1 to D2. How does total sales revenue change between those equilibria?",
       "options": [
-        "Price $48 and quantity 72",
-        "Price $72 and quantity 72",
-        "Price $60 and quantity 96",
-        "Price $60 and quantity 48"
+        "It rises by $864",
+        "It rises by $1,440",
+        "It rises by $2,304",
+        "It rises by $576"
       ],
       "tag": "final_boss_graph_demand_after_supply",
-      "type": "graph",
+      "type": "graph_calculation",
       "objective": "LO8.4",
       "difficulty": "finalBoss",
       "conceptCluster": "finalBoss_marketSignal_simultaneous_shift_analysis",
@@ -12110,25 +10496,26 @@ const questionBanks = {
         "graph_equilibrium_reading",
         "demand_shift_analysis"
       ],
-      "repairSkill": "simultaneous_shift_analysis",
+      "repairSkill": "simultaneous_market_changes",
       "commonError": "Stopping after the supply shift and failing to move to the new demand curve",
-      "feedback": "S1 and D2 intersect at price $60 and quantity 96.",
+      "feedback": "Initially P = $48 and Q = 72, so revenue is $3,456. Finally P = $60 and Q = 96, so revenue is $5,760. The increase is $2,304.",
       "image": "market_curves_independent.svg",
       "graphRequired": true,
-      "aHash": "3ecf24e044e0d1587c5d6fb8d900a0a2bd2d68ed967e0dddc08d5ab512344fd8"
+      "aHash": "d6f325617afda5e8ec4bfbdfdedae82d5f0a4e313d895b614b701226a0659dfb",
+      "bossStage": "middle"
     },
     {
       "id": 4011,
       "sourceGame": "marketSignal",
-      "q": "The market moved from S2-D1 to S1-D2, leaving price unchanged at $60 while quantity doubled. Which interpretation best connects the market shifts to industry structure?",
+      "q": "In the supplied numerical graph, which transition leaves equilibrium price unchanged while doubling quantity, and what explains it?",
       "options": [
-        "Unchanged price proves that neither buyer preferences nor seller costs changed anywhere in the market",
-        "The demand increase alone eliminated every incentive for entry",
-        "The supply increase must have been caused by a monopolist reducing output",
-        "Demand pushed price upward while lower costs or entry pushed it back down as quantity expanded"
+        "S1/D2 to S2/D1: both curves move right",
+        "S1/D1 to S2/D2: both curves move right",
+        "S2/D2 to S1/D1: both curves move right",
+        "S2/D1 to S1/D2: both curves move right"
       ],
       "tag": "final_boss_graph_market_structure_synthesis",
-      "type": "synthesis",
+      "type": "graph_analysis",
       "objective": "LO8.4",
       "difficulty": "finalBoss",
       "conceptCluster": "finalBoss_marketSignal_industry_level_changes",
@@ -12137,12 +10524,13 @@ const questionBanks = {
         "entry_response",
         "competitive_returns"
       ],
-      "repairSkill": "industry_level_changes",
+      "repairSkill": "demand_supply_shifts",
       "commonError": "Looking only at the unchanged price and ignoring the large increase in quantity",
-      "feedback": "Demand pushed price upward, while expanded supply pushed price downward. Their price effects offset, but both shifts increased quantity.",
+      "feedback": "S2/D1 is P60/Q48 and S1/D2 is P60/Q96. Both rightward shifts increase quantity; their opposing price effects cancel in this figure.",
       "image": "market_curves_independent.svg",
       "graphRequired": true,
-      "aHash": "ad676a00cb319fa66496d84238abd0656b0c6429d17adccf754c8dd20ac7e2be"
+      "aHash": "77611b1a7ff3aec50c6d8f5b9daa40fbc9d7835fb0d6116f7eaabe51dbc4646a",
+      "bossStage": "final"
     },
     {
       "id": 4012,
@@ -12150,9 +10538,9 @@ const questionBanks = {
       "q": "In the long-run competition graph, demand has shifted from D0 to D1 while market supply is still S0. At point B, what is happening to a representative firm?",
       "options": [
         "It produces Q2 at price P2 and earns positive economic profit",
-        "It produces Q1 at price P1 and earns zero economic profit",
-        "It produces below Q1 and exits immediately",
-        "It charges P2 but produces where price is below marginal cost"
+        "It produces Q1 at price P2 and earns positive economic profit",
+        "It produces Q2 at price P1 and earns zero economic profit",
+        "It produces Q2 at price P2 and earns zero economic profit"
       ],
       "tag": "final_boss_short_run_return_point_b",
       "type": "graph",
@@ -12164,25 +10552,26 @@ const questionBanks = {
         "firm_market_linkage",
         "economic_profit_interpretation"
       ],
-      "repairSkill": "competitive_return_interpretation",
+      "repairSkill": "competitive_returns",
       "commonError": "Reading the long-run outcome before entry has occurred",
       "feedback": "At P2, the firm produces Q2 where P = MC, and price lies above ATC, creating positive economic profit.",
       "image": "long_run_competition.png",
       "graphRequired": true,
-      "aHash": "8b54c1f96635738d4fa8a1f3772c9b709ee164380fd9fa0c1af956c370636dd1"
+      "aHash": "8b54c1f96635738d4fa8a1f3772c9b709ee164380fd9fa0c1af956c370636dd1",
+      "bossStage": "opening"
     },
     {
       "id": 4013,
       "sourceGame": "marketSignal",
-      "q": "What long-run adjustment follows the positive return at point B in the graph?",
+      "q": "In the supplied long-run competition graph, the market is at B on D1. Firms can enter freely and their costs are unchanged. At which labeled equilibrium does the entry adjustment end?",
       "options": [
-        "Existing firms reduce supply to preserve P2",
-        "Entry shifts market supply from S0 to S1, moving equilibrium to D at P1",
-        "Demand shifts back to D0 because any economic profit automatically causes consumers to stop purchasing the product",
-        "Firms exit until the market returns to point A"
+        "A, at P1 and QA",
+        "D, at P1 and QD",
+        "C, at P0 and QC",
+        "B, at P2 and QB"
       ],
       "tag": "final_boss_entry_to_long_run_point_d",
-      "type": "graph",
+      "type": "graph_analysis",
       "objective": "LO9.1",
       "difficulty": "finalBoss",
       "conceptCluster": "final_boss_competitive_returns",
@@ -12191,25 +10580,26 @@ const questionBanks = {
         "entry_response",
         "profit_as_market_signal"
       ],
-      "repairSkill": "long_run_adjustment",
+      "repairSkill": "competitive_returns",
       "commonError": "Reversing entry and exit or moving the demand curve instead of supply",
-      "feedback": "Positive economic profit attracts entry. Market supply expands to S1, returning price to P1 at point D.",
+      "feedback": "At B, P2 exceeds the representative firm’s ATC. Entry shifts market supply right until the market reaches D at P1/QD, where economic profit is zero.",
       "image": "long_run_competition.png",
       "graphRequired": true,
-      "aHash": "7ca9113ce055d5d2605ccf9a724dc3859e2abf50425ff77f257700e68c385db8"
+      "aHash": "62ac387f4459b7ce0ebc079df908d6c21a1dd7502911469194ccd59f666b7064",
+      "bossStage": "middle"
     },
     {
       "id": 4014,
       "sourceGame": "marketSignal",
       "q": "Suppose a legal barrier prevents entry after the demand increase. How does that alter the return adjustment shown from B to D?",
       "options": [
-        "The barrier forces demand back to D0",
-        "The barrier guarantees price falls below P1",
+        "The barrier reduces demand until firms earn normal returns without any supply response",
+        "The barrier eliminates current profit because legal protection raises output automatically",
         "The elevated return can persist because the supply expansion that would erode it is blocked",
-        "The barrier causes every incumbent to produce immediately at minimum average total cost regardless of the market price or demand increase"
+        "The barrier makes each incumbent choose minimum ATC regardless of the market price"
       ],
       "tag": "final_boss_barrier_prevents_return_erosion",
-      "type": "synthesis",
+      "type": "analysis",
       "objective": "LO9.1",
       "difficulty": "finalBoss",
       "conceptCluster": "final_boss_competitive_returns",
@@ -12222,17 +10612,18 @@ const questionBanks = {
       "commonError": "Assuming all abnormal returns disappear even when entry is blocked",
       "feedback": "The B-to-D adjustment depends on entry. A durable barrier can prevent the supply shift and allow above-normal returns to persist.",
       "image": "long_run_competition.png",
-      "graphRequired": true,
-      "aHash": "3aaf718ebffd56e3fb0bc549520c01fb5fc8d20b0ea9f96c087e4015e9206e7f"
+      "graphRequired": false,
+      "aHash": "3aaf718ebffd56e3fb0bc549520c01fb5fc8d20b0ea9f96c087e4015e9206e7f",
+      "bossStage": "final"
     },
     {
       "id": 4015,
       "sourceGame": "marketSignal",
       "q": "In the long-run competition graph, what shock moves the market from point A to point B before firms have time to enter?",
       "options": [
-        "A decrease in market supply from S1 back to S0 before firms have time to adjust production",
+        "A decrease in supply from S1 to S0",
         "A decrease in demand from D1 to D0",
-        "Entry by new firms",
+        "An increase in supply from S0 to S1",
         "An increase in demand from D0 to D1"
       ],
       "tag": "final_boss_mean_reversion_initial_shock",
@@ -12245,12 +10636,13 @@ const questionBanks = {
         "demand_shift_analysis",
         "short_run_market_adjustment"
       ],
-      "repairSkill": "mean_reversion",
+      "repairSkill": "mean_reversion_entry_exit",
       "commonError": "Treating the later supply response as the initial shock",
       "feedback": "With supply initially at S0, the rightward demand shift moves the market from A to B and creates short-run profit.",
       "image": "long_run_competition.png",
       "graphRequired": true,
-      "aHash": "b3394f021fc6308bba41a65a3b485e6227a362af7aac82caf54671917b433647"
+      "aHash": "b3394f021fc6308bba41a65a3b485e6227a362af7aac82caf54671917b433647",
+      "bossStage": "opening"
     },
     {
       "id": 4016,
@@ -12258,9 +10650,9 @@ const questionBanks = {
       "q": "Why do profits tend to revert after the market reaches point B?",
       "options": [
         "Profit attracts entry, which expands supply and drives price and returns toward normal",
-        "Profit causes buyers to reduce demand until the market price falls and the entire competitive industry eventually disappears",
-        "Firms voluntarily raise costs until accounting profit equals zero",
-        "The government must impose a price ceiling whenever returns rise"
+        "Profit causes demand to return to its earlier position without any new information",
+        "Profit leads incumbents to restrict supply until returns become normal",
+        "Profit makes accounting cost rise automatically until economic profit disappears"
       ],
       "tag": "final_boss_mean_reversion_entry_mechanism",
       "type": "analysis",
@@ -12272,25 +10664,26 @@ const questionBanks = {
         "entry_response",
         "long_run_competitive_equilibrium"
       ],
-      "repairSkill": "profit_mean_reversion",
+      "repairSkill": "mean_reversion_entry_exit",
       "commonError": "Treating mean reversion as an automatic demand reversal rather than a supply response",
       "feedback": "Above-normal returns attract resources and firms. The resulting supply expansion reduces price and erodes the return.",
       "image": "long_run_competition.png",
-      "graphRequired": true,
-      "aHash": "0d0569860a7502a9b72b351d61d454fc4617f2992d2f7f26e0bb854627373699"
+      "graphRequired": false,
+      "aHash": "0d0569860a7502a9b72b351d61d454fc4617f2992d2f7f26e0bb854627373699",
+      "bossStage": "middle"
     },
     {
       "id": 4017,
       "sourceGame": "marketSignal",
-      "q": "At point C, price is P0 and firms are suffering losses. Which process moves the industry back toward point A if demand remains D0?",
+      "q": "In the supplied long-run competition graph, the market begins at C on D0. Firms can exit freely and survivors’ costs are unchanged. At which labeled price/quantity pair does exit restore normal returns?",
       "options": [
-        "Entry shifts supply farther right",
-        "Exit shifts supply left from S1 toward S0",
-        "Demand rises from D0 to D1 because losses increase buyer income",
-        "Monopoly pricing forces each firm to expand output"
+        "P1 and QD",
+        "P1 and QA",
+        "P2 and QB",
+        "P0 and QC"
       ],
       "tag": "final_boss_mean_reversion_exit_mechanism",
-      "type": "graph",
+      "type": "graph_analysis",
       "objective": "LO9.2",
       "difficulty": "finalBoss",
       "conceptCluster": "final_boss_mean_reversion",
@@ -12299,22 +10692,23 @@ const questionBanks = {
         "mean_reversion_entry_exit",
         "long_run_adjustment"
       ],
-      "repairSkill": "loss_exit_adjustment",
+      "repairSkill": "mean_reversion_entry_exit",
       "commonError": "Using entry when firms are earning losses",
-      "feedback": "Losses induce exit. Industry supply contracts, raising price and moving surviving firms back toward a normal return at A.",
+      "feedback": "At C, P0 lies below minimum ATC. Exit shifts supply left from S1 toward S0 until D0 intersects at A, with P1 and QA. The graph does not display AVC, so this is a long-run exit result.",
       "image": "long_run_competition.png",
       "graphRequired": true,
-      "aHash": "62216b62173c707b96aec799a82e0901f7654f6dc678248d5f8aed1b2cc9801c"
+      "aHash": "04113ad4b7082a8722c84eccda99bb6b0db04dc8bbcd43ec5a1ec3adb5a1dfa2",
+      "bossStage": "final"
     },
     {
       "id": 4018,
       "sourceGame": "marketSignal",
       "q": "Two jobs require the same skill, but one exposes workers to a serious injury risk. In a competitive labor market, why must the dangerous job usually pay more?",
       "options": [
-        "The higher wage is monopoly profit paid to workers",
-        "The wage difference proves labor demand is perfectly inelastic",
+        "The premium is paid to investors for holding risky claims on the employer",
+        "The premium measures the workers’ extra productivity regardless of job conditions",
         "The premium compensates workers for accepting an undesirable job characteristic",
-        "The premium exists only because the dangerous employer has lower productivity and therefore must pay workers more per unit produced"
+        "The premium is compensation for the employer’s fixed capital expenditure"
       ],
       "tag": "final_boss_compensating_wage_differential",
       "type": "conceptual",
@@ -12326,45 +10720,47 @@ const questionBanks = {
         "labor_supply",
         "buyer_seller_behavior"
       ],
-      "repairSkill": "compensating_wage_differential",
+      "repairSkill": "compensating_differentials",
       "commonError": "Confusing compensation for job risk with monopoly profit or productivity pay",
       "feedback": "Workers require a wage premium to supply labor to a job with worse nonwage characteristics.",
-      "aHash": "b461df115992afd8e03c98e52c0b92678c1711060abfa5411edf88d26139f23a"
+      "aHash": "b461df115992afd8e03c98e52c0b92678c1711060abfa5411edf88d26139f23a",
+      "bossStage": "opening"
     },
     {
       "id": 4019,
       "sourceGame": "marketSignal",
-      "q": "The required safety-risk wage premium raises marginal cost for every firm in a competitive chemical industry. What happens in the product market, other things equal?",
+      "q": "In a competitive chemical industry, workers require extra pay for hazardous conditions, raising firms’ marginal costs. With product demand unchanged, which interpretation links the payment to the product market?",
       "options": [
-        "Demand shifts right, raising both price and quantity",
-        "Demand shifts left, lowering price and quantity",
-        "Supply shifts right, lowering price and raising quantity",
-        "Supply shifts left, raising price and reducing quantity"
+        "An investor risk premium is paid to workers, leaving production costs unchanged",
+        "An investor risk premium raises workers’ productivity, shifting supply right",
+        "A compensating wage differential shifts product demand right",
+        "A compensating wage differential raises costs, shifting supply left"
       ],
       "tag": "final_boss_wage_premium_product_supply",
       "type": "application",
       "objective": "LO9.3",
       "difficulty": "finalBoss",
-      "conceptCluster": "final_boss_compensating_differentials",
-      "primarySkill": "supply_shift_analysis",
+      "conceptCluster": "finalBoss_marketSignal_compensating_wage_differential",
+      "primarySkill": "compensating_wage_differential",
       "secondarySkills": [
         "compensating_wage_differential",
         "firm_market_linkage"
       ],
-      "repairSkill": "supply_shift_analysis",
-      "commonError": "Shifting demand when the change directly raises sellers’ production costs",
-      "feedback": "A higher required wage raises production cost, shifting product supply left. Equilibrium price rises and quantity falls.",
-      "aHash": "d370fb77a2296a02184d86e7457c626ba1643b1c406fea79b3d6c0bfdbbe5025"
+      "repairSkill": "compensating_differentials",
+      "commonError": "Confusing worker compensation with investor risk compensation",
+      "feedback": "The extra pay compensates workers for a job disamenity. Because it increases production cost, product supply shifts left; it is distinct from a premium paid to investors.",
+      "aHash": "871e4388d84192276cca4ccd6f45b7767ef139c64c20dc5022a9c5ace146988d",
+      "bossStage": "middle"
     },
     {
       "id": 4020,
       "sourceGame": "marketSignal",
       "q": "Which statement correctly distinguishes a compensating wage differential from a compensating risk differential?",
       "options": [
-        "A wage differential pays workers for job attributes; a risk differential pays investors for uncertainty",
-        "Both terms describe the extra monopoly price charged to consumers whenever legal barriers prevent rivals from entering the product market",
-        "A wage differential shifts product demand, while a risk differential shifts labor demand",
-        "Only the risk differential can affect a firm’s cost and market supply"
+        "A wage differential compensates workers for job attributes; a risk differential compensates investors for priced risk",
+        "A wage differential compensates investors for default; a risk differential compensates workers for hazards",
+        "Both differentials measure the difference between product price and marginal cost",
+        "Both differentials measure accounting profit without deducting opportunity costs"
       ],
       "tag": "final_boss_wage_vs_risk_differential",
       "type": "synthesis",
@@ -12376,10 +10772,11 @@ const questionBanks = {
         "risk_premium_interpretation",
         "competitive_returns"
       ],
-      "repairSkill": "compensating_differential_comparison",
+      "repairSkill": "compensating_differentials",
       "commonError": "Treating worker compensation and investor compensation as the same market payment",
-      "feedback": "The wage premium clears a labor market with undesirable job conditions. The risk premium clears a capital market by rewarding investors for uncertainty.",
-      "aHash": "981f0276bc3106828b576e431d6ca0ed9b1226d1f5b830a690cf7901376fb006"
+      "feedback": "Wage premiums compensate job disamenities in labor markets. Expected return premiums compensate priced risk in capital markets. Not every source of uncertainty necessarily commands a premium.",
+      "aHash": "eeecc4a30253f03dc98ea0670953540123d03c97c030d9b0ed6c264b5306e7ac",
+      "bossStage": "final"
     },
     {
       "id": 4021,
@@ -12400,20 +10797,21 @@ const questionBanks = {
       "secondarySkills": [
         "competitive_returns"
       ],
-      "repairSkill": "risk_premium_calculation",
+      "repairSkill": "risk_premium_portfolio",
       "commonError": "Adding the two returns instead of subtracting the safe return from the risky return",
       "feedback": "The expected risk premium is 7% minus 5%, or 2 percentage points.",
-      "aHash": "cf5cf75066cff204467de08909d69764fc33ffd1dfcc0401b1c69abcebcaf7cb"
+      "aHash": "cf5cf75066cff204467de08909d69764fc33ffd1dfcc0401b1c69abcebcaf7cb",
+      "bossStage": "opening"
     },
     {
       "id": 4022,
       "sourceGame": "marketSignal",
-      "q": "Investors bid up the risky bond’s price until its expected yield falls to 5.5%, while its risk and the safe yield remain unchanged. What adjustment is most likely?",
+      "q": "A risky bond’s expected annual return falls to 5.5%, while a comparable safe bond returns 5%. Investors still require a 2-percentage-point premium for the risky bond. Holding expected cash flows fixed, what adjustment is most likely?",
       "options": [
-        "Investors buy even more risky bonds because the lower expected yield proves that the underlying uncertainty and default risk have disappeared",
-        "The safe bond price must fall to zero",
+        "Investors are indifferent because both bonds promise positive nominal payments",
+        "Investors buy more of the risky bond because its expected return is still above zero",
         "Investors shift toward the safe bond, pushing the risky bond price down and its yield back up",
-        "Firms issue unlimited risky debt because the remaining premium is positive"
+        "Investors sell the safe bond because a 0.5-point premium meets the 2-point requirement"
       ],
       "tag": "final_boss_small_risk_premium_reallocation",
       "type": "analysis",
@@ -12425,20 +10823,21 @@ const questionBanks = {
         "risk_premium_interpretation",
         "asset_demand"
       ],
-      "repairSkill": "portfolio_reallocation",
+      "repairSkill": "risk_premium_portfolio",
       "commonError": "Assuming investors keep accepting the same risk after its compensation shrinks",
       "feedback": "With only a 0.5-point premium, some investors leave the risky asset. Selling lowers its price and raises its expected yield.",
-      "aHash": "004855ebbd50b3c36fdc8b34b5a9730167692cc95055868c495321662db702f2"
+      "aHash": "004855ebbd50b3c36fdc8b34b5a9730167692cc95055868c495321662db702f2",
+      "bossStage": "middle"
     },
     {
       "id": 4023,
       "sourceGame": "marketSignal",
-      "q": "The portfolio shift raises financing costs for firms in a risky competitive industry. Over time, what product-market effect is most plausible?",
+      "q": "A risky industry offers an expected return of 8% while comparable safe assets return 5%. Investors now require a 4-point premium. Holding product demand and technology fixed, which sequence is most plausible?",
       "options": [
-        "Industry demand shifts right because investors prefer safe assets",
-        "Product supply shifts right because higher financing cost encourages entry",
-        "The market price must remain fixed because financing occurs outside the product market",
-        "Entry slows or firms exit, shifting industry supply left and raising product price"
+        "Investors add capital because the 3-point spread exceeds the 4-point requirement; product supply contracts",
+        "Investors add capital because 8% is positive; product supply expands",
+        "Investors withdraw capital; this directly shifts consumers’ product demand right",
+        "Investors withdraw capital; higher financing costs discourage entry and contract long-run product supply"
       ],
       "tag": "final_boss_risk_premium_industry_supply",
       "type": "synthesis",
@@ -12452,8 +10851,9 @@ const questionBanks = {
       ],
       "repairSkill": "risk_premium_portfolio",
       "commonError": "Treating capital-market changes as unrelated to firm entry, cost, and product supply",
-      "feedback": "A higher required return raises the hurdle for entering or remaining in the industry. Long-run supply contracts, increasing price and reducing quantity.",
-      "aHash": "51b8ad0797eef7584b830b15570488bae17888431fe757f2199361d13945acf4"
+      "feedback": "The offered premium is 3 points, below the required 4. Reallocation raises the industry’s financing hurdle, slowing entry or inducing exit. Long-run product supply contracts.",
+      "aHash": "d399eb5010cc6bffb7cb9e8d864bd741aeb19c977fdabf322199e0bef90f1f93",
+      "bossStage": "final"
     },
     {
       "id": 4024,
@@ -12461,8 +10861,8 @@ const questionBanks = {
       "q": "The symbolic graph begins at S0 and D0. Imitators enter with close substitutes, increasing market supply to S1 while demand remains D0. Where does equilibrium move?",
       "options": [
         "From P1-QA to P0-QC",
-        "From P1-QA to P2-QB",
-        "From P1-QA to P1-QD",
+        "From P1-QA to P0-QB",
+        "From P1-QA to P0-QD",
         "From P1-QA to P0-QA"
       ],
       "tag": "final_boss_imitation_supply_graph",
@@ -12480,17 +10880,18 @@ const questionBanks = {
       "feedback": "The S1-D0 intersection is P0-QC. Entry expands supply, lowering price and increasing market quantity.",
       "image": "demand_supply.png",
       "graphRequired": true,
-      "aHash": "dbaa8b7a6461f1b88924422f1042c5303c8398595daa45e22646b5ce1dbd24f8"
+      "aHash": "dbaa8b7a6461f1b88924422f1042c5303c8398595daa45e22646b5ce1dbd24f8",
+      "bossStage": "opening"
     },
     {
       "id": 4025,
       "sourceGame": "marketSignal",
       "q": "How does imitation typically affect the original firm even if total market demand does not change?",
       "options": [
-        "It makes the incumbent’s demand less elastic and raises its markup",
+        "It makes buyers less responsive to the incumbent’s price and raises its markup",
         "It gives buyers closer substitutes, reducing the incumbent’s sales, markup, and economic profit",
-        "It removes every fixed cost previously incurred by the incumbent",
-        "It converts the industry into a natural monopoly because increasing the number of firms necessarily creates large economies of scale for the incumbent"
+        "It increases each incumbent’s sales whenever total market demand stays constant",
+        "It leaves residual demand unchanged because only the number of sellers changes"
       ],
       "tag": "final_boss_imitation_incumbent_demand",
       "type": "analysis",
@@ -12502,15 +10903,16 @@ const questionBanks = {
         "demand_elasticity",
         "profit_erosion_entry_imitation"
       ],
-      "repairSkill": "entry_and_imitation",
+      "repairSkill": "profit_erosion_entry_imitation",
       "commonError": "Looking only at total market demand and ignoring substitution toward rivals",
       "feedback": "Imitation creates alternatives. The incumbent faces a more elastic residual demand curve and loses some pricing power and profit.",
-      "aHash": "5af5e6144ecf419172adc22f443c4e148d33f7c43e2ae9c86ff735b805248932"
+      "aHash": "5af5e6144ecf419172adc22f443c4e148d33f7c43e2ae9c86ff735b805248932",
+      "bossStage": "middle"
     },
     {
       "id": 4026,
       "sourceGame": "marketSignal",
-      "q": "Which condition would most effectively slow the graph’s entry-and-imitation adjustment and preserve monopoly profit?",
+      "q": "A profitable incumbent faces potential entry and imitation by close substitutes. Which condition would most effectively delay that adjustment and preserve its monopoly profit?",
       "options": [
         "A temporary increase in buyer income",
         "A standardized product with freely available production methods",
@@ -12527,10 +10929,12 @@ const questionBanks = {
         "profit_erosion_entry_imitation",
         "monopoly_market_effects"
       ],
-      "repairSkill": "barriers_to_entry",
+      "repairSkill": "profit_erosion_entry_imitation",
       "commonError": "Choosing a condition that encourages rather than blocks entry and imitation",
       "feedback": "A strong patent delays imitation and limits entry, allowing market power and above-normal profit to persist longer.",
-      "aHash": "59e856661a52d1e918a456f419c980311b224a1605153fb8a7ac38717b9d2992"
+      "aHash": "59e856661a52d1e918a456f419c980311b224a1605153fb8a7ac38717b9d2992",
+      "bossStage": "final",
+      "graphRequired": false
     },
     {
       "id": 4027,
@@ -12552,10 +10956,11 @@ const questionBanks = {
         "gains_from_trade",
         "monopoly_comparison"
       ],
-      "repairSkill": "equilibrium_calculation",
+      "repairSkill": "monopoly_output_profit",
       "commonError": "Using the monopoly marginal-revenue condition for the competitive benchmark",
       "feedback": "Competition drives price to marginal cost. Setting 100 - Q = 20 gives Q = 80 and P = 20.",
-      "aHash": "40464f30939bdf1e307e86045e91a50e070c5f943ede3dba6dc0fe240823ec8d"
+      "aHash": "40464f30939bdf1e307e86045e91a50e070c5f943ede3dba6dc0fe240823ec8d",
+      "bossStage": "opening"
     },
     {
       "id": 4028,
@@ -12577,20 +10982,21 @@ const questionBanks = {
         "monopoly_marginal_revenue",
         "profit_calculation"
       ],
-      "repairSkill": "monopoly_price_output",
+      "repairSkill": "monopoly_output_profit",
       "commonError": "Setting demand equal to marginal cost instead of marginal revenue equal to marginal cost",
       "feedback": "Marginal revenue is 100 - 2Q. Setting MR = 20 gives Q = 40, and demand gives P = 60.",
-      "aHash": "e35da6d7f7e463cf11adc0fb635333c0d4680cdc646f0ae690e1a798b55a1978"
+      "aHash": "e35da6d7f7e463cf11adc0fb635333c0d4680cdc646f0ae690e1a798b55a1978",
+      "bossStage": "middle"
     },
     {
       "id": 4029,
       "sourceGame": "marketSignal",
       "q": "A market has demand P = 100 - Q and constant marginal cost of $20, with no fixed cost. Competition yields Q = 80 and P = $20; single-price monopoly yields Q = 40 and P = $60. Which comparison is correct?",
       "options": [
-        "Monopoly transfers all lost consumer surplus to the firm, so deadweight loss is zero",
+        "Monopoly transfers all $2,400 of lost consumer surplus to the firm",
         "Monopoly reduces quantity by 40 units and creates deadweight loss of $800",
-        "Monopoly raises total surplus by $800 because producer surplus increases",
-        "Monopoly leaves consumer surplus unchanged because demand has not shifted"
+        "Monopoly creates $1,600 of deadweight loss, equal to its profit",
+        "Monopoly creates $2,400 of deadweight loss, equal to the consumer surplus loss"
       ],
       "tag": "final_boss_monopoly_welfare_loss",
       "type": "synthesis",
@@ -12605,7 +11011,8 @@ const questionBanks = {
       "repairSkill": "monopoly_welfare_regulation",
       "commonError": "Treating the producer’s gain as equal to the entire consumer loss and ignoring forgone trades",
       "feedback": "Competition produces 80 units; monopoly produces 40. The deadweight-loss triangle is one-half times 40 times $40, or $800.",
-      "aHash": "b911fa423376516a4b6a7ff6cf40fe113e04c83d3062289896596b504b14ee97"
+      "aHash": "b911fa423376516a4b6a7ff6cf40fe113e04c83d3062289896596b504b14ee97",
+      "bossStage": "final"
     }
   ],
   "legendaryBoss": [
@@ -14216,10 +12623,10 @@ const questionBanks = {
       "sourceGame": "marketSignal",
       "q": "Refer to the long-run competition graph. The market begins at point A. Demand shifts from D0 to D1. Which chain best describes the short-run and long-run adjustment?",
       "options": [
-        "The market moves to C; firms earn profit; exit shifts supply to S0",
-        "The market moves directly to D with no temporary profit signal",
-        "The market moves to B; losses cause exit; price rises further",
-        "The market moves to B; firms earn profit; entry shifts supply to S1; the market settles at D with price back at P1"
+        "A to D to B: temporary profit induces entry to S1",
+        "A to C to D: temporary profit induces entry to S1",
+        "A to B to C: temporary profit induces entry to S1",
+        "A to B to D: temporary profit induces entry to S1"
       ],
       "tag": "boss_graph_profit_entry_chain",
       "type": "graph_analysis",
@@ -14236,17 +12643,17 @@ const questionBanks = {
       "feedback": "Higher demand first raises price to P2 at B. Existing firms earn profit, entry expands supply to S1, and price returns to P1 at D.",
       "image": "long_run_competition.png",
       "graphRequired": true,
-      "aHash": "f1642437c67a290ead836319a69efeeca49c0cca435327b74f04966e047542e6"
+      "aHash": "e89cc3a43607be5a63db9d9f6c59ea8a9e84ebc68593477907ec082f94aa0b79"
     },
     {
       "id": 9168,
       "sourceGame": "marketSignal",
       "q": "Refer to the long-run competition graph. If the market is at point C, what adjustment should occur if firms can enter and exit freely?",
       "options": [
-        "Firms incur losses, exit shifts supply left from S1 toward S0, and the market moves toward A",
-        "Firms earn profit, entry shifts supply farther right, and price falls below P0",
-        "Firms shut down permanently with no market-supply change",
-        "Demand automatically shifts from D0 to D1"
+        "Losses induce exit from S1 toward S0 and movement from C toward A",
+        "Profits induce entry from S0 toward S1 and movement from C toward D",
+        "Losses induce exit from S0 toward S1 and movement from C toward D",
+        "Profits induce entry from S1 toward S0 and movement from C toward A"
       ],
       "tag": "boss_graph_loss_exit_chain",
       "type": "graph_analysis",
@@ -14263,17 +12670,17 @@ const questionBanks = {
       "feedback": "At C, price P0 is below the zero-profit price P1. Losses induce exit, reducing market supply and restoring price toward P1.",
       "image": "long_run_competition.png",
       "graphRequired": true,
-      "aHash": "a4f0e3f03465ef6ddb1b03c34190ca5b7b2a89b77f8792dfcf4373601d1df86f"
+      "aHash": "bb26fe72a6456c3a41f93be9cde4ee0f562f6da1e7d544698e9b5b4ca36bbf2a"
     },
     {
       "id": 9169,
       "sourceGame": "marketSignal",
       "q": "Refer to the long-run competition graph. When market demand moves the industry from A to B, what happens to the representative firm in the left panel?",
       "options": [
-        "Its price falls to P0, output falls, and it exits immediately",
-        "Its price rises from P1 to P2, output rises from Q1 to Q2, and it earns positive economic profit",
-        "Its price stays at P1 because competitive firms set market price",
-        "Its output rises but profit remains zero because MR always equals MC"
+        "Price P1 to P2, output stays Q1, zero to positive economic profit",
+        "Price P1 to P2, output Q1 to Q2, zero to positive economic profit",
+        "Price P1 to P2, output Q1 to Q2, economic profit stays zero",
+        "Price P1 to P0, output below Q1, zero to negative economic profit"
       ],
       "tag": "boss_graph_firm_market_linkage",
       "type": "graph_analysis",
@@ -14290,17 +12697,17 @@ const questionBanks = {
       "feedback": "At B, market price is P2. The firm produces where MC=P2 at Q2, and price exceeds ATC, creating profit.",
       "image": "long_run_competition.png",
       "graphRequired": true,
-      "aHash": "6b6019e7244c3a1a2406c052381dee0fe73017bf0e694d636454d074df475789"
+      "aHash": "fd09ec4988effdfc525d136ee6cc35079b070f674fda9b41aee64ff050303bbf"
     },
     {
       "id": 9170,
       "sourceGame": "marketSignal",
       "q": "Refer to the long-run competition graph. Which pair of movements illustrates mean reversion in industry profits?",
       "options": [
-        "A to B and A to C, because demand shocks are mean reversion",
-        "D to B and A to C, because firms prefer higher prices",
-        "B to D erodes positive profit through entry, while C to A erodes losses through exit",
-        "B to C and C to D, because supply never changes"
+        "D to B and A to C",
+        "A to B and A to C",
+        "B to D and C to A",
+        "B to C and C to D"
       ],
       "tag": "boss_graph_mean_reversion_pair",
       "type": "graph_analysis",
@@ -14317,7 +12724,7 @@ const questionBanks = {
       "feedback": "Mean reversion is the competitive response: entry removes excess returns and exit removes persistent losses.",
       "image": "long_run_competition.png",
       "graphRequired": true,
-      "aHash": "3ed140073eb474e2a6364ed8739ab3ae37e800ddeee8042d6a671ab9e8782306"
+      "aHash": "b0f6cef33a6c1b2298c6d6294c90688984f43a8ca9f250ce5906b386062eaab3"
     },
     {
       "id": 9171,
@@ -14690,7 +13097,7 @@ const repairPoolGroups = {
     {
       "id": 5001,
       "sourceGame": "marketSignal",
-      "q": "What happens to present value when the discount rate rises?",
+      "q": "Holding the date and amount of a positive future receipt fixed, what happens to its present value when the discount rate rises?",
       "options": [
         "Present value rises",
         "Present value falls",
@@ -14714,12 +13121,12 @@ const repairPoolGroups = {
     {
       "id": 5002,
       "sourceGame": "marketSignal",
-      "q": "A project is expected to return 9%, and the firm’s cost of capital is 7%. What does the basic investment rule suggest?",
+      "q": "A one-year project has an expected return of 9%, and the appropriate cost of capital for its risk and horizon is 7%. What does the basic investment rule suggest?",
       "options": [
-        "Reject the project",
-        "Ignore the cost of capital",
+        "Be indifferent because both rates are positive",
+        "Reject because the expected return is less than twice the hurdle",
         "Accept the project",
-        "Accept only if the project has no fixed cost"
+        "Accept only if the expected return exceeds an arbitrary 10% target"
       ],
       "tag": "repair_cost_of_capital_npv_1",
       "type": "application",
@@ -14736,7 +13143,7 @@ const repairPoolGroups = {
     {
       "id": 5003,
       "sourceGame": "marketSignal",
-      "q": "What should a firm do when a project has a positive net present value?",
+      "q": "An independent project has positive NPV when discounted at its appropriate cost of capital. The firm has no capital constraint. What does the NPV rule recommend?",
       "options": [
         "Reject it because future cash flows are uncertain",
         "Accept it only when payback is one year",
@@ -14752,7 +13159,7 @@ const repairPoolGroups = {
       "secondarySkills": [],
       "repairSkill": "cost_of_capital_npv",
       "commonError": "Reversing the NPV decision rule",
-      "feedback": "A positive NPV means discounted benefits exceed the investment cost.",
+      "feedback": "At the appropriate capital hurdle, positive NPV means the project’s discounted benefits exceed its costs; this connects the cost of capital with the acceptance rule.",
       "aHash": "f6dc0491b42c83f3af3a83a9970515f66d43368b3e1d8d6f09963d33cd77a47b"
     }
   ],
@@ -14760,7 +13167,7 @@ const repairPoolGroups = {
     {
       "id": 5004,
       "sourceGame": "marketSignal",
-      "q": "A project costs $1,200 and returns $400 per year. What is its payback period?",
+      "q": "A project costs $1,200 and generates net cash of $400 per year. What is its payback period?",
       "options": [
         "3 years",
         "2 years",
@@ -14852,12 +13259,12 @@ const repairPoolGroups = {
     {
       "id": 5008,
       "sourceGame": "marketSignal",
-      "q": "A competitive firm has price of $7, average variable cost of $5, and average total cost of $9. What should it do in the short run?",
+      "q": "At its best positive output, a competitive firm has price $7, AVC $5 and ATC $9. All fixed costs are unavoidable this period. What should it do?",
       "options": [
         "Continue producing",
-        "Shut down immediately",
-        "Raise the market price",
-        "Exit the industry immediately"
+        "Shut down because price is below ATC",
+        "Shut down because the contribution margin is positive",
+        "Be indifferent because producing and shutting down have the same cost"
       ],
       "tag": "repair_shutdown_decisions_1",
       "type": "application",
@@ -14874,12 +13281,12 @@ const repairPoolGroups = {
     {
       "id": 5009,
       "sourceGame": "marketSignal",
-      "q": "A competitive firm has price of $4 and average variable cost of $5. What should it do in the short run?",
+      "q": "A competitive firm faces price $4 and minimum AVC $5. All fixed costs are unavoidable this period. What should it do?",
       "options": [
-        "Continue producing forever",
+        "Produce because fixed costs have already been paid",
         "Shut down",
-        "Raise price to $5",
-        "Produce more to lower market price"
+        "Produce because a positive price guarantees positive contribution",
+        "Be indifferent because fixed costs are unavoidable"
       ],
       "tag": "repair_shutdown_decisions_2",
       "type": "application",
@@ -14900,10 +13307,10 @@ const repairPoolGroups = {
       "sourceGame": "marketSignal",
       "q": "A firm already spent $20,000 studying a project. The remaining project has a negative NPV. How should the study cost affect the decision?",
       "options": [
-        "It requires the firm to continue",
-        "It should be counted as future revenue in the project analysis",
+        "Continue until the original study cost has been recovered",
+        "Count the study cost again as an avoidable expense in the current decision",
         "It should be ignored because it is sunk",
-        "It makes the remaining NPV positive"
+        "Treat the past study as an incremental benefit of continuing"
       ],
       "tag": "repair_sunk_cost_hold_up_1",
       "type": "application",
@@ -14912,7 +13319,7 @@ const repairPoolGroups = {
       "conceptCluster": "contracts_and_commitment",
       "primarySkill": "sunk_cost_hold_up",
       "secondarySkills": [],
-      "repairSkill": "sunk_cost_hold_up",
+      "repairSkill": "post_investment_holdup",
       "commonError": "Continuing to justify past spending",
       "feedback": "A sunk cost cannot be recovered and should not control the current decision.",
       "aHash": "85b15aeef929c52638cf94d7fda4fb6d340b05ae13e0d6db7ee03ed2840af2c1"
@@ -14934,7 +13341,7 @@ const repairPoolGroups = {
       "conceptCluster": "contracts_and_commitment",
       "primarySkill": "sunk_cost_hold_up",
       "secondarySkills": [],
-      "repairSkill": "sunk_cost_hold_up",
+      "repairSkill": "post_investment_holdup",
       "commonError": "Confusing opportunism after investment with hidden information before agreement",
       "feedback": "Hold-up occurs after a relationship-specific investment creates bargaining vulnerability.",
       "aHash": "25c29e55916a96203a4831efb8fb78976119e470ca675277b37817e4578b6dc3"
@@ -14966,12 +13373,12 @@ const repairPoolGroups = {
     {
       "id": 5013,
       "sourceGame": "marketSignal",
-      "q": "For a complete probability distribution, what must the probabilities add to?",
+      "q": "For mutually exclusive outcomes that exhaust all possibilities, what must the probabilities, written as decimals, add to?",
       "options": [
-        "0",
+        "0.5",
         "1",
-        "The largest outcome",
-        "The expected value"
+        "0",
+        "100"
       ],
       "tag": "repair_expected_value_probability_2",
       "type": "conceptual",
@@ -14992,10 +13399,10 @@ const repairPoolGroups = {
       "sourceGame": "marketSignal",
       "q": "What two conditions make price discrimination more workable?",
       "options": [
-        "Identical buyers and free resale",
-        "One uniform price and no customer information about demand",
+        "Identical demand across groups with costly verification",
+        "Different willingness to pay with unrestricted resale",
         "Different willingness to pay and limited resale",
-        "Perfect competition and identical costs"
+        "Cost differences that exactly explain every observed price difference"
       ],
       "tag": "repair_price_discrimination_uncertainty_1",
       "type": "conceptual",
@@ -15014,9 +13421,9 @@ const repairPoolGroups = {
       "sourceGame": "marketSignal",
       "q": "A firm charges different prices to two randomly assigned customer groups to measure demand. What is it learning?",
       "options": [
-        "Whether fixed cost is sunk",
-        "Whether supply shifts right",
-        "Whether the market has a shortage",
+        "Whether higher observed revenue necessarily implies higher profit",
+        "Whether the observed price difference was caused by customer income",
+        "How the price change affects the firm’s fixed production cost",
         "How sales respond to price"
       ],
       "tag": "repair_price_discrimination_uncertainty_2",
@@ -15025,7 +13432,9 @@ const repairPoolGroups = {
       "difficulty": "repair",
       "conceptCluster": "pricing_uncertainty",
       "primarySkill": "price_discrimination_uncertainty",
-      "secondarySkills": [],
+      "secondarySkills": [
+        "experiments_causality"
+      ],
       "repairSkill": "price_discrimination_uncertainty",
       "commonError": "Treating a pricing test as a cost experiment",
       "feedback": "Random price variation can estimate customer response and expected revenue at each price.",
@@ -15039,9 +13448,9 @@ const repairPoolGroups = {
       "q": "Why is random assignment useful in a business experiment?",
       "options": [
         "It makes treatment and control groups comparable on average",
-        "It guarantees every customer responds the same way in every market period",
-        "It removes all uncertainty from the market",
-        "It ensures the treatment group is larger"
+        "It guarantees exactly equal baseline characteristics in every finite sample",
+        "It guarantees identical treatment outcomes within each group",
+        "It corrects all post-assignment selective dropout automatically"
       ],
       "tag": "repair_experiments_causality_1",
       "type": "conceptual",
@@ -15060,10 +13469,10 @@ const repairPoolGroups = {
       "sourceGame": "marketSignal",
       "q": "A company studies only customers who volunteered to try a new app. What is the main concern?",
       "options": [
-        "A binding price ceiling",
+        "Only random sampling error, with no possible systematic selection",
         "Selection bias",
-        "A sunk cost",
-        "A compensating differential"
+        "Attrition after random assignment, even though no one was assigned",
+        "A guaranteed treatment effect because volunteers chose the app"
       ],
       "tag": "repair_experiments_causality_2",
       "type": "conceptual",
@@ -15104,7 +13513,7 @@ const repairPoolGroups = {
     {
       "id": 5019,
       "sourceGame": "marketSignal",
-      "q": "A decision has a 10% chance of a $100,000 false-approval loss and a 20% chance of a $20,000 false-rejection loss. What is total expected error cost?",
+      "q": "Per decision, the unconditional probabilities of the two error outcomes are as follows. There is a 10% chance of a $100,000 false-approval loss and a 20% chance of a $20,000 false-rejection loss. What is total expected error cost?",
       "options": [
         "$10,000",
         "$20,000",
@@ -15131,9 +13540,9 @@ const repairPoolGroups = {
       "q": "What usually improves the precision of an estimate drawn from a random sample?",
       "options": [
         "A larger sample",
-        "A smaller sample",
-        "Removing all variation from the report",
-        "Choosing only extreme observations"
+        "A smaller random sample using the same measurement",
+        "Rounding the reported estimate to fewer digits",
+        "Keeping only observations near the sample mean"
       ],
       "tag": "repair_uncertainty_estimation_1",
       "type": "conceptual",
@@ -15152,10 +13561,10 @@ const repairPoolGroups = {
       "sourceGame": "marketSignal",
       "q": "What is a simulation most useful for?",
       "options": [
-        "Proving one outcome must occur",
+        "Establishing that the model’s assumed probabilities are correct",
         "Exploring outcomes under stated probabilities and assumptions",
-        "Eliminating the need for data",
-        "Turning sunk costs into guaranteed future benefits under every market condition"
+        "Removing uncertainty about inputs by generating more draws",
+        "Replacing representative input data with a larger number of simulated cases"
       ],
       "tag": "repair_uncertainty_estimation_2",
       "type": "conceptual",
@@ -15176,10 +13585,10 @@ const repairPoolGroups = {
       "sourceGame": "marketSignal",
       "q": "A contract changes payment when a published input-price index changes. What kind of provision is this?",
       "options": [
-        "A sunk-cost rule",
-        "A price ceiling",
+        "A clause giving either party unrestricted price discretion",
+        "An unconditional fixed payment",
         "A contingent adjustment clause",
-        "A random assignment rule"
+        "A decision rule based only on past sunk expenditure"
       ],
       "tag": "repair_contingency_contracts_1",
       "type": "conceptual",
@@ -15196,12 +13605,12 @@ const repairPoolGroups = {
     {
       "id": 5023,
       "sourceGame": "marketSignal",
-      "q": "What does an option contract give one party?",
+      "q": "A partnership cannot specify every future event in its contract. What should it establish before an unforeseen event occurs?",
       "options": [
-        "A guaranteed profit",
-        "The power to erase all uncertainty from every future business decision",
-        "A requirement to produce at a loss",
-        "The right, but not the obligation, to take a future action"
+        "A promise to negotiate later without assigning authority or a dispute process",
+        "An automatic fixed payment for each event that has not yet been identified",
+        "A rule allowing either party to reinterpret obligations without review",
+        "Who can authorize adjustments and how disputed claims will be resolved"
       ],
       "tag": "repair_contingency_contracts_2",
       "type": "conceptual",
@@ -15211,9 +13620,9 @@ const repairPoolGroups = {
       "primarySkill": "contingency_contracts",
       "secondarySkills": [],
       "repairSkill": "contingency_contracts",
-      "commonError": "Confusing an option with a mandatory commitment",
-      "feedback": "An option preserves flexibility when future conditions are uncertain.",
-      "aHash": "ee125b6c31f649fcc26e4997ef113d482eb6424a3b359f273b8600e70a94c72f"
+      "commonError": "Leaving decision authority and dispute procedures undefined for unlisted events",
+      "feedback": "When the event itself cannot be listed, the contract can still define decision rights, evidence requirements and neutral dispute resolution.",
+      "aHash": "316d7b5e089ce8a438889f9a198382d9db0cda7ad9dbe7b056005e5ee8aca1ef"
     }
   ],
   "market_definition": [
@@ -15223,9 +13632,9 @@ const repairPoolGroups = {
       "q": "What should a firm identify before applying supply-and-demand analysis?",
       "options": [
         "The relevant product, geographic area, and time period",
-        "Only the firm’s accounting profit",
-        "Only the number of employees",
-        "The largest possible global industry regardless of actual substitution patterns"
+        "Only the seller’s current customers and administrative sales territory",
+        "All products in the broadest accounting industry category",
+        "The firm’s own brand, without testing customers’ alternatives"
       ],
       "tag": "repair_market_definition_1",
       "type": "conceptual",
@@ -15244,10 +13653,10 @@ const repairPoolGroups = {
       "sourceGame": "marketSignal",
       "q": "Why can defining a market too broadly be misleading?",
       "options": [
-        "It always creates a shortage in every narrowly defined product market",
+        "It necessarily increases measured concentration",
         "It can hide meaningful market power",
-        "It makes marginal cost zero",
-        "It guarantees entry"
+        "It makes weak substitutes as effective as close substitutes",
+        "It prevents market shares from changing when new sellers enter"
       ],
       "tag": "repair_market_definition_2",
       "type": "conceptual",
@@ -15266,12 +13675,12 @@ const repairPoolGroups = {
     {
       "id": 5026,
       "sourceGame": "marketSignal",
-      "q": "When the price of a good rises, what happens along an unchanged demand curve?",
+      "q": "When the price of a good rises, what happens along an unchanged downward-sloping demand curve?",
       "options": [
         "Demand shifts right",
-        "Supply shifts left",
+        "Demand shifts left",
         "Quantity demanded falls",
-        "Quantity supplied falls"
+        "Quantity demanded rises along the same curve"
       ],
       "tag": "repair_buyer_seller_behavior_1",
       "type": "conceptual",
@@ -15288,11 +13697,11 @@ const repairPoolGroups = {
     {
       "id": 5027,
       "sourceGame": "marketSignal",
-      "q": "When the price of a good rises, what happens along an unchanged supply curve?",
+      "q": "When the price of a good rises, what happens along an unchanged upward-sloping supply curve?",
       "options": [
+        "Quantity supplied falls along the same curve",
         "Supply shifts left",
-        "Demand shifts right",
-        "Quantity demanded rises",
+        "Supply shifts right",
         "Quantity supplied rises"
       ],
       "tag": "repair_buyer_seller_behavior_2",
@@ -15315,9 +13724,9 @@ const repairPoolGroups = {
       "q": "What condition defines market equilibrium?",
       "options": [
         "Quantity demanded equals quantity supplied",
-        "Price equals fixed cost",
-        "Demand equals supply as total dollar values across the entire market",
-        "Every buyer purchases one unit"
+        "Quantity demanded equals total physical capacity",
+        "Every seller produces the same number of units",
+        "The demand and supply curves coincide at every price"
       ],
       "tag": "repair_equilibrium_shortage_surplus_1",
       "type": "conceptual",
@@ -15404,7 +13813,7 @@ const repairPoolGroups = {
     {
       "id": 5032,
       "sourceGame": "marketSignal",
-      "q": "If both demand and supply increase, what can be said with certainty?",
+      "q": "Assume downward-sloping demand and upward-sloping supply. If both demand and supply increase, what can be said with certainty?",
       "options": [
         "Equilibrium quantity rises",
         "Equilibrium price rises",
@@ -15426,7 +13835,7 @@ const repairPoolGroups = {
     {
       "id": 5033,
       "sourceGame": "marketSignal",
-      "q": "If demand falls while supply rises, what can be said with certainty?",
+      "q": "Assume downward-sloping demand and upward-sloping supply. If demand falls while supply rises, what can be said with certainty?",
       "options": [
         "Equilibrium quantity rises",
         "Equilibrium price falls",
@@ -15452,10 +13861,10 @@ const repairPoolGroups = {
       "sourceGame": "marketSignal",
       "q": "What happens when a binding price ceiling is set below equilibrium price?",
       "options": [
+        "Desired purchases fall below planned sales",
         "A surplus develops",
-        "Supply and demand both disappear",
         "A shortage develops",
-        "The market remains at equilibrium"
+        "The posted price still clears planned purchases and sales"
       ],
       "tag": "repair_market_interventions_1",
       "type": "conceptual",
@@ -15472,11 +13881,11 @@ const repairPoolGroups = {
     {
       "id": 5035,
       "sourceGame": "marketSignal",
-      "q": "What is the usual effect of a per-unit tax on the quantity traded?",
+      "q": "With downward-sloping demand and upward-sloping supply, a small per-unit tax leaves positive trade. What happens to the equilibrium quantity traded?",
       "options": [
+        "Quantity traded rises by the amount of the tax",
         "Quantity traded rises",
-        "Quantity traded is unchanged",
-        "Quantity traded becomes equal to fixed cost",
+        "Quantity traded stays at the untaxed level",
         "Quantity traded falls"
       ],
       "tag": "repair_market_interventions_2",
@@ -15518,7 +13927,7 @@ const repairPoolGroups = {
     {
       "id": 5037,
       "sourceGame": "marketSignal",
-      "q": "A competitive firm has price equal to average total cost. What is its economic profit?",
+      "q": "A competitive firm produces a positive quantity at a price equal to ATC, including all explicit and implicit costs. What is its economic profit?",
       "options": [
         "Positive",
         "Zero",
@@ -15544,10 +13953,10 @@ const repairPoolGroups = {
       "sourceGame": "marketSignal",
       "q": "What tends to happen when competitive firms earn positive economic profit?",
       "options": [
-        "Exit reduces supply and raises profit",
-        "Demand disappears",
+        "Exit contracts market supply despite the above-normal returns",
+        "Entry contracts market supply and raises incumbents’ returns",
         "Entry increases market supply and pushes profit down",
-        "Firms permanently keep the profit without any response by rivals"
+        "Demand must shift left before entry can reduce returns"
       ],
       "tag": "repair_mean_reversion_entry_exit_1",
       "type": "conceptual",
@@ -15566,9 +13975,9 @@ const repairPoolGroups = {
       "sourceGame": "marketSignal",
       "q": "What tends to happen when competitive firms suffer persistent economic losses?",
       "options": [
-        "New firms enter immediately",
-        "Market supply rises",
-        "Price must fall further forever even after firms leave the industry",
+        "Losses directly shift buyers’ demand right",
+        "Entry expands supply because losses show unmet demand",
+        "Exit expands market supply and lowers price further",
         "Some firms exit, reducing market supply"
       ],
       "tag": "repair_mean_reversion_entry_exit_2",
@@ -15591,9 +14000,9 @@ const repairPoolGroups = {
       "q": "Two similar jobs differ only because one is dangerous. Why might the dangerous job pay more?",
       "options": [
         "To compensate workers for the undesirable condition",
-        "Because dangerous work always has lower productivity",
-        "Because the safe job has monopoly power",
-        "Because fixed costs are sunk"
+        "To compensate investors for the firm’s financial risk",
+        "Because the worker must be more productive despite otherwise identical jobs",
+        "Because the employer’s fixed capital cost directly determines the wage gap"
       ],
       "tag": "repair_compensating_differentials_1",
       "type": "conceptual",
@@ -15610,12 +14019,12 @@ const repairPoolGroups = {
     {
       "id": 5041,
       "sourceGame": "marketSignal",
-      "q": "A risky investment must offer more expected return than a safe investment. What is the extra return called?",
+      "q": "An investment’s expected return exceeds the safe rate by an amount that compensates investors for priced risk. What is that extra return called?",
       "options": [
-        "A sunk cost",
+        "The risk-free return",
         "A compensating risk differential",
-        "A shortage",
-        "A payback period"
+        "A compensating wage differential",
+        "An accounting return before opportunity cost"
       ],
       "tag": "repair_compensating_differentials_2",
       "type": "conceptual",
@@ -15634,7 +14043,7 @@ const repairPoolGroups = {
     {
       "id": 5042,
       "sourceGame": "marketSignal",
-      "q": "A risky asset returns 9% and a safe asset returns 4%. What is the risk premium?",
+      "q": "Over the same year, a risky asset has an expected return of 9% and a safe asset returns 4%. What is the expected risk premium?",
       "options": [
         "4 percentage points",
         "9 percentage points",
@@ -15658,9 +14067,9 @@ const repairPoolGroups = {
       "sourceGame": "marketSignal",
       "q": "What are investors likely to do when a risky asset’s premium becomes too small for its risk?",
       "options": [
-        "Buy more because the smaller premium automatically signals much lower risk",
-        "Ignore risk completely",
-        "Raise the asset’s fixed cost",
+        "Sell the safer asset because its lower risk requires a larger premium",
+        "Buy more of the risky asset because any positive premium suffices",
+        "Stay indifferent as long as the risky expected return exceeds zero",
         "Sell the risky asset and move toward safer assets"
       ],
       "tag": "repair_risk_premium_portfolio_2",
@@ -15683,9 +14092,9 @@ const repairPoolGroups = {
       "q": "How does entry tend to erode an incumbent firm’s profit?",
       "options": [
         "It adds supply and gives customers more alternatives",
-        "It eliminates all fixed costs",
-        "It guarantees permanently higher demand for the incumbent in the market",
-        "It makes every product identical by law"
+        "It removes competitors’ opportunity costs from the incumbent’s calculation",
+        "It makes the incumbent’s residual demand less price-sensitive",
+        "It reduces total supply while leaving all customers captive to the incumbent"
       ],
       "tag": "repair_profit_erosion_entry_imitation_1",
       "type": "conceptual",
@@ -15702,12 +14111,12 @@ const repairPoolGroups = {
     {
       "id": 5045,
       "sourceGame": "marketSignal",
-      "q": "How does imitation tend to affect a profitable product?",
+      "q": "Other things equal, successful imitation gives customers closer substitutes for an incumbent’s product. How does this affect the incumbent’s demand?",
       "options": [
-        "It makes demand perfectly inelastic and protects the original firm from all future competition",
-        "It creates substitutes and weakens the original firm’s advantage",
-        "It prevents any future entry",
-        "It guarantees the original price rises"
+        "It becomes less price-sensitive because more firms validate the product",
+        "It generally becomes more price-sensitive, limiting the sustainable markup",
+        "It becomes identical to total market demand despite the new alternatives",
+        "It becomes less price-sensitive because the incumbent’s sunk cost is unchanged"
       ],
       "tag": "repair_profit_erosion_entry_imitation_2",
       "type": "conceptual",
@@ -15717,9 +14126,9 @@ const repairPoolGroups = {
       "primarySkill": "profit_erosion_entry_imitation",
       "secondarySkills": [],
       "repairSkill": "profit_erosion_entry_imitation",
-      "commonError": "Treating an imitable advantage as permanent",
-      "feedback": "Copies give buyers alternatives and erode scarcity-based profit.",
-      "aHash": "cc7a8e9d03f58a20d2261abab7053c3ce670d9d0954e2450535c871d282d38dc"
+      "commonError": "Treating imitation as reducing customers’ price sensitivity",
+      "feedback": "Closer substitutes make customers more willing to switch when the incumbent raises price. That pressure erodes its pricing advantage.",
+      "aHash": "2bc0cd4faf136020554f779584f92a933ab65be3c89f7e12ec0a5467e13beee4"
     }
   ],
   "monopoly_output_profit": [
@@ -15729,9 +14138,9 @@ const repairPoolGroups = {
       "q": "A manager selects monopoly output where price equals marginal cost. Why can this overstate the profit-maximizing output when demand slopes downward?",
       "options": [
         "The extra unit can require a price cut on existing sales, so marginal revenue is below price",
-        "The extra unit necessarily raises average fixed cost",
-        "The firm should choose the highest feasible price regardless of sales",
-        "Marginal revenue equals total revenue whenever price changes"
+        "The extra unit is unprofitable whenever average fixed cost is positive",
+        "The firm should instead maximize the posted price without considering quantity",
+        "The extra unit raises price on all previous units"
       ],
       "tag": "repair_monopoly_output_profit_1",
       "type": "conceptual",
@@ -15772,7 +14181,7 @@ const repairPoolGroups = {
     {
       "id": 5048,
       "sourceGame": "marketSignal",
-      "q": "Compared with perfect competition, what does an unregulated monopoly usually do?",
+      "q": "With the same demand and production costs and no externalities, how does an interior single-price monopoly outcome compare with perfect competition?",
       "options": [
         "Charges a higher price and produces less output",
         "Charges a lower price and produces more",
@@ -15796,10 +14205,10 @@ const repairPoolGroups = {
       "sourceGame": "marketSignal",
       "q": "Why can marginal-cost pricing create a financing problem for a natural monopoly?",
       "options": [
-        "Marginal cost must exceed demand",
+        "Marginal-cost pricing necessarily raises price above ATC",
         "Price may fall below average total cost",
-        "Fixed cost becomes negative",
-        "The firm always earns monopoly profit under marginal-cost regulation"
+        "MC always includes the full fixed cost per unit",
+        "Cost recovery depends only on positive revenue, regardless of total cost"
       ],
       "tag": "repair_monopoly_welfare_regulation_2",
       "type": "conceptual",
@@ -15826,14 +14235,14 @@ const repairPoolGroups = {
         "A contract with complete protection"
       ],
       "tag": "post_investment_holdup",
-      "type": "repair",
+      "type": "conceptual",
       "objective": "LO5.5",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_marketSignal_post_investment_holdup",
       "primarySkill": "post_investment_holdup",
       "secondarySkills": [],
       "repairSkill": "post_investment_holdup",
-      "commonError": "needs_basic_repair",
+      "commonError": "Ignoring the investment’s weak outside option",
       "feedback": "Specific investments create renegotiation risk after outside options weaken.",
       "aHash": "8a6a38233f774051b55d3fe9e46300e18fb7cbbaced5b624b0d3c0529488ab80"
     },
@@ -15842,44 +14251,22 @@ const repairPoolGroups = {
       "sourceGame": "marketSignal",
       "q": "What is a common effect of hold-up risk before investment?",
       "options": [
-        "Overproduction with no cost consequence",
+        "Efficient investment is guaranteed because the project creates joint value",
         "Underinvestment in relationship-specific assets",
-        "Perfectly efficient investment every time",
-        "No need for contract terms"
+        "The investor disregards anticipated future receipts because they are uncertain",
+        "The investor increases specific investment whenever its outside option deteriorates"
       ],
       "tag": "post_investment_holdup",
-      "type": "repair",
+      "type": "conceptual",
       "objective": "LO5.5",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_marketSignal_post_investment_holdup",
       "primarySkill": "post_investment_holdup",
       "secondarySkills": [],
       "repairSkill": "post_investment_holdup",
-      "commonError": "needs_basic_repair",
-      "feedback": "Specific investments create renegotiation risk after outside options weaken.",
+      "commonError": "Ignoring anticipated appropriation before the investment decision",
+      "feedback": "If later bargaining is expected to leave the investor unable to recover the cost, the investor may refuse a project that would create joint value. Anticipation changes the decision before spending.",
       "aHash": "85af8c82964ce7525ded4dfbafa7737cff2178c593f1b7579edb50a5ca41e8f0"
-    },
-    {
-      "id": 5082,
-      "sourceGame": "marketSignal",
-      "q": "A buyer-specific machine is risky because after it is installed, what may happen?",
-      "options": [
-        "The machine becomes useful to every customer",
-        "All transaction costs disappear",
-        "The buyer may renegotiate when the supplier’s outside option is weak",
-        "The supplier’s sunk cost becomes irrelevant to bargaining"
-      ],
-      "tag": "post_investment_holdup",
-      "type": "repair",
-      "objective": "LO5.5",
-      "difficulty": "microSkillRepair",
-      "conceptCluster": "repair_marketSignal_post_investment_holdup",
-      "primarySkill": "post_investment_holdup",
-      "secondarySkills": [],
-      "repairSkill": "post_investment_holdup",
-      "commonError": "needs_basic_repair",
-      "feedback": "Specific investments create renegotiation risk after outside options weaken.",
-      "aHash": "d2c04e12a783c274bb7428f453ffbdce07685e8ec60dd0b569f824b480d57b71"
     },
     {
       "id": 5083,
@@ -15892,15 +14279,15 @@ const repairPoolGroups = {
         "Protecting expected returns before the specific investment is sunk"
       ],
       "tag": "post_investment_holdup",
-      "type": "repair",
+      "type": "conceptual",
       "objective": "LO5.5",
       "difficulty": "microSkillRepair",
       "conceptCluster": "repair_marketSignal_post_investment_holdup",
       "primarySkill": "post_investment_holdup",
       "secondarySkills": [],
       "repairSkill": "post_investment_holdup",
-      "commonError": "needs_basic_repair",
-      "feedback": "Specific investments create renegotiation risk after outside options weaken.",
+      "commonError": "Trying to negotiate protection only after investment",
+      "feedback": "Enforceable commitments made before investment protect the investor’s expected receipts. Once the investment is sunk, vague promises leave the weak outside option exposed.",
       "aHash": "397d75ce6960b8ae18a5dbc33f72a7e59debf5fa695e96c33c6a9cb17d5dd3cd"
     }
   ]
@@ -15935,9 +14322,9 @@ const bridgePoolGroups = {
       "sourceGame": "marketSignal",
       "q": "A firm can receive $1,000 today or $1,120 in one year. At a 10% discount rate, which option has greater present value?",
       "options": [
+        "The later receipt has present value $980, so choose today’s receipt",
         "$1,000 today",
         "They have equal present value",
-        "There is not enough information because fixed cost is missing",
         "$1,120 in one year"
       ],
       "tag": "bridge_present_value_discounting_2",
@@ -16003,7 +14390,7 @@ const bridgePoolGroups = {
     {
       "id": 6004,
       "sourceGame": "marketSignal",
-      "q": "A project costs $1,500 and returns $600 per year. Assuming even cash flow within each year, what is its payback period?",
+      "q": "A project costs $1,500 and generates net cash of $600 per year. Assuming even cash flow within each year, what is its payback period?",
       "options": [
         "2 years",
         "3 years",
@@ -16025,7 +14412,7 @@ const bridgePoolGroups = {
     {
       "id": 6005,
       "sourceGame": "marketSignal",
-      "q": "Project A has a two-year payback and NPV of $50. Project B has a three-year payback and NPV of $200. Under the NPV rule, which project is preferred?",
+      "q": "Two one-time, mutually exclusive projects face no financing constraint. A has a two-year payback and NPV $50; B has a three-year payback and NPV $200. Under the NPV rule, which is preferred?",
       "options": [
         "Project A",
         "Both are equally valuable",
@@ -16049,7 +14436,7 @@ const bridgePoolGroups = {
     {
       "id": 6006,
       "sourceGame": "marketSignal",
-      "q": "At output of 250 units, Technology A costs 300 + 5Q and Technology B costs 800 + 2Q. Which has lower total cost?",
+      "q": "For identical output quality and timing, at output of 250 units, Technology A costs 300 + 5Q and Technology B costs 800 + 2Q. Which has lower total cost?",
       "options": [
         "Technology B by $250",
         "Technology A by $250",
@@ -16095,12 +14482,12 @@ const bridgePoolGroups = {
     {
       "id": 6008,
       "sourceGame": "marketSignal",
-      "q": "A competitive firm sells 100 units at $6. Average variable cost is $4 and average total cost is $8. What is the short-run result?",
+      "q": "At its best positive output of 100 units, a competitive firm receives $6 per unit, has AVC $4 and ATC $8. All fixed costs are unavoidable this period. What is its best operating decision and profit?",
       "options": [
-        "Shut down and lose $200",
         "Continue producing and earn $200",
+        "Shut down and lose $200",
         "Continue producing and lose $200",
-        "Raise price and break even"
+        "Shut down and lose $400"
       ],
       "tag": "bridge_shutdown_decisions_1",
       "type": "application",
@@ -16117,11 +14504,11 @@ const bridgePoolGroups = {
     {
       "id": 6009,
       "sourceGame": "marketSignal",
-      "q": "A firm is producing where MR=MC, but price is $5 and average variable cost is $6. What should it do now?",
+      "q": "At its best positive output, a price-taking firm has MR = MC, price $5 and AVC $6. All fixed costs are unavoidable this period. Which operating decision is better?",
       "options": [
-        "Continue because MR=MC",
-        "Raise price to average total cost",
-        "Increase output until price rises",
+        "Be indifferent because both choices incur the same variable cost",
+        "Continue because MR = MC is sufficient by itself",
+        "Continue because fixed costs are already sunk",
         "Shut down in the short run"
       ],
       "tag": "bridge_shutdown_decisions_2",
@@ -16141,12 +14528,12 @@ const bridgePoolGroups = {
     {
       "id": 6010,
       "sourceGame": "marketSignal",
-      "q": "A supplier already paid for a specialized machine. A current order would bring $30,000 of revenue and $20,000 of additional operating cost. Ignoring future bargaining effects, should it accept the order?",
+      "q": "A supplier already paid for a specialized machine. A current order would bring $30,000 of revenue and $20,000 of additional cost, including all opportunity costs. Ignoring future bargaining effects, should it accept the order?",
       "options": [
         "Yes, because incremental revenue exceeds incremental cost",
-        "No, because the machine cost must be recovered first",
-        "No, because all specialized investments require shutdown",
-        "There is not enough information unless accounting profit is positive"
+        "No, because past machine spending must first be added to the order’s future cost",
+        "No, because any unrecovered specific investment makes every new order unprofitable",
+        "Be indifferent because the machine cost is unchanged"
       ],
       "tag": "bridge_sunk_cost_hold_up_1",
       "type": "application",
@@ -16155,7 +14542,7 @@ const bridgePoolGroups = {
       "conceptCluster": "contracts_and_commitment",
       "primarySkill": "sunk_cost_hold_up",
       "secondarySkills": [],
-      "repairSkill": "sunk_cost_hold_up",
+      "repairSkill": "post_investment_holdup",
       "commonError": "Including sunk investment in the incremental order decision",
       "feedback": "The machine cost is sunk. The order adds $10,000 before considering any future strategic effects.",
       "aHash": "a7b3a1b85f80494ca8fdcfbd18556d3f792beb71be679201f6852af76347630a"
@@ -16163,12 +14550,12 @@ const bridgePoolGroups = {
     {
       "id": 6011,
       "sourceGame": "marketSignal",
-      "q": "Two firms each post a refundable deposit that is forfeited if either abandons a joint project. What is the purpose?",
+      "q": "Two firms each post a deposit refundable on completion. A firm that withdraws opportunistically forfeits its own deposit to the other firm. What is the purpose?",
       "options": [
-        "To eliminate demand uncertainty",
+        "To ensure the project succeeds regardless of its future demand",
         "To make opportunistic withdrawal costly",
-        "To convert variable cost into fixed cost",
-        "To create a price ceiling"
+        "To reimburse every ordinary operating cost without affecting withdrawal incentives",
+        "To make withdrawal costless once the original investment is sunk"
       ],
       "tag": "bridge_sunk_cost_hold_up_2",
       "type": "application",
@@ -16177,7 +14564,7 @@ const bridgePoolGroups = {
       "conceptCluster": "contracts_and_commitment",
       "primarySkill": "sunk_cost_hold_up",
       "secondarySkills": [],
-      "repairSkill": "sunk_cost_hold_up",
+      "repairSkill": "post_investment_holdup",
       "commonError": "Viewing the deposit as ordinary operating cost",
       "feedback": "Mutual collateral acts as a credible commitment against hold-up.",
       "aHash": "1a64131f05f4dd6b1360082561dddf5e5e69aa739fbf3b815d0a82e88390f78a"
@@ -16233,12 +14620,12 @@ const bridgePoolGroups = {
     {
       "id": 6014,
       "sourceGame": "marketSignal",
-      "q": "A theater offers a student discount and verifies student status. Why can this pricing strategy work?",
+      "q": "A theater offers a student discount for the same screening and checks identity at entry. Tickets cannot be transferred, and service cost is the same for both groups. Why can this pricing strategy work?",
       "options": [
         "Students differ in willingness to pay and verification limits resale",
-        "All customers have identical demand",
-        "The theater has no fixed cost",
-        "The discount shifts market supply left by changing every seller’s marginal cost"
+        "All customers have the same willingness to pay",
+        "Student status raises the marginal cost of serving a customer",
+        "Students can resell their discounted tickets to high-value customers"
       ],
       "tag": "bridge_price_discrimination_uncertainty_1",
       "type": "application",
@@ -16255,7 +14642,7 @@ const bridgePoolGroups = {
     {
       "id": 6015,
       "sourceGame": "marketSignal",
-      "q": "A price of $10 has an 80% chance of selling 100 units. A price of $14 has a 50% chance of selling 100 units. Ignoring cost, which price has higher expected revenue?",
+      "q": "A price of $10 has an 80% chance of selling 100 units. A price of $14 has a 50% chance of selling 100 units. At either price, zero units are sold otherwise. Ignoring cost, which price has higher expected revenue?",
       "options": [
         "$14, with expected revenue of $700",
         "$10, with expected revenue of $800",
@@ -16295,7 +14682,7 @@ const bridgePoolGroups = {
       "secondarySkills": [],
       "repairSkill": "experiments_causality",
       "commonError": "Using only the treatment group’s change",
-      "feedback": "The treatment change is 30 and the control change is 15, so the estimated effect is 15.",
+      "feedback": "The treatment change is 30 and the control change is 15, so DID is 15. A causal interpretation requires parallel untreated trends and no differential concurrent shock.",
       "aHash": "74621c847c2d91614266c7bbbacf769a8805f0e16e04d7c519f33342d1fccb84"
     },
     {
@@ -16303,9 +14690,9 @@ const bridgePoolGroups = {
       "sourceGame": "marketSignal",
       "q": "A trial begins with similar treatment and control groups, but many unhappy treatment customers leave before measurement. What is the main threat?",
       "options": [
-        "A binding price floor",
-        "A compensating wage differential",
-        "A sunk-cost fallacy",
+        "A causal treatment gain proven by the satisfaction of remaining respondents",
+        "Initial self-selection into treatment, even though assignment created comparable groups",
+        "Only reduced precision, with no possible systematic bias",
         "Attrition bias"
       ],
       "tag": "bridge_experiments_causality_2",
@@ -16325,7 +14712,7 @@ const bridgePoolGroups = {
     {
       "id": 6018,
       "sourceGame": "marketSignal",
-      "q": "A medical-device firm learns that approving an unsafe product is far more costly than rejecting a safe one. How should its approval rule change?",
+      "q": "Holding prevalence, test information and false-rejection cost fixed, a firm learns that its false-approval cost is much higher than previously assumed. In choosing an approval cutoff to minimize expected cost, which direction is appropriate?",
       "options": [
         "Require stronger evidence before approval",
         "Approve more easily",
@@ -16347,7 +14734,7 @@ const bridgePoolGroups = {
     {
       "id": 6019,
       "sourceGame": "marketSignal",
-      "q": "Rule A has a 5% chance of a $200,000 false-approval loss and a 20% chance of a $40,000 false-rejection loss. Rule B has rates of 10% and 5%. Which has lower expected error cost?",
+      "q": "The following are unconditional error probabilities per decision. Rule A has a 5% chance of a $200,000 false-approval loss and a 20% chance of a $40,000 false-rejection loss. Rule B has rates of 10% and 5%. Which has lower expected error cost?",
       "options": [
         "Rule B at $22,000",
         "Rule A at $18,000",
@@ -16373,10 +14760,10 @@ const bridgePoolGroups = {
       "sourceGame": "marketSignal",
       "q": "A firm estimates normal-year demand using only observations from a severe recession. What is the main problem?",
       "options": [
-        "The sample is too large",
-        "The estimate has no variance",
+        "Recession observations have no sampling variability",
+        "A large sample cannot contain systematic selection bias",
         "The sample is not representative of the target conditions",
-        "The data automatically create random assignment across all target market conditions"
+        "More draws from the same recession data guarantee normal-year representativeness"
       ],
       "tag": "bridge_uncertainty_estimation_1",
       "type": "analysis",
@@ -16417,34 +14804,34 @@ const bridgePoolGroups = {
     {
       "id": 6022,
       "sourceGame": "marketSignal",
-      "q": "A long-term delivery contract ties price to a public steel-price index. What risk does this provision address?",
+      "q": "A delivery contract already indexes payment to steel prices. A new regulation unexpectedly requires a different design that the index does not measure. What additional institution best addresses this gap?",
       "options": [
-        "Unexpected changes in input cost",
-        "Selection bias in a customer survey",
-        "A shortage caused by a price ceiling",
-        "The buyer’s sunk advertising cost"
+        "A process to verify redesign costs, assign decision rights and resolve disputes",
+        "Applying the steel index to every redesign cost regardless of its cause",
+        "Leaving either party free to set a new price without supporting evidence",
+        "Treating the existing index as a complete rule for every future contingency"
       ],
       "tag": "bridge_contingency_contracts_1",
-      "type": "application",
+      "type": "analysis",
       "objective": "LO17.6",
       "difficulty": "bridge",
       "conceptCluster": "contingency_design",
       "primarySkill": "contingency_contracts",
       "secondarySkills": [],
       "repairSkill": "contingency_contracts",
-      "commonError": "Using a fixed price when an observable cost shock can be indexed",
-      "feedback": "An index clause shares or reallocates the risk of future cost changes.",
-      "aHash": "1188b967ad259841db5498ba61ae2fac7c50d2a0c9bd44f2da3cd93e056f7ff9"
+      "commonError": "Assuming an indexed clause covers every unforeseen contingency",
+      "feedback": "Indexation handles the specified input-price shock. An unlisted redesign requires an adaptation process with evidence, authority and dispute resolution.",
+      "aHash": "5b82b621ef413d2276d5c016bb6a6c185c9cbec52ad4378eb0da8ca8ca280a8b"
     },
     {
       "id": 6023,
       "sourceGame": "marketSignal",
       "q": "A complex partnership cannot list every future event. Which institution best supports adjustment without inviting arbitrary demands?",
       "options": [
-        "No written agreement",
+        "Let either side demand any change without evidence or review",
         "A defined renegotiation process with verification and dispute resolution",
-        "A promise that no conditions will ever change during the entire partnership regardless of outside shocks",
-        "Immediate termination after every surprise"
+        "Require renegotiation but leave authority and dispute procedures undefined",
+        "Delegate all future decisions without information-sharing or accountability"
       ],
       "tag": "bridge_contingency_contracts_2",
       "type": "analysis",
@@ -16463,7 +14850,7 @@ const bridgePoolGroups = {
     {
       "id": 6024,
       "sourceGame": "marketSignal",
-      "q": "A concrete producer faces high transport costs and sells mainly within one city. Which market definition is most useful?",
+      "q": "Concrete delivery is feasible only from local plants; distant plants cannot meet the delivery time and cost limits buyers face. Which market definition is most useful?",
       "options": [
         "The worldwide construction-material market",
         "All manufactured goods in the country",
@@ -16485,7 +14872,7 @@ const bridgePoolGroups = {
     {
       "id": 6025,
       "sourceGame": "marketSignal",
-      "q": "Electricity demand and supply differ sharply between peak afternoon hours and overnight. What market dimension must be defined carefully?",
+      "q": "Electricity demand and supply differ sharply between peak afternoon hours and overnight. Electricity cannot be stored or consumption shifted cheaply between these periods. What market dimension must be defined carefully?",
       "options": [
         "Accounting method",
         "Corporate ownership",
@@ -16512,9 +14899,9 @@ const bridgePoolGroups = {
       "q": "A buyer values one unit at $12 and the market price is $10. What should the buyer do?",
       "options": [
         "Buy the unit and gain $2 of consumer surplus",
-        "Do not buy because price is positive",
-        "Buy only if the seller’s fixed cost is already zero",
-        "Demand a price of $12"
+        "Buy the unit and gain $12 of consumer surplus",
+        "Do not buy because price is below value",
+        "Buy the unit and gain $10 of consumer surplus"
       ],
       "tag": "bridge_buyer_seller_behavior_1",
       "type": "application",
@@ -16535,8 +14922,8 @@ const bridgePoolGroups = {
       "options": [
         "Produce it and gain $2",
         "Do not produce it",
-        "Produce it because total revenue is positive",
-        "Raise market demand"
+        "Produce it because gross revenue of $6 is positive",
+        "Be indifferent because price and cost differ by only $2"
       ],
       "tag": "bridge_buyer_seller_behavior_2",
       "type": "application",
@@ -16577,7 +14964,7 @@ const bridgePoolGroups = {
     {
       "id": 6029,
       "sourceGame": "marketSignal",
-      "q": "At the current price, quantity demanded exceeds quantity supplied. What market pressure follows?",
+      "q": "At the current price, quantity demanded exceeds quantity supplied. With no price control, what market pressure follows?",
       "options": [
         "Price tends to fall",
         "Supply and demand both shift left automatically",
@@ -16623,7 +15010,7 @@ const bridgePoolGroups = {
     {
       "id": 6031,
       "sourceGame": "marketSignal",
-      "q": "Sellers expect the product’s price to be much higher next month and can store it cheaply. What happens to current supply?",
+      "q": "For a given stock of a storable good and unchanged current production, sellers expect a much higher price next month and can store it cheaply. Other things equal, what happens to current supply?",
       "options": [
         "Current supply shifts right",
         "Current supply shifts left",
@@ -16647,7 +15034,7 @@ const bridgePoolGroups = {
     {
       "id": 6032,
       "sourceGame": "marketSignal",
-      "q": "Demand rises while supply falls. What happens to equilibrium price and quantity?",
+      "q": "Assume downward-sloping demand and upward-sloping supply. Demand rises while supply falls. What happens to equilibrium price and quantity?",
       "options": [
         "Price falls; quantity rises",
         "Price is ambiguous; quantity falls",
@@ -16687,7 +15074,8 @@ const bridgePoolGroups = {
       "commonError": "Reading only one shifted curve",
       "feedback": "The intersection of S1 and D2 is at price $60 and quantity 96.",
       "image": "market_curves_independent.svg",
-      "aHash": "3ecf24e044e0d1587c5d6fb8d900a0a2bd2d68ed967e0dddc08d5ab512344fd8"
+      "aHash": "3ecf24e044e0d1587c5d6fb8d900a0a2bd2d68ed967e0dddc08d5ab512344fd8",
+      "graphRequired": true
     }
   ],
   "market_interventions": [
@@ -16716,7 +15104,7 @@ const bridgePoolGroups = {
     {
       "id": 6035,
       "sourceGame": "marketSignal",
-      "q": "A per-unit tax is imposed on sellers. Which pattern is most likely?",
+      "q": "Demand slopes downward and supply upward, with neither perfectly elastic nor perfectly inelastic. A small per-unit tax is imposed on sellers and positive trade remains. What happens to buyer price, sellers’ net receipt and quantity?",
       "options": [
         "Buyers pay less, sellers receive more, and quantity rises in every market",
         "Buyers pay more, sellers receive less net, and quantity falls",
@@ -16740,7 +15128,7 @@ const bridgePoolGroups = {
     {
       "id": 6036,
       "sourceGame": "marketSignal",
-      "q": "A competitive firm sells 100 units at $25 and average total cost is $22. What is economic profit?",
+      "q": "A competitive firm sells 100 units at $25 and average total cost including implicit costs is $22. What is economic profit?",
       "options": [
         "$3",
         "$2,200",
@@ -16764,9 +15152,9 @@ const bridgePoolGroups = {
       "sourceGame": "marketSignal",
       "q": "Why does unusually high economic profit act as a market signal?",
       "options": [
-        "It proves demand will never change",
-        "It guarantees a permanent monopoly with no threat from entry or imitation",
-        "It means opportunity cost is zero",
+        "It shows resources earn less than in comparable alternative uses",
+        "It proves the industry’s advantage will persist despite entry",
+        "It indicates accounting revenue but conveys no information about opportunity cost",
         "It indicates returns above normal and attracts resources"
       ],
       "tag": "bridge_competitive_returns_2",
@@ -16794,7 +15182,7 @@ const bridgePoolGroups = {
         "The representative firm raises market price"
       ],
       "tag": "bridge_mean_reversion_entry_exit_1",
-      "type": "graph",
+      "type": "analysis",
       "objective": "LO9.2",
       "difficulty": "bridge",
       "conceptCluster": "competitive_adjustment",
@@ -16804,17 +15192,18 @@ const bridgePoolGroups = {
       "commonError": "Stopping the analysis at the short-run profit point",
       "feedback": "At B, price P2 creates profit; entry expands market supply until price returns to P1.",
       "image": "long_run_competition.png",
-      "aHash": "759ff287f9d4e0b36b6c47c7fc48ca0f00e51e16165876b66b3f86908d4b8246"
+      "aHash": "759ff287f9d4e0b36b6c47c7fc48ca0f00e51e16165876b66b3f86908d4b8246",
+      "graphRequired": false
     },
     {
       "id": 6039,
       "sourceGame": "marketSignal",
       "q": "A competitive industry has persistent losses and low barriers to exit. What long-run change is expected?",
       "options": [
-        "Entry increases supply further",
+        "Entry increases supply and reduces the loss per remaining firm",
         "Exit reduces supply and raises the return of remaining firms",
-        "Demand must permanently fall to zero",
-        "Firms keep producing forever regardless of alternatives in other industries"
+        "Exit reduces supply and forces market price lower",
+        "Persistent losses imply normal returns because accounting profit is irrelevant"
       ],
       "tag": "bridge_mean_reversion_entry_exit_2",
       "type": "analysis",
@@ -16835,10 +15224,10 @@ const bridgePoolGroups = {
       "sourceGame": "marketSignal",
       "q": "Two jobs require the same skill, but the night shift pays $3 more per hour. What is the most direct explanation if workers dislike nights?",
       "options": [
-        "A monopoly deadweight loss caused by restricted market output",
-        "A risk-free rate",
+        "An investor risk premium paid to the worker",
+        "A productivity differential despite identical productive skills and tasks",
         "A compensating wage differential",
-        "A sunk-cost premium"
+        "A change in the safe financial return"
       ],
       "tag": "bridge_compensating_differentials_1",
       "type": "application",
@@ -16879,12 +15268,12 @@ const bridgePoolGroups = {
     {
       "id": 6042,
       "sourceGame": "marketSignal",
-      "q": "A risky bond yields 7% and a safe bond yields 5%. Investors require a 3-point premium. What pressure is likely?",
+      "q": "A risky bond has an expected return of 7% and a same-horizon safe bond returns 5%. Investors require a 3-point premium. What pressure is likely?",
       "options": [
         "Investors sell the risky bond, pushing its yield upward",
         "Investors buy the risky bond, pushing its yield downward",
-        "Investors sell the safe bond until both yields are zero",
-        "No change because the risky yield is positive"
+        "Investors are indifferent because the 2-point premium meets the 3-point requirement",
+        "Investors keep the risky bond because any positive expected yield is sufficient"
       ],
       "tag": "bridge_risk_premium_portfolio_1",
       "type": "analysis",
@@ -16901,12 +15290,12 @@ const bridgePoolGroups = {
     {
       "id": 6043,
       "sourceGame": "marketSignal",
-      "q": "A risky asset’s expected return stays at 10%, the safe rate stays at 4%, and perceived risk falls. What happens to its attractiveness?",
+      "q": "A risky asset’s expected return stays at 10%, the safe rate stays at 4%, and perceived priced risk falls while other characteristics remain unchanged. What happens to its attractiveness?",
       "options": [
-        "It becomes less attractive because the expected return is unchanged even though the same premium now compensates investors for less risk",
+        "It becomes less attractive because lower risk requires a larger premium",
         "It becomes more attractive because the same premium now compensates for less risk",
-        "Its risk premium becomes zero",
-        "Investors must move to safe assets"
+        "It is unchanged because only the numerical spread matters",
+        "Its expected premium becomes zero even though both returns are unchanged"
       ],
       "tag": "bridge_risk_premium_portfolio_2",
       "type": "analysis",
@@ -16927,10 +15316,10 @@ const bridgePoolGroups = {
       "sourceGame": "marketSignal",
       "q": "A patent expires, but customers face strong network effects and high switching costs. Why might profit persist?",
       "options": [
-        "Patent expiration guarantees zero profit immediately regardless of network effects or switching costs",
-        "Network effects make demand perfectly elastic",
+        "Network effects necessarily make customers more willing to switch to a small entrant",
+        "Patent expiration by itself guarantees rapid loss of the incumbent’s customers",
         "Legal entry may be possible while effective competition remains weak",
-        "Switching costs eliminate fixed cost"
+        "Switching costs directly lower the incumbent’s marginal production cost to zero"
       ],
       "tag": "bridge_profit_erosion_entry_imitation_1",
       "type": "analysis",
@@ -16949,9 +15338,9 @@ const bridgePoolGroups = {
       "sourceGame": "marketSignal",
       "q": "A market has high short-run profit and low barriers to entry. What is the most likely long-run outcome?",
       "options": [
-        "Exit raises price further",
-        "Profit remains unchanged because demand is fixed and entry cannot affect customer alternatives",
-        "Imitation removes all production cost",
+        "Imitation makes the incumbent’s demand less price-sensitive",
+        "Exit contracts supply and preserves the initial high returns",
+        "Entry leaves customer alternatives unchanged whenever total demand is fixed",
         "Entry expands alternatives and reduces economic profit"
       ],
       "tag": "bridge_profit_erosion_entry_imitation_2",
@@ -16971,7 +15360,7 @@ const bridgePoolGroups = {
     {
       "id": 6046,
       "sourceGame": "marketSignal",
-      "q": "A monopolist faces P=80-Q and constant marginal cost of $20. What output and price maximize profit?",
+      "q": "A single-price monopolist faces P=80-Q and constant marginal cost of $20. What output and price maximize profit?",
       "options": [
         "Q=30 and P=$50",
         "Q=60 and P=$20",
@@ -16993,7 +15382,7 @@ const bridgePoolGroups = {
     {
       "id": 6047,
       "sourceGame": "marketSignal",
-      "q": "A supplier reports $7,920 in sales from 220 identical units. Each unit uses $17 in variable inputs, and period fixed cost is $1,450. What is total profit?",
+      "q": "A monopoly supplier reports $7,920 in sales from 220 identical units. Each unit uses $17 in variable inputs, and period fixed cost is $1,450. What is total profit?",
       "options": [
         "$4,180",
         "$2,730",
@@ -17017,7 +15406,7 @@ const bridgePoolGroups = {
     {
       "id": 6048,
       "sourceGame": "marketSignal",
-      "q": "Demand is P=60-Q and marginal cost is $20. Monopoly output is 20 and competitive output is 40. What is monopoly deadweight loss?",
+      "q": "Assume no externalities. Demand is P=60-Q and marginal cost is $20. Monopoly output is 20 and competitive output is 40. What is monopoly deadweight loss?",
       "options": [
         "$100",
         "$400",
@@ -17041,9 +15430,9 @@ const bridgePoolGroups = {
       "sourceGame": "marketSignal",
       "q": "Why might regulators set a natural monopoly’s price near average total cost instead of marginal cost?",
       "options": [
-        "To maximize deadweight loss while ensuring the firm remains financially viable",
-        "To guarantee zero output",
-        "To make marginal cost exceed demand",
+        "To eliminate all lost trades even when ATC exceeds MC",
+        "To make price equal MC while leaving an uncovered fixed-cost deficit",
+        "To preserve the unregulated monopoly markup regardless of cost recovery",
         "To allow cost recovery while limiting monopoly profit"
       ],
       "tag": "bridge_monopoly_welfare_regulation_2",
@@ -17063,90 +15452,68 @@ const bridgePoolGroups = {
     {
       "id": 6080,
       "sourceGame": "marketSignal",
-      "q": "A supplier must buy a $50,000 mold useful only for one buyer. What makes this investment risky?",
+      "q": "A supplier has already spent $50,000 on a buyer-specific mold. This order yields $25,000 of receipts and requires $10,000 of additional cost; there is no alternative use or future strategic effect. Does refusing the order recover the mold cost, and what is the incremental gain from accepting?",
       "options": [
-        "The mold has many equally valuable outside uses",
-        "The buyer may renegotiate after the mold is sunk",
-        "The mold cost is variable every period",
-        "The buyer has no bargaining power after installation"
+        "Refusal recovers $50,000; accepting loses $35,000",
+        "Refusal recovers none of the mold cost; accepting adds $15,000",
+        "Refusal recovers none; accepting loses $35,000",
+        "Refusal recovers $15,000; accepting adds $25,000"
       ],
       "tag": "post_investment_holdup",
-      "type": "bridge",
+      "type": "calculation",
       "objective": "LO5.5",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_marketSignal_post_investment_holdup",
       "primarySkill": "post_investment_holdup",
       "secondarySkills": [],
       "repairSkill": "post_investment_holdup",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Specific investments create renegotiation risk after outside options weaken.",
-      "aHash": "749109739ecc933a86d26ff91531d4c0f26f6228de71026729cb489d95668c59"
+      "commonError": "Confusing ex post incremental gain with recovery of the original specific investment",
+      "feedback": "The mold cost cannot be changed now. Accepting adds $25,000 − $10,000 = $15,000, even if the original investment will not be fully recovered.",
+      "aHash": "f31ef169c1330d011497a95adc136c7b2efbab825c0244e77fda0f9368b6aa11"
     },
     {
       "id": 6081,
       "sourceGame": "marketSignal",
-      "q": "Which design helps protect a buyer-specific investment?",
+      "q": "A supplier must spend $50,000 on buyer-specific tooling and $20,000 more to deliver. All figures are present values. Which enforceable payment schedule makes investment profitable both if delivery occurs and if the buyer cancels after tooling is installed?",
       "options": [
-        "A handshake that delays all terms until after installation",
-        "A spot market purchase after the supplier invests",
-        "A long-term contract with price and volume terms",
-        "No cancellation penalty and no commitment"
+        "$75,000 on delivery; $20,000 on cancellation",
+        "$50,000 on delivery; $50,000 on cancellation",
+        "$75,000 on delivery; $55,000 on cancellation",
+        "$70,000 on delivery; no cancellation payment"
       ],
       "tag": "post_investment_holdup",
-      "type": "bridge",
+      "type": "analysis",
       "objective": "LO5.5",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_marketSignal_post_investment_holdup",
       "primarySkill": "post_investment_holdup",
       "secondarySkills": [],
       "repairSkill": "post_investment_holdup",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Specific investments create renegotiation risk after outside options weaken.",
-      "aHash": "dfbfe93d60773f27d11a589c4563c22ea75bcc5bb0a0921155298069961513a1"
+      "commonError": "Protecting variable delivery cost while leaving the specific investment exposed",
+      "feedback": "Delivery receipts of $75,000 cover $70,000 total cost. Cancellation receipts of $55,000 cover the $50,000 tooling cost because delivery cost is then avoided. Both states leave $5,000, so the commitment protects the investment.",
+      "aHash": "514ae3eec90314dc9d9cab2dfcbfdaec00e4f2a115657d057d2b1bb5c9db2593"
     },
     {
       "id": 6082,
       "sourceGame": "marketSignal",
-      "q": "A supplier can earn $180,000 value from a specific investment costing $120,000, but expects renegotiation to leave it only $90,000. What happens?",
+      "q": "A specific investment costs the supplier $120,000 and creates $180,000 of joint present value before that cost. Anticipated renegotiation leaves the supplier only $90,000 in present-value receipts, with no other costs or outside value. What happens?",
       "options": [
-        "It will invest because total value is positive no matter who captures it",
-        "It will ignore renegotiation risk as sunk",
-        "It will double all inputs and solve the problem",
+        "The supplier invests because its $90,000 receipts cover its $120,000 cost",
+        "The supplier invests because the $60,000 joint gain guarantees a private gain",
+        "The supplier ignores anticipated receipts because the investment will later be sunk",
         "It may refuse or underinvest because expected private payoff is below cost"
       ],
       "tag": "post_investment_holdup",
-      "type": "bridge",
+      "type": "analysis",
       "objective": "LO5.5",
       "difficulty": "microSkillBridge",
       "conceptCluster": "bridge_marketSignal_post_investment_holdup",
       "primarySkill": "post_investment_holdup",
       "secondarySkills": [],
       "repairSkill": "post_investment_holdup",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Specific investments create renegotiation risk after outside options weaken.",
+      "commonError": "Using positive joint surplus as proof of private investment incentive",
+      "feedback": "Joint surplus is $60,000, but the supplier expects $90,000 − $120,000 = −$30,000. It may refuse despite the joint gain unless an ex ante commitment protects its receipts.",
       "aHash": "693cf82e7811c29e2324506c7c0671084c24a05bbbe481afd3675fd63ffc529e"
-    },
-    {
-      "id": 6083,
-      "sourceGame": "marketSignal",
-      "q": "Which asset has the highest hold-up risk?",
-      "options": [
-        "Tooling customized to one buyer with little outside value",
-        "A standard delivery truck used for many customers",
-        "Cash held in a bank account",
-        "A commodity input sold on an open market"
-      ],
-      "tag": "post_investment_holdup",
-      "type": "bridge",
-      "objective": "LO5.5",
-      "difficulty": "microSkillBridge",
-      "conceptCluster": "bridge_marketSignal_post_investment_holdup",
-      "primarySkill": "post_investment_holdup",
-      "secondarySkills": [],
-      "repairSkill": "post_investment_holdup",
-      "commonError": "needs_bridge_confirmation",
-      "feedback": "Specific investments create renegotiation risk after outside options weaken.",
-      "aHash": "9973dfd62484025bd91c97314e87c56882f01f2a443f0f686d4a12002ca124a2"
     }
   ]
 };

@@ -1,8 +1,10 @@
 # Directorate instructional alignment patch
 
-These are replayable instructional corrections. The Cost Directive Standard
-content review is complete; the whole-Directorate review and Cost Legendary
-review are not complete. Mechanical validation alone is not certification.
+These are replayable instructional corrections. The Cost Directive and Market
+Signal Standard content reviews are complete. Market's graph-linked records
+also received a graph-necessity review, including Legendary candidates. The
+whole-Directorate review and full Legendary reviews are not complete.
+Mechanical validation alone is not certification.
 The full pre-edit report, source map, item ledger and remaining-work list are
 local private faculty materials under the ignored `_private_course_sources`
 directory. This tool does not read confidential assessments or publish them.
@@ -25,6 +27,11 @@ python audit_tools/directorate_alignment/apply_patch.py --validate
 field changes, tier moves, cross-game relocations and genuinely new questions.
 `cost-standard-patch.json` adds Cost-only content/metadata corrections, tier
 moves, 78 intentional retirements, and one narrow retest-matching repair.
+`market-standard-patch.json` adds Market-only content and metadata corrections,
+realistic tier placement, 88 retirements, and a graph-required Trial allowlist.
+It also records the independently reproduced retest-history fix and a narrow
+mobile graph-lightbox legibility correction. All three graph assets, including
+the independent numerical SVG, retain their original bytes.
 The tool accepts the original publisher output, the first-pass state, or the
 final state. It validates the complete chain, source pools and destination IDs
 in memory. Retired records must match an accepted fingerprint and source pool;
@@ -43,8 +50,10 @@ Cost's only engine fix lets the existing history-free retest retry run when
 recent-history exclusions exhaust the matching skill, objective or tag. This
 prevents selection from drifting to an unrelated candidate despite matching
 content being available. The full function replacement is conflict-checked in
-the Cost manifest. Market Signal's question-package LO label and graph descriptions are
-updated. The publisher's normalization and SHA-256 verification are retained.
+the Cost manifest. Market uses the same three matching guards only after its
+own regression reproduced the failure. Its mobile expanded graph view retains
+legible dimensions and permits scrolling; the existing modal and accessibility
+descriptions remain in use. The publisher's normalization and SHA-256 verification are retained.
 Private source files and faculty exports are excluded from deployment.
 
 `runtime-check.mjs` uses Playwright (set `PLAYWRIGHT_MODULE` to its package
@@ -56,12 +65,15 @@ and are saved in the existing private alignment-audit directory. Cross-objective
 remediation selections are logged separately: a returned record is not proof
 of misconception-specific repair or appropriate retest demand.
 
-Set `AUDIT_GAME=cost-directive` and optionally `AUDIT_OUTPUT_DIR` to run a scoped
+Set `AUDIT_GAME=cost-directive` or `AUDIT_GAME=market-signal` and optionally
+`AUDIT_OUTPUT_DIR` to run a scoped
 pass. `runtime-check.mjs --standard-only` restricts route/boss sampling to
-Standard content; answer hashes still cover the entire loaded bank. Cost also
-checks room-appropriate recovery twice per source and exhausts matching-item
-history to verify the retest repair. These checks do not semantically certify
-the excluded Legendary items.
+Standard content; answer hashes still cover the entire loaded bank. Cost and
+Market also check room-appropriate recovery twice per source and exhaust
+matching-item history to verify the retest repair. Market's explicitly reviewed
+cross-skill transfer cases are documented alongside the narrow test exceptions;
+its Trial check builds 20 seeded decks for every supported length. These checks
+do not semantically certify the excluded Legendary items.
 
 `campaign-check.mjs` samples 40 seeded 30-room Standard traversals for each of
 two response-time profiles in every game. It calls the actual selection and
