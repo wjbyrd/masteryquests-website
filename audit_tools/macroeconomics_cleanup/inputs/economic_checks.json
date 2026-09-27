@@ -1,0 +1,3881 @@
+{
+  "ECON-SP-EASYBOSS-2002": {
+    "expressions": [
+      [
+        "900+1100+1500",
+        3500
+      ],
+      [
+        "900+1100+1500+500",
+        4000
+      ]
+    ],
+    "basis": "Current M1 includes savings; M2 includes M1 plus small time deposits in this ledger."
+  },
+  "PM2D2-MULT-L-001": {
+    "expressions": [
+      [
+        "60/(1-.8)-100",
+        200
+      ],
+      [
+        "60/(1-.6)-20",
+        130
+      ]
+    ],
+    "basis": "Subtract total AD offsets after the purchase multiplier."
+  },
+  "PM2D2-MULT-L-002": {
+    "expressions": [
+      [
+        "80/(1-.75)-230",
+        90
+      ]
+    ],
+    "basis": "Subtract total AD offsets after the purchase multiplier."
+  },
+  "ECON-SP-HARD-230": {
+    "expressions": [
+      [
+        "80/(1-.75)-100",
+        220
+      ]
+    ],
+    "basis": "Subtract total AD offsets after the purchase multiplier."
+  },
+  "P52B-S4-IEA-L-001": {
+    "expressions": [
+      [
+        "8-5",
+        3
+      ],
+      [
+        "(1.08/1.05-1)*100",
+        2.857142857
+      ]
+    ],
+    "basis": "Approximation is explicitly requested; labor-force exit is an alternative explanation."
+  },
+  "ECON-NL-LEGENDARYBOSS-9124": {
+    "expressions": [
+      [
+        "150+4",
+        154
+      ],
+      [
+        "12-4-6",
+        2
+      ],
+      [
+        "154+2",
+        156
+      ],
+      [
+        "2/156*100",
+        1.282051282
+      ]
+    ],
+    "basis": "All six exits explicitly originate among the remaining unemployed."
+  },
+  "P52A-CPI-LB-002": {
+    "expressions": [
+      [
+        "5*8+4*15",
+        100
+      ],
+      [
+        "5*10+4*18",
+        122
+      ],
+      [
+        "5*11+4*19",
+        131
+      ],
+      [
+        "(131-122)/122*100",
+        7.37704918
+      ]
+    ],
+    "basis": "Visible fixed basket; denominator selection distinguishes CPI level from inflation."
+  },
+  "PG5-PC-L-006": {
+    "expressions": [
+      [
+        "6+.6-1.1",
+        5.5
+      ],
+      [
+        "6+.6",
+        6.6
+      ]
+    ],
+    "basis": "Visible B coordinate u=6, inflation=6; intercept identifies expectation plus offset."
+  },
+  "ECON-EC-EASYBOSS-17004": {
+    "expressions": [
+      [
+        "20+(35-20)+(60-35)",
+        60
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-EC-EASYBOSS-17010": {
+    "expressions": [
+      [
+        "39+(64-39)",
+        64
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-EC-EASYBOSS-17013": {
+    "expressions": [
+      [
+        "68-43",
+        25
+      ],
+      [
+        "28+(43-28)+(68-43)",
+        68
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-EC-EASYBOSS-17014": {
+    "expressions": [
+      [
+        "70+30",
+        100
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-EC-EASYBOSS-17022": {
+    "expressions": [
+      [
+        "72+47",
+        119
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-EASYBOSS-2000": {
+    "expressions": [
+      [
+        "34+(49-34)+(74-49)",
+        74
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-EASYBOSS-2002": {
+    "expressions": [
+      [
+        "53+(78-53)",
+        78
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-EASYBOSS-2004": {
+    "expressions": [
+      [
+        "82-57",
+        25
+      ],
+      [
+        "42+(57-42)+(82-57)",
+        82
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-EASYBOSS-2005": {
+    "expressions": [
+      [
+        "84+44",
+        128
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-LEGENDARYBOSS-9101": {
+    "expressions": [
+      [
+        "86+61",
+        147
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-LEGENDARYBOSS-9102": {
+    "expressions": [
+      [
+        "48+(63-48)+(88-63)",
+        88
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52B-S3-GDPM-B2-001": {
+    "expressions": [
+      [
+        "67+(92-67)",
+        92
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52B-S3-GDPM-B2-003": {
+    "expressions": [
+      [
+        "96-71",
+        25
+      ],
+      [
+        "56+(71-56)+(96-71)",
+        96
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52B-S3-GDPM-B3-001": {
+    "expressions": [
+      [
+        "98+58",
+        156
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52B-S3-GDPM-B3-002": {
+    "expressions": [
+      [
+        "100+75",
+        175
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52B-S3-GDPM-B3-003": {
+    "expressions": [
+      [
+        "62+(77-62)+(102-77)",
+        102
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-EC-EASYBOSS-17008": {
+    "expressions": [
+      [
+        "30-10",
+        20
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-EC-EASYBOSS-17019": {
+    "expressions": [
+      [
+        "35+105",
+        140
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-EC-EASYBOSS-17020": {
+    "expressions": [
+      [
+        "400-240-80-(40-80)",
+        120
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-EASYBOSS-2006": {
+    "expressions": [
+      [
+        "(45+13)-45",
+        13
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-EASYBOSS-2007": {
+    "expressions": [
+      [
+        "50+(14-50)",
+        14
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-EASYBOSS-2008": {
+    "expressions": [
+      [
+        "55-15",
+        40
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-EASYBOSS-2009": {
+    "expressions": [
+      [
+        "60+180",
+        240
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-EASYBOSS-2010": {
+    "expressions": [
+      [
+        "650-390-130-(65-130)",
+        195
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-EASYBOSS-2011": {
+    "expressions": [
+      [
+        "(70+18)-70",
+        18
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-LEGENDARYBOSS-9100": {
+    "expressions": [
+      [
+        "75+(19-75)",
+        19
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-LEGENDARYBOSS-9106": {
+    "expressions": [
+      [
+        "80-20",
+        60
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B1-GDPC-FB-004": {
+    "expressions": [
+      [
+        "85+255",
+        340
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B1-GDPC-FB-005": {
+    "expressions": [
+      [
+        "900-540-180-(90-180)",
+        270
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B1-GDPC-MB-001": {
+    "expressions": [
+      [
+        "(95+23)-95",
+        23
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B1-GDPC-MB-002": {
+    "expressions": [
+      [
+        "100+(24-100)",
+        24
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-EASYBOSS-2012": {
+    "expressions": [
+      [
+        "100*10",
+        1000
+      ],
+      [
+        "100*12",
+        1200
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-EASYBOSS-2013": {
+    "expressions": [
+      [
+        "1320/1.2",
+        1100
+      ],
+      [
+        "(1/1.05-1)*100",
+        -4.761904762
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-EASYBOSS-2014": {
+    "expressions": [
+      [
+        "(1.1*1.2-1)*100",
+        32
+      ],
+      [
+        "(1.32/1.2-1)*100",
+        10
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-LEGENDARYBOSS-9104": {
+    "expressions": [
+      [
+        "(1560-1300)/1300*100",
+        20
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B1-RNGDP-FB-004": {
+    "expressions": [
+      [
+        "140*10",
+        1400
+      ],
+      [
+        "140*12",
+        1680
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B1-RNGDP-FB-006": {
+    "expressions": [
+      [
+        "1800/1.2",
+        1500
+      ],
+      [
+        "(1/1.05-1)*100",
+        -4.761904762
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B1-RNGDP-LB-001": {
+    "expressions": [
+      [
+        "(1.1*1.2-1)*100",
+        32
+      ],
+      [
+        "(1.32/1.2-1)*100",
+        10
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B1-RNGDP-MB-001": {
+    "expressions": [
+      [
+        "(2040-1700)/1700*100",
+        20
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B1-RNGDP-MB-002": {
+    "expressions": [
+      [
+        "180*10",
+        1800
+      ],
+      [
+        "180*12",
+        2160
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B1-RNGDP-MB-003": {
+    "expressions": [
+      [
+        "2280/1.2",
+        1900
+      ],
+      [
+        "(1/1.05-1)*100",
+        -4.761904762
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-EC-FINALBOSS-19000": {
+    "expressions": [
+      [
+        "(132-120)/120*100",
+        10
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-EC-LEGENDARYBOSS-20000": {
+    "expressions": [
+      [
+        "(130-125)/125*100",
+        4
+      ],
+      [
+        "(1.03/1.04-1)*100",
+        -0.961538462
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-EC-MEDIUMBOSS-18001": {
+    "expressions": [
+      [
+        "168/160",
+        1.05
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-EC-MEDIUMBOSS-18003": {
+    "expressions": [
+      [
+        "(1.06/1.08-1)*100",
+        -1.851851852
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-EASYBOSS-2018": {
+    "expressions": [
+      [
+        "(132-120)/120*100",
+        10
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-EASYBOSS-2019": {
+    "expressions": [
+      [
+        "(130-125)/125*100",
+        4
+      ],
+      [
+        "(1.03/1.04-1)*100",
+        -0.961538462
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-EASYBOSS-2020": {
+    "expressions": [
+      [
+        "168/160",
+        1.05
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-EASYBOSS-2021": {
+    "expressions": [
+      [
+        "(1.06/1.08-1)*100",
+        -1.851851852
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-EASYBOSS-2022": {
+    "expressions": [
+      [
+        "(132-120)/120*100",
+        10
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-EASYBOSS-2023": {
+    "expressions": [
+      [
+        "(130-125)/125*100",
+        4
+      ],
+      [
+        "(1.03/1.04-1)*100",
+        -0.961538462
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-LEGENDARYBOSS-9108": {
+    "expressions": [
+      [
+        "168/160",
+        1.05
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52A-CPI-B2-001": {
+    "expressions": [
+      [
+        "(1.06/1.08-1)*100",
+        -1.851851852
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52A-CPI-B2-002": {
+    "expressions": [
+      [
+        "(132-120)/120*100",
+        10
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52A-CPI-B2-003": {
+    "expressions": [
+      [
+        "(130-125)/125*100",
+        4
+      ],
+      [
+        "(1.03/1.04-1)*100",
+        -0.961538462
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52A-CPI-B3-001": {
+    "expressions": [
+      [
+        "168/160",
+        1.05
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52A-CPI-B3-002": {
+    "expressions": [
+      [
+        "(1.06/1.08-1)*100",
+        -1.851851852
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52A-CPI-B3-003": {
+    "expressions": [
+      [
+        "(132-120)/120*100",
+        10
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52A-CPI-LB-001": {
+    "expressions": [
+      [
+        "(130-125)/125*100",
+        4
+      ],
+      [
+        "(1.03/1.04-1)*100",
+        -0.961538462
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-EASYBOSS-2030": {
+    "expressions": [
+      [
+        "(1.04/1.06-1)*100",
+        -1.886792453
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-EASYBOSS-2031": {
+    "expressions": [
+      [
+        "(1.05/1.08-1)*100",
+        -2.777777778
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-EASYBOSS-2032": {
+    "expressions": [
+      [
+        "120*125/100",
+        150.0
+      ],
+      [
+        "156.0-150.0",
+        6.0
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-LEGENDARYBOSS-9113": {
+    "expressions": [
+      [
+        "(1.04/1.06-1)*100",
+        -1.886792453
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B2-INDEX-FB-004": {
+    "expressions": [
+      [
+        "(1.05/1.08-1)*100",
+        -2.777777778
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B2-INDEX-FB-005": {
+    "expressions": [
+      [
+        "160*125/100",
+        200.0
+      ],
+      [
+        "208.0-200.0",
+        8.0
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B2-INDEX-LB-001": {
+    "expressions": [
+      [
+        "(1.04/1.06-1)*100",
+        -1.886792453
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B2-INDEX-MB-001": {
+    "expressions": [
+      [
+        "(1.05/1.08-1)*100",
+        -2.777777778
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B2-INDEX-MB-002": {
+    "expressions": [
+      [
+        "200*125/100",
+        250.0
+      ],
+      [
+        "260.0-250.0",
+        10.0
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-EC-FINALBOSS-19003": {
+    "expressions": [
+      [
+        "8-3",
+        5
+      ],
+      [
+        "8-6",
+        2
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-EC-FINALBOSS-19004": {
+    "expressions": [
+      [
+        "7-2",
+        5
+      ],
+      [
+        "9-5",
+        4
+      ],
+      [
+        "7-4",
+        3
+      ],
+      [
+        "9-4",
+        5
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-EC-FINALBOSS-19005": {
+    "expressions": [
+      [
+        "3+5",
+        8
+      ],
+      [
+        "8-7",
+        1
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-EC-LEGENDARYBOSS-20005": {
+    "expressions": [
+      [
+        "8-3",
+        5
+      ],
+      [
+        "8-6",
+        2
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-EC-MEDIUMBOSS-18004": {
+    "expressions": [
+      [
+        "7-2",
+        5
+      ],
+      [
+        "9-5",
+        4
+      ],
+      [
+        "7-4",
+        3
+      ],
+      [
+        "9-4",
+        5
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-EC-MEDIUMBOSS-18005": {
+    "expressions": [
+      [
+        "3+5",
+        8
+      ],
+      [
+        "8-7",
+        1
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-EASYBOSS-2034": {
+    "expressions": [
+      [
+        "8-3",
+        5
+      ],
+      [
+        "8-6",
+        2
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-EASYBOSS-2035": {
+    "expressions": [
+      [
+        "7-2",
+        5
+      ],
+      [
+        "9-5",
+        4
+      ],
+      [
+        "7-4",
+        3
+      ],
+      [
+        "9-4",
+        5
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-LEGENDARYBOSS-9114": {
+    "expressions": [
+      [
+        "3+5",
+        8
+      ],
+      [
+        "8-7",
+        1
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B2-RNI-FB-005": {
+    "expressions": [
+      [
+        "8-3",
+        5
+      ],
+      [
+        "8-6",
+        2
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B2-RNI-LB-001": {
+    "expressions": [
+      [
+        "7-2",
+        5
+      ],
+      [
+        "9-5",
+        4
+      ],
+      [
+        "7-4",
+        3
+      ],
+      [
+        "9-4",
+        5
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B2-RNI-LB-002": {
+    "expressions": [
+      [
+        "3+5",
+        8
+      ],
+      [
+        "8-7",
+        1
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B2-RNI-MB-002": {
+    "expressions": [
+      [
+        "8-3",
+        5
+      ],
+      [
+        "8-6",
+        2
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B2-RNI-MB-003": {
+    "expressions": [
+      [
+        "7-2",
+        5
+      ],
+      [
+        "9-5",
+        4
+      ],
+      [
+        "7-4",
+        3
+      ],
+      [
+        "9-4",
+        5
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-EC-FINALBOSS-19002": {
+    "expressions": [
+      [
+        "1.2/2",
+        0.6
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-EC-LEGENDARYBOSS-20002": {
+    "expressions": [
+      [
+        "(1.05/1.03-1)*100",
+        1.941747573
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-EC-MEDIUMBOSS-18002": {
+    "expressions": [
+      [
+        "1.2/2",
+        0.6
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-EASYBOSS-2025": {
+    "expressions": [
+      [
+        "(1.05/1.03-1)*100",
+        1.941747573
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-LEGENDARYBOSS-9109": {
+    "expressions": [
+      [
+        "1.2/2",
+        0.6
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-LEGENDARYBOSS-9115": {
+    "expressions": [
+      [
+        "(1.05/1.03-1)*100",
+        1.941747573
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B2-BIAS-FB-005": {
+    "expressions": [
+      [
+        "1.2/2",
+        0.6
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B2-BIAS-MB-001": {
+    "expressions": [
+      [
+        "(1.05/1.03-1)*100",
+        1.941747573
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B2-BIAS-MB-003": {
+    "expressions": [
+      [
+        "1.2/2",
+        0.6
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-EC-FINALBOSS-19022": {
+    "expressions": [
+      [
+        ".1/1.1*100",
+        9.09090909
+      ],
+      [
+        "1.1/2*100",
+        55
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-EC-MEDIUMBOSS-18010": {
+    "expressions": [
+      [
+        ".1/1.1*100",
+        9.09090909
+      ],
+      [
+        "1.1/2*100",
+        55
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-FINALBOSS-4004": {
+    "expressions": [
+      [
+        ".1/1.1*100",
+        9.09090909
+      ],
+      [
+        "1.1/2*100",
+        55
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52B-S4-UNEM-B1-001": {
+    "expressions": [
+      [
+        ".1/1.1*100",
+        9.09090909
+      ],
+      [
+        "1.1/2*100",
+        55
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52B-S4-UNEM-B2-003": {
+    "expressions": [
+      [
+        ".1/1.1*100",
+        9.09090909
+      ],
+      [
+        "1.1/2*100",
+        55
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-FINALBOSS-4017": {
+    "expressions": [
+      [
+        "2+3",
+        5
+      ],
+      [
+        "8-(2+3)",
+        3
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-LEGENDARYBOSS-9131": {
+    "expressions": [
+      [
+        "2+3",
+        5
+      ],
+      [
+        "8-5",
+        3
+      ],
+      [
+        "2+2",
+        4
+      ],
+      [
+        "5-4",
+        1
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B4-NRU-MB-004": {
+    "expressions": [
+      [
+        "2+3",
+        5
+      ],
+      [
+        "6-5",
+        1
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-LEGENDARYBOSS-9118": {
+    "expressions": [
+      [
+        "1.2/1.25-1",
+        -0.04
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-MEDIUMBOSS-3006": {
+    "expressions": [
+      [
+        "1320/12",
+        110
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-MEDIUMBOSS-3007": {
+    "expressions": [
+      [
+        "5/.6",
+        8.333333333
+      ],
+      [
+        "(1/.6-1)*100",
+        66.66666667
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-MEDIUMBOSS-3008": {
+    "expressions": [
+      [
+        "(1.05*.95-1)*100",
+        -0.25
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-MEDIUMBOSS-3010": {
+    "expressions": [
+      [
+        "1.2/1.25-1",
+        -0.04
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-MEDIUMBOSS-3011": {
+    "expressions": [
+      [
+        "1920/12",
+        160
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B3-PROD-EB-001": {
+    "expressions": [
+      [
+        "5/.6",
+        8.333333333
+      ],
+      [
+        "(1/.6-1)*100",
+        66.66666667
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B3-PROD-FB-006": {
+    "expressions": [
+      [
+        "1.2/1.25-1",
+        -0.04
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B3-PROD-LB-001": {
+    "expressions": [
+      [
+        "2520/12",
+        210
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-EC-FINALBOSS-19009": {
+    "expressions": [
+      [
+        "(1.06/1.08-1)*100",
+        -1.851851852
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-EC-LEGENDARYBOSS-20018": {
+    "expressions": [
+      [
+        "70/7",
+        10
+      ],
+      [
+        "70/2",
+        35
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-LEGENDARYBOSS-9116": {
+    "expressions": [
+      [
+        "(1.1-1)*100",
+        10
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-LEGENDARYBOSS-9117": {
+    "expressions": [
+      [
+        "70/4",
+        17.5
+      ],
+      [
+        "70/2",
+        35
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-MEDIUMBOSS-3000": {
+    "expressions": [
+      [
+        "(1.06/1.08-1)*100",
+        -1.851851852
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-MEDIUMBOSS-3001": {
+    "expressions": [
+      [
+        "70/7",
+        10
+      ],
+      [
+        "70/2",
+        35
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-MEDIUMBOSS-3003": {
+    "expressions": [
+      [
+        "(1.1-1)*100",
+        10
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-MEDIUMBOSS-3004": {
+    "expressions": [
+      [
+        "70/4",
+        17.5
+      ],
+      [
+        "70/2",
+        35
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-MEDIUMBOSS-3005": {
+    "expressions": [
+      [
+        "(1.06/1.08-1)*100",
+        -1.851851852
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52B-S2-LSG-B1-001": {
+    "expressions": [
+      [
+        "70/7",
+        10
+      ],
+      [
+        "70/2",
+        35
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52B-S2-LSG-B1-003": {
+    "expressions": [
+      [
+        "(1.1-1)*100",
+        10
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52B-S2-LSG-B3-001": {
+    "expressions": [
+      [
+        "70/4",
+        17.5
+      ],
+      [
+        "70/2",
+        35
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52B-S2-LSG-B3-002": {
+    "expressions": [
+      [
+        "(1.06/1.08-1)*100",
+        -1.851851852
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52B-S2-LSG-B3-003": {
+    "expressions": [
+      [
+        "70/7",
+        10
+      ],
+      [
+        "70/2",
+        35
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52B-S3-MFM-B2-002": {
+    "expressions": [
+      [
+        "160+320+480",
+        960
+      ],
+      [
+        "960+160",
+        1120
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52B-S3-MFM-B3-003": {
+    "expressions": [
+      [
+        "240+480+720",
+        1440
+      ],
+      [
+        "1440+240",
+        1680
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-2007": {
+    "expressions": [
+      [
+        "(1000-100)*.1",
+        90.0
+      ],
+      [
+        "100-90.0",
+        10.0
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-9104": {
+    "expressions": [
+      [
+        "1440-360-1200",
+        -120
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52A-BANK-B2-001": {
+    "expressions": [
+      [
+        "1600*.1",
+        160
+      ],
+      [
+        "320-160",
+        160
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52A-BANK-B2-003": {
+    "expressions": [
+      [
+        "(1800-180)*.1",
+        162.0
+      ],
+      [
+        "180-162.0",
+        18.0
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52A-BANK-B3-001": {
+    "expressions": [
+      [
+        "2400-600-2000",
+        -200
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-2006": {
+    "expressions": [
+      [
+        "100/.2",
+        500
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-2008": {
+    "expressions": [
+      [
+        "120/.1",
+        1200
+      ],
+      [
+        "1200-120",
+        1080
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-9102": {
+    "expressions": [
+      [
+        "140/(.1+.1)",
+        700
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-9109": {
+    "expressions": [
+      [
+        "-160/.25",
+        -640
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52A-BANK-B2-002": {
+    "expressions": [
+      [
+        "180/.2",
+        900
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52A-BANK-B3-003": {
+    "expressions": [
+      [
+        "200/.1",
+        2000
+      ],
+      [
+        "2000-200",
+        1800
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-2010": {
+    "expressions": [
+      [
+        "-480/4",
+        -120
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-2011": {
+    "expressions": [
+      [
+        "280-.15*1400",
+        70.0
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-9107": {
+    "expressions": [
+      [
+        "-800/4",
+        -200
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-9113": {
+    "expressions": [
+      [
+        "440-.15*2200",
+        110.0
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52B-S3-MPT-B2-003": {
+    "expressions": [
+      [
+        "-1120/4",
+        -280
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52B-S3-MPT-B3-001": {
+    "expressions": [
+      [
+        "600-.15*3000",
+        150.0
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-2012": {
+    "expressions": [
+      [
+        "400/100",
+        4
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-9106": {
+    "expressions": [
+      [
+        "720/180",
+        4
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2C1-MCL-FB-006": {
+    "expressions": [
+      [
+        "1040/260",
+        4
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "43071": {
+    "expressions": [
+      [
+        "120-140",
+        -20
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "43072": {
+    "expressions": [
+      [
+        "(180-30)-150",
+        0
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "43099": {
+    "expressions": [
+      [
+        "40+20",
+        60
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "43100": {
+    "expressions": [
+      [
+        "350-300",
+        50
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "43110": {
+    "expressions": [
+      [
+        "360-420",
+        -60
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "43088": {
+    "expressions": [
+      [
+        "200+20+40",
+        260
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "43089": {
+    "expressions": [
+      [
+        "10/20*100",
+        50
+      ],
+      [
+        "11/24*100",
+        45.83333333
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "43157": {
+    "expressions": [
+      [
+        "40-80",
+        -40
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "43121": {
+    "expressions": [
+      [
+        "200+40",
+        240
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "43136": {
+    "expressions": [
+      [
+        "12/30*100",
+        40
+      ],
+      [
+        "10/20*100",
+        50
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "43147": {
+    "expressions": [
+      [
+        "600+120",
+        720
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "43169": {
+    "expressions": [
+      [
+        "300-60-180",
+        60
+      ],
+      [
+        "60-90",
+        -30
+      ],
+      [
+        "300-180-90",
+        30
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "43170": {
+    "expressions": [
+      [
+        "80-120",
+        -40
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "43171": {
+    "expressions": [
+      [
+        "50-100",
+        -50
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "43173": {
+    "expressions": [
+      [
+        "700-140-420",
+        140
+      ],
+      [
+        "140-210",
+        -70
+      ],
+      [
+        "700-420-210",
+        70
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "43174": {
+    "expressions": [
+      [
+        "160-240",
+        -80
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "43176": {
+    "expressions": [
+      [
+        "90-180",
+        -90
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "43178": {
+    "expressions": [
+      [
+        "1100-220-660",
+        220
+      ],
+      [
+        "220-330",
+        -110
+      ],
+      [
+        "1100-660-330",
+        110
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "43179": {
+    "expressions": [
+      [
+        "240-360",
+        -120
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "43180": {
+    "expressions": [
+      [
+        "130-260",
+        -130
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "43185": {
+    "expressions": [
+      [
+        "1500-300-900",
+        300
+      ],
+      [
+        "300-450",
+        -150
+      ],
+      [
+        "1500-900-450",
+        150
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "43186": {
+    "expressions": [
+      [
+        "320-480",
+        -160
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "43190": {
+    "expressions": [
+      [
+        "170-340",
+        -170
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-3000": {
+    "expressions": [
+      [
+        "(1.1*.9-1)*100",
+        -1
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-3001": {
+    "expressions": [
+      [
+        "120*5/2",
+        300.0
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-3002": {
+    "expressions": [
+      [
+        "1.05/1.05",
+        1
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-9116": {
+    "expressions": [
+      [
+        "(1.03*1.02/.99-1)*100",
+        6.121212121
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-9118": {
+    "expressions": [
+      [
+        "(1.1*.9-1)*100",
+        -1
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-9122": {
+    "expressions": [
+      [
+        "200*5/2",
+        500.0
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52B-S4-QTM-B1-001": {
+    "expressions": [
+      [
+        "(1.03*1.02/.99-1)*100",
+        6.121212121
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52B-S4-QTM-B1-002": {
+    "expressions": [
+      [
+        "(1.1*.9-1)*100",
+        -1
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52B-S4-QTM-B1-003": {
+    "expressions": [
+      [
+        "280*5/2",
+        700.0
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52B-S4-QTM-B3-002": {
+    "expressions": [
+      [
+        "(1.03*1.02/.99-1)*100",
+        6.121212121
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52B-S4-QTM-B3-003": {
+    "expressions": [
+      [
+        "(1.1*.9-1)*100",
+        -1
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-3003": {
+    "expressions": [
+      [
+        "2/2",
+        1
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-3005": {
+    "expressions": [
+      [
+        "(1.06/1.04-1)*100",
+        1.923076923
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2C2-NEUT-EB-001": {
+    "expressions": [
+      [
+        "2/2",
+        1
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2C2-NEUT-FB-005": {
+    "expressions": [
+      [
+        "2/2",
+        1
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-3006": {
+    "expressions": [
+      [
+        "4+2",
+        6
+      ],
+      [
+        "3+5",
+        8
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-3007": {
+    "expressions": [
+      [
+        "7-3",
+        4
+      ],
+      [
+        "7-6",
+        1
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-9117": {
+    "expressions": [
+      [
+        "1-4",
+        -3
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-9127": {
+    "expressions": [
+      [
+        "4+2",
+        6
+      ],
+      [
+        "3+5",
+        8
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2C2-FISH-EB-001": {
+    "expressions": [
+      [
+        "7-3",
+        4
+      ],
+      [
+        "7-6",
+        1
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2C2-FISH-EB-003": {
+    "expressions": [
+      [
+        "1-4",
+        -3
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2C2-FISH-FB-004": {
+    "expressions": [
+      [
+        "4+2",
+        6
+      ],
+      [
+        "3+5",
+        8
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2C2-FISH-FB-006": {
+    "expressions": [
+      [
+        "7-3",
+        4
+      ],
+      [
+        "7-6",
+        1
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-3012": {
+    "expressions": [
+      [
+        "(1/1.25-1)*100",
+        -20
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-3014": {
+    "expressions": [
+      [
+        "(1/.9-1)*100",
+        11.11111111
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-9124": {
+    "expressions": [
+      [
+        "(1/1.25-1)*100",
+        -20
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2C2-ITAX-EB-002": {
+    "expressions": [
+      [
+        "(1/.9-1)*100",
+        11.11111111
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2C2-ITAX-FB-005": {
+    "expressions": [
+      [
+        "(1/1.25-1)*100",
+        -20
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2C2-ITAX-LB-001": {
+    "expressions": [
+      [
+        "(1/.9-1)*100",
+        11.11111111
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-MEDIUMBOSS-3001": {
+    "expressions": [
+      [
+        "3-.5*(3-5)",
+        4
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-MEDIUMBOSS-3006": {
+    "expressions": [
+      [
+        "4+(6-5)-2",
+        3
+      ],
+      [
+        "4+(6-5)",
+        5
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2A-EXP-EB-007": {
+    "expressions": [
+      [
+        "4+(6-5)-2",
+        3
+      ],
+      [
+        "4+(6-5)",
+        5
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52B-S1-DIS-B3-001": {
+    "expressions": [
+      [
+        "8/4",
+        2
+      ],
+      [
+        "6/4",
+        1.5
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2A-DIS-FB-016": {
+    "expressions": [
+      [
+        "5/2",
+        2.5
+      ],
+      [
+        "6/3",
+        2
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2A-DIS-MB-015": {
+    "expressions": [
+      [
+        "2*((7-3)-(7-4))",
+        2
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-MEDIUMBOSS-3012": {
+    "expressions": [
+      [
+        "(2+1+1)/(7-5)",
+        2
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-MEDIUMBOSS-3013": {
+    "expressions": [
+      [
+        "5/2.5",
+        2
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2A-SAC-EB-016": {
+    "expressions": [
+      [
+        "6/3",
+        2
+      ],
+      [
+        "5/2",
+        2.5
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2A-SAC-EB-017": {
+    "expressions": [
+      [
+        "3*2-3",
+        3
+      ],
+      [
+        "(3*2-3)/2",
+        1.5
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2A-SAC-EB-018": {
+    "expressions": [
+      [
+        "(2+1+1)/(7-5)",
+        2
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2A-SAC-FB-020": {
+    "expressions": [
+      [
+        "3*3",
+        9
+      ],
+      [
+        "2*3",
+        6
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2A-SAC-FB-021": {
+    "expressions": [
+      [
+        "4/2",
+        2
+      ],
+      [
+        "2.5-4/2",
+        0.5
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2A-SAC-FB-022": {
+    "expressions": [
+      [
+        "(8-3)/(4-1)",
+        1.666666667
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2A-SAC-LB-023": {
+    "expressions": [
+      [
+        "(2+1+1)/(7-5)",
+        2
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2A-SAC-LB-024": {
+    "expressions": [
+      [
+        "6-4",
+        2
+      ],
+      [
+        "4+2*2",
+        8
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2A-SAC-LB-025": {
+    "expressions": [
+      [
+        "(3+3+2)/4",
+        2
+      ],
+      [
+        "(1+3)/2",
+        2
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2A-SAC-MB-019": {
+    "expressions": [
+      [
+        "2/2",
+        1
+      ],
+      [
+        "4/1",
+        4
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52A-AD-B1-002": {
+    "expressions": [
+      [
+        "-30+60",
+        30
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52A-AD-B2-003": {
+    "expressions": [
+      [
+        "-70+140",
+        70
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52B-S1-LRADJ-B1-001": {
+    "expressions": [
+      [
+        "100-80",
+        20
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-4004": {
+    "expressions": [
+      [
+        "3*30-60",
+        30
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52B-S4-MPTX-B1-003": {
+    "expressions": [
+      [
+        "3*70-140",
+        70
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2C3-MPTX-LB-001": {
+    "expressions": [
+      [
+        "3*110-220",
+        110
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-4006": {
+    "expressions": [
+      [
+        "20/(1-.75)",
+        80
+      ],
+      [
+        ".75*20/(1-.75)",
+        60
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-4007": {
+    "expressions": [
+      [
+        "(30-.8*30)/(1-.8)",
+        30
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-4008": {
+    "expressions": [
+      [
+        ".6*40/(1-.6)",
+        60.0
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52A-FISCAD-B1-002": {
+    "expressions": [
+      [
+        "60/(1-.75)",
+        240
+      ],
+      [
+        ".75*60/(1-.75)",
+        180
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52A-FISCAD-B1-003": {
+    "expressions": [
+      [
+        "(70-.8*70)/(1-.8)",
+        70
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52A-FISCAD-B2-001": {
+    "expressions": [
+      [
+        ".6*80/(1-.6)",
+        120.0
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52A-FISCAD-B2-003": {
+    "expressions": [
+      [
+        "100/(1-.75)",
+        400
+      ],
+      [
+        ".75*100/(1-.75)",
+        300
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52A-FISCAD-LB-001": {
+    "expressions": [
+      [
+        "(110-.8*110)/(1-.8)",
+        110
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52A-FISCAD-LB-002": {
+    "expressions": [
+      [
+        ".6*120/(1-.6)",
+        180.0
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-4009": {
+    "expressions": [
+      [
+        "20/(1-.75)-20",
+        60
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-4010": {
+    "expressions": [
+      [
+        "(90+30)/2",
+        60
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-4011": {
+    "expressions": [
+      [
+        "1-1/4",
+        0.75
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-9133": {
+    "expressions": [
+      [
+        "50/(1-.8)-150",
+        100
+      ],
+      [
+        "50/(1-.5)",
+        100
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-9134": {
+    "expressions": [
+      [
+        "60/(1-.75)-60",
+        180
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-9141": {
+    "expressions": [
+      [
+        "(210+70)/2",
+        140
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52B-S4-FMCO-B1-001": {
+    "expressions": [
+      [
+        "1-1/4",
+        0.75
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52B-S4-FMCO-B1-002": {
+    "expressions": [
+      [
+        "90/(1-.8)-270",
+        180
+      ],
+      [
+        "90/(1-.5)",
+        180
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52B-S4-FMCO-B1-003": {
+    "expressions": [
+      [
+        "100/(1-.75)-100",
+        300
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52B-S4-FMCO-B2-001": {
+    "expressions": [
+      [
+        "(330+110)/2",
+        220
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52B-S4-FMCO-B2-002": {
+    "expressions": [
+      [
+        "1-1/4",
+        0.75
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52B-S4-FMCO-B2-003": {
+    "expressions": [
+      [
+        "130/(1-.8)-390",
+        260
+      ],
+      [
+        "130/(1-.5)",
+        260
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-4012": {
+    "expressions": [
+      [
+        "20/(1-.75)",
+        80
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-9140": {
+    "expressions": [
+      [
+        "-150+100",
+        -50
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-9143": {
+    "expressions": [
+      [
+        "60/(1-.75)",
+        240
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52B-S4-STAB-B1-002": {
+    "expressions": [
+      [
+        "-270+180",
+        -90
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52B-S4-STAB-B1-003": {
+    "expressions": [
+      [
+        "100/(1-.75)",
+        400
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "P52B-S4-STAB-B2-003": {
+    "expressions": [
+      [
+        "-390+260",
+        -130
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-FINALBOSS-4000": {
+    "expressions": [
+      [
+        "20/.25",
+        80
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-FINALBOSS-4002": {
+    "expressions": [
+      [
+        "40/.5-120",
+        -40
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-FINALBOSS-4003": {
+    "expressions": [
+      [
+        "4*50-100",
+        100
+      ],
+      [
+        "4*50-50",
+        150
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-FINALBOSS-4005": {
+    "expressions": [
+      [
+        "9-2-3",
+        4
+      ],
+      [
+        "2+4",
+        6
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-FINALBOSS-4008": {
+    "expressions": [
+      [
+        "6+(6-5)-2",
+        5
+      ],
+      [
+        "5+1-(5-5)",
+        6
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-FINALBOSS-4011": {
+    "expressions": [
+      [
+        "8/4",
+        2
+      ],
+      [
+        "5/4",
+        1.25
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-FINALBOSS-4014": {
+    "expressions": [
+      [
+        "(1.06/1.08-1)*100",
+        -1.851851852
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-FINALBOSS-4015": {
+    "expressions": [
+      [
+        "600-500",
+        100
+      ],
+      [
+        "700-600",
+        100
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-FINALBOSS-4016": {
+    "expressions": [
+      [
+        "440/110",
+        4
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-FINALBOSS-4019": {
+    "expressions": [
+      [
+        "140/.25",
+        560
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-FINALBOSS-4021": {
+    "expressions": [
+      [
+        "160/.5-480",
+        -160
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-FINALBOSS-4022": {
+    "expressions": [
+      [
+        "4*170-340",
+        340
+      ],
+      [
+        "4*170-170",
+        510
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-FINALBOSS-4023": {
+    "expressions": [
+      [
+        "4-10+3",
+        -3
+      ],
+      [
+        "4+2",
+        6
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-LEGENDARYBOSS-9100": {
+    "expressions": [
+      [
+        "5+(5-3)",
+        7
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-LEGENDARYBOSS-9101": {
+    "expressions": [
+      [
+        "4+2+0",
+        6
+      ],
+      [
+        "2+2+2",
+        6
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-LEGENDARYBOSS-9105": {
+    "expressions": [
+      [
+        "1.1/1.1-1",
+        0
+      ],
+      [
+        "(1.02*.98-1)*100",
+        -0.04
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-LEGENDARYBOSS-9106": {
+    "expressions": [
+      [
+        "1320-1100",
+        220
+      ],
+      [
+        "1540-1320",
+        220
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-LEGENDARYBOSS-9110": {
+    "expressions": [
+      [
+        "920/230",
+        4
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-LEGENDARYBOSS-9113": {
+    "expressions": [
+      [
+        "260/.25",
+        1040
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-LEGENDARYBOSS-9117": {
+    "expressions": [
+      [
+        "280/.5-840",
+        -280
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-LEGENDARYBOSS-9118": {
+    "expressions": [
+      [
+        "4*290-580",
+        580
+      ],
+      [
+        "4*290-290",
+        870
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-LEGENDARYBOSS-9119": {
+    "expressions": [
+      [
+        "-4+4",
+        0
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-LEGENDARYBOSS-9120": {
+    "expressions": [
+      [
+        "6+(6-5)-2",
+        5
+      ],
+      [
+        "5+1-(5-5)",
+        6
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-MEDIUMBOSS-3002": {
+    "expressions": [
+      [
+        "3/3",
+        1
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-MEDIUMBOSS-3005": {
+    "expressions": [
+      [
+        "(1.05/1.07-1)*100",
+        -1.869158879
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-MEDIUMBOSS-3008": {
+    "expressions": [
+      [
+        "2040-1700",
+        340
+      ],
+      [
+        "2380-2040",
+        340
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-MEDIUMBOSS-3011": {
+    "expressions": [
+      [
+        "1400/350",
+        4
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2E-CH-OPEN-001": {
+    "expressions": [
+      [
+        "380/.25",
+        1520
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PMOE-NCO-B3-001": {
+    "expressions": [
+      [
+        "200-(-120)",
+        320
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PMOE-NER-B3-002": {
+    "expressions": [
+      [
+        "(1.84/1.6-1)*100",
+        15
+      ],
+      [
+        "(1.6/1.84-1)*100",
+        -13.04347826
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PMOE-RER-B3-001": {
+    "expressions": [
+      [
+        "-4+7-2",
+        1
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PMOE-TX-B3-001": {
+    "expressions": [
+      [
+        "40-15-10",
+        15
+      ],
+      [
+        "20-(40-15-10)",
+        5
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-LEGENDARYBOSS-9114": {
+    "expressions": [
+      [
+        "-40/.25+100",
+        -60
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-9142": {
+    "expressions": [
+      [
+        ".75*60",
+        45
+      ],
+      [
+        "45/(1-.75)",
+        180
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B3-PROD-EB-002": {
+    "expressions": [
+      [
+        "(36.37/28.53-1)*100",
+        27.479845776
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B3-PROD-LB-002": {
+    "expressions": [
+      [
+        "28.53/36.37",
+        0.78443772
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PMOE-FX-B3-003": {
+    "expressions": [
+      [
+        "(.8-1)*100",
+        -20
+      ],
+      [
+        "(150/100-1)*100",
+        50
+      ],
+      [
+        "(1/.8-1)*100",
+        25
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-9053": {
+    "expressions": [
+      [
+        "240*(1-.75)",
+        60
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-9055": {
+    "expressions": [
+      [
+        "(40-25)/.5",
+        30
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-9056": {
+    "expressions": [
+      [
+        "20/.2",
+        100
+      ],
+      [
+        "5/.2",
+        25
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-9059": {
+    "expressions": [
+      [
+        "-40/.2+200",
+        0
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-9119": {
+    "expressions": [
+      [
+        "10-11",
+        -1
+      ],
+      [
+        "10-4",
+        6
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "43139": {
+    "expressions": [
+      [
+        "30.3/30*100",
+        101
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-PRODUCTIVITY-CALCULATION-6018": {
+    "expressions": [
+      [
+        "2400/10",
+        240
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-REAL-GDP-PER-PERSON-6017": {
+    "expressions": [
+      [
+        "3e12/120e6",
+        25000
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-RULE-OF-70-6016": {
+    "expressions": [
+      [
+        "70/2",
+        35
+      ],
+      [
+        "70/4",
+        17.5
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-INCOME-EXPENDITURE-IDENTITY-6000": {
+    "expressions": [
+      [
+        "210-140-30",
+        40
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-INTERMEDIATE-VS-FINAL-GOODS-6002": {
+    "expressions": [
+      [
+        "50+70",
+        120
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-INVENTORY-INVESTMENT-6005": {
+    "expressions": [
+      [
+        "80+20",
+        100
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-GDP-DEFLATOR-6007": {
+    "expressions": [
+      [
+        "180/1.2",
+        150
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-CPI-CALCULATION-6009": {
+    "expressions": [
+      [
+        "400*125/100",
+        500
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-INFLATION-RATE-6010": {
+    "expressions": [
+      [
+        "(150-125)/125*100",
+        20
+      ],
+      [
+        "1000*150/125",
+        1200
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-INFLATION-ADJUSTMENT-6014": {
+    "expressions": [
+      [
+        "40000*1.6-60000",
+        4000
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-REAL-INTEREST-RATE-6015": {
+    "expressions": [
+      [
+        "9-7",
+        2
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-LABOR-FORCE-CALCULATION-6026": {
+    "expressions": [
+      [
+        "90+10-4",
+        96
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-UNEMPLOYMENT-RATE-6027": {
+    "expressions": [
+      [
+        "6/160*100",
+        3.75
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-LABOR-FORCE-PARTICIPATION-6028": {
+    "expressions": [
+      [
+        "160/250*100",
+        64
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-UNIONS-EFFICIENCY-WAGES-6035": {
+    "expressions": [
+      [
+        "10000-15000",
+        -5000
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-CALCULATE-REQUIRED-RESERVES-6004": {
+    "expressions": [
+      [
+        "1200-.125*8000",
+        200
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-B-6003": {
+    "expressions": [
+      [
+        ".12*900000-100000",
+        8000
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-B-6005": {
+    "expressions": [
+      [
+        "50000-10000",
+        40000
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-B-6008": {
+    "expressions": [
+      [
+        "400/100",
+        4
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-VALUE-OF-MONEY-6012": {
+    "expressions": [
+      [
+        "10/5",
+        2
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-B-6010": {
+    "expressions": [
+      [
+        "12-2-4",
+        6
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-FISHER-EFFECT-6015": {
+    "expressions": [
+      [
+        "2+8",
+        10
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-B-6013": {
+    "expressions": [
+      [
+        "8-6+3",
+        5
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-INFLATION-TAX-6018": {
+    "expressions": [
+      [
+        "100/1.1",
+        90.909090909
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-MENU-COSTS-6017": {
+    "expressions": [
+      [
+        "(6-2)*200",
+        800
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-SHOELEATHER-COSTS-6016": {
+    "expressions": [
+      [
+        "4*30/60",
+        2
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-B-6014": {
+    "expressions": [
+      [
+        "9-10",
+        -1
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-IDENTIFY-LRAS-6021": {
+    "expressions": [
+      [
+        "100-110",
+        -10
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-CLASSIFY-OUTPUT-GAP-6027": {
+    "expressions": [
+      [
+        "20-(19+.5)",
+        0.5
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-B-6019": {
+    "expressions": [
+      [
+        "10*2",
+        20
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-B-6020": {
+    "expressions": [
+      [
+        "15*2",
+        30
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-FISCAL-POLICY-AD-SHIFT-6032": {
+    "expressions": [
+      [
+        "-20*2",
+        -40
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-TAX-CUT-AD-6033": {
+    "expressions": [
+      [
+        ".8*100",
+        80
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-B-6021": {
+    "expressions": [
+      [
+        "80/(1-.75)",
+        320
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-CALCULATE-SPENDING-MULTIPLIER-6035": {
+    "expressions": [
+      [
+        "100*(1-.8)",
+        20
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-CROWDING-OUT-EFFECT-6036": {
+    "expressions": [
+      [
+        "100-30",
+        70
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-B-6023": {
+    "expressions": [
+      [
+        "250-(300-80)",
+        30
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2A-LRPC-BR-022": {
+    "expressions": [
+      [
+        "6/3",
+        2
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-CALCULATE-SACRIFICE-RATIO-6050": {
+    "expressions": [
+      [
+        "(1+3)/2",
+        2
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-SP-INTERPRET-SACRIFICE-RATIO-6051": {
+    "expressions": [
+      [
+        "1.5*4",
+        6
+      ],
+      [
+        "2*4",
+        8
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2A-DIS-BR-021": {
+    "expressions": [
+      [
+        "2.5*2",
+        5
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-IMPORTS-EXPORTS-NX-6004": {
+    "expressions": [
+      [
+        "600-500",
+        100
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "LG-Q-2002": {
+    "expressions": [
+      [
+        "900+1100-400",
+        1600
+      ],
+      [
+        "900+1100+1500+500",
+        4000
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B1-GDPC-H-003": {
+    "expressions": [
+      [
+        "3+1.5-1.5",
+        3
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B1-GDPC-FB-006": {
+    "expressions": [
+      [
+        "5-5+4+2",
+        6
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B1-RNGDP-FB-005": {
+    "expressions": [
+      [
+        "840/1.2",
+        700
+      ],
+      [
+        "990/1.32",
+        750
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B1-RNGDP-H-001": {
+    "expressions": [
+      [
+        "(1.18/1.1-1)*100",
+        7.272727273
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B1-RNGDP-M-001": {
+    "expressions": [
+      [
+        "20*9",
+        180
+      ],
+      [
+        "20*6",
+        120
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B2-INDEX-H-001": {
+    "expressions": [
+      [
+        "(1.08/1.05-1)*100",
+        2.857142857
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B2-INDEX-L-001": {
+    "expressions": [
+      [
+        "(1.15/1.1-1)*100",
+        4.545454545
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2A-DIS-L-010": {
+    "expressions": [
+      [
+        "6/3",
+        2
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2A-SAC-H-011": {
+    "expressions": [
+      [
+        "9/3",
+        3
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2A-SAC-H-013": {
+    "expressions": [
+      [
+        "6.5/3",
+        2.166666667
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2A-SAC-L-014": {
+    "expressions": [
+      [
+        "(2+1+0)/(6.5-4.5)",
+        1.5
+      ],
+      [
+        "4/(6.5-4.5)",
+        2
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2A-SAC-L-015": {
+    "expressions": [
+      [
+        "8/(9-5)",
+        2
+      ],
+      [
+        "6/(5-2)",
+        2
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2A-SAC-M-005": {
+    "expressions": [
+      [
+        "12/3",
+        4
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2A-SAC-M-006": {
+    "expressions": [
+      [
+        "3*2.5",
+        7.5
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2A-SAC-M-007": {
+    "expressions": [
+      [
+        "(1.5+2.5)/2",
+        2
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-FINALBOSS-4026": {
+    "expressions": [
+      [
+        "120-90",
+        30
+      ],
+      [
+        "120-110",
+        10
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "ECON-NL-FINALBOSS-4031": {
+    "expressions": [
+      [
+        "-12000+8000+7000",
+        3000
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2C2-ITAX-EB-001": {
+    "expressions": [
+      [
+        "103/1.03",
+        100
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2C2-ITAX-FB-006": {
+    "expressions": [
+      [
+        "1000/1.1",
+        909.090909091
+      ],
+      [
+        "1000/.9",
+        1111.111111111
+      ]
+    ],
+    "basis": "Recomputed from the student-visible accounting identity; incorrect choices represent specified accounting errors."
+  },
+  "PM2B4-NRU-EB-003": {
+    "expressions": [
+      [
+        "4-5",
+        -1
+      ],
+      [
+        "4-4",
+        0
+      ]
+    ],
+    "basis": "Fresh visible-value recomputation for the differentiated checkpoint operation."
+  },
+  "PM2B3-PROD-EB-003": {
+    "expressions": [
+      [
+        "(1/(1.05*.95)-1)*100",
+        0.2506265664
+      ]
+    ],
+    "basis": "Fresh visible-value recomputation for the differentiated checkpoint operation."
+  },
+  "PM2A-SRPC-EB-009": {
+    "expressions": [
+      [
+        "4+.5*(3-5)",
+        3
+      ]
+    ],
+    "basis": "Fresh visible-value recomputation for the differentiated checkpoint operation."
+  },
+  "PM2A-SRPC-LB-013": {
+    "expressions": [
+      [
+        "5+(4-4)/.5",
+        5
+      ],
+      [
+        "4-.5*(3-5)",
+        5
+      ]
+    ],
+    "basis": "Fresh visible-value recomputation for the differentiated checkpoint operation."
+  },
+  "LG-Q-9126": {
+    "expressions": [
+      [
+        "(1/1.05-1)*100",
+        -4.761904762
+      ]
+    ],
+    "basis": "Fresh visible-value recomputation for the differentiated checkpoint operation."
+  },
+  "P52B-S4-QTM-B3-001": {
+    "expressions": [
+      [
+        "1.1/1.1",
+        1
+      ]
+    ],
+    "basis": "Fresh visible-value recomputation for the differentiated checkpoint operation."
+  },
+  "PM2C2-NEUT-EB-003": {
+    "expressions": [
+      [
+        "1.06/1.06",
+        1
+      ]
+    ],
+    "basis": "Fresh visible-value recomputation for the differentiated checkpoint operation."
+  }
+}

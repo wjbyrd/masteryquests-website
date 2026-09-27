@@ -1,0 +1,857 @@
+[
+  {
+    "id": "43139",
+    "visibleStem": "A report defines its ratio as debt held by the public divided by annual GDP. GDP is $30 trillion and that debt is $30.3 trillion; gross federal debt is $36 trillion. Which ratio belongs in this report?",
+    "equation": "[30.3/30*100]",
+    "computedValues": [
+      101.0
+    ],
+    "key": "101%, using debt held by the public",
+    "feedback": "30.3/30\u00d7100=101%. The named numerator excludes the extra intragovernmental holdings included in gross debt.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "ECON-NL-CPI-CALCULATION-6009",
+    "visibleStem": "A fixed basket costs $400 in the base year. If today\u2019s CPI is 125 (base 100), what is today\u2019s basket cost?",
+    "equation": "[400*125/100]",
+    "computedValues": [
+      500.0
+    ],
+    "key": "$500",
+    "feedback": "Current cost=400\u00d7125/100=500.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "ECON-NL-GDP-DEFLATOR-6007",
+    "visibleStem": "Nominal GDP is $180 and the GDP deflator is 120 (base 100). What real GDP value makes the output comparison use base-year prices?",
+    "equation": "[180/1.2]",
+    "computedValues": [
+      150.0
+    ],
+    "key": "$150",
+    "feedback": "Real GDP=nominal GDP/(deflator/100)=180/1.2=150.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "ECON-NL-INCOME-EXPENDITURE-IDENTITY-6000",
+    "visibleStem": "Final domestic output sells for $210. Production income records show wages $140 and rent/interest $30. With no taxes, depreciation or discrepancy, what profit completes the income ledger?",
+    "equation": "[210-140-30]",
+    "computedValues": [
+      40
+    ],
+    "key": "$40",
+    "feedback": "All income from producing the output sums to 210. The missing profit is 210\u2212140\u221230=40.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "ECON-NL-INFLATION-ADJUSTMENT-6014",
+    "visibleStem": "A salary was $40,000 at CPI100. At CPI160 it is $60,000. How much additional salary would preserve the original purchasing power?",
+    "equation": "[40000*160/100-60000]",
+    "computedValues": [
+      4000.0
+    ],
+    "key": "$4,000",
+    "feedback": "The indexed target is 40000\u00d7160/100=64000; the current 60000 falls 4000 short.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "ECON-NL-INFLATION-RATE-6010",
+    "visibleStem": "CPI rises from 125 to 150. A rent of $1,000 is adjusted by that inflation rate. What is the new rent?",
+    "equation": "[(150-125)/125*100,1000*150/125]",
+    "computedValues": [
+      20.0,
+      1200.0
+    ],
+    "key": "$1,200",
+    "feedback": "Inflation=(150\u2212125)/125=20%; 1000\u00d71.20=1200.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "ECON-NL-INTERMEDIATE-VS-FINAL-GOODS-6002",
+    "visibleStem": "A mill sells flour for $50 and a bakery sells the bread made from it to households for $120. The bakery\u2019s value added is $70. Which GDP total agrees under both final-sales and value-added accounting?",
+    "equation": "[50+70]",
+    "computedValues": [
+      120
+    ],
+    "key": "$120",
+    "feedback": "Final bread sales 120 equal mill value added 50 plus bakery value added 70. Counting flour again with final sales double-counts it.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "ECON-NL-INVENTORY-INVESTMENT-6005",
+    "visibleStem": "A factory makes $100 of new domestic output and sells $80 this period. The unsold $20 stays in inventory. What current production total is recorded?",
+    "equation": "[80+20]",
+    "computedValues": [
+      100
+    ],
+    "key": "$100: sales 80 plus inventory investment 20",
+    "feedback": "Unsold current production is inventory investment. Final sales 80 plus inventory accumulation 20 record the same 100 produced.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "ECON-NL-LABOR-FORCE-CALCULATION-6026",
+    "visibleStem": "There are 90 employed and 10 unemployed. Four unemployed people stop searching; nobody else changes status. What is the new labor force?",
+    "equation": "[90+10-4]",
+    "computedValues": [
+      96
+    ],
+    "key": "96",
+    "feedback": "The four move from unemployed to outside the labor force.90+6=96; employment stays 90.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "ECON-NL-LABOR-FORCE-PARTICIPATION-6028",
+    "visibleStem": "Adult population is 250 and the labor force 150. Ten previously nonparticipating adults start active job search without finding jobs. What is the new LFPR?",
+    "equation": "[(150+10)/250*100]",
+    "computedValues": [
+      64.0
+    ],
+    "key": "64%",
+    "feedback": "Job seekers join the labor force: 160/250=64%. They need not already be employed to participate.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "ECON-NL-PRODUCTIVITY-CALCULATION-6018",
+    "visibleStem": "A team must produce 2,400 units. Productivity improves from 8 to 10 units per hour. How many labor hours are now needed?",
+    "equation": "[2400/10]",
+    "computedValues": [
+      240.0
+    ],
+    "key": "240 hours",
+    "feedback": "Required hours=output/productivity=2400/10=240, down from 300.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "ECON-NL-REAL-GDP-PER-PERSON-6017",
+    "visibleStem": "Real GDP is $3 trillion and population 100 million. If population rises to 120 million with real GDP unchanged, what is new real GDP per person?",
+    "equation": "[3e12/120e6]",
+    "computedValues": [
+      25000.0
+    ],
+    "key": "$25,000",
+    "feedback": "Divide 3 trillion by 120 million to get 25,000. More people share unchanged real output.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "ECON-NL-REAL-INTEREST-RATE-6015",
+    "visibleStem": "Use the Fisher approximation. A loan fixes nominal interest at 9%. Expected inflation was 5%, but actual inflation is 7%. What realized real rate replaces the expected 4%?",
+    "equation": "[9-7]",
+    "computedValues": [
+      2
+    ],
+    "key": "2%",
+    "feedback": "Realized real interest\u22489\u22127=2%; actual, rather than expected, inflation determines realized purchasing power.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "ECON-NL-RULE-OF-70-6016",
+    "visibleStem": "Using the Rule of 70, compare a 2% annual growth rate with 4%. What happens to approximate doubling time?",
+    "equation": "[70/2,70/4]",
+    "computedValues": [
+      35.0,
+      17.5
+    ],
+    "key": "It falls from 35 to 17.5 years",
+    "feedback": "70/2=35; 70/4=17.5. Doubling the growth rate halves approximate doubling time.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "ECON-NL-UNEMPLOYMENT-RATE-6027",
+    "visibleStem": "There are 152 employed and 8 unemployed. Two unemployed workers find jobs. What is the new unemployment rate?",
+    "equation": "[(8-2)/(152+8)*100]",
+    "computedValues": [
+      3.75
+    ],
+    "key": "3.75%",
+    "feedback": "The labor force stays 160 while unemployment becomes 6: 6/160=3.75%.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "ECON-NL-UNIONS-EFFICIENCY-WAGES-6035",
+    "visibleStem": "A firm pays above-market wages to reduce quits. Its wage bill rises $10,000 but recruiting and training costs fall $15,000. What net cost implication supports the efficiency-wage rationale?",
+    "equation": "[10000-15000]",
+    "computedValues": [
+      -5000
+    ],
+    "key": "Relevant costs fall $5,000 despite higher wages",
+    "feedback": "Combine the wage increase and turnover saving: 10000\u221215000=\u22125000. Higher wages can reduce other costs.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "ECON-SP-CALCULATE-REQUIRED-RESERVES-6004",
+    "visibleStem": "In a hypothetical system with a 12.5% reserve requirement, a bank has $8,000 deposits and $1,200 reserves. How much exceeds required reserves?",
+    "equation": "[1200-.125*8000]",
+    "computedValues": [
+      200.0
+    ],
+    "key": "$200",
+    "feedback": "Required reserves=.125\u00d78000=1000; excess reserves=1200\u22121000=200.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "ECON-SP-CALCULATE-SACRIFICE-RATIO-6050",
+    "visibleStem": "A disinflation\u2019s annual output losses are 1% and 3% of one year\u2019s output. Inflation falls 2 percentage points. What is the sacrifice ratio?",
+    "equation": "[(1+3)/2]",
+    "computedValues": [
+      2.0
+    ],
+    "key": "2",
+    "feedback": "Add losses 1+3=4 and divide by the 2-point inflation reduction: 4/2=2.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "ECON-SP-CALCULATE-SPENDING-MULTIPLIER-6035",
+    "visibleStem": "With MPC=.8 and no offsets, what purchases increase is needed for a $100 total AD increase?",
+    "equation": "[100*(1-.8)]",
+    "computedValues": [
+      19.999999999999996
+    ],
+    "key": "$20",
+    "feedback": "Multiplier=5, so required autonomous purchases=100/5=20.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "ECON-SP-CLASSIFY-OUTPUT-GAP-6027",
+    "visibleStem": "Actual output is $19 trillion and potential $20 trillion. If demand increases output by $0.5 trillion without changing capacity, what gap remains?",
+    "equation": "[20-(19+.5)]",
+    "computedValues": [
+      0.5
+    ],
+    "key": "A $0.5 trillion recessionary gap",
+    "feedback": "New actual output 19.5 remains 0.5 below potential 20.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "ECON-SP-CROWDING-OUT-EFFECT-6036",
+    "visibleStem": "Fiscal expansion would add $100 to AD before crowding out. Higher rates reduce AD by a total $30 after induced investment effects. What net increase remains?",
+    "equation": "[100-30]",
+    "computedValues": [
+      70
+    ],
+    "key": "$70",
+    "feedback": "Subtract the already-total offset once: 100\u221230=70.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "ECON-SP-FISCAL-POLICY-AD-SHIFT-6032",
+    "visibleStem": "The government reduces purchases $20 during a recession. With spending multiplier 2 and no offsets, how does this affect the existing demand shortfall?",
+    "equation": "[-20*2]",
+    "computedValues": [
+      -40
+    ],
+    "key": "It widens the shortfall by $40",
+    "feedback": "The negative purchases impulse is multiplied:\u221220\u00d72=\u221240. It reinforces a demand recession.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "ECON-SP-FISHER-EFFECT-6015",
+    "visibleStem": "Using the Fisher approximation, expected inflation rises from 6% to 8% while the expected real rate remains 2%. What new nominal rate is consistent with both conditions?",
+    "equation": "[2+8]",
+    "computedValues": [
+      10
+    ],
+    "key": "10%",
+    "feedback": "Nominal\u2248real+expected inflation=2+8=10%, up from 8%.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "ECON-SP-IDENTIFY-LRAS-6021",
+    "visibleStem": "Technology raises potential output from 100 to 110. If actual output stays 100, what output gap exists relative to the new LRAS?",
+    "equation": "[110-100]",
+    "computedValues": [
+      10
+    ],
+    "key": "A10-unit recessionary gap",
+    "feedback": "The benchmark rose:actual 100\u2212potential 110=\u221210. A capacity gain can open a shortfall if demand does not keep pace.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "ECON-SP-INFLATION-TAX-6018",
+    "visibleStem": "A household holds $100 cash as prices rise 10%. It receives no interest. How does this illustrate the inflation tax on money holders?",
+    "equation": "[100/1.1]",
+    "computedValues": [
+      90.9090909090909
+    ],
+    "key": "The same cash buys less, about $90.91 in initial-price purchasing power",
+    "feedback": "Real cash purchasing power is 100/1.10\u224890.91. The loss need not appear as a separate tax bill.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "ECON-SP-INTERPRET-SACRIFICE-RATIO-6051",
+    "visibleStem": "Two plans each reduce inflation 4 percentage points. Plan A has sacrifice ratio 2; Plan B has ratio 1.5. Which has the lower estimated cumulative output loss?",
+    "equation": "[2*4,1.5*4]",
+    "computedValues": [
+      8,
+      6.0
+    ],
+    "key": "B: 6% versus A: 8% of annual output",
+    "feedback": "Loss=ratio\u00d7inflation reduction. A: 2\u00d74=8;B: 1.5\u00d74=6.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "ECON-SP-MENU-COSTS-6017",
+    "visibleStem": "Inflation leads a shop to reprint signs at $200 per update. Updates rise from 2 to 6 per year. What additional annual resource cost is a menu cost?",
+    "equation": "[(6-2)*200]",
+    "computedValues": [
+      800
+    ],
+    "key": "$800",
+    "feedback": "Four additional updates cost 4\u00d7200=800. The cost is changing posted prices, not the price increase itself.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "ECON-SP-MONETARY-NEUTRALITY-6014",
+    "visibleStem": "All nominal prices double in a long-run neutrality comparison. A worker\u2019s nominal wage also doubles from $20 to $40. What happens to the real wage?",
+    "equation": "[(40/20)/2]",
+    "computedValues": [
+      1.0
+    ],
+    "key": "It is unchanged",
+    "feedback": "Real wage=W/P. Doubling numerator and denominator leaves the ratio unchanged.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "ECON-SP-NATURAL-RATE-HYPOTHESIS-6043",
+    "visibleStem": "A demand surprise briefly reduces unemployment from 5% to 4%. Natural unemployment is unchanged. Once expectations fully adjust, what rate is the long-run benchmark?",
+    "equation": "[5]",
+    "computedValues": [
+      5
+    ],
+    "key": "5%",
+    "feedback": "With no change in natural unemployment, the surprise cannot permanently sustain 4%; the long-run benchmark remains 5%.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "ECON-SP-SHOELEATHER-COSTS-6016",
+    "visibleStem": "To avoid holding cash during inflation, a household makes four extra bank trips per month, each taking 30 minutes. What monthly time cost illustrates shoeleather costs?",
+    "equation": "[4*30/60]",
+    "computedValues": [
+      2.0
+    ],
+    "key": "2 hours",
+    "feedback": "Four trips\u00d730 minutes=120 minutes=2 hours spent managing balances.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "ECON-SP-TAX-CUT-AD-6033",
+    "visibleStem": "A $100 tax cut raises disposable income. With MPC=.8, how much first-round consumption is added before induced spending rounds?",
+    "equation": "[100*.8]",
+    "computedValues": [
+      80.0
+    ],
+    "key": "$80",
+    "feedback": "First-round consumption=MPC\u00d7tax cut=.8\u00d7100=80. This is not yet the total multiplier effect.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "ECON-SP-VALUE-OF-MONEY-6012",
+    "visibleStem": "The price level rises from 2 to 5. Using value of money=1/P, how many units of the reference basket can $10 buy afterward?",
+    "equation": "[10/5]",
+    "computedValues": [
+      2.0
+    ],
+    "key": "2 units",
+    "feedback": "At P=5 each dollar buys 1/5 basket unit; 10/5=2 units.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "LG-B-6003",
+    "visibleStem": "In a hypothetical system with a 12% reserve requirement, a bank has $900,000 deposits and $100,000 reserves. What reserve adjustment meets the requirement?",
+    "equation": "[900000*.12-100000]",
+    "computedValues": [
+      8000.0
+    ],
+    "key": "Obtain $8,000 additional reserves",
+    "feedback": "Required reserves=.12\u00d7900000=108000. Existing reserves 100000 leave a shortfall 8000.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "LG-B-6005",
+    "visibleStem": "In a hypothetical system initially at required reserves, a $10,000 currency deposit enters with rr=20%. Banks lend all excess reserves and all payments are redeposited, with no other constraints. Total deposits can rise $50,000 including the initial deposit. What is the net increase in currency-plus-checking money?",
+    "equation": "[50000-10000]",
+    "computedValues": [
+      40000
+    ],
+    "key": "$40,000",
+    "feedback": "Deposits rise 50000 but currency held by the public falls 10000. Net currency-plus-checking money rises 40000.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "LG-B-6008",
+    "visibleStem": "A $100 reserve injection is followed by $400 in additional deposits. The simple model with rr=10% predicts $1,000. Which observed multiplier should be used to describe this episode?",
+    "equation": "[400/100,1/.1]",
+    "computedValues": [
+      4.0,
+      10.0
+    ],
+    "key": "4, below the simple maximum 10",
+    "feedback": "Observed deposit expansion per reserve dollar=400/100=4. Leakages or other lending constraints can leave it below 10.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "LG-B-6009",
+    "visibleStem": "Money\u2019s value falls from 1/2 to 1/4 basket unit per dollar. What happens to the dollars needed to buy one unchanged basket?",
+    "equation": "[1/(1/2),1/(1/4)]",
+    "computedValues": [
+      2.0,
+      4.0
+    ],
+    "key": "They rise from $2 to $4",
+    "feedback": "The basket price is the reciprocal of money\u2019s value: 2 then 4.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "LG-B-6010",
+    "visibleStem": "Use the quantity-theory growth approximation. Money grows 12% and output 4%. If velocity now falls 2% rather than staying stable, what inflation rate is predicted?",
+    "equation": "[12-2-4]",
+    "computedValues": [
+      6
+    ],
+    "key": "6%",
+    "feedback": "Inflation\u2248gM+gV\u2212gY=12\u22122\u22124=6%. The velocity decline lowers spending growth.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "LG-B-6012",
+    "visibleStem": "In a long-run neutrality comparison money, nominal GDP and the price level all double. What happens to real GDP=nominal GDP/(price index/100)?",
+    "equation": "[2/2]",
+    "computedValues": [
+      1.0
+    ],
+    "key": "It remains unchanged",
+    "feedback": "Proportional nominal GDP and price increases cancel in the real-output ratio.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "LG-B-6013",
+    "visibleStem": "A contract quotes 8% nominal interest and expected inflation 6%. If a new contract has expected inflation 3% with the same expected real return, what nominal rate should it quote?",
+    "equation": "[8-6+3]",
+    "computedValues": [
+      5
+    ],
+    "key": "5%",
+    "feedback": "Original expected real return\u22488\u22126=2%; new nominal\u22482+3=5%.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "LG-B-6014",
+    "visibleStem": "Use the Fisher approximation. A fixed nominal loan pays 9%; expected inflation was 3%, actual inflation 10%. Compared with the expected 6% real return, who benefits from the surprise?",
+    "equation": "[9-10]",
+    "computedValues": [
+      -1
+    ],
+    "key": "The borrower; realized real interest is about\u22121%",
+    "feedback": "Realized return\u22489\u221210=\u22121%, seven points below the expected 6%. The borrower repays less purchasing power than anticipated.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "LG-B-6019",
+    "visibleStem": "In a scarce-reserves textbook model, monetary expansion lowers rates and investment rises $10. With spending multiplier 2 and no other spending change, what AD effect follows?",
+    "equation": "[10*2]",
+    "computedValues": [
+      20
+    ],
+    "key": "A $20 increase",
+    "feedback": "The autonomous investment increase 10 is multiplied by 2, raising AD20.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "LG-B-6020",
+    "visibleStem": "In a scarce-reserves textbook model, monetary contraction raises rates and reduces investment $15. With spending multiplier 2 and no other spending change, what AD effect follows?",
+    "equation": "[-15*2]",
+    "computedValues": [
+      -30
+    ],
+    "key": "A $30 decrease",
+    "feedback": "The autonomous investment reduction 15 produces a total demand reduction 30.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "LG-B-6021",
+    "visibleStem": "A tax cut produces an $80 first-round consumption increase. MPC=.75 with no other leakages or offsets. What total AD increase follows after induced rounds?",
+    "equation": "[80/(1-.75)]",
+    "computedValues": [
+      320.0
+    ],
+    "key": "$320",
+    "feedback": "The spending multiplier is 1/(1\u2212.75)=4; multiply the already-specified first-round impulse 80 by 4 to get 320.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "LG-B-6023",
+    "visibleStem": "A demand gap is $250. Fiscal policy adds $300 gross to AD, while displaced investment reduces AD by a total $80 including induced effects. How much of the original gap remains in this fixed-price planning model?",
+    "equation": "[250-(300-80)]",
+    "computedValues": [
+      30
+    ],
+    "key": "$30 remains",
+    "feedback": "Net impulse=300\u221280=220; remaining gap=250\u2212220=30.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "PM2A-DIS-BR-021",
+    "visibleStem": "A policy\u2019s estimated sacrifice ratio is 2.5. If it aims to reduce inflation 2 percentage points, what cumulative output loss should the planning comparison use?",
+    "equation": "[2.5*2]",
+    "computedValues": [
+      5.0
+    ],
+    "key": "5% of annual output",
+    "feedback": "Multiply the cost per inflation point by the 2-point target: 2.5\u00d72=5%.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "PM2A-LRPC-BR-021",
+    "visibleStem": "Job matching permanently improves and natural unemployment falls from 5% to 4%. What happens to the LRPC?",
+    "equation": "[4-5,4]",
+    "computedValues": [
+      -1,
+      4
+    ],
+    "key": "It shifts left to 4% unemployment",
+    "feedback": "LRPC is located at natural unemployment. A lower natural rate shifts the vertical benchmark left.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "PM2A-LRPC-BR-022",
+    "visibleStem": "A disinflation temporarily pushes output below potential. Inflation falls 3 percentage points and cumulative output loss is 6% of annual output. What sacrifice ratio describes that transition?",
+    "equation": "[6/3]",
+    "computedValues": [
+      2.0
+    ],
+    "key": "2",
+    "feedback": "Ratio=6/3=2 percent of annual output sacrificed per percentage-point inflation reduction.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "PMOE-NER-BR-001",
+    "visibleStem": "Quote e as foreign units per domestic unit and define the real exchange rate as eP/P*. The nominal rate rises 10%, while domestic and foreign prices are unchanged. Does the nominal appreciation also represent real appreciation?",
+    "equation": "[100*(1.1*1/1-1)]",
+    "computedValues": [
+      10.000000000000009
+    ],
+    "key": "Yes; the real rate rises 10%",
+    "feedback": "With P/P* unchanged, the real rate changes in the same proportion as e. Under this quotation the rise is appreciation.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "ECON-NL-IMPORTS-EXPORTS-NX-6004",
+    "visibleStem": "A household buys an imported appliance for $500 and pays a domestic installer $100. Both payments enter consumption. How much does this transaction add to domestic GDP after the import offset?",
+    "equation": "[500+100-500]",
+    "computedValues": [
+      100
+    ],
+    "key": "$100",
+    "feedback": "Consumption rises 600, but imports subtract 500 through NX. The domestic installation 100 remains in GDP.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "ECON-NL-LEGENDARYBOSS-9124",
+    "visibleStem": "Initially 150 million adults are employed, 12 million are unemployed and 88 million are outside the labor force. Four million unemployed people find jobs. Then six million other unemployed people stop searching and leave the labor force. Adult population is unchanged. Which calculation and interpretation are correct?",
+    "equation": "[150+4,12-4-6,(12-4-6)/(150+12-6)*100]",
+    "computedValues": [
+      154,
+      2,
+      1.282051282051282
+    ],
+    "key": "The new unemployment rate is about 1.28%; employment rises, but discouraged exits also contribute to the rate decline",
+    "feedback": "Employment becomes 154 million. Unemployment becomes 12\u22124\u22126 = 2 million, and the labor force is 154+2 = 156 million. Thus UR = 2/156\u00d7100 \u2248 1.28%. Job finding improves employment, while discouraged exits separately lower both unemployment and participation; the rate decline is not solely job creation.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "ECON-SP-HARD-230",
+    "visibleStem": "Government purchases rise by $80 billion and MPC is 0.75. Crowding out reduces aggregate demand by a total of $100 billion after induced spending effects. Using the simple spending multiplier, what is the net increase in AD?",
+    "equation": "[80/(1-.75)-100]",
+    "computedValues": [
+      220.0
+    ],
+    "key": "$220 billion",
+    "feedback": "The gross AD increase is 80/(1\u22120.75) = $320 billion. Subtract the already-total AD offset once: 320\u2212100 = $220 billion. Multiplying the $100 billion again would apply induced effects twice.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "LG-Q-9053",
+    "visibleStem": "The graph shows MS1\u2192MS2, followed by AD falling $240 billion. MPC=.75 and only investment changes autonomously. Which reverse inference identifies the investment change and its place in the chain?",
+    "equation": "[240*(1-.75)]",
+    "computedValues": [
+      60.0
+    ],
+    "key": "Investment fell $60 billion after rates rose; the multiplier converts that impulse to the total AD loss",
+    "feedback": "The multiplier is 4, so the autonomous investment reduction is 240/4=60. In the graph a supply contraction raises rates, reducing investment before the induced spending response.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "LG-Q-9055",
+    "visibleStem": "Read the graph in reverse: policy moves MS2\u2192MS1, lowering rates and raising investment $40 billion. A separate confidence loss reduces investment $25 billion. MPC=.5. Which net AD change follows?",
+    "equation": "[(40-25)/(1-.5)]",
+    "computedValues": [
+      30.0
+    ],
+    "key": "Right $30 billion: multiply the net $15 billion autonomous investment rise",
+    "feedback": "Reversing the displayed contraction gives expansion. Net autonomous investment changes 40\u221225=15; with multiplier 2, AD rises 30. The rate response alone does not determine the size after a confidence countershock.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "LG-Q-9056",
+    "visibleStem": "The graph shows the same rate rise in two economies. Investment falls $20 billion in A and $5 billion in B; both have MPC=.8 and no other shocks. Which inference compares transmission strength rather than reserve accounting?",
+    "equation": "[20/(1-.8),5/(1-.8)]",
+    "computedValues": [
+      100.00000000000003,
+      25.000000000000007
+    ],
+    "key": "AD falls $100 billion in A and $25 billion in B; B has weaker investment sensitivity to the rate change",
+    "feedback": "The multiplier is 5, giving losses 100 and 25. The divergence arises at interest\u2192investment, even though the preceding observed rate change and subsequent multiplier are identical.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "LG-Q-9059",
+    "visibleStem": "MS1\u2192MS2 in the graph reduces investment $40 billion with MPC=.8. An immediate fiscal program adds $200 billion to AD in total after induced effects. If that fiscal program instead arrives after the monetary contraction has ended, which comparison is justified?",
+    "equation": "[-40/(1-.8)+200]",
+    "computedValues": [
+      -5.684341886080802e-14
+    ],
+    "key": "Immediate effects offset; the delayed program can create excess demand after the original gap closes",
+    "feedback": "The investment effect is\u221240/.2=\u2212200 and the immediate total fiscal effect+200 offsets it. Equal magnitudes do not ensure stabilization if the countershock arrives at a different point in the cycle.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "P52A-CPI-LB-002",
+    "visibleStem": "A fixed basket contains 5 units of A and 4 units of B. Base prices are $8 and $15; current prices are $10 and $18; next year's prices are $11 and $19. A report uses the base year as the inflation denominator as well as the CPI base. Which pair corrects the report: current CPI and next-year inflation?",
+    "equation": "[5*8+4*15,5*10+4*18,5*11+4*19,((5*11+4*19)/(5*10+4*18)-1)*100]",
+    "computedValues": [
+      100,
+      122,
+      131,
+      7.377049180327866
+    ],
+    "key": "122 and about 7.4 percent",
+    "feedback": "Base cost = 5\u00d78+4\u00d715 = $100; current cost = 5\u00d710+4\u00d718 = $122; next cost = 5\u00d711+4\u00d719 = $131. Current CPI is 122/100\u00d7100 = 122. Next-year inflation uses the current basket cost: (131\u2212122)/122\u00d7100 \u2248 7.4%. Dividing by the base cost gives 9%, while dividing by next year's cost gives about 6.9%.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "P52B-S4-IEA-L-001",
+    "visibleStem": "Nominal GDP rises 8 percent while the GDP deflator rises 5 percent. The measured unemployment rate falls, but employment and participation data are not supplied. Using the usual approximate real-growth calculation, which conclusion is supported?",
+    "equation": "[8-5,100*(1.08/1.05-1)]",
+    "computedValues": [
+      3,
+      2.857142857142869
+    ],
+    "key": "Real output rose about 3 percent; measured unemployment fell, but labor-force exits could explain the rate decline",
+    "feedback": "Approximate real growth is 8\u22125 = 3 percent (the exact ratio gives about 2.9 percent). A lower unemployment rate alone does not prove stronger employment: unemployed workers may have stopped searching. Employment and participation evidence would distinguish the possibilities.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "PG5-PC-L-006",
+    "visibleStem": "Refer to the graph with SRPC0, SRPC1, A and B. Use the model inflation = expected inflation \u2212 0.6 \u00d7 (unemployment \u2212 5) + supply offset, with all rates in percent and differences in percentage points. At B the separately measured supply offset is +1.1 points. What expected inflation is consistent with B, and could the graph alone identify that expectation if the supply offset were unknown?",
+    "equation": "[6+.6*(6-5)-1.1]",
+    "computedValues": [
+      5.5
+    ],
+    "key": "Expected inflation is 5.5%; without the offset, only expected inflation plus the supply offset is identified",
+    "feedback": "B has unemployment 6 and actual inflation 6. Thus 6 = expected inflation \u2212 0.6 + 1.1, implying expected inflation 5.5. Without the offset measurement the graph identifies only expected inflation + offset = 6.6. The higher curve does not by itself isolate an expectations change.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "PM2A-DIS-L-010",
+    "visibleStem": "Inflation falls 3 points while cumulative output loss equals 6% of annual GDP. Unemployment later returns to natural. Which synthesis is correct?",
+    "equation": "[6/3]",
+    "computedValues": [
+      2.0
+    ],
+    "key": "The sacrifice ratio is 2, and the unemployment cost was temporary in the model",
+    "feedback": "The sacrifice ratio is 6/3=2 percent of annual output per percentage-point inflation reduction. The given return to natural unemployment means the unemployment cost is temporary in this model; disinflation alone need not make the price level fall.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "PM2A-SAC-H-011",
+    "visibleStem": "A disinflation creates cumulative output loss equal to 9% of annual GDP. If the sacrifice ratio is 3, how far did inflation fall?",
+    "equation": "[9/3]",
+    "computedValues": [
+      3.0
+    ],
+    "key": "3 percentage points",
+    "feedback": "Sacrifice ratio=loss/inflation reduction. Rearranging gives reduction=9/3=3 percentage points; multiplying would reverse the requested operation.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "PM2A-SAC-H-013",
+    "visibleStem": "Cumulative output loss is 6.5% of one year\u2019s GDP and inflation falls 3 percentage points. Round the sacrifice ratio to two decimals.",
+    "equation": "[6.5/3]",
+    "computedValues": [
+      2.1666666666666665
+    ],
+    "key": "2.17% of one year\u2019s output per inflation point",
+    "feedback": "The ratio is 6.5/3=2.1666\u2026; to two decimals it is 2.17 percent of one year\u2019s output per percentage-point inflation reduction.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "PM2A-SAC-L-014",
+    "visibleStem": "A three-year disinflation produces annual output gaps of \u22122%, \u22121%, and 0%, cutting inflation from 6.5% to 4.5%. A faster path produces one year at \u22124% and cuts inflation the same amount. Which comparison is correct?",
+    "equation": "[(2+1+0)/(6.5-4.5),4/(6.5-4.5)]",
+    "computedValues": [
+      1.5,
+      2.0
+    ],
+    "key": "The gradual path ratio is 1.5; the fast path ratio is 2",
+    "feedback": "Both paths cut inflation 6.5\u22124.5=2 points. Gradual cumulative loss is 2+1+0=3%, giving 3/2=1.5. Fast loss is 4%, giving 4/2=2. The gradual path has the lower ratio in the supplied data.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "PM2A-SAC-L-015",
+    "visibleStem": "Economy A loses 8% of one year\u2019s GDP while inflation falls from 9% to 5%. Economy B loses 6% while inflation falls from 5% to 2%. What can be concluded?",
+    "equation": "[8/(9-5),6/(5-2)]",
+    "computedValues": [
+      2.0,
+      2.0
+    ],
+    "key": "A has a ratio of 2 and B also has a ratio of 2",
+    "feedback": "A\u2019s inflation reduction is 9\u22125=4 points, so its ratio is 8/4=2. B\u2019s reduction is 5\u22122=3 points, so 6/3=2. Different total losses and disinflation sizes can give equal cost per inflation point.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "PM2A-SAC-M-005",
+    "visibleStem": "Cumulative output loss is 12% of one year\u2019s GDP while inflation falls 3 percentage points. What is the sacrifice ratio?",
+    "equation": "[12/3]",
+    "computedValues": [
+      4.0
+    ],
+    "key": "4% of one year\u2019s output per inflation point",
+    "feedback": "Ratio=12/3=4 percent of one year\u2019s output per percentage-point inflation reduction.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "PM2A-SAC-M-006",
+    "visibleStem": "A planned inflation reduction is 2.5 percentage points and the estimated sacrifice ratio is 3. What cumulative output loss is implied?",
+    "equation": "[3*2.5]",
+    "computedValues": [
+      7.5
+    ],
+    "key": "7.5% of one year\u2019s output",
+    "feedback": "Cumulative output loss=ratio\u00d7inflation reduction=3\u00d72.5=7.5% of one year\u2019s output. The question asks for total loss, not the ratio.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "PM2A-SAC-M-007",
+    "visibleStem": "The output gap is \u22121.5% in year one and \u22122.5% in year two while inflation falls 2 percentage points. Using the sum of annual gaps, what is the sacrifice ratio?",
+    "equation": "[(1.5+2.5)/2]",
+    "computedValues": [
+      2.0
+    ],
+    "key": "2% of one year\u2019s output per inflation point",
+    "feedback": "Cumulative output loss is 1.5+2.5=4% of one year\u2019s output. Divide by the 2-point inflation decline: 4/2=2 percent of annual output per inflation point.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "PM2B1-GDPC-FB-006",
+    "visibleStem": "Government buys $5 million of foreign equipment and $4 million of domestic road repair, then sends $3 million in transfers whose recipients spend $2 million on domestic services. What raises domestic GDP?",
+    "equation": "[5-5+4+2]",
+    "computedValues": [
+      6
+    ],
+    "key": "$6 million: road repair plus recipients\u2019 domestic services",
+    "feedback": "Imported equipment adds 5 million to G and subtracts 5 million through imports. Domestic road repairs add 4 million to G. The 3 million transfer itself is excluded; recipients\u20192 million domestic service purchases enter C. Domestic GDP rises 4+2=6 million.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "PM2B1-GDPC-H-003",
+    "visibleStem": "A city buys $3 million of domestic buses and sends $2 million in transfers. Recipients spend $1.5 million on imported services. What is the direct increase in domestic GDP?",
+    "equation": "[3+1.5-1.5]",
+    "computedValues": [
+      3.0
+    ],
+    "key": "$3 million",
+    "feedback": "Domestic buses contribute 3 million to G. Transfers themselves are excluded. Recipients\u2019 imported services add 1.5 million to C and subtract 1.5 million through imports, leaving zero domestic contribution. Total domestic GDP rises 3 million.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "PM2B1-RNGDP-FB-005",
+    "visibleStem": "Nominal GDP is $840 billion with a deflator of 120, then $990 billion with a deflator of 132. What happens to real GDP?",
+    "equation": "[840/1.2,990/1.32]",
+    "computedValues": [
+      700.0,
+      750.0
+    ],
+    "key": "It rises from $700 billion to $750 billion",
+    "feedback": "First real GDP=840/(120/100)=700 billion. Next real GDP=990/(132/100)=750 billion. Real output therefore rises 50 billion, or about 7.1%.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "PM2B1-RNGDP-H-001",
+    "visibleStem": "Nominal GDP grows 18% while the GDP deflator grows 10%. To one decimal place, what is the exact real-GDP growth implied by the ratio of the indexes?",
+    "equation": "[100*(1.18/1.1-1)]",
+    "computedValues": [
+      7.272727272727253
+    ],
+    "key": "7.3%",
+    "feedback": "Exact real growth=(1.18/1.10\u22121)\u00d7100\u22487.2727%, which rounds to 7.3%. Subtracting 18\u221210 gives the approximate 8%, not the exact ratio requested.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "PM2B1-RNGDP-M-001",
+    "visibleStem": "Current output is 20 units, the current price is $9, and the base-year price is $6. What are nominal and real GDP?",
+    "equation": "[20*9,20*6]",
+    "computedValues": [
+      180,
+      120
+    ],
+    "key": "$180 nominal and $120 real",
+    "feedback": "Nominal GDP values current 20 units at the current $9 price: 20\u00d79=$180. Real GDP values the same 20 units at the base-year $6 price: 20\u00d76=$120.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "PM2B2-INDEX-H-001",
+    "visibleStem": "A nominal wage rises 8% while CPI rises 5%. Using the exact ratio and rounding to one decimal place, how much does the real wage rise?",
+    "equation": "[100*(1.08/1.05-1)]",
+    "computedValues": [
+      2.857142857142869
+    ],
+    "key": "About 2.9%",
+    "feedback": "Real wage growth=(1.08/1.05\u22121)\u00d7100\u22482.8571%, or 2.9%. Subtracting rates gives only the 3% approximation.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "PM2B2-INDEX-L-001",
+    "visibleStem": "A scholarship rises 15% while CPI rises 10%. Using the exact ratio and rounding to one decimal place, what is its real increase?",
+    "equation": "[100*(1.15/1.1-1)]",
+    "computedValues": [
+      4.545454545454519
+    ],
+    "key": "About 4.5%",
+    "feedback": "Real scholarship growth=(1.15/1.10\u22121)\u00d7100\u22484.5455%, or 4.5%. The nominal 15% gain is partly offset by the 10% price increase.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "PM2D2-MULT-L-001",
+    "visibleStem": "Two governments each increase purchases by $60 billion. Economy A has MPC 0.80 and a total $100 billion reduction in aggregate demand from crowding out; Economy B has MPC 0.60 and a total $20 billion reduction. These offsets already include induced spending effects. Using the simple spending multiplier, which comparison is correct?",
+    "equation": "[60/(1-.8)-100,60/(1-.6)-20,(60/(1-.8)-100)-(60/(1-.6)-20)]",
+    "computedValues": [
+      200.00000000000006,
+      130.0,
+      70.00000000000006
+    ],
+    "key": "Economy A has a $200 billion net AD increase, which is $70 billion larger than Economy B.",
+    "feedback": "A: 60/(1\u22120.80)\u2212100 = 300\u2212100 = $200 billion. B: 60/(1\u22120.60)\u221220 = 150\u221220 = $130 billion. A's net increase is $70 billion larger. Each stated crowding-out amount is already a total AD offset and is subtracted once, not multiplied again.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "PM2D2-MULT-L-002",
+    "visibleStem": "Government purchases rise by $80 billion and MPC is 0.75. The observed net AD increase is $230 billion. Define crowding out here as the total reduction in AD after induced spending effects, not an autonomous investment change. How much of the gross spending-multiplier effect was offset?",
+    "equation": "[80/(1-.75)-230]",
+    "computedValues": [
+      90.0
+    ],
+    "key": "$90 billion.",
+    "feedback": "The gross increase is 80/(1\u22120.75) = $320 billion. The total AD offset is 320\u2212230 = $90 billion. It already incorporates induced spending effects and does not receive another multiplier.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  },
+  {
+    "id": "PMOE-NCO-EL-001",
+    "visibleStem": "Domestic rates rise 2 percentage points, foreign rates rise 3 points, and domestic political risk falls. What can be inferred about NCO?",
+    "equation": "[3-2]",
+    "computedValues": [
+      1
+    ],
+    "key": "Foreign returns rise relative to domestic returns, raising NCO, while lower domestic risk reduces it; the net direction is undetermined",
+    "feedback": "Foreign returns rise one point relative to domestic returns, tending to raise NCO, while safer domestic assets tend to lower it; magnitudes decide the net effect.",
+    "review": "Current student inputs independently recomputed; categorical signs and rounding reviewed."
+  }
+]

@@ -1,0 +1,645 @@
+[
+  {
+    "id": "ECON-NL-LEGENDARY-9032",
+    "family": "weighted consumer basket",
+    "visibleInputs": [
+      40,
+      60,
+      25
+    ],
+    "formula": "(40*1.25+60)/100-1",
+    "result": 0.1,
+    "keyMatches": true
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9033",
+    "family": "GDP deflator",
+    "visibleInputs": [
+      10,
+      100,
+      100,
+      10,
+      120,
+      10
+    ],
+    "formula": "(10*120+100*10)/(10*100+100*10)*100",
+    "result": 110,
+    "keyMatches": true
+  },
+  {
+    "id": "PM2B2-DEF-L-002",
+    "family": "real conversion",
+    "formula": "2160/2000 = 135/125 = 1.08; 1.08/1.04-1",
+    "result": 0.03846153846153855,
+    "keyMatches": true
+  },
+  {
+    "id": "ECON-NL-ELITE-311",
+    "family": "GDP identity and classification",
+    "visibleInputs": "See exact current stem in evidence",
+    "formula": "23-15-4-6+5",
+    "result": 3,
+    "keyMatches": true
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9000",
+    "family": "GDP identity and classification",
+    "visibleInputs": "See exact current stem in evidence",
+    "formula": "72-46-13-9+11",
+    "result": 15,
+    "keyMatches": true
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9004",
+    "family": "GDP identity and classification",
+    "visibleInputs": "See exact current stem in evidence",
+    "formula": "18+(7+3)-3",
+    "result": 25,
+    "keyMatches": true
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9012",
+    "family": "GDP identity and classification",
+    "visibleInputs": "See exact current stem in evidence",
+    "formula": "34+(4-8)",
+    "result": 30,
+    "keyMatches": true
+  },
+  {
+    "id": "PM2B1-GDPC-H-003",
+    "family": "GDP identity and classification",
+    "visibleInputs": "See exact current stem in evidence",
+    "formula": "3+(1.5)-1.5",
+    "result": 3,
+    "keyMatches": true
+  },
+  {
+    "id": "PM2B1-GDPC-H-004",
+    "family": "GDP identity and classification",
+    "visibleInputs": "See exact current stem in evidence",
+    "formula": "4+0.5+1.5-1.5",
+    "result": 4.5,
+    "keyMatches": true
+  },
+  {
+    "id": "ECON-NL-HARD-209",
+    "family": "GDP identity and classification",
+    "visibleInputs": "See exact current stem in evidence",
+    "formula": "14+4+5+3-4.5",
+    "result": 21.5,
+    "keyMatches": true
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9001",
+    "family": "GDP value added/welfare",
+    "formula": "420000-150000; 420000-150000-90000",
+    "result": [
+      270000,
+      180000
+    ],
+    "keyMatches": true
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9003",
+    "family": "GDP value added/welfare",
+    "formula": "560-140; 560-140-250-90",
+    "result": [
+      420,
+      80
+    ],
+    "keyMatches": true
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9009",
+    "family": "GDP value added/welfare",
+    "formula": "96000-24000+6000",
+    "result": 78000,
+    "keyMatches": true
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9010",
+    "family": "GDP value added/welfare",
+    "formula": "74+6;74+6-51-9",
+    "result": [
+      80,
+      20
+    ],
+    "keyMatches": true
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9014",
+    "family": "GDP value added/welfare",
+    "formula": "40*1100;50*800",
+    "result": [
+      44000,
+      40000
+    ],
+    "keyMatches": true
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9015",
+    "family": "GDP value added/welfare",
+    "formula": "12-5",
+    "result": 7,
+    "keyMatches": true
+  },
+  {
+    "id": "PM2B1-GDPL-L-002",
+    "family": "GDP value added/welfare",
+    "formula": "-9+2",
+    "result": -7,
+    "keyMatches": true
+  },
+  {
+    "id": "PM2B1-RNGDP-H-001",
+    "family": "real and nominal GDP",
+    "formula": "(1.18/1.10-1)*100",
+    "result": 7.272727,
+    "keyMatches": true
+  },
+  {
+    "id": "PM2B1-RNGDP-H-002",
+    "family": "real and nominal GDP",
+    "formula": "864/1.2; (720/640-1)*100",
+    "result": [
+      720,
+      12.5
+    ],
+    "keyMatches": true
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9005",
+    "family": "real and nominal GDP",
+    "formula": "468/1.3*1.1;475.2/396*100",
+    "result": [
+      396,
+      120
+    ],
+    "keyMatches": true
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9006",
+    "family": "real and nominal GDP",
+    "formula": "(6000-60*50)/30;60*40+100*20;6000/4400*100",
+    "result": [
+      100,
+      4400,
+      136.363636
+    ],
+    "keyMatches": true
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9007",
+    "family": "real and nominal GDP",
+    "formula": "(2400-80*10)/20;80*12+80*30",
+    "result": [
+      80,
+      3360
+    ],
+    "keyMatches": true
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9013",
+    "family": "real and nominal GDP",
+    "formula": "(1.08/1.125-1)*100",
+    "result": -4,
+    "keyMatches": true
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9022",
+    "family": "real and nominal GDP",
+    "formula": "1.32/1.10;125*1.2",
+    "result": [
+      1.2,
+      150
+    ],
+    "keyMatches": true
+  },
+  {
+    "id": "PM2B1-RNGDP-LB-001",
+    "family": "real and nominal GDP",
+    "formula": "120*5+24*12;120*4+24*10;(720/600-1)*100",
+    "result": [
+      888,
+      720,
+      20
+    ],
+    "keyMatches": true
+  },
+  {
+    "id": "P52A-BANK-H-001",
+    "family": "bank reserves/capital/deposit creation",
+    "formula": "95000+20000-0.10*(800000+100000)",
+    "result": 25000,
+    "keyMatches": true
+  },
+  {
+    "id": "P52A-BANK-H-003",
+    "family": "bank reserves/capital/deposit creation",
+    "formula": "1/(.10+.05)",
+    "result": 6.6666667,
+    "keyMatches": true
+  },
+  {
+    "id": "LG-Q-313",
+    "family": "bank reserves/capital/deposit creation",
+    "formula": "(.06*100)/(100-92)*100",
+    "result": 75,
+    "keyMatches": true
+  },
+  {
+    "id": "LG-Q-9004",
+    "family": "bank reserves/capital/deposit creation",
+    "formula": "50-46-.09*50",
+    "result": -0.5,
+    "keyMatches": true
+  },
+  {
+    "id": "LG-Q-9007",
+    "family": "bank reserves/capital/deposit creation",
+    "formula": "(96000-24000)/.12",
+    "result": 600000,
+    "keyMatches": true
+  },
+  {
+    "id": "LG-Q-9000",
+    "family": "bank reserves/capital/deposit creation",
+    "formula": "28000*.875;28000/.125;28000/.125-28000",
+    "result": [
+      24500,
+      224000,
+      196000
+    ],
+    "keyMatches": true
+  },
+  {
+    "id": "LG-Q-9008",
+    "family": "bank reserves/capital/deposit creation",
+    "formula": "1/8-.10;1/5-.10",
+    "result": [
+      0.025,
+      0.1
+    ],
+    "keyMatches": true
+  },
+  {
+    "id": "LG-Q-205",
+    "family": "bank reserves/capital/deposit creation",
+    "formula": "10000*.8;10000/.2-10000",
+    "result": [
+      8000,
+      40000
+    ],
+    "keyMatches": true
+  },
+  {
+    "id": "LG-Q-9112",
+    "family": "bank reserves/capital/deposit creation",
+    "formula": "25000*.92*.75*.92;25000*.92*.92-15870",
+    "result": [
+      15870,
+      5290
+    ],
+    "keyMatches": true
+  },
+  {
+    "ids": [
+      "LG-Q-9006",
+      "LG-Q-9108",
+      "LG-Q-9106",
+      "LG-Q-9003",
+      "LG-Q-9011",
+      "LG-Q-300",
+      "LG-Q-9100",
+      "LG-Q-9113"
+    ],
+    "family": "banking-and-aggregates",
+    "formulas": [
+      "ΔD=-36/.10=-360; ΔM=36-360=-324 million",
+      "D=56000/(1-.8*.75)=140000; loans=.8D=112000; ΔM=140000-56000+.25*112000=112000",
+      "R=260000-100000=160000; required=.1*1900000=190000; shortage30000",
+      "m=(1+.25)/(.10+.05+.25)=3.125; ΔB=250/3.125=80 million",
+      "M2=3000+2500+1200+800=7500",
+      "M1=600+1400=2000;M2=2000+1800+500+300=4600",
+      "510000-.15*3000000=60000",
+      "900/(1/.125)=112.5million"
+    ],
+    "result": "PASS visible-input recomputation"
+  },
+  {
+    "family": "labor-force-and-institutions",
+    "ids": [
+      "ECON-NL-HARD-260",
+      "ECON-NL-ELITE-360",
+      "ECON-NL-ELITE-361",
+      "ECON-NL-LEGENDARY-9067",
+      "ECON-NL-LEGENDARY-9068",
+      "ECON-NL-LEGENDARY-9081",
+      "ECON-NL-LEGENDARY-9078",
+      "ECON-NL-LEGENDARYBOSS-9124"
+    ],
+    "formulas": [
+      "LF=180+12=192;UR=12/192=6.25%;LFPR=192/260=73.85%",
+      "9/164=5.49%;164/260=63.08%",
+      "E=124,U=10;10/134=7.46%",
+      "E=132+4-2=134;U=12-4-3+5=10;UR=6.94%;LFPR=144/200=72%",
+      "E=138-6=132;U=12-6+4=10;UR=10/142=7.04%;LFPR71%",
+      "jobfindings=184-180=4;exits=20-12-4=4;LFPR196/250=78.4%",
+      "24*90/(20*100)-1=.08",
+      "If all exits unemployed U=12-4-6=2;2/156=1.28%;if employed U=8;8/156=5.13%"
+    ],
+    "result": "All keyed calculations reproduce under intended inputs; 9124 missing exit-origin assumption confirmed."
+  },
+  {
+    "family": "CPI-indexing-real-interest",
+    "ids": [
+      "P52A-CPI-H-001",
+      "P52A-CPI-H-003",
+      "P52A-CPI-M-005",
+      "ECON-NL-LEGENDARY-9023",
+      "ECON-NL-LEGENDARY-9025",
+      "ECON-NL-LEGENDARY-9026",
+      "ECON-NL-LEGENDARY-9027",
+      "P52A-CPI-LB-002",
+      "PM2B2-INDEX-L-001",
+      "PM2B2-RNI-FB-005",
+      "ECON-NL-LEGENDARY-9040",
+      "ECON-NL-LEGENDARY-9038"
+    ],
+    "formulas": [
+      "856/640*100=133.75;133.75/125-1=.07",
+      "(4*8+6*12)/(4*5+6*10)*100=130",
+      "(2*4.4+12)/(2*4+12)*100=104",
+      "base=3*8+2*18=60;current=81;repairprice=(81-27)/2=27;81/72-1=.125",
+      "Bqty=(72-4*6)/12=4;current96;CPI133.333;100.8/96-1=.05",
+      "(27/25)/(525/500)-1=.028571",
+      "100*1.2*.9=108",
+      "current=(5*10+4*18)=122;base100;next131;131/122-1=.0737705",
+      "1.15/1.1-1=.04545",
+      "1.10/1.04-1=.057692",
+      "expectedinfl130/125-1=.04;i=.06;actual135/125-1=.08;r=-.02",
+      "expected8-3=5;actual172.8/160-1=8%;real0;error3pp"
+    ],
+    "result": "P52A-CPI-LB-002 numeric candidate discovered: visible next basket is 131, not 132; keyed 8.2% is wrong. All other listed cases reproduce."
+  },
+  {
+    "family": "growth-productivity-rule70",
+    "ids": [
+      "ECON-NL-LEGENDARY-9045",
+      "ECON-NL-LEGENDARY-9046",
+      "ECON-NL-LEGENDARY-9047",
+      "ECON-NL-LEGENDARY-9049",
+      "ECON-NL-LEGENDARY-9050",
+      "ECON-NL-LEGENDARY-9066",
+      "PM2B3-PROD-FB-004",
+      "PM2B3-PROD-L-002"
+    ],
+    "formulas": [
+      "70/1.75=40;70/7=10;32000*2=64000;8000*2^4=128000",
+      "1.12/1.05-1=6.67%;1.12/1.2-1=-6.67%",
+      "960/1.2/32*1000=25000;1320/1.5/44*1000=20000",
+      "1.10*.95*(.58/.60)-1=1.0167%",
+      "25344/24/(24000/20)-1=-12%;(25344/(24*80))/(24000/(20*100))-1=10%",
+      "30000/50000=.6;30000/55000=.54545",
+      "(36.37-28.53)/28.53*100=27.4798%, rounds27.5%, difference7.84",
+      "1.18/.95-1=.242105"
+    ],
+    "result": "PASS from displayed inputs; GROWTH-01 rounding reproduces keys."
+  },
+  {
+    "family": "fiscal-accounting-debt-saving-loanable-funds",
+    "ids": [
+      "43069",
+      "43070",
+      "43098",
+      "43111",
+      "43134",
+      "43135",
+      "43137",
+      "43145",
+      "43167",
+      "43191",
+      "43205",
+      "43217",
+      "43219",
+      "43245",
+      "43257",
+      "43259",
+      "43297",
+      "43309"
+    ],
+    "formulas": [
+      "revenue920-180=740;balance740-870=-130;cash180-130=50",
+      "deficit940-760=180;debt3600+500-270=3830;cash500-270-180=50",
+      "T900-180=720;Sg720-660=60;balance900-180-660-70=-10",
+      "outlaychange30+50+20=100;deficitincrease100-60=40;ΔG30",
+      "debtfactor.84/.8=1.05;ratio.84/1.08=.777778",
+      "debtfactor(.88/.8)*1.05=1.155",
+      "GDPfactor1.19*101/120=1.0015833",
+      "600*.02+400*.05=32;old1000*.02=20;Δ12",
+      "threshold101/120=.841667",
+      "ΔSpr=-20;ΔSg20-35=-15;ΔS=-35",
+      "1240-790-230=220;unplanned220-250=-30",
+      "LOANABLE01 r10:S180,D100;excess80",
+      "newr10,S180;Dold100;shift80;equilibriumΔ40",
+      "Iold4=260;Inew7=280;oldI7=230;shift50;Inew4=310",
+      "LOANABLE03 -55+15=-40;equilibrium100→80,Δ-20",
+      "restore40;private15;public25",
+      "LOANABLE07horizontalshift80;ΔI40;Δprivate40-80=-40",
+      "LOANABLE08horizontalshift40;private-10=40→private50"
+    ],
+    "result": "PASS visible-input and graph-coordinate recomputation."
+  },
+  {
+    "family": "quantity-fisher-real-money",
+    "ids": [
+      "LG-Q-9035",
+      "LG-Q-9031",
+      "LG-Q-9030",
+      "LG-Q-9029",
+      "LG-Q-9115",
+      "LG-Q-9041",
+      "LG-Q-249",
+      "LG-Q-9128",
+      "LG-Q-9048",
+      "LG-Q-9122"
+    ],
+    "formulas": [
+      "1.12/1.05-1=6.6667%;1.12/1.09-1=2.7523%;(1.12/1.05)*1.09-1=16.2667%",
+      "1.02*1.04/.97-1=9.3608%",
+      "2000*3/1500=4;2400*2.5/1600=3.75",
+      "graphVa2,Vb1.5:Pa.5,Pb2/3;Pfactor4/3;Mfactor2;Vfactor2/3 ifYfixed",
+      "24/.5=48;30/(2/3)=45;48*(2/3)=32",
+      "48000/1.25=38400;48000/1=48000;cash12000*.8=9600;48000/9600=5",
+      "720/1.2-720/1.5=120",
+      "oldr16-12=4;newr9-4=5;needednewi8→additionalcut1pp",
+      "oldπ8-4=4,new20-4=16;i7→19",
+      "1500*6/3000=3;2100*5/3500=3"
+    ],
+    "result": "PASS visible inputs, stated approximation and graph reciprocals."
+  },
+  {
+    "family": "AD-AS-fiscal-multipliers-stabilization",
+    "ids": [
+      "P52A-AS-L-003",
+      "PG3-MEQ-L-004",
+      "P52A-FISCAD-L-005",
+      "PM2D2-FISCAD-L-001",
+      "LG-Q-4008",
+      "ECON-SP-HARD-228",
+      "LG-Q-9069",
+      "LG-Q-4014",
+      "LG-Q-9143",
+      "PM2D2-STAB-L-002"
+    ],
+    "formulas": [
+      ".95*1.08-1=.026;1/.95-1=.0526316",
+      "ADAS02 AS1:P=Y+75;Y75→P150;P100→Y25",
+      "k2.5;ΔCtransfer=.6*30=18;netautonomous=-45/2.5=-18;ΔG=-36",
+      "x*.9+(120-x)*.4=84→x72,other48",
+      "120*.8/(1-.8)=480",
+      "40/(1-.5)-20=60→AD2",
+      "50/(1-.75)-40=160;250-160=90",
+      "(50+60-40)/(1-.75)=280;500-280=220",
+      "-60/(1-.75)+400=160",
+      "75/3=25unavoidable;25*4=100;cancel50"
+    ],
+    "result": "PASS with explicit simple models/visible graph coordinates."
+  },
+  {
+    "family": "money-market-transmission",
+    "ids": [
+      "PG4-MM-L-004",
+      "PG4-MPT-L-001",
+      "LG-Q-9064",
+      "LG-Q-9132",
+      "LG-Q-9131"
+    ],
+    "formulas": [
+      "MD1 through(75,6),(100,4):r=12-.08M;targetr3→M112.5;additional12.5",
+      "MONEY-AD01 Y100→125=25%;P50→56.25=12.5%",
+      "k2;neededΔI=-150;50perpoint→3points",
+      "k4;neededΔI=-75;25perpoint→3points",
+      "k2.5;netI=-90+30=-60;AD=-150;cancelmonetaryrequiresI90"
+    ],
+    "result": "PASS visible inputs and graph coordinates."
+  },
+  {
+    "family": "Phillips-dynamic-and-sacrifice",
+    "ids": [
+      "PG5-PC-L-006",
+      "PG5-PC-L-018",
+      "PG5-PC-L-024",
+      "P52B-S1-LRPC-L-002",
+      "PM2A-SAC-H-010",
+      "ECON-SP-LEGENDARY-9020",
+      "ECON-SP-LEGENDARY-9021",
+      "ECON-SP-LEGENDARY-9050",
+      "PM2A-SAC-LB-023",
+      "PM2A-SAC-LB-025"
+    ],
+    "formulas": [
+      "6=πe-.6*(6-5)+1.1→πe5.5;πe+offset6.6",
+      "πe2.5→3.5;u3→π4.5;holdingπ3.5→u5",
+      "slope(1.5-2.5)/(7-5)=-.5;nextπ1.5-.5*2=.5;later0≤.5-.5(u-5)→u≤6",
+      "naturalΔ5.6-6.4=-.8;gap4.9-5.6=-.7;end5.6",
+      "500*(.02+.01+.01)/4=5billionperpoint",
+      "18/(10-6)=4.5;lastyear(18-11)/4=1.75",
+      "(14-7)/(5-2)=2.3333",
+      "totalloss6*1.75=10.5;remainingloss7.5/reduction4=1.875;first3/2=1.5",
+      "(2.4+1.8)/(7-5.2)=2.3333",
+      "800*(.015+.015+.005)/2.8=10"
+    ],
+    "result": "PASS using visible graph values and stated cumulative-loss conventions."
+  },
+  {
+    "family": "Open economy: NX/NCO accounting and inverse flows",
+    "ids": [
+      "PMOE-NCO-L-001",
+      "PMOE-NCO-L-004",
+      "PMOE-NCO-L-006",
+      "PMOE-NCO-LB-001",
+      "PMOE-NCO-LB-002",
+      "PMOE-NCO-LB-003",
+      "PMOE-TX-L-001",
+      "PMOE-TX-L-002",
+      "PMOE-TX-L-003",
+      "PMOE-TX-L-005",
+      "PMOE-TX-L-006",
+      "PMOE-TX-LB-003"
+    ],
+    "formulas": [
+      "220*1.25=275;275<260(1+g)<315 =>5.769%<g<21.154%",
+      "300-(180+50)=70;300-(240+90)=-30",
+      "(3045-30)-(3000+30)=-15;maximum105",
+      "initialNCO-60+ΔS-ΔI30=-30;in650=>out620",
+      "ΔNCO=140+60=200;final125=>initial-75;resident-45 minus foreign30=-75",
+      "ΔNCO=20-90=-70;out-30 =>in+40",
+      "ΔY=96+35+18-83=66;ΔS=66-96=-30",
+      "-35<15-ΔI<0 =>15<ΔI<50",
+      "NX=54-18=36;out126=>in90",
+      "-74+x-(-22)=-31 =>x21",
+      "S-I=-45;reportedNX=-30;imports255 or exports195",
+      "ΔY=44+31+X-63=27=>X15;ΔNX=15-63=-48"
+    ],
+    "result": "PASS visible-input independent recalculation."
+  },
+  {
+    "family": "Open economy: nominal and real exchange rates; compounding",
+    "ids": [
+      "PMOE-NER-H-006",
+      "PMOE-NER-L-001",
+      "PMOE-NER-L-002",
+      "PMOE-NER-L-003",
+      "PMOE-NER-L-005",
+      "PMOE-NER-L-006",
+      "PMOE-NER-LB-001",
+      "PMOE-NER-LB-002",
+      "PMOE-NER-LB-003",
+      "PMOE-RER-L-001",
+      "PMOE-RER-L-002",
+      "PMOE-RER-L-003",
+      "PMOE-RER-LB-001",
+      "PMOE-RER-LB-002",
+      "PMOE-RER-LB-003"
+    ],
+    "formulas": [
+      "1.04*.90-1=-6.4%",
+      "1980*1.08=2138.4;minimumquote.891 vs.9=-1%",
+      "1.08*.95-1=2.6%",
+      "1.04*.94=.9776;1/.9776-1=2.2913%",
+      "80→88:foreignvalue1.1-1=10%;homevalue80/88-1=-9.0909%",
+      "420/.84*1.03=515;initial420/.75=560;break-evenfee560/500-1=12%",
+      "1120*1.05/(1000*1.2)-1=-2%",
+      "1.06*.92*1.05-1=2.396%",
+      "1.1*.9*1.04-1=2.96%;1/.99-1=1.0101%",
+      "1.05*1.04/1.10-1=-.7273%,consistent approximate-1%",
+      "initial1.5*200/300=1;324/1.35=240;actual1.35*230/324=.958333",
+      "1.03/1.09-1=-5.5046%;.98*1.09/1.03-1=3.7087%",
+      "1.12*.97/1.04=1.044615;inverse-1=-4.27099%",
+      "405/408=.992647 vsinitial1",
+      "1.02/(1.03*1.07)-1=-7.4494%"
+    ],
+    "result": "PASS visible inputs; approximate versus exact compounding conventions honored."
+  },
+  {
+    "family": "Open economy: policy and FX simultaneous shifts",
+    "ids": [
+      "PMOE-FX-L-006",
+      "PMOE-FX-LB-002",
+      "PMOE-POL-L-002",
+      "PMOE-POL-L-003",
+      "PMOE-POL-LB-001",
+      "PMOE-POL-LB-002"
+    ],
+    "formulas": [
+      "bothrightQ200,e1;demandfirstQ150,e1.2;supplyfirstQ150,e.8",
+      "oldrateexcessdemand70-45=25=>rateup;quantityup;sizeunknown",
+      "ΔNCO=-ΔI=110;desired150=>feedback-40",
+      "ΔNX=-37-(-64+x)=27-x=>x27;20wouldgiveNX7 inconsistent",
+      "-35=ΔSpr-80-(-30)=>ΔSpr15;FXsupply-35",
+      "verticalNCO+65,demand+40=>excesssupply25=>depreciation;ΔNX65"
+    ],
+    "result": "PASS using graph labels and stated fixed-saving/investment conditions."
+  }
+]

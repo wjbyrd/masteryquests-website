@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "statistics": {
+    "globalCanonicalIDs": 9779,
+    "generalQuestions": 1589,
+    "microQuestions": 6301,
+    "macroQuestions": 4745,
+    "macroExclusiveQuestions": 3156,
+    "sharedWithGeneral": 1589,
+    "sharedWithMicro": 1267,
+    "sharedUnion": 1589,
+    "groupedFindings": 134,
+    "findingsBySeverity": {
+      "MODERATE": 71,
+      "MAJOR": 62,
+      "CRITICAL": 1
+    },
+    "findingsByClass": {
+      "A": 5,
+      "B": 3,
+      "C": 6,
+      "D": 48,
+      "E": 2,
+      "F": 42,
+      "G": 16,
+      "H": 2,
+      "I": 6,
+      "J": 1,
+      "K": 0,
+      "L": 3
+    },
+    "affectedByClass": {
+      "A": 5,
+      "B": 12,
+      "C": 1153,
+      "D": 715,
+      "E": 11,
+      "F": 654,
+      "G": 84,
+      "H": 7,
+      "I": 29,
+      "J": 14,
+      "K": 0,
+      "L": 6
+    },
+    "uniqueAffectedQuestions": 2179,
+    "questionsWithNoIdentifiedIssue": 2566,
+    "percentageWithNoIdentifiedIssue": 54.08,
+    "instructorReviewGroups": 3,
+    "instructorReviewQuestions": 6,
+    "coverageStatuses": {
+      "NO IDENTIFIED ISSUE": 977,
+      "CONFIRMED FINDING": 2173,
+      "SHARED PRIOR DECISION PRESERVED": 1589,
+      "INSTRUCTOR REVIEW": 6
+    },
+    "independentlyRecomputedQuestions": 156,
+    "numericalEvidenceRecords": 46,
+    "imageQuestions": 591,
+    "distinctAssetPaths": 110,
+    "distinctAssetHashes": 92,
+    "exportFidelity": "PASS"
+  },
+  "protection": {
+    "checked": 14818,
+    "changed": [],
+    "missing": []
+  },
+  "files": {
+    "macroeconomics_audit_findings.json": 337938,
+    "macroeconomics_audit_coverage.json": 3893166,
+    "macroeconomics_audit_evidence.json": 13527972,
+    "macroeconomics_audit.md": 200548
+  }
+}
