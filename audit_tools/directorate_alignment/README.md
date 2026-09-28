@@ -1,11 +1,11 @@
 # Directorate instructional alignment patch
 
 These are replayable instructional corrections. The Cost Directive, Market
-Signal and Strategy Desk Standard content reviews are complete. Market and
+Signal, Strategy Desk and Agency Protocol Standard content reviews are complete. Market and
 Strategy visual-linked records also received necessity reviews, including
 Legendary candidates. Strategy's specified matrices and sequential games have
 independent mathematical verification in the private audit artifacts. The
-whole-Directorate review and full Legendary reviews are not complete.
+four required Standard campaigns are covered; full Legendary reviews are not complete.
 Mechanical validation alone is not certification.
 The full pre-edit report, source map, item ledger and remaining-work list are
 local private faculty materials under the ignored `_private_course_sources`
@@ -52,6 +52,15 @@ by hash. Original Strategy WebP assets are unchanged. Newly declared auxiliary
 groups and later edits to previously relocated records are supported with the
 same fingerprint, source-location and destination-collision checks.
 
+`agency-standard-patch.json` records all 523 original Standard-supporting
+Agency items: 277 active, 246 retired, no new IDs. It includes independent
+mechanism review, substantive tier corrections, canonical skill aliases,
+dedicated favorable-selection recovery, 25 coherent boss triples and removal
+of retired IDs from Fading Fortune and Risk & Reward. All 21 Legendary records
+remain unchanged. Trial by Graph remains intentionally unsupported and empty.
+The supplied Chapter 21 sources mention three control approaches without
+enumerating them; no active item assumes an invented exact list.
+
 Review upstream conflicts manually. Every changed record must exactly match an
 accepted fingerprint; all files and assets are checked before writing begins.
 Repeated application is idempotent. Validation checks unique IDs within each
@@ -71,6 +80,11 @@ Private source files and faculty exports are excluded from deployment.
 Strategy independently reproduced the same history defect before receiving
 the three guards. Its other HTML changes are limited to the Trial allowlist,
 equivalent tree descriptions and readable mobile lightbox dimensions.
+Agency also reproduced the exhausted-history defect before receiving those
+three guards. Its boss history tests found that excluding one stage could mix
+objectives: the narrow correction reuses an exactly-three-stage chosen
+objective group when history splits it. These are the only Agency engine fixes;
+the other HTML edits remove retired IDs from two limited-mode allowlists.
 
 `runtime-check.mjs` uses Playwright (set `PLAYWRIGHT_MODULE` to its package
 directory) and a headless Edge session. It blocks external requests, serves only
@@ -82,7 +96,7 @@ remediation selections are logged separately: a returned record is not proof
 of misconception-specific repair or appropriate retest demand.
 
 Set `AUDIT_GAME=cost-directive`, `AUDIT_GAME=market-signal`, or
-`AUDIT_GAME=strategy-desk` and optionally
+`AUDIT_GAME=strategy-desk`, or `AUDIT_GAME=agency-protocol` and optionally
 `AUDIT_OUTPUT_DIR` to run a scoped
 pass. `runtime-check.mjs --standard-only` restricts route/boss sampling to
 Standard content; answer hashes still cover the entire loaded bank. Cost and
@@ -95,6 +109,14 @@ the same scoped checks and Trial deck tests. Its reviewed transfers connect
 complete strategies to explicit information constraints, weak versus strict
 elimination to Nash reasoning, and enforceable rules to costly credible
 commitment. The private report lists every source/target exception.
+Agency checks all nine supported modes, 85 exhausted family/tier histories,
+1,326 room-appropriate recovery selections, 125 clean boss sets and all 200
+subsets of used/recent boss stages. Its sole reviewed cross-skill return,
+profit-center 4018 to 7029, explicitly compares cost/profit accountability with
+decision rights and cross-unit effects. It also checks 120 static limited-mode
+decks, 120 actual mixed-answer adaptive runs and 60 balanced Quiz runs across
+10/15/20 lengths. Trial remains disabled; excluded Legendary economics are not
+certified merely because the modes run.
 
 `campaign-check.mjs` samples 40 seeded 30-room Standard traversals for each of
 two response-time profiles in every game. It calls the actual selection and

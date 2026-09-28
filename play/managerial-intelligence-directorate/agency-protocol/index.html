@@ -3595,7 +3595,7 @@ let fadingFortuneQuestionFrozen = false;
 let fadingFortuneDistribution = {100:0,75:0,50:0,25:0};
 let fadingFortuneCorrectByValue = {100:0,75:0,50:0,25:0};
 let fadingFortuneEvents = [];
-const fadingFortuneQuestionIds = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277,278,279,280,281,282,283,7000,7001,7002,7003,7004,7005,7006,7007,7008,7009,7010,7011,7012,7013,7014,7015,7016,7017,7018,7019,7020,7021,7022,7023,7024,7025,7026,7027,7028,7029,7030,7031,7032,7033,7034,7035,9000,9001,9002,9003,9004,9005,9006,9007,9008,9009,9010,9011,9012,9013,9014,9015,9016,9017,9018,9019,9020,9021,9022,9023,9024,9025,9026,9027,9028,9029,9030,9031,9032,9033,9034,9035,9036,9037,9038,9039,9040,9041,9042,9043,9044,9045,9046,9047,9048,9049,9050,9051,9052,9053,9054,9055,9056,9057,9058,9059,9060,9061,9062,9063,9064,9065,9066,9067,9068,9069,9070,9071,9072,9073];
+const fadingFortuneQuestionIds = [1, 4, 8, 10, 11, 12, 13, 14, 16, 19, 22, 25, 29, 31, 32, 34, 35, 36, 37, 101, 114, 118, 120, 121, 122, 126, 130, 132, 133, 135, 205, 206, 207, 208, 209, 212, 214, 215, 217, 219, 220, 221, 223, 227, 230, 233, 237, 241, 245, 246, 250, 255, 264, 268, 269, 270, 273, 275, 276, 277, 278, 279, 280, 282, 283, 7000, 7001, 7002, 7003, 7005, 7006, 7007, 7009, 7012, 7013, 7016, 7020, 7021, 7022, 7023, 7024, 7025, 7026, 7027, 7028, 7029, 7031, 7032, 7033, 7034, 7035, 9000, 9003, 9004, 9005, 9006, 9008, 9012, 9016, 9021, 9024, 9025, 9030, 9031, 9032, 9035, 9036, 9037, 9038, 9039, 9040, 9043, 9044, 9045, 9046, 9047, 9049, 9050, 9051, 9052, 9053, 9054, 9057, 9059, 9060, 9061, 9063, 9069, 9070, 9072];
 
 const RISK_REWARD_ALLOWED_TARGETS = [10,15,20];
 const RISK_REWARD_STARTING_BANKROLL = 1000;
@@ -3622,7 +3622,7 @@ let riskRewardWagerCounts = {"10%":0,"25%":0,"50%":0,"ALL IN":0};
 let riskRewardCorrectByTier = {"10%":0,"25%":0,"50%":0,"ALL IN":0};
 let riskRewardAttemptsByTier = {"10%":0,"25%":0,"50%":0,"ALL IN":0};
 let riskRewardEvents = [];
-const riskRewardQuestionIds = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277,278,279,280,281,282,283,7000,7001,7002,7003,7004,7005,7006,7007,7008,7009,7010,7011,7012,7013,7014,7015,7016,7017,7018,7019,7020,7021,7022,7023,7024,7025,7026,7027,7028,7029,7030,7031,7032,7033,7034,7035,9000,9001,9002,9003,9004,9005,9006,9007,9008,9009,9010,9011,9012,9013,9014,9015,9016,9017,9018,9019,9020,9021,9022,9023,9024,9025,9026,9027,9028,9029,9030,9031,9032,9033,9034,9035,9036,9037,9038,9039,9040,9041,9042,9043,9044,9045,9046,9047,9048,9049,9050,9051,9052,9053,9054,9055,9056,9057,9058,9059,9060,9061,9062,9063,9064,9065,9066,9067,9068,9069,9070,9071,9072,9073];
+const riskRewardQuestionIds = [1, 4, 8, 10, 11, 12, 13, 14, 16, 19, 22, 25, 29, 31, 32, 34, 35, 36, 37, 101, 114, 118, 120, 121, 122, 126, 130, 132, 133, 135, 205, 206, 207, 208, 209, 212, 214, 215, 217, 219, 220, 221, 223, 227, 230, 233, 237, 241, 245, 246, 250, 255, 264, 268, 269, 270, 273, 275, 276, 277, 278, 279, 280, 282, 283, 7000, 7001, 7002, 7003, 7005, 7006, 7007, 7009, 7012, 7013, 7016, 7020, 7021, 7022, 7023, 7024, 7025, 7026, 7027, 7028, 7029, 7031, 7032, 7033, 7034, 7035, 9000, 9003, 9004, 9005, 9006, 9008, 9012, 9016, 9021, 9024, 9025, 9030, 9031, 9032, 9035, 9036, 9037, 9038, 9039, 9040, 9043, 9044, 9045, 9046, 9047, 9049, 9050, 9051, 9052, 9053, 9054, 9057, 9059, 9060, 9061, 9063, 9069, 9070, 9072];
 
 let unlimitedPracticeCycle = 1;
 let latestConceptReviewTitles = [];
@@ -4779,13 +4779,17 @@ function getQuestionsMatchingNeed(pool, objectiveKey, tag, excludeIds = [], skil
             q.primarySkill === skillKey || q.repairSkill === skillKey
         );
         if(skillMatches.length > 0) return skillMatches;
+        // Retry matching content without recent-history exclusions before drifting.
+        if(pool.some(q => q.primarySkill === skillKey || q.repairSkill === skillKey)) return [];
     }
 
     let objectiveMatches = candidates.filter(q => inferObjective(q) === objectiveKey);
     if(objectiveMatches.length > 0) return objectiveMatches;
+    if(pool.some(q => inferObjective(q) === objectiveKey)) return [];
 
     let tagMatches = candidates.filter(q => q.tag === tag);
     if(tagMatches.length > 0) return tagMatches;
+    if(pool.some(q => q.tag === tag)) return [];
 
     return candidates;
 }
@@ -10434,11 +10438,21 @@ function buildBossQuestionSet(bank, poolName, chosenObjective){
         available = bank.filter(Boolean);
     }
 
-    const objectiveMatches = chosenObjective
-        ? available.filter(question =>
-            getBossObjectiveKey(question) === chosenObjective
-        )
+    // Preserve a complete reviewed objective encounter when history splits its stages.
+    const completeObjective = chosenObjective
+        ? bank.filter(question => question && getBossObjectiveKey(question) === chosenObjective)
         : [];
+    const completeStages = ["opening", "middle", "final"].every(stage =>
+        completeObjective.some(question => question.bossStage === stage)
+    );
+    if(completeObjective.length === 3 && completeStages &&
+       available.filter(question => getBossObjectiveKey(question) === chosenObjective).length < 3){
+        available = completeObjective;
+    }
+
+    const objectiveMatches = available.filter(question =>
+        chosenObjective && getBossObjectiveKey(question) === chosenObjective
+    );
 
     const selected = objectiveMatches.length >= 3
         ? shuffle([...objectiveMatches]).slice(0, 3)

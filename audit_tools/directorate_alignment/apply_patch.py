@@ -214,7 +214,7 @@ def main():
     parser.add_argument("--validate", action="store_true")
     args = parser.parse_args()
     patches = [json.loads((HERE / name).read_text(encoding='utf-8'))
-               for name in ('content-patch.json', 'continuation-patch.json', 'cost-standard-patch.json', 'market-standard-patch.json', 'strategy-standard-patch.json')]
+               for name in ('content-patch.json', 'continuation-patch.json', 'cost-standard-patch.json', 'market-standard-patch.json', 'strategy-standard-patch.json', 'agency-standard-patch.json')]
     paths = {}
     sources = {}
     for game in GAMES:
