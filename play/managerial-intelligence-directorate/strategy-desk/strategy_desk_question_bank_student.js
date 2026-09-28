@@ -49,35 +49,37 @@ window.questionBanks = {
       "type": "calculation",
       "objective": "LO6.1",
       "difficulty": "easy",
-      "conceptCluster": "LO6.1_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_market_demand",
       "primarySkill": "market_demand",
       "secondarySkills": [],
       "repairSkill": "market_demand",
       "commonError": "averages_individual_quantities",
       "feedback": "Market demand adds the quantities demanded by all buyers at the same price: 2 + 3 + 1 = 6 units.",
-      "aHash": "70f2a9bb85ae1a4b1a22d5fd0f4ba1666b465f9d41f1fcca9185a9dcc1966a10"
+      "aHash": "70f2a9bb85ae1a4b1a22d5fd0f4ba1666b465f9d41f1fcca9185a9dcc1966a10",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 2,
       "sourceGame": "strategyDesk",
       "q": "A firm notices that some customers would pay more while others would leave at that price. What profit opportunity does this create?",
       "options": [
-        "Charge one price to every customer",
+        "Recover fixed costs by charging every buyer the same markup",
         "Capture more consumer surplus",
-        "Raise production cost for every unit",
-        "Eliminate every competing seller"
+        "Increase sales without capturing any additional surplus",
+        "Set all segment prices at marginal cost"
       ],
       "tag": "price_discrimination",
-      "type": "definition",
+      "type": "application",
       "objective": "LO13.1",
       "difficulty": "easy",
-      "conceptCluster": "LO13.1_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_price_discrimination",
       "primarySkill": "price_discrimination",
       "secondarySkills": [],
       "repairSkill": "price_discrimination",
       "commonError": "confuses_segmentation_with_cost_reduction",
       "feedback": "Price discrimination can move prices closer to customers’ willingness to pay and transfer more surplus to the seller.",
-      "aHash": "7f61040039871639e79ffb972b88d89c4d5bdaa6f0ff4cc3a08f58d4e6773155"
+      "aHash": "7f61040039871639e79ffb972b88d89c4d5bdaa6f0ff4cc3a08f58d4e6773155",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 3,
@@ -93,13 +95,14 @@ window.questionBanks = {
       "type": "definition",
       "objective": "LO6.1",
       "difficulty": "easy",
-      "conceptCluster": "LO6.1_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_market_demand",
       "primarySkill": "market_demand",
       "secondarySkills": [],
       "repairSkill": "market_demand",
       "commonError": "adds_prices_instead_of_quantities",
       "feedback": "Market demand is the horizontal sum of individual demand curves, so quantities are added at each price.",
-      "aHash": "6c77c3f1bdac9dc7aae887b754bef697fd978b7c407db1e4f44cc71c7b5c514c"
+      "aHash": "6c77c3f1bdac9dc7aae887b754bef697fd978b7c407db1e4f44cc71c7b5c514c",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 4,
@@ -112,16 +115,17 @@ window.questionBanks = {
         "$20 and 4 units; $30 and 2 units"
       ],
       "tag": "market_demand",
-      "type": "application",
+      "type": "calculation",
       "objective": "LO6.1",
       "difficulty": "easy",
-      "conceptCluster": "LO6.1_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_market_demand",
       "primarySkill": "market_demand",
       "secondarySkills": [],
       "repairSkill": "market_demand",
       "commonError": "uses_largest_buyer_only",
       "feedback": "At each price, add all buyers’ quantities: 11 units at $20 and 6 units at $30.",
-      "aHash": "c351fd77e1d90827e52da71723363eff7af68fdc5babcdf2945650b56c6bcf0d"
+      "aHash": "c351fd77e1d90827e52da71723363eff7af68fdc5babcdf2945650b56c6bcf0d",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 5,
@@ -129,21 +133,22 @@ window.questionBanks = {
       "q": "A firm surveys only one customer before forecasting total market sales. What is the main problem?",
       "options": [
         "One customer’s demand may not represent aggregate demand.",
-        "The survey automatically makes total market demand perfectly elastic.",
-        "Market demand must always equal one unit.",
-        "A single customer reveals the entire supply curve."
+        "The largest buyer alone determines market quantity",
+        "Adding buyers changes only the supply curve",
+        "Market demand is the average individual quantity"
       ],
       "tag": "market_demand",
-      "type": "trap",
+      "type": "interpretation",
       "objective": "LO6.1",
       "difficulty": "easy",
-      "conceptCluster": "LO6.1_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_market_demand",
       "primarySkill": "market_demand",
       "secondarySkills": [],
       "repairSkill": "market_demand",
       "commonError": "treats_one_buyer_as_entire_market",
       "feedback": "One person’s demand is not the same as the combined demand of all buyers in the market.",
-      "aHash": "63b356b43d09405db846369c9a5febaae71acbd55188a6a34d1cf202184d7a1b"
+      "aHash": "63b356b43d09405db846369c9a5febaae71acbd55188a6a34d1cf202184d7a1b",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 6,
@@ -159,13 +164,14 @@ window.questionBanks = {
       "type": "interpretation",
       "objective": "LO6.1",
       "difficulty": "easy",
-      "conceptCluster": "LO6.1_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_market_demand",
       "primarySkill": "market_demand",
       "secondarySkills": [],
       "repairSkill": "market_demand",
       "commonError": "moves_along_curve_for_more_buyers",
       "feedback": "More buyers increase the total quantity demanded at each price, shifting market demand to the right.",
-      "aHash": "3974d31c62fc9dfe0c6859c5bafdc9b4fab35c50eee8deff1c298ec8d637ddf8"
+      "aHash": "3974d31c62fc9dfe0c6859c5bafdc9b4fab35c50eee8deff1c298ec8d637ddf8",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 7,
@@ -181,62 +187,65 @@ window.questionBanks = {
       "type": "definition",
       "objective": "LO6.2",
       "difficulty": "easy",
-      "conceptCluster": "LO6.2_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_optimal_pricing",
       "primarySkill": "optimal_pricing",
       "secondarySkills": [],
       "repairSkill": "optimal_pricing",
       "commonError": "uses_sunk_cost_to_set_price",
       "feedback": "Optimal pricing compares the revenue created by a sale with the relevant marginal cost while accounting for the demand response.",
-      "aHash": "0b59186542138b7ecc5ac53507283b6f8aec0b7609ae28ac08ba7eb322286d16"
+      "aHash": "0b59186542138b7ecc5ac53507283b6f8aec0b7609ae28ac08ba7eb322286d16",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 8,
       "sourceGame": "strategyDesk",
-      "q": "A proposed price cut will increase sales. Before approving it, the manager should ask whether",
+      "q": "With other costs unchanged, a proposed price cut will increase sales. Before approving it, the manager should ask",
       "options": [
         "the extra contribution from added sales exceeds the contribution lost on existing sales",
-        "whether every competing firm has already announced an identical price reduction",
-        "fixed costs were paid last year",
-        "the firm can advertise the cut"
+        "whether total sales revenue rises, regardless of variable cost",
+        "whether the old price covered an allocated fixed cost",
+        "whether the percentage price cut equals the percentage volume gain"
       ],
       "tag": "optimal_pricing",
       "type": "application",
       "objective": "LO6.2",
       "difficulty": "easy",
-      "conceptCluster": "LO6.2_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_optimal_pricing",
       "primarySkill": "optimal_pricing",
       "secondarySkills": [],
       "repairSkill": "optimal_pricing",
       "commonError": "focuses_only_on_unit_sales",
       "feedback": "A price cut is worthwhile only when the contribution from additional sales exceeds the margin surrendered on existing sales.",
-      "aHash": "cd33eb55a04ddd49ff8bd1e16bdd4206a17dfde3023ff909c91cbd0d03f89f6c"
+      "aHash": "cd33eb55a04ddd49ff8bd1e16bdd4206a17dfde3023ff909c91cbd0d03f89f6c",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 9,
       "sourceGame": "strategyDesk",
-      "q": "If demand for a product is inelastic at the current price, an immediate profit opportunity may exist from",
+      "q": "For a single product with locally inelastic demand and nonnegative marginal cost, an immediate profit opportunity may exist from",
       "options": [
-        "lowering price",
+        "lowering price while leaving product quality unchanged",
         "raising price",
-        "doubling fixed cost",
-        "eliminating all advertising"
+        "holding price to maximize unit sales",
+        "setting marginal revenue equal to zero"
       ],
       "tag": "optimal_pricing",
       "type": "interpretation",
       "objective": "LO6.2",
       "difficulty": "easy",
-      "conceptCluster": "LO6.2_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_optimal_pricing",
       "primarySkill": "optimal_pricing",
       "secondarySkills": [],
       "repairSkill": "optimal_pricing",
       "commonError": "reverses_inelastic_pricing_rule",
       "feedback": "With inelastic demand, a price increase reduces quantity by a smaller percentage and raises total revenue, all else equal.",
-      "aHash": "8f6027c81b477448fcc088e510829d646de24ced6a90d9d06d72bd69e07b9bce"
+      "aHash": "8f6027c81b477448fcc088e510829d646de24ced6a90d9d06d72bd69e07b9bce",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 10,
       "sourceGame": "strategyDesk",
-      "q": "Marginal revenue equals zero when",
+      "q": "For smooth downward-sloping demand with an interior total-revenue maximum, marginal revenue equals zero when",
       "options": [
         "total revenue is maximized",
         "total cost is minimized",
@@ -247,57 +256,37 @@ window.questionBanks = {
       "type": "definition",
       "objective": "LO6.2",
       "difficulty": "easy",
-      "conceptCluster": "LO6.2_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_optimal_pricing",
       "primarySkill": "optimal_pricing",
       "secondarySkills": [],
       "repairSkill": "optimal_pricing",
       "commonError": "confuses_revenue_maximum_with_profit_maximum",
       "feedback": "Total revenue reaches its maximum where marginal revenue is zero.",
-      "aHash": "3ba04b86bf41ba42b2b822c393d55bb6d9dd3c786020c0c4854a1dfde1a4ad65"
+      "aHash": "3ba04b86bf41ba42b2b822c393d55bb6d9dd3c786020c0c4854a1dfde1a4ad65",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 11,
       "sourceGame": "strategyDesk",
       "q": "Two customer groups have different willingness to pay, and resale can be prevented. A firm may increase profit by",
       "options": [
-        "charge different prices",
-        "use one price for both groups",
-        "sell only to low-value buyers",
-        "set price equal to fixed cost"
+        "charging different prices",
+        "using one price for both groups",
+        "selling only to low-value buyers",
+        "setting price equal to fixed cost"
       ],
       "tag": "price_discrimination",
       "type": "application",
       "objective": "LO13.1",
       "difficulty": "easy",
-      "conceptCluster": "LO13.1_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_price_discrimination",
       "primarySkill": "price_discrimination",
       "secondarySkills": [],
       "repairSkill": "price_discrimination",
       "commonError": "assumes_one_price_is_always_best",
       "feedback": "When groups value the product differently and arbitrage is controlled, segment-specific prices can raise profit.",
-      "aHash": "ceb7ac4fdc0d495e512c3560dfb6f65f8c0d118a78dd84ff8f9cef6d0edd6d03"
-    },
-    {
-      "id": 12,
-      "sourceGame": "strategyDesk",
-      "q": "A firm can sell 100 units at $30 or 120 units at $27. Variable cost is $15 per unit. Which option generates more contribution?",
-      "options": [
-        "$30 price; contribution is $1,500",
-        "$27 price; contribution is $1,440",
-        "$30 price; contribution is $3,000",
-        "$27 price; contribution is $3,240"
-      ],
-      "tag": "optimal_pricing",
-      "type": "calculation",
-      "objective": "LO6.2",
-      "difficulty": "easy",
-      "conceptCluster": "LO6.2_strategy_desk",
-      "primarySkill": "optimal_pricing",
-      "secondarySkills": [],
-      "repairSkill": "optimal_pricing",
-      "commonError": "compares_revenue_instead_of_contribution",
-      "feedback": "At $30, contribution is ($30 − $15) × 100 = $1,500. At $27, it is ($27 − $15) × 120 = $1,440.",
-      "aHash": "370d38532c1527f16557685948360e58b9e9720e93643c088092eceb8e612394"
+      "aHash": "decf4c1099218ebe356e465e061268ecdc8bbcce42220ef510879581b249befc",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 13,
@@ -313,35 +302,14 @@ window.questionBanks = {
       "type": "application",
       "objective": "LO13.2",
       "difficulty": "easy",
-      "conceptCluster": "LO13.2_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_direct_price_discrimination",
       "primarySkill": "direct_price_discrimination",
       "secondarySkills": [],
       "repairSkill": "direct_price_discrimination",
       "commonError": "confuses_verified_discount_with_self_selection",
       "feedback": "The theater observes and verifies the customer’s group before assigning the discounted price.",
-      "aHash": "f9e7b95d9cc2fcfdcf62d35715cf5c74f0663916af1b06d2bdd6c12fce04e7bb"
-    },
-    {
-      "id": 14,
-      "sourceGame": "strategyDesk",
-      "q": "A museum gives a lower price only after checking a visitor’s age. Why is this direct price discrimination?",
-      "options": [
-        "The seller verifies the buyer’s group",
-        "The buyer selects among product versions",
-        "Every visitor pays one uniform price",
-        "The admission ticket is bundled with another service"
-      ],
-      "tag": "direct_price_discrimination",
-      "type": "definition",
-      "objective": "LO13.2",
-      "difficulty": "easy",
-      "conceptCluster": "LO13.2_strategy_desk",
-      "primarySkill": "direct_price_discrimination",
-      "secondarySkills": [],
-      "repairSkill": "direct_price_discrimination",
-      "commonError": "confuses_direct_with_indirect_discrimination",
-      "feedback": "Direct price discrimination uses observable or verified customer characteristics to assign prices.",
-      "aHash": "a69b20bc2d8039c0cddcc897fac770acb2c5c10c5084b4201bce4800a4f11905"
+      "aHash": "f9e7b95d9cc2fcfdcf62d35715cf5c74f0663916af1b06d2bdd6c12fce04e7bb",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 15,
@@ -357,18 +325,19 @@ window.questionBanks = {
       "type": "definition",
       "objective": "LO6.3",
       "difficulty": "easy",
-      "conceptCluster": "LO6.3_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_price_elasticity",
       "primarySkill": "price_elasticity",
       "secondarySkills": [],
       "repairSkill": "price_elasticity",
       "commonError": "uses_units_instead_of_percentage_changes",
       "feedback": "Price elasticity measures the responsiveness of quantity demanded to a percentage change in price.",
-      "aHash": "b48a37cd6a0f19c1a0f656fa09473df00db5594c7ce06c90259e9fe0940052fc"
+      "aHash": "b48a37cd6a0f19c1a0f656fa09473df00db5594c7ce06c90259e9fe0940052fc",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 16,
       "sourceGame": "strategyDesk",
-      "q": "A price elasticity of demand of −1.5 means that a 1% increase in price causes quantity demanded to",
+      "q": "A price elasticity of demand of −1.5 means that a small 1% increase in price causes quantity demanded to change by approximately",
       "options": [
         "increase by 1.5%",
         "decrease by 1.5%",
@@ -379,35 +348,37 @@ window.questionBanks = {
       "type": "interpretation",
       "objective": "LO6.3",
       "difficulty": "easy",
-      "conceptCluster": "LO6.3_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_price_elasticity",
       "primarySkill": "price_elasticity",
       "secondarySkills": [],
       "repairSkill": "price_elasticity",
       "commonError": "treats_elasticity_as_unit_change",
       "feedback": "An elasticity of −1.5 means quantity demanded changes by 1.5% in the opposite direction of a 1% price change.",
-      "aHash": "07c525a871e6410fcba195300f3811e99c1b967fe3cf8e5dc275fadb28fbb5fd"
+      "aHash": "07c525a871e6410fcba195300f3811e99c1b967fe3cf8e5dc275fadb28fbb5fd",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 17,
       "sourceGame": "strategyDesk",
       "q": "A discounted concert ticket is printed with the buyer’s name and cannot be transferred. The restriction is meant to",
       "options": [
-        "increase the venue’s fixed cost",
+        "identify which buyers prefer premium seating",
         "block ticket resale",
-        "make demand perfectly elastic",
-        "convert admission into a product bundle"
+        "shift demand without restricting resale",
+        "make high-price buyers more price sensitive"
       ],
       "tag": "arbitrage_control",
       "type": "application",
       "objective": "LO13.3",
       "difficulty": "easy",
-      "conceptCluster": "LO13.3_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_arbitrage_control",
       "primarySkill": "arbitrage_control",
       "secondarySkills": [],
       "repairSkill": "arbitrage_control",
       "commonError": "misses_nontransferability_as_arbitrage_control",
       "feedback": "A named, nontransferable ticket keeps discounted buyers from reselling access to customers assigned the higher price.",
-      "aHash": "8a956ea115959a00c66a08198d512872d7fcf33db8412c1be4d369cd50011601"
+      "aHash": "8a956ea115959a00c66a08198d512872d7fcf33db8412c1be4d369cd50011601",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 18,
@@ -415,21 +386,22 @@ window.questionBanks = {
       "q": "Why can arbitrage destroy a direct price-discrimination plan?",
       "options": [
         "Resale connects the two customer groups",
-        "High-price buyers always purchase more units",
-        "The firm must charge marginal cost to every buyer",
-        "Arbitrage turns the product into a complement"
+        "Low-price buyers face a higher marginal production cost",
+        "Customer groups acquire identical incomes",
+        "The seller can directly verify more customer types"
       ],
       "tag": "arbitrage_control",
       "type": "interpretation",
       "objective": "LO13.3",
       "difficulty": "easy",
-      "conceptCluster": "LO13.3_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_arbitrage_control",
       "primarySkill": "arbitrage_control",
       "secondarySkills": [],
       "repairSkill": "arbitrage_control",
       "commonError": "confuses_arbitrage_with_high_demand",
       "feedback": "Resale allows customers assigned the high price to obtain the product through the low-price group.",
-      "aHash": "0fcace53281206130585077a3f587ef8cd11c1c9c37c56eab1a1972a913bd92f"
+      "aHash": "0fcace53281206130585077a3f587ef8cd11c1c9c37c56eab1a1972a913bd92f",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 19,
@@ -445,13 +417,14 @@ window.questionBanks = {
       "type": "interpretation",
       "objective": "LO6.3",
       "difficulty": "easy",
-      "conceptCluster": "LO6.3_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_price_elasticity",
       "primarySkill": "price_elasticity",
       "secondarySkills": [],
       "repairSkill": "price_elasticity",
       "commonError": "uses_direction_dependent_percentage_bases",
       "feedback": "The midpoint method uses the average of the two prices and the average of the two quantities. These bases do not depend on which observation is called the starting point.",
-      "aHash": "a6c8943193ea75e0bcb886f79e19ae90be9c33cf33054f07953e826381801d4e"
+      "aHash": "a6c8943193ea75e0bcb886f79e19ae90be9c33cf33054f07953e826381801d4e",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 20,
@@ -467,13 +440,14 @@ window.questionBanks = {
       "type": "definition",
       "objective": "LO13.4",
       "difficulty": "easy",
-      "conceptCluster": "LO13.4_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_robinson_patman",
       "primarySkill": "robinson_patman",
       "secondarySkills": [],
       "repairSkill": "robinson_patman",
       "commonError": "applies_act_to_unrelated_transactions",
       "feedback": "The Act addresses certain discriminatory commodity prices that may injure competition among competing purchasers.",
-      "aHash": "e36998bdd9e644e93901d034805fe5f725eecf2cf5c24e22a02c077732c68a79"
+      "aHash": "e36998bdd9e644e93901d034805fe5f725eecf2cf5c24e22a02c077732c68a79",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 21,
@@ -481,21 +455,22 @@ window.questionBanks = {
       "q": "Why do many economists criticize the Robinson-Patman Act?",
       "options": [
         "It may protect rivals instead of competition",
-        "It requires every seller to become a monopoly",
-        "It prohibits every temporary promotional discount",
-        "It applies only when all market prices are identical"
+        "It prevents all discounts regardless of competitive effects",
+        "It guarantees the lowest price to every final consumer",
+        "It requires identical marginal costs for all sellers"
       ],
       "tag": "robinson_patman",
       "type": "interpretation",
       "objective": "LO13.4",
       "difficulty": "easy",
-      "conceptCluster": "LO13.4_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_robinson_patman",
       "primarySkill": "robinson_patman",
       "secondarySkills": [],
       "repairSkill": "robinson_patman",
       "commonError": "assumes_economists_oppose_all_discounting",
       "feedback": "The criticism is that protecting individual rivals can interfere with discounts that benefit the competitive process.",
-      "aHash": "ae14d28b994ea226d4e105915144390de35f76c0a98484c10dc193e2cf0eb9dc"
+      "aHash": "ae14d28b994ea226d4e105915144390de35f76c0a98484c10dc193e2cf0eb9dc",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 22,
@@ -505,19 +480,20 @@ window.questionBanks = {
         "increase",
         "decrease",
         "remain unchanged",
-        "fall to zero"
+        "change in a direction determined solely by fixed cost"
       ],
       "tag": "price_elasticity",
       "type": "interpretation",
       "objective": "LO6.3",
       "difficulty": "easy",
-      "conceptCluster": "LO6.3_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_price_elasticity",
       "primarySkill": "price_elasticity",
       "secondarySkills": [],
       "repairSkill": "price_elasticity",
       "commonError": "reverses_total_revenue_rule",
       "feedback": "With elastic demand, quantity rises proportionally more than price falls, so total revenue increases.",
-      "aHash": "e20a548f23fa36bc8d5ba48237ec3ee4d4f00087841d3614f81749e3c6c1b47e"
+      "aHash": "e20a548f23fa36bc8d5ba48237ec3ee4d4f00087841d3614f81749e3c6c1b47e",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 23,
@@ -533,35 +509,14 @@ window.questionBanks = {
       "type": "application",
       "objective": "LO13.5",
       "difficulty": "easy",
-      "conceptCluster": "LO13.5_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_price_discrimination_cases",
       "primarySkill": "price_discrimination_cases",
       "secondarySkills": [],
       "repairSkill": "price_discrimination_cases",
       "commonError": "reverses_business_and_leisure_elasticity",
       "feedback": "Business travelers often have fewer scheduling alternatives, making their demand less price responsive.",
-      "aHash": "b99c686b927647d2e5c4432078f90e1c2d822b8af0b3be7229b7302db11c4ffd"
-    },
-    {
-      "id": 24,
-      "sourceGame": "strategyDesk",
-      "q": "A software company verifies enrollment before offering a student discount. This is a real-world example of",
-      "options": [
-        "capacity pricing",
-        "direct price discrimination",
-        "pure product bundling",
-        "indirect price discrimination"
-      ],
-      "tag": "price_discrimination_cases",
-      "type": "application",
-      "objective": "LO13.5",
-      "difficulty": "easy",
-      "conceptCluster": "LO13.5_strategy_desk",
-      "primarySkill": "price_discrimination_cases",
-      "secondarySkills": [],
-      "repairSkill": "price_discrimination_cases",
-      "commonError": "confuses_verified_segment_price_with_bundle",
-      "feedback": "Enrollment verification identifies an eligible segment and assigns that group a different price.",
-      "aHash": "f9e7b95d9cc2fcfdcf62d35715cf5c74f0663916af1b06d2bdd6c12fce04e7bb"
+      "aHash": "b99c686b927647d2e5c4432078f90e1c2d822b8af0b3be7229b7302db11c4ffd",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 25,
@@ -577,13 +532,14 @@ window.questionBanks = {
       "type": "definition",
       "objective": "LO14.1",
       "difficulty": "easy",
-      "conceptCluster": "LO14.1_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_indirect_price_discrimination",
       "primarySkill": "indirect_price_discrimination",
       "secondarySkills": [],
       "repairSkill": "indirect_price_discrimination",
       "commonError": "confuses_self_selection_with_verification",
       "feedback": "The seller offers a menu of choices and lets customer behavior reveal willingness to pay.",
-      "aHash": "d9a05eeee209aac265f2f4b71d5e665685d9984a741a50507ba716e14385441f"
+      "aHash": "d9a05eeee209aac265f2f4b71d5e665685d9984a741a50507ba716e14385441f",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 26,
@@ -596,16 +552,17 @@ window.questionBanks = {
         "The manager should compare the elasticity estimate with the product’s current price level."
       ],
       "tag": "price_elasticity",
-      "type": "trap",
+      "type": "interpretation",
       "objective": "LO6.3",
       "difficulty": "easy",
-      "conceptCluster": "LO6.3_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_price_elasticity",
       "primarySkill": "price_elasticity",
       "secondarySkills": [],
       "repairSkill": "price_elasticity",
       "commonError": "classifies_using_sign_instead_of_magnitude",
       "feedback": "The negative sign reflects the inverse price–quantity relationship. Classification uses the absolute value, and 0.7 is inelastic.",
-      "aHash": "3851bbac972bee42a04589b06456d75818332dba50062923ff0914b8b08f700d"
+      "aHash": "3851bbac972bee42a04589b06456d75818332dba50062923ff0914b8b08f700d",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 27,
@@ -621,40 +578,42 @@ window.questionBanks = {
       "type": "definition",
       "objective": "LO6.4",
       "difficulty": "easy",
-      "conceptCluster": "LO6.4_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_forecasting_elasticities",
       "primarySkill": "forecasting_elasticities",
       "secondarySkills": [],
       "repairSkill": "forecasting_elasticities",
       "commonError": "confuses_income_and_price_elasticity",
       "feedback": "Income elasticity connects percentage changes in demand to percentage changes in consumer income.",
-      "aHash": "5b7e6024a1254330fb384913f989b0525c42b7e57f83c8e5e32a624a9edc59d1"
+      "aHash": "5b7e6024a1254330fb384913f989b0525c42b7e57f83c8e5e32a624a9edc59d1",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 28,
       "sourceGame": "strategyDesk",
-      "q": "A product’s sales rise 15% when income rises 5%. Its income elasticity is",
+      "q": "Holding other demand determinants fixed, sales rise 12% when consumer income rises 4%. What is income elasticity?",
       "options": [
+        "8.0",
         "0.33",
-        "1.0",
         "3.0",
-        "20.0"
+        "16.0"
       ],
       "tag": "forecasting_elasticities",
       "type": "calculation",
       "objective": "LO6.4",
       "difficulty": "easy",
-      "conceptCluster": "LO6.4_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_forecasting_elasticities",
       "primarySkill": "forecasting_elasticities",
       "secondarySkills": [],
       "repairSkill": "forecasting_elasticities",
       "commonError": "divides_income_change_by_quantity_change",
-      "feedback": "Income elasticity equals 15% ÷ 5% = 3.0, indicating an income-elastic good.",
-      "aHash": "a416ea84421fa7e1351582da48235bac88380a337ec5cb5a9239dc7d57908b4b"
+      "feedback": "Income elasticity is 12% / 4% = 3; demand is income elastic.",
+      "aHash": "a416ea84421fa7e1351582da48235bac88380a337ec5cb5a9239dc7d57908b4b",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 29,
       "sourceGame": "strategyDesk",
-      "q": "A restaurant sells small and large portions at different prices without checking customer identity. Which pricing method does this illustrate?",
+      "q": "A restaurant uses a portion-size menu to screen willingness to pay. Both sizes have the same marginal cost, but diners choose between a cheap small portion and a higher-margin large portion. Which pricing method is this?",
       "options": [
         "direct price discrimination by age",
         "indirect price discrimination",
@@ -665,13 +624,14 @@ window.questionBanks = {
       "type": "application",
       "objective": "LO14.1",
       "difficulty": "easy",
-      "conceptCluster": "LO14.1_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_indirect_price_discrimination",
       "primarySkill": "indirect_price_discrimination",
       "secondarySkills": [],
       "repairSkill": "indirect_price_discrimination",
       "commonError": "confuses_version_choice_with_direct_identification",
       "feedback": "Customers reveal their preferences by choosing among versions rather than being assigned a price by identity.",
-      "aHash": "432e07b02f110178647f5b19e84fc95c7dfb258de441c55c79ac38df7b4b41a3"
+      "aHash": "432e07b02f110178647f5b19e84fc95c7dfb258de441c55c79ac38df7b4b41a3",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 30,
@@ -680,20 +640,21 @@ window.questionBanks = {
       "options": [
         "complements",
         "substitutes",
-        "inferior goods",
-        "unrelated costs"
+        "unrelated goods",
+        "goods with negative cross-price elasticity"
       ],
       "tag": "forecasting_elasticities",
       "type": "definition",
       "objective": "LO6.4",
       "difficulty": "easy",
-      "conceptCluster": "LO6.4_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_forecasting_elasticities",
       "primarySkill": "forecasting_elasticities",
       "secondarySkills": [],
       "repairSkill": "forecasting_elasticities",
       "commonError": "reverses_substitutes_and_complements",
       "feedback": "When the price of one substitute rises, demand for the other rises, producing positive cross-price elasticity.",
-      "aHash": "f4d9824f5c901a6faf07a621ac4051cb5cfc18afa51d8c106a687413c529f24b"
+      "aHash": "f4d9824f5c901a6faf07a621ac4051cb5cfc18afa51d8c106a687413c529f24b",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 31,
@@ -709,13 +670,14 @@ window.questionBanks = {
       "type": "definition",
       "objective": "LO14.2",
       "difficulty": "easy",
-      "conceptCluster": "LO14.2_strategy_desk",
-      "primarySkill": "damaged_goods_metering",
+      "conceptCluster": "easy_strategyDesk_versioning_and_metering",
+      "primarySkill": "versioning_and_metering",
       "secondarySkills": [],
-      "repairSkill": "damaged_goods_metering",
+      "repairSkill": "versioning_and_metering",
       "commonError": "treats_damaged_good_as_defective_accident",
       "feedback": "The firm deliberately limits the lower-priced version so high-value buyers still prefer the premium option.",
-      "aHash": "b72a2ffcb554e22bb4b71d31d3beda0d7e93ad0318faf8b4add30fba736ffe67"
+      "aHash": "b72a2ffcb554e22bb4b71d31d3beda0d7e93ad0318faf8b4add30fba736ffe67",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 32,
@@ -731,13 +693,14 @@ window.questionBanks = {
       "type": "application",
       "objective": "LO14.2",
       "difficulty": "easy",
-      "conceptCluster": "LO14.2_strategy_desk",
-      "primarySkill": "damaged_goods_metering",
+      "conceptCluster": "easy_strategyDesk_versioning_and_metering",
+      "primarySkill": "versioning_and_metering",
       "secondarySkills": [],
-      "repairSkill": "damaged_goods_metering",
+      "repairSkill": "versioning_and_metering",
       "commonError": "confuses_usage_charge_with_bundle",
       "feedback": "Metering links total payment to usage through a required consumable or per-use charge.",
-      "aHash": "d91ba250018ceb8a7a1566622684d926531104e44c4e20ec9cb7f42c56634fc6"
+      "aHash": "d91ba250018ceb8a7a1566622684d926531104e44c4e20ec9cb7f42c56634fc6",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 33,
@@ -753,18 +716,19 @@ window.questionBanks = {
       "type": "application",
       "objective": "LO6.4",
       "difficulty": "easy",
-      "conceptCluster": "LO6.4_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_forecasting_elasticities",
       "primarySkill": "forecasting_elasticities",
       "secondarySkills": [],
       "repairSkill": "forecasting_elasticities",
       "commonError": "labels_joint_use_goods_as_substitutes",
       "feedback": "A lower printer price increases printer purchases and therefore cartridge demand, which indicates complementarity.",
-      "aHash": "f33e03d029ee5e351d551b15854074aab00506ae4a127b312dcc940f256cc994"
+      "aHash": "f33e03d029ee5e351d551b15854074aab00506ae4a127b312dcc940f256cc994",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 34,
       "sourceGame": "strategyDesk",
-      "q": "Advertising spending rises 20%, and sales rise 5%. The advertising elasticity is",
+      "q": "Holding other demand determinants fixed, advertising spending rises 20% and sales rise 5%. What is the advertising elasticity?",
       "options": [
         "0.25",
         "4.0",
@@ -775,57 +739,37 @@ window.questionBanks = {
       "type": "calculation",
       "objective": "LO6.4",
       "difficulty": "easy",
-      "conceptCluster": "LO6.4_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_forecasting_elasticities",
       "primarySkill": "forecasting_elasticities",
       "secondarySkills": [],
       "repairSkill": "forecasting_elasticities",
       "commonError": "divides_advertising_change_by_sales_change",
       "feedback": "Advertising elasticity is 5% ÷ 20% = 0.25.",
-      "aHash": "a30a043314fa89294fa2c1c989a01fbb5329e5c085a5c5a8d27317656de24ae0"
-    },
-    {
-      "id": 35,
-      "sourceGame": "strategyDesk",
-      "q": "A firm offers a basic plan and a premium plan so customers reveal how much they value extra features. The firm is encouraging",
-      "options": [
-        "self-selection",
-        "arbitrage",
-        "market exit",
-        "cost averaging"
-      ],
-      "tag": "self_selection",
-      "type": "interpretation",
-      "objective": "LO14.3",
-      "difficulty": "easy",
-      "conceptCluster": "LO14.3_strategy_desk",
-      "primarySkill": "self_selection",
-      "secondarySkills": [],
-      "repairSkill": "self_selection",
-      "commonError": "misses_menu_as_screening_device",
-      "feedback": "A menu of versions lets customers sort themselves according to willingness to pay.",
-      "aHash": "f5e6eae02969fe6f12c33a930bec7b8b6dbdc2733dbff98f23a1456901cea37c"
+      "aHash": "a30a043314fa89294fa2c1c989a01fbb5329e5c085a5c5a8d27317656de24ae0",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 36,
       "sourceGame": "strategyDesk",
       "q": "What is the main cannibalization risk in indirect price discrimination?",
       "options": [
-        "Low-value buyers select the premium version",
+        "Low-value buyers decline every version",
         "High-value buyers choose the cheap version",
-        "Every customer refuses all available options",
-        "The firm’s fixed cost changes into a variable cost"
+        "High-value buyers select the premium version",
+        "The seller verifies group membership before assigning prices"
       ],
       "tag": "self_selection",
-      "type": "trap",
+      "type": "interpretation",
       "objective": "LO14.3",
       "difficulty": "easy",
-      "conceptCluster": "LO14.3_strategy_desk",
-      "primarySkill": "self_selection",
+      "conceptCluster": "easy_strategyDesk_consumer_surplus_extraction",
+      "primarySkill": "consumer_surplus_extraction",
       "secondarySkills": [],
-      "repairSkill": "self_selection",
+      "repairSkill": "consumer_surplus_extraction",
       "commonError": "reverses_cannibalization_direction",
       "feedback": "The strategy loses profit when customers willing to pay more select the option intended for lower-value buyers.",
-      "aHash": "a1c871c058f72be64bb241011f311f5753c9389684cad477caf7db0316882aa8"
+      "aHash": "a1c871c058f72be64bb241011f311f5753c9389684cad477caf7db0316882aa8",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 37,
@@ -841,13 +785,14 @@ window.questionBanks = {
       "type": "definition",
       "objective": "LO6.5",
       "difficulty": "easy",
-      "conceptCluster": "LO6.5_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_stay_even_volume",
       "primarySkill": "stay_even_volume",
       "secondarySkills": [],
       "repairSkill": "stay_even_volume",
       "commonError": "confuses_stay_even_with_accounting_break_even",
       "feedback": "Stay-even analysis finds the quantity change needed to keep total contribution unchanged after a price change.",
-      "aHash": "6ab7edbe354d175b460c45b2f0fb43851d0c72306ff745a6baf0580f989eac00"
+      "aHash": "6ab7edbe354d175b460c45b2f0fb43851d0c72306ff745a6baf0580f989eac00",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 38,
@@ -863,35 +808,14 @@ window.questionBanks = {
       "type": "calculation",
       "objective": "LO6.5",
       "difficulty": "easy",
-      "conceptCluster": "LO6.5_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_stay_even_volume",
       "primarySkill": "stay_even_volume",
       "secondarySkills": [],
       "repairSkill": "stay_even_volume",
       "commonError": "uses_old_price_or_fixed_cost",
       "feedback": "New contribution per unit is $18 − $12 = $6.",
-      "aHash": "65c325fb80a0e7f790657fae7d8b7a07bb83e660b22ecbf70efbae4bb03f4fa3"
-    },
-    {
-      "id": 39,
-      "sourceGame": "strategyDesk",
-      "q": "A firm sells 1,000 units at $20 with variable cost of $12. If price falls to $18, approximately how many units must it sell to preserve total contribution?",
-      "options": [
-        "1,000",
-        "1,167",
-        "1,333",
-        "1,500"
-      ],
-      "tag": "stay_even_volume",
-      "type": "calculation",
-      "objective": "LO6.5",
-      "difficulty": "easy",
-      "conceptCluster": "LO6.5_strategy_desk",
-      "primarySkill": "stay_even_volume",
-      "secondarySkills": [],
-      "repairSkill": "stay_even_volume",
-      "commonError": "uses_revenue_instead_of_contribution",
-      "feedback": "Old contribution is $8,000. At $6 contribution per unit after the cut, the firm needs about 1,333 units.",
-      "aHash": "bcafc17d81197cfecc9258e9f6207571cea82aecae1f8dc3858a84b98ef8213a"
+      "aHash": "65c325fb80a0e7f790657fae7d8b7a07bb83e660b22ecbf70efbae4bb03f4fa3",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 40,
@@ -907,13 +831,14 @@ window.questionBanks = {
       "type": "definition",
       "objective": "LO14.4",
       "difficulty": "easy",
-      "conceptCluster": "LO14.4_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_bundling",
       "primarySkill": "bundling",
       "secondarySkills": [],
       "repairSkill": "bundling",
       "commonError": "confuses_mixed_and_pure_bundling",
       "feedback": "Mixed bundling offers both individual items and a bundled package.",
-      "aHash": "1c3eab8be6bd9aebb4bd35822d462ea4b6aa94e353651b33d1eb15403016a485"
+      "aHash": "1c3eab8be6bd9aebb4bd35822d462ea4b6aa94e353651b33d1eb15403016a485",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 41,
@@ -929,18 +854,19 @@ window.questionBanks = {
       "type": "application",
       "objective": "LO6.5",
       "difficulty": "easy",
-      "conceptCluster": "LO6.5_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_stay_even_volume",
       "primarySkill": "stay_even_volume",
       "secondarySkills": [],
       "repairSkill": "stay_even_volume",
       "commonError": "compares_expected_growth_backwards",
       "feedback": "Expected volume growth is below the stay-even requirement, so total contribution will fall.",
-      "aHash": "9a62ac9a44c66d68b015a583729e8246862e2b53c69a6929a1f9968b5a21f8ae"
+      "aHash": "9a62ac9a44c66d68b015a583729e8246862e2b53c69a6929a1f9968b5a21f8ae",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 42,
       "sourceGame": "strategyDesk",
-      "q": "Two customers each value a two-good bundle at $10. If cost is zero and the bundle price is $10, what total revenue is earned?",
+      "q": "Two customers each value a two-good bundle at $10 and buy when value equals price. If cost is zero and the bundle price is $10, what total revenue is earned?",
       "options": [
         "$10",
         "$14",
@@ -951,13 +877,14 @@ window.questionBanks = {
       "type": "calculation",
       "objective": "LO14.4",
       "difficulty": "easy",
-      "conceptCluster": "LO14.4_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_bundling",
       "primarySkill": "bundling",
       "secondarySkills": [],
       "repairSkill": "bundling",
       "commonError": "counts_only_one_bundle_sale",
       "feedback": "Both customers buy the $10 bundle, so total revenue is 2 × $10 = $20.",
-      "aHash": "1f67972ce8b9d3da71256e750035aa4ffd0a58c0796b2172492afd8b96426416"
+      "aHash": "1f67972ce8b9d3da71256e750035aa4ffd0a58c0796b2172492afd8b96426416",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 43,
@@ -979,29 +906,8 @@ window.questionBanks = {
       "repairSkill": "strategic_interdependence",
       "commonError": "ignores_strategic_interdependence",
       "feedback": "Game theory studies situations in which each player’s best action depends on what others do.",
-      "aHash": "ebed8d486ca6984a6f3324461383d79cff4324214f858408ad2f86f891d14705"
-    },
-    {
-      "id": 44,
-      "sourceGame": "strategyDesk",
-      "q": "A manager says, “Sales will rise after the price cut, so the cut must be profitable.” The missing question is",
-      "options": [
-        "whether the increase reaches the stay-even volume",
-        "whether customers like the company logo",
-        "whether fixed cost was paid in cash",
-        "whether competitors use the same accounting system"
-      ],
-      "tag": "stay_even_volume",
-      "type": "trap",
-      "objective": "LO6.5",
-      "difficulty": "easy",
-      "conceptCluster": "LO6.5_strategy_desk",
-      "primarySkill": "stay_even_volume",
-      "secondarySkills": [],
-      "repairSkill": "stay_even_volume",
-      "commonError": "equates_any_volume_gain_with_profit_gain",
-      "feedback": "A sales increase is not enough by itself. It must be large enough to offset the lower contribution on each unit.",
-      "aHash": "8f94943501ccff0edd5f6f33a5fb0084747a857d01e3ad71dc43000705bc4bec"
+      "aHash": "ebed8d486ca6984a6f3324461383d79cff4324214f858408ad2f86f891d14705",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 45,
@@ -1017,13 +923,14 @@ window.questionBanks = {
       "type": "definition",
       "objective": "LO12.1",
       "difficulty": "easy",
-      "conceptCluster": "LO12.1_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_substitute_pricing",
       "primarySkill": "substitute_pricing",
       "secondarySkills": [],
       "repairSkill": "substitute_pricing",
       "commonError": "optimizes_each_substitute_in_isolation",
       "feedback": "Commonly owned substitutes should be priced as a portfolio because one product can take sales from the other.",
-      "aHash": "a8f00a1e010fbb462ec97102d6b9cc2185cc4698e596955422be8bbb2159e928"
+      "aHash": "a8f00a1e010fbb462ec97102d6b9cc2185cc4698e596955422be8bbb2159e928",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 46,
@@ -1039,18 +946,19 @@ window.questionBanks = {
       "type": "definition",
       "objective": "LO12.1",
       "difficulty": "easy",
-      "conceptCluster": "LO12.1_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_substitute_pricing",
       "primarySkill": "substitute_pricing",
       "secondarySkills": [],
       "repairSkill": "substitute_pricing",
       "commonError": "confuses_cannibalization_with_arbitrage",
       "feedback": "Cannibalization occurs when a firm’s lower-priced product takes customers from another product the firm also owns.",
-      "aHash": "695187d1fc9180183567b825484b8aece0084a371cf8bb3770523d260f020c4c"
+      "aHash": "695187d1fc9180183567b825484b8aece0084a371cf8bb3770523d260f020c4c",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 47,
       "sourceGame": "strategyDesk",
-      "q": "Firm A acquires Firm B. Their products have a positive cross-price elasticity. Holding other factors constant, common ownership gives the merged firm an incentive to",
+      "q": "Two separately priced substitute products merge under common ownership. Starting from their separate profit-maximizing prices, with costs and other demand conditions unchanged, internalizing positive cross-price effects generally creates an incentive to",
       "options": [
         "raise prices on both products",
         "lower prices on both products",
@@ -1061,13 +969,14 @@ window.questionBanks = {
       "type": "application",
       "objective": "LO12.1",
       "difficulty": "easy",
-      "conceptCluster": "LO12.1_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_substitute_pricing",
       "primarySkill": "substitute_pricing",
       "secondarySkills": [],
       "repairSkill": "substitute_pricing",
       "commonError": "treats_substitute_merger_like_complement_merger",
       "feedback": "Positive cross-price elasticity indicates substitutes. After merger, the firm internalizes lost sales between the products and generally has an incentive to raise prices.",
-      "aHash": "b615ed5f838d05c56986e9ec17c76901db7b5b741194d7d7c9be6fbd169e7850"
+      "aHash": "b615ed5f838d05c56986e9ec17c76901db7b5b741194d7d7c9be6fbd169e7850",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 48,
@@ -1075,21 +984,22 @@ window.questionBanks = {
       "q": "Why can pricing one commonly owned substitute too low reduce total profit?",
       "options": [
         "It may pull customers from the firm’s higher-margin substitute.",
-        "It always increases variable cost across both commonly owned products.",
-        "It converts substitutes into complements.",
-        "It eliminates all consumer demand."
+        "It raises sales revenue on one product even if total contribution falls",
+        "It makes each product profitable only when priced separately",
+        "It shifts sales only from competitors and never from owned products"
       ],
       "tag": "substitute_pricing",
       "type": "interpretation",
       "objective": "LO12.1",
       "difficulty": "easy",
-      "conceptCluster": "LO12.1_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_substitute_pricing",
       "primarySkill": "substitute_pricing",
       "secondarySkills": [],
       "repairSkill": "substitute_pricing",
       "commonError": "counts_shifted_sales_as_new_sales",
       "feedback": "A low price may shift buyers from another owned product rather than create truly new sales, reducing portfolio profit.",
-      "aHash": "828849e8788c8af5ce4983dd2b5df7109c6463d4b0caf9e229263e8ce91c1738"
+      "aHash": "828849e8788c8af5ce4983dd2b5df7109c6463d4b0caf9e229263e8ce91c1738",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 49,
@@ -1111,51 +1021,31 @@ window.questionBanks = {
       "repairSkill": "strategic_interdependence",
       "commonError": "treats_rival_response_as_irrelevant",
       "feedback": "The value of the firm’s action depends directly on the rival’s response.",
-      "aHash": "7aa88fcd7f81e24cc05d007b00e281060a071383a66fab7fad9f92cd27d5b127"
-    },
-    {
-      "id": 50,
-      "sourceGame": "strategyDesk",
-      "q": "A manager chooses a strategy without considering a rival’s likely response. What is the main danger?",
-      "options": [
-        "The rival may change which strategy is best",
-        "The firm will automatically violate antitrust law",
-        "The product will become an inferior good",
-        "All fixed costs will disappear"
-      ],
-      "tag": "strategic_interdependence",
-      "type": "interpretation",
-      "objective": "LO15.1",
-      "difficulty": "easy",
-      "conceptCluster": "easy_strategyDesk_strategic_interdependence",
-      "primarySkill": "strategic_interdependence",
-      "secondarySkills": [],
-      "repairSkill": "strategic_interdependence",
-      "commonError": "assumes_best_choice_is_independent_of_rival",
-      "feedback": "In a strategic setting, the rival’s action can change the payoff from the manager’s choice.",
-      "aHash": "16a5d56adb415e3d3198ae51837d0f0b5cefccc6d3c3e1a9d6c0183ef4c295ba"
+      "aHash": "7aa88fcd7f81e24cc05d007b00e281060a071383a66fab7fad9f92cd27d5b127",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 51,
       "sourceGame": "strategyDesk",
       "q": "A division manager prices only to maximize her own product’s profit, even though the price harms another product owned by the company. The company should evaluate",
       "options": [
-        "division profit for the manager’s own product line only",
+        "only revenue from the manager’s division",
         "total portfolio profit",
-        "the manager’s tenure",
-        "industry fixed cost"
+        "only the division’s unit sales growth",
+        "each division’s profit without cross-product effects"
       ],
       "tag": "substitute_pricing",
-      "type": "trap",
+      "type": "application",
       "objective": "LO12.1",
       "difficulty": "easy",
-      "conceptCluster": "LO12.1_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_substitute_pricing",
       "primarySkill": "substitute_pricing",
       "secondarySkills": [],
       "repairSkill": "substitute_pricing",
       "commonError": "uses_division_profit_instead_of_company_profit",
       "feedback": "Common ownership requires the company to account for cross-product effects and maximize combined profit.",
-      "aHash": "91abca67eb42f6a268d52b872d57219d00c5de42f73b5d9a0b4c0e9be10630ea"
+      "aHash": "91abca67eb42f6a268d52b872d57219d00c5de42f73b5d9a0b4c0e9be10630ea",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 52,
@@ -1177,7 +1067,8 @@ window.questionBanks = {
       "repairSkill": "game_timing",
       "commonError": "confuses_sequential_and_simultaneous_moves",
       "feedback": "When earlier actions are observed, later choices can depend on them. If earlier moves are hidden, an information set limits the later player's contingent choices.",
-      "aHash": "ffd7cb9d7dd93c327bfd47d7ba6f7aa048d81056fee760dcc9e4c992ab671d33"
+      "aHash": "ffd7cb9d7dd93c327bfd47d7ba6f7aa048d81056fee760dcc9e4c992ab671d33",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 53,
@@ -1193,13 +1084,14 @@ window.questionBanks = {
       "type": "definition",
       "objective": "LO12.2",
       "difficulty": "easy",
-      "conceptCluster": "LO12.2_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_complement_pricing",
       "primarySkill": "complement_pricing",
       "secondarySkills": [],
       "repairSkill": "complement_pricing",
       "commonError": "optimizes_complements_separately",
       "feedback": "The value of complements is linked, so prices should be coordinated to maximize profit from the pair.",
-      "aHash": "310707dd1782b4195796f7f8dbbc5165e46a50173a3d2b3af6b479ce5b3fd2c9"
+      "aHash": "310707dd1782b4195796f7f8dbbc5165e46a50173a3d2b3af6b479ce5b3fd2c9",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 54,
@@ -1207,26 +1099,27 @@ window.questionBanks = {
       "q": "A game console and the games played on it are complements. A lower console price may be profitable because it can",
       "options": [
         "increase demand for games",
-        "reduce demand for games",
-        "turn games into substitutes",
-        "eliminate the installed base"
+        "reduce demand for games as console ownership rises",
+        "increase console margin on each unit sold",
+        "make game sales independent of console ownership"
       ],
       "tag": "complement_pricing",
       "type": "application",
       "objective": "LO12.2",
       "difficulty": "easy",
-      "conceptCluster": "LO12.2_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_complement_pricing",
       "primarySkill": "complement_pricing",
       "secondarySkills": [],
       "repairSkill": "complement_pricing",
       "commonError": "ignores_follow_on_sales",
       "feedback": "A lower console price can expand the installed base and increase profitable game sales.",
-      "aHash": "f9487f163f4dc50fa34ff9526d333102fd2574aa3c3c4f624085c88b8a9ae447"
+      "aHash": "f9487f163f4dc50fa34ff9526d333102fd2574aa3c3c4f624085c88b8a9ae447",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 55,
       "sourceGame": "strategyDesk",
-      "q": "A printer maker acquires the company that supplies its proprietary ink. Because the products are complements, coordinated pricing gives the combined firm an incentive to",
+      "q": "A printer maker acquires its proprietary-ink supplier. Starting from separate profit-maximizing prices, with costs and other demand conditions unchanged, internalizing complementary demand effects generally creates an incentive to",
       "options": [
         "lower prices on both products",
         "raise prices on both products",
@@ -1237,13 +1130,14 @@ window.questionBanks = {
       "type": "application",
       "objective": "LO12.2",
       "difficulty": "easy",
-      "conceptCluster": "LO12.2_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_complement_pricing",
       "primarySkill": "complement_pricing",
       "secondarySkills": [],
       "repairSkill": "complement_pricing",
       "commonError": "treats_complements_like_substitutes",
       "feedback": "Negative cross-price elasticity indicates complements. Lowering one price raises demand for the companion product, creating an incentive to reduce prices after common ownership.",
-      "aHash": "5d83a69b4ed8f18b31e3e9c06e91708cb975118716b5effeb78dafe07b4e59a2"
+      "aHash": "5d83a69b4ed8f18b31e3e9c06e91708cb975118716b5effeb78dafe07b4e59a2",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 56,
@@ -1252,20 +1146,21 @@ window.questionBanks = {
       "options": [
         "the future contribution from ink sales",
         "only the printer’s manufacturing cost",
-        "the original cost of building the factory",
-        "the rival CEO’s salary"
+        "only the contribution on the first printer sale",
+        "the historical development cost already spent"
       ],
       "tag": "complement_pricing",
       "type": "application",
       "objective": "LO12.2",
       "difficulty": "easy",
-      "conceptCluster": "LO12.2_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_complement_pricing",
       "primarySkill": "complement_pricing",
       "secondarySkills": [],
       "repairSkill": "complement_pricing",
       "commonError": "ignores_companion_product_profit",
       "feedback": "The printer price affects the installed base and therefore future ink demand, so ink contribution belongs in the pricing decision.",
-      "aHash": "f156a1e5e0cba5a99c07ed230eef12e332f29c2b658915c3699c82c3a5e988b2"
+      "aHash": "f156a1e5e0cba5a99c07ed230eef12e332f29c2b658915c3699c82c3a5e988b2",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 57,
@@ -1287,29 +1182,8 @@ window.questionBanks = {
       "repairSkill": "game_timing",
       "commonError": "assumes_decisions_at_same_clock_time_are_required",
       "feedback": "A game is simultaneous when players choose without observing the other current action.",
-      "aHash": "5fd35d093d8d45f5765eb5dd3374f3fe943e16c6fc7dba6f2582023309a5d4de"
-    },
-    {
-      "id": 58,
-      "sourceGame": "strategyDesk",
-      "q": "Firm A publicly announces its price, and Firm B then chooses its price. This is a",
-      "options": [
-        "sequential-move game",
-        "simultaneous-move game",
-        "pure bundling problem",
-        "stay-even calculation"
-      ],
-      "tag": "game_timing",
-      "type": "application",
-      "objective": "LO15.2",
-      "difficulty": "easy",
-      "conceptCluster": "easy_strategyDesk_game_timing",
-      "primarySkill": "game_timing",
-      "secondarySkills": [],
-      "repairSkill": "game_timing",
-      "commonError": "ignores_observed_order_of_moves",
-      "feedback": "Firm B observes Firm A’s action before moving, so the game is sequential.",
-      "aHash": "b667d0a098f00c93785c35d4c438f78ec6ebe0d8ed61027ff90335a20306af35"
+      "aHash": "5fd35d093d8d45f5765eb5dd3374f3fe943e16c6fc7dba6f2582023309a5d4de",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 59,
@@ -1317,21 +1191,22 @@ window.questionBanks = {
       "q": "A manager rejects a discount on Product A because Product A alone would earn less profit. Product A is a complement to highly profitable Product B. What is missing?",
       "options": [
         "The effect of Product A’s price on Product B’s profit",
-        "The age of Product A’s equipment",
-        "The firm’s total sunk cost",
-        "The number of accounting departments involved in reviewing the discount proposal"
+        "Only the percentage increase in Product A’s unit sales",
+        "The sunk development cost of Product A",
+        "Whether Product A covers allocated corporate overhead"
       ],
       "tag": "complement_pricing",
-      "type": "trap",
+      "type": "application",
       "objective": "LO12.2",
       "difficulty": "easy",
-      "conceptCluster": "LO12.2_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_complement_pricing",
       "primarySkill": "complement_pricing",
       "secondarySkills": [],
       "repairSkill": "complement_pricing",
       "commonError": "evaluates_only_one_product",
       "feedback": "The correct decision must include the added profit on the complementary product.",
-      "aHash": "db7f629521dc26fcefdf906d0129805b65dce10361cbc46da0248a7f76500cfb"
+      "aHash": "db7f629521dc26fcefdf906d0129805b65dce10361cbc46da0248a7f76500cfb",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 60,
@@ -1353,29 +1228,31 @@ window.questionBanks = {
       "repairSkill": "nash_equilibrium",
       "commonError": "confuses_equilibrium_with_equal_payoffs",
       "feedback": "At a Nash equilibrium, each player is choosing a best response to the strategies of the others.",
-      "aHash": "a95d146df84efd12e333c12ee2e465d15118ab245ffe8dafa63aa6581f8c5a9e"
+      "aHash": "a95d146df84efd12e333c12ee2e465d15118ab245ffe8dafa63aa6581f8c5a9e",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 61,
       "sourceGame": "strategyDesk",
-      "q": "A hotel has 100 rooms and forecasts demand for 130 rooms at the current price. The hotel should generally",
+      "q": "A workshop has 48 nonexpandable places. At its current fee, expected demand is 62 participants. With downward-sloping demand, what pricing response addresses the shortage?",
       "options": [
-        "raise price until expected demand is closer to capacity",
-        "lower price to attract more guests",
-        "keep price fixed because capacity cannot change",
-        "give every customer the same discount"
+        "Raise the fee so expected bookings move toward 48",
+        "Cut the fee to attract more bookings",
+        "Keep the fee fixed because capacity is fixed",
+        "Discount all places even though excess demand remains"
       ],
       "tag": "capacity_pricing",
       "type": "application",
       "objective": "LO12.3",
       "difficulty": "easy",
-      "conceptCluster": "LO12.3_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_capacity_pricing",
       "primarySkill": "capacity_pricing",
       "secondarySkills": [],
       "repairSkill": "capacity_pricing",
       "commonError": "lowers_price_when_capacity_is_overbooked",
-      "feedback": "When forecast demand exceeds fixed capacity, a higher price helps ration scarce rooms and raises revenue.",
-      "aHash": "b701ab7d2e50c2dde81d1fae6aba44c694842ead95a0c19f1b04a560bb3c31ef"
+      "feedback": "A higher fee reduces excess demand for the fixed 48 places; adding demand cannot resolve the capacity shortage.",
+      "aHash": "5bc70b288255dcf5aeab2e8e08a3c31464eb1b890bda4222da084c3b0a85abe4",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 62,
@@ -1383,21 +1260,22 @@ window.questionBanks = {
       "q": "An airline has empty seats on a flight that leaves tonight. A discounted fare can be sensible when it",
       "options": [
         "covers the incremental cost and does not displace a higher-paying traveler",
-        "covers an allocated share of all historical fixed costs associated with the aircraft",
-        "is offered only after the plane departs",
-        "is higher than every competitor’s fare"
+        "covers an allocated share of historical aircraft costs",
+        "increases passenger count even below incremental cost",
+        "replaces a likely full-fare booking with a discounted booking"
       ],
       "tag": "capacity_pricing",
       "type": "application",
       "objective": "LO12.3",
       "difficulty": "easy",
-      "conceptCluster": "LO12.3_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_capacity_pricing",
       "primarySkill": "capacity_pricing",
       "secondarySkills": [],
       "repairSkill": "capacity_pricing",
       "commonError": "requires_allocating_all_fixed_cost_to_last_seat",
       "feedback": "With perishable unused capacity, the relevant test is incremental revenue versus incremental cost and displacement risk.",
-      "aHash": "a7df77b7cd9d43feb725fad8e779d9a08797eaa1a9696ad21759856500e496d5"
+      "aHash": "a7df77b7cd9d43feb725fad8e779d9a08797eaa1a9696ad21759856500e496d5",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 63,
@@ -1405,21 +1283,22 @@ window.questionBanks = {
       "q": "Why is unused hotel-room capacity perishable?",
       "options": [
         "An unsold room tonight cannot be stored and sold tomorrow.",
-        "The room physically disappears after one night.",
-        "Variable cost becomes infinite at midnight.",
-        "Customers can resell the room forever."
+        "Unused room-nights can be carried forward as extra future capacity",
+        "The building’s resale value equals tonight’s foregone revenue",
+        "Fixed building costs disappear if the room is unsold"
       ],
       "tag": "capacity_pricing",
       "type": "definition",
       "objective": "LO12.3",
       "difficulty": "easy",
-      "conceptCluster": "LO12.3_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_capacity_pricing",
       "primarySkill": "capacity_pricing",
       "secondarySkills": [],
       "repairSkill": "capacity_pricing",
       "commonError": "confuses_perishable_capacity_with_physical_destruction",
       "feedback": "Time-specific service capacity expires when the period passes, so an unsold room-night cannot be recovered.",
-      "aHash": "c5f4832dcc96b95f8324641a6e7e76bb5f2a503ad78c1baf99a09a350febd013"
+      "aHash": "c5f4832dcc96b95f8324641a6e7e76bb5f2a503ad78c1baf99a09a350febd013",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 64,
@@ -1441,7 +1320,8 @@ window.questionBanks = {
       "repairSkill": "nash_equilibrium",
       "commonError": "fails_to_apply_dominant_strategies",
       "feedback": "Low is the dominant strategy for both firms, so the equilibrium is Low, Low.",
-      "aHash": "480b7705a8b58a88b77779f6ed2b2182af178fb6a487077dd083a89829ecd686"
+      "aHash": "480b7705a8b58a88b77779f6ed2b2182af178fb6a487077dd083a89829ecd686",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 65,
@@ -1449,21 +1329,22 @@ window.questionBanks = {
       "q": "A resort offers deep discounts during a peak holiday when it already expects to sell out. What is the likely problem?",
       "options": [
         "The discount gives away margin without adding many room sales.",
-        "The discount creates more physical rooms.",
-        "The discount eliminates demand uncertainty.",
-        "The discount raises marginal revenue on every room."
+        "The discount increases contribution per occupied room",
+        "The discount is justified whenever demand is price sensitive",
+        "The discount recovers margin by selling beyond fixed capacity"
       ],
       "tag": "capacity_pricing",
-      "type": "trap",
+      "type": "application",
       "objective": "LO12.3",
       "difficulty": "easy",
-      "conceptCluster": "LO12.3_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_capacity_pricing",
       "primarySkill": "capacity_pricing",
       "secondarySkills": [],
       "repairSkill": "capacity_pricing",
       "commonError": "discounts_when_capacity_already_sells_out",
       "feedback": "When capacity will sell out anyway, a discount mainly replaces higher-price sales with lower-price sales.",
-      "aHash": "d6fa1bd134ef13736a582c500f94de1763c36a885f6fbfe71e224b4cf2539971"
+      "aHash": "d6fa1bd134ef13736a582c500f94de1763c36a885f6fbfe71e224b4cf2539971",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 66,
@@ -1485,12 +1366,13 @@ window.questionBanks = {
       "repairSkill": "nash_equilibrium",
       "commonError": "chooses_lower_payoff_best_response",
       "feedback": "Given Firm B’s choice, Low gives Firm A the larger payoff: $7 rather than $4.",
-      "aHash": "6c1ff09db3a73dc4a854f695d20d174a848d55f2d743bab2ee1f8fc75be454f3"
+      "aHash": "6c1ff09db3a73dc4a854f695d20d174a848d55f2d743bab2ee1f8fc75be454f3",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 67,
       "sourceGame": "strategyDesk",
-      "q": "A hotel has 100 rooms and expects only 65 bookings at the current price. All else equal, the hotel may consider",
+      "q": "A hotel has 100 rooms and expects only 65 bookings. A discount would cover incremental cost and would not displace higher-paying guests. It may therefore consider",
       "options": [
         "lowering price or offering targeted discounts",
         "raising price sharply",
@@ -1501,35 +1383,14 @@ window.questionBanks = {
       "type": "application",
       "objective": "LO12.3",
       "difficulty": "easy",
-      "conceptCluster": "LO12.3_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_capacity_pricing",
       "primarySkill": "capacity_pricing",
       "secondarySkills": [],
       "repairSkill": "capacity_pricing",
       "commonError": "raises_price_when_capacity_is_unused",
       "feedback": "When expected demand is below capacity, a lower or targeted price can attract incremental bookings.",
-      "aHash": "ff0ae5789905e1822aedb40ad8dc4efc72900b28a3d0545d1927c49b847a8452"
-    },
-    {
-      "id": 68,
-      "sourceGame": "strategyDesk",
-      "q": "A firm changes the game to its advantage when it",
-      "options": [
-        "makes a credible commitment",
-        "ignores every possible rival response",
-        "treats a sunk cost as future revenue",
-        "uses one unchanged strategy in every market"
-      ],
-      "tag": "game_design",
-      "type": "application",
-      "objective": "LO15.4",
-      "difficulty": "easy",
-      "conceptCluster": "easy_strategyDesk_game_design",
-      "primarySkill": "game_design",
-      "secondarySkills": [],
-      "repairSkill": "game_design",
-      "commonError": "confuses_commitment_with_empty_announcement",
-      "feedback": "A credible commitment can alter the rival’s incentives and therefore the resulting equilibrium.",
-      "aHash": "aa0dbbea5a266fa4364164c3a3ce80298ed4d55fc97a2996bdd33c36732d40d7"
+      "aHash": "ff0ae5789905e1822aedb40ad8dc4efc72900b28a3d0545d1927c49b847a8452",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 69,
@@ -1537,21 +1398,22 @@ window.questionBanks = {
       "q": "A demand forecast should influence price because it helps the firm anticipate",
       "options": [
         "scarcity and available capacity",
-        "only historical fixed cost",
-        "the legal name of each customer",
-        "whether accounting profit equals revenue"
+        "only the average of prices charged last year",
+        "only the allocated fixed cost per available unit",
+        "whether every current customer has the same willingness to pay"
       ],
       "tag": "forecast_driven_pricing",
       "type": "definition",
       "objective": "LO12.4",
       "difficulty": "easy",
-      "conceptCluster": "LO12.4_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_forecast_driven_pricing",
       "primarySkill": "forecast_driven_pricing",
       "secondarySkills": [],
       "repairSkill": "forecast_driven_pricing",
       "commonError": "ignores_capacity_implications_of_forecast",
       "feedback": "Demand forecasts help the firm predict whether capacity will be scarce or underused and adjust price accordingly.",
-      "aHash": "755581f7177a6c3e19db259ea19a8bd1d1b653ec0c33011845be06630607c262"
+      "aHash": "755581f7177a6c3e19db259ea19a8bd1d1b653ec0c33011845be06630607c262",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 70,
@@ -1567,13 +1429,14 @@ window.questionBanks = {
       "type": "application",
       "objective": "LO12.4",
       "difficulty": "easy",
-      "conceptCluster": "LO12.4_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_forecast_driven_pricing",
       "primarySkill": "forecast_driven_pricing",
       "secondarySkills": [],
       "repairSkill": "forecast_driven_pricing",
       "commonError": "lowers_price_when_demand_forecast_rises",
       "feedback": "Higher expected demand against fixed capacity supports a higher price.",
-      "aHash": "b5d8d46ab194c06a912f144460dd035433ba23ab0e05ef4139d08e8e91d78a9e"
+      "aHash": "b5d8d46ab194c06a912f144460dd035433ba23ab0e05ef4139d08e8e91d78a9e",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 71,
@@ -1589,13 +1452,14 @@ window.questionBanks = {
       "type": "application",
       "objective": "LO12.4",
       "difficulty": "easy",
-      "conceptCluster": "LO12.4_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_forecast_driven_pricing",
       "primarySkill": "forecast_driven_pricing",
       "secondarySkills": [],
       "repairSkill": "forecast_driven_pricing",
       "commonError": "raises_price_during_low_forecast",
       "feedback": "Targeted discounts can attract incremental demand when capacity would otherwise go unused.",
-      "aHash": "c03bd628f91b0dbfe347a42c3b88455adca30e962b100d10017f323245d3bbf3"
+      "aHash": "c03bd628f91b0dbfe347a42c3b88455adca30e962b100d10017f323245d3bbf3",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 72,
@@ -1603,65 +1467,45 @@ window.questionBanks = {
       "q": "If a forecast is highly uncertain, the manager should",
       "options": [
         "consider multiple demand scenarios before setting price",
-        "pretend the highest forecast is certain",
-        "set one price forever",
-        "ignore all capacity limits"
+        "price for the highest-demand scenario alone",
+        "price using the mean without checking shortage or idle-capacity risks",
+        "treat the lowest forecast as the only possible outcome"
       ],
       "tag": "forecast_driven_pricing",
       "type": "interpretation",
       "objective": "LO12.4",
       "difficulty": "easy",
-      "conceptCluster": "LO12.4_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_forecast_driven_pricing",
       "primarySkill": "forecast_driven_pricing",
       "secondarySkills": [],
       "repairSkill": "forecast_driven_pricing",
       "commonError": "treats_uncertain_forecast_as_certain",
       "feedback": "Scenario analysis helps the firm understand how pricing performs under different demand realizations.",
-      "aHash": "f6a5fbb4aaf5903bfba0ea8b1e484bf3e94f32e78f7f2b631559a3f54e8cb625"
+      "aHash": "f6a5fbb4aaf5903bfba0ea8b1e484bf3e94f32e78f7f2b631559a3f54e8cb625",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 73,
       "sourceGame": "strategyDesk",
-      "q": "A company hires security guards before bargaining to make a lockout threat believable. This action is a",
+      "q": "Before a supplier negotiation, a buyer signs a binding contract that removes its ability to accept deliveries after Friday. How can this change bargaining?",
       "options": [
-        "credible commitment",
-        "market demand curve",
-        "mixed bundle",
-        "price elasticity estimate"
+        "It makes the delivery deadline a credible constraint",
+        "It guarantees an equal split of the bargaining surplus",
+        "It raises the supplier’s fallback payoff automatically",
+        "It permits the buyer to revise the deadline freely"
       ],
-      "tag": "game_design",
+      "tag": "strategic_bargaining",
       "type": "application",
-      "objective": "LO15.4",
+      "objective": "LO16.1",
       "difficulty": "easy",
-      "conceptCluster": "easy_strategyDesk_game_design",
-      "primarySkill": "game_design",
+      "conceptCluster": "easy_strategyDesk_strategic_bargaining",
+      "primarySkill": "strategic_bargaining",
       "secondarySkills": [],
-      "repairSkill": "game_design",
-      "commonError": "misses_costly_action_as_commitment",
-      "feedback": "The advance action makes the threatened response more credible and can change the other side’s behavior.",
-      "aHash": "fa75bb5295cf7ff8e9f2d183bb6822e87a7a7b1d061499670b5d4a875b77e2bb"
-    },
-    {
-      "id": 74,
-      "sourceGame": "strategyDesk",
-      "q": "Why can repeated interaction change a firm’s strategy?",
-      "options": [
-        "Today’s moves shape future responses",
-        "The same payoff must occur in every round",
-        "Players stop caring about all future profit",
-        "Repeated interaction removes every strategic choice"
-      ],
-      "tag": "game_design",
-      "type": "interpretation",
-      "objective": "LO15.4",
-      "difficulty": "easy",
-      "conceptCluster": "easy_strategyDesk_game_design",
-      "primarySkill": "game_design",
-      "secondarySkills": [],
-      "repairSkill": "game_design",
-      "commonError": "treats_repeated_game_as_unrelated_rounds",
-      "feedback": "When players meet again, today’s conduct can influence future cooperation, punishment, and reputation.",
-      "aHash": "0c250cac8274f9d730fcd61b51d567a77be92a62c889dcb670893adaaa13d820"
+      "repairSkill": "strategic_bargaining",
+      "commonError": "confuses_announcement_with_binding_constraint",
+      "feedback": "The binding contract removes a later choice, so the supplier must take the deadline seriously; an announcement alone would leave that choice available.",
+      "aHash": "07d8b044fd8be4d51b7eb7e5a3a24f4ec133f1e261ef7571746ce88f963e8931",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 75,
@@ -1669,21 +1513,22 @@ window.questionBanks = {
       "q": "The strategic view of bargaining emphasizes",
       "options": [
         "move order and credible commitments",
-        "only previously recorded accounting costs",
-        "one fixed price for every future negotiation",
-        "the aggregation of individual market demand"
+        "outside options and surplus without modeling an offer sequence",
+        "only the combined gains from agreement",
+        "an equal split regardless of commitment opportunities"
       ],
       "tag": "strategic_bargaining",
       "type": "definition",
       "objective": "LO16.1",
       "difficulty": "easy",
-      "conceptCluster": "LO16.1_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_strategic_bargaining",
       "primarySkill": "strategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "strategic_bargaining",
       "commonError": "confuses_strategic_and_nonstrategic_bargaining",
       "feedback": "Strategic bargaining asks how the sequence of offers and credible commitments shapes the outcome.",
-      "aHash": "3e8ecc9ae716505cd1e85f69f34cce4540943a078ecf7447a9d2819ca1c32f4a"
+      "aHash": "3e8ecc9ae716505cd1e85f69f34cce4540943a078ecf7447a9d2819ca1c32f4a",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 76,
@@ -1699,13 +1544,14 @@ window.questionBanks = {
       "type": "interpretation",
       "objective": "LO12.4",
       "difficulty": "easy",
-      "conceptCluster": "LO12.4_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_forecast_driven_pricing",
       "primarySkill": "forecast_driven_pricing",
       "secondarySkills": [],
       "repairSkill": "forecast_driven_pricing",
       "commonError": "assumes_market_quantity_can_exceed_capacity",
       "feedback": "When demand exceeds capacity, the firm must allocate scarce capacity, often partly through a higher price.",
-      "aHash": "147219bee460915ce8cbe5a1c0d2d0be77651d2a9832ccd1269b95acd8ab973b"
+      "aHash": "147219bee460915ce8cbe5a1c0d2d0be77651d2a9832ccd1269b95acd8ab973b",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 77,
@@ -1713,65 +1559,45 @@ window.questionBanks = {
       "q": "Promotional advertising primarily emphasizes",
       "options": [
         "the product’s price or a temporary deal",
-        "the firm’s long-run production technology",
-        "the legal structure of the corporation",
-        "the historical cost of equipment"
+        "nonprice product benefits and distinctive features",
+        "the marginal cost of producing each unit",
+        "a permanent restriction on resale between buyers"
       ],
       "tag": "promotion_response",
       "type": "definition",
       "objective": "LO12.5",
       "difficulty": "easy",
-      "conceptCluster": "LO12.5_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_promotion_response",
       "primarySkill": "promotion_response",
       "secondarySkills": [],
       "repairSkill": "promotion_response",
       "commonError": "confuses_promotional_and_product_advertising",
       "feedback": "Promotional advertising highlights price, discounts, or short-term purchase incentives.",
-      "aHash": "b7683b9006cb08e15f3892b5457805a1219221b2c9f4734c8762bb6ba0f0ef60"
+      "aHash": "b7683b9006cb08e15f3892b5457805a1219221b2c9f4734c8762bb6ba0f0ef60",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 78,
       "sourceGame": "strategyDesk",
-      "q": "If promotional advertising makes customers more price sensitive, the firm may need to",
+      "q": "If advertising makes demand more elastic while marginal cost is unchanged, the profit-maximizing firm generally has an incentive to",
       "options": [
         "lower price",
-        "raise price",
-        "eliminate all sales",
-        "ignore elasticity"
+        "raise its markup",
+        "hold its markup fixed regardless of elasticity",
+        "raise price solely because advertising cost is sunk"
       ],
       "tag": "promotion_response",
       "type": "interpretation",
       "objective": "LO12.5",
       "difficulty": "easy",
-      "conceptCluster": "LO12.5_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_promotion_response",
       "primarySkill": "promotion_response",
       "secondarySkills": [],
       "repairSkill": "promotion_response",
       "commonError": "raises_price_when_demand_becomes_more_elastic",
       "feedback": "Greater price sensitivity means demand is more elastic, which generally supports a lower price.",
-      "aHash": "356a4822467a68bb5bb3412545d17c59e8c9eef217aec61d866b03ed7024c995"
-    },
-    {
-      "id": 79,
-      "sourceGame": "strategyDesk",
-      "q": "A promotion increases weekly sales from $20,000 to $27,000 but similar untreated markets rise from $18,000 to $22,000. The estimated incremental promotion effect is",
-      "options": [
-        "$3,000",
-        "$4,000",
-        "$7,000",
-        "$11,000"
-      ],
-      "tag": "promotion_response",
-      "type": "calculation",
-      "objective": "LO12.5",
-      "difficulty": "easy",
-      "conceptCluster": "LO12.5_strategy_desk",
-      "primarySkill": "promotion_response",
-      "secondarySkills": [],
-      "repairSkill": "promotion_response",
-      "commonError": "uses_raw_treated_change_without_control",
-      "feedback": "The treated market rises $7,000 and the comparison market rises $4,000, so the incremental effect is $3,000.",
-      "aHash": "50e5c930578954e631f9c75bfe0ef0b7d0f0b5c27638d20ec1049649881f0acc"
+      "aHash": "356a4822467a68bb5bb3412545d17c59e8c9eef217aec61d866b03ed7024c995",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 80,
@@ -1787,13 +1613,14 @@ window.questionBanks = {
       "type": "application",
       "objective": "LO12.5",
       "difficulty": "easy",
-      "conceptCluster": "LO12.5_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_promotion_response",
       "primarySkill": "promotion_response",
       "secondarySkills": [],
       "repairSkill": "promotion_response",
       "commonError": "equates_sales_growth_with_promotion_profit",
       "feedback": "A successful promotion must create enough incremental contribution to cover the discount and promotional expense.",
-      "aHash": "ca2dd3de5c36a0eee95de4aa125a12092c646d6c49f7175f2f6e1a3f0e94ebf8"
+      "aHash": "ca2dd3de5c36a0eee95de4aa125a12092c646d6c49f7175f2f6e1a3f0e94ebf8",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 81,
@@ -1809,18 +1636,19 @@ window.questionBanks = {
       "type": "application",
       "objective": "LO16.1",
       "difficulty": "easy",
-      "conceptCluster": "LO16.1_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_strategic_bargaining",
       "primarySkill": "strategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "strategic_bargaining",
       "commonError": "confuses_announcement_with_commitment",
       "feedback": "A binding limit changes the continuation game by removing later offers. Repetition alone leaves the buyer free to revise, so the seller can rationally discount the announcement.",
-      "aHash": "2362231dc399ea2f1e15f42f7a7b106dc680576efd4c8fc2bcd6109dd25b60ac"
+      "aHash": "2362231dc399ea2f1e15f42f7a7b106dc680576efd4c8fc2bcd6109dd25b60ac",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 82,
       "sourceGame": "strategyDesk",
-      "q": "A company advertises only in Market A and compares the sales change with untreated Market B. Why use Market B?",
+      "q": "A company advertises only in Market A and compares the sales change with untreated Market B. Why use Market B? Assume the markets provide a credible comparison for background demand changes.",
       "options": [
         "To estimate what would have happened without the promotion",
         "To guarantee both markets have identical customers",
@@ -1831,35 +1659,14 @@ window.questionBanks = {
       "type": "application",
       "objective": "LO12.5",
       "difficulty": "easy",
-      "conceptCluster": "LO12.5_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_promotion_response",
       "primarySkill": "promotion_response",
       "secondarySkills": [],
       "repairSkill": "promotion_response",
       "commonError": "ignores_counterfactual_comparison",
       "feedback": "The untreated market provides a comparison for background changes that would have occurred without the promotion.",
-      "aHash": "5a2a41e2572672f5b8dce0e2a73d1c8105802187ca9d386872d77f327e33c3b1"
-    },
-    {
-      "id": 83,
-      "sourceGame": "strategyDesk",
-      "q": "Before negotiations, one side takes a costly public action that limits its ability to back down. The action is intended to",
-      "options": [
-        "create commitment",
-        "increase market demand",
-        "measure elasticity",
-        "produce a bundle"
-      ],
-      "tag": "strategic_bargaining",
-      "type": "interpretation",
-      "objective": "LO16.1",
-      "difficulty": "easy",
-      "conceptCluster": "LO16.1_strategy_desk",
-      "primarySkill": "strategic_bargaining",
-      "secondarySkills": [],
-      "repairSkill": "strategic_bargaining",
-      "commonError": "treats_costly_action_as_irrelevant",
-      "feedback": "Restricting the ability to retreat can make a bargaining position more credible.",
-      "aHash": "750664832f270ced3c52c062cb3bb2e6aaf2f8616635ca3b77145495fda1972b"
+      "aHash": "5a2a41e2572672f5b8dce0e2a73d1c8105802187ca9d386872d77f327e33c3b1",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 84,
@@ -1875,13 +1682,14 @@ window.questionBanks = {
       "type": "definition",
       "objective": "LO12.6",
       "difficulty": "easy",
-      "conceptCluster": "LO12.6_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_behavioral_pricing",
       "primarySkill": "behavioral_pricing",
       "secondarySkills": [],
       "repairSkill": "behavioral_pricing",
       "commonError": "confuses_psychological_pricing_with_segmentation",
       "feedback": "Charm pricing uses the left-digit effect and consumer perception even when the numerical difference is small.",
-      "aHash": "0860987eef14dc9d95fe982031d4103918597e505074e79ec2dbef5d860c345d"
+      "aHash": "0860987eef14dc9d95fe982031d4103918597e505074e79ec2dbef5d860c345d",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 85,
@@ -1889,43 +1697,22 @@ window.questionBanks = {
       "q": "Showing a $200 “regular price” beside a $140 sale price mainly creates",
       "options": [
         "a reference price",
-        "a supply curve",
-        "a marginal cost",
-        "a Nash equilibrium"
+        "a measure of marginal production cost",
+        "a customer-specific reservation price measured by the seller",
+        "a capacity-clearing price inferred from bookings"
       ],
       "tag": "behavioral_pricing",
       "type": "definition",
       "objective": "LO12.6",
       "difficulty": "easy",
-      "conceptCluster": "LO12.6_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_behavioral_pricing",
       "primarySkill": "behavioral_pricing",
       "secondarySkills": [],
       "repairSkill": "behavioral_pricing",
       "commonError": "confuses_reference_price_with_cost",
       "feedback": "The displayed regular price acts as an anchor or reference point for judging the sale price.",
-      "aHash": "76b02f8c0eb318d0b2c5f3eaebd70bcabaab530fa40db865db4aa48a5064653a"
-    },
-    {
-      "id": 86,
-      "sourceGame": "strategyDesk",
-      "q": "A restaurant places a very expensive entrée on the menu partly to make other entrées seem reasonably priced. The expensive option serves as",
-      "options": [
-        "an anchor",
-        "a complement",
-        "a capacity constraint",
-        "a sunk cost"
-      ],
-      "tag": "behavioral_pricing",
-      "type": "application",
-      "objective": "LO12.6",
-      "difficulty": "easy",
-      "conceptCluster": "LO12.6_strategy_desk",
-      "primarySkill": "behavioral_pricing",
-      "secondarySkills": [],
-      "repairSkill": "behavioral_pricing",
-      "commonError": "ignores_anchoring_effect",
-      "feedback": "A high-priced option can anchor perceptions and make nearby prices appear more attractive.",
-      "aHash": "a0bd527bc0647637761f6a45d4c8162bf745d28d3bd3d7cd7d779efd3db09a0a"
+      "aHash": "76b02f8c0eb318d0b2c5f3eaebd70bcabaab530fa40db865db4aa48a5064653a",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 87,
@@ -1933,43 +1720,45 @@ window.questionBanks = {
       "q": "In bargaining, an outside option is",
       "options": [
         "the fallback payoff if talks fail",
-        "the largest accounting cost already paid",
-        "the first offer announced in the negotiation",
-        "the combined price charged for two bundled goods"
+        "the gross value of the proposed agreement",
+        "the first offer made during negotiations",
+        "the sunk cost already incurred before talks"
       ],
       "tag": "nonstrategic_bargaining",
       "type": "definition",
       "objective": "LO16.2",
       "difficulty": "easy",
-      "conceptCluster": "LO16.2_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_nonstrategic_bargaining",
       "primarySkill": "nonstrategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "nonstrategic_bargaining",
       "commonError": "confuses_outside_option_with_sunk_cost",
       "feedback": "The outside option is the value a party can obtain when bargaining ends without agreement.",
-      "aHash": "9ef39c6c15c89cc7819180bb4cac16bb5e33012f4570696f856725e6d8bb6a3e"
+      "aHash": "9ef39c6c15c89cc7819180bb4cac16bb5e33012f4570696f856725e6d8bb6a3e",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 88,
       "sourceGame": "strategyDesk",
-      "q": "A bookkeeper can leave for a better-paying job. Compared with before, staying now means giving up more. Her opportunity cost has",
+      "q": "A bookkeeper receives a better-paying outside job offer. Compared with before, staying means giving up more. Her opportunity cost has",
       "options": [
-        "decreases",
-        "increases",
-        "does not change",
-        "becomes zero"
+        "decreased",
+        "increased",
+        "stayed unchanged",
+        "fallen to zero"
       ],
       "tag": "nonstrategic_bargaining",
       "type": "application",
       "objective": "LO16.2",
       "difficulty": "easy",
-      "conceptCluster": "LO16.2_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_nonstrategic_bargaining",
       "primarySkill": "nonstrategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "nonstrategic_bargaining",
       "commonError": "reverses_opportunity_cost_effect",
       "feedback": "A more attractive forgone alternative raises the opportunity cost of remaining in the current job.",
-      "aHash": "0387dd2081a1cde3b02dc49d5dd17fac11e9a4d19533342189f020b9fdc4070c"
+      "aHash": "deb72353e69984557b823e0a3cf05569cfb316f764e229344accc29c3e51e272",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 89,
@@ -1985,13 +1774,14 @@ window.questionBanks = {
       "type": "calculation",
       "objective": "LO16.2",
       "difficulty": "easy",
-      "conceptCluster": "LO16.2_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_nonstrategic_bargaining",
       "primarySkill": "nonstrategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "nonstrategic_bargaining",
       "commonError": "adds_instead_of_subtracting_disagreement_value",
       "feedback": "The gain from agreement is $8 million − $3 million = $5 million.",
-      "aHash": "3f10ebb442deb7863e3db3348c9c77b4a5b6f7e4ae51ab2303f825599b918057"
+      "aHash": "3f10ebb442deb7863e3db3348c9c77b4a5b6f7e4ae51ab2303f825599b918057",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 90,
@@ -2007,45 +1797,24 @@ window.questionBanks = {
       "type": "interpretation",
       "objective": "LO12.6",
       "difficulty": "easy",
-      "conceptCluster": "LO12.6_strategy_desk",
+      "conceptCluster": "easy_strategyDesk_behavioral_pricing",
       "primarySkill": "behavioral_pricing",
       "secondarySkills": [],
       "repairSkill": "behavioral_pricing",
       "commonError": "assumes_equivalent_frames_have_identical_reactions",
       "feedback": "Framing effects occur when equivalent information produces different reactions depending on presentation.",
-      "aHash": "a6a98ce8cba19a420ad5bcb8d909fc5de7b24bf24d1e80229876e2e841a147a1"
+      "aHash": "a6a98ce8cba19a420ad5bcb8d909fc5de7b24bf24d1e80229876e2e841a147a1",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 145,
       "sourceGame": "strategyDesk",
-      "q": "Firm A earns $8 from entering if Firm B stays out but loses $2 if Firm B enters. Why is this a strategic decision?",
+      "q": "Firm A earns 8 from Enter if B stays Out and −2 from Enter if B enters. A earns 0 from staying Out in either case. How does A’s best response depend on B?",
       "options": [
-        "A’s payoff depends on B’s action",
-        "A has already paid a sunk cost",
-        "The firms face identical fixed costs",
-        "B’s action cannot affect A"
-      ],
-      "tag": "strategic_interdependence",
-      "type": "interpretation",
-      "objective": "LO15.1",
-      "difficulty": "easy",
-      "conceptCluster": "easy_strategyDesk_strategic_interdependence",
-      "primarySkill": "strategic_interdependence",
-      "secondarySkills": [],
-      "repairSkill": "strategic_interdependence",
-      "commonError": "treats_payoff_as_independent_of_rival",
-      "feedback": "The attractiveness of entering changes with Firm B’s response, which is strategic interdependence.",
-      "aHash": "220f381cf6d7190d23d48dfa5d424966558711d336d3c63ef6e5b06465263b84"
-    },
-    {
-      "id": 149,
-      "sourceGame": "strategyDesk",
-      "q": "A manager evaluates a capacity expansion without considering how a rival may respond. What has the manager omitted?",
-      "options": [
-        "The accounting identity for fixed cost",
-        "The rival’s strategic response",
-        "The market demand of each individual buyer",
-        "The legal definition of a commodity"
+        "Enter if B stays Out; stay Out if B enters",
+        "Enter regardless of B",
+        "Stay Out regardless of B",
+        "Enter only if B enters"
       ],
       "tag": "strategic_interdependence",
       "type": "application",
@@ -2055,9 +1824,10 @@ window.questionBanks = {
       "primarySkill": "strategic_interdependence",
       "secondarySkills": [],
       "repairSkill": "strategic_interdependence",
-      "commonError": "ignores_rival_response_in_interdependent_setting",
-      "feedback": "In a strategic market, the rival’s response can change the payoff from expansion.",
-      "aHash": "99d381a44434d2db46e3d0804b2cdddfffc14ab61c237c4ecc5f69ad2d81ded6"
+      "commonError": "treats_payoff_as_independent_of_rival",
+      "feedback": "Compare A’s conditional payoffs with 0: 8 favors entry when B stays Out, while −2 favors staying Out when B enters.",
+      "aHash": "f5cbcf1a242ac5d02dd4331fb896d6c7a3503c43d496e0947eacbf01685dd425",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 152,
@@ -2079,117 +1849,31 @@ window.questionBanks = {
       "repairSkill": "strategic_interdependence",
       "commonError": "uses_game_theory_when_no_strategic_interdependence",
       "feedback": "A price-taking farmer whose action does not alter rivals’ decisions faces little strategic interdependence.",
-      "aHash": "1fcd02474a4a7aaf35678d11a2427ba1a62b17edaf7d9c289b9a3245cb3d82bb"
-    },
-    {
-      "id": 154,
-      "sourceGame": "strategyDesk",
-      "q": "Firm A chooses whether to enter. Firm B observes that choice and then selects High or Low price. This is a",
-      "options": [
-        "simultaneous game with hidden actions",
-        "sequential game with observed moves",
-        "nonstrategic surplus calculation",
-        "one-period demand forecast"
-      ],
-      "tag": "game_timing",
-      "type": "definition",
-      "objective": "LO15.2",
-      "difficulty": "easy",
-      "conceptCluster": "easy_strategyDesk_game_timing",
-      "primarySkill": "game_timing",
-      "secondarySkills": [],
-      "repairSkill": "game_timing",
-      "commonError": "confuses_observed_sequence_with_simultaneous_choice",
-      "feedback": "Firm B moves after observing Firm A, so the game is sequential.",
-      "aHash": "8d47e674a32fffb9c268e7fac417ec5ec4132aba5d27aec449c16e856d972a27"
-    },
-    {
-      "id": 157,
-      "sourceGame": "strategyDesk",
-      "q": "Two firms submit sealed bids before either bid is revealed. The strategic interaction is modeled as",
-      "options": [
-        "a sequential game because bids are opened later",
-        "a bargaining game with no payoffs",
-        "a repeated game by definition",
-        "simultaneous because current bids are unobserved"
-      ],
-      "tag": "game_timing",
-      "type": "application",
-      "objective": "LO15.2",
-      "difficulty": "easy",
-      "conceptCluster": "easy_strategyDesk_game_timing",
-      "primarySkill": "game_timing",
-      "secondarySkills": [],
-      "repairSkill": "game_timing",
-      "commonError": "uses_calendar_timing_instead_of_information_timing",
-      "feedback": "The key issue is that neither firm observes the other’s current choice before bidding.",
-      "aHash": "25e135e452b7ffeadf38ca6025d75b10403bb8ece6f1311ffc3c680cc6b743ee"
-    },
-    {
-      "id": 162,
-      "sourceGame": "strategyDesk",
-      "q": "Firm B chooses Left. Firm A earns 6 from Up and 3 from Down. What is Firm A’s best response?",
-      "options": [
-        "Up",
-        "Down",
-        "Either strategy",
-        "No response exists"
-      ],
-      "tag": "nash_equilibrium",
-      "type": "application",
-      "objective": "LO15.3",
-      "difficulty": "easy",
-      "conceptCluster": "easy_strategyDesk_nash_equilibrium",
-      "primarySkill": "nash_equilibrium",
-      "secondarySkills": [],
-      "repairSkill": "nash_equilibrium",
-      "commonError": "selects_lower_payoff_as_best_response",
-      "feedback": "Holding B’s choice fixed at Left, Firm A prefers Up because 6 exceeds 3.",
-      "aHash": "75a288c0d6898c5f7b054590845978a82a3ad79fcce3d43ff68a7501e5a91ee9"
+      "aHash": "1fcd02474a4a7aaf35678d11a2427ba1a62b17edaf7d9c289b9a3245cb3d82bb",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 172,
       "sourceGame": "strategyDesk",
       "q": "A regulator changes the payoff from collusion by imposing a large expected penalty. What part of the game has changed?",
       "options": [
-        "The number of consumers in market demand",
-        "The order in which accounting entries are recorded",
+        "Only the names attached to the strategies",
+        "The order of moves, while leaving all payoffs fixed",
         "The players’ incentives and payoffs",
-        "The definition of marginal revenue"
+        "The player identities, while leaving incentives fixed"
       ],
       "tag": "game_design",
       "type": "interpretation",
       "objective": "LO15.4",
       "difficulty": "easy",
-      "conceptCluster": "easy_strategyDesk_game_design",
-      "primarySkill": "game_design",
+      "conceptCluster": "easy_strategyDesk_strategic_rule_design",
+      "primarySkill": "strategic_rule_design",
       "secondarySkills": [],
-      "repairSkill": "game_design",
+      "repairSkill": "strategic_rule_design",
       "commonError": "ignores_payoff_change_from_rule_design",
       "feedback": "A penalty changes the payoff attached to a strategy and can alter the equilibrium.",
-      "aHash": "1d7f0196673a67e1076954ce8c966028df747923e16d5223752a512a651021c9"
-    },
-    {
-      "id": 200,
-      "sourceGame": "strategyDesk",
-      "q": "A firm can profitably cut price only if its rival does not match the cut. Why is this a game-theory problem?",
-      "options": [
-        "The firm’s payoff depends on the rival’s response.",
-        "The firm’s fixed cost changes with every rival decision.",
-        "The market demand curve must be perfectly vertical.",
-        "The rival’s profit is irrelevant to the firm’s choice."
-      ],
-      "tag": "strategic_interdependence",
-      "type": "interpretation",
-      "objective": "LO15.1",
-      "difficulty": "easy",
-      "conceptCluster": "easy_strategyDesk_strategic_interdependence",
-      "primarySkill": "strategic_interdependence",
-      "secondarySkills": [],
-      "repairSkill": "strategic_interdependence",
-      "commonError": "treats_decision_as_independent",
-      "feedback": "Game theory applies because the best choice depends on what another decision maker does.",
-      "aHash": "8c9f281ac9925430cb5b4d13425d306657aa660eb116a373614baab8ccbc05fc"
+      "aHash": "1d7f0196673a67e1076954ce8c966028df747923e16d5223752a512a651021c9",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 201,
@@ -2211,34 +1895,13 @@ window.questionBanks = {
       "repairSkill": "strategic_interdependence",
       "commonError": "ignores_strategy_pairs",
       "feedback": "A game requires players, available strategies, and payoffs for the possible combinations of choices.",
-      "aHash": "e2e0dde0fd4983542f7365bccecf3193ae93311fda2375a404102adf9ce8031e"
-    },
-    {
-      "id": 202,
-      "sourceGame": "strategyDesk",
-      "q": "Which decision is least suited to game-theory analysis?",
-      "options": [
-        "Choosing a bid when competitors submit bids",
-        "Choosing a price when a rival may match it",
-        "Choosing how much electricity to use when the utility price is fixed and no rival responds",
-        "Choosing whether to enter a market after anticipating how an incumbent will defend its position"
-      ],
-      "tag": "strategic_interdependence",
-      "type": "trap",
-      "objective": "LO15.1",
-      "difficulty": "easy",
-      "conceptCluster": "easy_strategyDesk_strategic_interdependence",
-      "primarySkill": "strategic_interdependence",
-      "secondarySkills": [],
-      "repairSkill": "strategic_interdependence",
-      "commonError": "sees_strategy_where_none_exists",
-      "feedback": "Game theory is least useful when no other strategic actor changes the decision maker’s payoff.",
-      "aHash": "d00e2431c4ab46859ab8d262e3a3416a6fcf2069500faf78c44a87fc2c8e3abf"
+      "aHash": "e2e0dde0fd4983542f7365bccecf3193ae93311fda2375a404102adf9ce8031e",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 203,
       "sourceGame": "strategyDesk",
-      "q": "In a payoff matrix, the ordered pair in a cell normally reports",
+      "q": "With payoff order explicitly stated as (Player 1, Player 2), what does a cell in a payoff matrix report?",
       "options": [
         "the probability that each player makes a mistake under every available strategy combination",
         "the total market quantity and market price",
@@ -2255,12 +1918,13 @@ window.questionBanks = {
       "repairSkill": "strategic_interdependence",
       "commonError": "misreads_payoff_pair",
       "feedback": "Each cell records the outcomes produced by one strategy choice from each player.",
-      "aHash": "429affdb761290d3a62c2226306cbca03d0222ee1530170899fe9bdc406bab93"
+      "aHash": "429affdb761290d3a62c2226306cbca03d0222ee1530170899fe9bdc406bab93",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 204,
       "sourceGame": "strategyDesk",
-      "q": "A strategy is a dominant strategy when it",
+      "q": "Call a strategy always-best if it maximizes its player’s payoff against every rival action, allowing ties. Such a strategy",
       "options": [
         "produces at least as high a payoff as every alternative regardless of the rival’s action",
         "maximizes the combined payoff of all players",
@@ -2276,8 +1940,9 @@ window.questionBanks = {
       "secondarySkills": [],
       "repairSkill": "strategic_interdependence",
       "commonError": "confuses_dominance_with_joint_payoff",
-      "feedback": "A dominant strategy is optimal against every action available to the other player.",
-      "aHash": "4b38981bbef0bc9b4bccea4f6adf5d09de284ef99f8f081e5a2dea38617995e4"
+      "feedback": "An always-best strategy is a best response against every rival action. Strict dominance requires a strict improvement everywhere; weak dominance requires at least one strict improvement and no loss.",
+      "aHash": "4b38981bbef0bc9b4bccea4f6adf5d09de284ef99f8f081e5a2dea38617995e4",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 205,
@@ -2299,29 +1964,8 @@ window.questionBanks = {
       "repairSkill": "strategic_interdependence",
       "commonError": "treats_best_response_as_unconditional",
       "feedback": "Best responses are conditional: they identify the most profitable reply to a particular rival action.",
-      "aHash": "7e970b0f1a28cd4fb5e1bd3203306fa9517e0f5a7133d3186ce04e00fa4a0d7a"
-    },
-    {
-      "id": 207,
-      "sourceGame": "strategyDesk",
-      "q": "Coke’s profit from a discount is $7 million if Pepsi keeps price high but only $2 million if Pepsi also discounts. What makes Coke’s choice strategic?",
-      "options": [
-        "Coke’s marginal cost must equal Pepsi’s fixed cost before either firm can change price.",
-        "The discount changes only historical revenue.",
-        "Pepsi’s action has no effect on Coke’s payoff.",
-        "The value of discounting changes with Pepsi’s action."
-      ],
-      "tag": "strategic_interdependence",
-      "type": "application",
-      "objective": "LO15.1",
-      "difficulty": "easy",
-      "conceptCluster": "easy_strategyDesk_strategic_interdependence",
-      "primarySkill": "strategic_interdependence",
-      "secondarySkills": [],
-      "repairSkill": "strategic_interdependence",
-      "commonError": "ignores_rival_response",
-      "feedback": "The profitability of Coke’s move is conditional on Pepsi’s pricing response.",
-      "aHash": "77d6c19abc7ebe3ca13a2df67ce975185ebeb69d079c33a9a2f2852fdea8c13d"
+      "aHash": "7e970b0f1a28cd4fb5e1bd3203306fa9517e0f5a7133d3186ce04e00fa4a0d7a",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 210,
@@ -2343,29 +1987,8 @@ window.questionBanks = {
       "repairSkill": "strategic_interdependence",
       "commonError": "thinks_zero_sum_means_zero_payoffs",
       "feedback": "Zero-sum describes the relationship between payoffs, not the numerical payoff of each player.",
-      "aHash": "d60b32f5a6a5f2316ea044de90738b5468419840d9feb01e5dce3fab912b4697"
-    },
-    {
-      "id": 215,
-      "sourceGame": "strategyDesk",
-      "q": "What distinguishes an observed sequential game from strategically simultaneous choices?",
-      "options": [
-        "Sequential games always have more than two players.",
-        "Simultaneous games require choices at the same physical second, while sequential games occur on different dates.",
-        "Sequential games cannot be shown with a game tree.",
-        "In a sequential game, a later player observes or responds to an earlier move."
-      ],
-      "tag": "game_timing",
-      "type": "definition",
-      "objective": "LO15.2",
-      "difficulty": "easy",
-      "conceptCluster": "easy_strategyDesk_game_timing",
-      "primarySkill": "game_timing",
-      "secondarySkills": [],
-      "repairSkill": "game_timing",
-      "commonError": "uses_clock_time_instead_of_information",
-      "feedback": "The key distinction is information about prior moves, not whether choices occur at the same clock time.",
-      "aHash": "e16773ad69092faf4051fcbe4b3cb4aa23db560045a02df2e3a2c082773123db"
+      "aHash": "d60b32f5a6a5f2316ea044de90738b5468419840d9feb01e5dce3fab912b4697",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 217,
@@ -2387,12 +2010,13 @@ window.questionBanks = {
       "repairSkill": "game_timing",
       "commonError": "equates_simultaneous_with_same_second",
       "feedback": "Simultaneous means choices are made without observing the rival’s move.",
-      "aHash": "f79234f35167952e6fb030b34f49114f07a39299f2ac186aaae85e001f0f3907"
+      "aHash": "f79234f35167952e6fb030b34f49114f07a39299f2ac186aaae85e001f0f3907",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 218,
       "sourceGame": "strategyDesk",
-      "q": "Backward induction solves a sequential game by",
+      "q": "In a finite sequential game with perfect information, backward induction solves the game by",
       "options": [
         "averaging all terminal payoffs",
         "choosing the first branch with the highest total payoff without checking later players’ best responses",
@@ -2409,7 +2033,8 @@ window.questionBanks = {
       "repairSkill": "backward_induction",
       "commonError": "solves_tree_forward_without_responses",
       "feedback": "The analyst first determines optimal actions at the last decision nodes, then works backward.",
-      "aHash": "77291e5541ae85c22cc56686d80128a4076f9e989ee598187f5f8177bf34c92f"
+      "aHash": "77291e5541ae85c22cc56686d80128a4076f9e989ee598187f5f8177bf34c92f",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 219,
@@ -2431,29 +2056,8 @@ window.questionBanks = {
       "repairSkill": "credible_threats",
       "commonError": "treats_announcement_as_credibility",
       "feedback": "A rational opponent discounts a threat that the threatening player would not want to execute later.",
-      "aHash": "1abdc9d90c4dab1cdc83014f1289cbb2f934ad0f5e0d9297a8d15bb2552bdf5c"
-    },
-    {
-      "id": 230,
-      "sourceGame": "strategyDesk",
-      "q": "A strategy pair is a Nash equilibrium when",
-      "options": [
-        "the players receive equal payoffs",
-        "the combined payoff is as large as possible",
-        "each strategy is a best response to the other player’s strategy",
-        "both players use dominant strategies in every game and the equilibrium always maximizes total surplus"
-      ],
-      "tag": "nash_equilibrium",
-      "type": "definition",
-      "objective": "LO15.3",
-      "difficulty": "easy",
-      "conceptCluster": "easy_strategyDesk_nash_equilibrium",
-      "primarySkill": "nash_equilibrium",
-      "secondarySkills": [],
-      "repairSkill": "nash_equilibrium",
-      "commonError": "confuses_nash_with_joint_maximum",
-      "feedback": "At a Nash equilibrium, no player can gain by changing strategy alone.",
-      "aHash": "ac324971a03d4b2002f6f3fb46f9b1be32674f4b23ae719c119485373734a309"
+      "aHash": "1abdc9d90c4dab1cdc83014f1289cbb2f934ad0f5e0d9297a8d15bb2552bdf5c",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 231,
@@ -2475,29 +2079,8 @@ window.questionBanks = {
       "repairSkill": "nash_equilibrium",
       "commonError": "ignores_profitable_deviation",
       "feedback": "A profitable unilateral deviation means the current strategy pair cannot be Nash.",
-      "aHash": "18170eede6de70d93056eb5ec5c5d1335fe5ba3d0f0bdd2f2fc07484ba49fed3"
-    },
-    {
-      "id": 239,
-      "sourceGame": "strategyDesk",
-      "q": "Which statement must be true at a Nash equilibrium?",
-      "options": [
-        "The equilibrium maximizes total surplus.",
-        "Every player receives the same payoff.",
-        "Every player has a strictly dominant strategy that produces the equilibrium in every possible game.",
-        "No player can improve by changing strategy alone."
-      ],
-      "tag": "nash_equilibrium",
-      "type": "trap",
-      "objective": "LO15.3",
-      "difficulty": "easy",
-      "conceptCluster": "easy_strategyDesk_nash_equilibrium",
-      "primarySkill": "nash_equilibrium",
-      "secondarySkills": [],
-      "repairSkill": "nash_equilibrium",
-      "commonError": "adds_efficiency_requirement",
-      "feedback": "Nash equilibrium requires mutual best responses, not efficiency or equal payoffs.",
-      "aHash": "8999fd35647228315c8b806fd9492c353f618515764ce9da9d63968d7fb4b273"
+      "aHash": "18170eede6de70d93056eb5ec5c5d1335fe5ba3d0f0bdd2f2fc07484ba49fed3",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 244,
@@ -2519,51 +2102,54 @@ window.questionBanks = {
       "repairSkill": "nash_equilibrium",
       "commonError": "uses_payoff_sum_instead_of_best_responses",
       "feedback": "Pure Nash equilibria occur where both players are simultaneously choosing best responses.",
-      "aHash": "15f02bffbf5769d1dd6601a96c33be43bdc59cabfc47f4da3020d8359921dde2"
+      "aHash": "15f02bffbf5769d1dd6601a96c33be43bdc59cabfc47f4da3020d8359921dde2",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 245,
       "sourceGame": "strategyDesk",
       "q": "A commitment changes a game most effectively when it",
       "options": [
-        "adds choices without changing incentives",
+        "keeps all later choices reversible at no cost",
         "removes a future option and makes a threatened or promised action credible",
-        "keeps every future action reversible at no cost",
-        "changes only a past sunk cost that no player observes, without affecting any future choice or payoff"
+        "changes only an unobserved sunk cost with no future payoff effect",
+        "announces a plan while retaining an incentive to abandon it"
       ],
       "tag": "strategic_commitment",
       "type": "interpretation",
       "objective": "LO15.4",
       "difficulty": "easy",
-      "conceptCluster": "easy_strategyDesk_strategic_commitment",
-      "primarySkill": "strategic_commitment",
+      "conceptCluster": "easy_strategyDesk_strategic_rule_design",
+      "primarySkill": "strategic_rule_design",
       "secondarySkills": [],
-      "repairSkill": "strategic_commitment",
+      "repairSkill": "strategic_rule_design",
       "commonError": "confuses_commitment_with_announcement",
       "feedback": "Commitment has strategic value when it limits later discretion in a way the other player believes.",
-      "aHash": "2764a876262279abd66e44392aa86750ac0103d0e6ff598eccd42a09163b9928"
+      "aHash": "2764a876262279abd66e44392aa86750ac0103d0e6ff598eccd42a09163b9928",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 250,
       "sourceGame": "strategyDesk",
       "q": "Two firms prefer to avoid simultaneous expansion. One firm publicly and irreversibly begins construction first. What rule of the game has changed?",
       "options": [
-        "The definition of market demand",
-        "The identity of the customers",
+        "Only the historical accounting cost",
+        "Only the labels attached to expansion choices",
         "The timing and commitment structure",
-        "The accounting treatment of depreciation"
+        "The terminal payoff ordering without changing feasible moves"
       ],
       "tag": "strategic_rules",
       "type": "application",
       "objective": "LO15.4",
       "difficulty": "easy",
-      "conceptCluster": "easy_strategyDesk_strategic_rules",
-      "primarySkill": "strategic_rules",
+      "conceptCluster": "easy_strategyDesk_strategic_rule_design",
+      "primarySkill": "strategic_rule_design",
       "secondarySkills": [],
-      "repairSkill": "strategic_rules",
+      "repairSkill": "strategic_rule_design",
       "commonError": "ignores_timing_change",
       "feedback": "Irreversible early investment turns the interaction into a sequential game and can shape the rival’s response.",
-      "aHash": "8cc3a665bf483e6c033babd380ee829060e77093f7c4835e73be430f1a78e2a5"
+      "aHash": "8cc3a665bf483e6c033babd380ee829060e77093f7c4835e73be430f1a78e2a5",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 254,
@@ -2585,7 +2171,8 @@ window.questionBanks = {
       "repairSkill": "weak_dominance",
       "commonError": "confuses_weak_and_strict_dominance",
       "feedback": "Weak dominance permits ties in some comparisons but requires a strict improvement in at least one.",
-      "aHash": "8216c12164647b4f3e435cc120621fe5ef5e5799ff8e4065cb396f69a8f57e9b"
+      "aHash": "8216c12164647b4f3e435cc120621fe5ef5e5799ff8e4065cb396f69a8f57e9b",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 257,
@@ -2601,85 +2188,89 @@ window.questionBanks = {
       "type": "interpretation",
       "objective": "LO15.4",
       "difficulty": "easy",
-      "conceptCluster": "easy_strategyDesk_repeated_games",
-      "primarySkill": "repeated_games",
+      "conceptCluster": "easy_strategyDesk_strategic_rule_design",
+      "primarySkill": "strategic_rule_design",
       "secondarySkills": [],
-      "repairSkill": "repeated_games",
+      "repairSkill": "strategic_rule_design",
       "commonError": "ignores_future_payoffs",
       "feedback": "Future consequences can make short-run cheating less attractive.",
-      "aHash": "c2973b104a3ddb4f09a0345bbdbfddf1ec9e4628857e1328dcc1d204dafca495"
+      "aHash": "c2973b104a3ddb4f09a0345bbdbfddf1ec9e4628857e1328dcc1d204dafca495",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 360,
       "sourceGame": "strategyDesk",
       "q": "Firm A has selected High Price in gametreetwo. Which continuation action maximizes Firm B's payoff?",
       "options": [
-        "Not Match",
-        "Match",
-        "Randomize equally",
-        "Exit the market"
+        "Not Match; B prefers its second-coordinate payoff there",
+        "Match; B prefers its second-coordinate payoff there",
+        "Either action; B receives equal payoffs",
+        "Match; maximizing A’s payoff also maximizes B’s payoff"
       ],
-      "tag": "game_timing",
-      "type": "graph-integration",
+      "tag": "backward_induction",
+      "type": "graph/tree interpretation",
       "objective": "LO15.2",
       "difficulty": "easy",
-      "conceptCluster": "easy_strategyDesk_game_timing",
-      "primarySkill": "game_timing",
+      "conceptCluster": "easy_strategyDesk_backward_induction",
+      "primarySkill": "backward_induction",
       "secondarySkills": [],
-      "repairSkill": "game_timing",
+      "repairSkill": "backward_induction",
       "commonError": "reads_first_payoff_as_firm_b",
       "feedback": "After High Price, Firm B compares 3 from Match with 6 from Not Match, so it chooses Not Match.",
       "image": "gametreetwo.webp",
       "graphRequired": true,
-      "aHash": "52f222c61d845b6d7d8b2021d80f6379c9348f960300ca9dde232c1c1e6ff053"
+      "aHash": "4440fdfb9d40d21d9a7201539ab713bddd613ade52fd8aed8fb905da1d114bb9",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 361,
       "sourceGame": "strategyDesk",
       "q": "At the Medium Price node in gametreetwo, compare Firm B's two payoffs. Which branch does backward induction retain?",
       "options": [
-        "Not Match",
-        "Match",
-        "Either action gives 5",
-        "No response is shown"
+        "Not Match; B prefers its second-coordinate payoff there",
+        "Match; B prefers its second-coordinate payoff there",
+        "Either action; B receives equal payoffs",
+        "Not Match; maximizing A’s payoff also maximizes B’s payoff"
       ],
-      "tag": "game_timing",
-      "type": "graph-integration",
+      "tag": "backward_induction",
+      "type": "graph/tree interpretation",
       "objective": "LO15.2",
       "difficulty": "easy",
-      "conceptCluster": "easy_strategyDesk_game_timing",
-      "primarySkill": "game_timing",
+      "conceptCluster": "easy_strategyDesk_backward_induction",
+      "primarySkill": "backward_induction",
       "secondarySkills": [],
-      "repairSkill": "game_timing",
+      "repairSkill": "backward_induction",
       "commonError": "reads_wrong_branch_payoff",
       "feedback": "After Medium Price, Firm B receives 5 from Match and 4 from Not Match, so Match is optimal.",
       "image": "gametreetwo.webp",
       "graphRequired": true,
-      "aHash": "4945a70fa7f9c13fe1931a3372ac5798140d42eba74d0dd805a4a216ed3a8142"
+      "aHash": "ea3238baca1ce01bf6162cf30a29c5a7ef990f5ea4f17bc91fe28ce82d10203b",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 362,
       "sourceGame": "strategyDesk",
       "q": "Suppose play reaches Low Price in gametreetwo. Which response is sequentially rational for Firm B?",
       "options": [
-        "Match",
-        "Medium Price",
-        "Not Match",
-        "Firm B is indifferent"
+        "Either action; B receives equal payoffs",
+        "Match; B prefers its second-coordinate payoff there",
+        "Not Match; B prefers its second-coordinate payoff there",
+        "Match; maximizing A’s payoff also maximizes B’s payoff"
       ],
-      "tag": "game_timing",
-      "type": "graph-integration",
+      "tag": "backward_induction",
+      "type": "graph/tree interpretation",
       "objective": "LO15.2",
       "difficulty": "easy",
-      "conceptCluster": "easy_strategyDesk_game_timing",
-      "primarySkill": "game_timing",
+      "conceptCluster": "easy_strategyDesk_backward_induction",
+      "primarySkill": "backward_induction",
       "secondarySkills": [],
-      "repairSkill": "game_timing",
+      "repairSkill": "backward_induction",
       "commonError": "reads_firm_a_payoff",
       "feedback": "Firm B receives 7 from Match and 8 from Not Match, so it chooses Not Match.",
       "image": "gametreetwo.webp",
       "graphRequired": true,
-      "aHash": "52f222c61d845b6d7d8b2021d80f6379c9348f960300ca9dde232c1c1e6ff053"
+      "aHash": "4440fdfb9d40d21d9a7201539ab713bddd613ade52fd8aed8fb905da1d114bb9",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 368,
@@ -2701,17 +2292,18 @@ window.questionBanks = {
       "repairSkill": "strategic_rule_design",
       "commonError": "treats_announced_threat_as_credible",
       "feedback": "A threat is credible only if the firm would actually prefer to execute it when the decision point arrives.",
-      "aHash": "bd1d44758cbbea00ee2ea396f1e05b176d9fcca3b01508054b616df59e04394e"
+      "aHash": "bd1d44758cbbea00ee2ea396f1e05b176d9fcca3b01508054b616df59e04394e",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 370,
       "sourceGame": "strategyDesk",
       "q": "Why can a first-mover advantage disappear?",
       "options": [
-        "The first mover always has lower marginal cost after the follower responds",
-        "Sequential games never contain binding commitment devices",
+        "An observed first move prevents the follower from responding",
+        "The first mover must always choose its highest stand-alone payoff",
         "The follower's best response can leave the leader worse off",
-        "The follower cannot calculate a best response"
+        "Every sequential game has identical leader and follower payoffs"
       ],
       "tag": "game_timing",
       "type": "interpretation",
@@ -2723,42 +2315,21 @@ window.questionBanks = {
       "repairSkill": "game_timing",
       "commonError": "assumes_moving_first_is_always_advantageous",
       "feedback": "Moving first helps only when the commitment changes the follower's response favorably and the first move cannot be costlessly reversed.",
-      "aHash": "6a15c06008f1725ffa8664a1ee1c531b980ba462e8839125466478ec56fd95ea"
-    },
-    {
-      "id": 371,
-      "sourceGame": "strategyDesk",
-      "q": "A firm makes a large irreversible capacity investment before a rival chooses output. What strategic function can the investment serve?",
-      "options": [
-        "A contractual guarantee that both firms will collude",
-        "A direct price-discrimination device aimed at customers",
-        "A weakly dominated action in every possible continuation game",
-        "A credible commitment that alters the rival's response"
-      ],
-      "tag": "strategic_rule_design",
-      "type": "application",
-      "objective": "LO15.4",
-      "difficulty": "easy",
-      "conceptCluster": "easy_strategyDesk_strategic_rule_design",
-      "primarySkill": "strategic_rule_design",
-      "secondarySkills": [],
-      "repairSkill": "strategic_rule_design",
-      "commonError": "ignores_irreversibility_as_commitment",
-      "feedback": "An irreversible investment can commit the firm to aggressive output and alter the rival's incentives.",
-      "aHash": "5e05aeaef5f15b2f1285d83cd2d52bb9855d3c21011f0fe4e1935138cbeb5a32"
+      "aHash": "6a15c06008f1725ffa8664a1ee1c531b980ba462e8839125466478ec56fd95ea",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 372,
       "sourceGame": "strategyDesk",
-      "q": "A payoff matrix is most appropriate when",
+      "q": "Two players choose actions without observing the other’s current choice. A payoff matrix listing the payoff for every action pair directly represents which information structure?",
       "options": [
-        "players choose without seeing the other's current move",
-        "one player observes every earlier move before acting",
-        "only one player receives a payoff from the outcome",
-        "the order of moves determines every branch and later action"
+        "Simultaneous choices with unobserved current actions",
+        "Perfect observation of the other’s choice before acting",
+        "One player choosing both actions for the pair",
+        "No strategic interaction between the players"
       ],
       "tag": "game_timing",
-      "type": "definition",
+      "type": "interpretation",
       "objective": "LO15.2",
       "difficulty": "easy",
       "conceptCluster": "easy_strategyDesk_game_timing",
@@ -2766,8 +2337,9 @@ window.questionBanks = {
       "secondarySkills": [],
       "repairSkill": "game_timing",
       "commonError": "uses_tree_for_simultaneous_game",
-      "feedback": "A matrix compactly represents simultaneous choices and their resulting payoffs.",
-      "aHash": "791b5776b23db541230d64e49bc0d85a358f39e4526546f0095bf4d2c00a5df9"
+      "feedback": "The matrix describes payoffs for simultaneous choices. Sequential games can also have strategic-form matrices, so a matrix alone does not prove a timing assumption.",
+      "aHash": "52abf4e9540f52ca81afb11c0287ab51fa17c63ea38348d8b0fe58c4e46074b6",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 373,
@@ -2789,7 +2361,8 @@ window.questionBanks = {
       "repairSkill": "strategic_rule_design",
       "commonError": "treats_rule_change_as_cosmetic",
       "feedback": "The contract changes incentives and therefore the rival's best responses and possible equilibria.",
-      "aHash": "f9c44a7dae6e54e9d43aa2937e489ffe625f4c40df59125d8ff3155023fbdb24"
+      "aHash": "f9c44a7dae6e54e9d43aa2937e489ffe625f4c40df59125d8ff3155023fbdb24",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 9072,
@@ -2802,7 +2375,7 @@ window.questionBanks = {
         "Every bidder receives the same payoff once the auction becomes open"
       ],
       "tag": "game_timing",
-      "type": "integration",
+      "type": "interpretation",
       "objective": "LO15.2",
       "difficulty": "easy",
       "conceptCluster": "easy_strategyDesk_game_timing",
@@ -2811,75 +2384,217 @@ window.questionBanks = {
       "repairSkill": "game_timing",
       "commonError": "focuses_on_clock_time_not_information",
       "feedback": "The open format creates sequential information and opportunities to respond to observed behavior.",
-      "aHash": "3f17293cfc3917edecf4bf57b09f39a5dbf55bb45ca09ffa9daf946c9883dc87"
-    }
-  ],
-  "medium": [
-    {
-      "id": 100,
-      "sourceGame": "strategyDesk",
-      "q": "What is the central profit motive for price discrimination?",
-      "options": [
-        "Charge customer groups closer to their willingness to pay",
-        "Make every customer pay the firm’s average cost",
-        "Eliminate all differences in customers’ demand",
-        "Guarantee that the firm sells the same quantity to everyone"
-      ],
-      "tag": "price_discrimination",
-      "type": "definition",
-      "objective": "LO13.1",
-      "difficulty": "medium",
-      "conceptCluster": "LO13.1_strategy_desk",
-      "primarySkill": "price_discrimination",
-      "secondarySkills": [],
-      "repairSkill": "price_discrimination",
-      "commonError": "confuses_discrimination_with_cost_pricing",
-      "feedback": "Price discrimination can increase profit by matching prices more closely to differences in willingness to pay.",
-      "aHash": "1b4279144eece4a7cbbc37aef89e20daa3a02e59138565ee6eb7081a2ace2315"
+      "aHash": "3f17293cfc3917edecf4bf57b09f39a5dbf55bb45ca09ffa9daf946c9883dc87",
+      "canonicalDifficulty": "easy"
     },
     {
-      "id": 101,
+      "id": 331,
       "sourceGame": "strategyDesk",
-      "q": "A theater knows students are more price sensitive than working adults. Which pricing pattern is most consistent with profit-maximizing price discrimination?",
+      "q": "A firm charges two groups prices that differ by $10. A reseller can buy in the low-price group and resell in the high-price group at a transport and transaction cost of $4 per unit. What threatens the strategy?",
       "options": [
-        "A higher student price and a lower adult price",
-        "The same price because both groups watch the same film",
-        "A student price based only on the theater’s fixed cost",
-        "A lower student price and a higher adult price"
+        "Demand becomes perfectly inelastic",
+        "The groups become complements",
+        "The firm must charge the same price by definition",
+        "Arbitrage remains profitable by $6 per unit"
       ],
-      "tag": "price_discrimination",
-      "type": "application",
-      "objective": "LO13.1",
-      "difficulty": "medium",
-      "conceptCluster": "LO13.1_strategy_desk",
-      "primarySkill": "price_discrimination",
-      "secondarySkills": [],
-      "repairSkill": "price_discrimination",
-      "commonError": "reverses_elastic_and_inelastic_segments",
-      "feedback": "The group with more elastic demand generally receives the lower price, while the less elastic group is charged more.",
-      "aHash": "456adc8d119af414ded9475c3ca5c1c986a02c9d5221056d14c412024332a26f"
-    },
-    {
-      "id": 102,
-      "sourceGame": "strategyDesk",
-      "q": "At a price of $20, four buyers demand 3, 5, 2, and 0 units. What is the market quantity demanded?",
-      "options": [
-        "10 units",
-        "8 units",
-        "5 units",
-        "2.5 units"
-      ],
-      "tag": "market_demand",
+      "tag": "arbitrage_control",
       "type": "calculation",
-      "objective": "LO6.1",
-      "difficulty": "medium",
-      "conceptCluster": "LO6.1_strategy_desk",
-      "primarySkill": "market_demand",
+      "objective": "LO13.3",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_arbitrage_control",
+      "primarySkill": "arbitrage_control",
       "secondarySkills": [],
-      "repairSkill": "market_demand",
-      "commonError": "averages_or_omits_individual_quantities",
-      "feedback": "Market demand adds all individual quantities at the same price: 3 + 5 + 2 + 0 = 10 units.",
-      "aHash": "9173591f0a6e0f38bdc50b688bbb8d74812f72c01453f0c93797f6a916b0f5a8"
+      "repairSkill": "arbitrage_control",
+      "commonError": "ignores_resale_cost",
+      "feedback": "A reseller can buy low and sell high while paying $4, leaving a $6 margin.",
+      "aHash": "2de57d966376b5bd7c75f241c159a6c39965284f9dbcbe12b62b6c3a6563554e",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 376,
+      "sourceGame": "strategyDesk",
+      "q": "A seller receives a payoff of $9 million if negotiations fail. The buyer's disagreement payoff is $7 million. Both accept agreement when indifferent. What is the seller's minimum acceptable payoff from an agreement?",
+      "options": [
+        "$9 million",
+        "$6 million",
+        "$15 million",
+        "$24 million"
+      ],
+      "tag": "nonstrategic_bargaining",
+      "type": "calculation",
+      "objective": "LO16.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_nonstrategic_bargaining",
+      "primarySkill": "nonstrategic_bargaining",
+      "secondarySkills": [],
+      "repairSkill": "nonstrategic_bargaining",
+      "commonError": "uses_gain_instead_of_disagreement_value",
+      "feedback": "The seller's reservation payoff is its own $9 million outside option. Receiving exactly that amount makes the seller indifferent; the stated tie rule allows agreement.",
+      "aHash": "c7e844477746e60eace11ec934348bc34886da200cd78b3702126192d7dce0da",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 261,
+      "sourceGame": "strategyDesk",
+      "q": "A worker receives a credible offer from another employer before salary negotiations. How does this usually affect bargaining power? Hold productivity, agreement value, and other bargaining conditions fixed.",
+      "options": [
+        "It weakens the worker because outside offers are sunk costs.",
+        "It strengthens the worker’s position by improving the disagreement payoff.",
+        "It leaves the negotiation unchanged.",
+        "It automatically determines the final salary."
+      ],
+      "tag": "nonstrategic_bargaining",
+      "type": "application",
+      "objective": "LO16.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_nonstrategic_bargaining",
+      "primarySkill": "nonstrategic_bargaining",
+      "secondarySkills": [],
+      "repairSkill": "nonstrategic_bargaining",
+      "commonError": "ignores_improved_outside_option",
+      "feedback": "The alternative job improves what the worker can obtain without agreement.",
+      "aHash": "e0a94b8a47bbe0eb3147dcd3ae099ff76198288ff6099a0c3d4afa7466b3d42c",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 155,
+      "sourceGame": "strategyDesk",
+      "q": "In an extensive-form game, two decision nodes joined by an information set mean the player",
+      "options": [
+        "moves twice at the same node",
+        "knows exactly which prior path occurred",
+        "cannot tell which prior path occurred",
+        "has no available action"
+      ],
+      "tag": "game_timing",
+      "type": "interpretation",
+      "objective": "LO15.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_game_timing",
+      "primarySkill": "game_timing",
+      "secondarySkills": [],
+      "repairSkill": "game_timing",
+      "commonError": "misreads_information_set_as_perfect_observation",
+      "feedback": "An information set connects nodes the player cannot distinguish when choosing an action.",
+      "aHash": "3db56fc548da9bb8c34a77cba73f41df0d8e86410b715dfa124f13e3bb9a2b96",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 208,
+      "sourceGame": "strategyDesk",
+      "q": "In a prisoner’s dilemma, why can individually rational choices produce a poor joint outcome?",
+      "options": [
+        "Each player follows a private incentive that leaves both worse off than cooperation.",
+        "Both players are forced to maximize total surplus rather than respond to their own payoffs.",
+        "Neither player has a best response.",
+        "The game contains no strategic interdependence."
+      ],
+      "tag": "strategic_interdependence",
+      "type": "interpretation",
+      "objective": "LO15.1",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_strategic_interdependence",
+      "primarySkill": "strategic_interdependence",
+      "secondarySkills": [],
+      "repairSkill": "strategic_interdependence",
+      "commonError": "assumes_private_and_joint_incentives_align",
+      "feedback": "The conflict between private incentives and collective welfare drives the prisoner’s-dilemma result.",
+      "aHash": "b94b45b9b8761b6dcd8471fdc0fe84381a65235dc0de00809cccfd032c4cf395",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 220,
+      "sourceGame": "strategyDesk",
+      "q": "Using gametreeone, what action will Player 2 choose after Player 1 invests?",
+      "options": [
+        "Low Price; it gives Player 2 the larger payoff",
+        "High Price; it gives Player 2 the larger payoff",
+        "Either price; Player 2 is indifferent",
+        "High Price; Player 1’s preferred price is also Player 2’s best response"
+      ],
+      "tag": "backward_induction",
+      "type": "graph/tree interpretation",
+      "objective": "LO15.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_backward_induction",
+      "primarySkill": "backward_induction",
+      "secondarySkills": [],
+      "repairSkill": "backward_induction",
+      "commonError": "uses_player1_payoff_at_player2_node",
+      "feedback": "After Invest, Player 2 compares payoffs 4 and 5 and chooses Low Price.",
+      "image": "gametreeone.webp",
+      "graphRequired": true,
+      "aHash": "b98f5d8f5e965093c38ee3fefbd6918c572015894fe281f09b83a65c6781e414",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 227,
+      "sourceGame": "strategyDesk",
+      "q": "When solving a game tree, why is choosing the branch with the largest payoff at the root often wrong?",
+      "options": [
+        "The root player never receives a payoff.",
+        "All terminal payoffs must be averaged.",
+        "The first mover must always choose the left branch because game trees are solved from left to right.",
+        "Later players may choose responses that make that terminal payoff unreachable."
+      ],
+      "tag": "backward_induction",
+      "type": "strategy",
+      "objective": "LO15.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_backward_induction",
+      "primarySkill": "backward_induction",
+      "secondarySkills": [],
+      "repairSkill": "backward_induction",
+      "commonError": "ignores_later_best_responses",
+      "feedback": "The root player must anticipate rational responses at every later decision node.",
+      "aHash": "adf45f66aeeecb83ebb8b9365303d894ace86e1159cdeb4975c3af65cd8a94ee",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 249,
+      "sourceGame": "strategyDesk",
+      "q": "Moving first creates an advantage only when",
+      "options": [
+        "the first mover always receives the larger payoff",
+        "the first action changes the later player’s best response in a favorable way",
+        "the first action can be costlessly reversed after observing the later player’s response",
+        "the second player has no payoff"
+      ],
+      "tag": "strategic_rules",
+      "type": "interpretation",
+      "objective": "LO15.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_strategic_rule_design",
+      "primarySkill": "strategic_rule_design",
+      "secondarySkills": [],
+      "repairSkill": "strategic_rule_design",
+      "commonError": "assumes_first_mover_always_wins",
+      "feedback": "First-mover advantage depends on commitment and the response it induces, not merely on chronological order.",
+      "aHash": "fa11e214f74e50037d1d528034b983d7e0731a46a10508b501197e90a70aa280",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 367,
+      "sourceGame": "strategyDesk",
+      "q": "A simultaneous game has two Nash equilibria. What additional fact could select one equilibrium without changing the payoffs?",
+      "options": [
+        "A sunk cost shared equally by both firms",
+        "A random accounting change that leaves every payoff unchanged",
+        "The complete absence of communication or precedent",
+        "A shared convention or focal point"
+      ],
+      "tag": "strategic_rule_design",
+      "type": "interpretation",
+      "objective": "LO15.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_strategic_rule_design",
+      "primarySkill": "strategic_rule_design",
+      "secondarySkills": [],
+      "repairSkill": "strategic_rule_design",
+      "commonError": "assumes_multiple_equilibria_are_impossible",
+      "feedback": "A convention, precedent, or focal point can coordinate expectations on one of several equilibria.",
+      "aHash": "ada8bc6ae8297f8dd46bfbd6360a99828f7df41f14bfb795902cebaa2b72f3e6",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 103,
@@ -2894,36 +2609,15 @@ window.questionBanks = {
       "tag": "price_discrimination",
       "type": "trap",
       "objective": "LO13.1",
-      "difficulty": "medium",
-      "conceptCluster": "LO13.1_strategy_desk",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_price_discrimination",
       "primarySkill": "price_discrimination",
       "secondarySkills": [],
       "repairSkill": "price_discrimination",
       "commonError": "treats_all_price_differences_as_illegal",
       "feedback": "Price discrimination refers to price differences tied to willingness to pay rather than cost differences; it need not be perfect or automatically unlawful.",
-      "aHash": "7a31a0ac6c59c8b7b179356a91d70928cf708a45143079bce350c93597d7848d"
-    },
-    {
-      "id": 104,
-      "sourceGame": "strategyDesk",
-      "q": "A new group of buyers enters a market and wants the product at every price. What happens to market demand?",
-      "options": [
-        "It moves upward along the same curve",
-        "It shifts to the right",
-        "It shifts to the left",
-        "It becomes perfectly inelastic"
-      ],
-      "tag": "market_demand",
-      "type": "interpretation",
-      "objective": "LO6.1",
-      "difficulty": "medium",
-      "conceptCluster": "LO6.1_strategy_desk",
-      "primarySkill": "market_demand",
-      "secondarySkills": [],
-      "repairSkill": "market_demand",
-      "commonError": "confuses_demand_shift_with_quantity_change",
-      "feedback": "Additional buyers increase total quantity demanded at each price, shifting market demand to the right.",
-      "aHash": "25116a9ad383ea1eb825e8e395fa3914aa270d2d52f2704c7d00d82fe6a98014"
+      "aHash": "7a31a0ac6c59c8b7b179356a91d70928cf708a45143079bce350c93597d7848d",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 105,
@@ -2938,14 +2632,15 @@ window.questionBanks = {
       "tag": "optimal_pricing",
       "type": "calculation",
       "objective": "LO6.2",
-      "difficulty": "medium",
-      "conceptCluster": "LO6.2_strategy_desk",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_optimal_pricing",
       "primarySkill": "optimal_pricing",
       "secondarySkills": [],
       "repairSkill": "optimal_pricing",
       "commonError": "compares_revenue_without_incremental_cost",
       "feedback": "Incremental profit equals added revenue minus added variable cost: $9,000 − $6,500 = $2,500.",
-      "aHash": "5d67a89a442d678f3586d70e598be48a7d0551170f880dcf3a9bd3ee810b0bde"
+      "aHash": "5d67a89a442d678f3586d70e598be48a7d0551170f880dcf3a9bd3ee810b0bde",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 106,
@@ -2960,58 +2655,38 @@ window.questionBanks = {
       "tag": "price_discrimination",
       "type": "interpretation",
       "objective": "LO13.1",
-      "difficulty": "medium",
-      "conceptCluster": "LO13.1_strategy_desk",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_price_discrimination",
       "primarySkill": "price_discrimination",
       "secondarySkills": [],
       "repairSkill": "price_discrimination",
       "commonError": "reverses_markup_logic",
       "feedback": "A firm can generally charge a higher price to the group whose demand is less responsive to price.",
-      "aHash": "acfa84267cb7ec3158acc77994647a2fdb399b103876d79372d8584b504eab2d"
+      "aHash": "acfa84267cb7ec3158acc77994647a2fdb399b103876d79372d8584b504eab2d",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 107,
       "sourceGame": "strategyDesk",
       "q": "A manager wants to raise price because unit margin will increase. What must be checked before concluding profit will rise?",
       "options": [
-        "Whether fixed cost was paid last year",
-        "Whether competitors use the same accounting system",
-        "Whether the product has a memorable brand name",
+        "Whether competitors report the same accounting margin",
+        "Whether the price increase recovers sunk development cost",
+        "Whether the new price maximizes revenue per unit",
         "How much quantity demanded will fall"
       ],
       "tag": "optimal_pricing",
       "type": "strategy",
       "objective": "LO6.2",
-      "difficulty": "medium",
-      "conceptCluster": "LO6.2_strategy_desk",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_optimal_pricing",
       "primarySkill": "optimal_pricing",
       "secondarySkills": [],
       "repairSkill": "optimal_pricing",
       "commonError": "ignores_quantity_response_to_price",
       "feedback": "A higher unit margin can be offset by lost volume, so the demand response must be estimated.",
-      "aHash": "ea8d7913b1999bc55974e0609b4fb69269c37696072b839ece8ae034c93c8f67"
-    },
-    {
-      "id": 108,
-      "sourceGame": "strategyDesk",
-      "q": "A firm is considering discounts for a highly price-sensitive segment. What should it protect before launching the discount?",
-      "options": [
-        "Sales to customers already willing to pay the regular price",
-        "The accounting value of sunk fixed costs",
-        "The rival’s ability to copy the firm’s logo",
-        "The number of employees in the payroll department before and after the discount"
-      ],
-      "tag": "price_discrimination",
-      "type": "strategy",
-      "objective": "LO13.1",
-      "difficulty": "medium",
-      "conceptCluster": "LO13.1_strategy_desk",
-      "primarySkill": "price_discrimination",
-      "secondarySkills": [],
-      "repairSkill": "price_discrimination",
-      "commonError": "ignores_cannibalization",
-      "feedback": "The discount should generate incremental business without unnecessarily cannibalizing full-price sales.",
-      "aHash": "8c8a4771b021385aa43a60e977baed02476f2a87be72e184079b1dcf2e450333"
+      "aHash": "ea8d7913b1999bc55974e0609b4fb69269c37696072b839ece8ae034c93c8f67",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 109,
@@ -3026,102 +2701,15 @@ window.questionBanks = {
       "tag": "price_discrimination",
       "type": "calculation",
       "objective": "LO13.1",
-      "difficulty": "medium",
-      "conceptCluster": "LO13.1_strategy_desk",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_price_discrimination",
       "primarySkill": "price_discrimination",
       "secondarySkills": [],
       "repairSkill": "price_discrimination",
       "commonError": "reports_total_revenue_instead_of_gain",
       "feedback": "Separate pricing produces $1,580, which is $80 more than the $1,500 uniform-price revenue.",
-      "aHash": "c35e030d43dd5689c26066121105c93bea449aa09fa4bd30026c23f80c227cc5"
-    },
-    {
-      "id": 110,
-      "sourceGame": "strategyDesk",
-      "q": "What makes price discrimination direct?",
-      "options": [
-        "The seller combines several goods into one package",
-        "The seller charges only according to units purchased",
-        "The seller identifies the customer’s segment before setting the price",
-        "The customer chooses freely from product versions without revealing any verified identity"
-      ],
-      "tag": "direct_price_discrimination",
-      "type": "definition",
-      "objective": "LO13.2",
-      "difficulty": "medium",
-      "conceptCluster": "LO13.2_strategy_desk",
-      "primarySkill": "direct_price_discrimination",
-      "secondarySkills": [],
-      "repairSkill": "direct_price_discrimination",
-      "commonError": "confuses_direct_with_self_selection",
-      "feedback": "Direct price discrimination uses observable or verified customer characteristics to assign a price.",
-      "aHash": "2d2bf417eb5e48bd64a8ec085895ee5dfe3f5e01abf25aeb6d937b9c436359d9"
-    },
-    {
-      "id": 111,
-      "sourceGame": "strategyDesk",
-      "q": "A software firm verifies university enrollment before offering a discounted license. This is",
-      "options": [
-        "uniform pricing",
-        "direct price discrimination",
-        "a form of pure bundling that combines several software products",
-        "metering"
-      ],
-      "tag": "direct_price_discrimination",
-      "type": "application",
-      "objective": "LO13.2",
-      "difficulty": "medium",
-      "conceptCluster": "LO13.2_strategy_desk",
-      "primarySkill": "direct_price_discrimination",
-      "secondarySkills": [],
-      "repairSkill": "direct_price_discrimination",
-      "commonError": "confuses_verified_discount_with_indirect_pricing",
-      "feedback": "The firm identifies a student segment and assigns that group a lower price.",
-      "aHash": "f9e7b95d9cc2fcfdcf62d35715cf5c74f0663916af1b06d2bdd6c12fce04e7bb"
-    },
-    {
-      "id": 112,
-      "sourceGame": "strategyDesk",
-      "q": "Price falls from $20 to $18 while quantity demanded rises from 100 to 120. Using the midpoint formula, the absolute price elasticity is approximately",
-      "options": [
-        "1.73, so demand is elastic",
-        "0.58, so demand is inelastic",
-        "1.00, so demand is unit elastic",
-        "2.00, so demand is perfectly elastic"
-      ],
-      "tag": "price_elasticity",
-      "type": "calculation",
-      "objective": "LO6.3",
-      "difficulty": "medium",
-      "conceptCluster": "LO6.3_strategy_desk",
-      "primarySkill": "price_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "price_elasticity",
-      "commonError": "uses_initial_values_or_reverses_the_ratio",
-      "feedback": "The midpoint percentage changes are about 18.18% for quantity and 10.53% for price, giving elasticity near 1.73.",
-      "aHash": "a57fe86bb791d43f6b88840dbe5009c46a9c29d0d8ac44e4b995ddd1324cc695"
-    },
-    {
-      "id": 113,
-      "sourceGame": "strategyDesk",
-      "q": "Demand for a product is elastic. Holding other factors constant, a modest price decrease should cause total revenue to",
-      "options": [
-        "decrease because the lower price dominates",
-        "increase because quantity rises by a larger percentage",
-        "remain unchanged because elasticity affects only quantity",
-        "equal total variable cost"
-      ],
-      "tag": "price_elasticity",
-      "type": "interpretation",
-      "objective": "LO6.3",
-      "difficulty": "medium",
-      "conceptCluster": "LO6.3_strategy_desk",
-      "primarySkill": "price_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "price_elasticity",
-      "commonError": "reverses_elasticity_and_revenue_relationship",
-      "feedback": "With elastic demand, the percentage increase in quantity exceeds the percentage decrease in price, so revenue rises.",
-      "aHash": "8b530dd0d5aca56ce9fa91a8e72df1176a55113f846ecc6d7233150e8110ba91"
+      "aHash": "c35e030d43dd5689c26066121105c93bea449aa09fa4bd30026c23f80c227cc5",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 114,
@@ -3136,80 +2724,15 @@ window.questionBanks = {
       "tag": "direct_price_discrimination",
       "type": "trap",
       "objective": "LO13.2",
-      "difficulty": "medium",
-      "conceptCluster": "LO13.2_strategy_desk",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_direct_price_discrimination",
       "primarySkill": "direct_price_discrimination",
       "secondarySkills": [],
       "repairSkill": "direct_price_discrimination",
       "commonError": "confuses_versioning_with_direct_segmentation",
       "feedback": "Version choice relies on self-selection, making it indirect rather than direct price discrimination.",
-      "aHash": "6704d5e4b49835961c7d1ab0f5c667a09b3ab829217b92fdd01d49fb2bad239b"
-    },
-    {
-      "id": 115,
-      "sourceGame": "strategyDesk",
-      "q": "The price of Product B rises 10%, and demand for Product A rises 5%. What is the cross-price elasticity, and what relationship does it indicate?",
-      "options": [
-        "−0.5; complements",
-        "2.0; substitutes",
-        "0.5; substitutes",
-        "−2.0; complements"
-      ],
-      "tag": "forecasting_elasticities",
-      "type": "calculation",
-      "objective": "LO6.4",
-      "difficulty": "medium",
-      "conceptCluster": "LO6.4_strategy_desk",
-      "primarySkill": "forecasting_elasticities",
-      "secondarySkills": [],
-      "repairSkill": "forecasting_elasticities",
-      "commonError": "reverses_sign_or_elasticity_ratio",
-      "feedback": "Cross-price elasticity is 5% ÷ 10% = 0.5. The positive sign indicates substitutes.",
-      "aHash": "79e9644e0cb68b5ad95e53e9e5c0557af4073b273ed521b8c5ee91f1dd07d8b6"
-    },
-    {
-      "id": 116,
-      "sourceGame": "strategyDesk",
-      "q": "Advertising spending rises 20% and quantity demanded rises 8%. The advertising elasticity of demand is",
-      "options": [
-        "2.50",
-        "1.60",
-        "0.80",
-        "0.40"
-      ],
-      "tag": "forecasting_elasticities",
-      "type": "calculation",
-      "objective": "LO6.4",
-      "difficulty": "medium",
-      "conceptCluster": "LO6.4_strategy_desk",
-      "primarySkill": "forecasting_elasticities",
-      "secondarySkills": [],
-      "repairSkill": "forecasting_elasticities",
-      "commonError": "divides_advertising_change_by_quantity_change",
-      "feedback": "Advertising elasticity equals the percentage change in quantity divided by the percentage change in advertising: 8% ÷ 20% = 0.40.",
-      "aHash": "9e812e813ab439de91dbfbaa420fe556dcea60505162dc1d10aaad3289d3be1c"
-    },
-    {
-      "id": 117,
-      "sourceGame": "strategyDesk",
-      "q": "A firm identifies two segments but cannot verify who belongs to either group. What is the main weakness in a direct-discrimination plan?",
-      "options": [
-        "The firm will necessarily sell too much capacity",
-        "Marginal revenue will always become negative",
-        "The products will automatically become complements",
-        "Customers can claim the lower-price identity"
-      ],
-      "tag": "direct_price_discrimination",
-      "type": "strategy",
-      "objective": "LO13.2",
-      "difficulty": "medium",
-      "conceptCluster": "LO13.2_strategy_desk",
-      "primarySkill": "direct_price_discrimination",
-      "secondarySkills": [],
-      "repairSkill": "direct_price_discrimination",
-      "commonError": "assumes_unverified_segments_are_enforceable",
-      "feedback": "Direct discrimination requires credible classification; otherwise high-value customers can pose as low-value buyers.",
-      "aHash": "a8bc02e20597aed5749df310fffaff3e293a7b188710a82404463bb72480af0d"
+      "aHash": "6704d5e4b49835961c7d1ab0f5c667a09b3ab829217b92fdd01d49fb2bad239b",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 118,
@@ -3224,14 +2747,15 @@ window.questionBanks = {
       "tag": "direct_price_discrimination",
       "type": "calculation",
       "objective": "LO13.2",
-      "difficulty": "medium",
-      "conceptCluster": "LO13.2_strategy_desk",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_direct_price_discrimination",
       "primarySkill": "direct_price_discrimination",
       "secondarySkills": [],
       "repairSkill": "direct_price_discrimination",
       "commonError": "calculates_only_one_segment",
       "feedback": "Business revenue is $6,000 and student revenue is $6,000, for total revenue of $12,000.",
-      "aHash": "b08622c3255596a642de67b20552046a35198df5775dd4042eb6b81dc1185d7a"
+      "aHash": "b08622c3255596a642de67b20552046a35198df5775dd4042eb6b81dc1185d7a",
+      "canonicalDifficulty": "easy"
     },
     {
       "id": 119,
@@ -3246,58 +2770,868 @@ window.questionBanks = {
       "tag": "direct_price_discrimination",
       "type": "application",
       "objective": "LO13.2",
-      "difficulty": "medium",
-      "conceptCluster": "LO13.2_strategy_desk",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_direct_price_discrimination",
       "primarySkill": "direct_price_discrimination",
       "secondarySkills": [],
       "repairSkill": "direct_price_discrimination",
       "commonError": "fails_to_verify_geographic_segment",
       "feedback": "Residence verification connects the lower price to an observable customer category.",
-      "aHash": "03397c9e8768cd5e72a13b51e0467539c062d06575c9659ee9436d8c4e4ec1e2"
+      "aHash": "03397c9e8768cd5e72a13b51e0467539c062d06575c9659ee9436d8c4e4ec1e2",
+      "canonicalDifficulty": "easy"
     },
     {
-      "id": 120,
+      "id": 124,
       "sourceGame": "strategyDesk",
-      "q": "Why must a firm prevent arbitrage when using direct price discrimination?",
+      "q": "Which action would make arbitrage easier rather than harder?",
       "options": [
-        "Low-price buyers could resell to high-price buyers",
-        "High-price buyers could increase the firm’s capacity",
-        "The firm would be forced to bundle every product",
-        "Marginal cost would become equal to fixed cost"
+        "Permit anonymous transfer of discounted tickets",
+        "Verify eligibility before sale",
+        "Limit each discount to one account",
+        "Require the named buyer to use the service and prohibit every transfer to another person"
       ],
       "tag": "arbitrage_prevention",
-      "type": "definition",
+      "type": "trap",
       "objective": "LO13.3",
-      "difficulty": "medium",
-      "conceptCluster": "LO13.3_strategy_desk",
-      "primarySkill": "arbitrage_prevention",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_arbitrage_control",
+      "primarySkill": "arbitrage_control",
       "secondarySkills": [],
-      "repairSkill": "arbitrage_prevention",
-      "commonError": "ignores_resale_between_segments",
-      "feedback": "Resale undermines segmentation by allowing the discounted product to reach customers assigned the higher price.",
-      "aHash": "2535ab475fb4c354f7f988e713c77ea73a5280f45646f6de59529afe548258c8"
+      "repairSkill": "arbitrage_control",
+      "commonError": "selects_policy_that_strengthens_arbitrage",
+      "feedback": "Anonymous transfer lets buyers move discounted access into the higher-price segment.",
+      "aHash": "f133cca448fc40ea98ff0801dc739310993b7ccb9aae5ba8713c282e3fee5947",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 127,
+      "sourceGame": "strategyDesk",
+      "q": "Why are services often easier to price discriminate than easily shipped products?",
+      "options": [
+        "Services always have identical production costs across buyers",
+        "Many services cannot be resold after use",
+        "Service customers necessarily have equal willingness to pay",
+        "Service consumption can always be transferred between users"
+      ],
+      "tag": "arbitrage_prevention",
+      "type": "interpretation",
+      "objective": "LO13.3",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_arbitrage_control",
+      "primarySkill": "arbitrage_control",
+      "secondarySkills": [],
+      "repairSkill": "arbitrage_control",
+      "commonError": "assumes_services_have_no_arbitrage_advantage",
+      "feedback": "Personal consumption and nontransferability can make arbitrage harder for services.",
+      "aHash": "a9d1dd6c03b93f68346498fc84ac7cd218ffd5ac9fa6ed764d335932a57c0ded",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 131,
+      "sourceGame": "strategyDesk",
+      "q": "A wholesaler sells the same grade of product to two competing retailers at different prices. Which law may be relevant?",
+      "options": [
+        "A rule automatically banning every quantity discount",
+        "The Robinson-Patman Act",
+        "A rule requiring uniform prices for all services",
+        "An automatic prohibition on different retail resale prices"
+      ],
+      "tag": "robinson_patman",
+      "type": "application",
+      "objective": "LO13.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_robinson_patman",
+      "primarySkill": "robinson_patman",
+      "secondarySkills": [],
+      "repairSkill": "robinson_patman",
+      "commonError": "fails_to_recognize_competing_purchasers",
+      "feedback": "Price differences for like commodities sold to competing buyers can raise Robinson-Patman concerns.",
+      "aHash": "21bab35f821f162fa0e80220937fbc0694fe719ec9e0307d07adcda9a9c1aa30",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 132,
+      "sourceGame": "strategyDesk",
+      "q": "Which statement is most accurate about the Robinson-Patman Act?",
+      "options": [
+        "Not every price difference is prohibited",
+        "Every discount to a large buyer is automatically illegal",
+        "The Act requires sellers to ignore cost savings",
+        "The Act applies only when consumers buy services"
+      ],
+      "tag": "robinson_patman",
+      "type": "trap",
+      "objective": "LO13.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_robinson_patman",
+      "primarySkill": "robinson_patman",
+      "secondarySkills": [],
+      "repairSkill": "robinson_patman",
+      "commonError": "treats_all_discounts_as_illegal",
+      "feedback": "Defenses and factual requirements matter; a price difference alone does not establish a violation.",
+      "aHash": "7734b24fe73c615531adfcd8fe422bd10da68312632b3cf4f50833c2b7e05ef2",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 134,
+      "sourceGame": "strategyDesk",
+      "q": "A supplier gives a large buyer a lower price because serving that buyer costs substantially less per unit. Which defense is most relevant?",
+      "options": [
+        "A justification based solely on the buyer’s bargaining power",
+        "Meeting a competitor’s price without evidence of any competing offer",
+        "Cost justification",
+        "A claim that any large order automatically permits any discount"
+      ],
+      "tag": "robinson_patman",
+      "type": "application",
+      "objective": "LO13.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_robinson_patman",
+      "primarySkill": "robinson_patman",
+      "secondarySkills": [],
+      "repairSkill": "robinson_patman",
+      "commonError": "ignores_cost_justification",
+      "feedback": "A seller may defend a price difference by showing that genuine cost savings justify it.",
+      "aHash": "488d37993e017bb0875f0f0ff9d33de3d7ce4fd1636e972ee1334c897abecb66",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 136,
+      "sourceGame": "strategyDesk",
+      "q": "Why does the phrase “like grade and quality” matter under the Robinson-Patman Act?",
+      "options": [
+        "The compared products must be sufficiently similar",
+        "The buyers must have identical incomes",
+        "The seller must earn the same profit on every unit",
+        "The products must be sold in the same building"
+      ],
+      "tag": "robinson_patman",
+      "type": "interpretation",
+      "objective": "LO13.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_robinson_patman",
+      "primarySkill": "robinson_patman",
+      "secondarySkills": [],
+      "repairSkill": "robinson_patman",
+      "commonError": "compares_noncomparable_products",
+      "feedback": "The Act compares price treatment for commodities of like grade and quality, not plainly different products.",
+      "aHash": "f2208eb130c304a13aac72c6313e8db52303f6563441500417ce0fbd33167963",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 143,
+      "sourceGame": "strategyDesk",
+      "q": "A restaurant charges more for a steak than for a salad because the steak costs more to prepare. Is that price discrimination?",
+      "options": [
+        "No; price discrimination occurs only in airlines",
+        "Not necessarily; the price difference may reflect cost",
+        "Yes; any two different prices are discrimination",
+        "Yes; restaurants cannot charge different menu prices when ingredients have different costs"
+      ],
+      "tag": "price_discrimination_cases",
+      "type": "trap",
+      "objective": "LO13.5",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_price_discrimination_cases",
+      "primarySkill": "price_discrimination_cases",
+      "secondarySkills": [],
+      "repairSkill": "price_discrimination_cases",
+      "commonError": "labels_cost_based_price_difference_as_discrimination",
+      "feedback": "A price difference caused by different production costs is not necessarily price discrimination.",
+      "aHash": "dab4c74b43fd01758ab554fdb3ba21d18d18bc67155e2c72f92c6f5eab8aa7ae",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 144,
+      "sourceGame": "strategyDesk",
+      "q": "A retailer displays a “regular price” that was rarely charged to make a discount look larger. What is the central problem?",
+      "options": [
+        "The reference price guarantees additional capacity",
+        "The anchor necessarily reveals the seller’s marginal cost",
+        "The display measures each buyer’s actual willingness to pay",
+        "The reference price may mislead buyers"
+      ],
+      "tag": "behavioral_pricing",
+      "type": "trap",
+      "objective": "LO12.6",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_behavioral_pricing",
+      "primarySkill": "behavioral_pricing",
+      "secondarySkills": [],
+      "repairSkill": "behavioral_pricing",
+      "commonError": "treats_any_reference_price_as_legitimate",
+      "feedback": "Behavioral pricing can use reference points, but a fictitious regular price can mislead customers.",
+      "aHash": "c51ea0c97fd25e0befa87269e104d56b95b2ee44fc33088776287c94d431d68b",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 151,
+      "sourceGame": "strategyDesk",
+      "q": "A car wash deliberately varies package features and price-cost margins to sort buyers by willingness to pay. All customers can choose basic, deluxe, or premium. Which method is this?",
+      "options": [
+        "a legal ban on segmentation",
+        "indirect price discrimination",
+        "direct discrimination by age verified with government-issued identification",
+        "uniform pricing"
+      ],
+      "tag": "indirect_price_discrimination",
+      "type": "application",
+      "objective": "LO14.1",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_indirect_price_discrimination",
+      "primarySkill": "indirect_price_discrimination",
+      "secondarySkills": [],
+      "repairSkill": "indirect_price_discrimination",
+      "commonError": "confuses_menu_pricing_with_uniform_price",
+      "feedback": "All customers face the same menu, but they sort themselves according to value and willingness to pay.",
+      "aHash": "432e07b02f110178647f5b19e84fc95c7dfb258de441c55c79ac38df7b4b41a3",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 156,
+      "sourceGame": "strategyDesk",
+      "q": "A firm offers two versions, but nearly every buyer chooses the cheaper one. What should the firm examine first?",
+      "options": [
+        "Whether the versions create enough separation in value",
+        "Whether allocated fixed costs are equal across the versions",
+        "Whether the firm has identical unit sales in both versions",
+        "Whether the cheaper version maximizes revenue by itself"
+      ],
+      "tag": "indirect_price_discrimination",
+      "type": "strategy",
+      "objective": "LO14.1",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_indirect_price_discrimination",
+      "primarySkill": "indirect_price_discrimination",
+      "secondarySkills": [],
+      "repairSkill": "indirect_price_discrimination",
+      "commonError": "ignores_weak_version_differentiation",
+      "feedback": "The menu must make the premium option sufficiently attractive to high-value customers.",
+      "aHash": "cd4bf1fc5ef1cf7352020515dac392dd5daace76b98dd2ce00bcd3d5baf9d65c",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 158,
+      "sourceGame": "strategyDesk",
+      "q": "A gym offers a monthly pass and a pay-per-visit option. The menu can sort customers mainly by",
+      "options": [
+        "each customer’s verified age alone",
+        "the date the gym was constructed",
+        "expected usage",
+        "the gym’s allocated fixed cost per member"
+      ],
+      "tag": "indirect_price_discrimination",
+      "type": "application",
+      "objective": "LO14.1",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_indirect_price_discrimination",
+      "primarySkill": "indirect_price_discrimination",
+      "secondarySkills": [],
+      "repairSkill": "indirect_price_discrimination",
+      "commonError": "ignores_usage_based_self_selection",
+      "feedback": "Frequent users may prefer the pass, while occasional users choose per-visit pricing.",
+      "aHash": "a28443d37d36465b96008c9736a4a455015a85a650db6f6a2b69522f4a5818d6",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 171,
+      "sourceGame": "strategyDesk",
+      "q": "Two otherwise identical service packages differ in response speed and price. Which buyers are most likely to choose the premium package when their value of faster response exceeds its price premium?",
+      "options": [
+        "Only customers with the lowest usage",
+        "Customers who place high value on speed",
+        "Customers who value speed least",
+        "Every customer regardless of preferences"
+      ],
+      "tag": "consumer_surplus_extraction",
+      "type": "application",
+      "objective": "LO14.3",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_consumer_surplus_extraction",
+      "primarySkill": "consumer_surplus_extraction",
+      "secondarySkills": [],
+      "repairSkill": "consumer_surplus_extraction",
+      "commonError": "reverses_customer_sorting",
+      "feedback": "The premium feature attracts customers whose willingness to pay for speed is high.",
+      "aHash": "e82dd734eacdf444da7fa031f471de1eddb1e0c95a46ab5dde61c16aeb391686",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 173,
+      "sourceGame": "strategyDesk",
+      "q": "Which menu is most likely to fail at self-selection?",
+      "options": [
+        "The premium plan adds features valued by high-WTP users and offers priority service",
+        "The basic plan removes features premium users need",
+        "The options create clear price-feature tradeoffs",
+        "The premium plan costs more but offers no meaningful added value"
+      ],
+      "tag": "consumer_surplus_extraction",
+      "type": "trap",
+      "objective": "LO14.3",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_consumer_surplus_extraction",
+      "primarySkill": "consumer_surplus_extraction",
+      "secondarySkills": [],
+      "repairSkill": "consumer_surplus_extraction",
+      "commonError": "ignores_incentive_for_premium_choice",
+      "feedback": "Without a valued difference, high-value customers have no reason to choose the premium plan.",
+      "aHash": "9ad43f5526e3790baf25347c5f3a857e2281157707867e0b072197769b479b76",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 176,
+      "sourceGame": "strategyDesk",
+      "q": "A two-part tariff charges a $30 membership fee plus $4 per unit. What does a customer pay for 8 units?",
+      "options": [
+        "$62",
+        "$32",
+        "$34",
+        "$64"
+      ],
+      "tag": "consumer_surplus_extraction",
+      "type": "calculation",
+      "objective": "LO14.3",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_consumer_surplus_extraction",
+      "primarySkill": "consumer_surplus_extraction",
+      "secondarySkills": [],
+      "repairSkill": "consumer_surplus_extraction",
+      "commonError": "omits_fixed_fee_or_usage_charge",
+      "feedback": "Total payment is $30 + ($4 × 8) = $62.",
+      "aHash": "2ec501df47837277002e73eeec653980a7bd04e1e7d9817ceb25de460e19c488",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 177,
+      "sourceGame": "strategyDesk",
+      "q": "A firm threatens a lockout but would lose far more from carrying it out than from accepting the union’s offer. The threat is likely",
+      "options": [
+        "credible because it sounds costly",
+        "credible because it was announced first",
+        "irrelevant because bargaining has no strategy",
+        "not credible; carrying it out is too costly"
+      ],
+      "tag": "strategic_bargaining",
+      "type": "trap",
+      "objective": "LO16.1",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_strategic_bargaining",
+      "primarySkill": "strategic_bargaining",
+      "secondarySkills": [],
+      "repairSkill": "strategic_bargaining",
+      "commonError": "equates_announced_threat_with_credible_threat",
+      "feedback": "A threat is weak when the party would not rationally carry it out after the decision point is reached.",
+      "aHash": "df9fd92ae1e33f469a4fcd5583accf4174329e5b7476f05aa6a12a61da54899d",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 180,
+      "sourceGame": "strategyDesk",
+      "q": "Pure bundling means the seller",
+      "options": [
+        "offers the products only as a package",
+        "offers each product separately and as a package",
+        "charges a fixed fee plus a usage price",
+        "requires proof of customer identity"
+      ],
+      "tag": "bundling",
+      "type": "definition",
+      "objective": "LO14.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_bundling",
+      "primarySkill": "bundling",
+      "secondarySkills": [],
+      "repairSkill": "bundling",
+      "commonError": "confuses_pure_and_mixed_bundling",
+      "feedback": "Under pure bundling, customers cannot purchase the component products separately.",
+      "aHash": "2f4e8f0095e0d540e37b8fd2739cac62f3d579e92603f191c923ef65654bb6f1",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 229,
+      "sourceGame": "strategyDesk",
+      "q": "A firm owns Brands A and B, which are substitutes. Raising A’s price increases A’s contribution by $30,000 and shifts enough buyers to B to raise B’s contribution by $12,000. What is the combined effect?",
+      "options": [
+        "Total contribution rises by $18,000.",
+        "Total contribution falls by $12,000.",
+        "Total contribution rises by $42,000.",
+        "Total contribution rises by $30,000 only."
+      ],
+      "tag": "substitute_pricing",
+      "type": "integration",
+      "objective": "LO12.1",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_substitute_pricing",
+      "primarySkill": "substitute_pricing",
+      "secondarySkills": [],
+      "repairSkill": "substitute_pricing",
+      "commonError": "evaluates_only_the_product_whose_price_changed",
+      "feedback": "Under common ownership, both effects count. The combined gain is $30,000 + $12,000 = $42,000.",
+      "aHash": "81657c51be23f9b6de7f7bdc0bda423be30f04946d06a4d887a1d9675e2deb8d",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 267,
+      "sourceGame": "strategyDesk",
+      "q": "A deadline is strategically useful to a negotiator only if",
+      "options": [
+        "the deadline is announced loudly",
+        "both parties ignore the passage of time",
+        "the deadline can be extended without cost whenever convenient",
+        "the deadline changes the cost or feasibility of delaying agreement"
+      ],
+      "tag": "strategic_bargaining",
+      "type": "application",
+      "objective": "LO16.1",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_strategic_bargaining",
+      "primarySkill": "strategic_bargaining",
+      "secondarySkills": [],
+      "repairSkill": "strategic_bargaining",
+      "commonError": "treats_arbitrary_deadline_as_commitment",
+      "feedback": "A deadline matters when delay has real consequences and the deadline is credible.",
+      "aHash": "1e6448e555eb8653379063c5abf16b84093e7c25f9adefb0a3187d65c357c0d9",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 272,
+      "sourceGame": "strategyDesk",
+      "q": "A store charges $100 but offers a $25 rebate requiring paperwork. Of 1,000 buyers, 300 price-sensitive buyers redeem it. Ignoring processing cost, how much revenue does the rebate sacrifice relative to charging everyone $100?",
+      "options": [
+        "$2,500",
+        "$25,000",
+        "$7,500",
+        "$75,000"
+      ],
+      "tag": "indirect_price_discrimination",
+      "type": "calculation",
+      "objective": "LO14.1",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_indirect_price_discrimination",
+      "primarySkill": "indirect_price_discrimination",
+      "secondarySkills": [],
+      "repairSkill": "indirect_price_discrimination",
+      "commonError": "applies_rebate_to_nonredeemers",
+      "feedback": "Only 300 buyers receive the $25 reduction, so sacrificed revenue is 300 × $25 = $7,500.",
+      "aHash": "d0b3c35e3c943fc734588b5a78810817c8627f61c56452629053c0396d9c23e5",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 273,
+      "sourceGame": "strategyDesk",
+      "q": "A firm cannot observe willingness to pay and wants customers to self-select. Which menu is most likely to separate high- and low-value buyers?",
+      "options": [
+        "Two identical products at different prices with no purchase restriction",
+        "One price offered secretly to every customer after checkout",
+        "A premium option that is worse on every attribute and costs more",
+        "A premium option with valuable convenience and a cheaper option carrying a meaningful restriction"
+      ],
+      "tag": "indirect_price_discrimination",
+      "type": "strategy",
+      "objective": "LO14.1",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_indirect_price_discrimination",
+      "primarySkill": "indirect_price_discrimination",
+      "secondarySkills": [],
+      "repairSkill": "indirect_price_discrimination",
+      "commonError": "offers_no_attribute_that_supports_self_selection",
+      "feedback": "Indirect discrimination needs a meaningful tradeoff so the groups voluntarily choose different options.",
+      "aHash": "f969a945af79d2df536343ed0e620af0116699141fe33953dec18fa2b96dc98c",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 275,
+      "sourceGame": "strategyDesk",
+      "q": "The nonstrategic view of bargaining begins by identifying",
+      "options": [
+        "the order in which threats are announced",
+        "the first mover’s dominant strategy",
+        "the number of branches in a game tree",
+        "each party’s agreement value and disagreement value"
+      ],
+      "tag": "nonstrategic_bargaining",
+      "type": "definition",
+      "objective": "LO16.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_nonstrategic_bargaining",
+      "primarySkill": "nonstrategic_bargaining",
+      "secondarySkills": [],
+      "repairSkill": "nonstrategic_bargaining",
+      "commonError": "uses_tactical_moves_in_simple_surplus_analysis",
+      "feedback": "The gains available from agreement are measured relative to what each party gets without agreement.",
+      "aHash": "bea9dc53a741dc8a81f6f53e220bfc398706061dfc4d84f853272fce6de6ea3f",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 280,
+      "sourceGame": "strategyDesk",
+      "q": "A firm can replace striking workers with machinery at low cost. In a nonstrategic bargaining analysis, this change",
+      "options": [
+        "raises the firm’s disagreement value",
+        "raises the union’s agreement value",
+        "eliminates all bargaining surplus",
+        "lowers the firm’s outside option"
+      ],
+      "tag": "nonstrategic_bargaining",
+      "type": "application",
+      "objective": "LO16.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_nonstrategic_bargaining",
+      "primarySkill": "nonstrategic_bargaining",
+      "secondarySkills": [],
+      "repairSkill": "nonstrategic_bargaining",
+      "commonError": "assigns_outside_option_to_wrong_party",
+      "feedback": "A workable production alternative improves the firm’s payoff if negotiations fail.",
+      "aHash": "df816c635cf399ec62c27aee952277659c29b93c810073bccdd43be8a6326420",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 281,
+      "sourceGame": "strategyDesk",
+      "q": "Holding the employer’s need for these workers and all agreement values fixed, workers lose alternative job opportunities. How does the lower fallback payoff affect their bargaining position?",
+      "options": [
+        "It strengthens because specialization guarantees a higher outside wage.",
+        "It weakens because the union’s disagreement value is lower.",
+        "It remains unchanged because outside options do not matter.",
+        "It becomes identical to the firm’s position."
+      ],
+      "tag": "nonstrategic_bargaining",
+      "type": "application",
+      "objective": "LO16.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_nonstrategic_bargaining",
+      "primarySkill": "nonstrategic_bargaining",
+      "secondarySkills": [],
+      "repairSkill": "nonstrategic_bargaining",
+      "commonError": "assumes_specialization_always_strengthens_union",
+      "feedback": "Few outside opportunities make a work stoppage more costly to union members.",
+      "aHash": "103f0e8ed5d3e7bf4b88783ba37b8215b2b28901721682b0771b4f3c99264be7",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 286,
+      "sourceGame": "strategyDesk",
+      "q": "Why do outside options affect the terms of agreement?",
+      "options": [
+        "They determine only the size of sunk costs.",
+        "They eliminate the need to calculate surplus.",
+        "They determine the minimum payoff each party must receive to prefer agreement.",
+        "They force both sides to receive identical payoffs."
+      ],
+      "tag": "nonstrategic_bargaining",
+      "type": "interpretation",
+      "objective": "LO16.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_nonstrategic_bargaining",
+      "primarySkill": "nonstrategic_bargaining",
+      "secondarySkills": [],
+      "repairSkill": "nonstrategic_bargaining",
+      "commonError": "ignores_participation_constraint",
+      "feedback": "An agreement must leave each party at least as well off as disagreement.",
+      "aHash": "39e5be7206456f990ef3cc60baec1e1fe59805cac8d90956df68055e5f9905e5",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 309,
+      "sourceGame": "strategyDesk",
+      "q": "Income rises 4% and demand for a service rises 1%. Which classification fits best?",
+      "options": [
+        "Inferior service",
+        "Normal service with low income elasticity",
+        "Income-elastic luxury service",
+        "Perfectly income-elastic service at all income levels"
+      ],
+      "tag": "forecasting_elasticities",
+      "type": "interpretation",
+      "objective": "LO6.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_forecasting_elasticities",
+      "primarySkill": "forecasting_elasticities",
+      "secondarySkills": [],
+      "repairSkill": "forecasting_elasticities",
+      "commonError": "uses_positive_sign_to_claim_luxury",
+      "feedback": "Income elasticity is 0.25: positive but below one, so the service is a normal, income-inelastic good.",
+      "aHash": "301b71843bd9829918d5a9d50643ffd3e1765b17abd8f1f61f5a5963a9f32fda",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 315,
+      "sourceGame": "strategyDesk",
+      "q": "A discount on Product A adds $52,000 of contribution on A but destroys $67,000 of contribution on an owned substitute. What happens to total portfolio contribution?",
+      "options": [
+        "It rises by $15,000",
+        "It rises by $52,000",
+        "It falls by $67,000",
+        "It falls by $15,000"
+      ],
+      "tag": "substitute_pricing",
+      "type": "calculation",
+      "objective": "LO12.1",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_substitute_pricing",
+      "primarySkill": "substitute_pricing",
+      "secondarySkills": [],
+      "repairSkill": "substitute_pricing",
+      "commonError": "ignores_cannibalization",
+      "feedback": "The portfolio effect is $52,000 − $67,000 = −$15,000.",
+      "aHash": "651f381397558fd3547d8abba933b4a1cdad99f1f0192d110622cbdaa68eae0c",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 329,
+      "sourceGame": "strategyDesk",
+      "q": "Which use of reference pricing is most defensible?",
+      "options": [
+        "Claim a fictitious regular price that was never actually charged",
+        "Show a real prior price and an accurate current discount",
+        "Hide mandatory charges until the final purchase screen",
+        "Use a false competitor price to manufacture urgency"
+      ],
+      "tag": "behavioral_pricing",
+      "type": "trap",
+      "objective": "LO12.6",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_behavioral_pricing",
+      "primarySkill": "behavioral_pricing",
+      "secondarySkills": [],
+      "repairSkill": "behavioral_pricing",
+      "commonError": "treats_any_anchor_as_legitimate",
+      "feedback": "Reference prices should be truthful and based on real, supportable comparisons.",
+      "aHash": "0111642783cedde60ae0deec331f09da810db4cd5dbb0657a14a4723e4b434f1",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 339,
+      "sourceGame": "strategyDesk",
+      "q": "A wholesaler lowers price to one retailer to meet a verified competitor's offer. Which defense is most relevant?",
+      "options": [
+        "A claim that buyer bargaining power alone is a statutory defense",
+        "Cost justification based solely on order size without documented savings",
+        "A claim that product versioning always permits the difference",
+        "Meeting competition"
+      ],
+      "tag": "robinson_patman",
+      "type": "definition",
+      "objective": "LO13.4",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_robinson_patman",
+      "primarySkill": "robinson_patman",
+      "secondarySkills": [],
+      "repairSkill": "robinson_patman",
+      "commonError": "confuses_cost_justification_and_meeting_competition",
+      "feedback": "A seller may defend a price difference made in good faith to meet a competitor's price.",
+      "aHash": "41103224c1ea5227373d56fb3a8b8d085cf3e90a4225b224781ed9e203d4a30e",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 350,
+      "sourceGame": "strategyDesk",
+      "q": "A printer costs $100 and cartridges cost $30 with $18 contribution each. A buyer purchases four cartridges. What total contribution does the firm earn if printer contribution is $5?",
+      "options": [
+        "$23",
+        "$72",
+        "$77",
+        "$125"
+      ],
+      "tag": "cannibalization_control",
+      "type": "calculation",
+      "objective": "LO14.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_versioning_and_metering",
+      "primarySkill": "versioning_and_metering",
+      "secondarySkills": [],
+      "repairSkill": "versioning_and_metering",
+      "commonError": "uses_price_instead_of_contribution",
+      "feedback": "Total contribution is $5 + 4×$18 = $77.",
+      "aHash": "baa88642ef65195487a0bea4d0d60aef82960a230fb1543034b69e2cb2eec830",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 354,
+      "sourceGame": "strategyDesk",
+      "q": "Why can a menu with more options lower profit?",
+      "options": [
+        "Every new option creates only new demand and never diverts buyers",
+        "Extra versions always improve separation without affecting old choices",
+        "Extra versions can create cannibalization and poor sorting",
+        "Customers choose versions by posted price without considering features"
+      ],
+      "tag": "self_selection_pricing",
+      "type": "interpretation",
+      "objective": "LO14.3",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_consumer_surplus_extraction",
+      "primarySkill": "consumer_surplus_extraction",
+      "secondarySkills": [],
+      "repairSkill": "consumer_surplus_extraction",
+      "commonError": "assumes_more_choices_always_help",
+      "feedback": "Additional versions can draw high-value customers into cheaper choices or weaken the intended sorting.",
+      "aHash": "8d0af5004d2f9b660169c6526dd58817c325c0db1c3d60c6f16b399870efea39",
+      "canonicalDifficulty": "easy"
+    },
+    {
+      "id": 387,
+      "sourceGame": "strategyDesk",
+      "q": "A party's agreement value rises by $3 million while its disagreement value rises by the same amount. What happens to its gain from agreement?",
+      "options": [
+        "It rises by $6 million",
+        "It rises by $3 million",
+        "It falls by $3 million",
+        "It is unchanged"
+      ],
+      "tag": "nonstrategic_bargaining",
+      "type": "calculation",
+      "objective": "LO16.2",
+      "difficulty": "easy",
+      "conceptCluster": "easy_strategyDesk_nonstrategic_bargaining",
+      "primarySkill": "nonstrategic_bargaining",
+      "secondarySkills": [],
+      "repairSkill": "nonstrategic_bargaining",
+      "commonError": "changes_both_values_but_not_their_difference",
+      "feedback": "Gain from agreement is agreement value minus disagreement value; equal increases cancel.",
+      "aHash": "2eb953560d2aee9c96090261017ebe948bbd5a91ac4e77d6b95c43634e63f109",
+      "canonicalDifficulty": "easy"
+    }
+  ],
+  "medium": [
+    {
+      "id": 101,
+      "sourceGame": "strategyDesk",
+      "q": "A theater knows students are more price sensitive than working adults. Which pricing pattern is most consistent with profit-maximizing price discrimination? Assume equal marginal service costs, verified groups, no resale, and interior optima.",
+      "options": [
+        "A higher student price and a lower adult price",
+        "The same price because both groups watch the same film",
+        "A student price based only on the theater’s fixed cost",
+        "A lower student price and a higher adult price"
+      ],
+      "tag": "price_discrimination",
+      "type": "application",
+      "objective": "LO13.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_price_discrimination",
+      "primarySkill": "price_discrimination",
+      "secondarySkills": [],
+      "repairSkill": "price_discrimination",
+      "commonError": "reverses_elastic_and_inelastic_segments",
+      "feedback": "The group with more elastic demand generally receives the lower price, while the less elastic group is charged more.",
+      "aHash": "456adc8d119af414ded9475c3ca5c1c986a02c9d5221056d14c412024332a26f",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 108,
+      "sourceGame": "strategyDesk",
+      "q": "A firm is considering discounts for a highly price-sensitive segment. What should it protect before launching the discount?",
+      "options": [
+        "Sales to customers already willing to pay the regular price",
+        "Only whether the discount raises unit sales",
+        "The allocated fixed cost per discounted unit",
+        "The original price regardless of customer response"
+      ],
+      "tag": "price_discrimination",
+      "type": "strategy",
+      "objective": "LO13.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_price_discrimination",
+      "primarySkill": "price_discrimination",
+      "secondarySkills": [],
+      "repairSkill": "price_discrimination",
+      "commonError": "ignores_cannibalization",
+      "feedback": "The discount should generate incremental business without unnecessarily cannibalizing full-price sales.",
+      "aHash": "8c8a4771b021385aa43a60e977baed02476f2a87be72e184079b1dcf2e450333",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 112,
+      "sourceGame": "strategyDesk",
+      "q": "Price falls from $20 to $18 while quantity demanded rises from 100 to 120. Using the midpoint formula, the absolute price elasticity is approximately",
+      "options": [
+        "1.73, so demand is elastic",
+        "0.58, so demand is inelastic",
+        "1.00, so demand is unit elastic",
+        "2.00, so demand is elastic"
+      ],
+      "tag": "price_elasticity",
+      "type": "calculation",
+      "objective": "LO6.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_price_elasticity",
+      "primarySkill": "price_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "price_elasticity",
+      "commonError": "uses_initial_values_or_reverses_the_ratio",
+      "feedback": "The midpoint percentage changes are about 18.18% for quantity and 10.53% for price, giving elasticity near 1.73.",
+      "aHash": "a57fe86bb791d43f6b88840dbe5009c46a9c29d0d8ac44e4b995ddd1324cc695",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 115,
+      "sourceGame": "strategyDesk",
+      "q": "The price of Product B rises 10%, and demand for Product A rises 5%. What is the cross-price elasticity, and what relationship does it indicate? Hold other demand determinants fixed.",
+      "options": [
+        "−0.5; complements",
+        "2.0; substitutes",
+        "0.5; substitutes",
+        "−2.0; complements"
+      ],
+      "tag": "forecasting_elasticities",
+      "type": "calculation",
+      "objective": "LO6.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_forecasting_elasticities",
+      "primarySkill": "forecasting_elasticities",
+      "secondarySkills": [],
+      "repairSkill": "forecasting_elasticities",
+      "commonError": "reverses_sign_or_elasticity_ratio",
+      "feedback": "Cross-price elasticity is 5% ÷ 10% = 0.5. The positive sign indicates substitutes.",
+      "aHash": "79e9644e0cb68b5ad95e53e9e5c0557af4073b273ed521b8c5ee91f1dd07d8b6",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 117,
+      "sourceGame": "strategyDesk",
+      "q": "A firm identifies two segments but cannot verify who belongs to either group. What is the main weakness in a direct-discrimination plan?",
+      "options": [
+        "Customer demand becomes independent of price",
+        "Segment marginal costs must become identical",
+        "Customers lose the ability to compare versions",
+        "Customers can claim the lower-price identity"
+      ],
+      "tag": "direct_price_discrimination",
+      "type": "strategy",
+      "objective": "LO13.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_direct_price_discrimination",
+      "primarySkill": "direct_price_discrimination",
+      "secondarySkills": [],
+      "repairSkill": "direct_price_discrimination",
+      "commonError": "assumes_unverified_segments_are_enforceable",
+      "feedback": "Direct discrimination requires credible classification; otherwise high-value customers can pose as low-value buyers.",
+      "aHash": "a8bc02e20597aed5749df310fffaff3e293a7b188710a82404463bb72480af0d",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 121,
       "sourceGame": "strategyDesk",
-      "q": "Which rule best protects a student software discount from arbitrage?",
+      "q": "A tool-rental service charges verified apprentices a lower daily rate. Which policy most directly prevents an apprentice from reselling discounted access to a full-price contractor?",
       "options": [
-        "Allow unlimited license transfers",
-        "Post the activation code publicly",
-        "Use the same transferable key for every buyer",
-        "Tie the license to a verified student account"
+        "Give every renter the same transferable access code",
+        "Allow collection by any third party with a payment receipt",
+        "Verify apprentice status but permit unrestricted subleasing",
+        "Require the named apprentice to collect and use the rental, with no transfers"
       ],
       "tag": "arbitrage_prevention",
       "type": "application",
       "objective": "LO13.3",
       "difficulty": "medium",
-      "conceptCluster": "LO13.3_strategy_desk",
-      "primarySkill": "arbitrage_prevention",
+      "conceptCluster": "medium_strategyDesk_arbitrage_control",
+      "primarySkill": "arbitrage_control",
       "secondarySkills": [],
-      "repairSkill": "arbitrage_prevention",
+      "repairSkill": "arbitrage_control",
       "commonError": "allows_transfer_of_discounted_product",
-      "feedback": "A verified, nontransferable account keeps the discounted license within the intended segment.",
-      "aHash": "79dc325e5b299b63f620ce7528f14c8a2a13b21a3a676d91819f8dc3829bc040"
+      "feedback": "Eligibility identifies the group; nontransferability prevents discounted access from reaching full-price customers.",
+      "aHash": "d81bbbf3c9d702c80776d270de9c6a34f69edbaac00b0cc5ae06ecb4ae997a61",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 122,
@@ -3313,57 +3647,14 @@ window.questionBanks = {
       "type": "calculation",
       "objective": "LO6.5",
       "difficulty": "medium",
-      "conceptCluster": "LO6.5_strategy_desk",
+      "conceptCluster": "medium_strategyDesk_stay_even_volume",
       "primarySkill": "stay_even_volume",
       "secondarySkills": [],
       "repairSkill": "stay_even_volume",
       "commonError": "uses_revenue_instead_of_contribution_margin",
       "feedback": "Original contribution is $4 × 300 = $1,200. At a $3 margin, 400 total units are needed, or 100 additional units.",
-      "aHash": "01b00e6f7fcb542effd54336ffb0815709ab85e857831d5eb0791da48d4d85d1"
-    },
-    {
-      "id": 123,
-      "sourceGame": "strategyDesk",
-      "q": "A firm sells 500 units at $20 with variable cost of $12. If price is cut to $18, approximately how many total units are needed to stay even on contribution?",
-      "options": [
-        "600 units",
-        "667 units",
-        "750 units",
-        "833 units"
-      ],
-      "tag": "stay_even_volume",
-      "type": "calculation",
-      "objective": "LO6.5",
-      "difficulty": "medium",
-      "conceptCluster": "LO6.5_strategy_desk",
-      "primarySkill": "stay_even_volume",
-      "secondarySkills": [],
-      "repairSkill": "stay_even_volume",
-      "commonError": "calculates_only_the_quantity_increase",
-      "feedback": "Original contribution is $8 × 500 = $4,000. At the new $6 margin, the firm needs about 667 total units.",
-      "aHash": "a34f49dbad9b59a7e4055df611e564e174d9a933ad37194f267398b1baf280e5"
-    },
-    {
-      "id": 124,
-      "sourceGame": "strategyDesk",
-      "q": "Which action would make arbitrage easier rather than harder?",
-      "options": [
-        "Permit anonymous transfer of discounted tickets",
-        "Verify eligibility before sale",
-        "Limit each discount to one account",
-        "Require the named buyer to use the service and prohibit every transfer to another person"
-      ],
-      "tag": "arbitrage_prevention",
-      "type": "trap",
-      "objective": "LO13.3",
-      "difficulty": "medium",
-      "conceptCluster": "LO13.3_strategy_desk",
-      "primarySkill": "arbitrage_prevention",
-      "secondarySkills": [],
-      "repairSkill": "arbitrage_prevention",
-      "commonError": "selects_policy_that_strengthens_arbitrage",
-      "feedback": "Anonymous transfer lets buyers move discounted access into the higher-price segment.",
-      "aHash": "f133cca448fc40ea98ff0801dc739310993b7ccb9aae5ba8713c282e3fee5947"
+      "aHash": "01b00e6f7fcb542effd54336ffb0815709ab85e857831d5eb0791da48d4d85d1",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 125,
@@ -3379,57 +3670,14 @@ window.questionBanks = {
       "type": "calculation",
       "objective": "LO12.1",
       "difficulty": "medium",
-      "conceptCluster": "LO12.1_strategy_desk",
+      "conceptCluster": "medium_strategyDesk_substitute_pricing",
       "primarySkill": "substitute_pricing",
       "secondarySkills": [],
       "repairSkill": "substitute_pricing",
       "commonError": "ignores_cannibalization_of_owned_substitute",
       "feedback": "The firm must combine both effects: $900 − $500 = a $400 increase in total contribution.",
-      "aHash": "3e64e08d834fd2a8904ed7c7a398313e9e629631ee8382bbfb1d263336882ebd"
-    },
-    {
-      "id": 126,
-      "sourceGame": "strategyDesk",
-      "q": "After acquiring a close substitute, a firm should evaluate a price change by focusing on",
-      "options": [
-        "the acquired product’s revenue alone",
-        "the original product’s market share alone",
-        "the number of brands owned",
-        "combined profit across both products"
-      ],
-      "tag": "substitute_pricing",
-      "type": "strategy",
-      "objective": "LO12.1",
-      "difficulty": "medium",
-      "conceptCluster": "LO12.1_strategy_desk",
-      "primarySkill": "substitute_pricing",
-      "secondarySkills": [],
-      "repairSkill": "substitute_pricing",
-      "commonError": "optimizes_each_owned_substitute_separately",
-      "feedback": "Common ownership makes cannibalization internal, so the relevant objective is total portfolio profit.",
-      "aHash": "305a71d4c3b2b982ea3d0ab8c1ca1cb4e1100a5aeccf82b9dcb796acd42e3d68"
-    },
-    {
-      "id": 127,
-      "sourceGame": "strategyDesk",
-      "q": "Why are services often easier to price discriminate than easily shipped products?",
-      "options": [
-        "Services are never subject to competition",
-        "Many services cannot be resold after use",
-        "Services always have zero marginal cost",
-        "Service customers have identical demand"
-      ],
-      "tag": "arbitrage_prevention",
-      "type": "interpretation",
-      "objective": "LO13.3",
-      "difficulty": "medium",
-      "conceptCluster": "LO13.3_strategy_desk",
-      "primarySkill": "arbitrage_prevention",
-      "secondarySkills": [],
-      "repairSkill": "arbitrage_prevention",
-      "commonError": "assumes_services_have_no_arbitrage_advantage",
-      "feedback": "Personal consumption and nontransferability can make arbitrage harder for services.",
-      "aHash": "a9d1dd6c03b93f68346498fc84ac7cd218ffd5ac9fa6ed764d335932a57c0ded"
+      "aHash": "3e64e08d834fd2a8904ed7c7a398313e9e629631ee8382bbfb1d263336882ebd",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 128,
@@ -3445,145 +3693,14 @@ window.questionBanks = {
       "type": "calculation",
       "objective": "LO13.3",
       "difficulty": "medium",
-      "conceptCluster": "LO13.3_strategy_desk",
-      "primarySkill": "arbitrage_prevention",
+      "conceptCluster": "medium_strategyDesk_arbitrage_control",
+      "primarySkill": "arbitrage_control",
       "secondarySkills": [],
-      "repairSkill": "arbitrage_prevention",
+      "repairSkill": "arbitrage_control",
       "commonError": "ignores_transfer_cost_or_quantity",
       "feedback": "The net margin is $55 − $40 − $5 = $10 per unit; 50 units produce $500.",
-      "aHash": "15aebe143a3514d046ba2ba2236f53f3c0599dcc3a9a77ca2d312cad6e661831"
-    },
-    {
-      "id": 129,
-      "sourceGame": "strategyDesk",
-      "q": "A streaming service offers a low student rate. Which feature most directly prevents a student from reselling access?",
-      "options": [
-        "A larger advertising budget",
-        "A longer list of available movies",
-        "A higher price for every subscription regardless of student status or account sharing",
-        "Personal login verification and device controls"
-      ],
-      "tag": "arbitrage_prevention",
-      "type": "application",
-      "objective": "LO13.3",
-      "difficulty": "medium",
-      "conceptCluster": "LO13.3_strategy_desk",
-      "primarySkill": "arbitrage_prevention",
-      "secondarySkills": [],
-      "repairSkill": "arbitrage_prevention",
-      "commonError": "uses_unrelated_policy_to_stop_arbitrage",
-      "feedback": "Account verification and device limits reduce unauthorized transfer of the discounted service.",
-      "aHash": "8f7a237da89a9386b9708eeabc6701b3b6d9436958b21ee2bbb1c7b14bb727aa"
-    },
-    {
-      "id": 130,
-      "sourceGame": "strategyDesk",
-      "q": "The Robinson-Patman Act primarily addresses price discrimination among",
-      "options": [
-        "buyers of unrelated professional services",
-        "consumers choosing different product versions",
-        "competing purchasers of like commodities",
-        "employees performing different jobs"
-      ],
-      "tag": "robinson_patman",
-      "type": "definition",
-      "objective": "LO13.4",
-      "difficulty": "medium",
-      "conceptCluster": "LO13.4_strategy_desk",
-      "primarySkill": "robinson_patman",
-      "secondarySkills": [],
-      "repairSkill": "robinson_patman",
-      "commonError": "applies_act_to_unrelated_transactions",
-      "feedback": "The Act focuses on discriminatory pricing of commodities sold to competing purchasers when competition may be harmed.",
-      "aHash": "6045e36a6876961cf36ad7d3e305b62f0845fce900e3d219966ca3cb1c8db74f"
-    },
-    {
-      "id": 131,
-      "sourceGame": "strategyDesk",
-      "q": "A wholesaler sells the same grade of product to two competing retailers at different prices. Which law may be relevant?",
-      "options": [
-        "A law banning every quantity discount",
-        "The Robinson-Patman Act",
-        "The Sherman Act only because prices differ",
-        "A rule requiring one national retail price"
-      ],
-      "tag": "robinson_patman",
-      "type": "application",
-      "objective": "LO13.4",
-      "difficulty": "medium",
-      "conceptCluster": "LO13.4_strategy_desk",
-      "primarySkill": "robinson_patman",
-      "secondarySkills": [],
-      "repairSkill": "robinson_patman",
-      "commonError": "fails_to_recognize_competing_purchasers",
-      "feedback": "Price differences for like commodities sold to competing buyers can raise Robinson-Patman concerns.",
-      "aHash": "21bab35f821f162fa0e80220937fbc0694fe719ec9e0307d07adcda9a9c1aa30"
-    },
-    {
-      "id": 132,
-      "sourceGame": "strategyDesk",
-      "q": "Which statement is most accurate about the Robinson-Patman Act?",
-      "options": [
-        "Not every price difference is prohibited",
-        "Every discount to a large buyer is automatically illegal",
-        "The Act requires sellers to ignore cost savings",
-        "The Act applies only when consumers buy services"
-      ],
-      "tag": "robinson_patman",
-      "type": "trap",
-      "objective": "LO13.4",
-      "difficulty": "medium",
-      "conceptCluster": "LO13.4_strategy_desk",
-      "primarySkill": "robinson_patman",
-      "secondarySkills": [],
-      "repairSkill": "robinson_patman",
-      "commonError": "treats_all_discounts_as_illegal",
-      "feedback": "Defenses and factual requirements matter; a price difference alone does not establish a violation.",
-      "aHash": "7734b24fe73c615531adfcd8fe422bd10da68312632b3cf4f50833c2b7e05ef2"
-    },
-    {
-      "id": 133,
-      "sourceGame": "strategyDesk",
-      "q": "A company owns a game console and the games used with it. Which pricing logic best recognizes that the products are complements?",
-      "options": [
-        "Use console price to support game profit",
-        "Set each price without considering the other product",
-        "Raise both prices whenever either product sells out",
-        "Treat game sales as unrelated to console demand"
-      ],
-      "tag": "complement_pricing",
-      "type": "application",
-      "objective": "LO12.2",
-      "difficulty": "medium",
-      "conceptCluster": "LO12.2_strategy_desk",
-      "primarySkill": "complement_pricing",
-      "secondarySkills": [],
-      "repairSkill": "complement_pricing",
-      "commonError": "prices_complements_as_unrelated_products",
-      "feedback": "A lower console margin may be worthwhile when it expands demand and profit for games.",
-      "aHash": "d52fa56b1632b4ffb1e60dd2a1bf5fa6f04a4619346e1d75ee2669324f4e92a2"
-    },
-    {
-      "id": 134,
-      "sourceGame": "strategyDesk",
-      "q": "A supplier gives a large buyer a lower price because serving that buyer costs substantially less per unit. Which defense is most relevant?",
-      "options": [
-        "The damaged-goods defense",
-        "The Nash-equilibrium defense",
-        "Cost justification",
-        "Perfect price discrimination"
-      ],
-      "tag": "robinson_patman",
-      "type": "application",
-      "objective": "LO13.4",
-      "difficulty": "medium",
-      "conceptCluster": "LO13.4_strategy_desk",
-      "primarySkill": "robinson_patman",
-      "secondarySkills": [],
-      "repairSkill": "robinson_patman",
-      "commonError": "ignores_cost_justification",
-      "feedback": "A seller may defend a price difference by showing that genuine cost savings justify it.",
-      "aHash": "488d37993e017bb0875f0f0ff9d33de3d7ce4fd1636e972ee1334c897abecb66"
+      "aHash": "15aebe143a3514d046ba2ba2236f53f3c0599dcc3a9a77ca2d312cad6e661831",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 135,
@@ -3599,35 +3716,14 @@ window.questionBanks = {
       "type": "calculation",
       "objective": "LO12.2",
       "difficulty": "medium",
-      "conceptCluster": "LO12.2_strategy_desk",
+      "conceptCluster": "medium_strategyDesk_complement_pricing",
       "primarySkill": "complement_pricing",
       "secondarySkills": [],
       "repairSkill": "complement_pricing",
       "commonError": "looks_at_only_one_complement",
       "feedback": "The combined effect is −$600 + $900 = a $300 increase.",
-      "aHash": "098b7df89688b71689e20accaa37c43ebe27d9829d9145b68a237b225916d415"
-    },
-    {
-      "id": 136,
-      "sourceGame": "strategyDesk",
-      "q": "Why does the phrase “like grade and quality” matter under the Robinson-Patman Act?",
-      "options": [
-        "The compared products must be sufficiently similar",
-        "The buyers must have identical incomes",
-        "The seller must earn the same profit on every unit",
-        "The products must be sold in the same building"
-      ],
-      "tag": "robinson_patman",
-      "type": "interpretation",
-      "objective": "LO13.4",
-      "difficulty": "medium",
-      "conceptCluster": "LO13.4_strategy_desk",
-      "primarySkill": "robinson_patman",
-      "secondarySkills": [],
-      "repairSkill": "robinson_patman",
-      "commonError": "compares_noncomparable_products",
-      "feedback": "The Act compares price treatment for commodities of like grade and quality, not plainly different products.",
-      "aHash": "f2208eb130c304a13aac72c6313e8db52303f6563441500417ce0fbd33167963"
+      "aHash": "098b7df89688b71689e20accaa37c43ebe27d9829d9145b68a237b225916d415",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 137,
@@ -3643,13 +3739,14 @@ window.questionBanks = {
       "type": "application",
       "objective": "LO12.3",
       "difficulty": "medium",
-      "conceptCluster": "LO12.3_strategy_desk",
+      "conceptCluster": "medium_strategyDesk_capacity_pricing",
       "primarySkill": "capacity_pricing",
       "secondarySkills": [],
       "repairSkill": "capacity_pricing",
       "commonError": "requires_full_cost_coverage_for_idle_capacity",
       "feedback": "With idle capacity and no displaced sale, the relevant short-run comparison is $70 of revenue against $18 of incremental cost.",
-      "aHash": "e5a83166516a660c089138b2d498476bb140aab5ab934753375d8c5fb89434a0"
+      "aHash": "e5a83166516a660c089138b2d498476bb140aab5ab934753375d8c5fb89434a0",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 138,
@@ -3665,79 +3762,60 @@ window.questionBanks = {
       "type": "strategy",
       "objective": "LO12.4",
       "difficulty": "medium",
-      "conceptCluster": "LO12.4_strategy_desk",
+      "conceptCluster": "medium_strategyDesk_forecast_driven_pricing",
       "primarySkill": "forecast_driven_pricing",
       "secondarySkills": [],
       "repairSkill": "forecast_driven_pricing",
       "commonError": "responds_to_excess_demand_with_discounting",
       "feedback": "When expected demand exceeds fixed capacity, a higher price can reduce excess demand and increase revenue.",
-      "aHash": "500393074626e4f3082da9b8351b71f4d7004cfe01710cb9e11692ad32b62559"
+      "aHash": "500393074626e4f3082da9b8351b71f4d7004cfe01710cb9e11692ad32b62559",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 139,
       "sourceGame": "strategyDesk",
       "q": "Two retailers receive different prices, but they sell in separate markets and do not compete for customers. What key concern is weaker?",
       "options": [
-        "Whether either retailer advertises",
+        "Whether the seller’s two products have different production costs",
         "Competitive injury between the purchasers",
-        "Whether the product has a brand name recognized by customers in both separate markets",
-        "Whether the seller has fixed costs"
+        "Whether the supplier incurs any fixed cost",
+        "Whether the two transaction prices differ at all"
       ],
       "tag": "robinson_patman",
       "type": "interpretation",
       "objective": "LO13.4",
       "difficulty": "medium",
-      "conceptCluster": "LO13.4_strategy_desk",
+      "conceptCluster": "medium_strategyDesk_robinson_patman",
       "primarySkill": "robinson_patman",
       "secondarySkills": [],
       "repairSkill": "robinson_patman",
       "commonError": "ignores_competitive_relationship",
       "feedback": "When purchasers do not compete, the claim that the price difference injures competition between them is less direct.",
-      "aHash": "18b329b811fda2b50e4da9f0292ae9fb0dc1736c6b7ff46836a6107042fe97e8"
-    },
-    {
-      "id": 140,
-      "sourceGame": "strategyDesk",
-      "q": "Movie theaters commonly charge students and seniors less than other adults because the groups often differ in",
-      "options": [
-        "price sensitivity",
-        "the physical cost of showing the film",
-        "the number of seats in the building",
-        "the theater’s sunk construction cost"
-      ],
-      "tag": "price_discrimination_cases",
-      "type": "application",
-      "objective": "LO13.5",
-      "difficulty": "medium",
-      "conceptCluster": "LO13.5_strategy_desk",
-      "primarySkill": "price_discrimination_cases",
-      "secondarySkills": [],
-      "repairSkill": "price_discrimination_cases",
-      "commonError": "focuses_on_identical_service_cost",
-      "feedback": "Group discounts often reflect differences in demand elasticity rather than differences in the cost of admission.",
-      "aHash": "c68d1040530e4aa1716065715bd1ccfe0b0ca933b3c0dcbb7af105d9a4ad2884"
+      "aHash": "18b329b811fda2b50e4da9f0292ae9fb0dc1736c6b7ff46836a6107042fe97e8",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 141,
       "sourceGame": "strategyDesk",
       "q": "An airline requires a Saturday-night stay for a lower fare. The restriction is designed mainly to separate",
       "options": [
-        "pilots from passengers",
-        "large aircraft from small aircraft",
-        "domestic fuel from imported fuel used on different aircraft routes and schedules",
+        "Residents from nonresidents through verified identity",
+        "Customers with equal willingness to pay and identical schedules",
+        "High-use customers from low-use customers solely by quantity",
         "leisure travelers from business travelers"
       ],
-      "tag": "price_discrimination_cases",
+      "tag": "indirect_price_discrimination",
       "type": "application",
-      "objective": "LO13.5",
+      "objective": "LO14.1",
       "difficulty": "medium",
-      "conceptCluster": "LO13.5_strategy_desk",
-      "primarySkill": "price_discrimination_cases",
+      "conceptCluster": "medium_strategyDesk_indirect_price_discrimination",
+      "primarySkill": "indirect_price_discrimination",
       "secondarySkills": [],
-      "repairSkill": "price_discrimination_cases",
-      "commonError": "misidentifies_airline_segments",
+      "repairSkill": "indirect_price_discrimination",
+      "commonError": "misses_time_restriction_as_self_selection",
       "feedback": "Fare restrictions help identify travelers with flexibility and more elastic demand.",
-      "aHash": "800b1700c4163f35fcc92fd99ae40f1a751884d01f02343c435b502bc04ead10"
+      "aHash": "800b1700c4163f35fcc92fd99ae40f1a751884d01f02343c435b502bc04ead10",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 142,
@@ -3753,57 +3831,14 @@ window.questionBanks = {
       "type": "calculation",
       "objective": "LO12.5",
       "difficulty": "medium",
-      "conceptCluster": "LO12.5_strategy_desk",
+      "conceptCluster": "medium_strategyDesk_promotion_response",
       "primarySkill": "promotion_response",
       "secondarySkills": [],
       "repairSkill": "promotion_response",
       "commonError": "ignores_promotion_cost_or_uses_revenue",
       "feedback": "Incremental contribution is 800 × $7 = $5,600. Subtracting the $4,000 campaign cost leaves $1,600.",
-      "aHash": "17e2a167586551942e8f6133b9bc7dbc5e57b87e8c157dcec2bd13ab42c55420"
-    },
-    {
-      "id": 143,
-      "sourceGame": "strategyDesk",
-      "q": "A restaurant charges more for a steak than for a salad because the steak costs more to prepare. Is that price discrimination?",
-      "options": [
-        "No; price discrimination occurs only in airlines",
-        "Not necessarily; the price difference may reflect cost",
-        "Yes; any two different prices are discrimination",
-        "Yes; restaurants cannot charge different menu prices when ingredients have different costs"
-      ],
-      "tag": "price_discrimination_cases",
-      "type": "trap",
-      "objective": "LO13.5",
-      "difficulty": "medium",
-      "conceptCluster": "LO13.5_strategy_desk",
-      "primarySkill": "price_discrimination_cases",
-      "secondarySkills": [],
-      "repairSkill": "price_discrimination_cases",
-      "commonError": "labels_cost_based_price_difference_as_discrimination",
-      "feedback": "A price difference caused by different production costs is not necessarily price discrimination.",
-      "aHash": "dab4c74b43fd01758ab554fdb3ba21d18d18bc67155e2c72f92c6f5eab8aa7ae"
-    },
-    {
-      "id": 144,
-      "sourceGame": "strategyDesk",
-      "q": "A retailer displays a “regular price” that was rarely charged to make a discount look larger. What is the central problem?",
-      "options": [
-        "The product must now be bundled",
-        "Demand must become perfectly elastic",
-        "The price cannot end in .99",
-        "The reference price may mislead buyers"
-      ],
-      "tag": "behavioral_pricing",
-      "type": "trap",
-      "objective": "LO12.6",
-      "difficulty": "medium",
-      "conceptCluster": "LO12.6_strategy_desk",
-      "primarySkill": "behavioral_pricing",
-      "secondarySkills": [],
-      "repairSkill": "behavioral_pricing",
-      "commonError": "treats_any_reference_price_as_legitimate",
-      "feedback": "Behavioral pricing can use reference points, but a fictitious regular price can mislead customers.",
-      "aHash": "c51ea0c97fd25e0befa87269e104d56b95b2ee44fc33088776287c94d431d68b"
+      "aHash": "17e2a167586551942e8f6133b9bc7dbc5e57b87e8c157dcec2bd13ab42c55420",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 146,
@@ -3819,189 +3854,14 @@ window.questionBanks = {
       "type": "interpretation",
       "objective": "LO13.5",
       "difficulty": "medium",
-      "conceptCluster": "LO13.5_strategy_desk",
+      "conceptCluster": "medium_strategyDesk_price_discrimination_cases",
       "primarySkill": "price_discrimination_cases",
       "secondarySkills": [],
       "repairSkill": "price_discrimination_cases",
       "commonError": "ignores_intertemporal_segmentation",
       "feedback": "Release timing helps sort impatient, high-value readers from more price-sensitive readers.",
-      "aHash": "6f7eee19b54b3cb0d79718b3f6f88a9ffd8ccae998589d6b2506f54352993f38"
-    },
-    {
-      "id": 147,
-      "sourceGame": "strategyDesk",
-      "q": "A theater sells 80 adult tickets at $15 and 120 student tickets at $9. What revenue does the two-price policy generate?",
-      "options": [
-        "$3,000",
-        "$2,280",
-        "$1,200",
-        "$1,080"
-      ],
-      "tag": "price_discrimination_cases",
-      "type": "calculation",
-      "objective": "LO13.5",
-      "difficulty": "medium",
-      "conceptCluster": "LO13.5_strategy_desk",
-      "primarySkill": "price_discrimination_cases",
-      "secondarySkills": [],
-      "repairSkill": "price_discrimination_cases",
-      "commonError": "adds_prices_instead_of_segment_revenues",
-      "feedback": "Adult revenue is $1,200 and student revenue is $1,080, for a total of $2,280.",
-      "aHash": "5a89116526aa02be0d70e31d4ee8494f736e039e5dea1635c9a2526d26064e3f"
-    },
-    {
-      "id": 148,
-      "sourceGame": "strategyDesk",
-      "q": "Which feature makes a real-world price discrimination program more sustainable?",
-      "options": [
-        "Clear eligibility rules and limited resale",
-        "A discount available through unlimited anonymous transfer",
-        "No distinction among customer groups",
-        "Prices unrelated to demand or customer behavior"
-      ],
-      "tag": "price_discrimination_cases",
-      "type": "strategy",
-      "objective": "LO13.5",
-      "difficulty": "medium",
-      "conceptCluster": "LO13.5_strategy_desk",
-      "primarySkill": "price_discrimination_cases",
-      "secondarySkills": [],
-      "repairSkill": "price_discrimination_cases",
-      "commonError": "ignores_enforcement_and_resale",
-      "feedback": "Sustainable segmentation needs a practical method to identify or sort customers and contain arbitrage.",
-      "aHash": "1e77f8bd1575e4215687ebd1096e4e5ea21d7962d2783038c7c4d7bf41762d97"
-    },
-    {
-      "id": 150,
-      "sourceGame": "strategyDesk",
-      "q": "Indirect price discrimination relies on customers to",
-      "options": [
-        "pay one mandatory price",
-        "resell products across customer groups",
-        "self-select among pricing options",
-        "prove their identity before every purchase"
-      ],
-      "tag": "indirect_price_discrimination",
-      "type": "definition",
-      "objective": "LO14.1",
-      "difficulty": "medium",
-      "conceptCluster": "LO14.1_strategy_desk",
-      "primarySkill": "indirect_price_discrimination",
-      "secondarySkills": [],
-      "repairSkill": "indirect_price_discrimination",
-      "commonError": "confuses_self_selection_with_direct_identification",
-      "feedback": "The seller offers a menu and lets customer choices reveal willingness to pay.",
-      "aHash": "8896f51101369aeabac0046798de5870919225b856bed0acf371eb2eb187db6b"
-    },
-    {
-      "id": 151,
-      "sourceGame": "strategyDesk",
-      "q": "A car wash offers basic, deluxe, and premium packages to every customer. This pricing menu is an example of",
-      "options": [
-        "a legal ban on segmentation",
-        "indirect price discrimination",
-        "direct discrimination by age verified with government-issued identification",
-        "uniform pricing"
-      ],
-      "tag": "indirect_price_discrimination",
-      "type": "application",
-      "objective": "LO14.1",
-      "difficulty": "medium",
-      "conceptCluster": "LO14.1_strategy_desk",
-      "primarySkill": "indirect_price_discrimination",
-      "secondarySkills": [],
-      "repairSkill": "indirect_price_discrimination",
-      "commonError": "confuses_menu_pricing_with_uniform_price",
-      "feedback": "All customers face the same menu, but they sort themselves according to value and willingness to pay.",
-      "aHash": "432e07b02f110178647f5b19e84fc95c7dfb258de441c55c79ac38df7b4b41a3"
-    },
-    {
-      "id": 153,
-      "sourceGame": "strategyDesk",
-      "q": "Which condition would most undermine indirect price discrimination?",
-      "options": [
-        "Customers differ in willingness to pay",
-        "Options vary in price and features",
-        "The seller can design meaningful tradeoffs that make premium buyers prefer the expensive option",
-        "High-value customers strongly prefer the low-price option"
-      ],
-      "tag": "indirect_price_discrimination",
-      "type": "trap",
-      "objective": "LO14.1",
-      "difficulty": "medium",
-      "conceptCluster": "LO14.1_strategy_desk",
-      "primarySkill": "indirect_price_discrimination",
-      "secondarySkills": [],
-      "repairSkill": "indirect_price_discrimination",
-      "commonError": "ignores_incentive_compatibility",
-      "feedback": "If premium customers choose the cheap option, the menu fails to sort customers and cannibalizes high-price sales.",
-      "aHash": "b7aa97d3f9ab43bb98561c4294ec352b083fde511e32597f71c7fe1cef27abb7"
-    },
-    {
-      "id": 155,
-      "sourceGame": "strategyDesk",
-      "q": "In an extensive-form game, two decision nodes joined by an information set mean the player",
-      "options": [
-        "moves twice at the same node",
-        "knows exactly which prior path occurred",
-        "cannot tell which prior path occurred",
-        "has no available action"
-      ],
-      "tag": "game_timing",
-      "type": "interpretation",
-      "objective": "LO15.2",
-      "difficulty": "medium",
-      "conceptCluster": "medium_strategyDesk_game_timing",
-      "primarySkill": "game_timing",
-      "secondarySkills": [],
-      "repairSkill": "game_timing",
-      "commonError": "misreads_information_set_as_perfect_observation",
-      "feedback": "An information set connects nodes the player cannot distinguish when choosing an action.",
-      "aHash": "3db56fc548da9bb8c34a77cba73f41df0d8e86410b715dfa124f13e3bb9a2b96"
-    },
-    {
-      "id": 156,
-      "sourceGame": "strategyDesk",
-      "q": "A firm offers two versions, but nearly every buyer chooses the cheaper one. What should the firm examine first?",
-      "options": [
-        "Whether the versions create enough separation in value",
-        "Whether fixed cost is recorded as a sunk cost in the accounting system before launch",
-        "Whether the products are legal commodities",
-        "Whether every customer has the same name"
-      ],
-      "tag": "indirect_price_discrimination",
-      "type": "strategy",
-      "objective": "LO14.1",
-      "difficulty": "medium",
-      "conceptCluster": "LO14.1_strategy_desk",
-      "primarySkill": "indirect_price_discrimination",
-      "secondarySkills": [],
-      "repairSkill": "indirect_price_discrimination",
-      "commonError": "ignores_weak_version_differentiation",
-      "feedback": "The menu must make the premium option sufficiently attractive to high-value customers.",
-      "aHash": "cd4bf1fc5ef1cf7352020515dac392dd5daace76b98dd2ce00bcd3d5baf9d65c"
-    },
-    {
-      "id": 158,
-      "sourceGame": "strategyDesk",
-      "q": "A gym offers a monthly pass and a pay-per-visit option. The menu can sort customers mainly by",
-      "options": [
-        "the number of employees",
-        "the accounting treatment of rent",
-        "expected usage",
-        "the gym’s construction date"
-      ],
-      "tag": "indirect_price_discrimination",
-      "type": "application",
-      "objective": "LO14.1",
-      "difficulty": "medium",
-      "conceptCluster": "LO14.1_strategy_desk",
-      "primarySkill": "indirect_price_discrimination",
-      "secondarySkills": [],
-      "repairSkill": "indirect_price_discrimination",
-      "commonError": "ignores_usage_based_self_selection",
-      "feedback": "Frequent users may prefer the pass, while occasional users choose per-visit pricing.",
-      "aHash": "a28443d37d36465b96008c9736a4a455015a85a650db6f6a2b69522f4a5818d6"
+      "aHash": "6f7eee19b54b3cb0d79718b3f6f88a9ffd8ccae998589d6b2506f54352993f38",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 159,
@@ -4017,101 +3877,14 @@ window.questionBanks = {
       "type": "calculation",
       "objective": "LO14.1",
       "difficulty": "medium",
-      "conceptCluster": "LO14.1_strategy_desk",
+      "conceptCluster": "medium_strategyDesk_indirect_price_discrimination",
       "primarySkill": "indirect_price_discrimination",
       "secondarySkills": [],
       "repairSkill": "indirect_price_discrimination",
       "commonError": "fails_to_solve_indifference_quantity",
-      "feedback": "Set $60 = $10 + $6v. Then v = 50/6, or about 8.3 visits.",
-      "aHash": "8acfaf823291857a373e0981d37eca1d56699540e7fed0d95ddfc1451b5595d9"
-    },
-    {
-      "id": 160,
-      "sourceGame": "strategyDesk",
-      "q": "A damaged-goods strategy creates a lower-priced product by",
-      "options": [
-        "deliberately limiting features or quality",
-        "increasing every customer’s willingness to pay",
-        "charging only according to usage",
-        "bundling all versions at one price"
-      ],
-      "tag": "versioning_and_metering",
-      "type": "definition",
-      "objective": "LO14.2",
-      "difficulty": "medium",
-      "conceptCluster": "LO14.2_strategy_desk",
-      "primarySkill": "versioning_and_metering",
-      "secondarySkills": [],
-      "repairSkill": "versioning_and_metering",
-      "commonError": "confuses_damaged_goods_with_metering",
-      "feedback": "The seller intentionally restricts the low-end version so premium buyers still prefer the higher-priced option.",
-      "aHash": "f14cf8add48d5e14d699ace3abcdba6cd51abc660c3ec1357a0d20bffdfaccdb"
-    },
-    {
-      "id": 161,
-      "sourceGame": "strategyDesk",
-      "q": "A software company disables advanced tools in its basic edition even though the code already exists. The limitation is intended to",
-      "options": [
-        "raise the marginal cost of the basic edition",
-        "make both editions identical",
-        "eliminate differences in willingness to pay",
-        "protect sales of the premium edition"
-      ],
-      "tag": "versioning_and_metering",
-      "type": "application",
-      "objective": "LO14.2",
-      "difficulty": "medium",
-      "conceptCluster": "LO14.2_strategy_desk",
-      "primarySkill": "versioning_and_metering",
-      "secondarySkills": [],
-      "repairSkill": "versioning_and_metering",
-      "commonError": "ignores_cannibalization_control",
-      "feedback": "Feature limits help prevent high-value users from switching to the low-price version.",
-      "aHash": "cadf5432e734a78ac81e6053f6d7c00f894f2993b5e08c3949e98e487b28c00c"
-    },
-    {
-      "id": 163,
-      "sourceGame": "strategyDesk",
-      "q": "A printer is sold cheaply while ink cartridges carry a high per-page cost. This pricing approach uses",
-      "options": [
-        "a pure cash discount",
-        "metering through the consumable",
-        "one uniform price for all usage",
-        "a Robinson-Patman defense"
-      ],
-      "tag": "versioning_and_metering",
-      "type": "application",
-      "objective": "LO14.2",
-      "difficulty": "medium",
-      "conceptCluster": "LO14.2_strategy_desk",
-      "primarySkill": "versioning_and_metering",
-      "secondarySkills": [],
-      "repairSkill": "versioning_and_metering",
-      "commonError": "misses_consumable_as_usage_meter",
-      "feedback": "Ink purchases track printing intensity, allowing heavier users to pay more over time.",
-      "aHash": "8a6e01094ea187199be598896273c3706f28d72334ed8887e88318fb7b1080ae"
-    },
-    {
-      "id": 164,
-      "sourceGame": "strategyDesk",
-      "q": "Why should the low-priced version not be too attractive?",
-      "options": [
-        "It may cannibalize purchases of the premium version",
-        "It would automatically create substantially more market capacity",
-        "It would make marginal cost equal to zero",
-        "It would eliminate the seller’s legal identity"
-      ],
-      "tag": "versioning_and_metering",
-      "type": "trap",
-      "objective": "LO14.2",
-      "difficulty": "medium",
-      "conceptCluster": "LO14.2_strategy_desk",
-      "primarySkill": "versioning_and_metering",
-      "secondarySkills": [],
-      "repairSkill": "versioning_and_metering",
-      "commonError": "ignores_premium_cannibalization",
-      "feedback": "The low-end option must appeal to low-value customers without drawing too many high-value buyers away from premium pricing.",
-      "aHash": "9b4e1335865640292b70a31efc8c9d48e8c2e6a0dc067fc4acefa4d310223616"
+      "feedback": "Set $60 = $10 + $6 v. Then v = 50/6, or about 8.3 visits. Thus Plan B is cheaper through 8 whole visits and Plan A from 9 whole visits.",
+      "aHash": "8acfaf823291857a373e0981d37eca1d56699540e7fed0d95ddfc1451b5595d9",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 165,
@@ -4133,7 +3906,8 @@ window.questionBanks = {
       "repairSkill": "nash_equilibrium",
       "commonError": "finds_only_one_players_best_response",
       "feedback": "B chooses Right, and A’s best response to Right is Down. Therefore the equilibrium is Down, Right.",
-      "aHash": "584514527c5415000499ea46e5550453ad1764f1fdbd5a7d09be74616f9958af"
+      "aHash": "584514527c5415000499ea46e5550453ad1764f1fdbd5a7d09be74616f9958af",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 166,
@@ -4149,13 +3923,14 @@ window.questionBanks = {
       "type": "calculation",
       "objective": "LO14.2",
       "difficulty": "medium",
-      "conceptCluster": "LO14.2_strategy_desk",
+      "conceptCluster": "medium_strategyDesk_versioning_and_metering",
       "primarySkill": "versioning_and_metering",
       "secondarySkills": [],
       "repairSkill": "versioning_and_metering",
       "commonError": "miscalculates_metered_total_cost",
       "feedback": "Plan A costs $70; Plan B costs $60. Plan B is cheaper by $10.",
-      "aHash": "2d8aba7b673b79c35815fa41711b101a8d437c4ddaefe116d5abbd4359369bcb"
+      "aHash": "2d8aba7b673b79c35815fa41711b101a8d437c4ddaefe116d5abbd4359369bcb",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 167,
@@ -4177,7 +3952,8 @@ window.questionBanks = {
       "repairSkill": "nash_equilibrium",
       "commonError": "assumes_nash_equilibrium_must_be_unique",
       "feedback": "Both matching outcomes are mutual best responses, so the game can have two pure-strategy Nash equilibria.",
-      "aHash": "240674117317706a764e06ddd2d868014e53ad260f2d36682a61f2b3b1c2f6b1"
+      "aHash": "240674117317706a764e06ddd2d868014e53ad260f2d36682a61f2b3b1c2f6b1",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 168,
@@ -4185,131 +3961,22 @@ window.questionBanks = {
       "q": "Which customer pattern makes metering especially useful?",
       "options": [
         "Usage varies greatly and heavy users receive more value",
-        "Every customer uses exactly the same amount and receives identical value from usage",
-        "Usage cannot be observed or billed",
-        "The product is never consumed after purchase"
+        "Usage is observable but unrelated to customer value",
+        "Usage varies but cannot be measured or charged",
+        "Every user receives the same value and uses the same amount"
       ],
       "tag": "versioning_and_metering",
       "type": "strategy",
       "objective": "LO14.2",
       "difficulty": "medium",
-      "conceptCluster": "LO14.2_strategy_desk",
+      "conceptCluster": "medium_strategyDesk_versioning_and_metering",
       "primarySkill": "versioning_and_metering",
       "secondarySkills": [],
       "repairSkill": "versioning_and_metering",
       "commonError": "ignores_observable_usage_condition",
       "feedback": "Metering is most useful when usage is measurable and linked to customer value.",
-      "aHash": "ffed9dc1642b9ba289d1a3f452a7fba30fe3e8761c88c72b8aa1d937eb2dee75"
-    },
-    {
-      "id": 169,
-      "sourceGame": "strategyDesk",
-      "q": "A firm signs a noncancelable supply contract before a rival chooses whether to enter. Why can the contract change the game?",
-      "options": [
-        "It guarantees the rival earns zero",
-        "It makes the firm’s commitment credible",
-        "It removes all uncertainty from demand",
-        "It converts the game into perfect competition"
-      ],
-      "tag": "game_design",
-      "type": "application",
-      "objective": "LO15.4",
-      "difficulty": "medium",
-      "conceptCluster": "medium_strategyDesk_game_design",
-      "primarySkill": "game_design",
-      "secondarySkills": [],
-      "repairSkill": "game_design",
-      "commonError": "treats_reversible_statement_as_commitment",
-      "feedback": "A noncancelable contract changes future incentives because the firm cannot cheaply reverse its announced course.",
-      "aHash": "4aa8489bdf6bd968a7730f43f054121890b1521433719e1c70ba714d395f612e"
-    },
-    {
-      "id": 170,
-      "sourceGame": "strategyDesk",
-      "q": "A self-selection pricing menu is designed so that",
-      "options": [
-        "the seller verifies each customer’s identity",
-        "all products carry one price",
-        "different customer types choose different options",
-        "every customer chooses the cheapest option regardless of features or willingness to pay"
-      ],
-      "tag": "consumer_surplus_extraction",
-      "type": "definition",
-      "objective": "LO14.3",
-      "difficulty": "medium",
-      "conceptCluster": "LO14.3_strategy_desk",
-      "primarySkill": "consumer_surplus_extraction",
-      "secondarySkills": [],
-      "repairSkill": "consumer_surplus_extraction",
-      "commonError": "assumes_menu_has_no_sorting_role",
-      "feedback": "The menu uses price and product attributes to induce customers to reveal their willingness to pay through choice.",
-      "aHash": "b3be5478c457e5747bbfc4340ccf929b5eb7857777ac7ff91a0825ebbad06beb"
-    },
-    {
-      "id": 171,
-      "sourceGame": "strategyDesk",
-      "q": "A priority-service package costs more and includes guaranteed response time. Who should the firm expect to choose it?",
-      "options": [
-        "Only customers with the lowest usage",
-        "Customers who place high value on speed",
-        "Customers who value speed least",
-        "Every customer regardless of preferences"
-      ],
-      "tag": "consumer_surplus_extraction",
-      "type": "application",
-      "objective": "LO14.3",
-      "difficulty": "medium",
-      "conceptCluster": "LO14.3_strategy_desk",
-      "primarySkill": "consumer_surplus_extraction",
-      "secondarySkills": [],
-      "repairSkill": "consumer_surplus_extraction",
-      "commonError": "reverses_customer_sorting",
-      "feedback": "The premium feature attracts customers whose willingness to pay for speed is high.",
-      "aHash": "e82dd734eacdf444da7fa031f471de1eddb1e0c95a46ab5dde61c16aeb391686"
-    },
-    {
-      "id": 173,
-      "sourceGame": "strategyDesk",
-      "q": "Which menu is most likely to fail at self-selection?",
-      "options": [
-        "The premium plan adds features valued by high-WTP users and offers priority service",
-        "The basic plan removes features premium users need",
-        "The options create clear price-feature tradeoffs",
-        "The premium plan costs more but offers no meaningful added value"
-      ],
-      "tag": "consumer_surplus_extraction",
-      "type": "trap",
-      "objective": "LO14.3",
-      "difficulty": "medium",
-      "conceptCluster": "LO14.3_strategy_desk",
-      "primarySkill": "consumer_surplus_extraction",
-      "secondarySkills": [],
-      "repairSkill": "consumer_surplus_extraction",
-      "commonError": "ignores_incentive_for_premium_choice",
-      "feedback": "Without a valued difference, high-value customers have no reason to choose the premium plan.",
-      "aHash": "9ad43f5526e3790baf25347c5f3a857e2281157707867e0b072197769b479b76"
-    },
-    {
-      "id": 174,
-      "sourceGame": "strategyDesk",
-      "q": "Why can a threat of future punishment support cooperation in a repeated game?",
-      "options": [
-        "Every repeated game has one dominant strategy",
-        "Players forget all earlier behavior",
-        "Future profit has no value",
-        "Current actions can affect future payoffs"
-      ],
-      "tag": "game_design",
-      "type": "strategy",
-      "objective": "LO15.4",
-      "difficulty": "medium",
-      "conceptCluster": "medium_strategyDesk_game_design",
-      "primarySkill": "game_design",
-      "secondarySkills": [],
-      "repairSkill": "game_design",
-      "commonError": "treats_repeated_rounds_as_independent",
-      "feedback": "When future interaction matters, defection today can trigger costly responses later.",
-      "aHash": "a9386869d8339ce4b6db28839e74347320aff5a23a13d215d134299b94ebe043"
+      "aHash": "ffed9dc1642b9ba289d1a3f452a7fba30fe3e8761c88c72b8aa1d937eb2dee75",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 175,
@@ -4325,79 +3992,37 @@ window.questionBanks = {
       "type": "interpretation",
       "objective": "LO16.1",
       "difficulty": "medium",
-      "conceptCluster": "LO16.1_strategy_desk",
+      "conceptCluster": "medium_strategyDesk_strategic_bargaining",
       "primarySkill": "strategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "strategic_bargaining",
       "commonError": "assumes_first_mover_guarantees_acceptance",
       "feedback": "Moving first can shape the proposed division, although acceptance still depends on the buyer’s alternatives.",
-      "aHash": "c1583c3c0a5dd2a411cb6d04b9107501cf7672b6fa5d0339a6454199b7da1320"
-    },
-    {
-      "id": 176,
-      "sourceGame": "strategyDesk",
-      "q": "A two-part tariff charges a $30 membership fee plus $4 per unit. What does a customer pay for 8 units?",
-      "options": [
-        "$62",
-        "$32",
-        "$34",
-        "$64"
-      ],
-      "tag": "consumer_surplus_extraction",
-      "type": "calculation",
-      "objective": "LO14.3",
-      "difficulty": "medium",
-      "conceptCluster": "LO14.3_strategy_desk",
-      "primarySkill": "consumer_surplus_extraction",
-      "secondarySkills": [],
-      "repairSkill": "consumer_surplus_extraction",
-      "commonError": "omits_fixed_fee_or_usage_charge",
-      "feedback": "Total payment is $30 + ($4 × 8) = $62.",
-      "aHash": "2ec501df47837277002e73eeec653980a7bd04e1e7d9817ceb25de460e19c488"
-    },
-    {
-      "id": 177,
-      "sourceGame": "strategyDesk",
-      "q": "A firm threatens a lockout but would lose far more from carrying it out than from accepting the union’s offer. The threat is likely",
-      "options": [
-        "credible because it sounds costly",
-        "credible because it was announced first",
-        "irrelevant because bargaining has no strategy",
-        "not credible; carrying it out is too costly"
-      ],
-      "tag": "strategic_bargaining",
-      "type": "trap",
-      "objective": "LO16.1",
-      "difficulty": "medium",
-      "conceptCluster": "LO16.1_strategy_desk",
-      "primarySkill": "strategic_bargaining",
-      "secondarySkills": [],
-      "repairSkill": "strategic_bargaining",
-      "commonError": "equates_announced_threat_with_credible_threat",
-      "feedback": "A threat is weak when the party would not rationally carry it out after the decision point is reached.",
-      "aHash": "df9fd92ae1e33f469a4fcd5583accf4174329e5b7476f05aa6a12a61da54899d"
+      "aHash": "c1583c3c0a5dd2a411cb6d04b9107501cf7672b6fa5d0339a6454199b7da1320",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 178,
       "sourceGame": "strategyDesk",
       "q": "A firm wants to reduce cannibalization in a self-selection menu. Which adjustment is most direct?",
       "options": [
-        "Remove every feature from the premium option",
-        "Allow premium buyers to pay the low price",
+        "Make the basic version equally attractive at a lower price",
+        "Raise the premium price without adding value",
         "Increase the premium option’s relative value",
-        "Make the low and high options identical"
+        "Remove the features valued most by premium buyers"
       ],
       "tag": "consumer_surplus_extraction",
       "type": "strategy",
       "objective": "LO14.3",
       "difficulty": "medium",
-      "conceptCluster": "LO14.3_strategy_desk",
+      "conceptCluster": "medium_strategyDesk_consumer_surplus_extraction",
       "primarySkill": "consumer_surplus_extraction",
       "secondarySkills": [],
       "repairSkill": "consumer_surplus_extraction",
       "commonError": "weakens_premium_instead_of_strengthening_it",
       "feedback": "More valuable premium features can keep high-WTP customers from dropping to the cheaper option.",
-      "aHash": "069ba6fdc080c33e64bba91a2ccbe39cdeb23b9cbff4ac9544ba5d7060c03865"
+      "aHash": "069ba6fdc080c33e64bba91a2ccbe39cdeb23b9cbff4ac9544ba5d7060c03865",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 179,
@@ -4413,57 +4038,14 @@ window.questionBanks = {
       "type": "interpretation",
       "objective": "LO14.3",
       "difficulty": "medium",
-      "conceptCluster": "LO14.3_strategy_desk",
+      "conceptCluster": "medium_strategyDesk_consumer_surplus_extraction",
       "primarySkill": "consumer_surplus_extraction",
       "secondarySkills": [],
       "repairSkill": "consumer_surplus_extraction",
       "commonError": "misses_quantity_as_screening_device",
       "feedback": "Purchase quantity can reveal customer type and support a menu of effective prices.",
-      "aHash": "d4737c8b0a4e1a93350e92126da0ac8feb4f25acbce5fb714ca1746906174705"
-    },
-    {
-      "id": 180,
-      "sourceGame": "strategyDesk",
-      "q": "Pure bundling means the seller",
-      "options": [
-        "offers the products only as a package",
-        "offers each product separately and as a package",
-        "charges a fixed fee plus a usage price",
-        "requires proof of customer identity"
-      ],
-      "tag": "bundling",
-      "type": "definition",
-      "objective": "LO14.4",
-      "difficulty": "medium",
-      "conceptCluster": "LO14.4_strategy_desk",
-      "primarySkill": "bundling",
-      "secondarySkills": [],
-      "repairSkill": "bundling",
-      "commonError": "confuses_pure_and_mixed_bundling",
-      "feedback": "Under pure bundling, customers cannot purchase the component products separately.",
-      "aHash": "2f4e8f0095e0d540e37b8fd2739cac62f3d579e92603f191c923ef65654bb6f1"
-    },
-    {
-      "id": 181,
-      "sourceGame": "strategyDesk",
-      "q": "Mixed bundling allows customers to",
-      "options": [
-        "buy only the package",
-        "pay only according to usage",
-        "receive a discount based on age after presenting verified identification at checkout",
-        "buy products separately or together"
-      ],
-      "tag": "bundling",
-      "type": "definition",
-      "objective": "LO14.4",
-      "difficulty": "medium",
-      "conceptCluster": "LO14.4_strategy_desk",
-      "primarySkill": "bundling",
-      "secondarySkills": [],
-      "repairSkill": "bundling",
-      "commonError": "confuses_mixed_with_pure_bundle",
-      "feedback": "Mixed bundling offers both stand-alone products and a combined package.",
-      "aHash": "50c178d59767094251b1fca2def4c4125db8d134649d0d95b6366a7d962f74a2"
+      "aHash": "d4737c8b0a4e1a93350e92126da0ac8feb4f25acbce5fb714ca1746906174705",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 182,
@@ -4479,35 +4061,37 @@ window.questionBanks = {
       "type": "interpretation",
       "objective": "LO14.4",
       "difficulty": "medium",
-      "conceptCluster": "LO14.4_strategy_desk",
+      "conceptCluster": "medium_strategyDesk_bundling",
       "primarySkill": "bundling",
       "secondarySkills": [],
       "repairSkill": "bundling",
       "commonError": "misses_value_smoothing_from_negative_correlation",
       "feedback": "Opposing valuation patterns can make total bundle values more similar, allowing a profitable common bundle price.",
-      "aHash": "b613c16e147f76e923119f200de36866b599578e43df754f5b6ee11c026b81eb"
+      "aHash": "b613c16e147f76e923119f200de36866b599578e43df754f5b6ee11c026b81eb",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 183,
       "sourceGame": "strategyDesk",
       "q": "A buyer can reject an offer and make a counteroffer in the next round. Compared with a final take-it-or-leave-it offer, this gives the buyer",
       "options": [
-        "no strategic options",
-        "a guaranteed agreement at the buyer’s preferred price",
-        "the same bargaining position in every case",
+        "no change in the feasible sequence of offers",
+        "a guarantee of receiving the entire surplus",
+        "an agreement independent of outside options",
         "more flexibility to influence the eventual split"
       ],
       "tag": "strategic_bargaining",
       "type": "application",
       "objective": "LO16.1",
       "difficulty": "medium",
-      "conceptCluster": "LO16.1_strategy_desk",
+      "conceptCluster": "medium_strategyDesk_strategic_bargaining",
       "primarySkill": "strategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "strategic_bargaining",
       "commonError": "assumes_counteroffer_has_no_strategic_value",
       "feedback": "The ability to counteroffer preserves options and can limit the first mover’s ability to capture the surplus.",
-      "aHash": "0aa417194a8c1e34ece34ece70e8adb265be9e6d704c576f685e58b6fb7b5120"
+      "aHash": "0aa417194a8c1e34ece34ece70e8adb265be9e6d704c576f685e58b6fb7b5120",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 184,
@@ -4523,18 +4107,19 @@ window.questionBanks = {
       "type": "trap",
       "objective": "LO14.4",
       "difficulty": "medium",
-      "conceptCluster": "LO14.4_strategy_desk",
+      "conceptCluster": "medium_strategyDesk_bundling",
       "primarySkill": "bundling",
       "secondarySkills": [],
       "repairSkill": "bundling",
       "commonError": "confuses_tying_with_optional_bundle",
       "feedback": "A tie-in makes purchase of one product conditional on another; it is not merely offering an optional package.",
-      "aHash": "e3d1371feeb2650a48f782a42e744d9f2a518f76bc3f07733b1ec9ef6a7e945f"
+      "aHash": "e3d1371feeb2650a48f782a42e744d9f2a518f76bc3f07733b1ec9ef6a7e945f",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 185,
       "sourceGame": "strategyDesk",
-      "q": "Two customers value Product A at $70 and $30, and Product B at $30 and $70. If cost is zero, what bundle price sells to both and maximizes revenue from these listed values?",
+      "q": "Two customers value Product A at $70 and $30, and Product B at $30 and $70. If cost is zero, what bundle price sells to both and maximizes revenue from these listed values? Values are additive, and buyers buy when value equals price.",
       "options": [
         "$70",
         "$140",
@@ -4545,35 +4130,37 @@ window.questionBanks = {
       "type": "calculation",
       "objective": "LO14.4",
       "difficulty": "medium",
-      "conceptCluster": "LO14.4_strategy_desk",
+      "conceptCluster": "medium_strategyDesk_bundling",
       "primarySkill": "bundling",
       "secondarySkills": [],
       "repairSkill": "bundling",
       "commonError": "uses_highest_single_product_value",
       "feedback": "Each customer values the bundle at $100, so a $100 bundle price sells two packages for $200.",
-      "aHash": "797c7d463af6ea7fa7f88d50602cea0531e3e0da8cb59be3b0983bb98958cce8"
+      "aHash": "797c7d463af6ea7fa7f88d50602cea0531e3e0da8cb59be3b0983bb98958cce8",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 186,
       "sourceGame": "strategyDesk",
-      "q": "A firm receives $12 million if agreement is reached and $4 million if talks fail. What is the firm’s gain from agreement?",
+      "q": "Two parties can create $24,000 of total value by agreement. Their disagreement payoffs are $6,000 and $8,000. They split the incremental surplus equally. What final payoff does the first party receive?",
       "options": [
-        "$12 million",
-        "$8 million",
-        "$4 million",
-        "$16 million"
+        "$5,000",
+        "$11,000",
+        "$12,000",
+        "$18,000"
       ],
       "tag": "nonstrategic_bargaining",
       "type": "calculation",
       "objective": "LO16.2",
       "difficulty": "medium",
-      "conceptCluster": "LO16.2_strategy_desk",
+      "conceptCluster": "medium_strategyDesk_nonstrategic_bargaining",
       "primarySkill": "nonstrategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "nonstrategic_bargaining",
-      "commonError": "uses_agreement_value_instead_of_incremental_gain",
-      "feedback": "The gain from agreement is $12 million − $4 million = $8 million.",
-      "aHash": "44ce4a6d0d15c4760378d63127bb287fffdf8231cfd3dd3b16cc2d15a2ed3b5a"
+      "commonError": "splits_gross_value_instead_of_incremental_surplus",
+      "feedback": "Incremental surplus is $24,000 − $6,000 − $8,000 = $10,000. The first party receives its $6,000 fallback plus $5,000, for $11,000.",
+      "aHash": "722e97581435cb85bf718d825fa52a85d729c09a49d06026fb8ca2ab6046adcd",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 187,
@@ -4589,13 +4176,14 @@ window.questionBanks = {
       "type": "application",
       "objective": "LO14.4",
       "difficulty": "medium",
-      "conceptCluster": "LO14.4_strategy_desk",
+      "conceptCluster": "medium_strategyDesk_bundling",
       "primarySkill": "bundling",
       "secondarySkills": [],
       "repairSkill": "bundling",
       "commonError": "assumes_pure_bundle_always_dominates",
       "feedback": "Mixed bundling offers flexibility to capture customers who want the package and those who value only one component.",
-      "aHash": "7ed099f7606fbed21be6711669246ae388f8ce96e11c8e7211b4adc2cf15e666"
+      "aHash": "7ed099f7606fbed21be6711669246ae388f8ce96e11c8e7211b4adc2cf15e666",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 188,
@@ -4611,13 +4199,14 @@ window.questionBanks = {
       "type": "calculation",
       "objective": "LO16.2",
       "difficulty": "medium",
-      "conceptCluster": "LO16.2_strategy_desk",
+      "conceptCluster": "medium_strategyDesk_nonstrategic_bargaining",
       "primarySkill": "nonstrategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "nonstrategic_bargaining",
       "commonError": "adds_agreement_values_instead_of_incremental_gains",
       "feedback": "The firm gains $6 million and the union gains $7 million, so agreement creates $13 million in total surplus.",
-      "aHash": "c501ade95caa5bb1e2ea05c178506f48a86dbd4f04ff7947be2087cd2a652607"
+      "aHash": "c501ade95caa5bb1e2ea05c178506f48a86dbd4f04ff7947be2087cd2a652607",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 189,
@@ -4633,13 +4222,14 @@ window.questionBanks = {
       "type": "interpretation",
       "objective": "LO16.2",
       "difficulty": "medium",
-      "conceptCluster": "LO16.2_strategy_desk",
+      "conceptCluster": "medium_strategyDesk_nonstrategic_bargaining",
       "primarySkill": "nonstrategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "nonstrategic_bargaining",
       "commonError": "reverses_effect_of_better_outside_option",
-      "feedback": "A better fallback raises what the union must receive to prefer agreement and strengthens its bargaining position.",
-      "aHash": "e4d68bb4ae41b949ad4031f0e958709b4f7bda20ef4fb68df43c39221b4e3afd"
+      "feedback": "A better fallback raises the union’s reservation payoff. With total agreement value fixed, incremental surplus above both fallback payoffs falls; bargaining power and the size of gains are different concepts.",
+      "aHash": "e4d68bb4ae41b949ad4031f0e958709b4f7bda20ef4fb68df43c39221b4e3afd",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 374,
@@ -4661,12 +4251,13 @@ window.questionBanks = {
       "repairSkill": "nash_equilibrium",
       "commonError": "equates_equilibrium_with_efficiency",
       "feedback": "Once both cut, a unilateral move back to maintaining price lowers that firm's payoff, so neither wants to deviate alone.",
-      "aHash": "80b758e58e0ce830e44d14a6d7c32236cfca5fce988a8807734b65b618f83d65"
+      "aHash": "80b758e58e0ce830e44d14a6d7c32236cfca5fce988a8807734b65b618f83d65",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 19087,
       "sourceGame": "strategyDesk",
-      "q": "A monopolist can perfectly price discriminate and has no resale. Relative to single-price monopoly, what is the likely effect?",
+      "q": "A monopolist can perfectly price discriminate and has no resale. Relative to single-price monopoly, what is the likely effect? Assume known willingness to pay, no implementation cost, and ordinary downward-sloping demand with the same marginal cost.",
       "options": [
         "Output falls and consumer surplus rises",
         "Deadweight loss rises because every buyer pays a different price",
@@ -4674,7 +4265,7 @@ window.questionBanks = {
         "Output rises and deadweight loss falls; seller surplus grows"
       ],
       "tag": "price_discrimination",
-      "type": "analysis",
+      "type": "interpretation",
       "objective": "LO13.1",
       "difficulty": "medium",
       "conceptCluster": "medium_strategyDesk_price_discrimination",
@@ -4683,66 +4274,21 @@ window.questionBanks = {
       "repairSkill": "price_discrimination",
       "commonError": "confuses_surplus_transfer_with_deadweight_loss",
       "feedback": "Perfect discrimination can serve buyers down to MC, eliminating the lost trades while transferring much of the surplus to the monopolist.",
-      "aHash": "7cd055d33b811101d840befa4e20a247f5938298386f2888dde26c3454810a7c"
-    },
-    {
-      "id": 208,
-      "sourceGame": "strategyDesk",
-      "q": "In a prisoner’s dilemma, why can individually rational choices produce a poor joint outcome?",
-      "options": [
-        "Each player follows a private incentive that leaves both worse off than cooperation.",
-        "Both players are forced to maximize total surplus rather than respond to their own payoffs.",
-        "Neither player has a best response.",
-        "The game contains no strategic interdependence."
-      ],
-      "tag": "strategic_interdependence",
-      "type": "interpretation",
-      "objective": "LO15.1",
-      "difficulty": "medium",
-      "conceptCluster": "medium_strategyDesk_strategic_interdependence",
-      "primarySkill": "strategic_interdependence",
-      "secondarySkills": [],
-      "repairSkill": "strategic_interdependence",
-      "commonError": "assumes_private_and_joint_incentives_align",
-      "feedback": "The conflict between private incentives and collective welfare drives the prisoner’s-dilemma result.",
-      "aHash": "b94b45b9b8761b6dcd8471fdc0fe84381a65235dc0de00809cccfd032c4cf395"
-    },
-    {
-      "id": 220,
-      "sourceGame": "strategyDesk",
-      "q": "Using gametreeone, what action will Player 2 choose after Player 1 invests?",
-      "options": [
-        "Low Price",
-        "High Price",
-        "Invest",
-        "Don’t Invest"
-      ],
-      "tag": "backward_induction",
-      "type": "graph",
-      "objective": "LO15.2",
-      "difficulty": "medium",
-      "conceptCluster": "medium_strategyDesk_backward_induction",
-      "primarySkill": "backward_induction",
-      "secondarySkills": [],
-      "repairSkill": "backward_induction",
-      "commonError": "uses_player1_payoff_at_player2_node",
-      "feedback": "After Invest, Player 2 compares payoffs 4 and 5 and chooses Low Price.",
-      "image": "gametreeone.webp",
-      "graphRequired": true,
-      "aHash": "828e4e34bf5ef49f5198d11d51aa125f273f71f0229e985c4ac055db2375777f"
+      "aHash": "7cd055d33b811101d840befa4e20a247f5938298386f2888dde26c3454810a7c",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 222,
       "sourceGame": "strategyDesk",
       "q": "Using gametreeone and backward induction, what will Player 1 choose?",
       "options": [
-        "Invest",
-        "High Price",
-        "Don’t Invest",
-        "Player 1 is indifferent"
+        "Either initial action; their induced payoffs are equal",
+        "Invest; its induced payoff exceeds the noninvestment payoff",
+        "Don’t Invest; its induced payoff exceeds the investment payoff",
+        "Invest; Player 2 chooses High after either initial action"
       ],
       "tag": "backward_induction",
-      "type": "graph",
+      "type": "graph/tree interpretation",
       "objective": "LO15.2",
       "difficulty": "medium",
       "conceptCluster": "medium_strategyDesk_backward_induction",
@@ -4753,44 +4299,21 @@ window.questionBanks = {
       "feedback": "Invest leads to Player 2 choosing Low Price and a payoff of 2 for Player 1. Don’t Invest leads to High Price and a payoff of 4.",
       "image": "gametreeone.webp",
       "graphRequired": true,
-      "aHash": "4671e5c7d95dc670068a1240101429fc7dd9f7b7b1be822c01e04c9e4d621cad"
-    },
-    {
-      "id": 223,
-      "sourceGame": "strategyDesk",
-      "q": "What is the subgame-perfect equilibrium outcome in gametreeone?",
-      "options": [
-        "Invest, High Price with payoff (6,4)",
-        "Invest, Low Price with payoff (2,5)",
-        "Don’t Invest, Low Price with payoff (1,2), because Player 1 prefers the lowest terminal payoff",
-        "Don’t Invest, High Price with payoff (4,3)"
-      ],
-      "tag": "backward_induction",
-      "type": "graph",
-      "objective": "LO15.2",
-      "difficulty": "medium",
-      "conceptCluster": "medium_strategyDesk_backward_induction",
-      "primarySkill": "backward_induction",
-      "secondarySkills": [],
-      "repairSkill": "backward_induction",
-      "commonError": "selects_best_terminal_payoff_without_backward_induction",
-      "feedback": "Backward induction gives Low Price after Invest, High Price after Don’t Invest, and therefore Don’t Invest initially.",
-      "image": "gametreeone.webp",
-      "graphRequired": true,
-      "aHash": "a3f1e9346db832444dbbba3a6ead179420fe30563b0568d618b2e6f8b458cf35"
+      "aHash": "80489b747d88e4a1530b4313d126484462400df6abbc6d6e9bab1e99e45b1a2f",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 224,
       "sourceGame": "strategyDesk",
       "q": "In gametreeone, Player 2 threatens to choose High Price if Player 1 invests. Is that threat credible?",
       "options": [
-        "No; after investment Player 2 prefers Low Price because 5 exceeds 4.",
-        "Yes; High Price gives Player 1 the largest payoff, so Player 2 will carry it out.",
-        "Yes; any announced action is credible.",
-        "No; Player 2 prefers not to move at all."
+        "No; Player 2 would prefer Low after investment",
+        "Yes; Player 2 would prefer High after investment",
+        "Yes; Player 2 is indifferent after investment",
+        "No; Player 2 would prefer Low after either initial action"
       ],
       "tag": "credible_threats",
-      "type": "graph",
+      "type": "graph/tree interpretation",
       "objective": "LO15.2",
       "difficulty": "medium",
       "conceptCluster": "medium_strategyDesk_credible_threats",
@@ -4801,29 +4324,8 @@ window.questionBanks = {
       "feedback": "At the relevant node, Player 2 would choose Low Price, so the threat to choose High Price is not credible.",
       "image": "gametreeone.webp",
       "graphRequired": true,
-      "aHash": "de23756579294aeed312c8db66fb84f955a2904d2b5592bb825208e5193d2ac8"
-    },
-    {
-      "id": 227,
-      "sourceGame": "strategyDesk",
-      "q": "When solving a game tree, why is choosing the branch with the largest payoff at the root often wrong?",
-      "options": [
-        "The root player never receives a payoff.",
-        "All terminal payoffs must be averaged.",
-        "The first mover must always choose the left branch because game trees are solved from left to right.",
-        "Later players may choose responses that make that terminal payoff unreachable."
-      ],
-      "tag": "backward_induction",
-      "type": "strategy",
-      "objective": "LO15.2",
-      "difficulty": "medium",
-      "conceptCluster": "medium_strategyDesk_backward_induction",
-      "primarySkill": "backward_induction",
-      "secondarySkills": [],
-      "repairSkill": "backward_induction",
-      "commonError": "ignores_later_best_responses",
-      "feedback": "The root player must anticipate rational responses at every later decision node.",
-      "aHash": "adf45f66aeeecb83ebb8b9365303d894ace86e1159cdeb4975c3af65cd8a94ee"
+      "aHash": "c743814879df86f0f527d6a8106778628e5717d0d923f7ac39a42b21879c2d9b",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 232,
@@ -4845,29 +4347,8 @@ window.questionBanks = {
       "repairSkill": "nash_equilibrium",
       "commonError": "selects_jointly_high_payoff_cell",
       "feedback": "Down is A’s best response to either column, and Right is B’s best response to either row.",
-      "aHash": "584514527c5415000499ea46e5550453ad1764f1fdbd5a7d09be74616f9958af"
-    },
-    {
-      "id": 233,
-      "sourceGame": "strategyDesk",
-      "q": "Two firms choose High or Low. Payoffs are: High-High (6,6), High-Low (1,8), Low-High (8,1), Low-Low (3,3). Which outcome is Nash?",
-      "options": [
-        "High, High",
-        "Low, Low",
-        "High, Low",
-        "Low, High"
-      ],
-      "tag": "nash_equilibrium",
-      "type": "matrix",
-      "objective": "LO15.3",
-      "difficulty": "medium",
-      "conceptCluster": "medium_strategyDesk_nash_equilibrium",
-      "primarySkill": "nash_equilibrium",
-      "secondarySkills": [],
-      "repairSkill": "nash_equilibrium",
-      "commonError": "chooses_cooperative_cell",
-      "feedback": "Each firm gains by choosing Low against either rival action, so Low-Low is the equilibrium.",
-      "aHash": "480b7705a8b58a88b77779f6ed2b2182af178fb6a487077dd083a89829ecd686"
+      "aHash": "584514527c5415000499ea46e5550453ad1764f1fdbd5a7d09be74616f9958af",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 234,
@@ -4889,7 +4370,8 @@ window.questionBanks = {
       "repairSkill": "nash_equilibrium",
       "commonError": "misses_multiple_coordination_equilibria",
       "feedback": "A-A and B-B are both mutual best responses.",
-      "aHash": "3fc4ccfe745870e2c0d99f71f30ff0656c8dedd41cc1d7d3d376b0dbe685e2f3"
+      "aHash": "3fc4ccfe745870e2c0d99f71f30ff0656c8dedd41cc1d7d3d376b0dbe685e2f3",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 238,
@@ -4911,12 +4393,13 @@ window.questionBanks = {
       "repairSkill": "nash_equilibrium",
       "commonError": "finds_only_one_equilibrium",
       "feedback": "At Up-Left, neither player wants to deviate; the same is true at Down-Right.",
-      "aHash": "5d04f45360f1f1456f3f518e285dfabd32e78dd68c35a1b139b537876c4d33c8"
+      "aHash": "5d04f45360f1f1456f3f518e285dfabd32e78dd68c35a1b139b537876c4d33c8",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 240,
       "sourceGame": "strategyDesk",
-      "q": "Firm A chooses Enter or Stay Out. Firm B chooses Fight or Accommodate. Payoffs are: Enter-Fight (-2,-1), Enter-Accommodate (4,2), Stay Out-Fight (0,5), Stay Out-Accommodate (0,3). Which outcomes are Nash equilibria?",
+      "q": "This is a simultaneous-move game. Payoffs are ordered (Firm A, Firm B). Firm A chooses Enter or Stay Out. Firm B chooses Fight or Accommodate. Payoffs are: Enter-Fight (-2,-1), Enter-Accommodate (4,2), Stay Out-Fight (0,5), Stay Out-Accommodate (0,3). Which outcomes are Nash equilibria?",
       "options": [
         "Enter-Accommodate and Stay Out-Fight",
         "Enter-Fight only",
@@ -4933,51 +4416,54 @@ window.questionBanks = {
       "repairSkill": "nash_equilibrium",
       "commonError": "finds_only_one_entry_game_equilibrium",
       "feedback": "Enter-Accommodate and Stay Out-Fight are both mutual best responses.",
-      "aHash": "7b288f4b35f372ba10435b0618d76ea224e1b1be956f538a5a0c1023f75a2d9e"
+      "aHash": "7b288f4b35f372ba10435b0618d76ea224e1b1be956f538a5a0c1023f75a2d9e",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 246,
       "sourceGame": "strategyDesk",
       "q": "A firm signs an enforceable long-term contract that requires it to buy all output from one supplier. What strategic effect can the contract create?",
       "options": [
-        "It guarantees that every future price is optimal.",
-        "It removes all bargaining conflict.",
+        "It eliminates every strategic choice by the supplier",
+        "It guarantees that all future supplier prices are optimal",
         "It makes switching suppliers later more costly and can strengthen the original commitment.",
-        "It converts the interaction into a one-player decision because the supplier no longer has strategic choices."
+        "It leaves the buyer equally free to switch without penalty"
       ],
       "tag": "strategic_commitment",
       "type": "application",
       "objective": "LO15.4",
       "difficulty": "medium",
-      "conceptCluster": "medium_strategyDesk_strategic_commitment",
-      "primarySkill": "strategic_commitment",
+      "conceptCluster": "medium_strategyDesk_strategic_rule_design",
+      "primarySkill": "strategic_rule_design",
       "secondarySkills": [],
-      "repairSkill": "strategic_commitment",
+      "repairSkill": "strategic_rule_design",
       "commonError": "ignores_enforceability",
       "feedback": "An enforceable contract can alter future options and therefore change the other party’s expectations.",
-      "aHash": "d33b930ecdc8dfa38f2de12b4ebc604ceec28fa63d9cac7103219fb4c8cff616"
+      "aHash": "d33b930ecdc8dfa38f2de12b4ebc604ceec28fa63d9cac7103219fb4c8cff616",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 247,
       "sourceGame": "strategyDesk",
-      "q": "Which threat is least credible?",
+      "q": "Which threatened response is least credible when the stated alternatives are available?",
       "options": [
-        "A firm has already installed capacity that lowers its cost of fighting entry and has made the investment visible to the entrant.",
-        "A contract imposes a penalty if the firm fails to retaliate.",
-        "Management delegates retaliation to a unit rewarded for defending share.",
-        "A firm promises to start a price war that would reduce its own profit after entry occurs."
+        "A delegated decision maker receives a higher payoff from retaliation",
+        "Installed capacity makes aggressive output more profitable than accommodation",
+        "An enforceable penalty makes retaliation better than nonretaliation",
+        "A promised price war yields less post-entry profit than accommodation"
       ],
       "tag": "strategic_commitment",
       "type": "trap",
       "objective": "LO15.4",
       "difficulty": "medium",
-      "conceptCluster": "medium_strategyDesk_strategic_commitment",
-      "primarySkill": "strategic_commitment",
+      "conceptCluster": "medium_strategyDesk_strategic_rule_design",
+      "primarySkill": "strategic_rule_design",
       "secondarySkills": [],
-      "repairSkill": "strategic_commitment",
+      "repairSkill": "strategic_rule_design",
       "commonError": "accepts_costly_talk_as_credible",
-      "feedback": "A threat that becomes unprofitable when the moment arrives will not deter a rational rival unless incentives are changed.",
-      "aHash": "0e236ad4293dc3611a51d6ab669ed084348ec0a9b8895f2e7c4273b1cda0d81d"
+      "feedback": "Without a device that changes incentives, a firm will not carry out a threat yielding less profit than accommodation once entry occurs.",
+      "aHash": "f43c8519b6ac0e9452700535db07e46b083755ef686a12889e14dd8f246256d8",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 248,
@@ -4993,57 +4479,37 @@ window.questionBanks = {
       "type": "application",
       "objective": "LO15.4",
       "difficulty": "medium",
-      "conceptCluster": "medium_strategyDesk_strategic_commitment",
-      "primarySkill": "strategic_commitment",
+      "conceptCluster": "medium_strategyDesk_strategic_rule_design",
+      "primarySkill": "strategic_rule_design",
       "secondarySkills": [],
-      "repairSkill": "strategic_commitment",
+      "repairSkill": "strategic_rule_design",
       "commonError": "treats_sunk_cost_alone_as_deterrence",
       "feedback": "Observable capacity can make aggressive post-entry output more profitable and therefore more credible.",
-      "aHash": "94532b5a6ff255d37a442d5525c343f9bf468ee39b1600753f17aad59cb9c3b4"
-    },
-    {
-      "id": 249,
-      "sourceGame": "strategyDesk",
-      "q": "Moving first creates an advantage only when",
-      "options": [
-        "the first mover always receives the larger payoff",
-        "the first action changes the later player’s best response in a favorable way",
-        "the first action can be costlessly reversed after observing the later player’s response",
-        "the second player has no payoff"
-      ],
-      "tag": "strategic_rules",
-      "type": "interpretation",
-      "objective": "LO15.4",
-      "difficulty": "medium",
-      "conceptCluster": "medium_strategyDesk_strategic_rules",
-      "primarySkill": "strategic_rules",
-      "secondarySkills": [],
-      "repairSkill": "strategic_rules",
-      "commonError": "assumes_first_mover_always_wins",
-      "feedback": "First-mover advantage depends on commitment and the response it induces, not merely on chronological order.",
-      "aHash": "fa11e214f74e50037d1d528034b983d7e0731a46a10508b501197e90a70aa280"
+      "aHash": "94532b5a6ff255d37a442d5525c343f9bf468ee39b1600753f17aad59cb9c3b4",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 251,
       "sourceGame": "strategyDesk",
       "q": "Before a contract, both firms have a dominant strategy to cut price, producing payoffs (3,3). A contract imposes a $4 penalty on any firm that cuts. What is the intended strategic effect?",
       "options": [
-        "Increase the number of customers in the market without changing either firm’s payoff from cutting price",
-        "Make price cuts impossible to observe",
-        "Turn every payoff into zero",
+        "Guarantee a unique equilibrium without checking the other payoffs",
+        "Increase every payoff from cutting by 4",
+        "Change only the labels of the strategies",
         "Change the payoffs so maintaining price can become a best response"
       ],
       "tag": "strategic_rules",
       "type": "application",
       "objective": "LO15.4",
       "difficulty": "medium",
-      "conceptCluster": "medium_strategyDesk_strategic_rules",
-      "primarySkill": "strategic_rules",
+      "conceptCluster": "medium_strategyDesk_strategic_rule_design",
+      "primarySkill": "strategic_rule_design",
       "secondarySkills": [],
-      "repairSkill": "strategic_rules",
+      "repairSkill": "strategic_rule_design",
       "commonError": "fails_to_update_payoffs",
-      "feedback": "A penalty changes incentives by reducing the payoff from the targeted action.",
-      "aHash": "db2f624ac8cf786f21617518249ea861215912cd2f5b17fa5e7feca1f7147e14"
+      "feedback": "A penalty changes incentives by reducing the payoff from the targeted action. The remaining payoff cells are needed to determine whether the penalty actually changes the equilibrium; the question asks only the intended incentive effect.",
+      "aHash": "db2f624ac8cf786f21617518249ea861215912cd2f5b17fa5e7feca1f7147e14",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 363,
@@ -5055,19 +4521,20 @@ window.questionBanks = {
         "High Price, Match",
         "Medium Price, Match"
       ],
-      "tag": "nash_equilibrium",
-      "type": "graph-integration",
-      "objective": "LO15.3",
+      "tag": "backward_induction",
+      "type": "graph/tree interpretation",
+      "objective": "LO15.2",
       "difficulty": "medium",
-      "conceptCluster": "medium_strategyDesk_nash_equilibrium",
-      "primarySkill": "nash_equilibrium",
+      "conceptCluster": "medium_strategyDesk_backward_induction",
+      "primarySkill": "backward_induction",
       "secondarySkills": [],
-      "repairSkill": "nash_equilibrium",
+      "repairSkill": "backward_induction",
       "commonError": "fails_to_compare_continuation_payoffs",
       "feedback": "Firm A anticipates payoffs of 5, 6, and 2 from High, Medium, and Low respectively, so it chooses Medium; Firm B then Matches.",
       "image": "gametreetwo.webp",
       "graphRequired": true,
-      "aHash": "01282637a652c7e8358f08e8b5f8babdfe42adde22b59c85da4fffee8cb0c78e"
+      "aHash": "01282637a652c7e8358f08e8b5f8babdfe42adde22b59c85da4fffee8cb0c78e",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 364,
@@ -5075,23 +4542,24 @@ window.questionBanks = {
       "q": "In gametreetwo, which statement best explains why High Price, Match is not subgame perfect?",
       "options": [
         "Firm B would switch to Not Match after High",
-        "Firm A would always choose the Low Price branch",
-        "The outcome gives Firm A a payoff of zero",
-        "Match is not available after High Price in the displayed game"
+        "Firm B would switch to Not Match after Medium",
+        "Firm A would prefer Low given B’s optimal continuations",
+        "Firm B is indifferent after High, so no pure-strategy solution exists"
       ],
-      "tag": "strategic_rule_design",
-      "type": "graph-integration",
-      "objective": "LO15.4",
+      "tag": "backward_induction",
+      "type": "graph/tree interpretation",
+      "objective": "LO15.2",
       "difficulty": "medium",
-      "conceptCluster": "medium_strategyDesk_strategic_rule_design",
-      "primarySkill": "strategic_rule_design",
+      "conceptCluster": "medium_strategyDesk_backward_induction",
+      "primarySkill": "backward_induction",
       "secondarySkills": [],
-      "repairSkill": "strategic_rule_design",
+      "repairSkill": "backward_induction",
       "commonError": "accepts_noncredible_continuation_action",
       "feedback": "After High Price, Firm B gets 6 from Not Match rather than 3 from Match, so Match is not sequentially rational.",
       "image": "gametreetwo.webp",
       "graphRequired": true,
-      "aHash": "387a400d0729427539d4e8a4801ca3809889a8860e301f3cc5910232dc21cdfd"
+      "aHash": "387a400d0729427539d4e8a4801ca3809889a8860e301f3cc5910232dc21cdfd",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 365,
@@ -5113,95 +4581,8 @@ window.questionBanks = {
       "repairSkill": "nash_equilibrium",
       "commonError": "checks_only_one_players_best_response",
       "feedback": "Stay Out is Firm 2's best response to either action. Given Stay Out, Firm 1 prefers Hold, so Hold and Stay Out is the equilibrium.",
-      "aHash": "a6f49520cfb78d2394c1ec1de8ab6b759a4662285e1dd9acf0d1ccaf755c6dd7"
-    },
-    {
-      "id": 366,
-      "sourceGame": "strategyDesk",
-      "q": "Player 1's Strategy A pays 4, 3, and 2 against three rival actions. Strategy B pays 4, 5, and 2. What is true?",
-      "options": [
-        "Strategy B strictly dominates Strategy A",
-        "Strategy A weakly dominates Strategy B",
-        "Strategy B weakly dominates Strategy A",
-        "Neither strategy dominates the other"
-      ],
-      "tag": "nash_equilibrium",
-      "type": "application",
-      "objective": "LO15.3",
-      "difficulty": "medium",
-      "conceptCluster": "medium_strategyDesk_nash_equilibrium",
-      "primarySkill": "nash_equilibrium",
-      "secondarySkills": [],
-      "repairSkill": "nash_equilibrium",
-      "commonError": "confuses_weak_and_strict_dominance",
-      "feedback": "Strategy B is never worse and is strictly better against one rival action, so it weakly dominates Strategy A.",
-      "aHash": "31233eead9f730cefadc33f442565a7cb8045f82fbfe3b1e1b34b942e47dbd9b"
-    },
-    {
-      "id": 367,
-      "sourceGame": "strategyDesk",
-      "q": "A simultaneous game has two Nash equilibria. What additional fact could select one equilibrium without changing the payoffs?",
-      "options": [
-        "A sunk cost shared equally by both firms",
-        "A random accounting change that leaves every payoff unchanged",
-        "The complete absence of communication or precedent",
-        "A shared convention or focal point"
-      ],
-      "tag": "strategic_rule_design",
-      "type": "interpretation",
-      "objective": "LO15.4",
-      "difficulty": "medium",
-      "conceptCluster": "medium_strategyDesk_strategic_rule_design",
-      "primarySkill": "strategic_rule_design",
-      "secondarySkills": [],
-      "repairSkill": "strategic_rule_design",
-      "commonError": "assumes_multiple_equilibria_are_impossible",
-      "feedback": "A convention, precedent, or focal point can coordinate expectations on one of several equilibria.",
-      "aHash": "ada8bc6ae8297f8dd46bfbd6360a99828f7df41f14bfb795902cebaa2b72f3e6"
-    },
-    {
-      "id": 369,
-      "sourceGame": "strategyDesk",
-      "q": "Two firms simultaneously choose High or Low price. If both choose High, payoffs are (8,8); High-Low gives (2,10); Low-High gives (10,2); Low-Low gives (5,5). What is the Nash equilibrium?",
-      "options": [
-        "High, High",
-        "Low, Low",
-        "High, Low",
-        "Low, High"
-      ],
-      "tag": "nash_equilibrium",
-      "type": "multi-step",
-      "objective": "LO15.3",
-      "difficulty": "medium",
-      "conceptCluster": "medium_strategyDesk_nash_equilibrium",
-      "primarySkill": "nash_equilibrium",
-      "secondarySkills": [],
-      "repairSkill": "nash_equilibrium",
-      "commonError": "selects_jointly_best_outcome_instead_of_best_responses",
-      "feedback": "Low strictly dominates High for each firm, so Low, Low is the Nash equilibrium even though High, High yields more joint profit.",
-      "aHash": "480b7705a8b58a88b77779f6ed2b2182af178fb6a487077dd083a89829ecd686"
-    },
-    {
-      "id": 390,
-      "sourceGame": "strategyDesk",
-      "q": "Two firms can choose Safe or Risky. Payoffs are Safe/Safe (6,6), Safe/Risky (2,9), Risky/Safe (9,2), and Risky/Risky (3,3). Which description is correct?",
-      "options": [
-        "Safe is dominant for both",
-        "There are two coordination equilibria, one at Safe and one at Risky",
-        "Risky is dominant for both, creating a prisoner's dilemma",
-        "No Nash equilibrium exists because both firms prefer different outcomes"
-      ],
-      "tag": "strategic_interdependence",
-      "type": "multi-step",
-      "objective": "LO15.1",
-      "difficulty": "medium",
-      "conceptCluster": "medium_strategyDesk_strategic_interdependence",
-      "primarySkill": "strategic_interdependence",
-      "secondarySkills": [],
-      "repairSkill": "strategic_interdependence",
-      "commonError": "looks_only_at_joint_payoff",
-      "feedback": "Each firm earns more from Risky regardless of the rival's choice, yet both would prefer Safe/Safe to Risky/Risky.",
-      "aHash": "d45e4bbf91bb98f9f7b5e21ebf682c12e5c9622d068b0277f300298af020c4cd"
+      "aHash": "a6f49520cfb78d2394c1ec1de8ab6b759a4662285e1dd9acf0d1ccaf755c6dd7",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 9054,
@@ -5223,29 +4604,8 @@ window.questionBanks = {
       "repairSkill": "nash_equilibrium",
       "commonError": "checks_only_one_players_best_response",
       "feedback": "Player 1 prefers Up against Left and Down against Right. Player 2 prefers Right against Up and Left against Down. No cell is a mutual best response.",
-      "aHash": "ac03a7c52bb9571ed2c37d7db6ee348df71df9e0052fdd5e1122c4ce6b44b041"
-    },
-    {
-      "id": 9055,
-      "sourceGame": "strategyDesk",
-      "q": "In a pricing game, Firm A's best response is Low against either rival price. Firm B's best response is High against A's High and Low against A's Low. Which statement follows?",
-      "options": [
-        "High, High is the unique equilibrium",
-        "Both diagonal outcomes are Nash equilibria",
-        "High, Low is the unique equilibrium",
-        "Low, Low is the unique equilibrium"
-      ],
-      "tag": "nash_equilibrium",
-      "type": "integration",
-      "objective": "LO15.3",
-      "difficulty": "medium",
-      "conceptCluster": "medium_strategyDesk_nash_equilibrium",
-      "primarySkill": "nash_equilibrium",
-      "secondarySkills": [],
-      "repairSkill": "nash_equilibrium",
-      "commonError": "fails_to_intersect_best_responses",
-      "feedback": "A always chooses Low; B's best response to Low is Low, so the unique intersection is Low, Low.",
-      "aHash": "29b88460b267f43e9406fe06a2fd8a924b3e7c51b4f554a73af9c99f955826f8"
+      "aHash": "ac03a7c52bb9571ed2c37d7db6ee348df71df9e0052fdd5e1122c4ce6b44b041",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 9056,
@@ -5261,13 +4621,14 @@ window.questionBanks = {
       "type": "integration",
       "objective": "LO15.4",
       "difficulty": "medium",
-      "conceptCluster": "medium_strategyDesk_game_rules",
-      "primarySkill": "game_rules",
+      "conceptCluster": "medium_strategyDesk_strategic_rule_design",
+      "primarySkill": "strategic_rule_design",
       "secondarySkills": [],
-      "repairSkill": "game_rules",
+      "repairSkill": "strategic_rule_design",
       "commonError": "assumes_rules_cannot_change_equilibrium_selection",
-      "feedback": "Portability changes future switching incentives and can reduce the force of installed-base lock-in.",
-      "aHash": "3ba4bbd382d1aeecd7e80004c2c61848d30ad45e6db77e76698147eed779fe2f"
+      "feedback": "Portability changes future switching incentives and can reduce the force of installed-base lock-in. The stated facts support a possible lock-in effect, not a complete equilibrium calculation or guaranteed switch.",
+      "aHash": "3ba4bbd382d1aeecd7e80004c2c61848d30ad45e6db77e76698147eed779fe2f",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 9058,
@@ -5280,7 +4641,7 @@ window.questionBanks = {
         "Don't Invest, Low Price"
       ],
       "tag": "backward_induction",
-      "type": "graph-integration",
+      "type": "graph/tree interpretation",
       "objective": "LO15.2",
       "difficulty": "medium",
       "conceptCluster": "medium_strategyDesk_backward_induction",
@@ -5291,12 +4652,13 @@ window.questionBanks = {
       "feedback": "Player 2 then chooses High after Invest (4>3) and High after Don't Invest (3>2). Player 1 compares 6 with 4 and invests.",
       "image": "gametreeone.webp",
       "graphRequired": true,
-      "aHash": "0926a01131a3b3e269cc910600a461de4174ba6400ad182b1be11bdf1c76ed08"
+      "aHash": "0926a01131a3b3e269cc910600a461de4174ba6400ad182b1be11bdf1c76ed08",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 9061,
       "sourceGame": "strategyDesk",
-      "q": "In gametreeone, by how much must Player 1's payoff at Invest–Low Price rise, using integer payoffs, to make Invest strictly optimal under the original continuation choices?",
+      "q": "In gametreeone, what is the smallest integer increase in Player 1’s payoff at Invest–Low Price that makes Invest strictly optimal under the original continuation choices?",
       "options": [
         "1 payoff unit",
         "3 payoff units",
@@ -5304,7 +4666,7 @@ window.questionBanks = {
         "4 payoff units"
       ],
       "tag": "backward_induction",
-      "type": "graph-integration",
+      "type": "graph/tree interpretation",
       "objective": "LO15.2",
       "difficulty": "medium",
       "conceptCluster": "medium_strategyDesk_backward_induction",
@@ -5315,7 +4677,8 @@ window.questionBanks = {
       "feedback": "Original continuation payoffs to Player 1 are 2 after Invest and 4 after Don't Invest. An increase of 3 raises the investment payoff to 5.",
       "image": "gametreeone.webp",
       "graphRequired": true,
-      "aHash": "819939f17eaf949e8f3f24b644cf5aae8d84d803d6c2f45c8d992547b91159f4"
+      "aHash": "819939f17eaf949e8f3f24b644cf5aae8d84d803d6c2f45c8d992547b91159f4",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 9062,
@@ -5328,7 +4691,7 @@ window.questionBanks = {
         "Don't Invest, Low Price"
       ],
       "tag": "backward_induction",
-      "type": "graph-integration",
+      "type": "graph/tree interpretation",
       "objective": "LO15.2",
       "difficulty": "medium",
       "conceptCluster": "medium_strategyDesk_backward_induction",
@@ -5339,7 +4702,8 @@ window.questionBanks = {
       "feedback": "Player 2 chooses Low after both branches. Player 1 then compares 2 from Invest with 1 from Don't Invest and invests.",
       "image": "gametreeone.webp",
       "graphRequired": true,
-      "aHash": "4c3c5aa5a0875546ac47bf11c5fa9fdbc87a37153c9bf675ee82404ece9970df"
+      "aHash": "4c3c5aa5a0875546ac47bf11c5fa9fdbc87a37153c9bf675ee82404ece9970df",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 9064,
@@ -5352,7 +4716,7 @@ window.questionBanks = {
         "Low Price, Not Match"
       ],
       "tag": "backward_induction",
-      "type": "graph-integration",
+      "type": "graph/tree interpretation",
       "objective": "LO15.2",
       "difficulty": "medium",
       "conceptCluster": "medium_strategyDesk_backward_induction",
@@ -5363,55 +4727,33 @@ window.questionBanks = {
       "feedback": "B chooses Not Match after all three prices. Firm A's induced payoffs are 5, 4, and 2, so it chooses High.",
       "image": "gametreetwo.webp",
       "graphRequired": true,
-      "aHash": "88c784976f0bed9092a71d10c1eb5bcc89da176f13530718679adc6f2a6ddb3e"
+      "aHash": "88c784976f0bed9092a71d10c1eb5bcc89da176f13530718679adc6f2a6ddb3e",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 9065,
       "sourceGame": "strategyDesk",
-      "q": "In gametreetwo, Firm A can pay Firm B a bonus only if B matches after High Price. What bonus condition makes Match strictly optimal for B?",
+      "q": "In gametreetwo, Firm A can pay Firm B a nonnegative bonus only if B matches after High Price. Which condition is both necessary and sufficient to make Match strictly optimal for B?",
       "options": [
         "Exactly 2 payoff units",
         "More than 3 payoff units",
         "Exactly 3 payoff units",
         "More than 6 payoff units"
       ],
-      "tag": "game_rules",
-      "type": "graph-integration",
+      "tag": "strategic_rule_design",
+      "type": "graph/tree interpretation",
       "objective": "LO15.4",
       "difficulty": "medium",
-      "conceptCluster": "medium_strategyDesk_game_rules",
-      "primarySkill": "game_rules",
+      "conceptCluster": "medium_strategyDesk_strategic_rule_design",
+      "primarySkill": "strategic_rule_design",
       "secondarySkills": [],
-      "repairSkill": "game_rules",
+      "repairSkill": "strategic_rule_design",
       "commonError": "ignores_strict_preference_or_payoff_gap",
       "feedback": "At High Price, B receives 3 from Match and 6 from Not Match. A bonus must exceed 3 to make Match strictly better.",
       "image": "gametreetwo.webp",
       "graphRequired": true,
-      "aHash": "3e801bc358acc2673a28a166e23b00a6758dbe8ad82ec9172df3978a96f0886d"
-    },
-    {
-      "id": 9066,
-      "sourceGame": "strategyDesk",
-      "q": "In gametreetwo, how much must Firm A's payoff at Low Price–Not Match increase, using integer payoffs, for Low Price to become strictly optimal under B's original responses?",
-      "options": [
-        "3 payoff units",
-        "4 payoff units",
-        "5 payoff units",
-        "6 payoff units"
-      ],
-      "tag": "backward_induction",
-      "type": "graph-integration",
-      "objective": "LO15.2",
-      "difficulty": "medium",
-      "conceptCluster": "medium_strategyDesk_backward_induction",
-      "primarySkill": "backward_induction",
-      "secondarySkills": [],
-      "repairSkill": "backward_induction",
-      "commonError": "compares_to_wrong_induced_payoff",
-      "feedback": "A currently receives 2 from Low–Not Match and 6 from Medium–Match. It needs at least 7, requiring an increase of 5.",
-      "image": "gametreetwo.webp",
-      "graphRequired": true,
-      "aHash": "d9bb1b137c5b693a35c5edc0cf22d4491a12f1a5d01cf6f66a3de2da1ae2a4ab"
+      "aHash": "3e801bc358acc2673a28a166e23b00a6758dbe8ad82ec9172df3978a96f0886d",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 9069,
@@ -5433,7 +4775,8 @@ window.questionBanks = {
       "repairSkill": "credible_threats",
       "commonError": "treats_harmful_threat_as_credible",
       "feedback": "A threat is not credible when the incumbent's ex post best response is accommodation.",
-      "aHash": "20d3543f49ce64946ecbf78640c663ca4fbf71cee118a94d82dc7427f8a2b3dc"
+      "aHash": "20d3543f49ce64946ecbf78640c663ca4fbf71cee118a94d82dc7427f8a2b3dc",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 9074,
@@ -5445,61 +4788,41 @@ window.questionBanks = {
         "Two pure equilibria: Aggressive/Accommodate and Accommodate/Aggressive",
         "The unique Nash equilibrium is Accommodate/Accommodate"
       ],
-      "tag": "strategic_interdependence",
+      "tag": "nash_equilibrium",
       "type": "multi-step",
-      "objective": "LO15.1",
+      "objective": "LO15.3",
       "difficulty": "medium",
-      "conceptCluster": "medium_strategyDesk_strategic_interdependence",
-      "primarySkill": "strategic_interdependence",
+      "conceptCluster": "medium_strategyDesk_nash_equilibrium",
+      "primarySkill": "nash_equilibrium",
       "secondarySkills": [],
-      "repairSkill": "strategic_interdependence",
+      "repairSkill": "nash_equilibrium",
       "commonError": "assumes_the_jointly_better_symmetric_outcome_is_an_equilibrium",
       "feedback": "Each rival wants to be aggressive when the other accommodates and to accommodate when the other is aggressive. That creates two asymmetric pure-strategy equilibria.",
-      "aHash": "94d97c190fd9022466e8bd3c9d51aaaa5513c4163779eece9b26869712c78410"
+      "aHash": "94d97c190fd9022466e8bd3c9d51aaaa5513c4163779eece9b26869712c78410",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 9075,
       "sourceGame": "strategyDesk",
       "q": "A platform subsidizes developers, increasing their payoff from joining from 3 to 7 when users join. User payoffs are unchanged. In a two-sided coordination game, what can the subsidy do?",
       "options": [
-        "It eliminates network effects",
-        "It guarantees the platform earns positive profit at every adoption level",
-        "It automatically makes participation dominant for every user and developer",
+        "It necessarily makes joining dominant at every user adoption level",
+        "It necessarily eliminates the low-adoption equilibrium",
+        "It leaves developers’ adoption incentives unchanged",
         "It can strengthen a high-adoption equilibrium"
       ],
       "tag": "game_rules",
       "type": "integration",
       "objective": "LO15.4",
       "difficulty": "medium",
-      "conceptCluster": "medium_strategyDesk_game_rules",
-      "primarySkill": "game_rules",
+      "conceptCluster": "medium_strategyDesk_strategic_rule_design",
+      "primarySkill": "strategic_rule_design",
       "secondarySkills": [],
-      "repairSkill": "game_rules",
+      "repairSkill": "strategic_rule_design",
       "commonError": "treats_subsidy_as_only_transfer_without_equilibrium_effect",
       "feedback": "Changing developer incentives can alter the feedback loop that supports coordinated adoption.",
-      "aHash": "a519c70057f81cbf0757579a65f9382b7f1a66de1153c44c86c20b9cc735441a"
-    },
-    {
-      "id": 9161,
-      "sourceGame": "strategyDesk",
-      "q": "In a pricing game, each firm earns 8 if both keep price high, 2 if both cut, 12 if it cuts while the rival stays high, and 0 if it stays high while the rival cuts. What strategic structure is present?",
-      "options": [
-        "A coordination game with two equilibria",
-        "A prisoner’s dilemma with cutting as a dominant strategy",
-        "A zero-sum game",
-        "A sequential game solved only by backward induction after one firm observes the other"
-      ],
-      "tag": "strategic_interdependence",
-      "type": "integration",
-      "objective": "LO15.1",
-      "difficulty": "medium",
-      "conceptCluster": "medium_strategyDesk_strategic_interdependence",
-      "primarySkill": "strategic_interdependence",
-      "secondarySkills": [],
-      "repairSkill": "strategic_interdependence",
-      "commonError": "focuses_on_joint_payoff_not_best_responses",
-      "feedback": "Each firm prefers cutting regardless of the rival’s action, yet both would earn more from mutual high prices.",
-      "aHash": "6f50bad9a88698104c280ab3244c42bc767166ff8d5ba3a4fba12a461d3bcd4a"
+      "aHash": "a519c70057f81cbf0757579a65f9382b7f1a66de1153c44c86c20b9cc735441a",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 9162,
@@ -5521,31 +4844,8 @@ window.questionBanks = {
       "repairSkill": "strategic_interdependence",
       "commonError": "weights_payoffs_by_wrong_probabilities",
       "feedback": "Expected payoff is .7(6)+.3(−4)=4.2−1.2=3.0.",
-      "aHash": "d7c454daa82e2f249c3e200dcf9c0013b20d69ce64146dfffffbf9903d242658"
-    },
-    {
-      "id": 9169,
-      "sourceGame": "strategyDesk",
-      "q": "In gametreeone, Player 2 publicly promises High Price after Invest. Without an enforcement device, why does the promise fail to change the equilibrium?",
-      "options": [
-        "Player 1 cannot observe the promise",
-        "After Invest, Player 2 still earns more from Low Price, so the promise is not sequentially rational",
-        "High Price gives Player 1 too much profit",
-        "Don’t Invest becomes impossible after the promise, so Player 1 must invest even though Player 2 can still revise its price"
-      ],
-      "tag": "strategic_rule_design",
-      "type": "graph-integration",
-      "objective": "LO15.4",
-      "difficulty": "medium",
-      "conceptCluster": "medium_strategyDesk_strategic_rule_design",
-      "primarySkill": "strategic_rule_design",
-      "secondarySkills": [],
-      "repairSkill": "strategic_rule_design",
-      "commonError": "treats_announcement_as_commitment",
-      "feedback": "Player 2 earns 5 from Low versus 4 from High after Invest, so the announced action is not credible.",
-      "image": "gametreeone.webp",
-      "graphRequired": true,
-      "aHash": "04cb8ba9fd8cc1911d803fe3a14b423f3946dda4bf7db3b3a93a3515bd073b84"
+      "aHash": "d7c454daa82e2f249c3e200dcf9c0013b20d69ce64146dfffffbf9903d242658",
+      "canonicalDifficulty": "medium"
     },
     {
       "id": 9170,
@@ -5557,22 +4857,182 @@ window.questionBanks = {
         "High Price, Match",
         "Low Price, Not Match"
       ],
-      "tag": "strategic_rule_design",
-      "type": "graph-integration",
+      "tag": "backward_induction",
+      "type": "graph/tree interpretation",
+      "objective": "LO15.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_backward_induction",
+      "primarySkill": "backward_induction",
+      "secondarySkills": [],
+      "repairSkill": "backward_induction",
+      "commonError": "fails_to_recompute_follower_response",
+      "feedback": "B now matches after High, giving A 8. A still gets 6 after Medium and 2 after Low, so A chooses High.",
+      "image": "gametreetwo.webp",
+      "graphRequired": true,
+      "aHash": "6fcb35dde2e15a85ff02d0e441d6193f7fe4950874bc17d27e7a2adcef621140",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 346,
+      "sourceGame": "strategyDesk",
+      "q": "Low-value customers value Basic at $75 and Premium at $95. Basic costs $60 and Premium costs $120. Which incentive-compatibility condition directs low-value customers toward Basic?",
+      "options": [
+        "Premium surplus must exceed Basic surplus for low-value buyers",
+        "Premium must always be cheaper than Basic",
+        "Basic must give low-value buyers at least as much surplus",
+        "Both versions must contain identical features"
+      ],
+      "tag": "indirect_price_discrimination",
+      "type": "interpretation",
+      "objective": "LO14.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_indirect_price_discrimination",
+      "primarySkill": "indirect_price_discrimination",
+      "secondarySkills": [],
+      "repairSkill": "indirect_price_discrimination",
+      "commonError": "checks_only_high_type_constraint",
+      "feedback": "Low-value customers must weakly prefer Basic: $75−$60 = $15 versus $95−$120 = −$25.",
+      "aHash": "10518f21796b86616eeffa09f1e1664f8ecb71853cf97c005df3a8b90e1a0523",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 9071,
+      "sourceGame": "strategyDesk",
+      "q": "A payoff matrix has two Nash equilibria: (A,X) with (9,4) and (B,Y) with (5,8). Which equilibrium is risk dominant cannot be determined from these two cells alone because",
+      "options": [
+        "Risk dominance is zero-sum only",
+        "The equilibrium with the largest combined payoff is always risk dominant",
+        "Mixed strategies automatically eliminate both pure coordination equilibria",
+        "Off-diagonal deviation losses are also required"
+      ],
+      "tag": "nash_equilibrium",
+      "type": "trap",
+      "objective": "LO15.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_nash_equilibrium",
+      "primarySkill": "nash_equilibrium",
+      "secondarySkills": [],
+      "repairSkill": "nash_equilibrium",
+      "commonError": "uses_equilibrium_payoffs_only_for_risk_dominance",
+      "feedback": "Risk dominance depends on the losses from unilateral deviations, which are encoded in the off-diagonal outcomes.",
+      "aHash": "8651a7418a593ecec190be9a2e53736be129e172367147956f410d1e21657698",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 9073,
+      "sourceGame": "strategyDesk",
+      "q": "A firm adopts a price-matching guarantee. In a one-shot price game, why can the guarantee soften competition even if no customer ever redeems it?",
+      "options": [
+        "It bans rival discounts",
+        "It reduces the payoff from undercutting",
+        "It raises every firm's marginal production cost by the guaranteed refund",
+        "It converts substitute products into complements through contractual language"
+      ],
+      "tag": "game_rules",
+      "type": "integration",
       "objective": "LO15.4",
       "difficulty": "medium",
       "conceptCluster": "medium_strategyDesk_strategic_rule_design",
       "primarySkill": "strategic_rule_design",
       "secondarySkills": [],
       "repairSkill": "strategic_rule_design",
-      "commonError": "fails_to_recompute_follower_response",
-      "feedback": "B now matches after High, giving A 8. A still gets 6 after Medium and 2 after Low, so A chooses High.",
-      "image": "gametreetwo.webp",
-      "graphRequired": true,
-      "aHash": "6fcb35dde2e15a85ff02d0e441d6193f7fe4950874bc17d27e7a2adcef621140"
-    }
-  ],
-  "hard": [
+      "commonError": "requires_observed_redemptions_for_strategic_effect",
+      "feedback": "The rule changes rivals' incentives by reducing the demand they can steal through undercutting.",
+      "aHash": "a241aa4fa0bdc3a91860f0fa2c028a3cfc02f27720dc4619c1ce12573438891a",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 13000,
+      "sourceGame": "strategyDesk",
+      "q": "<table style=\"border-collapse:collapse;margin:12px auto\"><caption>Payoffs (row player, column player)</caption><thead><tr><th style=\"padding:5px 8px;border:1px solid currentColor\">Row / Column</th><th scope=\"col\" style=\"padding:5px 8px;border:1px solid currentColor\">X</th><th scope=\"col\" style=\"padding:5px 8px;border:1px solid currentColor\">Y</th><th scope=\"col\" style=\"padding:5px 8px;border:1px solid currentColor\">Z</th></tr></thead><tbody><tr><th scope=\"row\" style=\"padding:5px 8px;border:1px solid currentColor\">A</th><td style=\"padding:5px 8px;border:1px solid currentColor\">(9, 8)</td><td style=\"padding:5px 8px;border:1px solid currentColor\">(2, 3)</td><td style=\"padding:5px 8px;border:1px solid currentColor\">(4, 1)</td></tr><tr><th scope=\"row\" style=\"padding:5px 8px;border:1px solid currentColor\">B</th><td style=\"padding:5px 8px;border:1px solid currentColor\">(4, 2)</td><td style=\"padding:5px 8px;border:1px solid currentColor\">(8, 9)</td><td style=\"padding:5px 8px;border:1px solid currentColor\">(6, 4)</td></tr><tr><th scope=\"row\" style=\"padding:5px 8px;border:1px solid currentColor\">C</th><td style=\"padding:5px 8px;border:1px solid currentColor\">(1, 6)</td><td style=\"padding:5px 8px;border:1px solid currentColor\">(8, 5)</td><td style=\"padding:5px 8px;border:1px solid currentColor\">(3, 7)</td></tr></tbody></table>The column player selects Y. Which set contains every row-player best response?",
+      "options": [
+        "B and C",
+        "B only",
+        "A and B",
+        "C only"
+      ],
+      "tag": "strategic_interdependence",
+      "type": "matrix",
+      "objective": "LO15.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_strategic_interdependence",
+      "primarySkill": "strategic_interdependence",
+      "secondarySkills": [],
+      "repairSkill": "strategic_interdependence",
+      "commonError": "drops_tied_focal_best_response",
+      "feedback": "Against Y, row payoffs are 2, 8 and 8. Both B and C maximize the row payoff; ties must be retained.",
+      "aHash": "24c8f4d3d66d6227223dca1dda658887a62dc82b4952714e0d7b08f7cccfee08",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 12,
+      "sourceGame": "strategyDesk",
+      "q": "A firm can sell 100 units at $30 or 120 units at $27. Variable cost is $15 per unit. Which option generates more contribution?",
+      "options": [
+        "$30 price; contribution is $1,500",
+        "$27 price; contribution is $1,440",
+        "$30 price; contribution is $3,000",
+        "$27 price; contribution is $3,240"
+      ],
+      "tag": "optimal_pricing",
+      "type": "calculation",
+      "objective": "LO6.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_optimal_pricing",
+      "primarySkill": "optimal_pricing",
+      "secondarySkills": [],
+      "repairSkill": "optimal_pricing",
+      "commonError": "compares_revenue_instead_of_contribution",
+      "feedback": "At $30, contribution is ($30 − $15) × 100 = $1,500. At $27, it is ($27 − $15) × 120 = $1,440.",
+      "aHash": "370d38532c1527f16557685948360e58b9e9720e93643c088092eceb8e612394",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 39,
+      "sourceGame": "strategyDesk",
+      "q": "A firm sells 1,000 units at $20 with variable cost of $12. If price falls to $18, approximately how many units must it sell to preserve total contribution?",
+      "options": [
+        "1,000",
+        "1,167",
+        "1,333",
+        "1,500"
+      ],
+      "tag": "stay_even_volume",
+      "type": "calculation",
+      "objective": "LO6.5",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_stay_even_volume",
+      "primarySkill": "stay_even_volume",
+      "secondarySkills": [],
+      "repairSkill": "stay_even_volume",
+      "commonError": "uses_revenue_instead_of_contribution",
+      "feedback": "Old contribution is $8,000. At $6 contribution per unit after the cut, the firm needs about 1,333 units.",
+      "aHash": "bcafc17d81197cfecc9258e9f6207571cea82aecae1f8dc3858a84b98ef8213a",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 79,
+      "sourceGame": "strategyDesk",
+      "q": "A promotion increases weekly sales from $20,000 to $27,000 but similar untreated markets rise from $18,000 to $22,000. The estimated incremental promotion effect is Assume treated and comparison markets would otherwise have had parallel sales trends.",
+      "options": [
+        "$3,000",
+        "$4,000",
+        "$7,000",
+        "$11,000"
+      ],
+      "tag": "promotion_response",
+      "type": "calculation",
+      "objective": "LO12.5",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_promotion_response",
+      "primarySkill": "promotion_response",
+      "secondarySkills": [],
+      "repairSkill": "promotion_response",
+      "commonError": "uses_raw_treated_change_without_control",
+      "feedback": "The treated market rises $7,000 and the comparison market rises $4,000, so the incremental effect is $3,000. The causal interpretation relies on parallel untreated trends.",
+      "aHash": "50e5c930578954e631f9c75bfe0ef0b7d0f0b5c27638d20ec1049649881f0acc",
+      "canonicalDifficulty": "medium"
+    },
     {
       "id": 206,
       "sourceGame": "strategyDesk",
@@ -5586,15 +5046,731 @@ window.questionBanks = {
       "tag": "market_demand",
       "type": "calculation",
       "objective": "LO6.1",
-      "difficulty": "hard",
-      "conceptCluster": "LO6.1_strategy_desk",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_market_demand",
       "primarySkill": "market_demand",
       "secondarySkills": [],
       "repairSkill": "market_demand",
       "commonError": "adds_intercepts_without_evaluating_each_demand",
       "feedback": "At P = 10, Buyer A demands 20 units and Buyer B demands 20 units. Market demand is 20 + 20 = 40 units.",
-      "aHash": "36ebe0425d5dd2a9a3acf9ce39a1c0264e2a4990822c8ba77839516f6709fc7a"
+      "aHash": "36ebe0425d5dd2a9a3acf9ce39a1c0264e2a4990822c8ba77839516f6709fc7a",
+      "canonicalDifficulty": "medium"
     },
+    {
+      "id": 211,
+      "sourceGame": "strategyDesk",
+      "q": "A product sells 1,000 units at $50 with variable cost of $30. A proposed $45 price is forecast to sell 1,250 units. Fixed cost is unchanged. What should the firm conclude?",
+      "options": [
+        "Accept the cut because unit sales rise by 25%",
+        "Accept the cut because revenue rises by $6,250",
+        "Reject the cut because contribution falls by $1,250",
+        "Reject the cut because contribution falls by $5,000"
+      ],
+      "tag": "optimal_pricing",
+      "type": "multi-step",
+      "objective": "LO6.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_optimal_pricing",
+      "primarySkill": "optimal_pricing",
+      "secondarySkills": [],
+      "repairSkill": "optimal_pricing",
+      "commonError": "compares_sales_or_revenue_without_margin",
+      "feedback": "Current contribution is $20 × 1,000 = $20,000. Proposed contribution is $15 × 1,250 = $18,750, a decline of $1,250.",
+      "aHash": "2c796a831d24139968cd76350c800c96a7cdc3c0dbf9110878d70161f6c7afbe",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 225,
+      "sourceGame": "strategyDesk",
+      "q": "A product sells 500 units at $40 with variable cost of $24. If price rises to $44, what is the maximum percentage decline in quantity that preserves contribution?",
+      "options": [
+        "20%",
+        "10%",
+        "16%",
+        "25%"
+      ],
+      "tag": "stay_even_volume",
+      "type": "calculation",
+      "objective": "LO6.5",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_stay_even_volume",
+      "primarySkill": "stay_even_volume",
+      "secondarySkills": [],
+      "repairSkill": "stay_even_volume",
+      "commonError": "compares_price_percentage_change_to_quantity_change",
+      "feedback": "Original contribution is $16 × 500 = $8,000. At the new $20 margin, 400 units are required, allowing a decline of 100/500 = 20%.",
+      "aHash": "dc934fe30a942bca07b4c288b4b3e48aa79a717d6db2b586553cd2416dc8b9b8",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 228,
+      "sourceGame": "strategyDesk",
+      "q": "A company cuts the price of one owned substitute. Contribution from that brand rises $50,000, contribution from its other brand falls $38,000, and extra promotion costs $6,000. What is the portfolio effect?",
+      "options": [
+        "A $12,000 increase",
+        "A $6,000 increase",
+        "A $44,000 increase",
+        "A $56,000 decrease"
+      ],
+      "tag": "substitute_pricing",
+      "type": "multi-step",
+      "objective": "LO12.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_substitute_pricing",
+      "primarySkill": "substitute_pricing",
+      "secondarySkills": [],
+      "repairSkill": "substitute_pricing",
+      "commonError": "ignores_cannibalization_or_incremental_promotion_cost",
+      "feedback": "The portfolio effect is $50,000 − $38,000 − $6,000 = a $6,000 increase.",
+      "aHash": "0c72f44319803998763d5c54bac123278c561e36eea9b59bb1c9cf0d71fcbf4b",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 236,
+      "sourceGame": "strategyDesk",
+      "q": "A parking discount lowers parking contribution by $15,000, raises shuttle contribution by $9,000, and raises hotel contribution by $11,000. All three services are commonly owned complements. What is the net effect?",
+      "options": [
+        "A $5,000 increase",
+        "A $4,000 decrease",
+        "A $15,000 decrease",
+        "A $20,000 increase"
+      ],
+      "tag": "complement_pricing",
+      "type": "integration",
+      "objective": "LO12.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_complement_pricing",
+      "primarySkill": "complement_pricing",
+      "secondarySkills": [],
+      "repairSkill": "complement_pricing",
+      "commonError": "ignores_indirect_profit_from_multiple_complements",
+      "feedback": "The total effect is −$15,000 + $9,000 + $11,000 = a $5,000 increase.",
+      "aHash": "ddaa5324f13058639e2269d3631ed80ff6187be93d5351da5231bf3cdfed08ea",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 243,
+      "sourceGame": "strategyDesk",
+      "q": "A promotional campaign shifts demand outward and reduces the estimated elasticity magnitude from 1.2 to 0.9. Holding nonnegative marginal cost constant, which pricing response is most consistent with both effects?",
+      "options": [
+        "Raise price because demand is stronger and less elastic.",
+        "Cut price because every advertisement requires a discount.",
+        "Keep price fixed because advertising affects quantity only.",
+        "Abandon the campaign because elasticity moved toward zero."
+      ],
+      "tag": "promotion_response",
+      "type": "integration",
+      "objective": "LO12.5",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_promotion_response",
+      "primarySkill": "promotion_response",
+      "secondarySkills": [],
+      "repairSkill": "promotion_response",
+      "commonError": "assumes_promotional_advertising_requires_a_lower_price",
+      "feedback": "The campaign increases willingness to pay and makes demand less responsive to price, both of which support a higher price.",
+      "aHash": "a2901f18c502e2f98119c87e6ee0cd55d6078f8d01175741bb4863f85dc85a82",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 252,
+      "sourceGame": "strategyDesk",
+      "q": "A seller offers Basic for $10, Pro for $20, and Premium for $20. Premium includes every Pro feature plus a useful extra, and otherwise the options are identical. Adding Pro raises Premium sales. Which choice bias is illustrated?",
+      "options": [
+        "The sunk-cost fallacy",
+        "The decoy effect",
+        "The endowment effect",
+        "The availability heuristic"
+      ],
+      "tag": "behavioral_pricing",
+      "type": "application",
+      "objective": "LO12.6",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_behavioral_pricing",
+      "primarySkill": "behavioral_pricing",
+      "secondarySkills": [],
+      "repairSkill": "behavioral_pricing",
+      "commonError": "confuses_decoy_design_with_unrelated_behavioral_biases",
+      "feedback": "The inferior Pro option makes Premium look comparatively attractive, creating an asymmetric-dominance or decoy effect.",
+      "aHash": "ab4267a4de32645d7ad4aa77cc5feef55f24ce3758ff6c14537a5bcec1c850fa",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 262,
+      "sourceGame": "strategyDesk",
+      "q": "A risk-neutral negotiator can accept a positive cash offer below $1 million or reject it and receive zero, with no later offers or other benefits from refusal. The negotiator has announced it will reject every offer below $1 million. What is the main weakness?",
+      "options": [
+        "The threat is too specific to influence the other side.",
+        "The negotiator has revealed no information.",
+        "The threat may not be credible when the decision must actually be made.",
+        "Rejecting an offer always increases surplus."
+      ],
+      "tag": "strategic_bargaining",
+      "type": "trap",
+      "objective": "LO16.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_strategic_bargaining",
+      "primarySkill": "strategic_bargaining",
+      "secondarySkills": [],
+      "repairSkill": "strategic_bargaining",
+      "commonError": "accepts_empty_threat",
+      "feedback": "A threat fails when carrying it out would be worse than accepting the available offer.",
+      "aHash": "0baff6278e2bd20752e8a0c543a6aea127deb6bd465b6841053455ac41e6108c",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 263,
+      "sourceGame": "strategyDesk",
+      "q": "A third-party association promises support payments available to union members only during a stoppage. What bargaining purpose can this support serve?",
+      "options": [
+        "It lowers the value of agreement to the firm.",
+        "It eliminates the need to bargain.",
+        "It guarantees the union receives every demand.",
+        "It raises the union’s ability to endure disagreement and makes a strike threat more credible."
+      ],
+      "tag": "strategic_bargaining",
+      "type": "application",
+      "objective": "LO16.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_strategic_bargaining",
+      "primarySkill": "strategic_bargaining",
+      "secondarySkills": [],
+      "repairSkill": "strategic_bargaining",
+      "commonError": "misses_disagreement_payoff",
+      "feedback": "Contingent outside support reduces the cost of disagreement and may make a strike more credible. Merely relabeling members’ own already-owned savings would not itself create additional wealth.",
+      "aHash": "f155beedf94df6f1ce882bdec0f3a62d2f9f1543d396fbbed1233799b1260364",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 265,
+      "sourceGame": "strategyDesk",
+      "q": "Why can the ability to make a take-it-or-leave-it offer create bargaining power?",
+      "options": [
+        "The responder is forced to accept a negative payoff.",
+        "The proposer can design the offer around the responder’s minimum acceptable payoff.",
+        "The proposer no longer needs to know the responder’s outside option.",
+        "The available surplus becomes unlimited."
+      ],
+      "tag": "strategic_bargaining",
+      "type": "interpretation",
+      "objective": "LO16.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_strategic_bargaining",
+      "primarySkill": "strategic_bargaining",
+      "secondarySkills": [],
+      "repairSkill": "strategic_bargaining",
+      "commonError": "assumes_responder_accepts_any_offer",
+      "feedback": "With commitment to a single offer, the proposer can capture surplus while leaving the responder just willing to accept.",
+      "aHash": "3099aad44de4b0b593bda491a6ec063c3651ff58cb78210b4fdd6958a267c945",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 266,
+      "sourceGame": "strategyDesk",
+      "q": "A discounted ticket costs $180 and can be resold for $420. Existing transfer costs are $60. What is the minimum additional transfer cost that eliminates strictly positive arbitrage profit?",
+      "options": [
+        "$60",
+        "$180",
+        "$240",
+        "$420"
+      ],
+      "tag": "arbitrage_prevention",
+      "type": "calculation",
+      "objective": "LO13.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_arbitrage_control",
+      "primarySkill": "arbitrage_control",
+      "secondarySkills": [],
+      "repairSkill": "arbitrage_control",
+      "commonError": "uses_price_gap_without_subtracting_existing_arbitrage_cost",
+      "feedback": "The current net resale margin is 420−180−60=180. An added cost of 180 makes profit zero; greater costs make resale strictly unprofitable.",
+      "aHash": "8ca9d742288ff056110c48836189f89fd16f1df80e1e202ffd5b4dc223637760",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 269,
+      "sourceGame": "strategyDesk",
+      "q": "A seller publicly commits inventory to another buyer if negotiations are not completed by Friday. When is this commitment credible?",
+      "options": [
+        "When the seller can cancel it freely after Friday",
+        "When the alternative sale is enforceable or costly to reverse",
+        "When no buyer knows about it",
+        "When the alternative buyer offers nothing"
+      ],
+      "tag": "strategic_bargaining",
+      "type": "application",
+      "objective": "LO16.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_strategic_bargaining",
+      "primarySkill": "strategic_bargaining",
+      "secondarySkills": [],
+      "repairSkill": "strategic_bargaining",
+      "commonError": "ignores_reversibility",
+      "feedback": "The commitment matters only if walking it back is difficult or costly.",
+      "aHash": "cf66b38413d2a463680638ef428a5ed0eca5c90e41d3c416b3329d9d620723d9",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 270,
+      "sourceGame": "strategyDesk",
+      "q": "Two retailers buy goods of like grade and quality at different prices. The sales occur in interstate commerce, but the price difference causes no likely competitive injury. What key element of a Robinson–Patman claim is missing?",
+      "options": [
+        "Competitive injury",
+        "Interstate commerce",
+        "Comparable goods",
+        "Different prices"
+      ],
+      "tag": "robinson_patman",
+      "type": "trap",
+      "objective": "LO13.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_robinson_patman",
+      "primarySkill": "robinson_patman",
+      "secondarySkills": [],
+      "repairSkill": "robinson_patman",
+      "commonError": "treats_price_difference_alone_as_sufficient",
+      "feedback": "The statute requires more than unequal prices; the difference must have the required adverse effect on competition.",
+      "aHash": "3a1905e2e907761e0bb070e8794e3e8c7239d7beb307489e18f7ec37222885c8",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 282,
+      "sourceGame": "strategyDesk",
+      "q": "An outside association promises workers payments only while a strike lasts; the payments are not drawn from the workers’ own savings. In the nonstrategic framework, this support primarily",
+      "options": [
+        "raises the firm’s agreement value",
+        "reduces the total value of production",
+        "raises the union’s disagreement value",
+        "sets the final wage automatically"
+      ],
+      "tag": "nonstrategic_bargaining",
+      "type": "application",
+      "objective": "LO16.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_nonstrategic_bargaining",
+      "primarySkill": "nonstrategic_bargaining",
+      "secondarySkills": [],
+      "repairSkill": "nonstrategic_bargaining",
+      "commonError": "places_strike_fund_in_agreement_value",
+      "feedback": "Payments during a strike improve what union members receive without an agreement.",
+      "aHash": "45b07540b69aec4edcd4c8707bd364bacea53d31166e48781344d3d54e081eec",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 285,
+      "sourceGame": "strategyDesk",
+      "q": "When consumers are identical and resale is impossible, what two-part tariff can extract the most surplus while preserving efficient usage? Assume buyers join when indifferent and entry has no additional cost.",
+      "options": [
+        "Set the per-unit price at marginal cost and the entry fee equal to consumer surplus.",
+        "Set the entry fee at zero and the per-unit price above monopoly price.",
+        "Set both the entry fee and per-unit price equal to marginal cost.",
+        "Set the per-unit price at zero and ignore the entry fee."
+      ],
+      "tag": "self_selection_pricing",
+      "type": "strategy",
+      "objective": "LO14.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_consumer_surplus_extraction",
+      "primarySkill": "consumer_surplus_extraction",
+      "secondarySkills": [],
+      "repairSkill": "consumer_surplus_extraction",
+      "commonError": "uses_per_unit_markup_instead_of_entry_fee_to_capture_surplus",
+      "feedback": "Pricing usage at marginal cost preserves efficient quantity, while the fixed fee captures the resulting consumer surplus.",
+      "aHash": "be1938543440dc0b11aeff431b85a1ca658b31255840e99312b8b51c804e04b3",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 288,
+      "sourceGame": "strategyDesk",
+      "q": "Consumer A values Good 1 at $90 and Good 2 at $40. Consumer B values them at $60 and $80. Marginal cost is zero. What is the best pure-bundling price and revenue? Each buyer purchases at most one unit of each good, buys when indifferent, and cannot resell. Bundle values are additive.",
+      "options": [
+        "$120 bundle; $240 revenue",
+        "$140 bundle; $140 revenue",
+        "$130 bundle; $260 revenue",
+        "$170 bundle; $340 revenue"
+      ],
+      "tag": "bundling",
+      "type": "multi-step",
+      "objective": "LO14.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_bundling",
+      "primarySkill": "bundling",
+      "secondarySkills": [],
+      "repairSkill": "bundling",
+      "commonError": "adds_values_or_selects_highest_bundle_value_without_quantity",
+      "feedback": "Bundle values are $130 and $140. A $130 bundle sells to both consumers and earns $260, which exceeds charging $140 to one.",
+      "aHash": "701734a9a79dd0c1fad44ce8df6a7215c65c01423fbbbdeed33a0a51314377f5",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 304,
+      "sourceGame": "strategyDesk",
+      "q": "A firm tests three prices. At $50 it sells 800 units, at $45 it sells 950, and at $40 it sells 1,050. Marginal cost is $25. Which tested price maximizes contribution?",
+      "options": [
+        "$50",
+        "$40",
+        "$45",
+        "All three are equal"
+      ],
+      "tag": "optimal_pricing",
+      "type": "calculation",
+      "objective": "LO6.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_optimal_pricing",
+      "primarySkill": "optimal_pricing",
+      "secondarySkills": [],
+      "repairSkill": "optimal_pricing",
+      "commonError": "chooses_highest_revenue_without_margin",
+      "feedback": "Contribution is (50−25)×800=$20,000; (45−25)×950=$19,000; and (40−25)×1,050=$15,750. The $50 price is best among the tested prices.",
+      "aHash": "a4bb5df8e940d605f1da0c93c8d6085681c561a9edd47904da0c8bbf59ef97dd",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 310,
+      "sourceGame": "strategyDesk",
+      "q": "Advertising elasticity is 0.30. If advertising spending rises from $50,000 to $60,000, by what percentage should quantity demanded rise, holding other factors constant?",
+      "options": [
+        "3%",
+        "20%",
+        "6%",
+        "30%"
+      ],
+      "tag": "forecasting_elasticities",
+      "type": "calculation",
+      "objective": "LO6.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_forecasting_elasticities",
+      "primarySkill": "forecasting_elasticities",
+      "secondarySkills": [],
+      "repairSkill": "forecasting_elasticities",
+      "commonError": "reverses_advertising_elasticity_ratio",
+      "feedback": "Advertising rises 20%. Multiplying 0.30 by 20% gives a predicted 6% increase in quantity demanded.",
+      "aHash": "d9d689c786a2ae27b96d59f2623ccce3b62e32733f1c306c0df59ae4b10b35a3",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 311,
+      "sourceGame": "strategyDesk",
+      "q": "A firm sells 10,000 units at $25 with variable cost $15. It considers cutting price to $23. What percentage increase in unit sales is required to preserve total contribution?",
+      "options": [
+        "20%",
+        "33.3%",
+        "50%",
+        "25%"
+      ],
+      "tag": "stay_even_volume",
+      "type": "calculation",
+      "objective": "LO6.5",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_stay_even_volume",
+      "primarySkill": "stay_even_volume",
+      "secondarySkills": [],
+      "repairSkill": "stay_even_volume",
+      "commonError": "uses_revenue_change_instead_of_contribution",
+      "feedback": "Current contribution is $10 per unit; new contribution is $8. Required quantity is 10,000×10/8 = 12,500, a 25% increase.",
+      "aHash": "72da55d317fd997b93138b8646a2238e806a4c4566d1e854277b5a583d8aef23",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 314,
+      "sourceGame": "strategyDesk",
+      "q": "A stadium has fixed capacity and expects a price cut to sell 15% more tickets, but only 5% more seats are available. What is the central flaw in relying on the forecasted demand increase?",
+      "options": [
+        "The forecast uses quantity rather than revenue",
+        "The price cut makes marginal cost negative",
+        "The forecast ignores the capacity constraint",
+        "The price cut eliminates market demand"
+      ],
+      "tag": "capacity_pricing",
+      "type": "integration",
+      "objective": "LO12.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_capacity_pricing",
+      "primarySkill": "capacity_pricing",
+      "secondarySkills": [],
+      "repairSkill": "capacity_pricing",
+      "commonError": "confuses_forecast_demand_with_feasible_sales",
+      "feedback": "Demand may rise 15%, but realized sales cannot exceed the remaining 5% of capacity.",
+      "aHash": "5ee3b016a5b3247603a6650b4d894fab942863d898ca57ad26224a2a2b87e975",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 335,
+      "sourceGame": "strategyDesk",
+      "q": "A software seller’s student and professional prices are $40 and $120. Checking exactly 1,000 license requests costs $8 each and prevents all 1,000 professional buyers from falsely claiming the student discount. No other checks or demand changes occur. What is the net protected revenue after verification cost?",
+      "options": [
+        "$8,000",
+        "$40,000",
+        "$80,000",
+        "$72,000"
+      ],
+      "tag": "arbitrage_control",
+      "type": "calculation",
+      "objective": "LO13.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_arbitrage_control",
+      "primarySkill": "arbitrage_control",
+      "secondarySkills": [],
+      "repairSkill": "arbitrage_control",
+      "commonError": "subtracts_verification_from_wrong_base",
+      "feedback": "Protected revenue is $80,000 and verification costs $8,000, leaving $72,000.",
+      "aHash": "f1b022d1d7a153e38fd2b0c3afbf004a34550c3562f1666cbe956d332d7375b8",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 338,
+      "sourceGame": "strategyDesk",
+      "q": "For a Robinson–Patman price-discrimination claim under Section 2(a), which fact is necessary but not sufficient?",
+      "options": [
+        "Proof that monopoly power exists in every affected product market",
+        "A consumer boycott of the favored purchaser",
+        "Different prices to competing purchasers",
+        "A price below average fixed cost in one transaction"
+      ],
+      "tag": "robinson_patman",
+      "type": "trap",
+      "objective": "LO13.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_robinson_patman",
+      "primarySkill": "robinson_patman",
+      "secondarySkills": [],
+      "repairSkill": "robinson_patman",
+      "commonError": "treats_price_difference_as_complete_case",
+      "feedback": "A price difference is required, but other elements—such as comparable goods, commerce, and competitive injury—also matter.",
+      "aHash": "ac76f53b26631dc931e0f8eb0358c8589113a6ce7fd48214b10aa58dd7088d50",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 340,
+      "sourceGame": "strategyDesk",
+      "q": "A gym offers a lower membership price to customers who commit for one year and pay an early-cancellation fee. What should be checked before calling this direct price discrimination?",
+      "options": [
+        "Whether the price reflects customer identity rather than contract terms",
+        "Whether annual members use identical quantities each month",
+        "Whether the annual contract is advertised publicly",
+        "Whether monthly members can observe the annual price"
+      ],
+      "tag": "price_discrimination_cases",
+      "type": "trap",
+      "objective": "LO13.5",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_price_discrimination_cases",
+      "primarySkill": "price_discrimination_cases",
+      "secondarySkills": [],
+      "repairSkill": "price_discrimination_cases",
+      "commonError": "labels_any_price_difference_as_direct_discrimination",
+      "feedback": "Different contract terms may justify different prices without direct classification by customer type.",
+      "aHash": "fb8bb7b12d1c1107c514baf00ec9fbd88e63a6804c521d210d891968203dde16",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 342,
+      "sourceGame": "strategyDesk",
+      "q": "A coupon reduces price by $15. Of 2,000 buyers, 600 redeem it, and 200 of those buyers would not have purchased without the coupon. Ignoring cost, how much revenue is sacrificed on buyers who would have purchased anyway?",
+      "options": [
+        "$3,000",
+        "$9,000",
+        "$6,000",
+        "$30,000"
+      ],
+      "tag": "indirect_price_discrimination",
+      "type": "calculation",
+      "objective": "LO14.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_indirect_price_discrimination",
+      "primarySkill": "indirect_price_discrimination",
+      "secondarySkills": [],
+      "repairSkill": "indirect_price_discrimination",
+      "commonError": "ignores_discount_to_existing_buyers",
+      "feedback": "Four hundred redemptions come from buyers who would have purchased anyway, so sacrificed revenue is 400×$15 = $6,000.",
+      "aHash": "f455ed4209cdc909730b6b732fb242e1933fdebcfac5fdf35dd9f2bac7cb51b0",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 351,
+      "sourceGame": "strategyDesk",
+      "q": "Which low-priced version is least likely to cannibalize the premium version?",
+      "options": [
+        "A version removing a feature valued equally by both groups",
+        "A version with the same features and a lower price",
+        "A version removing a feature valued mainly by low-value users",
+        "A version missing a feature valued mainly by high-value users"
+      ],
+      "tag": "cannibalization_control",
+      "type": "trap",
+      "objective": "LO14.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_versioning_and_metering",
+      "primarySkill": "versioning_and_metering",
+      "secondarySkills": [],
+      "repairSkill": "versioning_and_metering",
+      "commonError": "removes_feature_valued_equally_by_all",
+      "feedback": "A restriction especially costly to high-value users helps preserve separation without driving away low-value users.",
+      "aHash": "82cee633fb4b256e430d59db533c3ae815b350b9242dd77ee86a7a42964dc52a",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 352,
+      "sourceGame": "strategyDesk",
+      "q": "A club has identical customers. Marginal usage cost is $4, and each customer's consumer surplus at a $4 usage price is $120. Which two-part tariff extracts the surplus while keeping efficient usage? Customers join when indifferent and resale is impossible.",
+      "options": [
+        "$120 fee and $4 usage price",
+        "$0 fee and $10 usage price",
+        "$4 fee and $120 usage price",
+        "$120 fee and $0 usage price"
+      ],
+      "tag": "self_selection_pricing",
+      "type": "application",
+      "objective": "LO14.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_consumer_surplus_extraction",
+      "primarySkill": "consumer_surplus_extraction",
+      "secondarySkills": [],
+      "repairSkill": "consumer_surplus_extraction",
+      "commonError": "uses_usage_markup_instead_of_fixed_fee",
+      "feedback": "Set usage price at marginal cost and capture the resulting consumer surplus with the fixed fee.",
+      "aHash": "21e883edf7245e2df6e62eeb08df006348c2f8832d7700e9b4efde29942f6f28",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 359,
+      "sourceGame": "strategyDesk",
+      "q": "A bundle earns $260, while the best separate-sale strategy earns $245. Introducing the bundle also costs $20 in additional support expense. What is the net profit effect?",
+      "options": [
+        "$5 gain",
+        "$15 gain",
+        "$35 gain",
+        "$5 loss"
+      ],
+      "tag": "bundling",
+      "type": "calculation",
+      "objective": "LO14.4",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_bundling",
+      "primarySkill": "bundling",
+      "secondarySkills": [],
+      "repairSkill": "bundling",
+      "commonError": "compares_revenue_without_incremental_cost",
+      "feedback": "The bundle adds $15 revenue but $20 cost, so net profit falls by $5.",
+      "aHash": "5de7e0a5bcee5b1f0d2d24962beafeab69bc874ed7c8a6eebc5c4d45e6d7dbe1",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 378,
+      "sourceGame": "strategyDesk",
+      "q": "A firm can outsource production during a strike at a cost that falls from $8 million to $3 million. What is the direct bargaining effect?",
+      "options": [
+        "The union's disagreement value improves",
+        "Total surplus must become zero",
+        "The firm's disagreement value improves",
+        "The firm's agreement value disappears"
+      ],
+      "tag": "nonstrategic_bargaining",
+      "type": "interpretation",
+      "objective": "LO16.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_nonstrategic_bargaining",
+      "primarySkill": "nonstrategic_bargaining",
+      "secondarySkills": [],
+      "repairSkill": "nonstrategic_bargaining",
+      "commonError": "assigns_outsource_option_to_union",
+      "feedback": "Cheaper outsourcing makes disagreement less costly for the firm and strengthens its outside option.",
+      "aHash": "00b21f5a392ed36c49b012579025fc07614ec2a79d1807b18ea087b63e9c8cb1",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 383,
+      "sourceGame": "strategyDesk",
+      "q": "Holding both disagreement payoffs fixed, which change increases total gains from agreement?",
+      "options": [
+        "Improving only one side's outside option",
+        "Making a noncredible threat louder",
+        "Changing who speaks first with identical feasible outcomes",
+        "Reducing the cost of cooperation for both sides"
+      ],
+      "tag": "nonstrategic_bargaining",
+      "type": "strategy",
+      "objective": "LO16.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_nonstrategic_bargaining",
+      "primarySkill": "nonstrategic_bargaining",
+      "secondarySkills": [],
+      "repairSkill": "nonstrategic_bargaining",
+      "commonError": "confuses_distribution_with_surplus_creation",
+      "feedback": "Lower cooperation costs can raise the gains from agreement for the parties as a whole.",
+      "aHash": "4c8dbcdcf9314d639ad1669678131a125f460c8eb97aca6f2a54df19dcefe613",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 385,
+      "sourceGame": "strategyDesk",
+      "q": "A negotiator reveals that its outside option expires tomorrow. What strategic effect can this disclosure have?",
+      "options": [
+        "It guarantees a higher agreement value",
+        "It can weaken the negotiator by revealing time pressure",
+        "It prevents the opponent from delaying strategically",
+        "It removes the need to compare remaining outside options"
+      ],
+      "tag": "strategic_bargaining",
+      "type": "interpretation",
+      "objective": "LO16.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_strategic_bargaining",
+      "primarySkill": "strategic_bargaining",
+      "secondarySkills": [],
+      "repairSkill": "strategic_bargaining",
+      "commonError": "assumes_more_information_always_helps_discloser",
+      "feedback": "Revealing a weak or expiring outside option can let the other side demand a larger share.",
+      "aHash": "384003c2dbcc9c9e0909de4f3c009e49c6463e14cec30f5c759b24c0d80c31a4",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 386,
+      "sourceGame": "strategyDesk",
+      "q": "A firm spends $2 million on a plant customized for one buyer before negotiating price. The investment has no value elsewhere. What bargaining problem has the firm created?",
+      "options": [
+        "A screening advantage caused by hidden product quality",
+        "A dominant strategy to reject every possible offer",
+        "Hold-up risk from a weakened outside option",
+        "A larger disagreement value for the investing firm"
+      ],
+      "tag": "strategic_bargaining",
+      "type": "application",
+      "objective": "LO16.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_strategic_bargaining",
+      "primarySkill": "strategic_bargaining",
+      "secondarySkills": [],
+      "repairSkill": "strategic_bargaining",
+      "commonError": "treats_sunk_specific_investment_as_leverage",
+      "feedback": "A relationship-specific sunk investment makes walking away costly and exposes the firm to hold-up.",
+      "aHash": "3c39049b21d4408f756892d4245ce41b8dfff6545d50dab25c3c03c0142efa2b",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 389,
+      "sourceGame": "strategyDesk",
+      "q": "What is the sharpest distinction between strategic and nonstrategic bargaining?",
+      "options": [
+        "Strategic bargaining ignores outside options; nonstrategic bargaining ignores agreement values",
+        "Strategic analysis models moves; nonstrategic analysis divides gains over outside options",
+        "Strategic bargaining always yields equal splits; nonstrategic bargaining never does",
+        "Strategic bargaining applies only to unions; nonstrategic bargaining applies only to firms"
+      ],
+      "tag": "strategic_bargaining",
+      "type": "integration",
+      "objective": "LO16.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_strategic_bargaining",
+      "primarySkill": "strategic_bargaining",
+      "secondarySkills": [],
+      "repairSkill": "strategic_bargaining",
+      "commonError": "treats_frameworks_as_unrelated_topics",
+      "feedback": "Strategic analysis studies how the bargaining process changes behavior, while the nonstrategic view measures and divides gains relative to fallback positions.",
+      "aHash": "d2a19d8f12070c2d593f4d1eb9acbd3cb35389f3e6b8c05507e8e1bb03018af2",
+      "canonicalDifficulty": "medium"
+    }
+  ],
+  "hard": [
     {
       "id": 209,
       "sourceGame": "strategyDesk",
@@ -5609,62 +5785,19 @@ window.questionBanks = {
       "type": "multi-step",
       "objective": "LO6.2",
       "difficulty": "hard",
-      "conceptCluster": "LO6.2_strategy_desk",
+      "conceptCluster": "hard_strategyDesk_optimal_pricing",
       "primarySkill": "optimal_pricing",
       "secondarySkills": [],
       "repairSkill": "optimal_pricing",
       "commonError": "maximizes_revenue_instead_of_contribution",
       "feedback": "Contribution is (P − 18)Q: $2,200, $2,340, $2,310, and $2,100. The $36 price produces the largest contribution.",
-      "aHash": "280d20fd8820be733a3d078d94089f96a65a506a0fe7d651686592ea8cf03373"
-    },
-    {
-      "id": 211,
-      "sourceGame": "strategyDesk",
-      "q": "A product sells 1,000 units at $50 with variable cost of $30. A proposed $45 price is forecast to sell 1,250 units. Fixed cost is unchanged. What should the firm conclude?",
-      "options": [
-        "Accept the cut because revenue rises by $6,250.",
-        "Accept the cut because unit sales rise by 25%.",
-        "Reject the cut because contribution falls by $1,250.",
-        "Reject the cut because fixed cost must increase by $5,000."
-      ],
-      "tag": "optimal_pricing",
-      "type": "multi-step",
-      "objective": "LO6.2",
-      "difficulty": "hard",
-      "conceptCluster": "LO6.2_strategy_desk",
-      "primarySkill": "optimal_pricing",
-      "secondarySkills": [],
-      "repairSkill": "optimal_pricing",
-      "commonError": "compares_sales_or_revenue_without_margin",
-      "feedback": "Current contribution is $20 × 1,000 = $20,000. Proposed contribution is $15 × 1,250 = $18,750, a decline of $1,250.",
-      "aHash": "319d59dc3a964f2f8c8c82fde8029719167065d74abf1f0110f46fe0fb791b0a"
-    },
-    {
-      "id": 212,
-      "sourceGame": "strategyDesk",
-      "q": "A demand study records 800 units at $60 and 920 units at $54. Which arc-elasticity estimate correctly summarizes responsiveness between the observations?",
-      "options": [
-        "About 0.75, so demand is inelastic.",
-        "About 1.00, so demand is unit elastic.",
-        "About 2.40, so demand is highly elastic.",
-        "About 1.33, so demand is elastic."
-      ],
-      "tag": "price_elasticity",
-      "type": "calculation",
-      "objective": "LO6.3",
-      "difficulty": "hard",
-      "conceptCluster": "LO6.3_strategy_desk",
-      "primarySkill": "price_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "price_elasticity",
-      "commonError": "uses_initial_values_or_reverses_percentage_changes",
-      "feedback": "The midpoint quantity change is 120/860 and the midpoint price change is 6/57. Their ratio is approximately 1.33.",
-      "aHash": "080f9a3e486c4fd7a21b36970ae4c223474f43240516fe8cab55460b8c2c578b"
+      "aHash": "280d20fd8820be733a3d078d94089f96a65a506a0fe7d651686592ea8cf03373",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 213,
       "sourceGame": "strategyDesk",
-      "q": "At the current price, estimated elasticity is −2.4. If price rises by 5% and the estimate remains valid, what approximate change in total revenue should the firm expect?",
+      "q": "Use the local linear forecast %ΔQ = elasticity × %ΔP. At the current price elasticity is −2.4. Price rises 5%. Applying that quantity forecast, what approximate change in total revenue follows?",
       "options": [
         "Revenue falls by about 7.6%.",
         "Revenue rises by about 12.0%.",
@@ -5675,13 +5808,14 @@ window.questionBanks = {
       "type": "multi-step",
       "objective": "LO6.3",
       "difficulty": "hard",
-      "conceptCluster": "LO6.3_strategy_desk",
+      "conceptCluster": "hard_strategyDesk_price_elasticity",
       "primarySkill": "price_elasticity",
       "secondarySkills": [],
       "repairSkill": "price_elasticity",
       "commonError": "applies_elasticity_to_revenue_as_a_one_for_one_change",
       "feedback": "Quantity is expected to fall about 12%. Revenue changes by roughly 1.05 × 0.88 − 1 = −7.6%.",
-      "aHash": "6f63b8af04ce809df61c6d29fb3bf9bc03a5d29d3508835822665c2b7b92f9ca"
+      "aHash": "6f63b8af04ce809df61c6d29fb3bf9bc03a5d29d3508835822665c2b7b92f9ca",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 214,
@@ -5697,13 +5831,14 @@ window.questionBanks = {
       "type": "multi-step",
       "objective": "LO6.4",
       "difficulty": "hard",
-      "conceptCluster": "LO6.4_strategy_desk",
+      "conceptCluster": "hard_strategyDesk_forecasting_elasticities",
       "primarySkill": "forecasting_elasticities",
       "secondarySkills": [],
       "repairSkill": "forecasting_elasticities",
       "commonError": "uses_only_one_elasticity_or_misreads_signs",
       "feedback": "Income adds 6%, the rival price adds 4%, and advertising adds 3%. The approximate total increase is 13%.",
-      "aHash": "a5be1c284e2791cc0ca2efb4360ca27ed19e78fb56b0158112713e9e4c2db101"
+      "aHash": "a5be1c284e2791cc0ca2efb4360ca27ed19e78fb56b0158112713e9e4c2db101",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 216,
@@ -5719,57 +5854,14 @@ window.questionBanks = {
       "type": "multi-step",
       "objective": "LO6.4",
       "difficulty": "hard",
-      "conceptCluster": "LO6.4_strategy_desk",
+      "conceptCluster": "hard_strategyDesk_forecasting_elasticities",
       "primarySkill": "forecasting_elasticities",
       "secondarySkills": [],
       "repairSkill": "forecasting_elasticities",
       "commonError": "drops_negative_signs_or_adds_effects_in_wrong_direction",
       "feedback": "The effects are +10.8% from own price, −2% from income, and −3% from the complement price, for a net +5.8%.",
-      "aHash": "ef5ac2e8bbcd55653b875ff63e4ea564ba4d54268d5651ab05981f5509f99a7c"
-    },
-    {
-      "id": 221,
-      "sourceGame": "strategyDesk",
-      "q": "A subscription currently generates $10 contribution from each of 800 accounts. A discount would reduce contribution per account to $7. What total enrollment is required to keep contribution unchanged?",
-      "options": [
-        "About 943 accounts",
-        "About 1,067 accounts",
-        "About 1,343 accounts",
-        "About 1,143 accounts"
-      ],
-      "tag": "stay_even_volume",
-      "type": "calculation",
-      "objective": "LO6.5",
-      "difficulty": "hard",
-      "conceptCluster": "LO6.5_strategy_desk",
-      "primarySkill": "stay_even_volume",
-      "secondarySkills": [],
-      "repairSkill": "stay_even_volume",
-      "commonError": "confuses_required_total_enrollment_with_incremental_accounts",
-      "feedback": "Current contribution is $10 × 800 = $8,000. At $7 per account, required enrollment is $8,000 ÷ $7, or about 1,143 accounts.",
-      "aHash": "287f25af4ad60ea9e26912d5aa82f844709bc5522ba634ab7ad07e74465870e4"
-    },
-    {
-      "id": 225,
-      "sourceGame": "strategyDesk",
-      "q": "A product sells 500 units at $40 with variable cost of $24. If price rises to $44, what is the maximum percentage decline in quantity that preserves contribution?",
-      "options": [
-        "20%",
-        "10%",
-        "16%",
-        "25%"
-      ],
-      "tag": "stay_even_volume",
-      "type": "calculation",
-      "objective": "LO6.5",
-      "difficulty": "hard",
-      "conceptCluster": "LO6.5_strategy_desk",
-      "primarySkill": "stay_even_volume",
-      "secondarySkills": [],
-      "repairSkill": "stay_even_volume",
-      "commonError": "compares_price_percentage_change_to_quantity_change",
-      "feedback": "Original contribution is $16 × 500 = $8,000. At the new $20 margin, 400 units are required, allowing a decline of 100/500 = 20%.",
-      "aHash": "dc934fe30a942bca07b4c288b4b3e48aa79a717d6db2b586553cd2416dc8b9b8"
+      "aHash": "ef5ac2e8bbcd55653b875ff63e4ea564ba4d54268d5651ab05981f5509f99a7c",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 226,
@@ -5785,57 +5877,14 @@ window.questionBanks = {
       "type": "multi-step",
       "objective": "LO14.4",
       "difficulty": "hard",
-      "conceptCluster": "LO14.4_strategy_desk",
+      "conceptCluster": "hard_strategyDesk_bundling",
       "primarySkill": "bundling",
       "secondarySkills": [],
       "repairSkill": "bundling",
       "commonError": "adds_separate_prices_without_comparing_consumer_surplus",
       "feedback": "Each consumer gets $20 or $25 surplus from the bundle, more than from either item alone. Both buy the $110 bundle, yielding $220.",
-      "aHash": "78f383cf142657f5220967f77ad820cf64c7040ee9d6423b0118eb19cf1fd6bd"
-    },
-    {
-      "id": 228,
-      "sourceGame": "strategyDesk",
-      "q": "A company cuts the price of one owned substitute. Contribution from that brand rises $50,000, contribution from its other brand falls $38,000, and extra promotion costs $6,000. What is the portfolio effect?",
-      "options": [
-        "A $12,000 increase",
-        "A $6,000 increase",
-        "A $44,000 increase",
-        "A $56,000 decrease"
-      ],
-      "tag": "substitute_pricing",
-      "type": "multi-step",
-      "objective": "LO12.1",
-      "difficulty": "hard",
-      "conceptCluster": "LO12.1_strategy_desk",
-      "primarySkill": "substitute_pricing",
-      "secondarySkills": [],
-      "repairSkill": "substitute_pricing",
-      "commonError": "ignores_cannibalization_or_incremental_promotion_cost",
-      "feedback": "The portfolio effect is $50,000 − $38,000 − $6,000 = a $6,000 increase.",
-      "aHash": "0c72f44319803998763d5c54bac123278c561e36eea9b59bb1c9cf0d71fcbf4b"
-    },
-    {
-      "id": 229,
-      "sourceGame": "strategyDesk",
-      "q": "A firm owns Brands A and B, which are substitutes. Raising A’s price increases A’s contribution by $30,000 and shifts enough buyers to B to raise B’s contribution by $12,000. What is the combined effect?",
-      "options": [
-        "Total contribution rises by $18,000.",
-        "Total contribution falls by $12,000.",
-        "Total contribution rises by $42,000.",
-        "Total contribution rises by $30,000 only."
-      ],
-      "tag": "substitute_pricing",
-      "type": "integration",
-      "objective": "LO12.1",
-      "difficulty": "hard",
-      "conceptCluster": "LO12.1_strategy_desk",
-      "primarySkill": "substitute_pricing",
-      "secondarySkills": [],
-      "repairSkill": "substitute_pricing",
-      "commonError": "evaluates_only_the_product_whose_price_changed",
-      "feedback": "Under common ownership, both effects count. The combined gain is $30,000 + $12,000 = $42,000.",
-      "aHash": "81657c51be23f9b6de7f7bdc0bda423be30f04946d06a4d887a1d9675e2deb8d"
+      "aHash": "78f383cf142657f5220967f77ad820cf64c7040ee9d6423b0118eb19cf1fd6bd",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 235,
@@ -5851,40 +5900,19 @@ window.questionBanks = {
       "type": "multi-step",
       "objective": "LO12.2",
       "difficulty": "hard",
-      "conceptCluster": "LO12.2_strategy_desk",
+      "conceptCluster": "hard_strategyDesk_complement_pricing",
       "primarySkill": "complement_pricing",
       "secondarySkills": [],
       "repairSkill": "complement_pricing",
       "commonError": "counts_only_the_loss_leader_or_only_the_complement_gain",
       "feedback": "Console contribution falls $200,000, while game contribution rises $280,000. Net contribution increases $80,000.",
-      "aHash": "06842b26d72245deabbb83019ffc9662f2a1e913ae13b7a712314e7d1af51422"
-    },
-    {
-      "id": 236,
-      "sourceGame": "strategyDesk",
-      "q": "A parking discount lowers parking contribution by $15,000, raises shuttle contribution by $9,000, and raises hotel contribution by $11,000. All three services are commonly owned complements. What is the net effect?",
-      "options": [
-        "A $5,000 increase",
-        "A $4,000 decrease",
-        "A $15,000 decrease",
-        "A $20,000 increase"
-      ],
-      "tag": "complement_pricing",
-      "type": "integration",
-      "objective": "LO12.2",
-      "difficulty": "hard",
-      "conceptCluster": "LO12.2_strategy_desk",
-      "primarySkill": "complement_pricing",
-      "secondarySkills": [],
-      "repairSkill": "complement_pricing",
-      "commonError": "ignores_indirect_profit_from_multiple_complements",
-      "feedback": "The total effect is −$15,000 + $9,000 + $11,000 = a $5,000 increase.",
-      "aHash": "ddaa5324f13058639e2269d3631ed80ff6187be93d5351da5231bf3cdfed08ea"
+      "aHash": "06842b26d72245deabbb83019ffc9662f2a1e913ae13b7a712314e7d1af51422",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 237,
       "sourceGame": "strategyDesk",
-      "q": "An airline has 120 seats and variable cost of $40 per passenger. Forecasts are: fare $300, demand 140; fare $340, demand 118; fare $380, demand 95. Which fare maximizes expected contribution?",
+      "q": "An airline has 120 seats and variable cost of $40 per passenger. Treat each demand forecast as certain for this comparison: fare $300, demand 140; fare $340, demand 118; fare $380, demand 95. Which fare maximizes contribution?",
       "options": [
         "$300",
         "$340",
@@ -5895,13 +5923,14 @@ window.questionBanks = {
       "type": "multi-step",
       "objective": "LO12.3",
       "difficulty": "hard",
-      "conceptCluster": "LO12.3_strategy_desk",
+      "conceptCluster": "hard_strategyDesk_capacity_pricing",
       "primarySkill": "capacity_pricing",
       "secondarySkills": [],
       "repairSkill": "capacity_pricing",
       "commonError": "uses_forecast_demand_above_capacity_or_maximizes_fare",
       "feedback": "Expected contribution is $260 × 120 = $31,200; $300 × 118 = $35,400; and $340 × 95 = $32,300. The $340 fare wins.",
-      "aHash": "08bc6cc276c198030d575637606375eab8a3d237c2385d757e0060dc3dc960a8"
+      "aHash": "08bc6cc276c198030d575637606375eab8a3d237c2385d757e0060dc3dc960a8",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 241,
@@ -5917,18 +5946,19 @@ window.questionBanks = {
       "type": "multi-step",
       "objective": "LO12.3",
       "difficulty": "hard",
-      "conceptCluster": "LO12.3_strategy_desk",
+      "conceptCluster": "hard_strategyDesk_capacity_pricing",
       "primarySkill": "capacity_pricing",
       "secondarySkills": [],
       "repairSkill": "capacity_pricing",
       "commonError": "ignores_opportunity_cost_of_displaced_full_price_sales",
       "feedback": "Group contribution is 70 × $35 = $2,450. Lost regular contribution is 30 × $70 = $2,100. Net contribution rises $350.",
-      "aHash": "5b43d50ca2fd56f32f7d664e2e3578b3700ed344135935755d50830c8306f58b"
+      "aHash": "5b43d50ca2fd56f32f7d664e2e3578b3700ed344135935755d50830c8306f58b",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 242,
       "sourceGame": "strategyDesk",
-      "q": "A firm considers three prices. Expected profit under strong and weak demand is: High, $50,000 and $20,000; Medium, $42,000 and $30,000; Low, $32,000 and $34,000. Strong demand has probability 0.4. Which price has the highest expected profit?",
+      "q": "A risk-neutral firm considers three prices. Expected profit under strong and weak demand is: High, $50,000 and $20,000; Medium, $42,000 and $30,000; Low, $32,000 and $34,000. Strong demand has probability 0.4. Which price has the highest expected profit?",
       "options": [
         "High price",
         "Low price",
@@ -5939,62 +5969,19 @@ window.questionBanks = {
       "type": "calculation",
       "objective": "LO12.4",
       "difficulty": "hard",
-      "conceptCluster": "LO12.4_strategy_desk",
+      "conceptCluster": "hard_strategyDesk_forecast_driven_pricing",
       "primarySkill": "forecast_driven_pricing",
       "secondarySkills": [],
       "repairSkill": "forecast_driven_pricing",
       "commonError": "chooses_the_best_outcome_instead_of_probability_weighting",
       "feedback": "Expected profits are $32,000 for High, $34,800 for Medium, and $33,200 for Low. Medium is highest.",
-      "aHash": "b3cb54d3ce960f1c808da2bfa3f7836d841906ff4155684ac10449dc0b5b424a"
-    },
-    {
-      "id": 243,
-      "sourceGame": "strategyDesk",
-      "q": "A promotional campaign shifts demand outward and reduces the estimated elasticity magnitude from 1.2 to 0.9. Holding marginal cost constant, which pricing response is most consistent with both effects?",
-      "options": [
-        "Raise price because demand is stronger and less elastic.",
-        "Cut price because every advertisement requires a discount.",
-        "Keep price fixed because advertising affects quantity only.",
-        "Abandon the campaign because elasticity moved toward zero."
-      ],
-      "tag": "promotion_response",
-      "type": "integration",
-      "objective": "LO12.5",
-      "difficulty": "hard",
-      "conceptCluster": "LO12.5_strategy_desk",
-      "primarySkill": "promotion_response",
-      "secondarySkills": [],
-      "repairSkill": "promotion_response",
-      "commonError": "assumes_promotional_advertising_requires_a_lower_price",
-      "feedback": "The campaign increases willingness to pay and makes demand less responsive to price, both of which support a higher price.",
-      "aHash": "a2901f18c502e2f98119c87e6ee0cd55d6078f8d01175741bb4863f85dc85a82"
-    },
-    {
-      "id": 252,
-      "sourceGame": "strategyDesk",
-      "q": "A seller offers Basic for $10, Pro for $18, and Premium for $20. Pro is deliberately made only slightly better than Basic but clearly worse than Premium. Premium sales rise. Which bias is the seller exploiting?",
-      "options": [
-        "The sunk-cost fallacy",
-        "The decoy effect",
-        "The endowment effect",
-        "The availability heuristic"
-      ],
-      "tag": "behavioral_pricing",
-      "type": "application",
-      "objective": "LO12.6",
-      "difficulty": "hard",
-      "conceptCluster": "LO12.6_strategy_desk",
-      "primarySkill": "behavioral_pricing",
-      "secondarySkills": [],
-      "repairSkill": "behavioral_pricing",
-      "commonError": "confuses_decoy_design_with_unrelated_behavioral_biases",
-      "feedback": "The inferior Pro option makes Premium look comparatively attractive, creating an asymmetric-dominance or decoy effect.",
-      "aHash": "ab4267a4de32645d7ad4aa77cc5feef55f24ce3758ff6c14537a5bcec1c850fa"
+      "aHash": "b3cb54d3ce960f1c808da2bfa3f7836d841906ff4155684ac10449dc0b5b424a",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 253,
       "sourceGame": "strategyDesk",
-      "q": "A seller faces 100 business buyers willing to pay $120 and 200 student buyers willing to pay $70. Marginal cost is $20. Compared with the best single price, how much additional profit can perfect segment pricing generate?",
+      "q": "A seller faces 100 business buyers willing to pay $120 and 200 student buyers willing to pay $70. Marginal cost is $20. Compared with the best single price, how much additional profit can perfect segment pricing generate? Each buyer purchases at most one unit of each good, buys when indifferent, and cannot resell. Groups are verifiable.",
       "options": [
         "$5,000",
         "$10,000",
@@ -6005,57 +5992,14 @@ window.questionBanks = {
       "type": "multi-step",
       "objective": "LO13.1",
       "difficulty": "hard",
-      "conceptCluster": "LO13.1_strategy_desk",
-      "primarySkill": "price_discrimination_motive",
+      "conceptCluster": "hard_strategyDesk_price_discrimination",
+      "primarySkill": "price_discrimination",
       "secondarySkills": [],
-      "repairSkill": "price_discrimination_motive",
+      "repairSkill": "price_discrimination",
       "commonError": "compares_discriminatory_profit_to_the_wrong_uniform_price",
       "feedback": "The best uniform price is $70, producing $15,000. Segment prices of $120 and $70 produce $20,000, a gain of $5,000.",
-      "aHash": "9268d0f3ef03795caf9a49883e4557382c23b99292886f428e0c8742eaa2929c"
-    },
-    {
-      "id": 255,
-      "sourceGame": "strategyDesk",
-      "q": "Two separated customer groups have demand elasticities of −1.5 and −3.0, and marginal cost is the same in both markets. Which group should generally face the higher markup?",
-      "options": [
-        "The group with elasticity −3.0",
-        "The group with elasticity −1.5",
-        "Both groups must face an identical markup",
-        "The group purchasing the larger quantity"
-      ],
-      "tag": "price_discrimination_motive",
-      "type": "strategy",
-      "objective": "LO13.1",
-      "difficulty": "hard",
-      "conceptCluster": "LO13.1_strategy_desk",
-      "primarySkill": "price_discrimination_motive",
-      "secondarySkills": [],
-      "repairSkill": "price_discrimination_motive",
-      "commonError": "charges_the_more_elastic_group_the_higher_markup",
-      "feedback": "The −1.5 group is less price sensitive, so profit-maximizing discrimination generally assigns it the higher markup.",
-      "aHash": "8ca3bb86ebde30f19d102f24c21050294d03b383ebad6bbd20b0722747692a22"
-    },
-    {
-      "id": 256,
-      "sourceGame": "strategyDesk",
-      "q": "A museum observes verified residency and charges tourists more than local residents. Tourists have less elastic demand, and tickets cannot be transferred. Which feature makes this direct price discrimination?",
-      "options": [
-        "Customers choose from versions without revealing identity.",
-        "The products are physically bundled into one package.",
-        "The seller observes group identity before setting the price.",
-        "The lower price is available after purchasing more units."
-      ],
-      "tag": "direct_price_discrimination",
-      "type": "interpretation",
-      "objective": "LO13.2",
-      "difficulty": "hard",
-      "conceptCluster": "LO13.2_strategy_desk",
-      "primarySkill": "direct_price_discrimination",
-      "secondarySkills": [],
-      "repairSkill": "direct_price_discrimination",
-      "commonError": "confuses_observed_customer_type_with_self_selection",
-      "feedback": "Direct discrimination uses an observable customer characteristic—here, verified residency—to assign a price.",
-      "aHash": "2e3b381a6c365785bb9fbeeff384c2b6474a2e763c1c3deded81383a7c8f9e41"
+      "aHash": "9268d0f3ef03795caf9a49883e4557382c23b99292886f428e0c8742eaa2929c",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 258,
@@ -6071,13 +6015,14 @@ window.questionBanks = {
       "type": "multi-step",
       "objective": "LO13.2",
       "difficulty": "hard",
-      "conceptCluster": "LO13.2_strategy_desk",
+      "conceptCluster": "hard_strategyDesk_direct_price_discrimination",
       "primarySkill": "direct_price_discrimination",
       "secondarySkills": [],
       "repairSkill": "direct_price_discrimination",
       "commonError": "maximizes_revenue_or_selects_the_highest_price_in_each_segment",
       "feedback": "Business contribution is $10,000 versus $10,400, and leisure contribution is $15,000 versus $15,200. Choose $100 and $60.",
-      "aHash": "4678a7ffc57fb51fba67ed049b3adf1c0cf17090c09c399e06cd8a96b6e8fe6d"
+      "aHash": "4678a7ffc57fb51fba67ed049b3adf1c0cf17090c09c399e06cd8a96b6e8fe6d",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 259,
@@ -6093,387 +6038,60 @@ window.questionBanks = {
       "type": "multi-step",
       "objective": "LO13.3",
       "difficulty": "hard",
-      "conceptCluster": "LO13.3_strategy_desk",
-      "primarySkill": "arbitrage_prevention",
+      "conceptCluster": "hard_strategyDesk_arbitrage_control",
+      "primarySkill": "arbitrage_control",
       "secondarySkills": [],
-      "repairSkill": "arbitrage_prevention",
+      "repairSkill": "arbitrage_control",
       "commonError": "ignores_verification_cost_or_residual_diversion",
       "feedback": "No verification loses $20,000. Verification costs $10,000 plus $2,000 of residual diversion, saving $8,000.",
-      "aHash": "c94f532439ac07e039fde3052a4e3c0fc4761288418d39e622ac0e25116da0c8"
-    },
-    {
-      "id": 260,
-      "sourceGame": "strategyDesk",
-      "q": "In strategic bargaining, an outside option matters because it",
-      "options": [
-        "determines what a party can obtain if no agreement is reached",
-        "equals the total surplus from agreement",
-        "forces both sides to split gains equally",
-        "has no effect once talks begin"
-      ],
-      "tag": "strategic_bargaining",
-      "type": "interpretation",
-      "objective": "LO16.1",
-      "difficulty": "hard",
-      "conceptCluster": "LO16.1_strategy_desk",
-      "primarySkill": "strategic_bargaining",
-      "secondarySkills": [],
-      "repairSkill": "strategic_bargaining",
-      "commonError": "confuses_outside_option_with_agreement_value",
-      "feedback": "A stronger alternative raises the minimum terms a party is willing to accept.",
-      "aHash": "229b688caa7a4e8c669f0f8f6f3f554789568f0ba927514dfdd7a291b31c1479"
-    },
-    {
-      "id": 261,
-      "sourceGame": "strategyDesk",
-      "q": "A worker receives a credible offer from another employer before salary negotiations. How does this usually affect bargaining power?",
-      "options": [
-        "It weakens the worker because outside offers are sunk costs.",
-        "It strengthens the worker’s position by improving the disagreement payoff.",
-        "It leaves the negotiation unchanged.",
-        "It automatically determines the final salary."
-      ],
-      "tag": "nonstrategic_bargaining",
-      "type": "application",
-      "objective": "LO16.2",
-      "difficulty": "hard",
-      "conceptCluster": "LO16.1_strategy_desk",
-      "primarySkill": "nonstrategic_bargaining",
-      "secondarySkills": [],
-      "repairSkill": "nonstrategic_bargaining",
-      "commonError": "ignores_improved_outside_option",
-      "feedback": "The alternative job improves what the worker can obtain without agreement.",
-      "aHash": "e0a94b8a47bbe0eb3147dcd3ae099ff76198288ff6099a0c3d4afa7466b3d42c"
-    },
-    {
-      "id": 262,
-      "sourceGame": "strategyDesk",
-      "q": "A negotiator threatens to reject every offer below $1 million, but rejecting such an offer would leave the negotiator with nothing. What is the main weakness?",
-      "options": [
-        "The threat is too specific to influence the other side.",
-        "The negotiator has revealed no information.",
-        "The threat may not be credible when the decision must actually be made.",
-        "Rejecting an offer always increases surplus."
-      ],
-      "tag": "strategic_bargaining",
-      "type": "trap",
-      "objective": "LO16.1",
-      "difficulty": "hard",
-      "conceptCluster": "LO16.1_strategy_desk",
-      "primarySkill": "strategic_bargaining",
-      "secondarySkills": [],
-      "repairSkill": "strategic_bargaining",
-      "commonError": "accepts_empty_threat",
-      "feedback": "A threat fails when carrying it out would be worse than accepting the available offer.",
-      "aHash": "0baff6278e2bd20752e8a0c543a6aea127deb6bd465b6841053455ac41e6108c"
-    },
-    {
-      "id": 263,
-      "sourceGame": "strategyDesk",
-      "q": "A union builds a strike fund before negotiations. What strategic purpose can the fund serve?",
-      "options": [
-        "It lowers the value of agreement to the firm.",
-        "It eliminates the need to bargain.",
-        "It guarantees the union receives every demand.",
-        "It raises the union’s ability to endure disagreement and makes a strike threat more credible."
-      ],
-      "tag": "strategic_bargaining",
-      "type": "application",
-      "objective": "LO16.1",
-      "difficulty": "hard",
-      "conceptCluster": "LO16.1_strategy_desk",
-      "primarySkill": "strategic_bargaining",
-      "secondarySkills": [],
-      "repairSkill": "strategic_bargaining",
-      "commonError": "misses_disagreement_payoff",
-      "feedback": "A strike fund improves the union’s position during a work stoppage.",
-      "aHash": "f155beedf94df6f1ce882bdec0f3a62d2f9f1543d396fbbed1233799b1260364"
+      "aHash": "c94f532439ac07e039fde3052a4e3c0fc4761288418d39e622ac0e25116da0c8",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 264,
       "sourceGame": "strategyDesk",
-      "q": "A firm hires security guards and prepares replacement workers before contract talks. What is the most direct strategic message?",
+      "q": "A seller’s item is worth $90 to a buyer and costs the seller $30 to supply. If talks fail, seller and buyer receive $10 and $8 respectively. The seller makes one final whole-dollar price offer. The buyer accepts when indifferent. Which price maximizes the seller’s payoff subject to acceptance?",
       "options": [
-        "The firm is preparing not to accommodate a strike threat.",
-        "The firm will accept the union’s first offer.",
-        "The firm has increased the union’s outside option.",
-        "The firm no longer values production."
-      ],
-      "tag": "strategic_bargaining",
-      "type": "application",
-      "objective": "LO16.1",
-      "difficulty": "hard",
-      "conceptCluster": "LO16.1_strategy_desk",
-      "primarySkill": "strategic_bargaining",
-      "secondarySkills": [],
-      "repairSkill": "strategic_bargaining",
-      "commonError": "reverses_commitment_signal",
-      "feedback": "Preparations for a lockout or continued operation can make a hard bargaining position more credible.",
-      "aHash": "6eb9fe78d6c461001fef718fc08dd289a9299589272240a1d8e32d7afd5423e4"
-    },
-    {
-      "id": 265,
-      "sourceGame": "strategyDesk",
-      "q": "Why can the ability to make a take-it-or-leave-it offer create bargaining power?",
-      "options": [
-        "The responder is forced to accept a negative payoff.",
-        "The proposer can design the offer around the responder’s minimum acceptable payoff.",
-        "The proposer no longer needs to know the responder’s outside option.",
-        "The available surplus becomes unlimited."
-      ],
-      "tag": "strategic_bargaining",
-      "type": "interpretation",
-      "objective": "LO16.1",
-      "difficulty": "hard",
-      "conceptCluster": "LO16.1_strategy_desk",
-      "primarySkill": "strategic_bargaining",
-      "secondarySkills": [],
-      "repairSkill": "strategic_bargaining",
-      "commonError": "assumes_responder_accepts_any_offer",
-      "feedback": "With commitment to a single offer, the proposer can capture surplus while leaving the responder just willing to accept.",
-      "aHash": "3099aad44de4b0b593bda491a6ec063c3651ff58cb78210b4fdd6958a267c945"
-    },
-    {
-      "id": 266,
-      "sourceGame": "strategyDesk",
-      "q": "A discounted ticket costs $180 while the unrestricted ticket costs $420. Reselling a discounted ticket costs an arbitrageur $60. To eliminate profitable resale, an added transfer restriction must impose a cost greater than",
-      "options": [
+        "$82",
+        "$90",
         "$60",
-        "$180",
-        "$240",
-        "$420"
+        "$38"
       ],
-      "tag": "arbitrage_prevention",
+      "tag": "strategic_bargaining",
       "type": "calculation",
-      "objective": "LO13.3",
-      "difficulty": "hard",
-      "conceptCluster": "LO13.3_strategy_desk",
-      "primarySkill": "arbitrage_prevention",
-      "secondarySkills": [],
-      "repairSkill": "arbitrage_prevention",
-      "commonError": "uses_price_gap_without_subtracting_existing_arbitrage_cost",
-      "feedback": "The gross price gap is $240. Existing resale cost is $60, leaving $180 of arbitrage profit to eliminate.",
-      "aHash": "8ca9d742288ff056110c48836189f89fd16f1df80e1e202ffd5b4dc223637760"
-    },
-    {
-      "id": 267,
-      "sourceGame": "strategyDesk",
-      "q": "A deadline is strategically useful to a negotiator only if",
-      "options": [
-        "the deadline is announced loudly",
-        "both parties ignore the passage of time",
-        "the deadline can be extended without cost whenever convenient",
-        "the deadline changes the cost or feasibility of delaying agreement"
-      ],
-      "tag": "strategic_bargaining",
-      "type": "application",
       "objective": "LO16.1",
       "difficulty": "hard",
-      "conceptCluster": "LO16.1_strategy_desk",
+      "conceptCluster": "hard_strategyDesk_strategic_bargaining",
       "primarySkill": "strategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "strategic_bargaining",
-      "commonError": "treats_arbitrary_deadline_as_commitment",
-      "feedback": "A deadline matters when delay has real consequences and the deadline is credible.",
-      "aHash": "1e6448e555eb8653379063c5abf16b84093e7c25f9adefb0a3187d65c357c0d9"
-    },
-    {
-      "id": 268,
-      "sourceGame": "strategyDesk",
-      "q": "A manufacturer gives a lower wholesale price to a large retailer because serving that retailer reduces documented packaging and delivery cost by the same amount. Which defense is most relevant under the Robinson–Patman Act?",
-      "options": [
-        "Predatory pricing",
-        "Perfect price discrimination",
-        "The meeting-competition defense only",
-        "Cost justification"
-      ],
-      "tag": "robinson_patman",
-      "type": "application",
-      "objective": "LO13.4",
-      "difficulty": "hard",
-      "conceptCluster": "LO13.4_strategy_desk",
-      "primarySkill": "robinson_patman",
-      "secondarySkills": [],
-      "repairSkill": "robinson_patman",
-      "commonError": "assumes_every_quantity_related_discount_is_illegal",
-      "feedback": "A price difference tied to genuine savings in the cost of serving the buyer may be defended through cost justification.",
-      "aHash": "488d37993e017bb0875f0f0ff9d33de3d7ce4fd1636e972ee1334c897abecb66"
-    },
-    {
-      "id": 269,
-      "sourceGame": "strategyDesk",
-      "q": "A seller publicly commits inventory to another buyer if negotiations are not completed by Friday. When is this commitment credible?",
-      "options": [
-        "When the seller can cancel it freely after Friday",
-        "When the alternative sale is enforceable or costly to reverse",
-        "When no buyer knows about it",
-        "When the alternative buyer offers nothing"
-      ],
-      "tag": "strategic_bargaining",
-      "type": "application",
-      "objective": "LO16.1",
-      "difficulty": "hard",
-      "conceptCluster": "LO16.1_strategy_desk",
-      "primarySkill": "strategic_bargaining",
-      "secondarySkills": [],
-      "repairSkill": "strategic_bargaining",
-      "commonError": "ignores_reversibility",
-      "feedback": "The commitment matters only if walking it back is difficult or costly.",
-      "aHash": "cf66b38413d2a463680638ef428a5ed0eca5c90e41d3c416b3329d9d620723d9"
-    },
-    {
-      "id": 270,
-      "sourceGame": "strategyDesk",
-      "q": "Two retailers buy goods of like grade and quality at different prices. The sales occur in interstate commerce, but the price difference causes no likely competitive injury. What key element of a Robinson–Patman claim is missing?",
-      "options": [
-        "Competitive injury",
-        "Interstate commerce",
-        "Comparable goods",
-        "Different prices"
-      ],
-      "tag": "robinson_patman",
-      "type": "trap",
-      "objective": "LO13.4",
-      "difficulty": "hard",
-      "conceptCluster": "LO13.4_strategy_desk",
-      "primarySkill": "robinson_patman",
-      "secondarySkills": [],
-      "repairSkill": "robinson_patman",
-      "commonError": "treats_price_difference_alone_as_sufficient",
-      "feedback": "The statute requires more than unequal prices; the difference must have the required adverse effect on competition.",
-      "aHash": "3a1905e2e907761e0bb070e8794e3e8c7239d7beb307489e18f7ec37222885c8"
-    },
-    {
-      "id": 271,
-      "sourceGame": "strategyDesk",
-      "q": "An airline offers a lower fare only to travelers who stay over Saturday night. The airline does not directly observe whether a buyer is traveling for business. Why can the restriction support price discrimination?",
-      "options": [
-        "It makes every traveler’s demand equally inelastic.",
-        "It induces travelers to sort themselves by willingness to pay.",
-        "It prevents the airline from changing capacity.",
-        "It converts the ticket into a commonly owned complement."
-      ],
-      "tag": "price_discrimination_cases",
-      "type": "application",
-      "objective": "LO13.5",
-      "difficulty": "hard",
-      "conceptCluster": "LO13.5_strategy_desk",
-      "primarySkill": "price_discrimination_cases",
-      "secondarySkills": [],
-      "repairSkill": "price_discrimination_cases",
-      "commonError": "treats_purchase_restriction_as_direct_identification",
-      "feedback": "The restriction is more costly to many business travelers, so leisure and business travelers tend to self-select into different fares.",
-      "aHash": "18fb08c1f5e66b2ccb29ffa5302d99f943a68d324937b2436037d0e9bc43adbe"
-    },
-    {
-      "id": 272,
-      "sourceGame": "strategyDesk",
-      "q": "A store charges $100 but offers a $25 rebate requiring paperwork. Of 1,000 buyers, 300 price-sensitive buyers redeem it. Ignoring processing cost, how much revenue does the rebate sacrifice relative to charging everyone $100?",
-      "options": [
-        "$2,500",
-        "$25,000",
-        "$7,500",
-        "$75,000"
-      ],
-      "tag": "price_discrimination_cases",
-      "type": "calculation",
-      "objective": "LO13.5",
-      "difficulty": "hard",
-      "conceptCluster": "LO13.5_strategy_desk",
-      "primarySkill": "price_discrimination_cases",
-      "secondarySkills": [],
-      "repairSkill": "price_discrimination_cases",
-      "commonError": "applies_the_discount_to_all_buyers",
-      "feedback": "Only 300 buyers receive the $25 reduction, so sacrificed revenue is 300 × $25 = $7,500.",
-      "aHash": "d0b3c35e3c943fc734588b5a78810817c8627f61c56452629053c0396d9c23e5"
-    },
-    {
-      "id": 273,
-      "sourceGame": "strategyDesk",
-      "q": "A firm cannot observe willingness to pay and wants customers to self-select. Which menu is most likely to separate high- and low-value buyers?",
-      "options": [
-        "Two identical products at different prices with no purchase restriction",
-        "One price offered secretly to every customer after checkout",
-        "A premium option that is worse on every attribute and costs more",
-        "A premium option with valuable convenience and a cheaper option carrying a meaningful restriction"
-      ],
-      "tag": "indirect_price_discrimination",
-      "type": "strategy",
-      "objective": "LO14.1",
-      "difficulty": "hard",
-      "conceptCluster": "LO14.1_strategy_desk",
-      "primarySkill": "indirect_price_discrimination",
-      "secondarySkills": [],
-      "repairSkill": "indirect_price_discrimination",
-      "commonError": "offers_no_attribute_that_supports_self_selection",
-      "feedback": "Indirect discrimination needs a meaningful tradeoff so the groups voluntarily choose different options.",
-      "aHash": "f969a945af79d2df536343ed0e620af0116699141fe33953dec18fa2b96dc98c"
-    },
-    {
-      "id": 274,
-      "sourceGame": "strategyDesk",
-      "q": "What should a manager analyze in the strategic view of bargaining?",
-      "options": [
-        "Only the total accounting cost already incurred",
-        "Only the final price without considering how it is reached",
-        "The sequence of moves, commitments, counteroffers, and credible outside options",
-        "A fixed equal split regardless of incentives"
-      ],
-      "tag": "strategic_bargaining",
-      "type": "strategy",
-      "objective": "LO16.1",
-      "difficulty": "hard",
-      "conceptCluster": "LO16.1_strategy_desk",
-      "primarySkill": "strategic_bargaining",
-      "secondarySkills": [],
-      "repairSkill": "strategic_bargaining",
-      "commonError": "ignores_bargaining_process",
-      "feedback": "Strategic bargaining focuses on how actions and timing influence the other party’s choices.",
-      "aHash": "e5138ea7a992ef353d1fd5de81c1500a6120f7b41b13f1160be408ec87ece6d7"
-    },
-    {
-      "id": 275,
-      "sourceGame": "strategyDesk",
-      "q": "The nonstrategic view of bargaining begins by identifying",
-      "options": [
-        "the order in which threats are announced",
-        "the first mover’s dominant strategy",
-        "the number of branches in a game tree",
-        "each party’s agreement value and disagreement value"
-      ],
-      "tag": "nonstrategic_bargaining",
-      "type": "definition",
-      "objective": "LO16.2",
-      "difficulty": "hard",
-      "conceptCluster": "LO16.2_strategy_desk",
-      "primarySkill": "nonstrategic_bargaining",
-      "secondarySkills": [],
-      "repairSkill": "nonstrategic_bargaining",
-      "commonError": "uses_tactical_moves_in_simple_surplus_analysis",
-      "feedback": "The gains available from agreement are measured relative to what each party gets without agreement.",
-      "aHash": "bea9dc53a741dc8a81f6f53e220bfc398706061dfc4d84f853272fce6de6ea3f"
+      "commonError": "ignores_responder_outside_option",
+      "feedback": "The buyer needs 90 − price ≥ 8, so the highest accepted price is 82. Seller profit is 82−30=52, above its 10 fallback. Offering 90 would violate the buyer’s participation constraint.",
+      "aHash": "2251942721e0990b0fbc16a2ff1ea17f6c9423276779c140ec65449c4cf480ae",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 276,
       "sourceGame": "strategyDesk",
-      "q": "A firm values agreement at $10 million and disagreement at $4 million. What is the firm’s gain from agreement?",
+      "q": "A supplier already spent $12 on specialized tooling, unrecoverable under either agreement or disagreement. Completing a deal creates receipts $90 but requires another $20 of real delivery cost. Outside options are supplier $10 and buyer $20, stated net of any future costs. They split gains equally. What is the supplier’s agreement payoff before subtracting the already sunk $12, and its net project payoff including that cost?",
       "options": [
-        "$6 million",
-        "$4 million",
-        "$10 million",
-        "$14 million"
+        "$30 and $18",
+        "$24 and $12",
+        "$45 and $33",
+        "$40 and $28"
       ],
       "tag": "nonstrategic_bargaining",
-      "type": "calculation",
+      "type": "multi-step",
       "objective": "LO16.2",
       "difficulty": "hard",
-      "conceptCluster": "LO16.2_strategy_desk",
+      "conceptCluster": "hard_strategyDesk_nonstrategic_bargaining",
       "primarySkill": "nonstrategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "nonstrategic_bargaining",
-      "commonError": "adds_values_instead_of_subtracting",
-      "feedback": "The gain from agreement is $10 million − $4 million = $6 million.",
-      "aHash": "9ceda5a87130dd392573f740ee0577c2f37288e3e7d75f9ff575bd80a337592b"
+      "commonError": "treats_sunk_cost_as_current_surplus_cost",
+      "feedback": "Net value now available is 90−20=70. Incremental surplus 70−10−20=40 gives supplier 10+20=30. The historical 12 does not change today’s surplus split but leaves net project payoff 18.",
+      "aHash": "08c77d5d64cb9d3d924382c9e3ae92584488b82cda3602672e24760653d0d238",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 277,
@@ -6489,216 +6107,65 @@ window.questionBanks = {
       "type": "multi-step",
       "objective": "LO14.1",
       "difficulty": "hard",
-      "conceptCluster": "LO14.1_strategy_desk",
+      "conceptCluster": "hard_strategyDesk_indirect_price_discrimination",
       "primarySkill": "indirect_price_discrimination",
       "secondarySkills": [],
       "repairSkill": "indirect_price_discrimination",
       "commonError": "compares_values_without_subtracting_prices",
       "feedback": "High-value surplus is $20 from Premium and $25 from Basic, so they choose the cheaper version intended for low-value buyers.",
-      "aHash": "884134ac643f9d4fff58f67aa3cf9f98fadbe4d77c4028b99ea63c236e44dffe"
+      "aHash": "884134ac643f9d4fff58f67aa3cf9f98fadbe4d77c4028b99ea63c236e44dffe",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 278,
       "sourceGame": "strategyDesk",
-      "q": "A firm gains $6 million from agreement and a union gains $7 million. What is the total bargaining surplus?",
+      "q": "A consultant and client can produce $50,000 of combined value through a contract. Their outside options are $12,000 and $18,000. They split incremental surplus equally. The consultant then obtains a $20,000 outside offer, with agreement value unchanged. How does the consultant’s negotiated payoff change?",
       "options": [
-        "$1 million",
-        "$6.5 million",
-        "$13 million",
-        "$42 million"
+        "It falls by $4,000",
+        "It rises by $8,000",
+        "It rises by $4,000",
+        "It remains unchanged"
       ],
       "tag": "nonstrategic_bargaining",
-      "type": "calculation",
+      "type": "multi-step",
       "objective": "LO16.2",
       "difficulty": "hard",
-      "conceptCluster": "LO16.2_strategy_desk",
+      "conceptCluster": "hard_strategyDesk_nonstrategic_bargaining",
       "primarySkill": "nonstrategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "nonstrategic_bargaining",
-      "commonError": "subtracts_gains_instead_of_adding",
-      "feedback": "The total surplus available to divide is the sum of both parties’ gains: $13 million.",
-      "aHash": "c501ade95caa5bb1e2ea05c178506f48a86dbd4f04ff7947be2087cd2a652607"
-    },
-    {
-      "id": 279,
-      "sourceGame": "strategyDesk",
-      "q": "A software firm disables an export feature in its low-priced edition even though disabling it saves no production cost. What is the strategic purpose?",
-      "options": [
-        "Reduce marginal cost for every edition",
-        "Make the low tier less attractive to high-value users",
-        "Prevent low-value users from buying the product",
-        "Turn the product into a requirement tie-in sale"
-      ],
-      "tag": "cannibalization_control",
-      "type": "application",
-      "objective": "LO14.2",
-      "difficulty": "hard",
-      "conceptCluster": "LO14.2_strategy_desk",
-      "primarySkill": "cannibalization_control",
-      "secondarySkills": [],
-      "repairSkill": "cannibalization_control",
-      "commonError": "assumes_damaged_goods_are_created_to_lower_cost",
-      "feedback": "The deliberate limitation protects the premium version by reducing cannibalization from high-value customers.",
-      "aHash": "faab7b47042a758754642187671fe4135bf516ab7bf7fcb644b28545591a9ec0"
-    },
-    {
-      "id": 280,
-      "sourceGame": "strategyDesk",
-      "q": "A firm can replace striking workers with machinery at low cost. In a nonstrategic bargaining analysis, this change",
-      "options": [
-        "raises the firm’s disagreement value",
-        "raises the union’s agreement value",
-        "eliminates all bargaining surplus",
-        "lowers the firm’s outside option"
-      ],
-      "tag": "nonstrategic_bargaining",
-      "type": "application",
-      "objective": "LO16.2",
-      "difficulty": "hard",
-      "conceptCluster": "LO16.2_strategy_desk",
-      "primarySkill": "nonstrategic_bargaining",
-      "secondarySkills": [],
-      "repairSkill": "nonstrategic_bargaining",
-      "commonError": "assigns_outside_option_to_wrong_party",
-      "feedback": "A workable production alternative improves the firm’s payoff if negotiations fail.",
-      "aHash": "df816c635cf399ec62c27aee952277659c29b93c810073bccdd43be8a6326420"
-    },
-    {
-      "id": 281,
-      "sourceGame": "strategyDesk",
-      "q": "Workers are highly specialized and have few alternative jobs. What happens to the union’s bargaining position?",
-      "options": [
-        "It strengthens because specialization guarantees a higher outside wage.",
-        "It weakens because the union’s disagreement value is lower.",
-        "It remains unchanged because outside options do not matter.",
-        "It becomes identical to the firm’s position."
-      ],
-      "tag": "nonstrategic_bargaining",
-      "type": "application",
-      "objective": "LO16.2",
-      "difficulty": "hard",
-      "conceptCluster": "LO16.2_strategy_desk",
-      "primarySkill": "nonstrategic_bargaining",
-      "secondarySkills": [],
-      "repairSkill": "nonstrategic_bargaining",
-      "commonError": "assumes_specialization_always_strengthens_union",
-      "feedback": "Few outside opportunities make a work stoppage more costly to union members.",
-      "aHash": "103f0e8ed5d3e7bf4b88783ba37b8215b2b28901721682b0771b4f3c99264be7"
-    },
-    {
-      "id": 282,
-      "sourceGame": "strategyDesk",
-      "q": "A strike fund pays workers during a stoppage. In the nonstrategic framework, the fund primarily",
-      "options": [
-        "raises the firm’s agreement value",
-        "reduces the total value of production",
-        "raises the union’s disagreement value",
-        "sets the final wage automatically"
-      ],
-      "tag": "nonstrategic_bargaining",
-      "type": "application",
-      "objective": "LO16.2",
-      "difficulty": "hard",
-      "conceptCluster": "LO16.2_strategy_desk",
-      "primarySkill": "nonstrategic_bargaining",
-      "secondarySkills": [],
-      "repairSkill": "nonstrategic_bargaining",
-      "commonError": "places_strike_fund_in_agreement_value",
-      "feedback": "Payments during a strike improve what union members receive without an agreement.",
-      "aHash": "45b07540b69aec4edcd4c8707bd364bacea53d31166e48781344d3d54e081eec"
+      "commonError": "confuses_outside_option_gain_with_split_surplus_gain",
+      "feedback": "Initially the consultant gets 12000+(50000−12000−18000)/2=22000. With the better outside offer it gets 20000+(50000−20000−18000)/2=26000. Its payoff rises 4000 even though total incremental surplus falls 8000.",
+      "aHash": "f25edf310c4e2eb6f7573034441b3147d7aa0282bf515a3b77184875d4bb372a",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 283,
       "sourceGame": "strategyDesk",
-      "q": "The firm’s agreement value is $12 million and disagreement value is $5 million. The union’s agreement value is $10 million and disagreement value is $4 million. What is total surplus?",
+      "q": "Two firms split incremental bargaining surplus equally. Agreement creates total value $100,000; A’s fallback is $20,000 and B’s is $30,000. Before bargaining, A may spend a nonrefundable $6,000 to raise its fallback to $30,000 without changing agreement value. Accounting for that cost in either outcome, should A invest to improve its negotiated net payoff?",
       "options": [
-        "$9 million",
-        "$22 million",
-        "$31 million",
-        "$13 million"
+        "No; its negotiated net payoff falls by $6,000",
+        "Yes; its negotiated net payoff rises by $4,000",
+        "Yes; its negotiated net payoff rises by $10,000",
+        "No; its negotiated net payoff falls by $1,000"
       ],
       "tag": "nonstrategic_bargaining",
-      "type": "calculation",
+      "type": "multi-step",
       "objective": "LO16.2",
       "difficulty": "hard",
-      "conceptCluster": "LO16.2_strategy_desk",
+      "conceptCluster": "hard_strategyDesk_nonstrategic_bargaining",
       "primarySkill": "nonstrategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "nonstrategic_bargaining",
-      "commonError": "adds_all_four_values",
-      "feedback": "The firm gains $7 million and the union gains $6 million, creating $13 million in total surplus.",
-      "aHash": "c501ade95caa5bb1e2ea05c178506f48a86dbd4f04ff7947be2087cd2a652607"
-    },
-    {
-      "id": 284,
-      "sourceGame": "strategyDesk",
-      "q": "A printer is sold near cost while ink is priced well above marginal cost. Heavy users buy much more ink than light users. What allows this metering strategy to discriminate?",
-      "options": [
-        "The printer and ink become substitutes after purchase.",
-        "Every buyer pays the same total amount over time.",
-        "The firm observes each buyer’s income before selling the printer.",
-        "Usage reveals willingness to pay through repeated ink purchases."
-      ],
-      "tag": "cannibalization_control",
-      "type": "interpretation",
-      "objective": "LO14.2",
-      "difficulty": "hard",
-      "conceptCluster": "LO14.2_strategy_desk",
-      "primarySkill": "cannibalization_control",
-      "secondarySkills": [],
-      "repairSkill": "cannibalization_control",
-      "commonError": "misses_usage_as_the_screening_device",
-      "feedback": "Metering ties payment to usage, causing high-use customers to pay more over the life of the product.",
-      "aHash": "dedb21511518daffefded58bb534e2d8d4ce91f200feb71418b0093411d67432"
-    },
-    {
-      "id": 285,
-      "sourceGame": "strategyDesk",
-      "q": "When consumers are identical and resale is impossible, what two-part tariff can extract the most surplus while preserving efficient usage?",
-      "options": [
-        "Set the per-unit price at marginal cost and the entry fee equal to consumer surplus.",
-        "Set the entry fee at zero and the per-unit price above monopoly price.",
-        "Set both the entry fee and per-unit price equal to marginal cost.",
-        "Set the per-unit price at zero and ignore the entry fee."
-      ],
-      "tag": "self_selection_pricing",
-      "type": "strategy",
-      "objective": "LO14.3",
-      "difficulty": "hard",
-      "conceptCluster": "LO14.3_strategy_desk",
-      "primarySkill": "self_selection_pricing",
-      "secondarySkills": [],
-      "repairSkill": "self_selection_pricing",
-      "commonError": "uses_per_unit_markup_instead_of_entry_fee_to_capture_surplus",
-      "feedback": "Pricing usage at marginal cost preserves efficient quantity, while the fixed fee captures the resulting consumer surplus.",
-      "aHash": "be1938543440dc0b11aeff431b85a1ca658b31255840e99312b8b51c804e04b3"
-    },
-    {
-      "id": 286,
-      "sourceGame": "strategyDesk",
-      "q": "Why do outside options affect the terms of agreement?",
-      "options": [
-        "They determine only the size of sunk costs.",
-        "They eliminate the need to calculate surplus.",
-        "They determine the minimum payoff each party must receive to prefer agreement.",
-        "They force both sides to receive identical payoffs."
-      ],
-      "tag": "nonstrategic_bargaining",
-      "type": "interpretation",
-      "objective": "LO16.2",
-      "difficulty": "hard",
-      "conceptCluster": "LO16.2_strategy_desk",
-      "primarySkill": "nonstrategic_bargaining",
-      "secondarySkills": [],
-      "repairSkill": "nonstrategic_bargaining",
-      "commonError": "ignores_participation_constraint",
-      "feedback": "An agreement must leave each party at least as well off as disagreement.",
-      "aHash": "39e5be7206456f990ef3cc60baec1e1fe59805cac8d90956df68055e5f9905e5"
+      "commonError": "ignores_cost_of_improving_outside_option",
+      "feedback": "Without investment A gets 20000+(100000−20000−30000)/2=45000. After investing it gets 30000+(100000−30000−30000)/2−6000=44000. A better gross outside option need not justify its acquisition cost.",
+      "aHash": "8ff6da4b0b8820e61e220508e946aae0aa7e8707229f0adc9b56e8bd9afc5d1e",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 287,
       "sourceGame": "strategyDesk",
-      "q": "High-value buyers value Basic at $60 and Premium at $110. Low-value buyers value Basic at $50 and Premium at $65. Basic costs $45. What is the highest Premium price that still makes high-value buyers choose Premium?",
+      "q": "High-value buyers value Basic at $60 and Premium at $110. Low-value buyers value Basic at $50 and Premium at $65. Basic costs $45. What is the highest Premium price that still makes high-value buyers choose Premium? High-value buyers choose Premium when their surplus ties with Basic; all buyers can decline to buy.",
       "options": [
         "$65",
         "$95",
@@ -6709,57 +6176,14 @@ window.questionBanks = {
       "type": "multi-step",
       "objective": "LO14.3",
       "difficulty": "hard",
-      "conceptCluster": "LO14.3_strategy_desk",
-      "primarySkill": "self_selection_pricing",
+      "conceptCluster": "hard_strategyDesk_consumer_surplus_extraction",
+      "primarySkill": "consumer_surplus_extraction",
       "secondarySkills": [],
-      "repairSkill": "self_selection_pricing",
+      "repairSkill": "consumer_surplus_extraction",
       "commonError": "ignores_the_high_type_surplus_from_basic",
       "feedback": "High-value buyers receive $15 surplus from Basic. Premium must provide at least $15, so its price can be at most $110 − $15 = $95.",
-      "aHash": "33dd83b6c8ca688562809e773365a0311abac7701780397fe692a3260f306e33"
-    },
-    {
-      "id": 288,
-      "sourceGame": "strategyDesk",
-      "q": "Consumer A values Good 1 at $90 and Good 2 at $40. Consumer B values them at $60 and $80. Marginal cost is zero. What is the best pure-bundling price and revenue?",
-      "options": [
-        "$120 bundle; $240 revenue",
-        "$140 bundle; $140 revenue",
-        "$130 bundle; $260 revenue",
-        "$170 bundle; $340 revenue"
-      ],
-      "tag": "bundling",
-      "type": "multi-step",
-      "objective": "LO14.4",
-      "difficulty": "hard",
-      "conceptCluster": "LO14.4_strategy_desk",
-      "primarySkill": "bundling",
-      "secondarySkills": [],
-      "repairSkill": "bundling",
-      "commonError": "adds_values_or_selects_highest_bundle_value_without_quantity",
-      "feedback": "Bundle values are $130 and $140. A $130 bundle sells to both consumers and earns $260, which exceeds charging $140 to one.",
-      "aHash": "701734a9a79dd0c1fad44ce8df6a7215c65c01423fbbbdeed33a0a51314377f5"
-    },
-    {
-      "id": 289,
-      "sourceGame": "strategyDesk",
-      "q": "Which summary best fits nonstrategic bargaining analysis?",
-      "options": [
-        "Begin with threats and solve every branch by backward induction.",
-        "Measure the gains from agreement relative to outside options, then analyze how that surplus can be divided.",
-        "Ignore disagreement values and compare only total revenues.",
-        "Assume the first mover captures all surplus in every negotiation."
-      ],
-      "tag": "nonstrategic_bargaining",
-      "type": "strategy",
-      "objective": "LO16.2",
-      "difficulty": "hard",
-      "conceptCluster": "LO16.2_strategy_desk",
-      "primarySkill": "nonstrategic_bargaining",
-      "secondarySkills": [],
-      "repairSkill": "nonstrategic_bargaining",
-      "commonError": "imports_sequential_tactics_into_nonstrategic_model",
-      "feedback": "The nonstrategic approach focuses on the surplus created by agreement and the parties’ fallback positions.",
-      "aHash": "70427dd972dd08903147ba2d3245d8fdc4980c8aff7805c1d1e9f2bdebbbe2f0"
+      "aHash": "33dd83b6c8ca688562809e773365a0311abac7701780397fe692a3260f306e33",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 19177,
@@ -6775,13 +6199,14 @@ window.questionBanks = {
       "type": "calculation",
       "objective": "LO14.3",
       "difficulty": "hard",
-      "conceptCluster": "hard_strategyDesk_self_selection",
-      "primarySkill": "self_selection",
+      "conceptCluster": "hard_strategyDesk_consumer_surplus_extraction",
+      "primarySkill": "consumer_surplus_extraction",
       "secondarySkills": [],
-      "repairSkill": "self_selection",
+      "repairSkill": "consumer_surplus_extraction",
       "commonError": "confuses_usage_price_with_membership_fee",
       "feedback": "Set usage price equal to MC for q=8. Consumer surplus is .5(10-2)8=$32, which becomes the fee.",
-      "aHash": "2a587345e295e03974b237087df4f57fe31052735f0d4b1034b59516530b4e82"
+      "aHash": "2a587345e295e03974b237087df4f57fe31052735f0d4b1034b59516530b4e82",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 19284,
@@ -6803,12 +6228,13 @@ window.questionBanks = {
       "repairSkill": "direct_price_discrimination",
       "commonError": "fails_to_equalize_mr_with_mc_by_segment",
       "feedback": "Set each market’s marginal revenue to $20: QA = 30 and QB = 30, giving prices $50 and $35.",
-      "aHash": "2a9e98bdf86a8cf0f937b7571f78fd2f2174f379481092a2ba726536340fd216"
+      "aHash": "2a9e98bdf86a8cf0f937b7571f78fd2f2174f379481092a2ba726536340fd216",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 9057,
       "sourceGame": "strategyDesk",
-      "q": "A repeated prisoner's dilemma has one-period temptation gain of 4 and permanent future cooperation benefit of 1 per period. With discount factor δ, grim-trigger cooperation is sustainable when",
+      "q": "A repeated prisoner's dilemma has one-period temptation gain of 4 and permanent future cooperation benefit of 1 per period above a credible punishment payoff. For an infinite horizon with 0 ≤ δ < 1, grim-trigger cooperation is sustainable when",
       "options": [
         "δ ≥ 0.2",
         "δ ≥ 0.8",
@@ -6819,13 +6245,14 @@ window.questionBanks = {
       "type": "calculation",
       "objective": "LO15.4",
       "difficulty": "hard",
-      "conceptCluster": "hard_strategyDesk_game_rules",
-      "primarySkill": "game_rules",
+      "conceptCluster": "hard_strategyDesk_strategic_rule_design",
+      "primarySkill": "strategic_rule_design",
       "secondarySkills": [],
-      "repairSkill": "game_rules",
+      "repairSkill": "strategic_rule_design",
       "commonError": "compares_one_period_gain_to_one_future_period_only",
       "feedback": "The present value of lost future benefits is δ/(1−δ). Requiring δ/(1−δ) ≥ 4 gives δ ≥ 0.8.",
-      "aHash": "aaada05edd4324094e904155f07921d638cd7c095fa97be5babc3768e95f3d49"
+      "aHash": "aaada05edd4324094e904155f07921d638cd7c095fa97be5babc3768e95f3d49",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 9059,
@@ -6838,7 +6265,7 @@ window.questionBanks = {
         "1 payoff unit"
       ],
       "tag": "credible_threats",
-      "type": "graph-integration",
+      "type": "graph/tree interpretation",
       "objective": "LO15.4",
       "difficulty": "hard",
       "conceptCluster": "hard_strategyDesk_credible_threats",
@@ -6849,31 +6276,8 @@ window.questionBanks = {
       "feedback": "Without commitment the outcome is Don't Invest–High, giving Player 2 payoff 3. Commitment induces Invest–High, giving 4, a gain of 1.",
       "image": "gametreeone.webp",
       "graphRequired": true,
-      "aHash": "9030d6790bf58d2bb2277d25564b65d0a6e06aed250a470502fa7212e964abd6"
-    },
-    {
-      "id": 9063,
-      "sourceGame": "strategyDesk",
-      "q": "In gametreetwo, what complete contingent strategy does Firm B use in the subgame-perfect equilibrium?",
-      "options": [
-        "Match after High and Low; Not Match after Medium",
-        "Match after every price selected by Firm A",
-        "Not Match after every price selected by Firm A",
-        "Not Match after High and Low; Match after Medium"
-      ],
-      "tag": "backward_induction",
-      "type": "graph-integration",
-      "objective": "LO15.2",
-      "difficulty": "hard",
-      "conceptCluster": "hard_strategyDesk_backward_induction",
-      "primarySkill": "backward_induction",
-      "secondarySkills": [],
-      "repairSkill": "backward_induction",
-      "commonError": "reports_only_realized_action_not_full_strategy",
-      "feedback": "Firm B compares its payoff at each node: 6>3, 5>4, and 8>7.",
-      "image": "gametreetwo.webp",
-      "graphRequired": true,
-      "aHash": "b77551fde5865416980667b6aa7418fac48e0cd233e9ccb23cfd7bdf18d89f6b"
+      "aHash": "9030d6790bf58d2bb2277d25564b65d0a6e06aed250a470502fa7212e964abd6",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 9067,
@@ -6886,7 +6290,7 @@ window.questionBanks = {
         "It falls by 3"
       ],
       "tag": "credible_threats",
-      "type": "graph-integration",
+      "type": "graph/tree interpretation",
       "objective": "LO15.4",
       "difficulty": "hard",
       "conceptCluster": "hard_strategyDesk_credible_threats",
@@ -6897,12 +6301,13 @@ window.questionBanks = {
       "feedback": "Original payoff is 6 at Medium–Match. Commitment yields 5 at High–Not Match minus cost 2 = 3, a decline of 3.",
       "image": "gametreetwo.webp",
       "graphRequired": true,
-      "aHash": "342907ae66f16ce6488842c437c215d0659667ba0224c9b57a1fcedd5902ed04"
+      "aHash": "342907ae66f16ce6488842c437c215d0659667ba0224c9b57a1fcedd5902ed04",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 9068,
       "sourceGame": "strategyDesk",
-      "q": "A 2×2 game has no pure equilibrium. Player 1's payoffs are 4/0 against Left/Right when choosing Up and 1/3 when choosing Down. What probability of Left makes Player 1 indifferent?",
+      "q": "Player 1 chooses Up or Down against Player 2's Left or Right. Player 1's payoffs are 4/0 against Left/Right for Up and 1/3 for Down. What probability of Left makes Player 1 indifferent? No claim about Player 2's incentives is made.",
       "options": [
         "50%",
         "25%",
@@ -6919,73 +6324,8 @@ window.questionBanks = {
       "repairSkill": "nash_equilibrium",
       "commonError": "equates_expected_payoffs_in_wrong_variable",
       "feedback": "Indifference requires 4p = 1p + 3(1−p), so 6p = 3 and p = 0.5.",
-      "aHash": "28fdae8deae31d6eafd18b70d878f6d8a3136f267ce273777c089a42ac590438"
-    },
-    {
-      "id": 9070,
-      "sourceGame": "strategyDesk",
-      "q": "An incumbent can invest 2 payoff units before entry. Payoffs are (entrant, incumbent), before subtracting that investment: Fight after entry (-1,4), Accommodate after entry (5,3), and Stay Out (0,6). The investment is observable and sunk. What does it accomplish?",
-      "options": [
-        "The investment guarantees accommodation because capacity cannot affect incentives",
-        "The investment raises the entrant's payoff from entering above its outside option",
-        "Fight becomes credible, entry is deterred, and net incumbent payoff is 4",
-        "It has no strategic effect because the investment is sunk before entry"
-      ],
-      "tag": "game_rules",
-      "type": "multi-step",
-      "objective": "LO15.4",
-      "difficulty": "hard",
-      "conceptCluster": "hard_strategyDesk_game_rules",
-      "primarySkill": "game_rules",
-      "secondarySkills": [],
-      "repairSkill": "game_rules",
-      "commonError": "ignores_how_sunk_commitment_changes_later_incentives",
-      "feedback": "After investment the incumbent prefers Fight (4>3), so entry yields −1 to the entrant and is deterred. Net incumbent payoff is 6−2 = 4.",
-      "aHash": "45630f2659f028c2e7439593ea223917e85a175716d966fe8d1795c8cf617e3f"
-    },
-    {
-      "id": 9071,
-      "sourceGame": "strategyDesk",
-      "q": "A payoff matrix has two Nash equilibria: (A,X) with (9,4) and (B,Y) with (5,8). Which equilibrium is risk dominant cannot be determined from these two cells alone because",
-      "options": [
-        "Risk dominance is zero-sum only",
-        "The equilibrium with the largest combined payoff is always risk dominant",
-        "Mixed strategies automatically eliminate both pure coordination equilibria",
-        "Off-diagonal deviation losses are also required"
-      ],
-      "tag": "nash_equilibrium",
-      "type": "trap",
-      "objective": "LO15.3",
-      "difficulty": "hard",
-      "conceptCluster": "hard_strategyDesk_nash_equilibrium",
-      "primarySkill": "nash_equilibrium",
-      "secondarySkills": [],
-      "repairSkill": "nash_equilibrium",
-      "commonError": "uses_equilibrium_payoffs_only_for_risk_dominance",
-      "feedback": "Risk dominance depends on the losses from unilateral deviations, which are encoded in the off-diagonal outcomes.",
-      "aHash": "8651a7418a593ecec190be9a2e53736be129e172367147956f410d1e21657698"
-    },
-    {
-      "id": 9073,
-      "sourceGame": "strategyDesk",
-      "q": "A firm adopts a price-matching guarantee. In a one-shot price game, why can the guarantee soften competition even if no customer ever redeems it?",
-      "options": [
-        "It bans rival discounts",
-        "It reduces the payoff from undercutting",
-        "It raises every firm's marginal production cost by the guaranteed refund",
-        "It converts substitute products into complements through contractual language"
-      ],
-      "tag": "game_rules",
-      "type": "integration",
-      "objective": "LO15.4",
-      "difficulty": "hard",
-      "conceptCluster": "hard_strategyDesk_game_rules",
-      "primarySkill": "game_rules",
-      "secondarySkills": [],
-      "repairSkill": "game_rules",
-      "commonError": "requires_observed_redemptions_for_strategic_effect",
-      "feedback": "The rule changes rivals' incentives by reducing the demand they can steal through undercutting.",
-      "aHash": "a241aa4fa0bdc3a91860f0fa2c028a3cfc02f27720dc4619c1ce12573438891a"
+      "aHash": "28fdae8deae31d6eafd18b70d878f6d8a3136f267ce273777c089a42ac590438",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 9160,
@@ -7007,7 +6347,8 @@ window.questionBanks = {
       "repairSkill": "strategic_interdependence",
       "commonError": "solves_only_one_reaction_function",
       "feedback": "Substitution gives q1=40−0.5(30−0.25q1)=25+0.125q1, so q1=25/0.875≈28.57.",
-      "aHash": "d5de8b453ede2e2b9c19240e698cb677e98b97b2b2283b168ba0c6ace13735ab"
+      "aHash": "d5de8b453ede2e2b9c19240e698cb677e98b97b2b2283b168ba0c6ace13735ab",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 9163,
@@ -7019,19 +6360,20 @@ window.questionBanks = {
         "Player 1 chooses Invest; Player 2 chooses Low after both actions",
         "Player 1 chooses Don’t Invest; Player 2 chooses Low after Invest and High after Don’t Invest"
       ],
-      "tag": "game_timing",
-      "type": "graph-integration",
+      "tag": "complete_strategy",
+      "type": "graph/tree interpretation",
       "objective": "LO15.2",
       "difficulty": "hard",
-      "conceptCluster": "hard_strategyDesk_game_timing",
-      "primarySkill": "game_timing",
+      "conceptCluster": "hard_strategyDesk_complete_strategy",
+      "primarySkill": "complete_strategy",
       "secondarySkills": [],
-      "repairSkill": "game_timing",
+      "repairSkill": "complete_strategy",
       "commonError": "reports_path_without_complete_contingent_strategy",
       "feedback": "Player 2 prefers Low after Invest (5>4) and High after Don’t Invest (3>2). Player 1 then chooses Don’t Invest because 4>2.",
       "image": "gametreeone.webp",
       "graphRequired": true,
-      "aHash": "d409218230c722c8f47ce360c5815941cc5df02d3888470cd148196b8a5b5902"
+      "aHash": "d409218230c722c8f47ce360c5815941cc5df02d3888470cd148196b8a5b5902",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 9164,
@@ -7043,43 +6385,45 @@ window.questionBanks = {
         "Firm A chooses Medium; Firm B matches after every price",
         "Firm A chooses Low; Firm B chooses Not Match after High, Not Match after Medium, and Not Match after Low"
       ],
-      "tag": "game_timing",
-      "type": "graph-integration",
+      "tag": "complete_strategy",
+      "type": "graph/tree interpretation",
       "objective": "LO15.2",
       "difficulty": "hard",
-      "conceptCluster": "hard_strategyDesk_game_timing",
-      "primarySkill": "game_timing",
+      "conceptCluster": "hard_strategyDesk_complete_strategy",
+      "primarySkill": "complete_strategy",
       "secondarySkills": [],
-      "repairSkill": "game_timing",
+      "repairSkill": "complete_strategy",
       "commonError": "ignores_off_path_actions",
       "feedback": "Firm B’s best responses are Not Match, Match, and Not Match. Firm A then compares 5, 6, and 2, choosing Medium.",
       "image": "gametreetwo.webp",
       "graphRequired": true,
-      "aHash": "a194a4391acf625a1561c6be80caeff53ab2fec00d22f1e7d5a3f9eff869e1d8"
+      "aHash": "a194a4391acf625a1561c6be80caeff53ab2fec00d22f1e7d5a3f9eff869e1d8",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 9165,
       "sourceGame": "strategyDesk",
       "q": "Trace every decision node in gametreethree. Which complete strategy profile survives backward induction?",
       "options": [
-        "Company chooses Stand Firm; Union chooses Accept after Stand Firm and Demand More after Compromise; Company chooses Refuse after Demand More",
-        "Company chooses Compromise; Union chooses Strike after Stand Firm and Accept after Compromise; Company chooses Concede after Demand More",
-        "Company chooses Compromise; Union accepts after either opening move; Company concedes",
-        "Company chooses Compromise; Union demands more; Company refuses"
+        "Company chooses Stand Firm and Refuse after Demand More; Union chooses Accept after Stand Firm and Demand More after Compromise",
+        "Company chooses Compromise and Concede after Demand More; Union chooses Strike after Stand Firm and Accept after Compromise",
+        "Company chooses Compromise and Concede after Demand More; Union chooses Accept after Stand Firm and Accept after Compromise",
+        "Company chooses Compromise and Refuse after Demand More; Union chooses Strike after Stand Firm and Demand More after Compromise"
       ],
-      "tag": "game_timing",
-      "type": "graph-integration",
+      "tag": "complete_strategy",
+      "type": "graph/tree interpretation",
       "objective": "LO15.2",
       "difficulty": "hard",
-      "conceptCluster": "hard_strategyDesk_game_timing",
-      "primarySkill": "game_timing",
+      "conceptCluster": "hard_strategyDesk_complete_strategy",
+      "primarySkill": "complete_strategy",
       "secondarySkills": [],
-      "repairSkill": "game_timing",
+      "repairSkill": "complete_strategy",
       "commonError": "reports_only_equilibrium_path",
       "feedback": "Backward induction gives Concede at the final node, Accept after Compromise, Strike after Stand Firm, and therefore Compromise initially.",
       "image": "gametreethree.webp",
       "graphRequired": true,
-      "aHash": "af5acd1468c14c3c77c1c3c1a219ed627a388b0bdbfa4155c16c47b66a78fe7e"
+      "aHash": "cbdd62626d4838e1c0a6eeed0d4f44eafab05532777bf792678f20cb592992ce",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 9166,
@@ -7101,7 +6445,8 @@ window.questionBanks = {
       "repairSkill": "nash_equilibrium",
       "commonError": "sets_wrong_players_indifference_condition",
       "feedback": "Player 1 is indifferent when 3q=1−q, so q=0.25.",
-      "aHash": "a30a043314fa89294fa2c1c989a01fbb5329e5c085a5c5a8d27317656de24ae0"
+      "aHash": "a30a043314fa89294fa2c1c989a01fbb5329e5c085a5c5a8d27317656de24ae0",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 9167,
@@ -7123,7 +6468,8 @@ window.questionBanks = {
       "repairSkill": "nash_equilibrium",
       "commonError": "equates_risk_dominance_with_lower_payoff_equilibrium",
       "feedback": "A deviation from (A,A) costs 3, while a deviation from (B,B) costs 4. The larger deviation loss makes (B,B) risk dominant.",
-      "aHash": "2bebfc3c368593fc8477945bf12b8618e63c6bfe34d16fe649d477c62d54840b"
+      "aHash": "2bebfc3c368593fc8477945bf12b8618e63c6bfe34d16fe649d477c62d54840b",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 9168,
@@ -7145,7 +6491,8 @@ window.questionBanks = {
       "repairSkill": "nash_equilibrium",
       "commonError": "checks_only_one_players_best_response",
       "feedback": "Player 1 best responds to L with U and to R with D. Player 2 best responds to U with R, to M with L, and to D with R. Only (D,R) is mutual.",
-      "aHash": "3c72df4c440c7839315f7abd71c36dc124aa4beb2ec74cf5d3a0f84e6c29fa4f"
+      "aHash": "3c72df4c440c7839315f7abd71c36dc124aa4beb2ec74cf5d3a0f84e6c29fa4f",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 9171,
@@ -7158,7 +6505,7 @@ window.questionBanks = {
         "Stand Firm, Strike"
       ],
       "tag": "strategic_rule_design",
-      "type": "graph-integration",
+      "type": "graph/tree interpretation",
       "objective": "LO15.4",
       "difficulty": "hard",
       "conceptCluster": "hard_strategyDesk_strategic_rule_design",
@@ -7169,29 +6516,8 @@ window.questionBanks = {
       "feedback": "The commitment makes the union accept after Compromise because 4>1. But the company then gets 0 from Compromise and 1 from Stand Firm followed by Strike, so it stands firm.",
       "image": "gametreethree.webp",
       "graphRequired": true,
-      "aHash": "81fdbfb25904c46a373b6077caa08582f51d0eba45dc19ae5c392060f58b916c"
-    },
-    {
-      "id": 13000,
-      "sourceGame": "strategyDesk",
-      "q": "<table style=\"border-collapse:collapse;margin:12px auto\"><caption>Payoffs (row player, column player)</caption><thead><tr><th style=\"padding:5px 8px;border:1px solid currentColor\">Row / Column</th><th scope=\"col\" style=\"padding:5px 8px;border:1px solid currentColor\">X</th><th scope=\"col\" style=\"padding:5px 8px;border:1px solid currentColor\">Y</th><th scope=\"col\" style=\"padding:5px 8px;border:1px solid currentColor\">Z</th></tr></thead><tbody><tr><th scope=\"row\" style=\"padding:5px 8px;border:1px solid currentColor\">A</th><td style=\"padding:5px 8px;border:1px solid currentColor\">(9, 8)</td><td style=\"padding:5px 8px;border:1px solid currentColor\">(2, 3)</td><td style=\"padding:5px 8px;border:1px solid currentColor\">(4, 1)</td></tr><tr><th scope=\"row\" style=\"padding:5px 8px;border:1px solid currentColor\">B</th><td style=\"padding:5px 8px;border:1px solid currentColor\">(4, 2)</td><td style=\"padding:5px 8px;border:1px solid currentColor\">(8, 9)</td><td style=\"padding:5px 8px;border:1px solid currentColor\">(6, 4)</td></tr><tr><th scope=\"row\" style=\"padding:5px 8px;border:1px solid currentColor\">C</th><td style=\"padding:5px 8px;border:1px solid currentColor\">(1, 6)</td><td style=\"padding:5px 8px;border:1px solid currentColor\">(8, 5)</td><td style=\"padding:5px 8px;border:1px solid currentColor\">(3, 7)</td></tr></tbody></table>The column player selects Y. Which set contains every row-player best response?",
-      "options": [
-        "B and C",
-        "B only",
-        "A and B",
-        "C only"
-      ],
-      "tag": "strategic_interdependence",
-      "type": "matrix",
-      "objective": "LO15.1",
-      "difficulty": "hard",
-      "conceptCluster": "hard_strategyDesk_strategic_interdependence",
-      "primarySkill": "strategic_interdependence",
-      "secondarySkills": [],
-      "repairSkill": "strategic_interdependence",
-      "commonError": "ignores_ties_or_opponents_best_response",
-      "feedback": "Against Y, row payoffs are 2, 8 and 8. Both B and C maximize the row payoff; ties must be retained.",
-      "aHash": "24c8f4d3d66d6227223dca1dda658887a62dc82b4952714e0d7b08f7cccfee08"
+      "aHash": "81fdbfb25904c46a373b6077caa08582f51d0eba45dc19ae5c392060f58b916c",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 13001,
@@ -7203,17 +6529,18 @@ window.questionBanks = {
         "Every row best response makes its cell a Nash equilibrium",
         "(C,Y) is Nash because the row player earns 8"
       ],
-      "tag": "strategic_interdependence",
+      "tag": "nash_equilibrium",
       "type": "matrix",
-      "objective": "LO15.1",
+      "objective": "LO15.3",
       "difficulty": "hard",
-      "conceptCluster": "hard_strategyDesk_strategic_interdependence",
-      "primarySkill": "strategic_interdependence",
+      "conceptCluster": "hard_strategyDesk_nash_equilibrium",
+      "primarySkill": "nash_equilibrium",
       "secondarySkills": [],
-      "repairSkill": "strategic_interdependence",
+      "repairSkill": "nash_equilibrium",
       "commonError": "ignores_ties_or_opponents_best_response",
       "feedback": "At (C,Y), the column payoff is 5; switching alone to Z gives 7. A row best response is necessary but not sufficient.",
-      "aHash": "998210dca43b893d2889d8d2e6cb19d12d346f77cae577a41105b9b9a5d6c4d0"
+      "aHash": "998210dca43b893d2889d8d2e6cb19d12d346f77cae577a41105b9b9a5d6c4d0",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 13002,
@@ -7225,17 +6552,18 @@ window.questionBanks = {
         "The row player can choose B or C; the column player can choose X",
         "Neither player can change profitably"
       ],
-      "tag": "strategic_interdependence",
+      "tag": "nash_equilibrium",
       "type": "matrix",
-      "objective": "LO15.1",
+      "objective": "LO15.3",
       "difficulty": "hard",
-      "conceptCluster": "hard_strategyDesk_strategic_interdependence",
-      "primarySkill": "strategic_interdependence",
+      "conceptCluster": "hard_strategyDesk_nash_equilibrium",
+      "primarySkill": "nash_equilibrium",
       "secondarySkills": [],
-      "repairSkill": "strategic_interdependence",
+      "repairSkill": "nash_equilibrium",
       "commonError": "ignores_ties_or_opponents_best_response",
       "feedback": "At (A,Y), row payoff 2 rises to 8 at B or C. Holding A fixed, column payoff 3 rises to 8 at X.",
-      "aHash": "833d8f731e8c38df0ec6725015cd6331355c7eeb553f41688670c9762c7c6ece"
+      "aHash": "833d8f731e8c38df0ec6725015cd6331355c7eeb553f41688670c9762c7c6ece",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 13003,
@@ -7257,29 +6585,8 @@ window.questionBanks = {
       "repairSkill": "nash_equilibrium",
       "commonError": "ignores_ties_or_opponents_best_response",
       "feedback": "Row best responses are A to X, B and C to Y, and B to Z. Column best responses are X at A, Y at B and Z at C. Only (A,X) and (B,Y) intersect.",
-      "aHash": "ab2d65ad22adccb6136fa16eb99b1445d634cbffff6d9aa78c6183b619bd2e91"
-    },
-    {
-      "id": 13004,
-      "sourceGame": "strategyDesk",
-      "q": "<table style=\"border-collapse:collapse;margin:12px auto\"><caption>Payoffs (row player, column player)</caption><thead><tr><th style=\"padding:5px 8px;border:1px solid currentColor\">Row / Column</th><th scope=\"col\" style=\"padding:5px 8px;border:1px solid currentColor\">X</th><th scope=\"col\" style=\"padding:5px 8px;border:1px solid currentColor\">Y</th><th scope=\"col\" style=\"padding:5px 8px;border:1px solid currentColor\">Z</th></tr></thead><tbody><tr><th scope=\"row\" style=\"padding:5px 8px;border:1px solid currentColor\">A</th><td style=\"padding:5px 8px;border:1px solid currentColor\">(9, 8)</td><td style=\"padding:5px 8px;border:1px solid currentColor\">(2, 3)</td><td style=\"padding:5px 8px;border:1px solid currentColor\">(4, 1)</td></tr><tr><th scope=\"row\" style=\"padding:5px 8px;border:1px solid currentColor\">B</th><td style=\"padding:5px 8px;border:1px solid currentColor\">(4, 2)</td><td style=\"padding:5px 8px;border:1px solid currentColor\">(8, 9)</td><td style=\"padding:5px 8px;border:1px solid currentColor\">(6, 4)</td></tr><tr><th scope=\"row\" style=\"padding:5px 8px;border:1px solid currentColor\">C</th><td style=\"padding:5px 8px;border:1px solid currentColor\">(1, 6)</td><td style=\"padding:5px 8px;border:1px solid currentColor\">(8, 5)</td><td style=\"padding:5px 8px;border:1px solid currentColor\">(3, 7)</td></tr></tbody></table>Why is (B,Z) not a Nash equilibrium even though B is the row player's unique best response to Z?",
-      "options": [
-        "At row B, the column player gains by moving from Z to Y",
-        "At column Z, the row player gains by moving to C",
-        "Nash requires each player to have a dominant strategy",
-        "Nash requires both players to receive the same payoff"
-      ],
-      "tag": "nash_equilibrium",
-      "type": "matrix",
-      "objective": "LO15.3",
-      "difficulty": "hard",
-      "conceptCluster": "hard_strategyDesk_nash_equilibrium",
-      "primarySkill": "nash_equilibrium",
-      "secondarySkills": [],
-      "repairSkill": "nash_equilibrium",
-      "commonError": "ignores_ties_or_opponents_best_response",
-      "feedback": "The column payoff rises from 4 to 9 after switching from Z to Y, holding B fixed.",
-      "aHash": "670a2cead003f5ae3ad1a5fe6b99158e35de428fd83bd578d87fe0173021c4d5"
+      "aHash": "ab2d65ad22adccb6136fa16eb99b1445d634cbffff6d9aa78c6183b619bd2e91",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 13005,
@@ -7295,13 +6602,14 @@ window.questionBanks = {
       "type": "matrix",
       "objective": "LO15.3",
       "difficulty": "hard",
-      "conceptCluster": "hard_strategyDesk_nash_equilibrium",
-      "primarySkill": "nash_equilibrium",
+      "conceptCluster": "hard_strategyDesk_weak_dominance",
+      "primarySkill": "weak_dominance",
       "secondarySkills": [],
-      "repairSkill": "nash_equilibrium",
+      "repairSkill": "weak_dominance",
       "commonError": "ignores_ties_or_opponents_best_response",
       "feedback": "Against X, A and B tie for the row maximum of 7. At A, X and Y tie for the column maximum of 6, making (A,X) Nash. The other mutual best responses are (B,Y) and (C,Z).",
-      "aHash": "37b0a57ae9715e79d0fbfb0de37104a31a993180c9557d6735f73d2cdc64b537"
+      "aHash": "37b0a57ae9715e79d0fbfb0de37104a31a993180c9557d6735f73d2cdc64b537",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 13006,
@@ -7317,13 +6625,14 @@ window.questionBanks = {
       "type": "matrix",
       "objective": "LO15.4",
       "difficulty": "hard",
-      "conceptCluster": "hard_strategyDesk_strategic_rule_design",
-      "primarySkill": "strategic_rule_design",
+      "conceptCluster": "hard_strategyDesk_weak_dominance",
+      "primarySkill": "weak_dominance",
       "secondarySkills": [],
-      "repairSkill": "strategic_rule_design",
+      "repairSkill": "weak_dominance",
       "commonError": "ignores_ties_or_opponents_best_response",
       "feedback": "B compares with C as 4>1, 8=8 and 6>3. This is weak dominance, not strict dominance.",
-      "aHash": "fc8b27014ed3e91f287e9aee590f8bfb7de224b60d8e02814267ca228fe53f42"
+      "aHash": "fc8b27014ed3e91f287e9aee590f8bfb7de224b60d8e02814267ca228fe53f42",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 13007,
@@ -7339,13 +6648,14 @@ window.questionBanks = {
       "type": "matrix",
       "objective": "LO15.4",
       "difficulty": "hard",
-      "conceptCluster": "hard_strategyDesk_strategic_rule_design",
-      "primarySkill": "strategic_rule_design",
+      "conceptCluster": "hard_strategyDesk_weak_dominance",
+      "primarySkill": "weak_dominance",
       "secondarySkills": [],
-      "repairSkill": "strategic_rule_design",
+      "repairSkill": "weak_dominance",
       "commonError": "ignores_ties_or_opponents_best_response",
       "feedback": "In rows A and B, the column payoffs under Y are 3 and 9, exceeding Z's 1 and 4. Row C had blocked this comparison because its Z payoff was 7 versus Y's 5.",
-      "aHash": "59985162074cdeb3136eea12c74603b6d32c2fae7d4247b0fd24449d71df35e2"
+      "aHash": "59985162074cdeb3136eea12c74603b6d32c2fae7d4247b0fd24449d71df35e2",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 13008,
@@ -7361,13 +6671,14 @@ window.questionBanks = {
       "type": "matrix",
       "objective": "LO15.4",
       "difficulty": "hard",
-      "conceptCluster": "hard_strategyDesk_strategic_rule_design",
-      "primarySkill": "strategic_rule_design",
+      "conceptCluster": "hard_strategyDesk_weak_dominance",
+      "primarySkill": "weak_dominance",
       "secondarySkills": [],
-      "repairSkill": "strategic_rule_design",
+      "repairSkill": "weak_dominance",
       "commonError": "ignores_ties_or_opponents_best_response",
       "feedback": "A and B tie against X, so the dominated row A participates in (A,X). Weak deletion can remove Nash equilibria supported by ties; it does not certify the complete original equilibrium set.",
-      "aHash": "2b2a9986c9afc5e39a883ace3e84ebb7cd7c1f35c408c144719aa98de5a046c5"
+      "aHash": "2b2a9986c9afc5e39a883ace3e84ebb7cd7c1f35c408c144719aa98de5a046c5",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 13102,
@@ -7383,13 +6694,14 @@ window.questionBanks = {
       "type": "matrix",
       "objective": "LO15.3",
       "difficulty": "hard",
-      "conceptCluster": "hard_strategyDesk_nash_equilibrium",
-      "primarySkill": "nash_equilibrium",
+      "conceptCluster": "hard_strategyDesk_weak_dominance",
+      "primarySkill": "weak_dominance",
       "secondarySkills": [],
-      "repairSkill": "nash_equilibrium",
+      "repairSkill": "weak_dominance",
       "commonError": "ignores_ties_or_opponents_best_response",
       "feedback": "Dominance compares one player's alternative strategies across every opponent choice. X is not dominated merely because it pays 2 at row C.",
-      "aHash": "5d97c8213646479b1aa6fc1390cb0238a37d45f6d2213f02390a54f65c43e0ab"
+      "aHash": "5d97c8213646479b1aa6fc1390cb0238a37d45f6d2213f02390a54f65c43e0ab",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 13201,
@@ -7402,1250 +6714,17 @@ window.questionBanks = {
         "Wait/Support only; off-path actions are not part of a strategy"
       ],
       "tag": "game_timing",
-      "type": "integration",
+      "type": "strategy",
       "objective": "LO15.2",
       "difficulty": "hard",
       "conceptCluster": "hard_strategyDesk_game_timing",
       "primarySkill": "game_timing",
       "secondarySkills": [],
       "repairSkill": "game_timing",
-      "commonError": "ignores_information_constraints",
+      "commonError": "omits_off_path_best_response",
       "feedback": "The second player prefers Challenge after Launch (9>5) and Support after Wait (8>4). The first player compares 3 and 7 and waits. Off-path behavior must still be specified and optimal.",
-      "aHash": "4cb9dfec2cc62dae511af73781948b65b221fbc0efe3fc102d3ec5fc3db6500a"
-    }
-  ],
-  "elite": [
-    {
-      "id": 300,
-      "sourceGame": "strategyDesk",
-      "q": "At a price of $20, Buyer A demands 6 units and Buyer B demands 4. When price rises to $25, their quantities fall to 4 and 3. Using the midpoint method on market demand, what is the approximate price elasticity of demand?",
-      "options": [
-        "1.59",
-        "0.78",
-        "1.29",
-        "2.50"
-      ],
-      "tag": "price_elasticity",
-      "type": "multi-step",
-      "objective": "LO6.3",
-      "difficulty": "elite",
-      "conceptCluster": "LO6.3_strategy_desk",
-      "primarySkill": "price_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "price_elasticity",
-      "commonError": "uses_individual_instead_of_market_totals",
-      "feedback": "Market quantity falls from 10 to 7. The midpoint elasticity is (3/8.5) ÷ (5/22.5) ≈ 1.59 in absolute value.",
-      "aHash": "dbb418de80acc22fc68f8c9eb5914af90d28409122918a6d93ef2e89d54a3d13"
-    },
-    {
-      "id": 301,
-      "sourceGame": "strategyDesk",
-      "q": "Two customers have demands QA = 30 − P and QB = 20 − P for prices below their choke prices. What is market quantity demanded at P = $12?",
-      "options": [
-        "14 units",
-        "26 units",
-        "18 units",
-        "38 units"
-      ],
-      "tag": "market_demand",
-      "type": "calculation",
-      "objective": "LO6.1",
-      "difficulty": "elite",
-      "conceptCluster": "LO6.1_strategy_desk",
-      "primarySkill": "market_demand",
-      "secondarySkills": [],
-      "repairSkill": "market_demand",
-      "commonError": "adds_choke_prices_or_averages_quantities",
-      "feedback": "QA = 18 and QB = 8, so market demand is 26 units.",
-      "aHash": "7589b85a7cb64bd0d9ace850a44dde820099886b8ab316e9268f4dbf2f3d6e34"
-    },
-    {
-      "id": 302,
-      "sourceGame": "strategyDesk",
-      "q": "A manager estimates one 'average customer' demand curve and multiplies it by the number of buyers. When is this shortcut most dangerous?",
-      "options": [
-        "When every buyer has identical demand",
-        "When price is fixed across the market",
-        "When buyer demands differ sharply",
-        "When all buyers face the same marginal cost"
-      ],
-      "tag": "market_demand",
-      "type": "trap",
-      "objective": "LO6.1",
-      "difficulty": "elite",
-      "conceptCluster": "LO6.1_strategy_desk",
-      "primarySkill": "market_demand",
-      "secondarySkills": [],
-      "repairSkill": "market_demand",
-      "commonError": "assumes_representative_buyer_is_always_valid",
-      "feedback": "A representative-buyer shortcut can distort market demand when buyers differ substantially in willingness to pay or responsiveness.",
-      "aHash": "a124708053f165540f85880815949b2c6896d3eb8733acc6d73cebfb09d4eaf1"
-    },
-    {
-      "id": 303,
-      "sourceGame": "strategyDesk",
-      "q": "A product can be sold for $40 with quantity 1,000 or for $36 with quantity 1,180. Marginal cost is $20. Which price yields the higher contribution profit?",
-      "options": [
-        "$36, by $880",
-        "$36, by $2,240",
-        "Both prices yield the same contribution",
-        "$40, by $1,120"
-      ],
-      "tag": "optimal_pricing",
-      "type": "calculation",
-      "objective": "LO6.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO6.2_strategy_desk",
-      "primarySkill": "optimal_pricing",
-      "secondarySkills": [],
-      "repairSkill": "optimal_pricing",
-      "commonError": "compares_revenue_instead_of_contribution",
-      "feedback": "At $40, contribution is $20,000. At $36, it is $18,880. The $40 price is higher by $1,120.",
-      "aHash": "547ef3df062eb418da05930980ce82aa4fb40d194380583d5b33922e817f0590"
-    },
-    {
-      "id": 304,
-      "sourceGame": "strategyDesk",
-      "q": "A firm tests three prices. At $50 it sells 800 units, at $45 it sells 950, and at $40 it sells 1,050. Marginal cost is $25. Which tested price maximizes contribution?",
-      "options": [
-        "$50",
-        "$40",
-        "$45",
-        "All three are equal"
-      ],
-      "tag": "optimal_pricing",
-      "type": "calculation",
-      "objective": "LO6.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO6.2_strategy_desk",
-      "primarySkill": "optimal_pricing",
-      "secondarySkills": [],
-      "repairSkill": "optimal_pricing",
-      "commonError": "chooses_highest_revenue_without_margin",
-      "feedback": "Contribution is $26,250 at $50, $19,000 at $45, and $15,750 at $40, so $50 is best among the tested prices.",
-      "aHash": "a4bb5df8e940d605f1da0c93c8d6085681c561a9edd47904da0c8bbf59ef97dd"
-    },
-    {
-      "id": 305,
-      "sourceGame": "strategyDesk",
-      "q": "A price cut raises revenue but lowers profit. Which conclusion is most defensible?",
-      "options": [
-        "Demand must be perfectly inelastic at every nearby price",
-        "Added volume did not cover lower margins and costs",
-        "Marginal cost can be ignored whenever revenue rises",
-        "The original price was necessarily unlawful"
-      ],
-      "tag": "optimal_pricing",
-      "type": "interpretation",
-      "objective": "LO6.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO6.2_strategy_desk",
-      "primarySkill": "optimal_pricing",
-      "secondarySkills": [],
-      "repairSkill": "optimal_pricing",
-      "commonError": "equates_revenue_growth_with_profit_growth",
-      "feedback": "Revenue can rise while profit falls if the reduced margin on existing sales and added production cost exceed the gain from extra units.",
-      "aHash": "9bbb3a8f66bc39ea3fefde5c8058d48d0d5d6282f192e20c0100b7a4f5e745ec"
-    },
-    {
-      "id": 306,
-      "sourceGame": "strategyDesk",
-      "q": "Price rises from $30 to $36 and quantity falls from 500 to 410. Using the midpoint method, what is the absolute price elasticity?",
-      "options": [
-        "0.64",
-        "0.98",
-        "1.09",
-        "1.80"
-      ],
-      "tag": "price_elasticity",
-      "type": "calculation",
-      "objective": "LO6.3",
-      "difficulty": "elite",
-      "conceptCluster": "LO6.3_strategy_desk",
-      "primarySkill": "price_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "price_elasticity",
-      "commonError": "uses_initial_value_formula_or_reverses_ratio",
-      "feedback": "The quantity change is 90/455 and the price change is 6/33, giving elasticity about 1.09.",
-      "aHash": "28b478ce49706c4e6689e2f3a9a964ee5642134488d4a25280a7d9b6fce123cd"
-    },
-    {
-      "id": 307,
-      "sourceGame": "strategyDesk",
-      "q": "A firm estimates demand elasticity at −0.7 near its current price. If marginal cost is unchanged and there are no strategic spillovers, what does this estimate signal?",
-      "options": [
-        "A small price cut must increase both revenue and profit",
-        "Total revenue must already be at its maximum",
-        "Quantity must rise when the posted price rises",
-        "A small price increase can raise revenue"
-      ],
-      "tag": "price_elasticity",
-      "type": "interpretation",
-      "objective": "LO6.3",
-      "difficulty": "elite",
-      "conceptCluster": "LO6.3_strategy_desk",
-      "primarySkill": "price_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "price_elasticity",
-      "commonError": "confuses_revenue_with_profit_or_sign",
-      "feedback": "With inelastic demand, a small price increase tends to raise total revenue, though profit still depends on cost and other effects.",
-      "aHash": "d9cd11851bf099fa711c0874df24ab68ab541be5cdb80ee0171fd5f2fde567bb"
-    },
-    {
-      "id": 308,
-      "sourceGame": "strategyDesk",
-      "q": "A 5% increase in a rival's price raises demand for your product by 8%. What is the cross-price elasticity, and what relationship does it indicate?",
-      "options": [
-        "1.6; substitutes",
-        "−1.6; complements",
-        "0.625; substitutes",
-        "8.0; unrelated goods"
-      ],
-      "tag": "forecasting_elasticities",
-      "type": "calculation",
-      "objective": "LO6.4",
-      "difficulty": "elite",
-      "conceptCluster": "LO6.4_strategy_desk",
-      "primarySkill": "forecasting_elasticities",
-      "secondarySkills": [],
-      "repairSkill": "forecasting_elasticities",
-      "commonError": "reverses_percentage_changes_or_sign",
-      "feedback": "Cross-price elasticity is 8% ÷ 5% = 1.6. The positive sign indicates substitutes.",
-      "aHash": "0582cc4577c4561579f7cacb714f0d8091008f911e88f34b561eb1ac2ce25228"
-    },
-    {
-      "id": 309,
-      "sourceGame": "strategyDesk",
-      "q": "Income rises 4% and demand for a service rises 1%. Which classification fits best?",
-      "options": [
-        "Inferior service",
-        "Normal service with low income elasticity",
-        "Income-elastic luxury service",
-        "Perfectly income-elastic service at all income levels"
-      ],
-      "tag": "forecasting_elasticities",
-      "type": "interpretation",
-      "objective": "LO6.4",
-      "difficulty": "elite",
-      "conceptCluster": "LO6.4_strategy_desk",
-      "primarySkill": "forecasting_elasticities",
-      "secondarySkills": [],
-      "repairSkill": "forecasting_elasticities",
-      "commonError": "uses_positive_sign_to_claim_luxury",
-      "feedback": "Income elasticity is 0.25: positive but below one, so the service is a normal, income-inelastic good.",
-      "aHash": "301b71843bd9829918d5a9d50643ffd3e1765b17abd8f1f61f5a5963a9f32fda"
-    },
-    {
-      "id": 310,
-      "sourceGame": "strategyDesk",
-      "q": "Advertising elasticity is 0.30. If advertising spending rises from $50,000 to $60,000, by what percentage should quantity demanded rise, holding other factors constant?",
-      "options": [
-        "3%",
-        "20%",
-        "6%",
-        "30%"
-      ],
-      "tag": "forecasting_elasticities",
-      "type": "calculation",
-      "objective": "LO6.4",
-      "difficulty": "elite",
-      "conceptCluster": "LO6.4_strategy_desk",
-      "primarySkill": "forecasting_elasticities",
-      "secondarySkills": [],
-      "repairSkill": "forecasting_elasticities",
-      "commonError": "reverses_advertising_elasticity_ratio",
-      "feedback": "Advertising rises 20%. Multiplying 0.30 by 20% gives a predicted 6% increase in quantity demanded.",
-      "aHash": "d9d689c786a2ae27b96d59f2623ccce3b62e32733f1c306c0df59ae4b10b35a3"
-    },
-    {
-      "id": 311,
-      "sourceGame": "strategyDesk",
-      "q": "A firm sells 10,000 units at $25 with variable cost $15. It considers cutting price to $23. What percentage increase in unit sales is required to preserve total contribution?",
-      "options": [
-        "20%",
-        "33.3%",
-        "50%",
-        "25%"
-      ],
-      "tag": "stay_even_volume",
-      "type": "calculation",
-      "objective": "LO6.5",
-      "difficulty": "elite",
-      "conceptCluster": "LO6.5_strategy_desk",
-      "primarySkill": "stay_even_volume",
-      "secondarySkills": [],
-      "repairSkill": "stay_even_volume",
-      "commonError": "uses_revenue_change_instead_of_contribution",
-      "feedback": "Current contribution is $10 per unit; new contribution is $8. Required quantity is 10,000×10/8 = 12,500, a 25% increase.",
-      "aHash": "72da55d317fd997b93138b8646a2238e806a4c4566d1e854277b5a583d8aef23"
-    },
-    {
-      "id": 312,
-      "sourceGame": "strategyDesk",
-      "q": "A price falls from $60 to $54 while variable cost remains $36. Current sales are 4,000 units. What unit volume is needed to stay even on contribution?",
-      "options": [
-        "5,333",
-        "4,500",
-        "5,000",
-        "6,000"
-      ],
-      "tag": "stay_even_volume",
-      "type": "calculation",
-      "objective": "LO6.5",
-      "difficulty": "elite",
-      "conceptCluster": "LO6.5_strategy_desk",
-      "primarySkill": "stay_even_volume",
-      "secondarySkills": [],
-      "repairSkill": "stay_even_volume",
-      "commonError": "divides_by_old_margin",
-      "feedback": "Old contribution is $24 and new contribution is $18. Required volume is 4,000×24/18 = 5,333 units.",
-      "aHash": "637c114424ce262df3b5f2bcbb6bb6330359db51de2b5a9331572e5a867d3c5d"
-    },
-    {
-      "id": 313,
-      "sourceGame": "strategyDesk",
-      "q": "A proposed discount requires a 30% sales increase to stay even, but the demand forecast predicts only a 12% increase. What should the firm conclude, holding other effects constant?",
-      "options": [
-        "The discount preserves contribution",
-        "The discount likely lowers contribution",
-        "The forecast proves demand is inelastic",
-        "The firm must double advertising"
-      ],
-      "tag": "stay_even_volume",
-      "type": "strategy",
-      "objective": "LO6.5",
-      "difficulty": "elite",
-      "conceptCluster": "LO6.5_strategy_desk",
-      "primarySkill": "stay_even_volume",
-      "secondarySkills": [],
-      "repairSkill": "stay_even_volume",
-      "commonError": "ignores_stay_even_threshold",
-      "feedback": "The forecasted increase falls short of the stay-even requirement, so contribution is expected to decline.",
-      "aHash": "fbab805b2c2fd07167069e893a7d4719485cb8f9befff50982b3b4855702ffd8"
-    },
-    {
-      "id": 314,
-      "sourceGame": "strategyDesk",
-      "q": "A stadium has fixed capacity and expects a price cut to sell 15% more tickets, but only 5% more seats are available. What is the central flaw in relying on the forecasted demand increase?",
-      "options": [
-        "The forecast uses quantity rather than revenue",
-        "The price cut makes marginal cost negative",
-        "The forecast ignores the capacity constraint",
-        "The price cut eliminates market demand"
-      ],
-      "tag": "market_demand",
-      "type": "integration",
-      "objective": "LO6.1",
-      "difficulty": "elite",
-      "conceptCluster": "LO6.1_strategy_desk",
-      "primarySkill": "market_demand",
-      "secondarySkills": [],
-      "repairSkill": "market_demand",
-      "commonError": "confuses_demand_with_feasible_sales",
-      "feedback": "Demand may rise 15%, but realized sales cannot exceed the remaining 5% of capacity.",
-      "aHash": "5ee3b016a5b3247603a6650b4d894fab942863d898ca57ad26224a2a2b87e975"
-    },
-    {
-      "id": 315,
-      "sourceGame": "strategyDesk",
-      "q": "A discount on Product A adds $52,000 of contribution on A but destroys $67,000 of contribution on an owned substitute. What happens to total portfolio contribution?",
-      "options": [
-        "It rises by $15,000",
-        "It rises by $52,000",
-        "It falls by $67,000",
-        "It falls by $15,000"
-      ],
-      "tag": "substitute_pricing",
-      "type": "calculation",
-      "objective": "LO12.1",
-      "difficulty": "elite",
-      "conceptCluster": "LO12.1_strategy_desk",
-      "primarySkill": "substitute_pricing",
-      "secondarySkills": [],
-      "repairSkill": "substitute_pricing",
-      "commonError": "ignores_cannibalization",
-      "feedback": "The portfolio effect is $52,000 − $67,000 = −$15,000.",
-      "aHash": "651f381397558fd3547d8abba933b4a1cdad99f1f0192d110622cbdaa68eae0c"
-    },
-    {
-      "id": 316,
-      "sourceGame": "strategyDesk",
-      "q": "After acquiring a close substitute, a firm raises both prices. What economic force most directly supports that move?",
-      "options": [
-        "The firm internalizes sales diverted between its own products",
-        "Both products now have lower marginal costs",
-        "Consumers can no longer substitute between the two acquired products",
-        "The goods must have negative cross-price elasticity"
-      ],
-      "tag": "substitute_pricing",
-      "type": "interpretation",
-      "objective": "LO12.1",
-      "difficulty": "elite",
-      "conceptCluster": "LO12.1_strategy_desk",
-      "primarySkill": "substitute_pricing",
-      "secondarySkills": [],
-      "repairSkill": "substitute_pricing",
-      "commonError": "treats_substitutes_as_complements",
-      "feedback": "Common ownership makes the firm account for sales diverted from one owned product to the other, often reducing the incentive to price aggressively.",
-      "aHash": "5f16fb61858f493d49069e57668565958c288ca91125ca864cf7e5178c7e86b3"
-    },
-    {
-      "id": 317,
-      "sourceGame": "strategyDesk",
-      "q": "Two owned substitute products have very different margins. A price cut on the low-margin product shifts customers away from the high-margin product. Which metric should dominate the decision?",
-      "options": [
-        "Unit sales of the discounted product",
-        "Total contribution from the two-product portfolio",
-        "Market share of the discounted product after the price cut",
-        "The old price of the high-margin product"
-      ],
-      "tag": "substitute_pricing",
-      "type": "strategy",
-      "objective": "LO12.1",
-      "difficulty": "elite",
-      "conceptCluster": "LO12.1_strategy_desk",
-      "primarySkill": "substitute_pricing",
-      "secondarySkills": [],
-      "repairSkill": "substitute_pricing",
-      "commonError": "maximizes_product_sales_instead_of_portfolio_profit",
-      "feedback": "The firm should evaluate total portfolio contribution, including the margin lost through cannibalization.",
-      "aHash": "a33326dfa0659877eb374f3c5164700cf9f3ca36550edea3267651262fb20fc5"
-    },
-    {
-      "id": 318,
-      "sourceGame": "strategyDesk",
-      "q": "A console discount reduces total console contribution by $100,000 but attracts 2,000 new buyers. Each new buyer purchases three games that contribute $25 each. What is the net contribution effect?",
-      "options": [
-        "$50,000 loss",
-        "$100,000 gain",
-        "$50,000 gain",
-        "$150,000 gain"
-      ],
-      "tag": "complement_pricing",
-      "type": "multi-step",
-      "objective": "LO12.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO12.2_strategy_desk",
-      "primarySkill": "complement_pricing",
-      "secondarySkills": [],
-      "repairSkill": "complement_pricing",
-      "commonError": "counts_console_margin_but_ignores_discount_or_game_sales",
-      "feedback": "Game contribution is 2,000×3×$25 = $150,000. After the $100,000 console loss, net contribution rises $50,000.",
-      "aHash": "c339defb1ce480d68ca50b3c1248e0dbed7743f4483539a64c7fe43a2cf55610"
-    },
-    {
-      "id": 319,
-      "sourceGame": "strategyDesk",
-      "q": "Why might a firm price one complement below its stand-alone profit-maximizing level?",
-      "options": [
-        "To make the two products substitutes",
-        "To eliminate every fixed production cost",
-        "To force both complements to have identical elasticities",
-        "To increase profit on the companion product"
-      ],
-      "tag": "complement_pricing",
-      "type": "strategy",
-      "objective": "LO12.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO12.2_strategy_desk",
-      "primarySkill": "complement_pricing",
-      "secondarySkills": [],
-      "repairSkill": "complement_pricing",
-      "commonError": "optimizes_each_product_separately",
-      "feedback": "A lower price on one complement can increase sales and profit on the other, so the pair should be priced jointly.",
-      "aHash": "03aedaca2ed141cc7426927ae3dfd06245ab08b6721cc0644356903168399fea"
-    },
-    {
-      "id": 320,
-      "sourceGame": "strategyDesk",
-      "q": "A printer price cut reduces printer contribution by $12 per unit but creates expected ink contribution of $18 per new buyer. If it generates 5,000 new buyers, what is the net contribution effect?",
-      "options": [
-        "$30,000 gain",
-        "$60,000 gain",
-        "$90,000 gain",
-        "$150,000 gain"
-      ],
-      "tag": "complement_pricing",
-      "type": "calculation",
-      "objective": "LO12.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO12.2_strategy_desk",
-      "primarySkill": "complement_pricing",
-      "secondarySkills": [],
-      "repairSkill": "complement_pricing",
-      "commonError": "uses_only_companion_profit",
-      "feedback": "Net gain per buyer is $18 − $12 = $6, so total gain is $30,000.",
-      "aHash": "4535d1550ef73a8ca0976e4b38de050255af767ce341281368e77c82fdcee013"
-    },
-    {
-      "id": 321,
-      "sourceGame": "strategyDesk",
-      "q": "A hotel has one room left. A walk-in offers $120, but accepting now is expected to displace a later booking worth $190 with 70% probability. Variable service cost is $20 either way. What is the expected opportunity cost of accepting the walk-in?",
-      "options": [
-        "$49",
-        "$119",
-        "$70",
-        "$133"
-      ],
-      "tag": "capacity_pricing",
-      "type": "multi-step",
-      "objective": "LO12.3",
-      "difficulty": "elite",
-      "conceptCluster": "LO12.3_strategy_desk",
-      "primarySkill": "capacity_pricing",
-      "secondarySkills": [],
-      "repairSkill": "capacity_pricing",
-      "commonError": "ignores_displacement_probability",
-      "feedback": "The expected lost contribution from the later booking is 0.70×($190−$20) = $119.",
-      "aHash": "e17e01283ada5f55cbc53db61fc2ae6ad5d9dd364537c043372d007dcced1df8"
-    },
-    {
-      "id": 322,
-      "sourceGame": "strategyDesk",
-      "q": "A manufacturer has idle capacity and receives a one-time order priced above variable cost but below average total cost. When is accepting most defensible?",
-      "options": [
-        "When the order displaces regular sales",
-        "When fixed cost can be avoided immediately",
-        "When it covers incremental cost without harming regular sales",
-        "When the buyer can freely resell the order into the regular market"
-      ],
-      "tag": "capacity_pricing",
-      "type": "strategy",
-      "objective": "LO12.3",
-      "difficulty": "elite",
-      "conceptCluster": "LO12.3_strategy_desk",
-      "primarySkill": "capacity_pricing",
-      "secondarySkills": [],
-      "repairSkill": "capacity_pricing",
-      "commonError": "uses_average_total_cost_as_short_run_floor",
-      "feedback": "With idle capacity, incremental contribution can justify the order if it does not displace higher-value sales or undermine the regular market.",
-      "aHash": "3054bacfd6e928f9abfe557c7a057527bfb07e53cb40d55e2e8629441def4303"
-    },
-    {
-      "id": 323,
-      "sourceGame": "strategyDesk",
-      "q": "An airline forecasts 98% load factor for a flight. What pricing response is most consistent with capacity management?",
-      "options": [
-        "Lower price broadly to increase demand",
-        "Keep every fare open until departure",
-        "Ignore the forecast because seats are fixed",
-        "Raise price or close low-fare classes"
-      ],
-      "tag": "forecast_driven_pricing",
-      "type": "application",
-      "objective": "LO12.4",
-      "difficulty": "elite",
-      "conceptCluster": "LO12.4_strategy_desk",
-      "primarySkill": "forecast_driven_pricing",
-      "secondarySkills": [],
-      "repairSkill": "forecast_driven_pricing",
-      "commonError": "treats_fixed_capacity_as_reason_not_to_adjust_price",
-      "feedback": "When demand is expected to nearly fill capacity, the airline should protect scarce seats for higher-value buyers.",
-      "aHash": "68cffe661834c3c7513f89fdaca1ddffdbb702e72ca5650b1cff959bb431a93d"
-    },
-    {
-      "id": 324,
-      "sourceGame": "strategyDesk",
-      "q": "A retailer's forecast has a 40% chance of high demand and a 60% chance of low demand. Profit is $120,000 if it sets a high price and demand is high, $45,000 if high price and demand is low, $95,000 if low price and demand is high, and $70,000 if low price and demand is low. Which price has the higher expected profit?",
-      "options": [
-        "Low price by $5,000",
-        "High price by $5,000",
-        "High price by $8,000",
-        "Low price by $8,000"
-      ],
-      "tag": "forecast_driven_pricing",
-      "type": "multi-step",
-      "objective": "LO12.4",
-      "difficulty": "elite",
-      "conceptCluster": "LO12.4_strategy_desk",
-      "primarySkill": "forecast_driven_pricing",
-      "secondarySkills": [],
-      "repairSkill": "forecast_driven_pricing",
-      "commonError": "uses_most_likely_state_only",
-      "feedback": "Expected profit is $75,000 for high price and $80,000 for low price, so low price is higher by $5,000.",
-      "aHash": "a1087b002948790c7b641a8770629c05ec410ed211bc85105ebc23476e5c9a18"
-    },
-    {
-      "id": 325,
-      "sourceGame": "strategyDesk",
-      "q": "A promotion increases sales by 4,000 units. Contribution is $7 per incremental unit, the campaign costs $22,000, and 1,000 of those sales would have occurred anyway. What is incremental profit?",
-      "options": [
-        "$6,000",
-        "−$1,000",
-        "$21,000",
-        "$28,000"
-      ],
-      "tag": "promotion_response",
-      "type": "multi-step",
-      "objective": "LO12.5",
-      "difficulty": "elite",
-      "conceptCluster": "LO12.5_strategy_desk",
-      "primarySkill": "promotion_response",
-      "secondarySkills": [],
-      "repairSkill": "promotion_response",
-      "commonError": "credits_all_sales_to_promotion",
-      "feedback": "Incremental sales are 3,000, creating $21,000 contribution. After $22,000 campaign cost, incremental profit is −$1,000.",
-      "aHash": "15330317711bba3a8fc86e994c6e9d5fb19fc295e92650dd286b323de4f49954"
-    },
-    {
-      "id": 326,
-      "sourceGame": "strategyDesk",
-      "q": "A campaign makes customers more aware of close substitutes and demand becomes more elastic. Holding marginal cost constant, what pricing pressure follows?",
-      "options": [
-        "Toward a higher price",
-        "Toward zero output",
-        "Toward a lower price",
-        "Toward a fixed legal price"
-      ],
-      "tag": "promotion_response",
-      "type": "interpretation",
-      "objective": "LO12.5",
-      "difficulty": "elite",
-      "conceptCluster": "LO12.5_strategy_desk",
-      "primarySkill": "promotion_response",
-      "secondarySkills": [],
-      "repairSkill": "promotion_response",
-      "commonError": "assumes_all_advertising_reduces_elasticity",
-      "feedback": "More elastic demand generally puts downward pressure on the profit-maximizing markup.",
-      "aHash": "f2ef7a170e44b5a2168db051c1b5d60c0aff701430d203365d60377697c6e2ca"
-    },
-    {
-      "id": 327,
-      "sourceGame": "strategyDesk",
-      "q": "A firm compares sales in a promoted region with sales in an untreated region before and after a campaign. What problem is this design trying to reduce?",
-      "options": [
-        "Cannibalization among several commonly owned substitute products",
-        "Arbitrage across verified customer groups",
-        "A weakly dominated pricing strategy",
-        "Confusing a market-wide trend with the campaign's effect"
-      ],
-      "tag": "promotion_response",
-      "type": "application",
-      "objective": "LO12.5",
-      "difficulty": "elite",
-      "conceptCluster": "LO12.5_strategy_desk",
-      "primarySkill": "promotion_response",
-      "secondarySkills": [],
-      "repairSkill": "promotion_response",
-      "commonError": "attributes_all_time_change_to_promotion",
-      "feedback": "A comparison region helps separate the campaign's effect from changes that would have happened anyway.",
-      "aHash": "eabc44335562993cd761aa0d660137069af74a83cdcd60e3256d88b7fffe4bda"
-    },
-    {
-      "id": 328,
-      "sourceGame": "strategyDesk",
-      "q": "A menu lists a $90 basic option, a deliberately unattractive $140 decoy, and a $145 premium option. What psychological effect is the decoy intended to create?",
-      "options": [
-        "Make Premium look better by comparison",
-        "Make the basic option appear unlawful",
-        "Eliminate every reference point used by consumers",
-        "Turn complementary products into substitutes"
-      ],
-      "tag": "behavioral_pricing",
-      "type": "interpretation",
-      "objective": "LO12.6",
-      "difficulty": "elite",
-      "conceptCluster": "LO12.6_strategy_desk",
-      "primarySkill": "behavioral_pricing",
-      "secondarySkills": [],
-      "repairSkill": "behavioral_pricing",
-      "commonError": "confuses_decoy_with_discount",
-      "feedback": "The decoy makes the premium seem like a better deal by comparison.",
-      "aHash": "86f4bfe1c8857ab7ee2ae2c1339a41a80dcc771ee1aba6488008325eaa589b04"
-    },
-    {
-      "id": 329,
-      "sourceGame": "strategyDesk",
-      "q": "Which use of reference pricing is most defensible?",
-      "options": [
-        "Claim a fictitious regular price that was never actually charged",
-        "Show a real prior price and an accurate current discount",
-        "Hide mandatory charges until the final purchase screen",
-        "Use a false competitor price to manufacture urgency"
-      ],
-      "tag": "behavioral_pricing",
-      "type": "trap",
-      "objective": "LO12.6",
-      "difficulty": "elite",
-      "conceptCluster": "LO12.6_strategy_desk",
-      "primarySkill": "behavioral_pricing",
-      "secondarySkills": [],
-      "repairSkill": "behavioral_pricing",
-      "commonError": "treats_any_anchor_as_legitimate",
-      "feedback": "Reference prices should be truthful and based on real, supportable comparisons.",
-      "aHash": "0111642783cedde60ae0deec331f09da810db4cd5dbb0657a14a4723e4b434f1"
-    },
-    {
-      "id": 330,
-      "sourceGame": "strategyDesk",
-      "q": "A monopolist can separate two markets. Market H has demand P = 100 − Q and Market L has demand P = 60 − Q. Marginal cost is zero. What prices maximize profit in the two markets?",
-      "options": [
-        "$100 in H and $60 in L",
-        "$40 in H and $40 in L",
-        "$50 in H and $30 in L",
-        "$70 in H and $20 in L"
-      ],
-      "tag": "price_discrimination",
-      "type": "multi-step",
-      "objective": "LO13.1",
-      "difficulty": "elite",
-      "conceptCluster": "LO13.1_strategy_desk",
-      "primarySkill": "price_discrimination",
-      "secondarySkills": [],
-      "repairSkill": "price_discrimination",
-      "commonError": "charges_same_price_or_uses_choke_price",
-      "feedback": "For linear demand with zero marginal cost, MR = 0 at half the choke price, giving $50 and $30.",
-      "aHash": "1981d5fac98b09ac86c363eda97934e2e7ce3234436e935fb40a16a065cb5515"
-    },
-    {
-      "id": 331,
-      "sourceGame": "strategyDesk",
-      "q": "A firm charges two groups prices that differ by $10. A reseller can buy in the low-price group and resell in the high-price group at a transport and transaction cost of $4 per unit. What threatens the strategy?",
-      "options": [
-        "Demand becomes perfectly inelastic",
-        "The groups become complements",
-        "The firm must charge the same price by definition",
-        "Arbitrage remains profitable by $6 per unit"
-      ],
-      "tag": "arbitrage_control",
-      "type": "calculation",
-      "objective": "LO13.3",
-      "difficulty": "elite",
-      "conceptCluster": "LO13.3_strategy_desk",
-      "primarySkill": "arbitrage_control",
-      "secondarySkills": [],
-      "repairSkill": "arbitrage_control",
-      "commonError": "ignores_resale_cost",
-      "feedback": "A reseller can buy low and sell high while paying $4, leaving a $6 margin.",
-      "aHash": "2de57d966376b5bd7c75f241c159a6c39965284f9dbcbe12b62b6c3a6563554e"
-    },
-    {
-      "id": 332,
-      "sourceGame": "strategyDesk",
-      "q": "Why does third-degree price discrimination generally charge the higher markup to the group with less elastic demand?",
-      "options": [
-        "Its sales fall proportionally less when price rises",
-        "That customer group always has lower income",
-        "Marginal cost is always higher for that customer group",
-        "The law requires identical quantities across customer groups"
-      ],
-      "tag": "price_discrimination",
-      "type": "interpretation",
-      "objective": "LO13.1",
-      "difficulty": "elite",
-      "conceptCluster": "LO13.1_strategy_desk",
-      "primarySkill": "price_discrimination",
-      "secondarySkills": [],
-      "repairSkill": "price_discrimination",
-      "commonError": "reverses_elasticity_markup_relation",
-      "feedback": "A less elastic segment is less responsive to price, supporting a larger markup.",
-      "aHash": "14324da2ad1a721968bf608e707f136933ae7396c581db213f53759e7b75c14e"
-    },
-    {
-      "id": 333,
-      "sourceGame": "strategyDesk",
-      "q": "A museum charges residents $12 and tourists $20. Residents must show local identification and tickets are nontransferable. Which condition most directly protects the pricing system?",
-      "options": [
-        "Ensure identical demand elasticities across both groups",
-        "Verify eligibility and block ticket resale",
-        "Post one price where every visitor can see it",
-        "Confirm that income elasticity is negative"
-      ],
-      "tag": "direct_price_discrimination",
-      "type": "application",
-      "objective": "LO13.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO13.2_strategy_desk",
-      "primarySkill": "direct_price_discrimination",
-      "secondarySkills": [],
-      "repairSkill": "direct_price_discrimination",
-      "commonError": "ignores_arbitrage_control",
-      "feedback": "Identification separates the groups, and nontransferability prevents discounted tickets from being resold.",
-      "aHash": "9d6a9b60c31c4032736fee28f51a678dc7fc3e3b1d4f4213587d5680d5f5aada"
-    },
-    {
-      "id": 334,
-      "sourceGame": "strategyDesk",
-      "q": "A firm knows Group A demand is less elastic than Group B demand, but cannot identify customers before sale. Which statement is correct?",
-      "options": [
-        "Direct discrimination is automatic whenever elasticities differ",
-        "The firm should always charge Group B the higher price",
-        "Direct pricing needs a reliable group identifier",
-        "Arbitrage is irrelevant whenever production costs are equal"
-      ],
-      "tag": "direct_price_discrimination",
-      "type": "trap",
-      "objective": "LO13.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO13.2_strategy_desk",
-      "primarySkill": "direct_price_discrimination",
-      "secondarySkills": [],
-      "repairSkill": "direct_price_discrimination",
-      "commonError": "assumes_segment_difference_is_enough",
-      "feedback": "Different demand alone is not enough for direct discrimination; the seller must identify or verify the customer group.",
-      "aHash": "4f9b734aaf834ce24f127b558ab089263f421b294449a2ca1d23fb66708e89d1"
-    },
-    {
-      "id": 335,
-      "sourceGame": "strategyDesk",
-      "q": "A software seller offers a student price of $40 and a professional price of $120. Verification costs $8 per discounted license. If verification prevents a $80 price leak on 1,000 licenses, what is the net protected revenue?",
-      "options": [
-        "$8,000",
-        "$40,000",
-        "$80,000",
-        "$72,000"
-      ],
-      "tag": "arbitrage_control",
-      "type": "calculation",
-      "objective": "LO13.3",
-      "difficulty": "elite",
-      "conceptCluster": "LO13.3_strategy_desk",
-      "primarySkill": "arbitrage_control",
-      "secondarySkills": [],
-      "repairSkill": "arbitrage_control",
-      "commonError": "subtracts_verification_from_wrong_base",
-      "feedback": "Protected revenue is $80,000 and verification costs $8,000, leaving $72,000.",
-      "aHash": "f1b022d1d7a153e38fd2b0c3afbf004a34550c3562f1666cbe956d332d7375b8"
-    },
-    {
-      "id": 336,
-      "sourceGame": "strategyDesk",
-      "q": "Which policy best limits arbitrage in a geographic discount program?",
-      "options": [
-        "Require location verification and restrict resale",
-        "Allow unlimited transferable coupons",
-        "Publish the high price only",
-        "Make the discounted product identical and freely tradable"
-      ],
-      "tag": "arbitrage_control",
-      "type": "strategy",
-      "objective": "LO13.3",
-      "difficulty": "elite",
-      "conceptCluster": "LO13.3_strategy_desk",
-      "primarySkill": "arbitrage_control",
-      "secondarySkills": [],
-      "repairSkill": "arbitrage_control",
-      "commonError": "relies_on_secrecy_instead_of_enforcement",
-      "feedback": "Eligibility checks and resale restrictions directly limit movement from the low-price market to the high-price market.",
-      "aHash": "c0c16dcc1400a073f61f06ddd767c3207b03914dba07c85a4d4553d6f620bf78"
-    },
-    {
-      "id": 337,
-      "sourceGame": "strategyDesk",
-      "q": "A supplier charges two competing retailers different prices for goods of like grade and quality. Which fact would most weaken a Robinson–Patman challenge?",
-      "options": [
-        "The favored buyer happens to be the larger retailer",
-        "Documented cost savings from serving the favored buyer",
-        "The price difference is kept secret from all competitors",
-        "The disfavored retailer dislikes the arrangement and loses sales"
-      ],
-      "tag": "robinson_patman",
-      "type": "application",
-      "objective": "LO13.4",
-      "difficulty": "elite",
-      "conceptCluster": "LO13.4_strategy_desk",
-      "primarySkill": "robinson_patman",
-      "secondarySkills": [],
-      "repairSkill": "robinson_patman",
-      "commonError": "assumes_size_alone_justifies_discount",
-      "feedback": "A genuine cost justification can explain a price difference without unlawful discrimination.",
-      "aHash": "784e28d303db99e0bdb740484753c6d49fa4e3c69c4433015dc1118d9d480dcc"
-    },
-    {
-      "id": 338,
-      "sourceGame": "strategyDesk",
-      "q": "Which fact is necessary but not sufficient for a Robinson–Patman violation?",
-      "options": [
-        "Proof that monopoly power exists in every affected product market",
-        "A consumer boycott of the favored purchaser",
-        "Different prices to competing purchasers",
-        "A price below average fixed cost in one transaction"
-      ],
-      "tag": "robinson_patman",
-      "type": "trap",
-      "objective": "LO13.4",
-      "difficulty": "elite",
-      "conceptCluster": "LO13.4_strategy_desk",
-      "primarySkill": "robinson_patman",
-      "secondarySkills": [],
-      "repairSkill": "robinson_patman",
-      "commonError": "treats_price_difference_as_complete_case",
-      "feedback": "A price difference is required, but other elements—such as comparable goods, commerce, and competitive injury—also matter.",
-      "aHash": "ac76f53b26631dc931e0f8eb0358c8589113a6ce7fd48214b10aa58dd7088d50"
-    },
-    {
-      "id": 339,
-      "sourceGame": "strategyDesk",
-      "q": "A wholesaler lowers price to one retailer to meet a verified competitor's offer. Which defense is most relevant?",
-      "options": [
-        "Natural monopoly",
-        "Perfect price discrimination",
-        "Two-part tariff",
-        "Meeting competition"
-      ],
-      "tag": "robinson_patman",
-      "type": "definition",
-      "objective": "LO13.4",
-      "difficulty": "elite",
-      "conceptCluster": "LO13.4_strategy_desk",
-      "primarySkill": "robinson_patman",
-      "secondarySkills": [],
-      "repairSkill": "robinson_patman",
-      "commonError": "confuses_cost_justification_and_meeting_competition",
-      "feedback": "A seller may defend a price difference made in good faith to meet a competitor's price.",
-      "aHash": "41103224c1ea5227373d56fb3a8b8d085cf3e90a4225b224781ed9e203d4a30e"
-    },
-    {
-      "id": 340,
-      "sourceGame": "strategyDesk",
-      "q": "A gym offers a lower membership price to customers who commit for one year and pay an early-cancellation fee. What should be checked before calling this direct price discrimination?",
-      "options": [
-        "Whether the price reflects customer identity rather than contract terms",
-        "Whether every customer uses the gym for exactly the same number of hours",
-        "Whether the gym has measured identical usage by every customer over the full year",
-        "Whether the contract creates a complementary product"
-      ],
-      "tag": "price_discrimination_cases",
-      "type": "trap",
-      "objective": "LO13.5",
-      "difficulty": "elite",
-      "conceptCluster": "LO13.5_strategy_desk",
-      "primarySkill": "price_discrimination_cases",
-      "secondarySkills": [],
-      "repairSkill": "price_discrimination_cases",
-      "commonError": "labels_any_price_difference_as_direct_discrimination",
-      "feedback": "Different contract terms may justify different prices without direct classification by customer type.",
-      "aHash": "fb8bb7b12d1c1107c514baf00ec9fbd88e63a6804c521d210d891968203dde16"
-    },
-    {
-      "id": 341,
-      "sourceGame": "strategyDesk",
-      "q": "An airline charges business travelers more through refundable fares and leisure travelers less through restrictive fares. What mechanism does the restriction mainly provide?",
-      "options": [
-        "Direct observation of each traveler's annual income",
-        "Self-selection based on willingness to pay",
-        "A complete ban on all fare differences",
-        "A cost-based wholesale discount for purchasing larger quantities"
-      ],
-      "tag": "price_discrimination_cases",
-      "type": "interpretation",
-      "objective": "LO13.5",
-      "difficulty": "elite",
-      "conceptCluster": "LO13.5_strategy_desk",
-      "primarySkill": "price_discrimination_cases",
-      "secondarySkills": [],
-      "repairSkill": "price_discrimination_cases",
-      "commonError": "calls_restriction_direct_identification",
-      "feedback": "Restrictions induce travelers to choose different fare products, making this largely indirect self-selection.",
-      "aHash": "ce3f7125b28906aa4ff2a1e1fe82fea93fd364c15b9f26c249278da3ff9231d0"
-    },
-    {
-      "id": 342,
-      "sourceGame": "strategyDesk",
-      "q": "A coupon reduces price by $15. Of 2,000 buyers, 600 redeem it, and 200 of those buyers would not have purchased without the coupon. Ignoring cost, how much revenue is sacrificed on buyers who would have purchased anyway?",
-      "options": [
-        "$3,000",
-        "$9,000",
-        "$6,000",
-        "$30,000"
-      ],
-      "tag": "price_discrimination_cases",
-      "type": "calculation",
-      "objective": "LO13.5",
-      "difficulty": "elite",
-      "conceptCluster": "LO13.5_strategy_desk",
-      "primarySkill": "price_discrimination_cases",
-      "secondarySkills": [],
-      "repairSkill": "price_discrimination_cases",
-      "commonError": "applies_discount_only_to_incremental_buyers",
-      "feedback": "Four hundred redemptions come from buyers who would have purchased anyway, so sacrificed revenue is 400×$15 = $6,000.",
-      "aHash": "f455ed4209cdc909730b6b732fb242e1933fdebcfac5fdf35dd9f2bac7cb51b0"
-    },
-    {
-      "id": 343,
-      "sourceGame": "strategyDesk",
-      "q": "A seller has two identifiable groups. Group X would buy 500 units at $50 or 650 at $40. Group Y would buy 200 at $50 or 500 at $40. Marginal cost is $20. Which uniform price yields more contribution?",
-      "options": [
-        "$50 by $1,000",
-        "$50 by $2,000",
-        "$40 by $1,000",
-        "$40 by $2,000"
-      ],
-      "tag": "price_discrimination",
-      "type": "multi-step",
-      "objective": "LO13.1",
-      "difficulty": "elite",
-      "conceptCluster": "LO13.1_strategy_desk",
-      "primarySkill": "price_discrimination",
-      "secondarySkills": [],
-      "repairSkill": "price_discrimination",
-      "commonError": "compares_revenue_not_contribution",
-      "feedback": "At $50, contribution is 700×$30 = $21,000. At $40, it is 1,150×$20 = $23,000, so $40 is better by $2,000.",
-      "aHash": "1088694edf0b91f0995cacccd6d671177c631f37528ab1d838b2542f3b098aa7"
-    },
-    {
-      "id": 344,
-      "sourceGame": "strategyDesk",
-      "q": "A firm can identify a high-value segment but the discounted product is easily resold. What is the best diagnosis?",
-      "options": [
-        "Identification works, but resale can collapse the price gap",
-        "The firm has achieved perfect price discrimination",
-        "Resale makes demand less elastic in every customer segment",
-        "The high-value segment should receive the larger discount"
-      ],
-      "tag": "direct_price_discrimination",
-      "type": "integration",
-      "objective": "LO13.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO13.2_strategy_desk",
-      "primarySkill": "direct_price_discrimination",
-      "secondarySkills": [],
-      "repairSkill": "direct_price_discrimination",
-      "commonError": "ignores_arbitrage_after_identification",
-      "feedback": "Identification permits direct pricing, but profitable resale can unravel it.",
-      "aHash": "decca165529d90d76d136c1143f41eedb5b2e3fac30a5c28e122b13dfbe57b1e"
-    },
-    {
-      "id": 345,
-      "sourceGame": "strategyDesk",
-      "q": "High-value customers value Premium at $150 and Basic at $90. Low-value customers value Premium at $95 and Basic at $75. Basic is priced at $60. Customers choose Premium when indifferent. What is the highest Premium price that keeps high-value customers choosing Premium?",
-      "options": [
-        "$95",
-        "$120",
-        "$135",
-        "$150"
-      ],
-      "tag": "indirect_price_discrimination",
-      "type": "multi-step",
-      "objective": "LO14.1",
-      "difficulty": "elite",
-      "conceptCluster": "LO14.1_strategy_desk",
-      "primarySkill": "indirect_price_discrimination",
-      "secondarySkills": [],
-      "repairSkill": "indirect_price_discrimination",
-      "commonError": "ignores_high_type_basic_surplus",
-      "feedback": "High-value surplus from Basic is $30. Premium must give at least $30, so price can be at most $150−$30 = $120.",
-      "aHash": "38f1defd84f62a3d821cf82e00ba4f8e81f9201dd9a1b3d4d86416f0419ca81f"
-    },
-    {
-      "id": 346,
-      "sourceGame": "strategyDesk",
-      "q": "Low-value customers value Basic at $75 and Premium at $95. Basic costs $60 and Premium costs $120. Which incentive-compatibility condition directs low-value customers toward Basic?",
-      "options": [
-        "Premium surplus must exceed Basic surplus for low-value buyers",
-        "Premium must always be cheaper than Basic",
-        "Basic must give low-value buyers at least as much surplus",
-        "Both versions must contain identical features"
-      ],
-      "tag": "indirect_price_discrimination",
-      "type": "interpretation",
-      "objective": "LO14.1",
-      "difficulty": "elite",
-      "conceptCluster": "LO14.1_strategy_desk",
-      "primarySkill": "indirect_price_discrimination",
-      "secondarySkills": [],
-      "repairSkill": "indirect_price_discrimination",
-      "commonError": "checks_only_high_type_constraint",
-      "feedback": "Low-value customers must weakly prefer Basic: $75−$60 = $15 versus $95−$120 = −$25.",
-      "aHash": "10518f21796b86616eeffa09f1e1664f8ecb71853cf97c005df3a8b90e1a0523"
-    },
-    {
-      "id": 347,
-      "sourceGame": "strategyDesk",
-      "q": "A menu fails because both customer types choose the basic version. Which adjustment most directly restores separation?",
-      "options": [
-        "Make the Premium version less valuable",
-        "Lower the Basic price even further",
-        "Remove every difference between the two versions and keep prices separate",
-        "Reduce Basic's appeal to high-value users"
-      ],
-      "tag": "indirect_price_discrimination",
-      "type": "strategy",
-      "objective": "LO14.1",
-      "difficulty": "elite",
-      "conceptCluster": "LO14.1_strategy_desk",
-      "primarySkill": "indirect_price_discrimination",
-      "secondarySkills": [],
-      "repairSkill": "indirect_price_discrimination",
-      "commonError": "worsens_cannibalization",
-      "feedback": "The basic option needs a meaningful restriction or the premium option needs added value so high-value customers choose Premium.",
-      "aHash": "476a8a3ff954647b3250e6f38b77df09214cd091448a17024c8f7dc533f36d2b"
-    },
-    {
-      "id": 348,
-      "sourceGame": "strategyDesk",
-      "q": "A cloud service charges $10 per user plus $0.02 per transaction. Heavy users generate far more transactions. What pricing mechanism is operating?",
-      "options": [
-        "Metering",
-        "Pure bundling",
-        "Direct geographic discrimination",
-        "Predatory pricing"
-      ],
-      "tag": "cannibalization_control",
-      "type": "definition",
-      "objective": "LO14.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO14.2_strategy_desk",
-      "primarySkill": "cannibalization_control",
-      "secondarySkills": [],
-      "repairSkill": "cannibalization_control",
-      "commonError": "misses_usage_based_screening",
-      "feedback": "The transaction charge meters usage, causing heavy users to pay more.",
-      "aHash": "d91ba250018ceb8a7a1566622684d926531104e44c4e20ec9cb7f42c56634fc6"
-    },
-    {
-      "id": 349,
-      "sourceGame": "strategyDesk",
-      "q": "A basic software tier disables automation. The disabled feature costs almost nothing to provide. Why can disabling it still be profitable?",
-      "options": [
-        "It lowers marginal cost enough to finance the entire discount",
-        "It keeps high-value users from trading down",
-        "It prevents low-value customers from purchasing any version",
-        "It makes resale across geographic markets impossible"
-      ],
-      "tag": "cannibalization_control",
-      "type": "interpretation",
-      "objective": "LO14.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO14.2_strategy_desk",
-      "primarySkill": "cannibalization_control",
-      "secondarySkills": [],
-      "repairSkill": "cannibalization_control",
-      "commonError": "assumes_feature_removal_is_cost_saving",
-      "feedback": "A deliberate restriction can preserve self-selection and reduce cannibalization of the premium tier.",
-      "aHash": "19e4946ce73b868bafd7e5ca8087cf30e8e5b0dd7c223b5e994da9443bdad6ca"
-    },
-    {
-      "id": 350,
-      "sourceGame": "strategyDesk",
-      "q": "A printer costs $100 and cartridges cost $30 with $18 contribution each. A buyer purchases four cartridges. What total contribution does the firm earn if printer contribution is $5?",
-      "options": [
-        "$23",
-        "$72",
-        "$77",
-        "$125"
-      ],
-      "tag": "cannibalization_control",
-      "type": "calculation",
-      "objective": "LO14.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO14.2_strategy_desk",
-      "primarySkill": "cannibalization_control",
-      "secondarySkills": [],
-      "repairSkill": "cannibalization_control",
-      "commonError": "uses_price_instead_of_contribution",
-      "feedback": "Total contribution is $5 + 4×$18 = $77.",
-      "aHash": "baa88642ef65195487a0bea4d0d60aef82960a230fb1543034b69e2cb2eec830"
-    },
-    {
-      "id": 351,
-      "sourceGame": "strategyDesk",
-      "q": "Which low-priced version is least likely to cannibalize the premium version?",
-      "options": [
-        "A version identical to Premium except for price",
-        "A version with every premium feature plus a permanently lower price",
-        "A version transferable to an unlimited number of users",
-        "A version missing a feature valued mainly by high-value users"
-      ],
-      "tag": "cannibalization_control",
-      "type": "trap",
-      "objective": "LO14.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO14.2_strategy_desk",
-      "primarySkill": "cannibalization_control",
-      "secondarySkills": [],
-      "repairSkill": "cannibalization_control",
-      "commonError": "removes_feature_valued_equally_by_all",
-      "feedback": "A restriction especially costly to high-value users helps preserve separation without driving away low-value users.",
-      "aHash": "82cee633fb4b256e430d59db533c3ae815b350b9242dd77ee86a7a42964dc52a"
-    },
-    {
-      "id": 352,
-      "sourceGame": "strategyDesk",
-      "q": "A club has identical customers. Marginal usage cost is $4, and each customer's consumer surplus at a $4 usage price is $120. Which two-part tariff extracts the surplus while keeping efficient usage?",
-      "options": [
-        "$120 fee and $4 usage price",
-        "$0 fee and $10 usage price",
-        "$4 fee and $120 usage price",
-        "$120 fee and $0 usage price"
-      ],
-      "tag": "self_selection_pricing",
-      "type": "application",
-      "objective": "LO14.3",
-      "difficulty": "elite",
-      "conceptCluster": "LO14.3_strategy_desk",
-      "primarySkill": "self_selection_pricing",
-      "secondarySkills": [],
-      "repairSkill": "self_selection_pricing",
-      "commonError": "uses_usage_markup_instead_of_fixed_fee",
-      "feedback": "Set usage price at marginal cost and capture the resulting consumer surplus with the fixed fee.",
-      "aHash": "21e883edf7245e2df6e62eeb08df006348c2f8832d7700e9b4efde29942f6f28"
-    },
-    {
-      "id": 353,
-      "sourceGame": "strategyDesk",
-      "q": "A firm offers Basic for $50 and Premium for $90. High-value buyers value them at $80 and $130; low-value buyers value them at $65 and $85. Which choices occur?",
-      "options": [
-        "Both types choose Premium",
-        "High types choose Premium; low types choose Basic",
-        "High types choose Basic; low types choose Premium",
-        "Both types reject both options"
-      ],
-      "tag": "self_selection_pricing",
-      "type": "multi-step",
-      "objective": "LO14.3",
-      "difficulty": "elite",
-      "conceptCluster": "LO14.3_strategy_desk",
-      "primarySkill": "self_selection_pricing",
-      "secondarySkills": [],
-      "repairSkill": "self_selection_pricing",
-      "commonError": "compares_values_without_prices",
-      "feedback": "High-value surplus is 30 from Basic and 40 from Premium; low-value surplus is 15 from Basic and −5 from Premium.",
-      "aHash": "8b1a5bf62642ad524e1374253d3200e55bf5dd69efd86cb6d222df708f984416"
-    },
-    {
-      "id": 354,
-      "sourceGame": "strategyDesk",
-      "q": "Why can a menu with more options lower profit?",
-      "options": [
-        "More options always reduce the firm's marginal production cost",
-        "More options eliminate all differences in customer willingness to pay",
-        "Extra versions can create cannibalization and poor sorting",
-        "Every added option raises willingness to pay by the same amount"
-      ],
-      "tag": "self_selection_pricing",
-      "type": "interpretation",
-      "objective": "LO14.3",
-      "difficulty": "elite",
-      "conceptCluster": "LO14.3_strategy_desk",
-      "primarySkill": "self_selection_pricing",
-      "secondarySkills": [],
-      "repairSkill": "self_selection_pricing",
-      "commonError": "assumes_more_choices_always_help",
-      "feedback": "Additional versions can draw high-value customers into cheaper choices or weaken the intended sorting.",
-      "aHash": "8d0af5004d2f9b660169c6526dd58817c325c0db1c3d60c6f16b399870efea39"
-    },
-    {
-      "id": 355,
-      "sourceGame": "strategyDesk",
-      "q": "Two consumers have total bundle values of $120 and $130. With zero marginal cost, which pure-bundle price maximizes revenue?",
-      "options": [
-        "$100",
-        "$130",
-        "$250",
-        "$120"
-      ],
-      "tag": "bundling",
-      "type": "calculation",
-      "objective": "LO14.4",
-      "difficulty": "elite",
-      "conceptCluster": "LO14.4_strategy_desk",
-      "primarySkill": "bundling",
-      "secondarySkills": [],
-      "repairSkill": "bundling",
-      "commonError": "chooses_highest_total_value_without_quantity",
-      "feedback": "A $120 bundle sells to both consumers for $240; a $130 bundle sells only once.",
-      "aHash": "38f1defd84f62a3d821cf82e00ba4f8e81f9201dd9a1b3d4d86416f0419ca81f"
+      "aHash": "4cb9dfec2cc62dae511af73781948b65b221fbc0efe3fc102d3ec5fc3db6500a",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 356,
@@ -8660,410 +6739,822 @@ window.questionBanks = {
       "tag": "bundling",
       "type": "multi-step",
       "objective": "LO14.4",
-      "difficulty": "elite",
-      "conceptCluster": "LO14.4_strategy_desk",
+      "difficulty": "hard",
+      "conceptCluster": "hard_strategyDesk_bundling",
       "primarySkill": "bundling",
       "secondarySkills": [],
       "repairSkill": "bundling",
       "commonError": "adds_each_buyers_max_value",
       "feedback": "Good 1 earns max of $90×1 or $50×2 = $100. Good 2 earns max of $80×1 or $30×2 = $80. Total is $180.",
-      "aHash": "8ca9d742288ff056110c48836189f89fd16f1df80e1e202ffd5b4dc223637760"
+      "aHash": "8ca9d742288ff056110c48836189f89fd16f1df80e1e202ffd5b4dc223637760",
+      "canonicalDifficulty": "hard"
     },
     {
-      "id": 357,
+      "id": 366,
       "sourceGame": "strategyDesk",
-      "q": "Why does bundling work best when customers' valuations are negatively correlated?",
+      "q": "Player 1's Strategy A pays 4, 3, and 2 against three rival actions. Strategy B pays 4, 5, and 2. What is true?",
       "options": [
-        "Negative correlation makes package marginal cost equal to zero",
-        "Bundling makes total valuations more similar across buyers",
-        "Each buyer must value both goods by exactly the same amount",
-        "Negative correlation guarantees perfect price discrimination"
+        "Strategy B strictly dominates Strategy A",
+        "Strategy A weakly dominates Strategy B",
+        "Strategy B weakly dominates Strategy A",
+        "Neither strategy dominates the other"
       ],
-      "tag": "bundling",
-      "type": "interpretation",
-      "objective": "LO14.4",
-      "difficulty": "elite",
-      "conceptCluster": "LO14.4_strategy_desk",
-      "primarySkill": "bundling",
+      "tag": "weak_dominance",
+      "type": "application",
+      "objective": "LO15.4",
+      "difficulty": "hard",
+      "conceptCluster": "hard_strategyDesk_weak_dominance",
+      "primarySkill": "weak_dominance",
       "secondarySkills": [],
-      "repairSkill": "bundling",
-      "commonError": "confuses_correlation_with_cost",
-      "feedback": "High value for one good tends to offset low value for the other, making bundle values more similar across buyers.",
-      "aHash": "e91bfec111595a43e1460f3663e34116c4443ec614f52f84ada8dc8481880d4b"
+      "repairSkill": "weak_dominance",
+      "commonError": "confuses_weak_dominance_with_strict_dominance",
+      "feedback": "Strategy B is never worse and is strictly better against one rival action, so it weakly dominates Strategy A.",
+      "aHash": "31233eead9f730cefadc33f442565a7cb8045f82fbfe3b1e1b34b942e47dbd9b",
+      "canonicalDifficulty": "hard"
     },
     {
-      "id": 358,
+      "id": 300,
       "sourceGame": "strategyDesk",
-      "q": "A firm offers Goods A and B separately and also as a bundle. What is this strategy?",
+      "q": "At a price of $20, Buyer A demands 6 units and Buyer B demands 4. When price rises to $25, their quantities fall to 4 and 3. Using the midpoint method on market demand, what is the approximate absolute price elasticity of demand?",
       "options": [
-        "Pure bundling",
-        "A requirement tie-in only",
-        "Mixed bundling",
-        "Direct price discrimination only"
+        "1.59",
+        "0.78",
+        "1.29",
+        "2.50"
       ],
-      "tag": "bundling",
-      "type": "definition",
-      "objective": "LO14.4",
-      "difficulty": "elite",
-      "conceptCluster": "LO14.4_strategy_desk",
-      "primarySkill": "bundling",
+      "tag": "price_elasticity",
+      "type": "multi-step",
+      "objective": "LO6.3",
+      "difficulty": "hard",
+      "conceptCluster": "hard_strategyDesk_price_elasticity",
+      "primarySkill": "price_elasticity",
       "secondarySkills": [],
-      "repairSkill": "bundling",
-      "commonError": "confuses_mixed_and_pure_bundling",
-      "feedback": "Mixed bundling gives customers the choice of buying items separately or together.",
-      "aHash": "1c3eab8be6bd9aebb4bd35822d462ea4b6aa94e353651b33d1eb15403016a485"
+      "repairSkill": "price_elasticity",
+      "commonError": "uses_individual_instead_of_market_totals",
+      "feedback": "Market quantity falls from 10 to 7. The midpoint elasticity is (3/8.5) ÷ (5/22.5) ≈ 1.59 in absolute value.",
+      "aHash": "dbb418de80acc22fc68f8c9eb5914af90d28409122918a6d93ef2e89d54a3d13",
+      "canonicalDifficulty": "hard"
     },
     {
-      "id": 359,
+      "id": 301,
       "sourceGame": "strategyDesk",
-      "q": "A bundle earns $260, while the best separate-sale strategy earns $245. Introducing the bundle also costs $20 in additional support expense. What is the net profit effect?",
+      "q": "Buyer A demands max (40−P,0) and B demands max (24−0.5 P,0). Price rises from $35 to $45. Aggregate each buyer’s nonnegative demand, then use the midpoint formula. What is the absolute market price elasticity?",
       "options": [
-        "$5 gain",
-        "$15 gain",
-        "$35 gain",
-        "$5 loss"
+        "About 2.00",
+        "About 6.15",
+        "About 1.54",
+        "About 4.00"
       ],
-      "tag": "bundling",
-      "type": "calculation",
-      "objective": "LO14.4",
-      "difficulty": "elite",
-      "conceptCluster": "LO14.4_strategy_desk",
-      "primarySkill": "bundling",
+      "tag": "market_demand",
+      "type": "multi-step",
+      "objective": "LO6.1",
+      "difficulty": "hard",
+      "conceptCluster": "hard_strategyDesk_market_demand",
+      "primarySkill": "market_demand",
       "secondarySkills": [],
-      "repairSkill": "bundling",
-      "commonError": "compares_revenue_without_incremental_cost",
-      "feedback": "The bundle adds $15 revenue but $20 cost, so net profit falls by $5.",
-      "aHash": "5de7e0a5bcee5b1f0d2d24962beafeab69bc874ed7c8a6eebc5c4d45e6d7dbe1"
+      "repairSkill": "market_demand",
+      "commonError": "adds_negative_individual_demand",
+      "feedback": "At 35, demand is 5+6.5=11.5. At 45 it is 0+1.5=1.5. Absolute midpoint elasticity is (10/6.5)/(10/40)=80/13, about 6.15. Negative individual quantities must be truncated.",
+      "aHash": "1cf3a3d368e1cf463cc74571eaea52b75408498fc65e24e2b4f06364a3908b3b",
+      "canonicalDifficulty": "hard"
     },
     {
-      "id": 375,
+      "id": 317,
       "sourceGame": "strategyDesk",
-      "q": "A buyer values agreement at $18 million and disagreement at $7 million. A seller values agreement at $15 million and disagreement at $9 million. What is total bargaining surplus?",
+      "q": "Two owned substitute products have margins $12 for A and $30 for B. Promoting A creates 200 extra A sales, of which 50 replace B sales. The promotion costs $600. A B-focused alternative creates 70 new B sales and costs $900, with no diversion. Which campaign creates more incremental portfolio contribution?",
       "options": [
-        "$11 million",
-        "$24 million",
-        "$49 million",
-        "$17 million"
+        "The A campaign by $1,500",
+        "The B campaign by $900",
+        "The campaigns both add $1,800",
+        "The B campaign by $300"
       ],
-      "tag": "nonstrategic_bargaining",
-      "type": "calculation",
-      "objective": "LO16.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO16.2_strategy_desk",
-      "primarySkill": "nonstrategic_bargaining",
+      "tag": "substitute_pricing",
+      "type": "multi-step",
+      "objective": "LO12.1",
+      "difficulty": "hard",
+      "conceptCluster": "hard_strategyDesk_substitute_pricing",
+      "primarySkill": "substitute_pricing",
       "secondarySkills": [],
-      "repairSkill": "nonstrategic_bargaining",
-      "commonError": "adds_agreement_values_without_outside_options",
-      "feedback": "Buyer gain is 11 and seller gain is 6, so total surplus is $17 million.",
-      "aHash": "5038a9c13ffce1e731bc8c61b2d9e9dde6d6dafcd4431f043b089457d273a62d"
+      "repairSkill": "substitute_pricing",
+      "commonError": "uses_revenue_instead_of_portfolio_margin",
+      "feedback": "A adds 200×12−50×30−600=300. B adds 70×30−900=1200. Choose B; its incremental contribution is 900 higher.",
+      "aHash": "a1101a8216671ebc033b9e0ea23cfca1dcbf04e92a57aacbeda6f1e5b8fded42",
+      "canonicalDifficulty": "hard"
     },
     {
-      "id": 376,
+      "id": 318,
       "sourceGame": "strategyDesk",
-      "q": "A seller receives a payoff of $9 million if negotiations fail. The buyer's disagreement payoff is $7 million. Both accept agreement when indifferent. What is the seller's minimum acceptable payoff from an agreement?",
+      "q": "A console discount reduces total console contribution by $100,000 but attracts 2,000 new buyers. Each new buyer purchases three games that contribute $25 each. What is the net contribution effect?",
       "options": [
-        "$9 million",
-        "$6 million",
-        "$15 million",
-        "$24 million"
+        "$50,000 loss",
+        "$100,000 gain",
+        "$50,000 gain",
+        "$150,000 gain"
       ],
-      "tag": "nonstrategic_bargaining",
-      "type": "calculation",
-      "objective": "LO16.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO16.2_strategy_desk",
-      "primarySkill": "nonstrategic_bargaining",
+      "tag": "complement_pricing",
+      "type": "multi-step",
+      "objective": "LO12.2",
+      "difficulty": "hard",
+      "conceptCluster": "hard_strategyDesk_complement_pricing",
+      "primarySkill": "complement_pricing",
       "secondarySkills": [],
-      "repairSkill": "nonstrategic_bargaining",
-      "commonError": "uses_gain_instead_of_disagreement_value",
-      "feedback": "The seller's reservation payoff is its own $9 million outside option. Receiving exactly that amount makes the seller indifferent; the stated tie rule allows agreement.",
-      "aHash": "c7e844477746e60eace11ec934348bc34886da200cd78b3702126192d7dce0da"
+      "repairSkill": "complement_pricing",
+      "commonError": "counts_console_margin_but_ignores_discount_or_game_sales",
+      "feedback": "Game contribution is 2,000×3×$25 = $150,000. After the $100,000 console loss, net contribution rises $50,000.",
+      "aHash": "c339defb1ce480d68ca50b3c1248e0dbed7743f4483539a64c7fe43a2cf55610",
+      "canonicalDifficulty": "hard"
+    },
+    {
+      "id": 320,
+      "sourceGame": "strategyDesk",
+      "q": "A printer firm currently sells 1,000 units at $100, with unit variable cost $70. Cutting price to $90 would sell 1,400 units. Each of the 400 new buyers adds expected ink contribution $18; existing buyers’ ink purchases are unchanged. Ignoring other effects, how does total contribution change?",
+      "options": [
+        "It rises by $5,200",
+        "It rises by $7,200",
+        "It rises by $3,200",
+        "It falls by $2,000"
+      ],
+      "tag": "complement_pricing",
+      "type": "multi-step",
+      "objective": "LO12.2",
+      "difficulty": "hard",
+      "conceptCluster": "hard_strategyDesk_complement_pricing",
+      "primarySkill": "complement_pricing",
+      "secondarySkills": [],
+      "repairSkill": "complement_pricing",
+      "commonError": "ignores_discount_on_existing_printer_sales",
+      "feedback": "Printer contribution changes from 30000 to 28000, a loss 2000. Incremental ink adds 400×18=7200. Net change is+5200. The discount also reduces margin on the original 1000 printer sales.",
+      "aHash": "86370cb756f1739c0c0560ab77c0252ef15cbf25c43ed693e02e1fc07e197daa",
+      "canonicalDifficulty": "hard"
+    },
+    {
+      "id": 321,
+      "sourceGame": "strategyDesk",
+      "q": "A hotel has one room left. A walk-in offers $120, but accepting now is expected to displace a later booking worth $190 with 70% probability. Variable service cost is $20 either way. What is the expected opportunity cost of accepting the walk-in?",
+      "options": [
+        "$49",
+        "$119",
+        "$70",
+        "$133"
+      ],
+      "tag": "capacity_pricing",
+      "type": "multi-step",
+      "objective": "LO12.3",
+      "difficulty": "hard",
+      "conceptCluster": "hard_strategyDesk_capacity_pricing",
+      "primarySkill": "capacity_pricing",
+      "secondarySkills": [],
+      "repairSkill": "capacity_pricing",
+      "commonError": "ignores_displacement_probability",
+      "feedback": "The expected lost contribution from the later booking is 0.70×($190−$20) = $119.",
+      "aHash": "e17e01283ada5f55cbc53db61fc2ae6ad5d9dd364537c043372d007dcced1df8",
+      "canonicalDifficulty": "hard"
+    },
+    {
+      "id": 324,
+      "sourceGame": "strategyDesk",
+      "q": "A risk-neutral retailer's forecast has a 40% chance of high demand and a 60% chance of low demand. Profit is $120,000 if it sets a high price and demand is high, $45,000 if high price and demand is low, $95,000 if low price and demand is high, and $70,000 if low price and demand is low. Which price has the higher expected profit?",
+      "options": [
+        "Low price by $5,000",
+        "High price by $5,000",
+        "High price by $8,000",
+        "Low price by $8,000"
+      ],
+      "tag": "forecast_driven_pricing",
+      "type": "multi-step",
+      "objective": "LO12.4",
+      "difficulty": "hard",
+      "conceptCluster": "hard_strategyDesk_forecast_driven_pricing",
+      "primarySkill": "forecast_driven_pricing",
+      "secondarySkills": [],
+      "repairSkill": "forecast_driven_pricing",
+      "commonError": "uses_most_likely_state_only",
+      "feedback": "Expected profit is $75,000 for high price and $80,000 for low price, so low price is higher by $5,000.",
+      "aHash": "a1087b002948790c7b641a8770629c05ec410ed211bc85105ebc23476e5c9a18",
+      "canonicalDifficulty": "hard"
+    },
+    {
+      "id": 325,
+      "sourceGame": "strategyDesk",
+      "q": "A promotion increases sales by 4,000 units. Contribution is $7 per incremental unit, the campaign costs $22,000, and 1,000 of those sales would have occurred anyway. What is incremental profit?",
+      "options": [
+        "$6,000",
+        "−$1,000",
+        "$21,000",
+        "$28,000"
+      ],
+      "tag": "promotion_response",
+      "type": "multi-step",
+      "objective": "LO12.5",
+      "difficulty": "hard",
+      "conceptCluster": "hard_strategyDesk_promotion_response",
+      "primarySkill": "promotion_response",
+      "secondarySkills": [],
+      "repairSkill": "promotion_response",
+      "commonError": "credits_all_sales_to_promotion",
+      "feedback": "Incremental sales are 3,000, creating $21,000 contribution. After $22,000 campaign cost, incremental profit is −$1,000.",
+      "aHash": "15330317711bba3a8fc86e994c6e9d5fb19fc295e92650dd286b323de4f49954",
+      "canonicalDifficulty": "hard"
+    },
+    {
+      "id": 327,
+      "sourceGame": "strategyDesk",
+      "q": "A seller has 60 units and no replenishment. Demand at price $70 is 80 in a high-demand state and 20 in a low-demand state; at $50 it is 100 and 50. Each state has probability 0.5. Unit cost is $10. What fixed price maximizes expected contribution?",
+      "options": [
+        "$50, yielding $2,200 rather than $1,200",
+        "$50, yielding $3,000 rather than $2,400",
+        "$70, yielding $3,000 rather than $2,200",
+        "$70, yielding $2,400 rather than $2,200"
+      ],
+      "tag": "forecast_driven_pricing",
+      "type": "multi-step",
+      "objective": "LO12.4",
+      "difficulty": "hard",
+      "conceptCluster": "hard_strategyDesk_forecast_driven_pricing",
+      "primarySkill": "forecast_driven_pricing",
+      "secondarySkills": [],
+      "repairSkill": "forecast_driven_pricing",
+      "commonError": "fails_to_cap_state_specific_sales",
+      "feedback": "Cap demand at 60 separately in each state. Price 70 sells an expected 40 at margin 60, for 2400. Price 50 sells an expected 55 at margin 40, for 2200. Capacity truncation must occur before averaging demand.",
+      "aHash": "4169d8d0b3f654914484a4be5a61b12312b13cbc588e7160d4a4675b91b79162",
+      "canonicalDifficulty": "hard"
+    },
+    {
+      "id": 328,
+      "sourceGame": "strategyDesk",
+      "q": "Equal-sized randomly assigned groups see the same service at the same $100 annual price. One sees “$100 annually”; the other sees “about $8.33 monthly, billed $100 annually.” Annual framing produces 100 paid orders with 5 full refunds; monthly framing produces 120 orders with 30 full refunds. Only nonrefunded customers cost $40 to serve. Extra disclosure/support for monthly framing costs $200. Which conclusion follows for this test?",
+      "options": [
+        "Annual framing earns $500 more despite fewer initial orders",
+        "Monthly framing earns $1,200 more because it adds 20 orders",
+        "The frames are equally profitable because the annual bill is identical",
+        "Monthly framing earns $300 more after refunds"
+      ],
+      "tag": "psychological_pricing",
+      "type": "integration",
+      "objective": "LO12.6",
+      "difficulty": "hard",
+      "conceptCluster": "hard_strategyDesk_behavioral_pricing",
+      "primarySkill": "behavioral_pricing",
+      "secondarySkills": [],
+      "repairSkill": "behavioral_pricing",
+      "commonError": "confuses_attention_with_profitable_choice",
+      "feedback": "Annual net orders 95 give 5700 contribution. Monthly net orders 90 give 5400, less 200 support=5200. Annual wins 500. The randomized equal-price comparison permits a framing interpretation, but attention or initial conversion alone does not establish profitability.",
+      "aHash": "3ed91b017d49e1f14f5ac014ec86d795be5341efa374f69ca898358770fedcba",
+      "canonicalDifficulty": "hard"
+    },
+    {
+      "id": 330,
+      "sourceGame": "strategyDesk",
+      "q": "A monopolist can separate two markets. Market H has demand P = 100 − Q and Market L has demand P = 60 − Q. Marginal cost is zero. What prices maximize profit in the two markets? Groups are verifiable and resale is impossible.",
+      "options": [
+        "$100 in H and $60 in L",
+        "$40 in H and $40 in L",
+        "$50 in H and $30 in L",
+        "$70 in H and $20 in L"
+      ],
+      "tag": "direct_price_discrimination",
+      "type": "multi-step",
+      "objective": "LO13.2",
+      "difficulty": "hard",
+      "conceptCluster": "hard_strategyDesk_direct_price_discrimination",
+      "primarySkill": "direct_price_discrimination",
+      "secondarySkills": [],
+      "repairSkill": "direct_price_discrimination",
+      "commonError": "uses_choke_price_instead_of_mr_equals_mc",
+      "feedback": "For linear demand with zero marginal cost, MR = 0 at half the choke price, giving $50 and $30.",
+      "aHash": "1981d5fac98b09ac86c363eda97934e2e7ce3234436e935fb40a16a065cb5515",
+      "canonicalDifficulty": "hard"
+    },
+    {
+      "id": 337,
+      "sourceGame": "strategyDesk",
+      "q": "A supplier charges two competing purchasers $10 and $12 for identical commodities. Assume the other statutory conditions would be met. Documented per-unit savings for the cheaper order are $0.80 in handling and $0.70 in delivery. What can this cost evidence alone establish about the $2 difference?",
+      "options": [
+        "It explains the full $2 because any positive saving justifies the whole difference",
+        "It explains $1.50; the remaining $0.50 needs another applicable justification or further analysis",
+        "It explains $0.80; delivery savings never count",
+        "It proves a violation of exactly $0.50 without considering other defenses"
+      ],
+      "tag": "robinson_patman",
+      "type": "multi-step",
+      "objective": "LO13.4",
+      "difficulty": "hard",
+      "conceptCluster": "hard_strategyDesk_robinson_patman",
+      "primarySkill": "robinson_patman",
+      "secondarySkills": [],
+      "repairSkill": "robinson_patman",
+      "commonError": "treats_partial_cost_justification_as_complete",
+      "feedback": "The documented savings sum to 1.50, leaving 0.50 unexplained by this evidence. This arithmetic does not itself establish liability: other conditions and defenses still matter.",
+      "aHash": "1c3dde374f7c4da6720aa4e28a40b25707665f4d32742a0fe9f21c153cfe5281",
+      "canonicalDifficulty": "hard"
+    },
+    {
+      "id": 341,
+      "sourceGame": "strategyDesk",
+      "q": "A service has 100 students valued at $30 and 50 professionals valued at $60. Cost is $10 per customer. Verified student pricing charges $24/$40; checking each of the 100 students costs $4 and prevents false claims and resale. Uniform pricing at $30 needs no checks. Buyers purchase at value equals price. Which policy earns more contribution?",
+      "options": [
+        "Verified pricing by $500",
+        "Uniform $30 by $500",
+        "Verified pricing by $1,000",
+        "Uniform $30 by $100"
+      ],
+      "tag": "price_discrimination_cases",
+      "type": "multi-step",
+      "objective": "LO13.5",
+      "difficulty": "hard",
+      "conceptCluster": "hard_strategyDesk_price_discrimination_cases",
+      "primarySkill": "price_discrimination_cases",
+      "secondarySkills": [],
+      "repairSkill": "price_discrimination_cases",
+      "commonError": "ignores_verification_cost_in_case",
+      "feedback": "Verified contribution is 100×14+50×30−400=2500. Uniform contribution is 150×20=3000. The verification cost and lost margin on students exceed the professional-price gain.",
+      "aHash": "9a67b92ff6595991d500508a5ae144491333077e9c48d75121244520d56500d0",
+      "canonicalDifficulty": "hard"
+    },
+    {
+      "id": 347,
+      "sourceGame": "strategyDesk",
+      "q": "One light user needs 4 units and one heavy user needs 12. Both obtain enough value to buy either plan and choose the cheaper bill. Plan A charges a $20 fee plus $6 per unit; Plan B charges $45 plus $3 per unit. Usage is fixed, service cost is $1 per unit, and resale is impossible. What choices and total profit result?",
+      "options": [
+        "Light chooses B; heavy chooses A; profit $133",
+        "Both choose A; profit $120",
+        "Both choose B; profit $122",
+        "Light chooses A; heavy chooses B; profit $109"
+      ],
+      "tag": "versioning_and_metering",
+      "type": "multi-step",
+      "objective": "LO14.2",
+      "difficulty": "hard",
+      "conceptCluster": "hard_strategyDesk_versioning_and_metering",
+      "primarySkill": "versioning_and_metering",
+      "secondarySkills": [],
+      "repairSkill": "versioning_and_metering",
+      "commonError": "ignores_plan_self_selection",
+      "feedback": "Light bills are 44 versus 57; heavy bills are 92 versus 81. Actual revenue is 44+81=125; serving 16 units costs 16. Profit is 109. Compare total bills before calculating seller profit.",
+      "aHash": "4031a733c10be179caa72d4999b2b3d6119c452ad8d5097042157e2d45d61b70",
+      "canonicalDifficulty": "hard"
+    },
+    {
+      "id": 353,
+      "sourceGame": "strategyDesk",
+      "q": "A firm offers Basic for $50 and Premium for $90. High-value buyers value them at $80 and $130; low-value buyers value them at $65 and $85. Which choices occur?",
+      "options": [
+        "Both types choose Premium",
+        "High types choose Premium; low types choose Basic",
+        "High types choose Basic; low types choose Premium",
+        "Both types reject both options"
+      ],
+      "tag": "self_selection_pricing",
+      "type": "multi-step",
+      "objective": "LO14.3",
+      "difficulty": "hard",
+      "conceptCluster": "hard_strategyDesk_consumer_surplus_extraction",
+      "primarySkill": "consumer_surplus_extraction",
+      "secondarySkills": [],
+      "repairSkill": "consumer_surplus_extraction",
+      "commonError": "compares_values_without_prices",
+      "feedback": "High-value surplus is 30 from Basic and 40 from Premium; low-value surplus is 15 from Basic and −5 from Premium.",
+      "aHash": "8b1a5bf62642ad524e1374253d3200e55bf5dd69efd86cb6d222df708f984416",
+      "canonicalDifficulty": "hard"
     },
     {
       "id": 377,
       "sourceGame": "strategyDesk",
-      "q": "A union strike fund rises from $1 million to $4 million. Holding everything else constant, what happens to the union's bargaining position?",
+      "q": "An agreement creates total payoff 90. The firm’s fallback is 20 and the union’s is 10; incremental surplus is split equally. An external association now promises the union 8 only if disagreement occurs, with no cost in agreement. What happens to the union’s agreement payoff and total incremental surplus?",
       "options": [
-        "It weakens because the union's agreement value necessarily falls",
-        "It strengthens because disagreement becomes less costly",
-        "It is unchanged because outside options never affect negotiated terms",
-        "It eliminates the firm's agreement value"
-      ],
-      "tag": "nonstrategic_bargaining",
-      "type": "application",
-      "objective": "LO16.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO16.2_strategy_desk",
-      "primarySkill": "nonstrategic_bargaining",
-      "secondarySkills": [],
-      "repairSkill": "nonstrategic_bargaining",
-      "commonError": "changes_wrong_partys_value",
-      "feedback": "A larger strike fund improves the union's payoff during disagreement, strengthening its fallback position.",
-      "aHash": "65884e73ec7033cf748235108235558185f8fdc265477d46c6c112cf0298ddd0"
-    },
-    {
-      "id": 378,
-      "sourceGame": "strategyDesk",
-      "q": "A firm can outsource production during a strike at a cost that falls from $8 million to $3 million. What is the direct bargaining effect?",
-      "options": [
-        "The union's disagreement value improves",
-        "Total surplus must become zero",
-        "The firm's disagreement value improves",
-        "The firm's agreement value disappears"
-      ],
-      "tag": "nonstrategic_bargaining",
-      "type": "interpretation",
-      "objective": "LO16.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO16.2_strategy_desk",
-      "primarySkill": "nonstrategic_bargaining",
-      "secondarySkills": [],
-      "repairSkill": "nonstrategic_bargaining",
-      "commonError": "assigns_outsource_option_to_union",
-      "feedback": "Cheaper outsourcing makes disagreement less costly for the firm and strengthens its outside option.",
-      "aHash": "00b21f5a392ed36c49b012579025fc07614ec2a79d1807b18ea087b63e9c8cb1"
-    },
-    {
-      "id": 379,
-      "sourceGame": "strategyDesk",
-      "q": "A negotiator says, 'Accept today or I walk away,' but returning tomorrow is costless and common. What is the weakness?",
-      "options": [
-        "The offer is direct price discrimination",
-        "The deadline creates a dominant strategy",
-        "The outside option is necessarily zero",
-        "The threat is not credible"
-      ],
-      "tag": "strategic_bargaining",
-      "type": "trap",
-      "objective": "LO16.1",
-      "difficulty": "elite",
-      "conceptCluster": "LO16.1_strategy_desk",
-      "primarySkill": "strategic_bargaining",
-      "secondarySkills": [],
-      "repairSkill": "strategic_bargaining",
-      "commonError": "confuses_statement_with_commitment",
-      "feedback": "Without a real cost or constraint, the negotiator has no reason to carry out the threat tomorrow.",
-      "aHash": "95bb87e70982d743384e1e377b10f39f2b9f0940ad057161959f999c70307121"
-    },
-    {
-      "id": 380,
-      "sourceGame": "strategyDesk",
-      "q": "A seller signs an enforceable contract to sell elsewhere if the buyer rejects today's offer. Why can this improve the seller's position?",
-      "options": [
-        "It makes the walk-away threat credible",
-        "It lowers the seller's outside option",
-        "It guarantees equal surplus division",
-        "It removes the buyer's agreement value"
-      ],
-      "tag": "strategic_bargaining",
-      "type": "application",
-      "objective": "LO16.1",
-      "difficulty": "elite",
-      "conceptCluster": "LO16.1_strategy_desk",
-      "primarySkill": "strategic_bargaining",
-      "secondarySkills": [],
-      "repairSkill": "strategic_bargaining",
-      "commonError": "ignores_commitment_device",
-      "feedback": "The enforceable alternative makes rejection trigger a real consequence, strengthening the seller's threat.",
-      "aHash": "c34f734db8ee3a72389a9ea86b8a7eaf4ebdd169c22b673dbcfa86911888e8ac"
-    },
-    {
-      "id": 381,
-      "sourceGame": "strategyDesk",
-      "q": "A buyer makes the first offer in a one-shot bargaining game with no counteroffers. What strategic advantage can the buyer obtain?",
-      "options": [
-        "The buyer must accept the seller's outside option as the final price",
-        "The buyer may capture more surplus by setting the initial division",
-        "The buyer eliminates all bargaining surplus",
-        "The buyer's disagreement value becomes irrelevant"
-      ],
-      "tag": "strategic_bargaining",
-      "type": "interpretation",
-      "objective": "LO16.1",
-      "difficulty": "elite",
-      "conceptCluster": "LO16.1_strategy_desk",
-      "primarySkill": "strategic_bargaining",
-      "secondarySkills": [],
-      "repairSkill": "strategic_bargaining",
-      "commonError": "assumes_first_offer_has_no_distributional_effect",
-      "feedback": "With no counteroffer, the first mover can propose a division that leaves the other side just willing to accept.",
-      "aHash": "d3f3b1c7385222be138978c4dda3cb2376b488e5495d8c5531f35a49fee08781"
-    },
-    {
-      "id": 382,
-      "sourceGame": "strategyDesk",
-      "q": "A supplier's agreement value is $12 million and disagreement value is $8 million. A retailer's agreement value is $10 million and disagreement value is $3 million. If the $11 million total surplus is split equally, how much gain above disagreement does each receive?",
-      "options": [
-        "$4 million",
-        "$7 million",
-        "$5.5 million",
-        "$11 million"
+        "Union payoff rises 8; incremental surplus is unchanged",
+        "Union payoff rises 4; incremental surplus falls 8",
+        "Union payoff falls 4; incremental surplus rises 8",
+        "Union payoff rises 8; incremental surplus rises 8"
       ],
       "tag": "nonstrategic_bargaining",
       "type": "multi-step",
       "objective": "LO16.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO16.2_strategy_desk",
+      "difficulty": "hard",
+      "conceptCluster": "hard_strategyDesk_nonstrategic_bargaining",
       "primarySkill": "nonstrategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "nonstrategic_bargaining",
-      "commonError": "splits_total_payoff_instead_of_surplus",
-      "feedback": "The gains from agreement are $4 million and $7 million, totaling $11 million. An equal split gives each party $5.5 million above disagreement.",
-      "aHash": "d59a2f365ea358c24af9202b3ddec1f1ba85ebd22d145faa146218afeadcae30"
+      "commonError": "confuses_bargaining_power_with_total_surplus",
+      "feedback": "Initially surplus 60 gives union 10+30=40. With fallback 18, surplus 52 gives union 18+26=44. The union gains 4 in the split, while the gains from agreement above fallbacks shrink 8.",
+      "aHash": "aaacc6a4f4e2470a317123d7ca3a259b31ffda8ab8399e5ab13bd177cc23f2a3",
+      "canonicalDifficulty": "hard"
     },
     {
-      "id": 383,
+      "id": 379,
       "sourceGame": "strategyDesk",
-      "q": "Which change most likely increases total bargaining surplus rather than merely redistributing it?",
+      "q": "A deal creates $100. A and B have outside options $20 and $30. A receives 60% of incremental surplus. A can first pay $4, unrecoverable in either outcome, to raise its outside option to $30; agreement value and B’s option stay fixed. What is A’s net gain from investing?",
       "options": [
-        "Improving only one side's outside option",
-        "Making a noncredible threat louder",
-        "Changing who speaks first with identical feasible outcomes",
-        "Reducing the cost of cooperation for both sides"
+        "−$4; outside options never affect the settlement",
+        "$6; it receives 60% of the $10 outside-option rise",
+        "$10; the full outside-option rise is added to the old settlement",
+        "$0; its gross negotiated payoff rises $4 and the cost is $4"
       ],
       "tag": "nonstrategic_bargaining",
-      "type": "strategy",
+      "type": "multi-step",
       "objective": "LO16.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO16.2_strategy_desk",
+      "difficulty": "hard",
+      "conceptCluster": "hard_strategyDesk_nonstrategic_bargaining",
       "primarySkill": "nonstrategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "nonstrategic_bargaining",
-      "commonError": "confuses_distribution_with_surplus_creation",
-      "feedback": "Lower cooperation costs can raise the gains from agreement for the parties as a whole.",
-      "aHash": "4c8dbcdcf9314d639ad1669678131a125f460c8eb97aca6f2a54df19dcefe613"
+      "commonError": "ignores_bargaining_weight_or_investment_cost",
+      "feedback": "Before investment A gets 20+.6×50=50. After investment it gets 30+.6×40−4=50. The stronger fallback adds 10 but reduces A’s surplus share by 6; cost 4 exactly offsets the gross gain.",
+      "aHash": "ad13a7dd7c87e73c65357e4e505513b68eb3dd80fc4ae2d11f870bff9aa9cf07",
+      "canonicalDifficulty": "hard"
     },
     {
-      "id": 384,
+      "id": 380,
       "sourceGame": "strategyDesk",
-      "q": "A company locks out workers before negotiations begin. What must be true for the lockout to strengthen the company's bargaining position?",
+      "q": "A buyer values delivery at $95 and has fallback $10. A seller incurs delivery cost $35 and can earn $25 elsewhere if no deal occurs. The buyer makes one final whole-dollar offer; the seller accepts when indifferent. What price is offered and what gains over fallback result?",
       "options": [
-        "The company must be willing and able to sustain it",
-        "The union must receive a higher strike fund",
-        "The company must prefer accommodation after the lockout",
-        "The lockout must be costless to workers only"
+        "Price $60; buyer gains $25 and seller gains $0",
+        "Price $35; buyer gains $50 and seller gains $0",
+        "Price $85; buyer gains $0 and seller gains $25",
+        "Price $70; buyer and seller each gain $15"
       ],
       "tag": "strategic_bargaining",
-      "type": "strategy",
+      "type": "multi-step",
       "objective": "LO16.1",
-      "difficulty": "elite",
-      "conceptCluster": "LO16.1_strategy_desk",
+      "difficulty": "hard",
+      "conceptCluster": "hard_strategyDesk_strategic_bargaining",
       "primarySkill": "strategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "strategic_bargaining",
-      "commonError": "treats_symbolic_action_as_commitment",
-      "feedback": "The action matters only if the firm can actually endure the lockout and the threat is therefore credible.",
-      "aHash": "d29be32456401bb112b5bea9159a6cc7f51920cafcd9110c70789624197bd216"
+      "commonError": "ignores_seller_opportunity_cost_in_final_offer",
+      "feedback": "The minimum acceptable price is 35+25=60. The buyer prefers that to any higher accepted price and receives 95−60=35, a gain 25 over fallback 10. Seller payoff 60−35=25 equals its fallback.",
+      "aHash": "199d6657c880ed143d78072cc9a692cbec58811919f1ef39961248cd20c77132",
+      "canonicalDifficulty": "hard"
     },
     {
-      "id": 385,
+      "id": 382,
       "sourceGame": "strategyDesk",
-      "q": "A negotiator reveals that its outside option expires tomorrow. What strategic effect can this disclosure have?",
+      "q": "Before any cash transfer, agreement gives a supplier 12 million and a retailer 10 million. Their disagreement payoffs are 8 million and 3 million. Transfers can redistribute agreement value at no cost. What transfer implements an equal split of incremental surplus?",
       "options": [
-        "It automatically raises the total gains from agreement",
-        "It can weaken the negotiator by revealing time pressure",
-        "It creates a dominant strategy for both bargaining parties",
-        "It makes the other side's outside option completely irrelevant to the negotiation"
-      ],
-      "tag": "strategic_bargaining",
-      "type": "interpretation",
-      "objective": "LO16.1",
-      "difficulty": "elite",
-      "conceptCluster": "LO16.1_strategy_desk",
-      "primarySkill": "strategic_bargaining",
-      "secondarySkills": [],
-      "repairSkill": "strategic_bargaining",
-      "commonError": "assumes_more_information_always_helps_discloser",
-      "feedback": "Revealing a weak or expiring outside option can let the other side demand a larger share.",
-      "aHash": "384003c2dbcc9c9e0909de4f3c009e49c6463e14cec30f5c759b24c0d80c31a4"
-    },
-    {
-      "id": 386,
-      "sourceGame": "strategyDesk",
-      "q": "A firm spends $2 million on a plant customized for one buyer before negotiating price. The investment has no value elsewhere. What bargaining problem has the firm created?",
-      "options": [
-        "A screening advantage caused by hidden product quality",
-        "A dominant strategy to reject every possible offer",
-        "Hold-up risk from a weakened outside option",
-        "A larger disagreement value for the investing firm"
-      ],
-      "tag": "strategic_bargaining",
-      "type": "application",
-      "objective": "LO16.1",
-      "difficulty": "elite",
-      "conceptCluster": "LO16.1_strategy_desk",
-      "primarySkill": "strategic_bargaining",
-      "secondarySkills": [],
-      "repairSkill": "strategic_bargaining",
-      "commonError": "treats_sunk_specific_investment_as_leverage",
-      "feedback": "A relationship-specific sunk investment makes walking away costly and exposes the firm to hold-up.",
-      "aHash": "3c39049b21d4408f756892d4245ce41b8dfff6545d50dab25c3c03c0142efa2b"
-    },
-    {
-      "id": 387,
-      "sourceGame": "strategyDesk",
-      "q": "A party's agreement value rises by $3 million while its disagreement value rises by the same amount. What happens to its gain from agreement?",
-      "options": [
-        "It rises by $6 million",
-        "It rises by $3 million",
-        "It falls by $3 million",
-        "It is unchanged"
+        "Retailer pays supplier 5.5 million",
+        "Supplier pays retailer 1.5 million",
+        "Retailer pays supplier 1.5 million",
+        "No transfer is needed"
       ],
       "tag": "nonstrategic_bargaining",
-      "type": "calculation",
+      "type": "multi-step",
       "objective": "LO16.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO16.2_strategy_desk",
+      "difficulty": "hard",
+      "conceptCluster": "hard_strategyDesk_nonstrategic_bargaining",
       "primarySkill": "nonstrategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "nonstrategic_bargaining",
-      "commonError": "changes_both_values_but_not_their_difference",
-      "feedback": "Gain from agreement is agreement value minus disagreement value; equal increases cancel.",
-      "aHash": "2eb953560d2aee9c96090261017ebe948bbd5a91ac4e77d6b95c43634e63f109"
-    },
+      "commonError": "splits_agreement_payoffs_instead_of_gains",
+      "feedback": "Initial gains are 4 and 7, totaling 11. Equal gains require 5.5 each. A 1.5 transfer from retailer to supplier yields agreement payoffs 13.5 and 8.5, leaving both 5.5 above fallback.",
+      "aHash": "af42d2aa115b453b2b0744a158df3811c7de2810d78d9ff2b8d8e8c409de7483",
+      "canonicalDifficulty": "hard"
+    }
+  ],
+  "elite": [
     {
-      "id": 388,
+      "id": 302,
       "sourceGame": "strategyDesk",
-      "q": "A negotiator can make a threat credible by",
+      "q": "Two buyers have quantities q A=max (30−P,0) and q B=max (18−P,0). A firm has marginal cost $6, capacity 20, and one uniform price chosen from $12, $16, $20, $24. It sells the lesser of demand and capacity. Which price maximizes contribution?",
       "options": [
-        "make the threatened action optimal or unavoidable",
-        "repeat the threat more often and with stronger language",
-        "keep every bargaining option fully reversible",
-        "hide every payoff from the threatening party"
+        "$20, with contribution $140",
+        "$12, with contribution $144",
+        "$16, with contribution $160",
+        "$24, with contribution $108"
       ],
-      "tag": "strategic_bargaining",
-      "type": "definition",
-      "objective": "LO16.1",
+      "tag": "market_demand",
+      "type": "integration",
+      "objective": "LO6.1",
       "difficulty": "elite",
-      "conceptCluster": "LO16.1_strategy_desk",
-      "primarySkill": "strategic_bargaining",
+      "conceptCluster": "elite_strategyDesk_market_demand",
+      "primarySkill": "market_demand",
       "secondarySkills": [],
-      "repairSkill": "strategic_bargaining",
-      "commonError": "equates_repetition_with_credibility",
-      "feedback": "Credibility comes from incentives or commitment, not from repetition.",
-      "aHash": "91ec41de33f948d4aeb86c4da3395a4f863b22edaa10422a5d2b59d8172b8e43"
+      "repairSkill": "market_demand",
+      "commonError": "ignores_zero_demand_or_capacity_branches",
+      "feedback": "At 12 demand 24 but sales 20, contribution 120. At 16 demand 16, contribution 160. At 20 only A buys 10, contribution 140. At 24 only A buys 6, contribution 108. Correct aggregation truncates negative quantities and applies the capacity limit.",
+      "aHash": "4119bdd6cf4461d940725d5a2817c3eb1553c1eb661910673bd875f3abfde2ea",
+      "canonicalDifficulty": "elite"
     },
     {
-      "id": 389,
+      "id": 316,
       "sourceGame": "strategyDesk",
-      "q": "What is the sharpest distinction between strategic and nonstrategic bargaining?",
+      "q": "A firm owns substitute brands A and B. A campaign discounts A from $50 to $45 on all 200 existing A sales and attracts 100 additional A sales. Of these, 60 switch from B; the other 40 are new to the firm. A’s unit cost is $25. B’s lost contribution is $35 per sale. The campaign costs $300. Demand estimates already include all responses. Should the firm run it?",
       "options": [
-        "Strategic bargaining ignores outside options; nonstrategic bargaining ignores agreement values",
-        "Strategic analysis models moves; nonstrategic analysis divides gains over outside options",
-        "Strategic bargaining always yields equal splits; nonstrategic bargaining never does",
-        "Strategic bargaining applies only to unions; nonstrategic bargaining applies only to firms"
+        "No; total portfolio contribution falls $1,400",
+        "Yes; the 100 additional A sales add $2,000",
+        "No; total portfolio contribution falls $400",
+        "Yes; net contribution rises $600"
+      ],
+      "tag": "substitute_pricing",
+      "type": "integration",
+      "objective": "LO12.1",
+      "difficulty": "elite",
+      "conceptCluster": "elite_strategyDesk_substitute_pricing",
+      "primarySkill": "substitute_pricing",
+      "secondarySkills": [],
+      "repairSkill": "substitute_pricing",
+      "commonError": "omits_cannibalized_high_margin_sales",
+      "feedback": "A gains 100×20 but loses 200×5 on existing sales. B loses 60×35 and the campaign costs 300. Net change is 2000−1000−2100−300=−1400. New-to-firm and diverted sales have different opportunity costs.",
+      "aHash": "afb3add86319c1c5c8cb4b882c15462265b584156bd13055abf696ef921abac3",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 319,
+      "sourceGame": "strategyDesk",
+      "q": "A device sells 500 units at $120 and costs $80 each. A proposed price of $100 would sell 800. Each of the 300 additional buyers generates $30 of consumable contribution. Existing buyers’ consumable purchases do not change. A compatible service launched with the discount adds contribution $4,000 but requires $7,000 setup cost. Compare keeping the old policy, discounting alone, and discounting with the service.",
+      "options": [
+        "Discount plus service is best; setup costs are irrelevant",
+        "Discount plus service is best; it gains $9,000",
+        "Keep the old policy; discounting alone loses $4,000",
+        "Discount alone is best; it gains $5,000 versus the old policy"
+      ],
+      "tag": "complement_pricing",
+      "type": "integration",
+      "objective": "LO12.2",
+      "difficulty": "elite",
+      "conceptCluster": "elite_strategyDesk_complement_pricing",
+      "primarySkill": "complement_pricing",
+      "secondarySkills": [],
+      "repairSkill": "complement_pricing",
+      "commonError": "counts_all_complement_demand_as_incremental",
+      "feedback": "Device contribution changes from 20000 to 16000, a loss of 4000. New consumables add 9000, so discount alone gains 5000. Adding the service reduces that gain by 3000, leaving 2000. The unchanged old-buyer contribution cancels.",
+      "aHash": "e5d8ca8371750ff5de73b5acd55d766ed807883d1e6636ecf0e021c287f017e9",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 322,
+      "sourceGame": "strategyDesk",
+      "q": "A venue has 100 seats and cost $20 per occupied seat. Demand is Strong or Weak, each with probability 0.5. Price $80 yields demand 100/20; price $50 yields demand 100/80. A perfect forecast before pricing costs $200. Compared with the best fixed price, which policy is best?",
+      "options": [
+        "Buy the forecast; net expected contribution is $4,200, a gain of $600",
+        "Keep fixed $80; expected contribution is $4,800",
+        "Buy the forecast; net expected contribution is $4,000, a gain of $400",
+        "Keep fixed $50; expected contribution is $4,000"
+      ],
+      "tag": "forecast_driven_pricing",
+      "type": "integration",
+      "objective": "LO12.4",
+      "difficulty": "elite",
+      "conceptCluster": "elite_strategyDesk_forecast_driven_pricing",
+      "primarySkill": "forecast_driven_pricing",
+      "secondarySkills": [],
+      "repairSkill": "forecast_driven_pricing",
+      "commonError": "prices_at_expected_demand_without_conditioning",
+      "feedback": "Fixed 80 gives .5×100×60+.5×20×60=3600. Fixed 50 gives .5×100×30+.5×80×30=2700. With the forecast choose 80 in Strong and 50 in Weak: .5×6000+.5×2400−200=4000. Net information value is 400.",
+      "aHash": "d61bba1b621340c6daedda35390fa73e4bd2bab4b3dab79961c69cda09c6eb86",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 323,
+      "sourceGame": "strategyDesk",
+      "q": "A hotel has two identical rooms left. An early group offers $150 per room but must book both or neither. Later, two guests willing to pay $220 each arrive together with probability 0.6; otherwise no later guest arrives. Service cost is $20 per occupied room. Rooms cannot be oversold, and the hotel is risk neutral. Should it accept the group?",
+      "options": [
+        "Wait; two later guests are certain to pay $440",
+        "Wait; expected contribution $264 exceeds group contribution $260",
+        "Accept; revenue $300 exceeds expected revenue $264 by $36 of profit",
+        "Accept; contribution $260 exceeds expected waiting contribution $240"
+      ],
+      "tag": "forecast_driven_pricing",
+      "type": "integration",
+      "objective": "LO12.4",
+      "difficulty": "elite",
+      "conceptCluster": "elite_strategyDesk_forecast_driven_pricing",
+      "primarySkill": "forecast_driven_pricing",
+      "secondarySkills": [],
+      "repairSkill": "forecast_driven_pricing",
+      "commonError": "compares_revenue_instead_of_capacity_opportunity_cost",
+      "feedback": "Accepting gives 2×(150−20)=260. Waiting gives 0.6×2×(220−20)=240. Accepting gains 20 in expected contribution. Expected revenue alone ignores service cost and the joint arrival forecast.",
+      "aHash": "fbaa58b69e1a4ed0ff8228198b3fee8b31289e89f5e9ef2e4c32bf8cff7b68e6",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 326,
+      "sourceGame": "strategyDesk",
+      "q": "A coupon campaign produces 600 redemptions, of which a valid randomized comparison estimates 150 are genuinely additional sales. Regular contribution is $18 per sale before the $5 coupon. Of the additional sales, 40 replace an owned substitute with contribution $20. Campaign administration costs $500. What is the incremental portfolio profit?",
+      "options": [
+        "A gain of $4,300",
+        "A gain of $1,450",
+        "A loss of $1,600",
+        "A loss of $850"
+      ],
+      "tag": "promotional_expenditure",
+      "type": "integration",
+      "objective": "LO12.5",
+      "difficulty": "elite",
+      "conceptCluster": "elite_strategyDesk_promotion_response",
+      "primarySkill": "promotion_response",
+      "secondarySkills": [],
+      "repairSkill": "promotion_response",
+      "commonError": "counts_coupon_sales_as_all_incremental",
+      "feedback": "Additional regular contribution is 150×18=2700. Coupons cost 600×5=3000 on all redemptions; diversion loses 40×20=800; administration costs 500. Net is −1600. The randomized estimate identifies incremental sales, not incremental profit.",
+      "aHash": "4c8b4682bcf20c73b15e591af07c471ee0cfccd94b5b45bed1d3dd458ecf0686",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 333,
+      "sourceGame": "strategyDesk",
+      "q": "Two verifiable buyer groups cannot resell. Their demands are X=max (80−P,0) and Y=max (40−P,0); marginal cost is $20. Compare separate profit-maximizing prices, with a $150 implementation fee, against the best single price from $30, $40, $50. Which policy earns more net profit?",
+      "options": [
+        "Separate prices $50/$30 earn $1,000 net of the fee",
+        "Uniform $50 earns $900 and beats segmentation’s $850",
+        "Uniform $40 earns $1,600 and beats segmentation",
+        "Separate prices $40/$20 earn $1,050 after the fee"
+      ],
+      "tag": "direct_price_discrimination",
+      "type": "integration",
+      "objective": "LO13.2",
+      "difficulty": "elite",
+      "conceptCluster": "elite_strategyDesk_direct_price_discrimination",
+      "primarySkill": "direct_price_discrimination",
+      "secondarySkills": [],
+      "repairSkill": "direct_price_discrimination",
+      "commonError": "omits_segmentation_cost_or_quantity_corner",
+      "feedback": "Separate optima are X price 50, quantity 30 and Y price 30, quantity 10. Gross profit 900+100=1000, less 150 implementation gives 850. Uniform 30 gives 600; uniform 40 gives 800; uniform 50 gives 900 because Y demand is zero. Choose uniform 50. Segment-specific gross optimization alone misses the implementation cost and demand corner.",
+      "aHash": "bf7b854b16f785f39b38d4319986df2cf4c2fbaac2e54518b1ea08ccd46b8b93",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 334,
+      "sourceGame": "strategyDesk",
+      "q": "Group A buys 100 units at any price up to $50; Group B buys 100 units up to $30. Cost is $10 per unit. With transferable goods, A can buy through B at B’s price plus $5, and chooses the direct seller when indifferent. Prices may be any whole dollars; the seller may also serve only A. An effective nontransferability system costs $1,800. Which policy is best?",
+      "options": [
+        "Serve only A at $50 for profit $4,000",
+        "Buy the system, charge A $50 and B $30 for net profit $4,200",
+        "Without the system, charge A $35 and B $30 for profit $4,500",
+        "Without the system, charge both groups $30 for profit $4,000"
+      ],
+      "tag": "arbitrage_control",
+      "type": "integration",
+      "objective": "LO13.3",
+      "difficulty": "elite",
+      "conceptCluster": "elite_strategyDesk_arbitrage_control",
+      "primarySkill": "arbitrage_control",
+      "secondarySkills": [],
+      "repairSkill": "arbitrage_control",
+      "commonError": "ignores_binding_resale_constraint",
+      "feedback": "Serving both without control binds A price at 30+5=35: profit 100×25+100×20=4500. Control gives gross 100×40+100×20=6000 less 1800=4200. A-only or uniform 30 gives 4000. The seller should tolerate the binding resale constraint rather than overpay for perfect control.",
+      "aHash": "cff5e95635dcea44f15ee056d489381fa5cc19a9d0fe9580f69d46a18f295872",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 343,
+      "sourceGame": "strategyDesk",
+      "q": "Two verifiable groups cannot resell. X buys 500 units at $50 or 650 at $40; Y buys 200 at $50 or 500 at $40. Unit marginal cost is $20. Separate segment pricing costs $3,000 to implement; uniform pricing has no extra cost. Among these prices, what policy maximizes net contribution?",
+      "options": [
+        "Separate X $40/Y $50; net contribution $16,000",
+        "Separate X $50/Y $40; net contribution $22,000",
+        "Uniform $50; contribution $21,000",
+        "Uniform $40; contribution $23,000"
+      ],
+      "tag": "price_discrimination",
+      "type": "integration",
+      "objective": "LO13.1",
+      "difficulty": "elite",
+      "conceptCluster": "elite_strategyDesk_price_discrimination",
+      "primarySkill": "price_discrimination",
+      "secondarySkills": [],
+      "repairSkill": "price_discrimination",
+      "commonError": "ignores_segmentation_implementation_cost",
+      "feedback": "Uniform 50 gives 700×30=21000; uniform 40 gives 1150×20=23000. Best segmentation is X 50/Y 40:15000+10000−3000=22000. Its gross gain is insufficient to cover implementation, so uniform 40 wins.",
+      "aHash": "33da0fea89c65b2ee1138101c4778b893db43ff9ab097c870b0d4e65108c87d7",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 345,
+      "sourceGame": "strategyDesk",
+      "q": "There is one high-value buyer and one low-value buyer. Values (Basic, Premium) are (90,150) for High and (75,95) for Low. Unit costs are 20 for Basic and 40 for Premium. Each buyer chooses at most one version with highest nonnegative surplus, buys when indifferent to no purchase, and selects Premium when versions tie. Which listed menu maximizes profit?",
+      "options": [
+        "Basic $60, Premium $120; profit $120",
+        "Basic $75, Premium $135; profit $150",
+        "Basic $75, Premium $150; profit $110",
+        "Basic $50, Premium $110; profit $100"
+      ],
+      "tag": "indirect_price_discrimination",
+      "type": "integration",
+      "objective": "LO14.1",
+      "difficulty": "elite",
+      "conceptCluster": "elite_strategyDesk_indirect_price_discrimination",
+      "primarySkill": "indirect_price_discrimination",
+      "secondarySkills": [],
+      "repairSkill": "indirect_price_discrimination",
+      "commonError": "maximizes_posted_prices_without_incentive_compatibility",
+      "feedback": "At 75/135, High gets 15 from either version and selects Premium; Low gets 0 from Basic and−40 from Premium, so buys Basic. Profit=(135−40)+(75−20)=150. At 60/120 profit 120; at 75/150 both buy Basic for 110; at 50/110 profit 100.",
+      "aHash": "d69817f990280f1d207aae74f2990cc136514e619220542f682d55ea6474325b",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 348,
+      "sourceGame": "strategyDesk",
+      "q": "One light user consumes 2 units worth $15 each; one heavy user consumes 8 units worth $12 each. Usage is fixed if subscribing, marginal cost is $2 per unit, and resale is impossible. Both choose the plan giving highest nonnegative surplus, choose B when plans tie, and subscribe when indifferent to not buying. Plan A has fee $6 and unit price $10. Which listed Plan B fee/unit-price pair maximizes total profit among menus that induce Light to choose A and Heavy to choose B?",
+      "options": [
+        "Fee $30, unit price $7; total profit $92",
+        "Fee $38, unit price $7; total profit $84",
+        "Fee $20, unit price $7; total profit $82",
+        "Fee $30, unit price $8; total profit $84"
+      ],
+      "tag": "versioning_and_metering",
+      "type": "integration",
+      "objective": "LO14.2",
+      "difficulty": "elite",
+      "conceptCluster": "elite_strategyDesk_versioning_and_metering",
+      "primarySkill": "versioning_and_metering",
+      "secondarySkills": [],
+      "repairSkill": "versioning_and_metering",
+      "commonError": "checks_participation_without_plan_incentives",
+      "feedback": "A bills 26/86. B at 30+7 q bills 44/86: Light prefers A; Heavy chooses B under the tie rule. Profit is (26−4)+(86−16)=92. Fee 38/unit 7 and fee 30/unit 8 make Heavy prefer A, so they do not separate. Fee 20/unit 7 separates but yields 82. Both participation and incentive constraints matter.",
+      "aHash": "58b42c179d32aeab83d42a12b59c72b57ee90f51599f3cbf4b6b5dc790dfbb98",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 375,
+      "sourceGame": "strategyDesk",
+      "q": "A supplier and retailer split incremental surplus equally. Supplier and retailer outside options are 20 and 30. Project A creates combined value 100; Project B creates 120 but requires supplier to pay a nonrecoverable 15 setup cost before bargaining. The cost is incurred under both subsequent agreement and disagreement and creates no alternative use. Which project maximizes the supplier’s net negotiated payoff, and which creates more net joint value?",
+      "options": [
+        "Supplier is indifferent; joint values are equal",
+        "Supplier prefers B; B creates more net joint value",
+        "Supplier prefers A; A creates more net joint value",
+        "Supplier prefers A; B creates more net joint value"
+      ],
+      "tag": "nonstrategic_bargaining",
+      "type": "integration",
+      "objective": "LO16.2",
+      "difficulty": "elite",
+      "conceptCluster": "elite_strategyDesk_nonstrategic_bargaining",
+      "primarySkill": "nonstrategic_bargaining",
+      "secondarySkills": [],
+      "repairSkill": "nonstrategic_bargaining",
+      "commonError": "ignores_investment_cost_in_bargaining_payoff",
+      "feedback": "A gives the supplier 20+(100−20−30)/2=45 and joint value 100. B gives 20+(120−20−30)/2−15=40 and net joint value 105. The supplier bears the entire setup cost but receives only half the increase in bargaining value.",
+      "aHash": "0c3153e535a27c0c4661ca72d1f7a85151ba4cd024418df32d35f50bae2454fb",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 381,
+      "sourceGame": "strategyDesk",
+      "q": "A buyer values one item at 100 and the seller has zero cost; both fallbacks are 0. In round 1 the seller offers a whole-dollar price. If the buyer rejects, in round 2 the buyer makes the final whole-dollar offer. Both parties discount round 2 payoffs by 0.8. Responders accept when indifferent. What is the subgame-perfect round 1 price?",
+      "options": [
+        "80",
+        "20",
+        "100",
+        "0"
       ],
       "tag": "strategic_bargaining",
       "type": "integration",
       "objective": "LO16.1",
       "difficulty": "elite",
-      "conceptCluster": "LO16.1_strategy_desk",
+      "conceptCluster": "elite_strategyDesk_strategic_bargaining",
       "primarySkill": "strategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "strategic_bargaining",
-      "commonError": "treats_frameworks_as_unrelated_topics",
-      "feedback": "Strategic analysis studies how the bargaining process changes behavior, while the nonstrategic view measures and divides gains relative to fallback positions.",
-      "aHash": "d2a19d8f12070c2d593f4d1eb9acbd3cb35389f3e6b8c05507e8e1bb03018af2"
+      "commonError": "ignores_discounted_counteroffer_value",
+      "feedback": "In round 2 the buyer offers 0, which the seller accepts under the tie rule, giving buyer 100 then, worth 80 in round 1. The buyer therefore accepts a round 1 price at most 20. The seller prefers receiving 20 now to discounted zero, so proposes 20.",
+      "aHash": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 384,
+      "sourceGame": "strategyDesk",
+      "q": "A supplier demands a price, then a buyer accepts or rejects. Payoffs are (buyer, supplier). At price High, acceptance gives (2,10); at Low,(6,6). Rejection gives (0,2). Before the demand, the buyer can publicly adopt a binding rule rejecting High, at cost 1 paid in every outcome. The supplier observes the rule. Should the buyer commit?",
+      "options": [
+        "Yes; Low is induced and buyer net payoff 5 exceeds 2 without commitment",
+        "No; High is still accepted and buyer net payoff 1",
+        "Yes; rejection is induced and buyer net payoff−1 exceeds 2",
+        "No; binding commitments can never change a supplier’s choice"
+      ],
+      "tag": "strategic_bargaining",
+      "type": "integration",
+      "objective": "LO16.1",
+      "difficulty": "elite",
+      "conceptCluster": "elite_strategyDesk_credible_threats",
+      "primarySkill": "credible_threats",
+      "secondarySkills": [],
+      "repairSkill": "credible_threats",
+      "commonError": "ignores_how_binding_rejection_changes_offer",
+      "feedback": "Without the rule the buyer accepts either positive payoff; supplier demands High for 10, giving buyer 2. With the rule, High yields supplier 2 from rejection while Low yields 6, so it demands Low. Buyer net 6−1=5 exceeds 2.",
+      "aHash": "192e0a98d85b0e7c2875472bd6dbb2a82279448fff8a368ab4a7d4d686260d69",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 388,
+      "sourceGame": "strategyDesk",
+      "q": "A buyer values a good at $100, seller cost is $20, and both fallback payoffs are zero. In round 1 the seller names a whole-dollar price. After rejection, the buyer makes a final offer in round 2. Both discount round 2 payoffs by 0.75 and accept when indifferent. The seller may pay a binding commitment fee of $8 before round 1 that eliminates round 2, so rejection ends bargaining. Should it commit?",
+      "options": [
+        "Yes; seller net payoff rises from $20 to $72",
+        "No; eliminating round 2 reduces seller net payoff from $80 to $72",
+        "Yes; seller net payoff rises from $60 to $72",
+        "No; the buyer still makes a final offer of $20"
+      ],
+      "tag": "strategic_bargaining",
+      "type": "integration",
+      "objective": "LO16.1",
+      "difficulty": "elite",
+      "conceptCluster": "elite_strategyDesk_strategic_bargaining",
+      "primarySkill": "strategic_bargaining",
+      "secondarySkills": [],
+      "repairSkill": "strategic_bargaining",
+      "commonError": "ignores_discounted_reservation_payoff",
+      "feedback": "Without commitment the final offer is 20; buyer continuation surplus 80 is worth 60 today. Seller asks 40 now and nets 20. With finality the buyer accepts price 100 at indifference, so seller nets 100−20−8=72. Binding removal of the counteroffer round changes the acceptance threshold.",
+      "aHash": "76f4357dbb8412ee2adbc8e2459a2e02b8b434bba5ce2bf6f35fa5d86208d7e4",
+      "canonicalDifficulty": "elite"
     },
     {
       "id": 13100,
@@ -9075,17 +7566,18 @@ window.questionBanks = {
         "Delete X first because Y beats it at C; then retain B",
         "Delete D using A immediately; then keep every cell in rows A and B"
       ],
-      "tag": "game_design",
+      "tag": "nash_equilibrium",
       "type": "matrix",
-      "objective": "LO15.4",
+      "objective": "LO15.3",
       "difficulty": "elite",
-      "conceptCluster": "elite_strategyDesk_strategic_rule_design",
-      "primarySkill": "strategic_rule_design",
+      "conceptCluster": "elite_strategyDesk_nash_equilibrium",
+      "primarySkill": "nash_equilibrium",
       "secondarySkills": [],
-      "repairSkill": "strategic_rule_design",
-      "commonError": "ignores_ties_or_opponents_best_response",
+      "repairSkill": "nash_equilibrium",
+      "commonError": "infers_equilibrium_before_valid_elimination",
       "feedback": "B strictly dominates C: 7>2, 8>3, 3>2. Without C, X strictly dominates Y and Z. At X, row A pays 9, above D's 8 and B's 7.",
-      "aHash": "460fb8d19b8802fb18515d081c866a812f0beba1b3e12d5aed4615e37bdba220"
+      "aHash": "460fb8d19b8802fb18515d081c866a812f0beba1b3e12d5aed4615e37bdba220",
+      "canonicalDifficulty": "elite"
     },
     {
       "id": 13101,
@@ -9101,13 +7593,60 @@ window.questionBanks = {
       "type": "integration",
       "objective": "LO15.4",
       "difficulty": "elite",
-      "conceptCluster": "elite_strategyDesk_strategic_rule_design",
-      "primarySkill": "strategic_rule_design",
+      "conceptCluster": "elite_strategyDesk_credible_threats",
+      "primarySkill": "credible_threats",
       "secondarySkills": [],
-      "repairSkill": "strategic_rule_design",
+      "repairSkill": "credible_threats",
       "commonError": "ignores_ties_or_opponents_best_response",
       "feedback": "Without capacity the incumbent accommodates, yielding 7. With capacity it prefers Fight after entry (9>7); entry then gives -3, so the entrant stays out. Incumbent net payoff is 10-2=8.",
-      "aHash": "2a876dbd4a42222f4fbe901b8b9fc394fb9eba259e53ec2d5764583c291130c9"
+      "aHash": "2a876dbd4a42222f4fbe901b8b9fc394fb9eba259e53ec2d5764583c291130c9",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 13004,
+      "sourceGame": "strategyDesk",
+      "q": "An independent game has payoffs (First, Second): Launch/Support (9,4), Launch/Challenge (1,7), Wait/Support (6,8), Wait/Challenge (3,2). Compare two rules: O lets Second observe the first move; H hides it, so the two Second nodes form one information set and require one common action. Which comparison is correct?",
+      "options": [
+        "O: Wait, with Challenge after Launch and Support after Wait; H: no pure Nash equilibrium",
+        "O: Wait, with Support after both moves; H: Wait/Support",
+        "O: Launch, with Challenge after Launch and Support after Wait; H: Launch/Challenge",
+        "O: Wait, with Challenge after Launch and Support after Wait; H: Wait/Support"
+      ],
+      "tag": "game_timing",
+      "type": "integration",
+      "objective": "LO15.2",
+      "difficulty": "elite",
+      "conceptCluster": "elite_strategyDesk_game_timing",
+      "primarySkill": "game_timing",
+      "secondarySkills": [],
+      "repairSkill": "game_timing",
+      "commonError": "uses_observed_contingencies_when_first_move_is_hidden",
+      "feedback": "Under O, Second chooses Challenge after Launch (7>4) and Support after Wait (8>2); First waits for 6 rather than 1. Under H, First prefers Launch against Support and Wait against Challenge, while Second prefers Challenge at Launch and Support at Wait. No cell is mutual; the observed contingent profile is infeasible under H.",
+      "aHash": "4aa29d49d411d58e23324709237b22eb37b2dd14428b9ec814bc1bd5e82effd4",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 289,
+      "sourceGame": "strategyDesk",
+      "q": "A and B split incremental surplus equally, with fallbacks $10 and $20. Project X creates agreement value $90 with no setup cost. Project Y creates $110 but requires A to pay an irreversible $15 setup cost before bargaining. Costs do not change fallbacks. B can promise a binding side payment to A after bargaining, only if Y is undertaken; the payment leaves the stated bargaining split unchanged. A selects Y when indifferent. What minimum payment induces Y, and how much does B gain relative to X?",
+      "options": [
+        "Payment $15; B loses $5",
+        "Payment $5; B gains $5",
+        "Payment $10; B is indifferent",
+        "Payment $0; B gains $10"
+      ],
+      "tag": "nonstrategic_bargaining",
+      "type": "integration",
+      "objective": "LO16.2",
+      "difficulty": "elite",
+      "conceptCluster": "elite_strategyDesk_nonstrategic_bargaining",
+      "primarySkill": "nonstrategic_bargaining",
+      "secondarySkills": [],
+      "repairSkill": "nonstrategic_bargaining",
+      "commonError": "ignores_incentive_constraint_for_jointly_efficient_investment",
+      "feedback": "Without a side payment, A earns 40 under X and 35 under Y, so 5 is needed. B earns 50 under X and 60 before the transfer under Y; after paying 5 it earns 55, a gain 5. A is held harmless while the net joint gain 5 goes to B.",
+      "aHash": "246d50a3025406cf7fd3e41eb8cc5721e75a3ebf04b565990967446a8f6e4eba",
+      "canonicalDifficulty": "elite"
     }
   ],
   "legendary": [
@@ -10302,7 +8841,7 @@ window.questionBanks = {
     {
       "id": 9060,
       "sourceGame": "strategyDesk",
-      "q": "Treat gametreeone as a simultaneous game in which Player 2 must choose one price without observing investment. What is the pure-strategy Nash equilibrium?",
+      "q": "In the independent investment game shown, Player 2 chooses a price without observing Player 1’s investment decision. The dashed information set requires the same price choice at both Player 2 nodes. What is the pure-strategy Nash equilibrium?",
       "options": [
         "Invest, Low Price",
         "Invest, High Price",
@@ -10310,7 +8849,7 @@ window.questionBanks = {
         "Don't Invest, Low Price"
       ],
       "tag": "game_timing",
-      "type": "graph-integration",
+      "type": "graph/tree interpretation",
       "objective": "LO15.2",
       "difficulty": "legendary",
       "conceptCluster": "legendary_strategyDesk_game_timing",
@@ -10318,8 +8857,8 @@ window.questionBanks = {
       "secondarySkills": [],
       "repairSkill": "game_timing",
       "commonError": "uses_sequential_contingent_responses_in_simultaneous_form",
-      "feedback": "Invest strictly dominates Don't Invest for Player 1. Against Invest, Player 2 prefers Low Price, producing Invest–Low.",
-      "image": "gametreeone.webp",
+      "feedback": "Player 1 prefers Invest against either price: 6 exceeds 4 against High, and 2 exceeds 1 against Low. Against Invest, Player 2 prefers Low because 5 exceeds 4. The unique pure Nash equilibrium is Invest–Low; Player 2 cannot condition its price on an unobserved move.",
+      "image": "investment_hidden_information.svg",
       "graphRequired": true,
       "aHash": "4c3c5aa5a0875546ac47bf11c5fa9fdbc87a37153c9bf675ee82404ece9970df"
     },
@@ -10422,7 +8961,7 @@ window.questionBanks = {
         "Compromise, Demand More, then Refuse"
       ],
       "tag": "strategic_bargaining",
-      "type": "graph-integration",
+      "type": "graph/tree interpretation",
       "objective": "LO16.1",
       "difficulty": "legendary",
       "conceptCluster": "LO16.1_strategy_desk",
@@ -10446,7 +8985,7 @@ window.questionBanks = {
         "The company stands firm and the union accepts"
       ],
       "tag": "credible_threats",
-      "type": "graph-integration",
+      "type": "graph/tree interpretation",
       "objective": "LO16.1",
       "difficulty": "legendary",
       "conceptCluster": "LO16.1_strategy_desk",
@@ -10470,7 +9009,7 @@ window.questionBanks = {
         "Compromise, Demand More, Concede"
       ],
       "tag": "strategic_bargaining",
-      "type": "graph-integration",
+      "type": "graph/tree interpretation",
       "objective": "LO16.1",
       "difficulty": "legendary",
       "conceptCluster": "LO16.1_strategy_desk",
@@ -10486,7 +9025,7 @@ window.questionBanks = {
     {
       "id": 9083,
       "sourceGame": "strategyDesk",
-      "q": "In gametreethree, by how much must the union's payoff from Accept after Stand Firm rise, using integer payoffs, to make Accept strictly optimal there?",
+      "q": "In gametreethree, what is the smallest integer increase in the union’s payoff from Accept after Stand Firm that makes Accept strictly optimal at that node?",
       "options": [
         "2 payoff units",
         "3 payoff units",
@@ -10494,7 +9033,7 @@ window.questionBanks = {
         "4 payoff units"
       ],
       "tag": "strategic_bargaining",
-      "type": "graph-integration",
+      "type": "graph/tree interpretation",
       "objective": "LO16.1",
       "difficulty": "legendary",
       "conceptCluster": "LO16.1_strategy_desk",
@@ -10518,7 +9057,7 @@ window.questionBanks = {
         "Yes; the company refuses after Demand More to avoid the strike loss"
       ],
       "tag": "strategic_bargaining",
-      "type": "graph-integration",
+      "type": "graph/tree interpretation",
       "objective": "LO16.1",
       "difficulty": "legendary",
       "conceptCluster": "LO16.1_strategy_desk",
@@ -10690,93 +9229,91 @@ window.questionBanks = {
     {
       "id": 2000,
       "sourceGame": "strategyDesk",
-      "q": "Which statement correctly distinguishes individual demand from market demand?",
+      "q": "A supplier can earn $14,000 elsewhere if a contract fails. Its proposed contract payoff is $22,000. What does the $14,000 represent?",
       "options": [
-        "Individual demand is one buyer’s quantity at each price; market demand adds all buyers’ quantities at each price.",
-        "Individual demand measures one firm’s supply; market demand adds all firms’ supply without accounting for any demand response.",
-        "Individual demand is total revenue; market demand is marginal revenue.",
-        "Individual demand uses percentages; market demand uses dollar changes."
+        "The supplier’s disagreement payoff",
+        "The supplier’s gain from agreement",
+        "The total bargaining surplus",
+        "The customer’s reservation payoff"
       ],
-      "tag": "demand",
-      "type": "definition",
-      "objective": "LO6.1",
+      "tag": "nonstrategic_bargaining",
+      "type": "application",
+      "objective": "LO16.2",
       "difficulty": "easyBoss",
-      "conceptCluster": "LO6.1_easy_boss",
-      "primarySkill": "market_demand",
+      "conceptCluster": "easyBoss_strategyDesk_nonstrategic_bargaining",
+      "primarySkill": "nonstrategic_bargaining",
       "secondarySkills": [],
-      "repairSkill": "market_demand",
-      "commonError": "misapplies_market_demand_recognition",
-      "feedback": "Market demand is the horizontal sum of individual demand schedules at each common price.",
+      "repairSkill": "nonstrategic_bargaining",
+      "commonError": "confuses_fallback_with_agreement_value",
+      "feedback": "The outside contract is the supplier’s fallback. Its gain from the proposed contract would be 22000−14000=8000.",
       "bossStage": "opening",
-      "aHash": "4a9344ff3879f7def538850575b74845119d8bfc32321ce42573055bc2252edd"
+      "aHash": "6d7313ab602bdd27d28df503026b08dd5608c64df3a163e48b0aef126e574199"
     },
     {
       "id": 2001,
       "sourceGame": "strategyDesk",
-      "q": "At a price of $25, four customers demand 1, 3, 0, and 2 units. What quantity belongs on the market demand curve at $25?",
+      "q": "A deal creates $60,000 of total value. Supplier and customer can earn $14,000 and $18,000 if talks fail. How much incremental surplus does agreement create?",
       "options": [
-        "1 unit",
-        "6 units",
-        "4 units",
-        "25 units"
+        "$60,000",
+        "$28,000",
+        "$32,000",
+        "$46,000"
       ],
-      "tag": "demand",
-      "type": "application",
-      "objective": "LO6.1",
+      "tag": "nonstrategic_bargaining",
+      "type": "calculation",
+      "objective": "LO16.2",
       "difficulty": "easyBoss",
-      "conceptCluster": "LO6.1_easy_boss",
-      "primarySkill": "market_demand",
+      "conceptCluster": "easyBoss_strategyDesk_nonstrategic_bargaining",
+      "primarySkill": "nonstrategic_bargaining",
       "secondarySkills": [],
-      "repairSkill": "market_demand",
-      "commonError": "misapplies_market_demand_application",
-      "feedback": "Add the quantities at the same price: 1 + 3 + 0 + 2 = 6.",
+      "repairSkill": "nonstrategic_bargaining",
+      "commonError": "adds_gross_values_instead_of_net_surplus",
+      "feedback": "Protect both fallback payoffs:60000−14000−18000=28000.",
       "bossStage": "middle",
-      "aHash": "70f2a9bb85ae1a4b1a22d5fd0f4ba1666b465f9d41f1fcca9185a9dcc1966a10"
+      "aHash": "ca38f0383832842849fa3322b93b12d4cdc3dcf0042d5ac1e7b5134e741acd49"
     },
     {
       "id": 2002,
       "sourceGame": "strategyDesk",
-      "q": "A manager estimates demand from three equal-sized customer groups. At $40 their quantities are 100, 60, and 20; at $35 they are 130, 90, and 40. What is the market response to the $5 price cut?",
+      "q": "A deal creates $60,000 of total value, and supplier/customer fallbacks are $14,000/$18,000. They divide incremental surplus equally. What agreement payoffs result?",
       "options": [
-        "Quantity rises by 30 units, from 100 to 130.",
-        "Quantity rises by 260 units because all group quantities are added twice.",
-        "Quantity rises by 80 units, from 180 to 260.",
-        "Quantity falls by 80 units because price declined."
+        "Supplier $14,000; customer $46,000",
+        "Supplier $30,000; customer $30,000",
+        "Supplier $28,000; customer $32,000",
+        "Supplier $32,000; customer $28,000"
       ],
-      "tag": "demand",
+      "tag": "nonstrategic_bargaining",
       "type": "multi-step",
-      "objective": "LO6.1",
+      "objective": "LO16.2",
       "difficulty": "easyBoss",
-      "conceptCluster": "LO6.1_easy_boss",
-      "primarySkill": "market_demand",
-      "secondarySkills": [
-        "price_elasticity"
-      ],
-      "repairSkill": "market_demand",
-      "commonError": "misapplies_market_demand_synthesis",
-      "feedback": "Market quantity is 180 at $40 and 260 at $35, so the price cut raises total quantity demanded by 80 units.",
+      "conceptCluster": "easyBoss_strategyDesk_nonstrategic_bargaining",
+      "primarySkill": "nonstrategic_bargaining",
+      "secondarySkills": [],
+      "repairSkill": "nonstrategic_bargaining",
+      "commonError": "splits_total_value_instead_of_incremental_surplus",
+      "feedback": "Surplus is 28000. Add half 14000 to each outside option: supplier 28000 andcustomer 32000. Equal gains need not mean equal final payoffs.",
       "bossStage": "final",
-      "aHash": "45b9e9281733ce4c1068f900b483ee604a09c38fbd9ebe77dcaab829f5e92966"
+      "aHash": "49ddddaae7e502a2f4ecd21088fd9e39eae404ab2c10b45dfd464d4b09016a6d"
     },
     {
       "id": 2003,
       "sourceGame": "strategyDesk",
       "q": "What is the central economic test when choosing an optimal price?",
       "options": [
-        "Choose the price that produces the greatest unit sales as the only rule needed for the decision.",
-        "Match the price charged by the largest competitor.",
-        "Set price equal to average historical cost.",
+        "Set price from allocated historical fixed cost",
+        "Maximize unit sales regardless of contribution",
+        "Match the largest competitor regardless of demand",
         "Compare the incremental revenue and incremental cost created by the price decision."
       ],
       "tag": "pricing",
       "type": "definition",
       "objective": "LO6.2",
       "difficulty": "easyBoss",
-      "conceptCluster": "LO6.2_easy_boss",
+      "conceptCluster": "easyBoss_strategyDesk_optimal_pricing",
       "primarySkill": "optimal_pricing",
       "secondarySkills": [],
       "repairSkill": "optimal_pricing",
-      "commonError": "misapplies_optimal_pricing_recognition",
+      "commonError": "maximizes_sales_instead_of_contribution",
       "feedback": "Optimal pricing uses marginal analysis rather than volume, imitation, or average cost alone.",
       "bossStage": "opening",
       "aHash": "9530321fc0812334fe5372bf2d21c965cde4fa50e44d85004175db394e3f7210"
@@ -10795,13 +9332,13 @@ window.questionBanks = {
       "type": "calculation",
       "objective": "LO6.2",
       "difficulty": "easyBoss",
-      "conceptCluster": "LO6.2_easy_boss",
+      "conceptCluster": "easyBoss_strategyDesk_optimal_pricing",
       "primarySkill": "optimal_pricing",
       "secondarySkills": [
         "stay_even_volume"
       ],
       "repairSkill": "optimal_pricing",
-      "commonError": "misapplies_optimal_pricing_application",
+      "commonError": "omits_margin_loss_on_existing_sales",
       "feedback": "Lost contribution is $8,000; contribution from added sales is $6,000; net contribution falls $2,000.",
       "bossStage": "middle",
       "aHash": "84b8bac92f21c51e08419f7bf33abe67ee0d432d7c1ed0494a4d9f3112d34d6f"
@@ -10809,47 +9346,47 @@ window.questionBanks = {
     {
       "id": 2005,
       "sourceGame": "strategyDesk",
-      "q": "A firm can raise price by 5%, expects quantity to fall 3%, and has constant marginal cost. Which conclusion is most defensible before approving the increase?",
+      "q": "A firm sells 100 units at $100 each with constant unit variable cost $60. A price increase to $105 would reduce quantity to 97; fixed costs are unchanged. How does profit change?",
       "options": [
-        "The increase must raise profit because price rises more than quantity falls.",
-        "The increase may raise profit, but the firm must compare the higher margin with lost contribution on reduced sales.",
-        "The increase must lower profit because every price increase reduces quantity regardless of the contribution earned per sale.",
-        "The increase is optimal whenever competitors keep their prices unchanged."
+        "It rises $500",
+        "It rises $365",
+        "It falls $300",
+        "It rises $185"
       ],
       "tag": "pricing",
-      "type": "integration",
+      "type": "multi-step",
       "objective": "LO6.2",
       "difficulty": "easyBoss",
-      "conceptCluster": "LO6.2_easy_boss",
+      "conceptCluster": "easyBoss_strategyDesk_optimal_pricing",
       "primarySkill": "optimal_pricing",
       "secondarySkills": [
         "price_elasticity"
       ],
       "repairSkill": "optimal_pricing",
       "commonError": "misapplies_optimal_pricing_synthesis",
-      "feedback": "The percentages alone do not establish profit; margin and lost volume must be evaluated together.",
+      "feedback": "Old contribution is (100−60)×100=4000; new contribution is (105−60)×97=4365. The price rise adds 365 to profit.",
       "bossStage": "final",
-      "aHash": "8a3be22c4564530afa43f9bb1a70dee86cf56beac2db13b78eb037cf2c2750da"
+      "aHash": "14061f604ec8e26df2ef2d65b64af1a647f234da1a857d33f43a4a124f61d21c"
     },
     {
       "id": 2006,
       "sourceGame": "strategyDesk",
       "q": "A price elasticity of demand of −1.8 means that demand is",
       "options": [
-        "inelastic because the elasticity is negative without checking whether the comparison is economically relevant.",
-        "unit elastic because the value is near 2.",
+        "unit elastic because its absolute value is near 2",
+        "inelastic because its signed value is below 1",
         "elastic because quantity changes proportionally more than price.",
-        "perfectly elastic because quantity changes."
+        "perfectly elastic because demand responds to price"
       ],
       "tag": "elasticity",
       "type": "definition",
       "objective": "LO6.3",
       "difficulty": "easyBoss",
-      "conceptCluster": "LO6.3_easy_boss",
+      "conceptCluster": "easyBoss_strategyDesk_price_elasticity",
       "primarySkill": "price_elasticity",
       "secondarySkills": [],
       "repairSkill": "price_elasticity",
-      "commonError": "misapplies_price_elasticity_recognition",
+      "commonError": "classifies_elasticity_by_sign",
       "feedback": "Elasticity is classified by absolute value; |−1.8| exceeds 1.",
       "bossStage": "opening",
       "aHash": "d5c52a4efbeb47114897a1c3bd21cf69994e45e9a0dfe42721507c9436e31b1c"
@@ -10868,11 +9405,11 @@ window.questionBanks = {
       "type": "calculation",
       "objective": "LO6.3",
       "difficulty": "easyBoss",
-      "conceptCluster": "LO6.3_easy_boss",
+      "conceptCluster": "easyBoss_strategyDesk_price_elasticity",
       "primarySkill": "price_elasticity",
       "secondarySkills": [],
       "repairSkill": "price_elasticity",
-      "commonError": "misapplies_price_elasticity_application",
+      "commonError": "reverses_percentage_ratio",
       "feedback": "Quantity changes −15% and price changes +10%; −15% ÷ 10% = −1.50.",
       "bossStage": "middle",
       "aHash": "f5b33a1e7f298e5e4d07bc7dbcfdf99d2651a90549ce2565c962651d59952ae5"
@@ -10880,27 +9417,27 @@ window.questionBanks = {
     {
       "id": 2008,
       "sourceGame": "strategyDesk",
-      "q": "A product has elasticity −0.6 at its current price and marginal cost is unchanged. Which immediate pricing direction is most consistent with profit improvement, all else equal?",
+      "q": "A single product has price $50, local demand elasticity−0.5, and nonnegative marginal cost $10. Using MR=P(1+1/elasticity), what does marginal analysis imply near the current price?",
       "options": [
-        "Raise price because demand is inelastic.",
-        "Lower price because demand is inelastic.",
-        "Keep price fixed because elasticity is negative.",
-        "Stop selling because marginal revenue must be negative."
+        "MR is−$50; reduce output and raise price",
+        "MR is $25; expand output and cut price",
+        "MR is $50; keep price because revenue is maximal",
+        "MR is−$25; expand output to cover fixed cost"
       ],
       "tag": "elasticity",
-      "type": "strategy",
+      "type": "multi-step",
       "objective": "LO6.3",
       "difficulty": "easyBoss",
-      "conceptCluster": "LO6.3_easy_boss",
+      "conceptCluster": "easyBoss_strategyDesk_price_elasticity",
       "primarySkill": "price_elasticity",
       "secondarySkills": [
         "optimal_pricing"
       ],
       "repairSkill": "price_elasticity",
       "commonError": "misapplies_price_elasticity_synthesis",
-      "feedback": "With inelastic demand, a price increase raises revenue and generally improves contribution when marginal cost is unchanged.",
+      "feedback": "MR=50×(1−2)=−50, below MC 10. Reducing output raises profit; with downward-sloping demand this means a higher price.",
       "bossStage": "final",
-      "aHash": "393ab8298901fb74376e8d6849f2db9aa607bd229db2071a4317e044f6cd42b9"
+      "aHash": "4bb0a3d9af6646714caf9bcffb4c42c75ce63c7383eadb5e5c3df8cbdb4537e9"
     },
     {
       "id": 2009,
@@ -10916,11 +9453,11 @@ window.questionBanks = {
       "type": "definition",
       "objective": "LO6.4",
       "difficulty": "easyBoss",
-      "conceptCluster": "LO6.4_easy_boss",
+      "conceptCluster": "easyBoss_strategyDesk_forecasting_elasticities",
       "primarySkill": "forecasting_elasticities",
       "secondarySkills": [],
       "repairSkill": "forecasting_elasticities",
-      "commonError": "misapplies_forecasting_elasticities_recognition",
+      "commonError": "uses_own_price_elasticity_for_rival_change",
       "feedback": "Cross-price elasticity links demand for one product to the price of another.",
       "bossStage": "opening",
       "aHash": "d0152705134ea5db8f478b158b4d0b26eb8d78ec2dfbd1c18a7dd7d3af327454"
@@ -10939,11 +9476,11 @@ window.questionBanks = {
       "type": "calculation",
       "objective": "LO6.4",
       "difficulty": "easyBoss",
-      "conceptCluster": "LO6.4_easy_boss",
+      "conceptCluster": "easyBoss_strategyDesk_forecasting_elasticities",
       "primarySkill": "forecasting_elasticities",
       "secondarySkills": [],
       "repairSkill": "forecasting_elasticities",
-      "commonError": "misapplies_forecasting_elasticities_application",
+      "commonError": "reverses_cross_price_sign",
       "feedback": "1.5 × 8% = 12%; the positive sign indicates substitutes.",
       "bossStage": "middle",
       "aHash": "6379dd47c269717d9e2a010fc4fc95738c13df08cdb9a13c97ee71bea25ca955"
@@ -10962,11 +9499,11 @@ window.questionBanks = {
       "type": "multi-step",
       "objective": "LO6.4",
       "difficulty": "easyBoss",
-      "conceptCluster": "LO6.4_easy_boss",
+      "conceptCluster": "easyBoss_strategyDesk_forecasting_elasticities",
       "primarySkill": "forecasting_elasticities",
       "secondarySkills": [],
       "repairSkill": "forecasting_elasticities",
-      "commonError": "misapplies_forecasting_elasticities_synthesis",
+      "commonError": "omits_one_forecast_effect",
       "feedback": "Income adds 1.2×4%=4.8%; the rival price cut changes demand by 0.8×−3%=−2.4%; net = +2.4%.",
       "bossStage": "final",
       "aHash": "5171efb5873cc99bd83db99e520d19656f3bc31459c933ab0112f80fe8cc3b07"
@@ -10977,19 +9514,19 @@ window.questionBanks = {
       "q": "Stay-even analysis after a price cut determines",
       "options": [
         "how much unit volume must rise to preserve contribution.",
-        "how much fixed cost must be eliminated immediately because that measure alone determines the optimal choice.",
-        "the price elasticity of every competing product.",
-        "the maximum legal discount allowed."
+        "how much volume preserves revenue regardless of variable cost",
+        "how much fixed cost must be allocated to the discounted units",
+        "how much demand shifts because of unrelated market growth"
       ],
       "tag": "pricing",
       "type": "definition",
       "objective": "LO6.5",
       "difficulty": "easyBoss",
-      "conceptCluster": "LO6.5_easy_boss",
+      "conceptCluster": "easyBoss_strategyDesk_stay_even_volume",
       "primarySkill": "stay_even_volume",
       "secondarySkills": [],
       "repairSkill": "stay_even_volume",
-      "commonError": "misapplies_stay_even_volume_recognition",
+      "commonError": "preserves_revenue_instead_of_contribution",
       "feedback": "The analysis asks how many extra units are needed to offset reduced contribution on existing sales.",
       "bossStage": "opening",
       "aHash": "7956011a722b1fed075bac11dc83f6e1426118e3cb327f4f3a2fc9a3050c57b7"
@@ -11008,11 +9545,11 @@ window.questionBanks = {
       "type": "calculation",
       "objective": "LO6.5",
       "difficulty": "easyBoss",
-      "conceptCluster": "LO6.5_easy_boss",
+      "conceptCluster": "easyBoss_strategyDesk_stay_even_volume",
       "primarySkill": "stay_even_volume",
       "secondarySkills": [],
       "repairSkill": "stay_even_volume",
-      "commonError": "misapplies_stay_even_volume_application",
+      "commonError": "divides_discount_by_old_margin",
       "feedback": "Old contribution is $20 and new contribution is $16. Required volume increase is $4 ÷ $16 = 25%.",
       "bossStage": "middle",
       "aHash": "72da55d317fd997b93138b8646a2238e806a4c4566d1e854277b5a583d8aef23"
@@ -11022,22 +9559,22 @@ window.questionBanks = {
       "sourceGame": "strategyDesk",
       "q": "A firm sells 10,000 units at $80 with variable cost $50. It considers cutting price to $74 and expects sales to rise 18%. What should it conclude?",
       "options": [
-        "The price cut stays even because 18% exceeds the 7.5% price reduction.",
-        "The price cut increases contribution because sales rise by 1,800 units while ignoring all effects on the firm’s other products.",
+        "The cut raises contribution whenever unit sales increase",
+        "The cut stays even because 18% exceeds the 7.5% price reduction",
         "The price cut fails to stay even because it requires a 25% volume increase.",
-        "The price cut stays even because variable cost does not change."
+        "The cut stays even because variable cost is unchanged"
       ],
       "tag": "pricing",
       "type": "multi-step",
       "objective": "LO6.5",
       "difficulty": "easyBoss",
-      "conceptCluster": "LO6.5_easy_boss",
+      "conceptCluster": "easyBoss_strategyDesk_stay_even_volume",
       "primarySkill": "stay_even_volume",
       "secondarySkills": [
         "optimal_pricing"
       ],
       "repairSkill": "stay_even_volume",
-      "commonError": "misapplies_stay_even_volume_synthesis",
+      "commonError": "compares_volume_growth_to_price_cut_percentage",
       "feedback": "Contribution falls from $30 to $24, so required growth is $6 ÷ $24 = 25%; forecast growth is only 18%.",
       "bossStage": "final",
       "aHash": "3411bb568e84d44415440439ad95befea62df2d9ea98b299132a65a36d68d24f"
@@ -11056,11 +9593,11 @@ window.questionBanks = {
       "type": "definition",
       "objective": "LO12.1",
       "difficulty": "easyBoss",
-      "conceptCluster": "LO12.1_easy_boss",
+      "conceptCluster": "easyBoss_strategyDesk_substitute_pricing",
       "primarySkill": "substitute_pricing",
       "secondarySkills": [],
       "repairSkill": "substitute_pricing",
-      "commonError": "misapplies_substitute_pricing_recognition",
+      "commonError": "ignores_owned_substitute_opportunity_cost",
       "feedback": "Cannibalization is an internal opportunity cost in portfolio pricing.",
       "bossStage": "opening",
       "aHash": "a49b38bff9db19233f05e221bc99951ed19b4de230e764bcf41af1de66840295"
@@ -11068,7 +9605,7 @@ window.questionBanks = {
     {
       "id": 2016,
       "sourceGame": "strategyDesk",
-      "q": "A discount adds 400 sales to Product A, but 150 are diverted from Product B. A earns $18 contribution per added sale; B loses $24 contribution per diverted sale. What is the net contribution effect before promotional cost?",
+      "q": "A discount adds 400 sales to Product A, but 150 are diverted from Product B. A earns $18 contribution per added sale; B loses $24 contribution per diverted sale. What is the net contribution effect before promotional cost? Any margin change on A’s existing sales is already included in the stated added contribution.",
       "options": [
         "A $3,600 increase",
         "A $7,200 increase",
@@ -11079,11 +9616,11 @@ window.questionBanks = {
       "type": "calculation",
       "objective": "LO12.1",
       "difficulty": "easyBoss",
-      "conceptCluster": "LO12.1_easy_boss",
+      "conceptCluster": "easyBoss_strategyDesk_substitute_pricing",
       "primarySkill": "substitute_pricing",
       "secondarySkills": [],
       "repairSkill": "substitute_pricing",
-      "commonError": "misapplies_substitute_pricing_application",
+      "commonError": "counts_diverted_sales_as_new_portfolio_sales",
       "feedback": "A adds $7,200; B loses $3,600; net contribution rises $3,600.",
       "bossStage": "middle",
       "aHash": "f6e9c3c430d7165774803ddf797136d8a48045a92ff6c44cf12aaf5d935c7546"
@@ -11091,47 +9628,47 @@ window.questionBanks = {
     {
       "id": 2017,
       "sourceGame": "strategyDesk",
-      "q": "A firm owns Basic and Premium plans. Cutting Basic’s price adds $10,000 contribution to Basic but removes $14,000 contribution from Premium through switching. What is the portfolio decision?",
+      "q": "A firm owns Basic and Premium. Policy A adds $10,000 to Basic contribution but loses $14,000 on Premium. Policy B adds $7,000 to Basic, loses $2,000 on Premium, and costs $1,000 to administer. All figures are total changes including existing buyers. Which policy is best relative to doing nothing?",
       "options": [
-        "Accept the cut because Basic’s contribution rises.",
-        "Reject the cut because total company contribution falls $4,000.",
-        "Accept the cut if Basic gains more customers than Premium loses.",
-        "Ignore switching because both plans belong to the same firm."
+        "Choose A; Basic contribution rises $10,000",
+        "Choose B; total contribution rises $4,000",
+        "Choose B; total contribution rises $6,000",
+        "Choose neither; both reduce total contribution"
       ],
       "tag": "portfolio_pricing",
       "type": "integration",
       "objective": "LO12.1",
       "difficulty": "easyBoss",
-      "conceptCluster": "LO12.1_easy_boss",
+      "conceptCluster": "easyBoss_strategyDesk_substitute_pricing",
       "primarySkill": "substitute_pricing",
       "secondarySkills": [
         "optimal_pricing"
       ],
       "repairSkill": "substitute_pricing",
-      "commonError": "misapplies_substitute_pricing_synthesis",
-      "feedback": "The correct objective is total portfolio profit, not one product’s result.",
+      "commonError": "maximizes_one_division_contribution",
+      "feedback": "Policy A changes total contribution by−4000. Policy B gives 7000−2000−1000=4000, exceeding both A and no change.",
       "bossStage": "final",
-      "aHash": "d01921c932295119e923111e30bc1c4b006a4e479637e959a9945dc4b2ee1fe9"
+      "aHash": "cd8f511cd017776abf48bebc1450db9e86ac0c7721bc66f64682d4a45587dcf8"
     },
     {
       "id": 2018,
       "sourceGame": "strategyDesk",
       "q": "For commonly owned complements, the price of one product should be evaluated partly by",
       "options": [
-        "whether both products have identical variable costs without adjusting for customer substitution or timing.",
-        "whether customers buy both products on the same day.",
+        "the contribution from only the product whose price changes",
+        "whether both products have identical allocated fixed costs",
         "the contribution it creates or destroys on the companion product.",
-        "the average price charged by unrelated firms."
+        "whether the two products have equal posted prices"
       ],
       "tag": "portfolio_pricing",
       "type": "definition",
       "objective": "LO12.2",
       "difficulty": "easyBoss",
-      "conceptCluster": "LO12.2_easy_boss",
+      "conceptCluster": "easyBoss_strategyDesk_complement_pricing",
       "primarySkill": "complement_pricing",
       "secondarySkills": [],
       "repairSkill": "complement_pricing",
-      "commonError": "misapplies_complement_pricing_recognition",
+      "commonError": "ignores_complement_spillover",
       "feedback": "Complement pricing accounts for cross-product demand and contribution effects.",
       "bossStage": "opening",
       "aHash": "e9ae1899158247348d8c267823b1fca72d7c91042dca720dfc022fd808cf88f1"
@@ -11150,11 +9687,11 @@ window.questionBanks = {
       "type": "calculation",
       "objective": "LO12.2",
       "difficulty": "easyBoss",
-      "conceptCluster": "LO12.2_easy_boss",
+      "conceptCluster": "easyBoss_strategyDesk_complement_pricing",
       "primarySkill": "complement_pricing",
       "secondarySkills": [],
       "repairSkill": "complement_pricing",
-      "commonError": "misapplies_complement_pricing_application",
+      "commonError": "omits_device_margin_loss",
       "feedback": "Printer contribution falls $20,000, while cartridges add $30,000; net rises $10,000.",
       "bossStage": "middle",
       "aHash": "cce11a13dcf9828b3c311b6f412ca8e1b7f72f8378d97040a800cf304fec7f78"
@@ -11162,7 +9699,7 @@ window.questionBanks = {
     {
       "id": 2020,
       "sourceGame": "strategyDesk",
-      "q": "A firm owns a device and its subscription service. Lowering the device price sacrifices $45 per buyer but generates an expected 18 months of subscription contribution at $3 per month. Ignoring discounting, what does the combined analysis imply?",
+      "q": "Acquiring one new device buyer sacrifices $45 in device contribution relative to a no-discount sale but generates 18 expected months of new subscription contribution at $3 per month. No existing customer receives the discount and no other sale is displaced. Ignoring discounting, what is the net contribution effect per acquired buyer?",
       "options": [
         "The price cut adds $9 expected contribution per acquired buyer.",
         "The price cut loses $45 because only device profit matters.",
@@ -11173,13 +9710,13 @@ window.questionBanks = {
       "type": "multi-step",
       "objective": "LO12.2",
       "difficulty": "easyBoss",
-      "conceptCluster": "LO12.2_easy_boss",
+      "conceptCluster": "easyBoss_strategyDesk_complement_pricing",
       "primarySkill": "complement_pricing",
       "secondarySkills": [
         "forecasting_elasticities"
       ],
       "repairSkill": "complement_pricing",
-      "commonError": "misapplies_complement_pricing_synthesis",
+      "commonError": "omits_customer_acquisition_sacrifice",
       "feedback": "Expected service contribution is $54; subtracting the $45 device sacrifice leaves $9.",
       "bossStage": "final",
       "aHash": "fb89971549c2208df24109b7656079ef447b258740713654906a54a8ec3403f3"
@@ -11198,11 +9735,11 @@ window.questionBanks = {
       "type": "definition",
       "objective": "LO12.3",
       "difficulty": "easyBoss",
-      "conceptCluster": "LO12.3_easy_boss",
+      "conceptCluster": "easyBoss_strategyDesk_capacity_pricing",
       "primarySkill": "capacity_pricing",
       "secondarySkills": [],
       "repairSkill": "capacity_pricing",
-      "commonError": "misapplies_capacity_pricing_recognition",
+      "commonError": "uses_allocated_fixed_cost_as_floor",
       "feedback": "Unused perishable capacity can be sold when incremental revenue exceeds incremental cost and no better sale is displaced.",
       "bossStage": "opening",
       "aHash": "63f8e15c78b35fe19509cf5a0bb300fb63f59d1c98d348394b95cacd37ce94f6"
@@ -11221,11 +9758,11 @@ window.questionBanks = {
       "type": "calculation",
       "objective": "LO12.3",
       "difficulty": "easyBoss",
-      "conceptCluster": "LO12.3_easy_boss",
+      "conceptCluster": "easyBoss_strategyDesk_capacity_pricing",
       "primarySkill": "capacity_pricing",
       "secondarySkills": [],
       "repairSkill": "capacity_pricing",
-      "commonError": "misapplies_capacity_pricing_application",
+      "commonError": "reports_revenue_as_contribution",
       "feedback": "The room contributes $65 − $28 = $37 because no higher-value booking is displaced.",
       "bossStage": "middle",
       "aHash": "625a162f2a05b7d8318bb3303ced375fd90c8fe9fac0f93fcfd0d8623c7b7326"
@@ -11233,27 +9770,27 @@ window.questionBanks = {
     {
       "id": 2023,
       "sourceGame": "strategyDesk",
-      "q": "A flight has one remaining seat. A leisure traveler offers $220 now. There is a 60% chance a business traveler will later pay $500. Serving either traveler costs $80. Which comparison is relevant?",
+      "q": "A flight has one seat left. A traveler offers $220 now. If the seat is held, a traveler paying $500 arrives with probability 0.6, otherwise it remains empty. Serving either costs $80. The airline is risk neutral. Which choice maximizes expected contribution?",
       "options": [
-        "Accept because $220 exceeds the $80 service cost.",
-        "Reject because business travelers always have priority because fixed historical figures should control the decision.",
-        "Accept because fixed aircraft cost is already sunk.",
-        "Accept only if the leisure contribution exceeds the expected contribution from preserving the seat."
+        "Wait; the later traveler is certain to pay $500",
+        "Accept; revenue $220 exceeds service cost $80",
+        "Accept; contribution $140 exceeds expected revenue $300",
+        "Wait; expected contribution $252 exceeds $140 now"
       ],
       "tag": "capacity",
       "type": "multi-step",
       "objective": "LO12.3",
       "difficulty": "easyBoss",
-      "conceptCluster": "LO12.3_easy_boss",
+      "conceptCluster": "easyBoss_strategyDesk_capacity_pricing",
       "primarySkill": "capacity_pricing",
       "secondarySkills": [
         "forecast_driven_pricing"
       ],
       "repairSkill": "capacity_pricing",
-      "commonError": "misapplies_capacity_pricing_synthesis",
-      "feedback": "The seat has an opportunity cost: expected business contribution is 0.60×($500−$80)=$252, exceeding the leisure contribution of $140.",
+      "commonError": "ignores_displacement_opportunity_cost",
+      "feedback": "Accepting earns 220−80=140. Waiting earns 0.6×(500−80)=252. Waiting raises expected contribution by 112.",
       "bossStage": "final",
-      "aHash": "61cd8d8d6a10f810ff33ccd3efe0fed91ec751f4f6bc61249113691f5ab81ffe"
+      "aHash": "7f13705f16c7e32c7e4597d970bc1a8716a36792630f47d3793ce2d461c6719e"
     },
     {
       "id": 2024,
@@ -11261,19 +9798,19 @@ window.questionBanks = {
       "q": "Why should a demand forecast affect price before the selling period begins?",
       "options": [
         "It reveals expected scarcity and willingness to pay relative to capacity.",
-        "It guarantees the exact quantity customers will purchase while treating every observed sale as newly created demand.",
-        "It replaces the need to consider marginal cost.",
-        "It determines the legal maximum price."
+        "It guarantees the exact realized demand at each price",
+        "It replaces the need to compare contribution margins",
+        "It makes every current sale an incremental sale"
       ],
       "tag": "forecasting",
       "type": "definition",
       "objective": "LO12.4",
       "difficulty": "easyBoss",
-      "conceptCluster": "LO12.4_easy_boss",
+      "conceptCluster": "easyBoss_strategyDesk_forecast_driven_pricing",
       "primarySkill": "forecast_driven_pricing",
       "secondarySkills": [],
       "repairSkill": "forecast_driven_pricing",
-      "commonError": "misapplies_forecast_driven_pricing_recognition",
+      "commonError": "treats_forecast_as_certain",
       "feedback": "Forecasts inform pricing because expected demand relative to capacity changes the value of limited inventory.",
       "bossStage": "opening",
       "aHash": "d489e4a76303683086bbdf644adc2ac8bd08dd223b254168a9448e788f8ae1fa"
@@ -11281,7 +9818,7 @@ window.questionBanks = {
     {
       "id": 2025,
       "sourceGame": "strategyDesk",
-      "q": "A venue has 2,000 seats. At $60, forecast demand is 2,500; at $70, forecast demand is 2,050; at $72, forecast demand is 1,980. Which listed price best fills capacity?",
+      "q": "A venue has 2,000 seats. At $60, forecast demand is 2,500; at $70, forecast demand is 2,050; at $72, forecast demand is 1,980. Which price has forecast demand closest to 2,000 seats, measured by the absolute demand-capacity gap before rationing?",
       "options": [
         "$60",
         "$72",
@@ -11292,12 +9829,12 @@ window.questionBanks = {
       "type": "interpretation",
       "objective": "LO12.4",
       "difficulty": "easyBoss",
-      "conceptCluster": "LO12.4_easy_boss",
+      "conceptCluster": "easyBoss_strategyDesk_forecast_driven_pricing",
       "primarySkill": "forecast_driven_pricing",
       "secondarySkills": [],
       "repairSkill": "forecast_driven_pricing",
-      "commonError": "misapplies_forecast_driven_pricing_application",
-      "feedback": "The $72 forecast is closest to capacity without creating a large shortage.",
+      "commonError": "ignores_absolute_forecast_capacity_gap",
+      "feedback": "The forecast gaps are 500 at $60,50 at $70, and 20 at $72. The $72 forecast is closest; this criterion differs from maximizing realized occupancy or contribution.",
       "bossStage": "middle",
       "aHash": "ff68313bfa1d08e9d6e6007209b06e3d33908f1787cc2e9751b4c621a45a755e"
     },
@@ -11306,25 +9843,25 @@ window.questionBanks = {
       "sourceGame": "strategyDesk",
       "q": "A hotel forecasts 70% occupancy at $180 and 95% occupancy at $155. Variable cost is $35 per occupied room, and it has 100 rooms. Which forecast produces more daily contribution?",
       "options": [
-        "$180 produces $12,600, exceeding $14,725 at $155.",
-        "$180 produces $10,150, exceeding $11,400 at $155.",
-        "$155 produces $11,400, exceeding $10,150 at $180.",
-        "Both produce the same contribution because occupancy offsets price."
+        "$155 produces $14,725, exceeding $12,600 at $180",
+        "$180 produces $12,600, exceeding $11,400 at $155",
+        "$155 produces $11,400, exceeding $10,150 at $180",
+        "$180 produces $10,150, exceeding $9,500 at $155"
       ],
       "tag": "forecasting",
       "type": "multi-step",
       "objective": "LO12.4",
       "difficulty": "easyBoss",
-      "conceptCluster": "LO12.4_easy_boss",
+      "conceptCluster": "easyBoss_strategyDesk_forecast_driven_pricing",
       "primarySkill": "forecast_driven_pricing",
       "secondarySkills": [
         "optimal_pricing"
       ],
       "repairSkill": "forecast_driven_pricing",
-      "commonError": "misapplies_forecast_driven_pricing_synthesis",
+      "commonError": "maximizes_occupancy_instead_of_contribution",
       "feedback": "At $180: 70×$145=$10,150. At $155: 95×$120=$11,400.",
       "bossStage": "final",
-      "aHash": "8f5446ec9e77b4a754c96274dda0a1e52b57cdf8e825763ae7dc9b9da34f52fa"
+      "aHash": "808e74807afb2e1360fe767d9e1ed7af23979afb199dd248cc12e798f490982c"
     },
     {
       "id": 2027,
@@ -11340,11 +9877,11 @@ window.questionBanks = {
       "type": "definition",
       "objective": "LO12.5",
       "difficulty": "easyBoss",
-      "conceptCluster": "LO12.5_easy_boss",
+      "conceptCluster": "easyBoss_strategyDesk_promotion_response",
       "primarySkill": "promotion_response",
       "secondarySkills": [],
       "repairSkill": "promotion_response",
-      "commonError": "misapplies_promotion_response_recognition",
+      "commonError": "counts_sales_as_incremental_profit",
       "feedback": "Promotion is profitable only when incremental contribution exceeds promotional spending and other lost margin.",
       "bossStage": "opening",
       "aHash": "152eecc22c4314fb56a7e7d4785a8cec193c89a48f143e5052e9adef30562d66"
@@ -11363,11 +9900,11 @@ window.questionBanks = {
       "type": "calculation",
       "objective": "LO12.5",
       "difficulty": "easyBoss",
-      "conceptCluster": "LO12.5_easy_boss",
+      "conceptCluster": "easyBoss_strategyDesk_promotion_response",
       "primarySkill": "promotion_response",
       "secondarySkills": [],
       "repairSkill": "promotion_response",
-      "commonError": "misapplies_promotion_response_application",
+      "commonError": "omits_campaign_cost",
       "feedback": "Incremental contribution is $33,000; subtracting the $24,000 campaign cost leaves $9,000.",
       "bossStage": "middle",
       "aHash": "1c7c5e17361e9ef8e222ef46a6ed4c8589cc8ad5cc02847797174ac099b63bdb"
@@ -11386,13 +9923,13 @@ window.questionBanks = {
       "type": "multi-step",
       "objective": "LO12.5",
       "difficulty": "easyBoss",
-      "conceptCluster": "LO12.5_easy_boss",
+      "conceptCluster": "easyBoss_strategyDesk_promotion_response",
       "primarySkill": "promotion_response",
       "secondarySkills": [
         "optimal_pricing"
       ],
       "repairSkill": "promotion_response",
-      "commonError": "misapplies_promotion_response_synthesis",
+      "commonError": "treats_all_coupon_users_as_incremental",
       "feedback": "Incremental buyers add $13,500, existing buyers lose $15,000 from the coupon, and campaign cost is $5,000; net contribution falls $6,500.",
       "bossStage": "final",
       "aHash": "7453ef6731b564b69d3d2abcd0d4f21754c9e834547d5907e99dbdefad634232"
@@ -11402,20 +9939,20 @@ window.questionBanks = {
       "sourceGame": "strategyDesk",
       "q": "A reference price affects purchasing because customers often evaluate the current price relative to",
       "options": [
-        "the seller’s marginal cost only.",
-        "the product’s accounting depreciation.",
+        "the product’s accumulated depreciation",
+        "the seller’s marginal cost alone",
         "an expected or previously observed comparison price.",
-        "the number of competitors in the market because the percentage change alone proves profitability."
+        "the market’s total physical capacity"
       ],
       "tag": "behavioral",
       "type": "definition",
       "objective": "LO12.6",
       "difficulty": "easyBoss",
-      "conceptCluster": "LO12.6_easy_boss",
+      "conceptCluster": "easyBoss_strategyDesk_behavioral_pricing",
       "primarySkill": "behavioral_pricing",
       "secondarySkills": [],
       "repairSkill": "behavioral_pricing",
-      "commonError": "misapplies_behavioral_pricing_recognition",
+      "commonError": "confuses_reference_price_with_cost",
       "feedback": "Reference dependence means perceived value is shaped by a comparison point.",
       "bossStage": "opening",
       "aHash": "f3ef5ed55dbb83dc2867e0ed76f5f21ce2b768d78e2a2fe0ff10eb02037a101f"
@@ -11425,20 +9962,20 @@ window.questionBanks = {
       "sourceGame": "strategyDesk",
       "q": "A retailer displays “Regularly $120, now $85,” but the product was never sold near $120. What is the main problem?",
       "options": [
-        "The $85 price must be below marginal cost.",
-        "The retailer has used direct price discrimination while assuming forecasts are exact and costless.",
-        "The price is illegal because it ends in five.",
+        "The presentation reveals a verified customer segment",
+        "The displayed regular price proves high willingness to pay",
+        "A fictitious regular price measures marginal cost",
         "The reference price may be deceptive rather than a legitimate framing device."
       ],
       "tag": "behavioral",
       "type": "application",
       "objective": "LO12.6",
       "difficulty": "easyBoss",
-      "conceptCluster": "LO12.6_easy_boss",
+      "conceptCluster": "easyBoss_strategyDesk_behavioral_pricing",
       "primarySkill": "behavioral_pricing",
       "secondarySkills": [],
       "repairSkill": "behavioral_pricing",
-      "commonError": "misapplies_behavioral_pricing_application",
+      "commonError": "treats_fictitious_anchor_as_valid_evidence",
       "feedback": "Behavioral pricing can frame value, but fabricated comparison prices are misleading.",
       "bossStage": "middle",
       "aHash": "b7609dd157000f640bff04cb9f752f83bb381ab6354cef909d1f43ae43d768b8"
@@ -11446,7 +9983,7 @@ window.questionBanks = {
     {
       "id": 2032,
       "sourceGame": "strategyDesk",
-      "q": "A firm tests $100, $99.99, and “$8.33 per month billed annually” for the same annual service. Which interpretation is strongest?",
+      "q": "A firm tests $100, $99.99, and“about $8.33 per month, billed $100 annually” for the same annual service. Which interpretation is strongest?",
       "options": [
         "The formats may change perceived affordability even when economic cost is nearly identical.",
         "The monthly frame necessarily lowers the actual annual price without testing whether the claimed comparison is truthful.",
@@ -11457,13 +9994,13 @@ window.questionBanks = {
       "type": "integration",
       "objective": "LO12.6",
       "difficulty": "easyBoss",
-      "conceptCluster": "LO12.6_easy_boss",
+      "conceptCluster": "easyBoss_strategyDesk_behavioral_pricing",
       "primarySkill": "behavioral_pricing",
       "secondarySkills": [
         "optimal_pricing"
       ],
       "repairSkill": "behavioral_pricing",
-      "commonError": "misapplies_behavioral_pricing_synthesis",
+      "commonError": "confuses_price_frame_with_total_bill",
       "feedback": "Partitioning and left-digit framing can alter perception without materially changing total economic cost.",
       "bossStage": "final",
       "aHash": "51a83a09e322fd7ed665d259441472cd2093ef037a0104b04410d36604c3aac0"
@@ -11484,11 +10021,11 @@ window.questionBanks = {
       "type": "definition",
       "objective": "LO13.1",
       "difficulty": "mediumBoss",
-      "conceptCluster": "LO13.1_medium_boss",
+      "conceptCluster": "mediumBoss_strategyDesk_price_discrimination",
       "primarySkill": "price_discrimination",
       "secondarySkills": [],
       "repairSkill": "price_discrimination",
-      "commonError": "misapplies_price_discrimination_recognition",
+      "commonError": "ignores_segmentation_requirements",
       "feedback": "Price discrimination requires heterogeneous willingness to pay plus some ability to separate buyers or prevent arbitrage.",
       "bossStage": "opening",
       "aHash": "769e517726456519f82c2a53b0d12f8fbbe62ca2edf6795a828822320b9270d7"
@@ -11496,7 +10033,7 @@ window.questionBanks = {
     {
       "id": 3001,
       "sourceGame": "strategyDesk",
-      "q": "A museum can identify adults and students, and student tickets cannot be transferred. Adults have less elastic demand. Which pricing pattern best fits profit maximization?",
+      "q": "A museum can identify adults and students, and student tickets cannot be transferred. Adults have less elastic demand. Which pricing pattern best fits profit maximization? Assume equal marginal service costs and interior segment optima.",
       "options": [
         "Charge students more because they buy fewer tickets.",
         "Charge adults more and students less.",
@@ -11507,11 +10044,11 @@ window.questionBanks = {
       "type": "application",
       "objective": "LO13.1",
       "difficulty": "mediumBoss",
-      "conceptCluster": "LO13.1_medium_boss",
+      "conceptCluster": "mediumBoss_strategyDesk_price_discrimination",
       "primarySkill": "price_discrimination",
       "secondarySkills": [],
       "repairSkill": "price_discrimination",
-      "commonError": "misapplies_price_discrimination_application",
+      "commonError": "reverses_elasticity_markup_rule",
       "feedback": "The group with less elastic demand should face the higher markup, provided resale is controlled.",
       "bossStage": "middle",
       "aHash": "862936ff7c498d4de009a4fa4c687bfab2c75d1774e3d584431ff2afec9598af"
@@ -11519,7 +10056,7 @@ window.questionBanks = {
     {
       "id": 3002,
       "sourceGame": "strategyDesk",
-      "q": "Two customer groups have elasticities of −1.5 and −3.0. Marginal cost is $20. Using the inverse-elasticity rule, which pair of prices is consistent with separate profit-maximizing markups?",
+      "q": "Two customer groups have elasticities of −1.5 and −3.0. Marginal cost is $20. Using the inverse-elasticity rule, which pair of prices is consistent with separate profit-maximizing markups? Assume constant elasticities, verified segments, no resale, and interior optima.",
       "options": [
         "$30 for both groups",
         "$24 for the −1.5 group and $30 for the −3.0 group",
@@ -11530,11 +10067,11 @@ window.questionBanks = {
       "type": "calculation",
       "objective": "LO13.1",
       "difficulty": "mediumBoss",
-      "conceptCluster": "LO13.1_medium_boss",
+      "conceptCluster": "mediumBoss_strategyDesk_price_discrimination",
       "primarySkill": "price_discrimination",
       "secondarySkills": [],
       "repairSkill": "price_discrimination",
-      "commonError": "misapplies_price_discrimination_synthesis",
+      "commonError": "applies_lerner_fraction_to_cost",
       "feedback": "For elasticity magnitude 1.5, (P−20)/P=1/1.5, so P=60. For magnitude 3, P=30.",
       "bossStage": "final",
       "aHash": "b0543310aa49ad2447d5e5a335716c1c02794da57efb01c00b0fda53e39d4076"
@@ -11553,11 +10090,11 @@ window.questionBanks = {
       "type": "definition",
       "objective": "LO13.2",
       "difficulty": "mediumBoss",
-      "conceptCluster": "LO13.2_medium_boss",
+      "conceptCluster": "mediumBoss_strategyDesk_direct_price_discrimination",
       "primarySkill": "direct_price_discrimination",
       "secondarySkills": [],
       "repairSkill": "direct_price_discrimination",
-      "commonError": "misapplies_direct_price_discrimination_recognition",
+      "commonError": "confuses_identity_with_self_selection",
       "feedback": "Direct discrimination assigns prices using observable buyer characteristics rather than relying on self-selection.",
       "bossStage": "opening",
       "aHash": "421904be158dc1e4b74db3948b10e3a4965b1ab4c2d356137a24b911217e62e6"
@@ -11565,30 +10102,30 @@ window.questionBanks = {
     {
       "id": 3004,
       "sourceGame": "strategyDesk",
-      "q": "A software vendor offers a verified nonprofit price that is lower than its commercial price. What makes this direct discrimination rather than versioning?",
+      "q": "A vendor verifies nonprofit status and charges less for the same software. Yet eligible buyers can transfer licenses to commercial users. Which diagnosis fits?",
       "options": [
-        "The vendor verifies organizational status before assigning the price.",
-        "The nonprofit edition has fewer features and buyers choose freely.",
-        "Every customer can select either price without verification.",
-        "The lower price is advertised more heavily than the higher price."
+        "Direct classification works, but resale can undermine it",
+        "This is versioning because the software is identical",
+        "Verification alone prevents every resale",
+        "The policy is uniform pricing because features are identical"
       ],
       "tag": "direct_discrimination",
       "type": "application",
       "objective": "LO13.2",
       "difficulty": "mediumBoss",
-      "conceptCluster": "LO13.2_medium_boss",
+      "conceptCluster": "mediumBoss_strategyDesk_direct_price_discrimination",
       "primarySkill": "direct_price_discrimination",
       "secondarySkills": [],
       "repairSkill": "direct_price_discrimination",
-      "commonError": "misapplies_direct_price_discrimination_application",
-      "feedback": "Verification of buyer type makes the pricing rule direct.",
+      "commonError": "assumes_verification_blocks_resale",
+      "feedback": "Verified status makes the initial assignment direct discrimination. Transferability still permits arbitrage, so identification and enforcement solve different problems.",
       "bossStage": "middle",
-      "aHash": "5d54f848a3ab3d969a40b9b7c0d905d85d8925fba063ef2b3c293e72c2d30f93"
+      "aHash": "27fd566fdaecb804fce90601bcf2d972875321dd8352480e6af060e53853e742"
     },
     {
       "id": 3005,
       "sourceGame": "strategyDesk",
-      "q": "A firm serves two identifiable groups. At separate prices it earns $90,000 from Group A and $70,000 from Group B. A uniform price would earn $145,000 total, but administering separate prices costs $12,000. Which policy is better and by how much?",
+      "q": "A firm serves two identifiable groups. At separate prices it earns $90,000 of contribution from Group A and $70,000 from Group B. A uniform price would earn $145,000 total contribution, but administering separate prices costs $12,000. Which policy is better and by how much?",
       "options": [
         "Uniform pricing by $3,000",
         "Direct discrimination by $3,000",
@@ -11599,11 +10136,11 @@ window.questionBanks = {
       "type": "calculation",
       "objective": "LO13.2",
       "difficulty": "mediumBoss",
-      "conceptCluster": "LO13.2_medium_boss",
+      "conceptCluster": "mediumBoss_strategyDesk_direct_price_discrimination",
       "primarySkill": "direct_price_discrimination",
       "secondarySkills": [],
       "repairSkill": "direct_price_discrimination",
-      "commonError": "misapplies_direct_price_discrimination_synthesis",
+      "commonError": "omits_administration_cost",
       "feedback": "Separate pricing nets $160,000−$12,000=$148,000, which is $3,000 above uniform pricing.",
       "bossStage": "final",
       "aHash": "c7407538fc6a081776f60626dd7a7a7c1dab449f2bec247708c513c462456b41"
@@ -11613,23 +10150,23 @@ window.questionBanks = {
       "sourceGame": "strategyDesk",
       "q": "Why can arbitrage destroy a direct price-discrimination program?",
       "options": [
-        "It raises the seller’s marginal cost automatically.",
-        "It makes every customer’s demand perfectly elastic.",
-        "Low-price buyers can resell to high-price buyers, undermining segmentation.",
-        "It guarantees that high-value buyers purchase more units."
+        "Different posted prices automatically create an effective barrier to resale",
+        "High-price buyers can profit by reselling their units to low-price buyers",
+        "Low-price buyers can resell to high-price buyers, undermining segmentation",
+        "Verification of original buyer identities prevents all later transfers"
       ],
       "tag": "arbitrage",
       "type": "definition",
       "objective": "LO13.3",
       "difficulty": "mediumBoss",
-      "conceptCluster": "LO13.3_medium_boss",
+      "conceptCluster": "mediumBoss_strategyDesk_arbitrage_control",
       "primarySkill": "arbitrage_control",
       "secondarySkills": [],
       "repairSkill": "arbitrage_control",
-      "commonError": "misapplies_arbitrage_control_recognition",
+      "commonError": "ignores_resale_between_segments",
       "feedback": "Resale lets high-value buyers obtain the low segment price indirectly.",
       "bossStage": "opening",
-      "aHash": "665865f6dd074a8a8a6cbe3287274cf1ac3090ea0130a33375699e019216fcaa"
+      "aHash": "375a0223aedcb79d2733301f270dc596bb067e90e0d899d18538441b5da5516a"
     },
     {
       "id": 3007,
@@ -11645,11 +10182,11 @@ window.questionBanks = {
       "type": "application",
       "objective": "LO13.3",
       "difficulty": "mediumBoss",
-      "conceptCluster": "LO13.3_medium_boss",
+      "conceptCluster": "mediumBoss_strategyDesk_arbitrage_control",
       "primarySkill": "arbitrage_control",
       "secondarySkills": [],
       "repairSkill": "arbitrage_control",
-      "commonError": "misapplies_arbitrage_control_application",
+      "commonError": "uses_advertising_instead_of_transfer_control",
       "feedback": "Contractual and traceability controls directly restrict resale across segments.",
       "bossStage": "middle",
       "aHash": "27e62697894875a5144c361f26956e59523d52a0078f89eaa8994f4ac3705ecb"
@@ -11657,30 +10194,30 @@ window.questionBanks = {
     {
       "id": 3008,
       "sourceGame": "strategyDesk",
-      "q": "A firm earns $240,000 under segmented prices with no resale. Leakage through arbitrage reduces revenue by $38,000 and enforcement costs $12,000. Uniform pricing would earn $198,000. What should the firm do?",
+      "q": "A firm earns $240,000 contribution under segmented prices with no resale. Leakage through arbitrage reduces contribution by $38,000 and enforcement costs $12,000. Uniform pricing would earn $198,000 contribution. What should the firm do?",
       "options": [
-        "Keep segmentation; it earns $190,000, which exceeds uniform pricing.",
-        "Switch to uniform pricing; it earns $8,000 more.",
-        "Keep segmentation; it earns $4,000 more.",
-        "Switch to uniform pricing; it earns $40,000 more."
+        "Keep segmentation; gross contribution is $42,000 higher",
+        "Switch to uniform pricing; it earns $8,000 more",
+        "Keep segmentation; contribution after leakage is $4,000 higher",
+        "Switch to uniform pricing; it earns $38,000 more"
       ],
       "tag": "arbitrage",
       "type": "calculation",
       "objective": "LO13.3",
       "difficulty": "mediumBoss",
-      "conceptCluster": "LO13.3_medium_boss",
+      "conceptCluster": "mediumBoss_strategyDesk_arbitrage_control",
       "primarySkill": "arbitrage_control",
       "secondarySkills": [],
       "repairSkill": "arbitrage_control",
-      "commonError": "misapplies_arbitrage_control_synthesis",
-      "feedback": "Segmented net revenue is $240,000−$38,000−$12,000=$190,000, so uniform pricing is $8,000 better.",
+      "commonError": "omits_leakage_or_enforcement_cost",
+      "feedback": "Segmented net contribution is 240000−38000−12000=190000, so uniform contribution 198000 is 8000 higher.",
       "bossStage": "final",
-      "aHash": "c3dd0ce18ad8678be69e6257a32f83eb2b2a19fa1003c21fefb5d9e87e555a30"
+      "aHash": "1f312d778a41d8d2d6c72b18c4a094698cbf13152b4ba929b275a5c7a5f8ab4d"
     },
     {
       "id": 3009,
       "sourceGame": "strategyDesk",
-      "q": "The Robinson–Patman Act is primarily concerned with price differences that",
+      "q": "For commodities of like grade and quality, Robinson–Patman price-discrimination concerns include certain price differences that",
       "options": [
         "reflect temporary markdowns available to all buyers.",
         "result from verified differences in selling or delivery cost.",
@@ -11691,11 +10228,11 @@ window.questionBanks = {
       "type": "definition",
       "objective": "LO13.4",
       "difficulty": "mediumBoss",
-      "conceptCluster": "LO13.4_medium_boss",
+      "conceptCluster": "mediumBoss_strategyDesk_robinson_patman",
       "primarySkill": "robinson_patman",
       "secondarySkills": [],
       "repairSkill": "robinson_patman",
-      "commonError": "misapplies_robinson_patman_recognition",
+      "commonError": "treats_all_price_differences_as_violation",
       "feedback": "The statute targets certain discriminatory prices among competing purchasers when competition may be harmed.",
       "bossStage": "opening",
       "aHash": "318388c7feab9cddb5000272bdcd68da7990d5a03ab29d33260eeb8434df50ba"
@@ -11714,11 +10251,11 @@ window.questionBanks = {
       "type": "application",
       "objective": "LO13.4",
       "difficulty": "mediumBoss",
-      "conceptCluster": "LO13.4_medium_boss",
+      "conceptCluster": "mediumBoss_strategyDesk_robinson_patman",
       "primarySkill": "robinson_patman",
       "secondarySkills": [],
       "repairSkill": "robinson_patman",
-      "commonError": "misapplies_robinson_patman_application",
+      "commonError": "uses_buyer_size_instead_of_cost_savings",
       "feedback": "A cost-justification defense depends on demonstrable differences in the cost of serving buyers.",
       "bossStage": "middle",
       "aHash": "977cb93277573485e957a3363fc955d3c710ac90ee746913c3b98d50f4c35fc5"
@@ -11726,7 +10263,7 @@ window.questionBanks = {
     {
       "id": 3011,
       "sourceGame": "strategyDesk",
-      "q": "A supplier charges Buyer A $9 and Buyer B $10 for identical goods. Buyer A’s lower service cost is $0.60 per unit, and a lawful quantity discount available on equal terms explains another $0.25. How much of the $1 difference remains unexplained?",
+      "q": "A supplier charges competing Buyers A/B $9/$10 for identical goods. For this numerical exercise, independent documented permissible cost differences account for $0.60 and $0.25 of the differential. What amount remains unexplained by those two components?",
       "options": [
         "$0.10",
         "$0.15",
@@ -11737,12 +10274,12 @@ window.questionBanks = {
       "type": "calculation",
       "objective": "LO13.4",
       "difficulty": "mediumBoss",
-      "conceptCluster": "LO13.4_medium_boss",
+      "conceptCluster": "mediumBoss_strategyDesk_robinson_patman",
       "primarySkill": "robinson_patman",
       "secondarySkills": [],
       "repairSkill": "robinson_patman",
-      "commonError": "misapplies_robinson_patman_synthesis",
-      "feedback": "The explained difference is $0.85, leaving $0.15 unexplained.",
+      "commonError": "treats_unexplained_price_gap_as_automatic_violation",
+      "feedback": "The two stated components total $0.85, leaving $0.15. An unexplained residual by itself does not establish a legal violation; other statutory facts and defenses matter.",
       "bossStage": "final",
       "aHash": "b6213e89f56b101e073221e4b3a9711c4002df2221c8c1130092c20747140113"
     },
@@ -11760,11 +10297,11 @@ window.questionBanks = {
       "type": "definition",
       "objective": "LO13.5",
       "difficulty": "mediumBoss",
-      "conceptCluster": "LO13.5_medium_boss",
+      "conceptCluster": "mediumBoss_strategyDesk_price_discrimination_cases",
       "primarySkill": "price_discrimination_cases",
       "secondarySkills": [],
       "repairSkill": "price_discrimination_cases",
-      "commonError": "misapplies_price_discrimination_cases_recognition",
+      "commonError": "confuses_versioning_with_direct_classification",
       "feedback": "Age verification assigns a price using an observable buyer characteristic.",
       "bossStage": "opening",
       "aHash": "ddee244e0bd6c50e386c683d4cc40c6d98fdccbe6488a3115cc0c37396f563b0"
@@ -11783,11 +10320,11 @@ window.questionBanks = {
       "type": "application",
       "objective": "LO13.5",
       "difficulty": "mediumBoss",
-      "conceptCluster": "LO13.5_medium_boss",
+      "conceptCluster": "mediumBoss_strategyDesk_price_discrimination_cases",
       "primarySkill": "price_discrimination_cases",
       "secondarySkills": [],
       "repairSkill": "price_discrimination_cases",
-      "commonError": "misapplies_price_discrimination_cases_application",
+      "commonError": "confuses_restriction_with_observed_type",
       "feedback": "The restriction induces self-selection rather than directly observing willingness to pay.",
       "bossStage": "middle",
       "aHash": "fd3fb09d9908119298e240d3f41a624d4b80b2868d34bf271b876a63442b2040"
@@ -11806,11 +10343,11 @@ window.questionBanks = {
       "type": "calculation",
       "objective": "LO13.5",
       "difficulty": "mediumBoss",
-      "conceptCluster": "LO13.5_medium_boss",
+      "conceptCluster": "mediumBoss_strategyDesk_price_discrimination_cases",
       "primarySkill": "price_discrimination_cases",
       "secondarySkills": [],
       "repairSkill": "price_discrimination_cases",
-      "commonError": "misapplies_price_discrimination_cases_synthesis",
+      "commonError": "ignores_program_administration_cost",
       "feedback": "Net gains are $14,000, $15,000, and $31,000; uniform pricing is best under these figures.",
       "bossStage": "final",
       "aHash": "8b818ed850d516f50339e2e1ee7f59856d7b78c02495e1cee8b87eea70eae671"
@@ -11829,11 +10366,11 @@ window.questionBanks = {
       "type": "definition",
       "objective": "LO14.1",
       "difficulty": "mediumBoss",
-      "conceptCluster": "LO14.1_medium_boss",
+      "conceptCluster": "mediumBoss_strategyDesk_indirect_price_discrimination",
       "primarySkill": "indirect_price_discrimination",
       "secondarySkills": [],
       "repairSkill": "indirect_price_discrimination",
-      "commonError": "misapplies_indirect_price_discrimination_recognition",
+      "commonError": "confuses_self_selection_with_observed_identity",
       "feedback": "Indirect discrimination relies on self-selection among options.",
       "bossStage": "opening",
       "aHash": "df11a90d8cf2cff874bef5686dba3b17a405048a5bfd6b9e5a12ba920cfadeb6"
@@ -11852,11 +10389,11 @@ window.questionBanks = {
       "type": "application",
       "objective": "LO14.1",
       "difficulty": "mediumBoss",
-      "conceptCluster": "LO14.1_medium_boss",
+      "conceptCluster": "mediumBoss_strategyDesk_indirect_price_discrimination",
       "primarySkill": "indirect_price_discrimination",
       "secondarySkills": [],
       "repairSkill": "indirect_price_discrimination",
-      "commonError": "misapplies_indirect_price_discrimination_application",
+      "commonError": "ignores_value_of_flexibility",
       "feedback": "Restrictions create a sorting mechanism when flexibility is more valuable to high-demand customers.",
       "bossStage": "middle",
       "aHash": "a321c369d88189165d2595f467871de154a97bf9937e829f9bf643fd78ea2b72"
@@ -11875,11 +10412,11 @@ window.questionBanks = {
       "type": "calculation",
       "objective": "LO14.1",
       "difficulty": "mediumBoss",
-      "conceptCluster": "LO14.1_medium_boss",
+      "conceptCluster": "mediumBoss_strategyDesk_indirect_price_discrimination",
       "primarySkill": "indirect_price_discrimination",
       "secondarySkills": [],
       "repairSkill": "indirect_price_discrimination",
-      "commonError": "misapplies_indirect_price_discrimination_synthesis",
+      "commonError": "counts_full_premium_margin_instead_of_upgrade_margin",
       "feedback": "Preventing 450 downgrades preserves $24 each, or $10,800; losing 100 low-plan users costs $1,800; net gain is $9,000.",
       "bossStage": "final",
       "aHash": "14e28c96619fb8eaa690cee491d6507b988e4dcd6cbadd051b9bd64f3a644442"
@@ -11898,11 +10435,11 @@ window.questionBanks = {
       "type": "definition",
       "objective": "LO14.2",
       "difficulty": "mediumBoss",
-      "conceptCluster": "LO14.2_medium_boss",
-      "primarySkill": "cannibalization_control",
+      "conceptCluster": "mediumBoss_strategyDesk_versioning_and_metering",
+      "primarySkill": "versioning_and_metering",
       "secondarySkills": [],
-      "repairSkill": "cannibalization_control",
-      "commonError": "misapplies_cannibalization_control_recognition",
+      "repairSkill": "versioning_and_metering",
+      "commonError": "makes_basic_equally_attractive_to_high_types",
       "feedback": "The lower-priced version must sacrifice attributes valued especially by high-value customers.",
       "bossStage": "opening",
       "aHash": "e0d91cfec2c23811943b76bb815b5f34a4f37bcb00249c0ca425b0d3f0b72279"
@@ -11910,7 +10447,7 @@ window.questionBanks = {
     {
       "id": 3019,
       "sourceGame": "strategyDesk",
-      "q": "A printer manufacturer sells printers cheaply and cartridges at a high margin. Which pricing logic is being used?",
+      "q": "A printer manufacturer sells printers cheaply and the only compatible proprietary cartridges at a high margin. Which pricing logic is being used?",
       "options": [
         "Pure bundling",
         "Direct demographic pricing",
@@ -11921,11 +10458,11 @@ window.questionBanks = {
       "type": "application",
       "objective": "LO14.2",
       "difficulty": "mediumBoss",
-      "conceptCluster": "LO14.2_medium_boss",
-      "primarySkill": "cannibalization_control",
+      "conceptCluster": "mediumBoss_strategyDesk_versioning_and_metering",
+      "primarySkill": "versioning_and_metering",
       "secondarySkills": [],
-      "repairSkill": "cannibalization_control",
-      "commonError": "misapplies_cannibalization_control_application",
+      "repairSkill": "versioning_and_metering",
+      "commonError": "ignores_metered_usage",
       "feedback": "Cartridge purchases meter usage and allow heavy users to pay more over time.",
       "bossStage": "middle",
       "aHash": "6d36f6bdf8433629f32a65d6d1c5d50b492140a4433da3d7bf1da638d2d767d1"
@@ -11944,11 +10481,11 @@ window.questionBanks = {
       "type": "calculation",
       "objective": "LO14.2",
       "difficulty": "mediumBoss",
-      "conceptCluster": "LO14.2_medium_boss",
-      "primarySkill": "cannibalization_control",
+      "conceptCluster": "mediumBoss_strategyDesk_versioning_and_metering",
+      "primarySkill": "versioning_and_metering",
       "secondarySkills": [],
-      "repairSkill": "cannibalization_control",
-      "commonError": "misapplies_cannibalization_control_synthesis",
+      "repairSkill": "versioning_and_metering",
+      "commonError": "ignores_lost_margin_from_downgrades",
       "feedback": "New buyers add $17,500; downgrades lose $45 each, or $9,900; net gain is $7,600.",
       "bossStage": "final",
       "aHash": "42663f09f75741818ddbb3b0deaf28de2ffaf2f402061dd6142fd37486ff7e8d"
@@ -11967,11 +10504,11 @@ window.questionBanks = {
       "type": "definition",
       "objective": "LO14.3",
       "difficulty": "mediumBoss",
-      "conceptCluster": "LO14.3_medium_boss",
-      "primarySkill": "self_selection_pricing",
+      "conceptCluster": "mediumBoss_strategyDesk_consumer_surplus_extraction",
+      "primarySkill": "consumer_surplus_extraction",
       "secondarySkills": [],
-      "repairSkill": "self_selection_pricing",
-      "commonError": "misapplies_self_selection_pricing_recognition",
+      "repairSkill": "consumer_surplus_extraction",
+      "commonError": "confuses_menu_with_uniform_product",
       "feedback": "A menu of differentiated options lets buyers reveal type through their choices.",
       "bossStage": "opening",
       "aHash": "6aade006741fe109dcaf1dd2829567db7ba54274cc7e3e9242bd8b4ef7914b46"
@@ -11990,11 +10527,11 @@ window.questionBanks = {
       "type": "application",
       "objective": "LO14.3",
       "difficulty": "mediumBoss",
-      "conceptCluster": "LO14.3_medium_boss",
-      "primarySkill": "self_selection_pricing",
+      "conceptCluster": "mediumBoss_strategyDesk_consumer_surplus_extraction",
+      "primarySkill": "consumer_surplus_extraction",
       "secondarySkills": [],
-      "repairSkill": "self_selection_pricing",
-      "commonError": "misapplies_self_selection_pricing_application",
+      "repairSkill": "consumer_surplus_extraction",
+      "commonError": "ignores_usage_heterogeneity",
       "feedback": "Different fixed and variable charges sort light and heavy users.",
       "bossStage": "middle",
       "aHash": "2fc9fa49e63a935c9b0418d293daa863a803450c0aaa0a5a7e02cee79a791d4c"
@@ -12002,25 +10539,25 @@ window.questionBanks = {
     {
       "id": 3023,
       "sourceGame": "strategyDesk",
-      "q": "Light users value access at $40 and expect 2 uses; heavy users value access at $100 and expect 10 uses. A firm considers a $20 membership plus $8 per use. Which statement is correct?",
+      "q": "Light users value access at $40 and expect 2 uses; heavy users value access at $100 and expect 10 uses. A firm considers a $20 membership plus $8 per use. Which statement is correct? Usage is fixed at these quantities. Customers buy when indifferent; stated values are total gross values at that usage.",
       "options": [
-        "Both types reject because total payment exceeds value.",
-        "Only light users buy because heavy users pay too much.",
-        "Both types buy, but the plan extracts more surplus from light users.",
-        "Light users pay $36 and buy; heavy users pay $100 and are just indifferent."
+        "Light users pay $16 and heavy users pay $80",
+        "Both types reject because their total payments exceed value",
+        "Only light users buy; heavy users pay $120",
+        "Light users pay $36 and buy; heavy users pay $100 and are indifferent"
       ],
       "tag": "self_selection",
       "type": "calculation",
       "objective": "LO14.3",
       "difficulty": "mediumBoss",
-      "conceptCluster": "LO14.3_medium_boss",
-      "primarySkill": "self_selection_pricing",
+      "conceptCluster": "mediumBoss_strategyDesk_consumer_surplus_extraction",
+      "primarySkill": "consumer_surplus_extraction",
       "secondarySkills": [],
-      "repairSkill": "self_selection_pricing",
-      "commonError": "misapplies_self_selection_pricing_synthesis",
+      "repairSkill": "consumer_surplus_extraction",
+      "commonError": "omits_fixed_fee_or_participation_constraint",
       "feedback": "Light users pay $36 and retain $4 surplus; heavy users pay $100 and are indifferent.",
       "bossStage": "final",
-      "aHash": "8546140a62d20e9d6fa528390637df978757700f91892a6b8722f305bdbfe1f5"
+      "aHash": "2975a6e25ec56d23a206767734c4f5002a7d58fb0b7bc47d1dda15cfcd13d9ae"
     },
     {
       "id": 3024,
@@ -12036,11 +10573,11 @@ window.questionBanks = {
       "type": "definition",
       "objective": "LO14.4",
       "difficulty": "mediumBoss",
-      "conceptCluster": "LO14.4_medium_boss",
+      "conceptCluster": "mediumBoss_strategyDesk_bundling",
       "primarySkill": "bundling",
       "secondarySkills": [],
       "repairSkill": "bundling",
-      "commonError": "misapplies_bundling_recognition",
+      "commonError": "confuses_value_correlation_with_cost",
       "feedback": "Bundling can reduce dispersion in total willingness to pay when component valuations offset one another.",
       "bossStage": "opening",
       "aHash": "48d89eb908c6c61fd2f369ed699e27a455f18fc0f7ec3e3d333c9e74e1cb4054"
@@ -12048,7 +10585,7 @@ window.questionBanks = {
     {
       "id": 3025,
       "sourceGame": "strategyDesk",
-      "q": "Consumer A values Goods 1 and 2 at $80 and $20; Consumer B values them at $30 and $70. Marginal cost is zero. Which pure bundle price sells to both and maximizes revenue?",
+      "q": "Consumer A values Goods 1 and 2 at $80 and $20; Consumer B values them at $30 and $70. Marginal cost is zero. Which pure bundle price sells to both and maximizes revenue? Values are additive, buyers buy at indifference, and each wants at most one of each good.",
       "options": [
         "$70",
         "$80",
@@ -12059,11 +10596,11 @@ window.questionBanks = {
       "type": "calculation",
       "objective": "LO14.4",
       "difficulty": "mediumBoss",
-      "conceptCluster": "LO14.4_medium_boss",
+      "conceptCluster": "mediumBoss_strategyDesk_bundling",
       "primarySkill": "bundling",
       "secondarySkills": [],
       "repairSkill": "bundling",
-      "commonError": "misapplies_bundling_application",
+      "commonError": "counts_one_bundle_sale",
       "feedback": "Each consumer values the bundle at $100, so a $100 price yields $200 total revenue.",
       "bossStage": "middle",
       "aHash": "797c7d463af6ea7fa7f88d50602cea0531e3e0da8cb59be3b0983bb98958cce8"
@@ -12071,119 +10608,119 @@ window.questionBanks = {
     {
       "id": 3026,
       "sourceGame": "strategyDesk",
-      "q": "Three consumers value Goods X and Y as follows: A ($90,$10), B ($60,$50), C ($20,$85). Costs are zero. Selling separately at $60 for X and $50 for Y earns $280. A pure bundle at $100 sells to all three. Which strategy is better and by how much?",
+      "q": "Three consumers value Goods X/Y as A(90,10), B(60,50), C(20,85). Values are additive, costs zero, and each buys at most one unit per good when value equals price. Compare separate prices X $60/Y $50 with a pure bundle at $100. Which earns more revenue?",
       "options": [
-        "Separate pricing by $20",
+        "Separate pricing by $80",
+        "Bundling by $80",
         "Bundling by $20",
-        "Bundling by $300",
-        "The strategies earn the same revenue"
+        "The two earn the same revenue"
       ],
       "tag": "bundling",
       "type": "multi-step",
       "objective": "LO14.4",
       "difficulty": "mediumBoss",
-      "conceptCluster": "LO14.4_medium_boss",
+      "conceptCluster": "mediumBoss_strategyDesk_bundling",
       "primarySkill": "bundling",
       "secondarySkills": [],
       "repairSkill": "bundling",
-      "commonError": "misapplies_bundling_synthesis",
-      "feedback": "The bundle earns $300, which is $20 more than the stated $280 from separate pricing.",
+      "commonError": "miscounts_separate_product_buyers",
+      "feedback": "Separate sales yield 2×60+2×50=220. Bundle values 100,110,105 all meet 100, so bundle revenue 300 exceeds 220 by 80.",
       "bossStage": "final",
-      "aHash": "d73ece47a7bc12ccc4848f8301e643d62b58c6905e859fd20d3adc82d6db8b49"
+      "aHash": "a303990a37507e5ff5e2b7598db6403d3fa1fcab3728bca98ac4e871534ee26b"
     }
   ],
   "finalBoss": [
     {
       "id": 4000,
       "sourceGame": "strategyDesk",
-      "q": "A market is strategic rather than a collection of independent decisions when",
+      "q": "A venue has 100 seats. At one price, demand is 140 with probability 0.5 and 40 otherwise. Which expected sales forecast correctly accounts for capacity?",
       "options": [
-        "each firm's best action depends on what rivals do.",
-        "every firm faces the same marginal cost and chooses output independently.",
-        "buyers cannot observe posted prices or compare the firms directly.",
-        "demand is perfectly inelastic across every possible price."
+        "70 seats",
+        "90 seats",
+        "100 seats",
+        "140 seats"
       ],
-      "tag": "strategic_interdependence",
-      "type": "definition",
-      "objective": "LO15.1",
+      "tag": "forecast_driven_pricing",
+      "type": "application",
+      "objective": "LO12.4",
       "difficulty": "finalBoss",
-      "conceptCluster": "finalBoss_strategyDesk_strategic_interdependence",
-      "primarySkill": "strategic_interdependence",
+      "conceptCluster": "finalBoss_strategyDesk_forecast_driven_pricing",
+      "primarySkill": "forecast_driven_pricing",
       "secondarySkills": [],
-      "repairSkill": "strategic_interdependence",
-      "commonError": "misapplies_strategic_interdependence_recognition",
-      "feedback": "Strategic interdependence exists when one player's payoff depends on the actions chosen by others.",
+      "repairSkill": "forecast_driven_pricing",
+      "commonError": "uses_mean_demand_without_capacity_cap",
+      "feedback": "Cap sales within each state before averaging:0.5×100+0.5×40=70. Capping average demand 90 would overstate expected sales.",
       "bossStage": "opening",
-      "aHash": "2e50458276b96ecb5de362ff36fd938eb483d2395614780ca9a84ca6b3b0a5bd"
+      "aHash": "5745d091ffd56109bca12f5f290ef588507c51ab97710b4cafb0023aac51e625"
     },
     {
       "id": 4001,
       "sourceGame": "strategyDesk",
-      "q": "Two firms choose Advertise or Do Not Advertise simultaneously. Each earns 8 if neither advertises, 5 if both advertise, 11 if it advertises alone, and 2 if only its rival advertises. What is each firm's best response to a rival that does not advertise?",
+      "q": "A venue has 100 seats and variable cost $10 per sale. With equal probabilities of strong/weak demand, price $50 produces demand 140/40 and price $40 produces demand 160/80. Which fixed price gives higher expected contribution?",
       "options": [
-        "Do Not Advertise, because joint profit is highest there.",
-        "Advertise, because 11 exceeds 8.",
-        "Either action, because the firm is indifferent.",
-        "The answer cannot be found without a game tree."
+        "$40; expected contribution $3,600 exceeds $2,800",
+        "$50; expected contribution $2,800 exceeds $2,700",
+        "$50; expected contribution $3,600 exceeds $2,700",
+        "$40; expected contribution $2,700 exceeds $2,000"
       ],
-      "tag": "strategic_interdependence",
-      "type": "application",
-      "objective": "LO15.1",
+      "tag": "forecast_driven_pricing",
+      "type": "multi-step",
+      "objective": "LO12.4",
       "difficulty": "finalBoss",
-      "conceptCluster": "finalBoss_strategyDesk_strategic_interdependence",
-      "primarySkill": "strategic_interdependence",
+      "conceptCluster": "finalBoss_strategyDesk_forecast_driven_pricing",
+      "primarySkill": "forecast_driven_pricing",
       "secondarySkills": [],
-      "repairSkill": "strategic_interdependence",
-      "commonError": "misapplies_strategic_interdependence_application",
-      "feedback": "Against a rival that does not advertise, advertising yields 11 rather than 8.",
+      "repairSkill": "forecast_driven_pricing",
+      "commonError": "ignores_state_probabilities",
+      "feedback": "At 50 expected sales 70 and contribution 2800. At 40 expected sales 90 and contribution 2700. Therefore 50 is better by 100.",
       "bossStage": "middle",
-      "aHash": "ab9e1675f0b7cf38dfaebf7bde1c6c95390ee9277e71bd96b5be4e6d123655b5"
+      "aHash": "c4dab2e1886724630e770fe4aee101d0ea9d65bbe9e0e67eea6b4a6adf8087b5"
     },
     {
       "id": 4002,
       "sourceGame": "strategyDesk",
-      "q": "In the advertising game, each firm earns 8 if neither advertises, 5 if both advertise, 11 if it advertises alone, and 2 if only its rival advertises. Which conclusion best integrates private incentives and joint profit?",
+      "q": "A venue has 100 seats and variable cost $10. Strong/weak demand are equally likely. At price $50 demand is 140/40; at $40 it is 160/80. A perfect forecast available before pricing costs $100. Relative to the best fixed price, should the venue buy it?",
       "options": [
-        "Mutual advertising is unstable because either firm would rather stop once the rival advertises.",
-        "No equilibrium exists because the firms prefer different outcomes and cannot coordinate their choices.",
-        "Advertising is dominant for each firm, so equilibrium is mutual advertising even though mutual restraint would pay both more.",
-        "Mutual restraint is the Nash equilibrium because it maximizes combined profit for the two firms."
+        "Yes; net expected contribution rises $400",
+        "No; net expected contribution falls $100",
+        "Yes; net expected contribution rises $300",
+        "No; capacity makes information worthless"
       ],
-      "tag": "strategic_interdependence",
+      "tag": "forecast_driven_pricing",
       "type": "integration",
-      "objective": "LO15.1",
+      "objective": "LO12.4",
       "difficulty": "finalBoss",
-      "conceptCluster": "finalBoss_strategyDesk_strategic_interdependence",
-      "primarySkill": "strategic_interdependence",
+      "conceptCluster": "finalBoss_strategyDesk_forecast_driven_pricing",
+      "primarySkill": "forecast_driven_pricing",
       "secondarySkills": [],
-      "repairSkill": "strategic_interdependence",
-      "commonError": "misapplies_strategic_interdependence_synthesis",
-      "feedback": "Advertising gives 11 instead of 8 when the rival restrains and 5 instead of 2 when the rival advertises, so it is dominant. The resulting equilibrium is inefficient.",
+      "repairSkill": "forecast_driven_pricing",
+      "commonError": "ignores_value_of_forecast_information",
+      "feedback": "Best fixed price 50 yields 2800. With a perfect forecast choose 50 in strong demand for 4000,40 in weak demand for 2400; expected 3200. After 100 cost,3100 exceeds 2800 by 300.",
       "bossStage": "final",
-      "aHash": "0b530455c2874fe800556a5eba1510f056208c64152d03f9a241c51de0be845d"
+      "aHash": "22cc974d6690c4ade955c31f37756b87b6c2481a23679ae7c648dc720489d9d5"
     },
     {
       "id": 4003,
       "sourceGame": "strategyDesk",
-      "q": "In the observed sequential game shown in gametreeone, what information does the later mover have?",
+      "q": "In an independent game, Player 1 chooses Launch or Wait. Player 2 then chooses Support or Challenge without seeing Player 1’s choice; both of Player 2’s decision nodes belong to one information set. Which contingent plan is feasible for Player 2?",
       "options": [
-        "the sequential game always has only one player making every relevant decision.",
-        "the simultaneous game cannot contain uncertainty about strategies or market conditions.",
-        "payoffs are irrelevant in sequential games once the first action has been selected.",
-        "a later mover in a sequential game observes an earlier action before choosing."
+        "Inspect the unobserved first move before choosing",
+        "Choose Support after Launch and Challenge after Wait",
+        "Choose Challenge after Launch and Support after Wait",
+        "Choose Support at that information set regardless of the hidden first move"
       ],
       "tag": "game_timing",
-      "type": "definition",
+      "type": "interpretation",
       "objective": "LO15.2",
       "difficulty": "finalBoss",
       "conceptCluster": "finalBoss_strategyDesk_game_timing",
       "primarySkill": "game_timing",
       "secondarySkills": [],
       "repairSkill": "game_timing",
-      "commonError": "misapplies_game_timing_recognition",
-      "feedback": "Sequential play gives a later mover information about an earlier action; simultaneous play does not.",
+      "commonError": "conditions_action_on_unobserved_move",
+      "feedback": "Player 2 must choose the same action at indistinguishable nodes. Hidden moves prevent conditioning on which first action occurred. This information structure is specified independently of any assessment figure.",
       "bossStage": "opening",
-      "aHash": "c889acc647455540a2500fb5ff5f7e7566a4b656fae6ca3c82620552bc755380"
+      "aHash": "bdcf438062e357ed0d7aeb0d8b77211bbdae53b01ef08e2f3872d7cb588a62f7"
     },
     {
       "id": 4004,
@@ -12195,15 +10732,15 @@ window.questionBanks = {
         "High after both actions",
         "Low after both actions"
       ],
-      "tag": "game_timing",
-      "type": "graph-integration",
+      "tag": "complete_strategy",
+      "type": "graph/tree interpretation",
       "objective": "LO15.2",
       "difficulty": "finalBoss",
-      "conceptCluster": "finalBoss_strategyDesk_game_timing",
-      "primarySkill": "game_timing",
+      "conceptCluster": "finalBoss_strategyDesk_complete_strategy",
+      "primarySkill": "complete_strategy",
       "secondarySkills": [],
-      "repairSkill": "game_timing",
-      "commonError": "misapplies_game_timing_application",
+      "repairSkill": "complete_strategy",
+      "commonError": "uses_first_payoff_for_second_player",
       "feedback": "Player 2 compares its own payoffs: after Invest, 5 exceeds 4, so Low; after Don't Invest, 3 exceeds 2, so High.",
       "bossStage": "middle",
       "image": "gametreeone.webp",
@@ -12220,15 +10757,15 @@ window.questionBanks = {
         "Invest; Player 2 chooses Low after Invest and High after Don't Invest in the two subgames",
         "Don't Invest; Player 2 chooses High after both possible actions regardless of the branch"
       ],
-      "tag": "game_timing",
-      "type": "graph-integration",
+      "tag": "complete_strategy",
+      "type": "graph/tree interpretation",
       "objective": "LO15.2",
       "difficulty": "finalBoss",
-      "conceptCluster": "finalBoss_strategyDesk_game_timing",
-      "primarySkill": "game_timing",
+      "conceptCluster": "finalBoss_strategyDesk_complete_strategy",
+      "primarySkill": "complete_strategy",
       "secondarySkills": [],
-      "repairSkill": "game_timing",
-      "commonError": "misapplies_game_timing_synthesis",
+      "repairSkill": "complete_strategy",
+      "commonError": "omits_off_path_strategy",
       "feedback": "Backward induction gives Low after Invest and High after Don't Invest. Player 1 then chooses Don't Invest because 4 exceeds 2.",
       "bossStage": "final",
       "image": "gametreeone.webp",
@@ -12253,7 +10790,7 @@ window.questionBanks = {
       "primarySkill": "nash_equilibrium",
       "secondarySkills": [],
       "repairSkill": "nash_equilibrium",
-      "commonError": "misapplies_nash_equilibrium_recognition",
+      "commonError": "drops_best_response_ties",
       "feedback": "Both S and T give 4, exceeding R's 2. Keep all ties when marking best responses.",
       "bossStage": "opening",
       "aHash": "b5272081670cbb87cf38d833c56f37313e040ba42ca62a3b9d9ef9e8d34dd238"
@@ -12276,7 +10813,7 @@ window.questionBanks = {
       "primarySkill": "nash_equilibrium",
       "secondarySkills": [],
       "repairSkill": "nash_equilibrium",
-      "commonError": "misapplies_nash_equilibrium_application",
+      "commonError": "checks_only_row_best_responses",
       "feedback": "At (T,Z), T ties S for the row maximum and Z is the column player's best response to T. At (R,X) and (S,Y), the column player wants to switch; at (S,Z), it prefers X.",
       "bossStage": "middle",
       "aHash": "ce16685c7c287216cd964ab65b9ec7047bbcb709557490c722bff4d48125f784"
@@ -12295,11 +10832,11 @@ window.questionBanks = {
       "type": "matrix",
       "objective": "LO15.3",
       "difficulty": "finalBoss",
-      "conceptCluster": "finalBoss_strategyDesk_nash_equilibrium",
-      "primarySkill": "nash_equilibrium",
+      "conceptCluster": "finalBoss_strategyDesk_weak_dominance",
+      "primarySkill": "weak_dominance",
       "secondarySkills": [],
-      "repairSkill": "nash_equilibrium",
-      "commonError": "misapplies_nash_equilibrium_synthesis",
+      "repairSkill": "weak_dominance",
+      "commonError": "assumes_weak_deletion_preserves_all_equilibria",
       "feedback": "S exceeds T at X and Y but ties it at Z. That tie supports the original (T,Z) equilibrium. Deleting T removes it; the reduced game cycles among best responses.",
       "bossStage": "final",
       "aHash": "aeecf5b360611c76c3c6d44d1fa9bd3c416cc0b762250a22cf18593b26bf42d1"
@@ -12307,25 +10844,25 @@ window.questionBanks = {
     {
       "id": 4009,
       "sourceGame": "strategyDesk",
-      "q": "A threat changes an opponent's behavior only when the threat is",
+      "q": "After an observed entry, an incumbent earns 2 by fighting and 5 by accommodating. A binding contract pays it a bonus only for fighting. Which bonus makes fighting strictly preferable?",
       "options": [
-        "costless to announce and repeated publicly before the game begins.",
-        "credible when the threatened decision point is reached.",
-        "made before the opponent learns the payoffs and available responses.",
-        "designed to reduce total industry profit regardless of the threatening firm's own payoff."
+        "A bonus exactly 3",
+        "Any bonus greater than 3",
+        "Any positive bonus",
+        "A bonus less than 3"
       ],
       "tag": "strategic_rule_design",
-      "type": "definition",
+      "type": "application",
       "objective": "LO15.4",
       "difficulty": "finalBoss",
       "conceptCluster": "finalBoss_strategyDesk_strategic_rule_design",
       "primarySkill": "strategic_rule_design",
       "secondarySkills": [],
       "repairSkill": "strategic_rule_design",
-      "commonError": "misapplies_strategic_rule_design_recognition",
-      "feedback": "A threat must be optimal or enforceable when execution becomes relevant; an empty announcement does not change the game.",
+      "commonError": "treats_indifference_as_strict_credibility",
+      "feedback": "Fighting gives 2+bonus. Strict preference over 5 requires bonus>3; at 3 the incumbent is indifferent.",
       "bossStage": "opening",
-      "aHash": "181db21f8f38e824d9eba9a7081b055f98b45de52e3748cbd1106564836bd3c9"
+      "aHash": "8a5a73c81d188cc298bbbf4b86a19dbc18589bc786eb8132bf77d975945fbbad"
     },
     {
       "id": 4010,
@@ -12338,14 +10875,14 @@ window.questionBanks = {
         "Not Match, Not Match, Match"
       ],
       "tag": "strategic_rule_design",
-      "type": "graph-integration",
+      "type": "graph/tree interpretation",
       "objective": "LO15.4",
       "difficulty": "finalBoss",
       "conceptCluster": "finalBoss_strategyDesk_strategic_rule_design",
       "primarySkill": "strategic_rule_design",
       "secondarySkills": [],
       "repairSkill": "strategic_rule_design",
-      "commonError": "misapplies_strategic_rule_design_application",
+      "commonError": "ignores_contingent_response_nodes",
       "feedback": "Firm B compares its own payoffs at each node: 6>3 after High, 5>4 after Medium, and 8>7 after Low.",
       "bossStage": "middle",
       "image": "gametreetwo.webp",
@@ -12355,7 +10892,7 @@ window.questionBanks = {
     {
       "id": 4011,
       "sourceGame": "strategyDesk",
-      "q": "In gametreetwo, suppose Firm A can sign an enforceable contract that requires Firm B to Match after High, and the contract costs Firm A 1 payoff unit. All other branches are unchanged. What should Firm A do?",
+      "q": "In gametreetwo, suppose Firm A can sign an enforceable contract that requires Firm B to Match after High, and the contract costs Firm A 1 payoff unit. All other branches are unchanged. What should Firm A do? Treat this binding device as available without further negotiation; its cost is paid on any branch if adopted.",
       "options": [
         "Choose Medium, because its payoff remains 6 and avoids the contracting cost entirely.",
         "Choose Low, because Not Match still follows Low and the contract does not alter that branch.",
@@ -12363,14 +10900,14 @@ window.questionBanks = {
         "Use the contract and choose High, receiving a net payoff of 7."
       ],
       "tag": "strategic_rule_design",
-      "type": "graph-integration",
+      "type": "graph/tree interpretation",
       "objective": "LO15.4",
       "difficulty": "finalBoss",
       "conceptCluster": "finalBoss_strategyDesk_strategic_rule_design",
       "primarySkill": "strategic_rule_design",
       "secondarySkills": [],
       "repairSkill": "strategic_rule_design",
-      "commonError": "misapplies_strategic_rule_design_synthesis",
+      "commonError": "ignores_contract_cost_or_follower_change",
       "feedback": "The contract changes B's action after High from Not Match to Match. Firm A receives 8−1=7, exceeding 6 from Medium and 2 from Low.",
       "bossStage": "final",
       "image": "gametreetwo.webp",
@@ -12380,25 +10917,27 @@ window.questionBanks = {
     {
       "id": 4012,
       "sourceGame": "strategyDesk",
-      "q": "Under the strategic view of bargaining, the negotiated outcome depends heavily on",
+      "q": "In gametreethree, all prior actions are observed and payoffs are ordered (Company, Union). If play reaches the Company’s final decision after Demand More, what action does backward induction prescribe?",
       "options": [
-        "the sequence of moves, commitments, and credible threats.",
-        "an automatic equal split of all available surplus regardless of timing or leverage.",
-        "historical accounting cost alone rather than either party's strategic alternatives.",
-        "the rule that neither side may walk away once bargaining negotiations have begun."
+        "Concede",
+        "Refuse",
+        "Either action gives the Company the same payoff",
+        "The Company has no move at that node"
       ],
       "tag": "bargaining",
-      "type": "definition",
+      "type": "graph/tree interpretation",
       "objective": "LO16.1",
       "difficulty": "finalBoss",
-      "conceptCluster": "LO16.1_final_boss",
+      "conceptCluster": "finalBoss_strategyDesk_strategic_bargaining",
       "primarySkill": "strategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "strategic_bargaining",
-      "commonError": "misapplies_strategic_bargaining_recognition",
-      "feedback": "Strategic bargaining focuses on how timing, commitments, threats, and responses shape the result.",
+      "commonError": "uses_union_payoff_at_company_node",
+      "feedback": "The Company compares its own payoffs 3 from Concede and 2 from Refuse, so Concede is sequentially rational.",
       "bossStage": "opening",
-      "aHash": "1d8f9c2b06f73ef0eb1a81e9e7f015034388d397c770af2b2cf778fc9c4c5042"
+      "aHash": "b31ef75d8a6019e573dea4e6534bd6fe44ef3e50c73a48f076e58f8a97730971",
+      "image": "gametreethree.webp",
+      "graphRequired": true
     },
     {
       "id": 4013,
@@ -12407,18 +10946,18 @@ window.questionBanks = {
       "options": [
         "Accept after Stand Firm; Demand More after Compromise",
         "Strike after Stand Firm; Accept after Compromise",
-        "Strike after both company actions",
+        "Strike after Stand Firm; Demand More after Compromise",
         "Accept after both company actions"
       ],
       "tag": "bargaining",
-      "type": "graph-integration",
+      "type": "graph/tree interpretation",
       "objective": "LO16.1",
       "difficulty": "finalBoss",
-      "conceptCluster": "LO16.1_final_boss",
+      "conceptCluster": "finalBoss_strategyDesk_strategic_bargaining",
       "primarySkill": "strategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "strategic_bargaining",
-      "commonError": "misapplies_strategic_bargaining_application",
+      "commonError": "stops_before_final_company_response",
       "feedback": "After Stand Firm, the union prefers Strike because 5>2. After Compromise, it anticipates Concede and compares 3 from demanding more with 4 from accepting, so it accepts.",
       "bossStage": "middle",
       "image": "gametreethree.webp",
@@ -12430,48 +10969,48 @@ window.questionBanks = {
       "sourceGame": "strategyDesk",
       "q": "In gametreethree, suppose the union can commit before the game to Demand More after Compromise. The company would then Concede. What opening action does the company choose, and why?",
       "options": [
-        "Compromise, because its payoff of 3 exceeds every payoff after Stand Firm.",
-        "Compromise, because commitment forces the union to accept.",
-        "Stand Firm, because it anticipates a payoff of 1 from Strike rather than 3 from Concede.",
-        "Stand Firm, because the union will accept and give the company 4."
+        "Compromise, anticipating Demand More and then Concede",
+        "Stand Firm, anticipating Strike",
+        "Stand Firm, anticipating Accept",
+        "Compromise, anticipating immediate Accept"
       ],
       "tag": "bargaining",
-      "type": "graph-integration",
+      "type": "graph/tree interpretation",
       "objective": "LO16.1",
       "difficulty": "finalBoss",
-      "conceptCluster": "LO16.1_final_boss",
+      "conceptCluster": "finalBoss_strategyDesk_strategic_bargaining",
       "primarySkill": "strategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "strategic_bargaining",
-      "commonError": "fails_to_compare_root_payoffs_after_commitment",
+      "commonError": "uses_off_path_accept_payoff_at_root",
       "feedback": "With the union committed to Demand More, the company anticipates Concede and gets 3. Stand Firm leads to Strike and payoff 1, so the company chooses Compromise.",
       "bossStage": "final",
       "image": "gametreethree.webp",
       "graphRequired": true,
-      "aHash": "95d4c13590b015ebe6c3e924834bd8196b6a1ffcd1cc233dc98052e3287d0e00"
+      "aHash": "efc8da134db5d867d9b68c4457aed8bb3be84017b3f9fd7cda956b887237cfa5"
     },
     {
       "id": 4015,
       "sourceGame": "strategyDesk",
-      "q": "Under the nonstrategic view of bargaining, the size of the bargaining surplus equals",
+      "q": "A proposed agreement gives the seller 24 and buyer 36. Their fallback payoffs are 30 and 20. They can make cash transfers without changing total value. Which diagnosis is correct?",
       "options": [
-        "the sum of both sides' disagreement values before any gains from agreement are created.",
-        "the larger side's accounting profit after subtracting only its own disagreement value.",
-        "the smaller side's opportunity cost regardless of the total value created by agreement.",
-        "the total value from agreement minus the parties' combined disagreement values."
+        "The buyer needs at least 6 transferred from the seller",
+        "The deal creates surplus 60, so both accept the proposed split",
+        "The deal creates no surplus because the seller initially loses",
+        "The deal creates surplus 10, but the seller needs a transfer of at least 6 to accept"
       ],
       "tag": "bargaining",
-      "type": "definition",
+      "type": "application",
       "objective": "LO16.2",
       "difficulty": "finalBoss",
-      "conceptCluster": "LO16.2_final_boss",
+      "conceptCluster": "finalBoss_strategyDesk_nonstrategic_bargaining",
       "primarySkill": "nonstrategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "nonstrategic_bargaining",
-      "commonError": "misapplies_nonstrategic_bargaining_recognition",
-      "feedback": "The bargaining surplus is what remains after both parties' outside options are protected.",
+      "commonError": "ignores_individual_participation_constraint",
+      "feedback": "Total surplus 60−30−20=10 is positive, but seller 24 is below fallback 30. A transfer 6 from buyer to seller yields 30/30 and satisfies both participation constraints under acceptance at indifference.",
       "bossStage": "opening",
-      "aHash": "10aadae96d1f36389c8b9676203bc07670bc1f3eed67ae6d98f92538d0f95440"
+      "aHash": "237456d76c4562a20ce359a02e1db2c30129d7c600b13cf998f35ff3d42bd2d8"
     },
     {
       "id": 4016,
@@ -12487,11 +11026,11 @@ window.questionBanks = {
       "type": "calculation",
       "objective": "LO16.2",
       "difficulty": "finalBoss",
-      "conceptCluster": "LO16.2_final_boss",
+      "conceptCluster": "finalBoss_strategyDesk_nonstrategic_bargaining",
       "primarySkill": "nonstrategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "nonstrategic_bargaining",
-      "commonError": "misapplies_nonstrategic_bargaining_application",
+      "commonError": "splits_total_value_instead_of_net_surplus",
       "feedback": "The surplus is $120−$30−$20=$70. Half is $35, added to the seller's $30 outside option, giving $65.",
       "bossStage": "middle",
       "aHash": "71b7b594d8a639374e8d9e9e34f198055b91b513d25c2b44203774fdfa5b5ab3"
@@ -12510,11 +11049,11 @@ window.questionBanks = {
       "type": "multi-step",
       "objective": "LO16.2",
       "difficulty": "finalBoss",
-      "conceptCluster": "LO16.2_final_boss",
+      "conceptCluster": "finalBoss_strategyDesk_nonstrategic_bargaining",
       "primarySkill": "nonstrategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "nonstrategic_bargaining",
-      "commonError": "misapplies_nonstrategic_bargaining_synthesis",
+      "commonError": "transfers_entire_outside_option_increase",
       "feedback": "Initially the surplus is 12, so payoffs are 10 and 8. After the union outside option rises, surplus falls to 9; equal shares produce 8.5 for the firm and 9.5 for the union. The union gains 1.5 and the firm loses 1.5.",
       "bossStage": "final",
       "aHash": "4c0a53170cfa54bc94c68a57179942cadc669f800eb8eaf68fb85934576d386b"
@@ -13896,7 +12435,7 @@ window.questionBanks = {
         "Compromise, Demand More, and then Refuse"
       ],
       "tag": "strategic_bargaining",
-      "type": "graph-integration",
+      "type": "graph/tree interpretation",
       "objective": "LO16.1",
       "difficulty": "legendaryBoss",
       "conceptCluster": "LO16.1_strategy_desk",
@@ -13991,14 +12530,14 @@ window.microSkillRepairPools = {
         "Use only the largest buyer's quantity"
       ],
       "tag": "demand",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO6.1",
       "difficulty": "repair",
       "conceptCluster": "LO6.1_repair",
       "primarySkill": "market_demand",
       "secondarySkills": [],
       "repairSkill": "market_demand",
-      "commonError": "misapplies_market_demand",
+      "commonError": "averages_instead_of_summing_quantities",
       "feedback": "Market demand is the horizontal sum of individual quantities demanded at the same price.",
       "aHash": "3637f1c87c9c52cb527c3bd22d234bc92ee346f69b6a00d849effa1bb7cc960f"
     },
@@ -14010,24 +12549,24 @@ window.microSkillRepairPools = {
         "5 units",
         "8 units",
         "3 units",
-        "$10 worth of units"
+        "2.67 units"
       ],
       "tag": "demand",
-      "type": "repair",
+      "type": "calculation",
       "objective": "LO6.1",
       "difficulty": "repair",
       "conceptCluster": "LO6.1_repair",
       "primarySkill": "market_demand",
       "secondarySkills": [],
       "repairSkill": "market_demand",
-      "commonError": "misapplies_market_demand",
+      "commonError": "omits_a_buyer_from_horizontal_sum",
       "feedback": "Add the buyers' quantities: 2 + 5 + 1 = 8 units.",
       "aHash": "505defb71cf4e0964cbe1a4c94bcb1c997fcabe9e827b31da7b9f3da211f2194"
     },
     {
       "id": 5002,
       "sourceGame": "strategyDesk",
-      "q": "Which mistake would understate market demand?",
+      "q": "Other buyers have positive demand at the stated price. Which mistake would understate market demand?",
       "options": [
         "Adding every buyer's quantity at the same price",
         "Using a common price for all buyers",
@@ -14035,14 +12574,14 @@ window.microSkillRepairPools = {
         "Recording zero demand for a buyer who purchases nothing"
       ],
       "tag": "demand",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO6.1",
       "difficulty": "repair",
       "conceptCluster": "LO6.1_repair",
       "primarySkill": "market_demand",
       "secondarySkills": [],
       "repairSkill": "market_demand",
-      "commonError": "misapplies_market_demand",
+      "commonError": "treats_individual_demand_as_market",
       "feedback": "One buyer's demand is not the market. The market includes every buyer at that price.",
       "aHash": "7a2d24ac56aa3f0b0fea67250d7b86af1411c13a802e0db2ada55135b656b2e2"
     }
@@ -14053,20 +12592,20 @@ window.microSkillRepairPools = {
       "sourceGame": "strategyDesk",
       "q": "What is the basic test for an optimal pricing decision?",
       "options": [
-        "Choose the price that maximizes unit sales",
-        "Recover every sunk cost through the next sale",
-        "Choose the price that generates the largest sales volume without comparing margins or costs",
+        "Maximize revenue without considering variable cost",
+        "Maximize unit sales",
+        "Recover sunk cost through the next sale",
         "Compare incremental revenue with incremental cost"
       ],
       "tag": "pricing",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO6.2",
       "difficulty": "repair",
       "conceptCluster": "LO6.2_repair",
       "primarySkill": "optimal_pricing",
       "secondarySkills": [],
       "repairSkill": "optimal_pricing",
-      "commonError": "misapplies_optimal_pricing",
+      "commonError": "maximizes_volume_instead_of_profit",
       "feedback": "Optimal pricing uses marginal analysis: compare the revenue and cost created by the decision.",
       "aHash": "619b3790ce607ae7855d999e28e9e69cd4641292097c8c868c4dec1973037cfc"
     },
@@ -14077,42 +12616,20 @@ window.microSkillRepairPools = {
       "options": [
         "Added contribution from new sales against margin lost on existing sales",
         "Only the number of added sales",
-        "Choose the price that generates the largest sales volume without comparing margins or costs",
-        "Fixed cost against total revenue"
+        "Total revenue before and after, ignoring variable cost",
+        "Allocated fixed cost per unit before and after"
       ],
       "tag": "pricing",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO6.2",
       "difficulty": "repair",
       "conceptCluster": "LO6.2_repair",
       "primarySkill": "optimal_pricing",
       "secondarySkills": [],
       "repairSkill": "optimal_pricing",
-      "commonError": "misapplies_optimal_pricing",
+      "commonError": "omits_margin_loss_on_existing_sales",
       "feedback": "A price cut is profitable only if added contribution exceeds the contribution surrendered on existing sales.",
       "aHash": "3fe6762150963781cd4278626fd5da60f26502a8d80f97efb183cfdb14f567ce"
-    },
-    {
-      "id": 5005,
-      "sourceGame": "strategyDesk",
-      "q": "Which statement is wrong?",
-      "options": [
-        "Demand response matters when price changes",
-        "The price with the most customers is always profit-maximizing",
-        "Marginal cost matters when evaluating added sales",
-        "Contribution, not revenue alone, should guide the choice"
-      ],
-      "tag": "pricing",
-      "type": "repair",
-      "objective": "LO6.2",
-      "difficulty": "repair",
-      "conceptCluster": "LO6.2_repair",
-      "primarySkill": "optimal_pricing",
-      "secondarySkills": [],
-      "repairSkill": "optimal_pricing",
-      "commonError": "misapplies_optimal_pricing",
-      "feedback": "Maximum volume is not necessarily maximum profit because margins and costs differ across prices.",
-      "aHash": "6487b902384b68528066306d00343f0465aa5881e133dfef0d1e17bc461f8086"
     }
   ],
   "price_elasticity": [
@@ -14121,20 +12638,20 @@ window.microSkillRepairPools = {
       "sourceGame": "strategyDesk",
       "q": "Price elasticity of demand compares",
       "options": [
-        "the dollar change in revenue with fixed cost",
-        "the percentage change in supply with income",
+        "the percentage price change divided by percentage quantity change",
+        "the dollar revenue change with allocated fixed cost",
         "the percentage change in quantity demanded with the percentage change in price",
-        "Use the dollar change in quantity alone and ignore the percentage change in price"
+        "the unit quantity change divided by the dollar price change"
       ],
       "tag": "elasticity",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO6.3",
       "difficulty": "repair",
       "conceptCluster": "LO6.3_repair",
       "primarySkill": "price_elasticity",
       "secondarySkills": [],
       "repairSkill": "price_elasticity",
-      "commonError": "misapplies_price_elasticity",
+      "commonError": "uses_levels_instead_of_percentage_changes",
       "feedback": "Elasticity uses percentage changes so responsiveness can be compared across products and units.",
       "aHash": "58bd878db3bf487da0b4fb91885954343a1da4f1d7b1f18fcd3630e9199228ce"
     },
@@ -14149,14 +12666,14 @@ window.microSkillRepairPools = {
         "2.0"
       ],
       "tag": "elasticity",
-      "type": "repair",
+      "type": "calculation",
       "objective": "LO6.3",
       "difficulty": "repair",
       "conceptCluster": "LO6.3_repair",
       "primarySkill": "price_elasticity",
       "secondarySkills": [],
       "repairSkill": "price_elasticity",
-      "commonError": "misapplies_price_elasticity",
+      "commonError": "reverses_elasticity_ratio",
       "feedback": "The absolute elasticity is 20% divided by 10%, or 2.0.",
       "aHash": "d84bdb34d4eeef4034d77e5403f850e35bc4a51b1143e3a83510e1aaad839748"
     },
@@ -14171,14 +12688,14 @@ window.microSkillRepairPools = {
         "price and quantity move in the same direction"
       ],
       "tag": "elasticity",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO6.3",
       "difficulty": "repair",
       "conceptCluster": "LO6.3_repair",
       "primarySkill": "price_elasticity",
       "secondarySkills": [],
       "repairSkill": "price_elasticity",
-      "commonError": "misapplies_price_elasticity",
+      "commonError": "misclassifies_elasticity_magnitude",
       "feedback": "Elastic demand has an absolute elasticity greater than one.",
       "aHash": "68c3288aebc11934f60398f06eac69c5caa738e76c92bde394ce1485ab81bd03"
     }
@@ -14195,14 +12712,14 @@ window.microSkillRepairPools = {
         "Advertising elasticity"
       ],
       "tag": "forecasting",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO6.4",
       "difficulty": "repair",
       "conceptCluster": "LO6.4_repair",
       "primarySkill": "forecasting_elasticities",
       "secondarySkills": [],
       "repairSkill": "forecasting_elasticities",
-      "commonError": "misapplies_forecasting_elasticities",
+      "commonError": "confuses_income_with_price_elasticity",
       "feedback": "Income elasticity links a percentage change in demand to a percentage change in income.",
       "aHash": "9a23591beb2575cda0808bba7a94d94639d649eb2440f082fc568eb9bb2893ad"
     },
@@ -14217,14 +12734,14 @@ window.microSkillRepairPools = {
         "inferior goods"
       ],
       "tag": "forecasting",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO6.4",
       "difficulty": "repair",
       "conceptCluster": "LO6.4_repair",
       "primarySkill": "forecasting_elasticities",
       "secondarySkills": [],
       "repairSkill": "forecasting_elasticities",
-      "commonError": "misapplies_forecasting_elasticities",
+      "commonError": "reverses_cross_price_sign",
       "feedback": "Positive cross-price elasticity is consistent with substitutes.",
       "aHash": "f4d9824f5c901a6faf07a621ac4051cb5cfc18afa51d8c106a687413c529f24b"
     },
@@ -14239,14 +12756,14 @@ window.microSkillRepairPools = {
         "advertising spending"
       ],
       "tag": "forecasting",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO6.4",
       "difficulty": "repair",
       "conceptCluster": "LO6.4_repair",
       "primarySkill": "forecasting_elasticities",
       "secondarySkills": [],
       "repairSkill": "forecasting_elasticities",
-      "commonError": "misapplies_forecasting_elasticities",
+      "commonError": "uses_wrong_demand_driver",
       "feedback": "Advertising elasticity connects demand response to promotional spending.",
       "aHash": "d349675ea85d596094c788b98cfda0a95983eb42d6a09fc765e8d3d92fd8e634"
     }
@@ -14258,19 +12775,19 @@ window.microSkillRepairPools = {
       "q": "What does stay-even analysis calculate after a price cut?",
       "options": [
         "The extra units needed to preserve contribution",
-        "The accounting profit earned last year",
-        "The number of competitors that must exit",
-        "Treat all revenue from added units as contribution and ignore the variable cost of producing them"
+        "The added units that preserve revenue ignoring variable cost",
+        "The number of current units that recover fixed cost",
+        "The price increase needed to eliminate all demand"
       ],
       "tag": "pricing",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO6.5",
       "difficulty": "repair",
       "conceptCluster": "LO6.5_repair",
       "primarySkill": "stay_even_volume",
       "secondarySkills": [],
       "repairSkill": "stay_even_volume",
-      "commonError": "misapplies_stay_even_volume",
+      "commonError": "preserves_revenue_instead_of_contribution",
       "feedback": "Stay-even analysis finds the added volume required to offset contribution lost on current sales.",
       "aHash": "cdb9cc29ac30ed2eb95212d23c2f483a125abfa187572de2080886ad3742512c"
     },
@@ -14285,38 +12802,16 @@ window.microSkillRepairPools = {
         "1,000"
       ],
       "tag": "pricing",
-      "type": "repair",
+      "type": "calculation",
       "objective": "LO6.5",
       "difficulty": "repair",
       "conceptCluster": "LO6.5_repair",
       "primarySkill": "stay_even_volume",
       "secondarySkills": [],
       "repairSkill": "stay_even_volume",
-      "commonError": "misapplies_stay_even_volume",
+      "commonError": "divides_lost_margin_by_revenue",
       "feedback": "The firm loses $2,000 on current sales. At $8 contribution per added unit, it needs 250 added units.",
       "aHash": "1e472b39b105d349bcd069c4a711b44a2fffb8e274714bb07ecfff69a9a7f67b"
-    },
-    {
-      "id": 5014,
-      "sourceGame": "strategyDesk",
-      "q": "Which comparison belongs in stay-even analysis?",
-      "options": [
-        "Fixed cost versus the competitor's price",
-        "Treat all revenue from added units as contribution and ignore the variable cost of producing them",
-        "Lost margin on current sales versus contribution on added sales",
-        "Advertising cost versus market demand"
-      ],
-      "tag": "pricing",
-      "type": "repair",
-      "objective": "LO6.5",
-      "difficulty": "repair",
-      "conceptCluster": "LO6.5_repair",
-      "primarySkill": "stay_even_volume",
-      "secondarySkills": [],
-      "repairSkill": "stay_even_volume",
-      "commonError": "misapplies_stay_even_volume",
-      "feedback": "The calculation compares surrendered contribution with contribution generated by added volume.",
-      "aHash": "5ccaed819dd192e09cff9450c79d1cf7894fc34dc89260e328e95cc3d5949d98"
     }
   ],
   "substitute_pricing": [
@@ -14325,20 +12820,20 @@ window.microSkillRepairPools = {
       "sourceGame": "strategyDesk",
       "q": "When a firm owns two substitute products, pricing one product should account for",
       "options": [
-        "Evaluate each owned substitute independently and count every shifted sale as entirely new business",
-        "the products as if owned by unrelated firms",
-        "only the fixed cost of the older product",
+        "only allocated corporate overhead",
+        "only total unit sales across both products",
+        "only the price-cut product’s revenue",
         "sales shifted away from the firm's other product"
       ],
       "tag": "portfolio_pricing",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO12.1",
       "difficulty": "repair",
       "conceptCluster": "LO12.1_repair",
       "primarySkill": "substitute_pricing",
       "secondarySkills": [],
       "repairSkill": "substitute_pricing",
-      "commonError": "misapplies_substitute_pricing",
+      "commonError": "ignores_owned_substitute_sales_loss",
       "feedback": "A price change can cannibalize the firm's other product, so portfolio profit matters.",
       "aHash": "6f0e1b8fb31e96e1ae199e9ec999d4eb5173f833641699e5a022c9286bff3a1b"
     },
@@ -14353,38 +12848,16 @@ window.microSkillRepairPools = {
         "a benefit from complementarity"
       ],
       "tag": "portfolio_pricing",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO12.1",
       "difficulty": "repair",
       "conceptCluster": "LO12.1_repair",
       "primarySkill": "substitute_pricing",
       "secondarySkills": [],
       "repairSkill": "substitute_pricing",
-      "commonError": "misapplies_substitute_pricing",
+      "commonError": "treats_cannibalization_as_sunk_cost",
       "feedback": "Shifted sales are not entirely new business; lost contribution on Brand B must be counted.",
       "aHash": "755670fed8190b2ad3f08e49129e5f45f81e46de8b7a68260c09aaadef1ab5cb"
-    },
-    {
-      "id": 5017,
-      "sourceGame": "strategyDesk",
-      "q": "What objective should guide pricing commonly owned substitutes?",
-      "options": [
-        "Maximum sales of each product separately",
-        "Maximum combined profit across the portfolio",
-        "Maximum price on the premium product",
-        "Evaluate each owned substitute independently and count every shifted sale as entirely new business"
-      ],
-      "tag": "portfolio_pricing",
-      "type": "repair",
-      "objective": "LO12.1",
-      "difficulty": "repair",
-      "conceptCluster": "LO12.1_repair",
-      "primarySkill": "substitute_pricing",
-      "secondarySkills": [],
-      "repairSkill": "substitute_pricing",
-      "commonError": "misapplies_substitute_pricing",
-      "feedback": "The firm should maximize total portfolio profit, not isolated product profit.",
-      "aHash": "23f259287db60229863a06af6b4a1e6d0ac89aaec6b0ccc52cc8fbdb15c58e5b"
     }
   ],
   "complement_pricing": [
@@ -14399,14 +12872,14 @@ window.microSkillRepairPools = {
         "only historical fixed cost"
       ],
       "tag": "portfolio_pricing",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO12.2",
       "difficulty": "repair",
       "conceptCluster": "LO12.2_repair",
       "primarySkill": "complement_pricing",
       "secondarySkills": [],
       "repairSkill": "complement_pricing",
-      "commonError": "misapplies_complement_pricing",
+      "commonError": "ignores_complement_spillover",
       "feedback": "One product's price affects demand and profit for its companion product.",
       "aHash": "50a3dd7d3088601aba59d5181b8a6d4ceb0e7ab9894a2b507ebe3a1d764ede9f"
     },
@@ -14421,38 +12894,16 @@ window.microSkillRepairPools = {
         "part of the pricing benefit"
       ],
       "tag": "portfolio_pricing",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO12.2",
       "difficulty": "repair",
       "conceptCluster": "LO12.2_repair",
       "primarySkill": "complement_pricing",
       "secondarySkills": [],
       "repairSkill": "complement_pricing",
-      "commonError": "misapplies_complement_pricing",
+      "commonError": "omits_companion_product_contribution",
       "feedback": "The printer decision should include the added cartridge profit.",
       "aHash": "6c9caba9af10036b82fabdb60dabcaf23936a439554ffff83ea161586f7744e4"
-    },
-    {
-      "id": 5020,
-      "sourceGame": "strategyDesk",
-      "q": "Which statement best describes complement pricing?",
-      "options": [
-        "Coordinate prices to maximize combined profit",
-        "Raise both prices whenever demand is strong",
-        "Maximize each product's standalone margin",
-        "Price each complement separately and ignore how one product's price changes demand for the other"
-      ],
-      "tag": "portfolio_pricing",
-      "type": "repair",
-      "objective": "LO12.2",
-      "difficulty": "repair",
-      "conceptCluster": "LO12.2_repair",
-      "primarySkill": "complement_pricing",
-      "secondarySkills": [],
-      "repairSkill": "complement_pricing",
-      "commonError": "misapplies_complement_pricing",
-      "feedback": "Complement pricing optimizes the system rather than each product separately.",
-      "aHash": "00943e06e83b8843b5d9d59902cb34f5b45ce96dca9e0c02d538b8a28925bfab"
     }
   ],
   "capacity_pricing": [
@@ -14461,20 +12912,20 @@ window.microSkillRepairPools = {
       "sourceGame": "strategyDesk",
       "q": "With unused capacity, a discounted sale is attractive when",
       "options": [
-        "the price covers all historical fixed cost",
+        "it covers all historical fixed cost",
         "incremental revenue exceeds incremental cost and no better sale is displaced",
-        "the discount is offered to every customer",
-        "Require every discounted sale to cover historical fixed cost even when capacity is idle"
+        "it increases units even below incremental cost",
+        "it displaces a sale with higher contribution"
       ],
       "tag": "capacity",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO12.3",
       "difficulty": "repair",
       "conceptCluster": "LO12.3_repair",
       "primarySkill": "capacity_pricing",
       "secondarySkills": [],
       "repairSkill": "capacity_pricing",
-      "commonError": "misapplies_capacity_pricing",
+      "commonError": "ignores_displacement_or_incremental_cost",
       "feedback": "Idle-capacity decisions use incremental revenue, incremental cost, and opportunity cost.",
       "aHash": "d2df1bf3b86d7338c158585950ba974135b4a06d015b3db9e576d65648c4fdf0"
     },
@@ -14483,20 +12934,20 @@ window.microSkillRepairPools = {
       "sourceGame": "strategyDesk",
       "q": "A hotel room is empty tonight. A booking adds $90 revenue and $25 cleaning cost. No full-price guest is displaced. The booking should generally be",
       "options": [
+        "rejected unless it covers full average total cost",
         "rejected because the building has fixed cost",
-        "rejected unless price exceeds average total cost",
         "accepted because incremental contribution is positive",
-        "Require every discounted sale to cover historical fixed cost even when capacity is idle"
+        "accepted because its total profit equals the entire $90 revenue"
       ],
       "tag": "capacity",
-      "type": "repair",
+      "type": "calculation",
       "objective": "LO12.3",
       "difficulty": "repair",
       "conceptCluster": "LO12.3_repair",
       "primarySkill": "capacity_pricing",
       "secondarySkills": [],
       "repairSkill": "capacity_pricing",
-      "commonError": "misapplies_capacity_pricing",
+      "commonError": "uses_allocated_fixed_cost_for_idle_capacity",
       "feedback": "The booking adds $65 toward profit because it uses otherwise idle capacity.",
       "aHash": "855b21b180c2e4d410327314c1e117a97561381695e4ce8ac2ddc28d99c6e96f"
     },
@@ -14505,20 +12956,20 @@ window.microSkillRepairPools = {
       "sourceGame": "strategyDesk",
       "q": "Why can a capacity-filling discount be dangerous during a sellout period?",
       "options": [
-        "It raises fixed cost",
-        "It makes demand disappear",
-        "It always violates price-discrimination law",
+        "It increases contribution per occupied room",
+        "It reduces the number of physical rooms available",
+        "It recovers allocated fixed cost too quickly",
         "It may displace a higher-paying customer"
       ],
       "tag": "capacity",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO12.3",
       "difficulty": "repair",
       "conceptCluster": "LO12.3_repair",
       "primarySkill": "capacity_pricing",
       "secondarySkills": [],
       "repairSkill": "capacity_pricing",
-      "commonError": "misapplies_capacity_pricing",
+      "commonError": "omits_capacity_opportunity_cost",
       "feedback": "When capacity is scarce, the opportunity cost of a discounted sale includes the lost high-price sale.",
       "aHash": "ac4b886c2e20b55a7d1f25b5c446eb9d396128013cf8b32fcb3d0167511f0a72"
     }
@@ -14530,19 +12981,19 @@ window.microSkillRepairPools = {
       "q": "Why should demand forecasts affect price?",
       "options": [
         "Expected scarcity and unused capacity change across periods",
-        "Fixed cost changes with every forecast",
-        "Demand is identical in every period",
-        "Use the same price in every period because forecasts cannot affect scarcity or capacity utilization"
+        "Fixed costs change mechanically with the forecast",
+        "Forecast demand is certain at every price",
+        "Capacity can always expand to meet demand"
       ],
       "tag": "forecasting",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO12.4",
       "difficulty": "repair",
       "conceptCluster": "LO12.4_repair",
       "primarySkill": "forecast_driven_pricing",
       "secondarySkills": [],
       "repairSkill": "forecast_driven_pricing",
-      "commonError": "misapplies_forecast_driven_pricing",
+      "commonError": "treats_forecasts_as_irrelevant_to_scarcity",
       "feedback": "Forecasts help the firm anticipate whether capacity will be scarce or idle.",
       "aHash": "4712e7490713da9a6a8f838054a6a8a8e3fdd2d10c01a47b4bae7b00442d2b2a"
     },
@@ -14557,21 +13008,21 @@ window.microSkillRepairPools = {
         "Set price equal to cleaning cost"
       ],
       "tag": "forecasting",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO12.4",
       "difficulty": "repair",
       "conceptCluster": "LO12.4_repair",
       "primarySkill": "forecast_driven_pricing",
       "secondarySkills": [],
       "repairSkill": "forecast_driven_pricing",
-      "commonError": "misapplies_forecast_driven_pricing",
+      "commonError": "discounts_when_demand_exceeds_capacity",
       "feedback": "When demand exceeds fixed capacity, a higher price can allocate scarce rooms and improve revenue.",
       "aHash": "bd89b7c4232f89b128b6419427738dd43c4e7834ba65c53f759fc5dcbe45b6f7"
     },
     {
       "id": 5026,
       "sourceGame": "strategyDesk",
-      "q": "A forecast of weak demand most directly supports",
+      "q": "A forecast of weak demand most directly supports Assume the offer covers incremental cost and does not displace a better sale.",
       "options": [
         "Use the same price in every period because forecasts cannot affect scarcity or capacity utilization",
         "a permanent price increase",
@@ -14579,14 +13030,14 @@ window.microSkillRepairPools = {
         "ignoring marginal cost"
       ],
       "tag": "forecasting",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO12.4",
       "difficulty": "repair",
       "conceptCluster": "LO12.4_repair",
       "primarySkill": "forecast_driven_pricing",
       "secondarySkills": [],
       "repairSkill": "forecast_driven_pricing",
-      "commonError": "misapplies_forecast_driven_pricing",
+      "commonError": "raises_price_without_considering_idle_capacity",
       "feedback": "Targeted discounts can attract incremental customers when capacity would otherwise go unused.",
       "aHash": "b2a66845795376c070daaac64cf1de371a16d423fd038431e5a9a2e876e82696"
     }
@@ -14597,20 +13048,20 @@ window.microSkillRepairPools = {
       "sourceGame": "strategyDesk",
       "q": "How should a promotion be evaluated?",
       "options": [
-        "Judge the promotion by gross sales growth without subtracting campaign cost or lost margin",
-        "By the number of advertisements purchased",
-        "By fixed cost already spent",
+        "By the campaign’s share of historical fixed cost",
+        "By gross sales without subtracting lost margin",
+        "By advertising impressions regardless of purchases",
         "By incremental contribution after promotional cost"
       ],
       "tag": "promotion",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO12.5",
       "difficulty": "repair",
       "conceptCluster": "LO12.5_repair",
       "primarySkill": "promotion_response",
       "secondarySkills": [],
       "repairSkill": "promotion_response",
-      "commonError": "misapplies_promotion_response",
+      "commonError": "equates_sales_growth_with_profit",
       "feedback": "A promotion creates value only if its added contribution exceeds its cost and margin losses.",
       "aHash": "4d21975295b6115c1dbd447052119554df0ded15ec7b77c31e416f3c45c1e3f7"
     },
@@ -14625,14 +13076,14 @@ window.microSkillRepairPools = {
         "$8,000"
       ],
       "tag": "promotion",
-      "type": "repair",
+      "type": "calculation",
       "objective": "LO12.5",
       "difficulty": "repair",
       "conceptCluster": "LO12.5_repair",
       "primarySkill": "promotion_response",
       "secondarySkills": [],
       "repairSkill": "promotion_response",
-      "commonError": "misapplies_promotion_response",
+      "commonError": "omits_campaign_cost",
       "feedback": "Added contribution is $5,000; subtracting $3,000 leaves $2,000.",
       "aHash": "4ccb899062c0080a49b32fba5350bd1bf6529bff1c9cb228b2c2bfbe50dc5cfc"
     },
@@ -14641,20 +13092,20 @@ window.microSkillRepairPools = {
       "sourceGame": "strategyDesk",
       "q": "Why can a promotion that raises sales still lose money?",
       "options": [
-        "Sales always increase fixed cost",
+        "Every extra sale earns the same margin as before the campaign",
         "Some sales may be shifted or discounted while campaign costs exceed added contribution",
-        "Promotions make demand perfectly inelastic",
-        "Judge the promotion by gross sales growth without subtracting campaign cost or lost margin"
+        "Shifted sales always expand lifetime customer demand",
+        "Campaign costs do not belong in incremental profit"
       ],
       "tag": "promotion",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO12.5",
       "difficulty": "repair",
       "conceptCluster": "LO12.5_repair",
       "primarySkill": "promotion_response",
       "secondarySkills": [],
       "repairSkill": "promotion_response",
-      "commonError": "misapplies_promotion_response",
+      "commonError": "counts_shifted_sales_as_incremental",
       "feedback": "More sales do not guarantee more profit when margins fall or customers merely shift timing.",
       "aHash": "5f445bc5f49dff75fb97cac9eb868ac094a605daf4386e4d2f406365c5f2a7e9"
     }
@@ -14665,20 +13116,20 @@ window.microSkillRepairPools = {
       "sourceGame": "strategyDesk",
       "q": "Psychological pricing works mainly through",
       "options": [
+        "verified assignment of customers to demographic groups",
         "changes in physical marginal cost",
-        "the elimination of demand",
         "reference points, framing, and perception",
-        "Use exaggerated reference prices or hidden fees because any framing that raises sales is acceptable"
+        "limits on cross-segment resale"
       ],
       "tag": "behavioral",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO12.6",
       "difficulty": "repair",
       "conceptCluster": "LO12.6_repair",
       "primarySkill": "behavioral_pricing",
       "secondarySkills": [],
       "repairSkill": "behavioral_pricing",
-      "commonError": "misapplies_behavioral_pricing",
+      "commonError": "confuses_perception_with_production_cost",
       "feedback": "Customers' perceptions can be influenced by how prices are presented.",
       "aHash": "8a4b63f130ae87c44f180009b11b8f224a5c9f98dc005f5918b42c89a4386bb8"
     },
@@ -14687,20 +13138,20 @@ window.microSkillRepairPools = {
       "sourceGame": "strategyDesk",
       "q": "A $9.99 price is perceived differently from $10.00 even though the difference is small. This is an example of",
       "options": [
-        "capacity pricing",
-        "Use exaggerated reference prices or hidden fees because any framing that raises sales is acceptable",
         "market demand aggregation",
+        "capacity pricing",
+        "cost-plus pricing",
         "left-digit or charm pricing"
       ],
       "tag": "behavioral",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO12.6",
       "difficulty": "repair",
       "conceptCluster": "LO12.6_repair",
       "primarySkill": "behavioral_pricing",
       "secondarySkills": [],
       "repairSkill": "behavioral_pricing",
-      "commonError": "misapplies_behavioral_pricing",
+      "commonError": "misses_left_digit_effect",
       "feedback": "Charm pricing uses a price ending to influence perception.",
       "aHash": "9cba39dd69ed2f0c621befed326db5efef883ac0aa854b4227ae9d3a97b9be1c"
     },
@@ -14715,14 +13166,14 @@ window.microSkillRepairPools = {
         "Showing the total price before purchase"
       ],
       "tag": "behavioral",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO12.6",
       "difficulty": "repair",
       "conceptCluster": "LO12.6_repair",
       "primarySkill": "behavioral_pricing",
       "secondarySkills": [],
       "repairSkill": "behavioral_pricing",
-      "commonError": "misapplies_behavioral_pricing",
+      "commonError": "treats_fictitious_anchor_as_truthful",
       "feedback": "A fictitious reference price can mislead buyers about the size of the discount.",
       "aHash": "8f33ed81a2825b72178b04b04881b9cd4a6fcdf7c18c415980d4c74ac2e0d339"
     }
@@ -14733,20 +13184,20 @@ window.microSkillRepairPools = {
       "sourceGame": "strategyDesk",
       "q": "Why do firms use price discrimination?",
       "options": [
-        "To make production costs identical",
+        "To make every customer’s demand identical",
         "To charge different customers closer to their willingness to pay",
-        "Charge different prices whenever possible even if customer values are identical and resale is unrestricted",
-        "To guarantee equal consumer surplus"
+        "To maximize units regardless of contribution",
+        "To guarantee equal surplus across customer groups"
       ],
       "tag": "segmentation",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO13.1",
       "difficulty": "repair",
       "conceptCluster": "LO13.1_repair",
       "primarySkill": "price_discrimination",
       "secondarySkills": [],
       "repairSkill": "price_discrimination",
-      "commonError": "misapplies_price_discrimination",
+      "commonError": "ignores_surplus_extraction_motive",
       "feedback": "Different prices can capture more surplus when customer values differ and resale is controlled.",
       "aHash": "d901c2ca9fbcae4a22187410f5903bbe841c032cba4f9565cdb89bbcebd130db"
     },
@@ -14761,14 +13212,14 @@ window.microSkillRepairPools = {
         "all customers are identical"
       ],
       "tag": "segmentation",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO13.1",
       "difficulty": "repair",
       "conceptCluster": "LO13.1_repair",
       "primarySkill": "price_discrimination",
       "secondarySkills": [],
       "repairSkill": "price_discrimination",
-      "commonError": "misapplies_price_discrimination",
+      "commonError": "ignores_arbitrage_feasibility",
       "feedback": "If low-price customers can resell freely, the segmentation collapses.",
       "aHash": "9535f2df133586fad86f8704422be075f992d7286309b24800ac61387883ce3e"
     },
@@ -14783,14 +13234,14 @@ window.microSkillRepairPools = {
         "Two physically different products have different costs and prices"
       ],
       "tag": "segmentation",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO13.1",
       "difficulty": "repair",
       "conceptCluster": "LO13.1_repair",
       "primarySkill": "price_discrimination",
       "secondarySkills": [],
       "repairSkill": "price_discrimination",
-      "commonError": "misapplies_price_discrimination",
+      "commonError": "treats_cost_differences_as_discrimination",
       "feedback": "Cost differences can explain different prices without price discrimination.",
       "aHash": "5881f637cd235fb051300233928d012b2b186a0f378f684d89579c8ff560950b"
     }
@@ -14807,7 +13258,7 @@ window.microSkillRepairPools = {
         "The customer chooses freely between versions with different restrictions"
       ],
       "tag": "segmentation",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO13.2",
       "difficulty": "repair",
       "conceptCluster": "LO13.2_repair",
@@ -14829,38 +13280,16 @@ window.microSkillRepairPools = {
         "capacity pricing"
       ],
       "tag": "segmentation",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO13.2",
       "difficulty": "repair",
       "conceptCluster": "LO13.2_repair",
       "primarySkill": "direct_price_discrimination",
       "secondarySkills": [],
       "repairSkill": "direct_price_discrimination",
-      "commonError": "misapplies_direct_price_discrimination",
+      "commonError": "confuses_verification_with_self_selection",
       "feedback": "The seller verifies the buyer's group and then assigns the price.",
       "aHash": "f9e7b95d9cc2fcfdcf62d35715cf5c74f0663916af1b06d2bdd6c12fce04e7bb"
-    },
-    {
-      "id": 5038,
-      "sourceGame": "strategyDesk",
-      "q": "Which requirement best supports direct price discrimination?",
-      "options": [
-        "Let every customer claim an anonymous discount without verifying any segment characteristic",
-        "Identical prices for every group",
-        "Reliable eligibility verification",
-        "No customer information"
-      ],
-      "tag": "segmentation",
-      "type": "repair",
-      "objective": "LO13.2",
-      "difficulty": "repair",
-      "conceptCluster": "LO13.2_repair",
-      "primarySkill": "direct_price_discrimination",
-      "secondarySkills": [],
-      "repairSkill": "direct_price_discrimination",
-      "commonError": "misapplies_direct_price_discrimination",
-      "feedback": "The seller needs a credible way to identify the segment receiving the price.",
-      "aHash": "1fe516970c05eae60fb8d37b86f776bd833ae541759bc3f73139b86c4bba04d2"
     }
   ],
   "arbitrage_control": [
@@ -14869,20 +13298,20 @@ window.microSkillRepairPools = {
       "sourceGame": "strategyDesk",
       "q": "Why must a firm control arbitrage in direct price discrimination?",
       "options": [
-        "Allow low-price buyers to transfer the product freely to customers assigned the high price",
-        "Marginal cost would become fixed",
-        "The market demand curve would disappear",
+        "Resale guarantees more high-price sales",
+        "Resale automatically reduces production cost",
+        "The price gap makes buyer verification unnecessary",
         "Low-price buyers could resell to high-price buyers"
       ],
       "tag": "segmentation",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO13.3",
       "difficulty": "repair",
       "conceptCluster": "LO13.3_repair",
       "primarySkill": "arbitrage_control",
       "secondarySkills": [],
       "repairSkill": "arbitrage_control",
-      "commonError": "misapplies_arbitrage_control",
+      "commonError": "ignores_low_to_high_segment_resale",
       "feedback": "Resale lets high-value customers obtain the low segment price.",
       "aHash": "2535ab475fb4c354f7f988e713c77ea73a5280f45646f6de59529afe548258c8"
     },
@@ -14892,19 +13321,19 @@ window.microSkillRepairPools = {
       "q": "A discounted ticket is tied to a verified name and cannot be transferred. This rule mainly",
       "options": [
         "limits arbitrage",
-        "raises fixed cost",
-        "creates a bundle",
-        "makes demand perfectly elastic"
+        "measures demand elasticity directly",
+        "makes customer groups equally willing to pay",
+        "offers each buyer a product bundle"
       ],
       "tag": "segmentation",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO13.3",
       "difficulty": "repair",
       "conceptCluster": "LO13.3_repair",
       "primarySkill": "arbitrage_control",
       "secondarySkills": [],
       "repairSkill": "arbitrage_control",
-      "commonError": "misapplies_arbitrage_control",
+      "commonError": "misses_nontransferability",
       "feedback": "Nontransferability keeps the discounted ticket inside the intended segment.",
       "aHash": "df0db4dd7efdb69d75b6ffc07f99c84a1c10d3c971191756cdd122f54a51353f"
     },
@@ -14919,14 +13348,14 @@ window.microSkillRepairPools = {
         "Linking access to the eligible buyer"
       ],
       "tag": "segmentation",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO13.3",
       "difficulty": "repair",
       "conceptCluster": "LO13.3_repair",
       "primarySkill": "arbitrage_control",
       "secondarySkills": [],
       "repairSkill": "arbitrage_control",
-      "commonError": "misapplies_arbitrage_control",
+      "commonError": "permits_anonymous_transfer",
       "feedback": "Anonymous transfer makes resale easy and destroys segmentation.",
       "aHash": "3b1ecb31cd1fd6b6bc14013320aa798bd7663aa523cef703e63f6b6099ada3b6"
     }
@@ -14935,22 +13364,22 @@ window.microSkillRepairPools = {
     {
       "id": 5042,
       "sourceGame": "strategyDesk",
-      "q": "The Robinson-Patman Act is mainly concerned with certain price differences that",
+      "q": "For commodities of like grade and quality, Robinson–Patman concerns include certain price differences that",
       "options": [
-        "occur between any two different products",
-        "Treat every price difference between any two products or buyers as automatically unlawful",
+        "are fully explained by documented selling-cost differences",
+        "simply reflect different order sizes, even with matching cost savings",
         "may injure competition among competing purchasers",
-        "result from all quantity discounts"
+        "involve products of clearly different grade and quality"
       ],
       "tag": "regulation",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO13.4",
       "difficulty": "repair",
       "conceptCluster": "LO13.4_repair",
       "primarySkill": "robinson_patman",
       "secondarySkills": [],
       "repairSkill": "robinson_patman",
-      "commonError": "misapplies_robinson_patman",
+      "commonError": "assumes_price_difference_alone_proves_violation",
       "feedback": "The concern is discriminatory pricing of commodities that may harm competition among buyers.",
       "aHash": "7de6263d9b5e4ddcb1cb76304b9bcf6d9637b08e841791f6b78caa79d88854e7"
     },
@@ -14959,20 +13388,20 @@ window.microSkillRepairPools = {
       "sourceGame": "strategyDesk",
       "q": "Two retailers receive different prices but do not compete in the same market. Which concern is weaker?",
       "options": [
-        "Whether the seller advertises",
-        "Whether the product has a brand",
-        "Whether either retailer has fixed cost",
+        "Whether the products are goods rather than services",
+        "Whether the transaction prices differ at all",
+        "Whether the supplier has variable cost",
         "Competitive injury between the retailers"
       ],
       "tag": "regulation",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO13.4",
       "difficulty": "repair",
       "conceptCluster": "LO13.4_repair",
       "primarySkill": "robinson_patman",
       "secondarySkills": [],
       "repairSkill": "robinson_patman",
-      "commonError": "misapplies_robinson_patman",
+      "commonError": "ignores_competing_purchaser_requirement",
       "feedback": "When the buyers do not compete, injury to competition between them is less direct.",
       "aHash": "c975890321a750840e7e6ec8d09efcecbcdc1ee0480c437d0d47e960920feec6"
     },
@@ -14982,19 +13411,19 @@ window.microSkillRepairPools = {
       "q": "A lower price justified by genuine cost savings is",
       "options": [
         "potentially distinguishable from harmful discrimination",
-        "Treat every price difference between any two products or buyers as automatically unlawful",
-        "always a criminal violation",
-        "irrelevant under any pricing law"
+        "automatically unlawful whenever buyers compete",
+        "justified solely by the buyer’s size",
+        "irrelevant unless all final consumers pay equal prices"
       ],
       "tag": "regulation",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO13.4",
       "difficulty": "repair",
       "conceptCluster": "LO13.4_repair",
       "primarySkill": "robinson_patman",
       "secondarySkills": [],
       "repairSkill": "robinson_patman",
-      "commonError": "misapplies_robinson_patman",
+      "commonError": "ignores_cost_justification",
       "feedback": "Cost justification can matter when evaluating a price difference.",
       "aHash": "57ea814d13c6c4b8ffa085c98ee96437f89bbf9d14b562387003180988f9528e"
     }
@@ -15003,22 +13432,22 @@ window.microSkillRepairPools = {
     {
       "id": 5045,
       "sourceGame": "strategyDesk",
-      "q": "What evidence supports classifying a real-world practice as price discrimination?",
+      "q": "What evidence supports classifying a real-world practice as price discrimination? Hold the cost of serving the compared buyers equal.",
       "options": [
-        "Different prices caused only by different production costs",
+        "Prices differing solely because costs differ",
         "Different prices for comparable offerings tied to customer segments",
-        "Label every price difference as discrimination without checking cost, segment, or resale conditions",
-        "A price change caused by inflation"
+        "A general price increase caused by inflation",
+        "A uniform price charged to every segment"
       ],
       "tag": "segmentation",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO13.5",
       "difficulty": "repair",
       "conceptCluster": "LO13.5_repair",
       "primarySkill": "price_discrimination_cases",
       "secondarySkills": [],
       "repairSkill": "price_discrimination_cases",
-      "commonError": "misapplies_price_discrimination_cases",
+      "commonError": "ignores_segment_and_cost_evidence",
       "feedback": "The analyst should identify the segment, the price difference, and whether cost differences explain it.",
       "aHash": "70e6609c23ea0f2d6cff32c58bdd5ac765f7fe7440df85e4b9dcf0572d648e34"
     },
@@ -15027,20 +13456,20 @@ window.microSkillRepairPools = {
       "sourceGame": "strategyDesk",
       "q": "A hardcover is released before a cheaper paperback. The timing can sort",
       "options": [
+        "readers with identical values and identical patience",
         "suppliers by marginal cost",
-        "Label every price difference as discrimination without checking cost, segment, or resale conditions",
         "impatient high-value readers from more price-sensitive readers",
-        "buyers by income only"
+        "customers solely by verified income"
       ],
       "tag": "segmentation",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO13.5",
       "difficulty": "repair",
       "conceptCluster": "LO13.5_repair",
       "primarySkill": "price_discrimination_cases",
       "secondarySkills": [],
       "repairSkill": "price_discrimination_cases",
-      "commonError": "misapplies_price_discrimination_cases",
+      "commonError": "misses_timing_based_screening",
       "feedback": "Release timing can segment customers by willingness to wait and pay.",
       "aHash": "be044e0dd9583b1d3cb33add14f8d914e9974c98a7ffb85ecfb9ddc3999da481"
     },
@@ -15049,20 +13478,20 @@ window.microSkillRepairPools = {
       "sourceGame": "strategyDesk",
       "q": "A student discount is easy to resell to nonstudents. What should the analyst question?",
       "options": [
-        "Whether the service has fixed cost",
-        "Whether students value the product",
-        "Label every price difference as discrimination without checking cost, segment, or resale conditions",
+        "Whether the product has a public list price",
+        "Whether the seller has already paid fixed cost",
+        "Whether the high price exceeds allocated average cost",
         "Whether the segmentation can survive arbitrage"
       ],
       "tag": "segmentation",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO13.5",
       "difficulty": "repair",
       "conceptCluster": "LO13.5_repair",
       "primarySkill": "price_discrimination_cases",
       "secondarySkills": [],
       "repairSkill": "price_discrimination_cases",
-      "commonError": "misapplies_price_discrimination_cases",
+      "commonError": "ignores_arbitrage_in_case_analysis",
       "feedback": "A real-world discrimination scheme needs credible segment identification and resale control.",
       "aHash": "a228b7ccf20725465c2593c9302d87741146380091d0daa1d826d01fe4a8dadd"
     }
@@ -15079,36 +13508,36 @@ window.microSkillRepairPools = {
         "reselling freely across segments"
       ],
       "tag": "self_selection",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO14.1",
       "difficulty": "repair",
       "conceptCluster": "LO14.1_repair",
       "primarySkill": "indirect_price_discrimination",
       "secondarySkills": [],
       "repairSkill": "indirect_price_discrimination",
-      "commonError": "misapplies_indirect_price_discrimination",
+      "commonError": "confuses_self_selection_with_verified_identity",
       "feedback": "The menu is designed so customers reveal their willingness to pay through their choices.",
       "aHash": "f2e5f974139a85dd053d33efc6ad5e179d811747026d5d889a74290925e86b61"
     },
     {
       "id": 5049,
       "sourceGame": "strategyDesk",
-      "q": "A basic and premium plan are offered to everyone, and customers choose between them. This is",
+      "q": "A seller designs Basic and Premium price-feature options to screen willingness to pay. Both are offered to everyone. What method is used?",
       "options": [
         "direct price discrimination",
         "indirect price discrimination",
-        "Offer a cheaper option that is better on every dimension so every customer type chooses it",
-        "market-demand aggregation"
+        "pure bundling",
+        "market demand aggregation"
       ],
       "tag": "self_selection",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO14.1",
       "difficulty": "repair",
       "conceptCluster": "LO14.1_repair",
       "primarySkill": "indirect_price_discrimination",
       "secondarySkills": [],
       "repairSkill": "indirect_price_discrimination",
-      "commonError": "misapplies_indirect_price_discrimination",
+      "commonError": "confuses_versions_with_direct_assignment",
       "feedback": "The seller does not need to verify the group; the customer self-selects.",
       "aHash": "432e07b02f110178647f5b19e84fc95c7dfb258de441c55c79ac38df7b4b41a3"
     },
@@ -15123,14 +13552,14 @@ window.microSkillRepairPools = {
         "Resale is unlimited"
       ],
       "tag": "self_selection",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO14.1",
       "difficulty": "repair",
       "conceptCluster": "LO14.1_repair",
       "primarySkill": "indirect_price_discrimination",
       "secondarySkills": [],
       "repairSkill": "indirect_price_discrimination",
-      "commonError": "misapplies_indirect_price_discrimination",
+      "commonError": "ignores_incentive_compatibility",
       "feedback": "The menu must give each segment an incentive to choose its intended option.",
       "aHash": "2f4c36f77f5ac9d51c46ea77fd44c6bce5562146d4d8949bc03125c3e837fef3"
     }
@@ -15141,20 +13570,20 @@ window.microSkillRepairPools = {
       "sourceGame": "strategyDesk",
       "q": "Why might a firm deliberately limit a low-priced version?",
       "options": [
-        "To make the low version cost more to produce",
-        "To eliminate every low-value customer",
-        "Make the low-price version identical to premium and let heavy users avoid usage charges",
+        "To eliminate every product difference",
+        "To reduce all buyers’ willingness to pay equally",
+        "To make the low tier more attractive to high-value users",
         "To prevent high-value customers from abandoning the premium version"
       ],
       "tag": "self_selection",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO14.2",
       "difficulty": "repair",
       "conceptCluster": "LO14.2_repair",
       "primarySkill": "versioning_and_metering",
       "secondarySkills": [],
       "repairSkill": "versioning_and_metering",
-      "commonError": "misapplies_versioning_and_metering",
+      "commonError": "ignores_premium_cannibalization",
       "feedback": "A limitation can preserve self-selection by making the premium version more attractive to high-value users.",
       "aHash": "35d20b5067d11c7e78b8f218d9d242f5db2a298416083642814adde840aed61e"
     },
@@ -15169,14 +13598,14 @@ window.microSkillRepairPools = {
         "market aggregation"
       ],
       "tag": "self_selection",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO14.2",
       "difficulty": "repair",
       "conceptCluster": "LO14.2_repair",
       "primarySkill": "versioning_and_metering",
       "secondarySkills": [],
       "repairSkill": "versioning_and_metering",
-      "commonError": "misapplies_versioning_and_metering",
+      "commonError": "confuses_usage_metering_with_bundling",
       "feedback": "Metering links payment to usage.",
       "aHash": "d91ba250018ceb8a7a1566622684d926531104e44c4e20ec9cb7f42c56634fc6"
     },
@@ -15185,20 +13614,20 @@ window.microSkillRepairPools = {
       "sourceGame": "strategyDesk",
       "q": "A basic software plan caps monthly usage while premium is unlimited. The cap mainly helps",
       "options": [
-        "Make the low-price version identical to premium and let heavy users avoid usage charges",
+        "make the versions identical for all usage levels",
         "sort light users from heavy users",
-        "make the plans identical",
-        "eliminate marginal cost"
+        "remove the relationship between use and value",
+        "let heavy users pay less than every light user"
       ],
       "tag": "self_selection",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO14.2",
       "difficulty": "repair",
       "conceptCluster": "LO14.2_repair",
       "primarySkill": "versioning_and_metering",
       "secondarySkills": [],
       "repairSkill": "versioning_and_metering",
-      "commonError": "misapplies_versioning_and_metering",
+      "commonError": "ignores_usage_based_sorting",
       "feedback": "Usage limits encourage heavy users to choose the premium plan.",
       "aHash": "ca2cf52e6ed83ec8f0dd510b64d9f8c13a65afab360bd7b07e52b766bd7f1f24"
     }
@@ -15209,66 +13638,66 @@ window.microSkillRepairPools = {
       "sourceGame": "strategyDesk",
       "q": "How can self-selection help capture consumer surplus?",
       "options": [
-        "Every customer pays the lowest price",
-        "The seller ignores differences in willingness to pay",
+        "All versions providing identical benefits at different prices",
+        "Every buyer choosing the lowest price regardless of value",
         "High-value customers choose higher-value, higher-price options",
-        "Offer the same value at different prices and assume high-value customers will voluntarily pay more"
+        "The seller ignoring customers’ preferred features"
       ],
       "tag": "self_selection",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO14.3",
       "difficulty": "repair",
       "conceptCluster": "LO14.3_repair",
       "primarySkill": "consumer_surplus_extraction",
       "secondarySkills": [],
       "repairSkill": "consumer_surplus_extraction",
-      "commonError": "misapplies_consumer_surplus_extraction",
+      "commonError": "assumes_identical_options_support_screening",
       "feedback": "A well-designed menu lets the firm collect more from customers who value premium features.",
       "aHash": "b1099d5771c1e622864c25a1458825fa24840006be61b50ee9183906b001848f"
     },
     {
       "id": 5055,
       "sourceGame": "strategyDesk",
-      "q": "A premium package attracts customers who value speed enough to pay more. The menu has",
+      "q": "A customer values Basic at 40 and Premium at 70; prices are 30 and 65. Which option gives the customer more surplus?",
       "options": [
-        "Offer the same value at different prices and assume high-value customers will voluntarily pay more",
-        "made every customer identical",
-        "created a legal price ceiling",
-        "sorted customers by willingness to pay"
+        "Both give surplus 5",
+        "Premium, with surplus 70 versus 40",
+        "Premium, with surplus 65 versus 30",
+        "Basic, with surplus 10 versus 5"
       ],
       "tag": "self_selection",
-      "type": "repair",
+      "type": "calculation",
       "objective": "LO14.3",
       "difficulty": "repair",
       "conceptCluster": "LO14.3_repair",
       "primarySkill": "consumer_surplus_extraction",
       "secondarySkills": [],
       "repairSkill": "consumer_surplus_extraction",
-      "commonError": "misapplies_consumer_surplus_extraction",
-      "feedback": "The premium feature induces high-value customers to reveal themselves.",
-      "aHash": "a04fffe7d9b1edc3805a16194b809beee971037b5c76827a5ed15f217591899a"
+      "commonError": "compares_gross_values_instead_of_surplus",
+      "feedback": "Subtract each option’s price from its value. Basic gives 10 and Premium 5; compare surplus, not gross value.",
+      "aHash": "9dd6c633cffe261a528e327fafaaf8f96bcf2df752922823cc307231318e5a42"
     },
     {
       "id": 5056,
       "sourceGame": "strategyDesk",
-      "q": "Which menu best supports self-selection?",
+      "q": "At a usage price equal to marginal cost, a customer receives 50 of consumer surplus before a membership fee. The customer joins when indifferent. What is the highest fee compatible with participation?",
       "options": [
-        "A basic option and a higher-value premium option with a higher price",
-        "Two identical packages at different prices",
-        "A premium package that is cheaper and better",
-        "Offer the same value at different prices and assume high-value customers will voluntarily pay more"
+        "50",
+        "0",
+        "100",
+        "The marginal usage price"
       ],
       "tag": "self_selection",
-      "type": "repair",
+      "type": "calculation",
       "objective": "LO14.3",
       "difficulty": "repair",
       "conceptCluster": "LO14.3_repair",
       "primarySkill": "consumer_surplus_extraction",
       "secondarySkills": [],
       "repairSkill": "consumer_surplus_extraction",
-      "commonError": "misapplies_consumer_surplus_extraction",
-      "feedback": "Different price-value combinations allow customers to sort themselves.",
-      "aHash": "57559485ce351798e95f9d04cebbbe319c00888cfdbc2bc1b0de772099308ed2"
+      "commonError": "ignores_membership_participation_constraint",
+      "feedback": "The fee cannot exceed the 50 surplus the customer obtains from joining. At 50 the customer is indifferent and joins under the stated rule.",
+      "aHash": "1a6562590ef19d1045d06c4055742d38288e9e6dcd71ccde5cee80f1d5a774eb"
     }
   ],
   "bundling": [
@@ -15277,44 +13706,44 @@ window.microSkillRepairPools = {
       "sourceGame": "strategyDesk",
       "q": "When can bundling raise profit?",
       "options": [
-        "Every customer values each product identically",
+        "Every customer valuing both goods identically",
         "Customers' valuations for the products differ in offsetting ways",
-        "The products must have zero cost",
-        "Bundle products without comparing customer valuations or profits from separate and mixed sales"
+        "A guarantee that marginal cost is zero",
+        "A guarantee that pure bundling beats every menu"
       ],
       "tag": "bundling",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO14.4",
       "difficulty": "repair",
       "conceptCluster": "LO14.4_repair",
       "primarySkill": "bundling",
       "secondarySkills": [],
       "repairSkill": "bundling",
-      "commonError": "misapplies_bundling",
+      "commonError": "ignores_offsetting_valuations",
       "feedback": "Offsetting valuations can make total willingness to pay for the bundle more predictable.",
       "aHash": "4da53f7e1fabf7b9a2375c6716a9c1749ac85a717ae85b510619fcc7e4faf46a"
     },
     {
       "id": 5058,
       "sourceGame": "strategyDesk",
-      "q": "Customer 1 values A highly and B weakly; Customer 2 values B highly and A weakly. Which pricing tool may help?",
+      "q": "One customer values two independent additively valued services at 45 and 25. What is the customer’s total bundle value?",
       "options": [
-        "Direct verification",
-        "Capacity rationing",
-        "Bundling",
-        "Market-demand averaging"
+        "25",
+        "45",
+        "70",
+        "20"
       ],
       "tag": "bundling",
-      "type": "repair",
+      "type": "calculation",
       "objective": "LO14.4",
       "difficulty": "repair",
       "conceptCluster": "LO14.4_repair",
       "primarySkill": "bundling",
       "secondarySkills": [],
       "repairSkill": "bundling",
-      "commonError": "misapplies_bundling",
-      "feedback": "Bundling can smooth the variation in separate valuations.",
-      "aHash": "3797d3d963dd86acf52b85ddcae59c3a5969e400dd3dc6307ccabbbbade0a8f4"
+      "commonError": "omits_component_bundle_value",
+      "feedback": "Add the component values 45+25=70; neither the larger value alone nor the difference is the total.",
+      "aHash": "ff5a1ae012afa5d4c889c50ad427aaf545d31a4fac04ffc1c4d03d403ba4250a"
     },
     {
       "id": 5059,
@@ -15327,15 +13756,15 @@ window.microSkillRepairPools = {
         "Compare bundle profit with profit from separate sales"
       ],
       "tag": "bundling",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO14.4",
       "difficulty": "repair",
       "conceptCluster": "LO14.4_repair",
       "primarySkill": "bundling",
       "secondarySkills": [],
       "repairSkill": "bundling",
-      "commonError": "misapplies_bundling",
-      "feedback": "Bundling is worthwhile only if it beats the best separate-sale or mixed strategy.",
+      "commonError": "compares_revenue_instead_of_net_profit",
+      "feedback": "Compare net profit across feasible pure-bundle, separate-sale, and mixed menus. A high bundle revenue alone does not establish that it is the best available policy.",
       "aHash": "731b2695e546e75d4f74252fb5db4c535296e164fbf7d61fec6074afa8a4d81a"
     }
   ],
@@ -15346,133 +13775,67 @@ window.microSkillRepairPools = {
       "q": "What makes a decision strategic?",
       "options": [
         "A player's payoff depends on another player's choice",
-        "The firm has fixed cost",
-        "Analyze the move as if rivals' actions cannot change the payoff from the decision",
-        "The decision occurs only once"
+        "The firm has fixed costs",
+        "The choice happens once",
+        "Revenue depends only on a random event with no other decision maker"
       ],
       "tag": "game_theory",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO15.1",
       "difficulty": "repair",
       "conceptCluster": "LO15.1_repair",
       "primarySkill": "strategic_interdependence",
       "secondarySkills": [],
       "repairSkill": "strategic_interdependence",
-      "commonError": "misapplies_strategic_interdependence",
+      "commonError": "ignores_rival_payoff_dependence",
       "feedback": "Strategic interdependence exists when one player's best action depends on others' actions.",
       "aHash": "bdb7b05271274bb55c38f576d1c5c60c1a293fcf818a44bfa742255ab70d658a"
     },
     {
       "id": 5061,
       "sourceGame": "strategyDesk",
-      "q": "A price cut is profitable only if a rival does not match it. This is",
+      "q": "A cell’s payoffs are ordered (Row, Column) and equal (3,8). The column player compares its available actions. Which payoff in this cell belongs to that player?",
       "options": [
-        "a nonstrategic cost calculation",
-        "strategic interdependence",
-        "market-demand aggregation",
-        "pure bundling"
+        "3",
+        "8",
+        "11",
+        "5"
       ],
       "tag": "game_theory",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO15.1",
       "difficulty": "repair",
       "conceptCluster": "LO15.1_repair",
       "primarySkill": "strategic_interdependence",
       "secondarySkills": [],
       "repairSkill": "strategic_interdependence",
-      "commonError": "misapplies_strategic_interdependence",
-      "feedback": "The payoff from the cut depends on the rival's response.",
-      "aHash": "7aa88fcd7f81e24cc05d007b00e281060a071383a66fab7fad9f92cd27d5b127"
-    },
-    {
-      "id": 5062,
-      "sourceGame": "strategyDesk",
-      "q": "Which question is central in game theory?",
-      "options": [
-        "What was last year's depreciation?",
-        "How many units were sold historically?",
-        "How will other players respond to my action?",
-        "Analyze the move as if rivals' actions cannot change the payoff from the decision"
-      ],
-      "tag": "game_theory",
-      "type": "repair",
-      "objective": "LO15.1",
-      "difficulty": "repair",
-      "conceptCluster": "LO15.1_repair",
-      "primarySkill": "strategic_interdependence",
-      "secondarySkills": [],
-      "repairSkill": "strategic_interdependence",
-      "commonError": "misapplies_strategic_interdependence",
-      "feedback": "Game theory requires anticipating the actions and reactions of other players.",
-      "aHash": "cc88db5f86dc52f23b14e064fc70c75e8d86df04e84f62a2ff35f8f9666a8e0b"
+      "commonError": "uses_wrong_coordinate_in_payoff_pair",
+      "feedback": "The second coordinate is the column player’s own payoff. Adding or comparing the players’ payoffs does not identify a best response.",
+      "aHash": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3"
     }
   ],
   "game_timing": [
     {
       "id": 5063,
       "sourceGame": "strategyDesk",
-      "q": "What distinguishes an observed sequential game from simultaneous choices?",
+      "q": "Player 2 moves after Player 1 but cannot observe whether Player 1 chose A or B. Its two nodes are in one information set. Which plan is feasible?",
       "options": [
-        "Classify the game from which action is opened first rather than what players observe when choosing",
-        "Simultaneous games require identical actions",
-        "Only sequential games have payoffs",
-        "Later players observe earlier moves in a sequential game"
+        "Observe the hidden move because it occurred earlier",
+        "Choose Left after A and Right after B",
+        "Choose Right after A and Left after B",
+        "Choose the same action at both indistinguishable nodes"
       ],
       "tag": "game_theory",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO15.2",
       "difficulty": "repair",
       "conceptCluster": "LO15.2_repair",
       "primarySkill": "game_timing",
       "secondarySkills": [],
       "repairSkill": "game_timing",
-      "commonError": "misapplies_game_timing",
-      "feedback": "In an observed sequential game, the later player sees the earlier move. Hidden earlier moves require information-set reasoning rather than treating calendar order as full information.",
-      "aHash": "3dd8695c51861af59deb26b431dc4b570d20b8674cc795a686b213e1ffee07df"
-    },
-    {
-      "id": 5064,
-      "sourceGame": "strategyDesk",
-      "q": "Two firms choose prices without observing the other's current choice. The game is",
-      "options": [
-        "simultaneous",
-        "sequential",
-        "nonstrategic",
-        "a bundle"
-      ],
-      "tag": "game_theory",
-      "type": "repair",
-      "objective": "LO15.2",
-      "difficulty": "repair",
-      "conceptCluster": "LO15.2_repair",
-      "primarySkill": "game_timing",
-      "secondarySkills": [],
-      "repairSkill": "game_timing",
-      "commonError": "misapplies_game_timing",
-      "feedback": "The current choices are made without observing the rival's move.",
-      "aHash": "5fd35d093d8d45f5765eb5dd3374f3fe943e16c6fc7dba6f2582023309a5d4de"
-    },
-    {
-      "id": 5065,
-      "sourceGame": "strategyDesk",
-      "q": "A market leader publicly commits to capacity before a follower observes that capacity and chooses output. This timing creates",
-      "options": [
-        "a simultaneous game",
-        "a sequential game",
-        "no strategic effect",
-        "direct price discrimination"
-      ],
-      "tag": "game_theory",
-      "type": "repair",
-      "objective": "LO15.2",
-      "difficulty": "repair",
-      "conceptCluster": "LO15.2_repair",
-      "primarySkill": "game_timing",
-      "secondarySkills": [],
-      "repairSkill": "game_timing",
-      "commonError": "misapplies_game_timing",
-      "feedback": "The follower observes the leader's commitment before acting.",
-      "aHash": "40769957525ac28c31a6ef2a67fe7162fed10c08eade14956ed33060fa4b5af6"
+      "commonError": "conditions_choice_on_hidden_move",
+      "feedback": "A strategy cannot condition on a move the player does not observe. Calendar order alone does not establish perfect information.",
+      "aHash": "98ef335051039c6acd80fb0e0d66c2989e10caaa4af68278055a3b5e115c44f2"
     }
   ],
   "nash_equilibrium": [
@@ -15487,128 +13850,84 @@ window.microSkillRepairPools = {
         "the highest joint payoff is always achieved"
       ],
       "tag": "game_theory",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO15.3",
       "difficulty": "repair",
       "conceptCluster": "LO15.3_repair",
       "primarySkill": "nash_equilibrium",
       "secondarySkills": [],
       "repairSkill": "nash_equilibrium",
-      "commonError": "misapplies_nash_equilibrium",
+      "commonError": "equates_nash_with_joint_efficiency",
       "feedback": "Nash equilibrium is defined by the absence of profitable unilateral deviations.",
       "aHash": "052e09593705f8acf42e6d096b199723a758ca779b925ca5f66be4cf893cac10"
     },
     {
       "id": 5067,
       "sourceGame": "strategyDesk",
-      "q": "To test whether an outcome is a Nash equilibrium, hold rivals' choices fixed and ask whether",
+      "q": "At a proposed outcome, Row earns 4 but could earn 6 by changing its own action while Column stays fixed. Column already best responds. What follows?",
       "options": [
-        "joint profit is maximized",
-        "fixed cost is recovered",
-        "Call an outcome an equilibrium whenever total profit is high even if one player wants to deviate",
-        "each player wants to change its own action"
+        "The outcome is Nash whenever both payoffs are positive",
+        "The outcome is Nash because Column best responds",
+        "The outcome is Nash if joint profit is high",
+        "The outcome is not Nash because Row can gain 2"
       ],
       "tag": "game_theory",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO15.3",
       "difficulty": "repair",
       "conceptCluster": "LO15.3_repair",
       "primarySkill": "nash_equilibrium",
       "secondarySkills": [],
       "repairSkill": "nash_equilibrium",
-      "commonError": "misapplies_nash_equilibrium",
-      "feedback": "If any player can profitably deviate alone, the outcome is not Nash.",
-      "aHash": "d9a3189d3b300e9b46b35c629c5948ba5fbdd6560c6b513220da8de909ec0f98"
+      "commonError": "checks_only_one_player_best_response",
+      "feedback": "Nash requires every player to best respond. One profitable unilateral deviation is enough to reject it.",
+      "aHash": "667152ca4c923979fe82dc45d10c045bf378aa29d3807679ae49dca781122b5b"
     },
     {
       "id": 5068,
       "sourceGame": "strategyDesk",
-      "q": "Two firms are each playing a best response to the other. Their choices form",
+      "q": "Against a fixed rival action, your alternatives A, B, C pay 5,5,2. Which are best responses?",
       "options": [
-        "a Nash equilibrium",
-        "a dominated outcome by definition",
-        "a sequential commitment",
-        "price discrimination"
+        "A and B",
+        "A only",
+        "B only",
+        "All three"
       ],
       "tag": "game_theory",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO15.3",
       "difficulty": "repair",
       "conceptCluster": "LO15.3_repair",
       "primarySkill": "nash_equilibrium",
       "secondarySkills": [],
       "repairSkill": "nash_equilibrium",
-      "commonError": "misapplies_nash_equilibrium",
-      "feedback": "Mutual best responses satisfy the Nash condition.",
-      "aHash": "2c682f37a4a2fc65a18332051b76b842a3dd924ec3d54959e45905a366184447"
+      "commonError": "drops_best_response_ties",
+      "feedback": "Both maximum-payoff alternatives are best responses. Preserve ties before checking mutual best responses.",
+      "aHash": "303c5e7ff1a6197d304c7b2bdcb3cf77c9fdbbcfea95bf226d3ff61c364c91fe"
     }
   ],
   "strategic_rule_design": [
     {
-      "id": 5069,
+      "id": 5062,
       "sourceGame": "strategyDesk",
-      "q": "How can a firm identify likely equilibria?",
+      "q": "An action gives a player 6. A rule imposes a penalty 2 only when that action is chosen. Holding everything else fixed, which payoff should be used when recomputing best responses?",
       "options": [
-        "Choose the outcome with the highest total revenue only",
-        "Map each player's best responses",
-        "Ignore rival incentives",
-        "Use sunk cost as the rule"
+        "8",
+        "6",
+        "4",
+        "2"
       ],
-      "tag": "game_theory",
-      "type": "repair",
+      "tag": "strategic_rule_design",
+      "type": "interpretation",
       "objective": "LO15.4",
       "difficulty": "repair",
-      "conceptCluster": "LO15.4_repair",
+      "conceptCluster": "LO15.1_repair",
       "primarySkill": "strategic_rule_design",
       "secondarySkills": [],
       "repairSkill": "strategic_rule_design",
-      "commonError": "misapplies_strategic_rule_design",
-      "feedback": "Equilibria occur where players' best responses intersect.",
-      "aHash": "539ac80286123f73297b9180e6f2d2178032bc67d3e9834b94455636b2d2ee1d"
-    },
-    {
-      "id": 5070,
-      "sourceGame": "strategyDesk",
-      "q": "A commitment changes a game only if it is",
-      "options": [
-        "Assume an announced threat changes the game even when carrying it out would be irrational later",
-        "announced loudly",
-        "credible when the future decision point arrives",
-        "unrelated to payoffs"
-      ],
-      "tag": "game_theory",
-      "type": "repair",
-      "objective": "LO15.4",
-      "difficulty": "repair",
-      "conceptCluster": "LO15.4_repair",
-      "primarySkill": "strategic_rule_design",
-      "secondarySkills": [],
-      "repairSkill": "strategic_rule_design",
-      "commonError": "misapplies_strategic_rule_design",
-      "feedback": "Rivals respond only to commitments they believe will be carried out.",
-      "aHash": "8effce7ac6077729cc982e8ff63f2875900a3d64650899dd8c21df239c1e9b49"
-    },
-    {
-      "id": 5071,
-      "sourceGame": "strategyDesk",
-      "q": "Which action can change a game's equilibrium?",
-      "options": [
-        "Assume an announced threat changes the game even when carrying it out would be irrational later",
-        "Assuming rivals never react",
-        "Maximizing one player's sales",
-        "Changing incentives or move order credibly"
-      ],
-      "tag": "game_theory",
-      "type": "repair",
-      "objective": "LO15.4",
-      "difficulty": "repair",
-      "conceptCluster": "LO15.4_repair",
-      "primarySkill": "strategic_rule_design",
-      "secondarySkills": [],
-      "repairSkill": "strategic_rule_design",
-      "commonError": "misapplies_strategic_rule_design",
-      "feedback": "Credible changes to incentives, options, or timing can alter best responses.",
-      "aHash": "eba68b41070a56d17945c7464d9c802e31c06e03e3e696d63070657c6ffbe8dc"
+      "commonError": "fails_to_update_action_payoff",
+      "feedback": "Subtract the action-specific penalty from its original payoff:6−2=4. A rule can change incentives even without changing the action labels.",
+      "aHash": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a"
     }
   ],
   "strategic_bargaining": [
@@ -15618,65 +13937,65 @@ window.microSkillRepairPools = {
       "q": "Strategic bargaining focuses on",
       "options": [
         "offers, threats, timing, information, and outside options",
-        "splitting surplus without considering moves",
-        "Judge a threat by how much it hurts the opponent rather than whether the sender would carry it out",
-        "market-demand aggregation"
+        "an equal split without modeling an offer sequence",
+        "the opponent’s losses regardless of one’s own incentives",
+        "only accounting costs already sunk"
       ],
       "tag": "bargaining",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO16.1",
       "difficulty": "repair",
       "conceptCluster": "LO16.1_repair",
       "primarySkill": "strategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "strategic_bargaining",
-      "commonError": "misapplies_strategic_bargaining",
+      "commonError": "ignores_bargaining_move_sequence",
       "feedback": "Strategic bargaining studies how tactical moves influence the other side's response.",
       "aHash": "e26a2e677b0f4ef2fb753a7e19af24baf75f9ef69672dac046fad29e9a73aaa2"
     },
     {
       "id": 5073,
       "sourceGame": "strategyDesk",
-      "q": "A threat is credible when",
+      "q": "At the final decision, a negotiator receives 7 by accepting and 3 by carrying out a threatened refusal. No other consequences follow. Is refusal credible?",
       "options": [
-        "it hurts the opponent",
-        "the party would actually prefer to carry it out if the time comes",
-        "Judge a threat by how much it hurts the opponent rather than whether the sender would carry it out",
-        "it is expensive for both sides"
+        "Yes; the opponent dislikes refusal",
+        "No; accepting gives 4 more",
+        "Yes; the threat was announced first",
+        "No; all refusals are noncredible"
       ],
       "tag": "bargaining",
-      "type": "repair",
+      "type": "calculation",
       "objective": "LO16.1",
       "difficulty": "repair",
       "conceptCluster": "LO16.1_repair",
       "primarySkill": "strategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "strategic_bargaining",
-      "commonError": "misapplies_strategic_bargaining",
-      "feedback": "Credibility depends on the threatening party's future incentives.",
-      "aHash": "c4467a1b50f67c693916cebfd83fbcaf1b6b7bcbf004e14b620c6c080aba9068"
+      "commonError": "judges_threat_by_harm_to_opponent",
+      "feedback": "Credibility uses the threatening party’s own payoff at the decision node. Here 7>3, so refusal is not optimal.",
+      "aHash": "7eb2d83facc4e5e82fd826ee8e30f16fe18cf2867011eaf4b78ddcf53c728881"
     },
     {
       "id": 5074,
       "sourceGame": "strategyDesk",
-      "q": "Improving a negotiator's best alternative to agreement strengthens",
+      "q": "A buyer values an item at 60 and gets 10 if no deal occurs. It accepts when indifferent. What is the highest price it accepts in a final offer?",
       "options": [
-        "Judge a threat by how much it hurts the opponent rather than whether the sender would carry it out",
-        "market demand",
-        "the negotiator's outside option",
-        "the opponent's commitment"
+        "10",
+        "60",
+        "50",
+        "70"
       ],
       "tag": "bargaining",
-      "type": "repair",
+      "type": "calculation",
       "objective": "LO16.1",
       "difficulty": "repair",
       "conceptCluster": "LO16.1_repair",
       "primarySkill": "strategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "strategic_bargaining",
-      "commonError": "misapplies_strategic_bargaining",
-      "feedback": "A better outside option reduces the cost of walking away and improves bargaining leverage.",
-      "aHash": "c646f6cd0da3b9372390e60b6e16b8ec3d639c6b1c0f98bd861776f08caaf4bf"
+      "commonError": "ignores_responder_participation_constraint",
+      "feedback": "The buyer needs 60−price≥10. Its outside option reduces the maximum acceptable price to 50.",
+      "aHash": "1a6562590ef19d1045d06c4055742d38288e9e6dcd71ccde5cee80f1d5a774eb"
     }
   ],
   "nonstrategic_bargaining": [
@@ -15685,20 +14004,20 @@ window.microSkillRepairPools = {
       "sourceGame": "strategyDesk",
       "q": "Nonstrategic bargaining begins by identifying",
       "options": [
-        "Focus on tactical threats and move order instead of calculating surplus above outside options",
-        "the market demand curve",
-        "the highest posted price",
+        "the identity of the party speaking first",
+        "the historical order of announced threats",
+        "the first proposed price regardless of alternatives",
         "the gains from agreement above the parties' outside options"
       ],
       "tag": "bargaining",
-      "type": "repair",
+      "type": "interpretation",
       "objective": "LO16.2",
       "difficulty": "repair",
       "conceptCluster": "LO16.2_repair",
       "primarySkill": "nonstrategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "nonstrategic_bargaining",
-      "commonError": "misapplies_nonstrategic_bargaining",
+      "commonError": "divides_gross_value_without_fallbacks",
       "feedback": "The analysis focuses on the surplus available to divide.",
       "aHash": "04f6fc85f880b05ff8ca5febde0cf9f763285c4b52a81915743cfb4591d26766"
     },
@@ -15713,38 +14032,156 @@ window.microSkillRepairPools = {
         "$140"
       ],
       "tag": "bargaining",
-      "type": "repair",
+      "type": "calculation",
       "objective": "LO16.2",
       "difficulty": "repair",
       "conceptCluster": "LO16.2_repair",
       "primarySkill": "nonstrategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "nonstrategic_bargaining",
-      "commonError": "misapplies_nonstrategic_bargaining",
+      "commonError": "adds_instead_of_subtracting_outside_options",
       "feedback": "The gains from agreement are $100 - $40 = $60.",
       "aHash": "4d6d3db3419983aad8d83f39e2bb8ad6a3e7ae94b08ddcf66c788db1d4434ee0"
     },
     {
       "id": 5077,
       "sourceGame": "strategyDesk",
-      "q": "Which situation best fits nonstrategic bargaining?",
+      "q": "Two parties have outside options 10 and 20. A deal creates total value 50, and they split incremental surplus equally. What does the first party receive?",
       "options": [
-        "One side makes an irreversible threat",
-        "The parties simply divide a known surplus using values and outside options",
-        "Move order changes the opponent's response",
-        "Focus on tactical threats and move order instead of calculating surplus above outside options"
+        "25",
+        "20",
+        "10",
+        "30"
       ],
       "tag": "bargaining",
-      "type": "repair",
+      "type": "calculation",
       "objective": "LO16.2",
       "difficulty": "repair",
       "conceptCluster": "LO16.2_repair",
       "primarySkill": "nonstrategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "nonstrategic_bargaining",
-      "commonError": "misapplies_nonstrategic_bargaining",
-      "feedback": "Nonstrategic bargaining abstracts from tactical moves and focuses on division of surplus.",
-      "aHash": "b937a7a446fd8f8050209de39cfdd0fe3466f97849da47920d1d4f6b9d99bdc1"
+      "commonError": "splits_gross_value_instead_of_net_surplus",
+      "feedback": "Surplus 50−10−20=20; half 10 plus firstfallback 10 gives 20. Equal gains do not mean equal total payoffs.",
+      "aHash": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b"
+    }
+  ],
+  "complete_strategy": [
+    {
+      "id": 5065,
+      "sourceGame": "strategyDesk",
+      "q": "Player 2 observes whether Player 1 chose A or B, then chooses Left or Right at either node. Which answer specifies a complete pure strategy for Player 2?",
+      "options": [
+        "Left on the realized path only",
+        "Left after A; Right after B",
+        "Player 1 chooses A",
+        "The final payoff is (3,4)"
+      ],
+      "tag": "complete_strategy",
+      "type": "strategy",
+      "objective": "LO15.2",
+      "difficulty": "repair",
+      "conceptCluster": "LO15.2_repair",
+      "primarySkill": "complete_strategy",
+      "secondarySkills": [],
+      "repairSkill": "complete_strategy",
+      "commonError": "confuses_action_or_outcome_with_complete_strategy",
+      "feedback": "A complete strategy specifies an action at every information set, including nodes not reached on the realized path.",
+      "aHash": "fe34dd92870ee2ac968d0d8af9cd75b56527076c5214e08b75bb55e907d9abba"
+    }
+  ],
+  "backward_induction": [
+    {
+      "id": 5064,
+      "sourceGame": "strategyDesk",
+      "q": "Player 1 chooses Enter or Out. Out gives (0,4). After observed Enter, Player 2 chooses Fight (−1,2) or Allow (3,5), with payoffs (Player 1, Player 2). What happens under backward induction?",
+      "options": [
+        "Enter, then Allow",
+        "Out, because Fight is announced",
+        "Enter, then Fight",
+        "Player 2 is indifferent"
+      ],
+      "tag": "backward_induction",
+      "type": "strategy",
+      "objective": "LO15.2",
+      "difficulty": "repair",
+      "conceptCluster": "LO15.2_repair",
+      "primarySkill": "backward_induction",
+      "secondarySkills": [],
+      "repairSkill": "backward_induction",
+      "commonError": "uses_forward_reasoning_before_follower_best_response",
+      "feedback": "At the last node Player 2 prefers Allow 5>2. Player 1 anticipates 3 rather than 0 and enters.",
+      "aHash": "010f773b844730d1508004770a8bea5cf50a66149e21293e2ee2fcb49e741ce2"
+    }
+  ],
+  "weak_dominance": [
+    {
+      "id": 5069,
+      "sourceGame": "strategyDesk",
+      "q": "Your strategy A pays (4,2,5) against three rival choices; B pays (4,3,6). Which comparison is correct?",
+      "options": [
+        "B strictly dominates A",
+        "B weakly but not strictly dominates A",
+        "A weakly dominates B",
+        "Neither dominates because one payoff ties"
+      ],
+      "tag": "weak_dominance",
+      "type": "matrix",
+      "objective": "LO15.4",
+      "difficulty": "repair",
+      "conceptCluster": "LO15.4_repair",
+      "primarySkill": "weak_dominance",
+      "secondarySkills": [],
+      "repairSkill": "weak_dominance",
+      "commonError": "confuses_weak_and_strict_dominance",
+      "feedback": "B is never worse and is strictly better twice. The first tie prevents strict dominance but permits weak dominance.",
+      "aHash": "f6ab4eefb744d50cba0ee97574643df221a5fc9b8464b2b14d2fce6307641455"
+    },
+    {
+      "id": 5071,
+      "sourceGame": "strategyDesk",
+      "q": "A strategy is weakly dominated and ties its alternative against one opponent action. What must an analyst check before claiming all original Nash equilibria from a reduced game?",
+      "options": [
+        "Whether the dominated strategy is listed last",
+        "Only which surviving cell has highest total payoff",
+        "Whether every payoff is positive",
+        "Whether deletion removes an equilibrium supported by that tie"
+      ],
+      "tag": "weak_dominance",
+      "type": "interpretation",
+      "objective": "LO15.4",
+      "difficulty": "repair",
+      "conceptCluster": "LO15.4_repair",
+      "primarySkill": "weak_dominance",
+      "secondarySkills": [],
+      "repairSkill": "weak_dominance",
+      "commonError": "assumes_weak_deletion_preserves_all_equilibria",
+      "feedback": "Weakly dominated strategies can participate in equilibrium at tied best responses. Enumerate the original game before treating a reduced set as complete.",
+      "aHash": "02a615e6d09c0c54773dac7eecef0dcbcb7189d6918a847ab19b9587bc639451"
+    }
+  ],
+  "credible_threats": [
+    {
+      "id": 5070,
+      "sourceGame": "strategyDesk",
+      "q": "A commitment changes a game only if it is",
+      "options": [
+        "costly to the opponent even if harmful to its sender",
+        "merely announced in advance",
+        "credible when the future decision point arrives",
+        "fully reversible without changing incentives"
+      ],
+      "tag": "credible_threats",
+      "type": "interpretation",
+      "objective": "LO15.4",
+      "difficulty": "repair",
+      "conceptCluster": "LO15.4_repair",
+      "primarySkill": "credible_threats",
+      "secondarySkills": [],
+      "repairSkill": "credible_threats",
+      "commonError": "accepts_noncredible_announcement",
+      "feedback": "Rivals respond only to commitments they believe will be carried out.",
+      "aHash": "8effce7ac6077729cc982e8ff63f2875900a3d64650899dd8c21df239c1e9b49"
     }
   ]
 };
@@ -15754,24 +14191,24 @@ window.microSkillBridgePools = {
     {
       "id": 6000,
       "sourceGame": "strategyDesk",
-      "q": "At $15, four customers demand 3, 0, 4, and 2 units. What point belongs on the market demand curve?",
+      "q": "At price $12, two buyers have demands max (20−P,0) and max (8−P,0). What market quantity is demanded?",
       "options": [
-        "$15 and 4 units",
-        "$9 and 15 units",
-        "$15 and 9 units",
-        "$15 and 3 units"
+        "12 units",
+        "4 units",
+        "8 units",
+        "28 units"
       ],
       "tag": "demand",
-      "type": "application",
+      "type": "calculation",
       "objective": "LO6.1",
       "difficulty": "bridge",
       "conceptCluster": "LO6.1_bridge",
       "primarySkill": "market_demand",
       "secondarySkills": [],
       "repairSkill": "market_demand",
-      "commonError": "misapplies_market_demand",
-      "feedback": "The market quantity at $15 is 3 + 0 + 4 + 2 = 9 units.",
-      "aHash": "5b0daefacad9dc1d12371bd99ebf8cfbfe216af3f446acd505a8d3896c54a18e"
+      "commonError": "includes_negative_quantity_in_aggregate",
+      "feedback": "The first buyer demands 8 and the second 0; negative calculated quantities are truncated at zero before adding.",
+      "aHash": "505defb71cf4e0964cbe1a4c94bcb1c997fcabe9e827b31da7b9f3da211f2194"
     },
     {
       "id": 6001,
@@ -15791,86 +14228,64 @@ window.microSkillBridgePools = {
       "primarySkill": "market_demand",
       "secondarySkills": [],
       "repairSkill": "market_demand",
-      "commonError": "misapplies_market_demand",
+      "commonError": "confuses_demand_shift_with_movement",
       "feedback": "More buyers increase quantity demanded at each price, shifting market demand right.",
       "aHash": "19e586321f67bf5aedfd801d87a3dd94f895a27b9474879e494b7b41c3c6f9ef"
-    },
-    {
-      "id": 6002,
-      "sourceGame": "strategyDesk",
-      "q": "A pricing analyst has demand schedules for five customer segments. What should the analyst do before estimating total sales at each price?",
-      "options": [
-        "Add segment quantities at each common price",
-        "Average the five prices",
-        "Use the segment with the highest willingness to pay",
-        "Subtract fixed cost from each segment's demand"
-      ],
-      "tag": "demand",
-      "type": "application",
-      "objective": "LO6.1",
-      "difficulty": "bridge",
-      "conceptCluster": "LO6.1_bridge",
-      "primarySkill": "market_demand",
-      "secondarySkills": [],
-      "repairSkill": "market_demand",
-      "commonError": "misapplies_market_demand",
-      "feedback": "Aggregate demand requires adding the quantities of all segments at each price.",
-      "aHash": "56e882eefd472805cf415fee30a69711a167e1e1e83c67e92547dfc7d63ae3d2"
     }
   ],
   "optimal_pricing": [
     {
       "id": 6003,
       "sourceGame": "strategyDesk",
-      "q": "A firm can sell 100 units at $30 or 120 units at $27. Marginal cost is $15. Which price yields more contribution?",
+      "q": "A rental service can charge $25 for 80 rentals or $22 for 100 rentals. Incremental cost is $10 per rental, with unchanged fixed cost and enough capacity. Which option produces more contribution?",
       "options": [
-        "$27, with $1,440",
-        "$30, with $1,500",
-        "$30, with $3,000",
-        "$27, with $3,375"
+        "$25 produces $2,000",
+        "They tie at $1,200",
+        "$22 produces $2,200",
+        "$22 produces $200 more"
       ],
       "tag": "pricing",
-      "type": "application",
+      "type": "calculation",
       "objective": "LO6.2",
       "difficulty": "bridge",
       "conceptCluster": "LO6.2_bridge",
       "primarySkill": "optimal_pricing",
       "secondarySkills": [],
       "repairSkill": "optimal_pricing",
-      "commonError": "misapplies_optimal_pricing",
-      "feedback": "At $30, contribution is 100($30-$15)=$1,500. At $27, it is 120($27-$15)=$1,440, so the $30 price yields more.",
-      "aHash": "f5a762b00100e85c0cc70c5ec7efb54673c3e842d40d2be015481b6da653c21c"
+      "commonError": "compares_revenue_instead_of_contribution",
+      "feedback": "(25−10)×80=1200 and (22−10)×100=1200. Higher revenue does not necessarily mean higher contribution.",
+      "aHash": "50ca3cf06e797fab4434c6d884780be537eb942c366398e352c0795af13423cb"
     },
     {
       "id": 6004,
       "sourceGame": "strategyDesk",
-      "q": "A manager proposes a price increase because revenue per unit will rise. What additional evidence is essential?",
+      "q": "A store raises price from 20 to 22. Unit cost is 12 and quantity falls from 100 to 85. Fixed costs are unchanged. How does contribution change?",
       "options": [
-        "The amount of last year's sunk advertising cost",
-        "Choose the price that generates the largest sales volume without comparing margins or costs",
-        "The expected quantity response and marginal cost",
-        "The number of accounting departments"
+        "It rises 200",
+        "It falls 50",
+        "It rises 50",
+        "It falls 120"
       ],
       "tag": "pricing",
-      "type": "application",
+      "type": "calculation",
       "objective": "LO6.2",
       "difficulty": "bridge",
       "conceptCluster": "LO6.2_bridge",
       "primarySkill": "optimal_pricing",
       "secondarySkills": [],
       "repairSkill": "optimal_pricing",
-      "commonError": "misapplies_optimal_pricing",
-      "feedback": "Profit depends on the margin change and the quantity response, not price alone.",
-      "aHash": "b84f63f65d045ce660d298c88d0a370c26b0c6161122a4711d08afc9ec04b158"
+      "commonError": "ignores_lost_quantity_after_price_rise",
+      "feedback": "Old contribution 800; new 850. Lost volume is offset by the larger unit margin.",
+      "aHash": "98e0b21895c47ce61a57267107ffa72ad95f67fd496f5f629f7591b9cda0387b"
     },
     {
       "id": 6005,
       "sourceGame": "strategyDesk",
       "q": "At the current price, marginal revenue from one more sale is $18 and marginal cost is $12. What does marginal analysis suggest?",
       "options": [
-        "Reduce output because cost is positive",
-        "Stop selling because fixed costs remain",
-        "Raise fixed cost before deciding",
+        "Keep output fixed because average cost is unknown",
+        "Reduce output because MC is positive",
+        "Stop sales until sunk cost is recovered",
         "Expand sales if feasible"
       ],
       "tag": "pricing",
@@ -15881,7 +14296,7 @@ window.microSkillBridgePools = {
       "primarySkill": "optimal_pricing",
       "secondarySkills": [],
       "repairSkill": "optimal_pricing",
-      "commonError": "misapplies_optimal_pricing",
+      "commonError": "ignores_positive_marginal_profit",
       "feedback": "When marginal revenue exceeds marginal cost, another sale adds to profit.",
       "aHash": "4cc464dfb1078ba42f6e9f64e5e5c573c60943f68b384b879f6c6660dd7f7086"
     }
@@ -15890,24 +14305,24 @@ window.microSkillBridgePools = {
     {
       "id": 6006,
       "sourceGame": "strategyDesk",
-      "q": "A 5% price cut raises quantity demanded 15%. How should demand be classified?",
+      "q": "A 5% price cut raises quantity 15%. Using these stated percentage changes, which result follows?",
       "options": [
-        "Elastic",
-        "Inelastic",
-        "Unit elastic",
-        "Perfectly inelastic"
+        "Demand is elastic and revenue rises 9.25%",
+        "Demand is inelastic and revenue rises 10%",
+        "Demand is elastic and revenue falls 5%",
+        "Demand is unit elastic and revenue is unchanged"
       ],
       "tag": "elasticity",
-      "type": "application",
+      "type": "calculation",
       "objective": "LO6.3",
       "difficulty": "bridge",
       "conceptCluster": "LO6.3_bridge",
       "primarySkill": "price_elasticity",
       "secondarySkills": [],
       "repairSkill": "price_elasticity",
-      "commonError": "misapplies_price_elasticity",
-      "feedback": "The absolute elasticity is 15/5 = 3, which is elastic.",
-      "aHash": "986051385feae5b9850804db2d701c0b029ad24f09bce340c12aee7a5c8a0391"
+      "commonError": "confuses_elasticity_with_revenue_percentage",
+      "feedback": "Elasticity magnitude 15/5=3. Revenue factor.95×1.15=1.0925, a 9.25% gain.",
+      "aHash": "a2b8f146ff31e508abde2a3eb46448066518ec93e64952e87f1073c32ee6156e"
     },
     {
       "id": 6007,
@@ -15927,7 +14342,7 @@ window.microSkillBridgePools = {
       "primarySkill": "price_elasticity",
       "secondarySkills": [],
       "repairSkill": "price_elasticity",
-      "commonError": "misapplies_price_elasticity",
+      "commonError": "reverses_inelastic_revenue_rule",
       "feedback": "With inelastic demand, quantity falls proportionally less than price rises, so total revenue tends to increase.",
       "aHash": "754322d1c659ff3d7a031ecb4b0e31897edb6a306062e18e7d549c1b06d32bd2"
     },
@@ -15936,10 +14351,10 @@ window.microSkillBridgePools = {
       "sourceGame": "strategyDesk",
       "q": "Two products show the same 10-unit sales decline after a price increase. Why might their elasticities still differ?",
       "options": [
-        "Use the dollar change in quantity alone and ignore the percentage change in price",
-        "Elasticity is determined only by fixed cost",
+        "Elasticity is determined by fixed cost",
+        "Elasticity uses unit changes regardless of starting quantities",
         "Their percentage changes may differ because starting prices and quantities differ",
-        "Any equal unit change produces equal elasticity"
+        "Equal unit changes always imply equal percentage changes"
       ],
       "tag": "elasticity",
       "type": "application",
@@ -15949,7 +14364,7 @@ window.microSkillBridgePools = {
       "primarySkill": "price_elasticity",
       "secondarySkills": [],
       "repairSkill": "price_elasticity",
-      "commonError": "misapplies_price_elasticity",
+      "commonError": "compares_raw_changes_without_bases",
       "feedback": "Elasticity is based on percentage changes, not raw unit changes.",
       "aHash": "3cb002be156f83bdbf2699f443be0729cb1f0cea7e7d444845f9f91bfc11574f"
     }
@@ -15958,7 +14373,7 @@ window.microSkillBridgePools = {
     {
       "id": 6009,
       "sourceGame": "strategyDesk",
-      "q": "Income rises 8% and demand for a product rises 4%. What is its income elasticity?",
+      "q": "Income rises 8% and demand for a product rises 4%. What is its income elasticity? Hold other demand determinants fixed.",
       "options": [
         "2.0",
         "-0.5",
@@ -15966,14 +14381,14 @@ window.microSkillBridgePools = {
         "0.5"
       ],
       "tag": "forecasting",
-      "type": "application",
+      "type": "calculation",
       "objective": "LO6.4",
       "difficulty": "bridge",
       "conceptCluster": "LO6.4_bridge",
       "primarySkill": "forecasting_elasticities",
       "secondarySkills": [],
       "repairSkill": "forecasting_elasticities",
-      "commonError": "misapplies_forecasting_elasticities",
+      "commonError": "reverses_income_elasticity_ratio",
       "feedback": "Income elasticity is 4%/8% = 0.5.",
       "aHash": "d2cbad71ff333de67d07ec676e352ab7f38248eb69c942950157220607c55e84"
     },
@@ -15995,29 +14410,29 @@ window.microSkillBridgePools = {
       "primarySkill": "forecasting_elasticities",
       "secondarySkills": [],
       "repairSkill": "forecasting_elasticities",
-      "commonError": "misapplies_forecasting_elasticities",
+      "commonError": "uses_wrong_cross_price_driver",
       "feedback": "Cross-price elasticity measures demand response to the price of another product.",
       "aHash": "d0152705134ea5db8f478b158b4d0b26eb8d78ec2dfbd1c18a7dd7d3af327454"
     },
     {
       "id": 6011,
       "sourceGame": "strategyDesk",
-      "q": "A 10% increase in advertising raises sales 2%. What does an advertising elasticity of 0.2 indicate?",
+      "q": "A 10% increase in advertising raises sales 2%. What does an advertising elasticity of 0.2 indicate? Hold other demand determinants fixed.",
       "options": [
-        "Sales are highly responsive to advertising",
+        "Sales rise more than proportionally with advertising",
         "Sales rise less than proportionally with advertising",
-        "Use price elasticity for every demand shift regardless of whether income, related prices, or advertising changed",
-        "The products are complements"
+        "Sales rise exactly in proportion to advertising",
+        "Demand falls by 0.2% for each 1% rise in advertising"
       ],
       "tag": "forecasting",
-      "type": "application",
+      "type": "calculation",
       "objective": "LO6.4",
       "difficulty": "bridge",
       "conceptCluster": "LO6.4_bridge",
       "primarySkill": "forecasting_elasticities",
       "secondarySkills": [],
       "repairSkill": "forecasting_elasticities",
-      "commonError": "misapplies_forecasting_elasticities",
+      "commonError": "overstates_advertising_response",
       "feedback": "An elasticity of 0.2 means sales rise by only 0.2% for each 1% increase in advertising.",
       "aHash": "8813994d265f5a0aae7ed85fb4677133dd324aeb9169930d3f002f65158ddb29"
     }
@@ -16026,33 +14441,33 @@ window.microSkillBridgePools = {
     {
       "id": 6012,
       "sourceGame": "strategyDesk",
-      "q": "A $3 price cut applies to 600 current sales. Each new sale contributes $9 after the cut. What added volume is required to stay even?",
+      "q": "A subscription raises its monthly contribution per account from 9 to 12. It currently has 800 accounts. What is the largest account loss that leaves total contribution unchanged?",
       "options": [
-        "60 units",
-        "180 units",
-        "200 units",
-        "600 units"
+        "267 accounts",
+        "600 accounts",
+        "200 accounts",
+        "800 accounts"
       ],
       "tag": "pricing",
-      "type": "application",
+      "type": "calculation",
       "objective": "LO6.5",
       "difficulty": "bridge",
       "conceptCluster": "LO6.5_bridge",
       "primarySkill": "stay_even_volume",
       "secondarySkills": [],
       "repairSkill": "stay_even_volume",
-      "commonError": "misapplies_stay_even_volume",
-      "feedback": "Lost contribution is 600×$3=$1,800. Divide by $9 to get 200 added units.",
-      "aHash": "fd25fd8da2abb4375b035140c5214f3ca6b11253aaa12c403f0beac9dd8ee8fc"
+      "commonError": "confuses_required_total_with_loss_allowed",
+      "feedback": "Current contribution 7200 requires 600 accounts at 12 each. The firm can lose 800−600=200 accounts.",
+      "aHash": "8f93c935214d76629fe1f30c851832ea5e6c82fbe515a2bcfd0a5a72701daa9b"
     },
     {
       "id": 6013,
       "sourceGame": "strategyDesk",
       "q": "A price cut is forecast to add 150 units, but stay-even volume is 220 units. What should the firm conclude?",
       "options": [
+        "Any positive volume response is sufficient",
         "The cut is guaranteed to raise profit",
-        "The cut has no effect on contribution",
-        "Treat all revenue from added units as contribution and ignore the variable cost of producing them",
+        "The cut leaves contribution unchanged",
         "The cut is expected to reduce contribution"
       ],
       "tag": "pricing",
@@ -16063,14 +14478,14 @@ window.microSkillBridgePools = {
       "primarySkill": "stay_even_volume",
       "secondarySkills": [],
       "repairSkill": "stay_even_volume",
-      "commonError": "misapplies_stay_even_volume",
+      "commonError": "ignores_stay_even_threshold",
       "feedback": "Expected added volume falls short of the volume needed to offset lost margin.",
       "aHash": "553d090bdad27345e948b8b91e19e51694133af564f64928852c8496c58939f2"
     },
     {
       "id": 6014,
       "sourceGame": "strategyDesk",
-      "q": "A manager calculates stay-even volume using revenue per added unit instead of contribution per added unit. What is the likely problem?",
+      "q": "A manager calculates stay-even volume using revenue per added unit instead of contribution per added unit. What is the likely problem? Assume positive variable cost per added unit.",
       "options": [
         "The required volume may be understated because variable cost is ignored",
         "The required volume will be overstated in every case",
@@ -16085,7 +14500,7 @@ window.microSkillBridgePools = {
       "primarySkill": "stay_even_volume",
       "secondarySkills": [],
       "repairSkill": "stay_even_volume",
-      "commonError": "misapplies_stay_even_volume",
+      "commonError": "uses_revenue_instead_of_incremental_margin",
       "feedback": "Using revenue instead of contribution exaggerates what each added sale contributes toward the lost margin.",
       "aHash": "1122a19835f0acb669a79395eb9ffba0124e749ffd83370899cb25f1523b7756"
     }
@@ -16102,14 +14517,14 @@ window.microSkillBridgePools = {
         "+$17,000"
       ],
       "tag": "portfolio_pricing",
-      "type": "application",
+      "type": "calculation",
       "objective": "LO12.1",
       "difficulty": "bridge",
       "conceptCluster": "LO12.1_bridge",
       "primarySkill": "substitute_pricing",
       "secondarySkills": [],
       "repairSkill": "substitute_pricing",
-      "commonError": "misapplies_substitute_pricing",
+      "commonError": "omits_owned_substitute_loss",
       "feedback": "Net portfolio contribution is $12,000 - $5,000 = $7,000.",
       "aHash": "2f15d548728e3c782a862a0a2df17c79e4ad74bd07c12b2443d2fb81ed00aaec"
     },
@@ -16118,10 +14533,10 @@ window.microSkillBridgePools = {
       "sourceGame": "strategyDesk",
       "q": "A company evaluates a discount on its budget brand without estimating switching from its premium brand. What is missing?",
       "options": [
-        "The premium brand's sunk launch cost",
-        "The tax rate on all firms",
+        "Only the budget brand’s unit sales",
+        "The premium brand’s sunk launch cost",
         "The cannibalization effect",
-        "The market supply curve"
+        "The accounting allocation of overhead"
       ],
       "tag": "portfolio_pricing",
       "type": "application",
@@ -16131,31 +14546,9 @@ window.microSkillBridgePools = {
       "primarySkill": "substitute_pricing",
       "secondarySkills": [],
       "repairSkill": "substitute_pricing",
-      "commonError": "misapplies_substitute_pricing",
+      "commonError": "omits_premium_cannibalization",
       "feedback": "Some budget-brand gains may simply replace higher-margin premium sales.",
       "aHash": "796cdd011511eb08ef39a403266a338fffe8828813f6508b8c4446a6e9adbcaa"
-    },
-    {
-      "id": 6017,
-      "sourceGame": "strategyDesk",
-      "q": "Two owned products are close substitutes. Which pricing approach is strongest?",
-      "options": [
-        "Evaluate each owned substitute independently and count every shifted sale as entirely new business",
-        "Lower both prices until volume is maximized",
-        "Ignore customers who switch between them",
-        "Model cross-demand effects and choose prices jointly"
-      ],
-      "tag": "portfolio_pricing",
-      "type": "application",
-      "objective": "LO12.1",
-      "difficulty": "bridge",
-      "conceptCluster": "LO12.1_bridge",
-      "primarySkill": "substitute_pricing",
-      "secondarySkills": [],
-      "repairSkill": "substitute_pricing",
-      "commonError": "misapplies_substitute_pricing",
-      "feedback": "Joint pricing captures how each product's price affects demand for the other.",
-      "aHash": "742a5cbf2fcc22ac5007cb8fa40a9f915a39488a624ca5bc78a7d2cc043ea952"
     }
   ],
   "complement_pricing": [
@@ -16170,14 +14563,14 @@ window.microSkillBridgePools = {
         "+$110,000"
       ],
       "tag": "portfolio_pricing",
-      "type": "application",
+      "type": "calculation",
       "objective": "LO12.2",
       "difficulty": "bridge",
       "conceptCluster": "LO12.2_bridge",
       "primarySkill": "complement_pricing",
       "secondarySkills": [],
       "repairSkill": "complement_pricing",
-      "commonError": "misapplies_complement_pricing",
+      "commonError": "omits_device_margin_loss",
       "feedback": "The portfolio gains $70,000 - $40,000 = $30,000.",
       "aHash": "43121b58bc44cdf48db08c907e8cc3fc52e106422886e8c7330eca2beb8d9f07"
     },
@@ -16199,31 +14592,31 @@ window.microSkillBridgePools = {
       "primarySkill": "complement_pricing",
       "secondarySkills": [],
       "repairSkill": "complement_pricing",
-      "commonError": "misapplies_complement_pricing",
+      "commonError": "confuses_complements_with_substitutes",
       "feedback": "The machine and supplies are complements, so the machine price affects supply sales.",
       "aHash": "156b28257cad55c2340a628a445adda79eec2551304b3fa7347507d0268d219d"
     },
     {
       "id": 6020,
       "sourceGame": "strategyDesk",
-      "q": "Which proposal deserves approval?",
+      "q": "An accessory promotion can accompany either device policy. Policy A loses 5 in device margin and adds 2 in accessory contribution per buyer; Policy B loses 4 and adds 7. No other sales or costs change. Which is profitable?",
       "options": [
-        "A price cut that loses $5 per device and adds only $2 of expected accessory contribution",
-        "A price cut evaluated only on device revenue",
-        "A price cut whose added companion-product contribution exceeds the lost device margin",
-        "A uniform price rule that ignores usage"
+        "Both, because accessory revenue rises",
+        "Only A, adding 3 per buyer",
+        "Only B, adding 3 per buyer",
+        "Neither, because device margin falls"
       ],
       "tag": "portfolio_pricing",
-      "type": "application",
+      "type": "calculation",
       "objective": "LO12.2",
       "difficulty": "bridge",
       "conceptCluster": "LO12.2_bridge",
       "primarySkill": "complement_pricing",
       "secondarySkills": [],
       "repairSkill": "complement_pricing",
-      "commonError": "misapplies_complement_pricing",
-      "feedback": "A complement strategy works when gains on the companion product exceed the margin sacrificed on the first product.",
-      "aHash": "3cb0696b6ef6b395f2263d57e019911af7773464054c4389044be0a0d91ba6a5"
+      "commonError": "evaluates_one_product_in_isolation",
+      "feedback": "A nets−3; B nets+3. Combine both complements rather than judging the device or accessory alone.",
+      "aHash": "2df87442d877266e05881066640c4b01235268000f535805fb25fb03683f659b"
     }
   ],
   "capacity_pricing": [
@@ -16238,14 +14631,14 @@ window.microSkillBridgePools = {
         "$105"
       ],
       "tag": "capacity",
-      "type": "application",
+      "type": "calculation",
       "objective": "LO12.3",
       "difficulty": "bridge",
       "conceptCluster": "LO12.3_bridge",
       "primarySkill": "capacity_pricing",
       "secondarySkills": [],
       "repairSkill": "capacity_pricing",
-      "commonError": "misapplies_capacity_pricing",
+      "commonError": "reports_revenue_as_contribution",
       "feedback": "Incremental contribution is $140 - $35 = $105.",
       "aHash": "dae349c7f3777a4818d1fcb61ee76b8bd38437142e3723d3de461de759926ea0"
     },
@@ -16255,19 +14648,19 @@ window.microSkillBridgePools = {
       "q": "A resort expects to sell every room at $250. Should it accept a $140 booking that costs $20 to serve?",
       "options": [
         "Not if the booking displaces a $250 customer",
-        "Require every discounted sale to cover historical fixed cost even when capacity is idle",
+        "Yes, because 140 exceeds 20",
         "Yes, because fixed cost is sunk",
-        "Only if competitors also discount"
+        "Yes, because discounted revenue is entirely incremental"
       ],
       "tag": "capacity",
-      "type": "application",
+      "type": "calculation",
       "objective": "LO12.3",
       "difficulty": "bridge",
       "conceptCluster": "LO12.3_bridge",
       "primarySkill": "capacity_pricing",
       "secondarySkills": [],
       "repairSkill": "capacity_pricing",
-      "commonError": "misapplies_capacity_pricing",
+      "commonError": "ignores_displaced_full_price_sale",
       "feedback": "The opportunity cost of the room is the forgone high-price booking, not just service cost.",
       "aHash": "8da7ba288043431c0df09c0238621b2392c9a75e50e58b92a4595790dd7ccbb2"
     },
@@ -16289,7 +14682,7 @@ window.microSkillBridgePools = {
       "primarySkill": "capacity_pricing",
       "secondarySkills": [],
       "repairSkill": "capacity_pricing",
-      "commonError": "misapplies_capacity_pricing",
+      "commonError": "discounts_existing_full_price_customers",
       "feedback": "The offer should create incremental business without replacing better sales.",
       "aHash": "324633c23c55a6b410f328295759c85df38ec2e0249a0197e9869821aaa8abea"
     }
@@ -16313,7 +14706,7 @@ window.microSkillBridgePools = {
       "primarySkill": "forecast_driven_pricing",
       "secondarySkills": [],
       "repairSkill": "forecast_driven_pricing",
-      "commonError": "misapplies_forecast_driven_pricing",
+      "commonError": "confuses_demand_with_capacity",
       "feedback": "Expected demand exceeds available capacity by 2,000 seats.",
       "aHash": "e1554c10467464faa032d42524c241ebf38698f2d310071bd8bc591415b6ee92"
     },
@@ -16335,38 +14728,38 @@ window.microSkillBridgePools = {
       "primarySkill": "forecast_driven_pricing",
       "secondarySkills": [],
       "repairSkill": "forecast_driven_pricing",
-      "commonError": "misapplies_forecast_driven_pricing",
+      "commonError": "discounts_peak_instead_of_idle_period",
       "feedback": "Pricing should respond to expected capacity use, not treat every period alike.",
       "aHash": "9df44c14402b28a1d80e7328bf562b3621703ec6890eef05e2d482b42f20598d"
     },
     {
       "id": 6026,
       "sourceGame": "strategyDesk",
-      "q": "A demand forecast has a wide range. What should the manager do before setting price?",
+      "q": "A service has 40 places. Demand at one price is 60 with probability 0.25 and 20 otherwise. What is expected sales volume after respecting capacity?",
       "options": [
-        "Test pricing under several demand scenarios",
-        "Use the same price in every period because forecasts cannot affect scarcity or capacity utilization",
-        "Pretend capacity is unlimited",
-        "Use last year's fixed cost as the forecast"
+        "25",
+        "30",
+        "40",
+        "45"
       ],
       "tag": "forecasting",
-      "type": "application",
+      "type": "calculation",
       "objective": "LO12.4",
       "difficulty": "bridge",
       "conceptCluster": "LO12.4_bridge",
       "primarySkill": "forecast_driven_pricing",
       "secondarySkills": [],
       "repairSkill": "forecast_driven_pricing",
-      "commonError": "misapplies_forecast_driven_pricing",
-      "feedback": "Scenario analysis shows how a price performs under different demand outcomes.",
-      "aHash": "3b6df0ed9e682e22fa5c9597148ade051e2c19d8deedc0bfe6d07afc84cd6fc6"
+      "commonError": "caps_average_instead_of_state_sales",
+      "feedback": "Sales are 40 in the high state and 20 otherwise. Expected sales=.25×40+.75×20=25, not uncapped mean demand 30.",
+      "aHash": "b7a56873cd771f2c446d369b649430b65a756ba278ff97ec81bb6f55b2e73569"
     }
   ],
   "promotion_response": [
     {
       "id": 6027,
       "sourceGame": "strategyDesk",
-      "q": "A coupon costs $6,000 and generates 900 incremental sales with $8 contribution each. What is net contribution?",
+      "q": "A coupon costs $6,000 and generates 900 incremental sales with $8 contribution each. What is net contribution? The $8 margin is after the coupon, and no existing customer receives a discount.",
       "options": [
         "$6,000",
         "$1,200",
@@ -16374,14 +14767,14 @@ window.microSkillBridgePools = {
         "$13,200"
       ],
       "tag": "promotion",
-      "type": "application",
+      "type": "calculation",
       "objective": "LO12.5",
       "difficulty": "bridge",
       "conceptCluster": "LO12.5_bridge",
       "primarySkill": "promotion_response",
       "secondarySkills": [],
       "repairSkill": "promotion_response",
-      "commonError": "misapplies_promotion_response",
+      "commonError": "omits_campaign_cost",
       "feedback": "The campaign adds $7,200 contribution and costs $6,000, leaving $1,200.",
       "aHash": "1dcc7619134cdb1de916b106a96326de3a8ac9eb25d79c57ce00de777b3203e1"
     },
@@ -16390,10 +14783,10 @@ window.microSkillBridgePools = {
       "sourceGame": "strategyDesk",
       "q": "A promotion moves many purchases from next month into this month but creates few new purchases. What should the analyst avoid counting?",
       "options": [
-        "Only campaign cost",
-        "Contribution per sale",
+        "Campaign cost from the profit calculation",
+        "All contribution from genuinely new buyers",
         "Shifted sales as entirely incremental demand",
-        "Judge the promotion by gross sales growth without subtracting campaign cost or lost margin"
+        "Unchanged sales as proof of zero campaign cost"
       ],
       "tag": "promotion",
       "type": "application",
@@ -16403,31 +14796,9 @@ window.microSkillBridgePools = {
       "primarySkill": "promotion_response",
       "secondarySkills": [],
       "repairSkill": "promotion_response",
-      "commonError": "misapplies_promotion_response",
+      "commonError": "counts_purchase_timing_as_new_demand",
       "feedback": "Timing shifts are not the same as new demand and can overstate the promotion's effect.",
       "aHash": "519bf706eb4550f1239d9d0f4449fa36e52feddc9bf85a83dd1b2ec3c1637c0f"
-    },
-    {
-      "id": 6029,
-      "sourceGame": "strategyDesk",
-      "q": "Which result best supports repeating a campaign?",
-      "options": [
-        "Sales rose, but net contribution fell",
-        "Revenue rose by less than campaign cost",
-        "Judge the promotion by gross sales growth without subtracting campaign cost or lost margin",
-        "Incremental contribution consistently exceeds campaign cost"
-      ],
-      "tag": "promotion",
-      "type": "application",
-      "objective": "LO12.5",
-      "difficulty": "bridge",
-      "conceptCluster": "LO12.5_bridge",
-      "primarySkill": "promotion_response",
-      "secondarySkills": [],
-      "repairSkill": "promotion_response",
-      "commonError": "misapplies_promotion_response",
-      "feedback": "Repeat the campaign only when the incremental profit effect is positive.",
-      "aHash": "46d8df584a482a06ab67e1b7fbbdcd46de133185900bf9128e11b578c49da0c1"
     }
   ],
   "behavioral_pricing": [
@@ -16437,9 +14808,9 @@ window.microSkillBridgePools = {
       "q": "A firm presents a $120 annual plan as '$10 per month, billed annually.' What psychological device is being used?",
       "options": [
         "Framing the total as a smaller periodic amount",
-        "Changing marginal cost",
-        "Use exaggerated reference prices or hidden fees because any framing that raises sales is acceptable",
-        "Creating a Nash equilibrium"
+        "Reducing the actual annual bill",
+        "Changing marginal service cost",
+        "Verifying customers’ incomes"
       ],
       "tag": "behavioral",
       "type": "application",
@@ -16449,7 +14820,7 @@ window.microSkillBridgePools = {
       "primarySkill": "behavioral_pricing",
       "secondarySkills": [],
       "repairSkill": "behavioral_pricing",
-      "commonError": "misapplies_behavioral_pricing",
+      "commonError": "confuses_frame_with_actual_bill",
       "feedback": "The same total price is framed as a smaller monthly amount.",
       "aHash": "6e3dce7ff14feab41662ceb02f00f6a3a59b076d2bcf3b47c2396d19c00eabba"
     },
@@ -16458,10 +14829,10 @@ window.microSkillBridgePools = {
       "sourceGame": "strategyDesk",
       "q": "Which price display is most defensible?",
       "options": [
-        "A fake 'was' price used to exaggerate savings",
+        "A fake prior price that exaggerates savings",
         "A truthful comparison with all mandatory fees disclosed",
-        "Use exaggerated reference prices or hidden fees because any framing that raises sales is acceptable",
-        "A countdown timer that resets for every visitor"
+        "A comparison omitting mandatory fees",
+        "A countdown that restarts without a genuine deadline"
       ],
       "tag": "behavioral",
       "type": "application",
@@ -16471,19 +14842,19 @@ window.microSkillBridgePools = {
       "primarySkill": "behavioral_pricing",
       "secondarySkills": [],
       "repairSkill": "behavioral_pricing",
-      "commonError": "misapplies_behavioral_pricing",
+      "commonError": "treats_hidden_fees_as_truthful_comparison",
       "feedback": "Behavioral pricing should remain accurate and transparent.",
       "aHash": "a800fdfac252f1f12726a9d01401b6a1df7f1452d244bf314f5840d7d86057b5"
     },
     {
       "id": 6032,
       "sourceGame": "strategyDesk",
-      "q": "A manager wants to test whether $49 feels meaningfully different from $50. What is the strongest approach?",
+      "q": "A manager wants to isolate price framing for a service costing $120 per year. Which experiment best isolates framing?",
       "options": [
-        "Assume every buyer reacts the same way",
-        "Change price and advertising at the same time",
-        "Run a controlled test of the two price presentations",
-        "Use exaggerated reference prices or hidden fees because any framing that raises sales is acceptable"
+        "Change the price, product features, and advertising together",
+        "Compare $49 with $50 while also changing annual cost",
+        "Randomly display $120 annually or $10 per month billed $120 annually, holding other terms fixed",
+        "Ask only customers who chose the cheaper display"
       ],
       "tag": "behavioral",
       "type": "application",
@@ -16493,9 +14864,9 @@ window.microSkillBridgePools = {
       "primarySkill": "behavioral_pricing",
       "secondarySkills": [],
       "repairSkill": "behavioral_pricing",
-      "commonError": "misapplies_behavioral_pricing",
-      "feedback": "A controlled comparison isolates the effect of the price framing.",
-      "aHash": "f1aced4b0e8a6630d51c2acb84962723bc58df74d96dc9ed6ac59ab22884b445"
+      "commonError": "confounds_framing_with_price_level",
+      "feedback": "Random assignment with the same actual bill and service separates presentation from price level and product differences.",
+      "aHash": "426ae1192985932c1c789dd9cfdda4db690488d828f3a5c3f7e07c3984f49c46"
     }
   ],
   "price_discrimination": [
@@ -16504,9 +14875,9 @@ window.microSkillBridgePools = {
       "sourceGame": "strategyDesk",
       "q": "A museum charges verified students $8 and adults $14 for the same admission. What is the likely objective?",
       "options": [
-        "Equalize marginal cost",
-        "Charge different prices whenever possible even if customer values are identical and resale is unrestricted",
-        "Turn the service into a bundle",
+        "Sell two complementary products together",
+        "Equalize marginal cost across buyers",
+        "Eliminate consumer choice among all providers",
         "Capture demand differences across groups"
       ],
       "tag": "segmentation",
@@ -16517,7 +14888,7 @@ window.microSkillBridgePools = {
       "primarySkill": "price_discrimination",
       "secondarySkills": [],
       "repairSkill": "price_discrimination",
-      "commonError": "misapplies_price_discrimination",
+      "commonError": "ignores_segment_demand_difference",
       "feedback": "The museum prices identifiable groups according to differences in willingness to pay.",
       "aHash": "6dc8384e44bfafde47f896f5daeff89e25f1968dda6fb5ac0b4c92e811f9575b"
     },
@@ -16539,31 +14910,9 @@ window.microSkillBridgePools = {
       "primarySkill": "price_discrimination",
       "secondarySkills": [],
       "repairSkill": "price_discrimination",
-      "commonError": "misapplies_price_discrimination",
+      "commonError": "ignores_transferability",
       "feedback": "Transferability lets low-price buyers resell to high-value users.",
       "aHash": "3a02e4c92e41d4a82faab8354edaeadbff438cc43fc3160eb04851ccdf9aeeef"
-    },
-    {
-      "id": 6035,
-      "sourceGame": "strategyDesk",
-      "q": "Which market is the best candidate for price discrimination?",
-      "options": [
-        "Customers have identical demand and can resell freely",
-        "Customer values differ and resale can be controlled",
-        "The seller cannot identify or sort customers",
-        "Every customer must pay marginal cost by law"
-      ],
-      "tag": "segmentation",
-      "type": "application",
-      "objective": "LO13.1",
-      "difficulty": "bridge",
-      "conceptCluster": "LO13.1_bridge",
-      "primarySkill": "price_discrimination",
-      "secondarySkills": [],
-      "repairSkill": "price_discrimination",
-      "commonError": "misapplies_price_discrimination",
-      "feedback": "Heterogeneous willingness to pay plus resale control supports discriminatory pricing.",
-      "aHash": "2dc0c433e532c5521c9b5243f55b8bb62b8ebf97efc9d052fa4c8231690491c7"
     }
   ],
   "direct_price_discrimination": [
@@ -16585,18 +14934,18 @@ window.microSkillBridgePools = {
       "primarySkill": "direct_price_discrimination",
       "secondarySkills": [],
       "repairSkill": "direct_price_discrimination",
-      "commonError": "misapplies_direct_price_discrimination",
+      "commonError": "confuses_verified_status_with_versions",
       "feedback": "Verified nonprofit status directly determines the price.",
       "aHash": "f9e7b95d9cc2fcfdcf62d35715cf5c74f0663916af1b06d2bdd6c12fce04e7bb"
     },
     {
       "id": 6037,
       "sourceGame": "strategyDesk",
-      "q": "A seller mails a discount to customers identified from prior purchases. What is the distinguishing feature?",
+      "q": "A seller mails a discount to customers identified from prior purchases. What is the distinguishing feature? The personalized offer cannot be transferred.",
       "options": [
-        "Customers self-select only through product versions",
-        "Let every customer claim an anonymous discount without verifying any segment characteristic",
-        "The discount cannot affect demand",
+        "Eligibility is random and unrelated to customer information",
+        "Customers select only through version restrictions",
+        "All customer records are irrelevant to the offer",
         "The seller uses customer information to assign the offer"
       ],
       "tag": "segmentation",
@@ -16607,7 +14956,7 @@ window.microSkillBridgePools = {
       "primarySkill": "direct_price_discrimination",
       "secondarySkills": [],
       "repairSkill": "direct_price_discrimination",
-      "commonError": "misapplies_direct_price_discrimination",
+      "commonError": "misses_customer_information_assignment",
       "feedback": "The seller identifies the segment rather than relying solely on self-selection.",
       "aHash": "234261457f6254639f7dfc43247cabd68c7d9a0dfa3f7b84ddb17215d3adf352"
     },
@@ -16629,7 +14978,7 @@ window.microSkillBridgePools = {
       "primarySkill": "direct_price_discrimination",
       "secondarySkills": [],
       "repairSkill": "direct_price_discrimination",
-      "commonError": "misapplies_direct_price_discrimination",
+      "commonError": "permits_anonymous_discount_transfer",
       "feedback": "Transferability undermines the link between the verified buyer and the discount.",
       "aHash": "ac127265889cba47ea6bf69357649b15d3edd5180b5f0fe3492b7a80187422f7"
     }
@@ -16640,10 +14989,10 @@ window.microSkillBridgePools = {
       "sourceGame": "strategyDesk",
       "q": "A student software license requires campus login every time it is used. What is the pricing purpose?",
       "options": [
-        "Increase marginal cost",
+        "Measure marginal production cost",
         "Prevent resale to nonstudents",
-        "Bundle unrelated products",
-        "Allow low-price buyers to transfer the product freely to customers assigned the high price"
+        "Create a package of unrelated products",
+        "Permit unrestricted transfer to another user"
       ],
       "tag": "segmentation",
       "type": "application",
@@ -16653,53 +15002,31 @@ window.microSkillBridgePools = {
       "primarySkill": "arbitrage_control",
       "secondarySkills": [],
       "repairSkill": "arbitrage_control",
-      "commonError": "misapplies_arbitrage_control",
+      "commonError": "misses_access_verification_purpose",
       "feedback": "Repeated verification keeps the discounted license with the eligible user.",
       "aHash": "a29b9e8eb14226dc70a2a13b2bc4b4164b6f1e8c87742fb29ac6e5006242a464"
     },
     {
       "id": 6040,
       "sourceGame": "strategyDesk",
-      "q": "A firm sells the same product for $20 in one segment and $50 in another. What happens if resale costs only $2?",
+      "q": "A reseller can buy at 20, sell at 50, and pays 2 per unit in transfer cost. What net margin threatens the two-price policy?",
       "options": [
-        "The price gap becomes more profitable",
-        "Allow low-price buyers to transfer the product freely to customers assigned the high price",
-        "Arbitrage is likely to undermine the high price",
-        "Demand becomes perfectly inelastic"
+        "32",
+        "30",
+        "28",
+        "18"
       ],
       "tag": "segmentation",
-      "type": "application",
+      "type": "calculation",
       "objective": "LO13.3",
       "difficulty": "bridge",
       "conceptCluster": "LO13.3_bridge",
       "primarySkill": "arbitrage_control",
       "secondarySkills": [],
       "repairSkill": "arbitrage_control",
-      "commonError": "misapplies_arbitrage_control",
-      "feedback": "A $30 gap with $2 resale cost creates a strong arbitrage opportunity.",
-      "aHash": "8756a03030bfc9bb724bb1c38e471e2e4f5887a1f800434c911081abc4c682c0"
-    },
-    {
-      "id": 6041,
-      "sourceGame": "strategyDesk",
-      "q": "Which design best protects a discounted membership?",
-      "options": [
-        "A transferable bearer card",
-        "Allow low-price buyers to transfer the product freely to customers assigned the high price",
-        "Unlimited resale through a marketplace",
-        "A nontransferable account linked to the eligible customer"
-      ],
-      "tag": "segmentation",
-      "type": "application",
-      "objective": "LO13.3",
-      "difficulty": "bridge",
-      "conceptCluster": "LO13.3_bridge",
-      "primarySkill": "arbitrage_control",
-      "secondarySkills": [],
-      "repairSkill": "arbitrage_control",
-      "commonError": "misapplies_arbitrage_control",
-      "feedback": "Identity-linked, nontransferable access blocks cross-segment resale.",
-      "aHash": "923ee8c72f65243d8791338150fb21f7446ec460b8ca88640d31eff8cad52864"
+      "commonError": "ignores_positive_resale_margin",
+      "feedback": "Net resale margin 50−20−2=28 is positive; profitable resale can undermine the high-price segment.",
+      "aHash": "59e19706d51d39f66711c2653cd7eb1291c94d9b55eb14bda74ce4dc636d015a"
     }
   ],
   "robinson_patman": [
@@ -16709,9 +15036,9 @@ window.microSkillBridgePools = {
       "q": "A supplier gives one retailer a lower price for the same commodity, and the retailers compete for the same customers. What should be examined first?",
       "options": [
         "Whether the difference may injure competition",
-        "Whether the supplier uses charm pricing",
-        "Whether the retailers sell complements",
-        "Treat every price difference between any two products or buyers as automatically unlawful"
+        "Whether charm pricing is used",
+        "Whether unequal prices alone prove a violation",
+        "Whether the product has positive fixed cost"
       ],
       "tag": "regulation",
       "type": "application",
@@ -16721,7 +15048,7 @@ window.microSkillBridgePools = {
       "primarySkill": "robinson_patman",
       "secondarySkills": [],
       "repairSkill": "robinson_patman",
-      "commonError": "misapplies_robinson_patman",
+      "commonError": "assumes_any_difference_is_automatically_illegal",
       "feedback": "The core issue is potential competitive injury among competing purchasers.",
       "aHash": "78cdfa988bb4636a90ceebcab35d722750fc5f581513c3bc2ced14c03214f557"
     },
@@ -16730,10 +15057,10 @@ window.microSkillBridgePools = {
       "sourceGame": "strategyDesk",
       "q": "A large order costs the supplier substantially less per unit to serve. What fact may help explain a lower price?",
       "options": [
-        "The buyer's logo",
+        "The buyer’s logo",
         "A cost justification",
-        "The seller's sunk advertising cost",
-        "The number of unrelated products"
+        "The buyer’s size without any cost evidence",
+        "The supplier’s preference for one retailer"
       ],
       "tag": "regulation",
       "type": "application",
@@ -16743,7 +15070,7 @@ window.microSkillBridgePools = {
       "primarySkill": "robinson_patman",
       "secondarySkills": [],
       "repairSkill": "robinson_patman",
-      "commonError": "misapplies_robinson_patman",
+      "commonError": "assumes_buyer_size_is_cost_justification",
       "feedback": "Documented cost savings can justify some price differences.",
       "aHash": "a1c89cfb2a0e49585085f967cf7880ea554876413d03be7b285955305f2d182f"
     },
@@ -16765,7 +15092,7 @@ window.microSkillBridgePools = {
       "primarySkill": "robinson_patman",
       "secondarySkills": [],
       "repairSkill": "robinson_patman",
-      "commonError": "misapplies_robinson_patman",
+      "commonError": "compares_unlike_goods",
       "feedback": "The Act focuses on discriminatory prices for comparable commodities, not ordinary price differences across materially different products.",
       "aHash": "f9254347dc3a16a170cdfb6732607fe84fae14dfc7abc65ce041a673f1df591a"
     }
@@ -16789,19 +15116,19 @@ window.microSkillBridgePools = {
       "primarySkill": "price_discrimination_cases",
       "secondarySkills": [],
       "repairSkill": "price_discrimination_cases",
-      "commonError": "misapplies_price_discrimination_cases",
+      "commonError": "ignores_flexibility_based_screening",
       "feedback": "Restrictions can sort flexible leisure travelers from high-value business travelers.",
       "aHash": "63b7f8cbbc8cb88029e0e2a09b9e1386980810c88a9b8096d06e638cb6f7a060"
     },
     {
       "id": 6046,
       "sourceGame": "strategyDesk",
-      "q": "A restaurant charges more for steak than salad because steak ingredients cost more. What is the best conclusion?",
+      "q": "A repair shop charges 120 for a service with 90 variable cost and 90 for a different service with 60 variable cost. Does the price difference alone establish customer price discrimination?",
       "options": [
-        "The difference may reflect cost rather than price discrimination",
-        "It is always direct discrimination",
-        "It is indirect discrimination by definition",
-        "Label every price difference as discrimination without checking cost, segment, or resale conditions"
+        "No; both services have the same 30 price-cost margin",
+        "Yes; any different posted prices prove discrimination",
+        "Yes; the higher-cost service must be discounted",
+        "No; services can never be price discriminated"
       ],
       "tag": "segmentation",
       "type": "application",
@@ -16811,19 +15138,19 @@ window.microSkillBridgePools = {
       "primarySkill": "price_discrimination_cases",
       "secondarySkills": [],
       "repairSkill": "price_discrimination_cases",
-      "commonError": "misapplies_price_discrimination_cases",
-      "feedback": "Different production costs can explain different prices.",
-      "aHash": "21f841ffa65ccc6b1bb46726ccdc58cd88afa0f48fd0f49420fa3286069bd35b"
+      "commonError": "ignores_cost_based_price_difference",
+      "feedback": "The 30 price gap matches the cost gap. This observation alone does not establish different markups tied to customer willingness to pay.",
+      "aHash": "30ee9a154cfc4f4502be54f7cbaf807578f9298e065b8468542ac22f00380c89"
     },
     {
       "id": 6047,
       "sourceGame": "strategyDesk",
-      "q": "Which observation most strongly indicates price discrimination?",
+      "q": "For offerings with equal service costs, which observation most strongly indicates price discrimination?",
       "options": [
-        "Label every price difference as discrimination without checking cost, segment, or resale conditions",
-        "Comparable customers pay different prices based on verified segment status",
-        "Prices rose after input costs increased",
-        "A store lowers all prices during a clearance sale"
+        "Different products have different production costs",
+        "Buyers pay different prices based on verified segment status",
+        "All prices rise after input costs increase",
+        "A store lowers every buyer’s price during clearance"
       ],
       "tag": "segmentation",
       "type": "application",
@@ -16833,42 +15160,42 @@ window.microSkillBridgePools = {
       "primarySkill": "price_discrimination_cases",
       "secondarySkills": [],
       "repairSkill": "price_discrimination_cases",
-      "commonError": "misapplies_price_discrimination_cases",
+      "commonError": "ignores_comparable_cost_condition",
       "feedback": "Segment-linked price differences for comparable offerings are the clearest evidence.",
-      "aHash": "1098bbf89d14ef0dca1a5e4cfa47e79056669fede4ffb29bd9b6cea67531fbac"
+      "aHash": "e9edd2c5ed9401e074adc9a46c264e6f36d8f81abe25306e2b4ad38500318aeb"
     }
   ],
   "indirect_price_discrimination": [
     {
       "id": 6048,
       "sourceGame": "strategyDesk",
-      "q": "A car wash offers basic, deluxe, and unlimited plans to every customer. The plans are intended to",
+      "q": "A business can buy 10 service uses for 60 or 20 uses for 100. It needs exactly 20 uses and may buy two small packages. Which choice reveals the lower-cost large-usage option?",
       "options": [
-        "Offer a cheaper option that is better on every dimension so every customer type chooses it",
-        "eliminate all consumer surplus",
-        "sort customers by usage and willingness to pay",
-        "make marginal cost identical"
+        "Both cost 100",
+        "Two 10-use packages save 20",
+        "One 20-use package saves 20",
+        "One 10-use package meets all 20 uses"
       ],
       "tag": "self_selection",
-      "type": "application",
+      "type": "calculation",
       "objective": "LO14.1",
       "difficulty": "bridge",
       "conceptCluster": "LO14.1_bridge",
       "primarySkill": "indirect_price_discrimination",
       "secondarySkills": [],
       "repairSkill": "indirect_price_discrimination",
-      "commonError": "misapplies_indirect_price_discrimination",
-      "feedback": "The menu induces customers to reveal their type through plan choice.",
-      "aHash": "bfb0949ca2fb0c8f53ee5ee218c38bfc40c0d853e9446653cfb4402603909fab"
+      "commonError": "miscompares_package_quantities",
+      "feedback": "Two small packages cost 120; one large costs 100. A quantity menu can sort customers by usage without checking identity.",
+      "aHash": "bcde64707b66dca3b0fca0b60a30f0f2f40fd67a1c486237d24461e295bf524e"
     },
     {
       "id": 6049,
       "sourceGame": "strategyDesk",
       "q": "A premium version adds features valued mainly by high-value users. Why can this support indirect discrimination?",
       "options": [
-        "The seller directly observes income",
-        "All customers receive the same value",
-        "Offer a cheaper option that is better on every dimension so every customer type chooses it",
+        "A cheaper option dominates every higher-price option",
+        "The seller directly observes every buyer’s income",
+        "All types receive the same value from every feature",
         "High-value users voluntarily choose the higher-price option"
       ],
       "tag": "self_selection",
@@ -16879,7 +15206,7 @@ window.microSkillBridgePools = {
       "primarySkill": "indirect_price_discrimination",
       "secondarySkills": [],
       "repairSkill": "indirect_price_discrimination",
-      "commonError": "misapplies_indirect_price_discrimination",
+      "commonError": "ignores_feature_value_heterogeneity",
       "feedback": "Feature differences can induce self-selection without direct identification.",
       "aHash": "a9502ab40f910edc2f79482a41c628d5d39570692bf5e4a5d8e41c2b6cb7f799"
     },
@@ -16901,7 +15228,7 @@ window.microSkillBridgePools = {
       "primarySkill": "indirect_price_discrimination",
       "secondarySkills": [],
       "repairSkill": "indirect_price_discrimination",
-      "commonError": "misapplies_indirect_price_discrimination",
+      "commonError": "assumes_dominated_premium_will_sell",
       "feedback": "If the cheaper option dominates, high-value users will not choose the premium version.",
       "aHash": "02519b307237422bbd21ee5cda6c2e0b01a420a0d3639dbf4d05d3c5e134fb95"
     }
@@ -16910,34 +15237,34 @@ window.microSkillBridgePools = {
     {
       "id": 6051,
       "sourceGame": "strategyDesk",
-      "q": "A printer is inexpensive, but ink is charged per cartridge. What role does the cartridge price play?",
+      "q": "Service A charges 10 upfront plus 3 per use; Service B charges 40 upfront plus 1 per use. At 20 uses, which costs less?",
       "options": [
-        "It verifies customer age",
-        "It meters usage",
-        "It aggregates demand",
-        "It prevents all entry"
+        "A by 10",
+        "B by 10",
+        "They tie",
+        "B by 30"
       ],
       "tag": "self_selection",
-      "type": "application",
+      "type": "calculation",
       "objective": "LO14.2",
       "difficulty": "bridge",
       "conceptCluster": "LO14.2_bridge",
       "primarySkill": "versioning_and_metering",
       "secondarySkills": [],
       "repairSkill": "versioning_and_metering",
-      "commonError": "misapplies_versioning_and_metering",
-      "feedback": "Customers who print more buy more cartridges and therefore pay more.",
-      "aHash": "694c6a2520dc213c3f905016dba249e898894f9943ec9b256d42724d8f301de4"
+      "commonError": "omits_fixed_or_usage_fee",
+      "feedback": "A costs 70 and B 60; higher fixed fees can appeal to heavy users when usage charges are lower.",
+      "aHash": "385bf743bba13804e522e51643f7168b92354d010fea162968eec8b3fb1d63cc"
     },
     {
       "id": 6052,
       "sourceGame": "strategyDesk",
       "q": "A low-price device is intentionally slower than the premium model even though production cost is similar. What is the likely objective?",
       "options": [
-        "Reduce total demand to zero",
-        "Make the low-price version identical to premium and let heavy users avoid usage charges",
+        "Make the low-price device more attractive to premium users",
+        "Make both versions identical at different prices",
         "Protect the premium segment through versioning",
-        "Comply with a capacity limit"
+        "Remove the relationship between features and willingness to pay"
       ],
       "tag": "self_selection",
       "type": "application",
@@ -16947,7 +15274,7 @@ window.microSkillBridgePools = {
       "primarySkill": "versioning_and_metering",
       "secondarySkills": [],
       "repairSkill": "versioning_and_metering",
-      "commonError": "misapplies_versioning_and_metering",
+      "commonError": "treats_feature_damage_as_cost_saving",
       "feedback": "The limitation helps sort customers by willingness to pay.",
       "aHash": "4c70d5d5e7e1346abe7270734614b874ea356d2127cbf910287b71f682b72838"
     },
@@ -16969,7 +15296,7 @@ window.microSkillBridgePools = {
       "primarySkill": "versioning_and_metering",
       "secondarySkills": [],
       "repairSkill": "versioning_and_metering",
-      "commonError": "misapplies_versioning_and_metering",
+      "commonError": "removes_screening_differences",
       "feedback": "When the low-price version becomes too close to premium, high-value users downgrade.",
       "aHash": "eb7d74403dc31d6ff25bc1d98b803e7ae5d800688f98bf17dac93ca81750360d"
     }
@@ -16978,34 +15305,34 @@ window.microSkillBridgePools = {
     {
       "id": 6054,
       "sourceGame": "strategyDesk",
-      "q": "A streaming service offers ad-supported, standard, and premium tiers. What is the profit logic?",
+      "q": "A streaming viewer values ad-supported access at 30 and ad-free access at 50. Prices are 10 and 35. Which tier maximizes surplus?",
       "options": [
-        "Customers reveal willingness to pay through tier choice",
-        "The service directly verifies income",
-        "Offer the same value at different prices and assume high-value customers will voluntarily pay more",
-        "The tiers eliminate consumer surplus completely"
+        "Ad-supported, with surplus 20 versus 15",
+        "Ad-free, with surplus 50 versus 30",
+        "Ad-free, with surplus 35 versus 10",
+        "Neither, because both prices are positive"
       ],
       "tag": "self_selection",
-      "type": "application",
+      "type": "calculation",
       "objective": "LO14.3",
       "difficulty": "bridge",
       "conceptCluster": "LO14.3_bridge",
       "primarySkill": "consumer_surplus_extraction",
       "secondarySkills": [],
       "repairSkill": "consumer_surplus_extraction",
-      "commonError": "misapplies_consumer_surplus_extraction",
-      "feedback": "Different combinations of price and features sort customers.",
-      "aHash": "b0fcc9a9832edc176e9b2e260e514b68d4e1b803cf0e73deae9ffc9c2c270884"
+      "commonError": "compares_values_instead_of_surplus",
+      "feedback": "The viewer compares value minus price:20 versus 15. A high-value version does not guarantee an upgrade if its extra price exceeds its added value.",
+      "aHash": "31938f2d6d09ddd8397b99f58b9b7c7ee3d91bfb4cdce2d69e659b33c690eda3"
     },
     {
       "id": 6055,
       "sourceGame": "strategyDesk",
       "q": "A premium tier adds a feature that low-value customers barely value but high-value customers strongly value. What does this do?",
       "options": [
-        "Makes all customers choose basic",
+        "Makes versions equally attractive to every buyer",
         "Improves separation between customer types",
-        "Offer the same value at different prices and assume high-value customers will voluntarily pay more",
-        "Eliminates demand uncertainty"
+        "Guarantees no high-value buyer ever trades down",
+        "Eliminates all uncertainty about demand"
       ],
       "tag": "self_selection",
       "type": "application",
@@ -17015,7 +15342,7 @@ window.microSkillBridgePools = {
       "primarySkill": "consumer_surplus_extraction",
       "secondarySkills": [],
       "repairSkill": "consumer_surplus_extraction",
-      "commonError": "misapplies_consumer_surplus_extraction",
+      "commonError": "ignores_selective_premium_feature_value",
       "feedback": "A targeted premium feature makes the intended high-value segment more likely to upgrade.",
       "aHash": "f611f9e048fc65953238fdeac60e0d8453311f62b97e88d91a1252a377a40708"
     },
@@ -17037,7 +15364,7 @@ window.microSkillBridgePools = {
       "primarySkill": "consumer_surplus_extraction",
       "secondarySkills": [],
       "repairSkill": "consumer_surplus_extraction",
-      "commonError": "misapplies_consumer_surplus_extraction",
+      "commonError": "ignores_surplus_surrender_on_existing_buyers",
       "feedback": "If premium is underpriced, the firm captures less of high-value customers' surplus.",
       "aHash": "27f429ac375e25ea77736ada4b2ee6f2ba823a01b4e2bee1a48e2ca293458eb5"
     }
@@ -17046,29 +15373,29 @@ window.microSkillBridgePools = {
     {
       "id": 6057,
       "sourceGame": "strategyDesk",
-      "q": "Two buyers value A and B at (90,10) and (20,80). What is each buyer's total value for the bundle?",
+      "q": "Two buyers value A and B at (90,10) and (20,80). What is each buyer's total value for the bundle? Assume additive valuations.",
       "options": [
-        "Bundle products without comparing customer valuations or profits from separate and mixed sales",
-        "$110 and $90",
         "$10 and $20",
+        "$110 and $90",
+        "$90 and $80",
         "$100 for each"
       ],
       "tag": "bundling",
-      "type": "application",
+      "type": "calculation",
       "objective": "LO14.4",
       "difficulty": "bridge",
       "conceptCluster": "LO14.4_bridge",
       "primarySkill": "bundling",
       "secondarySkills": [],
       "repairSkill": "bundling",
-      "commonError": "misapplies_bundling",
+      "commonError": "omits_component_bundle_value",
       "feedback": "The totals are 90+10=$100 and 20+80=$100.",
       "aHash": "97db516032d88856e23b75269735ff42eb67562695bff645f048df1ac6e7d391"
     },
     {
       "id": 6058,
       "sourceGame": "strategyDesk",
-      "q": "Two buyers value goods A/B at ($90,$10) and ($20,$80). Each wants at most one of each good and buys when indifferent. Costs are zero. Why does a $95 bundle earn more than separate prices of $90 for A and $80 for B?",
+      "q": "Two buyers value goods A/B at ($90, $10) and ($20, $80). Each wants at most one of each good and buys when indifferent. Costs are zero. Why does a $95 bundle earn more than separate prices of $90 for A and $80 for B? Component values are additive.",
       "options": [
         "The bundle sells twice for $190, whereas those separate prices earn $170",
         "The separate prices sell both goods to both buyers and earn $340",
@@ -17093,7 +15420,7 @@ window.microSkillBridgePools = {
       "q": "Which evidence argues against pure bundling?",
       "options": [
         "Customers have offsetting valuations",
-        "Many customers strongly value only one product and reject the package",
+        "Many single-product buyers reject the bundle",
         "Bundle distribution cost is low",
         "Separate-sale profit is low"
       ],
@@ -17105,21 +15432,21 @@ window.microSkillBridgePools = {
       "primarySkill": "bundling",
       "secondarySkills": [],
       "repairSkill": "bundling",
-      "commonError": "misapplies_bundling",
+      "commonError": "ignores_single_component_customers",
       "feedback": "Pure bundling can lose customers who want only one component; mixed bundling may be better.",
-      "aHash": "209a75501003206630fa893a98a6305cc5ee5aad659aea95a51864dc00aca8a2"
+      "aHash": "bba3a9c43b504a4b0be78ce43a7ec25cddab789ff362e6a585ca5adf962f2337"
     }
   ],
   "strategic_interdependence": [
     {
       "id": 6060,
       "sourceGame": "strategyDesk",
-      "q": "A firm considers expanding capacity. Profit rises if its rival stays small but falls if the rival expands too. What must the firm model?",
+      "q": "A supplier earns 8 from expanding if its rival stays small and−3 if the rival expands. Staying small yields 2 in either case. How should its best response depend on the rival?",
       "options": [
-        "Only its sunk construction cost",
-        "Only market demand from one buyer",
-        "The rival's response",
-        "A price ending"
+        "Stay Small regardless",
+        "Expand regardless",
+        "Expand against Small; stay Small against Expand",
+        "Expand only when the rival expands"
       ],
       "tag": "game_theory",
       "type": "application",
@@ -17129,19 +15456,19 @@ window.microSkillBridgePools = {
       "primarySkill": "strategic_interdependence",
       "secondarySkills": [],
       "repairSkill": "strategic_interdependence",
-      "commonError": "misapplies_strategic_interdependence",
-      "feedback": "The expansion payoff changes with the rival's action.",
-      "aHash": "0b1bd56c45c666663de75bd8bf9c3459bed2e5e41741415b1b67b66c72f28058"
+      "commonError": "ignores_conditional_payoffs",
+      "feedback": "Compare 8 with 2 against Small and−3 with 2 against Expand. The preferred action depends on the rival’s decision.",
+      "aHash": "cb117e774cb7f70ceec6fc5890ee3e53b9431dc8f5875e0b2a006497c5455918"
     },
     {
       "id": 6061,
       "sourceGame": "strategyDesk",
-      "q": "Two firms choose advertising levels, and each firm's sales depend on both choices. This is a game because",
+      "q": "Payoffs are ordered (Buyer, Seller). The seller’s actions Accept and Reject yield (8,3) and (1,5). Which action is the seller’s best response?",
       "options": [
-        "advertising has a fixed cost",
-        "sales are measured in dollars",
-        "the firms have the same size",
-        "payoffs are interdependent"
+        "Either, because both payoffs are positive",
+        "Accept, because 8 exceeds 1",
+        "Accept, because total payoff 11 exceeds 6",
+        "Reject, because 5 exceeds 3"
       ],
       "tag": "game_theory",
       "type": "application",
@@ -17151,43 +15478,21 @@ window.microSkillBridgePools = {
       "primarySkill": "strategic_interdependence",
       "secondarySkills": [],
       "repairSkill": "strategic_interdependence",
-      "commonError": "misapplies_strategic_interdependence",
-      "feedback": "Each firm's outcome depends on its own decision and the rival's decision.",
-      "aHash": "36bdf948a57d3b0b088279e49ddb080a64c35603ff1e7c567ea187ecc2bdc208"
-    },
-    {
-      "id": 6062,
-      "sourceGame": "strategyDesk",
-      "q": "A manager analyzes a competitive move as though rivals will do nothing. What is the main flaw?",
-      "options": [
-        "The manager ignored strategic reaction",
-        "The manager used too much market data",
-        "The manager calculated marginal cost",
-        "Analyze the move as if rivals' actions cannot change the payoff from the decision"
-      ],
-      "tag": "game_theory",
-      "type": "application",
-      "objective": "LO15.1",
-      "difficulty": "bridge",
-      "conceptCluster": "LO15.1_bridge",
-      "primarySkill": "strategic_interdependence",
-      "secondarySkills": [],
-      "repairSkill": "strategic_interdependence",
-      "commonError": "misapplies_strategic_interdependence",
-      "feedback": "Ignoring rival response can reverse the predicted payoff.",
-      "aHash": "00d04e8b6086b124a3dd5fe3e4601304bcbe66f651338d096b78db154736ada5"
+      "commonError": "uses_other_player_or_joint_payoff",
+      "feedback": "Use the second payoff for the seller:5 from Reject is higher than 3 from Accept.",
+      "aHash": "4b9731ab98c8178e854a836d240f4cea2c783d469cabbef2f6a039aa3335f62a"
     }
   ],
   "game_timing": [
     {
       "id": 6063,
       "sourceGame": "strategyDesk",
-      "q": "Firm A announces and irreversibly builds capacity before Firm B chooses capacity. Who moves first?",
+      "q": "A rival sets quality in a sealed file on Monday. You choose Launch or Wait on Tuesday before the file is revealed. Can your pure strategy choose Launch only when the hidden quality is High?",
       "options": [
-        "Firm B",
-        "Firm A",
-        "Both move simultaneously",
-        "Neither firm has a move"
+        "Yes; Monday occurs before Tuesday",
+        "No; it cannot condition on unobserved quality",
+        "Yes; a later mover observes every earlier action by definition",
+        "No; players have no strategies in hidden-move games"
       ],
       "tag": "game_theory",
       "type": "application",
@@ -17197,53 +15502,9 @@ window.microSkillBridgePools = {
       "primarySkill": "game_timing",
       "secondarySkills": [],
       "repairSkill": "game_timing",
-      "commonError": "misapplies_game_timing",
-      "feedback": "Firm A's observable commitment occurs before Firm B's choice.",
-      "aHash": "88035d130467ae36de45790c9a57711b45d2b86df3fde07aea76dd41a0c97632"
-    },
-    {
-      "id": 6064,
-      "sourceGame": "strategyDesk",
-      "q": "Two bidders submit sealed bids at the same deadline. What is the relevant timing?",
-      "options": [
-        "Classify the game from which action is opened first rather than what players observe when choosing",
-        "Nonstrategic because only one item is sold",
-        "Simultaneous because neither sees the other's bid",
-        "Sequential because one bid is opened first"
-      ],
-      "tag": "game_theory",
-      "type": "application",
-      "objective": "LO15.2",
-      "difficulty": "bridge",
-      "conceptCluster": "LO15.2_bridge",
-      "primarySkill": "game_timing",
-      "secondarySkills": [],
-      "repairSkill": "game_timing",
-      "commonError": "misapplies_game_timing",
-      "feedback": "The strategic choices are made without observing the rival's current bid.",
-      "aHash": "c6ac14459934d08621ad8a3f66dff988b2dccaac3827e01e8eb4646ab4222e2a"
-    },
-    {
-      "id": 6065,
-      "sourceGame": "strategyDesk",
-      "q": "Why can moving first matter in a sequential game?",
-      "options": [
-        "The first mover always wins",
-        "The second mover has no choice",
-        "Classify the game from which action is opened first rather than what players observe when choosing",
-        "An observable commitment can change the follower's best response"
-      ],
-      "tag": "game_theory",
-      "type": "application",
-      "objective": "LO15.2",
-      "difficulty": "bridge",
-      "conceptCluster": "LO15.2_bridge",
-      "primarySkill": "game_timing",
-      "secondarySkills": [],
-      "repairSkill": "game_timing",
-      "commonError": "misapplies_game_timing",
-      "feedback": "A credible first move can reshape the choices available or attractive to the follower.",
-      "aHash": "3fadbb99344b4a69972f8c5b39e521d4d65b58431c4d9c5c8545cb08fc194594"
+      "commonError": "uses_calendar_order_instead_of_information",
+      "feedback": "Your information set contains both possible quality choices, so one action must apply to both. This is an independent explicitly hidden-move game.",
+      "aHash": "d3bce5354d9e29c97eae216d9a4be45f724f5ebbe4e11067c6fed8be073c56c2"
     }
   ],
   "nash_equilibrium": [
@@ -17253,9 +15514,9 @@ window.microSkillBridgePools = {
       "q": "At outcome (High, High), Firm A can earn more by switching to Low while Firm B stays High. Is (High, High) a Nash equilibrium?",
       "options": [
         "No, because Firm A has a profitable unilateral deviation",
-        "Yes, because both firms chose the same action",
-        "Call an outcome an equilibrium whenever total profit is high even if one player wants to deviate",
-        "No, because every Nash equilibrium must use Low"
+        "Yes, because actions have matching labels",
+        "Yes, because total profit is high",
+        "No, because every equilibrium must use Low"
       ],
       "tag": "game_theory",
       "type": "application",
@@ -17280,174 +15541,130 @@ window.microSkillBridgePools = {
         "D/L"
       ],
       "tag": "game_theory",
-      "type": "matrix",
+      "type": "application",
       "objective": "LO15.3",
       "difficulty": "bridge",
       "conceptCluster": "LO15.3_bridge",
       "primarySkill": "nash_equilibrium",
       "secondarySkills": [],
       "repairSkill": "nash_equilibrium",
-      "commonError": "misapplies_nash_equilibrium",
+      "commonError": "checks_only_one_player_best_response",
       "feedback": "The row player prefers U against L and D against R. The column player prefers R at either row. D/R is the only intersection.",
       "aHash": "d1c0a31e65324180bd80160403aad1ce6a1b5d6dab4293e8db353045ac484f92"
     },
     {
       "id": 6068,
       "sourceGame": "strategyDesk",
-      "q": "An outcome maximizes combined profit, but one firm can gain by deviating alone. What is the correct conclusion?",
+      "q": "In a simultaneous game, payoffs (Row, Column) are A/X(4,4), A/Y(0,1), B/X(4,2), B/Y(3,3). Which list contains all pure Nash equilibria?",
       "options": [
-        "It is Nash because joint profit is highest",
-        "It is Nash if the firms have equal payoffs",
-        "It is not Nash",
-        "It is automatically dominant"
+        "A/X only",
+        "B/Y only",
+        "A/X and B/Y",
+        "A/Y and B/X"
       ],
       "tag": "game_theory",
-      "type": "application",
+      "type": "matrix",
       "objective": "LO15.3",
       "difficulty": "bridge",
       "conceptCluster": "LO15.3_bridge",
       "primarySkill": "nash_equilibrium",
       "secondarySkills": [],
       "repairSkill": "nash_equilibrium",
-      "commonError": "misapplies_nash_equilibrium",
-      "feedback": "Joint optimality does not replace the unilateral-deviation test.",
-      "aHash": "2d5179eb409606efd612002ac0eb06318bc2985d99d2763470f9258ed53b00c2"
+      "commonError": "loses_equilibrium_by_ignoring_tie",
+      "feedback": "Row best responses are A and B to X and B to Y. Column best responds X to A and Y to B. The intersections are A/X and B/Y; keep the row tie at X.",
+      "aHash": "64499280f8ce58f0697413bb057174daf028f8faeae0a80017501114ec280ccd"
     }
   ],
   "strategic_rule_design": [
     {
-      "id": 6069,
+      "id": 6062,
       "sourceGame": "strategyDesk",
-      "q": "A firm signs a binding long-term capacity contract before a rival enters. Why might this change the game?",
+      "q": "A player gets 7 from Cooperate and 10 from Defect against a fixed opponent action. A new rule deducts 4 only from Defect. Which action is now its best response?",
       "options": [
-        "Assume an announced threat changes the game even when carrying it out would be irrational later",
-        "Fixed cost becomes marginal cost",
-        "The firms stop being strategic",
-        "The commitment can alter the rival's best response"
+        "Cooperate, because 7 exceeds 6",
+        "Defect, because 10 exceeds 7 before the rule",
+        "Either, because the penalty changes no incentives",
+        "Defect, because 4 is less than 7"
       ],
-      "tag": "game_theory",
+      "tag": "strategic_rule_design",
       "type": "application",
       "objective": "LO15.4",
       "difficulty": "bridge",
-      "conceptCluster": "LO15.4_bridge",
+      "conceptCluster": "LO15.1_bridge",
       "primarySkill": "strategic_rule_design",
       "secondarySkills": [],
       "repairSkill": "strategic_rule_design",
-      "commonError": "misapplies_strategic_rule_design",
-      "feedback": "An irreversible commitment can reshape the rival's payoff from entry.",
-      "aHash": "a5c7def244e2b7fec939ce4ba8582d428c0b5a5b1fe17d610fb5e38279a7a4f8"
-    },
-    {
-      "id": 6070,
-      "sourceGame": "strategyDesk",
-      "q": "A company threatens a price war but would lose more by carrying it out than by accommodating entry. How will a rational rival view the threat?",
-      "options": [
-        "As not credible",
-        "As binding because it was announced",
-        "As a Nash equilibrium",
-        "As direct discrimination"
-      ],
-      "tag": "game_theory",
-      "type": "application",
-      "objective": "LO15.4",
-      "difficulty": "bridge",
-      "conceptCluster": "LO15.4_bridge",
-      "primarySkill": "strategic_rule_design",
-      "secondarySkills": [],
-      "repairSkill": "strategic_rule_design",
-      "commonError": "misapplies_strategic_rule_design",
-      "feedback": "A threat that is not optimal to carry out at the future node is not credible.",
-      "aHash": "179ca67ddcfef4c8a0dad55e84bbf6c3b6fda89bb8ecea35411fda3b61ddcf97"
-    },
-    {
-      "id": 6071,
-      "sourceGame": "strategyDesk",
-      "q": "Row A pays 4, 7 and 2 against X, Y and Z. Row B pays 4, 9 and 5. Which statement correctly handles the tie?",
-      "options": [
-        "B strictly dominates A because two payoffs are higher",
-        "B weakly dominates A but does not strictly dominate it",
-        "A weakly dominates B because the X payoffs tie",
-        "Neither row dominates because one comparison is tied"
-      ],
-      "tag": "game_theory",
-      "type": "matrix",
-      "objective": "LO15.4",
-      "difficulty": "bridge",
-      "conceptCluster": "LO15.4_bridge",
-      "primarySkill": "strategic_rule_design",
-      "secondarySkills": [],
-      "repairSkill": "strategic_rule_design",
-      "commonError": "misapplies_strategic_rule_design",
-      "feedback": "B is never worse and is strictly better at Y and Z. The tie at X blocks strict dominance, not weak dominance.",
-      "aHash": "ce3f2fb6aabd67c637a327a99a0382557515157b926621d9224f6c85f396fdfb"
+      "commonError": "ignores_payoff_change_from_rule",
+      "feedback": "After the penalty Defect pays 6 while Cooperate still pays 7. Recompute payoffs before comparing actions.",
+      "aHash": "65a867bb78fe9c01efd46d4e7ad810e5934bacfda159a72c92793ce9ca0a64df"
     }
   ],
   "strategic_bargaining": [
     {
       "id": 6072,
       "sourceGame": "strategyDesk",
-      "q": "A buyer secures a credible alternative supplier before negotiating. What changes?",
+      "q": "A supplier’s production cost is 20 and its payoff from an alternative contract is 12. A buyer makes one final price offer, and the supplier accepts when indifferent. What is the minimum accepted price?",
       "options": [
-        "The seller's marginal cost becomes zero",
-        "The bargaining becomes nonstrategic automatically",
-        "The buyer's outside option improves",
-        "Market demand shifts left by definition"
+        "12",
+        "20",
+        "32",
+        "8"
       ],
       "tag": "bargaining",
-      "type": "application",
+      "type": "calculation",
       "objective": "LO16.1",
       "difficulty": "bridge",
       "conceptCluster": "LO16.1_bridge",
       "primarySkill": "strategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "strategic_bargaining",
-      "commonError": "misapplies_strategic_bargaining",
-      "feedback": "A stronger alternative makes walking away less costly for the buyer.",
-      "aHash": "b55cb20e720b0295ec8443fc4e71d79adc5f346337746554542ce03ce4670c40"
+      "commonError": "confuses_price_with_net_fallback_payoff",
+      "feedback": "Supplier profitprice−20 must cover fallback 12, so price must be at least 32. Reservation payoff and sale price are different.",
+      "aHash": "e29c9c180c6279b0b02abd6a1801c7c04082cf486ec027aa13515e4f3884bb6b"
     },
     {
       "id": 6073,
       "sourceGame": "strategyDesk",
-      "q": "A union threatens a strike, but striking would leave it worse off than accepting the firm's offer. The threat is",
+      "q": "At a final bargaining node, settlement pays a union 9. Striking pays 6 plus a guaranteed external support benefit 4 available only during the strike. Other consequences are zero. Is a strike threat credible?",
       "options": [
-        "credible because it is costly",
-        "a Nash solution",
-        "direct price discrimination",
-        "not credible"
+        "No; outside support never affects incentives",
+        "No; the strike’s operating payoff 6 is below 9",
+        "Yes; every costly threat is credible",
+        "Yes; striking pays 10 versus 9"
       ],
       "tag": "bargaining",
-      "type": "application",
+      "type": "calculation",
       "objective": "LO16.1",
       "difficulty": "bridge",
       "conceptCluster": "LO16.1_bridge",
       "primarySkill": "strategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "strategic_bargaining",
-      "commonError": "misapplies_strategic_bargaining",
-      "feedback": "The union would not rationally carry out the threat at the decision point.",
-      "aHash": "a3d33387c1a5fff08b944304c26528623320b6d2eea7b720dfa34fa635430231"
+      "commonError": "omits_contingent_disagreement_benefit",
+      "feedback": "Include the conditional external benefit:6+4=10 exceeds 9, making strike optimal at that node.",
+      "aHash": "a554a99a3003032fc9795efcbfccde542d185f8fd9dae3db694fdb823fd9b3d2"
     },
     {
       "id": 6074,
       "sourceGame": "strategyDesk",
-      "q": "A seller makes an expiring offer that removes the option to wait. What strategic element is being used?",
+      "q": "Rejecting today’s offer gives a buyer the right to make a final offer tomorrow. Tomorrow it can obtain payoff 80; its discount factor is 0.75. Today’s payoff from accepting is 55. Should it accept if only payoffs matter?",
       "options": [
-        "Timing",
-        "Market-demand aggregation",
-        "Bundling",
-        "Average cost pricing"
+        "No; waiting is worth 60 today",
+        "Yes;55 exceeds tomorrow’s discounted payoff 20",
+        "Yes; future payoffs have zero current value",
+        "Indifferent; move order cannot affect value"
       ],
       "tag": "bargaining",
-      "type": "application",
+      "type": "calculation",
       "objective": "LO16.1",
       "difficulty": "bridge",
       "conceptCluster": "LO16.1_bridge",
       "primarySkill": "strategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "strategic_bargaining",
-      "commonError": "misapplies_strategic_bargaining",
-      "feedback": "Deadlines can change the other side's available responses and bargaining incentives.",
-      "aHash": "f6cfb8c3f101748fab3f98b775ae62e1b58891817d14477a2f4cc15e0e1bb9f8"
+      "commonError": "ignores_discounted_continuation_payoff",
+      "feedback": "Discount the continuation payoff 80×.75=60, above 55. The counteroffer option changes today’s reservation payoff.",
+      "aHash": "8edaf415095dc3f3edfe8ffcc8c6f66b6a209837f48245b2b0d0b79670dd6ed9"
     }
   ],
   "nonstrategic_bargaining": [
@@ -17462,7 +15679,7 @@ window.microSkillBridgePools = {
         "$50 million"
       ],
       "tag": "bargaining",
-      "type": "application",
+      "type": "calculation",
       "objective": "LO16.2",
       "difficulty": "bridge",
       "conceptCluster": "LO16.2_bridge",
@@ -17476,46 +15693,164 @@ window.microSkillBridgePools = {
     {
       "id": 6076,
       "sourceGame": "strategyDesk",
-      "q": "The parties split the $30 million surplus equally. What does each receive above its outside option?",
+      "q": "A deal creates 50 million. Party A can earn 8 million outside and Party B 12 million. They split incremental surplus equally. What is Party B’s final payoff?",
       "options": [
-        "$30 million",
-        "$10 million",
-        "$15 million",
-        "$7.5 million"
+        "25 million",
+        "15 million",
+        "27 million",
+        "37 million"
       ],
       "tag": "bargaining",
-      "type": "application",
+      "type": "calculation",
       "objective": "LO16.2",
       "difficulty": "bridge",
       "conceptCluster": "LO16.2_bridge",
       "primarySkill": "nonstrategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "nonstrategic_bargaining",
-      "commonError": "misapplies_nonstrategic_bargaining",
-      "feedback": "An equal split gives each party $15 million of the gains.",
-      "aHash": "4ef60dfa20b37bcc6706a3f7c6ea7ee05f269edb7904962a1c4bd6d69eae28ad"
+      "commonError": "reports_surplus_share_instead_of_final_payoff",
+      "feedback": "Surplus 50−8−12=30. Party B adds half 15 to its ownfallback 12 for 27.",
+      "aHash": "247cb5d7d942a049c7feab3715cc51636355c6554c4406511592129cb9256424"
     },
     {
       "id": 6077,
       "sourceGame": "strategyDesk",
-      "q": "Which analysis is inappropriate for a purely nonstrategic split?",
+      "q": "Agreement value stays 50 while Party A’s outside option rises from 8 to 14 and Party B’s stays 12. What happens to total incremental bargaining surplus?",
       "options": [
-        "Calculate total value",
-        "Subtract outside options",
-        "Apply an agreed sharing rule",
-        "Model a sequence of threats that changes choices"
+        "It stays 30",
+        "It rises from 30 to 36",
+        "It stays 50",
+        "It falls from 30 to 24"
       ],
       "tag": "bargaining",
-      "type": "application",
+      "type": "calculation",
       "objective": "LO16.2",
       "difficulty": "bridge",
       "conceptCluster": "LO16.2_bridge",
       "primarySkill": "nonstrategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "nonstrategic_bargaining",
-      "commonError": "misapplies_nonstrategic_bargaining",
-      "feedback": "Threats and move sequencing belong to strategic bargaining, not a simple surplus division.",
-      "aHash": "f95fe5167876af1249f782d73c9c204dd368f803d80148ea58ab251fe3a65d8a"
+      "commonError": "confuses_bargaining_power_with_surplus_creation",
+      "feedback": "The better fallback strengthens A’s reservation position but reduces gains from agreement:50−14−12=24 rather than 30.",
+      "aHash": "565bf9e179d963733537b35e0a1e7504987e44cccfb9656d0535ef90c08f3825"
+    }
+  ],
+  "weak_dominance": [
+    {
+      "id": 6071,
+      "sourceGame": "strategyDesk",
+      "q": "Row A pays 4, 7 and 2 against X, Y and Z. Row B pays 4, 9 and 5. Which statement correctly handles the tie? This comparison concerns only the row player; no claim about Nash equilibria is made.",
+      "options": [
+        "B strictly dominates A because two payoffs are higher",
+        "B weakly dominates A but does not strictly dominate it",
+        "A weakly dominates B because the X payoffs tie",
+        "Neither row dominates because one comparison is tied"
+      ],
+      "tag": "weak_dominance",
+      "type": "application",
+      "objective": "LO15.4",
+      "difficulty": "bridge",
+      "conceptCluster": "LO15.4_bridge",
+      "primarySkill": "weak_dominance",
+      "secondarySkills": [],
+      "repairSkill": "weak_dominance",
+      "commonError": "confuses_weak_with_strict_dominance",
+      "feedback": "B is never worse and is strictly better at Y and Z. The tie at X blocks strict dominance, not weak dominance.",
+      "aHash": "ce3f2fb6aabd67c637a327a99a0382557515157b926621d9224f6c85f396fdfb"
+    },
+    {
+      "id": 6069,
+      "sourceGame": "strategyDesk",
+      "q": "Row A pays 3,6,1 and Row B pays 3,8,4 against X, Y, Z. Does deleting A use strict or weak dominance?",
+      "options": [
+        "A dominates B because it appears first",
+        "Strict; two columns improve",
+        "Neither; every tie prevents dominance",
+        "Weak only; the X payoff ties"
+      ],
+      "tag": "weak_dominance",
+      "type": "matrix",
+      "objective": "LO15.4",
+      "difficulty": "bridge",
+      "conceptCluster": "LO15.4_bridge",
+      "primarySkill": "weak_dominance",
+      "secondarySkills": [],
+      "repairSkill": "weak_dominance",
+      "commonError": "drops_ties_in_dominance",
+      "feedback": "B ties A at X and improves at Yand Z. This meets weak dominance, not strict dominance.",
+      "aHash": "18218da503805eef974dba350fe1396b0cc705d61ac59b1fab1e027027ad42cd"
+    }
+  ],
+  "backward_induction": [
+    {
+      "id": 6064,
+      "sourceGame": "strategyDesk",
+      "q": "A buyer chooses Offer or Leave. Leave pays (Buyer, Seller)=(1,2). After observing Offer, the seller chooses Accept (4,6) or Counter (2,5), and the game ends. What is the backward-induction outcome?",
+      "options": [
+        "Offer, then Counter",
+        "Leave",
+        "Offer, then Accept",
+        "Either seller action"
+      ],
+      "tag": "backward_induction",
+      "type": "strategy",
+      "objective": "LO15.2",
+      "difficulty": "bridge",
+      "conceptCluster": "LO15.2_bridge",
+      "primarySkill": "backward_induction",
+      "secondarySkills": [],
+      "repairSkill": "backward_induction",
+      "commonError": "fails_to_solve_follower_first",
+      "feedback": "Seller chooses Accept 6>5. Buyer anticipates 4 rather than 1 and offers.",
+      "aHash": "8a26d1d696579ffc2a27ed45868b6c04233a8d8add580e2dd0a37593a5ffef56"
+    }
+  ],
+  "complete_strategy": [
+    {
+      "id": 6065,
+      "sourceGame": "strategyDesk",
+      "q": "A seller first posts High or Low; a buyer observes it. Accept/Reject payoffs (Buyer, Seller) are High:(1,8)/(3,0), Low:(5,4)/(3,0). What is the buyer’s complete best-response strategy?",
+      "options": [
+        "Reject after both prices",
+        "Accept after Low only; omit the other node",
+        "Accept after both prices",
+        "Reject after High; Accept after Low"
+      ],
+      "tag": "complete_strategy",
+      "type": "strategy",
+      "objective": "LO15.2",
+      "difficulty": "bridge",
+      "conceptCluster": "LO15.2_bridge",
+      "primarySkill": "complete_strategy",
+      "secondarySkills": [],
+      "repairSkill": "complete_strategy",
+      "commonError": "omits_off_path_contingency",
+      "feedback": "Buyer compares its own payoff with 3 at each node:High 1<3 so Reject, Low 5>3 so Accept. Include both contingencies even if one is off path.",
+      "aHash": "ff0a44477f852dea3591f0d7c39c7d75662ec005624ad0d65816cd882755c10e"
+    }
+  ],
+  "credible_threats": [
+    {
+      "id": 6070,
+      "sourceGame": "strategyDesk",
+      "q": "A company threatens a price war but would lose more by carrying it out than by accommodating entry. How will a rational rival view the threat?",
+      "options": [
+        "As not credible",
+        "As binding because it was announced",
+        "As a Nash equilibrium",
+        "As direct discrimination"
+      ],
+      "tag": "credible_threats",
+      "type": "application",
+      "objective": "LO15.4",
+      "difficulty": "bridge",
+      "conceptCluster": "LO15.4_bridge",
+      "primarySkill": "credible_threats",
+      "secondarySkills": [],
+      "repairSkill": "credible_threats",
+      "commonError": "judges_threat_by_announcement",
+      "feedback": "A threat that is not optimal to carry out at the future node is not credible.",
+      "aHash": "179ca67ddcfef4c8a0dad55e84bbf6c3b6fda89bb8ecea35411fda3b61ddcf97"
     }
   ]
 };

@@ -29,7 +29,7 @@ try{
   await context.route('**/*',r=>new URL(r.request().url()).origin===origin?r.continue():r.abort());
   const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.goto(`${origin}/play/managerial-intelligence-directorate/${game}/`);
-  const result=await page.evaluate(async({standardOnly,checkCost,checkMarket})=>{
+  const result=await page.evaluate(async({standardOnly,checkCost,checkMarket,checkStrategy})=>{
    let randomState=0x6655;
    Math.random=()=>((randomState=(Math.imul(1664525,randomState)+1013904223)>>>0)/4294967296);
    const bank=Object.values(questionBanks).flat();
@@ -65,10 +65,14 @@ try{
        costRouteSelections.push(entry);
        // Reviewed Market transfers: a single shift returns as a two-shift
        // application; monopoly output returns inside a regulation comparison.
-       const reviewedTransfer=checkMarket&&selected&&(
+       const reviewedTransfer=selected&&((checkMarket&&(
         ([4009,4010,4011].includes(q.id)&&[310,359].includes(selected.id))||
         ([4027,4028].includes(q.id)&&selected.id===375)
-       );
+       ))||(checkStrategy&&(
+        ([4004,4005].includes(q.id)&&selected.id===13004)||
+        (q.id===4008&&selected.id===13100)||
+        ([4009,4010,4011].includes(q.id)&&selected.id===13101)
+       )));
        if(!selected||(entry.sourceSkill!==entry.selectedSkill&&!reviewedTransfer))costRouteIssues.push(entry);
       }
      }
@@ -96,7 +100,7 @@ try{
     }
    }
    let trialGraph=null;
-   if(checkMarket){
+   if(checkMarket||checkStrategy){
     const candidates=getTrialGraphCandidates();
     trialGraph={ids:candidates.map(q=>q.id),supported:getTrialGraphSupportedTargets(),decks:[]};
     for(const target of trialGraph.supported)for(let seed=1;seed<=20;seed++){
@@ -109,7 +113,7 @@ try{
    const modes=typeof FACULTY_MODE_REQUIREMENTS==='object'?Object.keys(FACULTY_MODE_REQUIREMENTS):['standard','timed','exam','quiz','unlimited','legendary','score'];
    const modePreflights=Object.fromEntries(modes.map(mode=>[mode,validateFacultyMode(mode)]));
    return {records:rows.length,answerChecks:checks,invalidAnswers:invalid,standardPreflight:validateFacultyMode('standard'),modePreflights,routeChecks,routeIssues,routeObjectiveMismatches,routeSelections,bossChecks,bossIssues,costRouteSelections,costRouteIssues,historyRegression,trialGraph};
-  },{standardOnly,checkCost:game==='cost-directive',checkMarket:game==='market-signal'});
+  },{standardOnly,checkCost:['cost-directive','strategy-desk'].includes(game),checkMarket:game==='market-signal',checkStrategy:game==='strategy-desk'});
   result.game=game;result.pageErrors=errors;results.push(result);
   console.log(JSON.stringify({game,records:result.records,invalidAnswers:result.invalidAnswers.length,standardPreflight:result.standardPreflight.ok,routeIssues:result.routeIssues.length,routeObjectiveMismatches:result.routeObjectiveMismatches.length,bossIssues:result.bossIssues.length,pageErrors:errors}));
   await context.close();

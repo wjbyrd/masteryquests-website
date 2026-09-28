@@ -1,8 +1,10 @@
 # Directorate instructional alignment patch
 
-These are replayable instructional corrections. The Cost Directive and Market
-Signal Standard content reviews are complete. Market's graph-linked records
-also received a graph-necessity review, including Legendary candidates. The
+These are replayable instructional corrections. The Cost Directive, Market
+Signal and Strategy Desk Standard content reviews are complete. Market and
+Strategy visual-linked records also received necessity reviews, including
+Legendary candidates. Strategy's specified matrices and sequential games have
+independent mathematical verification in the private audit artifacts. The
 whole-Directorate review and full Legendary reviews are not complete.
 Mechanical validation alone is not certification.
 The full pre-edit report, source map, item ledger and remaining-work list are
@@ -39,6 +41,17 @@ their absence is accepted on repeat application. Private history preserves IDs.
 `package-patch.json` updates two Market Signal question-package metadata entries,
 requires the independent SVG, and retires the superseded numerical PNG by hash.
 
+`strategy-standard-patch.json` records the review of all 644 original Standard
+supporting records, retaining 553 and retiring 91. It corrects economic content,
+tiers, objectives, metadata and remediation families; preserves the larger
+weak-tie matrices and final Nash boss; and replaces redundant recognition with
+applied pricing and bargaining where runtime or exposure revealed gaps.
+Its 26 ordinary-tier Trial candidates require their visuals. Boss visuals remain
+outside the Trial selector. The independent hidden-information SVG is required
+by hash. Original Strategy WebP assets are unchanged. Newly declared auxiliary
+groups and later edits to previously relocated records are supported with the
+same fingerprint, source-location and destination-collision checks.
+
 Review upstream conflicts manually. Every changed record must exactly match an
 accepted fingerprint; all files and assets are checked before writing begins.
 Repeated application is idempotent. Validation checks unique IDs within each
@@ -55,6 +68,9 @@ own regression reproduced the failure. Its mobile expanded graph view retains
 legible dimensions and permits scrolling; the existing modal and accessibility
 descriptions remain in use. The publisher's normalization and SHA-256 verification are retained.
 Private source files and faculty exports are excluded from deployment.
+Strategy independently reproduced the same history defect before receiving
+the three guards. Its other HTML changes are limited to the Trial allowlist,
+equivalent tree descriptions and readable mobile lightbox dimensions.
 
 `runtime-check.mjs` uses Playwright (set `PLAYWRIGHT_MODULE` to its package
 directory) and a headless Edge session. It blocks external requests, serves only
@@ -65,7 +81,8 @@ and are saved in the existing private alignment-audit directory. Cross-objective
 remediation selections are logged separately: a returned record is not proof
 of misconception-specific repair or appropriate retest demand.
 
-Set `AUDIT_GAME=cost-directive` or `AUDIT_GAME=market-signal` and optionally
+Set `AUDIT_GAME=cost-directive`, `AUDIT_GAME=market-signal`, or
+`AUDIT_GAME=strategy-desk` and optionally
 `AUDIT_OUTPUT_DIR` to run a scoped
 pass. `runtime-check.mjs --standard-only` restricts route/boss sampling to
 Standard content; answer hashes still cover the entire loaded bank. Cost and
@@ -73,7 +90,11 @@ Market also check room-appropriate recovery twice per source and exhaust
 matching-item history to verify the retest repair. Market's explicitly reviewed
 cross-skill transfer cases are documented alongside the narrow test exceptions;
 its Trial check builds 20 seeded decks for every supported length. These checks
-do not semantically certify the excluded Legendary items.
+do not semantically certify the excluded Legendary items. Strategy receives
+the same scoped checks and Trial deck tests. Its reviewed transfers connect
+complete strategies to explicit information constraints, weak versus strict
+elimination to Nash reasoning, and enforceable rules to costly credible
+commitment. The private report lists every source/target exception.
 
 `campaign-check.mjs` samples 40 seeded 30-room Standard traversals for each of
 two response-time profiles in every game. It calls the actual selection and

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="660" viewBox="0 0 1000 660" role="img" aria-labelledby="title desc">
+<title id="title">Investment with an unobserved first move</title>
+<desc id="desc">Player 1 chooses Invest or Don't Invest. Player 2 does not observe this action. A dashed information set joins Player 2's two decision nodes, requiring one price at both. Payoffs are Player 1, Player 2. Invest then High gives 6,4; Invest then Low gives 2,5. Don't Invest then High gives 4,3; Don't Invest then Low gives 1,2.</desc>
+<rect width="1000" height="660" fill="white"/>
+<g fill="none" stroke="#142b45" stroke-width="3"><path d="M500 120L270 300M500 120L730 300M270 300L130 510M270 300L410 510M730 300L590 510M730 300L870 510"/><path d="M270 300L730 300" stroke="#9333a4" stroke-width="4" stroke-dasharray="12 9"/></g>
+<g fill="#1689bd" stroke="#142b45" stroke-width="2"><circle cx="500" cy="120" r="12"/><circle cx="270" cy="300" r="12"/><circle cx="730" cy="300" r="12"/></g>
+<g font-family="Arial, sans-serif" font-size="25" text-anchor="middle" fill="#142b45">
+<text x="500" y="70" font-weight="bold">Player 1</text><text x="340" y="190">Invest</text><text x="670" y="190">Don't Invest</text>
+<text x="230" y="275">Player 2</text><text x="780" y="275">Player 2</text>
+<text x="500" y="346" fill="#7e228d">One information set</text><text x="500" y="380" fill="#7e228d" font-size="22">Investment is unobserved</text>
+<text x="155" y="405">High</text><text x="415" y="410">Low</text><text x="585" y="410">High</text><text x="850" y="405">Low</text>
+<text x="130" y="553">(6, 4)</text><text x="410" y="553">(2, 5)</text><text x="590" y="553">(4, 3)</text><text x="870" y="553">(1, 2)</text>
+<text x="500" y="618" font-size="23">Payoffs: (Player 1, Player 2)</text></g></svg>

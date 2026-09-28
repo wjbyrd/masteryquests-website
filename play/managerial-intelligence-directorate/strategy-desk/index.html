@@ -2092,6 +2092,14 @@ TIP:
     0 0 70px rgba(0,0,0,0.86);
 }
 
+/* Strategy tree audit: preserve readable labels on small-screen expanded graphs.
+   The modal scrolls horizontally instead of shrinking a game tree. */
+@media(max-width:768px){
+    #graphLightbox.active{ overflow: auto; justify-content: flex-start; backdrop-filter: none; }
+    #graphLightbox.active img{ flex: 0 0 auto; width: 800px; max-width: none; max-height: none; margin: auto 0; }
+    #graphLightbox.active::after{ content: "Scroll horizontally to view the full game tree"; position: fixed; bottom: 12px; left: 12px; padding: 6px 10px; border-radius: 6px; background: #020617; color: #fff; font-size: 12px; pointer-events: none; }
+}
+
 #graphLightboxClose{
   position: fixed;
   top: calc(env(safe-area-inset-top, 0px) + 14px);
@@ -5070,15 +5078,19 @@ function getQuestionsMatchingNeed(pool, objectiveKey, tag, excludeIds = [], skil
             resolveRecordSkill(question) === skillKey
         );
         if(skillMatches.length > 0) return skillMatches;
+        // Retry matching content without recent-history exclusions before drifting.
+        if(pool.some(question => resolveRecordSkill(question) === skillKey)) return [];
     }
 
     const objectiveMatches = candidates.filter(question =>
         inferObjective(question) === objectiveKey
     );
     if(objectiveMatches.length > 0) return objectiveMatches;
+    if(pool.some(question => inferObjective(question) === objectiveKey)) return [];
 
     const tagMatches = candidates.filter(question => question.tag === tag);
     if(tagMatches.length > 0) return tagMatches;
+    if(pool.some(question => question.tag === tag)) return [];
 
     return candidates;
 }
@@ -7244,20 +7256,24 @@ const objectiveLabels = {
 const embeddedQuestionAssets = {};
 const questionAssetMetadata = {
     "gametreeone.webp": {
-        "imageAlt": "Sequential two-player game tree showing Player 1’s investment choice, Player 2’s pricing response, and terminal payoffs.",
-        "graphDescription": "A sequential game tree used for backward-induction questions about investment and pricing. Read Player 2’s contingent pricing choices after each Player 1 action, then compare Player 1’s resulting payoffs."
+        "imageAlt": "Observed investment game with two separate Player 2 decision nodes.",
+        "graphDescription": "Player 1 chooses Invest or Don’t Invest. Player 2 observes this choice, then chooses High Price or Low Price at the corresponding node. Payoffs are (Player 1, Player 2): Invest/High (6,4); Invest/Low (2,5); Don’t Invest/High (4,3); Don’t Invest/Low (1,2). The two Player 2 nodes are separate; no information set joins them."
     },
     "gametreetwo.webp": {
-        "imageAlt": "Sequential pricing game tree showing Firm A’s price choice, Firm B’s contingent Match or Not Match response, and terminal payoffs.",
-        "graphDescription": "A sequential pricing game tree used for backward-induction, commitment, and best-response questions. Read Firm B’s response after each Firm A price choice, then compare Firm A’s resulting payoffs."
+        "imageAlt": "Observed pricing game: Firm A moves, then Firm B responds at one of three separate nodes.",
+        "graphDescription": "Firm A chooses High, Medium or Low Price. Firm B observes the price and chooses Match or Not Match at that node. Payoffs are (A,B): High/Match (8,3), High/Not Match (5,6); Medium/Match (6,5), Medium/Not Match (4,4); Low/Match (3,7), Low/Not Match (2,8). All three Firm B nodes are separate, with no connecting information set."
     },
     "gametreethree.webp": {
-        "imageAlt": "Sequential bargaining game tree showing company and union choices, strike, concede, accept responses, and terminal payoffs.",
-        "graphDescription": "A sequential bargaining game tree used for backward-induction and commitment questions. Trace the company and union responses from the final decision nodes back to the opening choice."
+        "imageAlt": "Observed company-union bargaining game with a final company response after Demand More.",
+        "graphDescription": "Company chooses Stand Firm or Compromise. Union observes the choice. After Stand Firm, Union chooses Strike (1,5) or Accept (4,2). After Compromise, Union chooses Accept (5,4) or Demand More. After Demand More, Company observes all earlier actions and chooses Concede (3,3) or Refuse (2,1). Every payoff pair is (Company,Union). Each decision node is a separate information set; every earlier move is observed."
+    },
+    "investment_hidden_information.svg": {
+        "imageAlt": "Investment game with one dashed information set joining the two Player 2 pricing nodes.",
+        "graphDescription": "Player 1 chooses Invest or Don’t Invest. Player 2 does not observe that choice. The dashed information set joins its two nodes, requiring one common High or Low Price action. Payoffs are (Player 1,Player 2): Invest/High (6,4); Invest/Low (2,5); Don’t Invest/High (4,3); Don’t Invest/Low (1,2). Player 2 cannot use different prices after different hidden first moves."
     }
 };
-// The July deep audit reviewed every graph-linked question against these supplied graph assets.
-const trialGraphQuestionIds = [220, 222, 223, 224, 360, 361, 362, 363, 364, 9058, 9059, 9060, 9061, 9062, 9063, 9064, 9065, 9066, 9067, 9080, 9081, 9082, 9083, 9084, 4004, 4005, 4010, 4011, 4013, 4014, 9163, 9164, 9165, 9169, 9170, 9171, 9174];
+// September semantic graph audit: only ordinary-tier questions requiring the figure enter Trial by Graph.
+const trialGraphQuestionIds = [220, 222, 224, 360, 361, 362, 363, 364, 9058, 9059, 9060, 9061, 9062, 9064, 9065, 9067, 9080, 9081, 9082, 9083, 9084, 9163, 9164, 9165, 9170, 9171];
 const trialGraphQuestionIdSet = new Set(trialGraphQuestionIds.map(String));
 Object.values(questionBanks || {}).forEach(pool => (pool || []).forEach(question => {
     const id = String(question?.id ?? question?.questionId ?? "");

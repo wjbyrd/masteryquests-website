@@ -87,17 +87,33 @@ def plan_sources(sources, patches):
                 for question in questions:
                     locations[(game, str(question['id']))] = (name, pool, question, questions)
     chains = {}
+    relocated_origins = {}
+    auxiliary_additions = set()
     for patch in patches:
+        for addition in patch.get('auxiliaryPoolAdditions', []):
+            if (addition['game'] not in GAMES or
+                    addition['container'] not in ('microSkillRepairPools', 'microSkillBridgePools', 'repairPoolGroups', 'bridgePoolGroups') or
+                    not re.fullmatch(r'[a-z][a-z0-9_]*', addition['pool'])):
+                raise ValueError('Invalid auxiliary pool declaration')
+            auxiliary_additions.add((addition['game'], addition['container'], addition['pool']))
         seen = set()
         for change in patch['changes']:
             key = (change['game'], str(change['id']))
             if key in seen or key[0] not in GAMES:
                 raise ValueError(f'Invalid patch identity: {key}')
             seen.add(key)
-            chain = chains.setdefault(key, [])
+            origin_key = relocated_origins.get(key, key)
+            chain = chains.setdefault(origin_key, [])
             if chain and change['before'] != chain[-1]['after']:
                 raise ValueError(f'Discontinuous patch history: {key}')
             chain.append(change)
+            destination = change.get('destination')
+            if destination:
+                destination_key = (destination['game'], str(destination['id']))
+                if destination_key != origin_key:
+                    previous = relocated_origins.setdefault(destination_key, origin_key)
+                    if previous != origin_key:
+                        raise ValueError(f'Duplicate relocation destination: {destination_key}')
     pending = {game: 0 for game in GAMES}
     destinations = set()
     for key, chain in chains.items():
@@ -150,6 +166,11 @@ def plan_sources(sources, patches):
             target_sections = parsed[destination['game']][0]
             target_names = [m[1] for m in DECLARATION.finditer(sources[destination['game']])]
             target_pools = target_sections[target_names.index(destination['container'])][2]
+            if destination['pool'] not in target_pools:
+                declaration = (destination['game'], destination['container'], destination['pool'])
+                if declaration not in auxiliary_additions:
+                    raise ValueError(f'Undeclared destination pool: {declaration}')
+                target_pools[destination['pool']] = []
             target = target_pools[destination['pool']]
         else:
             target = location[3]
@@ -193,7 +214,7 @@ def main():
     parser.add_argument("--validate", action="store_true")
     args = parser.parse_args()
     patches = [json.loads((HERE / name).read_text(encoding='utf-8'))
-               for name in ('content-patch.json', 'continuation-patch.json', 'cost-standard-patch.json', 'market-standard-patch.json')]
+               for name in ('content-patch.json', 'continuation-patch.json', 'cost-standard-patch.json', 'market-standard-patch.json', 'strategy-standard-patch.json')]
     paths = {}
     sources = {}
     for game in GAMES:
@@ -218,7 +239,7 @@ def main():
             raise ValueError(f'Package text conflict: {path.name}; no files written')
         text_proposals[path] = source.replace(change['before'], change['after'], 1)
         package_pending += 1
-    for asset in package['requiredAssets']:
+    for asset in package['requiredAssets'] + [asset for patch in patches for asset in patch.get('requiredAssets', [])]:
         path = public_path(asset['path'])
         if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest() != asset['sha256']:
             raise ValueError(f'Required practice asset missing or changed: {path.name}')
