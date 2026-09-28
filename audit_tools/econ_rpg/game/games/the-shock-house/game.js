@@ -1,7 +1,11 @@
-import { ROOMS, ROOM_ORDER, DOCUMENTS, EVIDENCE, ITEMS, INVOICES, JOBS, DATES, BROADCASTS, BROADCAST_AUDIO, HINTS } from './content.js';
+import { DOCUMENTS, EVIDENCE, ITEMS, BROADCASTS, BROADCAST_AUDIO } from './content.js';
 import { newState, solved, inspect, need, complete, contextualPuzzle, policyGauges, load, save } from './engine.js';
-import { sceneArt, HOTSPOTS } from './scenes.js';
+import { sceneArt, SCENE_OBJECTS, CAMERA_ORDER, CAMERA_DESCRIPTIONS, warmView, installAssetFallback } from './illustrated.js';
+import { discoveryHint, FRAGMENTS, seen, TV_BULLETINS } from './discovery.js';
+import { renderTactile, tactileDocument } from './tactile.js';
 import { renderDocument, renderEvidence, renderItem, renderMechanism, tinyArtifact, BUDGET_SLIPS, policyObservation as physicalObservation } from './objects.js';
+import {newRecovery,recoveryAction} from './recovery-state.js';
+import {RECOVERY_OBJECTS,recoveryView,recoveryLaunch,recoveryPanel,recoveryTray,recoveryResults} from './recovery-view.js';
 
 const main=document.querySelector('#main'), dialog=document.querySelector('#dialog');
 const money=n=>'$'+n.toLocaleString('en-US');
@@ -9,7 +13,9 @@ const escape=text=>String(text).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','
 let storage;try{storage=window.localStorage;}catch{storage=null;}
 const loaded=load(storage);
 let state=loaded.state||newState(), hasSave=Boolean(loaded.state), started=false, view=null, notice='', hintOpen=false, storageWarning=loaded.warning, currentAudio=null;
-let trayOpen=false, selection={}, lastView=null, lastRoom=null, pan=0;
+let trayOpen=false, selection={}, lastView=null, lastRoom=null, pan=0, viewStack=[], turning=false;
+let zoomStack=[],pendingOrigin=null,retreat=null,approaching=false;
+installAssetFallback();
 const btn=(label,action,id='',extra='')=>`<button data-action="${action}" data-id="${id}" ${extra}>${label}</button>`;
 function announce(text){const el=document.querySelector('#announcement');el.textContent='';requestAnimationFrame(()=>el.textContent=text);}
 function persist(){hasSave=true;if(!save(storage,state))storageWarning='Saving is unavailable in this browser. Keep this tab open to retain your investigation.';}
@@ -20,18 +26,21 @@ function draw({focus=false,keepFocus=false}={}){
   const inspectionScroll=main.querySelector('.inspection-layer')?.scrollTop||0;
   const viewport=main.querySelector('.scene-viewport');if(viewport)pan=viewport.scrollLeft;
   document.body.classList.toggle('show-objects',state.settings.showObjects);
-  document.body.classList.toggle('playing',started&&state.stage==='investigation');
+  document.body.classList.toggle('playing',started&&['investigation','recovery'].includes(state.stage));
   document.body.classList.toggle('escaping',started&&state.stage==='escaped');
   if(!started)main.innerHTML=startScreen();
   else if(state.stage==='escaped')main.innerHTML=escapeScreen();
-  else if(state.stage==='reveal')main.innerHTML=revealScreen();
-  else if(state.stage==='results')main.innerHTML=resultsScreen();
+  else if(state.stage==='reveal')main.innerHTML=revealScreen()+recoveryLaunch(state);
+  else if(state.stage==='results')main.innerHTML=resultsScreen()+recoveryLaunch(state);
+  else if(state.stage==='recovery-results')main.innerHTML=recoveryResults(state.recovery);
   else main.innerHTML=investigation();
   const nextViewport=main.querySelector('.scene-viewport');if(nextViewport)nextViewport.scrollLeft=lastRoom===state.currentRoom?pan:0;
   const nextInspection=main.querySelector('.inspection-layer');if(nextInspection&&lastView===view)nextInspection.scrollTop=inspectionScroll;
   const inspection=main.querySelector('.inspection-object');
   if(inspection&&lastView!==view)inspection.classList.add('arriving');
   lastView=view;lastRoom=state.currentRoom;
+  warmView(state.currentRoom,view);
+  if(retreat){const frame=main.querySelector('.mini-scene')||main.querySelector('.scene');const origin=retreat;retreat=null;if(frame&&!matchMedia('(prefers-reduced-motion: reduce)').matches)frame.animate([{transform:zoomTransform(frame,origin)},{transform:'none'}],{duration:380,easing:'cubic-bezier(.2,.65,.3,1)'});}
   if(focus)focusHeading();
   else if(active){
     const target=active.focus?main.querySelector(`[data-focus="${active.focus}"]`):active.action?[...main.querySelectorAll('button[data-action]')].find(b=>b.dataset.action===active.action&&b.dataset.id===active.id):null;
@@ -40,21 +49,23 @@ function draw({focus=false,keepFocus=false}={}){
   }
 }
 function startScreen(){return `<section class="start"><div><p class="eyebrow">MASTERY QUESTS / AN ECONOMIC ESCAPE</p><h1 data-heading>THE SHOCK<br>HOUSE</h1><div class="subtitle">An Economic Escape</div><p class="start-intro">The house is intact.<br>The economy recorded inside it is not.<br><br>Something happened here.<br>Find the evidence. Reconstruct the sequence.<br>Open the door.</p><div class="actions">${hasSave?btn('Continue investigation','continue','','class="primary"'):btn('Begin investigation','begin','','class="primary"')}${hasSave?btn('New investigation','restart'):''}${btn('How to play','help')}</div><p class="receipt-summary">An untimed investigation · about 15–25 minutes<br>Progress saves in this browser. Sound is off by default.</p>${storageWarning?`<p class="storage-warning">${escape(storageWarning)}</p>`:''}</div><div class="start-art">${sceneArt('hall').replace('viewBox="0 0 1000 640"', 'viewBox="300 20 400 520"')}<div class="caption">AN EMPTY HOUSE. A CONNECTED MYSTERY.</div></div></section>`;}
-function investigation(){const room=ROOMS[state.currentRoom],puzzle=contextualPuzzle(state,view);
-  return `<div class="exploration ${view?'inspecting':''}"><h1 class="room-name" data-heading>${room.name}</h1><div class="room-tools">${btn('Hint','hint','',`data-focus="hint" ${puzzle?'':'disabled'}`)}${btn('Case menu','menu')}</div>${roomScene()}
-  ${view?`<div class="inspection-layer"><section class="view-panel inspection-object type-${view.replace(':','-')}" aria-label="Object inspection">${btn('←','back','','class="inspection-back" aria-label="Put down object and return to room"')}${viewContent(view)}</section></div>`:''}
+function investigation(){const puzzle=state.stage==='recovery'?'recovery':contextualPuzzle(state,view);
+  return `<div class="exploration ${view?'inspecting':''}"><h1 class="room-name" data-heading>${CAMERA_DESCRIPTIONS[state.currentRoom]}</h1><div class="room-tools">${btn('Hint','hint','',`data-focus="hint" ${puzzle?'':'disabled'}`)}${btn('Case menu','menu')}</div>${roomScene()}
+  ${view?`<div class="inspection-layer ${view.startsWith('search:')||['production','stock','index','bills'].includes(view)?'tactile-layer':''}"><section class="view-panel inspection-object type-${view.replace(':','-')}" aria-label="Object inspection">${btn('←','back','','class="inspection-back" aria-label="Step back from this close-up"')}${viewContent(view)}</section></div>`:''}
   ${notice?`<p class="room-notice" role="status">${escape(notice)}</p>`:''}${storageWarning?`<p class="storage-warning room-warning">${escape(storageWarning)}</p>`:''}
   ${hintOpen&&puzzle?hintPanel(puzzle):''}
   <div class="pocket-access">${btn('<span aria-hidden="true">▱</span> Satchel','satchel','',`aria-expanded="${trayOpen}" data-focus="satchel"`)}</div>${trayOpen?tray():''}</div>`;
 }
-function roomScene(){const room=ROOMS[state.currentRoom];return `<div class="scene-viewport" ${view?'inert':''}><section class="scene" aria-label="${room.name} interactive scene">${sceneArt(state.currentRoom,state)}${room.objects.map(([id,label,,,type])=>{const [x,y,w,h]=HOTSPOTS[state.currentRoom][id];return btn('',type==='room'?'room':'open',id,`class="environment-object" style="left:${x/10}%;top:${y/6.4}%;width:${w/10}%;height:${h/6.4}%" aria-label="${label}"`);}).join('')}${state.currentRoom!=='hall'?btn('<span aria-hidden="true">‹</span>','room','hall','class="hallway-exit" aria-label="Return through doorway to Central Hall"'):''}</section></div>${!view?`<div class="pan-controls">${btn('‹','pan','left','aria-label="Look left across room"')}${btn('›','pan','right','aria-label="Look right across room"')}</div>`:''}`;}
-function tray(){return `<aside class="satchel" aria-label="Inventory and evidence"><div class="satchel-seam"></div>${btn('×','satchel','','class="satchel-close" aria-label="Close satchel"')}<section><h2>Items</h2><div class="pocket-objects">${state.inventory.length?state.inventory.map(id=>btn(tinyArtifact(id)+`<small>${ITEMS[id].title}</small>`,'item',id,'class="pocket-object"')).join(''):'<p class="empty">An empty pocket.</p>'}</div></section><section><h2>Evidence folder</h2><div class="pocket-objects">${state.evidence.map(id=>btn(tinyArtifact(id)+`<small>${EVIDENCE[id].short}</small>`,'evidence',id,'class="pocket-object"')).join('')||'<p class="empty">Nothing filed yet.</p>'}</div></section></aside>`;}
-function hintPanel(id){const level=state.hintLevels[id]||1;return `<aside class="hint-panel" aria-label="Contextual hint"><h3>HINT ${level} / 3 · ${puzzleTitle(id)}</h3><p>${HINTS[id][level-1]}</p><div class="actions">${level<3?btn('More guidance','more-hint',id):'<span class="receipt-summary">The explicit guidance stays available.</span>'}${btn('Close hint','close-hint')}</div></aside>`;}
-function puzzleTitle(id){return {budget:'Budget drawer',cost:'Invoice cabinet',orders:'Work-order press',indicators:'Indicator wall',radio:'Broadcast receiver',policy:'Policy machine',exit:'Exit mechanism'}[id];}
+function roomScene(){return `<div class="scene-viewport" ${view?'inert':''}><section class="scene" aria-label="${CAMERA_DESCRIPTIONS[state.currentRoom]}">${sceneArt(state.currentRoom,state.stage==='recovery'?{}:state)}${(state.stage==='recovery'?RECOVERY_OBJECTS:SCENE_OBJECTS)[state.currentRoom].map(([id,label,x,y,w,h,action='search'])=>btn('',action,id,`class="environment-object" style="left:${x/10}%;top:${y/6.4}%;width:${w/10}%;height:${h/6.4}%" aria-label="${label}"`)).join('')}</section></div>${!view?`<div class="pan-controls">${btn('‹','pan','left','aria-label="Turn left"')}${btn('›','pan','right','aria-label="Turn right"')}</div>`:''}`;}
+function tray(){if(state.stage==='recovery')return recoveryTray(state.recovery);return `<aside class="satchel" aria-label="Inventory and evidence"><div class="satchel-seam"></div>${btn('×','satchel','','class="satchel-close" aria-label="Close satchel"')}<section><h2>Items</h2><div class="pocket-objects">${state.inventory.length?state.inventory.map(id=>btn(tinyArtifact(id)+`<small>${ITEMS[id].title}</small>`,'item',id,'class="pocket-object"')).join(''):'<p class="empty">An empty pocket.</p>'}</div></section><section><h2>Evidence folder</h2><div class="pocket-objects">${state.evidence.map(id=>btn(tinyArtifact(id)+`<small>${EVIDENCE[id].short}</small>`,'evidence',id,'class="pocket-object"')).join('')||'<p class="empty">Nothing filed yet.</p>'}</div></section><section><h2>Things noticed</h2><div class="fragment-notes">${Object.entries(FRAGMENTS).filter(([id])=>seen(state,id)).map(([id,[title]])=>btn(title,'fragment',id)).join('')}${['pay','food','bills','notebook','invoices','production','stock','national','index'].filter(id=>seen(state,id)).map(id=>btn({pay:'Pay stubs',food:'Grocery comparison',bills:'Household fittings',notebook:'Notebook',invoices:'Supplier deliveries',production:'Machine counter',stock:'Input bin',national:'Matched bulletins',index:'Tuning inscription'}[id],'open',id)).join('')||'<span class="empty">Keep looking.</span>'}</div></section></aside>`;}
+function hintPanel(id){if(state.stage==='recovery')return recoveryPanel(state.recovery);const level=state.hintLevels[id]||1;return `<aside class="hint-panel" aria-label="Contextual hint"><h3>HINT ${level} / 3</h3><p>${discoveryHint(state,id,level)}</p><div class="actions">${level<3?btn('More guidance','more-hint',id):'<span class="receipt-summary">The explicit guidance stays available.</span>'}${btn('Close hint','close-hint')}</div></aside>`;}
 function viewContent(id){
+  if(state.stage==='recovery')return recoveryView(id,state.recovery);
+  if(id.startsWith('search:'))return renderTactile(id.slice(7),state);
+  if(id.startsWith('fragment:')){const [title,text]=FRAGMENTS[id.slice(9)];return `<h2 class="object-title" data-heading>${title}</h2><article class="service-plate"><h3>${title}</h3><p>${text}</p></article>`;}
   if(id.startsWith('evidence:'))return renderEvidence(id.slice(9));
   if(id.startsWith('item:'))return renderItem(id.slice(5));
-  if(DOCUMENTS[id])return renderDocument(id);
+  if(DOCUMENTS[id])return tactileDocument(id,state)||renderDocument(id);
   return renderMechanism(id,state,selection);
 }
 const arrow=value=>value===1?'↑':value===-1?'↓':'—';
@@ -63,47 +74,111 @@ function gauges(values,kind,labels){return `<div class="gauges">${labels.map((la
 function escapeScreen(){return `<section class="escape"><div class="escape-scene" aria-hidden="true">${sceneArt('hall',state)}</div><div class="escape-copy"><h1 data-heading>The door opens.</h1>${btn('Step outside','reveal','','class="primary"')}</div></section>`;}
 function economicGraph(){return `<svg class="graph" viewBox="0 0 580 330" role="img" aria-labelledby="graph-title graph-desc"><title id="graph-title">Short-run aggregate supply shifts left</title><desc id="graph-desc">With downward-sloping AD unchanged, SRAS shifts left from SRAS 0 to SRAS 1. The equilibrium moves from higher real output Y0 and lower price level P0 to lower real output Y1 and higher price level P1.</desc><g fill="none" stroke-width="3"><path d="M70 35 V270 H535" stroke="#b7c5bb"/><path d="M100 60 L480 250" stroke="#bccabb"/><path d="M180 250 L460 90" stroke="#7dafa1"/><path d="M100 210 L380 50" stroke="#e1bf7e"/><path d="M70 130 H240 V270 M70 170 H320 V270" stroke="#8c9d90" stroke-width="1" stroke-dasharray="5 5"/><path d="M395 94 L339 94 M351 86 L339 94 L351 102" stroke="#e1bf7e"/></g><g fill="#f1edda" font-size="14" font-family="Arial"><text x="12" y="23">Price level</text><text x="405" y="310">Real output</text><text x="480" y="252">AD</text><text x="455" y="51">SRAS₀</text><text x="363" y="30">SRAS₁</text><text x="29" y="135">P₁</text><text x="29" y="175">P₀</text><text x="229" y="290">Y₁</text><text x="310" y="290">Y₀</text></g><circle cx="240" cy="130" r="6" fill="#e1bf7e"/><circle cx="320" cy="170" r="6" fill="#7dafa1"/></svg>`;}
 function revealScreen(){return `<article class="debrief"><span class="eyebrow">OUTSIDE THE HOUSE / THE ECONOMIC REVEAL</span><h1 data-heading>You reconstructed a negative aggregate supply shock.</h1>
-  <section><h2>1. WHAT HAPPENED?</h2><p class="cause-strip">${state.evidence.includes('broadcast')?'You recovered three broadcasts and traced the March 14 terminal disruption.':''} You matched the emergency invoices, released a smaller production plan, and connected the revised shift sheet to the national indicators. At the policy machine, you tested both directions and sealed the competing objectives.</p><p>The chain you assembled: input interruption → higher costs → reduced production and employment → weaker output, higher unemployment and rising prices → a policy tradeoff.</p></section>
+  <section><h2>1. WHAT HAPPENED?</h2><p class="cause-strip">${state.evidence.includes('broadcast')?'The archived radio reports describe events that had already happened: the terminal disruption, emergency input costs, and production cuts.':''} The invoices and shift sheet corroborate those reports. The national indicators show the wider effects, and the policy trials reveal the competing objectives.</p><p>The events you connected: storm disrupts input deliveries → production costs rise → firms cut production and shifts → national output falls while unemployment and prices rise → policy faces an inflation–employment tradeoff.</p></section>
   <section><h2>2. WHY DID IT HAPPEN ECONOMICALLY?</h2><p>A <strong>negative aggregate supply shock</strong> raised production costs and reduced short-run aggregate supply. With aggregate demand initially unchanged, <strong>SRAS shifted left</strong>: real output fell and the price level rose. Weaker production reduced firms’ demand for workers, worsening employment conditions.</p>${economicGraph()}<p>In these records, the price index rose from 100 to 108 and monthly inflation increased from 2% to 8%. A supply shock can raise the price level during the adjustment; it does not necessarily make inflation accelerate forever.</p><p>The household’s nominal pay rose, but the unchanged essential bundle became even more expensive. Its purchasing power deteriorated. Prices alone would not establish the cause: the broadcasts, cost records, production cuts, and national data establish it together.</p><p>Policymakers faced a <strong>tradeoff</strong>. Tighter demand policy could ease inflation pressure while deepening output and employment weakness. Looser demand policy could support output and work while increasing inflation pressure. Neither control immediately repaired the input network.</p></section>
   <section><h2>3. CAN YOU USE IT SOMEWHERE ELSE?</h2><p>Suppose a widespread improvement in production technology lowers firms’ costs. With aggregate demand unchanged, set this small forecast panel for short-run aggregate supply, real output, and the price level.</p>${gauges(state.transfer,'transfer',['SRAS direction','Real output','Price level'])}<p class="receipt-summary">For SRAS, ↑ means a rightward increase; ↓ means a leftward decrease.</p>${state.transferDone?`<p class="notice">Your forecast fits: lower costs shift SRAS right, raising real output and lowering the price level, other things equal. This reverses the house’s initial cost shock.</p>${btn('View investigation results','results','','class="primary"')}`:`${btn('Test the forecast','transfer','','class="primary"')}${notice?`<p class="notice" role="status">${escape(notice)}</p>`:''}`}</section></article>`;}
 function resultsScreen(){const minutes=Math.floor((state.completedAt-state.startedAt)/60000),seconds=Math.floor((state.completedAt-state.startedAt)/1000)%60;return `<section><header class="result-title"><span class="eyebrow">CASE 12 / INVESTIGATION COMPLETE</span><h1 data-heading>ESCAPED</h1><p>You made the evidence explain the door.</p></header><div class="stats"><div><strong>${minutes}:${String(seconds).padStart(2,'0')}</strong><span>ELAPSED TIME</span></div><div><strong>${state.hintUses}</strong><span>HINTS OPENED</span></div><div><strong>${state.evidence.length} / 7</strong><span>EVIDENCE RECOVERED</span></div><div><strong>${state.solvedPuzzles.length} / 7</strong><span>PUZZLES SOLVED</span></div></div><div class="results-note">${Object.keys(DOCUMENTS).every(id=>state.inspectedObjects.includes(id))?'<span class="badge">NO STONE UNTURNED</span>':''}${!Object.values(state.hintLevels).includes(3)?'<span class="badge">COLD CASE · NO HINT 3</span>':''}${state.finalAttempts===1?'<span class="badge">CHAIN REACTION · FIRST SEQUENCE</span>':''}<p>Time includes breaks between visits. It is a record of your investigation, not an economic mastery score.</p></div><div class="actions result-actions">${btn('Revisit the economic reveal','reveal')}${btn('New investigation','restart')}${btn('Return to title','title')}</div></section>`;}
 
-function changeRoom(id){if(id==='policy'&&!solved(state,'radio')){inform('Locked. The key slot bears the Archive receiver’s mark.');return;}
-  state.currentRoom=id;view=null;hintOpen=false;trayOpen=false;selection={};
+function changeRoom(id){
+  state.currentRoom=id;view=null;viewStack=[];zoomStack=[];hintOpen=false;trayOpen=false;selection={};
   if(!state.visitedRooms.includes(id))state.visitedRooms.push(id);
-  if(id==='policy'&&state.inventory.includes('access')){state.inventory=state.inventory.filter(x=>x!=='access');inform('The receiver pass releases the Control Room door.');}
+  if(id==='policy'&&state.inventory.includes('access')){state.inventory=state.inventory.filter(x=>x!=='access');inform('The utility cabinet key releases the cabinet shutter.');}
   else notice='';
+}
+function openView(id){if(view!==id){viewStack.push(view);zoomStack.push(pendingOrigin);view=id;}pendingOrigin=null;inspect(state,id);hintOpen=false;trayOpen=false;}
+function putDown(){stopAudio();view=viewStack.pop()||null;retreat=zoomStack.pop()||null;hintOpen=false;}
+function zoomTransform(frame,o){const r=frame.getBoundingClientRect();return `translate(${(0.5-o.x)*r.width*o.scale}px,${(0.5-o.y)*r.height*o.scale}px) scale(${o.scale})`;}
+async function approach(control){
+ const frame=control.closest('.mini-scene,.scene');if(!frame)return;
+ const r=frame.getBoundingClientRect(),c=control.getBoundingClientRect();
+ pendingOrigin={x:(c.x+c.width/2-r.x)/r.width,y:(c.y+c.height/2-r.y)/r.height,scale:Math.min(2.7,Math.max(1.2,r.width/(c.width*2)))};
+ if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+ approaching=true;
+ try{await frame.animate([{transform:'none'},{transform:zoomTransform(frame,pendingOrigin)}],{duration:380,easing:'cubic-bezier(.3,.1,.5,1)',fill:'forwards'}).finished;}finally{approaching=false;}
+}
+function turnCamera(direction){
+ if(turning||view||dialog.open)return;
+ const old=main.querySelector('.scene')?.cloneNode(true), step=direction==='left'?-1:1;
+ stopAudio();changeRoom(CAMERA_ORDER[(CAMERA_ORDER.indexOf(state.currentRoom)+step+5)%5]);persist();draw({focus:true});
+ announce(CAMERA_DESCRIPTIONS[state.currentRoom]);
+ if(!old||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+ turning=true;old.inert=true;old.setAttribute('aria-hidden','true');old.classList.add('departing-scene');
+ const next=main.querySelector('.scene'),viewport=main.querySelector('.scene-viewport');viewport.append(old);
+ const timing={duration:520,easing:'cubic-bezier(.22,.65,.25,1)',fill:'both'};
+ old.animate([{transform:'translateX(0)'},{transform:`translateX(${-step*105}%)`}],timing);
+ const animation=next.animate([{transform:`translateX(${step*105}%)`},{transform:'translateX(0)'}],timing);
+ animation.finished.finally(()=>{old.remove();animation.cancel();turning=false;});
 }
 function showDialog(kind){
   if(kind==='settings')dialog.innerHTML=`<h2 id="dialog-title">Accessibility</h2><label><input type="checkbox" data-setting="showObjects" ${state.settings.showObjects?'checked':''}>Show interactive objects</label><p>Optional outlines expose the interaction regions. Tab moves between objects; Enter examines them. Arrow keys turn knobs and move the policy lever. All objects have generous touch areas.</p><p>On a narrow screen, swipe the room or use its edge arrows to look around. Place paper slips by dragging, or select a slip and then its destination. Reorder records with their small arrow controls.</p><label><input type="checkbox" data-setting="sound" ${state.settings.sound?'checked':''}>Enable optional mechanism sounds</label><p>Broadcasts always have transcripts. Motion follows your device’s reduced-motion setting.</p>${btn('Done','close-dialog','','class="primary"')}`;
-  if(kind==='help')dialog.innerHTML=`<h2 id="dialog-title">How to investigate</h2><p>Examine the objects themselves: papers, handles, books, and machines. Doorways lead through the house. The back arrow puts down what you are holding.</p><p>On a phone, swipe the room to look around. Open your satchel to revisit collected records. Some clues matter much later.</p><p>Move slips into the notebook, arrange invoices, allocate material, and turn the controls. Drag or use the equivalent tap and keyboard controls. Hints are always available.</p>${btn('Ready','close-dialog','','class="primary"')}`;
+  if(kind==='help')dialog.innerHTML=`<h2 id="dialog-title">How to investigate</h2><p>Examine the objects themselves: papers, handles, books, and machines. Turn left or right to look around one continuous house. Search inside ordinary objects. The back arrow steps out of a close-up.</p><p>Use the edge arrows, keyboard left/right, or a horizontal swipe to turn. Open your satchel to revisit collected records. Some clues matter much later.</p><p>Move slips into the notebook, arrange invoices, allocate material, and turn the controls. Drag or use the equivalent tap and keyboard controls. Hints are always available.</p>${btn('Ready','close-dialog','','class="primary"')}`;
   if(kind==='menu')dialog.innerHTML=`<h2 id="dialog-title">Case menu</h2><div class="actions">${btn('Resume investigation','close-dialog','','class="primary"')}${btn('Accessibility','settings')}${btn('How to play','help')}${btn('Return to title','title')}${btn('New investigation','restart')}</div>`;
   if(kind==='restart')dialog.innerHTML=`<h2 id="dialog-title">Start a new investigation?</h2><p>This replaces your saved progress for The Shock House in this browser.</p><div class="actions">${btn('Keep my investigation','close-dialog','','class="primary"')}${btn('Replace save and begin','confirm-new')}</div>`;
   if(!dialog.open)dialog.showModal();else dialog.querySelector('input,button')?.focus();
 }
 function sound(){if(!state.settings.sound)return;try{const Audio=window.AudioContext||window.webkitAudioContext;if(!Audio)return;const ctx=new Audio(),osc=ctx.createOscillator(),gain=ctx.createGain();osc.connect(gain);gain.connect(ctx.destination);osc.frequency.setValueAtTime(330,ctx.currentTime);osc.frequency.exponentialRampToValueAtTime(490,ctx.currentTime+.12);gain.gain.setValueAtTime(.035,ctx.currentTime);gain.gain.exponentialRampToValueAtTime(.001,ctx.currentTime+.2);osc.start();osc.stop(ctx.currentTime+.22);osc.onended=()=>ctx.close();}catch{/* Transcripts and visual feedback remain available. */}}
 function stopAudio(){if(currentAudio){currentAudio.pause();currentAudio=null;}}
-document.addEventListener('click',event=>{
-  const control=event.target.closest('button[data-action]');if(!control||control.disabled)return;
+document.addEventListener('click',async event=>{
+  const control=event.target.closest('button[data-action]');if(!control||control.disabled||approaching||turning)return;
   const {action,id}=control.dataset;let focus=false;notice='';
+  if(action==='recovery-start'){
+    if(!solved(state,'exit'))return;
+    if(!state.recovery){state.recovery=newRecovery();state.currentRoom='hall';}
+    state.stage=state.recovery.complete?'recovery-results':'recovery';
+    started=true;view=state.recovery.complete?null:'search:brief';viewStack=[];zoomStack=[];hintOpen=false;trayOpen=false;
+    persist();draw({focus:true});return;
+  }
+  if(state.stage==='recovery'&&action.startsWith('r-')){
+    const message=recoveryAction(state.recovery,action.slice(2),id);if(message)inform(message);
+    if(action==='r-ticket'&&state.recovery.flags.includes('ticket')){await approach(control);openView('search:ticket');}
+    if(state.recovery.complete){state.stage='recovery-results';view=null;}
+    persist();draw({focus:state.recovery.complete||action==='r-ticket',keepFocus:true});return;
+  }
+  if(state.stage==='recovery'&&['hint','more-hint','close-hint'].includes(action)){
+    if(action==='close-hint')hintOpen=false;
+    else{if(action==='more-hint')state.recovery.hintLevel=Math.min(3,state.recovery.hintLevel+1);state.recovery.hintUses++;hintOpen=true;}
+    persist();draw({keepFocus:true});return;
+  }
   selection.freshReward=null;
   if(['settings','help','menu','restart'].includes(action)){showDialog(action);return;}
   if(action==='close-dialog'){dialog.close();return;}
-  if(action==='pan'){const viewport=main.querySelector('.scene-viewport');viewport?.scrollBy({left:(id==='left'?-1:1)*viewport.clientWidth*.65,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});return;}
-  if(action==='begin'||action==='confirm-new'){if(action==='confirm-new'){const settings=state.settings;state=newState();state.settings=settings;}else state.startedAt=Date.now();started=true;view=null;hintOpen=false;dialog.close();focus=true;}
-  if(action==='continue'){started=true;view=null;focus=true;}
+  if(action==='pan'){turnCamera(id);return;}
+  if(action==='begin'||action==='confirm-new'){viewStack=[];zoomStack=[];if(action==='confirm-new'){const settings=state.settings;state=newState();state.settings=settings;}else state.startedAt=Date.now();started=true;view=null;hintOpen=false;dialog.close();focus=true;}
+  if(action==='continue'){viewStack=[];zoomStack=[];started=true;view=null;focus=true;}
   if(action==='title'){started=false;view=null;dialog.close();focus=true;}
-  if(action==='room'){stopAudio();changeRoom(id);focus=true;}
-  if(action==='prev'||action==='next'){stopAudio();const i=ROOM_ORDER.indexOf(state.currentRoom);changeRoom(ROOM_ORDER[(i+(action==='next'?1:4))%5]);focus=true;}
-  if(action==='open'){view=id;inspect(state,id);hintOpen=false;trayOpen=false;focus=true;}
-  if(action==='back'){stopAudio();view=null;hintOpen=false;focus=true;}
-  if(action==='evidence'){view='evidence:'+id;inspect(state,view);hintOpen=false;trayOpen=false;focus=true;}
-  if(action==='item'){view='item:'+id;inspect(state,view);hintOpen=false;trayOpen=false;focus=true;}
+  if(action==='search'){warmView(state.currentRoom,'search:'+id);await approach(control);openView('search:'+id);focus=true;}
+  if(action==='move'){
+    const art=control.previousElementSibling;
+    if(art?.classList.contains('painted-object')&&!matchMedia('(prefers-reduced-motion: reduce)').matches){control.disabled=true;await art.animate([{transform:'translate(0,0) rotate(0)'},{transform:'translate(45px,-18px) rotate(9deg)',opacity:.3}],{duration:260,easing:'ease-in'}).finished.catch(()=>{});}
+    inspect(state,'moved:'+id);announce('The object moves.');sound();
+  }
+  if(action==='flip'){const marker='moved:'+id;state.inspectedObjects=seen(state,marker)?state.inspectedObjects.filter(x=>x!==marker):[...state.inspectedObjects,marker];sound();}
+  if(action==='locked')inform('Locked.');
+  if(action==='ambient')inform({keys:'Old keys, cut for a different lock.',gardening:'Water sparingly. Turn the pot toward the window.',warranty:'An expired warranty. The machine was bought years ago.'}[id]||'Nothing else here.');
+  if(action==='tv-channel'){
+    const latest=state.inspectedObjects.filter(x=>TV_BULLETINS.includes(x)).at(-1);
+    const index=TV_BULLETINS.indexOf(latest);
+    const next=TV_BULLETINS[index<0?(id==='previous'?2:0):(index+(id==='previous'?2:1))%3];
+    state.inspectedObjects=state.inspectedObjects.filter(x=>x!==next);
+    inspect(state,next);announce(FRAGMENTS[next][1]);sound();
+  }
+  if(action==='discover'){
+    inspect(state,id);
+    if(id.endsWith('-read')&&['output-read','work-read','prices-read'].includes(id)){state.inspectedObjects=state.inspectedObjects.filter(x=>x!==id);state.inspectedObjects.push(id);}
+    if(seen(state,'old-food')&&seen(state,'new-food'))inspect(state,'food');
+    if(seen(state,'meter-read')&&seen(state,'rent-read'))inspect(state,'bills');
+    announce(FRAGMENTS[id]?.[1]||'Noted.');sound();
+  }
+  if(action==='fragment'){openView('fragment:'+id);focus=true;}
+  if(action==='open'){await approach(control);openView(id);focus=true;}
+  if(action==='back'){putDown();focus=true;}
+  if(action==='evidence'){openView('evidence:'+id);focus=true;}
+  if(action==='item'){openView('item:'+id);focus=true;}
   if(action==='satchel')trayOpen=!trayOpen;
   if(action==='select-slip'){selection.budget=id;announce('Slip selected. Choose a notebook entry.');}
   if(action==='place-budget'){const slip=BUDGET_SLIPS.find(x=>x.id===selection.budget);if(slip){const [month,index]=id.split(':');state.budget[month][Number(index)]=slip.value;selection.budget=null;sound();}else inform('Take a loose slip first.');}
   if(action==='hint'||action==='more-hint'){
-    const p=contextualPuzzle(state,view);if(p){if(action==='more-hint')state.hintLevels[p]=Math.min(3,(state.hintLevels[p]||1)+1);else state.hintLevels[p]||=1;state.hintUses++;hintOpen=true;announce(HINTS[p][state.hintLevels[p]-1]);}
+    const p=contextualPuzzle(state,view);if(p){if(action==='more-hint')state.hintLevels[p]=Math.min(3,(state.hintLevels[p]||1)+1);else state.hintLevels[p]||=1;state.hintUses++;hintOpen=true;announce(discoveryHint(state,p,state.hintLevels[p]));}
   }
   if(action==='close-hint')hintOpen=false;
   if(action==='use-badge'&&state.inventory.includes('badge')){inspect(state,'badge-used');inform('Click. The cabinet rails release.');sound();}
@@ -117,7 +192,7 @@ document.addEventListener('click',event=>{
   if(action==='seal'){state.seals=state.seals.includes(id)?state.seals.filter(x=>x!==id):[...state.seals,id];}
   if(action==='place-final'&&state.evidence.includes(id)&&!state.finalSequence.includes(id)&&state.finalSequence.length<5)state.finalSequence.push(id);
   if(action==='remove-final')state.finalSequence=state.finalSequence.filter(x=>x!==id);
-  if(action==='solve'){const result=complete(state,id);inform(result.ok?{budget:'The drawer slides open.',cost:'The cabinet releases the press.',orders:'A shift sheet slides from the press.',indicators:'The receiver light comes on.',radio:'A Control Room pass drops into the compartment.',policy:'Both seals engage.',exit:'The door unlocks.'}[id]:result.message);if(result.ok){selection.freshReward=id;hintOpen=false;sound();focus=true;}}
+  if(action==='solve'){const result=complete(state,id);inform(result.ok?{budget:'The drawer slides open.',cost:'The cabinet releases the press.',orders:'A shift sheet slides from the press. A small key to the record shelf is tucked beneath it.',indicators:'The radio light comes on.',radio:'The utility shutter clicks. A utility cabinet key drops into the compartment.',policy:'Both seals engage.',exit:'The door unlocks.'}[id]:result.message);if(result.ok){selection.freshReward=id;hintOpen=false;sound();focus=true;}}
   if(action==='reveal'){state.stage='reveal';focus=true;}
   if(action==='transfer'){if(state.transfer.join(',')==='1,1,-1'){state.transferDone=true;inform('Your forecast fits the lower-cost technology improvement.');}else inform('Follow the lower costs through the firms: producing at each price becomes easier. Then consider the new intersection with unchanged demand. Adjust the forecast and try again.');}
   if(action==='results'&&state.transferDone){state.stage='results';focus=true;}
@@ -159,6 +234,13 @@ document.addEventListener('pointercancel',()=>knobGesture=null);
 document.addEventListener('keydown',event=>{
  const knob=event.target.closest?.('[data-knob]');
  if(knob&&!knob.disabled&&['ArrowLeft','ArrowDown','ArrowRight','ArrowUp','Home','End','Enter',' '].includes(event.key)){event.preventDefault();setFrequency(event.key==='Home'?240:event.key==='End'?300:state.frequency+(['ArrowLeft','ArrowDown'].includes(event.key)?-10:10));return;}
- if(event.key==='Escape'&&!dialog.open){if(trayOpen){trayOpen=false;draw({focus:true});}else if(view){view=null;stopAudio();draw({focus:true});}else if(hintOpen){hintOpen=false;draw({focus:true});}}
+ if(event.key==='Escape'&&!dialog.open){if(trayOpen){trayOpen=false;draw({focus:true});}else if(hintOpen){hintOpen=false;draw({focus:true});}else if(view){putDown();draw({focus:true});}}
+ if(!view&&!dialog.open&&!trayOpen&&started&&['investigation','recovery'].includes(state.stage)&&['ArrowLeft','ArrowRight'].includes(event.key)){event.preventDefault();turnCamera(event.key==='ArrowLeft'?'left':'right');}
 });
+
+let swipe=null,suppressClickUntil=0;
+document.addEventListener('click',event=>{if(Date.now()<suppressClickUntil){event.preventDefault();event.stopImmediatePropagation();}},{capture:true});
+document.addEventListener('pointerdown',event=>{if(!view&&event.pointerType==='touch'&&event.target.closest('.scene-viewport'))swipe={x:event.clientX,y:event.clientY};});
+document.addEventListener('pointerup',event=>{if(!swipe)return;const dx=event.clientX-swipe.x,dy=event.clientY-swipe.y;swipe=null;if(Math.abs(dx)>65&&Math.abs(dx)>Math.abs(dy)*1.4){event.preventDefault();suppressClickUntil=Date.now()+400;turnCamera(dx<0?'right':'left');}});
+document.addEventListener('pointercancel',()=>swipe=null);
 draw();

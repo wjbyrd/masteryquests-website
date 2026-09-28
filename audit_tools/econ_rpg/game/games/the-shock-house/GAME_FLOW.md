@@ -2,6 +2,27 @@
 
 **Author / instructor spoilers below.** Players see the named economic explanation only after unlocking the exit and stepping outside.
 
+## Continuous interior and discovery
+
+The five legacy room IDs are now camera positions only; no room names or navigation doors appear. Left/right arrows, keyboard arrows, and touch swipes cycle exit → household furniture → workbench → media shelf → utility fittings → exit. All positions are available from the start. The policy dependency locks the cabinet shutter, not camera access. Back goes to the previous close-up.
+
+| Discovery | Physical search | Quiet observation |
+|---|---|---|
+| Food | Bag → move jar and bread → crumpled receipt → unfold; separately peel newer labels | March $600; same basket in April $800 |
+| Income | Desk → top drawer → wallet → open → unfold stubs | Same hours; take-home pay $3,000 / $3,200 |
+| Housing and energy | Letter rack → move postcard → unfold notice; meter → lift cover → read | Rent $1,400 / $1,500; same 500 utility units cost $200 / $500 |
+| Budget mechanism | Books → pull notebook → open pages | Latch compares the household accounts |
+| Firm costs | Filing tray → move catalogue → pull folder → compare dated deliveries | $18 / $27 / $27 unit cost |
+| Production | Machine → lift counter cover → inspect memory | 1,200 / 1,200 / 900; orders still available |
+| Material | Bin → lift lid → count remaining spools | Six measures; $18 each; two per job |
+| National facts | Television → separately select three retained bulletins | Real output 200 / 184; unemployment 5% / 8%; prices 100 / 108 |
+| National synthesis | After the work plan, records → pull narrow register → compare bulletins → hidden clasp | Connect existing household, costs, and staffing evidence; set the three directions |
+| Cause | Receiver → service flap → inscription; power knob → tune dates | Upstream terminal interruption connects earlier observations |
+
+Raw fragments and moved-object markers persist in `inspectedObjects`. The satchel lets players revisit discovered observations. First-time players cannot access the national comparison until they have examined the separate bulletins and completed the work plan; older saves retain their already discovered register. Clocks, frames, a coat, tools, plants, and ordinary books add a small amount of ambient interaction. Hints first locate unfinished searches, then return to the mechanism’s three-level reasoning hints.
+
+The economic mechanism specifications below retain their historical area names as author references; those names are not player navigation.
+
 ```text
 Residence documents → BUDGET DRAWER ── badge ──→ INVOICE CABINET
                             │                        │
@@ -33,9 +54,11 @@ dated notice from drawer ─────→ BROADCAST RECEIVER ←──── i
 | 4. National indicator wall · Archive | Connect household, cost, and staffing records. Read national register. Rotate output DOWN, unemployment UP, prices UP. | National real output 200 → 184, unemployment 5% → 8%, price index 100 → 108; monthly inflation 2% previously → 8% now. Indicator plate collected. Receiver powers on. | Plate → exit. National figures substantiate the combined macro pattern rather than relying on local anecdotes. |
 | 5. Broadcast receiver · Archive | Wall powered. Index: frequency is ten times latest unit cost. Notice supplies first date; emergency invoices supply next two. Drag/tap the physical knob or turn it with keyboard arrows to 270 kHz. Keep March 14, March 16, March 21 dispatches in order. | Terminal storm disruption → emergency routing costs → manufacturer cuts despite available orders. Cause clipping and Control Room pass. | Pass opens Control Room. Broadcast clippings begin final causal chain. |
 | 6. Policy machine · Control Room | Receiver pass. Move lever at least once tighter and once looser. Place living-cost and work/output objective seals; acknowledge tradeoff. | Tighter: inflation pressure down, employment/output conditions worse. Looser: work/output supported, inflation pressure worse. No setting repairs the input network. Two-seal record. | Final artifact → Hall. Both objectives are necessary; no policy is graded as magically correct. |
-| 7. Exit mechanism · Hall | All previous mechanisms complete. Place five artifacts; reorder using arrows. | Broadcast → invoice → shift sheet → national indicator plate → policy record. The door opens. | Reveals “negative aggregate supply shock,” SRAS left with AD unchanged, lower real output, higher price level, weaker labor demand, policy tradeoff. |
+| 7. Exit mechanism · Hall | All previous mechanisms complete. Place five event tiles; reorder using arrows. Each tile cites its supporting records. | Storm disrupts input deliveries → production costs rise → firms cut production and shifts → national output falls while unemployment and prices rise → policy faces an inflation–employment tradeoff. The door opens. | Reports are retrospective evidence. The puzzle orders economic causes and consequences, not document publication or discovery. Reveals the negative aggregate supply shock and SRAS shifting left with AD unchanged. |
 
 ## Instructional close
+
+Completing this first case also unlocks **The Second Harvest**, a separate positive aggregate supply mission. See [MISSION_2.md](MISSION_2.md) for its five-step dependency chain. The coin, photograph, tram ticket, and gardening journal now activate only in that second mission; earlier optional interactions are removed from the first case.
 
 1. **What happened?** Recaps the records the player recovered and the causal chain they assembled.
 2. **Why did it happen economically?** Names the negative aggregate supply shock, higher costs, reduced SRAS, falling output, higher prices/inflation, weaker employment, and policy tradeoff. A labeled AD-AS diagram shows the change. Distinguishes nominal income from purchasing power and a price-level change from indefinite inflation acceleration.
@@ -55,5 +78,7 @@ Then show escaped status, elapsed time, hints opened, seven recovered evidence r
 - New Investigation confirms replacement; cancel and Escape retain the existing run. Storage errors show a readable fallback instead of stopping the game.
 
 ## Physical interaction pass
+
+The illustrated pass adds five WebP panorama plates and nested miniature image scenes without changing this chain. Search the coat, lift its pocket flap, then collect and flip the exposed ticket. Open the desk drawer, then the wallet, to reach the pay stubs. Move the bag's groceries before inspecting its receipt. Component targets have no visible labels or hover text; camera pushes and reverse moves preserve orientation. See `ASSET_MANIFEST.md` for plate/state bindings and replacement instructions. Legacy room names below are internal save identifiers, not navigation labels shown to players.
 
 Puzzle validation, rewards, prerequisites, final sequence, and the version-1 save format are unchanged. The room artwork now provides the clickable surfaces; region outlines are optional in Accessibility. No numbered hotspot UI, duplicate object list, room counter, or permanent puzzle checklist is shown. The source records have paper-specific layouts, while economic interpretation remains in the ending. Room changes reflect solved state and consumed materials; the satchel carries collected artifacts. Invoice and final-evidence ordering support drag/drop plus arrow-button alternatives, and all controls retain meaningful accessible names.

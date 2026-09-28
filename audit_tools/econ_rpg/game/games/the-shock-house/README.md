@@ -1,12 +1,16 @@
 # The Shock House — An Economic Escape
 
-Game 12 in the October Mastery Quests preview collection. Five illustrated locations and seven connected mechanisms, with direct object interaction, contextual hints, browser saves, an economic reveal, one transfer challenge, and results. Target first-play time is 15–25 minutes; classroom timing still needs playtesting.
+Game 12 in the October Mastery Quests preview collection. One continuous interior built from illustrated WebP plates, five camera directions, miniature object scenes, and seven connected mechanisms. Contextual hints, browser saves, an economic reveal, one transfer challenge, and results remain intact. Target first-play time is 15–25 minutes; discovery difficulty and classroom timing still need human playtesting.
+
+## Two missions
+
+The original negative-supply case unlocks **The Second Harvest**, a playable positive-supply mystery. The coat coin, photograph, tram ticket, and gardening journal are interactive only in the second case, where each is required. See [MISSION_2.md](MISSION_2.md) for its route, economic framing, save compatibility, and tests.
 
 ## Run
 
 From `audit_tools/econ_rpg/game`, run `python -m http.server 4179` (or any static server), then open `http://localhost:4179/games/the-shock-house/`. The existing preview server can serve the same path. ES modules require HTTP rather than `file://`.
 
-The folder can also be hosted unchanged on GitHub Pages. For standalone deployment, adjust the optional brand link to your library. Embed the hosted URL in a Canvas iframe with scripts enabled, preferably at least 800px tall. Narrow screens retain a larger room composition: swipe horizontally or use the small edge arrows to look around. Close-ups scroll vertically. Storage restrictions in embedded browsers are caught and explained; the current tab remains playable.
+The folder can also be hosted unchanged on GitHub Pages. For standalone deployment, adjust the optional brand link to your library. Embed the hosted URL in a Canvas iframe with scripts enabled, preferably at least 800px tall. Edge arrows, left/right keyboard keys, and horizontal touch swipes turn to adjacent views. Portrait navigation sits below the scene so it cannot cover objects. Close-ups scroll vertically. Storage restrictions in embedded browsers are caught and explained; the current tab remains playable.
 
 No runtime libraries, remote fonts, network services, generated questions, or build step are required. No personal information is collected or transmitted.
 
@@ -20,36 +24,45 @@ No runtime libraries, remote fonts, network services, generated questions, or bu
 - `objects.js`: physical document and mechanism rendering; no puzzle completion or save mutations.
 - `engine.js`: central state, prerequisite gates, puzzle validation, rewards, policy model, and versioned save validation.
 - `game.js`: interaction, rendering, keyboard focus management, dialogs, save/resume, reveal, transfer, and results.
-- `scenes.js`: original layered SVG room illustrations, object hit regions, visible world changes, and replaceable room image paths.
-- `assets/cover.svg`: library artwork derived from the original Hall illustration.
+- `illustrated.js`: background plate URLs, camera order, region coordinates, preload cache, and image fallback.
+- `tactile.js`: miniature image scenes, invisible component targets, physical overlays and document readings.
+- `discovery.js`: quiet fragments, accessible titles, and progressive discovery hints.
+- `illustrated.css`: bitmap scene layout, camera/overlay treatments, and mobile reading surfaces.
+- `ASSET_MANIFEST.md`: every shipped plate, atlas, variant, crop, state binding, and replacement instructions.
+- `panorama.css`: navy palette, camera layout, tactile search objects, portrait controls, and motion settings.
+- `assets/cover.svg`: local fallback image if an illustrated plate is unavailable.
 - `GAME_FLOW.md`: dependency map and full puzzle specifications, including solutions.
 - `../../../tests/shock-house/`: engine and browser regression checks.
 
 ## Investigation and dependencies
 
-The Hall, Residence, Workshop, and Archive can be explored immediately. The Control Room requires the receiver pass. Click objects directly; the normal room has no hotspot circles, numbered controls, duplicate object list, or progress dashboard. Doorways return to the Hall.
+All five views can be explored immediately. There are no room labels or navigation doors. A shuttered utility cabinet keeps the receiver prerequisite on its mechanism. The only door is the exit. Click ordinary objects directly; normal exploration has no numbered controls, duplicate object list, or progress dashboard. Back steps through the nested inspection stack; camera navigation never requires returning to a hub.
 
-Every object has a keyboard-accessible invisible hit region of at least 44 CSS pixels. Focus outlines remain visible. **Case menu → Accessibility → Show interactive objects** optionally outlines regions; it defaults off. Paper slips support drag/drop or select-then-place; invoice and final-order arrows provide keyboard/touch alternatives. Turn the radio knob by dragging, tapping, or using arrows/Home/End. The satchel holds unused items and the persistent evidence folder.
+Every interactive object has a keyboard-accessible invisible hit region of at least 44 CSS pixels. Focus outlines remain visible. **Case menu → Accessibility → Show interactive objects** optionally outlines regions; it defaults off. Paper slips support drag/drop or select-then-place; invoice and final-order arrows provide keyboard/touch alternatives. Turn the radio knob by dragging, tapping, or using arrows/Home/End. The satchel holds unused items and the persistent evidence folder.
 
-The household drawer yields a badge and a dated notice. The badge opens the invoice cabinet. Its cost record unlocks the work-order press and supplies a receiver-frequency clue. The resulting staffing record joins household and cost evidence at the national indicator wall. This powers the receiver; the old household date and invoice dates now identify its broadcast sequence. The receiver opens the Control Room. Testing both policy directions and sealing both objectives produces the last artifact for the Hall’s causal mechanism.
+Decorative furnishings remain in the illustrated plates without dead-end hotspots. The fuse box, hanging tools, biscuit tin, lamps, plants, windows, cup, clock, armchair, and radiator are scenery. Loose decorative keys stay in the drawer artwork; they are not collectible or usable. The obsolete fuse-code and tin/armchair key reveals have been removed. Ordinary details within working searches still provide visual camouflage, the photograph and gardening book are reserved for Mission 2.
+
+Search the bag, move groceries, unfold the older receipt, and peel newer price stickers. Search the desk drawer and wallet for pay stubs. Compare the utility meter with a notice behind the mail. Pull the notebook from the shelf. The household drawer still yields a badge and dated notice. The badge opens the invoice cabinet; deliveries are filed beneath a catalogue, and production readings live in a covered machine counter. The press supplies the staffing record. Separate television bulletins establish national output, employment, and prices. After the work plan, open the narrow register to compare those bulletins and engage its hidden clasp. This powers the receiver; the notice and invoice dates identify its sequence. The receiver releases the utility shutter. Testing policy directions and sealing both objectives produces the final artifact for the exit’s causal mechanism.
 
 Physical items are consumed only after their purpose is served. Evidence remains in the log permanently. Solved mechanisms are safe to revisit and do not duplicate rewards. Each puzzle has three hints; hints do not deduct points. There is no time-based mastery score.
 
-The house carries progress: the household drawer and invoice cabinet stay open, recovered drawer contents leave their impressions in the lining, allocated materials leave the store, the Archive gauges remain configured, its receiver powers on, the Control Room door unlocks, and inserted artifacts stay visible on the Hall door. The final door itself opens. Paper, envelope, notebook, drawer, and machine close-ups use different motion, disabled by reduced-motion preferences.
+Search progress persists: moved groceries and catalogue stay moved, the wallet stays open, and meter/bin covers stay lifted. In Mission 2, coat cloth opens to expose a ticket edge; the ticket can be collected, flipped, and used to locate a dated trial. Discovery scenes have no visible action labels, tooltips, or descriptive paragraphs. The satchel records raw observations without naming their economic meaning. Back retraces the inspection stack and reverses the camera movement. Reduced-motion preferences disable camera animation; keyboard names and optional outlines remain available.
 
 The household essential basket is constant in quantity. Workshop orders remain available; costly inputs, rather than disappearing demand, explain the production cuts. National output is real, and the national register supplies aggregate evidence rather than inferring it from one household or firm. Inflation figures refer to matching monthly intervals. The final diagram holds AD fixed while SRAS shifts left. Policy gauges are illustrative directional indices, not forecasts or calibrated estimates. A higher price level does not imply endlessly accelerating inflation.
 
 ## Art and audio replacement
 
-All five rooms use original editable SVG illustrations with perspective, curved silhouettes, material patterns, frame depth, shadows, and foreground objects. Documents are semantic HTML with paper-specific styling. There are no empty image placeholders or third-party visual assets.
+All five image plates share wall treatment, trim, floor, palette, perspective, window construction, and lighting. Furnishings sit against walls or overlap foreground edges. There is no center table, labeled door hub, or exposed macro dashboard. Important objects are ordinary containers; discoveries happen in miniature image scenes. Exact economic figures and mechanical puzzle controls remain semantic HTML/CSS/SVG overlays. There are no remote assets at runtime.
 
-To replace a room, put an image in `assets/` (suggested: `central_hall.webp`, `residence.webp`, `workshop.webp`, `archive.webp`, `policy_room.webp`) and set its `ROOM_ASSETS` entry in `scenes.js`. Use a 1000×640 composition. `HOTSPOTS` in that file records each object’s center x/y and width/height in world pixels. Rendering converts them to percentages, retaining minimum touch dimensions. For a raster replacement, provide corresponding state variants or retain the SVG state layers so world changes remain visible. Document amounts and copy can be changed in `physical-content.js` without changing the paper treatments in `objects.js` or `immersive.css`.
+`SCENE_OBJECTS` in `illustrated.js` records each object’s center and extent in normalized 1000×640 coordinates. Rendering converts these to percentages with a 44 CSS-pixel minimum. `MINI` and component regions in `tactile.js` describe the corresponding close-ups. See [ASSET_MANIFEST.md](ASSET_MANIFEST.md) for art replacement, transparent atlas cells, state images, generated prompt provenance, mobile variants, and fallback behavior. `physical-content.js` owns authored amounts; `objects.js` owns the preserved mechanisms.
 
 Sound is off by default. Optional synthesized mechanism tones require explicit enabling. Add broadcast audio file paths in `BROADCAST_AUDIO` in `content.js`; transcripts always remain visible. Room transitions stop any broadcast audio. Device reduced-motion preferences disable animation and transitions.
 
 ## Save format
 
-One versioned localStorage key: `mastery-quests.shock-house.v1`. The object overhaul preserves this format and the existing engine. Earlier saves retain puzzle, hint, evidence, partial mechanism, final-sequence, and ending progress. Title-screen Continue is shown for a valid save. New Investigation requires confirmation. Save validation rejects unsupported or incoherent progress without crashing; storage denial falls back to tab-only play with a notice.
+The exit presents five economic event tiles with supporting-record captions. Players reconstruct causes and consequences: the input disruption, higher costs, production/shift cuts, national effects, and the policy tradeoff. Radio reports are retrospective evidence. `FINAL_EVENTS` in `content.js` supplies the player-facing labels; `FINAL_ORDER` keeps the existing evidence IDs so saved partial arrangements and completed games remain compatible.
+
+One versioned localStorage key: `mastery-quests.shock-house.v1`. Legacy room IDs now identify camera positions. Search markers and raw fragments use the existing validated `inspectedObjects` list. Earlier saves retain puzzle, hint, evidence, partial mechanism, final-sequence, and ending progress; an already inspected national register does not require rediscovery. Visiting the utility view before obtaining its key is now valid. Title-screen Continue is shown for a valid save. New Investigation requires confirmation. Malformed saves are not overwritten until the player starts a replacement investigation; storage denial falls back to tab-only play.
 
 ## Validation
 
@@ -59,10 +72,13 @@ From the repository root:
 node audit_tools/econ_rpg/tests/shock-house/engine.mjs
 node audit_tools/econ_rpg/tests/shock-house/browser.cjs
 node audit_tools/econ_rpg/tests/shock-house/objects.cjs
+node audit_tools/econ_rpg/tests/shock-house/illustrated.cjs
+node audit_tools/econ_rpg/tests/shock-house/recovery.mjs
+node audit_tools/econ_rpg/tests/shock-house/recovery.cjs
 ```
 
-The browser check uses Playwright and Chrome for development only. Set `PLAYWRIGHT_PATH` to your installed Playwright module, `SHOCK_HOUSE_URL` to the served game URL, and optionally `SHOCK_HOUSE_OUTPUT` to the screenshot/results folder. The supplied default module path uses this workspace’s bundled runtime.
+The browser check uses Playwright and Chrome for development only. Set `PLAYWRIGHT_PATH` to your installed Playwright module, `SHOCK_HOUSE_URL` to the served game URL, and `SHOCK_HOUSE_WIDTH=390` for the phone playthrough. Screenshots are written to `tmp/shock-house/panorama-<width>`. The supplied default module path uses this workspace’s bundled runtime.
 
-The browser path operates the actual controls from title to results, including wrong attempts, nonlinear visits, notebook slip placement, three hint levels, keyboard tuning and policy controls, saved items, partial final sequence resume, completed-save resume, restart cancellation, narrow layouts, object focus, malformed saves, and denied storage. `objects.cjs` additionally checks native paper dragging, pointer-operated tuning, persistent visual changes, a version-1 save fixture, optional outlines, object-specific animation, and reduced motion. Both write screenshots for visual inspection. The game has no Playwright dependency.
+`browser.cjs` runs `panorama.cjs`: a full title-to-results playthrough using nested searches, quiet fragments, wrong attempts, saved manipulation state, three hint levels, keyboard tuning and policy controls, completed-save resume, narrow layouts, and focus. `objects.cjs` runs `interaction.cjs`: native dragging, pointer tuning, actual touch swipes, a version-1 save fixture with partial final sequence, optional outlines, camera animation, reduced motion, malformed saves, and denied storage. The game has no Playwright dependency.
 
-Verified September 27, 2026: 54 engine assertions passed; the redesigned desktop and 390px phone playthroughs completed all seven puzzles, the transfer, and results with no page errors. Layout/target checks passed at 320, 390, 768, 1024, and 1440px. All five room compositions and physical close-ups were visually reviewed. First-time play duration and full assistive-technology compatibility still need human playtesting.
+Verified September 28, 2026: engine assertions passed; desktop and 390px phone playthroughs completed all seven puzzles, transfer, and results with no page errors. Layout/target checks passed at 320, 390, 768, 1024, and 1440px. Legacy-save and gesture regression checks passed. First-time discovery difficulty, play duration, and full assistive-technology compatibility still need human playtesting.
