@@ -5082,6 +5082,19 @@ function getAdaptiveQuestion(poolName, targetTag = null, options = {}){
         };
     }
 
+    // Exhaust ordinary Legendary inventory before recycling. Standard and
+    // other modes retain their existing adaptive candidate selection.
+    const exhaustLegendary = gameMode === "legendary" && poolName === "legendary";
+    if(exhaustLegendary){
+        usedQuestions.legendary = usedQuestions.legendary || [];
+        let fresh = pool.filter(q => !usedQuestions.legendary.includes(q.id));
+        if(fresh.length === 0){
+            usedQuestions.legendary = [];
+            fresh = pool;
+        }
+        pool = fresh;
+    }
+
     // --- 🎯 TARGET SPECIFIC TAG IF PROVIDED ---
     if(targetTag){
         let filtered = pool.filter(q => q.tag === targetTag);
@@ -5136,6 +5149,9 @@ function getAdaptiveQuestion(poolName, targetTag = null, options = {}){
         }
     }
 
+    if(exhaustLegendary){
+        usedQuestions.legendary.push(picked.id);
+    }
     return picked;
 }
 

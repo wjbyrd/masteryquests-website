@@ -217,6 +217,13 @@ def plan_sources(sources, patches):
             for start, end, pools in reversed(sections):
                 source = source[:start] + json.dumps(pools, ensure_ascii=False, indent=2) + source[end:]
         proposed[game] = source
+    # A focused expansion can certify the whole resulting bank as well as each
+    # edited record. Reject drift in protected records or unreviewed additions
+    # before any file is written, including when replaying an earlier state.
+    for patch in patches:
+        for guard in patch.get('finalBankFingerprints', []):
+            if hashlib.sha256(proposed[guard['game']].encode()).hexdigest() != guard['sha256']:
+                raise ValueError(f"Final bank fingerprint conflict: {guard['game']}; no files written")
     numeric_checks = [check for patch in patches for check in patch['numericChecks']]
     for check in numeric_checks:
         if not math.isclose(arithmetic(check['expression']), check['expected'], abs_tol=1e-9):
@@ -230,7 +237,7 @@ def main():
     parser.add_argument("--validate", action="store_true")
     args = parser.parse_args()
     patches = [json.loads((HERE / name).read_text(encoding='utf-8'))
-               for name in ('content-patch.json', 'continuation-patch.json', 'cost-standard-patch.json', 'market-standard-patch.json', 'strategy-standard-patch.json', 'agency-standard-patch.json', 'closeout-patch.json')]
+               for name in ('content-patch.json', 'continuation-patch.json', 'cost-standard-patch.json', 'market-standard-patch.json', 'strategy-standard-patch.json', 'agency-standard-patch.json', 'closeout-patch.json', 'agency-legendary-expansion-patch.json')]
     paths = {}
     sources = {}
     for game in GAMES:

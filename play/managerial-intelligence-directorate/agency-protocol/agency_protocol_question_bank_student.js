@@ -5114,76 +5114,83 @@ const questionBanks = {
       "sourceGame": "agencyProtocol",
       "q": "An insurer has two findings: new subscribers had high accident rates before joining; among continuing subscribers, precautions fall only after deductibles are removed. Reinstating deductibles restores precautions but high-risk entry continues. What remaining policy need follows?",
       "options": [
-        "Separate selection controls are still needed; restored care does not repair entry composition",
-        "The deductible has solved both problems because continuing customers behave better",
-        "Only moral hazard ever existed because both observations involve accidents",
-        "Only adverse selection exists because all insured people had risk before purchase"
+        "Keep the restored deductible and assess entry composition with pre-contract risk evidence",
+        "Replace the deductible with entry screening because the persistent problem is compositional",
+        "Keep only the deductible because restored care identifies the cause of continuing high claims",
+        "Expand post-entry monitoring and use the resulting claim decline to assess entry quality"
       ],
       "tag": "moral_hazard",
-      "type": "integration",
+      "type": "diagnostic",
       "objective": "LO20.1",
       "difficulty": "legendary",
-      "conceptCluster": "legendary_agencyProtocol_hidden_action_after_contract",
-      "primarySkill": "hidden_action_after_contract",
-      "secondarySkills": [],
-      "repairSkill": "hidden_action_after_contract",
-      "commonError": "confuses_post_contract_behavior_with_pre_contract_type_selection",
-      "feedback": "Preexisting risk among entrants supports selection; changed care among continuing members supports moral hazard. Evidence that a behavior remedy works does not establish an improved risk pool.",
-      "aHash": "326a39d4808357908d0702f02e228a150610815904958ec5ac0611a5b38161a5"
+      "conceptCluster": "legendary_agencyProtocol_moral_hazard",
+      "primarySkill": "moral_hazard",
+      "secondarySkills": [
+        "adverse_selection"
+      ],
+      "repairSkill": "moral_hazard",
+      "commonError": "screening_alone_discards_an_action_control_shown_to_work",
+      "feedback": "Within-member care changes identify an action margin; high pre-entry risk identifies a separate selection margin. Maintaining effective action incentives does not remove the need to evaluate entry risk.",
+      "aHash": "07aa441f69009348f04851b672c0dbb84791480b76be6e98882050a53b694704",
+      "canonicalDifficulty": "legendary"
     },
     {
       "id": 9003,
       "sourceGame": "agencyProtocol",
       "q": "A voluntary quality certificate earns a seller a $900 price premium. Verification costs a reliable seller $200 and an unreliable seller $1,200. A subsidy of $500 is then offered to every certified seller; buyers initially keep paying the premium. Which prediction follows?",
       "options": [
-        "Certification was never a signal because verification had a fee",
-        "Certification remains separating because the two types still have different costs",
-        "The subsidy improves separation because every seller faces lower net cost",
-        "Certification initially separates types, but the subsidy makes imitation profitable for unreliable sellers and can erode the premium"
+        "Neither type gains after the subsidy because the premium must immediately fall to zero",
+        "Initially only reliable sellers gain; after the subsidy both types gain under the old premium",
+        "Both types gain initially; the subsidy increases the reliable seller’s advantage enough to separate them",
+        "Only reliable sellers gain in both cases because their verification cost remains lower"
       ],
       "tag": "signaling",
-      "type": "integration",
+      "type": "multi-step",
       "objective": "LO19.4",
       "difficulty": "legendary",
-      "conceptCluster": "legendary_agencyProtocol_credible_signaling_hidden_type",
-      "primarySkill": "credible_signaling_hidden_type",
+      "conceptCluster": "legendary_agencyProtocol_signaling",
+      "primarySkill": "signaling",
       "secondarySkills": [],
-      "repairSkill": "credible_signaling_hidden_type",
-      "commonError": "assumes_any_claim_is_a_credible_signal_without_costly_verification",
-      "feedback": "Initially reliable sellers gain 700 while unreliable sellers lose 300. With the subsidy, the gains are 1,200 and 200. Both now want certification under the old premium, undermining the beliefs that supported it.",
-      "aHash": "69da8dc037bb0a4e2850f564cb7ef27679ea5d6bffb7a8a8a751429859aab0ac"
+      "repairSkill": "signaling",
+      "commonError": "the_unreliable_type_initially_loses_300",
+      "feedback": "Net gains before subsidy are 700 and −300; afterward they are 1,200 and 200. Differential costs remain but no longer deter imitation at the stated premium. Beliefs may adjust later; an immediate zero premium is not established.",
+      "aHash": "9989c0722c426908040a6be42d709296c4224e7773a625e1136fe48846d47822",
+      "canonicalDifficulty": "legendary"
     },
     {
       "id": 9012,
       "sourceGame": "agencyProtocol",
-      "q": "A board compares mutually exclusive control packages. No change leaves $70,000 residual loss. Monitoring costs $22,000 and leaves $28,000 loss. Bonding costs the agent $14,000, reimbursed through pay, plus $5,000 verification, and leaves $24,000 loss. Combined controls cost $45,000 and leave $8,000 loss. Which package minimizes total agency cost?",
+      "q": "A risk-neutral manager can exert effort costing 12, raising success probability from 0.3 to 0.7. Success adds 100 of firm value. The manager’s outside utility is 20. A contract pays base b plus bonus s on success; effort is chosen only when strictly better, and an equal outside utility is accepted. Which listed contract induces effort, satisfies participation, and leaves the most firm value net of pay?",
       "options": [
-        "Bonding: $43,000 total",
-        "Monitoring: $50,000 total",
-        "Combined controls: $53,000 total but the smallest residual loss must be optimal",
-        "No change: zero control spending means zero agency cost"
+        "b = 10, s = 32: participation holds and expected firm value net of pay is 37.6",
+        "b = 11, s = 30: participation holds and expected firm value net of pay is 38",
+        "b = 8, s = 32: participation holds and expected firm value net of pay is 39.6",
+        "b = 20, s = 40: participation holds and expected firm value net of pay is 22"
       ],
       "tag": "agency_costs",
-      "type": "integration",
+      "type": "multi-step",
       "objective": "LO21.3",
       "difficulty": "legendary",
-      "conceptCluster": "legendary_agencyProtocol_agency_costs_and_alignment",
-      "primarySkill": "agency_costs_and_alignment",
-      "secondarySkills": [],
-      "repairSkill": "agency_costs_and_alignment",
-      "commonError": "treats_monitoring_costs_as_the_only_agency_cost",
-      "feedback": "Count control resources and remaining loss. Totals are 70, 50, 43 and 53 thousand. Agent-borne costs still matter when compensated; minimizing residual loss alone overcontrols.",
-      "aHash": "83d2d5c2de98a5472374adf2076769fc77dcce085d0208cb61afec1107937c57"
+      "conceptCluster": "legendary_agencyProtocol_agency_costs",
+      "primarySkill": "agency_costs",
+      "secondarySkills": [
+        "incentives"
+      ],
+      "repairSkill": "agency_costs",
+      "commonError": "the_bonus_exactly_offsets_effort_cost_the_stipulated_strict_effort_rule_rejects_it",
+      "feedback": "At s=32 the effort gain .4×32=12.8 exceeds cost 12. With b=10, utility is 10+.7×32−12=20.4 and firm value is 70−32.4=37.6. Bonus 30 gives indifference, base 8 violates participation, and the last feasible contract is costlier.",
+      "aHash": "6eb2becb3fba294f077ee8ca7c681943ac5c88152dc8d1da8f67f6328fc5d507",
+      "canonicalDifficulty": "legendary"
     },
     {
       "id": 9016,
       "sourceGame": "agencyProtocol",
       "q": "Local branches have timely customer information but discount to win sales from sister branches. Headquarters can observe cross-branch overlap but learns local demand slowly. Which design most directly addresses both limits?",
       "options": [
-        "Delegate ordinary pricing using contribution-based rewards, and require joint approval for deals affecting sister branches",
-        "Centralize every quote and keep sales-volume rewards for branches",
-        "Delegate every quote and reward gross revenue so branches use more local information",
-        "Keep local authority but send headquarters cost averages without changing rewards"
+        "Local pricing with net-contribution rewards and joint approval for verified cross-branch deals",
+        "Local pricing with revenue rewards and joint approval for deals branches voluntarily flag",
+        "Central pricing with net-contribution rewards and the existing delayed demand reports",
+        "Local pricing with net-contribution rewards but branch-only accounting for customer transfers"
       ],
       "tag": "organization",
       "type": "integration",
@@ -5191,132 +5198,801 @@ const questionBanks = {
       "difficulty": "legendary",
       "conceptCluster": "legendary_agencyProtocol_organization",
       "primarySkill": "organization",
-      "secondarySkills": [],
+      "secondarySkills": [
+        "coordination",
+        "incentives"
+      ],
       "repairSkill": "organization",
-      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "The first design keeps local information useful, improves incentives, and assigns spillover decisions to a coordinating process. Either all-or-nothing authority choice leaves one of the specified problems untreated.",
-      "aHash": "a7598ab366dbe94fd02e3d4267cc7a64cdf23925d11b393e90ca59b5c7e86b1a"
+      "commonError": "revenue_rewards_encourage_concealed_overlap",
+      "feedback": "Authority should retain timely local information while rewards and review internalize cross-branch harm. Voluntary flags remain manipulable; slow central reports sacrifice the specified information advantage; branch-only contribution still misses spillovers.",
+      "aHash": "df2d1a733adf72ea40423164f089c2d0b8abfee0e0bd181ace85f074b222c3b5",
+      "canonicalDifficulty": "legendary"
     },
     {
       "id": 9035,
       "sourceGame": "agencyProtocol",
       "q": "An internal supplier has spare capacity, MC $28 and unavoidable fixed costs. A buyer division can buy the identical unit outside for $39. Headquarters sets a $44 transfer price to recover the supplier's fixed costs; the buyer buys outside. Which redesign best separates sourcing incentives from evaluation?",
       "options": [
-        "Require outside purchase at $39 because the supplier's accounting cost is $44",
-        "Keep $44 because allocated fixed cost is always the opportunity cost of an internal unit",
-        "Set the price to zero and judge the supplier only on its unreimbursed profit",
-        "Charge the buyer $28 per unit and fund an agreed fixed-cost allowance separately from each transfer"
+        "Use a $28 marginal charge and raise next year’s fixed allowance when current unit costs increase",
+        "Use a $28 marginal charge plus a predetermined fixed allowance independent of current transfer volume",
+        "Use a $39 marginal charge and reimburse any reported fixed-cost shortfall after the year ends",
+        "Use a $44 marginal charge but award the buyer a bonus for reducing its recorded purchasing cost"
       ],
       "tag": "transfer_pricing",
       "type": "integration",
       "objective": "LO22.2",
       "difficulty": "legendary",
-      "conceptCluster": "legendary_agencyProtocol_transfer_pricing_internal_trade",
-      "primarySkill": "transfer_pricing_internal_trade",
-      "secondarySkills": [],
-      "repairSkill": "transfer_pricing_internal_trade",
-      "commonError": "sets_transfer_price_from_division_politics_instead_of_opportunity_cost_and_total_firm_value",
-      "feedback": "The internal unit saves 39-28=11 for the firm. A per-unit fixed-cost markup blocks this gain. A separately budgeted allowance can address cost recovery without raising the buyer's marginal sourcing price.",
-      "aHash": "e0b3c0a06e28eab0582fc5ffbd0f9a20c8039068ec60c7dfee3e8d355cae67e1"
+      "conceptCluster": "legendary_agencyProtocol_transfer_pricing",
+      "primarySkill": "transfer_pricing",
+      "secondarySkills": [
+        "cost_center",
+        "budget_games"
+      ],
+      "repairSkill": "transfer_pricing",
+      "commonError": "at_39_the_buyer_is_indifferent_and_shortfall_reimbursement_weakens_cost_discipline",
+      "feedback": "The internal unit saves 11 for the company. A predetermined allowance separates unavoidable-cost funding from the buyer’s marginal decision. Indifference at 39 does not secure internal sourcing; ex-post shortfall or unit-cost reimbursement invites cost inflation.",
+      "aHash": "b6e27249ff2433f35302e5f13b20d3857cd883f6670b719432b052b70e7f447a",
+      "canonicalDifficulty": "legendary"
     },
     {
       "id": 9047,
       "sourceGame": "agencyProtocol",
       "q": "A lender offers a collateral contract and calls the applicants who accept it safer. Acceptance depends on both wealth and risk tolerance. After lending, collateral also discourages project switching. What is the sound conclusion?",
       "options": [
-        "The observed project discipline proves the original applicant pool was efficiently screened",
-        "Collateral proves low default risk because only safe borrowers own pledgeable assets",
-        "Collateral cannot affect behavior because it is pledged before lending",
-        "Collateral may improve post-loan incentives, but acceptance alone does not identify borrower risk without separating wealth and risk effects"
+        "Selection may improve; interpret excluded low-wealth applicants as high-risk applicants",
+        "Behavior may improve; evaluate borrower risk separately from the wealth needed to pledge collateral",
+        "Behavior may improve; accept the screened pool as safer if all borrowers post the same collateral",
+        "Selection may improve; infer its size from the decline in switching among funded borrowers"
       ],
       "tag": "lending",
-      "type": "integration",
+      "type": "diagnostic",
       "objective": "LO20.5",
       "difficulty": "legendary",
-      "conceptCluster": "legendary_agencyProtocol_borrower_incentives_and_lender_risk",
-      "primarySkill": "borrower_incentives_and_lender_risk",
+      "conceptCluster": "legendary_agencyProtocol_lending",
+      "primarySkill": "lending",
       "secondarySkills": [
-        "screening_hidden_type",
-        "hidden_action_after_contract"
+        "screening",
+        "moral_hazard"
       ],
-      "repairSkill": "borrower_incentives_and_lender_risk",
-      "commonError": "collapses_screening_and_monitoring_into_one_undifferentiated_control",
-      "feedback": "One instrument can affect both selection and behavior. A wealth constraint can exclude safe but poor borrowers, so behavioral benefit does not establish accurate type screening.",
-      "aHash": "fedb306fc115f86ee04e7d42c920a6c8aa87c7592c1a9bbee338a3d3662818e3"
+      "repairSkill": "lending",
+      "commonError": "identical_collateral_still_selects_on_ability_to_pledge_it",
+      "feedback": "Pledging collateral can deter later switching while excluding safe but illiquid applicants. Equal pledges do not remove wealth selection, and an action response among funded borrowers does not estimate their pre-funding type mix.",
+      "aHash": "7da45a5747b77b0a117c69d447a8b17c108ce05a1e22f90a36c27c29ec89d8b7",
+      "canonicalDifficulty": "legendary"
     },
     {
       "id": 9049,
       "sourceGame": "agencyProtocol",
       "q": "Division A has one unit of capacity. An outside sale pays $92, costs $50 to make and $7 to deliver. An internal request avoids delivery and lets B avoid a $90 outside purchase. A is judged on profit and must accept internal transfers at $60. What is the firm gain and incentive problem?",
       "options": [
-        "Internal trade gains $40, and A gains $10 because outside use is irrelevant",
-        "Internal trade gains $5, but A loses $25 of reported profit, so its metric discourages cooperation",
-        "Internal trade loses $32 because $60 is below the outside sale price",
-        "Internal trade gains $30, and the transfer price is real new revenue for the parent"
+        "Company gain $40; supplier reported profit rises $10, so the current reward aligns both decisions",
+        "Company gain $5; supplier reported profit falls $32, so compensate its full outside sale price",
+        "Company loss $25; supplier reported profit falls $25, so outside trade is efficient",
+        "Company gain $5; supplier reported profit falls $25, so its reward discourages the efficient transfer"
       ],
       "tag": "transfer_pricing",
-      "type": "integration",
+      "type": "multi-step",
       "objective": "LO22.2",
       "difficulty": "legendary",
-      "conceptCluster": "legendary_agencyProtocol_transfer_pricing_internal_trade",
-      "primarySkill": "transfer_pricing_internal_trade",
+      "conceptCluster": "legendary_agencyProtocol_transfer_pricing",
+      "primarySkill": "transfer_pricing",
       "secondarySkills": [
-        "total_firm_profit_alignment",
-        "profit_center_evaluation"
+        "profit_center",
+        "parent_profit"
       ],
-      "repairSkill": "transfer_pricing_internal_trade",
-      "commonError": "focuses_only_on_which_division_wins_instead_of_total_firm_profit",
-      "feedback": "Internal opportunity cost is 92-7=85; B avoids 90, so firm gain is 5. A earns 35 externally versus 10 internally, a 25 local loss. The transfer price redistributes profit but does not change the 5 total gain.",
-      "aHash": "dd76924eddf0a0d047b93da609d96e736ede07bf59e090c29363b3ff3156fe42"
+      "repairSkill": "transfer_pricing",
+      "commonError": "ignoring_displaced_external_contribution_overstates_the_gain",
+      "feedback": "The relevant internal opportunity cost is 92−7=85. Avoiding a 90 outside purchase gains 5. Supplier profit falls from 92−50−7=35 to 60−50=10, a local loss of 25; internal accounting is not consolidated value.",
+      "aHash": "213f99ba836f7e43cc5c1deae7414794ee5007f9e927179027ec67afc14ac4b7",
+      "canonicalDifficulty": "legendary"
     },
     {
       "id": 9051,
       "sourceGame": "agencyProtocol",
-      "q": "A support unit saves $50,000 by cutting staffing. Elsewhere sales fall by $200,000; those lost sales would have contributed 30% after avoidable production costs. Restoring staffing would recover all lost sales, and no other costs change. What should the parent do?",
+      "q": "A support cut saves 50,000 but loses sales that would contribute 60,000 after avoidable production costs. Full restoration recovers all of that contribution for 50,000. A targeted team costs 32,000 and recovers 75% of the contribution; checking service quality costs another 4,000 under that option. All estimates are incremental to keeping the cut. Which decision follows, and when would the targeted team become preferable?",
       "options": [
-        "Keep the cut because revenue effects never belong in cost-center evaluation",
-        "Restore staffing for a $150,000 gain because all lost sales are lost profit",
-        "Keep the cut because the support unit met its cost target",
-        "Restore staffing: recovered contribution is $60,000, exceeding $50,000 cost by $10,000"
+        "Keep the cut now; neither restoration option recovers more revenue than it costs",
+        "Restore fully now; targeted service wins if its recovery fraction exceeds 46/60",
+        "Use targeted service now; it wins whenever its recovery fraction exceeds 32/60",
+        "Restore fully now; targeted service wins if its recovery fraction exceeds 50/60"
       ],
       "tag": "cost_center",
-      "type": "integration",
+      "type": "tradeoff",
       "objective": "LO22.3",
       "difficulty": "legendary",
-      "conceptCluster": "legendary_agencyProtocol_cost_center_evaluation",
-      "primarySkill": "cost_center_evaluation",
+      "conceptCluster": "legendary_agencyProtocol_cost_center",
+      "primarySkill": "cost_center",
       "secondarySkills": [
-        "total_firm_profit_alignment",
-        "coordination"
+        "coordination",
+        "parent_profit"
       ],
-      "repairSkill": "cost_center_evaluation",
-      "commonError": "equates_cost_savings_with_value_creation",
-      "feedback": "Lost contribution is .30×200,000=60,000. The cut saves 50,000 but destroys 60,000, a net 10,000 loss. Evaluate downstream contribution, not revenue alone or the local cost score.",
-      "aHash": "8d2575c5f495110d83761157cb7fdb988d129b43596ac7863e953d9bea0d81de"
+      "repairSkill": "cost_center",
+      "commonError": "the_threshold_shown_merely_covers_team_cost_and_ignores_verification_and_the_full_restoration_alternative",
+      "feedback": "Full restoration gains 60−50=10 thousand. Targeted service gains .75×60−32−4=9. It overtakes full restoration when 60r−36>10, or r>46/60. The calculation uses contribution, and verification is a real cost.",
+      "aHash": "fefb41f0e528424eee56880189134887b1c165eb5688bd0a64f37c4ec0709159",
+      "canonicalDifficulty": "legendary"
     },
     {
       "id": 9052,
       "sourceGame": "agencyProtocol",
-      "q": "A division's forecast sets both inventory plans and the manager's bonus hurdle. Honest high forecasts raise the hurdle; inflated cost requests make it easier. Headquarters proposes paying only for beating the submitted plan. Which redesign best addresses the conflict?",
+      "q": "A division knows a process saving that would permanently cut cost. Revealing it immediately lowers all future budget targets; its manager receives only this year’s saving bonus and expects to remain for three years. The parent needs the information for investment planning. Which reform addresses withholding without paying for mere accounting reclassification?",
       "options": [
-        "Separate an audited rolling planning forecast from the bonus hurdle, and evaluate forecast accuracy and value creation using independent benchmarks",
-        "Increase the reward for beating each manager's submitted forecast",
-        "Punish every unfavorable forecast revision even when new information arrives",
-        "Permit unused funds to carry over but continue setting bonuses solely from each manager's own target"
+        "Commit to sharing independently verified recurring savings for several years, with clawback for shifted costs",
+        "Increase the first-year saving percentage while continuing to reset every later target immediately",
+        "Freeze all budgets permanently and share reported savings without checking costs in other periods",
+        "Pay for forecast accuracy but leave the immediate target reset and savings bonus unchanged"
       ],
       "tag": "budget_games",
       "type": "integration",
       "objective": "LO22.7",
       "difficulty": "legendary",
-      "conceptCluster": "legendary_agencyProtocol_budget_slack_and_target_manipulation",
-      "primarySkill": "budget_slack_and_target_manipulation",
+      "conceptCluster": "legendary_agencyProtocol_budget_games",
+      "primarySkill": "budget_games",
       "secondarySkills": [
-        "metric_gaming_and_unintended_responses"
+        "incentives",
+        "gaming"
       ],
-      "repairSkill": "budget_slack_and_target_manipulation",
-      "commonError": "treats_budget_compliance_as_honest_performance",
-      "feedback": "Planning needs truthful information, while a self-set bonus hurdle rewards distortion. Carryover can reduce waste but does not by itself fix dishonest forecasts. Independent benchmarks and auditable revisions address both roles.",
-      "aHash": "f9ae7f642ab8ca76ac56c14e6d3560cba20165dda29086c417c1d7a6c420be58"
+      "repairSkill": "budget_games",
+      "commonError": "a_larger_first_year_reward_may_help_but_does_not_directly_remove_the_continuing_ratchet_identified_in_the_stem",
+      "feedback": "Immediate ratcheting makes useful private information costly to reveal. A credible multi-year share preserves the revelation reward; independent verification and cross-period clawbacks distinguish real process gains from timing changes.",
+      "aHash": "33443ef0403c8801ee342de9be19505541c8e053c136d9caa59e558827370d0b",
+      "canonicalDifficulty": "legendary"
+    },
+    {
+      "id": 23000,
+      "sourceGame": "agencyProtocol",
+      "q": "A buyer values full equipment coverage at 330 and partial coverage at 230. Full coverage has expected claims 240 under original care, plus 20 from a hidden care response, and administration cost 30+c. Partial coverage has expected claims 180 after its care response and administration cost 20. Valuations already reflect each policy’s behavior and retained risk. At c=20, which policy offers more combined gains, and when would full coverage overtake it? Both parties require strict gains.",
+      "options": [
+        "Partial coverage offers 30 versus full coverage 20; partial premiums satisfy 200 < P < 230, and full coverage wins if c < 10",
+        "Full coverage offers 40 versus partial coverage 30; its care response is already deducted from buyer valuation and should not enter claims",
+        "Partial coverage offers 30; full coverage wins whenever c < 40 because any positive full-coverage surplus dominates partial coverage",
+        "Partial coverage offers 50 versus full coverage 20; partial premiums satisfy 180 < P < 230 because administration is a transfer"
+      ],
+      "tag": "insurance",
+      "type": "multi-step",
+      "objective": "LO19.1",
+      "difficulty": "legendary",
+      "canonicalDifficulty": "legendary",
+      "conceptCluster": "legendary_agencyProtocol_insurance",
+      "primarySkill": "insurance",
+      "secondarySkills": [
+        "moral_hazard"
+      ],
+      "repairSkill": "insurance",
+      "commonError": "expected_claims_still_have_to_be_paid_fixing_buyer_valuation_does_not_pay_the_insurer_s_extra_claims",
+      "feedback": "Full policy cost is 240+20+30+c=290+c, leaving combined gain 40−c. Partial policy cost is 180+20=200, leaving 30. At c=20 partial gains 30 versus 20. Strict participation requires 200<P<230 for partial coverage. Full coverage overtakes partial only when 40−c>30, or c<10; at 10 they tie. Positive full-policy surplus alone is insufficient.",
+      "aHash": "7807531ec5df49145a36b0ce2bff2ad08a64f7262ce68eff90de4a346549815f"
+    },
+    {
+      "id": 23001,
+      "sourceGame": "agencyProtocol",
+      "q": "Before a new plan, the relevant population’s annual accident probability is 0.12. Enrollees in the new plan would have probability 0.07 under the old care incentives, but coverage raises their probability to 0.10. Each accident costs 1,000; no other factor changes. What does the lower observed claim cost establish?",
+      "options": [
+        "A 20 favorable-selection saving establishes that behavior did not worsen after coverage",
+        "A 30 selection saving combines with a 50 behavior saving, producing an 80 improvement",
+        "A 50 behavior saving is partly offset by 30 of adverse selection, leaving 20",
+        "A 50 selection saving masks a 30 behavior cost, leaving only a 20 net claim saving"
+      ],
+      "tag": "favorable_selection",
+      "type": "multi-step",
+      "objective": "LO19.2",
+      "difficulty": "legendary",
+      "canonicalDifficulty": "legendary",
+      "conceptCluster": "legendary_agencyProtocol_favorable_selection",
+      "primarySkill": "favorable_selection",
+      "secondarySkills": [
+        "moral_hazard"
+      ],
+      "repairSkill": "favorable_selection",
+      "commonError": "net_changes_do_not_separately_identify_behavior",
+      "feedback": "Holding behavior fixed, 0.12−0.07 saves 50. Behavior then raises expected cost by (0.10−0.07)×1,000=30. The aggregate improvement of 20 does not rule out moral hazard within a favorably selected pool.",
+      "aHash": "731d66c0343ce474cba3fcc63146839804439c63ee8f429ee8d05943854788c3"
+    },
+    {
+      "id": 23002,
+      "sourceGame": "agencyProtocol",
+      "q": "A supplier screen A costs 4,000, prevents eight bad contracts that would each lose 2,000, and rejects two good contracts each worth 3,000. Screen B costs 7,000, prevents ten bad contracts, and rejects three good contracts. Effects are measured against accepting all contracts; later effort is unchanged. Which recommendation and threshold are correct?",
+      "options": [
+        "Choose A at net 12,000; B wins when its cost falls below 8,000",
+        "Choose B at net 13,000 because rejected good contracts create no accounting loss",
+        "Choose A at net 6,000 rather than B at 4,000; B wins only if its cost falls below 5,000",
+        "Choose B because avoiding two additional bad contracts creates 4,000 of extra value"
+      ],
+      "tag": "screening",
+      "type": "multi-step",
+      "objective": "LO19.3",
+      "difficulty": "legendary",
+      "canonicalDifficulty": "legendary",
+      "conceptCluster": "legendary_agencyProtocol_screening",
+      "primarySkill": "screening",
+      "secondarySkills": [],
+      "repairSkill": "screening",
+      "commonError": "the_added_avoidance_is_offset_by_an_extra_false_rejection_and_higher_screening_expense",
+      "feedback": "A creates 16,000−6,000−4,000=6,000; B creates 20,000−9,000−7,000=4,000. At variable cost c, B creates 11,000−c and beats A only for c<5,000. Forgone good contracts are economic costs.",
+      "aHash": "abccdb0b0cfca62a2c55af7ceaf5e92161977e22844985d30e3d5f4ff1a71595"
+    },
+    {
+      "id": 23003,
+      "sourceGame": "agencyProtocol",
+      "q": "Reliable service firms can honor a self-funded warranty cheaply; unreliable firms would expect expensive claims. Customers therefore pay a premium to firms offering it. A platform now reimburses every warranty claim at no charge and does not observe maintenance effort. Under the old premium, what must be reassessed?",
+      "options": [
+        "The warranty ceases to separate types, but a reimbursement guarantee makes later maintenance verifiable",
+        "The warranty may lose its type-separating cost, while reimbursement can weaken maintenance incentives",
+        "The warranty still separates types through past cost differences, while only customer care needs review",
+        "Reimbursement strengthens separation by making reliable firms’ warranties cheaper without helping imitators"
+      ],
+      "tag": "signaling",
+      "type": "integration",
+      "objective": "LO19.4",
+      "difficulty": "legendary",
+      "canonicalDifficulty": "legendary",
+      "conceptCluster": "legendary_agencyProtocol_signaling",
+      "primarySkill": "signaling",
+      "secondarySkills": [
+        "moral_hazard"
+      ],
+      "repairSkill": "signaling",
+      "commonError": "historic_costs_no_longer_borne_by_firms_cannot_establish_current_separation",
+      "feedback": "Reimbursement removes the stated expected-cost difference that deterred imitation and shifts the marginal cost of failures away from providers. A promise to reimburse is neither an effort observation nor proof that behavior remains unchanged.",
+      "aHash": "b45f013cb798ab63f1bbdf00484283b477f1648c8c71393cdb88c54c239dafc3"
+    },
+    {
+      "id": 23004,
+      "sourceGame": "agencyProtocol",
+      "q": "A marketplace rewards sellers whose public defect rate falls below a threshold. Sellers choose which completed orders invite a review. Reported defects fall, but random inspections show unchanged physical quality; fewer difficult orders receive invitations. Which policy addresses the evidence without treating the rating decline as a quality gain?",
+      "options": [
+        "Sample verified completed orders for ratings, and condition sanctions on independently checked defects",
+        "Raise the reward for the same public rating, and compare sellers only within product categories",
+        "Retain seller-selected invitations, and add a larger penalty to every reported defect",
+        "Publish only average seller ratings, and remove inspection costs once reviews become numerous"
+      ],
+      "tag": "reputation",
+      "type": "diagnostic",
+      "objective": "LO19.5",
+      "difficulty": "legendary",
+      "canonicalDifficulty": "legendary",
+      "conceptCluster": "legendary_agencyProtocol_reputation",
+      "primarySkill": "reputation",
+      "secondarySkills": [
+        "gaming",
+        "monitoring"
+      ],
+      "repairSkill": "reputation",
+      "commonError": "category_controls_do_not_repair_selective_invitation_within_categories",
+      "feedback": "Selection into the review sample can improve ratings without improving quality. Independent sampling improves information about seller type/quality, while verified-defect sanctions can affect later behavior without rewarding selective solicitation.",
+      "aHash": "e40be564702bcaca495d693fc1581765d37be18951fc564864ecd137ecf220c2"
+    },
+    {
+      "id": 23005,
+      "sourceGame": "agencyProtocol",
+      "q": "An insurer offers full coverage at premium 250 or a 500 deductible at premium 100. Privately known loss probabilities are 0.05 and 0.20; each loss is 1,000. Under the deductible, certainty-equivalent retained-risk costs are expected retained loss plus risk premia of 60 and 80 respectively. Their certainty-equivalent costs of remaining uninsured are 240 and 480. With no action response, which prediction is correct?",
+      "options": [
+        "Both types choose full cover because its premium is below each uninsured certainty-equivalent cost",
+        "Both types choose the deductible because its quoted premium is below the full-cover premium",
+        "Low-risk buyers remain uninsured because expected loss is 50; high-risk buyers choose full cover",
+        "Low-risk buyers choose the deductible at cost 185; high-risk buyers choose full cover at 250; both participate"
+      ],
+      "tag": "screening",
+      "type": "multi-step",
+      "objective": "LO19.4",
+      "difficulty": "legendary",
+      "canonicalDifficulty": "legendary",
+      "conceptCluster": "legendary_agencyProtocol_screening",
+      "primarySkill": "screening",
+      "secondarySkills": [],
+      "repairSkill": "screening",
+      "commonError": "for_low_risk_buyers_full_cover_is_more_expensive_than_both_relevant_alternatives",
+      "feedback": "Low-risk deductible cost is 100+25+60=185, below full cover 250 and uninsured 240. High-risk deductible cost is 100+100+80=280, above full cover 250 but below uninsured 480. The less-informed insurer’s menu separates types and meets participation using the supplied risk valuations.",
+      "aHash": "a7d616bfcff122a213da5bcfc8eac20bb82eae7f7d47037a0d3ce21331c9e8af"
+    },
+    {
+      "id": 23006,
+      "sourceGame": "agencyProtocol",
+      "q": "A voluntary refundable bond yields an 80 premium. Reliable and unreliable suppliers forfeit the bond with probabilities 0.10 and 0.50. They are risk-neutral, and ties do not separate types. All reliable suppliers can pledge at most 120; unreliable suppliers have no liquidity limit. What follows for a common bond size D?",
+      "options": [
+        "D = 160 separates types because the unreliable supplier earns exactly zero from imitating",
+        "D below 120 separates types because a smaller required bond raises reliable participation",
+        "Strict separation requires 160 < D < 800, so no feasible bond admits the reliable suppliers and separates types",
+        "Any D above 80 separates types, so the feasible bond D = 120 implements separation"
+      ],
+      "tag": "signaling",
+      "type": "multi-step",
+      "objective": "LO19.4",
+      "difficulty": "legendary",
+      "canonicalDifficulty": "legendary",
+      "conceptCluster": "legendary_agencyProtocol_signaling",
+      "primarySkill": "signaling",
+      "secondarySkills": [],
+      "repairSkill": "signaling",
+      "commonError": "at_120_the_unreliable_supplier_still_gains_20",
+      "feedback": "Reliable net return 80−0.1D must be positive, so D<800; unreliable return 80−0.5D must be negative, so D>160. Reliable liquidity caps D at 120. Credibility and ability to finance a signal are different constraints.",
+      "aHash": "266cae16653b308a56dabcfdeb602a404fb601ccab7523b75d781997f7ab760a"
+    },
+    {
+      "id": 23007,
+      "sourceGame": "agencyProtocol",
+      "q": "Buyers cannot observe equipment quality before purchase. A platform can verify shipment but cannot infer quality from shipment scans. Releasing escrow on shipment gives low-quality sellers the same immediate payment as reliable sellers; waiting solely for buyer approval lets opportunistic buyers delay payment. Which design targets both information and enforcement limits?",
+      "options": [
+        "Use seller warranties alone and release escrow immediately without checking warranty enforceability",
+        "Use independent quality verification plus a time-limited, evidence-based dispute process for escrow",
+        "Release escrow on shipment and increase shipment-tracking precision to certify product quality",
+        "Withhold escrow until buyer approval and remove dispute costs by making that decision final"
+      ],
+      "tag": "reputation",
+      "type": "integration",
+      "objective": "LO19.5",
+      "difficulty": "legendary",
+      "canonicalDifficulty": "legendary",
+      "conceptCluster": "legendary_agencyProtocol_reputation",
+      "primarySkill": "reputation",
+      "secondarySkills": [
+        "screening",
+        "incentives"
+      ],
+      "repairSkill": "reputation",
+      "commonError": "tracking_measures_delivery_rather_than_quality",
+      "feedback": "Verification must measure the hidden attribute, and escrow needs a verifiable dispute procedure to constrain both seller and buyer opportunism. More precise shipment data cannot establish quality; a unilateral buyer veto creates a new hold-up margin.",
+      "aHash": "f2e82e7babf3850640f0facf4230f0ece290882afc3fe7eec4721de36668c4e7"
+    },
+    {
+      "id": 23008,
+      "sourceGame": "agencyProtocol",
+      "q": "A cooperative insures many independent machine breakdowns, but every member also faces the same regional shutdown shock. Adding members makes the breakdown component predictable; it does not diversify the common shock. Members value protection from both. Which expansion rule respects wealth creation and insurer participation?",
+      "options": [
+        "Price or externally share the common exposure while pooling breakdowns; compare the added loading with members’ coverage value",
+        "Price both exposures at their independent-event averages because a larger membership removes aggregate risk",
+        "Screen members more accurately and treat any remaining common exposure as evidence of adverse selection",
+        "Eliminate common-shock cover because undiversified risk precludes a mutually beneficial premium at any price"
+      ],
+      "tag": "insurance",
+      "type": "tradeoff",
+      "objective": "LO19.1",
+      "difficulty": "legendary",
+      "canonicalDifficulty": "legendary",
+      "conceptCluster": "legendary_agencyProtocol_insurance",
+      "primarySkill": "insurance",
+      "secondarySkills": [
+        "adverse_selection"
+      ],
+      "repairSkill": "insurance",
+      "commonError": "the_stipulated_common_shock_remains_correlated_as_membership_grows",
+      "feedback": "Pooling independent losses and transferring common risk are different operations. Common risk may require capital or outside risk bearing; coverage can still create gains if willingness to pay exceeds full cost. Neither type screening nor membership size alone eliminates covariance.",
+      "aHash": "b026690b7ede8f4b8bcc4004aca7b4d7ebcf881227d6992d98491e981bd0a620"
+    },
+    {
+      "id": 23009,
+      "sourceGame": "agencyProtocol",
+      "q": "Care costs an insured worker 30 and lowers loss probability from 0.16 to 0.06 for a 1,000 loss. A deductible of 400 makes care privately attractive but requires 75 extra compensation for risk and 5 administration cost. Verifiable care under full insurance costs 65 to monitor. Both induce the same care and claim cost; the employer bears all stated compensation/control costs. Which design is cheaper, and why is a deductible of 300 insufficient under a strict-effort rule?",
+      "options": [
+        "The deductible costs 5 versus monitoring 65; risk compensation does not enter employer cost",
+        "Monitoring costs 65 versus deductible 80; at 300 care has a strict private gain of 30",
+        "The deductible costs 80 but wins because full insurance prevents any monitoring from inducing care",
+        "Monitoring costs 65 versus deductible costs 80; at 300 the care saving only equals effort cost"
+      ],
+      "tag": "moral_hazard",
+      "type": "multi-step",
+      "objective": "LO20.2",
+      "difficulty": "legendary",
+      "canonicalDifficulty": "legendary",
+      "conceptCluster": "legendary_agencyProtocol_moral_hazard",
+      "primarySkill": "moral_hazard",
+      "secondarySkills": [
+        "insurance",
+        "monitoring"
+      ],
+      "repairSkill": "moral_hazard",
+      "commonError": "compensation_for_risk_is_a_real_contract_expense_to_the_employer",
+      "feedback": "Deductible care incentive is .10×400=40, above cost 30. At 300 it is exactly 30, so strict preference fails. When the same care is achieved, 75+5=80 exceeds monitoring cost 65; the extra risk compensation matters to the employer.",
+      "aHash": "6694cb3c8380f40259de262149b4bca33773ab5e2dd6d3b845ca95c517c64c69"
+    },
+    {
+      "id": 23010,
+      "sourceGame": "agencyProtocol",
+      "q": "Without controls, avoidable diversion costs 1,000. An audit prevents 60% of the loss and costs 200. A transaction alert prevents 50% and costs 250. Their joint prevented cases overlap by 35 percentage points of the original loss; prevention is otherwise additive and costs do not overlap. Which package maximizes net benefit?",
+      "options": [
+        "Combined controls: 450, because only the larger of the two invoices is incremental",
+        "Alerts alone: 500, because their prevented losses equal their net control benefit",
+        "Audit alone: 400, compared with alerts 250 and the combined package 300",
+        "Combined controls: 650, because the two prevention percentages sum to 110%"
+      ],
+      "tag": "monitoring",
+      "type": "multi-step",
+      "objective": "LO20.3",
+      "difficulty": "legendary",
+      "canonicalDifficulty": "legendary",
+      "conceptCluster": "legendary_agencyProtocol_monitoring",
+      "primarySkill": "monitoring",
+      "secondarySkills": [],
+      "repairSkill": "monitoring",
+      "commonError": "overlapping_prevented_losses_are_double_counted",
+      "feedback": "Joint prevention is .60+.50−.35=.75. Net benefits are 600−200=400, 500−250=250, and 750−450=300. A larger prevented loss is not necessarily a larger net benefit.",
+      "aHash": "54b3913f421d636778fa4e42cb78ae177aaca0dd3ccbb7e2d37cdac116a1dd37"
+    },
+    {
+      "id": 23011,
+      "sourceGame": "agencyProtocol",
+      "q": "A team receives a success bonus pot of 90 shared equally. Holding others’ effort fixed, one worker’s effort raises success probability by 0.30 and costs that worker 12. Bonuses are enforceable and workers are risk-neutral. Headquarters can keep four-person teams, increase the four-person pot to at most 140, or use two-person teams with the same pot of 90. Ignore other effects. Which change creates a strict private incentive to exert effort?",
+      "options": [
+        "Use either structure: positive expected team surplus ensures an individual effort incentive",
+        "Use two-person teams: the incremental reward is 13.5, while even a four-person pot of 140 yields only 10.5",
+        "Keep four-person teams at 90: the incremental team reward of 27 exceeds the worker’s cost",
+        "Use four-person teams at 140: each worker’s bonus share of 35 exceeds the worker’s cost"
+      ],
+      "tag": "shirking",
+      "type": "multi-step",
+      "objective": "LO20.4",
+      "difficulty": "legendary",
+      "canonicalDifficulty": "legendary",
+      "conceptCluster": "legendary_agencyProtocol_shirking",
+      "primarySkill": "shirking",
+      "secondarySkills": [
+        "incentives"
+      ],
+      "repairSkill": "shirking",
+      "commonError": "the_worker_does_not_receive_the_entire_team_bonus",
+      "feedback": "The worker captures only one share of the incremental expected pot. Four-person rewards are .3×90/4=6.75 or .3×140/4=10.5, both below 12; two-person reward is .3×90/2=13.5. Team gains and private gains differ.",
+      "aHash": "b9840645597add777b49be24c96fc0f8171a2e0ff6ad5f36b46081b842f947a6"
+    },
+    {
+      "id": 23012,
+      "sourceGame": "agencyProtocol",
+      "q": "A risk-neutral borrower needs 60 of lender funding and has an outside payoff of 35. A safe project pays 120 for certain; a risky project pays 200 with probability 0.5 and zero otherwise. Debt has limited liability. A verifiable covenant costing the lender 8 can enforce the safe project. Which listed debt design finances the loan, attracts the borrower, and prevents inefficient risk taking?",
+      "options": [
+        "Debt due 80 with the covenant: lender net 72 and borrower 40 satisfy both constraints",
+        "Debt due 80 without a covenant: safe equity of 40 exceeds risky equity of 20",
+        "Debt due 30 without a covenant: safe choice is induced and lender receipts cover funding",
+        "Debt due 90 with the covenant: lender net 82 and borrower 30 satisfy both constraints"
+      ],
+      "tag": "lending",
+      "type": "multi-step",
+      "objective": "LO20.5",
+      "difficulty": "legendary",
+      "canonicalDifficulty": "legendary",
+      "conceptCluster": "legendary_agencyProtocol_lending",
+      "primarySkill": "lending",
+      "secondarySkills": [
+        "incentives",
+        "agency_costs"
+      ],
+      "repairSkill": "lending",
+      "commonError": "limited_liability_truncates_equity_losses_risky_equity_is_60",
+      "feedback": "At debt 80, risky equity is .5×(200−80)=60 versus safe 40, so the borrower switches without control. A covenant gives lender 80−8=72≥60 and borrower 40≥35. Debt 30 induces safe choice (90>85) but cannot repay funding; debt 90 violates borrower participation.",
+      "aHash": "1479b950e73af9bba1f35e2e4ea8fa459b691b967bf1392d0e530700083c4516"
+    },
+    {
+      "id": 23013,
+      "sourceGame": "agencyProtocol",
+      "q": "A procurement expert alone can assess a supplier’s difficult technical claims. The expert also receives undisclosed referral payments for choosing one supplier. Removing the expert would lose valuable diagnostic information, and headquarters cannot cheaply reproduce every assessment. Which arrangement best retains expertise while addressing the identified conflict?",
+      "options": [
+        "Retain sole approval and pay for lower quoted prices, while allowing supplier-funded referral compensation",
+        "Remove the expert from all assessment and let headquarters rank technical claims by the lowest purchase price",
+        "Require disclosure but retain sole approval and reward the number of suppliers rapidly accepted",
+        "Require disclosure and independent checks on conflicted recommendations, while retaining technical advice and separating final approval"
+      ],
+      "tag": "principal_agent",
+      "type": "integration",
+      "objective": "LO21.1",
+      "difficulty": "legendary",
+      "canonicalDifficulty": "legendary",
+      "conceptCluster": "legendary_agencyProtocol_principal_agent",
+      "primarySkill": "principal_agent",
+      "secondarySkills": [
+        "monitoring",
+        "organization"
+      ],
+      "repairSkill": "principal_agent",
+      "commonError": "a_low_price_metric_does_not_remove_referral_incentives_or_measure_technical_quality",
+      "feedback": "The conflict concerns a delegated informed decision with private compensation. Disclosure alone leaves the reward in place; price or throughput metrics can miss technical value. Separating conflicted approval from advice and checking selected claims retains information while constraining biased choices.",
+      "aHash": "c3ea19d5455a525b4ae90ba33e939a982cba1fead6eb75e567e8756d1ad3f009"
+    },
+    {
+      "id": 23014,
+      "sourceGame": "agencyProtocol",
+      "q": "A company randomly offers a verified aptitude screen to half of otherwise identical hiring markets. Separately, after hiring, it randomly assigns supervisors to verified effort checks. Screening raises pre-job test scores but not effort conditional on scores. Effort checks raise output among workers with the same scores. A common demand shock raises output in both groups. What interpretation is supported?",
+      "options": [
+        "Both interventions improve selection because every output difference reveals a difference in worker type",
+        "The demand shock establishes that neither intervention changes behavior or selection in its randomized comparison",
+        "The screen changes observed ability composition; checks affect behavior; the common output rise need not reflect either mechanism",
+        "The screen solves hidden action because higher ability is an action, while checks identify pre-hire ability"
+      ],
+      "tag": "principal_agent",
+      "type": "diagnostic",
+      "objective": "LO21.2",
+      "difficulty": "legendary",
+      "canonicalDifficulty": "legendary",
+      "conceptCluster": "legendary_agencyProtocol_principal_agent",
+      "primarySkill": "principal_agent",
+      "secondarySkills": [
+        "screening",
+        "monitoring"
+      ],
+      "repairSkill": "principal_agent",
+      "commonError": "ability_known_before_hiring_is_not_effort_chosen_afterward",
+      "feedback": "Pre-job ability differences concern selection. A randomized post-hire check with comparisons at given scores supports an action effect. A common demand shock can coexist with both treatment effects; aggregate output is not itself a measure of either mechanism.",
+      "aHash": "cb0f6324388c8d8fa3c119fafb106c894a04d8a51771dc6ec7b828240b08c0e4"
+    },
+    {
+      "id": 23015,
+      "sourceGame": "agencyProtocol",
+      "q": "A principal faces three complete contract packages. Monitoring costs 50 in total, including residual loss. Output pay costs 20 plus a risk-compensation amount r. A hybrid costs 32 plus 0.4r because it exposes the agent to less risk. All costs are borne by the principal, r is nonnegative, and the packages deliver equal output value. Which strict-choice regions are correct, excluding ties?",
+      "options": [
+        "Output pay for r < 12; hybrid for 12 < r < 18; monitoring for r > 18",
+        "Output pay for r < 20; hybrid for 20 < r < 45; monitoring for r > 45",
+        "Output pay for r < 30; monitoring for r > 30; the hybrid is dominated throughout",
+        "Hybrid for r < 20; output pay for 20 < r < 45; monitoring for r > 45"
+      ],
+      "tag": "agency_costs",
+      "type": "multi-step",
+      "objective": "LO21.3",
+      "difficulty": "legendary",
+      "canonicalDifficulty": "legendary",
+      "conceptCluster": "legendary_agencyProtocol_agency_costs",
+      "primarySkill": "agency_costs",
+      "secondarySkills": [
+        "incentives",
+        "monitoring"
+      ],
+      "repairSkill": "agency_costs",
+      "commonError": "the_pairwise_30_threshold_ignores_the_third_feasible_package",
+      "feedback": "Output pay equals hybrid at 20+r=32+.4r, giving r=20. Hybrid equals monitoring at 32+.4r=50, giving r=45. Comparing output pay with monitoring alone misses the lower-cost hybrid between those values. These are specified packages, not an asserted canonical course list.",
+      "aHash": "b7d68fdff41705911be11416b7106512fb3d344f318f7ccc6478a68988504901"
+    },
+    {
+      "id": 23016,
+      "sourceGame": "agencyProtocol",
+      "q": "Central pricing creates 300 of value. Local pricing creates 300+200p before 100 of spillover loss. Targeted joint review creates 300+160p before 40 of review and remaining spillover costs. Here p is the probability of a time-sensitive local opportunity, between zero and one. Which policy maximizes company value as p changes, with ties stated separately?",
+      "options": [
+        "Centralize for p < 0.25; use joint review for p > 0.25; pure local pricing is never best",
+        "Centralize for p < 0.5; delegate fully for p > 0.5; joint review only ties at 0.5",
+        "Use joint review at every p because its spillover cost is below the local-pricing loss",
+        "Delegate fully whenever p > 0 because its local-information benefit exceeds central pricing"
+      ],
+      "tag": "organization",
+      "type": "multi-step",
+      "objective": "LO21.4",
+      "difficulty": "legendary",
+      "canonicalDifficulty": "legendary",
+      "conceptCluster": "legendary_agencyProtocol_organization",
+      "primarySkill": "organization",
+      "secondarySkills": [
+        "coordination"
+      ],
+      "repairSkill": "organization",
+      "commonError": "the_0_5_local_central_crossing_overlooks_the_superior_hybrid",
+      "feedback": "Joint review beats centralization when 160p>40. Pure local pricing would beat joint review only if 40p>60, requiring p>1.5, outside the feasible range. At p=.25 central and joint review tie; costs matter even with some local opportunity.",
+      "aHash": "819fc81e8b9668bac12e2e517e5d7dca5ff9415a100f29854da0d2c2c6237a5a"
+    },
+    {
+      "id": 23017,
+      "sourceGame": "agencyProtocol",
+      "q": "A repair desk is paid for tickets marked closed within a day. Closure rises, but repeat faults and customer downtime rise too. Staff can relabel a repeat fault as a new ticket. Reopening counts therefore remain low. Which reform directly addresses the measured-task distortion and the manipulable follow-up metric?",
+      "options": [
+        "Penalize reported reopenings more heavily while letting staff continue assigning the ticket identity",
+        "Increase the same-day closure reward and publish average response speed for each employee",
+        "Pay solely on employee-reported customer satisfaction collected when each ticket is initially closed",
+        "Reward durable repairs identified through independent customer/equipment follow-up, with a delay before final credit"
+      ],
+      "tag": "gaming",
+      "type": "integration",
+      "objective": "LO21.5",
+      "difficulty": "legendary",
+      "canonicalDifficulty": "legendary",
+      "conceptCluster": "legendary_agencyProtocol_gaming",
+      "primarySkill": "gaming",
+      "secondarySkills": [
+        "monitoring",
+        "incentives"
+      ],
+      "repairSkill": "gaming",
+      "commonError": "the_worker_can_evade_the_penalty_by_relabeling_the_fault",
+      "feedback": "Speed rewards can shift effort away from durability. A reopening penalty is ineffective if the agent controls identity linking. Independent longitudinal follow-up and delayed credit change both the target and its verifiability, rather than rewarding a second manipulable proxy.",
+      "aHash": "3a5e6c09b9685af576b830983e6fd4c2e5cb27ee97b44da242c9c7265b1e4624"
+    },
+    {
+      "id": 23018,
+      "sourceGame": "agencyProtocol",
+      "q": "A regional manager rejects profitable-looking orders. Headquarters cannot tell whether the manager has private capacity information or earns a bonus for keeping measured unit costs low. In a pilot, headquarters first verifies capacity independently, then temporarily pays on incremental company contribution. Which result most specifically supports an incentive conflict rather than the manager’s capacity explanation?",
+      "options": [
+        "Order margins fall during a demand shock, and acceptance falls under both reward systems",
+        "Capacity reports remain unverified, and the manager claims the contribution reward is easier to understand",
+        "Orders are feasible under verified capacity, and acceptance rises when the contribution-based reward replaces unit-cost pay",
+        "Orders remain infeasible under verified capacity, and acceptance remains low under the new reward"
+      ],
+      "tag": "principal_agent",
+      "type": "diagnostic",
+      "objective": "LO21.6",
+      "difficulty": "legendary",
+      "canonicalDifficulty": "legendary",
+      "conceptCluster": "legendary_agencyProtocol_principal_agent",
+      "primarySkill": "principal_agent",
+      "secondarySkills": [
+        "cost_center",
+        "incentives"
+      ],
+      "repairSkill": "principal_agent",
+      "commonError": "this_supports_the_capacity_explanation_rather_than_a_rejected_feasible_opportunity",
+      "feedback": "The informative comparison holds the capacity explanation to independent evidence and changes the decision maker’s payoff. Feasibility plus a response to incentives supports the conflict diagnosis. Infeasibility, common shocks and unverified claims do not separate the competing explanations.",
+      "aHash": "7f21cbafc4844159913a07f88fc0117340a96e281f119e6c3c86167f6ff40286"
+    },
+    {
+      "id": 23019,
+      "sourceGame": "agencyProtocol",
+      "q": "An agent can gain 18 privately by diverting effort. A random audit costs the principal 40 whenever conducted and detects diversion with probability 0.75 conditional on audit. A detected agent loses an enforceable deferred bonus of 80. Let audit probability be p; risk neutrality and a strict deterrence requirement apply. What is the least-cost feasible policy if p must be a multiple of 0.05?",
+      "options": [
+        "p = 0.75, costing 30; the audit probability must equal the conditional detection probability",
+        "p = 0.35, costing 14 in expected audit expense; p = 0.30 leaves the agent indifferent",
+        "p = 0.25, costing 10; the detection probability can be ignored because the bonus is enforceable",
+        "p = 0.30, costing 12; equality of expected loss and private gain strictly deters diversion"
+      ],
+      "tag": "monitoring",
+      "type": "multi-step",
+      "objective": "LO21.3",
+      "difficulty": "legendary",
+      "canonicalDifficulty": "legendary",
+      "conceptCluster": "legendary_agencyProtocol_monitoring",
+      "primarySkill": "monitoring",
+      "secondarySkills": [
+        "agency_costs"
+      ],
+      "repairSkill": "monitoring",
+      "commonError": "at_25_the_expected_penalty_is_15_below_18",
+      "feedback": "Expected diversion penalty is p×.75×80=60p and must exceed 18. Thus p>.30. On the stipulated grid, .35 is the smallest feasible probability and costs .35×40=14. Imperfect detection and audit frequency are separate probabilities.",
+      "aHash": "1167b721b690a6f36169144ae684d1258342db5e7a2441ed755ff46252a33ac9"
+    },
+    {
+      "id": 23021,
+      "sourceGame": "agencyProtocol",
+      "q": "Comparing managers with peer sales removes a common demand shock and lowers required risk compensation by 16. But managers can divert customers from the peer whose sales determine their benchmark, causing 22 of company loss. An independent external benchmark preserves the 16 saving, costs 7 to maintain, and cannot be affected by their actions. What should the principal do relative to the original individual sales metric?",
+      "options": [
+        "Use the peer benchmark: the 16 risk-compensation saving is sufficient regardless of customer diversion",
+        "Keep individual sales: the external benchmark costs 7 while the peer benchmark has no invoice",
+        "Use the external benchmark: net gain 31 because eliminating the peer loss adds to the original baseline",
+        "Use the external benchmark: net gain 9; the manipulable peer benchmark instead loses 6"
+      ],
+      "tag": "gaming",
+      "type": "tradeoff",
+      "objective": "LO21.5",
+      "difficulty": "legendary",
+      "canonicalDifficulty": "legendary",
+      "conceptCluster": "legendary_agencyProtocol_gaming",
+      "primarySkill": "gaming",
+      "secondarySkills": [
+        "incentives",
+        "coordination"
+      ],
+      "repairSkill": "gaming",
+      "commonError": "it_omits_the_induced_spillover_loss",
+      "feedback": "Against individual sales, peer comparison changes value by 16−22=−6; external comparison gives 16−7=9. Avoiding a loss introduced only by the peer proposal is not an additional gain against the original baseline.",
+      "aHash": "bf829b779bcfe42dba02ad27d8638560a9f7cbfe7f79ab9b7782567adaeb8189"
+    },
+    {
+      "id": 23022,
+      "sourceGame": "agencyProtocol",
+      "q": "A division reports a loss of 12 after allocated headquarters overhead of 30. Closing it would avoid only 8 of that overhead and would also destroy 10 of contribution in a complementary division. All other division operating costs are avoidable; sales and costs elsewhere are unchanged. Should the parent close it, and how large must avoidable overhead become to make closure strictly profitable?",
+      "options": [
+        "Keep it: closure loses 10; avoidable overhead must exceed 18 for closure to pay",
+        "Close it: total allocated overhead of 30 exceeds its pre-allocation contribution of 18",
+        "Keep it: closure loses 20; avoidable overhead must exceed 28 for closure to pay",
+        "Close it: the reported loss of 12 is the gain, and any avoidable overhead improves that gain"
+      ],
+      "tag": "parent_profit",
+      "type": "multi-step",
+      "objective": "LO22.1",
+      "difficulty": "legendary",
+      "canonicalDifficulty": "legendary",
+      "conceptCluster": "legendary_agencyProtocol_parent_profit",
+      "primarySkill": "parent_profit",
+      "secondarySkills": [
+        "coordination",
+        "profit_center"
+      ],
+      "repairSkill": "parent_profit",
+      "commonError": "allocated_overhead_is_not_fully_avoidable",
+      "feedback": "Pre-allocation contribution is −12+30=18. Closure sacrifices that 18 and the complement’s 10 while saving only 8, a net −20. The threshold is avoidable overhead >18+10=28, not the allocated accounting amount.",
+      "aHash": "28884d9402677facdc432938dfc756daf9e65425c89d1b5dad45b4c804e079aa"
+    },
+    {
+      "id": 23023,
+      "sourceGame": "agencyProtocol",
+      "q": "A shared functional laboratory saves 90 annually through pooled expertise compared with separate product laboratories. Each cross-product handoff causes 6 of delay cost; there are h such handoffs. A common scheduling system would cut handoff cost to 2 each but cost 25 annually. Relative to separate laboratories, which functional arrangement is best at h=12, and when does even the scheduled arrangement cease to create a strict gain?",
+      "options": [
+        "Separate laboratories win at h=12 because scheduling adds 25 of administrative cost",
+        "Scheduled sharing gains 41 versus unscheduled 18; its strict gain ends at h = 32.5",
+        "Unscheduled sharing gains 90 versus scheduled 65; handoffs redistribute cost without destroying value",
+        "Scheduled sharing gains 66 versus unscheduled 18; its strict gain ends at h = 45"
+      ],
+      "tag": "functional_structure",
+      "type": "multi-step",
+      "objective": "LO22.4",
+      "difficulty": "legendary",
+      "canonicalDifficulty": "legendary",
+      "conceptCluster": "legendary_agencyProtocol_functional_structure",
+      "primarySkill": "functional_structure",
+      "secondarySkills": [
+        "coordination"
+      ],
+      "repairSkill": "functional_structure",
+      "commonError": "delay_is_stated_as_real_cost_not_an_accounting_transfer",
+      "feedback": "Unscheduled sharing yields 90−6×12=18; scheduled sharing yields 90−25−2×12=41. The scheduled gain becomes zero at (90−25)/2=32.5 handoffs; with integer h, it is positive through 32 and negative from 33. Coordination cost can reverse a specialization advantage.",
+      "aHash": "74f6684f497fa1bbacf6dc8fe158b9d4d646b0ffc78a3e1f8c874ece39cfe11b"
+    },
+    {
+      "id": 23024,
+      "sourceGame": "agencyProtocol",
+      "q": "Sales promises customized rush orders and is rewarded on booked margin before expediting costs. Operations controls the shared line and is rewarded on average unit cost, so it delays even rush orders whose customer premium exceeds all incremental disruption costs. Which paired change addresses both distortions?",
+      "options": [
+        "Charge verified disruption cost to each order’s margin and evaluate operations on company contribution from the jointly scheduled portfolio",
+        "Charge sales an equal share of total factory overhead and continue judging operations on average unit cost",
+        "Let sales approve every rush order and compensate operations whenever average unit cost rises",
+        "Give operations final authority over all rush orders and continue excluding delay losses from its score"
+      ],
+      "tag": "coordination",
+      "type": "integration",
+      "objective": "LO22.5",
+      "difficulty": "legendary",
+      "canonicalDifficulty": "legendary",
+      "conceptCluster": "legendary_agencyProtocol_coordination",
+      "primarySkill": "coordination",
+      "secondarySkills": [
+        "profit_center",
+        "cost_center"
+      ],
+      "repairSkill": "coordination",
+      "commonError": "average_overhead_does_not_price_the_order_s_marginal_disruption",
+      "feedback": "Sales must face the order’s incremental disruption cost; operations must recognize the contribution sacrificed by excessive delay. Allocated averages, blanket reimbursement or unilateral vetoes each leave a stated margin unpriced or manipulable.",
+      "aHash": "3faf1d3f1782aa6bd0468800a6c4b634beb28f652c9f33b8b9f848bf8d16185a"
+    },
+    {
+      "id": 23025,
+      "sourceGame": "agencyProtocol",
+      "q": "A firm’s product lines serve increasingly different customers, making product-level profit responsibility informative. They still rely on one specialized research platform with large economies of scale and valuable knowledge spillovers. Which M-form transition best matches those facts without assuming that product autonomy removes coordination needs?",
+      "options": [
+        "Duplicate the research platform in every product division and judge each only on its own current-year profit",
+        "Keep all commercial choices in functional silos and use product profit reports solely as headquarters summaries",
+        "Give products autonomous budgets and allocate shared research exclusively by whichever division bids highest this year",
+        "Give product divisions commercial profit responsibility, retain shared research, and govern access and cross-product knowledge explicitly"
+      ],
+      "tag": "multidivisional",
+      "type": "integration",
+      "objective": "LO22.6",
+      "difficulty": "legendary",
+      "canonicalDifficulty": "legendary",
+      "conceptCluster": "legendary_agencyProtocol_multidivisional",
+      "primarySkill": "multidivisional",
+      "secondarySkills": [
+        "functional_structure",
+        "coordination"
+      ],
+      "repairSkill": "multidivisional",
+      "commonError": "duplication_sacrifices_the_stipulated_research_economies_and_spillovers",
+      "feedback": "Product-level accountability exploits distinct markets, while retaining shared research preserves specialization and spillovers. Governance of shared resources is still needed; short-run divisional bidding alone may undervalue knowledge benefits to other products.",
+      "aHash": "11b713c8ecf83feabca0dad4f3873c4981bb2beccdf2a4b76b46b58b4243bd4b"
+    },
+    {
+      "id": 23026,
+      "sourceGame": "agencyProtocol",
+      "q": "A use-it-or-lose-it budget causes 24 of wasteful December spending. Allowing carryover removes that waste but lets managers retain idle funds with a company opportunity cost of 18. A value review costs 5, releases two-thirds of those idle funds, and mistakenly blocks future projects worth 4. Treat the effects as incremental, independent and fully quantified. Which reform is best relative to the current rule?",
+      "options": [
+        "Carryover with review gains 13 because blocked future projects have no current spending",
+        "Keep the current rule because review costs 5 and managers retain some funds afterward",
+        "Carryover with review gains 9, versus unrestricted carryover gaining 6",
+        "Unrestricted carryover gains 24 because retained funds remain on the company’s books"
+      ],
+      "tag": "budget_games",
+      "type": "multi-step",
+      "objective": "LO22.7",
+      "difficulty": "legendary",
+      "canonicalDifficulty": "legendary",
+      "conceptCluster": "legendary_agencyProtocol_budget_games",
+      "primarySkill": "budget_games",
+      "secondarySkills": [
+        "parent_profit",
+        "monitoring"
+      ],
+      "repairSkill": "budget_games",
+      "commonError": "cash_ownership_does_not_eliminate_opportunity_cost",
+      "feedback": "Unrestricted carryover gains 24−18=6. Review leaves one-third of the idle-fund cost, so net gain is 24−6−5−4=9. The reform must count both current capital opportunity cost and future projects wrongly blocked.",
+      "aHash": "b933f21387f702aa8fd7fc248d30cff1d46db45f6971a615ab35a78c3916e232"
     }
   ],
   "legendaryBoss": [
@@ -5325,46 +6001,50 @@ const questionBanks = {
       "sourceGame": "agencyProtocol",
       "q": "A board compares three contracts, with annual costs in thousands. Audit-only: audit 18, remaining value loss 29. Agent guarantee: agent resource cost 12 reimbursed through pay, verification 8, remaining loss 24. Combined: control resources 35, remaining loss 12. Which minimizes total agency cost?",
       "options": [
-        "Audit-only at 18 because the principal pays the audit directly",
-        "Combined at 12 because only remaining loss counts",
-        "Agent guarantee at 44; audit-only and combined both cost 47",
-        "Agent guarantee at 32 because compensated agent costs do not count"
+        "Combined controls at 35; their remaining loss is already a control expense",
+        "Agent guarantee at 32; reimbursing the agent makes its resource cost disappear",
+        "Agent guarantee at 44; audit-only and combined controls both cost 47",
+        "Audit-only at 47; compensated agent resources should be added again to guarantee cost"
       ],
       "tag": "agency_costs",
-      "type": "integration",
+      "type": "multi-step",
       "objective": "LO21.3",
       "difficulty": "legendaryBoss",
-      "conceptCluster": "legendaryBoss_agencyProtocol_agency_costs_and_alignment",
-      "primarySkill": "agency_costs_and_alignment",
+      "conceptCluster": "legendaryBoss_agencyProtocol_agency_costs",
+      "primarySkill": "agency_costs",
       "secondarySkills": [],
-      "repairSkill": "agency_costs_and_alignment",
-      "commonError": "treats_monitoring_costs_as_the_only_agency_cost",
-      "feedback": "The totals are 18+29=47, 12+8+24=44 and 35+12=47. Bonding is not free merely because resources are initially committed by the agent.",
-      "aHash": "869cb0bb2783759edbc86efdaf4e3d19f926a3ae830a5ca561140e21f4b22370",
-      "bossStage": "opening"
+      "repairSkill": "agency_costs",
+      "commonError": "the_reimbursed_12_has_already_been_counted_once_adding_it_again_double_counts",
+      "feedback": "Audit-only totals 18+29=47; guarantee totals 12+8+24=44; combined totals 35+12=47. Reimbursement assigns who pays, not whether the resource cost exists; it should be counted once.",
+      "aHash": "ff2983821eafef9a5014ea90309ed50f6eafb8d6b1c1300bae58b6a9b2902d8f",
+      "bossStage": "opening",
+      "canonicalDifficulty": "legendaryBoss"
     },
     {
       "id": 9111,
       "sourceGame": "agencyProtocol",
-      "q": "A board can replace the guarantee contract costing 44 in total agency cost with output pay. Output pay leaves 15 residual loss, requires 9 measurement cost and 24 extra pay to compensate the agent for uncontrollable output risk. All figures are thousands and no costs overlap. Which decision follows?",
+      "q": "A guaranteed-compliance contract costs the principal 44 in total. Output pay would cost 9 for measurement plus 15 of residual loss and a required risk premium r. A benchmark reduces the required premium from 24 to 12 but costs 5 and introduces 4 of unmeasured multitask loss. Which choice follows, and how much can the benchmark’s introduced loss be before it ceases to beat the guarantee?",
       "options": [
-        "Keep the guarantee only if output pay fails to increase measured effort",
-        "Use output pay: 15 is below the guarantee's residual loss of 24",
-        "Use output pay: compensation for risk is a transfer and never affects the firm's contract cost",
-        "Keep the guarantee: output pay costs 48, despite its lower residual loss"
+        "Retain the guarantee at the stated loss, but benchmarked pay wins whenever introduced loss is below 8",
+        "Retain the guarantee: benchmarked pay costs 45 now and wins only if its introduced loss falls below 3",
+        "Use benchmarked pay at cost 41 because induced multitask loss is not a contract payment",
+        "Use unbenchmarked pay at cost 24 because required risk compensation is an internal transfer"
       ],
       "tag": "incentives",
-      "type": "integration",
+      "type": "multi-step",
       "objective": "LO21.3",
       "difficulty": "legendaryBoss",
       "conceptCluster": "legendaryBoss_agencyProtocol_incentives",
       "primarySkill": "incentives",
-      "secondarySkills": [],
+      "secondarySkills": [
+        "gaming"
+      ],
       "repairSkill": "incentives",
-      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "From the principal's contract-cost perspective, 15+9+24=48 exceeds 44. Stronger incentives can be outweighed by measurement and risk-compensation costs.",
-      "aHash": "5da1b9ea7099637c653d7843a8bc720b580ca31de9a01f65578d1b05003d5e9e",
-      "bossStage": "middle"
+      "commonError": "residual_multitask_damage_is_part_of_the_principal_s_total_cost",
+      "feedback": "Unbenchmarked pay costs 9+15+24=48. Benchmarked pay costs 9+15+12+5+4=45. With loss x, its total is 41+x and it beats 44 only if x<3; at x=3 they tie. Noise reduction can introduce a separate incentive distortion.",
+      "aHash": "ff5203b4addac7cfb83248536a3738a3781efb890219d1373561fcf8fb629cab",
+      "bossStage": "middle",
+      "canonicalDifficulty": "legendaryBoss"
     },
     {
       "id": 9112,
@@ -5372,193 +6052,215 @@ const questionBanks = {
       "q": "Branches have private local-demand information. Local pricing creates 90 of contribution but 25 of cross-branch poaching losses. Central pricing avoids poaching but creates only 60 because quotes are slow. A joint-review rule retains 85 contribution, reduces poaching to 8 and costs 6 to administer. Which structure yields the most net value?",
       "options": [
         "Joint review at 71, versus local 65 and central 60",
-        "Pure local pricing at 90 because poaching moves revenue within the firm",
-        "Pure central pricing at 60 because any spillover makes decentralization inefficient",
-        "Joint review at 79 because review cost is a fixed administrative expense"
+        "Pure local pricing at 90, since poaching is already reflected in branch contribution",
+        "Pure central pricing at 60, because removing the spillover outweighs all information loss",
+        "Joint review at 77, because administrative review cost does not change sourcing revenue"
       ],
       "tag": "organization",
-      "type": "integration",
+      "type": "multi-step",
       "objective": "LO21.4",
       "difficulty": "legendaryBoss",
       "conceptCluster": "legendaryBoss_agencyProtocol_organization",
       "primarySkill": "organization",
       "secondarySkills": [],
       "repairSkill": "organization",
-      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "Compare all consequences: local 90-25=65; central 60; joint review 85-8-6=71. The hybrid exploits local knowledge while coordinating costly spillovers.",
+      "commonError": "the_stated_contribution_precedes_the_separately_given_loss",
+      "feedback": "Net values are local 90−25=65, central 60, and joint 85−8−6=71. The stem states contributions before the separate losses/costs. Coordination is valuable here, but not because all central control is desirable.",
       "aHash": "3a4e2a1e21030c6cce1e6384e2a43136dd343b093a8acff8b1301e90399eb017",
-      "bossStage": "opening"
+      "bossStage": "opening",
+      "canonicalDifficulty": "legendaryBoss"
     },
     {
       "id": 9113,
       "sourceGame": "agencyProtocol",
-      "q": "The joint-review rule yields net value 71 before any further change. Headquarters proposes reviewing every quote. That prevents the remaining 8 of poaching loss, but adds 5 review cost and loses 9 contribution from slower response. What should it do?",
+      "q": "Targeted joint review yields net value 71, including 8 of remaining poaching loss. Reviewing all quotes removes all 8 but adds 5 of administration and loses 9 from delay. A triage screen instead removes 75% of that loss, costs 3, and causes 1 of delay. Which policy improves value, and what triage detection fraction would merely break even?",
       "options": [
-        "Review every quote: eliminating poaching is the only relevant goal",
-        "Keep targeted review: broader review reduces net value by 6",
-        "Review every quote: the saved 8 exceeds the 5 review invoice",
-        "Remove all review: delay means coordination can never create value"
+        "Review all quotes: value rises to 74 because the prevented 8 exceeds the 5 invoice",
+        "Use triage: value rises to 74; its break-even detection fraction is 3/8",
+        "Retain targeted review: residual poaching means neither additional control can improve value",
+        "Use triage: value rises to 73; it breaks even at a detection fraction of 0.5"
       ],
       "tag": "organization",
-      "type": "integration",
+      "type": "multi-step",
       "objective": "LO21.4",
       "difficulty": "legendaryBoss",
       "conceptCluster": "legendaryBoss_agencyProtocol_organization",
       "primarySkill": "organization",
-      "secondarySkills": [],
+      "secondarySkills": [
+        "monitoring"
+      ],
       "repairSkill": "organization",
-      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "Broad review changes value by +8-5-9=-6. A remaining coordination loss does not imply that eliminating it is worth the information and delay costs.",
-      "aHash": "3a78f20d2377d1cf2b4fd67c91fb3426f3a3d9e38022a4a3e2af1a32583d3a71",
-      "bossStage": "middle"
+      "commonError": "it_ignores_the_9_delay_cost",
+      "feedback": "Broad review changes value by 8−5−9=−6. Triage changes it by .75×8−3−1=2. At detection fraction d, incremental value is 8d−4, which equals zero at .5. Information delay must be counted with control cost.",
+      "aHash": "56f0513912f62df82aef7b222110e857032950a03f33a02873ce56cc7aba003e",
+      "bossStage": "middle",
+      "canonicalDifficulty": "legendaryBoss"
     },
     {
       "id": 9115,
       "sourceGame": "agencyProtocol",
       "q": "A supplier division has 100 spare units, then must displace outside sales. MC is $24. Outside price is $60 with $4 avoidable selling cost. A buyer division needs 140 units and can buy outside at $58. What is the total firm saving from internal sourcing?",
       "options": [
-        "$280: every unit must use the full-capacity opportunity cost",
-        "$4,760: all 140 units save 34",
-        "$4,400: 100×34 plus 40×25",
-        "$3,480: 100×34 plus 40×2"
+        "3,320: the first 100 save 34 each and the last 40 lose 2 each",
+        "3,480: the first 100 save 34 each and the last 40 save 2 each",
+        "4,760: every internal unit saves the buyer’s price less manufacturing cost",
+        "280: every unit displaces a net external sale worth 56"
       ],
       "tag": "transfer_pricing",
-      "type": "integration",
+      "type": "multi-step",
       "objective": "LO22.2",
       "difficulty": "legendaryBoss",
-      "conceptCluster": "legendaryBoss_agencyProtocol_transfer_pricing_internal_trade",
-      "primarySkill": "transfer_pricing_internal_trade",
+      "conceptCluster": "legendaryBoss_agencyProtocol_transfer_pricing",
+      "primarySkill": "transfer_pricing",
       "secondarySkills": [],
-      "repairSkill": "transfer_pricing_internal_trade",
-      "commonError": "sets_transfer_price_from_division_politics_instead_of_opportunity_cost_and_total_firm_value",
-      "feedback": "The first 100 cost the firm 24 rather than 58, saving 34 each. The remaining 40 forgo net outside revenue of 60-4=56 and save 58-56=2 each. Capacity changes the relevant transfer margin.",
-      "aHash": "5d21035976b00ede635f6eb29fe41d9ce9c1cd5d120a780b0c15f4773894fb3f",
-      "bossStage": "opening"
+      "repairSkill": "transfer_pricing",
+      "commonError": "it_assumes_all_140_units_use_spare_capacity",
+      "feedback": "Spare-capacity opportunity cost is 24; constrained opportunity cost is 60−4=56 because external selling expense is avoided. Against outside purchase at 58, savings are 100×34+40×2=3,480.",
+      "aHash": "951e2e1e669cfc89f7596a9e314090da8e60afa554bbfa28109c2efa2be39cd9",
+      "bossStage": "opening",
+      "canonicalDifficulty": "legendaryBoss"
     },
     {
       "id": 9116,
       "sourceGame": "agencyProtocol",
       "q": "The supplier has 100 spare units; its MC is $24. Further internal units displace external sales at $60 with $4 avoided selling cost. The buyer can buy outside at $58. Which transfer rule makes both divisions strictly prefer all 140 efficient internal units?",
       "options": [
-        "A price between 24 and 58 for the first 100, and between 56 and 58 for the last 40",
-        "A uniform price of 24 for every unit, with no evaluation adjustment",
-        "A uniform price of 60 for every unit",
-        "A price of 56 for every unit, with strict supplier preference claimed for the last 40"
+        "Use 24 < price < 58 for the first 100 and 56 < price < 58 for the last 40",
+        "Use 24 < price < 58 for every unit because manufacturing cost remains unchanged",
+        "Use 56 ≤ price < 58 for the last 40 and claim strict preference at the lower boundary",
+        "Use 24 < price < 60 for the first 100 and 56 < price < 60 for the last 40"
       ],
       "tag": "transfer_pricing",
-      "type": "integration",
+      "type": "multi-step",
       "objective": "LO22.2",
       "difficulty": "legendaryBoss",
-      "conceptCluster": "legendaryBoss_agencyProtocol_transfer_pricing_internal_trade",
-      "primarySkill": "transfer_pricing_internal_trade",
-      "secondarySkills": [],
-      "repairSkill": "transfer_pricing_internal_trade",
-      "commonError": "sets_transfer_price_from_division_politics_instead_of_opportunity_cost_and_total_firm_value",
-      "feedback": "At spare capacity the minimum economic charge is 24. At full capacity it is 56. Strictly interior prices share positive surplus; a price of 56 leaves the supplier indifferent on displaced units.",
-      "aHash": "84eb46e012e498ee721f295dd2d2c37fc49b952e6589f144e41fd34437098c92",
-      "bossStage": "middle"
+      "conceptCluster": "legendaryBoss_agencyProtocol_transfer_pricing",
+      "primarySkill": "transfer_pricing",
+      "secondarySkills": [
+        "profit_center"
+      ],
+      "repairSkill": "transfer_pricing",
+      "commonError": "charges_below_56_need_not_compensate_displaced_sales",
+      "feedback": "The buyer strictly prefers any charge below 58. The supplier strictly prefers charges above 24 while idle and above net forgone outside revenue 56 when constrained. Equality gives indifference, not the stipulated strict preference.",
+      "aHash": "2a76c86467d6b9e746411a1649a19b79390a71552f88179b78f4b1e7f24408de",
+      "bossStage": "middle",
+      "canonicalDifficulty": "legendaryBoss"
     },
     {
       "id": 9122,
       "sourceGame": "agencyProtocol",
       "q": "A manager's own cost forecast becomes the target for a bonus paid when actual cost is lower. Unspent funds also reduce next year's allocation. What pair of changes addresses both predictable responses?",
       "options": [
-        "Audit only year-end spending while allowing the manager to set an unchecked target",
-        "Allow carryover but keep a larger bonus for beating the manager's self-set target",
-        "Use an independently benchmarked performance target and allow justified carryover subject to value review",
-        "Punish every forecast revision and require full spending by year-end"
+        "Allow unrestricted carryover but increase the bonus for beating a self-submitted cost target",
+        "Reward forecast accuracy using the unchanged self-set bonus hurdle and compulsory year-end spending",
+        "Use independently benchmarked performance targets and justified carryover subject to value review",
+        "Use independent targets but retain automatic allocation cuts for every unspent amount"
       ],
       "tag": "budget_games",
       "type": "integration",
       "objective": "LO22.7",
       "difficulty": "legendaryBoss",
-      "conceptCluster": "legendaryBoss_agencyProtocol_budget_slack_and_target_manipulation",
-      "primarySkill": "budget_slack_and_target_manipulation",
-      "secondarySkills": [],
-      "repairSkill": "budget_slack_and_target_manipulation",
-      "commonError": "mistakes_budget_compliance_for_honest_forecasting_or_value_creation",
-      "feedback": "A self-set hurdle rewards padding before work begins; automatic cuts reward waste afterward. Each requires a separate response. Carryover alone does not make the initial forecast truthful.",
-      "aHash": "8feee2ef94b2f1491540a9258ff0ad1578653cddcf80e280c42fccbc281178de",
-      "bossStage": "opening"
+      "conceptCluster": "legendaryBoss_agencyProtocol_budget_games",
+      "primarySkill": "budget_games",
+      "secondarySkills": [
+        "incentives"
+      ],
+      "repairSkill": "budget_games",
+      "commonError": "automatic_cuts_preserve_the_waste_incentive",
+      "feedback": "A self-set bonus hurdle rewards initial padding; automatic cuts reward later spending without value. Independent targets and reviewed carryover address different margins. Neither component alone resolves both.",
+      "aHash": "cfbe81d2a547baeb5f2e77839b664e0fb03d794a0993641f19ece47dd9a1e1b5",
+      "bossStage": "opening",
+      "canonicalDifficulty": "legendaryBoss"
     },
     {
       "id": 9123,
       "sourceGame": "agencyProtocol",
-      "q": "A division expects cost of either 80 or 120 with equal probability. Planning wants the expected cost; the manager earns 10 if actual cost is below its submitted target. Targets can be 100 or 121. Ignoring other rewards, what conflict exists?",
+      "q": "A division’s cost is 80 or 120 with equal probability. A manager submits target 100 or 121 and receives 10 if realized cost is strictly below it. A proposed independent score charges the manager 0.01 times squared forecast error, in addition to that bonus. The manager is risk-neutral. Does that score make honest expected-cost reporting privately optimal?",
       "options": [
-        "The two targets give the same bonus chance because expected cost is unchanged",
-        "Expected cost is 121 because the manager prefers that target",
-        "Target 100 guarantees the bonus because it equals expected cost",
-        "Expected cost is 100, but 121 gives a certain bonus instead of a 50% bonus chance"
+        "No: both targets have the same expected squared error because cost is symmetric",
+        "No: net expected reward is 1 at target 100 and 1.59 at target 121, so inflation still pays",
+        "Yes: target 100 has lower expected squared error, so any positive accuracy charge overcomes the bonus",
+        "Yes: target 121 earns only a 50% bonus probability because expected cost is 100"
       ],
       "tag": "budget_games",
-      "type": "integration",
+      "type": "multi-step",
       "objective": "LO22.7",
       "difficulty": "legendaryBoss",
-      "conceptCluster": "legendaryBoss_agencyProtocol_budget_slack_and_target_manipulation",
-      "primarySkill": "budget_slack_and_target_manipulation",
-      "secondarySkills": [],
-      "repairSkill": "budget_slack_and_target_manipulation",
-      "commonError": "mistakes_budget_compliance_for_honest_forecasting_or_value_creation",
-      "feedback": "Expected cost is .5×80+.5×120=100. At target 100, only cost 80 earns the bonus; at 121 both states do. Using the planning forecast as the hurdle rewards distortion.",
-      "aHash": "9085590090fa1f8dee0ca7915890034bc9c75d97831e002833357e505836ff86",
-      "bossStage": "middle"
+      "conceptCluster": "legendaryBoss_agencyProtocol_budget_games",
+      "primarySkill": "budget_games",
+      "secondarySkills": [
+        "incentives"
+      ],
+      "repairSkill": "budget_games",
+      "commonError": "lower_error_is_not_enough_the_size_of_the_reward_change_matters",
+      "feedback": "Expected cost is 100. At 100, expected bonus is 5 and expected squared error 400, giving 1. At 121, bonus is 10 and squared error (.5×41²+.5×1²)=841, giving 1.59. A well-directed accuracy incentive can be too weak to offset another reward.",
+      "aHash": "fcd68f8201e47e3c93dba9b4c41e4ba6d51fc645be76dbbbb96c8fce4989b5d2",
+      "bossStage": "middle",
+      "canonicalDifficulty": "legendaryBoss"
     },
     {
       "id": 9126,
       "sourceGame": "agencyProtocol",
-      "q": "The current guarantee contract has total agency cost 44, including residual loss 24. A proposed audit adds 7 control cost, reduces residual loss to 14, and creates 5 lost contribution from delayed decisions. Which recommendation uses the marginal comparison?",
+      "q": "A guarantee contract costs 44 including residual loss 24. An added audit costs 7, cuts residual loss to 14, and creates 5 of delay loss. Alternatively, a faster audit costs 11, cuts residual loss to 12, and avoids delay, but requires 2 of extra compensation to preserve the agent’s participation. All figures are incremental to the guarantee except residual loss. Which design is best, and what reduction in the faster audit’s fee would change that conclusion?",
       "options": [
-        "Add the audit: its 7 invoice is below the 10 saved loss, so delay can be ignored",
-        "Add the audit: residual loss falls from 24 to 14",
-        "Decline the audit: it saves 10 but costs 12, raising total cost to 46",
-        "Decline all controls: any remaining loss proves contracting cannot help"
+        "Use the faster audit at 43 because participation compensation merely changes who receives value",
+        "Keep the guarantee at 44; the faster audit needs a fee reduction greater than 3 to win",
+        "Keep the guarantee at 44; the faster audit totals 45 and wins only with a fee reduction greater than 1",
+        "Use the slower audit at 41 because its prevented loss of 10 exceeds its audit fee of 7"
       ],
       "tag": "agency_costs",
-      "type": "integration",
+      "type": "tradeoff",
       "objective": "LO21.3",
       "difficulty": "legendaryBoss",
-      "conceptCluster": "legendaryBoss_agencyProtocol_agency_costs_and_alignment",
-      "primarySkill": "agency_costs_and_alignment",
-      "secondarySkills": [],
-      "repairSkill": "agency_costs_and_alignment",
-      "commonError": "treats_monitoring_costs_as_the_only_agency_cost",
-      "feedback": "Incremental benefit is 24-14=10; cost is 7+5=12. The new total is 44-10+12=46. Minimizing residual loss is different from minimizing total agency cost.",
-      "aHash": "2dac4cd507156a8cc0e52b6004eeb45324de14f1f2155c3291a8c76d0ed10cd7",
-      "bossStage": "final"
+      "conceptCluster": "legendaryBoss_agencyProtocol_agency_costs",
+      "primarySkill": "agency_costs",
+      "secondarySkills": [
+        "monitoring",
+        "incentives"
+      ],
+      "repairSkill": "agency_costs",
+      "commonError": "it_omits_delay_loss",
+      "feedback": "Slow audit: 44−24+14+7+5=46. Fast audit: 44−24+12+11+2=45. The guarantee is best. Reducing the fast fee by exactly 1 ties at 44; a larger reduction strictly improves it. Participation compensation belongs in the principal’s comparison.",
+      "aHash": "906596f9d986c9c9ad1a9615e97a8b65fb4de6ee56576f9400a7a3e83b8bfcab",
+      "bossStage": "final",
+      "canonicalDifficulty": "legendaryBoss"
     },
     {
       "id": 9166,
       "sourceGame": "agencyProtocol",
       "q": "Headquarters separates planning forecasts from bonus targets and adds a penalty for forecast errors. A new supplier shock makes the original honest forecast obsolete. Which rule best preserves informative updates while limiting renewed gaming?",
       "options": [
-        "Accept any revised target and reset bonuses whenever a manager reports bad news",
-        "Freeze the old forecast and penalize every deviation regardless of new information",
-        "Permit documented revisions using independently verifiable new information, and evaluate accuracy relative to information available when each forecast was made",
-        "Reward only favorable errors, since low realized costs must prove honesty"
+        "Keep the original forecast fixed and punish deviations equally whether caused by news or hidden slack",
+        "Permit verified revisions but reward only favorable forecast errors rather than two-sided accuracy",
+        "Permit independently documented news revisions and assess forecast error against information available at each forecast date",
+        "Permit every managerial revision and reset the bonus hurdle to match each updated planning forecast"
       ],
       "tag": "budget_games",
       "type": "integration",
       "objective": "LO22.7",
       "difficulty": "legendaryBoss",
-      "conceptCluster": "legendaryBoss_agencyProtocol_budget_slack_and_target_manipulation",
-      "primarySkill": "budget_slack_and_target_manipulation",
-      "secondarySkills": [],
-      "repairSkill": "budget_slack_and_target_manipulation",
-      "commonError": "mistakes_budget_compliance_for_honest_forecasting_or_value_creation",
-      "feedback": "A useful system distinguishes deliberate slack from news and noise. Documented, verifiable revisions preserve planning information without automatically resetting the performance hurdle.",
-      "aHash": "4c994f3472a1f083f1bccb7d0edc997c2c4812ea511a2f8979a3be406138e76d",
-      "bossStage": "final"
+      "conceptCluster": "legendaryBoss_agencyProtocol_budget_games",
+      "primarySkill": "budget_games",
+      "secondarySkills": [
+        "monitoring",
+        "incentives"
+      ],
+      "repairSkill": "budget_games",
+      "commonError": "automatic_bonus_resets_let_strategic_revisions_move_the_hurdle",
+      "feedback": "A truthful forecast can become obsolete after news. Evaluating accuracy conditional on the contemporaneous information set preserves informative updates; independent documentation constrains opportunistic revisions without resetting the performance hurdle. One-sided rewards still distort forecasts.",
+      "aHash": "ef7e32be6a0a886125588ea439d72596c0e4be02faf11d15f0ddbbbcf4cb624e",
+      "bossStage": "final",
+      "canonicalDifficulty": "legendaryBoss"
     },
     {
       "id": 9174,
       "sourceGame": "agencyProtocol",
-      "q": "Targeted review requires branches to identify deals affecting sister branches. Their bonuses still reward local revenue, and branches hide overlap. Which repair addresses the weak point while retaining timely local decisions?",
+      "q": "Joint review relies on branches flagging customer overlap, but local revenue bonuses reward concealing it. Headquarters can independently match customer identities at moderate cost; it cannot obtain local demand information quickly enough to price every deal. Which repair addresses both the original information advantage and the new reporting incentive?",
       "options": [
-        "Centralize every quote and continue using local revenue as the only performance score",
-        "Keep revenue bonuses and ask branches to volunteer more accurate overlap reports",
-        "Audit customer overlap and reward net contribution after verified spillovers, with targeted review for flagged deals",
-        "Remove review and assume local demand knowledge guarantees firm-value maximization"
+        "Centralize every quote and keep local revenue bonuses to preserve branch sales effort",
+        "Verify customer identities but reward gross local revenue and review only voluntarily flagged deals",
+        "Verify overlap independently and credit contribution net of cross-branch harm, retaining local quotes with review for affected deals",
+        "Keep self-reported overlap and apply a larger penalty whenever a branch reports a cross-branch deal"
       ],
       "tag": "organization",
       "type": "integration",
@@ -5566,34 +6268,361 @@ const questionBanks = {
       "difficulty": "legendaryBoss",
       "conceptCluster": "legendaryBoss_agencyProtocol_organization",
       "primarySkill": "organization",
-      "secondarySkills": [],
+      "secondarySkills": [
+        "gaming",
+        "coordination"
+      ],
       "repairSkill": "organization",
-      "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "The hybrid fails if agents gain by concealing spillovers. Verification and a measure that internalizes them complement the allocation of decision rights.",
-      "aHash": "35603d7dce9d75c37135f1d1e6a06fd9375fd8becaa6d96b90f00f21c55755a2",
-      "bossStage": "final"
+      "commonError": "punishing_the_act_of_reporting_makes_concealment_more_attractive",
+      "feedback": "The hybrid needs reliable information about spillovers and rewards that internalize them. Independent matching repairs the reporting margin; contribution net of harm repairs the payoff margin, while local quoting retains useful demand information.",
+      "aHash": "63fb814aea180c711d997ee01a00cf7a421e9aabb337205454b0cadbdf57b245",
+      "bossStage": "final",
+      "canonicalDifficulty": "legendaryBoss"
     },
     {
       "id": 9176,
       "sourceGame": "agencyProtocol",
-      "q": "Headquarters charges the buyer $30 and credits the supplier $57 for each of 140 internal units. The first 100 use spare capacity at MC $24; the last 40 displace sales with net revenue $56. Outside purchase would cost the buyer $58. Which evaluation is correct?",
+      "q": "Headquarters charges the buyer 30 and credits the supplier 57 per internal unit. Of 140 units, 100 use spare capacity at MC 24 and 40 displace external sales with net revenue 56. The buyer’s outside price is 58. Reconciling the dual-price accounts costs a real 500 administration fee; no other costs change. Which evaluation is correct?",
       "options": [
-        "Both divisions prefer internal trade, but headquarters must reconcile the $3,780 internal credit gap; the real sourcing gain remains $3,480",
-        "The firm creates an extra $3,780 of real profit from the difference between the two internal prices",
-        "The trade destroys $3,780 because internal credits are resource costs",
-        "The supplier rejects all units because the buyer is charged only $30"
+        "Both divisions prefer trade; the internal credit gap is 3,780 and real company gain after administration is 2,980",
+        "Both divisions prefer trade; the 3,780 credit gap adds to company gain, producing 6,760 after administration",
+        "The supplier rejects constrained units because headquarters charges the buyer only 30, below 56",
+        "Both divisions prefer trade; the credit gap is a resource loss that makes company gain negative 800"
       ],
       "tag": "transfer_pricing",
-      "type": "integration",
+      "type": "multi-step",
       "objective": "LO22.2",
       "difficulty": "legendaryBoss",
-      "conceptCluster": "legendaryBoss_agencyProtocol_transfer_pricing_internal_trade",
-      "primarySkill": "transfer_pricing_internal_trade",
-      "secondarySkills": [],
-      "repairSkill": "transfer_pricing_internal_trade",
-      "commonError": "sets_transfer_price_from_division_politics_instead_of_opportunity_cost_and_total_firm_value",
-      "feedback": "The supplier sees 57, above 24 or 56; the buyer sees 30, below 58. The 27×140=3,780 reconciliation is an internal accounting gap, not new value. Real gain remains 100×34+40×2=3,480.",
-      "aHash": "2026336c433302396bde3b675155f754a3f87a46ca81bc0fa2aa996bd37c261a",
+      "conceptCluster": "legendaryBoss_agencyProtocol_transfer_pricing",
+      "primarySkill": "transfer_pricing",
+      "secondarySkills": [
+        "parent_profit",
+        "profit_center"
+      ],
+      "repairSkill": "transfer_pricing",
+      "commonError": "the_credit_gap_is_not_external_revenue",
+      "feedback": "Supplier credit 57 exceeds either relevant opportunity cost; buyer charge 30 is below 58. Internal credit gap is (57−30)×140=3,780 and cancels on consolidation. Real sourcing gain 3,480 less the 500 fee is 2,980.",
+      "aHash": "7ae4b49ccfe7639634cb3a7c5bcfc59a2bbe0c04f3542c9c5799ba4210240127",
+      "bossStage": "final",
+      "canonicalDifficulty": "legendaryBoss"
+    },
+    {
+      "id": 23100,
+      "sourceGame": "agencyProtocol",
+      "q": "A fleet insurer cannot price by privately known operator type. Thirty low-risk operators each have expected claims 95 and will pay up to 120; ten high-risk operators each have expected claims 155 and will pay up to 190. Behavior and administration cost do not change with price. It must choose one of three uniform premiums: 115, 125 or 180. Which produces the highest total expected insurer profit after enrollment responds?",
+      "options": [
+        "180 yields 250 from ten high-risk buyers, exceeding 200 at 115; premium 125 loses 300 after low-risk exit",
+        "125 yields 600 from forty buyers, exceeding the 200 profit at 115 without losing participation",
+        "115 yields 800 from forty buyers because every enrolled operator has expected claims of 95",
+        "180 yields 2,800 from forty buyers because a higher premium changes receipts but not the risk pool"
+      ],
+      "tag": "adverse_selection",
+      "type": "multi-step",
+      "objective": "LO19.2",
+      "difficulty": "legendaryBoss",
+      "canonicalDifficulty": "legendaryBoss",
+      "conceptCluster": "legendaryBoss_agencyProtocol_adverse_selection",
+      "primarySkill": "adverse_selection",
+      "secondarySkills": [
+        "insurance"
+      ],
+      "repairSkill": "adverse_selection",
+      "commonError": "low_risk_willingness_to_pay_is_below_125_so_the_assumed_forty_buyers_do_not_remain",
+      "feedback": "At 115 all forty enroll: 40×115−30×95−10×155=200. At 125 only ten high-risk operators enroll: 10×(125−155)=−300. At 180 the same ten yield 250. Low-risk exit worsens composition, so a premium increase need not increase profit. Among the listed premiums, 180 is best for this insurer; that is not a claim that it maximizes total insured surplus.",
+      "aHash": "0fe9d47554268c06cb795c0838cad8aea342bc753d7d3a7e0132fc5b4d0ed2d3",
+      "bossStage": "opening"
+    },
+    {
+      "id": 23101,
+      "sourceGame": "agencyProtocol",
+      "q": "A program’s existing low-risk operators cost 95 each after a care response. Ten additional higher-risk operators would cost 155 each. There are currently 30 low-risk operators. A care monitor reduces every enrolled operator’s cost by 20 and costs 12 per operator. What is average claims-plus-monitoring cost if all 40 join, compared with keeping only the existing 30 without monitoring?",
+      "options": [
+        "90 versus 95: preventing 20 of claims per operator is the monitor’s full net saving",
+        "87 versus 95: the monitor’s 8 net saving applies without any composition effect",
+        "110 versus 95: monitoring cannot affect hidden action because entry risk is privately known",
+        "102 versus 95: the monitor improves each operator’s cost by 8 but the new mix raises average cost by 15"
+      ],
+      "tag": "adverse_selection",
+      "type": "multi-step",
+      "objective": "LO19.2",
+      "difficulty": "legendaryBoss",
+      "canonicalDifficulty": "legendaryBoss",
+      "conceptCluster": "legendaryBoss_agencyProtocol_adverse_selection",
+      "primarySkill": "adverse_selection",
+      "secondarySkills": [
+        "monitoring"
+      ],
+      "repairSkill": "adverse_selection",
+      "commonError": "it_omits_the_monitoring_invoice",
+      "feedback": "Without monitoring the expanded pool average is (30×95+10×155)/40=110. Monitoring changes total cost by −20+12=−8 each, giving 102. Better action incentives need not offset a worse entry mix.",
+      "aHash": "4ffca4baddc62f6f01b11465992b49baeffc7cdf2dcd1ba7f9c37d9b59cc9e0f",
+      "bossStage": "middle"
+    },
+    {
+      "id": 23102,
+      "sourceGame": "agencyProtocol",
+      "q": "A platform can prevent 60 of selection-related loss with screening costing 18, but that screen excludes useful participants worth 22. A care monitor prevents 35 of action-related loss and costs 16. Using both adds 7 of coordination cost; the two prevented losses do not overlap. Which policy maximizes net benefit, and when would adding screening to monitoring stop being worthwhile?",
+      "options": [
+        "Use both for net benefit 39; coordination costs are already included in each standalone invoice",
+        "Use monitoring alone for net benefit 19; an entry screen cannot complement an action control",
+        "Use both for net benefit 32; adding screening ceases to help when excluded-participant value reaches 35",
+        "Use screening alone for net benefit 42; excluded participants create no realized loss to the platform"
+      ],
+      "tag": "screening",
+      "type": "multi-step",
+      "objective": "LO19.2",
+      "difficulty": "legendaryBoss",
+      "canonicalDifficulty": "legendaryBoss",
+      "conceptCluster": "legendaryBoss_agencyProtocol_screening",
+      "primarySkill": "screening",
+      "secondarySkills": [
+        "moral_hazard",
+        "monitoring"
+      ],
+      "repairSkill": "screening",
+      "commonError": "it_omits_forgone_useful_participants",
+      "feedback": "Screen net is 60−18−22=20; monitor net is 35−16=19; combined net is 20+19−7=32. Adding screening to monitoring gives 60−18−x−7=35−x, so it ties at excluded value 35 and helps only below it.",
+      "aHash": "23a0084849086ff8082d0d4fcc8cc949c1ece4c7f4ec91843756075206915c42",
+      "bossStage": "final"
+    },
+    {
+      "id": 23103,
+      "sourceGame": "agencyProtocol",
+      "q": "A platform tests applicants’ existing competence and also permits a voluntary performance bond forfeited for later verified failures. Bonded providers have fewer failures, but providers can change care after admission. The platform proposes dropping its competence test because the bond supposedly identifies original competence. Which evidence would most directly test that claim while separating selection from care?",
+      "options": [
+        "Compare test pass rates only among bonded providers, treating a high pass rate as proof that unbonded providers are less competent",
+        "Compare independently measured pre-admission competence across bond choices, then compare later care within competence groups",
+        "Compare only post-admission failure rates across bond choices, controlling for the number of jobs completed",
+        "Compare bond forfeitures across providers after admission, treating lower forfeiture as proof of greater original competence"
+      ],
+      "tag": "screening",
+      "type": "integration",
+      "objective": "LO19.4",
+      "difficulty": "legendaryBoss",
+      "canonicalDifficulty": "legendaryBoss",
+      "conceptCluster": "legendaryBoss_agencyProtocol_screening",
+      "primarySkill": "screening",
+      "secondarySkills": [
+        "signaling",
+        "moral_hazard"
+      ],
+      "repairSkill": "screening",
+      "commonError": "job_counts_do_not_remove_the_difference_in_chosen_care",
+      "feedback": "The platform initiates screening; the provider chooses a potential signal. But fewer failures can reflect either original competence or induced care. Pre-admission competence across both choices tests sorting; within-competence care comparisons probe the behavior margin. These comparisons diagnose channels, without claiming that observational controls alone establish causation.",
+      "aHash": "359825e961ce25867fc052622e5bca0c7b3d5678fe56c0e22fd1d0db78d5e01c",
+      "bossStage": "opening"
+    },
+    {
+      "id": 23104,
+      "sourceGame": "agencyProtocol",
+      "q": "A voluntary bond of 300 earns a price premium of 100. A reliable provider forfeits it with probability 0.10. An unreliable provider would forfeit with probability 0.50 without care, but can spend 25 on care that lowers its forfeiture probability to 0.20. Providers are risk-neutral. At the old premium, does the bond strictly separate the original types?",
+      "options": [
+        "No: the reliable type gains 70, while an unreliable type choosing care gains 15 and imitates",
+        "Yes: the unreliable type’s expected bond loss is 150, above the premium of 100",
+        "Yes: reliable gain 70 exceeds unreliable gain 15, so their choices must differ",
+        "No: the unreliable type gains 40 with care because effort expenditure is not part of signal cost"
+      ],
+      "tag": "signaling",
+      "type": "multi-step",
+      "objective": "LO19.4",
+      "difficulty": "legendaryBoss",
+      "canonicalDifficulty": "legendaryBoss",
+      "conceptCluster": "legendaryBoss_agencyProtocol_signaling",
+      "primarySkill": "signaling",
+      "secondarySkills": [
+        "moral_hazard"
+      ],
+      "repairSkill": "signaling",
+      "commonError": "the_unreliable_provider_can_change_its_expected_forfeiture_through_care",
+      "feedback": "Reliable net gain is 100−.1×300=70. Unreliable no-care gain is −50, but care gives 100−25−.2×300=15. Signal credibility depends on the cheapest available imitation strategy, not a fixed bad-type cost. Improved care is a behavior effect, not proof of original type separation.",
+      "aHash": "6ce22ee5fc4f1259b985964f87f38f5f90f1243ffc58cc4b3f0acd5d5f9e1d92",
+      "bossStage": "middle"
+    },
+    {
+      "id": 23105,
+      "sourceGame": "agencyProtocol",
+      "q": "A reliable provider’s bond-forfeiture probability is 0.10. An unreliable provider can use no care at probability 0.50 or pay 25 for care at probability 0.20. Posting a bond D earns premium 100. Ties do not separate types, all providers can finance D up to 600, and both original types are risk-neutral. Which listed bond strictly separates types after allowing the unreliable provider to choose care?",
+      "options": [
+        "D = 300: reliable gain 70 exceeds the unreliable provider’s care gain of 15",
+        "D = 375: unreliable care gain is exactly zero, which establishes strict separation",
+        "D = 1,000: unreliable imitation loses money and reliable participation is strictly profitable",
+        "D = 400: reliable gain 60; unreliable gains −100 without care and −5 with care"
+      ],
+      "tag": "signaling",
+      "type": "multi-step",
+      "objective": "LO19.4",
+      "difficulty": "legendaryBoss",
+      "canonicalDifficulty": "legendaryBoss",
+      "conceptCluster": "legendaryBoss_agencyProtocol_signaling",
+      "primarySkill": "signaling",
+      "secondarySkills": [
+        "moral_hazard"
+      ],
+      "repairSkill": "signaling",
+      "commonError": "an_unreliable_type_still_earns_a_positive_care_gain",
+      "feedback": "Reliable participation needs D<1,000. Deterring no-care imitation needs D>200; deterring cared-for imitation needs D>375. Feasible separating bonds therefore satisfy 375<D≤600, and 400 is the listed feasible choice. At 375 there is a tie; 1,000 violates finance and strict participation.",
+      "aHash": "ccd5bcad7a862ce665c1024c7b989209e172bb46393c6c170f6bbf98710b1b6c",
+      "bossStage": "final"
+    },
+    {
+      "id": 23106,
+      "sourceGame": "agencyProtocol",
+      "q": "A contractor receives a fixed fee and chooses unobserved maintenance effort. A dashboard counts scheduled visits, which staff can log without completing the diagnostic work. Visits rise after a dashboard target is imposed, but independently tested failure rates do not fall. Which comparison most directly tests and addresses the remaining hidden-action margin?",
+      "options": [
+        "Screen applicants more carefully and infer that certified contractors perform all logged tasks",
+        "Pay for a lower reported failure rate while letting contractors decide which failures enter the report",
+        "Verify randomly selected diagnostic tasks and compare failures, linking consequences to verified work rather than visit logs",
+        "Increase the visit target and compare contractors by the number of logged visits per worker"
+      ],
+      "tag": "monitoring",
+      "type": "integration",
+      "objective": "LO20.3",
+      "difficulty": "legendaryBoss",
+      "canonicalDifficulty": "legendaryBoss",
+      "conceptCluster": "legendaryBoss_agencyProtocol_monitoring",
+      "primarySkill": "monitoring",
+      "secondarySkills": [
+        "gaming",
+        "screening"
+      ],
+      "repairSkill": "monitoring",
+      "commonError": "it_strengthens_incentives_to_inflate_logs",
+      "feedback": "The controllable proxy is not the maintenance action. Independent work verification tests the behavior and supports an enforceable consequence. Higher proxy pressure, entry screening alone, and self-selected outcome reports leave the specified manipulation channel open.",
+      "aHash": "47553417a64c41a2e9ebbfe19e4fc05b5c14c2f0c4542b6474a6dfc72ce52f2b",
+      "bossStage": "opening"
+    },
+    {
+      "id": 23107,
+      "sourceGame": "agencyProtocol",
+      "q": "Skipping diagnostic work saves a contractor 24. Conditional on an audit, an enforceable 100 penalty is imposed with probability 0.90 if work is skipped and 0.10 if it is completed. Audits cost 30 each and occur with probability p in increments of 0.05. The risk-neutral contractor initially earns exactly its outside utility when completing work. An unconditional top-up must offset expected false-positive penalties. Which listed design minimizes audit plus top-up cost while strictly inducing work and preserving participation?",
+      "options": [
+        "p = 0.40 with top-up 4: total cost 16 and the least feasible strict work incentive",
+        "p = 0.35 with top-up 3.5: total incremental cost 14 and incremental deterrence 28",
+        "p = 0.30 with top-up 3: total cost 12 and a strict work incentive from a skipped-work penalty of 27",
+        "p = 0.35 with no top-up: total cost 10.5, since a correct worker faces no penalty"
+      ],
+      "tag": "monitoring",
+      "type": "multi-step",
+      "objective": "LO20.3",
+      "difficulty": "legendaryBoss",
+      "canonicalDifficulty": "legendaryBoss",
+      "conceptCluster": "legendaryBoss_agencyProtocol_monitoring",
+      "primarySkill": "monitoring",
+      "secondarySkills": [
+        "incentives"
+      ],
+      "repairSkill": "monitoring",
+      "commonError": "gross_penalties_overstate_deterrence_the_incremental_penalty_is_24_giving_indifference",
+      "feedback": "Incentives depend on the penalty difference: p×(.90−.10)×100=80p, which must exceed 24. Thus the least grid value is .35. A working contractor needs .35×.10×100=3.5 extra pay for participation; total expense is .35×30+3.5=14. At .30 the difference is only 24, despite gross skipped-work penalties of 27.",
+      "aHash": "396aba7a11739f32dfb6ecdbecb40dc8847aa4f3eb66df42fff2c1d79855cc58",
+      "bossStage": "middle"
+    },
+    {
+      "id": 23108,
+      "sourceGame": "agencyProtocol",
+      "q": "A verified-work contract induces full diagnostic effort with 10.5 per job in audits plus 3.5 compensation for false-positive penalties. An outcome bonus induces the same effort but requires 7 of expected incentive payment above baseline and 9 extra risk compensation for uncontrollable failures. A hybrid costs 6 in audits, 4 in incentives and 3 in risk compensation; it also leaves 2 of residual loss. Baseline pay and output value before these losses are identical. Ignore penalty recoveries: forfeitures go to an outside party. Which design is best and what audit-cost increase makes the verified-work contract tie the hybrid?",
+      "options": [
+        "Verified work at 14; an audit-cost increase of 1 makes it tie the hybrid’s total of 15",
+        "Outcome pay at 7; the risk compensation is a transfer and is outside the principal’s cost",
+        "Hybrid at 13; residual loss belongs to output quality and is not part of the contract comparison",
+        "Verified work at 10.5; an increase of 4.5 makes it tie the hybrid’s total of 15"
+      ],
+      "tag": "monitoring",
+      "type": "tradeoff",
+      "objective": "LO20.3",
+      "difficulty": "legendaryBoss",
+      "canonicalDifficulty": "legendaryBoss",
+      "conceptCluster": "legendaryBoss_agencyProtocol_monitoring",
+      "primarySkill": "monitoring",
+      "secondarySkills": [
+        "insurance",
+        "incentives"
+      ],
+      "repairSkill": "monitoring",
+      "commonError": "required_compensation_is_a_principal_expense",
+      "feedback": "Total incremental principal costs are 10.5+3.5=14, 7+9=16, and 6+4+3+2=15. Verified work is cheapest; 15−14=1 is its cost headroom. Participation, risk-bearing and residual distortion all affect the comparison; penalty proceeds do not return to this principal.",
+      "aHash": "b726683893d6def48cee3acd539c8a1996d60d97e99f90b5fc7f0b9ffe1940d8",
+      "bossStage": "final"
+    },
+    {
+      "id": 23109,
+      "sourceGame": "agencyProtocol",
+      "q": "A company has product lines with different buyers and one scarce testing team used by every line. Under functional silos, no manager owns each product’s full contribution. Under a proposed M-form, product heads would own results but could delay rivals’ tests by reserving unused slots. Which diagnosis identifies both the benefit and the new governance need?",
+      "options": [
+        "Product accountability improves, so testing can be assigned by unverified product-head requests",
+        "Functional expertise disappears under any M-form, so shared testing must be duplicated immediately",
+        "Testing conflicts imply product profit responsibility cannot convey useful decision information",
+        "Product accountability improves, but shared testing needs verified reservations and company-value allocation"
+      ],
+      "tag": "multidivisional",
+      "type": "integration",
+      "objective": "LO22.6",
+      "difficulty": "legendaryBoss",
+      "canonicalDifficulty": "legendaryBoss",
+      "conceptCluster": "legendaryBoss_agencyProtocol_multidivisional",
+      "primarySkill": "multidivisional",
+      "secondarySkills": [
+        "coordination",
+        "gaming"
+      ],
+      "repairSkill": "multidivisional",
+      "commonError": "product_heads_can_strategically_overreserve",
+      "feedback": "M-form can create clear product-level responsibility without abolishing all shared functions. Local accountability does not internalize congestion imposed on other products; reservation verification and common-value allocation address the added externality.",
+      "aHash": "a30d92f96f6c8699a7097fcdecad9e77b781be341ad9569d44c702f3e187b676",
+      "bossStage": "opening"
+    },
+    {
+      "id": 23110,
+      "sourceGame": "agencyProtocol",
+      "q": "A functional structure produces 160 before 35 of handoff losses. Product divisions produce 185 before 25 of duplicated specialist cost and 20 of shared-testing congestion. An M-form with a central testing coordinator retains 185, reduces congestion to 6, retains duplicated specialist cost 25, and adds 9 coordination expense. Which design has greatest net value?",
+      "options": [
+        "Functional at 160, because handoff losses merely move costs between departments",
+        "Coordinated M-form at 154, because the coordinator’s fixed cost is common to all alternatives",
+        "Coordinated M-form at 145, versus uncoordinated M-form 140 and functional 125",
+        "Uncoordinated M-form at 185, because product-level accountability already internalizes every cost"
+      ],
+      "tag": "multidivisional",
+      "type": "multi-step",
+      "objective": "LO22.6",
+      "difficulty": "legendaryBoss",
+      "canonicalDifficulty": "legendaryBoss",
+      "conceptCluster": "legendaryBoss_agencyProtocol_multidivisional",
+      "primarySkill": "multidivisional",
+      "secondarySkills": [
+        "functional_structure",
+        "coordination"
+      ],
+      "repairSkill": "multidivisional",
+      "commonError": "it_omits_both_specified_resource_costs",
+      "feedback": "Net values are 160−35=125; 185−25−20=140; and 185−25−6−9=145. The extra coordinator cost is incurred only under that design; product responsibility does not erase congestion or duplicated specialization.",
+      "aHash": "ab31f67ee2cfd255beac325076f0451031cf275cf0a0105876c74e29d549492d",
+      "bossStage": "middle"
+    },
+    {
+      "id": 23111,
+      "sourceGame": "agencyProtocol",
+      "q": "A coordinated M-form yields 145 after all current costs. Sharing specialist staff across products would save 18 of duplication but add 7 of scheduling expense and 6 of delay loss. An affected product would show 9 less local profit because of the internal charge allocation, even though those charges cancel for the parent. Which parent decision and evaluation change are coherent?",
+      "options": [
+        "Share staff for a gain of 11 because delayed product decisions are already reflected in the internal charge",
+        "Share staff for a company gain of 5, and adjust evaluation for the internal allocation rather than abandoning the gain",
+        "Reject sharing because the product’s reported loss of 9 exceeds the company’s resource saving of 5",
+        "Share staff for a gain of 14 by adding back the product’s internal charge loss as new company revenue"
+      ],
+      "tag": "multidivisional",
+      "type": "multi-step",
+      "objective": "LO22.6",
+      "difficulty": "legendaryBoss",
+      "canonicalDifficulty": "legendaryBoss",
+      "conceptCluster": "legendaryBoss_agencyProtocol_multidivisional",
+      "primarySkill": "multidivisional",
+      "secondarySkills": [
+        "parent_profit",
+        "profit_center"
+      ],
+      "repairSkill": "multidivisional",
+      "commonError": "local_allocated_profit_is_not_the_consolidated_value_change",
+      "feedback": "The real change is 18−7−6=5, increasing company value to 150. The 9 allocation loss is internal and neither an extra real cost nor new revenue. Evaluation should preserve cooperation without hiding real scheduling and delay costs.",
+      "aHash": "43db58c1d45ee4cb61d870bd61da6be776ad6a69b2fb20758a7363d08edf32bf",
       "bossStage": "final"
     }
   ]

@@ -5,7 +5,8 @@ Signal, Strategy Desk and Agency Protocol Standard content reviews are complete.
 Strategy visual-linked records also received necessity reviews, including
 Legendary candidates. Strategy's specified matrices and sequential games have
 independent mathematical verification in the private audit artifacts. The
-four required Standard campaigns are covered; full Legendary reviews are not complete.
+four required Standard campaigns are covered. Agency's focused Legendary review
+is also complete; this does not certify the other three Legendary banks.
 Mechanical validation alone is not certification.
 The full pre-edit report, source map, item ledger and remaining-work list are
 local private faculty materials under the ignored `_private_course_sources`
@@ -181,3 +182,53 @@ Fading Fortune, Risk & Reward, and enabled Trial by Graph 10/15/20. Unlimited
 is explicitly ended after 40 answers; Timed is allowed to expire; Exam, Score,
 and Legendary finish their complete runs. Runtime success is not full Legendary
 semantic certification, psychometric validation, or evidence of learning gains.
+
+## Agency Legendary expansion — 2026-09-28
+
+Agency now has 35 ordinary Legendary questions and 24 Legendary Boss records
+in eight complete three-stage encounters (336 active records overall). All 21
+previous Legendary records were revised and reviewed A–J; 38 new records were
+added. Provisional ID 23020 was rejected for duplicating a Standard reasoning
+template, so the ordinary target of 36 was deliberately not filled. New IDs are
+23000–23019, 23021–23026 and 23100–23111, checked against 544 active, retired and
+previously reserved Agency identities. Keep rejected provisional ID 23020 reserved.
+
+The 277 Standard-supporting records, resources, mode support and all other games
+are unchanged. The new manifest applies after `closeout-patch.json`. Per-record
+upstream fingerprints and an exact final-bank fingerprint reject content drift,
+unexpected additions and collisions before writing. Historical manifests remain
+unchanged. Combined replay from all prior stages and reapplication are verified.
+
+An actual run with an expanded 36-item draft repeated five ordinary IDs before
+exhaustion. The only gameplay change restricts Agency's ordinary Legendary
+candidate pool to unused IDs until exhausted; existing adaptive weights are
+unchanged. Twenty seeded final runs each drew 27 distinct ordinary items. A mixed
+run exhausted all 35 before recycling during existing progression penalties.
+Standard's 80 seeded exposure traversals remained exactly equal. Eight Standard
+lifecycle profiles and 14 optional-mode runs passed. Legendary still cannot save
+or resume, as explicitly requested; Standard save/resume remains supported.
+
+Private deliverables are `AGENCY-LEGENDARY-REVIEW.md`,
+`AGENCY-LEGENDARY-INVENTORY.md`, and `agency-legendary-verification.json` under
+`_private_course_sources/eco6655/alignment-audit/`, with detailed evidence in
+`agency-legendary-2026-09-28/`. These supersede only Agency Legendary counts and
+certification status in the historical closeout, not its Standard certificates.
+
+Focused reproduction (set `PLAYWRIGHT_MODULE`, `AUDIT_OUTPUT_DIR` and
+`AUDIT_GAME=agency-protocol` as described above):
+
+```text
+python audit_tools/directorate_alignment/apply_patch.py --validate
+node audit_tools/directorate_alignment/agency-legendary-check.mjs
+node audit_tools/directorate_alignment/agency-legendary-fixtures.mjs
+node audit_tools/directorate_alignment/runtime-check.mjs --standard-only --closeout
+node audit_tools/directorate_alignment/campaign-check.mjs
+node audit_tools/directorate_alignment/closeout-browser.mjs
+node audit_tools/directorate_alignment/closeout-modes.mjs
+```
+
+The focused harness records full answer sequences, encounter identities, report
+and telemetry mode, completion separation and unsupported-save behavior. Fixtures
+test 100 seeded three-cycle exhaustion cases, 300 boss encounters and all 59
+items' copy/layout at desktop and mobile widths. These are synthetic checks,
+not estimates of learning effectiveness or student success rates.
