@@ -13852,6 +13852,8 @@ answer = async function(choice, ...args){
 
 const phase15BaseHandleVictory = handleVictory;
 handleVictory = function(...args){
+    // Legendary owns this same completion lock; dispatch before acquiring it.
+    if(gameMode === "legendary") return handleLegendaryVictory(...args);
     if(phase15CompletionLocked) return;
     phase15CompletionLocked = true;
     runPhase = "complete";

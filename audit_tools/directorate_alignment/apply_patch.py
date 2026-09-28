@@ -183,6 +183,22 @@ def plan_sources(sources, patches):
         pending[key[0]] += 1
         if destination_key[0] != key[0]:
             pending[destination_key[0]] += 1
+    # Collapsing historical moves into one chain can append records in a
+    # different order from the individually certified passes. Restore only
+    # explicitly certified final pool order; never add or alter a record here.
+    for patch in patches:
+        for layout in patch.get('finalPoolOrder', []):
+            game = layout['game']
+            names = [m[1] for m in DECLARATION.finditer(sources[game])]
+            pools = parsed[game][0][names.index(layout['container'])][2]
+            pool = pools[layout['pool']]
+            by_id = {record['id']: record for record in pool}
+            ids = layout['ids']
+            if len(ids) != len(set(ids)) or set(ids) != set(by_id):
+                raise ValueError(f'Final pool inventory conflict: {game}/{layout["pool"]}; no files written')
+            if [record['id'] for record in pool] != ids:
+                pool[:] = [by_id[identity] for identity in ids]
+                pending[game] += 1
     proposed = {}
     counts = {}
     for game, (sections, _) in parsed.items():
@@ -214,7 +230,7 @@ def main():
     parser.add_argument("--validate", action="store_true")
     args = parser.parse_args()
     patches = [json.loads((HERE / name).read_text(encoding='utf-8'))
-               for name in ('content-patch.json', 'continuation-patch.json', 'cost-standard-patch.json', 'market-standard-patch.json', 'strategy-standard-patch.json', 'agency-standard-patch.json')]
+               for name in ('content-patch.json', 'continuation-patch.json', 'cost-standard-patch.json', 'market-standard-patch.json', 'strategy-standard-patch.json', 'agency-standard-patch.json', 'closeout-patch.json')]
     paths = {}
     sources = {}
     for game in GAMES:

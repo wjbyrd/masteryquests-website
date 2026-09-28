@@ -11,6 +11,7 @@ const requestedGame=process.env.AUDIT_GAME;
 if(requestedGame&&!allGames.includes(requestedGame))throw Error('Unknown AUDIT_GAME');
 const games=requestedGame?[requestedGame]:allGames;
 const standardOnly=process.argv.includes('--standard-only');
+const closeout=process.argv.includes('--closeout');
 const results=[];
 const server=http.createServer((req,res)=>{
  const url=new URL(req.url,'http://localhost');const relative=decodeURIComponent(url.pathname);
@@ -29,7 +30,7 @@ try{
   await context.route('**/*',r=>new URL(r.request().url()).origin===origin?r.continue():r.abort());
   const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.goto(`${origin}/play/managerial-intelligence-directorate/${game}/`);
-  const result=await page.evaluate(async({standardOnly,checkCost,checkMarket,checkStrategy,checkAgency})=>{
+  const result=await page.evaluate(async({standardOnly,checkCost,checkMarket,checkStrategy,checkAgency,closeout})=>{
    let randomState=0x6655;
    Math.random=()=>((randomState=(Math.imul(1664525,randomState)+1013904223)>>>0)/4294967296);
    const bank=Object.values(questionBanks).flat();
@@ -100,7 +101,7 @@ try{
     }
    }
    const bossHistoryCases=[];
-   if(checkAgency){
+   if(checkAgency||closeout){
     for(const name of ['easyBoss','mediumBoss','finalBoss']){
      const pool=questionBanks[name];
      for(const objective of [...new Set(pool.map(getBossObjectiveKey))]){
@@ -126,7 +127,7 @@ try{
      trialGraph.decks.push({target,seed,ids:deck.map(q=>q.id)});
     }
    }
-   const modes=checkAgency ? [...FACULTY_COMPOSITION_CONFIG.supportedModes] : typeof FACULTY_MODE_REQUIREMENTS==='object'?Object.keys(FACULTY_MODE_REQUIREMENTS):['standard','timed','exam','quiz','unlimited','legendary','score'];
+   const modes=checkAgency||closeout ? [...FACULTY_COMPOSITION_CONFIG.supportedModes] : typeof FACULTY_MODE_REQUIREMENTS==='object'?Object.keys(FACULTY_MODE_REQUIREMENTS):['standard','timed','exam','quiz','unlimited','legendary','score'];
    const modePreflights=Object.fromEntries(modes.map(mode=>[mode,validateFacultyMode(mode)]));
    let agencyLimitedModes=null;
    if(checkAgency){
@@ -162,7 +163,7 @@ try{
       agencyLimitedModes.adaptiveRuns.push({mode,target,seed,ids,profile:'two correct per three attempts'});
      }
     }
-    for(const target of [10,15,20])for(let seed=1;seed<=20;seed++){
+    for(const target of [5,10,15])for(let seed=1;seed<=20;seed++){
      reset();gameMode='quiz';quizQuestionTarget=target;quizQuestionsCompleted=0;randomState=seed;const ids=[];
      for(let i=0;i<target;i++){
       const pool=getDifficultyForMode();const q=selectQuizBalancedQuestion(pool);
@@ -173,7 +174,7 @@ try{
     }
    }
    return {records:rows.length,answerChecks:checks,invalidAnswers:invalid,standardPreflight:validateFacultyMode('standard'),modePreflights,routeChecks,routeIssues,routeObjectiveMismatches,routeSelections,bossChecks,bossIssues,bossHistoryCases,costRouteSelections,costRouteIssues,historyRegression,trialGraph,agencyLimitedModes};
-  },{standardOnly,checkCost:['cost-directive','strategy-desk','agency-protocol'].includes(game),checkMarket:game==='market-signal',checkStrategy:game==='strategy-desk',checkAgency:game==='agency-protocol'});
+  },{standardOnly,closeout,checkCost:['cost-directive','strategy-desk','agency-protocol'].includes(game),checkMarket:game==='market-signal',checkStrategy:game==='strategy-desk',checkAgency:game==='agency-protocol'});
   result.game=game;result.pageErrors=errors;results.push(result);
   console.log(JSON.stringify({game,records:result.records,invalidAnswers:result.invalidAnswers.length,standardPreflight:result.standardPreflight.ok,routeIssues:result.routeIssues.length,routeObjectiveMismatches:result.routeObjectiveMismatches.length,bossIssues:result.bossIssues.length,pageErrors:errors}));
   await context.close();

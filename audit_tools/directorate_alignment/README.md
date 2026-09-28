@@ -115,7 +115,8 @@ subsets of used/recent boss stages. Its sole reviewed cross-skill return,
 profit-center 4018 to 7029, explicitly compares cost/profit accountability with
 decision rights and cross-unit effects. It also checks 120 static limited-mode
 decks, 120 actual mixed-answer adaptive runs and 60 balanced Quiz runs across
-10/15/20 lengths. Trial remains disabled; excluded Legendary economics are not
+the supported Quiz presets 5/10/15 (Fading Fortune/Risk & Reward remain
+10/15/20). Trial remains disabled; excluded Legendary economics are not
 certified merely because the modes run.
 
 `campaign-check.mjs` samples 40 seeded 30-room Standard traversals for each of
@@ -130,3 +131,53 @@ The independent supply/demand SVG and payoff tables contain new practice
 structures. No private source file is required to apply the patches. Run the
 patch again after publishing; conflicts require content review, not blind
 replacement. Faculty authoring sources remain the preferred long-term home.
+
+## Directorate integration closeout — 2026-09-28
+
+The authoritative private closeout is
+`_private_course_sources/eco6655/alignment-audit/DIRECTORATE-CLOSEOUT-REVIEW.md`,
+with `DIRECTORATE-FINAL-INVENTORY.md`, `directorate-closeout-verification.json`
+and detailed evidence in `closeout-2026-09-28/`. Dated September 27 semantic
+certificates remain authoritative for content; this pass changes no bank.
+
+Replay order is content → continuation → Cost → Market → Strategy → Agency →
+closeout, plus the existing package asset/text checks. `closeout-patch.json`
+preserves complete Standard boss triples under partial history in Cost, Market
+and Strategy; removes 300 stale limited-mode references; guards Strategy's
+intentionally absent victory audio; dispatches Legendary before acquiring its
+shared completion lock; and corrects the hub's Cost artifact path. Nine explicit
+final pool orders make combined replay reproduce the certified files byte for
+byte. The layout step checks exact membership and cannot change record content.
+These narrow runtime corrections supersede the earlier engine-fix summary above.
+
+Validation (Python and Node on PATH; Playwright's package directory supplied in
+`PLAYWRIGHT_MODULE`; installed Edge required):
+
+```text
+python audit_tools/directorate_alignment/apply_patch.py --validate
+node audit_tools/directorate_alignment/runtime-check.mjs --standard-only --closeout
+node audit_tools/directorate_alignment/closeout-browser.mjs
+node audit_tools/directorate_alignment/closeout-modes.mjs
+node audit_tools/directorate_alignment/closeout-recovery.mjs
+node audit_tools/directorate_alignment/closeout-resources-visuals.mjs
+node audit_tools/directorate_alignment/closeout-accessibility.mjs
+node audit_tools/directorate_alignment/closeout-isolation.mjs
+```
+
+Set `AUDIT_OUTPUT_DIR` to the private evidence directory for `runtime-check.mjs`;
+the closeout harnesses default there. `AUDIT_GAME` scopes the browser harnesses.
+`AUDIT_PROFILES` can select Standard profiles; those results replace only the
+matching game/profile records in the evidence file. Full Standard tests use
+real answers, transitions, completion, clipboard, and reloads, with an accelerated
+browser clock. Recovery-family tests use explicit state fixtures then real
+answers; they supplement, rather than replace, fresh end-to-end campaigns.
+Network traffic outside the local server is intercepted. No student account or
+Canvas submission is used: clipboard content is pasted into an external plain
+text field. External instructional-resource availability is outside this local
+mapping test. Results, screenshots, and source material must remain private.
+
+Optional modes are checked at actual supported lengths: Quiz 5/10/15 presets;
+Fading Fortune, Risk & Reward, and enabled Trial by Graph 10/15/20. Unlimited
+is explicitly ended after 40 answers; Timed is allowed to expire; Exam, Score,
+and Legendary finish their complete runs. Runtime success is not full Legendary
+semantic certification, psychometric validation, or evidence of learning gains.
