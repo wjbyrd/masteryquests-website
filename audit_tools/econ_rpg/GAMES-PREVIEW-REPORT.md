@@ -24,3 +24,13 @@ This area contains Takeout Taco: Lunch Rush, GDP Live, CPI Live, Labor Force Fil
 Screenshots and machine-readable results are kept in ignored `tmp/games-preview/local/` and `tmp/games-preview/live/`. Desktop and phone hub layouts were visually inspected.
 
 Local and live results: **24/24 game launch, interaction, and return checks passed** (12 games at each width); **233/233 runtime files returned HTTP 200**. The live indexing header and absence of a collection link on the public Games page were verified. No captured page errors or failed asset responses occurred. These are navigation/playability smoke checks, not new full completion playthroughs of every game.
+
+## September 29 access restoration
+
+A later deployment, `582e34f5-16a3-4c2b-b130-728830b62600`, replaced the staged asset set with repository-root files. Both unlisted preview areas returned 404 while the public Games page remained available. Root-only report files were reachable, confirming that this was the wrong publication directory.
+
+Redeployed the complete generated site as version `378d4b80-b358-4253-8baf-29be50c1a682`, preserving Worker bindings and variables. Live checks again passed all 24 game launch/interaction/return cases and all 233 runtime asset requests. The separate Signal House preview returned HTTP 200; the collection hub and Signal House title screen were also verified in the in-app browser.
+
+`wrangler.jsonc` now runs `node audit_tools/public_site_publication/build-dist.mjs` before deployment and retains `assets.directory: "./dist"`. Publication tests verify these settings and that other runtime configuration remains unchanged.
+
+The separate Cloudflare automatic-build configuration could not yet be inspected: the CLI credentials return 403 for Workers Builds settings and the dashboard requires sign-in. Ensure its deployment command respects this configuration, for example `npx wrangler deploy --config wrangler.jsonc --keep-vars`, with no `--assets .` override. The repository build hook does not override a conflicting command-line asset directory. Dashboard verification remains pending sign-in.

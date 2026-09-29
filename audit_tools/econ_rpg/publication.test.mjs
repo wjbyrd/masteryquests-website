@@ -37,6 +37,12 @@ test('staging confines the authorized 12-game library to its unlisted namespace'
     if (/\.(png|webp)$/i.test(file)) assert.equal(artHashes.has(createHash('sha256').update(readFileSync(file)).digest('hex')), false, 'Approved art must not publish under any name');
   }
 });
-test('unrelated games, Composer, telemetry and Cloudflare configuration are untouched', () => {
-  execFileSync('git', ['diff', '--exit-code', 'HEAD', '--', 'index.html', 'games', 'play', 'build', 'server', 'assets', 'wrangler.jsonc', '.assetsignore', ':(exclude)games/index.html', ':(exclude)assets/css/site.css', ':(exclude)assets/images/games/**'], { cwd: root, stdio: 'pipe' });
+test('deployment rebuilds the complete site and preserves unrelated runtime configuration', () => {
+  const config=JSON.parse(readFileSync(path.join(root,'wrangler.jsonc'),'utf8'));
+  assert.equal(config.build.command,'node audit_tools/public_site_publication/build-dist.mjs');
+  assert.equal(config.assets.directory,'./dist');
+  const baseline=JSON.parse(execFileSync('git',['show','HEAD:wrangler.jsonc'],{cwd:root,encoding:'utf8'}));
+  delete config.build; delete baseline.build;
+  assert.deepEqual(config,baseline,'Only the mandatory build step changes');
+  execFileSync('git', ['diff', '--exit-code', 'HEAD', '--', 'index.html', 'games', 'play', 'build', 'server', 'assets', '.assetsignore', ':(exclude)games/index.html', ':(exclude)assets/css/site.css', ':(exclude)assets/images/games/**'], { cwd: root, stdio: 'pipe' });
 });

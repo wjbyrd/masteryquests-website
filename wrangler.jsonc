@@ -2,6 +2,9 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "masteryquests-website",
   "compatibility_date": "2026-08-07",
+  "build": {
+    "command": "node audit_tools/public_site_publication/build-dist.mjs"
+  },
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS",
