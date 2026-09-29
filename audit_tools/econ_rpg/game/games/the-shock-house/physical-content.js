@@ -20,6 +20,6 @@ export const BUDGET_SLIPS=[
 export const PAPER_COPY={
  production:{brand:'ALDER WORKS / DISPATCH',number:'FORM P-21',foot:'Customer orders: still available.'},
  national:{brand:'NATIONAL STATISTICAL REGISTER',number:'MATCHED MONTHLY PERIODS',foot:'Output: constant prices. Inflation: equal monthly intervals.'},
- index:{brand:'ARCHIVE / RADIO TUNING GUIDE',number:'SERVICE COPY',foot:'First dispatch: employee notice. Later dispatches: emergency invoices.'},
+ index:{brand:'ARCHIVE / RADIO TUNING GUIDE',number:'SERVICE COPY',foot:'Dispatch dates: employee notice, shipping tag, machine shift rack.'},
  stock:{brand:'ALDER WORKS / STORES',number:'BIN 06',foot:'Unused input may be stored. Accept only jobs worth their added costs.'}
 };

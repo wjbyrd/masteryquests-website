@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="panorama.css">
   <link rel="stylesheet" href="illustrated.css">
   <link rel="stylesheet" href="recovery.css">
+  <link rel="stylesheet" href="finish.css">
+  <link rel="stylesheet" href="case-finish.css">
+  <link rel="stylesheet" href="discovery-finish.css">
   <script type="module" src="game.js"></script>
 </head>
 <body>
@@ -20,6 +23,12 @@
   <main id="main" tabindex="-1"></main>
   <p id="announcement" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
   <dialog id="dialog" aria-labelledby="dialog-title"></dialog>
+  <script>
+    if (location.protocol === 'file:') {
+      document.querySelector('#main').innerHTML = '<section style="max-width:640px;margin:12vh auto;padding:28px;line-height:1.7"><h1>Open The Shock House</h1><p>This game runs through the local preview. Opening the HTML file directly prevents the browser from loading it.</p><p><a href="http://127.0.0.1:4179/games/the-shock-house/?experience=illustrated" style="display:inline-block;padding:12px 20px;background:#d9c792;color:#172e32;border-radius:4px;font-weight:bold">Open the game</a></p><p>Choose Continue to resume your saved investigation. If the preview is unavailable, start the local server using the instructions in README.md.</p></section>';
+      document.querySelector('[data-action="settings"]').hidden = true;
+    }
+  </script>
   <noscript><p class="notice">This escape game needs JavaScript. Enable it to begin your investigation.</p></noscript>
 </body>
 </html>

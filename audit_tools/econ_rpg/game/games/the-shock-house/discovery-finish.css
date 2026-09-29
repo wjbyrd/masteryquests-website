@@ -1,0 +1,108 @@
+/* Preserve artwork geometry: every direct crop keeps its source proportions. */
+.asset-plate{object-fit:cover}
+.exploration .room-art,.escape-scene .room-art{aspect-ratio:3/2}
+.exploration .scene,.escape-scene .room-art{width:min(100vw,150dvh)}
+.mini-scene.proportional-scene{aspect-ratio:var(--scene-ratio);width:min(100%,calc((100dvh - 100px)*var(--scene-ratio)));min-height:0;height:auto;margin-inline:auto}
+.mini-scene.proportional-scene>.asset-plate{object-fit:fill}
+/* Atlas cells remain square, and individual paper/book assets use contain. */
+.painted-object{background:none!important;container-type:size;display:grid;place-items:center}
+.painted-object .sprite-art{display:block;width:min(100cqw,100cqh);height:min(100cqw,100cqh);background:url('assets/illustrated/object_atlas.webp') var(--sprite-x) var(--sprite-y)/300% 300% no-repeat}
+.painted-object.sprite-book .sprite-art{width:100%;height:100%;background:url('assets/illustrated/register_book.webp') center/contain no-repeat}
+.painted-object.paper-unfolded .sprite-art{width:100%;height:100%;background:url('assets/illustrated/paper_unfolded.webp') center/contain no-repeat}
+.painted-object.sprite-postcard{clip-path:none}.sprite-postcard .sprite-art{clip-path:inset(0 0 9% 0)}
+.printed-evidence{margin:0 auto;width:min(100%,1100px)}
+.grocery-receipt{width:min(92vw,600px);padding:clamp(35px,7vw,75px);font:22px/1.65 Georgia,serif}
+.grocery-receipt header{font:700 18px/1.5 Georgia,serif;border-bottom:2px solid #3a4337;padding-bottom:20px}
+.grocery-receipt h2{font-size:34px;margin-block:28px}
+.grocery-total{display:flex;justify-content:space-between;align-items:center;gap:20px;border-block:1px solid #74715c;padding:24px 0;margin:30px 0}
+.grocery-total strong{font-size:38px}.grocery-receipt footer{font-size:18px}
+.grocery-records{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.grocery-records .grocery-receipt{width:100%;padding:40px 12%;font-size:20px}
+.shipping-record{width:min(92vw,670px);padding:75px 12%;text-align:center}
+.shipping-record header{font:700 22px/1.5 Georgia,serif;letter-spacing:.08em}
+.shipping-record h2{font-size:42px;margin-block:30px}
+.shipping-record p{font-size:24px;line-height:1.5;margin:0}
+.printed-evidence>img{display:block;width:100%;height:auto;aspect-ratio:3/2}
+.document-transcript{padding:16px 24px;background:#111c23;color:#eee0c5;font:18px/1.6 Georgia,serif}
+.document-transcript summary{cursor:pointer;min-height:44px;display:list-item;padding:8px 0}
+.document-transcript p{color:inherit;margin:12px 0}
+.news-story{left:8%;right:8%;top:34%;text-align:center;text-shadow:0 2px 8px #000}
+.news-broadcast>.asset-plate{filter:brightness(.62) contrast(.9)}
+.news-broadcast header,.news-broadcast footer{color:#f6f4e9}
+.show-objects .component-target,.show-objects .environment-object{border:1px solid #dac58a99!important;background:#e6d49d08!important}
+.component-target:focus-visible,.environment-object:focus-visible{outline:3px solid #ffe3a0!important;outline-offset:3px;border-color:#172027!important;box-shadow:0 0 0 6px #101b22!important}
+@media(max-width:750px){
+ .grocery-records{grid-template-columns:1fr}.shipping-record{padding:55px 12%}.shipping-record h2{font-size:34px}.shipping-record p{font-size:22px}
+ .mini-scene.proportional-scene{width:100%;max-width:calc((100dvh - 130px)*var(--scene-ratio))}
+ .news-story{left:8%;right:8%;top:40%;background:none}
+ .painted-object.sprite-book .sprite-art{background-image:url('assets/illustrated/register_book-768.webp')}
+ .painted-object.paper-unfolded .sprite-art{background-image:url('assets/illustrated/paper_unfolded-768.webp')}
+}
+/* Workshop records follow the paper's safe area and grow with their contents. */
+.mini-scene.stock-scene,.mini-scene.search-schedule{height:auto;aspect-ratio:auto;min-height:0;padding:30px 4%;display:flex;flex-direction:column;gap:25px;overflow:hidden}
+.stock-scene>.asset-plate,.search-schedule>.asset-plate{filter:brightness(.48);object-fit:cover}
+.stock-label,.staffing-comparison{position:relative;inset:auto;width:100%;max-width:960px;margin:0 auto;padding:50px 10%;border:0;box-shadow:none;filter:drop-shadow(0 8px 12px #0007);background:transparent url('assets/illustrated/paper_unfolded.webp') center/125% 100% no-repeat;color:#2c302a;font:20px/1.5 Georgia,serif}
+.stock-label{order:-1;max-width:800px}
+.stock-label header,.staffing-comparison header{font:14px/1.5 'Courier New',monospace;letter-spacing:.07em}
+.stock-label h3,.staffing-comparison h3{font:700 30px/1.25 Georgia,serif;margin:18px 0 22px}
+.stock-label .stock-definition{margin-bottom:22px;font-style:italic}
+.stock-label dl>div{gap:24px;padding:12px 0}.stock-label dd{text-align:right}
+.staffing-dates{gap:30px}.staffing-dates strong{font-size:26px}
+.staffing-comparison p{margin:20px 0}.staffing-comparison footer{padding-top:20px}
+.worker-card{background:linear-gradient(100deg,#d6c59b,#eee0bb 45%,#cfbb93);color:#31372d;border:1px solid #97845f;box-shadow:1px 2px 2px #46301c44;border-radius:0;font:17px/1.5 'Courier New',monospace}
+.worker-card.withdrawn{border:1px solid #94866e;background:#796f5520;color:#75664d;box-shadow:inset 0 2px 3px #4a3c2622}
+/* Each sprite represents exactly one piece, in storage and on the work orders. */
+.material-token{display:block;flex:0 0 auto;width:76px;height:40px;background:transparent url('assets/illustrated/steel_blank-384.webp') center/contain no-repeat;border:0;border-radius:0;box-shadow:none;filter:drop-shadow(0 5px 3px #0008)}
+.material-token::before{content:none}
+.material-pieces{flex-wrap:wrap;gap:12px;min-height:64px}
+.stock-blanks{position:relative;z-index:4;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px 30px;width:min(100%,640px);margin:0 auto 20px;justify-items:center}
+.stock-blanks .material-token{width:100%;height:auto;aspect-ratio:2.5}
+.bin-materials{position:absolute;z-index:3;inset:22% 18% 18%;display:grid;place-items:center}
+.bin-materials .material-pieces{display:grid;grid-template-columns:1fr 1fr;gap:15px;width:100%}
+.bin-materials .material-token{width:100%;height:auto;aspect-ratio:2.5}
+.type-orders .workbench{background:#24211b url('assets/illustrated/instrument_backing.webp') center/100% 100%;border:0;border-radius:4px;padding:45px 5%;box-shadow:0 12px 30px #0008}
+.material-store{padding:10px 0 24px;border-bottom:1px solid #b5a27c80}
+.material-store>span{font:700 18px/1.5 Georgia,serif;letter-spacing:.06em}.material-store small{font:18px/1.5 Georgia,serif}
+.work-orders{gap:22px}.work-order{padding:28px 20px}.work-order h3{font-size:24px;min-height:65px}.work-order>small{font-size:13px;line-height:1.6}
+.work-order .paper-table{font:16px/1.5 Georgia,serif}.work-order .paper-table td{font-weight:bold}
+.allocation{min-height:110px;width:100%;margin-top:22px}.allocation small{font:16px/1.5 Georgia,serif}
+.allocation-sockets{gap:12px}.allocation-sockets>i:not(.material-token){width:76px;height:40px;border:1px solid #8e8063;border-radius:2px;background:#73664c19;box-shadow:inset 0 3px 5px #3f332e33}
+.allocation[aria-pressed=true] .material-token{animation:none}
+/* A seven-stop metal carriage with a dark grip replaces the flat slider. */
+.policy-console .lever-mechanism{max-width:530px;border:1px solid #a3906c;border-radius:3px;padding:26px 28px;background:linear-gradient(#0a1011b3,#192322b3),url('assets/illustrated/instrument_backing.webp') center/cover;box-shadow:inset 0 1px 0 #d5c09366,0 5px 12px #0007}
+.lever-mechanism .engraving{font-size:18px;letter-spacing:.06em}
+.lever-mechanism input{appearance:none;width:100%;height:86px;margin:8px 0 0;background:transparent;cursor:ew-resize;border-radius:4px}
+.lever-mechanism input::-webkit-slider-runnable-track{height:16px;border:1px solid #ad9973;border-radius:3px;background:linear-gradient(#030505 35%,#141c1b 50%,#393b30 65%,#a39471 95%);box-shadow:0 2px 3px #000,inset 0 4px 4px #000}
+.lever-mechanism input::-webkit-slider-thumb{appearance:none;width:44px;height:62px;margin-top:-24px;border:2px solid #ad8f58;border-radius:19px 19px 13px 13px;background:linear-gradient(90deg,#a28a5866,transparent 20% 75%,#0009),repeating-linear-gradient(0deg,transparent 0 6px,#bba57a44 7px,#0009 8px),linear-gradient(100deg,#262925,#55584a 44%,#171e1d);box-shadow:inset 2px 2px 2px #e5d09a88,inset -3px -2px 4px #000,3px 6px 6px #0009}
+.lever-mechanism input::-moz-range-track{height:16px;border:1px solid #ad9973;border-radius:3px;background:linear-gradient(#030505 35%,#141c1b 50%,#393b30 65%,#a39471 95%);box-shadow:0 2px 3px #000,inset 0 4px 4px #000}
+.lever-mechanism input::-moz-range-thumb{width:40px;height:58px;border:2px solid #ad8f58;border-radius:19px 19px 13px 13px;background:linear-gradient(90deg,#a28a5866,transparent 20% 75%,#0009),repeating-linear-gradient(0deg,transparent 0 6px,#bba57a44 7px,#0009 8px),linear-gradient(100deg,#262925,#55584a 44%,#171e1d);box-shadow:inset 2px 2px 2px #e5d09a88,inset -3px -2px 4px #000,3px 6px 6px #0009}
+.lever-detents{display:flex;justify-content:space-between;margin:0 22px 12px;pointer-events:none}.lever-detents i{height:8px;width:1px;background:#bfa982}.lever-detents i:nth-child(4){height:13px;background:#efe0b9}
+.lever-labels{font:13px/1.5 'Courier New',monospace;color:#eadabb;gap:8px}.lever-labels output{color:#fff0cc}
+/* Remaining mechanical selectors use the same engraved dial faces. */
+.household-balance .balance-catch{background:#252d29 url('assets/illustrated/instrument_backing.webp') center/cover;border:1px solid #8c7856;border-radius:3px;padding:12px 18px;color:#f0e0bf;box-shadow:0 3px 7px #0005;gap:12px;text-align:left;font:18px/1.4 Georgia,serif}
+.balance-catch>span:first-child{flex:1}.balance-catch>.calibrated-gauge{position:relative;width:115px;aspect-ratio:1;flex:none}.balance-catch>strong{font:28px Georgia,serif}
+.adoption-connectors .recovery-knob{background:transparent!important;border:0!important;box-shadow:none!important;color:#30362e;padding:0;gap:6px}
+.adoption-connectors .calibrated-gauge{position:relative;display:block;width:175px;max-width:100%;aspect-ratio:1}
+.cost-instrument .cost-wheel{background:none!important;border:0!important;border-radius:0;width:230px;height:auto;min-height:0;padding:0;color:inherit;gap:8px}
+.cost-wheel>.calibrated-gauge{position:relative;display:block;width:210px;aspect-ratio:1}
+.cost-wheel>strong{font:26px/1.4 'Courier New',monospace}
+/* Ordinary actions use a quiet material finish, not a miniature scene or panel. */
+.brass-latch{background:#d3c096;border:1px solid #8c7148;border-radius:3px;color:#233747;text-shadow:none;box-shadow:inset 0 1px 1px #fff1cc66,0 2px 4px #34271855;font:700 18px/1.4 Georgia,serif}
+.brass-latch:hover{background:#e0cea6;border-color:#705634;color:#233747}
+.brass-latch:active{background:#c6b184;transform:translateY(1px);box-shadow:inset 0 1px 3px #59452855}
+.inspection-object .object-reorder button,.inspection-object .remove-pin{background:#303833;color:#eee1c7;border:1px solid #796c55;border-radius:3px;box-shadow:0 2px 3px #0005;min-width:44px;min-height:44px}
+.radio-operation select{background:#232b27;border:1px solid #a58d64;border-radius:3px;color:#f0dfbb;font-family:Georgia,serif;box-shadow:inset 0 2px 4px #0007}
+.radio-operation select option{background:#202923;color:#f0dfbb}
+.wax-seal{background:radial-gradient(ellipse at 35% 25%,#a66345,#733f2f 65%,#43291f);border:5px double #aa7450;color:#eed0a0;text-shadow:0 1px 1px #3f2318;box-shadow:inset 1px 2px 3px #edb07366,inset -2px -3px 3px #29161099,2px 4px 5px #0008}
+.seal-socket .wax-seal{transform:none;opacity:1;box-shadow:inset 1px 2px 3px #edb07366,2px 4px 5px #0008}.seal-socket .wax-seal.seated{animation:none;transform:none;box-shadow:inset 0 3px 5px #29161099,0 1px 1px #eed4a488}
+.trial-lights span::before{background:radial-gradient(circle at 35% 25%,#7b7153,#292e23 65%);border:1px solid #9b845a;box-shadow:0 1px 3px #000}.trial-lights .lit::before{background:radial-gradient(circle at 35% 25%,#fff7ba,#c4a55d 60%,#766335);box-shadow:0 0 7px #e7c67d88}
+@media(max-width:900px){.work-orders{grid-template-columns:1fr}.work-order{max-width:560px;width:100%;margin:auto}.work-order h3{min-height:0}.work-order .paper-table{font-size:18px}}
+@media(max-width:750px){
+ .mini-scene.stock-scene,.mini-scene.search-schedule{min-height:0;padding:20px 0}
+ .stock-label,.staffing-comparison{padding:35px 10%;font-size:18px}.stock-label h3,.staffing-comparison h3{font-size:25px}.stock-label header,.staffing-comparison header{font-size:12px}.stock-label dl>div{display:block}.stock-label dd{text-align:left;margin:4px 0}.stock-label p{font-size:18px}
+ .staffing-comparison{padding-top:60px;padding-bottom:70px}.staffing-dates{grid-template-columns:1fr;gap:25px}.staffing-dates strong{font-size:25px}.worker-cards{gap:7px}.worker-card{font-size:16px}.staffing-comparison footer{font-size:18px}
+ .stock-blanks{gap:15px;width:85%;grid-template-columns:repeat(2,minmax(0,1fr))}
+ .type-orders .workbench{padding:35px 7%;background-size:cover}.material-store>span{font-size:16px}.material-store small{font-size:17px}.material-pieces{max-width:290px;margin:15px auto;gap:12px}.material-token{width:68px;height:35px}.work-order{padding:28px 20px}.work-order>small{font-size:13px}
+ .policy-console .lever-mechanism{padding:23px 14px}.lever-mechanism .engraving{font-size:16px}.lever-labels{font-size:11px}
+ .household-balance .balance-catch{padding:10px;font-size:16px;gap:5px}.balance-catch>.calibrated-gauge{width:95px}.balance-catch>strong{font-size:23px}
+}

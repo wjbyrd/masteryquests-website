@@ -25,7 +25,7 @@ const key='mastery-quests.shock-house.v1';
    for(const id of ['output-read','work-read','prices-read'])assert.equal(markers.filter(x=>x===id).length,1);
    const knob=page.getByRole('button',{name:'Upper tuning knob: next channel'});await knob.focus();await page.keyboard.press('Enter');await channel(1,'200 → 184');
    assert.equal(await page.locator('.mini-scene [title]').count(),0);
-   await page.locator('.mini-scene .asset-plate').evaluate(img=>img.decode());
+   await page.locator('.mini-scene .asset-plate').evaluateAll(imgs=>Promise.all(imgs.map(img=>img.decode())));
    fs.mkdirSync('tmp/shock-house/television',{recursive:true});await page.screenshot({path:`tmp/shock-house/television/${width}.png`});
    assert.deepEqual(errors,[]);await page.close();
   }

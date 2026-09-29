@@ -1,84 +1,111 @@
-# The Shock House — puzzle flow
+# The Shock House — search, puzzle, and economic graphs
 
-**Author / instructor spoilers below.** Players see the named economic explanation only after unlocking the exit and stepping outside.
+This revision preserves the illustrated continuous house, five camera positions, invisible accessible hotspots, nested close-ups, tactile controls, three-level hints, local saves, and two economic reveals. Exploration order is not the order of the economic events.
 
-## Continuous interior and discovery
+## Search graph: broad, available immediately
 
-The five legacy room IDs are now camera positions only; no room names or navigation doors appear. Left/right arrows, keyboard arrows, and touch swipes cycle exit → household furniture → workbench → media shelf → utility fittings → exit. All positions are available from the start. The policy dependency locks the cabinet shutter, not camera access. Back goes to the previous close-up.
+All five camera positions can be visited from the beginning. The household, workbench, TV, register, radio, and exit can be examined before their mechanisms can be completed. Inside objects, normal search steps still matter: move groceries, open the pay drawer, read the counter, pull a book, inspect a shipping tag. Optional outlines and keyboard focus expose the same targets without permanent labels.
 
-| Discovery | Physical search | Quiet observation |
-|---|---|---|
-| Food | Bag → move jar and bread → crumpled receipt → unfold; separately peel newer labels | March $600; same basket in April $800 |
-| Income | Desk → top drawer → wallet → open → unfold stubs | Same hours; take-home pay $3,000 / $3,200 |
-| Housing and energy | Letter rack → move postcard → unfold notice; meter → lift cover → read | Rent $1,400 / $1,500; same 500 utility units cost $200 / $500 |
-| Budget mechanism | Books → pull notebook → open pages | Latch compares the household accounts |
-| Firm costs | Filing tray → move catalogue → pull folder → compare dated deliveries | $18 / $27 / $27 unit cost |
-| Production | Machine → lift counter cover → inspect memory | 1,200 / 1,200 / 900; orders still available |
-| Material | Bin → lift lid → count remaining spools | Six measures; $18 each; two per job |
-| National facts | Television → separately select three retained bulletins | Real output 200 / 184; unemployment 5% / 8%; prices 100 / 108 |
-| National synthesis | After the work plan, records → pull narrow register → compare bulletins → hidden clasp | Connect existing household, costs, and staffing evidence; set the three directions |
-| Cause | Receiver → service flap → inscription; power knob → tune dates | Upstream terminal interruption connects earlier observations |
+Useful unresolved discoveries include pay before the ledger, machine memory before the cost rails, TV reports before national synthesis, and the radio tuning inscription before power. Household and workshop clues can accumulate in any order. Completing the cost rails requires employee badge 047 from the household drawer.
 
-Raw fragments and moved-object markers persist in `inspectedObjects`. The satchel lets players revisit discovered observations. First-time players cannot access the national comparison until they have examined the separate bulletins and completed the work plan; older saves retain their already discovered register. Clocks, frames, a coat, tools, plants, and ordinary books add a small amount of ambient interaction. Hints first locate unfinished searches, then return to the mechanism’s three-level reasoning hints.
+## Mission 1 puzzle graph: badge access and evidence convergence
 
-The economic mechanism specifications below retain their historical area names as author references; those names are not player navigation.
-
-```text
-Residence documents → BUDGET DRAWER ── badge ──→ INVOICE CABINET
-                            │                        │
-                 household ledger          cost record / press release
-                            │                        │
-                            │                WORK-ORDER PRESS
-                            │                        │
-                            └──────────┬──────── staffing record
-                                       ↓
-                         NATIONAL INDICATOR WALL
-                                       │ power
-                                       ↓
-dated notice from drawer ─────→ BROADCAST RECEIVER ←──── invoice dates / $27
-                                       │ room pass / cause record
-                                       ↓
-                            POLICY TRADEOFF MACHINE
-                                       │ two-seal record
-                                       ↓
-                             HALL CAUSAL MECHANISM
-                                       ↓
-                         Escape → reveal → transfer → results
+```mermaid
+flowchart TD
+  Pay[Wallet: pay] --> Household[Three household balance catches]
+  Food[Groceries: same basket] --> Household
+  Fittings[Utility meter + rent notice] --> Household
+  Household --> Ledger[Household condition record]
+  Household --> Date[March 14 interruption notice]
+  Household --> Badge[Inspect and collect employee badge 047]
+  Badge --> Costs[Arrange dated cost records]
+  Inputs[Cabinet: dated cost records] -. corroborates .-> Costs
+  Counter[Machine counter memory] -. corroborates .-> Costs
+  Costs --> CostPlate[Unit-cost plate: 18 to 27]
+  CostPlate --> Orders[Allocate material to A and C]
+  Bin[Six standardized steel blanks] --> Orders
+  Orders --> Shifts[Counter 900 / staffing 90 / two steel blanks stored]
+  Ledger --> National[Register synthesis: output down / unemployment up / prices up]
+  CostPlate --> National
+  Shifts --> National
+  TV[Early TV reports or register figures] --> National
+  National --> Power[Radio power]
+  Power --> Radio[Three archived dispatches]
+  Date --> Radio
+  CostPlate --> Radio
+  Guide[Radio service inscription: cost times 10] --> Radio
+  Shipping[Workbench shipping tag: March 16] --> Radio
+  Rack[Machine shift rack: March 21] --> Radio
+  Radio --> Cause[Upstream input disruption]
+  Cause --> Policy[Tighter and looser policy trials + both seals]
+  Policy --> Exit[Five-artifact causal sequence]
+  CostPlate --> Exit
+  Shifts --> Exit
+  National --> Exit
 ```
 
-| Puzzle | Prerequisites / action | Output and economic fact | Used later |
-|---|---|---|---|
-| 1. Budget drawer · Residence | Inspect pay envelopes, itemized receipts, mantel bills, and notebook. Drag slips, or select then place, into March entries: pay 3000, rent 1400, food 600, utilities 200; April: 3200, 1500, 800, 500. Release the physical drawer latch. | Remainder falls 800 → 400 although pay rises. Household ledger, employee badge 047, March 14 interruption notice. | Badge → cabinet. Ledger → national wall. Date → radio several puzzles later. |
-| 2. Invoice cabinet · Workshop | Insert badge. Read invoices and production log. Move invoices to matching rails: March 12, March 16, March 21. | Unit cost 18 → 27 before production falls 1200 → 900. Cabinet releases press; emergency invoice is evidence. | Cost record → wall and exit. Latest cost 27 × 10 → 270 kHz. Later invoice dates → receiver. |
-| 3. Work-order press · Workshop | Cabinet released. Inspect input store. Place two material tokens on each of orders A and C; leave B empty. Pull the press lever. | A earns 80 for 54 additional cost; C earns 72 for 54. B earns only 48 for 54. Store two of six measures. Revised plan reduces staffing 120 → 90 and output 1200 → 900. Past lease is sunk. | Shift sheet → wall and exit. Scarcity, marginal decisions, opportunity cost, and employment response emerge through allocation. |
-| 4. National indicator wall · Archive | Connect household, cost, and staffing records. Read national register. Rotate output DOWN, unemployment UP, prices UP. | National real output 200 → 184, unemployment 5% → 8%, price index 100 → 108; monthly inflation 2% previously → 8% now. Indicator plate collected. Receiver powers on. | Plate → exit. National figures substantiate the combined macro pattern rather than relying on local anecdotes. |
-| 5. Broadcast receiver · Archive | Wall powered. Index: frequency is ten times latest unit cost. Notice supplies first date; emergency invoices supply next two. Drag/tap the physical knob or turn it with keyboard arrows to 270 kHz. Keep March 14, March 16, March 21 dispatches in order. | Terminal storm disruption → emergency routing costs → manufacturer cuts despite available orders. Cause clipping and Control Room pass. | Pass opens Control Room. Broadcast clippings begin final causal chain. |
-| 6. Policy machine · Control Room | Receiver pass. Move lever at least once tighter and once looser. Place living-cost and work/output objective seals; acknowledge tradeoff. | Tighter: inflation pressure down, employment/output conditions worse. Looser: work/output supported, inflation pressure worse. No setting repairs the input network. Two-seal record. | Final artifact → Hall. Both objectives are necessary; no policy is graded as magically correct. |
-| 7. Exit mechanism · Hall | All previous mechanisms complete. Place five event tiles; reorder using arrows. Each tile cites its supporting records. | Storm disrupts input deliveries → production costs rise → firms cut production and shifts → national output falls while unemployment and prices rise → policy faces an inflation–employment tradeoff. The door opens. | Reports are retrospective evidence. The puzzle orders economic causes and consequences, not document publication or discovery. Reveals the negative aggregate supply shock and SRAS shifting left with AD unchanged. |
+### Household
 
-## Instructional close
+Read the pay envelopes, both separate same-basket grocery receipts, utility account lying on the writing desk, and rent notice. The writing desk's lower drawer is the only entry to the household notebook and balance catches; the bookshelf is an atmospheric inspection. The notebook summarizes March/April pay ($3,000/$3,200), essentials ($2,200/$2,800), and remainder ($800/$400). Rotate three balance catches: pay UP, essentials UP, remainder DOWN. Release the drawer. There is no eight-slip clerical entry. The register supplies no national figures: all three television bulletins must be discovered before the indicator mechanism can be completed.
 
-Completing this first case also unlocks **The Second Harvest**, a separate positive aggregate supply mission. See [MISSION_2.md](MISSION_2.md) for its five-step dependency chain. The coin, photograph, tram ticket, and gardening journal now activate only in that second mission; earlier optional interactions are removed from the first case.
+The illustrated drawer contains household evidence, the March 14 interruption notice, and employee badge 047. Inspect each item separately, then choose “Place in satchel”. Closing a preview does not collect it; uncollected items remain through reloads. The badge must be inserted to release the workbench cost rails. Earlier saves retain all previously collected rewards and completed workshop puzzles.
 
-1. **What happened?** Recaps the records the player recovered and the causal chain they assembled.
-2. **Why did it happen economically?** Names the negative aggregate supply shock, higher costs, reduced SRAS, falling output, higher prices/inflation, weaker employment, and policy tradeoff. A labeled AD-AS diagram shows the change. Distinguishes nominal income from purchasing power and a price-level change from indefinite inflation acceleration.
-3. **Can you use it somewhere else?** One forecast panel: widespread technology improvement lowers costs with AD unchanged. Set SRAS right/increase, output up, price level down. Retry feedback explains the reasoning without punitive scoring.
+### Workshop
 
-Then show escaped status, elapsed time, hints opened, seven recovered evidence records, seven solved mechanisms, and optional exploration/first-sequence/no-explicit-hint achievements. Elapsed time includes breaks and is not a mastery score.
+Click the machine counter or the separate time-card rack directly from the wide workshop view. The counter compares regular, committed, and revised production; the rack shows 120 workers falling to 90, with three groups of ten removed. Insert badge 047 and place the dated cost records in chronological order: March 12, March 16, March 21. Each movable record includes its date, input cost, other cost, and production total. A correct arrangement succeeds without extra visits to hidden source displays. The tray holds one March 16 shipping tag needed later; opening it records the date automatically.
 
-## Nonlinear and recovery paths
+Keep the existing scarce-input allocation: six steel blanks, two per job; A adds $80 for $54, B $48 for $54, C $72 for $54. Allocate A and C only. The released mechanism visibly shows production 1,200 → 900, staffing 120 → 90, and two steel blanks returned. The input bin also retains only two steel blanks afterward. The nearby shift rack supplies March 21 independently of the household.
 
-- The locked Hall mechanism is inspectable immediately; unknown artifacts remain empty.
-- Workshop and Archive documents are readable before dependent puzzles unlock. Missing connections point back to meaningful rooms.
-- The receiver shows an unpowered state until the wall is complete; irrelevant stations/dates have harmless transcripts.
-- Wrong budgets, invoice orders, work plans, indicators, broadcast sequences, and exit sequences remain editable. The receiver’s clear control never deletes its source broadcasts.
-- A used badge leaves the Items tray only once the cabinet is solved; the dated notice remains in Evidence. The room pass is consumed on first entry. All evidence remains inspectable.
-- Hints follow the current unsolved close-up, then the current room, then the next remaining mechanism. Solving a puzzle closes its hint.
-- Saves include partial input values, recorded dispatches, both policy trials, and final artifact positions. Completed games resume into the saved ending stage.
-- New Investigation confirms replacement; cancel and Escape retain the existing run. Storage errors show a readable fallback instead of stopping the game.
+### Register, radio, and policy
 
-## Physical interaction pass
+Opening the radio service flap reveals one readable service card and immediately records its clue. The card combines the tuning formula, the three date-source locations, and the power requirement; there is no second inscription click. Viewing the filing tray likewise records its visible shipping date. Register direction changes update the needle in place without rebuilding or animating connected records.
 
-The illustrated pass adds five WebP panorama plates and nested miniature image scenes without changing this chain. Search the coat, lift its pocket flap, then collect and flip the exposed ticket. Open the desk drawer, then the wallet, to reach the pay stubs. Move the bag's groceries before inspecting its receipt. Component targets have no visible labels or hover text; camera pushes and reverse moves preserve orientation. See `ASSET_MANIFEST.md` for plate/state bindings and replacement instructions. Legacy room names below are internal save identifiers, not navigation labels shown to players.
+The register is physically accessible early. Its three record sockets require completed household, cost, and work-order evidence. Either all TV bulletins or the matched register figures supply national observations. The correct dials remain output DOWN, unemployment UP, prices UP. Solving supplies radio power.
 
-Puzzle validation, rewards, prerequisites, final sequence, and the version-1 save format are unchanged. The room artwork now provides the clickable surfaces; region outlines are optional in Accessibility. No numbered hotspot UI, duplicate object list, room counter, or permanent puzzle checklist is shown. The source records have paper-specific layouts, while economic interpretation remains in the ending. Room changes reflect solved state and consumed materials; the satchel carries collected artifacts. Invoice and final-evidence ordering support drag/drop plus arrow-button alternatives, and all controls retain meaningful accessible names.
+Radio completion requires the household-derived date, the workshop cost/frequency, the service inscription, shipping date, shift-rack date, and synthesis power. Tune 270 kHz and keep March 14, March 16, March 21 dispatches in that order. Their reporting is retrospective: the disruption happened first; the reports did not cause or predict the factory changes.
+
+The policy machine remains a two-direction experiment with competing objectives, not a recommendation quiz. Try tighter and looser demand settings and seat both objective seals. Neither setting repairs the supply network.
+
+## Mission 1 economic causal graph
+
+Input disruption → higher production costs → production/employment cuts → national output down, unemployment and prices up → inflation/employment policy tradeoff. The reveal identifies SRAS shifting left with AD initially unchanged.
+
+The permanent evidence folder and exit use **five** artifacts: disruption, cost plate, shift board, national plate, policy record. The household record, date, and individual observations appear separately under supporting clues, not as extra final-sequence pieces. Internal legacy evidence IDs are retained for save compatibility.
+
+## Mission 2 puzzle graph
+
+```mermaid
+flowchart TD
+  Coat[Both coat pockets] --> Coin[Coin]
+  Coat --> Ticket[Flip tram ticket: 14 MAR]
+  Coin --> Photo[Turn slotted photograph fastener]
+  Photo --> Shelf[Leaf mark + lower-shelf sketch]
+  Shelf --> Journal[Identify leaf-stamped journal]
+  Ticket --> Trial[Open dated V2 trial]
+  Journal --> Trial
+  Trial --> Cost[Physical cost wheel + stamped die]
+  Rate[Utility meter: 2 per hour] --> Cost
+  Other[Workbench service drawer: 9 unchanged] --> Cost
+  Trial --> Adoption[Connect installed designs on adoption board]
+  Growers[Letter rack: 48 cooperatives] --> Adoption
+  Mills[Material bin: 32 mills] --> Adoption
+  Makers[Tall bookcase: 26 equipment makers] --> Adoption
+  Cost --> Synthesis[National comparison]
+  Adoption --> Synthesis
+  Demand[Utility cabinet: AD unchanged seal] --> Synthesis
+  JuneTV[Three June TV bulletins] --> Synthesis
+  Trial --> Final[Five earned artifacts + exit dials]
+  Cost --> Final
+  Adoption --> Final
+  Synthesis --> Final
+```
+
+## Mission 2 economic causal graph
+
+Resource-saving trial → lower production costs → widespread adoption → SRAS right → real output rises and price level falls. AD unchanged is a required separate condition. The local trial is not treated as proof of aggregate change. See MISSION_2.md for all seven mechanisms.
+
+## Hints and saved state
+
+First-case hints prefer an unfinished mechanism in the current area, then a solvable branch with the most collected clues. They do not route every player back through the household. Second-case hints choose an available action in the current area; otherwise they identify missing dependencies. Each has three levels, culminating in explicit actions and locations.
+
+The root save key/version remain `mastery-quests.shock-house.v1` / 1. `branchRevision:2` identifies new first-case progress; `householdPattern` adds three catches while old amount arrays remain readable. Mission 2 uses its own version 2. See README for migration and regression coverage.

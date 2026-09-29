@@ -1,13 +1,13 @@
 import assert from 'node:assert/strict';
-import {newState,complete,restore,policyGauges,contextualPuzzle,FINAL_ORDER} from '../../game/games/the-shock-house/engine.js';
+import {newState,complete,restore,inspect,collectDrawerItem,policyGauges,contextualPuzzle,FINAL_ORDER} from '../../game/games/the-shock-house/engine.js';
 import {PUZZLES} from '../../game/games/the-shock-house/content.js';
 let assertions=0;
 const check=(value,message)=>{assert(value,message);assertions++;};
 const state=newState();
 for(const id of PUZZLES)check(!complete(state,id).ok,`${id} must reject incomplete evidence`);
-state.inspectedObjects=['pay','food','bills','notebook','invoices','production','stock','national','badge-used'];
-state.budget={march:[3000,1400,600,200],april:[3200,1500,800,500]};
-check(complete(state,'budget').ok);check(restore(state));
+state.inspectedObjects=['pay','food','bills','notebook','invoices','production','stock','output-read','work-read','prices-read','badge-used'];
+state.householdPattern=[1,1,-1];state.inspectedObjects.push('index','shipping-date','search:schedule');state.budget={march:[3000,1400,600,200],april:[3200,1500,800,500]};
+check(complete(state,'budget').ok);for(const item of ['badge','date','household']){inspect(state,'drawer:'+item);collectDrawerItem(state,item);}check(restore(state));
 const inventoryLength=state.inventory.length;check(complete(state,'budget').ok);check(state.inventory.length===inventoryLength,'No duplicate rewards');
 state.invoices=['early','middle','late'];check(complete(state,'cost').ok);check(restore(state));
 state.jobs=['A','B','C'];check(!complete(state,'orders').ok,'A loss-making job must be rejected');state.jobs=['A','C'];check(complete(state,'orders').ok);check(restore(state));

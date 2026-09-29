@@ -1,0 +1,3 @@
+const fs=require('fs'),p='audit_tools/econ_rpg/game/games/the-shock-house/';
+let s=fs.readFileSync(p+'tactile.js','utf8').replace("import {steelBlanks}","import {steelBlanks,storedBlanks}").replace("steelBlanks(solved('orders')?2:6)","steelBlanks(storedBlanks(s))").replace("steelBlanks(6,'stock-blanks')", "steelBlanks(storedBlanks(s),'stock-blanks')").replace('<h3>6 steel blanks</h3>',()=>"<h3>'+storedBlanks(s)+' steel blanks in storage</h3>");fs.writeFileSync(p+'tactile.js',s);
+s=fs.readFileSync(p+'GAME_FLOW.md','utf8').replaceAll('Six scarce input measures','Six standardized steel blanks').replaceAll('measures','steel blanks');fs.writeFileSync(p+'GAME_FLOW.md',s);

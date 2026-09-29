@@ -27,27 +27,33 @@ const out=`tmp/shock-house/panorama-${width}`;fs.mkdirSync(out,{recursive:true})
  }
  await search('utility');await act('locked','utility');assert.equal(await page.locator('.room-notice').innerText(),'Locked.');await leave();
  await page.reload();await act('continue');assert.equal((await saved()).currentRoom,'policy','Can resume in locked utility area');
- await search('meter');await act('move','meter-cover');await act('discover','meter-read');await leave();
+ const household=async()=>{ await camera('residence');await search('desk');await search('utility-bill');await leave();
  await camera('hall');await path('mail');await act('move','postcard');await path('rent');await act('discover','rent-read');await leave();assert((await saved()).inspectedObjects.includes('bills'));
  await camera('residence');await path('bag','groceries');assert.equal(await page.locator('[data-id="receipt"]').count(),0,'Receipt hidden beneath groceries');
  await act('move','jar');await page.reload();await act('continue');await path('bag','groceries');assert.equal(await page.locator('[data-action="move"][data-id="jar"]').count(),0,'Moved grocery survives reload');
  await act('move','bread');await path('receipt');await act('discover','old-food');assert(!(await saved()).inspectedObjects.includes('food'),'Old prices alone do not complete comparison');await back();await path('tags');await act('discover','new-food');assert((await saved()).inspectedObjects.includes('food'));await leave();
- await path('desk','drawer','wallet');await act('move','wallet');await open('pay');await page.screenshot({path:`${out}/wallet.png`});await back();assert(await page.getByRole('heading',{name:'A worn wallet',exact:true}).count());await leave();
- await path('ledger','book');await open('notebook');await open('budget');
+ await path('desk');await open('pay');await page.screenshot({path:`${out}/wallet.png`});await back();assert(await page.getByRole('heading',{name:'Writing desk',exact:true}).count());await leave();
+ await path('desk');await open('budget');
  await act('hint');await act('more-hint');await act('more-hint');assert.equal((await saved()).hintLevels.budget,3);await act('close-hint');
  await act('solve','budget');assert(!(await saved()).solvedPuzzles.includes('budget'));
- for(const month of ['march','april'])for(let i=0;i<4;i++){await act('select-slip',`${month}:${i}`);await act('place-budget',`${month}:${i}`);}
- await act('solve','budget');await solved('budget');
- await camera('workshop');await path('tray');await act('move','catalogue');await path('files');await open('invoices');await leave();
- await path('machine','counter');await open('production');assert.equal(await page.locator('.machine-memory').count(),1,'Output uses a physical machine counter');await leave();
+ for(const i of ['0','1','2','2'])await act('household-dial',i);
+ await act('solve','budget');await solved('budget');for(const id of ['badge','date','household']){await act('drawer-preview',id);await act('drawer-collect',id);}
+};
+ const workshop=async()=>{ await camera('workshop');await path('tray');await act('move','catalogue');await path('files');assert((await saved()).inspectedObjects.includes('shipping-date'));await leave();
+ await path('schedule');await leave();await open('production');assert.equal(await page.locator('.machine-memory').count(),1,'Output uses a physical machine counter');await leave();
  await open('cost');await act('use-badge');await act('reorder','invoices:0:1');await act('reorder','invoices:1:1');await act('solve','cost');await solved('cost');await leave();
  await path('bin');await act('move','bin-lid');await open('stock');await leave();
  await open('orders');await act('job','B');await act('solve','orders');assert(!(await saved()).solvedPuzzles.includes('orders'));await act('job','B');await act('job','A');await act('job','C');await act('solve','orders');await solved('orders');
- await camera('archive');await path('records','register');assert.equal(await page.locator('[data-action="open"][data-id="national"]').count(),0,'National synthesis needs separate bulletins');await leave();
- await search('television');for(const id of ['output-read','work-read','prices-read']){await act('tv-channel','next');assert((await saved()).inspectedObjects.includes(id));}await page.screenshot({path:`${out}/television.png`});await leave();
- await path('records','register');await open('national');await back();await open('indicators');for(const id of ['household','costs','staffing'])await act('connect',id);
+};
+ const route=process.env.SHOCK_HOUSE_ROUTE||'A';
+ if(route==='C'){await camera('archive');await path('receiver');await open('radio');assert(await page.locator('[data-knob]').isDisabled());await leave();await path('television');for(let i=0;i<3;i++)await act('tv-channel','next');}
+ if(route==='D'){await camera('workshop');await open('production');await camera('residence');await path('desk');await open('pay');assert.equal((await saved()).solvedPuzzles.length,0);}
+ if(route==='B'||route==='C'){await camera('workshop');await open('production');await leave();await open('cost');assert(await page.locator('.cost-controls').isDisabled());assert(!(await saved()).solvedPuzzles.includes('budget'));}await household();await workshop();
+ await camera('archive');await path('records','register');assert.equal(await page.locator('[data-action="open"][data-id="indicators"]').count(),1,'Clasp can be encountered before gathering bulletins');await leave();
+ await search('television');for(let i=0;i<3;i++)await act('tv-channel','next');for(const id of ['output-read','work-read','prices-read'])assert((await saved()).inspectedObjects.includes(id));await page.screenshot({path:`${out}/television.png`});await leave();
+ await path('records','register');await open('indicators');for(const id of ['household','costs','staffing'])await act('connect',id);
  await act('gauge','indicators:0');await act('gauge','indicators:0');await act('gauge','indicators:1');await act('gauge','indicators:2');await act('solve','indicators');await solved('indicators');await leave();
- await path('receiver','service');await open('index');await leave();await search('receiver');await open('radio');
+ await path('receiver','service');assert((await saved()).inspectedObjects.includes('index'));await leave();await search('receiver');await open('radio');
  await page.locator('[data-knob]').press('Home');for(let i=0;i<3;i++)await page.locator('[data-knob]').press('ArrowRight');
  for(const date of ['March 14','March 16','March 21']){await page.selectOption('#date',date);await act('tune');await act('record-dispatch');}
  await act('solve','radio');await solved('radio');await camera('policy');await search('utility');await open('policy');
@@ -68,6 +74,6 @@ const out=`tmp/shock-house/panorama-${width}`;fs.mkdirSync(out,{recursive:true})
  for(const w of [320,390,768,1024,1440]){await page.setViewportSize({width:w,height:844});await camera('residence');const geometry=await page.evaluate(()=>({width:innerWidth,scroll:document.documentElement.scrollWidth,targets:[...document.querySelectorAll('.environment-object')].map(el=>({w:el.getBoundingClientRect().width,h:el.getBoundingClientRect().height}))}));assert(geometry.scroll<=w);assert(geometry.targets.every(r=>r.w>=44&&r.h>=44));}
  await act('menu');await act('settings');await page.locator('[data-setting="showObjects"]').check();await act('close-dialog');assert(await page.locator('body').evaluate(e=>e.classList.contains('show-objects')));
  await page.locator('.environment-object').first().focus();await page.keyboard.press('Enter');assert(await page.locator('[data-heading]').last().evaluate(e=>e===document.activeElement));await page.keyboard.press('Escape');assert.equal(await page.locator('.inspection-layer').count(),0);
- assert.deepEqual(errors,[]);console.log(JSON.stringify({passed:true,width,puzzles:7,layouts:[320,390,768,1024,1440],errors}));
+ assert.deepEqual(errors,[]);console.log(JSON.stringify({passed:true,width,route,puzzles:7,layouts:[320,390,768,1024,1440],errors}));
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});

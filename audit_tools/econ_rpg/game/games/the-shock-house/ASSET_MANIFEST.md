@@ -86,3 +86,51 @@ Ticket ink, price stickers, receipt totals, meter memory, counter readings, tele
 Mission 2 reuses these plates and sprites through `recovery-view.js`; its separate state is documented in [MISSION_2.md](MISSION_2.md). Coin, ticket, photograph, and gardening-journal interactions are disabled in Mission 1. The second case makes all four necessary discoveries rather than optional decoration.
 
 `tests/shock-house/illustrated.cjs` checks camera movement, unlabelled miniature scenes, first-case cleanup, touch sizes, small asset variants, bounded preloading, and failed-image recovery. `recovery.cjs` covers the coat reveal, coin use, ticket flip, and full second-mission sequence with saved progress. The full seven-puzzle first case remains in `panorama.cjs`; `interaction.cjs` checks legacy saves, pointer controls, and accessibility regressions.
+
+## September 28 illustration pass
+
+### Second-case objects and document finish
+
+Additional built-in imagegen assets are saved in `assets/illustrated/`, with full-size and `-768.webp` versions:
+
+- `tram_front.webp` / `tram_back.webp`: complete printed ticket faces, including their lettering. Hidden semantic text preserves accessible reading without a second visible text overlay.
+- `photo_backing.webp`: actual wooden picture-frame reverse, hanging wire, cardboard backing, and coin-operated slotted fastener.
+- `journal_shelf.webp`: three textured bindings with leaf, gear, and compass marks; invisible controls align to the illustrated spines.
+
+Exact generation prompts are in `assets/illustrated/PROMPTS.json` under these base names. The existing paper, metal-panel, news-studio, and gauge assets now also support Mission 2's records and mechanisms. Postcard rendering clips the neighboring key-ring fragment out of its atlas cell.
+
+`recovery.cjs` verifies both missions' statistics visibility, the illustrated objects, the coin gate, and all seven second-case mechanisms at desktop and phone widths. Screenshots are saved under `tmp/shock-house/recovery-1440/` and `tmp/shock-house/recovery-390/`.
+
+The subsequent broadcast and instrument pass adds four assets, each with a `-768.webp` phone variant in `assets/illustrated/`:
+
+- `gauge_face.webp`: worn metal bezel and blank cream dial; calibrated markings, labels, and needles remain live SVG.
+- `instrument_backing.webp`: aged enamel panel with restrained metal edges, shared by the register, policy, production, and exit mechanisms.
+- `news_studio.webp`: archival newsreader and studio backdrop; all bulletin figures remain readable HTML.
+- `panorama_exit_open.webp`: matching open-door panorama with a visible street and natural daylight on the floor.
+
+These were generated with the built-in image tool, converted to WebP, and visually checked in desktop and phone layouts. Exact prompts are recorded under their filenames' base keys in `assets/illustrated/PROMPTS.json`. `finish.cjs` verifies the new views, stationary connected records, radio interactions, and illustrated ending at 1440px and 390px.
+
+- `assets/illustrated/drawer_reward.webp` and `drawer_reward-768.webp`: empty felt-lined walnut reward drawer, edited from `drawer_close.webp`; removable rewards are separate controls.
+- `assets/illustrated/press_control.webp` and `press_control-768.webp`: illustrated iron-and-walnut press handle, referenced to the workbench panorama; replaces the CSS lever.
+- Both generated with the built-in image tool. Exact prompts are stored under the corresponding keys in `assets/illustrated/PROMPTS.json`.
+- `cost-rails.cjs` captures and checks both 1440px and 390px layouts, individual drawer collection, direct counter/rack access, readable stock, and press operation.
+## Printed evidence and empty broadcast studio
+
+- `assets/illustrated/rent_notice.webp` and `rent_notice-768.webp`: built-in imagegen; exact prompt key `rent_notice` in `assets/illustrated/PROMPTS.json`. Original: `C:\Users\Jennings\.codex\generated_images\01a0e30d-f5d9-7370-b10f-9296a011cba5\exec-5feeb6bf-6f2a-4d6b-b58f-327ecac9773f.png`.
+- `assets/illustrated/utility_account.webp` and `utility_account-768.webp`: built-in imagegen; exact prompt key `utility_account` in `assets/illustrated/PROMPTS.json`. Original: `C:\Users\Jennings\.codex\generated_images\01a0e30d-f5d9-7370-b10f-9296a011cba5\exec-b14e3dd4-cabf-45c9-a144-0888228c2937.png`.
+- `assets/illustrated/news_map.webp` and `news_map-768.webp`: built-in imagegen; exact prompt key `news_map` in `assets/illustrated/PROMPTS.json`. Original: `C:\Users\Jennings\.codex\generated_images\01a0e30d-f5d9-7370-b10f-9296a011cba5\exec-8bdc169e-fb71-46a0-8c08-c818fb50549d.png`.
+
+The rent and utility artwork contains the exact printed figures. Accessible HTML descriptions and expandable transcripts preserve text access without overlaying the artwork. The news-map edit removes the newsreader, desk, and microphone from the earlier studio asset. All three are 1536 × 1024; companion files are 768 × 512 WebP. Original generated PNGs remain in place.
+
+## Workshop material revision · September 29, 2026
+
+- `assets/illustrated/steel_blank.webp` (768 × 307) and `steel_blank-384.webp` (384 × 154): one raw steel blank, with genuine alpha transparency, generated using built-in imagegen. Exact final prompt: `steel_blank` in `assets/illustrated/PROMPTS.json`. Original preserved at `C:\Users\Jennings\.codex\generated_images\01a0e30d-f5d9-7370-b10f-9296a011cba5\exec-48672c6a-9df7-4045-8bad-959f0c5ab132.png`.
+- One sprite equals one blank. The bin, stock record, available-material row, and selected-order sockets use this same asset. The old atlas spool cell is no longer rendered.
+- The workbench frame and mechanical control finishes reuse `instrument_backing.webp`; the household catches and recovery cost/design selectors reuse `gauge_face.webp` with live markings and needles.
+
+## Household record and desk revision
+
+- `assets/illustrated/grocery_account.webp` and `grocery_account-768.webp`. Generated with built-in imagegen; exact prompt key `grocery_account` in `assets/illustrated/PROMPTS.json`. Original retained at `C:\Users\Jennings\.codex\generated_images\01a0e30d-f5d9-7370-b10f-9296a011cba5\exec-a148cd97-fe79-414e-89dc-50cb2af08104.png`.
+- `assets/illustrated/desk_accounts_close.webp` and `desk_accounts_close-768.webp`. Generated with built-in imagegen; exact prompt key `desk_accounts_close` in `assets/illustrated/PROMPTS.json`. Original retained at `C:\Users\Jennings\.codex\generated_images\01a0e30d-f5d9-7370-b10f-9296a011cba5\exec-a412dd98-7302-4abe-a9f7-48335ef86f81.png`.
+
+The grocery account embeds all text and exact amounts. The dedicated desk close-up integrates the utility envelope into the scene, with separate targets for the envelope, pay drawer, and lower household latch. Both assets are 1536 × 1024, with 768 × 512 companions.

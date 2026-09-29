@@ -1,37 +1,63 @@
-# Mission 2 — The Second Harvest
+# The Second Harvest — seven mechanisms in the same house
 
-Completing the original exit unlocks **Open Mission 2** on the first case's economic reveal and results. Existing completed version-1 saves qualify immediately. The original mystery remains a negative aggregate supply shock; the second case investigates an independent later efficiency improvement, with aggregate demand held unchanged.
+Mission 2 unlocks only after Mission 1's exit is solved. Previously decorative coat pockets, photograph, and shelf books become useful. The house and image pipeline are reused; changed targets and object meanings create rediscovery rather than a separate environment. First-case progress and results remain available.
 
-## First-case cleanup
+## 1. Coat search
 
-The coat, photograph, coin, tram ticket, and gardening book have no interaction targets in Mission 1. Old discoveries remain compatible with saves but no longer display unused items in its satchel. The gardening book cannot be pulled from the first case's shelf. Mission 2 activates those objects with separate progress and real dependency checks.
+Open both lower pockets. Take a coin from the left and a tram ticket from the right. Flip the ticket to discover 14 MAR. Items are not introduced with their solutions. Searching can occur before or after exploring the other four camera positions.
 
-## Playable sequence and solutions
+## 2. Photograph backing
 
-| Step | Where and action | Purpose / result |
-|---|---|---|
-| 1. Open the photograph | Search both pockets of the coat beside the exit. Take the coin and ticket. Turn over the framed photograph to the right of the exit; use the coin on its slotted fastener. | Coin releases the backing. The filing note names the gardening journal and asks for the journey date on the ticket. |
-| 2. Find the trial | Flip the ticket: **14 MAR**. At the shelf above the writing desk, pull the gardening book from the left side of the lower shelf. Open it and select **14 MAR**. | Trial uses 3 pump-hours instead of 6, with unchanged harvest, quality, land, and other inputs. Photograph and ticket inspection are required. The departure time is printed context, not a code. |
-| 3. Recalculate costs | Examine the idle machine beside the workbench. Set **$15**, then stamp the cost record. | 3 hours × $2/hour + $9 unchanged other costs = $15. Old method costs $21 for the same batch. Trial notes are required. |
-| 4. Establish national scope | At the television, use the two visible knobs to cycle three June bulletins. Click the screen to compare figures; set output **UP**, prices **DOWN**, then seal. | Reports establish adoption across agriculture and input-producing industries, output 200 → 216, price index 100 → 96, and unchanged AD. All bulletins and the cost record are required. |
-| 5. Reconstruct the cause | Return to the exit. Place adoption → lower unit costs → increased SRAS → higher output/lower price level. Set **SRAS RIGHT, output UP, prices DOWN**. Turn the mechanism. | Completes the second case. A comparison with Mission 1 explains the opposite supply shifts. |
+Turn over the photograph beside the exit. Use the coin on its slotted fastener. The released backing shows a leaf mark, a sketch of the lower shelf's left volume, and “The field entry follows the journey date.” It does not name the gardening journal outright. This is an ordinary escape mechanism.
 
-The utility cabinet also holds the June demand-policy log, corroborating the unchanged-AD assumption. It adds context rather than a new prerequisite. Hints advance through the unfinished dependencies and give object locations; the satchel keeps the ticket and recovered records available.
+## 3. Shelf identification and journal
 
-## Economic framing
+Match the leaf-stamped binding on the lower shelf above the writing desk. Other bindings are inspectable candidates; mismatches give feedback without removing the clue. Pull and open the matching journal, select the ticket's 14 MAR tab, and release the V2 trial plate.
 
-The small garden experiment establishes a technical resource saving, not an aggregate conclusion. Later widespread adoption plus national output and price observations establish the positive aggregate supply case. June figures use their own baseline; they do not simply reverse April values. Lower production costs shift SRAS right with AD unchanged. The lower observed price level is not a claim of permanently falling prices. No labor-market direction is inferred solely from the productivity change.
+The trial establishes 6 → 3 pump-hours for the same harvest, quality, land, and other inputs. It supplies hours, not every cost and not an aggregate conclusion.
 
-## Implementation and saves
+## 4. Distributed cost reconstruction
 
-- `recovery-state.js`: independent progress, prerequisite checks, wrong-answer feedback, final sequence, hints, and validation.
-- `recovery-view.js`: reuse of illustrated plates, object-component targets, readable physical records, mission-specific panoramas, satchel, and ending.
-- `recovery.css`: document, control, and small-screen layouts.
-- `engine.js`: optional `recovery` state and `recovery` / `recovery-results` stages in the existing version-1 save. Missing recovery data migrates to `null`. Invalid or premature second-case states are rejected.
-- `game.js`: unlock, scene routing, interaction, hints, keyboard navigation, and persistent resume. First-case records and solved flags are retained. Starting a new investigation resets both missions after the existing confirmation.
+The utility meter independently supplies $2 per pump-hour. A workbench service drawer supplies $9 of unchanged other batch costs. Both can be discovered before the journal. The idle machine combines these source plates with trial hours.
 
-Reuses the shipped bitmap assets. No new remote services or image generation is required. Separate state prevents previous coat or book discoveries from skipping the second case. Completion and partial selections survive reloads. The first economic reveal remains available from the second ending.
+Rotate the physical unit-cost wheel and stamp $15: 3 × $2 + $9, compared with the old 6 × $2 + $9 = $21. Missing source plates prevent stamping even if the amount is guessed. The reward is a stamped lower-cost die, not an arithmetic form.
 
-## Validation
+## 5. Diffusion / adoption board
 
-`tests/shock-house/recovery.mjs` covers dependencies, wrong answers, malformed state, migration, and completion. `recovery.cjs` plays both desktop and phone paths including first-case cleanup, legacy completion unlock, coin use, ticket/date lookup, cost calculation, national evidence, causal reconstruction, partial reload, completed reload, and first-case preservation. The original seven-puzzle playthrough and gesture/save regressions remain in the test suite.
+Three locations establish matching **installed** design marks:
+
+- Letter rack: 48 growers' cooperatives across eight districts installed V2.
+- Workshop material bin: 32 mills across six industrial districts retired V1 and installed V2.
+- Tall bookcase beside the TV: an equipment template shows 26 makers in the national supplier network installed V2.
+
+On the former work-order press, rotate three producer connectors to the installed design and seal the board. It requires the trial plate plus all three installation sources. This branch can be completed before or after the cost die.
+
+The board establishes that the resource-saving method spread across producers and industries. One successful plot is insufficient to justify an aggregate supply conclusion. V1/V2 are equipment design identifiers supported by source marks, not arbitrary codes. The completed connected board is the widespread-adoption artifact.
+
+## 6. National outcome and demand convergence
+
+The TV has separate June bulletins for output (200 → 216), price index (100 → 96), and matching national coverage. It no longer supplies both adoption and demand conclusions for free.
+
+The utility cabinet holds a separate June demand log, covering policy settings and independent spending conditions. Explicitly retain its AD-unchanged seal. A policy setting alone would not establish aggregate demand; the case log specifies the broader unchanged-demand condition.
+
+To seal the national comparison, bring the cost die, adoption board, demand seal, all three TV observations, and output UP / price level DOWN settings. Correct directions alone cannot bypass these dependencies. Completion yields the supply-shift plate and national comparison plate.
+
+## 7. Final causal mechanism
+
+Only earned physical representations are available at the exit:
+
+1. V2 trial plate: same harvest, fewer pump-hours.
+2. Stamped cost die: $21 → $15.
+3. Connected adoption board: growers, mills, equipment makers.
+4. Supply-shift plate: lower costs across producers, SRAS right.
+5. National comparison plate: output rises, price level falls.
+
+Place them in causal order and set SRAS RIGHT, output UP, prices DOWN. The final reveal compares the negative and positive supply mysteries, explicitly holding AD unchanged. A one-time lower price level does not imply continual deflation.
+
+## Branching and persistence
+
+Coat/photo/journal form the rediscovery branch. Rate, unchanged batch costs, installation marks, TV observations, and the demand seal are searchable independently from Mission 2's beginning. Cost and adoption then run in parallel before the national convergence. Location-aware hints favor available nearby work.
+
+`recovery.version:2` adds book selection, rate, overhead, three installation sources, adoption connectors, the demand seal, and a five-stage final chain. Legacy completed second cases retain completion and receive equivalent evidence credit. Legacy partial cases retain the coin, ticket, photograph, journal, and any already-earned cost die; the old cost screen supplied the rate/overhead, so those receive credit too. The old TV-only national conclusion is reopened for adoption and demand evidence, and its partial final chain is cleared. No first-case progress is reset.
+
+Logic and browser tests cover wrong book/date/cost/connector choices, missing sources, early clue collection, absent AD evidence, all seven gates, partial/completed reloads, mobile layouts, and legacy saves. Human playtesting should assess whether the shelf clue is legible without hints and whether three installed-design connections provide enough satisfying inference.

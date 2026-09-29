@@ -1,6 +1,43 @@
 /* Bitmap environments; HTML supplies invisible hit areas and live mechanisms. */
 .illustrated-panorama{position:relative;overflow:hidden;aspect-ratio:3/2!important}
 .asset-plate{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;max-width:none;pointer-events:none;user-select:none}
+/* Illustrated rewards remain on the felt until individually inspected and taken. */
+.reward-drawer-items{position:absolute;inset:28% 11% 27%;z-index:6;display:flex;align-items:center;justify-content:space-around;gap:3%}
+.drawer-reward{display:flex;align-items:center;flex-direction:column;gap:12px;background:none!important;border:0;width:29%;padding:8px;color:#f5e6c4;font:16px/1.3 Georgia,serif;text-shadow:0 2px 3px #000}
+.drawer-reward>.artifact-thumb{width:clamp(50px,10vw,105px);height:clamp(75px,14vw,148px);filter:drop-shadow(3px 7px 5px #0009)}
+.drawer-reward .artifact-date{background:transparent url('assets/illustrated/paper_unfolded.webp') center/100% 100% no-repeat;border:0;box-shadow:none;align-items:center}
+.drawer-reward .artifact-household{background:transparent url('assets/illustrated/register_book.webp') center/100% 100% no-repeat;border:0;box-shadow:none}
+.drawer-reward .artifact-household>*{visibility:hidden}
+.drawer-reward .artifact-badge{background:linear-gradient(130deg,#bda46c,#676447);border-color:#9d8760;box-shadow:inset 0 0 12px #42331d;color:#172a2c;justify-content:center;text-shadow:none}
+.drawer-reward .artifact-badge b{font-size:24px;white-space:nowrap;overflow-wrap:normal}
+.drawer-instruction{margin:12px auto;text-align:center;color:#f5e6c4;font-size:16px;max-width:600px}
+.collect-drawer{margin-top:28px}
+.cost-controls{border:0;padding:0;margin:0;min-width:0}.cost-controls:disabled{opacity:.7}
+.cost-instruction{text-align:center;color:#eadcb8;font:18px/1.5 Georgia,serif}
+.employee-slot{flex-wrap:wrap;gap:15px}.employee-slot p{max-width:420px;font-size:16px}
+.cost-tag h3{color:#f2dfb5;font:700 24px/1.2 Georgia,serif;margin:0 0 14px}
+.cost-tag span,.cost-tag b{font-size:16px;line-height:1.45}.cost-tag b{display:block;margin-top:14px}
+.invoice-rail .rail-label{font-size:14px;letter-spacing:.1em}
+.type-orders .press-lever{width:min(100%,380px);height:auto;min-width:0;display:flex;flex-direction:column;gap:14px;padding:0 0 14px;background:#171d1b!important;border:1px solid #8d7350;border-radius:4px;overflow:hidden;color:#efdfb9;font:18px Georgia,serif;text-shadow:none}
+.type-orders .press-lever::before,.type-orders .press-lever::after{content:none}
+.press-control-art{display:block;position:relative;width:100%;aspect-ratio:3/2;overflow:hidden}
+.press-lever:not(:disabled):hover img{filter:brightness(1.12)}
+.press-lever:not(:disabled):active .press-control-art{transform:translateY(3px)}
+.stock-label,.counter-readings,.staffing-comparison{position:absolute;z-index:4;margin:0;box-sizing:border-box}
+.stock-label{left:10%;top:5%;width:80%;padding:22px 30px;background:#d8c69d url('assets/illustrated/paper_unfolded.webp') center/cover;border:2px solid #746142;color:#2c302c;box-shadow:4px 8px 20px #0008;font:clamp(16px,1.5vw,21px)/1.45 Georgia,serif}
+.stock-label h3{font-size:1.3em;margin:0 0 12px;color:inherit}
+.stock-label dl{margin:0}.stock-label dl>div{display:flex;justify-content:space-between;gap:18px;border-bottom:1px solid #5b51343b;padding:5px 0}.stock-label dd{margin:0;font-weight:bold}.stock-label p{font:inherit;color:inherit;margin:12px 0 0}
+.counter-readings{inset:14% 14%;background:linear-gradient(135deg,#192b28,#09161e);border:6px ridge #675f51;border-radius:9px;padding:7% 7%;color:#e0e4cf;font:clamp(16px,1.6vw,23px)/1.5 'Courier New',monospace;box-shadow:inset 0 0 30px #020e19}
+.counter-readings header{font-size:.85em}.counter-readings dl{margin:20px 0}.counter-readings dl>div{display:flex;justify-content:space-between;border-bottom:1px dashed #92958477;padding:8px 0}.counter-readings dt,.counter-readings dd{font-size:1.5em;margin:0}.counter-readings p,.counter-readings footer{font:inherit;font-size:.85em;color:inherit;margin:10px 0}
+.staffing-comparison{inset:7% 10%;background:#d7c7a2 url('assets/illustrated/paper_unfolded.webp') center/cover;border:7px solid #564530;padding:5%;color:#30342e;box-shadow:5px 10px 25px #000a;font:clamp(16px,1.6vw,22px)/1.4 Georgia,serif}
+.staffing-comparison header{font:14px/1.4 monospace;letter-spacing:.05em}.staffing-comparison h3{font-size:1.4em;color:inherit;margin:15px 0 24px}.staffing-dates{display:grid;grid-template-columns:1fr 1fr;gap:8%}.staffing-dates h4{font-size:1em;margin:0 0 5px}.staffing-dates strong{font-size:1.5em}.worker-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:16px}.worker-card{background:#304e4c;color:#fff1d2;box-shadow:1px 3px 3px #4a342f50;padding:7px 0;text-align:center;border-top:3px solid #849489;border-radius:2px;font:18px/1.3 monospace}.worker-card.withdrawn{background:transparent;box-shadow:none;border:1px dashed #6e5b48;color:#6e5b48}.staffing-comparison p,.staffing-comparison footer{font:inherit;color:inherit;font-size:.85em}.staffing-comparison footer{border-top:1px solid #83734f;padding-top:12px}
+@media(max-width:750px){
+ .drawer-reward{font-size:13px;padding:0;gap:5px}.drawer-reward>.artifact-thumb{width:52px;height:74px}.drawer-reward .artifact-badge b{font-size:14px}.drawer-instruction{font-size:15px}
+ .mini-scene.stock-scene,.mini-scene.machine-memory,.mini-scene.search-schedule{min-height:510px;aspect-ratio:auto}
+ .stock-label{left:5%;width:90%;top:5%;padding:16px;font-size:16px}.stock-label h3{font-size:20px}.stock-label dl>div{gap:10px}.stock-label dd{text-align:right}
+ .counter-readings{inset:12% 5%;padding:28px 20px;font-size:16px}.counter-readings dt,.counter-readings dd{font-size:24px}.counter-readings dl{margin:25px 0}
+ .staffing-comparison{inset:3% 3%;padding:22px 14px;font-size:17px;border-width:4px}.staffing-comparison h3{font-size:21px}.staffing-dates{gap:7%}.staffing-dates strong{font-size:21px}.worker-cards{gap:5px}.worker-card{font-size:14px;padding:8px 0}.staffing-comparison footer{font-size:16px}
+}
 .asset-plate.fallback-plate{width:100%;height:100%;left:0;top:0}
 .exploration .scene{width:min(100vw,150dvh);overflow:hidden;aspect-ratio:3/2}
 .environment-object:hover{border-color:transparent;background:#EEF6FF04;box-shadow:none}
