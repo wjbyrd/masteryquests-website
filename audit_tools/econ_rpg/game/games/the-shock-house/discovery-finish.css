@@ -1,4 +1,6 @@
 /* Preserve artwork geometry: every direct crop keeps its source proportions. */
+.mission-title{margin:24px 0;color:var(--gold);font-family:Georgia,serif}.mission-title span,.mission-title strong{display:block}.mission-title span{font:14px/1.5 'Courier New',monospace;margin-bottom:7px}.mission-title strong{font-size:22px;letter-spacing:.05em}
+.return-games{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:12px 18px;border:1px solid #897950;border-radius:4px;color:#ead9b0;background:#13262b;text-decoration:none;font:700 14px/1.5 Georgia,serif;letter-spacing:.04em}.return-games:hover{background:#263a3b}.game-return{display:flex;justify-content:center;margin:28px auto}dialog .return-games{flex:1 0 100%}
 .asset-plate{object-fit:cover}
 .exploration .room-art,.escape-scene .room-art{aspect-ratio:3/2}
 .exploration .scene,.escape-scene .room-art{width:min(100vw,150dvh)}

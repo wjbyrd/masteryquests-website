@@ -1,4 +1,4 @@
-# The Shock House — search, puzzle, and economic graphs
+# Signal House — The Broken Signal: search, puzzle, and economic graphs
 
 This revision preserves the illustrated continuous house, five camera positions, invisible accessible hotspots, nested close-ups, tactile controls, three-level hints, local saves, and two economic reveals. Exploration order is not the order of the economic events.
 

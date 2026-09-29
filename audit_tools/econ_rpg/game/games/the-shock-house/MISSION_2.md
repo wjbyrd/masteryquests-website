@@ -1,6 +1,6 @@
 # The Second Harvest — seven mechanisms in the same house
 
-Mission 2 unlocks only after Mission 1's exit is solved. Previously decorative coat pockets, photograph, and shelf books become useful. The house and image pipeline are reused; changed targets and object meanings create rediscovery rather than a separate environment. First-case progress and results remain available.
+Signal House’s Mission 2, **The Second Harvest**, unlocks only after **The Broken Signal** (Mission 1) is solved. Previously decorative coat pockets, photograph, and shelf books become useful. The house and image pipeline are reused; changed targets and object meanings create rediscovery rather than a separate environment. First-case progress and results remain available.
 
 ## 1. Coat search
 

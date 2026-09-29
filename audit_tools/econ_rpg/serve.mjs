@@ -6,7 +6,9 @@ export const gameRoot = fileURLToPath(new URL('./game/', import.meta.url));
 export function previewServer() {
   return createServer(async (req, res) => {
     try {
-      const name = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
+      let name = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
+      // Canonical public name, with the historical source/test folder retained.
+      if(name==='/games/signal-house'||name.startsWith('/games/signal-house/'))name=name.replace('/games/signal-house','/games/the-shock-house');
       let file = path.resolve(gameRoot, `.${name}`);
       if (file !== path.resolve(gameRoot) && !file.startsWith(gameRoot)) { res.writeHead(403).end(); return; }
       if ((await stat(file)).isDirectory()) file = path.join(file, 'index.html');

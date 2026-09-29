@@ -1,4 +1,4 @@
-# Shock House illustrated assets
+# Signal House illustrated assets
 
 All shipped art lives in `assets/illustrated/`. Fourteen original plates, sprites, and atlases were generated with the **built-in imagegen tool**, then encoded as WebP. Exact generation/edit prompts are in [PROMPTS.json](assets/illustrated/PROMPTS.json). No external image service is required at runtime. Amounts, dates, puzzle answers, hit regions, and progress are defined in JavaScript/HTML, never inferred from image pixels.
 

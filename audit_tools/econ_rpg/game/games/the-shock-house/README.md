@@ -1,16 +1,16 @@
-# The Shock House — An Economic Escape
+# Signal House — An Economic Escape
 
 Game 12 in the October Mastery Quests preview collection. One continuous interior built from illustrated WebP plates, five camera directions, miniature object scenes, and two sets of seven connected mechanisms. Contextual hints, browser saves, an economic reveal, one transfer challenge, and results remain intact. Discovery difficulty and classroom timing need fresh human playtesting after the branching revision.
 
 ## Two missions
 
-Mission 1 is a **negative aggregate supply mystery** with freely explorable household and workshop clues, badge-gated cost rails, national synthesis, and a three-source radio convergence. It unlocks **The Second Harvest**, a **positive aggregate supply / efficiency mystery** with seven mechanisms, including distributed cost reconstruction, widespread adoption, and a required unchanged-demand check. The second mission intentionally reuses familiar objects and the same illustrated scenery. The coat coin, photograph, tram ticket, and gardening journal are interactive only in the second case, where each is required. See [MISSION_2.md](MISSION_2.md) for its route, economic framing, save compatibility, and tests.
+**Mission 1 — The Broken Signal** is a **negative aggregate supply mystery** with freely explorable household and workshop clues, badge-gated cost rails, national synthesis, and a three-source radio convergence. It unlocks **Mission 2 — The Second Harvest**, a **positive aggregate supply / efficiency mystery** with seven mechanisms, including distributed cost reconstruction, widespread adoption, and a required unchanged-demand check. The second mission intentionally reuses familiar objects and the same illustrated scenery. The coat coin, photograph, tram ticket, and gardening journal are interactive only in the second case, where each is required. See [MISSION_2.md](MISSION_2.md) for its route, economic framing, save compatibility, and tests.
 
 ## Run
 
-From `audit_tools/econ_rpg/game`, run `python -m http.server 4179` (or any static server), then open `http://127.0.0.1:4179/games/the-shock-house/?experience=illustrated`. The existing preview server can serve the same path. ES modules require HTTP rather than `file://`. Opening `index.html` directly now shows a link to that preview instead of an empty screen. Keep using the same hostname and port to retain access to the same browser save.
+Run `node audit_tools/econ_rpg/serve.mjs` from the repository root, then open `http://127.0.0.1:4179/games/signal-house/?experience=illustrated`. The server also retains the historical local URL for saved bookmarks. ES modules require HTTP rather than `file://`. Keep the same hostname and port to retain access to the same browser save.
 
-The folder can also be hosted unchanged on GitHub Pages. For standalone deployment, adjust the optional brand link to your library. Embed the hosted URL in a Canvas iframe with scripts enabled, preferably at least 800px tall. Edge arrows, left/right keyboard keys, and horizontal touch swipes turn to adjacent views. Portrait navigation sits below the scene so it cannot cover objects. Close-ups scroll vertically. Storage restrictions in embedded browsers are caught and explained; the current tab remains playable.
+The deployment builder copies this same runtime to the configured unlisted route, and to `/games/signal-house/` when public release is enabled. Return to Games always targets the actual public hub, `/games/`. Embed the hosted URL in a Canvas iframe with scripts enabled, preferably at least 800px tall. Edge arrows, left/right keyboard keys, and horizontal touch swipes turn to adjacent views. Portrait navigation sits below the scene so it cannot cover objects. Close-ups scroll vertically. Storage restrictions in embedded browsers are caught and explained; the current tab remains playable.
 
 No runtime libraries, remote fonts, network services, generated questions, or build step are required. No personal information is collected or transmitted.
 
@@ -76,6 +76,14 @@ Mission 2 uses `recovery.version:2`. Old completed second cases stay complete. P
 Title-screen Continue is shown for a valid save. New Investigation requires confirmation. Malformed saves are not overwritten until the player starts a replacement investigation; storage denial falls back to tab-only play.
 
 `branchRevision:3` adds `drawerCollected` for individually inspected and collected rewards. Earlier saves infer already collected drawer contents from their solved household puzzle, preserving inventory and evidence. Already completed workshop-first saves remain valid. New cost solutions require the employee badge and chronological dated records.
+
+## Release preparation — September 29, 2026
+
+The permanent public route is `/games/signal-house/`. The separate unlisted device build is generated from this same runtime by `audit_tools/econ_rpg/publish-signal-house.mjs`; it adds indexing restrictions to the preview HTML, without changing gameplay. Release settings and the Game #12 card live in `audit_tools/econ_rpg/signal-house-release.json` and `signal-house-card.html`. The actual website hub is the repository-root `games/index.html`. `publicReleased: false` keeps its new card and public game route staged. Enable that flag and rebuild the complete website for a future authorized release; this also supplies an old-route compatibility page.
+
+The source folder `the-shock-house`, test folder `tests/shock-house`, `SHOCK_HOUSE_*` test environment variables, and save key `mastery-quests.shock-house.v1` remain intentionally unchanged. They are internal compatibility identifiers, not player-facing titles. Saves stay on their original browser origin; a localhost save is not automatically transferred to the live website. On one origin, the preview and eventual public route use the same save key.
+
+RETURN TO GAMES targets `/games/` from the title, results, and Case Menu. The unlisted route has no public navigation links and uses both a robots meta tag and an `X-Robots-Tag` response header. It is a device-testing URL, not an access-controlled page. See `audit_tools/econ_rpg/SIGNAL-HOUSE-RELEASE-REPORT.md` for deployment and validation results.
 
 ## Validation
 

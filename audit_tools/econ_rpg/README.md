@@ -1,6 +1,6 @@
 # Mastery Quests — private economics games
 
-Local, unlinked Mastery Quests prototype for instructor QA. **Not a production release.** The intended future release window is October 2026; nothing automatically unlocks or publishes on that date.
+Local, unlinked Mastery Quests prototypes for instructor QA. **Not a public collection release.** The intended future release window is October 2026; nothing automatically unlocks or publishes on that date. Signal House alone has an explicitly allowlisted unlisted device build generated from its reviewed runtime. Its public Game #12 card remains staged; see [release configuration](signal-house-release.json) and [release report](SIGNAL-HOUSE-RELEASE-REPORT.md).
 
 ## Play locally
 

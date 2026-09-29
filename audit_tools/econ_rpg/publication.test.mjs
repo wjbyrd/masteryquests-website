@@ -7,7 +7,7 @@ import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 const root = fileURLToPath(new URL('../../', import.meta.url));
 const builder = path.join(root, 'audit_tools/public_site_publication/build-dist.mjs');
-test('staging uses the existing explicit deny rule; current production build excludes all prototype files', () => {
+test('staging excludes other prototypes while allowing the explicit Signal House device build', () => {
   const source = readFileSync(builder, 'utf8');
   assert.match(source, /file\.startsWith\("audit_tools\/"\)/);
   assert.match(readFileSync(path.join(root, '.assetsignore'), 'utf8'), /\/audit_tools\/\*\*/);
@@ -29,6 +29,6 @@ test('staging uses the existing explicit deny rule; current production build exc
     if (/\.(png|webp)$/i.test(file)) assert.equal(artHashes.has(createHash('sha256').update(readFileSync(file)).digest('hex')), false, 'Approved art must not publish under any name');
   }
 });
-test('public navigation, frozen games, Composer, telemetry and Cloudflare configuration are untouched', () => {
-  execFileSync('git', ['diff', '--exit-code', 'HEAD', '--', 'index.html', 'games', 'play', 'build', 'server', 'assets', 'wrangler.jsonc', 'audit_tools/public_site_publication', '.assetsignore'], { cwd: root, stdio: 'pipe' });
+test('unrelated games, Composer, telemetry and Cloudflare configuration are untouched', () => {
+  execFileSync('git', ['diff', '--exit-code', 'HEAD', '--', 'index.html', 'games', 'play', 'build', 'server', 'assets', 'wrangler.jsonc', '.assetsignore', ':(exclude)games/index.html', ':(exclude)assets/css/site.css', ':(exclude)assets/images/games/**'], { cwd: root, stdio: 'pipe' });
 });

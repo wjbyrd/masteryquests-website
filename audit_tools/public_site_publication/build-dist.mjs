@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import {publishSignalHouse} from '../econ_rpg/publish-signal-house.mjs';
 
 const root = path.resolve(process.argv[2] || ".");
 const dist = path.join(root, "dist");
@@ -160,6 +161,7 @@ for (const name of fs.readdirSync(sourceReviewDir)) {
   }
 }
 
+const signalHouseRelease = publishSignalHouse(root,dist);
 const files = [];
 function walk(dir) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -171,7 +173,7 @@ function walk(dir) {
 walk(dist);
 
 const forbidden = files.filter(file =>
-  (file.startsWith("beta-testing/") && file !== composerTelemetryBeta) ||
+  (file.startsWith("beta-testing/") && file !== composerTelemetryBeta && !file.startsWith(signalHouseRelease.previewRoute.slice(1))) ||
   /(?:^|\/)canvas[- _]quiz[- _]converter(?:[- _/.]|$)/i.test(file) ||
   file.startsWith("audit_tools/") ||
   file.startsWith("server/") ||

@@ -3289,3 +3289,6 @@ button:focus-visible {
 .updates-crosslink { margin-bottom: 56px; padding-top: 24px; border-top: 1px solid var(--gray-300); }
 .updates-crosslink h2 { margin: 0; color: var(--navy-900); font-size: 1.25rem; }
 .updates-crosslink p { margin: 8px 0; }
+
+/* Staged Signal House card; uses the public Games card layout when released. */
+.signal-house-card-image{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:12px;margin:16px 0}
