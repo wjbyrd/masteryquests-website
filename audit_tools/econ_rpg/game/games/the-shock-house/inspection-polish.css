@@ -1,0 +1,49 @@
+/* Paper and small brass catches belong to the household; industrial dials stay in the workshop. */
+.household-balance .balance-catch{background:linear-gradient(100deg,#ede0b7,#d8c795);color:#303b32;border:1px solid #8d784a;border-radius:3px;box-shadow:0 2px 2px #59462440,inset 0 0 0 3px #f7edce66;min-height:64px;padding:10px 14px;gap:12px}
+.household-balance .balance-catch:hover,.household-balance .balance-catch:focus-visible{background:#f0e3bd;color:#24382f}
+.desk-balance-indicator{position:relative;display:block;flex:none;width:76px;height:30px;border-bottom:1px solid #6c6245;background:repeating-linear-gradient(90deg,transparent 0 12px,#7d735733 12px 13px,transparent 13px 25px)}
+.desk-balance-indicator:before{content:'';position:absolute;width:7px;height:7px;left:34px;bottom:-4px;border-radius:50%;background:#9b8049;border:1px solid #625438}
+.desk-balance-indicator i{position:absolute;width:62px;height:2px;left:7px;top:15px;background:#3b4c41;transform:rotate(calc(var(--direction)*-18deg));transition:transform .18s}
+.household-balance .balance-catch>strong{font:25px Georgia,serif;min-width:24px;text-align:center}
+.turn-lock .door-handle-art{width:min(380px,100%);height:auto;aspect-ratio:3/2;border:1px solid #715a36;box-shadow:0 3px 8px #0005}
+.door-handle-art>.asset-plate{object-fit:contain}
+.turn-lock{width:min(380px,100%);max-width:100%}
+.exit-lock{display:flex;flex-direction:column}
+.exit-lock .turn-lock{order:-1;margin:0 auto 24px}
+
+/* A physical two-page book, with the existing shipping record tucked onto the right page. */
+.open-catalogue{position:absolute;z-index:3;left:16%;top:32%;width:68%;height:58%;display:grid;grid-template-columns:1fr 1fr;padding:2%;background:#3c3424;border:3px solid #72603b;border-radius:3px 8px 8px 3px;box-shadow:0 10px 15px #0008;transform:rotate(-2deg)}
+.catalogue-page{min-width:0;min-height:0;padding:9%;position:relative;background:linear-gradient(90deg,#d0c296,#eee3bf 12%,#e4d8b0);color:#363729;box-shadow:inset 10px 0 12px -10px #332b1c}
+.catalogue-left{border-right:1px solid #82745a;box-shadow:inset -10px 0 12px -10px #332b1c}
+.catalogue-left>span{display:block;font:small-caps 600 clamp(10px,1.5vw,18px) Georgia,serif;text-align:center;margin:5% 0 18%}
+.catalogue-rules{height:60%;background:repeating-linear-gradient(0deg,transparent 0 14px,#70695350 14px 15px);opacity:.5}
+.open-catalogue .shipping-record{position:relative;inset:auto;width:auto;max-width:100%;height:auto;min-height:0;display:block;padding:12% 8%;margin:10% -3% 0;background:#ede1bc;border:1px solid #a89a72;box-shadow:2px 3px 5px #5e4a3044;transform:rotate(4deg);color:#363729;font:clamp(12px,1.8vw,21px)/1.4 Georgia,serif}
+.open-catalogue .shipping-record header{font:small-caps 600 .75em Georgia,serif;letter-spacing:.06em}
+.open-catalogue .shipping-record h2{font:700 1.25em Georgia,serif;margin:.6em 0;color:inherit}
+.open-catalogue .shipping-record p{font:inherit;margin:0;color:inherit}
+.search-bin .bin-materials{inset:29% 32% auto;width:36%;height:9%;padding:0;background:none;box-shadow:none;border:0}
+.search-bin .bin-materials .material-pieces{height:100%;grid-template-columns:repeat(3,1fr);grid-template-rows:1fr 1fr;gap:2px}
+.search-bin .bin-materials .material-token{width:100%;height:100%;aspect-ratio:auto}
+
+/* Broadcast typography is on the glass, without a separate blue label/card. */
+.news-broadcast footer{background:transparent;border:0;box-shadow:none;padding:2px;color:#f0f2db;text-shadow:0 1px 3px #000,0 0 4px #b5e0cf66}
+.news-mobile-copy{background:transparent;border:0;box-shadow:none}
+.type-search-television .artifact-caption{background:transparent;border:0;box-shadow:none}
+@media(max-width:600px){
+ .open-catalogue{left:8%;width:84%;top:22%;height:68%;padding:1%}
+ .catalogue-page{padding:6%}
+ .open-catalogue .shipping-record{font-size:13px}
+ .household-balance .balance-catch{padding:8px;gap:8px;font-size:15px}
+ .desk-balance-indicator{width:58px}
+ .desk-balance-indicator:before{left:26px}
+ .desk-balance-indicator i{width:46px;left:6px}
+ .news-mobile-copy{padding:16px 20px}
+}
+@media(prefers-reduced-motion:reduce){.desk-balance-indicator i{transition:none}}
+@media(min-resolution:1.5dppx){.material-token{background-image:url('assets/illustrated/steel_blank.webp')}}
+@media(max-height:500px){
+ .open-catalogue{left:6%;width:88%;top:12%;height:82%;grid-template-rows:minmax(0,1fr)}
+ .catalogue-page{padding:6%}
+ .open-catalogue .shipping-record{font-size:12px;padding:8%;margin-top:6%}
+ .catalogue-left>span{font-size:11px;margin-bottom:12%}
+}

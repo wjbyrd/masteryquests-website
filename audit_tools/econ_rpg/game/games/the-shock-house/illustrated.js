@@ -12,8 +12,10 @@ export const SCENE_OBJECTS={
  policy:[['utility','Cabinet shutter',395,277,197,408],['equipment-meter','Equipment supply meter',185,204,85,83,'ambient']]
 };
 export function assetURL(id,small=false){return `assets/illustrated/${id}${small&&id!=='object_atlas'?'-768':''}.webp`;}
+// Crops always need the full source. High-density phones also use the full plate.
+const smallPlate=()=>typeof innerWidth!=='undefined'&&innerWidth<760&&(globalThis.devicePixelRatio||1)<=1;
 const cache=new Map();
-export function warmAsset(id){const url=assetURL(id,innerWidth<760);if(cache.has(url))return cache.get(url);const img=new Image();img.src=url;const task=img.decode().catch(()=>{});cache.set(url,task);return task;}
+export function warmAsset(id){const url=assetURL(id,smallPlate());if(cache.has(url))return cache.get(url);const img=new Image();img.src=url;const task=img.decode().catch(()=>{});cache.set(url,task);return task;}
 export function warmView(room,view){
  warmAsset(PANORAMAS[room]);const i=CAMERA_ORDER.indexOf(room);
  // At most the two adjacent panoramas; never eagerly load every close-up.
@@ -22,6 +24,7 @@ export function warmView(room,view){
  if(view?.includes('coat')){warmAsset('coat_close');warmAsset('coat_pocket_open');warmAsset('object_atlas');}
  if(view?.includes('drawer'))warmAsset('drawer_close');
  if(view==='search:desk')warmAsset('desk_accounts_close');
+ const closeup={mail:'mail_rack_close',rent:'mail_rack_close',ledger:'study_shelf_close',book:'study_shelf_close',tray:'filing_tray_close',files:'filing_tray_close',bin:'material_bin_close',stock:'material_bin_close',exit:'door_hardware_close'}[view?.replace('search:','')];if(closeup)warmAsset(closeup);
  if(view?.includes('wallet'))warmAsset('wallet_open');
  if(view==='search:desk'||view==='search:utility-bill')warmAsset('utility_account');
  if(view?.includes('bag')){warmAsset('bag_close');warmAsset('object_atlas');}
@@ -44,7 +47,7 @@ export const AMBIENT_OBJECTS={
 export const AMBIENT_COPY={'equipment-meter':'An equipment supply meter. Its cover is sealed.','register-pages':'Blank ruled pages. A brass clasp is fixed to the binding.',coat:'Heavy wool, still damp at the hem. The pockets are empty.',umbrella:'A bent umbrella rests in a battered brass stand.',plant:'The leaves lean toward the window.',chair:'The cushion holds the shape of its last visitor.',lamp:'A warm pool of light falls across the desk.',tools:'The tools are carefully arranged. None has been used recently.',cup:'The tea has gone cold.',pipes:'A faint ticking comes from the cooling pipes.',books:'Travel stories and old novels. Their margins are unmarked.',keys:'Old keys, cut for a different lock.',gardening:'Water sparingly. Turn the pot toward the window.',warranty:'An expired warranty. The machine was bought years ago.'};
 export function plate(id,extra='',crop=null){
  const style=crop?`style="width:${10000/crop[2]}%;height:${10000/crop[3]}%;left:${-crop[0]*100/crop[2]}%;top:${-crop[1]*100/crop[3]}%"`:'';
- return `<img class="asset-plate ${extra}" data-asset="${id}" src="${assetURL(id,typeof innerWidth!=='undefined'&&innerWidth<760)}" ${style} alt="" decoding="async" draggable="false">`;
+ return `<img class="asset-plate ${extra}" data-asset="${id}" src="${assetURL(id,!crop&&smallPlate())}" ${style} alt="" decoding="async" draggable="false">`;
 }
 export function sceneArt(room,s={}){return `<div class="room-art illustrated-panorama" role="img" aria-label="${CAMERA_DESCRIPTIONS[room]}">${plate(s.solvedPuzzles?.includes('exit')&&room==='hall'?'panorama_exit_open':PANORAMAS[room])}${s.solvedPuzzles?.includes('indicators')&&room==='archive'?'<i class="world-radio-light" aria-hidden="true"></i>':''}${s.solvedPuzzles?.includes('radio')&&room==='policy'?'<i class="world-cabinet-light" aria-hidden="true"></i>':''}</div>`;}
 export function installAssetFallback(){document.addEventListener('error',event=>{const el=event.target;if(!el.matches?.('img[data-asset]')||el.dataset.failed)return;el.dataset.failed='true';el.src='assets/cover.svg';el.style.cssText='';el.classList.add('fallback-plate');},{capture:true});}

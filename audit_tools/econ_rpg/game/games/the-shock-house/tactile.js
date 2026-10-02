@@ -9,7 +9,7 @@ const sprites={jar:0,bread:1,receipt:2,postcard:3,book:4,ticket:5,keys:6,coin:7}
 export function sprite(id,x,y,w,h,extra=''){const n=sprites[id];return `<span class="painted-object sprite-${id} ${extra}" aria-hidden="true" style="left:${x}%;top:${y}%;width:${w}%;height:${h}%;--sprite-x:${n%3*50}%;--sprite-y:${Math.floor(n/3)*50}%"><i class="sprite-art"></i></span>`;}
 const prop=(art,label,action,id,x,y,w,h,extra='')=>sprite(art,x,y,w,h,extra)+hit(label,action,id,x,y,w,h);
 const printed=(text,x,y,w,h,extra='')=>`<div class="physical-print ${extra}" style="left:${x}%;top:${y}%;width:${w}%;height:${h}%">${text}</div>`;
-const MINI={
+export const MINI={
  bag:['residence',[31,55,21,29]],desk:['residence',[58,39,37,37]],
  mail:['hall',[67,20,14,19]],meter:['policy',[13,24,12,17]],ledger:['residence',[63,11,24,24]],book:['residence',[63,11,24,24]],
  tray:['workshop',[21,33,14,16]],files:['workshop',[21,33,14,16]],machine:['workshop',[62,29,21,35]],counter:['workshop',[66,39,16,18]],bin:['workshop',[82,55,16,23]],
@@ -18,6 +18,9 @@ const MINI={
 };
 export function inspectionArt(id,room){
  const name=id?.replace('search:','');
+ const dedicated={mail:'mail_rack_close',rent:'mail_rack_close',ledger:'study_shelf_close',book:'study_shelf_close',tray:'filing_tray_close',files:'filing_tray_close',bin:'material_bin_close'}[name];
+ if(dedicated)return [dedicated,null];
+ if(name==='bag')return ['bag_close',null];
  if(name==='coat')return ['coat_close',null];
  if(name==='desk')return ['desk_accounts_close',null];
  if(name==='drawer'||name==='wallet')return ['drawer_close',name==='wallet'?[35,32,35,39]:null];
@@ -28,15 +31,16 @@ export function inspectionArt(id,room){
  return [PANORAMAS[owner],null];
 }
 export function renderTactile(id,s){
+ // The room's bag target opens its contents directly; there is no empty intermediate view.
+ if(id==='bag')id='groceries';
  const moved=x=>seen(s,'moved:'+x),solved=x=>s.solvedPuzzles.includes(x);
  let [art,crop]=inspectionArt(id,s.currentRoom),layers='',cls='';
- if(id==='bag')layers=hit('Bag opening','search','groceries',20,19,65,36);
  if(id==='groceries'){
-  layers=sprite('receipt',35,56,19,23);
-  if(!moved('jar'))layers+=prop('jar','Jar','move','jar',22,25,35,48);
-  if(!moved('bread'))layers+=prop('bread','Bread','move','bread',48,10,38,43);
-  if(moved('jar')&&moved('bread'))layers+=hit('Crumpled receipt','search','receipt',35,56,19,23);
-  layers+=prop('receipt','April grocery receipt','search','tags',54,56,19,23);
+  // Paper is under the groceries, not painted on top of them. Keep both moved flags.
+  if(moved('bread'))layers+=prop('receipt','April grocery receipt','search','tags',54,56,19,23);
+  if(moved('jar')&&moved('bread'))layers+=prop('receipt','Crumpled receipt','search','receipt',35,56,19,23);
+  layers+=moved('jar')?sprite('jar',4,15,22,40,'set-aside'):prop('jar','Jar','move','jar',22,25,35,48);
+  layers+=moved('bread')?sprite('bread',78,18,20,35,'set-aside'):prop('bread','Bread','move','bread',40,40,40,36);
  }
  if(id==='receipt'&&seen(s,'old-food'))return `<h2 class="object-title" data-heading>March grocery receipt</h2>${groceryReceipt(0)}`;
  if(id==='receipt'){
@@ -55,10 +59,10 @@ export function renderTactile(id,s){
   if(moved('wallet')){art='wallet_open';crop=null;layers=hit('Folded pay stubs','open','pay',43,16,29,14);}
   else layers=hit('Wallet clasp','move','wallet',15,16,72,72);
  }
- if(id==='mail')layers=moved('postcard')?hit('Folded rent notice','search','rent',24,50,52,25):prop('postcard','Postcard','move','postcard',20,35, 60,40);
+ if(id==='mail')layers=moved('postcard')?hit('Folded rent notice','search','rent',33,56,35,13):prop('postcard','Postcard','move','postcard',28,49,44,25);
  if(id==='rent'){
   if(seen(s,'rent-read'))return printedEvidence('rent_notice','Rent notice','Alder Court · Unit 4. Monthly rent: March $1,400; April $1,500. Same rooms. Same tenancy.');
-  art=PANORAMAS.hall;crop=MINI.mail[1];cls='artifact-inspection';layers=prop('receipt','Unfold notice','discover','rent-read',27,12,46,76,'');
+  art='mail_rack_close';crop=null;cls='artifact-inspection';layers=prop('receipt','Unfold notice','discover','rent-read',27,12,46,76,'');
  }
  if(id==='meter'){
   layers=hit('Meter cover','move','meter-cover',18,14, 60,65);
@@ -66,11 +70,17 @@ export function renderTactile(id,s){
  }
  if(id==='ledger')layers=hit('Worn books','ambient','books',10,8,80,85);
  if(id==='book'){cls='artifact-inspection';layers=prop('book','Worn book cover','ambient','books',30,8,40,84);}
- if(id==='tray')layers=moved('catalogue')?hit('Shipping tag','search','files',20,30, 60,45):prop('book','Trade catalogue','move','catalogue',24,17,52,70);
- if(id==='files')return `<h2 class="object-title" data-heading>Shipping tag</h2><article class="source-document shipping-record"><header>SHIPPING TAG</header><h2>MARCH 16</h2><p>Emergency route arrival</p></article>`;
+ if(id==='tray'||id==='files'){
+  const opened=id==='files'||moved('catalogue');
+  layers=opened?openCatalogue()+hit('Inspect shipping tag inside catalogue','search','files',49,48,30,37):prop('book','Open trade catalogue','move','catalogue',25,24,44,64);
+  if(id==='files')layers=openCatalogue();
+ }
  if(id==='machine')layers=hit('Counter cover','search','counter',30,28, 40,28)+hit('Time-card rack','search','schedule',82,1,18,64);
  if(id==='counter')layers=hit('Read counter memory','open','production',14,15,72,70);
- if(id==='bin')layers=moved('bin-lid')?'<div class="bin-materials">'+steelBlanks(storedBlanks(s))+'</div>'+hit('Inspect steel blanks','open','stock',15,15,70,75):hit('Lid handle','move','bin-lid',25,18,50,30);
+ if(id==='bin'){
+  if(moved('bin-lid')){art='material_bin_open';layers='<div class="bin-materials">'+steelBlanks(storedBlanks(s))+'</div>'+hit('Inspect steel blanks','open','stock',31,28,40,14);}
+  else layers=hit('Lid handle','move','bin-lid',44,45,14,12);
+ }
  if(id==='records')layers=hit('Narrow ledger','search','register',23,23,14,29);
  if(id==='register'){
   cls='artifact-inspection';const ready=true;
@@ -95,8 +105,9 @@ export function renderTactile(id,s){
  }
  const latestBulletin=id==='television'?s.inspectedObjects.filter(x=>TV_BULLETINS.includes(x)).at(-1):null;
  const caption=latestBulletin?`<article class="news-mobile-copy"><header>NATIONAL NEWS · CHANNEL ${TV_BULLETINS.indexOf(latestBulletin)+1} / 3</header><h3>${FRAGMENTS[latestBulletin][0]}</h3><p>${FRAGMENTS[latestBulletin][1]}</p></article>`:'';
- return `<h2 class="object-title" data-heading>${id==='ticket'?'Tram ticket':SEARCH_TITLES[id]||id}</h2><div style="--scene-ratio:${sceneRatio(crop)}" class="mini-scene search-${id} ${crop&&!cls&&id!=='schedule'?'proportional-scene':''} ${cls} ${moved(id)?'handled':''}" data-closeup="${id}">${plate(art,'',crop)}${layers}</div>${caption}`;
+ return `<h2 class="object-title" data-heading>${id==='ticket'?'Tram ticket':SEARCH_TITLES[id]||id}</h2><div style="--scene-ratio:${sceneRatio(crop)}" class="mini-scene search-${id} ${!cls&&id!=='schedule'?'proportional-scene':''} ${cls} ${moved(id)?'handled':''}" data-closeup="${id}">${plate(art,'',crop)}${layers}</div>${caption}`;
 }
+function openCatalogue(){return `<div class="open-catalogue" aria-label="Open trade catalogue"><div class="catalogue-page catalogue-left" aria-hidden="true"><span>TRADE CATALOGUE</span><div class="catalogue-rules"></div></div><div class="catalogue-page"><article class="shipping-record"><header>SHIPPING TAG</header><h2>MARCH 16</h2><p>Emergency route arrival</p></article></div></div>`;}
 export function tactileDocument(id,s){
  let room,region,content;
  if(id==='invoices'){room='workshop';region=MINI.files[1];content='<article class="source-document"><header>NORTHLINE FREIGHT · SAME RECIPE</header><h2>Input costs</h2><table class="paper-table"><thead><tr><th>Per unit</th><th>Regular</th><th>Emergency</th></tr></thead><tbody><tr><th>Input</th><td>$9</td><td>$18</td></tr><tr><th>Other cost</th><td>$9</td><td>$9</td></tr><tr><th>Total cost</th><td><strong>$18</strong></td><td><strong>$27</strong></td></tr></tbody></table><p>The recipe stays the same. Replacement inputs cost more.</p><p class="handwritten">Match the dated deliveries to the machine’s production record.</p></article>';}
@@ -108,7 +119,8 @@ export function tactileDocument(id,s){
  if(id==='bills'){room='residence';region=MINI.desk[1];content='<article class="source-document"><header>ALDER COURT · HOUSEHOLD CHARGES</header><h2>March and April</h2><table class="paper-table"><thead><tr><th>Charge</th><th>March</th><th>April</th></tr></thead><tbody><tr><th>Rent</th><td>$1,400</td><td>$1,500</td></tr><tr><th>Utilities</th><td>$200</td><td>$500</td></tr><tr><th>Utility use</th><td>500 units</td><td>500 units</td></tr></tbody></table><p>Same rooms. Same utility use.</p></article>';}
 
  if(!content)return null;
- return `<h2 class="object-title" data-heading>${id==='production'?'Machine counter':id==='stock'?'Input bin':id==='invoices'?'Material-cost display':'Household fittings'}</h2><div class="mini-scene ${id==='production'?'machine-memory':id==='stock'?'stock-scene':content.includes('source-document')?'source-workspace':''}">${plate(PANORAMAS[room],'',region)}${content}</div>`;
+ const dedicated={invoices:'filing_tray_close',stock:'material_bin_open',bills:'desk_accounts_close'}[id];
+ return `<h2 class="object-title" data-heading>${id==='production'?'Machine counter':id==='stock'?'Input bin':id==='invoices'?'Material-cost display':'Household fittings'}</h2><div class="mini-scene ${id==='production'?'machine-memory':id==='stock'?'stock-scene':content.includes('source-document')?'source-workspace':''}">${plate(dedicated||PANORAMAS[room],'',dedicated?null:region)}${content}</div>`;
 }
 
 function printedEvidence(art,title,transcript){

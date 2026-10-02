@@ -1,18 +1,20 @@
+import { measurementAction } from './measurement.js';
 import { newRun, start, submit, next, toggleHint, POOLS } from './engine.js';
 export const ACTIVE_KEY='mq.cpi-live.active.v2', LAST_KEY='mq.cpi-live.last.v2';
-export const selectedIDs=run=>Object.fromEntries(Object.keys(POOLS).map(key=>[key,run[key]]));
+export const selectedIDs=run=>({...Object.fromEntries(Object.keys(POOLS).map(key=>[key,run[key]||(key==='meaningID'?'index-108':undefined)])),meaningHistory:run.meaningHistory||['index-108'],...((run.extension?.ids||run.previous?.measurementIDs)?{measurementIDs:run.extension?.ids||run.previous.measurementIDs}:{})});
 export function loadLast(storage){
   try{return JSON.parse(storage.getItem(LAST_KEY))||{};}catch{return {};}
 }
 export function restore(saved){
-  if(!saved||saved.version!==2||typeof saved.runID!=='string'||!saved.runID||!Number.isFinite(saved.startedAt)||!Number.isInteger(saved.seed)||!Array.isArray(saved.history)||saved.history.length>10000)throw Error('Invalid saved run');
-  let run=newRun(saved.seed,saved.runID,saved.startedAt,saved.previous);
+  if(!saved||![2,3].includes(saved.version)||typeof saved.runID!=='string'||!saved.runID||!Number.isFinite(saved.startedAt)||!Number.isInteger(saved.seed)||!Array.isArray(saved.history)||saved.history.length>10000)throw Error('Invalid saved run');
+  let run=newRun(saved.seed,saved.runID,saved.startedAt,saved.previous,saved.version);
   for(const entry of saved.history){
     const before=run;
     if(entry.action==='start')run=start(run);
     else if(entry.action==='answer')run=submit(run,entry.value);
     else if(entry.action==='next')run=next(run);
     else if(entry.action==='hint')run=toggleHint(run,entry.value);
+    else if(entry.action==='measurement')run=measurementAction(run,entry.value.action,entry.value.value);
     else throw Error('Unknown saved action');
     if(run===before)throw Error('Invalid saved action');
   }

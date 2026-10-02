@@ -19,3 +19,38 @@
   .phase-line{margin-bottom:14px}
   .selection-help{margin:8px 0 14px}
 }
+
+/* Readability pass: preserve the accounts layout and make each result's role clear. */
+.component dt{display:flex;align-items:center;justify-content:center;min-height:1.7rem;text-align:center}
+.component dt b{font-size:1.15rem;line-height:1.4;font-weight:750}
+.component dd{text-align:center}
+.component-delta{font-size:.95rem;line-height:1.5;font-weight:650}
+#gdp-change{font-size:.95rem;line-height:1.5;letter-spacing:0}
+.receipt ul{display:flex;flex-wrap:wrap;gap:6px 18px}
+.receipt li{padding:4px 0;font-size:1rem;font-weight:700;color:var(--teal)}
+.audit-table{font-size:1rem;line-height:1.55;margin-top:16px}
+.audit-table thead th{font-size:.78rem;font-weight:650;line-height:1.4;text-align:left}
+.audit-table th:first-child{width:46%}
+.audit-table tbody th,.audit-table tbody td{padding:12px 10px}
+.audit-table .ledger-number{font-size:.78rem;line-height:1.4;margin-bottom:6px}
+.audit-posting{display:block;margin-bottom:8px}
+.audit-posting:last-child{margin-bottom:0}
+.audit-account{display:block;font-size:.8rem;font-weight:600;color:var(--muted)}
+.audit-amount{display:block;font-size:1.4rem;line-height:1.3;font-weight:750;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap}
+.audit-table td:last-child{font-size:.85rem;line-height:1.5}
+.audit-table button{font-size:.85rem}
+.audit-mobile-label{display:none}
+@media(max-width:520px){
+ .component dd{font-size:1.25rem}
+ .component-delta{font-size:.9rem}
+ .counter-bottom{flex-wrap:wrap;gap:4px 12px}
+ .audit-table,.audit-table tbody{display:block}
+ .audit-table thead{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+ .audit-table tbody tr{display:grid;grid-template-columns:minmax(0,1fr) minmax(88px,auto);gap:10px 14px;margin-bottom:14px;padding:14px;border:1px solid var(--line);border-radius:10px}
+ .audit-table tbody th,.audit-table tbody td{display:block;width:auto;padding:0;border:0}
+ .audit-table tbody th:first-child{width:auto;grid-column:1/-1;font-size:1rem;line-height:1.6}
+ .audit-table tbody td:last-child{align-self:end;padding-bottom:2px}
+ .audit-mobile-label{display:block;font-size:.75rem;color:var(--muted);margin-bottom:5px}
+ .audit-amount{font-size:1.5rem}
+ .audit-table button{min-height:44px;margin:0}
+}

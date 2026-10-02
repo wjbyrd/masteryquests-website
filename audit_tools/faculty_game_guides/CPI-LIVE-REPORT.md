@@ -1,5 +1,11 @@
 # CPI Live Faculty Guide — completion report
 
+## October 2 extension update
+
+The current guide is five pages. Added CPI Measurement Challenges with optional Behind the Index mechanics, all nine authored contexts and worked arithmetic, careful interpretation limits, replay/save behavior, and BLS background links. Updated the description of basket hints and Question 5 variation. Preserved every existing core teaching section. Rebuilt only the CPI guide with the existing builder; used a two-column comparison table supported by that builder. Rendered in Word and reviewed all five pages. No other faculty-guide output or resource-page file was modified by this update.
+
+The original completion record follows.
+
 Completed October 1, 2026. Final guide: **3 pages**, approximately **1,350 words**, excluding repeating headers/footers. CPI Live and other faculty guides were not modified. Nothing was committed, pushed, deployed, or changed in production configuration.
 
 ## Files

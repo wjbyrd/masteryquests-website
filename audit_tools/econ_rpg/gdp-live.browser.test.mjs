@@ -10,7 +10,9 @@ const { chromium } = createRequire(import.meta.url)(process.env.PLAYWRIGHT_MODUL
 const out = fileURLToPath(new URL('../../tmp/econ-rpg/gdp-live/', import.meta.url));
 await mkdir(out, { recursive: true });
 const server = previewServer(); await new Promise(r => server.listen(0, '127.0.0.1', r));
-const origin = `http://127.0.0.1:${server.address().port}`;
+const origin = process.env.GDP_LIVE_ORIGIN || `http://127.0.0.1:${server.address().port}`;
+const hubPath = process.env.GDP_LIVE_HUB || '/games/';
+const gamePath = hubPath + 'gdp-live/';
 const browser = await chromium.launch({ channel: process.env.BROWSER_CHANNEL || 'chrome', headless: true });
 const errors = [], external = [], results = [];
 const action = (page, name) => page.locator(`[data-action="${name}"]`).click();
@@ -44,14 +46,14 @@ async function setup(viewport, seed, reduce = false, blocked = false) {
     Object.defineProperty(crypto, 'getRandomValues', { value(array) { if (array instanceof Uint32Array && array.length === 1) { array[0] = seed; return array; } return original(array); } });
     if (blocked) Object.defineProperty(window, 'localStorage', { get() { throw new Error('Blocked for QA'); } });
   }, { seed, blocked });
-  await page.goto(origin + '/games/gdp-live/');
+  await page.goto(origin + gamePath);
   await page.locator('[data-action="start"]').waitFor();
   return page;
 }
 try {
-  const viewports = [{width:1920,height:1080},{width:1366,height:768},{width:900,height:900},{width:390,height:844},{width:320,height:740}];
-  for (let index = 0; index < AUDITS.length; index++) {
-    const audit = AUDITS[index]; let seed = 1;
+  const viewports = [{width:1920,height:1080},{width:1366,height:768},{width:768,height:1024},{width:390,height:844},{width:320,height:740},{width:844,height:390}];
+  for (let index = 0; index < viewports.length; index++) {
+    const audit = AUDITS[index % AUDITS.length]; let seed = 1;
     while (e.newRun(seed).auditID !== audit.id) seed++;
     const viewport = viewports[index], reduce = index === 3 || index === 4, label = `${viewport.width}-${audit.id}`;
     const page = await setup(viewport, seed, reduce);
@@ -60,6 +62,10 @@ try {
     await totals(page, CONFIG.baseline); await layout(page, label + '-opening');
     await page.locator('[data-action="start"]').focus(); await page.keyboard.press('Enter'); s = e.start(s);
     await layout(page, label + '-posting');
+    for(const labelNode of await page.locator('.component dt b').all()) {
+      const size=await labelNode.evaluate(el=>parseFloat(getComputedStyle(el).fontSize));assert(size>=18,'component labels are visibly larger');
+      const centered=await labelNode.evaluate(el=>{const a=el.getBoundingClientRect(),b=el.parentElement.getBoundingClientRect();return Math.abs((a.left+a.right-b.left-b.right)/2)<1&&Math.abs((a.top+a.bottom-b.top-b.bottom)/2)<1;});assert(centered,'component heading centered on both axes');
+    }
     if (viewport.width >= 1100) {
       for (const selector of ['#gdp-number','[data-action="post"]']) {
         const box = await page.locator(selector).boundingBox();
@@ -90,6 +96,17 @@ try {
         assert.equal(await page.locator('#gdp-number').getAttribute('data-animating'), 'true');
       }
       await settled(page);
+      assert.equal(await page.locator('#gdp-change').count(),1);
+      assert.equal(await page.locator('#work .net-change').count(),0);
+      assert.doesNotMatch(await page.locator('#work .receipt').innerText(), /\$|NET GDP CHANGE/);
+      assert.doesNotMatch(await page.locator('#work .feedback').innerText(), /\$[\d,.]+/);
+      for(const delta of await page.locator('.account-changed .component-delta').all()) {
+        const sizes=await delta.evaluate(el=>[parseFloat(getComputedStyle(el).fontSize),parseFloat(getComputedStyle(el.previousElementSibling).fontSize)]);
+        assert(sizes[0]>=14&&sizes[0]<sizes[1],'delta increased but remains smaller than component total');
+        assert((await delta.innerText()).length>0);
+      }
+      for(const delta of await page.locator('.component:not(.account-changed) .component-delta').all())assert.equal((await delta.innerText()).trim(),'');
+      if(n===0)await layout(page,label+'-correct-result');
       if (scenario.phase === 'multi') {
         assert.equal(await target(page), previous); assert.equal(await page.locator('#gdp-number').getAttribute('data-animating'), 'false');
         assert.match(await page.locator('#gdp-change').innerText(), /\$0B/);
@@ -105,6 +122,14 @@ try {
     assert.equal(s.stage, 'identity'); assert.match(await page.locator('.identity').innerText(), /GDP = C \+ I \+ G \+ X − M/);
     await action(page, 'audit'); s = e.beginAudit(s); await settled(page); await totals(page, s.accounts);
     await layout(page, label + '-audit');
+    assert.doesNotMatch(await page.locator('#work').innerText(),/New draft batch[. ·]*[Oo]ne bad posting|Exactly one entry is wrong/);
+    for(const value of await page.locator('.audit-amount').all())assert(await value.evaluate(el=>parseFloat(getComputedStyle(el).fontSize)>=22));
+    for(const entry of await page.locator('.audit-table tbody th').all())assert(await entry.evaluate(el=>parseFloat(getComputedStyle(el).fontSize)>=16&&el.scrollWidth<=el.clientWidth+1));
+    if(viewport.width<=520)for(const entry of await page.locator('.audit-table tbody th').all()) {
+      assert(await entry.evaluate(el=>el.getBoundingClientRect().width>el.parentElement.getBoundingClientRect().width*.85),'mobile entry uses the full row width');
+    }
+    assert.equal(await page.getByRole('table',{name:'Audit postings'}).count(),1);
+    assert.equal(await page.getByRole('columnheader',{name:'Currently posted'}).count(),1);
     await page.locator('[data-audit="meals"]').click(); s = e.identifyAudit(s, 'meals');
     await totals(page, s.accounts); assert.match(await page.locator('.feedback').innerText(), /correctly records/);
     await page.locator('[data-audit="bad"]').click(); s = e.identifyAudit(s, 'bad');
@@ -157,9 +182,11 @@ try {
   const scenario = e.currentScenario(e.newRun(1)); await select(page,scenario.postings); await action(page,'post');
   assert.equal(await page.locator('[data-action="next"]').count(),1);
   await page.emulateMedia({reducedMotion:'reduce'}); await settled(page);
-  await page.goto(origin+'/games/'); await page.getByRole('link',{name:'PLAY GAME: GDP Live',exact:true}).click();
+  await page.goto(origin+hubPath); await page.getByRole('link',{name:'PLAY GAME: GDP Live',exact:true}).click();
   assert.match(page.url(),/\/games\/gdp-live\/$/); await page.close();
-  assert.deepEqual(errors,[]); assert.deepEqual(external,[]);
+  // Report hosting diagnostics before assertions, including CSP-blocked analytics.
+  // They remain failures here rather than being hidden by a game-specific filter.
   await writeFile(out+'results.json',JSON.stringify({results,errors,external},null,2));
   console.log(JSON.stringify({results,errors,external},null,2));
+  assert.deepEqual(errors,[]); assert.deepEqual(external,[]);
 } finally { await browser.close(); await new Promise(r => server.close(r)); }

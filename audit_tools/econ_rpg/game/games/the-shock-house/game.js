@@ -19,7 +19,7 @@ let trayOpen=false, selection={}, lastView=null, lastRoom=null, pan=0, viewStack
 let zoomStack=[],pendingOrigin=null,retreat=null,approaching=false;
 installAssetFallback();
 const btn=(label,action,id='',extra='')=>`<button data-action="${action}" data-id="${id}" ${extra}>${label}</button>`;
-const returnToGames='<a class="return-games" href="/games/" data-return-games>RETURN TO GAMES</a>';
+const returnToGames='<a class="return-games" href="https://masteryquests.org/beta-testing/october-games-b9021b0dcb5f/games/" data-return-games>RETURN TO GAMES</a>';
 function announce(text){const el=document.querySelector('#announcement');el.textContent='';requestAnimationFrame(()=>el.textContent=text);}
 // Preserve the same origin's legacy save before following a normal hub link.
 document.addEventListener('click',event=>{if(event.target.closest('[data-return-games]')&&(started||hasSave))persist();});
@@ -93,7 +93,7 @@ function changeRoom(id){
   if(id==='policy'&&state.inventory.includes('access')){state.inventory=state.inventory.filter(x=>x!=='access');inform('The utility cabinet key releases the cabinet shutter.');}
   else notice='';
 }
-function openView(id){if(id==='national')id='indicators';if(id==='notebook')id='search:book';if(view!==id){viewStack.push(view);zoomStack.push(pendingOrigin);view=id;}pendingOrigin=null;inspect(state,id);hintOpen=false;trayOpen=false;}
+function openView(id){if(id==='national')id='indicators';if(id==='notebook')id='search:book';if(view!==id){viewStack.push(view);zoomStack.push(pendingOrigin);view=id;}pendingOrigin=null;inspect(state,id);if(id==='search:tray'&&seen(state,'moved:catalogue'))inspect(state,'search:files');hintOpen=false;trayOpen=false;}
 function putDown(){stopAudio();view=viewStack.pop()||null;retreat=zoomStack.pop()||null;hintOpen=false;}
 function zoomTransform(frame,o){const r=frame.getBoundingClientRect();return `translate(${(0.5-o.x)*r.width*o.scale}px,${(0.5-o.y)*r.height*o.scale}px) scale(${o.scale})`;}
 async function approach(control){
@@ -158,8 +158,11 @@ document.addEventListener('click',async event=>{
   if(action==='search'){warmView(state.currentRoom,'search:'+id);await approach(control);openView('search:'+id);focus=true;}
   if(action==='move'){
     const art=control.previousElementSibling;
-    if(art?.classList.contains('painted-object')&&!matchMedia('(prefers-reduced-motion: reduce)').matches){control.disabled=true;await art.animate([{transform:'translate(0,0) rotate(0)'},{transform:'translate(45px,-18px) rotate(9deg)',opacity:.3}],{duration:260,easing:'ease-in'}).finished.catch(()=>{});}
-    inspect(state,'moved:'+id);announce('The object moves.');
+    if(art?.classList.contains('painted-object')&&!matchMedia('(prefers-reduced-motion: reduce)').matches){control.disabled=true;await art.animate(id==='catalogue'?[{transform:'perspective(900px) rotateY(0)',transformOrigin:'left center'},{transform:'perspective(900px) rotateY(-65deg)',transformOrigin:'left center'}]:[{transform:'translate(0,0) rotate(0)'},{transform:'translate(45px,-18px) rotate(9deg)'}],{duration:320,easing:'ease-in-out'}).finished.catch(()=>{});}
+    inspect(state,'moved:'+id);
+    // The existing discovery is now visible inside the opened book immediately.
+    if(id==='catalogue')inspect(state,'search:files');
+    announce(id==='catalogue'?'The catalogue opens. A shipping tag is tucked inside.':'The object moves.');
   }
   if(action==='flip'){const marker='moved:'+id;state.inspectedObjects=seen(state,marker)?state.inspectedObjects.filter(x=>x!==marker):[...state.inspectedObjects,marker];}
   if(action==='locked')inform('Locked.');

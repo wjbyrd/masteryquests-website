@@ -29,3 +29,42 @@
 @media(max-width:540px){.cpi-chart{padding:8px}.cpi-chart text{font-size:20px}.cpi-chart .chart-value{font-size:18px}}
 @media(forced-colors:active){.cpi-chart text{fill:CanvasText}.cpi-chart path,.chart-line,.chart-bar{stroke:CanvasText}.chart-point,.chart-bar{fill:CanvasText}}
 @media(forced-colors:active){.cpi-receipt{background:Canvas;color:CanvasText}.cpi-receipt *{color:CanvasText}.cpi-options [aria-pressed=true]{outline:2px solid Highlight}}
+
+/* Readable basket quantities and three distinct measurement readouts. */
+.cpi-receipt tbody th{font-size:.95rem}
+.cpi-receipt tbody td{font-size:.95rem}
+.cpi-receipt tbody th .basket-quantity{display:block;margin:4px 0 0;font-size:.85rem;font-weight:500;color:#314f63}
+.receipt-total strong{font-size:1.8rem}
+.basket-help{margin:8px 0 16px;color:#314f63;font-size:.88rem}
+.basket-help summary{cursor:pointer;min-height:44px;align-content:center;width:fit-content;color:#314f63}
+.basket-help p{line-height:1.55;margin:8px 0}
+.basket-help details{padding-left:12px}
+.index-monitor{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;padding-top:20px;margin-top:18px}
+.index-monitor>div{min-width:0}
+.index-monitor dt{font-size:.85rem}
+.index-monitor dd,.index-monitor>div:last-child dd{font-size:1.65rem;margin:12px 0 8px;line-height:1.3}
+.index-monitor dt small{font-size:.75rem;line-height:1.5;min-height:2.25em}
+.extension-subtitle{color:var(--teal)}
+.extension-readouts{margin:14px 0;font-variant-numeric:tabular-nums}
+.extension-readouts>div{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:10px 0;border-top:1px solid var(--line);padding-top:8px}
+.extension-readouts dt{font-size:.85rem;line-height:1.5}
+.extension-readouts dd{font-size:1.15rem;font-weight:750;margin:0;white-space:nowrap;color:var(--gold)}
+.quantity-tokens{display:flex;align-items:center;flex-wrap:wrap;gap:5px;margin:8px 0 14px}
+.quantity-tokens i{display:block;width:20px;height:24px;border:2px solid var(--teal);border-radius:4px;background:#174c5d}
+.quantity-tokens b{font-size:.9rem;margin-left:4px}
+.swap-controls{display:grid;gap:8px}
+.swap-controls button{min-height:44px;font-size:.85rem;line-height:1.4;padding:10px}
+.new-product-slot{padding:14px;border:1px dashed #91a9c5;border-radius:8px;line-height:1.6;font-size:.9rem;margin-top:12px}
+.opportunity,.updated-basket{padding:16px;border-left:3px solid var(--teal);background:#071f3c;margin:16px 0}
+.product-price{font-size:1.6rem!important;font-weight:750;color:var(--gold)}
+.measurement-summary{display:grid;gap:14px;margin:20px 0}
+.measurement-summary section{padding:18px;border:1px solid #91a9c5;border-radius:10px}
+.measurement-summary h3{margin:0;color:var(--teal)}
+.comparison-label{font-size:.8rem;color:var(--muted)}
+@media(max-width:540px){
+  .index-monitor{gap:12px;grid-template-columns:1fr 1fr}
+  .index-monitor>div:last-child{grid-column:1/-1;border-top:1px solid #9daeb8;padding-top:12px;display:grid;grid-template-columns:1fr 1fr;align-items:baseline}
+  .index-monitor>div:last-child dd{margin:0}
+  .index-monitor dd{font-size:1.65rem}
+  .cpi-receipt th:first-child{width:33%}
+}

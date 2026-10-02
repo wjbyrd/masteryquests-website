@@ -10,7 +10,7 @@ Game 12 in the October Mastery Quests preview collection. One continuous interio
 
 Run `node audit_tools/econ_rpg/serve.mjs` from the repository root, then open `http://127.0.0.1:4179/games/signal-house/?experience=illustrated`. The server also retains the historical local URL for saved bookmarks. ES modules require HTTP rather than `file://`. Keep the same hostname and port to retain access to the same browser save.
 
-The deployment builder copies this same runtime to the configured unlisted route, and to `/games/signal-house/` when public release is enabled. Return to Games always targets the actual public hub, `/games/`. Embed the hosted URL in a Canvas iframe with scripts enabled, preferably at least 800px tall. Edge arrows, left/right keyboard keys, and horizontal touch swipes turn to adjacent views. Portrait navigation sits below the scene so it cannot cover objects. Close-ups scroll vertically. Storage restrictions in embedded browsers are caught and explained; the current tab remains playable.
+The deployment builder copies this same runtime to the configured unlisted route, and to `/games/signal-house/` when public release is enabled. Return to Games targets the October beta Games hub, `https://masteryquests.org/beta-testing/october-games-b9021b0dcb5f/games/`, including when the game is opened through the separate Signal House preview or local development server. Embed the hosted URL in a Canvas iframe with scripts enabled, preferably at least 800px tall. Edge arrows, left/right keyboard keys, and horizontal touch swipes turn to adjacent views. Portrait navigation sits below the scene so it cannot cover objects. Close-ups scroll vertically. Storage restrictions in embedded browsers are caught and explained; the current tab remains playable.
 
 No runtime libraries, remote fonts, network services, generated questions, or build step are required. No personal information is collected or transmitted.
 
@@ -83,7 +83,7 @@ The permanent public route is `/games/signal-house/`. The separate unlisted devi
 
 The source folder `the-shock-house`, test folder `tests/shock-house`, `SHOCK_HOUSE_*` test environment variables, and save key `mastery-quests.shock-house.v1` remain intentionally unchanged. They are internal compatibility identifiers, not player-facing titles. Saves stay on their original browser origin; a localhost save is not automatically transferred to the live website. On one origin, the preview and eventual public route use the same save key.
 
-RETURN TO GAMES targets `/games/` from the title, results, and Case Menu. The unlisted route has no public navigation links and uses both a robots meta tag and an `X-Robots-Tag` response header. It is a device-testing URL, not an access-controlled page. See `audit_tools/econ_rpg/SIGNAL-HOUSE-RELEASE-REPORT.md` for deployment and validation results.
+RETURN TO GAMES targets the October beta Games hub from the title, results, and Case Menu. The beta hub card opens `./signal-house/?experience=illustrated`. The unlisted route has no public navigation links and uses both a robots meta tag and an `X-Robots-Tag` response header. It is a device-testing URL, not an access-controlled page. See `audit_tools/econ_rpg/SIGNAL-HOUSE-RELEASE-REPORT.md` for deployment and validation results.
 
 ## Validation
 

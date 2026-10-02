@@ -29,7 +29,7 @@ export function publishGamesPreview(root, dist) {
           if (entry.name.endsWith('.html')) {
             text = text.replace(/<meta\s+name="robots"[^>]*>\s*/gi, '')
               .replace('</head>', '<meta name="robots" content="noindex,nofollow">\n</head>');
-            if (rel === 'games/index.html') text = text.replace('Private instructor preview. These games have not been published.', 'Unlisted instructor preview · All 12 games are available for testing.');
+            if (rel === 'games/index.html') text = text.replace('Private instructor preview. These games have not been published.', `Unlisted instructor preview · All ${config.gameCount} games are available for testing.`);
           }
           fs.writeFileSync(dest, text);
         } else fs.copyFileSync(path.join(source, rel), dest);

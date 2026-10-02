@@ -1,5 +1,63 @@
 # CPI LIVE — instructional refinement and QA
 
+## October 2, 2026 — readability and optional measurement extension
+
+This update supersedes the September 23 interface descriptions below. The core ten-check sequence, accounting formulas, scoring, weighting, audits, timeline, and artwork remain intact.
+
+### Files in this pass
+
+Runtime under `game/games/cpi-live/`: modified `app.js`, `config.js`, `engine.js`, `storage.js`, `view.js`, `cpi-live.css`; added `measurement.js` and `measurement-view.js`.
+
+Tests: updated `cpi-live.test.mjs` and `cpi-live.browser.test.mjs`; added `cpi-live-measurement.test.mjs` and `cpi-live-measurement.browser.test.mjs`.
+
+Documentation: this report, `audit_tools/faculty_game_guides/CPI-LIVE-REPORT.md`, `docs/faculty-guides/cpi-live.md`, and `downloads/resources/cpi-live-faculty-guide.docx`. Other faculty guides, resource-page work, game artwork, and unrelated games are preserved.
+
+### Basket and readout polish
+
+- Plain `Qty N` text is 0.85rem (13.6px), up from 0.65–0.7rem. Item names and prices remain larger at 0.95rem. Quantities are not controls.
+- Retained Fixed market basket; removed Quantities fixed badge and each item’s fixed suffix.
+- Pending basket total is an em dash; removed To calculate and the persistent calculation explanation.
+- Native, keyboard-accessible Need help? disclosure starts closed. A second disclosure reveals Basket Cost = Σ(Price × Quantity). Existing progressive CPI/inflation hints are unchanged.
+- CPI, Inflation, and Base Year have dedicated readouts. The base-year card wraps below the other two on phones; primary values are 1.65rem.
+
+### Question 5
+
+Inspected PHASES and view/engine: question 5 is `meaning`, an index-level interpretation, previously hard-coded CPI 108. It is not the weighting question (6), audit (7), or timeline (8–10).
+
+Six authored index levels: 104, 108, 112, 115, 120, 125. The answer is always the basket’s 4%, 8%, 12%, 15%, 20%, or 25% increase since the base year; annual inflation still requires a previous-period index. Answer positions rotate. Selection joins the existing deterministic run-level pools with five-run recent history, so all six appear before a repeat. The variant and history survive reload. Existing version-2 saves retain their original 108 question and feedback during replay validation.
+
+### Behind the Index
+
+Optional, unlocked only after core completion. Core score and completion remain intact; core replay and Return to Games remain available. Back to Core Results preserves extension progress. The ending uses three comparison panels and retains the normal CPI/inflation foundation.
+
+1. **Substitution:** four purchases, initially two of each product. A single permitted shift changes the bundle to one plus three. Explicit household preferences bound substitution and make the alternative acceptable. Beef/chicken: original base $20, fixed current $28 (+40%), substituted $22 (+10% against original base cost). Apples/pears: $8, $12 (+50%), $10 (+25%). Cereal brands: $16, $24 (+50%), $20 (+25%). The student moves a token and identifies overstatement. This alternative is not labeled true CPI.
+2. **New goods:** the old-basket position explicitly has no base-period product or price. Students reject inventing a base price, inspect a consumer opportunity, then select a later basket update with appropriate linking. Streaming $20 versus $12; commute $40 versus $30; approved generic $30 versus $20. Savings are illustrative opportunities, not index changes. New goods are not excluded forever.
+3. **Quality:** students enter comparable price, raw percentage change, and adjusted percentage change. Laptop: $1,100 − $150 = $950 versus old $1,000. Phone: $550 − $75 = $475 versus $500. Washer: $880 − $120 = $760 versus $800. Each raw change is +10%; each adjusted change is −5%. Added-quality values are explicit simplified analyst estimates, not performance-index ratios or perfect measurements.
+
+Each episode has three authored variants (27 reachable initial combinations). Extension replay avoids the previous selection in all three pools. The last extension selections also carry across core replays.
+
+### Persistence and accessibility
+
+Run version 3 uses the existing storage keys and replay-validated action history. Version 2 remains supported without resetting active progress. Extension saves include selected contexts, current episode, bounded quantity choice, submitted answers, feedback, and attempts. Unsubmitted typing is not persisted, matching core behavior. Core first-attempt score is unaffected.
+
+Native buttons, tables with scoped headers, labeled fields, keyboard focus, status announcements, quantity counts as text as well as symbols, and 44px minimum targets are retained. The light-panel disclosure has an explicit dark text color.
+
+### Verification
+
+- 16 Node test groups passed: unchanged 25 basket/shock totals, all weighting and audit cases, 2,500 core combinations, 10,000 no-repeat selections, 120 Q5 runs, 300 extension runs covering all 27 combinations, replay validation after each episode interaction, and genuine HEAD version-2 save compatibility.
+- 25 complete core browser runs passed: keyboard operation, wrong answers/retries, hints, save/reload, replay, scoring, return routing, all authored core pools, 200% zoom, reduced motion and normal motion.
+- Four extension browser runs passed at 390×844, 844×390, 768×1024, and 1366×900: interactions, errors, replay, save/reload mid-episode, retained core score, touch targets, and no horizontal overflow. Core also passed at 320px.
+- Zero local page, console, or HTTP failures. Screenshots reviewed for opening, comparisons, new-good opportunity, quality arithmetic, and ending.
+- Faculty guide rendered to five pages with Word and inspected page by page. All comparison values are visible; existing guide sections remain.
+
+### Publication status
+
+Verified local source and staged release only. Cloudflare deployment was rejected by automatic approval review because the shared assets staging directory had not been fully verified against the live site and explicit authorization for a broad deployment was not established. Nothing from this pass was published. The nine intended release files are eight CPI runtime assets and the CPI faculty-guide download. Publication requires user approval and verification of the rest of the staged site before retrying.
+
+Remaining human playtesting: instructional pacing, whether students understand the substitution suitability assumption, clarity of the two-step new-goods decision, and comfort with the three quality fields on a physical phone. No known functional blockers.
+
+---
+
 2026-09-23. Private instructor preview; no push or deployment.
 
 ## Scope and landing-page artwork

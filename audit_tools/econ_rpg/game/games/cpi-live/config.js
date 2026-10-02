@@ -44,6 +44,7 @@ export const CONFIG = freeze({
     { id: 'falling-prices', values: [100, 110, 108, 105] },
     { id: 'high-level-slow-rise', values: [100, 120, 122, 118] },
   ],
+  meanings: [104, 108, 112, 115, 120, 125].map((index,i)=>({id:`index-${index}`,index,order:i%4})),
   auditExample: [100, 108, 112],
   disinflationExample: [100, 108, 112],
 });

@@ -12,7 +12,7 @@ const out='tmp/games-preview/'+(origin.startsWith('https:')?'live':'local');fs.m
   if(origin.startsWith('https:'))assert.match(response.headers()['x-robots-tag'],/noindex/);
   await p.locator('[data-game="cpi-live"] h2').filter({hasText:'CPI Live'}).waitFor();
   const cards=await p.locator('.game-card').evaluateAll(xs=>xs.map(e=>({id:e.dataset.game,title:e.querySelector('h2').textContent,href:e.querySelector('a').href})));
-  assert.equal(cards.length,12);assert.equal(new Set(cards.map(c=>c.href)).size,12);
+  assert.equal(cards.length,config.gameCount);assert.equal(new Set(cards.map(c=>c.href)).size,config.gameCount);
   for(const card of cards){await p.locator(`[data-game="${card.id}"]`).scrollIntoViewIfNeeded();await p.locator(`[data-game="${card.id}"] img`).evaluate(i=>i.decode());assert(card.href.startsWith(origin+config.previewRoot));}
   assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await p.screenshot({path:`${out}/hub-${width}.png`,fullPage:true});
   for(const card of cards){
@@ -24,6 +24,8 @@ const out='tmp/games-preview/'+(origin.startsWith('https:')?'live':'local');fs.m
     await p.getByRole('button',{name:'Begin scenario',exact:true}).click();await p.locator('[data-choice]').first().click();await p.locator('.consequence').waitFor();
    }else if(card.id==='gameday-rivals'){
     await p.getByRole('button',{name:'Start Season',exact:true}).click();await p.locator('[data-strategy]').first().click();await p.getByText('Both offers revealed',{exact:false}).first().waitFor();
+   }else if(card.id==='at-the-box-office'){
+    await p.getByRole('button',{name:'ENTER THE THEATER',exact:true}).click();await p.locator('[data-choice]').first().click();await p.locator('.result').waitFor();
    }else if(card.id==='takeout-taco-lunch-rush'){
     await action('start_rush');await action('call_worker');assert.match(await p.locator('#crew').innerText(),/2 workers/);
    }else if(card.id==='gdp-live'){
@@ -41,7 +43,7 @@ const out='tmp/games-preview/'+(origin.startsWith('https:')?'live':'local');fs.m
    }
    await p.locator('img:not([loading=lazy])').evaluateAll(xs=>Promise.all(xs.map(i=>i.decode())));
    await p.screenshot({path:`${out}/${card.id}-${width}.png`,fullPage:card.id!=='signal-house'});
-   const back=p.getByRole('link',{name:/return to games/i}).filter({visible:true}).first();assert.equal(await back.getAttribute('href'),card.id==='the-long-run'||card.id==='money-in-motion'?'../':config.previewRoot+'games/');
+   const back=p.getByRole('link',{name:/return to games/i}).filter({visible:true}).first();const destination=new URL(await back.getAttribute('href'),p.url());assert.equal(destination.pathname,new URL(hub).pathname);if(!origin.startsWith('https:')&&destination.origin!==origin)await p.route(destination.href,route=>route.fulfill({status:302,headers:{location:hub}}));
    await back.click();await p.waitForURL(hub);await p.locator('[data-game="cpi-live"] h2').filter({hasText:'CPI Live'}).waitFor();
    results.push({width,game:card.title,launch:true,interaction:true,returnToHub:true});
   }

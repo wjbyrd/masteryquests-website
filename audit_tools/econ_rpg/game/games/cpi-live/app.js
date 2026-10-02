@@ -1,3 +1,4 @@
+import { measurementAction } from './measurement.js';
 import { CONFIG } from './config.js';
 import * as engine from './engine.js';
 import { receipt, work } from './view.js';
@@ -49,11 +50,23 @@ function answer(value){
     const input=view.querySelector('[aria-invalid="true"]')||view.querySelector('input');input.focus();input.select();
   }else feedback.focus();
 }
+function extend(action,value=null){
+  const before=run;run=measurementAction(run,action,value);if(run===before)return;
+  recorder.log('measurement_'+action,before,run,{episode:run.extension.episode,variants:run.extension.ids});
+  announcement.textContent='';
+  save();render(action==='answer'?'extension-feedback':action==='shift'?null:'stage-title');
+  if(action==='shift'){view.querySelector(`[data-shift="${1-value}"]`)?.focus();announcement.textContent=`Bundle changed. ${value?'One purchase moved to the cheaper alternative.':'Original quantities restored.'}`;}
+  if(action==='answer')announcement.textContent=run.extension.feedback;
+}
 view.addEventListener('submit',event=>{
+  if(event.target.id==='quality-form'){event.preventDefault();extend('answer',Object.fromEntries([...new FormData(event.target)].map(([k,v])=>[k,engine.parseNumber(v,k==='comparable'?'currency':'rate')])));return;}
   if(event.target.id!=='answer-form')return;event.preventDefault();answer(Object.fromEntries(new FormData(event.target)));
 });
 view.addEventListener('click',event=>{
   const target=event.target.closest('button');if(!target||target.disabled)return;
+  if(target.dataset.measurement){extend(target.dataset.measurement);return;}
+  if(target.dataset.shift!==undefined){extend('shift',Number(target.dataset.shift));return;}
+  if(target.dataset.measurementAnswer){extend('answer',target.dataset.measurementAnswer);return;}
   if(target.dataset.answer){answer(target.dataset.answer);return;}
   const before=run;
   if(target.dataset.hint){

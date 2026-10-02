@@ -11,11 +11,11 @@ const out='tmp/econ-rpg/cpi-live-refinement';await mkdir(out,{recursive:true});
 const server=previewServer();await new Promise(r=>server.listen(0,'127.0.0.1',r));const origin=`http://127.0.0.1:${server.address().port}`;
 const browser=await chromium.launch({channel:'chrome',headless:true});
 const errors=[],external=[],checks=[],coverage=new Set(), seeds=[];let zoomContext;
-for(let seed=0;coverage.size<24&&seed<10000;seed++){
+for(let seed=0;coverage.size<30&&seed<10000;seed++){
   const picks=engine.selections(seed),keys=Object.entries(picks).map(([k,v])=>`${k}:${v}`);
   if(keys.some(k=>!coverage.has(k))){seeds.push(seed);keys.forEach(k=>coverage.add(k));}
 }
-assert.equal(coverage.size,24);
+assert.equal(coverage.size,30);
 async function reach(page,locator){
   await locator.waitFor();
   for(let n=0;n<80;n++){
@@ -34,7 +34,7 @@ async function inspect(page,label){
   for(const input of await page.locator('input').all())assert.ok(await input.evaluate(e=>e.labels.length===1&&!!e.getAttribute('aria-describedby')));
   assert.ok(await page.locator('.cpi-receipt table caption').isVisible());
   assert.equal(await page.locator('.cpi-receipt tbody th[scope=row]').count(),5);
-  assert.deepEqual(await page.locator('.cpi-receipt tbody th small').allTextContents(),CONFIG.baskets.find(b=>b.id===active.basketID).items.map(b=>`${b.quantity} Ã— fixed`));
+  assert.deepEqual(await page.locator('.basket-quantity').allTextContents(),CONFIG.baskets.find(b=>b.id===active.basketID).items.map(b=>`Qty ${b.quantity}`));
   for(const button of await page.locator('button:visible,input:visible,.return-games').all())assert.ok((await button.boundingBox()).height>=44,label+' touch target');
   for(const svg of await page.locator('.cpi-chart svg').all()){assert.ok(await svg.locator('title').count());assert.ok((await svg.locator('desc').textContent()).length>60);assert.ok(await svg.evaluate(el=>[...el.querySelectorAll('text')].every(t=>{const b=t.getBBox();return b.x>=0&&b.y>=0&&b.x+b.width<=380&&b.y+b.height<=250;})),JSON.stringify(await svg.evaluate(el=>[...el.querySelectorAll('text')].map(t=>{const b=t.getBBox();return {text:t.textContent,x:b.x,y:b.y,width:b.width,height:b.height};}))));}
   assert.equal(await page.locator('#announcement[aria-live=polite][aria-atomic=true]').count(),1);
@@ -55,7 +55,7 @@ async function play(context,seed,label,capture,wrong=true){
   await inspect(page,'intro');
   if(label==='zoom200'){assert.equal(await page.evaluate(()=>innerWidth),683);assert.equal(await page.evaluate(()=>devicePixelRatio),2);}
   if(capture)await page.screenshot({path:`${out}/${label}-intro.png`});
-  assert.doesNotMatch(await page.locator('#work').innerText(),/Ã·|Current cost of the fixed basket/);
+  assert.doesNotMatch(await page.locator('#work').innerText(),/÷|Current cost of the fixed basket/);
   await press(page,'[data-action=start]');let run=engine.start(engine.newRun(seed,'qa',0));
   for(const phase of engine.PHASES){
     assert.equal(run.phase,phase);await inspect(page,`${label}-${phase}`);
@@ -72,7 +72,7 @@ async function play(context,seed,label,capture,wrong=true){
       assert.match(await page.locator('#feedback').innerText(),/Try again/);assert.ok((await page.locator('#announcement').textContent()).length>30);
       assert.equal(await page.locator('[data-action=next]').count(),0);
       if(phase==='weight')assert.match(await page.locator('.comparison-grid').innerText(),/added/);
-      if(phase==='base')assert.doesNotMatch(await page.locator('#work').innerText(),/Current cost of the fixed basket Ã·/);
+      if(phase==='base')assert.doesNotMatch(await page.locator('#work').innerText(),/Current cost of the fixed basket ÷/);
     }
     if(capture&&['cpi','inflation','timeline_rate'].includes(phase)){
       assert.equal(await page.locator('.cpi-formula').count(),0,'wrong answers do not expose formulas');
@@ -85,7 +85,7 @@ async function play(context,seed,label,capture,wrong=true){
       await press(page,'[data-hint=formula]');run=engine.toggleHint(run,'formula');
       assert.equal(await page.evaluate(()=>document.activeElement.dataset.hint),'formula');
       assert.equal(await page.locator('[name=value]').inputValue(),'123');
-      assert.match(await page.locator('.cpi-formula').innerText(),/Ã·/);
+      assert.match(await page.locator('.cpi-formula').innerText(),/÷/);
       await page.locator('#work').screenshot({path:`${out}/${label}-${phase}-hints.png`});
       const beforeReload=await page.evaluate(key=>localStorage.getItem(key),ACTIVE_KEY);
       await page.reload();assert.equal(await page.evaluate(key=>localStorage.getItem(key),ACTIVE_KEY),beforeReload);
@@ -125,8 +125,8 @@ async function play(context,seed,label,capture,wrong=true){
   const fresh=await page.evaluate(key=>JSON.parse(localStorage.getItem(key)),ACTIVE_KEY);assert.notEqual(fresh.runID,completed.runID);
   for(const key of Object.keys(engine.POOLS))assert.notEqual(fresh[key],completed[key]);
   assert.deepEqual(fresh.hints,{});assert.deepEqual(fresh.attempts,{});
-  await page.reload();assert.deepEqual(await page.evaluate(key=>JSON.parse(localStorage.getItem(key)),ACTIVE_KEY),fresh);assert.equal(await page.locator('#basket-total').innerText(),'To calculate');
-  assert.equal(await page.locator('#cpi-value').innerText(),'â€”');
+  await page.reload();assert.deepEqual(await page.evaluate(key=>JSON.parse(localStorage.getItem(key)),ACTIVE_KEY),fresh);assert.equal(await page.locator('#basket-total').innerText(),'—');
+  assert.equal(await page.locator('#cpi-value').innerText(),'—');
   await press(page,'nav .return-games');await page.waitForURL('**/games/');
   checks.push({seed,label,pools:engine.selections(seed),firstCorrect:run.firstCorrect});console.log(`PASS ${label} seed ${seed}: full keyboard run, receipt, retries, replay, return`);
   await page.close();
@@ -136,7 +136,7 @@ try{
     const context=await browser.newContext({viewport:{width:1366,height:768},reducedMotion:'reduce'});
     await play(context,seed,'1366x768'+(i?`-pool-${i}`:''),i===0);await context.close();
   }
-  for(const size of [{width:1280,height:720},{width:768,height:1024},{width:390,height:844},{width:320,height:720}]){
+  for(const size of [{width:1280,height:720},{width:768,height:1024},{width:390,height:844},{width:320,height:720},{width:844,height:390}]){
     const context=await browser.newContext({viewport:size,reducedMotion:'reduce'});await play(context,seeds.at(-1),`${size.width}x${size.height}`,true);await context.close();
   }
   zoomContext=await chromium.launchPersistentContext(`${out}/zoom-profile`,{channel:'chrome',headless:true,viewport:{width:1366,height:768},reducedMotion:'reduce'});

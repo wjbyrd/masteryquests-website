@@ -27,18 +27,26 @@ export function accepts(raw, expected, kind) {
   if (kind === 'index' && Number.isInteger(value)) return value === Math.round(expected);
   return Math.abs(value - expected) <= CONFIG.tolerance[kind] + 1e-9;
 }
-export const POOLS = Object.freeze({basketID:CONFIG.baskets,shockID:CONFIG.shocks,comparisonID:CONFIG.comparisons,auditID:CONFIG.audits,timelineID:CONFIG.timelines});
-export function selections(seed, previous = {}) {
+export const POOLS = Object.freeze({basketID:CONFIG.baskets,shockID:CONFIG.shocks,comparisonID:CONFIG.comparisons,auditID:CONFIG.audits,timelineID:CONFIG.timelines,meaningID:CONFIG.meanings});
+export function selections(seed, previous = {}, version = 3) {
   let x = seed >>> 0;
-  return Object.fromEntries(Object.entries(POOLS).map(([key,pool])=>{
-    const candidates=pool.filter(item=>item.id!==previous[key]);
+  return Object.fromEntries(Object.entries(POOLS).filter(([key])=>version>=3||key!=='meaningID').map(([key,pool])=>{
+    const recent=key==='meaningID'?(previous.meaningHistory||[previous[key]]):[previous[key]];
+    const candidates=pool.filter(item=>!recent.includes(item.id));
     x=(Math.imul(1664525,x)+1013904223)>>>0;
     return [key,candidates[Math.floor(x/2**32*candidates.length)].id];
   }));
 }
-export function newRun(seed, runID = globalThis.crypto.randomUUID(), now = Date.now(), previous = {}) {
-  const prior=Object.fromEntries(Object.keys(POOLS).filter(k=>POOLS[k].some(p=>p.id===previous[k])).map(k=>[k,previous[k]]));
-  return { version:2,runID, startedAt: now, seed: seed >>> 0, previous:prior,...selections(seed,prior), phase: 'intro', solved: false, attempts: {}, firstCorrect: 0, feedback: '', selected: null, weightRevealed: false,hints:{},history:[],lastAnswer:null };
+export function newRun(seed, runID = globalThis.crypto.randomUUID(), now = Date.now(), previous = {}, version = 3) {
+  const prior=Object.fromEntries(Object.keys(POOLS).filter(k=>version>=3||k!=='meaningID').filter(k=>POOLS[k].some(p=>p.id===previous[k])).map(k=>[k,previous[k]]));
+  if(version>=3){
+    const recent=Array.isArray(previous.meaningHistory)&&previous.meaningHistory.length?previous.meaningHistory:[previous.meaningID||(previous.version===2?'index-108':null)];
+    prior.meaningHistory=[...new Set(recent)].filter(id=>CONFIG.meanings.some(v=>v.id===id)).slice(-5);
+    const measurementIDs=previous.extension?.ids||previous.measurementIDs||previous.previous?.measurementIDs;
+    if(measurementIDs)prior.measurementIDs=measurementIDs;
+  }
+  const picks=selections(seed,prior,version);
+  return { version,...(version>=3?{meaningHistory:[...prior.meaningHistory,picks.meaningID].slice(-5)}:{}),runID, startedAt: now, seed: seed >>> 0, previous:prior,...picks, phase: 'intro', solved: false, attempts: {}, firstCorrect: 0, feedback: '', selected: null, weightRevealed: false,hints:{},history:[],lastAnswer:null };
 }
 const record=(before,after,action,value=null)=>({...after,history:[...before.history,{action,value}]});
 export const start = run => run.phase === 'intro' ? record(run,{ ...run, phase: PHASES[0] },'start') : run;
@@ -56,7 +64,7 @@ export function model(run) {
   const cases = comparison.cases.map(c => { const item = base.rows.find(i => i.id === c.item), contribution = Math.round(item.cost * c.percent / 100); return { ...c, item, contribution, cost: base.cost + contribution, index: cpi(base.cost + contribution,base.cost) }; });
   const values = CONFIG.timelines.find(t => t.id === run.timelineID).values;
   const rates = values.map((value, i) => i ? inflation(values[i - 1], value) : null);
-  return { base,shock, current, index, rate: inflation(100, index), cases, winner: cases[0].contribution > cases[1].contribution ? 'a' : 'b',
+  return { meaning:CONFIG.meanings.find(v=>v.id===run.meaningID)||CONFIG.meanings[1], base,shock, current, index, rate: inflation(100, index), cases, winner: cases[0].contribution > cases[1].contribution ? 'a' : 'b',
     audit: CONFIG.audits.find(a => a.id === run.auditID), values, rates, kind: classification(rates[1], rates[2]),
     pressures: current.rows.filter(r => r.contribution > 0).sort((a, b) => b.contribution - a.contribution) };
 }
@@ -81,7 +89,7 @@ export function submit(run, answer) {
     reprice: 'Use every original quantity with its new price. Add expenditures, not unit prices; keep price decreases in the calculation.',
     cpi: 'Use the current cost of the same fixed basket and compare it with the base-year basket cost. The dollar cost itself is not the index.',
     inflation: 'Inflation compares this year’s CPI with the previous year’s CPI, not automatically with 100.',
-    meaning: { level: 'An index of 108 includes the base 100. It does not mean a 108% increase.', rate: '108 is an index level. Inflation needs a comparison with an earlier period.', annual: 'The base year may be more than one year ago. CPI alone cannot tell you this year’s inflation.' }[answer],
+    meaning: { level: `An index of ${m.meaning.index} includes the base 100. It does not mean a ${m.meaning.index}% increase.`, rate: `${m.meaning.index} is an index level. Inflation needs a comparison with an earlier period.`, annual: 'The base year may be more than one year ago. CPI alone cannot tell you this year’s inflation.' }[answer],
     weight: 'Compare the dollars added to the whole fixed basket. The larger percentage change need not have the larger effect.',
     audit: m.audit.wrong,
     timeline_rate: 'Year 3 inflation compares Year 3 CPI with Year 2 CPI. Use the previous year as your reference, and a minus sign if prices fell.',

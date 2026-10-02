@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#04101F">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>At the Box Office · Mastery Quests</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./scenarios.js"></script>
+  <script defer src="./seasons.js"></script>
+  <script defer src="./graphs.js"></script>
+  <script defer src="./game.js"></script>
+</head>
+<body>
+  <a class="skip" href="#view">Skip to game</a>
+  <header class="masthead"><span class="brand">MASTERY QUESTS</span><nav aria-label="Game navigation"><a class="return-games" href="https://masteryquests.org/beta-testing/october-games-b9021b0dcb5f/games/">RETURN TO GAMES</a></nav></header>
+  <main id="stage">
+    <div class="scene"><img id="scene-image" src="./scenes/theater-exterior.webp" alt="An illuminated Art Deco theater, its marquee reading At the Box Office." width="1086" height="1448"></div>
+    <section id="view" tabindex="-1" aria-labelledby="view-title"></section>
+  </main>
+  <dialog id="how-to-play" aria-labelledby="help-title">
+    <h2 id="help-title">HOW TO PLAY</h2>
+    <ul>
+      <li>Each week begins with its own reference figures. Outcome changes compare with that reference.</li>
+      <li>Make one market decision for the week.</li>
+      <li>See the resulting attendance and receipts.</li>
+      <li>Market-reading points reflect how well your decision fits that week’s stated goal and the available evidence.</li>
+      <li>Ticket receipts are revenue, not profit; costs are not modeled.</li>
+      <li>The progress track follows your seven-week run.</li>
+    </ul>
+    <form method="dialog"><button class="primary" autofocus>CLOSE</button></form>
+  </dialog>
+  <p id="announcement" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+  <noscript><p class="no-script">Please enable JavaScript to enter the theater.</p></noscript>
+</body>
+</html>

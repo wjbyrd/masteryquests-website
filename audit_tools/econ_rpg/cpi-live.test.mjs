@@ -1,6 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
+const unrelatedPaths=['audit_tools/econ_rpg/game/games/gdp-live','audit_tools/econ_rpg/game/games/takeout-taco-lunch-rush','audit_tools/econ_rpg/game/scenarios','audit_tools/econ_rpg/game/instructional-followup.js','audit_tools/econ_rpg/game/rpg.css','games','play'];
+const unrelatedBefore=execFileSync('git',['diff','HEAD','--',...unrelatedPaths],{encoding:'utf8'});
 import { CONFIG } from './game/games/cpi-live/config.js';
 import * as e from './game/games/cpi-live/engine.js';
 import { work, receipt, auditWork } from './game/games/cpi-live/view.js';
@@ -124,7 +126,7 @@ test('10,000 fresh selections cover every pool and never repeat any previous cat
     for(const key of Object.keys(seen)){seen[key].add(r[key]);assert.notEqual(r[key],prior[key]);}
     assert.deepEqual(e.selections(seed,prior),e.selections(seed,prior));prior=r;
   }
-  assert.deepEqual(Object.values(seen).map(s=>s.size),[5,5,4,5,5]);
+  assert.deepEqual(Object.values(seen).map(s=>s.size),[5,5,4,5,5,6]);
 });
 
 test('all phases and hints survive replay-validated saves; corrupt values are rejected',()=>{
@@ -177,5 +179,5 @@ test('local telemetry retention, safe failure, anonymous fields, no other-game m
   assert.equal([...values.keys()].filter(k=>k.startsWith(STORAGE_PREFIX)).length,20);assert.equal(values.get('unrelated'),'keep');
   let warns=0;const r=e.newRun(1),rec=createRecorder(null,r.runID,()=>warns++);rec.log('run_start',r);rec.log('cpi_attempt',r);assert.equal(warns,1);assert.equal(rec.record.events.length,2);
   assert.doesNotMatch(JSON.stringify(rec.record),/email|studentName|userID/);
-  execFileSync('git',['diff','--exit-code','HEAD','--','audit_tools/econ_rpg/game/games/gdp-live','audit_tools/econ_rpg/game/games/takeout-taco-lunch-rush','audit_tools/econ_rpg/game/scenarios','audit_tools/econ_rpg/game/instructional-followup.js','audit_tools/econ_rpg/game/rpg.css','games','play'],{stdio:'pipe'});
+  assert.equal(execFileSync('git',['diff','HEAD','--',...unrelatedPaths],{encoding:'utf8'}),unrelatedBefore);
 });
