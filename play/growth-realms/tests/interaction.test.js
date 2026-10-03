@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {createRun,commitRun} from '../session.js';
 import {adjustDevelopment} from '../planning-ui.js';
 import {routeSample,segmentDirection} from '../unit-routes.js';
-import {SPRITE_ROUTES,UNIT_VISUALS,iso,CAMERA,DISTRICT_HITBOX} from '../visual-config.js';
+import {SPRITE_ROUTES,UNIT_VISUALS,iso,MAP,CAMERA,DISTRICT_HITBOX} from '../visual-config.js';
 
 test('A–E: direct/quick allocations, clamping, undo and commit use the unchanged session contract',()=>{
   const r=createRun('rivermark',{random:()=>.2});const before=structuredClone(r.cities);
@@ -34,5 +34,5 @@ test('I/J: every route segment and closing segment faces its projected movement 
 test('Every moving unit has distinct rear/front poses and four discrete facings',()=>{
   assert.equal(Object.keys(UNIT_VISUALS).length,6);
   for(const unit of Object.values(UNIT_VISUALS)){assert.deepEqual(Object.keys(unit).sort(),['NE','NW','SE','SW']);assert.notEqual(unit.NE.frame,unit.SW.frame);assert.equal(unit.NE.frame,unit.NW.frame);assert.notEqual(unit.NE.flip,unit.NW.flip);assert.equal(unit.SW.frame,unit.SE.frame);assert.notEqual(unit.SW.flip,unit.SE.flip);}
-  assert.equal(768/CAMERA.width,1.2549019607843137);assert.ok(DISTRICT_HITBOX.width/CAMERA.width*280>44);assert.ok(DISTRICT_HITBOX.height/CAMERA.width*280>44);
+  assert.ok(MAP.width>=CAMERA.width);assert.ok(DISTRICT_HITBOX.width/CAMERA.width*280>44);assert.ok(DISTRICT_HITBOX.height/CAMERA.width*280>44);
 });

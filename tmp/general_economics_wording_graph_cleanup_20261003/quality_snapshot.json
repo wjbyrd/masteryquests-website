@@ -1,0 +1,92 @@
+{
+  "markets": [
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "PG1-DMD-L-003",
+      "concept": "demand",
+      "pools": [
+        "elite"
+      ],
+      "message": "elite metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Starting on D0 at $6, demand shifts to D1 at that price and then price falls to $4. What are the separate quantity changes caused by the shift and by the later movement along D1?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "40014",
+      "concept": "market-equilibrium",
+      "pools": [
+        "legendary"
+      ],
+      "message": "legendary metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "An analyst explains the move from B back to A in the movie-ticket graph by cheaper streaming substitutes and lower theater operating costs. Those events reduce demand and increase supply. Which equilibrium changes are shown?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "40007",
+      "concept": "supply",
+      "pools": [
+        "hard"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "The movie-ticket market moves from A to B after one production cost changes. Which explanation and changes in equilibrium price and quantity match the graph?"
+    }
+  ],
+  "graphMarkets": [
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "PG1-DMD-L-003",
+      "concept": "demand",
+      "pools": [
+        "elite"
+      ],
+      "message": "elite metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Starting on D0 at $6, demand shifts to D1 at that price and then price falls to $4. What are the separate quantity changes caused by the shift and by the later movement along D1?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "40014",
+      "concept": "market-equilibrium",
+      "pools": [
+        "legendary"
+      ],
+      "message": "legendary metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "An analyst explains the move from B back to A in the movie-ticket graph by cheaper streaming substitutes and lower theater operating costs. Those events reduce demand and increase supply. Which equilibrium changes are shown?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "40007",
+      "concept": "supply",
+      "pools": [
+        "hard"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "The movie-ticket market moves from A to B after one production cost changes. Which explanation and changes in equilibrium price and quantity match the graph?"
+    }
+  ],
+  "foundations": [
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "P74-INC-EL-003",
+      "concept": "incentives",
+      "pools": [
+        "elite"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A nonprofit grant rewards providers for placing clients in jobs that last at least 30 days. Providers avoid applicants needing intensive support and favor easy placements. Which redesign would reward successful placements without encouraging providers to avoid clients who need more support?"
+    }
+  ]
+}

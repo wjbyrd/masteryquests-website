@@ -15,8 +15,8 @@ const overflow=()=>page.evaluate(()=>document.documentElement.scrollWidth>innerW
 try{
   await page.goto(url);await waitMaps(page);
   assert.equal(await getRun(page),null);assert.equal(await page.locator('#title-screen').isVisible(),true);assert.equal(await page.locator('#city-choice').isVisible(),false);assert.equal(await page.locator('#hud').isVisible(),false);assert.equal(await page.locator('.region-section').isVisible(),false);
-  assert.match(await page.locator('#title-screen').innerText(),/Build the stronger growth path/);
-  await page.locator('#open-how').focus();await page.keyboard.press('Enter');assert.equal(await page.locator('#how-to-play').isVisible(),true);assert.match(await page.locator('#how-to-play').innerText(),/20 points/);assert.equal(await page.locator(':focus').getAttribute('id'),'how-title');await page.keyboard.press('Escape');assert.equal(await page.locator(':focus').getAttribute('id'),'open-how');
+  assert.match(await page.locator('#title-screen').innerText(),/Start ahead\. Catch up\. Build your economy\./);
+  await page.locator('#open-how').focus();await page.keyboard.press('Enter');assert.equal(await page.locator('#how-to-play').isVisible(),true);assert.match(await page.locator('#how-to-play').innerText(),/20 development points/);assert.equal(await page.locator(':focus').getAttribute('id'),'how-title');await page.keyboard.press('Escape');assert.equal(await page.locator(':focus').getAttribute('id'),'open-how');
   await page.locator('#landing-guide').click();assert.equal(await page.locator('#help').isVisible(),true);assert.equal(await page.locator(':focus').getAttribute('id'),'guide-title');await page.keyboard.press('Escape');assert.equal(await page.locator(':focus').getAttribute('id'),'landing-guide');
   const theme=await page.evaluate(()=>Object.fromEntries(['bg','surface','border','text','muted','accent','accent-soft','highlight'].map(k=>[k,getComputedStyle(document.documentElement).getPropertyValue('--mq-'+k).trim()])));assert.equal(theme.accent,'#009f9a');assert.equal(theme.text,'#253247');
   await shot('01-title');
@@ -27,7 +27,7 @@ try{
   assert.deepEqual(await page.locator('#city-tabs button').allTextContents(),['Combined Comparison','Meridian','Rivermark']);
   const dots=await page.locator('#budget-pips .available').first().evaluate(e=>({radius:getComputedStyle(e).borderRadius,bg:getComputedStyle(e).backgroundColor}));assert.equal(dots.radius,'50%');assert.equal(dots.bg,'rgb(255, 255, 255)');
   await page.locator('[data-map-district="capital"]').click();assert.equal((await getRun(page)).allocation.capital,1);assert.match(await page.locator('#points-remaining').innerText(),/19/);await page.locator('[data-adjust="clear"]').click();await page.locator('.map-click-feedback').waitFor({state:'hidden'});
-  await page.evaluate(()=>document.querySelector('.region-section').scrollIntoView({block:'start',behavior:'instant'}));await page.waitForFunction(()=>document.body.classList.contains('hud-compact'));
+  await page.evaluate(()=>window.scrollTo({top:400,behavior:'instant'}));await page.waitForFunction(()=>document.body.classList.contains('hud-compact'));
   const sticky=await page.locator('#planning-hud').boundingBox();assert.equal(sticky.y,0);assert.ok(sticky.height<=68);assert.ok((await page.locator('.command-header').boundingBox()).y<0);await shot('04-compact-hud',false);
   for(const width of [320,390,768,1440]){await page.setViewportSize({width,height:1000});await page.locator('#district-select').scrollIntoViewIfNeeded();await page.evaluate(()=>document.querySelector('.region-section').scrollIntoView({block:'start',behavior:'instant'}));assert.equal(await overflow(),false,`Planning overflow ${width}`);const box=await page.locator('#planning-hud').boundingBox();assert.ok(box.y>=0&&box.height<=70,`Sticky ${width}: ${JSON.stringify(box)}`);if(width===390)await shot('08-phone-compact',false);}
   await page.emulateMedia({reducedMotion:'reduce'});

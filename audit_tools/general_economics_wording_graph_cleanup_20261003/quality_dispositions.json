@@ -1,0 +1,58 @@
+{
+  "findings": [
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "PG1-DMD-L-003",
+      "concept": "demand",
+      "pools": [
+        "elite"
+      ],
+      "message": "elite metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Starting on D0 at $6, demand shifts to D1 at that price and then price falls to $4. What are the separate quantity changes caused by the shift and by the later movement along D1?",
+      "note": "Retain approved difficulty as explicitly requested. The revised task separates a fixed-price demand shift from a subsequent movement and requires three graph readings and two differences; this lexical REVIEW does not establish a defect."
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "40014",
+      "concept": "market-equilibrium",
+      "pools": [
+        "legendary"
+      ],
+      "message": "legendary metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "An analyst explains the move from B back to A in the movie-ticket graph by cheaper streaming substitutes and lower theater operating costs. Those events reduce demand and increase supply. Which equilibrium changes are shown?",
+      "note": "Retain approved difficulty as explicitly requested. The authorized revision requires the reverse before/after equilibrium changes under simultaneous demand and supply shifts; all quantity responses in the alternatives are economically possible until the graph is read."
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "40007",
+      "concept": "supply",
+      "pools": [
+        "hard"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "The movie-ticket market moves from A to B after one production cost changes. Which explanation and changes in equilibrium price and quantity match the graph?",
+      "note": "Retain approved difficulty as explicitly requested. The task combines the economic cause of a supply shift with graph-specific price and quantity changes; all alternatives are coherent scenarios without the graph."
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "P74-INC-EL-003",
+      "concept": "incentives",
+      "pools": [
+        "elite"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A nonprofit grant rewards providers for placing clients in jobs that last at least 30 days. Providers avoid applicants needing intensive support and favor easy placements. Which redesign would reward successful placements without encouraging providers to avoid clients who need more support?",
+      "note": "The prior approved alternatives and key are unchanged. This wording-only revision clarifies client selection and the incentive problem; the existing absolute-distractor REVIEW is retained, with no new economic or difficulty adjudication."
+    }
+  ],
+  "scope": "Only exact-worklist target findings; all unrelated historical expectations remain enforced.",
+  "schemaVersion": 1
+}

@@ -37,6 +37,28 @@ export function publishGamesPreview(root, dist) {
     }
   };
   visit();
+  // Standalone games retain one authoritative source outside the older collection.
+  // Copy only runtime assets into the same beta namespace and rebase navigation.
+  for(const game of config.externalGames||[]){
+    if(!/^[a-z0-9-]+$/.test(game.id)||!/^play\/[a-z0-9-]+$/.test(game.source))throw Error('Invalid external preview game');
+    const copy=(relative='')=>{
+      for(const entry of fs.readdirSync(path.join(root,game.source,relative),{withFileTypes:true})){
+        if(['tests','authoring','node_modules'].includes(entry.name))continue;
+        const rel=path.join(relative,entry.name),dest=path.join(target,'games',game.id,rel);
+        if(entry.isDirectory()){copy(rel);continue;}
+        if(!entry.isFile()||!runtime.test(entry.name))continue;
+        fs.mkdirSync(path.dirname(dest),{recursive:true});
+        if(entry.name.endsWith('.html')){
+          let html=fs.readFileSync(path.join(root,game.source,rel),'utf8');
+          html=html.replace(/<meta\s+name="robots"[^>]*>\s*/gi,'').replace('</head>','<meta name="robots" content="noindex,nofollow">\n</head>')
+            .replace('<a href="/" class="brand">','<a href="../" class="brand" aria-label="Return to Games">')
+            .replace('<footer>','<footer><a href="../">Return to Games</a>');
+          fs.writeFileSync(dest,html);
+        }else fs.copyFileSync(path.join(root,game.source,rel),dest);
+      }
+    };
+    copy();
+  }
   fs.appendFileSync(path.join(dist, '_headers'), `${config.previewRoot}*\n  X-Robots-Tag: noindex, nofollow\n  Cache-Control: no-cache\n`);
   return config;
 }

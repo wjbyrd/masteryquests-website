@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./library.css"><link rel="stylesheet" href="../mini-game-accessibility.css">
   <script type="module" src="./cpi-live/card.js"></script>
   <script type="module" src="./labor-force-files/card.js"></script>
+  <script type="module" src="./growth-realms/card.js"></script>
 </head>
 <body class="library-page">
   <a class="skip" href="#games">Skip to games</a>
@@ -16,6 +17,10 @@
   <main id="games" tabindex="-1">
     <header class="hero"><h1>Games</h1><p>Explore economic decisions through short simulations, strategy games, and accounting challenges.</p></header>
     <div class="game-grid">
+      <article class="game-card" data-game="growth-realms" aria-labelledby="growth-realms-title">
+        <canvas id="growth-realms-art" width="768" height="512" role="img" aria-label="Two economies share a river valley: an established city and a smaller town."></canvas>
+        <div class="game-card-copy"><h2 id="growth-realms-title">Growth Realms</h2><p>Start ahead or catch up. Invest in industry, resources, research and education as the city across the river develops.</p><a href="./growth-realms/" aria-label="PLAY GAME: Growth Realms">PLAY GAME</a></div>
+      </article>
       <article class="game-card" data-game="at-the-box-office" aria-labelledby="at-the-box-office-title">
         <img src="./at-the-box-office/scenes/theater-exterior.webp" alt="An illuminated Art Deco theater with At the Box Office on its golden marquee." width="1086" height="1448" loading="lazy">
         <div class="game-card-copy"><h2 id="at-the-box-office-title">At the Box Office</h2><p>Run a movie theater through seven weekends. Set ticket and concession prices, respond to streaming offers and income changes, and discover how elasticity shapes attendance and revenue.</p><a href="./at-the-box-office/" aria-label="PLAY GAME: At the Box Office">PLAY GAME</a></div>

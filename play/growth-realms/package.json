@@ -3,11 +3,15 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test tests/model.test.js tests/visual.test.js tests/interaction.test.js",
+    "test": "node --test tests/model.test.js tests/visual.test.js tests/interaction.test.js tests/cleanup.test.js tests/zoning.test.js",
     "test:browser": "node tests/browser.test.mjs",
     "test:visual": "node tests/visual-browser.test.mjs",
     "test:interaction": "node tests/interaction-browser.test.mjs",
     "test:presentation": "node tests/presentation-browser.test.mjs",
-    "audit:balance": "node tests/balance-audit.mjs"
+    "test:cleanup": "node tests/cleanup-browser.test.mjs",
+    "test:cues": "node tests/cues-browser.test.mjs",
+    "audit:balance": "node tests/balance-audit.mjs",
+    "test:zoning": "node tests/zoning-browser.test.mjs",
+    "test:sidewalks": "node tests/sidewalk-browser.test.mjs"
   }
 }

@@ -1,6 +1,8 @@
-import { MAP, CAMERA, ASSETS, SUPPORT, BUILDING_VISUALS, DISTRICTS, DISTRICT_HITBOX, UNIT_VISUALS, SPRITE_ROUTES, LAYERS, iso, visualState, constructionStage } from './visual-config.js';
+import { MAP, CAMERA, ASSETS, SUPPORT, BUILDING_VISUALS, ROADS, DISTRICT_HITBOX, UNIT_VISUALS, SPRITE_ROUTES, LAYERS, iso, visualState, constructionStage } from './visual-config.js';
 import { CATEGORIES } from './config.js';
 import { routeSample } from './unit-routes.js';
+import {groundContact, depthOrder, layoutAudit, buildingFootprint, unitFootprint, constructionWalks} from './scene-layout.js';
+import {PROTECTED_ROADS, SIDEWALKS, districtAnchor, ANNEX_SITES, ANNEX_SCALE, SERVICE_AREAS, CONSTRUCTION_VISUALS} from './district-layout.js';
 
 // One clock for all maps; static layers are cached, temporary layers are cleared.
 const instances = new Map(), images = new Map();
@@ -28,10 +30,10 @@ function trimFrames(img,a) {
   return rects;
 }
 export function renderCityMap(city, { phase = 'choosing', owner = 'preview' } = {}) {
-  const camera = `--world-width:${MAP.width / CAMERA.width * 100}%;--world-height:${MAP.height / CAMERA.height * 100}%;--world-left:${-CAMERA.x / CAMERA.width * 100}%;--world-top:${-CAMERA.y / CAMERA.height * 100}%`;
-  return `<div class="city-map" data-map="${city.id}" style="${camera}" aria-label="${esc(city.name)} isometric city"><div class="map-loading">Loading district sprites…</div><div class="map-world">${LAYERS.map(layer => `<canvas class="map-layer ${layer}-layer" data-layer="${layer}" width="768" height="512" aria-hidden="true"></canvas>`).join('')}<div class="district-hitboxes">${CATEGORIES.map(c => {
-    const [x,y]=iso(...DISTRICTS[c.id]), box=DISTRICT_HITBOX;
-    return `<button class="district-hitbox" data-map-district="${c.id}" data-city="${city.id}" style="left:${(x-box.width/2)/MAP.width*100}%;top:${(y+box.offsetY-box.height/2)/MAP.height*100}%;width:${box.width/MAP.width*100}%;height:${box.height/MAP.height*100}%" aria-label="${esc(c.name)} district. ${owner==='player'&&phase==='planning'?'Activate to invest one development point.':'Activate to inspect.'}" aria-pressed="false" ${phase==='building'?'disabled':''}><span class="sr-only">${esc(c.name)}</span></button><span class="district-plan-badge" data-plan-badge="${c.id}" style="left:${x/MAP.width*100}%;top:${(y+20)/MAP.height*100}%" hidden></span>`;
+  const camera = `--map-aspect:${CAMERA.width}/${CAMERA.height};--map-ratio:${CAMERA.width/CAMERA.height};--world-width:${MAP.width / CAMERA.width * 100}%;--world-height:${MAP.height / CAMERA.height * 100}%;--world-left:${-CAMERA.x / CAMERA.width * 100}%;--world-top:${-CAMERA.y / CAMERA.height * 100}%`;
+  return `<div class="city-map" data-map="${city.id}" style="${camera}" aria-label="${esc(city.name)} isometric city"><div class="map-loading">Loading district sprites…</div><div class="map-world">${LAYERS.map(layer => `<canvas class="map-layer ${layer}-layer" data-layer="${layer}" width="${MAP.width}" height="${MAP.height}" aria-hidden="true"></canvas>`).join('')}<div class="district-hitboxes">${CATEGORIES.map(c => {
+    const [x,y]=iso(...districtAnchor(city,c.id)), box=DISTRICT_HITBOX;
+    return `<button class="district-hitbox" data-map-district="${c.id}" data-city="${city.id}" style="left:${(x-box.width/2)/MAP.width*100}%;top:${(y+box.offsetY-box.height/2)/MAP.height*100}%;width:${box.width/MAP.width*100}%;height:${box.height/MAP.height*100}%" aria-label="${esc(c.name)} district. ${owner==='player'&&phase==='planning'?'Activate to invest one development point.':'Activate to inspect.'}" aria-pressed="false" ${phase==='building'?'disabled':''}><span class="sr-only">${esc(c.name)}</span></button>`;
   }).join('')}</div><div class="map-click-feedback" aria-hidden="true" hidden></div></div><div class="active-district-label" aria-hidden="true"></div><div class="map-caption"><span>HALCYON RIVER</span><span>N ↗</span></div><div class="map-scene-description sr-only"></div></div>`;
 }
 function poly(ctx, points, fill, stroke) {
@@ -50,117 +52,159 @@ function sprite(ctx, key, frame, x, y, size, flip = false, alpha = 1) {
   } else ctx.drawImage(img, frame % a.columns * w, Math.floor(frame / a.columns) * h, w, h, -size/2, -size*.85, size, size);
   ctx.restore();
 }
+export {sprite as drawAtlasSprite};
 function unitSprite(ctx, unit, direction, x, y) {
   const v=UNIT_VISUALS[unit][direction];sprite(ctx,v.asset,v.frame,x,y,v.size,v.flip);
 }
 function clear(ctx) { ctx.clearRect(0, 0, MAP.width, MAP.height); }
 function terrain(m) {
   const c = m.ctx.terrain, theme = getComputedStyle(document.documentElement), texture = theme.getPropertyValue('--mq-navy').trim();
-  clear(c); c.fillStyle = theme.getPropertyValue('--mq-bg-dark').trim(); c.fillRect(0,0,768,512);
+  clear(c); c.fillStyle = theme.getPropertyValue('--mq-bg-dark').trim(); c.fillRect(0,0,MAP.width,MAP.height);
   // Pixel grain is deterministic: changing a plan never randomizes the world.
-  for (let y=0;y<512;y+=4) for(let x=0;x<768;x+=4) if((x*17+y*31)%37<7) { c.fillStyle=texture; c.fillRect(x,y,2,2); }
-  poly(c, [[32,287],[384,463],[736,287],[736,306],[384,482],[32,306]], ASSETS.terrain.earth);
-  for(let i=0;i<11;i++) for(let j=0;j<11;j++) {
-    if(j===10) continue; tile(c,i,j,ASSETS.terrain.grass[(i*7+j*3)%4]);
+  for (let y=0;y<MAP.height;y+=4) for(let x=0;x<MAP.width;x+=4) if((x*17+y*31)%37<7) { c.fillStyle=texture; c.fillRect(x,y,2,2); }
+  const left=iso(0,ROADS.extent),front=iso(ROADS.extent,ROADS.extent),right=iso(ROADS.extent,0);
+  poly(c, [[left[0]-32,left[1]+16],[front[0],front[1]+32],[right[0]+32,right[1]+16],[right[0]+32,right[1]+34],[front[0],front[1]+50],[left[0]-32,left[1]+34]], ASSETS.terrain.earth);
+  for(let i=0;i<=ROADS.extent;i++) for(let j=0;j<=ROADS.extent;j++) {
+    if(j===ROADS.river) continue; tile(c,i,j,ASSETS.terrain.grass[(i*7+j*3)%4]);
     const [x,y]=iso(i,j); for(let n=0;n<12;n++){c.fillStyle=n%2?'#94a571':'#728959';c.fillRect(x-19+(n*17+i*13)%39,y+10+(n*7+j*3)%13,2,1);}
   }
 }
+function groundRect(c,b,color,edge){poly(c,[[b.minI,b.minJ],[b.maxI,b.minJ],[b.maxI,b.maxJ],[b.minI,b.maxJ]].map(p=>iso(...p)),color,edge);}
+function sidewalks(m){
+  const c=m.ctx.roads,palette=ASSETS.sidewalks;
+  for(const s of SIDEWALKS){
+    groundRect(c,s,palette.paving,palette.curb);
+    if(s.maxI-s.minI>s.maxJ-s.minJ){for(let i=Math.ceil(s.minI);i<s.maxI;i++)line(c,iso(i,s.minJ),iso(i,s.maxJ),palette.joint);}
+    else for(let j=Math.ceil(s.minJ);j<s.maxJ;j++)line(c,iso(s.minI,j),iso(s.maxI,j),palette.joint);
+  }
+  // Construction workers have a paved access walk, separate from traffic.
+  if(m.state.phase==='building')for(const d of m.state.districts.filter(d=>d.points>0))for(const path of constructionWalks(m.state.city,d.id))groundRect(c,path,palette.service,palette.joint);
+}
 function roads(m) {
   const c=m.ctx.roads, level=m.state.roadLevel; clear(c);
+  sidewalks(m);
   const color=ASSETS.roads[['dirt','dirt','improved','paved','arterial'][level]];
-  for(let i=0;i<11;i++) for(let j=0;j<11;j++) if(i===5||j===5||j===9||i===10&&j<10) {
-    tile(c,i,j,color,level>=3?'#8b9290':'#a4a183');
-    const [x,y]=iso(i,j);
-    const alongJ=(i===5||i===10)&&j!==5&&j!==9, junction=(i===5||i===10)&&(j===5||j===9);
-    if(level>=3 && !junction) line(c,[x-9,y+(alongJ?20:12)],[x+9,y+(alongJ?11:21)],ASSETS.roads.marking,2);
+  for(const road of PROTECTED_ROADS)groundRect(c,road,color,level>=3?'#8b9290':'#a4a183');
+  if(level>=3)for(let n=.5;n<ROADS.extent+1;n++){
+    for(const [a,b]of [[[n,ROADS.cross],[n+.3,ROADS.cross]],[[n,ROADS.front],[n+.3,ROADS.front]],[[ROADS.spine,n],[ROADS.spine,n+.3]],...(n<ROADS.river?[[[ROADS.east,n],[ROADS.east,n+.3]]]:[])]){
+      const junction=[ROADS.spine,ROADS.east].some(v=>Math.abs(a[0]-v)<.7)&&[ROADS.cross,ROADS.front].some(v=>Math.abs(a[1]-v)<.7);
+      if(!junction)line(c,iso(...a),iso(...b),ASSETS.roads.marking,2);
+    }
   }
-  // Bridge and guardrails share the river crossing.
-  const [x,y]=iso(5,10); tile(c,5,10,'#89958d'); line(c,[x-30,y+13],[x,y+29],'#ccd0b3',3);line(c,[x,y+2],[x+30,y+17],'#ccd0b3',3);
-  if(level>=2) for(const [i,j] of [[1,5],[5,1],[5,8],[9,5]]) {const [a,b]=iso(i,j);line(c,[a-21,b+13],[a-21,b-10],'#394e4a',2);c.fillStyle='#e5d393';c.fillRect(a-24,b-11,7,3);}
+  for(const center of [ROADS.spine,ROADS.east]){
+    groundRect(c,{minI:center-.5,maxI:center+.5,minJ:ROADS.river,maxJ:ROADS.river+1},'#89958d');
+    for(const i of [center-.5,center+.5])line(c,iso(i,ROADS.river),iso(i,ROADS.river+1),'#ccd0b3',3);
+  }
+}
+// Draw the measured source rectangle around the same ground anchor at every tier.
+// The generic atlas helper remains unchanged for the title illustration.
+function districtSprite(c,id,level,x,y,scale=1){
+  const v=BUILDING_VISUALS[id].levels[Math.min(5,level)],img=images.get(id);if(!img)return;
+  c.drawImage(img,...v.sourceRect,Math.round(x-v.anchorOffsetX*scale),Math.round(y-v.anchorOffsetY*scale),v.width*scale,v.height*scale);
 }
 function drawBuilding(m,d,ctx=m.ctx.buildings) {
-  const [x,y]=iso(...DISTRICTS[d.id]);
+  const [x,y]=iso(...districtAnchor(m.state.city,d.id));
   let level=d.level;
   if(m.state.phase==='building' && d.changed && progress>=.2 && progress<.8) return;
   if(m.state.phase==='building' && d.changed && progress>=.8) level=d.nextLevel;
-  sprite(ctx,d.id,Math.min(5,level),x,y+23,BUILDING_VISUALS[d.id].levels[0].size);
-  // Real model levels above five remain legible as small district annexes.
-  for(let n=0;n<Math.max(0,level-5);n++) sprite(ctx,d.id,1,x+63-n*21,y+48+n*8,72);
-  if(d.partial && m.state.phase!=='building') materials(ctx,x+61,y+40,Math.max(1,Math.ceil(d.progress*4)));
+  districtSprite(ctx,d.id,level,x,y);
+  if(d.partial && m.state.phase!=='building')districtMaterials(ctx,m,d,Math.max(1,Math.ceil(d.progress*4)));
+}
+function districtMaterials(c,m,d,count){
+  const anchor=districtAnchor(m.state.city,d.id),offset=SERVICE_AREAS.materials.offset;
+  // Each pallet is placed along the reserved service strip in map coordinates.
+  for(let n=0;n<count;n++){
+    const i=anchor[0]+offset[0],j=anchor[1]-.55+n*.35;
+    const corners=[[i-.15,j-.15],[i+.15,j-.15],[i+.15,j+.15],[i-.15,j+.15]].map(p=>iso(...p));
+    poly(c,corners,'#9b7952');poly(c,corners.map(([x,y])=>[x,y-4]),'#d4bd87','#9b7952');
+  }
+}
+function constructionSprite(c,key,x,y,intensity){
+  const v=CONSTRUCTION_VISUALS[key],rect=ASSETS.support.rects[SUPPORT[key]],scale=v.scale*(.55+intensity*.1125);
+  c.drawImage(images.get('support'),...rect,x-v.anchorOffsetX*scale,y-v.anchorOffsetY*scale,rect[2]*scale,rect[3]*scale);
 }
 function buildings(m) {
-  const c=m.ctx.buildings;clear(c);
-  const dense=m.state.city.buildings.capital>=3;
+  clear(m.ctx.buildings);
+  const levels=Object.fromEntries(m.state.districts.map(d=>[d.id,m.state.phase==='building'?Math.max(d.level,d.nextLevel):d.level]));
+  m.layout=layoutAudit(m.state.city.id,levels,{construction:m.state.phase==='building'});
+  // Fail closed: never silently paint an invalid upgrade over a protected road.
+  m.el.dataset.layoutErrors=String(m.layout.errors.length);
+  if(m.layout.errors.length){m.layout.errors.forEach(error=>console.error(error));m.objects=[];return;}
   const objects=[];
-  for(const [i,j] of [[.4,1],[.3,4],[.5,8],[2,9],[8.8,.7],[10,3],[10,8.5],[7.5,9.5]]) objects.push({depth:i+j,draw:()=>sprite(c,'support',SUPPORT.tree,...iso(i,j),66)});
-  const housing=dense?[[1,.5],[3,.4],[6,.3],[8,.4],[.5,6],[9,3.5]]:[[1,.5],[7,.5],[.5,6]];
-  for(const [i,j] of housing) objects.push({depth:i+j,draw:()=>sprite(c,'support',dense?SUPPORT.apartments:SUPPORT.house,...iso(i,j),dense?105:88)});
-  if(dense) { objects.push({depth:12,draw:()=>sprite(c,'support',SUPPORT.warehouse,...iso(9.4,2.6),111)});objects.push({depth:17,draw:()=>sprite(c,'support',SUPPORT.power,...iso(8.2,9),100)}); }
-  for(const d of m.state.districts) objects.push({depth:DISTRICTS[d.id].reduce((a,b)=>a+b),draw:()=>drawBuilding(m,d)});
-  objects.sort((a,b)=>a.depth-b.depth).forEach(o=>o.draw());
-}
-function materials(c,x,y,count) {
-  for(let n=0;n<count;n++) {let a=x+n*7,b=y+n*3;poly(c,[[a,b-5],[a+8,b-1],[a+2,b+2],[a-6,b-2]],'#d4bd87');poly(c,[[a-6,b-2],[a+2,b+2],[a+2,b+6],[a-6,b+2]],'#9b7952');}
-  line(c,[x-9,y+8],[x+count*7,y+8+count*3],'#dfc985',2);
+  for(const p of m.layout.scenery){
+    const size={tree:66,house:88,apartments:105,warehouse:111,power:100}[p.type];
+    const foot=groundContact(...p.center,p.type==='tree'?0:p.half*32);
+    objects.push({id:p.id,foot,draw:c=>sprite(c,'support',SUPPORT[p.type],foot.x,foot.y,size)});
+  }
+  for(const d of m.state.districts){
+    const [i,j]=districtAnchor(m.state.city,d.id),[x,y]=iso(i,j),level=m.state.phase==='building'&&progress>=.8?d.nextLevel:d.level;
+    const footprint=buildingFootprint(m.state.city,d.id,level);
+    objects.push({id:'district:'+d.id,foot:groundContact(footprint.maxI,footprint.maxJ),draw:c=>{
+      drawBuilding(m,d,c);
+      if(m.state.phase==='building'&&d.points>0){
+        if(d.changed&&progress<.8){const stage=constructionStage(progress),key={'site-prep':'prep',foundation:'foundation',frame:'frame',finishing:'finishing'}[stage];constructionSprite(c,key,x,y,d.intensity);}
+        else if(!d.changed){constructionSprite(c,'prep',x,y,Math.max(1,d.intensity-1));districtMaterials(c,m,d,d.intensity);}
+      }
+    }});
+    for(let n=0;n<Math.max(0,level-5);n++){
+      const [a,b]=ANNEX_SITES[n],footprint=buildingFootprint(m.state.city,d.id,1,[a,b],ANNEX_SCALE),[ax,ay]=iso(i+a,j+b);
+      objects.push({id:'annex:'+d.id+':'+n,foot:groundContact(footprint.maxI,footprint.maxJ),draw:c=>districtSprite(c,d.id,1,ax,ay,ANNEX_SCALE)});
+    }
+  }
+  m.objects=objects;
 }
 function water(m,frame) {
   const c=m.ctx.water;clear(c);
-  for(let i=0;i<11;i++) {tile(c,i,10,ASSETS.water.base);const [x,y]=iso(i,10);for(let n=0;n<4;n++){const k=(frame+n*2+i)%6;line(c,[x-17+k*3,y+10+n*4],[x-8+k*3,y+14+n*4],n%2?ASSETS.water.light:ASSETS.water.deep,2);}}
+  for(let i=0;i<=ROADS.extent;i++) {tile(c,i,ROADS.river,ASSETS.water.base);const [x,y]=iso(i,ROADS.river);for(let n=0;n<4;n++){const k=(frame+n*2+i)%6;line(c,[x-17+k*3,y+10+n*4],[x-8+k*3,y+14+n*4],n%2?ASSETS.water.light:ASSETS.water.deep,2);}}
 }
 function construction(m,frame) {
-  const c=m.ctx.construction;clear(c); const active=m.state.phase==='building';
+  const c=m.ctx.construction;clear(c);const active=m.state.phase==='building'&&!m.layout?.errors.length;
   m.el.dataset.construction=active?constructionStage(progress):'none';
   if(!active)return;
-  const stage=constructionStage(progress), stages={ 'site-prep':'prep', foundation:'foundation', frame:'frame', finishing:'finishing' };
-  for(const d of m.state.districts.filter(d=>d.points>0)) {
-    const [x,y]=iso(...DISTRICTS[d.id]);
-    if(d.changed && progress<.8) {
-      // Build on the same district footprint, with the old structure retained behind scaffolding.
-      sprite(c,'support',SUPPORT[stages[stage]],x,y+33,95+d.intensity*30+(d.dominant?15:0));
-      if(progress>=.4 && d.intensity>=3) {const cx=x-57,cy=y-38;line(c,[cx,cy+45],[cx,cy-65],ASSETS.effects.crane,3);line(c,[cx-29,cy-62],[cx+74,cy-11],ASSETS.effects.crane,4);line(c,[cx+62,cy-17],[cx+62,cy+9+(frame%4)*3],'#3e4540',1);}
-    } else if(!d.changed) { sprite(c,'support',SUPPORT.prep,x+38,y+43,80+d.intensity*12);materials(c,x+52,y+39,d.intensity); }
-    if(d.dominant) {c.strokeStyle='#f4d480';c.lineWidth=2;c.strokeRect(x-77,y+47,154,5);c.fillStyle='#f4d480';c.fillRect(x-77,y+47,154*progress,5);}
-    const p=SPRITE_ROUTES.constructionWorker;
-    for(let n=0;n<Math.min(3,d.intensity);n++){const sample=routeSample(p,frame+n*8),[a,b]=sample.point;const [u,v]=iso(DISTRICTS[d.id][0]+a,DISTRICTS[d.id][1]+b);unitSprite(c,'worker',sample.direction,u,v+29);}
-    for(let n=0;n<d.intensity;n++) {c.globalAlpha=.33; c.fillStyle=ASSETS.effects.dust;const step=(frame+n*2)%6;c.fillRect(x-45+n*23+step*2,y+22-step*4,6+step*2,4+step);c.globalAlpha=1;}
+  for(const d of m.state.districts.filter(d=>d.points>0)){
+    const [x,y]=iso(...districtAnchor(m.state.city,d.id));
+    if(d.dominant){c.strokeStyle='#ffffff';c.lineWidth=1;c.strokeRect(x-77,y+47,154,4);c.fillStyle='#ffffff';c.fillRect(x-77,y+47,154*progress,4);}
+    for(let n=0;n<d.intensity;n++){c.globalAlpha=.33;c.fillStyle=ASSETS.effects.dust;const step=(frame+n*2)%6;c.fillRect(x-45+n*23+step*2,y+22-step*4,6+step*2,4+step);c.globalAlpha=1;}
   }
 }
 function units(m,frame) {
-  const c=m.ctx.units;clear(c);let count=0;const facings=[];
-  for(const [name,r] of Object.entries(SPRITE_ROUTES)) {
+  const c=m.ctx.units;clear(c);let count=0;const facings=[],objects=[...m.objects],moving=[];
+  const addUnit=(id,unit,sample)=>{const footprint=unitFootprint(unit,sample.point,sample.direction),foot=groundContact(footprint.maxI,footprint.maxJ);objects.push({id,foot,draw:ctx=>unitSprite(ctx,unit,sample.direction,foot.x,foot.y)});moving.push({id,point:sample.point,direction:sample.direction,foot,footprint});};
+  for(const [name,r]of Object.entries(SPRITE_ROUTES)){
     if(!r.category||m.state.city.buildings[r.category]<r.minLevel)continue;
     if((m.state.city.constraints.resourceShortage||m.state.city.constraints.excessCapacity)&&name==='farmTractor')continue;
     if(m.state.city.constraints.resourceShortage&&name==='researchService')continue;
-    const sample=routeSample(r,frame+count*19),[x,y]=iso(...sample.point);
-    unitSprite(c,r.unit,sample.direction,x,y+17);facings.push(`${name}:${sample.direction}`);count++;
+    const sample=routeSample(r,frame+count*19);addUnit(name,r.unit,sample);facings.push(name+':'+sample.direction);count++;
   }
-  m.el.dataset.units=String(count);
-  m.el.dataset.unitFacings=facings.join(',');
-  // Fixed street routes pass behind district sprites; alpha masks prevent roof traffic.
-  c.globalCompositeOperation='destination-out';c.drawImage(m.ctx.buildings.canvas,0,0);c.globalCompositeOperation='source-over';
+  if(!m.layout?.errors.length&&m.state.phase==='building')for(const d of m.state.districts.filter(d=>d.points>0)){
+    const [i,j]=districtAnchor(m.state.city,d.id),[x,y]=iso(i,j);
+    if(d.changed&&progress>=.4&&progress<.8&&d.intensity>=3)objects.push({id:'crane:'+d.id,foot:groundContact(i+SERVICE_AREAS.crane.offset[0],j),draw:c=>{const [cx,baseY]=iso(i+SERVICE_AREAS.crane.offset[0],j),cy=baseY-45;line(c,[cx,cy+45],[cx,cy-65],ASSETS.effects.crane,3);line(c,[cx-29,cy-62],[cx+74,cy-11],ASSETS.effects.crane,4);line(c,[cx+62,cy-17],[cx+62,cy+9+(frame%4)*3],'#3e4540',1);}});
+    for(let n=0;n<Math.min(3,d.intensity);n++){const sample=routeSample(SPRITE_ROUTES.constructionWorker,frame+n*8);sample.point=[sample.point[0]+i,sample.point[1]+j];addUnit('worker:'+d.id+':'+n,'worker',sample);}
+  }
+  objects.sort(depthOrder).forEach(o=>o.draw(c));
+  m.moving=moving;m.depthOrder=objects.map(o=>({id:o.id,foot:o.foot}));
+  m.el.dataset.units=String(count);m.el.dataset.unitFacings=facings.join(',');
+  m.el.dataset.depthOrder=objects.map(o=>o.id).join(',');
 }
 function ambient(m,frame) {
-  const c=m.ctx.ambient;clear(c);const city=m.state.city,con=city.constraints;
+  const c=m.ctx.ambient;clear(c);if(m.layout?.errors.length)return;const city=m.state.city,con=city.constraints;
   if(city.buildings.capital>=2 && !con.resourceShortage) {
-    const [x,y]=iso(...DISTRICTS.capital);
+    const [x,y]=iso(...districtAnchor(city,'capital'));
     for(let n=0;n<3;n++){const f=(frame+n*2)%6;c.globalAlpha=.28*(1-f/7);c.fillStyle=ASSETS.effects.smoke;c.fillRect(x-26+f*3,y-83-f*6,5+f*2,4+f);}
     c.globalAlpha=1;
   }
-  if(city.buildings.resources>=2 && !con.resourceShortage && !con.excessCapacity){const [x,y]=iso(...DISTRICTS.resources);line(c,[x-53,y+5],[x-18,y+22],frame%3?'#8fc4c0':'#c6d8c8',2);}
-  for(const key of ['research','education','capital']) if(city.buildings[key]>0){const [x,y]=iso(...DISTRICTS[key]);c.fillStyle=key==='capital'&&con.technologyAdoption?'#68786c':frame%4<2?'#e8d690':'#78ada0';c.fillRect(x+13,y-48,3,3);}
-  if(con.resourceShortage){const [x,y]=iso(...DISTRICTS.resources);c.globalAlpha=.18;poly(c,[[x-72,y],[x,y+36],[x+65,y+3],[x,y-28]],'#b49a52');c.globalAlpha=1;}
+  if(city.buildings.resources>=2 && !con.resourceShortage && !con.excessCapacity){const [x,y]=iso(...districtAnchor(city,'resources'));line(c,[x-53,y+5],[x-18,y+22],frame%3?'#8fc4c0':'#c6d8c8',2);}
 }
 function ownership(m) {
-  const c=m.ctx.ownership;clear(c);const d=m.state.districts.find(d=>d.id===m.state.selected);
-  if(d){const [x,y]=iso(...DISTRICTS[d.id]);c.globalAlpha=.1;poly(c,[[x-92,y-40],[x,y-120],[x+92,y-40],[x,y+40]],'#ffdd86');c.globalAlpha=1;c.lineWidth=2;poly(c,[[x-92,y-40],[x,y-120],[x+92,y-40],[x,y+40]],null,'#f4d58c');}
-  const color=m.state.owner==='player'?'#8bbdb2':m.state.owner==='rival'?'#d4a16f':'#b4bf9c';
-  line(c,[42,431],[42,397],'#d7d5b3',2);poly(c,[[43,397],[63,399],[61,410],[43,408]],color);
-  for(const [index,d] of m.state.diagnostics.entries()){const [x,y]=iso(...DISTRICTS[d.category]);const offset=m.state.diagnostics.slice(0,index).filter(v=>v.category===d.category).length*18;c.fillStyle='#2c3932';c.fillRect(x+50,y-61+offset,18,16);c.fillStyle='#f2cb77';c.font='bold 12px monospace';c.fillText('!',x+56,y-49+offset);}
+  // Targeting lives on the accessible district button so hover, focus and selection
+  // share one circular marker and stay aligned with the actual interaction target.
+  clear(m.ctx.ownership);
 }
+
 function resolution(m,now) {
-  const c=m.ctx.resolution;clear(c);if(m.state.phase!=='resolved'||now-m.born>1500||motion.matches)return;
+  const c=m.ctx.resolution;clear(c);if(m.layout?.errors.length||m.state.phase!=='resolved'||now-m.born>1500||motion.matches)return;
   const latest=m.state.city.history.at(-1);if(!latest)return;
-  for(const d of m.state.districts)if(latest.allocation[d.id]>0){const [x,y]=iso(...DISTRICTS[d.id]);c.globalAlpha=Math.max(0,1-(now-m.born)/1500);c.fillStyle='#263e36';c.fillRect(x-43,y+43,86,17);c.fillStyle='#f4daa1';c.font='bold 10px monospace';c.textAlign='center';c.fillText(latest.startState.buildings[d.id]<d.level?'UPGRADED':'SITE PROGRESS',x,y+55);c.textAlign='left';c.globalAlpha=1;}
+  for(const d of m.state.districts)if(latest.allocation[d.id]>0){const [x,y]=iso(...districtAnchor(m.state.city,d.id));c.globalAlpha=Math.max(0,1-(now-m.born)/1500);c.fillStyle='#263e36';c.fillRect(x-43,y+43,86,17);c.fillStyle='#f4daa1';c.font='bold 10px monospace';c.textAlign='center';c.fillText(latest.startState.buildings[d.id]<d.level?'UPGRADED':'UPGRADE FUNDED',x,y+55);c.textAlign='left';c.globalAlpha=1;}
 }
 function paint(m,now=performance.now()) {water(m,tick);construction(m,tick);units(m,tick);ambient(m,tick);resolution(m,now);draws++;}
 function animate(now) {
@@ -179,9 +223,9 @@ export async function syncCityMaps(root, descriptors) {
   cancelAnimationFrame(raf);raf=0;observer?.disconnect();instances.clear();
   const elements=descriptors.map(({city,...options})=>({el:root.querySelector(`[data-map="${city.id}"]`),state:visualState(city,options)}));
   await assetsReady();
-  for(const {el,state} of elements){if(!el?.isConnected)continue;el.querySelector('.map-loading')?.remove();const ctx=Object.fromEntries(LAYERS.map(k=>{const c=el.querySelector(`[data-layer="${k}"]`).getContext('2d');c.imageSmoothingEnabled=false;return[k,c];}));const m={el,ctx,state,visible:true,born:performance.now()};instances.set(state.city.id,m);el.dataset.phase=state.phase;el.dataset.roadLevel=state.roadLevel;el.dataset.levels=state.districts.map(d=>`${d.id}:${d.level}`).join(',');el.dataset.priority=state.districts.filter(d=>d.dominant).map(d=>d.id).join(',');el.querySelector('.map-scene-description').textContent=state.districts.map(d=>`${d.id}: ${d.name}, level ${d.level}${d.partial?', materials stored for next upgrade':''}.`).join(' ')+' '+state.diagnostics.map(d=>d.detail).join(' ');terrain(m);roads(m);buildings(m);ownership(m);paint(m);observer?.observe(el);}
+  for(const {el,state} of elements){if(!el?.isConnected)continue;el.querySelector('.map-loading')?.remove();const ctx=Object.fromEntries(LAYERS.map(k=>{const c=el.querySelector(`[data-layer="${k}"]`).getContext('2d');c.imageSmoothingEnabled=false;return[k,c];}));const m={el,ctx,state,visible:true,born:performance.now()};instances.set(state.city.id,m);el.dataset.phase=state.phase;el.dataset.roadLevel=state.roadLevel;el.dataset.levels=state.districts.map(d=>`${d.id}:${d.level}`).join(',');el.dataset.priority=state.districts.filter(d=>d.dominant).map(d=>d.id).join(',');el.querySelector('.map-scene-description').textContent=state.districts.map(d=>`${d.id}: ${d.name}, level ${d.level}${d.partial?', next upgrade partly funded':''}.`).join(' ')+' '+state.diagnostics.map(d=>d.detail).join(' ');terrain(m);roads(m);buildings(m);ownership(m);paint(m);observer?.observe(el);}
   restartClock();
 }
 export function setConstructionProgress(value){const prior=constructionStage(progress);progress=Math.max(0,Math.min(1,value));if(prior!==constructionStage(progress))for(const m of instances.values())if(m.state.phase==='building')buildings(m);}
 export function updateMapSelection(cityId,selected) {const m=instances.get(cityId);if(m){m.state.selected=selected;ownership(m);}}
-export function rendererStats(){return{maps:instances.size,loops:raf?1:0,atlases:images.size,draws,tick,progress,layers:LAYERS.length,states:[...instances.values()].map(m=>({city:m.state.city.id,visible:m.visible,...{districts:m.state.districts,diagnostics:m.state.diagnostics}}))};}
+export function rendererStats(){return{maps:instances.size,loops:raf?1:0,atlases:images.size,draws,tick,progress,layers:LAYERS.length,states:[...instances.values()].map(m=>({city:m.state.city.id,visible:m.visible,layout:m.layout,moving:m.moving,depthOrder:m.depthOrder,...{districts:m.state.districts,diagnostics:m.state.diagnostics}}))};}

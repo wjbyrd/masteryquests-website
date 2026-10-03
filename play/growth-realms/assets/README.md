@@ -18,8 +18,8 @@ Support order: house, apartments, warehouse, power facility, broadleaf tree, pin
 
 ## Exact recommended replacement dimensions
 
-- Map: **768 × 512 logical pixels**, 2:1 isometric southeast view, top-left sunlight. Tile: **64 × 32**.
-- District master: **256 × 256**, nominal footprint **192 × 96**, anchor **(128,218)**. Six-level sheet: **768 × 512** (3 × 2). Current 512-square frames display at **238 × 238** with normalized `(0.5,0.85)` anchor.
+- Current world: **1216 × 736 logical pixels**, responsive **1184 × 704** camera, 18 × 18 tile landscape, 2:1 isometric southeast view. Tile: **64 × 32**.
+- Suggested replacement district master: **256 × 256**, nominal footprint **192 × 96**, anchor **(128,218)**. Six-level replacement sheet: **768 × 512** (3 × 2). Current art uses the measured rectangles and ground anchors in `../district-layout.js`, retaining the native **238/512** scale. Image width/height vary by frame; a uniform image-center anchor is no longer used in the playable map. Replacements must supply their measured lot corners and image bounds.
 - Housing/warehouse/power masters: **128 × 128**, bottom center; current display maximum dimension **88–111**. Tree master **64 × 96**, current maximum dimension **66**.
 - Truck/tractor/van masters **48 × 48**, current display **49/43/43** maximum dimension. Bus master **64 × 48**, current display **57**. People masters **32 × 48**, current display **29/32** maximum dimension.
 - Construction masters **256 × 256**, four stages in a **1024 × 256** horizontal sheet. Activity size varies by allocation intensity; completed building tier never does.
@@ -40,6 +40,25 @@ Support order: house, apartments, warehouse, power facility, broadleaf tree, pin
 | Resolution labels | Stepped alpha | 1500 ms, then cleared |
 
 The shared clock runs at **8 FPS**. Vehicle/people sprites now have distinct front/rear poses and four directional views; they still use route movement rather than authored walk or wheel-cycle sheets. Terrain, roads, materials, selection and small effects are code-native pixel art with centralized palette entries; future raster replacements for these effects would require a drawing adapter. Building/vehicle/people replacements need only the manifest if they keep the documented layout.
+
+## Implemented ground footprints
+
+These are conservative map-space width × height envelopes of the measured lot corners, including a .125-tile edge tolerance. They include the lot's fences, planting and parked equipment. Towers and transparent image padding do not enlarge the ground collision box. Values below are rounded to three decimals; the runtime retains full precision. The largest footprint is not always the last level.
+
+| Level | Industry | Resources | Research | Education |
+| --- | --- | --- | --- | --- |
+| 0 | 3.430 × 3.386 | 3.422 × 3.422 | 3.655 × 3.357 | 2.464 × 2.478 |
+| 1 | 3.357 × 3.372 | 3.662 × 3.619 | 3.524 × 3.495 | 3.924 × 3.735 |
+| 2 | 3.502 × 3.495 | 3.873 × 3.873 | 3.713 × 3.437 | 4.178 × 3.916 |
+| 3 | 4.156 × 3.938 | 3.742 × 3.749 | 4.425 × 3.444 | 4.287 × 4.011 |
+| 4 | 4.134 × 3.960 | 3.924 × 3.880 | 4.512 × 3.713 | 4.381 × 4.149 |
+| 5 | 4.207 × 4.120 | 4.134 × 4.134 | 4.418 × 3.924 | 4.352 × 4.149 |
+
+Both cities use the same 6.5 × 6.5 parcel sizes and measured art. Structural expansion stops at ±2.95 tiles; the outer .3 tile is reserved for service access. Beyond level 5, up to four separately checked annex lots use the level-1 footprint at 48/238 scale, centered at offsets (-1.8, 2.5), (-.6, 2.5), (.6, 2.5), (1.8, 2.5). Their footprint therefore remains below .8 × .8 tiles. The main lot stays at level 5.
+
+Construction stages have independently measured ground corners and anchors in `CONSTRUCTION_VISUALS`; their ground envelope fits inside 4.6 × 4.3 tiles at maximum intensity. Pallets and crane bases have separate service rectangles. The .4 × .4 worker footprint follows the rear/left service walk, clear of annexes. Progress bars, dust and resolution labels have additional road/parcel checks. Crane booms and building height may extend above their lots.
+
+`PROTECTED_ROADS` is both the collision geometry and the source of the actual road drawing. Vehicles use its centerlines. Public pedestrians use the separate .7-tile `SIDEWALKS` network, and construction workers use paved service walks. `UNIT_GROUND` supplies direction-dependent vehicle length/width and ground contacts; tests check full bodies through complete route loops, rather than checking center points alone. Decorative props are filtered against land, roads, actual occupied lots and active construction parcels before rendering.
 
 ## Directional-unit update
 

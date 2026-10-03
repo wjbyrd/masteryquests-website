@@ -26,7 +26,7 @@ try{
   await photo('04-construction');await page.locator('#consequences').waitFor({state:'visible'});await waitMaps();await photo('05-cycle-resolution');
   let s=await stats();assert.ok(s.states.every(s=>s.districts.every(d=>d.intensity===0)));assert.equal(s.loops,1);
   assert.equal(s.states.find(s=>s.city==='rivermark').districts.find(d=>d.id==='education').level,1);
-  await page.locator('[data-map-district="education"][data-city="rivermark"]').click();assert.match(await page.locator('#inspect-rivermark').innerText(),/Materials stored/);
+  await page.locator('[data-map-district="education"][data-city="rivermark"]').click();assert.match(await page.locator('#inspect-rivermark').innerText(),/NEXT UPGRADE/);
   // Research/resource dominance checked through real planning and resolution.
   for(const [priority,allocation] of [['research',[2,2,14,2]],['resources',[2,14,2,2]]]){
     await page.locator('#advance').click();await fill(allocation);await page.locator('#advance').click();await page.locator('.city-map[data-phase="building"]').first().waitFor();
@@ -48,7 +48,7 @@ try{
   await page.locator('[data-choose="rivermark"]').click();await page.locator('#city-tabs [data-view="combined"]').click();
   // Real diagnostic objects, drawn in an isolated preview; no gameplay state is patched.
   await page.evaluate(async()=>{const {createCities}=await import('./model.js'),{syncCityMaps}=await import('./city-renderer.js');const cities=createCities();for(const city of cities)for(const k of Object.keys(city.constraints))city.constraints[k]=true;await syncCityMaps(document.querySelector('#city-maps'),cities.map(city=>({city,phase:'planning'})));});
-  s=await stats();assert.ok(s.states.every(s=>s.diagnostics.length===5));assert.match(await page.locator('.map-scene-description').first().innerText(),/Technology adoption constrained/);await photo('07-diagnostic-fixture');
+  s=await stats();assert.ok(s.states.every(s=>s.diagnostics.length===5));assert.match(await page.locator('.map-scene-description').first().innerText(),/Available technology is ahead of workforce training/);await photo('07-diagnostic-fixture');
   await page.goto(url);await enterChoice(page);await waitMaps();
   for(const width of [320,390,768,1600]){await page.setViewportSize({width,height:1100});assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,`overflow ${width}`);if(width===390)await photo('08-phone');}
   assert.deepEqual(errors,[]);console.log('PASS: all 12 visual acceptance cases; 7 atlases; real construction frame changes; 8FPS singleton loop; visibility pause/resume; reduced motion; view/replay cleanup; diagnostics; 320–1600px; zero browser errors.');console.log('Screenshots: '+output);

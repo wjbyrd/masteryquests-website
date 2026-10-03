@@ -57,6 +57,10 @@ function publicTreeFilter(rel, entry) {
   const normalized = rel.replaceAll("\\", "/");
   const segments = normalized.split("/");
 
+  // Growth Realms is currently available through the unlisted beta hub only.
+  // Its authoritative play/ source is copied there by publishGamesPreview.
+  if (normalized === "play/growth-realms" || normalized.startsWith("play/growth-realms/")) return false;
+
   // Retired Quiz Converter variants and instructions remain in source only.
   // Covers hyphenated, underscored and historical space-separated filenames.
   if (/(?:^|\/)canvas[- _]quiz[- _]converter(?:[- _/.]|$)/i.test(normalized)) return false;
