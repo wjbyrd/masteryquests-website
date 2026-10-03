@@ -13,7 +13,7 @@ const require = createRequire(import.meta.url);
 const {assertCanonicalIntegrity} = require('./composer-integrity-contracts.js');
 const {currentAuditedQuestion} = require('./composer-audit-contracts.js');
 const approved = require('./general-economics-approved-revisions.js');
-const micro = require('./general-economics-editorial-approved-revisions.js');
+const micro = require('./general-economics-construct-approved-revisions.js');
 const core = require("../composer-core.js");
 const helpers = require("./composer-test-helpers.js");
 const testRoot = path.dirname(fileURLToPath(import.meta.url));
@@ -147,7 +147,7 @@ async function run() {
         const editorial = micro.editorialLedger.changes.find(change => change.id === String(author.id));
         const revisedField = editorial?.fields.includes(field);
         if (revisedField) pass(JSON.stringify(editorial.beforeRecord[field]) === JSON.stringify(value), `Editorial alignment before-state ${author.id}: ${field}`);
-        const expected = revisedField ? editorial.afterRecord[field] : value;
+        const expected = revisedField ? micro.approvedQuestion(author.id)[field] : value;
         pass(JSON.stringify(question[field]) === JSON.stringify(expected), `Aligned current field ${author.id}: ${field}`);
       }
     }

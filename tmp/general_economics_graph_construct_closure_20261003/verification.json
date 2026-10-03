@@ -1,0 +1,524 @@
+{
+  "sourceSha256": "7e385af9bc5843fcec94c15a8e8616d19159dcf8a42da73e36b2e323b7d53dda",
+  "integrity": {
+    "concepts": 149,
+    "questions": 9779,
+    "graphs": 1147,
+    "assets": 507
+  },
+  "changedIds": [
+    "40001",
+    "40004",
+    "40008",
+    "40011",
+    "40014",
+    "40016",
+    "40021",
+    "40027",
+    "ECON-MG-HARD-258",
+    "ECON-MG-HARD-259",
+    "ECON-MG-HARD-261",
+    "ECON-MG-HARD-262",
+    "ECON-MG-LEGENDARY-9003",
+    "ECON-MG-LEGENDARY-9004",
+    "ECON-MG-LEGENDARY-9017",
+    "ECON-MG-LEGENDARY-9037",
+    "ECON-MG-LEGENDARY-9038",
+    "ECON-MG-LEGENDARY-9039",
+    "ECON-MG-MEDIUM-157",
+    "ECON-MG-MEDIUM-167",
+    "ECON-MG-MEDIUM-171",
+    "ECON-MG-MEDIUM-175",
+    "P62D-ITP-H-015",
+    "P62D-ITP-M-032",
+    "P62D-ITP-M-034",
+    "PG1-DMD-EL-001",
+    "PG1-DMD-EL-003",
+    "PG1-DMD-H-001",
+    "PG1-DMD-L-001",
+    "PG1-DMD-M-001",
+    "PG1-EQ-L-001",
+    "PG1-SUP-EL-002",
+    "PG1-SUP-EL-003",
+    "PG1-SUP-H-001",
+    "PG1-SUP-M-001",
+    "PG1-SUP-M-005",
+    "PG2-CEIL-E-001",
+    "PG2-FLR-E-001"
+  ],
+  "keyChecks": [
+    {
+      "id": "40001",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 1,
+      "hashChanged": true
+    },
+    {
+      "id": "40004",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 0,
+      "hashChanged": true
+    },
+    {
+      "id": "40008",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 0,
+      "hashChanged": true
+    },
+    {
+      "id": "40011",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 3,
+      "hashChanged": true
+    },
+    {
+      "id": "40014",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 2,
+      "hashChanged": true
+    },
+    {
+      "id": "40016",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 0,
+      "hashChanged": true
+    },
+    {
+      "id": "40021",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 1,
+      "hashChanged": true
+    },
+    {
+      "id": "40027",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 3,
+      "hashChanged": true
+    },
+    {
+      "id": "ECON-MG-HARD-258",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 0,
+      "hashChanged": true
+    },
+    {
+      "id": "ECON-MG-HARD-259",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 0,
+      "hashChanged": true
+    },
+    {
+      "id": "ECON-MG-HARD-261",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 0,
+      "hashChanged": true
+    },
+    {
+      "id": "ECON-MG-HARD-262",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 0,
+      "hashChanged": true
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9003",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 0,
+      "hashChanged": true
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9004",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 1,
+      "hashChanged": true
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9017",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 0,
+      "hashChanged": true
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9037",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 0,
+      "hashChanged": true
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9038",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 0,
+      "hashChanged": true
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9039",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 0,
+      "hashChanged": true
+    },
+    {
+      "id": "ECON-MG-MEDIUM-157",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 3,
+      "hashChanged": true
+    },
+    {
+      "id": "ECON-MG-MEDIUM-167",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 0,
+      "hashChanged": true
+    },
+    {
+      "id": "ECON-MG-MEDIUM-171",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 0,
+      "hashChanged": true
+    },
+    {
+      "id": "ECON-MG-MEDIUM-175",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 0,
+      "hashChanged": true
+    },
+    {
+      "id": "P62D-ITP-H-015",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 2,
+      "hashChanged": true
+    },
+    {
+      "id": "P62D-ITP-M-032",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 0,
+      "hashChanged": true
+    },
+    {
+      "id": "P62D-ITP-M-034",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 0,
+      "hashChanged": true
+    },
+    {
+      "id": "PG1-DMD-EL-001",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 0,
+      "hashChanged": true
+    },
+    {
+      "id": "PG1-DMD-EL-003",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 0,
+      "hashChanged": true
+    },
+    {
+      "id": "PG1-DMD-H-001",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 0,
+      "hashChanged": true
+    },
+    {
+      "id": "PG1-DMD-L-001",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 1,
+      "hashChanged": true
+    },
+    {
+      "id": "PG1-DMD-M-001",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 1,
+      "hashChanged": true
+    },
+    {
+      "id": "PG1-EQ-L-001",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 1,
+      "hashChanged": true
+    },
+    {
+      "id": "PG1-SUP-EL-002",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 0,
+      "hashChanged": true
+    },
+    {
+      "id": "PG1-SUP-EL-003",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 0,
+      "hashChanged": true
+    },
+    {
+      "id": "PG1-SUP-H-001",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 0,
+      "hashChanged": true
+    },
+    {
+      "id": "PG1-SUP-M-001",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 3,
+      "hashChanged": true
+    },
+    {
+      "id": "PG1-SUP-M-005",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 3,
+      "hashChanged": true
+    },
+    {
+      "id": "PG2-CEIL-E-001",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 0,
+      "hashChanged": true
+    },
+    {
+      "id": "PG2-FLR-E-001",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 2,
+      "hashChanged": true
+    }
+  ],
+  "bankChecks": {
+    "general": {
+      "ids": 1589,
+      "changedAuthorizedIds": [
+        "40001",
+        "40004",
+        "40008",
+        "40011",
+        "40014",
+        "40016",
+        "40021",
+        "40027",
+        "ECON-MG-HARD-258",
+        "ECON-MG-HARD-259",
+        "ECON-MG-HARD-261",
+        "ECON-MG-HARD-262",
+        "ECON-MG-LEGENDARY-9003",
+        "ECON-MG-LEGENDARY-9004",
+        "ECON-MG-LEGENDARY-9017",
+        "ECON-MG-LEGENDARY-9037",
+        "ECON-MG-LEGENDARY-9038",
+        "ECON-MG-LEGENDARY-9039",
+        "ECON-MG-MEDIUM-157",
+        "ECON-MG-MEDIUM-167",
+        "ECON-MG-MEDIUM-171",
+        "ECON-MG-MEDIUM-175",
+        "P62D-ITP-H-015",
+        "P62D-ITP-M-032",
+        "P62D-ITP-M-034",
+        "PG1-DMD-EL-001",
+        "PG1-DMD-EL-003",
+        "PG1-DMD-H-001",
+        "PG1-DMD-L-001",
+        "PG1-DMD-M-001",
+        "PG1-EQ-L-001",
+        "PG1-SUP-EL-002",
+        "PG1-SUP-EL-003",
+        "PG1-SUP-H-001",
+        "PG1-SUP-M-001",
+        "PG1-SUP-M-005",
+        "PG2-CEIL-E-001",
+        "PG2-FLR-E-001"
+      ],
+      "unrelatedUnchanged": 1551
+    },
+    "micro": {
+      "ids": 6301,
+      "changedAuthorizedIds": [
+        "40001",
+        "40004",
+        "40008",
+        "40011",
+        "40014",
+        "40016",
+        "40021",
+        "40027",
+        "ECON-MG-HARD-258",
+        "ECON-MG-HARD-259",
+        "ECON-MG-HARD-261",
+        "ECON-MG-HARD-262",
+        "ECON-MG-LEGENDARY-9003",
+        "ECON-MG-LEGENDARY-9004",
+        "ECON-MG-LEGENDARY-9017",
+        "ECON-MG-LEGENDARY-9037",
+        "ECON-MG-LEGENDARY-9038",
+        "ECON-MG-LEGENDARY-9039",
+        "ECON-MG-MEDIUM-157",
+        "ECON-MG-MEDIUM-167",
+        "ECON-MG-MEDIUM-171",
+        "ECON-MG-MEDIUM-175",
+        "P62D-ITP-H-015",
+        "P62D-ITP-M-032",
+        "P62D-ITP-M-034",
+        "PG1-DMD-EL-001",
+        "PG1-DMD-EL-003",
+        "PG1-DMD-H-001",
+        "PG1-DMD-L-001",
+        "PG1-DMD-M-001",
+        "PG1-EQ-L-001",
+        "PG1-SUP-EL-002",
+        "PG1-SUP-EL-003",
+        "PG1-SUP-H-001",
+        "PG1-SUP-M-001",
+        "PG1-SUP-M-005",
+        "PG2-CEIL-E-001",
+        "PG2-FLR-E-001"
+      ],
+      "unrelatedUnchanged": 6263
+    },
+    "macro": {
+      "ids": 4745,
+      "changedAuthorizedIds": [
+        "40001",
+        "40004",
+        "40008",
+        "40011",
+        "40014",
+        "40016",
+        "40021",
+        "40027",
+        "ECON-MG-HARD-258",
+        "ECON-MG-HARD-259",
+        "ECON-MG-HARD-261",
+        "ECON-MG-HARD-262",
+        "ECON-MG-LEGENDARY-9003",
+        "ECON-MG-LEGENDARY-9004",
+        "ECON-MG-LEGENDARY-9017",
+        "ECON-MG-LEGENDARY-9037",
+        "ECON-MG-LEGENDARY-9038",
+        "ECON-MG-LEGENDARY-9039",
+        "ECON-MG-MEDIUM-157",
+        "ECON-MG-MEDIUM-167",
+        "ECON-MG-MEDIUM-171",
+        "ECON-MG-MEDIUM-175",
+        "P62D-ITP-H-015",
+        "P62D-ITP-M-032",
+        "P62D-ITP-M-034",
+        "PG1-DMD-EL-001",
+        "PG1-DMD-EL-003",
+        "PG1-DMD-H-001",
+        "PG1-DMD-L-001",
+        "PG1-DMD-M-001",
+        "PG1-EQ-L-001",
+        "PG1-SUP-EL-002",
+        "PG1-SUP-EL-003",
+        "PG1-SUP-H-001",
+        "PG1-SUP-M-001",
+        "PG1-SUP-M-005",
+        "PG2-CEIL-E-001",
+        "PG2-FLR-E-001"
+      ],
+      "unrelatedUnchanged": 4707
+    }
+  },
+  "unauthorizedRecordChanges": 0,
+  "preservedMetadata": true,
+  "preservedRouting": true,
+  "preservedGraphAssets": true,
+  "protectedExistingFiles": 1655,
+  "unexpectedFileChanges": [],
+  "negativeProbes": [
+    {
+      "id": "40001",
+      "field": "q",
+      "rejected": true
+    },
+    {
+      "id": "ECON-MG-EASY-1",
+      "field": "feedback",
+      "rejected": true
+    },
+    {
+      "id": "40001",
+      "field": "difficulty",
+      "rejected": true
+    }
+  ],
+  "publication": {
+    "publishedIds": 1589,
+    "allTargetsPresent": true,
+    "exactContentParity": true,
+    "inlineScriptsCompiled": 1,
+    "allTenModesPass": true,
+    "answerVerification": {
+      "ok": true,
+      "questionCount": 1589,
+      "issues": []
+    }
+  }
+}

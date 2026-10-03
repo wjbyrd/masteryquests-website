@@ -1,0 +1,420 @@
+{
+  "40001": {
+    "q": "Use the graph. Using A and B and the shape of PPF0, which statement correctly gives the average opportunity cost of a pizza from A to B and explains what happens to opportunity cost farther to the right?",
+    "options": [
+      "The average is 2 robots per pizza; the increasingly steep frontier means later pizzas cost more robots.",
+      "The average is 1 robot per pizza; the increasingly steep frontier means later pizzas cost more robots.",
+      "The average is 1 robot per pizza; opportunity cost remains constant along PPF0.",
+      "The average is 2 robots per pizza; opportunity cost remains constant along PPF0."
+    ],
+    "feedback": "A is 20 pizzas and 120 robots; B is 60 pizzas and 80 robots. The average cost is (120 - 80)/(60 - 20) = 1 robot per pizza. The frontier becomes steeper farther to the right, so producing additional pizzas requires giving up progressively more robots.",
+    "correct_index": 1
+  },
+  "40004": {
+    "q": "Which statement correctly distinguishes the move from A to B from the shift of PPF0 to PPF1, using the changes shown in the graph?",
+    "options": [
+      "A to B reallocates existing resources and gives up 40 orders of fries; PPF1 expands capacity and raises maximum burger output by 10.",
+      "A to B reallocates existing resources and gives up 20 orders of fries; PPF1 expands capacity and raises maximum burger output by 10.",
+      "A to B expands productive capacity by giving up 40 orders of fries; PPF1 only reallocates existing resources toward 10 more burgers.",
+      "A to B expands productive capacity by giving up 20 orders of fries; PPF1 only reallocates existing resources toward 10 more burgers."
+    ],
+    "feedback": "Moving from A to B on PPF0 reallocates existing resources: fries fall from 120 to 80 orders, a sacrifice of 40. Shifting to PPF1 expands productive capacity: the burger-axis intercept rises from 50 to 60. Reallocation changes the output mix within existing capacity; an outward shift expands what can be produced.",
+    "correct_index": 0
+  },
+  "40008": {
+    "q": "Use the graph. Which explanation of the move from A to B is supported by comparing what sellers offer at the price marked at A?",
+    "options": [
+      "Supply decreases: at that same price, sellers offer 100 thousand fewer tickets on S1 than on S0.",
+      "Supply decreases: at that same price, sellers offer 50 thousand fewer tickets on S1 than on S0.",
+      "Only quantity supplied decreases: a lower ticket price moves sellers along S0 by 100 thousand tickets.",
+      "Only quantity supplied decreases: a lower ticket price moves sellers along S0 by 50 thousand tickets."
+    ],
+    "feedback": "At A’s $10 price, S0 offers 200 thousand tickets and S1 offers 100 thousand. Offering 100 thousand fewer tickets at the same price is a decrease in supply. A movement along S0 would instead be a change in quantity supplied caused by a price change. In the graph, the A-to-B price actually rises.",
+    "correct_index": 0
+  },
+  "40011": {
+    "q": "Between equilibrium A and equilibrium B, which curve shifts, and what quantity change reflects movement along the other curve?",
+    "options": [
+      "Demand shifts right; quantity supplied increases by 100 thousand along S0.",
+      "Supply shifts right; quantity demanded increases by 50 thousand along D0.",
+      "Supply shifts right; quantity demanded increases by 100 thousand along D0.",
+      "Demand shifts right; quantity supplied increases by 50 thousand along S0."
+    ],
+    "feedback": "Demand shifts right from D0 to D1 while S0 stays fixed. Equilibrium moves from A at 200 thousand tickets to B at 250 thousand, so quantity supplied rises by 50 thousand along S0. A higher quantity supplied does not mean supply itself shifted.",
+    "correct_index": 3
+  },
+  "40014": {
+    "q": "An analyst attributes the move from B back to A to cheaper streaming substitutes and lower theater operating costs. Which evaluation correctly connects these events to the changes shown in the movie-ticket graph?",
+    "options": [
+      "Consistent: demand falls and supply rises; price falls $2 while quantity remains 200 thousand.",
+      "Consistent: demand and supply both fall; price falls $4 while quantity remains 200 thousand.",
+      "Consistent: demand falls and supply rises; price falls $4 while quantity remains 200 thousand.",
+      "Consistent: demand and supply both fall; price falls $2 while quantity remains 200 thousand."
+    ],
+    "feedback": "Cheaper streaming substitutes reduce demand for theater tickets, while lower operating costs increase supply. B is at $14 and 200 thousand tickets; A is at $10 and 200 thousand. Both shifts lower price, producing the $4 fall. Their opposite effects on quantity offset in this graph.",
+    "correct_index": 2
+  },
+  "40016": {
+    "q": "Cheaper alternative transportation reduces gasoline demand while refinery costs fall. For the move from B to D, which outcome and explanation fit the graph?",
+    "options": [
+      "Price falls $2 and quantity stays at 200 thousand gallons per day; the two shifts have offsetting effects on quantity.",
+      "Price falls $1 and quantity stays at 200 thousand gallons per day; the two shifts have offsetting effects on quantity.",
+      "Price falls $2 and quantity stays at 200 thousand gallons per day; unchanged quantity means neither curve shifted.",
+      "Price falls $1 and quantity stays at 200 thousand gallons per day; unchanged quantity means neither curve shifted."
+    ],
+    "feedback": "Cheaper alternative transportation reduces gasoline demand, while lower refinery costs increase supply. B is at $6 and 200 thousand gallons per day; D is at $4 and 200 thousand. The $2 price fall accompanies offsetting quantity effects: lower demand reduces quantity, while higher supply increases it. Unchanged equilibrium quantity does not mean the curves stayed fixed.",
+    "correct_index": 0
+  },
+  "40021": {
+    "q": "The graph shows a $1,000 rent ceiling. Which statement correctly classifies the policy and identifies the competitive equilibrium price?",
+    "options": [
+      "Binding: the equilibrium price is $1,250, so the legal level is below equilibrium.",
+      "Binding: the equilibrium price is $1,500, so the legal level is below equilibrium.",
+      "Nonbinding: the equilibrium price is $1,500, so the market still clears at that price.",
+      "Nonbinding: the equilibrium price is $1,250, so the market still clears at that price."
+    ],
+    "feedback": "The demand and supply curves intersect at $1,500. The legal maximum of $1,000 is a price ceiling. It is below equilibrium, so it prevents the market from clearing at $1,500 and is binding.",
+    "correct_index": 1
+  },
+  "40027": {
+    "q": "The graph shows a $15 minimum wage. Which statement correctly classifies the policy and identifies the competitive equilibrium wage?",
+    "options": [
+      "Binding: the equilibrium wage is $13, so the legal level is above equilibrium.",
+      "Nonbinding: the equilibrium wage is $12, so the market still clears at that wage.",
+      "Nonbinding: the equilibrium wage is $13, so the market still clears at that wage.",
+      "Binding: the equilibrium wage is $12, so the legal level is above equilibrium."
+    ],
+    "feedback": "The demand and supply curves intersect at $12. The legal minimum of $15 is a price floor. It is above equilibrium, so it prevents the market from clearing at $12 and is binding.",
+    "correct_index": 3
+  },
+  "ECON-MG-HARD-258": {
+    "q": "Demand and supply both increase, taking the market from D1/S1 to D2/S2. Which statement distinguishes what theory guarantees from the particular outcome shown?",
+    "options": [
+      "Quantity must rise; price could rise, fall, or stay unchanged. Here price stays P2 and quantity rises from Q1 to Q3.",
+      "Quantity must rise; price could rise, fall, or stay unchanged. Here price stays P2 and quantity rises from Q1 to Q2.",
+      "Quantity must rise; price must stay unchanged. Here price stays P2 and quantity rises from Q1 to Q3.",
+      "Quantity must rise; price must stay unchanged. Here price stays P2 and quantity rises from Q1 to Q2."
+    ],
+    "feedback": "A demand increase raises equilibrium price and quantity; a supply increase lowers price and raises quantity. Quantity therefore rises for certain, but price depends on the relative shifts. Here D1/S1 is (P2,Q1) and D2/S2 is (P2,Q3): price stays P2 and quantity rises from Q1 to Q3.",
+    "correct_index": 0
+  },
+  "ECON-MG-HARD-259": {
+    "q": "Demand increases from D1 to D2 while supply decreases from S2 to S1. Which statement distinguishes what theory guarantees from the particular outcome shown?",
+    "options": [
+      "Price must rise; quantity could rise, fall, or stay unchanged. Here price rises from P1 to P3 and quantity stays Q2.",
+      "Price must rise; quantity could rise, fall, or stay unchanged. Here price rises from P2 to P3 and quantity stays Q2.",
+      "Price must rise; quantity must stay unchanged. Here price rises from P1 to P3 and quantity stays Q2.",
+      "Price must rise; quantity must stay unchanged. Here price rises from P2 to P3 and quantity stays Q2."
+    ],
+    "feedback": "Higher demand and lower supply both raise price, but demand raises quantity while lower supply reduces it. Quantity is therefore ambiguous in general. Here D1/S2 is (P1,Q2) and D2/S1 is (P3,Q2): price rises from P1 to P3 while the quantity effects offset at Q2.",
+    "correct_index": 0
+  },
+  "ECON-MG-HARD-261": {
+    "q": "The market initially clears at D1/S1. A substitute becomes more expensive, while supply conditions remain unchanged. Which explanation and equilibrium movement fit the graph?",
+    "options": [
+      "Demand shifts right; equilibrium moves from (P2, Q1) to (P3, Q2).",
+      "Demand shifts right; equilibrium moves from (P1, Q2) to (P2, Q3).",
+      "Demand shifts left; equilibrium moves from (P2, Q1) to (P3, Q2).",
+      "Demand shifts left; equilibrium moves from (P1, Q2) to (P2, Q3)."
+    ],
+    "feedback": "A higher substitute price increases demand for this good, shifting demand right from D1 to D2. With supply fixed at S1, the graph moves from (P2,Q1) to (P3,Q2). Both equilibrium price and quantity rise.",
+    "correct_index": 0
+  },
+  "ECON-MG-HARD-262": {
+    "q": "The market initially clears at D2/S2. A close substitute becomes cheaper, while supply conditions remain unchanged. Which explanation and equilibrium movement fit the graph?",
+    "options": [
+      "Demand shifts left; equilibrium moves from (P2, Q3) to (P1, Q2).",
+      "Demand shifts left; equilibrium moves from (P3, Q2) to (P2, Q1).",
+      "Demand shifts right; equilibrium moves from (P2, Q3) to (P1, Q2).",
+      "Demand shifts right; equilibrium moves from (P3, Q2) to (P2, Q1)."
+    ],
+    "feedback": "A cheaper substitute reduces demand for this good, shifting demand left from D2 to D1. On unchanged S2, equilibrium moves from (P2,Q3) to (P1,Q2). Both equilibrium price and quantity fall.",
+    "correct_index": 0
+  },
+  "ECON-MG-LEGENDARY-9003": {
+    "q": "Production moves from F to C and then from C to D with resources and technology unchanged. Which explanation, supported by the graph’s output changes, explains why only the second move sacrifices Y for more X?",
+    "options": [
+      "F to C uses idle resources to add 7 X and 15 Y; C to D reallocates fully employed resources, adding 6 X at a cost of 15 Y.",
+      "F to C uses idle resources to add 7 X and 10 Y; C to D reallocates fully employed resources, adding 6 X at a cost of 15 Y.",
+      "F to C expands productive capacity to add 7 X and 15 Y; C to D uses idle resources to add 6 X at a cost of 15 Y.",
+      "F to C expands productive capacity to add 7 X and 10 Y; C to D uses idle resources to add 6 X at a cost of 15 Y."
+    ],
+    "feedback": "F=(8,20) lies inside the PPF, while C=(15,35) and D=(21,20) lie on it. F to C uses idle resources to add 7 X and 15 Y without expanding capacity. C to D reallocates fully employed resources: gaining 6 X requires giving up 15 Y.",
+    "correct_index": 0
+  },
+  "ECON-MG-LEGENDARY-9004": {
+    "q": "Use the graph. Compare the average opportunity cost of Good X over B to C and C to D. Which costs and explanation best fit the PPF?",
+    "options": [
+      "About 0.63 then 1.43 Y per X; expanding X production uses resources increasingly less suited to producing X.",
+      "About 1.43 then 2.5 Y per X; expanding X production uses resources increasingly less suited to producing X.",
+      "About 1.43 then 2.5 Y per X; the change shows that resources are equally well suited to producing X and Y.",
+      "About 0.63 then 1.43 Y per X; the change shows that resources are equally well suited to producing X and Y."
+    ],
+    "feedback": "B=(8,45), C=(15,35), and D=(21,20). The costs of additional X are 10/7, about 1.43 Y per X, and 15/6 = 2.5 Y per X. Rising opportunity cost is consistent with moving resources into X production that are increasingly less suited to it, rather than resources being equally suited to both goods.",
+    "correct_index": 1
+  },
+  "ECON-MG-LEGENDARY-9017": {
+    "q": "Compare two changes: first, D1/S1 to D2/S1; second, D1/S1 to D1/S2. Which statement correctly classifies both changes and gives their ending equilibria?",
+    "options": [
+      "First, demand increases and ends at (P3, Q2); second, quantity demanded increases along D1 and ends at (P1, Q2).",
+      "First, demand increases and ends at (P3, Q3); second, quantity demanded increases along D1 and ends at (P1, Q3).",
+      "First, quantity demanded changes along an unchanged demand curve and ends at (P3, Q2); second, demand shifts and ends at (P1, Q2).",
+      "First, quantity demanded changes along an unchanged demand curve and ends at (P3, Q3); second, demand shifts and ends at (P1, Q3)."
+    ],
+    "feedback": "D1/S1 to D2/S1 switches demand curves, so demand increases; the ending intersection is (P3,Q2). D1/S1 to D1/S2 stays on D1: price falls and quantity demanded increases along that curve, ending at (P1,Q2). A change in quantity demanded along a curve differs from a change in demand itself.",
+    "correct_index": 0
+  },
+  "ECON-MG-LEGENDARY-9037": {
+    "q": "A $50 price ceiling is imposed with demand and supply unchanged. Which statement correctly classifies the policy using the equilibrium shown?",
+    "options": [
+      "Nonbinding: the legal price is above the $30 equilibrium price, so the market stays at equilibrium.",
+      "Nonbinding: the legal price is above the $40 equilibrium price, so the market stays at equilibrium.",
+      "Binding: the legal price is above the $30 equilibrium price, so transactions must occur at $50.",
+      "Binding: the legal price is above the $40 equilibrium price, so transactions must occur at $50."
+    ],
+    "feedback": "The graph’s competitive equilibrium price is $30. A $50 maximum is above that price, so the ceiling does not prevent the equilibrium trade. It is nonbinding, and the market remains at $30 and 200 units.",
+    "correct_index": 0
+  },
+  "ECON-MG-LEGENDARY-9038": {
+    "q": "A $10 price floor is imposed with demand and supply unchanged. Which statement correctly classifies the policy using the equilibrium shown?",
+    "options": [
+      "Nonbinding: the legal price is below the $30 equilibrium price, so the market stays at equilibrium.",
+      "Nonbinding: the legal price is below the $40 equilibrium price, so the market stays at equilibrium.",
+      "Binding: the legal price is below the $30 equilibrium price, so transactions must occur at $10.",
+      "Binding: the legal price is below the $40 equilibrium price, so transactions must occur at $10."
+    ],
+    "feedback": "The graph’s competitive equilibrium price is $30. A $10 minimum is below that price, so the floor does not prevent the equilibrium trade. It is nonbinding, and the market remains at $30 and 200 units.",
+    "correct_index": 0
+  },
+  "ECON-MG-LEGENDARY-9039": {
+    "q": "An enforced $20 price ceiling is imposed. What additional consequence, beyond the lower posted price, follows from the quantities shown in the graph?",
+    "options": [
+      "A shortage of 100 units makes waiting, search, or another form of nonprice rationing necessary.",
+      "A shortage of 50 units makes waiting, search, or another form of nonprice rationing necessary.",
+      "A surplus of 100 units leaves sellers competing to dispose of unsold goods.",
+      "A surplus of 50 units leaves sellers competing to dispose of unsold goods."
+    ],
+    "feedback": "At the $20 ceiling, buyers demand 250 units and sellers supply 150, leaving a shortage of 100. Because the legal price cannot rise to clear the market, waiting, search, or another nonprice allocation method must ration the available units.",
+    "correct_index": 0
+  },
+  "ECON-MG-MEDIUM-157": {
+    "q": "Use the graph. Compare the opportunity cost of Good X over A to B and D to E. Which numerical evidence and conclusion fit the PPF?",
+    "options": [
+      "The costs are 0.5 and 4 Y per X; opportunity cost rises as more X is produced.",
+      "The costs are 0.625 and 5 Y per X; opportunity cost stays constant as more X is produced.",
+      "The costs are 0.5 and 4 Y per X; opportunity cost stays constant as more X is produced.",
+      "The costs are 0.625 and 5 Y per X; opportunity cost rises as more X is produced."
+    ],
+    "feedback": "A to B gives up 5 Y for 8 X, so the cost is 0.625 Y per X. D to E gives up 20 Y for 4 X, so the cost is 5 Y per X. This larger sacrifice per additional X shows increasing opportunity cost along the bowed frontier.",
+    "correct_index": 3
+  },
+  "ECON-MG-MEDIUM-167": {
+    "q": "The market initially clears at D1/S2. Consumer income rises for this normal good, while supply conditions remain unchanged. Which explanation and equilibrium movement fit the graph?",
+    "options": [
+      "Demand shifts right; equilibrium moves from (P1, Q2) to (P2, Q3).",
+      "Demand shifts right; equilibrium moves from (P2, Q1) to (P3, Q2).",
+      "Demand shifts left; equilibrium moves from (P1, Q2) to (P2, Q3).",
+      "Demand shifts left; equilibrium moves from (P2, Q1) to (P3, Q2)."
+    ],
+    "feedback": "Higher income increases demand for a normal good. With supply fixed at S2, demand shifts right from D1 to D2, moving equilibrium from (P1,Q2) to (P2,Q3). This is a demand shift, not a supply change.",
+    "correct_index": 0
+  },
+  "ECON-MG-MEDIUM-171": {
+    "q": "The graph shows a $20 price ceiling. Which statement correctly classifies the policy and identifies the competitive equilibrium price?",
+    "options": [
+      "Binding: the equilibrium price is $30, so the legal level is below equilibrium.",
+      "Binding: the equilibrium price is $25, so the legal level is below equilibrium.",
+      "Nonbinding: the equilibrium price is $30, so the market still clears at that price.",
+      "Nonbinding: the equilibrium price is $25, so the market still clears at that price."
+    ],
+    "feedback": "The demand and supply curves intersect at $30. The legal maximum of $20 is a price ceiling. It is below equilibrium, so it prevents the market from clearing at $30 and is binding.",
+    "correct_index": 0
+  },
+  "ECON-MG-MEDIUM-175": {
+    "q": "The graph shows a $40 price floor. Which statement correctly classifies the policy and identifies the competitive equilibrium price?",
+    "options": [
+      "Binding: the equilibrium price is $30, so the legal level is above equilibrium.",
+      "Binding: the equilibrium price is $35, so the legal level is above equilibrium.",
+      "Nonbinding: the equilibrium price is $30, so the market still clears at that price.",
+      "Nonbinding: the equilibrium price is $35, so the market still clears at that price."
+    ],
+    "feedback": "The demand and supply curves intersect at $30. The legal minimum of $40 is a price floor. It is above equilibrium, so it prevents the market from clearing at $30 and is binding.",
+    "correct_index": 0
+  },
+  "P62D-ITP-H-015": {
+    "q": "The domestic government auctions all import licenses competitively with no administrative costs. What is the value of rectangle R in the quota graph, and how does it enter domestic welfare?",
+    "options": [
+      "R is $100 of government revenue, a domestic transfer rather than deadweight loss.",
+      "R is $200 of deadweight loss because domestic firms pay it to the government.",
+      "R is $200 of government revenue, a domestic transfer rather than deadweight loss.",
+      "R is $100 of deadweight loss because domestic firms pay it to the government."
+    ],
+    "feedback": "Rectangle R has height $40 - $30 = $10 and width 40 - 20 = 20 imported units, so its value is $200. A competitive domestic government auction collects this rent as government revenue. The payment transfers income within the country; it is not destroyed surplus or deadweight loss.",
+    "correct_index": 2
+  },
+  "P62D-ITP-M-032": {
+    "q": "Trade opens at a world price of $5. Which statement correctly explains the trade direction using the no-trade equilibrium shown in the graph?",
+    "options": [
+      "The country imports: $5 is below the $7 no-trade price.",
+      "The country imports: $5 is below the $9 no-trade price.",
+      "The country exports: $5 is below the $7 no-trade price.",
+      "The country exports: $5 is below the $9 no-trade price."
+    ],
+    "feedback": "Domestic demand and supply intersect at $7, the no-trade price. The $5 world price is below $7. At that price, domestic quantity demanded exceeds quantity supplied, so imports fill the gap.",
+    "correct_index": 0
+  },
+  "P62D-ITP-M-034": {
+    "q": "Trade opens at a world price of $10. Which statement correctly explains the trade direction using the no-trade equilibrium shown in the graph?",
+    "options": [
+      "The country exports: $10 is above the $7 no-trade price.",
+      "The country exports: $10 is above the $9 no-trade price.",
+      "The country imports: $10 is above the $7 no-trade price.",
+      "The country imports: $10 is above the $9 no-trade price."
+    ],
+    "feedback": "Domestic demand and supply intersect at $7, the no-trade price. The $10 world price is above $7. At that price, domestic quantity supplied exceeds quantity demanded, so the excess is exported.",
+    "correct_index": 0
+  },
+  "PG1-DMD-EL-001": {
+    "q": "The only change in the donut market is the good’s own price, taking the market from A to B. Which conclusion fits the graph?",
+    "options": [
+      "Quantity demanded rises by 125 thousand along the existing curve; demand is unchanged.",
+      "Quantity demanded rises by 75 thousand along the existing curve; demand is unchanged.",
+      "Demand increases by 125 thousand because the lower price shifts the demand curve right.",
+      "Demand increases by 75 thousand because the lower price shifts the demand curve right."
+    ],
+    "feedback": "A shows 100 thousand donuts and B shows 225 thousand, an increase of 125 thousand. The only change is the good’s own price, so this is an increase in quantity demanded along the existing curve. Demand itself does not shift.",
+    "correct_index": 0
+  },
+  "PG1-DMD-EL-003": {
+    "q": "Compare the initial point on D0 at $6 with the final point on D1 at $4. Which explanation correctly separates the demand change from the price change?",
+    "options": [
+      "The demand decrease cuts quantity from 150 to 50 thousand at $6; the later price fall moves along D1 to 100 thousand, partly offsetting that decrease.",
+      "The demand decrease cuts quantity from 150 to 75 thousand at $6; the later price fall moves along D1 to 125 thousand, partly offsetting that decrease.",
+      "Demand is unchanged; the price fall alone changes quantity from 150 to 50 and then 100 thousand along D0.",
+      "Demand is unchanged; the price fall alone changes quantity from 150 to 75 and then 125 thousand along D0."
+    ],
+    "feedback": "At $6, quantity is 150 thousand on D0 and 50 thousand on D1. The lower quantity at the same price is a demand decrease. The subsequent price fall to $4 moves along D1 to 100 thousand, adding 50 thousand and only partly offsetting the demand decrease.",
+    "correct_index": 0
+  },
+  "PG1-DMD-H-001": {
+    "q": "Use the graph. From A to B, what is the quantity response per $1 price decrease, and what economic change does it represent?",
+    "options": [
+      "Quantity demanded rises by 25 thousand donuts per dollar through movement along the existing demand curve.",
+      "Quantity demanded rises by 20 thousand donuts per dollar through movement along the existing demand curve.",
+      "Demand increases by 25 thousand donuts per dollar because the price change shifts the curve right.",
+      "Demand increases by 20 thousand donuts per dollar because the price change shifts the curve right."
+    ],
+    "feedback": "A is at $10 and 100 thousand donuts; B is at $5 and 225 thousand. Quantity demanded rises by 125/5 = 25 thousand per $1 price decrease. This is movement along the unchanged demand curve, not a price-induced increase in demand.",
+    "correct_index": 0
+  },
+  "PG1-DMD-L-001": {
+    "q": "Use the graph. A report attributes the A-to-B change to stronger tastes for donuts. A survey finds that quantity desired at every fixed price is unchanged. Which diagnosis fits both sources of evidence?",
+    "options": [
+      "The report confuses a movement with a shift: price falls $4 and quantity demanded rises 100 thousand along unchanged demand.",
+      "The report confuses a movement with a shift: price falls $5 and quantity demanded rises 125 thousand along unchanged demand.",
+      "The report is supported: price falls $5 and quantity demanded rises 125 thousand because demand shifts right.",
+      "The report is supported: price falls $4 and quantity demanded rises 100 thousand because demand shifts right."
+    ],
+    "feedback": "The unchanged quantities desired at every fixed price rule out a demand shift caused by stronger tastes. A is at $10 and 100 thousand donuts; B is at $5 and 225 thousand. The $5 price fall increases quantity demanded by 125 thousand along unchanged demand, so the report confuses a movement with a shift.",
+    "correct_index": 1
+  },
+  "PG1-DMD-M-001": {
+    "q": "What economic change does the move from A to B in the donuts graph represent?",
+    "options": [
+      "Price falls $5; quantity demanded increases by 100 thousand along the existing curve.",
+      "Price falls $5; quantity demanded increases by 125 thousand along the existing curve.",
+      "Price falls $5; demand increases by 125 thousand because the curve shifts right.",
+      "Price falls $5; demand increases by 100 thousand because the curve shifts right."
+    ],
+    "feedback": "A is at $10 and 100 thousand donuts; B is at $5 and 225 thousand. Price falls $5 and quantity demanded rises 125 thousand. Because A and B lie on the same demand curve, this is a movement along demand rather than an increase in demand.",
+    "correct_index": 1
+  },
+  "PG1-EQ-L-001": {
+    "q": "With the curves fixed, compare the gas market at $2 and $4 per gallon. Which imbalances and price pressures would move the market toward the equilibrium shown?",
+    "options": [
+      "At $2, a 50-thousand-gallon shortage pushes price up; at $4, a 50-thousand-gallon surplus pushes price down.",
+      "At $2, a 100-thousand-gallon shortage pushes price up; at $4, a 100-thousand-gallon surplus pushes price down.",
+      "At $2, a 100-thousand-gallon shortage pushes price down; at $4, a 100-thousand-gallon surplus pushes price up.",
+      "At $2, a 50-thousand-gallon shortage pushes price down; at $4, a 50-thousand-gallon surplus pushes price up."
+    ],
+    "feedback": "At $2, quantity demanded is 200 thousand gallons and quantity supplied is 100 thousand, so a 100-thousand-gallon shortage puts upward pressure on price. At $4, supply is 200 thousand and demand is 100 thousand, so a 100-thousand-gallon surplus puts downward pressure on price. Both pressures move price toward the $3 equilibrium.",
+    "correct_index": 1
+  },
+  "PG1-SUP-EL-002": {
+    "q": "Compare the initial point on S0 at $9 with the final point on S1 at $13. Which explanation separates the supply change from the later price change?",
+    "options": [
+      "The supply decrease reduces quantity from 200 to 100 thousand at $9; the price rise moves along S1 to 200 thousand without shifting supply back.",
+      "The supply decrease reduces quantity from 250 to 150 thousand at $9; the price rise moves along S1 to 250 thousand without shifting supply back.",
+      "The supply decrease reduces quantity from 200 to 100 thousand at $9; the price rise moves along S1 to 200 thousand because supply shifts back to S0.",
+      "The supply decrease reduces quantity from 250 to 150 thousand at $9; the price rise moves along S1 to 250 thousand because supply shifts back to S0."
+    ],
+    "feedback": "At $9, S0 shows 200 thousand units and S1 shows 100 thousand. The lower quantity at the same price is a supply decrease. A subsequent price rise to $13 moves along S1 to 200 thousand. Returning to the original quantity does not shift supply back to S0.",
+    "correct_index": 0
+  },
+  "PG1-SUP-EL-003": {
+    "q": "Compare A on S0 with the final point on S1 at $2. Which explanation separates the supply change from the later price change?",
+    "options": [
+      "The supply increase raises quantity from 100 to about 225 thousand at A’s price; the price fall moves along S1 to about 100 thousand without shifting supply back.",
+      "The supply increase raises quantity from 125 to about 250 thousand at A’s price; the price fall moves along S1 to about 125 thousand without shifting supply back.",
+      "The supply increase raises quantity from 100 to about 225 thousand at A’s price; the price fall moves along S1 to about 100 thousand because supply shifts back to S0.",
+      "The supply increase raises quantity from 125 to about 250 thousand at A’s price; the price fall moves along S1 to about 125 thousand because supply shifts back to S0."
+    ],
+    "feedback": "A is at $3 and 100 thousand tacos on S0. At that same price, S1 shows about 225 thousand, indicating a supply increase. The later price fall to $2 moves along S1 to about 100 thousand. Quantity returns to its original level, but the supply curve remains S1.",
+    "correct_index": 0
+  },
+  "PG1-SUP-H-001": {
+    "q": "Use the graph. From A to B, what is the quantity response per $1 price increase, and what economic change does it represent?",
+    "options": [
+      "Quantity supplied rises by 25 thousand units per dollar through movement along the existing supply curve.",
+      "Quantity supplied rises by 20 thousand units per dollar through movement along the existing supply curve.",
+      "Supply increases by 25 thousand units per dollar because the price change shifts the curve right.",
+      "Supply increases by 20 thousand units per dollar because the price change shifts the curve right."
+    ],
+    "feedback": "Price rises from $6 to $11 and quantity supplied rises from 100 thousand to 225 thousand. The response is 125/5 = 25 thousand units per $1 price increase. Both points lie on the same supply curve, so quantity supplied increases through a movement along supply; supply itself does not shift.",
+    "correct_index": 0
+  },
+  "PG1-SUP-M-001": {
+    "q": "What economic change does the move from A to B in the coffee graph represent?",
+    "options": [
+      "Price rises $5; quantity supplied increases by 100 thousand along the existing curve.",
+      "Price rises $5; supply increases by 125 thousand because the curve shifts right.",
+      "Price rises $5; supply increases by 100 thousand because the curve shifts right.",
+      "Price rises $5; quantity supplied increases by 125 thousand along the existing curve."
+    ],
+    "feedback": "A is at $6 and 100 thousand units; B is at $11 and 225 thousand. Price rises $5 and quantity supplied rises 125 thousand along the same supply curve. This is an increase in quantity supplied, not a rightward shift of supply.",
+    "correct_index": 3
+  },
+  "PG1-SUP-M-005": {
+    "q": "What economic change does the move from A to B in the tacos graph represent?",
+    "options": [
+      "Price rises $1; quantity supplied increases by 100 thousand along the existing curve.",
+      "Price rises $1; supply increases by 125 thousand because the curve shifts right.",
+      "Price rises $1; supply increases by 100 thousand because the curve shifts right.",
+      "Price rises $1; quantity supplied increases by 125 thousand along the existing curve."
+    ],
+    "feedback": "A is at $3 and 100 thousand tacos; B is at $4 and 225 thousand. Price rises $1 and quantity supplied rises 125 thousand along S0. The higher quantity supplied reflects movement along the curve, not an increase in supply.",
+    "correct_index": 3
+  },
+  "PG2-CEIL-E-001": {
+    "q": "A legal maximum rent of $1,000 is shown. Which classification and equilibrium reading are correct?",
+    "options": [
+      "A binding ceiling; $1,000 is below the $2,000 equilibrium level.",
+      "A binding ceiling; $1,000 is below the $1,500 equilibrium level.",
+      "A nonbinding ceiling; $1,000 is below the $2,000 equilibrium level.",
+      "A binding floor; $1,000 is below the $2,000 equilibrium level."
+    ],
+    "feedback": "The demand and supply curves intersect at $2,000. The legal maximum of $1,000 is a price ceiling. It is below equilibrium, so it prevents the market from clearing at $2,000 and is binding.",
+    "correct_index": 0
+  },
+  "PG2-FLR-E-001": {
+    "q": "A legal minimum wage of $10 is shown. Which classification and equilibrium reading are correct?",
+    "options": [
+      "A binding floor; $10 is above the $8 equilibrium level.",
+      "A nonbinding floor; $10 is above the $7 equilibrium level.",
+      "A binding floor; $10 is above the $7 equilibrium level.",
+      "A binding ceiling; $10 is above the $7 equilibrium level."
+    ],
+    "feedback": "The demand and supply curves intersect at $7. The legal minimum of $10 is a price floor. It is above equilibrium, so it prevents the market from clearing at $7 and is binding.",
+    "correct_index": 2
+  }
+}

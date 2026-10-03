@@ -1,0 +1,1080 @@
+{
+  "40001": {
+    "original_construct": "Infer increasing opportunity cost from the changing slope of a bowed PPF.",
+    "drift_problem": "Every revised choice says opportunity cost rises farther right. The original conclusion is supplied; only the A-to-B average distinguishes the answers.",
+    "economic_and_graph_evidence": "Read A=(20,120) and B=(60,80): 40/40=1 robot per pizza. Interpret the visibly increasing absolute slope as rising opportunity cost. The two choices with the correct average have different economic conclusions.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "B",
+        "C"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "B",
+        "A"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": [
+      "Prefixed “Use the graph.” to satisfy the repository’s explicit graph-cue convention; the proposed task and all alternatives are unchanged."
+    ]
+  },
+  "40004": {
+    "original_construct": "Distinguish reallocation along a PPF from expansion of productive capacity.",
+    "drift_problem": "The revised stem calls the second change an increase in maximum output, and the choices vary only fries sacrificed and burgers added. Neither reallocation nor capacity expansion must be identified.",
+    "economic_and_graph_evidence": "Read 120 versus 80 orders of fries and the 50 versus 60 burger intercepts. Explain why changing the output mix on PPF0 differs from shifting the frontier.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "A",
+        "C"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "A",
+        "B"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": []
+  },
+  "40008": {
+    "original_construct": "Distinguish a decrease in supply from a decrease in quantity supplied.",
+    "drift_problem": "The revision explicitly states that supply decreases from S0 to S1. All choices share the correct price/quantity directions, so only equilibrium differences are tested.",
+    "economic_and_graph_evidence": "At A’s $10 price, S0 offers 200 thousand and S1 100 thousand. The fixed-price change identifies a supply shift; the observed A-to-B price rises rather than falls. These additional fixed-price readings were checked against the existing image.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "A",
+        "C"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "A",
+        "B"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": [
+      "Prefixed “Use the graph.” to satisfy the repository’s explicit graph-cue convention; the proposed task and all alternatives are unchanged."
+    ]
+  },
+  "40011": {
+    "original_construct": "Separate a demand shift from movement along an unchanged supply curve.",
+    "drift_problem": "The revised question tells students which two comparisons to make and labels one as movement along S0. All options repeat that decomposition and differ only in amounts.",
+    "economic_and_graph_evidence": "Identify the change from D0 to D1 and the unchanged S0; read equilibrium quantities 200 and 250 thousand. Both rightward-demand and rightward-supply stories are possible before the graph is seen.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "D",
+        "B"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "D",
+        "A"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": []
+  },
+  "40014": {
+    "original_construct": "Evaluate a causal explanation using two determinants and the resulting equilibrium endpoints.",
+    "drift_problem": "The revision supplies the formerly tested inference: “Those events reduce demand and increase supply.” It drops the evaluation and asks only for endpoint differences.",
+    "economic_and_graph_evidence": "Infer demand falling from cheaper substitutes and supply rising from lower operating costs. Read B=(200,14) and A=(200,10). The two $4 alternatives deliberately differ in their economic explanation; the two coherent demand-down/supply-up alternatives need the graph to distinguish them.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "C",
+        "B"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "C",
+        "A"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": []
+  },
+  "40016": {
+    "original_construct": "Explain why simultaneous demand and supply shifts can leave quantity unchanged while lowering price.",
+    "drift_problem": "The revision supplies both curve directions and removes the explanation about offsetting quantity effects. Choosing the key requires only B-to-D differences.",
+    "economic_and_graph_evidence": "Read B=($6,200 thousand) and D=($4,200 thousand). Lower refinery costs increase supply; its positive quantity effect offsets the negative effect of reduced demand. Identical quantities do not imply unchanged curves.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "A",
+        "C"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "A",
+        "B"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": []
+  },
+  "40021": {
+    "original_construct": "Determine whether a price control binds by comparing its legal level with competitive equilibrium.",
+    "drift_problem": "Every revised option says “Binding” and places the control on the binding side of equilibrium. The question no longer distinguishes understanding of binding controls; only the gap differs.",
+    "economic_and_graph_evidence": "Read equilibrium price $1,500 from the intersection; apply the rule that a ceiling below equilibrium binds. Reading the correct equilibrium alone leaves two different classifications.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "B",
+        "C"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "B",
+        "A"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": []
+  },
+  "40027": {
+    "original_construct": "Determine whether a price control binds by comparing its legal level with competitive equilibrium.",
+    "drift_problem": "Every revised option says “Binding” and places the control on the binding side of equilibrium. The question no longer distinguishes understanding of binding controls; only the gap differs.",
+    "economic_and_graph_evidence": "Read equilibrium wage $12 from the intersection; apply the rule that a floor above equilibrium binds. Reading the correct equilibrium alone leaves two different classifications.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "D",
+        "B"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "D",
+        "A"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": []
+  },
+  "ECON-MG-HARD-258": {
+    "original_construct": "Distinguish a guaranteed comparative-static direction from an ambiguous direction resolved by the particular graph.",
+    "drift_problem": "The revised stem supplies the complete general prediction. All choices then list coordinates; students no longer distinguish a theoretical guarantee from a contingent outcome.",
+    "economic_and_graph_evidence": "Read the D1/S1 and D2/S2 intersections: (P2,Q1) and (P2,Q3). Explain that the two price effects oppose each other, so this unchanged price is one possible outcome, not a general guarantee.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "A",
+        "B"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "A",
+        "B"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": []
+  },
+  "ECON-MG-HARD-259": {
+    "original_construct": "Distinguish a guaranteed comparative-static direction from an ambiguous direction resolved by the particular graph.",
+    "drift_problem": "The revised stem supplies the complete general prediction. All choices then list coordinates; students no longer distinguish a theoretical guarantee from a contingent outcome.",
+    "economic_and_graph_evidence": "Read the D1/S2 and D2/S1 intersections: (P1,Q2) and (P3,Q2). Explain that both shifts raise price but have opposing quantity effects; unchanged quantity is particular to this graph.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "A",
+        "B"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "A",
+        "B"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": []
+  },
+  "ECON-MG-HARD-261": {
+    "original_construct": "Connect a demand determinant to the curve shift and the resulting equilibrium change.",
+    "drift_problem": "The original asks for a chain of economic explanation; the revision asks only for starting and ending coordinates. Its options no longer distinguish a demand shift from another explanation.",
+    "economic_and_graph_evidence": "Infer a rightward demand shift from the stated determinant, then locate the initial and new intersections on the unchanged supply curve. The plotted movement is (P2, Q1) to (P3, Q2). The alternate movement with the same correct theory cannot be rejected without the graph.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "A",
+        "B"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "A",
+        "B"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": []
+  },
+  "ECON-MG-HARD-262": {
+    "original_construct": "Connect a demand determinant to the curve shift and the resulting equilibrium change.",
+    "drift_problem": "The original asks for a chain of economic explanation; the revision asks only for starting and ending coordinates. Its options no longer distinguish a demand shift from another explanation.",
+    "economic_and_graph_evidence": "Infer a leftward demand shift from the stated determinant, then locate the initial and new intersections on the unchanged supply curve. The plotted movement is (P2, Q3) to (P1, Q2). The alternate movement with the same correct theory cannot be rejected without the graph.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "A",
+        "B"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "A",
+        "B"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": []
+  },
+  "ECON-MG-LEGENDARY-9003": {
+    "original_construct": "Distinguish using idle resources from a tradeoff along the production frontier.",
+    "drift_problem": "The revised stem labels the first move as using idle capacity and the second as a tradeoff. Every option has both outputs rising first and X rising at Y’s expense second; only arithmetic distinguishes them.",
+    "economic_and_graph_evidence": "Read F=(8,20), C=(15,35), D=(21,20); identify F inside and C/D on the same frontier. The key combines these output differences with the appropriate resource-use explanation.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "A",
+        "C"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "A",
+        "B"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": []
+  },
+  "ECON-MG-LEGENDARY-9004": {
+    "original_construct": "Explain increasing opportunity cost through differences in resource suitability.",
+    "drift_problem": "The revised stem gives the resource-suitability explanation. All choices show rising costs, leaving only two ratios to calculate; the original causal explanation is no longer assessed.",
+    "economic_and_graph_evidence": "Read B=(8,45), C=(15,35), D=(21,20); compute 10/7 and 15/6. Select the standard resource-suitability explanation rather than merely a pair of increasing numbers.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "B",
+        "C"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "B",
+        "A"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": [
+      "Prefixed “Use the graph.” to satisfy the repository’s explicit graph-cue convention; the proposed task and all alternatives are unchanged."
+    ]
+  },
+  "ECON-MG-LEGENDARY-9017": {
+    "original_construct": "Distinguish a change in demand from a change in quantity demanded.",
+    "drift_problem": "The revised stem and option labels already classify the two changes as a demand shift and movement along D1. Only labeled intersections remain to be matched.",
+    "economic_and_graph_evidence": "Identify whether each change switches demand curves or stays on D1, then read the ending intersections. Correct endpoint readings alone leave competing economic classifications.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "A",
+        "B"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "A",
+        "B"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": []
+  },
+  "ECON-MG-LEGENDARY-9037": {
+    "original_construct": "Classify a nonbinding price control and explain why it leaves equilibrium unaffected.",
+    "drift_problem": "All current answers are candidate equilibrium coordinates on the nonbinding side of the legal price. Students can select the visible intersection without ever classifying or explaining the control.",
+    "economic_and_graph_evidence": "Read the $30 intersection and apply the meaning of a legal maximum. Both $30 and $40 would make this $50 ceiling nonbinding, so theory alone cannot select the key.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "A",
+        "C"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "A",
+        "B"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": []
+  },
+  "ECON-MG-LEGENDARY-9038": {
+    "original_construct": "Classify a nonbinding price control and explain why it leaves equilibrium unaffected.",
+    "drift_problem": "All current answers are candidate equilibrium coordinates on the nonbinding side of the legal price. Students can select the visible intersection without ever classifying or explaining the control.",
+    "economic_and_graph_evidence": "Read the $30 intersection and apply the meaning of a legal minimum. Both $30 and $40 would make this $10 floor nonbinding, so theory alone cannot select the key.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "A",
+        "C"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "A",
+        "B"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": []
+  },
+  "ECON-MG-LEGENDARY-9039": {
+    "original_construct": "Infer nonprice rationing from a shortage created by a binding price ceiling.",
+    "drift_problem": "The revised stem supplies both excess demand and the need to ration by something other than price. Every answer is only a shortage magnitude.",
+    "economic_and_graph_evidence": "At $20, Qd=250 and Qs=150: shortage=100. Interpret the unsatisfied demand as a need for nonprice allocation. Shortage and surplus stories are each economically coherent until the quantities are read.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "A",
+        "C"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "A",
+        "B"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": []
+  },
+  "ECON-MG-MEDIUM-157": {
+    "original_construct": "Infer increasing opportunity cost from the shape of the PPF.",
+    "drift_problem": "All revised pairs have a larger later opportunity cost. The original increasing-versus-constant-versus-decreasing distinction is absent; only the correct magnitudes matter.",
+    "economic_and_graph_evidence": "Read the changes in X and Y: 5/8 and 20/4. Connect the rising cost to the frontier’s shape. Two options use the actual graph values but offer different economic conclusions.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "D",
+        "B"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "D",
+        "A"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": [
+      "Prefixed “Use the graph.” to satisfy the repository’s explicit graph-cue convention; the proposed task and all alternatives are unchanged."
+    ]
+  },
+  "ECON-MG-MEDIUM-167": {
+    "original_construct": "Connect a demand determinant to the curve shift and the resulting equilibrium change.",
+    "drift_problem": "The revision supplies the missing inference that higher income shifts demand from D1 to D2. The original required students to infer that response for a normal good; now only coordinates differ.",
+    "economic_and_graph_evidence": "Infer a rightward demand shift from the stated determinant, then locate the initial and new intersections on the unchanged supply curve. The plotted movement is (P1, Q2) to (P2, Q3). The alternate movement with the same correct theory cannot be rejected without the graph.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "A",
+        "B"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "A",
+        "B"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": []
+  },
+  "ECON-MG-MEDIUM-171": {
+    "original_construct": "Determine whether a price control binds by comparing its legal level with competitive equilibrium.",
+    "drift_problem": "Every revised option says “Binding” and places the control on the binding side of equilibrium. The question no longer distinguishes understanding of binding controls; only the gap differs.",
+    "economic_and_graph_evidence": "Read equilibrium price $30 from the intersection; apply the rule that a ceiling below equilibrium binds. Reading the correct equilibrium alone leaves two different classifications.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "A",
+        "C"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "A",
+        "B"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": []
+  },
+  "ECON-MG-MEDIUM-175": {
+    "original_construct": "Determine whether a price control binds by comparing its legal level with competitive equilibrium.",
+    "drift_problem": "Every revised option says “Binding” and places the control on the binding side of equilibrium. The question no longer distinguishes understanding of binding controls; only the gap differs.",
+    "economic_and_graph_evidence": "Read equilibrium price $30 from the intersection; apply the rule that a floor above equilibrium binds. Reading the correct equilibrium alone leaves two different classifications.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "A",
+        "C"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "A",
+        "B"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": []
+  },
+  "P62D-ITP-H-015": {
+    "original_construct": "Classify auctioned quota rent as domestic government revenue, a transfer rather than deadweight loss.",
+    "drift_problem": "The revised question asks for revenue and deadweight-loss amounts. It no longer explicitly asks how rectangle R is classified; its choices differ only in arithmetic.",
+    "economic_and_graph_evidence": "Read the $40-$30 price gap and 40-20 import quantity: R=10×20=$200. Separately classify its payment to the domestic government as a transfer, preserving the original accounting distinction.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "C",
+        "B"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "C",
+        "A"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": []
+  },
+  "P62D-ITP-M-032": {
+    "original_construct": "Explain trade direction by comparing the world price with the no-trade equilibrium price.",
+    "drift_problem": "Every revised choice says the country imports, and all proposed no-trade prices imply that same direction. Students only need to locate the no-trade price; the trade-direction explanation is supplied.",
+    "economic_and_graph_evidence": "Read the $7 domestic intersection, then explain why a world price below it leads to imports. Two alternatives use $7 but disagree about trade direction; two alternatives state the correct general trade rule but need the graph to distinguish $7 from $9.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "A",
+        "C"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "A",
+        "B"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": []
+  },
+  "P62D-ITP-M-034": {
+    "original_construct": "Explain trade direction by comparing the world price with the no-trade equilibrium price.",
+    "drift_problem": "Every revised choice says the country exports, and all proposed no-trade prices imply that same direction. Students only need to locate the no-trade price; the trade-direction explanation is supplied.",
+    "economic_and_graph_evidence": "Read the $7 domestic intersection, then explain why a world price above it leads to exports. Two alternatives use $7 but disagree about trade direction; two alternatives state the correct general trade rule but need the graph to distinguish $7 from $9.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "A",
+        "C"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "A",
+        "B"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": []
+  },
+  "PG1-DMD-EL-001": {
+    "original_construct": "Distinguish an own-price change in quantity demanded from a change in demand.",
+    "drift_problem": "The revised stem says demand is unchanged and asks only how much quantity rises. The original shift-versus-movement conclusion is supplied.",
+    "economic_and_graph_evidence": "Read quantity changing from 100 to 225 thousand. Apply the distinction between an own-price movement along demand and a shift in demand; the stem no longer gives that classification.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "A",
+        "C"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "A",
+        "B"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": []
+  },
+  "PG1-DMD-EL-003": {
+    "original_construct": "Explain a demand shift and a later movement along demand, including their partially offsetting quantity effects.",
+    "drift_problem": "The explanation has been replaced by an unlabeled three-number sequence. All sequences fall and then rise, so students need not explain why one stage is a shift and the other a movement or why the offset is partial.",
+    "economic_and_graph_evidence": "Read D0 at $6=150, D1 at $6=50, and D1 at $4=100 thousand. Interpret the fixed-price gap as a demand change and the second change as a response to price on D1.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "A",
+        "C"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "A",
+        "B"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": []
+  },
+  "PG1-DMD-H-001": {
+    "original_construct": "Calculate quantity response per dollar and identify movement along demand, rather than a shift.",
+    "drift_problem": "The revision retains the calculation but removes the requested inference about the demand relationship. All options are quantities per dollar.",
+    "economic_and_graph_evidence": "Read the 125-thousand quantity change and $5 price change: 125/5=25. Also identify movement along the unchanged demand curve; the two options with rate 25 differ on that construct.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "A",
+        "C"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "A",
+        "B"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": [
+      "Prefixed “Use the graph.” to satisfy the repository’s explicit graph-cue convention; the proposed task and all alternatives are unchanged."
+    ]
+  },
+  "PG1-DMD-L-001": {
+    "original_construct": "Evaluate a claimed demand shift using both the graph and an unchanged fixed-price demand schedule.",
+    "drift_problem": "Every revised alternative already calls the curve unchanged. “Which numerical correction” bypasses the original diagnosis of the report’s mistaken inference.",
+    "economic_and_graph_evidence": "Use the unchanged schedule to reject the taste-shift claim, then read A=($10,100 thousand) and B=($5,225 thousand). Two options contain the actual differences but disagree on the report’s validity.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "B",
+        "C"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "B",
+        "A"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": [
+      "Prefixed “Use the graph.” to satisfy the repository’s explicit graph-cue convention; the proposed task and all alternatives are unchanged."
+    ]
+  },
+  "PG1-DMD-M-001": {
+    "original_construct": "Identify a change in quantity demanded along an existing curve, rather than an increase in demand.",
+    "drift_problem": "The revised options all describe price and quantity demanded; none requires distinguishing a curve shift from movement along a curve. The task has become a comparison of two coordinates.",
+    "economic_and_graph_evidence": "Read the A-to-B price change of $5 and quantity change of 125 thousand. Identify A and B on the same demand curve; classify the change as quantity demanded, not a shift.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "B",
+        "C"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "B",
+        "A"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": []
+  },
+  "PG1-EQ-L-001": {
+    "original_construct": "Explain how shortages and surpluses create opposing price pressures toward equilibrium.",
+    "drift_problem": "Every revised choice already says shortage at $2 and surplus at $4. None states the direction of price adjustment. Only the magnitude of each imbalance is discriminated.",
+    "economic_and_graph_evidence": "Read Qd-Qs=200-100=100 thousand at $2 and Qs-Qd=200-100=100 thousand at $4. Apply the price-adjustment mechanism; the two options with correct magnitudes give opposite pressures.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "B",
+        "C"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "B",
+        "A"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": []
+  },
+  "PG1-SUP-EL-002": {
+    "original_construct": "Separate a supply shift from a subsequent movement along supply; explain unchanged final quantity despite changed supply.",
+    "drift_problem": "The revised alternatives are three-number sequences. They remove the economic explanation of the two stages, including why returning to the original quantity does not mean returning to the original supply curve.",
+    "economic_and_graph_evidence": "Read S0 at $9=200, S1 at $9=100, and S1 at $13=200 thousand. Explain why the restored quantity does not undo the supply decrease.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "A",
+        "C"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "A",
+        "B"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": []
+  },
+  "PG1-SUP-EL-003": {
+    "original_construct": "Separate a supply shift from a subsequent movement along supply; explain unchanged final quantity despite changed supply.",
+    "drift_problem": "The revised alternatives are three-number sequences. They remove the economic explanation of the two stages, including why returning to the original quantity does not mean returning to the original supply curve.",
+    "economic_and_graph_evidence": "Read A at $3 and 100 thousand, S1 at $3 about 225 thousand, and S1 at $2 about 100 thousand. Explain why the restored quantity does not undo the supply increase.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "A",
+        "C"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "A",
+        "B"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": []
+  },
+  "PG1-SUP-H-001": {
+    "original_construct": "Calculate quantity response per dollar and identify movement along supply, rather than a shift.",
+    "drift_problem": "The revision retains the calculation but removes the requested inference about the supply relationship. All options are quantities per dollar.",
+    "economic_and_graph_evidence": "Read the 125-thousand quantity change and $5 price change: 125/5=25. Also identify movement along the unchanged supply curve; the two options with rate 25 differ on that construct.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "A",
+        "C"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "A",
+        "B"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": [
+      "Prefixed “Use the graph.” to satisfy the repository’s explicit graph-cue convention; the proposed task and all alternatives are unchanged."
+    ]
+  },
+  "PG1-SUP-M-001": {
+    "original_construct": "Identify a change in quantity supplied along an existing curve, rather than an increase in supply.",
+    "drift_problem": "The revised options all describe price and quantity supplied; none requires distinguishing a curve shift from movement along a curve. The task has become a comparison of two coordinates.",
+    "economic_and_graph_evidence": "Read the A-to-B price change of $5 and quantity change of 125 thousand. Identify A and B on the same supply curve; classify the change as quantity supplied, not a shift.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "D",
+        "B"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "D",
+        "A"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": []
+  },
+  "PG1-SUP-M-005": {
+    "original_construct": "Identify a change in quantity supplied along an existing curve, rather than an increase in supply.",
+    "drift_problem": "The revised options all describe price and quantity supplied; none requires distinguishing a curve shift from movement along a curve. The task has become a comparison of two coordinates.",
+    "economic_and_graph_evidence": "Read the A-to-B price change of $1 and quantity change of 125 thousand. Identify A and B on the same supply curve; classify the change as quantity supplied, not a shift.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "D",
+        "B"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "D",
+        "A"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": []
+  },
+  "PG2-CEIL-E-001": {
+    "original_construct": "Identify the legal maximum/minimum as a ceiling/floor and determine whether it binds.",
+    "drift_problem": "The revised choices all say “Binding” and give the same side of equilibrium. The ceiling item also names the policy in its stem. Classification is replaced by the size of a price gap.",
+    "economic_and_graph_evidence": "Identify a legal maximum as a ceiling, read equilibrium $2,000, and determine whether the control restricts that equilibrium. The two binding-ceiling choices remain plausible without the graph.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "A",
+        "C"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "A",
+        "B"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": []
+  },
+  "PG2-FLR-E-001": {
+    "original_construct": "Identify the legal maximum/minimum as a ceiling/floor and determine whether it binds.",
+    "drift_problem": "The revised choices all say “Binding” and give the same side of equilibrium. The ceiling item also names the policy in its stem. Classification is replaced by the size of a price gap.",
+    "economic_and_graph_evidence": "Identify a legal minimum as a floor, read equilibrium $7, and determine whether the control restricts that equilibrium. The two binding-floor choices remain plausible without the graph.",
+    "construct_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "same_values_different_interpretation_choices": [
+        "C",
+        "B"
+      ]
+    },
+    "graph_test": {
+      "answer": "NO",
+      "status": "PASS",
+      "economically_plausible_without_graph": [
+        "C",
+        "A"
+      ]
+    },
+    "stem_supplies_construct": false,
+    "stem_supplies_graph_answer": false,
+    "four_distinct_choices": true,
+    "one_defensible_answer": true,
+    "numerical_values_checked": true,
+    "feedback_explains_both": true,
+    "proposal_adjustments": []
+  }
+}

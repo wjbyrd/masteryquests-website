@@ -1,0 +1,70 @@
+{
+  "findings": [
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "40011",
+      "concept": "demand",
+      "pools": [
+        "elite"
+      ],
+      "message": "elite metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Between equilibrium A and equilibrium B, which curve shifts, and what quantity change reflects movement along the other curve?",
+      "note": "Approved proposal restores demand-shift versus movement-along-supply reasoning and a graph-specific quantity change. This lexical difficulty REVIEW is retained; difficulty metadata is explicitly outside scope."
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "PG1-DMD-H-001",
+      "concept": "demand",
+      "pools": [
+        "hard"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Use the graph. From A to B, what is the quantity response per $1 price decrease, and what economic change does it represent?",
+      "note": "Approved proposal restores interpretation of the computed slope as movement along demand. Both calculation and economic classification are required. The lexical difficulty REVIEW is retained without changing metadata."
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "40008",
+      "concept": "supply",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Use the graph. Which explanation of the move from A to B is supported by comparing what sellers offer at the price marked at A?",
+      "note": "The reviewed proposal deliberately contrasts a supply shift with only a change in quantity supplied. Two economically plausible supply-shift choices remain before the graph is read; this REVIEW does not identify three automatically eliminable alternatives."
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "PG1-SUP-H-001",
+      "concept": "supply",
+      "pools": [
+        "hard"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Use the graph. From A to B, what is the quantity response per $1 price increase, and what economic change does it represent?",
+      "note": "Approved proposal restores interpretation of the computed slope as movement along supply. Both calculation and economic classification are required. The lexical difficulty REVIEW is retained without changing metadata."
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "40004",
+      "concept": "production-possibilities-frontier",
+      "pools": [
+        "elite"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Which statement correctly distinguishes the move from A to B from the shift of PPF0 to PPF1, using the changes shown in the graph?",
+      "note": "The reviewed proposal contrasts reallocation with capacity expansion. Two economically plausible choices remain and require graph measurements. The word only in the incorrect interpretations is part of the targeted misconception, not the sole route to identifying the key."
+    }
+  ],
+  "schemaVersion": 1
+}
