@@ -1,0 +1,32 @@
+import assert from 'node:assert/strict';
+import {enterChoice,fillPlan,getRun,waitMaps,keys} from './browser-helpers.mjs';
+const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
+const browser=await chromium.launch({channel:'msedge',headless:true}),page=await browser.newPage({viewport:{width:1440,height:1100}}),errors=[];
+page.on('pageerror',e=>errors.push(e.stack));page.on('response',r=>{if(r.status()>=400&&!r.url().endsWith('favicon.ico'))errors.push(`${r.status()} ${r.url()}`);});
+await page.addInitScript(()=>{Math.random=()=>.2;});
+const url='http://127.0.0.1:4178/play/growth-realms/';
+const overflow=()=>page.evaluate(()=>document.documentElement.scrollWidth>innerWidth);
+try{
+  await page.goto(url);await enterChoice(page);await waitMaps(page);const initialHUD=await page.locator('#hud').innerText();assert.equal(await getRun(page),null);assert.equal(await page.locator('[data-city-map]').count(),2);assert.equal(await page.locator('#development').isVisible(),false);
+  await page.getByRole('button',{name:'Field guide'}).click();assert.match(await page.locator('#help').innerText(),/20 development points/);await page.getByRole('button',{name:'Close guide'}).click();
+  await page.locator('[data-choose="rivermark"]').focus();await page.keyboard.press('Enter');let r=await getRun(page);assert.equal(r.playerCity,'rivermark');assert.equal(r.rivalCity,'meridian');assert.equal(await page.locator('[data-allocation-city]').count(),1);assert.equal(await page.locator('[data-city-map]').count(),1);assert.equal(await page.locator('#advance').isDisabled(),true);
+  await page.locator('#city-tabs [data-view="meridian"]').click();const allocation=structuredClone((await getRun(page)).allocation);await page.locator('[data-map-district="education"]').click();assert.deepEqual((await getRun(page)).allocation,allocation);assert.equal(await page.locator('[data-allocation-city]').count(),0);assert.equal(await page.locator('.allocation-report').count(),0);
+  await page.locator('#city-tabs [data-view="rivermark"]').click();await fillPlan(page,[10,4,3,3]);assert.equal(await page.locator('[data-adjust="1"]').isDisabled(),true);assert.equal(await page.locator('#advance').isEnabled(),true);assert.equal((await getRun(page)).committedAllocations,null);assert.equal(await page.locator('.allocation-report').count(),0);
+  await page.locator('#quick-commit').click();await page.locator('#construction-status').waitFor({state:'visible'});await waitMaps(page);assert.equal(await page.locator('[data-city-map]').count(),2);assert.equal(await page.locator('[data-map-district]:disabled').count(),8);assert.equal((await getRun(page)).cities[0].history.length,0);
+  await page.locator('#consequences').waitFor({state:'visible'});r=await getRun(page);assert.equal(r.pendingCities,null);assert.equal(r.cities[0].history.length,1);assert.equal(await page.locator('[data-cycle-report]').count(),2);const rival=r.cities.find(c=>c.id===r.rivalCity).history[0].allocation;assert.notDeepEqual(rival,r.allocation);assert.deepEqual((await page.locator('[data-cycle-report="meridian"] .allocation-report dd').allTextContents()).map(Number),keys.map(k=>rival[k]));
+  await page.emulateMedia({reducedMotion:'reduce'});
+  for(let cycle=2;cycle<=6;cycle++){
+    await page.locator('#advance').click();assert.match(await page.locator('#stage-count').innerText(),new RegExp(`0${cycle} / 06`));assert.match(await page.locator('#points-remaining').innerText(),/20/);assert.equal(await page.locator('#advance').isDisabled(),true);assert.equal(await page.locator('.rival-planning .allocation-report').count(),0);
+    await fillPlan(page,cycle<4?[10,4,3,3]:[3,3,7,7]);await page.locator('#advance').click();await page.locator('#consequences').waitFor({state:'visible'});
+  }
+  await page.locator('#advance').click();await page.locator('#final-report').waitFor({state:'visible'});assert.equal(await page.locator('#planning-hud').isVisible(),false);assert.equal(await page.locator('#development').isVisible(),false);assert.match(await page.locator('#final-report').innerText(),/You managed Rivermark/);assert.match(await page.locator('#final-report').innerText(),/Rival strategy/);assert.equal(await page.locator('.ledger tbody tr').count(),12);assert.match(await page.locator('.policy-connection').innerText(),/growth policy/);
+  for(const answer of ['potential','resources','labor']){await page.locator(`[data-answer="${answer}"]`).click();assert.ok((await page.locator('#transfer-feedback').innerText()).length>70);}
+  const firstDoctrine=(await getRun(page)).rivalDoctrine;await page.locator('#replay').click();await waitMaps(page);assert.equal(await getRun(page),null);assert.equal(await page.locator('#hud').innerText(),initialHUD);assert.equal(await page.locator('#build-progress').evaluate(e=>e.value),0);assert.equal(await page.locator('#consequences').innerHTML(),'');
+  await page.setViewportSize({width:390,height:844});await page.locator('[data-choose="meridian"]').click();r=await getRun(page);assert.equal(r.playerCity,'meridian');assert.notEqual(r.rivalDoctrine,firstDoctrine);
+  for(let cycle=1;cycle<=6;cycle++){assert.equal(await overflow(),false);await fillPlan(page,[2,3,8,7]);await page.locator('#quick-commit').click();await page.locator('#consequences').waitFor({state:'visible'});await page.locator('#advance').click();}
+  await page.locator('#final-report').waitFor({state:'visible'});assert.match(await page.locator('#final-report').innerText(),/You managed Meridian/);await page.locator('.ledger summary').click();
+  for(const width of [320,390,768,1440]){await page.setViewportSize({width,height:1100});assert.equal(await overflow(),false,`Report overflow ${width}`);}
+  await page.locator('#replay').click();for(const width of [320,768]){await page.setViewportSize({width,height:1000});await page.locator('[data-choose="rivermark"]').click();await page.locator('#comparison>summary').click();await page.locator('#detailed-comparison>summary').click();assert.equal(await overflow(),false,`Expanded comparison ${width}`);await fillPlan(page,[5,5,5,5]);await page.locator('#quick-commit').click();assert.equal(await overflow(),false);await page.goto(url);await enterChoice(page);await waitMaps(page);}
+  assert.deepEqual(errors,[]);console.log('PASS: both complete six-cycle runs; city choice/views; player-only controls; independent CPU secrecy/reveal; both-city construction; reduced motion; report/ledger/transfer/replay; 320–1440px; zero browser errors.');
+}finally{await browser.close();}
+

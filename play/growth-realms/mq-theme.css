@@ -1,0 +1,33 @@
+/* Alias MQ tokens from /assets/css/site.css when hosted in the site shell.
+   Exact source-palette fallbacks keep this standalone page independent of
+   the site's global layout rules. All UI color values live in this file. */
+:root {
+  --mq-bg: var(--gray-50, #f7fafc);
+  --mq-surface: var(--white, #ffffff);
+  --mq-border: var(--gray-300, #cbd5e0);
+  --mq-text: var(--gray-800, #253247);
+  --mq-muted: var(--gray-600, #526277);
+  --mq-accent: var(--teal-600, #009f9a);
+  --mq-accent-soft: #e7f6f5;
+  --mq-highlight: var(--teal-300, #77d9d3);
+  --mq-bg-dark: var(--navy-950, #031638);
+  --mq-navy: var(--navy-900, #062454);
+  --mq-blue: var(--navy-800, #0a3472);
+  --mq-on-dark: var(--mq-surface);
+  --mq-on-dark-muted: var(--mq-border);
+  --mq-warning: #a75a2a;
+  --mq-warning-text: #81461f;
+  --mq-warning-soft: #fff3e5;
+  --mq-shadow: 0 12px 32px color-mix(in srgb, var(--mq-bg-dark) 10%, transparent);
+  --ink: var(--mq-text);
+  --muted: var(--mq-muted);
+  --paper: var(--mq-bg);
+  --panel: var(--mq-surface);
+  --line: var(--mq-border);
+  --green: var(--mq-navy);
+  --orange: var(--mq-warning);
+  --gold: var(--mq-highlight);
+  --shadow: var(--mq-shadow);
+  background: var(--mq-bg);
+  color: var(--mq-text);
+}

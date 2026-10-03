@@ -1,0 +1,13 @@
+{
+  "name": "mastery-quests-growth-realms",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/model.test.js tests/visual.test.js tests/interaction.test.js",
+    "test:browser": "node tests/browser.test.mjs",
+    "test:visual": "node tests/visual-browser.test.mjs",
+    "test:interaction": "node tests/interaction-browser.test.mjs",
+    "test:presentation": "node tests/presentation-browser.test.mjs",
+    "audit:balance": "node tests/balance-audit.mjs"
+  }
+}

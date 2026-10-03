@@ -1,0 +1,2298 @@
+{
+  "balanceFailure": false,
+  "testedAgainst": "Independent Balanced Growth CPU; same doctrine for each paired comparison",
+  "startingStates": [
+    {
+      "capital": 1400,
+      "resources": 350,
+      "technology": 1.85,
+      "education": 225,
+      "labor": 68,
+      "researchCapacity": 5,
+      "pendingEducation": 0,
+      "id": "meridian",
+      "name": "Meridian",
+      "output": 3198.057520896073,
+      "outputPerWorker": 47.03025766023637,
+      "capitalPerWorker": 20.58823529411765,
+      "humanCapital": 1.3549511129602663,
+      "equipmentComplement": 0.8373205741626795,
+      "technologyAdoption": 0.6468295457405606,
+      "effectiveTechnology": 1.4603631336311407,
+      "potentialOutput": 3198.057520896073,
+      "laborCapacity": 110,
+      "resourceDemand": 105.9922300835843,
+      "resourceUtilization": 0.9635657280325846,
+      "resourceAdequacy": 1,
+      "constraints": {
+        "resourceShortage": false,
+        "technologyAdoption": false,
+        "skillsUnderused": false,
+        "excessCapacity": false,
+        "capitalSaturation": false
+      },
+      "growthRate": 0,
+      "productivityGrowthRate": 0,
+      "developmentPoints": 20,
+      "currentCycle": 0,
+      "buildings": {
+        "capital": 3,
+        "resources": 2,
+        "research": 2,
+        "education": 3
+      },
+      "invested": {
+        "capital": 0,
+        "resources": 0,
+        "research": 0,
+        "education": 0
+      }
+    },
+    {
+      "capital": 135,
+      "resources": 155,
+      "technology": 1.12,
+      "education": 26,
+      "labor": 56,
+      "researchCapacity": 2,
+      "pendingEducation": 0,
+      "id": "rivermark",
+      "name": "Rivermark",
+      "output": 652.407143270426,
+      "outputPerWorker": 11.650127558400465,
+      "capitalPerWorker": 2.4107142857142856,
+      "humanCapital": 1.043528446598237,
+      "equipmentComplement": 0.37604456824512533,
+      "technologyAdoption": 0.3685815562089858,
+      "effectiveTechnology": 1.016632371060127,
+      "potentialOutput": 652.407143270426,
+      "laborCapacity": 63.199999999999996,
+      "resourceDemand": 61.03962857308171,
+      "resourceUtilization": 0.9658169078019259,
+      "resourceAdequacy": 1,
+      "constraints": {
+        "resourceShortage": false,
+        "technologyAdoption": false,
+        "skillsUnderused": false,
+        "excessCapacity": false,
+        "capitalSaturation": false
+      },
+      "growthRate": 0,
+      "productivityGrowthRate": 0,
+      "developmentPoints": 20,
+      "currentCycle": 0,
+      "buildings": {
+        "capital": 1,
+        "resources": 1,
+        "research": 0,
+        "education": 1
+      },
+      "invested": {
+        "capital": 0,
+        "resources": 0,
+        "research": 0,
+        "education": 0
+      }
+    }
+  ],
+  "requestedWinners": {
+    "meridian": "2/3/8/7",
+    "rivermark": "10/4/3/3"
+  },
+  "results": {
+    "meridian": {
+      "5/5/5/5": {
+        "outputPerWorker": 71.74831116457574,
+        "output": 5407.608648699326,
+        "productivityGrowthPercent": 52.55776756085739,
+        "technologyIndex": 313.75765259848595,
+        "education": 338.6875,
+        "adoptionPercent": 60.2057134451671,
+        "capacityCoveragePercent": 100,
+        "labor": 75.36914194809957,
+        "gapChangePercent": -11.281818027943684,
+        "cycleProductivityGains": [
+          1.277609332836704,
+          2.701677787628121,
+          3.6429643303077484,
+          4.6756613874498285,
+          5.395425984759456,
+          7.0247146813575085
+        ],
+        "firstConstraintCycle": null,
+        "allocations": [
+          {
+            "capital": 5,
+            "resources": 5,
+            "research": 5,
+            "education": 5
+          },
+          {
+            "capital": 5,
+            "resources": 5,
+            "research": 5,
+            "education": 5
+          },
+          {
+            "capital": 5,
+            "resources": 5,
+            "research": 5,
+            "education": 5
+          },
+          {
+            "capital": 5,
+            "resources": 5,
+            "research": 5,
+            "education": 5
+          },
+          {
+            "capital": 5,
+            "resources": 5,
+            "research": 5,
+            "education": 5
+          },
+          {
+            "capital": 5,
+            "resources": 5,
+            "research": 5,
+            "education": 5
+          }
+        ]
+      },
+      "10/4/3/3": {
+        "outputPerWorker": 68.39401393002854,
+        "output": 5085.3782201536405,
+        "productivityGrowthPercent": 45.42555650902804,
+        "technologyIndex": 267.34629023089786,
+        "education": 293.2125,
+        "adoptionPercent": 61.16360813364673,
+        "capacityCoveragePercent": 100,
+        "labor": 74.35414194809957,
+        "gapChangePercent": -13.196244082344874,
+        "cycleProductivityGains": [
+          1.717301616362171,
+          2.58701600119727,
+          3.1881476354441673,
+          3.8564595041607816,
+          4.597519310179301,
+          5.417312202448471
+        ],
+        "firstConstraintCycle": null,
+        "allocations": [
+          {
+            "capital": 10,
+            "resources": 4,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 10,
+            "resources": 4,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 10,
+            "resources": 4,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 10,
+            "resources": 4,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 10,
+            "resources": 4,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 10,
+            "resources": 4,
+            "research": 3,
+            "education": 3
+          }
+        ]
+      },
+      "3/3/7/7": {
+        "outputPerWorker": 77.94306695598401,
+        "output": 5795.3898643154635,
+        "productivityGrowthPercent": 65.72961925718752,
+        "technologyIndex": 360.31535241014393,
+        "education": 384.1625,
+        "adoptionPercent": 59.40490500213098,
+        "capacityCoveragePercent": 100,
+        "labor": 74.35414194809957,
+        "gapChangePercent": -7.982484897218255,
+        "cycleProductivityGains": [
+          1.232464665454735,
+          3.165041768274982,
+          4.410541579683347,
+          5.784404395951171,
+          7.31019348628211,
+          9.010163400101291
+        ],
+        "firstConstraintCycle": null,
+        "allocations": [
+          {
+            "capital": 3,
+            "resources": 3,
+            "research": 7,
+            "education": 7
+          },
+          {
+            "capital": 3,
+            "resources": 3,
+            "research": 7,
+            "education": 7
+          },
+          {
+            "capital": 3,
+            "resources": 3,
+            "research": 7,
+            "education": 7
+          },
+          {
+            "capital": 3,
+            "resources": 3,
+            "research": 7,
+            "education": 7
+          },
+          {
+            "capital": 3,
+            "resources": 3,
+            "research": 7,
+            "education": 7
+          },
+          {
+            "capital": 3,
+            "resources": 3,
+            "research": 7,
+            "education": 7
+          }
+        ]
+      },
+      "8/6/3/3": {
+        "outputPerWorker": 64.95865160118149,
+        "output": 5095.684368982116,
+        "productivityGrowthPercent": 38.12097750020067,
+        "technologyIndex": 267.34629023089786,
+        "education": 293.2125,
+        "adoptionPercent": 61.16360813364673,
+        "capacityCoveragePercent": 100,
+        "labor": 78.44504532309956,
+        "gapChangePercent": -15.635565464669575,
+        "cycleProductivityGains": [
+          1.4498368863420907,
+          2.3208517007375917,
+          2.5710519947704,
+          3.182366436660047,
+          3.8437353316606178,
+          4.560551590774367
+        ],
+        "firstConstraintCycle": null,
+        "allocations": [
+          {
+            "capital": 8,
+            "resources": 6,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 8,
+            "resources": 6,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 8,
+            "resources": 6,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 8,
+            "resources": 6,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 8,
+            "resources": 6,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 8,
+            "resources": 6,
+            "research": 3,
+            "education": 3
+          }
+        ]
+      },
+      "2/3/8/7": {
+        "outputPerWorker": 79.01262178769032,
+        "output": 5874.915696093431,
+        "productivityGrowthPercent": 68.0038037607749,
+        "technologyIndex": 381.41008044295324,
+        "education": 384.1625,
+        "adoptionPercent": 58.04093784776807,
+        "capacityCoveragePercent": 100,
+        "labor": 74.35414194809957,
+        "gapChangePercent": -7.523960408025619,
+        "cycleProductivityGains": [
+          1.1483756959052371,
+          3.210476633421038,
+          4.560378552668077,
+          6.024300608610595,
+          7.63139203672646,
+          9.407440600122541
+        ],
+        "firstConstraintCycle": null,
+        "allocations": [
+          {
+            "capital": 2,
+            "resources": 3,
+            "research": 8,
+            "education": 7
+          },
+          {
+            "capital": 2,
+            "resources": 3,
+            "research": 8,
+            "education": 7
+          },
+          {
+            "capital": 2,
+            "resources": 3,
+            "research": 8,
+            "education": 7
+          },
+          {
+            "capital": 2,
+            "resources": 3,
+            "research": 8,
+            "education": 7
+          },
+          {
+            "capital": 2,
+            "resources": 3,
+            "research": 8,
+            "education": 7
+          },
+          {
+            "capital": 2,
+            "resources": 3,
+            "research": 8,
+            "education": 7
+          }
+        ]
+      },
+      "Capital only": {
+        "outputPerWorker": 51.66979785678559,
+        "output": 3779.8594424738235,
+        "productivityGrowthPercent": 9.865011223342513,
+        "technologyIndex": 199.10618243446868,
+        "education": 225,
+        "adoptionPercent": 62.93566117803595,
+        "capacityCoveragePercent": 81.07519694718832,
+        "labor": 73.1541364444767,
+        "gapChangePercent": -27.598925510310846,
+        "cycleProductivityGains": [
+          2.230125817729693,
+          0.6615702762013456,
+          0.5483649427441293,
+          0.4619881700480519,
+          0.39503663757881213,
+          0.3424543522471879
+        ],
+        "firstConstraintCycle": 2,
+        "allocations": [
+          {
+            "capital": 20,
+            "resources": 0,
+            "research": 0,
+            "education": 0
+          },
+          {
+            "capital": 20,
+            "resources": 0,
+            "research": 0,
+            "education": 0
+          },
+          {
+            "capital": 20,
+            "resources": 0,
+            "research": 0,
+            "education": 0
+          },
+          {
+            "capital": 20,
+            "resources": 0,
+            "research": 0,
+            "education": 0
+          },
+          {
+            "capital": 20,
+            "resources": 0,
+            "research": 0,
+            "education": 0
+          },
+          {
+            "capital": 20,
+            "resources": 0,
+            "research": 0,
+            "education": 0
+          }
+        ]
+      },
+      "Research only": {
+        "outputPerWorker": 71.75497796218055,
+        "output": 5304.650046380435,
+        "productivityGrowthPercent": 52.57194311067679,
+        "technologyIndex": 552.9423236240998,
+        "education": 225,
+        "adoptionPercent": 40.30090992523861,
+        "capacityCoveragePercent": 90.00895873348189,
+        "labor": 73.92727580762862,
+        "gapChangePercent": -12.501621132032767,
+        "cycleProductivityGains": [
+          1.0449035906325506,
+          3.2880710339893966,
+          3.921260903710177,
+          4.707961217316097,
+          5.473886389620297,
+          6.288637166675656
+        ],
+        "firstConstraintCycle": 3,
+        "allocations": [
+          {
+            "capital": 0,
+            "resources": 0,
+            "research": 20,
+            "education": 0
+          },
+          {
+            "capital": 0,
+            "resources": 0,
+            "research": 20,
+            "education": 0
+          },
+          {
+            "capital": 0,
+            "resources": 0,
+            "research": 20,
+            "education": 0
+          },
+          {
+            "capital": 0,
+            "resources": 0,
+            "research": 20,
+            "education": 0
+          },
+          {
+            "capital": 0,
+            "resources": 0,
+            "research": 20,
+            "education": 0
+          },
+          {
+            "capital": 0,
+            "resources": 0,
+            "research": 20,
+            "education": 0
+          }
+        ]
+      },
+      "Research + education": {
+        "outputPerWorker": 77.25438999459513,
+        "output": 5706.106670103052,
+        "productivityGrowthPercent": 64.26529183129048,
+        "technologyIndex": 429.7148834075199,
+        "education": 452.375,
+        "adoptionPercent": 58.447143535998755,
+        "capacityCoveragePercent": 88.55502797507526,
+        "labor": 73.86126109470624,
+        "gapChangePercent": -8.656126509400927,
+        "cycleProductivityGains": [
+          1.1505855774099345,
+          3.7621396069889244,
+          4.324259374746482,
+          5.61071981890089,
+          6.993115404024081,
+          8.383312552288444
+        ],
+        "firstConstraintCycle": 3,
+        "allocations": [
+          {
+            "capital": 0,
+            "resources": 0,
+            "research": 10,
+            "education": 10
+          },
+          {
+            "capital": 0,
+            "resources": 0,
+            "research": 10,
+            "education": 10
+          },
+          {
+            "capital": 0,
+            "resources": 0,
+            "research": 10,
+            "education": 10
+          },
+          {
+            "capital": 0,
+            "resources": 0,
+            "research": 10,
+            "education": 10
+          },
+          {
+            "capital": 0,
+            "resources": 0,
+            "research": 10,
+            "education": 10
+          },
+          {
+            "capital": 0,
+            "resources": 0,
+            "research": 10,
+            "education": 10
+          }
+        ]
+      },
+      "Resources only": {
+        "outputPerWorker": 45.305016676659605,
+        "output": 3650.8455496868887,
+        "productivityGrowthPercent": -3.6683638776562444,
+        "technologyIndex": 199.10618243446868,
+        "education": 225,
+        "adoptionPercent": 62.93566117803595,
+        "capacityCoveragePercent": 100,
+        "labor": 80.58369287760894,
+        "gapChangePercent": -36.10225500317878,
+        "cycleProductivityGains": [
+          -0.2982139276368727,
+          -0.2935154838537386,
+          -0.28915715173943823,
+          -0.28511356446934144,
+          -0.28136144779308836,
+          -0.27787940808428857
+        ],
+        "firstConstraintCycle": null,
+        "allocations": [
+          {
+            "capital": 0,
+            "resources": 20,
+            "research": 0,
+            "education": 0
+          },
+          {
+            "capital": 0,
+            "resources": 20,
+            "research": 0,
+            "education": 0
+          },
+          {
+            "capital": 0,
+            "resources": 20,
+            "research": 0,
+            "education": 0
+          },
+          {
+            "capital": 0,
+            "resources": 20,
+            "research": 0,
+            "education": 0
+          },
+          {
+            "capital": 0,
+            "resources": 20,
+            "research": 0,
+            "education": 0
+          },
+          {
+            "capital": 0,
+            "resources": 20,
+            "research": 0,
+            "education": 0
+          }
+        ]
+      },
+      "Resource neglect": {
+        "outputPerWorker": 67.70484417659337,
+        "output": 4973.302109289878,
+        "productivityGrowthPercent": 43.96018126398054,
+        "technologyIndex": 313.75765259848595,
+        "education": 338.6875,
+        "adoptionPercent": 60.2057134451671,
+        "capacityCoveragePercent": 83.78132366673586,
+        "labor": 73.45563186465802,
+        "gapChangePercent": -13.922142384039832,
+        "cycleProductivityGains": [
+          1.9546391705701183,
+          2.2566537342409063,
+          2.8294785294914675,
+          3.664901724854708,
+          4.534422535259992,
+          5.434490821939804
+        ],
+        "firstConstraintCycle": 2,
+        "allocations": [
+          {
+            "capital": 10,
+            "resources": 0,
+            "research": 5,
+            "education": 5
+          },
+          {
+            "capital": 10,
+            "resources": 0,
+            "research": 5,
+            "education": 5
+          },
+          {
+            "capital": 10,
+            "resources": 0,
+            "research": 5,
+            "education": 5
+          },
+          {
+            "capital": 10,
+            "resources": 0,
+            "research": 5,
+            "education": 5
+          },
+          {
+            "capital": 10,
+            "resources": 0,
+            "research": 5,
+            "education": 5
+          },
+          {
+            "capital": 10,
+            "resources": 0,
+            "research": 5,
+            "education": 5
+          }
+        ]
+      },
+      "Capital early, research late": {
+        "outputPerWorker": 72.24234233581333,
+        "output": 5371.517376700268,
+        "productivityGrowthPercent": 53.60822145121593,
+        "technologyIndex": 312.2532485968288,
+        "education": 350.1625,
+        "adoptionPercent": 60.98725617327207,
+        "capacityCoveragePercent": 100,
+        "labor": 74.35414194809957,
+        "gapChangePercent": -10.871966926530343,
+        "cycleProductivityGains": [
+          1.717301616362171,
+          2.58701600119727,
+          2.631702395890997,
+          4.517599703849626,
+          6.045243811261308,
+          7.713221147015588
+        ],
+        "firstConstraintCycle": null,
+        "allocations": [
+          {
+            "capital": 10,
+            "resources": 4,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 10,
+            "resources": 4,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 2,
+            "resources": 3,
+            "research": 8,
+            "education": 7
+          },
+          {
+            "capital": 2,
+            "resources": 3,
+            "research": 8,
+            "education": 7
+          },
+          {
+            "capital": 2,
+            "resources": 3,
+            "research": 8,
+            "education": 7
+          },
+          {
+            "capital": 2,
+            "resources": 3,
+            "research": 8,
+            "education": 7
+          }
+        ]
+      },
+      "Research early, capital late": {
+        "outputPerWorker": 76.9586105433865,
+        "output": 5722.191452471471,
+        "productivityGrowthPercent": 63.63637873167396,
+        "technologyIndex": 335.8015504036758,
+        "education": 327.2125,
+        "adoptionPercent": 57.88873067912448,
+        "capacityCoveragePercent": 100,
+        "labor": 74.35414194809957,
+        "gapChangePercent": -8.487525811372285,
+        "cycleProductivityGains": [
+          1.1483756959052371,
+          3.210476633421038,
+          5.370172518430358,
+          5.784728583314347,
+          6.6996453471167,
+          7.714954104962445
+        ],
+        "firstConstraintCycle": null,
+        "allocations": [
+          {
+            "capital": 2,
+            "resources": 3,
+            "research": 8,
+            "education": 7
+          },
+          {
+            "capital": 2,
+            "resources": 3,
+            "research": 8,
+            "education": 7
+          },
+          {
+            "capital": 10,
+            "resources": 4,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 10,
+            "resources": 4,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 10,
+            "resources": 4,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 10,
+            "resources": 4,
+            "research": 3,
+            "education": 3
+          }
+        ]
+      }
+    },
+    "rivermark": {
+      "5/5/5/5": {
+        "outputPerWorker": 24.742716024939266,
+        "output": 1515.0663454704666,
+        "productivityGrowthPercent": 112.38150312867803,
+        "technologyIndex": 182.86659847826778,
+        "education": 139.6875,
+        "adoptionPercent": 55.46858443140587,
+        "capacityCoveragePercent": 100,
+        "labor": 61.232822780787885,
+        "gapChangePercent": -15.073432470671117,
+        "cycleProductivityGains": [
+          1.5589206428627431,
+          1.8417006043449167,
+          1.9630035270594401,
+          2.1957680213279254,
+          2.539068019636389,
+          2.9941276513073873
+        ],
+        "firstConstraintCycle": null,
+        "allocations": [
+          {
+            "capital": 5,
+            "resources": 5,
+            "research": 5,
+            "education": 5
+          },
+          {
+            "capital": 5,
+            "resources": 5,
+            "research": 5,
+            "education": 5
+          },
+          {
+            "capital": 5,
+            "resources": 5,
+            "research": 5,
+            "education": 5
+          },
+          {
+            "capital": 5,
+            "resources": 5,
+            "research": 5,
+            "education": 5
+          },
+          {
+            "capital": 5,
+            "resources": 5,
+            "research": 5,
+            "education": 5
+          },
+          {
+            "capital": 5,
+            "resources": 5,
+            "research": 5,
+            "education": 5
+          }
+        ]
+      },
+      "10/4/3/3": {
+        "outputPerWorker": 27.50112324255462,
+        "output": 1683.9714057839537,
+        "productivityGrowthPercent": 136.0585590560732,
+        "technologyIndex": 151.63017589338935,
+        "education": 94.2125,
+        "adoptionPercent": 52.169829761501994,
+        "capacityCoveragePercent": 100,
+        "labor": 61.232822780787885,
+        "gapChangePercent": -20.42485516724897,
+        "cycleProductivityGains": [
+          2.707590519016703,
+          2.539314961021333,
+          2.4523179377059705,
+          2.5098390397662698,
+          2.682684587550927,
+          2.9592486390929515
+        ],
+        "firstConstraintCycle": null,
+        "allocations": [
+          {
+            "capital": 10,
+            "resources": 4,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 10,
+            "resources": 4,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 10,
+            "resources": 4,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 10,
+            "resources": 4,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 10,
+            "resources": 4,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 10,
+            "resources": 4,
+            "research": 3,
+            "education": 3
+          }
+        ]
+      },
+      "3/3/7/7": {
+        "outputPerWorker": 23.40848649743303,
+        "output": 1433.367705263783,
+        "productivityGrowthPercent": 100.92901455447208,
+        "technologyIndex": 215.91674524236277,
+        "education": 185.1625,
+        "adoptionPercent": 57.103385477941835,
+        "capacityCoveragePercent": 100,
+        "labor": 61.232822780787885,
+        "gapChangePercent": -12.484972677517819,
+        "cycleProductivityGains": [
+          1.084829581652885,
+          1.534569593466058,
+          1.7171584956329742,
+          2.0186435040896598,
+          2.434740133412024,
+          2.9684176307789656
+        ],
+        "firstConstraintCycle": null,
+        "allocations": [
+          {
+            "capital": 3,
+            "resources": 3,
+            "research": 7,
+            "education": 7
+          },
+          {
+            "capital": 3,
+            "resources": 3,
+            "research": 7,
+            "education": 7
+          },
+          {
+            "capital": 3,
+            "resources": 3,
+            "research": 7,
+            "education": 7
+          },
+          {
+            "capital": 3,
+            "resources": 3,
+            "research": 7,
+            "education": 7
+          },
+          {
+            "capital": 3,
+            "resources": 3,
+            "research": 7,
+            "education": 7
+          },
+          {
+            "capital": 3,
+            "resources": 3,
+            "research": 7,
+            "education": 7
+          }
+        ]
+      },
+      "8/6/3/3": {
+        "outputPerWorker": 25.40785778796506,
+        "output": 1555.7948531699258,
+        "productivityGrowthPercent": 118.09081197265022,
+        "technologyIndex": 151.63017589338935,
+        "education": 94.2125,
+        "adoptionPercent": 52.169829761501994,
+        "capacityCoveragePercent": 100,
+        "labor": 61.232822780787885,
+        "gapChangePercent": -16.36383466523005,
+        "cycleProductivityGains": [
+          2.232158212185629,
+          2.182609850708843,
+          2.1389395398986224,
+          2.2076525687224375,
+          2.3717729134948407,
+          2.6245971445542224
+        ],
+        "firstConstraintCycle": null,
+        "allocations": [
+          {
+            "capital": 8,
+            "resources": 6,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 8,
+            "resources": 6,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 8,
+            "resources": 6,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 8,
+            "resources": 6,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 8,
+            "resources": 6,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 8,
+            "resources": 6,
+            "research": 3,
+            "education": 3
+          }
+        ]
+      },
+      "2/3/8/7": {
+        "outputPerWorker": 21.32659332583161,
+        "output": 1305.8875096385807,
+        "productivityGrowthPercent": 83.05888256522833,
+        "technologyIndex": 228.39084106846403,
+        "education": 185.1625,
+        "adoptionPercent": 55.76625185420245,
+        "capacityCoveragePercent": 100,
+        "labor": 61.232822780787885,
+        "gapChangePercent": -8.446014869109174,
+        "cycleProductivityGains": [
+          0.7994895041583128,
+          1.243712055455088,
+          1.4127290612118024,
+          1.6813842252162292,
+          2.0421957413077685,
+          2.496955180081944
+        ],
+        "firstConstraintCycle": null,
+        "allocations": [
+          {
+            "capital": 2,
+            "resources": 3,
+            "research": 8,
+            "education": 7
+          },
+          {
+            "capital": 2,
+            "resources": 3,
+            "research": 8,
+            "education": 7
+          },
+          {
+            "capital": 2,
+            "resources": 3,
+            "research": 8,
+            "education": 7
+          },
+          {
+            "capital": 2,
+            "resources": 3,
+            "research": 8,
+            "education": 7
+          },
+          {
+            "capital": 2,
+            "resources": 3,
+            "research": 8,
+            "education": 7
+          },
+          {
+            "capital": 2,
+            "resources": 3,
+            "research": 8,
+            "education": 7
+          }
+        ]
+      },
+      "Capital only": {
+        "outputPerWorker": 20.769431550377753,
+        "output": 1238.3524828525015,
+        "productivityGrowthPercent": 78.27643041901034,
+        "technologyIndex": 113.60450330491511,
+        "education": 26,
+        "adoptionPercent": 36.63216045713426,
+        "capacityCoveragePercent": 71.86233300456793,
+        "labor": 59.62380240637729,
+        "gapChangePercent": -7.365098261949567,
+        "cycleProductivityGains": [
+          4.004878745332174,
+          1.9895626463218594,
+          1.256797359220922,
+          0.8492087713565581,
+          0.594659269515784,
+          0.4241972002299903
+        ],
+        "firstConstraintCycle": 1,
+        "allocations": [
+          {
+            "capital": 20,
+            "resources": 0,
+            "research": 0,
+            "education": 0
+          },
+          {
+            "capital": 20,
+            "resources": 0,
+            "research": 0,
+            "education": 0
+          },
+          {
+            "capital": 20,
+            "resources": 0,
+            "research": 0,
+            "education": 0
+          },
+          {
+            "capital": 20,
+            "resources": 0,
+            "research": 0,
+            "education": 0
+          },
+          {
+            "capital": 20,
+            "resources": 0,
+            "research": 0,
+            "education": 0
+          },
+          {
+            "capital": 20,
+            "resources": 0,
+            "research": 0,
+            "education": 0
+          }
+        ]
+      },
+      "Research only": {
+        "outputPerWorker": 12.075435691752725,
+        "output": 737.8262655691381,
+        "productivityGrowthPercent": 3.650673618981859,
+        "technologyIndex": 238.0705193373374,
+        "education": 26,
+        "adoptionPercent": 27.79919402492588,
+        "capacityCoveragePercent": 94.88147137577901,
+        "labor": 61.101419808235846,
+        "gapChangePercent": 9.501608895966363,
+        "cycleProductivityGains": [
+          0.06393745268423778,
+          0.11507694741093921,
+          0.05740402146360957,
+          0.032243298679382804,
+          0.06163997854165437,
+          0.0950064345724364
+        ],
+        "firstConstraintCycle": 4,
+        "allocations": [
+          {
+            "capital": 0,
+            "resources": 0,
+            "research": 20,
+            "education": 0
+          },
+          {
+            "capital": 0,
+            "resources": 0,
+            "research": 20,
+            "education": 0
+          },
+          {
+            "capital": 0,
+            "resources": 0,
+            "research": 20,
+            "education": 0
+          },
+          {
+            "capital": 0,
+            "resources": 0,
+            "research": 20,
+            "education": 0
+          },
+          {
+            "capital": 0,
+            "resources": 0,
+            "research": 20,
+            "education": 0
+          },
+          {
+            "capital": 0,
+            "resources": 0,
+            "research": 20,
+            "education": 0
+          }
+        ]
+      },
+      "Research + education": {
+        "outputPerWorker": 15.719341042395659,
+        "output": 959.5910213849825,
+        "productivityGrowthPercent": 34.928488667585775,
+        "technologyIndex": 266.3770810337408,
+        "education": 253.375,
+        "adoptionPercent": 58.33153041294712,
+        "capacityCoveragePercent": 93.59882741472812,
+        "labor": 61.04524475911103,
+        "gapChangePercent": 2.4322836443924043,
+        "cycleProductivityGains": [
+          0.26984128147356934,
+          0.710639568978225,
+          0.5965266198699339,
+          0.6764390722251648,
+          0.8217221329613622,
+          0.9940448084869384
+        ],
+        "firstConstraintCycle": 4,
+        "allocations": [
+          {
+            "capital": 0,
+            "resources": 0,
+            "research": 10,
+            "education": 10
+          },
+          {
+            "capital": 0,
+            "resources": 0,
+            "research": 10,
+            "education": 10
+          },
+          {
+            "capital": 0,
+            "resources": 0,
+            "research": 10,
+            "education": 10
+          },
+          {
+            "capital": 0,
+            "resources": 0,
+            "research": 10,
+            "education": 10
+          },
+          {
+            "capital": 0,
+            "resources": 0,
+            "research": 10,
+            "education": 10
+          },
+          {
+            "capital": 0,
+            "resources": 0,
+            "research": 10,
+            "education": 10
+          }
+        ]
+      },
+      "Resources only": {
+        "outputPerWorker": 11.26741214846612,
+        "output": 689.9354512851223,
+        "productivityGrowthPercent": -3.285074845883418,
+        "technologyIndex": 113.60450330491511,
+        "education": 26,
+        "adoptionPercent": 36.63216045713426,
+        "capacityCoveragePercent": 100,
+        "labor": 61.232822780787885,
+        "gapChangePercent": 11.069207581649678,
+        "cycleProductivityGains": [
+          -0.06455340299108947,
+          -0.06424618705008811,
+          -0.06393911938880592,
+          -0.06363221762844873,
+          -0.06332549959133793,
+          -0.06301898328457511
+        ],
+        "firstConstraintCycle": null,
+        "allocations": [
+          {
+            "capital": 0,
+            "resources": 20,
+            "research": 0,
+            "education": 0
+          },
+          {
+            "capital": 0,
+            "resources": 20,
+            "research": 0,
+            "education": 0
+          },
+          {
+            "capital": 0,
+            "resources": 20,
+            "research": 0,
+            "education": 0
+          },
+          {
+            "capital": 0,
+            "resources": 20,
+            "research": 0,
+            "education": 0
+          },
+          {
+            "capital": 0,
+            "resources": 20,
+            "research": 0,
+            "education": 0
+          },
+          {
+            "capital": 0,
+            "resources": 20,
+            "research": 0,
+            "education": 0
+          }
+        ]
+      },
+      "Resource neglect": {
+        "outputPerWorker": 26.627805594767594,
+        "output": 1601.7984819583774,
+        "productivityGrowthPercent": 128.5623523114757,
+        "technologyIndex": 182.86659847826778,
+        "education": 139.6875,
+        "adoptionPercent": 55.46858443140587,
+        "capacityCoveragePercent": 78.95508084861103,
+        "labor": 60.15510652042365,
+        "gapChangePercent": -18.730583251251836,
+        "cycleProductivityGains": [
+          2.6398886267732244,
+          2.2539347778994543,
+          2.201196702022223,
+          2.328291069059471,
+          2.5913090713072435,
+          2.9630577893055126
+        ],
+        "firstConstraintCycle": 2,
+        "allocations": [
+          {
+            "capital": 10,
+            "resources": 0,
+            "research": 5,
+            "education": 5
+          },
+          {
+            "capital": 10,
+            "resources": 0,
+            "research": 5,
+            "education": 5
+          },
+          {
+            "capital": 10,
+            "resources": 0,
+            "research": 5,
+            "education": 5
+          },
+          {
+            "capital": 10,
+            "resources": 0,
+            "research": 5,
+            "education": 5
+          },
+          {
+            "capital": 10,
+            "resources": 0,
+            "research": 5,
+            "education": 5
+          },
+          {
+            "capital": 10,
+            "resources": 0,
+            "research": 5,
+            "education": 5
+          }
+        ]
+      },
+      "Capital early, research late": {
+        "outputPerWorker": 24.879355858448204,
+        "output": 1523.4331881805156,
+        "productivityGrowthPercent": 113.55436439413613,
+        "technologyIndex": 190.44202315380437,
+        "education": 151.1625,
+        "adoptionPercent": 56.06657298236475,
+        "capacityCoveragePercent": 100,
+        "labor": 61.232822780787885,
+        "gapChangePercent": -15.338519330082867,
+        "cycleProductivityGains": [
+          2.707590519016703,
+          2.539314961021333,
+          1.2304962407320161,
+          1.8281269498376638,
+          2.209210335283519,
+          2.714489294156504
+        ],
+        "firstConstraintCycle": null,
+        "allocations": [
+          {
+            "capital": 10,
+            "resources": 4,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 10,
+            "resources": 4,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 2,
+            "resources": 3,
+            "research": 8,
+            "education": 7
+          },
+          {
+            "capital": 2,
+            "resources": 3,
+            "research": 8,
+            "education": 7
+          },
+          {
+            "capital": 2,
+            "resources": 3,
+            "research": 8,
+            "education": 7
+          },
+          {
+            "capital": 2,
+            "resources": 3,
+            "research": 8,
+            "education": 7
+          }
+        ]
+      },
+      "Research early, capital late": {
+        "outputPerWorker": 28.305831224317394,
+        "output": 1733.2459470215192,
+        "productivityGrowthPercent": 142.96584807697775,
+        "technologyIndex": 188.7009832077644,
+        "education": 128.2125,
+        "adoptionPercent": 53.05208034799893,
+        "capacityCoveragePercent": 100,
+        "labor": 61.232822780787885,
+        "gapChangePercent": -21.986021528119178,
+        "cycleProductivityGains": [
+          0.7994895041583128,
+          1.243712055455088,
+          3.635857749219644,
+          3.426566428212862,
+          3.6083794971423337,
+          3.941698431728689
+        ],
+        "firstConstraintCycle": null,
+        "allocations": [
+          {
+            "capital": 2,
+            "resources": 3,
+            "research": 8,
+            "education": 7
+          },
+          {
+            "capital": 2,
+            "resources": 3,
+            "research": 8,
+            "education": 7
+          },
+          {
+            "capital": 10,
+            "resources": 4,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 10,
+            "resources": 4,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 10,
+            "resources": 4,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 10,
+            "resources": 4,
+            "research": 3,
+            "education": 3
+          }
+        ]
+      }
+    }
+  },
+  "doctrines": {
+    "meridian": {
+      "balanced": {
+        "name": "Balanced Growth",
+        "outputPerWorker": 68.51837534447037,
+        "technologyIndex": 313.29706144394044,
+        "capacityCoveragePercent": 100,
+        "allocations": [
+          {
+            "capital": 4,
+            "resources": 7,
+            "research": 5,
+            "education": 4
+          },
+          {
+            "capital": 4,
+            "resources": 6,
+            "research": 5,
+            "education": 5
+          },
+          {
+            "capital": 4,
+            "resources": 6,
+            "research": 5,
+            "education": 5
+          },
+          {
+            "capital": 4,
+            "resources": 6,
+            "research": 5,
+            "education": 5
+          },
+          {
+            "capital": 4,
+            "resources": 6,
+            "research": 5,
+            "education": 5
+          },
+          {
+            "capital": 4,
+            "resources": 6,
+            "research": 5,
+            "education": 5
+          }
+        ]
+      },
+      "industrial": {
+        "name": "Industrial Push",
+        "outputPerWorker": 67.33089540872024,
+        "technologyIndex": 301.2097637540317,
+        "capacityCoveragePercent": 100,
+        "allocations": [
+          {
+            "capital": 7,
+            "resources": 7,
+            "research": 4,
+            "education": 2
+          },
+          {
+            "capital": 7,
+            "resources": 6,
+            "research": 5,
+            "education": 2
+          },
+          {
+            "capital": 7,
+            "resources": 6,
+            "research": 5,
+            "education": 2
+          },
+          {
+            "capital": 8,
+            "resources": 5,
+            "research": 5,
+            "education": 2
+          },
+          {
+            "capital": 7,
+            "resources": 6,
+            "research": 5,
+            "education": 2
+          },
+          {
+            "capital": 8,
+            "resources": 5,
+            "research": 5,
+            "education": 2
+          }
+        ]
+      },
+      "humanCapital": {
+        "name": "Human Capital",
+        "outputPerWorker": 76.1906012466557,
+        "technologyIndex": 363.4104751689508,
+        "capacityCoveragePercent": 100,
+        "allocations": [
+          {
+            "capital": 2,
+            "resources": 5,
+            "research": 7,
+            "education": 6
+          },
+          {
+            "capital": 2,
+            "resources": 4,
+            "research": 7,
+            "education": 7
+          },
+          {
+            "capital": 2,
+            "resources": 4,
+            "research": 7,
+            "education": 7
+          },
+          {
+            "capital": 2,
+            "resources": 4,
+            "research": 8,
+            "education": 6
+          },
+          {
+            "capital": 2,
+            "resources": 4,
+            "research": 8,
+            "education": 6
+          },
+          {
+            "capital": 2,
+            "resources": 4,
+            "research": 8,
+            "education": 6
+          }
+        ]
+      },
+      "innovation": {
+        "name": "Innovation",
+        "outputPerWorker": 77.70601765559356,
+        "technologyIndex": 408.07828324118907,
+        "capacityCoveragePercent": 100,
+        "allocations": [
+          {
+            "capital": 2,
+            "resources": 5,
+            "research": 9,
+            "education": 4
+          },
+          {
+            "capital": 1,
+            "resources": 4,
+            "research": 10,
+            "education": 5
+          },
+          {
+            "capital": 1,
+            "resources": 4,
+            "research": 10,
+            "education": 5
+          },
+          {
+            "capital": 1,
+            "resources": 4,
+            "research": 10,
+            "education": 5
+          },
+          {
+            "capital": 1,
+            "resources": 4,
+            "research": 10,
+            "education": 5
+          },
+          {
+            "capital": 1,
+            "resources": 4,
+            "research": 9,
+            "education": 6
+          }
+        ]
+      },
+      "resourceSecurity": {
+        "name": "Resource Security",
+        "outputPerWorker": 57.57946739592449,
+        "technologyIndex": 254.08648667316228,
+        "capacityCoveragePercent": 100,
+        "allocations": [
+          {
+            "capital": 3,
+            "resources": 13,
+            "research": 2,
+            "education": 2
+          },
+          {
+            "capital": 3,
+            "resources": 12,
+            "research": 2,
+            "education": 3
+          },
+          {
+            "capital": 3,
+            "resources": 11,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 3,
+            "resources": 11,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 3,
+            "resources": 11,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 3,
+            "resources": 11,
+            "research": 3,
+            "education": 3
+          }
+        ]
+      },
+      "frontier": {
+        "name": "Frontier Strategy",
+        "outputPerWorker": 76.73650968749605,
+        "technologyIndex": 373.90960295150967,
+        "capacityCoveragePercent": 100,
+        "allocations": [
+          {
+            "capital": 1,
+            "resources": 5,
+            "research": 7,
+            "education": 7
+          },
+          {
+            "capital": 1,
+            "resources": 4,
+            "research": 8,
+            "education": 7
+          },
+          {
+            "capital": 1,
+            "resources": 4,
+            "research": 8,
+            "education": 7
+          },
+          {
+            "capital": 1,
+            "resources": 4,
+            "research": 8,
+            "education": 7
+          },
+          {
+            "capital": 1,
+            "resources": 4,
+            "research": 8,
+            "education": 7
+          },
+          {
+            "capital": 1,
+            "resources": 4,
+            "research": 8,
+            "education": 7
+          }
+        ]
+      }
+    },
+    "rivermark": {
+      "balanced": {
+        "name": "Balanced Growth",
+        "outputPerWorker": 23.862551217540204,
+        "technologyIndex": 179.97169891171995,
+        "capacityCoveragePercent": 100,
+        "allocations": [
+          {
+            "capital": 4,
+            "resources": 6,
+            "research": 4,
+            "education": 6
+          },
+          {
+            "capital": 4,
+            "resources": 6,
+            "research": 4,
+            "education": 6
+          },
+          {
+            "capital": 4,
+            "resources": 5,
+            "research": 5,
+            "education": 6
+          },
+          {
+            "capital": 4,
+            "resources": 5,
+            "research": 5,
+            "education": 6
+          },
+          {
+            "capital": 5,
+            "resources": 5,
+            "research": 5,
+            "education": 5
+          },
+          {
+            "capital": 5,
+            "resources": 5,
+            "research": 5,
+            "education": 5
+          }
+        ]
+      },
+      "industrial": {
+        "name": "Industrial Push",
+        "outputPerWorker": 26.458643050474997,
+        "technologyIndex": 151.27242646229791,
+        "capacityCoveragePercent": 100,
+        "allocations": [
+          {
+            "capital": 9,
+            "resources": 6,
+            "research": 2,
+            "education": 3
+          },
+          {
+            "capital": 9,
+            "resources": 5,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 9,
+            "resources": 5,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 9,
+            "resources": 5,
+            "research": 3,
+            "education": 3
+          },
+          {
+            "capital": 9,
+            "resources": 4,
+            "research": 4,
+            "education": 3
+          },
+          {
+            "capital": 9,
+            "resources": 4,
+            "research": 4,
+            "education": 3
+          }
+        ]
+      },
+      "humanCapital": {
+        "name": "Human Capital",
+        "outputPerWorker": 21.985729176691475,
+        "technologyIndex": 196.2158133285415,
+        "capacityCoveragePercent": 100,
+        "allocations": [
+          {
+            "capital": 2,
+            "resources": 4,
+            "research": 4,
+            "education": 10
+          },
+          {
+            "capital": 2,
+            "resources": 4,
+            "research": 4,
+            "education": 10
+          },
+          {
+            "capital": 2,
+            "resources": 4,
+            "research": 5,
+            "education": 9
+          },
+          {
+            "capital": 3,
+            "resources": 3,
+            "research": 6,
+            "education": 8
+          },
+          {
+            "capital": 3,
+            "resources": 3,
+            "research": 7,
+            "education": 7
+          },
+          {
+            "capital": 3,
+            "resources": 3,
+            "research": 7,
+            "education": 7
+          }
+        ]
+      },
+      "innovation": {
+        "name": "Innovation",
+        "outputPerWorker": 20.73510925819681,
+        "technologyIndex": 232.47812284940096,
+        "capacityCoveragePercent": 100,
+        "allocations": [
+          {
+            "capital": 1,
+            "resources": 4,
+            "research": 8,
+            "education": 7
+          },
+          {
+            "capital": 2,
+            "resources": 3,
+            "research": 8,
+            "education": 7
+          },
+          {
+            "capital": 2,
+            "resources": 3,
+            "research": 9,
+            "education": 6
+          },
+          {
+            "capital": 2,
+            "resources": 3,
+            "research": 9,
+            "education": 6
+          },
+          {
+            "capital": 2,
+            "resources": 3,
+            "research": 9,
+            "education": 6
+          },
+          {
+            "capital": 2,
+            "resources": 3,
+            "research": 9,
+            "education": 6
+          }
+        ]
+      },
+      "resourceSecurity": {
+        "name": "Resource Security",
+        "outputPerWorker": 19.865398135147128,
+        "technologyIndex": 140.89401830381075,
+        "capacityCoveragePercent": 100,
+        "allocations": [
+          {
+            "capital": 3,
+            "resources": 12,
+            "research": 2,
+            "education": 3
+          },
+          {
+            "capital": 4,
+            "resources": 10,
+            "research": 2,
+            "education": 4
+          },
+          {
+            "capital": 4,
+            "resources": 10,
+            "research": 2,
+            "education": 4
+          },
+          {
+            "capital": 4,
+            "resources": 10,
+            "research": 2,
+            "education": 4
+          },
+          {
+            "capital": 4,
+            "resources": 11,
+            "research": 2,
+            "education": 3
+          },
+          {
+            "capital": 4,
+            "resources": 11,
+            "research": 2,
+            "education": 3
+          }
+        ]
+      }
+    }
+  },
+  "gridRuns": 572,
+  "gridLeaders": {
+    "meridian": [
+      {
+        "allocation": [
+          0,
+          2,
+          12,
+          6
+        ],
+        "outputPerWorker": 81.37611243112991,
+        "capacityCoveragePercent": 98.55922028732566
+      },
+      {
+        "allocation": [
+          0,
+          2,
+          10,
+          8
+        ],
+        "outputPerWorker": 81.030397501226,
+        "capacityCoveragePercent": 98.6546814575458
+      },
+      {
+        "allocation": [
+          0,
+          2,
+          14,
+          4
+        ],
+        "outputPerWorker": 80.63151664636412,
+        "capacityCoveragePercent": 98.76485940773263
+      },
+      {
+        "allocation": [
+          2,
+          2,
+          10,
+          6
+        ],
+        "outputPerWorker": 79.90919744216126,
+        "capacityCoveragePercent": 97.203433021908
+      },
+      {
+        "allocation": [
+          2,
+          2,
+          12,
+          4
+        ],
+        "outputPerWorker": 79.69499923879773,
+        "capacityCoveragePercent": 97.26141713620208
+      }
+    ],
+    "rivermark": [
+      {
+        "allocation": [
+          8,
+          2,
+          4,
+          6
+        ],
+        "outputPerWorker": 28.424078481518247,
+        "capacityCoveragePercent": 96.04925125027434
+      },
+      {
+        "allocation": [
+          10,
+          2,
+          4,
+          4
+        ],
+        "outputPerWorker": 28.238960157106234,
+        "capacityCoveragePercent": 93.78268841162784
+      },
+      {
+        "allocation": [
+          8,
+          2,
+          6,
+          4
+        ],
+        "outputPerWorker": 27.982159171717537,
+        "capacityCoveragePercent": 96.18746004338678
+      },
+      {
+        "allocation": [
+          10,
+          2,
+          2,
+          6
+        ],
+        "outputPerWorker": 27.88870268409782,
+        "capacityCoveragePercent": 93.89657037516663
+      },
+      {
+        "allocation": [
+          6,
+          2,
+          6,
+          6
+        ],
+        "outputPerWorker": 27.777633541387075,
+        "capacityCoveragePercent": 98.78858603677469
+      }
+    ]
+  },
+  "GAME_BALANCE": {
+    "developmentPointsPerCycle": 20,
+    "initial": {
+      "meridian": {
+        "capital": 1400,
+        "resources": 350,
+        "technology": 1.85,
+        "education": 225,
+        "labor": 68,
+        "researchCapacity": 5,
+        "pendingEducation": 0
+      },
+      "rivermark": {
+        "capital": 135,
+        "resources": 155,
+        "technology": 1.12,
+        "education": 26,
+        "labor": 56,
+        "researchCapacity": 2,
+        "pendingEducation": 0
+      }
+    },
+    "outputScale": 8,
+    "capitalExponent": 0.36,
+    "capitalPerPoint": 9,
+    "resourcesPerPoint": 4.25,
+    "educationPerPoint": 4.25,
+    "educationImmediateShare": 0.35,
+    "humanCapitalMaximumBonus": 0.65,
+    "humanCapitalHalfSaturation": 120,
+    "equipmentComplementScale": 4,
+    "adoptionFloor": 0.2,
+    "adoptionEducationScale": 85,
+    "adoptionTechnologyExponent": 1.2,
+    "researchSkillFloor": 0.2,
+    "researchEducationScale": 120,
+    "knowledgePerPoint": 2.75,
+    "immediateResearchKnowledge": 0.9,
+    "researchSaturationScale": 200,
+    "innovationRate": 0.0035,
+    "diffusionRate": 0.0125,
+    "technologyProductivityWeight": 1,
+    "laborGrowthRate": 0.015,
+    "migrationBonusMax": 1,
+    "capacityBase": 26,
+    "capacityPerResource": 0.24,
+    "capitalResourceDemand": 0.018,
+    "outputResourceDemand": 0.004,
+    "resourcePenaltyExponent": 0.8,
+    "laborCrowdingPower": 2,
+    "migrationMinOutputPerWorker": 28,
+    "migrationMinCapitalPerWorker": 6,
+    "migrationHeadroom": 1.12,
+    "resourceConstraintThreshold": 0.98,
+    "adoptionConstraintThreshold": 0.55,
+    "skillUnderuseEducationPerWorker": 1.6,
+    "skillUnderuseCapitalPerWorker": 5,
+    "excessResourceUtilization": 0.68,
+    "capitalSaturationPerWorker": 30,
+    "buildingPointThresholds": [
+      4,
+      15,
+      30,
+      50,
+      80,
+      120
+    ],
+    "initialBuildings": {
+      "meridian": {
+        "capital": 3,
+        "resources": 2,
+        "research": 2,
+        "education": 3
+      },
+      "rivermark": {
+        "capital": 1,
+        "resources": 1,
+        "research": 0,
+        "education": 1
+      }
+    },
+    "technologyDisplayScale": 100,
+    "gapTolerance": 0.02,
+    "pathShiftPoints": 3,
+    "feedbackCapitalPoints": 10,
+    "feedbackResearchPoints": 7,
+    "feedbackEducationPoints": 5,
+    "cpu": {
+      "resourceTargetUtilization": 0.85,
+      "resourceResponse": 25,
+      "adoptionTarget": 0.65,
+      "educationResponse": 12,
+      "capitalMaturityScale": 12,
+      "educationReadinessScale": 120,
+      "minimumWeight": 0.25
+    }
+  },
+  "CPU_DOCTRINES": {
+    "balanced": {
+      "name": "Balanced Growth",
+      "cities": [
+        "meridian",
+        "rivermark"
+      ],
+      "weights": {
+        "capital": 5,
+        "resources": 5,
+        "research": 5,
+        "education": 5
+      },
+      "resourceResponse": 1,
+      "educationResponse": 0.7,
+      "capitalShift": 1,
+      "researchShift": 1
+    },
+    "industrial": {
+      "name": "Industrial Push",
+      "cities": [
+        "meridian",
+        "rivermark"
+      ],
+      "weights": {
+        "capital": 12,
+        "resources": 4,
+        "research": 2,
+        "education": 2
+      },
+      "resourceResponse": 1.2,
+      "educationResponse": 0.5,
+      "capitalShift": 7,
+      "researchShift": 4
+    },
+    "humanCapital": {
+      "name": "Human Capital",
+      "cities": [
+        "meridian",
+        "rivermark"
+      ],
+      "weights": {
+        "capital": 3,
+        "resources": 3,
+        "research": 3,
+        "education": 11
+      },
+      "resourceResponse": 0.8,
+      "educationResponse": 0.8,
+      "capitalShift": 1,
+      "researchShift": 1,
+      "educationToResearch": 6
+    },
+    "innovation": {
+      "name": "Innovation",
+      "cities": [
+        "meridian",
+        "rivermark"
+      ],
+      "weights": {
+        "capital": 2,
+        "resources": 3,
+        "research": 10,
+        "education": 5
+      },
+      "resourceResponse": 0.8,
+      "educationResponse": 1.5,
+      "capitalShift": 0.5,
+      "researchShift": 1
+    },
+    "resourceSecurity": {
+      "name": "Resource Security",
+      "cities": [
+        "meridian",
+        "rivermark"
+      ],
+      "weights": {
+        "capital": 4,
+        "resources": 11,
+        "research": 2,
+        "education": 3
+      },
+      "resourceResponse": 1.5,
+      "educationResponse": 0.5,
+      "capitalShift": 1,
+      "researchShift": 1
+    },
+    "frontier": {
+      "name": "Frontier Strategy",
+      "cities": [
+        "meridian"
+      ],
+      "weights": {
+        "capital": 1,
+        "resources": 3,
+        "research": 8,
+        "education": 8
+      },
+      "resourceResponse": 1,
+      "educationResponse": 1,
+      "capitalShift": 0,
+      "researchShift": 1
+    }
+  }
+}

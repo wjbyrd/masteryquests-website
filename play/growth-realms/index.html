@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#031638">
+  <meta name="description" content="Manage one economy across six development cycles and compare its growth with an independently managed rival.">
+  <title>Mastery Quests</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="visual.css">
+  <link rel="stylesheet" href="interaction.css">
+  <link rel="stylesheet" href="mq-theme.css">
+  <link rel="stylesheet" href="presentation.css">
+  <script type="module" src="game.js"></script>
+</head>
+<body data-screen="title">
+  <a href="#development" class="skip-link">Skip to development controls</a>
+  <header class="command-header">
+    <div class="brand-row"><a href="/" class="brand">MASTERY QUESTS<span class="brand-dot" aria-hidden="true"></span></a><span class="edition">GROWTH &amp; DEVELOPMENT</span><button id="soundless-info" class="quiet-button" aria-haspopup="dialog" aria-expanded="false" aria-controls="help">Field Guide</button></div>
+    <div class="title-row"><div><h1 id="game-title"></h1></div><div class="chapter"><span id="stage-count">CHOOSE YOUR ECONOMY</span><strong id="stage-name"></strong></div></div>
+    <nav id="city-tabs" class="city-tabs" aria-label="HUD and city view"></nav>
+    <div id="hud" class="hud" aria-label="Economic stocks"></div>
+  </header>
+  <div id="planning-hud" class="planning-hud" hidden aria-label="Cycle and development budget"><div id="compact-context"><span id="compact-cycle"></span><strong id="compact-city"></strong></div><div id="planning-budget"><div id="points-remaining" class="budget-total" aria-live="polite" aria-atomic="true"></div><div id="budget-pips" aria-hidden="true"></div></div><p id="planning-instruction"></p><button id="quick-commit" class="primary-button" disabled>Commit Plan</button></div>
+  <main>
+    <dialog id="help" class="help panel" aria-labelledby="guide-title"><h2 id="guide-title" tabindex="-1" autofocus>Field Guide</h2><p id="help-budget"></p><p>Commit to build, inspect both allocations and results, then begin a new cycle. Output is production during a cycle; the other stocks carry forward. Labor grows automatically. Focus on output per worker, a proxy for living standards.</p><p>The rival follows a randomly selected doctrine and its own economic conditions. Its plan is revealed after resolution; its doctrine is revealed at the end. The economy is deterministic for a given history. Your run stays in this tab; reloading starts over.</p><button class="quiet-button" id="close-help">Close guide</button></dialog>
+    <dialog id="how-to-play" class="help panel" aria-labelledby="how-title"><p class="eyebrow">YOUR SIX-CYCLE CHALLENGE</p><h2 id="how-title" tabindex="-1" autofocus>Build. Compare. Adapt.</h2><ol><li><strong>Choose your starting challenge.</strong> Catch up as Rivermark or sustain Meridian’s lead.</li><li><strong>Invest 20 points each cycle.</strong> Click a district for +1. Use the controls below your city to add, undo, or clear points.</li><li><strong>Commit, then compare.</strong> Watch both cities develop. Review productivity and constraints before your next move.</li></ol><p>After six cycles, trace your growth path and uncover the rival’s strategy. Replay to test a different investment mix against a newly selected rival doctrine.</p><button class="primary-button" id="close-how">Got it</button></dialog>
+    <section id="title-screen" class="title-screen" aria-labelledby="landing-title"><div class="landing-copy"><p class="eyebrow">A MASTERY QUESTS STRATEGY CHALLENGE</p><h1 id="landing-title">GROWTH<br><span>REALMS</span></h1><p class="landing-hook">Choose a city.<br>Build the stronger growth path.</p><p class="landing-premise">Guide one economy through six cycles of investment, skills, and technology as an independent rival develops across the river.</p><button id="start-game" class="primary-button">Start Game <span aria-hidden="true">→</span></button><div class="landing-links"><button id="open-how" class="text-button" aria-haspopup="dialog">How to Play</button><button id="landing-guide" class="text-button" aria-haspopup="dialog">Field Guide</button></div></div><div class="landing-visual" role="img" aria-label="Two cities across a river: established Meridian at the frontier and smaller Rivermark with room to catch up."><div class="hero-river"><span>ONE RIVER · TWO GROWTH PATHS</span></div><div class="hero-city hero-meridian"><p>MERIDIAN <span>Hold the frontier</span></p><svg viewBox="0 0 512 512" aria-hidden="true"><image href="assets/sprites/capital.png" width="1536" height="1024" x="0" y="-512"/></svg></div><div class="hero-city hero-rivermark"><p>RIVERMARK <span>Close the gap</span></p><svg viewBox="0 0 512 512" aria-hidden="true"><image href="assets/sprites/capital.png" width="1536" height="1024" x="-512" y="0"/></svg></div><p class="hero-caption">Start ahead. Or catch up.<br><strong>A new rival strategy every replay.</strong></p></div></section>
+    <section id="city-choice" class="city-choice" tabindex="-1" aria-label="Choose your economy"></section>
+    <section class="region-section" aria-label="Your two cities">
+      <div class="region-heading"><span id="region-name"></span><span class="live-status"><i></i><span id="region-status">PLANNING PHASE</span></span></div>
+      <div id="city-maps" class="city-maps"></div>
+      <div class="map-key"><span><i class="key-square"></i> Gold outline: selected district · Click your district to invest +1 during planning</span></div>
+    </section>
+    <section id="development" class="development" tabindex="-1" aria-labelledby="briefing-title">
+      <details class="cycle-briefing"><summary>Cycle briefing</summary><div class="briefing"><div class="stage-marker" id="stage-marker">01</div><div><p class="eyebrow" id="stage-kicker"></p><h2 id="briefing-title"></h2><p id="objective"></p></div><ol id="stage-track" aria-label="Six-cycle progress"></ol></div></details>
+      <div id="allocations" class="allocations"></div>
+      <div id="construction-status" class="construction-status" hidden><div><strong>Development underway</strong><span>Crews are bringing your plans to life.</span></div><progress id="build-progress" max="100" value="0" aria-label="Construction progress"></progress></div>
+      <div id="consequences" class="consequences" hidden></div>
+      <div class="action-bar"><p id="budget-instruction"></p><button id="advance" class="primary-button" disabled>Commit plan <span aria-hidden="true">→</span></button></div>
+    </section>
+    <details id="comparison" class="comparison panel"><summary><span>Compare Cities</span><span class="summary-note">Strategic summary <b aria-hidden="true">＋</b></span></summary><div id="comparison-body"></div></details>
+    <section id="final-report" class="final-report" hidden aria-labelledby="report-title" tabindex="-1"></section>
+    <p id="announcement" role="status" aria-live="polite" class="sr-only"></p>
+    <footer><span>MASTERY QUESTS <span aria-hidden="true">/</span> GROWTH REALMS</span><span>Six cycles. A new path each play.</span></footer>
+  </main>
+  <noscript><p class="panel">Enable JavaScript to play this game.</p></noscript>
+</body>
+</html>
+
+

@@ -86,7 +86,7 @@ function finalAllocation(expanded) {
 export default {
   id: 'ppf', version: 1, title: 'The Economy’s Edge', subtitle: 'A branching production-possibilities scenario',
   role: 'Director of economic planning · Calder', introTitle: 'An economy at work', stateTitle: 'Economic conditions',
-  consequenceTitle: 'Production consequences', endingEyebrow: 'Your outcome · The following period', duration: 'About 10–15 minutes', decisions: 6, sceneSet,
+  consequenceTitle: 'Production consequences', endingEyebrow: 'Your outcome · The following period', duration: 'About 5–10 minutes', decisions: 6, sceneSet,
   introduction: [
     p('Calder’s workers and equipment are fully employed. They produce goods for households and capital goods for further production. As director of economic planning, choose how this limited capacity is used and what the country gives up today for tomorrow.'),
     p('The four views show capital goods at top left, future improvements at top right, idle resources at bottom left and household goods at bottom right. Unused workers and equipment mean lost production; future improvements take time to become usable capacity.')

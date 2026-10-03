@@ -1,0 +1,29 @@
+/* Steel, parchment, and pixel terrain: presentation overrides only. */
+body{background:var(--mq-accent-soft);background-image:repeating-linear-gradient(0deg,color-mix(in srgb, var(--mq-bg-dark) 1%, transparent) 0 1px,transparent 1px 4px)}
+.command-header{background:var(--mq-navy);border-bottom:3px solid var(--mq-warning);box-shadow:0 3px 0 var(--mq-bg-dark),0 6px 16px color-mix(in srgb, var(--mq-bg-dark) 22%, transparent)}
+.title-row h1{font-family:Georgia,serif;font-variant:small-caps;font-weight:700;letter-spacing:1px;text-shadow:2px 2px var(--mq-bg-dark)}
+.city-tabs button[aria-pressed=true]{background:var(--mq-muted);border:1px solid var(--mq-muted);border-bottom:3px solid var(--mq-highlight)}
+.hud-stat strong{font-family:Consolas,monospace;font-size:24px}.hud-icon{color:var(--mq-accent-soft)}
+.panel,.city-panel{border-radius:2px;border:1px solid var(--mq-muted);box-shadow:inset 1px 1px var(--mq-surface),2px 3px 0 color-mix(in srgb, var(--mq-navy) 15%, transparent)}
+.city-heading{background:var(--mq-bg);border-bottom:3px double var(--mq-border);padding:12px 18px}
+.city-heading h2{font-family:Georgia,serif;font-weight:700;font-size:28px}
+.city-code{font-size:9px;letter-spacing:1.5px}.city-panel[data-owner=player]{border-top:4px solid var(--mq-muted)}.city-panel[data-owner=rival]{border-top:4px solid var(--mq-warning)}
+.isometric-map{padding:0;background:var(--mq-navy);overflow:hidden;position:relative}
+.city-map{position:relative;width:100%;aspect-ratio:3/2;isolation:isolate;overflow:hidden}
+.map-layer{position:absolute;inset:0;width:100%;height:100%;image-rendering:pixelated;pointer-events:none}
+.map-loading{position:absolute;inset:40% 0;text-align:center;color:var(--mq-accent-soft);font:12px Consolas,monospace;z-index:12}
+.map-caption{position:absolute;bottom:10px;left:13px;right:13px;display:flex;justify-content:space-between;color:var(--mq-accent-soft);font:8px Consolas,monospace;letter-spacing:1px;pointer-events:none}
+.city-maps.single-city{grid-template-columns:minmax(0,1fr)}
+.single-city .city-panel{width:100%;max-width:1150px;margin:auto}
+.single-city .city-map{max-width:1000px;margin:auto;aspect-ratio:3/2}
+.map-stats{background:var(--mq-bg);border-top:3px double var(--mq-muted);padding:11px 18px 7px}.map-stats strong{font-family:Consolas,monospace;font-size:23px}
+.city-note{padding:8px 18px 4px;min-height:26px}.map-diagnostics{display:flex;flex-wrap:wrap;gap:5px;padding:4px 18px 9px;min-height:20px}
+.map-diagnostics span{font:10px Consolas,monospace;color:var(--mq-warning-text);background:var(--mq-accent-soft);border:1px solid var(--mq-border);padding:4px 6px}.map-diagnostics b{display:inline-block;background:var(--mq-warning-text);color:var(--mq-bg);padding:0 4px}
+.district-buttons{gap:4px;padding:0 14px}.district-buttons button{border-radius:1px;min-height:48px;background:var(--mq-bg);box-shadow:inset 1px 1px var(--mq-surface);font-size:11px}
+.district-buttons button[aria-pressed=true]{background:var(--mq-accent-soft);border-color:var(--mq-muted);box-shadow:inset 0 0 0 1px var(--mq-border)}
+.primary-button{border-radius:2px;border:1px solid var(--mq-bg-dark);box-shadow:inset 1px 1px var(--mq-muted),2px 2px 0 color-mix(in srgb, var(--mq-bg-dark) 19%, transparent)}.step-button{border-radius:2px;min-width:44px;min-height:44px}
+.updated strong{animation:stock-highlight 1.4s steps(8,end)}@keyframes stock-highlight{0%,30%{color:var(--mq-highlight);text-shadow:0 0 8px color-mix(in srgb, var(--mq-highlight) 47%, transparent)}100%{color:inherit;text-shadow:none}}
+.city-choice{margin-bottom:22px}.choice-cards .panel{background:var(--mq-bg)}.city-condition{border-radius:1px}.region-heading{color:var(--mq-navy)}
+@media(min-width:1000px){.single-city .city-map{height:600px;aspect-ratio:auto}.single-city .map-layer{width:900px;height:600px;left:50%;transform:translateX(-50%)}}
+@media(max-width:700px){.city-map{min-height:0}.city-heading{padding:12px}.city-heading h2{font-size:25px}.map-stats{padding:10px 12px 5px}.map-stats strong{font-size:20px}.district-buttons{padding:0 9px;gap:3px}.district-buttons button{font-size:10px}.map-caption{font-size:6px;bottom:6px}.map-diagnostics{padding:4px 12px 8px}.city-note{padding-left:12px;padding-right:12px}.hud-stat strong{font-size:22px}.city-maps{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.updated strong{animation:none}}
