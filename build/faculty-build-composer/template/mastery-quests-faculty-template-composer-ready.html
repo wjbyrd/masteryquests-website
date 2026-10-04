@@ -2860,11 +2860,32 @@ body.game-active #soundToggle{
     #graphLightbox{
         max-width:100vw;
         box-sizing:border-box;
+        overflow:auto;
+        backdrop-filter:none;
+        justify-content:flex-start;
+        align-items:flex-start;
+        padding:64px 12px 24px;
     }
 
     #graphLightbox img{
-        width:100%;
-        max-width:100%;
+        width:760px;
+        min-width:760px;
+        max-width:none;
+        max-height:none;
+        height:auto;
+        flex-shrink:0;
+    }
+    #graphLightbox::after{
+        content:"Swipe to explore the enlarged graph";
+        position:fixed;
+        left:12px;
+        bottom:8px;
+        padding:5px 9px;
+        border-radius:6px;
+        color:white;
+        background:rgba(2,6,23,.94);
+        font-size:12px;
+        pointer-events:none;
     }
 }
 
@@ -8843,7 +8864,7 @@ const FACULTY_POOL_REQUIREMENTS = {
 const FACULTY_MODE_REQUIREMENTS = {
     standard: ["easy", "medium", "hard", "easyBoss", "mediumBoss", "finalBoss", "repair", "bridge"],
     timed: ["easy", "medium", "hard", "repair", "bridge"],
-    exam: ["easy", "medium", "hard", "repair", "bridge"],
+    exam: ["easy", "medium", "hard", "easyBoss", "mediumBoss", "finalBoss", "repair", "bridge"],
     quiz: ["easy", "medium", "hard"],
     unlimited: ["easy", "medium", "hard", "repair", "bridge"],
     legendary: ["legendary", "legendaryBoss"],

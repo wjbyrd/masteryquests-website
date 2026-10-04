@@ -1,0 +1,26 @@
+from review_tools import *
+d=load()
+patch(d,'42588',type='graph_interpretation')
+patch(d,'P62F-PC-H-043',type='calculation')
+# Eligibility follows this review, not merely the existence of an image.
+# The four legacy core records are expressly excluded from automatic addition.
+legacy=set(json.loads((HERE/'scope.json').read_text())['legacy_ids'])
+for id,r in d['questions'].items():
+ q={**ORIGINALS[id],**r['patch']}
+ if q.get('image') and id not in legacy:
+  patch(d,id,graphRequired=True)
+  r['eligibilityReview']='Reviewed graph supplies economic evidence for this task; ordinary-pool membership still controls Trial by Graph admission.'
+ else:r['eligibilityReview']='Legacy mon_core remap retained outside Trial by Graph as expressly instructed.' if id in legacy else 'No graph: not eligible.'
+save(d)
+descriptions={
+ 'CHOICE-05-bundles.webp':'Good X is horizontal and Good Y vertical. Three noncrossing convex indifference curves are IC1, IC2 and IC3. A=(5,18), B=(10,9), and C=(20,4.5) lie on IC2. D=(10,3.5) lies on IC1. IC3 is above IC2.',
+ 'MON-03-long-run.webp':'Quantity is horizontal and price/cost vertical. Demand and MC meet at Q=90, price $20. MR and MC meet at Q=45; demand there is $47. LRAC falls throughout the displayed range. The caption identifies long-run costs for identical firms using the same technology.',
+ 'MON-02-variable-cost.webp':'Quantity is horizontal and price/cost vertical. MR and MC meet at Q=40, value $20. At Q=40 demand is $40, ATC is $45, and AVC is $15. MC rises and demand falls; they meet near Q=67. Curves derive from TC=1200+10Q+0.125Q squared and demand price=60−0.5Q.',
+ 'MON-01-welfare.webp':'Quantity is horizontal and price/cost vertical. MR and MC meet at Q=36, value $24, with demand $42. At Q=48 demand is $36 and MC is $27. Demand and MC meet at Q=60, price $30.',
+ 'PC-06-integration.webp':'Market supply and demand meet at 75 thousand units and price $40. The separate firm panel shows only MC, ATC and AVC; it has no revenue line or selected output. At firm quantity 90, MC is $40, ATC is $20 and AVC is $15. At quantity 45 the cost curves have different values.',
+ 'PC-08-integration.webp':'Market supply and demand meet at quantity 100 thousand and price $25. The firm panel shows only MC, ATC and AVC; it has no revenue line or selected output. At quantity 50, rising MC equals ATC of $25 at the ATC minimum, and AVC is $17.',
+ 'pc_market_firm_1-integration.webp':'The market supply and demand curves meet at quantity 75 and price $45. The firm panel contains MC, ATC and AVC but no revenue line. Rising MC reaches $45 at approximately 62 units, where ATC and AVC are below $45.',
+ 'pc_market_firm_2-integration.webp':'The market supply and demand curves meet at quantity 80 and price $42. The firm panel contains MC, ATC and AVC but no revenue line. Its rising MC portion intersects the $42 level above ATC and AVC.'
+}
+(HERE/'variant_descriptions.json').write_text(json.dumps(descriptions,indent=2,ensure_ascii=False)+'\n',encoding='utf8')
+print('Reviewed',len(d['questions']),'draft changed',sum(bool(r['patch']) for r in d['questions'].values()))

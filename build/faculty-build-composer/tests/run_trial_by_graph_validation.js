@@ -1,6 +1,6 @@
 const {assertCanonicalIntegrity}=require('./composer-integrity-contracts.js');
 const fs=require('fs');
-const micro=require('./microeconomics-student-wording-approved-revisions.js');
+const micro=require('./graph-playthrough-approved-revisions.js');
 const path=require('path');
 const vm=require('vm');
 const crypto=require('crypto');
@@ -129,6 +129,8 @@ function runtimeDeckCheck(composition,target){
   const ordinaryIds=new Set(Object.values(library.concepts).flatMap(m=>Object.values(m.questions||{}).flat()).map(q=>String(q.id)));
   const microGraphDelta=micro.ledger.changes.filter(c=>ordinaryIds.has(c.id)&&c.fields.includes('graphRequired')).reduce((n,c)=>n+Number(c.after.graphRequired===true)-Number(c.before.graphRequired===true),0);
   const macroEditorialGraphDelta=micro.macroEditorialLedger.changes.filter(c=>ordinaryIds.has(c.id)).reduce((n,c)=>n+Number(c.afterRecord.graphRequired===true)-Number(c.beforeRecord.graphRequired===true),0);
+  const playthroughGraphIds=new Set(micro.graphPlaythroughLedger.changes.filter(c=>c.afterRecord.graphRequired===true&&c.beforeRecord.graphRequired!==true).map(c=>c.id));
+  const playthroughGraphDelta=micro.graphPlaythroughLedger.changes.filter(c=>ordinaryIds.has(c.id)).reduce((n,c)=>n+Number(c.afterRecord.graphRequired===true)-Number(c.beforeRecord.graphRequired===true),0);
   let flagged=0, flaggedOutsideAudit=0, flaggedWithoutImage=0;
   for(const module of Object.values(library.concepts)){
     for(const items of Object.values(module.questions||{})){
@@ -137,7 +139,7 @@ function runtimeDeckCheck(composition,target){
         if(q.graphRequired===true){
           flagged++;
           const id=String(q.canonicalId||q.id||q.questionId||'');
-          if(!auditIds.has(id) && !phase3eIds.has(id) && !externalitiesIds.has(id) && !publicGoodsIds.has(id) && !factorMarketIds.has(id) && !consumerChoiceIds.has(id) && !inequalityIds.has(id) && !savingInvestmentIds.has(id) && !qualityGraphIds.has(id) && !foundationsGraphIds.has(id) && !openEconomyGraphIds.has(id) && !microGraphIds.has(id) && !macroGraphIds.has(id)) flaggedOutsideAudit++;
+          if(!auditIds.has(id) && !phase3eIds.has(id) && !externalitiesIds.has(id) && !publicGoodsIds.has(id) && !factorMarketIds.has(id) && !consumerChoiceIds.has(id) && !inequalityIds.has(id) && !savingInvestmentIds.has(id) && !qualityGraphIds.has(id) && !foundationsGraphIds.has(id) && !openEconomyGraphIds.has(id) && !microGraphIds.has(id) && !macroGraphIds.has(id) && !playthroughGraphIds.has(id)) flaggedOutsideAudit++;
           if(!q.image) flaggedWithoutImage++;
         }
       }
@@ -146,14 +148,19 @@ function runtimeDeckCheck(composition,target){
   if(auditIds.size!==612) issues.push(`audit id count ${auditIds.size}`);
   if(qualityGraphIds.size!==23) issues.push(`quality remediation graph id count ${qualityGraphIds.size}`);
   if(foundationsGraphIds.size!==23+bankReviewGraphIds.size) issues.push(`foundations remediation graph id count ${foundationsGraphIds.size}`);
-  if(flagged!==1055+openExpectedGraphs+bankReviewGraphDelta+microGraphDelta+macroGraphIds.size+macroEditorialGraphDelta) issues.push(`graphRequired count ${flagged}`);
+  if(flagged!==1055+openExpectedGraphs+bankReviewGraphDelta+microGraphDelta+macroGraphIds.size+macroEditorialGraphDelta+playthroughGraphDelta) issues.push(`graphRequired count ${flagged}`);
   if(flaggedOutsideAudit) issues.push(`flags outside audited set ${flaggedOutsideAudit}`);
   if(flaggedWithoutImage) issues.push(`flags without image ${flaggedWithoutImage}`);
 
   const allEight=core.compose(library,recipe('perfect-competition',[...core.MODE_ORDER]));
   if(allEight.errors.length) issues.push(...allEight.errors.map(x=>`all-eight: ${x}`));
   if(allEight.validation.modes.some(m=>!m.ok)) issues.push('all-eight preflight failed');
-  if(allEight.counts.graphSafe!==76) issues.push(`perfect competition graphSafe ${allEight.counts.graphSafe}`);
+  // The bounded playthrough review admits 26 previously unflagged ordinary PC
+  // items. The four legacy mon_core remaps are expressly not added.
+  if(allEight.counts.graphSafe!==102) issues.push(`perfect competition graphSafe ${allEight.counts.graphSafe}`);
+  for(const id of ['P62G-MON-H-001','P62G-MON-H-002','P62G-MON-H-003','P62G-MON-H-004']){
+    if(playthroughGraphIds.has(id)) issues.push(`legacy mon_core was automatically admitted: ${id}`);
+  }
   const trialValidation=allEight.validation.modes.find(m=>m.mode==='trialGraph');
   if(!trialValidation?.ok) issues.push('trialGraph validation failed');
   if(trialValidation?.requirements?.length!==1 || trialValidation.requirements[0].pool!=='graphSafe' || trialValidation.requirements[0].minimum!==10) issues.push('trialGraph requirement mismatch');

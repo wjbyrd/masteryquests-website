@@ -1,0 +1,61 @@
+from review_tools import *
+d=load()
+for g in range(67,83):review(d,g,'Read every current task, alternative and feedback. Public-good sums and policy comparisons depend on plotted marginal benefits/costs. Firm tasks distinguish output choice, cost recovery, markup, excess capacity and entry. Remove compressed wording and calibrate the actual reasoning.')
+visual(d,range(67,83),'Viewed actual graphs: public-good and policy quantities, benefit/cost values and units are readable. Monopolistic-competition prices, marginal costs and output guides are explicitly labeled, including legacy Q1/Q2 values; no hidden precision is needed.')
+edits={
+'42083':('What quantity of gardens is socially efficient? Which marginal benefit and cost must be equal?','medium'),
+'42085':('What subsidy per garden would align private incentives with the external benefit shown?',None),
+'42086':(None,'elite'),
+'42092':('What daily quantity of transit rides is socially efficient? Which marginal benefit and cost must be equal?','medium'),
+'42093':('At the socially efficient quantity, what price do riders pay and what amount do providers receive? What does the difference measure?',None),
+'42094':('What subsidy per ride would align private incentives with the external benefit shown?',None),
+'42096':('A regulator says the dashed, tax-adjusted curve achieves full efficiency because it intersects MPC. How much of the private-social benefit gap remains, and how far is the resulting quantity from the efficient quantity?','hard'),
+'42103':('Compare the taxed quantity with the unregulated and socially efficient quantities. How much overconsumption remains, and has the tax partly or fully corrected the problem?','hard'),
+'42164':(None,'medium'),
+'42179':('A fund expands radio programming from the Private Benefit–MC intersection to the MSB–MC intersection. Administration uses $10,000 of real resources each week; financing transfers have no resource cost. What is the net social gain, and why does it differ from the money collected to finance the programs?','elite'),
+'42182':(None,'medium'),
+'42186':('A new method lowers marginal cost by $15 million per mile at every quantity, with MSB unchanged. Treat quantity as continuous. How many miles of protection should the council now provide, and which marginal comparison determines the answer?',None),
+'42189':(None,'elite'),
+'42195':('At four fireworks displays, what is the two neighborhoods\u2019 combined marginal benefit? Explain why their benefits are added vertically.',None),
+'42196':('A third neighborhood receives a constant marginal benefit of $10,000 per fireworks display. Costs and the two existing benefit curves do not change. Treat quantity as continuous. How many displays are now efficient, and how should the third neighborhood\u2019s benefit be included?',None),
+'42197':('At four fireworks displays, what is the two neighborhoods\u2019 combined marginal benefit? Should their demands be added vertically or horizontally?','medium'),
+'42203':('At the marked number of radio hours, how much does each group value one additional hour? Should their benefits or their hours be added?',None),
+'42204':(None,'medium'),
+'42206':('At 40 radio hours, how much marginal benefit would be missed by counting only Group A? Why should Group B\u2019s benefit also be included?','medium'),
+'42207':('At the marked number of radio hours, how much does each group value one additional hour? How should their values be combined for this nonrival service?','medium'),
+'P62H-MCMP-EL-031':('Calculate the firm\u2019s current economic profit. If this profit attracts entry, how will incumbent demand adjust in the long run?','hard'),
+'P62H-MCMP-EL-032':('At the profit-maximizing output, how much does price exceed marginal cost? What does this imply about allocative efficiency?',None),
+'P62H-MCMP-H-032':(None,'medium'),
+'P62H-MCMP-L-091':('Calculate the firm\u2019s current economic profit. If entry eliminates that profit, where will demand meet ATC relative to the new MR = MC output?','hard'),
+'P62H-MCMP-EL-033':('The graph shows the long-run outcome after short-run profit attracted entry. What price does the firm charge now? How did entry change its demand and economic profit?',None),
+'P62H-MCMP-H-034':('Calculate revenue at the profit-maximizing output. Does it cover all economic costs, including the owner\u2019s normal return?',None),
+'P62H-MCMP-L-092':('A student says zero economic profit makes the firm both allocatively and productively efficient. Calculate its markup over marginal cost and compare its output with the minimum-ATC output. Does the graph support the claim?','hard'),
+'P62H-MCMP-B3-055':('How much excess capacity does the firm have? Does producing below minimum-ATC output mean that it earns an economic loss?',None),
+'P62H-MCMP-EL-034':('Calculate the firm\u2019s markup over marginal cost and its excess capacity. What does each tell us about allocative and productive efficiency?',None),
+'P62H-MCMP-EL-035':('The graph shows the long-run outcome after short-run profit attracted entry. What price does the firm now charge, and how did entry change its demand?',None),
+'P62H-MCMP-EL-036':('What output maximizes this firm\u2019s profit? Why would expanding to the minimum-ATC output reduce profit?','hard'),
+'P62H-MCMP-EL-037':('A policymaker says zero profit rules out further gains from trade. Calculate the markup and excess capacity shown. What can the graph establish about efficiency, and what information about cost recovery and product variety would a policy judgment still require?',None),
+'P62H-MCMP-H-037':('What output maximizes this firm\u2019s profit? Why would expanding to the minimum-ATC output reduce profit?',None),
+'P62H-MCMP-H-038':('How much excess capacity does the firm have? Does producing below minimum-ATC output mean that it earns an economic loss?',None),
+'P62H-MCMP-H-039':('At the profit-maximizing output, how much does price exceed marginal cost? What does this imply about allocative efficiency?',None),
+'P62H-MCMP-L-093':('Suppose the firm must charge marginal cost at its current output, with output and costs held fixed. Calculate its economic loss. What does this reveal about recovering total costs through marginal-cost pricing?','hard'),
+'P62H-MCMP-L-094':('The graph shows the outcome after entry eliminated short-run profit. What price does the firm now charge? Explain how entry changed demand and profit, and whether it also eliminated excess capacity.','hard'),
+'P62H-MCMP-L-095':('A proposal would require output at minimum ATC and price equal to MC. Calculate the firm\u2019s current markup and excess capacity. What do these reveal, and what limits on the graph\u2019s evidence matter when evaluating the proposal?','elite'),
+'P62H-MCMP-EL-017':('The firm considers expanding from Q1 to the minimum-ATC output Q2. What is Q1, and how would producing the additional units affect profit?','hard'),
+'P62H-MCMP-H-013':('At Q1, calculate the markup over marginal cost. Does the firm earn economic profit, and is it producing at minimum ATC?',None),
+'P62H-MCMP-H-015':('At Q1, what price does the firm charge? Which cost comparison establishes zero economic profit?','medium'),
+'P62H-MCMP-H-016':('The graph shows the long-run result after profit attracted entry. What price does the firm charge, and how did entry eliminate its economic profit?',None),
+'P62H-MCMP-EL-021':('Calculate the markup at Q1. Why can the firm earn zero economic profit while still being allocatively inefficient?','hard'),
+'P62H-MCMP-H-017':('Calculate the markup at Q1. Why can the firm earn zero economic profit while still being allocatively inefficient?',None),
+'P62H-MCMP-EL-023':('The graph shows the long-run result after profit attracted entry. What price does the firm charge, and how did entry eliminate its economic profit?',None),
+'P62H-MCMP-H-019':(None,'medium'),
+'P62H-MCMP-H-020':('What price does the firm charge in the long-run position shown? Why is there no further incentive to enter?','medium'),
+'P62H-MCMP-EL-025':('Calculate the markup at Q1. How can the firm charge more than marginal cost and still earn zero economic profit?',None)}
+for id,(stem,tier) in edits.items():patch(d,id,stem,tier)
+patch(d,'P62H-MCMP-L-093',feedback='At Q = 36, MC is $15.50 and ATC is $27. With output held fixed, charging MC gives profit (15.50−27) × 36 = −$414. This price does not cover total economic cost. It does not establish an efficient quantity: the demand curve still shows marginal willingness to pay above MC at this fixed output. A full policy analysis must allow quantity to respond.',reason='Replaced a misleading suggestion that setting price equal to MC at fixed quantity makes marginal social value equal marginal cost. Preserved the cost-recovery calculation and explicit fixed-output assumption.')
+patch(d,'P62H-MCMP-H-014','Demand shifts outward so buyers will pay $5 more at every quantity. Costs stay fixed. If the firm initially keeps output at Q1, what profit does it earn? How would entry then affect incumbent demand?',options=[
+'$120; entry can reduce incumbent demand after short-run profit appears.',
+'$100; entry can reduce incumbent demand after short-run profit appears.',
+'$100; demand must return immediately to its original position before entry occurs.',
+'$120; demand must return immediately to its original position before entry occurs.'],feedback='Initially Q1 = 20 and P = ATC = $70. At the same output after the shift, price is $75, so profit is (75−70) × 20 = $100. This profit can attract entry, which adds substitutes and reduces incumbent demand over time.',reason='Replaced an unrelated starting-price lookup with an explicit $5 demand shift and profit calculation that supplies the economic reason for entry. The plotted initial quantity and cost recovery are both necessary.')
+save(d)

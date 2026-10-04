@@ -250,7 +250,7 @@ const POOL_MINIMUMS = {
 const MODE_REQUIREMENTS = {
   standard: ['easy', 'medium', 'hard', 'easyBoss', 'mediumBoss', 'finalBoss', 'repair', 'bridge'],
   timed: ['easy', 'medium', 'hard', 'repair', 'bridge'],
-  exam: ['easy', 'medium', 'hard', 'repair', 'bridge'],
+  exam: ['easy', 'medium', 'hard', 'easyBoss', 'mediumBoss', 'finalBoss', 'repair', 'bridge'],
   quiz: ['easy', 'medium', 'hard'],
   unlimited: ['easy', 'medium', 'hard', 'repair', 'bridge'],
   legendary: ['legendary', 'legendaryBoss'],
@@ -840,7 +840,15 @@ function validateFacultyQuestionRecord(question, poolName, availableAssets){
     easy: 'easy', medium: 'medium', hard: 'hard', elite: 'elite', legendary: 'legendary',
     easyBoss: 'easy', mediumBoss: 'medium', finalBoss: 'hard', legendaryBoss: 'legendary'
   }[normalizedPool];
-  if(poolDifficulty && effectiveDifficulty && effectiveDifficulty !== poolDifficulty){
+  // A checkpoint's stage is distinct from the cognitive difficulty of its
+  // question. Editorial recalibration must not move an opening/final checkpoint.
+  // Ordinary pools still require an exact difficulty match.
+  const recordedCheckpointPool = question.checkpointPool || null;
+  if(recordedCheckpointPool && !['easyBoss', 'mediumBoss', 'finalBoss', 'legendaryBoss'].includes(recordedCheckpointPool)) invalidFields.push('checkpointPool');
+  const stagePool = ['easyBoss', 'mediumBoss', 'finalBoss', 'legendaryBoss'].includes(normalizedPool);
+  if(stagePool && recordedCheckpointPool && normalizedPool !== recordedCheckpointPool){
+    invalidFields.push('pool/checkpoint-stage');
+  } else if(poolDifficulty && effectiveDifficulty && !(stagePool && recordedCheckpointPool) && effectiveDifficulty !== poolDifficulty){
     invalidFields.push('pool/difficulty');
   }
 
@@ -1358,6 +1366,10 @@ function routeMapInto(target, source, index, conceptId, assetConceptId = concept
 }
 
 function bossDifficulty(question){
+  if(question && !question.isCheckpointChallenge){
+    const stageDifficulty = {easyBoss:'easy', mediumBoss:'medium', finalBoss:'hard'}[question.checkpointPool];
+    if(stageDifficulty) return stageDifficulty;
+  }
   const raw = String(question?.canonicalDifficulty ?? question?.difficulty ?? '').toLowerCase();
   if(raw === 'easy' || raw === 'easyboss') return 'easy';
   if(raw === 'medium' || raw === 'mediumboss') return 'medium';
