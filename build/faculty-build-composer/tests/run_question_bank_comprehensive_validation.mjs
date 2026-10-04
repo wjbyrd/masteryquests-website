@@ -8,7 +8,7 @@ import {loadComposerLibrary,collectComposerQuestions,auditQuestionConstruction} 
 const require=createRequire(import.meta.url),core=require('../composer-core.js');
 const integrity=require('./composer-integrity-contracts.js');
 const approved=require('./general-economics-approved-revisions.js');
-const micro=require('./general-economics-construct-approved-revisions.js');
+const micro=require('./microeconomics-editorial-approved-revisions.js');
 const out='validation_artifacts/question_bank_audit_20260919';
 const resultOut='validation_artifacts/macroeconomics_consolidated_cleanup';
 fs.mkdirSync(resultOut,{recursive:true});

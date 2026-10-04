@@ -1,6 +1,6 @@
 const {assertCanonicalIntegrity}=require('./composer-integrity-contracts.js');
 const fs=require('fs');
-const micro=require('./general-economics-construct-approved-revisions.js');
+const micro=require('./microeconomics-editorial-approved-revisions.js');
 const path=require('path');
 const vm=require('vm');
 const root=path.resolve(__dirname,'..');
