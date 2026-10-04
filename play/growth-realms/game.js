@@ -1,3 +1,4 @@
+import {resetAmbient} from './map-engine.js';
 import {districtAnchor} from './district-layout.js';
 import { GAME_CONFIG as G, GAME_BALANCE as B, CYCLES, CATEGORIES } from './config.js';
 import { createCities, allocationTotal, validAllocation, consequence, gapReport, bottlenecks } from './model.js';
@@ -28,6 +29,7 @@ const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
 export const exportRun = () => snapshotRun(run);
 function announce(message) { $('#announcement').textContent = message; }
 function reset() {
+  resetAmbient();
   onboardingStep = 'start'; coachDismissed = false; challengeStage = 'pending'; dismissedCheckIns.clear();
   cancelAnimationFrame(animationFrame);
   clearTimeout(feedbackTimer);
@@ -100,12 +102,12 @@ function renderAdvisor() {
 }
 function positionDialogue(){
   const panel=$('#advisor-panel');if(!panel||panel.hidden)return;
-  const host=panel.closest('[data-city-map]'),bounds=host.getBoundingClientRect();
+  const host=panel.classList.contains('rival-reveal')?panel.closest('.isometric-map'):panel.closest('[data-city-map]'),bounds=host.getBoundingClientRect();
   panel.dataset.docked='false';
-  panel.style.setProperty('--speaker-left',`${Math.max(8,bounds.left+10)}px`);
+  panel.style.setProperty('--speaker-left',`${panel.classList.contains('rival-reveal')?10:Math.max(8,bounds.left+10)}px`);
   panel.style.setProperty('--speaker-width',`${Math.min(440,bounds.width-20)}px`);
   const box=panel.getBoundingClientRect();
-  const collides=[...document.querySelectorAll('[data-map-district],.district-local:not([hidden])')].some(e=>{
+  const collides=[...document.querySelectorAll('[data-map-district],.district-local:not([hidden]),.map-growth-badge')].some(e=>{
     const r=e.getBoundingClientRect();return box.left<r.right&&box.right>r.left&&box.top<r.bottom&&box.bottom>r.top;
   });
   panel.dataset.docked=String(innerWidth<900||innerHeight<=650||collides);
@@ -117,10 +119,14 @@ function showStagedDialogue(){
 }
 // Let the responsive grid and map dock settle before measuring collision boxes.
 window.addEventListener('resize',()=>requestAnimationFrame(()=>{positionLocalControls();positionDialogue();}));
+const revealComparison=()=>run&&run.currentCycle===G.rivalRevealRound&&phase()!=='finished';
+function mapGrowthBadge(city){const last=city.history.at(-1);return revealComparison()?`<div class="map-growth-badge" data-growth-city="${city.id}"><b>${esc(city.name)} · ${city.id===run.playerCity?'You':'Rival'}</b><span>Round ${last?.cycle||0} · productivity growth</span><strong>${signed(city.productivityGrowthRate,1)}%</strong></div>`:'';}
 function renderRace() {
   $('#rivalry-score').hidden=!rivalRevealed(run)||phase()==='finished';
   if(!rivalRevealed(run)){$('#rivalry-score').innerHTML='';return;}
   const race=raceResult(run);
+  $('#rivalry-score').dataset.reveal=String(revealComparison());
+  if(revealComparison()){$('#rivalry-score').innerHTML=`<div class="race-goal"><strong>${roleGoal(run)}</strong></div>`;return;}
   $('#rivalry-score').innerHTML=`<div class="race-goal"><strong>${roleGoal(run)}</strong><span>${race.levelTied?'Cities level':race.overtaken?'Rivermark leads':'Meridian leads'} · gap ${fmt(Math.abs(race.gap.finish)*100,1)}%</span></div><div class="race-scores">${[race.player,race.rival].map(c=>`<div><span>${esc(c.name)} · ${c.id===run.playerCity?'You':'Rival'} · growth</span><strong>${signed(c.score,1)}%</strong></div>`).join('')}</div>`;
 }
 function renderHUD() {
@@ -172,7 +178,7 @@ function positionLocalControls(){
   const x=Math.max(box.left+8,Math.min(box.right-width-8,(selected.left+selected.right-width)/2));
   const midY=(selected.top+selected.bottom-height)/2;
   const candidates=[[x,selected.bottom+6],[x,selected.top-height-6],[selected.left-width-6,midY],[selected.right+6,midY],[selected.left-width-6,selected.top-height-6],[selected.right+6,selected.top-height-6],[selected.left-width-6,selected.top],[selected.right+6,selected.top],[selected.left-width-6,selected.top-30],[selected.right+6,selected.top-30]];
-  const targets=[...map.querySelectorAll('[data-map-district]')].map(e=>e.getBoundingClientRect());
+  const targets=[...host.querySelectorAll('[data-map-district],.map-growth-badge')].map(e=>e.getBoundingClientRect());
   const point=candidates.find(([x,y])=>x>=box.left+8&&x+width<=box.right-8&&y>=box.top+8&&y+height<=box.bottom-8&&!targets.some(r=>x<r.right&&x+width>r.left&&y<r.bottom&&y+height>r.top));
   control.dataset.docked=String(!point);
   if(!point&&innerWidth>=900){control.style.setProperty('--local-dock-left',`${Math.max(470,Math.min(host.clientWidth-330,selected.left-outer.left))}px`);}
@@ -189,8 +195,8 @@ function renderMaps() {
     const condition=city.constraints.resourceShortage?'Resource strain':'Resources secure';
     return `<article class="city-panel" data-city-map="${city.id}" data-owner="${options.owner}">
       ${view==='combined'?`<header class="city-heading"><h2>${esc(city.name)}</h2><span class="city-condition">${condition}</span></header>`:''}
-      <div class="isometric-map"><span class="map-condition">${condition}</span>${renderCityMap(city,options)}${localControls(city)}</div>
-      <div class="character-dock"></div><div class="map-stats"><div><span>OUTPUT / WORKER</span><strong>${fmt(city.outputPerWorker,1)}</strong></div><div><span>PRODUCTIVITY GROWTH</span><strong>${signed(city.productivityGrowthRate,1)}%</strong></div><div><span>CAPACITY COVERAGE</span><strong>${fmt(city.resourceAdequacy*100)}%</strong></div></div>
+      <div class="isometric-map" data-reveal="${!!revealComparison()}">${revealComparison()?mapGrowthBadge(city):`<span class="map-condition">${condition}</span>`}${renderCityMap(city,options)}${localControls(city)}<div class="character-dock"></div></div>
+      <div class="map-stats"><div><span>OUTPUT / WORKER</span><strong>${fmt(city.outputPerWorker,1)}</strong></div><div><span>PRODUCTIVITY GROWTH</span><strong>${signed(city.productivityGrowthRate,1)}%</strong></div><div><span>CAPACITY COVERAGE</span><strong>${fmt(city.resourceAdequacy*100)}%</strong></div></div>
       <div class="city-tools">${contextualPanel(city)}${diagnostics.length?`<div class="map-diagnostics" aria-label="Economic conditions">${diagnostics.map(d=>`<details class="condition-badge"><summary>${esc(d.label)} · ${esc(CATEGORIES.find(c=>c.id===d.category).short)}</summary><p>${esc(d.detail)}</p></details>`).join('')}</div>`:''}</div>
     </article>`;
   }).join('');
@@ -238,7 +244,7 @@ function renderComparison() {
   const metrics=[['Output','output',0,''],['Output / worker','outputPerWorker',1,''],['Capital / worker','capitalPerWorker',1,''],['Technology index','technology',0,'',B.technologyDisplayScale],['Education','education',0,''],['Labor / capacity','labor',0,''],['Output growth','growthRate',1,'%'],['Productivity growth','productivityGrowthRate',1,'%'],['Resource utilization','resourceUtilization',0,'%',100],['Technology adoption','technologyAdoption',0,'%',100]];
   const gap=gapReport(run?.initialCities||previewCities,cities());
   const direction=gap.label==='Gap narrowed'?'GAP NARROWING':gap.label==='Gap widened'?'GAP WIDENING':'LITTLE CHANGE';
-  $('#comparison-body').innerHTML=`<div class="strategic-comparison">${cities().map(c=>`<section><h3>${esc(c.name)}</h3><dl><div><dt>Output / worker</dt><dd>${fmt(c.outputPerWorker,1)}</dd></div><div><dt>Current growth <small>(output / worker)</small></dt><dd>${signed(c.productivityGrowthRate,1)}%</dd></div><div><dt>Technology</dt><dd>${fmt(c.technology*B.technologyDisplayScale)}</dd></div><div><dt>Current constraint</dt><dd class="constraint-summary">${visualState(c).diagnostics.map(d=>esc(d.label)).join(' · ')||'None active'}</dd></div></dl></section>`).join('')}</div><div class="strategic-gap"><h3>Productivity gap</h3><p>Starting gap: <strong>${fmt(Math.abs(gap.start)*100,1)}%</strong><span aria-hidden="true"> → </span>Current gap: <strong>${fmt(Math.abs(gap.finish)*100,1)}%</strong></p><strong>${direction}</strong></div><details id="detailed-comparison"><summary>View detailed comparison</summary><div class="comparison-grid">${cities().map(c=>`<section><h3>${esc(c.name)}</h3><dl>${metrics.map(([label,key,digits,unit,scale=1])=>`<div><dt>${label}</dt><dd>${fmt(c[key]*scale,digits)}${unit}${key==='labor'?` / ${fmt(c.laborCapacity)}`:''}</dd></div>`).join('')}</dl><p class="constraint-note">${bottlenecks(c).map(esc).join(' ')||'No active bottlenecks.'}</p></section>`).join('')}</div><p class="comparison-note">The relative gap uses Meridian’s output per worker as its reference. Resource utilization above 100% constrains production. Technology adoption measures usable methods before equipment is considered.</p></details>`;
+  $('#comparison-body').innerHTML=`<div class="strategic-comparison">${cities().map(c=>`<section><h3>${esc(c.name)}</h3><dl><div><dt>Output / worker</dt><dd>${fmt(c.outputPerWorker,1)}</dd></div><div><dt>Growth <small>(output / worker · round ${c.history.at(-1)?.cycle||0})</small></dt><dd>${signed(c.productivityGrowthRate,1)}%</dd></div><div><dt>Bottleneck</dt><dd class="constraint-summary">${visualState(c).diagnostics.filter(d=>['resourceShortage','technologyAdoption','skillsUnderused'].includes(d.key)).map(d=>esc(d.label)).join(' · ')||'No active constraint'}</dd></div></dl></section>`).join('')}</div><div class="strategic-gap"><h3>Productivity gap</h3><p>Starting gap: <strong>${fmt(Math.abs(gap.start)*100,1)}%</strong><span aria-hidden="true"> → </span>Current gap: <strong>${fmt(Math.abs(gap.finish)*100,1)}%</strong></p><strong>${direction}</strong></div><details id="detailed-comparison"><summary>View details</summary><div class="comparison-grid">${cities().map(c=>`<section><h3>${esc(c.name)}</h3><dl>${metrics.map(([label,key,digits,unit,scale=1])=>`<div><dt>${label}</dt><dd>${fmt(c[key]*scale,digits)}${unit}${key==='labor'?` / ${fmt(c.laborCapacity)}`:''}${key==='technology'?`<small>${signed((c.technology-(c.history.at(-1)?.startState.technology??c.technology))*scale,digits)} last round</small>`:''}</dd></div>`).join('')}</dl><p class="constraint-note">${bottlenecks(c).map(esc).join(' ')||'No active bottlenecks.'}</p></section>`).join('')}</div><p class="comparison-note">The relative gap uses Meridian’s output per worker as its reference. Resource utilization above 100% constrains production. Technology adoption measures usable methods before equipment is considered.</p></details>`;
 }
 function allocationList(allocation) {
   return `<dl class="allocation-report">${CATEGORIES.map(c => `<div><dt>${c.short}</dt><dd>${allocation[c.id]}</dd></div>`).join('')}</dl>`;

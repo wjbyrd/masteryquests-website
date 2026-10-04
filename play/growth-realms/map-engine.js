@@ -1,11 +1,14 @@
 import { MAP, CAMERA, ASSETS, SUPPORT, BUILDING_VISUALS, ROADS, DISTRICT_HITBOX, UNIT_VISUALS, SPRITE_ROUTES, LAYERS, iso, visualState, constructionStage } from './visual-config.js';
 import { CATEGORIES } from './config.js';
 import { routeSample } from './unit-routes.js';
+import {createTraffic,syncTraffic,stepTraffic,distanceSample} from './traffic.js';
+import {drawWalker,walkPose} from './walking-sprites.js';
 import {groundContact, depthOrder, layoutAudit, buildingFootprint, unitFootprint, constructionWalks} from './scene-layout.js';
-import {PROTECTED_ROADS, SIDEWALKS, districtAnchor, ANNEX_SITES, ANNEX_SCALE, SERVICE_AREAS, CONSTRUCTION_VISUALS} from './district-layout.js';
+import {PROTECTED_ROADS, SIDEWALKS, FARM_FIELD, districtAnchor, ANNEX_SITES, ANNEX_SCALE, SERVICE_AREAS, CONSTRUCTION_VISUALS} from './district-layout.js';
 
 // One clock for all maps; static layers are cached, temporary layers are cleared.
-const instances = new Map(), images = new Map();
+const instances = new Map(), images = new Map(), trafficWorlds = new Map();
+export function resetAmbient(){trafficWorlds.clear();tick=0;}
 let ready, raf = 0, tick = 0, lastTime = 0, progress = 0, draws = 0;
 const motion = typeof matchMedia === 'function' ? matchMedia('(prefers-reduced-motion: reduce)') : null;
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -53,7 +56,8 @@ function sprite(ctx, key, frame, x, y, size, flip = false, alpha = 1) {
   ctx.restore();
 }
 export {sprite as drawAtlasSprite};
-function unitSprite(ctx, unit, direction, x, y) {
+function unitSprite(ctx, unit, direction, x, y, pose=8) {
+  if(unit==='worker'||unit==='students'){drawWalker(ctx,unit,direction,pose,x,y);return;}
   const v=UNIT_VISUALS[unit][direction];sprite(ctx,v.asset,v.frame,x,y,v.size,v.flip);
 }
 function clear(ctx) { ctx.clearRect(0, 0, MAP.width, MAP.height); }
@@ -83,6 +87,11 @@ function sidewalks(m){
 function roads(m) {
   const c=m.ctx.roads, level=m.state.roadLevel; clear(c);
   sidewalks(m);
+  groundRect(c,FARM_FIELD,'#9a9b58','#6d7743');
+  for(let j=10;j<16;j+=.4)line(c,iso(-2.4,j),iso(-.15,j),'#6b833f',3);
+  const route=SPRITE_ROUTES.farmTractor.points;
+  for(let n=0;n<route.length;n++){const a=route[n],b=route[(n+1)%route.length];groundRect(c,{minI:Math.min(a[0],b[0])-.35,maxI:Math.max(a[0],b[0])+.35,minJ:Math.min(a[1],b[1])-.35,maxJ:Math.max(a[1],b[1])+.35},'#b2a37b');}
+  groundRect(c,{minI:-.8,maxI:.45,minJ:13,maxJ:13.5},'#b2a37b');
   const color=ASSETS.roads[['dirt','dirt','improved','paved','arterial'][level]];
   for(const road of PROTECTED_ROADS)groundRect(c,road,color,level>=3?'#8b9290':'#a4a183');
   if(level>=3)for(let n=.5;n<ROADS.extent+1;n++){
@@ -92,8 +101,8 @@ function roads(m) {
     }
   }
   for(const center of [ROADS.spine,ROADS.east]){
-    groundRect(c,{minI:center-.5,maxI:center+.5,minJ:ROADS.river,maxJ:ROADS.river+1},'#89958d');
-    for(const i of [center-.5,center+.5])line(c,iso(i,ROADS.river),iso(i,ROADS.river+1),'#ccd0b3',3);
+    groundRect(c,{minI:center-.8,maxI:center+.8,minJ:ROADS.river,maxJ:ROADS.river+1},'#89958d');
+    for(const i of [center-.8,center+.8])line(c,iso(i,ROADS.river),iso(i,ROADS.river+1),'#ccd0b3',3);
   }
 }
 // Draw the measured source rectangle around the same ground anchor at every tier.
@@ -169,12 +178,27 @@ function construction(m,frame) {
 }
 function units(m,frame) {
   const c=m.ctx.units;clear(c);let count=0;const facings=[],objects=[...m.objects],moving=[];
-  const addUnit=(id,unit,sample)=>{const footprint=unitFootprint(unit,sample.point,sample.direction),foot=groundContact(footprint.maxI,footprint.maxJ);objects.push({id,foot,draw:ctx=>unitSprite(ctx,unit,sample.direction,foot.x,foot.y)});moving.push({id,point:sample.point,direction:sample.direction,foot,footprint});};
+  const addUnit=(id,unit,sample,traffic=null)=>{
+    const footprint=unitFootprint(unit,sample.point,sample.direction),foot=groundContact(footprint.maxI,footprint.maxJ);
+    let pose=8;
+    if(unit==='worker'||unit==='students'){
+      const previous=m.gaits.get(id),screen=iso(...sample.point);
+      const distance=previous?Math.hypot(screen[0]-previous.screen[0],screen[1]-previous.screen[1]):0;
+      const traveled=(previous?.direction===sample.direction?previous.distance:0)+distance;
+      pose=previous?.tick===frame?previous.pose:walkPose(traveled,distance>0&&!motion.matches);
+      m.gaits.set(id,{screen,direction:sample.direction,distance:traveled,pose,tick:frame});
+    }
+    objects.push({id,foot,draw:ctx=>unitSprite(ctx,unit,sample.direction,foot.x,foot.y,pose)});
+    moving.push({id,unit,point:sample.point,direction:sample.direction,foot,footprint,pose,...(traffic?{lane:traffic.lane,route:traffic.route,progress:traffic.progress,speed:traffic.actualSpeed,ahead:traffic.ahead,waiting:traffic.waiting}: {})});
+  };
+  syncTraffic(m.traffic,m.state.city);
+  if(m.trafficTick!==frame&&!motion.matches)stepTraffic(m.traffic,1/MAP.fps);
+  m.trafficTick=frame;
+  for(const v of m.traffic.vehicles){addUnit(v.id,v.unit,v,v);facings.push(v.id+':'+v.direction);count++;}
   for(const [name,r]of Object.entries(SPRITE_ROUTES)){
-    if(!r.category||m.state.city.buildings[r.category]<r.minLevel)continue;
-    if((m.state.city.constraints.resourceShortage||m.state.city.constraints.excessCapacity)&&name==='farmTractor')continue;
-    if(m.state.city.constraints.resourceShortage&&name==='researchService')continue;
-    const sample=routeSample(r,frame+count*19);addUnit(name,r.unit,sample);facings.push(name+':'+sample.direction);count++;
+    if(r.lane||!r.category||m.state.city.buildings[r.category]<r.minLevel)continue;
+    const sample=r.service?distanceSample(r,frame/MAP.fps*r.speed):routeSample(r,frame);
+    addUnit(name,r.unit,sample);facings.push(name+':'+sample.direction);count++;
   }
   if(!m.layout?.errors.length&&m.state.phase==='building')for(const d of m.state.districts.filter(d=>d.points>0)){
     const [i,j]=districtAnchor(m.state.city,d.id),[x,y]=iso(i,j);
@@ -223,7 +247,7 @@ export async function syncCityMaps(root, descriptors) {
   cancelAnimationFrame(raf);raf=0;observer?.disconnect();instances.clear();
   const elements=descriptors.map(({city,...options})=>({el:root.querySelector(`[data-map="${city.id}"]`),state:visualState(city,options)}));
   await assetsReady();
-  for(const {el,state} of elements){if(!el?.isConnected)continue;el.querySelector('.map-loading')?.remove();const ctx=Object.fromEntries(LAYERS.map(k=>{const c=el.querySelector(`[data-layer="${k}"]`).getContext('2d');c.imageSmoothingEnabled=false;return[k,c];}));const m={el,ctx,state,visible:true,born:performance.now()};instances.set(state.city.id,m);el.dataset.phase=state.phase;el.dataset.roadLevel=state.roadLevel;el.dataset.levels=state.districts.map(d=>`${d.id}:${d.level}`).join(',');el.dataset.priority=state.districts.filter(d=>d.dominant).map(d=>d.id).join(',');el.querySelector('.map-scene-description').textContent=state.districts.map(d=>`${d.id}: ${d.name}, level ${d.level}${d.partial?', next upgrade partly funded':''}.`).join(' ')+' '+state.diagnostics.map(d=>d.detail).join(' ');terrain(m);roads(m);buildings(m);ownership(m);paint(m);observer?.observe(el);}
+  for(const {el,state} of elements){if(!el?.isConnected)continue;el.querySelector('.map-loading')?.remove();const ctx=Object.fromEntries(LAYERS.map(k=>{const c=el.querySelector(`[data-layer="${k}"]`).getContext('2d');c.imageSmoothingEnabled=false;return[k,c];}));const traffic=trafficWorlds.get(state.city.id)||createTraffic();trafficWorlds.set(state.city.id,traffic);const m={el,ctx,state,traffic,trafficTick:tick,gaits:new Map(),visible:true,born:performance.now()};instances.set(state.city.id,m);el.dataset.phase=state.phase;el.dataset.roadLevel=state.roadLevel;el.dataset.levels=state.districts.map(d=>`${d.id}:${d.level}`).join(',');el.dataset.priority=state.districts.filter(d=>d.dominant).map(d=>d.id).join(',');el.querySelector('.map-scene-description').textContent=state.districts.map(d=>`${d.id}: ${d.name}, level ${d.level}${d.partial?', next upgrade partly funded':''}.`).join(' ')+' '+state.diagnostics.map(d=>d.detail).join(' ');terrain(m);roads(m);buildings(m);ownership(m);paint(m);observer?.observe(el);}
   restartClock();
 }
 export function setConstructionProgress(value){const prior=constructionStage(progress);progress=Math.max(0,Math.min(1,value));if(prior!==constructionStage(progress))for(const m of instances.values())if(m.state.phase==='building')buildings(m);}

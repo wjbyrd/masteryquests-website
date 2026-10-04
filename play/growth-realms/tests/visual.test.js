@@ -45,5 +45,5 @@ test('Asset and layer contract: complete atlases, six levels/category, bounded s
   assert.equal(LAYERS.length,9);
   for(const key of keys)assert.equal(BUILDING_VISUALS[key].levels.length,6);
   for(const a of Object.values(ASSETS).filter(a=>a.src)){const data=fs.readFileSync(new URL('../'+a.src,import.meta.url)),w=data.readUInt32BE(16),h=data.readUInt32BE(20);assert.equal(data[25],6,'RGBA PNG');for(const [x,y,sw,sh]of a.rects||[])assert.ok(x>=0&&y>=0&&x+sw<=w&&y+sh<=h);}
-  assert.equal(Object.keys(SPRITE_ROUTES).length,6);
+  assert.equal(Object.keys(SPRITE_ROUTES).length,8);
 });

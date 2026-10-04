@@ -34,7 +34,7 @@ try{
  assert.equal(await p.locator('[data-board=meridian] .district-status').count(),4);assert.match(await p.locator('[data-board=meridian]').innerText(),/Plan hidden/);
  const plan=(await getRun(p)).allocation;await p.locator('[data-city=meridian][data-map-district=capital]').click();assert.deepEqual((await getRun(p)).allocation,plan);
  await p.locator('#accept-challenge').click();await p.locator('#dismiss-advisor').click();await localAudit(p);
- await p.locator('#comparison>summary').click();assert.equal(await p.locator('.strategic-comparison dl>div').count(),8);await p.locator('#detailed-comparison>summary').click();assert.equal(await p.locator('#detailed-comparison .comparison-grid dl>div').count(),20);
+ await p.locator('#comparison>summary').click();assert.equal(await p.locator('.strategic-comparison dl>div').count(),6);await p.locator('#detailed-comparison>summary').click();assert.equal(await p.locator('#detailed-comparison .comparison-grid dl>div').count(),20);
  for(const width of [320,390,768,1440]){
   const touch=await browser.newPage({viewport:{width,height:900},hasTouch:true,isMobile:width<700});track(touch);await touch.goto(url);await startCity(touch,'rivermark');await waitMaps(touch);
   for(const key of keys){await touch.locator(`[data-map-district=${key}]`).tap();await localAudit(touch);assert.equal((await getRun(touch)).allocation[key],1);}

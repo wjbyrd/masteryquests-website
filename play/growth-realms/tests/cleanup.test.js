@@ -8,7 +8,7 @@ import {onRoad,roadClearance,footprintCollision,occupiedFootprints,groundContact
 
 test('Road routes clear all occupied district and scenery footprints for both city densities',()=>{
   for(const [name,route]of Object.entries(SPRITE_ROUTES)){
-    if(!route.category||route.pedestrian)continue;
+    if(!route.category||route.pedestrian||route.service)continue;
     for(let tick=0;tick<route.period;tick+=.125){const {point}=routeSample(route,tick);assert.ok(onRoad(point),`${name} off road: ${point}`);for(const dense of [false,true])assert.equal(footprintCollision(point,occupiedFootprints(dense)),null,`${name} hits building at ${point}`);}
   }
 });

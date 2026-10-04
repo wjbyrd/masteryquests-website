@@ -102,6 +102,16 @@ body[data-screen=game] .single-city,body[data-screen=game] .single-city .city-pa
 .race-goal>span{display:block;font-size:11px;color:var(--mq-muted)}
 .city-heading h2{line-height:1.1}.rivalry-score .race-scores strong{line-height:1.15}
 .region-section{overflow-anchor:none}
+.isometric-map{position:relative}
+.isometric-map .rival-reveal{position:absolute;left:10px;bottom:8px;z-index:20;max-width:calc(100% - 20px)}
+.isometric-map .character-dock .rival-reveal[data-docked=true]{position:relative;left:auto;bottom:auto}
+.map-growth-badge{position:absolute;right:10px;top:8px;z-index:16;background:var(--mq-navy);color:var(--mq-on-dark);border:1px solid var(--mq-highlight);border-radius:8px;padding:8px 11px;display:grid;gap:3px;pointer-events:none}
+.map-growth-badge b{font-size:12px}.map-growth-badge span{font-size:11px;color:var(--mq-on-dark-muted)}.map-growth-badge strong{font-size:23px;color:var(--mq-highlight)}
+.rivalry-score[data-reveal=true]{background:transparent;border:0;padding:2px 0;margin-bottom:6px}
+.comparison-grid dd small{display:block;font-size:12px;color:var(--mq-muted);font-weight:400;margin-top:3px}
+.strategic-comparison .constraint-summary{font-size:16px;color:var(--mq-blue);font-weight:700}
+@media(max-width:1100px){.map-growth-badge{position:relative;right:auto;top:auto;width:max-content;max-width:calc(100% - 16px);margin:8px 8px 4px auto}}
+@media(max-width:600px){.map-growth-badge{padding:5px 8px;right:5px;top:5px}.map-growth-badge b{font-size:11px}.map-growth-badge span{font-size:10px}.map-growth-badge strong{font-size:19px}}
 .report-analysis.report-learning-flow{grid-template-columns:minmax(0,1fr)}
 .learning-synthesis,.concept-check{padding:26px;margin-bottom:22px;min-width:0}
 .learning-synthesis h3,.concept-check h3{font-size:26px;line-height:1.2;margin:7px 0 20px}

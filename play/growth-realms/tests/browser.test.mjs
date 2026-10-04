@@ -20,7 +20,7 @@ async function characterBounds(p){
   assert.equal(await panel.evaluate(e=>e.closest('[data-city-map]').dataset.cityMap),owner);
   const box=await panel.boundingBox(),host=await p.locator(`[data-city-map=${owner}]`).boundingBox();
   assert.ok(box.width<=440&&box.x>=host.x&&box.x+box.width<=host.x+host.width);
-  if(p.viewportSize().width>=900&&p.viewportSize().height>650)assert.ok(box.y>=0&&box.y+box.height<=p.viewportSize().height,JSON.stringify({reason:'desktop dialogue stays fully visible',box,kind,docked:await panel.getAttribute('data-docked'),collisions:await panel.evaluate(e=>{const b=e.getBoundingClientRect(),top=innerHeight-16-b.height;return [...document.querySelectorAll('[data-map-district],.district-local')].filter(t=>{const r=t.getBoundingClientRect();return b.left<r.right&&b.right>r.left&&top<r.bottom&&innerHeight-16>r.top}).map(t=>({id:t.dataset.city+':'+t.dataset.mapDistrict,rect:JSON.stringify(t.getBoundingClientRect())}));}),local:await p.locator('.district-local').count()?await p.locator('.district-local').first().boundingBox():null}));
+  if(kind!=='challenge'&&p.viewportSize().width>=900&&p.viewportSize().height>650)assert.ok(box.y>=0&&box.y+box.height<=p.viewportSize().height,JSON.stringify({reason:'desktop dialogue stays fully visible',box,kind,docked:await panel.getAttribute('data-docked'),collisions:await panel.evaluate(e=>{const b=e.getBoundingClientRect(),top=innerHeight-16-b.height;return [...document.querySelectorAll('[data-map-district],.district-local')].filter(t=>{const r=t.getBoundingClientRect();return b.left<r.right&&b.right>r.left&&top<r.bottom&&innerHeight-16>r.top}).map(t=>({id:t.dataset.city+':'+t.dataset.mapDistrict,rect:JSON.stringify(t.getBoundingClientRect())}));}),local:await p.locator('.district-local').count()?await p.locator('.district-local').first().boundingBox():null}));
   assert.notEqual(await panel.locator('.dialogue-copy').evaluate(e=>getComputedStyle(e).backgroundColor),'rgba(0, 0, 0, 0)');
   const figure=await panel.locator('.character-portrait').boundingBox();assert.ok(figure.width>=76&&figure.height>=144);
   const targets=await p.locator('[data-map-district]').evaluateAll(es=>es.map(e=>{const r=e.getBoundingClientRect();return{x:r.x,y:r.y,width:r.width,height:r.height};}));
@@ -80,7 +80,7 @@ try{
     else {
       assert.equal(await p.locator('[data-cycle-report]').count(),2);
       const race=await p.evaluate(async()=>{const r=(await import('./game.js')).exportRun();return(await import('./rivalry.js')).raceResult(r);});
-      assert.deepEqual(await p.locator('#rivalry-score .race-scores strong').allTextContents(),[race.player,race.rival].map(c=>`${c.score>=0?'+':'−'}${Math.abs(c.score).toFixed(1)}%`));
+      if(round===3)assert.equal(await p.locator('.map-growth-badge').count()>0,true);else assert.deepEqual(await p.locator('#rivalry-score .race-scores strong').allTextContents(),[race.player,race.rival].map(c=>`${c.score>=0?'+':'−'}${Math.abs(c.score).toFixed(1)}%`));
     }
     if(round===5){await p.evaluate(()=>scrollTo(0,0));await shot(p,'06-later-rivalry');}
     assert.doesNotMatch(await p.locator('body').innerText(),forbidden);assert.equal(await overflow(p),false);

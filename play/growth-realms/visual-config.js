@@ -1,10 +1,10 @@
 // Presentation only. Model levels and cumulative investment are authoritative.
 import { GAME_BALANCE as B, CATEGORIES } from './config.js';
-import {DISTRICT_PARCELS, DISTRICT_SPRITES, ROAD_LAYOUT, WORKER_PATH, CAMPUS_WALK} from './district-layout.js';
+import {DISTRICT_PARCELS, DISTRICT_SPRITES, ROAD_LAYOUT, WORKER_PATH, CAMPUS_WALK, FARM_ROUTE} from './district-layout.js';
 
-export const MAP = { width: 1216, height: 736, tileWidth: 64, tileHeight: 32, fps: 8 };
+export const MAP = { width: 1344, height: 816, tileWidth: 64, tileHeight: 32, fps: 8 };
 // Crop only empty backdrop / outer terrain; district art stays inside the camera.
-export const CAMERA = { x: 16, y: 0, width: 1184, height: 704 };
+export const CAMERA = { x: 16, y: 0, width: 1312, height: 784 };
 export const LAYERS = ['terrain', 'water', 'roads', 'buildings', 'units', 'construction', 'ambient', 'ownership', 'resolution'];
 const atlas = (file, columns, rows) => ({ src: `assets/sprites/${file}.png`, columns, rows, temporary: true });
 export const ASSETS = {
@@ -12,6 +12,7 @@ export const ASSETS = {
   research: atlas('research', 3, 2), education: atlas('education', 3, 2),
   support: atlas('support', 4, 4),
   vehicles: { ...atlas('vehicles-directional', 4, 2), trim: true }, people: { ...atlas('people-directional', 2, 2), trim: true },
+  walk: {columns:38,rows:1,generated:true}, // Long Run cached poses, built by walking-sprites.js.
   // Code-native pixel tiles and effects share this replaceable palette contract.
   terrain: { grass: ['#7f9362', '#879c69', '#819766', '#8ca16e'], earth: '#5e6647', sand: '#b1a077' },
   water: { base: '#477e87', deep: '#386c79', light: '#8bb2ae', frames: 6 },
@@ -37,7 +38,7 @@ const names = {
 export const DISTRICTS = Object.fromEntries(Object.entries(DISTRICT_PARCELS.meridian).map(([id,p])=>[id,[p.anchorX,p.anchorY]]));
 export const CROSS_ROAD = ROAD_LAYOUT.cross;
 export const ROADS = ROAD_LAYOUT;
-export const DISTRICT_HITBOX = { width: 224, height: 192, offsetY: -40 };
+export const DISTRICT_HITBOX = { width: 224, height: 216, offsetY: -40 };
 const facings = (asset, rear, front, size) => ({
   NE: { asset, frame: rear, flip: false, size }, NW: { asset, frame: rear, flip: true, size },
   SW: { asset, frame: front, flip: false, size }, SE: { asset, frame: front, flip: true, size },
@@ -45,7 +46,7 @@ const facings = (asset, rear, front, size) => ({
 export const UNIT_VISUALS = {
   truck: facings('vehicles', 0, 1, 49), bus: facings('vehicles', 2, 3, 57),
   tractor: facings('vehicles', 4, 5, 43), van: facings('vehicles', 6, 7, 43),
-  worker: facings('people', 0, 1, 29), students: facings('people', 2, 3, 32),
+  worker: facings('walk', 14, 22, 25), students: facings('walk', 14, 22, 28),
 };
 // Ground dimensions exclude vehicle roofs and passenger height. Their rendered
 // bottom/front ground contact is derived from this footprint, not a magic Y shift.
@@ -55,14 +56,17 @@ export const BUILDING_VISUALS = Object.fromEntries(CATEGORIES.map(c => [c.id, {
   states: ['absent', 'site-prep', 'construction', 'complete', 'upgraded'],
   construction: ['prep', 'foundation', 'frame', 'finishing'],
 }]));
+const innerLane = [[ROADS.spine+.4, CROSS_ROAD+.4],[ROADS.east-.4,CROSS_ROAD+.4],[ROADS.east-.4,ROADS.front-.4],[ROADS.spine+.4,ROADS.front-.4]];
+const outerLane = [[ROADS.spine-.4,CROSS_ROAD-.4],[ROADS.spine-.4,ROADS.front+.4],[ROADS.east+.4,ROADS.front+.4],[ROADS.east+.4,CROSS_ROAD-.4]];
 export const SPRITE_ROUTES = {
-  factoryTruck: { category: 'capital', minLevel: 1, unit: 'truck', period: 88, points: [[ROADS.spine, CROSS_ROAD], [ROADS.east, CROSS_ROAD], [ROADS.east, ROADS.front], [ROADS.spine, ROADS.front]] },
-  campusBus: { category: 'education', minLevel: 2, unit: 'bus', period: 112, points: [[1, CROSS_ROAD], [ROADS.spine, CROSS_ROAD], [ROADS.spine, 1], [ROADS.spine, CROSS_ROAD]] },
-  farmTractor: { category: 'resources', minLevel: 1, unit: 'tractor', period: 144, points: [[1, ROADS.front], [ROADS.spine, ROADS.front], [ROADS.spine, CROSS_ROAD], [ROADS.spine, ROADS.front]] },
-  researchService: { category: 'research', minLevel: 1, unit: 'van', period: 128, points: [[ROADS.spine, ROADS.front], [ROADS.east, ROADS.front], [ROADS.east, CROSS_ROAD], [ROADS.east, ROADS.front]] },
-  campusStudents: { category: 'education', minLevel: 1, unit: 'students', pedestrian:true, period: 384, points: CAMPUS_WALK },
-  // Use the two service-facing edges; rear/right edges contain support buildings.
-  constructionWorker: { category: null, unit: 'worker', period: 160, points: WORKER_PATH },
+  factoryTruck: {category:'capital',minLevel:1,unit:'truck',lane:'clockwise',speed:1.7,offset:0,period:164,points:innerLane},
+  factoryDelivery: {category:'capital',minLevel:2,unit:'truck',lane:'clockwise',speed:1.7,offset:6,period:164,points:innerLane},
+  campusBus: {category:'education',minLevel:2,unit:'bus',lane:'clockwise',speed:2.3,offset:15,period:122,points:innerLane},
+  researchService: {category:'research',minLevel:1,unit:'van',lane:'counterclockwise',speed:1.45,offset:7,period:228,points:outerLane},
+  campusShuttle: {category:'education',minLevel:3,unit:'bus',lane:'counterclockwise',speed:2.3,offset:26,period:144,points:outerLane},
+  farmTractor: {category:'resources',minLevel:1,unit:'tractor',service:true,speed:.8,period:120,points:FARM_ROUTE},
+  campusStudents: {category:'education',minLevel:1,unit:'students',pedestrian:true,period:384,points:CAMPUS_WALK},
+  constructionWorker: {category:null,unit:'worker',pedestrian:true,period:192,points:WORKER_PATH},
 };
 export const DIAGNOSTICS = {
   resourceShortage: { category: 'resources', label: 'Resource strain', detail: 'Food, water, and utilities cannot keep up with production. Resource investment can ease the strain.' },
@@ -71,7 +75,7 @@ export const DIAGNOSTICS = {
   excessCapacity: { category: 'resources', label: 'Spare capacity', detail: 'Resource services have room to support more production. More capacity alone adds little productivity.' },
   capitalSaturation: { category: 'capital', label: 'Capital mature', detail: 'Capital saturation: additions improve an already mature industrial district.' },
 };
-export const iso = (i, j) => [608 + (i - j) * 32, 80 + (i + j) * 16];
+export const iso = (i, j) => [672 + (i - j) * 32, 80 + (i + j) * 16];
 export function intensity(points) { return points === 0 ? 0 : points <= 3 ? 1 : points <= 6 ? 2 : points <= 9 ? 3 : 4; }
 export function constructionStage(progress) { return ['site-prep', 'foundation', 'frame', 'finishing', 'complete'][Math.max(0, Math.min(4, Math.floor(progress * 5)))]; }
 export function visualState(city, { allocation = {}, pending = null, phase = 'planning', selected = null, owner = 'preview' } = {}) {

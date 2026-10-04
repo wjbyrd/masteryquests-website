@@ -9,13 +9,14 @@ page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()
 async function observe(){return page.evaluate(async()=>{
   const {rendererStats}=await import('/play/growth-realms/map-engine.js');
   const {onSidewalk,constructionWalks,contains,intersects}=await import('/play/growth-realms/scene-layout.js');
-  const {PROTECTED_ROADS}=await import('/play/growth-realms/district-layout.js');
+  const {PROTECTED_ROADS,FARM_FIELD}=await import('/play/growth-realms/district-layout.js');
   const directions=new Set(),failures=[];let pedestrians=0,workers=0,traffic=0,last=-1;
   const period=(await import('/play/growth-realms/visual-config.js')).SPRITE_ROUTES.campusStudents.period;const startTick=rendererStats().tick,until=performance.now()+65000;
   while(rendererStats().tick-startTick<period+2&&performance.now()<until){const s=rendererStats();if(s.tick!==last){last=s.tick;
     for(const city of s.states)for(const u of city.moving){
       if(u.id==='campusStudents'){pedestrians++;directions.add(u.direction);if(!onSidewalk(u.footprint)||PROTECTED_ROADS.some(r=>intersects(r,u.footprint)))failures.push('student off sidewalk');}
       else if(u.id.startsWith('worker:')){workers++;const id=u.id.split(':')[1];if(!constructionWalks(city.city,id).some(p=>contains(p,u.footprint))||PROTECTED_ROADS.some(r=>intersects(r,u.footprint)))failures.push('worker off service walk');}
+      else if(u.id==='farmTractor'){if(!contains(FARM_FIELD,u.footprint))failures.push('tractor off farm');}
       else{traffic++;if(!PROTECTED_ROADS.some(r=>contains(r,u.footprint)))failures.push('vehicle off road');}
       if([...city.layout.occupied,...city.layout.scenery].some(f=>intersects(f,u.footprint)))failures.push(`${u.id} hits occupied lot`);
     }

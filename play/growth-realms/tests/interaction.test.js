@@ -41,6 +41,6 @@ test('Every moving unit has distinct rear/front poses and four discrete facings'
 test('Walking is slower than every traffic route while preserving route geometry',()=>{
   const speeds=Object.fromEntries(Object.entries(SPRITE_ROUTES).map(([name,r])=>[name,r.points.map((a,i)=>{const b=r.points[(i+1)%r.points.length];return Math.hypot(a[0]-b[0],a[1]-b[1])*r.points.length/r.period*MAP.fps;})]));
   const walking=Math.max(...speeds.campusStudents,...speeds.constructionWorker);
-  const slowestTraffic=Math.min(...speeds.factoryTruck,...speeds.campusBus,...speeds.farmTractor,...speeds.researchService);
-  assert.ok(walking<slowestTraffic*.6);assert.ok(Math.min(...speeds.campusStudents)>.3);
+  const slowestTraffic=Math.min(...Object.values(SPRITE_ROUTES).filter(r=>r.lane).map(r=>r.speed));
+  assert.ok(walking<slowestTraffic*.6);assert.ok(walking<SPRITE_ROUTES.farmTractor.speed);assert.ok(SPRITE_ROUTES.farmTractor.speed<slowestTraffic*.6);assert.ok(Math.min(...speeds.campusStudents)>.3);
 });

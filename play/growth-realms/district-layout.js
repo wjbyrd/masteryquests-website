@@ -9,36 +9,39 @@ const parcel = (anchorX, anchorY) => ({
   expansionLimits: {negativeI: 2.95, positiveI: 2.95, negativeJ: 2.95, positiveJ: 2.95},
 });
 export const DISTRICT_PARCELS = {
-  meridian: {education: parcel(3.75,3.75), capital: parcel(12.25,3.75), resources: parcel(3.75,12.25), research: parcel(12.25,12.25)},
-  rivermark: {education: parcel(3.75,3.75), capital: parcel(12.25,3.75), resources: parcel(3.75,12.25), research: parcel(12.25,12.25)},
+  meridian: {education: parcel(3.75,3.75), capital: parcel(13.25,3.75), resources: parcel(3.75,13.25), research: parcel(13.25,13.25)},
+  rivermark: {education: parcel(3.75,3.75), capital: parcel(13.25,3.75), resources: parcel(3.75,13.25), research: parcel(13.25,13.25)},
 };
 export const districtAnchor = (city,id) => {
   const p=DISTRICT_PARCELS[typeof city==='string'?city:city.id][id];
   return [p.anchorX,p.anchorY];
 };
-export const ROAD_LAYOUT = {spine:8,cross:8,front:16.5,east:16.5,extent:17,river:17};
+export const ROAD_LAYOUT = {spine:8.5,cross:8.5,front:18,east:18,extent:19,river:19,halfWidth:.8};
 // The renderer draws these exact rectangles. Intersections are their union;
 // the spine includes the bridge approach and the bridge across the river.
 export const PROTECTED_ROADS = [
-  {id:'spine / bridge approach',minI:ROAD_LAYOUT.spine-.5,maxI:ROAD_LAYOUT.spine+.5,minJ:0,maxJ:ROAD_LAYOUT.extent+1},
-  {id:'cross street',minI:0,maxI:ROAD_LAYOUT.extent+1,minJ:ROAD_LAYOUT.cross-.5,maxJ:ROAD_LAYOUT.cross+.5},
-  {id:'riverfront street',minI:0,maxI:ROAD_LAYOUT.extent+1,minJ:ROAD_LAYOUT.front-.5,maxJ:ROAD_LAYOUT.front+.5},
-  {id:'east street / bridge approach',minI:ROAD_LAYOUT.east-.5,maxI:ROAD_LAYOUT.east+.5,minJ:0,maxJ:ROAD_LAYOUT.extent+1},
+  {id:'spine / bridge approach',minI:ROAD_LAYOUT.spine-.8,maxI:ROAD_LAYOUT.spine+.8,minJ:0,maxJ:ROAD_LAYOUT.extent+1},
+  {id:'cross street',minI:0,maxI:ROAD_LAYOUT.extent+1,minJ:ROAD_LAYOUT.cross-.8,maxJ:ROAD_LAYOUT.cross+.8},
+  {id:'riverfront street',minI:0,maxI:ROAD_LAYOUT.extent+1,minJ:ROAD_LAYOUT.front-.8,maxJ:ROAD_LAYOUT.front+.8},
+  {id:'east street / bridge approach',minI:ROAD_LAYOUT.east-.8,maxI:ROAD_LAYOUT.east+.8,minJ:0,maxJ:ROAD_LAYOUT.extent+1},
 ];
 
 // Continuous .7-tile pavements on the district side of each street, including
 // joined corners. Routes stay on one block; no unmarked street crossings.
 export const SIDEWALK_WIDTH=.7;
 export const SIDEWALKS=[];
-for(const [minI,maxI]of [[0,ROAD_LAYOUT.spine-.5],[ROAD_LAYOUT.spine+.5,ROAD_LAYOUT.east-.5]])for(const [minJ,maxJ]of [[0,ROAD_LAYOUT.cross-.5],[ROAD_LAYOUT.cross+.5,ROAD_LAYOUT.front-.5]]){
+for(const [minI,maxI]of [[0,ROAD_LAYOUT.spine-.8],[ROAD_LAYOUT.spine+.8,ROAD_LAYOUT.east-.8]])for(const [minJ,maxJ]of [[0,ROAD_LAYOUT.cross-.8],[ROAD_LAYOUT.cross+.8,ROAD_LAYOUT.front-.8]]){
   const block=`${minI}:${minJ}`;
   SIDEWALKS.push({id:`${block}:east`,minI:maxI-SIDEWALK_WIDTH,maxI,minJ,maxJ},
     {id:`${block}:south`,minI,maxI,minJ:maxJ-SIDEWALK_WIDTH,maxJ});
   if(minI)SIDEWALKS.push({id:`${block}:west`,minI,maxI:minI+SIDEWALK_WIDTH,minJ,maxJ});
   if(minJ)SIDEWALKS.push({id:`${block}:north`,minI,maxI,minJ,maxJ:minJ+SIDEWALK_WIDTH});
 }
-const campusI=ROAD_LAYOUT.spine-.5-SIDEWALK_WIDTH/2,campusJ=ROAD_LAYOUT.cross-.5-SIDEWALK_WIDTH/2;
+const campusI=ROAD_LAYOUT.spine-.8-SIDEWALK_WIDTH/2,campusJ=ROAD_LAYOUT.cross-.8-SIDEWALK_WIDTH/2;
 export const CAMPUS_WALK=[[1,campusJ],[campusI,campusJ],[campusI,1],[campusI,campusJ]];
+// An agricultural extension outside the urban parcels, connected to Resources.
+export const FARM_FIELD={minI:-2.5,maxI:0,minJ:9.8,maxJ:16.2};
+export const FARM_ROUTE=[[-1.8,10.5],[-.8,10.5],[-.8,15.5],[-1.8,15.5]];
 
 // Native 512px cells. Source rectangles exclude neighboring-frame bleed and
 // transparent glow. Ground corners were measured on the actual lot artwork,

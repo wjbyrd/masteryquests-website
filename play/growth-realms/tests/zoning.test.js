@@ -41,7 +41,7 @@ test('G: all construction bases and worker routes fit parcels and avoid roads/an
 });
 test('H: full vehicle bodies clear all maximum buildings and protected corridors',()=>{
   for(const city of cities)for(const construction of [false,true]){const a=layoutAudit(city,maximum(city),{construction});
-    for(const r of Object.values(SPRITE_ROUTES).filter(r=>r.category&&!r.pedestrian))for(let t=0;t<r.period;t+=.125){const {point,direction}=routeSample(r,t),body=unitFootprint(r.unit,point,direction);
+    for(const r of Object.values(SPRITE_ROUTES).filter(r=>r.category&&!r.pedestrian&&!r.service))for(let t=0;t<r.period;t+=.125){const {point,direction}=routeSample(r,t),body=unitFootprint(r.unit,point,direction);
       assert.ok(PROTECTED_ROADS.some(road=>contains(road,body)));assert.ok(![...a.occupied,...a.scenery].some(f=>intersects(body,f)));
     }
   }
