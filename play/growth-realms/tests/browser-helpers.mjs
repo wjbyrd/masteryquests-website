@@ -25,3 +25,11 @@ export async function selectDistrict(page,key){
   if(!await page.locator(`[data-board=${player}]`).count())await page.locator(`#city-tabs [data-view=${player}]`).click();
   await page.locator(`[data-plan-city=${player}][data-plan-district=${key}]`).click();
 }
+
+export async function completeConceptCheck(page){
+  for(const answer of ['lower-base','marginal','complements','potential']){
+    await page.locator(`[data-concept-answer="${answer}"]`).click();
+    await page.locator('#check-next').click();
+  }
+  await page.locator('.check-complete').waitFor();
+}

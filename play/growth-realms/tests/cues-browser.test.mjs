@@ -2,7 +2,7 @@ import {GAME_CONFIG as G} from '../config.js';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
-import {selectDistrict,startCity,fillPlan,getRun,waitMaps} from './browser-helpers.mjs';
+import {selectDistrict,startCity,fillPlan,getRun,waitMaps,completeConceptCheck} from './browser-helpers.mjs';
 const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
 const origin=process.env.GAMES_PREVIEW_ORIGIN||'http://127.0.0.1:4180';
 const config=JSON.parse(await fs.readFile(new URL('../../../audit_tools/econ_rpg/games-preview.json',import.meta.url)));
@@ -29,7 +29,7 @@ try{
  for(let cycle=2;cycle<=G.totalRounds;cycle++){await p.locator('#quick-commit').click();await fillPlan(p,[5,5,5,5]);await p.locator('#quick-commit').click();await p.locator('#consequences').waitFor({state:'visible'});}
  await p.locator('[data-view=meridian]').click();await p.evaluate(()=>scrollTo(0,0));await waitMaps(p);await p.screenshot({path:out+'08-upgraded-meridian.png'});
  await p.locator('[data-view=rivermark]').click();await p.evaluate(()=>scrollTo(0,0));await waitMaps(p);await p.screenshot({path:out+'09-upgraded-rivermark.png'});
- await p.locator('#quick-commit').click();await p.locator('#final-report').waitFor({state:'visible'});await p.locator('[data-answer=potential]').click();assert.ok((await p.locator('#transfer-feedback').innerText()).length>70);
+ await p.locator('#quick-commit').click();await p.locator('#final-report').waitFor({state:'visible'});await completeConceptCheck(p);
  await startCity(p,'rivermark','#replay');await waitMaps(p);await p.screenshot({path:out+'10-clear-roads-rivermark.png'});
  const back=p.getByRole('link',{name:'Return to Games',exact:true}).filter({visible:true}).first();await back.click();assert.equal(p.url(),hub);await p.close();
  for(const width of [390,320]){

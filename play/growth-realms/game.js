@@ -10,7 +10,8 @@ import {portrait} from './characters.js';
 import {openingAdvice,roundOneAdvice,laterAdvice,CHECK_IN_ROUNDS} from './advisor.js';
 import {renderSplash} from './hero-scene.js';
 import {createAssignedRun, rivalRevealed, visibleCities, raceResult, roleGoal} from './rivalry.js';
-import { reportHTML, TRANSFER_FEEDBACK } from './debrief.js';
+import { reportHTML } from './debrief.js';
+import {mountConceptCheck} from './report-learning.js';
 
 const $ = selector => document.querySelector(selector);
 const fmt = (v, digits = 0) => v.toLocaleString('en-US', { minimumFractionDigits: digits, maximumFractionDigits: digits });
@@ -340,7 +341,7 @@ $('#advance').addEventListener('click', () => {
   else if (phase() === 'resolved') {
     nextRunCycle(run); if(phase()==='planning')view=run.currentCycle===G.rivalRevealRound?'combined':run.playerCity; render();
     if (phase() === 'finished') {
-      $('#final-report').innerHTML = reportHTML(run); $('#final-report').hidden = false;
+      $('#final-report').innerHTML = reportHTML(run); mountConceptCheck($('#final-report')); $('#final-report').hidden = false;
       $('.skip-link').href = '#final-report'; $('.skip-link').textContent = 'Skip to final report';
       $('#final-report').focus(); announce(`${G.totalRounds} rounds complete. ${raceResult(run).headline} Your report explains the result.`);
     } else {
@@ -381,10 +382,6 @@ document.addEventListener('click', e => {
     selectDistrict(city,mapDistrict);
     if(run&&city===run.playerCity&&phase()==='planning')invest(mapDistrict,1);
     else announce(`${G.cities.find(c=>c.id===city).name}. ${CATEGORIES.find(c=>c.id===mapDistrict).name}. Inspection only.`);
-  }
-  if (button.dataset.answer) {
-    $('#transfer-feedback').hidden = false; $('#transfer-feedback').textContent = TRANSFER_FEEDBACK[button.dataset.answer];
-    document.querySelectorAll('[data-answer]').forEach(b => b.setAttribute('aria-pressed', String(b === button)));
   }
   if (button.id === 'replay') {
     reset(); startGame();

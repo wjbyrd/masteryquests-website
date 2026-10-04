@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
-import {startCity,fillPlan,getRun,waitMaps} from './browser-helpers.mjs';
+import {startCity,fillPlan,getRun,waitMaps,completeConceptCheck} from './browser-helpers.mjs';
 import {GAME_CONFIG as G} from '../config.js';
 const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
 const out=fileURLToPath(new URL('../../../tmp/games-preview/growth-realms/in-world-pass/',import.meta.url));
@@ -93,7 +93,7 @@ try{
   assert.ok((await p.locator('.race-result').boundingBox()).y<(await p.locator('.report-heading').boundingBox()).y);
   const report=await p.locator('#final-report').innerText();for(const term of ['productivity','diminishing returns','catch-up','human capital','technology','growth policy'])assert.ok(report.toLowerCase().includes(term));
   const chart=await p.locator('.chart-panel polyline').evaluateAll(es=>es.map(e=>e.getAttribute('points').split(' ').map(s=>s.split(',').map(Number))));assert.ok(chart.every(points=>points.length===G.totalRounds+1&&points.at(-1)[0]===630));
-  await p.locator('[data-answer=potential]').click();assert.ok((await p.locator('#transfer-feedback').innerText()).length>70);await p.evaluate(()=>document.querySelector('#final-report').scrollIntoView());await shot(p,'07-final-result',false);await p.locator('.race-result').screenshot({path:out+'16-rivermark-result.png'});await shot(p,'08-final-debrief',true);
+  await completeConceptCheck(p);await p.evaluate(()=>document.querySelector('#final-report').scrollIntoView());await shot(p,'07-final-result',false);await p.locator('.race-result').screenshot({path:out+'16-rivermark-result.png'});await shot(p,'08-final-debrief',true);
   evidence.run=r;evidence.result=expected;
   await p.setViewportSize({width:390,height:844});await startCity(p,'meridian','#replay');assert.equal((await getRun(p)).playerCity,'meridian');assert.notEqual((await getRun(p)).rivalDoctrine,r.rivalDoctrine);await noRival(p);
   assert.deepEqual((await getRun(p)).cities.map(c=>c.history.length),[0,0]);assert.equal(await p.locator('#build-progress').evaluate(e=>e.value),0);

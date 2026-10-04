@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test tests/model.test.js tests/visual.test.js tests/interaction.test.js tests/cleanup.test.js tests/zoning.test.js tests/rivalry.test.js tests/splash.test.js tests/advisor.test.js",
+    "test": "node --test tests/model.test.js tests/visual.test.js tests/interaction.test.js tests/cleanup.test.js tests/zoning.test.js tests/rivalry.test.js tests/splash.test.js tests/advisor.test.js tests/report-learning.test.js",
     "test:browser": "node tests/browser.test.mjs",
     "test:visual": "node tests/visual-browser.test.mjs",
     "test:interaction": "node tests/interaction-browser.test.mjs",
@@ -13,6 +13,7 @@
     "audit:balance": "node tests/balance-audit.mjs",
     "test:zoning": "node tests/zoning-browser.test.mjs",
     "test:sidewalks": "node tests/sidewalk-browser.test.mjs",
-    "test:onboarding": "node tests/onboarding-browser.test.mjs"
+    "test:onboarding": "node tests/onboarding-browser.test.mjs",
+    "test:learning": "node tests/report-learning-browser.test.mjs"
   }
 }

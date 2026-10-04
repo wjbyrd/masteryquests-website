@@ -32,7 +32,7 @@ class ExportIntegrity(unittest.TestCase):
     def audit(self, lib):
         records, count = export.collect(lib)
         export.audit_answers_and_routes(lib, records, export.ROOT, shutil.which("node"))
-        export.resolve_faculty_outcomes(records, export.ROOT, shutil.which("node"))
+        export.resolve_faculty_outcomes(records, export.ROOT, shutil.which("node"), lib)
         return records, count
 
     def test_identical_duplicates_merge_all_memberships(self):
@@ -222,6 +222,77 @@ class ExportIntegrity(unittest.TestCase):
         self.assertEqual(resolved['labels'],[])
         self.assertEqual(resolved['excludedConceptIds'],['market-failures'])
         self.assertEqual(resolved['unresolvedSkills'],['core_market_failure'])
+
+    def test_scoped_macro_integration_uses_existing_concept_migration(self):
+        q=question(id='ECON-SP-ELITE-332',primarySkill='trace_demand_shock',secondarySkills=['move_along_srpc'],
+            requiredConceptIds=['macroeconomic-equilibrium-and-shocks','short-run-phillips-curve'],
+            challengeFocusConceptIds=['short-run-phillips-curve'])
+        lib=library(q);lib['concepts']['integrated-macroeconomic-analysis']=lib['concepts'].pop('test')
+        before=copy.deepcopy(lib);records,_=self.audit(lib)
+        result=records[q['id']]['faculty_outcomes']
+        self.assertEqual(len(result['labels']),2)
+        self.assertEqual({o['conceptId'] for o in result['outcomes']},{'demand-and-supply-shocks','short-run-phillips-curve'})
+        self.assertEqual({s for o in result['outcomes'] for s in o['matchedSkills']},{'trace_demand_shock','move_along_srpc'})
+        self.assertTrue(all(o['conceptEvidence'] for o in result['outcomes']))
+        self.assertEqual(lib,before)
+        # Identical metadata on an ID outside the authorized 132 stays untouched.
+        lib['concepts']['integrated-macroeconomic-analysis']['questions']['easy'][0]['id']='NOT-IN-CLOSURE'
+        records,_=self.audit(lib)
+        self.assertEqual(records['NOT-IN-CLOSURE']['faculty_outcomes']['labels'],[])
+
+    def test_scoped_support_uses_only_unanimous_recorded_route_focus(self):
+        q=question(id='ECON-SP-MAP-AD-AS-TO-PC-5061',primarySkill='map_ad_as_to_pc')
+        module={'questions':{'easy':[q,question(id='peer-one',primarySkill='map_ad_as_to_pc',isCheckpointChallenge=True,challengeFocusConceptIds=['short-run-phillips-curve']),question(id='peer-two',primarySkill='map_ad_as_to_pc',isCheckpointChallenge=True,challengeFocusConceptIds=['short-run-phillips-curve'])]},'microSkillRepairPools':{'map_ad_as_to_pc':[q['id']]}}
+        module['questions']['easy'][1]['secondarySkills']=['move_along_srpc']
+        lib={'concepts':{'integrated-macroeconomic-analysis':module}}
+        records,_=self.audit(lib);result=records[q['id']]['faculty_outcomes']
+        self.assertEqual(result['closure']['resolutionBasis'],'explicit-route-unanimous-challenge-focus')
+        self.assertEqual(result['labels'],[])
+        self.assertEqual(result['closure']['focusResolution'][0]['status'],'no-narrower-skill-match')
+        self.assertEqual({x['sourceQuestionId'] for x in result['closure']['sources']},{'peer-one','peer-two'})
+        # A narrow recorded route skill can select an outcome; the focus alone cannot.
+        for item in module['questions']['easy']:item['primarySkill']='move_along_srpc'
+        module['microSkillRepairPools']={'move_along_srpc':[q['id']]}
+        records,_=self.audit(lib)
+        self.assertEqual(len(records[q['id']]['faculty_outcomes']['labels']),1)
+        self.assertEqual(records[q['id']]['faculty_outcomes']['outcomes'][0]['matchedSkills'],['move_along_srpc'])
+        module['questions']['easy'][2]['challengeFocusConceptIds']=['long-run-phillips-curve']
+        records,_=self.audit(lib)
+        self.assertEqual(records[q['id']]['faculty_outcomes']['labels'],[])
+
+    def test_integration_focus_and_required_concepts_never_select_without_skill(self):
+        q=question(id='ECON-SP-ELITE-332',primarySkill='integrated_macro_review',
+            requiredConceptIds=['macroeconomic-equilibrium-and-shocks'],
+            challengeFocusConceptIds=['short-run-phillips-curve'])
+        lib=library(q);lib['concepts']['integrated-macroeconomic-analysis']=lib['concepts'].pop('test')
+        records,_=self.audit(lib);result=records[q['id']]['faculty_outcomes']
+        self.assertEqual(result['labels'],[])
+        self.assertIn('short-run-phillips-curve',result['closure']['unresolvedConceptIds'])
+        self.assertEqual(result['closure']['focusResolution'][0]['status'],'no-narrower-skill-match')
+
+    def test_integration_preserves_all_skill_matches_only_inside_bounds(self):
+        q=question(id='ECON-SP-ELITE-332',primarySkill='trace_demand_shock',
+            secondarySkills=['trace_supply_shock','classify_output_gap','move_along_srpc','trace_demand_shock'],
+            requiredConceptIds=['macroeconomic-equilibrium-and-shocks'],
+            challengeFocusConceptIds=['macroeconomic-equilibrium-and-shocks'])
+        lib=library(q);lib['concepts']['integrated-macroeconomic-analysis']=lib['concepts'].pop('test')
+        records,_=self.audit(lib);result=records[q['id']]['faculty_outcomes']
+        self.assertEqual(len(result['labels']),3)
+        self.assertEqual({s for o in result['outcomes'] for s in o['matchedSkills']},{'trace_demand_shock','trace_supply_shock','classify_output_gap'})
+        self.assertEqual(result['unresolvedSkills'],['move_along_srpc'])
+        self.assertNotIn('short-run-phillips-curve',result['closure']['eligibleConceptIds'])
+
+    def test_scoped_market_failure_requires_unambiguous_policy_skill_evidence(self):
+        q=question(id='ECON-MG-EASY-15',primarySkill='market_failure_identification',secondarySkills=['externality_identification'])
+        lib=library(q);lib['concepts']['market-failures']=lib['concepts'].pop('test')
+        records,_=self.audit(lib)
+        result=records[q['id']]['faculty_outcomes']
+        self.assertEqual([o['id'] for o in result['outcomes']],['externalities-external-effects'])
+        self.assertEqual(result['outcomes'][0]['matchedSkills'],['externality_identification'])
+        q['primarySkill']='intervention_limits';q['secondarySkills']=[]
+        records,_=self.audit(lib);result=records[q['id']]['faculty_outcomes']
+        self.assertEqual(result['labels'],[])
+        self.assertGreater(len(result['closure']['ambiguousSkills'][0]['candidateOutcomeIds']),1)
 
     def test_missing_image_uses_only_verified_own_concept_asset(self):
         with tempfile.TemporaryDirectory() as tmp:

@@ -130,9 +130,37 @@ codes appear only if already part of the policy's reviewed label. An unresolved
 question has no displayed outcome and is listed in validation evidence, with no
 chapter-derived fallback. Partial skill-resolution gaps are also reported.
 
+The 132 previously unresolved compatibility questions listed in
+`tools/faculty_export_outcome_closure_scope_20261004.json` have a narrowly scoped
+metadata-only fallback. Integrated Macro questions use recorded required,
+challenge-focus, and secondary concept IDs, migrated through Composer's existing
+`migrateRecipe` logic to bound the eligible current visible policy concepts.
+Within that boundary, actual recorded primary/secondary skills select outcomes
+through `FacultyOutcomes.skills()`. Every distinct skill-supported outcome is
+retained; a required or secondary concept never selects an outcome by itself.
+A repair/bridge question without these concept lists can use an
+explicit skill route only when the linked challenge questions unanimously record
+the same challenge-focus concepts; differing required concepts are not inherited.
+That routed focus establishes eligibility only. Challenge-focus concepts are
+checked for narrower recorded skill matches, never expanded automatically, even
+when a concept has just one outcome. If no narrower skill evidence exists, the
+concept remains unresolved; if no outcome is supported, the objective is omitted.
+The trace preserves eligible concepts, focus-resolution results, unmatched
+concepts, and matched skills for every retained outcome. Route peers' unrelated
+skills are not inherited.
+Market Failures questions use exact recorded skill matches within Composer's
+migrated visible compatibility family and explicit concept/subtopic memberships.
+An ambiguous skill match leaves the item unresolved. The scope file contains IDs
+only, not a second mapping or any outcome wording. This fallback never reads
+question prose and never changes canonical records.
+
 `faculty_exports/faculty_outcome_resolution.json` records the policy fingerprint
 and, for every question, the recorded skills, concept scopes, matched outcome IDs,
-verbatim labels, supporting skills, and unresolved skills. The validation summary
+verbatim labels, supporting skills, and unresolved skills. This trace
+also preserves recorded concept evidence and explicit route evidence for the
+scoped closure. A skill lacking a direct skill-to-outcome match is a separate
+diagnostic from an omitted Learning Objective: a question can retain supported
+outcomes while other recorded skills or eligible concepts remain unresolved. The summary
 reports single-outcome, multiple-outcome, and unresolved counts globally and by
 course. Standalone legacy `LO#.#` codes are rejected in emitted CSV/PDF text.
 

@@ -2,6 +2,110 @@
 
 A ten-round city-building rivalry game. Start Game randomly assigns Meridian or Rivermark. A brief city advisor introduces district investment; the rival develops out of view in rounds 1–2 and is revealed at the beginning of Round 3. The result interprets the player’s starting role using final output per worker, gap change and own productivity growth, followed by the full economic debrief.
 
+## Final report synthesis and concept check pass
+
+The report now follows chart evidence → visible textbook synthesis → existing personalized interpretation → policy connection → four-question concept check → optional ledger. Six short blocks cover productivity; physical capital and diminishing returns; the catch-up effect; human capital; technology and innovation; and complementary inputs/resource bottlenecks. A distinct **Growth Rate ≠ Economic Level** callout illustrates 20 → 24 (+20%) versus 100 → 108 (+8%), including the distinction between narrowing relative gaps and widening absolute differences. The policy transition explicitly maps all four districts to growth-policy categories and preserves opportunity cost.
+
+Personalization reads actual history: early capital allocations of at least half the first two rounds’ budget; otherwise observed resource-constraint rounds, observed adoption-constraint rounds, or actual education/research commitments. It reports those facts without claiming a separately measured causal return. Model formulas, thresholds, outcomes, ten-round data, chart series and existing personalized analysis are unchanged.
+
+The check presents one item at a time with four shuffled choices, choice-specific immediate feedback, unlimited incorrect retries, keyboard support and a simple understood/completed count. Correct responses cannot be double-counted or overwritten. Completion recaps all four ideas. Quiz state is separate from the simulation and resets on replay. The original “Another economy. A new decision.” scenario and equipment-plus-adoption answer are Question 4; its original two distractors remain, with one additional training distractor. There is no second transfer exercise.
+
+Files changed:
+
+- Runtime: `report-learning.js` (new concept copy, run connection, question bank and local check UI); `debrief.js` (report order and policy transition); `game.js` (mount check instead of the old transfer handler); `flow.css` (responsive concept blocks, callout and feedback).
+- Tests/tooling: `package.json`; `tests/report-learning.test.js` and `tests/report-learning-browser.test.mjs` (new); `tests/browser-helpers.mjs`; `tests/browser.test.mjs`; `tests/cleanup-browser.test.mjs`; `tests/cues-browser.test.mjs`; `tests/beta-build.test.js`.
+- Documentation: `README.md`.
+
+Verification: 47 unit tests including economic locks; local staged-beta dependency/byte check; live ten-round flows for both roles, every distractor and correct answer, retries, no double counting, keyboard focus, completion, replay reset, unchanged run snapshots, 11-point chart series, 20-row ledger, and layouts at 320–1440px. Source and staged-beta browser checks are recorded in `tmp/games-preview/growth-realms/learning-pass/`. The older cleanup/cues suites were adapted to the integrated check but not separately rerun in this pass. No public deployment was performed.
+
+Screenshots (real runtime, test artifacts only): `01-economics-behind-the-race.png`, `02-growth-rate-vs-level.png`, `03-concept-question.png`, `04-incorrect-feedback.png`, `05-correct-feedback.png`, `06-completed-check.png`, plus `07-mobile-synthesis.png`, all in that learning-pass directory.
+
+Remaining instructional limits: start/finish tables and the optional ledger remain descriptive evidence; the visible synthesis and personalized interpretation supply their economic meaning. The pre-existing first/last capital-heavy-round comparison is not a controlled estimate of capital’s contribution, because other inputs also change. The new synthesis does not make such a causal claim. Institutions and broader living-standard determinants are acknowledged, not modeled. This pass does not establish an optimal policy mix or claim the game is finished.
+
+### Exact concept-check questions, answer keys and feedback
+
+Option order is randomized in the game. Correct choices are identified below by content, not displayed letter.
+
+#### Question 1 — Faster growth. Higher productivity?
+
+A smaller economy begins with much less capital per worker and lower output per worker than a richer economy. Its output per worker grows 12%, while the richer economy’s grows 5%. What can we conclude?
+
+- **Correct answer:** The smaller economy is catching up in relative terms, but may still have lower output per worker.
+
+  **Feedback:** Exactly. Faster growth from a lower base narrows the relative gap without necessarily eliminating it. Growth rates and productivity levels answer different questions.
+
+- **Distractor:** The smaller economy now has higher output per worker because its growth rate was higher.
+
+  **Feedback:** Not quite. A higher percentage growth rate does not establish a higher productivity level. Starting points matter; try again.
+
+- **Distractor:** The smaller economy’s reported growth contradicts diminishing returns to capital.
+
+  **Feedback:** Not quite. Diminishing returns can make additional capital more productive where capital is scarce, helping explain faster growth from a lower base. Try again.
+
+- **Distractor:** The smaller economy can close the relative gap only if both growth rates become equal.
+
+  **Feedback:** Not quite. Equal proportional growth preserves the relative gap. Faster productivity growth in the lower-level economy can narrow it; try again.
+
+#### Question 2 — The next unit of equipment
+
+Two otherwise similar economies add the same amount of capital per worker. One starts with little capital; the other already has a large stock. Why might the first receive a larger productivity gain?
+
+- **Correct answer:** The marginal gain from additional capital tends to be larger when the starting capital stock is low.
+
+  **Feedback:** Exactly. With other inputs held constant, diminishing returns means each additional unit of capital tends to add less output as capital accumulates.
+
+- **Distractor:** Additional capital generally reduces output once an economy has a large capital stock.
+
+  **Feedback:** Not quite. A smaller marginal gain is not the same as a negative gain. More capital can still raise output in a capital-rich economy; try again.
+
+- **Distractor:** Accumulating capital automatically reduces the technology available to workers.
+
+  **Feedback:** Not quite. Diminishing returns does not require technology to fall; it describes additional capital’s payoff with other inputs held constant. Try again.
+
+- **Distractor:** Each additional unit of capital raises output by the same amount at every starting level.
+
+  **Feedback:** Not quite. That assumes constant marginal returns. Diminishing returns means the added output generally becomes smaller as capital accumulates; try again.
+
+#### Question 3 — New technology, limited skills
+
+An economy invests heavily in new technology, but workers lack the skills needed to use it effectively. What does this illustrate?
+
+- **Correct answer:** Technology and human capital can complement each other, so weak skills can limit the productivity payoff.
+
+  **Feedback:** Exactly. Human capital helps workers adopt and use new methods. Technology and skills can raise each other’s productivity payoff.
+
+- **Distractor:** Access to new technology raises productivity equally, regardless of workers’ skills.
+
+  **Feedback:** Not quite. Access is not the same as effective use. Skills can limit technology adoption and its payoff; try again.
+
+- **Distractor:** Investment in technology generally removes the need for education and training.
+
+  **Feedback:** Not quite. New methods often require new skills. Technology and human capital can complement each other rather than replace one another; try again.
+
+- **Distractor:** Education must always have the highest return, whatever the economy’s starting conditions.
+
+  **Feedback:** Not quite. This scenario identifies a skills bottleneck, not a universal ranking of policies. Returns depend on starting conditions and other inputs; try again.
+
+#### Question 4 — Another economy. A new decision.
+
+An economy has little equipment per worker, strong schools, reliable infrastructure, and access to existing world technology. Which development opportunity would you expect to be especially valuable?
+
+- **Correct answer:** Combine additional equipment with adoption of existing production methods.
+
+  **Feedback:** Exactly. Scarce equipment can have high returns, while strong schools make existing technology easier to adopt. Together they offer a productivity opportunity, provided resources keep up with the new activity.
+
+- **Distractor:** Prioritize still more basic resource capacity, even though existing infrastructure has ample room.
+
+  **Feedback:** Not quite. Resources matter when they constrain production. With ample infrastructure, extra capacity may contribute less immediately than equipment and better methods that the skilled workforce can use; try again.
+
+- **Distractor:** Prioritize increasing the number of workers, while leaving their equipment and methods unchanged.
+
+  **Feedback:** Not quite. More workers can raise total output, but unchanged equipment and methods limit gains per worker. Scarce capital and strong skills create an opportunity to improve productivity; try again.
+
+- **Distractor:** Prioritize more training while leaving scarce equipment and available production methods unchanged.
+
+  **Feedback:** Not quite. Training can help, but this workforce already has strong skills. Equipment and existing technology offer a way to put those skills to use; try again.
+
 ## In-world controls / advisor cadence / outcome framing pass
 
 Runtime changes:

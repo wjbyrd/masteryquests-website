@@ -27,6 +27,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCE = Path("build/faculty-build-composer/data/composer_library.js")
 CORE = Path("build/faculty-build-composer/composer-core.js")
 COURSE_AREAS = Path("build/faculty-build-composer/course-area-model.js")
+OUTCOME_CLOSURE_SCOPE = Path("tools/faculty_export_outcome_closure_scope_20261004.json")
 OUTCOME_SOURCES = (Path("build/faculty-build-composer/faculty-outcome-core.js"),
     Path("build/faculty-build-composer/data/faculty-outcomes.js"),
     Path("audit_tools/faculty_lo/outcome-groups.cjs"), Path("audit_tools/faculty_lo/approved-merges.json"))
@@ -274,7 +275,7 @@ def readable(value):
     return str(value)
 
 
-def resolve_faculty_outcomes(records, root, node):
+def resolve_faculty_outcomes(records, root, node, library=None):
     """Project recorded skills through Composer's published reviewed policy.
 
     Memberships have already been resolved by Composer. Never search unrelated
@@ -283,6 +284,9 @@ def resolve_faculty_outcomes(records, root, node):
     code = r"""
 const fs=require('fs'),input=JSON.parse(fs.readFileSync(0,'utf8'));
 const core=require(input.core),F=core.FacultyOutcomes;
+const macroScope=new Set(input.closureScope['integrated-macroeconomic-analysis']);
+const marketScope=new Set(input.closureScope['market-failures']);
+const migrate=id=>core.migrateRecipe({selectedConceptIds:[id]}).recipe.selectedConceptIds;
 const resolved={};
 for(const item of input.questions){
  const skills=core.ContentScope.skills(item.question);
@@ -295,14 +299,84 @@ for(const item of input.questions){
    if(matchedSkills.length)outcomes.push({id:outcome.id,conceptId,label:outcome.label,matchedSkills});
   }
  }
+ let closure;
+ if(!outcomes.length && (macroScope.has(item.id)||marketScope.has(item.id))){
+  const sources=[],ambiguousSkills=[];
+  const addConcept=(conceptId,field,sourceQuestionId=item.id,route=null)=>sources.push({conceptId,field,sourceQuestionId,...(route?{route}:{})});
+  if(macroScope.has(item.id)){
+   for(const field of ['requiredConceptIds','challengeFocusConceptIds','secondaryConceptIds'])
+    for(const id of item.question[field]||[])addConcept(id,field);
+   // The two legacy support records have no integration arrays. An explicit
+   // route plus unanimous recorded focus among its challenge questions is the
+   // evidence; do not inherit their differing extra required concepts.
+   if(!sources.length)for(const [map,routes]of Object.entries(input.integrationRoutes)){
+    for(const [skill,refs]of Object.entries(routes)){
+     if(!refs.includes(item.id)||!skills.includes(skill))continue;
+     const peers=input.questions.filter(p=>p.id!==item.id && p.conceptIds.includes('integrated-macroeconomic-analysis') && p.question.primarySkill===skill && p.question.isCheckpointChallenge);
+     const focus=p=>[...new Set(p.question.challengeFocusConceptIds||[])].sort();
+     if(peers.length && focus(peers[0]).length && peers.every(p=>JSON.stringify(focus(p))===JSON.stringify(focus(peers[0])))){
+      for(const peer of peers)for(const id of focus(peer))addConcept(id,'challengeFocusConceptIds',peer.id,{map,skill,targetQuestionId:item.id});
+     }
+    }
+   }
+   for(const source of sources)for(const conceptId of migrate(source.conceptId)){
+    const description=F.describe(conceptId);
+    if(description.hidden)continue;
+    for(const outcome of description.outcomes){
+     // Integration concepts bound eligibility; only recorded question skills
+     // select outcomes. Focus/routing evidence must not expand a whole concept.
+     const matchedSkills=skills.filter(s=>F.skills(conceptId,[outcome.id]).includes(s));
+     if(!matchedSkills.length)continue;
+     let entry=outcomes.find(o=>o.id===outcome.id);
+     if(!entry){entry={id:outcome.id,conceptId,label:outcome.label,matchedSkills,conceptEvidence:[]};outcomes.push(entry);}
+     entry.conceptEvidence.push({...source,resolvedConceptId:conceptId});
+    }
+   }
+   const eligibleConceptIds=[...new Set(sources.flatMap(s=>migrate(s.conceptId)))].filter(id=>!F.describe(id).hidden);
+   const focusResolution=[...new Set(sources.filter(s=>s.field==='challengeFocusConceptIds').map(s=>s.conceptId))].map(recordedConceptId=>{
+    const eligible=migrate(recordedConceptId).filter(id=>!F.describe(id).hidden);
+    const outcomeIds=outcomes.filter(o=>eligible.includes(o.conceptId)).map(o=>o.id);
+    return {recordedConceptId,eligibleConceptIds:eligible,outcomeIds,
+     status:outcomeIds.length?'supported-by-recorded-skills':'no-narrower-skill-match'};
+   });
+   closure={kind:'integrated-macro',sources,resolutionBasis:sources.some(s=>s.route)?'explicit-route-unanimous-challenge-focus':'recorded-integration-concepts',
+    selectionBasis:'recorded-question-skills-within-integration-bounds',eligibleConceptIds,focusResolution,
+    unresolvedConceptIds:eligibleConceptIds.filter(id=>!outcomes.some(o=>o.conceptId===id))};
+  }else{
+   // Use Composer's own Market Failures migration to bound the policy search.
+   // Generic skills shared by several outcomes do not establish which applies.
+   const explicit=[...new Set([...(item.question.subtopicIds||[]),...conceptIds])];
+   const family=migrate('market-failures').filter(id=>!F.describe(id).hidden);
+   const candidates=[...new Set((explicit.length?explicit:family).flatMap(migrate))].filter(id=>!F.describe(id).hidden && family.includes(id));
+   const matched=[];
+   for(const skill of skills){
+    const choices=candidates.flatMap(conceptId=>F.describe(conceptId).outcomes.filter(o=>F.skills(conceptId,[o.id]).includes(skill)).map(o=>({id:o.id,conceptId,label:o.label})));
+    if(choices.length>1)ambiguousSkills.push({skill,candidateOutcomeIds:choices.map(o=>o.id)});
+    else if(choices.length===1){
+     let entry=matched.find(o=>o.id===choices[0].id);
+     if(!entry){entry={...choices[0],matchedSkills:[],conceptEvidence:[]};matched.push(entry);}
+     entry.matchedSkills.push(skill);
+     entry.conceptEvidence.push({field:explicit.length?'subtopicIds / existing memberships':'Composer market-failures selection migration',conceptId:'market-failures',resolvedConceptId:entry.conceptId,sourceQuestionId:item.id});
+    }
+   }
+   if(!ambiguousSkills.length)outcomes.push(...matched);
+   closure={kind:'market-failures',candidateConceptIds:candidates,ambiguousSkills,
+    resolutionBasis:'unambiguous-exact-recorded-skill-match',
+    reason:ambiguousSkills.length?'Recorded skills match multiple visible outcomes without disambiguating membership metadata':matched.length?'Exact recorded skill supports a visible Market Failures outcome':'No recorded skill matches a visible Market Failures outcome'};
+  }
+ }
  const labels=[...new Set(outcomes.map(o=>o.label))];
  resolved[item.id]={skills,conceptIds,excludedConceptIds,outcomes,labels,
+  ...(closure?{closure}:{}),
   unresolvedSkills:skills.filter(s=>!outcomes.some(o=>o.matchedSkills.includes(s)))};
 }
 process.stdout.write(JSON.stringify({policySha256:F.policy.policySha256,questions:resolved}));
 """
+    integration = (library or {}).get('concepts', {}).get('integrated-macroeconomic-analysis', {})
     payload = {"core": str(root / CORE),
-        "questions": [{"id": qid, "question": {key: entry["q"][key] for key in ("primarySkill", "secondarySkills") if key in entry["q"]},
+        "closureScope": json.loads((root / OUTCOME_CLOSURE_SCOPE).read_text(encoding='utf-8')),
+        "integrationRoutes": {name: {skill: [str(ref.get('id') if isinstance(ref, dict) else ref) for ref in refs] for skill, refs in integration.get(name, {}).items()} for name in ROUTES},
+        "questions": [{"id": qid, "question": {key: entry["q"][key] for key in ("primarySkill", "secondarySkills", "requiredConceptIds", "challengeFocusConceptIds", "secondaryConceptIds", "subtopicIds", "isCheckpointChallenge") if key in entry["q"]},
             "conceptIds": sorted({pool.split('/')[1] for pool in entry['pools'] if pool.split('/')[0] in {'concepts', 'derived'}})}
             for qid, entry in records.items()]}
     result = subprocess.run([node, "-e", code], input=json.dumps(payload), capture_output=True,
@@ -796,13 +870,13 @@ def validation_report(report):
     for s in summaries:
         lines.append(f"- {s['discipline']}: {s['image_path_fallbacks']} graph references resolved through verified concept assets; {s['missing_images']} missing images; {s['ambiguous_classifications']} ambiguous classifications.")
     lines += ["", "## Faculty learning outcomes", "",
-        "Outcome labels come verbatim from Composer's published faculty-outcome policy, resolved from recorded primary and secondary skills within actual concept memberships. No legacy-objective or chapter-label fallback is used. Multiple labels are retained and deduplicated.", "",
+        "Outcome labels come verbatim from Composer's published faculty-outcome policy. Resolution uses recorded skills within actual memberships, plus the explicitly scoped integration/compatibility closure evidence. No legacy-objective, prose-based or chapter-label fallback is used. Multiple labels are retained and deduplicated.", "",
         "| Scope | One outcome | Multiple outcomes | No outcome |", "|---|---:|---:|---:|"]
     for name, counts in [("Global (unique IDs)", report['faculty_outcome_resolution']), *[(s['discipline'], s['faculty_outcome_resolution']) for s in summaries]]:
         lines.append(f"| {name} | {counts['one_outcome']} | {counts['multiple_outcomes']} | {counts['no_outcome']} |")
     counts = report['faculty_outcome_resolution']
     lines += ["", "Unresolved question IDs: " + (", ".join(counts['unresolved_ids']) or "None") + ".",
-        "Questions with any unresolved recorded skill: " + str(len(counts['unresolved_skill_ids'])) + ".",
+        "Questions with a recorded skill lacking a direct skill-to-outcome match: " + str(len(counts['unresolved_skill_ids'])) + " (includes questions with other, supported integration outcomes).",
         "Legacy LO#.# codes in emitted faculty PDF/CSV text: 0 (publication is blocked if any are found).",
         "See `faculty_outcome_resolution.json` for every question's exact outcome/skill trace and the policy fingerprint.", ""]
     return "\n".join(lines) + "\n"
@@ -831,12 +905,12 @@ def main(argv=None):
     source = root / SOURCE
     before = hashlib.sha256(source.read_bytes()).hexdigest()
     source_hashes = {str(root / relative): hashlib.sha256((root / relative).read_bytes()).hexdigest()
-        for relative in (SOURCE, CORE, COURSE_AREAS, *OUTCOME_SOURCES)}
+        for relative in (SOURCE, CORE, COURSE_AREAS, *OUTCOME_SOURCES, OUTCOME_CLOSURE_SCOPE)}
     try:
         library = load_library(source)
         records, occurrences = collect(library)
         audit_answers_and_routes(library, records, root, args.node)
-        faculty_outcomes = resolve_faculty_outcomes(records, root, args.node)
+        faculty_outcomes = resolve_faculty_outcomes(records, root, args.node, library)
         memberships = course_area_memberships(library, root, args.node)
         groups = partition_disciplines(records, memberships)
         if any(not group for group in groups.values()):

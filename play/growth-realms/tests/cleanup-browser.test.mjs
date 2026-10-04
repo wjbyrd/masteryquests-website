@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import {ROADS,DISTRICTS} from '../visual-config.js';
 import {fileURLToPath} from 'node:url';
-import {selectDistrict,startCity,fillPlan,getRun,waitMaps} from './browser-helpers.mjs';
+import {selectDistrict,startCity,fillPlan,getRun,waitMaps,completeConceptCheck} from './browser-helpers.mjs';
 const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
 const out=fileURLToPath(new URL('../../../tmp/games-preview/growth-realms/cleanup-pass/',import.meta.url));
 await fs.mkdir(out,{recursive:true});
@@ -73,7 +73,7 @@ try{
   await page.emulateMedia({reducedMotion:'reduce'});
   for(let n=1;n<=G.totalRounds;n++){await fillPlan(page,[5,5,5,5]);await page.locator('#quick-commit').click();await page.locator('#consequences').waitFor({state:'visible'});await page.locator('#quick-commit').click();}
   await page.locator('#final-report').waitFor({state:'visible'});assert.equal((await getRun(page)).cities[0].history.length,G.totalRounds);assert.match(await page.locator('#final-report').innerText(),/Policy connection|growth policy/);assert.doesNotMatch(await page.locator('body').innerText(),forbidden);
-  await page.locator('[data-answer="potential"]').click();assert.ok((await page.locator('#transfer-feedback').innerText()).length>70);await page.locator('#replay').click();assert.equal((await getRun(page)).currentCycle,1);assert.equal(await page.locator('[data-city-map]').count(),1);
+  await completeConceptCheck(page);await page.locator('#replay').click();assert.equal((await getRun(page)).currentCycle,1);assert.equal(await page.locator('[data-city-map]').count(),1);
   assert.deepEqual(errors,[]);await fs.writeFile(out+'audit.json',JSON.stringify({viewport:{width:1366,height:768,deviceScaleFactor:1},rivermark,meridian,marker,cycle,routes,depthEvidence,errors},null,2));
   console.log('PASS A–K: sparse title, real hero, white selection, map/HUD fit for both managed cities, labeled skills constraint, cumulative upgrade preview, complete route loops and ground sorting, construction workers, ten rounds, report/transfer/replay.');
 }finally{await browser.close();}
