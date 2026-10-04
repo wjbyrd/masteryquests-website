@@ -98,7 +98,7 @@ function roads(m) {
 }
 // Draw the measured source rectangle around the same ground anchor at every tier.
 // The generic atlas helper remains unchanged for the title illustration.
-function districtSprite(c,id,level,x,y,scale=1){
+export function districtSprite(c,id,level,x,y,scale=1){
   const v=BUILDING_VISUALS[id].levels[Math.min(5,level)],img=images.get(id);if(!img)return;
   c.drawImage(img,...v.sourceRect,Math.round(x-v.anchorOffsetX*scale),Math.round(y-v.anchorOffsetY*scale),v.width*scale,v.height*scale);
 }

@@ -1,0 +1,359 @@
+ECON-SP-FINALBOSS-4012 [elite] {'decision': 'KEEP GRAPH', 'graph_evidence': 'b/d/c and curves through them.', 'decision_reason': None}
+Starting at b, policymakers reduce inflation to I1 before expectations change. If expectations later adapt to I1 and the natural rate stays fixed, how should the transition be interpreted?
+A   The path is b-a-c: unemployment first rises, then returns to its natural rate as the short-run curve shifts down.
+B * The path is b-d-c: unemployment first rises, then returns to its natural rate as the short-run curve shifts down.
+C   The path is b-d-c: the return occurs because the natural rate falls permanently from U3 to U2.
+D   The path stops at d: changing expectations cannot alter unemployment when actual inflation stays at I1.
+FB With initial expectations, I1 intersects SRPC2 at d, U3. Lower expectations shift the curve to SRPC1 and allow c at U2. The change in actual unemployment is temporary; LRPC stays fixed.
+
+ECON-SP-FINALBOSS-4013 [legendary] {'decision': 'KEEP GRAPH', 'graph_evidence': 'c/d at the same inflation rate but different expectations curves.', 'decision_reason': None}
+At d after disinflation, actual inflation is held at I1. Compare a credible policy whose lower inflation becomes expected with a policy that leaves expectations at their old level.
+A * Lower expectations allow c at U2; old expectations leave d at U3, so commitment alone is not the same as belief.
+B   Lower expectations allow a at U1; old expectations leave d at U3, so commitment alone is not the same as belief.
+C   Lower expectations allow c at U2; this shows credibility permanently reduces the natural rate.
+D   Both cases reach c at U2 immediately, because announcing a fixed actual rate also fixes expectations.
+FB At I1, the old SRPC2 implies d/U3. Lowering expected inflation shifts the curve down, allowing c/U2 at the same actual inflation. Holding the target is not identical to having the target believed.
+
+ECON-SP-LEGENDARYBOSS-9108 [legendary] {'decision': 'KEEP GRAPH', 'graph_evidence': 'c at lower inflation on LRPC; d above natural unemployment.', 'decision_reason': None}
+During the disinflation from b, a credible announcement immediately lowers expectations, but existing wage contracts adjust gradually. Which endpoint and transition-cost claim fit the diagram?
+A   a is the eventual endpoint; gradual contract adjustment can still leave temporary unemployment above U2.
+B * c is the eventual endpoint; gradual contract adjustment can still leave temporary unemployment above U2.
+C   c is the eventual endpoint; immediate belief alone eliminates all unemployment costs despite the contract lag.
+D   d is the eventual endpoint; a contract lag permanently prevents the lower expectations from affecting supply.
+FB At lower inflation I1 and unchanged natural unemployment U2, the endpoint is c. Credibility supports the lower SRPC, but contracts can delay cost adjustment, leaving temporary costs before reaching it.
+
+ECON-SP-LEGENDARYBOSS-9115 [legendary] {'decision': 'KEEP GRAPH', 'graph_evidence': 'e/d/g/a rates and associated curves.', 'decision_reason': None}
+Compare e to d with g to a in the money-market diagram. How do money-supply changes help explain the interest-rate outcomes?
+A   e-d combines opposing pressures and lowers the rate from r3 to r2; g-a combines reinforcing upward pressures and raises it from r1 to r4.
+B   e-d raises the rate from r2 to r3 because higher money demand and higher supply both push rates upward.
+C   g-a raises the rate from r1 to r4, proving that a money-demand increase has the same rate effect regardless of the supply response.
+D * e-d combines opposing pressures yet raises the rate from r2 to r3; g-a combines reinforcing upward pressures and raises it from r1 to r4.
+FB e-d raises both MD and MS: demand pushes rates up while supply pushes them down, with r3 above r2 in this drawing. g-a raises MD but reduces MS, reinforcing the increase r1 to r4. The net result of opposing shifts depends on their sizes.
+
+ECON-SP-LEGENDARYBOSS-9109 [legendary] {'decision': 'KEEP GRAPH', 'graph_evidence': 'b/c on SRPC1 and c/f vertically separated at U3.', 'decision_reason': None}
+A report attributes both b-c and c-f to weaker aggregate demand with unchanged expectations. Which correction uses the plotted evidence?
+A * b-c fits weaker demand; c-f raises inflation at unchanged unemployment, requiring a change in the short-run relationship.
+B   b-c fits stronger demand; c-f lowers inflation at unchanged unemployment, requiring a change in the short-run relationship.
+C   b-c fits weaker demand; c-f also reflects weaker demand because every change in inflation is movement along one SRPC.
+D   c-f raises inflation at unchanged unemployment; that observation alone proves the change came from expectations rather than supply.
+FB b-c moves down and right along SRPC1. c and f share U3 but have inflation I2 and I4 on different curves. This second change cannot be a fixed-expectations demand movement; the graph alone need not distinguish expectations from a supply disturbance.
+
+PG4-MM-EL-001 [hard] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'The economic task is self-contained; adding graph labels would add a redundant lookup rather than evidence.'}
+A student says a fall in the nominal interest rate from 8% to 6%, with income and the price level unchanged, shifts the money-demand curve right. What is the error?
+A * The rate change increases quantity demanded along the existing money-demand curve.
+B   The rate change increases money demand at every interest rate, shifting the entire curve.
+C   The rate change directly increases the fixed money supply while money demand remains constant.
+D   The rate change shifts both money supply and money demand by the same amount.
+FB The nominal interest rate is the opportunity cost represented on the money-demand curve. A rate change alters quantity demanded along that curve; a change in income or prices would shift it.
+
+PG4-MM-H-001 [medium] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'The economic task is self-contained; adding graph labels would add a redundant lookup rather than evidence.'}
+Holding income and the price level fixed, how does a lower nominal interest rate affect the quantity of money people want to hold?
+A   It decreases because money earns less interest than before.
+B   It stays unchanged because only the central bank chooses desired money holdings.
+C   It increases because a lower rate directly shifts the central bank's money supply.
+D * It increases because the opportunity cost of holding money falls.
+FB A lower nominal rate reduces the interest forgone by holding money rather than bonds. Quantity demanded therefore rises along the unchanged money-demand curve.
+
+PG4-MM-L-001 [hard] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Money demanded at 8% relative to MS0=100.', 'decision_reason': None}
+Suppose the nominal interest rate is temporarily 8% while the displayed money supply stays fixed. What adjustment would move this market toward equilibrium?
+A   People want more money than they hold, so bond sales lower bond prices and push the interest rate up.
+B * People hold more money than they want, so bond purchases raise bond prices and push the interest rate down.
+C   People hold more money than they want, so they sell bonds and push the interest rate up.
+D   People want more money than they hold, so the imbalance automatically shifts money supply right.
+FB At 8%, MD0 shows quantity demanded below the fixed supply of 100. People try to exchange excess balances for bonds. Bond prices rise and yields fall toward the plotted equilibrium rate of 6%.
+
+PG4-MM-M-002 [medium] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'The economic task is self-contained; adding graph labels would add a redundant lookup rather than evidence.'}
+In a liquidity-preference model where the central bank fixes the nominal quantity of money, why is the money-supply curve vertical?
+A   The quantity demanded stays the same at different nominal interest rates.
+B   The interest rate stays fixed regardless of money demand.
+C * The quantity supplied stays the same at different nominal interest rates.
+D   Income and the price level must both remain zero.
+FB The model holds nominal money supply constant at every interest rate. A change in the interest rate can alter quantity demanded, but does not change the supplied quantity under this assumption.
+
+PG4-MM-M-006 [medium] {'decision': 'KEEP GRAPH', 'graph_evidence': 'MS1=75 versus MS0=100; rates 6 versus 4.', 'decision_reason': None}
+Which policy action is consistent with the change from MS0 to MS1, holding money demand fixed?
+A   An action that increases the money supply, putting downward pressure on the interest rate.
+B   An action that reduces the money supply, putting downward pressure on the interest rate.
+C * An action that reduces the money supply, putting upward pressure on the interest rate.
+D   An action that raises desired money holdings without changing the money supply.
+FB MS1 lies left of MS0, with the rate rising from 4% to 6%. A reduction in money supply produces this response on fixed MD0. A demand shift would be a different change.
+
+PG4-MM-EL-005 [elite] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Rates 2/4 and output 150/105; fixed MS/SRAS.', 'decision_reason': None}
+A student treats higher money demand as higher aggregate spending. Using both panels, what is wrong with that argument for the move from A to B?
+A * The rate rises from 2% to 4%; reduced interest-sensitive spending lowers equilibrium output to 105 rather than increasing AD.
+B   The rate rises from 2% to 6%; reduced interest-sensitive spending lowers equilibrium output to 125 rather than increasing AD.
+C   The rate rises from 2% to 4% and output falls to 105 because higher money demand directly lowers productive capacity.
+D   The rate rises from 2% to 4%; wanting more liquid balances is itself extra goods demand, so the output decline must be unrelated.
+FB The left panel shows MD increasing at fixed money supply, raising the rate from 2% to 4%. The right panel shows AD falling and output moving from 150 to 105. Desired liquid balances and desired goods expenditure are different; the link runs through borrowing costs.
+
+PG4-MM-L-005 [hard] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Which curve shifts in the money market and which remains fixed in the goods market.', 'decision_reason': None}
+Which transmission mechanism explains the changes from A to B in both panels?
+A   Money supply rises, lowering the rate; stronger interest-sensitive spending expands AD and raises output and prices.
+B * Money demand rises, raising the rate; weaker interest-sensitive spending contracts AD and lowers output and prices.
+C   Money demand rises, raising the rate; lower output reflects a contraction of SRAS rather than lower spending.
+D   Money supply falls, raising the rate; weaker interest-sensitive spending contracts AD and lowers output and prices.
+FB The supply of money stays fixed while MD shifts right. Higher rates reduce spending, shifting AD left along fixed SRAS. The fourth account has a valid transmission direction, but its money-supply trigger is not the one drawn.
+
+PG4-MM-M-010 [medium] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Direction of the A/B interest-rate change and AD shift.', 'decision_reason': None}
+Which mechanism connects A to B in the money market with A to B in the output market?
+A   A fall in borrowing costs increases investment and other interest-sensitive spending.
+B   A rise in borrowing costs lowers firms' production costs and expands short-run supply.
+C * A rise in borrowing costs reduces investment and other interest-sensitive spending.
+D   A rise in desired money holdings directly increases spending on goods and services.
+FB The left panel shows a higher rate at B. Higher borrowing costs reduce investment demand; the right panel consequently shows lower AD. A desire to hold money is not itself a demand for goods.
+
+PG4-MM-M-009 [medium] {'decision': 'KEEP GRAPH', 'graph_evidence': 'B=(105,45), lower AD with unchanged SRAS.', 'decision_reason': None}
+After the interest-rate change shown on the left, what happens to spending and the output-market equilibrium on the right?
+A   Lower interest-sensitive spending shifts AD left; output is 125 and the price level is 50 at B.
+B * Lower interest-sensitive spending shifts AD left; output is 105 and the price level is 45 at B.
+C   Lower production costs shift SRAS right; output is 105 and the price level is 45 at B.
+D   Only a movement along AD occurs; output is 105 and the price level is 45 with spending plans unchanged.
+FB B is at output 105 and price 45. Higher interest rates reduce planned spending at a given price level, shifting AD rather than moving along it. SRAS is unchanged.
+
+PG4-MPT-M-003 [medium] {'decision': 'KEEP GRAPH', 'graph_evidence': 'B=(100,45) and AD/SRAS positions.', 'decision_reason': None}
+Which output-market response matches the monetary change shown across the panels?
+A   Borrowing costs restrain spending; AD shifts left to an equilibrium at output 105 and price level 40.
+B * Borrowing costs restrain spending; AD shifts left to an equilibrium at output 100 and price level 45.
+C   Borrowing costs lower production costs; SRAS shifts right to output 100 and price level 45.
+D   Output 100 and price level 45 result from moving along unchanged AD when money supply falls.
+FB The rate rises as money supply contracts. Interest-sensitive spending falls, shifting AD left; the right-panel B is output 100, price 45, on unchanged SRAS.
+
+PM2C3-LPMM-L-001 [legendary] {'decision': 'KEEP GRAPH', 'graph_evidence': 'd/r3 above e/r2.', 'decision_reason': None}
+The money market moves from e to d as money demand and supply both increase. What can be inferred about their competing effects on the interest rate?
+A * The demand increase more than offsets the rate-reducing supply effect, so the rate rises.
+B   The supply increase more than offsets the rate-raising demand effect, so the rate falls.
+C   The effects offset exactly, so the rate stays at its original level.
+D   The rate rises because increasing the money supply reinforces the upward pressure from demand.
+FB e is at r2 and d at the higher r3. Increased demand pushes the rate up and increased supply pushes it down. The rise shown identifies a larger demand effect; it does not change the usual separate effects.
+
+PM2C3-LPMM-LB-002 [legendaryBoss] {'decision': 'KEEP GRAPH', 'graph_evidence': 'e/d rates and both curve shifts.', 'decision_reason': None}
+A commentator says the move from e to d proves that expanding money supply raises interest rates. How does the diagram bear on this claim?
+A   The rate falls from r3 to r2, with the supply expansion's downward pressure exceeding the demand increase.
+B   The rate rises from r2 to r3, confirming that supply expansion by itself pushes rates upward.
+C   The rate stays at r2 because simultaneous increases in supply and demand must offset exactly.
+D * The rate rises from r2 to r3, but money demand also rises; its upward pressure exceeds the supply expansion's downward pressure.
+FB The observed increase is from r2 to r3 with both curves shifting right. Holding demand fixed, more money supply lowers the rate. The joint outcome therefore cannot be attributed to that supply effect alone.
+
+PM2C3-LPMM-L-006 [legendary] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Original r2 versus d/r3 and MD2 to right of Qm2 at r2.', 'decision_reason': None}
+Starting at e, money demand changes to MD2 and the central bank chooses MS2. Has that choice kept the interest rate at its original value? What adjustment would be needed if not?
+A   No; d is below the original rate, so holding that rate requires less money than MS2 supplies.
+B   Yes; increasing money supply always offsets any increase in money demand exactly.
+C   No; d is above the original rate, so the central bank must reduce supply further to lower it.
+D * No; d is above the original rate, so holding that rate requires more money than MS2 supplies.
+FB The original rate is r2 at e; d has r3, above r2. On MD2, the quantity demanded at r2 exceeds Qm2, so a larger money supply would be required. The direction follows from the actual under-offset shown.
+
+PM2C3-LPMM-LB-001 [legendaryBoss] {'decision': 'KEEP GRAPH', 'graph_evidence': 'b at r4/Qm2; MD2 demands Qm1 there; a is MD2/MS1.', 'decision_reason': None}
+At the interest rate marked by b, money supply is MS2 and demand is MD2. Compare the initial portfolio adjustment with a central-bank sale that reduces supply to MS1 before the rate changes.
+A   Excess balances prompt bond purchases and downward rate pressure; the sale instead makes e the new equilibrium.
+B   Excess balances prompt bond sales and upward rate pressure; the sale makes a the new equilibrium.
+C   A shortage of balances prompts bond sales; reducing supply leaves d as the equilibrium.
+D * Excess balances prompt bond purchases and downward rate pressure; the sale instead makes a the new equilibrium.
+FB At b's r4, desired balances on MD2 are Qm1 while supply is Qm2. Attempts to buy bonds with excess money push rates downward. Reducing supply to MS1 before that adjustment makes MD2 intersect it at a, not e on MD1.
+
+PG5-PC-H-010 [medium] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'The economic task is self-contained; adding graph labels would add a redundant lookup rather than evidence.'}
+With expected inflation and supply conditions fixed, what short-run tradeoff does a downward-sloping Phillips curve describe?
+A   Lower unemployment is associated with lower inflation.
+B * Lower unemployment is associated with higher inflation.
+C   Unemployment stays fixed at its natural rate at every inflation rate.
+D   A change in actual inflation necessarily changes expected inflation by the same amount.
+FB Along a given short-run Phillips curve, demand conditions that lower unemployment are associated with higher inflation. A change in expected inflation or supply conditions can instead shift the curve.
+
+PG5-PC-L-012 [legendary] {'decision': 'KEEP GRAPH', 'graph_evidence': 'A unemployment 5% rather than its inflation coordinate 2.5%.', 'decision_reason': None}
+Later observations put unemployment at the rate shown at A, but inflation stays above A's level. Which evidence would support a higher short-run Phillips curve crossing the same LRPC, rather than a vertical short-run curve?
+A   Unemployment remains 2.5%, and wage-setting expectations rise with sustained inflation while labor-market structure and supply conditions stay unchanged.
+B   Unemployment remains 5%, and a higher price level alone proves the short-run curve has become vertical.
+C   Unemployment remains 5%, and unchanged expectations explain a lasting upward SRPC shift with no other supply change.
+D * Unemployment remains 5%, and wage-setting expectations rise with sustained inflation while labor-market structure and supply conditions stay unchanged.
+FB A is at unemployment 5% and inflation 2.5%. Higher expected inflation can raise SRPC while the same natural rate preserves LRPC. An observed price level or unchanged unemployment alone does not establish that expectations have adjusted.
+
+PG5-PC-M-009 [medium] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Vertical LRPC at unemployment 5%.', 'decision_reason': None}
+What does this LRPC imply about a policy that permanently maintains higher inflation?
+A * Long-run unemployment remains 5%; higher sustained inflation does not buy a permanent unemployment reduction.
+B   Long-run unemployment remains 2.5%; higher sustained inflation does not buy a permanent unemployment reduction.
+C   Long-run unemployment starts at 5% but falls permanently as policy moves upward along LRPC.
+D   Unemployment remains 5% at every short-run point because LRPC also fixes the slope of SRPC.
+FB LRPC is vertical at unemployment 5%. Once expectations adjust, a higher sustained inflation rate changes the inflation coordinate rather than the natural unemployment rate. Short-run deviations can still occur.
+
+ECON-SP-MEDIUMBOSS-3004 [mediumBoss] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'The economic task is self-contained; adding graph labels would add a redundant lookup rather than evidence.'}
+Compare a demand boom that temporarily lowers unemployment with a reform that reduces structural unemployment. Which can change the natural unemployment rate?
+A   The demand boom permanently lowers the natural rate; the reform affects only inflation.
+B   Neither can change the natural rate because it is determined by the price level.
+C * The structural reform can lower the natural rate; the demand boom alone changes actual unemployment around that benchmark.
+D   Both must raise the natural rate because lower unemployment requires higher inflation.
+FB Demand surprises can move actual unemployment temporarily below natural unemployment. A persistent reduction in structural unemployment can lower the natural rate itself and shift the long-run Phillips curve left.
+
+PG3-MEQ-L-003 [hard] {'decision': 'KEEP GRAPH', 'graph_evidence': 'A=(150,125), B=(175,137.5), same AS0.', 'decision_reason': None}
+A student attributes the move from A to B to increased aggregate supply. What do the direction of the changes and the fixed curve imply?
+A   Supply increased: output rises and the price level falls along unchanged AD0.
+B * Demand increased: output and the price level rise along unchanged AS0.
+C   Supply increased: output and the price level rise because the movement is along unchanged AS0.
+D   Demand decreased: the higher price level at B is the result of reduced spending.
+FB B is above and right of A, where AD1 intersects unchanged AS0. More demand raises both output and prices in this short-run diagram. Moving along AS0 does not mean that aggregate supply shifted.
+
+PG3-MEQ-L-004 [legendary] {'decision': 'KEEP GRAPH', 'graph_evidence': 'A=75/100; AS1 goes through D=50/125 and C=75/150; at P100 Y25.', 'decision_reason': None}
+Refer to the ADAS graph with points A, B, C and D. The economy begins at A. A supply disruption moves AS0 to AS1, giving D, and remains in place. Compare two fiscal targets while AS1 stays fixed: restore the original output, or restore the original price level. Which comparison follows from the drawn straight AS1 line, extended if needed?
+A   Restoring output reaches C at 75/150; restoring the original price gives output 50 and requires further demand contraction.
+B   Restoring output reaches C at 75/150; this also restores the original purchasing-power conditions because output is unchanged.
+C   Both targets reach A at 75/100 because fiscal expansion shifts the disrupted supply curve back.
+D * Restoring output reaches C at 75/150; restoring the original price gives output 25 and requires further demand contraction.
+FB A is (75,100) and D is (50,125). With AS1 fixed, output 75 requires C at price 150. AS1 passes through D (50,125) and C (75,150), so its equation is P = Y + 75; at P = 100, Y = 25. Moving from D to that lower-price point requires lower AD and further output loss. Fiscal demand policy does not remove the supply disruption.
+
+PG3-MEQ-L-001 [legendary] {'decision': 'KEEP GRAPH', 'graph_evidence': 'D right of LRAS and B on LRAS, with AD1 fixed.', 'decision_reason': None}
+A student claims that the demand increase from AD0 to AD1 permanently raises output above potential. Which account of the short-run and long-run equilibria challenges that claim?
+A   The economy first reaches A, then approaches C as wage costs fall; output returns to unchanged potential.
+B * The economy first reaches D, then approaches B as wage costs rise; output returns to unchanged potential.
+C   The economy first reaches D, then approaches B because rising wages permanently reduce potential output.
+D   D remains the long-run equilibrium because demand growth shifts LRAS to its output level.
+FB The short-run AD1-SRAS0 intersection is D, right of LRAS at 100. Wage adjustment moves supply toward SRAS1 and equilibrium toward B on LRAS. The demand-driven output gain is temporary even though prices remain higher.
+
+PG3-MEQ-H-002 [hard] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Both SRAS and LRAS shift right.', 'decision_reason': None}
+Which event best matches the joint shift from SRAS0/LRAS0 to SRAS1/LRAS1?
+A   Destruction of productive capital raises production costs and lowers potential output.
+B * A productivity improvement lowers production costs and raises potential output.
+C   Lower expected prices increase short-run supply without changing productive capacity.
+D   Higher consumer confidence raises spending without changing production costs.
+FB Both supply curves move right, with LRAS moving from 100 to 115 and SRAS moving down/right. A productivity gain can explain both lower costs and greater capacity. Lower expectations alone would not move LRAS.
+
+LG-Q-336 [elite] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Value of money at a=2 and b=1.5; reciprocal price change.', 'decision_reason': None}
+In the value-of-money graph, the economy moves from a to b. Velocity may change. A nominal wage rises in the same proportion as the implied price level, with technology and labor supplies unchanged. What is consistent with monetary neutrality?
+A * Prices and the nominal wage rise by one-third; the real wage is unchanged.
+B   Prices and the nominal wage double; the real wage is unchanged.
+C   Prices and the nominal wage rise by one-third; the real wage also rises by one-third.
+D   Prices fall by one-quarter, so an unchanged real wage requires a one-quarter nominal-wage increase.
+FB The graph gives value of money 2 at a and 1.5 at b. Their reciprocal price levels are 1/2 and 2/3, a one-third increase. Proportional nominal wage growth leaves the real wage unchanged; nominal changes alone do not raise real productive capacity. With real output fixed, this graph requires velocity to fall to two-thirds of its initial value; it is not the fixed-velocity quantity-theory case.
+
+PG4-MPT-H-001 [hard] {'decision': 'KEEP GRAPH', 'graph_evidence': 'MS0/MS1 direction, rates 6/4, and AD/SRAS changes.', 'decision_reason': None}
+Which explanation fits A to B across the two panels?
+A   Less money supply raises the rate, restrains interest-sensitive spending and lowers output and prices through AD.
+B * More money supply lowers the rate, stimulates interest-sensitive spending and raises output and prices through AD.
+C   More money demand raises the rate, restrains spending and lowers output and prices through AD.
+D   More money supply lowers the rate and raises output by shifting SRAS right rather than changing spending.
+FB The left panel shows MS increasing and the rate falling from 6% to 4%. The right panel shows higher AD, output and prices on unchanged SRAS. This is spending transmission, not a supply-capacity change.
+
+PG4-MPT-H-002 [hard] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Left-panel supply rather than demand shift; right-panel AD rather than SRAS shift.', 'decision_reason': None}
+What explains the changes from A to B in the two panels?
+A   Money demand increases; higher borrowing costs restrain spending, shifting AD left on unchanged SRAS.
+B   Money supply expands; lower borrowing costs stimulate spending, shifting AD right on unchanged SRAS.
+C   Money supply contracts; lower productive capacity directly shifts SRAS left while AD stays fixed.
+D * Money supply contracts; higher borrowing costs restrain spending, shifting AD left on unchanged SRAS.
+FB MS1 lies left of MS0, raising the rate from 2.75% to 4% on unchanged MD0. Spending and AD fall, producing lower output and prices along the same SRAS. Higher money demand could give similar rate pressure, but is not the change shown.
+
+ECON-SP-ELITE-318 [hard] {'decision': 'KEEP GRAPH', 'graph_evidence': 'MS2 left of MS1 and AD2 left of AD1.', 'decision_reason': None}
+Which explanation connects the changes from MS1 to MS2 and AD1 to AD2?
+A * Money supply falls, raising the rate and reducing investment and aggregate demand.
+B   Money supply rises, lowering the rate and increasing investment and aggregate demand.
+C   Money demand rises, raising the rate and reducing investment and aggregate demand.
+D   Money supply falls, raising the rate and lowering output by reducing long-run productive capacity.
+FB MS2 is left of MS1, with the rate rising from r1 to r2. Lower investment then reduces demand from AD1 to AD2. The money-demand curve and productive capacity are not the mechanisms that changed.
+
+PG4-MPT-M-001 [medium] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Rate decline and B=(125,56.25).', 'decision_reason': None}
+How does interest-sensitive spending connect the two panels' move from A to B?
+A   Spending rises as borrowing costs fall; output reaches 150 and the price level 60 on the new AD curve.
+B   Spending rises as borrowing costs fall; output 125 and price 56.25 are reached by a movement along unchanged AD.
+C   Output 125 and price 56.25 result from lower production costs shifting SRAS, with planned spending unchanged.
+D * Spending rises as borrowing costs fall; output reaches 125 and the price level 56.25 on the new AD curve.
+FB The rate falls from 6% to 4%, encouraging spending. The right-panel B is at output 125 and price 56.25 where higher AD intersects unchanged SRAS. A borrowing-cost change shifts spending plans rather than merely changing the price level along AD.
+
+PG4-MPT-EL-002 [hard] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Money 125/100 and rates 2.75/4; spending-mediated AD shift.', 'decision_reason': None}
+A student says the central bank directly chose the real-output level at B. Which explanation uses the mechanism and evidence in both panels?
+A * Money supply falls from 125 to 100, raising the rate from 2.75% to 4%; lower spending then reduces output.
+B   Money supply falls from 150 to 100, raising the rate from 4% to 6%; lower spending then reduces output.
+C   Money supply falls from 125 to 100; matching money and output quantities means the bank directly sets real GDP.
+D   Money supply falls from 125 to 100, and output falls because the policy directly reduces productive capacity.
+FB The monetary instrument changes money supply, not an output quota. The left panel supplies the rate response; borrowing costs affect investment and AD, with the output result determined by the right-panel intersection.
+
+PG4-MPT-L-002 [hard] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Which money curve changes and whether the goods-market change is AD or supply.', 'decision_reason': None}
+What economic response connects the move from A to B in the two panels?
+A   Money supply rises and the rate falls; stronger spending raises output and the price level on unchanged SRAS.
+B * Money supply falls and the rate rises; weaker spending lowers output and the price level on unchanged SRAS.
+C   Money demand rises and the rate rises; weaker spending lowers output and the price level on unchanged SRAS.
+D   Money supply falls and the rate rises; output falls because policy shifts LRAS left.
+FB The graph shows a leftward money-supply shift at fixed money demand, followed by lower AD. Higher rates restrain spending; output and prices fall along unchanged SRAS. This does not establish a loss of productive capacity.
+
+ECON-SP-HARD-227 [medium] {'decision': 'KEEP GRAPH', 'graph_evidence': 'MS2/MS1 and AD2/AD1 ordering.', 'decision_reason': None}
+Read the policy path in reverse, from MS2 to MS1. Which mechanism explains the associated aggregate-demand change?
+A * The money supply expands, the rate falls, and investment raises AD from AD2 toward AD1.
+B   The money supply contracts, the rate rises, and investment lowers AD from AD2 toward AD1.
+C   The money supply expands and the rate falls, but the resulting AD change is a movement along a fixed demand curve.
+D   Money demand falls rather than money supply changing, so investment raises AD from AD2 toward AD1.
+FB MS1 is right of MS2, with a lower interest rate r1. The expansion stimulates investment and shifts AD from the leftward AD2 toward AD1. The graph distinguishes the policy supply change from a demand change in the money market.
+
+LG-Q-158 [medium] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'Identifying a model by its variables is a conceptual task; requiring the student to name a panel would add only visual label lookup.'}
+Which variables belong in the money-market model used to explain monetary-policy transmission?
+A * Money supply, money demand and the nominal interest rate.
+B   Aggregate demand, short-run supply and real output.
+C   Government purchases, tax revenue and the budget deficit.
+D   Capital per worker, productivity and technological progress.
+FB The money market relates desired money holdings to the supplied quantity at different nominal interest rates. Its equilibrium rate affects interest-sensitive spending in the aggregate-demand model.
+
+LG-Q-9053 [hard] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'The economic task is self-contained; adding graph labels would add a redundant lookup rather than evidence.'}
+A monetary contraction raises interest rates and reduces aggregate demand by $240 billion. MPC is 0.75, and investment is the only autonomous spending component that changes. What investment change accounts for the total demand loss?
+A   Investment fell $960 billion after rates rose; divide the total loss by MPC
+B * Investment fell $60 billion after rates rose; the multiplier converts that impulse to the total AD loss
+C   Investment fell $240 billion before rates changed; the AD loss is the autonomous impulse
+D   Investment rose $60 billion after rates fell; the money shift is expansionary
+FB The multiplier is 1/(1 − 0.75) = 4. Dividing the $240 billion total demand loss by 4 gives a $60 billion autonomous investment decline, occurring after the rate increase and before induced spending falls.
+
+LG-Q-9055 [elite] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'The economic task is self-contained; adding graph labels would add a redundant lookup rather than evidence.'}
+A monetary expansion lowers rates and raises investment by $40 billion. A separate loss of confidence reduces investment by $25 billion. With MPC = 0.5, what is the net change in aggregate demand?
+A   Right $80 billion: ignore the confidence loss because rates fell
+B   Left $30 billion: reverse the effect of a net investment increase
+C   Right $15 billion: include both impulses but omit induced spending
+D * Right $30 billion: multiply the net $15 billion autonomous investment rise
+FB The autonomous investment effects net to $15 billion. The spending multiplier is 2, so total demand rises $30 billion. The monetary stimulus must be combined with the confidence effect before the multiplier is applied.
+
+LG-Q-9056 [hard] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'The economic task is self-contained; adding graph labels would add a redundant lookup rather than evidence.'}
+The interest rate rises by the same amount in two economies. Investment falls by $20 billion in A and $5 billion in B. Both have MPC = 0.8 and no other shocks. What explains the difference in their total demand responses?
+A   AD falls $25 billion in A and $100 billion in B; weaker investment sensitivity magnifies the effect
+B   AD falls $100 billion in both; identical rate changes guarantee identical spending changes
+C * AD falls $100 billion in A and $25 billion in B; B has weaker investment sensitivity to the rate change
+D   AD falls $20 billion in A and $5 billion in B; the multiplier is irrelevant to rate-induced spending
+FB Both multipliers equal 5, giving demand declines of $100 billion and $25 billion. With the same rate increase and multiplier, the difference reflects investment sensitivity, not reserve accounting.
+
+LG-Q-9059 [elite] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'The economic task is self-contained; adding graph labels would add a redundant lookup rather than evidence.'}
+A monetary contraction reduces investment by $40 billion, with MPC = 0.8. A fiscal program adds $200 billion to aggregate demand in total after induced effects. Compare implementing it immediately with implementing it only after the original contraction has ended.
+A   Both timings offset exactly because equal dollar effects guarantee equal stabilization
+B   Immediate AD rises $800 billion because the total fiscal effect must be multiplied again
+C   Immediate AD falls $200 billion because fiscal and monetary shifts cannot offset
+D * Immediate effects offset; the delayed program can create excess demand after the original gap closes
+FB The monetary effect is −40/(1 − 0.8) = −$200 billion, so the immediate fiscal total offsets it. If the program arrives after the original gap closes, the same stimulus can create excess demand. A total effect should not be multiplied again.
+
+LG-Q-9064 [legendary] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'The economic task is self-contained; adding graph labels would add a redundant lookup rather than evidence.'}
+Policymakers want to reduce aggregate demand by $300 billion. MPC is 0.5, and each one-percentage-point increase in the interest rate reduces investment by $50 billion. Under this spending model, how much must the rate rise?
+A * 3 percentage points
+B   6 percentage points
+C   1.5 percentage points
+D   2 percentage points
+FB The multiplier is 2. A $300 billion total demand reduction requires investment to fall $150 billion. At $50 billion per percentage point, that requires a 3-percentage-point rate increase.
+
+LG-Q-9072 [elite] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'The economic task is self-contained; adding graph labels would add a redundant lookup rather than evidence.'}
+A reduction in money supply raises the interest rate when money demand is fixed. Now suppose money demand also falls. Without the relative sizes of the shifts, what can be predicted about the interest-rate and spending responses?
+A * Supply contraction alone raises rates; the combined transmission direction remains uncertain.
+B   Supply contraction dominates; rates rise, investment falls and aggregate demand falls.
+C   Demand contraction dominates; rates fall, investment rises and aggregate demand rises.
+D   The contractions cancel; rates, investment and aggregate demand all remain unchanged.
+FB A supply reduction puts upward pressure on the rate, while lower money demand puts downward pressure on it. Without their relative sizes, the net rate movement and the resulting investment and AD directions remain uncertain.
+
+LG-Q-9131 [legendaryboss] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'The economic task is self-contained; adding graph labels would add a redundant lookup rather than evidence.'}
+In a fixed-price spending model, monetary tightening reduces investment by $90 billion while improved business expectations independently raise autonomous investment by $30 billion. MPC is 0.6, with no taxes, imports or further interest-rate feedbacks. What is the net AD change, and what independent investment recovery would exactly offset the monetary effect?
+A * AD shifts left $150 billion; a $90 billion recovery would cancel it.
+B   AD shifts left $225 billion; a $30 billion recovery would cancel it.
+C   AD shifts left $60 billion; a $150 billion recovery would cancel it.
+D   AD shifts right $150 billion; a $90 billion recovery would cancel it.
+FB Net autonomous investment changes by −90 + 30 = −$60 billion. The multiplier is 2.5, so AD falls $150 billion. An independent $90 billion recovery would cancel the autonomous monetary loss before any multiplication.
+
+LG-Q-9132 [legendaryboss] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'The economic task is self-contained; adding graph labels would add a redundant lookup rather than evidence.'}
+The Fed wants to reduce aggregate demand by $300 billion. MPC is 0.75, and each one-percentage-point rise in the interest rate lowers investment by $25 billion. Under these assumptions, how much must the rate rise?
+A * 3 percentage points
+B   4 percentage points
+C   12 percentage points
+D   1 percentage point
+FB A multiplier of 4 means investment must fall $75 billion to lower total demand by $300 billion. Dividing by $25 billion per percentage point gives a 3-percentage-point rate increase.
+
+LG-Q-9138 [legendaryboss] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Distinct r1/r2 equilibrium rates and downward MD.', 'decision_reason': None}
+Compare the displayed money-supply change with a counterfactual in which interest rates respond but firms no longer change investment. Which link would fail, and what does the original money-market panel establish?
+A   The rate-to-investment link fails; the original rate stays at r1, consistent with a flat-rate liquidity-trap segment.
+B * The rate-to-investment link fails; the original rate changes from r1 to r2, so that panel does not show a liquidity trap.
+C   The supply-to-rate link fails; the original rate changes from r1 to r2 despite the assumed investment insensitivity.
+D   The rate-to-investment link fails; the original rate change proves policy has the same output effect even when investment stops responding.
+FB The figure shows the rate moving from r1 to r2 as supply contracts. The hypothetical failure is farther along the chain: the rate no longer changes investment. A rate-responsive money market is different from the flat near-zero-rate case used to illustrate a liquidity trap.

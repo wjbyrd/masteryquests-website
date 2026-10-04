@@ -1,0 +1,207 @@
+LG-Q-9125 [legendaryboss] {'advanced_inference': {'type': 'diagnosis', 'new': 'Identify a resource cost omitted by an argument based only on net financial transfers.'}}
+A $200 fixed nominal debt was agreed with expected inflation2%, but actual inflation is7%. Firms also incur real repricing costs. An analyst nets borrowers' gains against lenders' losses and concludes that inflation has no social cost in this case. What is missing?
+A   Borrowers' gains are additional real output, so they necessarily exceed all repricing costs.
+B * The debt surprise redistributes purchasing power, but repricing uses real resources that do not disappear when transfers are netted.
+C   Lenders gain from higher-than-expected inflation, so netting the debt transfer is impossible.
+D   Repricing is itself only a transfer between borrower and lender, with no resource use.
+FB Unexpected inflation reduces the real value of fixed repayments, favoring borrowers over lenders. That redistribution is distinct from resources spent changing prices. Offsetting financial gains and losses therefore does not eliminate menu costs.
+
+LG-Q-9124 [legendaryboss] {'advanced_inference': {'type': 'assumption test', 'new': 'Recognize erosion of the real balance on which a repeated inflation loss acts.'}}
+A household keeps $180 in currency as prices rise25%, with no interest paid. An analyst predicts the same dollar amount of real purchasing-power loss from another25% price rise while the cash balance stays fixed. Is that prediction correct?
+A   Yes. Equal percentage inflation always removes an equal absolute amount of purchasing power from fixed nominal cash.
+B   No. The first rise removes25% of nominal currency, leaving fewer physical dollars to tax next time.
+C * No. The first rise removes20% of initial real balances; another equal inflation rate acts on a smaller remaining real balance.
+D   Yes. The household's real cash balance is fixed because its nominal dollars do not change.
+FB Each25% price rise multiplies real balances by1/1.25=0.8. After the first rise only80% of the original real balance remains; the next20% erosion applies to that smaller base. Nominal dollars stay$180 throughout.
+
+PM2C2-ITAX-LB-001 [legendaryBoss] {'advanced_inference': {'type': 'policy evaluation', 'new': 'Evaluate a nominal-contract adjustment that neutralizes a real deflation burden.'}}
+A household owes a fixed nominal $300. Prices fall10%. A lender proposes reducing nominal principal by10% to keep the debt's real burden at its pre-deflation level. Would that adjustment accomplish the stated goal?
+A * Yes. Without adjustment the real burden rises about11.1%; reducing principal to $270 offsets the price decline exactly.
+B   No. Principal must fall11.1% because the unadjusted real-burden increase and required nominal reduction have the same percentage.
+C   Yes. The adjustment is unnecessary, however, because fixed nominal debt always has a fixed real burden.
+D   No. Deflation lowers the real burden already, so preserving it requires a larger nominal principal.
+FB The unadjusted real factor is1/0.9≈1.1111. With a10% principal reduction, the factor becomes0.9/0.9=1. A reciprocal11.1% real increase does not mean the offsetting nominal adjustment must also be11.1%.
+
+LG-Q-9121 [legendaryboss] {'advanced_inference': {'type': 'policy evaluation', 'new': 'Evaluate the incidence and costless-finance claim using unequal money holdings.'}}
+Government finances $160 of purchases by creating money. With stable velocity and fixed long-run real output, an official calls this costless finance because no statutory tax bill is issued. What would a comparison of households with different cash holdings reveal?
+A   All households bear equal real losses because the government purchase amount is the same for everyone.
+B * Existing money holders lose purchasing power as prices rise; larger unprotected money balances create greater exposure even without a tax bill.
+C   No household loses purchasing power because money creation adds the same amount of real output as the purchases.
+D   Only borrowers lose purchasing power, while holding currency fully protects households from inflation.
+FB Money financing gives government a claim on real goods under the stated output constraint. Inflation erodes M/P for existing money holders. The burden depends on balances and timing rather than equal statutory assessments, so absence of a tax bill does not establish costless finance.
+
+ECON-SP-FINALBOSS-4015 [legendary] {'advanced_inference': {'type': 'policy evaluation', 'new': 'Evaluate an output target against updated productive capacity.'}}
+Productivity raises potential output from500 to600, while a temporary demand expansion raises actual output to700. Officials propose returning demand to a level that would restore output500. Would reaching the old output benchmark close the current gap?
+A   Yes. The old potential500 remains the correct target even after productive capacity increases.
+B   No. Actual output700 is now potential, so any reduction below700 destroys capacity.
+C * No. It would replace a100-unit inflationary gap with a100-unit recessionary gap relative to the new potential600.
+D   Yes. Demand restraint automatically reverses the productivity gain and returns LRAS to500.
+FB Current output exceeds new potential by700−600=100. Returning actual output to500 would place it100 below that new benchmark. Demand stabilization should not mistake the old capacity level for the current one.
+
+ECON-SP-MEDIUMBOSS-3008 [legendary] {'advanced_inference': {'type': 'short-run/long-run reconciliation', 'new': 'Separate the persistent capacity gain from the temporary demand-driven part of observed growth.'}}
+Potential output rises from1700 to2040 after a productivity improvement, and temporary demand expansion raises actual output to2380. An official calls the full680-unit actual-output gain permanent. What would happen if demand pressure disappeared while the productivity gain remained?
+A   Output must return to1700 because any reduction in demand erases all productivity gains.
+B   Output remains2380 because reaching a level once makes it productive capacity.
+C * Output could settle near2040: the340-unit capacity gain remains, while the340-unit positive demand gap closes.
+D   Output falls below1700 because a productivity improvement lowers the long-run supply of output.
+FB Capacity increases2040−1700=340, while actual output exceeds it by2380−2040=340. Removing temporary demand pressure need not remove the independently established productivity gain.
+
+ECON-SP-LEGENDARYBOSS-9106 [legendary] {'advanced_inference': {'type': 'policy evaluation', 'new': 'Assess the feasibility of a permanent demand-only output target above updated capacity.'}}
+Productivity raises potential output from1100 to1320, and demand expansion raises actual output to1540. A proposal promises to sustain1540 indefinitely through demand support alone, with no further capacity change. What limitation does the updated output gap reveal?
+A   The440-unit increase above1100 is entirely capacity growth, so no further supply improvement is needed.
+B   There is no gap because1320 replaces1100 only after demand returns to its old level.
+C   The economy is220 units below potential, so permanently higher demand removes a recessionary gap.
+D * The220-unit gap above1320 is demand-driven; sustained demand support alone does not create the additional capacity needed for1540.
+FB The capacity gain is220, but actual output1540 exceeds new potential1320 by another220. Demand can sustain pressure on prices and activity; it is not itself an increase in the productive benchmark.
+
+ECON-NL-LEGENDARY-9047 [legendary] {'advanced_inference': {'type': 'identification limit', 'new': 'Distinguish a real per-capita ranking from an unsupported claim about every person.'}}
+At comparable base prices, Cedar has nominal GDP $960 billion, deflator120 and32 million residents; Delta has $1,320 billion, deflator150 and44 million residents. Does the real-GDP-per-person comparison establish that every Cedar resident has a higher living standard than every Delta resident?
+A * No. The averages are $25,000 and $20,000, but averages alone do not establish how output or income is distributed among residents.
+B   Yes. Once the average is deflated, it gives the real income of each individual resident.
+C   No. Both averages are $30,000 because comparable base prices make deflation unnecessary.
+D   Yes. Delta's larger nominal GDP necessarily means every Cedar resident is poorer regardless of population.
+FB Real totals are960/1.2=800 and1320/1.5=880 billion. Dividing by populations gives$25,000 and$20,000 per person. Those are averages of measured production, not individual income observations or complete welfare measures.
+
+LG-Q-9107 [legendaryboss] {'advanced_inference': {'type': 'diagnosis', 'new': 'Use an observed policy miss to distinguish actual from maximum multiplier calibration.'}}
+In a stated deposit-multiplier model, a central bank seeks an $800 deposit contraction. The estimated actual multiplier is4, while the textbook maximum is10. An $80 reserve removal based on the maximum contracts deposits by only $320. What explains the miss?
+A   The operation removed too many reserves; the smaller actual multiplier requires only $32 of reserve removal.
+B * The operation used an overly large multiplier; under the estimate, a total $200 reserve removal is needed for the target.
+C   The multiplier estimate must be ignored because a theoretical maximum is always the realized response.
+D   The contraction proves reserves must be added to reduce deposits in the same model.
+FB With actual multiplier4, removing80 predicts a320 contraction, matching the miss. Reaching800 requires800/4=200 total reserve removal,120 beyond the original operation. A maximum can overstate actual deposit response; this remains a stipulated model exercise.
+
+P52B-S3-MFM-LB-002 [legendaryBoss] {'advanced_inference': {'type': 'diagnosis', 'new': 'Identify an aggregate change that cannot result from a pure within-M2 portfolio transfer.'}}
+A household has $280 in checking, $560 in savings and $280 in a small time deposit. Under current U.S. definitions, it moves the time deposit into savings. A report records M1 up $280 and M2 up $280, attributing both to this transfer. Can that account be reconciled without another transaction?
+A   Yes. Entering savings creates $280 of new broad money even though the funds were already in a time deposit.
+B * No. M1 rises $280, but M2 is unchanged; the reported M2 increase requires another source or a reporting error.
+C   No. M1 must fall $280 because savings is excluded while small time deposits are included.
+D   Yes. Moving any deposit between accounts increases both aggregates by the amount transferred.
+FB Under the stated current convention, savings belongs to M1 and small time deposits do not; both belong to M2. The transfer changes the narrower classification while leaving broad money unchanged. It cannot alone explain both reported increases.
+
+PMOE-NER-LB-002 [legendary] {'advanced_inference': {'type': 'competing mechanisms', 'new': 'Separate the unit-price effect from the volume response in an observed revenue change.'}}
+A British product's pound price rises6%, the pound depreciates8% against the dollar and U.S. sales volume rises5%. An analyst says the depreciation must have reduced the exporter's dollar revenue. How does the price-volume decomposition bear on that claim?
+A   Dollar unit revenue rises14%, so volume is irrelevant to the total revenue increase.
+B   Dollar unit revenue falls8%, and multiplying by the5% volume gain guarantees total revenue also falls8%.
+C   Total dollar revenue rises about2.4%, proving that the dollar price paid by each buyer also rose.
+D * Dollar unit revenue falls about2.5%, but higher volume more than offsets it, raising total dollar revenue about2.4%.
+FB Dollar unit price changes by1.06×0.92−1=−2.48%. Total revenue changes by1.06×0.92×1.05−1=2.396%. The quantity response reverses the unit-revenue decline, so exchange-rate direction alone does not determine total receipts.
+
+PMOE-NER-LB-003 [legendary] {'advanced_inference': {'type': 'counterfactual', 'new': 'Evaluate a fixed-conversion hedge rather than treating opposite percentage moves as cancellation.'}}
+The dollar-per-yen quote rises10% then falls10%, and a yen-denominated asset gains4%. A costless hedge could have fixed the original conversion rate. A dealer says the currency changes cancel, so the hedge would not change the dollar return. Is that claim correct?
+A   Yes. The changes cancel exactly, giving4% with or without the hedge and no remaining quote difference.
+B   No. The unhedged return is3% exactly; a1% appreciation exactly restores the currency quote.
+C * No. The unhedged return is2.96% versus4% with the hedge; restoring the original quote alone requires about1.01% appreciation.
+D   No. The unhedged return is5.04%, so the currency movement improves on the fixed-conversion return.
+FB The quote factor is1.10×0.90=0.99, so the unhedged asset return is0.99×1.04−1=2.96%. A fixed original conversion preserves the4% yen return under the stated costless hedge. Restoring the quote requires1/0.99−1≈1.01%, not an exact1%.
+
+ECON-NL-LEGENDARYBOSS-9118 [legendaryBoss] {'advanced_inference': {'type': 'binding constraint', 'new': 'Test an hours-reduction plan using the actual productivity implied by observed output and labor.'}}
+A plant initially produces1,000 units in100 hours. Output then rises20% while hours rise25%. Management claims productivity improved and that the current1,200 units could be produced in the original100 hours without any further change. Is that plan feasible at observed productivity?
+A   Yes. Output grew20%, so productivity is12 units per hour regardless of the increase in hours.
+B * No. Productivity fell4% to9.6 units per hour;100 hours would produce960 units, so meeting1,200 requires a further productivity improvement.
+C   No. Productivity fell25%, because output growth is irrelevant to output per hour.
+D   Yes. Faster hours growth raises productivity by5%, enough to maintain the higher output with fewer hours.
+FB Observed output per hour is1,200/125=9.6, down from10. With that productivity,100 hours yield960, not1,200. A claim about feasible output must use the observed output-per-hour ratio, not total output growth.
+
+LG-Q-9122 [legendaryboss] {'advanced_inference': {'type': 'reverse inference', 'new': 'Use independently verified quantities to locate the inconsistent nominal-versus-real measurement.'}}
+Money is $200 and velocity is5. A report gives price level2 and real output1,000. An independent production count confirms real output1,000 while money and velocity are verified. Under MV=PY, which reported measure must be reconsidered?
+A * The price level must be1 rather than2; nominal spending is1,000, which cannot support that output at price2.
+B   The price level must be4; a larger output measure requires multiplying nominal spending by prices.
+C   The verified real output must be500 regardless of the independent count; accounting identities cannot reveal a price-measure error.
+D   None; nominal spending1,000 and real output1,000 are consistent with any price level.
+FB Verified MV=200×5=1,000. If verified real output is also1,000, the consistent price level isP=MV/Y=1. The original price2 would instead imply output500. The identity locates the inconsistency given which measurements are independently confirmed.
+
+PMOE-RER-L-001 [legendary] {'advanced_inference': {'type': 'competing mechanisms', 'new': 'Explain why relative inflation can overturn a nominal-appreciation conclusion.'}}
+The nominal rate rises from1.20 to1.26 foreign units per domestic unit. Domestic prices rise4% and foreign prices10%. An exporter says nominal appreciation must make domestic goods relatively dearer abroad. Does the real exchange rate support that claim?
+A   Yes. A5% nominal appreciation guarantees a5% real appreciation regardless of relative inflation.
+B   Yes. Adding the nominal and domestic price increases gives9% real appreciation; foreign prices do not enter.
+C * No. Its factor is1.05×1.04/1.10, a slight real depreciation; faster foreign inflation outweighs the nominal appreciation.
+D   No. It depreciates10% because only foreign inflation matters for international competitiveness.
+FB The real factor is1.26/1.20×1.04/1.10≈0.9927, a0.7% depreciation. The nominal exchange-rate direction alone is insufficient: relative prices slightly reverse its competitive implication.
+
+PMOE-RER-LB-002 [legendary] {'advanced_inference': {'type': 'counterfactual', 'new': 'Remove domestic inflation to identify its offsetting role in the real exchange-rate change.'}}
+Let e be foreign currency per domestic currency and ε=eP/P*. A domestic basket rises250 to270, its foreign counterpart400 to408, and e falls1.60 to1.50. Would holding the domestic basket price at250 instead of270 strengthen or weaken the real depreciation?
+A   Weaken it. The actual real rate falls1.00 to about0.993 because domestic inflation reinforces nominal depreciation.
+B   Leave it unchanged. The real rate depends only on e, which falls from1.60 to1.50 in both cases.
+C   Reverse it into appreciation. Lower domestic prices necessarily make domestic goods more expensive relative to foreign goods.
+D * Strengthen it. The actual real rate falls1.00 to about0.993; domestic inflation offsets much of the nominal depreciation.
+FB Actual ε is1.50×270/408≈0.9926 versus initial1.00. Without domestic inflation it would be1.50×250/408≈0.9191, a larger depreciation. Rising domestic prices partially offset the competitiveness effect of the cheaper currency.
+
+PM2B1-RNGDP-LB-001 [legendaryBoss] {'advanced_inference': {'type': 'assumption test', 'new': 'Identify uniform quantity growth as the assumption making the real-growth result independent of fixed weights.'}}
+Initially160 books cost $4 each and80 meals cost $10 each. Both quantities rise10% and both prices20%, so nominal GDP rises32%. An analyst says using different positive base prices could change real growth from10% to32%. Is that possible here?
+A   Yes. Choosing current prices as fixed weights always turns nominal growth into real growth.
+B * No. Because both quantities rise by the same10%, any fixed positive price weights give10% real growth;32% includes price growth.
+C   No. Real growth is12% under every weighting because32 minus20 is exact deflation.
+D   Yes. A higher weight on either good changes its quantity growth from10% to32%.
+FB With uniform quantity growth, the whole fixed-price sum is multiplied by1.10 regardless of the chosen positive weights. Nominal growth is1.10×1.20−1=32%. This weight-invariance depends on uniform quantity growth; it is not a general rule for changing output composition.
+
+ECON-NL-LEGENDARYBOSS-9103 [legendaryBoss] {'advanced_inference': {'type': 'diagnosis', 'new': 'Find the measurement error in a plausible but incorrect nominal-minus-inflation argument.'}}
+Nominal GDP rises from $715 billion to $756 billion while a common-base deflator rises130 to140. A report subtracts the10 index-point increase from nominal growth of about5.7%, claiming real GDP fell about4.3%. What is the error?
+A * It treats index points as percentage inflation; correct deflation gives real GDP550 then540 billion, a decline of about1.8%.
+B   It should add the10 index points to nominal growth, giving real growth of about15.7%.
+C   It should use nominal growth alone because common-base deflators cannot change real-output comparisons.
+D   It correctly measures inflation as10%; the only error is rounding the nominal growth rate.
+FB The price factor is140/130, not1.10. Real levels are715/1.30=550 and756/1.40=540. Their decline is10/550≈1.8%; subtracting index points from a growth percentage mixes incompatible measures.
+
+ECON-EC-LEGENDARYBOSS-20005 [legendaryBoss] {'advanced_inference': {'type': 'counterfactual', 'new': 'Compare fixed and inflation-protected contracts under an inflation surprise.'}}
+A $140 fixed-rate loan pays8% nominal interest. Expected inflation was3%, but actual inflation is6%. An alternative inflation-indexed loan would have preserved the expected real return. Using the Fisher approximation, how does the inflation surprise affect the fixed loan relative to that alternative?
+A   Its realized real return rises from2% to5%, transferring purchasing power toward the lender compared with the indexed contract.
+B   Both contracts yield5% in real terms because a fixed nominal rate also fixes purchasing-power interest.
+C   The fixed loan yields2% and the indexed loan also yields2%, because indexing cannot respond to unexpected inflation.
+D * Its realized real return falls from the expected5% to2%, transferring purchasing power toward the borrower compared with the indexed contract.
+FB The fixed loan has expected real return8−3=5% but realized return8−6=2%. A contract that preserves the expected real return would adjust nominal payments for inflation; the fixed borrower therefore benefits relative to that counterfactual.
+
+ECON-EC-LEGENDARYBOSS-20004 [legendaryBoss] {'advanced_inference': {'type': 'identification limit', 'new': 'Identify missing income and balance weights needed to combine opposing real effects.'}}
+A person earns8% nominal interest on savings, faces6% inflation and receives a4% wage increase. They claim their overall purchasing power must have risen because the savings return is positive in real terms. Is that conclusion established?
+A * No. Savings earn a positive real return while the real wage falls; balances and the importance of wage income are needed for the overall comparison.
+B   Yes. Any positive real return on one source guarantees that total purchasing power rises.
+C   No. Both the real return and real wage fall because all nominal amounts are eroded equally by inflation.
+D   Yes. The nominal interest and wage increases add to12%, exceeding inflation regardless of income weights.
+FB The savings return exceeds inflation, while wage growth falls short of it. Combining those effects requires their economic weights; adding percentage changes on different bases cannot establish an overall purchasing-power gain.
+
+43191 [legendary] {'advanced_inference': {'type': 'counterfactual', 'new': 'Infer the household response needed for fiscal neutrality rather than equate tax finance with saving neutrality.'}}
+Initially Y=$900, T=$150, C=$600 and G=$180. Net taxes rise$20 and purchases rise$35, while Y and C stay fixed. An official says the higher taxes fully finance the purchases so national saving does not fall. What consumption change would instead be needed to keep national saving unchanged?
+A   Consumption would have to fall$15; the tax increase already raises national saving$20 independently of private saving.
+B   No change is needed; taxes are new national resources and exactly offset any government purchase increase.
+C   Consumption would have to rise$35; more household spending releases funds for public purchases.
+D * Consumption would have to fall$35; with it fixed, private saving falls$20 and public saving$15, so national saving falls$35.
+FB National saving isY−C−G. With Y and C fixed, higher G reduces it$35 regardless of the tax transfer between sectors. A$35 decline in C would offset that change. The stated sector changes are−20 private and−15 public.
+
+P52A-AS-EL-004 [elite] {'advanced_inference': {'type': 'competing mechanisms', 'new': 'Explain different output responses by distinguishing an axis-variable movement from a cost-driven shift.'}}
+Two economies experience the same rise in actual output prices. In A, wages and expected prices remain fixed; in B, wage contracts reset upward with expectations. A student predicts identical output responses because actual prices changed equally. What is missing?
+A * A moves along its existing SRAS, while B's higher expected costs also shift SRAS left, restraining its output response.
+B   Both actual-price increases shift SRAS right by the same amount, so wage-setting differences cannot matter.
+C   Only B moves along SRAS; fixed wages in A force an immediate rightward LRAS shift.
+D   B's higher expected wage costs shift SRAS right, reinforcing the output effect of the actual-price rise.
+FB Actual prices are the vertical-axis variable: changing them moves along a given supply schedule. Changed expectations and wage costs alter that schedule. Equal observed price changes therefore need not imply equal output responses under different contract conditions.
+
+P52A-AS-LB-002 [legendaryBoss] {'advanced_inference': {'type': 'counterfactual', 'new': 'Compare the surprise response with advance contract adjustment rather than merely list two stages.'}}
+Nominal wages are initially fixed when the price level unexpectedly rises; contracts later reset with higher expected inflation. Compare this with contracts that had fully incorporated the higher price level before it occurred. Which difference follows?
+A * The surprise initially raises output along SRAS before wage adjustment contracts supply; prior contract adjustment removes that particular temporary cost advantage.
+B   Both cases give the same permanent output increase because expected and actual prices have identical supply effects.
+C   Prior contract adjustment strengthens the temporary output gain by keeping real wage costs even lower.
+D   The surprise immediately shifts LRAS right, so contract timing affects only the final price level.
+FB With fixed nominal wages, unexpectedly higher output prices initially improve production incentives along SRAS. Later higher expected prices and wages shift supply left. If contracts already reflect the higher level, that initial real-cost surprise is absent.
+
+ECON-EC-LEGENDARYBOSS-20020 [legendaryBoss] {'advanced_inference': {'type': 'binding constraint', 'new': 'Evaluate catch-up when a concrete constraint prevents exploiting high marginal returns.'}}
+Two economies each employ120 workers and share similar technology and institutions. The capital-poor economy has higher marginal returns to capital but cannot finance new investment; the capital-rich economy continues investing. Does diminishing returns alone establish that the poorer economy will catch up during this period?
+A   Yes. Higher marginal returns automatically raise the poor economy's capital stock even without investment.
+B   No. The richer economy must have higher marginal returns because its output per worker is higher.
+C * No. Higher potential returns do not produce catch-up without capital accumulation; the financing constraint can prevent the gains from being realized.
+D   Yes. Equal worker counts guarantee equal productivity after any period regardless of capital accumulation.
+FB Diminishing returns describe the output gain from an additional unit of capital. They do not supply that capital. A binding financing constraint can prevent accumulation despite attractive returns, so conditional catch-up potential is not a prediction of realized convergence.
+
+LG-Q-9135 [legendaryboss] {'advanced_inference': {'type': 'counterfactual', 'new': 'Apply the automatic/discretionary distinction to a reversal in economic conditions.'}}
+In a recession, existing rules reduce taxes by$40 and raise benefits. A separate purchases bill is enacted later. Recovery begins before the bill takes effect. Which parts can reverse with recovery without another policy vote?
+A * The tax and benefit responses can reverse under existing rules; the scheduled purchases remain discretionary even if they now arrive at an inconvenient time.
+B   All changes reverse automatically because each originally supported aggregate demand.
+C   Only the purchases reverse automatically, because passage during a recession makes them an automatic stabilizer.
+D   None can reverse without a new vote, because every change in a budget amount is discretionary.
+FB Automatic stabilizers depend on economic conditions under already-enacted rules, so recovery can reverse their recession response. A separately legislated purchases program remains discretionary; its timing does not reclassify its institutional origin.
+
+LG-Q-9140 [legendaryboss] {'advanced_inference': {'type': 'policy evaluation', 'new': 'Choose the adjustable policy response needed to meet a fixed coordination target.'}}
+Monetary restraint reduces aggregate demand by a total$150 while an already-enacted fiscal program adds a total$100. Output initially equals potential and supply is fixed. Fiscal policy cannot be changed. To leave net demand unchanged, how should the monetary restraint be recalibrated?
+A * Reduce its total demand contraction to$100; the current combination leaves a$50 net decline.
+B   Increase its total demand contraction to$250, because opposing policies require adding both magnitudes.
+C   Keep it at$150, because opposite directions guarantee an exact offset regardless of amounts.
+D   Reverse it into a$50 expansion, because a positive fiscal effect always requires positive monetary support.
+FB Current total effects sum to−150+100=−50. With the fiscal total fixed, a monetary total of−100 gives zero net demand change. These are already-total effects, so no additional multiplier is applied.

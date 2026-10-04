@@ -1,0 +1,349 @@
+ECON-NL-LEGENDARYBOSS-9106 | gdp-components | tier=legendary role=legendaryBoss | MACRO | image=None
+Government sends households $80 in transfers. Recipients buy $20 of imported goods and $60 of current domestic services. No other spending changes. Which expenditure-account entry and GDP change are correct?
+A* G: $0; C: +$80; M: +$20; GDP: +$60.
+B G: +$80; C: +$80; M: +$20; GDP: +$140.
+C G: $0; C: +$80; M: $0; GDP: +$80.
+D G: $0; C: +$60; M: +$20; GDP: +$40.
+
+PM2B1-GDPC-LB-001 | gdp-components | tier=legendary role=legendaryBoss | MACRO | image=None
+Households buy $3 million of domestic services and $2 million of imports; firms buy $4 million of domestic machinery and $2 million of stock; government buys $5 million of domestic bridges and sends $1 million in transfers; exporters sell $2 million abroad. What is GDP from these transactions?
+A* $14 million
+B $19 million
+C $17 million
+D $12 million
+
+ECON-NL-ELITE-303 | gdp-measurement | tier=elite role=elite | MACRO | image=None
+A mill sells $180 of flour made from $70 of current domestic grain. A baker uses all the flour in $310 of bread sold to households. What are the baker’s value added and GDP across the full domestic chain?
+A* $130 at the bakery; $310 across the chain
+B $240 at the bakery; $560 across the chain
+C $310 at the bakery; $310 across the chain
+D $130 at the bakery; $490 across the chain
+
+ECON-NL-LEGENDARY-9001 | gdp-measurement | tier=legendary role=legendary | MACRO | image=None
+A domestic assembler sells $420,000 of new equipment, using $150,000 of imported parts and $90,000 of current domestic components. A clerk adds all three values as domestic GDP. What correction reconciles final spending with domestic value added?
+A* $270,000 total domestic GDP, including $180,000 at assembly
+B $420,000 total domestic GDP, including $330,000 at assembly
+C $510,000 total domestic GDP, including $420,000 at assembly
+D $180,000 total domestic GDP, excluding the domestic component makers
+
+ECON-NL-LEGENDARY-9003 | gdp-measurement | tier=legendary role=legendary | MACRO | image=None
+A workshop sells $560 of new furniture after buying $140 of domestic lumber. Its wage bill is $250 and rent plus interest is $90. With no other costs or taxes, which value-added and profit account is consistent?
+A* $420 value added, including $80 profit
+B $560 value added, including $220 profit
+C $280 value added, including $80 profit
+D $420 value added, including $420 profit
+
+ECON-NL-LEGENDARY-9009 | gdp-measurement | tier=legendary role=legendary | MACRO | image=None
+A renovation business bills households $96,000, including $24,000 of imported fixtures. It also brokers an old building for a $6,000 fee; the building sells for $310,000. Ignoring other inputs, what current domestic production and counting rule follow?
+A* $78,000; count domestic renovation value and the new brokerage service
+B $388,000; the old building becomes current output when sold
+C $102,000; imported fixtures count because households bought them
+D $72,000; services attached to used assets must also be excluded
+
+ECON-NL-LEGENDARY-9010 | gdp-measurement | tier=legendary role=legendary | MACRO | image=None
+A production audit reports $74 million of final sales and $6 million of new inventories. Domestic production income is $51 million in wages, $9 million in rent and interest, and unreported profit. With no imports, taxes or depreciation adjustments, which result closes both accounts?
+A* $80 million GDP and $20 million profit
+B $74 million GDP and $14 million profit
+C $86 million GDP and $26 million profit
+D $60 million GDP and $20 million profit
+
+ECON-NL-LEGENDARY-9011 | gdp-measurement | tier=legendary role=legendary | MACRO | image=None
+A used machine changes hands for $40,000 through a broker charging $2,000. A new domestic machine worth $28,000 is produced but remains unsold. An analyst counts only the $40,000 resale as this year’s GDP. What is the corrected contribution?
+A* $30,000: brokerage service plus inventory investment
+B $42,000: resale plus brokerage service
+C $70,000: every transaction and unsold machine
+D $2,000: unsold output cannot count until purchased
+
+ECON-EC-EASYBOSS-17004 | gdp-measurement | tier=easy role=boss | MACRO | image=None
+A domestic farm sells grain for $20 to a domestic mill, which sells flour for $35 to a domestic bakery. The bakery sells all bread to households for $60. No inventories change. An accountant adds all three sales to GDP. Which correction reconciles expenditure with value added?
+A Count $115; every sale is separate current output
+B Count $25; only the bakery creates final value
+C Count $95; exclude the farm but retain the mill's intermediate sale
+D* Count $60; summing each producer's value added gives the same final-output value
+
+ECON-EC-EASYBOSS-17005 | gdp-measurement | tier=easy role=boss | MACRO | image=None
+A household buys a used domestic machine for $62 through a dealer charging a current service fee of $22. The machine was produced last year. Which pair correctly compares current GDP with the household's total payment?
+A Current GDP rises $62; the dealer fee is only a transfer
+B Current GDP is unchanged; anything connected to a used asset is excluded
+C* Current GDP rises $22; the larger payment includes transfer of an existing asset
+D Current GDP rises $84; both the machine and dealer service are newly produced
+
+ECON-EC-EASYBOSS-17010 | gdp-measurement | tier=easy role=boss | MACRO | image=None
+A domestic factory produces $64 of final goods, sells $39, and holds the remainder as new inventory. A report uses sales alone and says GDP will rise when the inventory is sold next year without new production. Which correction is valid?
+A Current GDP includes $103; next year's sale contributes nothing
+B Current GDP includes $25; only unsold goods are counted this year
+C* Current GDP includes $64; next year's inventory sale is offset by inventory disinvestment
+D Current GDP includes $39; next year's sale adds the remaining output again
+
+ECON-EC-EASYBOSS-17011 | gdp-measurement | tier=easy role=boss | MACRO | image=None
+A foreign-owned factory produces $66 of final output inside the country and sends $26 of profit to its foreign owners. A domestically owned factory produces $41 abroad. For domestic GDP, which ledger is correct?
+A Include $107; GDP adds domestic location and domestic ownership.
+B* Include $66; GDP follows production location rather than ownership.
+C Include $41; GDP follows the owners' nationality rather than location.
+D Include $40; GDP deducts foreign profit remittances from domestic output.
+
+ECON-EC-EASYBOSS-17013 | gdp-measurement | tier=easy role=boss | MACRO | image=None
+A current domestic final sale is $68. Wages are $28, other production income is $15, and profit is the residual. A reviewer claims expenditure exceeds income because profit is omitted from the income account. Which reconciliation is correct?
+A Profit is $40; only wages count as costs in the income account
+B Profit is $43; adding it doubles total income
+C Profit is zero; the expenditure-income gap is genuine output
+D* Profit is $25; adding it makes income equal the $68 expenditure
+
+ECON-EC-EASYBOSS-17014 | gdp-measurement | tier=easy role=boss | MACRO | image=None
+A household buys a $70 newly produced domestic computer and a $45 existing corporate share. A broker supplies a new service charging $30. Which revision to a report counting all three payments is correct?
+A Subtract the $70 computer; financial transactions contribute $75
+B Subtract both the share and service; only $70 counts
+C* Subtract the $45 share transfer; the computer and brokerage service contribute $100
+D Subtract the $30 service; the computer and share contribute $115
+
+ECON-EC-EASYBOSS-17022 | gdp-measurement | tier=easy role=boss | MACRO | image=None
+A producer reports $72 of final output. A supplier's $32 input is already embodied in it. The national accounts also record $47 of unrelated domestic services. Which proposed GDP total counts each unit of current output once?
+A $151; every observed sale is added
+B $87; subtract the input from final output even though it was never added
+C $72; services are excluded when goods have intermediate inputs
+D* $119; count final output and unrelated services, without adding its embodied input
+
+ECON-NL-EASYBOSS-2000 | gdp-measurement | tier=easy role=boss | MACRO | image=None
+A domestic farm sells grain for $34 to a domestic mill, which sells flour for $49 to a domestic bakery. The bakery sells all bread to households for $74. No inventories change. An accountant adds all three sales to GDP. Which correction reconciles expenditure with value added?
+A Count $157; every sale is separate current output
+B Count $25; only the bakery creates final value
+C Count $123; exclude the farm but retain the mill's intermediate sale
+D* Count $74; summing each producer's value added gives the same final-output value
+
+ECON-NL-EASYBOSS-2001 | gdp-measurement | tier=easy role=boss | MACRO | image=None
+A household buys a used domestic machine for $76 through a dealer charging a current service fee of $36. The machine was produced last year. Which pair correctly compares current GDP with the household's total payment?
+A Current GDP rises $76; the dealer fee is only a transfer
+B Current GDP is unchanged; anything connected to a used asset is excluded
+C* Current GDP rises $36; the larger payment includes transfer of an existing asset
+D Current GDP rises $112; both the machine and dealer service are newly produced
+
+ECON-NL-EASYBOSS-2002 | gdp-measurement | tier=easy role=boss | MACRO | image=None
+A domestic factory produces $78 of final goods, sells $53, and holds the remainder as new inventory. A report uses sales alone and says GDP will rise when the inventory is sold next year without new production. Which correction is valid?
+A Current GDP includes $25; only unsold goods are counted this year
+B* Current GDP includes $78; next year's inventory sale is offset by inventory disinvestment
+C Current GDP includes $53; next year's sale adds the remaining output again
+D Current GDP includes $131; next year's sale contributes nothing
+
+ECON-NL-EASYBOSS-2003 | gdp-measurement | tier=easy role=boss | MACRO | image=None
+A foreign-owned factory produces $80 of final output inside the country and sends $40 of profit to its foreign owners. A domestically owned factory produces $55 abroad. For domestic GDP, which ledger is correct?
+A* Include $80; GDP follows production location rather than ownership.
+B Include $135; GDP adds domestic location and domestic ownership.
+C Include $55; GDP follows the owners' nationality rather than location.
+D Include $40; GDP deducts foreign profit remittances from domestic output.
+
+ECON-NL-EASYBOSS-2004 | gdp-measurement | tier=easy role=boss | MACRO | image=None
+A current domestic final sale is $82. Wages are $42, other production income is $15, and profit is the residual. A reviewer claims expenditure exceeds income because profit is omitted from the income account. Which reconciliation is correct?
+A Profit is $40; only wages count as costs in the income account
+B Profit is $57; adding it doubles total income
+C Profit is zero; the expenditure-income gap is genuine output
+D* Profit is $25; adding it makes income equal the $82 expenditure
+
+ECON-NL-EASYBOSS-2005 | gdp-measurement | tier=easy role=boss | MACRO | image=None
+A household buys a $84 newly produced domestic computer and a $59 existing corporate share. A broker supplies a new service charging $44. Which revision to a report counting all three payments is correct?
+A Subtract the $84 computer; financial transactions contribute $103
+B Subtract both the share and service; only $84 counts
+C* Subtract the $59 share transfer; the computer and brokerage service contribute $128
+D Subtract the $44 service; the computer and share contribute $143
+
+P52B-S3-GDPM-B2-001 | gdp-measurement | tier=medium role=boss | MACRO | image=None
+A domestic factory produces $92 of final goods, sells $67, and holds the remainder as new inventory. A report uses sales alone and says GDP will rise when the inventory is sold next year without new production. Which correction is valid?
+A* Current GDP includes $92; next year's inventory sale is offset by inventory disinvestment
+B Current GDP includes $67; next year's sale adds the remaining output again
+C Current GDP includes $159; next year's sale contributes nothing
+D Current GDP includes $25; only unsold goods are counted this year
+
+P52B-S3-GDPM-B2-002 | gdp-measurement | tier=medium role=boss | MACRO | image=None
+A foreign-owned factory produces $94 of final output inside the country and sends $54 of profit to its foreign owners. A domestically owned factory produces $69 abroad. For domestic GDP, which ledger is correct?
+A Include $163; GDP adds domestic location and domestic ownership.
+B Include $69; GDP follows the owners' nationality rather than location.
+C Include $40; GDP deducts foreign profit remittances from domestic output.
+D* Include $94; GDP follows production location rather than ownership.
+
+P52B-S3-GDPM-B2-003 | gdp-measurement | tier=medium role=boss | MACRO | image=None
+A current domestic final sale is $96. Wages are $56, other production income is $15, and profit is the residual. A reviewer claims expenditure exceeds income because profit is omitted from the income account. Which reconciliation is correct?
+A Profit is $71; adding it doubles total income
+B Profit is zero; the expenditure-income gap is genuine output
+C* Profit is $25; adding it makes income equal the $96 expenditure
+D Profit is $40; only wages count as costs in the income account
+
+P52B-S3-GDPM-B3-001 | gdp-measurement | tier=hard role=boss | MACRO | image=None
+A household buys a $98 newly produced domestic computer and a $73 existing corporate share. A broker supplies a new service charging $58. Which revision to a report counting all three payments is correct?
+A Subtract the $58 service; the computer and share contribute $171
+B Subtract the $98 computer; financial transactions contribute $131
+C Subtract both the share and service; only $98 counts
+D* Subtract the $73 share transfer; the computer and brokerage service contribute $156
+
+P52B-S3-GDPM-B3-002 | gdp-measurement | tier=hard role=boss | MACRO | image=None
+A producer reports $100 of final output. A supplier's $60 input is already embodied in it. The national accounts also record $75 of unrelated domestic services. Which proposed GDP total counts each unit of current output once?
+A $115; subtract the input from final output even though it was never added
+B $100; services are excluded when goods have intermediate inputs
+C* $175; count final output and unrelated services, without adding its embodied input
+D $235; every observed sale is added
+
+P52B-S3-GDPM-B3-003 | gdp-measurement | tier=hard role=boss | MACRO | image=None
+A domestic farm sells grain for $62 to a domestic mill, which sells flour for $77 to a domestic bakery. The bakery sells all bread to households for $102. No inventories change. An accountant adds all three sales to GDP. Which correction reconciles expenditure with value added?
+A Count $179; exclude the farm but retain the mill's intermediate sale
+B* Count $102; summing each producer's value added gives the same final-output value
+C Count $241; every sale is separate current output
+D Count $25; only the bakery creates final value
+
+ECON-NL-LEGENDARYBOSS-9101 | gdp-measurement | tier=legendary role=legendaryBoss | MACRO | image=None
+A producer reports $86 of final output. A supplier's $46 input is already embodied in it. The national accounts also record $61 of unrelated domestic services. Which proposed GDP total counts each unit of current output once?
+A $86; services are excluded when goods have intermediate inputs
+B* $147; count final output and unrelated services, without adding its embodied input
+C $193; every observed sale is added
+D $101; subtract the input from final output even though it was never added
+
+ECON-NL-LEGENDARYBOSS-9102 | gdp-measurement | tier=legendary role=legendaryBoss | MACRO | image=None
+A domestic farm sells grain for $48 to a domestic mill, which sells flour for $63 to a domestic bakery. The bakery sells all bread to households for $88. No inventories change. An accountant adds all three sales to GDP. Which correction reconciles expenditure with value added?
+A* Count $88; summing each producer's value added gives the same final-output value
+B Count $199; every sale is separate current output
+C Count $25; only the bakery creates final value
+D Count $151; exclude the farm but retain the mill's intermediate sale
+
+ECON-NL-LEGENDARYBOSS-9107 | gdp-measurement | tier=legendary role=legendaryBoss | MACRO | image=None
+A household buys a used domestic machine for $90 through a dealer charging a current service fee of $50. The machine was produced last year. Which pair correctly compares current GDP with the household's total payment?
+A Current GDP rises $140; both the machine and dealer service are newly produced
+B Current GDP rises $90; the dealer fee is only a transfer
+C Current GDP is unchanged; anything connected to a used asset is excluded
+D* Current GDP rises $50; the larger payment includes transfer of an existing asset
+
+P52B-INC-EL-001 | incentives | tier=elite role=elite | SHARED | image=None
+A policy rewards hospitals for reducing readmissions. Hospitals improve follow-up care but also become reluctant to admit high-risk patients. What is the strongest evaluation?
+A Lower readmissions establish better care for the original patient population; admission changes are a separate efficiency gain.
+B High-risk avoidance explains the improvement completely; follow-up changes cannot independently contribute to the measured result.
+C Better follow-up establishes improved access; compare hospitals using raw readmission rates to retain the selection effect.
+D* Improved follow-up and avoidance of risky patients can both lower readmissions; compare access and risk-adjusted outcomes.
+
+P74-INC-EL-003 | incentives | tier=elite role=elite | SHARED | image=None
+A nonprofit grant rewards providers for placing clients in jobs that last at least 30 days. Providers avoid applicants needing intensive support and favor easy placements. Which redesign would reward successful placements without encouraging providers to avoid clients who need more support?
+A* Reward sustained outcomes while adjusting targets for client difficulty
+B Pay only for the raw number of 30-day placements
+C Remove all performance information from funding decisions
+D Assume selection disappears when providers share the mission
+
+P74-INC-EL-004 | incentives | tier=elite role=elite | SHARED | image=None
+An energy plan combines a peak-hour surcharge, a monthly conservation badge, and a rebate for smart thermostats. Which analysis is strongest?
+A* The surcharge targets peak timing, the badge targets status, and the rebate changes equipment cost; responses depend on constraints.
+B The surcharge and badge both reward lower total use, while the rebate leaves the cost of conservation equipment unchanged.
+C The rebate targets peak timing, the surcharge targets equipment purchase, and the badge reveals each household’s willingness to pay.
+D The three measures all lower the same marginal electricity price, so peak-use changes identify their separate contributions.
+
+ECON-MG-LEGENDARY-9043 | incentives | tier=legendary role=legendary | SHARED | image=None
+After a higher hourly minimum wage, a firm raises hourly pay but reduces scheduled hours and employer-paid training. A report calls the higher hourly rate proof that every worker gained. Which review addresses the missing incentive responses?
+A* Compare hours, total earnings and training changes for affected workers
+B Use the hourly rate alone because other employment terms are not wages
+C Infer that lower hours prove every worker lost despite higher hourly pay
+D Treat the firm's adjustment as proof it did not respond to the wage rule
+
+ECON-MG-LEGENDARY-9079 | incentives | tier=legendary role=legendary | SHARED | image=None
+A subscription service makes cancellation require a phone call but lets upgrades occur with one click. Cancellations fall and complaints rise. What is the strongest inference?
+A* Exit friction can reduce cancellation despite dissatisfaction; easier upgrades do not remove the cost of leaving.
+B Stronger service preference best explains retention; complaints mainly show that retained users demand more service quality.
+C One-click upgrades best explain retention; the phone requirement mainly reallocates existing demand across service tiers.
+D The phone call screens out low-value cancellations; fewer cancellations therefore indicate higher consumer welfare.
+
+ECON-MG-LEGENDARY-9082 | incentives | tier=legendary role=legendary | SHARED | image=None
+A repair subsidy pays for every completed repair. Claims rise sharply, but most claimants would have repaired anyway; some shops relabel routine servicing. What evidence best identifies the intended response?
+A* Additional genuine repairs relative to comparable users without the subsidy
+B The total number of paid claims, treating each as a newly induced repair
+C The size of the subsidy budget, treating expenditure as added repair benefit
+D The stated repair goal, treating relabeling as evidence of no behavioral response
+
+ECON-MG-LEGENDARY-9085 | incentives | tier=legendary role=legendary | SHARED | image=None
+A software platform ranks creators by daily posting frequency. Posting rises, but creators split one useful guide into many thin updates. What does the response reveal?
+A* The ranking rewards posting frequency, so creators can raise measured output while reducing useful content per post.
+B The ranking reveals stronger reader demand for short posts, so more posts establish an increase in information value.
+C The ranking lowers the cost of writing, so thinner posts indicate a productivity gain at unchanged information quality.
+D The ranking rewards guide quality indirectly, so splitting a guide raises both measured output and the original learning benefit.
+
+ECON-MG-LEGENDARY-9088 | incentives | tier=legendary role=legendary | SHARED | image=None
+A city reduces bus fares to increase ridership. Ridership rises, but crowding makes some riders switch back to cars. What is the strongest lesson?
+A* Lower fares attract riders, but congestion raises time costs and feeds back to reduce part of the initial ridership gain.
+B The initial fare response proves demand shifted right; riders returning to cars show the fare cut later shifted supply left.
+C Returning riders reveal more elastic money-price demand; their switch implies the initial ridership increase was measured incorrectly.
+D Crowding raises the service’s money price implicitly; the resulting ridership decline establishes that the fare policy reduced total welfare.
+
+P74-INC-L-007 | incentives | tier=legendary role=legendary | SHARED | image=None
+A teacher bonus depends on class-average scores. Teachers provide extra review but also discourage low-performing students from testing. What should an evaluator conclude?
+A* Higher scores may reflect both extra instruction and changed test participation; compare learning for the original student group.
+B Higher scores measure extra instruction if bonuses are uniform; excluding weak students then represents improved classroom efficiency.
+C Changed participation fully explains higher scores; extra review has no independent effect once selection incentives exist.
+D Average scores remain comparable across years if the test is unchanged; student participation changes affect only the sample size.
+
+P74-INC-L-008 | incentives | tier=legendary role=legendary | SHARED | image=None
+A university receives funding for degrees completed on time. Advising improves, but difficult required courses are weakened. What is the strongest interpretation?
+A* Funding rewards completion speed, so advising effort and lower course standards can both improve the metric without equal learning gains.
+B Funding rewards educational quality, so faster completion and easier courses jointly establish more learning per enrolled student.
+C Easier courses explain completion gains entirely, so advising improvements cannot contribute to the measured funding outcome.
+D Faster completion reduces students’ time costs, so course standards have no additional role in evaluating the policy’s net benefit.
+
+P74-INC-L-010 | incentives | tier=legendary role=legendary | SHARED | image=None
+A health insurer waives copays for preventive visits but raises emergency-room copays. Which response is most defensible?
+A* Lower preventive prices and higher emergency prices encourage substitution, but access and urgent needs constrain which patients can switch.
+B The price changes chiefly reduce total visits; patients with limited preventive access can substitute as readily as other patients.
+C The preventive subsidy raises income rather than relative prices; changes in emergency use therefore identify only the copay increase.
+D Emergency use should fall most for unavoidable acute cases; elective preventive care is least responsive to the lower copay.
+
+P74-INC-L-011 | incentives | tier=legendary role=legendary | SHARED | image=None
+A city pays restaurants for each kilogram of food donated. Donations rise, but some restaurants overproduce near closing time. What does this show?
+A* The payment rewards donated kilograms, so it can induce both recovery of surplus food and production that would not otherwise occur.
+B The payment rewards avoided waste, so additional production confirms that previously wasted food has been redirected efficiently.
+C Overproduction indicates stronger final-consumer demand; donated kilograms are therefore unrelated to the payment’s production incentive.
+D Donations transfer food between users, so extra production costs cancel from welfare whenever recipients value the donated meals.
+
+P74-INC-L-014 | incentives | tier=legendary role=legendary | SHARED | image=None
+A factory posts team safety rankings without cash prizes. Reporting rises, but some teams relabel minor incidents as near misses. Which conclusion is best?
+A* Status rewards can change reporting and relabeling; independently measured injuries are needed to identify real safety improvement.
+B Higher reporting shows actual injuries increased; relabeling minor cases changes only terminology and not the measured ranking.
+C Relabeling improves risk classification; higher ranking positions therefore identify better safety even without independent injury data.
+D Noncash status rewards mainly reveal team preferences; higher reported safety establishes that effort rose equally across teams.
+
+P74-INC-L-016 | incentives | tier=legendary role=legendary | SHARED | image=None
+A platform threatens suspension for false listings, but enforcement reviews only complaints from paying users. What response is most plausible?
+A* Expected sanctions differ by customer group, so sellers may redirect deception toward users whose complaints do not trigger review.
+B A uniform suspension penalty creates equal deterrence across users, so different complaint review rules mainly affect paperwork.
+C Paying users receive more review, so sellers face a stronger incentive to deceive them in order to cover expected sanctions.
+D The threat discourages entry by dishonest sellers, so surviving sellers’ choices between user groups are unaffected by enforcement.
+
+P74-INC-L-017 | incentives | tier=legendary role=legendary | SHARED | image=None
+A government contract pays builders for finishing early and penalizes visible defects, but not hidden maintenance problems. What risk remains?
+A* Rewards cover speed and observable defects, so effort can shift from hidden durability toward the measured dimensions.
+B The defect penalty prices all quality losses, so earlier completion also establishes greater hidden durability.
+C The speed reward and defect penalty create opposing incentives, so their combined effect on effort must be zero.
+D Maintenance is paid later, so hidden durability is a sunk cost and should be excluded from evaluating the contract.
+
+P74-INC-L-019 | incentives | tier=legendary role=legendary | SHARED | image=None
+An employer replaces a late-arrival reprimand with a small fee deducted from pay. Some workers become more punctual; others treat lateness as a purchasable option. What does this show?
+A* The fee changes both the monetary consequence and its perceived social meaning, allowing deterrence for some and purchased lateness for others.
+B The fee lowers the monetary cost for every worker, so mixed punctuality must reflect differences in measured arrival times.
+C The fee strengthens social disapproval for every worker, so treating lateness as purchased shows workers no longer respond to payoffs.
+D The fee converts lateness into a market transaction, so workers’ prior response to social reprimands is irrelevant to the change.
+
+P74-INC-L-027 | incentives | tier=legendary role=legendary | SHARED | image=None
+A criminal fine is tripled while the probability of detection falls by two-thirds. Without more information, what can be concluded?
+A* Expected monetary penalties are unchanged, while perceived detection and risk attitudes can still alter deterrence.
+B Expected monetary penalties triple, while lower detection only changes the timing of the payment.
+C Expected monetary penalties fall by two-thirds, while the larger fine affects only the maximum possible loss.
+D Expected monetary penalties are unchanged, so deterrence must remain unchanged for every risk attitude.
+
+ECON-MG-EASYBOSS-2006 | incentives | tier=easy role=boss | SHARED | image=None
+A café doubles loyalty points for visits before 9 a.m. Which response would economic reasoning most directly predict?
+A* Some customers become more likely to visit earlier
+B Every customer must switch to an early visit
+C The points matter only if converted directly to cash
+D Earlier visits prove customers approve of the café’s policy
+
+ECON-MG-EASYBOSS-2007 | incentives | tier=easy role=boss | SHARED | image=None
+A toll is added to a crowded bridge, and some drivers switch routes. What principle does this show?
+A* The toll changes the relative cost of routes, prompting some drivers to substitute.
+B The toll increases bridge capacity, so diverted drivers are evidence of greater supply.
+C The toll shifts demand for every route equally, leaving relative travel costs unchanged.
+D The toll changes travel preferences, so monetary costs no longer explain route choice.
+
+ECON-MG-EASYBOSS-2008 | incentives | tier=easy role=boss | SHARED | image=None
+A speed bonus makes workers finish faster, but quality falls. What does this illustrate?
+A* The speed reward shifts effort toward measured completion and away from unmeasured quality.
+B The speed reward raises productivity equally on speed and quality, despite the observed quality decline.
+C The quality decline shows the reward was too small to influence the workers’ choices.
+D The faster output shows the reward improved the total value of work despite lower quality.

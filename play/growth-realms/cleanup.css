@@ -44,3 +44,18 @@ body[data-screen=game] .region-heading{display:none}.map-key{padding-block:8px;f
   .planning-hud{gap:18px}.planning-hud #planning-instruction{font-size:13px}
 }
 @media(max-width:899px){#quick-guide{display:none}.single-city .city-map{width:100%;height:auto;max-width:700px}.title-screen{grid-template-columns:1fr;padding:35px 0;min-height:0;gap:10px}.landing-copy{max-width:500px}.landing-copy h1{font-size:62px}.landing-hook{font-size:21px;max-width:350px}.landing-visual{max-width:650px;width:100%;margin:auto}.map-condition{font-size:11px;top:8px;right:8px;padding:3px 5px}.active-district-label{font-size:11px;max-width:55%}.upgrade-info strong{font-size:17px}.district-context{padding:12px}.context-description>p{display:none}}
+
+/* First-run invitation and cues. Economic detail returns with the first results. */
+#landing-title{text-transform:uppercase;max-width:6ch;line-height:1;overflow-wrap:normal}
+.choice-objective{color:var(--mq-muted);font-size:17px;line-height:1.5;margin-top:12px}
+body[data-first-planning=true] #hud,body[data-first-planning=true] .map-stats,
+body[data-first-planning=true] .map-diagnostics,body[data-first-planning=true] .cycle-briefing{display:none}
+body[data-first-planning=true] .title-row,body[data-first-planning=true] .edition{display:none}
+#planning-instruction strong{display:block;color:var(--mq-on-dark);font-size:14px;margin-bottom:2px}
+.planning-hud .commit-ready,#advance.commit-ready{background:var(--mq-highlight);color:var(--mq-navy);border-color:var(--mq-highlight);box-shadow:0 0 0 3px var(--mq-accent)}
+body[data-first-planning=true] #planning-instruction,.first-resolution #planning-instruction{display:block;visibility:visible}
+
+@media(max-width:700px){
+  body[data-first-planning=true] .planning-hud,.planning-hud.first-resolution{flex-wrap:wrap}
+  body[data-first-planning=true] #planning-instruction,.first-resolution #planning-instruction{display:block;visibility:visible;order:5;flex-basis:100%;max-width:none;margin:2px 0;min-height:40px;font-size:13px;line-height:1.4}
+}

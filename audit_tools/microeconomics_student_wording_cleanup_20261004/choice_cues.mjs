@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {auditAuthoredQuestions} from '../question_quality_auditor.mjs';
+const ledger=JSON.parse(fs.readFileSync(new URL('./expectations.json',import.meta.url),'utf8'));
+assert.equal(ledger.changes.length,148);
+const before=auditAuthoredQuestions(ledger.changes.map(c=>c.beforeRecord));
+const after=auditAuthoredQuestions(ledger.changes.map(c=>c.afterRecord));
+const old=new Set(before.findings.map(f=>f.questionId+'|'+f.rule));
+const added=after.findings.filter(f=>f.rule==='answer-length-outlier'&&!old.has(f.questionId+'|'+f.rule));
+assert.deepEqual(added,[],'No newly introduced answer-length cues in the 148 authorized targets');
+fs.writeFileSync(new URL('./choice_cues.json',import.meta.url),JSON.stringify({status:'PASS',scope:ledger.authorizedIds,new_answer_length_findings:added,check:'Only authorized targets compared with their frozen before-records; no duplicate or bank-wide review performed.'},null,2)+'\n');
+console.log('PASS: zero new answer-length findings across 148 authorized targets');

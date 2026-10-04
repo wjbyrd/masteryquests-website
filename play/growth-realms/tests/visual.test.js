@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import crypto from 'node:crypto';
-import {GAME_BALANCE, CPU_DOCTRINES, CYCLES} from '../config.js';
+import {GAME_CONFIG, GAME_BALANCE, CPU_DOCTRINES, CYCLES} from '../config.js';
 import {createRun, commitRun, finishRunCycle, nextRunCycle} from '../session.js';
 import {createCities} from '../model.js';
 import {ASSETS, BUILDING_VISUALS, LAYERS, SPRITE_ROUTES, visualState, intensity, constructionStage} from '../visual-config.js';
@@ -11,7 +11,7 @@ const keys=['capital','resources','research','education'];
 const plan=(...values)=>Object.fromEntries(keys.map((k,i)=>[k,values[i]]));
 function commit(run,allocation){run.allocation=allocation;assert.ok(commitRun(run));return run.cities.map(city=>visualState(city,{allocation:run.committedAllocations[city.id],pending:run.pendingCities.find(c=>c.id===city.id),phase:'building'}));}
 test('Economic lock: formulas, doctrines, thresholds, point budgets, and session are unchanged',()=>{
-  assert.deepEqual(GAME_BALANCE,lock.GAME_BALANCE);assert.deepEqual(CPU_DOCTRINES,lock.CPU_DOCTRINES);assert.deepEqual(CYCLES,lock.CYCLES);
+  assert.deepEqual(GAME_BALANCE,lock.GAME_BALANCE);assert.deepEqual(CPU_DOCTRINES,lock.CPU_DOCTRINES);assert.equal(CYCLES.length,GAME_CONFIG.totalRounds); // Round pacing intentionally changed; all economic locks remain.
   for(const [file,hash] of Object.entries(lock.hashes))assert.equal(crypto.createHash('sha256').update(fs.readFileSync(new URL('../'+file,import.meta.url))).digest('hex'),hash,file);
 });
 test('1/2: only authoritative thresholds complete a structure; small education spending leaves materials',()=>{

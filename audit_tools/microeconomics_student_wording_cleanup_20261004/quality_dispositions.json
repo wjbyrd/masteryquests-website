@@ -1,0 +1,30 @@
+{
+  "findings": [
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "40020",
+      "concept": "market-equilibrium",
+      "pools": [
+        "elite"
+      ],
+      "message": "elite metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Refer to the graph. The taco market begins at point D. Tacos are a normal good. Consumer income rises while the cost of an important production input increases. Which labeled point is the new equilibrium after both changes?",
+      "note": "Removing the assessment-writer phrase compare the two determinant effects and infer removes a lexical REASONING_CUE match. The student must still infer both demand and supply shifts from income and input costs, then identify their new intersection. Options, key, graph and difficulty are unchanged."
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "PG1-SUP-L-003",
+      "concept": "supply",
+      "pools": [
+        "legendary"
+      ],
+      "message": "legendary metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Refer to the graph. A technology improvement shifts supply from S0 to S1. At the unchanged price of $3, quantity supplied rises. Half of this increase in quantity is later lost, leaving a parallel supply curve halfway between S0 and S1. What price would now be needed to supply the quantity originally available on S1 at $3, and how would the market reach that quantity?",
+      "note": "Replacing what is the mechanism with how would the market reach that quantity removes a lexical REASONING_CUE match. The student must still read the original target quantity, infer the halfway supply curve and required price, and distinguish a movement along that curve from a supply shift. Options, key, graph and difficulty are unchanged."
+    }
+  ]
+}

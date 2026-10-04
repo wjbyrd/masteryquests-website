@@ -1,0 +1,109 @@
+{
+  "sourceSha256": "d9b9880be5194cc5f88816842d21fbe68117bde8920f735f863fb781fed1865a",
+  "integrity": {
+    "concepts": 149,
+    "questions": 9777,
+    "graphs": 1131,
+    "assets": 507
+  },
+  "changedIds": [
+    "ECON-SP-ELITE-320",
+    "P62D-ITP-L-095",
+    "P62D-ITP-L-098"
+  ],
+  "keyChecks": [
+    {
+      "id": "ECON-SP-ELITE-320",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 0,
+      "hashChanged": true
+    },
+    {
+      "id": "P62D-ITP-L-095",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 0,
+      "hashChanged": false
+    },
+    {
+      "id": "P62D-ITP-L-098",
+      "choices": 4,
+      "distinctChoices": 4,
+      "resolvedKeys": 1,
+      "correctIndex": 0,
+      "hashChanged": false
+    }
+  ],
+  "bankChecks": {
+    "general": {
+      "ids": 1589,
+      "changedAuthorizedIds": [
+        "P62D-ITP-L-095",
+        "P62D-ITP-L-098"
+      ],
+      "unrelatedUnchanged": 1587
+    },
+    "micro": {
+      "ids": 6299,
+      "changedAuthorizedIds": [
+        "P62D-ITP-L-095",
+        "P62D-ITP-L-098"
+      ],
+      "unrelatedUnchanged": 6297
+    },
+    "macro": {
+      "ids": 4745,
+      "changedAuthorizedIds": [
+        "ECON-SP-ELITE-320",
+        "P62D-ITP-L-095",
+        "P62D-ITP-L-098"
+      ],
+      "unrelatedUnchanged": 4742
+    }
+  },
+  "unauthorizedRecordChanges": 0,
+  "preservedMetadata": true,
+  "preservedRouting": true,
+  "preservedGraphAssets": true,
+  "protectedExistingFiles": 1898,
+  "unexpectedFileChanges": [],
+  "negativeProbes": [
+    {
+      "id": "ECON-SP-ELITE-320",
+      "field": "q",
+      "rejected": true
+    },
+    {
+      "id": "ECON-MG-EASY-1",
+      "field": "feedback",
+      "rejected": true
+    },
+    {
+      "id": "ECON-SP-ELITE-320",
+      "field": "difficulty",
+      "rejected": true
+    }
+  ],
+  "publication": {
+    "publishedIds": 4743,
+    "canonicalExportIds": 4745,
+    "unchangedUnpublishedCanonicalIds": [
+      "ECON-SP-MAP-AD-AS-TO-PC-5061",
+      "ECON-SP-MAP-AD-AS-TO-PC-6052"
+    ],
+    "allTargetsPresent": true,
+    "unchangedUnpublishedTargets": [],
+    "allPreviouslyPublishedTargetsPresent": true,
+    "exactContentParity": true,
+    "inlineScriptsCompiled": 1,
+    "allTenModesPass": true,
+    "answerVerification": {
+      "ok": true,
+      "questionCount": 4743,
+      "issues": []
+    }
+  }
+}

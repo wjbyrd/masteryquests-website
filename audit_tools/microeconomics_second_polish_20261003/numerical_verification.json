@@ -1,0 +1,967 @@
+{
+  "P62C-CPS-L-050": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Sort marginal values/costs and subtract third cost",
+        "result": -5,
+        "expected": -5
+      }
+    ],
+    "qualitative_or_direct_reading": "Sorted marginal gains: 52\u221237=15;46\u221241=5;40\u221245=\u22125."
+  },
+  "P62C-CPS-L-055": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Enumerate total surplus at all feasible quantities before and after",
+        "result": [
+          2,
+          3,
+          4
+        ],
+        "expected": [
+          2,
+          3,
+          4
+        ]
+      }
+    ],
+    "qualitative_or_direct_reading": "Initial TS=102\u221282=20; new TS=144\u2212120=24; gain4; third gain42\u221241=1; fourth36\u221251<0."
+  },
+  "42618": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Minimum income",
+        "result": 16,
+        "expected": 16
+      }
+    ],
+    "qualitative_or_direct_reading": "2\u00d74+8=16."
+  },
+  "42619": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Costs of twelve units at each offered price",
+        "result": [
+          54.0,
+          57.0,
+          60,
+          63.0
+        ],
+        "expected": [
+          54,
+          57,
+          60,
+          63
+        ]
+      }
+    ],
+    "qualitative_or_direct_reading": "12\u00d7[4.5,4.75,5,5.25]=[54,57,60,63]."
+  },
+  "42620": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Affordability",
+        "result": [
+          true,
+          false
+        ],
+        "expected": [
+          true,
+          false
+        ]
+      }
+    ],
+    "qualitative_or_direct_reading": "60\u226464<68."
+  },
+  "42621": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Prices from intercepts",
+        "result": [
+          4.0,
+          12.0
+        ],
+        "expected": [
+          4,
+          12
+        ]
+      }
+    ],
+    "qualitative_or_direct_reading": "72/18=4;72/6=12."
+  },
+  "42622": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Residual budget quantity",
+        "result": 5.0,
+        "expected": 5
+      }
+    ],
+    "qualitative_or_direct_reading": "(80\u22128\u00d75)/8=5."
+  },
+  "42623": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Income",
+        "result": 88,
+        "expected": 88
+      }
+    ],
+    "qualitative_or_direct_reading": "14\u00d76+4=88."
+  },
+  "42625": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "No numerical calculation required."
+  },
+  "42627": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "No numerical calculation required."
+  },
+  "42645": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "No numerical calculation required."
+  },
+  "42649": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "No numerical calculation required."
+  },
+  "42653": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "No numerical calculation required."
+  },
+  "42646": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "No numerical calculation required."
+  },
+  "42650": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "No numerical calculation required."
+  },
+  "42654": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "No numerical calculation required."
+  },
+  "42647": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "No numerical calculation required."
+  },
+  "42651": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "No numerical calculation required."
+  },
+  "42655": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Minimum nondominated Y",
+        "result": 3,
+        "expected": 3
+      }
+    ],
+    "qualitative_or_direct_reading": "Y\u22653; minimum integer3."
+  },
+  "42648": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "No numerical calculation required."
+  },
+  "42652": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "No numerical calculation required."
+  },
+  "42664": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "No numerical calculation required."
+  },
+  "42668": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "No numerical calculation required."
+  },
+  "42661": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "No numerical calculation required."
+  },
+  "42665": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "No numerical calculation required."
+  },
+  "42662": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "No numerical calculation required."
+  },
+  "42666": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "No numerical calculation required."
+  },
+  "42663": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "No numerical calculation required."
+  },
+  "42667": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "No numerical calculation required."
+  },
+  "42673": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Ordinal ranking preserved",
+        "result": [
+          1,
+          4,
+          9
+        ],
+        "expected": [
+          1,
+          4,
+          9
+        ]
+      }
+    ],
+    "qualitative_or_direct_reading": "1<4<9 preserves1<2<3."
+  },
+  "42677": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "No numerical calculation required."
+  },
+  "42674": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Negation reverses order",
+        "result": true,
+        "expected": true
+      }
+    ],
+    "qualitative_or_direct_reading": "5>2 but\u22122>\u22125."
+  },
+  "42678": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "No numerical calculation required."
+  },
+  "42675": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Utility gaps",
+        "result": [
+          1,
+          1,
+          3,
+          5
+        ],
+        "expected": [
+          1,
+          1,
+          3,
+          5
+        ]
+      }
+    ],
+    "qualitative_or_direct_reading": "Initial gaps1,1; transformed gaps3,5."
+  },
+  "42679": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "No numerical calculation required."
+  },
+  "42676": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "No numerical calculation required."
+  },
+  "42689": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Equivalent utility",
+        "result": [
+          2,
+          2
+        ],
+        "expected": [
+          2,
+          2
+        ]
+      }
+    ],
+    "qualitative_or_direct_reading": "2\u00d71+0=2=2\u00d70+2."
+  },
+  "42691": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "No numerical calculation required."
+  },
+  "42693": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Utility per dollar",
+        "result": true,
+        "expected": true
+      }
+    ],
+    "qualitative_or_direct_reading": "MUx/Px=2/3<1=MUy/Py."
+  },
+  "42695": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Utility per dollar tie",
+        "result": true,
+        "expected": true
+      }
+    ],
+    "qualitative_or_direct_reading": "2/2=1/1;U=2X+Y=12 on boundary."
+  },
+  "42690": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Pairs affordable",
+        "result": 4.0,
+        "expected": 4
+      }
+    ],
+    "qualitative_or_direct_reading": "20/(2+3)=4 pairs."
+  },
+  "42692": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Marginal pairs from extra surplus component",
+        "result": 0,
+        "expected": 0
+      }
+    ],
+    "qualitative_or_direct_reading": "min(4,7)=min(4,8)=4."
+  },
+  "42694": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "No numerical calculation required."
+  },
+  "42696": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Pairs lost after bottleneck switches",
+        "result": 1,
+        "expected": 1
+      }
+    ],
+    "qualitative_or_direct_reading": "min(4,7)\u2212min(4,3)=1."
+  },
+  "42698": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Pairs before/after",
+        "result": [
+          6.0,
+          4.0
+        ],
+        "expected": [
+          6,
+          4
+        ]
+      }
+    ],
+    "qualitative_or_direct_reading": "24/(2+2)=6;24/(4+2)=4."
+  },
+  "42699": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Costs and marginal comparison",
+        "result": [
+          24,
+          30,
+          true
+        ],
+        "expected": [
+          24,
+          30,
+          true
+        ]
+      }
+    ],
+    "qualitative_or_direct_reading": "A cost2\u00d78+8=24;B cost2\u00d710+10=30;MRS_A3>2."
+  },
+  "42701": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Corner comparison",
+        "result": true,
+        "expected": true
+      }
+    ],
+    "qualitative_or_direct_reading": "3/2>1/1."
+  },
+  "42702": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "No numerical calculation required."
+  },
+  "42703": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "No numerical calculation required."
+  },
+  "42704": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Missing MUy",
+        "result": 8.0,
+        "expected": 8
+      }
+    ],
+    "qualitative_or_direct_reading": "12/3=8/2=4."
+  },
+  "42705": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "No numerical calculation required."
+  },
+  "42706": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "No numerical calculation required."
+  },
+  "42707": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Interior solution",
+        "result": [
+          3.0,
+          6.0
+        ],
+        "expected": [
+          3,
+          6
+        ]
+      }
+    ],
+    "qualitative_or_direct_reading": "2X+2X=12=>X3,Y6;U18 exceeds16,0,16."
+  },
+  "42708": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "No numerical calculation required."
+  },
+  "P62H-MCMP-L-032": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Reverse markup/capacity",
+        "result": [
+          50,
+          20.0
+        ],
+        "expected": [
+          50,
+          20
+        ]
+      }
+    ],
+    "qualitative_or_direct_reading": "70\u221220=50;34.64\u221214.64=20."
+  },
+  "P62H-MCMP-L-035": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Markup is not profit",
+        "result": 633.5999999999999,
+        "expected": 633.6
+      }
+    ],
+    "qualitative_or_direct_reading": "(76\u221249.6)\u00d724=633.6 is not profit;P\u2212ATC=0."
+  },
+  "P62H-MCMP-L-038": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Capacity gap",
+        "result": 12.120000000000001,
+        "expected": 12.12
+      }
+    ],
+    "qualitative_or_direct_reading": "30.12\u221218=12.12."
+  },
+  "P62H-MCMP-L-041": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Per-unit loss",
+        "result": 33.6,
+        "expected": 33.6
+      }
+    ],
+    "qualitative_or_direct_reading": "82\u221248.4=33.6."
+  },
+  "P62H-MCMP-L-044": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Opposite metric rankings",
+        "result": [
+          true,
+          true
+        ],
+        "expected": [
+          true,
+          true
+        ]
+      }
+    ],
+    "qualitative_or_direct_reading": "17.60>12;20>13.47;both P\u2212ATC=0."
+  },
+  "42028": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Marginal external-effect gap",
+        "result": 6,
+        "expected": 6
+      }
+    ],
+    "qualitative_or_direct_reading": "MPC\u2013MPB Q=240; MSC\u2013MPB Q=160; at Q=160, MSC=$15 and MPC=$9."
+  },
+  "42038": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Marginal external-effect gap",
+        "result": 4,
+        "expected": 4
+      }
+    ],
+    "qualitative_or_direct_reading": "MPB\u2013MPC Q=180; MSB\u2013MPC Q=140; at Q=140, MPB=$12 and MSB=$8."
+  },
+  "42048": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Marginal external-effect gap",
+        "result": 5,
+        "expected": 5
+      }
+    ],
+    "qualitative_or_direct_reading": "MPC\u2013MPB Q=100; MSC\u2013MPB Q=150; at Q=150, MPC=$15 and MSC=$10."
+  },
+  "42058": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Marginal external-effect gap",
+        "result": 2,
+        "expected": 2
+      }
+    ],
+    "qualitative_or_direct_reading": "MPB\u2013MPC Q=150; MSB\u2013MPC Q=200; at Q=200, MSB=$6 and MPB=$4."
+  },
+  "42204": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Shared quantity stays fixed when benefit values are summed",
+        "result": 40,
+        "expected": 40
+      }
+    ],
+    "qualitative_or_direct_reading": "Shared quantity40, not40+40; no monetary conversion."
+  },
+  "42207": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Shared quantity stays fixed when benefit values are summed",
+        "result": 40,
+        "expected": 40
+      },
+      {
+        "operation": "Convert hundreds and sum benefits",
+        "result": 4000,
+        "expected": 4000
+      }
+    ],
+    "qualitative_or_direct_reading": "Q40: A MB30 hundreds,B MB10 hundreds."
+  },
+  "42352": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Supply-demand difference in workers",
+        "result": 4000,
+        "expected": 4000
+      }
+    ],
+    "qualitative_or_direct_reading": "40*100=4000"
+  },
+  "42360": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Supply-demand difference in workers",
+        "result": 4000,
+        "expected": 4000
+      }
+    ],
+    "qualitative_or_direct_reading": "40*100=4000"
+  },
+  "42361": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Fixed-wage supply change",
+        "result": -4000,
+        "expected": -4000
+      }
+    ],
+    "qualitative_or_direct_reading": "At $20, SL0=40,SL1=0, in hundreds."
+  },
+  "42363": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Fixed-wage supply change",
+        "result": -4000,
+        "expected": -4000
+      }
+    ],
+    "qualitative_or_direct_reading": "At $20, SL0=40,SL1=0, in hundreds."
+  },
+  "42376": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Employment units",
+        "result": 4000,
+        "expected": 4000
+      }
+    ],
+    "qualitative_or_direct_reading": "40 hundreds=4000; wage20."
+  },
+  "42587": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "No interval-slope arithmetic; compare local steepness."
+  },
+  "42588": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "One coordinate-band reading; no utility-ratio calculation."
+  },
+  "P62B-ELAS-E-028": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "No midpoint computation required."
+  },
+  "ECON-MG-MEDIUM-186": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Quantity loss, full wedge and incidence",
+        "result": [
+          20,
+          6,
+          3,
+          3
+        ],
+        "expected": [
+          20,
+          6,
+          3,
+          3
+        ]
+      }
+    ],
+    "qualitative_or_direct_reading": "UntaxedQ100,taxedQ80,buyer18,seller12."
+  },
+  "ECON-MG-MEDIUM-189": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Quantity loss, full wedge and incidence",
+        "result": [
+          20,
+          6,
+          3,
+          3
+        ],
+        "expected": [
+          20,
+          6,
+          3,
+          3
+        ]
+      }
+    ],
+    "qualitative_or_direct_reading": "UntaxedQ100,taxedQ80,buyer18,seller12."
+  },
+  "P62B-ELAS-EL-038": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Changes rather than final levels",
+        "result": [
+          10,
+          40
+        ],
+        "expected": [
+          10,
+          40
+        ]
+      }
+    ],
+    "qualitative_or_direct_reading": "70-60=10;100-60=40"
+  },
+  "P62B-ELAS-M-039": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Changes rather than final levels",
+        "result": [
+          10,
+          40
+        ],
+        "expected": [
+          10,
+          40
+        ]
+      }
+    ],
+    "qualitative_or_direct_reading": "70-60=10;100-60=40"
+  },
+  "P62C-CPS-L-024": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "E has Q=8, demand=supply=$14."
+  },
+  "P62C-CPS-M-029": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "E has Q=8, demand=supply=$10."
+  },
+  "P62E-COP-H-019": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Total fixed-cost gap at zero output",
+        "result": 240,
+        "expected": 240
+      }
+    ],
+    "qualitative_or_direct_reading": "TFC line and TC intercept $240; Constant vertical gap $240."
+  },
+  "P62E-COP-L-053": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Total fixed-cost gap at zero output",
+        "result": 240,
+        "expected": 240
+      }
+    ],
+    "qualitative_or_direct_reading": "TFC line and TC intercept $240; Constant vertical gap $240."
+  },
+  "P62E-COP-M-024": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Total fixed-cost gap at zero output",
+        "result": 240,
+        "expected": 240
+      }
+    ],
+    "qualitative_or_direct_reading": "TFC line and TC intercept $240; Constant vertical gap $240."
+  },
+  "P62E-COP-H-018": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "AFC at outputs20 and70",
+        "result": [
+          12.0,
+          3.43
+        ],
+        "expected": [
+          12,
+          3.43
+        ]
+      }
+    ],
+    "qualitative_or_direct_reading": "240/20=12;240/70\u22483.43"
+  },
+  "P62E-COP-L-054": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "AFC at outputs20 and70",
+        "result": [
+          12.0,
+          3.43
+        ],
+        "expected": [
+          12,
+          3.43
+        ]
+      }
+    ],
+    "qualitative_or_direct_reading": "240/20=12;240/70\u22483.43"
+  },
+  "P62F-PC-EL-038": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Profit/revenue/contribution",
+        "result": [
+          1800,
+          3600,
+          2250
+        ],
+        "expected": [
+          1800,
+          3600,
+          2250
+        ]
+      }
+    ],
+    "qualitative_or_direct_reading": "(40-20)*90=1800"
+  },
+  "P62F-PC-H-042": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Profit/revenue/contribution",
+        "result": [
+          1800,
+          3600,
+          2250
+        ],
+        "expected": [
+          1800,
+          3600,
+          2250
+        ]
+      }
+    ],
+    "qualitative_or_direct_reading": "(40-20)*90=1800"
+  },
+  "P62F-PC-L-097": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Profit/revenue/contribution",
+        "result": [
+          1800,
+          3600,
+          2250
+        ],
+        "expected": [
+          1800,
+          3600,
+          2250
+        ]
+      }
+    ],
+    "qualitative_or_direct_reading": "(40-20)*90=1800"
+  },
+  "P62F-PC-EL-044": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Economic profit at long-run benchmark",
+        "result": 0,
+        "expected": 0
+      }
+    ],
+    "qualitative_or_direct_reading": "MarketP25;firmQ50,P=MC=minATC25."
+  },
+  "P62F-PC-M-048": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Economic profit at long-run benchmark",
+        "result": 0,
+        "expected": 0
+      }
+    ],
+    "qualitative_or_direct_reading": "MarketP25;firmQ50,P=MC=minATC25."
+  },
+  "P62G-MON-H-032": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "MR\u2013MC crossing36; D\u2013MC crossing about60."
+  },
+  "P62G-MON-H-036": {
+    "status": "PASS",
+    "recomputations": [],
+    "qualitative_or_direct_reading": "MR\u2013MC crossing40; D\u2013MC crossing about67."
+  },
+  "P62H-MCMP-H-016": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Markup survives zero profit",
+        "result": 26.4,
+        "expected": 26.4
+      }
+    ],
+    "qualitative_or_direct_reading": "Demand\u2013ATC tangency at Q24,P76, with Q below minimum ATC."
+  },
+  "P62H-MCMP-EL-023": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Markup survives zero profit",
+        "result": 33.6,
+        "expected": 33.6
+      }
+    ],
+    "qualitative_or_direct_reading": "Demand\u2013ATC tangency at Q28,P82, with Q below minimum ATC."
+  },
+  "P62H-MCMP-L-094": {
+    "status": "PASS",
+    "recomputations": [
+      {
+        "operation": "Excess capacity",
+        "result": 14,
+        "expected": 14
+      }
+    ],
+    "qualitative_or_direct_reading": "Demand\u2013ATC tangency at Q36,P27, with Q below minimum ATC."
+  }
+}

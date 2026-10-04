@@ -1,0 +1,93 @@
+{
+  "status": "PENDING_VISUAL_INSPECTION",
+  "source_sha256": "401cfb5b9448cd41be78388c2590b1cfd590d4c0067d7bf1f5c189c306e9878c",
+  "pdf_sha256": "c632fa70ebd9e17d1811eadbd2436eb6b535dcb22a2b29373d607b6fc03178fe",
+  "total_pdf_pages": 3568,
+  "all_pages_rendered": 3568,
+  "question_pages": {
+    "PG3-AD-H-001": [
+      97
+    ],
+    "PG3-AD-H-002": [
+      98
+    ],
+    "PG3-MEQ-L-004": [
+      48,
+      49,
+      50
+    ],
+    "ECON-SP-ELITE-320": [
+      578
+    ],
+    "ECON-SP-LEGENDARYBOSS-9102": [
+      74,
+      75,
+      76
+    ],
+    "P62D-ITP-L-095": [
+      1542
+    ],
+    "P62D-ITP-L-098": [
+      1603
+    ],
+    "PG5-PC-L-006": [
+      2612
+    ],
+    "PM2B3-PROD-E-001": [
+      2900
+    ],
+    "PM2B3-PROD-M-001": [
+      2904
+    ]
+  },
+  "inspected_pages": [
+    48,
+    49,
+    50,
+    74,
+    75,
+    76,
+    97,
+    98,
+    578,
+    1542,
+    1603,
+    2612,
+    2900,
+    2904
+  ],
+  "sheets": [
+    {
+      "file": "qa-01.png",
+      "pages": [
+        48,
+        49,
+        50,
+        74,
+        75,
+        76
+      ]
+    },
+    {
+      "file": "qa-02.png",
+      "pages": [
+        97,
+        98,
+        578,
+        1542,
+        1603,
+        2612
+      ]
+    },
+    {
+      "file": "qa-03.png",
+      "pages": [
+        2900,
+        2904
+      ]
+    }
+  ],
+  "questions_inspected": 0,
+  "split_question_cores": [],
+  "core_checks": 4745
+}

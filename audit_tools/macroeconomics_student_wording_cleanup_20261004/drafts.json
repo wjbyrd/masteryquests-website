@@ -1,0 +1,1410 @@
+{
+  "43068": {
+    "q": "A published table rounds revenues to $5.6 trillion, outlays to $7.4 trillion, and the deficit to $1.9 trillion. Why need the rounded entries not subtract exactly?",
+    "options": [
+      "The displayed figures were rounded independently",
+      "The deficit excludes displayed revenues",
+      "Borrowing is added to both displayed revenues and displayed outlays",
+      "The deficit uses calendar-year data"
+    ],
+    "feedback": "Independent rounding can make displayed components differ slightly from an identity calculated with unrounded values.",
+    "correct_index": 0
+  },
+  "43170": {
+    "q": "Private saving rises $80 while public saving falls $120. Investment demand is initially unchanged in a closed-economy loanable-funds model. Which accounting change and behavioral pressure follow?",
+    "options": [
+      "National saving is unchanged; private and public saving are unrelated to national saving",
+      "National saving falls $40; reduced saving supply puts upward pressure on the real rate",
+      "National saving rises $40; public deficits are added as positive saving",
+      "National saving falls $40; investment demand must shift left by identity"
+    ],
+    "feedback": "ΔS=ΔSprivate+ΔSpublic=80−120=−40. In the specified market model the supply shift raises the rate and reduces equilibrium investment along demand; the identity does not require a demand-curve shift.",
+    "correct_index": 1
+  },
+  "43174": {
+    "q": "Private saving rises $160 while public saving falls $240. Investment demand is initially unchanged in a closed-economy loanable-funds model. Which accounting change and behavioral pressure follow?",
+    "options": [
+      "National saving is unchanged; private and public saving are unrelated to national saving",
+      "National saving falls $80; reduced saving supply puts upward pressure on the real rate",
+      "National saving rises $80; public deficits are added as positive saving",
+      "National saving falls $80; investment demand must shift left by identity"
+    ],
+    "feedback": "ΔS=ΔSprivate+ΔSpublic=160−240=−80. In the specified market model the supply shift raises the rate and reduces equilibrium investment along demand; the identity does not require a demand-curve shift.",
+    "correct_index": 1
+  },
+  "43179": {
+    "q": "Private saving rises $240 while public saving falls $360. Investment demand is initially unchanged in a closed-economy loanable-funds model. Which accounting change and behavioral pressure follow?",
+    "options": [
+      "National saving falls $120; reduced saving supply puts upward pressure on the real rate",
+      "National saving rises $120; public deficits are added as positive saving",
+      "National saving falls $120; investment demand must shift left by identity",
+      "National saving is unchanged; private and public saving are unrelated to national saving"
+    ],
+    "feedback": "ΔS=ΔSprivate+ΔSpublic=240−360=−120. In the specified market model the supply shift raises the rate and reduces equilibrium investment along demand; the identity does not require a demand-curve shift.",
+    "correct_index": 0
+  },
+  "43186": {
+    "q": "Private saving rises $320 while public saving falls $480. Investment demand is initially unchanged in a closed-economy loanable-funds model. Which accounting change and behavioral pressure follow?",
+    "options": [
+      "National saving falls $160; investment demand must shift left by identity",
+      "National saving is unchanged; private and public saving are unrelated to national saving",
+      "National saving falls $160; reduced saving supply puts upward pressure on the real rate",
+      "National saving rises $160; public deficits are added as positive saving"
+    ],
+    "feedback": "ΔS=ΔSprivate+ΔSpublic=320−480=−160. In the specified market model the supply shift raises the rate and reduces equilibrium investment along demand; the identity does not require a demand-curve shift.",
+    "correct_index": 2
+  },
+  "43198": {
+    "q": "Why must a saving question define T before using Y − T − C or T − G?",
+    "options": [
+      "T must always mean total federal debt",
+      "T must include every government outlay",
+      "T must consistently mean net taxes in both expressions",
+      "T must equal household consumption"
+    ],
+    "feedback": "The private- and public-saving formulas share T, so a consistent net-tax definition prevents mixing textbook saving with total-budget accounting.",
+    "correct_index": 2
+  },
+  "ECON-EC-FINALBOSS-19022": {
+    "q": "In an adult population of 200, employment is 100 and active-search unemployment is 10. A survey also finds 10 people who want work but have stopped searching. Which correction to a report counting all jobless people as unemployed is needed?",
+    "options": [
+      "Exclude discouraged workers but divide unemployment by adult population; UR is 5% and LFPR is 50%",
+      "Exclude discouraged workers from unemployment and the labor force; UR is about 9.1% and LFPR is 55%",
+      "Include discouraged workers in unemployment; UR is about 16.7% and LFPR is 60%",
+      "Include discouraged workers only in the labor force; UR is about 8.3% and LFPR is 60%"
+    ],
+    "feedback": "The labor force is 100+10 = 110. The discouraged are not active searchers. UR = 0.1/1.1 ≈ 9.1%; LFPR = 1.1/2 = 55%.",
+    "correct_index": 1
+  },
+  "ECON-EC-LEGENDARYBOSS-20001": {
+    "q": "A new product expands choice while the statistical basket still spends $120 on older products. Which inference respects both the new-goods limitation and the continued use of CPI?",
+    "options": [
+      "Delayed inclusion means CPI is a complete cost-of-living measure because consumers previously did not buy the new product",
+      "Delayed inclusion means actual prices cannot change until the product enters the official basket",
+      "Delayed inclusion proves CPI understates every household's inflation by the same fixed amount",
+      "Delayed inclusion can miss gains in purchasing opportunities; that limitation does not make every observed CPI change meaningless"
+    ],
+    "feedback": "New goods can improve purchasing opportunities before an index incorporates them. The limitation is specific; it does not invalidate all price evidence or establish one universal bias size.",
+    "correct_index": 3
+  },
+  "ECON-EC-MEDIUMBOSS-18010": {
+    "q": "In an adult population of 300, employment is 150 and active-search unemployment is 15. A survey also finds 15 people who want work but have stopped searching. Which correction to a report counting all jobless people as unemployed is needed?",
+    "options": [
+      "Include discouraged workers only in the labor force; UR is about 8.3% and LFPR is 60%",
+      "Exclude discouraged workers but divide unemployment by adult population; UR is 5% and LFPR is 50%",
+      "Exclude discouraged workers from unemployment and the labor force; UR is about 9.1% and LFPR is 55%",
+      "Include discouraged workers in unemployment; UR is about 16.7% and LFPR is 60%"
+    ],
+    "feedback": "The labor force is 150+15 = 165. The discouraged are not active searchers. UR = 0.1/1.1 ≈ 9.1%; LFPR = 1.1/2 = 55%.",
+    "correct_index": 2
+  },
+  "ECON-MG-LEGENDARY-9042": {
+    "q": "A binding ceiling reduces the number of apartments rented. Under which allocation would it create an additional loss beyond the gains from the missing rentals?",
+    "options": [
+      "Some available apartments go to lower-value applicants while higher-value applicants go without",
+      "The remaining apartments all go to the highest-value applicants",
+      "The lower rent transfers money from landlords to continuing tenants",
+      "Landlords supply exactly the number of apartments willing buyers rent"
+    ],
+    "feedback": "A quantity reduction loses gains from missing beneficial trades. A further allocation loss arises if a lower-value recipient displaces a higher-value applicant. A ceiling does not by itself prove that this misallocation occurs.",
+    "correct_index": 0
+  },
+  "ECON-MG-LEGENDARY-9076": {
+    "q": "A university raises parking fines. Students respond by arriving earlier, carpooling more, and contesting tickets more often. What principle ties these reactions together?",
+    "options": [
+      "People respond to incentives, including unintended margins of adjustment",
+      "People ignore incentives when rules are created by institutions",
+      "Opportunity cost disappears when penalties are legal",
+      "Markets allocate resources only when prices are zero"
+    ],
+    "feedback": "A changed penalty changes behavior, including responses the policy designer may not have wanted.",
+    "correct_index": 0
+  },
+  "ECON-NL-EASYBOSS-2024": {
+    "q": "A new product expands choice while the statistical basket still spends $160 on older products. Which inference respects both the new-goods limitation and the continued use of CPI?",
+    "options": [
+      "Delayed inclusion proves CPI understates every household's inflation by the same fixed amount",
+      "Delayed inclusion can miss gains in purchasing opportunities; that limitation does not make every observed CPI change meaningless",
+      "Delayed inclusion means CPI is a complete cost-of-living measure because consumers previously did not buy the new product",
+      "Delayed inclusion means actual prices cannot change until the product enters the official basket"
+    ],
+    "feedback": "New goods can improve purchasing opportunities before an index incorporates them. The limitation is specific; it does not invalidate all price evidence or establish one universal bias size.",
+    "correct_index": 1
+  },
+  "ECON-NL-ELITE-369": {
+    "q": "A survey classifies people as employed, unemployed, or not in the labor force. Which person is most likely misread by the headline unemployment rate as doing better than they are?",
+    "options": [
+      "A part-time worker who wants full-time work",
+      "A full-time worker satisfied with their job",
+      "A retiree who does not want work",
+      "A student not seeking employment"
+    ],
+    "feedback": "Involuntary part-time workers are counted as employed, even though their labor situation is weak.",
+    "correct_index": 0
+  },
+  "ECON-NL-FINALBOSS-4004": {
+    "q": "In an adult population of 400, employment is 200 and active-search unemployment is 20. A survey also finds 20 people who want work but have stopped searching. Which correction to a report counting all jobless people as unemployed is needed?",
+    "options": [
+      "Exclude discouraged workers but divide unemployment by adult population; UR is 5% and LFPR is 50%",
+      "Exclude discouraged workers from unemployment and the labor force; UR is about 9.1% and LFPR is 55%",
+      "Include discouraged workers in unemployment; UR is about 16.7% and LFPR is 60%",
+      "Include discouraged workers only in the labor force; UR is about 8.3% and LFPR is 60%"
+    ],
+    "feedback": "The labor force is 200+20 = 220. The discouraged are not active searchers. UR = 0.1/1.1 ≈ 9.1%; LFPR = 1.1/2 = 55%.",
+    "correct_index": 1
+  },
+  "ECON-NL-FINALBOSS-4014": {
+    "q": "A binding wage floor raises pay for retained workers in a competitive labor market, but firms offer fewer jobs and more people seek work at the higher wage. Which evaluation addresses both margins?",
+    "options": [
+      "Retained wages rise, jobs become scarcer; total earnings depend on quantities.",
+      "Retained wages rise, jobs become scarcer; total earnings rise by the wage percentage.",
+      "Retained wages rise, jobs become scarcer; total earnings fall by the employment percentage.",
+      "Retained wages rise, jobs expand; the higher wage signals a demand increase."
+    ],
+    "feedback": "A binding floor changes the wage paid and the quantity employed along demand. Winners among retained workers do not establish an aggregate earnings gain; employment quantities matter.",
+    "correct_index": 0
+  },
+  "ECON-NL-FINALBOSS-4027": {
+    "q": "A nonunion firm pays above the clearing wage to reduce quits. Turnover falls but hiring also falls. Which evaluation separates the intended mechanism from the employment tradeoff?",
+    "options": [
+      "Retention benefits can coexist with fewer jobs; above-clearing efficiency pay can ration employment.",
+      "Lower turnover proves employment increased; retention and hiring measure the same margin.",
+      "Fewer jobs prove the wage was union-imposed; a firm cannot choose efficiency pay.",
+      "Lower turnover eliminates rationing; an efficiency wage necessarily clears the labor market."
+    ],
+    "feedback": "An efficiency wage is chosen for productivity or retention incentives. Those benefits do not establish that all willing workers obtain jobs at the higher wage; lower hiring is a separate margin in the policy evaluation.",
+    "correct_index": 0
+  },
+  "ECON-NL-LEGENDARY-9046": {
+    "q": "Over a decade, real GDP rises 12%, population rises 5%, and total labor hours rise 20%. Which pair best evaluates average material output and hourly productivity, to one decimal place?",
+    "options": [
+      "Real GDP per person rises 6.7%; output per hour falls 6.7%",
+      "Both rise 12% because total real GDP rose",
+      "Real GDP per person rises 7%; output per hour falls exactly 8%",
+      "Real GDP per person falls 6.7%; output per hour rises 6.7%"
+    ],
+    "feedback": "Per-person output changes by 1.12/1.05 - 1 ≈ 6.7%; hourly output changes by 1.12/1.20 - 1 ≈ -6.7%. More total hours can raise average output even while productivity per hour falls.",
+    "correct_index": 0
+  },
+  "ECON-NL-LEGENDARY-9053": {
+    "q": "A country’s real GDP rises 6% while employment rises 10%. Population is unchanged. Which assessment separates average material output from output per worker?",
+    "options": [
+      "Output per person rises 6%; output per worker falls about 3.6%",
+      "Both fall about 3.6% because productivity declined",
+      "Both rise 6% because GDP increased",
+      "Output per person falls 4%; subtract employment growth from GDP growth"
+    ],
+    "feedback": "With population fixed, GDP per person rises 6%. Output per worker changes by 1.06/1.10 - 1 ≈ -3.6%. A productivity decline does not imply that average output per resident also declined.",
+    "correct_index": 0
+  },
+  "ECON-NL-LEGENDARYBOSS-9110": {
+    "q": "A new product expands choice while the statistical basket still spends $200 on older products. Which inference respects both the new-goods limitation and the continued use of CPI?",
+    "options": [
+      "Delayed inclusion proves CPI understates every household's inflation by the same fixed amount",
+      "Delayed inclusion can miss gains in purchasing opportunities; that limitation does not make every observed CPI change meaningless",
+      "Delayed inclusion means CPI is a complete cost-of-living measure because consumers previously did not buy the new product",
+      "Delayed inclusion means actual prices cannot change until the product enters the official basket"
+    ],
+    "feedback": "New goods can improve purchasing opportunities before an index incorporates them. The limitation is specific; it does not invalidate all price evidence or establish one universal bias size.",
+    "correct_index": 1
+  },
+  "ECON-SP-DEFINE-PHILLIPS-CURVE-6039": {
+    "q": "Aggregate demand expands unexpectedly, raising output and the price level. What linked Phillips result follows first?",
+    "options": [
+      "Lower unemployment and higher inflation along the current SRPC",
+      "Higher unemployment and higher inflation from an SRPC shift",
+      "Lower unemployment and lower inflation from an LRPC shift",
+      "Unchanged unemployment with a downward SRPC shift"
+    ],
+    "feedback": "With expected inflation initially fixed, a demand change moves the economy along the current SRPC.",
+    "correct_index": 0
+  },
+  "ECON-SP-EASYBOSS-2005": {
+    "q": "Before an election, elected officials demand an immediate rate cut while inflation remains above the central bank’s target. The bank has instrument independence within a public mandate and must explain its decisions. Which response is consistent with that arrangement?",
+    "options": [
+      "The bank may reject the requested cut on inflation grounds while explaining how its decision serves the mandate",
+      "The bank must grant the requested cut because public accountability transfers each rate decision to elected officials",
+      "The bank may avoid the rate decision by unilaterally raising income-tax rates instead",
+      "The bank may reject the requested cut without regard to its mandate or any duty to explain its decision"
+    ],
+    "feedback": "Instrument independence allows the bank to choose its policy tools under its mandate rather than obey an election-driven demand. Accountability remains: the bank must explain the decision. Independence does not give it fiscal taxing authority or remove its mandate.",
+    "correct_index": 0
+  },
+  "ECON-SP-ELITE-320": {
+    "q": "Refer to the multiplier graph. Direct purchases shift AD1 to AD2; induced spending makes the gross prediction AD3. Crowding out creates a positive total AD offset. Which additional restriction is needed to conclude that the final AD curve lies strictly between AD2 and AD3?",
+    "options": [
+      "The total offset must be smaller than the horizontal AD2-to-AD3 distance at the reference price.",
+      "The total offset must be smaller than the full AD1-to-AD3 distance, with no further restriction.",
+      "The total offset must equal the full AD1-to-AD3 distance.",
+      "The total offset must exceed the AD2-to-AD3 distance but remain below the AD1-to-AD3 distance."
+    ],
+    "feedback": "To finish to the right of AD2, subtract less than the extra induced-spending distance from AD2 to AD3. A positive offset puts the result left of AD3. Merely retaining some net stimulus relative to AD1 does not guarantee finishing beyond AD2.",
+    "correct_index": 0
+  },
+  "ECON-SP-EXPECTED-INFLATION-SHIFT-6044": {
+    "q": "The economy moves up-left along SRPC after a demand surprise. Wage setters then revise forecasts upward. What connection is required?",
+    "options": [
+      "A movement along SRPC becomes an upward shift as expectations adjust",
+      "The LRPC shifts left as aggregate demand rises and nominal wages renew",
+      "The same fixed SRPC supports permanently lower unemployment after forecasts update",
+      "A downward expectations shift reinforces the initial unemployment gain"
+    ],
+    "feedback": "As expected inflation adapts, the temporary unemployment effect fades and the SRPC shifts.",
+    "correct_index": 0
+  },
+  "ECON-SP-FINALBOSS-4000": {
+    "q": "A negative demand shock creates a $80 recessionary gap with falling inflation; capacity is unchanged. In a fixed-price planning model MPC is 0.75. A purchases increase of $20 can arrive immediately, or the same program can arrive after the gap is forecast to close. Which assessment combines diagnosis, size and timing?",
+    "options": [
+      "The immediate program matches the current gap; the delayed one risks excess demand after recovery",
+      "Both programs match every future gap because the multiplier makes timing irrelevant",
+      "The immediate program is contractionary; the delayed program becomes expansionary solely because time passes",
+      "The shock is adverse supply, so immediate purchases necessarily reduce inflation while restoring output"
+    ],
+    "feedback": "Falling output and inflation under the stated demand shock justify demand support. The immediate simple effect is 20/.25=80, matching the current gap. A correct initial size does not make the same arrival-time demand injection appropriate after recovery.",
+    "correct_index": 0
+  },
+  "ECON-SP-FINALBOSS-4008": {
+    "q": "Use inflation = expected inflation − (unemployment−5) + supply offset. A temporary supply offset of +2 yields inflation 6% at unemployment 6%. Before the offset disappears, forecasts rise one point and persist. Which initial expectation and final natural-rate inflation follow?",
+    "options": [
+      "Initial expected inflation is 5%; final inflation at natural unemployment is 6% after the offset ends",
+      "Initial expected inflation is 6%; final natural-rate inflation is 9% because the temporary offset persists",
+      "Initial expected inflation is 3%; final natural-rate inflation is 4% because the unemployment gap is subtracted twice",
+      "Initial expected inflation is 5%; final natural-rate inflation is 8% because the removed offset is added again"
+    ],
+    "feedback": "Initially 6=πe−1+2, so πe=5. Forecasts then become 6. After the supply offset ends and unemployment is 5, inflation equals expected inflation 6. Supply relief does not necessarily restore the original expectation.",
+    "correct_index": 0
+  },
+  "ECON-SP-FINALBOSS-4016": {
+    "q": "A banking system receives $110 of reserves. With rr=10%, a simple maximum suggests deposits of $1100; actual deposits grow $440. Rates fall, but firms also cut expected project returns. Which assessment combines banking and spending constraints?",
+    "options": [
+      "The reserve injection raises real productive capacity immediately by the textbook deposit maximum",
+      "Leakages can explain a multiplier below ten, and weaker expected returns can further limit investment despite lower rates",
+      "The lower deposit expansion proves rates cannot have fallen, so the reported observations are impossible",
+      "Lower rates guarantee the full predicted investment expansion even when expected returns deteriorate"
+    ],
+    "feedback": "Observed multiplier=440/110=4, below the restrictive simple maximum 10. Even if rates fall, the rate-to-investment link can weaken when expected profitability falls. These are distinct constraints at successive stages.",
+    "correct_index": 1
+  },
+  "ECON-SP-FINALBOSS-4017": {
+    "q": "An economy initially has output 120 above potential and unemployment below natural after a demand boom. Demand then stabilizes while wage setters revise expected inflation upward. A proposal treats the initial low unemployment as a new permanent benchmark. Which joint AD-AS/Phillips correction is needed?",
+    "options": [
+      "SRAS shifts left, SRPC up; output and unemployment return toward natural benchmarks.",
+      "SRAS shifts right, SRPC down; output and unemployment remain beyond natural benchmarks.",
+      "LRAS shifts right, LRPC left; the demand boom changes productive capacity permanently.",
+      "Both short-run curves stay fixed; wage expectations affect neither output nor unemployment."
+    ],
+    "feedback": "Higher expected prices incorporated in wages reduce short-run supply at a given actual price; higher expected inflation raises the short-run Phillips relation. Without real structural changes, the initial demand-induced gain does not establish new natural benchmarks.",
+    "correct_index": 0
+  },
+  "ECON-SP-FINALBOSS-4018": {
+    "q": "A program intended to close a $260 demand gap arrives after recovery. At arrival, a separate adverse supply shock raises inflation. Which policy evaluation recognizes why the original direction need not remain appropriate?",
+    "options": [
+      "Recovery leaves the original gap intact; expansion therefore lowers both unemployment and inflation.",
+      "The supply shock restores the original demand gap; expansion therefore lowers inflation pressure.",
+      "The supply shock removes timing concerns; contraction therefore restores output and lowers inflation.",
+      "Recovery removes the original gap; the supply shock adds an inflation-output tradeoff."
+    ],
+    "feedback": "A rule based on an earlier demand shortfall is not a complete assessment after recovery and a new supply shock. The action can add inflation pressure at a changed starting point; reassess both current utilization and the source of inflation.",
+    "correct_index": 3
+  },
+  "ECON-SP-FINALBOSS-4019": {
+    "q": "A negative demand shock creates a $560 recessionary gap with falling inflation; capacity is unchanged. In a fixed-price planning model MPC is 0.75. A purchases increase of $140 can arrive immediately, or the same program can arrive after the gap is forecast to close. Which assessment combines diagnosis, size and timing?",
+    "options": [
+      "The immediate program is contractionary; the delayed program becomes expansionary solely because time passes",
+      "The shock is adverse supply, so immediate purchases necessarily reduce inflation while restoring output",
+      "The immediate program matches the current gap; the delayed one risks excess demand after recovery",
+      "Both programs match every future gap because the multiplier makes timing irrelevant"
+    ],
+    "feedback": "Falling output and inflation under the stated demand shock justify demand support. The immediate simple effect is 140/.25=560, matching the current gap. A correct initial size does not make the same arrival-time demand injection appropriate after recovery.",
+    "correct_index": 2
+  },
+  "ECON-SP-LEGENDARY-9029": {
+    "q": "The Fed lowers reserve requirements, but borrowers are weak and banks are cautious. Which warning is strongest?",
+    "options": [
+      "The potential multiplier rises, but actual money creation may remain weak.",
+      "The actual multiplier must rise fully because reserve rules changed.",
+      "The money supply must fall because lower reserves reduce deposits.",
+      "The natural rate must fall because banks can lend more."
+    ],
+    "feedback": "A lower reserve requirement increases lending potential, but actual lending depends on banks and borrowers.",
+    "correct_index": 0
+  },
+  "ECON-SP-LEGENDARY-9033": {
+    "q": "Inflation has been high for several years. The Fed wants lower inflation but private agents doubt the policy will last. Which memo is strongest?",
+    "options": [
+      "The SRPC may not shift down quickly, so disinflation likely requires more output loss.",
+      "The LRPC shifts left immediately because credibility is low and inflation is high.",
+      "The SRPC shifts up less because doubt makes expected inflation fall faster.",
+      "The sacrifice ratio becomes zero because policy announcements replace output adjustment."
+    ],
+    "feedback": "If expected inflation remains high, disinflation is more costly.",
+    "correct_index": 0
+  },
+  "ECON-SP-LEGENDARYBOSS-9102": {
+    "q": "An adverse supply shock moves the economy from AD1-AS2 to AD1-AS1. While AS1 persists, compare keeping AD1 with expanding demand to AD2. How should the output-restoration claim be evaluated?",
+    "options": [
+      "Expansion reaches Y2/P3 instead of Y1/P2; it overshoots potential and leaves prices above the original P1.",
+      "Expansion reaches Y1/P3 instead of Y3/P2; returning to Y1 proves that the original supply conditions have been restored.",
+      "Expansion reaches Y1/P1; recovering original output also restores the original price level despite AS1 remaining in place.",
+      "Expansion reaches Y1/P3 instead of Y3/P2; it restores output but leaves prices above the original P1."
+    ],
+    "feedback": "At unchanged demand the supply shock gives AD1-AS1, Y3/P2. Accommodation gives AD2-AS1, Y1/P3. It offsets the output loss through greater demand, paying a further price-level increase rather than undoing the supply constraint.",
+    "correct_index": 3
+  },
+  "ECON-SP-LEGENDARYBOSS-9105": {
+    "q": "Nominal GDP rises 10% and the deflator rises 10%. Employment rises 2% while hours per worker fall 2%. Which conclusion distinguishes what is exactly established from what requires a ratio?",
+    "options": [
+      "Real GDP is unchanged; total hours fall 0.04%, so output per hour rises slightly despite higher employment",
+      "Real GDP rises 10%; higher employment proves output per hour rises 10%",
+      "Real GDP is unchanged and total hours exactly unchanged because the two labor percentages cancel",
+      "Real GDP falls 0.04%; nominal output and labor input are the same measure"
+    ],
+    "feedback": "Real growth=1.10/1.10−1=0. Hours factor=1.02×.98=.9996, so hours fall.04%. With fixed real output, productivity per hour rises 1/.9996−1≈.0400%. Different indicators need their own denominators.",
+    "correct_index": 0
+  },
+  "ECON-SP-LEGENDARYBOSS-9110": {
+    "q": "A banking system receives $230 of reserves. With rr=10%, a simple maximum suggests deposits of $2300; actual deposits grow $920. Rates fall, but firms also cut expected project returns. Which assessment combines banking and spending constraints?",
+    "options": [
+      "Leakages can explain a multiplier below ten, and weaker expected returns can further limit investment despite lower rates",
+      "The lower deposit expansion proves rates cannot have fallen, so the reported observations are impossible",
+      "Lower rates guarantee the full predicted investment expansion even when expected returns deteriorate",
+      "The reserve injection raises real productive capacity immediately by the textbook deposit maximum"
+    ],
+    "feedback": "Observed multiplier=920/230=4, below the restrictive simple maximum 10. Even if rates fall, the rate-to-investment link can weaken when expected profitability falls. These are distinct constraints at successive stages.",
+    "correct_index": 0
+  },
+  "ECON-SP-LEGENDARYBOSS-9111": {
+    "q": "An economy initially has output 240 above potential and unemployment below natural after a demand boom. Demand then stabilizes while wage setters revise expected inflation upward. A proposal treats the initial low unemployment as a new permanent benchmark. Which joint AD-AS/Phillips correction is needed?",
+    "options": [
+      "SRAS shifts right, SRPC down; output and unemployment remain beyond natural benchmarks.",
+      "LRAS shifts right, LRPC left; the demand boom changes productive capacity permanently.",
+      "Both short-run curves stay fixed; wage expectations affect neither output nor unemployment.",
+      "SRAS shifts left, SRPC up; output and unemployment return toward natural benchmarks."
+    ],
+    "feedback": "Higher expected prices incorporated in wages reduce short-run supply at a given actual price; higher expected inflation raises the short-run Phillips relation. Without real structural changes, the initial demand-induced gain does not establish new natural benchmarks.",
+    "correct_index": 3
+  },
+  "ECON-SP-LEGENDARYBOSS-9112": {
+    "q": "A program intended to close a $500 demand gap arrives after recovery. At arrival, a separate adverse supply shock raises inflation. Which policy evaluation recognizes why the original direction need not remain appropriate?",
+    "options": [
+      "Recovery leaves the original gap intact; expansion therefore lowers both unemployment and inflation.",
+      "The supply shock restores the original demand gap; expansion therefore lowers inflation pressure.",
+      "Recovery removes the original gap; the supply shock adds an inflation-output tradeoff.",
+      "The supply shock removes timing concerns; contraction therefore restores output and lowers inflation."
+    ],
+    "feedback": "A rule based on an earlier demand shortfall is not a complete assessment after recovery and a new supply shock. The action can add inflation pressure at a changed starting point; reassess both current utilization and the source of inflation.",
+    "correct_index": 2
+  },
+  "ECON-SP-LEGENDARYBOSS-9113": {
+    "q": "A negative demand shock creates a $1040 recessionary gap with falling inflation; capacity is unchanged. In a fixed-price planning model MPC is 0.75. A purchases increase of $260 can arrive immediately, or the same program can arrive after the gap is forecast to close. Which assessment combines diagnosis, size and timing?",
+    "options": [
+      "The shock is adverse supply, so immediate purchases necessarily reduce inflation while restoring output",
+      "The immediate program matches the current gap; the delayed one risks excess demand after recovery",
+      "Both programs match every future gap because the multiplier makes timing irrelevant",
+      "The immediate program is contractionary; the delayed program becomes expansionary solely because time passes"
+    ],
+    "feedback": "Falling output and inflation under the stated demand shock justify demand support. The immediate simple effect is 260/.25=1040, matching the current gap. A correct initial size does not make the same arrival-time demand injection appropriate after recovery.",
+    "correct_index": 1
+  },
+  "ECON-SP-LEGENDARYBOSS-9120": {
+    "q": "In π=πe−(u−5)+s, actual inflation is 6% and unemployment 5%. One analyst attributes the result to πe=6,s=0; another to πe=4,s=2. Which observation would distinguish the implied next-year inflation after the supply offset disappears, if unemployment remains natural?",
+    "options": [
+      "The current inflation rate alone: it already proves both cases predict 4%",
+      "The current unemployment rate alone: natural unemployment proves s=0",
+      "The two cases are identical because expectations and supply shocks have the same persistence by definition",
+      "An independent expectation estimate: the first case predicts 6%, the second 4% after supply relief"
+    ],
+    "feedback": "Both initial decompositions satisfy 6=πe+s at u=5. When a temporary s ends, persistent πe determines natural-rate inflation. Additional expectation evidence is necessary to choose between 6 and 4.",
+    "correct_index": 3
+  },
+  "ECON-SP-MEDIUMBOSS-3005": {
+    "q": "Nominal GDP rises 5% while the deflator rises 7%. A report calls this a real expansion because total dollar spending increased. Which corrected output signal should a stabilization discussion use?",
+    "options": [
+      "Real output falls 7%; the price-index increase is the contraction.",
+      "Real output falls about 1.9%; this is a real contraction.",
+      "Real output rises 5%; nominal spending establishes real expansion.",
+      "Real output rises 12%; combining nominal growth and inflation gives expansion."
+    ],
+    "feedback": "Real growth=1.05/1.07−1≈−1.87%. The nominal increase is more than explained by prices.",
+    "correct_index": 1
+  },
+  "ECON-SP-MEDIUMBOSS-3006": {
+    "q": "Use inflation = expected inflation − (unemployment−5) + supply offset. Unemployment is 6%, actual inflation 4%, and an independently measured temporary supply offset is +2 points. What is identified?",
+    "options": [
+      "Expected inflation is 3%; without the offset measurement the data identify only expected inflation plus the offset",
+      "Expected inflation is 5%; without the offset measurement expectations are still separately identified",
+      "Expected inflation is 1%; subtract the unemployment gap and offset from actual inflation",
+      "Expected inflation is 4%; actual inflation equals expected inflation away from natural unemployment"
+    ],
+    "feedback": "4=πe−1+2 gives πe=3. Without a measured offset, only πe+offset=5 is identified. Observed inflation and unemployment alone cannot separate these two vertical-shift mechanisms.",
+    "correct_index": 0
+  },
+  "ECON-SP-MEDIUMBOSS-3011": {
+    "q": "A banking system receives $350 of reserves. With rr=10%, a simple maximum suggests deposits of $3500; actual deposits grow $1400. Rates fall, but firms also cut expected project returns. Which assessment combines banking and spending constraints?",
+    "options": [
+      "Leakages can explain a multiplier below ten, and weaker expected returns can further limit investment despite lower rates",
+      "The lower deposit expansion proves rates cannot have fallen, so the reported observations are impossible",
+      "Lower rates guarantee the full predicted investment expansion even when expected returns deteriorate",
+      "The reserve injection raises real productive capacity immediately by the textbook deposit maximum"
+    ],
+    "feedback": "Observed multiplier=1400/350=4, below the restrictive simple maximum 10. Even if rates fall, the rate-to-investment link can weaken when expected profitability falls. These are distinct constraints at successive stages.",
+    "correct_index": 0
+  },
+  "ECON-SP-MEDIUMBOSS-3014": {
+    "q": "An economy initially has output 360 above potential and unemployment below natural after a demand boom. Demand then stabilizes while wage setters revise expected inflation upward. A proposal treats the initial low unemployment as a new permanent benchmark. Which joint AD-AS/Phillips correction is needed?",
+    "options": [
+      "SRAS shifts right, SRPC down; output and unemployment remain beyond natural benchmarks.",
+      "SRAS shifts left, SRPC up; output and unemployment return toward natural benchmarks.",
+      "LRAS shifts right, LRPC left; the demand boom changes productive capacity permanently.",
+      "Both short-run curves stay fixed; wage expectations affect neither output nor unemployment."
+    ],
+    "feedback": "Higher expected prices incorporated in wages reduce short-run supply at a given actual price; higher expected inflation raises the short-run Phillips relation. Without real structural changes, the initial demand-induced gain does not establish new natural benchmarks.",
+    "correct_index": 1
+  },
+  "LG-B-6002": {
+    "q": "Officials propose changing the policy interest-rate setting, while legislators propose a purchases increase. Which institution-policy pairing is appropriate?",
+    "options": [
+      "Fiscal authorities for rates; central bank for public purchases",
+      "Central bank for the rate decision; fiscal authorities for purchases",
+      "Central bank for both because all stabilization is monetary",
+      "Legislators for both because rates are a spending item"
+    ],
+    "feedback": "Interest-rate policy is monetary; government spending is fiscal. The implementation authority follows the instrument used.",
+    "correct_index": 1
+  },
+  "LG-B-6006": {
+    "q": "The central bank buys securities, increasing reserves and the money supply. In the liquidity-preference money-market model, what is the next directional step, other things equal?",
+    "options": [
+      "The equilibrium interest rate tends to fall",
+      "The equilibrium interest rate must rise because reserves increased",
+      "Aggregate supply immediately shifts left before any interest-rate change",
+      "The federal budget deficit automatically falls by the amount of the purchase"
+    ],
+    "feedback": "With money demand unchanged, the increase in money supply creates excess balances and puts downward pressure on the equilibrium interest rate.",
+    "correct_index": 0
+  },
+  "LG-B-6007": {
+    "q": "The central bank sells securities, reducing reserves and the money supply. In the liquidity-preference money-market model, what is the next directional step, other things equal?",
+    "options": [
+      "The equilibrium interest rate tends to rise",
+      "The equilibrium interest rate must fall because reserves decreased",
+      "Aggregate supply immediately shifts right before any interest-rate change",
+      "The federal budget surplus automatically rises by the amount of the sale"
+    ],
+    "feedback": "With money demand unchanged, the decrease in money supply creates excess money demand and puts upward pressure on the equilibrium interest rate.",
+    "correct_index": 0
+  },
+  "LG-B-6018": {
+    "q": "A higher price level shifts money demand right while money supply is fixed, so the equilibrium interest rate rises. To carry that money-market result into the policy-transmission model, what happens next?",
+    "options": [
+      "Interest-sensitive investment falls, putting downward pressure on aggregate demand.",
+      "Investment rises because higher rates make borrowing cheaper, shifting aggregate demand right.",
+      "Aggregate demand shifts left directly because the price level changed, with no spending channel involved.",
+      "The higher interest rate shifts money demand farther right but has no effect on spending."
+    ],
+    "feedback": "After solving the money market, use the interest-rate change to infer the direction of investment and other rate-sensitive spending, then the aggregate-demand shift.",
+    "correct_index": 0
+  },
+  "LG-Q-2010": {
+    "q": "A central bank wants to contract broad deposits by $480. The estimated actual deposit multiplier is 4 rather than the textbook maximum of 10. Which reserve operation matches the estimate?",
+    "options": [
+      "Add $120 of reserves; a purchase is needed for contraction",
+      "Remove $48 of reserves; the maximum must be used even when actual behavior differs",
+      "Remove $1920 of reserves; multiply the desired deposit change by the actual multiplier",
+      "Remove $120 of reserves; using the maximum multiplier would understate the required removal"
+    ],
+    "feedback": "Using the stated actual multiplier, ΔR=ΔD/m = −480/4 = −120. A maximum that overstates the actual multiplier would imply too small a reserve operation.",
+    "correct_index": 3
+  },
+  "LG-Q-222": {
+    "q": "A bank originates a loan by crediting its borrower’s checking account. The borrower then pays a supplier at a different bank, and the payment settles in reserves. Which comparison correctly separates origination from settlement?",
+    "options": [
+      "Origination adds a loan and a deposit; settlement reduces the originating bank’s reserves and its borrower’s deposit.",
+      "Origination reduces reserves; settlement creates the loan and increases bank capital.",
+      "Origination adds reserves and a deposit; settlement leaves both banks’ reserves unchanged.",
+      "Origination reduces deposits; settlement cancels the originating bank’s loan asset."
+    ],
+    "feedback": "Crediting the account initially adds a loan asset and a deposit liability. The later outgoing payment reduces reserves and the deposit liability; the loan remains an asset.",
+    "correct_index": 0
+  },
+  "LG-Q-249": {
+    "q": "A household keeps a fixed $720 cash balance while the price level rises from 1.2 to 1.5 during money-financed government spending. How much purchasing power, measured in units of the composite good, does this unchanged balance lose?",
+    "options": [
+      "120 units.",
+      "180 units.",
+      "144 units.",
+      "No units, because the nominal balance is fixed."
+    ],
+    "feedback": "The cash initially buys 720/1.2 = 600 units and later buys 720/1.5 = 480 units. The loss is 120 units; an unchanged dollar balance need not preserve purchasing power.",
+    "correct_index": 0
+  },
+  "LG-Q-314": {
+    "q": "Use a hypothetical banking system initially holding exactly its required reserves. The stated reserve ratio stays fixed, banks lend all excess reserves, every loan payment is fully redeposited, and there is no currency drain or other lending constraint. The initial deposit comes from currency previously held by the public, and total deposit expansion includes that initial deposit. The public moves $50 million from currency into checking deposits. The reserve ratio is 10 percent and banks lend all excess reserves. What is the maximum total deposit expansion supported by this shift?",
+    "options": [
+      "$500 million",
+      "$50 million",
+      "$45 million",
+      "$5 million"
+    ],
+    "feedback": "Moving currency into deposits gives banks reserves to support lending. With a multiplier of 10, $50 million can support up to $500 million in deposits. The initial cash deposit itself replaces public currency with deposits; it is not net new money.",
+    "correct_index": 0
+  },
+  "LG-Q-4003": {
+    "q": "In the standard short-run model, monetary easing lowers rates but pessimistic sales expectations offset the incentive to invest $20. Which missing link explains weak AD transmission?",
+    "options": [
+      "Policy-to-rate transmission failed despite the observed interest-rate decline.",
+      "Investment-to-AD transmission fails because capital spending is excluded from AD.",
+      "Reserve-to-credit transmission tightened through an unstated increase in reserve requirements.",
+      "Rate-to-investment transmission weakens when expected sales deteriorate."
+    ],
+    "feedback": "Transmission requires a spending response, not merely a rate movement. Expected profitability can offset financing-cost incentives even when the initial money-market channel works.",
+    "correct_index": 3
+  },
+  "LG-Q-4008": {
+    "q": "Government sends $40 in transfers rather than buying output. With MPC 0.6, what initial entry and total demand effect follow in a simple fixed-price model with no other changes?",
+    "options": [
+      "G: +$40; initial C: $0; total AD: +$100.",
+      "G: $0; initial C: −$24; total AD: −$60.",
+      "G: $0; initial C: +$24; total AD: +$60.",
+      "G: $0; initial C: $0; total AD: $0."
+    ],
+    "feedback": "Transfers are not government purchases, but recipients can spend part of them. Initial C=.6×transfer; multiplying by 1/(1−.6)=2.5 gives total 1.5×transfer.",
+    "correct_index": 2
+  },
+  "LG-Q-4011": {
+    "q": "A purchase increase of $40 raises AD by $160 before crowding out in the simple model. Which inferred MPC and limitation are valid?",
+    "options": [
+      "MPC: 0.75; the gross effect leaves later crowding out unresolved.",
+      "MPC: 0.25; the saving share equals the marginal consumption share.",
+      "MPC: 4; the gross spending ratio equals the marginal consumption share.",
+      "MPC: 0.75; the gross effect establishes an identical realized net effect."
+    ],
+    "feedback": "k=4=1/(1−MPC), so MPC=.75. The question identifies the gross multiplier under its assumptions; later offsets can reduce the net effect.",
+    "correct_index": 0
+  },
+  "LG-Q-4014": {
+    "q": "At a fixed reference price, AD must shift right by $500 billion to meet the policy target. A supplied monetary-policy effect raises autonomous investment by $50 billion, government purchases rise by $60 billion, and fiscal crowding out reduces autonomous investment by $40 billion. MPC = 0.75; apply the same simple multiplier to each autonomous change, with no other leakages. What AD shortfall remains?",
+    "options": [
+      "$220 billion remains.",
+      "$100 billion remains.",
+      "$60 billion remains.",
+      "$460 billion remains."
+    ],
+    "feedback": "Net autonomous spending rises by 50 + 60 − 40 = $70 billion. The multiplier is 1/(1 − 0.75) = 4, so AD shifts $280 billion and the remaining horizontal shortfall is 500 − 280 = $220 billion. Subtracting only $40 billion after multiplying the gross impulse would omit the lost induced spending.",
+    "correct_index": 0
+  },
+  "LG-Q-9019": {
+    "q": "Use a hypothetical banking system initially holding exactly its required reserves. The stated reserve ratio stays fixed, banks lend all excess reserves, every loan payment is fully redeposited, and there is no currency drain or other lending constraint. The initial deposit comes from currency previously held by the public, and total deposit expansion includes that initial deposit. If the public deposits $30 million in currency into banks, the reserve ratio is 15 percent, and banks lend all excess reserves, what is the maximum total deposit expansion?",
+    "options": [
+      "$200 million",
+      "$30 million",
+      "$25.5 million",
+      "$4.5 million"
+    ],
+    "feedback": "The multiplier is 1/0.15 = 6.666..., so $30 million can support about $200 million in total deposits. The initial cash deposit itself replaces public currency with deposits; it is not net new money.",
+    "correct_index": 0
+  },
+  "LG-Q-9020": {
+    "q": "A country has no central bank independence. Before elections, policymakers pressure the central bank to buy bonds and expand money aggressively. Which long-run risk is most consistent with the course logic?",
+    "options": [
+      "Political pressure may create excessive money growth and inflation.",
+      "Political pressure guarantees higher real output forever.",
+      "Bond purchases permanently lower the price level.",
+      "Money becomes commodity money."
+    ],
+    "feedback": "Central bank independence can help reduce politically motivated money growth that risks inflation.",
+    "correct_index": 0
+  },
+  "LG-Q-9035": {
+    "q": "A lender’s one-year fixed nominal contract pays 12 percent. Expected inflation when written was 5 percent, but actual inflation is 9 percent. Use exact gross returns. What are the expected and realized real returns, and what nominal rate on a new loan would preserve the original expected real return if expected inflation is now 9 percent?",
+    "options": [
+      "About 6.67 percent, 2.75 percent, and 16.27 percent.",
+      "7 percent, 3 percent, and 16 percent exactly.",
+      "About 2.75 percent, 6.67 percent, and 12 percent.",
+      "About 6.67 percent, 2.75 percent, and 12 percent."
+    ],
+    "feedback": "Expected real return is 1.12/1.05 − 1 = 6.67 percent; realized is 1.12/1.09 − 1 = 2.75 percent. Preserving the original gross real return on a new loan requires (1.12/1.05) × 1.09 − 1 = 16.27 percent nominal.",
+    "correct_index": 0
+  },
+  "LG-Q-9040": {
+    "q": "A government uses inflation tax finance, expected inflation rises, and nominal interest rates rise. Which concepts are being connected?",
+    "options": [
+      "Inflation tax, expected inflation, and the Fisher effect",
+      "Crowding out, reserve requirements, and commodity money",
+      "Menu costs, M1, and fiscal multipliers",
+      "Liquidity trap, real wage, and barter"
+    ],
+    "feedback": "Printing money can create inflation expectations, and the Fisher effect links expected inflation to nominal interest rates.",
+    "correct_index": 0
+  },
+  "LG-Q-9102": {
+    "q": "New reserves of $140 arrive. A 10% required ratio suggests a simple multiplier of 10, but banks also hold reserves equal to 10% of deposits; assume no currency leakage. Which maximum uses both reserve needs?",
+    "options": [
+      "$2800 in total deposits; add the reciprocals of the two ratios",
+      "$280 in total deposits; multiply reserves by the percentage expressed as 2",
+      "$700 in total deposits; the effective reserve fraction is 20%",
+      "$1400 in total deposits; excess reserves never constrain lending"
+    ],
+    "feedback": "Required plus additional reserves total 20% of deposits. Thus deposits supported by 140 new reserves are 140/.20 = 700, rather than the required-ratio-only maximum.",
+    "correct_index": 2
+  },
+  "LG-Q-9123": {
+    "q": "Money growth rises permanently in an economy whose real productive resources remain 160 index units. Under the stated long-run quantity-theory/neutrality assumptions with stable velocity, which distinction is correct?",
+    "options": [
+      "Faster money growth and a one-time increase both raise sustained inflation equally.",
+      "Faster money growth raises sustained real growth; a one-time increase raises real capacity.",
+      "Faster money growth and a one-time increase leave both nominal price measures unchanged.",
+      "Faster money growth raises sustained inflation; a one-time increase raises the price level."
+    ],
+    "feedback": "Levels and growth rates differ: a lasting growth-rate change can sustain inflation, whereas a one-time level change is not ongoing faster money growth. Real capacity remains determined by the stated real factors.",
+    "correct_index": 3
+  },
+  "LG-Q-9133": {
+    "q": "Two governments each add $50 to purchases. A has MPC 0.8 and total AD crowding out $150; B has MPC 0.5 and no crowding out. Which comparison follows?",
+    "options": [
+      "B has zero effect because a lower MPC eliminates every induced round",
+      "A has a negative net effect because the total crowding-out amount must be multiplied by five again",
+      "Both net effects are $100; A's larger gross multiplier is offset by greater crowding out",
+      "A has the larger net effect $250; a larger MPC always wins"
+    ],
+    "feedback": "A: 5×50−150=100. B: 2×50=100. Gross response rankings need not be net response rankings when offsets differ.",
+    "correct_index": 2
+  },
+  "LG-Q-9135": {
+    "q": "In a recession, existing rules reduce taxes by $40 and raise benefits. A separate purchases bill is enacted later. Recovery begins before the bill takes effect. Which parts can reverse with recovery without another policy vote?",
+    "options": [
+      "Taxes and benefits can reverse under existing rules; the purchases remain discretionary despite their delayed arrival.",
+      "All changes reverse automatically because each originally supported aggregate demand.",
+      "Only the purchases reverse automatically, because passage during a recession makes them an automatic stabilizer.",
+      "None can reverse without a new vote, because every change in a budget amount is discretionary."
+    ],
+    "feedback": "Automatic stabilizers depend on economic conditions under already-enacted rules, so recovery can reverse their recession response. A separately legislated purchases program remains discretionary; its timing does not reclassify its institutional origin.",
+    "correct_index": 0
+  },
+  "LG-Q-9136": {
+    "q": "At a fixed reference price, desired spending exceeds the policy target by $360 billion. Contractionary monetary policy is supplied as reducing autonomous investment by $50 billion. MPC = 0.8; use the simple spending multiplier with no other leakages. What excess desired spending remains at that reference price?",
+    "options": [
+      "$110 billion",
+      "$250 billion",
+      "$50 billion",
+      "No gap remains; policy overshoots by $110 billion."
+    ],
+    "feedback": "The supplied investment fall shifts AD left by 50/(1 − 0.8) = $250 billion. Excess desired spending falls to 360 − 250 = $110 billion. This is an AD-distance calculation, not a claim that the equilibrium GDP gap falls one-for-one.",
+    "correct_index": 0
+  },
+  "LG-Q-9142": {
+    "q": "A $60 billion tax cut has an MPC of 0.75; an alternative policy raises government purchases by $45 billion. With the same spending multiplier and no crowding out, how do their effects on aggregate demand and their budget costs compare?",
+    "options": [
+      "Both first-round impulses are $60 billion and total shifts $240 billion, because taxes and purchases are identical",
+      "The tax cut adds only $45 billion in total, while purchases receive induced spending",
+      "Both first-round impulses are $45 billion and total shifts $180 billion, although the budget costs differ",
+      "The tax cut first adds $60 billion and ultimately $240 billion, while purchases add only $180 billion"
+    ],
+    "feedback": "The tax cut initially raises consumption by 0.75 × $60 billion = $45 billion. Purchases also add $45 billion directly. Multiplying each by 4 gives $180 billion in total, but the tax cut costs the budget $60 billion versus $45 billion for purchases.",
+    "correct_index": 2
+  },
+  "LG-R-5055": {
+    "q": "If gross AD rises $200 billion and crowding out is $50 billion, net AD rises:",
+    "options": [
+      "$150 billion",
+      "$250 billion",
+      "$200 billion",
+      "$50 billion"
+    ],
+    "feedback": "Crowding out subtracts from the gross effect: $200 - $50 = $150 billion.",
+    "correct_index": 0
+  },
+  "P52A-FISCAD-B1-001": {
+    "q": "A tax increase of $50 is announced, but households expect it to be temporary and reduce consumption by less than the textbook MPC-based estimate. Which model-use caution is justified?",
+    "options": [
+      "The tax increase must expand consumption because temporary taxes always reverse signs",
+      "The spending multiplier must be negative because the initial response is smaller",
+      "The budget identity proves consumption falls exactly by the full tax increase",
+      "The consumption response assumption changed; use the observed or justified initial response before applying induced rounds"
+    ],
+    "feedback": "A formula depends on its behavioral MPC/response assumptions. Expectations can change the initial consumption response; a budget identity does not fix that response.",
+    "correct_index": 3
+  },
+  "P52A-FISCAD-B2-001": {
+    "q": "Government sends $80 in transfers rather than buying output. With MPC 0.6, what initial entry and total demand effect follow in a simple fixed-price model with no other changes?",
+    "options": [
+      "G: +$80; initial C: $0; total AD: +$200.",
+      "G: $0; initial C: −$48; total AD: −$120.",
+      "G: $0; initial C: +$48; total AD: +$120.",
+      "G: $0; initial C: $0; total AD: $0."
+    ],
+    "feedback": "Transfers are not government purchases, but recipients can spend part of them. Initial C=.6×transfer; multiplying by 1/(1−.6)=2.5 gives total 1.5×transfer.",
+    "correct_index": 2
+  },
+  "P52A-FISCAD-B2-002": {
+    "q": "A tax increase of $90 is announced, but households expect it to be temporary and reduce consumption by less than the textbook MPC-based estimate. Which model-use caution is justified?",
+    "options": [
+      "The budget identity proves consumption falls exactly by the full tax increase",
+      "The consumption response assumption changed; use the observed or justified initial response before applying induced rounds",
+      "The tax increase must expand consumption because temporary taxes always reverse signs",
+      "The spending multiplier must be negative because the initial response is smaller"
+    ],
+    "feedback": "A formula depends on its behavioral MPC/response assumptions. Expectations can change the initial consumption response; a budget identity does not fix that response.",
+    "correct_index": 1
+  },
+  "P52A-FISCAD-L-006": {
+    "q": "A recessionary economy receives a temporary tax rebate. Households use half to repay debt, save one quarter, and spend one quarter. The immediate consumption channel equals:",
+    "options": [
+      "50 percent of the rebate.",
+      "100 percent of the rebate.",
+      "75 percent of the rebate.",
+      "25 percent of the rebate."
+    ],
+    "feedback": "Only the portion spent on current consumption directly raises the consumption component of AD.",
+    "correct_index": 3
+  },
+  "P52A-MARG-L-005": {
+    "q": "A policy has already spent $2 billion. Continuing for one year costs $600 million and produces expected benefits of $520 million; ending it costs $30 million in transition expenses. What is the best marginal choice?",
+    "options": [
+      "End the policy because $30 million is less costly than an $80 million negative continuation margin.",
+      "End because total cost since the program began exceeds total benefit",
+      "Continue so the $2 billion already spent is not wasted",
+      "Continue because the $520 million in benefits exceeds the $30 million transition cost."
+    ],
+    "feedback": "The decision should compare future alternatives: continue loses $80 million; ending costs $30 million.",
+    "correct_index": 0
+  },
+  "P52A-OPPC-EL-002": {
+    "q": "A firm owns a machine that can produce Product X with contribution margin $75,000 or Product Y with contribution margin $92,000. Converting it to Product Z yields $100,000 but costs $15,000. If the firm chooses Z, what is the net benefit relative to the next-best alternative?",
+    "options": [
+      "-$7,000.",
+      "$77,000.",
+      "$8,000.",
+      "$25,000."
+    ],
+    "feedback": "Z nets $85,000, which is $7,000 below the $92,000 next-best use.",
+    "correct_index": 0
+  },
+  "P52B-EPOL-EL-001": {
+    "q": "Two studies estimate opposite effects because one uses a credible natural experiment and the other compares self-selected groups. The strongest appraisal emphasizes:",
+    "options": [
+      "Differences in causal identification.",
+      "Which result has the larger number.",
+      "Which author supports the preferred policy.",
+      "Whether both studies use percentages."
+    ],
+    "feedback": "Policy advice should weigh evidence by its ability to identify causal effects.",
+    "correct_index": 0
+  },
+  "P52B-S3-LPMM-B1-003": {
+    "q": "Money supply expands, but the interest rate rises rather than falls. With an upward interest effect from money demand, what additional shift could reconcile those observations?",
+    "options": [
+      "Money demand vanished, making the interest rate independent of supply and demand.",
+      "Money demand increased enough to outweigh the rate-lowering supply expansion.",
+      "Money demand decreased, reinforcing the supply expansion's rate-lowering effect.",
+      "Money demand stayed fixed, making the supply expansion raise the rate by itself."
+    ],
+    "feedback": "A supply increase alone lowers the rate in the standard diagram. A sufficiently large outward money-demand shift can dominate that effect and produce a higher observed rate despite monetary expansion.",
+    "correct_index": 1
+  },
+  "P52B-S3-MPT-B2-003": {
+    "q": "A central bank wants to contract broad deposits by $1120. The estimated actual deposit multiplier is 4 rather than the textbook maximum of 10. Which reserve operation matches the estimate?",
+    "options": [
+      "Remove $4480 of reserves; multiply the desired deposit change by the actual multiplier",
+      "Remove $280 of reserves; using the maximum multiplier would understate the required removal",
+      "Add $280 of reserves; a purchase is needed for contraction",
+      "Remove $112 of reserves; the maximum must be used even when actual behavior differs"
+    ],
+    "feedback": "Using the stated actual multiplier, ΔR=ΔD/m = −1120/4 = −280. A maximum that overstates the actual multiplier would imply too small a reserve operation.",
+    "correct_index": 1
+  },
+  "P52B-S4-FMCO-B1-001": {
+    "q": "A purchase increase of $80 raises AD by $320 before crowding out in the simple model. Which inferred MPC and limitation are valid?",
+    "options": [
+      "MPC: 0.25; the saving share equals the marginal consumption share.",
+      "MPC: 4; the gross spending ratio equals the marginal consumption share.",
+      "MPC: 0.75; the gross effect establishes an identical realized net effect.",
+      "MPC: 0.75; the gross effect leaves later crowding out unresolved."
+    ],
+    "feedback": "k=4=1/(1−MPC), so MPC=.75. The question identifies the gross multiplier under its assumptions; later offsets can reduce the net effect.",
+    "correct_index": 3
+  },
+  "P52B-S4-FMCO-B1-002": {
+    "q": "Two governments each add $90 to purchases. A has MPC 0.8 and total AD crowding out $270; B has MPC 0.5 and no crowding out. Which comparison follows?",
+    "options": [
+      "B has zero effect because a lower MPC eliminates every induced round",
+      "A has a negative net effect because the total crowding-out amount must be multiplied by five again",
+      "Both net effects are $180; A's larger gross multiplier is offset by greater crowding out",
+      "A has the larger net effect $450; a larger MPC always wins"
+    ],
+    "feedback": "A: 5×90−270=180. B: 2×90=180. Gross response rankings need not be net response rankings when offsets differ.",
+    "correct_index": 2
+  },
+  "P52B-S4-FMCO-B2-002": {
+    "q": "A purchase increase of $120 raises AD by $480 before crowding out in the simple model. Which inferred MPC and limitation are valid?",
+    "options": [
+      "MPC: 0.25; the saving share equals the marginal consumption share.",
+      "MPC: 0.75; the gross effect leaves later crowding out unresolved.",
+      "MPC: 4; the gross spending ratio equals the marginal consumption share.",
+      "MPC: 0.75; the gross effect establishes an identical realized net effect."
+    ],
+    "feedback": "k=4=1/(1−MPC), so MPC=.75. The question identifies the gross multiplier under its assumptions; later offsets can reduce the net effect.",
+    "correct_index": 1
+  },
+  "P52B-S4-FMCO-B2-003": {
+    "q": "Two governments each add $130 to purchases. A has MPC 0.8 and total AD crowding out $390; B has MPC 0.5 and no crowding out. Which comparison follows?",
+    "options": [
+      "Both net effects are $260; A's larger gross multiplier is offset by greater crowding out",
+      "A has the larger net effect $650; a larger MPC always wins",
+      "B has zero effect because a lower MPC eliminates every induced round",
+      "A has a negative net effect because the total crowding-out amount must be multiplied by five again"
+    ],
+    "feedback": "A: 5×130−390=260. B: 2×130=260. Gross response rankings need not be net response rankings when offsets differ.",
+    "correct_index": 0
+  },
+  "P52B-S4-MPTX-B1-002": {
+    "q": "In the standard short-run model, monetary easing lowers rates but pessimistic sales expectations offset the incentive to invest $60. Which missing link explains weak AD transmission?",
+    "options": [
+      "Policy-to-rate transmission failed despite the observed interest-rate decline.",
+      "Investment-to-AD transmission fails because capital spending is excluded from AD.",
+      "Rate-to-investment transmission weakens when expected sales deteriorate.",
+      "Reserve-to-credit transmission tightened through an unstated increase in reserve requirements."
+    ],
+    "feedback": "Transmission requires a spending response, not merely a rate movement. Expected profitability can offset financing-cost incentives even when the initial money-market channel works.",
+    "correct_index": 2
+  },
+  "P52B-S4-MPTX-B2-003": {
+    "q": "In the standard short-run model, monetary easing lowers rates but pessimistic sales expectations offset the incentive to invest $100. Which missing link explains weak AD transmission?",
+    "options": [
+      "Rate-to-investment transmission weakens when expected sales deteriorate.",
+      "Policy-to-rate transmission failed despite the observed interest-rate decline.",
+      "Investment-to-AD transmission fails because capital spending is excluded from AD.",
+      "Reserve-to-credit transmission tightened through an unstated increase in reserve requirements."
+    ],
+    "feedback": "Transmission requires a spending response, not merely a rate movement. Expected profitability can offset financing-cost incentives even when the initial money-market channel works.",
+    "correct_index": 0
+  },
+  "P52B-S4-UNEM-B1-001": {
+    "q": "In an adult population of 500, employment is 250 and active-search unemployment is 25. A survey also finds 25 people who want work but have stopped searching. Which correction to a report counting all jobless people as unemployed is needed?",
+    "options": [
+      "Include discouraged workers in unemployment; UR is about 16.7% and LFPR is 60%",
+      "Include discouraged workers only in the labor force; UR is about 8.3% and LFPR is 60%",
+      "Exclude discouraged workers but divide unemployment by adult population; UR is 5% and LFPR is 50%",
+      "Exclude discouraged workers from unemployment and the labor force; UR is about 9.1% and LFPR is 55%"
+    ],
+    "feedback": "The labor force is 250+25 = 275. The discouraged are not active searchers. UR = 0.1/1.1 ≈ 9.1%; LFPR = 1.1/2 = 55%.",
+    "correct_index": 3
+  },
+  "P52B-S4-UNEM-B2-003": {
+    "q": "In an adult population of 600, employment is 300 and active-search unemployment is 30. A survey also finds 30 people who want work but have stopped searching. Which correction to a report counting all jobless people as unemployed is needed?",
+    "options": [
+      "Exclude discouraged workers from unemployment and the labor force; UR is about 9.1% and LFPR is 55%",
+      "Include discouraged workers in unemployment; UR is about 16.7% and LFPR is 60%",
+      "Include discouraged workers only in the labor force; UR is about 8.3% and LFPR is 60%",
+      "Exclude discouraged workers but divide unemployment by adult population; UR is 5% and LFPR is 50%"
+    ],
+    "feedback": "The labor force is 300+30 = 330. The discouraged are not active searchers. UR = 0.1/1.1 ≈ 9.1%; LFPR = 1.1/2 = 55%.",
+    "correct_index": 0
+  },
+  "P62D-ITP-B3-048": {
+    "q": "A tariff lowers domestic consumer surplus by $500, raises producer surplus by $180 and raises government revenue by $200. Administering it uses $20 of additional real resources. Which national accounting is correct?",
+    "options": [
+      "National welfare falls $520; producer gains and revenue do not offset any part of consumer loss.",
+      "National welfare falls $140; producer gains and revenue are domestic transfers, while the residual distortion and administration are real losses.",
+      "National welfare falls $340; government revenue is a social loss because consumers fund it.",
+      "National welfare rises $360; add producer gains and revenue and subtract administration without counting consumer loss."
+    ],
+    "feedback": "Before administration, national change is -500+180+200=-120. Additional resource cost gives -140. Revenue and producer gains offset portions of consumer loss rather than being counted again as deadweight loss.",
+    "correct_index": 1
+  },
+  "P62D-ITP-B3-049": {
+    "q": "Protection would preserve 2,000 jobs for a year at $60 million of real consumer and downstream efficiency cost, with no other benefits in this exercise. A targeted transition program costs $20 million and enables 1,500 workers to obtain equally valued jobs that year. Which comparison informs the employment goal?",
+    "options": [
+      "Protection costs $13,333 per preserved job; transition costs $30,000 per worker and leaves no employment gap.",
+      "Protection is necessarily best because it preserves all 2,000 jobs; consumer and downstream costs are irrelevant to an employment goal.",
+      "Protection costs $30,000 per preserved job; transition costs about $13,333 per reemployed worker but leaves 500 more workers needing help.",
+      "Transition is necessarily best because its total cost is lower; differences in the number of workers helped need not be reported."
+    ],
+    "feedback": "Protection costs 60000000/2000=30000 per job-year, versus 20000000/1500≈13333. The targeted program costs less per worker but reaches fewer. Advice should state both the efficiency comparison and the remaining distributional need.",
+    "correct_index": 2
+  },
+  "P62D-ITP-L-095": {
+    "q": "Which welfare package correctly describes the tariff in the displayed trade graph relative to free trade?",
+    "options": [
+      "Consumers lose $450k; producers gain $150k; government gets $200k; net welfare falls $100k",
+      "Consumers lose $200k; producers gain $200k; government gets $100k; net welfare rises $100k",
+      "Consumers lose $450k; producers gain $450k; government gets $200k; net welfare is unchanged",
+      "Consumers lose $100k; producers gain $150k; government gets $200k; net welfare rises $250k"
+    ],
+    "feedback": "The $450k consumer loss is only partly offset by the $150k producer gain and $200k tariff revenue, leaving $100k deadweight loss.",
+    "correct_index": 0
+  },
+  "P62D-ITP-L-098": {
+    "q": "Assuming domestic license holders receive the rents, which welfare package correctly describes the displayed trade graph relative to free trade?",
+    "options": [
+      "Consumers lose $712.5k; producers gain $337.5k; quota rents are $150k; net welfare falls $225k",
+      "Consumers lose $337.5k; producers gain $712.5k; quota rents are $150k; net welfare rises $525k",
+      "Consumers lose $712.5k; producers gain $337.5k; quota rents are $375k; net welfare is unchanged",
+      "Consumers lose $225k; producers gain $150k; quota rents are $75k; net welfare is unchanged"
+    ],
+    "feedback": "The consumer loss exceeds the producer gain plus domestic quota rents by $225 thousand.",
+    "correct_index": 0
+  },
+  "P73-MARG-H-012": {
+    "q": "A retailer’s first three added inventory batches have net marginal benefits of $6,000, $2,000, and -$1,500. A fourth would have +$500 only if the third is purchased. What is the best discrete choice?",
+    "options": [
+      "Buy two batches",
+      "Buy four batches",
+      "Buy three batches",
+      "Buy one batch"
+    ],
+    "feedback": "Buying batches three and four together would reduce net benefit by $1,000.",
+    "correct_index": 0
+  },
+  "P73-MARG-L-008": {
+    "q": "A software team’s next sprint has a 50% chance of creating $180,000 in value and costs $70,000. It also delays maintenance worth $25,000. What should it do?",
+    "options": [
+      "Do not run it because expected benefit $90,000 is below relevant cost $95,000",
+      "Run it because possible benefit is $180,000",
+      "Run it because sprint cost alone is below expected benefit",
+      "Do not run it because uncertainty makes expected benefit zero"
+    ],
+    "feedback": "Expected benefit is $90,000; direct plus opportunity cost is $95,000.",
+    "correct_index": 0
+  },
+  "P74-INC-BR-005": {
+    "q": "A policy aims to reduce congestion but rewards agencies only for bus tickets sold. What problem can this funding rule create?",
+    "options": [
+      "The rewarded measure may redirect behavior away from the stated policy objective",
+      "A stated goal automatically determines the behavioral margin",
+      "Ticket sales are identical to reduced congestion",
+      "An incentive exists only after congestion falls"
+    ],
+    "feedback": "Policy design must align the payoff with the behavior and outcome actually sought.",
+    "correct_index": 0
+  },
+  "P74-INC-H-008": {
+    "q": "A procurement office rewards the lowest bid and later faces frequent change orders. Which redesign most directly addresses the incentive problem?",
+    "options": [
+      "Evaluate expected total cost and performance, not the opening bid alone",
+      "Raise the reward for submitting any low opening bid regardless of later change orders",
+      "Ignore change orders because the initial metric improved",
+      "Require every bidder to choose the same production method"
+    ],
+    "feedback": "A broader metric reduces the payoff to lowballing the initial bid and recovering revenue later.",
+    "correct_index": 0
+  },
+  "P74-INC-L-013": {
+    "q": "A credit card offers triple points for travel. One customer travels more; another keeps the same trips and switches cards. What is the lesson?",
+    "options": [
+      "The same reward can change different margins for different consumers",
+      "Only the customer who travels more responded to the incentive",
+      "A reward is ineffective unless total travel rises for everyone",
+      "Card switching cannot be an incentive response"
+    ],
+    "feedback": "The reward can affect travel quantity, payment choice, or neither, depending on alternatives.",
+    "correct_index": 0
+  },
+  "P76-MODL-LB-006": {
+    "q": "A simple model forecasts regional employment with 5% out-of-sample error and recommends policy A across plausible parameter values. A complex model lowers error to 4.8%, but small plausible parameter changes reverse its A-versus-B policy ranking. The decision concerns a costly irreversible policy. Which next step is strongest?",
+    "options": [
+      "Report the modest prediction gain and unstable ranking, test sensitive parameters, and assess whether the policy choice is robust enough for this decision.",
+      "Choose the complex model because any lower forecast error establishes a more reliable policy ranking.",
+      "Choose A solely because the simple model is stable, treating stability as proof that its mechanism and recommendation are correct.",
+      "Average the two point recommendations without examining parameters, because averaging eliminates structural uncertainty."
+    ],
+    "feedback": "Predictive error and decision robustness are different criteria. A small fit improvement may not justify a sensitive irreversible recommendation; testing influential assumptions and reporting ranking uncertainty is more useful than automatic complexity or simplicity.",
+    "correct_index": 0
+  },
+  "PG3-AD-H-001": {
+    "q": "Refer to the first AD graph. At a price level of 50, which value is closest to the horizontal real-GDP-demanded gap between AD0 and AD1?",
+    "options": [
+      "25",
+      "50",
+      "75",
+      "100"
+    ],
+    "feedback": "The hand-drawn lines imply roughly 100 on AD0 and about 155 on AD1. The gap is about 55 units, so 50 is the closest offered estimate; the drawing does not justify an exact 50-unit claim.",
+    "correct_index": 1
+  },
+  "PG3-AD-H-002": {
+    "q": "Refer to the second AD graph. At a price level of 45, which value is closest to the horizontal real-GDP-demanded gap between AD0 and AD1?",
+    "options": [
+      "25",
+      "75",
+      "100",
+      "50"
+    ],
+    "feedback": "The curves show approximately 150 on AD0 and 100 on AD1 at this price level, so 50 units is the closest offered estimate.",
+    "correct_index": 3
+  },
+  "PG3-MEQ-L-004": {
+    "q": "Refer to the ADAS graph with points A, B, C and D. The economy begins at A. A supply disruption moves AS0 to AS1, giving D, and remains in place. Compare two fiscal targets while AS1 stays fixed: restore the original output, or restore the original price level. Which comparison follows from the drawn straight AS1 line, extended if needed?",
+    "options": [
+      "Restoring output reaches C at 75/150; restoring the original price gives output 50 and requires further demand contraction.",
+      "Restoring output reaches C at 75/150; this also restores the original purchasing-power conditions because output is unchanged.",
+      "Both targets reach A at 75/100 because fiscal expansion shifts the disrupted supply curve back.",
+      "Restoring output reaches C at 75/150; restoring the original price gives output 25 and requires further demand contraction."
+    ],
+    "feedback": "A is (75,100) and D is (50,125). With AS1 fixed, output 75 requires C at price 150. AS1 passes through D (50,125) and C (75,150), so its equation is P = Y + 75; at P = 100, Y = 25. Moving from D to that lower-price point requires lower AD and further output loss. Fiscal demand policy does not remove the supply disruption.",
+    "correct_index": 3
+  },
+  "PG5-PC-L-006": {
+    "q": "Refer to the graph with SRPC0, SRPC1, A and B. Use the model inflation = expected inflation − 0.6 × (unemployment − 5) + supply offset, with all rates in percent and differences in percentage points. At B the separately measured supply offset is +1.1 points. What expected inflation is consistent with B, and could the graph alone identify that expectation if the supply offset were unknown?",
+    "options": [
+      "Expected inflation is 5.5%; without the offset, only expected inflation plus the supply offset is identified",
+      "Expected inflation is 6.6%; without the offset, only expected inflation plus the supply offset is identified",
+      "Expected inflation is 5.5%; without the offset, expected inflation is still separately identified by the curve intercept",
+      "Expected inflation is 4.3%; without the offset, expected inflation is still separately identified by actual inflation"
+    ],
+    "feedback": "B has unemployment 6 and actual inflation 6. Thus 6 = expected inflation − 0.6 + 1.1, implying expected inflation 5.5. Without the offset measurement the graph identifies only expected inflation + offset = 6.6. The higher curve does not by itself isolate an expectations change.",
+    "correct_index": 0
+  },
+  "PM2A-EXP-EB-007": {
+    "q": "Use π=πe−(u−5)+s. Actual inflation is 4% at unemployment 6%. Without information about s, a student reports expected inflation as exactly 5%. Which qualification is necessary?",
+    "options": [
+      "Expected inflation is exactly 4% whenever actual inflation is 4%",
+      "A positive supply offset implies a higher expectation estimate at the same inflation and unemployment",
+      "5% follows only if s=0; a positive supply offset implies a lower expectation estimate",
+      "5% is exact for every supply offset because actual inflation is given"
+    ],
+    "feedback": "Rearrange to πe=4+(6−5)−s=5−s. Ignoring an unknown supply offset treats an assumption as an observed fact.",
+    "correct_index": 2
+  },
+  "PM2A-EXP-L-002": {
+    "q": "A temporary supply disruption raises inflation while existing contracts still reflect the original expected inflation. Wage setters update forecasts using the observed inflation, but the disruption ends before the new contracts take effect. Expected inflation nevertheless remains above its original level. With natural unemployment unchanged, what can be concluded about the final SRPC relative to its original position and its position during the disruption?",
+    "options": [
+      "It must return exactly to its original position because the physical disruption ended.",
+      "It must lie above the disruption-period curve because any expectations rise exceeds any removed supply offset.",
+      "It must lie below the original curve because the original supply shock was temporary.",
+      "It remains above its original position, but its position relative to the disruption-period curve depends on the expectations rise versus the removed supply offset."
+    ],
+    "feedback": "The original curve has neither the supply offset nor the higher expectation. The final curve retains only the expectation increase, so it is above the original. Comparing it with the disruption-period curve requires the two offset magnitudes. Observed inflation alone does not identify their relative sizes.",
+    "correct_index": 3
+  },
+  "PM2A-LRPC-EB-013": {
+    "q": "Actual unemployment is 4% when the natural rate is 5%. Inflation expectations are temporarily below actual inflation. Which future comparison is conditional on unchanged real labor-market structure?",
+    "options": [
+      "As expectations catch up, unemployment must become zero because the initial gap was negative",
+      "As expectations catch up, unemployment can return to 5%; the initial 4% does not prove LRPC shifted left",
+      "As expectations catch up, unemployment must stay 4%; observed unemployment defines the natural rate",
+      "As expectations catch up, LRPC becomes horizontal because monetary policy determines all employment"
+    ],
+    "feedback": "A temporary below-natural unemployment rate can be a demand/expectations gap. Without a structural change, adjustment does not require a new natural rate.",
+    "correct_index": 1
+  },
+  "PM2A-LRPC-MB-015": {
+    "q": "A labor-market reform lowers natural unemployment while a monetary expansion raises inflation. How could a report mistakenly credit monetary expansion for a permanent unemployment gain?",
+    "options": [
+      "By distinguishing the reform's benchmark change from the monetary policy's nominal effect.",
+      "By checking whether expectations have caught up before interpreting the unemployment observation.",
+      "By comparing labor-market structure before and after the reform rather than using inflation alone.",
+      "By attributing the reform's change in the natural benchmark to the simultaneous demand expansion."
+    ],
+    "feedback": "Simultaneous events do not identify a single cause. A real matching or skill reform can lower natural unemployment; demand expansion alone does not establish that structural change. The comparison must separate the two mechanisms.",
+    "correct_index": 3
+  },
+  "PM2A-SAC-FB-020": {
+    "q": "A disinflation must fit a cumulative loss budget 6% of annual output. Plan A’s ratio is 3 and Plan B’s 2. Both estimates are treated as constant. Which plan can deliver a 3-point reduction within that budget?",
+    "options": [
+      "B only: its loss is 6%, versus A’s 9%",
+      "A only: its larger ratio means more inflation reduction per unit loss",
+      "Both: a 3-point target always costs 3%",
+      "Neither: each ratio itself exceeds the target"
+    ],
+    "feedback": "Multiply cost per point by the 3-point target: A9%, B6%. Only B meets the loss ceiling.",
+    "correct_index": 0
+  },
+  "PM2A-SAC-LB-023": {
+    "q": "Annual output gaps are −2%,−1% and−1%, each measured against the same benchmark annual output of $260. Inflation falls 7% to 5%. Officials have a 6% cumulative output-loss budget and expect the observed sacrifice ratio to apply to further disinflation. Does the remaining budget permit lowering inflation to 3%?",
+    "options": [
+      "Yes. Dividing the 4% loss by final inflation 5% gives 0.8, so a further two-point reduction fits.",
+      "Yes. Only the final 1% annual gap counts against the budget, leaving 5% for further reduction.",
+      "No. All 6% of the budget has already been spent because the initial inflation rate was 7%.",
+      "No. The ratio is 2 and only 2% of the loss budget remains, enough for one more inflation point, to 4%."
+    ],
+    "feedback": "Cumulative loss is 4% and disinflation 2 points, so the sacrifice ratio is 2. The remaining 2% budget buys one additional point if that ratio continues. A further two-point reduction would require 4% more loss and exceed the stated budget.",
+    "correct_index": 3
+  },
+  "PM2A-SAC-LB-024": {
+    "q": "A 3-point disinflation was planned at sacrifice ratio 2, exhausting a 6% loss budget. The first point unexpectedly costs 4%. If remaining disinflation costs 2% per point, how much more disinflation fits the budget, and what would achieving the original target cost?",
+    "options": [
+      "No further point can be achieved because the first loss exceeded its forecast",
+      "The target can increase because a larger first loss lowers all later losses mechanically",
+      "Only one further point fits the remaining 2% budget; achieving all 3 points would require total loss 8%",
+      "All remaining 2 points fit because the original average ratio remains 2 by assumption"
+    ],
+    "feedback": "The unspent budget is 6−4=2. At 2% per point it buys one further point. Finishing the remaining two would cost 4 more and total 8; the original joint promises are no longer compatible.",
+    "correct_index": 2
+  },
+  "PM2A-SRPC-EB-008": {
+    "q": "An expected demand expansion raises actual and expected inflation together, with no supply shock or labor-market reform. Can the initial surprise-inflation unemployment gain be inferred?",
+    "options": [
+      "Yes; expected inflation shifts the long-run curve left and lowers natural unemployment.",
+      "No; expected demand expansion necessarily reduces actual inflation below its initial rate.",
+      "No; equal actual and expected inflation supplies no inflation surprise to push unemployment below natural.",
+      "Yes; any higher actual inflation implies the same unemployment gain regardless of expectations."
+    ],
+    "feedback": "In the expectations-augmented Phillips model, the temporary unemployment deviation depends on inflation relative to expectations. Equal increases in the two do not supply the surprise that generated the original short-run gain.",
+    "correct_index": 2
+  },
+  "PM2B2-BIAS-FB-006": {
+    "q": "A new product expands choice while the statistical basket still spends $240 on older products. Which inference respects both the new-goods limitation and the continued use of CPI?",
+    "options": [
+      "Delayed inclusion proves CPI understates every household's inflation by the same fixed amount",
+      "Delayed inclusion can miss gains in purchasing opportunities; that limitation does not make every observed CPI change meaningless",
+      "Delayed inclusion means CPI is a complete cost-of-living measure because consumers previously did not buy the new product",
+      "Delayed inclusion means actual prices cannot change until the product enters the official basket"
+    ],
+    "feedback": "New goods can improve purchasing opportunities before an index incorporates them. The limitation is specific; it does not invalidate all price evidence or establish one universal bias size.",
+    "correct_index": 1
+  },
+  "PM2B2-DEF-L-002": {
+    "q": "A household grant rises $2,000 to $2,160 as CPI rises 125 to 135. Nominal GDP rises 8% and the GDP deflator 4%. A report applies the 8% consumer-price increase to both the grant and GDP, concluding that both real values are unchanged. Which part fails?",
+    "options": [
+      "Both conclusions are valid because identical nominal growth requires identical real growth.",
+      "The GDP conclusion is valid, but the grant gains about 3.8% because households should use the GDP deflator.",
+      "Both real values rise 8% because neither consumer nor output prices affect real measurement.",
+      "The grant conclusion is valid, but real GDP rises about 3.8% because GDP needs its own 4% price change."
+    ],
+    "feedback": "The grant and CPI each rise 8%, so its purchasing power is constant. Real GDP uses 1.08/1.04−1≈3.8%. The incorrect inference comes from using the consumer price measure for domestic output.",
+    "correct_index": 3
+  },
+  "PM2B3-PROD-E-001": {
+    "q": "In GROWTH-01, point A is located at capital per worker of 20. What output per worker is shown at A?",
+    "options": [
+      "28.53",
+      "20",
+      "36.37",
+      "40"
+    ],
+    "feedback": "Point A shows output per worker of 28.53, so that is the productivity value read from the graph.",
+    "correct_index": 0
+  },
+  "PM2B3-PROD-M-001": {
+    "q": "Using GROWTH-01, moving from point A to point B raises output per worker by approximately how much?",
+    "options": [
+      "7.84",
+      "8.53",
+      "16.37",
+      "20.00"
+    ],
+    "feedback": "Output per worker rises from 28.53 at A to 36.37 at B: 36.37−28.53=7.84.",
+    "correct_index": 0
+  },
+  "PM2B4-UTYPE-BR-001": {
+    "q": "A jobless worker has actively applied for jobs this week after voluntarily leaving a suitable job. How should the case be described across measurement and type?",
+    "options": [
+      "Counted as unemployed, with frictional unemployment as the likely type",
+      "Not in the labor force, with structural unemployment as the likely type",
+      "Counted as employed, with cyclical unemployment as the likely type",
+      "Not counted in labor statistics because leaving a job voluntarily prevents unemployment status"
+    ],
+    "feedback": "Active job search makes the worker officially unemployed; normal search after leaving a suitable job is frictional unemployment.",
+    "correct_index": 0
+  },
+  "PM2C1-FED-L-002": {
+    "q": "The central bank expands its balance sheet and reserve balances surge. Banks, however, tighten underwriting and firms postpone borrowing because sales prospects are weak. Which conclusion is strongest?",
+    "options": [
+      "The central bank did not actually create reserves because bank lending failed to rise",
+      "Weak borrowing proves that commercial banks, not the central bank, issue reserve balances",
+      "The simple multiplier guarantees the same deposit expansion regardless of banks or borrowers",
+      "Creating reserves does not mechanically force commercial-bank lending or deposit expansion"
+    ],
+    "feedback": "The central bank can supply reserves, but broad deposit creation also depends on banks, borrowers, and redepositing behavior.",
+    "correct_index": 3
+  },
+  "PM2C2-ITAX-EB-001": {
+    "q": "The price index is 100. Inflation falls from 8% last year to 3% this year. A fixed nominal debt remains $103. At the end of this year, what initial-price purchasing-power value does that debt represent?",
+    "options": [
+      "$103; a slower inflation rate leaves prices fixed",
+      "$106.19; multiply nominal debt by the new price factor",
+      "$95; subtract the five-point decline in inflation from the debt",
+      "$100; prices rose to 103 despite disinflation"
+    ],
+    "feedback": "This year’s 3% inflation takes the index 100→103. Deflating the 103 debt by 1.03 gives 100. Disinflation is slower price growth, not a falling price level.",
+    "correct_index": 3
+  },
+  "PM2C2-ITAX-EB-003": {
+    "q": "Government finances $240 of purchases by creating money. Under stable velocity and fixed long-run real output, which accounting-versus-burden distinction is appropriate?",
+    "options": [
+      "Government gains real resources directly; creating money leaves existing purchasing power intact.",
+      "Government gains purchasing power; inflation reduces existing money holders' real balances.",
+      "Government gains tax receipts; each money holder pays an equal statutory charge.",
+      "Government gains purchasing power; the burden is equal regardless of money holdings."
+    ],
+    "feedback": "Money financing changes claims on real goods, not productive resources themselves. Under the stated assumptions, higher prices erode real balances; exposure depends on money holdings and timing.",
+    "correct_index": 1
+  },
+  "PM2C2-NEUT-FB-004": {
+    "q": "Money growth rises permanently in an economy whose real productive resources remain 240 index units. Under the stated long-run quantity-theory/neutrality assumptions with stable velocity, which distinction is correct?",
+    "options": [
+      "Faster money growth and a one-time increase both raise sustained inflation equally.",
+      "Faster money growth raises sustained inflation; a one-time increase raises the price level.",
+      "Faster money growth raises sustained real growth; a one-time increase raises real capacity.",
+      "Faster money growth and a one-time increase leave both nominal price measures unchanged."
+    ],
+    "feedback": "Levels and growth rates differ: a lasting growth-rate change can sustain inflation, whereas a one-time level change is not ongoing faster money growth. Real capacity remains determined by the stated real factors.",
+    "correct_index": 1
+  },
+  "PM2D1-LRADJ-EB-001": {
+    "q": "Output is 40 below the old potential level after capital destruction. A commentator applies demand-recession self-correction and predicts a return to the old level without rebuilding. Which correction is needed?",
+    "options": [
+      "Capital loss shifts LRAS; wage adjustment alone cannot rebuild capacity.",
+      "Capital loss leaves LRAS fixed; the shortfall is entirely a demand gap.",
+      "Capital loss lowers expected prices alone; productive capacity remains unchanged.",
+      "Capital loss initially shifts LRAS; lower wages automatically recreate the destroyed stock."
+    ],
+    "feedback": "Distinguish a utilization gap around unchanged capacity from a loss of capacity itself. Nominal adjustment does not rebuild real inputs; the relevant potential benchmark may have changed.",
+    "correct_index": 0
+  },
+  "PM2E-CH-MID-001": {
+    "q": "A program intended to close a $740 demand gap arrives after recovery. At arrival, a separate adverse supply shock raises inflation. Which policy evaluation recognizes why the original direction need not remain appropriate?",
+    "options": [
+      "Recovery leaves the original gap intact; expansion therefore lowers both unemployment and inflation.",
+      "The supply shock restores the original demand gap; expansion therefore lowers inflation pressure.",
+      "The supply shock removes timing concerns; contraction therefore restores output and lowers inflation.",
+      "Recovery removes the original gap; the supply shock adds an inflation-output tradeoff."
+    ],
+    "feedback": "A rule based on an earlier demand shortfall is not a complete assessment after recovery and a new supply shock. The action can add inflation pressure at a changed starting point; reassess both current utilization and the source of inflation.",
+    "correct_index": 3
+  },
+  "PM2E-CH-OPEN-001": {
+    "q": "A negative demand shock creates a $1520 recessionary gap with falling inflation; capacity is unchanged. In a fixed-price planning model MPC is 0.75. A purchases increase of $380 can arrive immediately, or the same program can arrive after the gap is forecast to close. Which assessment combines diagnosis, size and timing?",
+    "options": [
+      "Both programs match every future gap because the multiplier makes timing irrelevant",
+      "The immediate program is contractionary; the delayed program becomes expansionary solely because time passes",
+      "The shock is adverse supply, so immediate purchases necessarily reduce inflation while restoring output",
+      "The immediate program matches the current gap; the delayed one risks excess demand after recovery"
+    ],
+    "feedback": "Falling output and inflation under the stated demand shock justify demand support. The immediate simple effect is 380/.25=1520, matching the current gap. A correct initial size does not make the same arrival-time demand injection appropriate after recovery.",
+    "correct_index": 3
+  },
+  "PMOE-FX-L-005": {
+    "q": "In the vertical-NCO FX model, the domestic real interest rate rises while an independent risk shock shifts desired NCO outward. The final FX supply curve is right of its original position. With fixed prices and unchanged NX demand, what can be inferred?",
+    "options": [
+      "The interest-rate rise caused the supply increase, reversing the usual NCO slope",
+      "The risk shift dominates the rate feedback; the currency depreciates, but the graph alone does not measure either component",
+      "Vertical supply means NCO is fixed across both equilibria, so the graph is impossible",
+      "The risk shift and rate feedback cancel exactly because both supply curves are vertical"
+    ],
+    "feedback": "Verticality fixes quantity at a given NCO, not across changed NCO schedules. A net rightward shift means the outward risk effect dominates the rate-induced reduction. Unchanged downward NX demand gives a lower rate, but separate component magnitudes remain unidentified.",
+    "correct_index": 1
+  },
+  "PMOE-NCO-B3-001": {
+    "q": "A country reports NCO = −$120 billion and resident purchases of foreign assets of $200 billion. A second ledger reports foreign purchases of domestic assets of $300 billion. Keeping the first two figures fixed, what correction and trade-balance implication follow under NX=NCO?",
+    "options": [
+      "Foreign purchases remain $300 billion; NX must be −$100 billion despite the fixed NCO figure",
+      "Foreign purchases must be $320 billion; NX is +$120 billion because a capital inflow is an export",
+      "Foreign purchases must be $320 billion; NX is −$120 billion, a trade deficit",
+      "Foreign purchases must be $80 billion; NX is +$120 billion, a trade surplus"
+    ],
+    "feedback": "NCO = resident foreign purchases − foreign domestic purchases. Thus −120=200−F implies F=320. With NX=NCO, NX=−120; the inflow finances a trade deficit rather than changing its sign.",
+    "correct_index": 2
+  },
+  "PMOE-NCO-LB-002": {
+    "q": "At the original interest rate, a risk shock raises residents’ intended foreign purchases by $140 billion and lowers foreign intended domestic purchases by $60 billion. The new equilibrium shows NCO up $125 billion. What interest-rate feedback is required, and which portfolio pattern could produce it?",
+    "options": [
+      "Feedback lowers NCO $75 billion; resident purchases fall $45 billion and foreign purchases rise $30 billion relative to the shifted schedule",
+      "Feedback raises NCO $75 billion; resident purchases rise $45 billion and foreign purchases fall $30 billion",
+      "Feedback lowers NCO $15 billion; both gross purchase flows fall $75 billion",
+      "Feedback lowers NCO $200 billion; all desired purchases return to their original levels"
+    ],
+    "feedback": "The initial NCO shift is 140 − (−60) = 200. The realized increase of 125 requires feedback of −75. A −45 resident-flow response minus a +30 foreign-flow response gives −75, consistent with more attractive domestic returns.",
+    "correct_index": 0
+  },
+  "PMOE-NER-B3-002": {
+    "q": "The quotation rises from 1.60 to 1.84 foreign units per domestic unit. A domestic exporter keeps its domestic-currency price fixed. Which percentage comparison and foreign-buyer consequence are correct?",
+    "options": [
+      "Domestic currency appreciates 15%; its reciprocal foreign-currency value falls about 13.0%, and the exporter's foreign price rises 15%",
+      "Domestic currency appreciates 15%; the reciprocal falls exactly 15%, and the foreign export price falls 15%",
+      "Domestic currency depreciates about 13.0%; the reciprocal rises 15%, and the foreign export price falls 13.0%",
+      "Domestic currency appreciates about 13.0%; the reciprocal falls 15%, and the foreign export price is unchanged"
+    ],
+    "feedback": "The quoted rate rises 1.84/1.60−1=15%. The reciprocal changes 1.60/1.84−1≈−13.04%. A fixed domestic price costs foreign buyers proportionately more when multiplied by the higher foreign-per-domestic rate.",
+    "correct_index": 0
+  },
+  "PMOE-NER-LB-002": {
+    "q": "A British product's pound price rises 6%, the pound depreciates 8% against the dollar and U.S. sales volume rises 5%. An analyst says the depreciation must have reduced the exporter's dollar revenue. How does the price-volume decomposition bear on that claim?",
+    "options": [
+      "Dollar unit revenue rises 14%, so volume is irrelevant to the total revenue increase.",
+      "Dollar unit revenue falls 8%, and multiplying by the 5% volume gain guarantees total revenue also falls 8%.",
+      "Total dollar revenue rises about 2.4%, proving that the dollar price paid by each buyer also rose.",
+      "Dollar unit revenue falls about 2.5%, but higher volume more than offsets it, raising total dollar revenue about 2.4%."
+    ],
+    "feedback": "Dollar unit price changes by 1.06×0.92−1=−2.48%. Total revenue changes by 1.06×0.92×1.05−1=2.396%. The quantity response reverses the unit-revenue decline, so exchange-rate direction alone does not determine total receipts.",
+    "correct_index": 3
+  },
+  "PMOE-POL-BR-001": {
+    "q": "A deficit-funded increase in government purchases is accompanied by lower domestic investment and a real currency appreciation. A report observes these changes and claims total AD must have fallen. Which conclusion can be defended without response magnitudes?",
+    "options": [
+      "Lower investment and lower NX offset part of the direct government-purchases stimulus; total AD’s direction requires their relative sizes",
+      "Real appreciation proves the NX decline exceeds the government-purchases increase",
+      "Higher government purchases prove total AD rises regardless of crowding out and NX",
+      "Lower domestic investment shifts short-run aggregate supply rather than any AD component"
+    ],
+    "feedback": "Real appreciation tends to lower NX, and higher rates can crowd out investment. Both subtract from AD relative to the direct rise in G. The signs identify competing contributions, not their total. This transfers the open-economy mechanism without claiming instant or complete adjustment.",
+    "correct_index": 0
+  },
+  "PMOE-POL-H-002": {
+    "q": "A tariff is imposed while national saving and domestic investment remain unchanged. What is the general-equilibrium NX result in the textbook model?",
+    "options": [
+      "NX rises because lower imports change the trade balance while NCO stays fixed",
+      "NX falls because appreciation reduces exports by more than the tariff changes imports",
+      "NX becomes positive because the tariff shifts currency demand right",
+      "NX is unchanged after currency appreciation offsets the direct import reduction"
+    ],
+    "feedback": "Unchanged S and I fix NCO = S − I and hence NX. The tariff raises demand for domestic currency, causing real exchange-rate appreciation until exports and other imports adjust enough to preserve that NX balance. This is an exchange-rate change, not a claim that the real interest rate rises.",
+    "correct_index": 3
+  },
+  "PMOE-POL-LB-002": {
+    "q": "In the vertical-NCO FX model, a tariff and capital flight occur together. At the original exchange rate, the tariff raises currency demand by 40 units while the final NCO increase raises supply by 65 units after interest-rate feedback. Prices and other demand determinants are fixed. What follows, and which extra information would quantify the exchange-rate change?",
+    "options": [
+      "The currency appreciates and NX rises 40 units; the loanable-funds supply slope alone measures appreciation",
+      "The currency depreciates and NX rises 65 units; the NX-demand slope is needed to quantify depreciation",
+      "The currency depreciates but NX is unchanged; tariffs fix the trade balance",
+      "The rate is unchanged and NX rises 105 units; horizontal shifts can simply be added"
+    ],
+    "feedback": "At the old rate, supply rises 25 units more than demand, creating excess supply. The foreign-currency-per-domestic-currency quote falls until demand matches final NCO. NX rises 65 by identity; the remaining exchange-rate change requires the NX-demand response.",
+    "correct_index": 1
+  },
+  "PMOE-RER-EL-002": {
+    "q": "Converted consumer-price baskets differ persistently across two countries. Which inference is most defensible?",
+    "options": [
+      "PPP is an imperfect benchmark because baskets and arbitrage conditions differ",
+      "The gap identifies an exchange-rate error rather than a possible real-price difference",
+      "The cheaper basket shows that its traded goods face stronger transport barriers",
+      "PPP applies more closely when broad baskets contain more nontraded services"
+    ],
+    "feedback": "Differences in goods, quality, taxes, trade costs, and nontraded services can sustain deviations from PPP.",
+    "correct_index": 0
+  },
+  "PMOE-RER-LB-002": {
+    "q": "Let e be foreign currency per domestic currency and ε=eP/P*. A domestic basket rises 250 to 270, its foreign counterpart 400 to 408, and e falls 1.60 to 1.50. Would holding the domestic basket price at 250 instead of 270 strengthen or weaken the real depreciation?",
+    "options": [
+      "Weaken it. The actual real rate falls 1.00 to about 0.993 because domestic inflation reinforces nominal depreciation.",
+      "Leave it unchanged. The real rate depends only on e, which falls from 1.60 to 1.50 in both cases.",
+      "Reverse it into appreciation. Lower domestic prices necessarily make domestic goods more expensive relative to foreign goods.",
+      "Strengthen it. The actual real rate falls 1.00 to about 0.993; domestic inflation offsets much of the nominal depreciation."
+    ],
+    "feedback": "Actual ε is 1.50×270/408≈0.9926 versus initial 1.00. Without domestic inflation it would be 1.50×250/408≈0.9191, a larger depreciation. Rising domestic prices partially offset the competitiveness effect of the cheaper currency.",
+    "correct_index": 3
+  },
+  "PMOE-TX-L-004": {
+    "q": "Imports increased, national saving fell, and domestic investment also fell. A commentator says these observations prove that the trade deficit widened. Which additional comparison would resolve the claim while allowing an independent trade-account check?",
+    "options": [
+      "Compare the saving decline with the investment decline, and compare the import rise with the export change",
+      "Compare the saving decline with the import rise; exports are unnecessary",
+      "Compare the investment decline with the import rise; saving is unnecessary",
+      "Compare the levels of saving and exports; their changes are unnecessary"
+    ],
+    "feedback": "ΔNX = ΔS − ΔI, so falling saving and investment alone do not sign the change. Independently, ΔNX = ΔX − ΔM; exports must be compared with imports. Either complete accounting comparison should produce the same answer.",
+    "correct_index": 0
+  },
+  "PMOE-TX-L-006": {
+    "q": "For the same period, a data release reports S = $480 billion, I = $525 billion, X = $210 billion, M = $240 billion, foreign-asset purchases by residents of $70 billion, and domestic-asset purchases by foreigners of $115 billion. If exactly one trade figure is wrong and all other figures are correct, which correction is admissible, and is its location identified?",
+    "options": [
+      "Raise X to $225 billion or lower M to $225 billion; the identity does not select between them",
+      "Raise M to $255 billion; the identity proves that imports alone are wrong",
+      "Raise M to $255 billion or lower X to $195 billion; the identity does not select between them",
+      "Lower X to $195 billion; the identity proves that exports alone are wrong"
+    ],
+    "feedback": "S − I = −45 and asset NCO = 70 − 115 = −45, but reported NX is −30. Trade must fall another 15: either M rises from 240 to 255 or X falls from 210 to 195. The stated data do not identify which trade entry is erroneous.",
+    "correct_index": 2
+  }
+}

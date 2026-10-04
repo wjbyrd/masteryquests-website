@@ -1,0 +1,359 @@
+PG5-PC-M-002 [medium] {'decision': 'KEEP GRAPH', 'graph_evidence': 'SRPC intersections at u=5: 3 and 6.6.', 'decision_reason': None}
+At the natural unemployment rate shown, how much higher is inflation on SRPC1 than on SRPC0, and what could explain the difference with supply conditions unchanged?
+A   3 percentage points; higher expected inflation shifts the short-run curve upward.
+B * 3.6 percentage points; higher expected inflation shifts the short-run curve upward.
+C   3.6 percentage points; a fall in the natural unemployment rate moves LRPC left.
+D   3.6 percentage points; a change in actual inflation alone moves the economy along SRPC0.
+FB At unemployment 5%, SRPC0 gives inflation 3% and SRPC1 gives 6.6%, a 3.6-point gap. With supply conditions unchanged, higher expectations can explain the curve shift. The LRPC stays fixed.
+
+PG5-PC-X-005 [medium] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Fixed LRPC at 5 versus B unemployment 6.', 'decision_reason': None}
+What does the diagram imply about the natural unemployment rate when SRPC changes from SRPC0 to SRPC1?
+A * It remains 5%; shifting the short-run inflation relationship does not itself change the long-run unemployment benchmark.
+B   It remains 6%; shifting the short-run inflation relationship does not itself change the long-run unemployment benchmark.
+C   It becomes 6% because point B always determines the natural rate, even off LRPC.
+D   It remains 5%, so unemployment cannot deviate from 5% anywhere on either short-run curve.
+FB LRPC stays vertical at 5%. Point B is a short-run observation at 6% unemployment, not a new natural-rate marker. Short-run and long-run unemployment need not coincide.
+
+ECON-SP-MEDIUMBOSS-3007 [mediumBoss] {'decision': 'KEEP GRAPH', 'graph_evidence': 'a/b at I2 and their relation to LRPC.', 'decision_reason': None}
+After a demand surprise moves the economy from c to a, actual inflation is held at the rate shown at a. Compare fully adjusted expectations with expectations remaining at their old level.
+A   Full adjustment brings the economy to c at U2; old expectations keep it at d at U3.
+B   Full adjustment brings the economy to b at U2 because expectations permanently raise the natural rate.
+C   Both cases reach b immediately because holding actual inflation constant also fixes expected inflation.
+D * Full adjustment brings the economy to b at U2; old expectations keep it at a at U1.
+FB At I2, a lies on SRPC1 below natural unemployment and b lies on SRPC2 at U2. Adapting expectations moves the short-run relationship; maintaining actual inflation alone is not the same adjustment.
+
+ECON-SP-ELITE-326 [medium] {'decision': 'KEEP GRAPH', 'graph_evidence': 'c/f at common U3 on different curves.', 'decision_reason': None}
+How should the change from c to f be interpreted in the short-run Phillips diagram?
+A * Inflation rises at unchanged unemployment, indicating a shift of the short-run relationship.
+B   Inflation falls at unchanged unemployment, indicating a shift of the short-run relationship.
+C   Inflation rises at unchanged unemployment, indicating a demand-driven movement along SRPC1.
+D   Unemployment rises at unchanged inflation, indicating a movement along SRPC1.
+FB c and f share unemployment U3 but have inflation I2 and I4 on different curves. The change therefore involves an upward SRPC shift, not a movement along one fixed curve.
+
+ECON-SP-MEDIUM-162 [medium] {'decision': 'KEEP GRAPH', 'graph_evidence': 'f above c at common U3.', 'decision_reason': None}
+Supply conditions and the natural rate are unchanged, so only expected inflation can shift the short-run Phillips curve. What explains the change from c to f?
+A * Higher expected inflation raises inflation at the same unemployment rate.
+B   Lower expected inflation reduces inflation at the same unemployment rate.
+C   Higher actual inflation moves the economy along the original SRPC without changing expectations.
+D   Lower natural unemployment shifts the long-run benchmark to U3.
+FB f lies above c at the same unemployment rate U3, on the higher short-run curve. With other shifters excluded, this identifies higher expected inflation.
+
+ECON-SP-LEGENDARY-9048 [legendary] {'decision': 'KEEP GRAPH', 'graph_evidence': 'SRPC2 above SRPC1 at common unemployment.', 'decision_reason': None}
+What can be inferred when the economy's short-run relationship changes from SRPC1 to SRPC2?
+A * Inflation is higher at a given unemployment rate; expectations or a supply disturbance could explain the shift.
+B   Inflation is lower at a given unemployment rate; expectations or a supply disturbance could explain the shift.
+C   Inflation is higher at a given unemployment rate; the graph alone proves that expected inflation rose.
+D   Inflation is higher at a given unemployment rate because stronger demand moved the economy along unchanged SRPC1.
+FB SRPC2 lies above SRPC1. The less favorable short-run tradeoff can result from higher expectations or an adverse supply disturbance; the shift itself does not identify which cause occurred.
+
+PM2B3-PROD-EB-002 [easyBoss] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'The Easy item already supplies the productivity observations. Requiring several graph readings would add load to a basic fixed-employment inference.'}
+Capital per worker doubles from 20 to 40, while output per worker rises from about 28.53 to 36.37. Employment is unchanged. A report says total output must also have doubled. Which correction is appropriate?
+A   Output rises 100%; doubling capital always doubles output even on a flattening curve
+B   Output rises about 7.84%; subtracting productivity levels directly gives a percentage
+C   Output falls about 21.6%; use the higher productivity as the initial value
+D * Output rises about 27.5%, not 100%; fixed employment makes total output grow by that same percentage
+FB Total output equals output per worker times employment. With employment fixed, its growth is (36.37/28.53 − 1) × 100, about 27.5%, not 100%. A doubling of one input need not double output.
+
+PM2B3-PROD-FB-004 [finalBoss] {'decision': 'KEEP GRAPH', 'graph_evidence': 'A/B productivity coordinates and curvature.', 'decision_reason': None}
+Use the displayed coordinates for A and B. Approximately how much does output per worker rise, and what would another equal addition to capital imply with other inputs fixed?
+A   About 21.6%; the next equal capital addition would produce a smaller output gain.
+B * About 27.5%; the next equal capital addition would produce a smaller output gain.
+C   About 27.5%; the next equal capital addition would produce an equal output gain.
+D   About 7.84%; the next capital addition would reduce the total level of output per worker.
+FB Output per worker rises from 28.53 to 36.37, so growth is 7.84/28.53 ≈ 27.5%. The curve flattens at higher capital levels: further equal additions give smaller positive gains, not equal gains or falling total output.
+
+PM2B3-PROD-H-001 [hard] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Positive slope that flattens beyond B.', 'decision_reason': None}
+After moving from A to B, an economy adds the same amount of capital per worker again, with all other productivity determinants fixed. What does the curve imply?
+A * A smaller additional output gain because the marginal product of capital declines.
+B   A larger additional output gain because the marginal product of capital rises.
+C   A smaller additional output gain because technology has deteriorated as the economy moves along the curve.
+D   A fall in the level of output per worker because declining marginal returns mean negative marginal returns.
+FB The curve is rising but flatter beyond B. This means additional capital still raises output, with a smaller gain per unit. The movement holds technology fixed, and diminishing returns are not negative returns.
+
+PM2B3-SRC-EB-002 [easyBoss] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Relative slopes at A/B; distinction from their vertical levels.', 'decision_reason': None}
+Two economies start at A and B on this productivity curve. Each adds the same small amount of capital per worker, with other inputs fixed. Which comparison follows?
+A * The gain is larger near A; capital has a higher marginal product there.
+B   The gain is larger near B; capital has a higher marginal product there.
+C   The gain is larger near A because total output per worker is already higher there.
+D   The gain is zero near B because a smaller marginal product means capital adds nothing.
+FB The curve is steeper near A than B, indicating a larger marginal output gain at A. B has higher total productivity, but that does not imply a higher marginal gain from capital.
+
+PM2B3-PROD-L-001 [hard] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Relative slope and level at A/B.', 'decision_reason': None}
+Two otherwise similar economies begin at A and B. Each receives the same small addition to capital per worker. What does the figure establish about catch-up?
+A * The marginal gain is larger at A, but that advantage alone does not guarantee convergence.
+B   The marginal gain is larger at B, but that advantage alone does not guarantee convergence.
+C   The marginal gain is larger at A, which guarantees it will overtake B regardless of institutions or technology.
+D   The productivity level is higher at B, so A cannot gain output from any additional capital.
+FB A lies on the steeper part of the curve, so its marginal gain is larger. Catch-up still depends on accumulation and complementary conditions; the curve does not guarantee that the poorer economy overtakes the richer one.
+
+PM2B3-PROD-LB-002 [legendaryBoss] {'decision': 'KEEP GRAPH', 'graph_evidence': 'A/B output-per-worker readings; distinction from total output.', 'decision_reason': None}
+Output per worker changes from A to B, while employment falls by 25%. A report concludes that higher productivity must mean higher total output. Is that conclusion supported?
+A * No. Productivity rises about 27.5%, but total output falls about 4.4% after the employment decline.
+B   Yes. Productivity rises about 40%, so total output rises about 5% after the employment decline.
+C   Yes. Productivity rises about 27.5%; subtracting 25% gives a total-output increase of about 2.5%.
+D   No. Productivity itself falls about 4.4%, because employment is part of the vertical-axis measure.
+FB The plotted productivity ratio is 36.37/28.53 ≈ 1.2748. Total output changes by 1.2748 × 0.75 − 1 ≈ −4.4%. A productivity gain and an employment decline can therefore coexist with lower total output.
+
+43220 [medium] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'The original task identifies investment as loanable-funds demand. A numerical add-on would replace that identification task with a different calculation.'}
+In the loanable-funds model, why does firms' desired investment form the demand for funds?
+A * Investment projects create demand for finance, and higher real borrowing costs make fewer projects worthwhile.
+B   Households supply funds for firms, so investment is the saving-supply schedule.
+C   The central bank fixes investment at each rate, so desired borrowing is independent of financing costs.
+D   Higher real borrowing costs make every investment project more profitable, increasing desired borrowing.
+FB Firms seek finance for investment projects. A higher real interest rate raises financing costs, making fewer projects worthwhile and reducing desired borrowing along the investment-demand schedule.
+
+43225 [medium] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'The concept is the market price, not the placement of an axis label. Text preserves that concept without redundant visual lookup.'}
+Which variable acts as the price coordinating saving and investment in the loanable-funds market?
+A   The quantity of loanable funds.
+B * The real interest rate.
+C   The government budget balance.
+D   The stock of productive capital.
+FB The real interest rate is the return to supplying funds and the real cost of borrowing. Changes in that price affect saving supplied and investment demanded.
+
+43224 [medium] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'The economic task is self-contained; adding graph labels would add a redundant lookup rather than evidence.'}
+The real interest rate rises from 8% to 10% along unchanged saving-supply and investment-demand curves. How do the quantities supplied and demanded respond?
+A * Saving supplied rises and investment demanded falls.
+B   Saving supplied falls and investment demanded rises.
+C   Both quantities rise because the same interest rate applies to savers and borrowers.
+D   Both schedules shift right because the real interest rate changes.
+FB A higher real rate encourages saving and makes fewer investment projects worthwhile. These are movements along the fixed schedules, not shifts of the schedules themselves.
+
+43249 [medium] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Supply shifts right, investment demand stays fixed.', 'decision_reason': None}
+Which event could explain the movement from A to B with the other determinants unchanged?
+A   A deterioration in the government budget lowers national saving at each real interest rate.
+B * An improvement in the government budget raises national saving at each real interest rate.
+C   An investment tax credit raises desired investment at each real interest rate.
+D   Reduced expected project profitability lowers desired investment at each real interest rate.
+FB The graph shows saving supply moving right from S0 to S1 while D0 stays fixed. A budget improvement can increase public and national saving. Investment incentives instead change demand for funds.
+
+43252 [hard] {'decision': 'KEEP GRAPH', 'graph_evidence': 'A=(80,8), B=(120,6), same D0.', 'decision_reason': None}
+Government purchases fall while output is fixed and the consumption schedule is unchanged at each real rate. Which account connects this policy to the move from A to B?
+A * Higher national saving lowers the rate from 8% to 6%, raising investment from 80 to 120 along D0.
+B   Higher national saving lowers the rate from 8% to 4%, raising investment from 80 to 160 along D0.
+C   Higher national saving lowers the rate from 8% to 6%; investment rises to 120 because D0 shifts right.
+D   The fall from 8% to 6% first raises government saving, so the observed supply shift is a response to the rate.
+FB With Y and consumption at each rate fixed, lower G raises national saving. The supply increase moves equilibrium from 80/8 to 120/6. The resulting investment response is along unchanged D0, not an independent demand shift.
+
+43255 [hard] {'decision': 'KEEP GRAPH', 'graph_evidence': 'A/B quantities and unchanged D0.', 'decision_reason': None}
+A report calls the increase in investment from A to B a rightward shift of investment demand. How should the displayed change be classified?
+A   Investment rises by 80 units along D0 because the saving-supply shift lowers the rate.
+B   Investment rises by 40 units because a lower rate shifts D0 right at every real rate.
+C   Investment rises by 40 units because stronger project profitability shifts D0 while S0 stays fixed.
+D * Investment rises by 40 units along D0 because the saving-supply shift lowers the rate.
+FB The equilibrium quantity rises from 80 to 120 on unchanged D0, a 40-unit increase. The initiating shift is in saving supply; lower financing costs induce movement along investment demand.
+
+43261 [hard] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Common-rate S0/S1 gap 40; A/B quantity gap 20.', 'decision_reason': None}
+An analyst measures the saving-supply shift using only the change in equilibrium quantity from A to B. Is that measure correct for this graph?
+A   No. Supply shifts left 60 units at a common rate, while equilibrium investment falls only 20 units.
+B * No. Supply shifts left 40 units at a common rate, while equilibrium investment falls only 20 units.
+C   Yes. The 20-unit equilibrium decline is the supply shift because investment demand stays fixed.
+D   No. The 40-unit horizontal difference is an investment-demand shift rather than a saving change.
+FB At rate 8%, S0 supplies 120 and S1 supplies 80, a 40-unit shift. A to B changes equilibrium quantity from 100 to 80. The higher rate induces movement along the schedules, so the equilibrium decline is not the fixed-rate shift.
+
+43290 [hard] {'decision': 'KEEP GRAPH', 'graph_evidence': 'A/B quantity 100/60 and unchanged D0.', 'decision_reason': None}
+A larger deficit causes the shift shown in saving supply. How should the resulting change in firms' investment from A to B be interpreted?
+A   Investment falls 80 units as firms move along D0 in response to the higher real rate.
+B   Investment falls 40 units because the higher real rate shifts the entire investment-demand curve left.
+C * Investment falls 40 units as firms move along D0 in response to the higher real rate.
+D   Investment falls 40 units because the deficit directly reduces project profitability at every real rate.
+FB A is at 100 and B at 60, so equilibrium investment falls 40 units. D0 remains fixed: the saving contraction raises the real rate from 6% to 8%, making fewer projects worthwhile along the existing demand schedule.
+
+43257 [elite] {'decision': 'KEEP GRAPH', 'graph_evidence': '40-unit fixed-rate supply shift versus A/B decline 100 to80.', 'decision_reason': None}
+Refer to the graph above. Each quantity unit represents $1 billion, and the lines are straight. A fiscal change lowers public saving by $55 billion at every real rate, while a separate incentive raises planned private saving by $15 billion at every rate. Investment demand does not shift. Which comparison correctly connects the policy shifts with A and B?
+A   Saving supply shifts left $40 billion, while investment falls $30 billion; the higher rate induces some additional saving.
+B * Saving supply shifts left $40 billion, while investment falls $20 billion; the higher rate induces some additional saving.
+C   Saving supply shifts left $40 billion and investment falls $20 billion; the remaining $20 billion is a rightward shift of investment demand.
+D   Saving supply shifts left $20 billion and investment falls $40 billion; the equilibrium change measures the fixed-rate supply shift.
+FB At any given rate, the saving-supply change is −55 + 15 = −$40 billion, matching the horizontal distance between S0 and S1. The marked equilibria move from 100 to 80, so investment falls by $20 billion. The higher rate partly offsets the supply reduction by inducing additional saving along the shifted schedule.
+
+43259 [legendary] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Horizontal S0/S1 difference 40, not equilibrium difference20.', 'decision_reason': None}
+Refer to the graph above. Each quantity unit represents $1 billion. The straight S0 and S1 curves capture a fiscal change, with the private-saving schedule unchanged and D0 fixed. Starting from B, a second policy raises planned private saving by $15 billion at every real rate. How much must public saving rise from its level at B to restore A?
+A   $45 billion; together with the $15 billion private-saving increase, this restores a 60-unit supply shortfall.
+B   $5 billion; adding the $15 billion private increase to the 20-unit equilibrium gap restores the original supply schedule.
+C   $55 billion; the private-saving increase must be added to, rather than deducted from, the 40-unit shortfall.
+D * $25 billion; together with the $15 billion private-saving increase, this restores the 40-unit supply shortfall.
+FB At any given rate, S1 lies 40 units left of S0. Restoring S0 therefore requires $40 billion of additional planned national saving, not merely the 20-unit difference in equilibrium quantity. Private saving supplies $15 billion of that shift, leaving $25 billion of public saving. With D0 fixed, restoring S0 restores A.
+
+43269 [hard] {'decision': 'KEEP GRAPH', 'graph_evidence': 'A/B rate and quantity rise; D0/D1 with fixed S0.', 'decision_reason': None}
+Saving behavior is unchanged as the market moves from A to B. Which economic change is consistent with the pattern shown?
+A   Lower expected project profitability reduces investment demand at each real rate.
+B * Higher expected project profitability increases investment demand at each real rate.
+C   The higher real rate itself shifts investment demand right rather than causing movement along it.
+D   A larger public deficit shifts saving supply left while investment demand stays fixed.
+FB Both the rate and quantity rise on unchanged S0, with D1 right of D0. Greater project profitability can shift investment demand. A higher rate is part of the equilibrium response, not the cause of a demand shift.
+
+43275 [hard] {'decision': 'KEEP GRAPH', 'graph_evidence': 'A=(80,5), B=(60,4), demand shift left.', 'decision_reason': None}
+With saving behavior unchanged, what could explain the move from A to B?
+A   Firms expect stronger future sales, increasing planned investment at each real rate.
+B   The lower real rate itself reduces planned investment at every real rate.
+C   Households become more willing to save, shifting the supply of funds right.
+D * Firms expect weaker future sales, reducing planned investment at each real rate.
+FB B has a lower rate and smaller quantity on unchanged S0. D1 is left of D0, consistent with weaker expected sales. Lower borrowing costs alone would move along investment demand rather than shifting it.
+
+43270 [medium] {'decision': 'KEEP GRAPH', 'graph_evidence': 'A/B coordinates and unchanged supply.', 'decision_reason': None}
+How does the investment-demand change shown affect the equilibrium, and what induces savers to provide the new quantity?
+A   The rate rises from 5% to 6% and quantity rises from 80 to 100; the higher return induces movement along S0.
+B   The rate rises from 5% to 7% and quantity rises from 80 to 120 because the rate increase shifts S0 right.
+C * The rate rises from 5% to 7% and quantity rises from 80 to 120; the higher return induces movement along S0.
+D   Quantity rises from 80 to 120 while the rate falls, because stronger investment demand reduces borrowing costs.
+FB The graph shows A at 80/5 and B at 120/7. Investment demand shifts right, and the higher real rate encourages additional saving along the unchanged supply schedule.
+
+43276 [easy] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'A basic comparative-statics question fits its Easy tier; adding multiple coordinate readings would increase load without improving the intended concept.'}
+If firms reduce investment demand at every real interest rate while saving supply is unchanged, what happens to the equilibrium real rate and quantity of loanable funds?
+A * Both the real rate and quantity fall.
+B   Both the real rate and quantity rise.
+C   The real rate rises and quantity falls.
+D   The real rate falls and quantity rises.
+FB A leftward investment-demand shift lowers both the real rate and equilibrium quantity on an upward-sloping saving-supply curve.
+
+43288 [easy] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'The Easy task tests the direction of crowding out; a numerical graph add-on would impose unnecessary additional work.'}
+National saving falls at every real interest rate while investment demand is unchanged. What happens in the loanable-funds market?
+A * The real interest rate rises and equilibrium investment falls.
+B   The real interest rate falls and equilibrium investment rises.
+C   Both the real interest rate and investment rise.
+D   Both the real interest rate and investment fall.
+FB Lower saving shifts supply left. The real rate rises, and firms reduce investment along the unchanged demand curve.
+
+43272 [easy] {'decision': 'KEEP GRAPH', 'graph_evidence': 'D1 right of D0.', 'decision_reason': None}
+Which change could account for D0 moving to D1?
+A * New technology raises expected profitability of investment projects.
+B   A weaker sales outlook reduces expected profitability of investment projects.
+C   Households decide to save more at every real interest rate.
+D   A larger government surplus increases public saving.
+FB D1 is right of D0, showing stronger demand for investment funds at each rate. Higher expected project returns can explain that shift; household and public saving affect supply.
+
+43273 [legendary] {'decision': 'KEEP GRAPH', 'graph_evidence': 'A/B quantities80/120 on fixed S0.', 'decision_reason': None}
+The graph shows the investment-demand response to new technology. Suppose a deficit also reduces saving supply by an unknown amount. Which statement separates the plotted result from that added scenario?
+A   The graph alone raises quantity from 80 to 140; with the added saving decline, the net quantity change from 80 is uncertain.
+B * The graph alone raises quantity from 80 to 120; with the added saving decline, the net quantity change from 80 is uncertain.
+C   The graph alone raises quantity from 80 to 120; the extra deficit leaves that final quantity unchanged because both shocks raise the rate.
+D   The graph alone raises quantity from 80 to 120; the extra deficit must reduce quantity below 80 regardless of its size.
+FB A/B give the demand-only quantity response 80 to 120 on fixed supply. A saving decline shifts supply left, adding upward rate pressure but opposing the demand-driven quantity increase. Its unknown size prevents determining the combined quantity relative to 80.
+
+43287 [hard] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'The stem supplies the fiscal accounting and the figure has no dollar scale. Retaining it would require an extra arbitrary scale assignment.'}
+A government deficit increases by $30 billion while planned private saving rises by $10 billion at each real interest rate. With investment demand unchanged, how does the net saving change affect the loanable-funds market?
+A   National saving rises $40 billion, shifting supply right; a lower rate raises investment.
+B   National saving falls $20 billion, shifting investment demand left and lowering the rate.
+C   National saving is unchanged because an increase in private saving fully offsets any deficit.
+D * National saving falls $20 billion, shifting supply left; a higher rate crowds out investment.
+FB Public saving falls $30 billion while private saving rises $10 billion, reducing national saving by $20 billion at a given rate. Supply shifts left; the real rate rises and investment falls along unchanged demand.
+
+43293 [hard] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'The accounting determines the qualitative supply change; forcing an unscaled diagram into this task would add redundant reading.'}
+Planned private saving rises by $30 billion and public saving falls by $10 billion at each real rate. What happens to investment in the loanable-funds model if investment demand is unchanged?
+A   Lower national saving raises the real rate and reduces investment along the existing demand curve.
+B * Higher national saving lowers the real rate and raises investment along the existing demand curve.
+C   The $20 billion net saving increase shifts investment demand right and raises the real rate.
+D   Investment is unchanged because opposing saving changes must cancel completely.
+FB The net national-saving increase is $20 billion at a given rate. Supply shifts right, lowering the real rate and encouraging investment along its unchanged demand curve.
+
+43295 [hard] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'The original task is fiscal accounting and induced investment. Text keeps that causal distinction without assigning arbitrary dollar units to the image.'}
+A budget improvement raises planned public saving by $25 billion while private saving falls by $10 billion at each real rate. An analyst says this directly raises firms' investment demand. How should that claim be corrected?
+A   National saving rises $15 billion; investment demand shifts right because all additional saving is a new project.
+B   National saving falls $35 billion; supply shifts left and investment falls.
+C   National saving is unchanged; any change in public saving is canceled by private saving.
+D * National saving rises $15 billion; supply shifts right, and the lower rate induces investment along unchanged demand.
+FB National saving rises by $15 billion at each rate, shifting supply right. The lower equilibrium real rate then increases investment along unchanged demand. A saving increase does not itself raise project profitability at every rate.
+
+43289 [medium] {'decision': 'KEEP GRAPH', 'graph_evidence': 'S1 left of S0.', 'decision_reason': None}
+Which fiscal change is consistent with the move from S0 to S1, holding other saving determinants fixed?
+A   A larger surplus increases public and national saving.
+B * A larger deficit reduces public and national saving.
+C   An investment tax credit raises the profitability of private projects.
+D   The higher equilibrium rate by itself shifts the entire saving curve left.
+FB S1 is left of S0, so saving supplied at each real rate falls. A larger government deficit can create that shift. The rate increase is a response to the contraction, not a shift determinant.
+
+43292 [easy] {'decision': 'KEEP GRAPH', 'graph_evidence': 'A/B rate and quantity readings.', 'decision_reason': None}
+Which description of the plotted move from A to B illustrates crowding out?
+A * The rate rises from 6% to 8% and investment falls from 100 to 60 as borrowing becomes more costly.
+B   The rate rises from 6% to 7% and investment falls from 100 to 80 as borrowing becomes more costly.
+C   The rate rises from 6% to 8% and investment falls from 100 to 60 because higher rates shift investment demand left.
+D   The rate falls from 8% to 6% and investment rises from 60 to 100, so reduced saving crowds investment in.
+FB A is 100/6 and B is 60/8. The saving-supply contraction raises borrowing costs and reduces investment along unchanged D0. Crowding out is this induced investment decline, not a shift in investment demand.
+
+43297 [legendary] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Fixed-rate supply gap80 and equilibrium quantity change40.', 'decision_reason': None}
+Refer to the graph above. Each quantity unit represents $1 billion, and the curves are straight. A budget improvement shifts S0 to S1; the private-saving schedule and investment demand are unchanged. What does the graph imply about the rise in public saving and the induced change in private saving between A and B?
+A   Public saving rises $60 billion; lower rates induce a $20 billion decline in private saving.
+B * Public saving rises $80 billion; lower rates induce a $40 billion decline in private saving.
+C   Public saving rises $80 billion; the fixed private-saving schedule means private saving cannot change.
+D   Public saving rises $40 billion; the equilibrium investment increase directly measures the policy-induced supply shift.
+FB The horizontal supply shift is 80 units: at an 8 percent rate S0 is at 60 and S1 is at 140. With the private-saving schedule unchanged, that shift is the $80 billion public-saving increase. Final national saving and investment rise only from 60 to 100, or $40 billion. Private saving consequently changes by 40 − 80 = −$40 billion through movement along its schedule as the rate falls.
+
+43305 [hard] {'decision': 'KEEP GRAPH', 'graph_evidence': 'A/B common rate6 and quantity40/80.', 'decision_reason': None}
+Both saving supply and investment demand increase. Which statement distinguishes the general prediction from the outcome at A and B?
+A   Quantity must rise; the rate is generally ambiguous, and the plotted rate rises.
+B * Quantity must rise; the rate is generally ambiguous, but the plotted rate is unchanged.
+C   Quantity rises and the rate is unchanged; every pair of rightward saving and investment shifts has that rate result.
+D   Quantity is generally ambiguous; the unchanged plotted rate means national saving did not rise.
+FB Both shifts raise quantity, but they exert opposing pressures on the rate. A and B are both at 6%, so those pressures offset in this drawing. That particular offset is not a universal rule.
+
+43309 [legendary] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Horizontal saving-supply shift40 at common rate.', 'decision_reason': None}
+Refer to the graph above. Each quantity unit represents $1 billion, and the straight-line shifts summarize all changes in saving and investment behavior. Public saving falls by $10 billion at every real rate, while technology raises investment demand. What private-saving shift is required to reconcile the graph with that fiscal change?
+A   Private saving must rise $70 billion: together with public saving falling $10 billion, this gives a $60 billion supply increase.
+B * Private saving must rise $50 billion: together with public saving falling $10 billion, this gives the plotted $40 billion supply increase.
+C   Private saving must rise $30 billion: subtract the $10 billion public-saving loss from the plotted $40 billion increase.
+D   Private saving must rise $10 billion: an unchanged equilibrium rate implies no national-saving change.
+FB At 6 percent, S0 and D0 each have quantity 40, while S1 and D1 each have quantity 80. Each schedule shifts right by $40 billion. Since national saving combines private and public saving, the private shift must satisfy private change − 10 = 40, giving +$50 billion. The two shifts leave the depicted equilibrium rate at 6 percent.
+
+43311 [hard] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Directions of both curve shifts.', 'decision_reason': None}
+Which pair of events could produce the changes from the solid to the dashed curves?
+A   Households plan less saving, and firms expect investment projects to be less profitable.
+B   Households plan more saving, while firms expect investment projects to be less profitable.
+C   The higher quantity itself shifts both schedules, without any change in saving or investment plans.
+D * Households plan more saving, and firms expect investment projects to be more profitable.
+FB S1 is right of S0 and D1 is right of D0. Higher planned saving explains the supply shift, while higher expected project returns explain investment demand. Equilibrium quantity is a result, not a determinant that shifts both curves.
+
+43313 [medium] {'decision': 'KEEP GRAPH', 'graph_evidence': 'B rate6 and both rightward shifts.', 'decision_reason': None}
+What can the marked new equilibrium tell us that the directions of the two shifts alone cannot?
+A   The real rate is 8%; this is the particular result of the relative supply and demand shifts drawn.
+B * The real rate is 6%; this is the particular result of the relative supply and demand shifts drawn.
+C   The real rate is 6%; every simultaneous rightward supply and demand shift must leave rates unchanged.
+D   The real rate is 6%; the quantity increase proves that only saving supply changed.
+FB B is at 6%, the same rate as A. Theory alone leaves the rate effect of the two increases ambiguous; their actual sizes and slopes in this figure locate the new intersection.
+
+43314 [hard] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Equal A/B rate and larger quantity.', 'decision_reason': None}
+The market changes from A to B after saving and investment plans both change. What explains the interest-rate outcome shown?
+A   Investment demand dominates here, raising the rate to 8%; different relative shifts could change the rate.
+B   The rate stays at 6% because every equal-direction pair of supply and demand shifts leaves the rate fixed.
+C * The opposing pressures offset here, leaving the rate at 6%; different relative shifts could change the rate.
+D   The rate stays at 6% because a doubling of quantity prevents any change in the price of loanable funds.
+FB Both marked equilibria are at 6%, though quantity rises from 40 to 80. Greater saving puts downward pressure on the rate and greater investment demand puts upward pressure on it. Their offset is specific to the drawn shifts.
+
+PG5-PC-H-016 [hard] {'decision': 'KEEP GRAPH', 'graph_evidence': 'A5/2.5, B3/3.5 and LRPC5.', 'decision_reason': None}
+Consumer spending unexpectedly strengthens while expectations, supply conditions and the natural rate remain unchanged. How does A to B represent the short-run response?
+A   Unemployment becomes 1 point below natural and inflation rises 2 points; this is movement along the existing SRPC.
+B   Unemployment becomes 2 points below natural and inflation rises 1 point because LRPC shifts left.
+C   Unemployment becomes 2 points below natural and inflation rises 1 point because expectations immediately shift SRPC upward.
+D * Unemployment becomes 2 points below natural and inflation rises 1 point; this is movement along the existing SRPC.
+FB A is (5,2.5) and B is (3,3.5). A demand change with expectations and supply fixed moves along SRPC0. Compare the unemployment coordinate with LRPC at 5, and compare inflation with A; the cyclical gap does not move natural unemployment.
+
+PG5-PC-H-022 [hard] {'decision': 'KEEP GRAPH', 'graph_evidence': 'A5/2.5, B7/1.5 relative to LRPC5.', 'decision_reason': None}
+An unexpected fall in investment occurs before expectations adjust. Supply conditions and the natural rate are unchanged. What does the plotted move from A to B imply?
+A   Unemployment is 1 point above natural and inflation is 2 points lower; demand weakness moves the economy along SRPC0.
+B * Unemployment is 2 points above natural and inflation is 1 point lower; demand weakness moves the economy along SRPC0.
+C   Unemployment is 2 points above natural and inflation is 1 point lower; the change establishes a permanent rise in structural unemployment.
+D   Unemployment is 2 points above natural and inflation is 1 point lower; lower expected inflation has already shifted SRPC0 downward.
+FB A is (5,2.5) and B is (7,1.5). A demand change with expectations and supply fixed moves along SRPC0. Compare the unemployment coordinate with LRPC at 5, and compare inflation with A; the cyclical gap does not move natural unemployment.
+
+PG5-PC-L-018 [legendary] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Initial inflation at A2.5 and B3.5; B unemployment3 and LRPC5.', 'decision_reason': None}
+Refer to the graph with A and B on SRPC0. Initially expected inflation is the inflation rate at A, and the economy is at B. Next period expected inflation equals this period’s actual inflation. Hold the natural rate and supply conditions fixed; each one-point expectations change shifts the SRPC vertically by one point with slope unchanged. Compare keeping unemployment at B’s rate with instead keeping actual inflation at B’s current rate. Which next-period outcome follows?
+A   Keeping unemployment at B's 3% requires inflation of 5.5%; holding inflation at 4% instead returns unemployment to 5%.
+B * Keeping unemployment at B's 3% requires inflation of 4.5%; holding inflation at 3.5% instead returns unemployment to 5%.
+C   Keeping unemployment at B's 3% requires inflation of 3.5%; expected inflation cannot alter a point already reached.
+D   Keeping unemployment at B's 3% requires inflation of 4.5%; holding inflation at 3.5% instead permanently lowers the natural rate to 3%.
+FB Expectations rise from 2.5 to 3.5, shifting the curve up one point. At unemployment 3, inflation therefore rises from 3.5 to 4.5. Alternatively, actual inflation equal to the new expectation gives natural unemployment at 5. A fixed unemployment target and a fixed inflation target are different continuations.
+
+PG5-PC-X-017 [hard] {'decision': 'KEEP GRAPH', 'graph_evidence': 'B above/left of A; LRPC5.', 'decision_reason': None}
+Suppose actual inflation is held at B's rate while expectations adjust to it. With supply conditions and the natural rate unchanged, what adjustment does this graph predict?
+A * SRPC shifts upward, and unemployment returns to the natural rate of 5%.
+B   SRPC shifts downward, and unemployment returns to the natural rate of 5%.
+C   SRPC shifts upward, permanently raising the natural rate from 3% to 5%.
+D   LRPC shifts left, allowing unemployment to remain at B's 3% once expectations catch up.
+FB B is above A's inflation rate and left of LRPC. Expectations catch up to the higher actual rate, shifting SRPC upward. At that sustained inflation, unemployment returns to the unchanged natural rate 5%.
+
+PG5-PC-X-023 [hard] {'decision': 'KEEP GRAPH', 'graph_evidence': 'B7/1.5 relative to A5/2.5 and LRPC.', 'decision_reason': None}
+Actual inflation is held at B's rate while expectations gradually adjust to it. With the natural rate and supply conditions unchanged, which long-run adjustment fits the figure?
+A   SRPC shifts upward, and unemployment returns from 3% toward 5%.
+B   SRPC shifts downward, permanently reducing the natural rate from 7% to 5%.
+C * SRPC shifts downward, and unemployment returns from 7% toward 5%.
+D   LRPC shifts right to 7%, making the demand-induced unemployment increase permanent.
+FB B has unemployment7 and inflation1.5, compared with A at natural unemployment5 and inflation2.5. Adapting to lower inflation shifts SRPC down; the eventual return to5 does not change the natural rate.

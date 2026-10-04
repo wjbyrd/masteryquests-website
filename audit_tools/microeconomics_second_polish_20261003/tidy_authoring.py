@@ -1,0 +1,7 @@
+"""Remove superseded drafting text; leave the applied proposal unchanged."""
+from pathlib import Path
+H=Path(__file__).resolve().parent
+p=H/'author.py';s=p.read_text(encoding='utf8');start=s.index("e('P62C-CPS-L-055'");end=s.index("e('42618'",start)
+replacement="""e('P62C-CPS-L-055','Five buyers value one unit each at $54, $48, $42, $36 and $30. Five sellers’ costs are $39, $43, $47, $51 and $55 per unit. Initially the two highest-valued buyers buy from the two cheapest sellers. An innovation lowers the $47 seller’s cost to $40 and the $43 seller’s cost to $41. With no transaction costs, what happens to the efficient quantity and total surplus?','Quantity rises from two to three; total surplus rises by $4.',['Quantity stays at two; total surplus rises by $5.','Quantity rises from two to three; total surplus rises by $2.','Quantity rises from two to four; total surplus rises by $7.'],'Initially surplus is (54 + 48) − (39 + 43) = $20. After reordering costs to 39, 40, 41, 51, 55, three trades yield (54 + 48 + 42) − (39 + 40 + 41) = $24. The fourth trade is inefficient, so quantity rises by one and total surplus rises by $4.','Re-sorts marginal costs after a selective innovation and distinguishes a cost saving on existing production from a gain from expanding quantity.','Initial TS=102−82=20; new TS=144−120=24; gain4; third gain42−41=1; fourth36−51<0.')
+"""
+p.write_text(s[:start]+replacement+s[end:],encoding='utf8')

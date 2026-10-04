@@ -1,0 +1,1036 @@
+{
+  "P62C-CPS-L-050": {
+    "correct_index": 1,
+    "q": "Five buyers value one unit each at $28, $34, $40, $46 and $52. Five sellers can produce one unit each at costs of $45, $37, $53, $41 and $49. The two highest-valued buyers receive units from the two lowest-cost sellers. With no transaction costs, should a third unit be traded?",
+    "options": [
+      "Yes. Its $40 value exceeds the $37 cost of the cheapest unit.",
+      "No. The next buyer values it at $40, below the next seller’s $45 cost.",
+      "Yes. All five buyer values together exceed the cost of three units.",
+      "No. The next seller’s $45 cost exceeds every buyer’s value."
+    ],
+    "feedback": "After sorting values downward and costs upward, the third trade has a net benefit of 40 − 45 = −$5. Two units are efficient."
+  },
+  "P62C-CPS-L-055": {
+    "correct_index": 2,
+    "q": "Five buyers value one unit each at $54, $48, $42, $36 and $30. Five sellers’ costs are $39, $43, $47, $51 and $55 per unit. Initially the two highest-valued buyers buy from the two cheapest sellers. An innovation lowers the $47 seller’s cost to $40 and the $43 seller’s cost to $41. With no transaction costs, what happens to the efficient quantity and total surplus?",
+    "options": [
+      "Quantity stays at two; total surplus rises by $5.",
+      "Quantity rises from two to three; total surplus rises by $2.",
+      "Quantity rises from two to three; total surplus rises by $4.",
+      "Quantity rises from two to four; total surplus rises by $7."
+    ],
+    "feedback": "Initially surplus is (54 + 48) − (39 + 43) = $20. After reordering costs to 39, 40, 41, 51, 55, three trades yield (54 + 48 + 42) − (39 + 40 + 41) = $24. The fourth trade is inefficient, so quantity rises by one and total surplus rises by $4."
+  },
+  "42618": {
+    "correct_index": 2,
+    "q": "X costs $4 and Y costs $8. What is the minimum income needed to afford bundle (2, 1)?",
+    "options": [
+      "$12.",
+      "$24.",
+      "$16.",
+      "$48."
+    ],
+    "feedback": "The minimum income equals the bundle’s cost: 2($4) + 1($8) = $16."
+  },
+  "42619": {
+    "correct_index": 3,
+    "q": "A consumer has $56 and wants to buy 12 whole units of X and no Y. At which listed price of X is that purchase affordable?",
+    "options": [
+      "$4.75 per unit.",
+      "$5.00 per unit.",
+      "$5.25 per unit.",
+      "$4.50 per unit."
+    ],
+    "feedback": "Twelve units cost $54 at $4.50, within the budget. At the other prices they cost $57, $60 or $63."
+  },
+  "42620": {
+    "correct_index": 0,
+    "q": "A consumer has $64. Bundle A costs $60 and bundle B costs $68. Which bundles belong to the budget set?",
+    "options": [
+      "A only.",
+      "B only.",
+      "Both A and B.",
+      "Neither A nor B."
+    ],
+    "feedback": "The budget set includes bundles costing no more than $64. A is affordable; B is not."
+  },
+  "42621": {
+    "correct_index": 1,
+    "q": "A consumer’s budget line has intercepts of 18 units of X and 6 units of Y. If income is $72, which prices generate this line?",
+    "options": [
+      "X costs $18 and Y costs $6.",
+      "X costs $4 and Y costs $12.",
+      "X costs $12 and Y costs $4.",
+      "X costs $4 and Y costs $6."
+    ],
+    "feedback": "An intercept equals income divided by that good’s price. Thus Px = 72/18 = $4 and Py = 72/6 = $12."
+  },
+  "42622": {
+    "correct_index": 2,
+    "q": "A consumer has $80. X costs $5 and Y costs $8. After buying 8 units of X, what is the greatest quantity of Y the consumer can afford?",
+    "options": [
+      "10 units.",
+      "8 units.",
+      "5 units.",
+      "4 units."
+    ],
+    "feedback": "Eight units of X cost $40, leaving $40 for Y. At $8 each, that buys 5 units."
+  },
+  "42623": {
+    "correct_index": 3,
+    "q": "X costs $6. Buying 14 units of X and no Y leaves a consumer with $4. What income is consistent with this budget?",
+    "options": [
+      "$84.",
+      "$80.",
+      "$90.",
+      "$88."
+    ],
+    "feedback": "Spending is 14 × $6 = $84. Adding the unspent $4 gives income of $88."
+  },
+  "42625": {
+    "correct_index": 1,
+    "q": "Income and the price of Y stay fixed. A budget line’s X-intercept falls while its Y-intercept stays unchanged. What caused this change?",
+    "options": [
+      "The price of X fell.",
+      "The price of X rose.",
+      "Income fell.",
+      "The price of Y rose."
+    ],
+    "feedback": "The X-intercept is income/Px. With income fixed, a lower X-intercept means a higher price of X."
+  },
+  "42627": {
+    "correct_index": 3,
+    "q": "Income and both goods’ prices all double. What happens to the consumer’s budget set?",
+    "options": [
+      "It expands because income doubles.",
+      "It shrinks because both prices double.",
+      "Only the X-intercept increases.",
+      "It is unchanged."
+    ],
+    "feedback": "Doubling both sides of PxX + PyY ≤ income leaves exactly the same affordable bundles."
+  },
+  "42645": {
+    "correct_index": 1,
+    "q": "A consumer strictly prefers A to B, B to C, and C to A. Which diagnosis is correct?",
+    "options": [
+      "The rankings violate completeness because all pairs are ranked.",
+      "The rankings form a cycle and violate transitivity.",
+      "The rankings are consistent if the bundles have different prices.",
+      "The rankings are transitive because each comparison is strict."
+    ],
+    "feedback": "A > B and B > C require A > C under transitivity, contradicting C > A."
+  },
+  "42649": {
+    "correct_index": 1,
+    "q": "A consumer is indifferent between A and B, and strictly prefers B to C. If preferences are transitive, how must the consumer rank A and C?",
+    "options": [
+      "C is strictly preferred to A.",
+      "A is strictly preferred to C.",
+      "A and C must be indifferent.",
+      "Their ranking depends on which bundle costs more."
+    ],
+    "feedback": "Replacing B with an equally preferred A preserves the strict preference over C."
+  },
+  "42653": {
+    "correct_index": 1,
+    "q": "Preferences are complete and transitive. A consumer prefers A to B and A to C. What can be concluded about B and C from this information?",
+    "options": [
+      "B must be preferred to C.",
+      "B may be preferred, C may be preferred, or they may be equally preferred.",
+      "C must be preferred to B.",
+      "B and C must be equally preferred."
+    ],
+    "feedback": "Knowing that both rank below A does not rank them against each other. Completeness requires a ranking but does not tell us which one."
+  },
+  "42646": {
+    "correct_index": 2,
+    "q": "A consumer says, “I have compared A and B and like them equally.” Does this response violate completeness?",
+    "options": [
+      "Yes. Completeness requires a strict preference.",
+      "Yes. Every bundle must have a different rank.",
+      "No. Indifference is a valid comparison.",
+      "No. Completeness applies only when prices are equal."
+    ],
+    "feedback": "Complete preferences allow A preferred, B preferred, or indifference for each pair."
+  },
+  "42650": {
+    "correct_index": 2,
+    "q": "A consumer ranks every pair of feasible bundles except A and B, saying there is no ranking at all for that pair. Are these preferences complete?",
+    "options": [
+      "Yes; almost all pairs are ranked.",
+      "Yes; an unranked pair is automatically a tie.",
+      "No; at least one pair cannot be compared.",
+      "No; completeness requires equal rankings for all bundles."
+    ],
+    "feedback": "Completeness requires a ranking, including possible indifference, for every pair. No ranking is different from indifference."
+  },
+  "42654": {
+    "correct_index": 2,
+    "q": "A survey records a ranking for every pair of bundles. Is that enough to establish both completeness and transitivity?",
+    "options": [
+      "It establishes both because every pair was compared.",
+      "It establishes transitivity but not completeness.",
+      "It establishes completeness, but the rankings must still be checked for transitivity.",
+      "It establishes neither unless every bundle has a distinct rank."
+    ],
+    "feedback": "Pairwise coverage establishes completeness. The comparisons could still form a cycle, so transitivity needs a separate check."
+  },
+  "42647": {
+    "correct_index": 3,
+    "q": "Both X and Y are desirable. Bundle A has 6 X and 2 Y; bundle B has 4 X and 5 Y. Does more-is-better alone determine which is preferred?",
+    "options": [
+      "Yes. A is preferred because it has more X.",
+      "Yes. B is preferred because it contains more units in total.",
+      "Yes. The consumer must be indifferent.",
+      "No. Each bundle has more of one good and less of the other."
+    ],
+    "feedback": "Neither bundle dominates the other. The ranking depends on the consumer’s willingness to trade X for Y."
+  },
+  "42651": {
+    "correct_index": 3,
+    "q": "Both goods are divisible and desirable, their prices are positive, and a consumer can spend all income. A chosen bundle leaves enough money to buy more of either good. Can it be the consumer’s most-preferred affordable bundle?",
+    "options": [
+      "Yes. Any affordable bundle is equally preferred.",
+      "Yes. Leaving income unspent proves the goods are balanced.",
+      "No. An optimum must contain equal quantities of both goods.",
+      "No. Buying more of a good without giving up the other would improve it."
+    ],
+    "feedback": "With more-is-better and no saving option in this two-good choice, unspent income permits a strictly better affordable bundle."
+  },
+  "42655": {
+    "correct_index": 3,
+    "q": "Both goods are desirable. Bundle E contains 4 X and 3 Y. A proposed bundle D contains 5 X and an unknown whole-number amount of Y. What is the smallest Y amount that guarantees D is preferred to E under more-is-better?",
+    "options": [
+      "0 units of Y.",
+      "2 units of Y.",
+      "4 units of Y.",
+      "3 units of Y."
+    ],
+    "feedback": "D already has more X. At 3 Y it has no less of either good, so it dominates E. With less Y, preferences over the tradeoff are needed."
+  },
+  "42648": {
+    "correct_index": 0,
+    "q": "A consumer is indifferent between A and B and between B and C, but strictly prefers A to C. Are these rankings transitive?",
+    "options": [
+      "No. The two indifferences imply indifference between A and C.",
+      "Yes. Strict preference can coexist with indifference for the same pair.",
+      "Yes. Transitivity applies only to strict preferences.",
+      "No. Indifference itself violates transitivity."
+    ],
+    "feedback": "Transitivity carries the indifference relation through B, contradicting the stated strict preference between A and C."
+  },
+  "42652": {
+    "correct_index": 0,
+    "q": "A consumer is indifferent between A and B. A costs $20 and B costs $30. Does consistent preference ranking require the consumer to prefer B?",
+    "options": [
+      "No. A higher price does not establish a higher preference rank.",
+      "Yes. Spending more always gives more utility.",
+      "Yes. Indifference is possible only at equal prices.",
+      "No. The lower-cost bundle must be strictly preferred."
+    ],
+    "feedback": "Preference ranking describes satisfaction with bundles; prices determine affordability. Different prices do not overturn the given indifference."
+  },
+  "42664": {
+    "correct_index": 0,
+    "q": "Both goods are desirable. One indifference curve lies entirely northeast of another. Which curve represents more-preferred bundles?",
+    "options": [
+      "The curve to the northeast.",
+      "The curve to the southwest.",
+      "Both must represent the same rank.",
+      "Their ranking is determined by the numbers of bundles drawn on each."
+    ],
+    "feedback": "With more-is-better preferences, moving northeast to more of both goods raises the preference rank."
+  },
+  "42668": {
+    "correct_index": 0,
+    "q": "Curves through bundle A are claimed to represent two different indifference curves. B is indifferent to A on the first, and C is indifferent to A on the second. B has more of both desirable goods than C. Which contradiction follows?",
+    "options": [
+      "Transitivity makes B and C indifferent, while more-is-better makes B strictly preferred.",
+      "Completeness requires B and C to have identical quantities.",
+      "More-is-better makes C preferred because C has fewer goods.",
+      "There is no contradiction because B and C have different prices."
+    ],
+    "feedback": "Both bundles are indifferent to A, so transitivity makes them indifferent to each other. Dominance simultaneously requires B to be preferred, ruling out the proposed curves."
+  },
+  "42661": {
+    "correct_index": 1,
+    "q": "X is desirable but Y is pollution, which the consumer dislikes. If more X compensates for more pollution, how can an indifference curve slope?",
+    "options": [
+      "Downward: receiving less of the good compensates for more pollution.",
+      "Upward: more of the bad requires more of the good to hold satisfaction constant.",
+      "Horizontally: pollution cannot affect satisfaction.",
+      "Vertically: the amount of X cannot affect satisfaction."
+    ],
+    "feedback": "When one variable is a bad, increases in both can offset each other. The usual downward slope assumes both variables are goods."
+  },
+  "42665": {
+    "correct_index": 1,
+    "q": "Along a smooth indifference curve, the consumer gives up progressively less Y for each additional unit of X. With X on the horizontal axis, how does the curve change as X rises?",
+    "options": [
+      "It becomes steeper; the absolute marginal rate of substitution rises.",
+      "It becomes flatter; the absolute marginal rate of substitution falls.",
+      "It remains straight because utility is constant.",
+      "It slopes upward because both goods are desirable."
+    ],
+    "feedback": "The absolute slope measures Y sacrificed per additional X. Smaller sacrifices mean a flatter curve and diminishing MRS."
+  },
+  "42662": {
+    "correct_index": 2,
+    "q": "Preferences are strictly convex. A and B are distinct, equally preferred bundles. What follows about a bundle containing the average of their quantities?",
+    "options": [
+      "It must have utility equal to the arithmetic average of their utility numbers.",
+      "It must be less preferred than both extremes.",
+      "It is strictly preferred to either A or B.",
+      "It must cost less than both A and B."
+    ],
+    "feedback": "Strict convexity favors an interior mixture of distinct equally ranked bundles. It does not assign cardinal meaning to utility numbers or imply a lower price."
+  },
+  "42666": {
+    "correct_index": 2,
+    "q": "A consumer is indifferent among A, B, and every mixture of A and B. Does this observation establish strictly convex preferences?",
+    "options": [
+      "Yes. Indifference along mixtures is exactly strict convexity.",
+      "Yes. Every downward-sloping curve is strictly convex.",
+      "No. Strict convexity would make an interior mixture strictly preferred to the distinct equally ranked endpoints.",
+      "No. Convex preferences forbid indifference between distinct bundles."
+    ],
+    "feedback": "Indifference along the connecting segment is consistent with weak convexity, such as perfect substitutes, but not strict convexity between these endpoints."
+  },
+  "42663": {
+    "correct_index": 3,
+    "q": "Bundles F and G lie on the same indifference curve. F is affordable and G is not. Which statement is correct?",
+    "options": [
+      "G is preferred because it is more expensive.",
+      "F gives more utility because it is affordable.",
+      "Both must be affordable because they are equally preferred.",
+      "They are equally preferred, but only F is in the budget set."
+    ],
+    "feedback": "An indifference curve describes preferences; the budget determines affordability. Equal utility does not imply equal cost."
+  },
+  "42667": {
+    "correct_index": 3,
+    "q": "F and G lie at different points on a smooth, strictly convex indifference curve. Must the marginal rate of substitution be the same at both points?",
+    "options": [
+      "Yes. Equal utility requires equal slopes everywhere.",
+      "Yes. A curve must be straight if its bundles are indifferent.",
+      "No. Different slopes mean F and G cannot have equal utility.",
+      "No. Utility is the same, but the willingness to trade goods can differ."
+    ],
+    "feedback": "An indifference curve holds utility constant, not MRS. Along a standard strictly convex curve, the slope changes with the mix of goods."
+  },
+  "42673": {
+    "correct_index": 1,
+    "q": "A utility representation assigns A = 1, B = 2 and C = 3. Which replacement preserves the same strict ranking?",
+    "options": [
+      "A = 3, B = 2, C = 1.",
+      "A = 1, B = 4, C = 9.",
+      "A = 1, B = 1, C = 1.",
+      "A = 1, B = 3, C = 2."
+    ],
+    "feedback": "The replacement must retain C above B above A. Squaring these positive values preserves that order without preserving differences."
+  },
+  "42677": {
+    "correct_index": 1,
+    "q": "A consumer prefers A to B and is indifferent between B and C. Which ordinal utility assignment represents those preferences?",
+    "options": [
+      "A = 8, B = 3, C = 1.",
+      "A = 8, B = 3, C = 3.",
+      "A = 3, B = 8, C = 8.",
+      "A = 3, B = 3, C = 3."
+    ],
+    "feedback": "A needs a higher number than B, while B and C need equal numbers. The sizes of the gaps do not matter."
+  },
+  "42674": {
+    "correct_index": 2,
+    "q": "A utility scale gives A = 2 and B = 5. Someone replaces each number with its negative. Does the new scale represent the same preferences?",
+    "options": [
+      "Yes. Any change of numbers preserves preferences.",
+      "Yes. Only the size of each number matters.",
+      "No. It reverses the ranking of A and B.",
+      "No. Utility representations cannot include negative numbers."
+    ],
+    "feedback": "Originally 5 > 2, so B ranks above A. After negation, −2 > −5, so A ranks above B. Negative numbers themselves are allowed; the reversed order is the problem."
+  },
+  "42678": {
+    "correct_index": 2,
+    "q": "A consumer strictly prefers A to B. A proposed transformation assigns both bundles utility 10. Why does it fail to preserve the preferences?",
+    "options": [
+      "Utility must be measured in dollars.",
+      "Equal utility numbers always imply identical quantities.",
+      "It replaces a strict ranking with indifference.",
+      "Utility numbers must start at zero."
+    ],
+    "feedback": "A valid representation must retain strict comparisons as well as ties. Collapsing distinct ranks loses information."
+  },
+  "42675": {
+    "correct_index": 3,
+    "q": "One ordinal scale assigns A = 1, B = 2 and C = 3. Another valid scale assigns A = 1, B = 4 and C = 9. What does this show about comparing the utility gains from A to B and from B to C?",
+    "options": [
+      "The second scale proves that B-to-C gives five times the satisfaction of A-to-B.",
+      "The first scale proves the two gains are equally valuable to the consumer.",
+      "Changing the numerical gains must reverse the bundle ranking.",
+      "The ranking is preserved, but the relative sizes of the numerical gains are not meaningful."
+    ],
+    "feedback": "Both scales rank C above B above A. Equal gaps of 1 become gaps of 3 and 5, demonstrating that ordinal differences do not measure gains in satisfaction."
+  },
+  "42679": {
+    "correct_index": 3,
+    "q": "A consumer’s ordinal utility rises from 20 to 40 after receiving a good. Can these numbers alone establish that the consumer would pay $20 for it?",
+    "options": [
+      "Yes. The numerical increase is exactly $20.",
+      "Yes. A doubling of utility means willingness to pay doubles.",
+      "No. Ordinal utility cannot rank the two outcomes.",
+      "No. Ordinal utility differences do not measure willingness to pay in dollars."
+    ],
+    "feedback": "The numbers rank the outcomes but do not translate satisfaction into money. Willingness to pay requires information about tradeoffs with money."
+  },
+  "42676": {
+    "correct_index": 0,
+    "q": "Person 1 assigns A = 10 and B = 5. Person 2 assigns A = 100 and B = 200. Which comparison is supported?",
+    "options": [
+      "Person 1 prefers A to B; person 2 prefers B to A.",
+      "Person 2 likes A ten times as much as person 1 does.",
+      "Both prefer A because both assign it a positive number.",
+      "Person 2’s gain from switching to B is larger than any gain person 1 can receive."
+    ],
+    "feedback": "Each person’s numbers establish that person’s ranking. They do not provide a common scale for comparing satisfaction across people."
+  },
+  "42689": {
+    "correct_index": 1,
+    "q": "For a consumer with perfect-substitute preferences represented by U = 2X + Y, which bundle is equally preferred to (1 X, 0 Y)?",
+    "options": [
+      "(0 X, 1 Y).",
+      "(0 X, 2 Y).",
+      "(2 X, 0 Y).",
+      "(1 X, 2 Y)."
+    ],
+    "feedback": "Both the original bundle and (0, 2) have utility 2. One unit of X replaces two units of Y."
+  },
+  "42691": {
+    "correct_index": 3,
+    "q": "A consumer treats X and Y as perfect substitutes at a constant rate. With X horizontal and Y vertical, what shape do the indifference curves have?",
+    "options": [
+      "L-shaped curves.",
+      "Strictly bowed curves with a changing slope.",
+      "Upward-sloping curves when both goods are desirable.",
+      "Straight, downward-sloping lines."
+    ],
+    "feedback": "A constant willingness to substitute implies a constant negative slope."
+  },
+  "42693": {
+    "correct_index": 1,
+    "q": "A consumer treats X and Y as perfect substitutes, with U = 2X + Y. X costs $3 and Y costs $1. With positive income and divisible goods, which spending pattern gives the most utility?",
+    "options": [
+      "Spend all income on X.",
+      "Spend all income on Y.",
+      "Buy equal quantities of X and Y.",
+      "Any affordable bundle gives the same utility."
+    ],
+    "feedback": "X gives 2/3 utility units per dollar and Y gives 1. With perfect substitutes, all spending goes to the higher-return good."
+  },
+  "42695": {
+    "correct_index": 3,
+    "q": "A consumer treats X and Y as perfect substitutes, with U = 2X + Y. X costs $2 and Y costs $1. If income is $12 and goods are divisible, which bundles maximize utility?",
+    "options": [
+      "Only (6 X, 0 Y).",
+      "Only (0 X, 12 Y).",
+      "Only bundles with equal quantities of X and Y.",
+      "Every bundle on the budget line 2X + Y = 12."
+    ],
+    "feedback": "Each good provides one utility unit per dollar. All bundles spending the full $12 yield utility 12."
+  },
+  "42690": {
+    "correct_index": 2,
+    "q": "X and Y are useful only in one-to-one pairs. X costs $2, Y costs $3, and income is $20. Which bundle provides the greatest number of complete pairs?",
+    "options": [
+      "10 X and 0 Y.",
+      "0 X and 6 Y.",
+      "4 X and 4 Y.",
+      "5 X and 2 Y."
+    ],
+    "feedback": "Each complete pair costs $5. Four pairs exhaust the $20 budget and provide more complete pairs than the alternatives."
+  },
+  "42692": {
+    "correct_index": 0,
+    "q": "X and Y are useful only in one-to-one pairs. A consumer has 4 X and 7 Y and receives one more Y. What happens to the number of useful pairs?",
+    "options": [
+      "It stays at 4.",
+      "It rises to 5.",
+      "It rises to 8.",
+      "It falls to 3."
+    ],
+    "feedback": "X is the limiting good. Extra Y alone cannot create another complete pair."
+  },
+  "42694": {
+    "correct_index": 2,
+    "q": "A consumer uses X and Y only in one-to-one pairs. Where are the kinks of the indifference curves?",
+    "options": [
+      "On the line X = 2Y.",
+      "Only on the X-axis.",
+      "On the line X = Y.",
+      "At every point on a straight downward-sloping line."
+    ],
+    "feedback": "A kink occurs where neither component is in excess: X and Y are equal."
+  },
+  "42696": {
+    "correct_index": 0,
+    "q": "X and Y are useful only in one-to-one pairs. A consumer has 4 X and 7 Y, then loses 4 Y. How many useful pairs are lost?",
+    "options": [
+      "1 pair.",
+      "None.",
+      "3 pairs.",
+      "4 pairs."
+    ],
+    "feedback": "Initially X limits the consumer to 4 pairs. After the loss, only 3 Y remain, so Y becomes the limiting good and there are 3 pairs."
+  },
+  "42698": {
+    "correct_index": 2,
+    "q": "A consumer uses X and Y only in one-to-one pairs and spends $24 on them. Initially each good costs $2. If X rises to $4 while Y stays at $2, how does the number of pairs purchased change?",
+    "options": [
+      "It falls from 6 to 4; only purchases of X fall.",
+      "It remains at 6 because Y’s price is unchanged.",
+      "It falls from 6 to 4; purchases of both goods fall.",
+      "It rises from 6 to 8 because X is more expensive."
+    ],
+    "feedback": "The cost of a pair rises from $4 to $6. With fixed income, pairs fall from 24/4 = 6 to 24/6 = 4, reducing demand for both complements."
+  },
+  "42699": {
+    "correct_index": 3,
+    "q": "A consumer has income $24, Px = $2 and Py = $1. Preferences are smooth, strictly convex and more-is-better. At A = (8, 8), MRS = 3; at B = (10, 10), MRS = 2. A student selects B because MRS equals Px/Py. What is the strongest diagnosis?",
+    "options": [
+      "B is optimal because tangency overrides the budget constraint.",
+      "A is optimal because exhausting income is sufficient.",
+      "Neither bundle is affordable, so no adjustment from A is possible.",
+      "B is unaffordable, and A is affordable but can be improved by shifting spending toward X."
+    ],
+    "feedback": "B costs $30, above income. A costs $24, but its MRS of 3 exceeds the price ratio of 2, so a small move toward more X and less Y raises utility."
+  },
+  "42701": {
+    "correct_index": 1,
+    "q": "A consumer has U = 3X + Y, positive income, Px = $2 and Py = $1. Goods are divisible. A student rejects spending all income on X because MRS = 3 does not equal Px/Py = 2. Which response is correct?",
+    "options": [
+      "The student is right; every optimum must satisfy MRS = Px/Py.",
+      "All-X is optimal: X gives more utility per dollar, and an interior tangency condition need not hold at a corner.",
+      "All-Y is optimal because Y has the lower price per unit.",
+      "An equal-quantity bundle is optimal because it balances the goods."
+    ],
+    "feedback": "For perfect substitutes, MUx/Px = 3/2 exceeds MUy/Py = 1. Utility is maximized at the all-X corner, where equality of MRS and the price ratio is not required."
+  },
+  "42702": {
+    "correct_index": 2,
+    "q": "A consumer spends all income at an interior bundle where MRS is less than Px/Py. MRS measures Y the consumer would give up for one more X. Which small affordable adjustment can raise utility?",
+    "options": [
+      "Buy more X and less Y.",
+      "Buy more of both goods without increasing income.",
+      "Buy less X and more Y.",
+      "Keep the bundle because every budget-line point is optimal."
+    ],
+    "feedback": "The market asks for more Y per X than the consumer is willing to sacrifice. Selling back some X to buy Y improves the bundle."
+  },
+  "42703": {
+    "correct_index": 3,
+    "q": "At an initial interior optimum, MRS = Px/Py. The price of X falls, with income and Py unchanged. At the original bundle, MRS is now above the new price ratio. What follows, assuming smooth, strictly convex, more-is-better preferences but without assuming X is normal?",
+    "options": [
+      "The final quantity of X must rise because the substitution effect rules out any offsetting income effect.",
+      "The old bundle remains optimal because it satisfied tangency before the price change.",
+      "The final quantity of Y must fall because the price of X fell.",
+      "The old bundle is no longer optimal, but the direction of the total change in X cannot be determined from this local comparison alone."
+    ],
+    "feedback": "The old bundle leaves spending capacity and has a marginal imbalance at new prices. The substitution effect favors X, but without restrictions on the income effect the total response is not guaranteed."
+  },
+  "42704": {
+    "correct_index": 0,
+    "q": "At an interior optimum, X costs $3 and Y costs $2. The marginal utility of X is 12. What marginal utility of Y makes marginal utility per dollar equal for the two goods?",
+    "options": [
+      "8.",
+      "4.",
+      "12.",
+      "18."
+    ],
+    "feedback": "X provides 12/3 = 4 units of marginal utility per dollar. Y must also provide 4 per dollar, so its marginal utility is 4 × 2 = 8."
+  },
+  "42705": {
+    "correct_index": 1,
+    "q": "A consumer spends the entire budget and buys both goods. Is budget exhaustion alone sufficient to establish an optimum with smooth, strictly convex preferences?",
+    "options": [
+      "Yes. Every bundle on the budget line is optimal.",
+      "No. The marginal willingness to trade must also match the market tradeoff at an interior optimum.",
+      "Yes. Positive quantities guarantee equal marginal utility per dollar.",
+      "No. An optimum always leaves some income unspent."
+    ],
+    "feedback": "A budget-line bundle can still be improved by reallocating spending if MRS differs from Px/Py. Feasibility and full spending alone are insufficient."
+  },
+  "42706": {
+    "correct_index": 2,
+    "q": "A consumer has a unique optimum with smooth, strictly convex, more-is-better preferences. Income and both goods’ prices then triple. A student predicts more consumption because income rose; another predicts less because prices rose. Which conclusion follows?",
+    "options": [
+      "Consumption of both goods must triple because nominal income triples.",
+      "The consumer must move toward X because a higher Px changes relative prices.",
+      "The original bundle remains optimal because both the feasible set and the preference ranking are unchanged.",
+      "The optimum becomes indeterminate because all three nominal magnitudes changed."
+    ],
+    "feedback": "Multiplying the budget inequality by three leaves the same feasible set. Relative prices and preferences are unchanged, so the same unique optimum remains."
+  },
+  "42707": {
+    "correct_index": 3,
+    "q": "A consumer has income $12, Px = $2 and Py = $1. Preferences are U = XY for positive quantities, so MRS = Y/X. Which bundle is the interior optimum?",
+    "options": [
+      "4 X and 4 Y.",
+      "6 X and 0 Y.",
+      "2 X and 8 Y.",
+      "3 X and 6 Y."
+    ],
+    "feedback": "Tangency requires Y/X = 2, or Y = 2X. Substituting into 2X + Y = 12 gives X = 3 and Y = 6."
+  },
+  "42708": {
+    "correct_index": 0,
+    "q": "Which description identifies a consumer’s optimum among affordable bundles?",
+    "options": [
+      "A bundle on the highest attainable indifference curve.",
+      "The bundle with the lowest spending, regardless of preferences.",
+      "Any bundle with equal quantities of both goods.",
+      "Any bundle on the budget line, regardless of preferences."
+    ],
+    "feedback": "An optimum maximizes preference rank subject to affordability. Low cost, equal quantities or full spending alone does not establish this."
+  },
+  "P62H-MCMP-L-032": {
+    "correct_index": 3,
+    "q": "A long-run monopolistically competitive firm charges $70, has a $20 markup over marginal cost, and produces 14.64 units less than its minimum-ATC output of 34.64. What are its marginal cost and actual output?",
+    "options": [
+      "MC = $90; output = 20 units.",
+      "MC = $50; output = 49.28 units.",
+      "MC = $20; output = 14.64 units.",
+      "MC = $50; output = 20 units."
+    ],
+    "feedback": "MC equals price minus markup: 70 − 20 = $50. Actual output is minimum-ATC output minus excess capacity: 34.64 − 14.64 = 20."
+  },
+  "P62H-MCMP-L-035": {
+    "correct_index": 2,
+    "q": "At its long-run equilibrium, a monopolistically competitive firm produces 24 units, charges $76, and has marginal cost $49.60. It minimizes ATC at 42.93 units. Free entry has eliminated economic profit. Which conclusion follows?",
+    "options": [
+      "ATC at 24 units is $49.60 because zero profit requires price to equal MC.",
+      "The firm must produce 42.93 units because zero profit requires minimum ATC.",
+      "ATC at 24 units is $76, even though price exceeds MC and output is below the minimum-ATC quantity.",
+      "Economic profit is $633.60 because the markup applies to all 24 units."
+    ],
+    "feedback": "Zero economic profit means P = ATC at the chosen output, not P = MC or minimum ATC. The markup and excess capacity can persist in long-run monopolistic competition."
+  },
+  "P62H-MCMP-L-038": {
+    "correct_index": 1,
+    "q": "A monopolistically competitive firm maximizes profit at 18 units and would minimize ATC at 30.12 units. It produces and sells all 18 units. A student calls the 12.12-unit gap “unsold inventory.” What is the best correction?",
+    "options": [
+      "The gap proves the firm produced 30.12 units and sold only 18.",
+      "The gap is excess capacity relative to the cost-minimizing scale, not goods already produced and left unsold.",
+      "The gap measures the difference between price and marginal cost.",
+      "Selling all 18 units means the firm must be producing at minimum ATC."
+    ],
+    "feedback": "Excess capacity compares actual output with the output minimizing ATC. It does not count unsold production."
+  },
+  "P62H-MCMP-L-041": {
+    "correct_index": 0,
+    "q": "A monopolistically competitive firm charges $82 at its chosen output, where MC = $48.40 and ATC = $82. Suppose a regulator requires a price equal to MC at that same output, holding the displayed costs fixed. Would the firm cover total cost?",
+    "options": [
+      "No. It would lose $33.60 per unit because the required price would be below ATC.",
+      "Yes. Price equal to MC always covers average total cost.",
+      "Yes. Zero profit at the original price guarantees zero profit after the price cut.",
+      "No. It would lose $82 per unit because all sales revenue disappears."
+    ],
+    "feedback": "At the specified output, price would fall to $48.40 while ATC remains $82. The per-unit loss is 82 − 48.40 = $33.60. This fixed-output comparison does not predict a new regulated equilibrium."
+  },
+  "P62H-MCMP-L-044": {
+    "correct_index": 3,
+    "q": "Two long-run monopolistically competitive firms charge prices equal to ATC. Firm A has a $17.60 markup and 13.47 units of excess capacity. Firm B has a $12 markup and 20 units of excess capacity. Which comparison is supported?",
+    "options": [
+      "A has both the larger markup and the larger excess capacity.",
+      "B has the larger markup because it has more excess capacity.",
+      "A must earn more economic profit because its markup is larger.",
+      "A has the larger price–MC gap, while B operates farther below its own minimum-ATC output."
+    ],
+    "feedback": "Markup and excess capacity measure different gaps. A has 17.60 > 12 in markup; B has 20 > 13.47 in excess capacity. Both have zero economic profit because P = ATC."
+  },
+  "42028": {
+    "correct_index": 0,
+    "q": "Which per-unit correction fits the garments graph, and how does it change private incentives?",
+    "options": [
+      "A $6 tax; it makes the decision-maker account for the marginal external effect.",
+      "A $4 tax; it makes the decision-maker account for the marginal external effect.",
+      "A $6 tax collected as a fixed fee from each firm; it creates the same marginal incentive as charging $6 on each garment.",
+      "A $15 per-garment tax; producers should pay the full social marginal cost in addition to their private marginal cost."
+    ],
+    "feedback": "At the efficient 160-million-garment quantity, MSC is $15 and MPC $9. A $6 per-unit tax aligns the producer’s marginal incentive with social cost. A fixed fee does not change marginal cost, while a $15 tax would count private cost twice."
+  },
+  "42038": {
+    "correct_index": 2,
+    "q": "Which per-unit correction fits the vapes graph, and how does it change private incentives?",
+    "options": [
+      "A $2 tax; it makes the decision-maker account for the marginal external effect.",
+      "A $4 tax makes private and social benefits equal by raising consumers’ underlying willingness to pay by $4.",
+      "A $4 tax; it makes the decision-maker account for the marginal external effect.",
+      "A $12 tax; the full marginal private benefit is the external harm."
+    ],
+    "feedback": "At the efficient 140-thousand-vape quantity, MPB is $12 and MSB $8. A $4 tax reduces the private net incentive to consume by the external harm; it does not raise underlying willingness to pay."
+  },
+  "42048": {
+    "correct_index": 0,
+    "q": "Which per-unit correction fits the gardens graph, and how does it change private incentives?",
+    "options": [
+      "A $5 producer subsidy; it makes the decision-maker account for the marginal external effect.",
+      "A $3 producer subsidy; it makes the decision-maker account for the marginal external effect.",
+      "A $5 subsidy guarantees a $5 net social gain from every garden, including those already produced.",
+      "A $15 subsidy per garden; government must reimburse the whole private marginal cost."
+    ],
+    "feedback": "At 150 gardens, MPC is $15 and MSC $10. The $5 external benefit justifies a matching subsidy. The subsidy itself is a transfer, not a guaranteed $5 net social gain on every existing garden."
+  },
+  "42058": {
+    "correct_index": 2,
+    "q": "Which per-unit correction fits the transit rides graph, and how does it change private incentives?",
+    "options": [
+      "A $1 rider subsidy; it makes the decision-maker account for the marginal external effect.",
+      "A $2 rider subsidy makes the subsidy payment itself the extra social benefit of each ride.",
+      "A $2 rider subsidy; it makes the decision-maker account for the marginal external effect.",
+      "A $6 rider subsidy; the entire marginal social benefit must be added to the private incentive."
+    ],
+    "feedback": "At 200 thousand rides, MSB is $6 and MPB $4. A $2 subsidy closes the incentive gap. The external benefit exists independently of the subsidy payment, which is a transfer."
+  },
+  "42204": {
+    "correct_index": 0,
+    "q": "The vertical guide marks one quantity of radio programming received by both groups. How should that quantity be treated when adding their demands?",
+    "options": [
+      "Both receive 40 hours; add their marginal benefits at that shared quantity.",
+      "Both receive 30 hours; add their marginal benefits at that shared quantity.",
+      "Each receives 40 hours, so add the quantities to obtain 80 hours.",
+      "The shared quantity is 40 hours; use only the larger group’s marginal benefit."
+    ],
+    "feedback": "The guide marks 40 hours. Radio programming is nonrival: both groups receive those same hours. Add their willingness to pay vertically at 40 hours, not their hours horizontally."
+  },
+  "42207": {
+    "correct_index": 3,
+    "q": "Use the graph. At the marked radio-programming quantity, which marginal benefits and treatment of the shared hours are correct?",
+    "options": [
+      "A values the next hour at $2,000 and B at $1,000; both receive the same 40 hours, so add benefits, not hours.",
+      "A values the next hour at $3,000 and B at $1,000; the relevant combined value is their $2,000 average.",
+      "The combined marginal benefit is $4,000; this is also the total benefit of all 40 hours.",
+      "A values the next hour at $3,000 and B at $1,000; both receive the same 40 hours, so add benefits, not hours."
+    ],
+    "feedback": "At 40 hours, A values the next hour at $3,000 and B at $1,000. Nonrival consumption calls for their sum, $4,000, not the $2,000 average. This is marginal benefit, not the benefit of all hours."
+  },
+  "42352": {
+    "correct_index": 0,
+    "q": "Use the graph. After the plotted shift, suppose the wage initially stays at its old $20 level. Which imbalance and wage pressure follow?",
+    "options": [
+      "A 4,000-worker surplus, putting downward pressure on wage.",
+      "A 2,000-worker surplus, putting downward pressure on wage.",
+      "A 4,000-worker surplus, but this is the number employed after wages finish adjusting.",
+      "An 8,000-worker surplus, because all workers willing to work at $20 are surplus workers."
+    ],
+    "feedback": "At $20, new supply is 8,000 and demand is 4,000, so excess supply is 4,000. This creates downward wage pressure; the gap is not employment after adjustment."
+  },
+  "42360": {
+    "correct_index": 0,
+    "q": "Use the graph. After the plotted shift, suppose the wage initially stays at its old $20 level. Which imbalance and wage pressure follow?",
+    "options": [
+      "A 4,000-worker shortage, putting upward pressure on wage.",
+      "A 2,000-worker shortage, putting upward pressure on wage.",
+      "A 4,000-worker shortage, which means 4,000 workers are unemployed at this wage.",
+      "No shortage, because the plotted quantity of labor supplied at $20 is zero."
+    ],
+    "feedback": "At $20, demand is 4,000 and new supply is zero. The 4,000-worker shortage is unmet demand for labor, putting upward pressure on wages; it is not unemployment."
+  },
+  "42361": {
+    "correct_index": 1,
+    "q": "Use the graph. Better opportunities in another industry draw workers away from construction. At $20, which plotted quantities and interpretation are correct?",
+    "options": [
+      "Supply changes from 5,000 to 1,000 workers; availability changes at a given wage, shifting supply.",
+      "Supply changes from 4,000 to 0 workers; availability changes at a given wage, shifting supply.",
+      "Supply changes from 4,000 to 0 workers; this measures the final decline in employment after wages adjust.",
+      "Construction supply shifts left, so the graph proves total employment across all industries falls by 4,000."
+    ],
+    "feedback": "At $20, SL0 supplies 4,000 workers and SL1 supplies zero. Better alternatives reduce construction labor supply at any given wage. This fixed-wage gap is not the eventual employment change and does not measure employment in other industries."
+  },
+  "42363": {
+    "correct_index": 3,
+    "q": "A student says the new supply curve merely reflects a wage change. At $20, which plotted quantities and interpretation are correct?",
+    "options": [
+      "Supply changes from 5,000 to 1,000 workers; availability changes at a given wage, shifting supply.",
+      "Supply changes from 4,000 to 0 workers; the demand curve must also shift left by 4,000 at every wage.",
+      "Supply is lower at $20, so the new curve shows less willingness to work caused solely by a lower construction wage.",
+      "Supply changes from 4,000 to 0 workers; availability changes at a given wage, shifting supply."
+    ],
+    "feedback": "At $20, SL0 gives 4,000 workers and SL1 gives 0. Worker exit reduces the quantity available at each wage. A wage change by itself moves along a supply curve rather than relocating it."
+  },
+  "42376": {
+    "correct_index": 0,
+    "q": "The monopsonist has chosen to hire 4,000 nurses. In the graph, what hourly wage does it pay, and which curve determines that wage?",
+    "options": [
+      "$20, read from labor supply.",
+      "$25, read from labor supply.",
+      "$20, read from marginal factor cost.",
+      "$30, the marginal cost of hiring the last nurse."
+    ],
+    "feedback": "At 4,000 nurses (40 hundreds), labor supply shows $20 per hour. The $30 MFC includes the extra wage expense associated with expanding employment; it is not the wage paid."
+  },
+  "42587": {
+    "correct_index": 3,
+    "q": "Compare the left and right portions of IC2 in the graph. What does its changing slope imply about the consumer’s willingness to give up Y for another unit of X?",
+    "options": [
+      "It becomes steeper to the right, so the consumer gives up progressively more Y for another X.",
+      "It becomes flatter to the right, so the consumer’s total utility falls as X increases along IC2.",
+      "Its slope changes, so the consumer’s preference ranking must change while moving along IC2.",
+      "It becomes flatter to the right, so the consumer gives up progressively less Y for another X."
+    ],
+    "feedback": "IC2 becomes flatter as X rises. Its absolute slope is the marginal rate of substitution, so the consumer is willing to sacrifice less Y for another X. Utility stays constant along the curve."
+  },
+  "42588": {
+    "correct_index": 0,
+    "q": "At X = 10, which indifference curve passes between Y = 5 and Y = 10, and what can its label tell us?",
+    "options": [
+      "IC2; the label identifies a preference rank, not an amount of satisfaction.",
+      "IC3; the label identifies a preference rank, not an amount of satisfaction.",
+      "IC2; its number means twice the satisfaction represented by IC1.",
+      "IC1; its number is the dollar cost of every bundle on it."
+    ],
+    "feedback": "At X = 10, IC2 is near Y = 9. Curve labels identify ordinal ranks; their numerical ratios do not measure satisfaction."
+  },
+  "P62B-ELAS-E-028": {
+    "correct_index": 3,
+    "q": "Which demand curve is steeper in the graph, and why is that visual slope different from price elasticity of demand?",
+    "options": [
+      "D1 is steeper; slope uses the axis units, whereas elasticity compares percentage changes.",
+      "D2 is steeper; its numerical slope is also its price elasticity at every point.",
+      "D1 is steeper; changing dollars to cents leaves the numerical slope unchanged.",
+      "D2 is steeper; slope uses the axis units, whereas elasticity compares percentage changes."
+    ],
+    "feedback": "D2 is the steeper curve. A slope depends on the units on the axes. Elasticity uses percentage changes, so it is not the numerical slope and requires no unit-specific scale."
+  },
+  "ECON-MG-MEDIUM-186": {
+    "correct_index": 0,
+    "q": "Refer to the tax graph. Which before-and-after quantities describe the change in sales, and why does the tax affect sales?",
+    "options": [
+      "From 100 to 80 units; the wedge between buyer payment and seller receipt removes some mutually beneficial trades.",
+      "From 100 to 65 units; the wedge between buyer payment and seller receipt removes some mutually beneficial trades.",
+      "From 100 to 80 units; the 20 units no longer sold become tax revenue.",
+      "From 100 to 80 units; all buyer payments become a social loss rather than a payment to sellers or government."
+    ],
+    "feedback": "The tax lowers sales from 100 to 80. Buyers pay $18 and sellers receive $12, leaving a $6 wedge that prevents mutually beneficial trades. Lost units are not tax revenue; revenue is the tax times units still traded."
+  },
+  "ECON-MG-MEDIUM-189": {
+    "correct_index": 0,
+    "q": "Refer to the tax graph. Which quantity change accompanies the wedge between the price buyers pay and the amount sellers receive?",
+    "options": [
+      "From 100 to 80 units; the wedge between buyer payment and seller receipt removes some mutually beneficial trades.",
+      "From 100 to 65 units; the wedge between buyer payment and seller receipt removes some mutually beneficial trades.",
+      "From 100 to 80 units; the buyer’s $3 price increase is the entire wedge because the seller’s loss does not count.",
+      "From 80 to 100 units; using the untaxed intersection as the after-tax quantity measures the sales response."
+    ],
+    "feedback": "The original quantity is 100 and the taxed quantity 80. The wedge is $18 − $12 = $6, including the $3 rise in buyer price and the $3 fall in seller receipt from the original $15."
+  },
+  "P62B-ELAS-EL-038": {
+    "correct_index": 0,
+    "q": "Use the graph. Refer to the common starting point and the higher marked price on the two supply curves. Which short-run and long-run quantity increases, and elasticity interpretation, are supported?",
+    "options": [
+      "10 and 40 units; the larger long-run response reflects more time to adjust inputs and capacity.",
+      "20 and 60 units; the larger long-run response reflects more time to adjust inputs and capacity.",
+      "10 and 40 units; those increases are also the new total quantities supplied.",
+      "70 and 100 units; subtracting the common starting quantity is unnecessary when measuring the increases."
+    ],
+    "feedback": "Starting from 60 units, the quantities at the higher price are 70 and 100. The increases are 10 and 40; the larger long-run response reflects more adjustment time."
+  },
+  "P62B-ELAS-M-039": {
+    "correct_index": 1,
+    "q": "Use the graph. Refer to the common starting point and the higher marked price on the two supply curves. Which short-run and long-run quantity increases, and elasticity interpretation, are supported?",
+    "options": [
+      "20 and 60 units; the larger long-run response reflects more time to adjust inputs and capacity.",
+      "10 and 40 units; the larger long-run response reflects more time to adjust inputs and capacity.",
+      "10 and 40 units; the larger long-run increase proves every input can adjust fully in the short run.",
+      "10 and 100 units; compare the short-run change with the long-run final level to measure responsiveness."
+    ],
+    "feedback": "Both curves start at Q = 60, P = 4. At P = 8, short-run A has Q = 70 and long-run B has Q = 100. The increases are 10 and 40. With the same starting point and price change, more adjustment time yields the larger quantity response and greater supply elasticity."
+  },
+  "P62C-CPS-L-024": {
+    "correct_index": 3,
+    "q": "Refer to the graph. A student argues that the allocation at E is efficient only if buyers and sellers receive equal surplus. Which quantity and explanation correctly evaluate this claim under the standard competitive assumptions?",
+    "options": [
+      "6 units: marginal willingness to pay equals marginal cost; equal surplus shares are not required.",
+      "8 units: total surplus is maximized only because the buyer’s payment equals the seller’s receipt.",
+      "8 units: the market price is itself the total social gain from those trades.",
+      "8 units: marginal willingness to pay equals marginal cost; equal surplus shares are not required."
+    ],
+    "feedback": "At E, quantity is 8 and marginal value equals marginal cost at $14. That marginal equality identifies efficiency under the stated assumptions. Equal transfer payments or equal surplus shares do not establish efficiency."
+  },
+  "P62C-CPS-M-029": {
+    "correct_index": 2,
+    "q": "Refer to the graph. Which quantity and explanation identify the efficient allocation under the standard competitive assumptions?",
+    "options": [
+      "6 units: marginal willingness to pay equals marginal cost; equal surplus shares are not required.",
+      "8 units: this quantity maximizes total surplus only if no producer surplus is earned.",
+      "8 units: marginal willingness to pay equals marginal cost; equal surplus shares are not required.",
+      "10 units: the price at E can be used as the efficient quantity because demand equals supply there."
+    ],
+    "feedback": "Demand and supply intersect at E, with quantity 8 and marginal value and cost both $10. This equality identifies the efficient quantity. Efficiency concerns total gains from trade, not an equal division of those gains."
+  },
+  "P62E-COP-H-019": {
+    "correct_index": 0,
+    "q": "Refer to the graph. What is the vertical difference between total cost and total variable cost, and why does it remain at that amount as output changes?",
+    "options": [
+      "$240 of total fixed cost; TC equals TVC plus this constant amount.",
+      "$120 of total fixed cost; TC equals TVC plus this constant amount.",
+      "$240 of total fixed cost; dividing this gap by output is unnecessary when reporting average fixed cost.",
+      "$240 of total cost; the TC–TVC gap includes all variable inputs used in production."
+    ],
+    "feedback": "The horizontal fixed-cost line is at $240. TC starts at $240 while TVC starts at zero. Their difference is $240 at every output because TC = TVC+TFC. This is a total, not a marginal or per-unit cost."
+  },
+  "P62E-COP-L-053": {
+    "correct_index": 0,
+    "q": "Refer to the total-cost graph. Which cost accounts for the unchanged vertical distance between TC and TVC, and how large is that cost?",
+    "options": [
+      "$240 of total fixed cost; TC equals TVC plus this constant amount.",
+      "$120 of total fixed cost; TC equals TVC plus this constant amount.",
+      "$240 of average fixed cost; it is the fixed cost per unit at every output.",
+      "$240 of total variable cost; these costs remain when output is zero."
+    ],
+    "feedback": "The horizontal fixed-cost line is at $240. TC starts at $240 while TVC starts at zero. Their difference is $240 at every output because TC = TVC+TFC. This is a total, not a marginal or per-unit cost."
+  },
+  "P62E-COP-M-024": {
+    "correct_index": 1,
+    "q": "Refer to the graph. What is the vertical difference between total cost and total variable cost, and why does it remain at that amount as output changes?",
+    "options": [
+      "$120 of total fixed cost; TC equals TVC plus this constant amount.",
+      "$240 of total fixed cost; TC equals TVC plus this constant amount.",
+      "$240 of total fixed cost; this amount must be added again for each additional unit produced.",
+      "$0 of fixed cost, because TC and TVC rise by the same amount when output changes."
+    ],
+    "feedback": "The horizontal fixed-cost line is at $240. TC starts at $240 while TVC starts at zero. Their difference is $240 at every output because TC = TVC+TFC. This is a total, not a marginal or per-unit cost."
+  },
+  "P62E-COP-H-018": {
+    "correct_index": 3,
+    "q": "Refer to the average-cost graph. Approximately how large is the ATC–AVC gap at Q = 20, and why is the gap smaller at Q = 70?",
+    "options": [
+      "About $6 per unit; the same fixed cost is spread over more units.",
+      "About $12 per unit; the gap shrinks because each additional unit eliminates $12 of the firm’s total fixed cost.",
+      "About $12 at Q = 20 and $42 at Q = 70; fixed cost per unit rises in proportion to output.",
+      "About $12 per unit; the same fixed cost is spread over more units."
+    ],
+    "feedback": "The gap is AFC: $240/20 = $12, and $240/70 ≈ $3.43. Total fixed cost stays $240; the per-unit gap falls because output is the denominator."
+  },
+  "P62E-COP-L-054": {
+    "correct_index": 1,
+    "q": "Refer to the average-cost graph. Approximately how large is the ATC–AVC gap at Q = 20, and why is the gap smaller at Q = 70?",
+    "options": [
+      "About $6 per unit; the same fixed cost is spread over more units.",
+      "About $12 per unit; the same fixed cost is spread over more units.",
+      "About $12 per unit; this is the extra cost of the next unit, so a smaller gap means lower MC.",
+      "About $12 per unit; it remains $12 at Q = 70 because total fixed cost is unchanged."
+    ],
+    "feedback": "At Q = 20 the gap and the AFC curve are about $12; by Q = 70 they are about $3.4. The gap is AFC = TFC/Q. With TFC = $240 unchanged, a larger denominator reduces fixed cost per unit."
+  },
+  "P62F-PC-EL-038": {
+    "correct_index": 2,
+    "q": "Use the paired market and firm diagram. Assume free entry, identical firms and unchanged input prices and cost curves. Which current profit and subsequent changes in market supply, firm MR and firm output describe the path to long-run equilibrium?",
+    "options": [
+      "$1,500; entry expands market supply, lowering price and each firm’s output along rising MC until economic profit is zero.",
+      "$1,800; entry lowers market price, but an incumbent’s MR stays at its original level because that firm is a price taker.",
+      "$1,800; entry expands market supply, lowering price and each firm’s output along rising MC until economic profit is zero.",
+      "$3,600; entry expands supply and lowers price until this sales revenue is zero."
+    ],
+    "feedback": "At P = $40, Q = 90 and ATC = $20, profit is $1,800; revenue is $3,600. Entry expands market supply and lowers the price faced by each price-taking firm. Firm MR falls and output contracts along rising MC until P = minimum ATC and economic profit is zero."
+  },
+  "P62F-PC-H-042": {
+    "correct_index": 1,
+    "q": "Use the graph. Use the paired panels. Assume free entry, identical firms and unchanged input prices and cost curves. Which current firm profit and long-run adjustment follow?",
+    "options": [
+      "$1,500; entry expands market supply, lowering price and each firm’s output along rising MC until economic profit is zero.",
+      "$1,800; entry expands market supply, lowering price and each firm’s output along rising MC until economic profit is zero.",
+      "$1,800; entry lowers price, but incumbent output must rise because total market supply rises.",
+      "$2,250; price minus AVC measures economic profit and predicts entry until P equals AVC."
+    ],
+    "feedback": "Profit is (40 − 20) × 90 = $1,800, not (40 − 15) × 90 = $2,250. Entry raises market supply, lowers price and reduces each incumbent’s output along MC. Long-run zero profit requires P = ATC, not merely AVC."
+  },
+  "P62F-PC-L-097": {
+    "correct_index": 0,
+    "q": "Starting from the market price and the firm’s costs in the paired market and firm diagram, which current profit and chain of entry, price and output changes follow under free entry with identical firms and unchanged costs?",
+    "options": [
+      "$1,800; entry expands market supply, lowering price and each firm’s output along rising MC until economic profit is zero.",
+      "$1,500; entry expands market supply, lowering price and each firm’s output along rising MC until economic profit is zero.",
+      "$1,800; entry lowers price and incumbent output, which proves total industry output must also fall.",
+      "$1,800; free entry ends only when the price–AVC margin is zero, even if ATC remains above price."
+    ],
+    "feedback": "The market sets P = 40. The firm chooses Q = 90, with ATC = 20, earning (40−20) × 90 = 1800. Entry adds market supply and lowers the shared price. Each firm’s MR falls and its output contracts along fixed rising MC. Under the stated conditions adjustment ends at P = MC = minimum ATC."
+  },
+  "P62F-PC-EL-044": {
+    "correct_index": 2,
+    "q": "Which price and firm output in the paired market and firm diagram, together with the economic conditions, establish a long-run competitive benchmark rather than only current break-even?",
+    "options": [
+      "P = $20, Q = 40; P = MC = minimum ATC gives zero economic profit and no net entry or exit pressure.",
+      "P = $25, Q = 50; zero economic profit means the firm covers explicit costs but cannot cover the owners’ opportunity costs.",
+      "P = $25, Q = 50; P = MC = minimum ATC gives zero economic profit and no net entry or exit pressure.",
+      "P = $25, Q = 50; P = MC alone rules out further entry even when P exceeds ATC."
+    ],
+    "feedback": "The market supplies price 25 to the firm. Its rising MC crosses at Q = 50, also the ATC minimum. P = MC gives marginal efficiency; P = min ATC gives productive efficiency and zero economic profit. Covering AVC alone is only a short-run operating criterion."
+  },
+  "P62F-PC-M-048": {
+    "correct_index": 1,
+    "q": "Use the graph. Which firm price and output and interpretation characterize the two-panel long-run benchmark?",
+    "options": [
+      "P = $20, Q = 40; P = MC = minimum ATC gives zero economic profit and no net entry or exit pressure.",
+      "P = $25, Q = 50; P = MC = minimum ATC gives zero economic profit and no net entry or exit pressure.",
+      "P = $25, Q = 50; normal returns to the owners are excluded from ATC, so economic profit must be positive.",
+      "P = $25, Q = 50; P above AVC measures positive economic profit even when P equals ATC."
+    ],
+    "feedback": "The market supplies price 25 to the firm. Its rising MC crosses at Q = 50, also the ATC minimum. P = MC gives marginal efficiency; P = min ATC gives productive efficiency and zero economic profit. Covering AVC alone is only a short-run operating criterion."
+  },
+  "P62G-MON-H-032": {
+    "correct_index": 1,
+    "q": "A manager proposes expanding monopoly output to the demand–MC intersection in the graph. Which profit-maximizing output and diagnosis of that proposal are correct?",
+    "options": [
+      "30 units; expanding beyond MR = MC adds units whose marginal cost exceeds marginal revenue.",
+      "36 units; expanding beyond MR = MC adds units whose marginal cost exceeds marginal revenue.",
+      "36 units; expanding toward demand = MC must raise profit because price remains above MC on the extra units.",
+      "60 units; maximizing total surplus also maximizes the monopolist’s profit even when extra sales lower revenue on earlier units."
+    ],
+    "feedback": "Profit maximization uses MR = MC at 36 units. Demand crosses MC near 60, the social benchmark. Between them price exceeds MC but MR is below MC, so expansion raises total surplus while reducing monopoly profit."
+  },
+  "P62G-MON-H-036": {
+    "correct_index": 0,
+    "q": "A manager proposes expanding monopoly output to the demand–MC intersection in the graph. Which profit-maximizing output and diagnosis of that proposal are correct?",
+    "options": [
+      "40 units; expanding beyond MR = MC adds units whose marginal cost exceeds marginal revenue.",
+      "34 units; expanding beyond MR = MC adds units whose marginal cost exceeds marginal revenue.",
+      "40 units; the firm should expand to lower ATC even when the extra units cost more than the revenue they add.",
+      "About 67 units; the largest output with price covering MC maximizes profit regardless of marginal revenue."
+    ],
+    "feedback": "MR = MC gives Q = 40; demand meets MC near Q = 67. Between them MC exceeds MR, so expanding to the social benchmark lowers private profit even though the extra units have value above resource cost."
+  },
+  "P62H-MCMP-H-016": {
+    "correct_index": 0,
+    "q": "Use the graph. Suppose the plotted outcome follows an earlier period of short-run profit and entry. Which current price and description of the adjustment are correct?",
+    "options": [
+      "$76; entry shifted incumbent demand inward until price equaled ATC at the MR = MC output.",
+      "$72; entry shifted incumbent demand inward until price equaled ATC at the MR = MC output.",
+      "$76; entry eliminates the price–MC markup whenever it eliminates economic profit.",
+      "$76; entry shifts each incumbent’s marginal cost down until its existing demand curve becomes tangent to ATC."
+    ],
+    "feedback": "At Q = 24, P = ATC = $76 while MC = $49.60. Entry reduces incumbent demand until profit is zero, but markup and output below minimum ATC remain. Entry need not shift the firm’s cost curves."
+  },
+  "P62H-MCMP-EL-023": {
+    "correct_index": 0,
+    "q": "Use the graph. Suppose the plotted outcome follows an earlier period of short-run profit and entry. Which current price and description of the adjustment are correct?",
+    "options": [
+      "$82; entry shifted incumbent demand inward until price equaled ATC at the MR = MC output.",
+      "$78; entry shifted incumbent demand inward until price equaled ATC at the MR = MC output.",
+      "$82; the $33.60 price–MC gap is the firm’s economic profit per unit after entry.",
+      "$82; a higher number of competitors shifts each incumbent’s demand outward until P = ATC."
+    ],
+    "feedback": "At Q = 28, P = ATC = $82 and MC = $48.40. The $33.60 markup is not profit per unit; profit uses P − ATC. Entry shifts incumbent demand inward."
+  },
+  "P62H-MCMP-L-094": {
+    "correct_index": 3,
+    "q": "Refer to the graph. Which final price and sequence of changes in incumbent demand, economic profit and efficient scale describe adjustment after short-run profit attracts entry?",
+    "options": [
+      "$23; entry shifted incumbent demand inward until price equaled ATC at the MR = MC output, which remains below minimum-ATC output.",
+      "$27; price equals ATC after entry, so the firm is productively efficient even though its output remains below minimum-ATC output.",
+      "$27; entry ends when P equals AVC, leaving no reason to cover the remaining fixed costs in the long run.",
+      "$27; entry shifted incumbent demand inward until price equaled ATC at the MR = MC output, which remains below minimum-ATC output."
+    ],
+    "feedback": "At Q = 36, P = ATC = $27 and output is below the minimum-ATC quantity of 50. Entry has removed economic profit, not excess capacity. Productive efficiency requires minimum ATC; covering AVC alone is insufficient for long-run survival."
+  }
+}

@@ -12,4 +12,10 @@ export const getRun=page=>page.evaluate(async()=>(await import('./game.js')).exp
 export const waitMaps=page=>page.waitForFunction(()=>[...document.querySelectorAll('.city-map')].every(e=>e.dataset.levels));
 
 
-export async function enterChoice(page){if(await page.locator('#start-game').isVisible())await page.locator('#start-game').click();}
+// Seed only the assignment draw; rival selection still uses the page's RNG.
+export async function startCity(page,id='rivermark',trigger='#start-game'){
+  await page.locator(trigger).waitFor({state:'visible'});
+  await page.waitForFunction(selector=>{const button=document.querySelector(selector);return button&&!button.disabled;},trigger);
+  await page.evaluate(id=>{const random=Math.random;let first=true;Math.random=()=>{if(first){first=false;return id==='meridian'?.1:.9;}return random();};},id);
+  await page.locator(trigger).click();await waitMaps(page);
+}

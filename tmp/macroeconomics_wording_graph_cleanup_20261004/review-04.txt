@@ -1,0 +1,359 @@
+PG3-AD-M-004 [medium] {'decision': 'KEEP GRAPH', 'graph_evidence': 'AD1 left of AD0.', 'decision_reason': None}
+Which event best matches the shift from AD0 to AD1?
+A   Foreign income rises, increasing demand for domestic exports.
+B   Production becomes less costly after an input-price decline.
+C * Firms reduce planned investment as their sales outlook weakens.
+D   The domestic price level rises along an unchanged AD curve.
+FB AD1 lies left of AD0. A weaker investment outlook reduces spending at each price level. Export growth would shift demand right, and a change in the price level alone moves along AD.
+
+PG3-AD-L-002 [legendary] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Leftward net AD displacement.', 'decision_reason': None}
+Falling confidence reduces consumption while higher government purchases raise spending. The result is the change from AD0 to AD1. What can be inferred about these competing effects?
+A   The purchases increase is larger; the graph gives their net effect, not each separate amount.
+B * The consumption reduction is larger; the graph gives their net effect, not each separate amount.
+C   The consumption reduction is larger; its full amount equals the horizontal distance between the curves.
+D   The two effects are equal; the distance between the curves reflects only a lower price level.
+FB AD1 lies left of AD0, so the negative consumption effect dominates. The distance measures the net change at a common price, not either gross effect. A price-level change would be a movement along a curve.
+
+ECON-SP-ELITE-341 [elite] {'decision': 'KEEP GRAPH', 'graph_evidence': 'AD2-AS2 at Y2/P2 and AD2-AS1 at Y1/P3.', 'decision_reason': None, 'advanced_inference': {'type': 'diagnosis', 'new': 'Reject inferring a demand shock solely from an output decline.'}}
+The economy begins at AD2-AS2. Higher input costs then move supply to AS1 while demand stays fixed. A commentator says the resulting output loss proves demand must also have fallen. Does the graph support that claim?
+A * No. Output falls from Y2 to Y1 while the price level rises from P2 to P3; a supply contraction can produce both changes.
+B   No. Output falls from Y1 to Y3 while the price level rises from P1 to P2; a supply contraction can produce both changes.
+C   Yes. The move from Y2/P2 to Y1/P3 requires a demand contraction because supply alone changes only prices.
+D   Yes. The move from Y2/P2 to Y1/P3 shows that lower spending is the cause of every fall in equilibrium output.
+FB On fixed AD2, AS2 to AS1 changes equilibrium from Y2/P2 to Y1/P3. Costlier production lowers output and raises the price level without a demand decline; output alone does not identify the shock.
+
+ECON-SP-ELITE-340 [medium] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Initial and adverse-supply intersections.', 'decision_reason': None}
+Starting at AD1-AS2, higher input costs reduce short-run aggregate supply. Which outcome in the graph illustrates stagflation?
+A * Y3/P2: lower output and a higher price level.
+B   Y1/P3: lower output and a higher price level.
+C   Y3/P2: lower output caused by weaker aggregate demand.
+D   Y2/P2: higher output caused by improved productive capacity.
+FB AD1-AS2 is Y1/P1. Moving to AS1 with AD1 fixed gives Y3/P2: output falls and the price level rises. That combination is the adverse-supply pattern, not a demand recession.
+
+ECON-SP-ELITE-312 [elite] {'decision': 'KEEP GRAPH', 'graph_evidence': 'All three intersections and the LRAS benchmark.', 'decision_reason': None, 'advanced_inference': {'type': 'policy evaluation', 'new': 'Evaluate whether restoring output also restores the pre-shock economy.'}}
+An oil shock moves the economy from AD1-AS2 to AD1-AS1. Policymakers then move demand to AD2. A claim says this response restores the economy to its original condition. What does the diagram show?
+A * Output returns to Y1, but prices reach P3 rather than P1; restoring output does not reverse the supply shock.
+B   Output rises to Y2 and prices reach P2; the response overshoots the original output level.
+C   Output returns to Y1 and prices reach P3; this means productive capacity has increased enough to undo the oil shock.
+D   Output remains at Y3 with prices at P2; the stimulus only prevents a further output decline.
+FB The original equilibrium is Y1/P1; the supply shock gives Y3/P2; AD2-AS1 gives Y1/P3. Demand support offsets the output loss at a higher price level and does not restore the original supply conditions.
+
+ECON-SP-ELITE-339 [elite] {'decision': 'KEEP GRAPH', 'graph_evidence': 'AD1-AS2 versus AD2-AS1; directions of both shifts.', 'decision_reason': None}
+Starting at AD1-AS2, the economy ends at AD2-AS1. Which combination of shocks explains the unchanged output level and the change in prices shown?
+A * An adverse supply shock and demand stimulus offset in output, while both raise the price level.
+B   A favorable supply shock and demand restraint offset in output, while both lower the price level.
+C   An adverse supply shock and demand restraint reinforce the output loss while their price effects offset.
+D   Demand stimulus alone raises prices while output stays at potential immediately because short-run supply is vertical.
+FB The figure moves from Y1/P1 to Y1/P3. AS shifts left and AD shifts right, with opposing output effects of the depicted sizes. Both shifts raise prices. Unchanged output does not imply that neither curve changed.
+
+ECON-SP-HARD-216 [hard] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Y2 relative to LRAS at Y1; endpoint on AD2.', 'decision_reason': None}
+At AD2-AS2, demand and productive capacity remain unchanged. How would wage adjustment move the economy toward long-run equilibrium?
+A * Wages rise; SRAS contracts, bringing output toward Y1 and prices toward P3.
+B   Wages fall; SRAS expands, bringing output toward Y2 and prices toward P1.
+C   Wages rise; demand contracts, bringing output toward Y1 and prices toward P3.
+D   Wages fall; lower production costs bring output toward Y1 while LRAS shifts left.
+FB The starting output Y2 exceeds potential Y1. Upward wage and expected-price pressure shifts SRAS from AS2 toward AS1. On AD2 the long-run endpoint is Y1/P3; capacity and demand need not change.
+
+ECON-SP-HARD-217 [hard] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Recessionary gap and wage-only endpoint.', 'decision_reason': None}
+The economy is at AD1-AS1. If demand and potential output do not change, how would flexible wages help close the gap shown?
+A * Lower wages shift SRAS right, raising output from Y3 toward Y1 and lowering prices toward P1.
+B   Higher wages shift SRAS left, lowering output from Y2 toward Y1 and raising prices toward P3.
+C   Lower wages shift LRAS right, raising potential output from Y3 to Y1.
+D   Lower wages shift AD right, moving output from Y3 to Y1 at a higher price level.
+FB The graph places current output at Y3, left of potential Y1. Lower wage costs move AS1 toward AS2. The resulting Y1/P1 is reached along AD1, without a capacity change.
+
+ECON-SP-HARD-218 [hard] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'The economic task is self-contained; adding graph labels would add a redundant lookup rather than evidence.'}
+A tax increase reduces consumption and aggregate demand. Productive capacity is unchanged, and equilibrium output falls below potential. What kind of gap has opened, and through which curve did the tax increase create it?
+A * A recessionary gap caused by a leftward AD shift.
+B   An inflationary gap caused by a rightward AD shift.
+C   A recessionary gap caused by a leftward LRAS shift.
+D   An inflationary gap caused by a movement up an unchanged AD curve.
+FB Lower consumption shifts AD left. With potential output unchanged, the resulting output shortfall is a recessionary gap.
+
+ECON-SP-LEGENDARY-9003 [legendary] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Delayed-policy endpoint Y3/P2 versus the original Y1/P1.', 'decision_reason': None}
+Refer to the graph with LRAS. Starting at AD1-AS2, a lasting demand expansion moves AD to AD2. Wage adjustment then moves SRAS all the way to AS1. Only after this adjustment does a delayed fiscal contraction return AD to AD1. With wages slow to change again, why does this delayed action fail to restore the original equilibrium immediately?
+A * It ends at Y3/P2; returning to Y1/P1 now requires wage and cost adjustment toward AS2.
+B   It ends at Y2/P2; returning to Y1/P1 now requires wage and cost adjustment toward AS2.
+C   It ends at Y3/P2; that is the new potential output because the earlier wage adjustment shifted LRAS.
+D   It ends at Y1/P1; restoring the old demand curve is sufficient even though supply has changed.
+FB The sequence is AD1-AS2 at Y1/P1, AD2-AS2 at Y2/P2, AD2-AS1 at Y1/P3, then AD1-AS1 at Y3/P2. After wages adjusted to the demand expansion, simply restoring old demand creates a new recessionary gap. Subsequent lower wage and expected-price pressures can return SRAS toward AS2.
+
+ECON-SP-LEGENDARY-9004 [legendary] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Separate counterfactual intersections and AD2-AS2 relative to LRAS.', 'decision_reason': None}
+The economy starts at AD1-AS1. Officials choose between allowing wage adjustment to AS2 and expanding demand to AD2. What happens if the full demand expansion takes effect after wage adjustment has already reached AS2?
+A * It reaches Y2/P2, above potential; a stimulus sized for the original gap is excessive after self-correction.
+B   It reaches Y3/P2, below potential; the full stimulus is insufficient after the supply adjustment.
+C   It reaches Y2/P2, the new potential; combining the policies permanently raises productive capacity.
+D   It reaches Y1/P3; prior wage adjustment has no effect on the endpoint of a fixed demand expansion.
+FB Either change alone can reach Y1 from the initial gap. Together AD2 and AS2 intersect at Y2/P2, above LRAS. The demand intervention should be reassessed after the supply adjustment.
+
+PM2D1-LRADJ-EB-002 [easyBoss] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'The Easy task tests wage-based self-correction. Extra labeled endpoints would add graph work without improving that concept check.'}
+An economy produces below potential while aggregate demand remains unchanged. Which wage adjustment would help close the recessionary gap?
+A   Rising wages reduce costs and shift SRAS right toward potential output.
+B   Falling wages shift AD left and reduce the output gap.
+C   Rising wages raise potential output by shifting LRAS right.
+D * Falling wages reduce costs and shift SRAS right toward potential output.
+FB A recessionary gap puts downward pressure on wages. Lower labor costs increase short-run aggregate supply, allowing output to rise toward unchanged potential.
+
+PM2D1-LRADJ-L-001 [hard] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Initial Y2/P2 and final Y1/P3 on fixed AD2.', 'decision_reason': None}
+Demand has moved the economy to AD2-AS2. With AD2 and productive capacity unchanged, how do the short-run and long-run outcomes compare?
+A * Output falls from Y2 to Y1 as wage costs adjust; the price level rises from P2 to P3.
+B   Output rises from Y3 to Y1 as wage costs adjust; the price level falls from P2 to P1.
+C   Output falls from Y2 to Y1 because potential output falls; the price level rises from P2 to P3.
+D   Output stays at Y2 because the demand expansion permanently raises capacity; prices stay at P2.
+FB Y2 is above the fixed potential level Y1. Wage and expectation adjustment contracts SRAS toward AS1, leaving output at Y1 and prices at P3. The short-run demand-driven output gain is temporary.
+
+PM2D1-LRADJ-LB-002 [legendaryBoss] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'The economic task is self-contained; adding graph labels would add a redundant lookup rather than evidence.'}
+An economy is below potential, and falling wages begin to increase short-run aggregate supply. Before adjustment is complete, aggregate demand falls further. Without knowing the sizes of these changes, what can be predicted about output?
+A * The wage adjustment supports recovery, but the additional demand loss makes the net output change uncertain.
+B   Falling wages guarantee a return to potential before the demand decline can affect output.
+C   The demand decline guarantees falling output even if the supply response is larger.
+D   Both changes reduce potential output because both shift long-run aggregate supply.
+FB Lower wage costs support output, while the new demand decline reduces it. Their relative sizes determine the net movement. Neither change by itself establishes a loss of productive capacity.
+
+PM2D1-LRADJ-MB-004 [mediumBoss] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'The economic task is self-contained; adding graph labels would add a redundant lookup rather than evidence.'}
+Output is below unchanged potential, but nominal wages are fixed by contracts for one year. Officials predict an immediate recovery caused solely by lower wages. What is wrong with this forecast?
+A   The timing is reasonable, but lower wages would contract short-run supply.
+B * The direction is reasonable, but the stated contracts prevent this wage adjustment from occurring immediately.
+C   The forecast fails because returning to potential requires lower productive capacity.
+D   The forecast is valid because fixed wage contracts have no effect on the timing of cost adjustment.
+FB Lower wages could reduce costs and expand short-run supply, but the stipulated contracts prevent that wage channel from operating immediately. The expected direction does not establish the timing.
+
+PG3-AS-L-001 [legendary] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'The economic task is self-contained; adding graph labels would add a redundant lookup rather than evidence.'}
+A temporary energy bottleneck and a permanent loss of equipment both reduce short-run aggregate supply. Once energy costs normalize, what additional evidence is needed to predict whether wage adjustment can restore the old level of potential output?
+A   Whether the price level initially rose; any price rise proves that LRAS stayed fixed.
+B * Whether productive capacity was restored and LRAS retained its old position; the SRAS-only drawing does not establish that.
+C   Whether actual GDP fell; any actual output loss permanently lowers potential output by the same amount.
+D   Whether demand policy can raise spending; a rightward AD shift by itself restores lost productive capacity.
+FB Lower energy costs can reverse a temporary supply restraint. Destroyed equipment may leave productive capacity lower, so restoring the old output level requires evidence that capacity was restored; wage adjustment alone does not replace equipment.
+
+PG3-AS-L-002 [legendary] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'The economic task is self-contained; adding graph labels would add a redundant lookup rather than evidence.'}
+Lower expected prices and a lasting productivity gain both increase short-run aggregate supply. If expected prices return to their original level while the productivity gain remains, what can be predicted?
+A   SRAS must return to its original position because expected prices returned, regardless of productivity.
+B   SRAS cannot move again because a lasting productivity gain prevents expectation effects.
+C   Potential output must fall because higher expected prices erase the physical productivity gain.
+D * Some supply increase can remain, and potential output can be higher; the exact final SRAS position depends on the two contributions.
+FB Returning expected prices reverses only that contribution to SRAS. The productivity gain can still support higher supply and potential output. The final SRAS position depends on the sizes of the original contributions.
+
+PG3-AS-M-002 [medium] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Direction of AS0-to-AS1 displacement.', 'decision_reason': None}
+Which event best matches the shift from AS0 to AS1?
+A   Lower wage costs make production more profitable at each price level.
+B   Stronger consumer confidence raises planned spending.
+C * An increase in input prices raises production costs.
+D   A lower price level reduces output along the original supply curve.
+FB AS1 lies above and left of AS0, indicating less output supplied at each price level. Higher input costs can produce that contraction; lower costs would move supply the other way.
+
+PG3-AS-M-004 [medium] {'decision': 'KEEP GRAPH', 'graph_evidence': 'AS1 below/right of AS0.', 'decision_reason': None}
+Which change could explain the shift from AS0 to AS1 in the diagram?
+A * Lower input costs increase short-run aggregate supply.
+B   Higher expected prices reduce short-run aggregate supply.
+C   Higher government purchases increase aggregate demand.
+D   A higher current price level raises output along AS0.
+FB AS1 lies below and right of AS0, so more output is supplied at each price. Lower input costs can explain this shift. Higher expected prices would shift SRAS in the opposite direction.
+
+ECON-SP-ELITE-349 [hard] {'decision': 'KEEP GRAPH', 'graph_evidence': 'b/d/c relative to LRPC and both SRPCs.', 'decision_reason': None}
+What does the path b to d to c show about disinflation when expected inflation adjusts gradually?
+A * Unemployment temporarily rises from U2 to U3, then returns to U2 as expectations fall.
+B   Unemployment temporarily falls from U2 to U1, then returns to U2 as expectations rise.
+C   Unemployment rises from U2 to U3 because disinflation permanently raises the natural rate.
+D   Unemployment returns from U3 to U2 through a rise in demand along the unchanged upper SRPC.
+FB The path first moves down SRPC2 from b to d, raising unemployment to U3. Falling expected inflation then shifts the short-run curve down, reaching c at the unchanged natural rate U2.
+
+ECON-SP-LEGENDARY-9047 [legendary] {'decision': 'KEEP GRAPH', 'graph_evidence': 'c and d at I1 on different SRPCs.', 'decision_reason': None}
+After moving from b to d, inflation is held at the rate shown at d. Supply conditions and natural unemployment stay unchanged. A forecast predicts a return to the natural rate. Which expectation adjustment is consistent with the diagram?
+A * Expected inflation falls, shifting the short-run curve through c; staying on SRPC2 would leave the economy at d.
+B   Expected inflation rises, shifting the short-run curve through b; staying on SRPC1 would leave the economy at a.
+C   Expected inflation falls, shifting the short-run curve through c; this permanently lowers natural unemployment from U3 to U2.
+D   Expected inflation is unchanged; demand growth alone moves d to c along SRPC2.
+FB At the fixed lower inflation rate, c is on SRPC1 at natural unemployment U2, while d remains on SRPC2 at U3. With the supply offset fixed, lower expectations are needed to change the short-run curve.
+
+ECON-SP-MEDIUMBOSS-3010 [mediumBoss] {'decision': 'KEEP GRAPH', 'graph_evidence': 'c lies on lower SRPC; d on original upper SRPC.', 'decision_reason': None}
+Starting at b, policymakers reduce inflation. Why could the economy reach c directly instead of first passing through d?
+A   Expectations and wage contracts adjust promptly to higher inflation, so the upper SRPC applies immediately.
+B * Expectations and wage contracts adjust promptly to lower inflation, so the lower SRPC applies immediately.
+C   Expectations stay fixed, and moving along SRPC2 takes the economy directly from b to c.
+D   A change in demand lowers the natural rate, turning d into the new long-run equilibrium.
+FB The graph places c on the lower SRPC at the same natural unemployment rate as b. Reaching c immediately requires lower expected inflation and prompt contract adjustment; demand restraint with old expectations leads to d.
+
+PM2B3-POL-FB-006 [finalBoss] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'The economic task is self-contained; adding graph labels would add a redundant lookup rather than evidence.'}
+A low-capital economy could earn high marginal returns from investment, but unreliable contract enforcement deters investors. Why might improving enforcement alongside investment be more effective than subsidizing machines alone?
+A * It addresses investors' ability to retain returns as well as the cost of adding capital.
+B   Machine subsidies already eliminate any risk that investors will lose their returns.
+C   Improved enforcement raises the capital stock immediately without requiring investment.
+D   High marginal returns remove the need for either reliable institutions or investment finance.
+FB High physical returns do not guarantee investment when investors cannot retain the proceeds. Better enforcement addresses that incentive constraint and complements capital accumulation; it does not itself create machines or guarantee catch-up.
+
+PM2B3-POL-H-001 [hard] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'The economic task is self-contained; adding graph labels would add a redundant lookup rather than evidence.'}
+With technology and other inputs fixed, successive increases in capital per worker produce smaller additions to output per worker. What does this imply for a policy that relies on capital accumulation alone?
+A * It can raise the level of output, but sustaining productivity growth also requires improvements beyond physical capital alone.
+B   It cannot raise output after the first investment because diminishing returns mean a zero marginal product.
+C   It lowers output as soon as marginal gains become smaller than earlier gains.
+D   It preserves the initial output growth rate indefinitely if the same amount of capital is added each year.
+FB Capital deepening raises output per worker, but diminishing marginal returns limit repeated gains. Sustained productivity growth requires continuing improvements such as technology or human capital; additional physical capital does not become useless.
+
+PM2B3-POL-LB-001 [legendaryBoss] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'The economic task is self-contained; adding graph labels would add a redundant lookup rather than evidence.'}
+A planner proposes ever larger additions to capital per worker to sustain the initial productivity growth rate indefinitely. Technology and all other productivity determinants remain fixed, and capital has diminishing marginal returns. What weakness in the plan separates a level gain from sustained growth?
+A   The plan fails because diminishing returns mean further capital reduces total output per worker.
+B   The plan succeeds because a higher productivity level continues growing even after capital accumulation stops.
+C   The plan succeeds because larger capital stocks prevent marginal returns from diminishing.
+D * The plan assumes capital deepening can sustain its early gains despite diminishing marginal returns and unchanged technology.
+FB Capital additions still raise output, but each unit contributes less. A catch-up increase in the productivity level does not establish a self-sustaining growth mechanism with other productivity determinants fixed.
+
+ECON-SP-HARD-228 [hard] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'The existing figure has symbolic output labels; all numerical inputs would still come from the stem. A curve-label add-on would not improve the multiplier-versus-total-offset reasoning.'}
+At a fixed price level, initial desired output is $500 billion. Government purchases rise by $40 billion and MPC is 0.5. Crowding out creates a total $20 billion AD offset, already including induced effects. Under the simple spending multiplier, what is the new quantity of output demanded?
+A * $560 billion; subtract the already-total offset from the multiplied spending increase.
+B   $540 billion; subtract the offset from purchases before multiplying both amounts.
+C   $580 billion; the offset does not affect demand after the multiplier operates.
+D   $620 billion; add the offset to the multiplied spending increase.
+FB The spending multiplier is 2, so the gross demand increase is $80 billion. Subtract the already-total $20 billion offset once, leaving a $60 billion net increase and $560 billion demanded. Without supply information, this is not a prediction of equilibrium output.
+
+ECON-SP-HARD-229 [medium] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Ordering of all three AD curves.', 'decision_reason': None}
+Government purchases and induced spending move demand from AD1 to AD3. If crowding out leaves demand at AD2, how much of the original expansion has been offset?
+A * Part of it: final demand remains above AD1 but below AD3.
+B   More than all of it: final demand lies below the original AD1.
+C   None of it: the distance from AD2 to AD3 is additional induced spending.
+D   All of it: reaching AD2 means spending has returned to its initial curve.
+FB At a common price AD2 lies between AD1 and AD3. Crowding out reduces the gross expansion but does not reverse it. Identifying the offset requires distinguishing the original, gross and final demand positions.
+
+ECON-SP-LEGENDARY-9024 [hard] {'decision': 'KEEP GRAPH', 'graph_evidence': 'AD1/AD2/AD3 ordering and the meanings of the stipulated stages.', 'decision_reason': None}
+A purchases change first moves AD1 to AD2; induced consumption then moves demand to AD3. Higher interest rates subsequently reduce private spending. Which account fits the directions shown?
+A * The direct and induced effects expand demand; the interest-rate effect partly offsets that expansion.
+B   The direct and induced effects contract demand; the interest-rate effect partly offsets that contraction.
+C   The direct and induced effects expand demand; the later private-spending decline is another multiplier expansion.
+D   The first demand change is induced consumption; the second is the original purchases impulse.
+FB AD2 is right of AD1 and AD3 farther right. The first shift is the direct purchases effect, the next is induced spending, and the reduction in private spending is crowding out. The initial impulse must not be confused with the rounds it induces.
+
+LG-Q-9142 [legendaryboss] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'The economic task is self-contained; adding graph labels would add a redundant lookup rather than evidence.'}
+A $60 billion tax cut has an MPC of 0.75; an alternative policy raises government purchases by $45 billion. With the same spending multiplier and no crowding out, how do their effects on aggregate demand and their budget costs compare?
+A   Both first-round impulses are $60 billion and total shifts $240 billion, because taxes and purchases are identical
+B   The tax cut adds only $45 billion in total, while purchases receive induced spending
+C * Both first-round impulses are $45 billion and total shifts $180 billion, although the budget costs differ
+D   The tax cut first adds $60 billion and ultimately $240 billion, while purchases add only $180 billion
+FB The tax cut initially raises consumption by 0.75 × $60 billion = $45 billion. Purchases also add $45 billion directly. Multiplying each by 4 gives $180 billion in total, but the tax cut costs the budget $60 billion versus $45 billion for purchases.
+
+PMOE-FX-L-002 [legendary] {'decision': 'KEEP GRAPH', 'graph_evidence': 'A/B exchange rates 1.0 and 1.2.', 'decision_reason': None}
+Foreign demand causes the shift from D0 to D1. With domestic and foreign price levels fixed, how does the exchange-rate response shown affect the original export stimulus?
+A * The dollar appreciates 20%, making domestic goods dearer abroad and partly restraining the rise in net exports.
+B   The dollar appreciates 50%, making domestic goods dearer abroad and partly restraining the rise in net exports.
+C   The dollar appreciates 20%, making domestic goods cheaper abroad and reinforcing the rise in net exports.
+D   The dollar appreciates 20%, which establishes that the entire initial increase in export demand is canceled.
+FB The rate rises from 1.0 to 1.2 foreign-currency units per dollar, a 20% appreciation. At fixed price levels this also is real appreciation, which restrains net exports along the new relationship. It does not measure the size of the original demand shift or prove a full offset.
+
+PMOE-FX-B3-003 [hard] {'decision': 'KEEP GRAPH', 'graph_evidence': 'A=(100,1.0), B=(150,0.8).', 'decision_reason': None}
+The dollar market moves from A to B. An importer faces an unchanged foreign-currency price. How do the dollar, traded quantity and dollar cost of the import change?
+A   The dollar depreciates 25%, quantity rises 50%, and the import costs about 33.3% more in dollars.
+B   The dollar depreciates 20%, quantity rises 50%, and the import costs 20% more in dollars.
+C * The dollar depreciates 20%, quantity rises 50%, and the import costs 25% more in dollars.
+D   The dollar depreciates 20%, quantity rises about 33.3%, and the import costs 25% less in dollars.
+FB The graph gives e: 1.0 to 0.8 and quantity: 100 to 150. Thus e falls 20% and quantity rises 50%. An unchanged foreign price costs 1/0.8 = 1.25 times as many dollars. Reciprocal percentage changes are not symmetric.
+
+PMOE-FX-L-003 [legendary] {'decision': 'KEEP GRAPH', 'graph_evidence': 'S0/S1 and A/B directions.', 'decision_reason': None}
+The dollar market changes from the solid curves to the dashed curve, with price levels fixed. Lower domestic real returns and higher domestic political risk are proposed explanations. What does the figure establish, and what remains unresolved?
+A   Dollar supply falls and the dollar appreciates; separate return or risk evidence is needed to distinguish the causes.
+B   Dollar supply rises and the dollar depreciates; the downward rate change rules out a rise in political risk.
+C   Dollar demand rises and the dollar depreciates; depreciation identifies lower domestic returns as the only cause.
+D * Dollar supply rises and the dollar depreciates; separate return or risk evidence is needed to distinguish the causes.
+FB S1 lies right of S0, and B has a lower exchange rate and greater quantity than A. With fixed prices this is also real depreciation. Both lower returns and greater risk can encourage foreign-asset purchases; the figure does not separately identify them.
+
+PMOE-FX-EL-002 [elite] {'decision': 'KEEP GRAPH', 'graph_evidence': 'D0/D1 distinction and A/B quantities.', 'decision_reason': None}
+A report claims that dollar demand did not change between A and B because the final exchange rate is unchanged. What does the diagram show, and does it reveal which market shift occurred first?
+A   Quantity rises from 100 to 150 and D1 differs from D0; the final equilibrium does not identify the order of the shifts.
+B   Quantity rises from 100 to 200 and D1 differs from D0; the unchanged final rate proves demand shifted first.
+C   Quantity rises from 100 to 200, but an unchanged exchange rate means the demand curve remained fixed.
+D * Quantity rises from 100 to 200 and D1 differs from D0; the final equilibrium does not identify the order of the shifts.
+FB The figure shows both curves shifting right and quantity doubling from 100 to 200 at rate 1.0. Offsetting effects on the rate do not mean unchanged demand. The final curves reveal no chronology.
+
+PMOE-FX-LB-003 [legendary] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Unlabeled intermediate intersections near rates 1.2 and 0.8.', 'decision_reason': None}
+Compare demand-first and supply-first adjustment from the solid to the dashed curves. Each market clears before the second shift. Approximately how do the intermediate exchange rates differ, and does the order change the final equilibrium?
+A   Demand first gives 1.4 and supply first 0.6; both paths end at B once both shifts occur.
+B * Demand first gives 1.2 and supply first 0.8; both paths end at B once both shifts occur.
+C   Demand first gives 1.2 and supply first 0.8; these different temporary rates imply different final equilibria.
+D   Both intermediate rates are 1.0; an unchanged final rate rules out a temporary exchange-rate response.
+FB D1 intersects S0 near 1.2, while D0 intersects S1 near 0.8. The two sequences therefore have different temporary rates but the same final D1-S1 intersection at B. Endpoint evidence cannot establish an unchanged path.
+
+PMOE-FX-M-006 [medium] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'The unmarked asset adds no discriminating evidence to an equilibrium-definition task. Text directly tests market clearing without invented markers or color lookup.'}
+What condition defines equilibrium in the market for U.S. dollars?
+A   The exchange rate equals the value at which demand for dollars would fall to zero.
+B   Everyone buying dollars has the same reason for doing so as everyone selling dollars.
+C   The quantity of dollars supplied stays fixed regardless of the quantity demanded.
+D * The quantity of dollars demanded equals the quantity supplied at the prevailing exchange rate.
+FB At the equilibrium exchange rate, the quantity of dollars people want to buy equals the quantity they want to sell. Equality of quantities at that rate, rather than identical motives or curve intercepts, clears the market.
+
+PMOE-FX-LB-001 [legendary] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Final intersection rightward at unchanged vertical level.', 'decision_reason': None}
+Foreign export demand shifts D0 to D1 and residents' foreign-asset purchases shift S0 to S1. Foreign purchases of domestic assets are unchanged. What can be inferred from the diagram and the separate asset-flow information?
+A   The exchange rate rises and gross dollar quantity rises; the asset flows imply higher NCO and therefore higher NX.
+B   The exchange rate is unchanged and gross dollar quantity rises; the increase in gross quantity directly measures the increase in NCO.
+C   The exchange rate is unchanged and gross dollar quantity rises; the unchanged rate implies unchanged NCO despite the asset flows.
+D * The exchange rate is unchanged and gross dollar quantity rises; the asset flows imply higher NCO and therefore higher NX.
+FB The final intersection is farther right at the same rate. NCO rises because residents buy more foreign assets with foreign purchases of domestic assets unchanged. In consistent accounts NX equals NCO; gross FX turnover itself is not a measure of that net flow.
+
+PMOE-POL-M-003 [medium] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Rates at A/B and quotation convention.', 'decision_reason': None}
+As NCO-determined supply changes from S0 to S1, how does the dollar change in value?
+A   It appreciates 20%, because the foreign-currency price of a dollar rises from 1.0 to 1.2.
+B * It appreciates 50%, because the foreign-currency price of a dollar rises from 1.0 to 1.5.
+C   It depreciates 50%, because a dollar buys 1.5 rather than 1.0 foreign-currency units.
+D   Its value is unchanged; the smaller quantity of dollars supplied affects trading volume alone.
+FB The graph moves from A at 1.0 to B at 1.5 foreign-currency units per dollar. Each dollar buys more foreign currency, so it appreciates by 50%. The lower NCO-determined quantity is consistent with that rise.
+
+PMOE-POL-B2-001 [medium] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Leftward NCO-determined supply shift.', 'decision_reason': None}
+Which fiscal-policy transmission could explain the change from S0 to S1 in this foreign-exchange diagram?
+A * A larger deficit raises domestic real rates, reduces NCO and lowers the dollar supply.
+B   A smaller deficit lowers domestic real rates, increases NCO and raises the dollar supply.
+C   A larger deficit raises domestic real rates and increases residents' purchases of foreign assets.
+D   A smaller deficit directly raises foreign demand for domestic exports, shifting dollar supply.
+FB S1 is left of S0, indicating lower NCO-determined dollar supply. A larger deficit can reduce national saving, raise real rates and discourage net capital outflow. The currency-market effect comes through asset transactions, not a direct shift in export demand.
+
+ECON-SP-LEGENDARYBOSS-9114 [elite] {'decision': 'CONVERT TO TEXT-ONLY', 'graph_evidence': None, 'decision_reason': 'The economic task is self-contained; adding graph labels would add a redundant lookup rather than evidence.'}
+A monetary contraction reduces investment by $40 billion in an economy already below potential. MPC is 0.75. A timely fiscal program adds a total $100 billion to aggregate demand after induced effects. What is the net demand change, and does the fiscal program fully offset the monetary contraction?
+A * AD still falls $60 billion; the fiscal offset softens but does not reverse the contractionary monetary chain
+B   AD rises $60 billion; any positive fiscal offset reverses the money-market contraction
+C   AD rises $240 billion; multiply the already-total fiscal offset by four again
+D   AD falls $160 billion; a fiscal offset cannot affect the same AD curve
+FB The investment decline reduces demand by $40/(1 − 0.75) = $160 billion. The already-total fiscal effect offsets $100 billion of that loss, leaving a $60 billion contraction. Applying the multiplier again to the fiscal total would double-count induced spending.
+
+ECON-SP-FINALBOSS-4006 [elite] {'decision': 'KEEP GRAPH', 'graph_evidence': 'LRAS at Y1 versus actual Y2; final intersection.', 'decision_reason': None}
+Demand expands from AD1-AS2 to AD2-AS2. An analyst calls the new output level permanent capacity growth. If demand then stays at AD2, what does the graph imply?
+A   Potential remains Y3; rising wage costs move SRAS toward AS1, removing the temporary output gain.
+B   Potential remains Y1; wage adjustment closes the gap by shifting AD2 back to AD1.
+C * Potential remains Y1; rising wage costs move SRAS toward AS1, removing the temporary output gain.
+D   Potential rises to Y2; reaching that output through demand expansion permanently moves LRAS.
+FB LRAS remains at Y1, while AD2-AS2 is at Y2. Above-potential output raises wage and expected-price pressure, shifting SRAS left toward AS1 and returning output to Y1 on fixed AD2.
+
+ECON-SP-LEGENDARYBOSS-9103 [legendary] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Current Y2 and LRAS at Y1.', 'decision_reason': None}
+At AD2-AS2, officials call the increase in output permanent capacity growth. There is no resource or technology change, AD2 stays fixed, and expected prices rise. How do the AD-AS and Phillips-curve models challenge their claim?
+A   Output returns to Y3 as SRAS moves toward AS1; rising expected inflation also removes the temporary below-natural unemployment gain.
+B   Output returns to Y1 as SRAS moves toward AS1; this means the natural unemployment rate permanently rises.
+C * Output returns to Y1 as SRAS moves toward AS1; rising expected inflation also removes the temporary below-natural unemployment gain.
+D   Output stays at Y2 as LRAS moves right; rising expected inflation permanently increases productive capacity.
+FB The graph places LRAS at Y1, not the demand-driven Y2. Higher wage and price expectations move SRAS left with AD2 fixed. In the Phillips model, the upward expectations adjustment returns unemployment to the unchanged natural rate.
+
+ECON-SP-LEGENDARYBOSS-9102 [legendary] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Counterfactual outcomes Y3/P2 and Y1/P3 versus original Y1/P1.', 'decision_reason': None}
+An adverse supply shock moves the economy from AD1-AS2 to AD1-AS1. While AS1 persists, compare keeping AD1 with expanding demand to AD2. How should the output-restoration claim be evaluated?
+A   Expansion reaches Y2/P3 instead of Y1/P2; it overshoots potential and leaves prices above the original P1.
+B   Expansion reaches Y1/P3 instead of Y3/P2; returning to Y1 proves that the original supply conditions have been restored.
+C   Expansion reaches Y1/P1; recovering original output also restores the original price level despite AS1 remaining in place.
+D * Expansion reaches Y1/P3 instead of Y3/P2; it restores output but leaves prices above the original P1.
+FB At unchanged demand the supply shock gives AD1-AS1, Y3/P2. Accommodation gives AD2-AS1, Y1/P3. It offsets the output loss through greater demand, paying a further price-level increase rather than undoing the supply constraint.
+
+ECON-SP-LEGENDARYBOSS-9104 [legendary] {'decision': 'KEEP GRAPH', 'graph_evidence': 'Two recovery intersections and LRAS.', 'decision_reason': None}
+At AD1-AS1, wage expectations gradually fall with AD1 fixed. Alternatively, officials could move demand to AD2 before wages adjust. How do the two routes back toward potential compare?
+A   Wage adjustment reaches Y2/P1; demand support reaches Y2/P3. Equal output recovery need not give equal prices.
+B * Wage adjustment reaches Y1/P1; demand support reaches Y1/P3. Equal output recovery need not give equal prices.
+C   Wage adjustment reaches Y1/P1; demand support reaches Y1/P3. The latter must therefore have raised productive capacity.
+D   Both routes reach Y1/P1; once output is restored, the price level is independent of how recovery occurred.
+FB Falling wage/price expectations shift AS1 toward AS2: AD1-AS2 is Y1/P1. Before that adjustment, AD2-AS1 is Y1/P3. Both close the gap under the stated alternatives, with different price levels and timing.
+
+ECON-SP-FINALBOSS-4010 [legendary] {'decision': 'KEEP GRAPH', 'graph_evidence': 'a left of LRPC, I2 at a/b.', 'decision_reason': None}
+Demand surprise moves the economy from c to a. Officials promise to maintain the unemployment rate at a with inflation fixed at the rate shown there. With the natural rate unchanged, what happens as expectations catch up?
+A   The unemployment target is below U3; maintaining it requires renewed inflation surprises rather than fixed inflation I1.
+B   The unemployment target is U1; holding inflation at I2 permanently lowers the natural rate to that target.
+C   The unemployment target is U1; expected inflation shifts the short-run curve downward until fixed I2 sustains it.
+D * The unemployment target is below U2; maintaining it requires renewed inflation surprises rather than fixed inflation I2.
+FB Point a is U1/I2, left of natural unemployment U2. Once I2 is expected, b is the corresponding natural-rate equilibrium. Keeping unemployment below natural requires continuing inflation surprises, not the same fixed I2.
+
+ECON-SP-LEGENDARYBOSS-9107 [legendary] {'decision': 'KEEP GRAPH', 'graph_evidence': 'a/b relative to LRPC and their common inflation rate.', 'decision_reason': None}
+After the demand surprise c to a, compare repeatedly keeping unemployment at a with accepting b once its inflation rate is expected. What tradeoff does the graph illustrate?
+A   Keeping U2 requires renewed inflation surprises; accepting b returns unemployment to U3 while stabilizing inflation at I1.
+B   Keeping U1 requires renewed inflation surprises; accepting b permanently raises the natural rate from U1 to U2.
+C * Keeping U1 requires renewed inflation surprises; accepting b returns unemployment to U2 while stabilizing inflation at I2.
+D   Both strategies sustain U1 at I2 because the original demand surprise permanently changes the long-run tradeoff.
+FB a lies left of the LRPC at U2, while b lies on it at I2. Repeatedly pushing unemployment below natural requires inflation above updated expectations. Accepting b gives up the temporary employment gain without changing the natural rate.

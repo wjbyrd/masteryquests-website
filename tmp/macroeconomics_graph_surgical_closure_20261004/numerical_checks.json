@@ -1,0 +1,127 @@
+{
+  "P62D-ITP-L-095": {
+    "status": "PASS",
+    "method": "Subtract original and post-policy surplus triangles using plotted inverse demand and supply lines; cross-check the two distortion triangles.",
+    "consumer_loss": 450.0,
+    "producer_gain": 150.0,
+    "revenue_or_domestic_rents": 200.0,
+    "welfare_loss": 100.0,
+    "production_distortion": 50.0,
+    "consumption_distortion": 50.0,
+    "choices": [
+      {
+        "letter": "A",
+        "values_thousand_dollars": [
+          450.0,
+          150.0,
+          200.0,
+          100.0
+        ],
+        "welfare_identity": true,
+        "matches_graph": true
+      },
+      {
+        "letter": "B",
+        "values_thousand_dollars": [
+          500.0,
+          150.0,
+          200.0,
+          150.0
+        ],
+        "welfare_identity": true,
+        "matches_graph": false
+      },
+      {
+        "letter": "C",
+        "values_thousand_dollars": [
+          450.0,
+          150.0,
+          100.0,
+          200.0
+        ],
+        "welfare_identity": true,
+        "matches_graph": false
+      },
+      {
+        "letter": "D",
+        "values_thousand_dollars": [
+          450.0,
+          100.0,
+          200.0,
+          150.0
+        ],
+        "welfare_identity": true,
+        "matches_graph": false
+      }
+    ]
+  },
+  "P62D-ITP-L-098": {
+    "status": "PASS",
+    "method": "Subtract original and post-policy surplus triangles using plotted inverse demand and supply lines; cross-check the two distortion triangles.",
+    "consumer_loss": 712.5,
+    "producer_gain": 337.5,
+    "revenue_or_domestic_rents": 150.0,
+    "welfare_loss": 225.0,
+    "production_distortion": 112.5,
+    "consumption_distortion": 112.5,
+    "choices": [
+      {
+        "letter": "A",
+        "values_thousand_dollars": [
+          712.5,
+          337.5,
+          150.0,
+          225.0
+        ],
+        "welfare_identity": true,
+        "matches_graph": true
+      },
+      {
+        "letter": "B",
+        "values_thousand_dollars": [
+          825.0,
+          337.5,
+          150.0,
+          337.5
+        ],
+        "welfare_identity": true,
+        "matches_graph": false
+      },
+      {
+        "letter": "C",
+        "values_thousand_dollars": [
+          712.5,
+          337.5,
+          225.0,
+          150.0
+        ],
+        "welfare_identity": true,
+        "matches_graph": false
+      },
+      {
+        "letter": "D",
+        "values_thousand_dollars": [
+          712.5,
+          225.0,
+          150.0,
+          337.5
+        ],
+        "welfare_identity": true,
+        "matches_graph": false
+      }
+    ]
+  },
+  "ECON-SP-ELITE-320": {
+    "status": "PASS",
+    "exact_condition": "Y2 < Y3 - C < Y3 if and only if 0 < C < Y3 - Y2",
+    "graph_reading": "The drawn Y1-to-Y2 and Y2-to-Y3 widths are approximately equal; (Y3-Y2)/(Y3-Y1) is approximately 1/2. No absolute output values or exact numerical multiplier are asserted.",
+    "boundary_checks": [
+      "C=0 leaves demand at AD3, excluded.",
+      "C=Y3-Y2 leaves demand at AD2, excluded.",
+      "0<C<Y3-Y2 leaves a positive but reduced induced gain.",
+      "Y3-Y2<C<Y3-Y1 retains positive overall stimulus but fails the required region."
+    ],
+    "coordinate_only_counterexample": "A and B have the same graphical bound, but B incorrectly claims that positive crowding out leaves all induced spending intact.",
+    "theory_only_counterexample": "A and C use the same economic criterion with different fractions. Without the graph, the induced fraction of the total expansion is unknown."
+  }
+}

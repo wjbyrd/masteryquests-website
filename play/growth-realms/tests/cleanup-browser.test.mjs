@@ -1,8 +1,9 @@
+import {GAME_CONFIG as G} from '../config.js';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import {ROADS,DISTRICTS} from '../visual-config.js';
 import {fileURLToPath} from 'node:url';
-import {fillPlan,getRun,waitMaps} from './browser-helpers.mjs';
+import {startCity,fillPlan,getRun,waitMaps} from './browser-helpers.mjs';
 const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
 const out=fileURLToPath(new URL('../../../tmp/games-preview/growth-realms/cleanup-pass/',import.meta.url));
 await fs.mkdir(out,{recursive:true});
@@ -14,7 +15,7 @@ await page.addInitScript(()=>{Math.random=()=>.2;});
 const url='http://127.0.0.1:4178/play/growth-realms/';
 const shot=name=>page.screenshot({path:out+name+'.png'});
 const forbidden=/\bCPU\b|computer|AI manages|AI opponent|algorithm|building threshold|materials stored/i;
-async function choose(city){await page.goto(url);await page.locator('#start-game').click();await page.locator(`[data-choose="${city}"]`).click();await waitMaps(page);}
+async function choose(city){await page.goto(url);await startCity(page,city);await waitMaps(page);}
 async function fit(){
   const map=await page.locator('.city-map').boundingBox(),hud=await page.locator('#planning-hud').boundingBox();
   const targets=await page.locator('[data-map-district]').evaluateAll(es=>es.map(e=>({w:e.getBoundingClientRect().width,h:e.getBoundingClientRect().height})));
@@ -40,13 +41,10 @@ async function watchRoutes(duration){return page.evaluate(async duration=>{
 try{
   await page.goto(url);await page.waitForFunction(()=>document.querySelector('#hero-scene').dataset.ready);
   assert.equal(await getRun(page),null);
-  assert.equal((await page.locator('#title-screen').innerText()).replace(/\s+/g,' ').trim(),'GROWTH REALMS Start ahead. Catch up. Build your economy. Start Game → How to Play Field Guide');
+  assert.equal((await page.locator('#title-screen').innerText()).replace(/\s+/g,' ').trim(),'RIVAL CITIES MASTERY QUESTS Start Game');
   assert.ok(await page.locator('#hero-scene').evaluate(c=>c.getContext('2d').getImageData(0,0,c.width,c.height).data.some(v=>v>0)));
   await shot('01-title');
-  await page.locator('#open-how').click();assert.deepEqual(await page.locator('#how-to-play li').allTextContents(),['Choose a city.','Spend 20 development points each cycle.','Build, adapt, and compare your growth with the city across the river.']);await page.keyboard.press('Escape');
-  await page.locator('#landing-guide').click();assert.doesNotMatch(await page.locator('#help').innerText(),forbidden);await page.keyboard.press('Escape');
-  await page.locator('#start-game').click();assert.match(await page.locator('#city-choice').innerText(),/Advanced and productive\./);assert.match(await page.locator('#city-choice').innerText(),/More room to catch up\./);await shot('02-choice');
-  await page.locator('[data-choose="rivermark"]').click();await waitMaps(page);const rivermark=await fit();await shot('03-rivermark');
+  await startCity(page,'rivermark');await page.locator('#quick-guide').click();assert.doesNotMatch(await page.locator('#help').innerText(),forbidden);await page.keyboard.press('Escape');const rivermark=await fit();await shot('03-rivermark');
   await page.locator('[data-map-district="capital"]').click();assert.equal((await getRun(page)).allocation.capital,1);assert.match(await page.locator('#points-remaining').innerText(),/19/);
   assert.match(await page.locator('#upgrade-progress').innerText(),/NEXT UPGRADE\s+Factory\s+0 \/ 4 → 1 \/ 4 Capital points funded\s+3 more needed/);
   const marker=await page.locator('[data-map-district="capital"]').evaluate(e=>{const s=getComputedStyle(e,'::after');return{color:s.borderColor,radius:s.borderRadius};});assert.equal(marker.color,'rgb(255, 255, 255)');assert.equal(marker.radius,'50%');
@@ -73,9 +71,9 @@ try{
     depthEvidence[name]=evidence;await shot(name);
   }
   await page.emulateMedia({reducedMotion:'reduce'});
-  for(let n=1;n<=6;n++){await fillPlan(page,[5,5,5,5]);await page.locator('#quick-commit').click();await page.locator('#consequences').waitFor({state:'visible'});await page.locator('#quick-commit').click();}
-  await page.locator('#final-report').waitFor({state:'visible'});assert.equal((await getRun(page)).cities[0].history.length,6);assert.match(await page.locator('#final-report').innerText(),/Policy connection|growth policy/);assert.doesNotMatch(await page.locator('body').innerText(),forbidden);
-  await page.locator('[data-answer="potential"]').click();assert.ok((await page.locator('#transfer-feedback').innerText()).length>70);await page.locator('#replay').click();assert.equal(await getRun(page),null);assert.equal(await page.locator('#city-choice').isVisible(),true);
+  for(let n=1;n<=G.totalRounds;n++){await fillPlan(page,[5,5,5,5]);await page.locator('#quick-commit').click();await page.locator('#consequences').waitFor({state:'visible'});await page.locator('#quick-commit').click();}
+  await page.locator('#final-report').waitFor({state:'visible'});assert.equal((await getRun(page)).cities[0].history.length,G.totalRounds);assert.match(await page.locator('#final-report').innerText(),/Policy connection|growth policy/);assert.doesNotMatch(await page.locator('body').innerText(),forbidden);
+  await page.locator('[data-answer="potential"]').click();assert.ok((await page.locator('#transfer-feedback').innerText()).length>70);await page.locator('#replay').click();assert.equal((await getRun(page)).currentCycle,1);assert.equal(await page.locator('[data-city-map]').count(),1);
   assert.deepEqual(errors,[]);await fs.writeFile(out+'audit.json',JSON.stringify({viewport:{width:1366,height:768,deviceScaleFactor:1},rivermark,meridian,marker,cycle,routes,depthEvidence,errors},null,2));
-  console.log('PASS A–K: sparse title, real hero, white selection, map/HUD fit for both managed cities, labeled skills constraint, cumulative upgrade preview, complete route loops and ground sorting, construction workers, six cycles, report/transfer/replay.');
+  console.log('PASS A–K: sparse title, real hero, white selection, map/HUD fit for both managed cities, labeled skills constraint, cumulative upgrade preview, complete route loops and ground sorting, construction workers, ten rounds, report/transfer/replay.');
 }finally{await browser.close();}

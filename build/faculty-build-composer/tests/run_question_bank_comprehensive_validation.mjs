@@ -8,7 +8,7 @@ import {loadComposerLibrary,collectComposerQuestions,auditQuestionConstruction} 
 const require=createRequire(import.meta.url),core=require('../composer-core.js');
 const integrity=require('./composer-integrity-contracts.js');
 const approved=require('./general-economics-approved-revisions.js');
-const micro=require('./microeconomics-editorial-approved-revisions.js');
+const micro=require('./microeconomics-student-wording-approved-revisions.js');
 const out='validation_artifacts/question_bank_audit_20260919';
 const resultOut='validation_artifacts/macroeconomics_consolidated_cleanup';
 fs.mkdirSync(resultOut,{recursive:true});
@@ -22,9 +22,10 @@ const before=collectComposerQuestions(baseline),after=collectComposerQuestions(c
 const byId=new Map(after.map(e=>[String(e.id),e])),beforeById=new Map(before.map(e=>[String(e.id),e]));
 const sha=s=>crypto.createHash('sha256').update(s).digest('hex');
 const norm=s=>s.normalize('NFKC').trim().replace(/\s+/g,' ').toLowerCase();
-assert.deepEqual([...byId.keys()].sort(),[...beforeById.keys()].sort(),'No question IDs added, removed or duplicated');
+assert.deepEqual([...byId.keys()].sort(),[...beforeById.keys()].filter(id=>!micro.deletedIds.has(id)).sort(),'Only the exact instructor-approved deletions are absent');
 assert.equal(changes.length,new Set(changes.map(c=>c.id)).size);
 for(const e of before){
+ if(micro.deletedIds.has(e.id)){assert(!byId.has(e.id),'Approved deletion must be absent '+e.id);continue;}
  const revision=changes.find(c=>c.id===e.id),actual=byId.get(e.id);
  if(revision)assert.deepEqual(revision.before,e.question,'Revision before-state matches immutable Git baseline: '+e.id);
  let expected=structuredClone(revision?.after||e.question);if(expected.image===null)delete expected.image;

@@ -1,0 +1,1005 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "ids": [
+        "P62I-OLI-B2-032"
+      ],
+      "calculation": "Cooperation present value C/(1-d)",
+      "result": 22.222222222222225,
+      "expected": 22.22,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-B2-032"
+      ],
+      "calculation": "Deviation present value D+d*P/(1-d)",
+      "result": 19.88888888888889,
+      "expected": 19.89,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-B2-033"
+      ],
+      "calculation": "Cooperation present value C/(1-d)",
+      "result": 28.94736842105263,
+      "expected": 28.95,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-B2-033"
+      ],
+      "calculation": "Deviation present value D+d*P/(1-d)",
+      "result": 22.526315789473685,
+      "expected": 22.53,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-B2-034"
+      ],
+      "calculation": "Cooperation present value C/(1-d)",
+      "result": 38.70967741935483,
+      "expected": 38.71,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-B2-034"
+      ],
+      "calculation": "Deviation present value D+d*P/(1-d)",
+      "result": 28.129032258064512,
+      "expected": 28.13,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-B2-035"
+      ],
+      "calculation": "Cooperation present value C/(1-d)",
+      "result": 54.16666666666667,
+      "expected": 54.17,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-B2-035"
+      ],
+      "calculation": "Deviation present value D+d*P/(1-d)",
+      "result": 33.833333333333336,
+      "expected": 33.83,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-B2-036"
+      ],
+      "calculation": "Cooperation present value C/(1-d)",
+      "result": 82.35294117647057,
+      "expected": 82.35,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-B2-036"
+      ],
+      "calculation": "Deviation present value D+d*P/(1-d)",
+      "result": 48.29411764705881,
+      "expected": 48.29,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-C-026"
+      ],
+      "calculation": "C/(1-d) - [D+d*P/(1-d)]",
+      "result": 10.333333333333329,
+      "expected": 10.33,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-C-027"
+      ],
+      "calculation": "C/(1-d) - [D+d*P/(1-d)]",
+      "result": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-C-028"
+      ],
+      "calculation": "The weight on next-period punishment rises by 0.85 - 0.40",
+      "result": 0.44999999999999996,
+      "expected": 0.45,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-EL-017"
+      ],
+      "calculation": "Cooperation present value C/(1-d)",
+      "result": 12.5,
+      "expected": 12.5,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-EL-017"
+      ],
+      "calculation": "Deviation present value D+d*P/(1-d)",
+      "result": 16.25,
+      "expected": 16.25,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-EL-018"
+      ],
+      "calculation": "Cooperation present value C/(1-d)",
+      "result": 16.923076923076923,
+      "expected": 16.92,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-EL-018"
+      ],
+      "calculation": "Deviation present value D+d*P/(1-d)",
+      "result": 18.692307692307693,
+      "expected": 18.69,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-EL-019"
+      ],
+      "calculation": "Cooperation present value C/(1-d)",
+      "result": 24.0,
+      "expected": 24.0,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-EL-019"
+      ],
+      "calculation": "Deviation present value D+d*P/(1-d)",
+      "result": 23.0,
+      "expected": 23.0,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-EL-020"
+      ],
+      "calculation": "Cooperation present value C/(1-d)",
+      "result": 37.142857142857146,
+      "expected": 37.14,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-EL-020"
+      ],
+      "calculation": "Deviation present value D+d*P/(1-d)",
+      "result": 29.142857142857146,
+      "expected": 29.14,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-EL-021"
+      ],
+      "calculation": "Cooperation present value C/(1-d)",
+      "result": 70.00000000000001,
+      "expected": 70.0,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-EL-021"
+      ],
+      "calculation": "Deviation present value D+d*P/(1-d)",
+      "result": 47.000000000000014,
+      "expected": 47.0,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-EL-022"
+      ],
+      "calculation": "Cooperation present value C/(1-d)",
+      "result": 150.00000000000003,
+      "expected": 150.0,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-EL-022"
+      ],
+      "calculation": "Deviation present value D+d*P/(1-d)",
+      "result": 83.00000000000001,
+      "expected": 83.0,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-L-043"
+      ],
+      "calculation": "Cooperation present value C/(1-d)",
+      "result": 13.846153846153845,
+      "expected": 13.85,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-L-043"
+      ],
+      "calculation": "Deviation present value D+d*P/(1-d)",
+      "result": 15.615384615384615,
+      "expected": 15.62,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-L-044"
+      ],
+      "calculation": "Cooperation present value C/(1-d)",
+      "result": 16.666666666666668,
+      "expected": 16.67,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-L-044"
+      ],
+      "calculation": "Deviation present value D+d*P/(1-d)",
+      "result": 17.666666666666668,
+      "expected": 17.67,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-L-045"
+      ],
+      "calculation": "Cooperation present value C/(1-d)",
+      "result": 20.0,
+      "expected": 20.0,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-L-045"
+      ],
+      "calculation": "Deviation present value D+d*P/(1-d)",
+      "result": 20.09090909090909,
+      "expected": 20.09,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-L-046"
+      ],
+      "calculation": "Cooperation present value C/(1-d)",
+      "result": 24.0,
+      "expected": 24.0,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-L-046"
+      ],
+      "calculation": "Deviation present value D+d*P/(1-d)",
+      "result": 23.0,
+      "expected": 23.0,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-L-047"
+      ],
+      "calculation": "Cooperation present value C/(1-d)",
+      "result": 28.888888888888893,
+      "expected": 28.89,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-L-047"
+      ],
+      "calculation": "Deviation present value D+d*P/(1-d)",
+      "result": 21.666666666666668,
+      "expected": 21.67,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-L-048"
+      ],
+      "calculation": "Cooperation present value C/(1-d)",
+      "result": 22.5,
+      "expected": 22.5,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-L-048"
+      ],
+      "calculation": "Deviation present value D+d*P/(1-d)",
+      "result": 25.0,
+      "expected": 25.0,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-L-049"
+      ],
+      "calculation": "Cooperation present value C/(1-d)",
+      "result": 28.571428571428573,
+      "expected": 28.57,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-L-049"
+      ],
+      "calculation": "Deviation present value D+d*P/(1-d)",
+      "result": 23.285714285714285,
+      "expected": 23.29,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-L-050"
+      ],
+      "calculation": "Cooperation present value C/(1-d)",
+      "result": 36.666666666666664,
+      "expected": 36.67,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-L-050"
+      ],
+      "calculation": "Deviation present value D+d*P/(1-d)",
+      "result": 28.999999999999996,
+      "expected": 29.0,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-L-051"
+      ],
+      "calculation": "Cooperation present value C/(1-d)",
+      "result": 48.0,
+      "expected": 48.0,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-L-051"
+      ],
+      "calculation": "Deviation present value D+d*P/(1-d)",
+      "result": 25.0,
+      "expected": 25.0,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-L-052"
+      ],
+      "calculation": "Cooperation present value C/(1-d)",
+      "result": 65.00000000000001,
+      "expected": 65.0,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-L-052"
+      ],
+      "calculation": "Deviation present value D+d*P/(1-d)",
+      "result": 33.0,
+      "expected": 33.0,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-L-053"
+      ],
+      "calculation": "Cooperation present value C/(1-d)",
+      "result": 59.99999999999999,
+      "expected": 60.0,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-L-053"
+      ],
+      "calculation": "Deviation present value D+d*P/(1-d)",
+      "result": 46.33333333333333,
+      "expected": 46.33,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-L-054"
+      ],
+      "calculation": "Cooperation present value C/(1-d)",
+      "result": 100.00000000000003,
+      "expected": 100.0,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-L-054"
+      ],
+      "calculation": "Deviation present value D+d*P/(1-d)",
+      "result": 73.00000000000001,
+      "expected": 73.0,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-LB-028"
+      ],
+      "calculation": "Absolute difference of unrounded present values",
+      "result": 1.5555555555555571,
+      "expected": 1.56,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-LB-028"
+      ],
+      "calculation": "Cooperation present value C/(1-d)",
+      "result": 24.444444444444446,
+      "expected": 24.44,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-LB-028"
+      ],
+      "calculation": "Deviation present value D+d*P/(1-d)",
+      "result": 22.88888888888889,
+      "expected": 22.89,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-LB-029"
+      ],
+      "calculation": "Absolute difference of unrounded present values",
+      "result": 4.918918918918919,
+      "expected": 4.92,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-LB-029"
+      ],
+      "calculation": "Cooperation present value C/(1-d)",
+      "result": 32.432432432432435,
+      "expected": 32.43,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-LB-029"
+      ],
+      "calculation": "Deviation present value D+d*P/(1-d)",
+      "result": 27.513513513513516,
+      "expected": 27.51,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-LB-030"
+      ],
+      "calculation": "Absolute difference of unrounded present values",
+      "result": 10.137931034482754,
+      "expected": 10.14,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-LB-030"
+      ],
+      "calculation": "Cooperation present value C/(1-d)",
+      "result": 44.82758620689655,
+      "expected": 44.83,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-LB-030"
+      ],
+      "calculation": "Deviation present value D+d*P/(1-d)",
+      "result": 34.689655172413794,
+      "expected": 34.69,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-LB-031"
+      ],
+      "calculation": "Absolute difference of unrounded present values",
+      "result": 19.33333333333333,
+      "expected": 19.33,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-LB-031"
+      ],
+      "calculation": "Cooperation present value C/(1-d)",
+      "result": 66.66666666666667,
+      "expected": 66.67,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-LB-031"
+      ],
+      "calculation": "Deviation present value D+d*P/(1-d)",
+      "result": 47.33333333333334,
+      "expected": 47.33,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-LB-032"
+      ],
+      "calculation": "Absolute difference of unrounded present values",
+      "result": 39.846153846153854,
+      "expected": 39.85,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-LB-032"
+      ],
+      "calculation": "Cooperation present value C/(1-d)",
+      "result": 115.38461538461539,
+      "expected": 115.38,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62I-OLI-LB-032"
+      ],
+      "calculation": "Deviation present value D+d*P/(1-d)",
+      "result": 75.53846153846153,
+      "expected": 75.54,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "42086"
+      ],
+      "calculation": "Recovered surplus: 0.5 * (150-100) * 5",
+      "result": 125.0,
+      "expected": 125,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "42095"
+      ],
+      "calculation": "Subsidy net gain in thousands: 0.5 * 50 * 2 - 12",
+      "result": 38.0,
+      "expected": 38,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "42095"
+      ],
+      "calculation": "Agreement net gain in thousands: 0.5 * 50 * 2 - 18",
+      "result": 32.0,
+      "expected": 32,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "42151"
+      ],
+      "calculation": "Social gain before coordination: 500+400-700",
+      "result": 200,
+      "expected": 200,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "42151"
+      ],
+      "calculation": "Social gain after coordination: 500+400-700-250",
+      "result": -50,
+      "expected": -50,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "42192",
+        "42198"
+      ],
+      "calculation": "Public-good marginal benefit: 30000+20000",
+      "result": 50000,
+      "expected": 50000,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "42334"
+      ],
+      "calculation": "VMP multiplier: 1.25 * 0.90",
+      "result": 1.125,
+      "expected": 1.125,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "42343"
+      ],
+      "calculation": "VMP multiplier: 0.80 * 1.25",
+      "result": 1.0,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "42407"
+      ],
+      "calculation": "VMP: 3 washes * $15",
+      "result": 45,
+      "expected": 45,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62B-ELAS-B3-012"
+      ],
+      "calculation": "Short-run approximate percentage change: -1.4 * 10",
+      "result": -14.0,
+      "expected": -14,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62B-ELAS-B3-012"
+      ],
+      "calculation": "Long-run approximate percentage change: -2 * 10",
+      "result": -20,
+      "expected": -20,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62B-ELAS-LB-024"
+      ],
+      "calculation": "Revenue change: 900*12 - 1000*10",
+      "result": 800,
+      "expected": 800,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62B-ELAS-LB-024"
+      ],
+      "calculation": "Profit change: 800+300-1200",
+      "result": -100,
+      "expected": -100,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62C-CPS-L-060"
+      ],
+      "calculation": "Lower recipient value minus original recipient value",
+      "result": -7.0,
+      "expected": -7.0,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62C-CPS-L-062"
+      ],
+      "calculation": "Lower recipient value minus original recipient value",
+      "result": -14.0,
+      "expected": -14.0,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62C-CPS-L-064"
+      ],
+      "calculation": "Lower recipient value minus original recipient value",
+      "result": -12.0,
+      "expected": -12.0,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62C-CPS-L-066"
+      ],
+      "calculation": "Lower recipient value minus original recipient value",
+      "result": -12.0,
+      "expected": -12.0,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62C-CPS-L-068"
+      ],
+      "calculation": "Lower recipient value minus original recipient value",
+      "result": -17.0,
+      "expected": -17.0,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62C-CPS-LB-035"
+      ],
+      "calculation": "Eighth unit net gain after verification:17-17-1",
+      "result": -1,
+      "expected": -1,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62C-CPS-LB-035"
+      ],
+      "calculation": "Seventh unit net gain after verification:19-14-1",
+      "result": 4,
+      "expected": 4,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62F-PC-LB-001"
+      ],
+      "calculation": "Maximum profit before fee",
+      "result": 10,
+      "expected": 10,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62F-PC-LB-001"
+      ],
+      "calculation": "Same quantity profit after $15 fee",
+      "result": -5,
+      "expected": -5,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62F-PC-LB-005"
+      ],
+      "calculation": "Maximum profit before fee",
+      "result": -30,
+      "expected": -30,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62F-PC-LB-005"
+      ],
+      "calculation": "Same quantity profit after $15 fee",
+      "result": -45,
+      "expected": -45,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P62H-MCMP-C-029"
+      ],
+      "calculation": "Additional revenue minus variable cost minus campaign cost:15500-12000",
+      "result": 3500,
+      "expected": 3500,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P73-MARG-M-007"
+      ],
+      "calculation": "Amount before handling cost minus handling cost:15-13",
+      "result": 2,
+      "expected": 2,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "PG1-SUP-L-003"
+      ],
+      "calculation": "Halfway supply curve price at target quantity:(4+3)/2",
+      "result": 3.5,
+      "expected": 3.5,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P52B-TRADE-EL-004"
+      ],
+      "calculation": "New Slate sink cost:36/24",
+      "result": 1.5,
+      "expected": 1.5,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P52B-TRADE-H-001"
+      ],
+      "calculation": "Fern stool cost:28/7",
+      "result": 4.0,
+      "expected": 4,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P52B-TRADE-H-001"
+      ],
+      "calculation": "Cove stool cost:18/9",
+      "result": 2.0,
+      "expected": 2,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P52B-TRADE-L-001"
+      ],
+      "calculation": "Importer gain after shipping:3-2.25-.5",
+      "result": 0.25,
+      "expected": 0.25,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P52B-TRADE-LB-001"
+      ],
+      "calculation": "Exporter B gain:2.8-2-.4",
+      "result": 0.3999999999999998,
+      "expected": 0.4,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P52B-TRADE-LB-001"
+      ],
+      "calculation": "Importer A gain:3-2.8",
+      "result": 0.20000000000000018,
+      "expected": 0.2,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P52B-TRADE-LB-002"
+      ],
+      "calculation": "Delegation opportunity cost:24/8*2+6",
+      "result": 12.0,
+      "expected": 12,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P52B-TRADE-LB-002"
+      ],
+      "calculation": "Direct work opportunity cost:24/12*6",
+      "result": 12.0,
+      "expected": 12,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P75-TRADE-FB-004"
+      ],
+      "calculation": "East cost:18/12",
+      "result": 1.5,
+      "expected": 1.5,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P75-TRADE-FB-004"
+      ],
+      "calculation": "West cost:24/6",
+      "result": 4.0,
+      "expected": 4,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P75-TRADE-FB-005"
+      ],
+      "calculation": "New B machine cost:24/6",
+      "result": 4.0,
+      "expected": 4,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P75-TRADE-H-009"
+      ],
+      "calculation": "Ava gain at boundary:2-2",
+      "result": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P75-TRADE-L-012"
+      ],
+      "calculation": "New Oak desk cost:24/16",
+      "result": 1.5,
+      "expected": 1.5,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P75-TRADE-L-013"
+      ],
+      "calculation": "Ridge loss:1.5-24/12",
+      "result": -0.5,
+      "expected": -0.5,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P75-TRADE-L-015"
+      ],
+      "calculation": "Proportional productivity change leaves opportunity cost:8/2",
+      "result": 4.0,
+      "expected": 4,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P75-TRADE-L-023"
+      ],
+      "calculation": "New Delta review cost equals Echo:24/16-15/10",
+      "result": 0.0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P75-TRADE-LB-005"
+      ],
+      "calculation": "Quartz gain at rate4:4-20/10-.5",
+      "result": 1.5,
+      "expected": 1.5,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P75-TRADE-LB-005"
+      ],
+      "calculation": "Sable gain at boundary:20/4-5",
+      "result": 0.0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P75-TRADE-M-011"
+      ],
+      "calculation": "Ari and Bea gain at4 combined:(4-2)+(6-4)",
+      "result": 4,
+      "expected": 4,
+      "status": "PASS"
+    },
+    {
+      "ids": [
+        "P75-TRADE-M-012"
+      ],
+      "calculation": "Equal opportunity costs:3-3",
+      "result": 0,
+      "expected": 0,
+      "status": "PASS"
+    }
+  ]
+}

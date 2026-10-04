@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
-import {waitMaps} from './browser-helpers.mjs';
+import {startCity,waitMaps} from './browser-helpers.mjs';
 const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
 const out=fileURLToPath(new URL('../../../tmp/games-preview/growth-realms/sidewalk-pass/',import.meta.url));await fs.mkdir(out,{recursive:true});
 const browser=await chromium.launch({channel:'msedge',headless:true}),page=await browser.newPage({viewport:{width:1366,height:768}}),errors=[];
@@ -23,14 +23,14 @@ async function observe(){return page.evaluate(async()=>{
   return {ticks:rendererStats().tick-startTick,pedestrians,workers,traffic,directions:[...directions],failures};
 });}
 try{
- await page.goto('http://127.0.0.1:4178/play/growth-realms/');await page.locator('#start-game').click();await page.locator('[data-choose=meridian]').click();await waitMaps(page);
+ await page.goto('http://127.0.0.1:4178/play/growth-realms/');await startCity(page,'meridian');await waitMaps(page);
  const starting=await observe();assert.ok(starting.ticks>=130);assert.deepEqual(starting.failures,[]);assert.equal(starting.directions.length,4);await page.screenshot({path:out+'planning-sidewalks.png'});
  await page.goto('http://127.0.0.1:4178/play/growth-realms/tests/zoning.html');await page.waitForFunction(()=>document.body.dataset.ready==='true');
  await page.evaluate(async()=>{await (await import('./zoning-fixture.js')).show({city:'meridian',mode:'max',construction:true,progress:.4});});
  const construction=await observe();assert.ok(construction.ticks>=130);assert.deepEqual(construction.failures,[]);assert.ok(construction.workers>0);assert.equal(construction.directions.length,4);await page.screenshot({path:out+'construction-walks.png',fullPage:true});
  for(const city of ['meridian','rivermark']){const audit=await page.evaluate(async city=>(await import('./zoning-fixture.js')).show({city,mode:'max',construction:false}),city);assert.deepEqual(audit.errors,[]);await page.screenshot({path:out+`maximum-${city}.png`,fullPage:true});}
  for(const width of [390,320]){
-  await page.setViewportSize({width,height:844});await page.goto('http://127.0.0.1:4178/play/growth-realms/');await page.locator('#start-game').click();await page.locator('[data-choose=rivermark]').click();await waitMaps(page);
+  await page.setViewportSize({width,height:844});await page.goto('http://127.0.0.1:4178/play/growth-realms/');await startCity(page,'rivermark');await waitMaps(page);
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);await page.locator('[data-map-district=education]').click();assert.equal(await page.locator('#selected-investment').innerText(),'1');
   if(width===390)await page.screenshot({path:out+'mobile-sidewalks.png'});
  }

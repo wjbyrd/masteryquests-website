@@ -4,13 +4,13 @@
   "baselineSha256": "e7c83aff3f0d08252c253b5cec08552ee6f8ac5868a2861c801f9ae2761f9241",
   "canonical": {
     "concepts": 149,
-    "questions": 9779,
-    "graphs": 1147,
+    "questions": 9777,
+    "graphs": 1131,
     "assets": 507
   },
-  "questionsAudited": 9779,
+  "questionsAudited": 9777,
   "questionsChanged": 273,
-  "unchanged": 9506,
+  "unchanged": 9504,
   "changesByConcept": {
     "aggregate-demand": 3,
     "bank-balance-sheets-reserves-and-capital": 1,
@@ -53,11 +53,11 @@
     "unknown": 1013
   },
   "difficultyAfter": {
-    "easy": 1888,
+    "easy": 1884,
     "elite": 398,
-    "hard": 2206,
+    "hard": 2196,
     "legendary": 1406,
-    "medium": 2949,
+    "medium": 2961,
     "unknown": 932
   },
   "reclassifications": [
@@ -444,8 +444,8 @@
     "P62I-OLI-LB-004"
   ],
   "legendaryLengthCueFlagsBefore": 457,
-  "legendaryLengthCueFlagsAfter": 148,
-  "originalFlagsResolved": 325,
+  "legendaryLengthCueFlagsAfter": 161,
+  "originalFlagsResolved": 339,
   "generated": [
     {
       "preset": "general-foundations",
@@ -685,7 +685,7 @@
     {
       "preset": "micro-factor-choice-inequality",
       "selectedConceptIds": 3,
-      "generatedOccurrences": 560,
+      "generatedOccurrences": 558,
       "modes": [
         {
           "mode": "standard",
@@ -1060,11 +1060,12 @@
     }
   ],
   "constructionRuleCounts": {
-    "absolute-distractors-nuanced-key": 79,
-    "key-length-145-percent": 1497,
-    "key-only-qualification": 208,
-    "key-only-reasoning-clause": 196
+    "absolute-distractors-nuanced-key": 84,
+    "key-length-145-percent": 1455,
+    "key-only-qualification": 194,
+    "key-only-reasoning-clause": 202,
+    "nonstandard-welfare-language": 1
   },
-  "originalLegendaryLengthFlagsClearedByContent": 221,
-  "originalLegendaryLengthFlagsReclassifiedOnly": 104
+  "originalLegendaryLengthFlagsClearedByContent": 240,
+  "originalLegendaryLengthFlagsReclassifiedOnly": 99
 }

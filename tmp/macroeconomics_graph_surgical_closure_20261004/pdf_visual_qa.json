@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "source_sha256": "d9b9880be5194cc5f88816842d21fbe68117bde8920f735f863fb781fed1865a",
+  "pdf_sha256": "ec180edb09d08b9e3fb20baa7643fd780f2aed28898e923f59dd93a169483c47",
+  "total_pdf_pages": 3568,
+  "all_pages_rendered": 3568,
+  "question_pages": {
+    "ECON-SP-ELITE-320": [
+      577,
+      578
+    ],
+    "P62D-ITP-L-095": [
+      1542
+    ],
+    "P62D-ITP-L-098": [
+      1603
+    ]
+  },
+  "inspected_pages": [
+    577,
+    578,
+    1542,
+    1603
+  ],
+  "sheets": [
+    {
+      "file": "qa-01.png",
+      "pages": [
+        577,
+        578,
+        1542,
+        1603
+      ]
+    }
+  ],
+  "questions_inspected": 3,
+  "split_question_cores": [],
+  "core_checks": 4745,
+  "visual_findings": {
+    "ECON-SP-ELITE-320": "Inspected pages 577-578. Identification/metadata begins on 577 and continues on 578 in the normal exporter layout. The entire revised stem, unchanged graph, four choices, key and feedback are together on 578, legible and unclipped. AD labels and relative widths are visible.",
+    "P62D-ITP-L-095": "Inspected page 1542. Revised four choices, key and complete calculation feedback are legible below the preserved tariff graph. Price and quantity labels are visible; no clipping or overlap.",
+    "P62D-ITP-L-098": "Inspected page 1603. Domestic license-holder assumption, revised four choices, key and full calculation feedback are legible with the preserved quota graph. Axes and price lines are visible; no clipping or overlap."
+  },
+  "question_cores_kept_together": true,
+  "unclipped_text_and_graphs": true
+}

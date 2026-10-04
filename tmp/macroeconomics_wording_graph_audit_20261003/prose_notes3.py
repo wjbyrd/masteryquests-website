@@ -1,0 +1,31 @@
+import json
+from pathlib import Path
+p=Path(__file__).parent;n=json.loads((p/'review_notes.json').read_text())
+def w(i,t): n['wording_candidates'][i]=t
+def a(ids,t):
+ for i in ids.split(): n['advanced_candidates'][i]=t
+w('P52B-S3-MEQS-B2-001','Clear: Which observation can be signed without their sizes? uses mathematical sign jargon instead of asking which direction of change can be predicted.')
+w('P52A-BANK-M-006','Clear: distractor C ends as the relevant economic conclusion, an unrelated assessment-writing suffix; remove it while preserving the distractor misconception.')
+w('LG-Q-2006','Recommended family: Which correction is correct? is redundant; ask what is wrong with the claim.')
+w('LG-Q-2008','Recommended family: At the simple maximum is cryptic; state maximum predicted deposit expansion in the simplified model.')
+w('LG-Q-9109','Recommended: first-bank recall amount is an unnatural answer phrase; distinguish the systemwide deposit contraction from loans recalled by the first bank.')
+w('LG-R-5013','Recommended: hand the borrower a pile of reserves is an unnecessary metaphor; describe deposit creation and reserve transfers directly.')
+w('PM2A-DIS-L-010','Recommended: Which synthesis is correct? announces the assessment operation; ask for the sacrifice ratio and long-run unemployment implication.')
+w('PM2A-DIS-EB-012','Recommended: initial unemployment excursion is unnatural Principles language in the alternatives; use temporary increase in unemployment.')
+w('PM2A-DIS-EB-013','Recommended: Unemployment costs have unwound is an awkward metaphor; state that the temporary unemployment increase has ended.')
+w('PM2A-DIS-LB-018','Recommended: Unemployment costs have unwound is an awkward metaphor; state that the temporary unemployment increase has ended.')
+w('ECON-SP-MONETARY-POLICY-PC-TRANSITION-6047','Clear: Which family links explain the transition? exposes question-family authoring terminology; ask how monetary policy and Phillips-curve adjustment explain the transition.')
+w('PM2B3-POL-FB-005','Recommended: different margins in allocating scarce resources is an abstract keyed answer; distinguish current stabilization from future productive-capacity benefits in ordinary language.')
+w('ECON-SP-MEDIUM-146','Recommended: first-pass AD increase could mean the initial direct effect although the requested amount includes the multiplier. Say total predicted increase before crowding out; retain the current calculation.')
+w('LG-Q-9068','Recommended: how does the order of AD shifts change asks about order although the answer concerns magnitudes; ask how initial and total shifts differ.')
+w('LG-Q-3007','Recommended family: signed nominal rate is unnatural; use the contractual nominal rate. Retain expected versus realized return.')
+w('ECON-NL-EASYBOSS-2007','Recommended family: Which C, inventory-I and GDP entries are consistent? is compressed note-like wording; ask how the sales and inventory change enter GDP.')
+a('LG-Q-303 LG-Q-308 LG-Q-310','Routine reserve/deposit arithmetic across sequential banks supplies the apparent complexity; preserve deposit creation but require evaluating leakage, a binding constraint, or an observed outcome inconsistent with a stated assumption.')
+a('PM2A-DIS-LB-018 PM2A-DIS-LB-020','Combines explicitly supplied positive inflation and return to natural unemployment into familiar conclusions. Require comparing transition paths or identifying what endpoint evidence cannot establish about cumulative disinflation costs.')
+a('PM2A-DIS-LB-019','The stem already gives the smaller cumulative unemployment increase, making the sacrifice-cost comparison largely a restatement. Require inference from timing/duration or evaluation of a competing explanation of equal endpoints.')
+a('P52A-FISCAD-LB-001 P52A-FISCAD-LB-002 LG-Q-9134','The advanced version repeats an easy/medium family using different dollar amounts; formula substitution and classification supply the work. Preserve direct versus induced effects and offsets but require diagnosing an inconsistent policy estimate or comparing a conditional counterfactual.')
+a('LG-Q-9035','Three exact-return computations supply the apparent complexity. Preserve expected versus realized returns and new-contract repricing, but require diagnosing which assumption explains different lenders or a counterfactual contract choice.')
+a('LG-Q-9127 LG-Q-9117','The same Fisher comparison appears in an easy/medium family with only an irrelevant loan/market size changed. Require reconciling competing real-rate and expected-inflation evidence or identifying what nominal-rate data cannot establish.')
+a('ECON-NL-ELITE-310 ECON-NL-LEGENDARY-9008 ECON-NL-LEGENDARY-9021 ECON-NL-LEGENDARY-9016','The task is a single familiar GDP classification; extra amounts or long alternatives do not add advanced reasoning. Preserve the production/investment/domestic boundary but require reconciling multiple accounts, diagnosing double counting, or distinguishing what the evidence does not establish.')
+a('ECON-NL-LEGENDARYBOSS-9106 PM2B1-GDPC-LB-001','Several ordinary expenditure classifications and additions create length rather than a new inference. Preserve transfer/import exclusions; require reconciling an erroneous account with independently observed production or testing an incomplete-data claim.')
+n['remaining_packets_reviewed']=list(range(1,15));(p/'review_notes.json').write_text(json.dumps(n,indent=2),encoding='utf8')

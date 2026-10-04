@@ -1,0 +1,149 @@
+{
+  "status": "PASS",
+  "scope": "341 changed items only",
+  "exact_stem_collisions": [],
+  "number_normalized_families": [
+    [
+      "P52A-AD-B1-001",
+      "P52A-AD-B2-002"
+    ],
+    [
+      "P52A-AD-B1-003",
+      "P52A-AD-B3-003"
+    ],
+    [
+      "LG-Q-2007",
+      "P52A-BANK-B2-003"
+    ],
+    [
+      "LG-Q-9104",
+      "P52A-BANK-B3-001"
+    ],
+    [
+      "LG-Q-2011",
+      "P52B-S3-MPT-B3-001"
+    ],
+    [
+      "ECON-EC-FINALBOSS-19000",
+      "ECON-NL-EASYBOSS-2018",
+      "ECON-NL-EASYBOSS-2022",
+      "P52A-CPI-B2-002",
+      "P52A-CPI-B3-003"
+    ],
+    [
+      "ECON-NL-EASYBOSS-2019",
+      "ECON-NL-EASYBOSS-2023",
+      "P52A-CPI-B2-003"
+    ],
+    [
+      "ECON-EC-LEGENDARYBOSS-20002",
+      "ECON-NL-EASYBOSS-2025",
+      "ECON-NL-LEGENDARYBOSS-9115",
+      "PM2B2-BIAS-MB-001"
+    ],
+    [
+      "ECON-EC-FINALBOSS-19002",
+      "ECON-EC-MEDIUMBOSS-18002",
+      "ECON-NL-LEGENDARYBOSS-9109",
+      "PM2B2-BIAS-FB-005",
+      "PM2B2-BIAS-MB-003"
+    ],
+    [
+      "ECON-EC-FINALBOSS-19006",
+      "ECON-NL-EASYBOSS-2028",
+      "PM2B2-DEF-FB-005",
+      "PM2B2-DEF-MB-002"
+    ],
+    [
+      "ECON-EC-FINALBOSS-19007",
+      "ECON-NL-EASYBOSS-2029",
+      "PM2B2-DEF-FB-006",
+      "PM2B2-DEF-MB-003"
+    ],
+    [
+      "LG-Q-2006",
+      "P52A-BANK-B2-002"
+    ],
+    [
+      "LG-Q-2008",
+      "P52A-BANK-B3-003"
+    ],
+    [
+      "LG-Q-3007",
+      "PM2C2-FISH-EB-001",
+      "PM2C2-FISH-FB-006"
+    ],
+    [
+      "ECON-NL-EASYBOSS-2007",
+      "ECON-NL-LEGENDARYBOSS-9100",
+      "PM2B1-GDPC-MB-002"
+    ],
+    [
+      "ECON-EC-EASYBOSS-17011",
+      "ECON-NL-EASYBOSS-2003",
+      "P52B-S3-GDPM-B2-002"
+    ],
+    [
+      "ECON-NL-FINALBOSS-4022",
+      "ECON-NL-FINALBOSS-4028",
+      "ECON-NL-FINALBOSS-4040",
+      "PM2B4-LMI-EB-003"
+    ],
+    [
+      "LG-Q-9100",
+      "P52B-S3-MPT-B2-001",
+      "P52B-S3-MPT-B3-002"
+    ],
+    [
+      "LG-Q-4005",
+      "P52B-S4-MPTX-B2-001"
+    ],
+    [
+      "ECON-NL-MEDIUMBOSS-3006",
+      "ECON-NL-MEDIUMBOSS-3011"
+    ],
+    [
+      "LG-Q-3000",
+      "LG-Q-9118",
+      "P52B-S4-QTM-B1-002",
+      "P52B-S4-QTM-B3-003"
+    ],
+    [
+      "LG-Q-9116",
+      "P52B-S4-QTM-B1-001",
+      "P52B-S4-QTM-B3-002"
+    ],
+    [
+      "ECON-SP-MEDIUMBOSS-3012",
+      "PM2A-SAC-EB-018"
+    ],
+    [
+      "43168",
+      "43172",
+      "43181"
+    ]
+  ],
+  "new_number_normalized_collision_pairs": [],
+  "unresolved_length_cue_flags": [],
+  "interpretation": "All 24 number-normalized families already existed in the approved baseline. This cleanup did not add any such pair. Their approved checkpoint/stage design is preserved; superficial synonym substitution was not used to disguise them.",
+  "answer_architecture_review": "Reviewed graph alternatives across AD-AS, Phillips, money markets, growth, loanable funds and FX. Used cause identification, endpoint/mechanism errors, level/change errors, shifts versus movements, model limits, counterfactuals and competing shocks. No repeated complete two-readings-by-two-interpretations Cartesian template was introduced.",
+  "advanced_inference_counts": {
+    "diagnosis": 19,
+    "binding constraint": 8,
+    "policy evaluation": 11,
+    "competing mechanisms": 6,
+    "assumption test": 8,
+    "identification limit": 7,
+    "counterfactual": 16,
+    "reverse inference": 3,
+    "short-run/long-run reconciliation": 1
+  },
+  "repairs_during_focused_review": [
+    "Removed lingering graph reference from PG3-AS-L-001.",
+    "Repaired theory-only elimination paths in 9008, 349, 3010, 9004 and 9024.",
+    "Converted PM2B3-PROD-H-001 when another graph calculation would have displaced the intended marginal-returns concept.",
+    "Simplified Easy 43292 to one graphical direction plus economic mechanism.",
+    "Aligned wording-only stems and alternatives in 43151 and the quality-adjustment family.",
+    "Shortened four disproportionately long keyed alternatives."
+  ]
+}

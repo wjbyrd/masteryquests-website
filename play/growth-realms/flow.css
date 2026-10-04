@@ -1,0 +1,86 @@
+/* Splash and round pacing; the city renderer and MQ palette remain shared. */
+body[data-screen=title]{overflow:hidden;background:var(--mq-bg-dark)}
+body[data-screen=title] .command-header,body[data-screen=title] footer{display:none}
+body[data-screen=title] main{padding:0;max-width:none}
+.title-screen{position:relative;isolation:isolate;display:block;width:100%;height:100svh;min-height:420px;padding:0;overflow:hidden}
+.title-screen #hero-scene{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;image-rendering:pixelated}
+.splash-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(3,22,56,.88),rgba(3,22,56,.06) 32%,rgba(3,22,56,.02) 66%,rgba(3,22,56,.94));pointer-events:none}
+#landing-title{position:absolute;top:5svh;left:0;right:0;max-width:none;margin:0;text-align:center;font-family:inherit;font-weight:900;font-size:clamp(48px,7.8vw,118px);line-height:1;letter-spacing:-.045em;text-transform:uppercase;color:var(--mq-on-dark);text-shadow:0 4px 0 var(--mq-navy),0 8px 28px var(--mq-bg-dark)}
+.splash-brand{position:absolute;bottom:calc(4svh + 80px);left:0;right:0;text-align:center;color:var(--mq-on-dark-muted);font-size:11px;letter-spacing:3px;font-weight:700}
+#start-game{position:absolute;bottom:max(4svh,env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);min-width:240px;min-height:58px;margin:0;background:var(--mq-highlight);color:var(--mq-bg-dark);border:2px solid var(--mq-on-dark);font-size:20px;font-weight:750;box-shadow:0 6px 0 var(--mq-navy),0 12px 34px var(--mq-bg-dark)}
+#start-game:hover:not(:disabled){background:var(--mq-on-dark)}
+body[data-screen=game][data-rival-visible=false] #hud,body[data-screen=game][data-rival-visible=false] .title-row,
+body[data-screen=game][data-rival-visible=false] .map-stats,body[data-screen=game][data-rival-visible=false] .cycle-briefing{display:none}
+body[data-screen=report] #hud,body[data-screen=report] .title-row{display:none}
+body[data-reveal=true] #hud,body[data-reveal=true] .title-row{display:none}
+.rivalry-score{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px 18px;margin:0 0 12px;border-radius:8px;background:var(--mq-accent-soft);border:1px solid var(--mq-border)}
+.race-goal strong{display:block;font-size:17px}.race-goal>span{font-size:12px;color:var(--mq-muted)}
+.race-scores{display:flex;gap:32px}.race-scores>div{min-width:100px}.race-scores span{display:block;font-size:12px}.race-scores strong{display:block;font-size:24px;font-variant-numeric:tabular-nums;color:var(--mq-navy)}
+.race-result{padding:32px;margin-bottom:26px;background:var(--mq-navy);color:var(--mq-on-dark);border-top:5px solid var(--mq-highlight)}
+.race-result .eyebrow{color:var(--mq-highlight)}.race-result h2{font-size:clamp(32px,4vw,52px);line-height:1.12;letter-spacing:-1px;margin:10px 0 24px}.race-result .race-scores{margin-bottom:20px}.race-result .race-scores strong{font-size:clamp(32px,4vw,50px);color:var(--mq-highlight)}.race-result p:not(.eyebrow){font-size:15px;line-height:1.6}.race-result .result-bridge{margin-top:14px;color:var(--mq-on-dark-muted)}
+#field-guide{margin:18px 0}#field-guide summary{cursor:pointer;min-height:44px;padding:10px 0;color:var(--mq-blue);font-weight:650}#help-goal{background:var(--mq-accent-soft);padding:14px;border-radius:6px}
+#quick-guide,#soundless-info{min-width:44px;min-height:44px;border-radius:50%;font-size:20px;font-weight:700}#quick-guide{display:block}
+body[data-first-planning=true] .planning-hud{flex-wrap:nowrap}body[data-first-planning=true] #planning-instruction{display:none}
+.single-city .city-tools{grid-row:1;height:auto}
+#stage-track{flex-wrap:wrap}
+@keyframes reveal-arrives{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media(max-width:899px){
+  body[data-screen=game] .brand-row{display:none}
+  .rivalry-score{gap:10px;padding:12px;flex-wrap:wrap}.race-goal{width:100%}.race-scores{gap:28px}
+  .race-result{padding:22px}.race-result .race-scores{gap:20px}
+}
+@media(max-width:700px){
+  #landing-title{top:7svh;font-size:clamp(42px,11.5vw,78px);padding:0 8px;letter-spacing:-2px}
+  #start-game{min-width:220px;bottom:6svh}.splash-brand{bottom:calc(6svh + 78px)}
+  .planning-hud{gap:6px;padding-inline:10px}#compact-context{min-width:65px}.planning-hud #quick-commit{margin-left:0;padding-inline:7px;max-width:106px;font-size:12px}#quick-guide{flex:0 0 36px;min-width:36px;min-height:44px;padding:0;font-size:19px}
+  .planning-hud #planning-budget{margin-left:auto}.planning-hud .budget-total strong{font-size:23px}#budget-pips{gap:1px}#budget-pips i{width:2px;height:3px}
+}
+@media(prefers-reduced-motion:reduce){.rival-reveal{animation:none}}
+
+/* Each figure belongs to its city; the speech bubble is the readable surface. */
+.advisor-panel,.advisor-panel.rival-reveal{position:fixed;display:flex;align-items:flex-end;gap:12px;left:var(--speaker-left,16px);right:auto;bottom:16px;z-index:25;width:var(--speaker-width,440px);max-width:calc(100vw - 32px);padding:0;margin:0;background:transparent;border:0;box-shadow:none;color:var(--mq-text);font-size:16px;line-height:1.45}
+.character-portrait{display:block;width:96px;height:182px;flex:0 0 96px;filter:drop-shadow(0 2px 1px #fff) drop-shadow(0 6px 7px #03163860)}
+.dialogue-copy{position:relative;flex:1;min-width:0;margin-bottom:22px;padding:17px 18px;background:var(--mq-surface);border:2px solid var(--mq-accent);border-radius:16px 16px 16px 3px;box-shadow:0 6px 20px #03163838}
+.dialogue-copy::before{content:'';position:absolute;left:-12px;bottom:23px;width:18px;height:18px;transform:rotate(45deg);background:var(--mq-surface);border-left:2px solid var(--mq-accent);border-bottom:2px solid var(--mq-accent)}
+.dialogue-copy .eyebrow{font-size:10px;letter-spacing:.6px;color:var(--mq-blue);margin:0 0 7px}.dialogue-copy p{margin:0}.dialogue-copy strong{display:block;font-size:17px;line-height:1.3;margin-bottom:6px}
+.rival-reveal .dialogue-copy{background:var(--mq-navy);color:var(--mq-on-dark);border-color:var(--mq-highlight)}
+.rival-reveal .dialogue-copy::before{background:var(--mq-navy);border-color:var(--mq-highlight)}.rival-reveal .eyebrow{color:var(--mq-highlight)}
+.dialogue-dismiss,.rival-accept{min-height:44px;padding:5px 0;margin-top:8px;background:transparent;border:0;color:var(--mq-blue);font-weight:750;font-size:14px;text-align:left;cursor:pointer}.rival-accept{color:var(--mq-highlight)}
+.dialogue-dismiss:hover,.rival-accept:hover{text-decoration:underline}
+.character-dock{height:0;min-width:0}
+.character-dock:has([data-docked=true]:not([hidden])){height:auto;display:flex;padding:12px 10px 4px;background:var(--mq-bg-dark)}
+.character-dock [data-docked=true]{position:relative;left:auto;right:auto;bottom:auto;width:min(440px,100%);max-width:100%}
+body[data-dialogue=true][data-screen=game] main{padding-bottom:240px}
+.tutorial-target::after{border:3px solid var(--mq-highlight)!important;background:#23b8a51c;animation:first-district 1.8s ease-in-out infinite}
+@keyframes first-district{50%{box-shadow:0 0 0 5px #30ccb328,0 0 12px #30ccb340}}
+body[data-screen=game] main{max-width:none;padding:10px 16px 0}
+body[data-screen=game] .single-city,body[data-screen=game] .single-city .city-panel{max-width:none}
+.city-maps{gap:12px}.city-heading{padding:5px 12px}.city-heading h2{font-size:22px}.city-heading .city-condition{padding:3px 7px;font-size:12px}
+.city-maps:not(.single-city) .city-map{max-width:none;width:100%;height:auto;aspect-ratio:var(--map-aspect)}
+.city-maps:not(.single-city) .map-stats{padding:7px 12px}.city-maps:not(.single-city) .map-stats strong{font-size:19px}.city-maps:not(.single-city) .map-stats span{font-size:10px}
+.city-maps:not(.single-city) .district-context{padding:10px 12px;gap:10px}.city-maps:not(.single-city) #district-description{display:none}
+.city-maps:not(.single-city) .district-inspection{padding:8px 12px}.city-maps:not(.single-city) .upgrade-info{margin:0;font-size:12px}.city-maps:not(.single-city) .upgrade-info strong{font-size:15px}
+.rivalry-score{padding:5px 12px;margin-bottom:8px;gap:12px}.race-goal strong{font-size:14px}.race-goal>span{display:none}.rivalry-score .race-scores{gap:24px}.rivalry-score .race-scores>div{min-width:0}.rivalry-score .race-scores strong{font-size:18px}.rivalry-score .race-scores span{font-size:11px}
+.stock-details{margin:12px;background:var(--mq-navy);color:var(--mq-on-dark);border-radius:6px}.stock-details>summary{color:var(--mq-on-dark)}
+@media(min-width:900px){
+  .single-city .city-panel{grid-template-columns:minmax(0,1fr) 230px}
+  .single-city .city-map{--city-height:clamp(320px,calc(100svh - 135px),850px)}
+  body[data-rival-visible=true] .single-city .city-map{--city-height:clamp(320px,calc(100svh - 230px),850px)}
+  .single-city .city-tools .district-context{padding:14px 12px;gap:16px}.single-city .city-tools .map-diagnostics{padding:0 12px 12px}
+  .single-city .upgrade-info{margin-top:14px}.single-city .upgrade-info strong{font-size:17px}
+}
+@media(max-width:899px){
+  body[data-screen=game] main{padding-inline:8px}
+  .advisor-panel,.advisor-panel.rival-reveal{font-size:14px;gap:8px}
+  .character-portrait{width:76px;height:144px;flex-basis:76px}
+  .dialogue-copy{padding:13px 12px;margin-bottom:12px}.dialogue-copy strong{font-size:15px}
+  .dialogue-copy .eyebrow{font-size:9px}
+  body[data-dialogue=true][data-screen=game] main{padding-bottom:0}
+}
+@media(max-width:700px){
+  .rivalry-score{flex-wrap:nowrap;padding:5px 8px}.race-goal{width:auto}.race-goal strong{font-size:12px}.rivalry-score .race-scores{gap:12px}
+}
+@media(prefers-reduced-motion:reduce){.tutorial-target::after{animation:none;box-shadow:0 0 0 3px #30ccb330}}
+@media(min-width:900px) and (max-height:650px){
+  body[data-dialogue=true] .single-city .city-map{--city-height:calc(100svh - 330px)}
+}

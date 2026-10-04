@@ -1,0 +1,349 @@
+ECON-MG-LEGENDARYBOSS-9102 | scarcity-and-tradeoffs | tier=legendary role=legendaryBoss | SHARED | image=None
+A disaster agency compares feasible stockpiles A: 24,000 meals and 4,000 kits, and B: 12,000 meals and 6,000 kits. Each added kit between these plans has expected relief value equal to 8 meals. A separate proposal C has 24,000 meals and 6,000 kits but exceeds storage capacity. Which decision follows under that valuation?
+A* Choose B over A: 2,000 extra kits cost 12,000 meals but are valued at 16,000 meals; C remains infeasible despite its larger gross benefits.
+B Choose A over B: 2,000 extra kits cost only 2 meals each, making the higher kit allocation wasteful.
+C Choose C: its larger benefit makes the storage constraint economically irrelevant.
+D Choose B over A: the extra kits are free because both plans have positive relief benefits.
+
+P71-SCAR-LB-001 | scarcity-and-tradeoffs | tier=legendary role=legendaryBoss | SHARED | image=None
+A convoy can carry 800 food rations or 500 water rations, with a linear payload tradeoff. Relief requires at least 320 food and 200 water. Above those minima, an extra food ration adds 1 benefit point and an extra water ration adds 2. Which feasible load maximizes the stated benefit?
+A* 320 food and 300 water: it meets both minima and gives 200 additional benefit points.
+B 480 food and 200 water: it meets both minima and gives 160 additional benefit points.
+C 400 food and 250 water: equal payload shares necessarily maximize the benefit measure.
+D 480 food and 300 water: the two separate maxima imply enough capacity for this combined load.
+
+P71-SCAR-LB-002 | scarcity-and-tradeoffs | tier=legendary role=legendaryBoss | SHARED | image=None
+A city has one waterfront parcel. A flood barrier yields net benefits of $30 million; housing yields $28 million; a park yields $12 million. Housing and the park each require the entire parcel. The city chooses the barrier for a stated safety priority. Which analysis correctly describes the tradeoff?
+A* The best forgone feasible use is $28 million housing; the safety priority explains the choice but does not erase that sacrificed value.
+B The forgone value is $40 million because the benefits of every rejected use must be added even when they cannot coexist.
+C The forgone value is zero because the barrier has the largest net benefit and was chosen for public safety.
+D The forgone value is $2 million because the difference between chosen and next-best benefits is the entire displaced use.
+
+P71-SCAR-LB-003 | scarcity-and-tradeoffs | tier=legendary role=legendaryBoss | SHARED | image=None
+A supply chain can deliver at most 10 battery packs weekly because battery assembly is capped at 10, minerals at 15 and transmission installations at 12. Assembly productivity triples with no other capacity change. Demand is 20 packs. Which investment would next expand deliverable output?
+A* Transmission capacity: output first rises to 12, then can rise to 15 before minerals become the next bottleneck.
+B Mineral capacity: output first rises to 30, then mineral expansion is needed only after demand reaches 30.
+C More assembly capacity: tripling assembly leaves its old 10-pack limit binding until every stage also triples.
+D No investment: the productivity improvement makes every 20-pack demand feasible despite the other stated limits.
+
+P71-SCAR-LB-004 | scarcity-and-tradeoffs | tier=legendary role=legendaryBoss | SHARED | image=None
+A wealthy country has 100 engineer-years available this year. Hospital upgrades require 70 and rail expansion 60; each project must be completed as a whole. Funding covers both, but training extra engineers takes a year. Which plan and interpretation are feasible now?
+A* Complete one project now and schedule the other later; the 30-engineer-year shortfall is a current real constraint despite adequate funds.
+B Complete both now by borrowing more money; financing removes the need for the missing 30 engineer-years.
+C Assign 50 engineer-years to each and count both completed; equal resource shares satisfy any whole-project requirement.
+D Complete both now because training expands next year’s workforce, so its future capacity can be used this year.
+
+P71-SCAR-LB-005 | scarcity-and-tradeoffs | tier=legendary role=legendaryBoss | SHARED | image=None
+A vaccine program compares two feasible allocations of a fixed stock. A is projected to save 120 lives, including 10 in remote communities. B saves 110, including 30 remotely. A charter requires at least 25 remote lives saved. Which evaluation respects both the estimates and the stated constraint?
+A* A saves most overall; only B meets the remote constraint, sacrificing 10 total lives for 20 additional remote lives.
+B A meets the charter because its larger total automatically compensates remote communities for receiving fewer doses.
+C B maximizes the stated total because adding its 30 remote lives to 110 produces 140 lives saved.
+D B removes scarcity because satisfying the charter makes the additional 10 projected total lives costless to obtain.
+
+P71-SCAR-LB-006 | scarcity-and-tradeoffs | tier=legendary role=legendaryBoss | SHARED | image=None
+A port has one crew for this month. Routine maintenance prevents a certain $40 million loss this year. A resilience project instead avoids $100 million of storm losses with probability 0.6 next year but leaves the $40 million current loss. At a 20% discount rate, ignoring other effects and using expected present value, which allocation is better?
+A* Resilience by $10 million: its expected discounted benefit is $50 million versus $40 million for maintenance.
+B Maintenance by $20 million: the resilience project’s $100 million must be multiplied by the 0.2 discount rate.
+C Resilience by $60 million: compare the full possible $100 million directly with the certain $40 million.
+D Maintenance because future benefits are uncertain; a positive probability makes expected-value comparison invalid.
+
+P52A-AS-EL-002 | short-run-aggregate-supply | tier=elite role=elite | MACRO | image=None
+Workers expect 6 percent inflation, but actual inflation is 2 percent and wage contracts reflect the higher expectation. What happens to SRAS relative to contracts based on accurate expectations?
+A Contract nominal wages are lower and real labor costs at actual prices are lower; SRAS lies farther right
+B Contract nominal wages are lower and real labor costs at actual prices are higher; SRAS lies farther left
+C* Contract nominal wages are higher and real labor costs at actual prices are higher; SRAS lies farther left
+D Contract nominal wages are higher and real labor costs at actual prices are lower; SRAS lies farther right
+
+P52A-AS-EL-003 | short-run-aggregate-supply | tier=elite role=elite | MACRO | image=None
+A severe storm destroys capital, while emergency deregulation lowers current compliance costs. Which conclusion is strongest?
+A Capital destruction reduces LRAS; cost relief shifts only AD, so the SRAS direction is certainly left
+B* Capital destruction reduces LRAS; its adverse SRAS effect competes with lower compliance costs, leaving net SRAS uncertain
+C Capital destruction reduces LRAS; lower compliance costs also reduce SRAS, so both short-run forces shift supply left
+D Lower compliance costs raise LRAS; capital destruction affects only SRAS, so long-run capacity rises
+
+P52A-AS-EL-004 | short-run-aggregate-supply | tier=elite role=elite | MACRO | image=None
+A student says, “Any rise in the price level shifts SRAS right.” What is the best correction?
+A* Actual price changes move along SRAS; changed expected prices or input costs shift SRAS
+B Actual price changes shift SRAS; changed expected prices or input costs move along SRAS
+C Actual and expected price changes both move along SRAS; only input costs shift SRAS
+D Actual and expected price changes both shift SRAS; only input costs move along SRAS
+
+P52A-AS-L-002 | short-run-aggregate-supply | tier=legendary role=legendary | MACRO | image=None
+Expected inflation rises, productivity improves, and oil prices fall. What can be concluded about SRAS?
+A Left: expected inflation and productivity shift SRAS left, oil shifts it right
+B Right: all three changes shift the SRAS curve right
+C Unchanged: the opposing SRAS shifts necessarily cancel each other
+D* Ambiguous: expectations shift SRAS left, productivity and oil shift it right
+
+P52A-AS-L-004 | short-run-aggregate-supply | tier=legendary role=legendary | MACRO | image=None
+Nominal wages are fixed for one year. The price level rises unexpectedly, then wage contracts reset to reflect the higher expected price level. What sequence is most likely?
+A Initially shift SRAS left; later wage resetting moves up the same curve
+B* Initially move up along SRAS; later wage resetting shifts SRAS left
+C Initially move up along SRAS; later wage resetting shifts SRAS right
+D Initially shift SRAS right; later wage resetting moves down the same curve
+
+PG3-AS-L-001 | short-run-aggregate-supply | tier=legendary role=legendary | MACRO | image=5
+Refer to the first AS graph, treating AS0 and AS1 as short-run supply. A temporary energy bottleneck and a permanent loss of productive equipment could each help explain the shift to AS1. After energy costs normalize, which evidence is needed to predict whether wage adjustment restores the old potential-output level?
+A Whether the price level initially rose; any price rise proves that LRAS stayed fixed.
+B* Whether productive capacity was restored and LRAS retained its old position; the SRAS-only drawing does not establish that.
+C Whether actual GDP fell; any actual output loss permanently lowers potential output by the same amount.
+D Whether demand policy can raise spending; a rightward AD shift by itself restores lost productive capacity.
+
+PG3-AS-L-002 | short-run-aggregate-supply | tier=legendary role=legendary | MACRO | image=6
+Refer to the second AS graph, treating AS0 and AS1 as short-run supply. Both lower expected prices and a lasting productivity gain could contribute to the shift to AS1. If expected prices later return to their original level but the productivity gain remains, which prediction is justified?
+A SRAS must return exactly to AS0 and LRAS must remain fixed because expected prices returned.
+B SRAS must stay exactly at AS1 because a permanent productivity change prevents any expectations effect.
+C LRAS must shift left because returning expected prices erase the productive-capacity gain.
+D* Some rightward supply effect can remain, and potential output can be higher; the exact final SRAS position needs the sizes of the two original contributions.
+
+P52A-AS-B1-001 | short-run-aggregate-supply | tier=easy role=boss | MACRO | image=None
+Nominal wage contracts for 20 workers are fixed. Actual output prices rise unexpectedly while other input prices are unchanged. Which initial response and later qualification are consistent with the sticky-wage account?
+A The actual price rise shifts SRAS left immediately because higher revenues reduce profitable output
+B* Lower real labor cost supports movement up SRAS; later wage resetting can shift SRAS left
+C Higher real labor cost supports movement down SRAS; later wage resetting shifts SRAS right
+D The actual price rise immediately shifts LRAS right; nominal contracts determine long-run capacity
+
+P52A-AS-B1-003 | short-run-aggregate-supply | tier=easy role=boss | MACRO | image=None
+A supply reform reduces production costs, while firms expect a higher general price level in future wage bargaining. Which SRAS conclusion is justified without magnitudes?
+A Both push SRAS right; higher expected wages encourage firms to supply more.
+B Both push SRAS left; lower production costs reduce the supply of output.
+C Costs push right, expectations push left; the net shift is exactly zero.
+D* Costs push SRAS right, expectations push left; the net shift is uncertain.
+
+P52A-AS-B2-001 | short-run-aggregate-supply | tier=medium role=boss | MACRO | image=None
+Only one shock occurs in an economy producing 40 units: output falls while the price level rises. AD and LRAS initially remain unchanged. Which short-run diagnosis and policy tradeoff follow?
+A* An adverse SRAS shift is consistent; demand tightening can reduce price pressure but worsen the output loss
+B A leftward AD shift is consistent; demand tightening raises output and prices together
+C A favorable SRAS shift is consistent; demand expansion lowers prices and restores output
+D A rightward LRAS shift is consistent; no short-run supply change can produce the observation
+
+P52A-AS-B2-003 | short-run-aggregate-supply | tier=medium role=boss | MACRO | image=None
+Firms face higher actual output prices but unchanged expected prices and input costs. An analyst shifts the entire SRAS curve right. Which correction identifies the axis-variable error?
+A Use a rightward LRAS shift for actual prices; expected prices have no supply implication
+B Keep output fixed on a vertical SRAS at every horizon because actual prices never affect production
+C* Use movement along SRAS for actual prices; a change in expected prices or input costs would shift the curve
+D Use a rightward SRAS shift for actual prices; expected prices only move along it
+
+P52A-AS-B3-002 | short-run-aggregate-supply | tier=hard role=boss | MACRO | image=None
+Nominal wage contracts for 60 workers are fixed. Actual output prices rise unexpectedly while other input prices are unchanged. Which initial response and later qualification are consistent with the sticky-wage account?
+A The actual price rise immediately shifts LRAS right; nominal contracts determine long-run capacity
+B The actual price rise shifts SRAS left immediately because higher revenues reduce profitable output
+C* Lower real labor cost supports movement up SRAS; later wage resetting can shift SRAS left
+D Higher real labor cost supports movement down SRAS; later wage resetting shifts SRAS right
+
+P52A-AS-B3-003 | short-run-aggregate-supply | tier=hard role=boss | MACRO | image=None
+Lower input costs shift SRAS right, but expected wages rise enough to offset that shift at every price level. An observer sees the original curve and says neither force mattered. Which correction is supported?
+A Both forces shifted LRAS equally, even without any change in real resources.
+B* The unchanged net curve can hide two nonzero, opposing supply effects.
+C The unchanged net curve proves both individual effects were zero.
+D Both forces shifted AD instead, since supply curves cannot have offsetting changes.
+
+P52A-AS-LB-001 | short-run-aggregate-supply | tier=legendary role=legendaryBoss | MACRO | image=None
+Productivity rises permanently, expected prices rise, and oil prices fall. What is the most accurate result?
+A Higher expected prices lower LRAS; productivity and cheaper oil raise SRAS, so the curves move in opposite directions
+B Productivity leaves LRAS fixed; expected prices and cheaper oil offset in SRAS, so both curves remain unchanged
+C* Productivity raises LRAS; higher expected prices oppose productivity and cheaper oil in SRAS, so its net direction is uncertain
+D Productivity raises LRAS; expected prices and cheaper oil reinforce productivity in SRAS, so both curves shift right
+
+P52A-AS-LB-002 | short-run-aggregate-supply | tier=legendary role=legendaryBoss | MACRO | image=None
+Nominal wages are fixed when the price level unexpectedly rises, then contracts reset with higher expected inflation. What sequence follows?
+A* Movement up along SRAS, then a leftward SRAS shift.
+B An immediate rightward LRAS shift.
+C A leftward AD shift only.
+D A rightward SRAS shift, then movement down.
+
+P52B-S2-SRPC-L-001 | short-run-phillips-curve | tier=legendary role=legendary | MACRO | image=None
+Two episodes produce the same increase in inflation. In one, unemployment falls after aggregate demand expands; in the other, unemployment rises after an adverse supply shock. What explains the difference?
+A Both episodes are movements along one SRPC, but they begin from different unemployment rates.
+B Both episodes shift the LRPC because inflation changes the natural rate in opposite directions.
+C The supply shock lowers expected inflation and moves the economy down an unchanged SRPC.
+D* The demand expansion moves along an SRPC, while the supply shock shifts the curve.
+
+PG5-PC-L-012 | short-run-phillips-curve | tier=legendary role=main | MACRO | image=58
+Refer to the graph with A on SRPC0 and LRPC. Later observations show unemployment at A’s rate but persistently higher inflation. One analyst says the SRPC must have become vertical; another says the same vertical LRPC can coexist with a higher SRPC after contracts adjust. Which additional evidence would support the second interpretation?
+A Inflation rose once, which by itself proves that expectations already adjusted fully.
+B Current unemployment equals the natural rate, which requires every SRPC to be vertical.
+C The price level is higher, which proves that the natural unemployment rate permanently fell.
+D* Wage-setting expectations have risen to match the sustained inflation while labor-market structure and supply conditions are unchanged.
+
+ECON-SP-MEDIUMBOSS-3000 | short-run-phillips-curve | tier=medium role=boss | MACRO | image=None
+An economy starts at natural unemployment. Unexpected demand expansion raises inflation and lowers unemployment; expected inflation and supply conditions initially stay fixed. Which first-stage and later-stage account is consistent?
+A First move along LRPC; later expectations rotate it down, lowering natural unemployment.
+B First shift SRPC down; later inflation falls further, preserving lower unemployment.
+C* First move along SRPC; later expectations shift it up, restoring natural unemployment.
+D First shift SRPC up; later expectations shift LRPC left, preserving lower unemployment.
+
+ECON-SP-MEDIUMBOSS-3001 | short-run-phillips-curve | tier=medium role=boss | MACRO | image=None
+Use inflation = expected inflation − 0.5×(unemployment−5), with rates in percent. Expected inflation is 3%. A policy moves unemployment from 5% to 3%. Which result and condition matter?
+A Inflation is 4%; this result survives fully adjusted expectations unchanged.
+B* Inflation is 4%; this curve movement assumes fixed expectations.
+C Inflation is 2%; lower unemployment reduces inflation with fixed expectations.
+D Inflation is 3%; natural unemployment fixes inflation despite the policy.
+
+P52B-S2-SRPC-B2-001 | short-run-phillips-curve | tier=medium role=boss | MACRO | image=None
+Inflation and unemployment both rise in a country. Expected inflation or supply conditions may have changed. Which diagnosis avoids calling every observation a movement along the same SRPC?
+A A positive demand movement fits; both variables rise along the fixed downward curve.
+B* An upward SRPC shift fits; a movement along the fixed downward curve does not.
+C A downward SRPC shift fits; higher unemployment establishes lower inflation expectations.
+D An upward-sloping LRPC fits; two observed outcomes establish the long-run relation.
+
+PM2A-SRPC-EB-007 | short-run-phillips-curve | tier=easy role=boss | MACRO | image=None
+Two countries each employ 160 workers and have identical natural unemployment. Both reduce demand, but one begins with higher expected inflation. Under parallel SRPCs and unchanged expectations during the adjustment, which comparison is supported?
+A At a common unemployment rate, inflation must be equal because natural unemployment is equal
+B The high-expectations country has lower inflation at every unemployment rate because expectations reverse the tradeoff
+C Reducing demand necessarily shifts both LRPCs right by the same amount
+D* At a common unemployment rate, the high-expectations country retains higher inflation; equal unemployment does not identify one common SRPC
+
+PM2A-SRPC-EB-008 | short-run-phillips-curve | tier=easy role=boss | MACRO | image=None
+An expected demand expansion raises actual and expected inflation together, with no supply shock or labor-market reform. Can the initial surprise-inflation unemployment gain be inferred?
+A Yes; expected inflation shifts the long-run curve left and lowers natural unemployment.
+B No; expected demand expansion necessarily reduces actual inflation below its initial rate.
+C* No; equal actual and expected inflation supplies no inflation surprise to push unemployment below natural.
+D Yes; any higher actual inflation implies the same unemployment gain regardless of expectations.
+
+PM2A-SRPC-EB-009 | short-run-phillips-curve | tier=easy role=boss | MACRO | image=None
+Use π=πe−0.5(u−5), with rates in percent. Actual inflation is 4% and unemployment is 3%. What expectation is consistent, and does that outcome locate the economy on LRPC?
+A Expected inflation is 2%; lower unemployment must reduce inflation below expectations.
+B* Expected inflation is 3%; unemployment below 5% places the outcome off LRPC.
+C Expected inflation is 5%; unemployment below 5% places the outcome on LRPC.
+D Expected inflation is 4%; actual inflation alone identifies expectations and the long run.
+
+PM2A-SRPC-FB-010 | short-run-phillips-curve | tier=hard role=boss | MACRO | image=None
+Inflation and unemployment rise together. Analysts disagree between an adverse supply shock and higher inflation expectations. Do the two outcomes alone identify which mechanism caused the shift?
+A* No; either can worsen the short-run relation, so additional evidence must distinguish the cause.
+B Yes; rising unemployment proves a pure favorable demand shock along an unchanged curve.
+C Yes; rising inflation proves expectations were unchanged during the observation.
+D No; neither mechanism can shift the short-run Phillips curve at all.
+
+PM2A-SRPC-FB-011 | short-run-phillips-curve | tier=hard role=boss | MACRO | image=None
+Two countries each employ 240 workers and have identical natural unemployment. Both reduce demand, but one begins with higher expected inflation. Under parallel SRPCs and unchanged expectations during the adjustment, which comparison is supported?
+A At a common unemployment rate, inflation must be equal because natural unemployment is equal
+B The high-expectations country has lower inflation at every unemployment rate because expectations reverse the tradeoff
+C Reducing demand necessarily shifts both LRPCs right by the same amount
+D* At a common unemployment rate, the high-expectations country retains higher inflation; equal unemployment does not identify one common SRPC
+
+PM2A-SRPC-FB-012 | short-run-phillips-curve | tier=hard role=boss | MACRO | image=None
+After a demand surprise lowers unemployment, expectations fully catch up while productive capacity is unchanged. A report describes the return to natural unemployment as a reversal of the original demand increase. Which correction is needed?
+A Expectations adjustment permanently lowers natural unemployment below the initial benchmark.
+B Return to natural unemployment requires prices to fall back to their original level.
+C* Expectations adjustment can reverse the real gain even if higher demand and inflation persist.
+D Return to natural unemployment proves nominal demand returned to its old level.
+
+PM2A-SRPC-LB-013 | short-run-phillips-curve | tier=legendary role=legendaryBoss | MACRO | image=None
+Use π=πe−0.5(u−5). Expectations rise from 3% to 4% after a demand surprise. If actual inflation is held at 4%, what happens to unemployment, and what inflation would retain u=3%?
+A Unemployment remains 3%; retaining 3% requires no inflation increase beyond 4%.
+B Unemployment rises to 7%; retaining 3% would require inflation of 3%.
+C Unemployment returns to 5%; retaining 3% would require inflation of 4%.
+D* Unemployment returns to 5%; retaining 3% would require inflation of 5%.
+
+PM2A-SRPC-LB-014 | short-run-phillips-curve | tier=legendary role=legendaryBoss | MACRO | image=None
+After an adverse supply shock, policymakers hold unemployment at its former natural rate by supporting demand. Inflation rises. Does unchanged unemployment prove the short-run Phillips relation stayed fixed?
+A No; unchanged unemployment proves natural unemployment permanently fell.
+B Yes; demand support eliminates the supply shock rather than changing the chosen outcome.
+C* No; policy can offset the unemployment effect while inflation reveals a worse short-run relation.
+D Yes; any SRPC shift must change unemployment even when policymakers adjust demand.
+
+PM2A-SRPC-LB-015 | short-run-phillips-curve | tier=legendary role=legendaryBoss | MACRO | image=None
+A government maintains a fixed unemployment gap below the natural rate through successive demand expansions. Expectations adapt to observed inflation, the Phillips slope is unchanged, and no supply or structural shock occurs. Which distinction explains why a permanently higher but stable inflation rate is insufficient?
+A Maintaining the gap requires only a one-time increase in inflation; expectations adjustment then preserves the lower unemployment.
+B Maintaining the gap shifts LRPC left even though the prompt holds labor-market structure fixed.
+C* Maintaining the gap requires continuing positive inflation surprises; once inflation stabilizes and expectations catch up, unemployment returns toward natural.
+D Maintaining the gap requires falling actual inflation while expected inflation rises.
+
+ECON-NL-LEGENDARY-9054 | sources-of-productivity | tier=legendary role=legendary | MACRO | image=None
+A factory adds machinery but productivity barely changes. After operator training, output rises with the same machines and labor hours. A manager concludes that machines have no productive value. Which interpretation best fits both stages?
+A* Training helped realize the value of complementary capital; the first stage did not show that machines were useless
+B Training proves all earlier spending on machines should be subtracted from GDP
+C The later gain must be more physical capital because worker skills are unchanged by training
+D The data prove training raises output equally in every factory, regardless of equipment
+
+ECON-NL-LEGENDARY-9056 | sources-of-productivity | tier=legendary role=legendary | MACRO | image=None
+Two plants initially use the same machines and hours. Plant A adopts a freely available scheduling method and raises output 8%. Plant B trains operators without changing its method and raises output 8%. What can be inferred about productivity sources?
+A* A changed technological knowledge and B human capital; equal output gains do not make the mechanisms identical
+B Both added physical capital because output rose without more labor hours
+C Both changed natural resources because the gain has the same size
+D A’s gain is human capital and B’s is technology solely because both involve information
+
+ECON-NL-LEGENDARY-9058 | sources-of-productivity | tier=legendary role=legendary | MACRO | image=None
+With labor, skills and technology fixed, output at 10, 20 and 30 identical machines is 100, 160 and 200 units. A planner predicts that 40 machines must yield 260. Which assessment follows from the observed pattern?
+A* The successive gains are 60 and 40; continued diminishing marginal returns would put the next gain below 40
+B The observed average gain is 50, so 40 machines must yield exactly 250
+C The capital stock doubled once, proving output must double at 40 machines
+D The last gain was 40, so every later ten machines must add exactly 40
+
+ECON-NL-MEDIUMBOSS-3012 | sources-of-productivity | tier=medium role=boss | MACRO | image=None
+Two economies each employ 170 workers. One has little capital per worker and the other much more, with similar technology and institutions. Which qualification should accompany a catch-up prediction?
+A* The capital-poor economy may earn higher marginal returns, but investment and effective use of capital are still required
+B The capital-poor economy must grow faster regardless of investment, institutions or technology access
+C The capital-rich economy must have higher percentage growth because its output level is higher
+D Equal worker counts require equal output per worker regardless of capital
+
+ECON-NL-MEDIUMBOSS-3013 | sources-of-productivity | tier=medium role=boss | MACRO | image=None
+A discovery increases available mineral resources for 180 workers, but extraction technology and transport remain inadequate. Which policy diagnosis best connects resources to productivity?
+A The resource alone guarantees an immediate proportional increase in output per worker
+B Transport affects consumption only and cannot limit production from resources
+C Resource abundance makes worker skills and institutions irrelevant to long-run output
+D* The resource expands potential opportunities, but complementary technology/infrastructure can be the binding constraint
+
+ECON-NL-MEDIUMBOSS-3014 | sources-of-productivity | tier=medium role=boss | MACRO | image=None
+A factory replaces failing machines while keeping worker hours and skills fixed. Output stays at 100 units per hour. Without replacement it would have fallen to 80. A manager says unchanged observed productivity proves the physical-capital investment added nothing. Which evaluation uses the relevant comparison?
+A The investment adds zero because only the comparison with last year can measure its contribution
+B The investment reduces productivity by 20 because the old machines would have produced 80
+C* The investment preserves 20 units per hour relative to no replacement, despite no rise from last year
+D The investment adds 100 because all current output must be attributed to the new machines
+
+ECON-NL-MEDIUMBOSS-3015 | sources-of-productivity | tier=medium role=boss | MACRO | image=None
+After staff training and a new production method arrive together, output per hour rises. Management wants evidence that isolates the human-capital contribution. Which follow-up comparison best does that, with otherwise comparable workers?
+A Compare trained workers using the new method with untrained workers using the old method for equal hours
+B* Compare trained and untrained workers using the same machines and the same method for equal hours
+C Compare total output before and after doubling both the number of workers and their hours
+D Compare output after installing more machines and the new method without recording worker training
+
+ECON-NL-MEDIUMBOSS-3016 | sources-of-productivity | tier=medium role=boss | MACRO | image=None
+A fixed technology gives an extra 210 units of output from the first additional machine and only 105 from the second. A proposal assumes each later machine adds the first machine's amount. What is the flaw?
+A* It ignores diminishing marginal gains; total output can still rise.
+B It ignores declining total output; the second machine reduces production.
+C It ignores labor displacement; the second machine must halve employment.
+D It ignores technical progress; each machine raises future marginal gains.
+
+ECON-NL-MEDIUMBOSS-3017 | sources-of-productivity | tier=medium role=boss | MACRO | image=None
+Two economies each employ 220 workers. One has little capital per worker and the other much more, with similar technology and institutions. Which qualification should accompany a catch-up prediction?
+A The capital-poor economy must grow faster regardless of investment, institutions or technology access
+B The capital-rich economy must have higher percentage growth because its output level is higher
+C Equal worker counts require equal output per worker regardless of capital
+D* The capital-poor economy may earn higher marginal returns, but investment and effective use of capital are still required
+
+ECON-NL-MEDIUMBOSS-3018 | sources-of-productivity | tier=medium role=boss | MACRO | image=None
+A discovery increases available mineral resources for 230 workers, but extraction technology and transport remain inadequate. Which policy diagnosis best connects resources to productivity?
+A Transport affects consumption only and cannot limit production from resources
+B Resource abundance makes worker skills and institutions irrelevant to long-run output
+C* The resource expands potential opportunities, but complementary technology/infrastructure can be the binding constraint
+D The resource alone guarantees an immediate proportional increase in output per worker
+
+ECON-NL-MEDIUMBOSS-3019 | sources-of-productivity | tier=medium role=boss | MACRO | image=None
+Two otherwise identical workshops keep the same machines, worker skills and total hours. Only Workshop A adopts a new production method: its output rises from 100 to 120, while B stays at 100. An analyst attributes A’s gain to capital deepening. Which explanation and productivity comparison are supported?
+A Extra machines are the supported source; A’s output per hour rises 20% because capital must have increased
+B* The method is the supported source; A’s output per hour rises 20% relative to its unchanged-hours baseline
+C Extra hours are the supported source; A’s output per hour is unchanged because output growth is labor growth
+D Worker training is the supported source; A’s output per hour falls because unchanged machinery limits production
+
+ECON-NL-MEDIUMBOSS-3020 | sources-of-productivity | tier=medium role=boss | MACRO | image=None
+A country imports identical machines while its most skilled operators emigrate. Output per remaining worker fails to rise. Which diagnosis challenges the claim that more equipment guarantees higher productivity?
+A Technology necessarily deteriorated, since capital and skills cannot affect output per worker.
+B* Physical capital increased, but lost human capital can offset its productivity contribution.
+C Physical capital decreased, since imported equipment is excluded from productive capital.
+D Human capital increased, since a smaller workforce automatically has more skill per worker.
+
+ECON-NL-MEDIUMBOSS-3021 | sources-of-productivity | tier=medium role=boss | MACRO | image=None
+A fixed technology gives an extra 260 units of output from the first additional machine and only 130 from the second. A proposal assumes each later machine adds the first machine's amount. What is the flaw?
+A* It ignores diminishing marginal gains; total output can still rise.
+B It ignores declining total output; the second machine reduces production.
+C It ignores labor displacement; the second machine must halve employment.
+D It ignores technical progress; each machine raises future marginal gains.
+
+ECON-NL-MEDIUMBOSS-3022 | sources-of-productivity | tier=medium role=boss | MACRO | image=None
+Two economies each employ 270 workers. One has little capital per worker and the other much more, with similar technology and institutions. Which qualification should accompany a catch-up prediction?
+A The capital-poor economy must grow faster regardless of investment, institutions or technology access
+B The capital-rich economy must have higher percentage growth because its output level is higher
+C Equal worker counts require equal output per worker regardless of capital
+D* The capital-poor economy may earn higher marginal returns, but investment and effective use of capital are still required

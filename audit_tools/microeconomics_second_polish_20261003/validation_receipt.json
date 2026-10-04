@@ -1,0 +1,1331 @@
+{
+  "summary": {
+    "duplicate_groups_reviewed": 29,
+    "duplicate_ids_reviewed": 90,
+    "substantive_duplicates_revised": 59,
+    "retained_representatives": 29,
+    "retained_duplicate_extras": 2,
+    "duplicate_instructor_review_exceptions": [
+      "42660",
+      "42697"
+    ],
+    "cross_group_parallel_representatives": [
+      "P62C-CPS-L-002",
+      "P62C-CPS-L-007"
+    ],
+    "graph_targets_reviewed": 356,
+    "mechanical_pattern_candidates": 31,
+    "graph_items_revised_for_variety": 31,
+    "pattern_review_retained": 325,
+    "graph_records_unchanged": 321,
+    "difficulty_candidates": 5,
+    "tier_coherence_repairs": 5,
+    "difficulty_review_exceptions": 0,
+    "unique_graph_changes": 35,
+    "candidate_union": 125,
+    "changed_ids": 94,
+    "unauthorized_changes": 0,
+    "construct_tests_passed": 35,
+    "graph_tests_passed": 35,
+    "numerical_failures": 0,
+    "answer_resolution_failures": 0,
+    "feedback_failures": 0,
+    "answer_hashes_changed": 64,
+    "exact_duplicate_diagnostic_flags_remaining": 4,
+    "exact_duplicate_diagnostic_groups_remaining": 2,
+    "near_duplicate_diagnostic_pairs_remaining": 59,
+    "additional_near_pairs_excluding_two_exact_exceptions": 57,
+    "literal_exact_stem_groups_including_graph_tasks": 45,
+    "composer_tests": "29/29",
+    "exporter_tests": "14/14",
+    "csv_mismatches": 0,
+    "pdf_mismatches": 0,
+    "pdf_graph_items_visually_inspected": 35,
+    "pdf_question_core_checks": 6301,
+    "micro_pdf_pages": 4424,
+    "publication_ids_unchanged": 6276,
+    "out_of_scope_legacy_publication_omissions": 25
+  },
+  "source_sha256": "9f8b0fa6bfc4dec8af68deef135ee02d90c1fdc350a5bff348d3564ef984cfca",
+  "reports": {
+    ".md": "4224a2456c5eec643556c58445df8e26485cbdc5b559354e3a16fc5bbff9ec4e",
+    ".json": "1dee51410c460e3a25b16574054c7d0afa05d0f74aebf68bc9972bfb6db50bd1"
+  },
+  "validation": {
+    "sourceSha256": "9f8b0fa6bfc4dec8af68deef135ee02d90c1fdc350a5bff348d3564ef984cfca",
+    "integrity": {
+      "concepts": 149,
+      "questions": 9779,
+      "graphs": 1147,
+      "assets": 507
+    },
+    "changedIds": [
+      "42028",
+      "42038",
+      "42048",
+      "42058",
+      "42204",
+      "42207",
+      "42352",
+      "42360",
+      "42361",
+      "42363",
+      "42376",
+      "42587",
+      "42588",
+      "42618",
+      "42619",
+      "42620",
+      "42621",
+      "42622",
+      "42623",
+      "42625",
+      "42627",
+      "42645",
+      "42646",
+      "42647",
+      "42648",
+      "42649",
+      "42650",
+      "42651",
+      "42652",
+      "42653",
+      "42654",
+      "42655",
+      "42661",
+      "42662",
+      "42663",
+      "42664",
+      "42665",
+      "42666",
+      "42667",
+      "42668",
+      "42673",
+      "42674",
+      "42675",
+      "42676",
+      "42677",
+      "42678",
+      "42679",
+      "42689",
+      "42690",
+      "42691",
+      "42692",
+      "42693",
+      "42694",
+      "42695",
+      "42696",
+      "42698",
+      "42699",
+      "42701",
+      "42702",
+      "42703",
+      "42704",
+      "42705",
+      "42706",
+      "42707",
+      "42708",
+      "ECON-MG-MEDIUM-186",
+      "ECON-MG-MEDIUM-189",
+      "P62B-ELAS-E-028",
+      "P62B-ELAS-EL-038",
+      "P62B-ELAS-M-039",
+      "P62C-CPS-L-024",
+      "P62C-CPS-L-050",
+      "P62C-CPS-L-055",
+      "P62C-CPS-M-029",
+      "P62E-COP-H-018",
+      "P62E-COP-H-019",
+      "P62E-COP-L-053",
+      "P62E-COP-L-054",
+      "P62E-COP-M-024",
+      "P62F-PC-EL-038",
+      "P62F-PC-EL-044",
+      "P62F-PC-H-042",
+      "P62F-PC-L-097",
+      "P62F-PC-M-048",
+      "P62G-MON-H-032",
+      "P62G-MON-H-036",
+      "P62H-MCMP-EL-023",
+      "P62H-MCMP-H-016",
+      "P62H-MCMP-L-032",
+      "P62H-MCMP-L-035",
+      "P62H-MCMP-L-038",
+      "P62H-MCMP-L-041",
+      "P62H-MCMP-L-044",
+      "P62H-MCMP-L-094"
+    ],
+    "keyChecks": [
+      {
+        "id": "42028",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 0,
+        "hashChanged": false
+      },
+      {
+        "id": "42038",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 2,
+        "hashChanged": false
+      },
+      {
+        "id": "42048",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 0,
+        "hashChanged": false
+      },
+      {
+        "id": "42058",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 2,
+        "hashChanged": false
+      },
+      {
+        "id": "42204",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 0,
+        "hashChanged": true
+      },
+      {
+        "id": "42207",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 3,
+        "hashChanged": false
+      },
+      {
+        "id": "42352",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 0,
+        "hashChanged": false
+      },
+      {
+        "id": "42360",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 0,
+        "hashChanged": false
+      },
+      {
+        "id": "42361",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 1,
+        "hashChanged": false
+      },
+      {
+        "id": "42363",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 3,
+        "hashChanged": false
+      },
+      {
+        "id": "42376",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 0,
+        "hashChanged": true
+      },
+      {
+        "id": "42587",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 3,
+        "hashChanged": true
+      },
+      {
+        "id": "42588",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 0,
+        "hashChanged": true
+      },
+      {
+        "id": "42618",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 2,
+        "hashChanged": true
+      },
+      {
+        "id": "42619",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 3,
+        "hashChanged": true
+      },
+      {
+        "id": "42620",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 0,
+        "hashChanged": true
+      },
+      {
+        "id": "42621",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 1,
+        "hashChanged": true
+      },
+      {
+        "id": "42622",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 2,
+        "hashChanged": true
+      },
+      {
+        "id": "42623",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 3,
+        "hashChanged": true
+      },
+      {
+        "id": "42625",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 1,
+        "hashChanged": true
+      },
+      {
+        "id": "42627",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 3,
+        "hashChanged": true
+      },
+      {
+        "id": "42645",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 1,
+        "hashChanged": true
+      },
+      {
+        "id": "42646",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 2,
+        "hashChanged": true
+      },
+      {
+        "id": "42647",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 3,
+        "hashChanged": true
+      },
+      {
+        "id": "42648",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 0,
+        "hashChanged": true
+      },
+      {
+        "id": "42649",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 1,
+        "hashChanged": true
+      },
+      {
+        "id": "42650",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 2,
+        "hashChanged": true
+      },
+      {
+        "id": "42651",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 3,
+        "hashChanged": true
+      },
+      {
+        "id": "42652",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 0,
+        "hashChanged": true
+      },
+      {
+        "id": "42653",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 1,
+        "hashChanged": true
+      },
+      {
+        "id": "42654",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 2,
+        "hashChanged": true
+      },
+      {
+        "id": "42655",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 3,
+        "hashChanged": true
+      },
+      {
+        "id": "42661",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 1,
+        "hashChanged": true
+      },
+      {
+        "id": "42662",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 2,
+        "hashChanged": true
+      },
+      {
+        "id": "42663",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 3,
+        "hashChanged": true
+      },
+      {
+        "id": "42664",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 0,
+        "hashChanged": true
+      },
+      {
+        "id": "42665",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 1,
+        "hashChanged": true
+      },
+      {
+        "id": "42666",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 2,
+        "hashChanged": true
+      },
+      {
+        "id": "42667",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 3,
+        "hashChanged": true
+      },
+      {
+        "id": "42668",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 0,
+        "hashChanged": true
+      },
+      {
+        "id": "42673",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 1,
+        "hashChanged": true
+      },
+      {
+        "id": "42674",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 2,
+        "hashChanged": true
+      },
+      {
+        "id": "42675",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 3,
+        "hashChanged": true
+      },
+      {
+        "id": "42676",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 0,
+        "hashChanged": true
+      },
+      {
+        "id": "42677",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 1,
+        "hashChanged": true
+      },
+      {
+        "id": "42678",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 2,
+        "hashChanged": true
+      },
+      {
+        "id": "42679",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 3,
+        "hashChanged": true
+      },
+      {
+        "id": "42689",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 1,
+        "hashChanged": true
+      },
+      {
+        "id": "42690",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 2,
+        "hashChanged": true
+      },
+      {
+        "id": "42691",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 3,
+        "hashChanged": true
+      },
+      {
+        "id": "42692",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 0,
+        "hashChanged": true
+      },
+      {
+        "id": "42693",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 1,
+        "hashChanged": true
+      },
+      {
+        "id": "42694",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 2,
+        "hashChanged": true
+      },
+      {
+        "id": "42695",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 3,
+        "hashChanged": true
+      },
+      {
+        "id": "42696",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 0,
+        "hashChanged": true
+      },
+      {
+        "id": "42698",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 2,
+        "hashChanged": true
+      },
+      {
+        "id": "42699",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 3,
+        "hashChanged": true
+      },
+      {
+        "id": "42701",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 1,
+        "hashChanged": true
+      },
+      {
+        "id": "42702",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 2,
+        "hashChanged": true
+      },
+      {
+        "id": "42703",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 3,
+        "hashChanged": true
+      },
+      {
+        "id": "42704",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 0,
+        "hashChanged": true
+      },
+      {
+        "id": "42705",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 1,
+        "hashChanged": true
+      },
+      {
+        "id": "42706",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 2,
+        "hashChanged": true
+      },
+      {
+        "id": "42707",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 3,
+        "hashChanged": true
+      },
+      {
+        "id": "42708",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 0,
+        "hashChanged": true
+      },
+      {
+        "id": "ECON-MG-MEDIUM-186",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 0,
+        "hashChanged": false
+      },
+      {
+        "id": "ECON-MG-MEDIUM-189",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 0,
+        "hashChanged": false
+      },
+      {
+        "id": "P62B-ELAS-E-028",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 3,
+        "hashChanged": true
+      },
+      {
+        "id": "P62B-ELAS-EL-038",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 0,
+        "hashChanged": false
+      },
+      {
+        "id": "P62B-ELAS-M-039",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 1,
+        "hashChanged": false
+      },
+      {
+        "id": "P62C-CPS-L-024",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 3,
+        "hashChanged": false
+      },
+      {
+        "id": "P62C-CPS-L-050",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 1,
+        "hashChanged": true
+      },
+      {
+        "id": "P62C-CPS-L-055",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 2,
+        "hashChanged": true
+      },
+      {
+        "id": "P62C-CPS-M-029",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 2,
+        "hashChanged": false
+      },
+      {
+        "id": "P62E-COP-H-018",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 3,
+        "hashChanged": false
+      },
+      {
+        "id": "P62E-COP-H-019",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 0,
+        "hashChanged": false
+      },
+      {
+        "id": "P62E-COP-L-053",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 0,
+        "hashChanged": false
+      },
+      {
+        "id": "P62E-COP-L-054",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 1,
+        "hashChanged": false
+      },
+      {
+        "id": "P62E-COP-M-024",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 1,
+        "hashChanged": false
+      },
+      {
+        "id": "P62F-PC-EL-038",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 2,
+        "hashChanged": false
+      },
+      {
+        "id": "P62F-PC-EL-044",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 2,
+        "hashChanged": false
+      },
+      {
+        "id": "P62F-PC-H-042",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 1,
+        "hashChanged": false
+      },
+      {
+        "id": "P62F-PC-L-097",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 0,
+        "hashChanged": false
+      },
+      {
+        "id": "P62F-PC-M-048",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 1,
+        "hashChanged": false
+      },
+      {
+        "id": "P62G-MON-H-032",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 1,
+        "hashChanged": false
+      },
+      {
+        "id": "P62G-MON-H-036",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 0,
+        "hashChanged": false
+      },
+      {
+        "id": "P62H-MCMP-EL-023",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 0,
+        "hashChanged": false
+      },
+      {
+        "id": "P62H-MCMP-H-016",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 0,
+        "hashChanged": false
+      },
+      {
+        "id": "P62H-MCMP-L-032",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 3,
+        "hashChanged": true
+      },
+      {
+        "id": "P62H-MCMP-L-035",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 2,
+        "hashChanged": true
+      },
+      {
+        "id": "P62H-MCMP-L-038",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 1,
+        "hashChanged": true
+      },
+      {
+        "id": "P62H-MCMP-L-041",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 0,
+        "hashChanged": true
+      },
+      {
+        "id": "P62H-MCMP-L-044",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 3,
+        "hashChanged": true
+      },
+      {
+        "id": "P62H-MCMP-L-094",
+        "choices": 4,
+        "distinctChoices": 4,
+        "resolvedKeys": 1,
+        "correctIndex": 3,
+        "hashChanged": false
+      }
+    ],
+    "bankChecks": {
+      "general": {
+        "ids": 1589,
+        "changedAuthorizedIds": [],
+        "unrelatedUnchanged": 1589
+      },
+      "micro": {
+        "ids": 6301,
+        "changedAuthorizedIds": [
+          "42028",
+          "42038",
+          "42048",
+          "42058",
+          "42204",
+          "42207",
+          "42352",
+          "42360",
+          "42361",
+          "42363",
+          "42376",
+          "42587",
+          "42588",
+          "42618",
+          "42619",
+          "42620",
+          "42621",
+          "42622",
+          "42623",
+          "42625",
+          "42627",
+          "42645",
+          "42646",
+          "42647",
+          "42648",
+          "42649",
+          "42650",
+          "42651",
+          "42652",
+          "42653",
+          "42654",
+          "42655",
+          "42661",
+          "42662",
+          "42663",
+          "42664",
+          "42665",
+          "42666",
+          "42667",
+          "42668",
+          "42673",
+          "42674",
+          "42675",
+          "42676",
+          "42677",
+          "42678",
+          "42679",
+          "42689",
+          "42690",
+          "42691",
+          "42692",
+          "42693",
+          "42694",
+          "42695",
+          "42696",
+          "42698",
+          "42699",
+          "42701",
+          "42702",
+          "42703",
+          "42704",
+          "42705",
+          "42706",
+          "42707",
+          "42708",
+          "ECON-MG-MEDIUM-186",
+          "ECON-MG-MEDIUM-189",
+          "P62B-ELAS-E-028",
+          "P62B-ELAS-EL-038",
+          "P62B-ELAS-M-039",
+          "P62C-CPS-L-024",
+          "P62C-CPS-L-050",
+          "P62C-CPS-L-055",
+          "P62C-CPS-M-029",
+          "P62E-COP-H-018",
+          "P62E-COP-H-019",
+          "P62E-COP-L-053",
+          "P62E-COP-L-054",
+          "P62E-COP-M-024",
+          "P62F-PC-EL-038",
+          "P62F-PC-EL-044",
+          "P62F-PC-H-042",
+          "P62F-PC-L-097",
+          "P62F-PC-M-048",
+          "P62G-MON-H-032",
+          "P62G-MON-H-036",
+          "P62H-MCMP-EL-023",
+          "P62H-MCMP-H-016",
+          "P62H-MCMP-L-032",
+          "P62H-MCMP-L-035",
+          "P62H-MCMP-L-038",
+          "P62H-MCMP-L-041",
+          "P62H-MCMP-L-044",
+          "P62H-MCMP-L-094"
+        ],
+        "unrelatedUnchanged": 6207
+      },
+      "macro": {
+        "ids": 4745,
+        "changedAuthorizedIds": [],
+        "unrelatedUnchanged": 4745
+      }
+    },
+    "unauthorizedRecordChanges": 0,
+    "preservedMetadata": true,
+    "preservedRouting": true,
+    "preservedGraphAssets": true,
+    "protectedExistingFiles": 1920,
+    "unexpectedFileChanges": [],
+    "negativeProbes": [
+      {
+        "id": "42028",
+        "field": "q",
+        "rejected": true
+      },
+      {
+        "id": "ECON-MG-EASY-1",
+        "field": "feedback",
+        "rejected": true
+      },
+      {
+        "id": "42028",
+        "field": "difficulty",
+        "rejected": true
+      }
+    ],
+    "publication": {
+      "publishedIds": 6276,
+      "canonicalExportIds": 6301,
+      "unchangedUnpublishedCanonicalIds": [
+        "ECON-MG-CORE-MARKET-FAILURE-30006",
+        "ECON-MG-CORE-MARKETS-30011",
+        "ECON-MG-EASY-11",
+        "ECON-MG-EASY-15",
+        "ECON-MG-EASYBOSS-2015",
+        "ECON-MG-EASYBOSS-2017",
+        "P52B-MFAIL-H-004",
+        "P77-MFAIL-BR-040",
+        "P77-MFAIL-EL-015",
+        "P77-MFAIL-FINALB-025",
+        "P77-MFAIL-FINALB-026",
+        "P77-MFAIL-FINALB-027",
+        "P77-MFAIL-H-010",
+        "P77-MFAIL-H-011",
+        "P77-MFAIL-H-013",
+        "P77-MFAIL-L-018",
+        "P77-MFAIL-L-021",
+        "P77-MFAIL-L-024",
+        "P77-MFAIL-LB-028",
+        "P77-MFAIL-LB-030",
+        "P77-MFAIL-LB-032",
+        "P77-MFAIL-M-008",
+        "P77-MFAIL-R-033",
+        "P77-MFAIL-R-034",
+        "P77-MFAIL-R-037"
+      ],
+      "allTargetsPresent": true,
+      "exactContentParity": true,
+      "inlineScriptsCompiled": 1,
+      "allTenModesPass": true,
+      "answerVerification": {
+        "ok": true,
+        "questionCount": 6276,
+        "issues": []
+      }
+    }
+  },
+  "exports": {
+    "status": "complete",
+    "canonical_source_sha256": "9f8b0fa6bfc4dec8af68deef135ee02d90c1fdc350a5bff348d3564ef984cfca",
+    "micro_csv_rows": 6301,
+    "micro_pdf_ids_once": 6301,
+    "changed_record_csv_mismatches": [],
+    "normal_exporter_full_content_verification": "PASS",
+    "general_macro": {
+      "general": {
+        "csv_content_identical": true,
+        "rows": 1589
+      },
+      "macro": {
+        "csv_content_identical": true,
+        "rows": 4745
+      }
+    }
+  },
+  "pdf": {
+    "status": "PASS",
+    "source_sha256": "9f8b0fa6bfc4dec8af68deef135ee02d90c1fdc350a5bff348d3564ef984cfca",
+    "pdf_sha256": "af4d388b1760ce703298d4d5bef991114a4712ffb3b4d188f15c568fa0c356fc",
+    "total_pdf_pages": 4424,
+    "all_pages_rendered": 4424,
+    "question_pages": {
+      "42028": [
+        1580
+      ],
+      "42038": [
+        1581
+      ],
+      "42048": [
+        1631
+      ],
+      "42058": [
+        1633
+      ],
+      "42204": [
+        1679
+      ],
+      "42207": [
+        1692
+      ],
+      "42352": [
+        2292
+      ],
+      "42360": [
+        2294
+      ],
+      "42361": [
+        2287
+      ],
+      "42363": [
+        2281
+      ],
+      "42376": [
+        4231
+      ],
+      "42587": [
+        1830
+      ],
+      "42588": [
+        3436
+      ],
+      "P62B-ELAS-E-028": [
+        1120
+      ],
+      "ECON-MG-MEDIUM-186": [
+        4406
+      ],
+      "ECON-MG-MEDIUM-189": [
+        4408
+      ],
+      "P62B-ELAS-EL-038": [
+        1290
+      ],
+      "P62B-ELAS-M-039": [
+        1303
+      ],
+      "P62C-CPS-L-024": [
+        375
+      ],
+      "P62C-CPS-M-029": [
+        391
+      ],
+      "P62E-COP-H-019": [
+        837
+      ],
+      "P62E-COP-L-053": [
+        811
+      ],
+      "P62E-COP-M-024": [
+        821
+      ],
+      "P62E-COP-H-018": [
+        836
+      ],
+      "P62E-COP-L-054": [
+        819
+      ],
+      "P62F-PC-EL-038": [
+        3793
+      ],
+      "P62F-PC-H-042": [
+        3775
+      ],
+      "P62F-PC-L-097": [
+        3819
+      ],
+      "P62F-PC-EL-044": [
+        3795
+      ],
+      "P62F-PC-M-048": [
+        3760
+      ],
+      "P62G-MON-H-032": [
+        2860
+      ],
+      "P62G-MON-H-036": [
+        2861
+      ],
+      "P62H-MCMP-H-016": [
+        2613
+      ],
+      "P62H-MCMP-EL-023": [
+        2663
+      ],
+      "P62H-MCMP-L-094": [
+        2707
+      ]
+    },
+    "inspected_pages": [
+      375,
+      391,
+      811,
+      819,
+      821,
+      836,
+      837,
+      1120,
+      1290,
+      1303,
+      1580,
+      1581,
+      1631,
+      1633,
+      1679,
+      1692,
+      1830,
+      2281,
+      2287,
+      2292,
+      2294,
+      2613,
+      2663,
+      2707,
+      2860,
+      2861,
+      3436,
+      3760,
+      3775,
+      3793,
+      3795,
+      3819,
+      4231,
+      4406,
+      4408
+    ],
+    "sheets": [
+      {
+        "file": "qa-01.png",
+        "pages": [
+          375,
+          391,
+          811,
+          819,
+          821,
+          836
+        ]
+      },
+      {
+        "file": "qa-02.png",
+        "pages": [
+          837,
+          1120,
+          1290,
+          1303,
+          1580,
+          1581
+        ]
+      },
+      {
+        "file": "qa-03.png",
+        "pages": [
+          1631,
+          1633,
+          1679,
+          1692,
+          1830,
+          2281
+        ]
+      },
+      {
+        "file": "qa-04.png",
+        "pages": [
+          2287,
+          2292,
+          2294,
+          2613,
+          2663,
+          2707
+        ]
+      },
+      {
+        "file": "qa-05.png",
+        "pages": [
+          2860,
+          2861,
+          3436,
+          3760,
+          3775,
+          3793
+        ]
+      },
+      {
+        "file": "qa-06.png",
+        "pages": [
+          3795,
+          3819,
+          4231,
+          4406,
+          4408
+        ]
+      }
+    ],
+    "questions_inspected": 35,
+    "split_question_cores": [],
+    "core_checks": 6301,
+    "manual_visual_review": "Inspected all six rendered contact sheets, covering all 35 changed graph questions. Graphs, labels, stems, all four alternatives, keys and feedback are visible with no clipping, missing graph or broken question core.",
+    "clipping_failures": 0,
+    "missing_graphs": 0,
+    "broken_continuations": 0
+  }
+}

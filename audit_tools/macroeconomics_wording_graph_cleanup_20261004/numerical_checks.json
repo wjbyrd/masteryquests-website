@@ -1,0 +1,1574 @@
+{
+  "status": "PASS",
+  "records": 151,
+  "calculations": 253,
+  "checks": {
+    "LG-Q-2007": [
+      {
+        "expression": "(.2*1000-100)-.1*(1000-100)",
+        "expected": 10,
+        "recomputed": 10.0
+      }
+    ],
+    "P52A-BANK-B2-003": [
+      {
+        "expression": "(360-180)-.1*(1800-180)",
+        "expected": 18,
+        "recomputed": 18.0
+      }
+    ],
+    "P52A-BANK-B2-001": [
+      {
+        "expression": "320-.1*1600",
+        "expected": 160,
+        "recomputed": 160.0
+      }
+    ],
+    "P52A-BANK-B3-001": [
+      {
+        "expression": "2400-600-2000",
+        "expected": -200,
+        "recomputed": -200
+      }
+    ],
+    "LG-Q-9104": [
+      {
+        "expression": "1440-360-1200",
+        "expected": -120,
+        "recomputed": -120
+      }
+    ],
+    "LG-Q-2011": [
+      {
+        "expression": "280-.1*1400",
+        "expected": 140.0,
+        "recomputed": 140.0
+      },
+      {
+        "expression": "280-.15*1400",
+        "expected": 70.0,
+        "recomputed": 70.0
+      }
+    ],
+    "P52B-S3-MPT-B3-001": [
+      {
+        "expression": "600-.1*3000",
+        "expected": 300.0,
+        "recomputed": 300.0
+      },
+      {
+        "expression": "600-.15*3000",
+        "expected": 150.0,
+        "recomputed": 150.0
+      }
+    ],
+    "LG-Q-9113": [
+      {
+        "expression": "440-.1*2200",
+        "expected": 220.0,
+        "recomputed": 220.0
+      },
+      {
+        "expression": "440-.15*2200",
+        "expected": 110.0,
+        "recomputed": 110.0
+      }
+    ],
+    "43100": [
+      {
+        "expression": "350-(250+50)",
+        "expected": 50,
+        "recomputed": 50
+      }
+    ],
+    "ECON-SP-CALCULATE-REQUIRED-RESERVES-6004": [
+      {
+        "expression": "1200-.125*8000",
+        "expected": 200,
+        "recomputed": 200.0
+      }
+    ],
+    "LG-B-6003": [
+      {
+        "expression": ".12*900000-100000",
+        "expected": 8000,
+        "recomputed": 8000.0
+      }
+    ],
+    "ECON-NL-EASYBOSS-2018": [
+      {
+        "expression": "168.0/140.0*100",
+        "expected": 120,
+        "recomputed": 120.0
+      },
+      {
+        "expression": "184.8/140.0*100",
+        "expected": 132,
+        "recomputed": 132.0
+      },
+      {
+        "expression": "(184.8/168.0-1)*100",
+        "expected": 10,
+        "recomputed": 10.000000000000009
+      }
+    ],
+    "ECON-NL-EASYBOSS-2022": [
+      {
+        "expression": "216.0/180.0*100",
+        "expected": 120,
+        "recomputed": 120.0
+      },
+      {
+        "expression": "237.6/180.0*100",
+        "expected": 132,
+        "recomputed": 132.0
+      },
+      {
+        "expression": "(237.6/216.0-1)*100",
+        "expected": 10,
+        "recomputed": 9.999999999999986
+      }
+    ],
+    "P52A-CPI-B2-002": [
+      {
+        "expression": "264.0/220.0*100",
+        "expected": 120,
+        "recomputed": 120.0
+      },
+      {
+        "expression": "290.4/220.0*100",
+        "expected": 132,
+        "recomputed": 131.99999999999997
+      },
+      {
+        "expression": "(290.4/264.0-1)*100",
+        "expected": 10,
+        "recomputed": 9.999999999999986
+      }
+    ],
+    "P52A-CPI-B3-003": [
+      {
+        "expression": "312.0/260.0*100",
+        "expected": 120,
+        "recomputed": 120.0
+      },
+      {
+        "expression": "343.2/260.0*100",
+        "expected": 132,
+        "recomputed": 132.0
+      },
+      {
+        "expression": "(343.2/312.0-1)*100",
+        "expected": 10,
+        "recomputed": 9.999999999999986
+      }
+    ],
+    "ECON-EC-FINALBOSS-19000": [
+      {
+        "expression": "120.0/100.0*100",
+        "expected": 120,
+        "recomputed": 120.0
+      },
+      {
+        "expression": "132.0/100.0*100",
+        "expected": 132,
+        "recomputed": 132.0
+      },
+      {
+        "expression": "(132.0/120.0-1)*100",
+        "expected": 10,
+        "recomputed": 10.000000000000009
+      }
+    ],
+    "ECON-NL-EASYBOSS-2019": [
+      {
+        "expression": "(130/125-1)*100",
+        "expected": 4,
+        "recomputed": 4.0000000000000036
+      },
+      {
+        "expression": "(1.03/1.04-1)*100",
+        "expected": -0.961538,
+        "recomputed": -0.9615384615384581
+      }
+    ],
+    "ECON-NL-EASYBOSS-2023": [
+      {
+        "expression": "(130/125-1)*100",
+        "expected": 4,
+        "recomputed": 4.0000000000000036
+      },
+      {
+        "expression": "(1.03/1.04-1)*100",
+        "expected": -0.961538,
+        "recomputed": -0.9615384615384581
+      }
+    ],
+    "P52A-CPI-B2-003": [
+      {
+        "expression": "(130/125-1)*100",
+        "expected": 4,
+        "recomputed": 4.0000000000000036
+      },
+      {
+        "expression": "(1.03/1.04-1)*100",
+        "expected": -0.961538,
+        "recomputed": -0.9615384615384581
+      }
+    ],
+    "P52A-CPI-LB-001": [
+      {
+        "expression": "(130/125-1)*100",
+        "expected": 4,
+        "recomputed": 4.0000000000000036
+      },
+      {
+        "expression": "(1.03/1.04-1)*100",
+        "expected": -0.961538,
+        "recomputed": -0.9615384615384581
+      },
+      {
+        "expression": "(1.03/1.02-1)*100",
+        "expected": 0.980392,
+        "recomputed": 0.9803921568627416
+      }
+    ],
+    "ECON-EC-LEGENDARYBOSS-20000": [
+      {
+        "expression": "(130/125-1)*100",
+        "expected": 4,
+        "recomputed": 4.0000000000000036
+      },
+      {
+        "expression": "(1.03/1.04-1)*100",
+        "expected": -0.961538,
+        "recomputed": -0.9615384615384581
+      }
+    ],
+    "ECON-NL-EASYBOSS-2025": [
+      {
+        "expression": "(1.05/1.03-1)*100",
+        "expected": 1.941748,
+        "recomputed": 1.9417475728155331
+      }
+    ],
+    "PM2B2-BIAS-MB-001": [
+      {
+        "expression": "(1.05/1.03-1)*100",
+        "expected": 1.941748,
+        "recomputed": 1.9417475728155331
+      }
+    ],
+    "ECON-NL-LEGENDARYBOSS-9115": [
+      {
+        "expression": "(1.05/1.03-1)*100",
+        "expected": 1.941748,
+        "recomputed": 1.9417475728155331
+      }
+    ],
+    "ECON-EC-LEGENDARYBOSS-20002": [
+      {
+        "expression": "(1.05/1.03-1)*100",
+        "expected": 1.941748,
+        "recomputed": 1.9417475728155331
+      }
+    ],
+    "PM2B2-BIAS-FB-005": [
+      {
+        "expression": "1.2/2",
+        "expected": 0.6,
+        "recomputed": 0.6
+      }
+    ],
+    "PM2B2-BIAS-MB-003": [
+      {
+        "expression": "1.2/2",
+        "expected": 0.6,
+        "recomputed": 0.6
+      }
+    ],
+    "ECON-EC-FINALBOSS-19002": [
+      {
+        "expression": "1.2/2",
+        "expected": 0.6,
+        "recomputed": 0.6
+      }
+    ],
+    "ECON-EC-MEDIUMBOSS-18002": [
+      {
+        "expression": "1.2/2",
+        "expected": 0.6,
+        "recomputed": 0.6
+      }
+    ],
+    "ECON-NL-LEGENDARYBOSS-9109": [
+      {
+        "expression": "1.2/2",
+        "expected": 0.6,
+        "recomputed": 0.6
+      }
+    ],
+    "LG-Q-3007": [
+      {
+        "expression": "7-3",
+        "expected": 4,
+        "recomputed": 4
+      },
+      {
+        "expression": "7-6",
+        "expected": 1,
+        "recomputed": 1
+      }
+    ],
+    "PM2C2-FISH-EB-001": [
+      {
+        "expression": "7-3",
+        "expected": 4,
+        "recomputed": 4
+      },
+      {
+        "expression": "7-6",
+        "expected": 1,
+        "recomputed": 1
+      }
+    ],
+    "PM2C2-FISH-FB-006": [
+      {
+        "expression": "7-3",
+        "expected": 4,
+        "recomputed": 4
+      },
+      {
+        "expression": "7-6",
+        "expected": 1,
+        "recomputed": 1
+      }
+    ],
+    "ECON-NL-EASYBOSS-2007": [
+      {
+        "expression": "14-50",
+        "expected": -36,
+        "recomputed": -36
+      },
+      {
+        "expression": "50+(14-50)",
+        "expected": 14,
+        "recomputed": 14
+      }
+    ],
+    "PM2B1-GDPC-MB-002": [
+      {
+        "expression": "24-100",
+        "expected": -76,
+        "recomputed": -76
+      },
+      {
+        "expression": "100+(24-100)",
+        "expected": 24,
+        "recomputed": 24
+      }
+    ],
+    "ECON-NL-LEGENDARYBOSS-9100": [
+      {
+        "expression": "19-75",
+        "expected": -56,
+        "recomputed": -56
+      },
+      {
+        "expression": "75+(19-75)",
+        "expected": 19,
+        "recomputed": 19
+      }
+    ],
+    "LG-Q-3000": [
+      {
+        "expression": "(1.1*.9-1)*100",
+        "expected": -1,
+        "recomputed": -0.9999999999999898
+      }
+    ],
+    "P52B-S4-QTM-B1-002": [
+      {
+        "expression": "(1.1*.9-1)*100",
+        "expected": -1,
+        "recomputed": -0.9999999999999898
+      }
+    ],
+    "P52B-S4-QTM-B3-003": [
+      {
+        "expression": "(1.1*.9-1)*100",
+        "expected": -1,
+        "recomputed": -0.9999999999999898
+      }
+    ],
+    "LG-Q-9118": [
+      {
+        "expression": "(1.1*.9-1)*100",
+        "expected": -1,
+        "recomputed": -0.9999999999999898
+      }
+    ],
+    "P52B-S4-QTM-B1-001": [
+      {
+        "expression": "(1.03*1.02/.99-1)*100",
+        "expected": 6.121212,
+        "recomputed": 6.121212121212127
+      }
+    ],
+    "P52B-S4-QTM-B3-002": [
+      {
+        "expression": "(1.03*1.02/.99-1)*100",
+        "expected": 6.121212,
+        "recomputed": 6.121212121212127
+      }
+    ],
+    "LG-Q-9116": [
+      {
+        "expression": "(1.03*1.02/.99-1)*100",
+        "expected": 6.121212,
+        "recomputed": 6.121212121212127
+      }
+    ],
+    "ECON-SP-MEDIUMBOSS-3012": [
+      {
+        "expression": "(2+1+1)/(7-5)",
+        "expected": 2,
+        "recomputed": 2.0
+      }
+    ],
+    "PM2A-SAC-EB-018": [
+      {
+        "expression": "(2+1+1)/(7-5)",
+        "expected": 2,
+        "recomputed": 2.0
+      }
+    ],
+    "PM2A-SAC-LB-023": [
+      {
+        "expression": "(2+1+1)/(7-5)",
+        "expected": 2,
+        "recomputed": 2.0
+      },
+      {
+        "expression": "(6-4)/2",
+        "expected": 1,
+        "recomputed": 1.0
+      },
+      {
+        "expression": "5-1",
+        "expected": 4,
+        "recomputed": 4
+      }
+    ],
+    "LG-Q-2006": [
+      {
+        "expression": "100/.2",
+        "expected": 500,
+        "recomputed": 500.0
+      }
+    ],
+    "P52A-BANK-B2-002": [
+      {
+        "expression": "180/.2",
+        "expected": 900,
+        "recomputed": 900.0
+      }
+    ],
+    "LG-Q-2008": [
+      {
+        "expression": "120/.1",
+        "expected": 1200,
+        "recomputed": 1200.0
+      },
+      {
+        "expression": "120/.1-120",
+        "expected": 1080,
+        "recomputed": 1080.0
+      }
+    ],
+    "P52A-BANK-B3-003": [
+      {
+        "expression": "200/.1",
+        "expected": 2000,
+        "recomputed": 2000.0
+      },
+      {
+        "expression": "200/.1-200",
+        "expected": 1800,
+        "recomputed": 1800.0
+      }
+    ],
+    "LG-Q-9109": [
+      {
+        "expression": "-160/.25",
+        "expected": -640,
+        "recomputed": -640.0
+      }
+    ],
+    "PM2A-DIS-L-010": [
+      {
+        "expression": "6/3",
+        "expected": 2,
+        "recomputed": 2.0
+      }
+    ],
+    "ECON-SP-MEDIUM-146": [
+      {
+        "expression": "50*3",
+        "expected": 150,
+        "recomputed": 150
+      }
+    ],
+    "LG-Q-9068": [
+      {
+        "expression": "40/(1-.5)",
+        "expected": 80,
+        "recomputed": 80.0
+      },
+      {
+        "expression": "40/(1-.8)",
+        "expected": 200,
+        "recomputed": 200.00000000000006
+      }
+    ],
+    "ECON-NL-INCOME-EXPENDITURE-IDENTITY-6000": [
+      {
+        "expression": "210-140-30",
+        "expected": 40,
+        "recomputed": 40
+      }
+    ],
+    "ECON-SP-FINALBOSS-4023": [
+      {
+        "expression": "4-10+3",
+        "expected": -3,
+        "recomputed": -3
+      },
+      {
+        "expression": "4+2",
+        "expected": 6,
+        "recomputed": 6
+      }
+    ],
+    "PMOE-TX-B3-001": [
+      {
+        "expression": "40-15-10",
+        "expected": 15,
+        "recomputed": 15
+      },
+      {
+        "expression": "20-(40-15-10)",
+        "expected": 5,
+        "recomputed": 5
+      }
+    ],
+    "ECON-NL-FINALBOSS-4026": [
+      {
+        "expression": "120-90",
+        "expected": 30,
+        "recomputed": 30
+      },
+      {
+        "expression": "120-110",
+        "expected": 10,
+        "recomputed": 10
+      }
+    ],
+    "ECON-SP-IDENTIFY-LRAS-6021": [
+      {
+        "expression": "100-110",
+        "expected": -10,
+        "recomputed": -10
+      }
+    ],
+    "PM2B4-NRU-MB-004": [
+      {
+        "expression": "2+3",
+        "expected": 5,
+        "recomputed": 5
+      },
+      {
+        "expression": "6-(2+3)",
+        "expected": 1,
+        "recomputed": 1
+      }
+    ],
+    "PMOE-POL-L-002": [
+      {
+        "expression": "0-(-110)",
+        "expected": 110,
+        "recomputed": 110
+      },
+      {
+        "expression": "110-150",
+        "expected": -40,
+        "recomputed": -40
+      }
+    ],
+    "ECON-NL-MEDIUMBOSS-3006": [
+      {
+        "expression": "1100/10",
+        "expected": 110.0,
+        "recomputed": 110.0
+      },
+      {
+        "expression": "1320/12",
+        "expected": 110.0,
+        "recomputed": 110.0
+      }
+    ],
+    "ECON-NL-MEDIUMBOSS-3011": [
+      {
+        "expression": "1600/10",
+        "expected": 160.0,
+        "recomputed": 160.0
+      },
+      {
+        "expression": "1920/12",
+        "expected": 160.0,
+        "recomputed": 160.0
+      }
+    ],
+    "PM2B3-PROD-LB-001": [
+      {
+        "expression": "2100/10",
+        "expected": 210.0,
+        "recomputed": 210.0
+      },
+      {
+        "expression": "2520/12",
+        "expected": 210.0,
+        "recomputed": 210.0
+      }
+    ],
+    "PM2A-SAC-LB-024": [
+      {
+        "expression": "(6-4)/2",
+        "expected": 1,
+        "recomputed": 1.0
+      },
+      {
+        "expression": "4+2*2",
+        "expected": 8,
+        "recomputed": 8
+      }
+    ],
+    "43192": [
+      {
+        "expression": "150-30",
+        "expected": 120,
+        "recomputed": 120
+      }
+    ],
+    "ECON-NL-LEGENDARY-9067": [
+      {
+        "expression": "132+4-2",
+        "expected": 134,
+        "recomputed": 134
+      },
+      {
+        "expression": "12-4-3+5",
+        "expected": 10,
+        "recomputed": 10
+      },
+      {
+        "expression": "144/200*100",
+        "expected": 72,
+        "recomputed": 72.0
+      },
+      {
+        "expression": "10/144*100",
+        "expected": 6.944444,
+        "recomputed": 6.944444444444445
+      }
+    ],
+    "ECON-NL-LEGENDARY-9068": [
+      {
+        "expression": "200*.75*.92-6",
+        "expected": 132,
+        "recomputed": 132.0
+      },
+      {
+        "expression": "200*.75*.08-6+4",
+        "expected": 10,
+        "recomputed": 10.0
+      },
+      {
+        "expression": "142/200*100",
+        "expected": 71,
+        "recomputed": 71.0
+      },
+      {
+        "expression": "10/142*100",
+        "expected": 7.042254,
+        "recomputed": 7.042253521126761
+      }
+    ],
+    "PG3-AD-EL-001": [
+      {
+        "expression": "155-100",
+        "expected": 55,
+        "recomputed": 55
+      }
+    ],
+    "PG3-AD-L-001": [
+      {
+        "expression": "155-100",
+        "expected": 55,
+        "recomputed": 55
+      }
+    ],
+    "ECON-SP-HARD-228": [
+      {
+        "expression": "500+40/(1-.5)-20",
+        "expected": 560,
+        "recomputed": 560.0
+      }
+    ],
+    "LG-Q-9142": [
+      {
+        "expression": ".75*60",
+        "expected": 45,
+        "recomputed": 45.0
+      },
+      {
+        "expression": "45/(1-.75)",
+        "expected": 180,
+        "recomputed": 180.0
+      }
+    ],
+    "PMOE-FX-L-002": [
+      {
+        "expression": "(1.2/1-1)*100",
+        "expected": 20,
+        "recomputed": 19.999999999999996
+      }
+    ],
+    "PMOE-FX-B3-003": [
+      {
+        "expression": "(.8/1-1)*100",
+        "expected": -20,
+        "recomputed": -19.999999999999996
+      },
+      {
+        "expression": "(150/100-1)*100",
+        "expected": 50,
+        "recomputed": 50.0
+      },
+      {
+        "expression": "(1/.8-1)*100",
+        "expected": 25,
+        "recomputed": 25.0
+      }
+    ],
+    "PMOE-POL-M-003": [
+      {
+        "expression": "(1.5/1-1)*100",
+        "expected": 50,
+        "recomputed": 50.0
+      }
+    ],
+    "ECON-SP-LEGENDARYBOSS-9114": [
+      {
+        "expression": "-40/(1-.75)+100",
+        "expected": -60,
+        "recomputed": -60.0
+      }
+    ],
+    "PG3-MEQ-L-004": [
+      {
+        "expression": "125-50",
+        "expected": 75,
+        "recomputed": 75
+      },
+      {
+        "expression": "100-(125-50)",
+        "expected": 25,
+        "recomputed": 25
+      }
+    ],
+    "LG-Q-336": [
+      {
+        "expression": "((1/1.5)/(1/2)-1)*100",
+        "expected": 33.333333,
+        "recomputed": 33.33333333333333
+      }
+    ],
+    "LG-Q-9053": [
+      {
+        "expression": "-240*(1-.75)",
+        "expected": -60,
+        "recomputed": -60.0
+      }
+    ],
+    "LG-Q-9055": [
+      {
+        "expression": "(40-25)/(1-.5)",
+        "expected": 30,
+        "recomputed": 30.0
+      }
+    ],
+    "LG-Q-9056": [
+      {
+        "expression": "-20/(1-.8)",
+        "expected": -100,
+        "recomputed": -100.00000000000003
+      },
+      {
+        "expression": "-5/(1-.8)",
+        "expected": -25,
+        "recomputed": -25.000000000000007
+      }
+    ],
+    "LG-Q-9059": [
+      {
+        "expression": "-40/(1-.8)+200",
+        "expected": 0,
+        "recomputed": -5.684341886080802e-14
+      }
+    ],
+    "LG-Q-9064": [
+      {
+        "expression": "300*(1-.5)/50",
+        "expected": 3,
+        "recomputed": 3.0
+      }
+    ],
+    "LG-Q-9131": [
+      {
+        "expression": "(-90+30)/(1-.6)",
+        "expected": -150,
+        "recomputed": -150.0
+      }
+    ],
+    "LG-Q-9132": [
+      {
+        "expression": "300*(1-.75)/25",
+        "expected": 3,
+        "recomputed": 3.0
+      }
+    ],
+    "PG5-PC-M-002": [
+      {
+        "expression": "6.6-3",
+        "expected": 3.6,
+        "recomputed": 3.5999999999999996
+      }
+    ],
+    "PM2B3-PROD-EB-002": [
+      {
+        "expression": "(36.37/28.53-1)*100",
+        "expected": 27.479846,
+        "recomputed": 27.479845776375722
+      }
+    ],
+    "PM2B3-PROD-FB-004": [
+      {
+        "expression": "(36.37/28.53-1)*100",
+        "expected": 27.479846,
+        "recomputed": 27.479845776375722
+      }
+    ],
+    "PM2B3-PROD-LB-002": [
+      {
+        "expression": "(36.37/28.53-1)*100",
+        "expected": 27.479846,
+        "recomputed": 27.479845776375722
+      },
+      {
+        "expression": "(36.37/28.53*.75-1)*100",
+        "expected": -4.390116,
+        "recomputed": -4.3901156677182085
+      }
+    ],
+    "43255": [
+      {
+        "expression": "120-80",
+        "expected": 40,
+        "recomputed": 40
+      }
+    ],
+    "43252": [
+      {
+        "expression": "120-80",
+        "expected": 40,
+        "recomputed": 40
+      }
+    ],
+    "43270": [
+      {
+        "expression": "120-80",
+        "expected": 40,
+        "recomputed": 40
+      }
+    ],
+    "43273": [
+      {
+        "expression": "120-80",
+        "expected": 40,
+        "recomputed": 40
+      }
+    ],
+    "43261": [
+      {
+        "expression": "120-80",
+        "expected": 40,
+        "recomputed": 40
+      },
+      {
+        "expression": "100-80",
+        "expected": 20,
+        "recomputed": 20
+      }
+    ],
+    "43257": [
+      {
+        "expression": "120-80",
+        "expected": 40,
+        "recomputed": 40
+      },
+      {
+        "expression": "100-80",
+        "expected": 20,
+        "recomputed": 20
+      },
+      {
+        "expression": "-55+15",
+        "expected": -40,
+        "recomputed": -40
+      }
+    ],
+    "43259": [
+      {
+        "expression": "120-80",
+        "expected": 40,
+        "recomputed": 40
+      },
+      {
+        "expression": "100-80",
+        "expected": 20,
+        "recomputed": 20
+      },
+      {
+        "expression": "40-15",
+        "expected": 25,
+        "recomputed": 25
+      }
+    ],
+    "43290": [
+      {
+        "expression": "100-60",
+        "expected": 40,
+        "recomputed": 40
+      }
+    ],
+    "43287": [
+      {
+        "expression": "-30+10",
+        "expected": -20,
+        "recomputed": -20
+      }
+    ],
+    "43293": [
+      {
+        "expression": "30-10",
+        "expected": 20,
+        "recomputed": 20
+      }
+    ],
+    "43295": [
+      {
+        "expression": "25-10",
+        "expected": 15,
+        "recomputed": 15
+      }
+    ],
+    "43297": [
+      {
+        "expression": "140-60",
+        "expected": 80,
+        "recomputed": 80
+      },
+      {
+        "expression": "(100-60)-80",
+        "expected": -40,
+        "recomputed": -40
+      }
+    ],
+    "43309": [
+      {
+        "expression": "80-40+10",
+        "expected": 50,
+        "recomputed": 50
+      }
+    ],
+    "PG5-PC-H-016": [
+      {
+        "expression": "5-3",
+        "expected": 2,
+        "recomputed": 2
+      },
+      {
+        "expression": "3.5-2.5",
+        "expected": 1,
+        "recomputed": 1.0
+      }
+    ],
+    "PG5-PC-H-022": [
+      {
+        "expression": "7-5",
+        "expected": 2,
+        "recomputed": 2
+      },
+      {
+        "expression": "2.5-1.5",
+        "expected": 1,
+        "recomputed": 1.0
+      }
+    ],
+    "PG5-PC-L-018": [
+      {
+        "expression": "3.5+(3.5-2.5)",
+        "expected": 4.5,
+        "recomputed": 4.5
+      }
+    ],
+    "LG-Q-307": [
+      {
+        "expression": "50*(1-.08)-47",
+        "expected": -1,
+        "recomputed": -1.0
+      }
+    ],
+    "LG-Q-313": [
+      {
+        "expression": "100-92",
+        "expected": 8,
+        "recomputed": 8
+      },
+      {
+        "expression": "6/8*100",
+        "expected": 75,
+        "recomputed": 75.0
+      },
+      {
+        "expression": "8-6",
+        "expected": 2,
+        "recomputed": 2
+      }
+    ],
+    "ECON-NL-LEGENDARY-9023": [
+      {
+        "expression": "3*8+2*18",
+        "expected": 60,
+        "recomputed": 60
+      },
+      {
+        "expression": "(60*1.35-3*9)/2",
+        "expected": 27,
+        "recomputed": 27.0
+      },
+      {
+        "expression": "(81/72-1)*100",
+        "expected": 12.5,
+        "recomputed": 12.5
+      }
+    ],
+    "ECON-NL-LEGENDARY-9025": [
+      {
+        "expression": "(72-4*6)/12",
+        "expected": 4,
+        "recomputed": 4.0
+      },
+      {
+        "expression": "4*9+4*15",
+        "expected": 96,
+        "recomputed": 96
+      },
+      {
+        "expression": "(100.8/96-1)*100",
+        "expected": 5,
+        "recomputed": 5.000000000000004
+      }
+    ],
+    "P52A-CPI-LB-002": [
+      {
+        "expression": "5*8+4*15",
+        "expected": 100,
+        "recomputed": 100
+      },
+      {
+        "expression": "5*10+4*18",
+        "expected": 122,
+        "recomputed": 122
+      },
+      {
+        "expression": "5*11+4*19",
+        "expected": 131,
+        "recomputed": 131
+      },
+      {
+        "expression": "(131/122-1)*100",
+        "expected": 7.377049,
+        "recomputed": 7.377049180327866
+      }
+    ],
+    "ECON-NL-LEGENDARYBOSS-9108": [
+      {
+        "expression": "200*168/160",
+        "expected": 210,
+        "recomputed": 210.0
+      }
+    ],
+    "PM2B2-DEF-L-002": [
+      {
+        "expression": "(1.08/1.04-1)*100",
+        "expected": 3.846154,
+        "recomputed": 3.8461538461538547
+      }
+    ],
+    "ECON-NL-LEGENDARYBOSS-9111": [
+      {
+        "expression": "(.96/1.06-1)*100",
+        "expected": -9.433962,
+        "recomputed": -9.433962264150953
+      }
+    ],
+    "PM2B2-DEF-LB-001": [
+      {
+        "expression": "200*.96",
+        "expected": 192,
+        "recomputed": 192.0
+      },
+      {
+        "expression": "192/.96",
+        "expected": 200,
+        "recomputed": 200.0
+      }
+    ],
+    "43089": [
+      {
+        "expression": "330/720*100",
+        "expected": 45.833333,
+        "recomputed": 45.83333333333333
+      },
+      {
+        "expression": "(330/300-1)*100",
+        "expected": 10,
+        "recomputed": 10.000000000000009
+      },
+      {
+        "expression": "(720/600-1)*100",
+        "expected": 20,
+        "recomputed": 19.999999999999996
+      }
+    ],
+    "LG-Q-303": [
+      {
+        "expression": "8000*(1-.2)",
+        "expected": 6400,
+        "recomputed": 6400.0
+      },
+      {
+        "expression": "8000/.2",
+        "expected": 40000,
+        "recomputed": 40000.0
+      },
+      {
+        "expression": "8000/.2-8000",
+        "expected": 32000,
+        "recomputed": 32000.0
+      }
+    ],
+    "LG-Q-308": [
+      {
+        "expression": "5000*.9",
+        "expected": 4500,
+        "recomputed": 4500.0
+      },
+      {
+        "expression": "4500-3600/.9",
+        "expected": 500,
+        "recomputed": 500.0
+      }
+    ],
+    "LG-Q-310": [
+      {
+        "expression": "260000-.1*2000000",
+        "expected": 60000,
+        "recomputed": 60000.0
+      },
+      {
+        "expression": "10000-.1*60000",
+        "expected": 4000,
+        "recomputed": 4000.0
+      }
+    ],
+    "PM2A-DIS-LB-019": [
+      {
+        "expression": "2*1",
+        "expected": 2,
+        "recomputed": 2
+      },
+      {
+        "expression": "1*3",
+        "expected": 3,
+        "recomputed": 3
+      }
+    ],
+    "P52A-FISCAD-LB-001": [
+      {
+        "expression": "(110-.8*110)/(1-.8)",
+        "expected": 110,
+        "recomputed": 110.00000000000003
+      }
+    ],
+    "P52A-FISCAD-LB-002": [
+      {
+        "expression": "120*.6/(1-.6)",
+        "expected": 180,
+        "recomputed": 180.0
+      },
+      {
+        "expression": "120/(1-.6)",
+        "expected": 300,
+        "recomputed": 300.0
+      }
+    ],
+    "LG-Q-9134": [
+      {
+        "expression": "60/(1-.75)-60",
+        "expected": 180,
+        "recomputed": 180.0
+      },
+      {
+        "expression": "(60-60)/(1-.75)",
+        "expected": 0,
+        "recomputed": 0.0
+      }
+    ],
+    "LG-Q-9127": [
+      {
+        "expression": "4+2",
+        "expected": 6,
+        "recomputed": 6
+      },
+      {
+        "expression": "3+5",
+        "expected": 8,
+        "recomputed": 8
+      }
+    ],
+    "ECON-NL-LEGENDARYBOSS-9106": [
+      {
+        "expression": "80+80-20",
+        "expected": 140,
+        "recomputed": 140
+      },
+      {
+        "expression": "80-20",
+        "expected": 60,
+        "recomputed": 60
+      }
+    ],
+    "PM2B1-GDPC-LB-001": [
+      {
+        "expression": "3+4+5+2",
+        "expected": 14,
+        "recomputed": 14
+      },
+      {
+        "expression": "19-2-2-1",
+        "expected": 14,
+        "recomputed": 14
+      }
+    ],
+    "ECON-NL-LEGENDARYBOSS-9102": [
+      {
+        "expression": "48+(63-48)+(88-63)",
+        "expected": 88,
+        "recomputed": 88
+      }
+    ],
+    "ECON-NL-LEGENDARYBOSS-9107": [
+      {
+        "expression": "140-90",
+        "expected": 50,
+        "recomputed": 50
+      },
+      {
+        "expression": "110-60",
+        "expected": 50,
+        "recomputed": 50
+      }
+    ],
+    "ECON-NL-LEGENDARYBOSS-9101": [
+      {
+        "expression": "46+(86-46)+61",
+        "expected": 147,
+        "recomputed": 147
+      }
+    ],
+    "ECON-NL-LEGENDARY-9035": [
+      {
+        "expression": "2400*132/120",
+        "expected": 2640,
+        "recomputed": 2640.0
+      },
+      {
+        "expression": "2400*144/120",
+        "expected": 2880,
+        "recomputed": 2880.0
+      },
+      {
+        "expression": "2640*1.1-2880",
+        "expected": 24,
+        "recomputed": 24.000000000000455
+      }
+    ],
+    "ECON-NL-LEGENDARY-9036": [
+      {
+        "expression": "100*1260/900",
+        "expected": 140,
+        "recomputed": 140.0
+      },
+      {
+        "expression": "1350/1.5",
+        "expected": 900,
+        "recomputed": 900.0
+      }
+    ],
+    "PM2B2-INDEX-L-003": [
+      {
+        "expression": "40000*1.21-40000*1.1",
+        "expected": 4400,
+        "recomputed": 4400.0
+      }
+    ],
+    "ECON-NL-LEGENDARYBOSS-9113": [
+      {
+        "expression": "(1.04/1.06-1)*100",
+        "expected": -1.886792,
+        "recomputed": -1.8867924528301883
+      }
+    ],
+    "PM2B2-INDEX-LB-001": [
+      {
+        "expression": "(1.04/1.06-1)*100",
+        "expected": -1.886792,
+        "recomputed": -1.8867924528301883
+      }
+    ],
+    "LG-Q-9124": [
+      {
+        "expression": "180/1.25",
+        "expected": 144,
+        "recomputed": 144.0
+      },
+      {
+        "expression": "180/1.25**2",
+        "expected": 115.2,
+        "recomputed": 115.2
+      }
+    ],
+    "PM2C2-ITAX-LB-001": [
+      {
+        "expression": "(1/.9-1)*100",
+        "expected": 11.111111,
+        "recomputed": 11.111111111111116
+      },
+      {
+        "expression": "270/.9",
+        "expected": 300,
+        "recomputed": 300.0
+      }
+    ],
+    "ECON-SP-FINALBOSS-4015": [
+      {
+        "expression": "700-600",
+        "expected": 100,
+        "recomputed": 100
+      },
+      {
+        "expression": "500-600",
+        "expected": -100,
+        "recomputed": -100
+      }
+    ],
+    "ECON-SP-MEDIUMBOSS-3008": [
+      {
+        "expression": "2040-1700",
+        "expected": 340,
+        "recomputed": 340
+      },
+      {
+        "expression": "2380-2040",
+        "expected": 340,
+        "recomputed": 340
+      }
+    ],
+    "ECON-SP-LEGENDARYBOSS-9106": [
+      {
+        "expression": "1320-1100",
+        "expected": 220,
+        "recomputed": 220
+      },
+      {
+        "expression": "1540-1320",
+        "expected": 220,
+        "recomputed": 220
+      }
+    ],
+    "ECON-NL-LEGENDARY-9047": [
+      {
+        "expression": "960/1.2/32*1000",
+        "expected": 25000,
+        "recomputed": 25000.0
+      },
+      {
+        "expression": "1320/1.5/44*1000",
+        "expected": 20000,
+        "recomputed": 20000.0
+      }
+    ],
+    "LG-Q-9107": [
+      {
+        "expression": "80*4",
+        "expected": 320,
+        "recomputed": 320
+      },
+      {
+        "expression": "800/4",
+        "expected": 200,
+        "recomputed": 200.0
+      }
+    ],
+    "PMOE-NER-LB-002": [
+      {
+        "expression": "(1.06*.92-1)*100",
+        "expected": -2.48,
+        "recomputed": -2.4799999999999933
+      },
+      {
+        "expression": "(1.06*.92*1.05-1)*100",
+        "expected": 2.396,
+        "recomputed": 2.3960000000000203
+      }
+    ],
+    "PMOE-NER-LB-003": [
+      {
+        "expression": "(.99*1.04-1)*100",
+        "expected": 2.96,
+        "recomputed": 2.960000000000007
+      },
+      {
+        "expression": "(1/.99-1)*100",
+        "expected": 1.010101,
+        "recomputed": 1.0101010101010166
+      }
+    ],
+    "ECON-NL-LEGENDARYBOSS-9118": [
+      {
+        "expression": "1200/125",
+        "expected": 9.6,
+        "recomputed": 9.6
+      },
+      {
+        "expression": "1200/125*100",
+        "expected": 960,
+        "recomputed": 960.0
+      }
+    ],
+    "LG-Q-9122": [
+      {
+        "expression": "200*5/1000",
+        "expected": 1,
+        "recomputed": 1.0
+      }
+    ],
+    "PMOE-RER-L-001": [
+      {
+        "expression": "(1.26/1.20*1.04/1.10-1)*100",
+        "expected": -0.727273,
+        "recomputed": -0.727272727272732
+      }
+    ],
+    "PMOE-RER-LB-002": [
+      {
+        "expression": "1.5*270/408",
+        "expected": 0.992647,
+        "recomputed": 0.9926470588235294
+      },
+      {
+        "expression": "1.5*250/408",
+        "expected": 0.919118,
+        "recomputed": 0.9191176470588235
+      }
+    ],
+    "PM2B1-RNGDP-LB-001": [
+      {
+        "expression": "(1.1*1.2-1)*100",
+        "expected": 32,
+        "recomputed": 32.00000000000001
+      }
+    ],
+    "ECON-NL-LEGENDARYBOSS-9103": [
+      {
+        "expression": "715/1.3",
+        "expected": 550,
+        "recomputed": 550.0
+      },
+      {
+        "expression": "756/1.4",
+        "expected": 540,
+        "recomputed": 540.0
+      },
+      {
+        "expression": "(540/550-1)*100",
+        "expected": -1.818182,
+        "recomputed": -1.8181818181818188
+      }
+    ],
+    "ECON-EC-LEGENDARYBOSS-20005": [
+      {
+        "expression": "8-3",
+        "expected": 5,
+        "recomputed": 5
+      },
+      {
+        "expression": "8-6",
+        "expected": 2,
+        "recomputed": 2
+      }
+    ],
+    "43191": [
+      {
+        "expression": "900-600-180",
+        "expected": 120,
+        "recomputed": 120
+      },
+      {
+        "expression": "900-600-215",
+        "expected": 85,
+        "recomputed": 85
+      },
+      {
+        "expression": "(-20)+(20-35)",
+        "expected": -35,
+        "recomputed": -35
+      }
+    ],
+    "LG-Q-9140": [
+      {
+        "expression": "-150+100",
+        "expected": -50,
+        "recomputed": -50
+      },
+      {
+        "expression": "-100+100",
+        "expected": 0,
+        "recomputed": 0
+      }
+    ]
+  }
+}

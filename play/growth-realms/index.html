@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#031638">
-  <meta name="description" content="Manage one economy across six development cycles and compare its growth with an independently managed rival.">
+  <meta name="description" content="Build your city better than the city across the river.">
   <title>Mastery Quests</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="visual.css">
@@ -12,38 +12,39 @@
   <link rel="stylesheet" href="mq-theme.css">
   <link rel="stylesheet" href="presentation.css">
   <link rel="stylesheet" href="cleanup.css">
+  <link rel="stylesheet" href="flow.css">
   <script type="module" src="game.js"></script>
 </head>
 <body data-screen="title">
   <a href="#development" class="skip-link">Skip to development controls</a>
   <header class="command-header">
-    <div class="brand-row"><a href="/" class="brand">MASTERY QUESTS<span class="brand-dot" aria-hidden="true"></span></a><span class="edition">GROWTH &amp; DEVELOPMENT</span><button id="soundless-info" class="quiet-button" aria-haspopup="dialog" aria-expanded="false" aria-controls="help">Field Guide</button></div>
-    <div class="title-row"><div><h1 id="game-title"></h1></div><div class="chapter"><span id="stage-count">CHOOSE YOUR ECONOMY</span><strong id="stage-name"></strong></div></div>
+    <div class="brand-row"><a href="/" class="brand">MASTERY QUESTS<span class="brand-dot" aria-hidden="true"></span></a><button id="soundless-info" class="quiet-button" aria-haspopup="dialog" aria-expanded="false" aria-controls="help" aria-label="Open city guide">?</button></div>
+    <div class="title-row"><div><h1 id="game-title"></h1></div><div class="chapter"><span id="stage-count">CHOOSE YOUR CITY</span><strong id="stage-name"></strong></div></div>
     <nav id="city-tabs" class="city-tabs" aria-label="HUD and city view"></nav>
-    <div id="hud" class="hud" aria-label="Economic stocks"></div>
+
   </header>
-  <div id="planning-hud" class="planning-hud" hidden aria-label="Cycle and development budget"><div id="compact-context"><span id="compact-cycle"></span><strong id="compact-city"></strong></div><div id="planning-budget"><div id="points-remaining" class="budget-total" aria-live="polite" aria-atomic="true"></div><div id="budget-pips" aria-hidden="true"></div></div><p id="planning-instruction"></p><button id="quick-commit" class="primary-button" disabled>Commit Plan</button><button id="quick-guide" class="quiet-button" aria-haspopup="dialog">Guide</button></div>
+  <div id="planning-hud" class="planning-hud" hidden aria-label="Round and development budget"><div id="compact-context"><span id="compact-cycle"></span><strong id="compact-city"></strong></div><div id="planning-budget"><div id="points-remaining" class="budget-total" aria-live="polite" aria-atomic="true"></div><div id="budget-pips" aria-hidden="true"></div></div><p id="planning-instruction" role="status" aria-live="polite" aria-atomic="true"></p><button id="quick-commit" class="primary-button" disabled>Commit Plan</button><button id="quick-guide" class="quiet-button" aria-haspopup="dialog" aria-controls="help" aria-label="Open city guide">?</button></div>
   <main>
-    <dialog id="help" class="help panel" aria-labelledby="guide-title"><h2 id="guide-title" tabindex="-1" autofocus>Field Guide</h2><p id="help-budget"></p><p>Commit to build, inspect both allocations and results, then begin a new cycle. Output is production during a cycle; the other stocks carry forward. Labor grows automatically. Focus on output per worker, a proxy for living standards.</p><p>The city across the river follows its own development strategy. Its plan is revealed after building; its strategy is revealed at the end. Your run stays in this tab; reloading starts over.</p><button class="quiet-button" id="close-help">Close guide</button></dialog>
-    <dialog id="how-to-play" class="help panel" aria-labelledby="how-title"><h2 id="how-title" tabindex="-1" autofocus>How to Play</h2><ol><li>Choose a city.</li><li>Spend 20 development points each cycle.</li><li>Build, adapt, and compare your growth with the city across the river.</li></ol><button class="primary-button" id="close-how">Got it</button></dialog>
-    <section id="title-screen" class="title-screen" aria-labelledby="landing-title"><div class="landing-copy"><h1 id="landing-title">GROWTH<br><span>REALMS</span></h1><p class="landing-hook">Start ahead. Catch up. Build your economy.</p><button id="start-game" class="primary-button" disabled>Start Game <span aria-hidden="true">→</span></button><div class="landing-links"><button id="open-how" class="text-button" aria-haspopup="dialog">How to Play</button><button id="landing-guide" class="text-button" aria-haspopup="dialog">Field Guide</button></div></div><div class="landing-visual"><canvas id="hero-scene" width="768" height="512" role="img" aria-label="An established city and a smaller town share a river valley, joined by a bridge."></canvas></div></section>
-    <section id="city-choice" class="city-choice" tabindex="-1" aria-label="Choose your economy"></section>
-    <section class="region-section" aria-label="Your two cities">
+    <dialog id="help" class="help panel" aria-labelledby="guide-title"><h2 id="guide-title" tabindex="-1" autofocus>City guide</h2><ol id="help-steps"></ol><p id="help-goal"></p><details id="field-guide"><summary>Field Guide · how your city develops</summary><p id="help-budget"></p><div id="help-categories"></div><p>Output is production during a round; other stocks carry forward. Labor grows automatically. Output per worker measures productivity, a proxy for living standards.</p><p>The city across the river follows its own development strategy. Its past investments are visible after the reveal; its strategy is named at the end. Your run stays in this tab; reloading starts over.</p></details><button class="quiet-button" id="close-help">Back to city</button></dialog>
+    <section id="title-screen" class="title-screen" aria-labelledby="landing-title"><canvas id="hero-scene" width="1440" height="960" role="img" aria-label="Two modern cities face each other across a wide river: a dense city of factories and towers, and a smaller city with room to grow."></canvas><div class="splash-shade" aria-hidden="true"></div><h1 id="landing-title" data-game-title></h1><span class="splash-brand">MASTERY QUESTS</span><button id="start-game" class="primary-button" disabled>Start Game</button></section>
+    <aside id="advisor-panel" class="advisor-panel" hidden aria-label="City advisor" aria-live="polite" aria-atomic="true"></aside>
+    <section id="rivalry-score" class="rivalry-score" hidden aria-label="Development race"></section>
+    <section class="region-section" aria-label="City development">
       <div class="region-heading"><span id="region-name"></span><span class="live-status"><i></i><span id="region-status">PLANNING PHASE</span></span></div>
       <div id="city-maps" class="city-maps"></div>
       <div class="map-key"><span><i class="key-square"></i> White ring: selected district · Click to invest +1</span></div>
     </section>
     <section id="development" class="development" tabindex="-1" aria-labelledby="briefing-title">
-      <details class="cycle-briefing"><summary>Cycle briefing</summary><div class="briefing"><div class="stage-marker" id="stage-marker">01</div><div><p class="eyebrow" id="stage-kicker"></p><h2 id="briefing-title"></h2><p id="objective"></p></div><ol id="stage-track" aria-label="Six-cycle progress"></ol></div></details>
+      <details class="cycle-briefing"><summary>Round briefing</summary><div class="briefing"><div class="stage-marker" id="stage-marker">01</div><div><p class="eyebrow" id="stage-kicker"></p><h2 id="briefing-title"></h2><p id="objective"></p></div><ol id="stage-track" aria-label="Round progress"></ol></div></details>
       <div id="allocations" class="allocations"></div>
       <div id="construction-status" class="construction-status" hidden><div><strong>Development underway</strong><span>Crews are bringing your plans to life.</span></div><progress id="build-progress" max="100" value="0" aria-label="Construction progress"></progress></div>
       <div id="consequences" class="consequences" hidden></div>
       <div class="action-bar"><p id="budget-instruction"></p><button id="advance" class="primary-button" disabled>Commit plan <span aria-hidden="true">→</span></button></div>
     </section>
-    <details id="comparison" class="comparison panel"><summary><span>Compare Cities</span><span class="summary-note">Strategic summary <b aria-hidden="true">＋</b></span></summary><div id="comparison-body"></div></details>
+    <details id="comparison" class="comparison panel"><summary><span>Compare Cities</span><span class="summary-note">Strategic summary <b aria-hidden="true">＋</b></span></summary><details class="stock-details"><summary>Economic stocks</summary><div id="hud" class="hud" aria-label="Economic stocks"></div></details><div id="comparison-body"></div></details>
     <section id="final-report" class="final-report" hidden aria-labelledby="report-title" tabindex="-1"></section>
     <p id="announcement" role="status" aria-live="polite" class="sr-only"></p>
-    <footer><span>MASTERY QUESTS <span aria-hidden="true">/</span> GROWTH REALMS</span><span>Six cycles. A new path each play.</span></footer>
+    <footer><span>MASTERY QUESTS <span aria-hidden="true">/</span> <span data-game-title></span></span><span><span id="run-length-note"></span></span></footer>
   </main>
   <noscript><p class="panel">Enable JavaScript to play this game.</p></noscript>
 </body>

@@ -1,0 +1,161 @@
+PM2B2-INDEX-L-003 legendary
+A threshold is $40,000 at CPI 100. The contract adjusts next year using the previous year’s inflation. CPI rises to 110, then 121; by the second year the threshold has received only the first 10% adjustment. What is the shortfall from full current indexation?
+A: $4,000; apply the second 10% only to the original threshold
+B: $8,400; the threshold never received any adjustment
+C: $4,400; the paid threshold is $44,000 instead of $48,400
+D: $0; a one-year lag cannot alter purchasing power
+Full current indexation requires 40,000 × 121/100 = 48,400. The lagged threshold is 40,000 × 1.10 = 44,000. The gap is 4,400; successive inflation rates apply to changing price levels.
+UPGRADE Preserve purchasing-power/indexation reasoning; require evaluating a lagged contract against a counterfactual household basket or identifying a missing assumption.
+
+ECON-NL-LEGENDARYBOSS-9113 legendary
+A $140 benefit is adjusted by the previous year's 4% CPI rise. This year's cost of living rises 6%. Which result explains the limitation of this indexation rule?
+A: The benefit rises 4% and real purchasing power rises 2% because inflation is subtracted in the opposite direction
+B: The benefit rises 10% and real purchasing power rises 4% because both years are added
+C: The benefit rises 4% but current real purchasing power falls about 1.9% because the adjustment lags
+D: The benefit rises 6% and real purchasing power is unchanged because any indexation is contemporaneous
+The nominal factor is 1.04 and current prices rise by 1.06. Real value changes by 1.04/1.06−1 ≈ −1.89%; lagged indexation does not fully cover current inflation.
+UPGRADE Require diagnosing which of adjustment timing and basket mismatch accounts for an observed real loss, instead of another direct percentage-ratio calculation.
+
+PM2B2-INDEX-LB-001 legendary
+A $180 benefit is adjusted by the previous year's 4% CPI rise. This year's cost of living rises 6%. Which result explains the limitation of this indexation rule?
+A: The benefit rises 6% and real purchasing power is unchanged because any indexation is contemporaneous
+B: The benefit rises 4% and real purchasing power rises 2% because inflation is subtracted in the opposite direction
+C: The benefit rises 10% and real purchasing power rises 4% because both years are added
+D: The benefit rises 4% but current real purchasing power falls about 1.9% because the adjustment lags
+The nominal factor is 1.04 and current prices rise by 1.06. Real value changes by 1.04/1.06−1 ≈ −1.89%; lagged indexation does not fully cover current inflation.
+UPGRADE Require diagnosing which of adjustment timing and basket mismatch accounts for an observed real loss, instead of another direct percentage-ratio calculation.
+
+LG-Q-9120 legendary
+A firm spends $180 repeatedly updating posted prices, and households make extra account transfers to avoid idle cash. Inflation is perfectly anticipated. Which comparison identifies costs that need not disappear with correct forecasts?
+A: Shoeleather and menu costs, respectively; both can persist with anticipated inflation.
+B: Borrower and lender redistribution, respectively; both disappear with anticipated inflation.
+C: Menu and shoeleather costs, respectively; both can persist with anticipated inflation.
+D: Pure nominal changes in both cases; neither uses real resources with anticipated inflation.
+Menu and shoeleather costs concern resources spent adapting to inflation. Correct forecasts can reduce unexpected contract redistribution without eliminating these costs.
+UPGRADE Require evaluating a contract-indexation proposal against residual resource costs or distinguishing private transfers from a measured social cost.
+
+LG-Q-9125 legendary
+A $200 fixed nominal debt was agreed with expected inflation 2%, but actual inflation is 7%. At the same time, firms incur real repricing costs. Which combined assessment is correct?
+A: Repricing redistributes debt obligations but uses no real resources, so it is the same as surprise inflation
+B: Unexpected inflation benefits the borrower relative to the lender, while repricing consumes real resources
+C: Unexpected inflation benefits the lender relative to the borrower, while repricing consumes real resources
+D: Borrower gains exactly equal a social resource gain, so repricing cannot reduce welfare
+A lower-than-expected real repayment transfers purchasing power toward borrowers. Repricing is a resource cost, so redistribution and efficiency costs are conceptually different.
+UPGRADE Require evaluating a contract-indexation proposal against residual resource costs or distinguishing private transfers from a measured social cost.
+
+LG-Q-9124 legendary
+A household holds $180 in currency while the price level rises 25%. No interest is paid. Which loss and interpretation fit the inflation-tax mechanism?
+A: Real purchasing power falls 25%; the price rise is the purchasing-power loss.
+B: Nominal cash falls 25%; inflation removes currency through an implicit tax bill.
+C: Real purchasing power falls 20%; nominal cash is unchanged without a tax bill.
+D: Real purchasing power is unchanged; holding the same nominal cash preserves its value.
+Real balances are M/P. With nominal currency fixed and prices multiplied by 1.25, purchasing power becomes 1/1.25=.8 of its original level, a 20% loss.
+UPGRADE Require diagnosing the erosion of the real-money tax base or a counterfactual financing comparison.
+
+PM2C2-ITAX-LB-001 legendary
+A household owes a fixed nominal $300. Prices fall 10% while its nominal debt is unchanged. Which debt-burden comparison is correct?
+A: The real burden rises about 11.1%; the same nominal repayment buys more goods
+B: The real burden falls 10%; cheaper goods make every nominal debt smaller in real terms
+C: The real burden rises exactly 10%; reciprocal percentage changes are equal
+D: The real burden is unchanged because a fixed nominal debt is also fixed in real terms
+The real-debt factor is 1/.90≈1.1111. Falling prices increase, rather than decrease, the purchasing power needed to repay a fixed nominal amount.
+UPGRADE Require diagnosing the erosion of the real-money tax base or a counterfactual financing comparison.
+
+LG-Q-9121 legendary
+Government finances $160 of purchases by creating money. Under stable velocity and fixed long-run real output, which accounting-versus-burden distinction is appropriate?
+A: Government gains real resources directly; creating money leaves existing purchasing power intact.
+B: Government gains purchasing power; inflation reduces existing money holders' real balances.
+C: Government gains tax receipts; each money holder pays an equal statutory charge.
+D: Government gains purchasing power; the burden is equal regardless of money holdings.
+Money financing changes claims on real goods, not productive resources themselves. Under the stated assumptions, higher prices erode real balances; exposure depends on money holdings and timing.
+UPGRADE Require diagnosing the erosion of the real-money tax base or a counterfactual financing comparison.
+
+ECON-SP-FINALBOSS-4015 legendary
+Productivity improves and potential output rises from 500 to 600. Separately, temporary demand expansion raises actual output to 700. Which policy diagnosis avoids mistaking all actual growth for capacity growth?
+A: Capacity rises 200; actual output equals new potential with no gap.
+B: Capacity is unchanged; actual output exceeds potential by 200.
+C: Capacity rises 100; actual output exceeds new potential by 100.
+D: Capacity rises 100; actual output falls below new potential by 100.
+Compare actual output with the updated productive benchmark, not the old one: 700−600=100. A real capacity improvement and a temporary positive demand gap can coexist.
+UPGRADE Require inferring capacity versus demand contributions from independent evidence or testing an output-target counterfactual.
+
+ECON-SP-MEDIUMBOSS-3008 legendary
+Productivity improves and potential output rises from 1700 to 2040. Separately, temporary demand expansion raises actual output to 2380. Which policy diagnosis avoids mistaking all actual growth for capacity growth?
+A: Capacity rises 680; actual output equals new potential with no gap.
+B: Capacity is unchanged; actual output exceeds potential by 680.
+C: Capacity rises 340; actual output exceeds new potential by 340.
+D: Capacity rises 340; actual output falls below new potential by 340.
+Compare actual output with the updated productive benchmark, not the old one: 2380−2040=340. A real capacity improvement and a temporary positive demand gap can coexist.
+UPGRADE Require inferring capacity versus demand contributions from independent evidence or testing an output-target counterfactual.
+
+ECON-SP-LEGENDARYBOSS-9106 legendary
+Productivity improves and potential output rises from 1100 to 1320. Separately, temporary demand expansion raises actual output to 1540. Which policy diagnosis avoids mistaking all actual growth for capacity growth?
+A: Capacity rises 440; actual output equals new potential with no gap.
+B: Capacity is unchanged; actual output exceeds potential by 440.
+C: Capacity rises 220; actual output falls below new potential by 220.
+D: Capacity rises 220; actual output exceeds new potential by 220.
+Compare actual output with the updated productive benchmark, not the old one: 1540−1320=220. A real capacity improvement and a temporary positive demand gap can coexist.
+UPGRADE Require inferring capacity versus demand contributions from independent evidence or testing an output-target counterfactual.
+
+ECON-NL-LEGENDARY-9047 legendary
+Cedar reports nominal GDP of $960 billion, a deflator of 120, and 32 million residents. Delta reports $1,320 billion, a deflator of 150, and 44 million residents. Which current real-GDP-per-person comparison is supported using comparable base prices?
+A: Cedar $25,000; Delta $20,000, so higher nominal total does not imply higher average real output
+B: Cedar $30,000; Delta $30,000, so average real output is equal
+C: Cedar $25,000; Delta $30,000, because only Cedar needs deflation
+D: Cedar $20,000; Delta $25,000, because the larger deflator raises real output
+Real GDP is 960/1.20 = 800 billion for Cedar and 1,320/1.50 = 880 billion for Delta. Divide by populations: 25,000 and 20,000 per person. The larger nominal aggregate does not settle the living-standard comparison.
+UPGRADE Preserve nominal versus real and population normalization but require evaluating incompatible rankings or identifying when base-price comparability is missing.
+
+LG-Q-9107 legendary
+A central bank wants to contract broad deposits by $800. The estimated actual deposit multiplier is 4 rather than the textbook maximum of 10. Which reserve operation matches the estimate?
+A: Remove $3200 of reserves; multiply the desired deposit change by the actual multiplier
+B: Remove $200 of reserves; using the maximum multiplier would understate the required removal
+C: Add $200 of reserves; a purchase is needed for contraction
+D: Remove $80 of reserves; the maximum must be used even when actual behavior differs
+Using the stated actual multiplier, ΔR=ΔD/m = −800/4 = −200. A maximum that overstates the actual multiplier would imply too small a reserve operation.
+UPGRADE Retain the actual-versus-maximum distinction; require diagnosing an observed miss or comparing uncertain multiplier scenarios.
+
+LG-Q-9113 legendary
+In a simplified reserve-ratio exercise, a bank has deposits $2200 and reserves $440. The required ratio rises from 10% to 15%, with balances otherwise unchanged. Which result and limitation are correct?
+A: Excess reserves: $220→$110; actual lending also depends on bank and borrower responses.
+B: Excess reserves: $220→$110; actual lending must fall by exactly $110.
+C: Excess reserves: $220→$330; the higher ratio releases $110 for additional lending.
+D: Capital: $220→$110; the higher reserve requirement writes down assets by $110.
+Old required reserves=220; new required reserves=.15×2200=330. Excess falls from 220 to 110. Balance-sheet capacity is not a complete behavioral lending forecast.
+UPGRADE Preserve the reserve-versus-credit distinction; require identifying which constraint binds or reconciling two banks with different actual outcomes.
+
+P52B-S3-MFM-LB-002 legendary
+A household holds $280 in checking, $560 in savings, and $280 in a small time deposit. Under current U.S. definitions, it transfers the time deposit into savings. Which M1/M2 changes follow?
+A: M1 falls $280; M2 is unchanged
+B: M1 rises $280; M2 is unchanged
+C: M1 is unchanged; M2 rises $280
+D: Both M1 and M2 rise $280
+Current M1 includes savings but not small time deposits. The transfer moves funds into M1 while remaining inside M2, so it is a reclassification within broad money, not an M2 increase.
+UPGRADE Preserve the stated M1/M2 convention; require reconciling several transactions or diagnosing an aggregate change that cannot be explained by a pure portfolio transfer.
+
+PMOE-NER-LB-002 legendary
+A British product's pound price rises 6 percent, the pound depreciates 8 percent against the dollar, and U.S. sales volume rises 5 percent. Approximately what happens to the exporter's dollar revenue?
+A: It falls about 2.5 percent
+B: It rises about 11 percent
+C: It falls about 7.4 percent
+D: It rises about 2.4 percent
+Dollar revenue changes by 1.06×0.92×1.05 − 1 ≈ 0.024, so it rises about 2.4 percent.
+UPGRADE Retain exchange-rate quotation and domestic-currency receipts; require evaluating a claim about competitiveness versus revenue or the conditions under which a hedge changes the ranking.
+
+PMOE-NER-LB-003 legendary
+The yen first appreciates 10 percent and then depreciates 10 percent, each measured in U.S. dollars per yen from the preceding value. A yen-denominated asset meanwhile gains 4 percent. What is its cumulative dollar return, and what final currency rise alone would restore the initial dollars-per-yen quote?
+A: A 4 percent asset return; no further currency change
+B: A 3 percent asset return; exactly a 1 percent currency rise
+C: A 2.96 percent asset return; about a 1.01 percent currency rise
+D: A 5.04 percent asset return; about a 1.01 percent currency decline
+The quote factor is 1.10 × 0.90 = 0.99. The dollar asset factor is 0.99 × 1.04 = 1.0296. Restoring the currency quote requires 1/0.99 − 1 ≈ 1.01 percent, separate from the asset return.
+UPGRADE Retain exchange-rate quotation and domestic-currency receipts; require evaluating a claim about competitiveness versus revenue or the conditions under which a hedge changes the ranking.
+
+PM2B3-PROD-LB-001 legendary
+A firm produces 2100 units at 10 units per labor hour. After training, productivity is 12 units per hour and required output rises to 2520. Which conclusion follows about labor hours and its limit?
+A: Hours are zero; higher productivity replaces all labor
+B: Hours remain 210; higher output exactly matches the proportional productivity gain
+C: Hours rise to 252; output growth alone sets required hours
+D: Hours fall to 175.0; apply the productivity gain but ignore higher required output
+Initial hours = 2100/10 = 210; new hours = 2520/12 = 210. Productivity gains do not necessarily reduce total hours when output demand changes too.
+UPGRADE Preserve output versus labor productivity; require identifying what employment or hours adjustment would reconcile a conflicting outcome, with a genuinely binding constraint.

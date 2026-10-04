@@ -3,7 +3,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const approved = require('./general-economics-approved-revisions.js');
-const micro = require('./microeconomics-editorial-approved-revisions.js');
+const micro = require('./microeconomics-student-wording-approved-revisions.js');
 const repoRoot = path.resolve(__dirname, '../../..');
 const read = relative => JSON.parse(fs.readFileSync(path.join(repoRoot, 'validation_artifacts', relative), 'utf8'));
 const assessmentAudits = [
@@ -26,6 +26,12 @@ const constructIds = new Set(micro.constructLedger.authorizedIds);
 const constructQuality = JSON.parse(fs.readFileSync(path.join(repoRoot,
   'audit_tools/general_economics_graph_construct_closure_20261003/quality_dispositions.json'), 'utf8').replace(/^\uFEFF/, '')).findings;
 assert(constructQuality.every(f => constructIds.has(String(f.questionId)) && f.note), 'Scoped construct-closure quality dispositions');
+const studentWordingQuality = JSON.parse(fs.readFileSync(path.join(repoRoot,
+  'audit_tools/microeconomics_student_wording_cleanup_20261004/quality_dispositions.json'), 'utf8')).findings;
+const studentWordingQualityIds = new Set(['40020', 'PG1-SUP-L-003']);
+assert.deepEqual(studentWordingQuality.map(f => String(f.questionId)).sort(), [...studentWordingQualityIds].sort());
+assert(studentWordingQuality.every(f => micro.microStudentWordingLedger.authorizedIds.includes(String(f.questionId)) &&
+  f.rule === 'possible-difficulty-overstatement' && f.severity === 'REVIEW' && f.note), 'Exact wording-only lexical dispositions');
 
 // Completed assessment passes edit the live canonical bank while preserving
 // provenance. Replay only recorded after-fields over the earlier full snapshot.
@@ -76,13 +82,17 @@ function assertAuditedFindings(result, auditName, entries) {
     ...approved.ledger.qualityFindings.filter(finding => selected.has(String(finding.questionId)))];
   const editorialExpected = [...priorExpected.filter(f => !editorialIds.has(String(f.questionId))),
     ...editorialQuality.filter(f => selected.has(String(f.questionId)))];
-  const expected = [...editorialExpected.filter(f => !constructIds.has(String(f.questionId))),
+  const constructExpected = [...editorialExpected.filter(f => !constructIds.has(String(f.questionId))),
     ...constructQuality.filter(f => selected.has(String(f.questionId)))];
+  const expected = [...constructExpected.filter(f => !studentWordingQualityIds.has(String(f.questionId))),
+    ...studentWordingQuality.filter(f => selected.has(String(f.questionId)))];
   const signature = finding => JSON.stringify([String(finding.questionId || finding.id), finding.rule, finding.severity]);
   assert.equal(result.counts.errors, 0, 'Deterministic question quality defect');
   assert.deepEqual(result.findings.map(signature).sort(), expected.map(signature).sort(), `Unreviewed quality findings: ${auditName}`);
   for (const finding of result.findings) {
-    const disposition = constructIds.has(String(finding.questionId))
+    const disposition = studentWordingQualityIds.has(String(finding.questionId))
+      ? studentWordingQuality.find(row => signature(row) === signature(finding))
+      : constructIds.has(String(finding.questionId))
       ? constructQuality.find(row => signature(row) === signature(finding))
       : editorialIds.has(String(finding.questionId))
       ? editorialQuality.find(row => signature(row) === signature(finding))

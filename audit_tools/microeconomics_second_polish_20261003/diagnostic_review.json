@@ -1,0 +1,2124 @@
+{
+  "review_population": 446,
+  "raw_before_counts": {
+    "errors": 90,
+    "warnings": 203,
+    "reviews": 235
+  },
+  "raw_after_counts": {
+    "errors": 4,
+    "warnings": 120,
+    "reviews": 185
+  },
+  "exact_diagnostic_flags": 4,
+  "exact_diagnostic_groups": [
+    [
+      "42656",
+      "42660"
+    ],
+    [
+      "42687",
+      "42697"
+    ]
+  ],
+  "all_literal_exact_stem_groups_including_graph_tasks": [
+    [
+      "P62H-MCMP-EL-036",
+      "P62H-MCMP-H-037"
+    ],
+    [
+      "42192",
+      "42198"
+    ],
+    [
+      "42381",
+      "42383"
+    ],
+    [
+      "42203",
+      "42207"
+    ],
+    [
+      "P62E-COP-B2-035",
+      "P62E-COP-H-018",
+      "P62E-COP-L-054"
+    ],
+    [
+      "P62F-PC-L-071",
+      "P62F-PC-L-072",
+      "P62F-PC-L-073"
+    ],
+    [
+      "42068",
+      "42077"
+    ],
+    [
+      "P62G-MON-EL-032",
+      "P62G-MON-EL-034"
+    ],
+    [
+      "42038",
+      "42076"
+    ],
+    [
+      "P62E-COP-B3-054",
+      "P62E-COP-L-059"
+    ],
+    [
+      "P62F-PC-EL-036",
+      "P62F-PC-M-040"
+    ],
+    [
+      "P62D-ITP-LB-016",
+      "P62D-ITP-LB-017"
+    ],
+    [
+      "P62F-PC-B1-005",
+      "P62F-PC-H-016"
+    ],
+    [
+      "P62G-MON-H-032",
+      "P62G-MON-H-036"
+    ],
+    [
+      "42048",
+      "42085"
+    ],
+    [
+      "P62F-PC-H-013",
+      "P62F-PC-L-066"
+    ],
+    [
+      "42075",
+      "42093"
+    ],
+    [
+      "P62B-ELAS-B2-020",
+      "P62B-ELAS-EL-038",
+      "P62B-ELAS-M-039"
+    ],
+    [
+      "P62F-PC-B2-037",
+      "P62F-PC-EL-034"
+    ],
+    [
+      "P62E-COP-L-025",
+      "P62E-COP-M-021"
+    ],
+    [
+      "P62F-PC-B2-036",
+      "P62F-PC-H-017",
+      "P62F-PC-L-067"
+    ],
+    [
+      "P62F-PC-B2-024",
+      "P62F-PC-L-062"
+    ],
+    [
+      "42058",
+      "42094"
+    ],
+    [
+      "P62E-COP-H-017",
+      "P62E-COP-L-049"
+    ],
+    [
+      "42344",
+      "42352",
+      "42360"
+    ],
+    [
+      "P62F-PC-H-011",
+      "P62F-PC-L-061"
+    ],
+    [
+      "42656",
+      "42660"
+    ],
+    [
+      "42687",
+      "42697"
+    ],
+    [
+      "42028",
+      "42067"
+    ],
+    [
+      "P62E-COP-H-019",
+      "P62E-COP-H-038",
+      "P62E-COP-M-024"
+    ],
+    [
+      "P62B-ELAS-B1-019",
+      "P62B-ELAS-EL-033"
+    ],
+    [
+      "P62H-MCMP-EL-021",
+      "P62H-MCMP-H-017"
+    ],
+    [
+      "P62F-PC-H-012",
+      "P62F-PC-L-064"
+    ],
+    [
+      "P62H-MCMP-EL-023",
+      "P62H-MCMP-EL-033",
+      "P62H-MCMP-H-016"
+    ],
+    [
+      "P62C-CPS-L-020",
+      "P62C-CPS-L-024",
+      "P62C-CPS-L-028"
+    ],
+    [
+      "P62E-COP-H-013",
+      "P62E-COP-L-046"
+    ],
+    [
+      "P62F-PC-H-018",
+      "P62F-PC-H-019",
+      "P62F-PC-L-069",
+      "P62F-PC-L-070"
+    ],
+    [
+      "P62D-ITP-LB-034",
+      "P62D-ITP-LB-035"
+    ],
+    [
+      "P62F-PC-EL-043",
+      "P62F-PC-L-068",
+      "P62F-PC-M-043"
+    ],
+    [
+      "P62H-MCMP-EL-032",
+      "P62H-MCMP-H-039"
+    ],
+    [
+      "42349",
+      "42357"
+    ],
+    [
+      "P62H-MCMP-B3-055",
+      "P62H-MCMP-H-038"
+    ],
+    [
+      "42371",
+      "42373"
+    ],
+    [
+      "P62D-ITP-B1-019",
+      "P62D-ITP-B1-020"
+    ],
+    [
+      "42195",
+      "42197"
+    ]
+  ],
+  "near_diagnostic_flags": 59,
+  "unique_near_pairs": 59,
+  "near_pair_dispositions": [
+    {
+      "ids": [
+        "P62C-CPS-L-002",
+        "P62C-CPS-L-007"
+      ],
+      "classification": "substantive parallel task retained",
+      "reason": "The two retained representatives still use the same fixed-quantity reallocation reasoning with different values. This cross-group numerical variant is not counted as deduplication; retain for instructor review rather than broaden the within-group redesign.",
+      "same_asset": true,
+      "skills": [
+        "efficient_quantity",
+        "total_surplus"
+      ],
+      "tasks": [
+        "5 buyers each want one unit with values [28, 34, 40, 46, 52]; 5 sellers each can supply one with resource costs [45, 37, 53, 41, 49]. Values and costs are in dollars. Exactly 2 units are produced by the cheapest sellers, but the lowest-valued buyer receives one instead of the buyer whose willingness to pay is $46. What would reallocating that one unit, with no transaction cost, do?",
+        "5 buyers each want one unit with values [54, 48, 42, 36, 30]; 5 sellers each can supply one with resource costs [39, 43, 47, 51, 55]. Values and costs are in dollars. Exactly 2 units are produced by the cheapest sellers, but the lowest-valued buyer receives one instead of the buyer whose willingness to pay is $48. What would reallocating that one unit, with no transaction cost, do?"
+      ]
+    },
+    {
+      "ids": [
+        "P62C-CPS-L-020",
+        "P62C-CPS-L-024"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": false,
+      "skills": [
+        "market_efficiency",
+        "market_efficiency"
+      ],
+      "tasks": [
+        "Refer to the graph. A student argues that the allocation at E is efficient only if buyers and sellers receive equal surplus. Which quantity and explanation correctly evaluate this claim under the standard competitive assumptions?",
+        "Refer to the graph. A student argues that the allocation at E is efficient only if buyers and sellers receive equal surplus. Which quantity and explanation correctly evaluate this claim under the standard competitive assumptions?"
+      ]
+    },
+    {
+      "ids": [
+        "P62C-CPS-L-024",
+        "P62C-CPS-L-028"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": false,
+      "skills": [
+        "market_efficiency",
+        "market_efficiency"
+      ],
+      "tasks": [
+        "Refer to the graph. A student argues that the allocation at E is efficient only if buyers and sellers receive equal surplus. Which quantity and explanation correctly evaluate this claim under the standard competitive assumptions?",
+        "Refer to the graph. A student argues that the allocation at E is efficient only if buyers and sellers receive equal surplus. Which quantity and explanation correctly evaluate this claim under the standard competitive assumptions?"
+      ]
+    },
+    {
+      "ids": [
+        "P62C-CPS-LB-014",
+        "P62C-CPS-LB-015"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": false,
+      "skills": [
+        "consumer_surplus_price_change",
+        "producer_surplus_price_change"
+      ],
+      "tasks": [
+        "Refer to the graph. As price moves from P1 to P2, a report counts only the gain on units already traded. Which full consumer-surplus change and explanation correct the omission?",
+        "Refer to the graph. As price moves from P1 to P2, a report counts only the gain on units already traded. Which full producer-surplus change and explanation correct the omission?"
+      ]
+    },
+    {
+      "ids": [
+        "42656",
+        "42660"
+      ],
+      "classification": "documented exact-duplicate exception",
+      "reason": "Retained duplicate, not claimed as a successful diversification.",
+      "same_asset": true,
+      "skills": [
+        "apply_indifference_curve_properties",
+        "apply_indifference_curve_properties"
+      ],
+      "tasks": [
+        "Two distinct standard indifference curves cross. What is the strongest diagnosis?",
+        "Two distinct standard indifference curves cross. What is the strongest diagnosis?"
+      ]
+    },
+    {
+      "ids": [
+        "42687",
+        "42697"
+      ],
+      "classification": "documented exact-duplicate exception",
+      "reason": "Retained duplicate, not claimed as a successful diversification.",
+      "same_asset": true,
+      "skills": [
+        "distinguish_special_preferences",
+        "distinguish_special_preferences"
+      ],
+      "tasks": [
+        "The consumer is always willing to trade two units of Y for one X. What preference form fits?",
+        "The consumer is always willing to trade two units of Y for one X. What preference form fits?"
+      ]
+    },
+    {
+      "ids": [
+        "P62E-COP-H-013",
+        "P62E-COP-L-045"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": true,
+      "skills": [
+        "marginal_average_relationship",
+        "marginal_average_relationship"
+      ],
+      "tasks": [
+        "Refer to the graph. Which statement correctly combines its reading at Q = 35 with the marginal-average cost rule?",
+        "Refer to the graph. Which statement correctly combines its reading at Q = 25 with the marginal-average cost rule?"
+      ]
+    },
+    {
+      "ids": [
+        "P62E-COP-B2-035",
+        "P62E-COP-H-018"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": true,
+      "skills": [
+        "cost_curve_relationships",
+        "cost_curve_relationships"
+      ],
+      "tasks": [
+        "Refer to the average-cost graph. Approximately how large is the ATC–AVC gap at Q = 20, and why is the gap smaller at Q = 70?",
+        "Refer to the average-cost graph. Approximately how large is the ATC–AVC gap at Q = 20, and why is the gap smaller at Q = 70?"
+      ]
+    },
+    {
+      "ids": [
+        "P62E-COP-H-019",
+        "P62E-COP-H-038"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": false,
+      "skills": [
+        "cost_curve_relationships",
+        "cost_curve_relationships"
+      ],
+      "tasks": [
+        "Refer to the graph. What is the vertical difference between total cost and total variable cost, and why does it remain at that amount as output changes?",
+        "Refer to the graph. What is the vertical difference between total cost and total variable cost, and why does it remain at that amount as output changes?"
+      ]
+    },
+    {
+      "ids": [
+        "P62E-COP-H-042",
+        "P62E-COP-H-043"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": true,
+      "skills": [
+        "marginal_average_relationship",
+        "marginal_average_relationship"
+      ],
+      "tasks": [
+        "Refer to the MP–AP graph. At 3 workers, which approximate readings and implication of a small increase in labor are correct?",
+        "Refer to the MP–AP graph. At 8 workers, which approximate readings and implication of a small increase in labor are correct?"
+      ]
+    },
+    {
+      "ids": [
+        "P62E-COP-L-045",
+        "P62E-COP-L-046"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": false,
+      "skills": [
+        "marginal_average_relationship",
+        "marginal_average_relationship"
+      ],
+      "tasks": [
+        "Refer to the graph. Which statement correctly combines its reading at Q = 25 with the marginal-average cost rule?",
+        "Refer to the graph. Which statement correctly combines its reading at Q = 35 with the marginal-average cost rule?"
+      ]
+    },
+    {
+      "ids": [
+        "P62E-COP-L-046",
+        "P62E-COP-L-047"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": false,
+      "skills": [
+        "marginal_average_relationship",
+        "marginal_average_relationship"
+      ],
+      "tasks": [
+        "Refer to the graph. Which statement correctly combines its reading at Q = 35 with the marginal-average cost rule?",
+        "Refer to the graph. Which statement correctly combines its reading at Q = 50 with the marginal-average cost rule?"
+      ]
+    },
+    {
+      "ids": [
+        "P62E-COP-L-047",
+        "P62E-COP-L-048"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": false,
+      "skills": [
+        "marginal_average_relationship",
+        "marginal_average_relationship"
+      ],
+      "tasks": [
+        "Refer to the graph. Which statement correctly combines its reading at Q = 50 with the marginal-average cost rule?",
+        "Refer to the graph. Which statement correctly combines its reading at Q = 40 with the marginal-average cost rule?"
+      ]
+    },
+    {
+      "ids": [
+        "P62E-COP-H-017",
+        "P62E-COP-L-049"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": false,
+      "skills": [
+        "cost_curve_relationships",
+        "marginal_average_relationship"
+      ],
+      "tasks": [
+        "Refer to the graph. Where does MC cross AVC and ATC, and what do the marginal-average relationships imply at the crossings?",
+        "Refer to the graph. Where does MC cross AVC and ATC, and what do the marginal-average relationships imply at the crossings?"
+      ]
+    },
+    {
+      "ids": [
+        "P62E-COP-H-018",
+        "P62E-COP-L-054"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": true,
+      "skills": [
+        "average_fixed_cost",
+        "cost_curve_relationships"
+      ],
+      "tasks": [
+        "Refer to the average-cost graph. Approximately how large is the ATC–AVC gap at Q = 20, and why is the gap smaller at Q = 70?",
+        "Refer to the average-cost graph. Approximately how large is the ATC–AVC gap at Q = 20, and why is the gap smaller at Q = 70?"
+      ]
+    },
+    {
+      "ids": [
+        "P62E-COP-B3-054",
+        "P62E-COP-L-059"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": true,
+      "skills": [
+        "minimum_efficient_scale",
+        "minimum_efficient_scale"
+      ],
+      "tasks": [
+        "Refer to the LRATC graph. What output is marked, and what does it represent for the firm’s scale?",
+        "Refer to the LRATC graph. What output is marked, and what does it represent for the firm’s scale?"
+      ]
+    },
+    {
+      "ids": [
+        "P62E-COP-L-025",
+        "P62E-COP-M-021"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": false,
+      "skills": [
+        "diminishing_marginal_product",
+        "diminishing_marginal_product"
+      ],
+      "tasks": [
+        "Refer to the TP graph. Compare the contributions of the fifth and sixth workers. Which changes and production interpretation are correct?",
+        "Refer to the TP graph. Compare the contributions of the fifth and sixth workers. Which changes and production interpretation are correct?"
+      ]
+    },
+    {
+      "ids": [
+        "P62E-COP-H-019",
+        "P62E-COP-M-024"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": true,
+      "skills": [
+        "cost_curve_relationships",
+        "cost_curve_relationships"
+      ],
+      "tasks": [
+        "Refer to the graph. What is the vertical difference between total cost and total variable cost, and why does it remain at that amount as output changes?",
+        "Refer to the graph. What is the vertical difference between total cost and total variable cost, and why does it remain at that amount as output changes?"
+      ]
+    },
+    {
+      "ids": [
+        "P62B-ELAS-B1-019",
+        "P62B-ELAS-EL-033"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": true,
+      "skills": [
+        "revenue_maximization_unit_elastic",
+        "total_revenue_test"
+      ],
+      "tasks": [
+        "Refer to the graph. Which total revenue at B and interpretation of a small movement in either direction along demand are correct?",
+        "Refer to the graph. Which total revenue at B and interpretation of a small movement in either direction along demand are correct?"
+      ]
+    },
+    {
+      "ids": [
+        "P62B-ELAS-B2-020",
+        "P62B-ELAS-EL-038"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": true,
+      "skills": [
+        "time_horizon_supply",
+        "time_horizon_supply"
+      ],
+      "tasks": [
+        "Use the graph. Refer to the common starting point and the higher marked price on the two supply curves. Which short-run and long-run quantity increases, and elasticity interpretation, are supported?",
+        "Use the graph. Refer to the common starting point and the higher marked price on the two supply curves. Which short-run and long-run quantity increases, and elasticity interpretation, are supported?"
+      ]
+    },
+    {
+      "ids": [
+        "P62B-ELAS-EL-038",
+        "P62B-ELAS-M-039"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": true,
+      "skills": [
+        "time_horizon_supply",
+        "time_horizon_supply"
+      ],
+      "tasks": [
+        "Use the graph. Refer to the common starting point and the higher marked price on the two supply curves. Which short-run and long-run quantity increases, and elasticity interpretation, are supported?",
+        "Use the graph. Refer to the common starting point and the higher marked price on the two supply curves. Which short-run and long-run quantity increases, and elasticity interpretation, are supported?"
+      ]
+    },
+    {
+      "ids": [
+        "42344",
+        "42352"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": false,
+      "skills": [
+        "demand_shift_labor_surplus",
+        "supply_shift_labor_surplus"
+      ],
+      "tasks": [
+        "Use the graph. After the plotted shift, suppose the wage initially stays at its old $20 level. Which imbalance and wage pressure follow?",
+        "Use the graph. After the plotted shift, suppose the wage initially stays at its old $20 level. Which imbalance and wage pressure follow?"
+      ]
+    },
+    {
+      "ids": [
+        "42352",
+        "42360"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": false,
+      "skills": [
+        "supply_shift_labor_surplus",
+        "supply_shift_labor_shortage"
+      ],
+      "tasks": [
+        "Use the graph. After the plotted shift, suppose the wage initially stays at its old $20 level. Which imbalance and wage pressure follow?",
+        "Use the graph. After the plotted shift, suppose the wage initially stays at its old $20 level. Which imbalance and wage pressure follow?"
+      ]
+    },
+    {
+      "ids": [
+        "42349",
+        "42357"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": false,
+      "skills": [
+        "labor_supply_decrease_comparative_statics",
+        "labor_supply_increase_comparative_statics"
+      ],
+      "tasks": [
+        "Refer to the graph. Which new wage and employment pair follows the supply shift, and what happens on the unchanged labor-demand curve?",
+        "Refer to the graph. Which new wage and employment pair follows the supply shift, and what happens on the unchanged labor-demand curve?"
+      ]
+    },
+    {
+      "ids": [
+        "42371",
+        "42373"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": true,
+      "skills": [
+        "nonbinding_minimum_wage",
+        "nonbinding_floor_no_surplus"
+      ],
+      "tasks": [
+        "Refer to the minimum-wage graph. Which gap between the market-clearing wage and the legal minimum, and policy conclusion, are correct?",
+        "Refer to the minimum-wage graph. Which gap between the market-clearing wage and the legal minimum, and policy conclusion, are correct?"
+      ]
+    },
+    {
+      "ids": [
+        "42381",
+        "42383"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": true,
+      "skills": [
+        "simultaneous_shift_wage_offset",
+        "simultaneous_shift_ambiguity"
+      ],
+      "tasks": [
+        "Both labor demand and supply increase in the graph. Which final wage and interpretation of the combined shifts are justified?",
+        "Both labor demand and supply increase in the graph. Which final wage and interpretation of the combined shifts are justified?"
+      ]
+    },
+    {
+      "ids": [
+        "P62D-ITP-B1-019",
+        "P62D-ITP-B1-020"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": false,
+      "skills": [
+        "import_quantity",
+        "export_quantity"
+      ],
+      "tasks": [
+        "At the world price shown, which trade quantity and economic interpretation follow from domestic demand and supply?",
+        "At the world price shown, which trade quantity and economic interpretation follow from domestic demand and supply?"
+      ]
+    },
+    {
+      "ids": [
+        "P62D-ITP-LB-016",
+        "P62D-ITP-LB-017"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": false,
+      "skills": [
+        "integrated_trade_analysis",
+        "integrated_trade_analysis"
+      ],
+      "tasks": [
+        "Faron opens its market to trade at the world price shown. Which trade and welfare changes from autarky, and interpretation of their distribution, are correct?",
+        "Faron opens its market to trade at the world price shown. Which trade and welfare changes from autarky, and interpretation of their distribution, are correct?"
+      ]
+    },
+    {
+      "ids": [
+        "P62D-ITP-LB-034",
+        "P62D-ITP-LB-035"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": false,
+      "skills": [
+        "integrated_trade_analysis",
+        "integrated_trade_analysis"
+      ],
+      "tasks": [
+        "Lydon opens its market to trade at the world price shown. Which trade and welfare changes from autarky, and interpretation of their distribution, are correct?",
+        "Lydon opens its market to trade at the world price shown. Which trade and welfare changes from autarky, and interpretation of their distribution, are correct?"
+      ]
+    },
+    {
+      "ids": [
+        "42028",
+        "42067"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": false,
+      "skills": [
+        "policy_internalization",
+        "corrective_tax_externality_logic"
+      ],
+      "tasks": [
+        "Which per-unit correction fits the garments graph, and how does it change private incentives?",
+        "Which per-unit correction fits the garments graph, and how does it change private incentives?"
+      ]
+    },
+    {
+      "ids": [
+        "42068",
+        "42077"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": false,
+      "skills": [
+        "corrective_tax_misconception",
+        "corrective_tax_misconception"
+      ],
+      "tasks": [
+        "A regulator says any tax that reduces the market quantity will fully correct the externality. Which optimal tax and diagnosis are supported by the graph?",
+        "A regulator says any tax that reduces the market quantity will fully correct the externality. Which optimal tax and diagnosis are supported by the graph?"
+      ]
+    },
+    {
+      "ids": [
+        "42075",
+        "42093"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": false,
+      "skills": [
+        "buyer_seller_policy_wedge",
+        "buyer_seller_policy_wedge"
+      ],
+      "tasks": [
+        "At the socially efficient quantity in the graph, which buyer price and seller receipt are consistent with the corrective policy, and what does their difference represent?",
+        "At the socially efficient quantity in the graph, which buyer price and seller receipt are consistent with the corrective policy, and what does their difference represent?"
+      ]
+    },
+    {
+      "ids": [
+        "42038",
+        "42076"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": false,
+      "skills": [
+        "policy_internalization",
+        "corrective_tax_externality_logic"
+      ],
+      "tasks": [
+        "Which per-unit correction fits the vapes graph, and how does it change private incentives?",
+        "Which per-unit correction fits the vapes graph, and how does it change private incentives?"
+      ]
+    },
+    {
+      "ids": [
+        "42048",
+        "42085"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": false,
+      "skills": [
+        "policy_internalization",
+        "subsidy_price_signal"
+      ],
+      "tasks": [
+        "Which per-unit correction fits the gardens graph, and how does it change private incentives?",
+        "Which per-unit correction fits the gardens graph, and how does it change private incentives?"
+      ]
+    },
+    {
+      "ids": [
+        "42058",
+        "42094"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": false,
+      "skills": [
+        "policy_internalization",
+        "subsidy_price_signal"
+      ],
+      "tasks": [
+        "Which per-unit correction fits the transit rides graph, and how does it change private incentives?",
+        "Which per-unit correction fits the transit rides graph, and how does it change private incentives?"
+      ]
+    },
+    {
+      "ids": [
+        "42195",
+        "42197"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": true,
+      "skills": [
+        "vertical_summation_logic",
+        "vertical_vs_horizontal_summation"
+      ],
+      "tasks": [
+        "Use the graph. At four shared fireworks displays, which aggregate marginal benefit and summation rule are correct?",
+        "Use the graph. At four shared fireworks displays, which aggregate marginal benefit and summation rule are correct?"
+      ]
+    },
+    {
+      "ids": [
+        "42192",
+        "42198"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": true,
+      "skills": [
+        "collective_willingness_to_pay",
+        "individual_mb_calculation"
+      ],
+      "tasks": [
+        "Use the graph. An analyst uses North’s benefit alone to recommend reducing fireworks below four displays. Which aggregate reading and marginal rule correct the recommendation?",
+        "Use the graph. An analyst uses North’s benefit alone to recommend reducing fireworks below four displays. Which aggregate reading and marginal rule correct the recommendation?"
+      ]
+    },
+    {
+      "ids": [
+        "42203",
+        "42207"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": true,
+      "skills": [
+        "public_good_common_quantity",
+        "public_good_classification"
+      ],
+      "tasks": [
+        "Use the graph. At the marked radio-programming quantity, which marginal benefits and treatment of the shared hours are correct?",
+        "Use the graph. At the marked radio-programming quantity, which marginal benefits and treatment of the shared hours are correct?"
+      ]
+    },
+    {
+      "ids": [
+        "P62H-MCMP-EL-023",
+        "P62H-MCMP-H-016"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": false,
+      "skills": [
+        "entry_adjustment",
+        "entry_adjustment"
+      ],
+      "tasks": [
+        "Use the graph. Suppose the plotted outcome follows an earlier period of short-run profit and entry. Which current price and description of the adjustment are correct?",
+        "Use the graph. Suppose the plotted outcome follows an earlier period of short-run profit and entry. Which current price and description of the adjustment are correct?"
+      ]
+    },
+    {
+      "ids": [
+        "P62H-MCMP-EL-032",
+        "P62H-MCMP-H-039"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": false,
+      "skills": [
+        "allocative_inefficiency",
+        "allocative_inefficiency"
+      ],
+      "tasks": [
+        "Use the graph. Which markup at the profit-maximizing output and allocative assessment are correct?",
+        "Use the graph. Which markup at the profit-maximizing output and allocative assessment are correct?"
+      ]
+    },
+    {
+      "ids": [
+        "P62H-MCMP-EL-033",
+        "P62H-MCMP-H-016"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": false,
+      "skills": [
+        "entry_adjustment",
+        "long_run_adjustment"
+      ],
+      "tasks": [
+        "Use the graph. Suppose the plotted outcome follows an earlier period of short-run profit and entry. Which current price and description of the adjustment are correct?",
+        "Use the graph. Suppose the plotted outcome follows an earlier period of short-run profit and entry. Which current price and description of the adjustment are correct?"
+      ]
+    },
+    {
+      "ids": [
+        "P62H-MCMP-EL-021",
+        "P62H-MCMP-H-017"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": true,
+      "skills": [
+        "markup_and_allocative_inefficiency",
+        "zero_profit_vs_efficiency"
+      ],
+      "tasks": [
+        "Which markup at Q1 is shown, and why does it matter for allocative efficiency even when profit is zero?",
+        "Which markup at Q1 is shown, and why does it matter for allocative efficiency even when profit is zero?"
+      ]
+    },
+    {
+      "ids": [
+        "P62H-MCMP-EL-036",
+        "P62H-MCMP-H-037"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": true,
+      "skills": [
+        "excess_capacity",
+        "excess_capacity"
+      ],
+      "tasks": [
+        "The firm could produce at minimum ATC. Which current profit-maximizing quantity and explanation show why it stops earlier in the graph?",
+        "The firm could produce at minimum ATC. Which current profit-maximizing quantity and explanation show why it stops earlier in the graph?"
+      ]
+    },
+    {
+      "ids": [
+        "P62G-MON-EL-032",
+        "P62G-MON-EL-034"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": false,
+      "skills": [
+        "monopoly_deadweight_loss",
+        "monopoly_deadweight_loss"
+      ],
+      "tasks": [
+        "How many additional units lie between the monopoly and demand–MC quantities shown, and why would producing those units reduce allocative inefficiency?",
+        "How many additional units lie between the monopoly and demand–MC quantities shown, and why would producing those units reduce allocative inefficiency?"
+      ]
+    },
+    {
+      "ids": [
+        "P62G-MON-H-032",
+        "P62G-MON-H-036"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": false,
+      "skills": [
+        "profit_maximizing_output",
+        "profit_maximizing_output"
+      ],
+      "tasks": [
+        "A manager proposes expanding monopoly output to the demand–MC intersection in the graph. Which profit-maximizing output and diagnosis of that proposal are correct?",
+        "A manager proposes expanding monopoly output to the demand–MC intersection in the graph. Which profit-maximizing output and diagnosis of that proposal are correct?"
+      ]
+    },
+    {
+      "ids": [
+        "P62F-PC-B2-037",
+        "P62F-PC-EL-034"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": true,
+      "skills": [
+        "produce_at_loss",
+        "produce_at_loss"
+      ],
+      "tasks": [
+        "Which operating loss and shutdown loss are implied by the graph, and what should the firm do if fixed cost is unavoidable?",
+        "Which operating loss and shutdown loss are implied by the graph, and what should the firm do if fixed cost is unavoidable?"
+      ]
+    },
+    {
+      "ids": [
+        "P62F-PC-EL-043",
+        "P62F-PC-L-068"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": false,
+      "skills": [
+        "market_vs_firm",
+        "market_vs_firm"
+      ],
+      "tasks": [
+        "Use the graph. How do the two panels determine the representative firm’s price and output?",
+        "Use the graph. How do the two panels determine the representative firm’s price and output?"
+      ]
+    },
+    {
+      "ids": [
+        "P62F-PC-H-011",
+        "P62F-PC-L-061"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": true,
+      "skills": [
+        "integrated_competitive_firm_analysis",
+        "integrated_competitive_firm_analysis"
+      ],
+      "tasks": [
+        "Use the graph. Which price reading and order of analysis correctly determine the firm’s output and profit?",
+        "Use the graph. Which price reading and order of analysis correctly determine the firm’s output and profit?"
+      ]
+    },
+    {
+      "ids": [
+        "P62F-PC-B1-005",
+        "P62F-PC-H-016"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": true,
+      "skills": [
+        "rising_mc_condition",
+        "rising_mc_condition"
+      ],
+      "tasks": [
+        "Use the graph. Which approximate quantity at Q1 and marginal condition identify the firm’s profit-maximizing output?",
+        "Use the graph. Which approximate quantity at Q1 and marginal condition identify the firm’s profit-maximizing output?"
+      ]
+    },
+    {
+      "ids": [
+        "P62F-PC-B2-036",
+        "P62F-PC-H-017"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": false,
+      "skills": [
+        "firm_short_run_supply",
+        "firm_short_run_supply"
+      ],
+      "tasks": [
+        "What is the approximate shutdown-price threshold in the graph, and which part of MC supplies the firm’s positive short-run output?",
+        "What is the approximate shutdown-price threshold in the graph, and which part of MC supplies the firm’s positive short-run output?"
+      ]
+    },
+    {
+      "ids": [
+        "P62F-PC-H-018",
+        "P62F-PC-H-019"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": false,
+      "skills": [
+        "entry",
+        "exit"
+      ],
+      "tasks": [
+        "Use the graph. Which approximate final price P2 and explanation of the long-run adjustment are correct?",
+        "Use the graph. Which approximate final price P2 and explanation of the long-run adjustment are correct?"
+      ]
+    },
+    {
+      "ids": [
+        "P62F-PC-H-019",
+        "P62F-PC-L-070"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": true,
+      "skills": [
+        "exit",
+        "exit"
+      ],
+      "tasks": [
+        "Use the graph. Which approximate final price P2 and explanation of the long-run adjustment are correct?",
+        "Use the graph. Which approximate final price P2 and explanation of the long-run adjustment are correct?"
+      ]
+    },
+    {
+      "ids": [
+        "P62F-PC-B2-024",
+        "P62F-PC-L-062"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": false,
+      "skills": [
+        "profit_per_unit",
+        "profit_per_unit"
+      ],
+      "tasks": [
+        "At Q1 in the graph, what is the approximate height of the profit rectangle, and what does that height measure?",
+        "At Q1 in the graph, what is the approximate height of the profit rectangle, and what does that height measure?"
+      ]
+    },
+    {
+      "ids": [
+        "P62F-PC-H-017",
+        "P62F-PC-L-067"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": true,
+      "skills": [
+        "firm_short_run_supply",
+        "firm_short_run_supply"
+      ],
+      "tasks": [
+        "What is the approximate shutdown-price threshold in the graph, and which part of MC supplies the firm’s positive short-run output?",
+        "What is the approximate shutdown-price threshold in the graph, and which part of MC supplies the firm’s positive short-run output?"
+      ]
+    },
+    {
+      "ids": [
+        "P62F-PC-H-018",
+        "P62F-PC-L-069"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": true,
+      "skills": [
+        "entry",
+        "entry"
+      ],
+      "tasks": [
+        "Use the graph. Which approximate final price P2 and explanation of the long-run adjustment are correct?",
+        "Use the graph. Which approximate final price P2 and explanation of the long-run adjustment are correct?"
+      ]
+    },
+    {
+      "ids": [
+        "P62F-PC-L-071",
+        "P62F-PC-L-072"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": false,
+      "skills": [
+        "constant_cost_industry",
+        "increasing_cost_industry"
+      ],
+      "tasks": [
+        "At industry quantity 80, which approximate long-run price and cost interpretation are supported by the graph?",
+        "At industry quantity 80, which approximate long-run price and cost interpretation are supported by the graph?"
+      ]
+    },
+    {
+      "ids": [
+        "P62F-PC-L-072",
+        "P62F-PC-L-073"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": false,
+      "skills": [
+        "increasing_cost_industry",
+        "decreasing_cost_industry"
+      ],
+      "tasks": [
+        "At industry quantity 80, which approximate long-run price and cost interpretation are supported by the graph?",
+        "At industry quantity 80, which approximate long-run price and cost interpretation are supported by the graph?"
+      ]
+    },
+    {
+      "ids": [
+        "P62F-PC-EL-036",
+        "P62F-PC-M-040"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": true,
+      "skills": [
+        "firm_short_run_supply",
+        "firm_short_run_supply"
+      ],
+      "tasks": [
+        "At what price does the positive-output portion of short-run supply begin in the graph, and why is lower MC excluded?",
+        "At what price does the positive-output portion of short-run supply begin in the graph, and why is lower MC excluded?"
+      ]
+    },
+    {
+      "ids": [
+        "P62F-PC-EL-043",
+        "P62F-PC-M-043"
+      ],
+      "classification": "graph-family parallel task retained",
+      "reason": "Same graph-family operation remains as parallel practice. The second pass changed only high-confidence answer architecture or cleanup-induced load; it did not authorize graph-family task deduplication. Different assets, tiers or distractors are not counted as proof of a different reasoning path.",
+      "same_asset": false,
+      "skills": [
+        "market_vs_firm",
+        "market_vs_firm"
+      ],
+      "tasks": [
+        "Use the graph. How do the two panels determine the representative firm’s price and output?",
+        "Use the graph. How do the two panels determine the representative firm’s price and output?"
+      ]
+    }
+  ],
+  "new_rule_flags": [
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42204",
+      "concept": "market-failures",
+      "pools": [
+        "easy"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "The vertical guide marks one quantity of radio programming received by both groups. How should that quantity be treated when adding their demands?",
+      "disposition": "Reviewed; no additional authorized change. A lexical flag is not itself evidence of construct, key or tier failure."
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "P62C-CPS-L-055",
+      "concept": "consumer-and-producer-surplus",
+      "pools": [
+        "hard"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Five buyers value one unit each at $54, $48, $42, $36 and $30. Five sellers' costs are $39, $43, $47, $51 and $55 per unit. Initially the two highest-valued buyers buy from the two cheapest sellers. An innovation lowers the $47 seller's cost to $40 and the $43 seller's cost to $41. With no transaction costs, what happens to the efficient quantity and total surplus?",
+      "disposition": "Reviewed; no additional authorized change. A lexical flag is not itself evidence of construct, key or tier failure."
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "42646",
+      "concept": "consumer-choice",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A consumer says, \"I have compared A and B and like them equally.\" Does this response violate completeness?",
+      "disposition": "Reviewed; no additional authorized change. A lexical flag is not itself evidence of construct, key or tier failure."
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "42650",
+      "concept": "consumer-choice",
+      "pools": [
+        "easy"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A consumer ranks every pair of feasible bundles except A and B, saying there is no ranking at all for that pair. Are these preferences complete?",
+      "disposition": "Reviewed; no additional authorized change. A lexical flag is not itself evidence of construct, key or tier failure."
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "42653",
+      "concept": "consumer-choice",
+      "pools": [
+        "medium"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Preferences are complete and transitive. A consumer prefers A to B and A to C. What can be concluded about B and C from this information?",
+      "disposition": "Reviewed; no additional authorized change. A lexical flag is not itself evidence of construct, key or tier failure."
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "42662",
+      "concept": "consumer-choice",
+      "pools": [
+        "medium"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Preferences are strictly convex. A and B are distinct, equally preferred bundles. What follows about a bundle containing the average of their quantities?",
+      "disposition": "Reviewed; no additional authorized change. A lexical flag is not itself evidence of construct, key or tier failure."
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "42678",
+      "concept": "consumer-choice",
+      "pools": [
+        "bridge"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A consumer strictly prefers A to B. A proposed transformation assigns both bundles utility 10. Why does it fail to preserve the preferences?",
+      "disposition": "Reviewed; no additional authorized change. A lexical flag is not itself evidence of construct, key or tier failure."
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "42695",
+      "concept": "consumer-choice",
+      "pools": [
+        "medium"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A consumer treats X and Y as perfect substitutes, with U = 2X + Y. X costs $2 and Y costs $1. If income is $12 and goods are divisible, which bundles maximize utility?",
+      "disposition": "Reviewed; no additional authorized change. A lexical flag is not itself evidence of construct, key or tier failure."
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "42703",
+      "concept": "consumer-choice",
+      "pools": [
+        "hard"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "At an initial interior optimum, MRS = Px/Py. The price of X falls, with income and Py unchanged. At the original bundle, MRS is now above the new price ratio. What follows, assuming smooth, strictly convex, more-is-better preferences but without assuming X is normal?",
+      "disposition": "Reviewed; no additional authorized change. A lexical flag is not itself evidence of construct, key or tier failure."
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "42706",
+      "concept": "consumer-choice",
+      "pools": [
+        "hard"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A consumer has a unique optimum with smooth, strictly convex, more-is-better preferences. Income and both goods' prices then triple. A student predicts more consumption because income rose; another predicts less because prices rose. Which conclusion follows?",
+      "disposition": "Reviewed; no additional authorized change. A lexical flag is not itself evidence of construct, key or tier failure."
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "P62H-MCMP-L-035",
+      "concept": "monopolistic-competition",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "At its long-run equilibrium, a monopolistically competitive firm produces 24 units, charges $76, and has marginal cost $49.60. It minimizes ATC at 42.93 units. Free entry has eliminated economic profit. Which conclusion follows?",
+      "disposition": "Reviewed; no additional authorized change. A lexical flag is not itself evidence of construct, key or tier failure."
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "P62H-MCMP-L-038",
+      "concept": "monopolistic-competition",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A monopolistically competitive firm maximizes profit at 18 units and would minimize ATC at 30.12 units. It produces and sells all 18 units. A student calls the 12.12-unit gap \"unsold inventory.\" What is the best correction?",
+      "disposition": "Reviewed; no additional authorized change. A lexical flag is not itself evidence of construct, key or tier failure."
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "P62H-MCMP-L-041",
+      "concept": "monopolistic-competition",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A monopolistically competitive firm charges $82 at its chosen output, where MC = $48.40 and ATC = $82. Suppose a regulator requires a price equal to MC at that same output, holding the displayed costs fixed. Would the firm cover total cost?",
+      "disposition": "Reviewed; no additional authorized change. A lexical flag is not itself evidence of construct, key or tier failure."
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "P62F-PC-L-097",
+      "concept": "perfect-competition",
+      "pools": [
+        "legendary"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Starting from the market price and the firm's costs in the paired market and firm diagram, which current profit and chain of entry, price and output changes follow under free entry with identical firms and unchanged costs?",
+      "disposition": "Reviewed; no additional authorized change. A lexical flag is not itself evidence of construct, key or tier failure."
+    }
+  ],
+  "duplicate_group_review": [
+    {
+      "group": "D01",
+      "members": [
+        {
+          "id": "P62C-CPS-L-002",
+          "group": "D01",
+          "status": "retained representative",
+          "reason": "Retained as the group’s clear baseline task; other revised members use the recorded different reasoning paths."
+        },
+        {
+          "id": "P62C-CPS-L-050",
+          "group": "D01",
+          "status": "revised",
+          "reason": "Tests the extensive margin after efficient allocation, instead of reallocating a fixed quantity between buyers."
+        }
+      ],
+      "acceptance": "Revised members use different reasoning operations; retained exceptions are explicitly excluded from successful diversification."
+    },
+    {
+      "group": "D02",
+      "members": [
+        {
+          "id": "P62C-CPS-L-007",
+          "group": "D02",
+          "status": "retained representative",
+          "reason": "Retained as the group’s clear baseline task; other revised members use the recorded different reasoning paths."
+        },
+        {
+          "id": "P62C-CPS-L-055",
+          "group": "D02",
+          "status": "revised",
+          "reason": "Re-sorts marginal costs after a selective innovation and distinguishes a cost saving on existing production from a gain from expanding quantity."
+        }
+      ],
+      "acceptance": "Revised members use different reasoning operations; retained exceptions are explicitly excluded from successful diversification."
+    },
+    {
+      "group": "D03",
+      "members": [
+        {
+          "id": "42606",
+          "group": "D03",
+          "status": "retained representative",
+          "reason": "Retained as the group’s clear baseline task; other revised members use the recorded different reasoning paths."
+        },
+        {
+          "id": "42618",
+          "group": "D03",
+          "status": "revised",
+          "reason": "Solves for the income threshold rather than testing membership with income and cost already supplied."
+        }
+      ],
+      "acceptance": "Revised members use different reasoning operations; retained exceptions are explicitly excluded from successful diversification."
+    },
+    {
+      "group": "D04",
+      "members": [
+        {
+          "id": "42607",
+          "group": "D04",
+          "status": "retained representative",
+          "reason": "Retained as the group’s clear baseline task; other revised members use the recorded different reasoning paths."
+        },
+        {
+          "id": "42619",
+          "group": "D04",
+          "status": "revised",
+          "reason": "Solves an inverse affordability threshold for price, rather than dividing income by price to find a whole-number quantity."
+        }
+      ],
+      "acceptance": "Revised members use different reasoning operations; retained exceptions are explicitly excluded from successful diversification."
+    },
+    {
+      "group": "D05",
+      "members": [
+        {
+          "id": "42608",
+          "group": "D05",
+          "status": "retained representative",
+          "reason": "Retained as the group’s clear baseline task; other revised members use the recorded different reasoning paths."
+        },
+        {
+          "id": "42620",
+          "group": "D05",
+          "status": "revised",
+          "reason": "Classifies two bundles by affordability rather than calculating leftover income."
+        }
+      ],
+      "acceptance": "Revised members use different reasoning operations; retained exceptions are explicitly excluded from successful diversification."
+    },
+    {
+      "group": "D06",
+      "members": [
+        {
+          "id": "42609",
+          "group": "D06",
+          "status": "retained representative",
+          "reason": "Retained as the group’s clear baseline task; other revised members use the recorded different reasoning paths."
+        },
+        {
+          "id": "42621",
+          "group": "D06",
+          "status": "revised",
+          "reason": "Reconstructs both prices from intercepts instead of writing a boundary from given prices."
+        }
+      ],
+      "acceptance": "Revised members use different reasoning operations; retained exceptions are explicitly excluded from successful diversification."
+    },
+    {
+      "group": "D07",
+      "members": [
+        {
+          "id": "42610",
+          "group": "D07",
+          "status": "retained representative",
+          "reason": "Retained as the group’s clear baseline task; other revised members use the recorded different reasoning paths."
+        },
+        {
+          "id": "42622",
+          "group": "D07",
+          "status": "revised",
+          "reason": "Uses the remaining budget after a required purchase; the original only checked a supplied bundle’s total cost."
+        }
+      ],
+      "acceptance": "Revised members use different reasoning operations; retained exceptions are explicitly excluded from successful diversification."
+    },
+    {
+      "group": "D08",
+      "members": [
+        {
+          "id": "42611",
+          "group": "D08",
+          "status": "retained representative",
+          "reason": "Retained as the group’s clear baseline task; other revised members use the recorded different reasoning paths."
+        },
+        {
+          "id": "42623",
+          "group": "D08",
+          "status": "revised",
+          "reason": "Reconstructs income from expenditure and slack rather than rounding an axis intercept."
+        }
+      ],
+      "acceptance": "Revised members use different reasoning operations; retained exceptions are explicitly excluded from successful diversification."
+    },
+    {
+      "group": "D09",
+      "members": [
+        {
+          "id": "42624",
+          "group": "D09",
+          "status": "retained representative",
+          "reason": "Retained as the group’s clear baseline task; other revised members use the recorded different reasoning paths."
+        },
+        {
+          "id": "42625",
+          "group": "D09",
+          "status": "revised",
+          "reason": "Infers the price change from the observed intercept change, reversing the original forward comparative static."
+        },
+        {
+          "id": "42627",
+          "group": "D09",
+          "status": "revised",
+          "reason": "Tests offsetting proportional changes rather than a single-price pivot."
+        }
+      ],
+      "acceptance": "Revised members use different reasoning operations; retained exceptions are explicitly excluded from successful diversification."
+    },
+    {
+      "group": "D10",
+      "members": [
+        {
+          "id": "42641",
+          "group": "D10",
+          "status": "retained representative",
+          "reason": "Retained as the group’s clear baseline task; other revised members use the recorded different reasoning paths."
+        },
+        {
+          "id": "42645",
+          "group": "D10",
+          "status": "revised",
+          "reason": "Detects an inconsistent cycle among three supplied rankings instead of filling in one missing comparison."
+        },
+        {
+          "id": "42649",
+          "group": "D10",
+          "status": "revised",
+          "reason": "Combines an indifference relation with a strict ranking, rather than chaining two strict comparisons."
+        },
+        {
+          "id": "42653",
+          "group": "D10",
+          "status": "revised",
+          "reason": "Distinguishes an underdetermined ranking from one implied by transitivity."
+        }
+      ],
+      "acceptance": "Revised members use different reasoning operations; retained exceptions are explicitly excluded from successful diversification."
+    },
+    {
+      "group": "D11",
+      "members": [
+        {
+          "id": "42642",
+          "group": "D11",
+          "status": "retained representative",
+          "reason": "Retained as the group’s clear baseline task; other revised members use the recorded different reasoning paths."
+        },
+        {
+          "id": "42646",
+          "group": "D11",
+          "status": "revised",
+          "reason": "Distinguishes a tie from an inability to rank, instead of naming the completeness property."
+        },
+        {
+          "id": "42650",
+          "group": "D11",
+          "status": "revised",
+          "reason": "Applies the universal requirement to a missing comparison rather than recognizing a fully described property."
+        },
+        {
+          "id": "42654",
+          "group": "D11",
+          "status": "revised",
+          "reason": "Separates sufficient evidence for completeness from insufficient evidence for consistency."
+        }
+      ],
+      "acceptance": "Revised members use different reasoning operations; retained exceptions are explicitly excluded from successful diversification."
+    },
+    {
+      "group": "D12",
+      "members": [
+        {
+          "id": "42643",
+          "group": "D12",
+          "status": "retained representative",
+          "reason": "Retained as the group’s clear baseline task; other revised members use the recorded different reasoning paths."
+        },
+        {
+          "id": "42647",
+          "group": "D12",
+          "status": "revised",
+          "reason": "Recognizes the limit of dominance when goods trade off, rather than ranking a dominating bundle."
+        },
+        {
+          "id": "42651",
+          "group": "D12",
+          "status": "revised",
+          "reason": "Uses dominance to rule out slack in a choice, rather than merely comparing two supplied bundles."
+        },
+        {
+          "id": "42655",
+          "group": "D12",
+          "status": "revised",
+          "reason": "Solves a minimum condition for dominance rather than evaluating a fully specified dominating pair."
+        }
+      ],
+      "acceptance": "Revised members use different reasoning operations; retained exceptions are explicitly excluded from successful diversification."
+    },
+    {
+      "group": "D13",
+      "members": [
+        {
+          "id": "42644",
+          "group": "D13",
+          "status": "retained representative",
+          "reason": "Retained as the group’s clear baseline task; other revised members use the recorded different reasoning paths."
+        },
+        {
+          "id": "42648",
+          "group": "D13",
+          "status": "revised",
+          "reason": "Tests a complete proposed set for contradiction rather than supplying the missing tie."
+        },
+        {
+          "id": "42652",
+          "group": "D13",
+          "status": "revised",
+          "reason": "Separates preference equivalence from expenditure, rather than chaining indifferences."
+        }
+      ],
+      "acceptance": "Revised members use different reasoning operations; retained exceptions are explicitly excluded from successful diversification."
+    },
+    {
+      "group": "D14",
+      "members": [
+        {
+          "id": "42656",
+          "group": "D14",
+          "status": "retained representative",
+          "reason": "Retained as the group’s clear baseline task; other revised members use the recorded different reasoning paths."
+        },
+        {
+          "id": "42660",
+          "group": "D14",
+          "status": "instructor-review exception",
+          "reason": "Explaining the shared-bundle contradiction repeats the representative’s nonintersection reasoning; further distinct applications would exceed this Easy item’s original task."
+        },
+        {
+          "id": "42664",
+          "group": "D14",
+          "status": "revised",
+          "reason": "Uses monotonicity to order distinct curves rather than diagnosing intersection."
+        },
+        {
+          "id": "42668",
+          "group": "D14",
+          "status": "revised",
+          "reason": "Derives the crossing contradiction from transitivity plus dominance, rather than naming a faulty drawing."
+        }
+      ],
+      "acceptance": "Revised members use different reasoning operations; retained exceptions are explicitly excluded from successful diversification."
+    },
+    {
+      "group": "D15",
+      "members": [
+        {
+          "id": "42657",
+          "group": "D15",
+          "status": "retained representative",
+          "reason": "Retained as the group’s clear baseline task; other revised members use the recorded different reasoning paths."
+        },
+        {
+          "id": "42661",
+          "group": "D15",
+          "status": "revised",
+          "reason": "Changes the desirability assumption and derives the slope, instead of recalling the two-good offset."
+        },
+        {
+          "id": "42665",
+          "group": "D15",
+          "status": "revised",
+          "reason": "Translates changing tradeoffs into local slope behavior, rather than explaining why a slope is negative."
+        }
+      ],
+      "acceptance": "Revised members use different reasoning operations; retained exceptions are explicitly excluded from successful diversification."
+    },
+    {
+      "group": "D16",
+      "members": [
+        {
+          "id": "42658",
+          "group": "D16",
+          "status": "retained representative",
+          "reason": "Retained as the group’s clear baseline task; other revised members use the recorded different reasoning paths."
+        },
+        {
+          "id": "42662",
+          "group": "D16",
+          "status": "revised",
+          "reason": "Deduces a preference restriction from the assumption and separates it from utility-number and cost claims, reversing the original inference."
+        },
+        {
+          "id": "42666",
+          "group": "D16",
+          "status": "revised",
+          "reason": "Distinguishes weak from strict convexity by testing equality, instead of identifying a bowed shape."
+        }
+      ],
+      "acceptance": "Revised members use different reasoning operations; retained exceptions are explicitly excluded from successful diversification."
+    },
+    {
+      "group": "D17",
+      "members": [
+        {
+          "id": "42659",
+          "group": "D17",
+          "status": "retained representative",
+          "reason": "Retained as the group’s clear baseline task; other revised members use the recorded different reasoning paths."
+        },
+        {
+          "id": "42663",
+          "group": "D17",
+          "status": "revised",
+          "reason": "Separates the preference relation from the feasible set rather than merely reporting indifference."
+        },
+        {
+          "id": "42667",
+          "group": "D17",
+          "status": "revised",
+          "reason": "Distinguishes equal utility levels from equal marginal tradeoffs."
+        }
+      ],
+      "acceptance": "Revised members use different reasoning operations; retained exceptions are explicitly excluded from successful diversification."
+    },
+    {
+      "group": "D18",
+      "members": [
+        {
+          "id": "42669",
+          "group": "D18",
+          "status": "retained representative",
+          "reason": "Retained as the group’s clear baseline task; other revised members use the recorded different reasoning paths."
+        },
+        {
+          "id": "42673",
+          "group": "D18",
+          "status": "revised",
+          "reason": "Selects a valid alternative representation rather than interpreting one given scale."
+        },
+        {
+          "id": "42677",
+          "group": "D18",
+          "status": "revised",
+          "reason": "Constructs a representation from a weak ranking that includes a tie."
+        }
+      ],
+      "acceptance": "Revised members use different reasoning operations; retained exceptions are explicitly excluded from successful diversification."
+    },
+    {
+      "group": "D19",
+      "members": [
+        {
+          "id": "42670",
+          "group": "D19",
+          "status": "retained representative",
+          "reason": "Retained as the group’s clear baseline task; other revised members use the recorded different reasoning paths."
+        },
+        {
+          "id": "42674",
+          "group": "D19",
+          "status": "revised",
+          "reason": "Diagnoses an order-reversing transformation rather than confirming an increasing affine transformation."
+        },
+        {
+          "id": "42678",
+          "group": "D19",
+          "status": "revised",
+          "reason": "Tests the need to preserve strict order, using a non-increasing segment rather than an order reversal."
+        }
+      ],
+      "acceptance": "Revised members use different reasoning operations; retained exceptions are explicitly excluded from successful diversification."
+    },
+    {
+      "group": "D20",
+      "members": [
+        {
+          "id": "42671",
+          "group": "D20",
+          "status": "retained representative",
+          "reason": "Retained as the group’s clear baseline task; other revised members use the recorded different reasoning paths."
+        },
+        {
+          "id": "42675",
+          "group": "D20",
+          "status": "revised",
+          "reason": "Uses two valid representations to test a claim about utility differences, rather than rejecting a ratio within one scale."
+        },
+        {
+          "id": "42679",
+          "group": "D20",
+          "status": "revised",
+          "reason": "Distinguishes an ordinal utility change from a monetary valuation, rather than from a satisfaction ratio."
+        }
+      ],
+      "acceptance": "Revised members use different reasoning operations; retained exceptions are explicitly excluded from successful diversification."
+    },
+    {
+      "group": "D21",
+      "members": [
+        {
+          "id": "42672",
+          "group": "D21",
+          "status": "retained representative",
+          "reason": "Retained as the group’s clear baseline task; other revised members use the recorded different reasoning paths."
+        },
+        {
+          "id": "42676",
+          "group": "D21",
+          "status": "revised",
+          "reason": "Extracts different within-person rankings while rejecting an interpersonal comparison, rather than explaining unequal numbers for one bundle."
+        }
+      ],
+      "acceptance": "Revised members use different reasoning operations; retained exceptions are explicitly excluded from successful diversification."
+    },
+    {
+      "group": "D22",
+      "members": [
+        {
+          "id": "42687",
+          "group": "D22",
+          "status": "retained representative",
+          "reason": "Retained as the group’s clear baseline task; other revised members use the recorded different reasoning paths."
+        },
+        {
+          "id": "42689",
+          "group": "D22",
+          "status": "revised",
+          "reason": "Finds an equivalent bundle from the utility representation instead of naming the preference form."
+        },
+        {
+          "id": "42691",
+          "group": "D22",
+          "status": "revised",
+          "reason": "Infers geometric implications from a named preference form rather than inferring the form from a tradeoff."
+        },
+        {
+          "id": "42693",
+          "group": "D22",
+          "status": "revised",
+          "reason": "Applies the constant tradeoff to a price comparison and identifies a corner choice."
+        },
+        {
+          "id": "42695",
+          "group": "D22",
+          "status": "revised",
+          "reason": "Handles the equal-value-per-dollar case, where the optimum is a set rather than a corner."
+        },
+        {
+          "id": "42697",
+          "group": "D22",
+          "status": "instructor-review exception",
+          "reason": "A sixth introductory perfect-substitute task would repeat identification, equivalence or geometry, or require additional optimization beyond this Easy tier."
+        }
+      ],
+      "acceptance": "Revised members use different reasoning operations; retained exceptions are explicitly excluded from successful diversification."
+    },
+    {
+      "group": "D23",
+      "members": [
+        {
+          "id": "42688",
+          "group": "D23",
+          "status": "retained representative",
+          "reason": "Retained as the group’s clear baseline task; other revised members use the recorded different reasoning paths."
+        },
+        {
+          "id": "42690",
+          "group": "D23",
+          "status": "revised",
+          "reason": "Combines a fixed-proportions constraint with a budget rather than naming perfect complements."
+        },
+        {
+          "id": "42692",
+          "group": "D23",
+          "status": "revised",
+          "reason": "Identifies the binding good and the zero marginal benefit of an excess component."
+        },
+        {
+          "id": "42694",
+          "group": "D23",
+          "status": "revised",
+          "reason": "Connects the fixed ratio to kink locations rather than recalling the preference label."
+        },
+        {
+          "id": "42696",
+          "group": "D23",
+          "status": "revised",
+          "reason": "Tests a switch in the binding component; losing four components destroys only one complete pair."
+        },
+        {
+          "id": "42698",
+          "group": "D23",
+          "status": "revised",
+          "reason": "Uses a price change to infer linked demands under a fixed-proportions constraint."
+        }
+      ],
+      "acceptance": "Revised members use different reasoning operations; retained exceptions are explicitly excluded from successful diversification."
+    },
+    {
+      "group": "D24",
+      "members": [
+        {
+          "id": "42699",
+          "group": "D24",
+          "status": "revised",
+          "reason": "Tests feasibility and marginal optimality separately; a matching MRS is not sufficient for an infeasible bundle."
+        },
+        {
+          "id": "42700",
+          "group": "D24",
+          "status": "retained representative",
+          "reason": "Retained as the group’s clear baseline task; other revised members use the recorded different reasoning paths."
+        },
+        {
+          "id": "42701",
+          "group": "D24",
+          "status": "revised",
+          "reason": "Diagnoses misuse of an interior first-order condition at a corner, combining preferences and relative prices."
+        },
+        {
+          "id": "42702",
+          "group": "D24",
+          "status": "revised",
+          "reason": "Reverses the marginal imbalance and derives the opposite budget-preserving adjustment."
+        },
+        {
+          "id": "42703",
+          "group": "D24",
+          "status": "revised",
+          "reason": "Distinguishes a local improvement from a guaranteed final comparative-static result, rather than prescribing a single local move."
+        },
+        {
+          "id": "42704",
+          "group": "D24",
+          "status": "revised",
+          "reason": "Solves for a missing marginal value from the optimality condition rather than repeating a direction-of-adjustment rule."
+        },
+        {
+          "id": "42705",
+          "group": "D24",
+          "status": "revised",
+          "reason": "Evaluates a proposed sufficient condition instead of choosing the direction of a known imbalance."
+        },
+        {
+          "id": "42706",
+          "group": "D24",
+          "status": "revised",
+          "reason": "Combines unchanged real constraints with uniqueness and preferences to reject competing nominal-income and nominal-price claims."
+        },
+        {
+          "id": "42707",
+          "group": "D24",
+          "status": "revised",
+          "reason": "Solves the budget and marginal condition together instead of giving only an adjustment direction."
+        },
+        {
+          "id": "42708",
+          "group": "D24",
+          "status": "revised",
+          "reason": "Recognizes the constrained-choice objective rather than applying a local slope comparison."
+        }
+      ],
+      "acceptance": "Revised members use different reasoning operations; retained exceptions are explicitly excluded from successful diversification."
+    },
+    {
+      "group": "D25",
+      "members": [
+        {
+          "id": "P62H-MCMP-EL-016",
+          "group": "D25",
+          "status": "retained representative",
+          "reason": "Retained as the group’s clear baseline task; other revised members use the recorded different reasoning paths."
+        },
+        {
+          "id": "P62H-MCMP-L-032",
+          "group": "D25",
+          "status": "revised",
+          "reason": "Solves backward for two underlying firm outcomes rather than calculating the two gaps from supplied outcomes."
+        }
+      ],
+      "acceptance": "Revised members use different reasoning operations; retained exceptions are explicitly excluded from successful diversification."
+    },
+    {
+      "group": "D26",
+      "members": [
+        {
+          "id": "P62H-MCMP-EL-018",
+          "group": "D26",
+          "status": "retained representative",
+          "reason": "Retained as the group’s clear baseline task; other revised members use the recorded different reasoning paths."
+        },
+        {
+          "id": "P62H-MCMP-L-035",
+          "group": "D26",
+          "status": "revised",
+          "reason": "Integrates zero profit with markup and excess capacity rather than subtracting two pairs of supplied numbers."
+        }
+      ],
+      "acceptance": "Revised members use different reasoning operations; retained exceptions are explicitly excluded from successful diversification."
+    },
+    {
+      "group": "D27",
+      "members": [
+        {
+          "id": "P62H-MCMP-EL-020",
+          "group": "D27",
+          "status": "retained representative",
+          "reason": "Retained as the group’s clear baseline task; other revised members use the recorded different reasoning paths."
+        },
+        {
+          "id": "P62H-MCMP-L-038",
+          "group": "D27",
+          "status": "revised",
+          "reason": "Diagnoses a stock-versus-capacity interpretation error rather than calculating the gap."
+        }
+      ],
+      "acceptance": "Revised members use different reasoning operations; retained exceptions are explicitly excluded from successful diversification."
+    },
+    {
+      "group": "D28",
+      "members": [
+        {
+          "id": "P62H-MCMP-EL-022",
+          "group": "D28",
+          "status": "retained representative",
+          "reason": "Retained as the group’s clear baseline task; other revised members use the recorded different reasoning paths."
+        },
+        {
+          "id": "P62H-MCMP-L-041",
+          "group": "D28",
+          "status": "revised",
+          "reason": "Uses the markup in a cost-recovery counterfactual rather than reporting markup and capacity gaps."
+        }
+      ],
+      "acceptance": "Revised members use different reasoning operations; retained exceptions are explicitly excluded from successful diversification."
+    },
+    {
+      "group": "D29",
+      "members": [
+        {
+          "id": "P62H-MCMP-EL-024",
+          "group": "D29",
+          "status": "retained representative",
+          "reason": "Retained as the group’s clear baseline task; other revised members use the recorded different reasoning paths."
+        },
+        {
+          "id": "P62H-MCMP-L-044",
+          "group": "D29",
+          "status": "revised",
+          "reason": "Compares different rankings on two performance measures and separates them from profit."
+        }
+      ],
+      "acceptance": "Revised members use different reasoning operations; retained exceptions are explicitly excluded from successful diversification."
+    }
+  ]
+}

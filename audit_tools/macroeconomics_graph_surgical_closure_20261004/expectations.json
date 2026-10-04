@@ -1,0 +1,574 @@
+{
+  "schemaVersion": 1,
+  "beforeLibrarySha256": "8e55081cef364ce56d6505ead7e56610e2278f14471c802c63716754c4463a8f",
+  "afterLibrarySha256": "d6f2fe6d53831e22ba1573c697df78319bd8c59ab447e93bfaa558374dba149c",
+  "baselineSourceSha256": "401cfb5b9448cd41be78388c2590b1cfd590d4c0067d7bf1f5c189c306e9878c",
+  "authorizedIds": [
+    "ECON-SP-ELITE-320",
+    "P62D-ITP-L-095",
+    "P62D-ITP-L-098"
+  ],
+  "changes": [
+    {
+      "id": "ECON-SP-ELITE-320",
+      "originalRecord": {
+        "id": "ECON-SP-ELITE-320",
+        "q": "Refer to the multiplier graph. The direct increase in government purchases shifts AD1 to AD2. Additional spending induced by that increase would move demand to AD3 if there were no crowding out. Crowding out reduces the total increase in aggregate demand by a positive amount. How small must that reduction be for the final demand curve to lie strictly between AD2 and AD3?",
+        "options": [
+          "The total reduction from crowding out must be smaller than the horizontal AD2-to-AD3 distance at the reference price.",
+          "The total reduction from crowding out must be smaller than the full AD1-to-AD3 distance, with no further restriction.",
+          "The total reduction from crowding out must equal the full AD1-to-AD3 distance.",
+          "The total reduction from crowding out must exceed the AD2-to-AD3 distance but remain below the AD1-to-AD3 distance."
+        ],
+        "tag": "crowding_out",
+        "type": "graph_interpretation",
+        "objective": "LO35.4",
+        "difficulty": "elite",
+        "conceptCluster": "policy_graphs",
+        "primarySkill": "crowding_out_effect",
+        "repairSkill": "crowding_out_effect",
+        "commonError": "Ignoring crowding out after multiplier expansion.",
+        "feedback": "To finish to the right of AD2, subtract less than the extra induced-spending distance from AD2 to AD3. A positive reduction from crowding out puts the result left of AD3. Merely retaining some net stimulus relative to AD1 does not guarantee finishing beyond AD2.",
+        "image": "question-assets/fiscal-multipliers-and-crowding-out/moneymultiplier.webp",
+        "aHash": "d3c5579391edda47c72a35b8b666acddb15936444a6d70801484522311a57473",
+        "canonicalId": "ECON-SP-ELITE-320",
+        "sourceId": 320,
+        "sourceGame": "stabilization-protocol",
+        "sourceChapter": [
+          35,
+          4
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "b5dd6061fa775eb5ac4c4e632815ef27a53b1f018575520288619d58a02158bf",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "stabilization-protocol",
+            "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\stabilization-protocol\\stabilization_protocol_questions_student.js",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "elite",
+            "routeKey": null,
+            "sourceRecordOrder": 20,
+            "sourceId": 320,
+            "sourceHash": "b5dd6061fa775eb5ac4c4e632815ef27a53b1f018575520288619d58a02158bf"
+          }
+        ],
+        "primaryConceptId": "fiscal-multipliers-and-crowding-out",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null
+      },
+      "fields": [
+        "q",
+        "options",
+        "feedback",
+        "aHash"
+      ],
+      "beforeRecord": {
+        "id": "ECON-SP-ELITE-320",
+        "q": "Refer to the multiplier graph. The direct increase in government purchases shifts AD1 to AD2. Additional spending induced by that increase would move demand to AD3 if there were no crowding out. Crowding out reduces the total increase in aggregate demand by a positive amount. How small must that reduction be for the final demand curve to lie strictly between AD2 and AD3?",
+        "options": [
+          "The total reduction from crowding out must be smaller than the horizontal AD2-to-AD3 distance at the reference price.",
+          "The total reduction from crowding out must be smaller than the full AD1-to-AD3 distance, with no further restriction.",
+          "The total reduction from crowding out must equal the full AD1-to-AD3 distance.",
+          "The total reduction from crowding out must exceed the AD2-to-AD3 distance but remain below the AD1-to-AD3 distance."
+        ],
+        "tag": "crowding_out",
+        "type": "graph_interpretation",
+        "objective": "LO35.4",
+        "difficulty": "elite",
+        "conceptCluster": "policy_graphs",
+        "primarySkill": "crowding_out_effect",
+        "repairSkill": "crowding_out_effect",
+        "commonError": "Ignoring crowding out after multiplier expansion.",
+        "feedback": "To finish to the right of AD2, subtract less than the extra induced-spending distance from AD2 to AD3. A positive reduction from crowding out puts the result left of AD3. Merely retaining some net stimulus relative to AD1 does not guarantee finishing beyond AD2.",
+        "image": "question-assets/fiscal-multipliers-and-crowding-out/moneymultiplier.webp",
+        "aHash": "d3c5579391edda47c72a35b8b666acddb15936444a6d70801484522311a57473",
+        "canonicalId": "ECON-SP-ELITE-320",
+        "sourceId": 320,
+        "sourceGame": "stabilization-protocol",
+        "sourceChapter": [
+          35,
+          4
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "b5dd6061fa775eb5ac4c4e632815ef27a53b1f018575520288619d58a02158bf",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "stabilization-protocol",
+            "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\stabilization-protocol\\stabilization_protocol_questions_student.js",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "elite",
+            "routeKey": null,
+            "sourceRecordOrder": 20,
+            "sourceId": 320,
+            "sourceHash": "b5dd6061fa775eb5ac4c4e632815ef27a53b1f018575520288619d58a02158bf"
+          }
+        ],
+        "primaryConceptId": "fiscal-multipliers-and-crowding-out",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null
+      },
+      "afterRecord": {
+        "id": "ECON-SP-ELITE-320",
+        "q": "An increase in government purchases raises aggregate demand through direct spending and additional spending induced by it. The curves show demand before the policy, after the direct effect only, and after both effects, excluding crowding out. Use the horizontal distances as drawn at price P. A positive amount of crowding out then reduces the total demand increase. Which bound on that reduction keeps final demand strictly between AD2 and AD3, and why?",
+        "options": [
+          "Less than about one-half of the total demand increase before crowding out; this leaves some of the induced-spending gain beyond the direct effect.",
+          "Less than about one-half of the total demand increase before crowding out; this leaves the entire induced-spending gain intact.",
+          "Less than about three-quarters of the total demand increase before crowding out; this leaves some of the induced-spending gain beyond the direct effect.",
+          "Less than the entire demand increase before crowding out; any positive net stimulus leaves demand in the required region."
+        ],
+        "tag": "crowding_out",
+        "type": "graph_interpretation",
+        "objective": "LO35.4",
+        "difficulty": "elite",
+        "conceptCluster": "policy_graphs",
+        "primarySkill": "crowding_out_effect",
+        "repairSkill": "crowding_out_effect",
+        "commonError": "Ignoring crowding out after multiplier expansion.",
+        "feedback": "The expansion places initial demand at AD1, the direct effect at AD2, and the direct plus induced effects at AD3. At price P, the induced-spending distance Y2 to Y3 is about half of the full increase Y1 to Y3. Crowding out moves final demand left from AD3. Its reduction must be positive but smaller than Y3 minus Y2 to leave demand strictly between AD2 and AD3. Some induced-spending gain remains, but it is not entirely intact. A reduction smaller than the full Y1-to-Y3 increase guarantees only a positive net stimulus, not demand beyond AD2.",
+        "image": "question-assets/fiscal-multipliers-and-crowding-out/moneymultiplier.webp",
+        "aHash": "2605321a7e72d65f2119425fc4ba433f679a4533ef427b9102570e1e5988af4e",
+        "canonicalId": "ECON-SP-ELITE-320",
+        "sourceId": 320,
+        "sourceGame": "stabilization-protocol",
+        "sourceChapter": [
+          35,
+          4
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "b5dd6061fa775eb5ac4c4e632815ef27a53b1f018575520288619d58a02158bf",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "stabilization-protocol",
+            "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\stabilization-protocol\\stabilization_protocol_questions_student.js",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "elite",
+            "routeKey": null,
+            "sourceRecordOrder": 20,
+            "sourceId": 320,
+            "sourceHash": "b5dd6061fa775eb5ac4c4e632815ef27a53b1f018575520288619d58a02158bf"
+          }
+        ],
+        "primaryConceptId": "fiscal-multipliers-and-crowding-out",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null
+      },
+      "correctIndex": 0,
+      "answerHashChanged": true,
+      "review": {
+        "reason": "The original stem supplied the curve roles and bound, allowing a purely verbal answer.",
+        "graph_information": "AD1, AD2 and AD3 intersections with price P; Y2-to-Y3 is approximately one-half of Y1-to-Y3. The graph supplies the relative spacing, not an assumed numerical multiplier.",
+        "economic_reasoning": "Identify the rightward direct and induced demand effects, subtract crowding out from the full increase, and require 0 < C < Y3 - Y2. Distinguish preserving some induced-spending gain from preserving all of it or merely preserving a positive net stimulus.",
+        "bypass_prevention": "A and C make the same economic claim but use different graph-dependent bounds; A and B use the same plotted share but differ in whether crowding out offsets some induced spending. Thus neither graph reading alone nor theory alone selects A.",
+        "graph_checks": {
+          "hidden_graph_key_identifiable": "NO",
+          "coordinates_alone_sufficient": "NO",
+          "graph_test": "PASS",
+          "construct_test": "PASS",
+          "plausible_without_graph": [
+            "A",
+            "C"
+          ]
+        },
+        "numerical_verification": "PASS: no absolute GDP values supplied by the graph. The drawn induced distance is approximately half the full shift; the exact condition remains 0 < C < Y3 - Y2. Endpoints C=0 and C=Y3-Y2 are excluded.",
+        "distractor_sources": {
+          "B": "Same plotted bound but incorrectly treats induced spending as wholly unaffected by positive crowding out.",
+          "C": "Allows a reduction up to three-quarters of the full shift, exceeding the plotted induced-spending distance.",
+          "D": "Uses the total expansion as the bound, confusing positive net stimulus with remaining to the right of AD2."
+        }
+      }
+    },
+    {
+      "id": "P62D-ITP-L-095",
+      "originalRecord": {
+        "id": "P62D-ITP-L-095",
+        "q": "Compared with free trade, how does the tariff in the graph change consumer surplus, producer surplus, government revenue, and total welfare?",
+        "options": [
+          "Consumers lose $450k; producers gain $150k; government gets $200k; net welfare falls $100k",
+          "Consumers lose $200k; producers gain $200k; government gets $100k; net welfare rises $100k",
+          "Consumers lose $450k; producers gain $450k; government gets $200k; net welfare is unchanged",
+          "Consumers lose $100k; producers gain $150k; government gets $200k; net welfare rises $250k"
+        ],
+        "tag": "international_trade_and_trade_policy",
+        "type": "synthesis",
+        "objective": "ITP.4",
+        "difficulty": "legendary",
+        "conceptCluster": "micro_international_trade",
+        "primarySkill": "integrated_trade_analysis",
+        "secondarySkills": [],
+        "repairSkill": "integrated_trade_analysis",
+        "commonError": "misreads_trade_graph",
+        "feedback": "The $450k consumer loss is only partly offset by the $150k producer gain and $200k tariff revenue, leaving $100k deadweight loss.",
+        "image": "question-assets/international-trade-and-trade-policy/TRD-03.webp",
+        "aHash": "c4d5920a785ab742e96805460cd550aaabc1ac4b91d338babf9f5bfc5ed7c25b",
+        "canonicalId": "P62D-ITP-L-095",
+        "sourceId": 716036,
+        "sourceGame": "micro-concept-library",
+        "sourceChapter": [
+          "international-trade-and-trade-policy"
+        ],
+        "sourcePool": "legendary",
+        "sourceHash": "4aafa064787ba0e97d6f62894a14627621694b489f426b68eff48b9577fe5d93",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2d-international-trade-graph-expansion-v2",
+            "sourceGlobal": "questions",
+            "sourcePool": "legendary",
+            "routeKey": "integrated_trade_analysis",
+            "sourceRecordOrder": 36,
+            "sourceId": 716036,
+            "sourceHash": "4aafa064787ba0e97d6f62894a14627621694b489f426b68eff48b9577fe5d93"
+          }
+        ],
+        "primaryConceptId": "international-trade-and-trade-policy",
+        "secondaryConceptIds": [],
+        "instructionalRole": "legendary",
+        "canonicalDifficulty": "legendary",
+        "originalSourcePool": "legendary",
+        "originalBossTier": null,
+        "familyConceptId": "international-trade-and-trade-policy",
+        "subtopicIds": [
+          "tariffs-revenue-deadweight-loss"
+        ],
+        "graphRequired": true
+      },
+      "fields": [
+        "options",
+        "feedback"
+      ],
+      "beforeRecord": {
+        "id": "P62D-ITP-L-095",
+        "q": "Compared with free trade, how does the tariff in the graph change consumer surplus, producer surplus, government revenue, and total welfare?",
+        "options": [
+          "Consumers lose $450k; producers gain $150k; government gets $200k; net welfare falls $100k",
+          "Consumers lose $200k; producers gain $200k; government gets $100k; net welfare rises $100k",
+          "Consumers lose $450k; producers gain $450k; government gets $200k; net welfare is unchanged",
+          "Consumers lose $100k; producers gain $150k; government gets $200k; net welfare rises $250k"
+        ],
+        "tag": "international_trade_and_trade_policy",
+        "type": "synthesis",
+        "objective": "ITP.4",
+        "difficulty": "legendary",
+        "conceptCluster": "micro_international_trade",
+        "primarySkill": "integrated_trade_analysis",
+        "secondarySkills": [],
+        "repairSkill": "integrated_trade_analysis",
+        "commonError": "misreads_trade_graph",
+        "feedback": "The $450k consumer loss is only partly offset by the $150k producer gain and $200k tariff revenue, leaving $100k deadweight loss.",
+        "image": "question-assets/international-trade-and-trade-policy/TRD-03.webp",
+        "aHash": "c4d5920a785ab742e96805460cd550aaabc1ac4b91d338babf9f5bfc5ed7c25b",
+        "canonicalId": "P62D-ITP-L-095",
+        "sourceId": 716036,
+        "sourceGame": "micro-concept-library",
+        "sourceChapter": [
+          "international-trade-and-trade-policy"
+        ],
+        "sourcePool": "legendary",
+        "sourceHash": "4aafa064787ba0e97d6f62894a14627621694b489f426b68eff48b9577fe5d93",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2d-international-trade-graph-expansion-v2",
+            "sourceGlobal": "questions",
+            "sourcePool": "legendary",
+            "routeKey": "integrated_trade_analysis",
+            "sourceRecordOrder": 36,
+            "sourceId": 716036,
+            "sourceHash": "4aafa064787ba0e97d6f62894a14627621694b489f426b68eff48b9577fe5d93"
+          }
+        ],
+        "primaryConceptId": "international-trade-and-trade-policy",
+        "secondaryConceptIds": [],
+        "instructionalRole": "legendary",
+        "canonicalDifficulty": "legendary",
+        "originalSourcePool": "legendary",
+        "originalBossTier": null,
+        "familyConceptId": "international-trade-and-trade-policy",
+        "subtopicIds": [
+          "tariffs-revenue-deadweight-loss"
+        ],
+        "graphRequired": true
+      },
+      "afterRecord": {
+        "id": "P62D-ITP-L-095",
+        "q": "Compared with free trade, how does the tariff in the graph change consumer surplus, producer surplus, government revenue, and total welfare?",
+        "options": [
+          "Consumers lose $450k; producers gain $150k; government gets $200k; net welfare falls $100k",
+          "Consumers lose $500k; producers gain $150k; government gets $200k; net welfare falls $150k",
+          "Consumers lose $450k; producers gain $150k; government gets $100k; net welfare falls $200k",
+          "Consumers lose $450k; producers gain $100k; government gets $200k; net welfare falls $150k"
+        ],
+        "tag": "international_trade_and_trade_policy",
+        "type": "synthesis",
+        "objective": "ITP.4",
+        "difficulty": "legendary",
+        "conceptCluster": "micro_international_trade",
+        "primarySkill": "integrated_trade_analysis",
+        "secondarySkills": [],
+        "repairSkill": "integrated_trade_analysis",
+        "commonError": "misreads_trade_graph",
+        "feedback": "The tariff raises price from $4 to $6. Quantities are in thousands: consumption falls from 250 to 200, while domestic production rises from 50 to 100. Consumer surplus falls by $2 x (250 + 200) / 2 = $450k; producer surplus rises by $2 x (50 + 100) / 2 = $150k. Post-tariff imports are 200 - 100 = 100 thousand, so revenue is $2 x 100 = $200k. Net welfare changes by -$450k + $150k + $200k = -$100k, the sum of the two $50k distortion triangles.",
+        "image": "question-assets/international-trade-and-trade-policy/TRD-03.webp",
+        "aHash": "c4d5920a785ab742e96805460cd550aaabc1ac4b91d338babf9f5bfc5ed7c25b",
+        "canonicalId": "P62D-ITP-L-095",
+        "sourceId": 716036,
+        "sourceGame": "micro-concept-library",
+        "sourceChapter": [
+          "international-trade-and-trade-policy"
+        ],
+        "sourcePool": "legendary",
+        "sourceHash": "4aafa064787ba0e97d6f62894a14627621694b489f426b68eff48b9577fe5d93",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2d-international-trade-graph-expansion-v2",
+            "sourceGlobal": "questions",
+            "sourcePool": "legendary",
+            "routeKey": "integrated_trade_analysis",
+            "sourceRecordOrder": 36,
+            "sourceId": 716036,
+            "sourceHash": "4aafa064787ba0e97d6f62894a14627621694b489f426b68eff48b9577fe5d93"
+          }
+        ],
+        "primaryConceptId": "international-trade-and-trade-policy",
+        "secondaryConceptIds": [],
+        "instructionalRole": "legendary",
+        "canonicalDifficulty": "legendary",
+        "originalSourcePool": "legendary",
+        "originalBossTier": null,
+        "familyConceptId": "international-trade-and-trade-policy",
+        "subtopicIds": [
+          "tariffs-revenue-deadweight-loss"
+        ],
+        "graphRequired": true
+      },
+      "correctIndex": 0,
+      "answerHashChanged": false,
+      "review": {
+        "reason": "Positive-welfare and inconsistent-accounting alternatives allowed tariff theory to select A without graph magnitudes.",
+        "graph_information": "Prices 4 and 6; domestic supply 50 then 100 thousand; domestic demand 250 then 200 thousand; post-tariff imports 100 thousand.",
+        "economic_reasoning": "Use consumer-loss and producer-gain trapezoids, tariff times post-tariff imports for revenue, and sum the domestic welfare changes; the loss equals both distortion triangles.",
+        "bypass_prevention": "All four alternatives have consumer losses, producer gains, positive tariff revenue, negative net welfare, and exact welfare identities. Each incorrect component comes from a plausible area/width mistake and is carried into net welfare.",
+        "graph_checks": {
+          "hidden_graph_key_identifiable": "NO",
+          "coordinates_alone_sufficient": "NO",
+          "graph_test": "PASS",
+          "construct_test": "PASS",
+          "plausible_without_graph": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        },
+        "numerical_verification": "PASS: consumer loss 2*(250+200)/2=450; producer gain 2*(50+100)/2=150; revenue 2*(200-100)=200; loss 450-150-200=100. All amounts in $thousands. Two distortion triangles each equal 2*50/2=50.",
+        "distractor_sources": {
+          "B": "Use the original consumption rectangle 2*250=500 rather than the 450 trapezoid; carry the extra 50 into welfare loss.",
+          "C": "Use pre-tariff domestic production 50 as the revenue width instead of post-tariff imports 100; revenue 100 and welfare loss 200.",
+          "D": "Use the original production rectangle 2*50=100, omitting the 50 producer-gain triangle; welfare loss 150."
+        }
+      }
+    },
+    {
+      "id": "P62D-ITP-L-098",
+      "originalRecord": {
+        "id": "P62D-ITP-L-098",
+        "q": "Compared with free trade, how does the quota in the graph change consumer surplus, producer surplus, quota rents, and total welfare? Assume domestic license holders receive the quota rents.",
+        "options": [
+          "Consumers lose $712.5k; producers gain $337.5k; quota rents are $150k; net welfare falls $225k",
+          "Consumers lose $337.5k; producers gain $712.5k; quota rents are $150k; net welfare rises $525k",
+          "Consumers lose $712.5k; producers gain $337.5k; quota rents are $375k; net welfare is unchanged",
+          "Consumers lose $225k; producers gain $150k; quota rents are $75k; net welfare is unchanged"
+        ],
+        "tag": "international_trade_and_trade_policy",
+        "type": "synthesis",
+        "objective": "ITP.5",
+        "difficulty": "legendary",
+        "conceptCluster": "micro_international_trade",
+        "primarySkill": "integrated_trade_analysis",
+        "secondarySkills": [],
+        "repairSkill": "integrated_trade_analysis",
+        "commonError": "misreads_trade_graph",
+        "feedback": "The consumer loss exceeds the producer gain plus domestic quota rents by $225 thousand.",
+        "image": "question-assets/international-trade-and-trade-policy/TRD-04.webp",
+        "aHash": "bbc7f7b0ded7b378aff0a5ce7d1deacf4496b2822034f3bbe2b9e725c382d377",
+        "canonicalId": "P62D-ITP-L-098",
+        "sourceId": 716052,
+        "sourceGame": "micro-concept-library",
+        "sourceChapter": [
+          "international-trade-and-trade-policy"
+        ],
+        "sourcePool": "legendary",
+        "sourceHash": "4647c9c036060dc4369945630f209241ac4621e0848ec6c9a2aeaba8ccf5d04c",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2d-international-trade-graph-expansion-v2",
+            "sourceGlobal": "questions",
+            "sourcePool": "legendary",
+            "routeKey": "integrated_trade_analysis",
+            "sourceRecordOrder": 52,
+            "sourceId": 716052,
+            "sourceHash": "4647c9c036060dc4369945630f209241ac4621e0848ec6c9a2aeaba8ccf5d04c"
+          }
+        ],
+        "primaryConceptId": "international-trade-and-trade-policy",
+        "secondaryConceptIds": [],
+        "instructionalRole": "legendary",
+        "canonicalDifficulty": "legendary",
+        "originalSourcePool": "legendary",
+        "originalBossTier": null,
+        "familyConceptId": "international-trade-and-trade-policy",
+        "subtopicIds": [
+          "import-quotas-quota-rents"
+        ],
+        "graphRequired": true
+      },
+      "fields": [
+        "options",
+        "feedback"
+      ],
+      "beforeRecord": {
+        "id": "P62D-ITP-L-098",
+        "q": "Compared with free trade, how does the quota in the graph change consumer surplus, producer surplus, quota rents, and total welfare? Assume domestic license holders receive the quota rents.",
+        "options": [
+          "Consumers lose $712.5k; producers gain $337.5k; quota rents are $150k; net welfare falls $225k",
+          "Consumers lose $337.5k; producers gain $712.5k; quota rents are $150k; net welfare rises $525k",
+          "Consumers lose $712.5k; producers gain $337.5k; quota rents are $375k; net welfare is unchanged",
+          "Consumers lose $225k; producers gain $150k; quota rents are $75k; net welfare is unchanged"
+        ],
+        "tag": "international_trade_and_trade_policy",
+        "type": "synthesis",
+        "objective": "ITP.5",
+        "difficulty": "legendary",
+        "conceptCluster": "micro_international_trade",
+        "primarySkill": "integrated_trade_analysis",
+        "secondarySkills": [],
+        "repairSkill": "integrated_trade_analysis",
+        "commonError": "misreads_trade_graph",
+        "feedback": "The consumer loss exceeds the producer gain plus domestic quota rents by $225 thousand.",
+        "image": "question-assets/international-trade-and-trade-policy/TRD-04.webp",
+        "aHash": "bbc7f7b0ded7b378aff0a5ce7d1deacf4496b2822034f3bbe2b9e725c382d377",
+        "canonicalId": "P62D-ITP-L-098",
+        "sourceId": 716052,
+        "sourceGame": "micro-concept-library",
+        "sourceChapter": [
+          "international-trade-and-trade-policy"
+        ],
+        "sourcePool": "legendary",
+        "sourceHash": "4647c9c036060dc4369945630f209241ac4621e0848ec6c9a2aeaba8ccf5d04c",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2d-international-trade-graph-expansion-v2",
+            "sourceGlobal": "questions",
+            "sourcePool": "legendary",
+            "routeKey": "integrated_trade_analysis",
+            "sourceRecordOrder": 52,
+            "sourceId": 716052,
+            "sourceHash": "4647c9c036060dc4369945630f209241ac4621e0848ec6c9a2aeaba8ccf5d04c"
+          }
+        ],
+        "primaryConceptId": "international-trade-and-trade-policy",
+        "secondaryConceptIds": [],
+        "instructionalRole": "legendary",
+        "canonicalDifficulty": "legendary",
+        "originalSourcePool": "legendary",
+        "originalBossTier": null,
+        "familyConceptId": "international-trade-and-trade-policy",
+        "subtopicIds": [
+          "import-quotas-quota-rents"
+        ],
+        "graphRequired": true
+      },
+      "afterRecord": {
+        "id": "P62D-ITP-L-098",
+        "q": "Compared with free trade, how does the quota in the graph change consumer surplus, producer surplus, quota rents, and total welfare? Assume domestic license holders receive the quota rents.",
+        "options": [
+          "Consumers lose $712.5k; producers gain $337.5k; quota rents are $150k; net welfare falls $225k",
+          "Consumers lose $825k; producers gain $337.5k; quota rents are $150k; net welfare falls $337.5k",
+          "Consumers lose $712.5k; producers gain $337.5k; quota rents are $225k; net welfare falls $150k",
+          "Consumers lose $712.5k; producers gain $225k; quota rents are $150k; net welfare falls $337.5k"
+        ],
+        "tag": "international_trade_and_trade_policy",
+        "type": "synthesis",
+        "objective": "ITP.5",
+        "difficulty": "legendary",
+        "conceptCluster": "micro_international_trade",
+        "primarySkill": "integrated_trade_analysis",
+        "secondarySkills": [],
+        "repairSkill": "integrated_trade_analysis",
+        "commonError": "misreads_trade_graph",
+        "feedback": "The quota raises price from $3 to $6. Quantities are in thousands: consumption falls from 275 to 200, while domestic production rises from 75 to 150. Consumer surplus falls by $3 x (275 + 200) / 2 = $712.5k; producer surplus rises by $3 x (75 + 150) / 2 = $337.5k. Imports under the quota are 200 - 150 = 50 thousand, so rents are $3 x 50 = $150k. Domestic license holders receive those rents, making the net welfare change -$712.5k + $337.5k + $150k = -$225k, the sum of the two $112.5k distortion triangles.",
+        "image": "question-assets/international-trade-and-trade-policy/TRD-04.webp",
+        "aHash": "bbc7f7b0ded7b378aff0a5ce7d1deacf4496b2822034f3bbe2b9e725c382d377",
+        "canonicalId": "P62D-ITP-L-098",
+        "sourceId": 716052,
+        "sourceGame": "micro-concept-library",
+        "sourceChapter": [
+          "international-trade-and-trade-policy"
+        ],
+        "sourcePool": "legendary",
+        "sourceHash": "4647c9c036060dc4369945630f209241ac4621e0848ec6c9a2aeaba8ccf5d04c",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2d-international-trade-graph-expansion-v2",
+            "sourceGlobal": "questions",
+            "sourcePool": "legendary",
+            "routeKey": "integrated_trade_analysis",
+            "sourceRecordOrder": 52,
+            "sourceId": 716052,
+            "sourceHash": "4647c9c036060dc4369945630f209241ac4621e0848ec6c9a2aeaba8ccf5d04c"
+          }
+        ],
+        "primaryConceptId": "international-trade-and-trade-policy",
+        "secondaryConceptIds": [],
+        "instructionalRole": "legendary",
+        "canonicalDifficulty": "legendary",
+        "originalSourcePool": "legendary",
+        "originalBossTier": null,
+        "familyConceptId": "international-trade-and-trade-policy",
+        "subtopicIds": [
+          "import-quotas-quota-rents"
+        ],
+        "graphRequired": true
+      },
+      "correctIndex": 0,
+      "answerHashChanged": false,
+      "review": {
+        "reason": "Positive-welfare or zero-loss alternatives let standard quota theory isolate A without using the graph.",
+        "graph_information": "Prices 3 and 6; domestic supply 75 then 150 thousand; domestic demand 275 then 200 thousand; quota imports 50 thousand.",
+        "economic_reasoning": "Calculate surplus changes as trapezoids and quota rents as the price gap times remaining imports; include domestic rents as a benefit and compute the residual deadweight loss.",
+        "bypass_prevention": "Every alternative satisfies the welfare identity and shows losses to consumers, gains to producers, positive domestic rents and a positive deadweight loss. Graph magnitudes distinguish realistic component errors.",
+        "graph_checks": {
+          "hidden_graph_key_identifiable": "NO",
+          "coordinates_alone_sufficient": "NO",
+          "graph_test": "PASS",
+          "construct_test": "PASS",
+          "plausible_without_graph": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        },
+        "numerical_verification": "PASS: consumer loss 3*(275+200)/2=712.5; producer gain 3*(75+150)/2=337.5; rents 3*(200-150)=150; loss 712.5-337.5-150=225. All amounts in $thousands. Two distortion triangles each equal 3*75/2=112.5.",
+        "distractor_sources": {
+          "B": "Use the original consumption rectangle 3*275=825 instead of the 712.5 trapezoid; carry the extra 112.5 into welfare loss.",
+          "C": "Use pre-quota domestic production 75 as the rent width instead of remaining imports 50; rents 225 and welfare loss 150.",
+          "D": "Use the original production rectangle 3*75=225, omitting the 112.5 producer-gain triangle; welfare loss 337.5."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,540 @@
+{
+  "schemaVersion": 1,
+  "authorizedDeletedIds": [
+    "42660",
+    "42697"
+  ],
+  "reason": "Explicit instructor request: Delete 42660 and 42697. Maintain everything else.",
+  "beforeSourceSha256": "9f8b0fa6bfc4dec8af68deef135ee02d90c1fdc350a5bff348d3564ef984cfca",
+  "beforeLibrarySha256": "3e159c97fff485209429b7ce8d0b3762d8a41cc8fdd4ba3a277bd2131d1845d6",
+  "afterLibrarySha256": "3459f32c25907193fff65f87f77bcf40b53211928e60f40fee873f4645a6c2df",
+  "removed": [
+    {
+      "id": "42660",
+      "conceptId": "consumer-choice",
+      "pool": "easy",
+      "index": 17,
+      "record": {
+        "id": "42660",
+        "sourceGame": "consumer-choice-authoring",
+        "q": "Two distinct standard indifference curves cross. What is the strongest diagnosis?",
+        "options": [
+          "The diagram violates consistent, monotonic preferences",
+          "The consumer has a larger budget",
+          "The goods must be perfect complements",
+          "The crossing measures cardinal utility"
+        ],
+        "tag": "indifference-curves",
+        "type": "application",
+        "objective": "CC.5",
+        "difficulty": "easy",
+        "conceptCluster": "consumer-choice",
+        "primarySkill": "apply_indifference_curve_properties",
+        "secondarySkills": [],
+        "repairSkill": "apply_indifference_curve_properties",
+        "commonError": "allows_crossing_indifference_curves",
+        "feedback": "A shared bundle would have to be indifferent to bundles on both curves, contradicting the ordering implied by more-is-better.",
+        "sourceCurationPhase": "phase-remaining-principles-micro-question-pools-v1",
+        "aHash": "a10098a654c4107145a65d8a035ef1d109ea0caeb7dfd4bd3ff3f5f4a0d7f3d7",
+        "canonicalId": "42660",
+        "sourceId": 42660,
+        "sourceChapter": [],
+        "sourcePool": "easy",
+        "sourceHash": "01e5b10ff9e9002fb88bc45b1409aec08f03a8d129cad5977b5e800a387ce07a",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "consumer-choice-authoring",
+            "sourceFile": "build/faculty-build-composer/authoring/consumer_choice_question_pool_author.mjs",
+            "sourceGlobal": "productionQuestions",
+            "sourcePool": "easy",
+            "routeKey": "CC.5",
+            "sourceRecordOrder": 100,
+            "sourceId": 42660,
+            "sourceHash": "01e5b10ff9e9002fb88bc45b1409aec08f03a8d129cad5977b5e800a387ce07a",
+            "sourceCurationPhase": "phase-remaining-principles-micro-question-pools-v1"
+          }
+        ],
+        "primaryConceptId": "consumer-choice",
+        "secondaryConceptIds": [],
+        "familyConceptId": "consumer-choice",
+        "subtopicIds": [],
+        "instructionalRole": "main",
+        "canonicalDifficulty": "easy",
+        "originalSourcePool": "easy",
+        "originalBossTier": null
+      }
+    },
+    {
+      "id": "42697",
+      "conceptId": "consumer-choice",
+      "pool": "easy",
+      "index": 38,
+      "record": {
+        "id": "42697",
+        "sourceGame": "consumer-choice-authoring",
+        "q": "The consumer is always willing to trade two units of Y for one X. What preference form fits?",
+        "options": [
+          "Perfect complements with L-shaped curves",
+          "Perfect substitutes with straight-line indifference curves",
+          "Strictly convex preferences with changing MRS",
+          "A vertical budget line"
+        ],
+        "tag": "perfect-substitutes-and-complements",
+        "type": "calculation",
+        "objective": "CC.8",
+        "difficulty": "easy",
+        "conceptCluster": "consumer-choice",
+        "primarySkill": "distinguish_special_preferences",
+        "secondarySkills": [],
+        "repairSkill": "distinguish_special_preferences",
+        "commonError": "confuses_perfect_substitutes_and_complements",
+        "feedback": "A constant tradeoff produces a constant MRS and therefore straight, parallel indifference curves.",
+        "sourceCurationPhase": "phase-remaining-principles-micro-question-pools-v1",
+        "aHash": "db524f18b53fce03190c8b56df4e8dd7c4da4906ea0ffe64e2046cbd3f012022",
+        "canonicalId": "42697",
+        "sourceId": 42697,
+        "sourceChapter": [],
+        "sourcePool": "hard",
+        "sourceHash": "bc6389d1f417c9ed35eb316c9aba40dbea40799a8e3bc63d431d55c1ae99553d",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "consumer-choice-authoring",
+            "sourceFile": "build/faculty-build-composer/authoring/consumer_choice_question_pool_author.mjs",
+            "sourceGlobal": "productionQuestions",
+            "sourcePool": "hard",
+            "routeKey": "CC.8",
+            "sourceRecordOrder": 137,
+            "sourceId": 42697,
+            "sourceHash": "bc6389d1f417c9ed35eb316c9aba40dbea40799a8e3bc63d431d55c1ae99553d",
+            "sourceCurationPhase": "phase-remaining-principles-micro-question-pools-v1"
+          }
+        ],
+        "primaryConceptId": "consumer-choice",
+        "secondaryConceptIds": [],
+        "familyConceptId": "consumer-choice",
+        "subtopicIds": [],
+        "instructionalRole": "main",
+        "canonicalDifficulty": "easy",
+        "originalSourcePool": "hard",
+        "originalBossTier": null
+      }
+    }
+  ],
+  "metadata": [
+    {
+      "path": [
+        "canonicalQuestionCount"
+      ],
+      "before": 9779,
+      "after": 9777
+    },
+    {
+      "path": [
+        "registry",
+        "canonicalQuestionCount"
+      ],
+      "before": 9779,
+      "after": 9777
+    },
+    {
+      "path": [
+        "registry",
+        "concepts",
+        20,
+        "questionCountByRole",
+        "main"
+      ],
+      "before": 124,
+      "after": 122
+    },
+    {
+      "path": [
+        "registry",
+        "concepts",
+        20,
+        "questionCountByDifficulty",
+        "easy"
+      ],
+      "before": 49,
+      "after": 47
+    },
+    {
+      "path": [
+        "registry",
+        "concepts",
+        20,
+        "repairCoverage",
+        "mainWithUsableSkill"
+      ],
+      "before": 160,
+      "after": 158
+    },
+    {
+      "path": [
+        "registry",
+        "concepts",
+        20,
+        "bridgeCoverage",
+        "mainWithUsableSkill"
+      ],
+      "before": 160,
+      "after": 158
+    },
+    {
+      "path": [
+        "registry",
+        "concepts",
+        20,
+        "calculationCoverage"
+      ],
+      "before": 31,
+      "after": 30
+    },
+    {
+      "path": [
+        "registry",
+        "concepts",
+        20,
+        "notes"
+      ],
+      "before": "Standalone 160-record consumer-choice bank with eight dedicated CHOICE assets and explicit preference, budget, MRS, tangency, and equimarginal coverage.",
+      "after": "Standalone 158-record consumer-choice bank with eight dedicated CHOICE assets and explicit preference, budget, MRS, tangency, and equimarginal coverage."
+    },
+    {
+      "path": [
+        "registry",
+        "concepts",
+        20,
+        "coverageStatusNote"
+      ],
+      "before": "Standalone 160-record consumer-choice bank with eight dedicated CHOICE assets and explicit preference, budget, MRS, tangency, and equimarginal coverage.",
+      "after": "Standalone 158-record consumer-choice bank with eight dedicated CHOICE assets and explicit preference, budget, MRS, tangency, and equimarginal coverage."
+    }
+  ],
+  "policyBefore": {
+    "outcomes": [
+      {
+        "id": "consumer-choice-budget",
+        "conceptId": "consumer-choice",
+        "label": "Interpret budget constraints and calculate affordable bundles",
+        "skillIds": [
+          "affordable_bundle",
+          "budget_boundary",
+          "budget_equation",
+          "budget_slope",
+          "budget_vs_demand",
+          "construct_budget_constraint",
+          "income_intercept",
+          "intercept_logic",
+          "interpret_relative_price",
+          "new_budget_bundle",
+          "parallel_budget_lines",
+          "relative_price",
+          "unaffordable_bundle"
+        ],
+        "presets": [
+          "brief",
+          "standard",
+          "full"
+        ],
+        "coverage": {
+          "ordinary": 29,
+          "checkpoints": 13,
+          "repair": 2,
+          "bridge": 2,
+          "seed": 0,
+          "difficulty": {
+            "easy": 7,
+            "medium": 19,
+            "hard": 3,
+            "elite": 0,
+            "legendary": 0
+          },
+          "supportedModes": [
+            "fadingFortune",
+            "riskReward"
+          ]
+        }
+      },
+      {
+        "id": "consumer-choice-choice",
+        "conceptId": "consumer-choice",
+        "label": "Analyze how changing budgets affect optimal consumer choices",
+        "skillIds": [
+          "analyze_budget_change",
+          "apply_marginal_rate_substitution",
+          "apply_marginal_utility_per_dollar",
+          "best_affordable_bundle",
+          "budget_exhaustion_not_enough",
+          "equimarginal_rule",
+          "feasible_set_contraction",
+          "feasible_set_expansion",
+          "fixed_intercept",
+          "highest_attainable_curve",
+          "identify_consumer_optimum",
+          "income_change_shift",
+          "mrs_adjustment",
+          "mrs_price_ratio",
+          "mrs_units",
+          "optimal_bundle_coordinates",
+          "pivot_vs_shift",
+          "price_change_pivot",
+          "price_increase_pivot",
+          "purchasing_power",
+          "relative_price_change",
+          "slope_change",
+          "tangency_condition"
+        ],
+        "presets": [
+          "standard",
+          "full"
+        ],
+        "coverage": {
+          "ordinary": 42,
+          "checkpoints": 10,
+          "repair": 1,
+          "bridge": 1,
+          "seed": 0,
+          "difficulty": {
+            "easy": 13,
+            "medium": 22,
+            "hard": 7,
+            "elite": 0,
+            "legendary": 0
+          },
+          "supportedModes": [
+            "timed",
+            "exam",
+            "quiz",
+            "unlimited",
+            "trialGraph",
+            "fadingFortune",
+            "riskReward"
+          ]
+        }
+      },
+      {
+        "id": "consumer-choice-preferences",
+        "conceptId": "consumer-choice",
+        "label": "Interpret preferences, indifference curves, and ordinal utility",
+        "skillIds": [
+          "apply_indifference_curve_properties",
+          "attainable_indifference_curve",
+          "convex_preferences",
+          "distinguish_special_preferences",
+          "indifference",
+          "interpret_ordinal_utility",
+          "noncrossing_curves",
+          "ordinal_utility",
+          "preference_and_feasibility",
+          "preference_ranking",
+          "rank_preferences",
+          "unattainable_preference"
+        ],
+        "presets": [
+          "standard",
+          "full"
+        ],
+        "coverage": {
+          "ordinary": 53,
+          "checkpoints": 1,
+          "repair": 3,
+          "bridge": 3,
+          "seed": 0,
+          "difficulty": {
+            "easy": 23,
+            "medium": 28,
+            "hard": 2,
+            "elite": 0,
+            "legendary": 0
+          },
+          "supportedModes": [
+            "fadingFortune",
+            "riskReward"
+          ]
+        }
+      }
+    ],
+    "presets": {
+      "brief": [
+        "consumer-choice-budget"
+      ],
+      "standard": [
+        "consumer-choice-budget",
+        "consumer-choice-choice",
+        "consumer-choice-preferences"
+      ],
+      "full": [
+        "consumer-choice-budget",
+        "consumer-choice-choice",
+        "consumer-choice-preferences"
+      ]
+    },
+    "warnings": [],
+    "unmappedQuestionIds": [],
+    "hidden": false
+  },
+  "policyAfter": {
+    "outcomes": [
+      {
+        "id": "consumer-choice-budget",
+        "conceptId": "consumer-choice",
+        "label": "Interpret budget constraints and calculate affordable bundles",
+        "skillIds": [
+          "affordable_bundle",
+          "budget_boundary",
+          "budget_equation",
+          "budget_slope",
+          "budget_vs_demand",
+          "construct_budget_constraint",
+          "income_intercept",
+          "intercept_logic",
+          "interpret_relative_price",
+          "new_budget_bundle",
+          "parallel_budget_lines",
+          "relative_price",
+          "unaffordable_bundle"
+        ],
+        "presets": [
+          "brief",
+          "standard",
+          "full"
+        ],
+        "coverage": {
+          "ordinary": 29,
+          "checkpoints": 13,
+          "repair": 2,
+          "bridge": 2,
+          "seed": 0,
+          "difficulty": {
+            "easy": 7,
+            "medium": 19,
+            "hard": 3,
+            "elite": 0,
+            "legendary": 0
+          },
+          "supportedModes": [
+            "fadingFortune",
+            "riskReward"
+          ]
+        }
+      },
+      {
+        "id": "consumer-choice-choice",
+        "conceptId": "consumer-choice",
+        "label": "Analyze how changing budgets affect optimal consumer choices",
+        "skillIds": [
+          "analyze_budget_change",
+          "apply_marginal_rate_substitution",
+          "apply_marginal_utility_per_dollar",
+          "best_affordable_bundle",
+          "budget_exhaustion_not_enough",
+          "equimarginal_rule",
+          "feasible_set_contraction",
+          "feasible_set_expansion",
+          "fixed_intercept",
+          "highest_attainable_curve",
+          "identify_consumer_optimum",
+          "income_change_shift",
+          "mrs_adjustment",
+          "mrs_price_ratio",
+          "mrs_units",
+          "optimal_bundle_coordinates",
+          "pivot_vs_shift",
+          "price_change_pivot",
+          "price_increase_pivot",
+          "purchasing_power",
+          "relative_price_change",
+          "slope_change",
+          "tangency_condition"
+        ],
+        "presets": [
+          "standard",
+          "full"
+        ],
+        "coverage": {
+          "ordinary": 42,
+          "checkpoints": 10,
+          "repair": 1,
+          "bridge": 1,
+          "seed": 0,
+          "difficulty": {
+            "easy": 13,
+            "medium": 22,
+            "hard": 7,
+            "elite": 0,
+            "legendary": 0
+          },
+          "supportedModes": [
+            "timed",
+            "exam",
+            "quiz",
+            "unlimited",
+            "trialGraph",
+            "fadingFortune",
+            "riskReward"
+          ]
+        }
+      },
+      {
+        "id": "consumer-choice-preferences",
+        "conceptId": "consumer-choice",
+        "label": "Interpret preferences, indifference curves, and ordinal utility",
+        "skillIds": [
+          "apply_indifference_curve_properties",
+          "attainable_indifference_curve",
+          "convex_preferences",
+          "distinguish_special_preferences",
+          "indifference",
+          "interpret_ordinal_utility",
+          "noncrossing_curves",
+          "ordinal_utility",
+          "preference_and_feasibility",
+          "preference_ranking",
+          "rank_preferences",
+          "unattainable_preference"
+        ],
+        "presets": [
+          "standard",
+          "full"
+        ],
+        "coverage": {
+          "ordinary": 51,
+          "checkpoints": 1,
+          "repair": 3,
+          "bridge": 3,
+          "seed": 0,
+          "difficulty": {
+            "easy": 21,
+            "medium": 28,
+            "hard": 2,
+            "elite": 0,
+            "legendary": 0
+          },
+          "supportedModes": [
+            "fadingFortune",
+            "riskReward"
+          ]
+        }
+      }
+    ],
+    "presets": {
+      "brief": [
+        "consumer-choice-budget"
+      ],
+      "standard": [
+        "consumer-choice-budget",
+        "consumer-choice-choice",
+        "consumer-choice-preferences"
+      ],
+      "full": [
+        "consumer-choice-budget",
+        "consumer-choice-choice",
+        "consumer-choice-preferences"
+      ]
+    },
+    "warnings": [],
+    "unmappedQuestionIds": [],
+    "hidden": false
+  }
+}

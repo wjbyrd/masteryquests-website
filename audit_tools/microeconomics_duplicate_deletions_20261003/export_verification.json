@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "source_sha256": "f6c15c94cb8eaa27bd407e6d51f4c6638103f99f0086af03d9d84de836e38551",
+  "csv_checks": {
+    "general_economics": {
+      "rows": 1589,
+      "remaining_rows_exactly_unchanged": true,
+      "removed": []
+    },
+    "microeconomics": {
+      "rows": 6299,
+      "remaining_rows_exactly_unchanged": true,
+      "removed": [
+        "42660",
+        "42697"
+      ]
+    },
+    "macroeconomics": {
+      "rows": 4745,
+      "remaining_rows_exactly_unchanged": true,
+      "removed": []
+    }
+  },
+  "micro_pdf_ids_once": 6299,
+  "deleted_ids_absent": true,
+  "pdf_pages": 4424,
+  "adjacent_question_ids": [
+    "42659",
+    "42663",
+    "42690",
+    "42696"
+  ],
+  "adjacent_pages": [
+    1828,
+    3851
+  ],
+  "pdf_sha256": "9404bdaec97731ef9d8faf672fa43100cd1a47649ad4a553ba9602b99b1f0981",
+  "normal_exporter_full_question_verification": "PASS",
+  "visual_review": "Inspected rendered Micro PDF pages 1828 and 3851, covering the surviving questions immediately before and after both deletions. Complete question cores, correct spacing and no clipping or broken layout."
+}

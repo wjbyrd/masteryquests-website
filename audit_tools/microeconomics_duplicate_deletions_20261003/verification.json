@@ -1,0 +1,136 @@
+{
+  "status": "PASS",
+  "sourceSha256": "f6c15c94cb8eaa27bd407e6d51f4c6638103f99f0086af03d9d84de836e38551",
+  "deletedIds": [
+    "42660",
+    "42697"
+  ],
+  "unchangedRecords": 9777,
+  "integrity": {
+    "concepts": 149,
+    "questions": 9777,
+    "graphs": 1147,
+    "assets": 507
+  },
+  "memberships": {
+    "general": {
+      "before": 1589,
+      "after": 1589,
+      "removed": []
+    },
+    "micro": {
+      "before": 6301,
+      "after": 6299,
+      "removed": [
+        "42660",
+        "42697"
+      ]
+    },
+    "macro": {
+      "before": 4745,
+      "after": 4745,
+      "removed": []
+    }
+  },
+  "graphAssetsUnchanged": true,
+  "metadataChanges": [
+    {
+      "path": [
+        "canonicalQuestionCount"
+      ],
+      "before": 9779,
+      "after": 9777
+    },
+    {
+      "path": [
+        "registry",
+        "canonicalQuestionCount"
+      ],
+      "before": 9779,
+      "after": 9777
+    },
+    {
+      "path": [
+        "registry",
+        "concepts",
+        20,
+        "questionCountByRole",
+        "main"
+      ],
+      "before": 124,
+      "after": 122
+    },
+    {
+      "path": [
+        "registry",
+        "concepts",
+        20,
+        "questionCountByDifficulty",
+        "easy"
+      ],
+      "before": 49,
+      "after": 47
+    },
+    {
+      "path": [
+        "registry",
+        "concepts",
+        20,
+        "repairCoverage",
+        "mainWithUsableSkill"
+      ],
+      "before": 160,
+      "after": 158
+    },
+    {
+      "path": [
+        "registry",
+        "concepts",
+        20,
+        "bridgeCoverage",
+        "mainWithUsableSkill"
+      ],
+      "before": 160,
+      "after": 158
+    },
+    {
+      "path": [
+        "registry",
+        "concepts",
+        20,
+        "calculationCoverage"
+      ],
+      "before": 31,
+      "after": 30
+    },
+    {
+      "path": [
+        "registry",
+        "concepts",
+        20,
+        "notes"
+      ],
+      "before": "Standalone 160-record consumer-choice bank with eight dedicated CHOICE assets and explicit preference, budget, MRS, tangency, and equimarginal coverage.",
+      "after": "Standalone 158-record consumer-choice bank with eight dedicated CHOICE assets and explicit preference, budget, MRS, tangency, and equimarginal coverage."
+    },
+    {
+      "path": [
+        "registry",
+        "concepts",
+        20,
+        "coverageStatusNote"
+      ],
+      "before": "Standalone 160-record consumer-choice bank with eight dedicated CHOICE assets and explicit preference, budget, MRS, tangency, and equimarginal coverage.",
+      "after": "Standalone 158-record consumer-choice bank with eight dedicated CHOICE assets and explicit preference, budget, MRS, tangency, and equimarginal coverage."
+    }
+  ],
+  "publication": {
+    "before": 6276,
+    "after": 6274,
+    "onlyRequestedIdsRemoved": true,
+    "allTenModesPass": true,
+    "answerVerification": true,
+    "inlineScriptsCompiled": 1
+  },
+  "negativeMutationProbes": "PASS"
+}

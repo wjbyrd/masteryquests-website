@@ -6,10 +6,11 @@ import {fileURLToPath} from 'node:url';
 const root=fileURLToPath(new URL('../../../',import.meta.url));
 const config=JSON.parse(fs.readFileSync(path.join(root,'audit_tools/econ_rpg/games-preview.json')));
 const beta=path.join(root,'dist',config.previewRoot.slice(1),'games');
-test('Built beta card launches the authoritative Growth Realms runtime with return navigation',()=>{
+test('Built beta card launches the authoritative Rival Cities runtime with return navigation',()=>{
  const hub=fs.readFileSync(path.join(beta,'index.html'),'utf8'),html=fs.readFileSync(path.join(beta,'growth-realms/index.html'),'utf8');
  assert.equal((hub.match(/class="game-card"/g)||[]).length,config.gameCount);
  assert.match(hub,/data-game="growth-realms"/);assert.match(hub,/href="\.\/growth-realms\/"/);assert.match(html,/href="\.\.\/"[^>]*>Return to Games/);assert.match(html,/name="robots" content="noindex,nofollow"/);
+ for(const file of ['rivalry.js','flow.css','characters.js','splash-layout.js','advisor.js'])assert.ok(fs.existsSync(path.join(beta,'growth-realms',file)),`Production flow dependency: ${file}`);
  const seen=[];
  function scan(dir){for(const e of fs.readdirSync(dir,{withFileTypes:true})){const file=path.join(dir,e.name);if(e.isDirectory())scan(file);else seen.push(file);}}
  scan(path.join(beta,'growth-realms'));

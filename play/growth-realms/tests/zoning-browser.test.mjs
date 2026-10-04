@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
-import {waitMaps} from './browser-helpers.mjs';
+import {startCity,waitMaps} from './browser-helpers.mjs';
 const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
 const out=fileURLToPath(new URL('../../../tmp/games-preview/growth-realms/zoning-pass/',import.meta.url));await fs.mkdir(out,{recursive:true});
 const browser=await chromium.launch({channel:'msedge',headless:true}),p=await browser.newPage({viewport:{width:1366,height:900}}),errors=[],results={levels:[],responsive:[]};
@@ -10,7 +10,7 @@ const base='http://127.0.0.1:4178/play/growth-realms/';
 try{
  // Starting screenshots come from the real title -> choice -> planning flow.
  for(const city of ['meridian','rivermark']){
-  await p.goto(base);await p.locator('#start-game').click();await p.locator(`[data-choose=${city}]`).click();await waitMaps(p);
+  await p.goto(base);await startCity(p,city);await waitMaps(p);
   assert.equal(await p.locator('.city-map').getAttribute('data-layout-errors'),'0');
   await p.screenshot({path:out+`starting-${city}.png`});
  }
@@ -52,7 +52,7 @@ try{
  });assert.deepEqual(moving.collisions,[]);assert.ok(moving.routes.length>=4);results.traffic=moving;
  // Responsive interaction uses the real game and unchanged point allocation.
  for(const width of [1366,768,390,320]){
-  await p.setViewportSize({width,height:width>=900?768:900});await p.goto(base);await p.locator('#start-game').click();await p.locator('[data-choose=rivermark]').click();await waitMaps(p);
+  await p.setViewportSize({width,height:width>=900?768:900});await p.goto(base);await startCity(p,'rivermark');await waitMaps(p);
   assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
   const targets=await p.locator('[data-map-district]').evaluateAll(es=>es.map(e=>{const r=e.getBoundingClientRect();return {w:r.width,h:r.height};}));assert.ok(targets.every(r=>r.w>=44&&r.h>=44));
   await p.locator('[data-map-district=capital]').click();assert.equal(await p.locator('#selected-investment').innerText(),'1');

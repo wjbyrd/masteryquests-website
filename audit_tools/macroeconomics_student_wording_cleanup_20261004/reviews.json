@@ -1,0 +1,3095 @@
+{
+  "PG3-MEQ-L-004": {
+    "student_review_classification": "Difficult to decipher",
+    "student_review_concern": "I have to untangle 'giving D, and remains in place' to work out whether the shock or the curve stays fixed. 'Drawn straight AS1 line' adds another awkward instruction.",
+    "decoding_burden_removed": "State that the economy moves to D and that AS1 then stays fixed; give the straight-line extension instruction separately.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Compare output and price restoration under a persistent supply constraint.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "A is (75,100) and D is (50,125). With AS1 fixed, output 75 requires C at price 150. AS1 passes through D (50,125) and C (75,150), so its equation is P = Y + 75; at P = 100, Y = 25. Moving from D to that lower-price point requires lower AD and further output loss. Fiscal demand policy does not remove the supply disruption.",
+    "numerical_checks": [
+      {
+        "calculation": "AS1: P=Y+75; output at original P=100",
+        "result": 25,
+        "expected": 25,
+        "status": "PASS"
+      }
+    ],
+    "advanced": true,
+    "advanced_inference": "Compare output and price restoration under a persistent supply constraint.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true,
+    "graph_checks": {
+      "coordinates_alone_sufficient": "NO",
+      "theory_alone_sufficient": "NO",
+      "construct_test": "PASS",
+      "graph_test": "PASS",
+      "construct_reason": "Coordinates alone do not establish which demand policy restores output versus prices while supply remains disrupted.",
+      "graph_reason": "Choices A and D both describe further contraction to restore prices, but disagree on its output. AS1 and the original price are required.",
+      "same_result_before_cleanup": true,
+      "exception": null
+    }
+  },
+  "ECON-SP-FINALBOSS-4000": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'A purchases increase' and 'Which assessment combines diagnosis, size and timing?' sound like instructions to the exam writer rather than a question to me.",
+    "decoding_burden_removed": "Name government purchases and ask whether the immediate or delayed spending increase would address the recessionary gap.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Combine the multiplier with the timing of recovery.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Falling output and inflation under the stated demand shock justify demand support. The immediate simple effect is 20/.25=80, matching the current gap. An increase sized correctly for the original recession may create excess demand if it takes effect after recovery.",
+    "numerical_checks": [
+      {
+        "calculation": "Government purchases/(1-MPC) equals original gap",
+        "result": 80.0,
+        "expected": 80.0,
+        "status": "PASS"
+      }
+    ],
+    "advanced": true,
+    "advanced_inference": "Combine the multiplier with the timing of recovery.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "PM2E-CH-OPEN-001": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'A purchases increase' and 'Which assessment combines diagnosis, size and timing?' sound like instructions to the exam writer rather than a question to me.",
+    "decoding_burden_removed": "Name government purchases and ask whether the immediate or delayed spending increase would address the recessionary gap.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Combine the multiplier with the timing of recovery.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Falling output and inflation under the stated demand shock justify demand support. The immediate simple effect is 380/.25=1520, matching the current gap. An increase sized correctly for the original recession may create excess demand if it takes effect after recovery.",
+    "numerical_checks": [
+      {
+        "calculation": "Government purchases/(1-MPC) equals original gap",
+        "result": 1520.0,
+        "expected": 1520.0,
+        "status": "PASS"
+      }
+    ],
+    "advanced": true,
+    "advanced_inference": "Combine the multiplier with the timing of recovery.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "ECON-SP-FINALBOSS-4019": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'A purchases increase' and 'Which assessment combines diagnosis, size and timing?' sound like instructions to the exam writer rather than a question to me.",
+    "decoding_burden_removed": "Name government purchases and ask whether the immediate or delayed spending increase would address the recessionary gap.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Combine the multiplier with the timing of recovery.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Falling output and inflation under the stated demand shock justify demand support. The immediate simple effect is 140/.25=560, matching the current gap. An increase sized correctly for the original recession may create excess demand if it takes effect after recovery.",
+    "numerical_checks": [
+      {
+        "calculation": "Government purchases/(1-MPC) equals original gap",
+        "result": 560.0,
+        "expected": 560.0,
+        "status": "PASS"
+      }
+    ],
+    "advanced": true,
+    "advanced_inference": "Combine the multiplier with the timing of recovery.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "ECON-SP-LEGENDARYBOSS-9113": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'A purchases increase' and 'Which assessment combines diagnosis, size and timing?' sound like instructions to the exam writer rather than a question to me.",
+    "decoding_burden_removed": "Name government purchases and ask whether the immediate or delayed spending increase would address the recessionary gap.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Combine the multiplier with the timing of recovery.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Falling output and inflation under the stated demand shock justify demand support. The immediate simple effect is 260/.25=1040, matching the current gap. An increase sized correctly for the original recession may create excess demand if it takes effect after recovery.",
+    "numerical_checks": [
+      {
+        "calculation": "Government purchases/(1-MPC) equals original gap",
+        "result": 1040.0,
+        "expected": 1040.0,
+        "status": "PASS"
+      }
+    ],
+    "advanced": true,
+    "advanced_inference": "Combine the multiplier with the timing of recovery.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "ECON-SP-MEDIUMBOSS-3005": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "I understand nominal versus real GDP, but 'corrected output signal' and 'a stabilization discussion' obscure the actual question.",
+    "decoding_burden_removed": "Ask what happened to real GDP and whether the report's claim of an expansion is justified.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Real growth=1.05/1.07−1≈−1.87%. The nominal increase is more than explained by prices.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Real growth=1.05/1.07−1≈−1.87%. The nominal increase is more than explained by prices.",
+    "numerical_checks": [
+      {
+        "calculation": "100*(1.05/1.07-1)",
+        "result": -1.869158878504673,
+        "expected": -1.8691588785,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "ECON-SP-LEGENDARYBOSS-9105": {
+    "student_review_classification": "Difficult to decipher",
+    "student_review_concern": "'What is exactly established' versus 'what requires a ratio' does not tell me clearly which economic outcomes I am supposed to compare.",
+    "decoding_burden_removed": "Ask directly what can be concluded about real GDP, total hours, and output per hour.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Reconcile unchanged real GDP with multiplicative changes in labor hours and productivity.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Real growth=1.10/1.10−1=0. Hours factor=1.02×.98=.9996, so hours fall.04%. With fixed real output, productivity per hour rises 1/.9996−1≈.0400%. Different indicators need their own denominators.",
+    "numerical_checks": [
+      {
+        "calculation": "Hours percentage change: 100*(1.02*.98-1)",
+        "result": -0.039999999999995595,
+        "expected": -0.04,
+        "status": "PASS"
+      },
+      {
+        "calculation": "Real GDP growth: 100*(1.10/1.10-1)",
+        "result": 0.0,
+        "expected": 0,
+        "status": "PASS"
+      },
+      {
+        "calculation": "Hourly productivity growth: 100*(1/(1.02*.98)-1)",
+        "result": 0.04001600640255454,
+        "expected": 0.0400160064,
+        "status": "PASS"
+      }
+    ],
+    "advanced": true,
+    "advanced_inference": "Reconcile unchanged real GDP with multiplicative changes in labor hours and productivity.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "ECON-SP-LEGENDARYBOSS-9120": {
+    "student_review_classification": "Excess jargon",
+    "student_review_concern": "'Supply offset disappears' and 'implied next-year inflation' make me translate labels before I can compare the two explanations.",
+    "decoding_burden_removed": "Say the temporary supply shock ends, then ask which evidence would distinguish the two inflation explanations.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Distinguish expected inflation from a supply shock using additional evidence.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "At unemployment of 5%, both explanations satisfy 6 = πe + s. After the temporary supply shock ends, inflation equals the unchanged expected inflation rate. Independent evidence about expectations is needed to choose between the forecasts of 6% and 4%.",
+    "numerical_checks": [
+      {
+        "calculation": "Expected inflation with s=0 and u=5",
+        "result": 6,
+        "expected": 6,
+        "status": "PASS"
+      },
+      {
+        "calculation": "Expected inflation with s=2 and u=5",
+        "result": 4,
+        "expected": 4,
+        "status": "PASS"
+      }
+    ],
+    "advanced": true,
+    "advanced_inference": "Distinguish expected inflation from a supply shock using additional evidence.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "ECON-SP-LEGENDARYBOSS-9102": {
+    "student_review_classification": "Difficult to decipher",
+    "student_review_concern": "'The output-restoration claim' refers to a claim that has not actually been stated.",
+    "decoding_burden_removed": "State the claim explicitly, or ask whether the expansion restores output and the original price level.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Compare output stabilization with its price-level cost while supply remains disrupted.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "At unchanged demand the supply shock gives AD1-AS1, Y3/P2. Accommodation gives AD2-AS1, Y1/P3. It offsets the output loss through greater demand, paying a further price-level increase rather than undoing the supply constraint.",
+    "numerical_checks": [],
+    "advanced": true,
+    "advanced_inference": "Compare output stabilization with its price-level cost while supply remains disrupted.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true,
+    "graph_checks": {
+      "coordinates_alone_sufficient": "NO",
+      "theory_alone_sufficient": "NO",
+      "construct_test": "PASS",
+      "graph_test": "PASS",
+      "construct_reason": "Restoring output through demand does not reverse the underlying supply shock; the student must distinguish those mechanisms.",
+      "graph_reason": "Choices A and D both allow higher prices under demand expansion; the plotted equilibria determine overshooting versus restoration.",
+      "same_result_before_cleanup": true,
+      "exception": null
+    }
+  },
+  "PM2E-CH-MID-001": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'At arrival' and 'why the original direction need not remain appropriate' sound abstract; I have to translate them into when the spending begins and whether it is still useful.",
+    "decoding_burden_removed": "Ask whether expansionary policy remains appropriate when the program takes effect after recovery and a new supply shock.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Reassess stimulus after recovery and a new supply shock.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "A rule based on an earlier demand shortfall is not a complete assessment after recovery and a new supply shock. The action can add inflation pressure at a changed starting point; reassess both current utilization and the source of inflation.",
+    "numerical_checks": [],
+    "advanced": true,
+    "advanced_inference": "Reassess stimulus after recovery and a new supply shock.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "ECON-SP-LEGENDARYBOSS-9112": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'At arrival' and 'why the original direction need not remain appropriate' sound abstract; I have to translate them into when the spending begins and whether it is still useful.",
+    "decoding_burden_removed": "Ask whether expansionary policy remains appropriate when the program takes effect after recovery and a new supply shock.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Reassess stimulus after recovery and a new supply shock.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "A rule based on an earlier demand shortfall is not a complete assessment after recovery and a new supply shock. The action can add inflation pressure at a changed starting point; reassess both current utilization and the source of inflation.",
+    "numerical_checks": [],
+    "advanced": true,
+    "advanced_inference": "Reassess stimulus after recovery and a new supply shock.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "ECON-SP-FINALBOSS-4018": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'At arrival' and 'why the original direction need not remain appropriate' sound abstract; I have to translate them into when the spending begins and whether it is still useful.",
+    "decoding_burden_removed": "Ask whether expansionary policy remains appropriate when the program takes effect after recovery and a new supply shock.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Reassess stimulus after recovery and a new supply shock.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "A rule based on an earlier demand shortfall is not a complete assessment after recovery and a new supply shock. The action can add inflation pressure at a changed starting point; reassess both current utilization and the source of inflation.",
+    "numerical_checks": [],
+    "advanced": true,
+    "advanced_inference": "Reassess stimulus after recovery and a new supply shock.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "PG3-AD-H-001": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'Horizontal real-GDP-demanded gap' is an awkward string of terms even though I know how to compare quantities on two AD curves.",
+    "decoding_burden_removed": "Ask for the difference in the quantity of real GDP demanded at the stated price level.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "The hand-drawn lines imply roughly 100 on AD0 and about 155 on AD1. The gap is about 55 units, so 50 is the closest offered estimate; the drawing does not justify an exact 50-unit claim.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "The hand-drawn lines imply roughly 100 on AD0 and about 155 on AD1. The gap is about 55 units, so 50 is the closest offered estimate; the drawing does not justify an exact 50-unit claim.",
+    "numerical_checks": [
+      {
+        "calculation": "Approximate graph difference 155-100; nearest choice 50",
+        "result": 55,
+        "expected": 55,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true,
+    "graph_checks": {
+      "coordinates_alone_sufficient": "YES",
+      "theory_alone_sufficient": "NO",
+      "construct_test": "FAIL",
+      "graph_test": "PASS",
+      "construct_reason": "Reading two horizontal coordinates and subtracting is sufficient. This was already the approved task.",
+      "graph_reason": "The two quantities at price level 50 must be read from AD0 and AD1.",
+      "same_result_before_cleanup": true,
+      "exception": "Existing approved task preserved; satisfying the additional test would require graph-assessment redesign, prohibited by this wording-only scope."
+    }
+  },
+  "PG3-AD-H-002": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'Horizontal real-GDP-demanded gap' is an awkward string of terms even though I know how to compare quantities on two AD curves.",
+    "decoding_burden_removed": "Ask for the difference in the quantity of real GDP demanded at the stated price level.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "The curves show approximately 150 on AD0 and 100 on AD1 at this price level, so 50 units is the closest offered estimate.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "The curves show approximately 150 on AD0 and 100 on AD1 at this price level, so 50 units is the closest offered estimate.",
+    "numerical_checks": [
+      {
+        "calculation": "Approximate graph difference 150-100",
+        "result": 50,
+        "expected": 50,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true,
+    "graph_checks": {
+      "coordinates_alone_sufficient": "YES",
+      "theory_alone_sufficient": "NO",
+      "construct_test": "FAIL",
+      "graph_test": "PASS",
+      "construct_reason": "Reading two horizontal coordinates and subtracting is sufficient. This was already the approved task.",
+      "graph_reason": "The two quantities at price level 45 must be read from AD0 and AD1.",
+      "same_result_before_cleanup": true,
+      "exception": "Existing approved task preserved; satisfying the additional test would require graph-assessment redesign, prohibited by this wording-only scope."
+    }
+  },
+  "PMOE-POL-H-002": {
+    "student_review_classification": "Unnecessarily technical",
+    "student_review_concern": "'General-equilibrium NX result' makes a familiar question about net exports sound like a more advanced model exercise.",
+    "decoding_burden_removed": "Ask what happens to net exports after the economy adjusts, retaining the stated saving and investment assumptions.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Unchanged S and I fix NCO = S − I and hence NX. The tariff raises demand for domestic currency, causing real exchange-rate appreciation until exports and other imports adjust enough to preserve that NX balance. This is an exchange-rate change, not a claim that the real interest rate rises.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Unchanged S and I fix NCO = S − I and hence NX. The tariff raises demand for domestic currency, causing real exchange-rate appreciation until exports and other imports adjust enough to preserve that NX balance. This is an exchange-rate change, not a claim that the real interest rate rises.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "PMOE-TX-L-006": {
+    "student_review_classification": "Difficult to decipher",
+    "student_review_concern": "'Which correction is admissible, and is its location identified?' sounds mathematical; I have to guess whether 'location' means exports or imports.",
+    "decoding_burden_removed": "Ask which trade figure could be corrected and whether the information identifies which figure is wrong.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Reconcile two accounting identities and identify the remaining ambiguity in trade figures.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "S − I = −45 and asset NCO = 70 − 115 = −45, but reported NX is −30. Trade must fall another 15: either M rises from 240 to 255 or X falls from 210 to 195. The stated data do not identify which trade entry is erroneous.",
+    "numerical_checks": [
+      {
+        "calculation": "S-I and asset flow agree at -45",
+        "result": -45,
+        "expected": -45,
+        "status": "PASS"
+      },
+      {
+        "calculation": "Correct imports holding exports at 210: 210-(-45)",
+        "result": 255,
+        "expected": 255,
+        "status": "PASS"
+      },
+      {
+        "calculation": "Correct exports holding imports at 240: 240-45",
+        "result": 195,
+        "expected": 195,
+        "status": "PASS"
+      }
+    ],
+    "advanced": true,
+    "advanced_inference": "Reconcile two accounting identities and identify the remaining ambiguity in trade figures.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "LG-Q-222": {
+    "student_review_classification": "Unnecessarily technical",
+    "student_review_concern": "'Origination' and 'settlement' are banking-process labels that add a translation step to an otherwise understandable loan-and-payment scenario.",
+    "decoding_burden_removed": "Ask how creating the loan differs from transferring the payment to the other bank; explain the terms if they are essential.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Crediting the account initially adds a loan asset and a deposit liability. The later outgoing payment reduces reserves and the deposit liability; the loan remains an asset.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Crediting the account initially adds a loan asset and a deposit liability. The later outgoing payment reduces reserves and the deposit liability; the loan remains an asset.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "PMOE-POL-BR-001": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'Without response magnitudes' is compressed language for not knowing how large the changes are.",
+    "decoding_burden_removed": "Ask what can be concluded without knowing the size of the investment and net-export changes.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Recognize that competing spending changes do not determine their net effect without magnitudes.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Real appreciation tends to lower NX, and higher rates can crowd out investment. Both subtract from AD relative to the direct rise in G. The signs identify competing contributions, not their total. This transfers the open-economy mechanism without claiming instant or complete adjustment.",
+    "numerical_checks": [],
+    "advanced": true,
+    "advanced_inference": "Recognize that competing spending changes do not determine their net effect without magnitudes.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "43068": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'Why need the rounded entries not subtract exactly?' is an awkward sentence that I have to reread.",
+    "decoding_burden_removed": "Ask why subtracting the rounded figures may not give the reported deficit.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Independent rounding can make displayed components differ slightly from an identity calculated with unrounded values.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Independent rounding can make displayed components differ slightly from an identity calculated with unrounded values.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "PMOE-NCO-LB-002": {
+    "student_review_classification": "Difficult to decipher",
+    "student_review_concern": "'Foreign intended domestic purchases' stacks qualifiers, and 'which portfolio pattern' does not plainly name whose asset purchases I should compare.",
+    "decoding_burden_removed": "Separate residents' purchases of foreign assets from foreigners' purchases of domestic assets, and ask how each could respond to the interest rate.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Separate the initial risk effect from interest-rate feedback on gross capital flows.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "The initial NCO shift is 140 − (−60) = 200. The realized increase of 125 requires feedback of −75. A −45 resident-flow response minus a +30 foreign-flow response gives −75, consistent with more attractive domestic returns.",
+    "numerical_checks": [
+      {
+        "calculation": "Risk raises desired NCO 140-(-60); rate response=125-200",
+        "result": -75,
+        "expected": -75,
+        "status": "PASS"
+      },
+      {
+        "calculation": "Resident and foreign flow response: -45-(+30)",
+        "result": -75,
+        "expected": -75,
+        "status": "PASS"
+      }
+    ],
+    "advanced": true,
+    "advanced_inference": "Separate the initial risk effect from interest-rate feedback on gross capital flows.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "PMOE-RER-LB-002": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'A domestic basket rises 250 to 270' leaves out both what rises and the connecting words.",
+    "decoding_burden_removed": "State that the price of the domestic basket rises from 250 to 270 currency units, and do the same for the foreign basket.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Evaluate the counterfactual contribution of domestic prices to real depreciation.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Actual ε is 1.50×270/408≈0.9926 versus initial 1.00. Without domestic inflation it would be 1.50×250/408≈0.9191, a larger depreciation. Rising domestic prices partially offset the competitiveness effect of the cheaper currency.",
+    "numerical_checks": [
+      {
+        "calculation": "Actual real exchange rate: 1.50*270/408",
+        "result": 0.9926470588235294,
+        "expected": 0.9926470588,
+        "status": "PASS"
+      },
+      {
+        "calculation": "Counterfactual with unchanged domestic price: 1.50*250/408",
+        "result": 0.9191176470588235,
+        "expected": 0.9191176471,
+        "status": "PASS"
+      }
+    ],
+    "advanced": true,
+    "advanced_inference": "Evaluate the counterfactual contribution of domestic prices to real depreciation.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "PMOE-NER-B3-002": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'Which percentage comparison and foreign-buyer consequence' reads like the question's design notes.",
+    "decoding_burden_removed": "Ask how the exchange-rate change affects the price paid by foreign buyers.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "The quoted rate rises 1.84/1.60−1=15%. The reciprocal changes 1.60/1.84−1≈−13.04%. A fixed domestic price costs foreign buyers proportionately more when multiplied by the higher foreign-per-domestic rate.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "The quoted rate rises 1.84/1.60−1=15%. The reciprocal changes 1.60/1.84−1≈−13.04%. A fixed domestic price costs foreign buyers proportionately more when multiplied by the higher foreign-per-domestic rate.",
+    "numerical_checks": [
+      {
+        "calculation": "Quoted rate percentage change",
+        "result": 14.999999999999991,
+        "expected": 15,
+        "status": "PASS"
+      },
+      {
+        "calculation": "Reciprocal percentage change",
+        "result": -13.043478260869568,
+        "expected": -13.0434782609,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "PM2C1-FED-L-002": {
+    "student_review_classification": "Excess jargon",
+    "student_review_concern": "'Tighten underwriting' is specialist lending language where a plain description of stricter loan standards would be clearer.",
+    "decoding_burden_removed": "Say that banks become more selective about approving loans.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "The central bank can supply reserves, but broad deposit creation also depends on banks, borrowers, and redepositing behavior.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "The central bank can supply reserves, but broad deposit creation also depends on banks, borrowers, and redepositing behavior.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "PMOE-NER-LB-002": {
+    "student_review_classification": "Excess jargon",
+    "student_review_concern": "'Price-volume decomposition' is an unfamiliar analytical label for using the given price, exchange-rate, and sales changes.",
+    "decoding_burden_removed": "Ask whether the claim about dollar revenue is supported by those three changes.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Reconcile lower dollar revenue per unit with higher total sales revenue.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Dollar unit price changes by 1.06×0.92−1=−2.48%. Total revenue changes by 1.06×0.92×1.05−1=2.396%. The quantity response reverses the unit-revenue decline, so exchange-rate direction alone does not determine total receipts.",
+    "numerical_checks": [
+      {
+        "calculation": "Dollar unit price percentage change",
+        "result": -2.4799999999999933,
+        "expected": -2.48,
+        "status": "PASS"
+      },
+      {
+        "calculation": "Total dollar revenue percentage change",
+        "result": 2.3960000000000203,
+        "expected": 2.396,
+        "status": "PASS"
+      }
+    ],
+    "advanced": true,
+    "advanced_inference": "Reconcile lower dollar revenue per unit with higher total sales revenue.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "ECON-NL-EASYBOSS-2024": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'Respects both the new-goods limitation and the continued use of CPI' tells me how an answer should be designed rather than plainly asking what CPI misses.",
+    "decoding_burden_removed": "Ask what introducing the new product means for interpreting CPI.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Identify a limitation of CPI without treating the entire index as invalid.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "New goods can improve purchasing opportunities before an index incorporates them. The limitation is specific; it does not invalidate all price evidence or establish one universal bias size.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "ECON-EC-LEGENDARYBOSS-20001": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'Respects both the new-goods limitation and the continued use of CPI' tells me how an answer should be designed rather than plainly asking what CPI misses.",
+    "decoding_burden_removed": "Ask what introducing the new product means for interpreting CPI.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Identify a limitation of CPI without treating the entire index as invalid.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "New goods can improve purchasing opportunities before an index incorporates them. The limitation is specific; it does not invalidate all price evidence or establish one universal bias size.",
+    "numerical_checks": [],
+    "advanced": true,
+    "advanced_inference": "Identify a limitation of CPI without treating the entire index as invalid.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "ECON-NL-LEGENDARYBOSS-9110": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'Respects both the new-goods limitation and the continued use of CPI' tells me how an answer should be designed rather than plainly asking what CPI misses.",
+    "decoding_burden_removed": "Ask what introducing the new product means for interpreting CPI.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Identify a limitation of CPI without treating the entire index as invalid.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "New goods can improve purchasing opportunities before an index incorporates them. The limitation is specific; it does not invalidate all price evidence or establish one universal bias size.",
+    "numerical_checks": [],
+    "advanced": true,
+    "advanced_inference": "Identify a limitation of CPI without treating the entire index as invalid.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "PM2B2-BIAS-FB-006": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'Respects both the new-goods limitation and the continued use of CPI' tells me how an answer should be designed rather than plainly asking what CPI misses.",
+    "decoding_burden_removed": "Ask what introducing the new product means for interpreting CPI.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Identify a limitation of CPI without treating the entire index as invalid.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "New goods can improve purchasing opportunities before an index incorporates them. The limitation is specific; it does not invalidate all price evidence or establish one universal bias size.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "PM2B2-DEF-L-002": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'A household grant rises $2,000 to $2,160 as CPI rises 125 to 135' omits 'from' twice and reads like notes.",
+    "decoding_burden_removed": "Use complete from-to statements for the grant and CPI, then ask which claim in the report is mistaken.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Select appropriate price measures for household purchasing power and domestic output.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "The grant and CPI each rise 8%, so its purchasing power is constant. Real GDP uses 1.08/1.04−1≈3.8%. The incorrect inference comes from using the consumer price measure for domestic output.",
+    "numerical_checks": [
+      {
+        "calculation": "Grant real change",
+        "result": 0.0,
+        "expected": 0,
+        "status": "PASS"
+      },
+      {
+        "calculation": "Real GDP percentage change",
+        "result": 3.8461538461538547,
+        "expected": 3.8461538462,
+        "status": "PASS"
+      }
+    ],
+    "advanced": true,
+    "advanced_inference": "Select appropriate price measures for household purchasing power and domestic output.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "LG-R-5055": {
+    "student_review_classification": "Excess jargon",
+    "student_review_concern": "'Gross AD' and 'net AD' are not the familiar way my course describes the change before and after crowding out.",
+    "decoding_burden_removed": "Explicitly call these the increase in aggregate demand before crowding out and the remaining increase afterward.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Crowding out subtracts from the gross effect: $200 - $50 = $150 billion.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Subtract the reduction caused by crowding out from the increase before crowding out: $200 − $50 = $150 billion.",
+    "numerical_checks": [
+      {
+        "calculation": "200-50",
+        "result": 150,
+        "expected": 150,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "LG-Q-4011": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "“The gross effect establishes an identical realized net effect” and “leaves later crowding out unresolved” in the choices are abstract ways to describe the before-and-after comparison.",
+    "decoding_burden_removed": "State plainly whether the initial multiplier calculation determines the final demand increase after crowding out.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "k=4=1/(1−MPC), so MPC=.75. The question identifies the gross multiplier under its assumptions; later offsets can reduce the net effect.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "The spending multiplier is 4 = 1/(1 − MPC), so MPC = 0.75. This gives the demand increase before crowding out. Later crowding out can reduce the final increase.",
+    "numerical_checks": [
+      {
+        "calculation": "MPC=1-1/4",
+        "result": 0.75,
+        "expected": 0.75,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "P52B-S4-FMCO-B1-001": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "“The gross effect establishes an identical realized net effect” and “leaves later crowding out unresolved” in the choices are abstract ways to describe the before-and-after comparison.",
+    "decoding_burden_removed": "State plainly whether the initial multiplier calculation determines the final demand increase after crowding out.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "k=4=1/(1−MPC), so MPC=.75. The question identifies the gross multiplier under its assumptions; later offsets can reduce the net effect.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "The spending multiplier is 4 = 1/(1 − MPC), so MPC = 0.75. This gives the demand increase before crowding out. Later crowding out can reduce the final increase.",
+    "numerical_checks": [
+      {
+        "calculation": "MPC=1-1/4",
+        "result": 0.75,
+        "expected": 0.75,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "P52B-S4-FMCO-B2-002": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "“The gross effect establishes an identical realized net effect” and “leaves later crowding out unresolved” in the choices are abstract ways to describe the before-and-after comparison.",
+    "decoding_burden_removed": "State plainly whether the initial multiplier calculation determines the final demand increase after crowding out.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "k=4=1/(1−MPC), so MPC=.75. The question identifies the gross multiplier under its assumptions; later offsets can reduce the net effect.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "The spending multiplier is 4 = 1/(1 − MPC), so MPC = 0.75. This gives the demand increase before crowding out. Later crowding out can reduce the final increase.",
+    "numerical_checks": [
+      {
+        "calculation": "MPC=1-1/4",
+        "result": 0.75,
+        "expected": 0.75,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "LG-Q-9133": {
+    "student_review_classification": "Difficult to decipher",
+    "student_review_concern": "“Total AD crowding out” is compressed enough that I have to reconstruct which spending change the stated amount measures.",
+    "decoding_burden_removed": "Use complete sentences to state each economy's MPC and the total reduction in aggregate demand from crowding out.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Compare multiplier effects after unequal crowding out.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "A: 5×50−150=100. B: 2×50=100. A larger increase before crowding out need not mean a larger increase afterward.",
+    "numerical_checks": [
+      {
+        "calculation": "Economy A final demand increase",
+        "result": 100.0,
+        "expected": 100.0,
+        "status": "PASS"
+      }
+    ],
+    "advanced": true,
+    "advanced_inference": "Compare multiplier effects after unequal crowding out.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "P52B-S4-FMCO-B1-002": {
+    "student_review_classification": "Difficult to decipher",
+    "student_review_concern": "“Total AD crowding out” is compressed enough that I have to reconstruct which spending change the stated amount measures.",
+    "decoding_burden_removed": "Use complete sentences to state each economy's MPC and the total reduction in aggregate demand from crowding out.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Compare multiplier effects after unequal crowding out.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "A: 5×90−270=180. B: 2×90=180. A larger increase before crowding out need not mean a larger increase afterward.",
+    "numerical_checks": [
+      {
+        "calculation": "Economy A final demand increase",
+        "result": 180.0,
+        "expected": 180.0,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "P52B-S4-FMCO-B2-003": {
+    "student_review_classification": "Difficult to decipher",
+    "student_review_concern": "“Total AD crowding out” is compressed enough that I have to reconstruct which spending change the stated amount measures.",
+    "decoding_burden_removed": "Use complete sentences to state each economy's MPC and the total reduction in aggregate demand from crowding out.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Compare multiplier effects after unequal crowding out.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "A: 5×130−390=260. B: 2×130=260. A larger increase before crowding out need not mean a larger increase afterward.",
+    "numerical_checks": [
+      {
+        "calculation": "Economy A final demand increase",
+        "result": 260.0,
+        "expected": 260.0,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "ECON-SP-ELITE-320": {
+    "student_review_classification": "Difficult to decipher",
+    "student_review_concern": "'Gross prediction AD3' and 'a positive total AD offset' make me stop to decode what increases and what decreases.",
+    "decoding_burden_removed": "Describe AD3 as the predicted demand curve before crowding out, and state that crowding out reduces the total increase in spending.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Determine the bound on crowding out needed to keep the final curve between two spending outcomes.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "To finish to the right of AD2, subtract less than the extra induced-spending distance from AD2 to AD3. A positive reduction from crowding out puts the result left of AD3. Merely retaining some net stimulus relative to AD1 does not guarantee finishing beyond AD2.",
+    "numerical_checks": [],
+    "advanced": true,
+    "advanced_inference": "Determine the bound on crowding out needed to keep the final curve between two spending outcomes.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true,
+    "graph_checks": {
+      "coordinates_alone_sufficient": "NO",
+      "theory_alone_sufficient": "YES",
+      "construct_test": "PASS",
+      "graph_test": "FAIL",
+      "construct_reason": "The student must connect crowding out with the induced-spending portion of the demand shift.",
+      "graph_reason": "The stem already orders AD1, AD2 and AD3 and states their meanings. The bound can be selected from those statements without viewing the graph.",
+      "same_result_before_cleanup": true,
+      "exception": "Existing approved task preserved; satisfying the additional test would require graph-assessment redesign, prohibited by this wording-only scope."
+    }
+  },
+  "ECON-SP-FINALBOSS-4016": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'A simple maximum suggests deposits' and 'combines banking and spending constraints' sound like shorthand for the intended assessment.",
+    "decoding_burden_removed": "State the model's maximum increase in deposits, then ask why actual deposit growth and spending may be smaller.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Distinguish constraints on deposit growth from constraints on investment spending.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Observed multiplier=440/110=4, below the restrictive simple maximum 10. Even if rates fall, the rate-to-investment link can weaken when expected profitability falls. These are distinct constraints at successive stages.",
+    "numerical_checks": [
+      {
+        "calculation": "Observed deposit multiplier",
+        "result": 4.0,
+        "expected": 4,
+        "status": "PASS"
+      }
+    ],
+    "advanced": true,
+    "advanced_inference": "Distinguish constraints on deposit growth from constraints on investment spending.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "ECON-SP-MEDIUMBOSS-3011": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'A simple maximum suggests deposits' and 'combines banking and spending constraints' sound like shorthand for the intended assessment.",
+    "decoding_burden_removed": "State the model's maximum increase in deposits, then ask why actual deposit growth and spending may be smaller.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Distinguish constraints on deposit growth from constraints on investment spending.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Observed multiplier=1400/350=4, below the restrictive simple maximum 10. Even if rates fall, the rate-to-investment link can weaken when expected profitability falls. These are distinct constraints at successive stages.",
+    "numerical_checks": [
+      {
+        "calculation": "Observed deposit multiplier",
+        "result": 4.0,
+        "expected": 4,
+        "status": "PASS"
+      }
+    ],
+    "advanced": true,
+    "advanced_inference": "Distinguish constraints on deposit growth from constraints on investment spending.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "ECON-SP-LEGENDARYBOSS-9110": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'A simple maximum suggests deposits' and 'combines banking and spending constraints' sound like shorthand for the intended assessment.",
+    "decoding_burden_removed": "State the model's maximum increase in deposits, then ask why actual deposit growth and spending may be smaller.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Distinguish constraints on deposit growth from constraints on investment spending.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Observed multiplier=920/230=4, below the restrictive simple maximum 10. Even if rates fall, the rate-to-investment link can weaken when expected profitability falls. These are distinct constraints at successive stages.",
+    "numerical_checks": [
+      {
+        "calculation": "Observed deposit multiplier",
+        "result": 4.0,
+        "expected": 4,
+        "status": "PASS"
+      }
+    ],
+    "advanced": true,
+    "advanced_inference": "Distinguish constraints on deposit growth from constraints on investment spending.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "PMOE-FX-L-005": {
+    "student_review_classification": "Excess jargon",
+    "student_review_concern": "'Vertical-NCO FX model' and 'an independent risk shock shifts desired NCO outward' compress several ideas into labels.",
+    "decoding_burden_removed": "Name the foreign-exchange model, describe its vertical dollar-supply curve, and explain the separate increase in the desire to buy foreign assets.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Identify which of two opposing capital-flow effects dominates without separately identifying their sizes.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "A vertical currency-supply curve fixes the quantity supplied for a given level of net capital outflow, not when that level changes. The rightward shift means the increase caused by risk exceeds the decrease caused by the higher interest rate. With currency demand unchanged, the domestic currency depreciates. The final shift alone does not reveal the size of each separate effect.",
+    "numerical_checks": [],
+    "advanced": true,
+    "advanced_inference": "Identify which of two opposing capital-flow effects dominates without separately identifying their sizes.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "P52B-EPOL-EL-001": {
+    "student_review_classification": "Excess jargon",
+    "student_review_concern": "“Causal identification” in choice A assumes research-methods vocabulary. I can understand the difference between evidence of causation and a comparison of unlike groups without knowing that label.",
+    "decoding_burden_removed": "Describe how well each study separates a policy's effect from other differences between the groups.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Compare the causal credibility of differently designed studies.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Policy advice should weigh evidence by its ability to identify causal effects.",
+    "numerical_checks": [],
+    "advanced": true,
+    "advanced_inference": "Compare the causal credibility of differently designed studies.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "ECON-NL-ELITE-369": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "A rate cannot 'misread' a person; that phrasing makes the limitation of the unemployment statistic sound oddly personal.",
+    "decoding_burden_removed": "Ask whose difficulty finding enough work would not be captured by the official unemployment rate.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Involuntary part-time workers are counted as employed, even though their labor situation is weak.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Involuntary part-time workers are counted as employed, even though their labor situation is weak.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "PMOE-RER-EL-002": {
+    "student_review_classification": "Difficult to decipher",
+    "student_review_concern": "'Converted consumer-price baskets' does not clearly say whether the baskets, their contents, or their prices were converted.",
+    "decoding_burden_removed": "Say that the prices of comparable consumer baskets have been expressed in the same currency.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Differences in goods, quality, taxes, trade costs, and nontraded services can sustain deviations from PPP.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Differences in goods, quality, taxes, trade costs, and nontraded services can sustain deviations from PPP.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "PMOE-TX-L-004": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'Resolve the claim while allowing an independent trade-account check' sounds like an instruction for building an assessment.",
+    "decoding_burden_removed": "Ask what extra information would show whether the trade deficit increased, and name the two comparisons plainly.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Determine which additional changes are needed to check a trade-deficit claim through two identities.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "ΔNX = ΔS − ΔI, so falling saving and investment alone do not sign the change. Independently, ΔNX = ΔX − ΔM; exports must be compared with imports. Either complete accounting comparison should produce the same answer.",
+    "numerical_checks": [],
+    "advanced": true,
+    "advanced_inference": "Determine which additional changes are needed to check a trade-deficit claim through two identities.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "ECON-SP-EXPECTED-INFLATION-SHIFT-6044": {
+    "student_review_classification": "Difficult to decipher",
+    "student_review_concern": "'What connection is required?' does not say whether I should explain expected inflation, wages, or a curve shift.",
+    "decoding_burden_removed": "Ask how higher expected inflation affects the short-run Phillips curve after the initial demand increase.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "As expected inflation adapts, the temporary unemployment effect fades and the SRPC shifts.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "As expected inflation adapts, the temporary unemployment effect fades and the SRPC shifts.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "ECON-SP-MEDIUMBOSS-3006": {
+    "student_review_classification": "Excess jargon",
+    "student_review_concern": "'Supply offset' is an unfamiliar name for the supply shock's contribution to inflation.",
+    "decoding_burden_removed": "Explain that this term is the number of percentage points the temporary supply shock adds to inflation.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "4=πe−1+2 gives πe=3. Without a measured offset, only πe+offset=5 is identified. Observed inflation and unemployment alone cannot separate these two vertical-shift mechanisms.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Substituting the measurements gives 4 = πe − 1 + 2, so expected inflation is 3%. Without a separate measurement of s, the data establish only πe + s = 5. Actual inflation and unemployment cannot by themselves separate expected inflation from the supply shock's effect.",
+    "numerical_checks": [
+      {
+        "calculation": "Expected inflation: 4+(6-5)-2",
+        "result": 3,
+        "expected": 3,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "LG-B-6002": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'Policy interest-rate setting,' 'purchases increase,' and 'institution-policy pairing' make a simple institutional comparison sound mechanical.",
+    "decoding_burden_removed": "Ask which institution can change the policy interest rate and which can increase government purchases.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Interest-rate policy is monetary; government spending is fiscal. The implementation authority follows the instrument used.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Interest-rate policy is monetary; government spending is fiscal. The implementation authority follows the instrument used.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "LG-Q-9020": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'Consistent with the course logic' refers to the course rather than asking the economics.",
+    "decoding_burden_removed": "Ask directly which long-run risk the described political pressure creates.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Central bank independence can help reduce politically motivated money growth that risks inflation.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Central bank independence can help reduce politically motivated money growth that risks inflation.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "ECON-SP-EASYBOSS-2005": {
+    "student_review_classification": "Unnecessarily technical",
+    "student_review_concern": "'Instrument independence within a public mandate' is a specialist institutional label embedded without explanation.",
+    "decoding_burden_removed": "Explain that the bank can choose its policy tools while following publicly established goals.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Instrument independence allows the bank to choose its policy tools under its mandate rather than obey an election-driven demand. Accountability remains: the bank must explain the decision. Independence does not give it fiscal taxing authority or remove its mandate.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "The bank can choose its policy tools rather than follow an election-driven demand, but it must explain how its decision serves its publicly established goals. This freedom does not give it the power to set taxes or disregard those goals.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "LG-Q-4008": {
+    "student_review_classification": "Difficult to decipher",
+    "student_review_concern": "'What initial entry' leaves me unsure whether I am being asked about a GDP-accounting entry or the first increase in consumption.",
+    "decoding_burden_removed": "Name the initial measure explicitly, then ask for the total demand effect.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Transfers are not government purchases, but recipients can spend part of them. Initial C=.6×transfer; multiplying by 1/(1−.6)=2.5 gives total 1.5×transfer.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Transfers are not government purchases, but recipients can spend part of them. Initial C=.6×transfer; multiplying by 1/(1−.6)=2.5 gives total 1.5×transfer.",
+    "numerical_checks": [
+      {
+        "calculation": "Initial consumption: transfer*.6",
+        "result": 24.0,
+        "expected": 24.0,
+        "status": "PASS"
+      },
+      {
+        "calculation": "Total demand: transfer*.6/(1-.6)",
+        "result": 60.0,
+        "expected": 60.0,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "P52A-FISCAD-B2-001": {
+    "student_review_classification": "Difficult to decipher",
+    "student_review_concern": "'What initial entry' leaves me unsure whether I am being asked about a GDP-accounting entry or the first increase in consumption.",
+    "decoding_burden_removed": "Name the initial measure explicitly, then ask for the total demand effect.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Transfers are not government purchases, but recipients can spend part of them. Initial C=.6×transfer; multiplying by 1/(1−.6)=2.5 gives total 1.5×transfer.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Transfers are not government purchases, but recipients can spend part of them. Initial C=.6×transfer; multiplying by 1/(1−.6)=2.5 gives total 1.5×transfer.",
+    "numerical_checks": [
+      {
+        "calculation": "Initial consumption: transfer*.6",
+        "result": 48.0,
+        "expected": 48.0,
+        "status": "PASS"
+      },
+      {
+        "calculation": "Total demand: transfer*.6/(1-.6)",
+        "result": 120.0,
+        "expected": 120.0,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "LG-Q-9142": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "Saying that 'a tax cut has an MPC' sounds strange; MPC describes the households' spending response.",
+    "decoding_burden_removed": "State that households have an MPC of 0.75, keeping the fiscal comparison unchanged.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Compare equal aggregate-demand effects with unequal fiscal costs.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "The tax cut initially raises consumption by 0.75 × $60 billion = $45 billion. Purchases also add $45 billion directly. Multiplying each by 4 gives $180 billion in total, but the tax cut costs the budget $60 billion versus $45 billion for purchases.",
+    "numerical_checks": [
+      {
+        "calculation": "Tax cut initial consumption",
+        "result": 45.0,
+        "expected": 45,
+        "status": "PASS"
+      },
+      {
+        "calculation": "Both total demand increases",
+        "result": 180.0,
+        "expected": 180,
+        "status": "PASS"
+      }
+    ],
+    "advanced": true,
+    "advanced_inference": "Compare equal aggregate-demand effects with unequal fiscal costs.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "P52A-FISCAD-L-006": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'The immediate consumption channel equals' sounds like a label in a model rather than a request for an amount of spending.",
+    "decoding_burden_removed": "Ask how much consumption rises immediately.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Only the portion spent on current consumption directly raises the consumption component of AD.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Only the portion spent on current consumption directly raises the consumption component of AD.",
+    "numerical_checks": [
+      {
+        "calculation": "Quarter of rebate spent",
+        "result": 25.0,
+        "expected": 25,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "P52A-FISCAD-B1-001": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'Which model-use caution is justified?' is assessment language rather than a natural question about the estimate.",
+    "decoding_burden_removed": "Ask why the textbook estimate might overstate the consumption response.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "A formula depends on its behavioral MPC/response assumptions. Expectations can change the initial consumption response; a budget identity does not fix that response.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "The multiplier calculation depends on how consumption initially responds. If expectations change that response, use the response supported by the evidence. A budget identity does not determine how much households change their spending.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "P52A-FISCAD-B2-002": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'Which model-use caution is justified?' is assessment language rather than a natural question about the estimate.",
+    "decoding_burden_removed": "Ask why the textbook estimate might overstate the consumption response.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "A formula depends on its behavioral MPC/response assumptions. Expectations can change the initial consumption response; a budget identity does not fix that response.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "The multiplier calculation depends on how consumption initially responds. If expectations change that response, use the response supported by the evidence. A budget identity does not determine how much households change their spending.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "LG-Q-9035": {
+    "student_review_classification": "Excess jargon",
+    "student_review_concern": "'Use exact gross returns' assumes I recognize a finance label even if I understand nominal and real interest rates.",
+    "decoding_burden_removed": "Request the exact real-return calculation and identify the relevant formula or ratio in ordinary terms.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Distinguish expected from realized real returns and solve for a new contract preserving the original expected return.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Expected real return is 1.12/1.05 − 1 = 6.67 percent; realized is 1.12/1.09 − 1 = 2.75 percent. Preserving the original expected real return on a new loan requires (1.12/1.05) × 1.09 − 1 = 16.27 percent nominal.",
+    "numerical_checks": [
+      {
+        "calculation": "Expected real return percent",
+        "result": 6.666666666666665,
+        "expected": 6.6666666667,
+        "status": "PASS"
+      },
+      {
+        "calculation": "Realized real return percent",
+        "result": 2.752293577981657,
+        "expected": 2.752293578,
+        "status": "PASS"
+      },
+      {
+        "calculation": "New nominal rate percent",
+        "result": 16.266666666666673,
+        "expected": 16.2666666667,
+        "status": "PASS"
+      }
+    ],
+    "advanced": true,
+    "advanced_inference": "Distinguish expected from realized real returns and solve for a new contract preserving the original expected return.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "ECON-NL-LEGENDARY-9046": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'Average material output' is not the usual name for the per-person measure being compared, so I have to infer which average is meant.",
+    "decoding_burden_removed": "Name real GDP per person and output per hour directly.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Reconcile per-person output growth with falling hourly productivity.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Per-person output changes by 1.12/1.05 - 1 ≈ 6.7%; hourly output changes by 1.12/1.20 - 1 ≈ -6.7%. More total hours can raise average output even while productivity per hour falls.",
+    "numerical_checks": [
+      {
+        "calculation": "GDP per person percent",
+        "result": 6.666666666666665,
+        "expected": 6.6666666667,
+        "status": "PASS"
+      },
+      {
+        "calculation": "Output per hour percent",
+        "result": -6.666666666666654,
+        "expected": -6.6666666667,
+        "status": "PASS"
+      }
+    ],
+    "advanced": true,
+    "advanced_inference": "Reconcile per-person output growth with falling hourly productivity.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "P74-INC-BR-005": {
+    "student_review_classification": "Excess jargon",
+    "student_review_concern": "“Behavioral margin” in choice B is an unexplained specialist label in an otherwise clear question about incentives.",
+    "decoding_burden_removed": "Describe the particular behavior the rule encourages, using the same ordinary language as the bus-ticket example.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Policy design must align the payoff with the behavior and outcome actually sought.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Policy design must align the payoff with the behavior and outcome actually sought.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "ECON-MG-LEGENDARY-9076": {
+    "student_review_classification": "Excess jargon",
+    "student_review_concern": "“Unintended margins of adjustment” in choice A makes a familiar lesson about responding to incentives sound like specialist analysis.",
+    "decoding_burden_removed": "Say that people respond in several ways, including ways the university did not intend.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "A changed penalty changes behavior, including responses the policy designer may not have wanted.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "A changed penalty changes behavior, including responses the policy designer may not have wanted.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "P74-INC-H-008": {
+    "student_review_classification": "Excess jargon",
+    "student_review_concern": "'Procurement office' and especially 'change orders' assume familiarity with government contracting rather than the incentive idea.",
+    "decoding_burden_removed": "Describe an office that chooses the cheapest bid and then faces costly changes to the contract.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "A broader metric reduces the payoff to lowballing the initial bid and recovering revenue later.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Considering total cost and performance reduces the incentive to submit an artificially low opening bid and recover the difference through later changes.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "P74-INC-L-013": {
+    "student_review_classification": "Excess jargon",
+    "student_review_concern": "“Different margins for different consumers” in choice A leaves me translating “margins” into the two actual decisions.",
+    "decoding_burden_removed": "Name the decisions: how much to travel and which card to use.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "The reward can affect travel quantity, payment choice, or neither, depending on alternatives.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "The reward can affect travel quantity, payment choice, or neither, depending on alternatives.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "LG-Q-249": {
+    "student_review_classification": "Unnecessarily technical",
+    "student_review_concern": "'Units of the composite good' introduces an unexplained modeling abstraction into a purchasing-power question.",
+    "decoding_burden_removed": "Explain the bundle of goods represented by the price level before asking how much purchasing power is lost.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "The cash initially buys 720/1.2 = 600 units and later buys 720/1.5 = 480 units. The loss is 120 units; an unchanged dollar balance need not preserve purchasing power.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "The cash initially buys 720/1.20 = 600 baskets and later buys 720/1.50 = 480 baskets. The loss is 120 baskets. An unchanged cash balance need not preserve purchasing power.",
+    "numerical_checks": [
+      {
+        "calculation": "Lost baskets: 720/1.2-720/1.5",
+        "result": 120.0,
+        "expected": 120,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "LG-Q-9040": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'Uses inflation tax finance' is an awkward noun phrase for financing spending by creating money.",
+    "decoding_burden_removed": "Describe money creation directly and ask how the resulting inflation connects to nominal interest rates.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Printing money can create inflation expectations, and the Fisher effect links expected inflation to nominal interest rates.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Printing money can create inflation expectations, and the Fisher effect links expected inflation to nominal interest rates.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "PM2C2-ITAX-EB-001": {
+    "student_review_classification": "Difficult to decipher",
+    "student_review_concern": "'Initial-price purchasing-power value' is hard to parse even though I understand adjusting nominal debt for inflation.",
+    "decoding_burden_removed": "Ask for the debt's real value measured at the initial year's prices.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "This year’s 3% inflation takes the index 100→103. Deflating the 103 debt by 1.03 gives 100. Disinflation is slower price growth, not a falling price level.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "This year’s 3% inflation takes the index 100→103. Deflating the 103 debt by 1.03 gives 100. Disinflation is slower price growth, not a falling price level.",
+    "numerical_checks": [
+      {
+        "calculation": "Real debt:103/1.03",
+        "result": 100.0,
+        "expected": 100,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "PM2C2-ITAX-EB-003": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'Which accounting-versus-burden distinction' sounds like the writer's label for the skill being tested.",
+    "decoding_burden_removed": "Ask how creating money pays for the purchases and who bears the resulting loss of purchasing power.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Money financing changes claims on real goods, not productive resources themselves. Under the stated assumptions, higher prices erode real balances; exposure depends on money holdings and timing.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Money financing changes claims on real goods, not productive resources themselves. Under the stated assumptions, higher prices erode real balances; exposure depends on money holdings and timing.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "PMOE-POL-LB-002": {
+    "student_review_classification": "Excess jargon",
+    "student_review_concern": "'Vertical-NCO FX model' and 'after interest-rate feedback' present the setup in compressed model shorthand.",
+    "decoding_burden_removed": "Describe the foreign-exchange market and state that the NCO change is the final change after interest rates adjust.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Combine tariff and capital-flight effects and identify the extra information needed for an exchange-rate magnitude.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "At the old rate, supply rises 25 units more than demand, creating excess supply. The foreign-currency-per-domestic-currency quote falls until demand matches final NCO. NX rises 65 by identity; the remaining exchange-rate change requires the NX-demand response.",
+    "numerical_checks": [
+      {
+        "calculation": "Excess supply at original exchange rate:65-40",
+        "result": 25,
+        "expected": 25,
+        "status": "PASS"
+      }
+    ],
+    "advanced": true,
+    "advanced_inference": "Combine tariff and capital-flight effects and identify the extra information needed for an exchange-rate magnitude.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "LG-B-6018": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'Carry that money-market result into the policy-transmission model' sounds like a lesson-planning instruction.",
+    "decoding_burden_removed": "Ask what the higher interest rate does to investment and aggregate demand next.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "After solving the money market, use the interest-rate change to infer the direction of investment and other rate-sensitive spending, then the aggregate-demand shift.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "After solving the money market, use the interest-rate change to infer the direction of investment and other rate-sensitive spending, then the aggregate-demand shift.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "P62D-ITP-L-095": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'Welfare package' sounds like a benefits program, not a set of changes in consumer surplus, producer surplus, and revenue.",
+    "decoding_burden_removed": "Ask which set of surplus and revenue changes describes the policy.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Combine consumer surplus, producer surplus and tariff revenue to find net welfare.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "The $450k consumer loss is only partly offset by the $150k producer gain and $200k tariff revenue, leaving $100k deadweight loss.",
+    "numerical_checks": [
+      {
+        "calculation": "Consumer loss trapezoid: (250+200)/2*(6-4)",
+        "result": 450.0,
+        "expected": 450,
+        "status": "PASS"
+      },
+      {
+        "calculation": "Producer gain trapezoid:(50+100)/2*2",
+        "result": 150.0,
+        "expected": 150,
+        "status": "PASS"
+      },
+      {
+        "calculation": "Tariff revenue: (200-100)*2",
+        "result": 200,
+        "expected": 200,
+        "status": "PASS"
+      },
+      {
+        "calculation": "Net welfare change",
+        "result": -100,
+        "expected": -100,
+        "status": "PASS"
+      }
+    ],
+    "advanced": true,
+    "advanced_inference": "Combine consumer surplus, producer surplus and tariff revenue to find net welfare.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true,
+    "graph_checks": {
+      "coordinates_alone_sufficient": "NO",
+      "theory_alone_sufficient": "YES",
+      "construct_test": "PASS",
+      "graph_test": "FAIL",
+      "construct_reason": "The student must identify consumer loss, producer gain, tariff revenue and net welfare.",
+      "graph_reason": "The alternatives permit eliminating every rival through the welfare identity or an impossible welfare gain in this standard tariff comparison, without reading plotted values.",
+      "same_result_before_cleanup": true,
+      "exception": "Existing approved task preserved; satisfying the additional test would require graph-assessment redesign, prohibited by this wording-only scope."
+    }
+  },
+  "P62D-ITP-B3-048": {
+    "student_review_classification": "Difficult to decipher",
+    "student_review_concern": "'Which national accounting is correct?' suggests GDP accounting, although the scenario concerns the policy's gains, losses, and resource costs.",
+    "decoding_burden_removed": "Ask for the net effect on national welfare or total surplus, retaining all stated costs.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Before administration, national change is -500+180+200=-120. Additional resource cost gives -140. Revenue and producer gains offset portions of consumer loss rather than being counted again as deadweight loss.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Before administration, national change is -500+180+200=-120. Additional resource cost gives -140. Revenue and producer gains offset portions of consumer loss rather than being counted again as deadweight loss.",
+    "numerical_checks": [
+      {
+        "calculation": "Net welfare including administration",
+        "result": -140,
+        "expected": -140,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "P62D-ITP-L-098": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'Welfare package' sounds like a benefits program, not a set of changes in consumer surplus, producer surplus, and revenue.",
+    "decoding_burden_removed": "Ask which set of surplus and revenue changes describes the policy.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Include domestic quota rents in national welfare rather than treating all consumer loss as a social loss.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "The consumer loss exceeds the producer gain plus domestic quota rents by $225 thousand.",
+    "numerical_checks": [
+      {
+        "calculation": "Consumer loss trapezoid:(275+200)/2*3",
+        "result": 712.5,
+        "expected": 712.5,
+        "status": "PASS"
+      },
+      {
+        "calculation": "Producer gain trapezoid:(75+150)/2*3",
+        "result": 337.5,
+        "expected": 337.5,
+        "status": "PASS"
+      },
+      {
+        "calculation": "Quota rents: (200-150)*3",
+        "result": 150,
+        "expected": 150,
+        "status": "PASS"
+      },
+      {
+        "calculation": "Net welfare change",
+        "result": -225.0,
+        "expected": -225,
+        "status": "PASS"
+      }
+    ],
+    "advanced": true,
+    "advanced_inference": "Include domestic quota rents in national welfare rather than treating all consumer loss as a social loss.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true,
+    "graph_checks": {
+      "coordinates_alone_sufficient": "NO",
+      "theory_alone_sufficient": "YES",
+      "construct_test": "PASS",
+      "graph_test": "FAIL",
+      "construct_reason": "The student must identify consumer loss, producer gain, domestic quota rents and net welfare.",
+      "graph_reason": "The rivals report a welfare gain or zero net loss despite positive quota rents. Standard binding-quota reasoning allows eliminating those rivals without reading magnitudes.",
+      "same_result_before_cleanup": true,
+      "exception": "Existing approved task preserved; satisfying the additional test would require graph-assessment redesign, prohibited by this wording-only scope."
+    }
+  },
+  "P62D-ITP-B3-049": {
+    "student_review_classification": "Difficult to decipher",
+    "student_review_concern": "'Real consumer and downstream efficiency cost' stacks several qualifiers without clearly describing who bears the cost.",
+    "decoding_burden_removed": "State plainly that the protection imposes resource costs on consumers and firms using the protected product, then ask for the comparison.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Protection costs 60000000/2000=30000 per job-year, versus 20000000/1500≈13333. The targeted program costs less per worker but reaches fewer. Advice should state both the efficiency comparison and the remaining distributional need.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Protection costs 60000000/2000=30000 per job-year, versus 20000000/1500≈13333. The targeted program costs less per worker but reaches fewer. Advice should state both the efficiency comparison and the remaining distributional need.",
+    "numerical_checks": [
+      {
+        "calculation": "Protection cost per job",
+        "result": 30000.0,
+        "expected": 30000,
+        "status": "PASS"
+      },
+      {
+        "calculation": "Transition cost per worker",
+        "result": 13333.333333333334,
+        "expected": 13333.3333333333,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "ECON-EC-MEDIUMBOSS-18010": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "“Active-search unemployment” reads like a data-field label rather than a description of people.",
+    "decoding_burden_removed": "Say how many adults are unemployed and actively looking for work.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "The labor force is 150+15 = 165. The discouraged are not active searchers. UR = 0.1/1.1 ≈ 9.1%; LFPR = 1.1/2 = 55%.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "The labor force is 150+15 = 165. The discouraged are not active searchers. UR = 0.1/1.1 ≈ 9.1%; LFPR = 1.1/2 = 55%.",
+    "numerical_checks": [
+      {
+        "calculation": "UR percent: unemployed/(employed+unemployed)",
+        "result": 9.090909090909092,
+        "expected": 9.0909090909,
+        "status": "PASS"
+      },
+      {
+        "calculation": "LFPR percent",
+        "result": 55.0,
+        "expected": 55,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "P52B-S4-UNEM-B1-001": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "“Active-search unemployment” reads like a data-field label rather than a description of people.",
+    "decoding_burden_removed": "Say how many adults are unemployed and actively looking for work.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "The labor force is 250+25 = 275. The discouraged are not active searchers. UR = 0.1/1.1 ≈ 9.1%; LFPR = 1.1/2 = 55%.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "The labor force is 250+25 = 275. The discouraged are not active searchers. UR = 0.1/1.1 ≈ 9.1%; LFPR = 1.1/2 = 55%.",
+    "numerical_checks": [
+      {
+        "calculation": "UR percent: unemployed/(employed+unemployed)",
+        "result": 9.090909090909092,
+        "expected": 9.0909090909,
+        "status": "PASS"
+      },
+      {
+        "calculation": "LFPR percent",
+        "result": 55.0,
+        "expected": 55,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "P52B-S4-UNEM-B2-003": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "“Active-search unemployment” reads like a data-field label rather than a description of people.",
+    "decoding_burden_removed": "Say how many adults are unemployed and actively looking for work.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "The labor force is 300+30 = 330. The discouraged are not active searchers. UR = 0.1/1.1 ≈ 9.1%; LFPR = 1.1/2 = 55%.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "The labor force is 300+30 = 330. The discouraged are not active searchers. UR = 0.1/1.1 ≈ 9.1%; LFPR = 1.1/2 = 55%.",
+    "numerical_checks": [
+      {
+        "calculation": "UR percent: unemployed/(employed+unemployed)",
+        "result": 9.090909090909092,
+        "expected": 9.0909090909,
+        "status": "PASS"
+      },
+      {
+        "calculation": "LFPR percent",
+        "result": 55.0,
+        "expected": 55,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "ECON-NL-FINALBOSS-4004": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "“Active-search unemployment” reads like a data-field label rather than a description of people.",
+    "decoding_burden_removed": "Say how many adults are unemployed and actively looking for work.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "The labor force is 200+20 = 220. The discouraged are not active searchers. UR = 0.1/1.1 ≈ 9.1%; LFPR = 1.1/2 = 55%.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "The labor force is 200+20 = 220. The discouraged are not active searchers. UR = 0.1/1.1 ≈ 9.1%; LFPR = 1.1/2 = 55%.",
+    "numerical_checks": [
+      {
+        "calculation": "UR percent: unemployed/(employed+unemployed)",
+        "result": 9.090909090909092,
+        "expected": 9.0909090909,
+        "status": "PASS"
+      },
+      {
+        "calculation": "LFPR percent",
+        "result": 55.0,
+        "expected": 55,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "ECON-EC-FINALBOSS-19022": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "“Active-search unemployment” reads like a data-field label rather than a description of people.",
+    "decoding_burden_removed": "Say how many adults are unemployed and actively looking for work.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "The labor force is 100+10 = 110. The discouraged are not active searchers. UR = 0.1/1.1 ≈ 9.1%; LFPR = 1.1/2 = 55%.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "The labor force is 100+10 = 110. The discouraged are not active searchers. UR = 0.1/1.1 ≈ 9.1%; LFPR = 1.1/2 = 55%.",
+    "numerical_checks": [
+      {
+        "calculation": "UR percent: unemployed/(employed+unemployed)",
+        "result": 9.090909090909092,
+        "expected": 9.0909090909,
+        "status": "PASS"
+      },
+      {
+        "calculation": "LFPR percent",
+        "result": 55.0,
+        "expected": 55,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "ECON-NL-FINALBOSS-4014": {
+    "student_review_classification": "Excess jargon",
+    "student_review_concern": "'Addresses both margins' does not plainly identify the wage and employment effects I should weigh.",
+    "decoding_burden_removed": "Ask which answer accounts for both higher wages for workers who keep jobs and fewer available jobs.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "A binding floor changes the wage paid and the quantity employed along demand. Winners among retained workers do not establish an aggregate earnings gain; employment quantities matter.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "A binding floor changes the wage paid and the quantity employed along demand. Winners among retained workers do not establish an aggregate earnings gain; employment quantities matter.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "ECON-NL-FINALBOSS-4027": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "“Above-clearing efficiency pay can ration employment” and “the same margin” in the choices are compressed formulations that take more decoding than the worker-retention tradeoff.",
+    "decoding_burden_removed": "Use complete, ordinary statements about wages above the market-clearing level, fewer jobs, and the difference between retaining existing workers and hiring new ones.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "An efficiency wage is chosen for productivity or retention incentives. Those benefits do not establish that all willing workers obtain jobs at the higher wage; lower hiring is a separate margin in the policy evaluation.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "An efficiency wage is chosen for productivity or retention incentives. Those benefits do not establish that all willing workers obtain jobs at the higher wage; the effect on hiring must also be considered.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "ECON-SP-LEGENDARY-9029": {
+    "student_review_classification": "Difficult to decipher",
+    "student_review_concern": "'Borrowers are weak' could mean they are poor credit risks or that few people want loans.",
+    "decoding_burden_removed": "State the intended problem with borrowers explicitly, keeping the original lending mechanism.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "A lower reserve requirement increases lending potential, but actual lending depends on banks and borrowers.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "A lower reserve requirement increases lending potential, but actual lending depends on banks and borrowers.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true,
+    "instructor_clarification": "Few households or firms want to borrow; directly confirmed by the instructor during this cleanup."
+  },
+  "P52B-S3-LPMM-B1-003": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'An upward interest effect from money demand' is an awkward way to describe upward pressure on the interest rate.",
+    "decoding_burden_removed": "Ask what increase in money demand could outweigh the effect of the larger money supply.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "A supply increase alone lowers the rate in the standard diagram. A sufficiently large outward money-demand shift can dominate that effect and produce a higher observed rate despite monetary expansion.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "A supply increase alone lowers the rate in the standard diagram. A sufficiently large outward money-demand shift can dominate that effect and produce a higher observed rate despite monetary expansion.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "PM2D1-LRADJ-EB-001": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'Applies demand-recession self-correction' compresses the process into an unfamiliar phrase.",
+    "decoding_burden_removed": "Say the commentator expects wages and prices to adjust as they would after a fall in aggregate demand.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Distinguish a utilization gap around unchanged capacity from a loss of capacity itself. Nominal adjustment does not rebuild real inputs; the relevant potential benchmark may have changed.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Distinguish a utilization gap around unchanged capacity from a loss of capacity itself. Nominal adjustment does not rebuild real inputs; potential output itself may have changed.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "PM2A-LRPC-EB-013": {
+    "student_review_classification": "Difficult to decipher",
+    "student_review_concern": "'Which future comparison is conditional on unchanged real labor-market structure?' makes me work out the requested comparison before I can use the economics.",
+    "decoding_burden_removed": "Ask what will happen to unemployment as inflation expectations adjust, holding the natural rate's determinants fixed.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "A temporary below-natural unemployment rate can be a demand/expectations gap. Without a structural change, adjustment does not require a new natural rate.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "A temporary below-natural unemployment rate can be a demand/expectations gap. Without a structural change, adjustment does not require a new natural rate.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "PM2A-LRPC-MB-015": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "“The reform's benchmark change” and “the natural benchmark” in the alternatives replace the familiar natural rate of unemployment with vague shorthand.",
+    "decoding_burden_removed": "Keep referring to the natural rate of unemployment when distinguishing the reform from monetary expansion.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Simultaneous events do not identify a single cause. A real matching or skill reform can lower natural unemployment; demand expansion alone does not establish that structural change. The comparison must separate the two mechanisms.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Simultaneous events do not identify a single cause. A real matching or skill reform can lower natural unemployment; demand expansion alone does not establish that structural change. The comparison must separate the two mechanisms.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "P73-MARG-H-012": {
+    "student_review_classification": "Unnecessarily technical",
+    "student_review_concern": "'Best discrete choice' is an optimization label where the practical decision is simply how many batches to buy.",
+    "decoding_burden_removed": "Ask how many additional batches the retailer should purchase, retaining the dependency between the third and fourth.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Buying batches three and four together would reduce net benefit by $1,000.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Buying batches three and four together would reduce net benefit by $1,000.",
+    "numerical_checks": [
+      {
+        "calculation": "Combined marginal net benefit of batches 3 and 4",
+        "result": -1000,
+        "expected": -1000,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "P52A-MARG-L-005": {
+    "student_review_classification": "Excess jargon",
+    "student_review_concern": "“An $80 million negative continuation margin” in choice A is an unfamiliar label for costs exceeding benefits if the program continues.",
+    "decoding_burden_removed": "Describe the net cost of continuing and compare it with the cost of ending the program.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Compare future alternatives while excluding sunk expenditure.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "The decision should compare future alternatives: continue loses $80 million; ending costs $30 million.",
+    "numerical_checks": [
+      {
+        "calculation": "Cost minus benefit of continuation",
+        "result": 80,
+        "expected": 80,
+        "status": "PASS"
+      }
+    ],
+    "advanced": true,
+    "advanced_inference": "Compare future alternatives while excluding sunk expenditure.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "P73-MARG-L-008": {
+    "student_review_classification": "Excess jargon",
+    "student_review_concern": "'Sprint' is software-development vocabulary, not a familiar description of the economic choice.",
+    "decoding_burden_removed": "Call it the next round of development work or briefly explain the term.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Combine expected benefits with direct and opportunity costs.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Expected benefit is $90,000; direct plus opportunity cost is $95,000.",
+    "numerical_checks": [
+      {
+        "calculation": "Expected benefit",
+        "result": 90000.0,
+        "expected": 90000,
+        "status": "PASS"
+      },
+      {
+        "calculation": "Direct plus opportunity cost",
+        "result": 95000,
+        "expected": 95000,
+        "status": "PASS"
+      }
+    ],
+    "advanced": true,
+    "advanced_inference": "Combine expected benefits with direct and opportunity costs.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "P76-MODL-LB-006": {
+    "student_review_classification": "Excess jargon",
+    "student_review_concern": "'Out-of-sample error' and repeated 'parameter values' assume statistical-modeling vocabulary beyond what the decision requires.",
+    "decoding_burden_removed": "Describe accuracy on new data and how recommendations change when plausible assumptions change.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Distinguish forecast accuracy from stability of a policy recommendation under plausible assumptions.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Forecast accuracy and the reliability of a policy recommendation are different concerns. A small improvement in forecast accuracy may not justify a costly, hard-to-reverse decision when reasonable changes in assumptions reverse the recommendation. Policymakers should test those assumptions and explain the uncertainty.",
+    "numerical_checks": [],
+    "advanced": true,
+    "advanced_inference": "Distinguish forecast accuracy from stability of a policy recommendation under plausible assumptions.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "LG-Q-314": {
+    "student_review_classification": "Difficult to decipher",
+    "student_review_concern": "The long setup repeats the public's currency deposit and the requirement that banks lend all excess reserves. I have to reread to see whether these are new conditions or repetitions.",
+    "decoding_burden_removed": "State each hypothetical banking assumption once, then give the deposit amount and reserve ratio. Preserve every model restriction and the definition of total deposit expansion.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Moving currency into deposits gives banks reserves to support lending. With a multiplier of 10, $50 million can support up to $500 million in deposits. The initial cash deposit itself replaces public currency with deposits; it is not net new money.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Moving currency into deposits gives banks reserves to support lending. With a multiplier of 10, $50 million can support up to $500 million in deposits. The initial cash deposit itself replaces public currency with deposits; it is not net new money.",
+    "numerical_checks": [
+      {
+        "calculation": "Maximum deposits 50/.10",
+        "result": 500.0,
+        "expected": 500,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "LG-Q-9019": {
+    "student_review_classification": "Difficult to decipher",
+    "student_review_concern": "The long setup repeats the public's currency deposit and the requirement that banks lend all excess reserves. I have to reread to see whether these are new conditions or repetitions.",
+    "decoding_burden_removed": "State each hypothetical banking assumption once, then give the deposit amount and reserve ratio. Preserve every model restriction and the definition of total deposit expansion.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "The multiplier is 1/0.15 = 6.666..., so $30 million can support about $200 million in total deposits. The initial cash deposit itself replaces public currency with deposits; it is not net new money.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "The multiplier is 1/0.15 = 6.666..., so $30 million can support about $200 million in total deposits. The initial cash deposit itself replaces public currency with deposits; it is not net new money.",
+    "numerical_checks": [
+      {
+        "calculation": "Maximum deposits 30/.15",
+        "result": 200.0,
+        "expected": 200,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "P52B-S4-MPTX-B1-002": {
+    "student_review_classification": "Difficult to decipher",
+    "student_review_concern": "“Offset the incentive to invest” followed by a dollar amount leaves me unsure whether that amount is investment's initial level, a proposed increase, or the size of the offset.",
+    "decoding_burden_removed": "State what the dollar amount measures, then ask how weaker sales expectations affect the investment response.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Transmission requires a spending response, not merely a rate movement. Expected profitability can offset financing-cost incentives even when the initial money-market channel works.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Lower interest rates affect aggregate demand only if spending responds. Weaker expected sales can make firms reluctant to invest even when borrowing becomes cheaper.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "P52B-S4-MPTX-B2-003": {
+    "student_review_classification": "Difficult to decipher",
+    "student_review_concern": "“Offset the incentive to invest” followed by a dollar amount leaves me unsure whether that amount is investment's initial level, a proposed increase, or the size of the offset.",
+    "decoding_burden_removed": "State what the dollar amount measures, then ask how weaker sales expectations affect the investment response.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Transmission requires a spending response, not merely a rate movement. Expected profitability can offset financing-cost incentives even when the initial money-market channel works.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Lower interest rates affect aggregate demand only if spending responds. Weaker expected sales can make firms reluctant to invest even when borrowing becomes cheaper.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "LG-Q-4003": {
+    "student_review_classification": "Difficult to decipher",
+    "student_review_concern": "“Offset the incentive to invest” followed by a dollar amount leaves me unsure whether that amount is investment's initial level, a proposed increase, or the size of the offset.",
+    "decoding_burden_removed": "State what the dollar amount measures, then ask how weaker sales expectations affect the investment response.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Transmission requires a spending response, not merely a rate movement. Expected profitability can offset financing-cost incentives even when the initial money-market channel works.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Lower interest rates affect aggregate demand only if spending responds. Weaker expected sales can make firms reluctant to invest even when borrowing becomes cheaper.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "LG-B-6006": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'The next directional step' sounds like a step label in an answer-writing rubric rather than an economic question.",
+    "decoding_burden_removed": "Ask what happens next to the interest rate in the stated money-market model.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "With money demand unchanged, the increase in money supply creates excess balances and puts downward pressure on the equilibrium interest rate.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "With money demand unchanged, the increase in money supply creates excess balances and puts downward pressure on the equilibrium interest rate.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "LG-B-6007": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'The next directional step' sounds like a step label in an answer-writing rubric rather than an economic question.",
+    "decoding_burden_removed": "Ask what happens next to the interest rate in the stated money-market model.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "With money demand unchanged, the decrease in money supply creates excess money demand and puts upward pressure on the equilibrium interest rate.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "With money demand unchanged, the decrease in money supply creates excess money demand and puts upward pressure on the equilibrium interest rate.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "LG-Q-2010": {
+    "student_review_classification": "Excess jargon",
+    "student_review_concern": "'Contract broad deposits' is unfamiliar wording for reducing bank deposits.",
+    "decoding_burden_removed": "Ask what reserve change would reduce deposits by the stated amount using the estimated multiplier.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Using the stated actual multiplier, ΔR=ΔD/m = −480/4 = −120. A maximum that overstates the actual multiplier would imply too small a reserve operation.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Using the stated actual multiplier, ΔR=ΔD/m = −480/4 = −120. A maximum that overstates the actual multiplier would imply too small a reserve operation.",
+    "numerical_checks": [
+      {
+        "calculation": "Reserve removal from actual multiplier",
+        "result": 120.0,
+        "expected": 120.0,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "P52B-S3-MPT-B2-003": {
+    "student_review_classification": "Excess jargon",
+    "student_review_concern": "'Contract broad deposits' is unfamiliar wording for reducing bank deposits.",
+    "decoding_burden_removed": "Ask what reserve change would reduce deposits by the stated amount using the estimated multiplier.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Using the stated actual multiplier, ΔR=ΔD/m = −1120/4 = −280. A maximum that overstates the actual multiplier would imply too small a reserve operation.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Using the stated actual multiplier, ΔR=ΔD/m = −1120/4 = −280. A maximum that overstates the actual multiplier would imply too small a reserve operation.",
+    "numerical_checks": [
+      {
+        "calculation": "Reserve removal from actual multiplier",
+        "result": 280.0,
+        "expected": 280.0,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "LG-Q-9102": {
+    "student_review_classification": "Difficult to decipher",
+    "student_review_concern": "'Banks also hold reserves equal to 10% of deposits' does not clearly name whether these are extra reserves or the total reserves already mentioned.",
+    "decoding_burden_removed": "Explicitly distinguish required reserves from additional excess reserves while preserving the intended assumptions.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Combine required and excess reserve ratios rather than using the required ratio alone.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Required plus additional reserves total 20% of deposits. Thus deposits supported by 140 new reserves are 140/.20 = 700, rather than the required-ratio-only maximum.",
+    "numerical_checks": [
+      {
+        "calculation": "Deposit increase with 20% reserve fraction",
+        "result": 700.0,
+        "expected": 700,
+        "status": "PASS"
+      }
+    ],
+    "advanced": true,
+    "advanced_inference": "Combine required and excess reserve ratios rather than using the required ratio alone.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "LG-Q-9123": {
+    "student_review_classification": "Difficult to decipher",
+    "student_review_concern": "'Real productive resources remain 160 index units' and the slash-compressed 'quantity-theory/neutrality assumptions' make the setup harder to understand than the nominal-versus-real distinction.",
+    "decoding_burden_removed": "State plainly which real quantities are held fixed and what long-run assumption is being applied.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Distinguish a permanent change in money growth from a one-time change in the money stock.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Levels and growth rates differ: a lasting growth-rate change can sustain inflation, whereas a one-time level change is not ongoing faster money growth. Real capacity remains determined by the stated real factors.",
+    "numerical_checks": [],
+    "advanced": true,
+    "advanced_inference": "Distinguish a permanent change in money growth from a one-time change in the money stock.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "PM2C2-NEUT-FB-004": {
+    "student_review_classification": "Difficult to decipher",
+    "student_review_concern": "'Real productive resources remain 160 index units' and the slash-compressed 'quantity-theory/neutrality assumptions' make the setup harder to understand than the nominal-versus-real distinction.",
+    "decoding_burden_removed": "State plainly which real quantities are held fixed and what long-run assumption is being applied.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Distinguish a permanent change in money growth from a one-time change in the money stock.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Levels and growth rates differ: a lasting growth-rate change can sustain inflation, whereas a one-time level change is not ongoing faster money growth. Real capacity remains determined by the stated real factors.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "P52A-OPPC-EL-002": {
+    "student_review_classification": "Excess jargon",
+    "student_review_concern": "'Contribution margin' is a managerial-accounting term that is not explained, although the opportunity-cost comparison itself is familiar.",
+    "decoding_burden_removed": "Explain what revenue and avoidable costs are included in each stated amount, or use a clearly defined net return.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Compare the chosen project after conversion cost with the next-best feasible use.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Z nets $85,000, which is $7,000 below the $92,000 next-best use.",
+    "numerical_checks": [
+      {
+        "calculation": "Z net return minus next-best Y",
+        "result": -7000,
+        "expected": -7000,
+        "status": "PASS"
+      }
+    ],
+    "advanced": true,
+    "advanced_inference": "Compare the chosen project after conversion cost with the next-best feasible use.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "ECON-SP-DEFINE-PHILLIPS-CURVE-6039": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'What linked Phillips result follows first?' is an awkward compressed way to ask about unemployment and inflation.",
+    "decoding_burden_removed": "Ask what short-run change the Phillips-curve model predicts.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "With expected inflation initially fixed, a demand change moves the economy along the current SRPC.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "With expected inflation initially fixed, a demand change moves the economy along the current SRPC.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "PG5-PC-L-006": {
+    "student_review_classification": "Excess jargon",
+    "student_review_concern": "'Separately measured supply offset' adds an unfamiliar label to an already detailed equation-and-graph task.",
+    "decoding_burden_removed": "Explain that the term measures the supply shock's contribution to inflation, without changing the equation or inference.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Infer expected inflation conditional on a measured supply effect and identify what the graph alone cannot determine.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "At B, unemployment is 6% and actual inflation is 6%. Thus 6 = expected inflation − 0.6 + 1.1, giving expected inflation of 5.5%. Without knowing the supply shock's contribution s, the graph determines only expected inflation + s = 6.6. The higher curve alone does not show how much expectations changed.",
+    "numerical_checks": [
+      {
+        "calculation": "Expected inflation at B:6+.6*(6-5)-1.1",
+        "result": 5.5,
+        "expected": 5.5,
+        "status": "PASS"
+      }
+    ],
+    "advanced": true,
+    "advanced_inference": "Infer expected inflation conditional on a measured supply effect and identify what the graph alone cannot determine.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true,
+    "graph_checks": {
+      "coordinates_alone_sufficient": "NO",
+      "theory_alone_sufficient": "NO",
+      "construct_test": "PASS",
+      "graph_test": "PASS",
+      "construct_reason": "Expected inflation must be inferred from the Phillips relation and the limits of separately identifying the supply effect.",
+      "graph_reason": "Choices A and B share the valid identification limitation but differ in expected inflation; B's coordinates are required.",
+      "same_result_before_cleanup": true,
+      "exception": null
+    }
+  },
+  "PM2A-EXP-L-002": {
+    "student_review_classification": "Excess jargon",
+    "student_review_concern": "The stem describes a supply disruption clearly, but choices B and D switch to “removed supply offset,” an unfamiliar label for the same effect.",
+    "decoding_burden_removed": "Keep the language consistent: compare the inflation effect of higher expectations with the effect of the supply disruption ending.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Compare the persistent expectations effect with a temporary supply shock across three periods.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Neither the supply disruption nor the higher expected inflation affected the original curve. The final curve reflects only the higher expected inflation, so it remains above the original curve. Comparing the final curve with the curve during the disruption requires comparing the sizes of those two effects; observed inflation alone does not establish them.",
+    "numerical_checks": [],
+    "advanced": true,
+    "advanced_inference": "Compare the persistent expectations effect with a temporary supply shock across three periods.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "PM2A-EXP-EB-007": {
+    "student_review_classification": "Difficult to decipher",
+    "student_review_concern": "The equation never explains s, and the alternatives call it a “supply offset.” I have to infer the meaning of a symbol before deciding what can be concluded.",
+    "decoding_burden_removed": "Define s as the supply shock's contribution to inflation, preserving the question about what can be inferred without knowing its value.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Rearrange to πe=4+(6−5)−s=5−s. Ignoring an unknown supply offset treats an assumption as an observed fact.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Rearranging gives πe = 4 + (6 − 5) − s = 5 − s. Expected inflation is 5% only if s = 0. A positive contribution from the supply shock means lower expected inflation at the same actual inflation and unemployment.",
+    "numerical_checks": [
+      {
+        "calculation": "Expected inflation as 5-s; s=0 gives 5",
+        "result": 5,
+        "expected": 5,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "ECON-MG-LEGENDARY-9042": {
+    "student_review_classification": "Difficult to decipher",
+    "student_review_concern": "'An additional loss beyond the gains from the missing rentals' sounds as though rentals that never happen create gains. I have to infer that it means gains that were lost.",
+    "decoding_burden_removed": "Distinguish the lost gains from rentals that no longer occur from any extra loss caused by allocating the remaining apartments poorly.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Distinguish lost trades from additional losses due to misallocation of remaining apartments.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "A quantity reduction loses gains from missing beneficial trades. A further allocation loss arises if a lower-value recipient displaces a higher-value applicant. A ceiling does not by itself prove that this misallocation occurs.",
+    "numerical_checks": [],
+    "advanced": true,
+    "advanced_inference": "Distinguish lost trades from additional losses due to misallocation of remaining apartments.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "43186": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'Accounting change and behavioral pressure' describes categories of answers rather than the saving, interest-rate, and investment effects I am asked to find.",
+    "decoding_burden_removed": "Name the requested change in national saving and the resulting pressure on interest rates and investment.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "ΔS=ΔSprivate+ΔSpublic=320−480=−160. In the specified market model the supply shift raises the rate and reduces equilibrium investment along demand; the identity does not require a demand-curve shift.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "ΔS=ΔSprivate+ΔSpublic=320−480=−160. In the specified market model the supply shift raises the rate and reduces equilibrium investment along demand; the identity does not require a demand-curve shift.",
+    "numerical_checks": [
+      {
+        "calculation": "Change in saving",
+        "result": -160.0,
+        "expected": -160.0,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "43174": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'Accounting change and behavioral pressure' describes categories of answers rather than the saving, interest-rate, and investment effects I am asked to find.",
+    "decoding_burden_removed": "Name the requested change in national saving and the resulting pressure on interest rates and investment.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "ΔS=ΔSprivate+ΔSpublic=160−240=−80. In the specified market model the supply shift raises the rate and reduces equilibrium investment along demand; the identity does not require a demand-curve shift.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "ΔS=ΔSprivate+ΔSpublic=160−240=−80. In the specified market model the supply shift raises the rate and reduces equilibrium investment along demand; the identity does not require a demand-curve shift.",
+    "numerical_checks": [
+      {
+        "calculation": "Change in saving",
+        "result": -80.0,
+        "expected": -80.0,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "43170": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'Accounting change and behavioral pressure' describes categories of answers rather than the saving, interest-rate, and investment effects I am asked to find.",
+    "decoding_burden_removed": "Name the requested change in national saving and the resulting pressure on interest rates and investment.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "ΔS=ΔSprivate+ΔSpublic=80−120=−40. In the specified market model the supply shift raises the rate and reduces equilibrium investment along demand; the identity does not require a demand-curve shift.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "ΔS=ΔSprivate+ΔSpublic=80−120=−40. In the specified market model the supply shift raises the rate and reduces equilibrium investment along demand; the identity does not require a demand-curve shift.",
+    "numerical_checks": [
+      {
+        "calculation": "Change in saving",
+        "result": -40.0,
+        "expected": -40.0,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "43179": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'Accounting change and behavioral pressure' describes categories of answers rather than the saving, interest-rate, and investment effects I am asked to find.",
+    "decoding_burden_removed": "Name the requested change in national saving and the resulting pressure on interest rates and investment.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "ΔS=ΔSprivate+ΔSpublic=240−360=−120. In the specified market model the supply shift raises the rate and reduces equilibrium investment along demand; the identity does not require a demand-curve shift.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "ΔS=ΔSprivate+ΔSpublic=240−360=−120. In the specified market model the supply shift raises the rate and reduces equilibrium investment along demand; the identity does not require a demand-curve shift.",
+    "numerical_checks": [
+      {
+        "calculation": "Change in saving",
+        "result": -120.0,
+        "expected": -120.0,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "43198": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'Why must a saving question define T' asks me about how an exam question should be written.",
+    "decoding_burden_removed": "Ask why it matters whether T means total tax receipts or net taxes when calculating private and public saving.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "The private- and public-saving formulas share T, so a consistent net-tax definition prevents mixing textbook saving with total-budget accounting.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "The private- and public-saving formulas share T, so a consistent net-tax definition prevents mixing textbook saving with total-budget accounting.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "ECON-NL-LEGENDARY-9053": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'Average material output' leaves me to infer that the question means real GDP per person.",
+    "decoding_burden_removed": "Name real GDP per person and output per worker explicitly.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Reconcile rising GDP per person with falling output per worker.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "With population fixed, GDP per person rises 6%. Output per worker changes by 1.06/1.10 - 1 ≈ -3.6%. A productivity decline does not imply that average output per resident also declined.",
+    "numerical_checks": [
+      {
+        "calculation": "GDP per worker percentage change",
+        "result": -3.6363636363636376,
+        "expected": -3.6363636364,
+        "status": "PASS"
+      }
+    ],
+    "advanced": true,
+    "advanced_inference": "Reconcile rising GDP per person with falling output per worker.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "PM2B3-PROD-E-001": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'GROWTH-01' looks like an internal file or question-bank code rather than how an instructor would refer to the figure.",
+    "decoding_burden_removed": "Refer naturally to the production graph or displayed figure; keep the same points and task.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Point A shows output per worker of 28.53, so that is the productivity value read from the graph.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Point A shows output per worker of 28.53, so that is the productivity value read from the graph.",
+    "numerical_checks": [
+      {
+        "calculation": "Graph point A output per worker",
+        "result": 28.53,
+        "expected": 28.53,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true,
+    "graph_checks": {
+      "coordinates_alone_sufficient": "YES",
+      "theory_alone_sufficient": "NO",
+      "construct_test": "FAIL",
+      "graph_test": "PASS",
+      "construct_reason": "Reading the output coordinate of A is sufficient. This was already the approved task.",
+      "graph_reason": "The output coordinate of A is absent from the stem.",
+      "same_result_before_cleanup": true,
+      "exception": "Existing approved task preserved; satisfying the additional test would require graph-assessment redesign, prohibited by this wording-only scope."
+    }
+  },
+  "PM2B3-PROD-M-001": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "'GROWTH-01' looks like an internal file or question-bank code rather than how an instructor would refer to the figure.",
+    "decoding_burden_removed": "Refer naturally to the production graph or displayed figure; keep the same points and task.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Output per worker rises from 28.53 at A to 36.37 at B: 36.37−28.53=7.84.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Output per worker rises from 28.53 at A to 36.37 at B: 36.37−28.53=7.84.",
+    "numerical_checks": [
+      {
+        "calculation": "Graph output difference B-A",
+        "result": 7.839999999999996,
+        "expected": 7.84,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true,
+    "graph_checks": {
+      "coordinates_alone_sufficient": "YES",
+      "theory_alone_sufficient": "NO",
+      "construct_test": "FAIL",
+      "graph_test": "PASS",
+      "construct_reason": "Subtracting the two plotted output values is sufficient. This was already the approved task.",
+      "graph_reason": "The output values at A and B must be read from the graph.",
+      "same_result_before_cleanup": true,
+      "exception": "Existing approved task preserved; satisfying the additional test would require graph-assessment redesign, prohibited by this wording-only scope."
+    }
+  },
+  "ECON-SP-LEGENDARY-9033": {
+    "student_review_classification": "Excess jargon",
+    "student_review_concern": "“Private agents” sounds like a specialist label rather than a reference to the people and businesses forming expectations.",
+    "decoding_burden_removed": "Name households and firms, or say the public, as appropriate to the intended group.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "If expected inflation remains high, disinflation is more costly.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "If expected inflation remains high, disinflation is more costly.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "ECON-SP-LEGENDARYBOSS-9111": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "“Which joint AD-AS/Phillips correction is needed?” sounds like a label for the test designer's combined task.",
+    "decoding_burden_removed": "Ask how rising inflation expectations change the short-run aggregate supply and Phillips curves, and what that means for the claim about permanently lower unemployment.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Reconcile expectations adjustment in AD-AS and the Phillips curve without changing potential output or natural unemployment.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Higher expected prices incorporated in wages reduce short-run supply at a given actual price; higher expected inflation raises the short-run Phillips relation. Without real structural changes, the initial demand-induced gain does not establish a new potential output level or natural rate of unemployment.",
+    "numerical_checks": [],
+    "advanced": true,
+    "advanced_inference": "Reconcile expectations adjustment in AD-AS and the Phillips curve without changing potential output or natural unemployment.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "ECON-SP-MEDIUMBOSS-3014": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "“Which joint AD-AS/Phillips correction is needed?” sounds like a label for the test designer's combined task.",
+    "decoding_burden_removed": "Ask how rising inflation expectations change the short-run aggregate supply and Phillips curves, and what that means for the claim about permanently lower unemployment.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Reconcile expectations adjustment in AD-AS and the Phillips curve without changing potential output or natural unemployment.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Higher expected prices incorporated in wages reduce short-run supply at a given actual price; higher expected inflation raises the short-run Phillips relation. Without real structural changes, the initial demand-induced gain does not establish a new potential output level or natural rate of unemployment.",
+    "numerical_checks": [],
+    "advanced": true,
+    "advanced_inference": "Reconcile expectations adjustment in AD-AS and the Phillips curve without changing potential output or natural unemployment.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "ECON-SP-FINALBOSS-4017": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "“Which joint AD-AS/Phillips correction is needed?” sounds like a label for the test designer's combined task.",
+    "decoding_burden_removed": "Ask how rising inflation expectations change the short-run aggregate supply and Phillips curves, and what that means for the claim about permanently lower unemployment.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Reconcile expectations adjustment in AD-AS and the Phillips curve without changing potential output or natural unemployment.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Higher expected prices incorporated in wages reduce short-run supply at a given actual price; higher expected inflation raises the short-run Phillips relation. Without real structural changes, the initial demand-induced gain does not establish a new potential output level or natural rate of unemployment.",
+    "numerical_checks": [],
+    "advanced": true,
+    "advanced_inference": "Reconcile expectations adjustment in AD-AS and the Phillips curve without changing potential output or natural unemployment.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "PM2A-SAC-FB-020": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "“Cumulative loss budget” makes an acceptable limit on lost output sound like a spending budget.",
+    "decoding_burden_removed": "State the maximum cumulative output loss officials are willing to accept, keeping the sacrifice ratios and target unchanged.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Multiply cost per point by the 3-point target: A9%, B6%. Only B meets the loss ceiling.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Multiply cost per point by the 3-point target: A9%, B6%. Only B meets the loss ceiling.",
+    "numerical_checks": [
+      {
+        "calculation": "Plan A output loss",
+        "result": 9,
+        "expected": 9,
+        "status": "PASS"
+      },
+      {
+        "calculation": "Plan B output loss",
+        "result": 6,
+        "expected": 6,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "PM2A-SAC-LB-023": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "Repeated references to an “output-loss budget” make me translate a budget metaphor into a limit on lost production.",
+    "decoding_burden_removed": "Describe the permitted cumulative output loss and how much of that limit remains, preserving the common output benchmark.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Use an observed sacrifice ratio to test whether a further inflation target fits a cumulative output-loss limit.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Cumulative output loss is 4% and inflation fell by 2 percentage points, so the sacrifice ratio is 2. Only 2% more output loss is permitted. At the same ratio, that allows one more percentage-point reduction in inflation, to 4%. Reaching 3% would require 4% more output loss and exceed the limit.",
+    "numerical_checks": [
+      {
+        "calculation": "Observed sacrifice ratio",
+        "result": 2.0,
+        "expected": 2,
+        "status": "PASS"
+      },
+      {
+        "calculation": "Remaining permitted inflation reduction",
+        "result": 1.0,
+        "expected": 1,
+        "status": "PASS"
+      }
+    ],
+    "advanced": true,
+    "advanced_inference": "Use an observed sacrifice ratio to test whether a further inflation target fits a cumulative output-loss limit.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "PM2A-SAC-LB-024": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "“Exhausting a loss budget” and disinflation that “fits the budget” obscure the intended limit on cumulative lost output.",
+    "decoding_burden_removed": "State the maximum acceptable output loss and ask how much further inflation can fall within that limit.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Revise a disinflation plan after an unexpectedly costly first stage.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "The remaining permitted loss is 6% − 4% = 2%. At an output cost of 2% per percentage point, inflation can fall by one more percentage point. Completing the original target would require two more percentage points, costing another 4% of output for a total loss of 8%.",
+    "numerical_checks": [
+      {
+        "calculation": "Further inflation reduction within loss limit",
+        "result": 1.0,
+        "expected": 1,
+        "status": "PASS"
+      },
+      {
+        "calculation": "Output loss for original target",
+        "result": 8,
+        "expected": 8,
+        "status": "PASS"
+      }
+    ],
+    "advanced": true,
+    "advanced_inference": "Revise a disinflation plan after an unexpectedly costly first stage.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "PM2A-SRPC-EB-008": {
+    "student_review_classification": "Difficult to decipher",
+    "student_review_concern": "“The initial surprise-inflation unemployment gain” packs the cause, timing, and outcome into a phrase I have to unpack before I can answer.",
+    "decoding_burden_removed": "Ask directly whether the anticipated expansion would initially lower unemployment, preserving the comparison with an unexpected expansion.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "In the expectations-augmented Phillips model, the temporary unemployment deviation depends on inflation relative to expectations. Equal increases in the two do not supply the surprise that generated the original short-run gain.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "In the expectations-augmented Phillips model, the temporary unemployment deviation depends on inflation relative to expectations. Equal increases in the two do not supply the surprise that generated the original short-run gain.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "PMOE-NCO-B3-001": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "“A second ledger” introduces bookkeeping imagery where the question is simply comparing reported figures.",
+    "decoding_burden_removed": "Call it another report or a reported figure, and ask which figure must change.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "NCO = resident foreign purchases − foreign domestic purchases. Thus −120=200−F implies F=320. With NX=NCO, NX=−120; the inflow finances a trade deficit rather than changing its sign.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "NCO = resident foreign purchases − foreign domestic purchases. Thus −120=200−F implies F=320. With NX=NCO, NX=−120; the inflow finances a trade deficit rather than changing its sign.",
+    "numerical_checks": [
+      {
+        "calculation": "Foreign purchases:200-(-120)",
+        "result": 320,
+        "expected": 320,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "LG-Q-4014": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "“A supplied monetary-policy effect” sounds like an instruction about the test rather than an event in the economy.",
+    "decoding_burden_removed": "State directly that monetary policy increases autonomous investment by the given amount.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Net autonomous spending rises by 50 + 60 − 40 = $70 billion. The multiplier is 1/(1 − 0.75) = 4, so AD shifts $280 billion and the remaining horizontal shortfall is 500 − 280 = $220 billion. Subtracting only $40 billion after multiplying the gross impulse would omit the lost induced spending.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Net autonomous spending rises by 50 + 60 − 40 = $70 billion. The multiplier is 1/(1 − 0.75) = 4, so AD shifts $280 billion and the remaining horizontal shortfall is 500 − 280 = $220 billion. Subtracting only $40 billion after multiplying the gross impulse would omit the lost induced spending.",
+    "numerical_checks": [
+      {
+        "calculation": "Remaining AD shortfall",
+        "result": 220.0,
+        "expected": 220,
+        "status": "PASS"
+      }
+    ],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  },
+  "LG-Q-9135": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "“A separate purchases bill” is an unusual way to describe government spending legislation.",
+    "decoding_burden_removed": "Say that lawmakers later pass a separate increase in government purchases.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Distinguish automatic reversals from discretionary spending despite implementation delays.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Automatic stabilizers depend on economic conditions under already-enacted rules, so recovery can reverse their recession response. A separately legislated purchases program remains discretionary; its timing does not reclassify how it was authorized.",
+    "numerical_checks": [],
+    "advanced": true,
+    "advanced_inference": "Distinguish automatic reversals from discretionary spending despite implementation delays.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "LG-Q-9136": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "“Contractionary monetary policy is supplied as reducing” sounds like a model specification pasted into the question.",
+    "decoding_burden_removed": "Say directly that contractionary monetary policy reduces autonomous investment by the stated amount.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Reverse the spending multiplier and distinguish an AD distance from an equilibrium GDP change.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "The investment decline shifts AD left by 50/(1 − 0.8) = $250 billion. Excess desired spending falls to 360 − 250 = $110 billion. This is an AD-distance calculation, not a claim that the equilibrium GDP gap falls one-for-one.",
+    "numerical_checks": [
+      {
+        "calculation": "Remaining excess AD",
+        "result": 109.99999999999994,
+        "expected": 110,
+        "status": "PASS"
+      }
+    ],
+    "advanced": true,
+    "advanced_inference": "Reverse the spending multiplier and distinguish an AD distance from an equilibrium GDP change.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "ECON-SP-FINALBOSS-4008": {
+    "student_review_classification": "Difficult to decipher",
+    "student_review_concern": "“Supply offset,” “forecasts rise one point and persist,” and “final natural-rate inflation” leave me decoding which variable changes and when.",
+    "decoding_burden_removed": "Describe the temporary supply shock's contribution to inflation, identify the forecasts as expected inflation, and ask for inflation after the shock ends and unemployment returns to its natural rate.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Track expected inflation before and after a temporary supply shock ends.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Initially, 6 = πe − 1 + 2, so expected inflation is 5%. Expectations then rise to 6%. After the supply shock ends and unemployment returns to 5%, inflation equals expected inflation, or 6%. Ending the supply shock does not necessarily return expectations to their original rate.",
+    "numerical_checks": [
+      {
+        "calculation": "Initial expected inflation",
+        "result": 5,
+        "expected": 5,
+        "status": "PASS"
+      },
+      {
+        "calculation": "Final inflation at natural unemployment",
+        "result": 6,
+        "expected": 6,
+        "status": "PASS"
+      }
+    ],
+    "advanced": true,
+    "advanced_inference": "Track expected inflation before and after a temporary supply shock ends.",
+    "advanced_inference_preserved": true,
+    "graph_design_preserved": true
+  },
+  "PM2B4-UTYPE-BR-001": {
+    "student_review_classification": "Unnatural wording",
+    "student_review_concern": "“Across measurement and type” sounds like two column headings rather than a question about a worker.",
+    "decoding_burden_removed": "Ask whether the worker is counted as unemployed and which type of unemployment describes the situation.",
+    "economic_construct_preserved": true,
+    "difficulty_preserved": true,
+    "required_reasoning_preserved": true,
+    "required_reasoning": "Active job search makes the worker officially unemployed; normal search after leaving a suitable job is frictional unemployment.",
+    "focused_student_acceptance": "PASS",
+    "feedback_check": "PASS",
+    "answer_reasoning_check": "PASS",
+    "key_reasoning": "Active job search makes the worker officially unemployed; normal search after leaving a suitable job is frictional unemployment.",
+    "numerical_checks": [],
+    "advanced": false,
+    "advanced_inference": null,
+    "advanced_inference_preserved": null,
+    "graph_design_preserved": true
+  }
+}

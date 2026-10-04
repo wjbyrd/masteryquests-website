@@ -1,6 +1,72 @@
-# Growth Realms
+# Rival Cities
 
-A six-cycle strategy game in which the player manages **one** economy and an independent computer doctrine manages the other. Its layered 32-bit isometric presentation uses detailed district sprites, staged construction, fixed routes and visible constraints. The economic model is unchanged by the visual pass.
+A ten-round city-building rivalry game. Start Game randomly assigns Meridian or Rivermark. A brief city advisor introduces district investment; the rival develops out of view in rounds 1–2 and is revealed at the beginning of Round 3. The result compares each city’s percentage change in output per worker from its own starting point, followed by the full economic debrief.
+
+## Advisor / rival staging pass
+
+This pass changes character staging and read-only coaching, preserving the simulation, ten rounds, assignment, delayed reveal, direct allocation, construction, district progression, comparison calculations, report and splash.
+
+Files changed in this pass:
+
+- `characters.js`: larger standing advisor and mayor figures, retaining the established faces and MQ palette.
+- `advisor.js` (new): city-specific opening recommendations and Round 1 coaching derived from the actual resolved allocation, stock changes and constraints. Rivermark starts with Industry for equipment; Meridian starts with Schools to complement its strong equipment base. Resource pressure and lagging training take priority over generic nudges.
+- `game.js`: mandatory opening without a dismissal button; first positive investment advances dialogue and relaxes the single cue; the follow-up may be dismissed or clears with the next investment. A brief advisor return at Round 1 resolution is independently dismissible. Round 2 has no recurring tutorial. The rival speaks from its own city’s dock; accepting the challenge switches to the player’s city and triggers the advisor reply. The reply clears on dismissal or the next investment. Replay resets all presentation state. None of this state enters the simulation snapshot.
+- `flow.css`: larger standing figures, connected speech bubbles, stronger contrast and readable dialogue; smaller rivalry heading bars; viewport placement tied to the owning city. Cards dock below their own map on narrow/short screens or when a desktop overlay would intersect a district target. The single-city camera leaves room for the extra Round 3 HUD rows.
+- `tests/advisor.test.js` (new), `package.json`: state-based coaching checks across both cities and four concentrated plans, including actual resource/training constraints and no mutation.
+- `tests/browser.test.mjs`: mandatory first action, motivated instruction in both starts, first-click response, post-round coaching, both rival owners/positions, advisor reply, target clearance, larger figures, replay reset and full ten-round flows. Screenshots now write to `tmp/games-preview/growth-realms/staging-pass/`.
+- `tests/interaction-browser.test.mjs`: accepts the rival challenge before continuing the existing interaction regression checks.
+- `tests/beta-build.test.js`: verifies the new advisor module ships with the exact local runtime.
+- `README.md`: this record.
+
+Validation: all 42 unit tests and the isolated beta build check passed; source and staged ten-round browser runs passed; the existing keyboard/touch/direct-investment browser suite passed. Verified rival placement with both player assignments, desktop and responsive views. Formula/session/doctrine hash locks still pass. Screenshots are browser captures, never game assets. This pass is staged locally and is not publicly deployed.
+
+Requested evidence: `02-round-one-guide.png`, `03-first-click.png`, `03b-round-one-coaching.png`, `05-round-three-reveal.png`, `05b-advisor-response.png`. `12-rivermark-mayor.png` shows the other rival on the right; phone opening/reveal captures are also included. The directory contains the full-run audit JSON.
+
+Remaining refinement: the mandatory opening still contains a short instruction paragraph. Larger speech bubbles take more vertical room on narrow phones, where they dock below the associated city; desktop overlays preserve more simultaneous map space. The existing difficulty imbalance is unchanged. This is a character-staging pass, not a finished-game claim.
+
+## Character-guided / map-first pass
+
+Implemented in the runtime, using existing atlases and code-native character portraits:
+
+- `characters.js`: distinct advisor Ellis and rival-mayor SVG portraits.
+- `game.js`: short opening dialogue, one Industry/Capital target, first-investment response, tutorial cue removal, second-investment dismissal, and a Round 3 mayor challenge. The same live dialogue node docks beneath the first map on narrow/short screens. Necessary selection, +1/+5, undo, Clear, commit and help controls remain.
+- `flow.css`: bottom-left advisor and bottom-right rival cards on desktop; safe corner-aligned docks on narrow/short screens; wider maps; 230px desktop controls; compact race strip. No oversized reveal banner. At 1366px the single city is about 1,065px wide and each comparison map about 658px wide. On phones the two cities stack.
+- `cleanup.css`: removed the four numbered tutorial markers and their four duplicate shortcut styles.
+- `index.html`: stock dashboard moved into optional comparison details; the compact sticky budget/commit/help HUD remains.
+- `splash-layout.js`: shared road rectangles, eight measured district footprints, reserved neighborhood lots and protected river corridor; pure geometry audit. Portrait and landscape scale the same ground and sprite geometry together.
+- `hero-scene.js`: continuous water, curved banks, deeper channel, surface glints, bridge parapets, serviced lots and a viewport-matched portrait canvas. No screenshots are loaded as art.
+- `map-engine.js`: exports the existing measured `districtSprite` drawing helper for the splash; its playable-city drawing logic is unchanged.
+- `tests/browser.test.mjs`: one-cue and first-click dialogue checks, popup/target collision checks, opaque dialogue backgrounds, desktop map width, mobile/touch/keyboard/help, both ten-round flows, rival visibility, report and replay. Existing screenshots now go to `tmp/games-preview/growth-realms/character-pass/`.
+- `tests/splash.test.js`, `package.json`: splash placement audit joins the existing 39 unit checks.
+- `tests/beta-build.test.js`: verifies the two new runtime modules ship and all staged runtime files match source.
+- `README.md`: this implementation and verification record.
+
+Verification: 40 unit tests plus the beta build check; both ten-round browser flows on source and locally staged beta; existing direct-interaction browser suite. Browser sizes include 320, 390, 768, 1366 and 1440px, plus a short 1024×600 viewport. The baseline model/session/doctrine hash checks pass. Beta staging is local only; no public deployment was performed.
+
+Evidence (real browser captures): `01-splash.png`, `02-round-one-guide.png`, `02b-highlighted-district.png`, `03-first-click.png`, `05-round-three-reveal.png`, `06-later-rivalry.png`; mobile splash/advisor/reveal captures and full-run `audit.json` are in the same character-pass directory. These files are test artifacts and are not runtime dependencies.
+
+Remaining refinement: the district upgrade controls and optional economic comparison still read as instructional UI. On phones, comparison requires scrolling between the stacked cities; simultaneous city comparison remains stronger on desktop. The existing city difficulty imbalance and temporary sprite-art status remain unchanged. Physical-device Safari and classroom playtesting are still outstanding. This is a focused presentation pass, not a claim that the game is finished.
+
+The sections below record previous passes.
+
+## Splash / assigned start / Round 3 reveal pass
+
+- `config.js`: centralized `GAME_CONFIG.title`, `totalRounds: 10`, `rivalRevealRound: 3`, and round briefings. `CYCLES` remains the engine identifier but derives its length from the configured round count.
+- `rivalry.js`: random assignment, visible-city filtering, and one authoritative productivity-growth race calculation. Scores use one decimal place; matching displayed scores draw. Total output does not decide the winner.
+- `game.js`: direct start and replay, nonmodal advisor, first-click follow-up, early rival exclusion from map/HUD/comparison/allocation/result DOM, Round 3 reveal and city-council voice, race scoreboard, accessible help, and round-aware progression.
+- `index.html`, `flow.css`, `hero-scene.js`: full-screen splash with centered title and bottom Start Game; full-bleed region drawn from existing sprite atlases with a separate portrait composition; responsive advisor/reveal/score/result presentation. No subtitle or reading links on the splash. The persistent in-game `?` opens concise instructions and an optional deeper Field Guide.
+- `debrief.js`: game result before the retained explanation, dynamic round references, all ten round ledger entries per city, and eleven chart points positioned inside the existing chart viewport.
+- `package.json`, `tests/rivalry.test.js`, `tests/browser.test.mjs`, `tests/browser-helpers.mjs`, and the presentation/onboarding/cleanup/cues/interaction/visual/sidewalk/zoning browser checks: current-flow acceptance and regression coverage. Presentation/onboarding commands share the authoritative flow suite. `tests/visual.test.js` retains the original formula/coefficient/doctrine/session hashes; only the obsolete six-round briefing-array assertion was replaced by the configured-length assertion. `tests/beta-build.test.js` checks the new runtime dependencies.
+
+Browser test files updated for the new start/reveal flow: `tests/browser-helpers.mjs`, `tests/browser.test.mjs`, `tests/onboarding-browser.test.mjs`, `tests/presentation-browser.test.mjs`, `tests/cleanup-browser.test.mjs`, `tests/cues-browser.test.mjs`, `tests/interaction-browser.test.mjs`, `tests/visual-browser.test.mjs`, `tests/sidewalk-browser.test.mjs`, and `tests/zoning-browser.test.mjs`. Unit/build checks changed: `tests/rivalry.test.js`, `tests/visual.test.js`, and `tests/beta-build.test.js`.
+
+`model.js`, `session.js`, `cpu.js`, `GAME_BALANCE`, rival doctrines, thresholds, map geometry and construction drawings are unchanged. Both economies still resolve together from the first round. Hidden means absent from the early rendered UI, not absent from the simulation. Internal `growth-realms` paths and cycle identifiers remain compatible.
+
+Validation: `npm test`, `npm run test:browser`, `npm run test:visual`, `npm run test:interaction`, `npm run test:cleanup`, and `npm run test:cues` (the latter against locally staged beta files). Screenshots in `tmp/games-preview/growth-realms/ten-round-pass/` come from the actual runtime; they are not loaded by the game. The source and isolated beta staging are local; this pass has not been publicly deployed.
+
+Current limitations: the reveal and later comparison are still information-dense on phones. The splash intentionally uses existing game art rather than a new illustration. Percentage growth gives the catch-up city a substantial difficulty advantage: across five fixed allocation mixes against every eligible rival doctrine, Rivermark won 30/30 samples and Meridian 3/25. This is a limited diagnostic, not an optimal-strategy analysis; coefficients were deliberately preserved. A later balance and outside-playtest pass is still needed.
+
+The sections below record earlier passes and their historical verification details.
 
 ## Sidewalk follow-up
 

@@ -1,7 +1,8 @@
+import {GAME_CONFIG as G} from '../config.js';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
-import {fillPlan,getRun,waitMaps} from './browser-helpers.mjs';
+import {startCity,fillPlan,getRun,waitMaps} from './browser-helpers.mjs';
 const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
 const origin=process.env.GAMES_PREVIEW_ORIGIN||'http://127.0.0.1:4180';
 const config=JSON.parse(await fs.readFile(new URL('../../../audit_tools/econ_rpg/games-preview.json',import.meta.url)));
@@ -14,7 +15,7 @@ try{
  const p=await browser.newPage({viewport:{width:1366,height:768},deviceScaleFactor:1});track(p);
  await p.goto(hub);await p.waitForFunction(()=>document.querySelector('#growth-realms-art')?.dataset.ready);assert.equal(await p.locator('.game-card').count(),config.gameCount);await p.screenshot({path:out+'05-beta-entry.png'});
  await p.locator('[data-game=growth-realms] a').click();assert.equal(new URL(p.url()).pathname,config.previewRoot+'games/growth-realms/');assert.equal(await p.locator('meta[name=robots]').getAttribute('content'),'noindex,nofollow');
- await p.locator('#start-game').click();await p.locator('[data-choose=meridian]').click();await waitMaps(p);
+ await startCity(p,'meridian');await waitMaps(p);
  const map=await p.locator('.city-map').boundingBox();assert.ok(map.y+map.height<=768);assert.ok(map.width>800);measurements.map=map;
  await p.locator('#district-select').selectOption('resources');await p.locator('[data-map-district=capital]').hover();
  const hover=await p.locator('[data-map-district=capital]').evaluate(marker);assert.equal(hover.background,'rgba(0, 0, 0, 0)');assert.match(hover.clip,/ellipse/);assert.equal(hover.radius,'50%');assert.equal(hover.w,hover.h);assert.notEqual(hover.fill,'rgba(0, 0, 0, 0)');await p.screenshot({path:out+'01-hover.png'});
@@ -25,16 +26,16 @@ try{
  await p.screenshot({path:out+'04-clear-roads-meridian.png'});
  await p.locator('[data-adjust=clear]').click();await fillPlan(p,[5,5,5,5]);await p.locator('#quick-commit').click();await p.waitForFunction(()=>document.body.dataset.phase==='building'&&document.querySelector('#build-progress').value>5);const progress=await p.locator('#build-progress').evaluate(e=>e.value);assert.ok(progress<100);await p.screenshot({path:out+'07-commit-progress.png'});await p.locator('#consequences').waitFor({state:'visible'});assert.equal((await getRun(p)).cities[0].history.length,1);
  await p.emulateMedia({reducedMotion:'reduce'});
- for(let cycle=2;cycle<=6;cycle++){await p.locator('#quick-commit').click();await fillPlan(p,[5,5,5,5]);await p.locator('#quick-commit').click();await p.locator('#consequences').waitFor({state:'visible'});}
+ for(let cycle=2;cycle<=G.totalRounds;cycle++){await p.locator('#quick-commit').click();await fillPlan(p,[5,5,5,5]);await p.locator('#quick-commit').click();await p.locator('#consequences').waitFor({state:'visible'});}
  await p.locator('[data-view=meridian]').click();await p.evaluate(()=>scrollTo(0,0));await waitMaps(p);await p.screenshot({path:out+'08-upgraded-meridian.png'});
  await p.locator('[data-view=rivermark]').click();await p.evaluate(()=>scrollTo(0,0));await waitMaps(p);await p.screenshot({path:out+'09-upgraded-rivermark.png'});
- await p.locator('#quick-commit').click();await p.locator('#final-report').waitFor({state:'visible'});await p.locator('[data-answer=potential]').click();assert.ok((await p.locator('#transfer-feedback').innerText()).length>70);await p.locator('#replay').click();assert.equal(await getRun(p),null);
- await p.locator('[data-choose=rivermark]').click();await waitMaps(p);await p.screenshot({path:out+'10-clear-roads-rivermark.png'});
+ await p.locator('#quick-commit').click();await p.locator('#final-report').waitFor({state:'visible'});await p.locator('[data-answer=potential]').click();assert.ok((await p.locator('#transfer-feedback').innerText()).length>70);
+ await startCity(p,'rivermark','#replay');await waitMaps(p);await p.screenshot({path:out+'10-clear-roads-rivermark.png'});
  const back=p.getByRole('link',{name:'Return to Games',exact:true}).filter({visible:true}).first();await back.click();assert.equal(p.url(),hub);await p.close();
  for(const width of [390,320]){
   const m=await browser.newPage({viewport:{width,height:844},hasTouch:true,isMobile:true});track(m);await m.goto(hub);await m.waitForFunction(()=>document.querySelector('#growth-realms-art')?.dataset.ready);await m.locator('[data-game=growth-realms]').scrollIntoViewIfNeeded();assert.equal(await m.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);if(width===390)await m.screenshot({path:out+'06-mobile-beta-entry.png'});
-  await m.locator('[data-game=growth-realms] a').tap();await m.locator('#start-game').tap();await m.locator('[data-choose=rivermark]').tap();await waitMaps(m);await m.locator('[data-map-district=capital]').tap();assert.equal((await getRun(m)).allocation.capital,1);assert.equal(await m.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
+  await m.locator('[data-game=growth-realms] a').tap();await startCity(m,'rivermark');await waitMaps(m);await m.locator('[data-map-district=capital]').tap();assert.equal((await getRun(m)).allocation.capital,1);assert.equal(await m.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
   const sizes=await m.locator('[data-map-district]').evaluateAll(es=>es.map(e=>({w:e.getBoundingClientRect().width,h:e.getBoundingClientRect().height})));assert.ok(sizes.every(s=>s.w>=44&&s.h>=44));measurements['mobile'+width]=sizes;if(width===390)await m.screenshot({path:out+'11-mobile-game.png',fullPage:true});await m.close();
  }
- assert.deepEqual(errors,[]);await fs.writeFile(out+'audit.json',JSON.stringify({hub,measurements,errors},null,2));console.log('PASS A–I + 10A: round cues, +1/panel/budget, separated targets, larger fitting map, real commit progress, both upgraded cities, beta entry/return, phone launch/taps at 320 and 390px, six cycles/report/replay.');
+ assert.deepEqual(errors,[]);await fs.writeFile(out+'audit.json',JSON.stringify({hub,measurements,errors},null,2));console.log('PASS A–I + 10A: round cues, +1/panel/budget, separated targets, larger fitting map, real commit progress, both upgraded cities, beta entry/return, phone launch/taps at 320 and 390px, ten rounds/report/replay.');
 }finally{await browser.close();}

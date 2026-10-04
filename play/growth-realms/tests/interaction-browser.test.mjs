@@ -1,18 +1,17 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
-import {enterChoice,fillPlan,getRun,waitMaps,keys} from './browser-helpers.mjs';
+import {startCity,fillPlan,getRun,waitMaps,keys} from './browser-helpers.mjs';
 const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
 const output=fileURLToPath(new URL('../../../tmp/games-preview/growth-realms/ui-pass/',import.meta.url));await fs.mkdir(output,{recursive:true});
 const b=await chromium.launch({channel:'msedge',headless:true}),p=await b.newPage({viewport:{width:1440,height:1100}}),errors=[];
-p.on('pageerror',e=>errors.push(e.stack));p.on('response',r=>{if(r.status()>=400&&!r.url().endsWith('favicon.ico'))errors.push(`${r.status()} ${r.url()}`);});
+p.on('pageerror',e=>{errors.push(e.stack);console.error(e.stack);});p.on('response',r=>{if(r.status()>=400&&!r.url().endsWith('favicon.ico'))errors.push(`${r.status()} ${r.url()}`);});
 await p.addInitScript(()=>{Math.random=()=>.2;});
 const url='http://127.0.0.1:4178/play/growth-realms/';
 const remaining=async()=>20-Object.values((await getRun(p)).allocation).reduce((a,b)=>a+b,0);
 const shot=async name=>p.screenshot({path:output+name+'.png',fullPage:true});
 try{
-  await p.goto(url);await enterChoice(p);await waitMaps(p);await shot('01-city-selection');
-  await p.locator('[data-choose="rivermark"]').click();await waitMaps(p);await shot('02-single-city-planning');
+  await p.goto(url);await startCity(p,'rivermark');await waitMaps(p);await shot('02-single-city-planning');
   assert.equal(await p.locator('.allocation-rows').count(),0);assert.equal(await p.locator('[data-adjust]').count(),4);assert.equal(await p.locator('[data-city-map]').count(),1);
   const before=(await getRun(p)).cities.map(c=>({buildings:c.buildings,output:c.output,technology:c.technology}));
   await p.locator('[data-map-district="capital"]').click();assert.equal((await getRun(p)).allocation.capital,1);assert.equal(await remaining(),19);assert.equal(await p.locator('[data-map-district="capital"]').getAttribute('aria-pressed'),'true');assert.match(await p.locator('.map-click-feedback').innerText(),/\+1 CAPITAL/);await shot('04-direct-map-allocation');
@@ -23,11 +22,17 @@ try{
   // Visible hitboxes and legibility at the requested desktop width.
   const audit=await p.evaluate(()=>({targets:[...document.querySelectorAll('[data-map-district]')].map(e=>{const r=e.getBoundingClientRect();return{width:r.width,height:r.height};}),fonts:Object.fromEntries(['.context-description p','.context-description select','.context-actions p','.upgrade-info strong','.map-condition','.stat-label','.hud-stat strong','.map-stats strong','#planning-instruction','#points-remaining>span'].map(s=>[s,parseFloat(getComputedStyle(document.querySelector(s)).fontSize)])),overflow:document.documentElement.scrollWidth>innerWidth}));
   assert.ok(audit.targets.every(t=>t.width>=150&&t.height>=100));assert.equal(audit.overflow,false);for(const [s,font]of Object.entries(audit.fonts))assert.ok(font>=(s==='.stat-label'||s==='#points-remaining>span'?11:s==='.map-condition'||s==='#planning-instruction'?13:14),`${s} ${font}`);
-  await p.locator('#comparison>summary').click();assert.equal(await p.locator('.strategic-comparison dl>div').count(),8);assert.equal(await p.locator('#detailed-comparison').evaluate(e=>e.open),false);assert.equal(await p.locator('#detailed-comparison .comparison-grid').isVisible(),false);assert.match(await p.locator('.strategic-gap').innerText(),/Starting gap:.*Current gap:/s);await p.locator('#comparison').screenshot({path:output+'05-simplified-comparison.png'});await p.locator('#detailed-comparison>summary').click();assert.equal(await p.locator('#detailed-comparison .comparison-grid dl>div').count(),20);await p.locator('#comparison>summary').click();
   // All four district buttons operate via keyboard; contextual dropdown/controls too.
   for(const key of keys){await p.locator('#district-select').selectOption(key);if((await getRun(p)).allocation[key])await p.locator('[data-adjust="clear"]').click();}
   await p.locator('[data-map-district="capital"]').focus();for(let i=0;i<4;i++){assert.equal(await p.locator(':focus').getAttribute('data-map-district'),keys[i]);await p.keyboard.press('Enter');if(i<3)await p.keyboard.press('Tab');}assert.deepEqual((await getRun(p)).allocation,{capital:1,resources:1,research:1,education:1});
   await p.locator('#district-select').focus();await p.keyboard.press('Home');await p.keyboard.press('ArrowDown');await p.keyboard.press('Enter');assert.equal(await p.locator('#district-select').inputValue(),'resources');await p.locator('[data-adjust="5"]').focus();await p.keyboard.press('Space');assert.equal((await getRun(p)).allocation.resources,6);
+  // Comparison and rival inspection unlock after two real, independently resolved rounds.
+  for(const key of keys){await p.locator('#district-select').selectOption(key);if((await getRun(p)).allocation[key])await p.locator('[data-adjust="clear"]').click();}
+  await p.emulateMedia({reducedMotion:'reduce'});
+  for(let n=0;n<2;n++){await fillPlan(p,[5,5,5,5]);await p.locator('#quick-commit').click();await p.locator('#consequences').waitFor({state:'visible'});await p.locator('#quick-commit').click();}
+  await p.locator('#accept-challenge').click();await p.locator('#dismiss-advisor').click();await p.locator('[data-map-district="capital"]').click();
+  await p.emulateMedia({reducedMotion:'no-preference'});
+  await p.locator('#comparison>summary').click();assert.equal(await p.locator('.strategic-comparison dl>div').count(),8);assert.equal(await p.locator('#detailed-comparison').evaluate(e=>e.open),false);assert.equal(await p.locator('#detailed-comparison .comparison-grid').isVisible(),false);assert.match(await p.locator('.strategic-gap').innerText(),/Starting gap:.*Current gap:/s);await p.locator('#comparison').screenshot({path:output+'05-simplified-comparison.png'});await p.locator('#detailed-comparison>summary').click();assert.equal(await p.locator('#detailed-comparison .comparison-grid dl>div').count(),20);await p.locator('#comparison>summary').click();
   // Watch the real routes through a full loop, including both front and rear poses.
   await p.locator('[data-view="meridian"]').click();await waitMaps(p);assert.equal(await p.locator('[data-adjust]').count(),0);
   await p.evaluate(()=>document.querySelector('.region-section').scrollIntoView({block:'start',behavior:'instant'}));
@@ -35,7 +40,7 @@ try{
   const directions=await p.evaluate(async()=>{const found={};const until=performance.now()+17000;while(performance.now()<until){for(const entry of document.querySelector('.city-map').dataset.unitFacings.split(',')){const [route,d]=entry.split(':');(found[route]||=new Set()).add(d);}await new Promise(r=>setTimeout(r,100));}return Object.fromEntries(Object.entries(found).map(([k,v])=>[k,[...v]]));});assert.equal(Object.keys(directions).length,5);for(const [route,dirs]of Object.entries(directions))assert.equal(dirs.length,4,route);
   await p.locator('[data-map-district="capital"]').click();assert.equal((await getRun(p)).allocation.capital,1,'rival remains inspection-only');
   // Touch emulation with true taps, undo, sticky budget and compact comparison.
-  const touch=await b.newPage({viewport:{width:390,height:844},hasTouch:true,isMobile:true});touch.on('pageerror',e=>errors.push(e.stack));await touch.goto(url);await enterChoice(touch);await waitMaps(touch);await touch.locator('[data-choose="rivermark"]').tap();
+  const touch=await b.newPage({viewport:{width:390,height:844},hasTouch:true,isMobile:true});touch.on('pageerror',e=>errors.push(e.stack));await touch.goto(url);await startCity(touch,'rivermark');
   for(const key of keys)await touch.locator(`[data-map-district="${key}"]`).tap();assert.deepEqual((await getRun(touch)).allocation,{capital:1,resources:1,research:1,education:1});await touch.locator('[data-adjust="-1"]').tap();assert.equal((await getRun(touch)).allocation.education,0);
   const budgetBox=await touch.locator('#planning-hud').boundingBox();assert.ok(budgetBox.y>=-2&&budgetBox.y<200,'mobile budget stays visible while interacting below map');
   await touch.screenshot({path:output+'08-phone-budget-context.png'});await touch.evaluate(()=>window.scrollTo(0,0));await touch.screenshot({path:output+'07-phone-planning.png',fullPage:true});

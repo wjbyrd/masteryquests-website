@@ -1,0 +1,175 @@
+ECON-SP-MEDIUMBOSS-3007 E medium
+In the LRPC graph c→a follows a demand surprise. If actual inflation stays at I2, compare full expectation adjustment with no expectation adjustment.
+A: Full adjustment leads toward c/U2; unchanged expectations move it to d/U3
+B: Full adjustment leaves it at a/U1; unchanged expectations shift LRPC left
+C: Both lead to b immediately because actual inflation alone determines expected inflation
+D: Full adjustment leads toward b/U2; unchanged expectations keep the economy on SRPC1 at a/U1
+At I2, a is on the original SRPC1 and b is on the higher-expectation SRPC2. The unemployment endpoint depends on expectation adjustment, not solely the maintained actual rate.
+IMAGE question-assets/phillips-curve-expectations/lrpc.webp
+DESC The horizontal axis is unemployment rate and the vertical axis is inflation rate. A vertical LRPC stands at U2. SRPC1 is the lower/left downward-sloping curve and SRPC2 is the higher/right downward-sloping curve. Point a is at U1/I2 on SRPC1, point b is at U2/I2 where SRPC2 meets the LRPC, point c is at U2/I1 where SRPC1 meets the LRPC, and point d is at U3/I1 on SRPC2. Dashed guides mark unemployment rates U1-U3 and inflation rates I1-I2.
+REPAIR Give two valid counterfactual expectations accounts with different labeled endpoints.
+
+ECON-SP-ELITE-326 D medium
+Refer to the SRPC graph. A move from c on SRPC1 to the upper point at U3 on SRPC2 means:
+A: Same unemployment with higher inflation
+B: Same inflation with lower unemployment
+C: Lower inflation with same unemployment
+D: Higher unemployment with same inflation
+At U3, SRPC2 shows a higher inflation rate than SRPC1.
+IMAGE question-assets/phillips-curve-expectations/srpc.webp
+DESC The horizontal axis is unemployment rate and the vertical axis is inflation rate. SRPC1 is the lower downward-sloping curve and SRPC2 is the higher/rightward downward-sloping curve. On SRPC1, point a is at U1/I4, b at U2/I3, c at U3/I2, and d at U4/I1. On SRPC2, point f is at U3/I4 and point e is at U4/I3. Dashed guides connect the labeled points to unemployment rates U1-U4 and inflation rates I1-I4.
+REPAIR Remove the disclosed upper/same-unemployment characterization; require reading the labeled movement before interpreting expectations or the tradeoff.
+
+ECON-SP-MEDIUM-162 D medium
+Refer to the SRPC graph. Assume supply conditions and the natural rate are unchanged; only expected inflation can shift the curve. If the economy moves from c on SRPC1 to the upper point at the same unemployment rate, the likely cause is:
+A: Higher expected inflation
+B: Lower expected inflation
+C: A fall in actual inflation only
+D: A lower natural rate
+At the same unemployment rate, a higher SRPC reflects higher expected inflation or a worse tradeoff. With other shifters explicitly excluded, the upward shift identifies higher expected inflation.
+IMAGE question-assets/phillips-curve-expectations/srpc.webp
+DESC The horizontal axis is unemployment rate and the vertical axis is inflation rate. SRPC1 is the lower downward-sloping curve and SRPC2 is the higher/rightward downward-sloping curve. On SRPC1, point a is at U1/I4, b at U2/I3, c at U3/I2, and d at U4/I1. On SRPC2, point f is at U3/I4 and point e is at U4/I3. Dashed guides connect the labeled points to unemployment rates U1-U4 and inflation rates I1-I4.
+REPAIR Remove the disclosed upper/same-unemployment characterization; require reading the labeled movement before interpreting expectations or the tradeoff.
+
+ECON-SP-LEGENDARY-9048 E legendary
+Refer to the SRPC graph. The economy is on SRPC2 rather than SRPC1. Which conclusion is most careful?
+A: The tradeoff worsened, but the cause could be expected inflation or a supply shock.
+B: The tradeoff improved, and policymakers can now lower unemployment without cost.
+C: The LRPC shifted left, so natural unemployment must have fallen.
+D: AD must have shifted right, so SRPC cannot have moved.
+An upward SRPC shift can come from higher expected inflation or an adverse supply shock, and both worsen the tradeoff.
+IMAGE question-assets/phillips-curve-expectations/srpc.webp
+DESC The horizontal axis is unemployment rate and the vertical axis is inflation rate. SRPC1 is the lower downward-sloping curve and SRPC2 is the higher/rightward downward-sloping curve. On SRPC1, point a is at U1/I4, b at U2/I3, c at U3/I2, and d at U4/I1. On SRPC2, point f is at U3/I4 and point e is at U4/I3. Dashed guides connect the labeled points to unemployment rates U1-U4 and inflation rates I1-I4.
+REPAIR Retain nonidentification of cause; give two coherent model-limit answers differing in the graph-specific direction or separation.
+
+PM2B3-PROD-EB-002 D easy
+In GROWTH-01, A has output per worker about 28.53 and B about 36.37. If employment is identical, a report says doubling capital per worker from 20 to 40 doubles total output. Which correction uses both the graph and the fixed-employment condition?
+A: Output rises 100%; doubling capital always doubles output even on a flattening curve
+B: Output rises about 7.84%; subtracting productivity levels directly gives a percentage
+C: Output falls about 21.6%; use the higher productivity as the initial value
+D: Output rises about 27.5%, not 100%; fixed employment makes total output grow by that same percentage
+With identical employment, total-output growth equals output-per-worker growth: (36.37/28.53−1)×100≈27.5%. The flattening curve does not support proportional doubling.
+IMAGE question-assets/productivity-measurement/GROWTH-01.webp
+DESC 
+REPAIR Let the graph supply productivity levels and retain the inference from per-worker output to aggregate output under fixed employment.
+
+PM2B3-PROD-FB-004 E hard
+Use the displayed GROWTH-01 coordinates. Moving from A to B doubles capital per worker. Approximately how much does output per worker rise, and what is consistent with the curve’s shape?
+A: 7.84%; the numerical output increase is already a percentage
+B: 27.5%; the same further capital increase would add less output
+C: 100%; doubling capital must double output
+D: 27.5%; each further equal capital increase must add more output
+The graph gives output 28.53 at A and 36.37 at B. The increase is 7.84/28.53 × 100 ≈ 27.5%. The flattening curve shows diminishing marginal gains from equal additional capital, holding other inputs fixed.
+IMAGE question-assets/productivity-measurement/GROWTH-01.webp
+DESC 
+REPAIR Offer two plausible percentage gains with the same diminishing-returns interpretation; retain both numerical measurement and marginal reasoning.
+
+PM2B3-PROD-H-001 D hard
+GROWTH-01 becomes flatter as capital per worker rises. After moving from A to B, what should be expected from another equal increase in capital per worker, holding other factors constant?
+A: A smaller additional gain in output per worker than the A-to-B gain
+B: The same 7.84-unit gain by definition
+C: A larger gain because the economy is richer
+D: No further output gain is possible
+The curve is flatter to the right, so an equal additional amount of capital produces a smaller marginal output gain than A-to-B.
+IMAGE question-assets/productivity-measurement/GROWTH-01.webp
+DESC 
+REPAIR Remove the supplied slope comparison and require matching the observed slopes to marginal-product reasoning; do not reduce the task to subtracting two coordinates.
+
+PM2B3-SRC-EB-002 D easy
+GROWTH-01 is steeper near A than B. Compare an equal small addition to capital per worker at each point, holding technology and other inputs per worker fixed. Which forecast is supported?
+A: A larger productivity gain near A, but positive gains at both points
+B: Equal productivity gains at both points because capital additions are equal
+C: A larger gain near B because its initial productivity is higher
+D: A gain near A and a loss near B because diminishing returns turn output negative
+The slope measures the marginal productivity effect of capital deepening. The curve is positive but flatter near B: the marginal gain is smaller, not negative.
+IMAGE question-assets/sources-of-productivity/GROWTH-01.webp
+DESC 
+REPAIR Remove the supplied slope comparison and require matching the observed slopes to marginal-product reasoning; do not reduce the task to subtracting two coordinates.
+
+PM2B3-PROD-L-001 E hard
+In GROWTH-01, two otherwise similar economies begin at A and B. Each receives the same small addition to capital per worker. Which conclusion is best supported by the graph?
+A: Point A has the larger marginal output gain; convergence is not guaranteed
+B: Point B must gain more because its current output per worker is already higher
+C: Both economies must receive exactly the same output gain whenever capital increases by the same amount
+D: Point A is guaranteed to overtake point B even if institutions and technology differ
+The graph is steeper at A, so the same small capital addition yields a larger marginal output gain there; this alone does not guarantee convergence.
+IMAGE question-assets/productivity-measurement/GROWTH-01.webp
+DESC 
+REPAIR Provide two coherent conditional-convergence statements that differ in which plotted starting point has the higher marginal gain.
+
+PM2B3-PROD-LB-002 D legendary
+The GROWTH-01 curve shows productivity rising from A to B. Employment could rise or fall during that move. Which part of a claim that both productivity and total output must rise is established by the graph alone?
+A: Productivity rises; total output depends on the accompanying employment change.
+B: Productivity and total output rise; higher output per worker fixes both directions.
+C: Only total output rises; the vertical axis measures aggregate rather than per-worker output.
+D: Neither rises; diminishing returns make additional capital reduce output per worker.
+Output per worker rises from 28.53 to 36.37, but total output is productivity×workers. A workforce ratio below 28.53/36.37≈.7844 would more than offset that gain. Diminishing positive returns do not mean falling productivity.
+IMAGE question-assets/productivity-measurement/GROWTH-01.webp
+DESC 
+REPAIR Require a graph-derived productivity change and assess a stated employment-change threshold for aggregate output, preserving the per-worker/total distinction rather than merely computing productivity.
+
+43220 D medium
+Refer to the graph above. Which labeled curve represents desired investment?
+A: D0, the downward-sloping blue curve
+B: S0, the upward-sloping red curve
+C: The horizontal guide through 8 percent
+D: The vertical guide through 140 units
+The graph labels the downward-sloping demand for loanable funds as D0 (investment).
+IMAGE question-assets/saving-investment-and-loanable-funds/LOANABLE-01.webp
+DESC The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 (saving) slopes upward through (0, 1) and (140, 8). The solid blue line labeled D0 (investment) slopes downward through (0, 15) and (140, 8). Point A marks the S0–D0 intersection at (140, 8). Dashed horizontal and vertical guides connect the labeled intersection points to the axes.
+REPAIR Require applying the identified schedule/price to a graph-specific change in planned investment, preserving the economic interpretation of the market.
+
+43225 D medium
+Refer to the graph above. Which variable acts as the market price, and where is it measured?
+A: The quantity of loanable funds on the horizontal axis
+B: The real interest rate on the vertical axis
+C: National saving along the S0 curve
+D: Desired investment along the D0 curve
+The real interest rate is the price that coordinates saving and investment decisions, and the graph measures it on the vertical axis.
+IMAGE question-assets/saving-investment-and-loanable-funds/LOANABLE-01.webp
+DESC The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 (saving) slopes upward through (0, 1) and (140, 8). The solid blue line labeled D0 (investment) slopes downward through (0, 15) and (140, 8). Point A marks the S0–D0 intersection at (140, 8). Dashed horizontal and vertical guides connect the labeled intersection points to the axes.
+REPAIR Require applying the identified schedule/price to a graph-specific change in planned investment, preserving the economic interpretation of the market.
+
+43224 D medium
+Refer to the graph above. If the rate moves from 8 percent to 10 percent without any curve shift, what pattern is visible?
+A: More saving supplied and less investment demanded
+B: Less saving supplied and more investment demanded
+C: Both saving and investment increase
+D: Both curves shift outward
+Moving upward from A travels along both curves: quantity supplied rises while quantity demanded falls.
+IMAGE question-assets/saving-investment-and-loanable-funds/LOANABLE-01.webp
+DESC The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 (saving) slopes upward through (0, 1) and (140, 8). The solid blue line labeled D0 (investment) slopes downward through (0, 15) and (140, 8). Point A marks the S0–D0 intersection at (140, 8). Dashed horizontal and vertical guides connect the labeled intersection points to the axes.
+REPAIR Use graph-specific quantity responses to distinguish two alternatives that share the correct direction and movement mechanism.
+
+43249 E medium
+Refer to the graph above. The market moves from A to B. Which event is inconsistent with the change shown?
+A: Households become more willing to save at every real rate
+B: A new investment tax credit raises expected project profitability
+C: A retirement incentive increases private saving
+D: A budget improvement increases public and national saving
+The graph shows saving supply shifting right while investment demand remains D0. An investment tax credit would instead shift investment demand right and would not by itself produce this diagram.
+IMAGE question-assets/saving-investment-and-loanable-funds/LOANABLE-02.webp
+DESC The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 4) and (80, 8). The dashed red line labeled S1 slopes upward through (0, 0) and (120, 6). The solid blue line labeled D0 slopes downward through (0, 12) and (240, 0). Point A marks the S0–D0 intersection at (80, 8). Point B marks the S1–D0 intersection at (120, 6). Dashed horizontal and vertical guides connect the labeled intersection points to the axes.
+REPAIR Use distinct economically plausible saving and investment causes; require the displayed direction and unchanged curve to reject the inconsistent cause.
+
+43252 D hard
+Refer to the graph above. Congress reduces government purchases while output remains fixed and the consumption schedule is unchanged at each given real rate. Which explanation connects that policy to the movement from A to B?
+A: National saving and supply rise; the rate falls and investment rises
+B: National saving falls, shifting supply left; the higher rate lowers investment along demand
+C: Desired investment rises, shifting D0 right; saving supply remains fixed
+D: The lower rate itself shifts saving supply right and investment demand left
+Lower government purchases raise Y − C − G and national saving. Supply shifts from S0 to S1; the lower equilibrium rate then increases investment through movement along D0.
+IMAGE question-assets/saving-investment-and-loanable-funds/LOANABLE-02.webp
+DESC The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 4) and (80, 8). The dashed red line labeled S1 slopes upward through (0, 0) and (120, 6). The solid blue line labeled D0 slopes downward through (0, 12) and (240, 0). Point A marks the S0–D0 intersection at (80, 8). Point B marks the S1–D0 intersection at (120, 6). Dashed horizontal and vertical guides connect the labeled intersection points to the axes.
+REPAIR Preserve public-saving accounting and induced investment; distinguish coherent policy accounts by the actual graph-specific response.
+
+43255 D hard
+Refer to the graph above. From A to B, firms undertake more investment because the real interest rate falls. How should the firm's response be classified?
+A: A rightward shift from D0 because every increase in investment is a demand shift
+B: A leftward shift of D0 caused by the lower financing cost
+C: A movement up along S0 caused by improved expected profitability
+D: A movement down along D0 caused by the saving-supply shift
+The initiating change is the rightward saving-supply shift. Firms respond to the lower rate by moving along unchanged investment demand D0, rather than shifting that curve.
+IMAGE question-assets/saving-investment-and-loanable-funds/LOANABLE-02.webp
+DESC The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 4) and (80, 8). The dashed red line labeled S1 slopes upward through (0, 0) and (120, 6). The solid blue line labeled D0 slopes downward through (0, 12) and (240, 0). Point A marks the S0–D0 intersection at (80, 8). Point B marks the S1–D0 intersection at (120, 6). Dashed horizontal and vertical guides connect the labeled intersection points to the axes.
+REPAIR Require graph evidence for the schedule shift versus induced quantity response and keep the causal movement/shift distinction; do not ask only for the size of the gap.

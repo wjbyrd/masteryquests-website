@@ -1,6 +1,6 @@
 // All names, economic coefficients, doctrine rules, and existing art hooks live here.
 export const GAME_CONFIG = {
-  title: 'Growth Realms', subtitle: 'Choose a city. Build the stronger growth path.',
+  title: 'Rival Cities', totalRounds: 10, rivalRevealRound: 3,
   brand: 'MASTERY QUESTS', region: 'THE HALCYON RIVER REGION', constructionMs: 2400,
   cities: [
     { id: 'meridian', name: 'Meridian', color: '#24645d', startingNote: 'An established industrial skyline. What comes next?', strength: 'High productivity and advanced infrastructure.', challenge: 'Sustain growth near the technological frontier.' },
@@ -57,11 +57,19 @@ export const CATEGORIES = [
   { id: 'education', name: 'Schools & Training', economicLabel: 'Education / Human Capital', examples: 'Schools, technical training, universities, and workforce skills', icon: 'book', short: 'Education', color: '#aa7751', projects: ['School', 'Technical college', 'University', 'Learning campus'], description: 'Build workforce skills. Most training completes next cycle, improving productivity and the use of technology without creating more workers.' },
 ];
 // Presentation assets live in the centralized visual-config.js manifest.
-export const CYCLES = [
-  { name: 'Foundations', kicker: 'Choose what comes first', objective: 'Commit your development points to projects in your economy. Across the river, an independent rival is making its own plans.' },
-  { name: 'Expansion', kicker: 'Yesterday’s choices change today’s opportunities', objective: 'Inspect the first results. More equipment, spare capacity, skills, or new methods: decide what your city needs next.' },
-  { name: 'Productivity', kicker: 'Better tools need capable hands', objective: 'Training and research are beginning to pay off. Look at output per worker, not just the size of the economy.' },
+const ROUND_BRIEFINGS = [
+  { name: 'Your city', kicker: 'Make your first investment', objective: 'Click a district to invest. Spend your points, then commit your plan to build.' },
+  { name: 'Room to grow', kicker: 'Your next move', objective: 'Build on your first investments. Decide what your city needs next.' },
+  { name: 'Across the river', kicker: 'The race is on', objective: 'The other city has been developing too. Outgrow its productivity over the full run, measured from each city’s own starting point.' },
   { name: 'Bottlenecks', kicker: 'Check the foundations of your expansion', objective: 'Check resource security and technology adoption. Strain emerges from the economy you built; no crisis is scheduled for this cycle.' },
-  { name: 'Convergence', kicker: 'Look across the river', objective: 'Inspect the productivity gap and your rival’s past investments. Fund the opportunities created by your own city’s history.' },
+  { name: 'Better tools', kicker: 'Put your investments to work', objective: 'Equipment, skills and new methods work together. Watch how your city’s output per worker changes.' },
+  { name: 'Changing course', kicker: 'Respond to the rival', objective: 'Inspect the rival’s past investments. Adapt your plan to the opportunities in your own city.' },
+  { name: 'Lasting gains', kicker: 'Think beyond this round', objective: 'Training and research keep paying off. Balance their future benefits with what your city needs now.' },
+  { name: 'Keeping pace', kicker: 'Check your foundations', objective: 'Make sure resources and equipment can support the city you have built.' },
+  { name: 'The final push', kicker: 'Two plans left', objective: 'Review growth since the start. Decide which investments can make the most difference.' },
   { name: 'Long Run', kicker: 'One final development plan', objective: 'Balance the immediate payoff against the future you leave behind. Then compare both paths and the bottlenecks still unresolved.' },
 ];
+// The engine retains its cycle identifiers; every run-length consumer derives from this configuration.
+export const CYCLES = Array.from({length: GAME_CONFIG.totalRounds}, (_, i) => ROUND_BRIEFINGS[i] || {
+  name: `Round ${i + 1}`, kicker: 'Your next move', objective: 'Inspect your city and adapt your plan.',
+});

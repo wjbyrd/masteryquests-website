@@ -1,0 +1,35 @@
+{
+  "ECON-SP-ELITE-320": {
+    "q": "An increase in government purchases raises aggregate demand through direct spending and additional spending induced by it. The curves show demand before the policy, after the direct effect only, and after both effects, excluding crowding out. Use the horizontal distances as drawn at price P. A positive amount of crowding out then reduces the total demand increase. Which bound on that reduction keeps final demand strictly between AD2 and AD3, and why?",
+    "options": [
+      "Less than about one-half of the total demand increase before crowding out; this leaves some of the induced-spending gain beyond the direct effect.",
+      "Less than about one-half of the total demand increase before crowding out; this leaves the entire induced-spending gain intact.",
+      "Less than about three-quarters of the total demand increase before crowding out; this leaves some of the induced-spending gain beyond the direct effect.",
+      "Less than the entire demand increase before crowding out; any positive net stimulus leaves demand in the required region."
+    ],
+    "feedback": "The expansion places initial demand at AD1, the direct effect at AD2, and the direct plus induced effects at AD3. At price P, the induced-spending distance Y2 to Y3 is about half of the full increase Y1 to Y3. Crowding out moves final demand left from AD3. Its reduction must be positive but smaller than Y3 minus Y2 to leave demand strictly between AD2 and AD3. Some induced-spending gain remains, but it is not entirely intact. A reduction smaller than the full Y1-to-Y3 increase guarantees only a positive net stimulus, not demand beyond AD2.",
+    "correct_index": 0
+  },
+  "P62D-ITP-L-095": {
+    "q": "Compared with free trade, how does the tariff in the graph change consumer surplus, producer surplus, government revenue, and total welfare?",
+    "options": [
+      "Consumers lose $450k; producers gain $150k; government gets $200k; net welfare falls $100k",
+      "Consumers lose $500k; producers gain $150k; government gets $200k; net welfare falls $150k",
+      "Consumers lose $450k; producers gain $150k; government gets $100k; net welfare falls $200k",
+      "Consumers lose $450k; producers gain $100k; government gets $200k; net welfare falls $150k"
+    ],
+    "feedback": "The tariff raises price from $4 to $6. Quantities are in thousands: consumption falls from 250 to 200, while domestic production rises from 50 to 100. Consumer surplus falls by $2 x (250 + 200) / 2 = $450k; producer surplus rises by $2 x (50 + 100) / 2 = $150k. Post-tariff imports are 200 - 100 = 100 thousand, so revenue is $2 x 100 = $200k. Net welfare changes by -$450k + $150k + $200k = -$100k, the sum of the two $50k distortion triangles.",
+    "correct_index": 0
+  },
+  "P62D-ITP-L-098": {
+    "q": "Compared with free trade, how does the quota in the graph change consumer surplus, producer surplus, quota rents, and total welfare? Assume domestic license holders receive the quota rents.",
+    "options": [
+      "Consumers lose $712.5k; producers gain $337.5k; quota rents are $150k; net welfare falls $225k",
+      "Consumers lose $825k; producers gain $337.5k; quota rents are $150k; net welfare falls $337.5k",
+      "Consumers lose $712.5k; producers gain $337.5k; quota rents are $225k; net welfare falls $150k",
+      "Consumers lose $712.5k; producers gain $225k; quota rents are $150k; net welfare falls $337.5k"
+    ],
+    "feedback": "The quota raises price from $3 to $6. Quantities are in thousands: consumption falls from 275 to 200, while domestic production rises from 75 to 150. Consumer surplus falls by $3 x (275 + 200) / 2 = $712.5k; producer surplus rises by $3 x (75 + 150) / 2 = $337.5k. Imports under the quota are 200 - 150 = 50 thousand, so rents are $3 x 50 = $150k. Domestic license holders receive those rents, making the net welfare change -$712.5k + $337.5k + $150k = -$225k, the sum of the two $112.5k distortion triangles.",
+    "correct_index": 0
+  }
+}
