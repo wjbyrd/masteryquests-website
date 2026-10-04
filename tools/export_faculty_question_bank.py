@@ -27,6 +27,9 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCE = Path("build/faculty-build-composer/data/composer_library.js")
 CORE = Path("build/faculty-build-composer/composer-core.js")
 COURSE_AREAS = Path("build/faculty-build-composer/course-area-model.js")
+OUTCOME_SOURCES = (Path("build/faculty-build-composer/faculty-outcome-core.js"),
+    Path("build/faculty-build-composer/data/faculty-outcomes.js"),
+    Path("audit_tools/faculty_lo/outcome-groups.cjs"), Path("audit_tools/faculty_lo/approved-merges.json"))
 TITLE = "Mastery Quests Composer"
 DISCIPLINES = {"general": ("General Economics", "general_economics_question_bank"),
     "micro": ("Microeconomics", "microeconomics_question_bank"),
@@ -41,11 +44,27 @@ FIELDS = {
     "commonError": "common_error", "bossStage": "boss_stage", "q": "question_text", "feedback": "feedback",
     "hint": "hint", "image": "image", "questionVersion": "question_version",
 }
-BASE_COLUMNS = ["discipline", "game", "question_id", "topic", "topic_display", "source_pools", "source_game", "difficulty", "type",
-    "objective", "objective_label", "concept_cluster", "primary_skill", "secondary_skills", "repair_skill",
-    "common_error", "boss_stage", "question_text", "option_a", "option_b", "option_c", "option_d",
-    "correct_answer_index_zero_based", "correct_answer_letter", "correct_answer_text", "answer_source",
-    "feedback", "hint", "image", "image_exists", "question_version", "source_file", "source_kind"]
+# This is the sole faculty metadata schema for both PDF and CSV. Internal row
+# values remain available to validation, but are never discovered for display.
+FACULTY_METADATA = (
+    ("Topic", "topic_display"), ("Learning Objective", "learning_objective"),
+    ("Difficulty", "faculty_difficulty"), ("Question Type", "question_type"),
+    ("Common Misconception", "common_misconception"),
+)
+FACULTY_DIFFICULTIES = {value: value.title() for value in ("easy", "medium", "hard", "elite", "legendary")}
+MISCONCEPTION_LABELS = {
+    "confuses_observation_with_enforceable_incentives": "Confuses observation with enforceable incentives",
+    "confuses_hidden_action_with_hidden_type": "Confuses hidden actions with hidden characteristics",
+    "misreads_graph_relationship": "Misreads the relationship shown in the graph",
+    "misreads_graph_or_confuses_shift_with_movement": "Misreads the graph or confuses a curve shift with movement along a curve",
+}
+# Regression checks, not a display filter: the allowlist above controls output.
+INTERNAL_EXPORT_PATTERN = re.compile(
+    r"Source Chapter|Source Curation Phase|Source Game|Source Pools?|Source File|"
+    r"Original Source Pool|Original Boss Tier|canonical difficulty|family concept id|"
+    r"primary concept id|instructional role|Additional Metadata|Topic / raw tag|Repair Skill|"
+    r"phase-|composer_library\.js|build[/\\]faculty-build-composer|metadata\.", re.I)
+LEGACY_OBJECTIVE_PATTERN = re.compile(r"\bLO\d+(?:\.\d+)+\b")
 
 
 class ValidationError(Exception):
@@ -255,20 +274,102 @@ def readable(value):
     return str(value)
 
 
-def snake(name):
-    return re.sub(r"(?<!^)(?=[A-Z])", "_", name).lower()
+def resolve_faculty_outcomes(records, root, node):
+    """Project recorded skills through Composer's published reviewed policy.
+
+    Memberships have already been resolved by Composer. Never search unrelated
+    concepts for a similarly named skill, or use a legacy objective as a fallback.
+    """
+    code = r"""
+const fs=require('fs'),input=JSON.parse(fs.readFileSync(0,'utf8'));
+const core=require(input.core),F=core.FacultyOutcomes;
+const resolved={};
+for(const item of input.questions){
+ const skills=core.ContentScope.skills(item.question);
+ const excludedConceptIds=item.conceptIds.filter(id=>F.describe(id).hidden);
+ const conceptIds=item.conceptIds.filter(id=>!F.describe(id).hidden);
+ const outcomes=[];
+ for(const conceptId of conceptIds){
+  for(const outcome of F.describe(conceptId).outcomes){
+   const matchedSkills=skills.filter(s=>F.skills(conceptId,[outcome.id]).includes(s));
+   if(matchedSkills.length)outcomes.push({id:outcome.id,conceptId,label:outcome.label,matchedSkills});
+  }
+ }
+ const labels=[...new Set(outcomes.map(o=>o.label))];
+ resolved[item.id]={skills,conceptIds,excludedConceptIds,outcomes,labels,
+  unresolvedSkills:skills.filter(s=>!outcomes.some(o=>o.matchedSkills.includes(s)))};
+}
+process.stdout.write(JSON.stringify({policySha256:F.policy.policySha256,questions:resolved}));
+"""
+    payload = {"core": str(root / CORE),
+        "questions": [{"id": qid, "question": {key: entry["q"][key] for key in ("primarySkill", "secondarySkills") if key in entry["q"]},
+            "conceptIds": sorted({pool.split('/')[1] for pool in entry['pools'] if pool.split('/')[0] in {'concepts', 'derived'}})}
+            for qid, entry in records.items()]}
+    result = subprocess.run([node, "-e", code], input=json.dumps(payload), capture_output=True,
+        text=True, encoding="utf-8", check=False)
+    if result.returncode:
+        raise ValidationError("Composer faculty-outcome resolution failed: " + result.stderr)
+    resolution = json.loads(result.stdout)
+    if set(resolution['questions']) != set(records):
+        raise ValidationError("Faculty-outcome resolver did not return every question ID.")
+    for qid, entry in records.items():
+        entry['faculty_outcomes'] = resolution['questions'][qid]
+    return resolution
 
 
-def flatten(value, prefix=""):
-    if isinstance(value, dict):
-        for key, child in value.items():
-            yield from flatten(child, prefix + ("." if prefix else "") + snake(key))
-    else:
-        yield prefix, readable(value)
+def outcome_counts(records):
+    counts = collections.Counter(len(entry['faculty_outcomes']['labels']) for entry in records.values())
+    return {"one_outcome": counts[1], "multiple_outcomes": sum(n for count, n in counts.items() if count > 1),
+        "no_outcome": counts[0], "unresolved_ids": sorted(qid for qid, entry in records.items() if not entry['faculty_outcomes']['labels']),
+        "unresolved_skill_ids": {qid: entry['faculty_outcomes']['unresolvedSkills'] for qid, entry in records.items() if entry['faculty_outcomes']['unresolvedSkills']}}
 
 
 def display_topic(tag):
-    return re.sub(r"[_-]+", " ", tag).title() if tag else "Unclassified"
+    return display_label(tag) if tag else "Unclassified"
+
+
+def display_label(value):
+    text = re.sub(r"([a-z])([A-Z])", r"\1 \2", str(value or ""))
+    text = re.sub(r"[_-]+", " ", text).title()
+    acronyms = {word.lower(): word for word in ("GDP", "GNP", "CPI", "PPF", "HHI", "VMP", "MPL", "AD", "AS", "SRAS", "LRAS", "MR", "MC", "ATC", "AVC")}
+    return " ".join(acronyms.get(word.lower(), word) for word in text.split())
+
+
+def faculty_misconception(value):
+    if not isinstance(value, str):
+        return ""
+    if value in MISCONCEPTION_LABELS:
+        return MISCONCEPTION_LABELS[value]
+    # Keep authored explanatory sentences; omit unreviewed machine identifiers.
+    if isinstance(value, str) and " " in value and not re.search(r"[_/\\]|phase-|[a-z][A-Z]", value) and not INTERNAL_EXPORT_PATTERN.search(value):
+        return value[0].upper() + value[1:]
+    return ""
+
+
+def faculty_columns(rows):
+    # Additional choices and existing hints are instructional content, not
+    # arbitrary metadata. All courses receive the same approved content schema.
+    count = max(4, max((int(row["choice_count"]) for row in rows), default=4))
+    return (["Question ID"] + [label for label, _ in FACULTY_METADATA] + ["Question"] +
+        [f"Choice {letter(i)}" for i in range(count)] + ["Correct Answer", "Feedback"] +
+        (["Hint"] if any(row.get("hint") for row in rows) else []) + ["Graph/Image"])
+
+
+def faculty_values(row, columns):
+    values = {"Question ID": row["question_id"], **{label: row[key] for label, key in FACULTY_METADATA},
+        "Question": row["question_text"], "Correct Answer": f"{row['correct_answer_letter']} — {row['correct_answer_text']}",
+        "Feedback": row["feedback"], "Hint": row["hint"],
+        "Graph/Image": "See graph in faculty PDF" if row["image"] else ""}
+    values.update({f"Choice {letter(i)}": row[f"option_{letter(i).lower()}"] for i in range(int(row["choice_count"]))})
+    return {column: values.get(column, "") for column in columns}
+
+
+def assert_faculty_presentation(text):
+    match = INTERNAL_EXPORT_PATTERN.search(text)
+    if match:
+        raise ValidationError(f"Internal provenance in faculty export: {match.group(0)}")
+    if LEGACY_OBJECTIVE_PATTERN.search(text):
+        raise ValidationError("Legacy objective code in faculty export.")
 
 
 def natural(value):
@@ -299,15 +400,6 @@ def letter(index):
     return result
 
 
-def display_pools(pools):
-    """Lossless display grouping; CSV retains the complete individual paths."""
-    groups = collections.defaultdict(list)
-    for pool in sorted(pools):
-        parent, _, leaf = pool.rpartition("/")
-        groups[parent].append(leaf)
-    return "\n".join(f"{parent}: {'; '.join(leaves)}" for parent, leaves in groups.items())
-
-
 def resolve_image(question, data_dir, library):
     """Use the literal path first, then an unambiguous registered concept asset."""
     image = question["image"]
@@ -335,8 +427,7 @@ def make_rows(records, root, library=None):
     data_dir = (root / SOURCE).parent.resolve()
     for qid, entry in records.items():
         q = entry["q"]
-        row = {key: "" for key in BASE_COLUMNS}
-        row.update({target: readable(q.get(source)) for source, target in FIELDS.items()})
+        row = {target: readable(q.get(source)) for source, target in FIELDS.items()}
         row.update(game=TITLE, question_id=qid, topic_display=display_topic(row["topic"]),
             source_pools="; ".join(sorted(entry["pools"])), objective_label="; ".join(sorted(entry["labels"])),
             source_file=SOURCE.as_posix(), source_kind="fixed_question")
@@ -349,11 +440,13 @@ def make_rows(records, root, library=None):
         index = entry["answer"]
         row.update(correct_answer_index_zero_based=str(index), correct_answer_letter=letter(index),
             correct_answer_text=q["options"][index], answer_source=entry["answer_source"])
-        for key, value in q.items():
-            if key in FIELDS or key in {"options", "a"}:
-                continue
-            for name, text in flatten(value, "metadata." + snake(key)):
-                row[name] = text
+        row.update(choice_count=len(q["options"]), image_exists="",
+            learning_objective=" | ".join(entry['faculty_outcomes']['labels']),
+            learning_outcomes=entry['faculty_outcomes']['labels'],
+            faculty_difficulty=FACULTY_DIFFICULTIES.get(q.get("canonicalDifficulty"),
+                FACULTY_DIFFICULTIES.get(q.get("difficulty"), "")),
+            question_type=display_label(q.get("type")),
+            common_misconception=faculty_misconception(q.get("commonError", "")))
         image = q.get("image")
         if image:
             image_path, resolution = resolve_image(q, data_dir, library)
@@ -367,17 +460,23 @@ def make_rows(records, root, library=None):
 
 
 def csv_export(path, rows, columns=None):
-    columns = columns or BASE_COLUMNS + sorted(set().union(*(row.keys() for row in rows)) - set(BASE_COLUMNS))
+    columns = columns or faculty_columns(rows)
+    allowed = set(faculty_columns(rows))
+    # A shared schema can contain extra choice columns / Hint used in another course.
+    if any(c not in allowed and c != "Hint" and not re.fullmatch(r"Choice [A-Z]+", c) for c in columns):
+        raise ValidationError("CSV columns must follow the faculty allowlist.")
+    values = [faculty_values(row, columns) for row in rows]
     with path.open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=columns)
         writer.writeheader()
-        writer.writerows(rows)
+        writer.writerows(values)
     with path.open(encoding="utf-8-sig", newline="") as handle:
         actual = list(csv.DictReader(handle))
-    if len(actual) != len(rows) or any(any(actual[i][k] != v for k, v in row.items()) for i, row in enumerate(rows)):
+    if actual != values:
         raise ValidationError("CSV round-trip differs from canonical source values.")
-    if len({r['question_id'] for r in actual}) != len(rows):
+    if len({r['Question ID'] for r in actual}) != len(rows):
         raise ValidationError("CSV has duplicate IDs.")
+    assert_faculty_presentation(path.read_text(encoding="utf-8-sig"))
 
 
 class TableParser(HTMLParser):
@@ -466,7 +565,7 @@ def build_pdf(path, rows, records, summary, font_dir):
     ink, muted = colors.HexColor("#172b3a"), colors.HexColor("#4c5963")
     styles = {
         "body": ParagraphStyle("body", fontName="Faculty", fontSize=10, leading=14, spaceAfter=5, textColor=ink),
-        "meta": ParagraphStyle("meta", fontName="Faculty", fontSize=8, leading=11, spaceAfter=3, textColor=muted, allowWidows=0, allowOrphans=0),
+        "meta": ParagraphStyle("meta", fontName="Faculty", fontSize=9, leading=12, spaceAfter=3, textColor=muted, allowWidows=0, allowOrphans=0),
         "small": ParagraphStyle("small", fontName="Faculty", fontSize=7, leading=9, spaceAfter=3, textColor=muted, allowWidows=0, allowOrphans=0),
         "id": ParagraphStyle("id", fontName="FacultyBold", fontSize=10, leading=13, spaceBefore=10, spaceAfter=6, keepWithNext=True, textColor=ink),
         "topic": ParagraphStyle("topic", fontName="FacultyBold", fontSize=19, leading=24, spaceAfter=14, keepWithNext=True, textColor=ink),
@@ -494,16 +593,11 @@ def build_pdf(path, rows, records, summary, font_dir):
     discipline = summary.get("discipline", "Composer")
     document_title = f"Mastery Quests — {discipline} Faculty Question Bank"
     story = [Spacer(1, 35), p("Mastery Quests", "cover"), p(f"{discipline}\nFaculty Question Bank", "cover"), p(generated[:10]), Spacer(1, 18),
-        p(f"{len(rows):,} unique questions  |  {len(topic_counts):,} topics  |  {summary['pools_represented']:,} pools", "body"), Spacer(1, 20),
-        p("For faculty/reviewer inspection. Question content reproduced from the canonical Composer library."),
-        p("Scope: Composer library only. Historical source-game names are retained as provenance; polished game banks are excluded."),
-        p("Discipline membership follows the Composer course-area model. Shared questions are retained in each area where used.", "meta"),
-        p("Topics use the stored raw tag. Derived composer views contribute pool memberships only; their runtime tag remapping is not applied."),
-        Spacer(1, 20), p("Validation", "topic")]
-    for label, key in [("Questions with images", "questions_with_images"), ("Missing images", "missing_images"), ("Questions missing feedback", "missing_feedback"), ("Questions missing topic/tag", "missing_topic"), ("Questions missing objective", "missing_objective"), ("Duplicate occurrences merged", "duplicate_occurrences_merged"), ("Conflicting IDs", "conflicting_ids"), ("Dynamic generators", "dynamic_generators")]:
-        story.append(labeled(label, summary[key], "meta"))
-    if summary.get("image_path_fallbacks"):
-        story.append(labeled("Graph paths resolved through registered concept assets", summary["image_path_fallbacks"], "meta"))
+        p(f"{len(rows):,} questions  |  {len(topic_counts):,} topics", "body"), Spacer(1, 20),
+        p("Questions, answer keys and feedback for course planning and assessment."),
+        p("Use the topic index to find questions by subject. Each question retains its unique ID so it can be found in the companion spreadsheet."),
+        p("Graphs appear with the questions that use them. Shared questions may appear in more than one course bank."),
+        Spacer(1, 20), labeled("Questions with graphs or images", summary["questions_with_images"], "meta")]
     story.extend([PageBreak(), p("Topic index", "topic")])
     topics = list(dict.fromkeys(row["topic"] for row in rows))
     for index, tag in enumerate(topics):
@@ -513,14 +607,6 @@ def build_pdf(path, rows, records, summary, font_dir):
     pdf_ids, anchors = [], {}
     image_cache = {}
     import io
-    display_fields = [
-        ("Topic / raw tag", "topic"), ("Learning Objective", "objective"), ("Learning Objective Label", "objective_label"),
-        ("Difficulty", "difficulty"), ("Question Type", "type"), ("Concept Cluster", "concept_cluster"),
-        ("Primary Skill", "primary_skill"), ("Secondary Skills", "secondary_skills"), ("Repair Skill", "repair_skill"),
-        ("Common Error", "common_error"), ("Boss Stage", "boss_stage"), ("Source Game", "source_game"), ("Question Version", "question_version")]
-    # Provenance checksums and long historical file paths belong in the CSV.
-    # All pedagogical metadata, including additional scenario fields, is in PDF.
-    provenance = {"a_hash", "source_hash", "source_occurrences", "source_id", "canonical_id", "question_id", "original_legacy_id", "source_record_order"}
     for number, row in enumerate(rows, 1):
         new_topic = row["topic"] != current
         if new_topic:
@@ -535,16 +621,15 @@ def build_pdf(path, rows, records, summary, font_dir):
         header = p("Question ID: " + qid, "id")
         header.question_id = qid
         block = [header]
-        metadata = [(label, row[key]) for label, key in display_fields if row[key] != ""]
-        # Pair short metadata fields; retain complete values.
-        for i in range(0, len(metadata), 2):
-            pair = metadata[i:i+2]
-            text = "<br/>".join(f"<b>{markup(label)}:</b> {markup(value)}" for label, value in pair)
-            block.append(Paragraph(text, styles["meta"]))
-        pools_display = display_pools(entry["pools"])
-        if len(pools_display) < 700:
-            block.append(labeled("Source Pools", pools_display, "small"))
-        block.append(labeled("Source File", row["source_file"], "small"))
+        for label, key in FACULTY_METADATA:
+            if row[key]:
+                if key == 'learning_objective' and len(row['learning_outcomes']) > 1:
+                    field = Paragraph("<b>Learning Objectives:</b><br/>" + "<br/>".join(
+                        "• " + markup(outcome) for outcome in row['learning_outcomes']), styles['meta'])
+                else:
+                    field = labeled(label, row[key], "meta")
+                field.keepWithNext = True
+                block.append(field)
         core = content(row["question_text"])
         if row["image"]:
             image_path = entry.get("image_path")
@@ -553,9 +638,9 @@ def build_pdf(path, rows, records, summary, font_dir):
                     image_cache[image_path] = optimized_graph(image_path, width - 12, 260)
                 data, image_width, image_height, image_info = image_cache[image_path]
                 graphic = Image(io.BytesIO(data), width=image_width, height=image_height)
-                core.extend([graphic, p(Path(row["image"]).name, "small")])
+                core.extend([graphic, Spacer(1, 6)])
             else:
-                core.append(p(f"[Referenced image missing: {row['image']}]"))
+                core.append(p("[Graph unavailable for this question]"))
         for i, option in enumerate(entry["q"]["options"]):
             core.append(p(f"{letter(i)}. {option}"))
         core.append(labeled("Correct Answer", f"{row['correct_answer_letter']} — {row['correct_answer_text']}"))
@@ -564,16 +649,6 @@ def build_pdf(path, rows, records, summary, font_dir):
         core_start = len(block)
         block.extend(core)
         core_end = len(block)
-        if len(pools_display) >= 700:
-            block.append(labeled("Source Pools", pools_display, "small"))
-        extras = []
-        for key in sorted(row):
-            if key.startswith("metadata.") and row[key] != "":
-                raw = key[len("metadata."):]
-                if raw in provenance or raw.startswith(("provenance.", "source.", "resource_matching.")):
-                    continue
-                extras.append(f"{raw.replace('_', ' ')}: {row[key]}")
-        if extras: block.append(labeled("Additional Metadata", " · ".join(extras), "small"))
         # Do not nest KeepTogether: its sentinel height can orphan topic headings.
         # Keep entire fitting blocks together, otherwise protect just the stem,
         # graph, choices, answer and feedback as one unit when they fit a page.
@@ -654,6 +729,7 @@ def verify_pdf(pdf, rows, records):
             raise ValidationError(f"Blank PDF page {page_number}")
         clean_pages.append(text)
     text = "\n".join(clean_pages)
+    assert_faculty_presentation(text)
     parts = re.split(r"Question ID:\s*([^\s]+)", text)
     actual_ids = parts[1::2]
     expected_ids = [r["question_id"] for r in rows]
@@ -662,11 +738,21 @@ def verify_pdf(pdf, rows, records):
     errors = []
     for row, body in zip(rows, parts[2::2]):
         body = compact(body)
-        checks = {"stem": row["question_text"], "correct answer": row["correct_answer_text"], "feedback": row["feedback"], "hint": row["hint"]}
-        checks.update({f"option {i}": o for i, o in enumerate(records[row["question_id"]]["q"]["options"])})
+        checks = {"stem": row["question_text"], "correct answer": f"Correct Answer: {row['correct_answer_letter']} — {row['correct_answer_text']}", "feedback": row["feedback"], "hint": row["hint"]}
+        checks.update({f"option {i}": f"{letter(i)}. {o}" for i, o in enumerate(records[row["question_id"]]["q"]["options"])})
+        checks.update({label: f"{label}: {row[key]}" for label, key in FACULTY_METADATA if row[key] and key != 'learning_objective'})
+        if row['learning_outcomes']:
+            checks['outcome heading'] = 'Learning Objectives:' if len(row['learning_outcomes']) > 1 else 'Learning Objective:'
+            checks.update({f'faculty outcome {i}': label for i, label in enumerate(row['learning_outcomes'])})
         for field, expected in checks.items():
             if expected and compact(expected) not in body:
                 errors.append(f"{row['question_id']}: complete {field} not found in emitted PDF text")
+    by_id = {row['question_id']: row for row in rows}
+    for page_number, page in enumerate(clean_pages, 1):
+        for match in re.finditer(r"Question ID:\s*([^\s]+)", page):
+            qid = match.group(1)
+            if compact(by_id[qid]['question_text'])[:40] not in compact(page[match.end():]):
+                errors.append(f"{qid}: header separated from question stem on page {page_number}")
     if errors:
         raise ValidationError("PDF content verification failed:\n" + "\n".join(errors))
 
@@ -683,7 +769,7 @@ def discipline_summary(rows, records, generated, source_hash):
     warnings = {"missing_images": [r['question_id'] for r in rows if r['image_exists'] == 'false'],
         "missing_feedback": [r['question_id'] for r in rows if not r['feedback']],
         "missing_topic": [r['question_id'] for r in rows if not r['topic']],
-        "missing_objective": [r['question_id'] for r in rows if not r['objective']],
+        "missing_objective": [r['question_id'] for r in rows if not r['learning_outcomes']],
         "image_path_fallbacks": [r['question_id'] for r in rows if r.get('image_resolution') == 'registered_concept_asset']}
     return {"generated_at": generated, "discipline": rows[0]["discipline"],
         "source_file": SOURCE.as_posix(), "source_sha256": source_hash, "unique_questions": len(rows),
@@ -709,6 +795,16 @@ def validation_report(report):
         "Images use temporary 256-color PNG copies capped at 150 DPI, or 180 DPI for wide graphs, without upscaling or JPEG compression. Original banks, logic, tags and image files are unchanged.", ""]
     for s in summaries:
         lines.append(f"- {s['discipline']}: {s['image_path_fallbacks']} graph references resolved through verified concept assets; {s['missing_images']} missing images; {s['ambiguous_classifications']} ambiguous classifications.")
+    lines += ["", "## Faculty learning outcomes", "",
+        "Outcome labels come verbatim from Composer's published faculty-outcome policy, resolved from recorded primary and secondary skills within actual concept memberships. No legacy-objective or chapter-label fallback is used. Multiple labels are retained and deduplicated.", "",
+        "| Scope | One outcome | Multiple outcomes | No outcome |", "|---|---:|---:|---:|"]
+    for name, counts in [("Global (unique IDs)", report['faculty_outcome_resolution']), *[(s['discipline'], s['faculty_outcome_resolution']) for s in summaries]]:
+        lines.append(f"| {name} | {counts['one_outcome']} | {counts['multiple_outcomes']} | {counts['no_outcome']} |")
+    counts = report['faculty_outcome_resolution']
+    lines += ["", "Unresolved question IDs: " + (", ".join(counts['unresolved_ids']) or "None") + ".",
+        "Questions with any unresolved recorded skill: " + str(len(counts['unresolved_skill_ids'])) + ".",
+        "Legacy LO#.# codes in emitted faculty PDF/CSV text: 0 (publication is blocked if any are found).",
+        "See `faculty_outcome_resolution.json` for every question's exact outcome/skill trace and the policy fingerprint.", ""]
     return "\n".join(lines) + "\n"
 
 
@@ -735,17 +831,18 @@ def main(argv=None):
     source = root / SOURCE
     before = hashlib.sha256(source.read_bytes()).hexdigest()
     source_hashes = {str(root / relative): hashlib.sha256((root / relative).read_bytes()).hexdigest()
-        for relative in (SOURCE, CORE, COURSE_AREAS)}
+        for relative in (SOURCE, CORE, COURSE_AREAS, *OUTCOME_SOURCES)}
     try:
         library = load_library(source)
         records, occurrences = collect(library)
         audit_answers_and_routes(library, records, root, args.node)
+        faculty_outcomes = resolve_faculty_outcomes(records, root, args.node)
         memberships = course_area_memberships(library, root, args.node)
         groups = partition_disciplines(records, memberships)
         if any(not group for group in groups.values()):
             raise ValidationError("An expected discipline is empty; check source classification.")
         datasets = {area: make_rows(group, root, library) for area, group in groups.items()}
-        columns = BASE_COLUMNS + sorted(set().union(*(row.keys() for rows in datasets.values() for row in rows)) - set(BASE_COLUMNS))
+        columns = faculty_columns([row for rows in datasets.values() for row in rows])
         for group in groups.values():
             for entry in group.values():
                 image = entry.get("image_path")
@@ -755,6 +852,8 @@ def main(argv=None):
         combined = sum(map(len, datasets.values()))
         report = {"generated_at": generated, "classification_source": COURSE_AREAS.as_posix(),
             "source_sha256": before, "combined_question_count": combined, "distinct_question_count": len(records),
+            "faculty_outcome_policy_sha256": faculty_outcomes['policySha256'],
+            "faculty_outcome_resolution": outcome_counts(records),
             "cross_discipline_extra_occurrences": combined - len(records), "ambiguous_classifications": 0, "disciplines": {}}
         # The library is JSON data, with no functions or executable generators.
         # Reject newly introduced generator definitions until explicitly supported.
@@ -786,6 +885,9 @@ def main(argv=None):
                     shutil.copy2(pdf_path, output / ".failed-verification.pdf")
                     raise
                 summary.update(status="complete", pdf_pages=pages, question_pages=anchors,
+                    faculty_outcome_resolution=outcome_counts(group),
+                    faculty_columns=columns, faculty_column_count=len(columns), faculty_metadata_allowlist=[label for label, _ in FACULTY_METADATA],
+                    faculty_presentation_verified=True,
                     pdf_file=pdf_path.name, csv_file=csv_path.name, pdf_size_bytes=pdf_path.stat().st_size,
                     pdf_size_mb=round(pdf_path.stat().st_size / 1_000_000, 2))
                 report["disciplines"][area] = summary
@@ -797,7 +899,8 @@ def main(argv=None):
             report.update(status="complete", sources_unchanged=True)
             (stage / "validation_summary.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
             (stage / "validation_report.md").write_text(validation_report(report), encoding="utf-8")
-            for path in [*outputs, stage / "validation_summary.json", stage / "validation_report.md"]:
+            (stage / "faculty_outcome_resolution.json").write_text(json.dumps(faculty_outcomes, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            for path in [*outputs, stage / "validation_summary.json", stage / "validation_report.md", stage / "faculty_outcome_resolution.json"]:
                 os.replace(path, output / path.name)
         # Retire exactly the two obsolete generated files only after all six new
         # files pass. Never create another combined PDF/CSV or touch source files.

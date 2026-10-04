@@ -29,11 +29,23 @@ test('Ten rounds resolve both cities from the start; only player is visible befo
     assert.equal(run.cities.find(c=>c.id===id).invested.capital,G.totalRounds*B.developmentPointsPerCycle/4);
   }
 });
-test('Race uses percentage productivity improvement, including losses and rounded ties, never raw size',()=>{
-  const run=createRun('rivermark');const player=run.cities[1],rival=run.cities[0];
-  const set=(p,r)=>{player.outputPerWorker=run.initialCities[1].outputPerWorker*(1+p/100);rival.outputPerWorker=run.initialCities[0].outputPerWorker*(1+r/100);return raceResult(run);};
-  assert.equal(set(20,5).outcome,'win');assert.ok(player.outputPerWorker<rival.outputPerWorker);
-  assert.equal(set(5,20).outcome,'loss');assert.equal(set(20.01,20.02).outcome,'draw');
-  assert.equal(set(-5,-20).outcome,'win');assert.equal(set(-20,-5).outcome,'loss');
-  assert.equal(set(0,0).outcome,'draw');assert.equal(set(-.001,.001).player.score,0);
+test('Role-aware outcomes combine lead, gap closure and own growth instead of ranking percentages',()=>{
+  const fixture=(id,m,r)=>{const run=createRun(id);run.initialCities[0].outputPerWorker=100;run.initialCities[1].outputPerWorker=20;run.cities[0].outputPerWorker=m;run.cities[1].outputPerWorker=r;return raceResult(run);};
+  assert.equal(fixture('meridian',120,25).outcome,'held-growing');
+  assert.equal(fixture('meridian',102,21).outcome,'held-limited');
+  assert.equal(fixture('meridian',120,60).outcome,'closing');
+  assert.equal(fixture('meridian',100,95).outcome,'closing');
+  assert.equal(fixture('meridian',90,100).outcome,'overtaken');
+  assert.equal(fixture('rivermark',120,30).outcome,'modest');
+  assert.equal(fixture('rivermark',120,60).outcome,'narrowed');
+  assert.equal(fixture('rivermark',120,115).outcome,'near');
+  assert.equal(fixture('rivermark',120,130).outcome,'overtook');
+  assert.equal(fixture('rivermark',120,20).outcome,'trailing');
+  for(const role of ['meridian','rivermark'])assert.equal(fixture(role,120,120.01).outcome,'level');
+  // Higher percentage growth cannot automatically defeat the city still leading.
+  const leader=fixture('meridian',120,50);assert.ok(leader.rival.score>leader.player.score);assert.match(leader.headline,/held the lead/);
+  // Relative narrowing during contraction is explicitly qualified.
+  assert.match(fixture('rivermark',40,15).explanation,/own output per worker fell/);
+  assert.match(fixture('meridian',90,15).explanation,/own output per worker fell/);
+  assert.equal(fixture('meridian',99.999,20).player.score,0);
 });

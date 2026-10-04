@@ -1,49 +1,44 @@
 import assert from 'node:assert/strict';
-import fs from 'node:fs/promises';
-import {fileURLToPath} from 'node:url';
-import {startCity,fillPlan,getRun,waitMaps,keys} from './browser-helpers.mjs';
+import {startCity,fillPlan,getRun,waitMaps,keys,selectDistrict} from './browser-helpers.mjs';
 const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
-const output=fileURLToPath(new URL('../../../tmp/games-preview/growth-realms/ui-pass/',import.meta.url));await fs.mkdir(output,{recursive:true});
-const b=await chromium.launch({channel:'msedge',headless:true}),p=await b.newPage({viewport:{width:1440,height:1100}}),errors=[];
-p.on('pageerror',e=>{errors.push(e.stack);console.error(e.stack);});p.on('response',r=>{if(r.status()>=400&&!r.url().endsWith('favicon.ico'))errors.push(`${r.status()} ${r.url()}`);});
-await p.addInitScript(()=>{Math.random=()=>.2;});
-const url='http://127.0.0.1:4178/play/growth-realms/';
-const remaining=async()=>20-Object.values((await getRun(p)).allocation).reduce((a,b)=>a+b,0);
-const shot=async name=>p.screenshot({path:output+name+'.png',fullPage:true});
+const browser=await chromium.launch({channel:'msedge',headless:true});
+const url=process.env.GAME_URL||'http://127.0.0.1:4178/play/growth-realms/',errors=[];
+const track=p=>p.on('pageerror',e=>errors.push(e.stack));
+async function localAudit(p){
+ const box=await p.locator('.district-local').boundingBox(),map=await p.locator('[data-owner=player] .isometric-map').boundingBox();
+ assert.ok(box.x>=map.x&&box.x+box.width<=map.x+map.width&&box.y>=map.y&&box.y+box.height<=map.y+map.height);
+ const targets=await p.locator('[data-map-district]').evaluateAll(es=>es.map(e=>{const r=e.getBoundingClientRect();return{x:r.x,y:r.y,w:r.width,h:r.height};}));
+ for(const t of targets)assert.ok(!(box.x<t.x+t.w&&box.x+box.width>t.x&&box.y<t.y+t.h&&box.y+box.height>t.y),'local controls cover a district');
+ assert.ok(await p.locator('.district-local button').evaluateAll(es=>es.every(e=>e.getBoundingClientRect().width>=44&&e.getBoundingClientRect().height>=44)));
+ assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
+}
 try{
-  await p.goto(url);await startCity(p,'rivermark');await waitMaps(p);await shot('02-single-city-planning');
-  assert.equal(await p.locator('.allocation-rows').count(),0);assert.equal(await p.locator('[data-adjust]').count(),4);assert.equal(await p.locator('[data-city-map]').count(),1);
-  const before=(await getRun(p)).cities.map(c=>({buildings:c.buildings,output:c.output,technology:c.technology}));
-  await p.locator('[data-map-district="capital"]').click();assert.equal((await getRun(p)).allocation.capital,1);assert.equal(await remaining(),19);assert.equal(await p.locator('[data-map-district="capital"]').getAttribute('aria-pressed'),'true');assert.match(await p.locator('.map-click-feedback').innerText(),/\+1 CAPITAL/);await shot('04-direct-map-allocation');
-  for(let i=0;i<5;i++)await p.locator('[data-map-district="research"]').click();assert.equal((await getRun(p)).allocation.research,5);assert.equal(await remaining(),14);
-  await p.locator('#district-select').selectOption('education');assert.equal((await getRun(p)).allocation.education,0);await shot('03-district-selected');await p.locator('[data-adjust="5"]').click();assert.equal((await getRun(p)).allocation.education,5);await p.locator('[data-adjust="-1"]').click();assert.equal((await getRun(p)).allocation.education,4);await p.locator('[data-adjust="clear"]').click();assert.equal((await getRun(p)).allocation.education,0);assert.equal(await remaining(),14);
-  await p.locator('#district-select').selectOption('resources');await p.locator('[data-adjust="5"]').click();await p.locator('[data-adjust="5"]').click();await p.locator('#district-select').selectOption('education');await p.locator('[data-adjust="5"]').click();assert.equal((await getRun(p)).allocation.education,4);assert.equal(await remaining(),0);assert.equal(await p.locator('#quick-commit').isEnabled(),true);await p.locator('[data-map-district="capital"]').click();assert.equal((await getRun(p)).allocation.capital,1);assert.deepEqual((await getRun(p)).cities.map(c=>({buildings:c.buildings,output:c.output,technology:c.technology})),before);
-  await p.locator('[data-adjust="clear"]').click();assert.equal(await remaining(),1);assert.equal(await p.locator('#quick-commit').isDisabled(),true);
-  // Visible hitboxes and legibility at the requested desktop width.
-  const audit=await p.evaluate(()=>({targets:[...document.querySelectorAll('[data-map-district]')].map(e=>{const r=e.getBoundingClientRect();return{width:r.width,height:r.height};}),fonts:Object.fromEntries(['.context-description p','.context-description select','.context-actions p','.upgrade-info strong','.map-condition','.stat-label','.hud-stat strong','.map-stats strong','#planning-instruction','#points-remaining>span'].map(s=>[s,parseFloat(getComputedStyle(document.querySelector(s)).fontSize)])),overflow:document.documentElement.scrollWidth>innerWidth}));
-  assert.ok(audit.targets.every(t=>t.width>=150&&t.height>=100));assert.equal(audit.overflow,false);for(const [s,font]of Object.entries(audit.fonts))assert.ok(font>=(s==='.stat-label'||s==='#points-remaining>span'?11:s==='.map-condition'||s==='#planning-instruction'?13:14),`${s} ${font}`);
-  // All four district buttons operate via keyboard; contextual dropdown/controls too.
-  for(const key of keys){await p.locator('#district-select').selectOption(key);if((await getRun(p)).allocation[key])await p.locator('[data-adjust="clear"]').click();}
-  await p.locator('[data-map-district="capital"]').focus();for(let i=0;i<4;i++){assert.equal(await p.locator(':focus').getAttribute('data-map-district'),keys[i]);await p.keyboard.press('Enter');if(i<3)await p.keyboard.press('Tab');}assert.deepEqual((await getRun(p)).allocation,{capital:1,resources:1,research:1,education:1});
-  await p.locator('#district-select').focus();await p.keyboard.press('Home');await p.keyboard.press('ArrowDown');await p.keyboard.press('Enter');assert.equal(await p.locator('#district-select').inputValue(),'resources');await p.locator('[data-adjust="5"]').focus();await p.keyboard.press('Space');assert.equal((await getRun(p)).allocation.resources,6);
-  // Comparison and rival inspection unlock after two real, independently resolved rounds.
-  for(const key of keys){await p.locator('#district-select').selectOption(key);if((await getRun(p)).allocation[key])await p.locator('[data-adjust="clear"]').click();}
-  await p.emulateMedia({reducedMotion:'reduce'});
-  for(let n=0;n<2;n++){await fillPlan(p,[5,5,5,5]);await p.locator('#quick-commit').click();await p.locator('#consequences').waitFor({state:'visible'});await p.locator('#quick-commit').click();}
-  await p.locator('#accept-challenge').click();await p.locator('#dismiss-advisor').click();await p.locator('[data-map-district="capital"]').click();
-  await p.emulateMedia({reducedMotion:'no-preference'});
-  await p.locator('#comparison>summary').click();assert.equal(await p.locator('.strategic-comparison dl>div').count(),8);assert.equal(await p.locator('#detailed-comparison').evaluate(e=>e.open),false);assert.equal(await p.locator('#detailed-comparison .comparison-grid').isVisible(),false);assert.match(await p.locator('.strategic-gap').innerText(),/Starting gap:.*Current gap:/s);await p.locator('#comparison').screenshot({path:output+'05-simplified-comparison.png'});await p.locator('#detailed-comparison>summary').click();assert.equal(await p.locator('#detailed-comparison .comparison-grid dl>div').count(),20);await p.locator('#comparison>summary').click();
-  // Watch the real routes through a full loop, including both front and rear poses.
-  await p.locator('[data-view="meridian"]').click();await waitMaps(p);assert.equal(await p.locator('[data-adjust]').count(),0);
-  await p.evaluate(()=>document.querySelector('.region-section').scrollIntoView({block:'start',behavior:'instant'}));
-  for(const direction of ['NE','SW']){await p.waitForFunction(d=>document.querySelector('.city-map').dataset.unitFacings.includes('factoryTruck:'+d),direction);await p.locator('.city-map').screenshot({path:output+`06-vehicle-${direction}.png`});}
-  const directions=await p.evaluate(async()=>{const found={};const until=performance.now()+17000;while(performance.now()<until){for(const entry of document.querySelector('.city-map').dataset.unitFacings.split(',')){const [route,d]=entry.split(':');(found[route]||=new Set()).add(d);}await new Promise(r=>setTimeout(r,100));}return Object.fromEntries(Object.entries(found).map(([k,v])=>[k,[...v]]));});assert.equal(Object.keys(directions).length,5);for(const [route,dirs]of Object.entries(directions))assert.equal(dirs.length,4,route);
-  await p.locator('[data-map-district="capital"]').click();assert.equal((await getRun(p)).allocation.capital,1,'rival remains inspection-only');
-  // Touch emulation with true taps, undo, sticky budget and compact comparison.
-  const touch=await b.newPage({viewport:{width:390,height:844},hasTouch:true,isMobile:true});touch.on('pageerror',e=>errors.push(e.stack));await touch.goto(url);await startCity(touch,'rivermark');
-  for(const key of keys)await touch.locator(`[data-map-district="${key}"]`).tap();assert.deepEqual((await getRun(touch)).allocation,{capital:1,resources:1,research:1,education:1});await touch.locator('[data-adjust="-1"]').tap();assert.equal((await getRun(touch)).allocation.education,0);
-  const budgetBox=await touch.locator('#planning-hud').boundingBox();assert.ok(budgetBox.y>=-2&&budgetBox.y<200,'mobile budget stays visible while interacting below map');
-  await touch.screenshot({path:output+'08-phone-budget-context.png'});await touch.evaluate(()=>window.scrollTo(0,0));await touch.screenshot({path:output+'07-phone-planning.png',fullPage:true});
-  for(const width of [320,390,768,1440]){await touch.setViewportSize({width,height:1000});assert.equal(await touch.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,`overflow ${width}`);const targets=await touch.locator('[data-map-district]').evaluateAll(es=>es.map(e=>({w:e.getBoundingClientRect().width,h:e.getBoundingClientRect().height})));assert.ok(targets.every(t=>t.w>=44&&t.h>=44));}
-  await touch.close();assert.deepEqual(errors,[]);await fs.writeFile(output+'audit.json',JSON.stringify({desktop:audit,directions,acceptance:'A–L passed'},null,2));console.log('PASS: A–L map clicks, +5 clamping, undo/Clear, budget gating, no premature buildings, desktop type/targets, strategic/detail comparison, all route facings/turns, true touch, keyboard and responsive layout.');console.log(output);
-}finally{await b.close();}
+ const p=await browser.newPage({viewport:{width:1366,height:768}});track(p);await p.goto(url);await startCity(p,'rivermark');
+ assert.equal(await p.locator('#district-select').count(),0);assert.equal(await p.locator('[data-board=rivermark] .district-status').count(),4);
+ const stocks=run=>run.cities.map(({developmentPoints,...city})=>city);const before=stocks(await getRun(p));
+ for(const key of keys){await p.locator(`[data-map-district=${key}]`).click();await localAudit(p);assert.equal((await getRun(p)).allocation[key],1);assert.match(await p.locator(`[data-plan-district=${key}] .board-planned`).innerText(),/Planned: \+1/);}
+ assert.deepEqual(stocks(await getRun(p)),before,'planning never constructs early');
+ await p.locator('[data-adjust="-1"]').click();assert.equal((await getRun(p)).allocation.education,0);
+ await p.locator('[data-adjust="5"]').click();assert.equal((await getRun(p)).allocation.education,5);
+ await p.locator('[data-adjust=clear]').click();assert.equal((await getRun(p)).allocation.education,0);
+ await selectDistrict(p,'capital');for(let i=0;i<4;i++)await p.locator('[data-adjust="5"]').click();
+ assert.equal((await getRun(p)).allocation.capital,18);assert.equal(await p.locator('#quick-commit').isEnabled(),true);
+ assert.equal(await p.locator('[data-adjust="5"]').isDisabled(),true);await p.locator('[data-adjust="-1"]').click();assert.equal(await p.locator('#quick-commit').isEnabled(),false);
+ for(const key of keys){await selectDistrict(p,key);if((await getRun(p)).allocation[key])await p.locator('[data-adjust=clear]').click();}
+ await p.locator('[data-plan-district=research]').focus();await p.keyboard.press('Enter');assert.equal((await getRun(p)).allocation.research,0);
+ await p.locator('[data-adjust="5"]').focus();await p.keyboard.press('Space');assert.equal((await getRun(p)).allocation.research,5);await p.locator('[data-adjust=clear]').click();
+ for(const key of keys){await p.locator(`[data-map-district=${key}]`).focus();await p.keyboard.press('Enter');assert.equal((await getRun(p)).allocation[key],1);}
+ for(const key of keys){await selectDistrict(p,key);await p.locator('[data-adjust=clear]').click();}
+ await p.emulateMedia({reducedMotion:'reduce'});
+ for(let n=0;n<2;n++){await fillPlan(p,[5,5,5,5]);await p.locator('#quick-commit').click();await p.locator('#consequences').waitFor({state:'visible'});await p.locator('#quick-commit').click();}
+ assert.equal(await p.locator('[data-board=meridian] .district-status').count(),4);assert.match(await p.locator('[data-board=meridian]').innerText(),/Plan hidden/);
+ const plan=(await getRun(p)).allocation;await p.locator('[data-city=meridian][data-map-district=capital]').click();assert.deepEqual((await getRun(p)).allocation,plan);
+ await p.locator('#accept-challenge').click();await p.locator('#dismiss-advisor').click();await localAudit(p);
+ await p.locator('#comparison>summary').click();assert.equal(await p.locator('.strategic-comparison dl>div').count(),8);await p.locator('#detailed-comparison>summary').click();assert.equal(await p.locator('#detailed-comparison .comparison-grid dl>div').count(),20);
+ for(const width of [320,390,768,1440]){
+  const touch=await browser.newPage({viewport:{width,height:900},hasTouch:true,isMobile:width<700});track(touch);await touch.goto(url);await startCity(touch,'rivermark');await waitMaps(touch);
+  for(const key of keys){await touch.locator(`[data-map-district=${key}]`).tap();await localAudit(touch);assert.equal((await getRun(touch)).allocation[key],1);}
+  await touch.locator('[data-adjust="5"]').tap();assert.equal((await getRun(touch)).allocation.education,6);await touch.close();
+ }
+ assert.deepEqual(errors,[]);console.log('PASS: local actions, all-district status, target clearance, 44px controls, +1/+5/undo/Clear/clamping, commit gating, keyboard, touch 320–1440px, rival plan privacy and detailed comparison.');
+}finally{await browser.close();}

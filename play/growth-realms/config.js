@@ -60,7 +60,7 @@ export const CATEGORIES = [
 const ROUND_BRIEFINGS = [
   { name: 'Your city', kicker: 'Make your first investment', objective: 'Click a district to invest. Spend your points, then commit your plan to build.' },
   { name: 'Room to grow', kicker: 'Your next move', objective: 'Build on your first investments. Decide what your city needs next.' },
-  { name: 'Across the river', kicker: 'The race is on', objective: 'The other city has been developing too. Outgrow its productivity over the full run, measured from each city’s own starting point.' },
+  { name: 'Across the river', kicker: 'The race is on', objective: 'The other city has been developing too. Compare the lead, the gap and both cities’ growth as you plan your next move.' },
   { name: 'Bottlenecks', kicker: 'Check the foundations of your expansion', objective: 'Check resource security and technology adoption. Strain emerges from the economy you built; no crisis is scheduled for this cycle.' },
   { name: 'Better tools', kicker: 'Put your investments to work', objective: 'Equipment, skills and new methods work together. Watch how your city’s output per worker changes.' },
   { name: 'Changing course', kicker: 'Respond to the rival', objective: 'Inspect the rival’s past investments. Adapt your plan to the opportunities in your own city.' },

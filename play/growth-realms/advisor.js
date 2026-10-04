@@ -1,4 +1,20 @@
+import {raceResult} from './rivalry.js';
 // Read-only presentation advice. Never changes allocations or simulation state.
+export const CHECK_IN_ROUNDS=[5,8,10];
+export function laterAdvice(run){
+  const city=run.cities.find(c=>c.id===run.playerCity),c=city.constraints,race=raceResult(run);
+  const pressure=run.playerCity==='meridian'
+    ? race.overtaken?'They’ve moved ahead.':race.closure>0?'They’re gaining ground.':'We’re protecting our lead.'
+    : race.overtaken?'We’ve moved into the lead.':race.closure>0?'We’re closing the gap.':'We still have ground to make up.';
+  const nudge=c.resourceShortage?'Food, water and utilities are stretched. Support them before adding more demand.'
+    :c.technologyAdoption?'Training is lagging behind our tools. Schools can help people use what we’ve built.'
+    :c.skillsUnderused?'Our skilled workers need more equipment to use their training.'
+    :city.invested.research<city.invested.capital/2?'We’ve leaned on equipment. Better methods could help our next gains last.'
+    :city.invested.education<city.invested.research/2?'Research has had more support than training. Watch whether our people can keep up.'
+    :city.productivityGrowthRate>0?'Our latest plan raised output per worker. Keep the districts working together.'
+    :'Output per worker did not rise last round. Look for a district that needs support.';
+  return {title:run.currentCycle===10?'One final plan.':run.currentCycle===8?'The finish is getting closer.':'Let’s take stock.',line:`${pressure} ${nudge}`};
+}
 export function openingAdvice(city) {
   return city.id==='meridian'
     ? {category:'education',reason:'Our industry is already strong. Training helps people get more from that equipment.',instruction:'Click the glowing Schools district to invest your first point.'}

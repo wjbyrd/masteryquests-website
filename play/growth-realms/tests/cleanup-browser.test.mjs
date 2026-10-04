@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import {ROADS,DISTRICTS} from '../visual-config.js';
 import {fileURLToPath} from 'node:url';
-import {startCity,fillPlan,getRun,waitMaps} from './browser-helpers.mjs';
+import {selectDistrict,startCity,fillPlan,getRun,waitMaps} from './browser-helpers.mjs';
 const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
 const out=fileURLToPath(new URL('../../../tmp/games-preview/growth-realms/cleanup-pass/',import.meta.url));
 await fs.mkdir(out,{recursive:true});
@@ -46,19 +46,19 @@ try{
   await shot('01-title');
   await startCity(page,'rivermark');await page.locator('#quick-guide').click();assert.doesNotMatch(await page.locator('#help').innerText(),forbidden);await page.keyboard.press('Escape');const rivermark=await fit();await shot('03-rivermark');
   await page.locator('[data-map-district="capital"]').click();assert.equal((await getRun(page)).allocation.capital,1);assert.match(await page.locator('#points-remaining').innerText(),/19/);
-  assert.match(await page.locator('#upgrade-progress').innerText(),/NEXT UPGRADE\s+Factory\s+0 \/ 4 → 1 \/ 4 Capital points funded\s+3 more needed/);
+  assert.match(await page.locator('[data-board=rivermark] [data-plan-district=capital]').innerText(),/Next: Factory\s+0 \/ 4 funded\s+Planned: \+1/);
   const marker=await page.locator('[data-map-district="capital"]').evaluate(e=>{const s=getComputedStyle(e,'::after');return{color:s.borderColor,radius:s.borderRadius};});assert.equal(marker.color,'rgb(255, 255, 255)');assert.equal(marker.radius,'50%');
   assert.equal(await page.locator('.district-plan-badge:visible').count(),0);await shot('05-selected-district');
-  await page.locator('[data-adjust="clear"]').click();await fillPlan(page,[9,3,4,4]);await page.locator('#district-select').selectOption('capital');await page.locator('.map-click-feedback').waitFor({state:'hidden'});
+  await page.locator('[data-adjust="clear"]').click();await fillPlan(page,[9,3,4,4]);await selectDistrict(page,'capital');await page.locator('.map-click-feedback').waitFor({state:'hidden'});
   // Observe an actual construction cycle, including mobile workers and normal ambient routes.
   const cycleWatch=watchRoutes(4000);await page.locator('#quick-commit').click();const cycle=await cycleWatch;
   assert.deepEqual(cycle.failures,[]);assert.ok(cycle.workers.length>0);assert.ok(cycle.phases.includes('building'));await page.locator('#consequences').waitFor({state:'visible'});
   await page.locator('#quick-commit').click();await page.evaluate(()=>scrollTo(0,0));await waitMaps(page);
   const badge=page.locator('.condition-badge').filter({hasText:'Skills constraint'});await badge.locator('summary').click();assert.match(await badge.innerText(),/workforce training/);await shot('06-bottleneck');
-  await page.locator('#district-select').selectOption('capital');await page.locator('[data-adjust="1"]').click();await page.locator('[data-adjust="1"]').click();await page.locator('[data-adjust="1"]').click();await page.locator('[data-adjust="1"]').click();await page.locator('.map-click-feedback').waitFor({state:'hidden'});
-  assert.match(await page.locator('#upgrade-progress').innerText(),/Industrial complex\s+9 \/ 15 → 13 \/ 15 Capital points funded\s+2 more needed/);await shot('09-upgrade-progress');
+  await selectDistrict(page,'capital');await page.locator('[data-adjust="1"]').click();await page.locator('[data-adjust="1"]').click();await page.locator('[data-adjust="1"]').click();await page.locator('[data-adjust="1"]').click();await page.locator('.map-click-feedback').waitFor({state:'hidden'});
+  assert.match(await page.locator('[data-board=rivermark] [data-plan-district=capital]').innerText(),/Industrial complex\s+9 \/ 15 funded\s+Planned: \+4/);await shot('09-upgrade-progress');
   await choose('meridian');const meridian=await fit();await shot('04-meridian');
-  const routes=await watchRoutes(18000);assert.deepEqual(routes.failures,[]);assert.equal(Object.keys(routes.seen).length,5);for(const [id,dirs]of Object.entries(routes.seen))assert.equal(dirs.length,4,id);
+  const routes=await watchRoutes(51000);assert.deepEqual(routes.failures,[]);assert.equal(Object.keys(routes.seen).length,5);for(const [id,dirs]of Object.entries(routes.seen))assert.equal(dirs.length,4,id);
   const depthEvidence={};
   await page.evaluate(async()=>{window.auditRenderer=(await import('./map-engine.js')).rendererStats;});
   for(const [name,front]of [['07-vehicle-behind',false],['08-vehicle-front',true]]){

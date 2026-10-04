@@ -32,6 +32,7 @@ class ExportIntegrity(unittest.TestCase):
     def audit(self, lib):
         records, count = export.collect(lib)
         export.audit_answers_and_routes(lib, records, export.ROOT, shutil.which("node"))
+        export.resolve_faculty_outcomes(records, export.ROOT, shutil.which("node"))
         return records, count
 
     def test_identical_duplicates_merge_all_memberships(self):
@@ -76,7 +77,7 @@ class ExportIntegrity(unittest.TestCase):
         with self.assertRaisesRegex(export.ValidationError, "Dangling question reference"):
             self.audit(lib)
 
-    def test_csv_roundtrip_all_choices_and_nested_metadata(self):
+    def test_csv_roundtrip_all_choices_with_nested_metadata_hidden(self):
         q = question(options=["a", "b", "c", "d", "e"], a=4, scenario={"rule": "Keep, exactly", "bounds": [1, 2]})
         records, _ = self.audit(library(q))
         rows = export.make_rows(records, export.ROOT)
@@ -86,15 +87,141 @@ class ExportIntegrity(unittest.TestCase):
             self.assertTrue(path.read_bytes().startswith(b"\xef\xbb\xbf"))
             with path.open(encoding="utf-8-sig", newline="") as handle:
                 actual = next(csv.DictReader(handle))
-        self.assertEqual(actual["question_text"], q["q"])
-        self.assertEqual(actual["option_e"], "e")
-        self.assertEqual(actual["metadata.scenario.rule"], "Keep, exactly")
-        self.assertEqual(actual["metadata.scenario.bounds"], "1; 2")
-        self.assertEqual(actual["correct_answer_letter"], "E")
+        self.assertEqual(actual["Question"], q["q"])
+        self.assertEqual(actual["Choice E"], "e")
+        self.assertNotIn("metadata.scenario.rule", actual)
+        self.assertNotIn("Keep, exactly", str(actual))
+        self.assertEqual(q['scenario'], {"rule": "Keep, exactly", "bounds": [1, 2]})
+        self.assertEqual(actual["Correct Answer"], "E — e")
+        self.assertEqual(list(actual), export.faculty_columns(rows))
+
+    def test_faculty_header_formats_only_approved_metadata(self):
+        q = question(tag="moral-hazard", objective="IBP.3", difficulty="legendaryBoss",
+            canonicalDifficulty="legendary", type="integration", primarySkill='analyze_moral_hazard',
+            commonError="confuses_observation_with_enforceable_incentives")
+        lib = library(q)
+        lib['concepts']['test']['objectiveLabels'] = {'IBP.3': 'Moral Hazard'}
+        lib['concepts']['information-asymmetry-behavioral-and-political-economy'] = lib['concepts'].pop('test')
+        before = copy.deepcopy(lib)
+        records, _ = self.audit(lib)
+        row = export.make_rows(records, export.ROOT)[0]
+        self.assertEqual([(name, row[key]) for name, key in export.FACULTY_METADATA], [
+            ('Topic', 'Moral Hazard'), ('Learning Objective', 'Analyze asymmetric information, incentives, and information remedies'),
+            ('Difficulty', 'Legendary'), ('Question Type', 'Integration'),
+            ('Common Misconception', 'Confuses observation with enforceable incentives')])
+        self.assertNotIn('IBP.3', row['learning_objective'])
+        self.assertEqual(export.faculty_misconception('internal_route_v3'), '')
+        self.assertEqual(export.faculty_misconception('Confuses a shift with movement along a curve'),
+            'Confuses a shift with movement along a curve')
+        self.assertEqual(export.display_label('graph_interpretation'), 'Graph Interpretation')
+        self.assertEqual(export.display_topic('real-gdp'), 'Real GDP')
+        self.assertEqual(lib, before)
+
+    def test_unknown_provenance_is_absent_from_pdf_and_csv(self):
+        import pypdfium2 as pdfium
+        q = question(id='42941', tag='moral-hazard', objective='IBP.3', difficulty='legendary', type='integration',
+            primarySkill='analyze_moral_hazard',
+            internal_test_provenance='should-never-appear', sourceChapter=6,
+            sourceCurationPhase='phase-test-hidden', sourceGame='information-behavioral-political-authoring',
+            sourcePool='legendaryBoss', originalSourcePool='legendaryBoss', originalBossTier='legendary',
+            canonicalDifficulty='legendary', familyConceptId='hidden-family-id', primaryConceptId='hidden-primary-id',
+            instructionalRole='main', futureMetadata={'arbitraryNewKey':'unknown-value-must-stay-hidden'})
+        lib = library(q); lib['concepts']['test']['objectiveLabels'] = {'IBP.3':'Moral Hazard'}
+        lib['concepts']['information-asymmetry-behavioral-and-political-economy'] = lib['concepts'].pop('test')
+        before = copy.deepcopy(lib)
+        records, _ = self.audit(lib); rows = export.make_rows(records, export.ROOT)
+        # Even an unknown field added to a future internal row cannot become a column.
+        rows[0]['future_row_metadata'] = 'row-value-must-stay-hidden'
+        summary = dict(generated_at='2026-10-04', questions_with_images=0)
+        with tempfile.TemporaryDirectory() as tmp:
+            pdf, csv_path = Path(tmp)/'check.pdf', Path(tmp)/'check.csv'
+            export.csv_export(csv_path, rows)
+            export.build_pdf(pdf, rows, records, summary, Path('C:/Windows/Fonts'))
+            export.verify_pdf(pdf, rows, records)
+            with pdfium.PdfDocument(str(pdf)) as document:
+                pdf_text = '\n'.join(page.get_textpage().get_text_range() for page in document)
+            csv_text = csv_path.read_text(encoding='utf-8-sig')
+        prohibited = ['Source Chapter','Source Curation Phase','Source Game','Source Pools','Source File',
+            'Original Source Pool','Original Boss Tier','canonical difficulty','family concept id','primary concept id',
+            'instructional role','phase-','Additional Metadata','legendaryBoss','composer_library.js',
+            'information-behavioral-political-authoring','internal_test_provenance','should-never-appear',
+            'unknown-value-must-stay-hidden','row-value-must-stay-hidden']
+        for text in [pdf_text, csv_text]:
+            for bad in prohibited:self.assertNotIn(bad.lower(), text.lower())
+        self.assertIn('Topic: Moral Hazard', pdf_text)
+        self.assertIn('Learning Objective: Analyze asymmetric information', pdf_text)
+        self.assertIn('Difficulty: Legendary', pdf_text)
+        self.assertIn('Question Type: Integration', pdf_text)
+        self.assertNotIn('Learning Objective Label:', pdf_text)
+        self.assertEqual(lib, before)
+        with tempfile.TemporaryDirectory() as tmp:
+            with self.assertRaisesRegex(export.ValidationError, 'allowlist'):
+                export.csv_export(Path(tmp)/'bad.csv', rows, ['Question ID','Source Game'])
 
     def test_sort_and_literal_economic_comparison(self):
         self.assertLess(export.natural("LO2.9"), export.natural("LO2.10"))
         self.assertEqual(export.visible_text("P<ATC and Q>0"), "P<ATC and Q>0")
+
+    def test_composer_outcomes_use_all_skills_and_render_multiple_labels(self):
+        import pypdfium2 as pdfium
+        q = question(objective='LO4.2', primarySkill='law_of_demand',
+            secondarySkills=['movement_vs_shift', 'law_of_demand', 'normal_good_income', 'demand_shifters'])
+        lib = library(q); lib['concepts']['demand'] = lib['concepts'].pop('test')
+        before = copy.deepcopy(lib)
+        records, _ = self.audit(lib)
+        resolved = records['Q1']['faculty_outcomes']
+        self.assertEqual(resolved['labels'], [
+            'Apply the law of demand and distinguish movements from shifts',
+            'Analyze income effects, substitutes, and complements',
+            'Analyze demand shifters and combined market effects'])
+        self.assertEqual(resolved['unresolvedSkills'], [])
+        self.assertEqual({s for o in resolved['outcomes'] for s in o['matchedSkills']}, set([q['primarySkill'], *q['secondarySkills']]))
+        rows = export.make_rows(records, export.ROOT)
+        with tempfile.TemporaryDirectory() as tmp:
+            pdf, csv_path = Path(tmp)/'multiple.pdf', Path(tmp)/'multiple.csv'
+            export.csv_export(csv_path, rows)
+            export.build_pdf(pdf, rows, records, dict(generated_at='2026-10-04',questions_with_images=0), Path('C:/Windows/Fonts'))
+            export.verify_pdf(pdf, rows, records)
+            with pdfium.PdfDocument(str(pdf)) as doc:
+                text = '\n'.join(p.get_textpage().get_text_range() for p in doc)
+            with csv_path.open(encoding='utf-8-sig',newline='') as handle:
+                row = next(csv.DictReader(handle))
+        self.assertIn('Learning Objectives:',text)
+        self.assertNotIn('LO4.2',text)
+        self.assertNotIn('Test objective',text)
+        self.assertEqual(row['Learning Objective'], ' | '.join(resolved['labels']))
+        self.assertEqual(export.outcome_counts(records)['multiple_outcomes'], 1)
+        self.assertEqual(lib,before)
+
+    def test_unresolved_outcomes_never_use_legacy_or_unrelated_concept_fallback(self):
+        for skills in [{}, {'primarySkill':'unrecognized_skill'}, {'primarySkill':'law_of_demand'}]:
+            q = question(objective='LO1.5', **skills)
+            lib=library(q)
+            records,_=self.audit(lib)
+            row=export.make_rows(records,export.ROOT)[0]
+            self.assertEqual(row['learning_objective'],'')
+            self.assertEqual(export.outcome_counts(records)['unresolved_ids'], ['Q1'])
+        for text in ['Learning Objective: LO1.5','LO4.2','LO6.3']:
+            with self.assertRaisesRegex(export.ValidationError,'Legacy objective'):
+                export.assert_faculty_presentation(text)
+
+    def test_secondary_only_skills_deduplicate_and_keep_partial_resolution_evidence(self):
+        q=question(secondarySkills=['law_of_demand','movement_vs_shift','unknown_skill'])
+        lib=library(q); lib['concepts']['demand']=lib['concepts'].pop('test')
+        records,_=self.audit(lib)
+        resolved=records['Q1']['faculty_outcomes']
+        self.assertEqual(len(resolved['labels']),1)
+        self.assertEqual(resolved['unresolvedSkills'],['unknown_skill'])
+        self.assertEqual(export.outcome_counts(records)['unresolved_skill_ids'], {'Q1':['unknown_skill']})
+
+    def test_composer_hidden_compatibility_labels_are_not_faculty_outcomes(self):
+        q=question(primarySkill='core_market_failure',objective='LO1.6')
+        lib=library(q);lib['concepts']['market-failures']=lib['concepts'].pop('test')
+        records,_=self.audit(lib)
+        resolved=records['Q1']['faculty_outcomes']
+        self.assertEqual(resolved['labels'],[])
+        self.assertEqual(resolved['excludedConceptIds'],['market-failures'])
+        self.assertEqual(resolved['unresolvedSkills'],['core_market_failure'])
 
     def test_missing_image_uses_only_verified_own_concept_asset(self):
         with tempfile.TemporaryDirectory() as tmp:

@@ -7,9 +7,9 @@ import { visualState, iso, MAP } from './visual-config.js';
 import { adjustDevelopment } from './planning-ui.js';
 import {upgradeProgress} from './upgrade-progress.js';
 import {portrait} from './characters.js';
-import {openingAdvice,roundOneAdvice} from './advisor.js';
+import {openingAdvice,roundOneAdvice,laterAdvice,CHECK_IN_ROUNDS} from './advisor.js';
 import {renderSplash} from './hero-scene.js';
-import {createAssignedRun, rivalRevealed, visibleCities, raceResult} from './rivalry.js';
+import {createAssignedRun, rivalRevealed, visibleCities, raceResult, roleGoal} from './rivalry.js';
 import { reportHTML, TRANSFER_FEEDBACK } from './debrief.js';
 
 const $ = selector => document.querySelector(selector);
@@ -18,6 +18,7 @@ const signed = (v, digits = 0) => `${v >= 0 ? '+' : '−'}${fmt(Math.abs(v), dig
 let run = null, previewCities, selections, view, animationFrame, previousDoctrine = null;
 // Presentation-only help state survives replay in this tab; never enters the model/save snapshot.
 let onboardingStep = 'start', coachDismissed = false, challengeStage = 'pending';
+const dismissedCheckIns=new Set();
 const firstPlanning = () => run?.currentCycle === 1 && phase() === 'planning';
 const cities = () => run?.cities || previewCities;
 const phase = () => run?.phase || 'choosing';
@@ -26,7 +27,7 @@ const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
 export const exportRun = () => snapshotRun(run);
 function announce(message) { $('#announcement').textContent = message; }
 function reset() {
-  onboardingStep = 'start'; coachDismissed = false; challengeStage = 'pending';
+  onboardingStep = 'start'; coachDismissed = false; challengeStage = 'pending'; dismissedCheckIns.clear();
   cancelAnimationFrame(animationFrame);
   clearTimeout(feedbackTimer);
   setConstructionProgress(0);
@@ -43,11 +44,11 @@ function reset() {
 }
 function startGame() {
   if (run) return;
-  onboardingStep = 'start'; coachDismissed = false; challengeStage = 'pending';
+  onboardingStep = 'start'; coachDismissed = false; challengeStage = 'pending'; dismissedCheckIns.clear();
   run = createAssignedRun({previousDoctrine}); view = run.playerCity;
   selections[run.playerCity]=openingAdvice(cities().find(c=>c.id===run.playerCity)).category;
   render();
-  $('.skip-link').href = '#district-select'; $('.skip-link').textContent = 'Skip to district allocation controls';
+  $('.skip-link').href = '#city-maps'; $('.skip-link').textContent = 'Skip to city districts';
   $(`[data-map-district="${selections[run.playerCity]}"][data-city="${run.playerCity}"]`).focus({preventScroll:true});
   window.scrollTo({top:0,behavior:'instant'});
   announce(`Welcome to ${cities().find(c=>c.id===run.playerCity).name}. This is your city. You have ${B.developmentPointsPerCycle} points. Click a district to invest.`);
@@ -80,6 +81,9 @@ function renderAdvisor() {
       action='<button id="dismiss-advisor" class="dialogue-dismiss">Let’s build</button>';
     }
   }
+  if(!kind&&run&&phase()==='planning'&&CHECK_IN_ROUNDS.includes(run.currentCycle)&&!dismissedCheckIns.has(run.currentCycle)){
+    kind='check-in';({title,line}=laterAdvice(run));action='<button id="dismiss-advisor" class="dialogue-dismiss">Back to the plan</button>';
+  }
   const dock=owner&&$(`[data-city-map="${owner}"] .character-dock`);
   panel.hidden=!kind||!dock;
   panel.dataset.dialogue=kind;panel.dataset.speaker=role;panel.dataset.city=owner||'';
@@ -100,7 +104,7 @@ function positionDialogue(){
   panel.style.setProperty('--speaker-left',`${Math.max(8,bounds.left+10)}px`);
   panel.style.setProperty('--speaker-width',`${Math.min(440,bounds.width-20)}px`);
   const box=panel.getBoundingClientRect();
-  const collides=[...document.querySelectorAll('[data-map-district]')].some(e=>{
+  const collides=[...document.querySelectorAll('[data-map-district],.district-local:not([hidden])')].some(e=>{
     const r=e.getBoundingClientRect();return box.left<r.right&&box.right>r.left&&box.top<r.bottom&&box.bottom>r.top;
   });
   panel.dataset.docked=String(innerWidth<900||innerHeight<=650||collides);
@@ -110,12 +114,13 @@ function showStagedDialogue(){
   const panel=$('#advisor-panel');
   if(!panel.hidden&&panel.dataset.docked==='true')panel.closest('[data-city-map]').scrollIntoView({block:'start',behavior:'instant'});
 }
-window.addEventListener('resize',positionDialogue);
+// Let the responsive grid and map dock settle before measuring collision boxes.
+window.addEventListener('resize',()=>requestAnimationFrame(()=>{positionLocalControls();positionDialogue();}));
 function renderRace() {
   $('#rivalry-score').hidden=!rivalRevealed(run)||phase()==='finished';
   if(!rivalRevealed(run)){$('#rivalry-score').innerHTML='';return;}
   const race=raceResult(run);
-  $('#rivalry-score').innerHTML=`<div class="race-goal"><strong>Outgrow ${esc(race.rival.name)}.</strong><span>Growth since the start</span></div><div class="race-scores">${[race.player,race.rival].map(c=>`<div><span>${esc(c.name)} · ${c.id===run.playerCity?'You':'Rival'}</span><strong>${signed(c.score,1)}%</strong></div>`).join('')}</div>`;
+  $('#rivalry-score').innerHTML=`<div class="race-goal"><strong>${roleGoal(run)}</strong><span>${race.levelTied?'Cities level':race.overtaken?'Rivermark leads':'Meridian leads'} · gap ${fmt(Math.abs(race.gap.finish)*100,1)}%</span></div><div class="race-scores">${[race.player,race.rival].map(c=>`<div><span>${esc(c.name)} · ${c.id===run.playerCity?'You':'Rival'} · growth</span><strong>${signed(c.score,1)}%</strong></div>`).join('')}</div>`;
 }
 function renderHUD() {
   if(!run){$('#hud').innerHTML='';return;}
@@ -141,8 +146,37 @@ function mapOptions(city) {
     pending: phase() === 'building' ? run.pendingCities.find(c => c.id === city.id) : null };
 }
 function contextualPanel(city) {
-  if (!run || city.id !== run.playerCity || phase() !== 'planning') return `<div class="district-inspection" id="inspect-${city.id}">${districtInfo(city)}</div>`;
-  return `<section class="district-context" data-allocation-city="${city.id}" aria-label="Selected district development controls"><div class="context-description"><label for="district-select">Select district</label><select id="district-select">${CATEGORIES.map(c=>`<option value="${c.id}">${c.name}</option>`).join('')}</select><p id="district-description"></p><div id="upgrade-progress"></div></div><div class="context-actions"><p>Current investment: <output id="selected-investment">0</output></p><div class="quick-controls"><button data-adjust="-1" aria-label="Remove one point from selected district">−1</button><button data-adjust="1" aria-label="Add one point to selected district">+1</button><button data-adjust="5" aria-label="Add up to five points to selected district">+5</button><button data-adjust="clear" aria-label="Clear selected district allocation">Clear</button></div></div></section>`;
+  return `<section class="district-board" data-board="${city.id}" aria-label="${esc(city.name)} district status board">${districtBoard(city)}</section>`;
+}
+function districtBoard(city){
+  const own=city.id===run.playerCity,planning=phase()==='planning';
+  const allocation=own&&planning?run.allocation:phase()==='resolved'?city.history.at(-1).allocation:own&&phase()==='building'?run.committedAllocations[city.id]:null;
+  return `<p class="board-heading">${own?'YOUR CITY PLAN':'DISTRICT STATUS'}</p>${CATEGORIES.map(cat=>{
+    const planned=allocation?.[cat.id]||0,p=upgradeProgress(city,cat.id,planning||phase()==='building'?planned:0);
+    const diagnostics=visualState(city).diagnostics.filter(d=>d.category===cat.id).map(d=>d.label);
+    const note=diagnostics.join(' · ')||(!p.complete&&!p.remaining?'Ready on commit':'');
+    return `<button class="district-status" data-plan-district="${cat.id}" data-plan-city="${city.id}" aria-pressed="${selections[city.id]===cat.id}" ${phase()==='building'?'disabled':''}><strong>${esc(cat.name)}</strong><span class="next-upgrade">${p.complete?'Current':'Next'}: ${esc(p.name)}</span><span class="board-progress">${p.funded}${p.complete?'':` / ${p.required}`} funded</span><span class="board-planned">${allocation?`${planning?'Planned':phase()==='building'?'Building':'Last round'}: +${planned}`:'Plan hidden'}</span>${note?`<small>${esc(note)}</small>`:''}</button>`;
+  }).join('')}`;
+}
+function localControls(city){
+  if(city.id!==run.playerCity||phase()!=='planning')return '';
+  return `<div class="district-local" role="group" aria-label="Selected district investment"><div class="local-heading"><strong id="local-district-name"></strong><span>Planned <output id="selected-investment">0</output></span></div><div class="quick-controls"><button data-adjust="-1" aria-label="Remove one point from selected district">−1</button><button data-adjust="1" aria-label="Add one point to selected district">+1</button><button data-adjust="5" aria-label="Add up to five points to selected district">+5</button><button data-adjust="clear" aria-label="Clear selected district allocation">Clear</button></div></div>`;
+}
+function positionLocalControls(){
+  const control=$('.district-local');if(!control||!run)return;
+  const host=control.closest('.isometric-map'),map=host.querySelector('.city-map'),box=map.getBoundingClientRect(),outer=host.getBoundingClientRect();
+  const selected=map.querySelector(`[data-map-district="${selections[run.playerCity]}"]`).getBoundingClientRect();
+  control.dataset.docked='false';
+  const width=control.offsetWidth,height=control.offsetHeight;
+  const x=Math.max(box.left+8,Math.min(box.right-width-8,(selected.left+selected.right-width)/2));
+  const midY=(selected.top+selected.bottom-height)/2;
+  const candidates=[[x,selected.bottom+6],[x,selected.top-height-6],[selected.left-width-6,midY],[selected.right+6,midY],[selected.left-width-6,selected.top-height-6],[selected.right+6,selected.top-height-6],[selected.left-width-6,selected.top],[selected.right+6,selected.top],[selected.left-width-6,selected.top-30],[selected.right+6,selected.top-30]];
+  const targets=[...map.querySelectorAll('[data-map-district]')].map(e=>e.getBoundingClientRect());
+  const point=candidates.find(([x,y])=>x>=box.left+8&&x+width<=box.right-8&&y>=box.top+8&&y+height<=box.bottom-8&&!targets.some(r=>x<r.right&&x+width>r.left&&y<r.bottom&&y+height>r.top));
+  control.dataset.docked=String(!point);
+  if(!point&&innerWidth>=900){control.style.setProperty('--local-dock-left',`${Math.max(470,Math.min(host.clientWidth-330,selected.left-outer.left))}px`);}
+  if(point){control.style.left=`${point[0]-outer.left}px`;control.style.top=`${point[1]-outer.top}px`;}
+
 }
 function renderMaps() {
   // Keep the live dialogue node when rebuilding city articles.
@@ -154,7 +188,7 @@ function renderMaps() {
     const condition=city.constraints.resourceShortage?'Resource strain':'Resources secure';
     return `<article class="city-panel" data-city-map="${city.id}" data-owner="${options.owner}">
       ${view==='combined'?`<header class="city-heading"><h2>${esc(city.name)}</h2><span class="city-condition">${condition}</span></header>`:''}
-      <div class="isometric-map"><span class="map-condition">${condition}</span>${renderCityMap(city,options)}</div>
+      <div class="isometric-map"><span class="map-condition">${condition}</span>${renderCityMap(city,options)}${localControls(city)}</div>
       <div class="character-dock"></div><div class="map-stats"><div><span>OUTPUT / WORKER</span><strong>${fmt(city.outputPerWorker,1)}</strong></div><div><span>PRODUCTIVITY GROWTH</span><strong>${signed(city.productivityGrowthRate,1)}%</strong></div><div><span>CAPACITY COVERAGE</span><strong>${fmt(city.resourceAdequacy*100)}%</strong></div></div>
       <div class="city-tools">${contextualPanel(city)}${diagnostics.length?`<div class="map-diagnostics" aria-label="Economic conditions">${diagnostics.map(d=>`<details class="condition-badge"><summary>${esc(d.label)} · ${esc(CATEGORIES.find(c=>c.id===d.category).short)}</summary><p>${esc(d.detail)}</p></details>`).join('')}</div>`:''}</div>
     </article>`;
@@ -162,14 +196,6 @@ function renderMaps() {
   syncCityMaps($('#city-maps'),selectedCities.map(mapOptions)).then(()=>selectedCities.forEach(city=>updateMapSelection(city.id,selections[city.id])));
   updateMapControls();
   if (run) updateAllocationControls();
-}
-function upgradeHTML(city,key,planned=0){
-  const p=upgradeProgress(city,key,planned),cat=CATEGORIES.find(c=>c.id===key);
-  if(p.complete)return `<div class="upgrade-info"><span class="eyebrow">FULLY FUNDED</span><strong>${esc(p.name)}</strong><p>${p.funded} ${cat.short} points funded. Further investment still supports production.</p></div>`;
-  return `<div class="upgrade-info"><span class="eyebrow">NEXT UPGRADE</span><strong>${esc(p.name)}</strong><p>${p.funded} / ${p.required}${planned?` → ${p.projected} / ${p.required}`:''} ${cat.short} points funded</p><span>${p.remaining?`${p.remaining} more needed`:'Ready when you commit'}</span></div>`;
-}
-function districtInfo(city) {
-  const key=selections[city.id];return upgradeHTML(city,key);
 }
 function updateMapControls() {
   document.querySelectorAll('[data-map-district]').forEach(button=>{
@@ -180,11 +206,14 @@ function updateMapControls() {
     button.setAttribute('aria-label',`${cat.name} district. ${editable?`${allocated} development points currently allocated. Activate to invest one point.`:'Activate to inspect.'}`);
     if(selections[city]===key) button.closest('.city-map').querySelector('.active-district-label').textContent=cat.name;
   });
-  if($('#district-select')) {const key=selections[run.playerCity],cat=CATEGORIES.find(c=>c.id===key);$('#district-select').value=key;$('#district-description').textContent=cat.examples+'.';$('#selected-investment').textContent=run.allocation[key];$('#upgrade-progress').innerHTML=upgradeHTML(cities().find(c=>c.id===run.playerCity),key,run.allocation[key]);}
+  const focused=document.activeElement?.dataset.planDistrict;
+  document.querySelectorAll('[data-board]').forEach(board=>{const city=cities().find(c=>c.id===board.dataset.board);board.innerHTML=districtBoard(city);});
+  if(focused)$(`[data-plan-district="${focused}"][data-plan-city="${run.playerCity}"]`)?.focus({preventScroll:true});
+  if($('#local-district-name')){const key=selections[run.playerCity];$('#local-district-name').textContent=CATEGORIES.find(c=>c.id===key).short;$('#selected-investment').textContent=run.allocation[key];}
+  positionLocalControls();
 }
 function selectDistrict(city,key) {
   selections[city]=key;updateMapSelection(city,key);updateMapControls();
-  const inspection=$(`#inspect-${city}`);if(inspection)inspection.innerHTML=districtInfo(cities().find(c=>c.id===city));
   if(run)updateAllocationControls();
 }
 let feedbackTimer;
@@ -194,6 +223,7 @@ function invest(category,action) {
     onboardingStep=onboardingStep==='start'?'invested':'done';
   }
   if(changed>0 && challengeStage==='reply')challengeStage='done';
+  if(changed>0&&CHECK_IN_ROUNDS.includes(run.currentCycle))dismissedCheckIns.add(run.currentCycle);
   selectDistrict(run.playerCity,category);
   const remaining=B.developmentPointsPerCycle-allocationTotal(run.allocation),cat=CATEGORIES.find(c=>c.id===category);
   if(changed){
@@ -275,6 +305,7 @@ function render() {
   $('#stage-track').innerHTML = CYCLES.map((s, i) => `<li class="${i < run.currentCycle - 1 ? 'complete' : i === run.currentCycle - 1 ? 'current' : ''}" ${i === run.currentCycle - 1 ? 'aria-current="step"' : ''} title="${s.name}"><span class="sr-only">${s.name}: </span>${String(i + 1).padStart(2, '0')}</li>`).join('');
   renderAllocations(); renderConsequences();
   updateAllocationControls();
+  positionLocalControls();positionDialogue();
 }
 function finishBuilding() {
   if (!finishRunCycle(run)) return;
@@ -319,7 +350,7 @@ $('#advance').addEventListener('click', () => {
   }
 });
 $('#quick-commit').addEventListener('click', () => $('#advance').click());
-document.addEventListener('change', e => { if(e.target.id==='district-select'&&run) selectDistrict(run.playerCity,e.target.value); });
+
 document.addEventListener('click', e => {
   const button = e.target.closest('button'); if (!button) return;
   if (button.dataset.adjust && run && phase() === 'planning') {
@@ -336,6 +367,7 @@ document.addEventListener('click', e => {
     if(kind==='invested')onboardingStep='done';
     if(kind==='round-one-coach')coachDismissed=true;
     if(kind==='challenge-reply')challengeStage='done';
+    if(kind==='check-in')dismissedCheckIns.add(run.currentCycle);
     updateMapControls();updateAllocationControls();
     $(`[data-map-district="${selections[run.playerCity]}"][data-city="${run.playerCity}"]`)?.focus({preventScroll:true});
   }
@@ -343,6 +375,7 @@ document.addEventListener('click', e => {
     view = button.dataset.view; renderTabs(); renderHUD(); renderMaps(); if(run&&phase()!=='finished')renderAllocations();
     $(`#city-tabs [data-view="${view}"]`)?.focus({ preventScroll: true });
   }
+  if(button.dataset.planDistrict&&phase()!=='building')selectDistrict(button.dataset.planCity,button.dataset.planDistrict);
   if (button.dataset.mapDistrict && phase() !== 'building') {
     const { city, mapDistrict } = button.dataset;
     selectDistrict(city,mapDistrict);
@@ -375,8 +408,8 @@ $('#region-name').textContent = G.region;
 $('#run-length-note').textContent=`${G.totalRounds} rounds. A new path each play.`;
 $('#stage-track').setAttribute('aria-label',`${G.totalRounds}-round progress`);
 $('#help-steps').innerHTML=`<li>Your assigned city is yours to build.</li><li>Spend ${B.developmentPointsPerCycle} points each round. Click a district to invest +1.</li><li>Commit your plan and watch it develop.</li><li>From Round ${G.rivalRevealRound}, compare cities and adapt through Round ${G.totalRounds}.</li>`;
-$('#help-goal').textContent=`Outgrow the rival over ${G.totalRounds} rounds. The race compares percentage growth in output per worker from each city’s own starting point, not total output. Equal scores at one decimal place tie.`;
-$('#help-budget').textContent = `Each round gives you ${B.developmentPointsPerCycle} development points. Click or tap a district to invest +1. The district selector lets you select without spending; −1, +1, +5 and Clear adjust the selected district. Spend all points, then commit. Buildings change only after commitment. Your rival economy develops independently.`;
+$('#help-goal').textContent=`Across ${G.totalRounds} rounds, an advanced city aims to hold its lead while growing; a catch-up city aims to close the gap or overtake. Compare final output per worker, gap change and growth from each city’s starting point together.`;
+$('#help-budget').textContent = `Each round gives you ${B.developmentPointsPerCycle} development points. Click or tap a district to invest +1. The district status board selects without spending. Use −1, +1, +5 or Clear beside the selected district to adjust its plan. Spend all points, then commit. Buildings change only after commitment. Your rival economy develops independently.`;
 $('#help-categories').innerHTML=`<dl>${CATEGORIES.map(c=>`<dt>${c.name}</dt><dd>${c.description.replaceAll('cycles','rounds').replaceAll('cycle','round')}</dd>`).join('')}</dl>`;
 // The full header scrolls away. Only the short cycle/budget strip remains sticky.
 const hudObserver=new ResizeObserver(()=>document.documentElement.style.setProperty('--compact-hud-height',`${$('#planning-hud').hidden?0:$('#planning-hud').offsetHeight}px`));

@@ -58,11 +58,11 @@ export const BUILDING_VISUALS = Object.fromEntries(CATEGORIES.map(c => [c.id, {
 export const SPRITE_ROUTES = {
   factoryTruck: { category: 'capital', minLevel: 1, unit: 'truck', period: 88, points: [[ROADS.spine, CROSS_ROAD], [ROADS.east, CROSS_ROAD], [ROADS.east, ROADS.front], [ROADS.spine, ROADS.front]] },
   campusBus: { category: 'education', minLevel: 2, unit: 'bus', period: 112, points: [[1, CROSS_ROAD], [ROADS.spine, CROSS_ROAD], [ROADS.spine, 1], [ROADS.spine, CROSS_ROAD]] },
-  farmTractor: { category: 'resources', minLevel: 1, unit: 'tractor', period: 100, points: [[1, ROADS.front], [ROADS.spine, ROADS.front], [ROADS.spine, CROSS_ROAD], [ROADS.spine, ROADS.front]] },
-  researchService: { category: 'research', minLevel: 1, unit: 'van', period: 104, points: [[ROADS.spine, ROADS.front], [ROADS.east, ROADS.front], [ROADS.east, CROSS_ROAD], [ROADS.east, ROADS.front]] },
-  campusStudents: { category: 'education', minLevel: 1, unit: 'students', pedestrian:true, period: 128, points: CAMPUS_WALK },
+  farmTractor: { category: 'resources', minLevel: 1, unit: 'tractor', period: 144, points: [[1, ROADS.front], [ROADS.spine, ROADS.front], [ROADS.spine, CROSS_ROAD], [ROADS.spine, ROADS.front]] },
+  researchService: { category: 'research', minLevel: 1, unit: 'van', period: 128, points: [[ROADS.spine, ROADS.front], [ROADS.east, ROADS.front], [ROADS.east, CROSS_ROAD], [ROADS.east, ROADS.front]] },
+  campusStudents: { category: 'education', minLevel: 1, unit: 'students', pedestrian:true, period: 384, points: CAMPUS_WALK },
   // Use the two service-facing edges; rear/right edges contain support buildings.
-  constructionWorker: { category: null, unit: 'worker', period: 32, points: WORKER_PATH },
+  constructionWorker: { category: null, unit: 'worker', period: 160, points: WORKER_PATH },
 };
 export const DIAGNOSTICS = {
   resourceShortage: { category: 'resources', label: 'Resource strain', detail: 'Food, water, and utilities cannot keep up with production. Resource investment can ease the strain.' },

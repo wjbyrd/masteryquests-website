@@ -11,8 +11,8 @@ async function observe(){return page.evaluate(async()=>{
   const {onSidewalk,constructionWalks,contains,intersects}=await import('/play/growth-realms/scene-layout.js');
   const {PROTECTED_ROADS}=await import('/play/growth-realms/district-layout.js');
   const directions=new Set(),failures=[];let pedestrians=0,workers=0,traffic=0,last=-1;
-  const startTick=rendererStats().tick,until=performance.now()+25000;
-  while(rendererStats().tick-startTick<130&&performance.now()<until){const s=rendererStats();if(s.tick!==last){last=s.tick;
+  const period=(await import('/play/growth-realms/visual-config.js')).SPRITE_ROUTES.campusStudents.period;const startTick=rendererStats().tick,until=performance.now()+65000;
+  while(rendererStats().tick-startTick<period+2&&performance.now()<until){const s=rendererStats();if(s.tick!==last){last=s.tick;
     for(const city of s.states)for(const u of city.moving){
       if(u.id==='campusStudents'){pedestrians++;directions.add(u.direction);if(!onSidewalk(u.footprint)||PROTECTED_ROADS.some(r=>intersects(r,u.footprint)))failures.push('student off sidewalk');}
       else if(u.id.startsWith('worker:')){workers++;const id=u.id.split(':')[1];if(!constructionWalks(city.city,id).some(p=>contains(p,u.footprint))||PROTECTED_ROADS.some(r=>intersects(r,u.footprint)))failures.push('worker off service walk');}
@@ -24,10 +24,10 @@ async function observe(){return page.evaluate(async()=>{
 });}
 try{
  await page.goto('http://127.0.0.1:4178/play/growth-realms/');await startCity(page,'meridian');await waitMaps(page);
- const starting=await observe();assert.ok(starting.ticks>=130);assert.deepEqual(starting.failures,[]);assert.equal(starting.directions.length,4);await page.screenshot({path:out+'planning-sidewalks.png'});
+ const starting=await observe();assert.ok(starting.ticks>=386);assert.deepEqual(starting.failures,[]);assert.equal(starting.directions.length,4);await page.screenshot({path:out+'planning-sidewalks.png'});
  await page.goto('http://127.0.0.1:4178/play/growth-realms/tests/zoning.html');await page.waitForFunction(()=>document.body.dataset.ready==='true');
  await page.evaluate(async()=>{await (await import('./zoning-fixture.js')).show({city:'meridian',mode:'max',construction:true,progress:.4});});
- const construction=await observe();assert.ok(construction.ticks>=130);assert.deepEqual(construction.failures,[]);assert.ok(construction.workers>0);assert.equal(construction.directions.length,4);await page.screenshot({path:out+'construction-walks.png',fullPage:true});
+ const construction=await observe();assert.ok(construction.ticks>=386);assert.deepEqual(construction.failures,[]);assert.ok(construction.workers>0);assert.equal(construction.directions.length,4);await page.screenshot({path:out+'construction-walks.png',fullPage:true});
  for(const city of ['meridian','rivermark']){const audit=await page.evaluate(async city=>(await import('./zoning-fixture.js')).show({city,mode:'max',construction:false}),city);assert.deepEqual(audit.errors,[]);await page.screenshot({path:out+`maximum-${city}.png`,fullPage:true});}
  for(const width of [390,320]){
   await page.setViewportSize({width,height:844});await page.goto('http://127.0.0.1:4178/play/growth-realms/');await startCity(page,'rivermark');await waitMaps(page);

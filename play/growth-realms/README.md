@@ -1,6 +1,30 @@
 # Rival Cities
 
-A ten-round city-building rivalry game. Start Game randomly assigns Meridian or Rivermark. A brief city advisor introduces district investment; the rival develops out of view in rounds 1–2 and is revealed at the beginning of Round 3. The result compares each city’s percentage change in output per worker from its own starting point, followed by the full economic debrief.
+A ten-round city-building rivalry game. Start Game randomly assigns Meridian or Rivermark. A brief city advisor introduces district investment; the rival develops out of view in rounds 1–2 and is revealed at the beginning of Round 3. The result interprets the player’s starting role using final output per worker, gap change and own productivity growth, followed by the full economic debrief.
+
+## In-world controls / advisor cadence / outcome framing pass
+
+Runtime changes:
+
+- `game.js`: one local action bubble beside the selected district, with −1 / +1 / +5 / Clear and planned points. Candidate placements avoid every district hitbox. If there is insufficient room, controls dock at the map edge; phones use this layout frequently. All four district statuses replace the dropdown, and board buttons provide keyboard-accessible selection without spending. The board uses existing upgrade thresholds and shows next/current building, funded progress, planned points, and constraint/readiness notes. Rival plans remain hidden until resolution. Resize and render updates reposition controls; the advisor avoids both district targets and the local bubble.
+- `index.html`: the city maps are a focusable skip-link destination.
+- `flow.css`: local control styling, four-district status board, responsive map-edge fallback, and result hierarchy. Desktop status board remains 230px wide; phone boards use two columns.
+- `visual-config.js`: students use a 384-tick walking circuit instead of 128 (one third of their previous speed); workers use 160 instead of 32 (one fifth). Truck and bus periods remain 88/112; tractor/service van periods become 144/128. At the existing 8 fps these preserve a clear traffic/service/walking speed hierarchy without changing routes, geometry or pedestrian art.
+- `advisor.js`: skippable contextual check-ins in planning Rounds 5, 8 and 10, in addition to the existing opening, first-click, Round 1 result and Round 3 exchange. Resource strain, skill/tool mismatch, investment mix and relative progress drive the short advice. Dismissal or a positive investment clears that round’s check-in; replay resets the cadence.
+- `rivalry.js`: role-aware result categories and goals replace the automatic percentage winner. Meridian can retain its lead with meaningful growth, retain it with weak growth, face significant catch-up, draw level, or be overtaken. Rivermark can make modest progress, substantially narrow the gap, nearly catch up, draw level, overtake, or remain behind. A falling own productivity level is explicitly qualified even when relative standing improves.
+- `debrief.js`: final levels are prominent, each city’s growth remains visible, and lead direction plus relative gap change follow. The original instructional analysis, chart, ledger, rival strategy, policy connection and transfer question remain after this result summary.
+- `config.js`: Round 3 briefing now asks players to compare lead, gap and growth together. No economic coefficients changed.
+- `README.md`: this record.
+
+Framing thresholds are disclosed in the result’s “How this result is framed” section: lead/parity use output per worker displayed to one decimal; a remaining gap within 10% of Meridian is near catch-up; closure of at least 10 percentage points is substantial; Meridian’s meaningful own productivity growth is at least 5% across the run. These are presentation categories, not economic laws, revised production formulas, or a hidden aggregate score. The original relative-gap reference remains Meridian, with the lead direction explicit after an overtake. Midgame goals update if the lead changes, and the status strip shows the leader and current gap alongside growth.
+
+Test files changed: `tests/advisor.test.js`, `tests/rivalry.test.js`, `tests/interaction.test.js`, `tests/browser-helpers.mjs`, `tests/browser.test.mjs`, `tests/interaction-browser.test.mjs`, `tests/sidewalk-browser.test.mjs`, `tests/cleanup-browser.test.mjs`, `tests/cues-browser.test.mjs`.
+
+Verification: 44 unit tests; exact staged-beta package check; both complete ten-round browser flows and role-aware reports; direct controls, budget gating, keyboard and touch at 320–1440px; complete 386-tick sidewalk observations including construction, protected roads, and maximum city layouts. Economic formula/session/doctrine locks still pass. Beta files are staged locally only; no public deployment was performed.
+
+Requested real-runtime captures are in `tmp/games-preview/growth-realms/in-world-pass/`: `03-first-click.png` (district controls), `14-city-plan-board.png`, `13-midgame-advisor.png`, `15-meridian-result.png`, and `16-rivermark-result.png`. They are test artifacts, not implementation assets. `audit.json` records the real played run.
+
+Remaining refinement: the status board is intentionally a compact structured summary. Narrow phones sometimes require map-edge controls rather than controls floating beside a building, and stacked comparisons still require scrolling. No active endgame text awards victory solely to the higher growth percentage; the result thresholds remain game-design judgments and are disclosed. This pass does not rebalance either city or claim the game is finished.
 
 ## Advisor / rival staging pass
 

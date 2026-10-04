@@ -36,3 +36,11 @@ test('Every moving unit has distinct rear/front poses and four discrete facings'
   for(const unit of Object.values(UNIT_VISUALS)){assert.deepEqual(Object.keys(unit).sort(),['NE','NW','SE','SW']);assert.notEqual(unit.NE.frame,unit.SW.frame);assert.equal(unit.NE.frame,unit.NW.frame);assert.notEqual(unit.NE.flip,unit.NW.flip);assert.equal(unit.SW.frame,unit.SE.frame);assert.notEqual(unit.SW.flip,unit.SE.flip);}
   assert.ok(MAP.width>=CAMERA.width);assert.ok(DISTRICT_HITBOX.width/CAMERA.width*280>44);assert.ok(DISTRICT_HITBOX.height/CAMERA.width*280>44);
 });
+
+// Compare distance on the ground plane, not just animation cycle lengths.
+test('Walking is slower than every traffic route while preserving route geometry',()=>{
+  const speeds=Object.fromEntries(Object.entries(SPRITE_ROUTES).map(([name,r])=>[name,r.points.map((a,i)=>{const b=r.points[(i+1)%r.points.length];return Math.hypot(a[0]-b[0],a[1]-b[1])*r.points.length/r.period*MAP.fps;})]));
+  const walking=Math.max(...speeds.campusStudents,...speeds.constructionWorker);
+  const slowestTraffic=Math.min(...speeds.factoryTruck,...speeds.campusBus,...speeds.farmTractor,...speeds.researchService);
+  assert.ok(walking<slowestTraffic*.6);assert.ok(Math.min(...speeds.campusStudents)>.3);
+});
