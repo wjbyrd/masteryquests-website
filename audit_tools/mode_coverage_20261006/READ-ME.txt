@@ -1,0 +1,83 @@
+MACRO AND MICRO MODE COVERAGE — October 6, 2026
+
+Source: current production Composer library, SHA-256
+869604194dbf645a33c326390c059fd67df7b5c9596a41fa06e0c25c5ae6a5d2
+Rules: build/faculty-build-composer/composer-core.js
+Topic membership: build/faculty-build-composer/course-area-model.js
+
+The analysis runs the production compose() function for all 86 visible Micro
+topic cards and all 79 visible Macro topic cards, using FULL content scope,
+automatic checkpoint selection, and all ten modes. It also tests the 12 Micro
+and 14 Macro navigation-family bundles and each whole-course selection.
+Shared General topics appear in both areas where the application includes them.
+Parent topics and derived child topics overlap. Do not sum all row deficits
+as a count of unique questions to create. Narrower outcome selections and custom
+checkpoint restrictions are outside this audit and may need more coverage.
+
+Both whole-course selections support all ten modes. Of individual topic cards,
+12 Micro and 4 Macro support all ten. All observed mode failures are shortages,
+with no question-validation issues or other composition errors.
+
+Files:
+- mode-coverage.csv: current counts and all deficits for topics, families, courses.
+- mode-specific-gaps.csv: exact current count, requirement and shortfall per mode.
+- authoring-packages.csv: alternative additions, ranked by modes unlocked per
+  question. Packages are independent options evaluated against today's bank,
+  not cumulative tasks. Larger packages may subsume smaller ones.
+
+Pool vocabulary and minimums:
+- Quiz: 5 ordinary Easy, 5 Medium, 5 Hard.
+- Timed Trial / Unlimited Practice: 6 of each, 1 Repair, 1 Bridge.
+- Standard Campaign / Exam Drill / Score Attack: the preceding counts plus
+  3 Checkpoint One (easyBoss), 3 Checkpoint Two (mediumBoss), and
+  3 Final Checkpoint (finalBoss) questions.
+- Legendary: 6 ordinary Legendary and 3 Legendary checkpoint (legendaryBoss).
+- Trial by Graph: 10 ordinary graph-dependent questions. A graph image and
+  graphRequired flag must be present, with valid accessibility metadata.
+- Fading Fortune: 10 ordinary questions with exactly four options.
+- Risk & Reward: 10 ordinary questions.
+
+Checkpoint stages and cognitive difficulty are distinct. Adding ordinary Easy
+questions cannot fill an easyBoss shortage. Elite alone has no separate mode
+minimum, although ordinary Elite questions can count for Graph, Fading Fortune,
+and Risk & Reward. A graph located only in a checkpoint does not qualify for
+Trial by Graph.
+
+Authoring package projections are arithmetic eligibility estimates. They assume
+new, unique, valid, correctly routed questions and four answer options for new
+ordinary questions. Graph package tier choices remain open; correctly chosen
+tiers could resolve additional gaps beyond the conservative projection. The
+same question can meet an ordinary-tier need and a graph requirement. Re-run
+composition after authoring to verify actual eligibility and scope routing.
+
+Integrated Economic Analysis is intentionally designed to pair with foundational
+concepts. Its solo gaps are labeled integration-only and should not become a
+blanket authoring mandate. The hidden Advanced Macro Checkpoint Supplement is
+not audited as a standalone topic. It is included in the whole-Macro check.
+
+Recommended priorities:
+1. Macro ordinary Hard additions: one each for Indexing and Real Values, Limits
+   of GDP, Living Standards and Growth, Money Functions and Measures; two each
+   for CPI versus GDP Deflator, Foreign-Exchange Market Equilibrium, Real
+   Exchange Rates and Purchasing Power. Each topic gains five or six modes.
+2. Micro checkpoint additions: one Checkpoint One each for Short-Run Cost Curves
+   and Total Surplus; two for Applications of Elasticity; one at each of the
+   three stages for Price Elasticity of Supply. These unlock Campaign, Exam,
+   and Score Attack for those focused topics.
+3. Substantial focused coverage: Macro LRAS/Potential Output has 2 Easy, 1 Medium,
+   3 Hard and supports no mode alone. Micro Market Power has 2 Easy, 2 Medium,
+   1 Hard, no Bridge and supports no mode alone. They need balanced coverage.
+4. Ordinary Legendary gaps: Consumer Choice, Factor Markets, Inequality/Poverty,
+   and Information Asymmetry/Behavioral/Political Economy each need six. Two
+   ordinary Legendary questions unlock the combined Macro Money/Banking/Fed
+   family. One each unlocks individual PED and Liquidity Preference topics.
+5. Graph authoring: the combined Macro GDP, Inflation Measurement/Real Values,
+   Growth/Productivity, Unemployment/Labor, Money/Banking/Fed, and Money Growth/
+   Inflation families each lack all ten graph-dependent questions. Favor
+   interpretation of meaningful economic graphs rather than decorative images.
+   Micro LRAC needs only one; Cost Components, Efficient Quantity, and Price
+   Elasticity of Supply each need two to unlock Trial by Graph.
+
+Minimums establish availability, not sufficient variety for repeated play.
+Do not relabel existing questions solely to meet a numerical quota. No bank
+questions, tiers, routing, templates, or application files were changed.
