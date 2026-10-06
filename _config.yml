@@ -1,0 +1,40 @@
+# GitHub Pages' branch build scans the repository root with Jekyll.
+# Cloudflare separately uses audit_tools/public_site_publication/build-dist.mjs.
+# Keep temporary dependencies and development documentation out of Pages:
+# JavaScript/JSX examples in those documents are not Liquid templates.
+exclude:
+  # Preserve Jekyll 3's default exclusions when supplying our own list.
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle
+  - vendor/cache
+  - vendor/gems
+  - vendor/ruby
+  - "**/node_modules"
+  - "**/node_modules/**"
+  - tmp
+  - audit_tools
+  - validation_artifacts
+  - verification_tools
+  - server
+  - faculty_exports
+  - _private_course_sources
+  - outputs
+  - dist
+  - legacy
+  - previews
+  - "**/authoring"
+  - "**/tests"
+  # These formats are also excluded by the curated public-site builder.
+  - "*.md"
+  - "**/*.md"
+  - "*.mjs"
+  - "**/*.mjs"
+  - "*.py"
+  - "**/*.py"
+  - "*.ps1"
+  - "**/*.ps1"
+  - managerial-telemetry-export-20260910-134641.csv
+  - telemetry-latest.csv
+  - wrangler.jsonc

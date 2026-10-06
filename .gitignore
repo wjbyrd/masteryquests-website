@@ -3,6 +3,17 @@
 .env*
 .wrangler/
 
+# Installed dependencies (including local runtime junctions) are never source.
+node_modules/
+
+# Temporary faculty workbook extraction and rendering artifacts.
+/tmp/micro_manual_review_20261004/
+
+# Local GitHub Pages output and caches.
+/_site/
+/.jekyll-cache/
+/.sass-cache/
+
 # Local PDF accessibility staging; never publish.
 /tmp/pdf_accessibility/
 
