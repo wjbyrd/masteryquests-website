@@ -1,0 +1,10 @@
+# Keep the compact canonical baseline required by closure validation.
+/baseline/*
+!/baseline/composer_library.js
+/staged/
+/test-output/
+/pdf-review/
+/*-validation-game.html
+/*.log
+/scoped-reading.txt
+/workbook-decisions.json

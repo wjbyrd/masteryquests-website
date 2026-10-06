@@ -2,7 +2,7 @@
 (function(root,data){if(typeof module==='object'&&module.exports)module.exports=data;else root.MQFacultyOutcomePolicy=data;})(typeof globalThis!=='undefined'?globalThis:this,{
   "schemaVersion": 1,
   "policyVersion": "faculty-lo-1",
-  "librarySha256": "b38b4010a1cfacf0224c973f22174ab266f2b4c992642e9a55df30df59335a20",
+  "librarySha256": "869604194dbf645a33c326390c059fd67df7b5c9596a41fa06e0c25c5ae6a5d2",
   "concepts": {
     "ad-as-equilibrium-and-output-gaps": {
       "outcomes": [
@@ -122,12 +122,13 @@
             "seed": 0,
             "difficulty": {
               "easy": 6,
-              "medium": 10,
-              "hard": 4,
+              "medium": 11,
+              "hard": 5,
               "elite": 4,
-              "legendary": 6
+              "legendary": 4
             },
             "supportedModes": [
+              "quiz",
               "trialGraph",
               "fadingFortune",
               "riskReward"
@@ -6762,9 +6763,9 @@
             "difficulty": {
               "easy": 8,
               "medium": 13,
-              "hard": 6,
-              "elite": 1,
-              "legendary": 4
+              "hard": 7,
+              "elite": 2,
+              "legendary": 2
             },
             "supportedModes": [
               "standard",
@@ -7722,10 +7723,10 @@
             "seed": 1,
             "difficulty": {
               "easy": 10,
-              "medium": 9,
+              "medium": 10,
               "hard": 8,
               "elite": 1,
-              "legendary": 9
+              "legendary": 8
             },
             "supportedModes": [
               "standard",
@@ -7848,8 +7849,8 @@
             "difficulty": {
               "easy": 9,
               "medium": 3,
-              "hard": 2,
-              "elite": 1,
+              "hard": 3,
+              "elite": 0,
               "legendary": 1
             },
             "supportedModes": [
@@ -8226,9 +8227,9 @@
             "difficulty": {
               "easy": 9,
               "medium": 11,
-              "hard": 15,
+              "hard": 16,
               "elite": 0,
-              "legendary": 2
+              "legendary": 1
             },
             "supportedModes": [
               "standard",
@@ -10195,8 +10196,8 @@
               "easy": 1,
               "medium": 2,
               "hard": 5,
-              "elite": 2,
-              "legendary": 4
+              "elite": 3,
+              "legendary": 3
             },
             "supportedModes": [
               "fadingFortune",
@@ -11709,7 +11710,6 @@
             "calculate_compound_real_rate_change",
             "calculate_real_exchange_rate",
             "calculate_real_rate_change",
-            "calculate_real_rate_from_inflation",
             "classify_real_appreciation",
             "compare_price_indexes_ppp",
             "compare_traded_nontraded_goods",
@@ -13702,5 +13702,5 @@
       "hidden": false
     }
   },
-  "policySha256": "5fa39cb73ac027677d25b45024d74b729081b4649e03deef137d46ac7add2efd"
+  "policySha256": "0fe88bb6e9e726910805b7f1820c90484b05f82e55dc01141f925c10a8e6bcbe"
 });

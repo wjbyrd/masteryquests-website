@@ -1,0 +1,3996 @@
+[
+  {
+    "id": "PMOE-POL-L-004",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "macro-open-economy-authoring",
+      "sourceCurationPhase": "phaseMacroOpenEconomy-v1",
+      "sourceFiles": [
+        "build/faculty-build-composer/authoring/open_economy_question_pool_author.mjs"
+      ]
+    },
+    "placements": [
+      [
+        "open-economy-policy-transmission",
+        "legendary"
+      ]
+    ],
+    "q": {
+      "id": "PMOE-POL-L-004",
+      "canonicalId": "PMOE-POL-L-004",
+      "sourceId": "PMOE-POL-L-004",
+      "sourceGame": "macro-open-economy-authoring",
+      "q": "Monetary tightening raises the domestic interest rate, while political risk simultaneously rises. What can be concluded about the currency?",
+      "options": [
+        "It is unchanged because monetary policy affects the nominal rate while risk affects the real rate",
+        "Its direction is ambiguous because lower NCO from returns opposes higher NCO from risk",
+        "It appreciates because the policy-rate channel is transmitted before portfolios rebalance",
+        "It depreciates because political risk shifts currency demand rather than supply"
+      ],
+      "tag": "analyze_competing_policy_channels",
+      "type": "application",
+      "objective": "POL.analyze_competing_policy_channels",
+      "difficulty": "legendary",
+      "canonicalDifficulty": "legendary",
+      "conceptCluster": "open-economy-policy-transmission",
+      "primarySkill": "analyze_competing_policy_channels",
+      "secondarySkills": [],
+      "repairSkill": "analyze_competing_policy_channels",
+      "commonError": "Incorrectly concludes “It is unchanged because monetary policy affects the nominal rate while risk affects the real rate” in this open economy policy transmission task.",
+      "feedback": "Higher returns tend to reduce currency supply and appreciate the currency; higher risk tends to raise supply and depreciate it.",
+      "sourceCurationPhase": "phaseMacroOpenEconomy-v1",
+      "aHash": "f93690fe379d8dfff483c48be7b1b5dfd001b3656c36ea498c4d234b7a552121",
+      "sourceChapter": [
+        18,
+        19
+      ],
+      "sourcePool": "legendary",
+      "primaryConceptId": "open-economy-policy-transmission",
+      "secondaryConceptIds": [],
+      "familyConceptId": "open-economy-macroeconomics",
+      "subtopicIds": [
+        "open-economy-policy-transmission"
+      ],
+      "instructionalRole": "legendary",
+      "originalSourcePool": "legendary",
+      "originalBossTier": null,
+      "sourceHash": "cddc7a13765e79e2a78e7533c821a940950e307affcf7725a85f7f3c2b3eb281",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "macro-open-economy-authoring",
+          "sourceFile": "build/faculty-build-composer/authoring/open_economy_question_pool_author.mjs",
+          "sourceGlobal": "productionQuestions",
+          "sourcePool": "legendary",
+          "routeKey": "analyze_competing_policy_channels",
+          "sourceRecordOrder": 223,
+          "sourceId": "PMOE-POL-L-004",
+          "sourceHash": "cddc7a13765e79e2a78e7533c821a940950e307affcf7725a85f7f3c2b3eb281",
+          "sourceCurationPhase": "phaseMacroOpenEconomy-v1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "LG-Q-9123",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "liquidity-grid",
+      "sourceCurationPhase": "phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1",
+      "sourceFiles": [
+        "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\liquidity-grid\\package\\questions.js"
+      ]
+    },
+    "placements": [
+      [
+        "monetary-neutrality",
+        "legendaryBoss"
+      ]
+    ],
+    "q": {
+      "id": "LG-Q-9123",
+      "q": "Money growth rises permanently in an economy whose real productive resources, measured by an index, stay fixed at 160 on that index. Assume monetary neutrality in the long run and stable velocity. Using the quantity theory of money, how does a permanent increase in money growth differ from a one-time increase in the money supply?",
+      "options": [
+        "Faster money growth and a one-time increase both raise sustained inflation equally.",
+        "Faster money growth raises sustained real growth; a one-time increase raises real capacity.",
+        "Faster money growth and a one-time increase leave both nominal price measures unchanged.",
+        "Faster money growth raises sustained inflation; a one-time increase raises the price level."
+      ],
+      "tag": "nominal_real",
+      "type": "analysis",
+      "objective": "31.2",
+      "difficulty": "legendaryboss",
+      "conceptCluster": "classical_dichotomy",
+      "primarySkill": "infer_inflation_and_real_wage_growth",
+      "secondarySkills": [
+        "nominal_gdp",
+        "real_gdp",
+        "nominal_wage"
+      ],
+      "repairSkill": "real_wage_growth_logic",
+      "commonError": "Incorrect inference: Faster money growth and a one-time increase both raise sustained inflation equally.",
+      "feedback": "Levels and growth rates differ: a lasting growth-rate change can sustain inflation, whereas a one-time level change is not ongoing faster money growth. Real capacity remains determined by the stated real factors.",
+      "aHash": "a18aa1e4b9e126d20111ce684ebb393e4c0e1e41f3f7ed89b5c1057dc34d24f9",
+      "schemaVersion": "2.0.0-pilot",
+      "questionId": "LG-Q-9123",
+      "originalLegacyId": 9123,
+      "sourceGlobal": "questionBanks",
+      "sourcePool": "legendaryBoss",
+      "sourceRecordOrder": 23,
+      "domainId": "ECON",
+      "conceptId": "ECON-MAC-CLASSICAL-DICHOTOMY",
+      "outcomeIds": [
+        "OUT-MAC-CLASSICAL-DICHOTOMY-01"
+      ],
+      "skillId": "infer_inflation_and_real_wage_growth",
+      "secondarySkillIds": [
+        "nominal_gdp",
+        "real_gdp",
+        "nominal_wage"
+      ],
+      "repairSkillId": "real_wage_growth_logic",
+      "questionType": "legendary_boss_nominal_real_synthesis",
+      "assessmentTier": "legendary",
+      "poolRole": "boss",
+      "runtimeRole": "legendary-boss",
+      "provenance": {
+        "sourceGame": "liquidityGrid",
+        "sourceBank": "liquidity-grid-student",
+        "sourceGlobal": "questionBanks",
+        "sourcePool": "legendaryBoss",
+        "sourceRecordOrder": 23,
+        "legacyId": 9123,
+        "legacyObjective": "31.2"
+      },
+      "answerFormat": "aHash",
+      "resourceMatching": {
+        "sourceObjective": "31.2",
+        "objectiveKey": "LO31.2",
+        "sourceAccurateRecommendationHook": false
+      },
+      "source": {
+        "bankId": "liquidity-grid-student",
+        "legacyId": 9123,
+        "legacyObjective": "31.2",
+        "legacyPool": "questionBanks.legendaryBoss",
+        "sourceRecordOrder": 23,
+        "sourceGame": "liquidityGrid"
+      },
+      "bossRole": "legendary-boss",
+      "canonicalId": "LG-Q-9123",
+      "sourceId": 9123,
+      "sourceGame": "liquidity-grid",
+      "sourceChapter": [
+        31,
+        2
+      ],
+      "sourceHash": "7dbd67ca2d1f1eb74729cae728980d5b122e471d413892afe89bf6a23a1d7f09",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "liquidity-grid",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\liquidity-grid\\package\\questions.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "legendaryBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 23,
+          "sourceId": 9123,
+          "sourceHash": "7dbd67ca2d1f1eb74729cae728980d5b122e471d413892afe89bf6a23a1d7f09",
+          "sourceCurationPhase": "phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1"
+        }
+      ],
+      "primaryConceptId": "monetary-neutrality",
+      "secondaryConceptIds": [],
+      "instructionalRole": "legendaryBoss",
+      "canonicalDifficulty": "legendary",
+      "originalSourcePool": "legendaryBoss",
+      "originalBossTier": "legendaryBoss",
+      "bossStage": "final",
+      "sourceCurationPhase": "phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1"
+    }
+  },
+  {
+    "id": "LG-Q-9107",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "liquidity-grid",
+      "sourceCurationPhase": "phaseM2c1-money-banking-fed-family-maturation-v1",
+      "sourceFiles": [
+        "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\liquidity-grid\\package\\questions.js"
+      ]
+    },
+    "placements": [
+      [
+        "monetary-policy-tools",
+        "legendaryBoss"
+      ]
+    ],
+    "q": {
+      "id": "LG-Q-9107",
+      "q": "In a stated deposit-multiplier model, a central bank seeks an $800 deposit contraction. The estimated actual multiplier is 4, while the textbook maximum is 10. An $80 reserve removal based on the maximum contracts deposits by only $320. What explains the miss?",
+      "options": [
+        "The operation removed too many reserves; the smaller actual multiplier requires only $32 of reserve removal.",
+        "The operation used an overly large multiplier; under the estimate, a total $200 reserve removal is needed for the target.",
+        "The multiplier estimate must be ignored because a theoretical maximum is always the realized response.",
+        "The contraction proves reserves must be added to reduce deposits in the same model."
+      ],
+      "tag": "monetary_policy_tools",
+      "type": "analysis",
+      "objective": "30.4",
+      "difficulty": "legendaryboss",
+      "conceptCluster": "central_banking",
+      "primarySkill": "analyze_mixed_fed_policy_package",
+      "secondarySkills": [
+        "bond_purchase",
+        "discount_rate",
+        "interest_on_reserves"
+      ],
+      "repairSkill": "interest_on_reserves_role",
+      "commonError": "Incorrectly concludes “Remove $3200 of reserves; multiply the desired deposit change by the actual multiplier” in this monetary policy tools task.",
+      "feedback": "With actual multiplier 4, removing 80 predicts a 320 contraction, matching the miss. Reaching 800 requires 800/4=200 total reserve removal,120 beyond the original operation. A maximum can overstate actual deposit response; this remains a stipulated model exercise.",
+      "aHash": "37652d9fd0699468f669b8d8b0e1ea4dee65b91f83ee16108648befbaa07ce33",
+      "schemaVersion": "2.0.0-pilot",
+      "questionId": "LG-Q-9107",
+      "originalLegacyId": 9107,
+      "sourceGlobal": "questionBanks",
+      "sourcePool": "legendaryBoss",
+      "sourceRecordOrder": 7,
+      "domainId": "ECON",
+      "conceptId": "ECON-MAC-MONETARY-CONTROL-TOOLS",
+      "outcomeIds": [
+        "OUT-MAC-MONETARY-CONTROL-TOOLS-01"
+      ],
+      "skillId": "analyze_mixed_fed_policy_package",
+      "secondarySkillIds": [
+        "bond_purchase",
+        "discount_rate",
+        "interest_on_reserves"
+      ],
+      "repairSkillId": "interest_on_reserves_role",
+      "questionType": "legendary_boss_policy_conflict",
+      "assessmentTier": "legendary",
+      "poolRole": "boss",
+      "runtimeRole": "legendary-boss",
+      "provenance": {
+        "sourceGame": "liquidityGrid",
+        "sourceBank": "liquidity-grid-student",
+        "sourceGlobal": "questionBanks",
+        "sourcePool": "legendaryBoss",
+        "sourceRecordOrder": 7,
+        "legacyId": 9107,
+        "legacyObjective": "30.4"
+      },
+      "answerFormat": "aHash",
+      "resourceMatching": {
+        "sourceObjective": "30.4",
+        "objectiveKey": "LO30.4",
+        "sourceAccurateRecommendationHook": false
+      },
+      "source": {
+        "bankId": "liquidity-grid-student",
+        "legacyId": 9107,
+        "legacyObjective": "30.4",
+        "legacyPool": "questionBanks.legendaryBoss",
+        "sourceRecordOrder": 7,
+        "sourceGame": "liquidityGrid"
+      },
+      "bossRole": "legendary-boss",
+      "canonicalId": "LG-Q-9107",
+      "sourceId": 9107,
+      "sourceGame": "liquidity-grid",
+      "sourceChapter": [
+        30,
+        4
+      ],
+      "sourceHash": "c83298329270ca4bf98b0d8ad71830c32476204830c42b632b21bfda088f2d3d",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "liquidity-grid",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\liquidity-grid\\package\\questions.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "legendaryBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 7,
+          "sourceId": 9107,
+          "sourceHash": "c83298329270ca4bf98b0d8ad71830c32476204830c42b632b21bfda088f2d3d",
+          "sourceCurationPhase": "phaseM2c1-money-banking-fed-family-maturation-v1"
+        }
+      ],
+      "primaryConceptId": "monetary-policy-tools",
+      "secondaryConceptIds": [
+        "bank-money-creation"
+      ],
+      "instructionalRole": "legendaryBoss",
+      "canonicalDifficulty": "legendary",
+      "originalSourcePool": "legendaryBoss",
+      "originalBossTier": "legendaryBoss",
+      "bossStage": "final",
+      "sourceCurationPhase": "phaseM2c1-money-banking-fed-family-maturation-v1"
+    }
+  },
+  {
+    "id": "LG-Q-9122",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "liquidity-grid",
+      "sourceCurationPhase": "phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1",
+      "sourceFiles": [
+        "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\liquidity-grid\\package\\questions.js"
+      ]
+    },
+    "placements": [
+      [
+        "quantity-theory-of-money",
+        "legendaryBoss"
+      ]
+    ],
+    "q": {
+      "id": "LG-Q-9122",
+      "q": "Money is $200 and velocity is 5. A report gives price level 2 and real output 1,000. An independent production count confirms real output 1,000 while money and velocity are verified. Under MV=PY, which reported measure must be reconsidered?",
+      "options": [
+        "The price level must be 1 rather than 2; nominal spending is 1,000, which cannot support that output at price 2.",
+        "The price level must be 4; a larger output measure requires multiplying nominal spending by prices.",
+        "The verified real output must be 500 regardless of the independent count; accounting identities cannot reveal a price-measure error.",
+        "None; nominal spending 1,000 and real output 1,000 are consistent with any price level."
+      ],
+      "tag": "quantity_equation",
+      "type": "analysis",
+      "objective": "31.1",
+      "difficulty": "legendaryboss",
+      "conceptCluster": "quantity_theory",
+      "primarySkill": "solve_price_level_across_multiple_changes",
+      "secondarySkills": [
+        "money_supply",
+        "velocity",
+        "output"
+      ],
+      "repairSkill": "solve_quantity_equation_for_p",
+      "commonError": "Incorrectly concludes “Real output is 2000; multiply nominal spending by the price level” in this quantity theory of money task.",
+      "feedback": "Verified MV=200×5=1,000. If verified real output is also 1,000, the consistent price level is P =MV/Y=1. The original price 2 would instead imply output 500. The identity locates the inconsistency given which measurements are independently confirmed.",
+      "aHash": "334d6da014acbb80436671bb73e6dc9841c1b22aac0136b935f15d4465ccf440",
+      "schemaVersion": "2.0.0-pilot",
+      "questionId": "LG-Q-9122",
+      "originalLegacyId": 9122,
+      "sourceGlobal": "questionBanks",
+      "sourcePool": "legendaryBoss",
+      "sourceRecordOrder": 22,
+      "domainId": "ECON",
+      "conceptId": "ECON-MAC-QUANTITY-THEORY-INFLATION",
+      "outcomeIds": [
+        "OUT-MAC-QUANTITY-THEORY-INFLATION-01"
+      ],
+      "skillId": "solve_price_level_across_multiple_changes",
+      "secondarySkillIds": [
+        "money_supply",
+        "velocity",
+        "output"
+      ],
+      "repairSkillId": "solve_quantity_equation_for_p",
+      "questionType": "legendary_boss_multi_year_quantity",
+      "assessmentTier": "legendary",
+      "poolRole": "boss",
+      "runtimeRole": "legendary-boss",
+      "provenance": {
+        "sourceGame": "liquidityGrid",
+        "sourceBank": "liquidity-grid-student",
+        "sourceGlobal": "questionBanks",
+        "sourcePool": "legendaryBoss",
+        "sourceRecordOrder": 22,
+        "legacyId": 9122,
+        "legacyObjective": "31.1"
+      },
+      "answerFormat": "aHash",
+      "resourceMatching": {
+        "sourceObjective": "31.1",
+        "objectiveKey": "LO31.1",
+        "sourceAccurateRecommendationHook": false
+      },
+      "source": {
+        "bankId": "liquidity-grid-student",
+        "legacyId": 9122,
+        "legacyObjective": "31.1",
+        "legacyPool": "questionBanks.legendaryBoss",
+        "sourceRecordOrder": 22,
+        "sourceGame": "liquidityGrid"
+      },
+      "bossRole": "legendary-boss",
+      "canonicalId": "LG-Q-9122",
+      "sourceId": 9122,
+      "sourceGame": "liquidity-grid",
+      "sourceChapter": [
+        31,
+        1
+      ],
+      "sourceHash": "a717c43d5c8fcc34d81d49736abecea4570415ed7ea63d8c6a95c9640628647e",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "liquidity-grid",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\liquidity-grid\\package\\questions.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "legendaryBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 22,
+          "sourceId": 9122,
+          "sourceHash": "a717c43d5c8fcc34d81d49736abecea4570415ed7ea63d8c6a95c9640628647e",
+          "sourceCurationPhase": "phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1"
+        }
+      ],
+      "primaryConceptId": "quantity-theory-of-money",
+      "secondaryConceptIds": [],
+      "instructionalRole": "legendaryBoss",
+      "canonicalDifficulty": "legendary",
+      "originalSourcePool": "legendaryBoss",
+      "originalBossTier": "legendaryBoss",
+      "bossStage": "final",
+      "sourceCurationPhase": "phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1"
+    }
+  },
+  {
+    "id": "PM2A-SRPC-EB-009",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "macro-m2a-phillips-family",
+      "sourceCurationPhase": "phaseM2a-phillips-disinflation-family-maturation-v1",
+      "sourceFiles": [
+        "phaseM2a-phillips-disinflation-family-maturation-v1_questions.json"
+      ]
+    },
+    "placements": [
+      [
+        "short-run-phillips-curve",
+        "boss"
+      ]
+    ],
+    "q": {
+      "id": "PM2A-SRPC-EB-009",
+      "sourceGame": "macro-m2a-phillips-family",
+      "q": "Use π=πe−0.5(u−5), with rates in percent. Actual inflation is 4% and unemployment is 3%. What expectation is consistent, and does that outcome locate the economy on LRPC?",
+      "options": [
+        "Expected inflation is 2%; lower unemployment must reduce inflation below expectations.",
+        "Expected inflation is 3%; unemployment below 5% places the outcome off LRPC.",
+        "Expected inflation is 5%; unemployment below 5% places the outcome on LRPC.",
+        "Expected inflation is 4%; actual inflation alone identifies expectations and the long run."
+      ],
+      "tag": "short_run_phillips_curve",
+      "type": "multi-step",
+      "objective": "MACRO.M2A",
+      "difficulty": "easyBoss",
+      "conceptCluster": "macro_phillips_disinflation",
+      "primarySkill": "srpc_shift",
+      "secondarySkills": [],
+      "repairSkill": "srpc_shift",
+      "commonError": "Incorrect inference: Expected inflation is 5%; unemployment below 5% places the outcome on LRPC.",
+      "feedback": "Rearrange to πe=π+0.5(u−5)=4+0.5(3−5)=3%. The natural benchmark is 5%; observed unemployment of 3% is a short-run deviation, not a point on the vertical LRPC.",
+      "aHash": "da901e16dbc0cf81f584f68a9c5edfd8fc05f2b22090e3b58b26c3d1a09f7d8b",
+      "canonicalId": "PM2A-SRPC-EB-009",
+      "sourceId": 8200009,
+      "sourceChapter": [
+        35
+      ],
+      "sourcePool": "easyBoss",
+      "primaryConceptId": "short-run-phillips-curve",
+      "secondaryConceptIds": [],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easyBoss",
+      "originalBossTier": "easyBoss",
+      "sourceCurationPhase": "phaseM2a-phillips-disinflation-family-maturation-v1",
+      "boss": "Checkpoint One",
+      "sourceHash": "dc96a8444f159154b2cd0cd719f722c5755f5c3f64fb68f9933c31353c56dcc2",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "macro-m2a-phillips-family",
+          "sourceFile": "phaseM2a-phillips-disinflation-family-maturation-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easyBoss",
+          "routeKey": "srpc_shift",
+          "sourceRecordOrder": 8,
+          "sourceId": 8200009,
+          "sourceHash": "dc96a8444f159154b2cd0cd719f722c5755f5c3f64fb68f9933c31353c56dcc2",
+          "sourceCurationPhase": "phaseM2a-phillips-disinflation-family-maturation-v1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "PM2B3-PROD-EB-001",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "macro-m2b3-growth-productivity-family",
+      "sourceCurationPhase": "phaseM2b3-growth-productivity-family-maturation-v1",
+      "sourceFiles": [
+        "phaseM2b3-growth-productivity-family-maturation-v1_questions.json"
+      ]
+    },
+    "placements": [
+      [
+        "productivity-measurement",
+        "boss"
+      ]
+    ],
+    "q": {
+      "id": "PM2B3-PROD-EB-001",
+      "sourceGame": "macro-m2b3-growth-productivity-family",
+      "q": "Two plants produce the same 1700 units. Plant A uses 170 hours and B uses 340 hours. B then cuts hours by 40% without changing output. Which comparison is correct?",
+      "options": [
+        "B's productivity rises 66.7% and remains below A's.",
+        "B's productivity rises 40% and reaches A's level.",
+        "B's productivity falls 40% and remains below A's.",
+        "B's productivity rises 100% and exceeds A's level."
+      ],
+      "tag": "productivity_measurement",
+      "type": "analysis",
+      "objective": "LO26.2",
+      "difficulty": "easyBoss",
+      "conceptCluster": "growth_productivity",
+      "primarySkill": "productivity_calculation",
+      "secondarySkills": [],
+      "repairSkill": "productivity_calculation",
+      "commonError": "Incorrectly concludes “B's productivity rises 40% and equals A's productivity” in this productivity measurement task.",
+      "feedback": "B initially produces 5 units/hour; after hours fall to 60%, productivity is 5/0.6≈8.33, a 66.7% gain but still below A's 10.",
+      "aHash": "011cd55fd5fb20316ba099c14d978d30acba81184a24d5c8aae7cef273785708",
+      "canonicalId": "PM2B3-PROD-EB-001",
+      "sourceId": 8500015,
+      "sourceChapter": [
+        26,
+        2
+      ],
+      "sourcePool": "easyBoss",
+      "primaryConceptId": "productivity-measurement",
+      "secondaryConceptIds": [],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easyBoss",
+      "originalBossTier": "easyBoss",
+      "sourceCurationPhase": "phaseM2b3-growth-productivity-family-maturation-v1",
+      "boss": "Checkpoint One",
+      "sourceHash": "c6a707d26cd37ea093bb5dc4fa5eb70df64388c3c28b9d0e58fba5dfd1399aee",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "macro-m2b3-growth-productivity-family",
+          "sourceFile": "phaseM2b3-growth-productivity-family-maturation-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easyBoss",
+          "routeKey": "productivity_calculation",
+          "sourceRecordOrder": 0,
+          "sourceId": 8500015,
+          "sourceHash": "c6a707d26cd37ea093bb5dc4fa5eb70df64388c3c28b9d0e58fba5dfd1399aee",
+          "sourceCurationPhase": "phaseM2b3-growth-productivity-family-maturation-v1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ECON-NL-EASYBOSS-2013",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "national-ledger",
+      "sourceCurationPhase": "phaseM2b1-gdp-national-output-family-maturation-v1",
+      "sourceFiles": [
+        "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\national-ledger\\national_ledger_questions_student.js"
+      ]
+    },
+    "placements": [
+      [
+        "real-versus-nominal-gdp",
+        "boss"
+      ]
+    ],
+    "q": {
+      "id": "ECON-NL-EASYBOSS-2013",
+      "difficulty": "easyBoss",
+      "conceptCluster": "real_nominal_gdp",
+      "primarySkill": "nominal_vs_real_gdp",
+      "secondarySkills": [
+        "gdp_deflator"
+      ],
+      "repairSkill": "nominal_vs_real_gdp",
+      "commonError": "Incorrectly concludes “Aggregate real GDP rises 20%; real GDP per person rises about 14.3%” in this real versus nominal gdp task.",
+      "q": "Nominal GDP rises from $1100 to $1320, while the deflator rises from 100 to 120. Population rises 5%. Which combined real-output conclusion is supported?",
+      "options": [
+        "Aggregate real GDP rises 20%; real GDP per person rises about 14.3%",
+        "Aggregate real GDP is unchanged; real GDP per person is unchanged",
+        "Aggregate real GDP falls 20%; population growth raises output per person",
+        "Aggregate real GDP is unchanged; real GDP per person falls about 4.8%"
+      ],
+      "tag": "real_nominal_gdp",
+      "type": "analysis",
+      "objective": "LO24.4",
+      "boss": "Registrar",
+      "feedback": "Real GDP is 1100/1 = 1100 initially and 1320/1.2 = 1100 later. Per-person output changes by 1/1.05−1 ≈ −4.8%.",
+      "aHash": "9658e7e621d62ca6fe448c284a42cbc0e773c647b0de120576ea34394ebdc0a2",
+      "canonicalId": "ECON-NL-EASYBOSS-2013",
+      "sourceId": 2013,
+      "sourceGame": "national-ledger",
+      "sourceChapter": [
+        24,
+        4
+      ],
+      "sourcePool": "easyBoss",
+      "sourceHash": "5086a9e45f13e91bed82fd9f90da5ba685477931c522dd4f0c8771f3d3677869",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "national-ledger",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\national-ledger\\national_ledger_questions_student.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "easyBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 13,
+          "sourceId": 2013,
+          "sourceHash": "5086a9e45f13e91bed82fd9f90da5ba685477931c522dd4f0c8771f3d3677869"
+        }
+      ],
+      "primaryConceptId": "real-versus-nominal-gdp",
+      "secondaryConceptIds": [
+        "cpi-versus-gdp-deflator"
+      ],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easyBoss",
+      "originalBossTier": "easyBoss",
+      "sourceCurationPhase": "phaseM2b1-gdp-national-output-family-maturation-v1"
+    }
+  },
+  {
+    "id": "PM2C2-ICOST-EB-002",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "macro-m2c2-money-growth-inflation-neutrality-family",
+      "sourceCurationPhase": "phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1",
+      "sourceFiles": [
+        "phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1_questions.json"
+      ]
+    },
+    "placements": [
+      [
+        "inflation-costs",
+        "boss"
+      ]
+    ],
+    "q": {
+      "id": "PM2C2-ICOST-EB-002",
+      "sourceGame": "macro-m2c2-money-growth-inflation-neutrality-family",
+      "q": "A saver earns a nominal $240 return that only compensates for inflation. The tax system taxes the entire nominal return without inflation adjustment. Which inference follows?",
+      "options": [
+        "The tax increases the saver's real return because it is charged in nominal dollars",
+        "The nominal return is all a real gain because inflation compensation counts as extra purchasing power",
+        "Tax can reduce real principal despite a zero pre-tax real gain; nominal income and real income differ",
+        "No tax distortion is possible because a zero real gain implies a zero nominal tax base"
+      ],
+      "tag": "inflation_costs",
+      "type": "analysis",
+      "objective": "LO31.4",
+      "difficulty": "easyBoss",
+      "conceptCluster": "inflation_money_growth",
+      "primarySkill": "inflation_cost_mechanism",
+      "secondarySkills": [],
+      "repairSkill": "inflation_cost_mechanism",
+      "commonError": "Incorrectly concludes “The tax increases the saver's real return because it is charged in nominal dollars” in this inflation costs task.",
+      "feedback": "A tax on nominal interest can tax inflation compensation as though it were real income. After-tax purchasing power can therefore fall even when the pre-tax real return is zero.",
+      "aHash": "611a40395ff22904457d78b557ae938edc4d9a663aee53a88737e95719086e28",
+      "canonicalId": "PM2C2-ICOST-EB-002",
+      "sourceId": 8900033,
+      "sourceChapter": [
+        31,
+        4
+      ],
+      "sourcePool": "easyBoss",
+      "primaryConceptId": "inflation-costs",
+      "secondaryConceptIds": [],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easyBoss",
+      "originalBossTier": "easyBoss",
+      "sourceCurationPhase": "phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1",
+      "boss": "Checkpoint One",
+      "sourceHash": "010f0c05fbfb49b43d47765237684f707a784deb09e78064b4d3f13a6e5f102d",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "macro-m2c2-money-growth-inflation-neutrality-family",
+          "sourceFile": "phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easyBoss",
+          "routeKey": "inflation_cost_mechanism",
+          "sourceRecordOrder": 1,
+          "sourceId": 8900033,
+          "sourceHash": "010f0c05fbfb49b43d47765237684f707a784deb09e78064b4d3f13a6e5f102d",
+          "sourceCurationPhase": "phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "PM2A-EXP-EB-006",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "macro-m2a-phillips-family",
+      "sourceCurationPhase": "phaseM2a-phillips-disinflation-family-maturation-v1",
+      "sourceFiles": [
+        "phaseM2a-phillips-disinflation-family-maturation-v1_questions.json"
+      ]
+    },
+    "placements": [
+      [
+        "phillips-curve-expectations",
+        "boss"
+      ]
+    ],
+    "q": {
+      "id": "PM2A-EXP-EB-006",
+      "sourceGame": "macro-m2a-phillips-family",
+      "q": "Workers repeatedly observe inflation above their forecasts. Supply conditions and natural unemployment are unchanged. Which adaptation and policy implication follow?",
+      "options": [
+        "Higher forecasts shift SRPC down; repeating inflation permanently lowers unemployment further",
+        "Higher forecasts move the economy along an unchanged SRPC rather than changing its intercept",
+        "Higher forecasts shift LRPC left by the same number of points as the forecast revision",
+        "Higher forecasts shift SRPC up; repeating the same actual inflation no longer produces the original surprise-driven unemployment reduction"
+      ],
+      "tag": "phillips_curve_expectations",
+      "type": "analysis",
+      "objective": "MACRO.M2A",
+      "difficulty": "easyBoss",
+      "conceptCluster": "macro_phillips_disinflation",
+      "primarySkill": "expected_inflation_shift",
+      "secondarySkills": [],
+      "repairSkill": "expected_inflation_shift",
+      "commonError": "Incorrectly concludes “Higher forecasts shift SRPC down; repeating inflation permanently lowers unemployment further” in this phillips curve expectations task.",
+      "feedback": "Once higher inflation is expected, the short-run curve shifts upward. Maintaining an old actual inflation rate then produces less surprise, so the original temporary unemployment benefit fades.",
+      "aHash": "b249950176bb3a15263bc6ecf9063891127e4758f347c5291bfc5c8915045f57",
+      "canonicalId": "PM2A-EXP-EB-006",
+      "sourceId": 8200021,
+      "sourceChapter": [
+        35
+      ],
+      "sourcePool": "easyBoss",
+      "primaryConceptId": "phillips-curve-expectations",
+      "secondaryConceptIds": [],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easyBoss",
+      "originalBossTier": "easyBoss",
+      "sourceCurationPhase": "phaseM2a-phillips-disinflation-family-maturation-v1",
+      "boss": "Checkpoint One",
+      "sourceHash": "907735c26b40ef0c2f0eecd45361dc2150bd688b854494b5d9e3e2047a3ebe9b",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "macro-m2a-phillips-family",
+          "sourceFile": "phaseM2a-phillips-disinflation-family-maturation-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easyBoss",
+          "routeKey": "expected_inflation_shift",
+          "sourceRecordOrder": 5,
+          "sourceId": 8200021,
+          "sourceHash": "907735c26b40ef0c2f0eecd45361dc2150bd688b854494b5d9e3e2047a3ebe9b",
+          "sourceCurationPhase": "phaseM2a-phillips-disinflation-family-maturation-v1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "LG-Q-9105",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "liquidity-grid",
+      "sourceCurationPhase": "phaseM2c1-money-banking-fed-family-maturation-v1",
+      "sourceFiles": [
+        "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\liquidity-grid\\package\\questions.js"
+      ]
+    },
+    "placements": [
+      [
+        "bank-balance-sheets-reserves-and-capital",
+        "legendaryBoss"
+      ]
+    ],
+    "q": {
+      "id": "LG-Q-9105",
+      "q": "A bank grants a $140 loan by crediting the borrower's checking account; no cash leaves initially. Which entries and subsequent constraint are correct?",
+      "options": [
+        "Reserve assets and capital each rise $140; no deposit liability is created",
+        "Deposit liabilities fall $140 while loan assets rise; the bank's net worth rises immediately",
+        "The bank must first reduce another customer's deposit by $140; total deposits cannot increase",
+        "Loan assets and deposit liabilities each rise $140; later payments may require reserve settlement"
+      ],
+      "tag": "excess_reserves",
+      "type": "analysis",
+      "objective": "30.3",
+      "difficulty": "legendaryboss",
+      "conceptCluster": "bank_money_creation",
+      "primarySkill": "solve_deposits_from_reserve_data",
+      "secondarySkills": [
+        "actual_reserves",
+        "excess_reserves",
+        "required_reserves"
+      ],
+      "repairSkill": "excess_reserves_formula",
+      "commonError": "Incorrectly concludes “Reserve assets and capital each rise $140; no deposit liability is created” in this bank balance sheets reserves and capital task.",
+      "feedback": "Loan origination creates a bank asset and a matching deposit liability, not instant bank equity. If the deposit is spent to another bank, settlement can create a reserve need.",
+      "aHash": "1501c62289518142244d226a251ea6b2ab27247e7018c37f4fbf282b5f46ac04",
+      "schemaVersion": "2.0.0-pilot",
+      "questionId": "LG-Q-9105",
+      "originalLegacyId": 9105,
+      "sourceGlobal": "questionBanks",
+      "sourcePool": "legendaryBoss",
+      "sourceRecordOrder": 5,
+      "domainId": "ECON",
+      "conceptId": "ECON-MAC-FRACTIONAL-RESERVE-BANKING",
+      "outcomeIds": [
+        "OUT-MAC-FRACTIONAL-RESERVE-BANKING-01"
+      ],
+      "skillId": "solve_deposits_from_reserve_data",
+      "secondarySkillIds": [
+        "actual_reserves",
+        "excess_reserves",
+        "required_reserves"
+      ],
+      "repairSkillId": "excess_reserves_formula",
+      "questionType": "legendary_boss_reverse_calculation",
+      "assessmentTier": "legendary",
+      "poolRole": "boss",
+      "runtimeRole": "legendary-boss",
+      "provenance": {
+        "sourceGame": "liquidityGrid",
+        "sourceBank": "liquidity-grid-student",
+        "sourceGlobal": "questionBanks",
+        "sourcePool": "legendaryBoss",
+        "sourceRecordOrder": 5,
+        "legacyId": 9105,
+        "legacyObjective": "30.3"
+      },
+      "answerFormat": "aHash",
+      "resourceMatching": {
+        "sourceObjective": "30.3",
+        "objectiveKey": "LO30.3",
+        "sourceAccurateRecommendationHook": false
+      },
+      "source": {
+        "bankId": "liquidity-grid-student",
+        "legacyId": 9105,
+        "legacyObjective": "30.3",
+        "legacyPool": "questionBanks.legendaryBoss",
+        "sourceRecordOrder": 5,
+        "sourceGame": "liquidityGrid"
+      },
+      "bossRole": "legendary-boss",
+      "calculationMetadata": {
+        "present": true,
+        "sourceType": "legendary_boss_reverse_calculation",
+        "sourceDifficulty": "legendaryboss"
+      },
+      "canonicalId": "LG-Q-9105",
+      "sourceId": 9105,
+      "sourceGame": "liquidity-grid",
+      "sourceChapter": [
+        30
+      ],
+      "sourceHash": "56b7f6e90e4a75731719dccde349a2977e8db5eb8fba364dbac9235de83bbc41",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "liquidity-grid",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\liquidity-grid\\package\\questions.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "legendaryBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 5,
+          "sourceId": 9105,
+          "sourceHash": "56b7f6e90e4a75731719dccde349a2977e8db5eb8fba364dbac9235de83bbc41",
+          "sourceCurationPhase": "phaseM2c1-money-banking-fed-family-maturation-v1"
+        }
+      ],
+      "primaryConceptId": "bank-balance-sheets-reserves-and-capital",
+      "secondaryConceptIds": [],
+      "instructionalRole": "legendaryBoss",
+      "canonicalDifficulty": "legendary",
+      "originalSourcePool": "legendaryBoss",
+      "originalBossTier": "legendaryBoss",
+      "bossStage": "opening",
+      "sourceCurationPhase": "phaseM2c1-money-banking-fed-family-maturation-v1",
+      "sourcePrimaryConceptId": "bank-money-creation",
+      "familyConceptId": "money-banking-fed",
+      "subtopicIds": [
+        "bank-balance-sheets-reserves-and-capital"
+      ]
+    }
+  },
+  {
+    "id": "LG-Q-9102",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "liquidity-grid",
+      "sourceCurationPhase": "phaseM2c1-money-banking-fed-family-maturation-v1",
+      "sourceFiles": [
+        "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\liquidity-grid\\package\\questions.js"
+      ]
+    },
+    "placements": [
+      [
+        "deposit-creation-and-money-multiplier",
+        "legendaryBoss"
+      ]
+    ],
+    "q": {
+      "id": "LG-Q-9102",
+      "q": "Banks receive $140 in new reserves. The required reserve ratio is 10%, which would give a simple deposit multiplier of 10 if banks held no excess reserves. Banks also choose to hold excess reserves equal to 10% of deposits. With no currency leakage, what is the maximum deposit increase supported by the new reserves?",
+      "options": [
+        "$2800 in total deposits; add the reciprocals of the two ratios",
+        "$280 in total deposits; multiply reserves by the percentage expressed as 2",
+        "$700 in total deposits; the effective reserve fraction is 20%",
+        "$1400 in total deposits; excess reserves never constrain lending"
+      ],
+      "tag": "money_multiplier_banking",
+      "type": "analysis",
+      "objective": "30.3",
+      "difficulty": "legendaryboss",
+      "conceptCluster": "bank_money_creation",
+      "primarySkill": "trace_second_round_lending",
+      "secondarySkills": [
+        "excess_reserves",
+        "loan_redeposit",
+        "required_reserves"
+      ],
+      "repairSkill": "fractional_reserve_money_creation",
+      "commonError": "Incorrectly concludes “$2800 in total deposits; add the reciprocals of the two ratios” in this deposit creation and money multiplier task.",
+      "feedback": "Required plus additional reserves total 20% of deposits. Thus deposits supported by 140 new reserves are 140/.20 = 700, rather than the required-ratio-only maximum.",
+      "aHash": "5c27c14d4c6d2cb4b301351af88aff8e58617a5cdc728dea46b88b94ed11a801",
+      "schemaVersion": "2.0.0-pilot",
+      "questionId": "LG-Q-9102",
+      "originalLegacyId": 9102,
+      "sourceGlobal": "questionBanks",
+      "sourcePool": "legendaryBoss",
+      "sourceRecordOrder": 2,
+      "domainId": "ECON",
+      "conceptId": "ECON-MAC-FRACTIONAL-RESERVE-BANKING",
+      "outcomeIds": [
+        "OUT-MAC-FRACTIONAL-RESERVE-BANKING-01"
+      ],
+      "skillId": "trace_second_round_lending",
+      "secondarySkillIds": [
+        "excess_reserves",
+        "loan_redeposit",
+        "required_reserves"
+      ],
+      "repairSkillId": "fractional_reserve_money_creation",
+      "questionType": "legendary_boss_sequential_calculation",
+      "assessmentTier": "legendary",
+      "poolRole": "boss",
+      "runtimeRole": "legendary-boss",
+      "provenance": {
+        "sourceGame": "liquidityGrid",
+        "sourceBank": "liquidity-grid-student",
+        "sourceGlobal": "questionBanks",
+        "sourcePool": "legendaryBoss",
+        "sourceRecordOrder": 2,
+        "legacyId": 9102,
+        "legacyObjective": "30.3"
+      },
+      "answerFormat": "aHash",
+      "resourceMatching": {
+        "sourceObjective": "30.3",
+        "objectiveKey": "LO30.3",
+        "sourceAccurateRecommendationHook": false
+      },
+      "source": {
+        "bankId": "liquidity-grid-student",
+        "legacyId": 9102,
+        "legacyObjective": "30.3",
+        "legacyPool": "questionBanks.legendaryBoss",
+        "sourceRecordOrder": 2,
+        "sourceGame": "liquidityGrid"
+      },
+      "bossRole": "legendary-boss",
+      "calculationMetadata": {
+        "present": true,
+        "sourceType": "legendary_boss_sequential_calculation",
+        "sourceDifficulty": "legendaryboss"
+      },
+      "canonicalId": "LG-Q-9102",
+      "sourceId": 9102,
+      "sourceGame": "liquidity-grid",
+      "sourceChapter": [
+        30
+      ],
+      "sourceHash": "5dd1e34e2b2aa730fae760bf0653184f4f9a64a3fd24b6a8186569a7ed92ea64",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "liquidity-grid",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\liquidity-grid\\package\\questions.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "legendaryBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 2,
+          "sourceId": 9102,
+          "sourceHash": "5dd1e34e2b2aa730fae760bf0653184f4f9a64a3fd24b6a8186569a7ed92ea64",
+          "sourceCurationPhase": "phaseM2c1-money-banking-fed-family-maturation-v1"
+        }
+      ],
+      "primaryConceptId": "deposit-creation-and-money-multiplier",
+      "secondaryConceptIds": [],
+      "instructionalRole": "legendaryBoss",
+      "canonicalDifficulty": "legendary",
+      "originalSourcePool": "legendaryBoss",
+      "originalBossTier": "legendaryBoss",
+      "bossStage": "middle",
+      "sourceCurationPhase": "phaseM2c1-money-banking-fed-family-maturation-v1",
+      "sourcePrimaryConceptId": "bank-money-creation",
+      "familyConceptId": "money-banking-fed",
+      "subtopicIds": [
+        "deposit-creation-and-money-multiplier"
+      ]
+    }
+  },
+  {
+    "id": "LG-Q-9010",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "liquidity-grid",
+      "sourceFiles": [
+        "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\liquidity-grid\\package\\questions.js"
+      ]
+    },
+    "placements": [
+      [
+        "monetary-policy-tools",
+        "legendary"
+      ]
+    ],
+    "q": {
+      "id": "LG-Q-9010",
+      "q": "A hypothetical bank has $600,000 in deposits and $90,000 in reserves. The required-reserve ratio rises from 10 to 15 percent. The bank cannot obtain new reserves, and any additional loan payment would settle at another bank. Which conclusion distinguishes its reserve position from its ability to expand?",
+      "options": [
+        "It meets the new requirement exactly, but has no excess reserves for an outgoing loan.",
+        "It has a $30,000 reserve deficit and must obtain reserves just to comply.",
+        "It retains $30,000 of excess reserves because deposits have not changed.",
+        "It must shrink deposits by $90,000 even if it makes no new loan."
+      ],
+      "tag": "required_reserves",
+      "type": "diagnostic",
+      "objective": "30.4",
+      "difficulty": "legendary",
+      "conceptCluster": "central_banking",
+      "primarySkill": "diagnose_policy_constraint",
+      "secondarySkills": [
+        "reserve_requirement",
+        "excess_reserves",
+        "bank_lending"
+      ],
+      "repairSkill": "reserve_requirement_effect",
+      "commonError": "thinking a higher reserve requirement creates more excess reserves",
+      "feedback": "Required reserves rise from $60,000 to $90,000, exactly equal to actual reserves. The bank is compliant but the specified settlement constraint prevents further outgoing lending without adjustment.",
+      "aHash": "80c6f612d7a04998b6fab4fc353695f34ec16b1dc2a644cee21d082746c54afc",
+      "schemaVersion": "2.0.0-pilot",
+      "questionId": "LG-Q-9010",
+      "originalLegacyId": 9010,
+      "sourceGlobal": "questionBanks",
+      "sourcePool": "legendary",
+      "sourceRecordOrder": 10,
+      "domainId": "ECON",
+      "conceptId": "ECON-MAC-MONETARY-CONTROL-TOOLS",
+      "outcomeIds": [
+        "OUT-MAC-MONETARY-CONTROL-TOOLS-01"
+      ],
+      "skillId": "diagnose_policy_constraint",
+      "secondarySkillIds": [
+        "reserve_requirement",
+        "excess_reserves",
+        "bank_lending"
+      ],
+      "repairSkillId": "reserve_requirement_effect",
+      "questionType": "legendary_policy_diagnosis",
+      "assessmentTier": "legendary",
+      "poolRole": "standard",
+      "runtimeRole": "legendary",
+      "provenance": {
+        "sourceGame": "liquidityGrid",
+        "sourceBank": "liquidity-grid-student",
+        "sourceGlobal": "questionBanks",
+        "sourcePool": "legendary",
+        "sourceRecordOrder": 10,
+        "legacyId": 9010,
+        "legacyObjective": "30.4"
+      },
+      "answerFormat": "aHash",
+      "resourceMatching": {
+        "sourceObjective": "30.4",
+        "objectiveKey": "LO30.4",
+        "sourceAccurateRecommendationHook": false
+      },
+      "source": {
+        "bankId": "liquidity-grid-student",
+        "legacyId": 9010,
+        "legacyObjective": "30.4",
+        "legacyPool": "questionBanks.legendary",
+        "sourceRecordOrder": 10,
+        "sourceGame": "liquidityGrid"
+      },
+      "canonicalId": "LG-Q-9010",
+      "sourceId": 9010,
+      "sourceGame": "liquidity-grid",
+      "sourceChapter": [
+        30,
+        4
+      ],
+      "sourceHash": "9997e7048aac89de39bac31891855568f922aada98ccac718e11c879da6952b9",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "liquidity-grid",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\liquidity-grid\\package\\questions.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "legendary",
+          "routeKey": null,
+          "sourceRecordOrder": 10,
+          "sourceId": 9010,
+          "sourceHash": "9997e7048aac89de39bac31891855568f922aada98ccac718e11c879da6952b9"
+        }
+      ],
+      "primaryConceptId": "monetary-policy-tools",
+      "secondaryConceptIds": [
+        "bank-money-creation"
+      ],
+      "instructionalRole": "legendary",
+      "canonicalDifficulty": "legendary",
+      "originalSourcePool": "legendary",
+      "originalBossTier": null
+    }
+  },
+  {
+    "id": "LG-Q-9130",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "liquidity-grid",
+      "sourceFiles": [
+        "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\liquidity-grid\\package\\questions.js"
+      ]
+    },
+    "placements": [
+      [
+        "liquidity-preference-and-money-market",
+        "legendaryBoss"
+      ]
+    ],
+    "q": {
+      "id": "LG-Q-9130",
+      "q": "Money demand and supply both rise. The interest rate is unchanged. Which inference is justified?",
+      "options": [
+        "The schedules stayed fixed; an unchanged rate rules out either schedule changing.",
+        "The shifts offset at the observed rate; both schedules can have changed.",
+        "Demand fell as supply rose; opposite quantity shifts preserve the observed rate.",
+        "Income and prices stayed fixed; an unchanged rate establishes both underlying variables."
+      ],
+      "tag": "interest_rate_effect",
+      "type": "analysis",
+      "objective": "35.1",
+      "difficulty": "legendaryboss",
+      "conceptCluster": "liquidity_preference",
+      "primarySkill": "read_money_demand_shift_then_apply_multiplier",
+      "secondarySkills": [
+        "money_demand",
+        "interest_rate",
+        "investment",
+        "mpc"
+      ],
+      "repairSkill": "interest_rate_effect_ad_slope",
+      "commonError": "Incorrect inference: The schedules stayed fixed; an unchanged rate rules out either schedule changing.",
+      "feedback": "Equal demand and supply additions at the same rate can leave the rate fixed. An unchanged equilibrium price does not identify unchanged underlying schedules.",
+      "aHash": "320c6e5c8f224cc828d166ff1b215afc3e8d4a271656d72ac3bbdf76a8195a32",
+      "schemaVersion": "2.0.0-pilot",
+      "questionId": "LG-Q-9130",
+      "originalLegacyId": 9130,
+      "sourceGlobal": "questionBanks",
+      "sourcePool": "legendaryBoss",
+      "sourceRecordOrder": 30,
+      "domainId": "ECON",
+      "conceptId": "ECON-MAC-LIQUIDITY-PREFERENCE-AD-AS",
+      "outcomeIds": [
+        "OUT-MAC-LIQUIDITY-PREFERENCE-AD-AS-01"
+      ],
+      "skillId": "read_money_demand_shift_then_apply_multiplier",
+      "secondarySkillIds": [
+        "money_demand",
+        "interest_rate",
+        "investment",
+        "mpc"
+      ],
+      "repairSkillId": "interest_rate_effect_ad_slope",
+      "questionType": "legendary_boss_graph_multiplier",
+      "assessmentTier": "legendary",
+      "poolRole": "boss",
+      "runtimeRole": "legendary-boss",
+      "provenance": {
+        "sourceGame": "liquidityGrid",
+        "sourceBank": "liquidity-grid-student",
+        "sourceGlobal": "questionBanks",
+        "sourcePool": "legendaryBoss",
+        "sourceRecordOrder": 30,
+        "legacyId": 9130,
+        "legacyObjective": "35.1"
+      },
+      "answerFormat": "aHash",
+      "resourceMatching": {
+        "sourceObjective": "35.1",
+        "objectiveKey": "LO35.1",
+        "sourceAccurateRecommendationHook": false
+      },
+      "source": {
+        "bankId": "liquidity-grid-student",
+        "legacyId": 9130,
+        "legacyObjective": "35.1",
+        "legacyPool": "questionBanks.legendaryBoss",
+        "sourceRecordOrder": 30,
+        "sourceGame": "liquidityGrid"
+      },
+      "bossRole": "legendary-boss",
+      "graphImageMetadata": {
+        "present": true,
+        "asset": "moneyd2_moneys2.webp",
+        "sourceType": "legendary_boss_graph_multiplier"
+      },
+      "canonicalId": "LG-Q-9130",
+      "sourceId": 9130,
+      "sourceGame": "liquidity-grid",
+      "sourceChapter": [
+        35,
+        1
+      ],
+      "sourceHash": "1dd35d90f84c804f36e5c2c55513fdfcb73b875d821f8db6f1175ce27801cf93",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "liquidity-grid",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\liquidity-grid\\package\\questions.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "legendaryBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 30,
+          "sourceId": 9130,
+          "sourceHash": "1dd35d90f84c804f36e5c2c55513fdfcb73b875d821f8db6f1175ce27801cf93"
+        }
+      ],
+      "primaryConceptId": "liquidity-preference-and-money-market",
+      "secondaryConceptIds": [],
+      "instructionalRole": "legendaryBoss",
+      "canonicalDifficulty": "legendary",
+      "originalSourcePool": "legendaryBoss",
+      "originalBossTier": "legendaryBoss",
+      "bossStage": "middle"
+    }
+  },
+  {
+    "id": "PM2B4-UTYPE-LB-001",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "macro-m2b4-unemployment-labor-family",
+      "sourceCurationPhase": "phaseM2b4-unemployment-labor-family-maturation-v1",
+      "sourceFiles": [
+        "phaseM2b4-unemployment-labor-family-maturation-v1_questions.json"
+      ]
+    },
+    "placements": [
+      [
+        "unemployment-types",
+        "legendaryBoss"
+      ]
+    ],
+    "q": {
+      "id": "PM2B4-UTYPE-LB-001",
+      "sourceGame": "macro-m2b4-unemployment-labor-family",
+      "q": "A regional study follows 300 jobless workers after national demand recovers. Former miners still lack skills for local health-care vacancies, while new graduates are interviewing for matching jobs. Which diagnosis and response pair is appropriate?",
+      "options": [
+        "Both groups face cyclical unemployment because neither is currently employed",
+        "Both groups face structural unemployment because job search always requires new skills",
+        "Miners face structural mismatch suited to retraining; graduates face frictional search suited to matching assistance",
+        "Miners face cyclical unemployment suited only to demand stimulus; graduates face structural unemployment suited to changing industries"
+      ],
+      "tag": "unemployment_types",
+      "type": "analysis",
+      "objective": "LO29.3",
+      "difficulty": "legendaryBoss",
+      "conceptCluster": "labor_market",
+      "primarySkill": "frictional_unemployment",
+      "secondarySkills": [],
+      "repairSkill": "frictional_unemployment",
+      "commonError": "Incorrectly concludes “Both groups face cyclical unemployment because neither is currently employed” in this unemployment types task.",
+      "feedback": "The persistence of a skill mismatch after demand recovers identifies a structural problem. Graduates searching for suitable existing matches illustrate frictional unemployment. Each remedy should address its actual mechanism.",
+      "aHash": "9ad05c8d0d680fadc034b10ce148b32a5abd4a753e2d0c65b460da7ee48fa85d",
+      "canonicalId": "PM2B4-UTYPE-LB-001",
+      "sourceId": 8700011,
+      "sourceChapter": [
+        29
+      ],
+      "sourcePool": "frictional_unemployment",
+      "primaryConceptId": "unemployment-types",
+      "secondaryConceptIds": [],
+      "instructionalRole": "legendaryBoss",
+      "canonicalDifficulty": "legendary",
+      "originalSourcePool": "frictional_unemployment",
+      "originalBossTier": "legendaryBoss",
+      "sourceCurationPhase": "phaseM2b4-unemployment-labor-family-maturation-v1",
+      "bossStage": "opening",
+      "sourceHash": "d90d70b1503f24fd3ac48cf550a5a0d89e75023ba1d6790003a8d107012df508",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "macro-m2b4-unemployment-labor-family",
+          "sourceFile": "phaseM2b4-unemployment-labor-family-maturation-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "frictional_unemployment",
+          "routeKey": "frictional_unemployment",
+          "sourceRecordOrder": 0,
+          "sourceId": 8700011,
+          "sourceHash": "d90d70b1503f24fd3ac48cf550a5a0d89e75023ba1d6790003a8d107012df508",
+          "sourceCurationPhase": "phaseM2b4-unemployment-labor-family-maturation-v1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "PMOE-NER-LB-001",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "macro-open-economy-authoring",
+      "sourceCurationPhase": "phaseMacroOpenEconomy-v1",
+      "sourceFiles": [
+        "build/faculty-build-composer/authoring/open_economy_question_pool_author.mjs"
+      ]
+    },
+    "placements": [
+      [
+        "nominal-exchange-rates",
+        "legendaryBoss"
+      ]
+    ],
+    "q": {
+      "id": "PMOE-NER-LB-001",
+      "canonicalId": "PMOE-NER-LB-001",
+      "sourceId": "PMOE-NER-LB-001",
+      "sourceGame": "macro-open-economy-authoring",
+      "q": "A €1,000 investment gains 12 percent, while the euro falls from $1.20 to $1.05. What is the investor's dollar return?",
+      "options": [
+        "A loss of 2 percent",
+        "A gain of 2 percent",
+        "A gain of 12 percent",
+        "A loss of 12.5 percent"
+      ],
+      "tag": "combine_asset_and_currency_returns",
+      "type": "calculation",
+      "objective": "NER.combine_asset_and_currency_returns",
+      "difficulty": "legendary",
+      "canonicalDifficulty": "legendary",
+      "conceptCluster": "nominal-exchange-rates",
+      "primarySkill": "combine_asset_and_currency_returns",
+      "secondarySkills": [],
+      "repairSkill": "combine_asset_and_currency_returns",
+      "commonError": "Incorrectly concludes “A gain of 2 percent” in this nominal exchange rates task.",
+      "feedback": "The initial value is $1,200. The final value is €1,120×$1.05 = $1,176, which is 2 percent lower.",
+      "sourceCurationPhase": "phaseMacroOpenEconomy-v1",
+      "aHash": "bae13198022c681d1a5dd057dc0478d96c1bc159525da98a2647c85176369ab4",
+      "sourceChapter": [
+        18,
+        19
+      ],
+      "sourcePool": "legendaryBoss",
+      "primaryConceptId": "nominal-exchange-rates",
+      "secondaryConceptIds": [],
+      "familyConceptId": "open-economy-macroeconomics",
+      "subtopicIds": [
+        "nominal-exchange-rates"
+      ],
+      "instructionalRole": "legendaryBoss",
+      "originalSourcePool": "legendaryBoss",
+      "originalBossTier": "legendary",
+      "sourceHash": "bbfcfbadd4bd2902a050009633200d9c33df3838f27e9b6474084185301c3283",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "macro-open-economy-authoring",
+          "sourceFile": "build/faculty-build-composer/authoring/open_economy_question_pool_author.mjs",
+          "sourceGlobal": "productionQuestions",
+          "sourcePool": "legendaryBoss",
+          "routeKey": "combine_asset_and_currency_returns",
+          "sourceRecordOrder": 75,
+          "sourceId": "PMOE-NER-LB-001",
+          "sourceHash": "bbfcfbadd4bd2902a050009633200d9c33df3838f27e9b6474084185301c3283",
+          "sourceCurationPhase": "phaseMacroOpenEconomy-v1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "PMOE-RER-L-003",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "macro-open-economy-authoring",
+      "sourceCurationPhase": "phaseMacroOpenEconomy-v1",
+      "sourceFiles": [
+        "build/faculty-build-composer/authoring/open_economy_question_pool_author.mjs"
+      ]
+    },
+    "placements": [
+      [
+        "real-exchange-rates-and-purchasing-power",
+        "legendary"
+      ]
+    ],
+    "q": {
+      "id": "PMOE-RER-L-003",
+      "canonicalId": "PMOE-RER-L-003",
+      "sourceId": "PMOE-RER-L-003",
+      "sourceGame": "macro-open-economy-authoring",
+      "q": "Country A has 9 percent inflation and Country B has 3 percent inflation. Let e be B currency per A currency. What exact percentage decline in e keeps A’s real exchange rate unchanged, and would a 2 percent decline instead produce real appreciation?",
+      "options": [
+        "About 5.50 percent; yes",
+        "6 percent; no",
+        "About 5.83 percent; yes",
+        "2 percent; no"
+      ],
+      "tag": "calculate_real_rate_from_inflation",
+      "type": "calculation",
+      "objective": "RER.calculate_real_rate_from_inflation",
+      "difficulty": "legendary",
+      "canonicalDifficulty": "legendary",
+      "conceptCluster": "real-exchange-rates-and-purchasing-power",
+      "primarySkill": "calculate_real_rate_from_inflation",
+      "secondarySkills": [],
+      "repairSkill": "calculate_real_rate_from_inflation",
+      "commonError": "Uses the inflation-difference approximation as an exact PPP adjustment and misclassifies the smaller nominal decline.",
+      "feedback": "Real stability requires e1/e0 = 1.03/1.09, a decline of about 5.50 percent. With a 2 percent decline, ε1/ε0 = 0.98×1.09/1.03≈1.0371, so A experiences real appreciation.",
+      "sourceCurationPhase": "phaseMacroOpenEconomy-v1",
+      "aHash": "f1c71dfd8da5226e5d4da1356c800f912bc6e13db45db67914f5f8adf6d485b8",
+      "sourceChapter": [
+        18,
+        19
+      ],
+      "sourcePool": "legendary",
+      "primaryConceptId": "real-exchange-rates-and-purchasing-power",
+      "secondaryConceptIds": [],
+      "familyConceptId": "open-economy-macroeconomics",
+      "subtopicIds": [
+        "real-exchange-rates-and-purchasing-power"
+      ],
+      "instructionalRole": "legendary",
+      "originalSourcePool": "legendary",
+      "originalBossTier": null,
+      "sourceHash": "d58b6f9c592445e380b4d04db6223e6ad60b21877b3deb9107c6971f0f297f13",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "macro-open-economy-authoring",
+          "sourceFile": "build/faculty-build-composer/authoring/open_economy_question_pool_author.mjs",
+          "sourceGlobal": "productionQuestions",
+          "sourcePool": "legendary",
+          "routeKey": "calculate_real_rate_from_inflation",
+          "sourceRecordOrder": 102,
+          "sourceId": "PMOE-RER-L-003",
+          "sourceHash": "d58b6f9c592445e380b4d04db6223e6ad60b21877b3deb9107c6971f0f297f13",
+          "sourceCurationPhase": "phaseMacroOpenEconomy-v1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "PG5-PC-L-024",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "macro-concept-library",
+      "sourceFiles": [
+        "phaseGraph5-phillips-curve-audit-corrected-v1"
+      ]
+    },
+    "placements": [
+      [
+        "phillips-curve-expectations",
+        "legendary"
+      ]
+    ],
+    "q": {
+      "id": "PG5-PC-L-024",
+      "q": "Refer to the graph with B to the right of A on SRPC0. Initially actual inflation is B’s rate and expected inflation is A’s rate. Each period expectations equal the previous period’s actual inflation; each one-point expectations change shifts SRPC vertically by one point with slope unchanged. Natural unemployment and supply conditions stay fixed. Policy holds unemployment at B’s rate for one additional period, then requires inflation to be nonnegative in the following period. What inflation occurs in the additional period, and what is the highest unemployment rate compatible with that later inflation constraint?",
+      "options": [
+        "Inflation stays 1.5 percent, then unemployment can remain at 7 percent.",
+        "Inflation is 0.5 percent, then unemployment can remain at 7 percent without deflation.",
+        "Inflation is 2.5 percent, then unemployment can be at most 5 percent.",
+        "Inflation is 0.5 percent, then unemployment can be at most 6 percent."
+      ],
+      "tag": "phillips_curve",
+      "type": "multi-step",
+      "objective": "LO36.3",
+      "difficulty": "legendary",
+      "conceptCluster": "phillips_curve",
+      "primarySkill": "trace_expectations_adjustment",
+      "secondarySkills": [
+        "long-run-phillips-curve",
+        "short-run-phillips-curve"
+      ],
+      "repairSkill": "trace_expectations_adjustment",
+      "commonError": "misreads_phillips_curve_or_natural_rate",
+      "feedback": "The plotted slope is (1.5 − 2.5)/(7 − 5) = −0.5. Expectations first fall from 2.5 to 1.5, so holding unemployment at 7 gives inflation 0.5. Next expectations are 0.5; nonnegative inflation requires 0.5 − 0.5 × (unemployment − 5) ≥ 0, or unemployment no greater than 6. Maintaining 7 would instead produce −0.5 percent inflation.",
+      "image": "question-assets/short-run-phillips-curve/SRPC-03.webp",
+      "aHash": "877bbd7a06ceba3f97cf1ee2f8ca5cc1a6231156c05be68acdea3d233d13f9c1",
+      "canonicalId": "PG5-PC-L-024",
+      "sourceId": 864011,
+      "sourceGame": "macro-concept-library",
+      "sourceChapter": [
+        "phillips-curve-expectations"
+      ],
+      "sourcePool": "legendary",
+      "primaryConceptId": "phillips-curve-expectations",
+      "secondaryConceptIds": [
+        "long-run-phillips-curve",
+        "short-run-phillips-curve"
+      ],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "legendary",
+      "originalSourcePool": "legendary",
+      "originalBossTier": null,
+      "sourceHash": "b51714a17af51e8067309355de49afd56e1a338a6fce654a436b757226d5e869",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "macro-concept-library",
+          "sourceFile": "phaseGraph5-phillips-curve-audit-corrected-v1",
+          "sourceGlobal": "questions",
+          "sourcePool": "legendary",
+          "routeKey": "trace_expectations_adjustment",
+          "sourceRecordOrder": 11,
+          "sourceId": 864011,
+          "sourceHash": "b51714a17af51e8067309355de49afd56e1a338a6fce654a436b757226d5e869"
+        }
+      ],
+      "graphRequired": true,
+      "imageAlt": "Phillips graph with A and B on SRPC0 and vertical LRPC through A.",
+      "graphDescription": "The horizontal axis is Unemployment rate (%) and the vertical axis is Inflation rate (%). Blue SRPC0 is a straight downward-sloping line from (0,5) through A at (5,2.5) and B at (7,1.5) to (10,0). Green LRPC is vertical at unemployment 5 and passes through A. B lies below and right of A on the same curve. Dashed horizontal and vertical guides mark both point coordinates."
+    }
+  },
+  {
+    "id": "P52A-AD-L-004",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "phase5.2a-concept-expansion",
+      "sourceFiles": [
+        "phase5.2a_authoring_questions.json"
+      ]
+    },
+    "placements": [
+      [
+        "aggregate-demand",
+        "legendary"
+      ]
+    ],
+    "q": {
+      "id": "P52A-AD-L-004",
+      "q": "A tax increase and higher government purchases occur together. Which statement is justified without numerical information?",
+      "options": [
+        "The two policies push aggregate demand in opposite directions.",
+        "AD must shift left",
+        "The policies cause only movement along AD",
+        "AD must shift right"
+      ],
+      "tag": "aggregate_demand",
+      "type": "policy-analysis",
+      "objective": "LO34.1",
+      "difficulty": "legendary",
+      "conceptCluster": "ad_as",
+      "primarySkill": "identify_ad_shifters",
+      "repairSkill": "identify_ad_shifters",
+      "commonError": "Assuming a combined policy has a predetermined net effect.",
+      "feedback": "Higher G raises AD; higher taxes tend to reduce consumption and AD.",
+      "aHash": "dfd1b2c827004efbb62d08691a81505f0c1e5948df586bd192e88b5f24eb80f4",
+      "canonicalId": "P52A-AD-L-004",
+      "sourceId": 5200180,
+      "sourceGame": "phase5.2a-concept-expansion",
+      "sourceChapter": [],
+      "sourcePool": "legendary",
+      "sourceHash": "2d8b9cb6425c7b51fece6d56c4677223df0caaef1a7b02338055d7df55f67148",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "phase5.2a-concept-expansion",
+          "sourceFile": "phase5.2a_authoring_questions.json",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "legendary",
+          "routeKey": null,
+          "sourceRecordOrder": 179,
+          "sourceId": 5200180,
+          "sourceHash": "2d8b9cb6425c7b51fece6d56c4677223df0caaef1a7b02338055d7df55f67148"
+        }
+      ],
+      "primaryConceptId": "aggregate-demand",
+      "secondaryConceptIds": [],
+      "instructionalRole": "legendary",
+      "canonicalDifficulty": "legendary",
+      "originalSourcePool": "legendary",
+      "originalBossTier": null
+    }
+  },
+  {
+    "id": "P52A-AD-L-006",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "phase5.2a-concept-expansion",
+      "sourceFiles": [
+        "phase5.2a_authoring_questions.json"
+      ]
+    },
+    "placements": [
+      [
+        "aggregate-demand",
+        "legendary"
+      ]
+    ],
+    "q": {
+      "id": "P52A-AD-L-006",
+      "q": "A country’s currency appreciates and foreign economies enter recession while domestic consumer confidence rises. The net AD effect is:",
+      "options": [
+        "Left: consumption and net exports both fall",
+        "Right: consumption and net exports both rise",
+        "Ambiguous: consumption rises while net exports fall",
+        "Unchanged: higher consumption exactly offsets lower net exports"
+      ],
+      "tag": "aggregate_demand",
+      "type": "multi-step",
+      "objective": "LO34.1",
+      "difficulty": "legendary",
+      "conceptCluster": "ad_as",
+      "primarySkill": "identify_ad_shifters",
+      "repairSkill": "identify_ad_shifters",
+      "commonError": "Assuming offsetting forces are equal without evidence.",
+      "feedback": "Confidence raises C, while appreciation and lower foreign income reduce NX.",
+      "aHash": "e8bcc4952109eacdf20d7704fd87885606c45d72a2fda3a0bc7d99f90b4989d3",
+      "canonicalId": "P52A-AD-L-006",
+      "sourceId": 5200182,
+      "sourceGame": "phase5.2a-concept-expansion",
+      "sourceChapter": [],
+      "sourcePool": "legendary",
+      "sourceHash": "6b738c4bf8122cd2a24d7f6f7db886e0db9ada16f37d577a585cc414335dbefb",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "phase5.2a-concept-expansion",
+          "sourceFile": "phase5.2a_authoring_questions.json",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "legendary",
+          "routeKey": null,
+          "sourceRecordOrder": 181,
+          "sourceId": 5200182,
+          "sourceHash": "6b738c4bf8122cd2a24d7f6f7db886e0db9ada16f37d577a585cc414335dbefb"
+        }
+      ],
+      "primaryConceptId": "aggregate-demand",
+      "secondaryConceptIds": [],
+      "instructionalRole": "legendary",
+      "canonicalDifficulty": "legendary",
+      "originalSourcePool": "legendary",
+      "originalBossTier": null
+    }
+  },
+  {
+    "id": "PM2A-LRPC-L-010",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "macro-m2a-phillips-family",
+      "sourceCurationPhase": "phaseM2a-phillips-disinflation-family-maturation-v1",
+      "sourceFiles": [
+        "phaseM2a-phillips-disinflation-family-maturation-v1_questions.json"
+      ]
+    },
+    "placements": [
+      [
+        "long-run-phillips-curve",
+        "legendary"
+      ]
+    ],
+    "q": {
+      "id": "PM2A-LRPC-L-010",
+      "sourceGame": "macro-m2a-phillips-family",
+      "q": "Economy A lowers its natural rate through better job matching; Economy B only creates an unexpected demand boom. Which comparison is correct?",
+      "options": [
+        "Both economies permanently shift LRPC left because unemployment initially declines",
+        "Only Economy B changes long-run unemployment by raising aggregate demand",
+        "Neither economy can affect unemployment at either a short or long horizon",
+        "A can shift LRPC left; B can only move unemployment below natural temporarily"
+      ],
+      "tag": "long_run_phillips_curve",
+      "type": "application",
+      "objective": "MACRO.M2A",
+      "difficulty": "legendary",
+      "conceptCluster": "macro_phillips_disinflation",
+      "primarySkill": "natural_rate_shift",
+      "secondarySkills": [],
+      "repairSkill": "natural_rate_shift",
+      "commonError": "Moves the economy along a fixed LRPC when the natural rate changes.",
+      "feedback": "A change in labor-market structure can shift the vertical LRPC to a new natural rate.",
+      "aHash": "b150f218755ce9940a564a024c7593fec6817e071afb81bd858ed96cca4758a9",
+      "canonicalId": "PM2A-LRPC-L-010",
+      "sourceId": 8200038,
+      "sourceChapter": [
+        35
+      ],
+      "sourcePool": "natural_rate_shift",
+      "primaryConceptId": "long-run-phillips-curve",
+      "secondaryConceptIds": [
+        "natural-rate-of-unemployment",
+        "short-run-phillips-curve"
+      ],
+      "instructionalRole": "legendary",
+      "canonicalDifficulty": "legendary",
+      "originalSourcePool": "natural_rate_shift",
+      "originalBossTier": null,
+      "sourceCurationPhase": "phaseM2a-phillips-disinflation-family-maturation-v1",
+      "sourceHash": "3c4a7133b454d2adb6a1f8a3749fda76aadf4709a5f553b2c131b57b54d7e683",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "macro-m2a-phillips-family",
+          "sourceFile": "phaseM2a-phillips-disinflation-family-maturation-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "natural_rate_shift",
+          "routeKey": "natural_rate_shift",
+          "sourceRecordOrder": 9,
+          "sourceId": 8200038,
+          "sourceHash": "3c4a7133b454d2adb6a1f8a3749fda76aadf4709a5f553b2c131b57b54d7e683",
+          "sourceCurationPhase": "phaseM2a-phillips-disinflation-family-maturation-v1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "PM2A-LRPC-L-011",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "macro-m2a-phillips-family",
+      "sourceCurationPhase": "phaseM2a-phillips-disinflation-family-maturation-v1",
+      "sourceFiles": [
+        "phaseM2a-phillips-disinflation-family-maturation-v1_questions.json"
+      ]
+    },
+    "placements": [
+      [
+        "long-run-phillips-curve",
+        "legendary"
+      ]
+    ],
+    "q": {
+      "id": "PM2A-LRPC-L-011",
+      "sourceGame": "macro-m2a-phillips-family",
+      "q": "Inflation expectations instantly match a fully anticipated monetary expansion in the model. What Phillips prediction is most consistent?",
+      "options": [
+        "A rightward LRPC shift from higher money growth and unchanged labor institutions",
+        "A guaranteed fall in both inflation and unemployment after expectations adjust",
+        "Little or no temporary unemployment movement away from the natural rate",
+        "A permanent unemployment decline along the SRPC once nominal spending increases"
+      ],
+      "tag": "long_run_phillips_curve",
+      "type": "application",
+      "objective": "MACRO.M2A",
+      "difficulty": "legendary",
+      "conceptCluster": "macro_phillips_disinflation",
+      "primarySkill": "lrpc_vertical",
+      "secondarySkills": [],
+      "repairSkill": "lrpc_vertical",
+      "commonError": "Infers a permanent unemployment gain from the downward-sloping SRPC.",
+      "feedback": "The LRPC is vertical at the natural rate because expected inflation adjusts in the long run.",
+      "aHash": "b0ea4960ca912182f5659fba6b2eaa7d2b2761bb3bc29a951c2998a3397249a6",
+      "canonicalId": "PM2A-LRPC-L-011",
+      "sourceId": 8200039,
+      "sourceChapter": [
+        35
+      ],
+      "sourcePool": "lrpc_vertical",
+      "primaryConceptId": "long-run-phillips-curve",
+      "secondaryConceptIds": [
+        "monetary-neutrality",
+        "phillips-curve-expectations"
+      ],
+      "instructionalRole": "legendary",
+      "canonicalDifficulty": "legendary",
+      "originalSourcePool": "lrpc_vertical",
+      "originalBossTier": null,
+      "sourceCurationPhase": "phaseM2a-phillips-disinflation-family-maturation-v1",
+      "sourceHash": "489db42d20c3643647f3f21ebdd25698f1defe1395bd03a3e2ee1752418dcd27",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "macro-m2a-phillips-family",
+          "sourceFile": "phaseM2a-phillips-disinflation-family-maturation-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "lrpc_vertical",
+          "routeKey": "lrpc_vertical",
+          "sourceRecordOrder": 10,
+          "sourceId": 8200039,
+          "sourceHash": "489db42d20c3643647f3f21ebdd25698f1defe1395bd03a3e2ee1752418dcd27",
+          "sourceCurationPhase": "phaseM2a-phillips-disinflation-family-maturation-v1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "P77-MVM-L-020",
+    "areas": [
+      "general",
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "general-economics-final-maturation",
+      "sourceCurationPhase": "phase7.7-general-economics-final-maturation-v1",
+      "sourceFiles": [
+        "GENERAL_ECONOMICS_QUESTION_CHANGES.json"
+      ]
+    },
+    "placements": [
+      [
+        "micro-versus-macro",
+        "legendary"
+      ]
+    ],
+    "q": {
+      "id": "P77-MVM-L-020",
+      "sourceGame": "general-economics-final-maturation",
+      "q": "A factory replaces workers with equipment. Its investment rises while other firms postpone purchases. Which statement about the evidence is justified?",
+      "options": [
+        "The factory's higher investment establishes a rise in national investment",
+        "Postponement elsewhere makes the factory decision a macro question only",
+        "Opposite firm responses make national investment impossible to measure",
+        "The factory decision is micro; the direction of national investment requires aggregation"
+      ],
+      "tag": "micro versus macro",
+      "type": "application",
+      "objective": "GE.7.7",
+      "difficulty": "legendary",
+      "conceptCluster": "micro_versus_macro",
+      "primarySkill": "both_levels",
+      "secondarySkills": [],
+      "repairSkill": "both_levels",
+      "commonError": "Forcing a question with market and aggregate consequences into only one field.",
+      "feedback": "Individual changes can offset one another. The factory decision and the national total are related but distinct questions.",
+      "aHash": "f3719d3fae36c3b9ca814ba3dddfac14f495fdc1b1f534a7b4d4ac9c0fd76b83",
+      "canonicalId": "P77-MVM-L-020",
+      "sourceId": 7700018,
+      "sourceChapter": [
+        1
+      ],
+      "sourcePool": "both_levels",
+      "primaryConceptId": "micro-versus-macro",
+      "secondaryConceptIds": [],
+      "instructionalRole": "legendary",
+      "canonicalDifficulty": "legendary",
+      "originalSourcePool": "both_levels",
+      "originalBossTier": null,
+      "sourceCurationPhase": "phase7.7-general-economics-final-maturation-v1",
+      "sourceHash": "aa7c5bcfc5fa565c2252e6f5c49f57e608bf36837dfdc89453978dc9e05b896c",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "general-economics-final-maturation",
+          "sourceFile": "GENERAL_ECONOMICS_QUESTION_CHANGES.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "both_levels",
+          "routeKey": "both_levels",
+          "sourceRecordOrder": 19,
+          "sourceId": 7700018,
+          "sourceHash": "3463dd7a69b245924a0ca1284ffdcc996f30686e805350834a0db01391556a38",
+          "sourceCurationPhase": "phase7.7-general-economics-final-maturation-v1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "P76-MODL-EL-003",
+    "areas": [
+      "general",
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "phase7.6-models-assumptions-light-touch-pilot",
+      "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1",
+      "sourceFiles": [
+        "validation_artifacts/models_assumptions_light_touch_pilot/models_assumptions_question_changes.json"
+      ]
+    },
+    "placements": [
+      [
+        "models-and-assumptions",
+        "elite"
+      ]
+    ],
+    "q": {
+      "id": "P76-MODL-EL-003",
+      "sourceGame": "phase7.6-models-assumptions-light-touch-pilot",
+      "q": "A complex model predicts purchases accurately, while a simpler model identifies a price mechanism. Which model should be preferred?",
+      "options": [
+        "Always choose the simple model regardless of performance",
+        "Average the models because mechanisms cannot be tested",
+        "Choose according to whether prediction or explanation is the goal",
+        "Always choose the complex model because it has better fit"
+      ],
+      "tag": "models and assumptions",
+      "type": "application",
+      "objective": "LO2.1",
+      "difficulty": "elite",
+      "conceptCluster": "models_assumptions",
+      "primarySkill": "model_selection",
+      "secondarySkills": [],
+      "repairSkill": "model_selection",
+      "commonError": "Choosing by complexity or preference instead of purpose.",
+      "feedback": "Forecast accuracy favors the complex model for prediction, while the simpler model may be better for identifying and communicating the price mechanism.",
+      "aHash": "c58c6ae4a958249d968e6978135dc2fce8345aa801f28568a0a885afe81c4ea5",
+      "canonicalId": "P76-MODL-EL-003",
+      "sourceId": 7600023,
+      "sourceChapter": [
+        1
+      ],
+      "sourcePool": "elite",
+      "primaryConceptId": "models-and-assumptions",
+      "secondaryConceptIds": [],
+      "instructionalRole": "elite",
+      "canonicalDifficulty": "elite",
+      "originalSourcePool": "elite",
+      "originalBossTier": null,
+      "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1",
+      "sourceHash": "ca9a0123aff78b9f7036f92de44e5cdf30b4593404768830700ac95e0130e03b",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "phase7.6-models-assumptions-light-touch-pilot",
+          "sourceFile": "validation_artifacts/models_assumptions_light_touch_pilot/models_assumptions_question_changes.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "elite",
+          "routeKey": "model_selection",
+          "sourceRecordOrder": 22,
+          "sourceId": 7600023,
+          "sourceHash": "ca9a0123aff78b9f7036f92de44e5cdf30b4593404768830700ac95e0130e03b",
+          "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "PM2C2-NEUT-FB-004",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "macro-m2c2-money-growth-inflation-neutrality-family",
+      "sourceCurationPhase": "phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1",
+      "sourceFiles": [
+        "phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1_questions.json"
+      ]
+    },
+    "placements": [
+      [
+        "monetary-neutrality",
+        "boss"
+      ]
+    ],
+    "q": {
+      "id": "PM2C2-NEUT-FB-004",
+      "sourceGame": "macro-m2c2-money-growth-inflation-neutrality-family",
+      "q": "Money growth rises permanently in an economy whose real productive resources, measured by an index, stay fixed at 240 on that index. Assume monetary neutrality in the long run and stable velocity. Using the quantity theory of money, how does a permanent increase in money growth differ from a one-time increase in the money supply?",
+      "options": [
+        "Faster money growth and a one-time increase both raise sustained inflation equally.",
+        "Faster money growth raises sustained inflation; a one-time increase raises the price level.",
+        "Faster money growth raises sustained real growth; a one-time increase raises real capacity.",
+        "Faster money growth and a one-time increase leave both nominal price measures unchanged."
+      ],
+      "tag": "real_nominal_variables",
+      "type": "analysis",
+      "objective": "LO31.2",
+      "difficulty": "finalBoss",
+      "conceptCluster": "inflation_money_growth",
+      "primarySkill": "neutrality_level_vs_growth",
+      "secondarySkills": [],
+      "repairSkill": "neutrality_level_vs_growth",
+      "commonError": "Incorrectly concludes “Neutrality requires every monetary change to leave both the price level and inflation unchanged” in this monetary neutrality task.",
+      "feedback": "Levels and growth rates differ: a lasting growth-rate change can sustain inflation, whereas a one-time level change is not ongoing faster money growth. Real capacity remains determined by the stated real factors.",
+      "aHash": "a18aa1e4b9e126d20111ce684ebb393e4c0e1e41f3f7ed89b5c1057dc34d24f9",
+      "canonicalId": "PM2C2-NEUT-FB-004",
+      "sourceId": 8900007,
+      "sourceChapter": [
+        31,
+        2
+      ],
+      "sourcePool": "finalBoss",
+      "primaryConceptId": "monetary-neutrality",
+      "secondaryConceptIds": [],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "finalBoss",
+      "originalBossTier": "finalBoss",
+      "sourceCurationPhase": "phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1",
+      "boss": "Final Checkpoint",
+      "sourceHash": "6d8346e92f854a3b96a6e0c53b6b0a09c35ff08749534937aab49abb398df3b2",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "macro-m2c2-money-growth-inflation-neutrality-family",
+          "sourceFile": "phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "finalBoss",
+          "routeKey": "neutrality_level_vs_growth",
+          "sourceRecordOrder": 3,
+          "sourceId": 8900007,
+          "sourceHash": "6d8346e92f854a3b96a6e0c53b6b0a09c35ff08749534937aab49abb398df3b2",
+          "sourceCurationPhase": "phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ECON-SP-MEDIUMBOSS-3011",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "stabilization-protocol",
+      "sourceFiles": [
+        "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\stabilization-protocol\\stabilization_protocol_questions_student.js"
+      ]
+    },
+    "placements": [
+      [
+        "integrated-macroeconomic-analysis",
+        "boss"
+      ]
+    ],
+    "q": {
+      "id": "ECON-SP-MEDIUMBOSS-3011",
+      "difficulty": "legendary",
+      "conceptCluster": "monetary_policy_pc",
+      "primarySkill": "monetary_policy_pc_transition",
+      "secondarySkills": [
+        "trace_expectations_adjustment"
+      ],
+      "repairSkill": "monetary_policy_pc_transition",
+      "commonError": "Incorrectly concludes “The lower deposit expansion proves rates cannot have fallen, so the reported observations are impossible” in this integrated macroeconomic analysis task.",
+      "q": "A banking system receives $350 of reserves. With a required reserve ratio of 10%, the simple model predicts a maximum deposit increase of $3500; actual deposits increase by $1400. Interest rates fall, but firms also expect lower returns on their projects. Why might both deposit growth and investment spending be smaller than the simple model predicts?",
+      "options": [
+        "Leakages can explain a multiplier below ten, and weaker expected returns can further limit investment despite lower rates",
+        "The lower deposit expansion proves rates cannot have fallen, so the reported observations are impossible",
+        "Lower rates guarantee the full predicted investment expansion even when expected returns deteriorate",
+        "The reserve injection raises real productive capacity immediately by the textbook deposit maximum"
+      ],
+      "tag": "disinflation",
+      "type": "integration",
+      "objective": "LO36.4",
+      "boss": "Expectations Regent",
+      "feedback": "Observed multiplier=1400/350=4, below the restrictive simple maximum 10. Even if rates fall, the rate-to-investment link can weaken when expected profitability falls. These are distinct constraints at successive stages.",
+      "aHash": "97af59b2419882debb1766eb7673f885bf8cfaa84b84fbd45cf21880d46723c6",
+      "canonicalId": "ECON-SP-MEDIUMBOSS-3011",
+      "sourceId": 3011,
+      "sourceGame": "stabilization-protocol",
+      "sourceChapter": [
+        36,
+        4
+      ],
+      "sourcePool": "mediumBoss",
+      "sourceHash": "88512ba3daef7a1aa898818f52ae7bf1f3ac30b57b9fa14d9bc3a70c4139cb16",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "stabilization-protocol",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\stabilization-protocol\\stabilization_protocol_questions_student.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "mediumBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 11,
+          "sourceId": 3011,
+          "sourceHash": "88512ba3daef7a1aa898818f52ae7bf1f3ac30b57b9fa14d9bc3a70c4139cb16"
+        }
+      ],
+      "primaryConceptId": "integrated-macroeconomic-analysis",
+      "secondaryConceptIds": [
+        "phillips-curve-expectations"
+      ],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "legendary",
+      "originalSourcePool": "mediumBoss",
+      "originalBossTier": "mediumBoss",
+      "isCheckpointChallenge": true,
+      "challengeStage": "middle",
+      "requiredConceptIds": [
+        "disinflation-and-policy",
+        "short-run-phillips-curve",
+        "phillips-curve-expectations",
+        "macroeconomic-equilibrium-and-shocks"
+      ],
+      "challengeFocusConceptIds": [
+        "disinflation-and-policy",
+        "short-run-phillips-curve"
+      ],
+      "remediationConceptId": "disinflation-and-policy",
+      "challengePathway": "ad-as-to-phillips",
+      "challengeSource": "legacy-f11-reclassified"
+    }
+  },
+  {
+    "id": "ECON-NL-MEDIUMBOSS-3016",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "national-ledger",
+      "sourceFiles": [
+        "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\national-ledger\\national_ledger_questions_student.js"
+      ]
+    },
+    "placements": [
+      [
+        "sources-of-productivity",
+        "boss"
+      ]
+    ],
+    "q": {
+      "id": "ECON-NL-MEDIUMBOSS-3016",
+      "difficulty": "mediumBoss",
+      "conceptCluster": "growth_productivity",
+      "primarySkill": "human_capital",
+      "secondarySkills": [
+        "productivity_calculation"
+      ],
+      "repairSkill": "human_capital",
+      "commonError": "Incorrectly concludes “It confuses diminishing returns with falling total output; the second machine necessarily destroys output” in this sources of productivity task.",
+      "q": "A fixed technology gives an extra 210 units of output from the first additional machine and only 105 from the second. A proposal assumes each later machine adds the first machine's amount. What is the flaw?",
+      "options": [
+        "It ignores diminishing marginal gains; total output can still rise.",
+        "It ignores declining total output; the second machine reduces production.",
+        "It ignores labor displacement; the second machine must halve employment.",
+        "It ignores technical progress; each machine raises future marginal gains."
+      ],
+      "tag": "productivity_factors",
+      "type": "analysis",
+      "objective": "LO26.3",
+      "boss": "Warden",
+      "feedback": "With other inputs and technology fixed, added capital can increase total output at a decreasing rate. A smaller positive increment is not a fall in total output.",
+      "aHash": "7352dc6b64913d2961551da1db92d512ef348ea09291dedfe0c86f33594ed36d",
+      "canonicalId": "ECON-NL-MEDIUMBOSS-3016",
+      "sourceId": 3016,
+      "sourceGame": "national-ledger",
+      "sourceChapter": [
+        26
+      ],
+      "sourcePool": "mediumBoss",
+      "sourceHash": "0018872809bb9a3de11d1100610755cc95df61973049f2d03213191299299dde",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "national-ledger",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\national-ledger\\national_ledger_questions_student.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "mediumBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 16,
+          "sourceId": 3016,
+          "sourceHash": "0018872809bb9a3de11d1100610755cc95df61973049f2d03213191299299dde"
+        }
+      ],
+      "primaryConceptId": "sources-of-productivity",
+      "secondaryConceptIds": [
+        "productivity-measurement"
+      ],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "mediumBoss",
+      "originalBossTier": "mediumBoss"
+    }
+  },
+  {
+    "id": "ECON-NL-FINALBOSS-4010",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "national-ledger",
+      "sourceFiles": [
+        "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\national-ledger\\national_ledger_questions_student.js"
+      ]
+    },
+    "placements": [
+      [
+        "unemployment-types",
+        "boss"
+      ]
+    ],
+    "q": {
+      "id": "ECON-NL-FINALBOSS-4010",
+      "difficulty": "finalBoss",
+      "conceptCluster": "labor_market",
+      "primarySkill": "structural_unemployment",
+      "secondarySkills": [
+        "natural_rate"
+      ],
+      "repairSkill": "structural_unemployment",
+      "commonError": "Incorrectly concludes “Miners face cyclical unemployment suited only to demand stimulus; graduates face structural unemployment suited to changing industries” in this unemployment types task.",
+      "q": "A regional study follows 150 jobless workers after national demand recovers. Former miners still lack skills for local health-care vacancies, while new graduates are interviewing for matching jobs. Which diagnosis and response pair is appropriate?",
+      "options": [
+        "Miners face structural mismatch suited to retraining; graduates face frictional search suited to matching assistance",
+        "Miners face cyclical unemployment suited only to demand stimulus; graduates face structural unemployment suited to changing industries",
+        "Both groups face cyclical unemployment because neither is currently employed",
+        "Both groups face structural unemployment because job search always requires new skills"
+      ],
+      "tag": "unemployment_types",
+      "type": "analysis",
+      "objective": "LO29.3",
+      "boss": "FinalBoss",
+      "feedback": "The persistence of a skill mismatch after demand recovers identifies a structural problem. Graduates searching for suitable existing matches illustrate frictional unemployment. Each remedy should address its actual mechanism.",
+      "aHash": "9ad05c8d0d680fadc034b10ce148b32a5abd4a753e2d0c65b460da7ee48fa85d",
+      "canonicalId": "ECON-NL-FINALBOSS-4010",
+      "sourceId": 4010,
+      "sourceGame": "national-ledger",
+      "sourceChapter": [
+        29
+      ],
+      "sourcePool": "finalBoss",
+      "sourceHash": "995ddcb0bf7bbca5161c2cdc729c3ba825a49e806d176ca3d2c73742e7908a7a",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "national-ledger",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\national-ledger\\national_ledger_questions_student.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "finalBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 10,
+          "sourceId": 4010,
+          "sourceHash": "995ddcb0bf7bbca5161c2cdc729c3ba825a49e806d176ca3d2c73742e7908a7a"
+        }
+      ],
+      "primaryConceptId": "unemployment-types",
+      "secondaryConceptIds": [
+        "natural-rate-of-unemployment"
+      ],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "finalBoss",
+      "originalBossTier": "finalBoss"
+    }
+  },
+  {
+    "id": "LG-Q-9139",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "liquidity-grid",
+      "sourceFiles": [
+        "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\liquidity-grid\\package\\questions.js"
+      ]
+    },
+    "placements": [
+      [
+        "stabilization-policy",
+        "legendaryBoss"
+      ]
+    ],
+    "q": {
+      "id": "LG-Q-9139",
+      "q": "At a fixed reference price level, desired spending is $600 billion below the policy target. Government purchases rise by $100 billion and MPC = 0.8. Use the simple spending multiplier with no other leakages. Crowding out produces a total $150 billion AD offset, including its induced spending effects. Which decomposition gives the net AD shift and remaining shortfall at that reference price?",
+      "options": [
+        "AD first shifts right $100 billion, then gross shift reaches $500 billion, then crowding out leaves $350 billion net and a $250 billion gap.",
+        "AD first shifts right $600 billion, then crowding out leaves $450 billion net and a $150 billion gap.",
+        "AD first shifts left $100 billion, then gross shift reaches $500 billion, worsening the gap.",
+        "AD shifts right only $100 billion because crowding out cancels the multiplier."
+      ],
+      "tag": "stabilization_policy",
+      "type": "interpretation",
+      "objective": "35.5",
+      "difficulty": "legendaryboss",
+      "conceptCluster": "stabilization_policy",
+      "primarySkill": "trace_multiplier_crowding_and_gap",
+      "secondarySkills": [
+        "government_spending",
+        "mpc",
+        "crowding_out",
+        "ad_gap"
+      ],
+      "repairSkill": "stabilization_response_recession",
+      "commonError": "forgetting that crowding out reduces the gross multiplier effect",
+      "feedback": "MPC 0.8 gives multiplier 5, so gross shift is $500 billion. Net after $150 billion crowding out is $350 billion, leaving a $250 billion gap. These are horizontal AD distances at the reference price, not actual equilibrium GDP changes; the total offset is not multiplied again.",
+      "aHash": "5e7393350f2d6d085a4a8074d07ea1741d72aa8f43ca8ea8d20f22b254795030",
+      "schemaVersion": "2.0.0-pilot",
+      "questionId": "LG-Q-9139",
+      "originalLegacyId": 9139,
+      "sourceGlobal": "questionBanks",
+      "sourcePool": "legendaryBoss",
+      "sourceRecordOrder": 39,
+      "domainId": "ECON",
+      "conceptId": "ECON-MAC-STABILIZATION-POLICY",
+      "outcomeIds": [
+        "OUT-MAC-STABILIZATION-POLICY-01"
+      ],
+      "skillId": "trace_multiplier_crowding_and_gap",
+      "secondarySkillIds": [
+        "government_spending",
+        "mpc",
+        "crowding_out",
+        "ad_gap"
+      ],
+      "repairSkillId": "stabilization_response_recession",
+      "questionType": "legendary_boss_fiscal_gap",
+      "assessmentTier": "legendary",
+      "poolRole": "boss",
+      "runtimeRole": "legendary-boss",
+      "provenance": {
+        "sourceGame": "liquidityGrid",
+        "sourceBank": "liquidity-grid-student",
+        "sourceGlobal": "questionBanks",
+        "sourcePool": "legendaryBoss",
+        "sourceRecordOrder": 39,
+        "legacyId": 9139,
+        "legacyObjective": "35.5"
+      },
+      "answerFormat": "aHash",
+      "resourceMatching": {
+        "sourceObjective": "35.5",
+        "objectiveKey": "LO35.5",
+        "sourceAccurateRecommendationHook": false
+      },
+      "source": {
+        "bankId": "liquidity-grid-student",
+        "legacyId": 9139,
+        "legacyObjective": "35.5",
+        "legacyPool": "questionBanks.legendaryBoss",
+        "sourceRecordOrder": 39,
+        "sourceGame": "liquidityGrid"
+      },
+      "bossRole": "legendary-boss",
+      "graphImageMetadata": {
+        "present": true,
+        "asset": "moneymultiplier.webp",
+        "sourceType": "legendary_boss_fiscal_gap"
+      },
+      "canonicalId": "LG-Q-9139",
+      "sourceId": 9139,
+      "sourceGame": "liquidity-grid",
+      "sourceChapter": [
+        35
+      ],
+      "sourceHash": "494089f57c765a9a8500cc989c92a720b792d837d138a2b76578833075004335",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "liquidity-grid",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\liquidity-grid\\package\\questions.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "legendaryBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 39,
+          "sourceId": 9139,
+          "sourceHash": "494089f57c765a9a8500cc989c92a720b792d837d138a2b76578833075004335"
+        }
+      ],
+      "primaryConceptId": "stabilization-policy",
+      "secondaryConceptIds": [
+        "fiscal-multipliers-and-crowding-out"
+      ],
+      "instructionalRole": "legendaryBoss",
+      "canonicalDifficulty": "legendary",
+      "originalSourcePool": "legendaryBoss",
+      "originalBossTier": "legendaryBoss",
+      "bossStage": "final"
+    }
+  },
+  {
+    "id": "ECON-NL-EASYBOSS-2026",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "national-ledger",
+      "sourceFiles": [
+        "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\national-ledger\\national_ledger_questions_student.js"
+      ]
+    },
+    "placements": [
+      [
+        "cpi-bias",
+        "boss"
+      ]
+    ],
+    "q": {
+      "id": "ECON-NL-EASYBOSS-2026",
+      "difficulty": "easyBoss",
+      "conceptCluster": "prices_inflation",
+      "primarySkill": "quality_new_goods_bias",
+      "secondarySkills": [
+        "substitution_bias"
+      ],
+      "repairSkill": "quality_new_goods_bias",
+      "commonError": "Incorrectly concludes “It misses cost-saving substitution; the indexed payment necessarily falls short of that increase” in this cpi bias task.",
+      "q": "A fixed basket includes 180 units of a food whose price rises sharply. Households switch toward a cheaper substitute while maintaining utility. What does the fixed-basket index miss, and how does that affect a payment fully indexed to it?",
+      "options": [
+        "It misses cost-saving substitution; the indexed payment necessarily falls short of that increase",
+        "It fully reflects the new choices; the indexed payment must exactly preserve every household's utility",
+        "It counts the substitute twice; the index necessarily falls despite the dearer original food",
+        "It misses cost-saving substitution; the indexed payment can exceed the increase in minimum cost of maintaining utility"
+      ],
+      "tag": "cpi_bias",
+      "type": "analysis",
+      "objective": "LO25.2",
+      "boss": "Registrar",
+      "feedback": "Pricing the unchanged basket can overstate the cost increase when consumers substitute to maintain utility. Indexing to that measure can overcompensate relative to the minimum cost-of-living increase.",
+      "aHash": "3dbaf67d7b8d769145b00b74a13b6ff6154f5a8f5a7ba2c6f85a77f584b5ea98",
+      "canonicalId": "ECON-NL-EASYBOSS-2026",
+      "sourceId": 2026,
+      "sourceGame": "national-ledger",
+      "sourceChapter": [
+        25,
+        2
+      ],
+      "sourcePool": "easyBoss",
+      "sourceHash": "f4d1e027b1107493a9988396e3e4d243dc9a4aa1bff4b242b670d6588121e9a6",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "national-ledger",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\national-ledger\\national_ledger_questions_student.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "easyBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 26,
+          "sourceId": 2026,
+          "sourceHash": "f4d1e027b1107493a9988396e3e4d243dc9a4aa1bff4b242b670d6588121e9a6"
+        }
+      ],
+      "primaryConceptId": "cpi-bias",
+      "secondaryConceptIds": [],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easyBoss",
+      "originalBossTier": "easyBoss"
+    }
+  },
+  {
+    "id": "PM2B2-RNI-LB-001",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "macro-m2b2-inflation-family",
+      "sourceCurationPhase": "phaseM2b2-inflation-real-values-family-maturation-v1",
+      "sourceFiles": [
+        "phaseM2b2-inflation-real-values-family-maturation-v1_questions.json"
+      ]
+    },
+    "placements": [
+      [
+        "real-versus-nominal-interest-rates",
+        "legendaryBoss"
+      ]
+    ],
+    "q": {
+      "id": "PM2B2-RNI-LB-001",
+      "sourceGame": "macro-m2b2-inflation-family",
+      "q": "Two lenders each advance $230. Loan A pays 7% nominal interest with expected inflation 2%; loan B pays 9% with expected inflation 5%. Actual inflation later equals 4% in both economies. Under the approximation, which ranking reverses?",
+      "options": [
+        "A has the higher expected and realized real returns because its expected inflation is lower",
+        "Expected returns are equal, but realized returns depend on expected rather than actual inflation",
+        "A has the higher expected real return (5% versus 4%); B has the higher realized real return (5% versus 3%)",
+        "B has the higher expected and realized real returns because its nominal rate is larger"
+      ],
+      "tag": "real_versus_nominal_interest_rates",
+      "type": "analysis",
+      "objective": "LO25.5",
+      "difficulty": "legendaryBoss",
+      "conceptCluster": "prices_inflation",
+      "primarySkill": "real_interest_rate",
+      "secondarySkills": [],
+      "repairSkill": "real_interest_rate",
+      "commonError": "Incorrectly concludes “A has the higher expected and realized real returns because its expected inflation is lower” in this real versus nominal interest rates task.",
+      "feedback": "Expected: A=7−2=5, B=9−5=4. Realized: A=7−4=3, B=9−4=5. Different expectations can reverse the ranking when actual inflation differs from forecasts.",
+      "aHash": "34f2fe37b03e23de260ed8776bddddfd4223bf69579428cc9f3137d908cd7e09",
+      "canonicalId": "PM2B2-RNI-LB-001",
+      "sourceId": 8400069,
+      "sourceChapter": [
+        25,
+        5
+      ],
+      "sourcePool": "real_interest_rate",
+      "primaryConceptId": "real-versus-nominal-interest-rates",
+      "secondaryConceptIds": [],
+      "instructionalRole": "legendaryBoss",
+      "canonicalDifficulty": "legendary",
+      "originalSourcePool": "real_interest_rate",
+      "originalBossTier": "legendaryBoss",
+      "sourceCurationPhase": "phaseM2b2-inflation-real-values-family-maturation-v1",
+      "bossStage": "opening",
+      "sourceHash": "68f52454e0023a99fc73c0ffd9c0c5601762300d098454bda5e58f0a2c1dd875",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "macro-m2b2-inflation-family",
+          "sourceFile": "phaseM2b2-inflation-real-values-family-maturation-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "real_interest_rate",
+          "routeKey": "real_interest_rate",
+          "sourceRecordOrder": 0,
+          "sourceId": 8400069,
+          "sourceHash": "68f52454e0023a99fc73c0ffd9c0c5601762300d098454bda5e58f0a2c1dd875",
+          "sourceCurationPhase": "phaseM2b2-inflation-real-values-family-maturation-v1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "P77-MVM-L-021",
+    "areas": [
+      "general",
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "general-economics-final-maturation",
+      "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1",
+      "sourceFiles": [
+        "GENERAL_ECONOMICS_QUESTION_CHANGES.json"
+      ]
+    },
+    "placements": [
+      [
+        "micro-versus-macro",
+        "legendary"
+      ]
+    ],
+    "q": {
+      "id": "P77-MVM-L-021",
+      "sourceGame": "general-economics-final-maturation",
+      "q": "Workers relocate from rural districts to a city. City rents and employment rise. Which claim needs additional economy-wide evidence?",
+      "options": [
+        "National employment rose rather than being redistributed across locations",
+        "The city's housing market experienced a local change",
+        "The move changed some households' location choices",
+        "Employers in the city gained access to more workers"
+      ],
+      "tag": "micro versus macro",
+      "type": "application",
+      "objective": "GE.7.7",
+      "difficulty": "legendary",
+      "conceptCluster": "micro_versus_macro",
+      "primarySkill": "both_levels",
+      "secondarySkills": [],
+      "repairSkill": "both_levels",
+      "commonError": "Forcing a question with market and aggregate consequences into only one field.",
+      "feedback": "Local gains can reflect transfers from other locations. National employment must account for origin districts and other responses; city outcomes alone cannot settle it.",
+      "aHash": "128ebd54a852ced383fbbc0de2680393a05f9d975c8bfefdf17b8f92ee4f323f",
+      "canonicalId": "P77-MVM-L-021",
+      "sourceId": 7700019,
+      "sourceChapter": [
+        1
+      ],
+      "sourcePool": "both_levels",
+      "primaryConceptId": "micro-versus-macro",
+      "secondaryConceptIds": [],
+      "instructionalRole": "legendary",
+      "canonicalDifficulty": "legendary",
+      "originalSourcePool": "both_levels",
+      "originalBossTier": null,
+      "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1",
+      "sourceHash": "854abdf6d8c2b1c0fe3872294f0fc10664a3d8366cbd958ace7275cfc14a2b8a",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "general-economics-final-maturation",
+          "sourceFile": "GENERAL_ECONOMICS_QUESTION_CHANGES.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "both_levels",
+          "routeKey": "both_levels",
+          "sourceRecordOrder": 20,
+          "sourceId": 7700019,
+          "sourceHash": "854abdf6d8c2b1c0fe3872294f0fc10664a3d8366cbd958ace7275cfc14a2b8a",
+          "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ECON-SP-FINALBOSS-4016",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "stabilization-protocol",
+      "sourceFiles": [
+        "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\stabilization-protocol\\stabilization_protocol_questions_student.js"
+      ]
+    },
+    "placements": [
+      [
+        "integrated-macroeconomic-analysis",
+        "boss"
+      ]
+    ],
+    "q": {
+      "id": "ECON-SP-FINALBOSS-4016",
+      "difficulty": "legendary",
+      "conceptCluster": "chancellor_chain_fiscal_crowding",
+      "primarySkill": "crowding_out_effect",
+      "secondarySkills": [
+        "interest_rate_investment_channel",
+        "fiscal_policy_magnitude"
+      ],
+      "repairSkill": "crowding_out_effect",
+      "commonError": "Incorrectly concludes “The reserve injection raises real productive capacity immediately by the textbook deposit maximum” in this integrated macroeconomic analysis task.",
+      "q": "A banking system receives $110 of reserves. With a required reserve ratio of 10%, the simple model predicts a maximum deposit increase of $1100; actual deposits increase by $440. Interest rates fall, but firms also expect lower returns on their projects. Why might both deposit growth and investment spending be smaller than the simple model predicts?",
+      "options": [
+        "The reserve injection raises real productive capacity immediately by the textbook deposit maximum",
+        "Leakages can explain a multiplier below ten, and weaker expected returns can further limit investment despite lower rates",
+        "The lower deposit expansion proves rates cannot have fallen, so the reported observations are impossible",
+        "Lower rates guarantee the full predicted investment expansion even when expected returns deteriorate"
+      ],
+      "tag": "crowding_out",
+      "type": "integration",
+      "objective": "LO35.4",
+      "boss": "The Custodian",
+      "feedback": "Observed multiplier=440/110=4, below the restrictive simple maximum 10. Even if rates fall, the rate-to-investment link can weaken when expected profitability falls. These are distinct constraints at successive stages.",
+      "aHash": "97af59b2419882debb1766eb7673f885bf8cfaa84b84fbd45cf21880d46723c6",
+      "canonicalId": "ECON-SP-FINALBOSS-4016",
+      "sourceId": 4016,
+      "sourceGame": "stabilization-protocol",
+      "sourceChapter": [
+        35,
+        4
+      ],
+      "sourcePool": "finalBoss",
+      "sourceHash": "b4361298d2c588d2d986db1533f21146b2e19d14a6f0ca859a8012eb530a1934",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "stabilization-protocol",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\stabilization-protocol\\stabilization_protocol_questions_student.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "finalBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 16,
+          "sourceId": 4016,
+          "sourceHash": "b4361298d2c588d2d986db1533f21146b2e19d14a6f0ca859a8012eb530a1934"
+        }
+      ],
+      "primaryConceptId": "integrated-macroeconomic-analysis",
+      "secondaryConceptIds": [
+        "fiscal-policy-and-aggregate-demand"
+      ],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "legendary",
+      "originalSourcePool": "finalBoss",
+      "originalBossTier": "finalBoss",
+      "isCheckpointChallenge": true,
+      "challengeStage": "final",
+      "requiredConceptIds": [
+        "fiscal-multipliers-and-crowding-out",
+        "phillips-curve-expectations",
+        "monetary-policy-transmission",
+        "monetary-neutrality"
+      ],
+      "challengeFocusConceptIds": [
+        "fiscal-multipliers-and-crowding-out"
+      ],
+      "remediationConceptId": "fiscal-multipliers-and-crowding-out",
+      "challengePathway": "short-run-versus-long-run-money",
+      "challengeSource": "legacy-f11-reclassified"
+    }
+  },
+  {
+    "id": "ECON-SP-LEGENDARYBOSS-9110",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "stabilization-protocol",
+      "sourceFiles": [
+        "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\stabilization-protocol\\stabilization_protocol_questions_student.js"
+      ]
+    },
+    "placements": [
+      [
+        "integrated-macroeconomic-analysis",
+        "legendaryBoss"
+      ]
+    ],
+    "q": {
+      "id": "ECON-SP-LEGENDARYBOSS-9110",
+      "q": "A banking system receives $230 of reserves. With a required reserve ratio of 10%, the simple model predicts a maximum deposit increase of $2300; actual deposits increase by $920. Interest rates fall, but firms also expect lower returns on their projects. Why might both deposit growth and investment spending be smaller than the simple model predicts?",
+      "options": [
+        "Leakages can explain a multiplier below ten, and weaker expected returns can further limit investment despite lower rates",
+        "The lower deposit expansion proves rates cannot have fallen, so the reported observations are impossible",
+        "Lower rates guarantee the full predicted investment expansion even when expected returns deteriorate",
+        "The reserve injection raises real productive capacity immediately by the textbook deposit maximum"
+      ],
+      "tag": "sacrifice_ratio",
+      "type": "integration",
+      "objective": "LO36.5",
+      "difficulty": "legendary",
+      "conceptCluster": "final_chancellor",
+      "primarySkill": "calculate_sacrifice_ratio",
+      "repairSkill": "calculate_sacrifice_ratio",
+      "commonError": "Incorrectly concludes “The lower deposit expansion proves rates cannot have fallen, so the reported observations are impossible” in this integrated macroeconomic analysis task.",
+      "feedback": "Observed multiplier=920/230=4, below the restrictive simple maximum 10. Even if rates fall, the rate-to-investment link can weaken when expected profitability falls. These are distinct constraints at successive stages.",
+      "aHash": "97af59b2419882debb1766eb7673f885bf8cfaa84b84fbd45cf21880d46723c6",
+      "canonicalId": "ECON-SP-LEGENDARYBOSS-9110",
+      "sourceId": 9110,
+      "sourceGame": "stabilization-protocol",
+      "sourceChapter": [
+        36
+      ],
+      "sourcePool": "legendaryBoss",
+      "sourceHash": "be97d6a11f747193344498c151a26231993bfdeed93e09455f017454ab6e94a6",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "stabilization-protocol",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\stabilization-protocol\\stabilization_protocol_questions_student.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "legendaryBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 10,
+          "sourceId": 9110,
+          "sourceHash": "be97d6a11f747193344498c151a26231993bfdeed93e09455f017454ab6e94a6"
+        }
+      ],
+      "primaryConceptId": "integrated-macroeconomic-analysis",
+      "secondaryConceptIds": [],
+      "instructionalRole": "legendaryBoss",
+      "canonicalDifficulty": "legendary",
+      "originalSourcePool": "legendaryBoss",
+      "originalBossTier": "legendaryBoss",
+      "isCheckpointChallenge": true,
+      "challengeStage": "legendary",
+      "requiredConceptIds": [
+        "sacrifice-ratio",
+        "phillips-curve-expectations",
+        "monetary-policy-tools"
+      ],
+      "challengeFocusConceptIds": [
+        "sacrifice-ratio"
+      ],
+      "remediationConceptId": "sacrifice-ratio",
+      "challengePathway": "two-family-integration",
+      "challengeSource": "legacy-f11-reclassified",
+      "challengeBossStage": "opening",
+      "bossStage": "opening"
+    }
+  },
+  {
+    "id": "ECON-EC-FINALBOSS-19011",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "equilibrium-crisis",
+      "sourceCurationPhase": "phase7.7-general-economics-final-maturation-v1",
+      "sourceFiles": [
+        "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\equilibrium-crisis\\equilibrium_crisis_questions_student.js"
+      ]
+    },
+    "placements": [
+      [
+        "sources-of-productivity",
+        "boss"
+      ]
+    ],
+    "q": {
+      "id": "ECON-EC-FINALBOSS-19011",
+      "q": "A fixed technology gives an extra 110 units of output from the first additional machine and only 55 from the second. A proposal assumes each later machine adds the first machine's amount. What is the flaw?",
+      "options": [
+        "It ignores declining total output; the second machine reduces production.",
+        "It ignores labor displacement; the second machine must halve employment.",
+        "It ignores technical progress; each machine raises future marginal gains.",
+        "It ignores diminishing marginal gains; total output can still rise."
+      ],
+      "tag": "catch_up_growth",
+      "type": "analysis",
+      "objective": "LO26.4",
+      "difficulty": "finalBoss",
+      "conceptCluster": "catch_up_growth_capital_productivity",
+      "primarySkill": "catch_up_effect_interpretation",
+      "secondarySkills": [
+        "capital_scarcity",
+        "foreign_investment"
+      ],
+      "repairSkill": "catch_up_growth",
+      "commonError": "Incorrectly concludes “It confuses diminishing returns with falling total output; the second machine necessarily destroys output” in this sources of productivity task.",
+      "sourceGame": "equilibrium-crisis",
+      "feedback": "With other inputs and technology fixed, added capital can increase total output at a decreasing rate. A smaller positive increment is not a fall in total output.",
+      "aHash": "7352dc6b64913d2961551da1db92d512ef348ea09291dedfe0c86f33594ed36d",
+      "canonicalId": "ECON-EC-FINALBOSS-19011",
+      "sourceId": 19011,
+      "sourceChapter": [
+        26,
+        4
+      ],
+      "sourcePool": "finalBoss",
+      "sourceHash": "b8eadd09bf32d091f46c186d63b1b706216c63b88e1503003e9a60d0a830441c",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "equilibrium-crisis",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\equilibrium-crisis\\equilibrium_crisis_questions_student.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "finalBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 11,
+          "sourceId": 19011,
+          "sourceHash": "eb6f594a95c3bbde9ee406643099e47502ee0b1685e559768057ab3ea5e9bd8a"
+        }
+      ],
+      "primaryConceptId": "sources-of-productivity",
+      "secondaryConceptIds": [
+        "scarcity-and-tradeoffs"
+      ],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "finalBoss",
+      "originalBossTier": "finalBoss",
+      "sourceCurationPhase": "phase7.7-general-economics-final-maturation-v1"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARYBOSS-9121",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "national-ledger",
+      "sourceFiles": [
+        "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\national-ledger\\national_ledger_questions_student.js"
+      ]
+    },
+    "placements": [
+      [
+        "sources-of-productivity",
+        "legendaryBoss"
+      ]
+    ],
+    "q": {
+      "id": "ECON-NL-LEGENDARYBOSS-9121",
+      "difficulty": "legendaryBoss",
+      "conceptCluster": "growth_productivity",
+      "primarySkill": "productivity_calculation",
+      "secondarySkills": [
+        "real_gdp_per_person"
+      ],
+      "repairSkill": "productivity_calculation",
+      "commonError": "Incorrectly concludes “It confuses diminishing returns with falling total output; the second machine necessarily destroys output” in this sources of productivity task.",
+      "q": "A fixed technology gives an extra 160 units of output from the first additional machine and only 80 from the second. A proposal assumes each later machine adds the first machine's amount. What is the flaw?",
+      "options": [
+        "It ignores declining total output; the second machine reduces production.",
+        "It ignores labor displacement; the second machine must halve employment.",
+        "It ignores technical progress; each machine raises future marginal gains.",
+        "It ignores diminishing marginal gains; total output can still rise."
+      ],
+      "tag": "catch_up_growth",
+      "type": "analysis",
+      "objective": "LO26.3",
+      "feedback": "With other inputs and technology fixed, added capital can increase total output at a decreasing rate. A smaller positive increment is not a fall in total output.",
+      "aHash": "7352dc6b64913d2961551da1db92d512ef348ea09291dedfe0c86f33594ed36d",
+      "canonicalId": "ECON-NL-LEGENDARYBOSS-9121",
+      "sourceId": 9121,
+      "sourceGame": "national-ledger",
+      "sourceChapter": [
+        26
+      ],
+      "sourcePool": "legendaryBoss",
+      "sourceHash": "d1aa5f1acba39ae2173f2a25ff059bebdc2bb77f4ff575355bfda815b551036a",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "national-ledger",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\national-ledger\\national_ledger_questions_student.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "legendaryBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 21,
+          "sourceId": 9121,
+          "sourceHash": "2ec84be5c4aee3806c5ad405675f16c8177fe6df36057af300569fb6cdf8b761"
+        }
+      ],
+      "primaryConceptId": "sources-of-productivity",
+      "secondaryConceptIds": [
+        "living-standards-and-growth"
+      ],
+      "instructionalRole": "legendaryBoss",
+      "canonicalDifficulty": "legendary",
+      "originalSourcePool": "legendaryBoss",
+      "originalBossTier": "legendaryBoss",
+      "bossStage": "middle"
+    }
+  },
+  {
+    "id": "ECON-NL-MEDIUMBOSS-3021",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "national-ledger",
+      "sourceFiles": [
+        "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\national-ledger\\national_ledger_questions_student.js"
+      ]
+    },
+    "placements": [
+      [
+        "sources-of-productivity",
+        "boss"
+      ]
+    ],
+    "q": {
+      "id": "ECON-NL-MEDIUMBOSS-3021",
+      "difficulty": "mediumBoss",
+      "conceptCluster": "growth_productivity",
+      "primarySkill": "productivity_calculation",
+      "secondarySkills": [
+        "real_gdp_per_person"
+      ],
+      "repairSkill": "productivity_calculation",
+      "commonError": "Incorrectly concludes “It confuses diminishing returns with falling total output; the second machine necessarily destroys output” in this sources of productivity task.",
+      "q": "A fixed technology gives an extra 260 units of output from the first additional machine and only 130 from the second. A proposal assumes each later machine adds the first machine's amount. What is the flaw?",
+      "options": [
+        "It ignores diminishing marginal gains; total output can still rise.",
+        "It ignores declining total output; the second machine reduces production.",
+        "It ignores labor displacement; the second machine must halve employment.",
+        "It ignores technical progress; each machine raises future marginal gains."
+      ],
+      "tag": "diminishing_returns",
+      "type": "analysis",
+      "objective": "LO26.3",
+      "boss": "Warden",
+      "feedback": "With other inputs and technology fixed, added capital can increase total output at a decreasing rate. A smaller positive increment is not a fall in total output.",
+      "aHash": "7352dc6b64913d2961551da1db92d512ef348ea09291dedfe0c86f33594ed36d",
+      "canonicalId": "ECON-NL-MEDIUMBOSS-3021",
+      "sourceId": 3021,
+      "sourceGame": "national-ledger",
+      "sourceChapter": [
+        26
+      ],
+      "sourcePool": "mediumBoss",
+      "sourceHash": "7059a39b8688a6bfaf73bd99ec9762f257737921d7247b4d4d4ba989aba3b4cf",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "national-ledger",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\national-ledger\\national_ledger_questions_student.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "mediumBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 21,
+          "sourceId": 3021,
+          "sourceHash": "7059a39b8688a6bfaf73bd99ec9762f257737921d7247b4d4d4ba989aba3b4cf"
+        }
+      ],
+      "primaryConceptId": "sources-of-productivity",
+      "secondaryConceptIds": [
+        "living-standards-and-growth"
+      ],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "mediumBoss",
+      "originalBossTier": "mediumBoss"
+    }
+  },
+  {
+    "id": "ECON-NL-MEDIUMBOSS-3026",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "national-ledger",
+      "sourceFiles": [
+        "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\national-ledger\\national_ledger_questions_student.js"
+      ]
+    },
+    "placements": [
+      [
+        "sources-of-productivity",
+        "boss"
+      ]
+    ],
+    "q": {
+      "id": "ECON-NL-MEDIUMBOSS-3026",
+      "difficulty": "mediumBoss",
+      "conceptCluster": "growth_productivity",
+      "primarySkill": "physical_capital",
+      "secondarySkills": [
+        "productivity_calculation"
+      ],
+      "repairSkill": "physical_capital",
+      "commonError": "Incorrectly concludes “It confuses diminishing returns with falling total output; the second machine necessarily destroys output” in this sources of productivity task.",
+      "q": "A fixed technology gives an extra 310 units of output from the first additional machine and only 155 from the second. A proposal assumes each later machine adds the first machine's amount. What is the flaw?",
+      "options": [
+        "It ignores declining total output; the second machine reduces production.",
+        "It ignores labor displacement; the second machine must halve employment.",
+        "It ignores technical progress; each machine raises future marginal gains.",
+        "It ignores diminishing marginal gains; total output can still rise."
+      ],
+      "tag": "catch_up_growth",
+      "type": "analysis",
+      "objective": "LO26.3",
+      "boss": "Warden",
+      "feedback": "With other inputs and technology fixed, added capital can increase total output at a decreasing rate. A smaller positive increment is not a fall in total output.",
+      "aHash": "7352dc6b64913d2961551da1db92d512ef348ea09291dedfe0c86f33594ed36d",
+      "canonicalId": "ECON-NL-MEDIUMBOSS-3026",
+      "sourceId": 3026,
+      "sourceGame": "national-ledger",
+      "sourceChapter": [
+        26
+      ],
+      "sourcePool": "mediumBoss",
+      "sourceHash": "edf60791c2db5b44ecc1fd5307db32ee975b672203214d21d24e8d5af564fa9b",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "national-ledger",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\national-ledger\\national_ledger_questions_student.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "mediumBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 26,
+          "sourceId": 3026,
+          "sourceHash": "edf60791c2db5b44ecc1fd5307db32ee975b672203214d21d24e8d5af564fa9b"
+        }
+      ],
+      "primaryConceptId": "sources-of-productivity",
+      "secondaryConceptIds": [
+        "productivity-measurement"
+      ],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "mediumBoss",
+      "originalBossTier": "mediumBoss"
+    }
+  },
+  {
+    "id": "ECON-EC-FINALBOSS-19012",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "equilibrium-crisis",
+      "sourceFiles": [
+        "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\equilibrium-crisis\\equilibrium_crisis_questions_student.js"
+      ]
+    },
+    "placements": [
+      [
+        "unemployment-types",
+        "boss"
+      ]
+    ],
+    "q": {
+      "id": "ECON-EC-FINALBOSS-19012",
+      "q": "A regional study follows 100 jobless workers after national demand recovers. Former miners still lack skills for local health-care vacancies, while new graduates are interviewing for matching jobs. Which diagnosis and response pair is appropriate?",
+      "options": [
+        "Both groups face cyclical unemployment because neither is currently employed",
+        "Both groups face structural unemployment because job search always requires new skills",
+        "Miners face structural mismatch suited to retraining; graduates face frictional search suited to matching assistance",
+        "Miners face cyclical unemployment suited only to demand stimulus; graduates face structural unemployment suited to changing industries"
+      ],
+      "tag": "structural_unemployment",
+      "type": "analysis",
+      "objective": "LO29.3",
+      "difficulty": "finalBoss",
+      "conceptCluster": "technology_productivity_structural_unemployment",
+      "primarySkill": "technology_labor_adjustment_analysis",
+      "secondarySkills": [
+        "productivity_growth",
+        "skill_mismatch"
+      ],
+      "repairSkill": "structural_unemployment_definition",
+      "commonError": "Incorrectly concludes “Both groups face cyclical unemployment because neither is currently employed” in this unemployment types task.",
+      "sourceGame": "equilibrium-crisis",
+      "feedback": "The persistence of a skill mismatch after demand recovers identifies a structural problem. Graduates searching for suitable existing matches illustrate frictional unemployment. Each remedy should address its actual mechanism.",
+      "aHash": "9ad05c8d0d680fadc034b10ce148b32a5abd4a753e2d0c65b460da7ee48fa85d",
+      "canonicalId": "ECON-EC-FINALBOSS-19012",
+      "sourceId": 19012,
+      "sourceChapter": [
+        29
+      ],
+      "sourcePool": "finalBoss",
+      "sourceHash": "2f05a20c436ecdd94c4d5e11ff46349d09b49f1275eb3a5a9d4b254301ebb2c9",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "equilibrium-crisis",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\equilibrium-crisis\\equilibrium_crisis_questions_student.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "finalBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 12,
+          "sourceId": 19012,
+          "sourceHash": "2f05a20c436ecdd94c4d5e11ff46349d09b49f1275eb3a5a9d4b254301ebb2c9"
+        }
+      ],
+      "primaryConceptId": "unemployment-types",
+      "secondaryConceptIds": [],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "finalBoss",
+      "originalBossTier": "finalBoss"
+    }
+  },
+  {
+    "id": "ECON-NL-FINALBOSS-4016",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "national-ledger",
+      "sourceFiles": [
+        "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\national-ledger\\national_ledger_questions_student.js"
+      ]
+    },
+    "placements": [
+      [
+        "unemployment-types",
+        "boss"
+      ]
+    ],
+    "q": {
+      "id": "ECON-NL-FINALBOSS-4016",
+      "difficulty": "finalBoss",
+      "conceptCluster": "labor_market",
+      "primarySkill": "cyclical_unemployment",
+      "secondarySkills": [
+        "natural_rate"
+      ],
+      "repairSkill": "cyclical_unemployment",
+      "commonError": "Incorrectly concludes “Both groups face cyclical unemployment because neither is currently employed” in this unemployment types task.",
+      "q": "A regional study follows 200 jobless workers after national demand recovers. Former miners still lack skills for local health-care vacancies, while new graduates are interviewing for matching jobs. Which diagnosis and response pair is appropriate?",
+      "options": [
+        "Both groups face cyclical unemployment because neither is currently employed",
+        "Both groups face structural unemployment because job search always requires new skills",
+        "Miners face structural mismatch suited to retraining; graduates face frictional search suited to matching assistance",
+        "Miners face cyclical unemployment suited only to demand stimulus; graduates face structural unemployment suited to changing industries"
+      ],
+      "tag": "unemployment_types",
+      "type": "analysis",
+      "objective": "LO29.3",
+      "boss": "FinalBoss",
+      "feedback": "The persistence of a skill mismatch after demand recovers identifies a structural problem. Graduates searching for suitable existing matches illustrate frictional unemployment. Each remedy should address its actual mechanism.",
+      "aHash": "9ad05c8d0d680fadc034b10ce148b32a5abd4a753e2d0c65b460da7ee48fa85d",
+      "canonicalId": "ECON-NL-FINALBOSS-4016",
+      "sourceId": 4016,
+      "sourceGame": "national-ledger",
+      "sourceChapter": [
+        29
+      ],
+      "sourcePool": "finalBoss",
+      "sourceHash": "f19f163c23be5e01757896b642182452716fa53e699d6058276ff1d0daf4fc58",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "national-ledger",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\national-ledger\\national_ledger_questions_student.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "finalBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 16,
+          "sourceId": 4016,
+          "sourceHash": "f19f163c23be5e01757896b642182452716fa53e699d6058276ff1d0daf4fc58"
+        }
+      ],
+      "primaryConceptId": "unemployment-types",
+      "secondaryConceptIds": [
+        "natural-rate-of-unemployment"
+      ],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "finalBoss",
+      "originalBossTier": "finalBoss"
+    }
+  },
+  {
+    "id": "ECON-NL-FINALBOSS-4041",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "national-ledger",
+      "sourceFiles": [
+        "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\national-ledger\\national_ledger_questions_student.js"
+      ]
+    },
+    "placements": [
+      [
+        "unemployment-types",
+        "boss"
+      ]
+    ],
+    "q": {
+      "id": "ECON-NL-FINALBOSS-4041",
+      "difficulty": "finalBoss",
+      "conceptCluster": "labor_market",
+      "primarySkill": "structural_unemployment",
+      "secondarySkills": [
+        "natural_rate"
+      ],
+      "repairSkill": "structural_unemployment",
+      "commonError": "Incorrectly concludes “Miners face cyclical unemployment suited only to demand stimulus; graduates face structural unemployment suited to changing industries” in this unemployment types task.",
+      "q": "A regional study follows 250 jobless workers after national demand recovers. Former miners still lack skills for local health-care vacancies, while new graduates are interviewing for matching jobs. Which diagnosis and response pair is appropriate?",
+      "options": [
+        "Miners face structural mismatch suited to retraining; graduates face frictional search suited to matching assistance",
+        "Miners face cyclical unemployment suited only to demand stimulus; graduates face structural unemployment suited to changing industries",
+        "Both groups face cyclical unemployment because neither is currently employed",
+        "Both groups face structural unemployment because job search always requires new skills"
+      ],
+      "tag": "unemployment_types",
+      "type": "analysis",
+      "objective": "LO29.3",
+      "boss": "FinalBoss",
+      "feedback": "The persistence of a skill mismatch after demand recovers identifies a structural problem. Graduates searching for suitable existing matches illustrate frictional unemployment. Each remedy should address its actual mechanism.",
+      "aHash": "9ad05c8d0d680fadc034b10ce148b32a5abd4a753e2d0c65b460da7ee48fa85d",
+      "canonicalId": "ECON-NL-FINALBOSS-4041",
+      "sourceId": 4041,
+      "sourceGame": "national-ledger",
+      "sourceChapter": [
+        29
+      ],
+      "sourcePool": "finalBoss",
+      "sourceHash": "b5ac7fc9fb005c2308758a674a121e3ad5514d70ef82137034c777b00723a78d",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "national-ledger",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\national-ledger\\national_ledger_questions_student.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "finalBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 41,
+          "sourceId": 4041,
+          "sourceHash": "b5ac7fc9fb005c2308758a674a121e3ad5514d70ef82137034c777b00723a78d"
+        }
+      ],
+      "primaryConceptId": "unemployment-types",
+      "secondaryConceptIds": [
+        "natural-rate-of-unemployment"
+      ],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "finalBoss",
+      "originalBossTier": "finalBoss"
+    }
+  },
+  {
+    "id": "LG-Q-9069",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "liquidity-grid",
+      "sourceFiles": [
+        "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\liquidity-grid\\package\\questions.js"
+      ]
+    },
+    "placements": [
+      [
+        "stabilization-policy",
+        "legendary"
+      ]
+    ],
+    "q": {
+      "id": "LG-Q-9069",
+      "q": "At a fixed reference price level, desired spending is $250 billion below the policy target. Government purchases rise by $50 billion and MPC = 0.75. Use the simple spending multiplier with no other leakages. Crowding out produces a total $40 billion AD offset, including its induced spending effects. Which decomposition gives the net AD shift and remaining shortfall at that reference price?",
+      "options": [
+        "Direct AD shift $50 billion; multiplied shift $200 billion; net shift $160 billion; gap $90 billion",
+        "Direct AD shift $50 billion; multiplied shift $150 billion; net shift $110 billion; gap $140 billion",
+        "Direct AD shift $50 billion; multiplied shift $200 billion; net shift $200 billion; gap $50 billion",
+        "Direct AD shift $50 billion; multiplied shift $200 billion; net shift $40 billion; gap $210 billion"
+      ],
+      "tag": "stabilization_policy",
+      "type": "interpretation",
+      "objective": "35.5",
+      "difficulty": "legendary",
+      "conceptCluster": "stabilization_policy",
+      "primarySkill": "trace_multiplier_then_crowding_out_gap",
+      "secondarySkills": [
+        "government_spending",
+        "mpc",
+        "crowding_out",
+        "ad_gap"
+      ],
+      "repairSkill": "stabilization_response_recession",
+      "commonError": "calculating the multiplier but ignoring the order: initial shift, multiplied shift, crowding-out offset",
+      "feedback": "MPC = 0.75 gives multiplier 4. The $50 billion initial shift becomes $200 billion, then crowding out lowers the net shift to $160 billion, leaving a $90 billion gap. These are horizontal AD distances at the reference price, not actual equilibrium GDP changes; the total offset is not multiplied again.",
+      "aHash": "735cd64b0a2122fcf6b4d490fee63ef00c749c5558e601be1da296ae17d4bff4",
+      "schemaVersion": "2.0.0-pilot",
+      "questionId": "LG-Q-9069",
+      "originalLegacyId": 9069,
+      "sourceGlobal": "questionBanks",
+      "sourcePool": "legendary",
+      "sourceRecordOrder": 69,
+      "domainId": "ECON",
+      "conceptId": "ECON-MAC-STABILIZATION-POLICY",
+      "outcomeIds": [
+        "OUT-MAC-STABILIZATION-POLICY-01"
+      ],
+      "skillId": "trace_multiplier_then_crowding_out_gap",
+      "secondarySkillIds": [
+        "government_spending",
+        "mpc",
+        "crowding_out",
+        "ad_gap"
+      ],
+      "repairSkillId": "stabilization_response_recession",
+      "questionType": "legendary_fiscal_gap_graph_order",
+      "assessmentTier": "legendary",
+      "poolRole": "standard",
+      "runtimeRole": "legendary",
+      "provenance": {
+        "sourceGame": "liquidityGrid",
+        "sourceBank": "liquidity-grid-student",
+        "sourceGlobal": "questionBanks",
+        "sourcePool": "legendary",
+        "sourceRecordOrder": 69,
+        "legacyId": 9069,
+        "legacyObjective": "35.5"
+      },
+      "answerFormat": "aHash",
+      "resourceMatching": {
+        "sourceObjective": "35.5",
+        "objectiveKey": "LO35.5",
+        "sourceAccurateRecommendationHook": false
+      },
+      "source": {
+        "bankId": "liquidity-grid-student",
+        "legacyId": 9069,
+        "legacyObjective": "35.5",
+        "legacyPool": "questionBanks.legendary",
+        "sourceRecordOrder": 69,
+        "sourceGame": "liquidityGrid"
+      },
+      "graphImageMetadata": {
+        "present": true,
+        "asset": "moneymultiplier.webp",
+        "sourceType": "legendary_fiscal_gap_graph_order"
+      },
+      "canonicalId": "LG-Q-9069",
+      "sourceId": 9069,
+      "sourceGame": "liquidity-grid",
+      "sourceChapter": [
+        35
+      ],
+      "sourceHash": "9e64b91c5a73fe4b6fb8e90a65e6f5a80accd0f469739043d1db44f3d85f263d",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "liquidity-grid",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\liquidity-grid\\package\\questions.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "legendary",
+          "routeKey": null,
+          "sourceRecordOrder": 69,
+          "sourceId": 9069,
+          "sourceHash": "9e64b91c5a73fe4b6fb8e90a65e6f5a80accd0f469739043d1db44f3d85f263d"
+        }
+      ],
+      "primaryConceptId": "stabilization-policy",
+      "secondaryConceptIds": [
+        "fiscal-multipliers-and-crowding-out"
+      ],
+      "instructionalRole": "legendary",
+      "canonicalDifficulty": "legendary",
+      "originalSourcePool": "legendary",
+      "originalBossTier": null
+    }
+  },
+  {
+    "id": "ECON-EC-FINALBOSS-19001",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "equilibrium-crisis",
+      "sourceCurationPhase": "phase7.7-general-economics-final-maturation-v1",
+      "sourceFiles": [
+        "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\equilibrium-crisis\\equilibrium_crisis_questions_student.js"
+      ]
+    },
+    "placements": [
+      [
+        "cpi-bias",
+        "boss"
+      ]
+    ],
+    "q": {
+      "id": "ECON-EC-FINALBOSS-19001",
+      "q": "A fixed basket includes 100 units of a food whose price rises sharply. Households switch toward a cheaper substitute while maintaining utility. What does the fixed-basket index miss, and how does that affect a payment fully indexed to it?",
+      "options": [
+        "It misses cost-saving substitution; the indexed payment can exceed the increase in minimum cost of maintaining utility",
+        "It misses cost-saving substitution; the indexed payment necessarily falls short of that increase",
+        "It fully reflects the new choices; the indexed payment must exactly preserve every household's utility",
+        "It counts the substitute twice; the index necessarily falls despite the dearer original food"
+      ],
+      "tag": "indexation",
+      "type": "analysis",
+      "objective": "LO25.2",
+      "difficulty": "finalBoss",
+      "conceptCluster": "cpi_bias_indexation_labor_contracts",
+      "primarySkill": "indexation_bias_analysis",
+      "secondarySkills": [
+        "cpi_substitution_bias",
+        "real_wage_interpretation"
+      ],
+      "repairSkill": "cpi_bias_types",
+      "commonError": "Incorrectly concludes “It misses cost-saving substitution; the indexed payment necessarily falls short of that increase” in this cpi bias task.",
+      "sourceGame": "equilibrium-crisis",
+      "feedback": "Pricing the unchanged basket can overstate the cost increase when consumers substitute to maintain utility. Indexing to that measure can overcompensate relative to the minimum cost-of-living increase.",
+      "aHash": "3dbaf67d7b8d769145b00b74a13b6ff6154f5a8f5a7ba2c6f85a77f584b5ea98",
+      "canonicalId": "ECON-EC-FINALBOSS-19001",
+      "sourceId": 19001,
+      "sourceChapter": [
+        25,
+        2
+      ],
+      "sourcePool": "finalBoss",
+      "sourceHash": "1cce793206944527348944b192639d434e1d1fceee32c568de798b7392e04d0c",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "equilibrium-crisis",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\equilibrium-crisis\\equilibrium_crisis_questions_student.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "finalBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 1,
+          "sourceId": 19001,
+          "sourceHash": "86e3bc2b29b3b10f67b90ebebbae07c2f44b9cd92734e31fa01ccfcde7da45bf"
+        }
+      ],
+      "primaryConceptId": "cpi-bias",
+      "secondaryConceptIds": [
+        "cpi-bias",
+        "monetary-neutrality"
+      ],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "finalBoss",
+      "originalBossTier": "finalBoss",
+      "sourceCurationPhase": "phase7.7-general-economics-final-maturation-v1"
+    }
+  },
+  {
+    "id": "ECON-EC-MEDIUMBOSS-18000",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "equilibrium-crisis",
+      "sourceCurationPhase": "phase7.7-general-economics-final-maturation-v1",
+      "sourceFiles": [
+        "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\equilibrium-crisis\\equilibrium_crisis_questions_student.js"
+      ]
+    },
+    "placements": [
+      [
+        "cpi-bias",
+        "boss"
+      ]
+    ],
+    "q": {
+      "id": "ECON-EC-MEDIUMBOSS-18000",
+      "q": "A fixed basket includes 140 units of a food whose price rises sharply. Households switch toward a cheaper substitute while maintaining utility. What does the fixed-basket index miss, and how does that affect a payment fully indexed to it?",
+      "options": [
+        "It misses cost-saving substitution; the indexed payment necessarily falls short of that increase",
+        "It fully reflects the new choices; the indexed payment must exactly preserve every household's utility",
+        "It counts the substitute twice; the index necessarily falls despite the dearer original food",
+        "It misses cost-saving substitution; the indexed payment can exceed the increase in minimum cost of maintaining utility"
+      ],
+      "tag": "cpi_bias",
+      "type": "analysis",
+      "objective": "LO25.2",
+      "difficulty": "mediumBoss",
+      "conceptCluster": "inflation_measurement_consumer_behavior",
+      "primarySkill": "cpi_substitution_bias",
+      "secondarySkills": [
+        "law_of_demand",
+        "consumer_response_to_prices"
+      ],
+      "repairSkill": "cpi_bias_types",
+      "commonError": "Incorrectly concludes “It misses cost-saving substitution; the indexed payment necessarily falls short of that increase” in this cpi bias task.",
+      "sourceGame": "equilibrium-crisis",
+      "feedback": "Pricing the unchanged basket can overstate the cost increase when consumers substitute to maintain utility. Indexing to that measure can overcompensate relative to the minimum cost-of-living increase.",
+      "aHash": "3dbaf67d7b8d769145b00b74a13b6ff6154f5a8f5a7ba2c6f85a77f584b5ea98",
+      "canonicalId": "ECON-EC-MEDIUMBOSS-18000",
+      "sourceId": 18000,
+      "sourceChapter": [
+        25,
+        2
+      ],
+      "sourcePool": "mediumBoss",
+      "sourceHash": "e95c923c21e832ec01b585842749af367c64ae88eb9731163ff73ca16fbea789",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "equilibrium-crisis",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\equilibrium-crisis\\equilibrium_crisis_questions_student.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "mediumBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 0,
+          "sourceId": 18000,
+          "sourceHash": "511b14d0a2308f7e4b55ce2a8642cf4584d7a28ee997e61bfbe89e251791e9a1"
+        }
+      ],
+      "primaryConceptId": "cpi-bias",
+      "secondaryConceptIds": [
+        "demand"
+      ],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "mediumBoss",
+      "originalBossTier": "mediumBoss",
+      "sourceCurationPhase": "phase7.7-general-economics-final-maturation-v1"
+    }
+  },
+  {
+    "id": "PM2B2-BIAS-FB-004",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "macro-m2b2-inflation-family",
+      "sourceCurationPhase": "phaseM2b2-inflation-real-values-family-maturation-v1",
+      "sourceFiles": [
+        "phaseM2b2-inflation-real-values-family-maturation-v1_questions.json"
+      ]
+    },
+    "placements": [
+      [
+        "cpi-bias",
+        "boss"
+      ]
+    ],
+    "q": {
+      "id": "PM2B2-BIAS-FB-004",
+      "sourceGame": "macro-m2b2-inflation-family",
+      "q": "A fixed basket includes 220 units of a food whose price rises sharply. Households switch toward a cheaper substitute while maintaining utility. What does the fixed-basket index miss, and how does that affect a payment fully indexed to it?",
+      "options": [
+        "It misses cost-saving substitution; the indexed payment necessarily falls short of that increase",
+        "It fully reflects the new choices; the indexed payment must exactly preserve every household's utility",
+        "It counts the substitute twice; the index necessarily falls despite the dearer original food",
+        "It misses cost-saving substitution; the indexed payment can exceed the increase in minimum cost of maintaining utility"
+      ],
+      "tag": "cpi_bias",
+      "type": "analysis",
+      "objective": "LO25.3",
+      "difficulty": "finalBoss",
+      "conceptCluster": "prices_inflation",
+      "primarySkill": "cpi_bias_interpretation",
+      "secondarySkills": [],
+      "repairSkill": "cpi_bias_interpretation",
+      "commonError": "Incorrectly concludes “It misses cost-saving substitution; the indexed payment necessarily falls short of that increase” in this cpi bias task.",
+      "feedback": "Pricing the unchanged basket can overstate the cost increase when consumers substitute to maintain utility. Indexing to that measure can overcompensate relative to the minimum cost-of-living increase.",
+      "aHash": "3dbaf67d7b8d769145b00b74a13b6ff6154f5a8f5a7ba2c6f85a77f584b5ea98",
+      "canonicalId": "PM2B2-BIAS-FB-004",
+      "sourceId": 8400026,
+      "sourceChapter": [
+        25,
+        3
+      ],
+      "sourcePool": "finalBoss",
+      "primaryConceptId": "cpi-bias",
+      "secondaryConceptIds": [],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "finalBoss",
+      "originalBossTier": "finalBoss",
+      "sourceCurationPhase": "phaseM2b2-inflation-real-values-family-maturation-v1",
+      "boss": "Final Checkpoint",
+      "sourceHash": "b0ac83dceee2d702ffbce2d3718699c1e654b14936daef2969e3fdbd52be0562",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "macro-m2b2-inflation-family",
+          "sourceFile": "phaseM2b2-inflation-real-values-family-maturation-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "finalBoss",
+          "routeKey": "cpi_bias_interpretation",
+          "sourceRecordOrder": 3,
+          "sourceId": 8400026,
+          "sourceHash": "b0ac83dceee2d702ffbce2d3718699c1e654b14936daef2969e3fdbd52be0562",
+          "sourceCurationPhase": "phaseM2b2-inflation-real-values-family-maturation-v1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "PM2B2-BIAS-MB-002",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "macro-m2b2-inflation-family",
+      "sourceCurationPhase": "phaseM2b2-inflation-real-values-family-maturation-v1",
+      "sourceFiles": [
+        "phaseM2b2-inflation-real-values-family-maturation-v1_questions.json"
+      ]
+    },
+    "placements": [
+      [
+        "cpi-bias",
+        "boss"
+      ]
+    ],
+    "q": {
+      "id": "PM2B2-BIAS-MB-002",
+      "sourceGame": "macro-m2b2-inflation-family",
+      "q": "A new product gives households an inexpensive alternative that did not previously exist, but the CPI basket will not include it for several years. Which cost-of-living benefit may the index initially miss?",
+      "options": [
+        "The rise in prices of older products already in the basket.",
+        "The change in quantities when the fixed basket is priced again.",
+        "The benefit of satisfying wants through an expanded set of choices.",
+        "The automatic doubling of purchasing power from any new product."
+      ],
+      "tag": "cpi_bias",
+      "type": "analysis",
+      "objective": "LO25.3",
+      "difficulty": "mediumBoss",
+      "conceptCluster": "prices_inflation",
+      "primarySkill": "new_goods_bias",
+      "secondarySkills": [],
+      "repairSkill": "new_goods_bias",
+      "commonError": "Ignoring the cost-of-living benefit of newly available choices.",
+      "feedback": "A newly available good can let households achieve a given level of satisfaction at lower cost. Delayed inclusion can miss that benefit of expanded choice, a source of new-goods bias.",
+      "aHash": "8bd411ca642e4805ec66c64f0c39e65279eeed4bf393bae0fb8ab635bbfb7cea",
+      "canonicalId": "PM2B2-BIAS-MB-002",
+      "sourceId": 8400024,
+      "sourceChapter": [
+        25,
+        3
+      ],
+      "sourcePool": "mediumBoss",
+      "primaryConceptId": "cpi-bias",
+      "secondaryConceptIds": [],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "mediumBoss",
+      "originalBossTier": "mediumBoss",
+      "sourceCurationPhase": "phaseM2b2-inflation-real-values-family-maturation-v1",
+      "boss": "Checkpoint Two",
+      "sourceHash": "9e6436ec6cefc601c7a56e4c7c88369366e25cd999aec56312e4b5920dd8e2c9",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "macro-m2b2-inflation-family",
+          "sourceFile": "phaseM2b2-inflation-real-values-family-maturation-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "mediumBoss",
+          "routeKey": "new_goods_bias",
+          "sourceRecordOrder": 1,
+          "sourceId": 8400024,
+          "sourceHash": "9e6436ec6cefc601c7a56e4c7c88369366e25cd999aec56312e4b5920dd8e2c9",
+          "sourceCurationPhase": "phaseM2b2-inflation-real-values-family-maturation-v1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ECON-EC-FINALBOSS-19004",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "equilibrium-crisis",
+      "sourceFiles": [
+        "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\equilibrium-crisis\\equilibrium_crisis_questions_student.js"
+      ]
+    },
+    "placements": [
+      [
+        "real-versus-nominal-interest-rates",
+        "boss"
+      ]
+    ],
+    "q": {
+      "id": "ECON-EC-FINALBOSS-19004",
+      "q": "Two lenders each advance $110. Loan A pays 7% nominal interest with expected inflation 2%; loan B pays 9% with expected inflation 5%. Actual inflation later equals 4% in both economies. Under the approximation, which ranking reverses?",
+      "options": [
+        "Expected returns are equal, but realized returns depend on expected rather than actual inflation",
+        "A has the higher expected real return (5% versus 4%); B has the higher realized real return (5% versus 3%)",
+        "B has the higher expected and realized real returns because its nominal rate is larger",
+        "A has the higher expected and realized real returns because its expected inflation is lower"
+      ],
+      "tag": "real_nominal",
+      "type": "analysis",
+      "objective": "LO25.5",
+      "difficulty": "finalBoss",
+      "conceptCluster": "inflation_real_returns_real_wages",
+      "primarySkill": "combined_real_value_analysis",
+      "secondarySkills": [
+        "real_interest_rate",
+        "real_wage_interpretation"
+      ],
+      "repairSkill": "real_vs_nominal_values",
+      "commonError": "Incorrectly concludes “Expected returns are equal, but realized returns depend on expected rather than actual inflation” in this real versus nominal interest rates task.",
+      "sourceGame": "equilibrium-crisis",
+      "feedback": "Expected: A=7−2=5, B=9−5=4. Realized: A=7−4=3, B=9−4=5. Different expectations can reverse the ranking when actual inflation differs from forecasts.",
+      "aHash": "34f2fe37b03e23de260ed8776bddddfd4223bf69579428cc9f3137d908cd7e09",
+      "canonicalId": "ECON-EC-FINALBOSS-19004",
+      "sourceId": 19004,
+      "sourceChapter": [
+        25
+      ],
+      "sourcePool": "finalBoss",
+      "sourceHash": "abda6255a3c8ba3edf35f62136e806739e53f5124e1809d19b970fff7439eb42",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "equilibrium-crisis",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\equilibrium-crisis\\equilibrium_crisis_questions_student.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "finalBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 4,
+          "sourceId": 19004,
+          "sourceHash": "abda6255a3c8ba3edf35f62136e806739e53f5124e1809d19b970fff7439eb42"
+        }
+      ],
+      "primaryConceptId": "real-versus-nominal-interest-rates",
+      "secondaryConceptIds": [
+        "fisher-effect",
+        "monetary-neutrality"
+      ],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "finalBoss",
+      "originalBossTier": "finalBoss"
+    }
+  },
+  {
+    "id": "ECON-EC-MEDIUMBOSS-18004",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "equilibrium-crisis",
+      "sourceCurationPhase": "phase7.7-general-economics-final-maturation-v1",
+      "sourceFiles": [
+        "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\equilibrium-crisis\\equilibrium_crisis_questions_student.js"
+      ]
+    },
+    "placements": [
+      [
+        "real-versus-nominal-interest-rates",
+        "boss"
+      ]
+    ],
+    "q": {
+      "id": "ECON-EC-MEDIUMBOSS-18004",
+      "q": "Two lenders each advance $150. Loan A pays 7% nominal interest with expected inflation 2%; loan B pays 9% with expected inflation 5%. Actual inflation later equals 4% in both economies. Under the approximation, which ranking reverses?",
+      "options": [
+        "B has the higher expected and realized real returns because its nominal rate is larger",
+        "A has the higher expected and realized real returns because its expected inflation is lower",
+        "Expected returns are equal, but realized returns depend on expected rather than actual inflation",
+        "A has the higher expected real return (5% versus 4%); B has the higher realized real return (5% versus 3%)"
+      ],
+      "tag": "real_interest",
+      "type": "analysis",
+      "objective": "LO25.5",
+      "difficulty": "mediumBoss",
+      "conceptCluster": "inflation_interest_rates",
+      "primarySkill": "real_interest_rate_calculation",
+      "secondarySkills": [
+        "nominal_minus_inflation"
+      ],
+      "repairSkill": "real_interest_rate_formula",
+      "commonError": "Incorrectly concludes “B has the higher expected and realized real returns because its nominal rate is larger” in this real versus nominal interest rates task.",
+      "sourceGame": "equilibrium-crisis",
+      "feedback": "Expected: A=7−2=5, B=9−5=4. Realized: A=7−4=3, B=9−4=5. Different expectations can reverse the ranking when actual inflation differs from forecasts.",
+      "aHash": "34f2fe37b03e23de260ed8776bddddfd4223bf69579428cc9f3137d908cd7e09",
+      "canonicalId": "ECON-EC-MEDIUMBOSS-18004",
+      "sourceId": 18004,
+      "sourceChapter": [
+        25
+      ],
+      "sourcePool": "mediumBoss",
+      "sourceHash": "0e872dc4e5b803deee1213cae586daa2cabc70f7a5d839e9bfa29547684eff72",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "equilibrium-crisis",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\equilibrium-crisis\\equilibrium_crisis_questions_student.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "mediumBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 4,
+          "sourceId": 18004,
+          "sourceHash": "f53fbe8026e0bd3574ceaca1d7b16a380d5e41354a01589387a0ae3db4042741"
+        }
+      ],
+      "primaryConceptId": "real-versus-nominal-interest-rates",
+      "secondaryConceptIds": [],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "mediumBoss",
+      "originalBossTier": "mediumBoss",
+      "sourceCurationPhase": "phase7.7-general-economics-final-maturation-v1"
+    }
+  },
+  {
+    "id": "ECON-NL-EASYBOSS-2035",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "national-ledger",
+      "sourceFiles": [
+        "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\national-ledger\\national_ledger_questions_student.js"
+      ]
+    },
+    "placements": [
+      [
+        "real-versus-nominal-interest-rates",
+        "boss"
+      ]
+    ],
+    "q": {
+      "id": "ECON-NL-EASYBOSS-2035",
+      "difficulty": "easyBoss",
+      "conceptCluster": "prices_inflation",
+      "primarySkill": "real_interest_rate",
+      "secondarySkills": [
+        "inflation_rate"
+      ],
+      "repairSkill": "real_interest_rate",
+      "commonError": "Incorrectly concludes “B has the higher expected and realized real returns because its nominal rate is larger” in this real versus nominal interest rates task.",
+      "q": "Two lenders each advance $190. Loan A pays 7% nominal interest with expected inflation 2%; loan B pays 9% with expected inflation 5%. Actual inflation later equals 4% in both economies. Under the approximation, which ranking reverses?",
+      "options": [
+        "B has the higher expected and realized real returns because its nominal rate is larger",
+        "A has the higher expected and realized real returns because its expected inflation is lower",
+        "Expected returns are equal, but realized returns depend on expected rather than actual inflation",
+        "A has the higher expected real return (5% versus 4%); B has the higher realized real return (5% versus 3%)"
+      ],
+      "tag": "interest_inflation",
+      "type": "analysis",
+      "objective": "LO25.5",
+      "boss": "Registrar",
+      "feedback": "Expected: A=7−2=5, B=9−5=4. Realized: A=7−4=3, B=9−4=5. Different expectations can reverse the ranking when actual inflation differs from forecasts.",
+      "aHash": "34f2fe37b03e23de260ed8776bddddfd4223bf69579428cc9f3137d908cd7e09",
+      "canonicalId": "ECON-NL-EASYBOSS-2035",
+      "sourceId": 2035,
+      "sourceGame": "national-ledger",
+      "sourceChapter": [
+        25
+      ],
+      "sourcePool": "easyBoss",
+      "sourceHash": "0d90aa6709dca6a2753621cff663bb02462994cc6793463190d241e844f1b141",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "national-ledger",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\national-ledger\\national_ledger_questions_student.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "easyBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 35,
+          "sourceId": 2035,
+          "sourceHash": "0d90aa6709dca6a2753621cff663bb02462994cc6793463190d241e844f1b141"
+        }
+      ],
+      "primaryConceptId": "real-versus-nominal-interest-rates",
+      "secondaryConceptIds": [
+        "cpi-and-inflation-measurement"
+      ],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easyBoss",
+      "originalBossTier": "easyBoss"
+    }
+  },
+  {
+    "id": "PM2B2-RNI-MB-003",
+    "areas": [
+      "macro"
+    ],
+    "marketGateDerived": false,
+    "provenance": {
+      "sourceGame": "macro-m2b2-inflation-family",
+      "sourceCurationPhase": "phaseM2b2-inflation-real-values-family-maturation-v1",
+      "sourceFiles": [
+        "phaseM2b2-inflation-real-values-family-maturation-v1_questions.json"
+      ]
+    },
+    "placements": [
+      [
+        "real-versus-nominal-interest-rates",
+        "boss"
+      ]
+    ],
+    "q": {
+      "id": "PM2B2-RNI-MB-003",
+      "sourceGame": "macro-m2b2-inflation-family",
+      "q": "Two lenders each advance $270. Loan A pays 7% nominal interest with expected inflation 2%; loan B pays 9% with expected inflation 5%. Actual inflation later equals 4% in both economies. Under the approximation, which ranking reverses?",
+      "options": [
+        "B has the higher expected and realized real returns because its nominal rate is larger",
+        "A has the higher expected and realized real returns because its expected inflation is lower",
+        "Expected returns are equal, but realized returns depend on expected rather than actual inflation",
+        "A has the higher expected real return (5% versus 4%); B has the higher realized real return (5% versus 3%)"
+      ],
+      "tag": "real_versus_nominal_interest_rates",
+      "type": "analysis",
+      "objective": "LO25.5",
+      "difficulty": "mediumBoss",
+      "conceptCluster": "prices_inflation",
+      "primarySkill": "borrower_lender_inflation",
+      "secondarySkills": [],
+      "repairSkill": "borrower_lender_inflation",
+      "commonError": "Incorrectly concludes “B has the higher expected and realized real returns because its nominal rate is larger” in this real versus nominal interest rates task.",
+      "feedback": "Expected: A=7−2=5, B=9−5=4. Realized: A=7−4=3, B=9−4=5. Different expectations can reverse the ranking when actual inflation differs from forecasts.",
+      "aHash": "34f2fe37b03e23de260ed8776bddddfd4223bf69579428cc9f3137d908cd7e09",
+      "canonicalId": "PM2B2-RNI-MB-003",
+      "sourceId": 8400065,
+      "sourceChapter": [
+        25,
+        5
+      ],
+      "sourcePool": "mediumBoss",
+      "primaryConceptId": "real-versus-nominal-interest-rates",
+      "secondaryConceptIds": [],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "mediumBoss",
+      "originalBossTier": "mediumBoss",
+      "sourceCurationPhase": "phaseM2b2-inflation-real-values-family-maturation-v1",
+      "boss": "Checkpoint Two",
+      "sourceHash": "aa772b5185daf5768099d33f4548b54c22150c13a4a6f0e2fab5440db10b9e52",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "macro-m2b2-inflation-family",
+          "sourceFile": "phaseM2b2-inflation-real-values-family-maturation-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "mediumBoss",
+          "routeKey": "borrower_lender_inflation",
+          "sourceRecordOrder": 2,
+          "sourceId": 8400065,
+          "sourceHash": "aa772b5185daf5768099d33f4548b54c22150c13a4a6f0e2fab5440db10b9e52",
+          "sourceCurationPhase": "phaseM2b2-inflation-real-values-family-maturation-v1"
+        }
+      ]
+    }
+  }
+]

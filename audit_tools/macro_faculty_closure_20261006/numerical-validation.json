@@ -1,0 +1,525 @@
+{
+  "status": "PASS",
+  "checks": 74,
+  "questionCount": 27,
+  "results": [
+    {
+      "id": "LG-Q-9123",
+      "check": "inflation 1",
+      "actual": 6,
+      "expected": 6,
+      "status": "PASS"
+    },
+    {
+      "id": "LG-Q-9123",
+      "check": "inflation 2",
+      "actual": 9,
+      "expected": 9,
+      "status": "PASS"
+    },
+    {
+      "id": "LG-Q-9123",
+      "check": "nominal raise 2",
+      "actual": 7,
+      "expected": 7,
+      "status": "PASS"
+    },
+    {
+      "id": "LG-Q-9123",
+      "check": "real wage 1",
+      "actual": -1,
+      "expected": -1,
+      "status": "PASS"
+    },
+    {
+      "id": "LG-Q-9123",
+      "check": "real wage 2",
+      "actual": -2,
+      "expected": -2,
+      "status": "PASS"
+    },
+    {
+      "id": "LG-Q-9107",
+      "check": "initial required",
+      "actual": 100.0,
+      "expected": 100,
+      "status": "PASS"
+    },
+    {
+      "id": "LG-Q-9107",
+      "check": "initial excess",
+      "actual": 50.0,
+      "expected": 50,
+      "status": "PASS"
+    },
+    {
+      "id": "LG-Q-9107",
+      "check": "new excess",
+      "actual": 40.0,
+      "expected": 40,
+      "status": "PASS"
+    },
+    {
+      "id": "LG-Q-9122",
+      "check": "corrected P1",
+      "actual": 2.0,
+      "expected": 2,
+      "status": "PASS"
+    },
+    {
+      "id": "LG-Q-9122",
+      "check": "M2",
+      "actual": 240.0,
+      "expected": 240,
+      "status": "PASS"
+    },
+    {
+      "id": "LG-Q-9122",
+      "check": "V2",
+      "actual": 4.5,
+      "expected": 4.5,
+      "status": "PASS"
+    },
+    {
+      "id": "LG-Q-9122",
+      "check": "nominal spending 2",
+      "actual": 1080.0,
+      "expected": 1080,
+      "status": "PASS"
+    },
+    {
+      "id": "LG-Q-9122",
+      "check": "Y2",
+      "actual": 499.99999999999994,
+      "expected": 500,
+      "status": "PASS"
+    },
+    {
+      "id": "LG-Q-9122",
+      "check": "inflation",
+      "actual": 0.08000000000000007,
+      "expected": 0.08,
+      "status": "PASS"
+    },
+    {
+      "id": "PM2A-SRPC-EB-009",
+      "check": "expected inflation",
+      "actual": 3.0,
+      "expected": 3,
+      "status": "PASS"
+    },
+    {
+      "id": "PM2B3-PROD-EB-001",
+      "check": "A productivity",
+      "actual": 10.0,
+      "expected": 10,
+      "status": "PASS"
+    },
+    {
+      "id": "PM2B3-PROD-EB-001",
+      "check": "B initial",
+      "actual": 5.0,
+      "expected": 5,
+      "status": "PASS"
+    },
+    {
+      "id": "PM2B3-PROD-EB-001",
+      "check": "B final",
+      "actual": 8.333333333333334,
+      "expected": 8.333333333333334,
+      "status": "PASS"
+    },
+    {
+      "id": "PM2B3-PROD-EB-001",
+      "check": "B percent gain",
+      "actual": 66.66666666666667,
+      "expected": 66.66666666666667,
+      "status": "PASS"
+    },
+    {
+      "id": "ECON-NL-EASYBOSS-2013",
+      "check": "real GDP 1",
+      "actual": 1100.0,
+      "expected": 1100,
+      "status": "PASS"
+    },
+    {
+      "id": "ECON-NL-EASYBOSS-2013",
+      "check": "real GDP 2",
+      "actual": 1100.0,
+      "expected": 1100,
+      "status": "PASS"
+    },
+    {
+      "id": "ECON-NL-EASYBOSS-2013",
+      "check": "real per person change",
+      "actual": -4.761904761904767,
+      "expected": -4.761904761904762,
+      "status": "PASS"
+    },
+    {
+      "id": "LG-Q-9102",
+      "check": "effective reserves",
+      "actual": 0.2,
+      "expected": 0.2,
+      "status": "PASS"
+    },
+    {
+      "id": "LG-Q-9102",
+      "check": "deposit capacity",
+      "actual": 700.0,
+      "expected": 700,
+      "status": "PASS"
+    },
+    {
+      "id": "LG-Q-9010",
+      "check": "old requirement",
+      "actual": 60000.0,
+      "expected": 60000,
+      "status": "PASS"
+    },
+    {
+      "id": "LG-Q-9010",
+      "check": "new requirement",
+      "actual": 90000.0,
+      "expected": 90000,
+      "status": "PASS"
+    },
+    {
+      "id": "LG-Q-9010",
+      "check": "new excess",
+      "actual": 0.0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "PM2B4-UTYPE-LB-001",
+      "check": "old search stock",
+      "actual": 240,
+      "expected": 240,
+      "status": "PASS"
+    },
+    {
+      "id": "PM2B4-UTYPE-LB-001",
+      "check": "new search stock",
+      "actual": 120,
+      "expected": 120,
+      "status": "PASS"
+    },
+    {
+      "id": "PM2B4-UTYPE-LB-001",
+      "check": "reduction",
+      "actual": 120,
+      "expected": 120,
+      "status": "PASS"
+    },
+    {
+      "id": "PMOE-NER-LB-001",
+      "check": "initial dollars",
+      "actual": 1200.0,
+      "expected": 1200,
+      "status": "PASS"
+    },
+    {
+      "id": "PMOE-NER-LB-001",
+      "check": "final dollars",
+      "actual": 1176.0,
+      "expected": 1176,
+      "status": "PASS"
+    },
+    {
+      "id": "PMOE-NER-LB-001",
+      "check": "return",
+      "actual": -0.020000000000000018,
+      "expected": -0.02,
+      "status": "PASS"
+    },
+    {
+      "id": "PMOE-RER-L-003",
+      "check": "offsetting nominal change",
+      "actual": -6,
+      "expected": -6,
+      "status": "PASS"
+    },
+    {
+      "id": "PMOE-RER-L-003",
+      "check": "real appreciation",
+      "actual": 4,
+      "expected": 4,
+      "status": "PASS"
+    },
+    {
+      "id": "ECON-SP-LEGENDARYBOSS-9110",
+      "check": "initial plan",
+      "actual": 60.0,
+      "expected": 60,
+      "status": "PASS"
+    },
+    {
+      "id": "ECON-SP-LEGENDARYBOSS-9110",
+      "check": "revised removal",
+      "actual": 150.0,
+      "expected": 150,
+      "status": "PASS"
+    },
+    {
+      "id": "ECON-SP-LEGENDARYBOSS-9110",
+      "check": "sacrifice ratio",
+      "actual": 1.5,
+      "expected": 1.5,
+      "status": "PASS"
+    },
+    {
+      "id": "ECON-NL-MEDIUMBOSS-3016",
+      "check": "positive diminished increment ratio",
+      "actual": 0.5,
+      "expected": 0.5,
+      "status": "PASS"
+    },
+    {
+      "id": "ECON-EC-FINALBOSS-19011",
+      "check": "poor marginal contribution",
+      "actual": 3.0,
+      "expected": 3,
+      "status": "PASS"
+    },
+    {
+      "id": "ECON-EC-FINALBOSS-19011",
+      "check": "rich marginal contribution",
+      "actual": 1.5,
+      "expected": 1.5,
+      "status": "PASS"
+    },
+    {
+      "id": "ECON-NL-LEGENDARYBOSS-9121",
+      "check": "A initially",
+      "actual": 12.0,
+      "expected": 12,
+      "status": "PASS"
+    },
+    {
+      "id": "ECON-NL-LEGENDARYBOSS-9121",
+      "check": "B initially",
+      "actual": 20.0,
+      "expected": 20,
+      "status": "PASS"
+    },
+    {
+      "id": "ECON-NL-LEGENDARYBOSS-9121",
+      "check": "A afterward",
+      "actual": 16.0,
+      "expected": 16,
+      "status": "PASS"
+    },
+    {
+      "id": "ECON-NL-LEGENDARYBOSS-9121",
+      "check": "B afterward",
+      "actual": 22.0,
+      "expected": 22,
+      "status": "PASS"
+    },
+    {
+      "id": "ECON-NL-LEGENDARYBOSS-9121",
+      "check": "initial gap",
+      "actual": 8.0,
+      "expected": 8,
+      "status": "PASS"
+    },
+    {
+      "id": "ECON-NL-LEGENDARYBOSS-9121",
+      "check": "final gap",
+      "actual": 6.0,
+      "expected": 6,
+      "status": "PASS"
+    },
+    {
+      "id": "ECON-NL-MEDIUMBOSS-3021",
+      "check": "third marginal output",
+      "actual": 40,
+      "expected": 40,
+      "status": "PASS"
+    },
+    {
+      "id": "ECON-NL-MEDIUMBOSS-3021",
+      "check": "output per worker",
+      "actual": 20.0,
+      "expected": 20,
+      "status": "PASS"
+    },
+    {
+      "id": "ECON-NL-FINALBOSS-4016",
+      "check": "cyclical percentage points",
+      "actual": 3,
+      "expected": 3,
+      "status": "PASS"
+    },
+    {
+      "id": "LG-Q-9069",
+      "check": "multiplier",
+      "actual": 4.0,
+      "expected": 4,
+      "status": "PASS"
+    },
+    {
+      "id": "LG-Q-9069",
+      "check": "initial policy",
+      "actual": 80.0,
+      "expected": 80,
+      "status": "PASS"
+    },
+    {
+      "id": "LG-Q-9069",
+      "check": "revised policy",
+      "actual": 68.57142857142857,
+      "expected": 68.57142857142857,
+      "status": "PASS"
+    },
+    {
+      "id": "ECON-EC-MEDIUMBOSS-18000",
+      "check": "substitution difference",
+      "actual": 3,
+      "expected": 3,
+      "status": "PASS"
+    },
+    {
+      "id": "ECON-EC-FINALBOSS-19001",
+      "check": "indexed payment",
+      "actual": 1080.0,
+      "expected": 1080,
+      "status": "PASS"
+    },
+    {
+      "id": "ECON-EC-FINALBOSS-19001",
+      "check": "utility cost",
+      "actual": 1050.0,
+      "expected": 1050,
+      "status": "PASS"
+    },
+    {
+      "id": "ECON-EC-FINALBOSS-19001",
+      "check": "overcompensation",
+      "actual": 30,
+      "expected": 30,
+      "status": "PASS"
+    },
+    {
+      "id": "PM2B2-BIAS-FB-004",
+      "check": "quality adjusted relative price",
+      "actual": 0.6,
+      "expected": 0.6,
+      "status": "PASS"
+    },
+    {
+      "id": "PM2B2-BIAS-FB-004",
+      "check": "price change",
+      "actual": -0.4,
+      "expected": -0.4,
+      "status": "PASS"
+    },
+    {
+      "id": "ECON-NL-EASYBOSS-2035",
+      "check": "real rate",
+      "actual": 3,
+      "expected": 3,
+      "status": "PASS"
+    },
+    {
+      "id": "ECON-EC-MEDIUMBOSS-18004",
+      "check": "expected",
+      "actual": 5,
+      "expected": 5,
+      "status": "PASS"
+    },
+    {
+      "id": "ECON-EC-MEDIUMBOSS-18004",
+      "check": "realized",
+      "actual": 3,
+      "expected": 3,
+      "status": "PASS"
+    },
+    {
+      "id": "PM2B2-RNI-MB-003",
+      "check": "positive inflation surprise",
+      "actual": 3,
+      "expected": 3,
+      "status": "PASS"
+    },
+    {
+      "id": "PM2B2-RNI-LB-001",
+      "check": "A expected",
+      "actual": 5,
+      "expected": 5,
+      "status": "PASS"
+    },
+    {
+      "id": "PM2B2-RNI-LB-001",
+      "check": "B expected",
+      "actual": 4,
+      "expected": 4,
+      "status": "PASS"
+    },
+    {
+      "id": "PM2B2-RNI-LB-001",
+      "check": "A realized",
+      "actual": 3,
+      "expected": 3,
+      "status": "PASS"
+    },
+    {
+      "id": "PM2B2-RNI-LB-001",
+      "check": "B realized",
+      "actual": 5,
+      "expected": 5,
+      "status": "PASS"
+    },
+    {
+      "id": "PM2B2-RNI-LB-001",
+      "check": "A surprise",
+      "actual": 2,
+      "expected": 2,
+      "status": "PASS"
+    },
+    {
+      "id": "PM2B2-RNI-LB-001",
+      "check": "B surprise",
+      "actual": -1,
+      "expected": -1,
+      "status": "PASS"
+    },
+    {
+      "id": "PG5-PC-L-024",
+      "check": "graph slope",
+      "actual": -0.5,
+      "expected": -0.5,
+      "status": "PASS"
+    },
+    {
+      "id": "PG5-PC-L-024",
+      "check": "next inflation",
+      "actual": 0.5,
+      "expected": 0.5,
+      "status": "PASS"
+    },
+    {
+      "id": "PG5-PC-L-024",
+      "check": "nonnegative constraint",
+      "actual": 6.0,
+      "expected": 6,
+      "status": "PASS"
+    },
+    {
+      "id": "LG-Q-9139",
+      "check": "net AD",
+      "actual": 350.0000000000001,
+      "expected": 350,
+      "status": "PASS"
+    },
+    {
+      "id": "LG-Q-9139",
+      "check": "remaining gap",
+      "actual": 250,
+      "expected": 250,
+      "status": "PASS"
+    }
+  ]
+}

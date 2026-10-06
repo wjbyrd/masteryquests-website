@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "candidateCount": 30,
+  "closed": 30,
+  "remainingFacultyDecisions": 0,
+  "changedRecords": 42,
+  "changedCandidates": 27,
+  "familyDependenciesChanged": 15,
+  "microRecordsFrozen": 6297,
+  "marketGateFrozen": 541,
+  "generalTierOnlyChanges": 2,
+  "prior20ChangesPreserved": true,
+  "graphAssetsUnchanged": 107,
+  "currentSuites": 30,
+  "exporterTests": 25,
+  "arithmeticAssertions": 74,
+  "exports": {
+    "general": {
+      "questions": 1589,
+      "pages": 825,
+      "fullCsvParity": true
+    },
+    "micro": {
+      "questions": 6297,
+      "pages": 3476,
+      "fullCsvParity": true
+    },
+    "macro": {
+      "questions": 4747,
+      "pages": 2500,
+      "fullCsvParity": true
+    }
+  },
+  "librarySha256": "869604194dbf645a33c326390c059fd67df7b5c9596a41fa06e0c25c5ae6a5d2"
+}
