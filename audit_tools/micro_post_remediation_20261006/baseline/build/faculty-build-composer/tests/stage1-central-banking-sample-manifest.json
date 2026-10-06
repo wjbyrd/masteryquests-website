@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "1.2.0",
+  "composerVersion": "4.5b.0",
+  "title": "Central Banking Mastery Quest",
+  "slug": "central-banking-mastery-quest",
+  "selectedConceptIds": [
+    "central-bank-and-federal-reserve",
+    "money-functions-and-measures",
+    "bank-money-creation",
+    "monetary-policy-tools"
+  ],
+  "checkpointFocus": {
+    "checkpointOne": null,
+    "checkpointTwo": null,
+    "finalCheckpoint": null
+  },
+  "bossCoverage": {
+    "checkpointOne": {
+      "label": "Checkpoint One",
+      "pool": "easyBoss",
+      "difficulty": "easy",
+      "automatic": true,
+      "eligibleConceptIds": [
+        "central-bank-and-federal-reserve",
+        "money-functions-and-measures",
+        "bank-money-creation",
+        "monetary-policy-tools"
+      ],
+      "activeConceptIds": [
+        "central-bank-and-federal-reserve",
+        "money-functions-and-measures",
+        "bank-money-creation",
+        "monetary-policy-tools"
+      ],
+      "questionCount": 12
+    },
+    "checkpointTwo": {
+      "label": "Checkpoint Two",
+      "pool": "mediumBoss",
+      "difficulty": "medium",
+      "automatic": true,
+      "eligibleConceptIds": [
+        "bank-money-creation"
+      ],
+      "activeConceptIds": [
+        "bank-money-creation"
+      ],
+      "questionCount": 3
+    },
+    "finalCheckpoint": {
+      "label": "Final Checkpoint",
+      "pool": "finalBoss",
+      "difficulty": "hard",
+      "automatic": true,
+      "eligibleConceptIds": [
+        "bank-money-creation"
+      ],
+      "activeConceptIds": [
+        "bank-money-creation"
+      ],
+      "questionCount": 3
+    }
+  },
+  "supportedModes": [
+    "standard",
+    "timed",
+    "exam",
+    "legendary",
+    "score"
+  ],
+  "saveKeyNamespace": "mq-econ:central-banking-mastery-quest:8bdcfc335f9c",
+  "compositionFingerprint": "8bdcfc335f9c80f168075bc18e3a2cd6cd7168de507d71f55711ea07b5155655",
+  "libraryVersion": "phase5.2b-stage1-core-rescue",
+  "librarySha256": "de4c54720cb4ba2c348f575e4d35b1e415208c3b81fcceb3a6aa3ccf6b3ddc6e",
+  "templateSha256": "636d176c789945ed2d760318424b76082c4fcacf7ca87da699992cb2e79323f3",
+  "poolCounts": {
+    "easy": 37,
+    "medium": 36,
+    "hard": 31,
+    "elite": 24,
+    "legendary": 19,
+    "easyBoss": 12,
+    "mediumBoss": 3,
+    "finalBoss": 3,
+    "legendaryBoss": 11,
+    "repair": 36,
+    "repairSeed": 0,
+    "bridge": 16,
+    "calculation": 35,
+    "integration": 0,
+    "graph": 0,
+    "assets": 0,
+    "totalCanonical": 228
+  }
+}

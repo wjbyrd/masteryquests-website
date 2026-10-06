@@ -1,0 +1,4186 @@
+{
+  "librarySha256": "71e253d20eb5734c4c807087e2a5b87bfe28c01a8b76a549e6731acf4b1ae800",
+  "component": "Exact template CSS and graph rendering/lightbox functions; isolated fixture, not full gameplay",
+  "assets": [
+    {
+      "index": 0,
+      "asset": "question-assets/consumer-and-producer-surplus/cps_eq_compact.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "00-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "00-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 278.78125,
+            "width": 358,
+            "height": 250.4375
+          },
+          "file": "00-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 53,
+            "width": 1182,
+            "height": 794
+          },
+          "file": "00-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 531
+          },
+          "file": "00-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "asset": "question-assets/consumer-choice/CHOICE-01.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "01-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "01-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 275.453125,
+            "width": 358,
+            "height": 257.09375
+          },
+          "file": "01-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 53,
+            "width": 1182,
+            "height": 794
+          },
+          "file": "01-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 545.171875
+          },
+          "file": "01-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "asset": "question-assets/consumer-choice/CHOICE-02.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "02-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "02-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 275.453125,
+            "width": 358,
+            "height": 257.09375
+          },
+          "file": "02-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 53,
+            "width": 1182,
+            "height": 794
+          },
+          "file": "02-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 545.171875
+          },
+          "file": "02-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "asset": "question-assets/consumer-choice/CHOICE-03.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "03-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "03-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 275.453125,
+            "width": 358,
+            "height": 257.09375
+          },
+          "file": "03-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 53,
+            "width": 1182,
+            "height": 794
+          },
+          "file": "03-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 545.171875
+          },
+          "file": "03-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "asset": "question-assets/consumer-choice/CHOICE-04.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "04-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "04-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 275.453125,
+            "width": 358,
+            "height": 257.09375
+          },
+          "file": "04-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 53,
+            "width": 1182,
+            "height": 794
+          },
+          "file": "04-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 545.171875
+          },
+          "file": "04-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "asset": "question-assets/consumer-choice/CHOICE-05-bundles.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "05-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "05-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 281.96875,
+            "width": 358,
+            "height": 244.046875
+          },
+          "file": "05-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 53,
+            "width": 1182,
+            "height": 794
+          },
+          "file": "05-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 517.359375
+          },
+          "file": "05-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "asset": "question-assets/elasticity/ELAS-02.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "06-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "06-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 276.875,
+            "width": 358,
+            "height": 254.25
+          },
+          "file": "06-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 53,
+            "width": 1182,
+            "height": 794
+          },
+          "file": "06-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 539.109375
+          },
+          "file": "06-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "asset": "question-assets/factor-markets/LABOR-01.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "07-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "07-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 276.96875,
+            "width": 358,
+            "height": 254.046875
+          },
+          "file": "07-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 53,
+            "width": 1182,
+            "height": 794
+          },
+          "file": "07-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 538.6875
+          },
+          "file": "07-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "asset": "question-assets/income-inequality-poverty-and-redistribution/LORENZ-01.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "08-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "08-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 280.78125,
+            "width": 358,
+            "height": 246.4375
+          },
+          "file": "08-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 53,
+            "width": 1182,
+            "height": 794
+          },
+          "file": "08-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 522.46875
+          },
+          "file": "08-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "asset": "question-assets/income-inequality-poverty-and-redistribution/LORENZ-02.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "09-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "09-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 280.78125,
+            "width": 358,
+            "height": 246.4375
+          },
+          "file": "09-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 53,
+            "width": 1182,
+            "height": 794
+          },
+          "file": "09-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 522.46875
+          },
+          "file": "09-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "asset": "question-assets/income-inequality-poverty-and-redistribution/LORENZ-03.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "10-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "10-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 280.78125,
+            "width": 358,
+            "height": 246.4375
+          },
+          "file": "10-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 53,
+            "width": 1182,
+            "height": 794
+          },
+          "file": "10-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 522.46875
+          },
+          "file": "10-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "asset": "question-assets/international-trade-and-trade-policy/itp_quota_market.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "11-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "11-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 278.78125,
+            "width": 358,
+            "height": 250.4375
+          },
+          "file": "11-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 53,
+            "width": 1182,
+            "height": 794
+          },
+          "file": "11-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 531
+          },
+          "file": "11-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "asset": "question-assets/international-trade-and-trade-policy/itp_tariff_regions.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "12-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "12-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 278.78125,
+            "width": 358,
+            "height": 250.4375
+          },
+          "file": "12-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 53,
+            "width": 1182,
+            "height": 794
+          },
+          "file": "12-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 531
+          },
+          "file": "12-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "asset": "question-assets/market-failures/PUBLIC-04.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "13-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "13-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 280.96875,
+            "width": 358,
+            "height": 246.046875
+          },
+          "file": "13-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 53,
+            "width": 1182,
+            "height": 794
+          },
+          "file": "13-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 521.65625
+          },
+          "file": "13-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "asset": "question-assets/market-failures/PUBLIC-05.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "14-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "14-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 284.46875,
+            "width": 358,
+            "height": 239.0625
+          },
+          "file": "14-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 56.09375,
+            "width": 1182,
+            "height": 787.796875
+          },
+          "file": "14-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 506.765625
+          },
+          "file": "14-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "asset": "question-assets/monopolistic-competition/mcmp_long_run_1.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "15-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "15-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 283.265625,
+            "width": 358,
+            "height": 241.46875
+          },
+          "file": "15-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 53,
+            "width": 1182,
+            "height": 794
+          },
+          "file": "15-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 511.890625
+          },
+          "file": "15-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "asset": "question-assets/monopolistic-competition/mcmp_long_run_2.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "16-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "16-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 287.859375,
+            "width": 358,
+            "height": 232.28125
+          },
+          "file": "16-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 67.328125,
+            "width": 1182,
+            "height": 765.328125
+          },
+          "file": "16-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 492.328125
+          },
+          "file": "16-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "asset": "question-assets/monopolistic-competition/mcmp_long_run_3.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "17-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "17-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 286.15625,
+            "width": 358,
+            "height": 235.671875
+          },
+          "file": "17-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 61.734375,
+            "width": 1182,
+            "height": 776.53125
+          },
+          "file": "17-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 499.53125
+          },
+          "file": "17-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "asset": "question-assets/monopolistic-competition/mcmp_long_run_4.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "18-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "18-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 287.765625,
+            "width": 358,
+            "height": 232.453125
+          },
+          "file": "18-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 67.0625,
+            "width": 1182,
+            "height": 765.875
+          },
+          "file": "18-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 492.6875
+          },
+          "file": "18-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "asset": "question-assets/monopolistic-competition/mcmp_long_run_5.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "19-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "19-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 286.078125,
+            "width": 358,
+            "height": 235.84375
+          },
+          "file": "19-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 61.453125,
+            "width": 1182,
+            "height": 777.09375
+          },
+          "file": "19-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 499.90625
+          },
+          "file": "19-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "asset": "question-assets/monopoly/MON-01-welfare.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "20-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "20-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 278.78125,
+            "width": 358,
+            "height": 250.4375
+          },
+          "file": "20-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 53,
+            "width": 1182,
+            "height": 794
+          },
+          "file": "20-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 531
+          },
+          "file": "20-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "asset": "question-assets/monopoly/MON-02-variable-cost.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "21-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "21-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 279.453125,
+            "width": 358,
+            "height": 249.09375
+          },
+          "file": "21-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 53,
+            "width": 1182,
+            "height": 794
+          },
+          "file": "21-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 528.125
+          },
+          "file": "21-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "asset": "question-assets/monopoly/MON-03-long-run.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "22-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "22-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 275.96875,
+            "width": 358,
+            "height": 256.046875
+          },
+          "file": "22-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 53,
+            "width": 1182,
+            "height": 794
+          },
+          "file": "22-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 542.921875
+          },
+          "file": "22-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "asset": "question-assets/oligopoly/cartel_1.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "23-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "23-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 282.71875,
+            "width": 358,
+            "height": 242.546875
+          },
+          "file": "23-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 53,
+            "width": 1182,
+            "height": 794
+          },
+          "file": "23-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 514.203125
+          },
+          "file": "23-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "asset": "question-assets/oligopoly/cartel_2.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "24-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "24-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 282.71875,
+            "width": 358,
+            "height": 242.546875
+          },
+          "file": "24-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 53,
+            "width": 1182,
+            "height": 794
+          },
+          "file": "24-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 514.203125
+          },
+          "file": "24-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "asset": "question-assets/oligopoly/cartel_3.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "25-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "25-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 280.78125,
+            "width": 358,
+            "height": 246.4375
+          },
+          "file": "25-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 53,
+            "width": 1182,
+            "height": 794
+          },
+          "file": "25-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 522.46875
+          },
+          "file": "25-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "asset": "question-assets/oligopoly/cartel_4.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "26-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "26-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 282.71875,
+            "width": 358,
+            "height": 242.546875
+          },
+          "file": "26-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 53,
+            "width": 1182,
+            "height": 794
+          },
+          "file": "26-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 514.203125
+          },
+          "file": "26-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "asset": "question-assets/oligopoly/cartel_5.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "27-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "27-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 283.703125,
+            "width": 358,
+            "height": 240.578125
+          },
+          "file": "27-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 53.609375,
+            "width": 1182,
+            "height": 792.78125
+          },
+          "file": "27-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 509.984375
+          },
+          "file": "27-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "asset": "question-assets/oligopoly/cartel_6.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "28-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "28-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 282.71875,
+            "width": 358,
+            "height": 242.546875
+          },
+          "file": "28-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 53,
+            "width": 1182,
+            "height": 794
+          },
+          "file": "28-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 514.203125
+          },
+          "file": "28-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "asset": "question-assets/oligopoly/kinked_1.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "29-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "29-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 281.78125,
+            "width": 358,
+            "height": 244.4375
+          },
+          "file": "29-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 53,
+            "width": 1182,
+            "height": 794
+          },
+          "file": "29-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 518.21875
+          },
+          "file": "29-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "asset": "question-assets/oligopoly/kinked_2.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "30-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "30-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 281.78125,
+            "width": 358,
+            "height": 244.4375
+          },
+          "file": "30-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 53,
+            "width": 1182,
+            "height": 794
+          },
+          "file": "30-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 518.21875
+          },
+          "file": "30-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "asset": "question-assets/statutory-versus-economic-tax-incidence/TAX-02.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "31-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "31-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 281.703125,
+            "width": 358,
+            "height": 244.578125
+          },
+          "file": "31-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 53,
+            "width": 1182,
+            "height": 794
+          },
+          "file": "31-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 518.5
+          },
+          "file": "31-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "asset": "question-assets/perfect-competition/pc_profit_a.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "32-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "32-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 291.5625,
+            "width": 358,
+            "height": 224.859375
+          },
+          "file": "32-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 79.625,
+            "width": 1182,
+            "height": 740.734375
+          },
+          "file": "32-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 476.53125
+          },
+          "file": "32-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "asset": "question-assets/perfect-competition/pc_profit_b.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "33-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "33-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 291.5625,
+            "width": 358,
+            "height": 224.859375
+          },
+          "file": "33-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 79.625,
+            "width": 1182,
+            "height": 740.734375
+          },
+          "file": "33-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 476.53125
+          },
+          "file": "33-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "asset": "question-assets/perfect-competition/pc_profit_a-original-price.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "34-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "34-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 291.5625,
+            "width": 358,
+            "height": 224.859375
+          },
+          "file": "34-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 79.625,
+            "width": 1182,
+            "height": 740.734375
+          },
+          "file": "34-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 476.53125
+          },
+          "file": "34-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "asset": "question-assets/perfect-competition/pc_loss_produce_a.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "35-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "35-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 291.5625,
+            "width": 358,
+            "height": 224.859375
+          },
+          "file": "35-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 79.625,
+            "width": 1182,
+            "height": 740.734375
+          },
+          "file": "35-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 476.53125
+          },
+          "file": "35-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "asset": "question-assets/perfect-competition/pc_loss_produce_b.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "36-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "36-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 291.5625,
+            "width": 358,
+            "height": 224.859375
+          },
+          "file": "36-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 79.625,
+            "width": 1182,
+            "height": 740.734375
+          },
+          "file": "36-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 476.53125
+          },
+          "file": "36-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "asset": "question-assets/perfect-competition/pc_loss_produce_c.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "37-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "37-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 294,
+            "width": 358,
+            "height": 219.984375
+          },
+          "file": "37-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 87.71875,
+            "width": 1182,
+            "height": 724.546875
+          },
+          "file": "37-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 466.140625
+          },
+          "file": "37-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "asset": "question-assets/perfect-competition/pc_profit_c.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "38-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "38-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 291.5625,
+            "width": 358,
+            "height": 224.859375
+          },
+          "file": "38-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 79.625,
+            "width": 1182,
+            "height": 740.734375
+          },
+          "file": "38-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 476.53125
+          },
+          "file": "38-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "asset": "question-assets/perfect-competition/pc_shutdown_a.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "39-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "39-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 291.5625,
+            "width": 358,
+            "height": 224.859375
+          },
+          "file": "39-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 79.625,
+            "width": 1182,
+            "height": 740.734375
+          },
+          "file": "39-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 476.53125
+          },
+          "file": "39-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 40,
+      "asset": "question-assets/perfect-competition/pc_shutdown_c.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "40-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "40-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 291.5625,
+            "width": 358,
+            "height": 224.859375
+          },
+          "file": "40-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 79.625,
+            "width": 1182,
+            "height": 740.734375
+          },
+          "file": "40-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 476.53125
+          },
+          "file": "40-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 41,
+      "asset": "question-assets/perfect-competition/pc_supply_1.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "41-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "41-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 281.703125,
+            "width": 358,
+            "height": 244.578125
+          },
+          "file": "41-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 53,
+            "width": 1182,
+            "height": 794
+          },
+          "file": "41-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 518.5
+          },
+          "file": "41-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 42,
+      "asset": "question-assets/perfect-competition/pc_supply_2.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "42-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "42-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 281.703125,
+            "width": 358,
+            "height": 244.578125
+          },
+          "file": "42-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 53,
+            "width": 1182,
+            "height": 794
+          },
+          "file": "42-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 518.5
+          },
+          "file": "42-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 43,
+      "asset": "question-assets/perfect-competition/pc_efficiency.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "43-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "43-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 291.5625,
+            "width": 358,
+            "height": 224.859375
+          },
+          "file": "43-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 79.625,
+            "width": 1182,
+            "height": 740.734375
+          },
+          "file": "43-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 476.53125
+          },
+          "file": "43-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 44,
+      "asset": "question-assets/perfect-competition/pc_zero_a.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "44-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "44-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 291.5625,
+            "width": 358,
+            "height": 224.859375
+          },
+          "file": "44-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 79.625,
+            "width": 1182,
+            "height": 740.734375
+          },
+          "file": "44-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 476.53125
+          },
+          "file": "44-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 45,
+      "asset": "question-assets/perfect-competition/PC-06-integration.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 272.734375,
+            "width": 642,
+            "height": 316.515625
+          },
+          "file": "45-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 272.734375,
+            "width": 642,
+            "height": 316.515625
+          },
+          "file": "45-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 315.53125,
+            "width": 358,
+            "height": 176.9375
+          },
+          "file": "45-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 159.0625,
+            "width": 1182,
+            "height": 581.875
+          },
+          "file": "45-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 374.5
+          },
+          "file": "45-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 46,
+      "asset": "question-assets/perfect-competition/PC-08-integration.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 274.546875,
+            "width": 642,
+            "height": 312.90625
+          },
+          "file": "46-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 274.546875,
+            "width": 642,
+            "height": 312.90625
+          },
+          "file": "46-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 316.53125,
+            "width": 358,
+            "height": 174.9375
+          },
+          "file": "46-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 162.375,
+            "width": 1182,
+            "height": 575.234375
+          },
+          "file": "46-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 370.21875
+          },
+          "file": "46-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 47,
+      "asset": "question-assets/perfect-competition/pc_market_firm_1-integration.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 275.46875,
+            "width": 642,
+            "height": 311.046875
+          },
+          "file": "47-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 275.46875,
+            "width": 642,
+            "height": 311.046875
+          },
+          "file": "47-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 317.046875,
+            "width": 358,
+            "height": 173.90625
+          },
+          "file": "47-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 164.09375,
+            "width": 1182,
+            "height": 571.796875
+          },
+          "file": "47-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 368.015625
+          },
+          "file": "47-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 48,
+      "asset": "question-assets/perfect-competition/pc_market_firm_2-integration.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 274.03125,
+            "width": 642,
+            "height": 313.921875
+          },
+          "file": "48-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 274.03125,
+            "width": 642,
+            "height": 313.921875
+          },
+          "file": "48-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 316.25,
+            "width": 358,
+            "height": 175.5
+          },
+          "file": "48-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 161.4375,
+            "width": 1182,
+            "height": 577.109375
+          },
+          "file": "48-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 371.4375
+          },
+          "file": "48-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 49,
+      "asset": "question-assets/perfect-competition/PC-06-market-only.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "49-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "49-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 275.84375,
+            "width": 358,
+            "height": 256.3125
+          },
+          "file": "49-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 53,
+            "width": 1182,
+            "height": 794
+          },
+          "file": "49-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 543.5
+          },
+          "file": "49-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 50,
+      "asset": "question-assets/perfect-competition/PC-08-market-only.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "50-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "50-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 278.765625,
+            "width": 358,
+            "height": 250.453125
+          },
+          "file": "50-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 53,
+            "width": 1182,
+            "height": 794
+          },
+          "file": "50-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 531.015625
+          },
+          "file": "50-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 51,
+      "asset": "question-assets/perfect-competition/PC-07-firm-only.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "51-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "51-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 280.765625,
+            "width": 358,
+            "height": 246.453125
+          },
+          "file": "51-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 53,
+            "width": 1182,
+            "height": 794
+          },
+          "file": "51-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 522.5
+          },
+          "file": "51-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 52,
+      "asset": "question-assets/perfect-competition/PC-07-price-transfer.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 275.46875,
+            "width": 642,
+            "height": 311.046875
+          },
+          "file": "52-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 275.46875,
+            "width": 642,
+            "height": 311.046875
+          },
+          "file": "52-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 317.046875,
+            "width": 358,
+            "height": 173.90625
+          },
+          "file": "52-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 164.09375,
+            "width": 1182,
+            "height": 571.796875
+          },
+          "file": "52-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 368.015625
+          },
+          "file": "52-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 53,
+      "asset": "question-assets/perfect-competition/pc_market_firm_2.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 272.65625,
+            "width": 642,
+            "height": 316.6875
+          },
+          "file": "53-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 272.65625,
+            "width": 642,
+            "height": 316.6875
+          },
+          "file": "53-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 315.484375,
+            "width": 358,
+            "height": 177.03125
+          },
+          "file": "53-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 158.890625,
+            "width": 1182,
+            "height": 582.203125
+          },
+          "file": "53-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 374.703125
+          },
+          "file": "53-mobile-lightbox.png"
+        }
+      ]
+    },
+    {
+      "index": 54,
+      "asset": "question-assets/costs-of-production/cop_productivity_shift.webp",
+      "renders": [
+        {
+          "mode": "desktop",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "54-desktop.png"
+        },
+        {
+          "mode": "grayscale",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 361.5,
+            "y": 241,
+            "width": 642,
+            "height": 380
+          },
+          "file": "54-grayscale.png"
+        },
+        {
+          "mode": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 16,
+            "y": 280.96875,
+            "width": 358,
+            "height": 246.046875
+          },
+          "file": "54-mobile.png"
+        },
+        {
+          "mode": "lightbox",
+          "viewport": {
+            "width": 1365,
+            "height": 900
+          },
+          "bounds": {
+            "x": 91.5,
+            "y": 53,
+            "width": 1182,
+            "height": 794
+          },
+          "file": "54-lightbox.png"
+        },
+        {
+          "mode": "mobile-lightbox",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "bounds": {
+            "x": 12,
+            "y": 64,
+            "width": 760,
+            "height": 521.65625
+          },
+          "file": "54-mobile-lightbox.png"
+        }
+      ]
+    }
+  ]
+}

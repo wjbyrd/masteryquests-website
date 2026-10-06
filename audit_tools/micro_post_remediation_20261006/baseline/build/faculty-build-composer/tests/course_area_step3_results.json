@@ -1,0 +1,161 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "PASS",
+  "caseCount": 14,
+  "cases": [
+    {
+      "id": "A",
+      "name": "general + all",
+      "status": "PASS",
+      "visibleCount": 22
+    },
+    {
+      "id": "B",
+      "name": "micro + all",
+      "status": "PASS",
+      "visibleCount": 86
+    },
+    {
+      "id": "C",
+      "name": "macro + all",
+      "status": "PASS",
+      "visibleCount": 79
+    },
+    {
+      "id": "D",
+      "name": "general + ready",
+      "status": "PASS",
+      "visibleCount": 11
+    },
+    {
+      "id": "E",
+      "name": "micro + supporting",
+      "status": "PASS",
+      "visibleCount": 27
+    },
+    {
+      "id": "F",
+      "name": "macro + ready",
+      "status": "PASS",
+      "visibleCount": 68
+    },
+    {
+      "id": "G",
+      "name": "General → Micro → Macro → General",
+      "status": "PASS",
+      "visibleCounts": [
+        22,
+        86,
+        79,
+        22
+      ]
+    },
+    {
+      "id": "H",
+      "name": "expanded Micro family children",
+      "status": "PASS",
+      "parentCount": 8,
+      "childCount": 54
+    },
+    {
+      "id": "I",
+      "name": "Macro excludes Costs of Production children",
+      "status": "PASS",
+      "excludedChildCount": 10
+    },
+    {
+      "id": "J",
+      "name": "search inside Macro",
+      "status": "PASS",
+      "resultCount": 0
+    },
+    {
+      "id": "K",
+      "name": "starter presets remain area-valid",
+      "status": "PASS",
+      "presetCount": 13,
+      "macroPresetCount": 5
+    },
+    {
+      "id": "L",
+      "name": "mobile/accent source contract",
+      "status": "PASS",
+      "accentWidthPx": 4
+    },
+    {
+      "id": "M",
+      "name": "family index is exhaustive and unique",
+      "status": "PASS",
+      "navigationAudit": {
+        "general": {
+          "familyCount": 4,
+          "conceptCount": 22
+        },
+        "micro": {
+          "familyCount": 12,
+          "conceptCount": 86
+        },
+        "macro": {
+          "familyCount": 14,
+          "conceptCount": 79
+        }
+      }
+    },
+    {
+      "id": "N",
+      "name": "concept, family, and abbreviation search",
+      "status": "PASS",
+      "ppfCount": 3,
+      "nashCount": 7,
+      "adAsCount": 6
+    }
+  ],
+  "areaAudit": {
+    "general": {
+      "eligibleConceptCount": 22,
+      "visibleCardCount": 22,
+      "parentCount": 0,
+      "childSubtopicCount": 4,
+      "standaloneCount": 18,
+      "readyCount": 11,
+      "supportingCount": 11
+    },
+    "micro": {
+      "eligibleConceptCount": 86,
+      "visibleCardCount": 86,
+      "parentCount": 8,
+      "childSubtopicCount": 54,
+      "standaloneCount": 24,
+      "readyCount": 59,
+      "supportingCount": 27
+    },
+    "macro": {
+      "eligibleConceptCount": 79,
+      "visibleCardCount": 79,
+      "parentCount": 0,
+      "childSubtopicCount": 4,
+      "standaloneCount": 75,
+      "readyCount": 68,
+      "supportingCount": 11
+    }
+  },
+  "navigationAudit": {
+    "general": {
+      "familyCount": 4,
+      "conceptCount": 22
+    },
+    "micro": {
+      "familyCount": 12,
+      "conceptCount": 86
+    },
+    "macro": {
+      "familyCount": 14,
+      "conceptCount": 79
+    }
+  },
+  "metadataDefectCount": 36,
+  "canonicalConceptCount": 149,
+  "canonicalConceptIdsSha256": "63ea7b2af983c768ec375fe579fe13991479feee305cf67ef032ad8a933a7e00",
+  "composerLibrarySha256": "f377195e16e4a8b21513a7026eb99eb02afb2bedde51b6f2fd737d1a81700461",
+  "allTenModesExpected": true
+}

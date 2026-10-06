@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "metrics": {
+    "total": 160,
+    "longestCorrectPercent": 55.63,
+    "uniquelyLongestCorrectPercent": 20,
+    "averageCorrectWords": 7.34,
+    "averageDistractorWords": 7.38,
+    "averageLengthRatio": 0.994,
+    "rankDistribution": {
+      "first": 89,
+      "second": 18,
+      "third": 19,
+      "fourth": 34,
+      "tiedLongest": 57
+    },
+    "qualifierRates": {
+      "correctPerOption": 0.1,
+      "distractorPerOption": 0.242
+    },
+    "extremeRatioPercent": 0.63,
+    "extremeRecords": [
+      {
+        "id": 43319,
+        "ratio": 1.93
+      }
+    ]
+  },
+  "note": "Longest-correct includes ties; uniquely-longest and ratio measures carry the cueing threshold."
+}

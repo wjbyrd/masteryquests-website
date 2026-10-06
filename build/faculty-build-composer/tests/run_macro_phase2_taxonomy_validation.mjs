@@ -9,11 +9,14 @@ import {fileURLToPath} from 'node:url';
 
 const require=createRequire(import.meta.url);
 const {assertCanonicalIntegrity}=require('./composer-integrity-contracts.js');
-const micro=require('./graph-playthrough-approved-revisions.js');
+const micro=require('./post-remediation-approved-revisions.js');
 const approvedRoutes=micro.ledger.routing.filter(r=>r.removeFromMicro);
 const routeIds=approvedRoutes.map(r=>r.id);
 const macroRoutes=micro.macroLedger.routing;
 const specialistCount=macroRoutes.filter(r=>r.from==='integrated-macroeconomic-analysis').length;
+const facultySupplementIds=micro.facultyMacroTransfers.map(r=>r.id);
+assert.deepEqual(facultySupplementIds.slice().sort(),['ECON-EC-LEGENDARYBOSS-20022','ECON-EC-LEGENDARYBOSS-20023'],'Exact faculty-directed Macro additions');
+const facultySupplementCount=facultySupplementIds.length;
 assert.equal(specialistCount,5,'Exact instructor specialist rerouting');
 const routeCount=id=>approvedRoutes.filter(r=>r.to===id).length+macroRoutes.filter(r=>r.to===id).length-macroRoutes.filter(r=>r.from===id).length;
 const {writeTestArtifact}=require('./composer-test-helpers.js');
@@ -109,12 +112,12 @@ const supplement=uniqueEntries(library.concepts[supplementId],supplementId);
 const ordinaryIds=ordinary.map(row=>qid(row.question));
 const supplementIds=supplement.map(row=>qid(row.question));
 check('Ordinary Macro count',ordinary.length===2758+routeIds.length+specialistCount&&new Set(ordinaryIds).size===2758+routeIds.length+specialistCount,{actual:ordinary.length,unique:new Set(ordinaryIds).size,expected:2758+routeIds.length+specialistCount});
-check('Supplement count',supplement.length===112-specialistCount&&new Set(supplementIds).size===112-specialistCount,{actual:supplement.length,unique:new Set(supplementIds).size,expected:112-specialistCount});
-check('Total Macro count',new Set([...ordinaryIds,...supplementIds]).size===2870+routeIds.length,{actual:new Set([...ordinaryIds,...supplementIds]).size,expected:2870+routeIds.length});
+check('Supplement count',supplement.length===112-specialistCount+facultySupplementCount&&new Set(supplementIds).size===112-specialistCount+facultySupplementCount,{actual:supplement.length,unique:new Set(supplementIds).size,expected:112-specialistCount+facultySupplementCount});
+check('Total Macro count',new Set([...ordinaryIds,...supplementIds]).size===2870+routeIds.length+facultySupplementCount,{actual:new Set([...ordinaryIds,...supplementIds]).size,expected:2870+routeIds.length+facultySupplementCount});
 check('No ordinary/supplement overlap',ordinaryIds.every(id=>!new Set(supplementIds).has(id)));
 const overall=metrics([...ordinary,...supplement]);
 const routedMetrics=metrics(ordinary.filter(row=>routeIds.includes(qid(row.question))));
-check('Category totals',overall.practice===1778+routedMetrics.practice&&overall.checkpoint===620+routedMetrics.checkpoint+specialistCount&&overall.adaptiveSupport===360&&overall.supplemental===112-specialistCount,overall);
+check('Category totals',overall.practice===1778+routedMetrics.practice&&overall.checkpoint===620+routedMetrics.checkpoint+specialistCount&&overall.adaptiveSupport===360&&overall.supplemental===112-specialistCount+facultySupplementCount,overall);
 
 const familySummaries={};
 for(const family of macroFamilies){
@@ -150,7 +153,7 @@ check('No duplicate canonical IDs across current children',new Set(ordinaryIds).
 // Preserve exact membership using the checked-in migration inventory, not an
 // external TEMP file that froze content before subsequent assessment audits.
 const historicalIds=inventory.questions.map(row=>row.questionId).sort();
-assert.deepEqual([...ordinaryIds,...supplementIds].sort(),[...historicalIds,...routeIds].sort(),'Original Macro membership plus exact authorized additions');
+assert.deepEqual([...ordinaryIds,...supplementIds].sort(),[...historicalIds,...routeIds,...facultySupplementIds].sort(),'Original Macro membership plus exact authorized additions');
 const approved=readJson(path.join(repo,'audit_tools/macro_phase2/macro_phase2_validation.json'));
 for(const family of macroFamilies) assert.deepEqual(family.conceptIds,approved.familySummaries[family.id].childIds,'Approved family child membership '+family.id);
 const macroComposition=core.compose(library,{schemaVersion:core.RECIPE_SCHEMA_VERSION,title:'Current Macro integrity',slug:'current-macro-integrity',supportedModes:[...core.MODE_ORDER],selectedConceptIds:currentChildIds});

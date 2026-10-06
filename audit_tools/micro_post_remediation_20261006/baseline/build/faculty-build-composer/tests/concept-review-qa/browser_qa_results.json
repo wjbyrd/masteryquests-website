@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "PASS",
+  "baseUrl": "http://127.0.0.1:8772/",
+  "checks": {
+    "directReview": {
+      "reviewCount": 1,
+      "path": "concept-reviews/GEN-ECON-01.pdf",
+      "target": "_blank",
+      "rel": "noopener",
+      "ariaLabel": "Open Concept Review: Scarcity",
+      "pdfTabTitle": "General Economics GEN-ECON-01 - Scarcity"
+    },
+    "twoReviewRouting": {
+      "reviewCodes": ["GEN-ECON-12", "GEN-ECON-13"],
+      "reviewCount": 2
+    },
+    "familyChooser": {
+      "choiceCount": 10,
+      "orderedReviewRange": ["MICRO-18", "MICRO-27"]
+    },
+    "cleanRun": {
+      "reviewSectionCount": 0,
+      "reviewLinkCount": 0
+    },
+    "mobile": {
+      "viewport": {"width": 390, "height": 844},
+      "documentScrollWidth": 375,
+      "horizontalOverflow": false
+    }
+  },
+  "screenshots": [
+    "concept-review-direct-desktop.png",
+    "concept-review-two-review-desktop.png",
+    "concept-review-family-chooser-desktop.png",
+    "concept-review-direct-mobile.png",
+    "concept-review-clean-no-review.png"
+  ]
+}

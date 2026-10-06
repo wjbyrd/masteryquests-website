@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "1.1.0",
+  "title": "National Economy",
+  "slug": "national-economy",
+  "supportedModes": [
+    "standard",
+    "timed",
+    "exam",
+    "legendary",
+    "score"
+  ],
+  "selectedConceptIds": [
+    "gdp-measurement",
+    "gdp-components",
+    "real-versus-nominal-gdp",
+    "limits-of-gdp",
+    "cpi-and-inflation-measurement",
+    "cpi-bias",
+    "cpi-versus-gdp-deflator",
+    "indexing-and-real-values",
+    "real-versus-nominal-interest-rates",
+    "living-standards-and-growth",
+    "productivity-measurement",
+    "sources-of-productivity",
+    "economic-growth-policy",
+    "unemployment-measurement",
+    "unemployment-types",
+    "labor-market-institutions",
+    "natural-rate-of-unemployment"
+  ],
+  "stages": {
+    "stageOne": [
+      "gdp-measurement",
+      "gdp-components",
+      "real-versus-nominal-gdp",
+      "limits-of-gdp",
+      "cpi-and-inflation-measurement",
+      "cpi-bias"
+    ],
+    "stageTwo": [
+      "cpi-versus-gdp-deflator",
+      "indexing-and-real-values",
+      "real-versus-nominal-interest-rates",
+      "living-standards-and-growth",
+      "productivity-measurement",
+      "sources-of-productivity"
+    ],
+    "stageThree": [
+      "economic-growth-policy",
+      "unemployment-measurement",
+      "unemployment-types",
+      "labor-market-institutions",
+      "natural-rate-of-unemployment"
+    ]
+  }
+}

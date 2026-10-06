@@ -1,0 +1,68 @@
+000 P62F-PC-B2-024 medium (boss) | FACULTY FLAG | fields:q,feedback,image,imageAlt,graphDescription
+NOW: At the marked output, what is the height of the profit rectangle, and what does that height measure?
+CHOICES: between $6 and $10 per unit; price minus ATC measures economic profit per unit. | ✓between $10 and $15 per unit; price minus ATC measures economic profit per unit. | between $10 and $15 per unit; the vertical gap alone is total economic profit. | between $6 and $10 per unit; the vertical gap alone is total economic profit.
+FB: At Q=60, price is $37 and ATC is $24. The height is P−ATC=$13 per unit. Multiplying by 60 units gives total profit of $780.
+BEFORE: At Q1 in the graph, what is the approximate height of the profit rectangle, and what does that height measure?
+GRAPH: question-assets/perfect-competition/pc_profit_a-original-price.webp TC=360+20.6Q+-0.4033333333333334Q²+0.006Q³; P=37; marked Q=60; AVC=17.999999999999996; ATC=23.999999999999996.
+NOTE: See notes from P62F-PC-H-012 on how to proceed with this graph and answer choice. Keep graph numbers. Guessing the approximate height is ridiculous with the graph provided. Clear numbers need to be on the graph.
+
+001 P62F-PC-E-041 easy (main) | FACULTY FLAG | fields:image,imageAlt,graphDescription
+NOW: Refer to the graph. What market-clearing price is determined by the intersection of market supply and demand?
+CHOICES: $20 | $60 | ✓$40 | $75
+FB: Market supply and demand intersect at a price of $40.
+GRAPH: question-assets/perfect-competition/PC-06-market-only.webp Market E=(75,40); S/D slope±0.32. Firm TC=450+8Q+-0.12222222222222222Q²+0.0022222222222222222Q³; Q*=90; price line shown=False.
+NOTE: Remove the reprensentative firm portion of the graph.
+
+002 P62F-PC-E-043 easy (main) | FACULTY FLAG | fields:q,image,imageAlt,graphDescription
+NOW: Refer to the graph. What price does the firm take from the market?
+CHOICES: ✓$15 | $10 | $18 | $25
+FB: Market supply and demand intersect at $15.
+BEFORE: Refer to the graph. In the paired loss case, what price is transmitted from the market equilibrium to the representative firm?
+GRAPH: question-assets/perfect-competition/PC-07-price-transfer.webp Market E=(75,15); S/D slope±0.12. Firm TC=400+13Q+-0.22Q²+0.0032Q³; Q*=50; price line shown=False.
+NOTE: "Refer to the graph. What price does the firm take from the market?" This is a case where the 15 isn't needed on the firm panel.
+
+003 P62F-PC-E-045 easy (main) | FACULTY FLAG | fields:image,imageAlt,graphDescription
+NOW: Refer to the graph. In the market panel where equilibrium quantity is 100, what equilibrium price is shown?
+CHOICES: $15 | $40 | ✓$25 | $50
+FB: Market supply and demand intersect at $25.
+GRAPH: question-assets/perfect-competition/PC-08-market-only.webp Market E=(100,25); S/D slope±0.15. Firm TC=400+17Q+-0.16Q²+0.0032Q³; Q*=50; price line shown=False.
+NOTE: Remove the reprensentative firm portion of the graph.
+
+004 P62F-PC-H-043 medium (main) | FACULTY FLAG | fields:q,image,imageAlt,graphDescription
+NOW: Refer to the graph. At Q = 50, what is the firm’s total revenue?
+CHOICES: $150 | ✓$750 | $500 | $900
+FB: TR = $15 × 50 = $750.
+BEFORE: At Q = 50 in the firm panel, calculate total revenue using the price shown.
+GRAPH: question-assets/perfect-competition/PC-07-firm-only.webp Market E=(75,15); S/D slope±0.12. Firm TC=400+13Q+-0.22Q²+0.0032Q³; Q*=50; price line shown=True.
+NOTE: "Refer to the graph. At Q = 50, calculate the fim's total revenue. " Also for this question, it would be prudent to remove the market graph and just leave the firm.
+
+005 P62F-PC-LB-018 elite (legendaryBoss) | FACULTY FLAG | fields:q,options,difficulty,feedback,image,aHash,canonicalDifficulty,graphRequired
+NOW: A competitive firm has a minimum average variable cost of $14. Compare two separate cost increases: higher unavoidable fixed rent, or an extra $3 of variable cost on every unit. What is the shutdown-price threshold under each change, and which change shifts short-run supply?
+CHOICES: ✓$14 with higher rent and $17 with variable cost; only variable cost shifts supply. | $18 with higher rent and $21 with variable cost; only variable cost shifts supply. | $17 under either change; both changes shift supply. | $14 under either change; neither change shifts supply.
+FB: The shutdown threshold is minimum AVC. Higher fixed rent changes neither AVC nor MC, leaving the threshold at $14. Adding $3 to variable cost per unit raises AVC and MC by $3, so the threshold becomes $17 and short-run supply shifts upward.
+BEFORE: Compare two separate cost increases: higher unavoidable fixed rent, or an extra $3 of variable cost on every unit. What would the shutdown-price threshold be under each change, and which change shifts the firm’s short-run supply?
+GRAPH: None None
+NOTE: Drop the graph. Add minimum AVC = $14 to the question. Reclassify as elite or legendary
+
+006 P62G-MON-H-009 medium (main) | FACULTY FLAG | fields:q,options,feedback,image,aHash,graphRequired
+NOW: A monopolist faces inverse demand P = 40 − 1.5Q and average variable cost AVC = 45 + 0.1Q. Fixed cost is unavoidable this period. Which operating decision maximizes profit?
+CHOICES: Produce where demand equals marginal cost. | ✓Shut down and bear the unavoidable fixed cost. | Produce enough to spread fixed cost over more units. | Produce because fixed cost is already committed.
+FB: At every positive output, total revenue is less than variable cost. Producing adds an operating loss to unavoidable fixed cost. Shutdown avoids variable cost and leaves only fixed cost.
+BEFORE: Fixed cost cannot be avoided this period. Which operating decision is supported by the demand and cost curves?
+GRAPH: None None
+NOTE: Drop the graph. It's terrible. Rewrite the question as a worded question and not one for a graph.
+
+007 P62G-MON-H-010 medium (main) | FACULTY FLAG | fields:q,options,feedback,image,aHash,graphRequired
+NOW: At every positive output, a monopolist’s sales revenue is below its variable cost. Its fixed cost is unavoidable this period. Which costs can sales cover, and what should the firm do?
+CHOICES: Sales cover variable cost; produce and bear fixed cost. | Sales cover all economic costs; produce at a profit. | ✓Sales do not cover variable cost; shut down and bear fixed cost. | Sales do not cover fixed cost; shutting down eliminates it.
+FB: At every positive output, total revenue is less than variable cost. Producing adds an operating loss to unavoidable fixed cost. Shutdown avoids variable cost and leaves only fixed cost.
+BEFORE: With fixed cost unavoidable this period, which cost can the firm cover from sales at a positive output? What operating decision follows?
+GRAPH: None None
+NOTE: Drop the graph. It's terrible. Rewrite the question as a worded question and not one for a graph.
+
+008 PM8-OLI-BR-026 medium (bridge) | FACULTY FLAG | fields:q
+NOW: Each cell in the payoff matrix gives (Row payoff, Column payoff). Which outcomes are pure-strategy Nash equilibria?<table><caption>Payoffs by strategy</caption><thead><tr><th scope="col">Row strategy</th><th scope="col">Column X</th><th scope="col">Column Y</th></tr></thead><tbody><tr><th scope="row">A</th><td>(4, 3)</td><td>(1, 1)</td></tr><tr><th scope="row">B</th><td>(2, 0)</td><td>(3, 2)</td></tr></tbody></table>
+CHOICES: A/Y and B/X | A/X only | B/Y only | ✓A/X and B/Y
+FB: Against X, row prefers A (4>2); against Y, row prefers B (3>1). Against A, column prefers X (3>1); against B, column prefers Y (2>0). The mutual best responses are A/X and B/Y.
+BEFORE: Payoffs (row, column) are A/X=(4,3), A/Y=(1,1), B/X=(2,0), B/Y=(3,2). Which outcomes are pure-strategy Nash equilibria?
+NOTE: The way the game is set up is confusing. It's clearer when I made a payoff matrix. Not sure how to get that in the game so it's ADA compliant and easier to read

@@ -1,0 +1,292 @@
+050 42774 [medium/main] Income shares from poorest to richest are 7%, 12%, 17%, 25%, and 39%. Does the richest quintile receive more income than the poorest two quintiles combined?
+No; 39% is less than 40%. | No; 25% exceeds 19%. | ✓Yes; 39% exceeds 19%. | Yes; 39% exceeds 7% but not 19%.
+FB The poorest two quintiles receive 7% + 12% = 19%; the richest receives 39%.
+OLD In hypothetical Economy M, the five income quintiles receive 4%, 9%, 15%, 25%, and 47% of total income. What share goes to the highest-income quintile?
+Δ q,options,feedback,aHash (tier medium→medium)
+
+051 42775 [medium/main] Quintile income shares from poorest to richest are 5%, 12%, 18%, 25%, and 40%. A student uses 12% as the cumulative share of the bottom 40%. What was omitted?
+The richest quintile’s 40% share. | The third quintile’s 18% share. | The population share of 40%. | ✓The poorest quintile’s 5% share.
+FB The cumulative bottom-40% share includes the first two quintiles: 5% + 12% = 17%.
+OLD In hypothetical Economy N, the five income quintiles receive 6%, 10%, 16%, 24%, and 44% of total income. What cumulative share goes to the bottom 40%?
+Δ q,options,feedback,aHash (tier medium→medium)
+
+052 42776 [easy/main] The bottom four quintiles together receive 57% of total income. Does the richest quintile receive a majority of all income?
+✓No; its share is 43%. | Yes; its share is 57%. | Yes; its population share is 20%. | No; its income share must be 20%.
+FB The richest quintile receives 100% − 57% = 43%, below one-half.
+OLD In hypothetical Economy O, the bottom four income quintiles receive 5%, 11%, 18%, and 26% of total income. What share must the highest-income quintile receive?
+Δ q,options,feedback,aHash (tier easy→easy)
+
+053 42778 [medium/main] The richest quintile receives 44% of an economy’s $500 million total income. How much income does it receive?
+$100 million | $280 million | ✓$220 million | $440 million
+FB 0.44 × $500 million = $220 million.
+OLD In hypothetical Economy Q, the five income quintiles receive 4%, 9%, 15%, 25%, and 47% of total income. What share goes to the highest-income quintile?
+Δ q,options,feedback,aHash (tier medium→medium)
+
+054 42779 [medium/main] The bottom 40% receive 18% of total income, while the bottom 60% receive 36%. What share belongs to the middle quintile?
+36% | 54% | 20% | ✓18%
+FB The middle quintile is the additional population from 40% to 60%: 36% − 18% = 18%.
+OLD In hypothetical Economy R, the five income quintiles receive 6%, 10%, 16%, 24%, and 44% of total income. What cumulative share goes to the bottom 40%?
+Δ q,options,feedback,aHash (tier medium→medium)
+
+055 42780 [easy/main] The bottom four quintiles receive 8%, 13%, 18%, and 26% of income. Their economy earns $400 million in total. How much income belongs to the richest quintile?
+✓$140 million | $260 million | $104 million | $80 million
+FB The listed shares sum to 65%, leaving 35%; 0.35 × $400 million = $140 million.
+OLD In hypothetical Economy S, the bottom four income quintiles receive 5%, 11%, 18%, and 26% of total income. What share must the highest-income quintile receive?
+Δ q,options,feedback,aHash (tier easy→easy)
+
+056 42781 [medium/main] The richest quintile receives 40% of income and the poorest receives 4%. A transfer changes these shares to 36% and 6%, respectively. What happens to their share ratio?
+It falls from 10 to 9. | ✓It falls from 10 to 6. | It rises from 10 to 12. | It stays at 10.
+FB The initial ratio is 40/4 = 10; the new ratio is 36/6 = 6.
+OLD In hypothetical Economy T, the highest-income quintile receives 45% of income while the lowest-income quintile receives 5%. How many times as large is the highest quintile's share?
+Δ q,options,feedback,aHash (tier medium→medium)
+
+057 42782 [medium/bridge] The richest quintile’s share falls from 48% to 43%, with total income unchanged. By how many percentage points does the combined share of the other four quintiles rise?
+43 | 10.4 | ✓5 | 48
+FB The remaining share rises from 52% to 57%, an increase of 5 percentage points.
+OLD In hypothetical Economy U, the five income quintiles receive 4%, 9%, 15%, 25%, and 47% of total income. What share goes to the highest-income quintile?
+Δ q,options,feedback,aHash (tier medium→medium)
+
+058 42783 [medium/repair] Quintile shares are 6%, 13%, 18%, 26%, and 37%, from poorest to richest. The total income is $200 million. How much goes to the bottom 40%?
+$26 million | $40 million | $74 million | ✓$38 million
+FB The bottom 40% receive 6% + 13% = 19%; 0.19 × $200 million = $38 million.
+OLD In hypothetical Economy V, the five income quintiles receive 6%, 10%, 16%, 24%, and 44% of total income. What cumulative share goes to the bottom 40%?
+Δ q,options,feedback,aHash (tier medium→medium)
+
+059 42790 [medium/main] An economy’s Gini coefficient falls from 0.34 to 0.26 while mean income stays unchanged. What can be concluded from these figures?
+Every household’s income rose. | The poverty rate fell by eight percentage points. | ✓Relative income inequality decreased. | The source of every income gap has been identified.
+FB A lower Gini indicates less relative inequality. It does not by itself identify poverty incidence, individual income changes, or causes.
+OLD For hypothetical Economy B, a Gini coefficient is 0.26. Which interpretation is valid?
+Δ q,options,feedback,aHash (tier medium→medium)
+
+060 42792 [medium/bridge] Two economies both have a Gini coefficient of 0.34, but one has twice the mean income of the other. Which claim is supported?
+✓They have the same Gini measure of relative inequality. | They have the same mean income. | They have the same fraction of residents below every poverty line. | They must have identical income distributions in dollars.
+FB The Gini summarizes relative inequality and is independent of the average income level. Equal Ginis do not imply identical distributions.
+OLD Data for hypothetical Economy D show that a Gini coefficient is 0.34. Which interpretation is valid?
+Δ q,options,feedback,aHash (tier medium→medium)
+
+061 42793 [medium/repair] A report states that a Gini coefficient of 0.38 means 38% of households are poor. What is the error?
+The Gini must be expressed as mean income. | ✓The Gini measures relative inequality, not the poverty rate. | A positive Gini means everyone has the same income. | The Gini identifies the policy that caused poverty.
+FB Poverty requires an income threshold. The Gini measures dispersion relative to equality, not the percentage below that threshold.
+OLD In hypothetical Economy E, a Gini coefficient is 0.38. Which interpretation is valid?
+Δ q,options,feedback,aHash (tier medium→medium)
+
+062 42795 [legendary/main] Distribution A’s Lorenz curve lies everywhere above B’s and below equality. A has mean income $15,000 and B $25,000. Which judgment is supported without assuming which income distribution is fairer?
+A has less inequality, so every household in A must be richer. | B has less inequality because its mean income is higher. | Both have equal inequality because both curves end at 100%. | ✓A has less inequality; the curves alone do not establish higher incomes.
+FB One Lorenz curve lying above another indicates less relative inequality, not higher income levels. A’s higher curve and lower mean can coexist; the welfare comparison needs more information or explicit value judgments.
+Δ options,aHash (tier legendary→legendary)
+
+063 42796 [medium/bridge] Distribution A’s Lorenz curve lies everywhere above distribution B’s and below the line of equality. Which distribution has less relative inequality?
+✓A is less unequal than B | A is more unequal than B | The distributions must have the same Gini | Only their mean incomes can be compared
+FB A curve closer to equality Lorenz-dominates the lower curve and has a smaller inequality area.
+OLD A study of hypothetical Economy C reports that distribution A's Lorenz curve lies everywhere above B's and below equality. Which ordering follows?
+Δ q (tier medium→medium)
+
+064 42797 [medium/repair] Two distributions are compared using Lorenz curves. Curve A lies everywhere closer to the line of equality than curve B. What does this show about relative inequality?
+A is more unequal than B | ✓A is less unequal than B | The distributions must have the same Gini | Only their mean incomes can be compared
+FB A curve closer to equality Lorenz-dominates the lower curve and has a smaller inequality area.
+OLD Data for hypothetical Economy D show that distribution A's Lorenz curve lies everywhere above B's and below equality. Which ordering follows?
+Δ q (tier medium→medium)
+
+065 42838 [medium/main] A family receives a housing voucher that can be used only for rent. Why is this an in-kind transfer?
+It is unrestricted cash | It is earned labor income | ✓The assistance is restricted to a particular good | It changes the Lorenz curve by definition
+FB In-kind programs deliver goods, services, or restricted purchasing power rather than unrestricted cash.
+OLD Transfer-program case A: A family receives a housing voucher that can be used only for rent. Why is this an in-kind transfer?
+Δ q (tier medium→medium)
+
+066 42839 [medium/main] Medicaid pays participating providers for covered medical services. What makes this assistance in kind?
+Recipients may spend it on any product | It is financed entirely by wages | It measures pretransfer income | ✓Recipients receive specified health-care coverage rather than unrestricted cash
+FB The program directs assistance toward covered health services.
+OLD Transfer-program case B: Medicaid pays participating providers for covered medical services. What makes this assistance in kind?
+Δ q (tier medium→medium)
+
+067 42840 [easy/main] A school provides free lunches instead of an equal cash payment. What tradeoff can arise?
+✓The benefit targets nutrition but gives families less choice over spending | The lunch is unrestricted income | Targeting eliminates administrative cost | Families must value every meal identically
+FB In-kind aid can target a policy goal while restricting recipient choice.
+OLD Transfer-program case C: A school provides free lunches instead of an equal cash payment. What tradeoff can arise?
+Δ q (tier easy→easy)
+
+068 42841 [medium/main] Why might a recipient prefer an equal-value cash transfer to a restricted food benefit?
+Cash can be spent only on food | ✓Cash permits spending on the recipient's highest-priority need | Cash always costs the government less | Restricted benefits never provide value
+FB Unrestricted cash expands choice, though policymakers may prefer targeting for paternalistic or political reasons.
+OLD Transfer-program case D: Why might a recipient prefer an equal-value cash transfer to a restricted food benefit?
+Δ q (tier medium→medium)
+
+069 42842 [medium/main] A family receives a housing voucher that can be used only for rent. Why is this an in-kind transfer?
+It is unrestricted cash | It is earned labor income | ✓The assistance is restricted to a particular good | It changes the Lorenz curve by definition
+FB In-kind programs deliver goods, services, or restricted purchasing power rather than unrestricted cash.
+OLD Transfer-program case E: A family receives a housing voucher that can be used only for rent. Why is this an in-kind transfer?
+Δ q (tier medium→medium)
+
+070 42844 [easy/main] A school provides free lunches instead of an equal cash payment. What tradeoff can arise?
+✓The benefit targets nutrition but gives families less choice over spending | The lunch is unrestricted income | Targeting eliminates administrative cost | Families must value every meal identically
+FB In-kind aid can target a policy goal while restricting recipient choice.
+OLD Transfer-program case G: A school provides free lunches instead of an equal cash payment. What tradeoff can arise?
+Δ q (tier easy→easy)
+
+071 42845 [hard/main] A recipient’s preferred bundle after a $100 cash grant contains only $40 of food. A $100 nonresalable food voucher replaces the grant at the same prices. What restriction matters?
+The voucher can be spent entirely on rent. | ✓The voucher excludes the preferred $40-food bundle. | The voucher reduces all prices by 60%. | The voucher offers more options than equal cash.
+FB The voucher is binding because desired food spending under cash is below $100; it cannot be exchanged for the preferred nonfood purchases.
+Δ options,aHash (tier hard→hard)
+
+072 42846 [medium/main] A family receives a housing voucher that can be used only for rent. Why is this an in-kind transfer?
+It is unrestricted cash | It is earned labor income | ✓The assistance is restricted to a particular good | It changes the Lorenz curve by definition
+FB In-kind programs deliver goods, services, or restricted purchasing power rather than unrestricted cash.
+OLD Transfer-program case I: A family receives a housing voucher that can be used only for rent. Why is this an in-kind transfer?
+Δ q (tier medium→medium)
+
+073 42847 [hard/main] A recipient would spend $200 on food with a $100 cash grant. Instead the program offers a nonresalable $100 food voucher, with identical prices and no transaction costs. What can be inferred?
+Every restriction must reduce welfare. | The voucher raises cash income by $200. | The voucher limits food spending to $100. | ✓The preferred cash bundle remains affordable.
+FB The intended food spending exceeds the voucher amount. The voucher can replace $100 of spending the recipient would already make, leaving the cash-optimal bundle feasible.
+Δ options,aHash (tier hard→hard)
+
+074 42848 [easy/main] A school provides free lunches instead of an equal cash payment. What tradeoff can arise?
+✓The benefit targets nutrition but gives families less choice over spending | The lunch is unrestricted income | Targeting eliminates administrative cost | Families must value every meal identically
+FB In-kind aid can target a policy goal while restricting recipient choice.
+OLD Transfer-program case K: A school provides free lunches instead of an equal cash payment. What tradeoff can arise?
+Δ q (tier easy→easy)
+
+075 42849 [elite/main] An equal-cost cash grant gives recipients more choice than a restricted tutoring benefit. Suppose tutoring produces an external benefit not reflected in recipients’ choices. Which assessment is justified?
+The spillover guarantees recipients prefer tutoring. | ✓Cash allows more choice; spillovers may justify targeting. | More private choice guarantees greater social benefit. | Equal fiscal costs eliminate the spillover issue.
+FB Private choice and social spillovers are distinct criteria. An external benefit can motivate targeting even when recipients would choose another use for cash.
+Δ options,aHash (tier elite→elite)
+
+076 42867 [medium/main] A program ends completely when earnings rise one dollar above an eligibility cutoff. What design problem does this create?
+A smooth phaseout | A universal cash benefit | A lower effective marginal tax rate at the cutoff | ✓A benefits cliff can make a small earnings increase reduce disposable resources
+FB An abrupt loss of benefits can exceed the added earnings and discourage crossing the cutoff.
+OLD Antipoverty design B: A program ends completely when earnings rise one dollar above an eligibility cutoff. What design problem does this create?
+Δ q (tier medium→medium)
+
+077 42868 [easy/main] How can a gradual benefit phaseout reduce a benefits cliff?
+✓It spreads benefit reductions across a wider earnings range | It removes all work disincentives | It makes eligibility independent of income | It guarantees lower program cost
+FB A gradual phaseout avoids one abrupt loss, although it can expose more recipients to a moderate effective marginal tax rate.
+OLD Antipoverty design C: How can a gradual benefit phaseout reduce a benefits cliff?
+Δ q (tier easy→easy)
+
+078 42869 [medium/main] A wage subsidy increases with a worker's earnings over an initial range. What incentive does that phase create?
+It creates an immediate benefits cliff | ✓It raises the payoff from entering work or earning more | It taxes each added dollar at 100 percent | It guarantees the same hours for every worker
+FB In the subsidy phase, additional earnings bring both wages and a larger credit, strengthening the return to work at the margin.
+OLD Antipoverty design D: A wage subsidy increases with a worker's earnings over an initial range. What incentive does that phase create?
+Δ q (tier medium→medium)
+
+079 42871 [easy/main] A program ends completely when earnings rise one dollar above an eligibility cutoff. What design problem does this create?
+A smooth phaseout | A universal cash benefit | A lower effective marginal tax rate at the cutoff | ✓A benefits cliff can make a small earnings increase reduce disposable resources
+FB An abrupt loss of benefits can exceed the added earnings and discourage crossing the cutoff.
+OLD Antipoverty design F: A program ends completely when earnings rise one dollar above an eligibility cutoff. What design problem does this create?
+Δ q (tier easy→easy)
+
+080 42873 [medium/main] A wage subsidy increases with a worker's earnings over an initial range. What incentive does that phase create?
+It creates an immediate benefits cliff | ✓It raises the payoff from entering work or earning more | It taxes each added dollar at 100 percent | It guarantees the same hours for every worker
+FB In the subsidy phase, additional earnings bring both wages and a larger credit, strengthening the return to work at the margin.
+OLD Antipoverty design H: A wage subsidy increases with a worker's earnings over an initial range. What incentive does that phase create?
+Δ q (tier medium→medium)
+
+081 42874 [easy/main] A benefit falls by $0.60 for each additional dollar a recipient earns. What policy-design concern arises?
+The benefit has no phaseout | Every recipient faces a zero marginal tax rate | ✓The phaseout reduces the net reward from working more | The program necessarily increases labor supply
+FB The benefit loss acts like an additional marginal tax on earnings and can weaken work incentives.
+OLD Antipoverty design I: A benefit falls by $0.60 for each additional dollar a recipient earns. What policy-design concern arises?
+Δ q (tier easy→easy)
+
+082 42875 [easy/main] A program ends completely when earnings rise one dollar above an eligibility cutoff. What design problem does this create?
+A smooth phaseout | A universal cash benefit | A lower effective marginal tax rate at the cutoff | ✓A benefits cliff can make a small earnings increase reduce disposable resources
+FB An abrupt loss of benefits can exceed the added earnings and discourage crossing the cutoff.
+OLD Antipoverty design J: A program ends completely when earnings rise one dollar above an eligibility cutoff. What design problem does this create?
+Δ q (tier easy→easy)
+
+083 42877 [easy/main] A wage subsidy increases with a worker's earnings over an initial range. What incentive does that phase create?
+It creates an immediate benefits cliff | ✓It raises the payoff from entering work or earning more | It taxes each added dollar at 100 percent | It guarantees the same hours for every worker
+FB In the subsidy phase, additional earnings bring both wages and a larger credit, strengthening the return to work at the margin.
+OLD Antipoverty design L: A wage subsidy increases with a worker's earnings over an initial range. What incentive does that phase create?
+Δ q (tier easy→easy)
+
+084 42879 [easy/main] A program ends completely when earnings rise one dollar above an eligibility cutoff. What design problem does this create?
+A smooth phaseout | A universal cash benefit | A lower effective marginal tax rate at the cutoff | ✓A benefits cliff can make a small earnings increase reduce disposable resources
+FB An abrupt loss of benefits can exceed the added earnings and discourage crossing the cutoff.
+OLD Antipoverty design N: A program ends completely when earnings rise one dollar above an eligibility cutoff. What design problem does this create?
+Δ q (tier easy→easy)
+
+085 42886 [hard/main] Both sides can verify a product’s quality and enforce promised actions, but only the seller knows its private reservation price. Which statement is correct?
+All private information is eliminated because quality is verifiable. | Enforceable actions necessarily create moral hazard. | ✓Quality and effort are verifiable; private valuations can still differ. | Private reservation prices imply the product’s quality cannot be verified.
+FB Information about quality, actions and valuations are different. Removing two asymmetries does not logically eliminate the third.
+Δ options,aHash (tier hard→hard)
+
+086 42887 [hard/main] Sellers claim their products are reliable. An independent test accurately identifies reliability and results are disclosed before buyers choose. Which mechanism could improve trade?
+The test changes every unreliable product into a reliable one. | The test prevents all buyers from considering prices. | The test creates adverse selection by hiding quality that was formerly disclosed. | ✓Verified quality lets reliable sellers distinguish their products.
+FB Credible disclosure separates qualities rather than improving the physical product itself; good products need not be priced as though they were average.
+Δ options,aHash (tier hard→hard)
+
+087 42890 [medium/main] Both sides can cheaply verify quality and actions. What happens to the information-asymmetry problem?
+It becomes a common-resource problem | It necessarily creates monopoly | ✓It is substantially reduced | It turns into sunk cost
+FB Reliable shared information narrows the knowledge gap that drives mispricing and mistrust.
+OLD In this setting, both sides can cheaply verify quality and actions. What happens to the information-asymmetry problem?
+Δ q (tier medium→medium)
+
+088 42894 [hard/main] A buyer and contractor can observe quality but cannot enforce a promised effort level in court. A proposal merely publishes the observed effort, while another makes payment contingent on a verified effort measure. Which is more directly targeted at hidden-action incentives?
+Publication alone, because observing an action necessarily makes all promised penalties enforceable. | Neither, because incentives matter only for hidden types before contracting. | ✓Contingent payment links verified effort to enforceable incentives. | The contingent-payment contract only if it prevents buyers from observing quality.
+FB Information and enforceability are distinct. Making payment contingent on a verified action changes the incentive to exert effort; observation alone does not establish that contractual consequence.
+Δ options,aHash (tier hard→hard)
+
+089 42901 [medium/main] Customers who privately know their devices are fragile are especially likely to buy a warranty. Why is this adverse selection rather than moral hazard?
+Coverage makes customers take less care of their devices. | ✓Customers know their risk before buying coverage. | The seller reveals quality by offering a costly guarantee. | The insurer observes each customer’s risk before setting a premium.
+FB Adverse selection is hidden information about type at the contracting stage, distinct from hidden action after contracting.
+OLD In this setting, a warranty is purchased disproportionately by customers who privately know their devices are fragile. Which timing identifies the issue?
+Δ q,options,aHash (tier medium→medium)
+
+090 42908 [hard/main] An insurer charges the same premium to applicants who privately know their own risks. Why might repeated premium increases drive the average risk of those insured even higher?
+✓Low-risk customers leave as premiums rise. | Insured customers take more risks after buying coverage. | High-risk customers leave before low-risk customers. | Higher premiums reveal each customer’s exact risk.
+FB Selection occurs through enrollment: a worsening risk pool raises costs and can drive out additional low-risk customers.
+OLD In this setting, an insurer must charge one premium despite applicants having different privately known risks. Why might the premium spiral upward?
+Δ q,options,aHash (tier hard→hard)
+
+091 42910 [medium/main] An insurer verifies each applicant’s risk and charges a premium that reflects it. Does a high-risk customer buying coverage provide evidence of adverse selection?
+Yes; any high-risk purchase proves private information exists. | Yes; risk-based pricing hides the applicant’s risk. | ✓No; high risk is observed and incorporated in pricing. | No; high-risk people cannot benefit from insurance.
+FB Adverse selection requires an information problem affecting selection. A high-risk purchase at a fully informed price is not sufficient evidence.
+OLD Coverage is priced separately for each applicant’s accurately verified risk, with no hidden risk characteristic in this model. Does a high-risk person buying insurance alone demonstrate adverse selection?
+Δ q (tier medium→medium)
+
+092 42916 [medium/main] An insurer raises its uniform premium and then loses mostly low-risk customers. An analyst proposes another increase based on the remaining customers’ claims. What should the analyst consider?
+✓Another increase may drive out more low-risk customers. | A higher premium necessarily improves the risk mix. | Leaving the premium unchanged eliminates private information. | Rising claims prove that coverage changed customers’ behavior.
+FB When risk is privately known, raising a pooled premium can drive out lower-risk customers and raise average claims among those remaining.
+OLD A policy analyst notes that an insurer must charge one premium despite applicants having different privately known risks. Why might the premium spiral upward?
+Δ q,options,feedback,aHash (tier medium→medium)
+
+093 42922 [medium/main] A driver takes less care after obtaining broad insurance coverage. Which information problem does this illustrate?
+Adverse selection before coverage | A credible quality signal | ✓Moral hazard | Perfectly observed contracting
+FB Coverage changes the incentive for an action taken after the contract; this is moral hazard.
+OLD Suppose that insured drivers become less careful after receiving broad coverage. What problem is illustrated?
+Δ q,options,feedback (tier medium→medium)
+
+094 42923 [medium/main] A bank expects a guaranteed bailout and therefore chooses a riskier portfolio. What causes the distortion?
+The bank's hidden type before borrowing | Perfect screening | A lower opportunity cost of voting | ✓Protection shifts part of the downside to others
+FB When decision makers do not bear the full marginal loss, post-protection risk taking can rise.
+OLD An economist observes that a bank expects a guaranteed bailout and therefore chooses a riskier portfolio. What causes the distortion?
+Δ q (tier medium→medium)
+
+095 42924 [easy/main] Why can requiring an insured customer to pay a deductible reduce moral hazard?
+✓The customer bears part of the loss caused by less care. | The insurer learns every customer’s preexisting risk. | The deductible makes prevention physically unnecessary. | The customer no longer faces any uncertainty.
+FB A deductible leaves some cost of risky behavior with the insured, increasing the incentive to take care.
+OLD Consider a case in which a deductible makes the customer pay the first part of a covered loss. Why can it reduce moral hazard?
+Δ q,options,feedback,aHash (tier easy→easy)
+
+096 42925 [medium/main] Behavior is perfectly monitored and a contract can condition payment on every action. What happens to hidden-action moral hazard?
+It becomes adverse selection automatically | ✓It can be greatly reduced through enforceable incentives | It must increase | It makes insurance unnecessary in every case
+FB Observable, contractible action allows terms to reward care or penalize risk, though monitoring itself may be costly.
+OLD In this setting, behavior is perfectly monitored and a contract can condition payment on every action. What happens to hidden-action moral hazard?
+Δ q (tier medium→medium)
+
+097 42926 [medium/main] Drivers with high preexisting accident risk are more likely to buy insurance, but no driver changes behavior after buying it. Which conclusion follows?
+Every accident after purchase establishes moral hazard. | Insurance has necessarily reduced every driver’s care. | ✓The pattern is adverse selection, not evidence of moral hazard. | The insurer has eliminated private information.
+FB Selection into coverage depends on privately known risk. Moral hazard would require a change in behavior caused by the contract.
+OLD A policy analyst notes that insured drivers become less careful after receiving broad coverage. What problem is illustrated?
+Δ q,options,feedback,aHash (tier medium→medium)
+
+098 42928 [easy/main] A deductible reduces claims, but some customers also stop buying insurance. Which observation directly supports a reduction in moral hazard?
+✓Customers who remain insured take more care. | Only low-risk customers leave the insurance pool. | The insurer collects fewer premiums. | The number of insured customers falls.
+FB Moral hazard concerns behavior after coverage. Changes in who purchases coverage concern selection and do not by themselves establish greater care.
+OLD Evidence indicates that a deductible makes the customer pay the first part of a covered loss. Why can it reduce moral hazard?
+Δ q,options,feedback,aHash (tier easy→easy)
+
+099 42930 [medium/main] Insured drivers have more accidents than uninsured drivers. What additional comparison helps test whether insurance caused moral hazard?
+Compare only the total number of drivers in each group. | Assume all drivers had identical risk before insurance. | ✓Compare how otherwise similar drivers change care when coverage changes. | Treat each accident as direct evidence of less care.
+FB A raw difference may reflect preexisting risk. A credible comparison of behavior under different coverage helps identify the incentive effect.
+OLD An economist observes that insured drivers become less careful after receiving broad coverage. What problem is illustrated?
+Δ q,options,feedback,aHash (tier medium→medium)

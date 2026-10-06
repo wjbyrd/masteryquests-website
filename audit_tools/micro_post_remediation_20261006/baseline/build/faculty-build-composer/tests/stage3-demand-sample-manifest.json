@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "1.2.0",
+  "composerVersion": "4.5b.0",
+  "title": "Demand Mastery Quest",
+  "slug": "demand-mastery-quest",
+  "selectedConceptIds": [
+    "demand"
+  ],
+  "checkpointFocus": {
+    "checkpointOne": null,
+    "checkpointTwo": null,
+    "finalCheckpoint": null
+  },
+  "bossCoverage": {
+    "checkpointOne": {
+      "label": "Checkpoint One",
+      "pool": "easyBoss",
+      "difficulty": "easy",
+      "automatic": true,
+      "eligibleConceptIds": [
+        "demand"
+      ],
+      "activeConceptIds": [
+        "demand"
+      ],
+      "questionCount": 3
+    },
+    "checkpointTwo": {
+      "label": "Checkpoint Two",
+      "pool": "mediumBoss",
+      "difficulty": "medium",
+      "automatic": true,
+      "eligibleConceptIds": [
+        "demand"
+      ],
+      "activeConceptIds": [
+        "demand"
+      ],
+      "questionCount": 3
+    },
+    "finalCheckpoint": {
+      "label": "Final Checkpoint",
+      "pool": "finalBoss",
+      "difficulty": "hard",
+      "automatic": true,
+      "eligibleConceptIds": [
+        "demand"
+      ],
+      "activeConceptIds": [
+        "demand"
+      ],
+      "questionCount": 3
+    }
+  },
+  "supportedModes": [
+    "standard",
+    "timed",
+    "exam",
+    "legendary",
+    "score"
+  ],
+  "saveKeyNamespace": "mq-econ:demand-mastery-quest:b8398c2c3d38",
+  "compositionFingerprint": "b8398c2c3d3890602da7fcb1246474819a4af6e823c250bd64e57f22b014efc8",
+  "libraryVersion": "phase5.2b-stage3-standalone-rescue",
+  "librarySha256": "bfb608616b6ec72840c0d6dd1d3ed21a1f5310e3146fced242feb5b2403de0b3",
+  "templateSha256": "636d176c789945ed2d760318424b76082c4fcacf7ca87da699992cb2e79323f3",
+  "poolCounts": {
+    "easy": 8,
+    "medium": 6,
+    "hard": 7,
+    "elite": 4,
+    "legendary": 6,
+    "easyBoss": 3,
+    "mediumBoss": 3,
+    "finalBoss": 3,
+    "legendaryBoss": 3,
+    "repair": 4,
+    "repairSeed": 0,
+    "bridge": 6,
+    "calculation": 0,
+    "integration": 0,
+    "graph": 4,
+    "assets": 1,
+    "totalCanonical": 53
+  }
+}

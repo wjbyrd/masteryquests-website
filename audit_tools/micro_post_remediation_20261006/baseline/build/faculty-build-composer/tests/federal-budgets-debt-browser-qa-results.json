@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "date": "2026-08-27",
+  "artifact": "build/faculty-build-composer/tests/federal-budgets-debt-production-sample.html",
+  "browser": "Codex in-app browser",
+  "modes": {
+    "standard": "PASS",
+    "quiz": "PASS",
+    "exam": "PASS",
+    "unlimited": "PASS",
+    "legendary": "PASS",
+    "trialGraph": "EXPECTED_UNAVAILABLE"
+  },
+  "ordinaryResponses": {
+    "correct": true,
+    "incorrect": true
+  },
+  "adaptiveFlow": {
+    "repair": true,
+    "bridge": true,
+    "retest": true,
+    "returnRoomPreserved": true,
+    "trace": [
+      "Concept Repair",
+      "Bridge Repair",
+      "Recovery Retest",
+      "resume origin room"
+    ]
+  },
+  "checkpoint": {
+    "name": "Checkpoint One",
+    "questionsCompleted": 3,
+    "q1Result": "incorrect",
+    "transitionAfterQ1": "checkpoint Q2",
+    "midCheckpointRemediation": false,
+    "q2Result": "correct",
+    "q3Result": "correct",
+    "evidenceRetained": true,
+    "postCheckpointRoom": 11
+  },
+  "masteryReport": {
+    "examReportRendered": true,
+    "unlimitedReportRendered": true,
+    "mode": "Unlimited Practice",
+    "accuracy": "83%",
+    "correct": "5/6",
+    "evidence": "Developing Evidence",
+    "objectiveLabel": "Revenues And Outlays",
+    "questionFormLabel": "Definition",
+    "nextMove": "Review Revenues And Outlays",
+    "humanReadableLabels": true,
+    "internalConceptIdVisible": false,
+    "rawFbCodeVisible": false
+  },
+  "visual": {
+    "desktopQuestionLayout": "PASS",
+    "answerChoicesReadable": true,
+    "overflowOrOverlapObserved": false
+  },
+  "issues": []
+}

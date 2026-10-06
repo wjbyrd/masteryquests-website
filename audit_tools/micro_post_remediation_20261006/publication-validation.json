@@ -1,0 +1,71 @@
+{
+  "librarySha256": "7bd8ce4951cfe49114e0b583dc7d6522a7f66cdf6e4b29d1238d8dc5328650ac",
+  "canonicalIds": 9777,
+  "unauthorizedQuestionChanges": 0,
+  "areas": {
+    "general": {
+      "canonicalCount": 1589,
+      "publishedCount": 1589,
+      "changedTargets": 1,
+      "unpublishedIds": [],
+      "allTenModesPass": true,
+      "answerVerification": true,
+      "inlineScriptsCompiled": 1,
+      "exactPublicationParity": true
+    },
+    "micro": {
+      "canonicalCount": 6297,
+      "publishedCount": 6272,
+      "changedTargets": 19,
+      "unpublishedIds": [
+        "ECON-MG-CORE-MARKET-FAILURE-30006",
+        "ECON-MG-CORE-MARKETS-30011",
+        "ECON-MG-EASY-11",
+        "ECON-MG-EASY-15",
+        "ECON-MG-EASYBOSS-2015",
+        "ECON-MG-EASYBOSS-2017",
+        "P52B-MFAIL-H-004",
+        "P77-MFAIL-BR-040",
+        "P77-MFAIL-EL-015",
+        "P77-MFAIL-FINALB-025",
+        "P77-MFAIL-FINALB-026",
+        "P77-MFAIL-FINALB-027",
+        "P77-MFAIL-H-010",
+        "P77-MFAIL-H-011",
+        "P77-MFAIL-H-013",
+        "P77-MFAIL-L-018",
+        "P77-MFAIL-L-021",
+        "P77-MFAIL-L-024",
+        "P77-MFAIL-LB-028",
+        "P77-MFAIL-LB-030",
+        "P77-MFAIL-LB-032",
+        "P77-MFAIL-M-008",
+        "P77-MFAIL-R-033",
+        "P77-MFAIL-R-034",
+        "P77-MFAIL-R-037"
+      ],
+      "allTenModesPass": true,
+      "answerVerification": true,
+      "inlineScriptsCompiled": 1,
+      "exactPublicationParity": true
+    },
+    "macro": {
+      "canonicalCount": 4747,
+      "publishedCount": 4745,
+      "changedTargets": 1,
+      "unpublishedIds": [
+        "ECON-SP-MAP-AD-AS-TO-PC-5061",
+        "ECON-SP-MAP-AD-AS-TO-PC-6052"
+      ],
+      "allTenModesPass": true,
+      "answerVerification": true,
+      "inlineScriptsCompiled": 1,
+      "exactPublicationParity": true
+    }
+  },
+  "negativeControls": [
+    "42424.primarySkill: rejected",
+    "ECON-MG-EASY-1.q: rejected"
+  ],
+  "status": "PASS"
+}

@@ -1,0 +1,345 @@
+FAIL run_faculty_outcome_validation.js
+AssertionError [ERR_ASSERTION]: integrated-economic-analysis all canonical skills mapped
++ actual - expected
+... Skipped lines
+
+  [
+    'assumptions_role',
+    'binding_price_ceiling',
+    'binding_price_ceiling_shortage',
+    'binding_price_floor_labor_surplus',
+...
+    'micro_vs_macro',
++   'minimum_wage_inflation_synthesis',
+    'minimum_wage_policy_tradeoff',
+    'minimum_wage_surplus_real_wage_analysis',
+    'minimum_wage_tradeoff_analysis',
+    'minimum_wage_unemployment',
+    'mixed_policy_supply_ceiling',
+    'model_application_limits',
+    'model_purpose',
++   'multi_indicator_macro_diagnosis',
+    'nominal_to_real_wage_bridge',
+    'nonmoney_rationing_costs',
+    'nonprice_rationing',
+    'nonprice_rationing_interpretation',
+    'official_price_vs_full_cost_analysis',
+...
+    'price_ceiling_shortage',
++   'price_control_hidden_costs',
+    'price_floor',
+    'price_floor_surplus',
+    'price_signal_allocation',
+    'price_signals',
+    'productive_capacity',
++   'productivity',
+    'productivity_growth',
+    'quality_adjustment_policy_analysis',
+    'quality_bias',
+    'quantity_response',
+    'quantity_supplied_quantity_demanded',
++   'real_wage_adjustment',
+    'real_wages',
+    'scarcity_definition',
+    'seller_price',
+    'shortage',
+    'shortage_calculation',
+...
+    'unemployment',
++   'unemployment_rate_limits',
+    'unintended_consequences'
+  ]
+
+    at run (C:\Users\Jennings\Documents\GitHub\masteryquests-website\build\faculty-build-composer\tests\run_faculty_outcome_validation.js:19:10)
+    at Object.<anonymous> (C:\Users\Jennings\Documents\GitHub\masteryquests-website\build\faculty-build-composer\tests\run_faculty_outcome_validation.js:87:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: [Array],
+  expected: [Array],
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}
+PASS run_content_scope_validation.js
+PASS run_default_character_set_validation.js
+PASS run_exam_navigation_boss_reveal_validation.js
+PASS run_checkpoint_artifact_exam_integrity_validation.js
+PASS run_guide_intro_validation.js
+PASS run_phase1_targeted_repair_validation.js
+PASS run_phase15_production_hardening_validation.js
+PASS run_visibility_aware_telemetry_validation.js
+PASS run_generated_telemetry_smoke.js
+PASS run_phase3a_official_theme_validation.js
+PASS run_phase3b_custom_asset_validation.js
+FAIL run_phase3e_graph_question_sync_validation.mjs
+{
+  "phase": "phase3e-market-gate-graph-sync-v1",
+  "ok": false,
+  "composerVersion": "4.5s.3k",
+  "recipeSchemaVersion": "1.6.0",
+  "canonicalQuestionCount": 9777,
+  "synchronizedQuestions": 48,
+  "difficulty": {
+    "medium": 7,
+    "hard": 16,
+    "elite": 20,
+    "legendary": 5
+  },
+  "types": {
+    "graph_calculation": 11,
+    "graph_interpretation": 10,
+    "graph_integration": 17,
+    "graph_trap": 10
+  },
+  "conceptIds": [
+    "production-possibilities-frontier",
+    "supply",
+    "demand",
+    "market-equilibrium",
+    "binding-price-ceilings",
+    "binding-price-floors",
+    "tax-wedges-and-revenue",
+    "tax-incidence",
+    "statutory-versus-economic-tax-incidence"
+  ],
+  "phaseAssetRegistrations": 21,
+  "physicalAssetsCopied": 0,
+  "cleanedGraphs": 11,
+  "generatedBytes": 7501740,
+  "inlineScripts": 1,
+  "generatedArtifact": "C:\\Users\\Jennings\\AppData\\Local\\Temp\\mq-active-composer-tests-qa4XOx\\tests\\phase3e-market-gate-sample.html",
+  "modes": [
+    {
+      "mode": "standard",
+      "ok": true
+    },
+    {
+      "mode": "timed",
+      "ok": true
+    },
+    {
+      "mode": "exam",
+      "ok": true
+    },
+    {
+      "mode": "quiz",
+      "ok": true
+    },
+    {
+      "mode": "unlimited",
+      "ok": true
+    },
+    {
+      "mode": "legendary",
+      "ok": true
+    },
+    {
+      "mode": "score",
+      "ok": true
+    },
+    {
+      "mode": "trialGraph",
+      "ok": true
+    },
+    {
+      "mode": "fadingFortune",
+      "ok": true
+    },
+    {
+      "mode": "riskReward",
+      "ok": true
+    }
+  ],
+  "issues": [
+    "Aligned current field 40028: q",
+    "Aligned current field 40028: options",
+    "Aligned current field 40028: feedback",
+    "Aligned current field 40028: aHash"
+  ]
+}
+PASS run_question_quality_auditor_validation.mjs
+FAIL run_macro_phase2_taxonomy_validation.mjs
+file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/tests/run_macro_phase2_taxonomy_validation.mjs:78
+const check=(name,condition,details={})=>{checks.push({name,status:condition?'PASS':'FAIL',...details});if(!condition)throw new Error(`${name}: ${JSON.stringify(details)}`);};
+                                                                                                                            ^
+
+Error: Supplement count: {"actual":109,"unique":109,"expected":107}
+    at check (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/tests/run_macro_phase2_taxonomy_validation.mjs:78:125)
+    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/tests/run_macro_phase2_taxonomy_validation.mjs:112:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+
+Node.js v24.19.0
+PASS run_checkpoint_remediation_design_change_validation.mjs
+PASS run_legendary_final_checkpoint_validation.mjs
+FAIL run_question_bank_comprehensive_validation.mjs
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Declared objective reference ECON-EC-LEGENDARYBOSS-20022
+    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/tests/run_question_bank_comprehensive_validation.mjs:38:2
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.19.0
+PASS run_concept_review_integration.js
+PASS run_mastery_report_concept_reviews.js
+PASS run_mastery_report_2_validation.js
+PASS run_mastery_report_state_leak_hotfix.js
+PASS run_mode_availability_fix.js
+PASS run_quiz_mode_validation.js
+PASS run_unlimited_practice_validation.js
+FAIL run_trial_by_graph_validation.js
+{
+  "phase": "mode8-trial-by-graph-v1",
+  "ok": false,
+  "composerVersion": "4.5s.3k",
+  "canonicalQuestionCount": 9777,
+  "auditedIds": 612,
+  "graphRequiredFlagged": 1233,
+  "examples": {
+    "perfectCompetition": 102,
+    "demand": 25,
+    "aggregateDemand": 12,
+    "bankMoneyCreation": 0
+  },
+  "generatedGraphIntegrity": {
+    "brokenRejected": true,
+    "omittedRejected": true,
+    "validAccepted": true,
+    "representativeConcepts": [
+      "demand",
+      "supply",
+      "market-equilibrium",
+      "production-possibilities-frontier"
+    ],
+    "graphQuestions": 115,
+    "assets": 20,
+    "smokeQuestions": 10,
+    "smokeAssets": 9,
+    "smokeIds": [
+      "40006",
+      "PG1-DMD-L-002",
+      "40020",
+      "40000",
+      "PG1-DMD-E-001",
+      "PG1-SUP-E-001",
+      "PG1-EQ-E-001",
+      "40003",
+      "40009",
+      "40018"
+    ]
+  },
+  "supportedTargets": {
+    "perfectCompetition": [
+      10,
+      15,
+      20
+    ],
+    "demand": [
+      10,
+      15,
+      20
+    ],
+    "aggregateDemand": [
+      10
+    ]
+  },
+  "allEightModes": [
+    {
+      "mode": "standard",
+      "ok": true
+    },
+    {
+      "mode": "timed",
+      "ok": true
+    },
+    {
+      "mode": "exam",
+      "ok": true
+    },
+    {
+      "mode": "quiz",
+      "ok": true
+    },
+    {
+      "mode": "unlimited",
+      "ok": true
+    },
+    {
+      "mode": "legendary",
+      "ok": true
+    },
+    {
+      "mode": "score",
+      "ok": true
+    },
+    {
+      "mode": "trialGraph",
+      "ok": true
+    },
+    {
+      "mode": "fadingFortune",
+      "ok": true
+    },
+    {
+      "mode": "riskReward",
+      "ok": true
+    }
+  ],
+  "issues": [
+    "graphRequired count 1233",
+    "flags outside audited set 1"
+  ]
+}
+PASS run_fading_fortune_validation.js
+PASS run_risk_reward_validation.js
+PASS run_risk_reward_state_validation.js
+{
+  "ok": false,
+  "total": 29,
+  "passed": 24,
+  "failed": [
+    {
+      "runner": "run_faculty_outcome_validation.js",
+      "passed": false,
+      "durationMs": 3127
+    },
+    {
+      "runner": "run_phase3e_graph_question_sync_validation.mjs",
+      "passed": false,
+      "durationMs": 9111
+    },
+    {
+      "runner": "run_macro_phase2_taxonomy_validation.mjs",
+      "passed": false,
+      "durationMs": 13732
+    },
+    {
+      "runner": "run_question_bank_comprehensive_validation.mjs",
+      "passed": false,
+      "durationMs": 13496
+    },
+    {
+      "runner": "run_trial_by_graph_validation.js",
+      "passed": false,
+      "durationMs": 12967
+    }
+  ]
+}

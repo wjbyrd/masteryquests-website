@@ -1,0 +1,3093 @@
+<!doctype html><meta name="viewport" content="width=device-width, initial-scale=1"><style>
+/* =========================================
+   1. VISUAL DESIGN — SAFE TO EDIT
+
+You can change:
+- Colors
+- Background images
+- Fonts
+- Glow effects
+
+Do NOT rename IDs (#gameBox, #mazeTrack, etc.)
+or you will break JavaScript connections.
+========================================= */
+/* =========================================
+   1. VISUAL DESIGN — BLANK MASTERY QUEST
+========================================= */
+body {
+    font-family: 'Rajdhani', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    color: #eef6ff;
+    background: linear-gradient(135deg,#020617 0%,#0b2238 52%,#17324d 100%);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Generic learning-game overlay */
+body::after{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:
+        radial-gradient(circle at center,
+            rgba(56,189,248,0.10),
+            rgba(15,23,42,0.36) 48%,
+            rgba(2,6,23,0.78) 100%);
+    pointer-events:none;
+    z-index:-1;
+}
+
+.dungeon-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 1100px;
+    margin-top: 20px;
+}
+
+/* CENTER BLOCK */
+.start-content{
+    width: 100%;
+    max-width: 460px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;   
+    text-align:center;
+    padding: 28px 30px;
+    border-radius: 18px;
+}
+
+/* TITLE — civic gold */
+.title{
+    font-size:64px;
+    letter-spacing:4px;
+    margin-bottom:10px;
+    color:#f7d982;
+    text-align:center;
+    text-shadow:
+        0 0 10px rgba(240,200,106,0.72),
+        0 0 24px rgba(56,189,248,0.26),
+        0 3px 8px rgba(0,0,0,0.92);
+}
+
+/* SUBTITLE — holographic blue */
+.subtitle{
+    font-size:34px;
+    margin-bottom:35px;
+    letter-spacing:2px;
+    text-align:center;
+    color:#c7ecff;
+    text-shadow:
+        0 0 12px rgba(56,189,248,0.42),
+        0 0 26px rgba(14,165,233,0.22),
+        0 2px 6px rgba(0,0,0,0.88);
+}
+
+/* TAGLINE */
+.tagline{
+    margin-bottom:30px;
+    font-style:italic;
+    opacity:0.92;
+    text-align:center;
+    color:#e0f2fe;
+    text-shadow:
+        0 0 10px rgba(56,189,248,0.22),
+        0 2px 6px rgba(0,0,0,0.88);
+}
+
+/* INPUT — civic access panel */
+.name-input{
+    width:100%;
+    max-width:320px;
+    text-align:center;
+    padding:15px;
+    border-radius:10px;
+    border:1px solid rgba(56,189,248,0.42);   
+    background: rgba(3,10,24,0.82);          
+    color:#eef6ff;                             
+    font-size:20px;
+    margin-bottom:20px;
+    outline:none;
+    box-shadow:
+        0 0 12px rgba(56,189,248,0.24),
+        inset 0 0 12px rgba(0,0,0,0.72);
+}
+
+.name-input:focus{
+    border-color: rgba(247,217,130,0.88);
+    box-shadow:
+        0 0 16px rgba(247,217,130,0.42),
+        0 0 34px rgba(56,189,248,0.30),
+        inset 0 0 12px rgba(0,0,0,0.78);
+}
+
+.start-btn{
+    width:100%;
+    max-width:320px;
+}
+
+.secondary-start-btn{
+    margin-top: 10px;
+    background: linear-gradient(180deg, #1d4d73, #04101f);
+    border-color: rgba(247,217,130,0.56);
+    color: #f7d982;
+}
+
+/* PLACEHOLDER */
+#playerNameInput::placeholder,
+#username::placeholder{
+    color: rgba(224,242,254,0.55);
+    font-style: italic;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+/* =========================================
+   2. CORE GAME CONTAINER (#gameBox)
+========================================= */
+
+#gameBox {
+    max-width: 750px;
+    flex:1;
+    min-width:0;
+    width:100%;
+    margin: 0;
+    padding: 18px 20px;
+    text-align: center;
+
+    background:
+        radial-gradient(circle at center,
+            rgba(56,189,248,0.13) 0%,
+            rgba(15,23,42,0.58) 46%,
+            rgba(3,10,24,0.94) 74%,
+            rgba(2,6,23,0.99) 100%);
+
+    backdrop-filter: blur(6px);
+    border-radius: 14px;
+    box-sizing: border-box;
+
+    box-shadow:
+        0 0 22px rgba(56,189,248,0.18),
+        0 0 58px rgba(240,200,106,0.10),
+        0 0 72px rgba(15,23,42,0.72),
+        inset 0 0 42px rgba(0,0,0,0.78);
+
+    border: 1px solid rgba(247,217,130,0.34);
+    animation: torchFlicker 6s infinite;
+    transition: box-shadow .3s ease, border-color .3s ease;
+    position: relative;
+}
+
+/* Boss state styling — triggered during boss fights (DO NOT REMOVE) */
+#gameBox.boss-mode {
+    border: 2px solid rgba(247,217,130,0.88);
+    box-shadow:
+        0 0 30px rgba(247,217,130,0.42),
+        0 0 62px rgba(56,189,248,0.34),
+        inset 0 0 46px rgba(0,0,0,0.86);
+}
+
+.boss-icon{
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+/* Tier 1 — Checkpoint One */
+.boss10 .boss-icon{
+    filter:
+        drop-shadow(0 0 6px rgba(56,189,248,0.88))
+        drop-shadow(0 0 14px rgba(247,217,130,0.48));
+}
+
+/* Tier 2 — Checkpoint Two */
+.boss20 .boss-icon{
+    filter:
+        drop-shadow(0 0 8px rgba(14,165,233,0.94))
+        drop-shadow(0 0 18px rgba(56,189,248,0.56));
+}
+
+/* Tier 3 — Final Checkpoint */
+.boss30 .boss-icon{
+    filter:
+        drop-shadow(0 0 10px rgba(247,217,130,0.96))
+        drop-shadow(0 0 25px rgba(56,189,248,0.62));
+}
+
+/* Damage effect when boss/player is hit (visual feedback) */	
+.hit {
+    box-shadow:
+        0 0 52px rgba(185,28,28,0.64),
+        0 0 30px rgba(247,217,130,0.30),
+        inset 0 0 44px rgba(2,6,23,0.90) !important;
+    animation: hitshake 0.4s ease;
+}
+
+/* Autosave indicator — positioned relative to gameBox */	
+#autosave {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 11px;
+    opacity: 0.58;
+    font-style: italic;
+    color: #c7ecff;
+    text-shadow: 0 0 6px rgba(56,189,248,0.42);
+}
+
+/* Adds a graph box for questions with graphs */	
+#questionImageBox{
+    margin: 0 auto 12px auto;
+    text-align: center;
+    display: none;
+}
+
+#questionImageBox img{
+    max-width: 100%;
+    width: min(100%, 640px);
+    max-height: 42vh;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    border: 1px solid rgba(247,217,130,0.26);
+    box-shadow:
+        0 0 14px rgba(56,189,248,0.22),
+        0 0 30px rgba(15,23,42,0.72),
+        0 0 28px rgba(0,0,0,0.74);
+    cursor: zoom-in;
+}
+
+#questionImageBox .graph-zoom-note{
+    margin-top: 6px;
+    font-size: 12px;
+    color: rgba(224,242,254,0.72);
+    font-style: italic;
+}
+
+#graphLightbox{
+    position: fixed;
+    inset: 0;
+    z-index: 5000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 26px;
+    box-sizing: border-box;
+    background: rgba(2,6,23,0.88);
+    backdrop-filter: blur(5px);
+}
+
+#graphLightbox.active{
+    display: flex;
+}
+
+#graphLightbox img{
+    width: min(96vw, 1180px);
+    max-height: 88vh;
+    object-fit: contain;
+    border-radius: 12px;
+    background: #fff;
+    border: 1px solid rgba(247,217,130,0.54);
+    box-shadow:
+        0 0 28px rgba(56,189,248,0.34),
+        0 0 70px rgba(0,0,0,0.86);
+}
+
+#graphLightboxClose{
+    position: fixed;
+    top: calc(env(safe-area-inset-top, 0px) + 14px);
+    right: 16px;
+    z-index: 5001;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+    font-size: 28px;
+    line-height: 38px;
+    color: #fff7d6;
+    background: rgba(3,10,24,0.94);
+    border: 1px solid rgba(247,217,130,0.62);
+    box-shadow:
+        0 0 20px rgba(56,189,248,0.36),
+        inset 0 0 12px rgba(0,0,0,0.78);
+}
+
+@media(max-width:768px){
+    #questionImageBox img{
+        width: min(100%, 520px);
+        max-height: 36vh;
+        object-fit: contain;
+    }
+
+    #graphLightbox{
+        padding: 12px;
+    }
+
+    #graphLightbox img{
+        width: 98vw;
+        max-height: 86vh;
+    }
+}
+
+/* =========================================
+   3. TEXT & TYPOGRAPHY SYSTEM
+========================================= */
+
+h2 {
+    text-shadow:
+        0 0 10px rgba(229,231,235,0.22),
+        0 0 22px rgba(56,189,248,0.20),
+        0 2px 6px rgba(0,0,0,0.88);
+    margin-bottom: 5px;
+}
+
+/* Main question text — keep readable and centered */	
+#question {
+    font-size: clamp(20px, 4vw, 22px);
+    line-height: 1.4;
+    font-weight: 600;
+    margin: 14px 0;
+    color: #eef6ff;
+    text-shadow:
+        0 2px 5px rgba(0,0,0,0.90),
+        0 0 8px rgba(56,189,248,0.14);
+}
+
+/* Boss/summary title — high emphasis text */	
+.boss-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: block;
+    color: #f7d982;
+    text-shadow:
+        0 0 10px rgba(247,217,130,0.68),
+        0 0 28px rgba(56,189,248,0.30),
+        0 3px 8px rgba(0,0,0,0.92);
+}
+
+/* Area/zone label — subtle contextual info */	
+.area-title {
+    color: #c7ecff;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-shadow:
+        0 0 8px rgba(56,189,248,0.34),
+        0 2px 5px rgba(0,0,0,0.88);
+}
+
+/* Boss summary text — left-aligned for readability */	
+.boss-q {
+    font-style: normal;
+    line-height: 1.5;
+    font-size: 24px;
+    border-left: 3px solid #f7d982;
+    padding-left: 15px;
+    margin: 20px 0;
+    text-align: left;
+    color: #eef6ff;
+    box-shadow: -4px 0 12px rgba(56,189,248,0.24);
+    text-shadow: 0 2px 5px rgba(0,0,0,0.88);
+}
+
+/* Optional hint display (calculation or guidance) */	
+.hint-box {
+    font-size: 13px;
+    color: #f7d982;
+    margin-top: 15px;
+    opacity: 0.86;
+    height: 18px;
+    text-shadow:
+        0 0 6px rgba(247,217,130,0.30),
+        0 0 12px rgba(56,189,248,0.16);
+}
+
+/* Temporary feedback text (auto fades out) */	
+.fade-out-text {
+    animation: fadeOut 5s forwards;
+    font-weight: bold;
+    color: #f9e7ad;
+    text-shadow:
+        0 0 8px rgba(247,217,130,0.52),
+        0 0 18px rgba(56,189,248,0.24),
+        0 2px 5px rgba(0,0,0,0.88);
+}
+
+/* Guide feedback text */	
+#message {
+    margin-top: 10px;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #e0f2fe;
+    opacity: 0.9;
+    text-shadow:
+        0 0 7px rgba(56,189,248,0.24),
+        0 2px 5px rgba(0,0,0,0.88);
+}
+
+/* Faculty Template feedback override */
+.blank-builder-template #message {
+    color: #c7ecff;
+    font-size: 17px;
+    font-style: italic;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow:
+        0 0 8px rgba(56,189,248,0.48),
+        0 0 18px rgba(247,217,130,0.18),
+        0 2px 6px rgba(0,0,0,0.88);
+}
+
+/* =========================================
+   4. BUTTONS & INTERACTION
+========================================= */
+
+/* Base button styling — applies to all buttons */
+button {
+    padding: 12px 22px;
+    margin: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    background: linear-gradient(180deg, #12304f, #04101f);
+    color: #eef6ff;
+    border: 1px solid rgba(56,189,248,0.36);
+    border-radius: 8px;
+    box-shadow:
+       0 0 12px rgba(56,189,248,0.20),
+       0 0 24px rgba(15,23,42,0.54),
+       inset 0 0 10px rgba(0,0,0,0.74);
+    transition: all 0.15s ease;
+}
+	
+/* Hover feedback — improves interactivity */
+button:hover {
+    background: linear-gradient(180deg, #1d4d73, #0b2238);
+    border-color: rgba(247,217,130,0.72);
+    box-shadow:
+        0 0 18px rgba(56,189,248,0.36),
+        0 0 34px rgba(247,217,130,0.24),
+        inset 0 0 12px rgba(0,0,0,0.72);
+    transform: translateY(-2px) scale(1.02);
+}
+
+/* Click feedback — simulates button press */	
+button:active {
+    transform: scale(0.96);
+}
+
+/* Answer container — controls layout of choices */	
+.answers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+}
+
+/* Individual answer buttons — flexible sizing */	
+.answers button {
+    flex: 1 1 100%;
+    min-height: 60px;
+    max-width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    margin: 0;
+    background: linear-gradient(180deg,
+        rgba(11,34,56,0.96),
+        rgba(2,8,18,0.98));
+    color: #eef6ff;
+    border: 1px solid rgba(56,189,248,0.30);
+    box-shadow:
+        0 0 10px rgba(56,189,248,0.18),
+        0 0 18px rgba(247,217,130,0.10),
+        inset 0 0 14px rgba(0,0,0,0.78);
+}
+
+/* Answer hover — a little brighter than base */	
+.answers button:hover {
+    background: linear-gradient(180deg,
+        rgba(19,57,86,0.98),
+        rgba(8,24,42,0.98));
+    border-color: rgba(247,217,130,0.66);
+    box-shadow:
+        0 0 18px rgba(56,189,248,0.34),
+        0 0 34px rgba(247,217,130,0.22),
+        inset 0 0 14px rgba(0,0,0,0.74);
+}
+
+
+.return-menu-btn{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 6px 12px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #e0f2fe;
+    background: linear-gradient(180deg, #12304f, #04101f);
+    border: 1px solid rgba(56,189,248,0.32);
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow:
+        0 0 10px rgba(56,189,248,0.22),
+        inset 0 0 7px rgba(0,0,0,0.80);
+    transition: all 0.15s ease;
+}
+
+.return-menu-btn:hover {
+    color: #f7d982;
+    background: linear-gradient(180deg, #1d4d73, #0b2238);
+    border-color: rgba(247,217,130,0.62);
+    box-shadow:
+        0 0 16px rgba(56,189,248,0.34),
+        inset 0 0 8px rgba(0,0,0,0.76);
+}
+
+.return-menu-btn:active {
+    transform: scale(0.95);
+}
+
+.continue-btn {
+    background: linear-gradient(180deg, #1d4d73, #04101f);
+    color: #f7d982;
+    font-weight: bold;
+    padding: 14px 40px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid rgba(247,217,130,0.56);
+    cursor: pointer;
+    box-shadow:
+        0 0 16px rgba(56,189,248,0.32),
+        0 0 34px rgba(247,217,130,0.22),
+        inset 0 0 12px rgba(0,0,0,0.76);
+    transition: all 0.15s ease;
+}
+
+.continue-btn:hover {
+    background: linear-gradient(180deg, #24628f, #0b2238);
+    box-shadow:
+        0 0 24px rgba(56,189,248,0.46),
+        0 0 42px rgba(247,217,130,0.28),
+        inset 0 0 12px rgba(0,0,0,0.74);
+    transform: scale(1.03);
+}
+
+#continueBtn:active {
+    transform: scale(0.97);
+    box-shadow:
+        0 0 10px rgba(56,189,248,0.30),
+        inset 0 0 10px rgba(0,0,0,0.82);
+}
+
+/* =========================================
+   5. PROGRESS & MAZE TRACK
+========================================= */
+    
+/* Progress bar container — background track */
+	#progressBar {
+    width: 100%;
+    height: 22px;
+    background: linear-gradient(180deg,
+        rgba(3,10,24,0.96),
+        rgba(2,6,23,0.98));
+    border-radius: 12px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(56,189,248,0.26);
+    box-shadow:
+        inset 0 0 12px rgba(0,0,0,0.86),
+        0 0 10px rgba(56,189,248,0.18);
+}
+
+/* Progress fill — width controlled by JS */	
+#progressFill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg,
+        #0b2238,
+        #38bdf8,
+        #f7d982);
+    box-shadow:
+        0 0 12px rgba(56,189,248,0.44),
+        0 0 22px rgba(247,217,130,0.28);
+    transition: width 0.4s ease;
+}
+
+/* Maze grid layout — 10 columns = 30 total rooms */	
+#mazeTrack {
+    display: grid;
+    grid-template-columns: repeat(10, 36px);
+    justify-content: center;
+    gap: 10px;
+    margin: 25px auto;
+}
+
+/* Individual room cell — default state */	
+.maze-box {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 6px;
+    background: linear-gradient(180deg,
+        rgba(11,34,56,0.72),
+        rgba(2,6,23,0.94));
+    border: 1px solid rgba(56,189,248,0.20);
+    box-shadow:
+        inset 0 0 10px rgba(0,0,0,0.80),
+        0 0 5px rgba(56,189,248,0.12);
+    transition: all 0.3s ease;
+}
+
+/* Current room highlight — animated pulse */	
+.maze-box.active {
+    background: radial-gradient(circle,
+        rgba(56,189,248,0.46),
+        rgba(11,34,56,0.58),
+        rgba(2,6,23,0.98));
+    border: 2px solid #f7d982;
+    box-shadow:
+        0 0 12px rgba(56,189,248,0.72),
+        0 0 24px rgba(247,217,130,0.36),
+        inset 0 0 12px rgba(0,0,0,0.72);
+    z-index: 10;
+    animation: activePulse 1s infinite alternate;
+}
+
+/* Completed tile */	
+.maze-box.completed {
+    background: linear-gradient(180deg,
+        rgba(19,57,86,0.72),
+        rgba(3,10,24,0.96));
+    border-color: rgba(247,217,130,0.36);
+    box-shadow:
+        0 0 8px rgba(56,189,248,0.26),
+        inset 0 0 10px rgba(0,0,0,0.76);
+}
+
+button.maze-box.exam-nav-room{
+    appearance:none;
+    padding:0;
+    color:#eef6ff;
+    font:800 14px/1 'Rajdhani',Arial,sans-serif;
+    cursor:pointer;
+}
+button.maze-box.exam-nav-room:hover,
+button.maze-box.exam-nav-room:focus-visible{
+    border-color:#8bdcff;
+    box-shadow:0 0 0 3px rgba(56,189,248,.18),0 0 14px rgba(56,189,248,.42);
+    outline:none;
+}
+button.maze-box.exam-nav-room.exam-answered{background:linear-gradient(180deg,rgba(52,56,112,.9),rgba(14,18,52,.98));border-color:rgba(165,180,252,.68)}
+button.maze-box.exam-nav-room.exam-unanswered{background:linear-gradient(180deg,rgba(30,58,88,.78),rgba(2,10,24,.98))}
+button.maze-box.exam-nav-room.exam-boss-ready{background:linear-gradient(180deg,rgba(154,104,26,.92),rgba(55,31,4,.98));border-color:#f7d982;box-shadow:0 0 16px rgba(247,217,130,.42)}
+button.maze-box.exam-nav-room:disabled{cursor:not-allowed;opacity:.34;filter:saturate(.35)}
+.maze-box.exam-committed{opacity:.58;background:linear-gradient(180deg,rgba(19,57,86,.72),rgba(3,10,24,.96));border-color:rgba(247,217,130,.28)}
+#answers button.selected,#answers button[aria-pressed="true"]{border-color:#f7d982!important;background:linear-gradient(180deg,rgba(30,78,110,.96),rgba(8,33,56,.98))!important;box-shadow:0 0 0 3px rgba(247,217,130,.16),0 0 18px rgba(56,189,248,.34)!important}
+
+/* Boss room highlights (10, 20, 30) — visual only */
+.maze-box:nth-child(10) {
+    text-shadow:
+        0 0 8px #38bdf8,
+        0 0 18px rgba(247,217,130,0.58);
+}
+
+.maze-box:nth-child(20) {
+    text-shadow:
+        0 0 8px #0ea5e9,
+        0 0 18px rgba(56,189,248,0.62);
+}
+
+.maze-box:nth-child(30) {
+    text-shadow:
+        0 0 10px #f7d982,
+        0 0 24px rgba(56,189,248,0.64),
+        0 0 34px rgba(0,0,0,0.68);
+}
+
+/* Streak styling — Blank Mastery Quest */
+.streak {
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    font-weight:600;
+    letter-spacing:0.5px;
+    color: rgba(238,246,255,0.96);
+    text-shadow:
+        0 0 7px rgba(56,189,248,0.32),
+        0 2px 5px rgba(0,0,0,0.88);
+}
+
+.streak-icon {
+    width:22px;
+    height:22px;
+    object-fit:contain;
+    border-radius:50%;
+    filter:
+        drop-shadow(0 0 8px rgba(247,217,130,0.72))
+        drop-shadow(0 0 15px rgba(56,189,248,0.36));
+    background: radial-gradient(circle,
+        rgba(247,217,130,0.36) 0%,
+        rgba(56,189,248,0.24) 42%,
+        transparent 72%);
+    animation: pulseControl 2.2s ease-in-out infinite;
+}
+	
+/* =========================================
+   6. ARTIFACT SYSTEM (REWARDS) — BLANK MASTERY QUEST
+========================================= */
+
+/* Reward popup — appears after boss victory */
+#artifactDrop {
+    margin-top: 20px;
+    padding: 14px;
+    background: radial-gradient(circle at center,
+        rgba(56,189,248,0.18),
+        rgba(15,42,64,0.70) 42%,
+        rgba(4,14,28,0.94) 68%,
+        rgba(2,6,23,0.99));
+    border-radius: 12px;
+    border: 1px solid rgba(247,217,130,0.38);
+    box-shadow:
+        0 0 22px rgba(56,189,248,0.24),
+        0 0 44px rgba(247,217,130,0.16),
+        inset 0 0 30px rgba(0,0,0,0.78);
+    text-align: center;
+}
+
+/* Artifact image in popup */	
+#artifactImage {
+    width: 96px;
+    margin-bottom: 8px;
+}
+
+#artifactDrop img {
+    filter:
+        drop-shadow(0 0 14px rgba(56,189,248,0.64))
+        drop-shadow(0 0 26px rgba(247,217,130,0.36))
+        drop-shadow(0 0 34px rgba(0,0,0,0.64));
+}
+
+/* Persistent artifact collection display (top panel) */	
+#artifactVault {
+    margin-top: -6px;
+    width: 220px;
+    padding: 18px;
+    border-radius: 12px;
+    background: radial-gradient(circle at top,
+        rgba(56,189,248,0.16),
+        rgba(15,42,64,0.70) 44%,
+        rgba(4,14,28,0.94) 70%,
+        rgba(2,6,23,0.99));
+    border: 1px solid rgba(56,189,248,0.26);
+    box-shadow:
+        0 0 20px rgba(56,189,248,0.20),
+        0 0 38px rgba(247,217,130,0.12),
+        inset 0 0 30px rgba(0,0,0,0.78);
+    text-align: center;
+}
+
+#artifactVault h3 {
+    color: #f7d982;
+    text-shadow:
+        0 0 10px rgba(247,217,130,0.48),
+        0 0 18px rgba(56,189,248,0.20),
+        0 2px 6px rgba(0,0,0,0.88);
+}
+
+/* Layout container for artifact slots */	
+.vaultRow {
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    gap: 15px;
+    flex-wrap:wrap;
+}
+
+/* Individual artifact slot (default = locked state) */    	
+.artifactSlot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 70px;
+    text-align:center;
+    opacity: .28;
+    transition: all .4s ease;
+    appearance:none;
+    border:1px solid rgba(56,189,248,.16);
+    border-radius:10px;
+    padding:9px 7px;
+    color:inherit;
+    background:rgba(2,10,24,.45);
+    font:inherit;
+    cursor:not-allowed;
+}
+
+/* Locked artifact image (dimmed effect) */    	
+.artifactSlot img {
+    width: 45px;
+    margin-bottom:4px;
+    filter:
+        brightness(0.30)
+        contrast(0.92)
+        saturate(0.78);
+    transition: all .4s ease;
+}
+
+/* Artifact label text */	
+.artifactSlot span {
+    display: block;
+    font-size: 13px;
+    color: rgba(224,242,254,0.44);
+    margin-top: 8px;
+    line-height: 1.2;
+}
+
+/* Glow + animation for unlocked artifacts */	
+.artifactSlot.unlocked {
+    opacity: 1;
+    transform: scale(1.05);
+    cursor:pointer;
+}
+
+.artifactSlot.available{border-color:rgba(247,217,130,.58);box-shadow:0 0 14px rgba(247,217,130,.16)}
+.artifactSlot:disabled{cursor:not-allowed}
+.artifactSlot:not(:disabled):hover,.artifactSlot:not(:disabled):focus-visible{transform:translateY(-2px) scale(1.05);outline:2px solid rgba(139,220,255,.68);outline-offset:2px}
+.artifact-mechanic{max-width:150px;color:rgba(224,242,254,.78)!important;font-size:11px!important}
+.artifact-status{color:#f7d982!important;font-weight:800!important;font-size:11px!important;text-transform:uppercase}
+.artifact-eliminated{display:none!important}
+
+.artifactSlot.unlocked img {
+    filter:
+        drop-shadow(0 0 14px rgba(247,217,130,0.76))
+        drop-shadow(0 0 26px rgba(56,189,248,0.44))
+        drop-shadow(0 0 34px rgba(15,42,64,0.62));
+    animation: relicPulse 2.5s ease-in-out infinite;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}
+
+.artifactSlot.unlocked span {
+    color: #eef6ff;
+    font-weight: 600;
+    text-shadow:
+        0 0 7px rgba(56,189,248,0.34),
+        0 0 14px rgba(247,217,130,0.18),
+        0 2px 5px rgba(0,0,0,0.88);
+}
+
+/* =========================================
+   7. BOSS EFFECTS & ATMOSPHERE — BLANK MASTERY QUEST
+========================================= */
+
+/* Hit animation — triggered when boss takes damage */	
+.boss-shake {
+    animation: bossShake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+/* Boss image display — includes floating animation */
+.bossIcon {
+    width: 96px;
+    height: auto;
+    display: block;
+    margin: 0 auto 12px auto;
+    animation: bossFloat 4s ease-in-out infinite;
+}
+
+/* Checkpoint one glow */
+.gatekeeperGlow {
+    filter:
+        drop-shadow(0 0 12px rgba(56,189,248,0.72))
+        drop-shadow(0 0 24px rgba(247,217,130,0.42))
+        drop-shadow(0 0 34px rgba(0,0,0,0.80));
+}
+
+/* Checkpoint two glow */
+.wardenGlow {
+    filter:
+        drop-shadow(0 0 14px rgba(14,165,233,0.88))
+        drop-shadow(0 0 28px rgba(56,189,248,0.44))
+        drop-shadow(0 0 36px rgba(247,217,130,0.18))
+        drop-shadow(0 0 38px rgba(0,0,0,0.84));
+}
+
+/* Final checkpoint glow */
+.arbiterGlow {
+    filter:
+        drop-shadow(0 0 16px rgba(247,217,130,0.92))
+        drop-shadow(0 0 34px rgba(56,189,248,0.48))
+        drop-shadow(0 0 46px rgba(15,42,64,0.66))
+        drop-shadow(0 0 52px rgba(0,0,0,0.88));
+}
+
+/* Ambient torch effect — decorative, shown during gameplay */	
+.torch {
+    position: absolute;
+    width: 70px;
+    top: 30px;
+    z-index: 10;
+    animation: torchFlicker 3s infinite alternate;
+    pointer-events: none;
+    opacity: .9;
+    filter:
+        drop-shadow(0 0 12px rgba(56,189,248,0.44))
+        drop-shadow(0 0 24px rgba(247,217,130,0.24));
+    display:none;
+}
+
+/* Torch positioning (left/right sides of screen) */	
+.left-torch {
+    left: 18px;
+}
+
+.right-torch {
+    right: 18px;
+    transform: scaleX(-1);
+}
+	
+/* =========================================
+   8. FULLSCREEN SCREENS & TRANSITIONS — BLANK MASTERY QUEST
+========================================= */
+
+/* Fullscreen start screen — shown before game begins */    	
+#startScreen{
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(
+        rgba(2,6,23,0.18),
+        rgba(2,6,23,0.58)
+    ),
+    linear-gradient(135deg,#07111f,#17324d 55%,#06101d);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+
+/* Transition overlay — appears between rooms (controlled by JS) */	
+#hallwayTransition {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    linear-gradient(
+        rgba(2,6,23,0.54),
+        rgba(2,6,23,0.78)
+    ),
+    linear-gradient(135deg,#020617,#0b2238);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #f7d982;
+  font-size: 26px;
+  z-index: 200;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1.2s ease;
+  animation: hallwayZoom 3.2s ease-out forwards;
+}
+
+/* Activates transition visibility (DO NOT REMOVE) */    	
+#hallwayTransition.active {
+  opacity: 1;
+}
+
+/* Text container for transition messages */	
+#hallwayText {
+  max-width: 600px;
+  background: radial-gradient(circle at center,
+      rgba(56,189,248,0.18),
+      rgba(15,42,64,0.84) 54%,
+      rgba(2,6,23,0.98));
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid rgba(247,217,130,0.34);
+  box-shadow:
+      0 0 24px rgba(0,0,0,0.84),
+      0 0 30px rgba(56,189,248,0.20),
+      0 0 44px rgba(247,217,130,0.13),
+      inset 0 0 28px rgba(0,0,0,0.76);
+  color: #f9e7ad;
+  text-shadow:
+      0 0 8px rgba(247,217,130,0.26),
+      0 0 16px rgba(56,189,248,0.18),
+      0 2px 6px rgba(0,0,0,0.90);
+}
+
+.game-modal{
+  position:fixed;
+  inset:0;
+  z-index:500;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+  background:rgba(2,6,23,0.72);
+  backdrop-filter:blur(6px);
+}
+
+.game-modal-card{
+  width:min(520px, 100%);
+  padding:28px;
+  border-radius:18px;
+  background:
+    radial-gradient(circle at top,
+      rgba(56,189,248,0.16),
+      rgba(11,34,56,0.88) 48%,
+      rgba(2,6,23,0.98));
+  border:1px solid rgba(247,217,130,0.42);
+  box-shadow:
+    0 0 34px rgba(0,0,0,0.88),
+    0 0 38px rgba(56,189,248,0.24),
+    0 0 46px rgba(247,217,130,0.14),
+    inset 0 0 30px rgba(0,0,0,0.72);
+  text-align:center;
+}
+
+.game-modal-card h2{
+  margin:0 0 12px;
+  color:#f7d982;
+  font-size:30px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+.game-modal-card p{
+  margin:0 0 24px;
+  color:#e0f2fe;
+  font-size:18px;
+  line-height:1.45;
+}
+
+.game-modal-actions{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.game-menu-options{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:10px;
+  width:min(360px, 100%);
+  margin:0 auto 18px;
+}
+
+.game-menu-options[hidden]{display:none;}
+
+.game-menu-option{
+  width:100%;
+  min-height:48px;
+  padding:11px 16px;
+  border:1px solid rgba(56,189,248,.38);
+  border-radius:10px;
+  color:#e0f2fe;
+  background:linear-gradient(180deg,rgba(18,48,79,.96),rgba(4,16,31,.98));
+  box-shadow:0 0 12px rgba(56,189,248,.15),inset 0 0 9px rgba(0,0,0,.72);
+  font:700 13px/1.25 inherit;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  cursor:pointer;
+}
+
+.game-menu-option:hover,
+.game-menu-option:focus-visible{
+  color:#f7d982;
+  border-color:rgba(247,217,130,.64);
+  outline:none;
+}
+
+.secondary-modal-btn{
+  color:#e0f2fe;
+  border-color:rgba(56,189,248,0.42);
+}
+	
+/* =========================================
+   9. ANIMATION SYSTEM — BLANK MASTERY QUEST
+========================================= */
+
+/* Ambient civic-light flicker */
+@keyframes torchFlicker {
+  0%, 100% {
+    filter: brightness(1);
+  }
+  25% {
+    filter: brightness(1.04) saturate(1.04);
+  }
+  50% {
+    filter: brightness(0.97) saturate(0.99);
+  }
+  75% {
+    filter: brightness(1.03) saturate(1.03);
+  }
+}
+
+/* Damage feedback */
+@keyframes hitshake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-8px); }
+  50% { transform: translateX(8px); }
+  75% { transform: translateX(-6px); }
+  100% { transform: translateX(0); }
+}
+
+/* Boss hit feedback */
+@keyframes bossShake {
+  10%, 90% { transform: translate3d(-1px, 0, 0); }
+  20%, 80% { transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+  40%, 60% { transform: translate3d(4px, 0, 0); }
+}
+
+/* Current room pulse — Blank Mastery Quest */
+@keyframes activePulse {
+  0% {
+    transform: scale(1.06);
+    box-shadow:
+      0 0 8px rgba(56,189,248,0.56),
+      0 0 16px rgba(247,217,130,0.22),
+      inset 0 0 10px rgba(0,0,0,0.66);
+  }
+  45% {
+    transform: scale(1.13);
+    box-shadow:
+      0 0 18px rgba(56,189,248,0.78),
+      0 0 32px rgba(247,217,130,0.34),
+      0 0 42px rgba(15,42,64,0.68),
+      inset 0 0 12px rgba(0,0,0,0.70);
+  }
+  70% {
+    transform: scale(1.09);
+    box-shadow:
+      0 0 12px rgba(56,189,248,0.62),
+      0 0 24px rgba(247,217,130,0.24),
+      0 0 30px rgba(15,42,64,0.60),
+      inset 0 0 11px rgba(0,0,0,0.70);
+  }
+  100% {
+    transform: scale(1.11);
+    box-shadow:
+      0 0 15px rgba(56,189,248,0.68),
+      0 0 30px rgba(247,217,130,0.30),
+      0 0 38px rgba(2,6,23,0.70),
+      inset 0 0 12px rgba(0,0,0,0.72);
+  }
+}
+
+/* Victory title glow */
+@keyframes victoryGlow {
+  0%, 100% {
+    transform: scale(1);
+    text-shadow:
+      0 0 10px rgba(247,217,130,0.72),
+      0 0 18px rgba(56,189,248,0.24),
+      0 2px 6px rgba(0,0,0,0.92);
+  }
+  50% {
+    transform: scale(1.08);
+    text-shadow:
+      0 0 24px rgba(247,217,130,0.92),
+      0 0 42px rgba(56,189,248,0.42),
+      0 0 52px rgba(15,42,64,0.68),
+      0 3px 8px rgba(0,0,0,0.92);
+  }
+}
+
+/* Idle boss movement */
+@keyframes bossFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* Temporary feedback text fade-out */
+@keyframes fadeOut {
+  0%, 70% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* Guide idle movement */
+@keyframes wizardFloat {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+/* General UI entrance */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Artifact pulse — Blank Mastery Quest */
+@keyframes relicPulse {
+  0%,100% {
+    transform: scale(1.05);
+    filter:
+      drop-shadow(0 0 8px rgba(247,217,130,0.68))
+      drop-shadow(0 0 18px rgba(56,189,248,0.30))
+      drop-shadow(0 0 24px rgba(0,0,0,0.62));
+  }
+  50% {
+    transform: scale(1.1);
+    filter:
+      drop-shadow(0 0 16px rgba(247,217,130,0.90))
+      drop-shadow(0 0 30px rgba(56,189,248,0.42))
+      drop-shadow(0 0 38px rgba(15,42,64,0.68));
+  }
+}
+
+/* Streak icon pulse */
+@keyframes pulseControl {
+  0%,100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+}
+	
+/* =========================================
+   10. PANEL LAYOUT SYSTEM — BLANK MASTERY QUEST
+========================================= */
+    
+/* Maze Tracker & Artifact Boxes */
+/* Top panel: stacks title, maze tracker, and artifact vault */
+.top-panel{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:8px;
+    width:100%;
+    max-width:700px;
+    margin:0 auto 10px auto;
+}
+
+/* TITLE ABOVE MAZE */	
+.top-title{
+    font-size:22px;
+    font-weight:bold;
+    color:#f7d982;
+    text-align:center;
+    margin-bottom:6px;
+    text-shadow:
+        0 0 10px rgba(247,217,130,0.46),
+        0 0 18px rgba(56,189,248,0.20),
+        0 2px 6px rgba(0,0,0,0.92);
+}
+   
+#mazeTrackContainer{
+    width:100%;
+    max-width:600px;
+    padding:8px 12px;
+}
+
+#artifactVault{
+    width:100%;
+    max-width:420px;
+    padding:10px 14px;
+}
+
+/* Main Game Row */
+/* Main horizontal layout: wizard + game area */	
+.main-panel{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    width:100%;
+    align-items: stretch;
+}
+   
+/* Game Shell Wrapper*/
+/* Core game container — controls overall layout and spacing */
+#gameShell{
+    display:flex;
+    gap:20px;
+    max-width:900px;
+    width:100%;
+    margin:0 auto;
+    background: linear-gradient(
+        180deg,
+        rgba(11,34,56,0.88),
+        rgba(4,14,28,0.96) 48%,
+        rgba(2,6,23,0.99)
+    );
+    padding:20px;
+    border-radius:16px;
+    border:1px solid rgba(56,189,248,0.26);
+    box-shadow:
+       0 0 30px rgba(0,0,0,0.90),
+       0 0 58px rgba(56,189,248,0.18),
+       0 0 76px rgba(247,217,130,0.09),
+       inset 0 0 42px rgba(0,0,0,0.78);
+}
+   
+/* Wizard Box */
+/* Guide display panel — fixed width, do not remove flex settings */
+#wizardBox{
+    width:160px;
+    min-width:160px;
+    min-height:200px;
+    background: linear-gradient(
+        180deg,
+        rgba(19,57,86,0.66),
+        rgba(11,34,56,0.88) 52%,
+        rgba(2,6,23,0.98)
+    );
+    border-radius:12px;
+    padding:10px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;    
+    gap:6px;
+    border:1px solid rgba(247,217,130,0.26);
+    box-shadow:
+        inset 0 0 26px rgba(0,0,0,0.78),
+        0 0 18px rgba(56,189,248,0.16),
+        0 0 30px rgba(247,217,130,0.08);
+}
+
+/* Wizard Name */
+#wizardName {
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #d7b35a; 
+    margin-top: 4px;
+    margin-bottom: 6px;
+    opacity: 0.96;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    padding-bottom: 2px;
+    text-shadow:
+        0 0 6px rgba(56,189,248,0.45),
+        0 0 10px rgba(215,179,90,0.35);
+}
+
+/* Wizard Image */
+/*Optional guide visual */	
+#wizardImage{
+    width:100%;
+    max-width:180px;
+    filter:
+        drop-shadow(0 0 10px rgba(56,189,248,0.65))
+        drop-shadow(0 0 18px rgba(215,179,90,0.45));
+    animation: wizardFloat 4s ease-in-out infinite;
+}
+
+#wizardImage[hidden]{
+    display:none !important;
+}
+
+#wizardBox[hidden]{
+    display:none !important;
+}
+    
+
+/* =========================================
+   11. BOSS MODE (UI STATE OVERRIDES) — BLANK MASTERY QUEST
+========================================= */
+
+/* Center layout when wizard is removed */
+.boss-mode #wizardBox{
+    display:none;
+}
+
+/* Center and slightly constrain game area for boss mode */	
+.boss-mode #gameBox{
+    max-width:900px;
+    width:90%;
+    margin:0 auto;
+    border-color: rgba(247,217,130,0.74);
+    box-shadow:
+        0 0 34px rgba(56,189,248,0.36),
+        0 0 72px rgba(247,217,130,0.20),
+        0 0 92px rgba(15,42,64,0.78),
+        inset 0 0 46px rgba(0,0,0,0.86);
+}
+
+.boss-mode .bossIcon{
+    width:100%;
+    max-width:240px;
+    transform:scale(1.1);
+    display:block;
+    margin:10px auto;
+}
+
+/* Center layout when wizard is removed */
+.boss-mode #gameShell{
+    justify-content:center;
+    border-color: rgba(56,189,248,0.36);
+    box-shadow:
+       0 0 36px rgba(0,0,0,0.92),
+       0 0 64px rgba(56,189,248,0.24),
+       0 0 90px rgba(247,217,130,0.13),
+       inset 0 0 48px rgba(0,0,0,0.82);
+}
+
+/* =========================================
+   12. MOBILE RESPONSIVE SYSTEM — SAFE TO EDIT (WITH LIMITS)
+=========================================
+
+This section controls how the game behaves on phones.
+
+GOAL:
+- Fit gameplay into a single screen as much as possible
+- Reduce vertical scrolling
+- Keep buttons thumb-friendly
+
+-----------------------------------------
+SAFE TO EDIT:
+- font sizes (clamp values)
+- spacing (gap, padding, margin)
+- grid layout (answers: 1fr 1fr vs 1fr)
+- wizard size (make smaller/larger)
+
+-----------------------------------------
+USE CAUTION:
+- removing elements entirely (may break flow)
+- changing flex direction randomly
+- making buttons too small (hurts usability)
+
+-----------------------------------------
+DO NOT MODIFY:
+- IDs (#gameShell, #gameBox, #wizardBox)
+- core layout structure
+
+-----------------------------------------
+COMMON CUSTOM CHANGES:
+- Want bigger buttons? Increase min-height
+- Want less scrolling? Reduce padding/gaps
+- Want simpler UI? Hide artifact labels
+
+-----------------------------------------
+TIP:
+Mobile design is about SPACE, not style.
+Every pixel matters.
+
+========================================= */
+
+@media (max-width: 768px){
+
+
+  .return-menu-btn{
+    display: block !important;
+    position: fixed;
+    top: calc(env(safe-area-inset-top, 0px) + 8px);
+    left: 8px;
+    z-index: 1000;
+
+    padding: 7px 10px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    border-radius: 999px;
+
+    background: rgba(0,0,0,0.58);
+    color: rgba(255,255,255,0.86);
+    border: 1px solid rgba(56,189,248,0.42);
+    box-shadow:
+      0 0 14px rgba(56,189,248,0.24),
+      0 0 18px rgba(0,0,0,0.55);
+
+    text-transform: uppercase;
+  }
+
+  .return-menu-btn:hover{
+    transform: none;
+  }
+
+  .sound-toggle{
+    position: fixed;
+    top: calc(env(safe-area-inset-top, 0px) + 8px);
+    right: 8px;
+    bottom: auto;
+    z-index: 1000;
+
+    padding: 7px 10px;
+    font-size: 10px;
+    border-radius: 999px;
+  }
+
+  .dungeon-container{
+    gap: 8px;
+    margin-top: 4px;
+    padding-top: 34px;
+    align-items: center;
+  }
+
+  .top-panel{
+    width: 100%;
+    max-width: 650px;
+    gap: 2px;
+    margin: 0 auto 4px auto;
+    align-items: center;
+  }
+
+  .top-title{
+    font-size: clamp(14px, 3.6vw, 18px);
+    margin-bottom: 2px;
+    text-align: center;
+  }
+
+  #mazeTrackContainer{
+    width: 100%;
+    max-width: 100%;
+    padding: 2px 4px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  #mazeTrack{
+    gap: 3px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .maze-box{
+    aspect-ratio: 1 / 1;
+    min-width: 0;
+    width: 100%;
+    height: auto;
+    font-size: 10px;
+    border-radius: 3px;
+  }
+
+  .boss-icon{
+    width: 16px;
+    height: 16px;
+  }
+
+  #artifactVault{
+    width: 100%;
+    max-width: 100%;
+    padding: 4px 6px;
+    box-sizing: border-box;
+  }
+
+  #artifactVault h3{
+    font-size: 13px;
+    margin: 0 0 4px 0;
+    text-align: center;
+  }
+
+  .vaultRow{
+    gap: 8px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .artifactSlot{
+    flex: 1 1 0;
+    min-width: 0;
+    text-align: center;
+  }
+
+  .artifactSlot img{
+    width: 20px;
+    margin-bottom: 2px;
+  }
+
+  .artifactSlot span{
+    font-size: 8px;
+    line-height: 1.05;
+    margin-top: 2px;
+  }
+
+  .main-panel{
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+  }
+
+  #gameShell{
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    padding: 6px;
+    gap: 6px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-color: rgba(56,189,248,0.22);
+    box-shadow:
+       0 0 24px rgba(0,0,0,0.90),
+       0 0 38px rgba(56,189,248,0.14),
+       inset 0 0 30px rgba(0,0,0,0.78);
+  }
+
+  #wizardBox{
+    width: 100%;
+    max-width: 170px;
+    min-width: 0;
+    min-height: auto;
+    padding: 4px;
+    padding-top: 6px;
+    gap: 2px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  #wizardName{
+    font-size: 9px;
+    letter-spacing: 1.2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+  }
+
+  #wizardImage{
+    width: 100%;
+    max-width: 80px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  #gameBox{
+    width: 100%;
+    padding: 8px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  #autosave{
+    position: static;
+    display: block;
+    text-align: right;
+    margin-bottom: 4px;
+    font-size: 10px;
+  }
+
+  .area-title{
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    margin-bottom: 6px;
+    text-align: center;
+  }
+
+  #progressBar{
+    height: 12px;
+    margin-bottom: 8px;
+  }
+
+  #streakDisplay{
+    margin-bottom: 6px;
+    text-align: center;
+  }
+
+  #question{
+    font-size: clamp(15px, 4.2vw, 20px);
+    line-height: 1.3;
+    margin: 6px 0;
+    text-align: center;
+  }
+
+  #message{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .hint-box{
+    font-size: 11px;
+    margin-top: 8px;
+    height: auto;
+    text-align: center;
+  }
+
+  .answers{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    width: 100%;
+    margin-top: 6px;
+  }
+
+  .answers button{
+    width: 100%;
+    min-height: 52px;
+    padding: 10px;
+    font-size: 13px;
+    margin: 0;
+    border-radius: 10px;
+  }
+}
+
+/* =========================================
+   13. MODE SELECT + TIMED TRIAL HUD
+	   Blank Mastery Quest version
+========================================= */
+/* MODE MENU SAFETY FIX (2026-08-17):
+   Keep mode-* selectors intact. The mode screen scrolls at any viewport height,
+   and Unicode mode symbols are rendered as large gold text glyphs. */
+
+.mode-select-screen{
+  position:fixed;
+  inset:0;
+  z-index:110;
+  align-items:flex-start;
+  justify-content:center;
+  padding:30px;
+  overflow-y:auto;
+  overflow-x:hidden;
+  box-sizing:border-box;
+  background:
+    linear-gradient(rgba(2,6,23,0.42), rgba(2,6,23,0.78)),
+    linear-gradient(135deg,#07111f,#17324d 55%,#06101d);
+  background-size:cover;
+  background-position:center;
+}
+
+.mode-select-panel{
+  width:min(1120px, 100%);
+  margin:auto 0;
+  flex:0 0 auto;
+  padding:28px;
+  border-radius:20px;
+  background:rgba(2,8,18,0.84);
+  border:1px solid rgba(247,217,130,0.34);
+  box-shadow:
+    0 0 36px rgba(0,0,0,0.82),
+    0 0 44px rgba(56,189,248,0.18),
+    inset 0 0 36px rgba(0,0,0,0.62);
+  text-align:center;
+}
+
+.mode-title{
+  margin:0;
+  font-size:clamp(38px, 5vw, 68px);
+  letter-spacing:4px;
+  color:#f7d982;
+  text-shadow:
+    0 0 14px rgba(247,217,130,0.68),
+    0 0 28px rgba(56,189,248,0.24),
+    0 3px 8px rgba(0,0,0,0.9);
+}
+
+.mode-subtitle{
+  margin:8px auto 26px;
+  color:#c7ecff;
+  font-size:20px;
+}
+
+.mode-grid{
+  display:grid;
+  /* SCORE ATTACK MODE ADDITION:
+     Auto-fit keeps the mode menu from getting ugly now that Score Attack is a fifth card.
+     If you remove Score Attack later, this still works for four cards. */
+  grid-template-columns:repeat(auto-fit, minmax(190px, 1fr));
+  gap:18px;
+}
+
+.mode-card{
+  min-height:330px;
+  padding:0;
+  overflow:hidden;
+  border-radius:18px;
+  border:1px solid rgba(56,189,248,0.30);
+  background:rgba(3,10,24,0.94);
+  color:#eef6ff;
+  cursor:pointer;
+  display:flex;
+  flex-direction:column;
+  text-align:left;
+  box-shadow:
+    0 0 22px rgba(0,0,0,0.68),
+    inset 0 0 18px rgba(0,0,0,0.58);
+  transition:transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+}
+
+.mode-card:hover{
+  transform:translateY(-6px) scale(1.02);
+  border-color:rgba(247,217,130,0.78);
+  box-shadow:
+    0 0 28px rgba(56,189,248,0.32),
+    0 0 38px rgba(247,217,130,0.20),
+    inset 0 0 18px rgba(0,0,0,0.62);
+}
+
+.mode-card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-bottom:1px solid rgba(247,217,130,0.22);
+  background:linear-gradient(180deg, rgba(11,34,56,0.95), rgba(2,6,23,0.98));
+}
+
+.mode-card-title{
+  display:block;
+  padding:16px 16px 8px;
+  font-size:21px;
+  font-weight:700;
+  letter-spacing:1px;
+  color:#f7d982;
+  text-align:center;
+}
+
+.mode-card-text{
+  display:block;
+  padding:6px 20px 22px;
+  font-size:15px;
+  line-height:1.35;
+  color:rgba(224,242,254,0.88);
+  text-align:left;
+}
+	
+.mode-back-btn{
+  margin-top:18px;
+  min-width:140px;
+}
+
+.sr-only{
+  position:absolute;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:-1px;
+  overflow:hidden;
+  clip:rect(0, 0, 0, 0);
+  white-space:nowrap;
+  border:0;
+}
+
+.timed-mode-hud{
+  margin: 8px auto 12px;
+  padding: 8px 14px;
+  width: fit-content;
+  border-radius: 999px;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(180deg, rgba(11,34,56,0.88), rgba(2,6,23,0.96));
+  border: 1px solid rgba(247,217,130,0.48);
+  box-shadow:
+    0 0 16px rgba(56,189,248,0.24),
+    0 0 26px rgba(247,217,130,0.14),
+    inset 0 0 12px rgba(0,0,0,0.72);
+}
+
+.timer-label{
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #c7ecff;
+}
+
+.timer-display{
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #f7d982;
+  text-shadow:
+    0 0 10px rgba(247,217,130,0.62),
+    0 0 18px rgba(56,189,248,0.24);
+}
+
+.timer-warning{
+  animation: timerWarningPulse .75s ease-in-out infinite alternate;
+}
+
+@keyframes timerWarningPulse{
+  from{ 
+	  transform: scale(1); }
+  to{
+    transform: scale(1.08);
+    text-shadow:
+      0 0 14px rgba(248,113,113,0.90),
+      0 0 24px rgba(247,217,130,0.42);
+  }
+}
+
+@media(max-width:900px){
+  .mode-grid{ grid-template-columns:1fr 1fr; }
+}
+
+@media(max-width:560px){
+  .mode-select-screen{
+    padding:14px;
+    align-items:flex-start;
+    overflow-y:auto;
+  }
+  .mode-grid{ grid-template-columns:1fr; }
+  .mode-card{ min-height:250px; }
+  .mode-card img{ height:145px; }
+}
+
+
+/* =========================================
+   SCORE ATTACK MODE ADDITION — SCORE HUD + FLOATING POINTS
+   Inspect here if you want to change:
+   - score display styling
+   - floating +100 / -75 animations
+   - colors, placement, and animation speed
+
+   Logic lives in JavaScript under:
+   "SCORE ATTACK MODE ADDITION — CONFIG + STATE"
+========================================= */
+
+.score-attack-hud{
+  margin: 8px auto 10px;
+  padding: 8px 14px;
+  width: fit-content;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(11,34,56,0.88), rgba(2,6,23,0.96));
+  border: 1px solid rgba(247,217,130,0.50);
+  box-shadow:
+    0 0 16px rgba(56,189,248,0.24),
+    0 0 26px rgba(247,217,130,0.18),
+    inset 0 0 12px rgba(0,0,0,0.74);
+}
+
+.score-attack-label,
+.score-attack-best-label{
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #c7ecff;
+}
+
+.score-attack-value{
+  min-width: 72px;
+  text-align: right;
+  font-size: 24px;
+  font-weight: 900;
+  color: #f7d982;
+  text-shadow:
+    0 0 12px rgba(247,217,130,0.70),
+    0 0 18px rgba(56,189,248,0.24);
+}
+
+.score-attack-best{
+  min-width: 56px;
+  text-align: right;
+  font-size: 18px;
+  font-weight: 800;
+  color: #e0f2fe;
+  text-shadow:
+    0 0 10px rgba(56,189,248,0.46);
+}
+
+#scoreFloatLayer{
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 50;
+}
+
+.score-float{
+  position: absolute;
+  left: 50%;
+  top: var(--score-float-top, 42%);
+  transform: translateX(-50%);
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  animation: scoreFloatUp 1.2s ease-out forwards;
+  text-shadow:
+    0 0 10px rgba(0,0,0,0.96),
+    0 0 18px rgba(56,189,248,0.42);
+}
+
+.score-float.positive{ color: #f7d982; }
+.score-float.negative{ color: #f87171; }
+.score-float.neutral{ color: #c7ecff; }
+
+@keyframes scoreFloatUp{
+  0%{ opacity: 0; transform: translate(-50%, 12px) scale(.85); }
+  15%{ opacity: 1; transform: translate(-50%, 0) scale(1.08); }
+  100%{ opacity: 0; transform: translate(-50%, -58px) scale(1); }
+}
+
+@media(max-width:768px){
+  .score-attack-hud{ margin: 6px auto; padding: 6px 10px; gap: 7px; }
+  .score-attack-label,
+  .score-attack-best-label{ font-size: 9px; letter-spacing: 1.4px; }
+  .score-attack-value{ min-width: 56px; font-size: 19px; }
+  .score-attack-best{ min-width: 44px; font-size: 15px; }
+  .score-float{ font-size: 20px; }
+}
+
+
+
+/* =========================================
+   QUIZ MODE — FIXED-LENGTH CLASSROOM SETUP
+========================================= */
+.quiz-setup-modal{
+  position:fixed;
+  inset:0;
+  z-index:5200;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:22px;
+  background:rgba(2,6,23,.82);
+  backdrop-filter:blur(7px);
+}
+.quiz-setup-card{
+  width:min(520px,100%);
+  padding:26px;
+  border-radius:18px;
+  background:radial-gradient(circle at top,rgba(56,189,248,.15),rgba(11,34,56,.92) 48%,rgba(2,6,23,.99));
+  border:1px solid rgba(247,217,130,.42);
+  box-shadow:0 0 36px rgba(0,0,0,.84),0 0 34px rgba(56,189,248,.20),inset 0 0 28px rgba(0,0,0,.64);
+  text-align:center;
+}
+.quiz-setup-title{
+  margin:0 0 8px;
+  color:#f7d982;
+  font-size:30px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+.quiz-setup-text{
+  margin:0 auto 18px;
+  max-width:430px;
+  color:#c7ecff;
+  line-height:1.45;
+}
+.quiz-count-label{
+  display:block;
+  margin-bottom:8px;
+  color:#eef6ff;
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+.quiz-count-select{
+  width:min(240px,100%);
+  padding:12px 14px;
+  border-radius:10px;
+  border:1px solid rgba(56,189,248,.42);
+  background:#061426;
+  color:#eef6ff;
+  font-size:18px;
+  text-align:center;
+}
+.quiz-quick-counts{
+  display:flex;
+  gap:8px;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin:14px 0 18px;
+}
+.quiz-quick-counts button{
+  min-width:74px;
+  padding:9px 14px;
+}
+.quiz-quick-counts button.selected{
+  color:#111827;
+  background:linear-gradient(180deg,#f7d982,#b98224);
+  border-color:#f7d982;
+  box-shadow:0 0 18px rgba(247,217,130,.35);
+}
+.quiz-setup-actions{
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+@media(max-width:560px){
+  .quiz-setup-card{padding:20px 16px;}
+  .quiz-setup-actions button{width:100%;}
+}
+
+/* =========================================
+   FADING FORTUNE MODE — HUD + ANSWER DECAY
+========================================= */
+.fading-fortune-hud{
+  margin:8px auto 10px;
+  padding:8px 14px;
+  width:fit-content;
+  max-width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  border-radius:999px;
+  background:linear-gradient(180deg, rgba(11,34,56,0.88), rgba(2,6,23,0.96));
+  border:1px solid rgba(247,217,130,0.50);
+  box-shadow:0 0 16px rgba(56,189,248,0.24), 0 0 26px rgba(247,217,130,0.18), inset 0 0 12px rgba(0,0,0,0.74);
+}
+.fading-fortune-label{
+  font-size:11px;
+  letter-spacing:1.7px;
+  text-transform:uppercase;
+  color:#c7ecff;
+}
+.fading-fortune-value{
+  min-width:52px;
+  text-align:right;
+  font-size:23px;
+  font-weight:900;
+  color:#f7d982;
+  text-shadow:0 0 12px rgba(247,217,130,0.70), 0 0 18px rgba(56,189,248,0.24);
+}
+.answers button.fading-fortune-fading{
+  pointer-events:none;
+  overflow:hidden;
+  animation:fadingFortuneOptionOut .48s ease forwards;
+}
+.answers button.fading-fortune-gone{
+  display:none !important;
+}
+@keyframes fadingFortuneOptionOut{
+  0%{ opacity:1; transform:scale(1); max-height:140px; padding-top:15px; padding-bottom:15px; margin:0; }
+  70%{ opacity:0; transform:scale(.96); max-height:140px; padding-top:15px; padding-bottom:15px; }
+  100%{ opacity:0; transform:scale(.94); max-height:0; min-height:0; padding-top:0; padding-bottom:0; border-width:0; margin:0; }
+}
+@media(max-width:768px){
+  .fading-fortune-hud{ margin:6px auto; padding:6px 10px; gap:7px; }
+  .fading-fortune-label{ font-size:9px; letter-spacing:1.2px; }
+  .fading-fortune-value{ min-width:42px; font-size:18px; }
+}
+
+/* =========================================
+   RISK & REWARD MODE — BANKROLL + WAGER PANEL
+========================================= */
+.risk-reward-hud{
+  margin:8px auto 10px;
+  padding:8px 14px;
+  width:fit-content;
+  max-width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  border-radius:999px;
+  background:linear-gradient(180deg, rgba(11,34,56,0.88), rgba(2,6,23,0.96));
+  border:1px solid rgba(247,217,130,0.50);
+  box-shadow:0 0 16px rgba(56,189,248,0.24), 0 0 26px rgba(247,217,130,0.18), inset 0 0 12px rgba(0,0,0,0.74);
+}
+.risk-reward-label{font-size:11px;letter-spacing:1.7px;text-transform:uppercase;color:#c7ecff;}
+.risk-reward-value{min-width:64px;text-align:right;font-size:23px;font-weight:900;color:#f7d982;text-shadow:0 0 12px rgba(247,217,130,0.70),0 0 18px rgba(56,189,248,0.24);}
+.risk-wager-panel{padding:18px;margin:10px auto;max-width:620px;border-radius:16px;border:1px solid rgba(247,217,130,.38);background:radial-gradient(circle at top,rgba(56,189,248,.12),rgba(2,6,23,.94));box-shadow:0 0 24px rgba(0,0,0,.62),inset 0 0 20px rgba(0,0,0,.48);}
+.risk-wager-kicker{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c7ecff;margin-bottom:6px;}
+.risk-wager-bankroll{font-size:38px;font-weight:900;color:#f7d982;margin:4px 0 8px;text-shadow:0 0 16px rgba(247,217,130,.42);}
+.risk-wager-copy{color:#e0f2fe;line-height:1.45;margin:0;}
+.risk-wager-buttons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:14px;}
+.risk-wager-buttons button{margin:0;min-height:64px;font-weight:800;}
+.risk-wager-buttons button strong{display:block;color:#f7d982;font-size:19px;margin-top:4px;}
+.risk-wager-buttons .all-in{border-color:rgba(248,113,113,.62);box-shadow:0 0 18px rgba(248,113,113,.16),inset 0 0 12px rgba(0,0,0,.72);}
+@media(max-width:768px){.risk-reward-hud{margin:6px auto;padding:6px 10px;gap:7px}.risk-reward-label{font-size:9px;letter-spacing:1.2px}.risk-reward-value{min-width:48px;font-size:18px}.risk-wager-buttons{grid-template-columns:1fr 1fr}.risk-wager-bankroll{font-size:30px}}
+
+/* =========================================
+   14. SOUND ON/OFF — BLANK MASTERY QUEST
+========================================= */
+
+.sound-toggle{
+  position:fixed;
+  right:28px;
+  bottom:24px;
+  z-index:999;
+  padding:10px 13px;
+  border-radius:999px;
+  border:1px solid rgba(56,189,248,0.30);
+  background: linear-gradient(
+      180deg,
+      rgba(11,34,56,0.72),
+      rgba(2,6,23,0.82)
+  );
+  color:rgba(224,242,254,0.78);
+  cursor:pointer;
+  font-size:11px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  box-shadow:
+      0 0 18px rgba(0,0,0,.48),
+      0 0 18px rgba(56,189,248,0.14),
+      inset 0 0 10px rgba(0,0,0,0.72);
+  backdrop-filter: blur(3px);
+  transition:
+      color .18s ease,
+      border-color .18s ease,
+      background .18s ease,
+      box-shadow .18s ease,
+      transform .18s ease;
+}
+
+.sound-toggle:hover{
+  color:#f7d982;
+  border-color:rgba(247,217,130,0.56);
+  background: linear-gradient(
+      180deg,
+      rgba(19,57,86,0.84),
+      rgba(4,14,28,0.90)
+  );
+  box-shadow:
+      0 0 22px rgba(0,0,0,.52),
+      0 0 20px rgba(56,189,248,0.22),
+      0 0 26px rgba(247,217,130,0.14),
+      inset 0 0 10px rgba(0,0,0,0.74);
+  transform: translateY(-1px);
+}
+
+/* =========================================
+   TOUCH DEVICE FIX — ANSWER BUTTONS ONLY
+========================================= */
+
+button {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+
+@media (hover: none), (pointer: coarse) {
+
+    /* Touch browsers can leave :hover latched after a tap. Keep that
+       latched state identical to the normal answer-button palette. */
+    .answers button:hover {
+        background: linear-gradient(180deg,
+            rgba(11,34,56,0.96),
+            rgba(2,8,18,0.98));
+
+        border-color: rgba(56,189,248,0.30);
+
+        box-shadow:
+            0 0 10px rgba(56,189,248,0.18),
+            0 0 18px rgba(247,217,130,0.10),
+            inset 0 0 14px rgba(0,0,0,0.78);
+
+        transform: none;
+    }
+
+    /* Active tap feedback stays in the established blue/gold theme. */
+    .answers button:active {
+        background: linear-gradient(180deg,
+            rgba(19,57,86,0.98),
+            rgba(8,24,42,0.98));
+
+        border-color: rgba(247,217,130,0.66);
+
+        box-shadow:
+            0 0 18px rgba(56,189,248,0.34),
+            0 0 34px rgba(247,217,130,0.22),
+            inset 0 0 14px rgba(0,0,0,0.74);
+
+        transform: scale(0.98);
+    }
+
+    .answers button:focus,
+    .answers button:focus-visible {
+        outline: none;
+    }
+}
+
+/* =========================================
+   FIXED GAME CONTROLS — ONLY DURING ACTIVE RUN
+========================================= */
+
+body:not(.game-active) #returnMenuBtn,
+body:not(.game-active) #soundToggle {
+    display: none !important;
+}
+
+body.game-active #returnMenuBtn,
+body.game-active #soundToggle {
+    display: block !important;
+}
+
+/* Battle Menu: fixed upper right. Small. Not a parade float. */
+#returnMenuBtn.return-menu-btn {
+    position: fixed !important;
+    top: calc(env(safe-area-inset-top, 0px) + 10px) !important;
+    right: 10px !important;
+    left: auto !important;
+    bottom: auto !important;
+
+    width: auto !important;
+    max-width: none !important;
+    height: auto !important;
+
+    z-index: 3000 !important;
+
+    padding: 7px 11px !important;
+    font-size: 10px !important;
+    letter-spacing: 1px !important;
+    line-height: 1 !important;
+    border-radius: 999px !important;
+
+    background: rgba(0,0,0,0.62) !important;
+    color: rgba(255,255,255,0.88) !important;
+    border: 1px solid rgba(56,189,248,0.48) !important;
+
+    box-shadow:
+        0 0 14px rgba(56,189,248,0.24),
+        0 0 18px rgba(0,0,0,0.55) !important;
+
+    transform: none !important;
+}
+
+/* Sound: fixed upper left so it does not fight the Battle Menu. */
+#soundToggle.sound-toggle {
+    position: fixed !important;
+    top: calc(env(safe-area-inset-top, 0px) + 10px) !important;
+    left: 10px !important;
+    right: auto !important;
+    bottom: auto !important;
+
+    width: auto !important;
+    max-width: none !important;
+    height: auto !important;
+
+    z-index: 3000 !important;
+
+    padding: 7px 10px !important;
+    font-size: 10px !important;
+    letter-spacing: 1px !important;
+    line-height: 1 !important;
+    border-radius: 999px !important;
+
+    background: rgba(0,0,0,0.62) !important;
+    color: rgba(255,255,255,0.78) !important;
+    border: 1px solid rgba(255,255,255,0.22) !important;
+
+    box-shadow:
+        0 0 14px rgba(0,0,0,0.55) !important;
+
+    transform: none !important;
+}
+
+#returnMenuBtn:hover,
+#soundToggle:hover {
+    transform: none !important;
+}
+		
+
+/* =========================================
+   UNLIMITED / EXAM PRACTICE EXIT CONTROL
+========================================= */
+.practice-mode-controls{display:none;justify-content:center;margin:8px auto 12px;}
+.end-practice-btn{padding:9px 16px;margin:0;border-radius:999px;font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:#f7d982;background:linear-gradient(180deg,rgba(29,77,115,.94),rgba(4,16,31,.98));border:1px solid rgba(247,217,130,.54);box-shadow:0 0 14px rgba(56,189,248,.18),inset 0 0 10px rgba(0,0,0,.72);}
+.end-practice-btn:hover{border-color:rgba(247,217,130,.82);box-shadow:0 0 18px rgba(56,189,248,.30),0 0 24px rgba(247,217,130,.16),inset 0 0 10px rgba(0,0,0,.70);}
+@media(max-width:768px){.practice-mode-controls{margin:6px auto 8px}.end-practice-btn{padding:8px 13px;font-size:10px}}
+
+/* =========================================
+   15. POST-BATTLE MASTERY REPORT
+   Student-facing diagnostic after a completed run.
+========================================= */
+.mastery-report-screen{
+    text-align:left;
+    padding:24px;
+    color:#eef6ff;
+}
+
+.mastery-report-title{
+    text-align:center;
+    color:#f7d982;
+    font-size:32px;
+    letter-spacing:2px;
+    margin:0 0 8px 0;
+    text-shadow:
+        0 0 16px rgba(247,217,130,0.70),
+        0 0 30px rgba(56,189,248,0.28),
+        0 3px 8px rgba(0,0,0,0.92);
+}
+
+.mastery-report-subtitle{
+    text-align:center;
+    color:#c7ecff;
+    font-style:italic;
+    margin:0 auto 18px auto;
+    max-width:680px;
+    line-height:1.45;
+}
+
+.mastery-summary-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(145px, 1fr));
+    gap:10px;
+    margin:18px 0;
+}
+
+.mastery-stat-card,
+.mastery-section{
+    background:
+        radial-gradient(circle at top,
+            rgba(56,189,248,0.14),
+            rgba(11,34,56,0.82) 45%,
+            rgba(2,6,23,0.96));
+    border:1px solid rgba(247,217,130,0.28);
+    border-radius:12px;
+    box-shadow:
+        0 0 18px rgba(0,0,0,0.62),
+        inset 0 0 20px rgba(0,0,0,0.52);
+}
+
+.mastery-stat-card{
+    padding:12px;
+    text-align:center;
+}
+
+.mastery-stat-label{
+    display:block;
+    color:#c7ecff;
+    font-size:11px;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    margin-bottom:6px;
+}
+
+.mastery-stat-value{
+    display:block;
+    color:#f7d982;
+    font-size:24px;
+    font-weight:900;
+    text-shadow:0 0 10px rgba(247,217,130,0.40);
+}
+
+.mastery-evidence-value{font-size:18px;line-height:1.15;}
+.mastery-evidence-badge{display:inline-flex;align-items:center;justify-content:center;padding:5px 9px;border-radius:999px;border:1px solid rgba(199,236,255,.30);background:rgba(2,6,23,.62);color:#c7ecff;font-size:10px;font-weight:900;letter-spacing:.7px;text-transform:uppercase;white-space:nowrap;}
+.mastery-evidence-badge[data-evidence="limited"]{border-color:rgba(248,113,113,.52);color:#fecaca;}
+.mastery-evidence-badge[data-evidence="developing"]{border-color:rgba(251,191,36,.52);color:#fde68a;}
+.mastery-evidence-badge[data-evidence="strong"]{border-color:rgba(56,189,248,.58);color:#bae6fd;}
+.mastery-evidence-badge[data-evidence="mastery"]{border-color:rgba(247,217,130,.78);color:#fff1b8;box-shadow:0 0 12px rgba(247,217,130,.16);}
+.mastery-row-evidence{display:flex;align-items:center;justify-content:flex-end;gap:7px;flex-wrap:wrap;margin-top:5px;}
+.mastery-evidence-note{color:rgba(224,242,254,.82);line-height:1.5;margin:8px 0 0;}
+.mastery-evidence-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin-top:12px;}
+.mastery-evidence-cell{padding:10px;border-radius:10px;border:1px solid rgba(56,189,248,.18);background:rgba(2,6,23,.48);text-align:center;}
+.mastery-evidence-cell span{display:block;}
+.mastery-evidence-cell .evidence-count{color:#f7d982;font-weight:900;font-size:20px;margin-top:3px;}
+.mastery-evidence-cell .evidence-label{color:#c7ecff;font-size:10px;letter-spacing:1px;text-transform:uppercase;}
+
+.mastery-section{
+    padding:16px;
+    margin:14px 0;
+}
+
+.mastery-section h3{
+    margin:0 0 12px 0;
+    color:#f7d982;
+    letter-spacing:1px;
+    text-shadow:0 0 10px rgba(247,217,130,0.34);
+}
+
+.mastery-verdict{
+    border-left:3px solid #f7d982;
+    padding:14px 16px;
+    margin:14px 0;
+    background:rgba(2,6,23,0.54);
+    border-radius:10px;
+    color:#e0f2fe;
+    line-height:1.5;
+}
+
+.mastery-row{
+    padding:10px 0;
+    border-top:1px solid rgba(224,242,254,0.12);
+}
+
+.mastery-row:first-child{
+    border-top:none;
+}
+
+.mastery-row-main{
+    display:flex;
+    justify-content:space-between;
+    gap:14px;
+    align-items:flex-start;
+}
+
+.mastery-row-name{
+    color:#eef6ff;
+    font-weight:700;
+    line-height:1.25;
+}
+
+.mastery-row-score{
+    color:#f7d982;
+    white-space:nowrap;
+    font-weight:800;
+}
+
+.mastery-row-meta{
+    display:block;
+    margin-top:5px;
+    color:rgba(199,236,255,0.72);
+    font-size:12px;
+    line-height:1.35;
+}
+
+.mastery-bar{
+    height:8px;
+    margin-top:8px;
+    border-radius:999px;
+    background:rgba(2,6,23,0.82);
+    overflow:hidden;
+    border:1px solid rgba(56,189,248,0.18);
+}
+
+.mastery-bar-fill{
+    height:100%;
+    width:0%;
+    border-radius:999px;
+    background:linear-gradient(90deg, #b91c1c, #38bdf8, #f7d982);
+    box-shadow:0 0 10px rgba(56,189,248,0.38);
+}
+
+.mastery-empty{
+    color:rgba(224,242,254,0.74);
+    font-style:italic;
+    margin:0;
+}
+
+.mastery-actions{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.mastery-actions button{
+    min-width:150px;
+}
+
+.concept-review-section{border-color:rgba(45,212,191,.48);}
+.concept-review-intro{margin:0 0 12px;color:rgba(224,242,254,.82);line-height:1.5;}
+.concept-review-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px;}
+.concept-review-link{display:flex;flex-direction:column;gap:6px;min-height:112px;padding:14px;border:1px solid rgba(45,212,191,.42);border-radius:11px;background:rgba(2,6,23,.64);color:#eef6ff;text-decoration:none;box-shadow:inset 0 0 16px rgba(0,0,0,.36);}
+.concept-review-link:hover{border-color:#5eead4;background:rgba(13,54,66,.72);transform:translateY(-1px);}
+.concept-review-link:focus-visible,.concept-review-more summary:focus-visible{outline:3px solid #f7d982;outline-offset:3px;}
+.concept-review-link-title{font-weight:900;line-height:1.3;color:#f7d982;}
+.concept-review-reason{font-size:12px;line-height:1.45;color:rgba(224,242,254,.78);flex:1;}
+.concept-review-open{font-size:11px;font-weight:900;letter-spacing:.7px;text-transform:uppercase;color:#5eead4;}
+.concept-review-more{margin-top:12px;border-top:1px solid rgba(224,242,254,.12);padding-top:10px;}
+.concept-review-more summary{cursor:pointer;color:#c7ecff;font-weight:800;padding:4px 0;}
+.concept-review-compact-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;}
+.concept-review-link.compact{display:inline-flex;min-height:0;flex-direction:row;align-items:center;justify-content:space-between;gap:12px;flex:1 1 220px;padding:10px 12px;}
+.concept-review-link.compact .concept-review-open{white-space:nowrap;}
+
+@media(max-width:768px){
+    .mastery-report-screen{ padding:14px; }
+    .mastery-report-title{ font-size:24px; }
+    .mastery-row-main{ flex-direction:column; gap:4px; }
+    .mastery-row-score{ white-space:normal; }
+    .concept-review-grid{grid-template-columns:1fr;}
+    .concept-review-link.compact{flex-basis:100%;}
+}
+
+
+/* =====================================================
+FACULTY TEMPLATE OVERRIDES — ASSET-FREE, GENERIC, AND LOCAL
+===================================================== */
+body{
+    background:linear-gradient(135deg,#020617 0%,#0b2238 52%,#17324d 100%) !important;
+}
+
+#startScreen{
+    background:linear-gradient(135deg,#07111f,#17324d 55%,#06101d) !important;
+}
+
+.mode-select-screen{
+    background:linear-gradient(135deg,#07111f,#17324d 55%,#06101d) !important;
+}
+
+.mode-symbol{
+    width:100%;
+    min-height:160px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:"Segoe UI Symbol","Noto Sans Symbols 2","Arial Unicode MS",sans-serif;
+    font-size:72px;
+    line-height:1;
+    font-weight:400;
+    color:#f7d982;
+    background:
+        radial-gradient(circle at center,rgba(56,189,248,.24),transparent 58%),
+        linear-gradient(145deg,#102a43,#06101d);
+    border-bottom:1px solid rgba(247,217,130,.22);
+    box-sizing:border-box;
+}
+
+.guide-symbol{
+    width:92px;
+    height:92px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    font-size:54px;
+    color:#f7d982;
+    background:radial-gradient(circle,#1d4d73,#06101d 70%);
+    border:1px solid rgba(247,217,130,.45);
+    box-shadow:0 0 22px rgba(56,189,248,.28);
+}
+
+.generic-boss-symbol{
+    width:110px;
+    height:110px;
+    margin:0 auto 12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    font-size:58px;
+    background:radial-gradient(circle,#1d4d73,#06101d 72%);
+    border:2px solid currentColor;
+    box-shadow:0 0 28px rgba(56,189,248,.35);
+}
+
+#soundToggle{
+    display:none !important;
+}
+
+#gameShell{
+    max-width:980px !important;
+}
+
+#gameBox{
+    flex:1 1 0;
+    min-width:0;
+    width:auto !important;
+    max-width:none !important;
+}
+
+.mode-card{
+    display:grid;
+    grid-template-rows:160px auto 1fr;
+}
+
+.mode-card-media{
+    position:relative;
+    display:block;
+    box-sizing:border-box;
+    width:100%;
+    height:100%;
+    min-height:0;
+    overflow:hidden;
+    border-bottom:1px solid rgba(247,217,130,.22);
+    background:linear-gradient(180deg,rgba(11,34,56,.95),rgba(2,6,23,.98));
+}
+
+.mode-card-media > img{
+    display:block;
+    width:100%;
+    height:100%;
+    min-height:0;
+    object-fit:cover;
+    object-position:center;
+    border:0;
+}
+
+.mode-card-media > .mode-symbol{
+    height:100%;
+    min-height:0;
+    border:0;
+}
+
+/* FACULTY MODE AVAILABILITY FIX
+   The composer can enable only a subset of modes.
+   This rule must outrank every display rule above/below it. */
+.mode-card[hidden],
+.mode-card.faculty-mode-disabled{
+    display:none !important;
+}
+
+.mode-grid[data-enabled-count="1"]{
+    grid-template-columns:minmax(0, 360px);
+    justify-content:center;
+}
+
+.mode-grid[data-enabled-count="2"]{
+    grid-template-columns:repeat(2, minmax(0, 360px));
+    justify-content:center;
+}
+
+@media(max-width:560px){
+    .mode-card{
+        grid-template-rows:135px auto 1fr;
+        min-height:250px !important;
+    }
+
+    .mode-symbol{
+        min-height:135px;
+        font-size:56px;
+    }
+}
+
+@media(max-width:768px){
+    #gameBox{
+        width:100% !important;
+    }
+}
+
+
+body #soundToggle,
+body.game-active #soundToggle{
+    display:none !important;
+}
+
+/* =========================================
+   FACULTY TEMPLATE ENGINE-STANDARD CONTAINMENT
+   Functional only: preserves the generic visual design.
+========================================= */
+#gameModalText{
+    white-space: pre-line;
+}
+
+@media(max-width:420px){
+    .start-content{
+        width:calc(100% - 24px);
+        padding:20px 12px;
+        box-sizing:border-box;
+    }
+
+    .title{
+        font-size:clamp(34px,12vw,48px);
+        letter-spacing:2px;
+        overflow-wrap:anywhere;
+    }
+
+    #mazeTrack{
+        grid-template-columns:repeat(10,minmax(0,1fr));
+        max-width:100%;
+    }
+
+    .maze-box,
+    #questionImageBox img,
+    #graphLightbox img{
+        box-sizing:border-box;
+    }
+
+    .mastery-report-screen{
+        max-width:100%;
+        box-sizing:border-box;
+        overflow-wrap:anywhere;
+    }
+
+    .mode-card{
+        min-width:0;
+    }
+
+    #graphLightbox{
+        max-width:100vw;
+        box-sizing:border-box;
+        overflow:auto;
+        backdrop-filter:none;
+        justify-content:flex-start;
+        align-items:flex-start;
+        padding:64px 12px 24px;
+    }
+
+    #graphLightbox img{
+        width:760px;
+        min-width:760px;
+        max-width:none;
+        max-height:none;
+        height:auto;
+        flex-shrink:0;
+    }
+    #graphLightbox::after{
+        content:"Swipe to explore the enlarged graph";
+        position:fixed;
+        left:12px;
+        bottom:8px;
+        padding:5px 9px;
+        border-radius:6px;
+        color:white;
+        background:rgba(2,6,23,.94);
+        font-size:12px;
+        pointer-events:none;
+    }
+}
+
+
+
+
+
+
+/* =========================================
+   DAILY CHALLENGES V1 — COMPACT STATUS UI
+========================================= */
+.daily-task-dock{
+    position:fixed;
+    top:14px;
+    left:50%;
+    z-index:145;
+    width:min(360px, calc(100vw - 28px));
+    transform:translateX(-50%);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    pointer-events:none;
+}
+
+.daily-task-pill{
+    pointer-events:auto;
+    min-height:38px;
+    padding:8px 16px;
+    border:1px solid rgba(247,217,130,.66);
+    border-radius:999px;
+    color:#f7d982;
+    background:linear-gradient(180deg,rgba(20,56,83,.98),rgba(3,12,25,.98));
+    box-shadow:0 0 18px rgba(56,189,248,.25),0 0 24px rgba(247,217,130,.12),inset 0 0 12px rgba(0,0,0,.62);
+    font:700 12px/1.2 inherit;
+    letter-spacing:1.4px;
+    text-transform:uppercase;
+    cursor:pointer;
+    transition:transform .16s ease,border-color .16s ease,box-shadow .16s ease;
+}
+
+.daily-task-pill:hover,
+.daily-task-pill:focus-visible{
+    transform:translateY(1px) scale(1.02);
+    border-color:#f7d982;
+    box-shadow:0 0 22px rgba(56,189,248,.38),0 0 30px rgba(247,217,130,.2),inset 0 0 12px rgba(0,0,0,.62);
+    outline:none;
+}
+
+.daily-task-pill.is-complete{
+    color:#d1fae5;
+    border-color:rgba(52,211,153,.72);
+    box-shadow:0 0 18px rgba(52,211,153,.24),inset 0 0 12px rgba(0,0,0,.62);
+}
+
+.daily-details-panel{
+    pointer-events:auto;
+    width:100%;
+    margin-top:8px;
+    padding:16px;
+    box-sizing:border-box;
+    border:1px solid rgba(247,217,130,.42);
+    border-radius:14px;
+    color:#e0f2fe;
+    background:linear-gradient(155deg,rgba(5,17,34,.98),rgba(2,7,18,.98));
+    box-shadow:0 14px 38px rgba(0,0,0,.72),0 0 22px rgba(56,189,248,.18),inset 0 0 18px rgba(56,189,248,.05);
+    text-align:left;
+}
+
+.daily-details-panel[hidden]{display:none;}
+body:not(.mode-selection-active) .daily-task-dock:not(.daily-panel-open){display:none;}
+body.game-active .daily-task-pill{display:none;}
+.daily-details-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;}
+.daily-details-close{flex:0 0 auto;width:30px;height:30px;padding:0;border:1px solid rgba(56,189,248,.32);border-radius:999px;color:#e0f2fe;background:rgba(4,16,31,.84);font:700 18px/1 inherit;cursor:pointer;}
+.daily-details-close:hover,.daily-details-close:focus-visible{color:#f7d982;border-color:rgba(247,217,130,.62);outline:none;}
+.daily-details-kicker{color:#f7d982;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;}
+.daily-details-title{margin:7px 0 5px;color:#f8fbff;font-size:18px;line-height:1.3;}
+.daily-details-meta{margin:0;color:rgba(224,242,254,.76);font-size:12px;line-height:1.45;}
+.daily-progress-track{height:7px;margin:12px 0 10px;overflow:hidden;border-radius:999px;background:rgba(56,189,248,.12);border:1px solid rgba(56,189,248,.2);}
+.daily-progress-fill{height:100%;width:0;border-radius:999px;background:linear-gradient(90deg,#38bdf8,#f7d982);box-shadow:0 0 12px rgba(247,217,130,.5);transition:width .25s ease;}
+.daily-details-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px;}
+.daily-stat{padding:9px;border-radius:9px;background:rgba(56,189,248,.07);border:1px solid rgba(56,189,248,.13);}
+.daily-stat-label{display:block;color:rgba(199,236,255,.68);font-size:10px;letter-spacing:1px;text-transform:uppercase;}
+.daily-stat-value{display:block;margin-top:3px;color:#f7d982;font-size:15px;font-weight:700;}
+
+.daily-toast-region{
+    position:fixed;
+    top:68px;
+    left:50%;
+    z-index:160;
+    width:min(420px, calc(100vw - 28px));
+    transform:translateX(-50%);
+    pointer-events:none;
+}
+
+.daily-toast{
+    pointer-events:auto;
+    padding:18px 20px;
+    border:1px solid rgba(247,217,130,.62);
+    border-radius:16px;
+    color:#eaf7ff;
+    background:linear-gradient(145deg,rgba(9,31,51,.98),rgba(2,8,20,.98));
+    box-shadow:0 16px 44px rgba(0,0,0,.78),0 0 30px rgba(56,189,248,.28),0 0 20px rgba(247,217,130,.14);
+    cursor:pointer;
+    animation:dailyToastIn .32s ease-out both;
+}
+.daily-toast.is-leaving{animation:dailyToastOut .24s ease-in both;}
+.daily-toast.is-complete{border-color:rgba(52,211,153,.72);box-shadow:0 16px 44px rgba(0,0,0,.78),0 0 30px rgba(52,211,153,.23),0 0 20px rgba(247,217,130,.12);}
+.daily-toast-kicker{color:#f7d982;font-size:11px;font-weight:700;letter-spacing:2.3px;text-transform:uppercase;}
+.daily-toast-title{margin:7px 0 5px;color:#fff;font-size:20px;font-weight:700;line-height:1.25;}
+.daily-toast-progress{color:#c7ecff;font-size:16px;font-weight:700;}
+.daily-toast-copy{margin-top:7px;color:rgba(224,242,254,.72);font-size:12px;line-height:1.4;}
+
+@keyframes dailyToastIn{from{opacity:0;transform:translateY(-12px) scale(.98)}to{opacity:1;transform:none}}
+@keyframes dailyToastOut{to{opacity:0;transform:translateY(-8px) scale(.98)}}
+
+@media(max-width:560px){
+    .daily-task-dock{top:8px;width:calc(100vw - 20px);}
+    .daily-task-pill{min-height:34px;padding:7px 13px;font-size:11px;}
+    .daily-details-panel{padding:13px;}
+    .daily-toast-region{top:52px;width:calc(100vw - 20px);}
+    .daily-toast{padding:15px 16px;}
+    .daily-toast-title{font-size:18px;}
+}
+
+@media(prefers-reduced-motion:reduce){
+    .daily-toast,.daily-toast.is-leaving{animation:none;}
+    .daily-progress-fill,.daily-task-pill{transition:none;}
+}
+
+
+.practice-mode-controls{flex-wrap:wrap;gap:8px;align-items:center}
+.targeted-repair-indicator{display:none;max-width:520px;padding:8px 12px;border:1px solid rgba(247,217,130,.55);border-radius:8px;background:rgba(4,16,31,.94);color:#f7d982;font-size:12px;font-weight:800;line-height:1.35;text-align:center}
+.targeted-repair-indicator span{display:block;color:rgba(255,255,255,.8);font-size:11px;font-weight:500}
+.repair-weak-areas-btn{order:-1;border-color:rgba(74,222,128,.75)!important;box-shadow:0 0 18px rgba(74,222,128,.22)!important}
+.target-unlimited-symbol{font-size:38px;line-height:1;color:#f7d982;margin:8px auto 14px}
+@media(max-width:520px){.practice-mode-controls{flex-direction:column}.targeted-repair-indicator{box-sizing:border-box;width:100%;max-width:100%}.end-practice-btn{max-width:100%}.repair-weak-areas-btn{width:100%;white-space:normal}}
+
+
+
+
+body.blank-builder-template{--mq-gameplay-scene-overlay:linear-gradient(rgba(2,6,23,.30),rgba(2,6,23,.48))}
+body.blank-builder-template.mq-themed{background-image:var(--mq-gameplay-scene-overlay),var(--mq-gameplay-image)!important;background-size:cover!important;background-position:center!important;background-attachment:fixed!important;background-repeat:no-repeat!important}
+#startScreen.mq-themed-start{background-image:linear-gradient(rgba(0,0,0,.48),rgba(0,0,0,.68)),var(--mq-start-image)!important;background-size:cover!important;background-position:center!important}
+#wizardImage.mq-guide-image{display:flex;align-items:center;justify-content:center;width:100%;max-width:190px;margin:0 auto;background:none}
+#wizardImage.mq-guide-image img{display:block;width:100%;max-height:300px;object-fit:contain;filter:drop-shadow(0 8px 16px rgba(0,0,0,.55))}
+.generic-boss-image{display:block;width:min(220px,52vw);height:210px;margin:0 auto 8px;object-fit:contain;filter:drop-shadow(0 0 18px var(--bossColor,#38bdf8))}
+.maze-boss-image{display:block;width:100%;height:100%;object-fit:contain}
+.mode-card .mode-symbol[hidden]{display:none!important}
+.artifactSlot img{object-fit:contain}
+@media(max-width:560px){#wizardImage.mq-guide-image{max-width:122px}.generic-boss-image{height:150px;width:min(160px,48vw)}}
+
+.guide-intro-screen{position:fixed;inset:0;z-index:6500;display:grid;place-items:center;box-sizing:border-box;min-height:100dvh;padding:clamp(24px,5vw,72px);overflow:auto;color:#eef6ff;background:linear-gradient(115deg,rgba(2,6,23,.98),rgba(4,18,35,.90)),var(--mq-guide-intro-image,var(--mq-start-image,none));background-size:cover;background-position:center}
+.guide-intro-screen[hidden]{display:none}
+body.guide-intro-active{overflow:hidden}
+.guide-intro-screen::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 28% 42%,rgba(56,189,248,.16),transparent 36%),linear-gradient(90deg,rgba(0,0,0,.16),transparent 48%,rgba(0,0,0,.36))}
+.guide-intro-stage{position:relative;display:grid;grid-template-columns:minmax(260px,42vw) minmax(300px,540px);align-items:center;gap:clamp(28px,6vw,90px);width:min(1120px,100%);margin:auto}
+.guide-intro-portrait-frame{display:grid;place-items:end center;min-height:min(68vh,680px);overflow:hidden;border:1px solid rgba(56,189,248,.28);border-radius:24px;background:radial-gradient(circle at 50% 34%,rgba(56,189,248,.19),rgba(2,8,20,.82) 66%);box-shadow:0 22px 70px rgba(0,0,0,.72),0 0 38px rgba(56,189,248,.15),inset 0 0 34px rgba(247,217,130,.06)}
+.guide-intro-portrait-frame.character-art-mode{overflow:visible;border-color:transparent;background:none;box-shadow:none}
+.guide-intro-portrait-frame.custom-image-mode{overflow:hidden}
+.guide-intro-image{display:block;width:100%;height:min(68vh,680px);object-fit:contain;object-position:center bottom;filter:drop-shadow(0 18px 22px rgba(0,0,0,.62))}
+.guide-intro-image[hidden],.guide-intro-fallback[hidden]{display:none}
+.guide-intro-fallback{align-self:center;color:#f7d982;font-size:clamp(110px,22vw,250px);filter:drop-shadow(0 0 28px rgba(56,189,248,.48))}
+.guide-intro-copy{padding:clamp(8px,2vw,24px) 0;text-shadow:0 2px 8px rgba(0,0,0,.85)}
+.guide-intro-kicker{margin:0 0 10px;color:#8bdcff;font-size:12px;font-weight:800;letter-spacing:3px;text-transform:uppercase}
+.guide-intro-name{margin:0 0 24px;color:#f7d982;font-size:clamp(36px,5vw,68px);line-height:.98;letter-spacing:2px;text-transform:uppercase}
+.guide-intro-dialogue{margin:0 0 18px;color:#f7fbff;font-size:clamp(18px,2.1vw,25px);line-height:1.55}
+.guide-intro-dialogue.secondary{margin-bottom:30px;color:rgba(224,242,254,.78);font-size:clamp(16px,1.7vw,21px)}
+.guide-intro-proceed{min-width:190px;padding:14px 30px;border:1px solid rgba(247,217,130,.72);border-radius:999px;color:#07111e;background:linear-gradient(180deg,#f7d982,#cda94c);box-shadow:0 0 24px rgba(247,217,130,.25),0 12px 30px rgba(0,0,0,.42);font:900 14px/1 inherit;letter-spacing:2px;text-transform:uppercase;cursor:pointer}
+.guide-intro-proceed:hover,.guide-intro-proceed:focus-visible{transform:translateY(-1px);box-shadow:0 0 32px rgba(247,217,130,.4),0 14px 34px rgba(0,0,0,.48);outline:2px solid rgba(139,220,255,.7);outline-offset:3px}
+.boss-reveal-screen{z-index:6450;background:linear-gradient(115deg,rgba(2,6,23,.985),rgba(16,10,28,.94)),var(--mq-boss-reveal-image,none)}
+.boss-reveal-screen::before{background:radial-gradient(circle at 28% 42%,var(--bossRevealGlow,rgba(247,217,130,.2)),transparent 38%),linear-gradient(90deg,rgba(0,0,0,.12),transparent 48%,rgba(0,0,0,.42))}
+.boss-reveal-screen .guide-intro-portrait-frame{border-color:var(--bossRevealBorder,rgba(247,217,130,.42));background:radial-gradient(circle at 50% 34%,var(--bossRevealGlow,rgba(247,217,130,.18)),rgba(2,8,20,.86) 68%)}
+.boss-reveal-screen .guide-intro-image{filter:drop-shadow(0 20px 28px rgba(0,0,0,.7)) drop-shadow(0 0 18px var(--bossRevealGlow,rgba(247,217,130,.22)))}
+.boss-reveal-screen .guide-intro-kicker{color:#f7d982}
+.boss-reveal-screen .guide-intro-dialogue{max-width:30ch}
+body.boss-reveal-active{overflow:hidden}
+@media(max-width:760px){.guide-intro-screen{place-items:start center;padding:18px 16px 26px}.guide-intro-stage{grid-template-columns:1fr;gap:20px;max-width:560px}.guide-intro-portrait-frame{min-height:38vh;max-height:46vh;border-radius:18px}.guide-intro-image{height:44vh;max-height:440px}.guide-intro-copy{text-align:center;padding:0}.guide-intro-name{margin-bottom:16px}.guide-intro-dialogue{line-height:1.42}.guide-intro-dialogue.secondary{margin-bottom:22px}.guide-intro-proceed{width:min(280px,100%)}}
+@media(max-height:650px) and (min-width:761px){.guide-intro-screen{padding:20px 34px}.guide-intro-portrait-frame,.guide-intro-image{min-height:0;height:76vh}.guide-intro-name{font-size:42px;margin-bottom:14px}.guide-intro-dialogue{font-size:18px;line-height:1.4}.guide-intro-dialogue.secondary{margin-bottom:18px}}
+
+
+</style><div id="gameShell"><div id="gameBox" style="display:block"><div id="questionContainer"><div id="questionImageBox"></div><div id="question"></div></div></div></div><div id="graphLightbox" aria-hidden="true" role="dialog"><button id="graphLightboxClose">×</button><img id="graphLightboxImg"><p id="graphLightboxDescription" class="sr-only"></p></div><script>let questionAssetMetadata={};function escapeHTML(s){return s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;');}function resolveQuestionImage(s){return window.graphSource;}function pauseFadingFortune(){}function resumeFadingFortune(){}function setAnswerButtonsDisabled(){}function getQuestionGraphAccessibility(question){
+    const rawPath = String(question?.image || "").replace(/^data\//, "");
+    const filename = rawPath.split("/").pop();
+    const metadata = questionAssetMetadata[rawPath]
+        || questionAssetMetadata[filename]
+        || Object.entries(questionAssetMetadata).find(([key]) => key.split("/").pop() === filename)?.[1]
+        || {};
+    return {
+        imageAlt: String(metadata.imageAlt || "Economics graph with labeled axes, curves, points, and visible values."),
+        graphDescription: String(metadata.graphDescription || "The graph description metadata is unavailable.")
+    };
+}
+
+let questionGraphLoadFailed = false;
+
+function renderQuestionGraph(question){
+    const imageBox = document.getElementById("questionImageBox");
+    if(!imageBox) return;
+    questionGraphLoadFailed = false;
+    if(!question?.image){
+        imageBox.innerHTML = "";
+        imageBox.style.display = "none";
+        return;
+    }
+    const accessibility = getQuestionGraphAccessibility(question);
+    const alt = escapeHTML(accessibility.imageAlt);
+    const description = escapeHTML(accessibility.graphDescription);
+    imageBox.innerHTML = `<img src="${resolveQuestionImage(question.image)}" alt="${alt}" aria-describedby="questionGraphDescription" data-graph-description="${description}" title="Click to enlarge" role="button" tabindex="0" aria-label="Open expanded graph: ${alt}"><p id="questionGraphDescription" class="sr-only">${description}</p><div class="graph-zoom-note">Click graph to enlarge</div>`;
+    imageBox.style.display = "block";
+    const graphImage = imageBox.querySelector("img");
+    graphImage?.addEventListener("error", () => {
+        questionGraphLoadFailed = true;
+        imageBox.innerHTML = `<div role="alert"><strong>Required graph failed to load.</strong><br>This question cannot be answered safely. Return to the mode menu and regenerate the Quest.</div>`;
+        setAnswerButtonsDisabled(true);
+        const announcements = document.getElementById("srAnnouncements");
+        if(announcements) announcements.innerText = "Required graph failed to load. This question cannot be answered safely.";
+    }, {once:true});
+}
+
+function openGraphLightbox(src, altText, graphDescription){
+    const lightbox = document.getElementById("graphLightbox");
+    const lightboxImg = document.getElementById("graphLightboxImg");
+    const lightboxDescription = document.getElementById("graphLightboxDescription");
+    if(!lightbox || !lightboxImg || !lightboxDescription || !src) return;
+
+    lightboxImg.src = src;
+    lightboxImg.alt = altText || "Economics graph with labeled axes, curves, points, and visible values.";
+    lightboxImg.setAttribute("aria-describedby", "graphLightboxDescription");
+    lightboxDescription.textContent = graphDescription || "The graph description metadata is unavailable.";
+    lightbox.classList.add("active");
+    lightbox.setAttribute("aria-hidden", "false");
+    pauseFadingFortune("graph-lightbox");
+}
+
+function closeGraphLightbox(){
+    const lightbox = document.getElementById("graphLightbox");
+    const lightboxImg = document.getElementById("graphLightboxImg");
+    if(!lightbox) return;
+
+    lightbox.classList.remove("active");
+    lightbox.setAttribute("aria-hidden", "true");
+    if(lightboxImg) lightboxImg.removeAttribute("src");
+    const lightboxDescription = document.getElementById("graphLightboxDescription");
+    if(lightboxDescription) lightboxDescription.textContent = "";
+    resumeFadingFortune("graph-lightbox");
+}
+
+</script>

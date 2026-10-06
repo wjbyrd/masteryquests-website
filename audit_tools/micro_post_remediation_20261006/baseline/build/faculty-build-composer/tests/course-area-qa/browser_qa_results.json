@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "PASS",
+  "cases": {
+    "generalAll": {"visibleCards": 13, "outOfAreaCards": 0},
+    "microAll": {"visibleCards": 80, "parentCards": 8, "childCards": 54, "outOfAreaCards": 0},
+    "macroAll": {"visibleCards": 54, "childCards": 0, "costsFamilyLeaks": 0},
+    "macroReady": {"visibleCards": 48, "wrongCategoryCards": 0},
+    "microSupporting": {"visibleCards": 27, "wrongCategoryCards": 0},
+    "macroSearch": {"query": "price discrimination", "microOnlyResults": 0},
+    "macroPreset": {"selectedCards": 17, "visibleSelectedCards": 17, "staleSearchCleared": true, "invalidSelections": 0},
+    "selectionSwitch": {"sharedGeneralSelectionPreserved": true, "microOnlySelectionRemoved": true, "announcementVerified": true},
+    "sharedGeneralInMacro": {"canonicalConceptId": "production-possibilities-frontier", "discipline": "general", "areas": ["general", "micro", "macro"], "accentRgb": "42, 143, 138"},
+    "mobile": {"viewport": {"width": 390, "height": 844}, "horizontalOverflow": false, "cardWidth": 321, "accentWidth": "4px"},
+    "console": {"warnings": 0, "errors": 0}
+  },
+  "computedAccents": {
+    "general": {"value": "#2a8f8a", "rgb": "42, 143, 138", "width": "4px"},
+    "micro": {"value": "#9fc4df", "rgb": "159, 196, 223", "width": "4px"},
+    "macro": {"value": "#8f3f4d", "rgb": "143, 63, 77", "width": "4px"}
+  },
+  "screenshots": [
+    "step3-general-selected.png",
+    "step3-micro-selected.png",
+    "step3-macro-selected.png",
+    "step3-micro-family.png",
+    "step3-general-in-macro.png",
+    "step3-mobile-micro.png"
+  ]
+}

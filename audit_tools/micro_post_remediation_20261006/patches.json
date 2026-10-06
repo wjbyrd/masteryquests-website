@@ -1,0 +1,175 @@
+{
+  "42876": {
+    "difficulty": "easy",
+    "canonicalDifficulty": "easy",
+    "rationale": [
+      "Direct faculty decision resolves the previous Medium classification; one subtraction, $100 minus $600."
+    ],
+    "category": "EXPLICIT FACULTY TIER"
+  },
+  "P62G-MON-H-009": {
+    "difficulty": "elite",
+    "canonicalDifficulty": "elite",
+    "rationale": [
+      "Direct faculty decision: infer the highest possible price from the inverse-demand intercept, compare demand and AVC functions over positive output, then apply shutdown. Equations retained."
+    ],
+    "category": "EXPLICIT FACULTY TIER"
+  },
+  "42424": {
+    "difficulty": "medium",
+    "canonicalDifficulty": "medium",
+    "rationale": [
+      "Remediation replaced a supplied marginal product with two total-output observations. First derive marginal product, then multiply by product price; two linked operations replace one."
+    ],
+    "category": "POST-REMEDIATION DIFFICULTY DRIFT"
+  },
+  "42436": {
+    "difficulty": "medium",
+    "canonicalDifficulty": "medium",
+    "rationale": [
+      "Remediation replaced a supplied marginal product with two total-output observations. First derive marginal product, then multiply by product price; two linked operations replace one."
+    ],
+    "category": "POST-REMEDIATION DIFFICULTY DRIFT"
+  },
+  "42780": {
+    "difficulty": "medium",
+    "canonicalDifficulty": "medium",
+    "rationale": [
+      "Remediation added total income and asks for dollars: sum the four shares, complement to obtain the remaining share, then multiply by total income."
+    ],
+    "category": "POST-REMEDIATION DIFFICULTY DRIFT"
+  },
+  "42928": {
+    "difficulty": "medium",
+    "canonicalDifficulty": "medium",
+    "rationale": [
+      "Replacement adds a selection alternative to the deductible story. Distinguish changes in pool membership from changed behavior before identifying supporting evidence."
+    ],
+    "category": "POST-REMEDIATION DIFFICULTY DRIFT"
+  },
+  "42932": {
+    "difficulty": "medium",
+    "canonicalDifficulty": "medium",
+    "rationale": [
+      "Replacement adds reimbursement by a second party: infer that the deductible is neutralized, then apply the precaution-incentive mechanism."
+    ],
+    "category": "POST-REMEDIATION DIFFICULTY DRIFT"
+  },
+  "42936": {
+    "difficulty": "medium",
+    "canonicalDifficulty": "medium",
+    "rationale": [
+      "Replacement adds numerical insurance alternatives: determine the customer-borne loss under each contract, then compare the $20 avoided deductible with $10 care."
+    ],
+    "category": "POST-REMEDIATION DIFFICULTY DRIFT"
+  },
+  "P62B-ELAS-L-076": {
+    "difficulty": "hard",
+    "canonicalDifficulty": "hard",
+    "rationale": [
+      "Midpoint replacement requires evaluating the supply function at prices, finding average bases and percentage changes, then comparing their ratio (two intervals for L-078). Several linked steps exceed the retained Medium tier; calculus remains absent."
+    ],
+    "category": "POST-REMEDIATION DIFFICULTY DRIFT"
+  },
+  "P62B-ELAS-L-077": {
+    "difficulty": "hard",
+    "canonicalDifficulty": "hard",
+    "rationale": [
+      "Midpoint replacement requires evaluating the supply function at prices, finding average bases and percentage changes, then comparing their ratio (two intervals for L-078). Several linked steps exceed the retained Medium tier; calculus remains absent."
+    ],
+    "category": "POST-REMEDIATION DIFFICULTY DRIFT"
+  },
+  "P62B-ELAS-L-078": {
+    "difficulty": "hard",
+    "canonicalDifficulty": "hard",
+    "rationale": [
+      "Midpoint replacement requires evaluating the supply function at prices, finding average bases and percentage changes, then comparing their ratio (two intervals for L-078). Several linked steps exceed the retained Medium tier; calculus remains absent."
+    ],
+    "category": "POST-REMEDIATION DIFFICULTY DRIFT"
+  },
+  "P62G-MON-L-033": {
+    "difficulty": "elite",
+    "canonicalDifficulty": "elite",
+    "rationale": [
+      "Qualitative cost-shift task became two algebraic monopoly equilibria: adjust marginal cost for tax, solve MR=MC, substitute into demand and compare prices/output. Retained equations add substantial mathematical and economic integration."
+    ],
+    "category": "POST-REMEDIATION DIFFICULTY DRIFT"
+  },
+  "P62F-PC-E-042": {
+    "difficulty": "medium",
+    "canonicalDifficulty": "medium",
+    "rationale": [
+      "Remediation removed the supplied $40 price and MR=MC cue. The student must now find market price, transfer it to the firm and select rising MC output rather than read a supplied-price crossing."
+    ],
+    "category": "POST-REMEDIATION DIFFICULTY DRIFT"
+  },
+  "42926": {
+    "q": "Drivers privately know their preexisting accident risk, which the insurer cannot observe. High-risk drivers are more likely to buy insurance, but no driver changes behavior after buying it. Which conclusion follows?",
+    "rationale": [
+      "Replacement inferred adverse selection without specifying that risk is privately known. Supply that missing informational condition."
+    ],
+    "category": "POST-REMEDIATION CONTENT REGRESSION"
+  },
+  "P62E-COP-R-014": {
+    "options": [
+      "TFC falls",
+      "MC becomes zero",
+      "AVC becomes fixed",
+      "The same fixed cost is spread over more units."
+    ],
+    "feedback": "Total fixed cost stays constant while it is divided among more units of output.",
+    "rationale": [
+      "Revised stem asks why AFC falls, but the retained key refers to an undefined gap and restates the result. Answer the revised causal question while preserving repair routing."
+    ],
+    "category": "POST-REMEDIATION CONTENT REGRESSION"
+  },
+  "P62F-PC-H-004": {
+    "options": [
+      "Produce 2 units; economic loss of $27.",
+      "Produce 1 unit; economic loss of $25.",
+      "Produce 1 unit; economic profit of $5.",
+      "Shut down; economic loss of $30."
+    ],
+    "rationale": [
+      "Revised numerical variant introduced singular output with plural units. Correct only the unit agreement."
+    ],
+    "category": "POST-REMEDIATION CONTENT REGRESSION"
+  },
+  "P62F-PC-H-006": {
+    "options": [
+      "Produce 1 unit; economic loss of $26.",
+      "Shut down; economic profit of $0.",
+      "Produce 6 units; economic loss of $108.",
+      "Shut down; economic loss of $25."
+    ],
+    "rationale": [
+      "Revised numerical variant introduced singular output with plural units. Correct only the unit agreement."
+    ],
+    "category": "POST-REMEDIATION CONTENT REGRESSION"
+  },
+  "P62F-PC-H-009": {
+    "options": [
+      "Produce 2 units; economic loss of $3.",
+      "Produce 1 unit; economic profit of $1.",
+      "Produce 1 unit; economic loss of $2.",
+      "Shut down; economic loss of $3."
+    ],
+    "rationale": [
+      "Revised numerical variant introduced singular output with plural units. Correct only the unit agreement."
+    ],
+    "category": "POST-REMEDIATION CONTENT REGRESSION"
+  },
+  "P75-TRADE-L-013": {
+    "q": "With constant opportunity costs, Ridge can produce 24 maps or 12 models. Vale can produce 18 maps or m models. Ridge exports models for 1.5 maps each. Is there a positive value of m that would allow both producers to gain from this trade?",
+    "options": [
+      "No positive m; Ridge loses at the stated export price",
+      "m = 6; Vale's higher cost suffices for mutual gains",
+      "m = 9; matching costs makes this price mutually beneficial",
+      "m = 18; Vale's higher model productivity guarantees mutual gains"
+    ],
+    "rationale": [
+      "Remediation inserted literal italic tags around m; the faculty PDF escapes non-table HTML. Use plain m so the retained variable is legible in every output."
+    ],
+    "category": "POST-REMEDIATION CONTENT REGRESSION"
+  }
+}

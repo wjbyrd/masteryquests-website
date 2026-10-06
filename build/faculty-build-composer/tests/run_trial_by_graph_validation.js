@@ -1,6 +1,6 @@
 const {assertCanonicalIntegrity}=require('./composer-integrity-contracts.js');
 const fs=require('fs');
-const micro=require('./graph-playthrough-approved-revisions.js');
+const micro=require('./post-remediation-approved-revisions.js');
 const path=require('path');
 const vm=require('vm');
 const crypto=require('crypto');
@@ -131,6 +131,10 @@ function runtimeDeckCheck(composition,target){
   const macroEditorialGraphDelta=micro.macroEditorialLedger.changes.filter(c=>ordinaryIds.has(c.id)).reduce((n,c)=>n+Number(c.afterRecord.graphRequired===true)-Number(c.beforeRecord.graphRequired===true),0);
   const playthroughGraphIds=new Set(micro.graphPlaythroughLedger.changes.filter(c=>c.afterRecord.graphRequired===true&&c.beforeRecord.graphRequired!==true).map(c=>c.id));
   const playthroughGraphDelta=micro.graphPlaythroughLedger.changes.filter(c=>ordinaryIds.has(c.id)).reduce((n,c)=>n+Number(c.afterRecord.graphRequired===true)-Number(c.beforeRecord.graphRequired===true),0);
+  const facultyGraphChanges=micro.facultyMicroLedger.changes.filter(c=>ordinaryIds.has(c.id)&&Boolean(c.afterRecord.graphRequired)!==Boolean(c.beforeRecord.graphRequired));
+  require('node:assert/strict').deepEqual(facultyGraphChanges.map(c=>c.id).sort(),['P62F-PC-LB-014','P62F-PC-LB-018','P62G-MON-H-009','P62G-MON-H-010']);
+  const facultyGraphIds=new Set(facultyGraphChanges.filter(c=>c.afterRecord.graphRequired===true).map(c=>c.id));
+  const facultyGraphDelta=facultyGraphChanges.reduce((n,c)=>n+Number(c.afterRecord.graphRequired===true)-Number(c.beforeRecord.graphRequired===true),0);
   let flagged=0, flaggedOutsideAudit=0, flaggedWithoutImage=0;
   for(const module of Object.values(library.concepts)){
     for(const items of Object.values(module.questions||{})){
@@ -139,7 +143,7 @@ function runtimeDeckCheck(composition,target){
         if(q.graphRequired===true){
           flagged++;
           const id=String(q.canonicalId||q.id||q.questionId||'');
-          if(!auditIds.has(id) && !phase3eIds.has(id) && !externalitiesIds.has(id) && !publicGoodsIds.has(id) && !factorMarketIds.has(id) && !consumerChoiceIds.has(id) && !inequalityIds.has(id) && !savingInvestmentIds.has(id) && !qualityGraphIds.has(id) && !foundationsGraphIds.has(id) && !openEconomyGraphIds.has(id) && !microGraphIds.has(id) && !macroGraphIds.has(id) && !playthroughGraphIds.has(id)) flaggedOutsideAudit++;
+          if(!auditIds.has(id) && !phase3eIds.has(id) && !externalitiesIds.has(id) && !publicGoodsIds.has(id) && !factorMarketIds.has(id) && !consumerChoiceIds.has(id) && !inequalityIds.has(id) && !savingInvestmentIds.has(id) && !qualityGraphIds.has(id) && !foundationsGraphIds.has(id) && !openEconomyGraphIds.has(id) && !microGraphIds.has(id) && !macroGraphIds.has(id) && !playthroughGraphIds.has(id) && !facultyGraphIds.has(id)) flaggedOutsideAudit++;
           if(!q.image) flaggedWithoutImage++;
         }
       }
@@ -148,7 +152,7 @@ function runtimeDeckCheck(composition,target){
   if(auditIds.size!==612) issues.push(`audit id count ${auditIds.size}`);
   if(qualityGraphIds.size!==23) issues.push(`quality remediation graph id count ${qualityGraphIds.size}`);
   if(foundationsGraphIds.size!==23+bankReviewGraphIds.size) issues.push(`foundations remediation graph id count ${foundationsGraphIds.size}`);
-  if(flagged!==1055+openExpectedGraphs+bankReviewGraphDelta+microGraphDelta+macroGraphIds.size+macroEditorialGraphDelta+playthroughGraphDelta) issues.push(`graphRequired count ${flagged}`);
+  if(flagged!==1055+openExpectedGraphs+bankReviewGraphDelta+microGraphDelta+macroGraphIds.size+macroEditorialGraphDelta+playthroughGraphDelta+facultyGraphDelta) issues.push(`graphRequired count ${flagged}`);
   if(flaggedOutsideAudit) issues.push(`flags outside audited set ${flaggedOutsideAudit}`);
   if(flaggedWithoutImage) issues.push(`flags without image ${flaggedWithoutImage}`);
 
