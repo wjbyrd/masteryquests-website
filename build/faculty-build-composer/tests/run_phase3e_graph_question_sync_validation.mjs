@@ -13,7 +13,7 @@ const require = createRequire(import.meta.url);
 const {assertCanonicalIntegrity} = require('./composer-integrity-contracts.js');
 const {currentAuditedQuestion} = require('./composer-audit-contracts.js');
 const approved = require('./general-economics-approved-revisions.js');
-const micro = require('./post-remediation-approved-revisions.js');
+const micro = require('./macro-standard-revisions.js');
 const core = require("../composer-core.js");
 const helpers = require("./composer-test-helpers.js");
 const testRoot = path.dirname(fileURLToPath(import.meta.url));
@@ -145,7 +145,7 @@ async function run() {
       }
       for (const [field, value] of Object.entries(alignment.after)) {
         let expected = value;
-        for (const ledger of [micro.editorialLedger, micro.constructLedger, micro.microEditorialLedger, micro.microSecondPolishLedger, micro.macroEditorialLedger, micro.graphPlaythroughLedger, micro.facultyMicroLedger, micro.postRemediationLedger]) {
+        for (const ledger of [micro.editorialLedger, micro.constructLedger, micro.microEditorialLedger, micro.microSecondPolishLedger, micro.macroEditorialLedger, micro.graphPlaythroughLedger, micro.facultyMicroLedger, micro.postRemediationLedger, micro.macroStandardLedger]) {
           const revision = ledger.changes.find(change => change.id === String(author.id));
           if (!revision?.fields.includes(field)) continue;
           pass(JSON.stringify(revision.beforeRecord[field]) === JSON.stringify(expected), `Editorial alignment before-state ${author.id}: ${field}`);

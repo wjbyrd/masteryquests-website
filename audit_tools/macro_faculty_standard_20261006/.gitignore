@@ -1,0 +1,22 @@
+# Local snapshots and generated evidence. Keep the exact library fixture used
+# by tests/macro-standard-revisions.js, without traversing other backup trees.
+/baseline/*
+!/baseline/build/
+/baseline/build/*
+!/baseline/build/faculty-build-composer/
+/baseline/build/faculty-build-composer/*
+!/baseline/build/faculty-build-composer/data/
+/baseline/build/faculty-build-composer/data/*
+!/baseline/build/faculty-build-composer/data/composer_library.js
+
+# Faculty assessment extractions, working copies, renders, and build output.
+/corpus/
+/first-pass/
+/graph-review/
+/pdf-review/
+/staged/
+/test-output/
+/*-validation-game.html
+/records.json
+/macro-records.json
+/*.log

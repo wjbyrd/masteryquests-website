@@ -8,9 +8,11 @@ import {loadComposerLibrary,collectComposerQuestions,auditQuestionConstruction} 
 const require=createRequire(import.meta.url),core=require('../composer-core.js');
 const integrity=require('./composer-integrity-contracts.js');
 const approved=require('./general-economics-approved-revisions.js');
-const micro=require('./post-remediation-approved-revisions.js');
+const micro=require('./macro-standard-revisions.js');
 const out='validation_artifacts/question_bank_audit_20260919';
-const resultOut='validation_artifacts/macroeconomics_consolidated_cleanup';
+const resultOut=process.env.MQ_COMPOSER_TEST_OUTPUT_DIR
+  ? `${process.env.MQ_COMPOSER_TEST_OUTPUT_DIR}/macroeconomics_consolidated_cleanup`
+  : 'validation_artifacts/macroeconomics_consolidated_cleanup';
 fs.mkdirSync(resultOut,{recursive:true});
 const baselineRef='c171eca5645e27baef4e36a4eb990bb0b07f61c7';
 const relative='build/faculty-build-composer/data/composer_library.js';

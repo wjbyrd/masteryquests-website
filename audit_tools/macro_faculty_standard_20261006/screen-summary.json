@@ -1,0 +1,201 @@
+{
+  "riskRows": 413,
+  "editableRiskRows": 296,
+  "flags": {
+    "tier-review": 408,
+    "answer-length": 5,
+    "mechanical": 1
+  },
+  "similarityFamilies": 162,
+  "topFamilies": [
+    {
+      "topic": "cpi-and-inflation-measurement",
+      "normalized": "a fixed basket costs $N in the base year, $N this year and $N next year. a report treats the increase in cpi index points as the inflation rate. what are next year's cpi and inflation rate?",
+      "ids": [
+        "ECON-NL-EASYBOSS-2018",
+        "ECON-NL-EASYBOSS-2022",
+        "P52A-CPI-B2-002",
+        "P52A-CPI-B3-003",
+        "ECON-EC-FINALBOSS-19000"
+      ]
+    },
+    {
+      "topic": "cpi-bias",
+      "normalized": "a fixed basket includes N units of a food whose price rises sharply. households switch toward a cheaper substitute while maintaining utility. what does the fixed-basket index miss, and how does that affect a payment fully indexed to it?",
+      "ids": [
+        "ECON-NL-EASYBOSS-2026",
+        "PM2B2-BIAS-FB-004",
+        "PM2B2-BIAS-MB-002",
+        "ECON-EC-FINALBOSS-19001",
+        "ECON-EC-MEDIUMBOSS-18000"
+      ]
+    },
+    {
+      "topic": "cpi-bias",
+      "normalized": "a product originally costs $N. its replacement costs N% more but provides twice the measured service, with no other relevant quality changes. how should the price change be interpreted after allowing for the improved service?",
+      "ids": [
+        "PM2B2-BIAS-FB-005",
+        "PM2B2-BIAS-MB-003",
+        "ECON-EC-FINALBOSS-19002",
+        "ECON-EC-MEDIUMBOSS-18002",
+        "ECON-NL-LEGENDARYBOSS-9109"
+      ]
+    },
+    {
+      "topic": "real-versus-nominal-interest-rates",
+      "normalized": "two lenders each advance $N. loan a pays N% nominal interest with expected inflation N%; loan b pays N% with expected inflation N%. actual inflation later equals N% in both economies. under the approximation, which ranking reverses?",
+      "ids": [
+        "ECON-NL-EASYBOSS-2035",
+        "PM2B2-RNI-MB-003",
+        "ECON-EC-FINALBOSS-19004",
+        "ECON-EC-MEDIUMBOSS-18004",
+        "PM2B2-RNI-LB-001"
+      ]
+    },
+    {
+      "topic": "sources-of-productivity",
+      "normalized": "a discovery increases available mineral resources for N workers, but extraction technology and transport remain inadequate. which policy diagnosis best connects resources to productivity?",
+      "ids": [
+        "ECON-NL-MEDIUMBOSS-3013",
+        "ECON-NL-MEDIUMBOSS-3018",
+        "ECON-NL-MEDIUMBOSS-3023",
+        "PM2B3-SRC-EB-003",
+        "ECON-EC-MEDIUMBOSS-18007"
+      ]
+    },
+    {
+      "topic": "sources-of-productivity",
+      "normalized": "a fixed technology gives an extra N units of output from the first additional machine and only N from the second. a proposal assumes each later machine adds the first machine's amount. what is the flaw?",
+      "ids": [
+        "ECON-NL-MEDIUMBOSS-3016",
+        "ECON-NL-MEDIUMBOSS-3021",
+        "ECON-NL-MEDIUMBOSS-3026",
+        "ECON-EC-FINALBOSS-19011",
+        "ECON-NL-LEGENDARYBOSS-9121"
+      ]
+    },
+    {
+      "topic": "unemployment-measurement",
+      "normalized": "of N adults, N are employed and N are unemployed and actively looking for work. a survey also finds N people who want work but have stopped searching. a report counts all jobless people as unemployed. how should the unemployment rate and labor-force participation rate be calculated instead?",
+      "ids": [
+        "ECON-NL-FINALBOSS-4004",
+        "P52B-S4-UNEM-B1-001",
+        "P52B-S4-UNEM-B2-003",
+        "ECON-EC-FINALBOSS-19022",
+        "ECON-EC-MEDIUMBOSS-18010"
+      ]
+    },
+    {
+      "topic": "unemployment-types",
+      "normalized": "a regional study follows N jobless workers after national demand recovers. former miners still lack skills for local health-care vacancies, while new graduates are interviewing for matching jobs. which diagnosis and response pair is appropriate?",
+      "ids": [
+        "ECON-NL-FINALBOSS-4010",
+        "ECON-NL-FINALBOSS-4016",
+        "ECON-NL-FINALBOSS-4041",
+        "ECON-EC-FINALBOSS-19012",
+        "PM2B4-UTYPE-LB-001"
+      ]
+    },
+    {
+      "topic": "unemployment-types",
+      "normalized": "job vacancies and active job seekers both remain high in a region with N displaced workers, even after aggregate sales return to normal. which added evidence best distinguishes persistent mismatch from ordinary search?",
+      "ids": [
+        "ECON-NL-FINALBOSS-4012",
+        "ECON-NL-FINALBOSS-4019",
+        "PM2B4-UTYPE-EB-001",
+        "PM2B4-UTYPE-MB-004",
+        "ECON-EC-FINALBOSS-19014"
+      ]
+    },
+    {
+      "topic": "cpi-and-inflation-measurement",
+      "normalized": "if the cpi rises from N to N, what is the inflation rate?",
+      "ids": [
+        "ECON-NL-EASY-23",
+        "ECON-NL-EASY-25",
+        "ECON-NL-HARD-221",
+        "ECON-NL-MEDIUM-121"
+      ]
+    },
+    {
+      "topic": "cpi-and-inflation-measurement",
+      "normalized": "a worker earns $N before a N% nominal raise. the relevant cpi rises N%. a report says higher pay alone establishes a real gain. which correction follows?",
+      "ids": [
+        "ECON-NL-EASYBOSS-2021",
+        "P52A-CPI-B2-001",
+        "P52A-CPI-B3-002",
+        "ECON-EC-MEDIUMBOSS-18003"
+      ]
+    },
+    {
+      "topic": "cpi-bias",
+      "normalized": "a new product expands choice while the price index still records spending of $N on older products. how does the delayed inclusion of the new product limit what the cpi tells us?",
+      "ids": [
+        "ECON-NL-EASYBOSS-2024",
+        "PM2B2-BIAS-FB-006",
+        "ECON-NL-LEGENDARYBOSS-9110",
+        "ECON-EC-LEGENDARYBOSS-20001"
+      ]
+    },
+    {
+      "topic": "cpi-bias",
+      "normalized": "a $N payment is indexed to measured cpi. a careful study estimates measured inflation at N% but the cost of maintaining the recipient's utility at N%, owing to substitution and new choices. how does indexation affect the payment's purchasing power under these estimates?",
+      "ids": [
+        "ECON-NL-EASYBOSS-2025",
+        "PM2B2-BIAS-MB-001",
+        "ECON-NL-LEGENDARYBOSS-9115",
+        "ECON-EC-LEGENDARYBOSS-20002"
+      ]
+    },
+    {
+      "topic": "cpi-versus-gdp-deflator",
+      "normalized": "a domestic economy buys $N of imported household fuel and produces machinery only for export. fuel prices rise while machinery prices are unchanged. holding quantities fixed, what happens to the cpi and gdp deflator?",
+      "ids": [
+        "ECON-NL-EASYBOSS-2028",
+        "PM2B2-DEF-FB-005",
+        "PM2B2-DEF-MB-002",
+        "ECON-EC-FINALBOSS-19006"
+      ]
+    },
+    {
+      "topic": "cpi-versus-gdp-deflator",
+      "normalized": "a household benefit of $N must track consumption costs, while an analyst must convert nominal domestic gdp into real output. imported food becomes dearer and domestic investment equipment becomes cheaper. which index should be used for each purpose, and must the two indexes move together?",
+      "ids": [
+        "ECON-NL-EASYBOSS-2029",
+        "PM2B2-DEF-FB-006",
+        "PM2B2-DEF-MB-003",
+        "ECON-EC-FINALBOSS-19007"
+      ]
+    },
+    {
+      "topic": "integrated-macroeconomic-analysis",
+      "normalized": "an adverse supply shock lowers output $N below potential and raises inflation. two plans each move ad by $N in opposite directions while the supply constraint persists. which comparison correctly distinguishes their short-run objectives?",
+      "ids": [
+        "ECON-SP-FINALBOSS-4001",
+        "ECON-SP-FINALBOSS-4020",
+        "PM2E-CH-OPEN-002",
+        "ECON-SP-LEGENDARYBOSS-9116"
+      ]
+    },
+    {
+      "topic": "labor-market-institutions",
+      "normalized": "a benefit reform gives N unemployed workers more time to search for good matches. search duration rises, while later job retention also improves. which policy assessment recognizes the tradeoff?",
+      "ids": [
+        "ECON-NL-FINALBOSS-4022",
+        "ECON-NL-FINALBOSS-4028",
+        "ECON-NL-FINALBOSS-4040",
+        "PM2B4-LMI-EB-003"
+      ]
+    },
+    {
+      "topic": "labor-market-institutions",
+      "normalized": "job-search assistance speeds matching for N applicants, while reduced search pressure permits others to wait longer for suitable offers. which unemployment prediction requires more evidence?",
+      "ids": [
+        "ECON-NL-FINALBOSS-4024",
+        "ECON-NL-FINALBOSS-4029",
+        "ECON-NL-LEGENDARYBOSS-9128",
+        "PM2B4-LMI-LB-001"
+      ]
+    }
+  ]
+}

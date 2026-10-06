@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "riskBuckets": {
+    "D NO ISSUE DETECTED": 3093,
+    "A PROTECTED MATURE": 1604,
+    "C FACULTY-REVIEW CANDIDATE": 30,
+    "B HIGH-CONFIDENCE AUTO-CORRECTED": 20
+  },
+  "sourceClasses": {
+    "Other imported bank": 2173,
+    "Authored/expansion": 2033,
+    "Market Gate: no later curation recorded": 293,
+    "Market Gate: documented later descendant": 248
+  },
+  "changes": 20,
+  "fieldsChanged": {
+    "q": 17,
+    "options": 12,
+    "commonError": 9,
+    "feedback": 14,
+    "aHash": 12,
+    "difficulty": 5,
+    "canonicalDifficulty": 5,
+    "type": 6,
+    "tag": 1
+  },
+  "facultyCandidates": 30,
+  "graphAssets": 107,
+  "graphQuestions": 553,
+  "graphRepairs": 0,
+  "allMicroRecordsFrozen": 6297,
+  "prior292IDsProtected": 292,
+  "exports": {
+    "general": {
+      "rows": 1589,
+      "pdfPages": 826,
+      "exactCanonicalFieldParity": true
+    },
+    "micro": {
+      "rows": 6297,
+      "pdfPages": 3476,
+      "exactCanonicalFieldParity": true
+    },
+    "macro": {
+      "rows": 4747,
+      "pdfPages": 2500,
+      "exactCanonicalFieldParity": true
+    }
+  },
+  "tests": {
+    "currentComposer": 29,
+    "exporter": 25,
+    "independentArithmetic": 20
+  },
+  "librarySha256": "b38b4010a1cfacf0224c973f22174ab266f2b4c992642e9a55df30df59335a20"
+}

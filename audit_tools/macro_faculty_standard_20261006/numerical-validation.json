@@ -1,0 +1,145 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "id": "43188",
+      "check": "public saving",
+      "value": "-50",
+      "expected": "-50",
+      "status": "PASS"
+    },
+    {
+      "id": "43188",
+      "check": "national saving",
+      "value": "130",
+      "expected": "130",
+      "status": "PASS"
+    },
+    {
+      "id": "43202",
+      "check": "repair public saving",
+      "value": "50",
+      "expected": "50",
+      "status": "PASS"
+    },
+    {
+      "id": "ECON-NL-MEDIUM-162",
+      "check": "LFPR",
+      "value": "75",
+      "expected": "75",
+      "status": "PASS"
+    },
+    {
+      "id": "ECON-NL-MEDIUM-162",
+      "check": "outside labor force share",
+      "value": "25",
+      "expected": "25",
+      "status": "PASS"
+    },
+    {
+      "id": "P52A-CPI-B3-003",
+      "check": "old current CPI",
+      "value": "120",
+      "expected": "120",
+      "status": "PASS"
+    },
+    {
+      "id": "P52A-CPI-B3-003",
+      "check": "old next CPI",
+      "value": "132",
+      "expected": "132",
+      "status": "PASS"
+    },
+    {
+      "id": "P52A-CPI-B3-003",
+      "check": "inflation",
+      "value": "10",
+      "expected": "10",
+      "status": "PASS"
+    },
+    {
+      "id": "P52A-CPI-B3-003",
+      "check": "rebased first CPI",
+      "value": "100",
+      "expected": "100",
+      "status": "PASS"
+    },
+    {
+      "id": "P52A-CPI-B3-003",
+      "check": "rebased second CPI",
+      "value": "110",
+      "expected": "110",
+      "status": "PASS"
+    },
+    {
+      "id": "P52A-CPI-B3-003",
+      "check": "rebased inflation",
+      "value": "10",
+      "expected": "10",
+      "status": "PASS"
+    },
+    {
+      "id": "PM2B2-BIAS-MB-003",
+      "check": "quality-adjusted relative price",
+      "value": "3/5",
+      "expected": "3/5",
+      "status": "PASS"
+    },
+    {
+      "id": "PM2B2-BIAS-MB-003",
+      "check": "quality-adjusted percent change",
+      "value": "-40",
+      "expected": "-40",
+      "status": "PASS"
+    },
+    {
+      "id": "P52B-S4-UNEM-B2-003",
+      "check": "initial labor force",
+      "value": "330",
+      "expected": "330",
+      "status": "PASS"
+    },
+    {
+      "id": "P52B-S4-UNEM-B2-003",
+      "check": "final employment",
+      "value": "270",
+      "expected": "270",
+      "status": "PASS"
+    },
+    {
+      "id": "P52B-S4-UNEM-B2-003",
+      "check": "final unemployment",
+      "value": "60",
+      "expected": "60",
+      "status": "PASS"
+    },
+    {
+      "id": "P52B-S4-UNEM-B2-003",
+      "check": "final labor force",
+      "value": "330",
+      "expected": "330",
+      "status": "PASS"
+    },
+    {
+      "id": "P52B-S4-UNEM-B2-003",
+      "check": "initial UR rounded",
+      "value": "91/10",
+      "expected": "91/10",
+      "status": "PASS"
+    },
+    {
+      "id": "P52B-S4-UNEM-B2-003",
+      "check": "final UR rounded",
+      "value": "91/5",
+      "expected": "91/5",
+      "status": "PASS"
+    },
+    {
+      "id": "P52B-S4-STAB-B2-002",
+      "check": "total net AD offset",
+      "value": "40",
+      "expected": "40",
+      "status": "PASS"
+    }
+  ]
+}

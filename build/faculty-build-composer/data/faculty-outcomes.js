@@ -2,7 +2,7 @@
 (function(root,data){if(typeof module==='object'&&module.exports)module.exports=data;else root.MQFacultyOutcomePolicy=data;})(typeof globalThis!=='undefined'?globalThis:this,{
   "schemaVersion": 1,
   "policyVersion": "faculty-lo-1",
-  "librarySha256": "7bd8ce4951cfe49114e0b583dc7d6522a7f66cdf6e4b29d1238d8dc5328650ac",
+  "librarySha256": "b38b4010a1cfacf0224c973f22174ab266f2b4c992642e9a55df30df59335a20",
   "concepts": {
     "ad-as-equilibrium-and-output-gaps": {
       "outcomes": [
@@ -340,7 +340,6 @@
             },
             "supportedModes": [
               "timed",
-              "exam",
               "quiz",
               "unlimited",
               "fadingFortune",
@@ -6296,9 +6295,9 @@
             "difficulty": {
               "easy": 5,
               "medium": 15,
-              "hard": 6,
+              "hard": 7,
               "elite": 1,
-              "legendary": 6
+              "legendary": 5
             },
             "supportedModes": [
               "quiz",
@@ -6528,13 +6527,12 @@
             "difficulty": {
               "easy": 12,
               "medium": 17,
-              "hard": 14,
+              "hard": 15,
               "elite": 3,
-              "legendary": 4
+              "legendary": 3
             },
             "supportedModes": [
               "timed",
-              "exam",
               "quiz",
               "unlimited",
               "trialGraph",
@@ -8118,9 +8116,9 @@
             "difficulty": {
               "easy": 15,
               "medium": 14,
-              "hard": 7,
+              "hard": 8,
               "elite": 1,
-              "legendary": 1
+              "legendary": 0
             },
             "supportedModes": [
               "standard",
@@ -8357,9 +8355,9 @@
             "difficulty": {
               "easy": 13,
               "medium": 21,
-              "hard": 22,
+              "hard": 23,
               "elite": 4,
-              "legendary": 3
+              "legendary": 2
             },
             "supportedModes": [
               "standard",
@@ -12173,7 +12171,6 @@
             },
             "supportedModes": [
               "timed",
-              "exam",
               "quiz",
               "unlimited",
               "trialGraph",
@@ -13705,5 +13702,5 @@
       "hidden": false
     }
   },
-  "policySha256": "76dc3ae88f576e1a6f950827a2c13708400a0c1fdf68ce679cafa47c623d19ac"
+  "policySha256": "5fa39cb73ac027677d25b45024d74b729081b4649e03deef137d46ac7add2efd"
 });

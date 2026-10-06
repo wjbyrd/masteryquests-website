@@ -1,0 +1,15 @@
+'use strict';
+const fs=require('fs'),path=require('path'),crypto=require('crypto');
+const H=__dirname,R=path.resolve(H,'../..'),D=path.join(R,'build/faculty-build-composer');
+const core=require(path.join(D,'composer-core.js')),h=require(path.join(D,'tests/composer-test-helpers.js')),con=require(path.join(D,'tests/composer-integrity-contracts.js'));
+const lib=h.loadComposerLibrary(),area=require(path.join(D,'course-area-model.js')).create(lib.registry.concepts),rows=con.questionRecords(lib),all=new Map(rows.map(r=>[String(r.question.id),{q:r.question,areas:new Set(),placements:[]}]));
+for(const r of rows)all.get(String(r.question.id)).placements.push({conceptId:r.conceptId,pool:r.pool});
+for(const cid of Object.keys(lib.concepts))for(const q of core.ContentScope.allQuestions(core.resolveConceptModule(lib,cid)))for(const a of area.areasFor(cid))all.get(String(q.id)).areas.add(a);
+const sha=x=>crypto.createHash('sha256').update(x).digest('hex');
+const records=[...all].map(([id,r])=>{const q=r.q,key=q.options.findIndex(o=>sha(core.normalizeAnswerText(o))===q.aHash);if(key<0)throw Error(id);return{id,q,key,areas:[...r.areas].sort(),placements:r.placements,provenance:{sourceGame:q.sourceGame,sourceCurationPhase:q.sourceCurationPhase,sourceFiles:[...new Set((q.sourceOccurrences||[]).map(s=>s.sourceFile))]},marketGateDerived:(q.sourceOccurrences||[]).some(s=>/market.?gate/i.test([s.sourceFile,s.sourceGame,s.sourceGlobal].join(' ')))||/market.?gate/i.test(q.sourceGame||'')}});
+const macro=records.filter(r=>r.areas.includes('macro')),micro=records.filter(r=>r.areas.includes('micro'));const count=(rs,fn)=>{const c={};for(const r of rs){const k=fn(r);c[k]=(c[k]||0)+1;}return c;};
+const assets=[...new Set(macro.map(r=>r.q.image).filter(Boolean))].sort().map(p=>({path:p,sha256:sha(fs.readFileSync(path.join(D,'data',p))),refs:macro.filter(r=>r.q.image===p).map(r=>r.id),microRefs:micro.filter(r=>r.q.image===p).map(r=>r.id),metadata:lib.assetInventory.find(a=>a.runtimePath===p)}));
+const result={librarySha256:lib.librarySha256,canonicalIds:records.length,storedOccurrences:rows.length,macro:macro.length,micro:micro.length,sharedMicro:macro.filter(r=>r.areas.includes('micro')).length,sharedGeneral:macro.filter(r=>r.areas.includes('general')).length,macroGraphs:macro.filter(r=>r.q.image).length,macroAssets:assets.length,marketGateDerived:macro.filter(r=>r.marketGateDerived).length,topics:count(macro,r=>r.q.primaryConceptId),roles:count(macro,r=>r.q.instructionalRole),phases:count(macro,r=>r.q.sourceCurationPhase||'(none)'),sourceGames:count(macro,r=>r.q.sourceGame||'(none)')};
+for(const id of ['42660','42697'])if(all.has(id))throw Error('Deleted ID '+id);
+for(const [name,data]of Object.entries({'records.json':records,'macro-records.json':macro,'macro-assets.json':assets,'preflight.json':result}))fs.writeFileSync(path.join(H,name),JSON.stringify(data,null,2)+'\n');
+console.log(JSON.stringify(result,null,2));
