@@ -1,7 +1,8 @@
 'use strict';
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
 const h=require('./composer-test-helpers.js'),con=require('./composer-integrity-contracts.js'),approved=require('./macro-voice-revisions.js'),visual=require('./visual-reference-integrity.js');
-const lib=h.loadComposerLibrary();approved.assertCurrentLibrary(lib);
+const pass2=require('./macro-voice2-revisions.js'),actual=h.loadComposerLibrary();pass2.assertCurrentLibrary(actual);
+const lib=pass2.beforeVoice2Library(actual);approved.assertCurrentLibrary(lib);
 const before=approved.beforeVoiceLibrary(lib),current=new Map(con.questionRecords(lib).map(r=>[String(r.question.id),r.question]));
 const macro=visual.detect(lib,'macro'),micro=visual.detect(lib,'micro'),baselineMacro=visual.detect(before,'macro');
 assert.equal(macro.mismatches.length,0,JSON.stringify(macro.mismatches));

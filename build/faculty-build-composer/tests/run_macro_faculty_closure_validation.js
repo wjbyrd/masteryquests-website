@@ -1,7 +1,8 @@
 'use strict';
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
 const h=require('./composer-test-helpers.js'),c=require('./composer-integrity-contracts.js'),core=require('../composer-core.js'),approved=require('./macro-closure-revisions.js');
-const voice=require('./macro-voice-revisions.js'),current=h.loadComposerLibrary();voice.assertCurrentLibrary(current);
+const voice=require('./macro-voice-revisions.js'),pass2=require('./macro-voice2-revisions.js'),actual=h.loadComposerLibrary();pass2.assertCurrentLibrary(actual);
+const current=pass2.beforeVoice2Library(actual);voice.assertCurrentLibrary(current);
 // Preserve the exact historical closure checks after independently verifying
 // every subsequent editorial change against its own before/after ledger.
 const lib=voice.beforeVoiceLibrary(current);approved.assertCurrentLibrary(lib);

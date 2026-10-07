@@ -1,6 +1,6 @@
 const {assertCanonicalIntegrity}=require('./composer-integrity-contracts.js');
 const fs=require('fs');
-const micro=require('./macro-voice-revisions.js');
+const micro=require('./macro-voice2-revisions.js');
 const path=require('path');
 const vm=require('vm');
 const crypto=require('crypto');

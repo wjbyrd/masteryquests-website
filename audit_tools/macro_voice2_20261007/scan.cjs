@@ -1,0 +1,20 @@
+'use strict';
+const fs=require('fs'),path=require('path'),crypto=require('crypto'),assert=require('assert/strict');
+const root=path.resolve(__dirname,'../..'),dir=path.join(root,'build/faculty-build-composer'),base=path.join(__dirname,'baseline');
+fs.mkdirSync(base,{recursive:true});for(const n of ['composer_library.js','composer_registry.json','composer_library_manifest.json','faculty-outcomes.js'])if(!fs.existsSync(path.join(base,n)))fs.copyFileSync(path.join(dir,'data',n),path.join(base,n));
+const l=JSON.parse(fs.readFileSync(path.join(base,'composer_library.js'),'utf8').slice('window.MQ_COMPOSER_LIBRARY='.length).trim().slice(0,-1));
+assert.equal(l.librarySha256,'e97c497ec01857e1bed95bfb333fcfd2095da5fffde5003b4b26eae90ab12f94');
+const core=require(path.join(dir,'composer-core.js')),con=require(path.join(dir,'tests/composer-integrity-contracts.js')),style=require(path.join(dir,'tests/faculty-prose-candidates.js')),area=require(path.join(dir,'course-area-model.js')).create(l.registry.concepts);
+const sha=s=>crypto.createHash('sha256').update(s).digest('hex'),all=new Map();
+for(const r of con.questionRecords(l)){const id=String(r.question.id);if(all.has(id))assert.deepEqual(all.get(id).q,r.question);else all.set(id,{id,q:r.question,areas:new Set(),placements:[]});all.get(id).placements.push({conceptId:r.conceptId,pool:r.pool});}
+for(const cid of Object.keys(l.concepts))for(const q of core.ContentScope.allQuestions(core.resolveConceptModule(l,cid)))for(const a of area.areasFor(cid))all.get(String(q.id)).areas.add(a);
+const records=[...all.values()].map(r=>({...r,areas:[...r.areas].sort(),key:r.q.options.findIndex(o=>sha(core.normalizeAnswerText(o))===r.q.aHash),marketGateDerived:(r.q.sourceOccurrences||[]).some(s=>/market.?gate/i.test([s.sourceFile,s.sourceGame,s.sourceGlobal].join(' ')))||/market.?gate/i.test(r.q.sourceGame||'')}));
+const exact=['PMOE-FX-B1-003','LG-Q-9024','ECON-SP-EASYBOSS-2014','PMOE-POL-L-003','43263','43261','ECON-NL-SUBSTITUTION-BIAS-6011','LG-B-6023','ECON-SP-ELITE-320'];
+const macro=records.filter(r=>r.areas.includes('macro')).map(r=>({...r,metrics:style.screen(r.q,r.key)}));
+const candidates=macro.filter(r=>r.metrics.flags.length||r.metrics.lengthOutlier||exact.includes(r.id));
+const write=(n,x)=>fs.writeFileSync(path.join(__dirname,n),JSON.stringify(x,null,2)+'\n');
+write('records.json',records);write('candidates.json',candidates);write('exact-items.json',macro.filter(r=>exact.includes(r.id)));
+const summary={librarySha256:l.librarySha256,canonical:records.length,macro:macro.length,candidateStems:macro.filter(r=>r.metrics.stemFlags.length).length,answerLengthOutliers:macro.filter(r=>r.metrics.lengthOutlier).length,candidates:candidates.length,editableCandidates:candidates.filter(r=>!r.marketGateDerived&&!r.areas.includes('micro')).length,protectedCandidates:candidates.filter(r=>r.marketGateDerived||r.areas.includes('micro')).length,patterns:Object.fromEntries([...new Set(macro.flatMap(r=>r.metrics.flags))].map(k=>[k,macro.filter(r=>r.metrics.flags.includes(k)).length]))};write('scan-summary.json',summary);
+const prior=path.join(root,'faculty_exports/validation_summary.json');if(fs.existsSync(prior)&&!fs.existsSync(path.join(__dirname,'baseline-pages.json')))write('baseline-pages.json',JSON.parse(fs.readFileSync(prior,'utf8')).disciplines.macro.question_pages);
+fs.writeFileSync(path.join(__dirname,'candidates.txt'),candidates.map(r=>`${r.id} | ${r.q.primaryConceptId} | ${r.q.canonicalDifficulty} | ${r.metrics.flags.join(',')} | keyWords=${r.metrics.correctWords}/${r.metrics.medianDistractorWords} | protected=${r.marketGateDerived||r.areas.includes('micro')}\n${r.q.q}\n${r.q.options.map((s,i)=>(i===r.key?'*':' ')+i+': '+s).join('\n')}\nFeedback: ${r.q.feedback}\n`).join('\n'));
+console.log(JSON.stringify(summary,null,2));console.log('Exact memberships',macro.filter(r=>exact.includes(r.id)).map(r=>[r.id,r.areas,r.marketGateDerived]));

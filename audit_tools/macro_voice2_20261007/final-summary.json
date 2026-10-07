@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "macroScanned": 4747,
+  "candidateStems": 277,
+  "lengthOutliersBefore": 175,
+  "lengthOutliersAfter": 98,
+  "uniqueCandidates": 439,
+  "changed": 105,
+  "repairCounts": {
+    "noun stack": 18,
+    "actor wrapper": 2,
+    "answer-choice parallelism": 84,
+    "internal taxonomy": 12,
+    "overloaded multi-task": 2,
+    "difficulty": 3,
+    "graph narration": 2
+  },
+  "candidateDispositions": {
+    "EDIT": 105,
+    "KEEP \u2014 economic context": 186,
+    "KEEP \u2014 protected": 129,
+    "KEEP \u2014 shared General/Macro": 19
+  },
+  "sharedCandidatesProtected": 148,
+  "microSharedCandidatesProtected": 124,
+  "microFrozen": 6297,
+  "generalFrozen": 1589,
+  "marketGateFrozen": 541,
+  "graphAssetEntriesUnchanged": 520,
+  "composerSuites": 32,
+  "exporterTests": 25,
+  "unresolvedFacultyDecisions": 0,
+  "exports": {
+    "general": {
+      "questions": 1589,
+      "pages": 825,
+      "fullCsvParity": true
+    },
+    "micro": {
+      "questions": 6297,
+      "pages": 3476,
+      "fullCsvParity": true
+    },
+    "macro": {
+      "questions": 4747,
+      "pages": 2499,
+      "fullCsvParity": true
+    }
+  },
+  "librarySha256": "d03f2ca2f05b4fb927a8d88c71fd744405e69672dc05d4c6681289eb1b4b8a14"
+}

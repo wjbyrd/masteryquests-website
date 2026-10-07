@@ -1,0 +1,1436 @@
+{
+  "PMOE-FX-B1-003": {
+    "patterns": [
+      "internal taxonomy",
+      "noun stack"
+    ],
+    "rationales": [
+      "Faculty repair: ask directly about the determinant of currency supply; preserve the Easy checkpoint.",
+      "Replace the compressed curve label with ordinary prose."
+    ],
+    "q": "In the standard open-economy model, what causes the supply of dollars in the foreign-exchange market to shift?",
+    "options": [
+      "A change in net capital outflow.",
+      "A change in the current exchange rate.",
+      "A change in domestic consumption alone.",
+      "A change in the domestic price level alone."
+    ],
+    "feedback": "Net capital outflow determines the supply of domestic currency in the foreign-exchange market. A change in net capital outflow shifts that supply."
+  },
+  "LG-Q-9024": {
+    "patterns": [
+      "internal taxonomy",
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Faculty repair: ask why actual deposit expansion can fall short of the simple multiplier prediction.",
+      "Give all four alternatives a direct causal form without adding explanation only to the key."
+    ],
+    "q": "Why can the actual increase in bank deposits be smaller than the simple money multiplier predicts?",
+    "options": [
+      "Banks may hold excess reserves, and the public may hold some funds as currency.",
+      "Fractional reserve banking gives the Fed exact control over the quantity of bank deposits.",
+      "The simple money multiplier applies only when banks lend commodity money to the public.",
+      "Currency withdrawn by the public adds to bank reserves and allows banks to lend more."
+    ]
+  },
+  "ECON-SP-EASYBOSS-2014": {
+    "patterns": [
+      "internal taxonomy"
+    ],
+    "rationales": [
+      "Faculty repair: state the reserve and currency leakages and ask for the resulting money increase; preserve the checkpoint."
+    ],
+    "q": "After the Fed buys bonds, banks hold some of the additional reserves as excess reserves and households keep some of the proceeds as currency. How will the resulting increase in the money supply compare with the simple multiplier prediction?"
+  },
+  "PMOE-POL-L-003": {
+    "patterns": [
+      "overloaded multi-task",
+      "answer-choice parallelism",
+      "difficulty"
+    ],
+    "rationales": [
+      "Faculty repair: make the observed $20 billion rebound one accounting-consistency decision. The required $27 billion and the $7 billion discrepancy remain in feedback.",
+      "Use four consistency judgments; keep the correct index and all relevant numerical alternatives.",
+      "Legendary → Hard: one NX = S − I consistency task requires signed import/export arithmetic, not independent mechanisms or advanced transfer."
+    ],
+    "q": "A trade restriction initially lowers targeted imports by $64 billion. After exchange-rate adjustment, exports are $37 billion lower. Saving and investment are unchanged. If other imports rise by only $20 billion, what does this imply?",
+    "options": [
+      "The figures are consistent: unchanged net exports require other imports to rise by $101 billion.",
+      "The figures are consistent: the $20 billion increase leaves net exports unchanged.",
+      "The figures are inconsistent: unchanged net exports require other imports to rise by $27 billion.",
+      "The figures imply greater net capital outflow: unchanged net exports require a $37 billion increase."
+    ],
+    "difficulty": "hard",
+    "canonicalDifficulty": "hard"
+  },
+  "43263": {
+    "patterns": [
+      "noun stack",
+      "internal taxonomy"
+    ],
+    "rationales": [
+      "Faculty repair: describe the household incentive and ask directly about loanable funds.",
+      "Remove the internal loanable-funds effect label."
+    ],
+    "q": "A tax incentive encourages households to save more for retirement. What happens in the market for loanable funds?"
+  },
+  "43261": {
+    "patterns": [
+      "actor wrapper",
+      "noun stack",
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Faculty repair: ask directly whether the equilibrium change measures the shift at a common interest rate.",
+      "Replace saving-supply shift with a direct description of supply.",
+      "State the competing measurements concisely; the original feedback explains the equilibrium movement and the 40-unit shift."
+    ],
+    "q": "In the graph, the equilibrium quantity of loanable funds falls from 100 to 80. Does this mean the supply of loanable funds shifted left by 20 units?",
+    "options": [
+      "No. At a common interest rate, supply shifts left by 60 units.",
+      "No. At a common interest rate, supply shifts left by 40 units.",
+      "Yes. With investment demand fixed, the equilibrium decline measures the supply shift.",
+      "No. The 40-unit horizontal difference measures a shift in investment demand."
+    ]
+  },
+  "ECON-NL-SUBSTITUTION-BIAS-6011": {
+    "patterns": [
+      "difficulty"
+    ],
+    "rationales": [
+      "Faculty decision: Medium → Hard. Compare changes in the original and equally satisfactory substitute baskets, then interpret their difference as substitution bias. Keep bridge placement and structural difficulty label."
+    ],
+    "canonicalDifficulty": "hard"
+  },
+  "LG-B-6023": {
+    "patterns": [
+      "internal taxonomy",
+      "noun stack"
+    ],
+    "rationales": [
+      "Faculty repair: state fixed prices as an assumption. Retain that $80 is the total crowding-out offset including induced effects, so it is not multiplied again.",
+      "Replace the planning-model label with the economic assumption."
+    ],
+    "q": "An economy has a $250 demand gap. Fiscal policy would increase aggregate demand by $300, but crowding out reduces that increase by a total of $80, including induced spending effects. Assume the price level is fixed. How much of the original demand gap remains?"
+  },
+  "ECON-SP-ELITE-320": {
+    "patterns": [
+      "graph narration",
+      "answer-choice parallelism",
+      "overloaded multi-task",
+      "noun stack",
+      "difficulty"
+    ],
+    "rationales": [
+      "Faculty repair: retain the three economically necessary stages and price-P comparison, but remove repeated narration of the figure.",
+      "Faculty alternatives keep explanations in feedback and make the four bounds parallel.",
+      "Ask for the bound once; explain why in feedback.",
+      "Replace induced-spending gain with ordinary explanatory prose.",
+      "Elite → Hard: interpret horizontal graph distances and apply a bounded crowding-out condition. The shorter task requires substantive graph reasoning but no competing unknown mechanisms."
+    ],
+    "q": "The graph shows aggregate demand before fiscal expansion (AD1), after the direct increase in government purchases (AD2), and after the multiplier effect (AD3). At price P, how large can a positive crowding-out effect be if final demand must remain strictly between AD2 and AD3?",
+    "options": [
+      "Less than about half of the total increase.",
+      "Exactly half of the total increase.",
+      "More than half but less than the total increase.",
+      "Equal to the total increase."
+    ],
+    "feedback": "At price P, the AD2-to-AD3 distance is approximately half of the full AD1-to-AD3 increase. Positive crowding out moves demand left from AD3. To remain strictly between AD2 and AD3, that reduction must be smaller than the AD2-to-AD3 distance, leaving some of the additional spending generated by the multiplier.",
+    "difficulty": "hard",
+    "canonicalDifficulty": "hard"
+  },
+  "PMOE-FX-E-002": {
+    "patterns": [
+      "internal taxonomy"
+    ],
+    "rationales": [
+      "Replace the internal model label with the standard economic setting."
+    ],
+    "q": "In the standard open-economy model, what determines the supply of domestic currency in the foreign-exchange market?"
+  },
+  "PMOE-FX-R-001": {
+    "patterns": [
+      "internal taxonomy"
+    ],
+    "rationales": [
+      "Retain the genuine mistaken claim about vertical supply; name the model naturally."
+    ],
+    "q": "In the standard open-economy model, net capital outflow is fixed. A student says a higher exchange rate must increase the quantity supplied. Which correction distinguishes a movement along vertical supply from a shift?"
+  },
+  "PMOE-FX-L-005": {
+    "patterns": [
+      "noun stack"
+    ],
+    "rationales": [
+      "Retain the vertical-supply assumption, competing forces and inference task; expand the compressed noun phrase."
+    ],
+    "q": "Use the foreign-exchange model in which net capital outflow determines a vertical supply curve for domestic currency. The domestic real interest rate rises, while a separate increase in risk makes investors want to send more funds abroad at each interest rate. The final supply curve for domestic currency lies to the right of its original position. With domestic and foreign price levels fixed and demand for domestic currency unchanged, what does this tell us about the two effects on net capital outflow and the exchange rate?"
+  },
+  "ECON-SP-FINALBOSS-4000": {
+    "patterns": [
+      "internal taxonomy",
+      "noun stack"
+    ],
+    "rationales": [
+      "Keep the immediate-versus-delayed policy comparison and all checkpoint routing; state the price assumption naturally.",
+      "Remove the planning-model noun stack."
+    ],
+    "q": "A negative demand shock creates an $80 recessionary gap with falling inflation; capacity is unchanged. Assume the price level is fixed and MPC is 0.75. An increase in government purchases of $20 can take effect immediately, or the same program can take effect after the gap is forecast to close. Would the program close the recessionary gap if it took effect immediately, and what risk would it create if it took effect after recovery?"
+  },
+  "ECON-SP-FINALBOSS-4019": {
+    "patterns": [
+      "internal taxonomy",
+      "noun stack"
+    ],
+    "rationales": [
+      "Keep the immediate-versus-delayed policy comparison and all checkpoint routing; state the price assumption naturally.",
+      "Remove the planning-model noun stack."
+    ],
+    "q": "A negative demand shock creates a $560 recessionary gap with falling inflation; capacity is unchanged. Assume the price level is fixed and MPC is 0.75. An increase in government purchases of $140 can take effect immediately, or the same program can take effect after the gap is forecast to close. Would the program close the recessionary gap if it took effect immediately, and what risk would it create if it took effect after recovery?"
+  },
+  "PM2E-CH-OPEN-001": {
+    "patterns": [
+      "internal taxonomy",
+      "noun stack"
+    ],
+    "rationales": [
+      "Keep the immediate-versus-delayed policy comparison and all checkpoint routing; state the price assumption naturally.",
+      "Remove the planning-model noun stack."
+    ],
+    "q": "A negative demand shock creates a $1520 recessionary gap with falling inflation; capacity is unchanged. Assume the price level is fixed and MPC is 0.75. An increase in government purchases of $380 can take effect immediately, or the same program can take effect after the gap is forecast to close. Would the program close the recessionary gap if it took effect immediately, and what risk would it create if it took effect after recovery?"
+  },
+  "ECON-SP-LEGENDARYBOSS-9113": {
+    "patterns": [
+      "internal taxonomy",
+      "noun stack"
+    ],
+    "rationales": [
+      "Keep the immediate-versus-delayed policy comparison and all checkpoint routing; state the price assumption naturally.",
+      "Remove the planning-model noun stack."
+    ],
+    "q": "A negative demand shock creates a $1040 recessionary gap with falling inflation; capacity is unchanged. Assume the price level is fixed and MPC is 0.75. An increase in government purchases of $260 can take effect immediately, or the same program can take effect after the gap is forecast to close. Would the program close the recessionary gap if it took effect immediately, and what risk would it create if it took effect after recovery?"
+  },
+  "LG-Q-255": {
+    "patterns": [
+      "internal taxonomy",
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Ask directly about the long-run effects instead of naming two curriculum constructs.",
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "q": "In the long run, how does money growth affect prices and real output?",
+    "options": [
+      "It mainly affects prices; real output depends on real resources and productivity.",
+      "Money growth permanently raises real output and leaves prices unchanged.",
+      "Money growth lowers all nominal variables and raises real wages.",
+      "Money growth has no effect on nominal or real variables."
+    ]
+  },
+  "43246": {
+    "patterns": [
+      "noun stack"
+    ],
+    "rationales": [
+      "Expand the compressed noun phrase without changing the shift, movement, direction or numerical reasoning."
+    ],
+    "options": [
+      "A shift in the supply of loanable funds",
+      "An shift in the demand for loanable funds",
+      "Movement along the saving curve",
+      "A change in public saving"
+    ]
+  },
+  "43219": {
+    "patterns": [
+      "noun stack"
+    ],
+    "rationales": [
+      "Expand the compressed noun phrase without changing the shift, movement, direction or numerical reasoning."
+    ],
+    "feedback": "On S0, a 10 percent rate corresponds to 180 units. Old D0 demands 100 units at that rate, so the new demand schedule must be 80 units to the right. Equilibrium investment rises from 140 to 180, or 40 units. The unchanged saving schedule accommodates that quantity through a rate-induced movement; an accounting identity does not force a shift in the supply of loanable funds."
+  },
+  "43276": {
+    "patterns": [
+      "noun stack"
+    ],
+    "rationales": [
+      "Expand the compressed noun phrase without changing the shift, movement, direction or numerical reasoning."
+    ],
+    "feedback": "A leftward shift in investment demand lowers both the real rate and equilibrium quantity on an upward-sloping saving-supply curve."
+  },
+  "43281": {
+    "patterns": [
+      "noun stack"
+    ],
+    "rationales": [
+      "Expand the compressed noun phrase without changing the shift, movement, direction or numerical reasoning."
+    ],
+    "feedback": "With supply fixed, a leftward shift in investment demand lowers both equilibrium variables. Weaker sales expectations provide the causal determinant; the rate change itself produces movement along demand."
+  },
+  "43257": {
+    "patterns": [
+      "noun stack"
+    ],
+    "rationales": [
+      "Expand the compressed noun phrase without changing the shift, movement, direction or numerical reasoning."
+    ],
+    "feedback": "At any given rate, the change in national saving is −55 + 15 = −$40 billion, matching the horizontal distance between S0 and S1. The marked equilibria move from 100 to 80, so investment falls by $20 billion. The higher rate partly offsets the supply reduction by inducing additional saving along the shifted schedule."
+  },
+  "43307": {
+    "patterns": [
+      "noun stack"
+    ],
+    "rationales": [
+      "Expand the compressed noun phrase without changing the shift, movement, direction or numerical reasoning."
+    ],
+    "options": [
+      "The saving shift is absent because the real rate did not fall",
+      "The shift in investment demand dominates, so the real rate must rise above 6 percent",
+      "Both shifts reduce quantity, but equal magnitudes conceal the decline",
+      "The rate pressures offset while both shifts raise quantity"
+    ]
+  },
+  "43203": {
+    "patterns": [
+      "noun stack"
+    ],
+    "rationales": [
+      "Expand the compressed noun phrase without changing the shift, movement, direction or numerical reasoning."
+    ],
+    "q": "In a closed economy, at every given real interest rate, planned private saving rises by $20 billion while public saving falls by $35 billion. At the same time, new technology raises desired investment. What can be concluded without knowing how much investment demand increases?"
+  },
+  "43255": {
+    "patterns": [
+      "actor wrapper",
+      "noun stack"
+    ],
+    "rationales": [
+      "Ask directly how to classify the graph change; preserve the distinction between a movement along D0 and a shift.",
+      "Describe the saving increase directly in both parallel alternatives."
+    ],
+    "q": "How should the increase in investment from A to B in the graph be classified?",
+    "options": [
+      "Investment rises by 80 units along D0 because increased saving lowers the interest rate.",
+      "Investment rises by 40 units because a lower rate shifts D0 right at every real rate.",
+      "Investment rises by 40 units because stronger project profitability shifts D0 while S0 stays fixed.",
+      "Investment rises by 40 units along D0 because increased saving lowers the interest rate."
+    ]
+  },
+  "PG3-MEQ-L-004": {
+    "patterns": [
+      "graph narration"
+    ],
+    "rationales": [
+      "Remove redundant point-list narration; retain the persistent supply shock, both fiscal targets and permission to extend the straight supply line."
+    ],
+    "q": "A supply disruption shifts AS0 to AS1, moving the economy from A to D. AS1 remains fixed. Using its straight line, extended if needed, what would fiscal policy require to restore the original output versus the original price level?"
+  },
+  "PM2D1-LRADJ-H-001": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "Destroyed capital can shift LRAS left and lower potential output.",
+      "Any fall in real GDP forces aggregate demand to shift permanently left.",
+      "Nominal wages cannot adjust after a supply-side disturbance.",
+      "SRAS always shifts right enough to restore the pre-shock LRAS position."
+    ]
+  },
+  "PM2D1-LRADJ-FB-005": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "Check whether lower productive capacity shifted LRAS left.",
+      "Assume every output decline is caused by aggregate demand.",
+      "Hold LRAS fixed because productive capacity cannot change.",
+      "Assume falling wages always restore the pre-shock quantity of labor and output."
+    ]
+  },
+  "P52A-AD-B3-002": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "No change because the effects are equal",
+      "Ambiguous; the two effects oppose each other.",
+      "Certainly rightward",
+      "Certainly leftward"
+    ]
+  },
+  "ECON-NL-EASY-21": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "The cost of a fixed consumer basket over time",
+      "The unemployment rate",
+      "The value of exports",
+      "The number of workers in the labor force"
+    ]
+  },
+  "P52A-CPI-H-006": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "‘Food must dominate because there are more units.’",
+      "The CPI change depends on each item’s expenditure weight.",
+      "‘The CPI must rise 40 percent.’",
+      "‘The two percentage changes should be averaged equally.’"
+    ]
+  },
+  "ECON-NL-EASY-28": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "The CPI may miss their added choice and purchasing power",
+      "New goods are always intermediate goods",
+      "New goods are never consumed",
+      "New goods only affect unemployment"
+    ]
+  },
+  "ECON-NL-MEDIUM-128": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "The CPI may miss gains from variety and purchasing power",
+      "The CPI counts only unemployment",
+      "The CPI automatically falls to zero",
+      "The new product must be an intermediate good"
+    ]
+  },
+  "ECON-NL-ELITE-328": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "Some of the price increase may reflect improved quality",
+      "The CPI must ignore the laptop because quality changed",
+      "The GDP deflator counts it as unemployment",
+      "The real price definitely rose by 25%"
+    ]
+  },
+  "ECON-NL-LEGENDARY-9034": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "Their baskets differ; the CPI’s fixed basket can introduce bias",
+      "Both measure the exact same goods but use different names",
+      "The GDP deflator measures unemployment",
+      "The CPI measures only exports"
+    ]
+  },
+  "P52B-S3-MEQS-B3-003": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "The price level may rise further.",
+      "Unemployment must rise because aggregate demand increased.",
+      "Short-run aggregate supply automatically returns to its old position.",
+      "The economy must move below potential output."
+    ]
+  },
+  "PM2A-DIS-LB-018": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "Yes. Returning to the natural rate erases all unemployment experienced earlier, regardless of duration.",
+      "No. The higher price index proves unemployment is still above its natural rate.",
+      "No. Returning to natural unemployment does not reveal the cumulative transition cost.",
+      "Yes. Inflation of 2% means the price index is falling back toward 240, compensating workers for every earlier loss."
+    ]
+  },
+  "PM2A-DIS-LB-020": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "Yes. The plan with the higher final price level necessarily had more excess unemployment.",
+      "No. Comparing costs requires the size and duration of excess unemployment under each plan.",
+      "Yes. A return to natural unemployment means every plan reaching it has zero cumulative cost.",
+      "No. Comparing costs is impossible because 1% inflation necessarily means deflation rather than disinflation."
+    ]
+  },
+  "ECON-NL-MEDIUM-156": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "Weakening property rights",
+      "Improving education",
+      "Encouraging saving",
+      "Supporting research and development"
+    ]
+  },
+  "PM2B3-POL-L-002": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "The temporary subsidy guarantees a permanently higher growth rate even after capital deepening slows",
+      "Research and education matter only for short-run aggregate demand",
+      "Institutions become irrelevant once the capital stock has increased",
+      "More capital raises output, but does not guarantee sustained productivity growth."
+    ]
+  },
+  "LG-Q-9066": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "AD shifts right $70 billion directly and $350 billion in total.",
+      "AD first shifts right by $350 billion, then shifts back to $70 billion.",
+      "AD shifts left by $70 billion, then left by $350 billion.",
+      "AD does not shift because the multiplier only affects money demand."
+    ]
+  },
+  "LG-Q-9073": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "Direct increase: $100 billion; gross increase: $250 billion; net increase: $175 billion.",
+      "AD first shifts right $250 billion, then crowding out increases it to $325 billion.",
+      "AD first shifts left $100 billion, then the multiplier pushes it left $250 billion, then crowding out leaves $175 billion.",
+      "AD shifts right $100 billion only because crowding out cancels the multiplier."
+    ]
+  },
+  "P52A-FISCAD-EL-002": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "The long-run natural rate of output",
+      "Whether government purchases are counted in GDP",
+      "Only the statutory size of the tax cut",
+      "The allocation between the two groups"
+    ]
+  },
+  "PM2C2-FISH-M-003": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "The Fisher effect uses actual inflation only and ignores expectations.",
+      "Unexpected inflation raises both parties’ realized real returns by the same amount.",
+      "Expected inflation influenced the nominal rate; actual inflation determines the realized real return.",
+      "The nominal rate must be rewritten after actual inflation is observed so the original expected rate no longer matters."
+    ]
+  },
+  "PM2C2-FISH-L-002": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "It must be unchanged because identical expected inflation always forces identical nominal interest rates even when real saving and investment conditions differ.",
+      "It must be lower because stronger investment demand reduces nominal rates.",
+      "It must equal expected inflation because real rates disappear in the long run.",
+      "It should rise because the equilibrium real interest rate rose."
+    ]
+  },
+  "PMOE-FX-EL-001": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "Whether supply contracted more than demand at the original exchange rate",
+      "Whether both original curves had the same slope sign",
+      "Whether dollar quantity fell, since that alone determines appreciation",
+      "Whether demand shifted before supply, regardless of final curves"
+    ]
+  },
+  "ECON-NL-HARD-211": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "Consumption: +$40,000; net exports: −$40,000; GDP: unchanged",
+      "Consumption rises and GDP rises by $40,000",
+      "Investment rises and imports are ignored",
+      "Government purchases rise and GDP is unchanged"
+    ]
+  },
+  "ECON-NL-ELITE-312": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "The condo counts as investment; the tax is excluded",
+      "Both count as consumption",
+      "The condo is consumption and the tax is government purchases",
+      "Neither counts"
+    ]
+  },
+  "ECON-NL-EASY-1": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "A buyer’s spending becomes a seller’s income",
+      "Government sets income equal to spending",
+      "Exports always equal imports",
+      "Savings are never counted"
+    ]
+  },
+  "ECON-NL-MEDIUM-102": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "A customer spends $40 on a meal, giving the restaurant $40 in revenue",
+      "A used car is resold and counted twice in GDP",
+      "A government transfer payment raises GDP directly",
+      "A household saves money under a mattress"
+    ]
+  },
+  "ECON-NL-LEGENDARYBOSS-9102": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "No. The farm adds $48, bringing total value added to $88.",
+      "Yes. Intermediate producers add nothing to GDP, so only downstream value added counts.",
+      "No. All three gross sales should be added, making GDP $199.",
+      "Yes. The farm's $48 has already been counted in the mill's $15 of value added."
+    ]
+  },
+  "PM2B2-INDEX-LB-001": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "Yes. Any current-period CPI adjustment preserves every person's purchasing power regardless of consumption patterns.",
+      "No. The original 4% adjustment already raises real purchasing power by about 1.9%, making catch-up unnecessary.",
+      "Yes. Removing the lag also forces every household's cost-of-living increase to equal CPI.",
+      "No. Current CPI can still understate this recipient’s cost increase."
+    ]
+  },
+  "LG-Q-247": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "Inflation leads firms to spend resources updating prices.",
+      "Inflation reduces borrowing costs, so firms buy more menus.",
+      "Inflation eliminates relative price changes.",
+      "Inflation makes prices unnecessary."
+    ]
+  },
+  "LG-Q-345": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "Individual prices adjust at different times and rates.",
+      "All individual prices change by exactly the same amount every second.",
+      "Relative prices are nominal variables only.",
+      "Inflation eliminates scarcity."
+    ]
+  },
+  "LG-Q-248": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "Because individual prices adjust at different times and rates.",
+      "Because all real prices are legally fixed.",
+      "Because inflation makes money demand disappear.",
+      "Because every nominal price changes perfectly together every second."
+    ]
+  },
+  "PM2C2-ICOST-H-001": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "Unexpected inflation benefits the borrower; repricing uses real resources even when inflation is anticipated.",
+      "Both effects are examples only of shoeleather costs.",
+      "The surprise benefits the lender, while repricing raises real output automatically.",
+      "Neither effect is an inflation cost unless the price level actually falls, because rising prices cannot redistribute purchasing power or use real resources."
+    ]
+  },
+  "ECON-SP-LEGENDARYBOSS-9101": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "Both lose 6% cumulatively and have the same cumulative sacrifice ratio",
+      "A’s cumulative loss is 0%, because only its final year counts",
+      "B’s cumulative loss is 2%, because repeated losses count once",
+      "A’s cumulative loss is greater than B’s because its first loss is greater"
+    ]
+  },
+  "PMOE-TX-H-003": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "The deficit proves national saving exceeds domestic investment",
+      "It shows imports exceed exports, without establishing the change in domestic output",
+      "The claim is correct because imports are subtracted from GDP",
+      "A trade deficit means domestic consumption must be falling"
+    ]
+  },
+  "PMOE-TX-EL-001": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "NCO must fall because foreign asset purchases increased",
+      "NX and NCO can take different values because both sides changed",
+      "Their signs are uncertain, but NX and NCO must be equal",
+      "NX must rise because exports increased"
+    ]
+  },
+  "ECON-NL-EASY-78": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "Creates excess labor supply at an above-equilibrium wage",
+      "Lowers wages below equilibrium",
+      "Increases labor demand above labor supply",
+      "Makes all workers employed"
+    ]
+  },
+  "ECON-NL-MEDIUM-176": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "It supports income while workers seek better matches",
+      "It eliminates structural mismatch immediately",
+      "It forces all firms to hire",
+      "It lowers the labor force to zero"
+    ]
+  },
+  "ECON-NL-LEGENDARY-9077": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "Duration fell, but the benefit extension’s separate effect is unknown",
+      "The fall proves benefit extensions always shorten search",
+      "The extension must have been ineffective at protecting income because duration fell",
+      "The placement program cannot matter because benefits determine every search decision"
+    ]
+  },
+  "PM2C3-LPMM-L-002": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "There is excess money demand, so households sell interest-bearing assets; bond prices fall and the interest rate rises farther above r4 before the market can clear.",
+      "Point b is already the equilibrium because it lies on MS2.",
+      "Money demand must shift right again before the interest rate can change.",
+      "Excess money supply prompts asset purchases, lowering interest toward r3."
+    ]
+  },
+  "PM2C3-LPMM-L-003": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "The market remains at r1 because a vertical money-supply curve prevents interest-rate adjustment.",
+      "The central bank must reduce the fixed money supply before households can obtain enough money balances and the interest rate can move back toward equilibrium.",
+      "Excess money demand prompts asset sales, raising the interest rate toward r2.",
+      "Quantity of money supplied exceeds money demanded, so asset purchases push the interest rate lower."
+    ]
+  },
+  "PM2C3-LPMM-L-005": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "A lower interest rate means movement along money demand, unless another determinant changed.",
+      "The student is correct because any fall in interest rates shifts the entire money-demand curve left at every quantity, even when income and the price level are unchanged.",
+      "Money demand shifts right whenever money supply increases.",
+      "Money demand becomes horizontal after an expansionary money-supply change."
+    ]
+  },
+  "ECON-NL-LEGENDARY-9047": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "No. Cedar averages $25,000 and Delta $20,000; neither average describes every resident.",
+      "Yes. Once the average is deflated, it gives the real income of each individual resident.",
+      "No. Both averages are $30,000 because comparable base prices make deflation unnecessary.",
+      "Yes. Delta's larger nominal GDP necessarily means every Cedar resident is poorer regardless of population."
+    ]
+  },
+  "PM2D1-LRADJ-M-001": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "Rising wages and input costs shift SRAS left; AD stays unchanged.",
+      "Aggregate demand shifts left automatically as soon as wages rise.",
+      "LRAS shifts right because the economy briefly produced above potential.",
+      "SRAS shifts right because firms respond to the higher price level by cutting costs."
+    ]
+  },
+  "LG-Q-216": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "makes holding reserves more attractive relative to lending",
+      "forces households to hold more commodity money",
+      "automatically lowers all taxes",
+      "makes money demand zero"
+    ]
+  },
+  "LG-Q-227": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "Creating money does not automatically create real goods and services.",
+      "Every bank loan creates new factories instantly.",
+      "Money creation permanently increases real output without limits.",
+      "The money supply is unrelated to prices or output."
+    ]
+  },
+  "LG-Q-327": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "Banks may still consider borrowers too risky.",
+      "Lower borrowing costs always force banks to lend.",
+      "The discount rate controls tax rates, not bank borrowing.",
+      "Lower discount rates automatically create commodity money."
+    ]
+  },
+  "LG-Q-9015": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "Risk concerns can outweigh the incentive of cheaper borrowing.",
+      "The discount rate only affects fiscal policy.",
+      "Lower discount rates always force borrowing.",
+      "Reserve shortfalls increase lending capacity."
+    ]
+  },
+  "LG-Q-137": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "Money growth can raise nominal wages while long-run real wages stay unchanged.",
+      "Money growth changes only real variables and never nominal variables.",
+      "Nominal and real variables are always identical.",
+      "The price level is a real variable."
+    ]
+  },
+  "PM2C2-NEUT-M-001": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "It can return to about its previous level.",
+      "It must rise in the same proportion as the nominal wage because a larger dollar wage always guarantees more purchasing power.",
+      "It must fall to zero because money growth raises prices.",
+      "It becomes equal to the money-supply growth rate."
+    ]
+  },
+  "LG-Q-9113": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "No. Excess reserves fall from $220 to $110, but lending was already constrained by credit standards.",
+      "Yes. Every dollar decline in excess reserves must remove a dollar of loans regardless of borrower quality.",
+      "No. Excess reserves rise to $330 because the larger requirement increases lending capacity.",
+      "Yes. The requirement writes down bank capital by $110, forcing the same loan reduction."
+    ]
+  },
+  "ECON-SP-CHOOSE-FED-TOOL-EFFECT-6007": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "Reserves can rise while deposit expansion falls short of the simple multiplier prediction",
+      "The asset purchase failed to change reserves, so it was not a monetary-policy action",
+      "Holding excess reserves forces the money multiplier above its simple maximum",
+      "A central-bank asset purchase automatically becomes fiscal policy when banks do not lend"
+    ]
+  },
+  "LG-Q-265": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "Near-zero interest rates leave little room for traditional cuts.",
+      "Money demand is always upward sloping.",
+      "Fiscal policy stops affecting AD.",
+      "The money supply cannot be changed by any central bank."
+    ]
+  },
+  "LG-Q-366": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "Lowering interest rates enough to stimulate investment",
+      "The identity that AD includes investment",
+      "The fact that money demand exists",
+      "The ability of government spending to enter AD"
+    ]
+  },
+  "LG-Q-1": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "It serves as a medium of exchange",
+      "It serves only as a store of value, so neither trader has to exchange anything",
+      "It makes every good part of M1, so barter becomes unnecessary",
+      "It guarantees that the relative price of wheat and shoes never changes"
+    ]
+  },
+  "LG-Q-107": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "Bank-held currency is reserves; public-held currency is circulating money.",
+      "Currency held by banks is automatically counted twice in M1.",
+      "Currency held by banks is commodity money.",
+      "Currency held by banks is never money."
+    ]
+  },
+  "PMOE-POL-L-004": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "It is unchanged because the two effects necessarily offset each other",
+      "Its direction is uncertain because the two forces affect NCO in opposite directions",
+      "It appreciates because the interest-rate effect must dominate the risk effect",
+      "It depreciates because political risk affects currency demand but not capital flows"
+    ]
+  },
+  "PMOE-POL-L-001": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "NCO may rise; the deficit alone cannot establish the currency or NX response",
+      "NCO falls because the budget deficit initiates the domestic saving channel",
+      "The currency appreciates because increases in both rates favor domestic assets",
+      "NX falls by the deficit change because fiscal and trade balances move together"
+    ]
+  },
+  "PMOE-POL-LB-003": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "It rises $45 billion; the demand shock changes the exchange rate",
+      "It rises by an unknown amount because demand sets NX independently",
+      "It is unchanged because the two FX shifts offset",
+      "It falls $45 billion because currency supply rises"
+    ]
+  },
+  "PMOE-POL-BR-001": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "The direction is uncertain: higher government purchases compete with lower investment and net exports",
+      "Real appreciation proves the NX decline exceeds the government-purchases increase",
+      "Higher government purchases prove total AD rises regardless of crowding out and NX",
+      "Lower domestic investment shifts short-run aggregate supply rather than any AD component"
+    ]
+  },
+  "ECON-NL-EASY-47": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "It allows more output per worker",
+      "Higher productivity always means higher inflation",
+      "Productivity only affects imports",
+      "Productivity measures joblessness"
+    ]
+  },
+  "LG-Q-230": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "spending or lending it, raising demand and prices",
+      "holding it forever, pushing prices down",
+      "destroying it, lowering nominal GDP",
+      "turning it into real output automatically"
+    ]
+  },
+  "LG-Q-9027": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "People spend or lend excess money, raising demand and prices until the money market clears.",
+      "People destroy excess balances, lowering prices until value of money falls.",
+      "The Fed automatically shifts money demand left.",
+      "Output permanently doubles, leaving prices unchanged."
+    ]
+  },
+  "LG-Q-329": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "Real factors determine long-run output; extra money mainly raises prices.",
+      "Money demand becomes vertical and real output doubles.",
+      "The Fed directly raises real GDP by shifting MD right.",
+      "The price level rises because the value of money rises."
+    ]
+  },
+  "ECON-NL-MEDIUM-115": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "Nominal GDP rises; real GDP stays unchanged using year 1 prices",
+      "Real GDP rises, but nominal GDP is unchanged",
+      "Both nominal and real GDP must fall",
+      "GDP cannot be calculated"
+    ]
+  },
+  "P52A-AS-M-003": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "Household wealth rises and shifts AD",
+      "Potential output permanently increases",
+      "Nominal wages immediately rise more than prices",
+      "Output prices rise before wages, lowering real labor costs."
+    ]
+  },
+  "ECON-NL-MEDIUM-153": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "A production method requiring fewer inputs per unit",
+      "More workers searching for jobs",
+      "A higher CPI for imported goods",
+      "A larger unemployment insurance payment"
+    ]
+  },
+  "ECON-NL-LEGENDARY-9056": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "A improved technological knowledge; B improved human capital",
+      "Both added physical capital because output rose without more labor hours",
+      "Both changed natural resources because the gain has the same size",
+      "A’s gain is human capital and B’s is technology solely because both involve information"
+    ]
+  },
+  "ECON-NL-LEGENDARYBOSS-9120": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "No; the third gain includes a change in technology",
+      "Yes; any later larger gain refutes diminishing returns regardless of other changes",
+      "No; diminishing returns means total output must fall after adding capital",
+      "Yes; introducing technology changes physical capital into a natural resource"
+    ]
+  },
+  "LG-Q-84": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "policy lags can make intervention arrive too late",
+      "monetary and fiscal policy always work instantly",
+      "aggregate demand never changes",
+      "interest rates cannot affect spending"
+    ]
+  },
+  "LG-Q-380": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "Both policies shift AD left, worsening the recession.",
+      "Both policies shift AD right, stabilizing output.",
+      "Fiscal policy shifts AD right while monetary policy shifts AD right.",
+      "Neither policy affects AD."
+    ]
+  },
+  "PM2D2-STAB-L-001": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "The stimulus may arrive after recovery and push demand beyond potential output.",
+      "The stimulus becomes contractionary once SRAS begins shifting right.",
+      "Self-correction guarantees the stimulus has no effect on aggregate demand.",
+      "The delayed stimulus automatically shifts LRAS right by the amount of the original gap."
+    ]
+  },
+  "LG-R-5056": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "It can push demand beyond potential output after recovery.",
+      "The delay automatically turns the stimulus into contractionary policy.",
+      "The policy can no longer affect aggregate demand once recovery begins.",
+      "The delay directly shifts LRAS left."
+    ]
+  },
+  "ECON-NL-HARD-263": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "The lower rate may reflect discouraged workers rather than improvement",
+      "Employment must have increased strongly",
+      "Structural unemployment disappeared",
+      "GDP must have increased"
+    ]
+  },
+  "ECON-NL-LEGENDARY-9068": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "No. Employment falls to 132; unemployment is about 7.0% and participation 71%.",
+      "Yes. Any lower unemployment rate means the number of employed people increased.",
+      "No. Employment stays 138 and participation 75%, because retirees remain employed for this calculation.",
+      "Yes. Employment rises to 144 when the four new job seekers and six retirees are added to the initial workforce."
+    ]
+  },
+  "ECON-NL-LEGENDARY-9070": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "Employment falls by 9.4 despite the unchanged unemployment rate",
+      "Employment stays at 141; a stable rate fixes employment",
+      "Employment falls by 10; every labor-force exit must be an employed worker",
+      "Employment rises by 9.4; lower participation indicates more jobs"
+    ]
+  },
+  "ECON-EC-FINALBOSS-19021": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "The labor force must have shrunk",
+      "The labor force grew faster than employment",
+      "The unemployment rate must be zero",
+      "Everyone who entered the labor force became employed"
+    ]
+  },
+  "ECON-NL-EASY-71": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "Time spent searching for a suitable job",
+      "A long-term mismatch between skills and jobs",
+      "A recession lowering demand",
+      "A price index rising"
+    ]
+  },
+  "ECON-NL-HARD-272": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Remove explanation or redundant setup from the keyed alternative; retain its economic conclusion and the explanation in feedback."
+    ],
+    "options": [
+      "An accountant leaves a job and searches for another locally",
+      "A miner cannot find work after mines permanently close",
+      "A worker is laid off because recession reduces demand",
+      "A cashier loses work because all stores automate checkout permanently"
+    ]
+  },
+  "P52A-AD-H-002": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Use parallel price-level/tax responses; preserve shift-versus-movement reasoning."
+    ],
+    "options": [
+      "Price level: movement along AD; taxes: movement along AD.",
+      "Price level: AD shifts right; taxes: AD shifts left.",
+      "Price level: movement along AD; taxes: AD shifts left.",
+      "Price level: AD shifts left; taxes: AD shifts left."
+    ]
+  },
+  "PG3-MEQ-M-004": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Give all options the same two-coordinate format, preserving the original direction distractors."
+    ],
+    "options": [
+      "Real GDP: 100 to 115; price level: 125 to 110.",
+      "Real GDP: 115 to 100; price level: 110 to 125.",
+      "Real GDP: 100 to 115; price level: 110 to 125.",
+      "Real GDP: 115 to 100; price level: 125 to 110."
+    ]
+  },
+  "LG-Q-9051": {
+    "patterns": [
+      "answer-choice parallelism"
+    ],
+    "rationales": [
+      "Keep the four-link policy mechanism in concise parallel clauses; graphical labels remain in the figure and feedback."
+    ],
+    "options": [
+      "Money supply falls; interest rises; AD falls; output falls.",
+      "Money supply rises; interest falls; AD rises; output rises.",
+      "Money demand falls; interest falls; investment rises; AD rises.",
+      "The price level falls and the economy moves along AD1 from Y1 to Y2."
+    ]
+  }
+}

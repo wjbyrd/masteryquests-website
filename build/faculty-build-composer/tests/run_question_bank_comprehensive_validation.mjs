@@ -8,7 +8,7 @@ import {loadComposerLibrary,collectComposerQuestions,auditQuestionConstruction} 
 const require=createRequire(import.meta.url),core=require('../composer-core.js');
 const integrity=require('./composer-integrity-contracts.js');
 const approved=require('./general-economics-approved-revisions.js');
-const micro=require('./macro-voice-revisions.js');
+const micro=require('./macro-voice2-revisions.js');
 const out='validation_artifacts/question_bank_audit_20260919';
 const resultOut=process.env.MQ_COMPOSER_TEST_OUTPUT_DIR
   ? `${process.env.MQ_COMPOSER_TEST_OUTPUT_DIR}/macroeconomics_consolidated_cleanup`

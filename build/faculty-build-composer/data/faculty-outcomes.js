@@ -2,7 +2,7 @@
 (function(root,data){if(typeof module==='object'&&module.exports)module.exports=data;else root.MQFacultyOutcomePolicy=data;})(typeof globalThis!=='undefined'?globalThis:this,{
   "schemaVersion": 1,
   "policyVersion": "faculty-lo-1",
-  "librarySha256": "e97c497ec01857e1bed95bfb333fcfd2095da5fffde5003b4b26eae90ab12f94",
+  "librarySha256": "d03f2ca2f05b4fb927a8d88c71fd744405e69672dc05d4c6681289eb1b4b8a14",
   "concepts": {
     "ad-as-equilibrium-and-output-gaps": {
       "outcomes": [
@@ -4090,8 +4090,8 @@
             "difficulty": {
               "easy": 1,
               "medium": 2,
-              "hard": 6,
-              "elite": 1,
+              "hard": 7,
+              "elite": 0,
               "legendary": 0
             },
             "supportedModes": [
@@ -4183,7 +4183,6 @@
             },
             "supportedModes": [
               "timed",
-              "exam",
               "quiz",
               "unlimited",
               "fadingFortune",
@@ -10195,9 +10194,9 @@
             "difficulty": {
               "easy": 1,
               "medium": 2,
-              "hard": 5,
+              "hard": 6,
               "elite": 3,
-              "legendary": 3
+              "legendary": 2
             },
             "supportedModes": [
               "fadingFortune",
@@ -13702,5 +13701,5 @@
       "hidden": false
     }
   },
-  "policySha256": "2cb87436a07f23bfb13cfe5ec71d4b8997b145f0a95e46b1080d77d26345b0ea"
+  "policySha256": "4ac5ace38f60498761cf6f09fc3b3cd6bf19eb96095564a8363e959b2f918ae3"
 });

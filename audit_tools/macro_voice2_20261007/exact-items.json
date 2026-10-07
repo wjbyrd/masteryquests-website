@@ -1,0 +1,899 @@
+[
+  {
+    "id": "ECON-NL-SUBSTITUTION-BIAS-6011",
+    "q": {
+      "id": "ECON-NL-SUBSTITUTION-BIAS-6011",
+      "difficulty": "bridge",
+      "conceptCluster": "prices_inflation",
+      "primarySkill": "substitution_bias",
+      "secondarySkills": [],
+      "repairSkill": "substitution_bias",
+      "commonError": "Compares total bills instead of their increases, or ignores the stipulated substitute basket.",
+      "q": "A household initially buys two apples and two pears at $1 each, costing $4. Apples then cost $3 and pears still $1. The old basket now costs $8, but four pears cost $4 and are stipulated to give this household the same satisfaction. How much does the fixed-basket cost increase overstate the increase needed for that satisfaction?",
+      "options": [
+        "Understates by $4: fixed-basket cost is unchanged; the equally satisfactory basket’s cost rises $4",
+        "Overstates by $4: fixed-basket cost rises $4; the equally satisfactory basket’s cost is unchanged",
+        "Overstates by $8: the fixed basket’s entire $8 bill is an increase; substitute cost is unchanged",
+        "No overstatement: the fixed and equally satisfactory baskets each cost $4 more than before"
+      ],
+      "tag": "cpi_bias",
+      "type": "application",
+      "objective": "LO25.2",
+      "feedback": "The fixed basket’s increase is 8−4=4. The equally satisfactory adjusted basket’s increase is 4−4=0. The fixed basket therefore overstates the needed increase by $4. The supplied satisfaction assumption makes this a cost comparison rather than a claim that arbitrary bundles are equivalent.",
+      "aHash": "0f7a23702e8c4b38f46d9f3ed335f2f7a54c0e07a2f5ad861bb2aa0f5954d2c8",
+      "canonicalId": "ECON-NL-SUBSTITUTION-BIAS-6011",
+      "sourceId": 6011,
+      "sourceGame": "national-ledger",
+      "sourceChapter": [
+        25,
+        2
+      ],
+      "sourcePool": "substitution_bias",
+      "sourceHash": "e40ba536ef6b7fdd839df69ef0e488fbe7935663fd7ceb98f774a1e62d6107f7",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "national-ledger",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\national-ledger\\national_ledger_questions_student.js",
+          "sourceGlobal": "microSkillBridgePools",
+          "sourcePool": "substitution_bias",
+          "routeKey": "substitution_bias",
+          "sourceRecordOrder": 0,
+          "sourceId": 6011,
+          "sourceHash": "77a906dd0cac2141c76993a6baa50fb7167f88245d72319c6d700c49f8d21fd3"
+        },
+        {
+          "sourceGame": "equilibrium-crisis",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\equilibrium-crisis\\equilibrium_crisis_questions_student.js",
+          "sourceGlobal": "microSkillBridgePools",
+          "sourcePool": "substitution_bias",
+          "routeKey": "substitution_bias",
+          "sourceRecordOrder": 0,
+          "sourceId": 16051,
+          "sourceHash": "a596b7120f66b75c72178803266998c2e4d3d6fc8b4762fa692ca0f876f22008"
+        }
+      ],
+      "primaryConceptId": "cpi-bias",
+      "secondaryConceptIds": [
+        "cpi-and-inflation-measurement"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "substitution_bias",
+      "originalBossTier": null,
+      "sourceCurationPhase": "phaseM2b2-inflation-real-values-family-maturation-v1"
+    },
+    "areas": [
+      "macro"
+    ],
+    "placements": [
+      {
+        "conceptId": "cpi-bias",
+        "pool": "bridgeQuestions"
+      }
+    ],
+    "key": 1,
+    "marketGateDerived": false,
+    "metrics": {
+      "stemWords": 57,
+      "setupWords": 43,
+      "stemFlags": [],
+      "flags": [],
+      "optionWords": [
+        14,
+        14,
+        16,
+        14
+      ],
+      "correctWords": 14,
+      "medianDistractorWords": 14,
+      "lengthOutlier": false,
+      "lengthReason": null
+    }
+  },
+  {
+    "id": "ECON-SP-ELITE-320",
+    "q": {
+      "id": "ECON-SP-ELITE-320",
+      "q": "An increase in government purchases raises aggregate demand through direct spending and additional spending induced by it. The curves show demand before the policy, after the direct effect only, and after both effects, excluding crowding out. Use the horizontal distances as drawn at price P. A positive amount of crowding out then reduces the total demand increase. Which bound on that reduction keeps final demand strictly between AD2 and AD3, and why?",
+      "options": [
+        "Less than about one-half of the total demand increase before crowding out; this leaves some of the induced-spending gain beyond the direct effect.",
+        "Less than about one-half of the total demand increase before crowding out; this leaves the entire induced-spending gain intact.",
+        "Less than about three-quarters of the total demand increase before crowding out; this leaves some of the induced-spending gain beyond the direct effect.",
+        "Less than the entire demand increase before crowding out; any positive net stimulus leaves demand in the required region."
+      ],
+      "tag": "crowding_out",
+      "type": "graph_interpretation",
+      "objective": "LO35.4",
+      "difficulty": "elite",
+      "conceptCluster": "policy_graphs",
+      "primarySkill": "crowding_out_effect",
+      "repairSkill": "crowding_out_effect",
+      "commonError": "Ignoring crowding out after multiplier expansion.",
+      "feedback": "The expansion places initial demand at AD1, the direct effect at AD2, and the direct plus induced effects at AD3. At price P, the induced-spending distance Y2 to Y3 is about half of the full increase Y1 to Y3. Crowding out moves final demand left from AD3. Its reduction must be positive but smaller than Y3 minus Y2 to leave demand strictly between AD2 and AD3. Some induced-spending gain remains, but it is not entirely intact. A reduction smaller than the full Y1-to-Y3 increase guarantees only a positive net stimulus, not demand beyond AD2.",
+      "image": "question-assets/fiscal-multipliers-and-crowding-out/moneymultiplier.webp",
+      "aHash": "2605321a7e72d65f2119425fc4ba433f679a4533ef427b9102570e1e5988af4e",
+      "canonicalId": "ECON-SP-ELITE-320",
+      "sourceId": 320,
+      "sourceGame": "stabilization-protocol",
+      "sourceChapter": [
+        35,
+        4
+      ],
+      "sourcePool": "elite",
+      "sourceHash": "b5dd6061fa775eb5ac4c4e632815ef27a53b1f018575520288619d58a02158bf",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "stabilization-protocol",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\stabilization-protocol\\stabilization_protocol_questions_student.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "elite",
+          "routeKey": null,
+          "sourceRecordOrder": 20,
+          "sourceId": 320,
+          "sourceHash": "b5dd6061fa775eb5ac4c4e632815ef27a53b1f018575520288619d58a02158bf"
+        }
+      ],
+      "primaryConceptId": "fiscal-multipliers-and-crowding-out",
+      "secondaryConceptIds": [],
+      "instructionalRole": "elite",
+      "canonicalDifficulty": "elite",
+      "originalSourcePool": "elite",
+      "originalBossTier": null
+    },
+    "areas": [
+      "macro"
+    ],
+    "placements": [
+      {
+        "conceptId": "fiscal-multipliers-and-crowding-out",
+        "pool": "elite"
+      }
+    ],
+    "key": 0,
+    "marketGateDerived": false,
+    "metrics": {
+      "stemWords": 72,
+      "setupWords": 57,
+      "stemFlags": [
+        "multiple tasks",
+        "graph narration"
+      ],
+      "flags": [
+        "multiple tasks",
+        "graph narration",
+        "noun stack"
+      ],
+      "optionWords": [
+        23,
+        19,
+        23,
+        19
+      ],
+      "correctWords": 23,
+      "medianDistractorWords": 19,
+      "lengthOutlier": false,
+      "lengthReason": null
+    }
+  },
+  {
+    "id": "LG-B-6023",
+    "q": {
+      "id": "LG-B-6023",
+      "difficulty": "bridge",
+      "conceptCluster": "fiscal_policy_side_effects",
+      "primarySkill": "bridge_multiplier_to_stabilization",
+      "secondarySkills": [],
+      "repairSkill": "bridge_multiplier_to_stabilization",
+      "commonError": "Uses the gross fiscal impulse instead of its net effect on the gap.",
+      "q": "A demand gap is $250. Fiscal policy adds $300 gross to AD, while displaced investment reduces AD by a total $80 including induced effects. How much of the original gap remains in this fixed-price planning model?",
+      "options": [
+        "$80 remains",
+        "$220 remains",
+        "$30 remains",
+        "$50 of excess demand appears"
+      ],
+      "tag": "crowding_out",
+      "type": "application",
+      "objective": "35.4",
+      "feedback": "Net impulse=300−80=220; remaining gap=250−220=30.",
+      "aHash": "f1aaa9729743b57b290dcf6b5028dc264ad776eb33172eaf5946baa0e1b62b9e",
+      "schemaVersion": "2.0.0-pilot",
+      "questionId": "LG-B-6023",
+      "originalLegacyId": 6023,
+      "sourceGlobal": "microSkillBridgePools",
+      "sourcePool": "crowding_out_net_effect",
+      "sourceRecordOrder": 0,
+      "domainId": "ECON",
+      "conceptId": "ECON-MAC-FISCAL-MULTIPLIERS-SIDE-EFFECTS",
+      "outcomeIds": [
+        "OUT-MAC-FISCAL-MULTIPLIERS-SIDE-EFFECTS-01"
+      ],
+      "skillId": "crowding_out_net_effect",
+      "secondarySkillIds": [
+        "multiplier",
+        "investment"
+      ],
+      "repairSkillId": "crowding_out_net_effect",
+      "questionType": "bridge",
+      "assessmentTier": "support",
+      "poolRole": "bridge",
+      "runtimeRole": "bridge",
+      "provenance": {
+        "sourceGame": "liquidityGrid",
+        "sourceBank": "liquidity-grid-student",
+        "sourceGlobal": "microSkillBridgePools",
+        "sourcePool": "crowding_out_net_effect",
+        "sourceRecordOrder": 0,
+        "legacyId": 6023,
+        "legacyObjective": "35.4"
+      },
+      "answerFormat": "aHash",
+      "resourceMatching": {
+        "sourceObjective": "35.4",
+        "objectiveKey": "LO35.4",
+        "sourceAccurateRecommendationHook": false
+      },
+      "source": {
+        "bankId": "liquidity-grid-student",
+        "legacyId": 6023,
+        "legacyObjective": "35.4",
+        "legacyPool": "microSkillBridgePools.crowding_out_net_effect",
+        "sourceRecordOrder": 0,
+        "sourceGame": "liquidityGrid"
+      },
+      "bridgeRole": "bridge",
+      "canonicalId": "LG-B-6023",
+      "sourceId": 6023,
+      "sourceGame": "liquidity-grid",
+      "sourceChapter": [
+        35,
+        4
+      ],
+      "sourceHash": "75f7afbf7435e56fc81bfdcbf63e60a6b7e5a97458d9602ddc576ace70ec1474",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "liquidity-grid",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\liquidity-grid\\package\\questions.js",
+          "sourceGlobal": "microSkillBridgePools",
+          "sourcePool": "crowding_out_net_effect",
+          "routeKey": "crowding_out_net_effect",
+          "sourceRecordOrder": 0,
+          "sourceId": 6023,
+          "sourceHash": "75f7afbf7435e56fc81bfdcbf63e60a6b7e5a97458d9602ddc576ace70ec1474"
+        }
+      ],
+      "primaryConceptId": "fiscal-multipliers-and-crowding-out",
+      "secondaryConceptIds": [
+        "stabilization-policy",
+        "aggregate-demand"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "crowding_out_net_effect",
+      "originalBossTier": null
+    },
+    "areas": [
+      "macro"
+    ],
+    "placements": [
+      {
+        "conceptId": "fiscal-multipliers-and-crowding-out",
+        "pool": "bridgeQuestions"
+      }
+    ],
+    "key": 2,
+    "marketGateDerived": false,
+    "metrics": {
+      "stemWords": 36,
+      "setupWords": 24,
+      "stemFlags": [
+        "internal taxonomy",
+        "noun stack"
+      ],
+      "flags": [
+        "internal taxonomy",
+        "noun stack"
+      ],
+      "optionWords": [
+        2,
+        2,
+        2,
+        5
+      ],
+      "correctWords": 2,
+      "medianDistractorWords": 2,
+      "lengthOutlier": false,
+      "lengthReason": null
+    }
+  },
+  {
+    "id": "PMOE-FX-B1-003",
+    "q": {
+      "id": "PMOE-FX-B1-003",
+      "canonicalId": "PMOE-FX-B1-003",
+      "sourceId": "PMOE-FX-B1-003",
+      "sourceGame": "macro-open-economy-authoring",
+      "q": "Which variable shifts the vertical currency-supply curve in the NCO-based model?",
+      "options": [
+        "Net capital outflow",
+        "The current exchange rate",
+        "Domestic consumption",
+        "The domestic price level alone"
+      ],
+      "tag": "map_nco_to_fx_supply",
+      "type": "application",
+      "objective": "FX.map_nco_to_fx_supply",
+      "difficulty": "easy",
+      "canonicalDifficulty": "easy",
+      "conceptCluster": "foreign-exchange-market",
+      "primarySkill": "map_nco_to_fx_supply",
+      "secondarySkills": [],
+      "repairSkill": "map_nco_to_fx_supply",
+      "commonError": "Incorrectly concludes “The current exchange rate” in this foreign exchange market task.",
+      "feedback": "Currency supply is generated by NCO in that model, so a change in NCO shifts the curve horizontally.",
+      "sourceCurationPhase": "phaseMacroOpenEconomy-v1",
+      "aHash": "784a8d8a3f3f86587acfdd354c1c612b957a0edd503ce855f3b9459b98d39c14",
+      "sourceChapter": [
+        18,
+        19
+      ],
+      "sourcePool": "easyBoss",
+      "primaryConceptId": "foreign-exchange-market",
+      "secondaryConceptIds": [],
+      "familyConceptId": "open-economy-macroeconomics",
+      "subtopicIds": [
+        "foreign-exchange-market"
+      ],
+      "instructionalRole": "boss",
+      "originalSourcePool": "easyBoss",
+      "originalBossTier": "stageOne",
+      "sourceHash": "0e94780c2e54a6f36da003a9e59663ee5599a61458d5fe00df02054374e06608",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "macro-open-economy-authoring",
+          "sourceFile": "build/faculty-build-composer/authoring/open_economy_question_pool_author.mjs",
+          "sourceGlobal": "productionQuestions",
+          "sourcePool": "easyBoss",
+          "routeKey": "map_nco_to_fx_supply",
+          "sourceRecordOrder": 188,
+          "sourceId": "PMOE-FX-B1-003",
+          "sourceHash": "0e94780c2e54a6f36da003a9e59663ee5599a61458d5fe00df02054374e06608",
+          "sourceCurationPhase": "phaseMacroOpenEconomy-v1"
+        }
+      ]
+    },
+    "areas": [
+      "macro"
+    ],
+    "placements": [
+      {
+        "conceptId": "foreign-exchange-market",
+        "pool": "boss"
+      }
+    ],
+    "key": 0,
+    "marketGateDerived": false,
+    "metrics": {
+      "stemWords": 11,
+      "setupWords": 0,
+      "stemFlags": [
+        "internal taxonomy",
+        "noun stack"
+      ],
+      "flags": [
+        "internal taxonomy",
+        "noun stack"
+      ],
+      "optionWords": [
+        3,
+        4,
+        2,
+        5
+      ],
+      "correctWords": 3,
+      "medianDistractorWords": 4,
+      "lengthOutlier": false,
+      "lengthReason": null
+    }
+  },
+  {
+    "id": "43263",
+    "q": {
+      "id": "43263",
+      "sourceGame": "saving-investment-loanable-funds-authoring",
+      "q": "A retirement-saving incentive increases household saving. What is the loanable-funds effect?",
+      "options": [
+        "Supply shifts left, raising the rate and lowering quantity",
+        "Demand shifts right, raising both outcomes",
+        "Demand shifts left, lowering both outcomes",
+        "Supply shifts right, lowering the rate and raising quantity"
+      ],
+      "tag": "changes-in-saving",
+      "type": "integration",
+      "objective": "SLF6",
+      "difficulty": "medium",
+      "conceptCluster": "saving-investment-and-loanable-funds",
+      "primarySkill": "analyze_saving_supply_shift",
+      "secondarySkills": [],
+      "repairSkill": "analyze_saving_supply_shift",
+      "commonError": "Incorrectly concludes “Supply shifts left, raising the rate and lowering quantity” in this loanable funds shifts task.",
+      "feedback": "Greater saving increases supply at each rate; the new equilibrium has a lower real rate and more funds.",
+      "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
+      "aHash": "7cb9dc89e05ae82817378772a189c1e40a6804bc872a140ab686cea24c0cdd0c",
+      "canonicalId": "43263",
+      "sourceId": 43263,
+      "sourceChapter": [],
+      "sourcePool": "medium",
+      "sourceHash": "a316706536dbfe2e8d7d4953780d4924934312a26cded578215b275c3e60cf73",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "saving-investment-loanable-funds-authoring",
+          "sourceFile": "build/faculty-build-composer/authoring/saving_investment_loanable_funds_question_pool_author.mjs",
+          "sourceGlobal": "productionQuestions",
+          "sourcePool": "medium",
+          "routeKey": "SLF6",
+          "sourceRecordOrder": 95,
+          "sourceId": 43263,
+          "sourceHash": "a316706536dbfe2e8d7d4953780d4924934312a26cded578215b275c3e60cf73",
+          "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
+        }
+      ],
+      "primaryConceptId": "loanable-funds-shifts",
+      "secondaryConceptIds": [],
+      "familyConceptId": "saving-fiscal-foundations",
+      "subtopicIds": [
+        "loanable-funds-shifts"
+      ],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "sourcePrimaryConceptId": "saving-investment-and-loanable-funds"
+    },
+    "areas": [
+      "macro"
+    ],
+    "placements": [
+      {
+        "conceptId": "loanable-funds-shifts",
+        "pool": "medium"
+      }
+    ],
+    "key": 3,
+    "marketGateDerived": false,
+    "metrics": {
+      "stemWords": 11,
+      "setupWords": 6,
+      "stemFlags": [
+        "internal taxonomy",
+        "noun stack"
+      ],
+      "flags": [
+        "internal taxonomy",
+        "noun stack"
+      ],
+      "optionWords": [
+        9,
+        6,
+        6,
+        9
+      ],
+      "correctWords": 9,
+      "medianDistractorWords": 6,
+      "lengthOutlier": false,
+      "lengthReason": null
+    }
+  },
+  {
+    "id": "43261",
+    "q": {
+      "id": "43261",
+      "sourceGame": "saving-investment-loanable-funds-authoring",
+      "q": "An analyst measures the saving-supply shift using only the change in equilibrium quantity from A to B. Is that measure correct for this graph?",
+      "options": [
+        "No. Supply shifts left 60 units at a common rate, while equilibrium investment falls only 20 units.",
+        "No. Supply shifts left 40 units at a common rate, while equilibrium investment falls only 20 units.",
+        "Yes. The 20-unit equilibrium decline is the supply shift because investment demand stays fixed.",
+        "No. The 40-unit horizontal difference is an investment-demand shift rather than a saving change."
+      ],
+      "tag": "changes-in-saving",
+      "type": "graph_integration",
+      "objective": "SLF6",
+      "difficulty": "hard",
+      "conceptCluster": "saving-investment-and-loanable-funds",
+      "primarySkill": "analyze_saving_supply_shift",
+      "secondarySkills": [],
+      "repairSkill": "analyze_saving_supply_shift",
+      "commonError": "Incorrectly concludes “Yes; every change in equilibrium quantity equals the horizontal curve shift” in this loanable funds shifts task.",
+      "feedback": "At rate 8%, S0 supplies 120 and S1 supplies 80, a 40-unit shift. A to B changes equilibrium quantity from 100 to 80. The higher rate induces movement along the schedules, so the equilibrium decline is not the fixed-rate shift.",
+      "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
+      "aHash": "f0142dbe088d795ff9442a2d7a3dee33f5d9bfd4862d832d09bbc5a29c642cbb",
+      "image": "question-assets/saving-investment-and-loanable-funds/LOANABLE-03.webp",
+      "imageAlt": "Loanable-funds graph with S0, S1, D0 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 2) and (100, 7). The dashed red line labeled S1 slopes upward through (0, 4) and (80, 8). The solid blue line labeled D0 slopes downward through (0, 12) and (240, 0). Point A marks the S0–D0 intersection at (100, 7). Point B marks the S1–D0 intersection at (80, 8). A numbered grid provides the coordinate scale.",
+      "graphRequired": true,
+      "loanableFundsScenario": "Decrease in saving",
+      "canonicalId": "43261",
+      "sourceId": 43261,
+      "sourceChapter": [],
+      "sourcePool": "hard",
+      "sourceHash": "cf1c4b899dc3a6701dd0efa23bb46805ed39ecad65816613ccf3bada74fcc02c",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "saving-investment-loanable-funds-authoring",
+          "sourceFile": "build/faculty-build-composer/authoring/saving_investment_loanable_funds_question_pool_author.mjs",
+          "sourceGlobal": "productionQuestions",
+          "sourcePool": "hard",
+          "routeKey": "SLF6",
+          "sourceRecordOrder": 93,
+          "sourceId": 43261,
+          "sourceHash": "cf1c4b899dc3a6701dd0efa23bb46805ed39ecad65816613ccf3bada74fcc02c",
+          "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
+        }
+      ],
+      "primaryConceptId": "loanable-funds-shifts",
+      "secondaryConceptIds": [],
+      "familyConceptId": "saving-fiscal-foundations",
+      "subtopicIds": [
+        "loanable-funds-shifts"
+      ],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "hard",
+      "originalBossTier": null,
+      "sourcePrimaryConceptId": "saving-investment-and-loanable-funds"
+    },
+    "areas": [
+      "macro"
+    ],
+    "placements": [
+      {
+        "conceptId": "loanable-funds-shifts",
+        "pool": "hard"
+      }
+    ],
+    "key": 1,
+    "marketGateDerived": false,
+    "metrics": {
+      "stemWords": 24,
+      "setupWords": 17,
+      "stemFlags": [
+        "noun stack",
+        "actor wrapper"
+      ],
+      "flags": [
+        "noun stack",
+        "actor wrapper"
+      ],
+      "optionWords": [
+        17,
+        17,
+        14,
+        14
+      ],
+      "correctWords": 17,
+      "medianDistractorWords": 14,
+      "lengthOutlier": false,
+      "lengthReason": null
+    }
+  },
+  {
+    "id": "LG-Q-9024",
+    "q": {
+      "id": "LG-Q-9024",
+      "q": "Which statement best combines the simplified deposit-multiplier model with monetary-control limits?",
+      "options": [
+        "Excess reserves and currency holdings weaken deposit multiplication.",
+        "Fractional reserve banking guarantees exact Fed control of M1.",
+        "The multiplier works only with commodity money.",
+        "Currency drain increases bank reserves and expands lending."
+      ],
+      "tag": "monetary_control_limits",
+      "type": "interpretation",
+      "objective": "30.5",
+      "difficulty": "hard",
+      "conceptCluster": "monetary_policy_limits",
+      "primarySkill": "synthesize_banking_and_policy_limits",
+      "secondarySkills": [
+        "fractional_reserve_banking",
+        "excess_reserves",
+        "currency_drain"
+      ],
+      "repairSkill": "actual_vs_simple_multiplier",
+      "commonError": "thinking the multiplier mechanism is automatic and exact",
+      "feedback": "Fractional-reserve banking can multiply deposits, but excess reserves and currency holdings can make the actual expansion smaller than the simple model predicts.",
+      "aHash": "e843ceb6f84c4b35301c14353262501853eb7aeae1ef8d98069f86c02791c5e1",
+      "schemaVersion": "2.0.0-pilot",
+      "questionId": "LG-Q-9024",
+      "originalLegacyId": 9024,
+      "sourceGlobal": "questionBanks",
+      "sourcePool": "legendary",
+      "sourceRecordOrder": 24,
+      "domainId": "ECON",
+      "conceptId": "ECON-MAC-MONETARY-CONTROL-LIMITS",
+      "outcomeIds": [
+        "OUT-MAC-MONETARY-CONTROL-LIMITS-01"
+      ],
+      "skillId": "synthesize_banking_and_policy_limits",
+      "secondarySkillIds": [
+        "fractional_reserve_banking",
+        "excess_reserves",
+        "currency_drain"
+      ],
+      "repairSkillId": "actual_vs_simple_multiplier",
+      "questionType": "legendary_synthesis",
+      "assessmentTier": "legendary",
+      "poolRole": "standard",
+      "runtimeRole": "legendary",
+      "provenance": {
+        "sourceGame": "liquidityGrid",
+        "sourceBank": "liquidity-grid-student",
+        "sourceGlobal": "questionBanks",
+        "sourcePool": "legendary",
+        "sourceRecordOrder": 24,
+        "legacyId": 9024,
+        "legacyObjective": "30.5"
+      },
+      "answerFormat": "aHash",
+      "resourceMatching": {
+        "sourceObjective": "30.5",
+        "objectiveKey": "LO30.5",
+        "sourceAccurateRecommendationHook": false
+      },
+      "source": {
+        "bankId": "liquidity-grid-student",
+        "legacyId": 9024,
+        "legacyObjective": "30.5",
+        "legacyPool": "questionBanks.legendary",
+        "sourceRecordOrder": 24,
+        "sourceGame": "liquidityGrid"
+      },
+      "canonicalId": "LG-Q-9024",
+      "sourceId": 9024,
+      "sourceGame": "liquidity-grid",
+      "sourceChapter": [
+        30
+      ],
+      "sourceHash": "e3e37311d424ccaba65a280eb214d2eaf9a4c497cfa21c287d2ac080ff4046b5",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "liquidity-grid",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\liquidity-grid\\package\\questions.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "legendary",
+          "routeKey": null,
+          "sourceRecordOrder": 24,
+          "sourceId": 9024,
+          "sourceHash": "e3e37311d424ccaba65a280eb214d2eaf9a4c497cfa21c287d2ac080ff4046b5"
+        }
+      ],
+      "primaryConceptId": "monetary-control-limits",
+      "secondaryConceptIds": [
+        "bank-money-creation"
+      ],
+      "instructionalRole": "legendary",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "legendary",
+      "originalBossTier": null
+    },
+    "areas": [
+      "macro"
+    ],
+    "placements": [
+      {
+        "conceptId": "monetary-control-limits",
+        "pool": "hard"
+      }
+    ],
+    "key": 0,
+    "marketGateDerived": false,
+    "metrics": {
+      "stemWords": 11,
+      "setupWords": 0,
+      "stemFlags": [
+        "internal taxonomy"
+      ],
+      "flags": [
+        "internal taxonomy"
+      ],
+      "optionWords": [
+        8,
+        9,
+        7,
+        8
+      ],
+      "correctWords": 8,
+      "medianDistractorWords": 8,
+      "lengthOutlier": false,
+      "lengthReason": null
+    }
+  },
+  {
+    "id": "ECON-SP-EASYBOSS-2014",
+    "q": {
+      "id": "ECON-SP-EASYBOSS-2014",
+      "q": "After the Fed buys bonds, banks choose to hold some added reserves and households keep part of the proceeds as currency. What conclusion should you draw about the money-supply effect?",
+      "options": [
+        "The money supply rises by less than the simple multiplier predicts.",
+        "The money supply rises by exactly the simple multiplier amount.",
+        "The money supply must fall because households hold currency.",
+        "The Fed has perfect control over final money creation."
+      ],
+      "tag": "monetary_control_limits",
+      "type": "interpretation",
+      "objective": "30.5",
+      "difficulty": "easyboss",
+      "conceptCluster": "monetary_policy_limits",
+      "primarySkill": "synthesize_multiplier_leakages",
+      "secondarySkills": [
+        "excess_reserves",
+        "currency_drain",
+        "open_market_operations"
+      ],
+      "repairSkill": "actual_vs_simple_multiplier",
+      "commonError": "treating the simple multiplier as guaranteed",
+      "feedback": "Excess reserves and currency holdings both weaken the simple multiplier, so the increase in the money supply is smaller than the maximum prediction.",
+      "aHash": "b8313e2947d37db3b6c3e60d4be2c1318db7b23c63ecbe4d0ac27770fbbb045b",
+      "canonicalId": "ECON-SP-EASYBOSS-2014",
+      "sourceId": 2014,
+      "sourceGame": "stabilization-protocol",
+      "sourceChapter": [
+        30
+      ],
+      "sourcePool": "easyBoss",
+      "sourceHash": "a24054d40167f599a835a04b228c17b0d6b5e9b8dba828ff23ede91df11183eb",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "stabilization-protocol",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\stabilization-protocol\\stabilization_protocol_questions_student.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "easyBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 14,
+          "sourceId": 2014,
+          "sourceHash": "a24054d40167f599a835a04b228c17b0d6b5e9b8dba828ff23ede91df11183eb"
+        }
+      ],
+      "primaryConceptId": "monetary-control-limits",
+      "secondaryConceptIds": [
+        "bank-money-creation",
+        "monetary-control-limits",
+        "monetary-policy-tools"
+      ],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easyBoss",
+      "originalBossTier": "easyBoss",
+      "isCheckpointChallenge": true,
+      "challengeStage": "opening",
+      "requiredConceptIds": [
+        "monetary-control-limits"
+      ],
+      "challengeFocusConceptIds": [
+        "monetary-control-limits"
+      ],
+      "remediationConceptId": "monetary-control-limits",
+      "challengePathway": "specialist-checkpoint",
+      "challengeSource": "legacy-f11-reclassified"
+    },
+    "areas": [
+      "macro"
+    ],
+    "placements": [
+      {
+        "conceptId": "monetary-control-limits",
+        "pool": "boss"
+      }
+    ],
+    "key": 0,
+    "marketGateDerived": false,
+    "metrics": {
+      "stemWords": 30,
+      "setupWords": 21,
+      "stemFlags": [
+        "internal taxonomy"
+      ],
+      "flags": [
+        "internal taxonomy"
+      ],
+      "optionWords": [
+        11,
+        10,
+        9,
+        9
+      ],
+      "correctWords": 11,
+      "medianDistractorWords": 9,
+      "lengthOutlier": false,
+      "lengthReason": null
+    }
+  },
+  {
+    "id": "PMOE-POL-L-003",
+    "q": {
+      "id": "PMOE-POL-L-003",
+      "canonicalId": "PMOE-POL-L-003",
+      "sourceId": "PMOE-POL-L-003",
+      "sourceGame": "macro-open-economy-authoring",
+      "q": "A trade restriction initially lowers targeted imports by $64 billion. After exchange-rate adjustment, exports are $37 billion lower. Saving and investment are unchanged. How much must other imports rise to leave net exports unchanged, and what would a measured rebound of only $20 billion imply if all figures were complete and exact?",
+      "options": [
+        "A $101 billion rebound is required; a $20 billion rebound confirms unchanged NX",
+        "A $27 billion rebound is required; a $20 billion rebound would still leave NX unchanged",
+        "A $27 billion rebound is required; a $20 billion rebound would conflict with unchanged S and I",
+        "A $37 billion rebound is required; a $20 billion rebound proves a larger NCO"
+      ],
+      "tag": "calculate_trade_policy_offset",
+      "type": "calculation",
+      "objective": "POL.calculate_trade_policy_offset",
+      "difficulty": "legendary",
+      "canonicalDifficulty": "legendary",
+      "conceptCluster": "open-economy-policy-transmission",
+      "primarySkill": "calculate_trade_policy_offset",
+      "secondarySkills": [],
+      "repairSkill": "calculate_trade_policy_offset",
+      "commonError": "Incorrectly concludes “A $101 billion rebound is required; a $20 billion rebound confirms unchanged NX” in this open economy policy transmission task.",
+      "feedback": "Unchanged S−I requires ΔNX=0. Solve 0=−37−(−64+rebound), so rebound=27. If it were only 20, ΔNX=7, contradicting the stipulated unchanged saving-investment balance; at least one assumption or measurement must differ.",
+      "sourceCurationPhase": "phaseMacroOpenEconomy-v1",
+      "aHash": "a9301614e585e248507b95f4f1a493888bf8e6be8cc3f3dfb6fe11d32dce175b",
+      "sourceChapter": [
+        18,
+        19
+      ],
+      "sourcePool": "legendary",
+      "primaryConceptId": "open-economy-policy-transmission",
+      "secondaryConceptIds": [],
+      "familyConceptId": "open-economy-macroeconomics",
+      "subtopicIds": [
+        "open-economy-policy-transmission"
+      ],
+      "instructionalRole": "legendary",
+      "originalSourcePool": "legendary",
+      "originalBossTier": null,
+      "sourceHash": "817b829b6248000783eb136b52e145030e6b681dd61fdf9645d9b3e786ea1833",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "macro-open-economy-authoring",
+          "sourceFile": "build/faculty-build-composer/authoring/open_economy_question_pool_author.mjs",
+          "sourceGlobal": "productionQuestions",
+          "sourcePool": "legendary",
+          "routeKey": "calculate_trade_policy_offset",
+          "sourceRecordOrder": 222,
+          "sourceId": "PMOE-POL-L-003",
+          "sourceHash": "817b829b6248000783eb136b52e145030e6b681dd61fdf9645d9b3e786ea1833",
+          "sourceCurationPhase": "phaseMacroOpenEconomy-v1"
+        }
+      ]
+    },
+    "areas": [
+      "macro"
+    ],
+    "placements": [
+      {
+        "conceptId": "open-economy-policy-transmission",
+        "pool": "legendary"
+      }
+    ],
+    "key": 2,
+    "marketGateDerived": false,
+    "metrics": {
+      "stemWords": 52,
+      "setupWords": 23,
+      "stemFlags": [
+        "multiple tasks"
+      ],
+      "flags": [
+        "multiple tasks"
+      ],
+      "optionWords": [
+        13,
+        15,
+        17,
+        14
+      ],
+      "correctWords": 17,
+      "medianDistractorWords": 14,
+      "lengthOutlier": false,
+      "lengthReason": null
+    }
+  }
+]
