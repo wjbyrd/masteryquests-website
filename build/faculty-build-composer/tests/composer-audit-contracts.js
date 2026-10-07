@@ -3,7 +3,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const approved = require('./general-economics-approved-revisions.js');
-const micro = require('./macro-voice2-revisions.js');
+const micro = require('./micro-voice-revisions.js');
 const repoRoot = path.resolve(__dirname, '../../..');
 const read = relative => JSON.parse(fs.readFileSync(path.join(repoRoot, 'validation_artifacts', relative), 'utf8'));
 const assessmentAudits = [

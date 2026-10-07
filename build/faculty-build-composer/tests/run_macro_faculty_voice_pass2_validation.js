@@ -1,7 +1,8 @@
 'use strict';
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
 const h=require('./composer-test-helpers.js'),con=require('./composer-integrity-contracts.js'),approved=require('./macro-voice2-revisions.js'),visual=require('./visual-reference-integrity.js'),style=require('./faculty-prose-candidates.js'),core=require('../composer-core.js');
-const lib=h.loadComposerLibrary();approved.assertCurrentLibrary(lib);
+const latest=require('./micro-voice-revisions.js'),live=h.loadComposerLibrary();latest.assertCurrentLibrary(live);
+const lib=latest.beforeMicroVoiceLibrary(live);approved.assertCurrentLibrary(lib);
 const before=approved.beforeVoice2Library(lib),rows=con.questionRecords(lib),now=new Map(rows.map(r=>[String(r.question.id),r.question])),old=new Map(con.questionRecords(before).map(r=>[String(r.question.id),r.question]));
 const area=require('../course-area-model.js').create(lib.registry.concepts),membership=l=>{const m=new Map();for(const cid of Object.keys(l.concepts))for(const q of core.ContentScope.allQuestions(core.resolveConceptModule(l,cid))){const id=String(q.id);if(!m.has(id))m.set(id,new Set());for(const a of area.areasFor(cid))m.get(id).add(a);}return Object.fromEntries([...m].map(([id,a])=>[id,[...a].sort()]));};
 const areas=membership(lib);assert.deepEqual(areas,membership(before));

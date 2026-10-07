@@ -19,7 +19,7 @@ core.compose = (library,input) => {
 const helper = require(path.join(root, 'tests/composer-test-helpers.js'));
 const area = require(path.join(root, 'course-area-model.js'));
 const library = helper.loadComposerLibrary();
-const closure = require('./macro-voice2-revisions.js');
+const closure = require('./micro-voice-revisions.js');
 closure.assertCurrentLibrary(library);
 const recipe = (id, depth, skillIds) => ({title:'Scope regression',slug:'scope-regression',supportedModes:['quiz'],selectedConceptIds:[id],...(depth ? {contentScopes:{[id]:{depth,...(skillIds ? {skillIds} : {})}}} : {})});
 const all = composition => [...Object.values(composition.banks).flat(),...Object.values(composition.challengeQuestionBanks).flat(),...composition.repairQuestions,...composition.bridgeQuestions,...Object.values(composition.microSkillRepairPools).flat(),...Object.values(composition.skillRepairSeedPools).flat(),...Object.values(composition.microSkillBridgePools).flat()];
