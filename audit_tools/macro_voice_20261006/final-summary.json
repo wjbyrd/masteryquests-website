@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "macroScanned": 4747,
+  "candidateQuestions": 946,
+  "candidatePhraseOccurrences": 1471,
+  "changed": 112,
+  "baselineVisualMismatches": 9,
+  "missingVisualRepaired": 9,
+  "remainingMacroVisualMismatches": 0,
+  "microVisualMismatches": 0,
+  "repairCounts": {
+    "audit wrapper": 62,
+    "implied visual": 9,
+    "model jargon": 11,
+    "notation-first": 6,
+    "reciprocal quotation": 5,
+    "ambiguous exchange rate": 14,
+    "textbook model": 10
+  },
+  "candidateDispositions": {
+    "KEEP \u2014 natural or borderline": 571,
+    "KEEP \u2014 protected": 263,
+    "EDIT": 112
+  },
+  "microFrozen": 6297,
+  "marketGateFrozen": 541,
+  "graphAssetEntriesUnchanged": 520,
+  "composerSuites": 31,
+  "exporterTests": 25,
+  "exports": {
+    "general": {
+      "questions": 1589,
+      "pages": 825,
+      "fullCsvParity": true
+    },
+    "micro": {
+      "questions": 6297,
+      "pages": 3476,
+      "fullCsvParity": true
+    },
+    "macro": {
+      "questions": 4747,
+      "pages": 2500,
+      "fullCsvParity": true
+    }
+  },
+  "librarySha256": "e97c497ec01857e1bed95bfb333fcfd2095da5fffde5003b4b26eae90ab12f94"
+}

@@ -1,0 +1,1103 @@
+{
+  "PMOE-FX-E-006": {
+    "patterns": [
+      "implied visual"
+    ],
+    "rationales": [
+      "Replace an instruction to use an unattached dollar-market visual with a self-contained market scenario; preserve curve assumptions and exchange-rate direction."
+    ],
+    "q": "In the market for U.S. dollars, demand increases while supply is unchanged. Demand slopes downward and supply slopes upward. With the exchange rate measured in foreign currency per dollar, the equilibrium exchange rate:"
+  },
+  "PMOE-FX-H-005": {
+    "patterns": [
+      "implied visual"
+    ],
+    "rationales": [
+      "Replace an instruction to use an unattached dollar-market visual with a self-contained market scenario; preserve curve assumptions and exchange-rate direction."
+    ],
+    "q": "In the market for U.S. dollars, demand and supply both increase. Demand slopes downward and supply slopes upward, and the exchange rate is measured in foreign currency per dollar. Without information about the relative size of the shifts, what can be determined?"
+  },
+  "PMOE-FX-H-006": {
+    "patterns": [
+      "implied visual"
+    ],
+    "rationales": [
+      "Replace an instruction to use an unattached dollar-market visual with a self-contained market scenario; preserve curve assumptions and exchange-rate direction."
+    ],
+    "q": "In the market for U.S. dollars, demand decreases while supply increases. Demand slopes downward and supply slopes upward, and the exchange rate is measured in foreign currency per dollar. What can be determined about the exchange rate and the quantity of dollars exchanged?"
+  },
+  "PMOE-FX-EL-001": {
+    "patterns": [
+      "implied visual"
+    ],
+    "rationales": [
+      "Replace an instruction to use an unattached dollar-market visual with a self-contained market scenario; preserve curve assumptions and exchange-rate direction."
+    ],
+    "q": "Demand and supply both decrease in the market for U.S. dollars, where demand slopes downward and supply slopes upward. Fewer dollars are exchanged, but the new exchange rate, measured in foreign currency per dollar, is unknown. What additional information would establish whether the dollar appreciated?"
+  },
+  "PMOE-FX-L-001": {
+    "patterns": [
+      "implied visual"
+    ],
+    "rationales": [
+      "Replace an instruction to use an unattached dollar-market visual with a self-contained market scenario; preserve curve assumptions and exchange-rate direction."
+    ],
+    "q": "Foreign demand for U.S. exports increases, while a lower U.S. real interest rate raises net capital outflow. In the market for U.S. dollars, demand slopes downward and supply slopes upward. Measuring the exchange rate in foreign currency per dollar, what happens to the exchange rate and the quantity of dollars exchanged?"
+  },
+  "PMOE-FX-L-004": {
+    "patterns": [
+      "implied visual",
+      "model jargon"
+    ],
+    "rationales": [
+      "Replace an instruction to use an unattached dollar-market visual with a self-contained market scenario; preserve curve assumptions and exchange-rate direction.",
+      "Express the comparison at the original quantity in ordinary willingness-to-pay and willingness-to-sell terms."
+    ],
+    "q": "Foreign demand for U.S. goods increases while U.S. purchases of foreign assets decrease. In the market for dollars, demand slopes downward and supply slopes upward, with the exchange rate measured in foreign currency per dollar. Despite the decrease in supply, more dollars are exchanged. What does this imply about the dollar’s value and the relative size of the two shifts?",
+    "options": [
+      "The dollar depreciates; rising quantity shows that the decrease in supply was larger.",
+      "The dollar appreciates; rising quantity proves that the supply of dollars actually increased.",
+      "The dollar appreciates; at the original quantity, demanders’ willingness to pay rose more than suppliers’ required exchange rate.",
+      "The exchange-rate change remains uncertain; quantity information cannot help compare the shifts."
+    ],
+    "feedback": "Higher demand and lower supply both raise the foreign-currency price of a dollar. At the original quantity, the increase in demanders’ willingness to pay must exceed the increase in the exchange rate suppliers require for the new equilibrium quantity to be higher."
+  },
+  "PMOE-FX-B3-002": {
+    "patterns": [
+      "implied visual"
+    ],
+    "rationales": [
+      "Replace an instruction to use an unattached dollar-market visual with a self-contained market scenario; preserve curve assumptions and exchange-rate direction.",
+      "Remove a remaining vertical-axis reference from the text-only explanation."
+    ],
+    "q": "In the market for U.S. dollars, demand and supply both decrease. Demand slopes downward and supply slopes upward. Why is the change in the exchange rate, measured in foreign currency per dollar, uncertain?",
+    "feedback": "Lower demand reduces the exchange rate, while lower supply raises it. The relative size of these opposing effects determines the net change."
+  },
+  "PMOE-FX-LB-002": {
+    "patterns": [
+      "implied visual",
+      "notation-first",
+      "model jargon"
+    ],
+    "rationales": [
+      "Replace an instruction to use an unattached dollar-market visual with a self-contained market scenario; preserve curve assumptions and exchange-rate direction.",
+      "Use the economic variable name throughout the text-only answer choices.",
+      "Explain excess demand and the information needed for exact changes directly."
+    ],
+    "q": "In the market for U.S. dollars, demand slopes downward and supply slopes upward. At the original exchange rate, stronger export demand increases dollars demanded by 70 units, while greater foreign-asset purchases increase dollars supplied by 45 units. What happens to the equilibrium exchange rate, measured in foreign currency per dollar, and the quantity exchanged? Are these shift amounts enough to calculate the exact changes?",
+    "options": [
+      "Both rise; the exchange rate rises exactly 25 percent",
+      "The exchange rate falls and quantity rises; supply determines the rate independently",
+      "Both rise; curve slopes are needed for exact changes",
+      "The exchange rate is unchanged and quantity rises exactly 115 units"
+    ],
+    "feedback": "At the original exchange rate, excess demand is 70 − 45 = 25 units, so the exchange rate rises. Both increases raise the equilibrium quantity of dollars exchanged. The exact changes depend on the slopes of demand and supply."
+  },
+  "PMOE-FX-L-006": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Keep the graph-reading and intermediate-equilibrium task; remove documentation about the asset from the explanation."
+    ],
+    "feedback": "D1 intersects S0 at approximately 150 units and an exchange rate of 1.2, compared with 100 units and 1.0 at A. At the final equilibrium B, quantity is 200 and the exchange rate is 1.0. The exchange rate first rises about 20 percent and then returns to its initial value, while the final quantity is twice its initial level."
+  },
+  "PMOE-NER-E-004": {
+    "patterns": [
+      "reciprocal quotation"
+    ],
+    "rationales": [
+      "Ask the currency conversion directly, preserving 1/2 and all choices."
+    ],
+    "q": "If the exchange rate is $2 per pound, how many pounds can one dollar buy?",
+    "feedback": "At $2 per pound, one dollar buys 1 ÷ 2 = 0.50 pound."
+  },
+  "PMOE-NER-B2-002": {
+    "patterns": [
+      "reciprocal quotation"
+    ],
+    "rationales": [
+      "Ask for domestic currency bought with one unit of foreign currency."
+    ],
+    "q": "If 4 units of domestic currency can buy 5 units of foreign currency, how many units of domestic currency can one unit of foreign currency buy?",
+    "feedback": "Divide 4 domestic currency units by 5 foreign currency units: one unit of foreign currency buys 0.80 unit of domestic currency."
+  },
+  "PMOE-NER-B3-003": {
+    "patterns": [
+      "reciprocal quotation"
+    ],
+    "rationales": [
+      "Name the currency being valued rather than asking for reciprocal terms."
+    ],
+    "q": "The dollar appreciates 25 percent, from 0.80 euro per dollar to 1.00 euro per dollar. By what percentage does the euro’s dollar value fall?",
+    "feedback": "One euro initially buys $1.25 and later buys $1.00. The decrease is $0.25 ÷ $1.25 = 20 percent."
+  },
+  "PMOE-NER-H-001": {
+    "patterns": [
+      "reciprocal quotation"
+    ],
+    "rationales": [
+      "Make the distractor’s currency units explicit."
+    ],
+    "options": [
+      "The euro depreciates about 9.1 percent",
+      "The number of euros one dollar buys also rises 10 percent",
+      "The euro appreciates 10 percent against the dollar",
+      "The dollar appreciates 10 percent against the euro"
+    ]
+  },
+  "PMOE-NER-B3-002": {
+    "patterns": [
+      "reciprocal quotation"
+    ],
+    "rationales": [
+      "Preserve the three linked percentage comparisons while naming both currencies’ purchasing power."
+    ],
+    "q": "The exchange rate rises from 1.60 to 1.84 units of foreign currency per unit of domestic currency. A domestic exporter keeps its domestic-currency price fixed. By what percentages do the two currencies’ values change relative to each other, and how does the exporter’s price change for foreign buyers?",
+    "options": [
+      "The domestic currency appreciates 15%; the foreign currency depreciates about 13.0%, and the exporter’s foreign-currency price rises 15%.",
+      "The domestic currency appreciates 15%; the foreign currency depreciates exactly 15%, and the exporter’s foreign-currency price falls 15%.",
+      "The domestic currency depreciates about 13.0%; the foreign currency appreciates 15%, and the exporter’s foreign-currency price falls 13.0%.",
+      "The domestic currency appreciates about 13.0%; the foreign currency depreciates 15%, and the exporter’s foreign-currency price is unchanged."
+    ],
+    "feedback": "The domestic currency appreciates by 1.84/1.60 − 1 = 15%. The foreign currency’s domestic-currency value changes by 1.60/1.84 − 1 ≈ −13.04%. Multiplying the exporter’s fixed domestic price by the new exchange rate makes its price to foreign buyers 15% higher."
+  },
+  "PMOE-NER-BR-001": {
+    "patterns": [
+      "ambiguous exchange rate"
+    ],
+    "rationales": [
+      "Specify exchange rate rather than the potentially ambiguous nominal or real rate."
+    ],
+    "q": "Quote e as foreign units per domestic unit and define the real exchange rate as eP/P*. The nominal exchange rate rises 10%, while domestic and foreign prices are unchanged. Does the nominal appreciation also represent real appreciation?",
+    "options": [
+      "No; the real exchange rate stays unchanged whenever prices are unchanged",
+      "Yes; but the real exchange rate rises 20% because both price levels enter",
+      "Yes; the real exchange rate rises 10%",
+      "No; the real exchange rate falls 10%"
+    ],
+    "feedback": "With P/P* unchanged, the real exchange rate changes in the same proportion as e. Under this quotation the rise is appreciation."
+  },
+  "PMOE-RER-M-002": {
+    "patterns": [
+      "ambiguous exchange rate"
+    ],
+    "rationales": [
+      "Specify exchange rate rather than the potentially ambiguous nominal or real rate."
+    ],
+    "q": "Use ε = eP/P*, where e is foreign currency per domestic currency, P is the domestic price level and P* the foreign price level. The nominal exchange rate stays fixed, domestic prices rise 6 percent, and foreign prices rise 2 percent. Approximately what happens to the real exchange rate?"
+  },
+  "PMOE-RER-M-005": {
+    "patterns": [
+      "ambiguous exchange rate"
+    ],
+    "rationales": [
+      "Specify exchange rate rather than the potentially ambiguous nominal or real rate."
+    ],
+    "q": "A domestic basket costs 100 domestic units, a comparable foreign basket costs 250 foreign units, and the nominal exchange rate is 2.5 foreign units per domestic unit. What does PPP imply?"
+  },
+  "PMOE-RER-H-001": {
+    "patterns": [
+      "ambiguous exchange rate"
+    ],
+    "rationales": [
+      "Specify exchange rate rather than the potentially ambiguous nominal or real rate."
+    ],
+    "q": "Use e in foreign currency per domestic currency and ε = eP/P*. The nominal exchange rate rises 5 percent, domestic prices rise 4 percent, and foreign prices rise 2 percent. Approximately how does the real exchange rate change?"
+  },
+  "PMOE-RER-H-002": {
+    "patterns": [
+      "ambiguous exchange rate"
+    ],
+    "rationales": [
+      "Specify exchange rate rather than the potentially ambiguous nominal or real rate."
+    ],
+    "q": "Use ε = eP/P*, where e is foreign currency per domestic currency, P is the domestic price level and P* the foreign price level. The nominal exchange rate is unchanged, but the domestic basket rises from 100 to 110 while the foreign basket rises from 200 to 204. What is the approximate real appreciation?"
+  },
+  "PMOE-RER-L-005": {
+    "patterns": [
+      "ambiguous exchange rate"
+    ],
+    "rationales": [
+      "Specify exchange rate rather than the potentially ambiguous nominal or real rate."
+    ],
+    "options": [
+      "Domestic and foreign inflation are equal",
+      "The nominal exchange rate rises and domestic inflation also rises faster",
+      "Foreign inflation exceeds domestic inflation by more than the nominal appreciation",
+      "Domestic inflation exceeds foreign inflation by the same amount"
+    ]
+  },
+  "PMOE-RER-EL-001": {
+    "patterns": [
+      "ambiguous exchange rate"
+    ],
+    "rationales": [
+      "Specify exchange rate rather than the potentially ambiguous nominal or real rate."
+    ],
+    "options": [
+      "A nominal depreciation too small to offset the inflation differential",
+      "A nominal depreciation that offsets the inflation differential",
+      "A nominal appreciation equal to the inflation differential",
+      "A fixed nominal exchange rate regardless of the inflation gap"
+    ]
+  },
+  "PMOE-RER-L-001": {
+    "patterns": [
+      "ambiguous exchange rate"
+    ],
+    "rationales": [
+      "Specify exchange rate rather than the potentially ambiguous nominal or real rate."
+    ],
+    "q": "The nominal exchange rate rises from 1.20 to 1.26 foreign units per domestic unit. Domestic prices rise 4% and foreign prices 10%. An exporter says nominal appreciation must make domestic goods relatively dearer abroad. Does the real exchange rate support that claim?"
+  },
+  "PMOE-RER-B1-002": {
+    "patterns": [
+      "ambiguous exchange rate"
+    ],
+    "rationales": [
+      "Specify exchange rate rather than the potentially ambiguous nominal or real rate."
+    ],
+    "feedback": "Under the course convention, a lower real exchange rate makes domestic goods cheaper relative to foreign goods."
+  },
+  "PMOE-RER-B3-001": {
+    "patterns": [
+      "ambiguous exchange rate",
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Specify exchange rate rather than the potentially ambiguous nominal or real rate.",
+      "Follow the direct approximate-change family structure; preserve the competitiveness interpretation and arithmetic."
+    ],
+    "q": "Use ε = eP/P*, where e is foreign currency per domestic currency, P is the domestic price level and P* is the foreign price level. The nominal exchange rate falls 4%, domestic inflation is 7%, and foreign inflation is 2%. Approximately how does the real exchange rate change, and what happens to the relative price of domestic goods?",
+    "options": [
+      "The real exchange rate rises about 13%; add every rate change regardless of quotation",
+      "The real exchange rate rises about 1%; domestic goods become relatively dearer despite nominal depreciation",
+      "The real exchange rate falls about 1%; every nominal depreciation guarantees improved competitiveness",
+      "The real exchange rate falls about 9%; subtract domestic inflation rather than add it"
+    ],
+    "feedback": "Approximate real exchange-rate growth is −4+7−2=+1%. Under this quotation an increased real exchange rate makes domestic goods relatively dearer. Nominal depreciation is outweighed by domestic inflation relative to foreign inflation."
+  },
+  "PMOE-RER-B3-002": {
+    "patterns": [
+      "ambiguous exchange rate"
+    ],
+    "rationales": [
+      "Specify exchange rate rather than the potentially ambiguous nominal or real rate.",
+      "State the quotation convention explicitly so the direction of the nominal exchange-rate change is clear."
+    ],
+    "q": "Quote the exchange rate as foreign currency per unit of domestic currency. The real exchange rate is unchanged while domestic inflation is 6 percent and foreign inflation is 2 percent. What does relative PPP imply for the nominal exchange rate?",
+    "feedback": "The nominal exchange rate must fall about 4 percent to offset the 4-point domestic inflation excess."
+  },
+  "PMOE-RER-LB-001": {
+    "patterns": [
+      "ambiguous exchange rate",
+      "notation-first"
+    ],
+    "rationales": [
+      "Specify exchange rate rather than the potentially ambiguous nominal or real rate.",
+      "Retain the intentional exact two-period calculation but name the economic variables."
+    ],
+    "q": "The real exchange rate is initially 1. Use ε = eP/P*, where e is foreign currency per domestic currency, P is the domestic price level and P* is the foreign price level. In year one, the nominal exchange rate rises 12 percent, domestic prices fall 3 percent and foreign prices rise 4 percent. In year two, both price levels are fixed. What year-two change in the nominal exchange rate restores the initial real exchange rate?"
+  },
+  "PMOE-RER-LB-002": {
+    "patterns": [
+      "ambiguous exchange rate"
+    ],
+    "rationales": [
+      "Specify exchange rate rather than the potentially ambiguous nominal or real rate."
+    ],
+    "options": [
+      "Weaken it. The actual real exchange rate falls from 1.00 to about 0.993 because domestic inflation reinforces nominal depreciation.",
+      "Leave it unchanged. The real exchange rate depends only on e, which falls from 1.60 to 1.50 in both cases.",
+      "Reverse it into appreciation. Lower domestic prices necessarily make domestic goods more expensive relative to foreign goods.",
+      "Strengthen it. The actual real exchange rate falls from 1.00 to about 0.993; domestic inflation offsets much of the nominal depreciation."
+    ]
+  },
+  "PMOE-RER-M-004": {
+    "patterns": [
+      "ambiguous exchange rate"
+    ],
+    "rationales": [
+      "Specify exchange rate rather than the potentially ambiguous nominal or real rate."
+    ],
+    "options": [
+      "It stays fixed because the two changes offset",
+      "It rises because lower domestic inflation raises P/P*",
+      "It falls because both changes cause real depreciation",
+      "Its direction is ambiguous because both nominal and real exchange rates change"
+    ]
+  },
+  "PMOE-RER-B2-001": {
+    "patterns": [
+      "notation-first"
+    ],
+    "rationales": [
+      "Introduce the currency conversion in ordinary language before the formula."
+    ],
+    "q": "A domestic basket costs 160 units of domestic currency, and a comparable foreign basket costs 100 units of foreign currency. One unit of domestic currency buys 0.5 unit of foreign currency. Using ε = eP/P*, where e is foreign currency per domestic currency and P and P* are the two basket prices, what is the real exchange rate?"
+  },
+  "PMOE-POL-H-002": {
+    "patterns": [
+      "textbook model"
+    ],
+    "rationales": [
+      "Name the long-run open-economy framework used by the saving-investment and exchange-rate argument."
+    ],
+    "q": "A tariff is imposed while national saving and domestic investment remain unchanged. In the standard long-run open-economy model, what happens to net exports after the economy adjusts?"
+  },
+  "PMOE-POL-B2-002": {
+    "patterns": [
+      "textbook model"
+    ],
+    "rationales": [
+      "Name the long-run open-economy framework used by the saving-investment and exchange-rate argument.",
+      "Use the faculty-supplied direct construction for the quota task."
+    ],
+    "q": "In the standard long-run open-economy model, why doesn’t an import quota necessarily increase net exports?"
+  },
+  "PMOE-POL-M-001": {
+    "patterns": [
+      "textbook model"
+    ],
+    "rationales": [
+      "Name the applicable model instead of attributing the mechanism to a textbook."
+    ],
+    "q": "In the standard long-run open-economy model, which change follows first from a larger budget deficit?"
+  },
+  "PMOE-NCO-BR-001": {
+    "patterns": [
+      "model jargon"
+    ],
+    "rationales": [
+      "Spell out the foreign-exchange supply mechanism in ordinary economic language."
+    ],
+    "feedback": "With fewer net foreign-asset purchases, residents exchange less domestic currency for foreign currency, so the supply of domestic currency in the foreign-exchange market shifts left."
+  },
+  "PMOE-POL-H-001": {
+    "patterns": [
+      "model jargon"
+    ],
+    "rationales": [
+      "Spell out the foreign-exchange supply mechanism in ordinary economic language."
+    ],
+    "feedback": "The deficit lowers public and national saving, raising the real rate; lower NCO reduces the supply of domestic currency, producing appreciation and lower net exports."
+  },
+  "PMOE-POL-L-002": {
+    "patterns": [
+      "model jargon"
+    ],
+    "rationales": [
+      "Spell out the foreign-exchange supply mechanism in ordinary economic language."
+    ],
+    "feedback": "With ΔS=0 and ΔI=−110, ΔNCO=110. Relative to the initial +150 schedule shift, rate feedback is −40. The final supply of domestic currency shifts right by 110, lowering the foreign-currency-per-domestic-currency rate and raising NX."
+  },
+  "PMOE-POL-B3-001": {
+    "patterns": [
+      "model jargon"
+    ],
+    "rationales": [
+      "Spell out the foreign-exchange supply mechanism in ordinary economic language."
+    ],
+    "options": [
+      "National saving falls by twice the deficit change, strengthening the usual chain",
+      "NCO falls because public saving receives more weight than private saving",
+      "The currency appreciates because the deficit shifts the supply of domestic currency directly",
+      "National saving is unchanged, so the standard deficit chain need not begin"
+    ]
+  },
+  "PMOE-POL-B3-002": {
+    "patterns": [
+      "model jargon"
+    ],
+    "rationales": [
+      "Spell out the foreign-exchange supply mechanism in ordinary economic language."
+    ],
+    "feedback": "Higher NCO shifts the supply of domestic currency right, while the higher loanable-funds rate crowds out some domestic investment."
+  },
+  "PMOE-POL-LB-001": {
+    "patterns": [
+      "model jargon"
+    ],
+    "rationales": [
+      "Ask for the saving change and supply of dollars directly, retaining both linked tasks."
+    ],
+    "q": "A fiscal change reduces U.S. public saving by $80 billion. Private saving rises by an unknown amount, real interest rates rise, domestic investment falls $30 billion, and net exports fall $35 billion. How much must private saving have increased, and what happens to the supply of dollars in the foreign-exchange market?",
+    "options": [
+      "Private saving rises $45 billion; the supply of dollars falls $80 billion.",
+      "Private saving falls $15 billion; the supply of dollars rises $35 billion.",
+      "Private saving rises $15 billion; the supply of dollars falls $35 billion.",
+      "Private saving rises $115 billion; the supply of dollars is unchanged."
+    ],
+    "feedback": "Let p be the increase in private saving. Since NX = NCO = S − I, −35 = (p − 80) − (−30) = p − 50, so p = 15. National saving falls $65 billion while investment falls $30 billion. NCO therefore falls $35 billion, reducing the supply of dollars by that amount."
+  },
+  "PMOE-TX-L-005": {
+    "patterns": [
+      "model jargon"
+    ],
+    "rationales": [
+      "Replace reconciliation terminology with the actual private-saving and trade-balance questions."
+    ],
+    "q": "A deficit lowers public saving $74 billion. Private saving rises by an unknown amount, domestic investment falls $22 billion, and net exports fall $31 billion. How much does private saving rise, and why is the decline in net exports smaller than the increase in the deficit?"
+  },
+  "PMOE-NCO-LB-001": {
+    "patterns": [
+      "model jargon"
+    ],
+    "rationales": [
+      "Ask for the asset-purchase amount directly."
+    ],
+    "q": "Initially gross outward purchases are $500 billion and inward purchases $560 billion. Later inward purchases are $650 billion, investment has risen $75 billion and saving has risen $105 billion. What is the later value of outward asset purchases, and does the country still receive a net capital inflow?"
+  },
+  "PMOE-POL-L-003": {
+    "patterns": [
+      "model jargon"
+    ],
+    "rationales": [
+      "Retain the intentional consistency test while simplifying its calculation clause."
+    ],
+    "q": "A trade restriction initially lowers targeted imports by $64 billion. After exchange-rate adjustment, exports are $37 billion lower. Saving and investment are unchanged. How much must other imports rise to leave net exports unchanged, and what would a measured rebound of only $20 billion imply if all figures were complete and exact?"
+  },
+  "PMOE-TX-L-001": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask directly for GDP and saving changes; imported components still require separate accounting."
+    ],
+    "q": "In one period, consumption rises $96 billion, including $72 billion of imports. Measured investment rises $35 billion, including $11 billion of imported equipment. Exports rise $18 billion, while government purchases and other imports are unchanged. How do GDP and national saving change?"
+  },
+  "PMOE-NCO-B3-001": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Remove the redundant incorrect report from an asset-flow calculation."
+    ],
+    "q": "A country has net capital outflow of −$120 billion, and residents purchase $200 billion of foreign assets. How much do foreigners purchase in domestic assets, and does NX = NCO imply a trade surplus or deficit?"
+  },
+  "ECON-NL-EASYBOSS-2018": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "The question asks for CPI and inflation; the invented report contributes no needed data."
+    ],
+    "q": "A fixed basket costs $140 in the base year, $168 this year and $184.8 next year. What are next year's CPI and inflation rate?"
+  },
+  "ECON-NL-EASYBOSS-2022": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "The question asks for CPI and inflation; the invented report contributes no needed data."
+    ],
+    "q": "A fixed basket costs $180 in the base year, $216 this year and $237.6 next year. What are next year's CPI and inflation rate?"
+  },
+  "P52A-CPI-B2-002": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "The question asks for CPI and inflation; the invented report contributes no needed data."
+    ],
+    "q": "A fixed basket costs $220 in the base year, $264 this year and $290.4 next year. What are next year's CPI and inflation rate?"
+  },
+  "ECON-EC-FINALBOSS-19000": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "The question asks for CPI and inflation; the invented report contributes no needed data."
+    ],
+    "q": "A fixed basket costs $100 in the base year, $120 this year and $132 next year. What are next year's CPI and inflation rate?"
+  },
+  "ECON-NL-EASYBOSS-2021": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask directly about nominal pay and purchasing power."
+    ],
+    "q": "A worker earns $170 before a 6% nominal raise. The relevant CPI rises 8%. By what percentages do nominal pay and real pay change?"
+  },
+  "P52A-CPI-B2-001": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask directly about nominal pay and purchasing power."
+    ],
+    "q": "A worker earns $210 before a 6% nominal raise. The relevant CPI rises 8%. By what percentages do nominal pay and real pay change?"
+  },
+  "P52A-CPI-B3-002": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask directly about nominal pay and purchasing power."
+    ],
+    "q": "A worker earns $250 before a 6% nominal raise. The relevant CPI rises 8%. By what percentages do nominal pay and real pay change?"
+  },
+  "ECON-EC-MEDIUMBOSS-18003": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask directly about nominal pay and purchasing power."
+    ],
+    "q": "A worker earns $130 before a 6% nominal raise. The relevant CPI rises 8%. By what percentages do nominal pay and real pay change?"
+  },
+  "P52A-CPI-M-002": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask for the inflation calculation and its correct base directly."
+    ],
+    "q": "A price index rises from 175 to 189. What is the inflation rate, and how is it calculated?"
+  },
+  "43072": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask for budget components without an invented accounting error."
+    ],
+    "q": "The government receives $180 in taxes, pays $30 in transfers and purchases $150 of current output. Define net taxes as taxes minus transfers. What are net taxes, government purchases and public saving?"
+  },
+  "ECON-NL-EASYBOSS-2029": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Remove the unnecessary analyst from the two-index application."
+    ],
+    "q": "A household benefit of $150 must track consumption costs, while nominal domestic GDP must be converted into real output. Imported food becomes dearer and domestic investment equipment becomes cheaper. Which index should be used for each purpose, and must the two indexes move together?"
+  },
+  "PM2B2-DEF-FB-006": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Remove the unnecessary analyst from the two-index application."
+    ],
+    "q": "A household benefit of $190 must track consumption costs, while nominal domestic GDP must be converted into real output. Imported food becomes dearer and domestic investment equipment becomes cheaper. Which index should be used for each purpose, and must the two indexes move together?"
+  },
+  "PM2B2-DEF-MB-003": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Remove the unnecessary analyst from the two-index application."
+    ],
+    "q": "A household benefit of $230 must track consumption costs, while nominal domestic GDP must be converted into real output. Imported food becomes dearer and domestic investment equipment becomes cheaper. Which index should be used for each purpose, and must the two indexes move together?"
+  },
+  "ECON-EC-FINALBOSS-19007": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Remove the unnecessary analyst from the two-index application."
+    ],
+    "q": "A household benefit of $110 must track consumption costs, while nominal domestic GDP must be converted into real output. Imported food becomes dearer and domestic investment equipment becomes cheaper. Which index should be used for each purpose, and must the two indexes move together?"
+  },
+  "43118": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask directly about the difference between the two debt measures."
+    ],
+    "q": "Debt held by the public is $25 trillion, and total public debt outstanding is $32 trillion. What accounts for the difference?"
+  },
+  "43139": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Name the requested ratio directly instead of describing a report."
+    ],
+    "q": "GDP is $30 trillion, debt held by the public is $30.3 trillion, and gross federal debt is $36 trillion. What is the ratio of debt held by the public to GDP?"
+  },
+  "43082": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask the stock-flow distinction directly."
+    ],
+    "q": "Government debt is $25 trillion, while the year’s deficit is $1 trillion. Why are these figures not contradictory?"
+  },
+  "43088": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Keep the two-year stock-flow calculation and ask it directly."
+    ],
+    "q": "Public debt starts at $200 and ends two years later at $260. The first-year budget deficit is $20. Assume deficits are financed entirely by borrowing and there are no other debt adjustments. What is the second-year deficit, and how is it calculated?"
+  },
+  "43157": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Use an ordinary interpretation question for the primary budget balance."
+    ],
+    "q": "The overall deficit is $40, including interest outlays of $80. Define the primary balance as revenues minus noninterest outlays. What is the primary balance?"
+  },
+  "ECON-SP-FINALBOSS-4023": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Remove an unnecessary incorrect forecast while preserving the quantity-equation and Fisher calculations."
+    ],
+    "q": "Use the growth-rate approximation to MV = PY. Money grows 10%, real output grows 3%, inflation is 4%, and the real interest rate is 2%. If expected inflation equals actual inflation, what are velocity growth and the nominal interest rate?"
+  },
+  "ECON-SP-MEDIUMBOSS-3005": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask directly for real output after the nominal and price changes."
+    ],
+    "q": "Nominal GDP rises 5% while the GDP deflator rises 7%. What happened to real GDP?"
+  },
+  "ECON-SP-FINALBOSS-4016": {
+    "patterns": [
+      "textbook model"
+    ],
+    "rationales": [
+      "Name the simplified banking framework while preserving its reserve-retention assumptions."
+    ],
+    "q": "In the simple deposit-expansion model, a reserve injection supports less deposit expansion than the no-leakage maximum because banks keep additional reserves. At the same time, government borrowing puts upward pressure on interest rates, partly offsetting the downward rate pressure from monetary expansion. Why can investment rise less than a prediction that ignores both effects?"
+  },
+  "ECON-SP-EASYBOSS-2011": {
+    "patterns": [
+      "textbook model"
+    ],
+    "rationales": [
+      "Name the simple deposit-expansion model and retain all of its stated assumptions."
+    ],
+    "q": "In a simple deposit-expansion model with multiplier 5, all reserve adjustments work through deposits, with no currency leakage or excess-reserve holding. A central-bank bond sale is intended to cause a maximum $100 million deposit contraction. What initial reserve change is required, and how does it compare with the total deposit change?"
+  },
+  "PM2A-DIS-EB-014": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask directly how the two inflation rates affect the price level."
+    ],
+    "q": "Inflation falls from 8% to 3%, and later to −1%. How does the price level change at 3% inflation and at −1% inflation?"
+  },
+  "ECON-NL-LEGENDARY-9000": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask for investment and the treatment of inventories without a report or reconciliation wrapper."
+    ],
+    "q": "An economy has consumption of $46 billion, government purchases of $13 billion, exports of $9 billion, imports of $11 billion and GDP of $72 billion. Inventories increase by $4 billion because of newly produced unsold goods. What is total investment, and how are inventories included?",
+    "feedback": "The expenditure identity gives I = 72 − 46 − 13 − 9 + 11 = 15. Inventory investment is included in this $15 billion total, leaving $11 billion in other investment."
+  },
+  "ECON-EC-EASYBOSS-17020": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask for investment and net exports directly, preserving all data and choices."
+    ],
+    "q": "GDP is $400, C is $240, G is $80, exports are $40, and imports are $80. What are investment and net exports?"
+  },
+  "ECON-NL-EASYBOSS-2010": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask for investment and net exports directly, preserving all data and choices."
+    ],
+    "q": "GDP is $650, C is $390, G is $130, exports are $65, and imports are $130. What are investment and net exports?"
+  },
+  "PM2B1-GDPC-FB-005": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask for investment and net exports directly, preserving all data and choices."
+    ],
+    "q": "GDP is $900, C is $540, G is $180, exports are $90, and imports are $180. What are investment and net exports?"
+  },
+  "ECON-NL-LEGENDARY-9011": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask directly for the contribution of the resale service and new inventory to GDP."
+    ],
+    "q": "A used machine changes hands for $40,000 through a broker charging $2,000. A new domestic machine worth $28,000 is produced but remains unsold. How much do these activities contribute to this year’s GDP?"
+  },
+  "ECON-EC-EASYBOSS-17004": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask for GDP and its relationship to value added directly."
+    ],
+    "q": "A domestic farm sells grain for $20 to a domestic mill, which sells flour for $35 to a domestic bakery. The bakery sells all bread to households for $60. No inventories change. What is the contribution to GDP, and how does it compare with the sum of value added?"
+  },
+  "ECON-NL-EASYBOSS-2000": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask for GDP and its relationship to value added directly."
+    ],
+    "q": "A domestic farm sells grain for $34 to a domestic mill, which sells flour for $49 to a domestic bakery. The bakery sells all bread to households for $74. No inventories change. What is the contribution to GDP, and how does it compare with the sum of value added?"
+  },
+  "P52B-S3-GDPM-B3-003": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask for GDP and its relationship to value added directly."
+    ],
+    "q": "A domestic farm sells grain for $62 to a domestic mill, which sells flour for $77 to a domestic bakery. The bakery sells all bread to households for $102. No inventories change. What is the contribution to GDP, and how does it compare with the sum of value added?"
+  },
+  "ECON-EC-EASYBOSS-17010": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask directly about current production and the later inventory sale."
+    ],
+    "q": "A domestic factory produces $64 of final goods, sells $39, and holds the remainder as new inventory. How much is counted in current GDP, and what happens to GDP when the remaining inventory is sold next year without new production?"
+  },
+  "ECON-NL-EASYBOSS-2002": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask directly about current production and the later inventory sale."
+    ],
+    "q": "A domestic factory produces $78 of final goods, sells $53, and holds the remainder as new inventory. How much is counted in current GDP, and what happens to GDP when the remaining inventory is sold next year without new production?"
+  },
+  "P52B-S3-GDPM-B2-001": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask directly about current production and the later inventory sale."
+    ],
+    "q": "A domestic factory produces $92 of final goods, sells $67, and holds the remainder as new inventory. How much is counted in current GDP, and what happens to GDP when the remaining inventory is sold next year without new production?"
+  },
+  "ECON-EC-EASYBOSS-17017": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask directly what the output and omitted welfare evidence establish."
+    ],
+    "q": "Real GDP per person rises 11% while leisure falls and air quality deteriorates. What can be concluded about output per person and well-being?"
+  },
+  "PM2B1-GDPL-FB-004": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask directly what the output and omitted welfare evidence establish."
+    ],
+    "q": "Real GDP per person rises 16% while leisure falls and air quality deteriorates. What can be concluded about output per person and well-being?"
+  },
+  "PM2B1-GDPL-MB-001": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask directly what the output and omitted welfare evidence establish."
+    ],
+    "q": "Real GDP per person rises 21% while leisure falls and air quality deteriorates. What can be concluded about output per person and well-being?"
+  },
+  "ECON-SP-LEGENDARY-9016": {
+    "patterns": [
+      "textbook model"
+    ],
+    "rationales": [
+      "Refer directly to the liquidity-preference model."
+    ],
+    "q": "In the liquidity-preference model, money demand rises while money supply increases. What can be concluded about the equilibrium interest rate?"
+  },
+  "LG-Q-2012": {
+    "patterns": [
+      "notation-first"
+    ],
+    "rationales": [
+      "Spell out the reserve ratio before asking about the shortfall from the model’s maximum."
+    ],
+    "q": "A simple deposit-expansion model with a 10% required reserve ratio predicts a $1000 deposit maximum from $100 in new reserves. Actual deposits rise only $400. Which diagnosis and inference are justified?"
+  },
+  "PM2C1-MCL-FB-006": {
+    "patterns": [
+      "notation-first"
+    ],
+    "rationales": [
+      "Spell out the reserve ratio before asking about the shortfall from the model’s maximum."
+    ],
+    "q": "A simple deposit-expansion model with a 10% required reserve ratio predicts a $2600 deposit maximum from $260 in new reserves. Actual deposits rise only $1040. Which diagnosis and inference are justified?"
+  },
+  "LG-Q-9106": {
+    "patterns": [
+      "notation-first"
+    ],
+    "rationales": [
+      "Spell out the reserve ratio before asking about the shortfall from the model’s maximum."
+    ],
+    "q": "A simple deposit-expansion model with a 10% required reserve ratio predicts a $1800 deposit maximum from $180 in new reserves. Actual deposits rise only $720. Which diagnosis and inference are justified?"
+  },
+  "ECON-SP-LIMITS-OF-MONETARY-CONTROL-6008": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask about the expected deposit creation without introducing an analyst."
+    ],
+    "q": "A reserve injection could support $1,000 of deposits in the simple maximum model. Banks instead retain additional excess reserves. Relative to that maximum, how much deposit creation would you expect?"
+  },
+  "ECON-SP-LEGENDARY-9052": {
+    "patterns": [
+      "textbook model"
+    ],
+    "rationales": [
+      "Name the scarce-reserves framework itself.",
+      "Keep the short-run model qualification in the feedback."
+    ],
+    "q": "In a scarce-reserves model, a student says, 'If the Fed buys bonds, inflation must rise immediately and real output cannot move.' Which correction is strongest?",
+    "feedback": "In this scarce-reserves model, bond purchases lower interest rates and can raise aggregate demand and output while prices are sticky. Long-run monetary neutrality does not rule out that short-run response."
+  },
+  "ECON-SP-MONETARY-POLICY-TRANSMISSION-6031": {
+    "patterns": [
+      "textbook model"
+    ],
+    "rationales": [
+      "Name the scarce-reserves framework itself."
+    ],
+    "q": "In the scarce-reserves model, monetary expansion lowers interest but firms do not increase investment. Which next part of the usual transmission chain is weakened?"
+  },
+  "LG-B-6019": {
+    "patterns": [
+      "textbook model"
+    ],
+    "rationales": [
+      "Name the scarce-reserves framework itself."
+    ],
+    "q": "In a scarce-reserves model, monetary expansion lowers rates and investment rises $10. With spending multiplier 2 and no other spending change, what AD effect follows?"
+  },
+  "LG-B-6020": {
+    "patterns": [
+      "textbook model"
+    ],
+    "rationales": [
+      "Name the scarce-reserves framework itself."
+    ],
+    "q": "In a scarce-reserves model, monetary contraction raises rates and reduces investment $15. With spending multiplier 2 and no other spending change, what AD effect follows?"
+  },
+  "P52B-S3-MFM-B2-002": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask for the monetary aggregates directly; retain the current-definition convention and all component values."
+    ],
+    "q": "An economy has currency $160, checking $320, savings $480, and small time deposits $160. Using current U.S. definitions, what are M1 and M2?"
+  },
+  "P52B-S3-MFM-B3-003": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask for the monetary aggregates directly; retain the current-definition convention and all component values."
+    ],
+    "q": "An economy has currency $240, checking $480, savings $720, and small time deposits $240. Using current U.S. definitions, what are M1 and M2?"
+  },
+  "PM2B3-PROD-EB-002": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask directly for output growth when employment is fixed."
+    ],
+    "q": "Capital per worker doubles from 20 to 40, while output per worker rises from about 28.53 to 36.37. Employment is unchanged. By approximately what percentage does total output rise?"
+  },
+  "LG-R-5040": {
+    "patterns": [
+      "implied visual"
+    ],
+    "rationales": [
+      "Ask conceptually about the money-demand curve without referring to an unattached diagram."
+    ],
+    "q": "The central bank increases the money supply while income and the price level stay unchanged. The equilibrium interest rate falls. What happens to the money-demand curve?"
+  },
+  "LG-Q-3001": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask directly for real output and the meaning of nominal spending."
+    ],
+    "q": "Money is $120, velocity is 5, and the price level is 2. Using MV = PY, what is real output, and how does it differ from nominal spending?"
+  },
+  "P52B-S4-QTM-B1-003": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask directly for real output and the meaning of nominal spending."
+    ],
+    "q": "Money is $280, velocity is 5, and the price level is 2. Using MV = PY, what is real output, and how does it differ from nominal spending?"
+  },
+  "P52B-S4-QTM-B3-001": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask the implied price-level change directly."
+    ],
+    "q": "Nominal spending rises 10% while real output rises 10%. According to MV = PY, how does the price level change?"
+  },
+  "ECON-NL-ELITE-315": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask directly for the price change and real production change."
+    ],
+    "q": "Real GDP rises 5% while nominal GDP rises 15.5%. What happens to the GDP deflator, and by how much does real production rise?"
+  },
+  "ECON-NL-LEGENDARY-9007": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Retain the inverse quantity calculation and ask for nominal GDP directly."
+    ],
+    "q": "Two new domestic goods have current prices of $12 and $30 and base prices of $10 and $20. Output of the first is 80 units; total real GDP is $2,400. What is current nominal GDP, and why does it differ from real GDP?"
+  },
+  "ECON-NL-EASYBOSS-2012": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask for real GDP and its valuation directly."
+    ],
+    "q": "Current output is 100 units at $12 each; the base-year price is $10. What is real GDP, and how does its valuation differ from nominal GDP?"
+  },
+  "PM2B1-RNGDP-FB-004": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask for real GDP and its valuation directly."
+    ],
+    "q": "Current output is 140 units at $12 each; the base-year price is $10. What is real GDP, and how does its valuation differ from nominal GDP?"
+  },
+  "PM2B1-RNGDP-MB-002": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask for real GDP and its valuation directly."
+    ],
+    "q": "Current output is 180 units at $12 each; the base-year price is $10. What is real GDP, and how does its valuation differ from nominal GDP?"
+  },
+  "ECON-SP-MEDIUMBOSS-3012": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask for the sacrifice ratio and correct denominator directly."
+    ],
+    "q": "Use the sum of annual output-gap losses, measured as percentages of the same benchmark annual output of $100. Gaps are −2%, −1%, and −1%; inflation falls from 7% to 5%. What is the sacrifice ratio, and which inflation change belongs in the denominator?"
+  },
+  "PM2A-SAC-EB-018": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask for the sacrifice ratio and correct denominator directly."
+    ],
+    "q": "Use the sum of annual output-gap losses, measured as percentages of the same benchmark annual output of $180. Gaps are −2%, −1%, and −1%; inflation falls from 7% to 5%. What is the sacrifice ratio, and which inflation change belongs in the denominator?"
+  },
+  "ECON-NL-MEDIUMBOSS-3019": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Remove the unnecessary analyst attribution before the causal and productivity comparison."
+    ],
+    "q": "Two otherwise identical workshops keep the same machines, worker skills and total hours. Only Workshop A adopts a new production method: its output rises from 100 to 120, while B stays at 100. Which explanation and productivity comparison are supported?"
+  },
+  "ECON-NL-MEDIUMBOSS-3024": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask directly for the productivity change."
+    ],
+    "q": "A factory hires more workers using the same production method. Total output rises 20%, but total worker hours rise 25%. By what percentage does output per hour change?"
+  },
+  "PM2B3-SRC-FB-005": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask directly for the output comparison after productivity and hours change."
+    ],
+    "q": "Two plants each initially produce 100 units in 100 worker hours. New machines raise A’s output per hour 20%; training raises B’s output per hour 15%. A then cuts hours to 80, while B keeps 100 hours. How does total output compare between the two plants?"
+  },
+  "ECON-NL-LEGENDARY-9081": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Present the labor-market observations directly."
+    ],
+    "q": "Unemployment fell from 20 to 12 while employment rose from 180 to 184. Adult population is fixed at 250, and the only flows were unemployed people finding jobs or stopping search. Which decomposition and participation change are implied?"
+  },
+  "ECON-NL-FINALBOSS-4004": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask for the two official labor-market rates directly, retaining the active-search distinction."
+    ],
+    "q": "Of 400 adults, 200 are employed and 20 are unemployed and actively looking for work. A survey also finds 20 people who want work but have stopped searching. What are the unemployment rate and labor-force participation rate?"
+  },
+  "P52B-S4-UNEM-B1-001": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask for the two official labor-market rates directly, retaining the active-search distinction."
+    ],
+    "q": "Of 500 adults, 250 are employed and 25 are unemployed and actively looking for work. A survey also finds 25 people who want work but have stopped searching. What are the unemployment rate and labor-force participation rate?"
+  },
+  "ECON-EC-FINALBOSS-19022": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask for the two official labor-market rates directly, retaining the active-search distinction."
+    ],
+    "q": "Of 200 adults, 100 are employed and 10 are unemployed and actively looking for work. A survey also finds 10 people who want work but have stopped searching. What are the unemployment rate and labor-force participation rate?"
+  },
+  "ECON-EC-MEDIUMBOSS-18010": {
+    "patterns": [
+      "audit wrapper"
+    ],
+    "rationales": [
+      "Ask for the two official labor-market rates directly, retaining the active-search distinction."
+    ],
+    "q": "Of 300 adults, 150 are employed and 15 are unemployed and actively looking for work. A survey also finds 15 people who want work but have stopped searching. What are the unemployment rate and labor-force participation rate?"
+  }
+}

@@ -1,7 +1,10 @@
 'use strict';
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
 const h=require('./composer-test-helpers.js'),c=require('./composer-integrity-contracts.js'),core=require('../composer-core.js'),approved=require('./macro-closure-revisions.js');
-const lib=h.loadComposerLibrary();approved.assertCurrentLibrary(lib);
+const voice=require('./macro-voice-revisions.js'),current=h.loadComposerLibrary();voice.assertCurrentLibrary(current);
+// Preserve the exact historical closure checks after independently verifying
+// every subsequent editorial change against its own before/after ledger.
+const lib=voice.beforeVoiceLibrary(current);approved.assertCurrentLibrary(lib);
 const ledger=approved.macroClosureLedger,questions=new Map(c.questionRecords(lib).map(r=>[String(r.question.id),r.question]));
 const expected={
  'PMOE-POL-L-004':'elite','PM2A-SRPC-EB-009':'medium','PM2B3-PROD-EB-001':'medium','ECON-NL-EASYBOSS-2013':'medium','PM2C2-ICOST-EB-002':'medium','PM2A-EXP-EB-006':'hard','LG-Q-9105':'elite','LG-Q-9102':'hard','LG-Q-9010':'hard','LG-Q-9130':'medium','PMOE-NER-LB-001':'elite','PG5-PC-L-024':'legendary','P52A-AD-L-004':'medium','P52A-AD-L-006':'hard','PM2A-LRPC-L-010':'hard','PM2A-LRPC-L-011':'elite','P77-MVM-L-020':'medium','P76-MODL-EL-003':'hard','ECON-NL-EASYBOSS-2026':'medium','LG-Q-9139':'legendary','LG-Q-9122':'legendary','PM2B2-RNI-LB-001':'legendary'

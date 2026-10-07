@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "reviewedQuestionIds": [
+    "PMOE-FX-H-005",
+    "PMOE-FX-EL-001",
+    "PMOE-FX-L-004",
+    "PMOE-FX-L-006",
+    "PMOE-NER-B3-002",
+    "PMOE-RER-B3-001",
+    "PMOE-RER-LB-001",
+    "PMOE-POL-LB-001",
+    "ECON-NL-LEGENDARY-9000",
+    "ECON-NL-FINALBOSS-4004"
+  ],
+  "distinctPages": [
+    135,
+    137,
+    149,
+    150,
+    193,
+    199,
+    216,
+    769,
+    1234
+  ],
+  "checks": [
+    "Text, choices, keys and feedback legible and unclipped",
+    "No overlapping blocks",
+    "Currency and mathematical notation legible",
+    "Retained FX graph legible and matched to its question"
+  ]
+}
