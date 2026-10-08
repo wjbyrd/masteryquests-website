@@ -1,7 +1,7 @@
 'use strict';
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
 const core=require('../composer-core.js'),h=require('./composer-test-helpers.js'),con=require('./composer-integrity-contracts.js'),approved=require('./macro-voice3-revisions.js'),style=require('./faculty-prose-candidates.js');
-const newest=require('./micro-voice3-revisions.js'),newestLive=h.loadComposerLibrary();newest.assertCurrentLibrary(newestLive);const lib=newest.beforeMicroVoice3Library(newestLive);approved.assertCurrentLibrary(lib);
+const newest=require('./micro-voice3-revisions.js'),faculty=require('./faculty-validation-revisions.js'),facultyLive=h.loadComposerLibrary();faculty.assertCurrentLibrary(facultyLive);const newestLive=faculty.beforeFacultyValidationLibrary(facultyLive);newest.assertCurrentLibrary(newestLive);const lib=newest.beforeMicroVoice3Library(newestLive);approved.assertCurrentLibrary(lib);
 const before=approved.beforeVoice3Library(lib),ledger=approved.macroVoice3Ledger,root=path.resolve(__dirname,'../../..'),out=path.join(root,'audit_tools/macro_voice3_20261007');
 const now=new Map(con.questionRecords(lib).map(r=>[String(r.question.id),r.question])),old=new Map(con.questionRecords(before).map(r=>[String(r.question.id),r.question]));
 const area=require('../course-area-model.js').create(lib.registry.concepts);

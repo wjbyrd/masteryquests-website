@@ -1,0 +1,413 @@
+{
+  "status": "PASS",
+  "uniqueQuestions": 9777,
+  "edited": 175,
+  "courseMembershipUnchanged": true,
+  "correctAnswerPositionsPreserved": true,
+  "answerHashesVerified": true,
+  "sourcePoolsRolesSkillsCheckpointRoutingUnchanged": true,
+  "ordinaryDifficultyPoolMoves": [
+    {
+      "conceptId": "costs-of-production",
+      "id": "P62E-COP-M-034",
+      "from": "medium",
+      "to": "easy"
+    },
+    {
+      "conceptId": "demand-and-supply-shocks",
+      "id": "PG3-MEQ-M-008",
+      "from": "medium",
+      "to": "easy"
+    },
+    {
+      "conceptId": "incentives",
+      "id": "P74-INC-L-013",
+      "from": "hard",
+      "to": "medium"
+    },
+    {
+      "conceptId": "indexing-and-real-values",
+      "id": "PM2B2-INDEX-M-003",
+      "from": "medium",
+      "to": "easy"
+    },
+    {
+      "conceptId": "international-trade-and-trade-policy",
+      "id": "PMA-ITP-H-003",
+      "from": "hard",
+      "to": "elite"
+    },
+    {
+      "conceptId": "liquidity-preference-and-money-market",
+      "id": "PG4-MM-EL-003",
+      "from": "hard",
+      "to": "medium"
+    },
+    {
+      "conceptId": "monopolistic-competition",
+      "id": "P62H-MCMP-M-025",
+      "from": "medium",
+      "to": "easy"
+    }
+  ],
+  "facultyOutcomeDefinitionsUnchanged": true,
+  "graphAssetsUnchanged": 520,
+  "frozenEvidenceUnchanged": true,
+  "adjudicatedCounts": {
+    "PASS": 245,
+    "MINOR EDITORIAL ISSUE": 53,
+    "SUBSTANTIVE DEFECT": 2
+  },
+  "newAnswerLengthFlags": 0,
+  "numericalChecks": [
+    {
+      "id": "P62D-ITP-L-074",
+      "tariff": 8,
+      "revenue": 256,
+      "deadweightLoss": 64,
+      "status": "PASS"
+    },
+    {
+      "id": "P62D-ITP-L-062",
+      "tariff": 8,
+      "revenue": 192,
+      "deadweightLoss": 64,
+      "status": "PASS"
+    },
+    {
+      "id": "P62I-OLI-EL-022",
+      "cooperationPV": 149.99999999999991,
+      "deviationPV": 83,
+      "status": "PASS"
+    },
+    {
+      "id": "P62I-OLI-L-052",
+      "cooperationPV": 65.00000000000001,
+      "deviationPV": 33.000000000000014,
+      "status": "PASS"
+    },
+    {
+      "id": "P62D-ITP-L-064",
+      "tariff": 10,
+      "revenue": 160,
+      "deadweightLoss": 100,
+      "status": "PASS"
+    },
+    {
+      "id": "P62D-ITP-L-066",
+      "tariff": 8,
+      "revenue": 224,
+      "deadweightLoss": 64,
+      "status": "PASS"
+    },
+    {
+      "id": "P62D-ITP-L-068",
+      "tariff": 12,
+      "revenue": 288,
+      "deadweightLoss": 144,
+      "status": "PASS"
+    },
+    {
+      "id": "P62D-ITP-L-070",
+      "tariff": 8,
+      "revenue": 240,
+      "deadweightLoss": 64,
+      "status": "PASS"
+    },
+    {
+      "id": "P62D-ITP-L-072",
+      "tariff": 10,
+      "revenue": 240,
+      "deadweightLoss": 100,
+      "status": "PASS"
+    },
+    {
+      "id": "P62D-ITP-L-076",
+      "tariff": 6,
+      "revenue": 120,
+      "deadweightLoss": 36,
+      "status": "PASS"
+    },
+    {
+      "id": "P62D-ITP-L-078",
+      "tariff": 7,
+      "revenue": 196,
+      "deadweightLoss": 49,
+      "status": "PASS"
+    },
+    {
+      "id": "P62D-ITP-L-080",
+      "tariff": 12,
+      "revenue": 288,
+      "deadweightLoss": 144,
+      "status": "PASS"
+    },
+    {
+      "id": "P62I-OLI-EL-017",
+      "cooperationPV": 12.499999999999998,
+      "deviationPV": 16.25,
+      "status": "PASS"
+    },
+    {
+      "id": "P62I-OLI-EL-018",
+      "cooperationPV": 16.923076923076927,
+      "deviationPV": 18.69230769230769,
+      "status": "PASS"
+    },
+    {
+      "id": "P62I-OLI-EL-019",
+      "cooperationPV": 23.999999999999996,
+      "deviationPV": 22.999999999999996,
+      "status": "PASS"
+    },
+    {
+      "id": "P62I-OLI-EL-020",
+      "cooperationPV": 37.142857142857146,
+      "deviationPV": 29.14285714285713,
+      "status": "PASS"
+    },
+    {
+      "id": "P62I-OLI-EL-021",
+      "cooperationPV": 70.00000000000004,
+      "deviationPV": 47.000000000000014,
+      "status": "PASS"
+    },
+    {
+      "id": "P62I-OLI-L-043",
+      "cooperationPV": 13.846153846153845,
+      "deviationPV": 15.615384615384613,
+      "status": "PASS"
+    },
+    {
+      "id": "P62I-OLI-L-044",
+      "cooperationPV": 16.666666666666654,
+      "deviationPV": 17.666666666666657,
+      "status": "PASS"
+    },
+    {
+      "id": "P62I-OLI-L-045",
+      "cooperationPV": 19.999999999999996,
+      "deviationPV": 20.090909090909083,
+      "status": "PASS"
+    },
+    {
+      "id": "P62I-OLI-L-046",
+      "cooperationPV": 23.999999999999996,
+      "deviationPV": 22.999999999999996,
+      "status": "PASS"
+    },
+    {
+      "id": "P62I-OLI-L-047",
+      "cooperationPV": 28.888888888888882,
+      "deviationPV": 21.666666666666654,
+      "status": "PASS"
+    },
+    {
+      "id": "P62I-OLI-L-048",
+      "cooperationPV": 22.49999999999999,
+      "deviationPV": 25.000000000000004,
+      "status": "PASS"
+    },
+    {
+      "id": "P62I-OLI-L-049",
+      "cooperationPV": 28.571428571428573,
+      "deviationPV": 23.285714285714292,
+      "status": "PASS"
+    },
+    {
+      "id": "P62I-OLI-L-050",
+      "cooperationPV": 36.66666666666669,
+      "deviationPV": 28.99999999999999,
+      "status": "PASS"
+    },
+    {
+      "id": "P62I-OLI-L-051",
+      "cooperationPV": 47.99999999999998,
+      "deviationPV": 25.000000000000004,
+      "status": "PASS"
+    },
+    {
+      "id": "P62I-OLI-L-053",
+      "cooperationPV": 59.999999999999986,
+      "deviationPV": 46.333333333333286,
+      "status": "PASS"
+    },
+    {
+      "id": "P62I-OLI-L-054",
+      "cooperationPV": 99.99999999999986,
+      "deviationPV": 72.99999999999996,
+      "status": "PASS"
+    },
+    {
+      "id": "P62I-OLI-C-026",
+      "cooperationPV": 39.99999999999997,
+      "deviationPV": 29.666666666666647,
+      "status": "PASS"
+    },
+    {
+      "id": "P62I-OLI-C-027",
+      "cooperationPV": 20,
+      "deviationPV": 20,
+      "status": "PASS"
+    },
+    {
+      "id": "P62I-OLI-B2-032",
+      "cooperationPV": 22.222222222222214,
+      "deviationPV": 19.88888888888889,
+      "status": "PASS"
+    },
+    {
+      "id": "P62I-OLI-B2-033",
+      "cooperationPV": 28.947368421052634,
+      "deviationPV": 22.52631578947367,
+      "status": "PASS"
+    },
+    {
+      "id": "P62I-OLI-B2-034",
+      "cooperationPV": 38.709677419354826,
+      "deviationPV": 28.1290322580645,
+      "status": "PASS"
+    },
+    {
+      "id": "P62I-OLI-B2-035",
+      "cooperationPV": 54.166666666666664,
+      "deviationPV": 33.83333333333336,
+      "status": "PASS"
+    },
+    {
+      "id": "P62I-OLI-B2-036",
+      "cooperationPV": 82.35294117647045,
+      "deviationPV": 48.294117647058776,
+      "status": "PASS"
+    },
+    {
+      "id": "P62I-OLI-LB-028",
+      "cooperationPV": 24.444444444444443,
+      "deviationPV": 22.88888888888889,
+      "status": "PASS"
+    },
+    {
+      "id": "P62I-OLI-LB-029",
+      "cooperationPV": 32.43243243243241,
+      "deviationPV": 27.5135135135135,
+      "status": "PASS"
+    },
+    {
+      "id": "P62I-OLI-LB-030",
+      "cooperationPV": 44.827586206896534,
+      "deviationPV": 34.6896551724138,
+      "status": "PASS"
+    },
+    {
+      "id": "P62I-OLI-LB-031",
+      "cooperationPV": 66.66666666666669,
+      "deviationPV": 47.33333333333335,
+      "status": "PASS"
+    },
+    {
+      "id": "P62I-OLI-LB-032",
+      "cooperationPV": 115.38461538461539,
+      "deviationPV": 75.53846153846145,
+      "status": "PASS"
+    },
+    {
+      "id": "P62B-ELAS-C-026",
+      "revenue": [
+        12000,
+        12800
+      ],
+      "elasticity": 1.3508771929824561,
+      "status": "PASS"
+    },
+    {
+      "id": "P62G-MON-EL-014",
+      "profit": -98.01980198019817,
+      "status": "PASS"
+    },
+    {
+      "id": "P62H-MCMP-C-010",
+      "actual": [
+        63.63636363636364
+      ],
+      "reason": "Set MR=MC, then substitute into demand.",
+      "status": "PASS"
+    },
+    {
+      "id": "P62D-ITP-L-041",
+      "actual": [
+        1378,
+        702,
+        676
+      ],
+      "reason": "Producer gain, consumer loss, and remaining gains from trade after compensation.",
+      "status": "PASS"
+    },
+    {
+      "id": "P62F-PC-LB-003",
+      "actual": [
+        -20,
+        -86
+      ],
+      "reason": "Operating profit versus shutdown loss.",
+      "status": "PASS"
+    },
+    {
+      "id": "P62F-PC-EL-007",
+      "actual": [
+        -60
+      ],
+      "reason": "Four profitable blocks cover variable cost but leave an economic loss.",
+      "status": "PASS"
+    },
+    {
+      "id": "P52A-CPI-LB-001",
+      "actual": [
+        -0.9615384615384581,
+        0.9803921568627416
+      ],
+      "reason": "Different baskets imply about 1% real loss versus gain.",
+      "status": "PASS"
+    },
+    {
+      "id": "P62E-COP-LB-031",
+      "actual": [
+        -7000
+      ],
+      "reason": "Explicit cost savings minus extra forgone capital income.",
+      "status": "PASS"
+    },
+    {
+      "id": "PMA-ITP-H-003",
+      "actual": [
+        12,
+        162
+      ],
+      "reason": "Imports and the positive consumer-surplus change after the price decline.",
+      "status": "PASS"
+    },
+    {
+      "id": "P62E-COP-B2-025",
+      "actual": [
+        24
+      ],
+      "reason": "ATC is AFC plus AVC.",
+      "status": "PASS"
+    },
+    {
+      "id": "P62H-MCMP-M-025",
+      "actual": [
+        16.07
+      ],
+      "reason": "Excess capacity is efficient-scale output minus actual output.",
+      "status": "PASS"
+    },
+    {
+      "id": "P73-MARG-L-026",
+      "actual": [
+        5
+      ],
+      "reason": "The first required class has positive net marginal benefit.",
+      "status": "PASS"
+    }
+  ]
+}

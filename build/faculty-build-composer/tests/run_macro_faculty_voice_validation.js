@@ -1,7 +1,7 @@
 'use strict';
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
 const h=require('./composer-test-helpers.js'),con=require('./composer-integrity-contracts.js'),approved=require('./macro-voice-revisions.js'),visual=require('./visual-reference-integrity.js');
-const pass2=require('./macro-voice2-revisions.js'),latest=require('./micro-voice-revisions.js'),post=require('./macro-voice3-revisions.js'),newest=require('./micro-voice3-revisions.js'),newestLive=h.loadComposerLibrary();newest.assertCurrentLibrary(newestLive);const postLive=newest.beforeMicroVoice3Library(newestLive);post.assertCurrentLibrary(postLive);const live=post.beforeVoice3Library(postLive);latest.assertCurrentLibrary(live);
+const pass2=require('./macro-voice2-revisions.js'),latest=require('./micro-voice-revisions.js'),post=require('./macro-voice3-revisions.js'),newest=require('./micro-voice3-revisions.js'),faculty=require('./faculty-validation-revisions.js'),facultyLive=h.loadComposerLibrary();faculty.assertCurrentLibrary(facultyLive);const newestLive=faculty.beforeFacultyValidationLibrary(facultyLive);newest.assertCurrentLibrary(newestLive);const postLive=newest.beforeMicroVoice3Library(newestLive);post.assertCurrentLibrary(postLive);const live=post.beforeVoice3Library(postLive);latest.assertCurrentLibrary(live);
 const actual=latest.beforeMicroVoiceLibrary(live);pass2.assertCurrentLibrary(actual);
 const lib=pass2.beforeVoice2Library(actual);approved.assertCurrentLibrary(lib);
 const before=approved.beforeVoiceLibrary(lib),current=new Map(con.questionRecords(lib).map(r=>[String(r.question.id),r.question]));

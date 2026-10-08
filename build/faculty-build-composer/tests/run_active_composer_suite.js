@@ -43,7 +43,8 @@ const ACTIVE_RUNNERS = [
   'run_macro_faculty_voice_pass2_validation.js',
   'run_macro_faculty_voice_pass3_validation.js',
   'run_micro_faculty_voice_validation.js',
-  'run_micro_faculty_voice_pass3_validation.js'
+  'run_micro_faculty_voice_pass3_validation.js',
+  'run_faculty_validation_remediation.js'
 ];
 
 function run(){

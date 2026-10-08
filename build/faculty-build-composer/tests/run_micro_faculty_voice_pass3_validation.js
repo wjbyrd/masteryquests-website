@@ -1,7 +1,7 @@
 'use strict';
 const fs=require('fs'),path=require('path'),assert=require('assert/strict'),vm=require('vm');
 const core=require('../composer-core.js'),h=require('./composer-test-helpers.js'),con=require('./composer-integrity-contracts.js'),approved=require('./micro-voice3-revisions.js'),style=require('./faculty-prose-candidates.js');
-const lib=h.loadComposerLibrary();approved.assertCurrentLibrary(lib);const before=approved.beforeMicroVoice3Library(lib),ledger=approved.microVoice3Ledger;
+const faculty=require('./faculty-validation-revisions.js'),facultyLive=h.loadComposerLibrary();faculty.assertCurrentLibrary(facultyLive);const lib=faculty.beforeFacultyValidationLibrary(facultyLive);approved.assertCurrentLibrary(lib);const before=approved.beforeMicroVoice3Library(lib),ledger=approved.microVoice3Ledger;
 const root=path.resolve(__dirname,'../../..'),out=path.join(root,'audit_tools/micro_voice3_20261007'),data=path.join(root,'build/faculty-build-composer/data');
 const old=new Map(con.questionRecords(before).map(r=>[String(r.question.id),r.question])),now=new Map(con.questionRecords(lib).map(r=>[String(r.question.id),r.question]));
 const selected=new Set(ledger.changes.map(c=>c.id)),area=require('../course-area-model.js').create(lib.registry.concepts);
@@ -15,9 +15,10 @@ for(const id of ['42660','42697'])assert(!now.has(id));assert.equal(now.get('P62
 for(const id of ['P62E-COP-EL-004','PMC-COP-R-163','PMC-COP-BR-164','PMC-COP-BR-166','P62C-CPS-LB-029','P62B-ELAS-L-059','P62H-MCMP-L-094','P62H-MCMP-E-004','PM6-MON-H-006','P62C-CPS-E-007','PM8-OLI-H-049'])assert.deepEqual(now.get(id),old.get(id));
 for(const [id,key,text]of [['42705',1,'No. At an interior optimum, MRS must also equal the price ratio.'],['P62C-CPS-H-019',0,'Consumer and producer surplus both fall; total surplus falls to $36.'],['P62C-CPS-L-074',1,'Measured willingness to pay reflects both willingness and ability to pay.']])assert.equal(now.get(id).options[key],text);
 assert.deepEqual(lib.assetInventory,before.assetInventory);
-con.assertCanonicalIntegrity(lib,{registry:JSON.parse(fs.readFileSync(path.join(data,'composer_registry.json'),'utf8')),manifest:JSON.parse(fs.readFileSync(path.join(data,'composer_library_manifest.json'),'utf8')),readBytes:a=>fs.readFileSync(path.join(data,a.runtimePath))});
+con.assertCanonicalIntegrity(lib,{registry:lib.registry,manifest:{...JSON.parse(fs.readFileSync(path.join(data,'composer_library_manifest.json'),'utf8')),librarySha256:lib.librarySha256},readBytes:a=>fs.readFileSync(path.join(data,a.runtimePath))});
 function policy(p){const x={module:{exports:{}}};vm.runInNewContext(fs.readFileSync(p,'utf8'),x);const o=JSON.parse(JSON.stringify(x.module.exports));delete o.librarySha256;delete o.policySha256;return o;}
-assert.equal(require('crypto').createHash('sha256').update(core.stableStringify(policy(path.join(data,'faculty-outcomes.js')))).digest('hex'),ledger.facultyOutcomeContentSha256);
+const historicalPolicy=structuredClone(faculty.facultyValidationLedger.facultyOutcomePolicyBefore);delete historicalPolicy.librarySha256;delete historicalPolicy.policySha256;
+assert.equal(require('crypto').createHash('sha256').update(core.stableStringify(historicalPolicy)).digest('hex'),ledger.facultyOutcomeContentSha256);
 const checks=[];function check(id,actual,expected,reason){assert.deepEqual(actual,expected,id);checks.push({id,reason,status:'PASS'});}
 check('P62C-CPS-H-008',(8-6)*(12-8)/2,4,'Missing gains triangle');
 check('P62C-CPS-H-009',(10-8)*(12-8)/2,4,'Excess output cost triangle');

@@ -2,7 +2,7 @@
 (function(root,data){if(typeof module==='object'&&module.exports)module.exports=data;else root.MQFacultyOutcomePolicy=data;})(typeof globalThis!=='undefined'?globalThis:this,{
   "schemaVersion": 1,
   "policyVersion": "faculty-lo-1",
-  "librarySha256": "a9106573c633562c9063abefb4b9b81112259d5b10bd1640c7f7d8240c6e0863",
+  "librarySha256": "13c298324115cca4003c030db9d430c8e15fb93531ffb306991163d3fe58cfab",
   "concepts": {
     "ad-as-equilibrium-and-output-gaps": {
       "outcomes": [
@@ -1975,8 +1975,8 @@
             "bridge": 30,
             "seed": 0,
             "difficulty": {
-              "easy": 43,
-              "medium": 76,
+              "easy": 44,
+              "medium": 75,
               "hard": 45,
               "elite": 15,
               "legendary": 18
@@ -2787,8 +2787,8 @@
             "bridge": 1,
             "seed": 0,
             "difficulty": {
-              "easy": 4,
-              "medium": 9,
+              "easy": 5,
+              "medium": 8,
               "hard": 0,
               "elite": 1,
               "legendary": 0
@@ -4973,8 +4973,8 @@
             "seed": 0,
             "difficulty": {
               "easy": 0,
-              "medium": 6,
-              "hard": 13,
+              "medium": 7,
+              "hard": 12,
               "elite": 3,
               "legendary": 6
             },
@@ -5219,8 +5219,8 @@
             "bridge": 1,
             "seed": 0,
             "difficulty": {
-              "easy": 8,
-              "medium": 18,
+              "easy": 9,
+              "medium": 17,
               "hard": 5,
               "elite": 0,
               "legendary": 3
@@ -5894,8 +5894,8 @@
             "difficulty": {
               "easy": 16,
               "medium": 29,
-              "hard": 10,
-              "elite": 10,
+              "hard": 9,
+              "elite": 11,
               "legendary": 24
             },
             "supportedModes": [
@@ -6294,8 +6294,8 @@
             "seed": 0,
             "difficulty": {
               "easy": 5,
-              "medium": 15,
-              "hard": 7,
+              "medium": 16,
+              "hard": 6,
               "elite": 1,
               "legendary": 5
             },
@@ -6897,8 +6897,8 @@
             "bridge": 7,
             "seed": 0,
             "difficulty": {
-              "easy": 10,
-              "medium": 18,
+              "easy": 11,
+              "medium": 17,
               "hard": 7,
               "elite": 1,
               "legendary": 2
@@ -7530,8 +7530,8 @@
             "bridge": 7,
             "seed": 0,
             "difficulty": {
-              "easy": 19,
-              "medium": 49,
+              "easy": 20,
+              "medium": 48,
               "hard": 28,
               "elite": 14,
               "legendary": 20
@@ -8658,8 +8658,8 @@
             "bridge": 9,
             "seed": 0,
             "difficulty": {
-              "easy": 21,
-              "medium": 37,
+              "easy": 22,
+              "medium": 36,
               "hard": 37,
               "elite": 16,
               "legendary": 20
@@ -10309,7 +10309,6 @@
             },
             "supportedModes": [
               "timed",
-              "exam",
               "quiz",
               "unlimited",
               "legendary",
@@ -13515,8 +13514,8 @@
             "difficulty": {
               "easy": 5,
               "medium": 12,
-              "hard": 4,
-              "elite": 4,
+              "hard": 3,
+              "elite": 5,
               "legendary": 0
             },
             "supportedModes": [
@@ -13701,5 +13700,5 @@
       "hidden": false
     }
   },
-  "policySha256": "6ab5b7be348ba2b4fb7de75774a69b4a86b18ef5d6101cb5a37211f43bc5a364"
+  "policySha256": "8b589dadca77a77fef5924f9ae102999666ecabe2380e2ac342c1907ce4c2200"
 });
