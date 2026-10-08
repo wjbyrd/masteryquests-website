@@ -1,0 +1,3546 @@
+[
+  {
+    "id": "PMS-CPS-BR-003",
+    "before": {
+      "q": "A price decrease lets an existing buyer pay less for the same unit. What happens to that buyer’s surplus?",
+      "options": [
+        "It becomes producer surplus",
+        "It is unchanged because the buyer already purchased",
+        "It rises by the amount of the price decrease, holding willingness to pay fixed",
+        "It falls because lower prices reduce value"
+      ],
+      "key": 2,
+      "feedback": "A lower price widens the gap between willingness to pay and price."
+    },
+    "final": {
+      "q": "A price decrease lets an existing buyer pay less for the same unit, with willingness to pay unchanged. What happens to that buyer’s surplus?",
+      "options": [
+        "It becomes producer surplus",
+        "It is unchanged because the buyer already purchased",
+        "It rises by the amount of the price decrease.",
+        "It falls because lower prices reduce value"
+      ],
+      "key": 2,
+      "feedback": "A lower price widens the gap between willingness to pay and price."
+    },
+    "facultyOverride": false,
+    "page": 198,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "Put the fixed willingness-to-pay condition in the stem, then give only the surplus result.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "P62C-CPS-R-016",
+    "before": {
+      "q": "A buyer values a service at $17, but providing it costs the seller $22. With no subsidy or other benefit, will they voluntarily agree to an exchange?",
+      "options": [
+        "Yes, at any price above $22.",
+        "Yes, at any price below $17.",
+        "Yes, at a price between $17 and $22.",
+        "No, no price can cover cost while staying within the buyer’s value."
+      ],
+      "key": 3,
+      "feedback": "The seller needs at least $22 while the buyer will pay at most $17. No price makes both willing to trade; the exchange would reduce total surplus by $5."
+    },
+    "final": {
+      "q": "A buyer values a service at $17, but providing it costs the seller $22. With no subsidy or other benefit, will they voluntarily agree to an exchange?",
+      "options": [
+        "Yes, at any price above $22.",
+        "Yes, at any price below $17.",
+        "Yes, at a price between $17 and $22.",
+        "No; there is no mutually acceptable price."
+      ],
+      "key": 3,
+      "feedback": "The seller needs at least $22 while the buyer will pay at most $17. No price makes both willing to trade; the exchange would reduce total surplus by $5."
+    },
+    "facultyOverride": false,
+    "page": 267,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "The keyed no contains an explanation, while the yes alternatives are short price outcomes; the feedback already gives the reason.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "P62C-CPS-B1-018",
+    "before": {
+      "q": "At the efficient quantity:",
+      "options": [
+        "All buyers get equal surplus",
+        "All sellers have equal costs",
+        "The price is morally fair",
+        "The last unit’s value equals its cost under the standard model"
+      ],
+      "key": 3,
+      "feedback": "Efficiency is determined at the margin."
+    },
+    "final": {
+      "q": "At the efficient quantity:",
+      "options": [
+        "All buyers get equal surplus",
+        "All sellers have equal costs",
+        "The price is morally fair",
+        "The last unit’s value equals its cost."
+      ],
+      "key": 3,
+      "feedback": "Under the standard competitive model, efficiency is determined at the margin: the last unit’s value equals its cost."
+    },
+    "facultyOverride": false,
+    "page": 322,
+    "patterns": [
+      "Meta/model wording",
+      "Answer-choice parallelism"
+    ],
+    "rationale": "The qualifier under the standard model is generic course framing inside the key; preserve it in feedback.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "P62C-CPS-B3-016",
+    "before": {
+      "q": "Four trades have marginal gains $18, $9, $2 and −$4. Policy A allows the efficient trades; Policy B requires all four. Both transfer $10 from sellers to buyers and use $3 of administration. Which net-surplus comparison follows?",
+      "options": [
+        "A yields $36 and B $32; include the transfer as an extra social benefit.",
+        "A yields $26 and B $22; the common transfer cancels and the forced fourth trade accounts for the $4 difference.",
+        "Both yield $26 because administration and distribution are identical.",
+        "A yields $16 and B $12; subtract the transfer as a resource cost."
+      ],
+      "key": 1,
+      "feedback": "The efficient first three gains sum to $29. A uses $3, leaving $26. B also includes the −$4 trade, leaving $22 after administration."
+    },
+    "final": {
+      "q": "Four trades have marginal gains $18, $9, $2 and −$4. Policy A allows the efficient trades; Policy B requires all four. Both transfer $10 from sellers to buyers and use $3 of administration. Which net-surplus comparison follows?",
+      "options": [
+        "A yields $36 and B yields $32.",
+        "A yields $26 and B yields $22.",
+        "Both yield $26.",
+        "A yields $16 and B yields $12."
+      ],
+      "key": 1,
+      "feedback": "The efficient first three gains sum to $29. A uses $3, leaving $26. B also includes the −$4 trade, leaving $22 after administration. The common $10 transfer changes distribution, not total surplus."
+    },
+    "facultyOverride": false,
+    "page": 327,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "The keyed option includes both the numeric result and the full transfer/forced-trade explanation. The feedback already contains the calculation.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "P62C-CPS-H-008",
+    "before": {
+      "q": "Refer to the graph. Output is limited to 6 units. What is true about units 7 and 8?",
+      "options": [
+        "Their cost exceeds value, so omitting them raises surplus",
+        "Their marginal value exceeds marginal cost, so omitting them loses $4 of total surplus",
+        "They transfer $4 from producers to consumers",
+        "No loss can be measured"
+      ],
+      "key": 1,
+      "feedback": "Between Q=6 and Q=8, demand lies above supply; the missing triangle is $4."
+    },
+    "final": {
+      "q": "Refer to the graph. Output is limited to 6 units. What is true about units 7 and 8?",
+      "options": [
+        "Their cost exceeds value, so omitting them raises surplus",
+        "Omitting them loses $4 of total surplus.",
+        "They transfer $4 from producers to consumers",
+        "No loss can be measured"
+      ],
+      "key": 1,
+      "feedback": "Between Q=6 and Q=8, demand lies above supply; the missing triangle is $4."
+    },
+    "facultyOverride": false,
+    "page": 341,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "The keyed answer includes the graph explanation and result; feedback already explains value versus cost.",
+    "reviewGraph": {
+      "sha256": "f11c62fa8fb3272bd37b3c38a6ff1c55d59dcf22e8ee001699e14ca8fd5488d7",
+      "imageAlt": "Existing question graph",
+      "graphDescription": ""
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "P62C-CPS-H-009",
+    "before": {
+      "q": "Refer to the graph. Output is pushed to 10 units. What is true about units 9 and 10?",
+      "options": [
+        "Their value exceeds cost, so they add $4",
+        "They transfer $4 from consumers to producers",
+        "Their marginal cost exceeds value, so producing them destroys $4 of total surplus",
+        "More output is always efficient"
+      ],
+      "key": 2,
+      "feedback": "Between Q=8 and Q=10, supply lies above demand; the excess-cost triangle is $4."
+    },
+    "final": {
+      "q": "Refer to the graph. Output is pushed to 10 units. What is true about units 9 and 10?",
+      "options": [
+        "Their value exceeds cost, so they add $4",
+        "They transfer $4 from consumers to producers",
+        "Producing them destroys $4 of total surplus.",
+        "More output is always efficient"
+      ],
+      "key": 2,
+      "feedback": "Between Q=8 and Q=10, supply lies above demand; the excess-cost triangle is $4."
+    },
+    "facultyOverride": false,
+    "page": 342,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "Move the marginal-cost explanation into feedback, leaving the welfare result as the answer.",
+    "reviewGraph": {
+      "sha256": "5c6e31aaac1b7c4996719f0b30e8ee53bda29ac9b08c614a1d0af073d36d6db1",
+      "imageAlt": "Existing question graph",
+      "graphDescription": ""
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "P62C-CPS-H-019",
+    "before": {
+      "q": "Refer to the graph. Supply shifts from S1 to S2. Which statement is correct?",
+      "options": [
+        "Consumer surplus, producer surplus, and total surplus all fall; total surplus becomes $36",
+        "Consumer surplus rises because price rises",
+        "Producer surplus rises because price rises",
+        "Total surplus stays $64"
+      ],
+      "key": 0,
+      "feedback": "Higher marginal cost reduces quantity and both surplus areas."
+    },
+    "final": {
+      "q": "Refer to the graph. Supply shifts from S1 to S2. Which statement is correct?",
+      "options": [
+        "Consumer and producer surplus both fall; total surplus falls to $36.",
+        "Consumer surplus rises because price rises",
+        "Producer surplus rises because price rises",
+        "Total surplus stays $64"
+      ],
+      "key": 0,
+      "feedback": "Higher marginal cost reduces quantity and both surplus areas."
+    },
+    "facultyOverride": true,
+    "page": 346,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "The correct answer is substantially longer; its three welfare results can be stated concisely without losing any.",
+    "reviewGraph": {
+      "sha256": "5dfd8a7af713d343b5991379f435e8f927752e7aa202b3ee9233922f290548df",
+      "imageAlt": "Existing question graph",
+      "graphDescription": ""
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "P62C-CPS-L-074",
+    "before": {
+      "q": "A buyer values a unit at $50 but cannot afford the market price. What does standard surplus analysis record?",
+      "options": [
+        "The buyer automatically receives $50 of consumer surplus",
+        "The buyer’s measured willingness to pay must represent both willingness and ability to pay",
+        "The market price becomes zero",
+        "The seller must treat need as payment"
+      ],
+      "key": 1,
+      "feedback": "Measured willingness to pay is constrained by ability and willingness to pay."
+    },
+    "final": {
+      "q": "A buyer values a unit at $50 but cannot afford the market price. What does standard surplus analysis record?",
+      "options": [
+        "The buyer automatically receives $50 of consumer surplus",
+        "Measured willingness to pay reflects both willingness and ability to pay.",
+        "The market price becomes zero",
+        "The seller must treat need as payment"
+      ],
+      "key": 1,
+      "feedback": "Measured willingness to pay is constrained by ability and willingness to pay."
+    },
+    "facultyOverride": true,
+    "page": 385,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "The key repeats willingness-to-pay wording and adds reading length without another economic step.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "P62C-CPS-LB-024",
+    "before": {
+      "q": "A ceiling transfers $75 from continuing sellers to buyers but prevents trades worth $30 of gains. A proposed rationing lottery additionally sends one unit to a buyer valuing it at $18 instead of an otherwise served buyer valuing it at $28, with production unchanged. What is the combined total-surplus effect?",
+      "options": [
+        "A $115 loss: add the $75 transfer, $30 prevented gains and $10 misallocation.",
+        "A $40 loss: $30 from prevented trades plus $10 from misallocation; the $75 transfer is not an additional social loss.",
+        "A $35 gain: the $75 transfer offsets $40 of real losses.",
+        "A $30 loss: any reassignment at unchanged quantity leaves total surplus unchanged."
+      ],
+      "key": 1,
+      "feedback": "Prevented trades lose $30. The reassigned unit loses $28−$18=$10 of use value with the same cost. The $75 changes distribution, so total lost surplus is $40."
+    },
+    "final": {
+      "q": "A ceiling transfers $75 from continuing sellers to buyers but prevents trades worth $30 of gains. A proposed rationing lottery additionally sends one unit to a buyer valuing it at $18 instead of an otherwise served buyer valuing it at $28, with production unchanged. How much does total surplus change?",
+      "options": [
+        "A $115 loss.",
+        "A $40 loss.",
+        "A $35 gain.",
+        "A $30 loss."
+      ],
+      "key": 1,
+      "feedback": "Prevented trades lose $30. The reassigned unit loses $28−$18=$10 of use value with the same cost. The $75 changes distribution, so total lost surplus is $40."
+    },
+    "facultyOverride": false,
+    "page": 409,
+    "patterns": [
+      "Noun stack",
+      "Answer-choice parallelism"
+    ],
+    "rationale": "Ask directly for the change in total surplus and move explanations out of all four alternatives.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42617",
+    "before": {
+      "q": "Income is $88, X costs $6 and Y costs $14. A consumer wants to retain four units of Y after X’s price rises to $8. What is the maximum affordable X, and which comparison with the original budget is correct?",
+      "options": [
+        "Four X; the maximum at four Y rises from 3 to 4 because the relative price of X falls.",
+        "Four X; the maximum at four Y falls from 5⅓ to 4 because the relative price of X rises.",
+        "Eleven X; spend all $88 on X while also retaining four Y.",
+        "5⅓ X; the original budget boundary remains valid because income is unchanged."
+      ],
+      "key": 1,
+      "feedback": "Four Y cost $56, leaving $32. That buys 32/6=5⅓ X originally but 32/8=4 after the price rise. The price change rotates the budget rather than changing nominal income."
+    },
+    "final": {
+      "q": "Income is $88, X costs $6 and Y costs $14. A consumer wants to retain four units of Y after X’s price rises to $8. What is the maximum affordable X, and which comparison with the original budget is correct?",
+      "options": [
+        "Four X; the maximum at four Y rises from 3 to 4 because the relative price of X falls.",
+        "Four X; the maximum at four Y falls from 5⅓ to 4.",
+        "Eleven X; spend all $88 on X while also retaining four Y.",
+        "5⅓ X; the original budget boundary remains valid because income is unchanged."
+      ],
+      "key": 1,
+      "feedback": "Four Y cost $56, leaving $32. That buys 32/6=5⅓ X originally but 32/8=4 after the price rise. The price change rotates the budget rather than changing nominal income."
+    },
+    "facultyOverride": false,
+    "page": 62,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "The comparison already gives the quantity result; the because clause belongs in feedback.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42705",
+    "before": {
+      "q": "A consumer spends the entire budget and buys both goods. Is budget exhaustion alone sufficient to establish an optimum with smooth, strictly convex preferences?",
+      "options": [
+        "Yes. Every bundle on the budget line is optimal.",
+        "No. The marginal willingness to trade must also match the market tradeoff at an interior optimum.",
+        "Yes. Positive quantities guarantee equal marginal utility per dollar.",
+        "No. An optimum always leaves some income unspent."
+      ],
+      "key": 1,
+      "feedback": "A budget-line bundle can still be improved by reallocating spending if MRS differs from Px/Py. Feasibility and full spending alone are insufficient."
+    },
+    "final": {
+      "q": "A consumer spends the entire budget and buys both goods. Is budget exhaustion alone sufficient to establish an optimum with smooth, strictly convex preferences?",
+      "options": [
+        "Yes. Every bundle on the budget line is optimal.",
+        "No. At an interior optimum, MRS must also equal the price ratio.",
+        "Yes. Positive quantities guarantee equal marginal utility per dollar.",
+        "No. An optimum always leaves some income unspent."
+      ],
+      "key": 1,
+      "feedback": "A budget-line bundle can still be improved by reallocating spending if MRS differs from Px/Py. Feasibility and full spending alone are insufficient."
+    },
+    "facultyOverride": true,
+    "page": 176,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "The key explains the interior tangency condition at length; state the necessary condition directly.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42701",
+    "before": {
+      "q": "A consumer has U = 3X + Y, positive income, Px = $2 and Py = $1. Goods are divisible. A student rejects spending all income on X because MRS = 3 does not equal Px/Py = 2. Which response is correct?",
+      "options": [
+        "The student is right; every optimum must satisfy MRS = Px/Py.",
+        "All-X is optimal: X gives more utility per dollar, and an interior tangency condition need not hold at a corner.",
+        "All-Y is optimal because Y has the lower price per unit.",
+        "An equal-quantity bundle is optimal because it balances the goods."
+      ],
+      "key": 1,
+      "feedback": "For perfect substitutes, MUx/Px = 3/2 exceeds MUy/Py = 1. Utility is maximized at the all-X corner, where equality of MRS and the price ratio is not required."
+    },
+    "final": {
+      "q": "A consumer has U = 3X + Y, positive income, Px = $2 and Py = $1. Goods are divisible. A student rejects spending all income on X because MRS = 3 does not equal Px/Py = 2. Which response is correct?",
+      "options": [
+        "The student is right; every optimum must satisfy MRS = Px/Py.",
+        "All-X is optimal; tangency is not required at a corner.",
+        "All-Y is optimal because Y has the lower price per unit.",
+        "An equal-quantity bundle is optimal because it balances the goods."
+      ],
+      "key": 1,
+      "feedback": "For perfect substitutes, MUx/Px = 3/2 exceeds MUy/Py = 1. Utility is maximized at the all-X corner, where equality of MRS and the price ratio is not required."
+    },
+    "facultyOverride": false,
+    "page": 179,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "Retain the corner solution and tangency exception; put the utility-per-dollar explanation in feedback.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42576",
+    "before": {
+      "q": "Refer to the graph above. At four yogurts, how much cereal lies on the new line?",
+      "options": [
+        "1 box",
+        "2 boxes",
+        "3 boxes",
+        "4 boxes"
+      ],
+      "key": 0,
+      "feedback": "Four yogurts cost $32 after the price increase, leaving $8 for one cereal box."
+    },
+    "final": {
+      "q": "The budget line changes from BC0 to BC1. At four yogurts, how much cereal lies on BC1?",
+      "options": [
+        "1 box",
+        "2 boxes",
+        "3 boxes",
+        "4 boxes"
+      ],
+      "key": 0,
+      "feedback": "Four yogurts cost $32 after the price increase, leaving $8 for one cereal box."
+    },
+    "facultyOverride": false,
+    "page": 1367,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "Name the initial and final budget lines; new line or after the shift otherwise leaves the chronology implicit.",
+    "reviewGraph": {
+      "sha256": "0de9f0e4897c9920bf69ab46b300c6f3ca27b2cdd3795d89369c1a149fa6d1e4",
+      "imageAlt": "A yogurt-price increase pivots the budget line inward around the cereal intercept.",
+      "graphDescription": "The dashed original line has intercepts 10 yogurts and 5 cereal boxes. The solid new line has intercepts 5 yogurts and 5 cereal boxes, consistent with yogurt's price rising from $4 to $8 while income and cereal's price remain fixed."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42580",
+    "before": {
+      "q": "Refer to the graph above. What happens to purchasing power after the shift?",
+      "options": [
+        "It decreases for both goods",
+        "It increases only for yogurt",
+        "It increases only for cereal",
+        "It is unchanged"
+      ],
+      "key": 0,
+      "feedback": "Lower income reduces both intercepts and removes some formerly feasible bundles."
+    },
+    "final": {
+      "q": "The budget line changes from BC0 to BC1. What happens to purchasing power?",
+      "options": [
+        "It decreases for both goods",
+        "It increases only for yogurt",
+        "It increases only for cereal",
+        "It is unchanged"
+      ],
+      "key": 0,
+      "feedback": "Lower income reduces both intercepts and removes some formerly feasible bundles."
+    },
+    "facultyOverride": false,
+    "page": 1368,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "Name the initial and final budget lines; new line or after the shift otherwise leaves the chronology implicit.",
+    "reviewGraph": {
+      "sha256": "21b90ea6d3d34b35aaac52521320cc056a2c8fc105cc6b5357e706a5100d0bc3",
+      "imageAlt": "An income decrease shifts the yogurt-cereal budget line inward in parallel.",
+      "graphDescription": "The original line has intercepts 10 yogurts and 5 cereal boxes; the new parallel line has intercepts 8 yogurts and 4 cereal boxes. With prices unchanged, income falls from $40 to $32."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42570",
+    "before": {
+      "q": "Refer to the graph above. At six yogurts, how much cereal is affordable on the new line?",
+      "options": [
+        "2 boxes",
+        "6 boxes",
+        "4 boxes",
+        "10 boxes"
+      ],
+      "key": 2,
+      "feedback": "Six yogurts use $24, leaving $16; at $4 per cereal box, four boxes are affordable."
+    },
+    "final": {
+      "q": "The budget line changes from BC0 to BC1. At six yogurts, how much cereal is affordable on BC1?",
+      "options": [
+        "2 boxes",
+        "6 boxes",
+        "4 boxes",
+        "10 boxes"
+      ],
+      "key": 2,
+      "feedback": "Six yogurts use $24, leaving $16; at $4 per cereal box, four boxes are affordable."
+    },
+    "facultyOverride": false,
+    "page": 1371,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "Name the initial and final budget lines; new line or after the shift otherwise leaves the chronology implicit.",
+    "reviewGraph": {
+      "sha256": "a68a3979230209a07b0db85b58ed7f440db89854205f91452bdad1c94159fb4c",
+      "imageAlt": "A cereal-price decrease pivots the budget line outward around the yogurt intercept.",
+      "graphDescription": "The dashed original line has intercepts 10 yogurts and 5 cereal boxes. The solid new line has intercepts 10 yogurts and 10 cereal boxes, consistent with cereal's price falling from $8 to $4 while income and yogurt's price remain fixed."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42582",
+    "before": {
+      "q": "Refer to the graph above. What is maximum cereal after income falls?",
+      "options": [
+        "5 boxes",
+        "8 boxes",
+        "4 boxes",
+        "10 boxes"
+      ],
+      "key": 2,
+      "feedback": "At the unchanged $8 cereal price, $32 buys at most four cereal boxes."
+    },
+    "final": {
+      "q": "Income falls, moving the budget line from BC0 to BC1. What is the maximum amount of cereal the consumer can buy?",
+      "options": [
+        "5 boxes",
+        "8 boxes",
+        "4 boxes",
+        "10 boxes"
+      ],
+      "key": 2,
+      "feedback": "At the unchanged $8 cereal price, $32 buys at most four cereal boxes."
+    },
+    "facultyOverride": false,
+    "page": 1378,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "Name the initial and final budget lines; new line or after the shift otherwise leaves the chronology implicit.",
+    "reviewGraph": {
+      "sha256": "21b90ea6d3d34b35aaac52521320cc056a2c8fc105cc6b5357e706a5100d0bc3",
+      "imageAlt": "An income decrease shifts the yogurt-cereal budget line inward in parallel.",
+      "graphDescription": "The original line has intercepts 10 yogurts and 5 cereal boxes; the new parallel line has intercepts 8 yogurts and 4 cereal boxes. With prices unchanged, income falls from $40 to $32."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42666",
+    "before": {
+      "q": "A consumer is indifferent among A, B, and every mixture of A and B. Does this observation establish strictly convex preferences?",
+      "options": [
+        "Yes. Indifference along mixtures is exactly strict convexity.",
+        "Yes. Every downward-sloping curve is strictly convex.",
+        "No. Strict convexity would make an interior mixture strictly preferred to the distinct equally ranked endpoints.",
+        "No. Convex preferences forbid indifference between distinct bundles."
+      ],
+      "key": 2,
+      "feedback": "Indifference along the connecting segment is consistent with weak convexity, such as perfect substitutes, but not strict convexity between these endpoints."
+    },
+    "final": {
+      "q": "A consumer is indifferent among A, B, and every mixture of A and B. Does this observation establish strictly convex preferences?",
+      "options": [
+        "Yes. Indifference along mixtures is exactly strict convexity.",
+        "Yes. Every downward-sloping curve is strictly convex.",
+        "No. Strict convexity requires an interior mixture to be preferred to both endpoints.",
+        "No. Convex preferences forbid indifference between distinct bundles."
+      ],
+      "key": 2,
+      "feedback": "Indifference along the connecting segment is consistent with weak convexity, such as perfect substitutes, but not strict convexity between these endpoints."
+    },
+    "facultyOverride": false,
+    "page": 1398,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "The stem already establishes equally ranked endpoints and mixtures; avoid repeating that setup in the key.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42653",
+    "before": {
+      "q": "Preferences are complete and transitive. A consumer prefers A to B and A to C. What can be concluded about B and C from this information?",
+      "options": [
+        "B must be preferred to C.",
+        "B may be preferred, C may be preferred, or they may be equally preferred.",
+        "C must be preferred to B.",
+        "B and C must be equally preferred."
+      ],
+      "key": 1,
+      "feedback": "Knowing that both rank below A does not rank them against each other. Completeness requires a ranking but does not tell us which one."
+    },
+    "final": {
+      "q": "Preferences are complete and transitive. A consumer prefers A to B and A to C. What can be concluded about B and C from this information?",
+      "options": [
+        "B must be preferred to C.",
+        "The information does not determine their relative ranking.",
+        "C must be preferred to B.",
+        "B and C must be equally preferred."
+      ],
+      "key": 1,
+      "feedback": "Knowing that both rank below A does not rank them against each other. Completeness requires a ranking but does not tell us which one."
+    },
+    "facultyOverride": false,
+    "page": 3108,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "The key lists all three possible rankings; a concise statement of indeterminacy conveys the same result.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "PMC-COP-R-010",
+    "before": {
+      "q": "A learner says, “If the owner did not write a check, the resource has no cost.” Which statement corrects this claim?",
+      "options": [
+        "Only variable resources have economic costs",
+        "Every implicit cost must appear on an invoice",
+        "Opportunity cost matters only for consumers",
+        "Owner-supplied resources can have implicit opportunity costs even without a cash payment"
+      ],
+      "key": 3,
+      "feedback": "Economic cost includes the value of the next-best use of owner-supplied resources."
+    },
+    "final": {
+      "q": "A learner says, “If the owner did not write a check, the resource has no cost.” Which statement corrects this claim?",
+      "options": [
+        "Only variable resources have economic costs",
+        "Every implicit cost must appear on an invoice",
+        "Opportunity cost matters only for consumers",
+        "Owner-supplied resources may still have opportunity costs."
+      ],
+      "key": 3,
+      "feedback": "Economic cost includes the value of the next-best use of owner-supplied resources."
+    },
+    "facultyOverride": false,
+    "page": 414,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "The stem already says no check was written; do not repeat that condition in a long keyed answer.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "PMC-COP-R-025",
+    "before": {
+      "q": "A learner calls zero economic profit a “loss.” Which statement corrects this claim?",
+      "options": [
+        "Zero economic profit means all explicit and implicit costs, including normal profit, are covered",
+        "Zero economic profit means revenue is zero",
+        "Zero economic profit means explicit costs exceed revenue",
+        "Zero economic profit excludes owner compensation"
+      ],
+      "key": 0,
+      "feedback": "Normal profit is included in economic cost, so zero economic profit can be a sustainable outcome."
+    },
+    "final": {
+      "q": "A learner calls zero economic profit a “loss.” Which statement corrects this claim?",
+      "options": [
+        "Revenue covers explicit and implicit costs, including normal profit.",
+        "Zero economic profit means revenue is zero",
+        "Zero economic profit means explicit costs exceed revenue",
+        "Zero economic profit excludes owner compensation"
+      ],
+      "key": 0,
+      "feedback": "Normal profit is included in economic cost, so zero economic profit can be a sustainable outcome."
+    },
+    "facultyOverride": false,
+    "page": 415,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "Remove repeated zero-economic-profit framing while preserving explicit costs, implicit costs and normal profit.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "P62E-COP-EL-001",
+    "before": {
+      "q": "An owner reports $75,000 accounting profit but could earn $62,000 elsewhere and earn $18,000 renting owner capital. Which conclusion is correct?",
+      "options": [
+        "Economic profit is −$5,000 even though accounting profit is positive",
+        "Economic profit is $75,000",
+        "Economic profit is $13,000",
+        "Economic profit is $155,000"
+      ],
+      "key": 0,
+      "feedback": "Subtract $80,000 of implicit costs from $75,000 accounting profit."
+    },
+    "final": {
+      "q": "An owner reports $75,000 accounting profit but could earn $62,000 elsewhere and earn $18,000 renting owner capital. Which conclusion is correct?",
+      "options": [
+        "Economic profit is −$5,000.",
+        "Economic profit is $75,000",
+        "Economic profit is $13,000",
+        "Economic profit is $155,000"
+      ],
+      "key": 0,
+      "feedback": "Subtract $80,000 of implicit costs from $75,000 accounting profit."
+    },
+    "facultyOverride": false,
+    "page": 440,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "The positive accounting profit is already in the stem; remove that redundant contrast from the keyed result.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "PMC-COP-R-068",
+    "before": {
+      "q": "A learner says AFC eventually rises because “all U-shaped costs rise.” Which statement corrects this claim?",
+      "options": [
+        "AFC rises whenever MC rises",
+        "AFC keeps falling as fixed cost is spread over more output",
+        "AFC is U-shaped like AVC",
+        "AFC equals MC at its minimum"
+      ],
+      "key": 1,
+      "feedback": "AFC is not U-shaped in the standard model; it declines as quantity increases."
+    },
+    "final": {
+      "q": "A learner says AFC eventually rises because “all U-shaped costs rise.” Which statement corrects this claim?",
+      "options": [
+        "AFC rises whenever MC rises",
+        "AFC continues falling as output increases.",
+        "AFC is U-shaped like AVC",
+        "AFC equals MC at its minimum"
+      ],
+      "key": 1,
+      "feedback": "AFC is not U-shaped in the standard model; it declines as quantity increases. With fixed cost unchanged, AFC = fixed cost divided by output, so it falls as output rises."
+    },
+    "facultyOverride": false,
+    "page": 513,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "Leave the fixed-cost-spreading explanation in feedback and state the corrected cost-curve outcome.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "PMC-COP-M-086",
+    "before": {
+      "q": "A $500 monthly license fee is imposed regardless of output. Which statement about MC is correct?",
+      "options": [
+        "MC rises by $500 for every unit",
+        "MC falls because AFC rises",
+        "MC becomes equal to ATC",
+        "MC is unchanged because the fee does not vary with output"
+      ],
+      "key": 3,
+      "feedback": "A fixed fee shifts fixed and average total cost, not the incremental cost of output."
+    },
+    "final": {
+      "q": "A $500 monthly license fee is imposed regardless of output. Which statement about MC is correct?",
+      "options": [
+        "MC rises by $500 for every unit",
+        "MC falls because AFC rises",
+        "MC becomes equal to ATC",
+        "MC is unchanged."
+      ],
+      "key": 3,
+      "feedback": "A fixed fee shifts fixed and average total cost, not the incremental cost of output."
+    },
+    "facultyOverride": false,
+    "page": 546,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "The explanation that the fee is fixed is already given in the stem and belongs in feedback.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "P62E-COP-EL-010",
+    "before": {
+      "q": "MC rises from $18 to $22 while ATC falls from $30 to $28. Why is there no contradiction?",
+      "options": [
+        "Rising MC always raises ATC",
+        "MC remains below ATC and therefore still pulls ATC down",
+        "ATC excludes marginal cost",
+        "AFC must be negative"
+      ],
+      "key": 1,
+      "feedback": "The level of MC relative to ATC, not merely MC’s direction, controls ATC."
+    },
+    "final": {
+      "q": "MC rises from $18 to $22 while ATC falls from $30 to $28. Why is there no contradiction?",
+      "options": [
+        "Rising MC always raises ATC",
+        "MC remains below ATC.",
+        "ATC excludes marginal cost",
+        "AFC must be negative"
+      ],
+      "key": 1,
+      "feedback": "The level of MC relative to ATC, not merely MC’s direction, controls ATC."
+    },
+    "facultyOverride": false,
+    "page": 625,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "The repeated falling-ATC result is explanatory; the decisive comparison is MC below ATC.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "PMC-COP-R-118",
+    "before": {
+      "q": "A learner includes a nonrefundable past payment when comparing two current options that both leave the payment unchanged. Which statement best corrects this mistake?",
+      "options": [
+        "Double the payment to reflect risk",
+        "Treat it as marginal cost",
+        "Convert it into future revenue",
+        "Ignore the payment because it is sunk and identical across the options"
+      ],
+      "key": 3,
+      "feedback": "Only costs and benefits that differ across current alternatives should affect the choice."
+    },
+    "final": {
+      "q": "A learner includes a nonrefundable past payment when comparing two current options that both leave the payment unchanged. Which statement best corrects this mistake?",
+      "options": [
+        "Double the payment to reflect risk",
+        "Treat it as marginal cost",
+        "Convert it into future revenue",
+        "Exclude the payment from the comparison."
+      ],
+      "key": 3,
+      "feedback": "Only costs and benefits that differ across current alternatives should affect the choice."
+    },
+    "facultyOverride": false,
+    "page": 637,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "All necessary sunk-cost conditions are in the stem; the key should give the decision rule.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "PMC-COP-M-110",
+    "before": {
+      "q": "A company spent $40,000 developing software that now has no resale value. A new update would cost $8,000 and generate an expected $11,000 benefit. Ignoring other effects, what should the firm do?",
+      "options": [
+        "Reject the update because total spending would become $48,000",
+        "Reject the update because sunk costs must be recovered first",
+        "Buy the update only if the original $40,000 is refunded",
+        "Buy the update because the $40,000 is sunk and the incremental benefit exceeds the incremental cost"
+      ],
+      "key": 3,
+      "feedback": "The current decision compares the $11,000 additional benefit with the $8,000 additional cost."
+    },
+    "final": {
+      "q": "A company spent $40,000 developing software that now has no resale value. A new update would cost $8,000 and generate an expected $11,000 benefit. Ignoring other effects, what should the firm do?",
+      "options": [
+        "Reject the update because total spending would become $48,000",
+        "Reject the update because sunk costs must be recovered first",
+        "Buy the update only if the original $40,000 is refunded",
+        "Buy the update; its benefits exceed its additional cost."
+      ],
+      "key": 3,
+      "feedback": "The current decision compares the $11,000 additional benefit with the $8,000 additional cost. The original $40,000 is sunk and does not change with the update decision."
+    },
+    "facultyOverride": false,
+    "page": 649,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "The keyed action carries a sunk-cost explanation plus the incremental comparison. Keep the decision and one concise reason.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "PMC-COP-H-115",
+    "before": {
+      "q": "A publisher spent $25,000 editing a book. It can print the book for an additional $12,000 and expects $15,000 in additional sales. Which statement is correct?",
+      "options": [
+        "The editing cost should be allocated to each future copy before deciding",
+        "The firm must recover all $25,000 before printing",
+        "Printing adds $3,000 to profit relative to not printing, because the editing cost is sunk",
+        "Printing loses $22,000 because total cost is $37,000"
+      ],
+      "key": 2,
+      "feedback": "The current decision compares the $15,000 incremental revenue with the $12,000 avoidable printing cost."
+    },
+    "final": {
+      "q": "A publisher spent $25,000 editing a book. It can print the book for an additional $12,000 and expects $15,000 in additional sales. Which statement is correct?",
+      "options": [
+        "The editing cost should be allocated to each future copy before deciding",
+        "The firm must recover all $25,000 before printing",
+        "Printing raises profit by $3,000 relative to not printing.",
+        "Printing loses $22,000 because total cost is $37,000"
+      ],
+      "key": 2,
+      "feedback": "The current decision compares the $15,000 incremental revenue with the $12,000 avoidable printing cost. The $25,000 editing cost is sunk and is incurred whether or not the book is printed."
+    },
+    "facultyOverride": false,
+    "page": 657,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "Move the sunk editing-cost explanation from the keyed numeric outcome to feedback, preserving the comparison with not printing.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "P62E-COP-EL-008",
+    "before": {
+      "q": "A per-unit royalty of $4 is added to production. Which immediate effect is correct?",
+      "options": [
+        "AFC and ATC rise by $4",
+        "Only TFC rises",
+        "MC falls by $4",
+        "AVC, ATC, and MC rise by $4 at every positive output"
+      ],
+      "key": 3,
+      "feedback": "A constant per-unit cost adds $4 to variable and marginal cost."
+    },
+    "final": {
+      "q": "A per-unit royalty of $4 is added to production. Which immediate effect is correct?",
+      "options": [
+        "AFC and ATC rise by $4",
+        "Only TFC rises",
+        "MC falls by $4",
+        "AVC, ATC and MC each rise $4."
+      ],
+      "key": 3,
+      "feedback": "A constant per-unit cost adds $4 to variable and marginal cost."
+    },
+    "facultyOverride": false,
+    "page": 658,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "State the three affected curves and common change concisely; the per-unit condition is already in the stem.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "P62B-ELAS-LB-036",
+    "before": {
+      "q": "A climate policy raises energy prices, encourages substitution, induces innovation, and changes household location over a decade. What does this imply about short-run versus long-run demand elasticity?",
+      "options": [
+        "Long-run elasticity should be smaller because consumers exhaust their easiest adjustments during the first month",
+        "Over a decade, innovation and relocation give households more ways to respond, so demand may be more elastic than a first-month estimate suggests",
+        "The policy changes supply responsiveness but leaves household demand responsiveness essentially unchanged over time",
+        "The first-month estimate remains the best long-run measure because later innovation and relocation are separate effects"
+      ],
+      "key": 1,
+      "feedback": "Technology, capital, and location adjustments expand long-run response."
+    },
+    "final": {
+      "q": "A climate policy raises energy prices, encourages substitution, induces innovation, and changes household location over a decade. What does this imply about short-run versus long-run demand elasticity?",
+      "options": [
+        "Long-run elasticity should be smaller because consumers exhaust their easiest adjustments during the first month",
+        "Long-run demand may be more elastic than the first-month estimate.",
+        "The policy changes supply responsiveness but leaves household demand responsiveness essentially unchanged over time",
+        "The first-month estimate remains the best long-run measure because later innovation and relocation are separate effects"
+      ],
+      "key": 1,
+      "feedback": "Technology, capital, and location adjustments expand long-run response."
+    },
+    "facultyOverride": false,
+    "page": 848,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "The key repeats innovation and relocation from the stem before giving the elasticity conclusion.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "P62B-ELAS-B3-005",
+    "before": {
+      "q": "A seller faces downward-sloping demand with absolute elasticity 0.8 at its current output. An analyst proposes a small output expansion to raise total revenue. Which response follows from elasticity, without needing a cost model?",
+      "options": [
+        "Reject the revenue claim: the current range is inelastic, so marginal revenue is negative and a small output reduction raises revenue.",
+        "Accept the claim: any positive price makes marginal revenue positive regardless of elasticity.",
+        "Reject the claim because marginal revenue is zero whenever elasticity is below one.",
+        "Accept the claim because inelastic demand means quantity changes proportionately more than price."
+      ],
+      "key": 0,
+      "feedback": "In the inelastic range, expanding sales requires a proportionately large price reduction, reducing revenue. Thus MR is negative; the conclusion is about revenue rather than a complete profit choice."
+    },
+    "final": {
+      "q": "A seller faces downward-sloping demand with absolute elasticity 0.8 at its current output. An analyst proposes a small output expansion to raise total revenue. Which response follows from elasticity, without needing a cost model?",
+      "options": [
+        "Reject it; marginal revenue is negative, so a small output expansion reduces total revenue.",
+        "Accept the claim: any positive price makes marginal revenue positive regardless of elasticity.",
+        "Reject the claim because marginal revenue is zero whenever elasticity is below one.",
+        "Accept the claim because inelastic demand means quantity changes proportionately more than price."
+      ],
+      "key": 0,
+      "feedback": "In the inelastic range, expanding sales requires a proportionately large price reduction, reducing revenue. Thus MR is negative; the conclusion is about revenue rather than a complete profit choice."
+    },
+    "facultyOverride": false,
+    "page": 939,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "Keep the marginal-revenue link but move the additional output-reduction explanation into feedback.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "P62B-ELAS-L-060",
+    "before": {
+      "q": "A minimum wage has a larger employment effect in one industry than another. Which explanation is most directly elasticity-based?",
+      "options": [
+        "Workers are legally required to pay the wage",
+        "Labor demand is more elastic in the industry with the larger employment response",
+        "The industry has higher nominal revenue",
+        "Labor supply slopes upward in both industries"
+      ],
+      "key": 1,
+      "feedback": "More elastic labor demand produces a larger quantity-of-labor response to wage changes."
+    },
+    "final": {
+      "q": "A minimum wage has a larger employment effect in one industry than another. Which explanation is most directly elasticity-based?",
+      "options": [
+        "Workers are legally required to pay the wage",
+        "Labor demand is more elastic in that industry.",
+        "The industry has higher nominal revenue",
+        "Labor supply slopes upward in both industries"
+      ],
+      "key": 1,
+      "feedback": "More elastic labor demand produces a larger quantity-of-labor response to wage changes."
+    },
+    "facultyOverride": false,
+    "page": 1031,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "The key repeats the comparison already made in the stem.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "P62B-ELAS-EL-018",
+    "before": {
+      "q": "A carbon tax is intended to reduce emissions. Which market configuration creates the strongest quantity response to a given tax wedge?",
+      "options": [
+        "Perfectly inelastic demand and supply",
+        "Inelastic demand with fixed supply",
+        "The legal obligation placed on firms",
+        "Relatively elastic demand and relatively elastic supply"
+      ],
+      "key": 3,
+      "feedback": "Greater responsiveness on both sides produces a larger reduction in equilibrium quantity."
+    },
+    "final": {
+      "q": "A carbon tax is intended to reduce emissions. Which combination of demand and supply elasticities creates the strongest quantity response to a given tax wedge?",
+      "options": [
+        "Perfectly inelastic demand and supply",
+        "Inelastic demand with fixed supply",
+        "The legal obligation placed on firms",
+        "Relatively elastic demand and relatively elastic supply"
+      ],
+      "key": 3,
+      "feedback": "Greater responsiveness on both sides produces a larger reduction in equilibrium quantity."
+    },
+    "facultyOverride": false,
+    "page": 1043,
+    "patterns": [
+      "AI abstraction"
+    ],
+    "rationale": "Market configuration can be replaced with the relevant economic characteristics.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42383",
+    "before": {
+      "q": "Refer to the graph. What is the equilibrium wage after labor demand and supply both increase, and what can be concluded about other markets with these two shifts?",
+      "options": [
+        "$25; the wage effects offset here, but need not offset in other markets.",
+        "$20; the wage must be unchanged whenever both curves shift right.",
+        "$25; the wage must be unchanged whenever both curves shift right.",
+        "$20; the wage effects offset here, but need not offset in other markets."
+      ],
+      "key": 3,
+      "feedback": "The old curves meet at $20 and 40 hundreds; the new curves meet at $20 and 80 hundreds. Here opposing wage effects offset exactly. In general their relative magnitudes determine the wage change, while both increases raise employment."
+    },
+    "final": {
+      "q": "The market begins where D L0 and S L0 intersect. Demand and supply increase to D L1 and S L1. What is the new equilibrium wage, and what can be concluded about other markets with these two shifts?",
+      "options": [
+        "$25; the wage effects offset here, but need not offset in other markets.",
+        "$20; the wage must be unchanged whenever both curves shift right.",
+        "$25; the wage must be unchanged whenever both curves shift right.",
+        "$20; the wage effects offset here, but need not offset in other markets."
+      ],
+      "key": 3,
+      "feedback": "The old curves meet at $20 and 40 hundreds; the new curves meet at $20 and 80 hundreds. Here opposing wage effects offset exactly. In general their relative magnitudes determine the wage change, while both increases raise employment."
+    },
+    "facultyOverride": false,
+    "page": 151,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "Name the initial and resulting curves instead of relying on curve subscripts or old/new language to establish chronology. Preserve the plotted graph and all requested reasoning.",
+    "reviewGraph": {
+      "sha256": "ef7b4edc7407c3be73a64749a0d76f9c5e513e358b9f4cf67fa108220533bd2c",
+      "imageAlt": "Nursing labor demand and supply both shift right, increasing equilibrium employment from 4,000 to 8,000 while the wage remains $20.",
+      "graphDescription": "The vertical axis is hourly wage in dollars and the horizontal axis is hundreds of nurses. Dashed D L0 and S L0 intersect at 4,000 nurses and $20 per hour. Solid D L1 and S L1 intersect at 8,000 nurses and the same $20 wage. In this particular simultaneous-shift case, employment doubles while the equilibrium wage is unchanged."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42335",
+    "before": {
+      "q": "Customer demand for next-day delivery rises. Which new equilibrium in the graph and explanation are consistent with that event?",
+      "options": [
+        "$30 and 8,000 workers; more valuable warehouse output raises derived labor demand.",
+        "$25 and 6,000 workers; the resulting higher wage is itself what shifts labor demand.",
+        "$30 and 8,000 workers; the resulting higher wage is itself what shifts labor demand.",
+        "$25 and 6,000 workers; more valuable warehouse output raises derived labor demand."
+      ],
+      "key": 3,
+      "feedback": "DL1 intersects supply at $25 and 60 hundreds. Labor demand derives from the output workers produce: stronger demand for delivery can raise their marginal product value. Wage is a resulting price, not the demand shifter."
+    },
+    "final": {
+      "q": "The market begins where D L0 and S L intersect. Customer demand for next-day delivery rises. Which new equilibrium in the graph and explanation are consistent with that event?",
+      "options": [
+        "$30 and 8,000 workers; more valuable warehouse output raises derived labor demand.",
+        "$25 and 6,000 workers; the resulting higher wage is itself what shifts labor demand.",
+        "$30 and 8,000 workers; the resulting higher wage is itself what shifts labor demand.",
+        "$25 and 6,000 workers; more valuable warehouse output raises derived labor demand."
+      ],
+      "key": 3,
+      "feedback": "DL1 intersects supply at $25 and 60 hundreds. Labor demand derives from the output workers produce: stronger demand for delivery can raise their marginal product value. Wage is a resulting price, not the demand shifter."
+    },
+    "facultyOverride": false,
+    "page": 780,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "State the initial curves explicitly while leaving the economic cause and direction for the student to determine.",
+    "reviewGraph": {
+      "sha256": "e6ecbe54922ffbe4929e10494e307ae1092461e26896ebd00a3af81b22fbad73",
+      "imageAlt": "Warehouse labor demand shifts right, raising equilibrium from 4,000 workers at $20 to 6,000 workers at $25 per hour.",
+      "graphDescription": "The vertical axis is hourly wage in dollars and the horizontal axis is hundreds of warehouse workers. Supply is unchanged. Labor demand shifts right from dashed D L0 to solid D L1. The marked equilibrium moves from 4,000 workers at $20 per hour to 6,000 workers at $25 per hour."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42337",
+    "before": {
+      "q": "A report says, “The higher wage caused labor demand to increase.” Which new wage and causal explanation match the graph?",
+      "options": [
+        "$30; a demand determinant changed first, and the resulting wage rise induces movement along labor supply.",
+        "$25; a demand determinant changed first, and the resulting wage rise induces movement along labor supply.",
+        "$25; the wage rise itself shifts labor demand right.",
+        "$30; the wage rise itself shifts labor demand right."
+      ],
+      "key": 1,
+      "feedback": "DL1 intersects unchanged supply at $25 and 6,000 workers. Productivity or output demand can shift labor demand; the wage responds and moves quantity supplied along the supply curve."
+    },
+    "final": {
+      "q": "The market begins where D L0 and S L intersect. A report says, “The higher wage caused labor demand to increase.” Which new wage and causal explanation match the graph?",
+      "options": [
+        "$30; a demand determinant changed first, and the resulting wage rise induces movement along labor supply.",
+        "$25; a demand determinant changed first, and the resulting wage rise induces movement along labor supply.",
+        "$25; the wage rise itself shifts labor demand right.",
+        "$30; the wage rise itself shifts labor demand right."
+      ],
+      "key": 1,
+      "feedback": "DL1 intersects unchanged supply at $25 and 6,000 workers. Productivity or output demand can shift labor demand; the wage responds and moves quantity supplied along the supply curve."
+    },
+    "facultyOverride": false,
+    "page": 781,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "State the initial curves explicitly while leaving the economic cause and direction for the student to determine.",
+    "reviewGraph": {
+      "sha256": "e6ecbe54922ffbe4929e10494e307ae1092461e26896ebd00a3af81b22fbad73",
+      "imageAlt": "Warehouse labor demand shifts right, raising equilibrium from 4,000 workers at $20 to 6,000 workers at $25 per hour.",
+      "graphDescription": "The vertical axis is hourly wage in dollars and the horizontal axis is hundreds of warehouse workers. Supply is unchanged. Labor demand shifts right from dashed D L0 to solid D L1. The marked equilibrium moves from 4,000 workers at $20 per hour to 6,000 workers at $25 per hour."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42342",
+    "before": {
+      "q": "Apple prices fall, with worker productivity unchanged. Which final equilibrium and demand interpretation match the graph?",
+      "options": [
+        "$10 and 4,000 workers; lower VMP shifts labor demand left.",
+        "$15 and 2,000 workers; lower VMP shifts labor supply right.",
+        "$15 and 2,000 workers; lower VMP shifts labor demand left.",
+        "$10 and 4,000 workers; lower VMP shifts labor supply right."
+      ],
+      "key": 2,
+      "feedback": "DL1 intersects supply at $15 and 20 hundreds. A lower output price lowers VMP = P × MP, reducing demand for labor at each wage."
+    },
+    "final": {
+      "q": "The market begins where D L0 and S L intersect. Apple prices fall, with worker productivity unchanged. Which final equilibrium and demand interpretation match the graph?",
+      "options": [
+        "$10 and 4,000 workers; lower VMP shifts labor demand left.",
+        "$15 and 2,000 workers; lower VMP shifts labor supply right.",
+        "$15 and 2,000 workers; lower VMP shifts labor demand left.",
+        "$10 and 4,000 workers; lower VMP shifts labor supply right."
+      ],
+      "key": 2,
+      "feedback": "DL1 intersects supply at $15 and 20 hundreds. A lower output price lowers VMP = P × MP, reducing demand for labor at each wage."
+    },
+    "facultyOverride": false,
+    "page": 782,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "State the initial curves explicitly while leaving the economic cause and direction for the student to determine.",
+    "reviewGraph": {
+      "sha256": "7d7163c3fa8ba6d719c5b15c037c6636aeffae63194e7825ded3eae472d5eeea",
+      "imageAlt": "Orchard labor demand shifts left, lowering equilibrium from 4,000 workers at $20 to 2,000 workers at $15 per hour.",
+      "graphDescription": "The vertical axis is hourly wage in dollars and the horizontal axis is hundreds of orchard workers. Supply is unchanged. Labor demand shifts left from dashed D L0 to solid D L1. The marked equilibrium moves from 4,000 workers at $20 per hour to 2,000 workers at $15 per hour."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42343",
+    "before": {
+      "q": "The graph shows a fall in labor demand. What is the new equilibrium employment? Could a 20% fall in every worker’s marginal product, combined with a 25% rise in the competitive output price, explain this shift?",
+      "options": [
+        "The graph ends at 3,000 workers; the two changes alone leave VMP unchanged and do not produce that demand shift.",
+        "The graph ends at 2,000 workers; the productivity loss necessarily produces that shift regardless of fruit prices.",
+        "The graph ends at 3,000 workers; the productivity loss necessarily produces that shift regardless of fruit prices.",
+        "The graph ends at 2,000 workers; the two changes alone leave VMP unchanged and do not produce that demand shift."
+      ],
+      "key": 3,
+      "feedback": "The solid demand curve intersects supply at 20 hundreds, or 2,000 workers. But the hypothetical combined change multiplies VMP by 0.80 × 1.25 = 1. A productivity effect alone cannot establish the net derived-demand shift."
+    },
+    "final": {
+      "q": "Labor demand falls from D L0 to D L1, with S L unchanged. What is the new equilibrium employment? Could a 20% fall in every worker’s marginal product, combined with a 25% rise in the competitive output price, explain this shift?",
+      "options": [
+        "The graph ends at 3,000 workers; the two changes alone leave VMP unchanged and do not produce that demand shift.",
+        "The graph ends at 2,000 workers; the productivity loss necessarily produces that shift regardless of fruit prices.",
+        "The graph ends at 3,000 workers; the productivity loss necessarily produces that shift regardless of fruit prices.",
+        "The graph ends at 2,000 workers; the two changes alone leave VMP unchanged and do not produce that demand shift."
+      ],
+      "key": 3,
+      "feedback": "The solid demand curve intersects supply at 20 hundreds, or 2,000 workers. But the hypothetical combined change multiplies VMP by 0.80 × 1.25 = 1. A productivity effect alone cannot establish the net derived-demand shift."
+    },
+    "facultyOverride": false,
+    "page": 788,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "Name the initial and resulting curves instead of relying on curve subscripts or old/new language to establish chronology. Preserve the plotted graph and all requested reasoning.",
+    "reviewGraph": {
+      "sha256": "7d7163c3fa8ba6d719c5b15c037c6636aeffae63194e7825ded3eae472d5eeea",
+      "imageAlt": "Orchard labor demand shifts left, lowering equilibrium from 4,000 workers at $20 to 2,000 workers at $15 per hour.",
+      "graphDescription": "The vertical axis is hourly wage in dollars and the horizontal axis is hundreds of orchard workers. Supply is unchanged. Labor demand shifts left from dashed D L0 to solid D L1. The marked equilibrium moves from 4,000 workers at $20 per hour to 2,000 workers at $15 per hour."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42332",
+    "before": {
+      "q": "Refer to the graph above. How many additional warehouse workers are employed after the shift?",
+      "options": [
+        "2,000 workers",
+        "200 workers",
+        "4,000 workers",
+        "6,000 workers"
+      ],
+      "key": 0,
+      "feedback": "Employment rises from 4,000 to 6,000 workers, an increase of 2,000."
+    },
+    "final": {
+      "q": "Warehouse labor demand shifts from D L0 to D L1, with S L unchanged. How many additional workers are employed at the new equilibrium?",
+      "options": [
+        "2,000 workers",
+        "200 workers",
+        "4,000 workers",
+        "6,000 workers"
+      ],
+      "key": 0,
+      "feedback": "Employment rises from 4,000 to 6,000 workers, an increase of 2,000."
+    },
+    "facultyOverride": false,
+    "page": 1707,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "Name the initial and resulting curves instead of relying on curve subscripts or old/new language to establish chronology. Preserve the plotted graph and all requested reasoning.",
+    "reviewGraph": {
+      "sha256": "e6ecbe54922ffbe4929e10494e307ae1092461e26896ebd00a3af81b22fbad73",
+      "imageAlt": "Warehouse labor demand shifts right, raising equilibrium from 4,000 workers at $20 to 6,000 workers at $25 per hour.",
+      "graphDescription": "The vertical axis is hourly wage in dollars and the horizontal axis is hundreds of warehouse workers. Supply is unchanged. Labor demand shifts right from dashed D L0 to solid D L1. The marked equilibrium moves from 4,000 workers at $20 per hour to 6,000 workers at $25 per hour."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42336",
+    "before": {
+      "q": "Refer to the graph above. At the original $20 wage after demand shifts, what does the graph imply?",
+      "options": [
+        "Firms demand more labor than workers supply",
+        "Workers supply more labor than firms demand",
+        "The market remains at the original equilibrium",
+        "Labor demand moves back to D L0"
+      ],
+      "key": 0,
+      "feedback": "At $20 on D L1, labor demanded lies to the right of labor supplied. The shortage bids the wage upward toward $25."
+    },
+    "final": {
+      "q": "Demand shifts from D L0 to D L1, with S L unchanged. At the original $20 wage, what does the graph imply?",
+      "options": [
+        "Firms demand more labor than workers supply",
+        "Workers supply more labor than firms demand",
+        "The market remains at the original equilibrium",
+        "Labor demand moves back to D L0"
+      ],
+      "key": 0,
+      "feedback": "At $20 on D L1, labor demanded lies to the right of labor supplied. The shortage bids the wage upward toward $25."
+    },
+    "facultyOverride": false,
+    "page": 1708,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "Name the initial and resulting curves instead of relying on curve subscripts or old/new language to establish chronology. Preserve the plotted graph and all requested reasoning.",
+    "reviewGraph": {
+      "sha256": "e6ecbe54922ffbe4929e10494e307ae1092461e26896ebd00a3af81b22fbad73",
+      "imageAlt": "Warehouse labor demand shifts right, raising equilibrium from 4,000 workers at $20 to 6,000 workers at $25 per hour.",
+      "graphDescription": "The vertical axis is hourly wage in dollars and the horizontal axis is hundreds of warehouse workers. Supply is unchanged. Labor demand shifts right from dashed D L0 to solid D L1. The marked equilibrium moves from 4,000 workers at $20 per hour to 6,000 workers at $25 per hour."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42330",
+    "before": {
+      "q": "Refer to the graph above. After warehouse labor demand shifts to D L1, what is the new equilibrium?",
+      "options": [
+        "4,000 workers at $20 per hour",
+        "6,000 workers at $15 per hour",
+        "6,000 workers at $25 per hour",
+        "2,000 workers at $25 per hour"
+      ],
+      "key": 2,
+      "feedback": "The solid demand curve intersects supply at 60 hundreds of workers and $25 per hour, or 6,000 workers at $25."
+    },
+    "final": {
+      "q": "Warehouse labor demand shifts from D L0 to D L1, with S L unchanged. What is the new equilibrium?",
+      "options": [
+        "4,000 workers at $20 per hour",
+        "6,000 workers at $15 per hour",
+        "6,000 workers at $25 per hour",
+        "2,000 workers at $25 per hour"
+      ],
+      "key": 2,
+      "feedback": "The solid demand curve intersects supply at 60 hundreds of workers and $25 per hour, or 6,000 workers at $25."
+    },
+    "facultyOverride": false,
+    "page": 1711,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "Name the initial and resulting curves instead of relying on curve subscripts or old/new language to establish chronology. Preserve the plotted graph and all requested reasoning.",
+    "reviewGraph": {
+      "sha256": "e6ecbe54922ffbe4929e10494e307ae1092461e26896ebd00a3af81b22fbad73",
+      "imageAlt": "Warehouse labor demand shifts right, raising equilibrium from 4,000 workers at $20 to 6,000 workers at $25 per hour.",
+      "graphDescription": "The vertical axis is hourly wage in dollars and the horizontal axis is hundreds of warehouse workers. Supply is unchanged. Labor demand shifts right from dashed D L0 to solid D L1. The marked equilibrium moves from 4,000 workers at $20 per hour to 6,000 workers at $25 per hour."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42338",
+    "before": {
+      "q": "How much does equilibrium employment rise after the demand shift? Why is this less than the increase in labor demanded at the original wage?",
+      "options": [
+        "1,000 workers; the wage rises as the market moves along labor supply.",
+        "2,000 workers; the higher wage itself shifts labor supply left.",
+        "2,000 workers; the wage rises as the market moves along labor supply.",
+        "1,000 workers; the higher wage itself shifts labor supply left."
+      ],
+      "key": 2,
+      "feedback": "Equilibrium employment rises from 40 to 60 hundreds, or 2,000. At $20 the demand shift is 40 hundreds, but wage bidding raises pay to $25, inducing movement up supply and limiting the equilibrium quantity change."
+    },
+    "final": {
+      "q": "Labor demand shifts from D L0 to D L1, with S L unchanged. How much does equilibrium employment rise? Why is this less than the increase in labor demanded at the original wage?",
+      "options": [
+        "1,000 workers; the wage rises as the market moves along labor supply.",
+        "2,000 workers; the higher wage itself shifts labor supply left.",
+        "2,000 workers; the wage rises as the market moves along labor supply.",
+        "1,000 workers; the higher wage itself shifts labor supply left."
+      ],
+      "key": 2,
+      "feedback": "Equilibrium employment rises from 40 to 60 hundreds, or 2,000. At $20 the demand shift is 40 hundreds, but wage bidding raises pay to $25, inducing movement up supply and limiting the equilibrium quantity change."
+    },
+    "facultyOverride": false,
+    "page": 1713,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "Name the initial and resulting curves instead of relying on curve subscripts or old/new language to establish chronology. Preserve the plotted graph and all requested reasoning.",
+    "reviewGraph": {
+      "sha256": "e6ecbe54922ffbe4929e10494e307ae1092461e26896ebd00a3af81b22fbad73",
+      "imageAlt": "Warehouse labor demand shifts right, raising equilibrium from 4,000 workers at $20 to 6,000 workers at $25 per hour.",
+      "graphDescription": "The vertical axis is hourly wage in dollars and the horizontal axis is hundreds of warehouse workers. Supply is unchanged. Labor demand shifts right from dashed D L0 to solid D L1. The marked equilibrium moves from 4,000 workers at $20 per hour to 6,000 workers at $25 per hour."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42339",
+    "before": {
+      "q": "Refer to the graph above. After orchard labor demand shifts left, what equilibrium does the graph show?",
+      "options": [
+        "4,000 workers at $20 per hour",
+        "2,000 workers at $25 per hour",
+        "6,000 workers at $15 per hour",
+        "2,000 workers at $15 per hour"
+      ],
+      "key": 3,
+      "feedback": "The solid D L1 curve intersects supply at 20 hundreds of workers and $15 per hour."
+    },
+    "final": {
+      "q": "Orchard labor demand shifts left from D L0 to D L1, with S L unchanged. What equilibrium does the graph show?",
+      "options": [
+        "4,000 workers at $20 per hour",
+        "2,000 workers at $25 per hour",
+        "6,000 workers at $15 per hour",
+        "2,000 workers at $15 per hour"
+      ],
+      "key": 3,
+      "feedback": "The solid D L1 curve intersects supply at 20 hundreds of workers and $15 per hour."
+    },
+    "facultyOverride": false,
+    "page": 1714,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "Name the initial and resulting curves instead of relying on curve subscripts or old/new language to establish chronology. Preserve the plotted graph and all requested reasoning.",
+    "reviewGraph": {
+      "sha256": "7d7163c3fa8ba6d719c5b15c037c6636aeffae63194e7825ded3eae472d5eeea",
+      "imageAlt": "Orchard labor demand shifts left, lowering equilibrium from 4,000 workers at $20 to 2,000 workers at $15 per hour.",
+      "graphDescription": "The vertical axis is hourly wage in dollars and the horizontal axis is hundreds of orchard workers. Supply is unchanged. Labor demand shifts left from dashed D L0 to solid D L1. The marked equilibrium moves from 4,000 workers at $20 per hour to 2,000 workers at $15 per hour."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42344",
+    "before": {
+      "q": "After the demand shift, the wage initially remains $20. How large is the labor shortage or surplus, and which way will it push wages?",
+      "options": [
+        "A 4,000-worker surplus, putting downward pressure on wage.",
+        "A 2,000-worker surplus, putting downward pressure on wage.",
+        "A 4,000-worker shortage, putting upward pressure on wage.",
+        "A 2,000-worker shortage, putting upward pressure on wage."
+      ],
+      "key": 0,
+      "feedback": "At $20, supply is 40 hundreds and new demand is zero. Labor supplied exceeds labor demanded on the new demand curve, putting downward pressure on wage."
+    },
+    "final": {
+      "q": "Demand shifts from D L0 to D L1 while S L is unchanged. The wage initially remains $20. How large is the labor shortage or surplus, and which way will it push wages?",
+      "options": [
+        "A 4,000-worker surplus, putting downward pressure on wage.",
+        "A 2,000-worker surplus, putting downward pressure on wage.",
+        "A 4,000-worker shortage, putting upward pressure on wage.",
+        "A 2,000-worker shortage, putting upward pressure on wage."
+      ],
+      "key": 0,
+      "feedback": "At $20, supply is 40 hundreds and new demand is zero. Labor supplied exceeds labor demanded on the new demand curve, putting downward pressure on wage."
+    },
+    "facultyOverride": false,
+    "page": 1715,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "Name the initial and resulting curves instead of relying on curve subscripts or old/new language to establish chronology. Preserve the plotted graph and all requested reasoning.",
+    "reviewGraph": {
+      "sha256": "7d7163c3fa8ba6d719c5b15c037c6636aeffae63194e7825ded3eae472d5eeea",
+      "imageAlt": "Orchard labor demand shifts left, lowering equilibrium from 4,000 workers at $20 to 2,000 workers at $15 per hour.",
+      "graphDescription": "The vertical axis is hourly wage in dollars and the horizontal axis is hundreds of orchard workers. Supply is unchanged. Labor demand shifts left from dashed D L0 to solid D L1. The marked equilibrium moves from 4,000 workers at $20 per hour to 2,000 workers at $15 per hour."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42345",
+    "before": {
+      "q": "Refer to the graph above. By how much does the marked equilibrium wage fall?",
+      "options": [
+        "$2 per hour",
+        "$5 per hour",
+        "$15 per hour",
+        "$20 per hour"
+      ],
+      "key": 1,
+      "feedback": "The equilibrium wage declines from $20 to $15 per hour, a $5 decrease."
+    },
+    "final": {
+      "q": "Labor demand shifts from D L0 to D L1, with S L unchanged. By how much does the equilibrium wage fall?",
+      "options": [
+        "$2 per hour",
+        "$5 per hour",
+        "$15 per hour",
+        "$20 per hour"
+      ],
+      "key": 1,
+      "feedback": "The equilibrium wage declines from $20 to $15 per hour, a $5 decrease."
+    },
+    "facultyOverride": false,
+    "page": 1716,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "Name the initial and resulting curves instead of relying on curve subscripts or old/new language to establish chronology. Preserve the plotted graph and all requested reasoning.",
+    "reviewGraph": {
+      "sha256": "7d7163c3fa8ba6d719c5b15c037c6636aeffae63194e7825ded3eae472d5eeea",
+      "imageAlt": "Orchard labor demand shifts left, lowering equilibrium from 4,000 workers at $20 to 2,000 workers at $15 per hour.",
+      "graphDescription": "The vertical axis is hourly wage in dollars and the horizontal axis is hundreds of orchard workers. Supply is unchanged. Labor demand shifts left from dashed D L0 to solid D L1. The marked equilibrium moves from 4,000 workers at $20 per hour to 2,000 workers at $15 per hour."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42347",
+    "before": {
+      "q": "Refer to the graph above. Which adjustment carries the market from the old to the new orchard equilibrium?",
+      "options": [
+        "A worker shortage pushes the wage up",
+        "Labor supply shifts left to preserve employment",
+        "Firms move right along D L0",
+        "A worker surplus pushes the wage down while employment contracts"
+      ],
+      "key": 3,
+      "feedback": "The leftward demand shift creates excess labor supply at $20. Wage pressure moves the market to 2,000 workers at $15."
+    },
+    "final": {
+      "q": "Orchard labor demand shifts from D L0 to D L1, with S L unchanged. Which adjustment carries the market from the initial to the resulting equilibrium?",
+      "options": [
+        "A worker shortage pushes the wage up",
+        "Labor supply shifts left to preserve employment",
+        "Firms move right along D L0",
+        "A worker surplus pushes the wage down while employment contracts"
+      ],
+      "key": 3,
+      "feedback": "The leftward demand shift creates excess labor supply at $20. Wage pressure moves the market to 2,000 workers at $15."
+    },
+    "facultyOverride": false,
+    "page": 1717,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "Name the initial and resulting curves instead of relying on curve subscripts or old/new language to establish chronology. Preserve the plotted graph and all requested reasoning.",
+    "reviewGraph": {
+      "sha256": "7d7163c3fa8ba6d719c5b15c037c6636aeffae63194e7825ded3eae472d5eeea",
+      "imageAlt": "Orchard labor demand shifts left, lowering equilibrium from 4,000 workers at $20 to 2,000 workers at $15 per hour.",
+      "graphDescription": "The vertical axis is hourly wage in dollars and the horizontal axis is hundreds of orchard workers. Supply is unchanged. Labor demand shifts left from dashed D L0 to solid D L1. The marked equilibrium moves from 4,000 workers at $20 per hour to 2,000 workers at $15 per hour."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42381",
+    "before": {
+      "q": "After both labor demand and supply increase, what is the wage shown? Must simultaneous increases always have this effect on wages?",
+      "options": [
+        "$25; the wage effects offset in this figure, but simultaneous increases need not always leave wages unchanged.",
+        "$20; the wage effects offset in this figure, but simultaneous increases need not always leave wages unchanged.",
+        "$20; simultaneous increases must always leave wages unchanged, regardless of their sizes.",
+        "$25; simultaneous increases must always leave wages unchanged, regardless of their sizes."
+      ],
+      "key": 1,
+      "feedback": "The old curves meet at $20 and 40 hundreds; the new curves meet at $20 and 80 hundreds. Here opposing wage effects offset exactly. In general their relative magnitudes determine the wage change, while both increases raise employment."
+    },
+    "final": {
+      "q": "The market begins where D L0 and S L0 intersect. Demand and supply increase to D L1 and S L1. What is the new wage shown? Must simultaneous increases always have this effect on wages?",
+      "options": [
+        "$25; the wage effects offset in this figure, but simultaneous increases need not always leave wages unchanged.",
+        "$20; the wage effects offset in this figure, but simultaneous increases need not always leave wages unchanged.",
+        "$20; simultaneous increases must always leave wages unchanged, regardless of their sizes.",
+        "$25; simultaneous increases must always leave wages unchanged, regardless of their sizes."
+      ],
+      "key": 1,
+      "feedback": "The old curves meet at $20 and 40 hundreds; the new curves meet at $20 and 80 hundreds. Here opposing wage effects offset exactly. In general their relative magnitudes determine the wage change, while both increases raise employment."
+    },
+    "facultyOverride": false,
+    "page": 1718,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "Name the initial and resulting curves instead of relying on curve subscripts or old/new language to establish chronology. Preserve the plotted graph and all requested reasoning.",
+    "reviewGraph": {
+      "sha256": "ef7b4edc7407c3be73a64749a0d76f9c5e513e358b9f4cf67fa108220533bd2c",
+      "imageAlt": "Nursing labor demand and supply both shift right, increasing equilibrium employment from 4,000 to 8,000 while the wage remains $20.",
+      "graphDescription": "The vertical axis is hourly wage in dollars and the horizontal axis is hundreds of nurses. Dashed D L0 and S L0 intersect at 4,000 nurses and $20 per hour. Solid D L1 and S L1 intersect at 8,000 nurses and the same $20 wage. In this particular simultaneous-shift case, employment doubles while the equilibrium wage is unchanged."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42331",
+    "before": {
+      "q": "A manager says the change shown was caused by more workers becoming available at each wage. What is the new equilibrium, and does the graph support that explanation?",
+      "options": [
+        "$30 and 8,000 workers; greater labor demand, not a supply expansion alone, accounts for the change.",
+        "$25 and 6,000 workers; a supply expansion alone accounts for the higher wage and employment.",
+        "$30 and 8,000 workers; a supply expansion alone accounts for the higher wage and employment.",
+        "$25 and 6,000 workers; greater labor demand, not a supply expansion alone, accounts for the change."
+      ],
+      "key": 3,
+      "feedback": "The new intersection is $25 and 60 hundreds of workers, up from $20 and 40 hundreds on unchanged supply. Increased demand raises both wage and employment. Increased supply alone would lower the wage."
+    },
+    "final": {
+      "q": "The market begins where D L0 and S L intersect. A manager says the change shown was caused by more workers becoming available at each wage. What is the new equilibrium, and does the graph support that explanation?",
+      "options": [
+        "$30 and 8,000 workers; greater labor demand, not a supply expansion alone, accounts for the change.",
+        "$25 and 6,000 workers; a supply expansion alone accounts for the higher wage and employment.",
+        "$30 and 8,000 workers; a supply expansion alone accounts for the higher wage and employment.",
+        "$25 and 6,000 workers; greater labor demand, not a supply expansion alone, accounts for the change."
+      ],
+      "key": 3,
+      "feedback": "The new intersection is $25 and 60 hundreds of workers, up from $20 and 40 hundreds on unchanged supply. Increased demand raises both wage and employment. Increased supply alone would lower the wage."
+    },
+    "facultyOverride": false,
+    "page": 1721,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "State the initial curves explicitly while leaving the economic cause and direction for the student to determine.",
+    "reviewGraph": {
+      "sha256": "e6ecbe54922ffbe4929e10494e307ae1092461e26896ebd00a3af81b22fbad73",
+      "imageAlt": "Warehouse labor demand shifts right, raising equilibrium from 4,000 workers at $20 to 6,000 workers at $25 per hour.",
+      "graphDescription": "The vertical axis is hourly wage in dollars and the horizontal axis is hundreds of warehouse workers. Supply is unchanged. Labor demand shifts right from dashed D L0 to solid D L1. The marked equilibrium moves from 4,000 workers at $20 per hour to 6,000 workers at $25 per hour."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42341",
+    "before": {
+      "q": "The graph shows a productivity loss at an unchanged output price. A later output-price increase raises marginal revenue product by an unspecified amount. Which initial employment loss and conclusion about the later outcome are justified?",
+      "options": [
+        "A loss of 1,000 workers; final employment relative to its original level remains uncertain.",
+        "A loss of 2,000 workers; final employment relative to its original level remains uncertain.",
+        "A loss of 2,000 workers; any output-price increase must exactly restore the original employment.",
+        "A loss of 1,000 workers; any output-price increase must exactly restore the original employment."
+      ],
+      "key": 1,
+      "feedback": "Employment falls from 40 to 20 hundreds, a loss of 2,000. A higher output price offsets some of the derived-demand decline, but without its magnitude the final level relative to the original 4,000 is undetermined."
+    },
+    "final": {
+      "q": "The market begins where D L0 and S L intersect. The graph shows a productivity loss at an unchanged output price. A later output-price increase raises marginal revenue product by an unspecified amount. Which initial employment loss and conclusion about the later outcome are justified?",
+      "options": [
+        "A loss of 1,000 workers; final employment relative to its original level remains uncertain.",
+        "A loss of 2,000 workers; final employment relative to its original level remains uncertain.",
+        "A loss of 2,000 workers; any output-price increase must exactly restore the original employment.",
+        "A loss of 1,000 workers; any output-price increase must exactly restore the original employment."
+      ],
+      "key": 1,
+      "feedback": "Employment falls from 40 to 20 hundreds, a loss of 2,000. A higher output price offsets some of the derived-demand decline, but without its magnitude the final level relative to the original 4,000 is undetermined."
+    },
+    "facultyOverride": false,
+    "page": 1722,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "State the initial curves explicitly while leaving the economic cause and direction for the student to determine.",
+    "reviewGraph": {
+      "sha256": "7d7163c3fa8ba6d719c5b15c037c6636aeffae63194e7825ded3eae472d5eeea",
+      "imageAlt": "Orchard labor demand shifts left, lowering equilibrium from 4,000 workers at $20 to 2,000 workers at $15 per hour.",
+      "graphDescription": "The vertical axis is hourly wage in dollars and the horizontal axis is hundreds of orchard workers. Supply is unchanged. Labor demand shifts left from dashed D L0 to solid D L1. The marked equilibrium moves from 4,000 workers at $20 per hour to 2,000 workers at $15 per hour."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42379",
+    "before": {
+      "q": "Refer to the graph above. After both nursing labor curves shift, what new equilibrium does the graph show?",
+      "options": [
+        "4,000 nurses at $20 per hour",
+        "8,000 nurses at $40 per hour",
+        "6,000 nurses at $25 per hour",
+        "8,000 nurses at $20 per hour"
+      ],
+      "key": 3,
+      "feedback": "The solid curves intersect at 80 hundreds of nurses, or 8,000, and the wage remains $20."
+    },
+    "final": {
+      "q": "The nursing labor market begins where D L0 and S L0 intersect. Demand and supply then shift to D L1 and S L1. What new equilibrium does the graph show?",
+      "options": [
+        "4,000 nurses at $20 per hour",
+        "8,000 nurses at $40 per hour",
+        "6,000 nurses at $25 per hour",
+        "8,000 nurses at $20 per hour"
+      ],
+      "key": 3,
+      "feedback": "The solid curves intersect at 80 hundreds of nurses, or 8,000, and the wage remains $20."
+    },
+    "facultyOverride": false,
+    "page": 1723,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "Name the initial and resulting curves instead of relying on curve subscripts or old/new language to establish chronology. Preserve the plotted graph and all requested reasoning.",
+    "reviewGraph": {
+      "sha256": "ef7b4edc7407c3be73a64749a0d76f9c5e513e358b9f4cf67fa108220533bd2c",
+      "imageAlt": "Nursing labor demand and supply both shift right, increasing equilibrium employment from 4,000 to 8,000 while the wage remains $20.",
+      "graphDescription": "The vertical axis is hourly wage in dollars and the horizontal axis is hundreds of nurses. Dashed D L0 and S L0 intersect at 4,000 nurses and $20 per hour. Solid D L1 and S L1 intersect at 8,000 nurses and the same $20 wage. In this particular simultaneous-shift case, employment doubles while the equilibrium wage is unchanged."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42350",
+    "before": {
+      "q": "A licensing reform lets more trained healthcare workers enter the occupation. At $20, how many workers are available before and after the change? Does this show a supply shift or movement along a curve?",
+      "options": [
+        "Supply changes from 3,000 to 7,000 workers; availability changes at a given wage, shifting supply.",
+        "Supply changes from 4,000 to 8,000 workers; this is movement along a fixed supply curve caused solely by wage.",
+        "Supply changes from 4,000 to 8,000 workers; availability changes at a given wage, shifting supply.",
+        "Supply changes from 3,000 to 7,000 workers; this is movement along a fixed supply curve caused solely by wage."
+      ],
+      "key": 2,
+      "feedback": "At $20, SL0 gives 4,000 workers and SL1 gives 8,000. Easier entry expands the quantity available at each wage. A wage change by itself moves along a supply curve rather than relocating it."
+    },
+    "final": {
+      "q": "The market begins where S L0 and D L intersect. A licensing reform lets more trained healthcare workers enter the occupation. At $20, how many workers are available before and after the change? Does this show a supply shift or movement along a curve?",
+      "options": [
+        "Supply changes from 3,000 to 7,000 workers; availability changes at a given wage, shifting supply.",
+        "Supply changes from 4,000 to 8,000 workers; this is movement along a fixed supply curve caused solely by wage.",
+        "Supply changes from 4,000 to 8,000 workers; availability changes at a given wage, shifting supply.",
+        "Supply changes from 3,000 to 7,000 workers; this is movement along a fixed supply curve caused solely by wage."
+      ],
+      "key": 2,
+      "feedback": "At $20, SL0 gives 4,000 workers and SL1 gives 8,000. Easier entry expands the quantity available at each wage. A wage change by itself moves along a supply curve rather than relocating it."
+    },
+    "facultyOverride": false,
+    "page": 1726,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "State the initial curves explicitly while leaving the economic cause and direction for the student to determine.",
+    "reviewGraph": {
+      "sha256": "7bb0871ba053742da20aa39dee70922a3e24ff0549588186dfcba6fa07317536",
+      "imageAlt": "Healthcare labor supply shifts right, moving equilibrium from 4,000 workers at $20 to 6,000 workers at $15 per hour.",
+      "graphDescription": "The vertical axis is hourly wage in dollars and the horizontal axis is hundreds of healthcare workers. Labor demand is unchanged. Labor supply shifts right from dashed S L0 to solid S L1. The marked equilibrium moves from 4,000 workers at $20 per hour to 6,000 workers at $15 per hour."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42355",
+    "before": {
+      "q": "What are equilibrium employment before and after the supply shift? Does this adjustment shift labor demand or move the market along it?",
+      "options": [
+        "3,000 and 5,000; both equilibria lie on the same demand schedule.",
+        "4,000 and 6,000; a lower wage by itself creates a different demand schedule.",
+        "3,000 and 5,000; a lower wage by itself creates a different demand schedule.",
+        "4,000 and 6,000; both equilibria lie on the same demand schedule."
+      ],
+      "key": 3,
+      "feedback": "The equilibria at 40 and 60 hundreds both lie on DL. Supply changes, while the wage decline produces a change in quantity demanded along that single demand curve."
+    },
+    "final": {
+      "q": "Labor supply shifts from S L0 to S L1. What are equilibrium employment before and after the shift? Does this adjustment shift labor demand or move the market along it?",
+      "options": [
+        "3,000 and 5,000; both equilibria lie on the same demand schedule.",
+        "4,000 and 6,000; a lower wage by itself creates a different demand schedule.",
+        "3,000 and 5,000; a lower wage by itself creates a different demand schedule.",
+        "4,000 and 6,000; both equilibria lie on the same demand schedule."
+      ],
+      "key": 3,
+      "feedback": "The equilibria at 40 and 60 hundreds both lie on DL. Supply changes, while the wage decline produces a change in quantity demanded along that single demand curve."
+    },
+    "facultyOverride": false,
+    "page": 1727,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "Name the initial and resulting curves instead of relying on curve subscripts or old/new language to establish chronology. Preserve the plotted graph and all requested reasoning.",
+    "reviewGraph": {
+      "sha256": "7bb0871ba053742da20aa39dee70922a3e24ff0549588186dfcba6fa07317536",
+      "imageAlt": "Healthcare labor supply shifts right, moving equilibrium from 4,000 workers at $20 to 6,000 workers at $15 per hour.",
+      "graphDescription": "The vertical axis is hourly wage in dollars and the horizontal axis is hundreds of healthcare workers. Labor demand is unchanged. Labor supply shifts right from dashed S L0 to solid S L1. The marked equilibrium moves from 4,000 workers at $20 per hour to 6,000 workers at $15 per hour."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42361",
+    "before": {
+      "q": "Better jobs in another industry draw workers away from construction. At a construction wage of $20, how many workers are available before and after this change? What does that comparison tell us?",
+      "options": [
+        "Supply changes from 5,000 to 1,000 workers; availability changes at a given wage, shifting supply.",
+        "Supply changes from 4,000 to 0 workers; availability changes at a given wage, shifting supply.",
+        "Supply changes from 4,000 to 0 workers; this measures the final decline in employment after wages adjust.",
+        "Construction supply shifts left, so the graph proves total employment across all industries falls by 4,000."
+      ],
+      "key": 1,
+      "feedback": "At $20, SL0 supplies 4,000 workers and SL1 supplies zero. Better alternatives reduce construction labor supply at any given wage. This fixed-wage gap is not the eventual employment change and does not measure employment in other industries."
+    },
+    "final": {
+      "q": "The market begins where S L0 and D L intersect. Better jobs in another industry draw workers away from construction. At a construction wage of $20, how many workers are available before and after this change? What does that comparison tell us?",
+      "options": [
+        "Supply changes from 5,000 to 1,000 workers; availability changes at a given wage, shifting supply.",
+        "Supply changes from 4,000 to 0 workers; availability changes at a given wage, shifting supply.",
+        "Supply changes from 4,000 to 0 workers; this measures the final decline in employment after wages adjust.",
+        "Construction supply shifts left, so the graph proves total employment across all industries falls by 4,000."
+      ],
+      "key": 1,
+      "feedback": "At $20, SL0 supplies 4,000 workers and SL1 supplies zero. Better alternatives reduce construction labor supply at any given wage. This fixed-wage gap is not the eventual employment change and does not measure employment in other industries."
+    },
+    "facultyOverride": false,
+    "page": 1729,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "State the initial curves explicitly while leaving the economic cause and direction for the student to determine.",
+    "reviewGraph": {
+      "sha256": "b34cf3cf4422b9411e0acb67c965d7950b61a693ef5008d00513b3bc91245aad",
+      "imageAlt": "Construction labor supply shifts left, moving equilibrium from 4,000 workers at $20 to 2,000 workers at $25 per hour.",
+      "graphDescription": "The vertical axis is hourly wage in dollars and the horizontal axis is hundreds of construction workers. Labor demand is unchanged. Labor supply shifts left from dashed S L0 to solid S L1. The marked equilibrium moves from 4,000 workers at $20 per hour to 2,000 workers at $25 per hour."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42363",
+    "before": {
+      "q": "A student says the two supply curves show only the effect of a change in wages. Compare labor supplied on the two curves at $20. Does that comparison support the claim?",
+      "options": [
+        "Supply changes from 5,000 to 1,000 workers; availability changes at a given wage, shifting supply.",
+        "Supply changes from 4,000 to 0 workers; the demand curve must also shift left by 4,000 at every wage.",
+        "Supply is lower at $20, so the new curve shows less willingness to work caused solely by a lower construction wage.",
+        "Supply changes from 4,000 to 0 workers; availability changes at a given wage, shifting supply."
+      ],
+      "key": 3,
+      "feedback": "At $20, SL0 gives 4,000 workers and SL1 gives 0. Worker exit reduces the quantity available at each wage. A wage change by itself moves along a supply curve rather than relocating it."
+    },
+    "final": {
+      "q": "Labor supply changes from S L0 to S L1. A student says this shows only the effect of a change in wages. Compare labor supplied on the two curves at $20. Does that comparison support the claim?",
+      "options": [
+        "Supply changes from 5,000 to 1,000 workers; availability changes at a given wage, shifting supply.",
+        "Supply changes from 4,000 to 0 workers; the demand curve must also shift left by 4,000 at every wage.",
+        "Supply is lower at $20, so the new curve shows less willingness to work caused solely by a lower construction wage.",
+        "Supply changes from 4,000 to 0 workers; availability changes at a given wage, shifting supply."
+      ],
+      "key": 3,
+      "feedback": "At $20, SL0 gives 4,000 workers and SL1 gives 0. Worker exit reduces the quantity available at each wage. A wage change by itself moves along a supply curve rather than relocating it."
+    },
+    "facultyOverride": false,
+    "page": 1730,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "Name the initial and resulting curves instead of relying on curve subscripts or old/new language to establish chronology. Preserve the plotted graph and all requested reasoning.",
+    "reviewGraph": {
+      "sha256": "b34cf3cf4422b9411e0acb67c965d7950b61a693ef5008d00513b3bc91245aad",
+      "imageAlt": "Construction labor supply shifts left, moving equilibrium from 4,000 workers at $20 to 2,000 workers at $25 per hour.",
+      "graphDescription": "The vertical axis is hourly wage in dollars and the horizontal axis is hundreds of construction workers. Labor demand is unchanged. Labor supply shifts left from dashed S L0 to solid S L1. The marked equilibrium moves from 4,000 workers at $20 per hour to 2,000 workers at $25 per hour."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42353",
+    "before": {
+      "q": "Expanded nursing programs cause the supply shift shown. Hospitals then face an increase in demand for care of unknown size. What wage results from the first shift? After both shifts, what can be concluded about wage and employment relative to the original equilibrium?",
+      "options": [
+        "The first shift lowers wage to $10; after both shifts employment is higher, but the final wage relative to the original is ambiguous.",
+        "The first shift lowers wage to $15; after both shifts employment is higher, but the final wage relative to the original is ambiguous.",
+        "The first shift lowers wage to $15; after both shifts employment is higher and the final wage must remain below the original.",
+        "The first shift lowers wage to $10; after both shifts employment is higher and the final wage must remain below the original."
+      ],
+      "key": 1,
+      "feedback": "SL1 intersects demand at $15 and 6,000 workers. Added labor supply and later added labor demand both increase employment. Their wage effects oppose each other, so the final wage relative to the original $20 depends on shift sizes."
+    },
+    "final": {
+      "q": "The market begins where S L0 and D L intersect. Expanded nursing programs cause the supply shift shown. Hospitals then face an increase in demand for care of unknown size. What wage results from the first shift? After both shifts, what can be concluded about wage and employment relative to the original equilibrium?",
+      "options": [
+        "The first shift lowers wage to $10; after both shifts employment is higher, but the final wage relative to the original is ambiguous.",
+        "The first shift lowers wage to $15; after both shifts employment is higher, but the final wage relative to the original is ambiguous.",
+        "The first shift lowers wage to $15; after both shifts employment is higher and the final wage must remain below the original.",
+        "The first shift lowers wage to $10; after both shifts employment is higher and the final wage must remain below the original."
+      ],
+      "key": 1,
+      "feedback": "SL1 intersects demand at $15 and 6,000 workers. Added labor supply and later added labor demand both increase employment. Their wage effects oppose each other, so the final wage relative to the original $20 depends on shift sizes."
+    },
+    "facultyOverride": false,
+    "page": 1733,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "State the initial curves explicitly while leaving the economic cause and direction for the student to determine.",
+    "reviewGraph": {
+      "sha256": "7bb0871ba053742da20aa39dee70922a3e24ff0549588186dfcba6fa07317536",
+      "imageAlt": "Healthcare labor supply shifts right, moving equilibrium from 4,000 workers at $20 to 6,000 workers at $15 per hour.",
+      "graphDescription": "The vertical axis is hourly wage in dollars and the horizontal axis is hundreds of healthcare workers. Labor demand is unchanged. Labor supply shifts right from dashed S L0 to solid S L1. The marked equilibrium moves from 4,000 workers at $20 per hour to 6,000 workers at $15 per hour."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42348",
+    "before": {
+      "q": "Refer to the graph above. After healthcare labor supply shifts right, what is the new equilibrium?",
+      "options": [
+        "6,000 workers at $15 per hour",
+        "4,000 workers at $20 per hour",
+        "2,000 workers at $25 per hour",
+        "6,000 workers at $25 per hour"
+      ],
+      "key": 0,
+      "feedback": "The solid S L1 curve intersects demand at 6,000 healthcare workers and $15 per hour."
+    },
+    "final": {
+      "q": "Healthcare labor supply shifts right from S L0 to S L1, with D L unchanged. What is the new equilibrium?",
+      "options": [
+        "6,000 workers at $15 per hour",
+        "4,000 workers at $20 per hour",
+        "2,000 workers at $25 per hour",
+        "6,000 workers at $25 per hour"
+      ],
+      "key": 0,
+      "feedback": "The solid S L1 curve intersects demand at 6,000 healthcare workers and $15 per hour."
+    },
+    "facultyOverride": false,
+    "page": 1735,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "Name the initial and resulting curves instead of relying on curve subscripts or old/new language to establish chronology. Preserve the plotted graph and all requested reasoning.",
+    "reviewGraph": {
+      "sha256": "7bb0871ba053742da20aa39dee70922a3e24ff0549588186dfcba6fa07317536",
+      "imageAlt": "Healthcare labor supply shifts right, moving equilibrium from 4,000 workers at $20 to 6,000 workers at $15 per hour.",
+      "graphDescription": "The vertical axis is hourly wage in dollars and the horizontal axis is hundreds of healthcare workers. Labor demand is unchanged. Labor supply shifts right from dashed S L0 to solid S L1. The marked equilibrium moves from 4,000 workers at $20 per hour to 6,000 workers at $15 per hour."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42356",
+    "before": {
+      "q": "Refer to the graph above. What is the new construction labor-market equilibrium after supply shifts left?",
+      "options": [
+        "2,000 workers at $25 per hour",
+        "4,000 workers at $20 per hour",
+        "6,000 workers at $15 per hour",
+        "2,000 workers at $15 per hour"
+      ],
+      "key": 0,
+      "feedback": "The solid S L1 curve intersects demand at 2,000 construction workers and $25 per hour."
+    },
+    "final": {
+      "q": "Construction labor supply shifts left from S L0 to S L1, with D L unchanged. What is the new equilibrium?",
+      "options": [
+        "2,000 workers at $25 per hour",
+        "4,000 workers at $20 per hour",
+        "6,000 workers at $15 per hour",
+        "2,000 workers at $15 per hour"
+      ],
+      "key": 0,
+      "feedback": "The solid S L1 curve intersects demand at 2,000 construction workers and $25 per hour."
+    },
+    "facultyOverride": false,
+    "page": 1736,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "Name the initial and resulting curves instead of relying on curve subscripts or old/new language to establish chronology. Preserve the plotted graph and all requested reasoning.",
+    "reviewGraph": {
+      "sha256": "b34cf3cf4422b9411e0acb67c965d7950b61a693ef5008d00513b3bc91245aad",
+      "imageAlt": "Construction labor supply shifts left, moving equilibrium from 4,000 workers at $20 to 2,000 workers at $25 per hour.",
+      "graphDescription": "The vertical axis is hourly wage in dollars and the horizontal axis is hundreds of construction workers. Labor demand is unchanged. Labor supply shifts left from dashed S L0 to solid S L1. The marked equilibrium moves from 4,000 workers at $20 per hour to 2,000 workers at $25 per hour."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42349",
+    "before": {
+      "q": "After the supply shift, what are the new wage and employment? Does the adjustment shift labor demand or move the market along it?",
+      "options": [
+        "$10 and 8,000 workers; the market moves along labor demand.",
+        "$15 and 6,000 workers; the market moves along labor demand.",
+        "$15 and 6,000 workers; the wage change itself shifts labor demand.",
+        "$10 and 8,000 workers; the wage change itself shifts labor demand."
+      ],
+      "key": 1,
+      "feedback": "The new intersection is $15 and 60 hundreds of workers. Supply shifts, while the wage change produces movement along unchanged demand. It does not itself shift labor demand."
+    },
+    "final": {
+      "q": "Labor supply shifts from S L0 to S L1. What are the new wage and employment? Does the adjustment shift labor demand or move the market along it?",
+      "options": [
+        "$10 and 8,000 workers; the market moves along labor demand.",
+        "$15 and 6,000 workers; the market moves along labor demand.",
+        "$15 and 6,000 workers; the wage change itself shifts labor demand.",
+        "$10 and 8,000 workers; the wage change itself shifts labor demand."
+      ],
+      "key": 1,
+      "feedback": "The new intersection is $15 and 60 hundreds of workers. Supply shifts, while the wage change produces movement along unchanged demand. It does not itself shift labor demand."
+    },
+    "facultyOverride": false,
+    "page": 1739,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "Name the initial and resulting curves instead of relying on curve subscripts or old/new language to establish chronology. Preserve the plotted graph and all requested reasoning.",
+    "reviewGraph": {
+      "sha256": "7bb0871ba053742da20aa39dee70922a3e24ff0549588186dfcba6fa07317536",
+      "imageAlt": "Healthcare labor supply shifts right, moving equilibrium from 4,000 workers at $20 to 6,000 workers at $15 per hour.",
+      "graphDescription": "The vertical axis is hourly wage in dollars and the horizontal axis is hundreds of healthcare workers. Labor demand is unchanged. Labor supply shifts right from dashed S L0 to solid S L1. The marked equilibrium moves from 4,000 workers at $20 per hour to 6,000 workers at $15 per hour."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42351",
+    "before": {
+      "q": "Refer to the graph above. How many additional healthcare workers are employed at the new equilibrium?",
+      "options": [
+        "200 workers",
+        "4,000 workers",
+        "6,000 workers",
+        "2,000 workers"
+      ],
+      "key": 3,
+      "feedback": "Employment rises from 4,000 to 6,000, so 2,000 additional workers are employed."
+    },
+    "final": {
+      "q": "Healthcare labor supply shifts from S L0 to S L1, with D L unchanged. How many additional workers are employed at the new equilibrium?",
+      "options": [
+        "200 workers",
+        "4,000 workers",
+        "6,000 workers",
+        "2,000 workers"
+      ],
+      "key": 3,
+      "feedback": "Employment rises from 4,000 to 6,000, so 2,000 additional workers are employed."
+    },
+    "facultyOverride": false,
+    "page": 1740,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "Name the initial and resulting curves instead of relying on curve subscripts or old/new language to establish chronology. Preserve the plotted graph and all requested reasoning.",
+    "reviewGraph": {
+      "sha256": "7bb0871ba053742da20aa39dee70922a3e24ff0549588186dfcba6fa07317536",
+      "imageAlt": "Healthcare labor supply shifts right, moving equilibrium from 4,000 workers at $20 to 6,000 workers at $15 per hour.",
+      "graphDescription": "The vertical axis is hourly wage in dollars and the horizontal axis is hundreds of healthcare workers. Labor demand is unchanged. Labor supply shifts right from dashed S L0 to solid S L1. The marked equilibrium moves from 4,000 workers at $20 per hour to 6,000 workers at $15 per hour."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42352",
+    "before": {
+      "q": "After the supply shift, the wage initially remains $20. How large is the labor surplus, and which way will it push wages?",
+      "options": [
+        "A 4,000-worker surplus, putting downward pressure on wage.",
+        "A 2,000-worker surplus, putting downward pressure on wage.",
+        "A 4,000-worker surplus, but this is the number employed after wages finish adjusting.",
+        "An 8,000-worker surplus, because all workers willing to work at $20 are surplus workers."
+      ],
+      "key": 0,
+      "feedback": "At $20, new supply is 8,000 and demand is 4,000, so excess supply is 4,000. This creates downward wage pressure; the gap is not employment after adjustment."
+    },
+    "final": {
+      "q": "Supply shifts from S L0 to S L1 while D L is unchanged. The wage initially remains $20. How large is the labor surplus, and which way will it push wages?",
+      "options": [
+        "A 4,000-worker surplus, putting downward pressure on wage.",
+        "A 2,000-worker surplus, putting downward pressure on wage.",
+        "A 4,000-worker surplus, but this is the number employed after wages finish adjusting.",
+        "An 8,000-worker surplus, because all workers willing to work at $20 are surplus workers."
+      ],
+      "key": 0,
+      "feedback": "At $20, new supply is 8,000 and demand is 4,000, so excess supply is 4,000. This creates downward wage pressure; the gap is not employment after adjustment."
+    },
+    "facultyOverride": false,
+    "page": 1741,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "Name the initial and resulting curves instead of relying on curve subscripts or old/new language to establish chronology. Preserve the plotted graph and all requested reasoning.",
+    "reviewGraph": {
+      "sha256": "7bb0871ba053742da20aa39dee70922a3e24ff0549588186dfcba6fa07317536",
+      "imageAlt": "Healthcare labor supply shifts right, moving equilibrium from 4,000 workers at $20 to 6,000 workers at $15 per hour.",
+      "graphDescription": "The vertical axis is hourly wage in dollars and the horizontal axis is hundreds of healthcare workers. Labor demand is unchanged. Labor supply shifts right from dashed S L0 to solid S L1. The marked equilibrium moves from 4,000 workers at $20 per hour to 6,000 workers at $15 per hour."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42357",
+    "before": {
+      "q": "After the supply shift, what are the new wage and employment? Does the adjustment shift labor demand or move the market along it?",
+      "options": [
+        "$30 and 1,000 workers; the market moves along labor demand.",
+        "$25 and 2,000 workers; the market moves along labor demand.",
+        "$25 and 2,000 workers; the wage change itself shifts labor demand.",
+        "$30 and 1,000 workers; the wage change itself shifts labor demand."
+      ],
+      "key": 1,
+      "feedback": "The new intersection is $25 and 20 hundreds of workers. Supply shifts, while the wage change produces movement along unchanged demand. It does not itself shift labor demand."
+    },
+    "final": {
+      "q": "Labor supply shifts from S L0 to S L1. What are the new wage and employment? Does the adjustment shift labor demand or move the market along it?",
+      "options": [
+        "$30 and 1,000 workers; the market moves along labor demand.",
+        "$25 and 2,000 workers; the market moves along labor demand.",
+        "$25 and 2,000 workers; the wage change itself shifts labor demand.",
+        "$30 and 1,000 workers; the wage change itself shifts labor demand."
+      ],
+      "key": 1,
+      "feedback": "The new intersection is $25 and 20 hundreds of workers. Supply shifts, while the wage change produces movement along unchanged demand. It does not itself shift labor demand."
+    },
+    "facultyOverride": false,
+    "page": 1743,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "Name the initial and resulting curves instead of relying on curve subscripts or old/new language to establish chronology. Preserve the plotted graph and all requested reasoning.",
+    "reviewGraph": {
+      "sha256": "b34cf3cf4422b9411e0acb67c965d7950b61a693ef5008d00513b3bc91245aad",
+      "imageAlt": "Construction labor supply shifts left, moving equilibrium from 4,000 workers at $20 to 2,000 workers at $25 per hour.",
+      "graphDescription": "The vertical axis is hourly wage in dollars and the horizontal axis is hundreds of construction workers. Labor demand is unchanged. Labor supply shifts left from dashed S L0 to solid S L1. The marked equilibrium moves from 4,000 workers at $20 per hour to 2,000 workers at $25 per hour."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42359",
+    "before": {
+      "q": "Refer to the graph above. How many fewer construction workers are employed after the shift?",
+      "options": [
+        "200 workers",
+        "4,000 workers",
+        "6,000 workers",
+        "2,000 workers"
+      ],
+      "key": 3,
+      "feedback": "Employment falls from 4,000 to 2,000 workers, a decline of 2,000."
+    },
+    "final": {
+      "q": "Construction labor supply shifts from S L0 to S L1, with D L unchanged. How many fewer workers are employed at the new equilibrium?",
+      "options": [
+        "200 workers",
+        "4,000 workers",
+        "6,000 workers",
+        "2,000 workers"
+      ],
+      "key": 3,
+      "feedback": "Employment falls from 4,000 to 2,000 workers, a decline of 2,000."
+    },
+    "facultyOverride": false,
+    "page": 1744,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "Name the initial and resulting curves instead of relying on curve subscripts or old/new language to establish chronology. Preserve the plotted graph and all requested reasoning.",
+    "reviewGraph": {
+      "sha256": "b34cf3cf4422b9411e0acb67c965d7950b61a693ef5008d00513b3bc91245aad",
+      "imageAlt": "Construction labor supply shifts left, moving equilibrium from 4,000 workers at $20 to 2,000 workers at $25 per hour.",
+      "graphDescription": "The vertical axis is hourly wage in dollars and the horizontal axis is hundreds of construction workers. Labor demand is unchanged. Labor supply shifts left from dashed S L0 to solid S L1. The marked equilibrium moves from 4,000 workers at $20 per hour to 2,000 workers at $25 per hour."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42360",
+    "before": {
+      "q": "After the supply shift, the wage initially remains $20. How large is the shortage of labor, and which way will it push wages?",
+      "options": [
+        "A 4,000-worker shortage, putting upward pressure on wage.",
+        "A 2,000-worker shortage, putting upward pressure on wage.",
+        "A 4,000-worker shortage, which means 4,000 workers are unemployed at this wage.",
+        "No shortage, because the plotted quantity of labor supplied at $20 is zero."
+      ],
+      "key": 0,
+      "feedback": "At $20, demand is 4,000 and new supply is zero. The 4,000-worker shortage is unmet demand for labor, putting upward pressure on wages; it is not unemployment."
+    },
+    "final": {
+      "q": "Supply shifts from S L0 to S L1 while D L is unchanged. The wage initially remains $20. How large is the shortage of labor, and which way will it push wages?",
+      "options": [
+        "A 4,000-worker shortage, putting upward pressure on wage.",
+        "A 2,000-worker shortage, putting upward pressure on wage.",
+        "A 4,000-worker shortage, which means 4,000 workers are unemployed at this wage.",
+        "No shortage, because the plotted quantity of labor supplied at $20 is zero."
+      ],
+      "key": 0,
+      "feedback": "At $20, demand is 4,000 and new supply is zero. The 4,000-worker shortage is unmet demand for labor, putting upward pressure on wages; it is not unemployment."
+    },
+    "facultyOverride": false,
+    "page": 1745,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "Name the initial and resulting curves instead of relying on curve subscripts or old/new language to establish chronology. Preserve the plotted graph and all requested reasoning.",
+    "reviewGraph": {
+      "sha256": "b34cf3cf4422b9411e0acb67c965d7950b61a693ef5008d00513b3bc91245aad",
+      "imageAlt": "Construction labor supply shifts left, moving equilibrium from 4,000 workers at $20 to 2,000 workers at $25 per hour.",
+      "graphDescription": "The vertical axis is hourly wage in dollars and the horizontal axis is hundreds of construction workers. Labor demand is unchanged. Labor supply shifts left from dashed S L0 to solid S L1. The marked equilibrium moves from 4,000 workers at $20 per hour to 2,000 workers at $25 per hour."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42362",
+    "before": {
+      "q": "Refer to the graph above. How much higher is the new equilibrium hourly wage?",
+      "options": [
+        "$2 per hour",
+        "$20 per hour",
+        "$5 per hour",
+        "$25 per hour"
+      ],
+      "key": 2,
+      "feedback": "The wage rises from $20 to $25 per hour, an increase of $5."
+    },
+    "final": {
+      "q": "Construction labor supply shifts from S L0 to S L1, with D L unchanged. How much higher is the new equilibrium hourly wage?",
+      "options": [
+        "$2 per hour",
+        "$20 per hour",
+        "$5 per hour",
+        "$25 per hour"
+      ],
+      "key": 2,
+      "feedback": "The wage rises from $20 to $25 per hour, an increase of $5."
+    },
+    "facultyOverride": false,
+    "page": 1746,
+    "patterns": [
+      "Graph state"
+    ],
+    "rationale": "Name the initial and resulting curves instead of relying on curve subscripts or old/new language to establish chronology. Preserve the plotted graph and all requested reasoning.",
+    "reviewGraph": {
+      "sha256": "b34cf3cf4422b9411e0acb67c965d7950b61a693ef5008d00513b3bc91245aad",
+      "imageAlt": "Construction labor supply shifts left, moving equilibrium from 4,000 workers at $20 to 2,000 workers at $25 per hour.",
+      "graphDescription": "The vertical axis is hourly wage in dollars and the horizontal axis is hundreds of construction workers. Labor demand is unchanged. Labor supply shifts left from dashed S L0 to solid S L1. The marked equilibrium moves from 4,000 workers at $20 per hour to 2,000 workers at $25 per hour."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42389",
+    "before": {
+      "q": "At a delivery firm, one worker adds 30 parcels and the next adds 22. The following worker would add 14. Each parcel sells for $6 and each additional worker costs $100, with other costs unchanged. Which hiring conclusion distinguishes diminishing marginal product from profitability?",
+      "options": [
+        "Reject both workers because any decline in marginal product means extra output is unprofitable.",
+        "Hire the worker adding 22 parcels but not the one adding 14; their added revenues are $132 and $84 even though both have positive marginal product.",
+        "Hire both workers because positive marginal product is sufficient for profit to rise.",
+        "Hire only the worker adding 14 parcels because lower marginal product means lower marginal labor cost."
+      ],
+      "key": 1,
+      "feedback": "Compare added revenue with the $100 wage. 22×$6=$132 exceeds the wage; 14×$6=$84 does not. Diminishing marginal product need not mean negative marginal product or immediate unprofitability."
+    },
+    "final": {
+      "q": "At a delivery firm, one worker adds 30 parcels and the next adds 22. The following worker would add 14. Each parcel sells for $6 and each additional worker costs $100, with other costs unchanged. Which hiring conclusion distinguishes diminishing marginal product from profitability?",
+      "options": [
+        "Reject both workers because any decline in marginal product means extra output is unprofitable.",
+        "Hire the worker adding 22 parcels; do not hire the one adding 14.",
+        "Hire both workers because positive marginal product is sufficient for profit to rise.",
+        "Hire only the worker adding 14 parcels because lower marginal product means lower marginal labor cost."
+      ],
+      "key": 1,
+      "feedback": "Compare added revenue with the $100 wage. 22×$6=$132 exceeds the wage; 14×$6=$84 does not. Diminishing marginal product need not mean negative marginal product or immediate unprofitability."
+    },
+    "facultyOverride": false,
+    "page": 3215,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "Give the two hiring decisions in the answer and leave the marginal-revenue calculations in feedback.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42487",
+    "before": {
+      "q": "A warehouse installs robots that perform the same sorting tasks as entry-level workers. What relationship among productive inputs does the scenario imply?",
+      "options": [
+        "All factors must be substitutes",
+        "All factors must be complements",
+        "Only the wage can affect factor demand",
+        "Robots substitute for that labor, so demand for those workers falls"
+      ],
+      "key": 3,
+      "feedback": "Robots substitute for that labor, so demand for those workers falls. Factor relationships depend on the production process described; they are not universally substitutes or complements."
+    },
+    "final": {
+      "q": "A warehouse installs robots that perform the same sorting tasks as entry-level workers. What relationship among productive inputs does the scenario imply?",
+      "options": [
+        "All factors must be substitutes",
+        "All factors must be complements",
+        "Only the wage can affect factor demand",
+        "Robots substitute for those workers."
+      ],
+      "key": 3,
+      "feedback": "Robots substitute for that labor, so demand for those workers falls. Factor relationships depend on the production process described; they are not universally substitutes or complements."
+    },
+    "facultyOverride": false,
+    "page": 3276,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "The question asks for the input relationship; the labor-demand consequence is an extra explanation.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42871",
+    "before": {
+      "q": "A program ends completely when earnings rise one dollar above an eligibility cutoff. What design problem does this create?",
+      "options": [
+        "A smooth phaseout",
+        "A universal cash benefit",
+        "A lower effective marginal tax rate at the cutoff",
+        "A benefits cliff can make a small earnings increase reduce disposable resources"
+      ],
+      "key": 3,
+      "feedback": "An abrupt loss of benefits can exceed the added earnings and discourage crossing the cutoff."
+    },
+    "final": {
+      "q": "A program ends completely when earnings rise one dollar above an eligibility cutoff. What design problem does this create?",
+      "options": [
+        "A smooth phaseout",
+        "A universal cash benefit",
+        "A lower effective marginal tax rate at the cutoff",
+        "A benefits cliff."
+      ],
+      "key": 3,
+      "feedback": "An abrupt loss of benefits can exceed the added earnings and discourage crossing the cutoff."
+    },
+    "facultyOverride": false,
+    "page": 15,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "The key names a benefits cliff and then explains it, while the alternatives name policy types. The mechanism is already in the stem.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42875",
+    "before": {
+      "q": "A program ends completely when earnings rise one dollar above an eligibility cutoff. What design problem does this create?",
+      "options": [
+        "A smooth phaseout",
+        "A universal cash benefit",
+        "A lower effective marginal tax rate at the cutoff",
+        "A benefits cliff can make a small earnings increase reduce disposable resources"
+      ],
+      "key": 3,
+      "feedback": "An abrupt loss of benefits can exceed the added earnings and discourage crossing the cutoff."
+    },
+    "final": {
+      "q": "A program ends completely when earnings rise one dollar above an eligibility cutoff. What design problem does this create?",
+      "options": [
+        "A smooth phaseout",
+        "A universal cash benefit",
+        "A lower effective marginal tax rate at the cutoff",
+        "A benefits cliff."
+      ],
+      "key": 3,
+      "feedback": "An abrupt loss of benefits can exceed the added earnings and discourage crossing the cutoff."
+    },
+    "facultyOverride": false,
+    "page": 16,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "The key names a benefits cliff and then explains it, while the alternatives name policy types. The mechanism is already in the stem.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42867",
+    "before": {
+      "q": "A program ends completely when earnings rise one dollar above an eligibility cutoff. What design problem does this create?",
+      "options": [
+        "A smooth phaseout",
+        "A universal cash benefit",
+        "A lower effective marginal tax rate at the cutoff",
+        "A benefits cliff can make a small earnings increase reduce disposable resources"
+      ],
+      "key": 3,
+      "feedback": "An abrupt loss of benefits can exceed the added earnings and discourage crossing the cutoff."
+    },
+    "final": {
+      "q": "A program ends completely when earnings rise one dollar above an eligibility cutoff. What design problem does this create?",
+      "options": [
+        "A smooth phaseout",
+        "A universal cash benefit",
+        "A lower effective marginal tax rate at the cutoff",
+        "A benefits cliff."
+      ],
+      "key": 3,
+      "feedback": "An abrupt loss of benefits can exceed the added earnings and discourage crossing the cutoff."
+    },
+    "facultyOverride": false,
+    "page": 17,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "The key names a benefits cliff and then explains it, while the alternatives name policy types. The mechanism is already in the stem.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42879",
+    "before": {
+      "q": "A program ends completely when earnings rise one dollar above an eligibility cutoff. What design problem does this create?",
+      "options": [
+        "A smooth phaseout",
+        "A universal cash benefit",
+        "A lower effective marginal tax rate at the cutoff",
+        "A benefits cliff can make a small earnings increase reduce disposable resources"
+      ],
+      "key": 3,
+      "feedback": "An abrupt loss of benefits can exceed the added earnings and discourage crossing the cutoff."
+    },
+    "final": {
+      "q": "A program ends completely when earnings rise one dollar above an eligibility cutoff. What design problem does this create?",
+      "options": [
+        "A smooth phaseout",
+        "A universal cash benefit",
+        "A lower effective marginal tax rate at the cutoff",
+        "A benefits cliff."
+      ],
+      "key": 3,
+      "feedback": "An abrupt loss of benefits can exceed the added earnings and discourage crossing the cutoff."
+    },
+    "facultyOverride": false,
+    "page": 17,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "The key names a benefits cliff and then explains it, while the alternatives name policy types. The mechanism is already in the stem.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42765",
+    "before": {
+      "q": "Initially the top quintile receives 45% of income and the bottom quintile 5%. A policy shifts five percentage points of total income from the top to the bottom, with total income and rankings unchanged. What happens to the top-to-bottom share ratio?",
+      "options": [
+        "It falls from 9 to 8 because transferring five percentage points changes the ratio by one.",
+        "It falls from 9 to 4, but this change alone does not establish how much the entire distribution’s Gini changes.",
+        "It rises from 9 to 10 because the bottom share rises to 10%.",
+        "It stays at 9 because transfers cannot change relative income shares."
+      ],
+      "key": 1,
+      "feedback": "The original ratio is 45/5=9. New shares are 40% and 10%, giving 40/10=4. The full Lorenz distribution is needed for the Gini change."
+    },
+    "final": {
+      "q": "Initially the top quintile receives 45% of income and the bottom quintile 5%. A policy shifts five percentage points of total income from the top to the bottom, with total income and rankings unchanged. What happens to the top-to-bottom share ratio?",
+      "options": [
+        "It falls from 9 to 8.",
+        "It falls from 9 to 4.",
+        "It rises from 9 to 10.",
+        "It stays at 9."
+      ],
+      "key": 1,
+      "feedback": "The original ratio is 45/5=9. New shares are 40% and 10%, giving 40/10=4. The full Lorenz distribution is needed for the Gini change."
+    },
+    "facultyOverride": false,
+    "page": 1391,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "The question asks only for the share ratio; move the unasked Gini qualification and calculations into feedback, and make all four options parallel.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42809",
+    "before": {
+      "q": "Two households have equal labor earnings. Household A inherits productive assets, while B does not. A proposal equalizes their current labor earnings but leaves asset ownership and returns unchanged. Which evaluation is justified?",
+      "options": [
+        "The proposal eliminates the wealth gap because equal annual earnings imply equal asset stocks.",
+        "The proposal leaves this wealth gap and associated capital-income gap in place; equal labor earnings do not establish equal economic resources.",
+        "The proposal removes capital income by holding labor earnings equal.",
+        "The proposal increases labor productivity in B by transferring ownership of A’s assets."
+      ],
+      "key": 1,
+      "feedback": "A stock of inherited assets can persist and yield income independently of equal labor earnings. A labor-income rule alone does not transfer that stock."
+    },
+    "final": {
+      "q": "Two households have equal labor earnings. Household A inherits productive assets, while B does not. A proposal equalizes their current labor earnings but leaves asset ownership and returns unchanged. Which evaluation is justified?",
+      "options": [
+        "The proposal eliminates the wealth gap because equal annual earnings imply equal asset stocks.",
+        "The wealth gap and associated capital-income gap remain.",
+        "The proposal removes capital income by holding labor earnings equal.",
+        "The proposal increases labor productivity in B by transferring ownership of A’s assets."
+      ],
+      "key": 1,
+      "feedback": "A stock of inherited assets can persist and yield income independently of equal labor earnings. A labor-income rule alone does not transfer that stock."
+    },
+    "facultyOverride": false,
+    "page": 3314,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "Keep the wealth and capital-income distinction without repeating the claim about equal wages.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42987",
+    "before": {
+      "q": "A default enrollment rule sharply changes participation even though opting out is easy. What does this challenge?",
+      "options": [
+        "The existence of scarcity",
+        "The law of demand in every setting",
+        "The possibility of opportunity cost",
+        "The claim that only final prices and outcomes matter, not choice architecture"
+      ],
+      "key": 3,
+      "feedback": "Default effects show that framing and the path of choice can influence behavior even when options remain available."
+    },
+    "final": {
+      "q": "A default enrollment rule sharply changes participation even though opting out is easy. What does this challenge?",
+      "options": [
+        "The existence of scarcity",
+        "The law of demand in every setting",
+        "The possibility of opportunity cost",
+        "The claim that choice architecture is irrelevant."
+      ],
+      "key": 3,
+      "feedback": "Default effects show that framing and the path of choice can influence behavior even when options remain available."
+    },
+    "facultyOverride": false,
+    "page": 40,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "The key states a challenged claim at much greater length than the alternatives; the explanation belongs in feedback.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "43055",
+    "before": {
+      "q": "Consider a case in which two office-seeking candidates care only about winning and voters choose the closer one on a single policy dimension. What tendency follows?",
+      "options": [
+        "Both move toward opposite extremes",
+        "Policy location becomes irrelevant",
+        "The candidate at the mean always loses",
+        "Both candidates have an incentive to move toward the median voter"
+      ],
+      "key": 3,
+      "feedback": "Moving toward the median can capture pivotal voters without losing those on the candidate's outer side."
+    },
+    "final": {
+      "q": "Consider a case in which two office-seeking candidates care only about winning and voters choose the closer one on a single policy dimension. What tendency follows?",
+      "options": [
+        "Both move toward opposite extremes",
+        "Policy location becomes irrelevant",
+        "The candidate at the mean always loses",
+        "Both tend toward the median voter."
+      ],
+      "key": 3,
+      "feedback": "Moving toward the median can capture pivotal voters without losing those on the candidate's outer side."
+    },
+    "facultyOverride": false,
+    "page": 1865,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "State the convergence tendency directly; the feedback explains the incentive.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "43058",
+    "before": {
+      "q": "A classroom example assumes that voters have single-peaked preferences over one tax-rate line and choose by majority rule. Which position is pivotal?",
+      "options": [
+        "The mean income regardless of voting",
+        "The most extreme voter's ideal point",
+        "The median voter's ideal point",
+        "A randomly chosen policy"
+      ],
+      "key": 2,
+      "feedback": "On a one-dimensional line with single-peaked preferences, the median ideal point defeats alternatives in pairwise votes."
+    },
+    "final": {
+      "q": "Voters have single-peaked preferences over one tax-rate line and choose by majority rule. Which position is pivotal?",
+      "options": [
+        "The mean income regardless of voting",
+        "The most extreme voter's ideal point",
+        "The median voter's ideal point",
+        "A randomly chosen policy"
+      ],
+      "key": 2,
+      "feedback": "On a one-dimensional line with single-peaked preferences, the median ideal point defeats alternatives in pairwise votes."
+    },
+    "facultyOverride": false,
+    "page": 1865,
+    "patterns": [
+      "Meta/model wording"
+    ],
+    "rationale": "Remove classroom framing while keeping the single-peaked, one-dimensional, majority-rule assumptions.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "43059",
+    "before": {
+      "q": "Evidence indicates that two office-seeking candidates care only about winning and voters choose the closer one on a single policy dimension. What tendency follows?",
+      "options": [
+        "Both move toward opposite extremes",
+        "Policy location becomes irrelevant",
+        "The candidate at the mean always loses",
+        "Both candidates have an incentive to move toward the median voter"
+      ],
+      "key": 3,
+      "feedback": "Moving toward the median can capture pivotal voters without losing those on the candidate's outer side."
+    },
+    "final": {
+      "q": "Evidence indicates that two office-seeking candidates care only about winning and voters choose the closer one on a single policy dimension. What tendency follows?",
+      "options": [
+        "Both move toward opposite extremes",
+        "Policy location becomes irrelevant",
+        "The candidate at the mean always loses",
+        "Both tend toward the median voter."
+      ],
+      "key": 3,
+      "feedback": "Moving toward the median can capture pivotal voters without losing those on the candidate's outer side."
+    },
+    "facultyOverride": false,
+    "page": 1865,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "State the convergence tendency directly; the feedback explains the incentive.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "43051",
+    "before": {
+      "q": "A classroom example assumes that two office-seeking candidates care only about winning and voters choose the closer one on a single policy dimension. What tendency follows?",
+      "options": [
+        "Both move toward opposite extremes",
+        "Policy location becomes irrelevant",
+        "The candidate at the mean always loses",
+        "Both candidates have an incentive to move toward the median voter"
+      ],
+      "key": 3,
+      "feedback": "Moving toward the median can capture pivotal voters without losing those on the candidate's outer side."
+    },
+    "final": {
+      "q": "Two office-seeking candidates care only about winning, and voters choose the closer one on a single policy dimension. What tendency follows?",
+      "options": [
+        "Both move toward opposite extremes",
+        "Policy location becomes irrelevant",
+        "The candidate at the mean always loses",
+        "Both tend toward the median voter."
+      ],
+      "key": 3,
+      "feedback": "Moving toward the median can capture pivotal voters without losing those on the candidate's outer side."
+    },
+    "facultyOverride": false,
+    "page": 1867,
+    "patterns": [
+      "Answer-choice parallelism",
+      "Meta/model wording"
+    ],
+    "rationale": "State the convergence tendency directly; the feedback explains the incentive. Classroom example is unnecessary course framing.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "43047",
+    "before": {
+      "q": "Two office-seeking candidates care only about winning and voters choose the closer one on a single policy dimension. What tendency follows?",
+      "options": [
+        "Both move toward opposite extremes",
+        "Policy location becomes irrelevant",
+        "The candidate at the mean always loses",
+        "Both candidates have an incentive to move toward the median voter"
+      ],
+      "key": 3,
+      "feedback": "Moving toward the median can capture pivotal voters without losing those on the candidate's outer side."
+    },
+    "final": {
+      "q": "Two office-seeking candidates care only about winning and voters choose the closer one on a single policy dimension. What tendency follows?",
+      "options": [
+        "Both move toward opposite extremes",
+        "Policy location becomes irrelevant",
+        "The candidate at the mean always loses",
+        "Both tend toward the median voter."
+      ],
+      "key": 3,
+      "feedback": "Moving toward the median can capture pivotal voters without losing those on the candidate's outer side."
+    },
+    "facultyOverride": false,
+    "page": 1868,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "State the convergence tendency directly; the feedback explains the incentive.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "42097",
+    "before": {
+      "q": "At what quantity does the $2 vaping tax leave the market after shifting the private consumption incentive?",
+      "options": [
+        "140 thousand vapes",
+        "160 thousand vapes",
+        "180 thousand vapes",
+        "20 thousand vapes"
+      ],
+      "key": 1,
+      "feedback": "The policy-adjusted MPB curve intersects MPC at 160 thousand vapes. That is below the unregulated 180 thousand but above the efficient 140 thousand."
+    },
+    "final": {
+      "q": "With the $2 vaping tax shown in the graph, what quantity is traded?",
+      "options": [
+        "140 thousand vapes",
+        "160 thousand vapes",
+        "180 thousand vapes",
+        "20 thousand vapes"
+      ],
+      "key": 1,
+      "feedback": "The policy-adjusted MPB curve intersects MPC at 160 thousand vapes. That is below the unregulated 180 thousand but above the efficient 140 thousand."
+    },
+    "facultyOverride": false,
+    "page": 1181,
+    "patterns": [
+      "AI abstraction"
+    ],
+    "rationale": "Shifting the private consumption incentive is abstract wording for the tax already specified.",
+    "reviewGraph": {
+      "sha256": "f6891f406f2f05535888f590d531eca47903c7923c4c5750ba1336a181a77cb7",
+      "imageAlt": "Graph of disposable vapes consumed (thousands) with labeled marginal curves, intersection guides and a purple bracket.",
+      "graphDescription": "The horizontal axis measures disposable vapes consumed (thousands), from 0 to 240. The vertical axis measures marginal benefit and cost in dollars per vape. MPB is a straight line from (0, $19) to (240, $7). MPC is a straight line from (0, $1) to (240, $13). MSB is a straight line from (0, $15) to (240, $3), parallel to MPB. A dashed purple line labeled Policy-adjusted MPB runs from (0, $17) to (240, $5), parallel to MPB and MSB. It intersects MPC at a purple dot (160, $9). A red dot marks the MPB-MPC intersection (180, $10), and a green dot marks the MSB-MPC intersection (140, $8). Dashed guides show their coordinates. A purple vertical bracket near Q = 160 spans $9 to $11 on MPB."
+    },
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "P77-MFAIL-H-011",
+    "before": {
+      "q": "A city dislikes unequal restaurant access. What must be shown for textbook market failure?",
+      "options": [
+        "Inequality alone proves productive inefficiency",
+        "A mechanism causing private incentives to diverge from social efficiency",
+        "A high price by itself establishes market failure",
+        "The outcome is disliked but no incentive wedge is identified"
+      ],
+      "key": 1,
+      "feedback": "Market failure requires a specific reason private incentives diverge from efficient social outcomes."
+    },
+    "final": {
+      "q": "A city dislikes unequal restaurant access. What must be shown to establish market failure?",
+      "options": [
+        "Inequality alone proves productive inefficiency",
+        "A mechanism causing private incentives to diverge from social efficiency",
+        "A high price by itself establishes market failure",
+        "The outcome is disliked but no incentive wedge is identified"
+      ],
+      "key": 1,
+      "feedback": "Market failure requires a specific reason private incentives diverge from efficient social outcomes."
+    },
+    "facultyOverride": false,
+    "page": 1845,
+    "patterns": [
+      "Meta/textbook"
+    ],
+    "rationale": "The question concerns market failure itself; textbook adds course framing.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "PM7-MCMP-M-043",
+    "before": {
+      "q": "A textbook labels a market monopolistically competitive because it has many differentiated sellers. In one rural town, however, only two sellers actually serve customers. What is the best caution?",
+      "options": [
+        "Two local sellers guarantee a natural monopoly",
+        "Differentiation becomes irrelevant whenever geography matters",
+        "The local market may display strategic interdependence that the broad model misses",
+        "The market must still be perfectly competitive locally"
+      ],
+      "key": 2,
+      "feedback": "Market boundaries matter. A broad national description can hide a much more concentrated local competitive environment."
+    },
+    "final": {
+      "q": "An industry is classified as monopolistically competitive because it has many differentiated sellers. In one rural town, however, only two sellers actually serve customers. What is the best caution?",
+      "options": [
+        "Two local sellers guarantee a natural monopoly",
+        "Differentiation becomes irrelevant whenever geography matters",
+        "The local market may display strategic interdependence that the broad model misses",
+        "The market must still be perfectly competitive locally"
+      ],
+      "key": 2,
+      "feedback": "Market boundaries matter. A broad national description can hide a much more concentrated local competitive environment."
+    },
+    "facultyOverride": false,
+    "page": 1895,
+    "patterns": [
+      "Meta/textbook"
+    ],
+    "rationale": "The national-versus-local market distinction matters; attributing the classification to a textbook does not.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "P62H-MCMP-BR-019",
+    "before": {
+      "q": "What separates monopolistic competition from oligopoly?",
+      "options": [
+        "Many firms act without central strategic interdependence in the basic model",
+        "Products are never differentiated",
+        "Demand is always horizontal",
+        "Entry never occurs"
+      ],
+      "key": 0,
+      "feedback": "Strategic few-firm interaction belongs to oligopoly."
+    },
+    "final": {
+      "q": "What separates monopolistic competition from oligopoly?",
+      "options": [
+        "Many firms make decisions without focusing on particular rivals.",
+        "Products are never differentiated",
+        "Demand is always horizontal",
+        "Entry never occurs"
+      ],
+      "key": 0,
+      "feedback": "Strategic few-firm interaction belongs to oligopoly."
+    },
+    "facultyOverride": false,
+    "page": 2093,
+    "patterns": [
+      "AI abstraction"
+    ],
+    "rationale": "Central strategic interdependence is an awkward abstraction; state what the firms do.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "P62G-MON-R-001",
+    "before": {
+      "q": "A city has one coffee shop today, but entry is easy and several rivals are preparing to open. Is the current seller necessarily a durable monopoly?",
+      "options": [
+        "Yes; one seller at any moment is always a permanent monopoly",
+        "Yes; size alone creates a legal barrier",
+        "No; one current seller without a meaningful barrier may only have temporary market leadership",
+        "No; because monopoly requires horizontal demand"
+      ],
+      "key": 2,
+      "feedback": "Durable monopoly power depends on the relevant market and barriers to entry."
+    },
+    "final": {
+      "q": "A city has one coffee shop today, but entry is easy and several rivals are preparing to open. Is the current seller necessarily a durable monopoly?",
+      "options": [
+        "Yes; one seller at any moment is always a permanent monopoly",
+        "Yes; size alone creates a legal barrier",
+        "No; easy entry may make its position temporary.",
+        "No; because monopoly requires horizontal demand"
+      ],
+      "key": 2,
+      "feedback": "Durable monopoly power depends on the relevant market and barriers to entry."
+    },
+    "facultyOverride": false,
+    "page": 2112,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "The key explains easy entry at greater length than the alternatives; retain the explanation in feedback.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "P62G-MON-R-014",
+    "before": {
+      "q": "Price above MC is evidence of:",
+      "options": [
+        "Productive efficiency",
+        "Zero economic profit",
+        "A natural monopoly automatically",
+        "Allocative inefficiency, because some buyers value additional output above its marginal cost"
+      ],
+      "key": 3,
+      "feedback": "P>MC indicates forgone surplus at the margin."
+    },
+    "final": {
+      "q": "Price above MC is evidence of:",
+      "options": [
+        "Productive efficiency",
+        "Zero economic profit",
+        "A natural monopoly automatically",
+        "Allocative inefficiency."
+      ],
+      "key": 3,
+      "feedback": "P>MC indicates forgone surplus at the margin. Some buyers value additional output above its marginal cost, but those trades do not occur."
+    },
+    "facultyOverride": false,
+    "page": 2268,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "The correct classification carries a because clause; the other options are short classifications.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "P62G-MON-EL-019",
+    "before": {
+      "q": "A monopoly spends real resources lobbying to extend its exclusive license. How should those resources be treated in welfare analysis?",
+      "options": [
+        "Add to the social cost beyond the standard output-restriction DWL",
+        "Become consumer surplus",
+        "Reduce marginal cost automatically",
+        "Are a pure transfer with no resource use"
+      ],
+      "key": 0,
+      "feedback": "Real rent-seeking expenditures use labor and capital without creating the protected product."
+    },
+    "final": {
+      "q": "A monopoly spends real resources lobbying to extend its exclusive license. How should those resources be treated in welfare analysis?",
+      "options": [
+        "Add to social cost beyond the loss from restricted output.",
+        "Become consumer surplus",
+        "Reduce marginal cost automatically",
+        "Are a pure transfer with no resource use"
+      ],
+      "key": 0,
+      "feedback": "Real rent-seeking expenditures use labor and capital without creating the protected product."
+    },
+    "facultyOverride": false,
+    "page": 2306,
+    "patterns": [
+      "Noun stack"
+    ],
+    "rationale": "Unpack standard output-restriction DWL into a direct description of the welfare loss.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "P62G-MON-EL-022",
+    "before": {
+      "q": "A monopoly spends real resources lobbying to extend its exclusive license. How should that spending enter welfare analysis?",
+      "options": [
+        "Become consumer surplus",
+        "Reduce marginal cost automatically",
+        "Are a pure transfer with no resource use",
+        "Add to the social cost beyond the standard output-restriction DWL"
+      ],
+      "key": 3,
+      "feedback": "Real rent-seeking expenditures use labor and capital without creating the protected product."
+    },
+    "final": {
+      "q": "A monopoly spends real resources lobbying to extend its exclusive license. How should that spending enter welfare analysis?",
+      "options": [
+        "Become consumer surplus",
+        "Reduce marginal cost automatically",
+        "Are a pure transfer with no resource use",
+        "Add to social cost beyond the loss from restricted output."
+      ],
+      "key": 3,
+      "feedback": "Real rent-seeking expenditures use labor and capital without creating the protected product."
+    },
+    "facultyOverride": false,
+    "page": 2307,
+    "patterns": [
+      "Noun stack"
+    ],
+    "rationale": "Unpack standard output-restriction DWL into a direct description of the welfare loss.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "PM6-MON-M-058",
+    "before": {
+      "q": "A price cap is set above the price the monopolist would charge without regulation. What is the immediate effect?",
+      "options": [
+        "The firm must charge the cap even if it prefers a lower price",
+        "The firm becomes perfectly competitive",
+        "The firm’s fixed cost becomes zero",
+        "The cap is nonbinding and does not constrain the firm’s chosen price"
+      ],
+      "key": 3,
+      "feedback": "A ceiling above the unregulated price does not bind."
+    },
+    "final": {
+      "q": "A price cap is set above the price the monopolist would charge without regulation. What is the immediate effect?",
+      "options": [
+        "The firm must charge the cap even if it prefers a lower price",
+        "The firm becomes perfectly competitive",
+        "The firm’s fixed cost becomes zero",
+        "The cap is nonbinding."
+      ],
+      "key": 3,
+      "feedback": "A ceiling above the unregulated price does not bind."
+    },
+    "facultyOverride": false,
+    "page": 2362,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "Nonbinding and does not constrain the chosen price repeat the same conclusion.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "P62I-OLI-LB-011",
+    "before": {
+      "q": "Market shares are 33%, 29%, 17%, 12% and 9%. Compare merger A (33% with 9%) with merger B (17% with 12%), holding other shares fixed. Which comparison is correct?",
+      "options": [
+        "Both give CR4=100%, but A raises HHI by 594 and B by 408; equal CR4 does not imply the same HHI change.",
+        "Both give CR4=100% and the same HHI increase because each merger removes one firm.",
+        "A raises HHI less than B because one of its partners is the smallest firm.",
+        "CR4 stays 91% under both mergers because the original four largest shares are unchanged."
+      ],
+      "key": 0,
+      "feedback": "Each leaves four firms, so CR4 becomes 100%. HHI increments are 2×33×9=594 and 2×17×12=408. The product of the merging shares matters, not merely the smaller partner’s rank."
+    },
+    "final": {
+      "q": "Market shares are 33%, 29%, 17%, 12% and 9%. Compare merger A (33% with 9%) with merger B (17% with 12%), holding other shares fixed. Which comparison is correct?",
+      "options": [
+        "Both give CR4 = 100%; A raises HHI by 594 and B by 408.",
+        "Both give CR4=100% and the same HHI increase because each merger removes one firm.",
+        "A raises HHI less than B because one of its partners is the smallest firm.",
+        "CR4 stays 91% under both mergers because the original four largest shares are unchanged."
+      ],
+      "key": 0,
+      "feedback": "Each leaves four firms, so CR4 becomes 100%. HHI increments are 2×33×9=594 and 2×17×12=408. The product of the merging shares matters, not merely the smaller partner’s rank."
+    },
+    "facultyOverride": false,
+    "page": 2448,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "The final sentence repeats what the two numerical results already show; keep the explanation in feedback.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "PM8-OLI-BR-052",
+    "before": {
+      "q": "A student has learned that oligopoly firms react strategically to price changes. What is the next step when firms compete through quality or advertising instead?",
+      "options": [
+        "Ignore rivals because only prices create interdependence",
+        "Apply the same strategic logic to nonprice actions because rivals may respond there too",
+        "Assume nonprice choices have no effect on demand",
+        "Treat advertising as proof of collusion"
+      ],
+      "key": 1,
+      "feedback": "Strategic interdependence applies to quality, advertising, service, and other competitive dimensions as well as price."
+    },
+    "final": {
+      "q": "Firms compete through quality or advertising rather than prices. How should they account for rivals?",
+      "options": [
+        "Ignore rivals because only prices create interdependence",
+        "Anticipate rivals’ responses to these nonprice actions.",
+        "Assume nonprice choices have no effect on demand",
+        "Treat advertising as proof of collusion"
+      ],
+      "key": 1,
+      "feedback": "Strategic interdependence applies to quality, advertising, service, and other competitive dimensions as well as price."
+    },
+    "facultyOverride": false,
+    "page": 2611,
+    "patterns": [
+      "Meta/model wording",
+      "Answer-choice parallelism"
+    ],
+    "rationale": "Ask about the economic application directly, rather than a learner’s next curriculum step.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "PM5-PC-BR-015",
+    "before": {
+      "q": "What prior market concept helps explain why the individual competitive firm can face a horizontal demand line even though market demand slopes downward?",
+      "options": [
+        "The firm owns the market supply curve",
+        "The firm faces no scarcity in its inputs",
+        "The firm is a tiny participant taking the equilibrium price generated by the whole market",
+        "The law of demand stops applying at the firm level because competitive sellers can choose any price they want"
+      ],
+      "key": 2,
+      "feedback": "Firm-level price taking is consistent with a downward-sloping market demand curve because the individual seller is negligible relative to the market."
+    },
+    "final": {
+      "q": "Why can an individual competitive firm face a horizontal demand line even though market demand slopes downward?",
+      "options": [
+        "The firm owns the market supply curve",
+        "The firm faces no scarcity in its inputs",
+        "The firm is a tiny participant taking the equilibrium price generated by the whole market",
+        "The law of demand stops applying at the firm level because competitive sellers can choose any price they want"
+      ],
+      "key": 2,
+      "feedback": "Firm-level price taking is consistent with a downward-sloping market demand curve because the individual seller is negligible relative to the market."
+    },
+    "facultyOverride": false,
+    "page": 2699,
+    "patterns": [
+      "Meta/model wording"
+    ],
+    "rationale": "Prior market concept describes curriculum sequencing instead of asking the economic question directly.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "P62F-PC-LB-001",
+    "before": {
+      "q": "A competitive firm faces price $28. Fixed cost is $40, unavoidable this period but avoidable by exiting before next period. Marginal costs of units 1–7 are [7, 12, 18, 25, 33, 42, 52] dollars; variable cost at zero output is zero. Choose the largest output if two quantities tie for maximum profit. A new unconditional license fee adds $15 to this period’s fixed cost. A manager proposes reducing output because the fee “raises MC.” Which correction is right?",
+      "options": [
+        "Output falls to 3; profit rises because spreading fewer units over the fee lowers MC.",
+        "Output rises to 7; this necessarily recovers the fixed fee regardless of marginal cost.",
+        "Output remains 4; profit changes from $10 to $-5, because the fee changes fixed cost but not marginal revenue or marginal cost.",
+        "Output remains 4; profit stays $10 because fixed costs affect neither output nor profit."
+      ],
+      "key": 2,
+      "feedback": "Before the fee the largest amount of revenue left after variable cost is $50 at Q=4. Every output’s profit is reduced by the same $15, so the maximizing quantity is unchanged and profit becomes $-5."
+    },
+    "final": {
+      "q": "A competitive firm faces price $28. Fixed cost is $40, unavoidable this period but avoidable by exiting before next period. Marginal costs of units 1–7 are [7, 12, 18, 25, 33, 42, 52] dollars; variable cost at zero output is zero. Choose the largest output if two quantities tie for maximum profit. A new unconditional license fee adds $15 to this period’s fixed cost. A manager proposes reducing output because the fee “raises MC.” Which correction is right?",
+      "options": [
+        "Output falls to 3; profit rises because spreading fewer units over the fee lowers MC.",
+        "Output rises to 7; this necessarily recovers the fixed fee regardless of marginal cost.",
+        "Output remains 4; profit changes from $10 to −$5.",
+        "Output remains 4; profit stays $10 because fixed costs affect neither output nor profit."
+      ],
+      "key": 2,
+      "feedback": "Before the fee the largest amount of revenue left after variable cost is $50 at Q=4. Every output’s profit is reduced by the same $15, so the maximizing quantity is unchanged and profit becomes $-5."
+    },
+    "facultyOverride": false,
+    "page": 2776,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "Retain both the output and profit comparisons, moving the fixed-versus-marginal-cost explanation to feedback.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "P62F-PC-LB-004",
+    "before": {
+      "q": "A competitive firm faces price $9. Fixed cost is $30, unavoidable this period but avoidable by exiting before next period. Marginal costs of units 1–7 are [10, 15, 21, 28, 36, 45, 55] dollars; variable cost at zero output is zero. Choose the largest output if two quantities tie for maximum profit. A verified process improvement lowers every marginal unit cost by $2, with fixed cost and price unchanged. Which counterfactual is correct?",
+      "options": [
+        "Output stays at 0; only fixed-cost changes can affect an operating decision.",
+        "Output changes from 0 to 1; profit changes from $-30 to $-29, so the technology can change operation even if profit remains negative.",
+        "Output changes to 7 and profit becomes positive because every cost-saving innovation guarantees profit.",
+        "Output changes to 1; profit is $1 because the improvement eliminates the original fixed cost."
+      ],
+      "key": 1,
+      "feedback": "After the improvement, contributions at outputs 0–7 are [0, 1, -3, -13, -30, -55, -89, -133]. The largest maximum is Q=1 with contribution $1. Subtract unchanged F=$30 for profit $-29, compared with the original $-30."
+    },
+    "final": {
+      "q": "A competitive firm faces price $9. Fixed cost is $30, unavoidable this period but avoidable by exiting before next period. Marginal costs of units 1–7 are [10, 15, 21, 28, 36, 45, 55] dollars; variable cost at zero output is zero. Choose the largest output if two quantities tie for maximum profit. A verified process improvement lowers every marginal unit cost by $2, with fixed cost and price unchanged. Which counterfactual is correct?",
+      "options": [
+        "Output stays at 0; only fixed-cost changes can affect an operating decision.",
+        "Output changes from 0 to 1; profit changes from −$30 to −$29.",
+        "Output changes to 7 and profit becomes positive because every cost-saving innovation guarantees profit.",
+        "Output changes to 1; profit is $1 because the improvement eliminates the original fixed cost."
+      ],
+      "key": 1,
+      "feedback": "After the improvement, contributions at outputs 0–7 are [0, 1, -3, -13, -30, -55, -89, -133]. The largest maximum is Q=1 with contribution $1. Subtract unchanged F=$30 for profit $-29, compared with the original $-30."
+    },
+    "facultyOverride": false,
+    "page": 2777,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "The final so clause restates the implications of the output and profit results.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "P62F-PC-LB-005",
+    "before": {
+      "q": "A competitive firm faces price $40. Fixed cost is $115, unavoidable this period but avoidable by exiting before next period. Marginal costs of units 1–7 are [11, 16, 22, 29, 37, 46, 56] dollars; variable cost at zero output is zero. Choose the largest output if two quantities tie for maximum profit. A new unconditional license fee adds $15 to this period’s fixed cost. A manager proposes reducing output because the fee “raises MC.” Which correction is right?",
+      "options": [
+        "Output falls to 4; profit rises because spreading fewer units over the fee lowers MC.",
+        "Output rises to 7; this necessarily recovers the fixed fee regardless of marginal cost.",
+        "Output remains 5; profit changes from $-30 to $-45, because the fee changes fixed cost but not marginal revenue or marginal cost.",
+        "Output remains 5; profit stays $-30 because fixed costs affect neither output nor profit."
+      ],
+      "key": 2,
+      "feedback": "Before the fee the largest amount of revenue left after variable cost is $85 at Q=5. Every output’s profit is reduced by the same $15, so the maximizing quantity is unchanged and profit becomes $-45."
+    },
+    "final": {
+      "q": "A competitive firm faces price $40. Fixed cost is $115, unavoidable this period but avoidable by exiting before next period. Marginal costs of units 1–7 are [11, 16, 22, 29, 37, 46, 56] dollars; variable cost at zero output is zero. Choose the largest output if two quantities tie for maximum profit. A new unconditional license fee adds $15 to this period’s fixed cost. A manager proposes reducing output because the fee “raises MC.” Which correction is right?",
+      "options": [
+        "Output falls to 4; profit rises because spreading fewer units over the fee lowers MC.",
+        "Output rises to 7; this necessarily recovers the fixed fee regardless of marginal cost.",
+        "Output remains 5; profit changes from −$30 to −$45.",
+        "Output remains 5; profit stays $-30 because fixed costs affect neither output nor profit."
+      ],
+      "key": 2,
+      "feedback": "Before the fee the largest amount of revenue left after variable cost is $85 at Q=5. Every output’s profit is reduced by the same $15, so the maximizing quantity is unchanged and profit becomes $-45."
+    },
+    "facultyOverride": false,
+    "page": 2778,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "Retain both the output and profit comparisons, moving the fixed-versus-marginal-cost explanation to feedback.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "PM5-PC-BR-036",
+    "before": {
+      "q": "After finding that a firm earns a short-run economic loss, which comparison determines whether it should keep producing?",
+      "options": [
+        "The firm should compare price with AFC instead",
+        "After measuring the loss, separately compare price with AVC to decide produce versus shut down",
+        "Any loss automatically implies exit today because a competitive firm should never operate while ATC exceeds price",
+        "A loss means the firm should maximize quantity"
+      ],
+      "key": 1,
+      "feedback": "Loss measurement uses ATC; the short-run operating decision uses AVC."
+    },
+    "final": {
+      "q": "After finding that a firm earns a short-run economic loss, which comparison determines whether it should keep producing?",
+      "options": [
+        "The firm should compare price with AFC instead",
+        "Compare price with AVC.",
+        "Any loss automatically implies exit today because a competitive firm should never operate while ATC exceeds price",
+        "A loss means the firm should maximize quantity"
+      ],
+      "key": 1,
+      "feedback": "Loss measurement uses ATC; the short-run operating decision uses AVC."
+    },
+    "facultyOverride": false,
+    "page": 2793,
+    "patterns": [
+      "Answer-choice parallelism"
+    ],
+    "rationale": "The key repeats the setup about measuring a loss; give the required comparison directly.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  },
+  {
+    "id": "P62F-PC-L-087",
+    "before": {
+      "q": "Transaction costs prevent buyers and sellers from completing some mutually beneficial exchanges. Which conclusion is strongest?",
+      "options": [
+        "MC and ATC become identical",
+        "The firm becomes a price setter by definition",
+        "The textbook total-surplus benchmark may overstate realized gains",
+        "Entry eliminates every transaction cost"
+      ],
+      "key": 2,
+      "feedback": "Separate price-taking mechanics from the assumptions needed for long-run and welfare results."
+    },
+    "final": {
+      "q": "Transaction costs prevent buyers and sellers from completing some mutually beneficial exchanges. Which conclusion is strongest?",
+      "options": [
+        "MC and ATC become identical",
+        "The firm becomes a price setter by definition",
+        "Realized total surplus may fall short of the competitive benchmark.",
+        "Entry eliminates every transaction cost"
+      ],
+      "key": 2,
+      "feedback": "Separate price-taking mechanics from the assumptions needed for long-run and welfare results."
+    },
+    "facultyOverride": false,
+    "page": 2995,
+    "patterns": [
+      "Meta/textbook"
+    ],
+    "rationale": "Name the competitive benchmark directly rather than labeling it textbook.",
+    "reviewGraph": null,
+    "action": "EDITED",
+    "areas": [
+      "micro"
+    ]
+  }
+]

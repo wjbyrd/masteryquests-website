@@ -38,7 +38,12 @@ const ACTIVE_RUNNERS = [
   'run_trial_by_graph_validation.js',
   'run_fading_fortune_validation.js',
   'run_risk_reward_validation.js',
-  'run_risk_reward_state_validation.js'
+  'run_risk_reward_state_validation.js',
+  'run_macro_faculty_voice_validation.js',
+  'run_macro_faculty_voice_pass2_validation.js',
+  'run_macro_faculty_voice_pass3_validation.js',
+  'run_micro_faculty_voice_validation.js',
+  'run_micro_faculty_voice_pass3_validation.js'
 ];
 
 function run(){

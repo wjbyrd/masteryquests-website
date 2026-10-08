@@ -1,0 +1,153 @@
+{
+  "status": "PASS",
+  "uniqueQuestions": 9777,
+  "microQuestions": 6297,
+  "reviewCandidates": 94,
+  "edited": 94,
+  "answerHashesChanged": 53,
+  "facultyOverrides": 3,
+  "newAnswerLengthFlags": 0,
+  "difficultyChanges": 0,
+  "roleRoutingChanges": 0,
+  "unauthorizedRecordChanges": 0,
+  "graphAssetChanges": 0,
+  "graphMetadataChanges": 0,
+  "sharedChanges": 0,
+  "marketGateChanges": 0,
+  "facultyOutcomeContentChanges": 0,
+  "numericalChecks": [
+    {
+      "id": "P62C-CPS-H-008",
+      "reason": "Missing gains triangle",
+      "status": "PASS"
+    },
+    {
+      "id": "P62C-CPS-H-009",
+      "reason": "Excess output cost triangle",
+      "status": "PASS"
+    },
+    {
+      "id": "P62C-CPS-H-019",
+      "reason": "CS and PS each fall from32 to18; total36",
+      "status": "PASS"
+    },
+    {
+      "id": "P62C-CPS-B3-016",
+      "reason": "Transfer cancels; administration uses3",
+      "status": "PASS"
+    },
+    {
+      "id": "P62C-CPS-LB-024",
+      "reason": "Lost trades30 and misallocation10; transfer75 cancels",
+      "status": "PASS"
+    },
+    {
+      "id": "42617",
+      "reason": "Budget at four Y",
+      "status": "PASS"
+    },
+    {
+      "id": "42701",
+      "reason": "All-X has greater utility per dollar",
+      "status": "PASS"
+    },
+    {
+      "id": "PMC-COP-M-110",
+      "reason": "Incremental gain ignores sunk40000",
+      "status": "PASS"
+    },
+    {
+      "id": "PMC-COP-H-115",
+      "reason": "Incremental gain ignores sunk25000",
+      "status": "PASS"
+    },
+    {
+      "id": "P62E-COP-EL-001",
+      "reason": "Subtract both implicit costs",
+      "status": "PASS"
+    },
+    {
+      "id": "42389",
+      "reason": "Compare incremental revenue with wage100",
+      "status": "PASS"
+    },
+    {
+      "id": "42765",
+      "reason": "Income-share ratio",
+      "status": "PASS"
+    },
+    {
+      "id": "P62I-OLI-LB-011",
+      "reason": "Both mergers leave four firms; CR4=100%",
+      "status": "PASS"
+    },
+    {
+      "id": "P62F-PC-LB-001",
+      "reason": "Fixed fee changes profit, not maximizing Q4",
+      "status": "PASS"
+    },
+    {
+      "id": "P62F-PC-LB-005",
+      "reason": "Distinct variant retains Q5 and its own profit values",
+      "status": "PASS"
+    },
+    {
+      "id": "P62F-PC-LB-004",
+      "reason": "Improvement permits first unit; second MC13 exceeds price9",
+      "status": "PASS"
+    },
+    {
+      "id": "42570",
+      "reason": "BC1 cereal price4",
+      "status": "PASS"
+    },
+    {
+      "id": "42576",
+      "reason": "BC1 yogurt price8",
+      "status": "PASS"
+    },
+    {
+      "id": "42582",
+      "reason": "Income falls to32 with cereal price8",
+      "status": "PASS"
+    },
+    {
+      "id": "42343",
+      "reason": "Productivity and price changes leave VMP unchanged",
+      "status": "PASS"
+    }
+  ],
+  "graphFacts": {
+    "LABOR-02.webp": [
+      4000,
+      20,
+      6000,
+      25
+    ],
+    "LABOR-03.webp": [
+      4000,
+      20,
+      2000,
+      15
+    ],
+    "LABOR-04.webp": [
+      4000,
+      20,
+      6000,
+      15
+    ],
+    "LABOR-05.webp": [
+      4000,
+      20,
+      2000,
+      25
+    ],
+    "LABOR-09.webp": [
+      4000,
+      20,
+      8000,
+      20
+    ]
+  },
+  "graphChronologyCandidates": 35
+}

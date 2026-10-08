@@ -1,7 +1,7 @@
 'use strict';
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
 const core=require('../composer-core.js'),h=require('./composer-test-helpers.js'),con=require('./composer-integrity-contracts.js'),approved=require('./macro-voice3-revisions.js'),style=require('./faculty-prose-candidates.js');
-const lib=h.loadComposerLibrary();approved.assertCurrentLibrary(lib);
+const newest=require('./micro-voice3-revisions.js'),newestLive=h.loadComposerLibrary();newest.assertCurrentLibrary(newestLive);const lib=newest.beforeMicroVoice3Library(newestLive);approved.assertCurrentLibrary(lib);
 const before=approved.beforeVoice3Library(lib),ledger=approved.macroVoice3Ledger,root=path.resolve(__dirname,'../../..'),out=path.join(root,'audit_tools/macro_voice3_20261007');
 const now=new Map(con.questionRecords(lib).map(r=>[String(r.question.id),r.question])),old=new Map(con.questionRecords(before).map(r=>[String(r.question.id),r.question]));
 const area=require('../course-area-model.js').create(lib.registry.concepts);
@@ -22,7 +22,7 @@ for(const c of ledger.changes){
  for(const f of ['image','graphDescription','imageAlt','graphRequired','instructionalRole','checkpointPool','sourcePool','originalSourcePool','primarySkill','requiredConceptIds','modeAllowlist'])assert.deepEqual(c.afterRecord[f],c.beforeRecord[f]);
 }
 assert.deepEqual(lib.assetInventory,before.assetInventory);
-con.assertCanonicalIntegrity(lib,{registry:JSON.parse(fs.readFileSync(path.join(root,'build/faculty-build-composer/data/composer_registry.json'),'utf8')),manifest:JSON.parse(fs.readFileSync(path.join(root,'build/faculty-build-composer/data/composer_library_manifest.json'),'utf8')),readBytes:a=>fs.readFileSync(path.join(root,'build/faculty-build-composer/data',a.runtimePath))});
+con.assertCanonicalIntegrity(lib,{registry:lib.registry,manifest:{...JSON.parse(fs.readFileSync(path.join(root,'build/faculty-build-composer/data/composer_library_manifest.json'),'utf8')),librarySha256:lib.librarySha256},readBytes:a=>fs.readFileSync(path.join(root,'build/faculty-build-composer/data',a.runtimePath))});
 const q=id=>now.get(id),c=id=>ledger.changes.find(c=>c.id===id),near=(a,b)=>assert(Math.abs(a-b)<1e-9);
 const numerical=[];function check(id,fn,reason){fn();numerical.push({id,reason,status:'PASS'});}
 for(const [id,i,f]of [['LG-Q-4004',30,60],['P52B-S4-MPTX-B1-003',70,140],['PM2C3-MPTX-LB-001',110,220]])check(id,()=>{assert.equal(3*i-f,i);assert.equal(q(id).options[c(id).correctIndex],`AD rises by $${i}.`);},'Multiply investment by3; subtract the already-total fiscal effect once.');
