@@ -1,7 +1,7 @@
 'use strict';
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
 const h=require('./composer-test-helpers.js'),c=require('./composer-integrity-contracts.js'),core=require('../composer-core.js'),approved=require('./macro-closure-revisions.js');
-const voice=require('./macro-voice-revisions.js'),pass2=require('./macro-voice2-revisions.js'),latest=require('./micro-voice-revisions.js'),live=h.loadComposerLibrary();latest.assertCurrentLibrary(live);
+const voice=require('./macro-voice-revisions.js'),pass2=require('./macro-voice2-revisions.js'),latest=require('./micro-voice-revisions.js'),post=require('./macro-voice3-revisions.js'),postLive=h.loadComposerLibrary();post.assertCurrentLibrary(postLive);const live=post.beforeVoice3Library(postLive);latest.assertCurrentLibrary(live);
 const actual=latest.beforeMicroVoiceLibrary(live);pass2.assertCurrentLibrary(actual);
 const current=pass2.beforeVoice2Library(actual);voice.assertCurrentLibrary(current);
 // Preserve the exact historical closure checks after independently verifying

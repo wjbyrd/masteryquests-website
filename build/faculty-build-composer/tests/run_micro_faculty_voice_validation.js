@@ -1,7 +1,7 @@
 'use strict';
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
 const core=require('../composer-core.js'),h=require('./composer-test-helpers.js'),con=require('./composer-integrity-contracts.js'),approved=require('./micro-voice-revisions.js');
-const lib=h.loadComposerLibrary();approved.assertCurrentLibrary(lib);
+const post=require('./macro-voice3-revisions.js'),postLive=h.loadComposerLibrary();post.assertCurrentLibrary(postLive);const lib=post.beforeVoice3Library(postLive);approved.assertCurrentLibrary(lib);
 const before=approved.beforeMicroVoiceLibrary(lib),ledger=approved.microVoiceLedger;
 const now=new Map(con.questionRecords(lib).map(r=>[String(r.question.id),r.question])),old=new Map(con.questionRecords(before).map(r=>[String(r.question.id),r.question]));
 const root=path.resolve(__dirname,'../../..'),out=path.join(root,'audit_tools/micro_voice_20261007');
@@ -29,7 +29,7 @@ for(const c of ledger.changes){
  assert.deepEqual(c.afterRecord.options.map((s,i)=>hash(s)===c.afterRecord.aHash?i:-1).filter(i=>i>=0),[c.correctIndex]);
 }
 assert.deepEqual(lib.assetInventory,before.assetInventory);
-con.assertCanonicalIntegrity(lib,{registry:JSON.parse(fs.readFileSync(path.join(root,'build/faculty-build-composer/data/composer_registry.json'),'utf8')),manifest:JSON.parse(fs.readFileSync(path.join(root,'build/faculty-build-composer/data/composer_library_manifest.json'),'utf8')),readBytes:a=>fs.readFileSync(path.join(root,'build/faculty-build-composer/data',a.runtimePath))});
+con.assertCanonicalIntegrity(lib,{registry:lib.registry,manifest:{...JSON.parse(fs.readFileSync(path.join(root,'build/faculty-build-composer/data/composer_library_manifest.json'),'utf8')),librarySha256:lib.librarySha256},readBytes:a=>fs.readFileSync(path.join(root,'build/faculty-build-composer/data',a.runtimePath))});
 assert.equal(now.get('42367').q,'At a $20 minimum wage, what labor surplus does the graph show?');assert.doesNotMatch(now.get('42367').q,/textbook model/);
 for(const id of ['42367','42334','42737'])assert.equal(now.get(id).canonicalDifficulty,'hard');
 assert.equal(now.get('42334').q.split('?').length,2);assert.match(now.get('42334').feedback,/1\.25 × 0\.90 = 1\.125/);assert.match(now.get('42334').feedback,/4,000.*8,000/);

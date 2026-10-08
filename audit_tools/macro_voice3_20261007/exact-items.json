@@ -1,0 +1,397 @@
+[
+  {
+    "id": "43313",
+    "q": {
+      "id": "43313",
+      "sourceGame": "saving-investment-loanable-funds-authoring",
+      "q": "What can the marked new equilibrium tell us that the directions of the two shifts alone cannot?",
+      "options": [
+        "The real rate is 8%; this is the particular result of the relative supply and demand shifts drawn.",
+        "The real rate is 6%; this is the particular result of the relative supply and demand shifts drawn.",
+        "The real rate is 6%; every simultaneous rightward supply and demand shift must leave rates unchanged.",
+        "The real rate is 6%; the quantity increase proves that only saving supply changed."
+      ],
+      "tag": "simultaneous-loanable-funds-shifts",
+      "type": "graph_integration",
+      "objective": "SLF9",
+      "difficulty": "medium",
+      "conceptCluster": "saving-investment-and-loanable-funds",
+      "primarySkill": "analyze_simultaneous_loanable_funds_shifts",
+      "secondarySkills": [],
+      "repairSkill": "analyze_simultaneous_loanable_funds_shifts",
+      "commonError": "Incorrectly concludes “The quantity axis fixes every interest rate” in this loanable funds shifts task.",
+      "feedback": "B is at 6%, the same rate as A. Theory alone leaves the rate effect of the two increases ambiguous; their actual sizes and slopes in this figure locate the new intersection.",
+      "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
+      "aHash": "6ffbe59ea11f970633941bec39d5079dec6af2fe7c29567972a45af901292607",
+      "image": "question-assets/saving-investment-and-loanable-funds/LOANABLE-08.webp",
+      "imageAlt": "Loanable-funds graph with S0, S1, D0, D1 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 4) and (40, 6). The dashed red line labeled S1 slopes upward through (0, 2) and (80, 6). The solid blue line labeled D0 slopes downward through (0, 8) and (160, 0). The dashed blue line labeled D1 slopes downward through (0, 10) and (200, 0). Point A marks the S0–D0 intersection at (40, 6). Point B marks the S1–D1 intersection at (80, 6). A numbered grid provides the coordinate scale.",
+      "graphRequired": true,
+      "loanableFundsScenario": "Saving and investment demand both increase",
+      "canonicalId": "43313",
+      "sourceId": 43313,
+      "sourceChapter": [],
+      "sourcePool": "medium",
+      "sourceHash": "bb12f554f1b65e9649c4f28f62e64344a95a75ad8ad45c192d61751cb74be154",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "saving-investment-loanable-funds-authoring",
+          "sourceFile": "build/faculty-build-composer/authoring/saving_investment_loanable_funds_question_pool_author.mjs",
+          "sourceGlobal": "productionQuestions",
+          "sourcePool": "medium",
+          "routeKey": "SLF9",
+          "sourceRecordOrder": 145,
+          "sourceId": 43313,
+          "sourceHash": "bb12f554f1b65e9649c4f28f62e64344a95a75ad8ad45c192d61751cb74be154",
+          "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
+        }
+      ],
+      "primaryConceptId": "loanable-funds-shifts",
+      "secondaryConceptIds": [],
+      "familyConceptId": "saving-fiscal-foundations",
+      "subtopicIds": [
+        "loanable-funds-shifts"
+      ],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "sourcePrimaryConceptId": "saving-investment-and-loanable-funds"
+    },
+    "areas": [
+      "macro"
+    ],
+    "placements": [
+      {
+        "conceptId": "loanable-funds-shifts",
+        "pool": "medium"
+      }
+    ],
+    "key": 1,
+    "marketGateDerived": false,
+    "metrics": {
+      "stemWords": 17,
+      "setupWords": 0,
+      "stemFlags": [],
+      "flags": [],
+      "optionWords": [
+        18,
+        18,
+        16,
+        14
+      ],
+      "correctWords": 18,
+      "medianDistractorWords": 16,
+      "lengthOutlier": false,
+      "lengthReason": null
+    },
+    "flags": [
+      "AI abstraction",
+      "Noun stack",
+      "Graph state",
+      "Faculty seed"
+    ]
+  },
+  {
+    "id": "P52B-S1-LRPC-L-002",
+    "q": {
+      "id": "P52B-S1-LRPC-L-002",
+      "q": "A matching reform lowers the natural unemployment rate from 6.4 percent to 5.6 percent. At the same time, an unexpected demand expansion lowers actual unemployment to 4.9 percent. Later inflation expectations fully adjust while the reform remains in place and no new surprises occur. Which decomposition separates the durable change from the initial cyclical change?",
+      "options": [
+        "LRPC shifts left by 1.5 percentage points; actual unemployment at 4.9 percent is the new permanent natural rate.",
+        "LRPC stays at 6.4 percent; both the reform and demand expansion are temporary movements along SRPC.",
+        "LRPC shifts to 5.6 percent, but expectations adjustment permanently fixes unemployment at 4.9 percent.",
+        "LRPC shifts left by 0.8 percentage point; the initial gap is 0.7 point below the new natural rate, and long-run unemployment returns to 5.6 percent."
+      ],
+      "tag": "lrpc",
+      "type": "multi-step",
+      "objective": "LO36.2",
+      "difficulty": "legendary",
+      "conceptCluster": "phillips_curve",
+      "primarySkill": "lrpc_natural_rate_shift",
+      "secondarySkills": [],
+      "repairSkill": "lrpc_natural_rate_shift",
+      "commonError": "Confusing a change in the natural rate with a movement caused by inflation.",
+      "feedback": "The structural shift is 6.4 − 5.6 = 0.8 percentage point. Actual unemployment is temporarily 5.6 − 4.9 = 0.7 point below the new natural rate. Once the demand surprise disappears, the long-run anchor is 5.6, not the old 6.4 or temporary 4.9.",
+      "aHash": "f4b63741c92ca3edc9a1eae4b5f01b6f1d9f73363ad7d0f854900dc92b6fa339",
+      "canonicalId": "P52B-S1-LRPC-L-002",
+      "sourceId": 5220163,
+      "sourceGame": "phase5.2b-stage1-rescue",
+      "sourceChapter": [],
+      "sourcePool": "legendary",
+      "sourceHash": "12a7abbc8e782e875548eee2d0362435d6859e37f0b8362bb036d987b22ed17f",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "phase5.2b-stage1-rescue",
+          "sourceFile": "phase5.2b_stage1_authoring_questions.json",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "legendary",
+          "routeKey": null,
+          "sourceRecordOrder": 3,
+          "sourceId": 5220163,
+          "sourceHash": "12a7abbc8e782e875548eee2d0362435d6859e37f0b8362bb036d987b22ed17f"
+        }
+      ],
+      "primaryConceptId": "long-run-phillips-curve",
+      "secondaryConceptIds": [],
+      "instructionalRole": "legendary",
+      "canonicalDifficulty": "legendary",
+      "originalSourcePool": "legendary",
+      "originalBossTier": null
+    },
+    "areas": [
+      "macro"
+    ],
+    "placements": [
+      {
+        "conceptId": "long-run-phillips-curve",
+        "pool": "legendary"
+      }
+    ],
+    "key": 3,
+    "marketGateDerived": false,
+    "metrics": {
+      "stemWords": 55,
+      "setupWords": 44,
+      "stemFlags": [],
+      "flags": [],
+      "optionWords": [
+        18,
+        16,
+        14,
+        25
+      ],
+      "correctWords": 25,
+      "medianDistractorWords": 16,
+      "lengthOutlier": true,
+      "lengthReason": "Key >1.5× median and ≥6 words longer"
+    },
+    "flags": [
+      "AI abstraction",
+      "Answer length",
+      "Faculty seed"
+    ]
+  },
+  {
+    "id": "LG-Q-4004",
+    "q": {
+      "id": "LG-Q-4004",
+      "q": "A textbook monetary expansion lowers the interest rate, raising investment $30. A separate fiscal tightening reduces AD by a total of $60 after induced effects. With a spending multiplier of 3 on investment, what is the net AD effect?",
+      "options": [
+        "AD falls $90; multiply the already-total fiscal offset again",
+        "AD rises $150; add both effects as expansionary",
+        "AD rises $30; the multiplied investment effect exceeds the stated total fiscal offset",
+        "AD falls $30; compare the unmultiplied investment change with the total fiscal effect"
+      ],
+      "tag": "monetary_policy_ad",
+      "type": "analysis",
+      "objective": "35.2",
+      "difficulty": "finalboss",
+      "conceptCluster": "monetary_policy_transmission",
+      "primarySkill": "trace_expansionary_monetary_policy_graph",
+      "secondarySkills": [
+        "money_supply",
+        "interest_rate",
+        "investment"
+      ],
+      "repairSkill": "expansionary_monetary_policy_chain",
+      "commonError": "Incorrectly concludes “AD falls $90; multiply the already-total fiscal offset again” in this monetary policy transmission task.",
+      "feedback": "The investment impulse contributes 3×30=90; subtract the total fiscal contraction 60 once. Net change=30. The two inputs are expressed at different stages and must be compared consistently.",
+      "aHash": "833c8a4b7f56f1aa785b7a5a18f578196c8b53f400f7656efaf7a74ea6c9f1d3",
+      "schemaVersion": "2.0.0-pilot",
+      "questionId": "LG-Q-4004",
+      "originalLegacyId": 4004,
+      "sourceGlobal": "questionBanks",
+      "sourcePool": "finalBoss",
+      "sourceRecordOrder": 4,
+      "domainId": "ECON",
+      "conceptId": "ECON-MAC-MONETARY-POLICY-TRANSMISSION",
+      "outcomeIds": [
+        "OUT-MAC-MONETARY-POLICY-TRANSMISSION-01"
+      ],
+      "skillId": "trace_expansionary_monetary_policy_graph",
+      "secondarySkillIds": [
+        "money_supply",
+        "interest_rate",
+        "investment"
+      ],
+      "repairSkillId": "expansionary_monetary_policy_chain",
+      "questionType": "finalboss_scaffold_graph_application",
+      "assessmentTier": "hard",
+      "poolRole": "boss",
+      "runtimeRole": "final-boss",
+      "provenance": {
+        "sourceGame": "liquidityGrid",
+        "sourceBank": "liquidity-grid-student",
+        "sourceGlobal": "questionBanks",
+        "sourcePool": "finalBoss",
+        "sourceRecordOrder": 4,
+        "legacyId": 4004,
+        "legacyObjective": "35.2"
+      },
+      "answerFormat": "aHash",
+      "resourceMatching": {
+        "sourceObjective": "35.2",
+        "objectiveKey": "LO35.2",
+        "sourceAccurateRecommendationHook": false
+      },
+      "source": {
+        "bankId": "liquidity-grid-student",
+        "legacyId": 4004,
+        "legacyObjective": "35.2",
+        "legacyPool": "questionBanks.finalBoss",
+        "sourceRecordOrder": 4,
+        "sourceGame": "liquidityGrid"
+      },
+      "bossRole": "final-boss",
+      "graphImageMetadata": {
+        "present": true,
+        "asset": "ad_ms_md.webp",
+        "sourceType": "finalboss_scaffold_graph_application"
+      },
+      "canonicalId": "LG-Q-4004",
+      "sourceId": 4004,
+      "sourceGame": "liquidity-grid",
+      "sourceChapter": [
+        35,
+        2
+      ],
+      "sourceHash": "8905fe22c167d025a4574b3813d23fd18c245e4b80e6f639192b755213413e57",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "liquidity-grid",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\liquidity-grid\\package\\questions.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "finalBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 4,
+          "sourceId": 4004,
+          "sourceHash": "8905fe22c167d025a4574b3813d23fd18c245e4b80e6f639192b755213413e57"
+        }
+      ],
+      "primaryConceptId": "monetary-policy-transmission",
+      "secondaryConceptIds": [],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "finalBoss",
+      "originalBossTier": "finalBoss"
+    },
+    "areas": [
+      "macro"
+    ],
+    "placements": [
+      {
+        "conceptId": "monetary-policy-transmission",
+        "pool": "boss"
+      }
+    ],
+    "key": 2,
+    "marketGateDerived": false,
+    "metrics": {
+      "stemWords": 39,
+      "setupWords": 0,
+      "stemFlags": [],
+      "flags": [],
+      "optionWords": [
+        9,
+        8,
+        13,
+        13
+      ],
+      "correctWords": 13,
+      "medianDistractorWords": 9,
+      "lengthOutlier": false,
+      "lengthReason": null
+    },
+    "flags": [
+      "Meta/textbook",
+      "Faculty seed"
+    ]
+  },
+  {
+    "id": "43196",
+    "q": {
+      "id": "43196",
+      "sourceGame": "saving-investment-loanable-funds-authoring",
+      "q": "Output rises by $100, consumption rises by $70, and government purchases rise by $10. What happens to national saving and loanable-funds supply?",
+      "options": [
+        "National saving rises by $20, so loanable-funds supply shifts right",
+        "National saving falls by $20, so loanable-funds supply shifts left",
+        "National saving rises by $180, so investment demand shifts right",
+        "National saving is unchanged because output and spending all increased"
+      ],
+      "tag": "private-public-national-saving",
+      "type": "integration",
+      "objective": "SLF2",
+      "difficulty": "hard",
+      "conceptCluster": "saving-investment-and-loanable-funds",
+      "primarySkill": "calculate_national_saving",
+      "secondarySkills": [],
+      "repairSkill": "calculate_national_saving",
+      "commonError": "Incorrectly concludes “National saving falls by $20, so loanable-funds supply shifts left” in this saving and investment identities task.",
+      "feedback": "Using S = Y − C − G, the change is +100 − 70 − 10 = +$20. Higher national saving shifts the loanable-funds supply curve right.",
+      "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
+      "aHash": "8558700a5b1ecd3e8fcdc60f8cde94aaf5372ed59a8eedbdd02b3124908c59b3",
+      "canonicalId": "43196",
+      "sourceId": 43196,
+      "sourceChapter": [],
+      "sourcePool": "hard",
+      "sourceHash": "895d6c94fc50fb82b7db738af43b1b87932de3370b05c4b25df232a1e0c972ad",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "saving-investment-loanable-funds-authoring",
+          "sourceFile": "build/faculty-build-composer/authoring/saving_investment_loanable_funds_question_pool_author.mjs",
+          "sourceGlobal": "productionQuestions",
+          "sourcePool": "hard",
+          "routeKey": "SLF2",
+          "sourceRecordOrder": 28,
+          "sourceId": 43196,
+          "sourceHash": "895d6c94fc50fb82b7db738af43b1b87932de3370b05c4b25df232a1e0c972ad",
+          "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
+        }
+      ],
+      "primaryConceptId": "saving-and-investment-identities",
+      "secondaryConceptIds": [],
+      "familyConceptId": "saving-fiscal-foundations",
+      "subtopicIds": [
+        "saving-and-investment-identities"
+      ],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "hard",
+      "originalBossTier": null,
+      "sourcePrimaryConceptId": "saving-investment-and-loanable-funds"
+    },
+    "areas": [
+      "macro"
+    ],
+    "placements": [
+      {
+        "conceptId": "saving-and-investment-identities",
+        "pool": "hard"
+      }
+    ],
+    "key": 0,
+    "marketGateDerived": false,
+    "metrics": {
+      "stemWords": 22,
+      "setupWords": 14,
+      "stemFlags": [],
+      "flags": [],
+      "optionWords": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "correctWords": 10,
+      "medianDistractorWords": 10,
+      "lengthOutlier": false,
+      "lengthReason": null
+    },
+    "flags": [
+      "Noun stack",
+      "Faculty seed"
+    ]
+  }
+]

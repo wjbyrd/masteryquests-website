@@ -1,0 +1,20 @@
+'use strict';
+const fs=require('fs'),path=require('path'),crypto=require('crypto'),assert=require('assert/strict');
+const root=path.resolve(__dirname,'../..'),dir=path.join(root,'build/faculty-build-composer');
+const sha=s=>crypto.createHash('sha256').update(s).digest('hex'),source=fs.readFileSync(path.join(dir,'data/composer_library.js'));
+const lib=JSON.parse(source.toString().slice('window.MQ_COMPOSER_LIBRARY='.length).trim().slice(0,-1));
+const core=require(path.join(dir,'composer-core.js')),con=require(path.join(dir,'tests/composer-integrity-contracts.js')),style=require(path.join(dir,'tests/faculty-prose-candidates.js')),area=require(path.join(dir,'course-area-model.js')).create(lib.registry.concepts);
+const all=new Map();for(const r of con.questionRecords(lib)){const id=String(r.question.id);if(all.has(id))assert.deepEqual(all.get(id).q,r.question);else all.set(id,{id,q:r.question,areas:new Set()});}
+for(const cid of Object.keys(lib.concepts))for(const q of core.ContentScope.allQuestions(core.resolveConceptModule(lib,cid)))for(const a of area.areasFor(cid))all.get(String(q.id)).areas.add(a);
+const pages=JSON.parse(fs.readFileSync(path.join(root,'faculty_exports/validation_summary.json'),'utf8'));
+assert.equal(pages.source_sha256,sha(source),'Current PDF page map must match canonical source');
+const patterns={
+ 'Meta/textbook':/\btextbook\b/i,
+ 'AI abstraction':/\b(?:decomposition|decomposes|durable|configuration|reconciliation|formulation|inference separates|relationship integrates|channel decomposition|particular result of|(?:persistent|lasting|structural) component)\b/i,
+ 'Noun stack':/\b(?:(?:loanable[- ]funds|LF)[- ](?:supply|demand)|saving[- ]supply|investment-demand (?:shift|effect)|money-supply effect|currency[- ]supply (?:effect|curve|schedule)|policy-channel|spending-response|(?:consumer|producer|total)[- ]surplus[- ](?:effect|comparison|calculation)|(?:welfare|incidence|equilibrium|marginal)[- ](?:area|quantity|price|cost)[- ](?:effect|comparison|change|calculation)|(?:fixed|variable)[- ]cost[- ](?:effect|comparison|change)|(?:resource|opportunity)[- ]cost[- ]adjustment)\b/i,
+ 'Graph state':/\b(?:(?:new|original|initial|final|marked) equilibrium|after the shift|following the change|moves? (?:to|from) [A-Z]|(?:point|equilibrium) [AB]|new|original|initial|final|after|following)\b/i
+};
+const records=[...all.values()].filter(r=>r.areas.has('micro')).map(r=>{const key=r.q.options.findIndex(o=>sha(core.normalizeAnswerText(o))===r.q.aHash);assert(key>=0);const text=[r.q.q,...r.q.options].join(' '),metrics=style.screen(r.q,key),flags=Object.entries(patterns).filter(([n,re])=>(n!=='Graph state'||r.q.image)&&re.test(text)).map(([n])=>n);if(metrics.lengthOutlier)flags.push('Answer length');if(metrics.medianDistractorWords<=10&&metrics.correctWords>=metrics.medianDistractorWords+6&&/\b(?:because|since|so|therefore|which means|implying|while|despite)\b/i.test(r.q.options[key]))flags.push('Explanatory key');return{...r,areas:[...r.areas].sort(),key,page:pages.disciplines.micro.question_pages[r.id],marketGateDerived:(r.q.sourceOccurrences||[]).some(s=>/market.?gate/i.test([s.sourceFile,s.sourceGame,s.sourceGlobal].join(' ')))||/market.?gate/i.test(r.q.sourceGame||''),metrics,flags};});
+const candidates=records.filter(r=>r.flags.length),write=(n,x)=>fs.writeFileSync(path.join(__dirname,n),JSON.stringify(x,null,2)+'\n');
+write('records.json',records);write('candidates.json',candidates);
+const summary={sourceSha256:sha(source),librarySha256:lib.librarySha256,micro:records.length,candidates:candidates.length,shared:candidates.filter(r=>r.areas.length>1).length,marketGate:candidates.filter(r=>r.marketGateDerived).length,patterns:Object.fromEntries([...Object.keys(patterns),'Answer length','Explanatory key'].map(k=>[k,candidates.filter(r=>r.flags.includes(k)).length])),protectedFiles:Object.fromEntries(['composer_library.js','composer_registry.json','composer_library_manifest.json','faculty-outcomes.js'].map(n=>[n,sha(fs.readFileSync(path.join(dir,'data',n)))]))};write('scan-summary.json',summary);console.log(JSON.stringify(summary));

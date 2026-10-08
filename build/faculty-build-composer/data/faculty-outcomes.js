@@ -2,7 +2,7 @@
 (function(root,data){if(typeof module==='object'&&module.exports)module.exports=data;else root.MQFacultyOutcomePolicy=data;})(typeof globalThis!=='undefined'?globalThis:this,{
   "schemaVersion": 1,
   "policyVersion": "faculty-lo-1",
-  "librarySha256": "0fbe5ff4beb0ab909c300d8b8cd6456d8c392b6fb52910be13ed42d8a9f4d66a",
+  "librarySha256": "4467bf9ce0e3cc007f4c996b6d0c9ca9a68995b727b961e53f7457033fb323c0",
   "concepts": {
     "ad-as-equilibrium-and-output-gaps": {
       "outcomes": [
@@ -6762,9 +6762,9 @@
             "difficulty": {
               "easy": 8,
               "medium": 13,
-              "hard": 7,
+              "hard": 8,
               "elite": 2,
-              "legendary": 2
+              "legendary": 1
             },
             "supportedModes": [
               "standard",
@@ -13701,5 +13701,5 @@
       "hidden": false
     }
   },
-  "policySha256": "ca388c6a32fac67dc6ca2bb213c14a202a12e642b5c9d22560ee0705445bdd53"
+  "policySha256": "5129acc6b16e9d4d9fe86d9cd09d7a060e65aa94c19b85fadcd5e4c47c1a0f5d"
 });
