@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "onlyTwoQuestionsChanged": true,
+  "originalFeedbackPreserved": true,
+  "librarySha256": "ca58924188abfe6a274244df230dca1128f6af5207512de9f9dd0efc09ece457",
+  "questions": [
+    {
+      "id": "P62I-OLI-EL-022",
+      "tier": "elite",
+      "cooperationPV": 150,
+      "cheatingPV": 83,
+      "key": "D",
+      "plausibleCalculationErrors": 3
+    },
+    {
+      "id": "P62I-OLI-L-052",
+      "tier": "legendary",
+      "cooperationPV": 65,
+      "cheatingPV": 33,
+      "key": "D",
+      "plausibleCalculationErrors": 3
+    }
+  ],
+  "integrationChecks": {
+    "status": "PASS",
+    "questionsAudited": 9777,
+    "presets": 13,
+    "exporterUnitTests": 25
+  }
+}

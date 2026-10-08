@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Targeted pedagogical distractor repair; no economic correction or tier change.",
+  "beforeLibrarySha256": "13c298324115cca4003c030db9d430c8e15fb93531ffb306991163d3fe58cfab",
+  "afterLibrarySha256": "ca58924188abfe6a274244df230dca1128f6af5207512de9f9dd0efc09ece457",
+  "changes": [
+    {
+      "id": "P62I-OLI-EL-022",
+      "beforeRecord": {
+        "id": "P62I-OLI-EL-022",
+        "sourceGame": "oligopoly",
+        "q": "Assume the firms interact indefinitely. Cooperating pays 15 each period, starting now. Cheating pays 20 now, followed by 7 every period forever starting next period. Multiply each future payoff by 0.90 for every period ahead. Which strategy gives the larger present value?",
+        "options": [
+          "Cheat and cooperate simultaneously",
+          "The choices have equal present value",
+          "No comparison is possible without HHI",
+          "Continue cooperating"
+        ],
+        "tag": "oligopoly",
+        "type": "application",
+        "objective": "OLI.4",
+        "difficulty": "elite",
+        "conceptCluster": "micro_oligopoly",
+        "primarySkill": "repeated_games",
+        "secondarySkills": [],
+        "repairSkill": "repeated_games",
+        "commonError": "assumes_repetition_guarantees_cooperation",
+        "feedback": "Cooperation: 15/(1−0.90) = 150.00. Cheating: 20 + 0.90×7/(1−0.90) = 83.00. Cooperate to receive the larger present value; the difference is 67.00. Current payoffs are not discounted; punishment begins next period and continues indefinitely.",
+        "aHash": "1d0e864314082e531eaed889c4e1a6ec6e5d11c5df0e7468fd5fcc9bda76ba39",
+        "canonicalId": "P62I-OLI-EL-022",
+        "sourceId": 720321,
+        "sourceChapter": [
+          "oligopoly"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "3ac0edc7de925d630c2b8bf16ba6129b00ff2aa020b1596660b8bc7c7167c0bf",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2i-oligopoly-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "repeated_games",
+            "sourceRecordOrder": 21,
+            "sourceId": 720321,
+            "sourceHash": "3ac0edc7de925d630c2b8bf16ba6129b00ff2aa020b1596660b8bc7c7167c0bf"
+          }
+        ],
+        "primaryConceptId": "oligopoly",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "oligopoly",
+        "subtopicIds": [
+          "oligopoly-dynamic-strategy"
+        ]
+      },
+      "afterRecord": {
+        "id": "P62I-OLI-EL-022",
+        "sourceGame": "oligopoly",
+        "q": "Assume the firms interact indefinitely. Cooperating pays 15 each period, starting now. Cheating pays 20 now, followed by 7 every period forever starting next period. Multiply each future payoff by 0.90 for every period ahead. Which present-value comparison and strategy choice are correct?",
+        "options": [
+          "Cheat: cooperation PV = 150.00; cheating PV = 200.00.",
+          "Cooperate: cooperation PV = 150.00; cheating PV = 90.00.",
+          "Cooperate: cooperation PV = 135.00; cheating PV = 83.00.",
+          "Cooperate: cooperation PV = 150.00; cheating PV = 83.00."
+        ],
+        "tag": "oligopoly",
+        "type": "application",
+        "objective": "OLI.4",
+        "difficulty": "elite",
+        "conceptCluster": "micro_oligopoly",
+        "primarySkill": "repeated_games",
+        "secondarySkills": [],
+        "repairSkill": "repeated_games",
+        "commonError": "assumes_repetition_guarantees_cooperation",
+        "feedback": "Cooperation: 15/(1−0.90) = 150.00. Cheating: 20 + 0.90×7/(1−0.90) = 83.00. Cooperate to receive the larger present value; the difference is 67.00. Current payoffs are not discounted; punishment begins next period and continues indefinitely.",
+        "aHash": "5317f8681f24864624231f2955b57fefae8e91abdd027d36080204f4a9c37c52",
+        "canonicalId": "P62I-OLI-EL-022",
+        "sourceId": 720321,
+        "sourceChapter": [
+          "oligopoly"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "3ac0edc7de925d630c2b8bf16ba6129b00ff2aa020b1596660b8bc7c7167c0bf",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2i-oligopoly-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "repeated_games",
+            "sourceRecordOrder": 21,
+            "sourceId": 720321,
+            "sourceHash": "3ac0edc7de925d630c2b8bf16ba6129b00ff2aa020b1596660b8bc7c7167c0bf"
+          }
+        ],
+        "primaryConceptId": "oligopoly",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "oligopoly",
+        "subtopicIds": [
+          "oligopoly-dynamic-strategy"
+        ]
+      },
+      "correctIndex": 3,
+      "fields": [
+        "q",
+        "options",
+        "aHash"
+      ],
+      "distractorRationales": [
+        "Treats the one-time cheating payoff as recurring forever: 20/(1-0.90).",
+        "Starts punishment now instead of next period: 20+7/(1-0.90).",
+        "Omits the current cooperation payoff: 0.90*15/(1-0.90)."
+      ]
+    },
+    {
+      "id": "P62I-OLI-L-052",
+      "beforeRecord": {
+        "id": "P62I-OLI-L-052",
+        "sourceGame": "oligopoly",
+        "q": "Assume the firms interact indefinitely. Cooperating pays 13 each period, starting now. Cheating pays 17 now, followed by 4 every period forever starting next period. Multiply each future payoff by 0.80 for every period ahead. Which strategy gives the larger present value?",
+        "options": [
+          "The two paths are equal",
+          "Cooperate and cheat simultaneously",
+          "The answer is determined by HHI",
+          "Cooperate"
+        ],
+        "tag": "oligopoly",
+        "type": "application",
+        "objective": "OLI.4",
+        "difficulty": "legendary",
+        "conceptCluster": "micro_oligopoly",
+        "primarySkill": "repeated_games",
+        "secondarySkills": [],
+        "repairSkill": "repeated_games",
+        "commonError": "assumes_repetition_guarantees_cooperation",
+        "feedback": "Cooperation: 13/(1−0.80) = 65.00. Cheating: 17 + 0.80×4/(1−0.80) = 33.00. Cooperate to receive the larger present value; the difference is 32.00. Current payoffs are not discounted; punishment begins next period and continues indefinitely.",
+        "aHash": "30a9caa9170d230fa6b5f305f4573f5590af84084ad21a3a7e6b5574afe82b19",
+        "canonicalId": "P62I-OLI-L-052",
+        "sourceId": 721051,
+        "sourceChapter": [
+          "oligopoly"
+        ],
+        "sourcePool": "legendary",
+        "sourceHash": "8f85f581d157a792985a5acad22ee33af26886f2860e2da7ea7dd9c5c71e4202",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2i-oligopoly-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "legendary",
+            "routeKey": "repeated_games",
+            "sourceRecordOrder": 51,
+            "sourceId": 721051,
+            "sourceHash": "8f85f581d157a792985a5acad22ee33af26886f2860e2da7ea7dd9c5c71e4202",
+            "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+          }
+        ],
+        "primaryConceptId": "oligopoly",
+        "secondaryConceptIds": [],
+        "instructionalRole": "legendary",
+        "canonicalDifficulty": "legendary",
+        "originalSourcePool": "legendary",
+        "originalBossTier": null,
+        "familyConceptId": "oligopoly",
+        "subtopicIds": [
+          "oligopoly-dynamic-strategy"
+        ],
+        "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+      },
+      "afterRecord": {
+        "id": "P62I-OLI-L-052",
+        "sourceGame": "oligopoly",
+        "q": "Assume the firms interact indefinitely. Cooperating pays 13 each period, starting now. Cheating pays 17 now, followed by 4 every period forever starting next period. Multiply each future payoff by 0.80 for every period ahead. Which present-value comparison and strategy choice are correct?",
+        "options": [
+          "Cooperate: cooperation PV = 65.00; cheating PV = 37.00.",
+          "Cooperate: cooperation PV = 52.00; cheating PV = 26.40.",
+          "Cheat: cooperation PV = 65.00; cheating PV = 85.00.",
+          "Cooperate: cooperation PV = 65.00; cheating PV = 33.00."
+        ],
+        "tag": "oligopoly",
+        "type": "application",
+        "objective": "OLI.4",
+        "difficulty": "legendary",
+        "conceptCluster": "micro_oligopoly",
+        "primarySkill": "repeated_games",
+        "secondarySkills": [],
+        "repairSkill": "repeated_games",
+        "commonError": "assumes_repetition_guarantees_cooperation",
+        "feedback": "Cooperation: 13/(1−0.80) = 65.00. Cheating: 17 + 0.80×4/(1−0.80) = 33.00. Cooperate to receive the larger present value; the difference is 32.00. Current payoffs are not discounted; punishment begins next period and continues indefinitely.",
+        "aHash": "e3a66d04a88df378b486d64d56d1f93f905a351701cf598a08d7bf921fc9469d",
+        "canonicalId": "P62I-OLI-L-052",
+        "sourceId": 721051,
+        "sourceChapter": [
+          "oligopoly"
+        ],
+        "sourcePool": "legendary",
+        "sourceHash": "8f85f581d157a792985a5acad22ee33af26886f2860e2da7ea7dd9c5c71e4202",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2i-oligopoly-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "legendary",
+            "routeKey": "repeated_games",
+            "sourceRecordOrder": 51,
+            "sourceId": 721051,
+            "sourceHash": "8f85f581d157a792985a5acad22ee33af26886f2860e2da7ea7dd9c5c71e4202",
+            "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+          }
+        ],
+        "primaryConceptId": "oligopoly",
+        "secondaryConceptIds": [],
+        "instructionalRole": "legendary",
+        "canonicalDifficulty": "legendary",
+        "originalSourcePool": "legendary",
+        "originalBossTier": null,
+        "familyConceptId": "oligopoly",
+        "subtopicIds": [
+          "oligopoly-dynamic-strategy"
+        ],
+        "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+      },
+      "correctIndex": 3,
+      "fields": [
+        "q",
+        "options",
+        "aHash"
+      ],
+      "distractorRationales": [
+        "Starts punishment now instead of next period: 17+4/(1-0.80).",
+        "Discounts both entire streams by an extra period: 0.80*65 and 0.80*33.",
+        "Treats the one-time cheating payoff as recurring forever: 17/(1-0.80)."
+      ]
+    }
+  ]
+}

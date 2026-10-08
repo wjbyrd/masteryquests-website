@@ -2,6 +2,19 @@
 const fs=require('fs'),path=require('path'),assert=require('assert/strict'),crypto=require('crypto');
 const prior=require('./micro-voice3-revisions.js'),core=require('../composer-core.js'),{questionRecords}=require('./composer-integrity-contracts.js');
 const ledger=JSON.parse(fs.readFileSync(path.resolve(__dirname,'../../../audit_tools/faculty_remediation_20261008/expectations.json'),'utf8'));
+// Keep the completed 175-record ledger immutable; layer the two-question
+// pedagogical follow-up onto the current expectations used by downstream tests.
+const distractors=JSON.parse(fs.readFileSync(path.resolve(__dirname,'../../../audit_tools/repeated_game_distractors_20261008/expectations.json'),'utf8'));
+assert.equal(distractors.beforeLibrarySha256,ledger.afterLibrarySha256);
+assert.deepEqual(distractors.changes.map(c=>c.id).sort(),['P62I-OLI-EL-022','P62I-OLI-L-052']);
+for(const c of distractors.changes){
+ const original=ledger.changes.find(x=>x.id===c.id);assert.deepEqual(c.beforeRecord,original.afterRecord);assert.equal(c.correctIndex,original.correctIndex);
+ assert.deepEqual(c.fields,['q','options','aHash']);const restored=structuredClone(c.afterRecord);for(const f of c.fields)restored[f]=structuredClone(c.beforeRecord[f]);assert.deepEqual(restored,c.beforeRecord);
+ original.afterRecord=structuredClone(c.afterRecord);original.fields=[...new Set([...original.fields,...c.fields])];
+}
+ledger.afterLibrarySha256=distractors.afterLibrarySha256;
+ledger.metadataChanges.find(c=>c.path.join('.')==='librarySha256').after=distractors.afterLibrarySha256;
+ledger.metadataChanges.find(c=>c.path.join('.')==='registry').after.librarySha256=distractors.afterLibrarySha256;
 const changes=new Map(ledger.changes.map(c=>[c.id,c])),sha=s=>crypto.createHash('sha256').update(s).digest('hex');
 assert.equal(changes.size,175);assert.equal(ledger.moves.length,7);
 for(const c of changes.values()){
@@ -24,6 +37,8 @@ function beforeFacultyValidationLibrary(current){
 }
 function assertCurrentLibrary(current){
  assert.equal(current.librarySha256,ledger.afterLibrarySha256);const payload=structuredClone(current);delete payload.librarySha256;delete payload.registry.librarySha256;assert.equal(sha(core.stableStringify(payload)),ledger.afterLibrarySha256);
+ const previous=structuredClone(payload);for(const r of questionRecords(previous)){const c=distractors.changes.find(c=>c.id===String(r.question.id));if(c){assert.deepEqual(r.question,c.afterRecord);Object.assign(r.question,structuredClone(c.beforeRecord));}}
+ assert.equal(sha(core.stableStringify(previous)),distractors.beforeLibrarySha256,'Only the two documented distractor edits separate the completed remediation and current library.');
  const restored=beforeFacultyValidationLibrary(current),b=structuredClone(restored);delete b.librarySha256;delete b.registry.librarySha256;assert.equal(sha(core.stableStringify(b)),ledger.beforeLibrarySha256);prior.assertCurrentLibrary(restored);
 }
 function applyApprovedRevisions(historical){const q=prior.applyApprovedRevisions(historical);if(!q||!changes.has(String(q.id)))return q;const c=changes.get(String(q.id));assert.deepEqual(q,c.beforeRecord);return structuredClone(c.afterRecord);}
