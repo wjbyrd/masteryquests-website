@@ -21,3 +21,5 @@
 
 .game-card[data-game=at-the-box-office] img{height:auto;object-fit:cover;object-position:50% 38%}
 .game-card[data-game=growth-realms] canvas{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;background:#071f3c;border-bottom:1px solid var(--line);image-rendering:pixelated}
+
+.category-heading{font-size:1.5rem;color:var(--teal);margin:8px 0 20px}.library-page section+section{margin-top:40px}
