@@ -1,0 +1,149 @@
+/* Scoped refinements: the uncertainty desk retains its established layout. */
+.intro-screen .masthead,.first-screen .masthead{padding:10px 32px}
+.intro-screen main{padding:32px;min-height:0}
+.intro-screen .hero{min-height:0;gap:42px;max-width:1120px;margin:0 auto;padding:32px 0;grid-template-columns:1.05fr 1fr}
+.intro-screen h1{font-size:clamp(2.7rem,4.4vw,4rem);margin-bottom:22px;line-height:1.08}
+.intro-screen .hero .lead{font-size:1.06rem;max-width:430px;margin-bottom:18px}
+.intro-screen .hero .primary{margin:0;padding:12px 25px}
+.intro-screen .desk-art{min-height:345px}
+.intro-screen .display-card{width:205px;height:280px;padding:18px}
+.intro-screen .display-card .art{height:115px}
+.intro-screen .display-card .art svg{height:105px}
+.intro-screen .display-card strong{font-size:1.3rem;margin:12px 0}
+.intro-screen .display-card span{font-size:.85rem}
+.intro-screen .site-footer{padding:18px 32px}
+.first-screen main{padding:14px 28px 22px;min-height:0}
+.first-heading{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:10px}
+.first-heading .eyebrow{margin:0 0 4px;font-size:.7rem}
+.first-heading h2{font-size:1.9rem;letter-spacing:-.035em;margin:0 0 4px}
+.first-heading p:last-child{font-size:.88rem;margin:0}
+.rate-badge{border:1px solid var(--line);border-radius:30px;padding:6px 12px;color:var(--gold);font-size:.8rem;white-space:nowrap}
+.first-budget{display:grid;grid-template-columns:repeat(3,1fr);background:#10252d;border:1px solid var(--line);border-radius:7px;margin-bottom:12px}
+.first-budget>div{padding:8px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-right:1px solid var(--line)}
+.first-budget>div:last-child{border:0}
+.first-budget span{font-size:.78rem;color:var(--muted)}
+.first-budget strong{font-size:1.2rem;font-variant-numeric:tabular-nums;color:var(--gold);white-space:nowrap}
+.first-budget strong span{font-size:inherit}
+.first-layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:18px;align-items:start}
+.first-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.first-card{height:202px;border-width:2px;border-color:#4a6870}
+.first-card:hover{transform:none}
+.compact-art{position:relative}
+.first-card .art{height:34px;justify-content:start;padding-left:12px;background:#ffffff04}
+.first-card .art svg{width:55px;height:34px;filter:none}
+.first-card .card-copy{padding:9px 12px 10px}
+.first-card .card-copy h3{font-size:1.14rem;line-height:1.12;font-weight:400;margin:0 0 7px;min-height:41px;display:flex;align-items:center}
+.first-card .card-stats{border:0;padding:0;margin:0 0 9px;flex-direction:row}
+.first-card .card-stats small{font-size:.73rem}
+.first-card .card-stats strong{font-size:.98rem}
+.first-card .card-stats>div:last-child{text-align:right}
+.first-card button{min-height:44px;font-size:.85rem;padding:7px 10px;margin-top:auto}
+.funded-label{position:absolute;right:10px;top:5px;color:var(--teal);font-size:.75rem;font-weight:700}
+.first-portfolio{padding:15px 16px;position:static}
+.first-portfolio h3{margin:0 0 12px;display:flex;align-items:center;justify-content:space-between}
+.first-portfolio h3 span{font-size:.8rem;color:var(--muted)}
+.first-portfolio .slot{margin:0 0 14px;padding:16px 12px}
+.selected-projects{padding:0;margin:0 0 10px;list-style:none}
+.selected-projects li{display:flex;justify-content:space-between;gap:8px;align-items:center;padding:7px 0;border-bottom:1px solid var(--line)}
+.selected-projects strong{display:block;font-size:.82rem;line-height:1.25;font-weight:500}
+.selected-projects small{font-size:.75rem;color:var(--muted)}
+.selected-projects button{width:auto;margin:0;padding:5px 8px;font-size:.75rem;min-height:44px;flex-shrink:0}
+.first-portfolio dl{margin:12px 0}
+.first-portfolio dl>div{display:flex;justify-content:space-between;gap:8px;align-items:center;padding:5px 0;font-size:.83rem}
+.first-portfolio dd{margin:0;font-size:1.06rem;font-weight:650;white-space:nowrap}
+.first-portfolio>button{margin:0;font-size:.9rem}
+.first-portfolio .portfolio-tip{margin:8px 0 0;font-size:.76rem}
+.first-help details{margin:10px 0 0;padding-top:0}
+.first-help summary{font-size:.83rem;padding:10px 0}
+.carousel-nav{display:none}
+dialog.first-modal{padding:20px 25px;width:min(610px,calc(100% - 24px))}
+.first-modal .close-row{float:right;margin-left:10px}
+.first-modal .eyebrow{margin:4px 0 10px}
+.first-modal h2{font-size:1.9rem;margin:0 0 10px;clear:both}
+.first-modal .art{height:55px}
+.first-modal .art svg{height:55px}
+.first-modal>p{font-size:.9rem;margin:10px 0}
+.first-modal .facts{margin:12px 0;gap:12px}
+.first-modal .facts>div{padding:12px 15px}
+.first-modal details{margin:10px 0;padding-top:0}
+.first-modal summary{padding:8px 0;font-size:.87rem}
+.first-modal .actions{margin-top:12px}
+.first-modal .modal-terms{color:var(--gold);font-size:.83rem}
+.first-report{max-width:1040px}
+.first-report>header .eyebrow{margin-bottom:8px}
+.first-report h2{font-size:2.4rem;margin:0}
+.first-report .budget-bar{margin:20px 0}
+.first-report .budget-bar>div{padding:12px 18px}
+.comparison{border:1px solid var(--line);border-radius:9px;background:#10252d;padding:16px 22px 10px}
+.comparison svg{display:block;width:100%;height:38px}
+.comparison-row{margin:0 0 14px}
+.bar-heading{display:flex;justify-content:space-between;gap:16px;padding:0 6%;font-size:.92rem;margin-bottom:6px}
+.bar-heading strong{white-space:nowrap;font-variant-numeric:tabular-nums}
+.axis-note{font-size:.75rem;margin:0 0 8px;text-align:center}
+.comparison text{fill:var(--text);font-family:system-ui,sans-serif;font-size:15px}
+.comparison .zero-label{font-size:12px;fill:var(--muted)}
+.bar-player{fill:var(--teal)}.bar-negative{fill:#ffc0b3}.bar-best{fill:var(--gold)}.zero-line{stroke:#e4efed;stroke-width:1.2}
+.comparison-gap{text-align:center;color:var(--text);margin:0;font-size:.94rem}
+.result-portfolios{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:22px 0 14px}
+.result-portfolios h3{font-size:1rem;margin-bottom:12px;color:var(--gold)}
+.result-tiles{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.result-tiles li{display:flex;gap:12px;align-items:center;background:#1b333d;border:1px solid var(--line);padding:10px 12px;border-radius:6px;min-width:0}
+.result-tiles .art{height:38px;flex:0 0 42px;background:none;color:var(--teal)}
+.result-tiles svg{width:42px;height:38px;filter:none}
+.result-tiles strong{display:block;font-size:.88rem;line-height:1.25;margin-bottom:4px}
+.result-tiles span{font-size:.78rem;color:var(--muted)}
+.result-tiles .positive{color:var(--teal)}.result-tiles .negative{color:#ffc0b3}
+.optimal-capital,.empty-result{font-size:.83rem;margin:10px 0 0}
+.opportunity-takeaway{margin:16px 0}
+.report-explanations details{margin:0;padding:0}
+.report-explanations summary{padding:12px 0;font-size:.92rem}
+.report-next{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.prior-review{text-align:right;margin-bottom:16px}
+.prior-review button{font-size:.8rem;padding:7px 13px}
+@media(min-width:761px) and (max-width:1100px){
+  .first-layout{grid-template-columns:minmax(0,1fr) 245px;gap:14px}
+  .first-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .first-budget>div{display:block}.first-budget strong{display:block}
+}
+@media(max-width:760px){
+  .intro-screen .masthead,.first-screen .masthead{padding:8px 18px}
+  .intro-screen main{padding:24px 20px}
+  .intro-screen .hero{grid-template-columns:1fr;padding:0;gap:4px}
+  .intro-screen h1{font-size:2.7rem;line-height:1.05;margin-bottom:16px}
+  .intro-screen .hero .lead{font-size:.96rem}
+  .intro-screen .desk-art{order:0;min-height:305px;margin:0;transform:scale(.8)}
+  .intro-screen .display-card{width:195px;height:270px}
+  .intro-screen .site-footer{padding:15px 20px}
+  .first-screen main{padding:15px 16px 25px}
+  .first-heading{display:block;margin-bottom:12px}
+  .first-heading h2{font-size:1.65rem}
+  .first-heading p:last-child{font-size:.82rem}
+  .rate-badge{display:inline-block;font-size:.73rem;padding:3px 9px;margin-top:8px}
+  .first-budget{grid-template-columns:1fr 1fr;margin-bottom:12px}
+  .first-budget>div{padding:8px 10px;display:block}.first-budget>div:first-child{display:none}
+  .first-budget strong{display:block;font-size:1.16rem}.first-budget span{font-size:.72rem}
+  .first-layout{grid-template-columns:1fr;gap:14px}
+  .carousel-nav{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:10px}
+  .carousel-nav button{padding:8px 12px;font-size:.82rem;flex-shrink:0}
+  .carousel-nav span{font-size:.76rem;text-align:center;line-height:1.2}
+  .first-cards{display:block}
+  .first-card:not(.active){display:none}
+  .first-card{height:auto;min-height:245px}
+  .first-card .art{height:57px;padding-left:16px}.first-card .art svg{height:54px;width:76px}
+  .first-card .card-copy{padding:12px 16px}.first-card .card-copy h3{font-size:1.38rem;min-height:44px}
+  .first-card .card-stats small{font-size:.78rem}.first-card .card-stats strong{font-size:1.1rem}
+  .first-card button{font-size:.9rem}.funded-label{top:15px;right:16px}
+  .first-portfolio{padding:14px 16px}.first-portfolio .slot{padding:9px 12px;margin-bottom:7px}
+  .first-portfolio h3{margin-bottom:8px}.first-portfolio dl{margin:6px 0}
+  .first-portfolio .portfolio-tip{margin-top:6px}.first-portfolio .slot{font-size:.8rem}
+  .first-modal{padding:18px!important}.first-modal h2{font-size:1.6rem}.first-modal .actions{flex-direction:column}
+  .first-report h2{font-size:1.9rem}
+  .first-report .budget-bar{grid-template-columns:repeat(3,minmax(0,1fr));margin:16px 0}
+  .first-report .budget-bar>div{padding:10px 8px;border-bottom:0;border-right:1px solid var(--line)}
+  .first-report .budget-bar small{font-size:.7rem;min-height:34px}.first-report .budget-bar strong{font-size:.96rem}
+  .comparison{padding:14px 4px}.bar-heading{font-size:.82rem;gap:10px;align-items:center}.bar-heading span{max-width:65%}.axis-note{font-size:.69rem;margin:0 10px 8px}
+  .comparison-gap{font-size:.86rem;margin:6px 8px 0}
+  .result-portfolios{grid-template-columns:1fr;gap:20px}.result-tiles strong{font-size:.85rem}
+  .report-next{flex-direction:column}.report-explanations summary{font-size:.87rem}
+}
+@media(prefers-reduced-motion:no-preference){.first-report .comparison{animation:desk-reveal .2s ease-out}@keyframes desk-reveal{from{opacity:.5;transform:translateY(4px)}to{opacity:1;transform:none}}}

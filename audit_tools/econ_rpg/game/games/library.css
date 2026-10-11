@@ -3,7 +3,7 @@
 .game-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-bottom:32px}
 .game-card{min-width:0;display:flex;flex-direction:column;overflow:hidden;border:1px solid var(--line);border-radius:18px;background:linear-gradient(135deg,#103157,#0a2549);box-shadow:0 20px 50px #0002}
 .game-card img,.card-placeholder{display:block;width:100%;aspect-ratio:4/3;object-fit:contain;background:#071f3c;border-bottom:1px solid var(--line)}
-.game-card[data-game="takeout-taco-lunch-rush"] img{object-fit:cover}
+.game-card[data-game="takeout-taco-lunch-rush"] img,.game-card[data-game="takeout-taco-counting-the-cost"] img{object-fit:cover}
 .game-card[data-game="labor-force-files"] img{object-fit:fill}
 .game-card[data-game="the-long-run"] img,.game-card[data-game="money-in-motion"] img{height:auto;aspect-ratio:4/3;object-fit:cover;object-position:center}
 .game-card[data-game="the-long-run"] img{object-fit:contain;image-rendering:pixelated}
@@ -20,6 +20,6 @@
 @media(max-width:620px){.game-grid{grid-template-columns:1fr;gap:20px}.game-card-copy{padding:20px}.library-page .hero{padding:22px 0}}
 
 .game-card[data-game=at-the-box-office] img{height:auto;object-fit:cover;object-position:50% 38%}
-.game-card[data-game=growth-realms] canvas{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;background:#071f3c;border-bottom:1px solid var(--line);image-rendering:pixelated}
+.game-card[data-game=growth-realms] canvas{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;background:#071f3c;border-bottom:1px solid var(--line);image-rendering:pixelated}
 
 .category-heading{font-size:1.5rem;color:var(--teal);margin:8px 0 20px}.library-page section+section{margin-top:40px}

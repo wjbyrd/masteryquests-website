@@ -1,5 +1,11 @@
 # Unlisted 12-game hub
 
+## October 10: Investment Desk and hub artwork
+
+Published version `f4c802ef-2c45-42df-8d37-4ec551dcdab9` to the existing Worker. The collection now has 16 games, with The Investment Desk immediately after Gameday Rivals. The Cost of Lunch artwork fills its card frame, and Rival Cities uses its production splash renderer for its card.
+
+The complete staged package was compared with live assets, preserving out-of-scope live content. Cloudflare uploaded exactly 40 changed runtime files: the new game and its assets, hub HTML/CSS, and the Rival Cities card module. Existing Worker variables and bindings were retained. Packaged and live browser checks passed at 1440px and 390px, including card order, artwork, overflow, and Investment Desk launch/return navigation with no browser or asset errors. Screenshots and staging evidence are in ignored `tmp/econ-rpg/investment-desk/hub-update/`.
+
 Hub: https://masteryquests.org/beta-testing/october-games-b9021b0dcb5f/games/
 
 Deployed September 29, 2026 to the existing `masteryquests-website` Worker, version `69e7c1f5-13ff-47bf-936c-4d32416f89a6`. Existing Worker bindings and variables were preserved.

@@ -1,0 +1,39 @@
+import assert from 'node:assert/strict';
+import {createRequire} from 'node:module';
+import {mkdir,writeFile} from 'node:fs/promises';
+import {previewServer} from './serve.mjs';
+const {chromium}=createRequire(import.meta.url)(process.env.PLAYWRIGHT_MODULE||'playwright');
+const out='tmp/econ-rpg/road-ahead/';await mkdir(out,{recursive:true});
+const server=previewServer();await new Promise(r=>server.listen(0,'127.0.0.1',r));const origin=`http://127.0.0.1:${server.address().port}`;
+const errors=[],checks=[];let browser;
+try{
+  browser=await chromium.launch({channel:'chrome',headless:true});
+  const page=await browser.newPage({viewport:{width:1440,height:1000}});
+  page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
+  const read=()=>page.evaluate(()=>JSON.parse(localStorage.getItem('mq.road-ahead.save.v3')));
+  const click=async(action,id)=>page.locator(`[data-action="${action}"]${id?`[data-id="${id}"]`:''}`).click();
+  const arrived=()=>page.waitForFunction(()=>['event','result'].includes(JSON.parse(localStorage.getItem('mq.road-ahead.save.v3')).phase));
+  async function layout(name){assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,name+' overflow');for(const b of await page.locator('button:visible').all())assert.ok((await b.boundingBox()).height>=44,name+' touch size');await page.screenshot({path:out+name+'.png',fullPage:true});checks.push(name);}
+  await page.goto(origin+'/games/the-road-ahead/?seed=42');await layout('chapter-desktop-title');
+  await click('help');assert.match(await page.locator('dialog').innerText(),/Three activity turns/);for(let i=0;i<10;i++){await page.keyboard.press('Tab');assert.ok(await page.evaluate(()=>document.querySelector('dialog').contains(document.activeElement)));}await page.keyboard.press('Escape');assert.ok(await page.locator('[data-action="help"]').evaluate(el=>el===document.activeElement));checks.push('keyboard-dialog');
+  await click('select');await layout('chapter-desktop-selection');assert.equal(await page.locator('.portrait').count(),4);await page.locator('[data-action="start"][data-id="natural"]').focus();await page.keyboard.press('Enter');assert.equal((await read()).attributes.aptitude,60);await layout('chapter-desktop-board');
+  await click('roll');let plan=await read();assert.equal(plan.phase,'plan');assert.equal(plan.position,0);assert.equal(plan.turn,0);assert.equal(await page.locator('[data-action="visit"]').count(),4);assert.equal(await page.locator('[data-action="roll"]').count(),0);await layout('chapter-desktop-plan');
+  await page.reload();await click('resume');assert.deepEqual(await read(),plan);checks.push('circumstance-resume-no-reroll');
+  await click('visit','study');await page.waitForTimeout(180);const moving=await read();assert.equal(moving.phase,'moving');assert.equal(moving.destination,1);await page.screenshot({path:out+'chapter-walking.png'});await page.reload();assert.deepEqual(await read(),moving);await page.emulateMedia({reducedMotion:'reduce'});await click('resume');await arrived();const result=await read();assert.equal(result.phase,'result');assert.equal(result.turn,1);assert.equal(result.position,1);assert.equal(result.history.length,1);await page.reload();await click('resume');assert.deepEqual(await read(),result);checks.push('walk-and-result-resume-no-duplicate-turn');await layout('chapter-desktop-result');
+  await click('continue');await arrived();const milestone=await read();assert.equal(milestone.event,'honors');assert.equal(milestone.turn,1);assert.equal(milestone.die,null);await layout('chapter-scheduled-honors');checks.push('milestone-without-movement-roll');
+  await click('profile');assert.match(await page.locator('dialog').innerText(),/What institutions can observe/);await page.keyboard.press('Escape');
+  async function finish(character,offset){let guard=0;while((await read()).phase!=='complete'&&guard++<250){const s=await read();assert.ok(s.turn>=0&&s.turn<=3);assert.doesNotMatch(await page.locator('#event-panel').innerText(),/adverse selection|moral hazard|principal.agent|asymmetric information/i);if(s.phase==='ready')await click('roll');else if(s.phase==='plan'){if(page.viewportSize().width===390&&!checks.includes('chapter-mobile-plan'))await layout('chapter-mobile-plan');const buttons=page.locator('[data-action="visit"]');assert.equal(await buttons.count(),4);await buttons.nth((offset+s.turn+s.zone)%4).click();}else if(s.phase==='moving')await arrived();else if(s.phase==='result')await click('continue');else{const cs=page.locator('[data-action="choose"]');await cs.nth((offset+s.history.length)%await cs.count()).click();}}
+    const s=await read();assert.equal(s.phase,'complete');assert.equal(s.history.filter(h=>h.eventID.startsWith('activity-')).length,12);assert.equal(s.telemetry.filter(t=>t.type==='circumstance_rolled').length,12);assert.match(await page.locator('main').innerText(),/Adverse selection before an agreement/);assert.match(await page.locator('main').innerText(),/Principal.agent incentives/);assert.match(await page.locator('main').innerText(),/Time as a scarce resource/);assert.doesNotMatch(await page.locator('main').innerText(),/undefined|NaN/);checks.push(character+'-complete');
+  }
+  await finish('natural',0);await layout('chapter-desktop-review');
+  const dl=page.waitForEvent('download');await click('export');assert.equal((await dl).suggestedFilename(),'the-road-ahead-journey.json');checks.push('export');
+  for(const [i,character] of ['grinder','connector','juggler'].entries()){
+    await click('same');if(i===0)await page.setViewportSize({width:390,height:844});await click('start',character);
+    if(i===0){await layout('chapter-mobile-board');await click('overview');await layout('chapter-mobile-overview');assert.ok(await page.locator('.viewport').evaluate(v=>{const c=v.querySelector('canvas').getBoundingClientRect(),b=v.getBoundingClientRect();return c.height<=b.height+1&&c.width<=b.width+1;}));await click('overview');}
+    await finish(character,i+1);
+  }
+  await layout('chapter-mobile-review');await click('replay');await page.setViewportSize({width:320,height:820});await layout('chapter-narrow-selection');await click('start','juggler');await click('roll');await layout('chapter-narrow-plan');
+  const blocked=await browser.newPage();await blocked.addInitScript(()=>Object.defineProperty(window,'localStorage',{get(){throw Error('blocked');}}));await blocked.goto(origin+'/games/the-road-ahead/');await blocked.locator('[data-action="select"]').click();await blocked.locator('[data-action="start"][data-id="connector"]').click();assert.ok(await blocked.locator('#storage-warning').isVisible());await blocked.locator('[data-action="roll"]').click();assert.equal(await blocked.locator('[data-action="visit"]').count(),4);await blocked.close();checks.push('blocked-storage');
+  const old=await browser.newPage();await old.goto(origin+'/games/the-road-ahead/');await old.evaluate(()=>localStorage.setItem('mq.road-ahead.save.v2','preserved earlier game'));await old.reload();assert.match(await old.locator('main').innerText(),/earlier board save is preserved/);await old.locator('[data-action="select"]').click();await old.locator('[data-action="start"][data-id="natural"]').click();assert.equal(await old.evaluate(()=>localStorage.getItem('mq.road-ahead.save.v2')),'preserved earlier game');await old.evaluate(()=>localStorage.setItem('mq.road-ahead.save.v3','{bad'));await old.reload();assert.ok(await old.locator('#storage-warning').isVisible());await old.close();checks.push('previous-save-preserved-and-corrupt-save-recovery');
+  assert.deepEqual(errors,[]);await writeFile(out+'browser-results.json',JSON.stringify({checks,errors},null,2));console.log(JSON.stringify({checks,errors}));
+}finally{await browser?.close();await new Promise(r=>server.close(r));}
