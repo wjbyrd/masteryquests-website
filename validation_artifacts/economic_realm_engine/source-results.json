@@ -1,0 +1,59 @@
+{
+  "templateSha256": "a70d4148ce8588e4fdf52d4bd08a6b6343f10aa4fcc708176aca0179f441134b",
+  "functions": [
+    "answer",
+    "loadQuestion",
+    "displayQuestion",
+    "planRemediation",
+    "remediationTransitionAllowed",
+    "advanceCheckpointAttempt",
+    "recordCheckpointAttempt",
+    "commitExamSection",
+    "navigateExamRoom",
+    "recordExamDraftAnswer",
+    "selectExamQuestion",
+    "buildBossQuestionSet",
+    "getMasteryReportData",
+    "createQuestionVisibilityTimingState",
+    "getQuestionBehaviorData",
+    "downloadTelemetryCsv",
+    "scheduleForCurrentRun",
+    "saveGameState",
+    "getArtifactInventoryCount",
+    "buildTrialGraphDeck",
+    "buildFadingFortuneDeck",
+    "buildRiskRewardDeck"
+  ],
+  "results": [
+    {
+      "game": "market-gate",
+      "composerFunctions": 22,
+      "protectedFiles": 61,
+      "bankSha256": "1f6ef1b5591174e3eadd2a563d4c7e2fb62ac308b17c89883ab830cda9390013"
+    },
+    {
+      "game": "national-ledger",
+      "composerFunctions": 22,
+      "protectedFiles": 37,
+      "bankSha256": "34d3dce443855b60aaaedbe413bd469a1ec213f6fd00f0024cd4b73eec550dfa"
+    },
+    {
+      "game": "equilibrium-crisis",
+      "composerFunctions": 22,
+      "protectedFiles": 61,
+      "bankSha256": "f523800ea4c3f733cc763dd8af345d485de74f404c4316d89741edb9dc2a7860"
+    },
+    {
+      "game": "liquidity-grid",
+      "composerFunctions": 22,
+      "protectedFiles": 41,
+      "bankSha256": "070d1ae958db592ef7d1fee60a6b07f742404e29721554c34cb78398ca0b1d5f"
+    },
+    {
+      "game": "stabilization-protocol",
+      "composerFunctions": 22,
+      "protectedFiles": 43,
+      "bankSha256": "f5efa69303aa2c0c2a385cde1b6cfa2d1f71284efda193f407c3381b97cb9fd5"
+    }
+  ]
+}

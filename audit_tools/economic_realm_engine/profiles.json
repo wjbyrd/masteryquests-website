@@ -1,0 +1,914 @@
+{
+  "market-gate": {
+    "title": "The Market Gate",
+    "key": "marketGate",
+    "bank": "market_gate_questions_student.js",
+    "bankSha256": "1f6ef1b5591174e3eadd2a563d4c7e2fb62ac308b17c89883ab830cda9390013",
+    "constants": [
+      "const SOUND_PREF_KEY = \"marketGateSoundEnabled\";",
+      "const SAVE_KEY = \"marketGateSave_v1\";",
+      "const REALM_MISSION_KEY = \"marketGate\";",
+      "const REALM_STARTED_KEY = \"economicRealm_marketGate_started\";",
+      "const REALM_COMPLETE_KEY = \"economicRealm_marketGate_complete\";",
+      "const REALM_STATUS_KEY = \"economicRealm_marketGate_status\";",
+      "const REALM_ROOM_KEY = \"economicRealm_marketGate_room\";",
+      "const REALM_TOTAL_CORRECT_KEY = \"economicRealm_totalCorrectAnswers\";",
+      "const REALM_BEST_STREAK_KEY = \"economicRealm_bestStreak\";",
+      "const REALM_EXAM_COMPLETE_KEY = \"economicRealm_examDrillCompleted\";",
+      "const REALM_TRIAL_BY_CLOCK_KEY = \"economicRealm_trialByClock\";",
+      "const REALM_PERFECT_CALIBRATION_KEY = \"economicRealm_perfectCalibration\";",
+      "const REALM_RETURN_AND_REBUILD_KEY = \"economicRealm_returnAndRebuild\";",
+      "const SCORE_ATTACK_STORAGE_PREFIX = \"marketGateScoreAttack\";",
+      "const TELEMETRY_PREFIX = \"marketGateTelemetry_\";"
+    ],
+    "artifacts": {
+      "compass": {
+        "img": "compass.webp",
+        "title": "Frontier Compass",
+        "text": "The compass marks the production frontier. Every step toward one good carries the cost of leaving another behind."
+      },
+      "lens": {
+        "img": "lens.webp",
+        "title": "Signal Lens",
+        "text": "The lens reveals the meeting of supply and demand. Prices move, incentives shift, and the market signal sharpens."
+      },
+      "scales": {
+        "img": "scales.webp",
+        "title": "Magistrate's Scales",
+        "text": "The scales weigh shortage against surplus. When prices are held away from equilibrium, imbalance takes hold."
+      }
+    },
+    "bossImages": [
+      "keeper.webp",
+      "broker.webp",
+      "magistrate.webp"
+    ],
+    "bossNames": [
+      "THE FRONTIER KEEPER",
+      "THE SIGNAL BROKER",
+      "THE PRICE MAGISTRATE"
+    ],
+    "guideName": "The Custodian",
+    "guideImage": "chancellor.webp",
+    "objectiveLabels": {
+      "LO1.1": "Trade-offs, scarcity, efficiency, and equality",
+      "LO1.1_tradeoffs_analysis": "Trade-offs, scarcity, efficiency, and equality",
+      "LO1.2": "Opportunity cost and the value of the next best alternative",
+      "LO1.2_opportunity_cost": "Opportunity cost and the value of the next best alternative",
+      "LO1.2_calculate_opportunity_cost": "Calculating opportunity cost",
+      "LO1.3": "Marginal reasoning and decisions at the margin",
+      "LO1.3_marginal_decision": "Marginal benefit, marginal cost, and decisions at the margin",
+      "LO1.3_calculate_margin": "Calculating decisions at the margin",
+      "LO1.3_marginal_reasoning": "Marginal reasoning and incremental decision-making",
+      "LO1.4": "Incentives and behavioral responses",
+      "LO1.4_incentives_behavior": "Incentives and behavioral responses",
+      "LO1.5": "Trade, specialization, and mutual gains",
+      "LO1.5_gains_from_trade": "Trade, specialization, and mutual gains",
+      "LO1.5_trade_good_for_everyone": "Why trade can make people better off",
+      "LO1.6": "Markets, resource allocation, and market failure",
+      "LO1.6_markets_allocate_resources": "Markets and resource allocation",
+      "LO1.6_markets_not_perfect": "Market failure and limits of markets",
+      "LO1.6_markets_good_not_perfect": "Markets as useful but imperfect allocation systems",
+      "LO2.1": "Economic models, assumptions, and scientific reasoning",
+      "LO2.1_models_scientific_method": "Economic models, assumptions, and scientific reasoning",
+      "LO2.1_economic_models": "Economic models and simplification",
+      "LO2.2": "Circular flow, PPFs, trade-offs, efficiency, and growth",
+      "LO2.2_ppf_tradeoffs": "PPFs, trade-offs, and opportunity cost",
+      "LO2.2_ppf_efficiency": "Efficient, inefficient, attainable, and unattainable PPF points",
+      "LO2.2_ppf_opportunity_cost": "Opportunity cost on the PPF",
+      "LO2.2_ppf_choices_tradeoffs": "PPFs, choices, and trade-offs",
+      "LO2.2_circular_flow_model": "Circular-flow model and household-firm interactions",
+      "LO2.2_circular_flow": "Circular-flow model",
+      "LO2.3": "Microeconomics versus macroeconomics",
+      "LO2.3_microeconomics": "Microeconomics and individual market decisions",
+      "LO2.3_macroeconomics": "Macroeconomics and economy-wide issues",
+      "LO2.3_micro_vs_macro": "Microeconomics versus macroeconomics",
+      "LO2.4": "Positive versus normative statements",
+      "LO2.4_normative_statement": "Normative statements and value judgments",
+      "LO2.4_positive_statement": "Positive statements and testable claims",
+      "LO2.4_positive_vs_normative": "Positive versus normative statements",
+      "LO2.5": "Economists as scientists and policy advisers",
+      "LO2.5_economists_policy_role": "Economists as policy advisers",
+      "LO2.5_policy_roles": "Economists' roles in policy",
+      "LO4.1": "Competitive markets and price-taking behavior",
+      "LO4.1_competitive_market": "Competitive markets and price-taking behavior",
+      "LO4.1_define_competitive_market": "Defining competitive markets",
+      "LO4.2": "Demand, quantity demanded, and demand shifters",
+      "LO4.2_law_of_demand": "Law of demand and quantity demanded",
+      "LO4.2_quantity_demanded": "Movement along demand and quantity demanded",
+      "LO4.2_demand_shifts": "Demand shifters and changes in demand",
+      "LO4.2_demand": "Demand and quantity demanded",
+      "LO4.3": "Supply, quantity supplied, and supply shifters",
+      "LO4.3_law_of_supply": "Law of supply and quantity supplied",
+      "LO4.3_quantity_supplied": "Movement along supply and quantity supplied",
+      "LO4.3_supply_shifts": "Supply shifters and changes in supply",
+      "LO4.3_supply": "Supply and quantity supplied",
+      "LO4.4": "Market equilibrium, shortages, surpluses, and market changes",
+      "LO4.4_equilibrium": "Market equilibrium",
+      "LO4.4_shortage": "Shortages and upward price pressure",
+      "LO4.4_surplus": "Surpluses and downward price pressure",
+      "LO4.4_analyze_market_changes": "Analyzing market changes with supply and demand",
+      "LO4.4_supply_demand_together": "Supply and demand together",
+      "LO4.5": "Prices as signals for allocating scarce resources",
+      "LO4.5_prices_allocate_resources": "Prices as signals for allocating scarce resources",
+      "LO4.5_role_of_prices": "Role of prices in market economies",
+      "LO6.1": "Price ceilings, binding ceilings, and shortages",
+      "LO6.1_binding_price_ceiling": "Binding price ceilings",
+      "LO6.1_calculate_ceiling_effects": "Calculating shortages from price ceilings",
+      "LO6.1_price_ceiling": "Price ceilings",
+      "LO6.1_price_ceiling_effects": "Effects of price ceilings",
+      "LO6.2": "Price floors, binding floors, and surpluses",
+      "LO6.2_binding_price_floor": "Binding price floors",
+      "LO6.2_calculate_floor_effects": "Calculating surpluses from price floors",
+      "LO6.2_price_floor": "Price floors",
+      "LO6.2_price_floor_effects": "Effects of price floors",
+      "LO6.3": "Taxes, tax wedges, and quantity effects",
+      "LO6.3_tax_wedge": "Tax wedges between buyers and sellers",
+      "LO6.3_tax_quantity_effect": "Taxes and reduced quantity traded",
+      "LO6.3_tax_effects": "Effects of taxes on price and quantity",
+      "LO6.4": "Equivalence of taxes on buyers and sellers",
+      "LO6.4_tax_equivalence": "Equivalence of buyer and seller taxes",
+      "LO6.5": "Tax incidence and how burden is divided",
+      "LO6.5_tax_incidence": "Tax incidence and burden sharing",
+      "LO6.5_tax_burden_elasticity": "Tax burden and elasticity"
+    },
+    "objectiveLabelSource": "const MARKET_GATE_OBJECTIVE_LABELS = {\n    \"LO1.1\": \"LO 1.1 — Tradeoffs and scarcity\",\n    \"LO1.2\": \"LO 1.2 — Opportunity cost\",\n    \"LO1.3\": \"LO 1.3 — Marginal decision-making\",\n    \"LO1.4\": \"LO 1.4 — Incentives and behavior\",\n    \"LO1.5\": \"LO 1.5 — Gains from trade\",\n    \"LO1.6\": \"LO 1.6 — Markets and allocation\",\n    \"LO2.1\": \"LO 2.1 — Economic models and assumptions\",\n    \"LO2.2\": \"LO 2.2 — PPF, circular flow, and tradeoffs\",\n    \"LO2.3\": \"LO 2.3 — Microeconomics vs. macroeconomics\",\n    \"LO2.4\": \"LO 2.4 — Positive vs. normative analysis\",\n    \"LO2.5\": \"LO 2.5 — Economists and policy roles\",\n    \"LO4.1\": \"LO 4.1 — Competitive markets\",\n    \"LO4.2\": \"LO 4.2 — Demand and demand shifts\",\n    \"LO4.3\": \"LO 4.3 — Supply and supply shifts\",\n    \"LO4.4\": \"LO 4.4 — Market equilibrium and changes\",\n    \"LO4.5\": \"LO 4.5 — Prices as signals\",\n    \"LO6.1\": \"LO 6.1 — Price ceilings\",\n    \"LO6.2\": \"LO 6.2 — Price floors\",\n    \"LO6.3\": \"LO 6.3 — Taxes and tax wedges\",\n    \"LO6.4\": \"LO 6.4 — Buyer/seller tax equivalence\",\n    \"LO6.5\": \"LO 6.5 — Tax incidence and elasticity\"\n};",
+    "areaFunction": "function getAreaName(r) {\n    if (r <= 9) return \"The Frontier Arcade\";\n    if (r === 10) return \"The Keeper’s Reliquary\";\n    if (r <= 19) return \"The Signal Bazaar\";\n    if (r === 20) return \"The Broker’s Exchange\";\n    if (r <= 25) return \"The Equilibrium Walk\";\n    if (r <= 29) return \"The Decree Arcade\";\n    return \"The Magistrate’s Tribunal\";\n}",
+    "wizardFeedback": {
+      "correct": [
+        "The value holds.",
+        "A sound exchange.",
+        "You weighed the cost correctly.",
+        "That choice clears the market.",
+        "Accepted. The signal was read."
+      ],
+      "wrong": [
+        "Mispriced.",
+        "That value collapses.",
+        "You ignored the tradeoff.",
+        "Bad exchange. Try again.",
+        "The signal was there. You missed it."
+      ]
+    },
+    "wizardLines": {
+      "definition": [
+        "Name the principle.",
+        "Define the tradeoff.",
+        "Identify the economic idea.",
+        "Classify the market force.",
+        "State the rule of exchange.",
+        "What concept is being valued?"
+      ],
+      "interpretation": [
+        "Read the market signal.",
+        "Trace the shift.",
+        "Follow the incentive.",
+        "What changes in the exchange?",
+        "Compare the costs and benefits.",
+        "Watch price and quantity move."
+      ],
+      "trap": [
+        "That answer looks valuable, but it is mispriced.",
+        "Do not confuse demand with quantity demanded.",
+        "Do not confuse supply with quantity supplied.",
+        "Slow down. The curve did not move.",
+        "The signal is there. Read it carefully.",
+        "Check the tradeoff before you choose.",
+        "A lower price is not always a lower cost.",
+        "Do not mistake movement along a curve for a shift."
+      ],
+      "calculation": [
+        "Price the tradeoff.",
+        "Calculate the market response.",
+        "Measure the change.",
+        "Find the elasticity.",
+        "Numbers first. The market follows.",
+        "Quantify the exchange."
+      ],
+      "default": [
+        "Choose the better trade.",
+        "Read the signal.",
+        "Weigh the cost.",
+        "Make the exchange.",
+        "Decide what the market says."
+      ]
+    },
+    "soundSource": "const bgMusic = new Audio('chamber.mp3'); \nbgMusic.loop = true; \nbgMusic.volume = 0.05; \n\nconst bossMusic = new Audio('boss_battle_music.mp3');\nbossMusic.loop = true;\nbossMusic.volume = 0.10;\n\nconst finalBossMusic = new Audio('final_boss_music.mp3');\nfinalBossMusic.loop = true;\nfinalBossMusic.volume = 0.12; // slightly louder, it's the final fight    \n    \nconst sfxMilestone = new Audio('streak.wav');\nconst sfxVictory = new Audio('victory.wav');\nconst sfxBossHit = new Audio('boss_hit.wav');\n      sfxBossHit.volume = 0.5;\nconst sfxCorrect = new Audio('ding.wav');\n      sfxCorrect.volume = 0.25;\nconst sfxWrong = new Audio('mistake.wav');\n      sfxWrong.volume = 0.4;\n    \nconst hallwayImages = [\n    \"hallway1.webp\",\n    \"hallway2.webp\",\n    \"hallway3.webp\"\n];\n\nlet soundEnabled = true;\nconst SOUND_PREF_KEY = \"marketGateSoundEnabled\";\n\nfunction updateSoundToggle(){\n  const button = document.getElementById(\"soundToggle\");\n  if(!button) return;\n  button.innerText = soundEnabled ? \"Sound On\" : \"Sound Off\";\n}\n\nfunction setAllGameAudioMuted(isMuted){\n  [bgMusic, bossMusic, finalBossMusic, sfxMilestone, sfxVictory, sfxBossHit, sfxCorrect, sfxWrong]\n    .filter(Boolean)\n    .forEach(audio => {\n      audio.muted = isMuted;\n    });\n}\n\nfunction toggleGameSound(){\n  soundEnabled = !soundEnabled;\n\n  localStorage.setItem(SOUND_PREF_KEY, soundEnabled ? \"true\" : \"false\");\n  setAllGameAudioMuted(!soundEnabled);\n  updateSoundToggle();\n\n  if(soundEnabled){\n      resumeCurrentMusic();\n  } else {\n      pauseAllGameMusic();\n  }\n}\n\t \nfunction restoreSoundSetting(){\n  const saved = localStorage.getItem(SOUND_PREF_KEY);\n\n  soundEnabled = saved !== \"false\";\n\n  setAllGameAudioMuted(!soundEnabled);\n  updateSoundToggle();\n}\n\nrestoreSoundSetting();\n\nsetGameControlsVisible(false);\n  \t \nfunction setGameControlsVisible(isVisible){\n    document.body.classList.toggle(\"game-active\", !!isVisible);\n}\n\nfunction pauseAllGameMusic(){\n    [bgMusic, bossMusic, finalBossMusic].filter(Boolean).forEach(audio => {\n        audio.pause();\n    });\n}\n\nfunction safePlay(audio){\n    if(!audio || !soundEnabled) return Promise.resolve();\n\n    audio.muted = false;\n\n    return audio.play().catch(error => {\n        console.warn(\"Audio play blocked:\", error);\n    });\n}\n\nfunction resumeCurrentMusic(){\n    if(typeof currentMusic !== \"undefined\"){\n        if(currentMusic === \"boss\") return safePlay(bossMusic);\n        if(currentMusic === \"finalBoss\") return safePlay(finalBossMusic);\n        if(currentMusic === \"exploration\") return safePlay(bgMusic);\n    }\n\n    return safePlay(bgMusic);\n}\n\t \n",
+    "realmFunctions": [
+      "function getMissionAchievementPrefix(){\n    return `economicRealm_${REALM_MISSION_KEY}`;\n}",
+      "function syncRealmAttemptState(){\n    if(!modeAllowsRealmProgress()) return;\n\n    localStorage.setItem(REALM_STARTED_KEY, \"true\");\n\n    if(isRealmMissionComplete()){\n        localStorage.setItem(REALM_STATUS_KEY, \"restored\");\n        localStorage.setItem(REALM_ROOM_KEY, \"30\");\n        return;\n    }\n\n    localStorage.setItem(REALM_STATUS_KEY, \"contested\");\n    localStorage.setItem(REALM_ROOM_KEY, String(room || 1));\n}",
+      "function recordTimedTrialAchievementStats(accuracy, reachedRoom){\n    const safeAccuracy = Number.isFinite(Number(accuracy)) ? Number(accuracy) : 0;\n    const safeRoom = Number.isFinite(Number(reachedRoom)) ? Number(reachedRoom) : 0;\n\n    updateRealmMaxStat(\"marketGateTimedBestRoom\", safeRoom);\n    updateRealmMaxStat(\"marketGateTimedBestAccuracy\", safeAccuracy);\n\n    updateRealmMaxStat(\"economicRealm_timedBestRoom\", safeRoom);\n    updateRealmMaxStat(\"economicRealm_timedBestAccuracy\", safeAccuracy);\n\n    updateRealmMaxStat(`${getMissionAchievementPrefix()}_timedBestRoom`, safeRoom);\n    updateRealmMaxStat(`${getMissionAchievementPrefix()}_timedBestAccuracy`, safeAccuracy);\n\n    if(safeRoom >= 30 && safeAccuracy >= 80){\n        setRealmFlag(REALM_TRIAL_BY_CLOCK_KEY);\n        setRealmFlag(`${getMissionAchievementPrefix()}_trial_by_clock_complete`);\n    }\n}"
+    ],
+    "resourceSource": "const INSTRUCTIONAL_RESOURCE_TYPE_LABELS = {\n    \"video\": \"Lecture Video\",\n    \"worked-problem\": \"Worked-Problems Video\",\n    \"slides\": \"Lecture Slides\",\n    \"other\": \"Course Material\"\n};\nconst INSTRUCTIONAL_RESOURCE_TYPE_ORDER = {\n    \"video\": 1,\n    \"worked-problem\": 2,\n    \"slides\": 3,\n    \"other\": 4\n};\n\nfunction getInstructionalResourceConfig(){\n    const config = window.INSTRUCTIONAL_RESOURCES;\n    if(!config || typeof config !== \"object\"){\n        console.warn(\"[Market Gate] Instructional-resource catalog is unavailable.\");\n        return null;\n    }\n    return validateInstructionalResourceConfig(config) ? config : null;\n}\n\nfunction validateInstructionalResourceConfig(config){\n    if(!config || typeof config !== \"object\") return false;\n    if(!config.chapters || typeof config.chapters !== \"object\"){\n        console.warn(\"[Market Gate] Instructional-resource catalog has no chapters object.\");\n        return false;\n    }\n    if(config.objectives && typeof config.objectives !== \"object\"){\n        console.warn(\"[Market Gate] Instructional-resource objectives must be an object; ignoring objective mappings.\");\n    }\n    return true;\n}\n\nfunction normalizeLearningObjectiveId(value){\n    const match = String(value || \"\").trim().match(/(?:LO\\s*)?(\\d+)\\s*[._\\-\\s]\\s*(\\d+)/i);\n    return match ? `${Number(match[1])}.${Number(match[2])}` : null;\n}\n\nfunction getChapterFromLearningObjective(value){\n    const normalized = normalizeLearningObjectiveId(value);\n    return normalized ? normalized.split(\".\")[0] : null;\n}\n\nfunction getObjectiveResourceMapping(config, normalizedObjective){\n    if(!config || !config.objectives || typeof config.objectives !== \"object\") return null;\n    return Object.entries(config.objectives).find(([id]) => normalizeLearningObjectiveId(id) === normalizedObjective)?.[1] || null;\n}\n\nfunction isSafeInstructionalResourceUrl(value){\n    if(typeof value !== \"string\" || !value.trim()) return false;\n    const url = value.trim();\n    if(/^https:\\/\\//i.test(url)){\n        try { return new URL(url).protocol === \"https:\"; }\n        catch(error) { console.warn(\"[Market Gate] Ignoring instructional resource with an invalid URL.\", error); return false; }\n    }\n    return /^resources\\/(?:[^\\\\/:?#]+\\/)*[^\\\\/:?#]+\\.(?:ppt|pptx|pdf)$/i.test(url)\n        && !/(?:^|\\/)\\.\\.(?:\\/|$)/.test(url);\n}\n\nfunction resolveInstructionalResourceById(config, resourceId){\n    if(!config || !resourceId) return null;\n    for(const chapter of Object.values(config.chapters || {})){\n        for(const resource of (Array.isArray(chapter?.resources) ? chapter.resources : [])){\n            if(resource?.id !== resourceId) continue;\n            if(typeof resource.title !== \"string\" || !resource.title.trim() || !isSafeInstructionalResourceUrl(resource.url)){\n                console.warn(`[Market Gate] Ignoring malformed instructional resource: ${resourceId}`);\n                return null;\n            }\n            return resource;\n        }\n    }\n    console.warn(`[Market Gate] Instructional resource ID was not found: ${resourceId}`);\n    return null;\n}\n\nfunction getRecommendedResources(weakObjectiveIds){\n    const config = getInstructionalResourceConfig();\n    if(!config || !Array.isArray(weakObjectiveIds) || weakObjectiveIds.length === 0) return [];\n\n    const settings = config.settings && typeof config.settings === \"object\" ? config.settings : {};\n    const maximum = Math.max(1, Math.min(3, Number(settings.maximumRecommendations) || 3));\n    const allowFallback = settings.enableChapterFallback !== false;\n    const selected = new Map();\n\n    function addResource(resource){\n        if(!resource?.id || selected.has(resource.id) || !isSafeInstructionalResourceUrl(resource.url)) return;\n        selected.set(resource.id, resource);\n    }\n\n    weakObjectiveIds.forEach(objectiveId => {\n        if(selected.size >= maximum) return;\n        const normalized = normalizeLearningObjectiveId(objectiveId);\n        if(!normalized) return;\n        const mapping = getObjectiveResourceMapping(config, normalized);\n        (Array.isArray(mapping?.resourceIds) ? mapping.resourceIds : [])\n            .map(id => resolveInstructionalResourceById(config, id)).filter(Boolean).forEach(addResource);\n\n        if(!allowFallback || selected.size >= maximum) return;\n        const chapter = config.chapters?.[getChapterFromLearningObjective(normalized)];\n        if(!chapter || !Array.isArray(chapter.resources)){\n            console.warn(`[Market Gate] No chapter fallback is available for LO ${normalized}.`);\n            return;\n        }\n        const fallbackResources = Array.isArray(chapter.fallbackResourceIds) ? chapter.fallbackResourceIds.map(id => resolveInstructionalResourceById(config, id)).filter(Boolean) : chapter.resources.slice().sort((a, b) => (Number(a?.priority) || 999) - (Number(b?.priority) || 999));\n        fallbackResources.forEach(addResource);\n    });\n\n    return Array.from(selected.values()).slice(0, maximum);\n}\nfunction getWeakLearningObjectiveIds(report){\n    return report?.hasObjectiveWeakness && Array.isArray(report.weakestObjectives)\n        ? report.weakestObjectives.map(entry => entry?.key).filter(Boolean)\n        : [];\n}\n\nfunction getInstructionalObjectiveTitle(objectiveId){\n    const normalized = normalizeLearningObjectiveId(objectiveId);\n    const config = getInstructionalResourceConfig();\n    const mappedTitle = normalized ? getObjectiveResourceMapping(config, normalized)?.title : \"\";\n    return mappedTitle || (normalized ? `LO ${normalized}` : formatMasteryLabel(objectiveId));\n}\n\nfunction getInstructionalResourceActionLabel(resource){\n    if(typeof resource?.actionLabel === \"string\" && resource.actionLabel.trim()) return resource.actionLabel;\n    return resource?.type === \"slides\" ? \"Open Slides\" : \"Watch Video\";\n}\n\nfunction renderInstructionalResourceCards(resources){\n    return resources.map(resource => {\n        const type = INSTRUCTIONAL_RESOURCE_TYPE_LABELS[resource.type] || INSTRUCTIONAL_RESOURCE_TYPE_LABELS.other;\n        const description = typeof resource.description === \"string\" && resource.description.trim()\n            ? `<p class=\"resource-card-description\">${escapeHTML(resource.description)}</p>` : \"\";\n        return `<article class=\"resource-card\"><div class=\"resource-card-header\"><h4 class=\"resource-card-title\">${escapeHTML(resource.title)}</h4><span class=\"resource-card-type\">${escapeHTML(type)}</span></div>${description}<a class=\"resource-card-link\" href=\"${escapeHTML(resource.url)}\" target=\"_blank\" rel=\"noopener noreferrer\">${escapeHTML(getInstructionalResourceActionLabel(resource))}<span class=\"sr-only\">: ${escapeHTML(resource.title)}</span></a></article>`;\n    }).join(\"\");\n}\n\nfunction renderInstructionalResourceSection(report){\n    const weakObjectives = getWeakLearningObjectiveIds(report);\n    if(!weakObjectives.length) return \"\";\n    const resources = getRecommendedResources(weakObjectives);\n    const intro = \"Based on the weakest learning objectives in this run, start with these materials before your next attempt.\";\n\n    if(!resources.length){\n        return `<div class=\"mastery-section resource-recommendation-section\"><h3>Recommended Review</h3><p class=\"resource-recommendation-intro\">${escapeHTML(intro)}</p><p class=\"mastery-empty\">No review material is available for these objectives yet.</p></div>`;\n    }\n\n    return `<div class=\"mastery-section resource-recommendation-section\"><h3>Recommended Review</h3><p class=\"resource-recommendation-intro\">${escapeHTML(intro)}</p><div class=\"resource-recommendation-list\">${renderInstructionalResourceCards(resources)}</div><div class=\"mastery-actions\"><button class=\"continue-btn\" type=\"button\" onclick=\"openInstructionalReviewScreen()\">Review Materials</button></div></div>`;\n}\n\nfunction openInstructionalReviewScreen(){\n    const gameBox = document.getElementById(\"gameBox\");\n    if(!gameBox) return;\n    const report = getMasteryReportData();\n    const weakObjectives = getWeakLearningObjectiveIds(report);\n    const resources = getRecommendedResources(weakObjectives);\n    const objectiveList = weakObjectives.length\n        ? `<ul class=\"review-objective-list\">${weakObjectives.map(id => `<li>${escapeHTML(getInstructionalObjectiveTitle(id))}</li>`).join(\"\")}</ul>`\n        : `<p class=\"mastery-empty\">No learning objective is available for review from this report.</p>`;\n    const resourceContent = resources.length\n        ? `<p class=\"resource-recommendation-intro\">Based on the weakest learning objectives in this run, start with these materials before your next attempt.</p><div class=\"resource-recommendation-list\">${renderInstructionalResourceCards(resources)}</div>`\n        : `<p class=\"mastery-empty\">No review material is available for these objectives yet.</p>`;\n\n    gameBox.innerHTML = `<section id=\"instructionalReviewScreen\" class=\"mastery-report-screen review-materials-screen\" aria-labelledby=\"instructionalReviewTitle\"><h1 id=\"instructionalReviewTitle\" class=\"mastery-report-title\" tabindex=\"-1\">REVIEW BEFORE YOUR NEXT ATTEMPT</h1><p class=\"mastery-report-subtitle\">Use these materials to reinforce the concepts that showed the weakest signal in this run.</p><div class=\"mastery-section\"><h2>Learning Objectives to Review</h2>${objectiveList}</div><div class=\"mastery-section\"><h2>Recommended Materials</h2>${resourceContent}</div><div class=\"mastery-actions\"><button class=\"continue-btn\" type=\"button\" onclick=\"returnToMasteryReport()\">Return to Mastery Report</button><button class=\"continue-btn secondary-modal-btn\" type=\"button\" onclick=\"location.reload()\">Replay Mission</button><button class=\"continue-btn secondary-modal-btn\" type=\"button\" onclick=\"returnToModeSelectFromRun()\">Choose Another Battle</button></div></section>`;\n    document.getElementById(\"instructionalReviewTitle\")?.focus?.();\n}\n\nfunction returnToMasteryReport(){\n    showMasteryReportScreen(true);\n}\n",
+    "roomKey": "marketGateRoom",
+    "artifactKeys": [
+      "vaultCompass",
+      "vaultLens",
+      "vaultScales"
+    ],
+    "legacyArtifactFields": [
+      "vaultCompass",
+      "vaultLens",
+      "vaultScales"
+    ],
+    "highScoreFunction": "function updateHighScores(newTimeMs) {\n    let scores = JSON.parse(localStorage.getItem(\"marketGateHighScores\")) || [];\n    scores.push({ name: username, time: newTimeMs, date: new Date().toLocaleDateString() });\n    \n    // Sort by time (lowest/fastest first) and keep top 5\n    scores.sort((a, b) => a.time - b.time);\n    scores = scores.slice(0, 5);\n    \n    localStorage.setItem(\"marketGateHighScores\", JSON.stringify(scores));\n    return scores;\n}",
+    "pseudonymFunction": "function generatePseudonymFromSeed(seed) {\n    const titles = [\n        \"Axiom\", \"Ledger\", \"Vector\", \"Meridian\", \"Signal\", \"Cipher\",\n        \"Frontier\", \"Equity\", \"Oracle\", \"Index\", \"Summit\", \"Nexus\",\n        \"Vault\", \"Prism\", \"Civic\", \"Astral\", \"Beacon\", \"Horizon\"\n    ];\n\n    const roles = [\n        \"Appraiser\", \"Cartographer\", \"Arbiter\", \"Custodian\", \"Warden\", \"Registrar\",\n        \"Archivist\", \"Surveyor\", \"Magistrate\", \"Keeper\", \"Analyst\", \"Mediator\",\n        \"Steward\", \"Scribe\", \"Sentinel\", \"Marshal\", \"Seeker\", \"Auditor\"\n    ];\n\n    let hash = 0;\n    const cleanSeed = String(seed || \"market-gate\").trim().toLowerCase();\n\n    for (let i = 0; i < cleanSeed.length; i++) {\n        hash = ((hash << 5) - hash) + cleanSeed.charCodeAt(i);\n        hash |= 0;\n    }\n\n    const positiveHash = Math.abs(hash);\n\n    const title = titles[positiveHash % titles.length];\n    const role = roles[Math.floor(positiveHash / titles.length) % roles.length];\n    const number = 1000 + (positiveHash % 9000);\n\n    return `${title}${role}${number}`;\n}",
+    "streakFunction": "function handleStreakVisuals() {\n    let streakMsg = \"\";\n    let streakColor = \"#f0c86a\";\n\n    if (streak === 5) {\n        streakMsg = `<span class=\"streak\"><img src=\"streaksignal.webp\" class=\"streak-icon\" alt=\"\" aria-hidden=\"true\">DEMAND SIGNAL FOUND</span>`;\n        streakColor = \"#f0c86a\";\n    }\n    else if (streak === 10) {\n        streakMsg = `<span class=\"streak\"><img src=\"streakkey.webp\" class=\"streak-icon\" alt=\"\" aria-hidden=\"true\">ENTRY KEY CLAIMED</span>`;\n        streakColor = \"#38bdf8\";\n    }\n    else if (streak === 20) {\n        streakMsg = `<span class=\"streak\"><img src=\"streakseal.webp\" class=\"streak-icon\" alt=\"\" aria-hidden=\"true\">EQUILIBRIUM SEALED</span>`;\n        streakColor = \"#f5e6b8\";\n    }\n\n    if (streakMsg) {\n        sfxMilestone.currentTime = 0;\n        sfxMilestone.play();\n        document.getElementById(\"streakDisplay\").innerHTML = streakMsg;\n        document.getElementById(\"streakDisplay\").style.color = streakColor;\n    } else if (streak > 0) {\n        document.getElementById(\"streakDisplay\").innerText = `Streak: ${streak}`;\n        document.getElementById(\"streakDisplay\").style.color = \"#f0c86a\";\n    }\n}",
+    "resourceCSS": "/* =========================================\n   16. INSTRUCTIONAL RESOURCE RECOMMENDATIONS\n========================================= */\n.resource-recommendation-section{ margin-top:14px; }\n.resource-recommendation-intro{ color:#d8efff; line-height:1.55; margin:0 0 14px; }\n.resource-recommendation-list{ display:grid; grid-template-columns:1fr; gap:12px; }\n.resource-card{ min-width:0; padding:16px; border:1px solid rgba(247,217,130,0.42); border-radius:11px; background:linear-gradient(135deg, rgba(12,46,76,0.9), rgba(2,12,29,0.96)); box-shadow:0 0 16px rgba(0,0,0,0.38), inset 0 0 18px rgba(56,189,248,0.07); }\n.resource-card-header{ display:flex; align-items:flex-start; justify-content:space-between; gap:12px; }\n.resource-card-title{ min-width:0; color:#f8e3a0; font-size:17px; font-weight:800; line-height:1.32; overflow-wrap:anywhere; }\n.resource-card-type{ flex:0 0 auto; max-width:100%; padding:4px 8px; border:1px solid rgba(56,189,248,0.44); border-radius:999px; color:#c7ecff; font-size:10px; font-weight:800; letter-spacing:.8px; line-height:1.2; text-transform:uppercase;white-space:nowrap; overflow-wrap:normal;}\n.resource-card-description{ margin:10px 0 14px; color:rgba(238,246,255,0.9); line-height:1.55; overflow-wrap:anywhere; }\n.resource-card-link{ display:inline-flex; align-items:center; justify-content:center; min-height:40px; max-width:100%; padding:9px 14px; border:1px solid rgba(247,217,130,0.76); border-radius:8px; background:linear-gradient(180deg, #16587c, #0b3554); box-shadow:0 0 14px rgba(56,189,248,0.18); color:#fff7d7; font-weight:800; letter-spacing:.35px; text-align:center; text-decoration:none; transition:background .18s ease, box-shadow .18s ease, transform .18s ease; }\n.resource-card-link:hover{ background:linear-gradient(180deg, #24749b, #104867); box-shadow:0 0 18px rgba(247,217,130,0.3), 0 0 22px rgba(56,189,248,0.2); transform:translateY(-1px); }\n.resource-card-link:focus-visible{ outline:3px solid #f8e3a0; outline-offset:3px; box-shadow:0 0 0 5px rgba(56,189,248,0.5); }\n.review-materials-screen .mastery-section h2{ margin:0 0 12px; color:#f7d982; font-size:18px; letter-spacing:.7px; }\n.review-objective-list{ margin:0; padding-left:22px; color:#eef6ff; }\n.review-objective-list li{ margin:7px 0; line-height:1.48; }\n@media(max-width:420px){ .resource-card{ padding:14px; } .resource-card-header{ align-items:flex-start; flex-direction:column; gap:8px; } .resource-card-type{flex:0 0 auto;white-space:nowrap; overflow-wrap:normal;} .resource-card-link{ display:flex; width:100%; box-sizing:border-box; } }\n",
+    "modeKey": "marketGateCurrentMode"
+  },
+  "national-ledger": {
+    "title": "The National Ledger",
+    "key": "nationalLedger",
+    "bank": "national_ledger_questions_student.js",
+    "bankSha256": "34d3dce443855b60aaaedbe413bd469a1ec213f6fd00f0024cd4b73eec550dfa",
+    "constants": [
+      "const SOUND_PREF_KEY = \"nationalLedgerSoundEnabled\";",
+      "const SAVE_KEY = \"nationalLedgerSave_v1\";",
+      "const REALM_MISSION_KEY = \"nationalLedger\";",
+      "const REALM_STARTED_KEY = \"economicRealm_nationalLedger_started\";",
+      "const REALM_COMPLETE_KEY = \"economicRealm_nationalLedger_complete\";",
+      "const REALM_STATUS_KEY = \"economicRealm_nationalLedger_status\";",
+      "const REALM_ROOM_KEY = \"economicRealm_nationalLedger_room\";",
+      "const REALM_TOTAL_CORRECT_KEY = \"economicRealm_totalCorrectAnswers\";",
+      "const REALM_BEST_STREAK_KEY = \"economicRealm_bestStreak\";",
+      "const REALM_EXAM_COMPLETE_KEY = \"economicRealm_examDrillCompleted\";",
+      "const REALM_TRIAL_BY_CLOCK_KEY = \"economicRealm_trialByClock\";",
+      "const REALM_PERFECT_CALIBRATION_KEY = \"economicRealm_perfectCalibration\";",
+      "const REALM_RETURN_AND_REBUILD_KEY = \"economicRealm_returnAndRebuild\";",
+      "const SCORE_ATTACK_STORAGE_PREFIX = \"nationalLedgerScoreAttack\";",
+      "const TELEMETRY_PREFIX = \"nationalLedgerTelemetry_\";"
+    ],
+    "artifacts": {
+      "seal": {
+        "img": "seal.webp",
+        "title": "Registrar’s Seal",
+        "text": "The first records reconcile. GDP, income, expenditure, CPI, inflation, and real values can now be separated from false measures."
+      },
+      "prism": {
+        "img": "prism.webp",
+        "title": "The Warden’s Prism",
+        "text": "Growth now splits into its true sources. Productivity, capital, human capital, natural resources, technology, and policy can be read without distortion."
+      },
+      "crown": {
+        "img": "crown.webp",
+        "title": "The Comptroller’s Crown",
+        "text": "The labor record is restored. Employment, unemployment, participation, job search, mismatch, policy effects, and the natural rate now balance in the ledger."
+      }
+    },
+    "bossImages": [
+      "registrar.webp",
+      "warden.webp",
+      "comptroller.webp"
+    ],
+    "bossNames": [
+      "THE REGISTRAR OF FALSE MEASURES",
+      "THE WARDEN OF GROWTH",
+      "THE COMPTROLLER OF LABOR RECORDS"
+    ],
+    "guideName": "The Custodian",
+    "guideImage": "chancellor.webp",
+    "objectiveLabels": {
+      "LO24.1": "Income and Expenditure",
+      "LO24.2": "GDP Definition and Counting Rules",
+      "LO24.3": "GDP Components",
+      "LO24.4": "Real and Nominal GDP",
+      "LO24.5": "GDP and Well-Being",
+      "LO25.1": "CPI and Inflation",
+      "LO25.2": "CPI Bias and Cost of Living",
+      "LO25.3": "CPI versus GDP Deflator",
+      "LO25.4": "Inflation Adjustment",
+      "LO25.5": "Nominal and Real Interest Rates",
+      "LO26.1": "Growth Differences Across Countries",
+      "LO26.2": "Productivity and Living Standards",
+      "LO26.3": "Sources of Productivity",
+      "LO26.4": "Growth Policy",
+      "LO29.1": "Labor Force Statistics",
+      "LO29.2": "Employment Categories",
+      "LO29.3": "Types of Unemployment",
+      "LO29.4": "Labor Market Policies",
+      "LO29.5": "Natural Rate of Unemployment"
+    },
+    "objectiveLabelSource": "const NATIONAL_LEDGER_OBJECTIVE_LABELS = {\n    \"LO24.1\": \"LO 24.1 — GDP as income and expenditure\",\n    \"LO24.2\": \"LO 24.2 — GDP definition and production boundaries\",\n    \"LO24.3\": \"LO 24.3 — GDP expenditure components\",\n    \"LO24.4\": \"LO 24.4 — Nominal GDP, real GDP, and the GDP deflator\",\n    \"LO24.5\": \"LO 24.5 — GDP and economic well-being\",\n    \"LO25.1\": \"LO 25.1 — CPI and inflation calculation\",\n    \"LO25.2\": \"LO 25.2 — CPI bias and measurement problems\",\n    \"LO25.3\": \"LO 25.3 — CPI versus GDP deflator\",\n    \"LO25.4\": \"LO 25.4 — Inflation adjustment and real values\",\n    \"LO25.5\": \"LO 25.5 — Nominal and real interest rates\",\n    \"LO26.1\": \"LO 26.1 — Growth differences and compounding\",\n    \"LO26.2\": \"LO 26.2 — Productivity measurement\",\n    \"LO26.3\": \"LO 26.3 — Determinants of productivity\",\n    \"LO26.4\": \"LO 26.4 — Growth policy and institutions\",\n    \"LO29.1\": \"LO 29.1 — Labor-force statistics\",\n    \"LO29.2\": \"LO 29.2 — Employment and unemployment categories\",\n    \"LO29.3\": \"LO 29.3 — Types of unemployment\",\n    \"LO29.4\": \"LO 29.4 — Labor-market policy and job search\",\n    \"LO29.5\": \"LO 29.5 — Natural unemployment\",\n    \"LO29.1_LO29.2_LO29.5\": \"LO 29 Synthesis — Labor-market measurement and natural unemployment\",\n    \"integrated_macro_review\": \"Integrated Macro Review\",\n    \"system_check\": \"System Check\"\n};",
+    "areaFunction": "function getAreaName(r) {\n    if (r <= 9) return \"The Chamber of Measures\";\n    if (r === 10) return \"The Registrar’s Gate\";\n    if (r <= 19) return \"The Labor Works\";\n    if (r === 20) return \"The Warden’s Station\";\n    if (r <= 25) return \"The Equilibrium Floor\";\n    if (r <= 29) return \"The Adjustment Corridor\";\n    return \"The Comptroller’s Tribunal\";\n}",
+    "wizardFeedback": {
+      "correct": [
+        "The ledger accepts this entry.",
+        "Reconciled.",
+        "The account holds.",
+        "Your reasoning survives inspection.",
+        "Approved. Proceed."
+      ],
+      "wrong": [
+        "The ledger rejects this entry.",
+        "Discrepancy detected.",
+        "Your calculation fails inspection.",
+        "The books do not balance.",
+        "Rejected. Correct the record."
+      ]
+    },
+    "wizardLines": {
+      "definition": [
+        "Define the term precisely.",
+        "No vague entries are accepted.",
+        "State the measure.",
+        "Classify it correctly."
+      ],
+      "interpretation": [
+        "Interpret the signal.",
+        "Trace the adjustment.",
+        "Read the account carefully.",
+        "What does the system reveal?"
+      ],
+      "trap": [
+        "This is where errors hide.",
+        "Most entries fail here.",
+        "The wording is not your ally.",
+        "Audit the assumption.",
+        "Look again before the ledger closes."
+      ],
+      "calculation": [
+        "Calculate before you answer.",
+        "The numbers must reconcile.",
+        "Show the implied value.",
+        "Balance the account."
+      ],
+      "default": [
+        "Answer.",
+        "Proceed.",
+        "Enter your judgment.",
+        "Commit to the record."
+      ]
+    },
+    "soundSource": "const bgMusic = new Audio('chamber.mp3'); \nbgMusic.loop = true; \nbgMusic.volume = 0.05; \n\nconst bossMusic = new Audio('boss_battle_music.mp3');\nbossMusic.loop = true;\nbossMusic.volume = 0.10;\n\nconst finalBossMusic = new Audio('final_boss_music.mp3');\nfinalBossMusic.loop = true;\nfinalBossMusic.volume = 0.12; // slightly louder, it's the final fight    \n    \nconst sfxMilestone = new Audio('streak.wav');\nconst sfxVictory = new Audio('victory.wav');\nconst sfxBossHit = new Audio('boss_hit.wav');\n      sfxBossHit.volume = 0.5;\nconst sfxCorrect = new Audio('ding.wav');\n      sfxCorrect.volume = 0.25;\nconst sfxWrong = new Audio('mistake.wav');\n      sfxWrong.volume = 0.4;\n    \nconst hallwayImages = [\n    \"hallway1.webp\",\n    \"hallway2.webp\",\n    \"hallway3.webp\"\n];\n\nlet soundEnabled = true;\nconst SOUND_PREF_KEY = \"nationalLedgerSoundEnabled\";\n\nfunction updateSoundToggle(){\n  const button = document.getElementById(\"soundToggle\");\n  if(!button) return;\n  button.innerText = soundEnabled ? \"Sound On\" : \"Sound Off\";\n}\n\nfunction setAllGameAudioMuted(isMuted){\n  [bgMusic, bossMusic, finalBossMusic, sfxMilestone, sfxVictory, sfxBossHit, sfxCorrect, sfxWrong]\n    .filter(Boolean)\n    .forEach(audio => {\n      audio.muted = isMuted;\n    });\n}\n\nfunction toggleGameSound(){\n  soundEnabled = !soundEnabled;\n\n  localStorage.setItem(SOUND_PREF_KEY, soundEnabled ? \"true\" : \"false\");\n  setAllGameAudioMuted(!soundEnabled);\n  updateSoundToggle();\n\n  if(soundEnabled){\n      resumeCurrentMusic();\n  } else {\n      pauseAllGameMusic();\n  }\n}\n\nfunction restoreSoundSetting(){\n  const saved = localStorage.getItem(SOUND_PREF_KEY);\n\n  soundEnabled = saved !== \"false\";\n\n  setAllGameAudioMuted(!soundEnabled);\n  updateSoundToggle();\n}\n\nrestoreSoundSetting();\n\nfunction setGameControlsVisible(isVisible){\n    document.body.classList.toggle(\"game-active\", !!isVisible);\n}\n\nsetGameControlsVisible(false);\n\nfunction pauseAllGameMusic(){\n    [bgMusic, bossMusic, finalBossMusic].filter(Boolean).forEach(audio => {\n        audio.pause();\n    });\n}\n\nfunction safePlay(audio){\n    if(!audio || !soundEnabled) return Promise.resolve();\n\n    audio.muted = false;\n\n    return audio.play().catch(error => {\n        console.warn(\"Audio play blocked:\", error);\n    });\n}\n\nfunction resumeCurrentMusic(){\n    if(typeof currentMusic !== \"undefined\"){\n        if(currentMusic === \"boss\") return safePlay(bossMusic);\n        if(currentMusic === \"finalBoss\") return safePlay(finalBossMusic);\n        if(currentMusic === \"exploration\") return safePlay(bgMusic);\n    }\n\n    return safePlay(bgMusic);\n}\n\t \n",
+    "realmFunctions": [
+      "function getMissionAchievementPrefix(){\n    return `economicRealm_${REALM_MISSION_KEY}`;\n}",
+      "function syncRealmAttemptState(){\n    if(!modeAllowsRealmProgress()) return;\n    localStorage.setItem(REALM_STARTED_KEY, \"true\");\n    if(isRealmMissionComplete()){\n        localStorage.setItem(REALM_STATUS_KEY, \"restored\");\n        localStorage.setItem(REALM_ROOM_KEY, \"30\");\n        return;\n    }\n    localStorage.setItem(REALM_STATUS_KEY, \"contested\");\n    localStorage.setItem(REALM_ROOM_KEY, String(room || 1));\n}",
+      "function recordTimedTrialAchievementStats(accuracy, reachedRoom){\n    const safeAccuracy = Number.isFinite(Number(accuracy)) ? Number(accuracy) : 0;\n    const safeRoom = Number.isFinite(Number(reachedRoom)) ? Number(reachedRoom) : 0;\n\n    updateRealmMaxStat(\"nationalLedgerTimedBestRoom\", safeRoom);\n    updateRealmMaxStat(\"nationalLedgerTimedBestAccuracy\", safeAccuracy);\n\n    updateRealmMaxStat(\"economicRealm_timedBestRoom\", safeRoom);\n    updateRealmMaxStat(\"economicRealm_timedBestAccuracy\", safeAccuracy);\n\n    updateRealmMaxStat(`${getMissionAchievementPrefix()}_timedBestRoom`, safeRoom);\n    updateRealmMaxStat(`${getMissionAchievementPrefix()}_timedBestAccuracy`, safeAccuracy);\n\n    if(safeRoom >= 30 && safeAccuracy >= 80){\n        setRealmFlag(REALM_TRIAL_BY_CLOCK_KEY);\n        setRealmFlag(`${getMissionAchievementPrefix()}_trial_by_clock_complete`);\n    }\n}"
+    ],
+    "resourceSource": "const INSTRUCTIONAL_RESOURCE_TYPE_LABELS={video:\"Lecture Video\",\"worked-problem\":\"Worked-Problems Video\",slides:\"Lecture Slides\",other:\"Course Material\"};\nfunction getInstructionalResourceConfig(){const c=window.INSTRUCTIONAL_RESOURCES;return c&&typeof c===\"object\"&&c.chapters&&typeof c.chapters===\"object\"?c:null;}\nfunction normalizeLearningObjectiveId(v){const m=String(v||\"\").trim().match(/^(?:LO\\s*)?(\\d+)\\s*[._\\-\\s]\\s*(\\d+)(?:[_\\-\\s].*)?$/i);if(!m)return null;const id=`LO${Number(m[1])}.${Number(m[2])}`,c=getInstructionalResourceConfig();return c?.objectives?.[id]?id:null;}\nfunction getChapterFromLearningObjective(v){const id=normalizeLearningObjectiveId(v);return id?id.match(/^LO(\\d+)\\./)[1]:null;}\nfunction isSafeInstructionalResourceUrl(v){if(typeof v!==\"string\"||!v.trim())return false;const u=v.trim();if(/^https:\\/\\//i.test(u)){try{return new URL(u).protocol===\"https:\"}catch(e){return false}}return /^resources\\/(?:[^\\\\/:?#]+\\/)*[^\\\\/:?#]+\\.(?:ppt|pptx|pdf)$/i.test(u)&&!/(?:^|\\/)\\.\\.(?:\\/|$)/.test(u);}\nfunction getObjectiveResourceMapping(c,id){return c?.objectives?.[id]||null;}\nfunction resolveInstructionalResourceById(c,id){for(const ch of Object.values(c?.chapters||{}))for(const r of Array.isArray(ch?.resources)?ch.resources:[])if(r?.id===id&&typeof r.title===\"string\"&&isSafeInstructionalResourceUrl(r.url))return r;return null;}\nfunction getRecommendedResources(rawIds){const c=getInstructionalResourceConfig();if(!c||!Array.isArray(rawIds)||!rawIds.length)return[];const max=Math.max(1,Math.min(3,Number(c.settings?.maximumRecommendations)||3)),chosen=new Map(),add=r=>{if(r?.id&&!chosen.has(r.id)&&isSafeInstructionalResourceUrl(r.url))chosen.set(r.id,r)};rawIds.forEach(raw=>{if(chosen.size>=max)return;const id=normalizeLearningObjectiveId(raw);if(!id)return;const exact=getObjectiveResourceMapping(c,id)?.resourceIds||[];exact.map(x=>resolveInstructionalResourceById(c,x)).filter(Boolean).forEach(add);if(chosen.size>=max||c.settings?.enableChapterFallback===false)return;const ch=c.chapters?.[getChapterFromLearningObjective(id)];(ch?.fallbackResourceIds||[]).map(x=>resolveInstructionalResourceById(c,x)).filter(Boolean).forEach(add)});return Array.from(chosen.values()).slice(0,max);}\nfunction getWeakLearningObjectiveIds(report){return report?.hasObjectiveWeakness&&Array.isArray(report.weakestObjectives)?report.weakestObjectives.map(x=>x?.key).filter(x=>normalizeLearningObjectiveId(x)):[];}\nfunction getInstructionalObjectiveTitle(id){const n=normalizeLearningObjectiveId(id);return n?getObjectiveResourceMapping(getInstructionalResourceConfig(),n)?.title||n:formatMasteryLabel(id);}\nfunction getInstructionalResourceActionLabel(r){return r?.type===\"slides\"?\"Open Slides\":\"Watch Video\";}\nfunction renderInstructionalResourceCards(resources){return resources.map(r=>{const type=INSTRUCTIONAL_RESOURCE_TYPE_LABELS[r.type]||INSTRUCTIONAL_RESOURCE_TYPE_LABELS.other,desc=r.description?`<p class=\"resource-card-description\">${escapeHTML(r.description)}</p>`:\"\";return `<article class=\"resource-card\"><div class=\"resource-card-header\"><h4 class=\"resource-card-title\">${escapeHTML(r.title)}</h4><span class=\"resource-card-type\">${escapeHTML(type)}</span></div>${desc}<a class=\"resource-card-link\" href=\"${escapeHTML(r.url)}\" target=\"_blank\" rel=\"noopener noreferrer\">${escapeHTML(getInstructionalResourceActionLabel(r))}</a></article>`}).join(\"\");}\nfunction renderInstructionalResourceSection(report){const weak=getWeakLearningObjectiveIds(report);if(!weak.length)return\"\";const intro=\"Based on the weakest learning objectives in this run, start with these materials before your next attempt.\",r=getRecommendedResources(weak),body=r.length?`<div class=\"resource-recommendation-list\">${renderInstructionalResourceCards(r)}</div>`:'<p class=\"mastery-empty\">No review material is available for these objectives yet.</p>';return `<div class=\"mastery-section resource-recommendation-section\"><h3>Recommended Review</h3><p class=\"resource-recommendation-intro\">${intro}</p>${body}<div class=\"mastery-actions\"><button class=\"continue-btn\" type=\"button\" onclick=\"openInstructionalReviewScreen()\">Review Materials</button></div></div>`;}\nfunction createInstructionalResourceCard(r){const a=document.createElement(\"article\"),h=document.createElement(\"div\"),t=document.createElement(\"h3\"),k=document.createElement(\"span\"),d=document.createElement(\"p\"),l=document.createElement(\"a\");a.className=\"resource-card\";h.className=\"resource-card-header\";t.className=\"resource-card-title\";t.textContent=r.title;k.className=\"resource-card-type\";k.textContent=INSTRUCTIONAL_RESOURCE_TYPE_LABELS[r.type]||INSTRUCTIONAL_RESOURCE_TYPE_LABELS.other;h.append(t,k);a.append(h);if(r.description){d.className=\"resource-card-description\";d.textContent=r.description;a.append(d)}l.className=\"resource-card-link\";l.href=r.url;l.target=\"_blank\";l.rel=\"noopener noreferrer\";l.textContent=getInstructionalResourceActionLabel(r);a.append(l);return a;}\nfunction openInstructionalReviewScreen(){const box=document.getElementById(\"gameBox\");if(!box)return;const report=getMasteryReportData(),weak=getWeakLearningObjectiveIds(report),r=getRecommendedResources(weak),screen=document.createElement(\"section\"),title=document.createElement(\"h1\"),sub=document.createElement(\"p\"),os=document.createElement(\"div\"),oh=document.createElement(\"h2\"),list=document.createElement(\"ul\"),rs=document.createElement(\"div\"),rh=document.createElement(\"h2\"),intro=document.createElement(\"p\"),cards=document.createElement(\"div\"),actions=document.createElement(\"div\");screen.id=\"instructionalReviewScreen\";screen.className=\"mastery-report-screen review-materials-screen\";title.id=\"instructionalReviewTitle\";title.className=\"mastery-report-title\";title.tabIndex=-1;title.textContent=\"REVIEW BEFORE YOUR NEXT ATTEMPT\";sub.className=\"mastery-report-subtitle\";sub.textContent=\"Use these materials to reinforce the concepts that showed the weakest signal in this run.\";os.className=\"mastery-section\";oh.textContent=\"Learning Objectives to Review\";list.className=\"review-objective-list\";weak.forEach(id=>{const li=document.createElement(\"li\");li.textContent=`${id}: ${getInstructionalObjectiveTitle(id)}`;list.append(li)});os.append(oh,list);rs.className=\"mastery-section\";rh.textContent=\"Recommended Materials\";intro.className=\"resource-recommendation-intro\";intro.textContent=\"Based on the weakest learning objectives in this run, start with these materials before your next attempt.\";cards.className=\"resource-recommendation-list\";r.forEach(x=>cards.append(createInstructionalResourceCard(x)));if(!r.length)cards.textContent=\"No review material is available for these objectives yet.\";rs.append(rh,intro,cards);actions.className=\"mastery-actions\";[[\"Return to Mastery Report\",()=>showMasteryReportScreen(true),\"continue-btn\"],[\"Replay Mission\",()=>location.reload(),\"continue-btn secondary-modal-btn\"],[\"Choose Another Ledger Run\",()=>returnToModeSelectFromRun(),\"continue-btn secondary-modal-btn\"]].forEach(([x,f,c])=>{const b=document.createElement(\"button\");b.type=\"button\";b.className=c;b.textContent=x;b.addEventListener(\"click\",f);actions.append(b)});screen.append(title,sub,os,rs,actions);box.replaceChildren(screen);title.focus();}\n",
+    "roomKey": "nationalLedgerRoom",
+    "artifactKeys": [
+      "nationalLedgerVaultSeal",
+      "vaultPrism",
+      "vaultCrown"
+    ],
+    "legacyArtifactFields": [
+      "vaultSeal",
+      "vaultPrism",
+      "vaultCrown"
+    ],
+    "highScoreFunction": "function updateHighScores(newTimeMs) {\n    let scores = JSON.parse(localStorage.getItem(\"nationalLedgerHighScores\")) || [];\n    scores.push({ name: username, time: newTimeMs, date: new Date().toLocaleDateString() });\n    \n    // Sort by time (lowest/fastest first) and keep top 5\n    scores.sort((a, b) => a.time - b.time);\n    scores = scores.slice(0, 5);\n    \n    localStorage.setItem(\"nationalLedgerHighScores\", JSON.stringify(scores));\n    return scores;\n}",
+    "pseudonymFunction": "function generatePseudonymFromSeed(seed) {\n    const titles = [\n        \"Axiom\", \"Ledger\", \"Vector\", \"Meridian\", \"Signal\", \"Cipher\",\n        \"Frontier\", \"Equity\", \"Oracle\", \"Index\", \"Summit\", \"Nexus\",\n        \"Vault\", \"Prism\", \"Civic\", \"Astral\", \"Beacon\", \"Horizon\"\n    ];\n\n    const roles = [\n        \"Appraiser\", \"Cartographer\", \"Arbiter\", \"Custodian\", \"Warden\", \"Registrar\",\n        \"Archivist\", \"Surveyor\", \"Magistrate\", \"Keeper\", \"Analyst\", \"Mediator\",\n        \"Steward\", \"Scribe\", \"Sentinel\", \"Marshal\", \"Seeker\", \"Auditor\"\n    ];\n\n    let hash = 0;\n    const cleanSeed = String(seed || \"run\").trim().toLowerCase();\n\n    for (let i = 0; i < cleanSeed.length; i++) {\n        hash = ((hash << 5) - hash) + cleanSeed.charCodeAt(i);\n        hash |= 0;\n    }\n\n    const positiveHash = Math.abs(hash);\n\n    const title = titles[positiveHash % titles.length];\n    const role = roles[Math.floor(positiveHash / titles.length) % roles.length];\n    const number = 1000 + (positiveHash % 9000);\n\n    return `${title}${role}${number}`;\n}",
+    "streakFunction": "function handleStreakVisuals() {\n    let streakMsg = \"\";\n    let streakColor = \"#fbbf24\";\n\nif (streak === 5) {\n        streakMsg = `<span class=\"streak\"><img src=\"streakmark.webp\" class=\"streak-icon\" alt=\"\" aria-hidden=\"true\">CALIBRATION MARKED</span>`;\n    streakColor = \"#d6b15c\";\n}\nelse if (streak === 10) {\n        streakMsg = `<span class=\"streak\"><img src=\"streakspark.webp\" class=\"streak-icon\" alt=\"\" aria-hidden=\"true\">STABILITY SPARKED</span>`;\n    streakColor = \"#c46a3a\";\n}\nelse if (streak === 20) {\n        streakMsg = `<span class=\"streak\"><img src=\"streakstar.webp\" class=\"streak-icon\" alt=\"\" aria-hidden=\"true\">CONTINUITY STARRED</span>`;\n    streakColor = \"#f0c75e\";\n}\n\n    if (streakMsg) {\n        sfxMilestone.currentTime = 0;\n        sfxMilestone.play();\n        document.getElementById(\"streakDisplay\").innerHTML = streakMsg;\n        document.getElementById(\"streakDisplay\").style.color = streakColor;\n    } else if (streak > 0) {\n        document.getElementById(\"streakDisplay\").innerText = `Streak: ${streak}`;\n        document.getElementById(\"streakDisplay\").style.color = \"#fbbf24\";\n    }\n}",
+    "resourceCSS": "/* 16. INSTRUCTIONAL RESOURCE RECOMMENDATIONS */\n.resource-recommendation-section{margin-top:14px}.resource-recommendation-intro{color:#e2d7b9;line-height:1.55;margin:0 0 14px}.resource-recommendation-list{display:grid;grid-template-columns:1fr;gap:12px}.resource-card{min-width:0;padding:16px;border:1px solid rgba(214,177,92,.48);border-radius:11px;background:linear-gradient(135deg,rgba(64,84,67,.92),rgba(11,14,12,.97));box-shadow:0 0 16px rgba(0,0,0,.38),inset 0 0 18px rgba(214,177,92,.07)}.resource-card-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.resource-card-title{min-width:0;margin:0;color:#f5db9b;font-size:17px;font-weight:800;line-height:1.32;overflow-wrap:anywhere}.resource-card-type{flex:0 0 auto;max-width:100%;padding:4px 8px;border:1px solid rgba(214,177,92,.62);border-radius:999px;color:#efe0b1;font-size:10px;font-weight:800;letter-spacing:.8px;line-height:1.2;text-transform:uppercase; white-space:nowrap; overflow-wrap:normal;}.resource-card-description{margin:10px 0 14px;color:rgba(243,234,210,.93);line-height:1.55;overflow-wrap:anywhere}.resource-card-link{display:inline-flex;align-items:center;justify-content:center;min-height:40px;max-width:100%;padding:9px 14px;border:1px solid rgba(244,213,141,.8);border-radius:8px;background:linear-gradient(180deg,#5a704e,#334331);color:#fff6d7;font-weight:800;text-align:center;text-decoration:none}.resource-card-link:hover{background:linear-gradient(180deg,#71865c,#43583d);transform:translateY(-1px)}.resource-card-link:focus-visible{outline:3px solid #f5db9b;outline-offset:3px;box-shadow:0 0 0 5px rgba(214,177,92,.45)}.review-materials-screen .mastery-section h2{margin:0 0 12px;color:#f4d58d;font-size:18px}.review-objective-list{margin:0;padding-left:22px;color:#f3ead2}.review-objective-list li{margin:7px 0;line-height:1.48}@media(max-width:420px){.resource-card{padding:14px}.resource-card-header{flex-direction:column;gap:8px}.resource-card-link{display:flex;width:100%;box-sizing:border-box}}\n",
+    "modeKey": "nationalLedgerCurrentMode"
+  },
+  "equilibrium-crisis": {
+    "title": "The Equilibrium Crisis",
+    "key": "equilibriumCrisis",
+    "bank": "equilibrium_crisis_questions_student.js",
+    "bankSha256": "f523800ea4c3f733cc763dd8af345d485de74f404c4316d89741edb9dc2a7860",
+    "constants": [
+      "const SOUND_PREF_KEY = \"equilibriumCrisisSoundEnabled\";",
+      "const SAVE_KEY = \"equilibriumCrisisSave_v1\";",
+      "const REALM_MISSION_KEY = \"equilibriumCrisis\";",
+      "const REALM_STARTED_KEY = \"economicRealm_equilibriumCrisis_started\";",
+      "const REALM_COMPLETE_KEY = \"economicRealm_equilibriumCrisis_complete\";",
+      "const REALM_STATUS_KEY = \"economicRealm_equilibriumCrisis_status\";",
+      "const REALM_ROOM_KEY = \"economicRealm_equilibriumCrisis_room\";",
+      "const REALM_TOTAL_CORRECT_KEY = \"economicRealm_totalCorrectAnswers\";",
+      "const REALM_BEST_STREAK_KEY = \"economicRealm_bestStreak\";",
+      "const REALM_EXAM_COMPLETE_KEY = \"economicRealm_examDrillCompleted\";",
+      "const REALM_TRIAL_BY_CLOCK_KEY = \"economicRealm_trialByClock\";",
+      "const REALM_PERFECT_CALIBRATION_KEY = \"economicRealm_perfectCalibration\";",
+      "const REALM_RETURN_AND_REBUILD_KEY = \"economicRealm_returnAndRebuild\";",
+      "const SCORE_ATTACK_STORAGE_PREFIX = \"equilibriumCrisisScoreAttack\";",
+      "const TELEMETRY_PREFIX = \"equilibriumCrisisTelemetry_\";"
+    ],
+    "artifacts": {
+      "shard": {
+        "img": "shard.webp",
+        "title": "Signal Shard",
+        "text": "The broken signal is contained. You can now separate noise from true market pressure."
+      },
+      "gauge": {
+        "img": "gauge.webp",
+        "title": "Warden's Gauge",
+        "text": "The gauge steadies the measure. Supply, demand, shortage, and surplus can be read before the crisis spreads."
+      },
+      "seal": {
+        "img": "decree.webp",
+        "title": "Equilibrium Seal",
+        "text": "The seal restores balance. Price controls, taxes, and market pressure can no longer hide their consequences."
+      }
+    },
+    "bossImages": [
+      "breaker.webp",
+      "warden.webp",
+      "marshal.webp"
+    ],
+    "bossNames": [
+      "THE SIGNAL BREAKER",
+      "THE MEASURE WARDEN",
+      "THE MARSHAL OF EQUILIBRIUM"
+    ],
+    "guideName": "The Custodian",
+    "guideImage": "chancellor.webp",
+    "objectiveLabels": {
+      "LO1.1": "Trade-offs, scarcity, efficiency, and equality",
+      "LO1.1_tradeoffs_analysis": "Trade-offs, scarcity, efficiency, and equality",
+      "LO1.2": "Opportunity cost and the value of the next best alternative",
+      "LO1.2_opportunity_cost": "Opportunity cost and the value of the next best alternative",
+      "LO1.2_calculate_opportunity_cost": "Calculating opportunity cost",
+      "LO1.3": "Marginal reasoning and decisions at the margin",
+      "LO1.3_marginal_decision": "Marginal benefit, marginal cost, and decisions at the margin",
+      "LO1.3_calculate_margin": "Calculating decisions at the margin",
+      "LO1.3_marginal_reasoning": "Marginal reasoning and incremental decision-making",
+      "LO1.4": "Incentives and behavioral responses",
+      "LO1.4_incentives_behavior": "Incentives and behavioral responses",
+      "LO1.5": "Trade, specialization, and mutual gains",
+      "LO1.5_gains_from_trade": "Trade, specialization, and mutual gains",
+      "LO1.5_trade_good_for_everyone": "Why trade can make people better off",
+      "LO1.6": "Markets, resource allocation, and market failure",
+      "LO1.6_markets_allocate_resources": "Markets and resource allocation",
+      "LO1.6_markets_not_perfect": "Market failure and limits of markets",
+      "LO1.6_markets_good_not_perfect": "Markets as useful but imperfect allocation systems",
+      "LO2.1": "Economic models, assumptions, and scientific reasoning",
+      "LO2.1_models_scientific_method": "Economic models, assumptions, and scientific reasoning",
+      "LO2.1_economic_models": "Economic models and simplification",
+      "LO2.2": "Circular flow, PPFs, trade-offs, efficiency, and growth",
+      "LO2.2_ppf_tradeoffs": "PPFs, trade-offs, and opportunity cost",
+      "LO2.2_ppf_efficiency": "Efficient, inefficient, attainable, and unattainable PPF points",
+      "LO2.2_ppf_opportunity_cost": "Opportunity cost on the PPF",
+      "LO2.2_ppf_choices_tradeoffs": "PPFs, choices, and trade-offs",
+      "LO2.2_circular_flow_model": "Circular-flow model and household-firm interactions",
+      "LO2.2_circular_flow": "Circular-flow model",
+      "LO2.3": "Microeconomics versus macroeconomics",
+      "LO2.3_microeconomics": "Microeconomics and individual market decisions",
+      "LO2.3_macroeconomics": "Macroeconomics and economy-wide issues",
+      "LO2.3_micro_vs_macro": "Microeconomics versus macroeconomics",
+      "LO2.4": "Positive versus normative statements",
+      "LO2.4_normative_statement": "Normative statements and value judgments",
+      "LO2.4_positive_statement": "Positive statements and testable claims",
+      "LO2.4_positive_vs_normative": "Positive versus normative statements",
+      "LO2.5": "Economists as scientists and policy advisers",
+      "LO2.5_economists_policy_role": "Economists as policy advisers",
+      "LO2.5_policy_roles": "Economists' roles in policy",
+      "LO4.1": "Competitive markets and price-taking behavior",
+      "LO4.1_competitive_market": "Competitive markets and price-taking behavior",
+      "LO4.1_define_competitive_market": "Defining competitive markets",
+      "LO4.2": "Demand, quantity demanded, and demand shifters",
+      "LO4.2_law_of_demand": "Law of demand and quantity demanded",
+      "LO4.2_quantity_demanded": "Movement along demand and quantity demanded",
+      "LO4.2_demand_shifts": "Demand shifters and changes in demand",
+      "LO4.2_demand": "Demand and quantity demanded",
+      "LO4.3": "Supply, quantity supplied, and supply shifters",
+      "LO4.3_law_of_supply": "Law of supply and quantity supplied",
+      "LO4.3_quantity_supplied": "Movement along supply and quantity supplied",
+      "LO4.3_supply_shifts": "Supply shifters and changes in supply",
+      "LO4.3_supply": "Supply and quantity supplied",
+      "LO4.4": "Market equilibrium, shortages, surpluses, and market changes",
+      "LO4.4_equilibrium": "Market equilibrium",
+      "LO4.4_shortage": "Shortages and upward price pressure",
+      "LO4.4_surplus": "Surpluses and downward price pressure",
+      "LO4.4_analyze_market_changes": "Analyzing market changes with supply and demand",
+      "LO4.4_supply_demand_together": "Supply and demand together",
+      "LO4.5": "Prices as signals for allocating scarce resources",
+      "LO4.5_prices_allocate_resources": "Prices as signals for allocating scarce resources",
+      "LO4.5_role_of_prices": "Role of prices in market economies",
+      "LO6.1": "Price ceilings, binding ceilings, and shortages",
+      "LO6.1_binding_price_ceiling": "Binding price ceilings",
+      "LO6.1_calculate_ceiling_effects": "Calculating shortages from price ceilings",
+      "LO6.1_price_ceiling": "Price ceilings",
+      "LO6.1_price_ceiling_effects": "Effects of price ceilings",
+      "LO6.2": "Price floors, binding floors, and surpluses",
+      "LO6.2_binding_price_floor": "Binding price floors",
+      "LO6.2_calculate_floor_effects": "Calculating surpluses from price floors",
+      "LO6.2_price_floor": "Price floors",
+      "LO6.2_price_floor_effects": "Effects of price floors",
+      "LO6.3": "Taxes, tax wedges, and quantity effects",
+      "LO6.3_tax_wedge": "Tax wedges between buyers and sellers",
+      "LO6.3_tax_quantity_effect": "Taxes and reduced quantity traded",
+      "LO6.3_tax_effects": "Effects of taxes on price and quantity",
+      "LO6.4": "Equivalence of taxes on buyers and sellers",
+      "LO6.4_tax_equivalence": "Equivalence of buyer and seller taxes",
+      "LO6.5": "Tax incidence and how burden is divided",
+      "LO6.5_tax_incidence": "Tax incidence and burden sharing",
+      "LO6.5_tax_burden_elasticity": "Tax burden and elasticity",
+      "LO24.1": "Income and Expenditure",
+      "LO24.2": "GDP Definition and Counting Rules",
+      "LO24.3": "GDP Components",
+      "LO24.4": "Real and Nominal GDP",
+      "LO24.5": "GDP and Well-Being",
+      "LO25.1": "CPI and Inflation",
+      "LO25.2": "CPI Bias and Cost of Living",
+      "LO25.3": "CPI versus GDP Deflator",
+      "LO25.4": "Inflation Adjustment",
+      "LO25.5": "Nominal and Real Interest Rates",
+      "LO26.1": "Growth Differences Across Countries",
+      "LO26.2": "Productivity and Living Standards",
+      "LO26.3": "Sources of Productivity",
+      "LO26.4": "Growth Policy",
+      "LO29.1": "Labor Force Statistics",
+      "LO29.2": "Employment Categories",
+      "LO29.3": "Types of Unemployment",
+      "LO29.4": "Labor Market Policies",
+      "LO29.5": "Natural Rate of Unemployment"
+    },
+    "objectiveLabelSource": "const EQUILIBRIUM_CRISIS_OBJECTIVE_LABELS = (typeof objectiveLabels !== \"undefined\") ? objectiveLabels : {};",
+    "areaFunction": "function getAreaName(r) {\n    if (r <= 9) return \"The Signal Fracture\";\n    if (r === 10) return \"The Breaker's Gate\";\n    if (r <= 19) return \"The Calibration Walk\";\n    if (r === 20) return \"The Warden's Measure\";\n    if (r <= 25) return \"The Equilibrium Breach\";\n    if (r <= 29) return \"The Recovery Causeway\";\n    return \"The Marshal's Tribunal\";\n}",
+    "wizardFeedback": {
+      "correct": [
+        "The value holds.",
+        "A sound exchange.",
+        "You weighed the cost correctly.",
+        "That choice clears the market.",
+        "Accepted. The signal was read."
+      ],
+      "wrong": [
+        "Mispriced.",
+        "That value collapses.",
+        "You ignored the tradeoff.",
+        "Bad exchange. Try again.",
+        "The signal was there. You missed it."
+      ]
+    },
+    "wizardLines": {
+      "definition": [
+        "Name the principle.",
+        "Define the tradeoff.",
+        "Identify the economic idea.",
+        "Classify the market force.",
+        "State the rule of exchange.",
+        "What concept is being valued?"
+      ],
+      "interpretation": [
+        "Read the market signal.",
+        "Trace the shift.",
+        "Follow the incentive.",
+        "What changes in the exchange?",
+        "Compare the costs and benefits.",
+        "Watch price and quantity move."
+      ],
+      "trap": [
+        "That answer looks valuable, but it is mispriced.",
+        "Do not confuse demand with quantity demanded.",
+        "Do not confuse supply with quantity supplied.",
+        "Slow down. The curve did not move.",
+        "The signal is there. Read it carefully.",
+        "Check the tradeoff before you choose.",
+        "A lower price is not always a lower cost.",
+        "Do not mistake movement along a curve for a shift."
+      ],
+      "calculation": [
+        "Price the tradeoff.",
+        "Calculate the market response.",
+        "Measure the change.",
+        "Find the elasticity.",
+        "Numbers first. The market follows.",
+        "Quantify the exchange."
+      ],
+      "default": [
+        "Choose the better trade.",
+        "Read the signal.",
+        "Weigh the cost.",
+        "Make the exchange.",
+        "Decide what the market says."
+      ]
+    },
+    "soundSource": "const bgMusic = new Audio('chamber.mp3'); \nbgMusic.loop = true; \nbgMusic.volume = 0.05; \n\nconst bossMusic = new Audio('boss_battle_music.mp3');\nbossMusic.loop = true;\nbossMusic.volume = 0.10;\n\nconst finalBossMusic = new Audio('final_boss_music.mp3');\nfinalBossMusic.loop = true;\nfinalBossMusic.volume = 0.12; // slightly louder, it's the final fight    \n    \nconst sfxMilestone = new Audio('streak.wav');\nconst sfxVictory = new Audio('victory.wav');\nconst sfxBossHit = new Audio('boss_hit.wav');\n      sfxBossHit.volume = 0.5;\nconst sfxCorrect = new Audio('ding.wav');\n      sfxCorrect.volume = 0.25;\nconst sfxWrong = new Audio('mistake.wav');\n      sfxWrong.volume = 0.4;\n    \nconst hallwayImages = [\n    \"hallway1.webp\",\n    \"hallway2.webp\",\n    \"hallway3.webp\"\n];\n\nlet soundEnabled = true;\nconst SOUND_PREF_KEY = \"equilibriumCrisisSoundEnabled\";\n\nfunction updateSoundToggle(){\n  const button = document.getElementById(\"soundToggle\");\n  if(!button) return;\n  button.innerText = soundEnabled ? \"Sound On\" : \"Sound Off\";\n}\n\nfunction setAllGameAudioMuted(isMuted){\n  [bgMusic, bossMusic, finalBossMusic, sfxMilestone, sfxVictory, sfxBossHit, sfxCorrect, sfxWrong]\n    .filter(Boolean)\n    .forEach(audio => {\n      audio.muted = isMuted;\n    });\n}\n\nfunction toggleGameSound(){\n  soundEnabled = !soundEnabled;\n\n  localStorage.setItem(SOUND_PREF_KEY, soundEnabled ? \"true\" : \"false\");\n  setAllGameAudioMuted(!soundEnabled);\n  updateSoundToggle();\n\n  if(soundEnabled){\n      resumeCurrentMusic();\n  } else {\n      pauseAllGameMusic();\n  }\n}\n\nfunction restoreSoundSetting(){\n  const saved = localStorage.getItem(SOUND_PREF_KEY);\n\n  soundEnabled = saved !== \"false\";\n\n  setAllGameAudioMuted(!soundEnabled);\n  updateSoundToggle();\n}\n\nrestoreSoundSetting();\n\nsetGameControlsVisible(false);\n  \t \nfunction setGameControlsVisible(isVisible){\n    document.body.classList.toggle(\"game-active\", !!isVisible);\n}\n\nfunction pauseAllGameMusic(){\n    [bgMusic, bossMusic, finalBossMusic].filter(Boolean).forEach(audio => {\n        audio.pause();\n    });\n}\n\nfunction safePlay(audio){\n    if(!audio || !soundEnabled) return Promise.resolve();\n\n    audio.muted = false;\n\n    return audio.play().catch(error => {\n        console.warn(\"Audio play blocked:\", error);\n    });\n}\n\nfunction resumeCurrentMusic(){\n    if(typeof currentMusic !== \"undefined\"){\n        if(currentMusic === \"boss\") return safePlay(bossMusic);\n        if(currentMusic === \"finalBoss\") return safePlay(finalBossMusic);\n        if(currentMusic === \"exploration\") return safePlay(bgMusic);\n    }\n\n    return safePlay(bgMusic);\n}\n\t \n",
+    "realmFunctions": [
+      "function getMissionAchievementPrefix(){\n    return `economicRealm_${REALM_MISSION_KEY}`;\n}",
+      "function syncRealmAttemptState(){\n    if(!modeAllowsRealmProgress()) return;\n    localStorage.setItem(REALM_STARTED_KEY, \"true\");\n    if(isRealmMissionComplete()){\n        localStorage.setItem(REALM_STATUS_KEY, \"restored\");\n        localStorage.setItem(REALM_ROOM_KEY, \"30\");\n        return;\n    }\n    localStorage.setItem(REALM_STATUS_KEY, \"contested\");\n    localStorage.setItem(REALM_ROOM_KEY, String(room || 1));\n}",
+      "function recordTimedTrialAchievementStats(accuracy, reachedRoom){\n    const safeAccuracy = Number.isFinite(Number(accuracy)) ? Number(accuracy) : 0;\n    const safeRoom = Number.isFinite(Number(reachedRoom)) ? Number(reachedRoom) : 0;\n\n    updateRealmMaxStat(\"equilibriumCrisisTimedBestRoom\", safeRoom);\n    updateRealmMaxStat(\"equilibriumCrisisTimedBestAccuracy\", safeAccuracy);\n\n    updateRealmMaxStat(\"economicRealm_timedBestRoom\", safeRoom);\n    updateRealmMaxStat(\"economicRealm_timedBestAccuracy\", safeAccuracy);\n\n    updateRealmMaxStat(`${getMissionAchievementPrefix()}_timedBestRoom`, safeRoom);\n    updateRealmMaxStat(`${getMissionAchievementPrefix()}_timedBestAccuracy`, safeAccuracy);\n\n    if(safeRoom >= 30 && safeAccuracy >= 80){\n        setRealmFlag(REALM_TRIAL_BY_CLOCK_KEY);\n        setRealmFlag(`${getMissionAchievementPrefix()}_trial_by_clock_complete`);\n    }\n}"
+    ],
+    "resourceSource": "const INSTRUCTIONAL_RESOURCE_TYPE_LABELS={video:\"Lecture Video\",\"worked-problem\":\"Worked-Problems Video\",slides:\"Lecture Slides\",other:\"Course Material\"};\nfunction getInstructionalResourceConfig(){const c=window.EQUILIBRIUM_CRISIS_INSTRUCTIONAL_RESOURCES;return c?.chapters&&c?.objectives?c:null}function normalizeLearningObjectiveId(v){const s=String(v||\"\").trim(),m=s.match(/^(?:LO\\s*)?(\\d+)\\s*[._\\-\\s]\\s*(\\d+)(?:[_\\-\\s].*)?$/i);if(!m||/(?:LO\\d+\\.\\d+).*?(?:LO\\d+\\.\\d+)/i.test(s))return null;const id=`LO${Number(m[1])}.${Number(m[2])}`;return getInstructionalResourceConfig()?.objectives?.[id]?id:null}function getChapterFromLearningObjective(v){const id=normalizeLearningObjectiveId(v);return id?id.match(/^LO(\\d+)\\./)[1]:null}function isSafeInstructionalResourceUrl(v){if(typeof v!==\"string\"||!v.trim())return false;const u=v.trim();if(/^https:\\/\\//i.test(u)){try{return new URL(u).protocol===\"https:\"}catch(e){return false}}return /^\\.\\.\\/(?:The Market Gate|The National Ledger)\\/resources\\/(?:[^\\\\/:?#]+\\/)*[^\\\\/:?#]+\\.(?:ppt|pptx|pdf)$/i.test(u)&&!/(?:^|\\/)\\.\\.(?:\\/|$)/.test(u.replace(/^\\.\\.\\//,\"\"))}function mapFor(c,id){return c?.objectives?.[id]||null}function resourceById(c,id){for(const ch of Object.values(c?.chapters||{}))for(const r of ch.resources||[])if(r?.id===id&&isSafeInstructionalResourceUrl(r.url))return r;return null}function getRecommendedResources(raw){const c=getInstructionalResourceConfig();if(!c||!Array.isArray(raw))return[];const max=3,out=new Map(),add=r=>{if(r?.id&&!out.has(r.id)&&isSafeInstructionalResourceUrl(r.url))out.set(r.id,r)};raw.forEach(x=>{if(out.size>=max)return;const id=normalizeLearningObjectiveId(x);if(!id)return;(mapFor(c,id)?.resourceIds||[]).map(y=>resourceById(c,y)).filter(Boolean).forEach(add);if(out.size>=max)return;const ch=c.chapters[getChapterFromLearningObjective(id)];(ch?.fallbackResourceIds||[]).map(y=>resourceById(c,y)).filter(Boolean).forEach(add)});return[...out.values()].slice(0,max)}function getWeakLearningObjectiveIds(r){return r?.hasObjectiveWeakness?(r.weakestObjectives||[]).map(x=>x.key).filter(x=>normalizeLearningObjectiveId(x)):[]}function objectiveTitle(id){const n=normalizeLearningObjectiveId(id);return n?mapFor(getInstructionalResourceConfig(),n)?.title||n:formatMasteryLabel(id)}function label(r){return r.type===\"slides\"?\"Open Slides\":\"Watch Video\"}function cards(rs){return rs.map(r=>`<article class=\"resource-card\"><div class=\"resource-card-header\"><h4 class=\"resource-card-title\">${escapeHTML(r.title)}</h4><span class=\"resource-card-type\">${escapeHTML(INSTRUCTIONAL_RESOURCE_TYPE_LABELS[r.type]||\"Course Material\")}</span></div><p class=\"resource-card-description\">${escapeHTML(r.description||\"\")}</p><a class=\"resource-card-link\" href=\"${escapeHTML(r.url)}\" target=\"_blank\" rel=\"noopener noreferrer\">${label(r)}</a></article>`).join(\"\")}function renderInstructionalResourceSection(r){const weak=getWeakLearningObjectiveIds(r);if(!weak.length)return\"\";const rs=getRecommendedResources(weak),intro=\"Based on the weakest learning objectives in this run, start with these materials before your next attempt.\";return `<div class=\"mastery-section resource-recommendation-section\"><h3>Recommended Review</h3><p class=\"resource-recommendation-intro\">${intro}</p>${rs.length?`<div class=\"resource-recommendation-list\">${cards(rs)}</div>`:'<p class=\"mastery-empty\">No review material is available for these objectives yet.</p>'}<div class=\"mastery-actions\"><button class=\"continue-btn\" onclick=\"openInstructionalReviewScreen()\">Review Materials</button></div></div>`}function domCard(r){const a=document.createElement(\"article\"),h=document.createElement(\"div\"),t=document.createElement(\"h3\"),k=document.createElement(\"span\"),d=document.createElement(\"p\"),l=document.createElement(\"a\");a.className=\"resource-card\";h.className=\"resource-card-header\";t.className=\"resource-card-title\";t.textContent=r.title;k.className=\"resource-card-type\";k.textContent=INSTRUCTIONAL_RESOURCE_TYPE_LABELS[r.type]||\"Course Material\";h.append(t,k);d.className=\"resource-card-description\";d.textContent=r.description||\"\";l.className=\"resource-card-link\";l.href=r.url;l.target=\"_blank\";l.rel=\"noopener noreferrer\";l.textContent=label(r);a.append(h,d,l);return a}function openInstructionalReviewScreen(){const box=document.getElementById(\"gameBox\"),r=getMasteryReportData(),weak=getWeakLearningObjectiveIds(r),rs=getRecommendedResources(weak),s=document.createElement(\"section\"),title=document.createElement(\"h1\"),sub=document.createElement(\"p\"),os=document.createElement(\"div\"),ol=document.createElement(\"ul\"),ms=document.createElement(\"div\"),list=document.createElement(\"div\"),actions=document.createElement(\"div\");s.className=\"mastery-report-screen review-materials-screen\";title.className=\"mastery-report-title\";title.tabIndex=-1;title.textContent=\"REVIEW BEFORE YOUR NEXT ATTEMPT\";sub.className=\"mastery-report-subtitle\";sub.textContent=\"Use these materials to reinforce the concepts that showed the weakest signal in this run.\";os.className=\"mastery-section\";const oh=document.createElement(\"h2\");oh.textContent=\"Learning Objectives to Review\";ol.className=\"review-objective-list\";weak.forEach(id=>{const li=document.createElement(\"li\");li.textContent=`${id}: ${objectiveTitle(id)}`;ol.append(li)});os.append(oh,ol);ms.className=\"mastery-section\";const mh=document.createElement(\"h2\"),intro=document.createElement(\"p\");mh.textContent=\"Recommended Materials\";intro.className=\"resource-recommendation-intro\";intro.textContent=\"Based on the weakest learning objectives in this run, start with these materials before your next attempt.\";list.className=\"resource-recommendation-list\";rs.forEach(x=>list.append(domCard(x)));ms.append(mh,intro,list);actions.className=\"mastery-actions\";[[\"Return to Mastery Report\",()=>showMasteryReportScreen(true)],[\"Replay Mission\",()=>location.reload()],[\"Choose Another Crisis Run\",()=>returnToModeSelectFromRun()]].forEach(([x,f])=>{const b=document.createElement(\"button\");b.className=\"continue-btn\";b.textContent=x;b.addEventListener(\"click\",f);actions.append(b)});s.append(title,sub,os,ms,actions);box.replaceChildren(s);title.focus()}\n",
+    "roomKey": "equilibriumCrisisRoom",
+    "artifactKeys": [
+      "vaultShard",
+      "vaultGauge",
+      "equilibriumCrisisVaultSeal"
+    ],
+    "legacyArtifactFields": [
+      "vaultShard",
+      "vaultGauge",
+      "vaultSeal"
+    ],
+    "highScoreFunction": "function updateHighScores(newTimeMs) {\n    let scores = JSON.parse(localStorage.getItem(\"equilibriumCrisisHighScores\")) || [];\n    scores.push({ name: username, time: newTimeMs, date: new Date().toLocaleDateString() });\n    \n    // Sort by time (lowest/fastest first) and keep top 5\n    scores.sort((a, b) => a.time - b.time);\n    scores = scores.slice(0, 5);\n    \n    localStorage.setItem(\"equilibriumCrisisHighScores\", JSON.stringify(scores));\n    return scores;\n}",
+    "pseudonymFunction": "function generatePseudonymFromSeed(seed) {\n    const titles = [\n        \"Axiom\", \"Ledger\", \"Vector\", \"Meridian\", \"Signal\", \"Cipher\",\n        \"Frontier\", \"Equity\", \"Oracle\", \"Index\", \"Summit\", \"Nexus\",\n        \"Vault\", \"Prism\", \"Civic\", \"Astral\", \"Beacon\", \"Horizon\"\n    ];\n\n    const roles = [\n        \"Appraiser\", \"Cartographer\", \"Arbiter\", \"Custodian\", \"Warden\", \"Registrar\",\n        \"Archivist\", \"Surveyor\", \"Magistrate\", \"Keeper\", \"Analyst\", \"Mediator\",\n        \"Steward\", \"Scribe\", \"Sentinel\", \"Marshal\", \"Seeker\", \"Auditor\"\n    ];\n\n    let hash = 0;\n    const cleanSeed = String(seed || \"run\").trim().toLowerCase();\n\n    for (let i = 0; i < cleanSeed.length; i++) {\n        hash = ((hash << 5) - hash) + cleanSeed.charCodeAt(i);\n        hash |= 0;\n    }\n\n    const positiveHash = Math.abs(hash);\n\n    const title = titles[positiveHash % titles.length];\n    const role = roles[Math.floor(positiveHash / titles.length) % roles.length];\n    const number = 1000 + (positiveHash % 9000);\n\n    return `${title}${role}${number}`;\n}",
+    "streakFunction": "function handleStreakVisuals() {\n    let streakMsg = \"\";\n    let streakColor = \"#f0c86a\";\n\n    if (streak === 5) {\n        streakMsg = `<span class=\"streak\"><img src=\"streakspark.webp\" class=\"streak-icon\" alt=\"\" aria-hidden=\"true\">STABILITY SPARK IGNITED</span>`;\n        streakColor = \"#f0c86a\";\n    }\n    else if (streak === 10) {\n        streakMsg = `<span class=\"streak\"><img src=\"streakmark.webp\" class=\"streak-icon\" alt=\"\" aria-hidden=\"true\">CALIBRATION MARK CLAIMED</span>`;\n        streakColor = \"#38bdf8\";\n    }\n    else if (streak === 20) {\n        streakMsg = `<span class=\"streak\"><img src=\"streaksigil.webp\" class=\"streak-icon\" alt=\"\" aria-hidden=\"true\">RECOVERY SIGIL SEALED</span>`;\n        streakColor = \"#f5e6b8\";\n    }\n\n    if (streakMsg) {\n        sfxMilestone.currentTime = 0;\n        sfxMilestone.play();\n        document.getElementById(\"streakDisplay\").innerHTML = streakMsg;\n        document.getElementById(\"streakDisplay\").style.color = streakColor;\n    } else if (streak > 0) {\n        document.getElementById(\"streakDisplay\").innerText = `Streak: ${streak}`;\n        document.getElementById(\"streakDisplay\").style.color = \"#f0c86a\";\n    }\n}",
+    "resourceCSS": "/* 16. INSTRUCTIONAL RESOURCE RECOMMENDATIONS */\n.resource-recommendation-section{margin-top:14px}.resource-recommendation-intro{color:#d5e9f7;line-height:1.55;margin:0 0 14px}.resource-recommendation-list{display:grid;grid-template-columns:1fr;gap:12px}.resource-card{min-width:0;padding:16px;border:1px solid rgba(92,197,220,.48);border-radius:11px;background:linear-gradient(135deg,rgba(16,55,76,.92),rgba(5,13,25,.97));box-shadow:0 0 16px rgba(0,0,0,.4),inset 0 0 18px rgba(92,197,220,.08)}.resource-card-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.resource-card-title{min-width:0;margin:0;color:#f5dc93;font-size:17px;font-weight:800;line-height:1.32;overflow-wrap:anywhere}.resource-card-type{flex:0 0 auto;max-width:100%;padding:4px 8px;border:1px solid rgba(92,197,220,.65);border-radius:999px;color:#d5f4ff;font-size:10px;font-weight:800;letter-spacing:.8px;line-height:1.2;text-transform:uppercase; white-space:nowrap; overflow-wrap:normal;}.resource-card-description{margin:10px 0 14px;color:rgba(231,244,251,.94);line-height:1.55;overflow-wrap:anywhere}.resource-card-link{display:inline-flex;align-items:center;justify-content:center;min-height:40px;max-width:100%;padding:9px 14px;border:1px solid rgba(245,220,147,.8);border-radius:8px;background:linear-gradient(180deg,#1c6985,#0c364f);color:#fff8d8;font-weight:800;text-align:center;text-decoration:none}.resource-card-link:hover{background:linear-gradient(180deg,#2a819b,#11506e);transform:translateY(-1px)}.resource-card-link:focus-visible{outline:3px solid #f5dc93;outline-offset:3px;box-shadow:0 0 0 5px rgba(92,197,220,.45)}.review-materials-screen .mastery-section h2{margin:0 0 12px;color:#f5dc93;font-size:18px}.review-objective-list{margin:0;padding-left:22px;color:#e7f4fb}.review-objective-list li{margin:7px 0;line-height:1.48}@media(max-width:420px){.resource-card{padding:14px}.resource-card-header{flex-direction:column;gap:8px}.resource-card-link{display:flex;width:100%;box-sizing:border-box}}\n/* =========================================\n   EQUILIBRIUM CRISIS PRODUCTION ALIGNMENT\n   Mobile containment validated in Phase 3.5\n========================================= */\n@media (max-width: 768px){\n  html,\n  body{\n    width:100%;\n    max-width:100%;\n    overflow-x:hidden;\n  }\n\n  #mazeTrack{\n    grid-template-columns:repeat(10, minmax(0, 1fr));\n    box-sizing:border-box;\n    max-width:100%;\n  }\n\n  .mastery-actions{\n    width:100%;\n    box-sizing:border-box;\n  }\n\n  .mastery-actions button{\n    flex:1 1 180px;\n    min-width:0;\n    max-width:100%;\n    box-sizing:border-box;\n    white-space:normal;\n    overflow-wrap:anywhere;\n  }\n\n  #graphLightbox{\n    max-width:100vw;\n    overflow:hidden;\n  }\n\n  #graphLightbox img{\n    width:min(100%, calc(100vw - 24px));\n    max-width:100%;\n    box-sizing:border-box;\n  }\n}\n\n",
+    "modeKey": "equilibriumCrisisCurrentMode"
+  },
+  "liquidity-grid": {
+    "title": "The Liquidity Grid",
+    "key": "liquidityGrid",
+    "bank": "liquidity_grid_questions_student.js",
+    "bankSha256": "070d1ae958db592ef7d1fee60a6b07f742404e29721554c34cb78398ca0b1d5f",
+    "constants": [
+      "const SOUND_PREF_KEY = \"liquidityGridSoundEnabled\";",
+      "const SAVE_KEY = \"liquidityGridSave_v1\";",
+      "const REALM_MISSION_KEY = \"liquidityGrid\";",
+      "const REALM_STARTED_KEY = \"economicRealm_liquidityGrid_started\";",
+      "const REALM_COMPLETE_KEY = \"economicRealm_liquidityGrid_complete\";",
+      "const REALM_STATUS_KEY = \"economicRealm_liquidityGrid_status\";",
+      "const REALM_ROOM_KEY = \"economicRealm_liquidityGrid_room\";",
+      "const REALM_TOTAL_CORRECT_KEY = \"economicRealm_totalCorrectAnswers\";",
+      "const REALM_BEST_STREAK_KEY = \"economicRealm_bestStreak\";",
+      "const REALM_EXAM_COMPLETE_KEY = \"economicRealm_examDrillCompleted\";",
+      "const REALM_TRIAL_BY_CLOCK_KEY = \"economicRealm_trialByClock\";",
+      "const REALM_PERFECT_CALIBRATION_KEY = \"economicRealm_perfectCalibration\";",
+      "const REALM_RETURN_AND_REBUILD_KEY = \"economicRealm_returnAndRebuild\";",
+      "const SCORE_ATTACK_STORAGE_PREFIX = \"liquidityGridScoreAttack\";",
+      "const TELEMETRY_PREFIX = \"liquidityGateTelemetry_\";"
+    ],
+    "artifacts": {
+      "reserveKey": {
+        "img": "reserve_key.webp",
+        "title": "Reserve Key",
+        "text": "The reserve mechanism is secured. Money, deposits, reserves, lending, and the multiplier can now be traced through the banking system."
+      },
+      "valuePrism": {
+        "img": "value_prism.webp",
+        "title": "The Vault Prism",
+        "text": "Nominal signals bend into real value. Inflation, purchasing power, quantity theory, real wages, and interest-rate effects can now be separated from money illusion."
+      },
+      "policyScepter": {
+        "img": "policy_scepter.webp",
+        "title": "The Policy Scepter",
+        "text": "Policy transmission is restored. Money supply, liquidity preference, interest rates, aggregate demand, crowding out, and stabilization choices now move through one system."
+      }
+    },
+    "bossImages": [
+      "warden.webp",
+      "wraith.webp",
+      "banker.webp"
+    ],
+    "bossNames": [
+      "THE DEPOSIT WARDEN",
+      "THE VAULT WRAITH",
+      "THE CENTRAL BANKER"
+    ],
+    "guideName": "The Custodian",
+    "guideImage": "chancellor.webp",
+    "objectiveLabels": {
+      "30.1": "Money: Functions, Forms, and Measures",
+      "30.2": "The Federal Reserve System",
+      "30.3": "Banks and Money Creation",
+      "30.4": "Federal Reserve Tools and Monetary Control",
+      "30.5": "Limits of Monetary Control",
+      "31.1": "Money Growth, Quantity Theory, and Inflation",
+      "31.2": "Classical Dichotomy and Monetary Neutrality",
+      "31.3": "Inflation and Nominal Interest Rates",
+      "31.4": "Costs of Inflation",
+      "31.5": "Inflation Policy, Inflation Tax, and Deflation",
+      "35.1": "Liquidity Preference and the Interest-Rate Effect",
+      "35.2": "Monetary Policy and Aggregate Demand",
+      "35.3": "Fiscal Policy and Aggregate Demand",
+      "35.4": "Multiplier Effect and Crowding Out",
+      "35.5": "Stabilization Policy"
+    },
+    "objectiveLabelSource": "const LIQUIDITY_GRID_OBJECTIVE_LABELS = (typeof objectiveLabels !== \"undefined\") ? objectiveLabels : {};",
+    "areaFunction": "function getAreaName(r) {\n    if (r <= 9) return \"Reserve Vault Approach\";\n    if (r === 10) return \"The Deposit Warden’s Gate\";\n    if (r <= 19) return \"Money Creation Grid\";\n    if (r === 20) return \"The Vault Wraith’s Station\";\n    if (r <= 25) return \"Inflation Signal Corridor\";\n    if (r <= 29) return \"Policy Transmission Floor\";\n    return \"The Central Banker's Tribunal\";\n}",
+    "wizardFeedback": {
+      "correct": [
+        "The grid accepts this entry.",
+        "Reconciled.",
+        "The account holds.",
+        "Your reasoning survives inspection.",
+        "Approved. Proceed."
+      ],
+      "wrong": [
+        "The grid rejects this entry.",
+        "Discrepancy detected.",
+        "Your calculation fails inspection.",
+        "The books do not balance.",
+        "Rejected. Correct the record."
+      ]
+    },
+    "wizardLines": {
+      "definition": [
+        "Define the term precisely.",
+        "No vague entries are accepted.",
+        "State the measure.",
+        "Classify it correctly."
+      ],
+      "interpretation": [
+        "Interpret the signal.",
+        "Trace the adjustment.",
+        "Read the account carefully.",
+        "What does the system reveal?"
+      ],
+      "trap": [
+        "This is where errors hide.",
+        "Most entries fail here.",
+        "The wording is not your ally.",
+        "Audit the assumption.",
+        "Look again before the grid closes."
+      ],
+      "calculation": [
+        "Calculate before you answer.",
+        "The numbers must reconcile.",
+        "Show the implied value.",
+        "Balance the account."
+      ],
+      "default": [
+        "Answer.",
+        "Proceed.",
+        "Enter your judgment.",
+        "Commit to the record."
+      ]
+    },
+    "soundSource": "const bgMusic = new Audio('chamber.mp3'); \nbgMusic.loop = true; \nbgMusic.volume = 0.05; \n\nconst bossMusic = new Audio('boss_battle_music.mp3');\nbossMusic.loop = true;\nbossMusic.volume = 0.10;\n\nconst finalBossMusic = new Audio('final_boss_music.mp3');\nfinalBossMusic.loop = true;\nfinalBossMusic.volume = 0.12; // slightly louder, it's the final fight    \n    \nconst sfxMilestone = new Audio('streak.wav');\nconst sfxVictory = new Audio('victory.wav');\nconst sfxBossHit = new Audio('boss_hit.wav');\n      sfxBossHit.volume = 0.5;\nconst sfxCorrect = new Audio('ding.wav');\n      sfxCorrect.volume = 0.25;\nconst sfxWrong = new Audio('mistake.wav');\n      sfxWrong.volume = 0.4;\n    \nconst hallwayImages = [\n    \"hallway1.webp\",\n    \"hallway2.webp\",\n    \"hallway3.webp\"\n];\n\nlet soundEnabled = true;\nconst SOUND_PREF_KEY = \"liquidityGridSoundEnabled\";\n\t \nfunction updateSoundToggle(){\n  const button = document.getElementById(\"soundToggle\");\n  if(!button) return;\n  button.innerText = soundEnabled ? \"Sound On\" : \"Sound Off\";\n}\n\nfunction setAllGameAudioMuted(isMuted){\n  [bgMusic, bossMusic, finalBossMusic, sfxMilestone, sfxVictory, sfxBossHit, sfxCorrect, sfxWrong]\n    .filter(Boolean)\n    .forEach(audio => {\n      audio.muted = isMuted;\n    });\n}\n\nfunction toggleGameSound(){\n  soundEnabled = !soundEnabled;\n\n  localStorage.setItem(SOUND_PREF_KEY, soundEnabled ? \"true\" : \"false\");\n  setAllGameAudioMuted(!soundEnabled);\n  updateSoundToggle();\n\n  if(soundEnabled){\n      resumeCurrentMusic();\n  } else {\n      pauseAllGameMusic();\n  }\n}\n\nfunction restoreSoundSetting(){\n  const saved = localStorage.getItem(SOUND_PREF_KEY);\n\n  soundEnabled = saved !== \"false\";\n\n  setAllGameAudioMuted(!soundEnabled);\n  updateSoundToggle();\n}\n\nrestoreSoundSetting();\n\nfunction setGameControlsVisible(isVisible){\n    document.body.classList.toggle(\"game-active\", !!isVisible);\n}\n\nsetGameControlsVisible(false);\n\nfunction pauseAllGameMusic(){\n    [bgMusic, bossMusic, finalBossMusic].filter(Boolean).forEach(audio => {\n        audio.pause();\n    });\n}\n\nfunction safePlay(audio){\n    if(!audio || !soundEnabled) return Promise.resolve();\n\n    audio.muted = false;\n\n    return audio.play().catch(error => {\n        console.warn(\"Audio play blocked:\", error);\n    });\n}\n\nfunction resumeCurrentMusic(){\n    if(typeof currentMusic !== \"undefined\"){\n        if(currentMusic === \"boss\") return safePlay(bossMusic);\n        if(currentMusic === \"finalBoss\") return safePlay(finalBossMusic);\n        if(currentMusic === \"exploration\") return safePlay(bgMusic);\n    }\n\n    return safePlay(bgMusic);\n}\n\t \n",
+    "realmFunctions": [
+      "function getMissionAchievementPrefix(){\n    return `economicRealm_${REALM_MISSION_KEY}`;\n}",
+      "function syncRealmAttemptState(){\n    if(!modeAllowsRealmProgress()) return;\n    localStorage.setItem(REALM_STARTED_KEY, \"true\");\n    if(isRealmMissionComplete()){\n        localStorage.setItem(REALM_STATUS_KEY, \"restored\");\n        localStorage.setItem(REALM_ROOM_KEY, \"30\");\n        return;\n    }\n    localStorage.setItem(REALM_STATUS_KEY, \"contested\");\n    localStorage.setItem(REALM_ROOM_KEY, String(room || 1));\n}",
+      "function recordTimedTrialAchievementStats(accuracy, reachedRoom){\n    const safeAccuracy = Number.isFinite(Number(accuracy)) ? Number(accuracy) : 0;\n    const safeRoom = Number.isFinite(Number(reachedRoom)) ? Number(reachedRoom) : 0;\n\n    updateRealmMaxStat(\"liquidityGridTimedBestRoom\", safeRoom);\n    updateRealmMaxStat(\"liquidityGridTimedBestAccuracy\", safeAccuracy);\n\n    updateRealmMaxStat(\"economicRealm_timedBestRoom\", safeRoom);\n    updateRealmMaxStat(\"economicRealm_timedBestAccuracy\", safeAccuracy);\n\n    updateRealmMaxStat(`${getMissionAchievementPrefix()}_timedBestRoom`, safeRoom);\n    updateRealmMaxStat(`${getMissionAchievementPrefix()}_timedBestAccuracy`, safeAccuracy);\n\n    if(safeRoom >= 30 && safeAccuracy >= 80){\n        setRealmFlag(REALM_TRIAL_BY_CLOCK_KEY);\n        setRealmFlag(`${getMissionAchievementPrefix()}_trial_by_clock_complete`);\n    }\n}"
+    ],
+    "resourceSource": "const INSTRUCTIONAL_RESOURCE_TYPE_LABELS={video:\"Lecture Video\",\"worked-problem\":\"Worked-Problems Video\",slides:\"Lecture Slides\",other:\"Course Material\"};function irc(){const c=window.INSTRUCTIONAL_RESOURCES;return c?.chapters&&c?.objectives?c:null}function norm(v){const m=String(v||\"\").trim().match(/^(?:LO\\s*)?(\\d+)\\s*[._\\-\\s]\\s*(\\d+)(?:[_\\-\\s].*)?$/i);if(!m)return null;const id=`LO${+m[1]}.${+m[2]}`;return irc()?.objectives?.[id]?id:null}function ch(v){const id=norm(v);return id?id.match(/^LO(\\d+)\\./)[1]:null}function safe(v){if(typeof v!==\"string\")return false;if(/^https:\\/\\//i.test(v)){try{return new URL(v).protocol===\"https:\"}catch(e){return false}}return /^resources\\/(?:[^\\\\/:?#]+\\/)*[^\\\\/:?#]+\\.pdf$/i.test(v)&&!v.includes(\"../\")}function byId(c,id){for(const x of Object.values(c?.chapters||{}))for(const r of x.resources||[])if(r?.id===id&&safe(r.url))return r;return null}function rec(raw){const c=irc(),out=new Map(),add=r=>{if(r?.id&&!out.has(r.id)&&safe(r.url))out.set(r.id,r)};if(!c||!Array.isArray(raw))return[];raw.forEach(x=>{if(out.size>=3)return;const id=norm(x);if(!id)return;(c.objectives[id]?.resourceIds||[]).map(y=>byId(c,y)).filter(Boolean).forEach(add);if(out.size>=3)return;(c.chapters[ch(id)]?.fallbackResourceIds||[]).map(y=>byId(c,y)).filter(Boolean).forEach(add)});return[...out.values()].slice(0,3)}function weak(r){return r?.hasObjectiveWeakness?(r.weakestObjectives||[]).map(x=>x.key).filter(norm):[]}function title(id){return irc()?.objectives?.[norm(id)]?.title||id}function label(r){return r.type===\"slides\"?\"Open Slides\":\"Watch Video\"}function renderCards(rs){return rs.map(r=>`<article class=\"resource-card\"><div class=\"resource-card-header\"><h4 class=\"resource-card-title\">${escapeHTML(r.title)}</h4><span class=\"resource-card-type\">${INSTRUCTIONAL_RESOURCE_TYPE_LABELS[r.type]||\"Course Material\"}</span></div><p class=\"resource-card-description\">${escapeHTML(r.description||\"\")}</p><a class=\"resource-card-link\" href=\"${escapeHTML(r.url)}\" target=\"_blank\" rel=\"noopener noreferrer\">${label(r)}</a></article>`).join(\"\")}function renderInstructionalResourceSection(r){const w=weak(r);if(!w.length)return\"\";const rs=rec(w),i=\"Based on the weakest learning objectives in this run, start with these materials before your next attempt.\";return `<div class=\"mastery-section resource-recommendation-section\"><h3>Recommended Review</h3><p class=\"resource-recommendation-intro\">${i}</p>${rs.length?`<div class=\"resource-recommendation-list\">${renderCards(rs)}</div>`:'<p class=\"mastery-empty\">No review material is available for these objectives yet.</p>'}<div class=\"mastery-actions\"><button class=\"continue-btn\" onclick=\"openInstructionalReviewScreen()\">Review Materials</button></div></div>`}function openInstructionalReviewScreen(){const box=document.getElementById(\"gameBox\"),r=getMasteryReportData(),w=weak(r),rs=rec(w),s=document.createElement(\"section\"),h=document.createElement(\"h1\"),o=document.createElement(\"div\"),ul=document.createElement(\"ul\"),m=document.createElement(\"div\"),cards=document.createElement(\"div\"),a=document.createElement(\"div\");s.className=\"mastery-report-screen review-materials-screen\";h.className=\"mastery-report-title\";h.tabIndex=-1;h.textContent=\"REVIEW BEFORE YOUR NEXT ATTEMPT\";o.className=\"mastery-section\";const oh=document.createElement(\"h2\");oh.textContent=\"Learning Objectives to Review\";ul.className=\"review-objective-list\";w.forEach(id=>{const li=document.createElement(\"li\");li.textContent=`${id}: ${title(id)}`;ul.append(li)});o.append(oh,ul);m.className=\"mastery-section\";const mh=document.createElement(\"h2\"),i=document.createElement(\"p\");mh.textContent=\"Recommended Materials\";i.className=\"resource-recommendation-intro\";i.textContent=\"Based on the weakest learning objectives in this run, start with these materials before your next attempt.\";cards.className=\"resource-recommendation-list\";rs.forEach(r=>{const x=document.createElement(\"article\"),t=document.createElement(\"h3\"),d=document.createElement(\"p\"),l=document.createElement(\"a\");x.className=\"resource-card\";t.className=\"resource-card-title\";t.textContent=r.title;d.className=\"resource-card-description\";d.textContent=r.description||\"\";l.className=\"resource-card-link\";l.href=r.url;l.target=\"_blank\";l.rel=\"noopener noreferrer\";l.textContent=label(r);x.append(t,d,l);cards.append(x)});m.append(mh,i,cards);a.className=\"mastery-actions\";[[\"Return to Mastery Report\",()=>showMasteryReportScreen(true)],[\"Replay Mission\",()=>location.reload()],[\"Choose Another Grid Run\",()=>returnToModeSelectFromRun()]].forEach(([x,f])=>{const b=document.createElement(\"button\");b.className=\"continue-btn\";b.textContent=x;b.addEventListener(\"click\",f);a.append(b)});s.append(h,o,m,a);box.replaceChildren(s);h.focus()}\n",
+    "roomKey": "liquidityGridRoom",
+    "artifactKeys": [
+      "vaultReserveKey",
+      "vaultValuePrism",
+      "vaultPolicyScepter"
+    ],
+    "legacyArtifactFields": [
+      "vaultReserveKey",
+      "vaultValuePrism",
+      "vaultPolicyScepter"
+    ],
+    "highScoreFunction": "function updateHighScores(newTimeMs) {\n    let scores = JSON.parse(localStorage.getItem(\"liquidityGridHighScores\")) || [];\n    scores.push({ name: username, time: newTimeMs, date: new Date().toLocaleDateString() });\n    \n    // Sort by time (lowest/fastest first) and keep top 5\n    scores.sort((a, b) => a.time - b.time);\n    scores = scores.slice(0, 5);\n    \n    localStorage.setItem(\"liquidityGridHighScores\", JSON.stringify(scores));\n    return scores;\n}",
+    "pseudonymFunction": "function generatePseudonymFromSeed(seed) {\n    const titles = [\n        \"Axiom\", \"Grid\", \"Vector\", \"Meridian\", \"Signal\", \"Cipher\",\n        \"Frontier\", \"Equity\", \"Oracle\", \"Index\", \"Summit\", \"Nexus\",\n        \"Vault\", \"Prism\", \"Civic\", \"Astral\", \"Beacon\", \"Horizon\"\n    ];\n\n    const roles = [\n        \"Appraiser\", \"Cartographer\", \"Arbiter\", \"Custodian\", \"Warden\", \"Reserve Custodian\",\n        \"Archivist\", \"Surveyor\", \"Magistrate\", \"Keeper\", \"Analyst\", \"Mediator\",\n        \"Steward\", \"Scribe\", \"Sentinel\", \"Marshal\", \"Seeker\", \"Auditor\"\n    ];\n\n    let hash = 0;\n    const cleanSeed = String(seed || \"run\").trim().toLowerCase();\n\n    for (let i = 0; i < cleanSeed.length; i++) {\n        hash = ((hash << 5) - hash) + cleanSeed.charCodeAt(i);\n        hash |= 0;\n    }\n\n    const positiveHash = Math.abs(hash);\n\n    const title = titles[positiveHash % titles.length];\n    const role = roles[Math.floor(positiveHash / titles.length) % roles.length];\n    const number = 1000 + (positiveHash % 9000);\n\n    return `${title}${role}${number}`;\n}",
+    "streakFunction": "function handleStreakVisuals() {\n    let streakMsg = \"\";\n    let streakColor = \"#f8d981\";\n\nif (streak === 5) {\n        streakMsg = `<span class=\"streak\"><img src=\"streakspark.webp\" class=\"streak-icon\" alt=\"\" aria-hidden=\"true\">LIQUIDITY SPARK</span>`;\n    streakColor = \"#38bdf8\";\n}\nelse if (streak === 10) {\n        streakMsg = `<span class=\"streak\"><img src=\"streakpulse.webp\" class=\"streak-icon\" alt=\"\" aria-hidden=\"true\">SIGNAL PULSE</span>`;\n    streakColor = \"#60a5fa\";\n}\nelse if (streak === 20) {\n        streakMsg = `<span class=\"streak\"><img src=\"streakbeacon.webp\" class=\"streak-icon\" alt=\"\" aria-hidden=\"true\">EQUILIBRIUM BEACON</span>`;\n    streakColor = \"#f8d981\";\n}\n\n    if (streakMsg) {\n        sfxMilestone.currentTime = 0;\n        sfxMilestone.play();\n        document.getElementById(\"streakDisplay\").innerHTML = streakMsg;\n        document.getElementById(\"streakDisplay\").style.color = streakColor;\n    } else if (streak > 0) {\n        document.getElementById(\"streakDisplay\").innerText = `Streak: ${streak}`;\n        document.getElementById(\"streakDisplay\").style.color = \"#f8d981\";\n    }\n}",
+    "resourceCSS": "/* 16. INSTRUCTIONAL RESOURCE RECOMMENDATIONS */\n.resource-recommendation-section{margin-top:14px}.resource-recommendation-intro{color:#c9f0ed;line-height:1.55;margin:0 0 14px}.resource-recommendation-list{display:grid;gap:12px}.resource-card{min-width:0;padding:16px;border:1px solid rgba(71,214,189,.48);border-radius:11px;background:linear-gradient(135deg,rgba(8,65,78,.92),rgba(4,15,25,.97));box-shadow:0 0 16px rgba(0,0,0,.4)}.resource-card-header{display:flex;justify-content:space-between;gap:12px}.resource-card-title{margin:0;min-width:0;color:#f3d97b;font-size:17px;line-height:1.32;overflow-wrap:anywhere}.resource-card-type{flex:0 0 auto;padding:4px 8px;border:1px solid rgba(71,214,189,.65);border-radius:999px;color:#c9faff;font-size:10px;font-weight:800;text-transform:uppercase; white-space:nowrap; overflow-wrap:normal;}.resource-card-description{margin:10px 0 14px;color:#e4f5f6;line-height:1.55}.resource-card-link{display:inline-flex;min-height:40px;align-items:center;justify-content:center;padding:9px 14px;border:1px solid rgba(243,217,123,.8);border-radius:8px;background:#146779;color:#fff8d8;font-weight:800;text-decoration:none}.resource-card-link:hover{background:#21869a}.resource-card-link:focus-visible{outline:3px solid #f3d97b;outline-offset:3px}.review-materials-screen .mastery-section h2{color:#f3d97b}.review-objective-list{padding-left:22px;color:#e4f5f6}.review-objective-list li{margin:7px 0;line-height:1.48}@media(max-width:420px){.resource-card-header{flex-direction:column}.resource-card-link{display:flex;width:100%;box-sizing:border-box}}\n",
+    "modeKey": "liquidityGridCurrentMode"
+  },
+  "stabilization-protocol": {
+    "title": "The Stabilization Protocol",
+    "key": "stabilizationProtocol",
+    "bank": "stabilization_protocol_questions_student.js",
+    "bankSha256": "f5efa69303aa2c0c2a385cde1b6cfa2d1f71284efda193f407c3381b97cb9fd5",
+    "constants": [
+      "const SOUND_PREF_KEY = \"stabilizationProtocolSoundEnabled\";",
+      "const SAVE_KEY = \"stabilizationProtocol_v1\";",
+      "const REALM_MISSION_KEY = \"stabilizationProtocol\";",
+      "const REALM_STARTED_KEY = \"economicRealm_stabilizationProtocol_started\";",
+      "const REALM_COMPLETE_KEY = \"economicRealm_stabilizationProtocol_complete\";",
+      "const REALM_STATUS_KEY = \"economicRealm_stabilizationProtocol_status\";",
+      "const REALM_ROOM_KEY = \"economicRealm_stabilizationProtocol_room\";",
+      "const REALM_TOTAL_CORRECT_KEY = \"economicRealm_totalCorrectAnswers\";",
+      "const REALM_BEST_STREAK_KEY = \"economicRealm_bestStreak\";",
+      "const REALM_EXAM_COMPLETE_KEY = \"economicRealm_examDrillCompleted\";",
+      "const REALM_TRIAL_BY_CLOCK_KEY = \"economicRealm_trialByClock\";",
+      "const REALM_PERFECT_CALIBRATION_KEY = \"economicRealm_perfectCalibration\";",
+      "const REALM_RETURN_AND_REBUILD_KEY = \"economicRealm_returnAndRebuild\";",
+      "const SCORE_ATTACK_STORAGE_PREFIX = \"stabilizationProtocolScoreAttack\";",
+      "const TELEMETRY_PREFIX = \"stabilizationProtocolTelemetry_\";"
+    ],
+    "artifacts": {
+      "policyKey": {
+        "img": "key.webp",
+        "title": "The Policy Key",
+        "text": "The Policy Key unlocks the first layer of the Protocol: money, reserves, Fed tools, interest-rate control, and the policy channels that move through the economy."
+      },
+      "regentSeal": {
+        "img": "seal.webp",
+        "title": "The Regent’s Seal",
+        "text": "The Regent’s Seal marks command over stabilization tradeoffs: AD-AS shocks, liquidity preference, fiscal and monetary policy, multiplier effects, crowding out, expectations, and the risks of trying to force balance."
+      },
+      "chancellorsMandate": {
+        "img": "mandate.webp",
+        "title": "The Custodian’s Mandate",
+        "text": "The Custodian’s Mandate restores final authority over the Protocol: inflation, unemployment, Phillips-curve tradeoffs, expectations, disinflation, sacrifice ratios, and full policy judgment."
+      }
+    },
+    "bossImages": [
+      "sentinel.webp",
+      "regent.webp",
+      "chancellor.webp"
+    ],
+    "bossNames": [
+      "THE POLICY SENTINEL",
+      "THE STABILIZATION REGENT",
+      "THE CUSTODIAN"
+    ],
+    "guideName": "The Custodian",
+    "guideImage": "chancellor.webp",
+    "objectiveLabels": {
+      "30.1": "Money Functions and Forms",
+      "30.2": "Federal Reserve Structure and Roles",
+      "30.3": "Banks, Reserves, and Money Creation",
+      "30.4": "Federal Reserve Tools and the Money Supply",
+      "30.5": "Limits of Monetary Control",
+      "31.1": "Quantity Theory, Money Demand, and Inflation",
+      "31.2": "Nominal vs. Real Variables and Monetary Neutrality",
+      "31.3": "Fisher Effect",
+      "31.4": "Inflation Costs and Inflation Tax",
+      "31.5": "Inflation and Deflation Policy Implications",
+      "34.1": "Aggregate Demand: Slope and Shifts",
+      "34.2": "Aggregate Supply: SRAS, LRAS, and Productive Capacity",
+      "34.3": "Sticky Wages, Sticky Prices, and Misperceptions",
+      "34.4": "Economic Shocks in the AD-AS Model",
+      "34.5": "Long-Run Equilibrium and Adjustment",
+      "35.1": "Liquidity Preference and Money-Market Adjustment",
+      "35.2": "Monetary Policy and Aggregate Demand",
+      "35.3": "Fiscal Policy and Aggregate Demand",
+      "35.4": "Multiplier Effects and Crowding Out",
+      "35.5": "Stabilization Policy Choices and Policy Lags",
+      "36.1": "Short-Run Inflation-Unemployment Tradeoff",
+      "36.2": "Short-Run and Long-Run Phillips Curves",
+      "36.3": "Expectations and Phillips-Curve Shifts",
+      "36.4": "Policy, Inflation, Unemployment, and Transitions",
+      "36.5": "Disinflation and the Sacrifice Ratio",
+      "integrated_final_exam_review": "Integrated Final Exam Review",
+      "integrated_stabilization_protocol_review": "Integrated Stabilization Protocol Review"
+    },
+    "objectiveLabelSource": "const STABILIZATION_PROTOCOL_OBJECTIVE_LABELS = {\n    \"LO30.1\": \"LO 30.1 — Money and banking foundations\",\n    \"LO30.2\": \"LO 30.2 — Banks and money creation\",\n    \"LO30.3\": \"LO 30.3 — Money supply and monetary tools\",\n    \"LO30.4\": \"LO 30.4 — Money demand and liquidity preference\",\n    \"LO30.5\": \"LO 30.5 — Money, prices, and inflation\",\n    \"LO31.1\": \"LO 31.1 — Inflation and purchasing power\",\n    \"LO31.2\": \"LO 31.2 — Quantity theory and money growth\",\n    \"LO31.3\": \"LO 31.3 — Fisher effect and nominal interest rates\",\n    \"LO31.4\": \"LO 31.4 — Costs of inflation\",\n    \"LO31.5\": \"LO 31.5 — Inflation policy and expectations\",\n    \"LO34.1\": \"LO 34.1 — AD-AS model basics\",\n    \"LO34.2\": \"LO 34.2 — Aggregate demand shifts\",\n    \"LO34.3\": \"LO 34.3 — Aggregate supply shifts\",\n    \"LO34.4\": \"LO 34.4 — Short-run output gaps\",\n    \"LO34.5\": \"LO 34.5 — Long-run adjustment\",\n    \"LO35.1\": \"LO 35.1 — Stabilization policy\",\n    \"LO35.2\": \"LO 35.2 — Fiscal policy and multipliers\",\n    \"LO35.3\": \"LO 35.3 — Monetary policy transmission\",\n    \"LO35.4\": \"LO 35.4 — Crowding out and policy limits\",\n    \"LO35.5\": \"LO 35.5 — Policy response and tradeoffs\",\n    \"LO36.1\": \"LO 36.1 — Phillips curve basics\",\n    \"LO36.2\": \"LO 36.2 — Long-run Phillips curve and natural unemployment\",\n    \"LO36.3\": \"LO 36.3 — Expectations and short-run tradeoffs\",\n    \"LO36.4\": \"LO 36.4 — Supply shocks and inflation-output tradeoffs\",\n    \"LO36.5\": \"LO 36.5 — Disinflation and sacrifice ratio\"\n};",
+    "areaFunction": "function getAreaName(r) {\n    if (r <= 9) return \"Stabilization Briefing Corridor\";\n    if (r === 10) return \"The Policy Sentinel’s Chamber\";\n    if (r <= 19) return \"AD-AS Stabilization Wing\";\n    if (r === 20) return \"The Stabilization Regent's Gate\";\n    if (r <= 25) return \"Fiscal-Monetary Transmission Floor\";\n    if (r <= 29) return \"Phillips Curve Tribunal\";\n    return \"The Custodian’s Final Chamber\";\n}",
+    "wizardFeedback": {
+      "correct": [
+        "The Protocol accepts this memo.",
+        "Clean stabilization logic.",
+        "The policy chain holds.",
+        "Approved. Keep moving.",
+        "That judgment survives pressure."
+      ],
+      "wrong": [
+        "The Protocol rejects that memo.",
+        "That policy chain breaks.",
+        "No. That answer destabilizes the system.",
+        "Bad signal. Correct the diagnosis.",
+        "The Custodian is not signing that nonsense."
+      ]
+    },
+    "wizardLines": {
+      "definition": [
+        "Define the policy term precisely.",
+        "No vague memo language.",
+        "Classify the concept cleanly.",
+        "Start with the correct definition."
+      ],
+      "interpretation": [
+        "Read the shock path.",
+        "Trace the adjustment.",
+        "Judge the policy signal.",
+        "Separate the short run from the long run."
+      ],
+      "trap": [
+        "This is where lazy answers die.",
+        "Do not fall for the obvious trap.",
+        "The wording is trying to bait you.",
+        "Check the assumption before you answer.",
+        "Policy memos fail right here."
+      ],
+      "calculation": [
+        "Calculate before you commit.",
+        "Run the numbers.",
+        "The multiplier will not guess for you.",
+        "Make the implied value explicit."
+      ],
+      "multi-step": [
+        "Trace every link in the chain.",
+        "One step is not enough.",
+        "Policy logic moves in sequence.",
+        "Follow the shock through the system."
+      ],
+      "integration": [
+        "Connect the chapters.",
+        "Bring money, AD-AS, and expectations together.",
+        "This is final-protocol synthesis.",
+        "Judge the whole system, not one curve."
+      ],
+      "default": [
+        "Answer.",
+        "Proceed.",
+        "Enter your judgment.",
+        "Commit to the memo."
+      ]
+    },
+    "soundSource": "const bgMusic = new Audio('chamber.mp3'); \nbgMusic.loop = true; \nbgMusic.volume = 0.05; \n\nconst bossMusic = new Audio('boss_battle_music.mp3');\nbossMusic.loop = true;\nbossMusic.volume = 0.10;\n\nconst finalBossMusic = new Audio('final_boss_music.mp3');\nfinalBossMusic.loop = true;\nfinalBossMusic.volume = 0.12; // slightly louder, it's the final fight    \n    \nconst sfxMilestone = new Audio('streak.wav');\nconst sfxVictory = new Audio('victory.wav');\nconst sfxBossHit = new Audio('boss_hit.wav');\n      sfxBossHit.volume = 0.5;\nconst sfxCorrect = new Audio('ding.wav');\n      sfxCorrect.volume = 0.25;\nconst sfxWrong = new Audio('mistake.wav');\n      sfxWrong.volume = 0.4;\n    \nconst hallwayImages = [\n    \"hallway1.webp\",\n    \"hallway2.webp\",\n    \"hallway3.webp\"\n];\n\nlet soundEnabled = true;\nconst SOUND_PREF_KEY = \"stabilizationProtocolSoundEnabled\";\n\t \nfunction updateSoundToggle(){\n  const button = document.getElementById(\"soundToggle\");\n  if(!button) return;\n  button.innerText = soundEnabled ? \"Sound On\" : \"Sound Off\";\n}\n\nfunction setAllGameAudioMuted(isMuted){\n  [bgMusic, bossMusic, finalBossMusic, sfxMilestone, sfxVictory, sfxBossHit, sfxCorrect, sfxWrong]\n    .filter(Boolean)\n    .forEach(audio => {\n      audio.muted = isMuted;\n    });\n}\n\nfunction toggleGameSound(){\n  soundEnabled = !soundEnabled;\n\n  localStorage.setItem(SOUND_PREF_KEY, soundEnabled ? \"true\" : \"false\");\n  setAllGameAudioMuted(!soundEnabled);\n  updateSoundToggle();\n\n  if(soundEnabled){\n      resumeCurrentMusic();\n  } else {\n      pauseAllGameMusic();\n  }\n}\n\nfunction restoreSoundSetting(){\n  const saved = localStorage.getItem(SOUND_PREF_KEY);\n\n  soundEnabled = saved !== \"false\";\n\n  setAllGameAudioMuted(!soundEnabled);\n  updateSoundToggle();\n}\n\nrestoreSoundSetting();\n\nfunction setGameControlsVisible(isVisible){\n    document.body.classList.toggle(\"game-active\", !!isVisible);\n}\n\nsetGameControlsVisible(false);\n\nfunction pauseAllGameMusic(){\n    [bgMusic, bossMusic, finalBossMusic].filter(Boolean).forEach(audio => {\n        audio.pause();\n    });\n}\n\nfunction safePlay(audio){\n    if(!audio || !soundEnabled) return Promise.resolve();\n\n    audio.muted = false;\n\n    return audio.play().catch(error => {\n        console.warn(\"Audio play blocked:\", error);\n    });\n}\n\nfunction resumeCurrentMusic(){\n    if(typeof currentMusic !== \"undefined\"){\n        if(currentMusic === \"boss\") return safePlay(bossMusic);\n        if(currentMusic === \"finalBoss\") return safePlay(finalBossMusic);\n        if(currentMusic === \"exploration\") return safePlay(bgMusic);\n    }\n\n    return safePlay(bgMusic);\n}\n\t \n",
+    "realmFunctions": [
+      "function getMissionAchievementPrefix(){\n    return `economicRealm_${REALM_MISSION_KEY}`;\n}",
+      "function syncRealmAttemptState(){\n    if(!modeAllowsRealmProgress()) return;\n    localStorage.setItem(REALM_STARTED_KEY, \"true\");\n    if(isRealmMissionComplete()){\n        localStorage.setItem(REALM_STATUS_KEY, \"restored\");\n        localStorage.setItem(REALM_ROOM_KEY, \"30\");\n        return;\n    }\n    localStorage.setItem(REALM_STATUS_KEY, \"contested\");\n    localStorage.setItem(REALM_ROOM_KEY, String(room || 1));\n}",
+      "function recordTimedTrialAchievementStats(accuracy, reachedRoom){\n    const safeAccuracy = Number.isFinite(Number(accuracy)) ? Number(accuracy) : 0;\n    const safeRoom = Number.isFinite(Number(reachedRoom)) ? Number(reachedRoom) : 0;\n\n    updateRealmMaxStat(\"stabilizationProtocolTimedBestRoom\", safeRoom);\n    updateRealmMaxStat(\"stabilizationProtocolTimedBestAccuracy\", safeAccuracy);\n\n    updateRealmMaxStat(\"economicRealm_timedBestRoom\", safeRoom);\n    updateRealmMaxStat(\"economicRealm_timedBestAccuracy\", safeAccuracy);\n\n    updateRealmMaxStat(`${getMissionAchievementPrefix()}_timedBestRoom`, safeRoom);\n    updateRealmMaxStat(`${getMissionAchievementPrefix()}_timedBestAccuracy`, safeAccuracy);\n\n    if(safeRoom >= 30 && safeAccuracy >= 80){\n        setRealmFlag(REALM_TRIAL_BY_CLOCK_KEY);\n        setRealmFlag(`${getMissionAchievementPrefix()}_trial_by_clock_complete`);\n    }\n}"
+    ],
+    "resourceSource": "",
+    "roomKey": "stabilizationProtocolRoom",
+    "artifactKeys": [
+      "vaultPolicyKey",
+      "vaultRegentsSeal",
+      "vaultChancellorsMandate"
+    ],
+    "legacyArtifactFields": [
+      "vaultPolicyKey",
+      "vaultRegentsSeal",
+      "vaultChancellorsMandate"
+    ],
+    "highScoreFunction": "function updateHighScores(newTimeMs) {\n    let scores = JSON.parse(localStorage.getItem(\"stabilizationProtocolHighScores\")) || [];\n    scores.push({ name: username, time: newTimeMs, date: new Date().toLocaleDateString() });\n    \n    // Sort by time (lowest/fastest first) and keep top 5\n    scores.sort((a, b) => a.time - b.time);\n    scores = scores.slice(0, 5);\n    \n    localStorage.setItem(\"stabilizationProtocolHighScores\", JSON.stringify(scores));\n    return scores;\n}",
+    "pseudonymFunction": "function generatePseudonymFromSeed(seed) {\n    const titles = [\n        \"Axiom\", \"Grid\", \"Vector\", \"Meridian\", \"Signal\", \"Cipher\",\n        \"Frontier\", \"Equity\", \"Oracle\", \"Index\", \"Summit\", \"Nexus\",\n        \"Vault\", \"Prism\", \"Civic\", \"Astral\", \"Beacon\", \"Horizon\"\n    ];\n\n    const roles = [\n        \"Appraiser\", \"Cartographer\", \"Arbiter\", \"Custodian\", \"Warden\", \"Reserve Custodian\",\n        \"Archivist\", \"Surveyor\", \"Magistrate\", \"Keeper\", \"Analyst\", \"Mediator\",\n        \"Steward\", \"Scribe\", \"Sentinel\", \"Marshal\", \"Seeker\", \"Auditor\"\n    ];\n\n    let hash = 0;\n    const cleanSeed = String(seed || \"\").trim().toLowerCase();\n\n    for (let i = 0; i < cleanSeed.length; i++) {\n        hash = ((hash << 5) - hash) + cleanSeed.charCodeAt(i);\n        hash |= 0;\n    }\n\n    const positiveHash = Math.abs(hash);\n\n    const title = titles[positiveHash % titles.length];\n    const role = roles[Math.floor(positiveHash / titles.length) % roles.length];\n    const number = 1000 + (positiveHash % 9000);\n\n    return `${title}${role}${number}`;\n}",
+    "streakFunction": "function handleStreakVisuals() {\n    let streakMsg = \"\";\n    let streakColor = \"#f8d981\";\n\n    if (streak === 5) {\n        streakMsg = `<span class=\"streak\"><img src=\"streakspark.webp\" class=\"streak-icon\" alt=\"\" aria-hidden=\"true\">POLICY SPARK</span>`;\n        streakColor = \"#38bdf8\";\n    }\n    else if (streak === 10) {\n        streakMsg = `<span class=\"streak\"><img src=\"streakpulse.webp\" class=\"streak-icon\" alt=\"\" aria-hidden=\"true\">STABILIZATION PULSE</span>`;\n        streakColor = \"#60a5fa\";\n    }\n    else if (streak === 20) {\n        streakMsg = `<span class=\"streak\"><img src=\"streakbeacon.webp\" class=\"streak-icon\" alt=\"\" aria-hidden=\"true\">MANDATE BEACON</span>`;\n        streakColor = \"#f8d981\";\n    }\n\n    if (streakMsg) {\n        sfxMilestone.currentTime = 0;\n        sfxMilestone.play();\n        document.getElementById(\"streakDisplay\").innerHTML = streakMsg;\n        document.getElementById(\"streakDisplay\").style.color = streakColor;\n    } else if (streak > 0) {\n        document.getElementById(\"streakDisplay\").innerText = `Streak: ${streak}`;\n        document.getElementById(\"streakDisplay\").style.color = \"#f8d981\";\n    }\n}",
+    "resourceCSS": "",
+    "modeKey": "stabilizationProtocolCurrentMode"
+  }
+}

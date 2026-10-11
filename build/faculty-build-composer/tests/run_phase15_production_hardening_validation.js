@@ -90,7 +90,7 @@ function testCompileAndArchitecture(){
     assert(html.includes('runPhase'), `${relative} does not persist lifecycle phase.`);
     assert(html.includes('pagehide'), `${relative} does not save on close/pagehide.`);
     assert(html.includes('phase15CompletionLocked') || html.includes('nationalCompletionLocked'), `${relative} lacks completion locking.`);
-    assert(/2026\.08\.24-phase(?:1\.5|[2-9][a-z0-9.-]*)/i.test(html), `${relative} lacks a Phase 1.5-or-later game/build version.`);
+    assert(/2026\.08\.24-phase(?:1\.5|[2-9][a-z0-9.-]*)|const GAME_VERSION\s*=\s*"[^"\n]*composer-engine-\d{4}\.\d{2}\.\d{2}/i.test(html), `${relative} lacks a Phase 1.5-or-later game/build version.`);
   });
 
   const manual = source(MODERN_FILES[0]);
