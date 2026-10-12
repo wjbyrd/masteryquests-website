@@ -22,6 +22,7 @@ const MODERN_FILES = [
   'play/macro-command-system/mint-ash-gold/index.html',
   'play/macro-command-system/command-nexus/index.html',
   'play/macro-command-system/exchange-citadel/index.html',
+  'play/macro-command-system/national-engine/index.html',
   'play/managerial-intelligence-directorate/cost-directive/index.html',
   'play/managerial-intelligence-directorate/market-signal/index.html',
   'play/managerial-intelligence-directorate/strategy-desk/index.html',
@@ -29,7 +30,7 @@ const MODERN_FILES = [
   'play/micro-domains/labyrinth-of-choice/index.html'
 ];
 const NATIONAL_ENGINE = 'play/macro-command-system/national-engine/index.html';
-const ALL_ENGINE_FILES = [...MODERN_FILES, NATIONAL_ENGINE];
+const ALL_ENGINE_FILES = [...MODERN_FILES];
 
 function source(relative){ return readText(path.join(REPO_ROOT, relative)); }
 
@@ -190,25 +191,39 @@ function testMediaAndResumeContracts(){
     assert(html.includes('const beforeAttempts = Number(totalAttempts || 0)'), `${relative} lacks scored-attempt resume guard evidence.`);
   });
   const national = source(NATIONAL_ENGINE);
-  assert(national.includes('NATIONAL_PHASE15_SAVE_KEY'));
   assert(national.includes('function continueSavedRun()'));
-  assert(national.includes('remediationState: nationalClone(remediationState'));
-  assert(national.includes('currentQuestion: nationalClone(currentQuestion'));
+  assert(national.includes('remediationState: phase15Clone(remediationState'));
+  assert(national.includes('currentQuestion: phase15Clone(currentQuestion'));
   assert(national.includes('artifacts:'));
-  assert(national.includes('const legacyState = hasPhase15Save ? null'), 'National Engine lacks legacy gauntletRoom migration.');
-  assert(national.includes('nationalResumeBootstrap = true'), 'National Engine resume must suppress duplicate start telemetry.');
+  assert(national.includes('function migrateNationalEngineSave()'), 'National Engine lacks legacy save migration.');
 
   const storage = new Map();
   const legacyContext = {
-    NATIONAL_PHASE15_SAVE_KEY:'NationalEngine:standard:save:phase1.5',
-    localStorage:{getItem:key => storage.has(key) ? storage.get(key) : null}
+    localStorage:{getItem:key => storage.has(key) ? storage.get(key) : null, setItem:(key,value) => storage.set(key,value)}
   };
   vm.createContext(legacyContext);
-  vm.runInContext(`${extractFunction(national, 'hasSavedGame')}; globalThis.hasSave = hasSavedGame;`, legacyContext);
-  storage.set('gauntletRoom', '12');
-  assert.strictEqual(legacyContext.hasSave(), true, 'National Engine must expose a legacy room save for migration.');
+  vm.runInContext(`${extractFunction(national, 'migrateNationalEngineSave')}; globalThis.migrate = migrateNationalEngineSave;`, legacyContext);
+  const newKey='nationalEngineComposerSave_v1_standard';
   storage.set('gauntletRoom', '1');
-  assert.strictEqual(legacyContext.hasSave(), false, 'Room 1 alone is not meaningful legacy progress.');
+  legacyContext.migrate();
+  assert.strictEqual(storage.has(newKey), false, 'Room 1 alone is not meaningful legacy progress.');
+  storage.set('gauntletRoom', '12');
+  legacyContext.migrate();
+  assert.strictEqual(JSON.parse(storage.get(newKey)).room, 12, 'Legacy room progress must migrate.');
+  storage.delete(newKey);
+  legacyContext.migrate();
+  assert.strictEqual(storage.has(newKey), false, 'Completed legacy saves must not resurrect.');
+  storage.clear();
+  const oldKey='NationalEngine:standard:save:phase1.5';
+  const oldSave=JSON.stringify({room:7,runID:'legacy-run',elapsedMs:12345,runPhase:'question',currentQuestion:{id:10,options:['A','B','C','D']},remediationState:{active:true},bossPool:[{id:20}]});
+  storage.set(oldKey,oldSave);
+  legacyContext.migrate();
+  const imported=JSON.parse(storage.get(newKey));
+  assert.strictEqual(imported.runID,'legacy-run');
+  assert.strictEqual(imported.elapsedMs,12345);
+  assert.deepStrictEqual(imported.phase15.currentQuestion,JSON.parse(oldSave).currentQuestion);
+  assert.deepStrictEqual(imported.phase15.remediationState,{active:true});
+  assert.strictEqual(storage.get(oldKey),oldSave,'Keep the original save available for recovery.');
 }
 
 function testSharedMediaRendererBehavior(){

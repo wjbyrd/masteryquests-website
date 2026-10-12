@@ -1,0 +1,53 @@
+{
+  "templateSha256": "a70d4148ce8588e4fdf52d4bd08a6b6343f10aa4fcc708176aca0179f441134b",
+  "functions": [
+    "answer",
+    "loadQuestion",
+    "displayQuestion",
+    "planRemediation",
+    "remediationTransitionAllowed",
+    "advanceCheckpointAttempt",
+    "recordCheckpointAttempt",
+    "commitExamSection",
+    "navigateExamRoom",
+    "recordExamDraftAnswer",
+    "selectExamQuestion",
+    "buildBossQuestionSet",
+    "getMasteryReportData",
+    "createQuestionVisibilityTimingState",
+    "getQuestionBehaviorData",
+    "downloadTelemetryCsv",
+    "scheduleForCurrentRun",
+    "saveGameState",
+    "getArtifactInventoryCount",
+    "buildTrialGraphDeck",
+    "buildFadingFortuneDeck",
+    "buildRiskRewardDeck"
+  ],
+  "results": [
+    {
+      "game": "national-engine",
+      "composerFunctions": 22,
+      "protectedFiles": 39,
+      "bankSha256": "d89b5b0677fa6e18c1863afaa8a735fd6d512cbaec982b376ddde17995c08385"
+    },
+    {
+      "game": "mint-ash-gold",
+      "composerFunctions": 22,
+      "protectedFiles": 41,
+      "bankSha256": "12bc03299c9f95622e61190e8e5045bb1b602834188d4fc7fbbd4e69365f69dc"
+    },
+    {
+      "game": "command-nexus",
+      "composerFunctions": 22,
+      "protectedFiles": 37,
+      "bankSha256": "6f1911944d990703c630f3e5069ee4d465af3b90664b2e406bd48461677f7954"
+    },
+    {
+      "game": "exchange-citadel",
+      "composerFunctions": 22,
+      "protectedFiles": 42,
+      "bankSha256": "a2cca7de74ca4d8fb7d1a47b0755c00e993f79e9f60f0550163b6c6c01d5e4a1"
+    }
+  ]
+}
