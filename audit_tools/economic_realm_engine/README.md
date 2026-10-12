@@ -1,5 +1,7 @@
 # Economic Realm engine alignment — 2026-10-11
 
+This document records the earlier **engine-only** pass. The subsequent question refresh is documented in `../economic_realm_questions/README.md`; its counts, mode eligibility and latest validation artifacts supersede the historical frozen-bank assertions below. The current source checker protects the original presentation/resources and delegates bank/asset verification to the canonical question sync. The browser runner now uses frozen banks as well as frozen engines for legacy-save fixtures.
+
 The five published game pages now derive their gameplay engine and controls from the current Faculty Concept Composer template. Their old engines had Phase 1.5 hardening but lacked subsequent exam navigation, checkpoint outcomes and remediation safeguards, consumable artifacts, daily challenges, newer practice modes, and current mastery/measurement behavior.
 
 | Game | Engine | Enabled modes | Question dependency deferred |

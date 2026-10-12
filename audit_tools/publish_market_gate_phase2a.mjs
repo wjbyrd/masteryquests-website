@@ -7,6 +7,7 @@ import { graphAssets, ordinaryQuestions, remediationQuestions, PHASE2A_SOURCE_VE
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const target = path.join(root, "play/economic-realm/market-gate/market_gate_questions_student.js");
+if(fs.readFileSync(target,'utf8').includes('economic_realm_questions/sync.mjs')) throw new Error('This bank now uses the reviewed Composer sync. Run node audit_tools/economic_realm_questions/sync.mjs; the historical phase-2 publisher would downgrade validated questions.');
 const phaseIds = new Set([...ordinaryQuestions, ...remediationQuestions].map(q => String(q.id)));
 const normalize = value => String(value).normalize("NFKC").trim().replace(/\s+/g, " ").toLowerCase();
 const answerHash = value => crypto.createHash("sha256").update(normalize(value)).digest("hex");

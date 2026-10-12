@@ -14,6 +14,7 @@ import {
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const target = path.join(root, "play/economic-realm/national-ledger/national_ledger_questions_student.js");
+if(fs.readFileSync(target,'utf8').includes('economic_realm_questions/sync.mjs')) throw new Error('This bank now uses the reviewed Composer sync. Run node audit_tools/economic_realm_questions/sync.mjs; the historical phase-2 publisher would downgrade validated questions.');
 const baselinePath = path.join(root, "audit_tools/national_ledger_phase2b_legacy_baseline.json");
 const sourceGroups = { ordinary: ordinaryQuestions, repair: repairQuestions, bridge: bridgeQuestions };
 const phaseIds = new Set(Object.values(sourceGroups).flat().map(record => String(record.id)));

@@ -1,0 +1,3129 @@
+{
+  "counts": {
+    "errors": 0,
+    "warnings": 146,
+    "reviews": 114
+  },
+  "findings": [
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-116",
+      "concept": "bank-balance-sheets-reserves-and-capital",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "A bank has $500,000 in deposits and a 10 percent reserve requirement. Required reserves equal"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-117",
+      "concept": "bank-balance-sheets-reserves-and-capital",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "A bank has $500,000 in deposits, $80,000 in reserves, and a 10 percent reserve requirement. Excess reserves equal"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-13",
+      "concept": "bank-balance-sheets-reserves-and-capital",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "In a fractional reserve banking system, banks"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-14",
+      "concept": "bank-balance-sheets-reserves-and-capital",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If a bank has $1,000 in deposits and the reserve requirement is 10 percent, required reserves are"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-15",
+      "concept": "bank-balance-sheets-reserves-and-capital",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If a bank receives a new $1,000 deposit and must hold $100 in required reserves, the bank can initially lend"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-16",
+      "concept": "bank-balance-sheets-reserves-and-capital",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "The money multiplier becomes larger when the reserve ratio"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-114",
+      "concept": "central-bank-and-federal-reserve",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "The Fed is called a lender of last resort because it can"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-61",
+      "concept": "central-bank-and-federal-reserve",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "One major role of the Federal Reserve is to act as"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-62",
+      "concept": "central-bank-and-federal-reserve",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "The discount rate is the interest rate"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-63",
+      "concept": "central-bank-and-federal-reserve",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "The federal funds rate is best described as the interest rate"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-8",
+      "concept": "central-bank-and-federal-reserve",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "The Federal Reserve is best described as"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-119",
+      "concept": "deposit-creation-and-money-multiplier",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If the reserve ratio is 12.5 percent, the simple money multiplier is"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-120",
+      "concept": "deposit-creation-and-money-multiplier",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If the money multiplier is 5 and the Fed injects $20 million of reserves, the maximum possible increase in the money supply is"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-17",
+      "concept": "deposit-creation-and-money-multiplier",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If the reserve ratio is 20 percent, the simple money multiplier is"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-223",
+      "concept": "deposit-creation-and-money-multiplier",
+      "pools": [
+        "hard"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If banks lend more aggressively from excess reserves, the money supply rises mainly because"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-HARD-229",
+      "concept": "fiscal-multipliers-and-crowding-out",
+      "pools": [
+        "medium"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Government purchases and induced spending move demand from AD1 to AD3. If crowding out leaves demand at AD2, how much of the original expansion has been offset?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-170",
+      "concept": "fiscal-multipliers-and-crowding-out",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "The multiplier effect exists because one person's spending becomes"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-171",
+      "concept": "fiscal-multipliers-and-crowding-out",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If MPC = 0.6 and income rises by $1,000, consumption rises by"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-172",
+      "concept": "fiscal-multipliers-and-crowding-out",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If MPC = 0.6, the simple spending multiplier is"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-173",
+      "concept": "fiscal-multipliers-and-crowding-out",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If MPC = 0.8 and government spending increases by $50 billion, the simple multiplier predicts a total AD increase of"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-174",
+      "concept": "fiscal-multipliers-and-crowding-out",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "The movement from the first AD shift to the larger final AD shift represents"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-175",
+      "concept": "fiscal-multipliers-and-crowding-out",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "The initial shift in aggregate demand from higher government spending is followed by a larger shift because"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-176",
+      "concept": "fiscal-multipliers-and-crowding-out",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "Crowding out weakens fiscal expansion because higher government spending can raise interest rates and reduce"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-273",
+      "concept": "fiscal-multipliers-and-crowding-out",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If MPC is higher, the distance between the initial AD shift and the final AD shift should"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-53",
+      "concept": "fiscal-multipliers-and-crowding-out",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "The multiplier effect occurs because an initial increase in spending"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-54",
+      "concept": "fiscal-multipliers-and-crowding-out",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "The marginal propensity to consume is the fraction of extra income that households"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-55",
+      "concept": "fiscal-multipliers-and-crowding-out",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If MPC = 0.8, then a $100 increase in income raises consumption by"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-56",
+      "concept": "fiscal-multipliers-and-crowding-out",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "The simple spending multiplier is calculated as"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-57",
+      "concept": "fiscal-multipliers-and-crowding-out",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If MPC = 0.75, the simple spending multiplier equals"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-58",
+      "concept": "fiscal-multipliers-and-crowding-out",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "Crowding out occurs when expansionary fiscal policy raises interest rates and reduces"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-MEDIUM-151",
+      "concept": "fiscal-policy-and-aggregate-demand",
+      "pools": [
+        "medium"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the AD graph with constant price level P. Moving from AD1 to AD2 changes output from:"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-166",
+      "concept": "fiscal-policy-and-aggregate-demand",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "A tax cut shifts aggregate demand right mainly because it"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-167",
+      "concept": "fiscal-policy-and-aggregate-demand",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "A cut in government purchases shifts aggregate demand left because"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-168",
+      "concept": "fiscal-policy-and-aggregate-demand",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If Congress increases infrastructure spending during a recession, the direct effect is to"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-169",
+      "concept": "fiscal-policy-and-aggregate-demand",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If the government raises taxes during an expansion, the likely AD effect is"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-49",
+      "concept": "fiscal-policy-and-aggregate-demand",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "Expansionary fiscal policy includes"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-50",
+      "concept": "fiscal-policy-and-aggregate-demand",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "Contractionary fiscal policy includes"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-51",
+      "concept": "fiscal-policy-and-aggregate-demand",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "An increase in government spending shifts aggregate demand"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-52",
+      "concept": "fiscal-policy-and-aggregate-demand",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "A decrease in taxes usually shifts aggregate demand"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-139",
+      "concept": "fisher-effect",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If the nominal interest rate is 9 percent and expected inflation is 4 percent, the real interest rate is approximately"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-140",
+      "concept": "fisher-effect",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If the real interest rate is 2 percent and expected inflation is 6 percent, the nominal interest rate is approximately"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-141",
+      "concept": "fisher-effect",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If expected inflation rises while the real interest rate is unchanged, lenders will require"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-31",
+      "concept": "fisher-effect",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "The Fisher effect says that when expected inflation rises, the nominal interest rate tends to"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-32",
+      "concept": "fisher-effect",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If the real interest rate is 3 percent and expected inflation is 2 percent, the nominal interest rate is approximately"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-72",
+      "concept": "fisher-effect",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "The Fisher equation is most commonly written as"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-73",
+      "concept": "fisher-effect",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If the nominal interest rate is 7 percent and expected inflation is 3 percent, the real interest rate is approximately"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-74",
+      "concept": "fisher-effect",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If expected inflation rises from 2 percent to 5 percent and the real interest rate is unchanged, the nominal interest rate should"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-75",
+      "concept": "fisher-effect",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "Under the Fisher effect, a country with persistently higher inflation will tend to have"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-142",
+      "concept": "inflation-costs",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "Unexpected inflation benefits borrowers because"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-143",
+      "concept": "inflation-costs",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "Unexpectedly low inflation hurts borrowers because"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-33",
+      "concept": "inflation-costs",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "Shoe-leather costs of inflation come from people"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-34",
+      "concept": "inflation-costs",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "Menu costs of inflation are the costs of"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-35",
+      "concept": "inflation-costs",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "Unexpected inflation tends to help"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-36",
+      "concept": "inflation-costs",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "Unexpected inflation tends to hurt"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-148",
+      "concept": "inflation-tax-and-deflation",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "A country with runaway money creation and rapidly rising prices is experiencing"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-251",
+      "concept": "inflation-tax-and-deflation",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If inflation falls from 8 percent to 3 percent but remains positive, this is best described as"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-76",
+      "concept": "inflation-tax-and-deflation",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "When a government finances spending by printing money, it is using"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-77",
+      "concept": "inflation-tax-and-deflation",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "An inflation tax reduces the value of"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-78",
+      "concept": "inflation-tax-and-deflation",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "Hyperinflation is usually associated with"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-79",
+      "concept": "inflation-tax-and-deflation",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "Deflation means the economy is experiencing"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-80",
+      "concept": "inflation-tax-and-deflation",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "A major danger of heavy reliance on printing money to finance government spending is"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-question-evidence-mismatch",
+      "questionId": "ECON-SP-ELITE-316",
+      "concept": "liquidity-preference-and-money-market",
+      "pools": [
+        "medium"
+      ],
+      "message": "The task requires a demand-and-supply equilibrium transition, but the graph contract does not identify both curve families.",
+      "suggestion": "Make the intended graph observations identifiable from the stem and graph contract before the learner reads the options.",
+      "wording": "Refer to the money-market graph. Money demand rises from MD1 to MD2 while the Fed also increases money supply from MS1 to MS2. What is the final equilibrium?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-ELITE-316",
+      "concept": "liquidity-preference-and-money-market",
+      "pools": [
+        "medium"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the money-market graph. Money demand rises from MD1 to MD2 while the Fed also increases money supply from MS1 to MS2. What is the final equilibrium?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-HARD-224",
+      "concept": "liquidity-preference-and-money-market",
+      "pools": [
+        "medium"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the money-market graph. If money demand shifts from MD1 to MD2 while money supply stays MS2, equilibrium moves from:"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-150",
+      "concept": "liquidity-preference-and-money-market",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "Liquidity preference theory explains the interest rate as the variable that balances"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-153",
+      "concept": "liquidity-preference-and-money-market",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If money demand shifts right while money supply is fixed, the equilibrium interest rate should"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-154",
+      "concept": "liquidity-preference-and-money-market",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If real income rises, money demand increases because households"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-155",
+      "concept": "liquidity-preference-and-money-market",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If the price level rises while output is unchanged, money demand increases because people"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-37",
+      "concept": "liquidity-preference-and-money-market",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "Liquidity preference theory says the interest rate adjusts to balance"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-38",
+      "concept": "liquidity-preference-and-money-market",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "In liquidity preference theory, the money supply is assumed to be fixed by"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-39",
+      "concept": "liquidity-preference-and-money-market",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "When the interest rate rises, the opportunity cost of holding money"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-40",
+      "concept": "liquidity-preference-and-money-market",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "When the interest rate rises, money demand tends to"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-41",
+      "concept": "liquidity-preference-and-money-market",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "When real income rises, money demand tends to"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-42",
+      "concept": "liquidity-preference-and-money-market",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "When the price level rises, money demand tends to"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "PM2C3-LPMM-LB-002",
+      "concept": "liquidity-preference-and-money-market",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "A commentator says the move from e to d proves that expanding money supply raises interest rates. How does the diagram bear on this claim?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-122",
+      "concept": "monetary-control-limits",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If households decide to hold more currency and fewer bank deposits, banks will have"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-216",
+      "concept": "monetary-control-limits",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "A higher interest rate paid on reserves can make monetary policy tighter because it"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-67",
+      "concept": "monetary-control-limits",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "The Fed's control over the money supply is imperfect partly because"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-68",
+      "concept": "monetary-control-limits",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "The Fed's control over the money supply is imperfect partly because households can choose to hold more money as"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-69",
+      "concept": "monetary-control-limits",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If banks become nervous and stop lending excess reserves, the money multiplier will"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-71",
+      "concept": "monetary-control-limits",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "Interest on reserves can affect monetary control because it changes banks' incentive to"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-134",
+      "concept": "monetary-neutrality",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "A worker earns $20 per hour, and the price level is 5. The real wage is"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-135",
+      "concept": "monetary-neutrality",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If all nominal prices double but relative prices stay the same, this illustrates"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-136",
+      "concept": "monetary-neutrality",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If the price of pizza rises from $10 to $20 and the price of soda rises from $2 to $4, the relative price of pizza in terms of soda"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-25",
+      "concept": "monetary-neutrality",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "A nominal variable is measured in"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-26",
+      "concept": "monetary-neutrality",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "A real variable is measured in"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-29",
+      "concept": "monetary-neutrality",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "The classical dichotomy separates variables into"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-30",
+      "concept": "monetary-neutrality",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "Monetary neutrality means changes in the money supply do not affect"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "LG-Q-336",
+      "concept": "monetary-neutrality",
+      "pools": [
+        "elite"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "In the value-of-money graph, the economy moves from a to b. Velocity may change. A nominal wage rises in the same proportion as the implied price level, with technology and labor supplies unchanged. What is consistent with monetary neutrality?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "LG-Q-9115",
+      "concept": "monetary-neutrality",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the value-of-money graph. A worker earns $24 at point a and $30 at point b. Treat each point's price level as the reciprocal of its displayed value of money. What happens to the worker's real wage, and what nominal wage at b would instead preserve the original purchasing power?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-10",
+      "concept": "monetary-policy-tools",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "When the Fed buys government bonds in open-market operations, the money supply tends to"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-11",
+      "concept": "monetary-policy-tools",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "When the Fed sells government bonds in open-market operations, the money supply tends to"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-111",
+      "concept": "monetary-policy-tools",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If the Fed raises reserve requirements, the banking system's ability to create money usually"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-112",
+      "concept": "monetary-policy-tools",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If the Fed pays a higher interest rate on reserves, banks may respond by"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-12",
+      "concept": "monetary-policy-tools",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "A lower discount rate tends to make banks"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-64",
+      "concept": "monetary-policy-tools",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If the Fed wants to expand the money supply using open-market operations, it should"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-65",
+      "concept": "monetary-policy-tools",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If the Fed wants to contract the money supply using open-market operations, it should"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-66",
+      "concept": "monetary-policy-tools",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If the Fed lowers reserve requirements, banks can usually create"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-ELITE-318",
+      "concept": "monetary-policy-transmission",
+      "pools": [
+        "hard"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Which explanation connects the changes from MS1 to MS2 and AD1 to AD2?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-HARD-225",
+      "concept": "monetary-policy-transmission",
+      "pools": [
+        "medium"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the money-market graph. Which movement shows contractionary monetary policy with MD1 unchanged?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-159",
+      "concept": "monetary-policy-transmission",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "In the monetary policy transmission mechanism, a lower interest rate leads most directly to"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-160",
+      "concept": "monetary-policy-transmission",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If the Fed increases the money supply, the aggregate demand curve should"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-161",
+      "concept": "monetary-policy-transmission",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "A liquidity trap limits traditional monetary policy because"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-43",
+      "concept": "monetary-policy-transmission",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If the Fed increases the money supply in the short run, interest rates tend to"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-44",
+      "concept": "monetary-policy-transmission",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If the Fed decreases the money supply in the short run, interest rates tend to"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-45",
+      "concept": "monetary-policy-transmission",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "Lower interest rates tend to make investment spending"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-46",
+      "concept": "monetary-policy-transmission",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "Higher interest rates tend to make investment spending"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-47",
+      "concept": "monetary-policy-transmission",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "Expansionary monetary policy usually shifts aggregate demand"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-48",
+      "concept": "monetary-policy-transmission",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "Contractionary monetary policy usually shifts aggregate demand"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-59",
+      "concept": "monetary-policy-transmission",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "A liquidity trap occurs when monetary policy may lose power because nominal interest rates are near"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "LG-Q-9051",
+      "concept": "monetary-policy-transmission",
+      "pools": [
+        "hard"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the graph. What policy movement is shown across the two panels?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "LG-Q-9052",
+      "concept": "monetary-policy-transmission",
+      "pools": [
+        "hard"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the graph. If the investment change caused by the MS1 to MS2 movement is $80 billion and MPC = 0.6, what is the correct full AD effect?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "LG-Q-9060",
+      "concept": "monetary-policy-transmission",
+      "pools": [
+        "medium"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the graph. At price level P1, what happens when AD moves from AD1 to AD2?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "LG-Q-9061",
+      "concept": "monetary-policy-transmission",
+      "pools": [
+        "hard"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the graph. A student says the graph shows a movement along AD caused by a lower price level. What is the best correction?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "LG-Q-9062",
+      "concept": "monetary-policy-transmission",
+      "pools": [
+        "medium"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the graph. Which graph feature shows that the monetary policy is contractionary rather than expansionary?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "LG-Q-9138",
+      "concept": "monetary-policy-transmission",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Money supply falls from MS1 to MS2 in the displayed diagram. Compare that change with a counterfactual in which interest rates respond but firms no longer change investment. Which link would fail, and what does the original money-market panel establish?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-105",
+      "concept": "money-functions-and-measures",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "Use U.S. monetary-aggregate definitions in effect before May 2020. Suppose M1 is $2,000 billion, savings deposits are $900 billion, small time deposits are $300 billion, and retail money market mutual funds are $200 billion. M2 is"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-5",
+      "concept": "money-functions-and-measures",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "Commodity money differs from fiat money because commodity money"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-128",
+      "concept": "quantity-theory-of-money",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "The vertical axis labeled value of money is best understood as"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-129",
+      "concept": "quantity-theory-of-money",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If money supply increases, the new equilibrium moves toward"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-130",
+      "concept": "quantity-theory-of-money",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "Using the quantity equation, if M = 400, V = 5, and Y = 1,000, then P equals"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-131",
+      "concept": "quantity-theory-of-money",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If velocity and output are constant, a 10 percent increase in money supply should lead to approximately"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-132",
+      "concept": "quantity-theory-of-money",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If nominal GDP is $20,000 and the money supply is $5,000, velocity equals"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-133",
+      "concept": "quantity-theory-of-money",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If central bank money growth continues year after year faster than real output growth, the likely long-run result is"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-18",
+      "concept": "quantity-theory-of-money",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "The value of money is measured as"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-19",
+      "concept": "quantity-theory-of-money",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If the price level rises, the value of money"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-20",
+      "concept": "quantity-theory-of-money",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If the price level falls, the value of money"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-21",
+      "concept": "quantity-theory-of-money",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "According to the quantity theory of money, persistent growth in the money supply leads mainly to"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-22",
+      "concept": "quantity-theory-of-money",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "The quantity equation is"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-23",
+      "concept": "quantity-theory-of-money",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "In the quantity equation, P x Y equals"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-230",
+      "concept": "quantity-theory-of-money",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "At the original price level, a monetary injection creates an excess supply of money. According to the adjustment process, people try to get rid of excess money by"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-231",
+      "concept": "quantity-theory-of-money",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If M rises by 8 percent, V is constant, and Y rises by 2 percent, the quantity theory predicts inflation of approximately"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-24",
+      "concept": "quantity-theory-of-money",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If M = 500, V = 2, and Y = 1,000, then P equals"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "LG-Q-9029",
+      "concept": "quantity-theory-of-money",
+      "pools": [
+        "legendary"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the graph. An analyst describes the move from a to b as a rightward shift of money demand and says that doubling the money quantity proves a doubling of the price level. Is the analyst's conclusion correct?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-179",
+      "concept": "stabilization-policy",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If a negative demand shock pushes output below its natural level, stabilization policy would most likely try to"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-180",
+      "concept": "stabilization-policy",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If aggregate demand is too high and inflation pressure is building, stabilization policy would most likely try to"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-181",
+      "concept": "stabilization-policy",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "A key argument for active stabilization policy is that policymakers can"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-182",
+      "concept": "stabilization-policy",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "A key argument against aggressive stabilization policy is that"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-183",
+      "concept": "stabilization-policy",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If policymakers misread a temporary shock as a lasting recession, they risk"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-269",
+      "concept": "stabilization-policy",
+      "pools": [
+        "hard"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "A stock market boom increases household wealth and pushes output above its natural level. If the Fed wants to stabilize output, it should"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-60",
+      "concept": "stabilization-policy",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "A policy lag is a reason stabilization policy can be risky because policy actions may"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-81",
+      "concept": "stabilization-policy",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If a recession lowers aggregate demand, a stabilization policy response could be"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-82",
+      "concept": "stabilization-policy",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If aggregate demand is pushing output above its natural level and raising inflation pressure, policymakers might use"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-83",
+      "concept": "stabilization-policy",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "One argument in favor of stabilization policy is that it can help offset"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-84",
+      "concept": "stabilization-policy",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "One argument against aggressive stabilization policy is that"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "missing-terminal-punctuation",
+      "questionId": "LG-Q-85",
+      "concept": "stabilization-policy",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem has no terminal punctuation.",
+      "suggestion": "",
+      "wording": "If policymakers respond too late to a recession that has already recovered, expansionary policy may"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-301",
+      "concept": "bank-balance-sheets-reserves-and-capital",
+      "pools": [
+        "hard"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Assume the bank cannot obtain extra reserves, sell assets, or retain any new loan proceeds as deposits; every new loan payment would leave the bank. A bank has $900,000 in deposits, a 15 percent reserve requirement, and $135,000 in actual reserves. What can the bank do immediately?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-326",
+      "concept": "bank-balance-sheets-reserves-and-capital",
+      "pools": [
+        "elite"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "In a hypothetical reserve-requirement system, a bank is below required reserves but has adequate capital. It can borrow reserves overnight or make a new loan by crediting a borrower's deposit. Which action addresses today's reserve shortfall, and why?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-2003",
+      "concept": "central-bank-and-federal-reserve",
+      "pools": [
+        "easyBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A solvent bank faces $100 million of withdrawals before sound long-term assets mature. A different bank has assets below its liabilities. Which distinction guides central-bank liquidity support?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-2008",
+      "concept": "deposit-creation-and-money-multiplier",
+      "pools": [
+        "easyBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "The public deposits $120 of previously held currency in a system with rr=10%, no later currency leakage and no excess reserves. At the maximum deposit expansion predicted by this model, how does total deposit expansion compare with the net increase in M1?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-303",
+      "concept": "deposit-creation-and-money-multiplier",
+      "pools": [
+        "elite"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "In a hypothetical 20% reserve system, banks start with exactly required reserves, lend all excess reserves, and receive every loan payment back as a deposit, with no currency drain or other constraint. The public deposits $8,000 of existing currency. A report calls the $40,000 maximum total deposit expansion a $40,000 increase in money held by the public. Is that correct?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-308",
+      "concept": "deposit-creation-and-money-multiplier",
+      "pools": [
+        "elite"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "In a hypothetical 10% reserve system, a bank receives $5,000 in new deposits and lends all excess reserves. With full redepositing, the next bank would lend $4,050. Instead, it makes a $3,600 loan while still lending all excess reserves. Which departure from full redepositing could explain the result?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-SP-EASY-53",
+      "concept": "fiscal-multipliers-and-crowding-out",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "The multiplier effect means that government spending can shift AD by:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-SP-HARD-229",
+      "concept": "fiscal-multipliers-and-crowding-out",
+      "pools": [
+        "medium"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Government purchases and induced spending move demand from AD1 to AD3. If crowding out leaves demand at AD2, how much of the original expansion has been offset?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-SP-MULTIPLIER-EFFECT-5043",
+      "concept": "fiscal-multipliers-and-crowding-out",
+      "pools": [
+        "repair"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "The multiplier effect means an initial spending increase can raise AD by:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-175",
+      "concept": "fiscal-multipliers-and-crowding-out",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "The initial shift in aggregate demand from higher government spending is followed by a larger shift because"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-54",
+      "concept": "fiscal-multipliers-and-crowding-out",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "The marginal propensity to consume is the fraction of extra income that households"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-9133",
+      "concept": "fiscal-multipliers-and-crowding-out",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Two governments each increase purchases by $50. Economy A has an MPC of 0.8, and crowding out reduces its total increase in aggregate demand by $150. Economy B has an MPC of 0.5 and no crowding out. How do the final increases in aggregate demand compare?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-51",
+      "concept": "fiscal-policy-and-aggregate-demand",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "An increase in government spending shifts aggregate demand"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-9142",
+      "concept": "fiscal-policy-and-aggregate-demand",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Households have an MPC of 0.75. One policy cuts taxes by $60 billion; an alternative raises government purchases by $45 billion. With the same spending multiplier and no crowding out, how do the policies' effects on aggregate demand and their budget costs compare?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-R-5050",
+      "concept": "fiscal-policy-and-aggregate-demand",
+      "pools": [
+        "repair"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A tax cut usually increases:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "P52A-FISCAD-B1-001",
+      "concept": "fiscal-policy-and-aggregate-demand",
+      "pools": [
+        "easyBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A tax increase of $50 is announced, but households expect it to be temporary and reduce consumption by less than the estimate based on the marginal propensity to consume. How should the smaller initial consumption response affect the use of the spending multiplier?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-SP-FISHER-EFFECT-5020",
+      "concept": "fisher-effect",
+      "pools": [
+        "repair"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A borrower says the Fisher effect is found by subtracting this year's actual inflation from a loan rate set last year. What is the key mistake?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "LG-Q-139",
+      "concept": "fisher-effect",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem is 100% token-similar to LG-Q-140. Automated comparison indicates differences in: numerical values, scenario or wording.",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "If the nominal interest rate is 9 percent and expected inflation is 4 percent, the real interest rate is approximately"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-3006",
+      "concept": "fisher-effect",
+      "pools": [
+        "mediumBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "For a $100 loan, expected inflation rises from 2% to 5% while the required expected real return falls from 4% to 3%. Under the Fisher approximation, which nominal-rate comparison is correct?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "LG-Q-32",
+      "concept": "fisher-effect",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem is 100% token-similar to LG-Q-73. Automated comparison indicates differences in: numerical values, scenario or wording.",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "If the real interest rate is 3 percent and expected inflation is 2 percent, the nominal interest rate is approximately"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "LG-Q-73",
+      "concept": "fisher-effect",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem is 100% token-similar to LG-Q-139. Automated comparison indicates differences in: numerical values, pedagogical role/pool (easy vs medium).",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "If the nominal interest rate is 7 percent and expected inflation is 3 percent, the real interest rate is approximately"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "LG-Q-74",
+      "concept": "fisher-effect",
+      "pools": [
+        "easy"
+      ],
+      "message": "Stem is 90% token-similar to ECON-SP-EASY-21. Automated comparison indicates differences in: numerical values, scenario or wording.",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "If expected inflation rises from 2 percent to 5 percent and the real interest rate is unchanged, the nominal interest rate should"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-9127",
+      "concept": "fisher-effect",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "For a $180 loan, expected inflation rises from 2% to 5% while the required expected real return falls from 4% to 3%. The nominal rate rises from 6% to 8%. Does its two-point increase refute the Fisher approximation?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2C2-FISH-BR-001",
+      "concept": "fisher-effect",
+      "pools": [
+        "bridge"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Suppose long-run money growth raises expected inflation while real productive conditions leave the real interest rate unchanged. Which next step connects monetary neutrality to the Fisher effect?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2C2-FISH-E-001",
+      "concept": "fisher-effect",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Lenders begin expecting inflation to be 4 percentage points higher, while the long-run real interest rate is unchanged. What does the Fisher effect predict?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2C2-FISH-H-002",
+      "concept": "fisher-effect",
+      "pools": [
+        "hard"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Country A has expected inflation of 8 percent and a real interest rate of 1 percent. Country B has expected inflation of 3 percent and a real interest rate of 5 percent. Which statement is correct?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-SP-INFLATION-REDISTRIBUTION-5079",
+      "concept": "inflation-costs",
+      "pools": [
+        "repair"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Unexpected inflation redistributes wealth toward borrowers when:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "LG-Q-244",
+      "concept": "inflation-costs",
+      "pools": [
+        "hard"
+      ],
+      "message": "Stem is 92% token-similar to LG-Q-245. Automated comparison indicates differences in: numerical values, scenario or wording.",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "A lender expected 2 percent inflation and charged 6 percent nominal interest. Actual inflation was 5 percent. Who is helped by the surprise, and why?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-254",
+      "concept": "inflation-costs",
+      "pools": [
+        "hard"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "If all prices rise but incomes rise by the same percentage, why can inflation still be costly?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-3011",
+      "concept": "inflation-costs",
+      "pools": [
+        "mediumBoss"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Two economies each have $140 in fixed nominal contracts. One unexpectedly raises inflation; the other credibly announces the same inflation before new contracts are written. Which difference is supported?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-345",
+      "concept": "inflation-costs",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Why can high inflation distort relative prices even if the average price level is what gets reported?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-355",
+      "concept": "inflation-costs",
+      "pools": [
+        "hard"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A student says inflation makes everyone poorer because all prices rise. What is the best response?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "LG-Q-9037",
+      "concept": "inflation-costs",
+      "pools": [
+        "hard"
+      ],
+      "message": "Stem is 100% token-similar to LG-Q-9038. Automated comparison indicates differences in: numerical values.",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "Use the Fisher approximation. A lender expected 3 percent inflation and charged 8 percent nominal interest. Actual inflation was 12 percent. Who gains, and what is the realized real rate?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "LG-Q-9038",
+      "concept": "inflation-costs",
+      "pools": [
+        "hard"
+      ],
+      "message": "Stem is 94% token-similar to LG-Q-343. Automated comparison indicates differences in: numerical values, scenario or wording.",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "Use the Fisher approximation. A lender expected 8 percent inflation and charged 13 percent nominal interest. Actual inflation was 2 percent. Who gains, and what is the realized real rate?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-9125",
+      "concept": "inflation-costs",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A $200 fixed nominal debt was agreed with expected inflation 2%, but actual inflation is 7%. Firms also incur real repricing costs. An analyst nets borrowers' gains against lenders' losses and concludes that inflation has no social cost in this case. What is missing?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-R-5035",
+      "concept": "inflation-costs",
+      "pools": [
+        "repair"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Unexpectedly low inflation helps:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-R-5036",
+      "concept": "inflation-costs",
+      "pools": [
+        "repair"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A student says, \"If everyone correctly expects 6 percent inflation, inflation has no economic costs.\" Which response is best?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2C2-ICOST-H-001",
+      "concept": "inflation-costs",
+      "pools": [
+        "hard"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A fixed-rate lender expected 3 percent inflation, but actual inflation is 8 percent. At the same time firms repeatedly update prices. Which statement separates the two costs?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2C2-ICOST-L-001",
+      "concept": "inflation-costs",
+      "pools": [
+        "legendary"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A country perfectly indexes many long-term contracts to the price level, greatly reducing unexpected debtor-creditor redistribution. Inflation nevertheless remains high and predictable. Which conclusion is strongest?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-B-6016",
+      "concept": "inflation-tax-and-deflation",
+      "pools": [
+        "bridge"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A government relies heavily on money creation. Inflation rises, households reduce cash balances, and they make more frequent transfers to avoid holding money. Which connection is most accurate?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-147",
+      "concept": "inflation-tax-and-deflation",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Why is the inflation tax called a tax even though Congress may not pass a tax law?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-253",
+      "concept": "inflation-tax-and-deflation",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Which policy concern is strongest when a government relies heavily on seigniorage?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-77",
+      "concept": "inflation-tax-and-deflation",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "An inflation tax reduces the value of"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-79",
+      "concept": "inflation-tax-and-deflation",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Deflation means the economy is experiencing"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-9121",
+      "concept": "inflation-tax-and-deflation",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Government finances $160 of purchases by creating money. With stable velocity and fixed long-run real output, an official calls this costless finance because no statutory tax bill is issued. What would a comparison of households with different cash holdings reveal?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2C2-ITAX-L-003",
+      "concept": "inflation-tax-and-deflation",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Inflation drops from 12 percent to 4 percent after a stabilization program, but the price level continues to rise. A student calls this deflation. What is the best evaluation?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2C2-ITAX-LB-001",
+      "concept": "inflation-tax-and-deflation",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A household owes a fixed nominal $300. Prices fall 10%. A lender proposes reducing nominal principal by 10% to keep the debt's real burden at its pre-deflation level. Would that adjustment accomplish the stated goal?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "LG-Q-4000",
+      "concept": "liquidity-preference-and-money-market",
+      "pools": [
+        "finalBoss"
+      ],
+      "message": "Stem is 100% token-similar to LG-Q-9137. Automated comparison indicates differences in: numerical values, pedagogical role/pool (finalBoss vs legendaryBoss).",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "Transaction demand for money increases at every rate in an economy with money supply 20. The central bank wants to hold the interest rate fixed in the standard liquidity-preference model. Which response and curve distinction are correct?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "LG-Q-4000",
+      "concept": "liquidity-preference-and-money-market",
+      "pools": [
+        "finalBoss"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Transaction demand for money increases at every rate in an economy with money supply 20. The central bank wants to hold the interest rate fixed in the standard liquidity-preference model. Which response and curve distinction are correct?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "LG-Q-9137",
+      "concept": "liquidity-preference-and-money-market",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "legendary metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Transaction demand for money increases at every rate in an economy with money supply 60. The central bank wants to hold the interest rate fixed in the standard liquidity-preference model. Which response and curve distinction are correct?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-R-5041",
+      "concept": "liquidity-preference-and-money-market",
+      "pools": [
+        "repair"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "At the current interest rate, households want to hold more money than the fixed money supply provides. Which adjustment moves the market toward equilibrium?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "P52B-S3-LPMM-B2-002",
+      "concept": "liquidity-preference-and-money-market",
+      "pools": [
+        "mediumBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Real income rises and the price level falls while nominal money supply is fixed. Interest rates stay unchanged. A report says neither change affected money demand. Which correction follows?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "attached-graph-possibly-decorative",
+      "questionId": "PM2C3-LPMM-L-001",
+      "concept": "liquidity-preference-and-money-market",
+      "pools": [
+        "legendary"
+      ],
+      "message": "A graph is attached, but the stem neither marks it as required nor clearly directs the learner to use it.",
+      "suggestion": "Decide whether the graph is instructionally necessary; require and cue it if necessary, or remove it only if it is genuinely decorative.",
+      "wording": "The money market moves from e to d as money demand and supply both increase. What can be inferred about their competing effects on the interest rate?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-2012",
+      "concept": "monetary-control-limits",
+      "pools": [
+        "easyBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A simple deposit-expansion model with a 10% required reserve ratio predicts a $1000 deposit maximum from $100 in new reserves. Actual deposits rise only $400. Which diagnosis and inference are justified?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "LG-Q-2013",
+      "concept": "monetary-control-limits",
+      "pools": [
+        "easyBoss"
+      ],
+      "message": "Stem is 92% token-similar to LG-Q-9114. Automated comparison indicates differences in: numerical values, pedagogical role/pool (easyBoss vs legendaryBoss).",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "Banks receive $120 in reserves but face few creditworthy loan applications. A proposal assumes more reserves alone will create a fixed proportional lending boom. Which missing link matters?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-2014",
+      "concept": "monetary-control-limits",
+      "pools": [
+        "easyBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Households withdraw $140 from checking into currency while the total of M1 initially stays constant. In a bank-reserve model, which change can still weaken later deposit expansion?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-213",
+      "concept": "monetary-control-limits",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A student says, 'The Fed can perfectly control the money supply because it controls reserves.' What is the best correction?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-215",
+      "concept": "monetary-control-limits",
+      "pools": [
+        "medium"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "If the Fed injects reserves but banks choose not to lend them, why might the money supply grow less than expected?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-218",
+      "concept": "monetary-control-limits",
+      "pools": [
+        "hard"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A central bank wants to expand lending but banks are already holding large excess reserves. Which issue is most relevant?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-309",
+      "concept": "monetary-control-limits",
+      "pools": [
+        "hard"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A student says, 'If the Fed lowers reserve requirements, the money supply must always rise by the maximum multiplier amount.' What is the best correction?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-327",
+      "concept": "monetary-control-limits",
+      "pools": [
+        "hard"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Which answer best explains why lowering the discount rate may not create much lending during a crisis?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-9009",
+      "concept": "monetary-control-limits",
+      "pools": [
+        "hard"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "The Fed sells $75 million in bonds. The multiplier is 4, but the public responds by moving additional funds out of banks into currency. What should we expect relative to the simple multiplier result?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-9015",
+      "concept": "monetary-control-limits",
+      "pools": [
+        "hard"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A bank has a reserve shortfall of $20,000. The Fed lowers the discount rate, but the bank still refuses to borrow because it fears insolvency. What does this show?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "LG-Q-9019",
+      "concept": "monetary-control-limits",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem is 90% token-similar to LG-Q-314. Automated comparison indicates differences in: numerical values.",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "In a hypothetical banking system, banks initially hold exactly their required reserves. The reserve ratio stays at 15%. Banks lend all excess reserves, every loan payment is fully redeposited, and there is no currency drain or other lending constraint. The public deposits $30 million in currency it previously held. Including this initial deposit, what is the maximum total increase in deposits?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-9101",
+      "concept": "monetary-control-limits",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Two otherwise comparable banking systems receive $160 in reserves. In A, banks lend available funds and payments are redeposited. In B, banks hold additional reserves and customers retain more currency. Which comparison is supported?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-9106",
+      "concept": "monetary-control-limits",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A simple deposit-expansion model with a 10% required reserve ratio predicts a $1800 deposit maximum from $180 in new reserves. Actual deposits rise only $720. Which diagnosis and inference are justified?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-SP-EASY-19",
+      "concept": "monetary-neutrality",
+      "pools": [
+        "easy"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Monetary neutrality says that in the long run, a change in the money supply affects:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-SP-MONETARY-NEUTRALITY-5019",
+      "concept": "monetary-neutrality",
+      "pools": [
+        "repair"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A student says, \"If money is neutral, monetary policy can never affect real output.\" What is the best correction?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-137",
+      "concept": "monetary-neutrality",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Which statement is consistent with the classical dichotomy?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "LG-Q-238",
+      "concept": "monetary-neutrality",
+      "pools": [
+        "hard"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "The price of coffee rises from $4 to $8 while the price of tea rises from $2 to $3. What happens to the relative price of coffee in terms of tea?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-239",
+      "concept": "monetary-neutrality",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "If every nominal price and nominal wage doubles, why might employment and output be unchanged in the long run?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-25",
+      "concept": "monetary-neutrality",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A nominal variable is measured in"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-26",
+      "concept": "monetary-neutrality",
+      "pools": [
+        "easy"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A real variable is measured in"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "LG-Q-9032",
+      "concept": "monetary-neutrality",
+      "pools": [
+        "hard"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Nominal GDP rises 12 percent while real GDP rises 5 percent. What happened to the price level, and which kind of variable changed?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-R-5030",
+      "concept": "monetary-neutrality",
+      "pools": [
+        "repair"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Monetary neutrality means money growth affects:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2C2-NEUT-H-001",
+      "concept": "monetary-neutrality",
+      "pools": [
+        "hard"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A monetary expansion raises output temporarily, but years later output returns to its prior real trend while the price level remains permanently higher. Why is this consistent with monetary neutrality?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-SP-INTEREST-ON-RESERVES-POLICY-5080",
+      "concept": "monetary-policy-tools",
+      "pools": [
+        "repair"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Raising the interest rate paid on bank reserves tends to:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-B-6006",
+      "concept": "monetary-policy-tools",
+      "pools": [
+        "bridge"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "The central bank buys securities, increasing reserves and the money supply. In the liquidity-preference money-market model, what happens next to the equilibrium interest rate, other things equal?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-B-6007",
+      "concept": "monetary-policy-tools",
+      "pools": [
+        "bridge"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "The central bank sells securities, reducing reserves and the money supply. In the liquidity-preference money-market model, what happens next to the equilibrium interest rate, other things equal?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "LG-Q-2009",
+      "concept": "monetary-policy-tools",
+      "pools": [
+        "easyBoss"
+      ],
+      "message": "Stem is 90% token-similar to LG-Q-9103. Automated comparison indicates differences in: numerical values, pedagogical role/pool (easyBoss vs legendaryBoss).",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "In an explicitly simplified scarce-reserves model, a central bank buys $100 of securities from banks while the required ratio is unchanged. Which balance-sheet change begins the expansionary transmission?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-9010",
+      "concept": "monetary-policy-tools",
+      "pools": [
+        "hard"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A hypothetical bank has $600,000 in deposits and $90,000 in reserves. The required-reserve ratio rises from 10 to 15 percent. The bank cannot obtain new reserves, and any additional loan payment would settle at another bank. Which conclusion distinguishes its reserve position from its ability to expand?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-R-5019",
+      "concept": "monetary-policy-tools",
+      "pools": [
+        "repair"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A Fed bond purchase adds money to:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-R-5020",
+      "concept": "monetary-policy-tools",
+      "pools": [
+        "repair"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "If the central bank lowers the rate it charges banks for direct loans, what is the immediate effect?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "attached-graph-possibly-decorative",
+      "questionId": "ECON-SP-HARD-227",
+      "concept": "monetary-policy-transmission",
+      "pools": [
+        "medium"
+      ],
+      "message": "A graph is attached, but the stem neither marks it as required nor clearly directs the learner to use it.",
+      "suggestion": "Decide whether the graph is instructionally necessary; require and cue it if necessary, or remove it only if it is genuinely decorative.",
+      "wording": "Read the policy path in reverse, from MS2 to MS1. Which mechanism explains the associated aggregate-demand change?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-159",
+      "concept": "monetary-policy-transmission",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "In the monetary policy transmission mechanism, a lower interest rate leads most directly to"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "LG-Q-9051",
+      "concept": "monetary-policy-transmission",
+      "pools": [
+        "hard"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Refer to the graph. What policy movement is shown across the two panels?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "curve-label-metadata-mismatch",
+      "questionId": "LG-Q-9052",
+      "concept": "monetary-policy-transmission",
+      "pools": [
+        "hard"
+      ],
+      "message": "Curve labels MPC do not appear in the registered graph description.",
+      "suggestion": "Confirm that the wording, feedback, and displayed graph use the same labels.",
+      "wording": "Refer to the graph. If the investment change caused by the MS1 to MS2 movement is $80 billion and MPC = 0.6, what is the correct full AD effect?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-1",
+      "concept": "money-functions-and-measures",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A farmer wants shoes, but the shoemaker does not want wheat. Both are willing to accept dollars. Which feature of money solves the immediate trading problem?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-107",
+      "concept": "money-functions-and-measures",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Which statement best explains why currency held by a bank does not count the same way as currency held by the public?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-3",
+      "concept": "money-functions-and-measures",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A household keeps $600 in cash for emergencies. If prices rise substantially before the cash is spent, which statement is most accurate?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-5",
+      "concept": "money-functions-and-measures",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Commodity money differs from fiat money because commodity money"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-R-5000",
+      "concept": "money-functions-and-measures",
+      "pools": [
+        "repair"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A household owns a home and stocks and earns a salary, but keeps very little currency or checking deposits. Which statement is correct?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-R-5002",
+      "concept": "money-functions-and-measures",
+      "pools": [
+        "repair"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Fiat money has value mainly because:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-R-5004",
+      "concept": "money-functions-and-measures",
+      "pools": [
+        "repair"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "M1 includes:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-R-5005",
+      "concept": "money-functions-and-measures",
+      "pools": [
+        "repair"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Use U.S. monetary-aggregate definitions in effect before May 2020. M2 equals:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "LG-Q-333",
+      "concept": "quantity-theory-of-money",
+      "pools": [
+        "hard"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "If money supply shifts left from the higher money supply back to the original level, what happens to the value of money and the price level?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-334",
+      "concept": "quantity-theory-of-money",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A student says the new equilibrium after MS rises means money is more valuable because there is more of it. What is wrong?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "LG-Q-338",
+      "concept": "quantity-theory-of-money",
+      "pools": [
+        "hard"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "In 2024, M = 500, V = 4, and Y = 1,000. In 2025, M = 600, V = 4, and Y = 1,200. What happens to the price level?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "LG-Q-9030",
+      "concept": "quantity-theory-of-money",
+      "pools": [
+        "hard"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "An economy has M = 2,000, V = 3, and Y = 1,500. Next year M rises to 2,400, V falls to 2.5, and Y rises to 1,600. What happens to the price level?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-9050",
+      "concept": "quantity-theory-of-money",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A student says, 'Inflation means the money demand curve slopes up.' What is the best correction?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "P52B-S4-QTM-H-002",
+      "concept": "quantity-theory-of-money",
+      "pools": [
+        "hard"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "The money supply rises once by 10 percent while velocity and real output remain fixed. What does the quantity theory predict?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-SP-ELITE-322",
+      "concept": "stabilization-policy",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A government passes stimulus after a recession has ended, and the economy is already above potential. What is the risk?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-SP-HARD-233",
+      "concept": "stabilization-policy",
+      "pools": [
+        "medium"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Congress cuts spending to reduce deficits during a recession. What policy concern is most direct?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-SP-POLICY-LAGS-5046",
+      "concept": "stabilization-policy",
+      "pools": [
+        "repair"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Policy lags matter because policy may arrive:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-B-6025",
+      "concept": "stabilization-policy",
+      "pools": [
+        "bridge"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Contractionary stabilization policy shifts AD left to cool an overheating economy. Which short-run labor-market effect connects this policy choice to Phillips-curve analysis?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-280",
+      "concept": "stabilization-policy",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Why can stabilization policy accidentally destabilize the economy?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-281",
+      "concept": "stabilization-policy",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A recession is already ending, but expansionary fiscal policy passed months earlier now takes effect. What is the risk?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-282",
+      "concept": "stabilization-policy",
+      "pools": [
+        "hard"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A supply shock reduces output and raises prices. Why is the policy response harder than for a pure demand shock?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "LG-Q-4013",
+      "concept": "stabilization-policy",
+      "pools": [
+        "finalBoss"
+      ],
+      "message": "Stem is 100% token-similar to LG-Q-9144. Automated comparison indicates differences in: numerical values, pedagogical role/pool (finalBoss vs legendaryBoss).",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "An adverse supply shock reduces output by 30 and raises inflation. Which policy comparison recognizes the constraint facing demand management?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-84",
+      "concept": "stabilization-policy",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "One argument against aggressive stabilization policy is that"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-Q-9135",
+      "concept": "stabilization-policy",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "In a recession, existing rules reduce taxes by $40 and raise benefits. Lawmakers later pass a separate increase in government purchases. Recovery begins before the spending increase takes effect. Which of these changes can reverse during recovery without another vote by lawmakers?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "LG-R-5057",
+      "concept": "stabilization-policy",
+      "pools": [
+        "repair"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A recessionary AD gap can be addressed with:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "P52B-S4-STAB-B1-001",
+      "concept": "stabilization-policy",
+      "pools": [
+        "easyBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Existing tax and benefit rules reduce taxes by $80 and raise benefits in a recession. A separate new purchases bill is passed later. Which classification explains the two stabilization channels?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2D2-STAB-L-002",
+      "concept": "stabilization-policy",
+      "pools": [
+        "legendary"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A government authorizes $75 billion of extra purchases when the required rightward AD shift is $300 billion. Before payment, the required shift at the same reference price falls to $100 billion. The simple spending multiplier is 4; no crowding out or other leakages apply. One third of the authorized purchases must now occur, while the rest can still be cancelled. Which implementation decision meets the revised target without overshooting?"
+    }
+  ]
+}

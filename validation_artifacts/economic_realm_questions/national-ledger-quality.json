@@ -1,0 +1,2301 @@
+{
+  "counts": {
+    "errors": 0,
+    "warnings": 18,
+    "reviews": 173
+  },
+  "findings": [
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-NL-FINALBOSS-4022",
+      "concept": "labor-market-institutions",
+      "pools": [
+        "finalBoss"
+      ],
+      "message": "Identical feedback is reused across 3 distinct questions.",
+      "suggestion": "",
+      "wording": "A benefit reform gives 120 unemployed workers more time to search for good matches. Search duration rises, while later job retention also improves. Which policy assessment recognizes the tradeoff?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-NL-FINALBOSS-4024",
+      "concept": "labor-market-institutions",
+      "pools": [
+        "finalBoss"
+      ],
+      "message": "Identical feedback is reused across 3 distinct questions.",
+      "suggestion": "",
+      "wording": "Job-search assistance speeds matching for 130 applicants, while reduced search pressure permits others to wait longer for suitable offers. Which unemployment prediction requires more evidence?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-NL-FINALBOSS-4025",
+      "concept": "labor-market-institutions",
+      "pools": [
+        "finalBoss"
+      ],
+      "message": "Identical feedback is reused across 3 distinct questions.",
+      "suggestion": "",
+      "wording": "Above-market wages improve effort among 140 retained employees. A proposal predicts that productivity gains must exactly offset reduced hiring. Which missing comparison is essential?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-NL-FINALBOSS-4028",
+      "concept": "labor-market-institutions",
+      "pools": [
+        "finalBoss"
+      ],
+      "message": "Identical feedback is reused across 3 distinct questions.",
+      "suggestion": "",
+      "wording": "A benefit reform gives 170 unemployed workers more time to search for good matches. Search duration rises, while later job retention also improves. Which policy assessment recognizes the tradeoff?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-NL-FINALBOSS-4029",
+      "concept": "labor-market-institutions",
+      "pools": [
+        "finalBoss"
+      ],
+      "message": "Identical feedback is reused across 3 distinct questions.",
+      "suggestion": "",
+      "wording": "Job-search assistance speeds matching for 180 applicants, while reduced search pressure permits others to wait longer for suitable offers. Which unemployment prediction requires more evidence?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-NL-FINALBOSS-4030",
+      "concept": "labor-market-institutions",
+      "pools": [
+        "finalBoss"
+      ],
+      "message": "Identical feedback is reused across 3 distinct questions.",
+      "suggestion": "",
+      "wording": "Above-market wages improve effort among 190 retained employees. A proposal predicts that productivity gains must exactly offset reduced hiring. Which missing comparison is essential?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-NL-FINALBOSS-4040",
+      "concept": "labor-market-institutions",
+      "pools": [
+        "finalBoss"
+      ],
+      "message": "Identical feedback is reused across 3 distinct questions.",
+      "suggestion": "",
+      "wording": "A benefit reform gives 220 unemployed workers more time to search for good matches. Search duration rises, while later job retention also improves. Which policy assessment recognizes the tradeoff?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-NL-LEGENDARYBOSS-9128",
+      "concept": "labor-market-institutions",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "Identical feedback is reused across 3 distinct questions.",
+      "suggestion": "",
+      "wording": "Job-search assistance speeds matching for 230 applicants, while reduced search pressure permits others to wait longer for suitable offers. Which unemployment prediction requires more evidence?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-NL-LEGENDARYBOSS-9129",
+      "concept": "labor-market-institutions",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "Identical feedback is reused across 3 distinct questions.",
+      "suggestion": "",
+      "wording": "Above-market wages improve effort among 240 retained employees. A proposal predicts that productivity gains must exactly offset reduced hiring. Which missing comparison is essential?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "PM2B3-PROD-E-001",
+      "concept": "productivity-measurement",
+      "pools": [
+        "easy"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "In the production graph, point A is located at capital per worker of 20. What output per worker is shown at A?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "PM2B3-PROD-FB-004",
+      "concept": "productivity-measurement",
+      "pools": [
+        "finalBoss"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Use the displayed coordinates for A and B. Approximately how much does output per worker rise, and what would another equal addition to capital imply with other inputs fixed?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-NL-MEDIUMBOSS-3012",
+      "concept": "sources-of-productivity",
+      "pools": [
+        "mediumBoss"
+      ],
+      "message": "Identical feedback is reused across 3 distinct questions.",
+      "suggestion": "",
+      "wording": "Two economies each employ 170 workers. One has little capital per worker and the other much more, with similar technology and institutions. Which qualification should accompany a catch-up prediction?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-NL-MEDIUMBOSS-3013",
+      "concept": "sources-of-productivity",
+      "pools": [
+        "mediumBoss"
+      ],
+      "message": "Identical feedback is reused across 3 distinct questions.",
+      "suggestion": "",
+      "wording": "A discovery increases available mineral resources for 180 workers, but extraction technology and transport remain inadequate. Which policy diagnosis best connects resources to productivity?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-NL-MEDIUMBOSS-3017",
+      "concept": "sources-of-productivity",
+      "pools": [
+        "mediumBoss"
+      ],
+      "message": "Identical feedback is reused across 3 distinct questions.",
+      "suggestion": "",
+      "wording": "Two economies each employ 220 workers. One has little capital per worker and the other much more, with similar technology and institutions. Which qualification should accompany a catch-up prediction?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-NL-MEDIUMBOSS-3018",
+      "concept": "sources-of-productivity",
+      "pools": [
+        "mediumBoss"
+      ],
+      "message": "Identical feedback is reused across 3 distinct questions.",
+      "suggestion": "",
+      "wording": "A discovery increases available mineral resources for 230 workers, but extraction technology and transport remain inadequate. Which policy diagnosis best connects resources to productivity?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-NL-MEDIUMBOSS-3022",
+      "concept": "sources-of-productivity",
+      "pools": [
+        "mediumBoss"
+      ],
+      "message": "Identical feedback is reused across 3 distinct questions.",
+      "suggestion": "",
+      "wording": "Two economies each employ 270 workers. One has little capital per worker and the other much more, with similar technology and institutions. Which qualification should accompany a catch-up prediction?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-NL-MEDIUMBOSS-3023",
+      "concept": "sources-of-productivity",
+      "pools": [
+        "mediumBoss"
+      ],
+      "message": "Identical feedback is reused across 3 distinct questions.",
+      "suggestion": "",
+      "wording": "A discovery increases available mineral resources for 280 workers, but extraction technology and transport remain inadequate. Which policy diagnosis best connects resources to productivity?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "PM2B3-SRC-EB-002",
+      "concept": "sources-of-productivity",
+      "pools": [
+        "easyBoss"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Two economies start at A and B on this productivity curve. Each adds the same small amount of capital per worker, with other inputs fixed. Which comparison follows?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "ECON-NL-EASYBOSS-2019",
+      "concept": "cpi-and-inflation-measurement",
+      "pools": [
+        "easyBoss"
+      ],
+      "message": "Stem is 89% token-similar to ECON-NL-EASYBOSS-2023. Automated comparison indicates differences in: numerical values.",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "A fixed-basket index is 125 in the initial period and 130 in the next. A $150 nominal payment rises 3%. Does its purchasing power keep pace?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "ECON-NL-LEGENDARY-9026",
+      "concept": "cpi-and-inflation-measurement",
+      "pools": [
+        "legendary"
+      ],
+      "message": "legendary metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "A nominal hourly wage rises from $25 to $27. Basket cost rises from $500 to $540, then falls to $525 while the wage stays $27. Relative to the starting year, what real-wage change remains after both price movements?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-EASY-26",
+      "concept": "cpi-bias",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "One reason the CPI can overstate inflation is:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-EASY-28",
+      "concept": "cpi-bias",
+      "pools": [
+        "easy"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "The introduction of new goods can make the CPI imperfect because:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-EASY-29",
+      "concept": "cpi-bias",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Unmeasured quality improvement causes CPI problems because:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "ECON-NL-EASYBOSS-2024",
+      "concept": "cpi-bias",
+      "pools": [
+        "easyBoss"
+      ],
+      "message": "Stem is 90% token-similar to ECON-NL-LEGENDARYBOSS-9110. Automated comparison indicates differences in: numerical values, pedagogical role/pool (easyBoss vs legendaryBoss).",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "A new product expands choice while the price index still records spending of $160 on older products. How does the delayed inclusion of the new product limit what the CPI tells us?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "ECON-NL-EASYBOSS-2025",
+      "concept": "cpi-bias",
+      "pools": [
+        "easyBoss"
+      ],
+      "message": "Stem is 93% token-similar to ECON-NL-LEGENDARYBOSS-9115. Automated comparison indicates differences in: numerical values, pedagogical role/pool (easyBoss vs legendaryBoss).",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "A $170 payment is indexed to measured CPI. A careful study estimates measured inflation at 5% but the cost of maintaining the recipient's utility at 3%, owing to substitution and new choices. How does indexation affect the payment's purchasing power under these estimates?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-ELITE-325",
+      "concept": "cpi-bias",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A medical procedure rises in price from $2,000 to $2,600, but the new version cuts recovery time in half and lowers risk. Why is CPI measurement difficult?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-HARD-224",
+      "concept": "cpi-bias",
+      "pools": [
+        "medium"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A fixed CPI basket shows inflation of 12%, but households avoided much of the increase by switching away from the goods with the largest price increases. What is the likely issue?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-HARD-225",
+      "concept": "cpi-bias",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A phone price rises 20%, but the new model has twice the storage, better battery life, and better cameras. Why might measured inflation be overstated?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-LEGENDARY-9028",
+      "concept": "cpi-bias",
+      "pools": [
+        "legendary"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A statistical agency sees households replacing a newly expensive rail route with an existing bus route. A trial finds the cheaper travel bundle preserves the same commuting service. Which evidence supports substitution bias, and what does it fail to establish?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-LEGENDARY-9030",
+      "concept": "cpi-bias",
+      "pools": [
+        "hard"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A streaming service did not exist in the base year and later gives consumers a cheaper alternative to cable. Which CPI problems are most directly involved?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-MEDIUM-126",
+      "concept": "cpi-bias",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Why does substitution bias usually cause the CPI to overstate inflation?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-MEDIUM-128",
+      "concept": "cpi-bias",
+      "pools": [
+        "medium"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A new product gives consumers a useful option that did not previously exist. Why can that make the CPI imperfect?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-QUALITY-NEW-GOODS-BIAS-6012",
+      "concept": "cpi-bias",
+      "pools": [
+        "bridge"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "If CPI overstates living-cost growth because quality gains are missed, what can happen to a benefit indexed fully to CPI?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-SUBSTITUTION-BIAS-5022",
+      "concept": "cpi-bias",
+      "pools": [
+        "repair"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Substitution bias happens because consumers:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-CPI-VS-GDP-DEFLATOR-5026",
+      "concept": "cpi-versus-gdp-deflator",
+      "pools": [
+        "repair"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "The CPI focuses on:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-CPI-VS-GDP-DEFLATOR-5027",
+      "concept": "cpi-versus-gdp-deflator",
+      "pools": [
+        "repair"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "The GDP deflator focuses on prices of:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-EASY-31",
+      "concept": "cpi-versus-gdp-deflator",
+      "pools": [
+        "easy"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "The GDP deflator is based on:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-EASY-33",
+      "concept": "cpi-versus-gdp-deflator",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Which statement correctly compares the CPI and GDP deflator?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-ELITE-330",
+      "concept": "cpi-versus-gdp-deflator",
+      "pools": [
+        "medium"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Domestic firms produce fewer computers and more health care services. Computer prices fall while health care prices rise. Why might the GDP deflator respond differently from the CPI?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-ELITE-331",
+      "concept": "cpi-versus-gdp-deflator",
+      "pools": [
+        "elite"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Imported household energy becomes dearer while domestic investment equipment becomes cheaper. An analyst sees rising CPI but a falling GDP deflator and declares one series wrong. What should be checked before accepting that claim?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-HARD-231",
+      "concept": "cpi-versus-gdp-deflator",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Why does the GDP deflator not rely on a fixed basket in the same way as the CPI?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-HARD-232",
+      "concept": "cpi-versus-gdp-deflator",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "If consumers buy more imported goods and fewer domestically produced goods, why might CPI and GDP deflator diverge?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "ECON-NL-LEGENDARY-9033",
+      "concept": "cpi-versus-gdp-deflator",
+      "pools": [
+        "legendary"
+      ],
+      "message": "legendary metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Domestic output consists of 10 machines and 100 services. Base prices are $100 and $10; current prices are $120 and $10. Consumers buy the services and imported clothing; the clothing price is unchanged. Which price-index account is supported?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-LEGENDARY-9044",
+      "concept": "cpi-versus-gdp-deflator",
+      "pools": [
+        "hard"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A country imports most consumer goods but produces mostly capital equipment. Imported consumer prices rise while domestic capital prices fall. Which statement is most accurate?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2B2-DEF-E-001",
+      "concept": "cpi-versus-gdp-deflator",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "The price of a domestically produced aircraft sold to a foreign airline rises. Which index directly includes that domestic export price?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2B2-DEF-H-001",
+      "concept": "cpi-versus-gdp-deflator",
+      "pools": [
+        "hard"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Prices of domestically produced aircraft exports rise while imported smartphones bought by households become cheaper. Which combination is plausible?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2B2-DEF-M-002",
+      "concept": "cpi-versus-gdp-deflator",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Imported prescription-drug prices rise while prices of domestic hospital services are unchanged. Which outcome is plausible?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2B2-DEF-MB-001",
+      "concept": "cpi-versus-gdp-deflator",
+      "pools": [
+        "mediumBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A city buys domestic transit vehicles while households buy imported fuel. Which mapping is correct?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-EASY-59",
+      "concept": "economic-growth-policy",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Why can education policy raise economic growth?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-HARD-256",
+      "concept": "economic-growth-policy",
+      "pools": [
+        "hard"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Which policy mix is most likely to support sustained productivity growth rather than only a temporary boost?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-LEGENDARY-9063",
+      "concept": "economic-growth-policy",
+      "pools": [
+        "legendary"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A policy package improves contract enforcement, funds technical training, and supports research trials. After two years, capital and skill measures rise but output growth remains modest. Which assessment best separates a coherent strategy from a guaranteed result?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-LEGENDARY-9064",
+      "concept": "economic-growth-policy",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Why can population growth reduce GDP per person even while raising total GDP?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "ECON-NL-MEDIUMBOSS-3029",
+      "concept": "economic-growth-policy",
+      "pools": [
+        "mediumBoss"
+      ],
+      "message": "Stem is 91% token-similar to ECON-NL-MEDIUMBOSS-3034. Automated comparison indicates differences in: numerical values.",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "A technology policy raises potential output for 140 workers but displaces some workers whose skills no longer match vacancies. Which package recognizes both the growth benefit and transition cost?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-MEDIUMBOSS-3029",
+      "concept": "economic-growth-policy",
+      "pools": [
+        "mediumBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A technology policy raises potential output for 140 workers but displaces some workers whose skills no longer match vacancies. Which package recognizes both the growth benefit and transition cost?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-MEDIUMBOSS-3032",
+      "concept": "economic-growth-policy",
+      "pools": [
+        "mediumBoss"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Saving rises and capital per worker grows, but each extra unit of capital adds less output under unchanged technology. A forecast extends the initial output-growth increase forever. Which correction is warranted?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-MEDIUMBOSS-3034",
+      "concept": "economic-growth-policy",
+      "pools": [
+        "mediumBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A technology policy raises potential output for 190 workers but displaces some workers whose skills no longer match vacancies. Which package recognizes both the growth benefit and transition cost?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-MEDIUMBOSS-3035",
+      "concept": "economic-growth-policy",
+      "pools": [
+        "mediumBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "An economy is already at potential output but has weak incentives for innovation. Officials propose sustained demand stimulus as their only growth strategy. Which comparison is appropriate?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2B3-POL-M-001",
+      "concept": "economic-growth-policy",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A low-income country has little capital per worker but weak courts and frequent asset seizure. What is the best catch-up diagnosis?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-HARD-212",
+      "concept": "gdp-components",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A U.S. firm builds $100 million of equipment domestically and sells $70 million of it this year, keeping $30 million in inventory. What is counted in GDP?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-INVENTORY-INVESTMENT-6005",
+      "concept": "gdp-components",
+      "pools": [
+        "bridge"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A factory makes $100 of new domestic output and sells $80 this period. The unsold $20 stays in inventory. What current production total is recorded?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-EASY-1",
+      "concept": "gdp-measurement",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "In the circular flow of income and expenditure, why does total income equal total expenditure?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-EASY-5",
+      "concept": "gdp-measurement",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Which statement best defines GDP?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-ELITE-302",
+      "concept": "gdp-measurement",
+      "pools": [
+        "hard"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A firm produces $1M of output, sells $800,000 to customers, and adds $200,000 to inventory. It pays $600,000 in wages, $100,000 in rent, $100,000 in interest, and has $200,000 in profit. Which statement is correct?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-GDP-COUNTING-RULES-5002",
+      "concept": "gdp-measurement",
+      "pools": [
+        "repair"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "GDP counts goods and services that are:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-GDP-COUNTING-RULES-5003",
+      "concept": "gdp-measurement",
+      "pools": [
+        "repair"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A used car is resold this year. Why is the vehicle's sale price excluded from current GDP?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-HARD-204",
+      "concept": "gdp-measurement",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A Canadian company produces cars in Tennessee and sells them to U.S. households. How are those cars treated in U.S. GDP?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-HARD-206",
+      "concept": "gdp-measurement",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A household pays $2,000 for illegal services and $2,000 for legal market services. Which statement best explains the GDP issue?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-LEGENDARY-9020",
+      "concept": "gdp-measurement",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A household pays $30 for a restaurant meal, including $5 of sales tax. How should this be interpreted for GDP?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-LEGENDARYBOSS-9102",
+      "concept": "gdp-measurement",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A domestic farm sells grain for $48 to a mill, which sells flour for $63 to a bakery; bread sells to households for $88. The farm buys no intermediate inputs, and no inventories change. An accountant sums value added but omits the farm, reporting GDP of $40. Would excluding the farm be justified because its grain is intermediate?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-MEDIUM-100",
+      "concept": "gdp-measurement",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A student says GDP can be measured by adding up either total income or total expenditure. Why is that true?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-LEGENDARYBOSS-9112",
+      "concept": "indexing-and-real-values",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A $130 indexed benefit resets once annually. Immediately after a reset, prices rise while the next reset is six months away. Which proposal addresses the specific loss without promising complete protection against a mismatched household basket?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-MEDIUM-136",
+      "concept": "indexing-and-real-values",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Why is it misleading to compare a $5 wage in 1970 directly to a $15 wage today?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-LEGENDARYBOSS-9132",
+      "concept": "integrated-macroeconomic-analysis",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Nominal wages rise 6%, CPI rises 8%, unemployment falls because many jobless workers stop searching, and real GDP rises slower than nominal GDP. Which combined interpretation is strongest?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-ELITE-377",
+      "concept": "labor-market-institutions",
+      "pools": [
+        "medium"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A union wage raises pay for employed members but reduces hiring by firms. Which statement best captures the tradeoff?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "ECON-NL-FINALBOSS-4022",
+      "concept": "labor-market-institutions",
+      "pools": [
+        "finalBoss"
+      ],
+      "message": "Stem is 92% token-similar to ECON-NL-FINALBOSS-4028. Automated comparison indicates differences in: numerical values.",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "A benefit reform gives 120 unemployed workers more time to search for good matches. Search duration rises, while later job retention also improves. Which policy assessment recognizes the tradeoff?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-FINALBOSS-4022",
+      "concept": "labor-market-institutions",
+      "pools": [
+        "finalBoss"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A benefit reform gives 120 unemployed workers more time to search for good matches. Search duration rises, while later job retention also improves. Which policy assessment recognizes the tradeoff?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-FINALBOSS-4023",
+      "concept": "labor-market-institutions",
+      "pools": [
+        "finalBoss"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A state increases unemployment benefits but also improves job-placement services. What is the most careful prediction?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "ECON-NL-FINALBOSS-4024",
+      "concept": "labor-market-institutions",
+      "pools": [
+        "finalBoss"
+      ],
+      "message": "Stem is 91% token-similar to ECON-NL-FINALBOSS-4029. Automated comparison indicates differences in: numerical values.",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "Job-search assistance speeds matching for 130 applicants, while reduced search pressure permits others to wait longer for suitable offers. Which unemployment prediction requires more evidence?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-FINALBOSS-4024",
+      "concept": "labor-market-institutions",
+      "pools": [
+        "finalBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Job-search assistance speeds matching for 130 applicants, while reduced search pressure permits others to wait longer for suitable offers. Which unemployment prediction requires more evidence?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "ECON-NL-FINALBOSS-4025",
+      "concept": "labor-market-institutions",
+      "pools": [
+        "finalBoss"
+      ],
+      "message": "Stem is 90% token-similar to ECON-NL-FINALBOSS-4030. Automated comparison indicates differences in: numerical values.",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "Above-market wages improve effort among 140 retained employees. A proposal predicts that productivity gains must exactly offset reduced hiring. Which missing comparison is essential?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "ECON-NL-FINALBOSS-4028",
+      "concept": "labor-market-institutions",
+      "pools": [
+        "finalBoss"
+      ],
+      "message": "Stem is 92% token-similar to ECON-NL-FINALBOSS-4040. Automated comparison indicates differences in: numerical values.",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "A benefit reform gives 170 unemployed workers more time to search for good matches. Search duration rises, while later job retention also improves. Which policy assessment recognizes the tradeoff?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-FINALBOSS-4028",
+      "concept": "labor-market-institutions",
+      "pools": [
+        "finalBoss"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A benefit reform gives 170 unemployed workers more time to search for good matches. Search duration rises, while later job retention also improves. Which policy assessment recognizes the tradeoff?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "ECON-NL-FINALBOSS-4029",
+      "concept": "labor-market-institutions",
+      "pools": [
+        "finalBoss"
+      ],
+      "message": "Stem is 91% token-similar to ECON-NL-LEGENDARYBOSS-9128. Automated comparison indicates differences in: numerical values, pedagogical role/pool (finalBoss vs legendaryBoss).",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "Job-search assistance speeds matching for 180 applicants, while reduced search pressure permits others to wait longer for suitable offers. Which unemployment prediction requires more evidence?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-FINALBOSS-4029",
+      "concept": "labor-market-institutions",
+      "pools": [
+        "finalBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Job-search assistance speeds matching for 180 applicants, while reduced search pressure permits others to wait longer for suitable offers. Which unemployment prediction requires more evidence?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "ECON-NL-FINALBOSS-4030",
+      "concept": "labor-market-institutions",
+      "pools": [
+        "finalBoss"
+      ],
+      "message": "Stem is 90% token-similar to ECON-NL-LEGENDARYBOSS-9129. Automated comparison indicates differences in: numerical values, pedagogical role/pool (finalBoss vs legendaryBoss).",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "Above-market wages improve effort among 190 retained employees. A proposal predicts that productivity gains must exactly offset reduced hiring. Which missing comparison is essential?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-FINALBOSS-4032",
+      "concept": "labor-market-institutions",
+      "pools": [
+        "finalBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Better monitoring lets a firm obtain the same effort at a lower wage. A proposal instead keeps its old above-market wage solely to deter shirking. Which inference follows from the changed constraint?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-FINALBOSS-4040",
+      "concept": "labor-market-institutions",
+      "pools": [
+        "finalBoss"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A benefit reform gives 220 unemployed workers more time to search for good matches. Search duration rises, while later job retention also improves. Which policy assessment recognizes the tradeoff?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-HARD-277",
+      "concept": "labor-market-institutions",
+      "pools": [
+        "medium"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A union contract raises wages above the competitive equilibrium. Which workers are most likely hurt?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-LEGENDARY-9077",
+      "concept": "labor-market-institutions",
+      "pools": [
+        "legendary"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A benefit extension lowers the cost of continued search. A simultaneous placement program improves matching. Average unemployment duration then falls. Which conclusion is warranted from these facts alone?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-LEGENDARYBOSS-9128",
+      "concept": "labor-market-institutions",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Job-search assistance speeds matching for 230 applicants, while reduced search pressure permits others to wait longer for suitable offers. Which unemployment prediction requires more evidence?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2B4-LMI-BR-001",
+      "concept": "labor-market-institutions",
+      "pools": [
+        "bridge"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A new job-matching service reduces the average time workers spend between jobs. How can this affect frictional unemployment and the natural rate?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2B4-LMI-EB-001",
+      "concept": "labor-market-institutions",
+      "pools": [
+        "easyBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A union agreement raises members' wages while firms reduce hiring. A report measures only the wage gain of those still employed. Which additional evidence is needed to evaluate the employment tradeoff?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2B4-LMI-H-001",
+      "concept": "labor-market-institutions",
+      "pools": [
+        "hard"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Unemployment benefits become more generous while a new matching platform sharply improves the quality and speed of job referrals. What is the best prediction for frictional unemployment?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2B4-LMI-H-002",
+      "concept": "labor-market-institutions",
+      "pools": [
+        "hard"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A firm raises wages above equilibrium and worker effort rises enough to improve productivity, but fewer workers are hired at the higher wage. Which interpretation is most complete?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2B4-LMI-M-001",
+      "concept": "labor-market-institutions",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "How do a union wage and an efficiency wage differ most directly?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-EASY-20",
+      "concept": "limits-of-gdp",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Which statement about GDP and well-being is most accurate?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-ELITE-317",
+      "concept": "limits-of-gdp",
+      "pools": [
+        "medium"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Country A has higher GDP per person than Country B, but Country B has cleaner air, more leisure, and longer life expectancy. What should an economist conclude?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-HARD-217",
+      "concept": "limits-of-gdp",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A country cuts pollution regulations, output rises, but air quality worsens and illness increases. What does this show about GDP?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-MEDIUM-119",
+      "concept": "limits-of-gdp",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Which statement is the strongest evaluation of GDP as a welfare measure?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2B1-GDPL-FB-004",
+      "concept": "limits-of-gdp",
+      "pools": [
+        "finalBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Real GDP per person rises 16% while leisure falls and air quality deteriorates. What can be concluded about output per person and well-being?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2B1-GDPL-H-001",
+      "concept": "limits-of-gdp",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Two countries have the same real GDP per person, but one has longer life expectancy, safer streets, and cleaner water. What follows?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2B1-GDPL-H-003",
+      "concept": "limits-of-gdp",
+      "pools": [
+        "hard"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Workers choose shorter workweeks, measured output falls, and leisure rises. Which inference is justified?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2B1-GDPL-M-001",
+      "concept": "limits-of-gdp",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A software update greatly improves usefulness while its market price is unchanged. What difficulty can arise?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-EASY-41",
+      "concept": "living-standards-and-growth",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Economic growth is usually measured by increases in:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-ELITE-342",
+      "concept": "living-standards-and-growth",
+      "pools": [
+        "medium"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A country with rapid population growth sees total real GDP rise but real GDP per person stay flat. What is the best interpretation?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-HARD-244",
+      "concept": "living-standards-and-growth",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Why can rankings of countries by income change dramatically over time?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-LEGENDARY-9048",
+      "concept": "living-standards-and-growth",
+      "pools": [
+        "hard"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A poor country grows quickly after gaining stable property rights, schools, and foreign investment. Which explanation is strongest?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-MEDIUM-140",
+      "concept": "living-standards-and-growth",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Country A grows at 1% per year and Country B grows at 4% per year. What is the most likely long-run result?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "ECON-NL-MEDIUM-141",
+      "concept": "living-standards-and-growth",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem is 100% token-similar to ECON-NL-MEDIUM-142. Automated comparison indicates differences in: numerical values.",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "Using the Rule of 70, a country growing at 5% per year doubles its income in about:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-MEDIUM-143",
+      "concept": "living-standards-and-growth",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Why can a country that is poor today become much richer over several decades?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "ECON-NL-MEDIUMBOSS-3004",
+      "concept": "living-standards-and-growth",
+      "pools": [
+        "mediumBoss"
+      ],
+      "message": "Stem is 91% token-similar to ECON-NL-LEGENDARYBOSS-9117. Automated comparison indicates differences in: numerical values, pedagogical role/pool (mediumBoss vs legendaryBoss).",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "A country with initial real GDP per person $190 sustains 4% growth instead of 2%. Another policy raises the level once by 4% but leaves later growth at 2%. Which comparison recognizes the long-run distinction?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "P52B-S2-LSG-H-002",
+      "concept": "living-standards-and-growth",
+      "pools": [
+        "medium"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A country's real GDP per person rises 3 percent, but most of the gain goes to a small share of households. What can be concluded?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-EASY-80",
+      "concept": "natural-rate-of-unemployment",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "The natural rate of unemployment exists because:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-FINALBOSS-4034",
+      "concept": "natural-rate-of-unemployment",
+      "pools": [
+        "finalBoss"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A reform improves matching for 120 job seekers but rapid technology change creates new skill mismatches. What can be inferred about the natural rate before their magnitudes are known?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-FINALBOSS-4035",
+      "concept": "natural-rate-of-unemployment",
+      "pools": [
+        "finalBoss"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Actual unemployment is 4% and the estimated natural rate is 5% in a labor market. Expected inflation has not yet adapted. Which interpretation and longer-run caution follow?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-HARD-279",
+      "concept": "natural-rate-of-unemployment",
+      "pools": [
+        "easy"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "In a healthy economy, unemployment is still 4.5%. Which explanation best fits the natural rate?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-LEGENDARY-9086",
+      "concept": "natural-rate-of-unemployment",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Suppose actual unemployment is 4%, natural unemployment is 5%, and inflationary pressure is rising. What is the likely labor-market interpretation?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-LEGENDARYBOSS-9130",
+      "concept": "natural-rate-of-unemployment",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "In the labor market, retraining reduces structural unemployment while a recession increases cyclical unemployment. The measured rate is unchanged. Which inference is valid?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-NATURAL-RATE-5056",
+      "concept": "natural-rate-of-unemployment",
+      "pools": [
+        "repair"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "The natural rate of unemployment includes:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "P52B-S1-NRU-E-002",
+      "concept": "natural-rate-of-unemployment",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "The natural rate of unemployment is best described as:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "P52B-S1-NRU-EL-001",
+      "concept": "natural-rate-of-unemployment",
+      "pools": [
+        "hard"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A long recession causes workers to lose skills and attachment to the labor force. Why might unemployment remain elevated after aggregate demand recovers?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "P52B-S1-NRU-M-001",
+      "concept": "natural-rate-of-unemployment",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A rapid shift away from coal production leaves many workers without the skills demanded by expanding industries. What is the most likely effect?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "P52B-S1-NRU-M-002",
+      "concept": "natural-rate-of-unemployment",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Actual unemployment is below the estimated natural rate. Which interpretation is strongest?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "P52B-S1-NRU-R-001",
+      "concept": "natural-rate-of-unemployment",
+      "pools": [
+        "repair"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Which statement corrects the claim that the natural rate is always zero and never changes?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2B4-NRU-H-005",
+      "concept": "natural-rate-of-unemployment",
+      "pools": [
+        "hard"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A policy improves occupational retraining but also makes job search somewhat longer by allowing workers to search for better matches. What is the best conclusion about the natural rate?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-EASY-47",
+      "concept": "productivity-measurement",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Why is productivity important for living standards?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-HARD-247",
+      "concept": "productivity-measurement",
+      "pools": [
+        "medium"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A country raises total output by adding more workers, but output per worker does not rise. What is the best conclusion?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-LEGENDARY-9052",
+      "concept": "productivity-measurement",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Two countries have equal real GDP per person, but one works far fewer hours per person. What can be inferred?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-MEDIUM-147",
+      "concept": "productivity-measurement",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A country wants to raise living standards. Why is raising productivity more important than simply working more hours forever?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-MEDIUM-148",
+      "concept": "productivity-measurement",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "If two countries have the same number of workers but one produces twice as much output, the key difference is likely:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2B3-PROD-H-003",
+      "concept": "productivity-measurement",
+      "pools": [
+        "hard"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Output per worker rises, but output per labor hour is unchanged. Which explanation is consistent with both facts?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2B3-PROD-LB-001",
+      "concept": "productivity-measurement",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A firm produces 2,100 units at 10 units per labor hour. Training raises productivity to 12 units per hour while required output rises to 2,520. Management plans to cut total hours because of the training. Can it meet the new output requirement with fewer hours if no further productivity change occurs?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-EASY-16",
+      "concept": "real-versus-nominal-gdp",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Nominal GDP values output using:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-EASY-17",
+      "concept": "real-versus-nominal-gdp",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Real GDP values output using:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-HARD-213",
+      "concept": "real-versus-nominal-gdp",
+      "pools": [
+        "hard"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Nominal GDP rises from $20T to $22T while real GDP rises from $18T to $18.9T. What is the best interpretation?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-LEGENDARY-9007",
+      "concept": "real-versus-nominal-gdp",
+      "pools": [
+        "legendary"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Two new domestic goods have current prices of $12 and $30 and base prices of $10 and $20. Output of the first is 80 units; total real GDP is $2,400. What is current nominal GDP, and why does it differ from real GDP?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "ECON-NL-LEGENDARY-9022",
+      "concept": "real-versus-nominal-gdp",
+      "pools": [
+        "legendary"
+      ],
+      "message": "legendary metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Nominal GDP rises 32% over two years. Real GDP rises 10% in the first year and is unchanged in the second. The deflator started at 125. Which final deflator and cumulative price change follow?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-HARD-239",
+      "concept": "real-versus-nominal-interest-rates",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Which statement best explains why inflation matters for interest rates?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2B2-RNI-H-003",
+      "concept": "real-versus-nominal-interest-rates",
+      "pools": [
+        "hard"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A loan's fixed nominal rate is 9%. During its year, CPI rises from 200 to 212. Which conclusion is supported by these observations without a theory of how future loan rates are set?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "42009",
+      "concept": "sources-of-productivity",
+      "pools": [
+        "legendary"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Resource-rich Country R relies on extraction and invests little in skills or production methods. Resource-poor Country S imports raw materials and develops strong human capital and technology. Country S eventually has higher output per worker. What does this comparison establish?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-EC-LEGENDARYBOSS-20020",
+      "concept": "sources-of-productivity",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Two economies each employ 120 workers and share similar technology and institutions. The capital-poor economy has higher marginal returns to capital but cannot finance new investment; the capital-rich economy continues investing. Does diminishing returns alone establish that the poorer economy will catch up during this period?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-EASY-56",
+      "concept": "sources-of-productivity",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Diminishing returns to capital means:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-ELITE-349",
+      "concept": "sources-of-productivity",
+      "pools": [
+        "medium"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A government gives firms tax incentives to buy machines, funds technical colleges, and expands broadband infrastructure. Which productivity factors are targeted?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-ELITE-354",
+      "concept": "sources-of-productivity",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A poor country receives basic tractors for farms that previously used hand tools. A rich country adds another advanced tractor to farms already full of equipment. Which investment likely has the higher marginal return?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-HARD-249",
+      "concept": "sources-of-productivity",
+      "pools": [
+        "medium"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A country buys more machines, improves schools, and adopts better production software. Which productivity factors are increasing?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-HARD-254",
+      "concept": "sources-of-productivity",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Why does capital deepening eventually face limits if technology and human capital do not improve?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-HUMAN-CAPITAL-5039",
+      "concept": "sources-of-productivity",
+      "pools": [
+        "repair"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Human capital means:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-LEGENDARY-9054",
+      "concept": "sources-of-productivity",
+      "pools": [
+        "legendary"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A factory adds machinery but productivity barely changes. After operator training, output rises with the same machines and labor hours. A manager concludes that machines have no productive value. Which interpretation best fits both stages?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-LEGENDARY-9057",
+      "concept": "sources-of-productivity",
+      "pools": [
+        "medium"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A country builds ports, roads, and power grids while also expanding vocational education. Which factors are increased?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-LEGENDARY-9058",
+      "concept": "sources-of-productivity",
+      "pools": [
+        "legendary"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "With labor, skills and technology fixed, output at 10, 20 and 30 identical machines is 100, 160 and 200 units. A planner predicts that 40 machines must yield 260. Which assessment follows from the observed pattern?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-LEGENDARYBOSS-9119",
+      "concept": "sources-of-productivity",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A plant buys new machines but lacks workers trained to operate them. One proposal subsidizes machines alone; another subsidizes machines and worker training. Why might the first proposal produce a smaller productivity gain?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-MEDIUM-152",
+      "concept": "sources-of-productivity",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A factory adds more machines for each worker. What should happen to output per worker, other things equal?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "ECON-NL-MEDIUMBOSS-3012",
+      "concept": "sources-of-productivity",
+      "pools": [
+        "mediumBoss"
+      ],
+      "message": "Stem is 92% token-similar to ECON-NL-MEDIUMBOSS-3017. Automated comparison indicates differences in: numerical values.",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "Two economies each employ 170 workers. One has little capital per worker and the other much more, with similar technology and institutions. Which qualification should accompany a catch-up prediction?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-MEDIUMBOSS-3012",
+      "concept": "sources-of-productivity",
+      "pools": [
+        "mediumBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Two economies each employ 170 workers. One has little capital per worker and the other much more, with similar technology and institutions. Which qualification should accompany a catch-up prediction?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "ECON-NL-MEDIUMBOSS-3013",
+      "concept": "sources-of-productivity",
+      "pools": [
+        "mediumBoss"
+      ],
+      "message": "Stem is 89% token-similar to ECON-NL-MEDIUMBOSS-3018. Automated comparison indicates differences in: numerical values.",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "A discovery increases available mineral resources for 180 workers, but extraction technology and transport remain inadequate. Which policy diagnosis best connects resources to productivity?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-MEDIUMBOSS-3014",
+      "concept": "sources-of-productivity",
+      "pools": [
+        "mediumBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A factory replaces failing machines while keeping worker hours and skills fixed. Output stays at 100 units per hour. Without replacement it would have fallen to 80. A manager says unchanged observed productivity proves the physical-capital investment added nothing. Which evaluation uses the relevant comparison?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "ECON-NL-MEDIUMBOSS-3017",
+      "concept": "sources-of-productivity",
+      "pools": [
+        "mediumBoss"
+      ],
+      "message": "Stem is 92% token-similar to ECON-NL-MEDIUMBOSS-3022. Automated comparison indicates differences in: numerical values.",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "Two economies each employ 220 workers. One has little capital per worker and the other much more, with similar technology and institutions. Which qualification should accompany a catch-up prediction?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-MEDIUMBOSS-3017",
+      "concept": "sources-of-productivity",
+      "pools": [
+        "mediumBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Two economies each employ 220 workers. One has little capital per worker and the other much more, with similar technology and institutions. Which qualification should accompany a catch-up prediction?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "ECON-NL-MEDIUMBOSS-3018",
+      "concept": "sources-of-productivity",
+      "pools": [
+        "mediumBoss"
+      ],
+      "message": "Stem is 89% token-similar to ECON-NL-MEDIUMBOSS-3023. Automated comparison indicates differences in: numerical values.",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "A discovery increases available mineral resources for 230 workers, but extraction technology and transport remain inadequate. Which policy diagnosis best connects resources to productivity?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-MEDIUMBOSS-3022",
+      "concept": "sources-of-productivity",
+      "pools": [
+        "mediumBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Two economies each employ 270 workers. One has little capital per worker and the other much more, with similar technology and institutions. Which qualification should accompany a catch-up prediction?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-MEDIUMBOSS-3025",
+      "concept": "sources-of-productivity",
+      "pools": [
+        "mediumBoss"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Two plants use identical equipment and workforce sizes. One adopts a more effective workflow; its output per worker rises. Which inference is supported, and which remains unproved?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-NATURAL-RESOURCES-6021",
+      "concept": "sources-of-productivity",
+      "pools": [
+        "bridge"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A mineral deposit is discovered, but output cannot rise until transport links reach it. Which conclusion applies the natural-resource distinction?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-PHYSICAL-CAPITAL-5038",
+      "concept": "sources-of-productivity",
+      "pools": [
+        "repair"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Which option consists entirely of physical capital?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-TECHNOLOGICAL-KNOWLEDGE-6022",
+      "concept": "sources-of-productivity",
+      "pools": [
+        "bridge"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A new production method raises output with the same workforce and machines. If the method is shared with a comparable second plant, what change could occur without more physical capital?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-EC-FINALBOSS-19021",
+      "concept": "unemployment-measurement",
+      "pools": [
+        "finalBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Employment rises by 100,000, unemployment rises by 50,000, and labor-force participation rises. What likely happened?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-ELITE-368",
+      "concept": "unemployment-measurement",
+      "pools": [
+        "hard"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A recession causes job loss, and some unemployed workers become discouraged. Why might the unemployment rate understate the recession's damage?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "ECON-NL-FINALBOSS-4000",
+      "concept": "unemployment-measurement",
+      "pools": [
+        "finalBoss"
+      ],
+      "message": "Stem is 93% token-similar to ECON-NL-FINALBOSS-4007. Automated comparison indicates differences in: numerical values.",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "An economy has 170 employed and 17 unemployed adults. Two separate policy evaluations observe the same fall in unemployed people. In A, they find jobs; in B, they stop searching. With adult population fixed, which extra indicator distinguishes the cases?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "ECON-NL-FINALBOSS-4001",
+      "concept": "unemployment-measurement",
+      "pools": [
+        "finalBoss"
+      ],
+      "message": "Stem is 93% token-similar to ECON-NL-LEGENDARYBOSS-9125. Automated comparison indicates differences in: numerical values, pedagogical role/pool (finalBoss vs legendaryBoss).",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "Of 180 employed workers, ten full-time workers lose half their hours but retain paid jobs. No one enters or leaves the labor force. Which observation would reveal the deterioration that the official unemployment rate misses?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "ECON-NL-FINALBOSS-4002",
+      "concept": "unemployment-measurement",
+      "pools": [
+        "finalBoss"
+      ],
+      "message": "Stem is 92% token-similar to ECON-NL-LEGENDARYBOSS-9126. Automated comparison indicates differences in: numerical values, pedagogical role/pool (finalBoss vs legendaryBoss).",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "Initially 190 adults are employed and 19 unemployed. A recession causes 9 employed workers to lose jobs and actively search, while an equal number of previously unemployed people stop searching. Which joint result can occur?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-HARD-263",
+      "concept": "unemployment-measurement",
+      "pools": [
+        "hard"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "If the unemployment rate falls because many jobless workers stop searching, what is the best interpretation?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-HARD-269",
+      "concept": "unemployment-measurement",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Why does the official unemployment rate miss some labor market pain?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-LEGENDARY-9084",
+      "concept": "unemployment-measurement",
+      "pools": [
+        "legendary"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Two districts have the same unemployment rate and population. One has lower participation and a larger share of employed people working part time because full-time work is unavailable. Which additional comparison is best before calling their labor markets equally strong?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-MEDIUM-162",
+      "concept": "unemployment-measurement",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "The labor force is 150 million and the adult population is 200 million. What is the labor-force participation rate, and what does the remaining share represent?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-EC-LEGENDARYBOSS-20019",
+      "concept": "unemployment-types",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Automation raises output per worker and lowers production costs, but some workers in the old process lose jobs and need retraining. Which statement best describes the combined effect?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-ELITE-370",
+      "concept": "unemployment-types",
+      "pools": [
+        "medium"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A recession closes restaurants temporarily, while automation permanently reduces demand for cashiers. Which unemployment types are present?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-ELITE-372",
+      "concept": "unemployment-types",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Why is cyclical unemployment not part of the natural rate?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-FINALBOSS-4010",
+      "concept": "unemployment-types",
+      "pools": [
+        "finalBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A regional study follows 150 jobless workers after national demand recovers. Former miners still lack skills for local health-care vacancies, while new graduates are interviewing for matching jobs. Which diagnosis and response pair is appropriate?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "ECON-NL-FINALBOSS-4012",
+      "concept": "unemployment-types",
+      "pools": [
+        "finalBoss"
+      ],
+      "message": "Stem is 92% token-similar to ECON-NL-FINALBOSS-4019. Automated comparison indicates differences in: numerical values.",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "Job vacancies and active job seekers both remain high in a region with 170 displaced workers, even after aggregate sales return to normal. Which added evidence best distinguishes persistent mismatch from ordinary search?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-FINALBOSS-4016",
+      "concept": "unemployment-types",
+      "pools": [
+        "finalBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Unemployment rises from its estimated natural rate of 5% to 8% during a recession. After demand recovers, it returns to 5%, with skills and labor-market institutions unchanged. What portion of the recession unemployment rate was cyclical, and what does the remaining 5% imply for policy?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-FRICTIONAL-UNEMPLOYMENT-5051",
+      "concept": "unemployment-types",
+      "pools": [
+        "repair"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Frictional unemployment comes from:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-FRICTIONAL-UNEMPLOYMENT-6031",
+      "concept": "unemployment-types",
+      "pools": [
+        "bridge"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Two workers are unemployed: A is briefly between suitable jobs; B's old occupation has disappeared and employers require skills B lacks. Which worker is more directly helped by retraining?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-HARD-270",
+      "concept": "unemployment-types",
+      "pools": [
+        "medium"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A recession causes restaurants to lay off workers. At the same time, some workers quit jobs to search for better matches. Which types of unemployment are present?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-HARD-273",
+      "concept": "unemployment-types",
+      "pools": [
+        "easy"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Cyclical unemployment differs from the natural rate because cyclical unemployment:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-LEGENDARY-9073",
+      "concept": "unemployment-types",
+      "pools": [
+        "hard"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A worker is laid off because a recession reduces sales. Six months later, the worker's old industry adopts technology that permanently eliminates the job type. How should the unemployment diagnosis change?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-LEGENDARY-9074",
+      "concept": "unemployment-types",
+      "pools": [
+        "legendary"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "After a regional downturn ends, one group has suitable job offers but needs time to choose; another cannot meet credentials for expanding occupations. A third group has already accepted paid part-time work while seeking full-time jobs. Which diagnosis respects both cause and official status?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-LEGENDARY-9080",
+      "concept": "unemployment-types",
+      "pools": [
+        "legendary"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Spending and total vacancies recover after a downturn, but vacancies concentrate in licensed occupations while displaced workers lack the credentials. Which evidence would most directly strengthen a structural diagnosis over a purely cyclical one?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-LEGENDARY-9087",
+      "concept": "unemployment-types",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A worker is unemployed because moving to available jobs is too costly, even though jobs exist elsewhere. Which type is most likely?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-LEGENDARYBOSS-9127",
+      "concept": "unemployment-types",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "An initially cyclical recession lasts long enough that displaced workers lose relevant skills. Demand later recovers fully. A forecast assumes the old natural rate must immediately return. Which counterfactual best reveals the forecast's weakness?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-MEDIUM-173",
+      "concept": "unemployment-types",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Which type of unemployment would still exist even when the economy is healthy?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-MEDIUM-174",
+      "concept": "unemployment-types",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Which statement correctly distinguishes structural from frictional unemployment?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-NL-STRUCTURAL-UNEMPLOYMENT-6032",
+      "concept": "unemployment-types",
+      "pools": [
+        "bridge"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Automation removes jobs whose workers lack skills for new vacancies. A policy only boosts demand for output without changing skills. Which limit follows?"
+    }
+  ]
+}

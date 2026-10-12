@@ -3,6 +3,7 @@ import vm from 'node:vm';
 import assert from 'node:assert/strict';
 import {createRequire} from 'node:module';
 import {games, templatePath, declaration, fn, value} from './source.mjs';
+import {readLibrary} from '../economic_realm_questions/library.mjs';
 const require=createRequire(import.meta.url);
 const core=require('../../build/faculty-build-composer/composer-core.js');
 const profiles=JSON.parse(fs.readFileSync('audit_tools/economic_realm_engine/profiles.json','utf8'));
@@ -10,6 +11,7 @@ const template=fs.readFileSync(templatePath,'utf8').replace(/\r\n/g,'\n');
 const check=process.argv.includes('--check');
 const js=v=>JSON.stringify(v,null,2).replace(/<\/script/gi,'<\\/script');
 const results=[];
+const composerLibrary=readLibrary();
 for(const game of games){
   const p=profiles[game],base=`play/economic-realm/${game}`;
   const bankSource=fs.readFileSync(`${base}/${p.bank}`,'utf8');
@@ -36,8 +38,19 @@ for(const game of games){
   let html=template.replace(declaration(template,'FACULTY_COMPOSITION_CONFIG'),`const FACULTY_COMPOSITION_CONFIG = ${js(config)};`);
   // Published question scripts remain the sole question source. Supplemental maps
   // in those scripts execute unchanged, including their direct-skill backfills.
-  const metadata=Object.fromEntries(graph.map(q=>[q.image,{imageAlt:q.imageAlt,graphDescription:q.graphDescription||q.imageAlt}]));
-  const imagePaths=[...new Set([...Object.values(banks).flat(),...vm.runInContext('Object.values(microSkillRepairPools).flat().concat(Object.values(microSkillBridgePools).flat())',context)].map(q=>q.image).filter(Boolean))];
+  const allQuestions=[...Object.values(banks).flat(),...vm.runInContext('Object.values(microSkillRepairPools).flat().concat(Object.values(microSkillBridgePools).flat(),typeof skillRepairSeedPools==="undefined"?[]:Object.values(skillRepairSeedPools).flat())',context)];
+  const metadata=Object.fromEntries(allQuestions.filter(q=>q.image).map(q=>[q.image,{imageAlt:q.imageAlt,graphDescription:q.graphDescription||q.imageAlt}]));
+  const imagePaths=[...new Set(allQuestions.map(q=>q.image).filter(Boolean))];
+  const labels={...p.objectiveLabels},newObjectives=new Map();
+  for(const q of allQuestions){
+    if(labels[q.objective])continue;
+    const legacy=labels[String(q.objective).replace(/^LO/,'')]||labels['LO'+q.objective];
+    if(legacy){labels[q.objective]=legacy;continue;}
+    const title=composerLibrary.concepts[q.primaryConceptId]?.title;
+    if(title){if(!newObjectives.has(q.objective))newObjectives.set(q.objective,new Set());newObjectives.get(q.objective).add(title);}
+  }
+  for(const [objective,titles] of newObjectives)labels[objective]=titles.size>3?'Integrated economics application':[...titles].join(' / ');
+  p.objectiveLabels=labels;
   for(const image of imagePaths)assert(fs.existsSync(`${base}/${image}`),`${game}: missing question image ${image}`);
   let region=`const objectiveLabels = ${js(p.objectiveLabels)};\nconst embeddedQuestionAssets = ${js(Object.fromEntries(imagePaths.map(p=>[p,p])))};\nconst questionAssetMetadata = ${js(metadata)};\nconst trialGraphQuestionIds = ${js(graph.map(q=>q.id))};\nconst fadingFortuneQuestionIds = ${js(eligible.map(q=>q.id))};\nconst riskRewardQuestionIds = ${js(eligible.map(q=>q.id))};\nconst composerQuestionValidator = ${core.validateFacultyQuestionRecord.toString()};\n// Legacy banks encode checkpoint stage in difficulty; normalize only the validation view.\nconst facultyQuestionValidator = (q,pool,assets) => composerQuestionValidator(q && /Boss$/.test(q.difficulty || '') ? {...q,difficulty:({easyBoss:'easy',mediumBoss:'medium',finalBoss:'hard',legendaryBoss:'legendary'})[q.difficulty]} : q,pool,assets);\n`;
   for(const [name,fallback] of Object.entries({repairQuestions:[],bridgeQuestions:[],microSkillRepairPools:{},microSkillBridgePools:{},skillRepairSeedPools:{}})){

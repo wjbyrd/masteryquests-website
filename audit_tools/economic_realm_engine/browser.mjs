@@ -11,10 +11,13 @@ const root=process.cwd(),out=path.join(root,'validation_artifacts/economic_realm
 fs.mkdirSync(out,{recursive:true});
 const profiles=JSON.parse(fs.readFileSync('audit_tools/economic_realm_engine/profiles.json','utf8'));
 const legacy=Object.fromEntries(games.map(g=>[g,execFileSync('git',['show',`${baselineCommit}:play/economic-realm/${g}/index.html`],{encoding:'utf8',maxBuffer:8e6})]));
+const legacyBanks=Object.fromEntries(games.map(g=>[g,execFileSync('git',['show',`${baselineCommit}:play/economic-realm/${g}/${profiles[g].bank}`],{encoding:'utf8',maxBuffer:8e6})]));
 const server=http.createServer((req,res)=>{
   const url=new URL(req.url,'http://localhost');
   const oldGame=games.find(g=>url.pathname===`/play/economic-realm/${g}/`);
-  if(url.searchParams.has('legacy')&&oldGame){res.setHeader('content-type','text/html');res.end(legacy[oldGame]);return;}
+  if(url.searchParams.has('legacy')&&oldGame){res.setHeader('content-type','text/html');res.end(legacy[oldGame].replace(profiles[oldGame].bank,profiles[oldGame].bank+'?legacy=1'));return;}
+  const oldBank=games.find(g=>url.pathname===`/play/economic-realm/${g}/${profiles[g].bank}`);
+  if(url.searchParams.has('legacy')&&oldBank){res.setHeader('content-type','text/javascript');res.end(legacyBanks[oldBank]);return;}
   let file=path.resolve(root,'.'+decodeURIComponent(new URL(req.url,'http://localhost').pathname));
   if(!file.startsWith(root+path.sep)){res.writeHead(403).end();return;}
   try{if(fs.statSync(file).isDirectory())file=path.join(file,'index.html');res.setHeader('content-type',({'.html':'text/html','.js':'text/javascript','.css':'text/css','.webp':'image/webp','.svg':'image/svg+xml'})[path.extname(file)]||'application/octet-stream');fs.createReadStream(file).pipe(res);}catch{res.writeHead(404).end();}
@@ -38,6 +41,12 @@ try{
   await check(`${game}: all configured modes validate`,async()=>{
     const modes=await page.evaluate(()=>FACULTY_COMPOSITION_CONFIG.supportedModes.map(mode=>({mode,...validateFacultyMode(mode)})));
     assert.deepEqual(modes.filter(m=>!m.ok),[]);
+  });
+  await check(`${game}: every published question asset decodes`,async()=>{
+    const assets=await page.evaluate(async()=>Promise.all(Object.values(embeddedQuestionAssets).map(src=>new Promise(resolve=>{
+      const image=new Image();image.onload=()=>resolve({src,ok:image.naturalWidth>0&&image.naturalHeight>0});image.onerror=()=>resolve({src,ok:false});image.src=src;
+    }))));
+    assert.deepEqual(assets.filter(a=>!a.ok),[]);
   });
   const modes=await page.evaluate(()=>FACULTY_COMPOSITION_CONFIG.supportedModes);
   for(const mode of modes)await check(`${game}: ${mode} launch and answer`,async()=>{
