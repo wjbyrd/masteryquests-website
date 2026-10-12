@@ -9,12 +9,19 @@
     "directory": "./dist",
     "binding": "ASSETS",
     "run_worker_first": [
+      "/api/subscriptions",
+      "/api/subscriptions/*",
       "/play/managerial-directorate-classroom",
       "/play/managerial-directorate-classroom/*"
     ]
   },
-  "main": "server/classroom-access/worker.mjs",
+  "main": "server/site-worker.mjs",
+  "vars": { "SUBSCRIPTIONS_ENABLED": "false" },
+  "observability": { "enabled": false },
   "ratelimits": [
+    { "name": "SUBSCRIPTION_IP_LIMIT", "namespace_id": "2026101201", "simple": { "limit": 5, "period": 60 } },
+    { "name": "SUBSCRIPTION_EMAIL_LIMIT", "namespace_id": "2026101202", "simple": { "limit": 1, "period": 60 } },
+    { "name": "SUBSCRIPTION_GLOBAL_LIMIT", "namespace_id": "2026101203", "simple": { "limit": 30, "period": 60 } },
     {
       "name": "CLASSROOM_LOGIN_LIMIT",
       "namespace_id": "2026090501",

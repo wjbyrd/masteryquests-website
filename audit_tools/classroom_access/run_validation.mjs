@@ -1,7 +1,8 @@
 import fs from 'node:fs';import path from 'node:path';import crypto from 'node:crypto';import assert from 'node:assert/strict';import {execFileSync} from 'node:child_process';
 import gate from '../../server/classroom-access/worker.mjs';
 import {normalizeApprovedRefreshFix} from '../telemetry_governance/private-refresh-scope.cjs';
-const root=path.resolve(process.argv[2]||'.'),out=path.join(root,'validation_artifacts/classroom_access'),results=[];
+const root=path.resolve(process.argv[2]||'.'),out=path.resolve(process.env.MQ_CLASSROOM_TEST_OUTPUT_DIR||path.join(root,'validation_artifacts/classroom_access')),results=[];
+fs.mkdirSync(out,{recursive:true});
 const base='/play/managerial-directorate-classroom';
 // Ephemeral synthetic fixtures exist in memory only and are never printed.
 const code=crypto.randomBytes(18).toString('base64url'),secret=crypto.randomBytes(48).toString('base64url');
@@ -42,7 +43,16 @@ await check('Classroom access protected files match committed HEAD',async()=>{
   for(const p of protectedFiles){
     const committed=execFileSync('git',['show','HEAD:'+p],{cwd:root});
     const working=fs.readFileSync(path.join(root,p));
-    if(p==='play/managerial-directorate-classroom/index.html'){
+    if(p==='wrangler.jsonc'){
+      // Remove only the separately asserted subscription additions before comparing
+      // the rest of the original classroom/deployment configuration to HEAD.
+      const actual=JSON.parse(working),expected=JSON.parse(committed);
+      actual.main=expected.main;
+      actual.assets.run_worker_first=actual.assets.run_worker_first.filter(p=>p!=='/api/subscriptions'&&p!=='/api/subscriptions/*');
+      actual.ratelimits=actual.ratelimits.filter(r=>!['SUBSCRIPTION_IP_LIMIT','SUBSCRIPTION_EMAIL_LIMIT','SUBSCRIPTION_GLOBAL_LIMIT'].includes(r.name));
+      delete actual.vars;delete actual.observability;
+      assert.deepEqual(actual,expected,p);
+    }else if(p==='play/managerial-directorate-classroom/index.html'){
       // Disclosure copy is governed by render.mjs; access and hub markup remain frozen.
       const strip=s=>s.toString().replace(/\r\n/g,'\n').replace(/(<details><summary>About this class build<\/summary><p>)[\s\S]*?(<\/p><\/details>)/,'$1$2');
       assert.equal(strip(working),strip(committed),p);
@@ -53,5 +63,5 @@ await check('Classroom access protected files match committed HEAD',async()=>{
     }else assert.deepEqual(working,committed,p);
   }
 });
-await check('Root config preserves original asset directory and Worker; no route or backend changes',async()=>{const config=JSON.parse(fs.readFileSync(path.join(root,'wrangler.jsonc')));assert.equal(config.name,'masteryquests-website');assert.equal(config.assets.directory,'./dist');assert.deepEqual(config.assets.run_worker_first,[base,base+'/*']);assert.equal(config.assets.binding,'ASSETS');assert.equal(config.main,'server/classroom-access/worker.mjs');assert.equal(config.routes,undefined);assert.equal(config.vars,undefined);assert.equal(config.ratelimits[0].simple.limit,120);});
+await check('Site wrapper preserves classroom routing and limits alongside isolated subscriptions',async()=>{const config=JSON.parse(fs.readFileSync(path.join(root,'wrangler.jsonc')));assert.equal(config.name,'masteryquests-website');assert.equal(config.assets.directory,'./dist');assert.deepEqual(config.assets.run_worker_first,['/api/subscriptions','/api/subscriptions/*',base,base+'/*']);assert.equal(config.assets.binding,'ASSETS');assert.equal(config.main,'server/site-worker.mjs');assert.equal(config.routes,undefined);assert.deepEqual(config.vars,{SUBSCRIPTIONS_ENABLED:'false'});assert.deepEqual(config.ratelimits.find(r=>r.name==='CLASSROOM_LOGIN_LIMIT'),{name:'CLASSROOM_LOGIN_LIMIT',namespace_id:'2026090501',simple:{limit:120,period:60}});});
 const failed=results.filter(r=>r.status==='FAIL');const report={passed:results.length-failed.length,failed:failed.length,total:results.length,results};fs.writeFileSync(path.join(out,'validation_results.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));if(failed.length)process.exitCode=1;

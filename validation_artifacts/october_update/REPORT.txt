@@ -1,0 +1,140 @@
+MASTERY QUESTS — OCTOBER 12, 2026 FACULTY RESOURCES UPDATE
+
+Implemented locally; not committed, pushed, or deployed.
+The informational pages and manual faculty-request workflow are prepared for
+publication. The complete four-part release is not yet operational: Brevo setup
+and real confirmation/unsubscribe acceptance tests remain outstanding.
+
+DELIVERABLES
+
+1. Faculty Pedagogy Guide: /how-to/pedagogy/
+   Includes all four supplied teaching applications in the instructor's original
+   first-person voice. Preserves the student completion-credit disclaimer and
+   Dan Settlage acknowledgment. Links existing Games, Composer, report, hosting,
+   Canvas and responsible-data guidance. Actual Composer template controls were
+   verified: View Mastery Report, Copy Report, Download Game Data. No automatic
+   LMS submission or grade-transfer claim was added.
+
+2. Updates: /about/updates/
+   Added October entries for August–October question-bank review, Concept Review
+   follow-through, and Econ-nections classroom warmups. Includes all supplied
+   historical counts and their unique-ID, retired-question, pre-remediation,
+   documented-minimum and test-versus-instructional-judgment qualifications.
+   Older September entries are preserved byte-for-byte. No estimated 7,000-review
+   claim, unpublished game announcement, manuscript/reviewer material or learning
+   gain claim was introduced.
+   All 151 maintained public Concept Review PDFs match Composer copies. Extracted
+   text from MICRO-07, MACRO-11 and MACRO-20 verifies the specific examples cited.
+   Human assistive-technology review is not claimed. Live Econ-nections checks
+   returned HTTP 403, so QR/session classroom features are not announced as live.
+
+3. Subscription entry: /about/subscribe/
+   Prepared the user-selected Brevo double-opt-in integration behind the existing
+   Cloudflare site Worker. Email-only form, mandatory affirmative consent, native
+   browser validation, server validation/body limit, origin restriction, honeypot,
+   three rate limits, generic duplicate/suppression response, timeout/error
+   handling, and provider-accepted confirmation requests. No subscriber database
+   or telemetry integration. Credentials stay in backend secrets. The default is
+   disabled and the UI truthfully reports unavailable configuration.
+   Brevo campaign unsubscribe/suppression and manual removal are documented.
+   No subscription, email delivery, unsubscribe, or remote deployment is claimed
+   live or end-to-end tested. The confirmation return page does not itself claim
+   to verify membership.
+
+4. Faculty bank requests: /how-to/question-banks/
+   Uses the creator's existing public wjbyrd@troy.edu address. Clear manual-contact
+   fallback works without JavaScript; optional client-only helper prepares a
+   draft and explicitly says nothing has been sent. Faculty name, institution,
+   institutional email, collection choices and optional use are included. The
+   sender must send the email. No request is auto-approved or subscribed.
+   Existing three PDF/CSV pairs remain private; no regeneration or public download
+   links. Manual verification and private fulfillment are described in the setup
+   guide, with a 90-day post-completion request-mail disposal aim.
+
+IMPLEMENTATION FILES
+
+Created:
+  how-to/pedagogy/index.html
+  how-to/question-banks/index.html
+  about/subscribe/index.html
+  about/subscribe/confirmation/index.html
+  assets/css/faculty-resources.css
+  assets/js/faculty-contact.js
+  server/site-worker.mjs
+  server/subscriptions/worker.mjs
+  server/subscriptions/README.md
+  audit_tools/october_update/subscriptions.test.mjs
+  audit_tools/october_update/publication.test.mjs
+  audit_tools/october_update/browser.mjs
+  validation_artifacts/october_update/REPORT.txt
+
+Modified:
+  how-to/index.html — normal faculty navigation and resource cards
+  about/updates/index.html — dated additions, guide/subscription entry points
+  privacy/index.html — separate communications notice and retention boundaries
+  wrangler.jsonc — narrow subscription dispatch/rate bindings, disabled by default
+  audit_tools/public_site_publication/build-dist.mjs — faculty export exclusions
+  audit_tools/public_documentation/pages.json — new page/link coverage
+  audit_tools/classroom_access/run_validation.mjs — exact assertions for the new
+    wrapper/config while preserving original gate checks; optional output folder
+  .gitignore — this task's local QA files
+
+The pre-existing tools/__pycache__/export_faculty_question_bank.cpython-312.pyc
+change was left alone. Generated build output and local captures are ignored.
+Original classroom validation evidence was restored; current results are in this
+task's local QA folder. No student library, game runtime, adaptive engine, Concept
+Review PDF, telemetry backend or Econ-nections implementation was modified.
+
+VERIFICATION ACTUALLY PERFORMED
+
+- Subscription backend: 13/13 Node tests passed, with synthetic provider responses.
+  Includes configuration, consent, malformed/large requests, origin/method rules,
+  duplicate membership, suppressed contacts, each rate limiter, provider failure,
+  DOI payload, and existing site/classroom dispatch.
+- Classroom access: 27/27 checks passed. Existing classroom gate and game files
+  match HEAD; only explicitly checked subscription config additions are allowed.
+- Faculty exporter: 25/25 tests passed. First attempt hit sandbox temp-directory
+  permissions; rerun in a repository-local temporary directory passed.
+- Documentation: 22 pages, 713 links, zero broken links; two negative controls.
+- Existing download-document checks: 4/4 passed.
+- Publication/content tests: 6 passed, 1 explicitly skipped. Older entries,
+  required guide/copy/figures, private-path absence and unchanged student/game
+  sources passed. Existing faculty export file permissions prevented reading
+  their bytes even after a normal elevated read attempt, so the optional
+  renamed-copy hash comparison was not completed. No ACLs were changed.
+- Public build: 2,418 files, 151 Composer review PDFs, zero forbidden or incoming
+  assets. No restricted faculty-bank directory or recognized export filename in
+  dist; GitHub Pages and Cloudflare ignore exclusions remain in place.
+- Wrangler deploy --dry-run: successful bundle, 14.54 KiB uncompressed; no upload.
+  Wrangler's attempted write to its global log directory was permission-denied;
+  this did not prevent the build/bundle or dry-run completion.
+- Browser: 24 layouts across 320, 390, 768 and 1440 pixels, zero horizontal overflow
+  or JavaScript page errors; visual captures inspected. Keyboard skip link,
+  mobile menu/Escape, labeled form controls, consent requirement, validation,
+  manual email draft, stale-draft hiding, no-JavaScript fallback, disabled service,
+  synthetic accepted/error responses passed. Primary buttons use high-contrast
+  navy/white; forms retain visible focus and existing reduced-motion behavior.
+- Extended historical Composer suite was attempted but stalled in its first
+  closure runner without reporting results and was stopped. No full current
+  Composer-suite pass is claimed. Historical 36/36 on the Updates page describes
+  the prior October 8 review, not this task's test run.
+- git diff --check passed. Diff review found no game/library/telemetry changes.
+
+CONFIGURATION AND PUBLICATION
+
+See server/subscriptions/README.md for exact Brevo and Cloudflare steps:
+verified sender/domain, dedicated list, activated DOI template, backend secret
+BREVO_API_KEY, real BREVO_LIST_ID and BREVO_DOI_TEMPLATE_ID, native unsubscribe
+footer, and real owner-controlled confirmation/campaign-unsubscribe tests.
+Only then enable SUBSCRIPTIONS_ENABLED and deploy on the official Cloudflare host.
+No credentials, DNS records, provider IDs, endpoints or test delivery results were
+invented. GitHub Pages alone cannot supply the subscription backend.
+
+Faculty requests can use the manual email path once the page is published. The
+maintainer should inspect the existing private validation report before sharing
+exports; this session could not read those protected export files. Email receipts
+and approved private delivery were not exercised with a real faculty requester.
+
+Ready to publish the guide, Updates, privacy and manual-request pages, with the
+subscription page visibly unavailable. Not ready to advertise a functioning
+subscription service or mark the entire four-deliverable launch complete.

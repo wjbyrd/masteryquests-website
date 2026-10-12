@@ -75,6 +75,8 @@ function publicTreeFilter(rel, entry) {
 
   // Development/source material that may live beneath otherwise-public trees.
   if (segments.includes("authoring")) return false;
+  if (segments.includes("faculty_exports") || segments.includes("_private_course_sources")) return false;
+  if (/^(?:general_economics|microeconomics|macroeconomics)_question_bank\.(?:pdf|csv)$/i.test(entry.name)) return false;
   if (segments.includes("tests")) return false;
 
   // These source/report formats are never runtime assets inside public site trees.
@@ -182,6 +184,8 @@ const forbidden = files.filter(file =>
   (file.startsWith("beta-testing/") && file !== composerTelemetryBeta && !file.startsWith(signalHouseRelease.previewRoute.slice(1)) && !file.startsWith(gamesPreview.previewRoot.slice(1))) ||
   /(?:^|\/)canvas[- _]quiz[- _]converter(?:[- _/.]|$)/i.test(file) ||
   file.startsWith("audit_tools/") ||
+  /(?:^|\/)(?:faculty_exports|_private_course_sources)\//.test(file) ||
+  /(?:^|\/)(?:general_economics|microeconomics|macroeconomics)_question_bank\.(?:pdf|csv)$/i.test(file) ||
   file.startsWith("server/") ||
   file.startsWith("validation_artifacts/") ||
   file.startsWith("legacy/") ||
