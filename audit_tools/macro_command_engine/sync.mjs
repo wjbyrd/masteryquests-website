@@ -3,6 +3,7 @@ import vm from 'node:vm';
 import assert from 'node:assert/strict';
 import {createRequire} from 'node:module';
 import {games, templatePath, declaration, fn, value} from './source.mjs';
+import {activeProfile} from './active-profile.mjs';
 const require=createRequire(import.meta.url);
 const core=require('../../build/faculty-build-composer/composer-core.js');
 const profiles=JSON.parse(fs.readFileSync('audit_tools/macro_command_engine/profiles.json','utf8'));
@@ -11,7 +12,7 @@ const check=process.argv.includes('--check');
 const js=v=>JSON.stringify(v,null,2).replace(/<\/script/gi,'<\\/script');
 const results=[];
 for(const game of games){
-  const p=profiles[game],base=`play/macro-command-system/${game}`;
+  const p=activeProfile(game,profiles),base=`play/macro-command-system/${game}`;
   const bankSource=p.inlineBank?[p.inlineBank,...Object.values(p.inlineAuxiliary)].join('\n'):fs.readFileSync(`${base}/${p.bank}`,'utf8');
   const context=vm.createContext({});
   vm.runInContext(bankSource,context);
@@ -32,7 +33,7 @@ for(const game of games){
   }
   const modeImages={standard:'mode_standard.webp',timed:'mode_timed.webp',exam:'mode_exam.webp',quiz:'quiz-mode.webp',unlimited:'unlimited-mode.webp',legendary:'mode_legendary.webp',score:'scoreattack.webp',trialGraph:'trial-by-graph.webp',fadingFortune:'fading-fortune.webp',riskReward:'risk-and-reward.webp'};
   for(const [m,image] of Object.entries(modeImages))if(fs.existsSync(`${base}/${image}`))slot('mode'+m[0].toUpperCase()+m.slice(1),image);
-  const config={...value(template,'FACULTY_COMPOSITION_CONFIG'),compositionId:game,slug:game,title:p.title,saveKeyNamespace:p.key,supportedModes:modes,guide:{displayName:p.guideName,introLines:[`Welcome to ${p.title}. I’ll guide you through the challenges ahead.`, 'If you are ready, follow me.']},visualTheme:{slots},allowAnonymousDataCollection:false};
+  const config={...value(template,'FACULTY_COMPOSITION_CONFIG'),compositionId:game,slug:game,title:p.title,saveKeyNamespace:p.saveNamespace||p.key,supportedModes:modes,guide:{displayName:p.guideName,introLines:[`Welcome to ${p.title}. I’ll guide you through the challenges ahead.`, 'If you are ready, follow me.']},visualTheme:{slots},allowAnonymousDataCollection:false};
   let html=template.replace(declaration(template,'FACULTY_COMPOSITION_CONFIG'),`const FACULTY_COMPOSITION_CONFIG = ${js(config)};`);
   // Published question scripts remain the sole question source. Supplemental maps
   // in those scripts execute unchanged, including their direct-skill backfills.
@@ -40,7 +41,7 @@ for(const game of games){
   const metadata=Object.fromEntries(allQuestions.filter(q=>q.image).map(q=>[q.image,{imageAlt:q.imageAlt,graphDescription:q.graphDescription||q.imageAlt}]));
   const imagePaths=[...new Set(allQuestions.map(q=>q.image).filter(Boolean))];
   const missingImages=imagePaths.filter(image=>!fs.existsSync(`${base}/${image}`));
-  if(game!=='national-engine')assert.deepEqual(missingImages,[],`${game}: missing question images`);
+  assert.deepEqual(missingImages,[],`${game}: missing question images`);
   let region=(p.inlineBank?p.inlineBank+'\n':'')+`const objectiveLabels = ${js(p.objectiveLabels)};\nconst embeddedQuestionAssets = ${js(Object.fromEntries(imagePaths.map(p=>[p,p])))};\nconst questionAssetMetadata = ${js(metadata)};\nconst trialGraphQuestionIds = ${js(graph.map(q=>q.id))};\nconst fadingFortuneQuestionIds = ${js(eligible.map(q=>q.id))};\nconst riskRewardQuestionIds = ${js(eligible.map(q=>q.id))};\nconst composerQuestionValidator = ${core.validateFacultyQuestionRecord.toString()};\n// Legacy banks encode checkpoint stage in difficulty; normalize only the validation view.\nconst facultyQuestionValidator = (q,pool,assets) => composerQuestionValidator(q && /Boss$/.test(q.difficulty || '') ? {...q,difficulty:({easyBoss:'easy',mediumBoss:'medium',finalBoss:'hard',legendaryBoss:'legendary'})[q.difficulty]} : q,pool,assets);\n`;
   for(const [name,fallback] of Object.entries({repairQuestions:[],bridgeQuestions:[],microSkillRepairPools:{},microSkillBridgePools:{},skillRepairSeedPools:{}})){
     if(!new RegExp(`(?:const|let|var) ${name}\\s*=`).test(bankSource))region+=`const ${name} = ${js(fallback)};\n`;
@@ -68,7 +69,7 @@ const facultyQuestionValidator = (q,pool,assets) => {
   for(const source of p.constants){const name=source.match(/^const (\w+)/)[1];if(name==='SOUND_PREF_KEY')continue;html=html.replace(declaration(html,name),source);}
   for(const [name,v] of Object.entries({ROOM_KEY:p.roomKey,CURRENT_MODE_KEY:p.modeKey,PLAYER_KEY:'gauntletUser',RUN_ID_KEY:'gauntletRunID',ARTIFACT_STORAGE_KEYS:Object.fromEntries(['compass','lens','scales'].map((k,i)=>[k,p.artifactKeys[i]])),GAME_VERSION:`${game}-composer-engine-2026.10.11`}))html=html.replace(declaration(html,name),`const ${name} = ${js(v)};`);
   for(const source of p.realmFunctions){const name=source.match(/^function (\w+)/)[1];html=html.replace(fn(html,name),source);}
-  if(p.inlineBank)for(const name of ['syncRealmAttemptState','recordTimedTrialAchievementStats']){
+  if(game==='national-engine')for(const name of ['syncRealmAttemptState','recordTimedTrialAchievementStats']){
     const source=profiles['mint-ash-gold'].realmFunctions.find(s=>s.startsWith('function '+name+'('));
     html=html.replace(fn(html,name),source);
   }
@@ -91,7 +92,7 @@ const facultyQuestionValidator = (q,pool,assets) => {
     html=html.replace(declaration(html,name),declaration(p.soundSource,name));
   }
   html=html.replace('function updateSoundToggle()',declaration(p.soundSource,'SOUND_PREF_KEY')+'\nfunction updateSoundToggle()');
-  const audioFunctions=p.inlineBank?profiles['mint-ash-gold'].soundSource:p.soundSource;
+  const audioFunctions=game==='national-engine'?profiles['mint-ash-gold'].soundSource:p.soundSource;
   for(const name of ['updateSoundToggle','setAllGameAudioMuted','toggleGameSound','restoreSoundSetting','pauseAllGameMusic','safePlay','resumeCurrentMusic'])html=html.replace(fn(html,name),fn(audioFunctions,name));
   html=html.replace('const bgMusic =',`function createSilentAudio(){return {muted:false,volume:0,currentTime:0,pause(){},play(){return Promise.resolve();}};}
 let gameSfxUnlocked=false;

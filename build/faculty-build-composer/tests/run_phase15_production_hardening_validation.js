@@ -195,34 +195,29 @@ function testMediaAndResumeContracts(){
   assert(national.includes('remediationState: phase15Clone(remediationState'));
   assert(national.includes('currentQuestion: phase15Clone(currentQuestion'));
   assert(national.includes('artifacts:'));
-  assert(national.includes('function migrateNationalEngineSave()'), 'National Engine lacks legacy save migration.');
+  assert(national.includes('<script src="national_engine_question_bank_student.js"></script>'), 'National Engine must use its macro bank.');
+  assert(!national.includes('function migrateNationalEngineSave()'), 'Old micro runs must not be imported into the macro bank.');
+  assert(national.includes('const SAVE_KEY = "nationalEngineMacroSave_v1";'));
+  assert(national.includes('const ROOM_KEY = "nationalEngineMacroRoom";'));
 
   const storage = new Map();
   const legacyContext = {
+    SAVE_KEY:'nationalEngineMacroSave_v1',
     localStorage:{getItem:key => storage.has(key) ? storage.get(key) : null, setItem:(key,value) => storage.set(key,value)}
   };
   vm.createContext(legacyContext);
-  vm.runInContext(`${extractFunction(national, 'migrateNationalEngineSave')}; globalThis.migrate = migrateNationalEngineSave;`, legacyContext);
-  const newKey='nationalEngineComposerSave_v1_standard';
-  storage.set('gauntletRoom', '1');
-  legacyContext.migrate();
-  assert.strictEqual(storage.has(newKey), false, 'Room 1 alone is not meaningful legacy progress.');
+  vm.runInContext(`${extractFunction(national, 'hasSavedGame')}; globalThis.hasSave = hasSavedGame;`, legacyContext);
+  const newKey='nationalEngineMacroSave_v1_standard';
   storage.set('gauntletRoom', '12');
-  legacyContext.migrate();
-  assert.strictEqual(JSON.parse(storage.get(newKey)).room, 12, 'Legacy room progress must migrate.');
-  storage.delete(newKey);
-  legacyContext.migrate();
-  assert.strictEqual(storage.has(newKey), false, 'Completed legacy saves must not resurrect.');
-  storage.clear();
   const oldKey='NationalEngine:standard:save:phase1.5';
   const oldSave=JSON.stringify({room:7,runID:'legacy-run',elapsedMs:12345,runPhase:'question',currentQuestion:{id:10,options:['A','B','C','D']},remediationState:{active:true},bossPool:[{id:20}]});
   storage.set(oldKey,oldSave);
-  legacyContext.migrate();
-  const imported=JSON.parse(storage.get(newKey));
-  assert.strictEqual(imported.runID,'legacy-run');
-  assert.strictEqual(imported.elapsedMs,12345);
-  assert.deepStrictEqual(imported.phase15.currentQuestion,JSON.parse(oldSave).currentQuestion);
-  assert.deepStrictEqual(imported.phase15.remediationState,{active:true});
+  storage.set('nationalEngineComposerSave_v1_standard',oldSave);
+  assert.strictEqual(legacyContext.hasSave(),false,'Neither old format nor room-only progress may resume micro questions.');
+  storage.set(newKey,JSON.stringify({room:7,runID:'macro-run'}));
+  assert.strictEqual(legacyContext.hasSave(),true,'The corrected macro bank must support its own saves.');
+  storage.delete(newKey);
+  assert.strictEqual(legacyContext.hasSave(),false,'Cleared macro runs must not fall back to old micro runs.');
   assert.strictEqual(storage.get(oldKey),oldSave,'Keep the original save available for recovery.');
 }
 

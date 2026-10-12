@@ -1,5 +1,19 @@
 # Macro Command System engine alignment — 2026-10-11
 
+## National Engine bank correction
+
+After the engine-only pass, the owner confirmed that National Engine should not contain the discovered microeconomic questions. The active page now loads the existing `national_engine_question_bank_student.js` unchanged: **474 main/checkpoint questions, 73 repair questions and 84 bridge questions (631 total)**. It covers national accounts, inflation measurement, production/factor income, saving/investment, loanable funds and unemployment. All six referenced graph files exist and decode. Legendary is now available, making nine supported modes.
+
+`active-profile.mjs` records this explicit correction separately from the historical captured profiles. The old embedded main, repair and bridge definitions are no longer executable content in the active page. Their historical source remains in Git and the captured profiles. None of the four external bank files was edited or replaced with Composer content.
+
+New National Engine runs use `nationalEngineMacroSave_v1`, `nationalEngineMacroRoom`, and the `national-engine-macro-v1` engine namespace. They cannot resume old embedded micro questions, boss queues, repair state or mastery records, even where question IDs overlap. Both older save formats and room-only state are left untouched in local storage; they are no longer offered as resumable macro runs. New macro saves resume normally. Existing artifact ownership is retained, while new inventory and high scores use the macro namespace.
+
+The focused bank-correction browser suite verifies exact equality of all active main/repair/bridge records with the existing macro file, all nine modes, all graph assets, scoring/report behavior, three actual old-engine save fixtures remaining isolated, the previous Composer save format remaining isolated, and a new macro run resuming with the same question/options. The source checker protects all 159 companion files and requires each page to load its intended external bank. The shared hardening suite checks the new save isolation contract across 16 HTML targets.
+
+The following sections document the **historical engine-only pass**, before this correction. National Engine's eight-mode limit, embedded-bank preservation, missing-image exceptions and legacy save-import behavior below have been superseded. Current evidence is in `browser-focused-results.json` and `source-results.json`; `browser-results.json` records the earlier four-game run. Changes remain local and are not deployed.
+
+## Original engine-only pass
+
 The four live game-directory `index.html` files now use the current Faculty Concept Composer engine. The frozen engines lacked newer exam navigation and section commits, checkpoint attempt outcomes, remediation safeguards, consumable artifacts, daily challenges, additional practice modes, and current mastery/timing/CSV behavior.
 
 This is an engine-only update. No Composer questions were imported. No question wording, IDs, options, answers, feedback, topics, pool assignments, repair questions or bridge questions were edited. All 159 tracked companion files remain unchanged, including external banks, historical HTML, resources and media.

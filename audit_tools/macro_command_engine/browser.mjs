@@ -4,12 +4,16 @@ import http from 'node:http';
 import assert from 'node:assert/strict';
 import {createRequire} from 'node:module';
 import {execFileSync} from 'node:child_process';
+import vm from 'node:vm';
 import {games,baselineCommit} from './source.mjs';
 const require=createRequire(import.meta.url);
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
 const root=process.cwd(),out=path.join(root,'validation_artifacts/macro_command_engine');
 fs.mkdirSync(out,{recursive:true});
 const profiles=JSON.parse(fs.readFileSync('audit_tools/macro_command_engine/profiles.json','utf8'));
+const macroContext=vm.createContext({});
+vm.runInContext(fs.readFileSync('play/macro-command-system/national-engine/national_engine_question_bank_student.js','utf8'),macroContext);
+const intendedNationalBank=vm.runInContext('JSON.stringify({questionBanks,microSkillRepairPools,microSkillBridgePools})',macroContext);
 const legacy=Object.fromEntries(games.map(g=>[g,execFileSync('git',['show',`${baselineCommit}:play/macro-command-system/${g}/index.html`],{encoding:'utf8',maxBuffer:8e6})]));
 const legacyBanks=Object.fromEntries(games.filter(g=>profiles[g].bank).map(g=>[g,execFileSync('git',['show',`${baselineCommit}:play/macro-command-system/${g}/${profiles[g].bank}`],{encoding:'utf8',maxBuffer:8e6})]));
 const server=http.createServer((req,res)=>{
@@ -42,11 +46,16 @@ try{
     const modes=await page.evaluate(()=>FACULTY_COMPOSITION_CONFIG.supportedModes.map(mode=>({mode,...validateFacultyMode(mode)})));
     assert.deepEqual(modes.filter(m=>!m.ok).map(m=>({...m,issues:m.issues.slice(0,3)})),[]);
   });
-  await check(`${game}: question assets retain the frozen baseline`,async()=>{
+  await check(`${game}: every active question asset decodes`,async()=>{
     const assets=await page.evaluate(async()=>Promise.all(Object.values(embeddedQuestionAssets).map(src=>new Promise(resolve=>{
       const image=new Image();image.onload=()=>resolve({src,ok:image.naturalWidth>0&&image.naturalHeight>0});image.onerror=()=>resolve({src,ok:false});image.src=src;
     }))));
-    assert.deepEqual(assets.filter(a=>!a.ok).map(a=>a.src).sort(),game==='national-engine'?['Edgeworth11.4.png','edgeworth11.2.png','trade11.2.png','monopoly12.2.png','monopoly12.5.png','moncomp13.4.png'].sort():[]);
+    assert.deepEqual(assets.filter(a=>!a.ok).map(a=>a.src).sort(),[]);
+  });
+  if(game==='national-engine')await check(`${game}: active main repair and bridge records exactly match the existing macro bank`,async()=>{
+    assert.equal(await page.evaluate(()=>JSON.stringify({questionBanks,microSkillRepairPools,microSkillBridgePools})),intendedNationalBank);
+    assert.equal(await page.evaluate(()=>typeof easyConceptPools),'undefined');
+    assert.equal(await page.evaluate(()=>typeof mediumConceptPools),'undefined');
   });
   const modes=await page.evaluate(()=>FACULTY_COMPOSITION_CONFIG.supportedModes);
   for(const mode of modes)await check(`${game}: ${mode} launch and answer`,async()=>{
@@ -79,7 +88,7 @@ try{
     await page.screenshot({path:path.join(out,game+'-mobile.png')});
   });
   await page.setViewportSize({width:1440,height:1000});
-  for(const phase of ['ordinary','checkpoint','remediation'])await check(`${game}: legacy ${phase} save resumes exactly`,async()=>{
+  for(const phase of ['ordinary','checkpoint','remediation'])await check(`${game}: legacy ${phase} save ${game==='national-engine'?'stays isolated from the macro bank':'resumes exactly'}`,async()=>{
     await page.goto(`${origin}/play/macro-command-system/${game}/?legacy=1`);
     await page.evaluate(()=>localStorage.clear());await page.reload();
     const before=await page.evaluate(({phase,artifactKeys})=>{
@@ -96,7 +105,17 @@ try{
       localStorage.setItem(artifactKeys[0],'true');saveGameState();
       return {room,runID,q:currentQuestion.id,options:currentQuestion.options,attempts:totalAttempts,bossHealth,remediation:remediationState,save:localStorage.getItem(typeof getSaveKey==='function'?getSaveKey():NATIONAL_PHASE15_SAVE_KEY)};
     },{phase,artifactKeys:profiles[game].artifactKeys});
+    if(game==='national-engine')await page.evaluate(()=>{gameMode='quiz';}); // Freeze the legacy fixture before its unload handler.
     await page.goto(`${origin}/play/macro-command-system/${game}/`);
+    if(game==='national-engine'){
+      assert.equal(await page.evaluate(()=>hasSavedGame()),false,'A microeconomics run must not be offered as a macroeconomics run');
+      assert.equal(await page.evaluate(()=>localStorage.getItem('NationalEngine:standard:save:phase1.5')),before.save,'Original run remains intact');
+      await page.evaluate(()=>{localStorage.setItem(GUIDE_INTRO_SEEN_KEY,'true');startSelectedMode('standard');});
+      assert.equal(await page.evaluate(()=>room),1);
+      assert.notEqual(await page.evaluate(()=>runID),before.runID);
+      assert(await page.evaluate(()=>Object.values(questionBanks).flat().some(q=>q.q===currentQuestion.q)));
+      return;
+    }
     await page.evaluate(()=>continueSavedRun());
     const after=await page.evaluate(()=>({room,runID,q:currentQuestion?.id,options:currentQuestion?.options,attempts:totalAttempts,bossHealth,remediation:remediationState,artifact:localStorage.getItem(ARTIFACT_STORAGE_KEYS.compass),checkpoint:checkpointAttemptState}));
     for(const key of ['room','runID','q','options','attempts','bossHealth','remediation'])assert.deepEqual(after[key],before[key],key);
@@ -156,10 +175,16 @@ try{
     });
     assert(await page.locator('#streakDisplay img').count());
   });
-  if(game==='national-engine')await check(`${game}: room-only save migrates once without resurrecting completed runs`,async()=>{
-    await page.evaluate(()=>{gameMode='quiz';runEnding=true;localStorage.clear();localStorage.setItem('gauntletRoom','17');localStorage.setItem('vaultValve','true');localStorage.setItem('gauntletRunID','original-room-only');});
+  if(game==='national-engine')await check(`${game}: both older save formats stay separate and new macro saves resume`,async()=>{
+    await page.evaluate(()=>{gameMode='quiz';runEnding=true;localStorage.clear();localStorage.setItem('gauntletRoom','17');localStorage.setItem('vaultValve','true');localStorage.setItem('gauntletRunID','original-room-only');localStorage.setItem('nationalEngineComposerSave_v1_standard',JSON.stringify({room:17,runID:'old-composer-run',phase15:{currentQuestion:{id:1,q:'MICRO FIXTURE',options:['a','b','c','d']}}}));});
     await page.reload();
-    assert.deepEqual(await page.evaluate(()=>{gameMode='standard';loadSavedGame();return {room,runID,valve:localStorage.getItem(ARTIFACT_STORAGE_KEYS.lens)};}),{room:17,runID:'original-room-only',valve:'true'});
+    assert.equal(await page.evaluate(()=>hasSavedGame()),false);
+    assert.equal(await page.evaluate(()=>room),1);
+    assert(await page.evaluate(()=>localStorage.getItem('nationalEngineComposerSave_v1_standard')));
+    await page.evaluate(()=>{localStorage.setItem(GUIDE_INTRO_SEEN_KEY,'true');startSelectedMode('standard');room=7;loadQuestion();saveGameState();});
+    const before=await page.evaluate(()=>({room,runID,q:currentQuestion.q,options:currentQuestion.options}));
+    await page.reload();await page.evaluate(()=>continueSavedRun());
+    assert.deepEqual(await page.evaluate(()=>({room,runID,q:currentQuestion.q,options:currentQuestion.options})),before);
     await page.evaluate(()=>{clearSavedGame();gameMode='quiz';runEnding=true;});await page.reload();
     assert.equal(await page.evaluate(()=>localStorage.getItem(SAVE_KEY+'_standard')),null);
   });

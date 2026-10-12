@@ -3,6 +3,7 @@ import crypto from 'node:crypto';
 import assert from 'node:assert/strict';
 import {execFileSync} from 'node:child_process';
 import {games,templatePath,fn,declaration,baselineCommit} from './source.mjs';
+import {activeProfile} from './active-profile.mjs';
 const template=fs.readFileSync(templatePath,'utf8').replace(/\r\n/g,'\n');
 const profiles=JSON.parse(fs.readFileSync('audit_tools/macro_command_engine/profiles.json','utf8'));
 const hash=bytes=>crypto.createHash('sha256').update(bytes).digest('hex');
@@ -12,7 +13,9 @@ const functions=['answer','loadQuestion','displayQuestion','planRemediation','re
 const names=functions.filter(name=>new RegExp(`^function ${name}\\(|^async function ${name}\\(`,'m').test(template));
 const results=[];
 for(const game of games){
- const base=`play/macro-command-system/${game}`,p=profiles[game],source=fs.readFileSync(`${base}/index.html`,'utf8').replace(/\r\n/g,'\n');
+ const base=`play/macro-command-system/${game}`,p=activeProfile(game,profiles),source=fs.readFileSync(`${base}/index.html`,'utf8').replace(/\r\n/g,'\n');
+ assert(source.includes(`<script src="${p.bank}"></script>`),`${game}: intended bank is not loaded`);
+ assert(!/^const questionBanks\s*=/m.test(source),`${game}: unexpected embedded bank`);
  for(const name of names)assert.equal(format(fn(source,name)),format(fn(template,name)),`${game}: ${name} differs from Composer`);
  // Protect every companion file, including all external banks and media.
  const files=execFileSync('git',['ls-tree','-r','--name-only',baselineCommit,base],{encoding:'utf8'}).trim().split(/\r?\n/).filter(f=>f!==`${base}/index.html`);
