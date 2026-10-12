@@ -1,9 +1,17 @@
 # October 2026 update subscriptions — operator setup
 
-Status: implementation prepared; **disabled and not live**. No Brevo account,
-sender, list, template, API credential, or real delivery/unsubscribe test was
-available for this task. Do not enable the public form until the acceptance steps
-below pass. The faculty bank request email fallback works independently.
+Status (October 12, 2026): the owner enabled production sign-up with Brevo list
+`3` and confirmation template `1`. These non-secret settings are now also in
+`wrangler.jsonc`; the API key remains a Cloudflare secret. Read-only checks from
+a Cloudflare preview verified that the key can access this list and active
+template, whose button contains `{{ params.DOIurl }}`. Owner template tests
+reached Gmail; real website confirmation and campaign unsubscribe still need
+end-to-end verification. The faculty bank request email fallback works independently.
+
+Cloudflare Workers rejects `fetch` with `redirect:'error'` before any network
+request. Provider requests use `redirect:'manual'` and reject non-success
+responses, so redirect targets never receive the API key. This runtime behavior
+caused the initial generic sign-up failure despite otherwise valid configuration.
 
 ## Architecture
 
@@ -67,8 +75,8 @@ request means confirmation was requested, not that email was delivered.
    only after the checks below pass, and set the same value in managed Wrangler
    configuration so a later deploy does not unintentionally undo it.
 
-No provider action, secret creation, DNS edit, remote deploy, or email was sent by
-the implementation task.
+The initial implementation task did not configure Brevo or deploy the service.
+The owner subsequently configured the account, DNS, template, and Worker secret.
 
 ## End-to-end acceptance before calling this live
 

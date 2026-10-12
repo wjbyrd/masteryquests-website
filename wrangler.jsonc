@@ -1,6 +1,9 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "masteryquests-website",
+  "routes": [
+    { "pattern": "masteryquests.org", "zone_name": "masteryquests.org", "custom_domain": true }
+  ],
   "compatibility_date": "2026-08-07",
   "build": {
     "command": "node audit_tools/public_site_publication/build-dist.mjs"
@@ -16,7 +19,11 @@
     ]
   },
   "main": "server/site-worker.mjs",
-  "vars": { "SUBSCRIPTIONS_ENABLED": "false" },
+  "vars": {
+    "SUBSCRIPTIONS_ENABLED": "true",
+    "BREVO_LIST_ID": "3",
+    "BREVO_DOI_TEMPLATE_ID": "1"
+  },
   "observability": { "enabled": false },
   "ratelimits": [
     { "name": "SUBSCRIPTION_IP_LIMIT", "namespace_id": "2026101201", "simple": { "limit": 5, "period": 60 } },

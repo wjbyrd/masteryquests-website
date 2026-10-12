@@ -40,13 +40,14 @@ export async function subscriptions(request, env, send=fetch) {
     if(email.length>254||! /^[a-z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-z0-9](?:[a-z0-9-]*[a-z0-9])?(?:\.[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)+$/i.test(email)||email.split('@')[0].length>64)return reply(400,{ok:false,message:'Enter a valid email address.'});
     if(!(await env.SUBSCRIPTION_EMAIL_LIMIT.limit({key:await bucket('email:'+email,env.BREVO_API_KEY)})).success||!(await env.SUBSCRIPTION_GLOBAL_LIMIT.limit({key:'subscriptions'})).success)return reply(429,{ok:false,message:'Please wait a minute before trying again.'});
     const headers={'api-key':env.BREVO_API_KEY,'accept':'application/json','content-type':'application/json'};
-    const lookup=await send('https://api.brevo.com/v3/contacts/'+encodeURIComponent(email),{headers,signal:AbortSignal.timeout(8000),redirect:'error'});
+    // Workers supports manual/follow, not redirect:'error'. Never forward the API key to a redirect target.
+    const lookup=await send('https://api.brevo.com/v3/contacts/'+encodeURIComponent(email),{headers,signal:AbortSignal.timeout(8000),redirect:'manual'});
     if(lookup.status===200){
       const contact=await lookup.json();
       // Do not re-enrol suppressed contacts or reveal whether an address is subscribed.
       if(contact.emailBlacklisted===true||(Array.isArray(contact.listIds)&&contact.listIds.includes(Number(env.BREVO_LIST_ID))))return accepted();
     }else if(lookup.status!==404)return unavailable();
-    const result=await send('https://api.brevo.com/v3/contacts/doubleOptinConfirmation',{method:'POST',headers,body:JSON.stringify({email,includeListIds:[Number(env.BREVO_LIST_ID)],templateId:Number(env.BREVO_DOI_TEMPLATE_ID),redirectionUrl:'https://masteryquests.org/about/subscribe/confirmation/',contactPixelTrackingConsent:false}),signal:AbortSignal.timeout(8000),redirect:'error'});
+    const result=await send('https://api.brevo.com/v3/contacts/doubleOptinConfirmation',{method:'POST',headers,body:JSON.stringify({email,includeListIds:[Number(env.BREVO_LIST_ID)],templateId:Number(env.BREVO_DOI_TEMPLATE_ID),redirectionUrl:'https://masteryquests.org/about/subscribe/confirmation/',contactPixelTrackingConsent:false}),signal:AbortSignal.timeout(8000),redirect:'manual'});
     // Never treat provider errors (including a duplicate race) as successful delivery.
     return result.ok?accepted():unavailable();
   }catch(error){

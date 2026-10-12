@@ -1,0 +1,22 @@
+October 12, 2026 — Brevo signup runtime diagnosis
+
+Production settings inspected: enabled=true; list=3; template=1; all three subscription rate bindings present.
+A temporary Cloudflare remote preview reproduced a TypeError before any Brevo response:
+Invalid redirect value: Cloudflare Workers accepts follow/manual, not error.
+After switching the preview request to manual, read-only Brevo API checks returned:
+- GET /contacts/lists/3: HTTP 200, Mastery Quests Updates.
+- GET /smtp/templates/1: HTTP 200, active template, DOI parameter present as button href.
+No secret values, contact records, or email contents were output. No email was sent by these checks.
+Temporary preview stopped and diagnostic code removed.
+
+Local subscription regression suite: 14/14 passed, including a real local HTTP redirect test at both Brevo request stages (301/302/303/307/308), with no redirect-target requests or credential forwarding.
+Real website signup, confirmation, and unsubscribe require owner verification after deployment.
+
+Deployment confirmed active: 87d44492-d89d-432f-8c58-f96d40cde993 (2026-10-12T22:47:06Z).
+The CLI was interrupted after warning about a dashboard-only custom domain; the version had already deployed. Follow-up checks confirmed masteryquests.org still serves the corrected Worker. The existing custom-domain mapping is now recorded in wrangler.jsonc for future deployments.
+Post-deployment checks:
+- GET /api/subscriptions: HTTP 200, available=true.
+- GET /about/subscribe/: HTTP 200, signup form present.
+- POST with empty email and consent=false: HTTP 400, no provider call or email.
+Publication checks: 6 passed, 1 skipped because existing private export permissions prevent hash inspection.
+Deployment build: 2,418 public files; zero forbidden files.
