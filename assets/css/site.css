@@ -3292,3 +3292,36 @@ button:focus-visible {
 
 /* Staged Signal House card; uses the public Games card layout when released. */
 .signal-house-card-image{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:12px;margin:16px 0}
+
+/* Email subscription entry points. */
+.primary-navigation { gap: 20px; }
+.primary-navigation a.nav-subscribe {
+  padding: 10px 16px;
+  color: var(--white);
+  background: var(--navy-900);
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.primary-navigation a.nav-subscribe:hover,
+.primary-navigation a.nav-subscribe:focus-visible { background: var(--navy-800); }
+.primary-navigation a.nav-subscribe::after { display: none; }
+.home-subscribe { display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+.home-subscribe > div { max-width: 690px; }
+.home-subscribe .button { flex-shrink: 0; }
+@media (max-width: 1200px) {
+  .header-inner { min-height: 78px; }
+  .brand-logo { width: 220px; }
+  .menu-toggle { display: inline-flex; }
+  .primary-navigation {
+    position: absolute; top: 78px; right: 14px; left: 14px;
+    display: none; align-items: stretch; flex-direction: column; gap: 0;
+    padding: 12px; background: var(--white); border: 1px solid var(--gray-100);
+    border-radius: var(--radius-medium); box-shadow: var(--shadow-soft);
+  }
+  .primary-navigation.is-open { display: flex; }
+  .primary-navigation a { padding: 12px 14px; border-radius: 8px; }
+  .primary-navigation a::after { display: none; }
+}
+@media (max-width: 760px) {
+  .home-subscribe { align-items: flex-start; flex-direction: column; }
+}
