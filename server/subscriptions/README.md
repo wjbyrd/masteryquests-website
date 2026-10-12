@@ -4,8 +4,15 @@ Status (October 12, 2026): the owner enabled production sign-up with Brevo list
 `3` and confirmation template `1`. These non-secret settings are now also in
 `wrangler.jsonc`; the API key remains a Cloudflare secret. Read-only checks from
 a Cloudflare preview verified that the key can access this list and active
-template, whose button contains `{{ params.DOIurl }}`. Owner template tests
-reached Gmail; real website confirmation and campaign unsubscribe still need
+template, whose button contains `{{ params.DOIurl }}`. A subsequent live signup
+diagnosis found that template 1 was active but had `doiTemplate:false`: Brevo
+rejected the DOI request with `An active DOI template does not exist`. Setting
+its tag to `optin` corrected it to `doiTemplate:true`, preserving the email
+content, sender, and subject. The authorized live website signup then returned
+HTTP 202; Brevo subsequently logged delivery of that DOI email. Its button's
+tracking link returned HTTP 302 to Brevo's `sibcontacts.com/confirm/` destination.
+The owner reported the button did nothing in their email client; the direct
+confirmation destination was provided for manual use. Real website confirmation and campaign unsubscribe still need
 end-to-end verification. The faculty bank request email fallback works independently.
 
 Cloudflare Workers rejects `fetch` with `redirect:'error'` before any network
@@ -49,7 +56,10 @@ request means confirmation was requested, not that email was delivered.
    student/faculty-request addresses.
 3. Create and activate a Brevo DOI confirmation template. Use Brevo's supported
    DOI confirmation action, not a direct link to our return page. The API docs
-   describe the `params.DOIurl` template parameter; verify the template actually
+   describe the `params.DOIurl` template parameter. Set the template's advanced
+   **Tag** field to `optin` and verify `GET /v3/smtp/templates/{id}` reports both
+   `isActive:true` and `doiTemplate:true`; active status alone is insufficient.
+   Verify the template actually
    completes DOI and records membership before redirecting. Include the exact
    opt-in purpose from `/about/subscribe/`, identify the sender, and state that
    ignoring the email leaves the person unconfirmed. Record its real numeric ID

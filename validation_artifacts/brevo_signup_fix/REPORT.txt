@@ -20,3 +20,26 @@ Post-deployment checks:
 - POST with empty email and consent=false: HTTP 400, no provider call or email.
 Publication checks: 6 passed, 1 skipped because existing private export permissions prevent hash inspection.
 Deployment build: 2,418 public files; zero forbidden files.
+
+October 12, 2026 follow-up — active template was not recognized as DOI
+Remote preview reproduced the exact signup failure: contact lookup HTTP 200,
+DOI submission HTTP 400 invalid_parameter: "An active DOI template does not exist".
+Template 1 reported isActive=true, doiTemplate=false, tag empty.
+Updated only template 1's tag to "optin" using the Brevo template API (HTTP 204).
+Read-back verified isActive=true, doiTemplate=true, and unchanged HTML, sender,
+and subject. No website deployment was required for this provider-side fix.
+The owner authorized one confirmation email. The initial rejected attempt sent
+none; the retry through the production signup endpoint returned HTTP 202.
+The test address remains outside list 3 and is not suppressed. A subsequent
+read-only email-log check showed only earlier template-test events, so delivery
+of this new DOI email and the confirmation click remain unverified.
+No API key or subscriber address was saved in this report.
+
+Confirmation-button follow-up:
+Brevo subsequently reported the new DOI email delivered at 19:33:37 EDT.
+Read-only inspection of that delivered email showed a nonempty button link.
+The tracking link returned HTTP 302 to sibcontacts.com/confirm/ with no unresolved
+template variable. The confirmation destination was not opened by the agent.
+The owner reported clicking the email button did nothing; provided the same
+email's direct confirmation destination for the owner to open manually.
+No additional email was sent, and no confirmation token was saved in this report.
