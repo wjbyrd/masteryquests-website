@@ -3295,16 +3295,6 @@ button:focus-visible {
 
 /* Email subscription entry points. */
 .primary-navigation { gap: 20px; }
-.primary-navigation a.nav-subscribe {
-  padding: 10px 16px;
-  color: var(--white);
-  background: var(--navy-900);
-  border-radius: 999px;
-  white-space: nowrap;
-}
-.primary-navigation a.nav-subscribe:hover,
-.primary-navigation a.nav-subscribe:focus-visible { background: var(--navy-800); }
-.primary-navigation a.nav-subscribe::after { display: none; }
 .home-subscribe { display: flex; align-items: center; justify-content: space-between; gap: 32px; }
 .home-subscribe > div { max-width: 690px; }
 .home-subscribe .button { flex-shrink: 0; }

@@ -53,7 +53,7 @@
 <div class="site-container privacy-layout">
 <nav aria-label="Privacy notice sections" class="privacy-toc">
 <strong>On this page</strong>
-<a href="#scope">Scope</a><a href="#faculty-communications">Email updates and faculty requests</a>
+<a href="#scope">Scope</a>
 <a href="#local-storage">Local browser storage</a>
 <a href="#exports">Results and CSV exports</a>
 <a href="#hosting">Website hosting data</a>
@@ -62,6 +62,8 @@
 <a href="#choices">Your choices</a>
 <a href="#security">Security and retention</a>
 <a href="#providers">Service providers</a>
+<a href="#portable-telemetry">Optional telemetry</a>
+<a href="#faculty-communications">Email updates and faculty requests</a>
 <a href="#contact">Contact</a>
 </nav>
 <div class="privacy-content">
@@ -137,6 +139,14 @@
 <h2>Updates to this notice</h2>
 <p>This notice may be revised when the platform, local-storage behavior, export workflow, hosting infrastructure, instructional use, or legal requirements change. The effective date at the top of the page will be updated when material revisions are made.</p>
 </section>
+<section id="portable-telemetry">
+<p class="eyebrow">Optional telemetry</p>
+<h2>Optional telemetry on HTTPS hosts</h2><p>Telemetry-enabled generated games can submit from supported HTTPS hosts. Faculty must explicitly opt in when generating a game with the official Mastery Quests Composer; collection is OFF by default. Composer issues build-scoped authorization with a 365-day capability lifetime. Browser opt-out, revocation or expiry stops future remote collection while local gameplay and Download Game Data CSV remain available. Revocation does not delete accepted telemetry; the 730-day retention policy remains separate from authorization lifetime.</p><p>A game opened directly as <code>file://...</code> has an opaque/null browser Origin. Production intentionally rejects remote telemetry from null origins, so preflight may return 403. Local gameplay and CSV still work. Hosting the exact same build on a supported HTTPS host permits remote submission while its capability is valid. Restrictive LMS sandbox, CSP or network settings may prevent remote telemetry even on HTTPS; test the actual student launch context. Anonymous telemetry provides no learner identity assurance or cross-host browser identity continuity.</p><p>National Engine remains a separate legacy transport exception outside this anonymous capability rollout. These statements do not mean every Mastery Quests game uses this system.</p>
+</section>
+<section id="faculty-communications">
+<p class="eyebrow">Email updates and faculty requests</p>
+<h2>Email updates and faculty requests</h2><p>Email sign-up is a separate, optional service using Brevo. When enabled, it collects an email address and affirmative consent, then requires email confirmation before list enrollment. It does not enroll game players or faculty requesters automatically and does not connect subscriber emails to gameplay telemetry or classroom participation.</p><p>The site passes a sign-up email to Brevo over its backend connection. It does not keep a separate subscriber database or application log of sign-up bodies. Brief rate-limit checks help control abuse. Ordinary hosting and the email provider may process service logs under their own retention settings.</p><p>Active subscriptions remain in Brevo until unsubscribe or removal. Every update email must include the provider's unsubscribe link. Unsubscribing stops updates; Brevo may retain a suppression record to prevent accidental re-enrollment. Email <a href="mailto:wjbyrd@troy.edu?subject=Mastery%20Quests%20privacy%20request">wjbyrd@troy.edu</a> to request removal of your contact record or help unsubscribing. Provider backups and previously delivered messages may remain under the receiving services' retention practices.</p><p>Faculty question-bank requests are sent by you to the creator's email address. The optional on-page helper prepares an email locally; it does not upload or store entries. The maintainer uses the correspondence to verify faculty eligibility and arrange private fulfillment, and aims to delete completed request correspondence within 90 days. Copies in your sent mail or other mail-system backups are controlled by those systems. Do not include student records in a request.</p>
+</section>
 <section id="contact">
 <p class="eyebrow">Contact</p>
 <h2>Privacy questions</h2>
@@ -145,7 +155,7 @@
 </div>
 </div>
 </section>
-<section class="section" id="portable-telemetry"><div class="site-container"><h2>Optional telemetry on HTTPS hosts</h2><p>Telemetry-enabled generated games can submit from supported HTTPS hosts. Faculty must explicitly opt in when generating a game with the official Mastery Quests Composer; collection is OFF by default. Composer issues build-scoped authorization with a 365-day capability lifetime. Browser opt-out, revocation or expiry stops future remote collection while local gameplay and Download Game Data CSV remain available. Revocation does not delete accepted telemetry; the 730-day retention policy remains separate from authorization lifetime.</p><p>A game opened directly as <code>file://...</code> has an opaque/null browser Origin. Production intentionally rejects remote telemetry from null origins, so preflight may return 403. Local gameplay and CSV still work. Hosting the exact same build on a supported HTTPS host permits remote submission while its capability is valid. Restrictive LMS sandbox, CSP or network settings may prevent remote telemetry even on HTTPS; test the actual student launch context. Anonymous telemetry provides no learner identity assurance or cross-host browser identity continuity.</p><p>National Engine remains a separate legacy transport exception outside this anonymous capability rollout. These statements do not mean every Mastery Quests game uses this system.</p></div></section><section class="section" id="faculty-communications"><div class="site-container"><h2>Email updates and faculty requests</h2><p>Email sign-up is a separate, optional service using Brevo. When enabled, it collects an email address and affirmative consent, then requires email confirmation before list enrollment. It does not enroll game players or faculty requesters automatically and does not connect subscriber emails to gameplay telemetry or classroom participation.</p><p>The site passes a sign-up email to Brevo over its backend connection. It does not keep a separate subscriber database or application log of sign-up bodies. Brief rate-limit checks help control abuse. Ordinary hosting and the email provider may process service logs under their own retention settings.</p><p>Active subscriptions remain in Brevo until unsubscribe or removal. Every update email must include the provider's unsubscribe link. Unsubscribing stops updates; Brevo may retain a suppression record to prevent accidental re-enrollment. Email <a href="mailto:wjbyrd@troy.edu?subject=Mastery%20Quests%20privacy%20request">wjbyrd@troy.edu</a> to request removal of your contact record or help unsubscribing. Provider backups and previously delivered messages may remain under the receiving services' retention practices.</p><p>Faculty question-bank requests are sent by you to the creator's email address. The optional on-page helper prepares an email locally; it does not upload or store entries. The maintainer uses the correspondence to verify faculty eligibility and arrange private fulfillment, and aims to delete completed request correspondence within 90 days. Copies in your sent mail or other mail-system backups are controlled by those systems. Do not include student records in a request.</p></div></section>
+
 </main>
 <footer class="site-footer">
 <div class="site-container footer-inner">
