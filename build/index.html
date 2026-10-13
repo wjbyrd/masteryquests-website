@@ -156,8 +156,7 @@
 <p class="resource-type">Blank template + question authoring</p>
 <h2>Create a quest for your own subject</h2>
 <p>
-                Start from the current blank ten-mode faculty template, then use the
-                authoring references to build and validate your own question architecture.
+                Start with the blank template and use the guides to write, organize, and check questions for your subject.
                 The economics Composer remains the faster path when its concept library fits your course.
               </p>
 </div>
@@ -166,7 +165,7 @@
 <article class="resource-card">
 <p class="resource-type">Blank game template</p>
 <h3>Blank Faculty Template</h3><p><a href="/downloads/resources/manual-faculty-guide.html">Manual authoring guide</a> · <a href="/downloads/resources/mastery-quests-faculty-starter.html" download>Working starter game</a> · <a href="/tools/question-bank-validator/">Validate questions</a></p>
-<p>Download the current asset-free ten-mode engine with no active questions. The template includes full adaptive/remediation modes, balanced Quiz sampling, and sample-aware limited-run modes ready for your own question banks and subject-specific customization.</p>
+<p>Download a blank game with ten modes and add your own questions and artwork. It includes adaptive practice, extra help after missed questions, quizzes that cover a range of topics, and short modes whose reports account for how many questions a student answered.</p>
 <a class="button button-download" download="" href="/downloads/resources/mastery-quests-faculty-template.html">Download Blank Template</a>
 </article>
 <article class="resource-card">
@@ -206,8 +205,8 @@
 
 <article class="resource-card">
 <p class="resource-type">Deployment hardening</p>
-<h3>Hashed answers, no backend required</h3>
-<p>Review the portable answer-key design and its limits before using a Quest for assessment.</p>
+<h3>How the game checks answers</h3>
+<p>Learn how the game makes answers harder to look up and what to consider before using it for an assessment.</p>
 <a class="text-link" href="/how-to/#answer-hardening">Read how the hardening works <span aria-hidden="true">→</span></a>
 </article>
 <article class="resource-card">
@@ -322,7 +321,7 @@
 </div>
 </div>
 </section>
-<div class="site-container"><section id="portable-telemetry"><h2>Optional telemetry on HTTPS hosts</h2><p>Telemetry-enabled generated games can submit from supported HTTPS hosts. Faculty must explicitly opt in when generating a game with the official Mastery Quests Composer; collection is OFF by default. Composer issues build-scoped authorization with a 365-day capability lifetime. Browser opt-out, revocation or expiry stops future remote collection while local gameplay and Download Game Data CSV remain available. Revocation does not delete accepted telemetry; the 730-day retention policy remains separate from authorization lifetime.</p><p>A game opened directly as <code>file://...</code> has an opaque/null browser Origin. Production intentionally rejects remote telemetry from null origins, so preflight may return 403. Local gameplay and CSV still work. Hosting the exact same build on a supported HTTPS host permits remote submission while its capability is valid. Restrictive LMS sandbox, CSP or network settings may prevent remote telemetry even on HTTPS; test the actual student launch context. Anonymous telemetry provides no learner identity assurance or cross-host browser identity continuity.</p><p>National Engine remains a separate legacy transport exception outside this anonymous capability rollout. These statements do not mean every Mastery Quests game uses this system.</p></section></div></main>
+<div class="site-container"><section id="portable-telemetry"><h2>Optional telemetry on HTTPS hosts</h2><p>You can choose to collect anonymous gameplay data when you create a game with the official Mastery Quests Composer. Collection is OFF by default. To send data, the game must be published on a supported HTTPS website. Permission to send data lasts 365 days for each generated game. Collection stops if that permission expires or is withdrawn, or if a player turns it off in their browser. Players can still play and download their game data. Data already received stays subject to the separate 730-day retention policy.</p><p>A game opened directly from a file on your computer can be played and can save a CSV, but it cannot send gameplay data to Mastery Quests. Publish the same file on a supported HTTPS website to enable collection while its permission is valid. Your LMS or network may still block data collection, so test the game the way students will open it. Anonymous records cannot confirm who played or reliably link the same player across different websites.</p><p>The National Engine uses an older data-collection setup. Check its own notice for details.</p></section></div></main>
 <footer class="site-footer">
 <div class="site-container footer-inner">
 <div>

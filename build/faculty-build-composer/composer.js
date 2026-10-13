@@ -1357,7 +1357,7 @@ function renderCoverage(){
         <div class="status ${mode.ok ? 'ok' : 'fail'}">${mode.ok ? 'READY' : fieldIssues.length ? 'VALIDATION ERRORS' : 'NEEDS MORE QUESTIONS'}</div>
         <h3>${mode.label}</h3>
         <p>${mode.ok
-          ? 'This mode has the required question coverage and every required record passes runtime validation.'
+          ? 'This mode has enough questions, and all required questions have passed the checks needed to run in the game.'
           : failureSummary}</p>
         <details><summary>View requirements and validation</summary>${mode.requirements.map(requirement => `<div>${POOL_LABELS[requirement.pool] || requirement.pool}: ${requirement.count}/${requirement.minimum}</div>`).join('')}${fieldIssues.map(item => `<div>${POOL_LABELS[item.pool] || item.pool}${item.id !== '—' ? ` (ID ${esc(item.id)})` : ''}: ${esc(item.issue)}</div>`).join('')}</details>
       </div>
@@ -1373,7 +1373,7 @@ function renderCoverage(){
     ['Repair routing', counts.repairSeed || 0], ['Bridge', counts.bridge || 0],
     ['Calculation', counts.calculation || 0], ['Integrated analysis', counts.integration || 0],
     ['Graph questions', counts.graph || 0], ['Trial by Graph-safe', counts.graphSafe || 0], ['Fading Fortune-eligible', counts.fadingFortuneEligible || 0], ['Risk & Reward-eligible', counts.riskRewardEligible || 0], ['Embedded visuals', counts.assets || 0],
-    ['Eligible checkpoint challenges', counts.challengeTotal || 0], ['Unique canonical questions', counts.totalCanonical || 0]
+    ['Eligible checkpoint challenges', counts.challengeTotal || 0], ['Distinct questions', counts.totalCanonical || 0]
   ];
   $('detailedCoverage').innerHTML = detailedMetrics.map(([label,value]) => `<div class="metric"><span>${label}</span><strong>${value}</strong></div>`).join('');
 
