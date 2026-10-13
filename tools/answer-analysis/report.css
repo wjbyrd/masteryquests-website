@@ -7,6 +7,7 @@
 #file-list span{overflow-wrap:anywhere;min-width:0}
 #file-list button{flex-shrink:0}
 .metrics{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.8rem}
+.run-metrics{grid-template-columns:repeat(3,minmax(0,1fr))}
 .metric{background:#eef7f8;border:1px solid #c9e4e5;border-radius:12px;padding:1rem;display:flex;flex-direction:column;gap:.4rem}
 .metric strong{font-size:1.8rem;color:#062454;overflow-wrap:anywhere}
 .metric span{font-size:.95rem}

@@ -23,6 +23,12 @@ function renderOverview(){
   container.append(el('p',`${o.correct} correct out of ${plural(o.knownCorrectness,'answer')} with a recorded result. Accuracy combines all shown answers. Game runs may include several attempts by the same student. Questions covered counts each saved question version once.`,'meta'));
   if(o.unknownRunAnswers)container.append(el('p',`${plural(o.unknownRunAnswers,'shown answer')} ${o.unknownRunAnswers===1?'has':'have'} no run ID.`,'meta'));
   if(!summary.groups.length)return;
+  container.append(el('h3','Run time and streaks'));
+  const runMetrics=el('div','','metrics run-metrics');
+  for(const [label,value] of [['Recorded run time',MQAnswerAnalysis.duration(o.recordedTimeMs)],['Median run time',MQAnswerAnalysis.duration(o.medianRunTimeMs)],['Longest correct-answer streak',o.bestStreak??'Not recorded']]){
+    const metric=el('div','','metric');metric.append(el('strong',String(value)),el('span',label));runMetrics.append(metric);
+  }
+  container.append(runMetrics,el('p',`Time recorded for ${o.timedRuns} of ${o.runs} runs; streaks for ${o.streakRuns} of ${o.runs}. These stats cover the whole runs represented by your filters, including answers outside the selection. Each run counts once. Incomplete exports may understate time and streaks; recorded clocks may include idle time. Median means the middle run time.`,'meta'));
   const objectiveView=byId('grouping').value==='objectives';
   const topics=[...(objectiveView?summary.objectives:summary.topics)].sort((a,b)=>(a.knownCorrectness?a.correct/a.knownCorrectness:2)-(b.knownCorrectness?b.correct/b.knownCorrectness:2)||b.count-a.count);
   const multipleGames=new Set(topics.map(t=>t.game)).size>1;
@@ -45,6 +51,7 @@ function refresh(){
   records=collection.rows();
   summary=MQAnswerAnalysis.analyze(records,{exposure:byId('exposure').value,assistance:byId('assistance').value,mode:byId('mode').value});
   const s=summary.stats;
+  byId('review-note').textContent=`The selected minimum of ${plural(Number(byId('minimum').value),'response')} applies to Questions to Review and the copied summary. All responses remain in the totals. Results with fewer than five responses or fewer than two identified runs are marked as limited evidence.`;
   byId('status').textContent=`${plural(s.accepted,'recorded answer')} · ${s.included} shown · ${s.unresolved} without usable saved question details · ${plural(s.duplicates,'duplicate row')} skipped · ${plural(s.rapidGuesses,'rapid guess','rapid guesses')} and ${plural(s.drafts,'exam draft')} excluded.`;
   byId('integrity').textContent=s.keyConflicts?`${plural(s.keyConflicts,'question version')} ${s.keyConflicts===1?'has':'have'} conflicting answer-key or grading information. Check the original exports before drawing conclusions. Recorded counts remain visible; answer keys are withheld for these questions.`:s.unverifiableIDs?`${plural(s.unverifiableIDs,'response')} ${s.unverifiableIDs===1?'has':'have'} no reliable identifier. Legitimate repeated attempts are retained, but overlapping exports cannot be fully deduplicated.`:'';
   renderOverview();
@@ -120,11 +127,12 @@ byId('download').addEventListener('click',()=>{
 });
 byId('download-summary').addEventListener('click',()=>{
   const filters=[byId('exposure').value,byId('assistance').value,byId('mode').value];
-  const rows=[['section','game','topicOrQuestion','questionID','questionRevision','answers','correct','knownCorrectness','accuracy','gameRuns','files','exposureFilter','assistanceFilter','modeFilter','objectiveID','keyStatus']];
+  const rows=[['section','game','topicOrQuestion','questionID','questionRevision','answers','correct','knownCorrectness','accuracy','gameRuns','files','exposureFilter','assistanceFilter','modeFilter','objectiveID','keyStatus','recordedRunTimeMs','medianRunTimeMs','runsWithRecordedTime','longestRecordedStreak','runsWithRecordedStreak','reviewMinimumResponses']];
   const o=summary.overview;
-  rows.push(['class','','','','',summary.stats.included,o.correct,o.knownCorrectness,o.knownCorrectness?o.correct/o.knownCorrectness:'',o.runs,o.files,...filters,'','']);
+  rows.push(['class','','','','',summary.stats.included,o.correct,o.knownCorrectness,o.knownCorrectness?o.correct/o.knownCorrectness:'',o.runs,o.files,...filters,'','',o.recordedTimeMs??'',o.medianRunTimeMs??'',o.timedRuns,o.bestStreak??'',o.streakRuns,byId('minimum').value]);
   for(const t of summary.topics)rows.push(['topic',t.game,t.topic,'','',t.count,t.correct,t.knownCorrectness,t.knownCorrectness?t.correct/t.knownCorrectness:'',t.runCount,'',...filters,'','']);
   for(const t of summary.objectives)rows.push(['objective',t.game,MQAnswerAnalysis.objectiveLabel(t),'','',t.count,t.correct,t.knownCorrectness,t.knownCorrectness?t.correct/t.knownCorrectness:'',t.runCount,'',...filters,t.objective,'']);
   for(const g of summary.groups)rows.push(['question',g.games.join(', '),g.prompt,g.questionID,g.revision,g.count,g.correct,g.knownCorrectness,g.knownCorrectness?g.correct/g.knownCorrectness:'',g.runCount,'',...filters,'',g.keyStatus]);
+  for(const row of rows)while(row.length<rows[0].length)row.push('');
   downloadCSV(rows,'mastery-quests-class-summary.csv');
 });

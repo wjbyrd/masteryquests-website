@@ -31,6 +31,30 @@
     return {exposure:n===0?'first':Number.isInteger(n)&&n>0?'repeat':'unknown',assistance:support?(support.artifactApplied||support.artifactRemovedCanonical?.length||support.modeRemovedCanonical?.length?'assisted':'unassisted'):'unknown',mode:r.mode||'unknown'};
   }
   const matches=(c,f)=>['exposure','assistance','mode'].every(k=>!f[k]||f[k]==='all'||f[k]===c[k]);
+  const numeric=value=>value!==null&&value!==undefined&&value!==''&&typeof value!=='boolean'&&Number.isFinite(Number(value))&&Number(value)>=0?Number(value):null;
+  const median=values=>{const sorted=[...values].sort((a,b)=>a-b),mid=Math.floor(sorted.length/2);return sorted.length?(sorted.length%2?sorted[mid]:(sorted[mid-1]+sorted[mid])/2):null;};
+  const runAlias=r=>JSON.stringify([r.game_id||r.game||('unknown-file-'+(r.__sourceFile||'unidentified')),r.runID||r.run_id]);
+  function runContext(rows,runs,aliases){
+    const observed=new Map();
+    for(const r of rows){
+      const run=r.runID||r.run_id;if(!run)continue;
+      const s=snapshot(r),candidates=aliases.get(runAlias(r));
+      const key=s?JSON.stringify([gameKey(r,s),run]):candidates?.size===1?[...candidates][0]:null;
+      if(!key||!runs.has(key))continue;
+      const event=r.event||r.event_type,terminal=event==='complete'||event==='run_completed'||event==='timed_ended_early'||/_(?:complete|bust|ended_by_student)$/.test(event||'');
+      const item=observed.get(key)||{time:null,streak:null};
+      // Clocks and streaks are cumulative: take one maximum per run, never sum rows.
+      const total=terminal?numeric(r.totalTimeMs):null;
+      const time=total>0?total:numeric(r.elapsedTimeMs??r.elapsed_time_ms);
+      if(time>0)item.time=Math.max(item.time??0,time);
+      const peak=terminal?numeric(r.maxStreak):null,current=terminal||accepted(r)?numeric(r.streak):null;
+      const streak=peak===null?current:Math.max(peak,current??0);
+      if(streak!==null&&Number.isInteger(streak))item.streak=Math.max(item.streak??0,streak);
+      observed.set(key,item);
+    }
+    const times=[...observed.values()].map(r=>r.time).filter(v=>v!==null),streaks=[...observed.values()].map(r=>r.streak).filter(v=>v!==null);
+    return {recordedTimeMs:times.length?times.reduce((a,b)=>a+b,0):null,medianRunTimeMs:median(times),timedRuns:times.length,bestStreak:streaks.length?Math.max(...streaks):null,streakRuns:streaks.length};
+  }
   function analyze(rows,filters={}){
     const prepared=rows.map(normalizeRow),metadata=new Map();
     // Inspect all accepted records, including duplicate copies and filtered-out claims.
@@ -46,7 +70,7 @@
       }
       metadata.set(key,m);
     }
-    const groups=new Map(),seen=new Set(),runs=new Set(),topics=new Map(),objectives=new Map(),files=new Set(),games=new Set();
+    const groups=new Map(),seen=new Set(),runs=new Set(),runAliases=new Map(),topics=new Map(),objectives=new Map(),files=new Set(),games=new Set();
     const overview={correct:0,knownCorrectness:0,unknownRunAnswers:0};
     const stats={accepted:0,included:0,unresolved:0,duplicates:0,rapidGuesses:0,drafts:0,unverifiableIDs:0,missingObjectives:0,keyConflicts:0,objectiveConflicts:0};
     function aggregate(map,key,fields,r,run){
@@ -84,6 +108,7 @@
       }
       const g=groups.get(key);g.count++;g[c.exposure]++;g[c.assistance==='unknown'?'unknownAssistance':c.assistance]++;g.games.add(game);g.modes.add(c.mode);
       const runKey=run?JSON.stringify([gameID,run]):null;if(runKey){runs.add(runKey);g.runs.add(runKey);}else overview.unknownRunAnswers++;
+      if(runKey){const alias=runAlias(r);if(!runAliases.has(alias))runAliases.set(alias,new Set());runAliases.get(alias).add(runKey);}
       const topic=String(r.tag||'Topic unavailable');aggregate(topics,JSON.stringify([gameID,topic]),{game,gameID,topic},r,runKey);
       const objective=String(s.objectiveID||r.objective||'');if(!objective)stats.missingObjectives++;
       const objectiveGroup=aggregate(objectives,JSON.stringify([gameID,objective]),{game,gameID,objective},r,runKey);
@@ -93,10 +118,13 @@
     }
     const rollup=map=>[...map.values()].map(({runs,labels,...a})=>({...a,runCount:runs.size,labels:[...labels],labelConflict:labels.size>1}));
     const objectiveResults=rollup(objectives);
-    return {stats,filters:{...filters},overview:{...overview,runs:runs.size,questions:groups.size,files:files.size,games:[...games]},topics:rollup(topics),objectives:objectiveResults,
+    return {stats,filters:{...filters},overview:{...overview,...runContext(prepared,runs,runAliases),runs:runs.size,questions:groups.size,files:files.size,games:[...games]},topics:rollup(topics),objectives:objectiveResults,
       groups:[...groups.values()].map(({runs,...g})=>({...g,runCount:runs.size,games:[...g.games],modes:[...g.modes]}))};
   }
   const plural=(n,one,many=one+'s')=>`${n} ${n===1?one:many}`;
+  function duration(ms){if(ms===null||ms===undefined)return 'Not recorded';const seconds=Math.round(ms/1000),hours=Math.floor(seconds/3600),minutes=Math.floor(seconds%3600/60);return [hours?hours+'h':'',minutes?minutes+'m':'',seconds%60||!seconds?(seconds%60)+'s':''].filter(Boolean).join(' ');}
+  const reviewMinimum=value=>Math.max(1,Math.floor(Number(value)||5));
+  function runContextText(o){return `Whole-run context for the runs represented above: recorded run time ${duration(o.recordedTimeMs)}; median run time ${duration(o.medianRunTimeMs)}; longest recorded correct-answer streak ${o.bestStreak===null?'not recorded':o.bestStreak}. Time is available for ${o.timedRuns} of ${o.runs} runs; streaks for ${o.streakRuns} of ${o.runs}. These are the games’ recorded clocks and streaks across each retained run, including responses outside the answer filters. Incomplete exports may understate them, and clocks may include idle time.`;}
   function objectiveLabel(group){
     const clean=value=>String(value||'').replace(/^LO\s*\d+(?:\.\d+)*(?:\s*[—–:_-]\s*|\s+|$)/i,'').replaceAll('_',' ').trim();
     const labels=[...new Set((group.labels||[]).map(clean).filter(Boolean))];
@@ -107,23 +135,25 @@
   function reviewQuestions(result,min=5){return result.groups.filter(g=>g.keyStatus!=='conflict'&&g.knownCorrectness>=min&&g.correct<g.knownCorrectness).sort((a,b)=>a.correct/a.knownCorrectness-b.correct/b.knownCorrectness||b.runCount-a.runCount||b.count-a.count).slice(0,5);}
   function feedbackSummary(result,{fileCount=0,minResponses=5,grouping='topics'}={}){
     const o=result.overview,s=result.stats,f=result.filters;
-    const filters={exposure:{all:'all attempts',first:'first recorded exposures',repeat:'repeat exposures',unknown:'exposure unknown'},assistance:{all:'all assistance levels',assisted:'choices removed',unassisted:'no recorded choice removal',unknown:'assistance unknown'}};
+    const filters={exposure:{all:'all attempts',first:'first recorded exposures',repeat:'repeat exposures',unknown:'exposure unknown'},assistance:{all:'all responses regardless of choice removal',assisted:'one or more choices removed',unassisted:'no choices removed',unknown:'choice removal not recorded'}};
     const lines=[`Class Practice Summary${o.games.length?' — '+o.games.join(', '):''}`,
       `${plural(fileCount,'file')} loaded; ${plural(o.files,'file')} represented in the selected results. ${plural(o.runs,'game run')} represented ${plural(s.included,'accepted response')}. Overall accuracy: ${accuracy(o)} (${o.correct} of ${o.knownCorrectness} responses with a recorded result).`,
-      `Filters: ${filters.exposure[f.exposure||'all']||'all attempts'}; ${filters.assistance[f.assistance||'all']||'all assistance levels'}; mode ${f.mode&&f.mode!=='all'?f.mode:'all modes'}.`];
-    const min=Math.max(5,Number(minResponses)||5);
+      `Filters: ${filters.exposure[f.exposure||'all']||'all attempts'}; ${filters.assistance[f.assistance||'all']||'all responses regardless of choice removal'}; mode ${f.mode&&f.mode!=='all'?f.mode:'all modes'}.`];
+    const min=reviewMinimum(minResponses);
+    lines.push(`Review minimum: ${plural(min,'response')} with a recorded result per topic, objective, or question.`,runContextText(o));
     const source=grouping==='objectives'?result.objectives.filter(a=>a.objective&&!a.labelConflict):result.topics.filter(a=>a.topic!=='Topic unavailable');
-    const eligible=source.filter(a=>sufficient(a,min)).sort((a,b)=>a.correct/a.knownCorrectness-b.correct/b.knownCorrectness||b.runCount-a.runCount);
+    const eligible=source.filter(a=>a.knownCorrectness>=min).sort((a,b)=>a.correct/a.knownCorrectness-b.correct/b.knownCorrectness||b.runCount-a.runCount);
     const label=a=>(o.games.length>1?a.game+' — ':'')+(grouping==='objectives'?objectiveLabel(a):a.topic.replaceAll('_',' '));
-    const describe=a=>`${label(a)}: ${accuracy(a)} (${a.correct}/${a.knownCorrectness}; ${plural(a.runCount,'run')})`;
+    const describe=a=>`${label(a)}: ${accuracy(a)} (${a.correct}/${a.knownCorrectness}; ${plural(a.runCount,'run')}${sufficient(a)?'':'; limited evidence'})`;
     if(s.keyConflicts||s.objectiveConflicts)lines.push('Conflicting answer-key or objective information needs review. Comparative conclusions are withheld until those records are checked.');
     else if(eligible.length){
       const low=eligible[0],high=eligible.at(-1);
       if(eligible.length>1&&low.correct/low.knownCorrectness<high.correct/high.knownCorrectness){lines.push(`Lower observed accuracy: ${describe(low)}.`,`Higher observed accuracy: ${describe(high)}.`);}
-      else lines.push(`Sufficiently represented results: ${eligible.map(describe).join('; ')}. There is no supported stronger-versus-weaker comparison in this selection.`);
-      const review=reviewQuestions(result,min).filter(q=>sufficient(q,min)).slice(0,3);
-      if(review.length)lines.push('Questions for instructor review:\n'+review.map(q=>`- ${q.prompt} — ${accuracy(q)} (${q.correct}/${q.knownCorrectness}; ${plural(q.runCount,'run')}).`).join('\n'));
-    }else lines.push(`There is too little evidence for a supported comparison. This summary requires at least ${min} responses with recorded results across two game runs for each concept or objective.`);
+      else lines.push(`Results meeting the review minimum: ${eligible.map(describe).join('; ')}. There is no stronger-versus-weaker comparison in this selection.`);
+      if(eligible.some(a=>!sufficient(a)))lines.push('Limited evidence: some results have fewer than five responses or come from fewer than two identified runs. Treat these observations as starting points for discussion.');
+    }else lines.push(`There is too little evidence for a comparison at the selected minimum of ${plural(min,'response')}. No available ${grouping==='objectives'?'learning objectives':'topics'} meet that minimum.`);
+    const review=reviewQuestions(result,min).slice(0,3);
+    if(!s.keyConflicts&&!s.objectiveConflicts&&review.length)lines.push('Questions for instructor review:\n'+review.map(q=>`- ${q.prompt} — ${accuracy(q)} (${q.correct}/${q.knownCorrectness}; ${plural(q.runCount,'run')}${sufficient(q)?'':'; limited evidence'}).`).join('\n'));
     if(s.unresolved)lines.push(`${plural(s.unresolved,'accepted response')} lacked usable saved question details; this analysis excludes those records.`);
     if(s.missingObjectives)lines.push(`${plural(s.missingObjectives,'shown response')} had no learning objective.`);
     if(result.objectives.some(a=>a.labelConflict))lines.push('Some learning-objective descriptions conflict. Their original labels remain in the report; those objectives are excluded from feedback comparisons.');
@@ -147,5 +177,5 @@
       rows(){return [...files.values()].flatMap(file=>file.rows);}
     };
   }
-  const api={parseCSV,analyze,createCollection,normalizeRow,plural,objectiveLabel,accuracy,sufficient,reviewQuestions,feedbackSummary};if(typeof module==='object'&&module.exports)module.exports=api;else root.MQAnswerAnalysis=api;
+  const api={parseCSV,analyze,createCollection,normalizeRow,plural,duration,runContextText,reviewMinimum,objectiveLabel,accuracy,sufficient,reviewQuestions,feedbackSummary};if(typeof module==='object'&&module.exports)module.exports=api;else root.MQAnswerAnalysis=api;
 })(globalThis);
