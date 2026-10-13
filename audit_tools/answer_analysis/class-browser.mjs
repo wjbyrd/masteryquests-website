@@ -11,7 +11,7 @@ try{
  await page.locator('#files').setInputFiles(inputs[0]);await page.waitForFunction(()=>document.querySelector('#status').textContent.startsWith('15 recorded answers'));
  await page.locator('#files').setInputFiles(inputs[1]);await page.waitForFunction(()=>document.querySelector('#status').textContent.startsWith('25 recorded answers'));
  assert.equal(await page.locator('#file-list li').count(),2);assert((await page.locator('#overview').innerText()).includes('Class overview'));
- await page.locator('#files').setInputFiles(inputs[0]);await page.waitForFunction(()=>document.querySelector('#import-status').textContent.includes('1 identical files'));assert.equal(await page.locator('#file-list li').count(),2);
+ await page.locator('#files').setInputFiles(inputs[0]);await page.waitForFunction(()=>document.querySelector('#import-status').textContent.includes('1 identical file'));assert.equal(await page.locator('#file-list li').count(),2);
  const [download]=await Promise.all([page.waitForEvent('download'),page.locator('#download-summary').click()]);await download.saveAs(path.join(out,'summary.csv'));assert(fs.readFileSync(path.join(out,'summary.csv'),'utf8').includes('"25"'));
  await page.setViewportSize({width:390,height:844});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await page.screenshot({path:path.join(out,'class-report-mobile.png')});await page.evaluate(()=>window.scrollTo(0,document.querySelector('#overview').offsetTop));await page.screenshot({path:path.join(out,'class-overview-mobile.png')});
  await page.locator('#file-list button').first().click();assert((await page.locator('#status').innerText()).startsWith('10 recorded answers'));

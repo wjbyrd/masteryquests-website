@@ -10,7 +10,7 @@ const ids=v=>check(Array.isArray(v)&&v.length<=1000&&v.every(id),'invalid ID lis
 export function validateManifest(m,expected){
  keys(m,['buildRevision','manifestSchema','contractID','measurementRevision','engineRevision','trackerSourceRevision','assetRevision','contentRevision','configuration','configurationRevision','mode','modeParameters']);
  check(m.manifestSchema==='mq-run-manifest/1'&&m.contractID==='mq-measurement/1','unknown manifest version');
- check(['mq-tracker-2026.09.10-contract1','mq-tracker-2026.10.13-answers1'].includes(m.measurementRevision),'unknown tracker version');
+ check(['mq-tracker-2026.09.10-contract1','mq-tracker-2026.10.13-answers1','mq-tracker-2026.10.13-answers2'].includes(m.measurementRevision),'unknown tracker version');
  for(const k of ['buildRevision','engineRevision','trackerSourceRevision','assetRevision','contentRevision','configurationRevision'])check(digest(m[k]),'invalid '+k);
  check(['standard','timed','exam','quiz','unlimited','legendary','score','trialGraph','fadingFortune','riskReward'].includes(m.mode),'invalid mode');
  const c=m.configuration;
@@ -39,8 +39,8 @@ export function validateContractField(key,value,event){
  if(['canonicalSelectedIndex','localSequence'].includes(key)){check(count(value),'invalid '+key);return value;}
  check(typeof value==='string'&&value.length<=60000,'invalid JSON field');const parsed=JSON.parse(value);
  if(key==='answerSnapshotJSON'){
-  keys(parsed,['schema','questionID','questionVersion','prompt','options','optionOrder','assetRevision','questionRevision','contentRevision','selectedIndex','selectedAnswer','priorExposureCount']);
-  check(parsed.schema==='mq-answer-snapshot/1'&&id(parsed.questionID),'invalid answer snapshot identity');
+  keys(parsed,['schema','questionID','questionVersion','prompt','options','optionOrder','assetRevision','questionRevision','contentRevision','selectedIndex','selectedAnswer','priorExposureCount','gameID','objectiveID','objectiveLabel','correctOptionIndices']);
+  check(['mq-answer-snapshot/1','mq-answer-snapshot/2'].includes(parsed.schema)&&id(parsed.questionID),'invalid answer snapshot identity');
   check(typeof parsed.questionVersion==='string'&&parsed.questionVersion.length<=160,'invalid question version');
   check(typeof parsed.prompt==='string'&&parsed.prompt.length<=12000,'invalid question prompt');
   check(Array.isArray(parsed.options)&&parsed.options.length>=2&&parsed.options.length<=20&&parsed.options.every(x=>typeof x==='string'&&x.length<=4000),'invalid answer options');
@@ -48,7 +48,13 @@ export function validateContractField(key,value,event){
   check(digest(parsed.assetRevision)&&digest(parsed.questionRevision)&&(parsed.contentRevision===null||digest(parsed.contentRevision)),'invalid answer revision');
   check(Number.isInteger(parsed.selectedIndex)&&parsed.selectedIndex>=0&&parsed.selectedIndex<parsed.options.length&&parsed.selectedAnswer===parsed.options[parsed.selectedIndex],'invalid selected answer');
   check(parsed.priorExposureCount===null||count(parsed.priorExposureCount),'invalid exposure count');
-  const {schema,questionRevision,contentRevision,selectedIndex,selectedAnswer,priorExposureCount,...content}=parsed;
+  if(parsed.schema==='mq-answer-snapshot/2'){
+    check(typeof parsed.gameID==='string'&&parsed.gameID.length>0&&parsed.gameID.length<=160,'invalid game identity');
+    check(typeof parsed.objectiveID==='string'&&parsed.objectiveID.length<=300&&typeof parsed.objectiveLabel==='string'&&parsed.objectiveLabel.length<=2000,'invalid objective metadata');
+    check(parsed.correctOptionIndices===null||(Array.isArray(parsed.correctOptionIndices)&&parsed.correctOptionIndices.length>0&&new Set(parsed.correctOptionIndices).size===parsed.correctOptionIndices.length&&parsed.correctOptionIndices.every(i=>Number.isInteger(i)&&i>=0&&i<parsed.options.length)),'invalid answer key');
+    if(parsed.correctOptionIndices!==null&&event.eventType)check(event.eventType==='answer_evaluated'&&!event.rapidGuess&&event.acceptedAttempt!==false,'answer key on unaccepted response');
+  }else check(['gameID','objectiveID','objectiveLabel','correctOptionIndices'].every(k=>!(k in parsed)),'v2 fields on legacy snapshot');
+  const {schema,questionRevision,contentRevision,selectedIndex,selectedAnswer,priorExposureCount,objectiveID,objectiveLabel,correctOptionIndices,...content}=parsed;
   check(contractHash(content)===questionRevision,'answer revision mismatch');
  }
  if(key==='manifestJSON'){check(event.eventType==='run_manifest','manifest on non-manifest event');validateManifest(parsed,event.manifestID);}

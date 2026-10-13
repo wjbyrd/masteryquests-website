@@ -1055,10 +1055,10 @@
       "units": "not applicable",
       "events": "All events unless noted",
       "definition": "Measurement implementation label stamped when the row is created.",
-      "possibleValues": "mq-tracker-2026.09.10-contract1 for new measured rows; original labels for historical rows.",
+      "possibleValues": "mq-tracker-2026.10.13-answers2 for current rows; original labels for historical rows.",
       "blankMeaning": "Unavailable in older data or not supplied; see event and mode.",
       "zeroMeaning": "Not a numeric measure.",
-      "notes": "Current measured rows use mq-tracker-2026.09.10-contract1. Historical Managerial v5-engine2 labels were reused across 57- and 75-column exports; retain them and report that ambiguity.",
+      "notes": "answers1 introduced the snapshot column; answers2 adds snapshot version 2 without adding CSV columns. Earlier contract1 Managerial exports have 87 columns; historical v5-engine2 labels were reused across 57- and 75-column exports.",
       "caution": "Used for troubleshooting; does not establish learning or identity.",
       "facultyNormallyNeeds": false,
       "technical": true,
@@ -1207,14 +1207,14 @@
     {
       "name": "questionID",
       "category": "Question and content",
-      "type": "integer",
+      "type": "text or number",
       "units": "not applicable",
       "events": "Question-related events; defaults on other rows",
-      "definition": "Numeric question identifier within the game.",
-      "possibleValues": "Numeric value",
+      "definition": "Stable question identifier within its game.",
+      "possibleValues": "Numeric or alphanumeric identifiers; preserve the original value.",
       "blankMeaning": "Unavailable in older data or not supplied; see event and mode.",
       "zeroMeaning": "May be an unused default outside the stated events/mode; within those events, zero is the recorded value.",
-      "notes": "Zero means no question supplied; spelling is questionID in this CSV.",
+      "notes": "Combine game identity and question revision when grouping. Matching IDs alone do not establish matching questions.",
       "caution": "Interpret only for the stated events and mode; defaults are not evidence of performance.",
       "facultyNormallyNeeds": true,
       "technical": false,
@@ -4400,7 +4400,11 @@
       "name": "answerSnapshotJSON",
       "type": "JSON text",
       "units": "not applicable",
-      "definition": "Immutable authored question and options, selected answer, option order and question/content revisions. No answer key or learner-entered text."
+      "definition": "Saved question wording, options, selected choice, revision and available learning-objective metadata. Version 2 adds the authoritative correct option after an accepted answer.",
+      "possibleValues": "mq-answer-snapshot/2: prior version 1 fields plus gameID, objectiveID, objectiveLabel and correctOptionIndices (zero-based option positions, or null when unavailable). Version 1 remains supported without an answer key.",
+      "notes": "The revision includes game identity, wording and option order. Original order requires a reliable shuffle mapping; otherwise optionOrder is displayed. Exact objective identifiers and labels are retained. Exam commits preserve the final saved selection and use that room’s question key.",
+      "caution": "Correct options are saved only for accepted answers; drafts and rapid guesses carry no key. Conflicting keys for one revision are flagged for review. Authored choices contain no typed learner input or clipboard contents. Historical content is never reconstructed from current banks.",
+      "events": "Local accepted answers, rapid guesses and exam drafts/revisions; private answer_evaluated events. Blank on lifecycle events."
     }
   ]
 }

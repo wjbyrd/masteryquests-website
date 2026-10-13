@@ -383,7 +383,21 @@ function createTelemetryContract(get, registry) {
   function persist(run,s){try{localStorage['setItem'](key(run),JSON.stringify(s));}catch(_){s.quality.storageFailures++;}}
   function runKey(){return String(get('runID',''));}
   function slot(q=get('currentQuestion',{})){return [get('gameMode','standard'),get('room',0),q?.id??q?.questionId??''].join(':');}
-  // Freeze only authored multiple-choice content, never input, a key, or feedback.
+  // Read the same authored key used by gameplay, only after an accepted response.
+  function correctOptions(q,options,mapping){
+    if(Number.isInteger(q.a))return q.a>=0&&q.a<options.length?[mapping[q.a]]:null;
+    if(typeof q.aHash!=='string')return null;
+    const expected=q.aHash.trim().replace(/^sha256:/i,'');
+    const normalize=get('normalizePublishedAnswer',null)||get('normalizeAnswerText',null)||
+      (v=>String(v).normalize('NFKC').trim().replace(/\s+/g,' ').toLowerCase());
+    const matches=[];
+    options.forEach((text,i)=>{const digest=hash(normalize(text));
+      const base64=typeof btoa==='function'?btoa(digest.match(/../g).map(x=>String.fromCharCode(parseInt(x,16))).join('')):'';
+      if(digest===expected.toLowerCase()||(base64&&base64.replace(/=+$/,'')===expected.replace(/=+$/,'')))matches.push(mapping[i]);
+    });
+    return matches.length?matches.sort((a,b)=>a-b):null;
+  }
+  // Freeze only this answered question. Never serialize the question bank.
   // The revision separates edited questions even when their ID is reused.
   function answerSnapshot(q,row,b){
     try {
@@ -395,9 +409,14 @@ function createTelemetryContract(get, registry) {
       const canonical=Array.isArray(mapping)&&mapping.length===options.length&&new Set(mapping).size===options.length&&
         mapping.every(i=>Number.isInteger(i)&&i>=0&&i<options.length);
       const ordered=canonical?Array.from({length:options.length},(_,i)=>options[mapping.indexOf(i)]):options;
-      const content={questionID:String(q.id??q.questionId),questionVersion:String(q.version??1),prompt,
+      const gameID=String(get('FACULTY_COMPOSITION_CONFIG',{}).slug||row.game||'unknown').slice(0,160);
+      const content={gameID,questionID:String(q.id??q.questionId),questionVersion:String(q.version??1),prompt,
         options:ordered,optionOrder:canonical?'canonical':'displayed',assetRevision:b.assetRevision};
-      const snapshot={schema:'mq-answer-snapshot/1',...content,questionRevision:hash(content),
+      const objectiveID=String(row.objective||q.objective||'').slice(0,300);
+      const labels=get('objectiveLabels',{}),templateLabels=get('TEMPLATE_OBJECTIVE_LABELS',{});
+      const objectiveLabel=String(labels?.[objectiveID]||templateLabels?.[objectiveID]||'').slice(0,2000);
+      const snapshot={schema:'mq-answer-snapshot/2',...content,questionRevision:hash(content),objectiveID,objectiveLabel,
+        correctOptionIndices:row.event==='question'?correctOptions(q,options,canonical?mapping:options.map((_,i)=>i)):null,
         contentRevision:q.telemetryContentRevision||null,selectedIndex:canonical?mapping[selected]:selected,
         selectedAnswer:options[selected],priorExposureCount:Number.isInteger(row.priorExposureCount)&&row.priorExposureCount>=0?row.priorExposureCount:null};
       const json=stable(snapshot);
@@ -420,7 +439,8 @@ function createTelemetryContract(get, registry) {
     const manifest=s.segments[segmentKey] ||= {...b,mode,modeParameters:{quizTarget:number(get('quizQuestionTarget',null)),trialGraphTarget:number(get('trialGraphQuestionTarget',null)),timedLimitMs:number(get('timedModeDurationMs',null)),fadingTarget:number(get('fadingFortuneQuestionTarget',null)),riskTarget:number(get('riskRewardQuestionTarget',null))}};
     const manifestID=hash(manifest);
     if(!s.manifests[manifestID])s.manifests[manifestID]=manifest;
-    const response=['question','rapid_guessing','exam_answer_initial','exam_answer_revision'].includes(row.event),q=get('currentQuestion',{});
+    const response=['question','rapid_guessing','exam_answer_initial','exam_answer_revision'].includes(row.event);
+    const q=(data.adaptiveMode==='exam-commit'?get('getExamRoomState',null)?.(row.room,false)?.question:null)||get('currentQuestion',{});
     const k=[mode,row.room??get('room',0),row.questionID||q?.id||''].join(':');
     let view=s.slots[k];
     if(response&&!view){view={presentationID:null,attemptID:uuid()};s.slots[k]=view;}
@@ -444,7 +464,12 @@ function createTelemetryContract(get, registry) {
     if(response&&view){if(data.adaptiveMode==='exam-commit')row.supportJSON=view.supportJSON??null;else{row.supportJSON=stable(support);view.supportJSON=row.supportJSON;}}
     else row.supportJSON=null;
     if(response&&view){
-      if(data.adaptiveMode==='exam-commit')row.answerSnapshotJSON=view.answerSnapshotJSON??answerSnapshot(q,row,b);
+      if(data.adaptiveMode==='exam-commit'){
+        row.answerSnapshotJSON=view.answerSnapshotJSON??answerSnapshot(q,row,b);
+        try{const prior=JSON.parse(row.answerSnapshotJSON),committed=JSON.parse(answerSnapshot(q,row,b));
+          if(prior&&committed&&prior.questionRevision===committed.questionRevision){prior.correctOptionIndices=committed.correctOptionIndices;row.answerSnapshotJSON=stable(prior);}
+        }catch(_){}
+      }
       else {row.answerSnapshotJSON=answerSnapshot(q,row,b);view.answerSnapshotJSON=row.answerSnapshotJSON;}
     }else row.answerSnapshotJSON=null;
     row.resourceID=ids([data.resourceID])[0]??null;
@@ -476,7 +501,7 @@ function createTelemetryContract(get, registry) {
   return {fields,stamp,show,exportRows,wrapShuffle,hash,stable,build,state,resources,installResources};
 }
 
-  const MQContract=createTelemetryContract(globalValue, /* RELEASE REGISTRY */ {"contractID":"mq-measurement/1","measurementRevision":"mq-tracker-2026.10.13-answers1","localSchema":"mq-local-csv/1","anonymousEnvelope":3,"manifestSchema":"mq-run-manifest/1","trackerSourceRevision":"9fc7ec0efd94f516d2adeee36bba713a73ab6c6b638388fcc82e2062fe99d5cd","games":{"cost-directive":{"engineRevision":"fe55ce5e32f98f3867b8bc98aaa04197940d76434d42340a8cb2f9613cc44a57","pocEngineRevision":"1455566315c2b5b68444783226b3ddd0dc8cd95e3df286a1c3cdd597d7271496","classroomEngineRevision":"1525bb3a511b4854ee4c93e2a74e8c27d2096c39e34d88165d77c4450fcca97e","assetRevision":"e84ae7d58d4f614ec045fb1b8f1327e9acb14060321b757e92ee42277369eb71"},"market-signal":{"engineRevision":"74c7e0e8e6e0bc75aed705a83728da4525768d1c8f86efa374287c0689c1c7e4","pocEngineRevision":"ebcc819cf47f81c55c3ab91381e7bccc52b98439487588c963abd76f10f815e3","classroomEngineRevision":"88584ffc8e522a9a2959ee8639dbe59c9f9c8a45c86cb07e87414a2f4c166585","assetRevision":"8e884e9efd09d7d6bb819e8bf88777acd87c54c3d5606ed0861a9861725add5c"},"strategy-desk":{"engineRevision":"aed4b6a12732f1a2019a1619b53f85b31736654ec5021c62ecc10b6bfad0ca2f","pocEngineRevision":"bf62c33b3a374ff0d9fef2201a0140aa9163f5370c7d13357d413f054eeb6fb6","classroomEngineRevision":"b6660469a9e3195727d06a141de46a46983d30730d8b4258f8cfc90089d1a70d","assetRevision":"6daeef8858732666d4a8f79dce498db26f463a85428e930b70d9c298deb974e6"},"agency-protocol":{"engineRevision":"519e0c8f1663959ae5218b3fa86fc8088cca2d3b4f49ed96784cc2c94613166d","pocEngineRevision":"d151c35e8d463a866cbf663e285f60ad86a590e517be7c6d2da8d0b766694077","classroomEngineRevision":"90e5e079c3952d8723bcb66695f31a5305aeacd68a0670cacdbe5e92e2cc8e58","assetRevision":"90b45185b2f7b58e87bb619618a0c7642860be1748eb45ef768820db614faec8"},"composer":{"engineRevision":"df4af11f5c1d18984430aa9b12e5665f74d11c79403cc70d413ec1bb6647e27b","assetRevision":"b843eaf7f8d5a2568ac458d71a9519c91e57c19bfe1f99314688479d0471e314"},"equilibrium-crisis":{"engineRevision":"ce9d368eb74fa871776a825e3b2b340119206a6f141b66d16ecc368c00f0764b","assetRevision":"e0bc167ef5bf6085998fa7620a66df587614e079e8a425d00b3378f748050d9e"},"liquidity-grid":{"engineRevision":"8e429f6800b59760f26bcd714940c5d894ec3c6608587f32cd9b54462968ee45","assetRevision":"9b4b4b9b956894944dfbd880edaa7d21315e9a565fe36c6e99c435adba40b640"},"market-gate":{"engineRevision":"97000cbc107706e1879d143a88503423012094bb7e07ba5327d30df9f77c1d5a","assetRevision":"a4b6a2220411fc0367e726bedb815bc2b0f23d866104389f3e64fe424e3ec9d6"},"national-ledger":{"engineRevision":"b322ddbf689f4db88a3c5cfdf3a81990e45a4f4acb8ebae6e8ba85d1c536fe2c","assetRevision":"5edc2f9729237cc6638954a521fd65163fdc4cc1febbf4c012620b2ec5bbacde"},"stabilization-protocol":{"engineRevision":"c0f2953b63f1ccab3c79253f37862a24c2afbef4f27743a875529534c8571a86","assetRevision":"e0fdef674656ba0a2cf18e8483ef3724281013338f2671c141cc66c587f2348f"},"command-nexus":{"engineRevision":"58e9918963c2f02027a784ecdf7df170f1ce43954c14b34795e31862c6fa59c7","assetRevision":"97f92412cf740f7de62e5f77f5838543aff5426bee9ceaf4f81aeb1bc427f36f"},"exchange-citadel":{"engineRevision":"1213fa9133cf7323c67e7ab7af361eb515874b791a5fbdf6ac41453347e9c846","assetRevision":"7da393ab7e26acca52dedd1349a2455252439af297df7fa0e5e39d8a7c861505"},"mint-ash-gold":{"engineRevision":"f1452f9e2cbacbd0b75f0a1445650ffc7e265b87e2d33bb701f1029aac4b0f86","assetRevision":"c8785e093302b9df20935e7a26cd0f2626764d492f02fe00839d929772016125"},"national-engine":{"engineRevision":"3de6378adb0156e9683f0d83fd093b206c4a697b001aca62a35ba28362012dc4","assetRevision":"524f4b7ee38d9ea9d1f08b0505a74699c68ca3f4bb6314dcef177285d686abd5"},"labyrinth-of-choice":{"engineRevision":"696d3bceb3453fd54ee25088c34a87a5c9e6546a8ba1f7280b9b51ebb15721ba","assetRevision":"44d1f4a1da9ae15503499c30c0e7974481674f5ed4b2a6aa5860ba1d08eb0aca"},"labyrinth-choice":{"engineRevision":"696d3bceb3453fd54ee25088c34a87a5c9e6546a8ba1f7280b9b51ebb15721ba","assetRevision":"44d1f4a1da9ae15503499c30c0e7974481674f5ed4b2a6aa5860ba1d08eb0aca"}}});
+  const MQContract=createTelemetryContract(globalValue, /* RELEASE REGISTRY */ {"contractID":"mq-measurement/1","measurementRevision":"mq-tracker-2026.10.13-answers2","localSchema":"mq-local-csv/1","anonymousEnvelope":3,"manifestSchema":"mq-run-manifest/1","trackerSourceRevision":"eba504578b2ffdd1b0506c3c67d3af9d71781123bc78eb654a56f003d11fc10b","games":{"cost-directive":{"engineRevision":"fe55ce5e32f98f3867b8bc98aaa04197940d76434d42340a8cb2f9613cc44a57","pocEngineRevision":"1455566315c2b5b68444783226b3ddd0dc8cd95e3df286a1c3cdd597d7271496","classroomEngineRevision":"1525bb3a511b4854ee4c93e2a74e8c27d2096c39e34d88165d77c4450fcca97e","assetRevision":"e84ae7d58d4f614ec045fb1b8f1327e9acb14060321b757e92ee42277369eb71"},"market-signal":{"engineRevision":"74c7e0e8e6e0bc75aed705a83728da4525768d1c8f86efa374287c0689c1c7e4","pocEngineRevision":"ebcc819cf47f81c55c3ab91381e7bccc52b98439487588c963abd76f10f815e3","classroomEngineRevision":"88584ffc8e522a9a2959ee8639dbe59c9f9c8a45c86cb07e87414a2f4c166585","assetRevision":"8e884e9efd09d7d6bb819e8bf88777acd87c54c3d5606ed0861a9861725add5c"},"strategy-desk":{"engineRevision":"aed4b6a12732f1a2019a1619b53f85b31736654ec5021c62ecc10b6bfad0ca2f","pocEngineRevision":"bf62c33b3a374ff0d9fef2201a0140aa9163f5370c7d13357d413f054eeb6fb6","classroomEngineRevision":"b6660469a9e3195727d06a141de46a46983d30730d8b4258f8cfc90089d1a70d","assetRevision":"6daeef8858732666d4a8f79dce498db26f463a85428e930b70d9c298deb974e6"},"agency-protocol":{"engineRevision":"519e0c8f1663959ae5218b3fa86fc8088cca2d3b4f49ed96784cc2c94613166d","pocEngineRevision":"d151c35e8d463a866cbf663e285f60ad86a590e517be7c6d2da8d0b766694077","classroomEngineRevision":"90e5e079c3952d8723bcb66695f31a5305aeacd68a0670cacdbe5e92e2cc8e58","assetRevision":"90b45185b2f7b58e87bb619618a0c7642860be1748eb45ef768820db614faec8"},"composer":{"engineRevision":"df4af11f5c1d18984430aa9b12e5665f74d11c79403cc70d413ec1bb6647e27b","assetRevision":"b843eaf7f8d5a2568ac458d71a9519c91e57c19bfe1f99314688479d0471e314"},"equilibrium-crisis":{"engineRevision":"ce9d368eb74fa871776a825e3b2b340119206a6f141b66d16ecc368c00f0764b","assetRevision":"e0bc167ef5bf6085998fa7620a66df587614e079e8a425d00b3378f748050d9e"},"liquidity-grid":{"engineRevision":"8e429f6800b59760f26bcd714940c5d894ec3c6608587f32cd9b54462968ee45","assetRevision":"9b4b4b9b956894944dfbd880edaa7d21315e9a565fe36c6e99c435adba40b640"},"market-gate":{"engineRevision":"97000cbc107706e1879d143a88503423012094bb7e07ba5327d30df9f77c1d5a","assetRevision":"a4b6a2220411fc0367e726bedb815bc2b0f23d866104389f3e64fe424e3ec9d6"},"national-ledger":{"engineRevision":"b322ddbf689f4db88a3c5cfdf3a81990e45a4f4acb8ebae6e8ba85d1c536fe2c","assetRevision":"5edc2f9729237cc6638954a521fd65163fdc4cc1febbf4c012620b2ec5bbacde"},"stabilization-protocol":{"engineRevision":"c0f2953b63f1ccab3c79253f37862a24c2afbef4f27743a875529534c8571a86","assetRevision":"e0fdef674656ba0a2cf18e8483ef3724281013338f2671c141cc66c587f2348f"},"command-nexus":{"engineRevision":"58e9918963c2f02027a784ecdf7df170f1ce43954c14b34795e31862c6fa59c7","assetRevision":"97f92412cf740f7de62e5f77f5838543aff5426bee9ceaf4f81aeb1bc427f36f"},"exchange-citadel":{"engineRevision":"1213fa9133cf7323c67e7ab7af361eb515874b791a5fbdf6ac41453347e9c846","assetRevision":"7da393ab7e26acca52dedd1349a2455252439af297df7fa0e5e39d8a7c861505"},"mint-ash-gold":{"engineRevision":"f1452f9e2cbacbd0b75f0a1445650ffc7e265b87e2d33bb701f1029aac4b0f86","assetRevision":"c8785e093302b9df20935e7a26cd0f2626764d492f02fe00839d929772016125"},"national-engine":{"engineRevision":"3de6378adb0156e9683f0d83fd093b206c4a697b001aca62a35ba28362012dc4","assetRevision":"524f4b7ee38d9ea9d1f08b0505a74699c68ca3f4bb6314dcef177285d686abd5"},"labyrinth-of-choice":{"engineRevision":"696d3bceb3453fd54ee25088c34a87a5c9e6546a8ba1f7280b9b51ebb15721ba","assetRevision":"44d1f4a1da9ae15503499c30c0e7974481674f5ed4b2a6aa5860ba1d08eb0aca"},"labyrinth-choice":{"engineRevision":"696d3bceb3453fd54ee25088c34a87a5c9e6546a8ba1f7280b9b51ebb15721ba","assetRevision":"44d1f4a1da9ae15503499c30c0e7974481674f5ed4b2a6aa5860ba1d08eb0aca"}}});
   // END MEASUREMENT CONTRACT
 
   const BEHAVIOR_FIELDS = ["activeResponseTimeMs","hiddenTimeMs","tabSwitchCount","timeAfterReturnMs","focusLossCount","unfocusedTimeMs","timeAfterFocusMs","selectionCount","maxSelectedChars","questionSelected","answersSelected","copyCount","questionCopied","answersCopied","lastCopyElapsedMs","timeCopyToHideMs","timeCopyToBlurMs"];
@@ -795,7 +820,7 @@ function createTelemetryContract(get, registry) {
         canonicalSelectedIndex:measurement?.canonicalSelectedIndex ?? null,
         localSequence:measurement?.localSequence ?? null,
         supportJSON:measurement?.supportJSON ?? null,
-        answerSnapshotJSON:measurement?.answerSnapshotJSON ?? null,
+        answerSnapshotJSON:eventType==='answer_evaluated'?measurement?.answerSnapshotJSON ?? null:null,
         originAttemptID:measurement?.originAttemptID ?? null,
         resourceID:measurement?.resourceID ?? null,
         manifestJSON:fields.__manifest || null,

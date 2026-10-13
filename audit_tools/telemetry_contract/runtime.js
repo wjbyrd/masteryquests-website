@@ -57,7 +57,21 @@ function createTelemetryContract(get, registry) {
   function persist(run,s){try{localStorage['setItem'](key(run),JSON.stringify(s));}catch(_){s.quality.storageFailures++;}}
   function runKey(){return String(get('runID',''));}
   function slot(q=get('currentQuestion',{})){return [get('gameMode','standard'),get('room',0),q?.id??q?.questionId??''].join(':');}
-  // Freeze only authored multiple-choice content, never input, a key, or feedback.
+  // Read the same authored key used by gameplay, only after an accepted response.
+  function correctOptions(q,options,mapping){
+    if(Number.isInteger(q.a))return q.a>=0&&q.a<options.length?[mapping[q.a]]:null;
+    if(typeof q.aHash!=='string')return null;
+    const expected=q.aHash.trim().replace(/^sha256:/i,'');
+    const normalize=get('normalizePublishedAnswer',null)||get('normalizeAnswerText',null)||
+      (v=>String(v).normalize('NFKC').trim().replace(/\s+/g,' ').toLowerCase());
+    const matches=[];
+    options.forEach((text,i)=>{const digest=hash(normalize(text));
+      const base64=typeof btoa==='function'?btoa(digest.match(/../g).map(x=>String.fromCharCode(parseInt(x,16))).join('')):'';
+      if(digest===expected.toLowerCase()||(base64&&base64.replace(/=+$/,'')===expected.replace(/=+$/,'')))matches.push(mapping[i]);
+    });
+    return matches.length?matches.sort((a,b)=>a-b):null;
+  }
+  // Freeze only this answered question. Never serialize the question bank.
   // The revision separates edited questions even when their ID is reused.
   function answerSnapshot(q,row,b){
     try {
@@ -69,9 +83,14 @@ function createTelemetryContract(get, registry) {
       const canonical=Array.isArray(mapping)&&mapping.length===options.length&&new Set(mapping).size===options.length&&
         mapping.every(i=>Number.isInteger(i)&&i>=0&&i<options.length);
       const ordered=canonical?Array.from({length:options.length},(_,i)=>options[mapping.indexOf(i)]):options;
-      const content={questionID:String(q.id??q.questionId),questionVersion:String(q.version??1),prompt,
+      const gameID=String(get('FACULTY_COMPOSITION_CONFIG',{}).slug||row.game||'unknown').slice(0,160);
+      const content={gameID,questionID:String(q.id??q.questionId),questionVersion:String(q.version??1),prompt,
         options:ordered,optionOrder:canonical?'canonical':'displayed',assetRevision:b.assetRevision};
-      const snapshot={schema:'mq-answer-snapshot/1',...content,questionRevision:hash(content),
+      const objectiveID=String(row.objective||q.objective||'').slice(0,300);
+      const labels=get('objectiveLabels',{}),templateLabels=get('TEMPLATE_OBJECTIVE_LABELS',{});
+      const objectiveLabel=String(labels?.[objectiveID]||templateLabels?.[objectiveID]||'').slice(0,2000);
+      const snapshot={schema:'mq-answer-snapshot/2',...content,questionRevision:hash(content),objectiveID,objectiveLabel,
+        correctOptionIndices:row.event==='question'?correctOptions(q,options,canonical?mapping:options.map((_,i)=>i)):null,
         contentRevision:q.telemetryContentRevision||null,selectedIndex:canonical?mapping[selected]:selected,
         selectedAnswer:options[selected],priorExposureCount:Number.isInteger(row.priorExposureCount)&&row.priorExposureCount>=0?row.priorExposureCount:null};
       const json=stable(snapshot);
@@ -94,7 +113,8 @@ function createTelemetryContract(get, registry) {
     const manifest=s.segments[segmentKey] ||= {...b,mode,modeParameters:{quizTarget:number(get('quizQuestionTarget',null)),trialGraphTarget:number(get('trialGraphQuestionTarget',null)),timedLimitMs:number(get('timedModeDurationMs',null)),fadingTarget:number(get('fadingFortuneQuestionTarget',null)),riskTarget:number(get('riskRewardQuestionTarget',null))}};
     const manifestID=hash(manifest);
     if(!s.manifests[manifestID])s.manifests[manifestID]=manifest;
-    const response=['question','rapid_guessing','exam_answer_initial','exam_answer_revision'].includes(row.event),q=get('currentQuestion',{});
+    const response=['question','rapid_guessing','exam_answer_initial','exam_answer_revision'].includes(row.event);
+    const q=(data.adaptiveMode==='exam-commit'?get('getExamRoomState',null)?.(row.room,false)?.question:null)||get('currentQuestion',{});
     const k=[mode,row.room??get('room',0),row.questionID||q?.id||''].join(':');
     let view=s.slots[k];
     if(response&&!view){view={presentationID:null,attemptID:uuid()};s.slots[k]=view;}
@@ -118,7 +138,12 @@ function createTelemetryContract(get, registry) {
     if(response&&view){if(data.adaptiveMode==='exam-commit')row.supportJSON=view.supportJSON??null;else{row.supportJSON=stable(support);view.supportJSON=row.supportJSON;}}
     else row.supportJSON=null;
     if(response&&view){
-      if(data.adaptiveMode==='exam-commit')row.answerSnapshotJSON=view.answerSnapshotJSON??answerSnapshot(q,row,b);
+      if(data.adaptiveMode==='exam-commit'){
+        row.answerSnapshotJSON=view.answerSnapshotJSON??answerSnapshot(q,row,b);
+        try{const prior=JSON.parse(row.answerSnapshotJSON),committed=JSON.parse(answerSnapshot(q,row,b));
+          if(prior&&committed&&prior.questionRevision===committed.questionRevision){prior.correctOptionIndices=committed.correctOptionIndices;row.answerSnapshotJSON=stable(prior);}
+        }catch(_){}
+      }
       else {row.answerSnapshotJSON=answerSnapshot(q,row,b);view.answerSnapshotJSON=row.answerSnapshotJSON;}
     }else row.answerSnapshotJSON=null;
     row.resourceID=ids([data.resourceID])[0]??null;

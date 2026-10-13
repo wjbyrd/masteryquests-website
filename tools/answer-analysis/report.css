@@ -23,4 +23,8 @@
 button{cursor:pointer;border:1px solid #8aafbd;border-radius:8px;background:#fff;color:#062454}
 button:disabled{cursor:default;opacity:.55}
 #download-summary{background:#062454;color:#fff}
+#summary-text{width:100%;font:inherit;line-height:1.5;padding:1rem;resize:vertical}
+.integrity-note{color:#8b2515;font-weight:600}
+.table-wrap:focus-visible,button:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #009f9a;outline-offset:3px}
+.topic-results table{min-width:640px}
 @media(max-width:700px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.metric:last-child{grid-column:1/-1}.filters{gap:.4rem}main{padding:1.4rem 1rem}}

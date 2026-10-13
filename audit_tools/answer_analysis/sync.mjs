@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import {fn} from '../economic_realm_engine/source.mjs';
+function save(file,text){const old=fs.readFileSync(file,'utf8');if(old===text)return;if(process.argv.includes('--check'))throw Error('Stale answer telemetry: '+file);fs.writeFileSync(file,text);}
 const runtime=fs.readFileSync('audit_tools/telemetry_contract/runtime.js','utf8');
 const registry=JSON.parse(fs.readFileSync('audit_tools/telemetry_contract/registry.json','utf8'));
 const block='  // BEGIN MEASUREMENT CONTRACT\n'+runtime+'\n  const MQContract=createTelemetryContract((name,fallback)=>{try{return eval(name);}catch(_){return fallback;}}, /* RELEASE REGISTRY */ '+JSON.stringify(registry)+');\n  // END MEASUREMENT CONTRACT';
@@ -25,7 +26,12 @@ displayQuestion=function(...args){const result=displayQuestionBeforeAnswerTeleme
 MQContract.build();
 `+source.slice(end);
 }
-fs.writeFileSync(file,source);
+save(file,source);
+// Keep the distributed manual templates on the same measurement implementation.
+for(const target of ['downloads/resources/mastery-quests-faculty-template.html','downloads/resources/mastery-quests-faculty-starter.html']){
+  const text=fs.readFileSync(target,'utf8');
+  save(target,text.replace(/  \/\/ BEGIN MEASUREMENT CONTRACT[\s\S]*?  \/\/ END MEASUREMENT CONTRACT/,block));
+}
 // Public Managerial adapters use a separate registry to retain explicit release identity.
-fs.writeFileSync('audit_tools/telemetry_contract/public-release-registry.json',JSON.stringify(registry,null,2)+'\n');
+save('audit_tools/telemetry_contract/public-release-registry.json',JSON.stringify(registry,null,2)+'\n');
 console.log('PASS: Micro measurement hooks and public answer-data release registry.');

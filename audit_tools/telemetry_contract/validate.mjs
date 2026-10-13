@@ -33,7 +33,7 @@ export function validateCSV(text){
   }else{
    if(id){if(eventIds.has(id))issue('DUPLICATE_EVENT_ID',row,id);eventIds.add(id);}else limitations.push('Some rows have no event identity.');
    if(contract&&!manifest)issue('MANIFEST_MISSING_REFERENCE',row,'Current row lacks manifestID');
-   if(contract&&!anonymous&&!['mq-tracker-2026.09.10-contract1','mq-tracker-2026.10.13-answers1'].includes(r.telemetryVersion))issue('STALE_VERSION',row,r.telemetryVersion);
+   if(contract&&!anonymous&&!['mq-tracker-2026.09.10-contract1','mq-tracker-2026.10.13-answers1','mq-tracker-2026.10.13-answers2'].includes(r.telemetryVersion))issue('STALE_VERSION',row,r.telemetryVersion);
    const seq=anonymous?r.sequence_number:r.localSequence;
    if(seq){const stream=run+':'+(anonymous?'remote':'local');const list=sequences.get(stream)||[];list.push(Number(seq));sequences.set(stream,list);}
    const completed=event==='run_completed'||/(?:^|_)(?:complete|ended_by_student|bust)$/.test(event)||event==='timed_ended_early';
