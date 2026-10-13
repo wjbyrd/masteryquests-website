@@ -20,6 +20,16 @@ for(const slug of ['cost-directive','market-signal','strategy-desk','agency-prot
  games[slug]={engineRevision:sha(strip(read(dir+'/index.html'))+read('play/managerial-intelligence-directorate/managerial-parity.js')),pocEngineRevision:sha(read('play/managerial-directorate-telemetry-poc/'+slug+'/index.html')+read('play/managerial-intelligence-directorate/managerial-parity.js')),classroomEngineRevision:sha(read('play/managerial-directorate-classroom/'+slug+'/index.html')+read('play/managerial-intelligence-directorate/managerial-parity.js')),assetRevision:assetHash(dir)};
 }
 games.composer={engineRevision:sha(strip(read(template))),assetRevision:assetHash('build/faculty-build-composer/data/question-assets')};
+for(const family of ['economic-realm','macro-command-system','micro-domains']){
+ for(const entry of fs.readdirSync(path.join(root,'play',family),{withFileTypes:true})){
+  const dir='play/'+family+'/'+entry.name;
+  if(entry.isDirectory()&&fs.existsSync(path.join(root,dir,'index.html'))&&read(dir+'/index.html').includes('function sendGameData('))
+   games[entry.name]={engineRevision:sha(strip(read(dir+'/index.html'))),assetRevision:assetHash(dir)};
+ }
+}
+
+// The original Micro save/config slug predates its published directory name.
+games['labyrinth-choice']=games['labyrinth-of-choice'];
 const registry={...release,trackerSourceRevision:sha(runtime+strip(read(client))+read('audit_tools/managerial_classroom/build.mjs')+read('audit_tools/published_managerial_parity/sync.mjs')),games};
 for(const p of [template,client]){
  const getter=p===template?'(name,fallback)=>{try{return eval(name);}catch(_){return fallback;}}':'globalValue';

@@ -33,7 +33,7 @@ export function validateCSV(text){
   }else{
    if(id){if(eventIds.has(id))issue('DUPLICATE_EVENT_ID',row,id);eventIds.add(id);}else limitations.push('Some rows have no event identity.');
    if(contract&&!manifest)issue('MANIFEST_MISSING_REFERENCE',row,'Current row lacks manifestID');
-   if(contract&&!anonymous&&r.telemetryVersion!=='mq-tracker-2026.09.10-contract1')issue('STALE_VERSION',row,r.telemetryVersion);
+   if(contract&&!anonymous&&!['mq-tracker-2026.09.10-contract1','mq-tracker-2026.10.13-answers1'].includes(r.telemetryVersion))issue('STALE_VERSION',row,r.telemetryVersion);
    const seq=anonymous?r.sequence_number:r.localSequence;
    if(seq){const stream=run+':'+(anonymous?'remote':'local');const list=sequences.get(stream)||[];list.push(Number(seq));sequences.set(stream,list);}
    const completed=event==='run_completed'||/(?:^|_)(?:complete|ended_by_student|bust)$/.test(event)||event==='timed_ended_early';
@@ -46,7 +46,7 @@ export function validateCSV(text){
   const response=anonymous?['answer_evaluated','answer_submitted','exam_answer_initial','exam_answer_revision','question_interrupted'].includes(event):['question','rapid_guessing','exam_answer_initial','exam_answer_revision'].includes(event);
   const elapsed=r.responseTimeMs||r.response_time_ms;
   if(response&&contract){
-   for(const key of ['responseTimeMs','activeResponseTimeMs','hiddenTimeMs'])if(r[key]===''||r[key]===undefined)issue('MISSING_MEASUREMENT',row,key);
+   for(const key of ['responseTimeMs','activeResponseTimeMs','hiddenTimeMs'])if(columns.includes(key)){if(r[key]===''||r[key]===undefined)issue('MISSING_MEASUREMENT',row,key);}else limitations.push(key+' is unavailable in this export schema.');
    for(const [countKey,valueKeys] of [['tabSwitchCount',['timeAfterReturnMs','timeCopyToHideMs']],['focusLossCount',['timeAfterFocusMs','timeCopyToBlurMs']],['copyCount',['lastCopyElapsedMs','timeCopyToHideMs','timeCopyToBlurMs']]])if(Number(r[countKey])===0)for(const key of valueKeys)if(r[key]!==undefined&&r[key]!=='')issue('CONDITIONAL_FIELD',row,key+' without '+countKey);
   }
   if(response&&elapsed!==''){
@@ -56,7 +56,7 @@ export function validateCSV(text){
    for(const key of ['unfocusedTimeMs','timeAfterReturnMs','timeAfterFocusMs','lastCopyElapsedMs','timeCopyToHideMs','timeCopyToBlurMs'])if(r[key]!==undefined&&r[key]!==''&&(Number(r[key])<0||Number(r[key])>total))issue('IMPOSSIBLE_TIMING',row,key);
   }
   if(r.deliveryQuality)try{const q=JSON.parse(r.deliveryQuality);for(const [k,v] of Object.entries(q))if(['overflow','permanentlyRejected','storageFailures','knownMissingPrefix','cancelled','remoteOverflow','remoteCancelled','remotePermanentlyRejected','remoteStorageFailures'].includes(k)&&v>0)issue('OBSERVED_DELIVERY_LIMIT',row,k+': '+v);}catch(e){issue('QUALITY_INVALID',row,e.message);}
-  if(contract)for(const key of ['supportJSON','resourceID','originAttemptID'])if(r[key])try{validateContractField(key,r[key],{});}catch(e){issue('FORBIDDEN_OR_INVALID_METADATA',row,e.message);}
+  if(contract)for(const key of ['supportJSON','resourceID','originAttemptID','answerSnapshotJSON'])if(r[key])try{validateContractField(key,r[key],{});}catch(e){issue('FORBIDDEN_OR_INVALID_METADATA',row,e.message);}
  }
  for(const [i,r] of records.entries()){if(r.contractID&&r.manifestID&&!manifests.has(r.manifestID))issue('MANIFEST_UNRESOLVED',i+2,r.manifestID);if(r.contractID&&r.presentationID&&!(anonymous?['export_manifest','run_manifest']:['export_manifest']).includes(r.event_type||r.event)&&!presentations.has((anonymous?r.run_id:r.runID)+':'+r.presentationID))limitations.push('A referenced presentation is not in this export (possibly truncated or resumed).');}
  for(const [stream,list] of sequences){list.sort((a,b)=>a-b);for(let i=1;i<list.length;i++)if(list[i]!==list[i-1]+1)issue(list[i]===list[i-1]?'DUPLICATE_SEQUENCE':'SEQUENCE_GAP',0,stream+': '+list[i-1]+' -> '+list[i]);if(list[0]>1)limitations.push(stream+': export begins after sequence 1.');}

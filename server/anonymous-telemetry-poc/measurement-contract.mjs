@@ -1,5 +1,5 @@
 import {contractHash,stableContractJSON} from '../../audit_tools/telemetry_contract/hash.mjs';
-export const CONTRACT_FIELDS=['contractID','manifestID','provenanceStatus','presentationID','attemptID','canonicalSelectedIndex','localSequence','manifestJSON','deliveryQuality','supportJSON','originAttemptID','resourceID'];
+export const CONTRACT_FIELDS=['contractID','manifestID','provenanceStatus','presentationID','attemptID','canonicalSelectedIndex','localSequence','manifestJSON','deliveryQuality','supportJSON','originAttemptID','resourceID','answerSnapshotJSON'];
 const fail=m=>{throw new Error('Measurement contract: '+m);};
 const check=(v,m)=>{if(!v)fail(m);};
 const keys=(v,list)=>check(v&&typeof v==='object'&&!Array.isArray(v)&&Object.keys(v).every(k=>list.includes(k)),'unknown object field');
@@ -10,7 +10,7 @@ const ids=v=>check(Array.isArray(v)&&v.length<=1000&&v.every(id),'invalid ID lis
 export function validateManifest(m,expected){
  keys(m,['buildRevision','manifestSchema','contractID','measurementRevision','engineRevision','trackerSourceRevision','assetRevision','contentRevision','configuration','configurationRevision','mode','modeParameters']);
  check(m.manifestSchema==='mq-run-manifest/1'&&m.contractID==='mq-measurement/1','unknown manifest version');
- check(m.measurementRevision==='mq-tracker-2026.09.10-contract1','unknown tracker version');
+ check(['mq-tracker-2026.09.10-contract1','mq-tracker-2026.10.13-answers1'].includes(m.measurementRevision),'unknown tracker version');
  for(const k of ['buildRevision','engineRevision','trackerSourceRevision','assetRevision','contentRevision','configurationRevision'])check(digest(m[k]),'invalid '+k);
  check(['standard','timed','exam','quiz','unlimited','legendary','score','trialGraph','fadingFortune','riskReward'].includes(m.mode),'invalid mode');
  const c=m.configuration;
@@ -38,6 +38,19 @@ export function validateContractField(key,value,event){
  if(['presentationID','attemptID','originAttemptID','resourceID'].includes(key)){check(id(value),'invalid '+key);return value;}
  if(['canonicalSelectedIndex','localSequence'].includes(key)){check(count(value),'invalid '+key);return value;}
  check(typeof value==='string'&&value.length<=60000,'invalid JSON field');const parsed=JSON.parse(value);
+ if(key==='answerSnapshotJSON'){
+  keys(parsed,['schema','questionID','questionVersion','prompt','options','optionOrder','assetRevision','questionRevision','contentRevision','selectedIndex','selectedAnswer','priorExposureCount']);
+  check(parsed.schema==='mq-answer-snapshot/1'&&id(parsed.questionID),'invalid answer snapshot identity');
+  check(typeof parsed.questionVersion==='string'&&parsed.questionVersion.length<=160,'invalid question version');
+  check(typeof parsed.prompt==='string'&&parsed.prompt.length<=12000,'invalid question prompt');
+  check(Array.isArray(parsed.options)&&parsed.options.length>=2&&parsed.options.length<=20&&parsed.options.every(x=>typeof x==='string'&&x.length<=4000),'invalid answer options');
+  check(['canonical','displayed'].includes(parsed.optionOrder),'invalid option order');
+  check(digest(parsed.assetRevision)&&digest(parsed.questionRevision)&&(parsed.contentRevision===null||digest(parsed.contentRevision)),'invalid answer revision');
+  check(Number.isInteger(parsed.selectedIndex)&&parsed.selectedIndex>=0&&parsed.selectedIndex<parsed.options.length&&parsed.selectedAnswer===parsed.options[parsed.selectedIndex],'invalid selected answer');
+  check(parsed.priorExposureCount===null||count(parsed.priorExposureCount),'invalid exposure count');
+  const {schema,questionRevision,contentRevision,selectedIndex,selectedAnswer,priorExposureCount,...content}=parsed;
+  check(contractHash(content)===questionRevision,'answer revision mismatch');
+ }
  if(key==='manifestJSON'){check(event.eventType==='run_manifest','manifest on non-manifest event');validateManifest(parsed,event.manifestID);}
  if(key==='deliveryQuality'){keys(parsed,['overflow','permanentlyRejected','cancelled','storageFailures','localLastSequence','localRetainedRows','knownMissingPrefix','remoteOverflow','remoteCancelled','remotePermanentlyRejected','remoteStorageFailures','remotePending']);Object.values(parsed).forEach(v=>check(count(v),'invalid quality count'));}
  if(key==='supportJSON'){keys(parsed,['hintDisplayed','artifactApplied','artifactRemovedCanonical','modeRemovedCanonical','remainingOptionCount']);check(typeof parsed.hintDisplayed==='boolean'&&typeof parsed.artifactApplied==='boolean','invalid support flag');for(const k of ['artifactRemovedCanonical','modeRemovedCanonical'])check(Array.isArray(parsed[k])&&parsed[k].length<=100&&parsed[k].every(v=>v===null||count(v)),'invalid option list');check(parsed.remainingOptionCount===null||count(parsed.remainingOptionCount),'invalid remaining options');}

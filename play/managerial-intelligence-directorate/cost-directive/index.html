@@ -10826,13 +10826,15 @@ function sendGameData(data = {}){
         }
 
         const records = readLocalTelemetry(activeRunID);
-        const questionID = Number(data.questionId ?? data.question ?? 0);
+        const questionID = data.questionId ?? data.question ?? 0;
+        const questionKey = String(questionID);
+        const hasQuestionID = questionKey !== "" && questionKey !== "0";
         const normalizedMode = String(data.mode || gameMode || "standard").replace(/-complete$/, "");
         const eventName = data.event || "";
         const isResponseEvent = eventName === "question" || eventName === "rapid_guessing";
         const isCompletionEvent = /(?:^|_)complete$/.test(eventName) || eventName === "complete";
-        const priorExposureCount = questionID > 0
-            ? records.filter(item => Number(item.questionID) === questionID && (item.event === "question" || item.event === "rapid_guessing")).length
+        const priorExposureCount = hasQuestionID
+            ? records.filter(item => String(item.questionID ?? "") === questionKey && (item.event === "question" || item.event === "rapid_guessing")).length
             : 0;
 
         const record = {
@@ -10861,7 +10863,7 @@ function sendGameData(data = {}){
             adaptiveMode: data.adaptiveMode || adaptiveMode || "",
             remediationStage: data.remediationStage || (remediationState?.active ? remediationState.stage || "" : ""),
             priorExposureCount,
-            firstExposure: questionID > 0 && priorExposureCount === 0 ? 1 : 0,
+            firstExposure: hasQuestionID && priorExposureCount === 0 ? 1 : 0,
             score: Number(data.score ?? (normalizedMode === "fadingFortune" ? data.fadingFortuneScore ?? fadingFortuneScore : scoreAttackScore) ?? 0),
             bestScore: Number(data.bestScore ?? scoreAttackBestScore ?? 0),
             totalTimeMs: Number(data.totalTime ?? data.totalTimeMs ?? 0),

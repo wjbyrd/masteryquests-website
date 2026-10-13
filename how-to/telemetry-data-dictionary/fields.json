@@ -1,6 +1,6 @@
 {
   "scope": "Current Managerial local exports; stream-specific contract additions also used by Composer and anonymous exports",
-  "reviewed": "2026-09-10",
+  "reviewed": "2026-10-13",
   "fields": [
     {
       "name": "runID",
@@ -545,11 +545,11 @@
     {
       "name": "accuracy",
       "category": "Run completion",
-      "type": "fraction 0–1",
+      "type": "fraction 0\u20131",
       "units": "not applicable",
       "events": "Run summary events: complete, mode completions, early endings or busts where supplied",
       "definition": "Run accuracy supplied as a proportion.",
-      "possibleValues": "0–1",
+      "possibleValues": "0\u20131",
       "blankMeaning": "Unavailable in older data or not supplied; see event and mode.",
       "zeroMeaning": "May be an unused default outside the stated events/mode; within those events, zero is the recorded value.",
       "notes": "0.8 means 80%; format as a percentage in a spreadsheet. Non-summary rows default to 0; this is not objective-level mastery.",
@@ -755,7 +755,7 @@
     {
       "name": "riskRewardWagerPercent",
       "category": "Risk & Reward",
-      "type": "percentage 0–100",
+      "type": "percentage 0\u2013100",
       "units": "not applicable",
       "events": "Risk & Reward response rows; run-level fields only on Risk & Reward summaries",
       "definition": "Rounded percentage of bankroll chosen for the wager.",
@@ -1306,6 +1306,21 @@
       "caution": "Interaction evidence is not proof of attention or intent. ",
       "facultyNormallyNeeds": false,
       "technical": true
+    },
+    {
+      "name": "answerSnapshotJSON",
+      "category": "Answer choices",
+      "type": "JSON text",
+      "units": "not applicable",
+      "events": "Accepted answers, rapid guesses, and exam drafts/revisions; blank for lifecycle events",
+      "definition": "The question and choices shown for this answer, the selected choice, and a revision that distinguishes edited questions.",
+      "possibleValues": "mq-answer-snapshot/1 with questionID, questionVersion, prompt, options, optionOrder, selectedIndex, selectedAnswer, questionRevision, contentRevision, assetRevision and priorExposureCount",
+      "blankMeaning": "Older record, unavailable question content or selection, or content too large to record.",
+      "zeroMeaning": "A selectedIndex of zero means the first option in the snapshot.",
+      "notes": "Options use their original order when a reliable shuffle mapping is available; otherwise optionOrder is displayed. Question revisions preserve the wording of earlier runs.",
+      "caution": "These are authored answer choices. They do not include typed responses, clipboard contents, or the correct-answer key. Count accepted answers separately from drafts and rapid guesses.",
+      "facultyNormallyNeeds": true,
+      "technical": false
     }
   ]
 }

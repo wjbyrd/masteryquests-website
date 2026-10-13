@@ -18,7 +18,7 @@ function createTelemetryContract(get, registry) {
       let [a,b,c,d,e,f,g,z]=h;for(let i=0;i<64;i++){const t1=(z+(r(e,6)^r(e,11)^r(e,25))+((e&f)^(~e&g))+k[i]+w[i])|0,t2=((r(a,2)^r(a,13)^r(a,22))+((a&b)^(a&c)^(b&c)))|0;z=g;g=f;f=e;e=(d+t1)|0;d=c;c=b;b=a;a=(t1+t2)|0;}[a,b,c,d,e,f,g,z].forEach((v,i)=>h[i]=(h[i]+v)|0);
     } return h.map(v=>(v>>>0).toString(16).padStart(8,'0')).join('');
   }
-  const fields=['contractID','manifestID','provenanceStatus','presentationID','attemptID','canonicalSelectedIndex','localSequence','manifestJSON','deliveryQuality','supportJSON','originAttemptID','resourceID'];
+  const fields=['contractID','manifestID','provenanceStatus','presentationID','attemptID','canonicalSelectedIndex','localSequence','manifestJSON','deliveryQuality','supportJSON','originAttemptID','resourceID','answerSnapshotJSON'];
   const memory=new Map(); let cachedBuild=null;
   const uuid=()=>get('createTelemetryEventID',null)?.() || globalThis.crypto.randomUUID();
   const ids=v=>Array.isArray(v)?v.filter(x=>typeof x==='string'&&/^[A-Za-z0-9_-]{1,100}$/.test(x)).sort():[];
@@ -57,11 +57,32 @@ function createTelemetryContract(get, registry) {
   function persist(run,s){try{localStorage['setItem'](key(run),JSON.stringify(s));}catch(_){s.quality.storageFailures++;}}
   function runKey(){return String(get('runID',''));}
   function slot(q=get('currentQuestion',{})){return [get('gameMode','standard'),get('room',0),q?.id??q?.questionId??''].join(':');}
+  // Freeze only authored multiple-choice content, never input, a key, or feedback.
+  // The revision separates edited questions even when their ID is reused.
+  function answerSnapshot(q,row,b){
+    try {
+      if(!q || String(q.id??q.questionId??'')!==String(row.questionID??'') || !Array.isArray(q.options))return null;
+      const prompt=q.q??q.question,options=q.options.slice(),selected=row.selectedIndex;
+      if(typeof prompt!=='string'||prompt.length>12000||options.length<2||options.length>20||
+        options.some(x=>typeof x!=='string'||x.length>4000)||!Number.isInteger(selected)||selected<0||selected>=options.length)return null;
+      const mapping=q.telemetryOptionIndices;
+      const canonical=Array.isArray(mapping)&&mapping.length===options.length&&new Set(mapping).size===options.length&&
+        mapping.every(i=>Number.isInteger(i)&&i>=0&&i<options.length);
+      const ordered=canonical?Array.from({length:options.length},(_,i)=>options[mapping.indexOf(i)]):options;
+      const content={questionID:String(q.id??q.questionId),questionVersion:String(q.version??1),prompt,
+        options:ordered,optionOrder:canonical?'canonical':'displayed',assetRevision:b.assetRevision};
+      const snapshot={schema:'mq-answer-snapshot/1',...content,questionRevision:hash(content),
+        contentRevision:q.telemetryContentRevision||null,selectedIndex:canonical?mapping[selected]:selected,
+        selectedAnswer:options[selected],priorExposureCount:Number.isInteger(row.priorExposureCount)&&row.priorExposureCount>=0?row.priorExposureCount:null};
+      const json=stable(snapshot);
+      return unescape(encodeURIComponent(JSON.stringify({answerSnapshotJSON:json}))).length<=56000?json:null;
+    }catch(_){return null;}
+  }
   function show(){
     const run=runKey(),q=get('currentQuestion',null);if(!run||!q)return;
     const s=state(run),k=slot(q),prior=s.slots[k];
     if(get('gameMode','')!=='exam')s.slots={};
-    s.slots[k]={presentationID:uuid(),attemptID:get('gameMode','')==='exam'&&prior?prior.attemptID:uuid()};persist(run,s);
+    s.slots[k]={...(get('gameMode','')==='exam'&&prior?prior:{}),presentationID:uuid(),attemptID:get('gameMode','')==='exam'&&prior?prior.attemptID:uuid()};persist(run,s);
     get('sendGameData',null)?.({event:'question_presented',runID:run,questionId:q.id,room:get('room',0)});
   }
   function stamp(row,data={}){
@@ -96,6 +117,10 @@ function createTelemetryContract(get, registry) {
       remainingOptionCount:Array.isArray(q?.options)?q.options.length-(relevantAssistance?.removedIndexes?.length||0)-(mode==='fadingFortune'&&faded?faded.size:0):null};
     if(response&&view){if(data.adaptiveMode==='exam-commit')row.supportJSON=view.supportJSON??null;else{row.supportJSON=stable(support);view.supportJSON=row.supportJSON;}}
     else row.supportJSON=null;
+    if(response&&view){
+      if(data.adaptiveMode==='exam-commit')row.answerSnapshotJSON=view.answerSnapshotJSON??answerSnapshot(q,row,b);
+      else {row.answerSnapshotJSON=answerSnapshot(q,row,b);view.answerSnapshotJSON=row.answerSnapshotJSON;}
+    }else row.answerSnapshotJSON=null;
     row.resourceID=ids([data.resourceID])[0]??null;
     row.manifestJSON=null;row.deliveryQuality=null;persist(run,s);return row;
   }

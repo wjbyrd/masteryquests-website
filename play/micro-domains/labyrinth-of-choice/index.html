@@ -5670,6 +5670,8 @@ function shuffleOptions(question){
         secondarySkills: [...(question.secondarySkills || [])]
     };
 
+    q.telemetryOptionIndices=Array.isArray(question.telemetryOptionIndices)?[...question.telemetryOptionIndices]:q.options.map((_,i)=>i);
+    q.telemetryContentRevision=question.telemetryContentRevision||MQContract.build().contentRevision;
     // Faculty source questions use a numeric answer index.
     // Published student questions use aHash tied to normalized option text.
     const correctText = Number.isInteger(question.a)
@@ -5679,6 +5681,7 @@ function shuffleOptions(question){
     for(let i = q.options.length - 1; i > 0; i--){
         const j = Math.floor(Math.random() * (i + 1));
         [q.options[i], q.options[j]] = [q.options[j], q.options[i]];
+        [q.telemetryOptionIndices[i],q.telemetryOptionIndices[j]]=[q.telemetryOptionIndices[j],q.telemetryOptionIndices[i]];
     }
 
     if(correctText !== null){
@@ -8476,6 +8479,161 @@ Verified by The Archivist`;
 const TELEMETRY_PREFIX = "labyrinthChoiceTelemetry_";
 const TELEMETRY_VERSION = "LabyrinthOfChoice-local-telemetry-v4-hashed-bank";
 const GAME_VERSION = "Labyrinth-of-Choice-2026.08.24-phase1.5";
+  // BEGIN MEASUREMENT CONTRACT
+/* Maintained measurement metadata only. No clocks, scoring, network or learner identity. */
+function createTelemetryContract(get, registry) {
+  function stable(value) {
+    if (Array.isArray(value)) return '[' + value.map(stable).join(',') + ']';
+    if (value && typeof value === 'object') return '{' + Object.keys(value).sort().map(k => JSON.stringify(k)+':'+stable(value[k])).join(',') + '}';
+    return JSON.stringify(value === undefined ? null : value);
+  }
+  // SHA-256 over UTF-8; artifact/configuration fingerprints, never browser fingerprints.
+  function hash(value) {
+    const bytes = unescape(encodeURIComponent(typeof value==='string'?value:stable(value))).split('').map(c=>c.charCodeAt(0));
+    const length=bytes.length*8; bytes.push(128); while(bytes.length%64!==56)bytes.push(0);
+    for(let i=7;i>=0;i--)bytes.push(i>=4?0:(length>>> (i*8))&255);
+    const h=[0x6a09e667,0xbb67ae85,0x3c6ef372,0xa54ff53a,0x510e527f,0x9b05688c,0x1f83d9ab,0x5be0cd19];
+    const k=[0x428a2f98,0x71374491,0xb5c0fbcf,0xe9b5dba5,0x3956c25b,0x59f111f1,0x923f82a4,0xab1c5ed5,0xd807aa98,0x12835b01,0x243185be,0x550c7dc3,0x72be5d74,0x80deb1fe,0x9bdc06a7,0xc19bf174,0xe49b69c1,0xefbe4786,0x0fc19dc6,0x240ca1cc,0x2de92c6f,0x4a7484aa,0x5cb0a9dc,0x76f988da,0x983e5152,0xa831c66d,0xb00327c8,0xbf597fc7,0xc6e00bf3,0xd5a79147,0x06ca6351,0x14292967,0x27b70a85,0x2e1b2138,0x4d2c6dfc,0x53380d13,0x650a7354,0x766a0abb,0x81c2c92e,0x92722c85,0xa2bfe8a1,0xa81a664b,0xc24b8b70,0xc76c51a3,0xd192e819,0xd6990624,0xf40e3585,0x106aa070,0x19a4c116,0x1e376c08,0x2748774c,0x34b0bcb5,0x391c0cb3,0x4ed8aa4a,0x5b9cca4f,0x682e6ff3,0x748f82ee,0x78a5636f,0x84c87814,0x8cc70208,0x90befffa,0xa4506ceb,0xbef9a3f7,0xc67178f2];
+    const r=(v,n)=>(v>>>n)|(v<<(32-n));
+    for(let off=0;off<bytes.length;off+=64){const w=[];for(let i=0;i<16;i++)w[i]=(bytes[off+i*4]<<24)|(bytes[off+i*4+1]<<16)|(bytes[off+i*4+2]<<8)|bytes[off+i*4+3];
+      for(let i=16;i<64;i++){const a=w[i-15],b=w[i-2];w[i]=(w[i-16]+(r(a,7)^r(a,18)^(a>>>3))+w[i-7]+(r(b,17)^r(b,19)^(b>>>10)))|0;}
+      let [a,b,c,d,e,f,g,z]=h;for(let i=0;i<64;i++){const t1=(z+(r(e,6)^r(e,11)^r(e,25))+((e&f)^(~e&g))+k[i]+w[i])|0,t2=((r(a,2)^r(a,13)^r(a,22))+((a&b)^(a&c)^(b&c)))|0;z=g;g=f;f=e;e=(d+t1)|0;d=c;c=b;b=a;a=(t1+t2)|0;}[a,b,c,d,e,f,g,z].forEach((v,i)=>h[i]=(h[i]+v)|0);
+    } return h.map(v=>(v>>>0).toString(16).padStart(8,'0')).join('');
+  }
+  const fields=['contractID','manifestID','provenanceStatus','presentationID','attemptID','canonicalSelectedIndex','localSequence','manifestJSON','deliveryQuality','supportJSON','originAttemptID','resourceID','answerSnapshotJSON'];
+  const memory=new Map(); let cachedBuild=null;
+  const uuid=()=>get('createTelemetryEventID',null)?.() || globalThis.crypto.randomUUID();
+  const ids=v=>Array.isArray(v)?v.filter(x=>typeof x==='string'&&/^[A-Za-z0-9_-]{1,100}$/.test(x)).sort():[];
+  const number=v=>Number.isFinite(v)?v:null;
+  function config(){
+    const c=get('FACULTY_COMPOSITION_CONFIG',{}),scopes={};
+    for(const id of ids(Object.keys(c.contentScopes||{}))){const s=c.contentScopes[id];scopes[id]={preset:['standard','brief','full','custom'].includes(s?.preset)?s.preset:null,outcomeIds:ids(s?.outcomeIds)};}
+    return {recipeSchema:c.composerVersion?String(c.schemaVersion):null,selectedConceptIds:ids(c.selectedConceptIds),contentScopes:scopes,
+      policyFingerprint:/^[a-f0-9]{64}$/.test(c.facultyOutcomePolicySha256||'')?c.facultyOutcomePolicySha256:null,
+      samplingStrategies:Object.fromEntries(['quiz','trialGraph','fadingFortune','riskReward'].map(k=>[k,['balanced','adaptive'].includes(c.limitedRunSampling?.[k]?.strategy)?c.limitedRunSampling[k].strategy:null])),
+      supportedModes:ids(c.supportedModes),dailyChallengesEnabled:typeof c.dailyChallengesEnabled==='boolean'?c.dailyChallengesEnabled:null,
+      checkpoints:Object.fromEntries(['checkpointOne','checkpointTwo','finalCheckpoint'].map(k=>[k,ids(c.checkpointFocus?.[k])])),
+      fadingIntervals:Object.fromEntries(['easy','medium','hard','elite','legendary'].map(k=>[k,number(c.fadingFortune?.intervals?.[k])])),
+      startingBankroll:number(get('RISK_REWARD_STARTING_BANKROLL',null)),wagerRatios:(c.riskReward?.wagerOptions||[]).map(x=>number(x.ratio))};
+  }
+  function build(){
+    if(cachedBuild)return cachedBuild;
+    const c=config(),configSource=get('FACULTY_COMPOSITION_CONFIG',{}),game=String(configSource.slug||'').replace(/([a-z])([A-Z])/g,'$1-$2').toLowerCase();
+    const source=configSource.composerVersion?registry.games.composer:(registry.games[game]||registry.games.composer);
+    const script=typeof document!=='undefined'?document.currentScript?.src||'':'';
+    const engineRevision=script.includes('/managerial-directorate-classroom/')?source.classroomEngineRevision:script.includes('/managerial-directorate-telemetry-poc/')?source.pocEngineRevision:source.engineRevision;
+    // Hash available pools once per document, before any question is shuffled.
+    const pools=Object.fromEntries(['questionBanks','challengeQuestionBanks','repairQuestions','bridgeQuestions','microSkillRepairPools','microSkillBridgePools','skillRepairSeedPools'].map(k=>[k,get(k,null)]));
+    cachedBuild={manifestSchema:'mq-run-manifest/1',contractID:registry.contractID,measurementRevision:registry.measurementRevision,
+      engineRevision,trackerSourceRevision:registry.trackerSourceRevision,assetRevision:source.assetRevision,contentRevision:hash(pools),configuration:c,configurationRevision:hash(c)};
+    cachedBuild.buildRevision=hash(cachedBuild);
+    return cachedBuild;
+  }
+  function key(run){return String(get('TELEMETRY_PREFIX','mq-local:'))+'contract:'+run;}
+  function state(run){
+    if(memory.has(run))return memory.get(run);
+    let s;try{s=JSON.parse(localStorage.getItem(key(run))||'null');}catch(_){}
+    if(!s||s.version!==1)s={version:1,sequence:0,manifests:{},slots:{},quality:{storageFailures:0}};
+    memory.set(run,s);return s;
+  }
+  function persist(run,s){try{localStorage['setItem'](key(run),JSON.stringify(s));}catch(_){s.quality.storageFailures++;}}
+  function runKey(){return String(get('runID',''));}
+  function slot(q=get('currentQuestion',{})){return [get('gameMode','standard'),get('room',0),q?.id??q?.questionId??''].join(':');}
+  // Freeze only authored multiple-choice content, never input, a key, or feedback.
+  // The revision separates edited questions even when their ID is reused.
+  function answerSnapshot(q,row,b){
+    try {
+      if(!q || String(q.id??q.questionId??'')!==String(row.questionID??'') || !Array.isArray(q.options))return null;
+      const prompt=q.q??q.question,options=q.options.slice(),selected=row.selectedIndex;
+      if(typeof prompt!=='string'||prompt.length>12000||options.length<2||options.length>20||
+        options.some(x=>typeof x!=='string'||x.length>4000)||!Number.isInteger(selected)||selected<0||selected>=options.length)return null;
+      const mapping=q.telemetryOptionIndices;
+      const canonical=Array.isArray(mapping)&&mapping.length===options.length&&new Set(mapping).size===options.length&&
+        mapping.every(i=>Number.isInteger(i)&&i>=0&&i<options.length);
+      const ordered=canonical?Array.from({length:options.length},(_,i)=>options[mapping.indexOf(i)]):options;
+      const content={questionID:String(q.id??q.questionId),questionVersion:String(q.version??1),prompt,
+        options:ordered,optionOrder:canonical?'canonical':'displayed',assetRevision:b.assetRevision};
+      const snapshot={schema:'mq-answer-snapshot/1',...content,questionRevision:hash(content),
+        contentRevision:q.telemetryContentRevision||null,selectedIndex:canonical?mapping[selected]:selected,
+        selectedAnswer:options[selected],priorExposureCount:Number.isInteger(row.priorExposureCount)&&row.priorExposureCount>=0?row.priorExposureCount:null};
+      const json=stable(snapshot);
+      return unescape(encodeURIComponent(JSON.stringify({answerSnapshotJSON:json}))).length<=56000?json:null;
+    }catch(_){return null;}
+  }
+  function show(){
+    const run=runKey(),q=get('currentQuestion',null);if(!run||!q)return;
+    const s=state(run),k=slot(q),prior=s.slots[k];
+    if(get('gameMode','')!=='exam')s.slots={};
+    s.slots[k]={...(get('gameMode','')==='exam'&&prior?prior:{}),presentationID:uuid(),attemptID:get('gameMode','')==='exam'&&prior?prior.attemptID:uuid()};persist(run,s);
+    get('sendGameData',null)?.({event:'question_presented',runID:run,questionId:q.id,room:get('room',0)});
+  }
+  function stamp(row,data={}){
+    const run=String(row.runID||runKey());if(!run)return row;
+    const s=state(run),b=build();
+    const mode=String(row.mode||get('gameMode','standard'));
+    const segmentKey=hash(b)+':'+mode;
+    s.segments ||= {};
+    const manifest=s.segments[segmentKey] ||= {...b,mode,modeParameters:{quizTarget:number(get('quizQuestionTarget',null)),trialGraphTarget:number(get('trialGraphQuestionTarget',null)),timedLimitMs:number(get('timedModeDurationMs',null)),fadingTarget:number(get('fadingFortuneQuestionTarget',null)),riskTarget:number(get('riskRewardQuestionTarget',null))}};
+    const manifestID=hash(manifest);
+    if(!s.manifests[manifestID])s.manifests[manifestID]=manifest;
+    const response=['question','rapid_guessing','exam_answer_initial','exam_answer_revision'].includes(row.event),q=get('currentQuestion',{});
+    const k=[mode,row.room??get('room',0),row.questionID||q?.id||''].join(':');
+    let view=s.slots[k];
+    if(response&&!view){view={presentationID:null,attemptID:uuid()};s.slots[k]=view;}
+    row.contractID=registry.contractID;row.telemetryVersion=registry.measurementRevision;row.manifestID=manifestID;
+    row.provenanceStatus=data.event==='resume'?'resume-segment':'measured-segment';
+    row.localSequence=++s.sequence;row.presentationID=view?.presentationID??null;row.attemptID=view?.attemptID??null;
+    const mapping=q?.telemetryOptionIndices;
+    const unknownSavedContent=response&&(!Array.isArray(mapping)||(q?.telemetryContentRevision&&q.telemetryContentRevision!==b.contentRevision));
+    if(unknownSavedContent)row.provenanceStatus='unresolved';
+    row.canonicalSelectedIndex=response&&!unknownSavedContent&&Array.isArray(mapping)&&Number.isInteger(row.selectedIndex)?mapping[row.selectedIndex]??null:null;
+    if(row.event==='rapid_guessing'&&view)view.attemptID=uuid();
+    const stage=data.remediationStage || get('remediationState',{})?.stage;
+    row.originAttemptID=['repair','bridge','retest'].includes(stage)?s.lastMiss??null:null;
+    if(row.event==='question'&&!Number(row.correct)&&!['repair','bridge','retest'].includes(stage))s.lastMiss=row.attemptID;
+    const assistance=get('currentQuestionAssistance',null),faded=get('fadingFortuneFadedChoices',null);
+    const relevantAssistance=assistance?.questionId===q?.id?assistance:null;
+    const support={hintDisplayed:Boolean(q?.hint),artifactApplied:relevantAssistance?Boolean(relevantAssistance.removedIndexes?.length):false,
+      artifactRemovedCanonical:(relevantAssistance?.removedIndexes||[]).map(i=>mapping?.[i]??null),
+      modeRemovedCanonical:mode==='fadingFortune'&&faded?[...faded].map(i=>mapping?.[i]??null):[],
+      remainingOptionCount:Array.isArray(q?.options)?q.options.length-(relevantAssistance?.removedIndexes?.length||0)-(mode==='fadingFortune'&&faded?faded.size:0):null};
+    if(response&&view){if(data.adaptiveMode==='exam-commit')row.supportJSON=view.supportJSON??null;else{row.supportJSON=stable(support);view.supportJSON=row.supportJSON;}}
+    else row.supportJSON=null;
+    if(response&&view){
+      if(data.adaptiveMode==='exam-commit')row.answerSnapshotJSON=view.answerSnapshotJSON??answerSnapshot(q,row,b);
+      else {row.answerSnapshotJSON=answerSnapshot(q,row,b);view.answerSnapshotJSON=row.answerSnapshotJSON;}
+    }else row.answerSnapshotJSON=null;
+    row.resourceID=ids([data.resourceID])[0]??null;
+    row.manifestJSON=null;row.deliveryQuality=null;persist(run,s);return row;
+  }
+  function exportRows(rows,run){
+    const s=state(run),result=rows.map(r=>({...r}));
+    for(const id of new Set(rows.map(r=>r.manifestID).filter(Boolean)))result.push({event:'export_manifest',runID:run,contractID:registry.contractID,manifestID:id,manifestJSON:s.manifests[id]?stable(s.manifests[id]):null,deliveryQuality:stable({...s.quality,localLastSequence:s.sequence,localRetainedRows:rows.length,knownMissingPrefix:Math.max(0,Number(rows.find(r=>r.localSequence)?.localSequence||1)-1)})});
+    return result;
+  }
+  function wrapShuffle(){
+    const old=get('shuffleOptions',null);if(typeof old!=='function'||old.__contractMapping)return;
+    const wrapped=function(q){const out=old.apply(this,arguments);if(out&&q){out.telemetryContentRevision=q.telemetryContentRevision||build().contentRevision;if(!Array.isArray(out.telemetryOptionIndices)){const remaining=q.options.map((text,i)=>({text,index:q.telemetryOptionIndices?.[i]??i}));out.telemetryOptionIndices=out.options.map(text=>{const at=remaining.findIndex(x=>x.text===text);return at<0?null:remaining.splice(at,1)[0].index;});}}return out;};
+    wrapped.__contractMapping=true;window.shuffleOptions=wrapped;
+  }
+  let resourcesInstalled=false;
+  function resources(){
+    const run=runKey();if(!run)return;
+    const s=state(run);s.offered ||= [];
+    for(const a of document.querySelectorAll?.('[data-telemetry-resource]')||[]){const id=ids([a.dataset.telemetryResource])[0];if(id&&!s.offered.includes(id)){s.offered.push(id);get('sendGameData',null)?.({event:'resource_offered',runID:run,resourceID:id});}}
+    persist(run,s);
+  }
+  function installResources(){
+    if(resourcesInstalled)return;resourcesInstalled=true;
+    const originalReport=get('showMasteryReportScreen',null);
+    if(typeof originalReport==='function')window.showMasteryReportScreen=function(...args){const result=originalReport.apply(this,args);if(result?.then)result.then(resources,()=>{});else resources();return result;};
+    document.addEventListener('click',e=>{const id=ids([e.target?.closest?.('[data-telemetry-resource]')?.dataset.telemetryResource])[0];if(id)get('sendGameData',null)?.({event:'resource_activated',runID:runKey(),resourceID:id});});
+  }
+  return {fields,stamp,show,exportRows,wrapShuffle,hash,stable,build,state,resources,installResources};
+}
+
+  const MQContract=createTelemetryContract((name,fallback)=>{try{return eval(name);}catch(_){return fallback;}}, /* RELEASE REGISTRY */ {"contractID":"mq-measurement/1","measurementRevision":"mq-tracker-2026.10.13-answers1","localSchema":"mq-local-csv/1","anonymousEnvelope":3,"manifestSchema":"mq-run-manifest/1","trackerSourceRevision":"9fc7ec0efd94f516d2adeee36bba713a73ab6c6b638388fcc82e2062fe99d5cd","games":{"cost-directive":{"engineRevision":"fe55ce5e32f98f3867b8bc98aaa04197940d76434d42340a8cb2f9613cc44a57","pocEngineRevision":"1455566315c2b5b68444783226b3ddd0dc8cd95e3df286a1c3cdd597d7271496","classroomEngineRevision":"1525bb3a511b4854ee4c93e2a74e8c27d2096c39e34d88165d77c4450fcca97e","assetRevision":"e84ae7d58d4f614ec045fb1b8f1327e9acb14060321b757e92ee42277369eb71"},"market-signal":{"engineRevision":"74c7e0e8e6e0bc75aed705a83728da4525768d1c8f86efa374287c0689c1c7e4","pocEngineRevision":"ebcc819cf47f81c55c3ab91381e7bccc52b98439487588c963abd76f10f815e3","classroomEngineRevision":"88584ffc8e522a9a2959ee8639dbe59c9f9c8a45c86cb07e87414a2f4c166585","assetRevision":"8e884e9efd09d7d6bb819e8bf88777acd87c54c3d5606ed0861a9861725add5c"},"strategy-desk":{"engineRevision":"aed4b6a12732f1a2019a1619b53f85b31736654ec5021c62ecc10b6bfad0ca2f","pocEngineRevision":"bf62c33b3a374ff0d9fef2201a0140aa9163f5370c7d13357d413f054eeb6fb6","classroomEngineRevision":"b6660469a9e3195727d06a141de46a46983d30730d8b4258f8cfc90089d1a70d","assetRevision":"6daeef8858732666d4a8f79dce498db26f463a85428e930b70d9c298deb974e6"},"agency-protocol":{"engineRevision":"519e0c8f1663959ae5218b3fa86fc8088cca2d3b4f49ed96784cc2c94613166d","pocEngineRevision":"d151c35e8d463a866cbf663e285f60ad86a590e517be7c6d2da8d0b766694077","classroomEngineRevision":"90e5e079c3952d8723bcb66695f31a5305aeacd68a0670cacdbe5e92e2cc8e58","assetRevision":"90b45185b2f7b58e87bb619618a0c7642860be1748eb45ef768820db614faec8"},"composer":{"engineRevision":"df4af11f5c1d18984430aa9b12e5665f74d11c79403cc70d413ec1bb6647e27b","assetRevision":"b843eaf7f8d5a2568ac458d71a9519c91e57c19bfe1f99314688479d0471e314"},"equilibrium-crisis":{"engineRevision":"ce9d368eb74fa871776a825e3b2b340119206a6f141b66d16ecc368c00f0764b","assetRevision":"e0bc167ef5bf6085998fa7620a66df587614e079e8a425d00b3378f748050d9e"},"liquidity-grid":{"engineRevision":"8e429f6800b59760f26bcd714940c5d894ec3c6608587f32cd9b54462968ee45","assetRevision":"9b4b4b9b956894944dfbd880edaa7d21315e9a565fe36c6e99c435adba40b640"},"market-gate":{"engineRevision":"97000cbc107706e1879d143a88503423012094bb7e07ba5327d30df9f77c1d5a","assetRevision":"a4b6a2220411fc0367e726bedb815bc2b0f23d866104389f3e64fe424e3ec9d6"},"national-ledger":{"engineRevision":"b322ddbf689f4db88a3c5cfdf3a81990e45a4f4acb8ebae6e8ba85d1c536fe2c","assetRevision":"5edc2f9729237cc6638954a521fd65163fdc4cc1febbf4c012620b2ec5bbacde"},"stabilization-protocol":{"engineRevision":"c0f2953b63f1ccab3c79253f37862a24c2afbef4f27743a875529534c8571a86","assetRevision":"e0fdef674656ba0a2cf18e8483ef3724281013338f2671c141cc66c587f2348f"},"command-nexus":{"engineRevision":"58e9918963c2f02027a784ecdf7df170f1ce43954c14b34795e31862c6fa59c7","assetRevision":"97f92412cf740f7de62e5f77f5838543aff5426bee9ceaf4f81aeb1bc427f36f"},"exchange-citadel":{"engineRevision":"1213fa9133cf7323c67e7ab7af361eb515874b791a5fbdf6ac41453347e9c846","assetRevision":"7da393ab7e26acca52dedd1349a2455252439af297df7fa0e5e39d8a7c861505"},"mint-ash-gold":{"engineRevision":"f1452f9e2cbacbd0b75f0a1445650ffc7e265b87e2d33bb701f1029aac4b0f86","assetRevision":"c8785e093302b9df20935e7a26cd0f2626764d492f02fe00839d929772016125"},"national-engine":{"engineRevision":"3de6378adb0156e9683f0d83fd093b206c4a697b001aca62a35ba28362012dc4","assetRevision":"524f4b7ee38d9ea9d1f08b0505a74699c68ca3f4bb6314dcef177285d686abd5"},"labyrinth-of-choice":{"engineRevision":"696d3bceb3453fd54ee25088c34a87a5c9e6546a8ba1f7280b9b51ebb15721ba","assetRevision":"44d1f4a1da9ae15503499c30c0e7974481674f5ed4b2a6aa5860ba1d08eb0aca"},"labyrinth-choice":{"engineRevision":"696d3bceb3453fd54ee25088c34a87a5c9e6546a8ba1f7280b9b51ebb15721ba","assetRevision":"44d1f4a1da9ae15503499c30c0e7974481674f5ed4b2a6aa5860ba1d08eb0aca"}}});
+  // END MEASUREMENT CONTRACT
 const TELEMETRY_COLUMNS = [
     "eventID","timestamp","telemetryVersion","gameVersion","runID","game","mode","event",
     "room","questionID","questionVersion","difficulty","selectedIndex","correct",
@@ -8490,7 +8648,8 @@ const TELEMETRY_COLUMNS = [
     "riskRewardStartingBankroll","riskRewardFinalBankroll","riskRewardNet",
     "riskRewardPeakBankroll","riskRewardLargestWager","riskRewardAllInAttempts",
     "riskRewardBusted","riskRewardQuestionsCompleted","riskRewardTarget",
-    "riskRewardWagerDistribution"
+    "riskRewardWagerDistribution",
+    "contractID","manifestID","provenanceStatus","presentationID","attemptID","canonicalSelectedIndex","localSequence","manifestJSON","deliveryQuality","supportJSON","originAttemptID","resourceID","answerSnapshotJSON"
 ];
 function createTelemetryEventID(){
     if(window.crypto && typeof window.crypto.randomUUID === "function") return window.crypto.randomUUID();
@@ -8514,13 +8673,15 @@ function sendGameData(data = {}){
             || `run-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
         if(!runID) runID = activeRunID;
         const records = readLocalTelemetry(activeRunID);
-        const questionID = Number(data.questionId ?? data.question ?? 0);
+        const questionID = data.questionId ?? data.question ?? 0;
+        const questionKey = String(questionID);
+        const hasQuestionID = questionKey !== "" && questionKey !== "0";
         const normalizedMode = String(data.mode || gameMode || "standard").replace(/-complete$/, "");
         const eventName = data.event || "";
         const isResponseEvent = eventName === "question";
         const isCompletionEvent = /(?:^|_)complete$/.test(eventName);
-        const priorExposureCount = questionID > 0
-            ? records.filter(item => Number(item.questionID) === questionID && item.event === "question").length
+        const priorExposureCount = hasQuestionID
+            ? records.filter(item => String(item.questionID ?? "") === questionKey && item.event === "question").length
             : 0;
         const record = {
             eventID: createTelemetryEventID(),
@@ -8548,7 +8709,7 @@ function sendGameData(data = {}){
             adaptiveMode: data.adaptiveMode || adaptiveMode || "",
             remediationStage: data.remediationStage || (remediationState?.active ? remediationState.stage || "" : ""),
             priorExposureCount,
-            firstExposure: questionID > 0 && priorExposureCount === 0 ? 1 : 0,
+            firstExposure: hasQuestionID && priorExposureCount === 0 ? 1 : 0,
             score: Number(data.score ?? scoreAttackScore ?? 0),
             bestScore: Number(data.bestScore ?? scoreAttackBestScore ?? 0),
             totalTimeMs: Number(data.totalTime ?? data.totalTimeMs ?? 0),
@@ -8557,6 +8718,7 @@ function sendGameData(data = {}){
             totalAttempts: Number(data.totalAttempts ?? data.attempts ?? 0),
             verificationCode: data.verificationCode || data.code || ""
         };
+        MQContract.stamp(record,data);
         records.push(record);
         if(records.length > 1500) records.splice(0, records.length - 1500);
         localStorage.setItem(getTelemetryKey(activeRunID), JSON.stringify(records));
@@ -8578,7 +8740,7 @@ function downloadTelemetryCsv(activeRunID = runID){
     }
     const rows = [
         TELEMETRY_COLUMNS.join(","),
-        ...records.map(record => TELEMETRY_COLUMNS.map(column => escapeCsvValue(record[column])).join(","))
+        ...MQContract.exportRows(records,resolvedRunID).map(record => TELEMETRY_COLUMNS.map(column => escapeCsvValue(record[column])).join(","))
     ];
     const csv = rows.join("\r\n");
     const blob = new Blob([csv], { type: "text/csv;charset=utf-8" });
@@ -12170,13 +12332,15 @@ function sendGameData(data = {}){
         }
 
         const records = readLocalTelemetry(activeRunID);
-        const questionID = Number(data.questionId ?? data.question ?? 0);
+        const questionID = data.questionId ?? data.question ?? 0;
+        const questionKey = String(questionID);
+        const hasQuestionID = questionKey !== "" && questionKey !== "0";
         const normalizedMode = String(data.mode || gameMode || "standard").replace(/-complete$/, "");
         const eventName = data.event || "";
         const isResponseEvent = eventName === "question" || eventName === "rapid_guessing";
         const isCompletionEvent = /(?:^|_)complete$/.test(eventName) || eventName === "complete";
-        const priorExposureCount = questionID > 0
-            ? records.filter(item => Number(item.questionID) === questionID && (item.event === "question" || item.event === "rapid_guessing")).length
+        const priorExposureCount = hasQuestionID
+            ? records.filter(item => String(item.questionID ?? "") === questionKey && (item.event === "question" || item.event === "rapid_guessing")).length
             : 0;
 
         const record = {
@@ -12205,7 +12369,7 @@ function sendGameData(data = {}){
             adaptiveMode: data.adaptiveMode || adaptiveMode || "",
             remediationStage: data.remediationStage || (remediationState?.active ? remediationState.stage || "" : ""),
             priorExposureCount,
-            firstExposure: questionID > 0 && priorExposureCount === 0 ? 1 : 0,
+            firstExposure: hasQuestionID && priorExposureCount === 0 ? 1 : 0,
             score: Number(data.score ?? (normalizedMode === "fadingFortune" ? data.fadingFortuneScore ?? fadingFortuneScore : scoreAttackScore) ?? 0),
             bestScore: Number(data.bestScore ?? scoreAttackBestScore ?? 0),
             totalTimeMs: Number(data.totalTime ?? data.totalTimeMs ?? 0),
@@ -12239,6 +12403,7 @@ function sendGameData(data = {}){
             riskRewardWagerDistribution: data.riskRewardWagerDistribution || ""
         };
 
+        MQContract.stamp(record,data);
         records.push(record);
         if(records.length > 1500) records.splice(0, records.length - 1500);
         localStorage.setItem(getTelemetryKey(activeRunID), JSON.stringify(records));
@@ -13550,5 +13715,10 @@ phase15LayoutStyle.textContent = [
 document.head.appendChild(phase15LayoutStyle);
 
 
+
+// Answer-analysis presentation IDs; gameplay remains in the original function.
+const displayQuestionBeforeAnswerTelemetry=displayQuestion;
+displayQuestion=function(...args){const result=displayQuestionBeforeAnswerTelemetry.apply(this,args);try{MQContract.show();}catch(_){}return result;};
+MQContract.build();
 </script></body>
 </html>
