@@ -46,7 +46,7 @@ function refresh(){
   for(const g of summary.groups){
     const card=el('details','','question'),heading=el('summary','');
     heading.append(el('h3',g.prompt),el('p',`${g.count} answers · ${percent(g.correct,g.knownCorrectness)} correct`,'meta'));card.append(heading);
-    card.append(el('p',`${g.count} answers · ${g.knownCorrectness?Math.round(100*g.correct/g.knownCorrectness)+'% correct':'Correctness unavailable'} · ${g.first} first, ${g.repeat} repeat, ${g.unknown} exposure unknown · ${g.assisted} with choices removed`));
+    card.append(el('p',`${g.first} first, ${g.repeat} repeat, ${g.unknown} exposure unknown · ${g.assisted} with choices removed`));
     if(g.optionOrder==='displayed')card.append(el('p','Original answer order was unavailable. These choices are grouped by the order shown.','meta'));
     const wrap=el('div','','table-wrap'),table=el('table',''),head=el('thead',''),tr=el('tr','');
     for(const text of ['Answer choice','Selected','Share','Marked correct']){const th=el('th',text);th.scope='col';tr.append(th);}head.append(tr);table.append(head);
