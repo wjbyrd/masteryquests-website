@@ -23,12 +23,12 @@ function renderOverview(){
   container.append(el('p',`${o.correct} correct out of ${plural(o.knownCorrectness,'answer')} with a recorded result. Accuracy combines all shown answers. Game runs may include several attempts by the same student. Questions covered counts each saved question version once.`,'meta'));
   if(o.unknownRunAnswers)container.append(el('p',`${plural(o.unknownRunAnswers,'shown answer')} ${o.unknownRunAnswers===1?'has':'have'} no run ID.`,'meta'));
   if(!summary.groups.length)return;
-  container.append(el('h3','Run time and streaks'));
+  container.append(el('h3','Time and streaks'));
   const runMetrics=el('div','','metrics run-metrics');
-  for(const [label,value] of [['Recorded run time',MQAnswerAnalysis.duration(o.recordedTimeMs)],['Median run time',MQAnswerAnalysis.duration(o.medianRunTimeMs)],['Longest correct-answer streak',o.bestStreak??'Not recorded']]){
+  for(const [label,value] of [['Average time per question',MQAnswerAnalysis.responseDuration(o.averageResponseTimeMs)],['Recorded run time',MQAnswerAnalysis.duration(o.recordedTimeMs)],['Longest correct-answer streak',o.bestStreak??'Not recorded']]){
     const metric=el('div','','metric');metric.append(el('strong',String(value)),el('span',label));runMetrics.append(metric);
   }
-  container.append(runMetrics,el('p',`Time recorded for ${o.timedRuns} of ${o.runs} runs; streaks for ${o.streakRuns} of ${o.runs}. These stats cover the whole runs represented by your filters, including answers outside the selection. Each run counts once. Incomplete exports may understate time and streaks; recorded clocks may include idle time. Median means the middle run time.`,'meta'));
+  container.append(runMetrics,el('p',`Question timing: ${o.timedResponses} of ${plural(summary.stats.included,'shown answer')} have a recorded time. Median (middle value): ${MQAnswerAnalysis.responseDuration(o.medianResponseTimeMs)}. Each answered attempt counts once. Times may include idle time.`,'meta'),el('p',`Whole runs: time recorded for ${o.timedRuns} of ${o.runs}; streaks for ${o.streakRuns} of ${o.runs}. Median run time: ${MQAnswerAnalysis.duration(o.medianRunTimeMs)}. Includes answers outside your filters. Incomplete exports may understate time and streaks.`,'meta'));
   const objectiveView=byId('grouping').value==='objectives';
   const topics=[...(objectiveView?summary.objectives:summary.topics)].sort((a,b)=>(a.knownCorrectness?a.correct/a.knownCorrectness:2)-(b.knownCorrectness?b.correct/b.knownCorrectness:2)||b.count-a.count);
   const multipleGames=new Set(topics.map(t=>t.game)).size>1;
@@ -64,6 +64,7 @@ function refresh(){
     const card=el('details','','question'),heading=el('summary','');
     heading.append(el('h3',g.prompt),el('p',`${plural(g.count,'answer')} · ${percent(g.correct,g.knownCorrectness)} correct`,'meta'));card.append(heading);
     card.append(el('p',`${g.first} first, ${g.repeat} repeat, ${g.unknown} exposure unknown · ${g.assisted} with choices removed`));
+    card.append(el('p',g.timedResponses?`Time per answer: ${MQAnswerAnalysis.responseDuration(g.averageResponseTimeMs)} average · ${MQAnswerAnalysis.responseDuration(g.medianResponseTimeMs)} median · recorded for ${g.timedResponses} of ${g.count} answers`:'Time per answer: not recorded','meta'));
     if(g.optionOrder==='displayed')card.append(el('p','Original answer order was unavailable. These choices are grouped by the order shown.','meta'));
     if(g.keyStatus!=='known')card.append(el('p',g.keyStatus==='conflict'?'Data integrity problem: conflicting answer-key or grading information.':'Correct answer unavailable',g.keyStatus==='conflict'?'integrity-note':'meta'));
     const wrap=el('div','','table-wrap'),table=el('table',''),head=el('thead',''),tr=el('tr','');
@@ -127,12 +128,12 @@ byId('download').addEventListener('click',()=>{
 });
 byId('download-summary').addEventListener('click',()=>{
   const filters=[byId('exposure').value,byId('assistance').value,byId('mode').value];
-  const rows=[['section','game','topicOrQuestion','questionID','questionRevision','answers','correct','knownCorrectness','accuracy','gameRuns','files','exposureFilter','assistanceFilter','modeFilter','objectiveID','keyStatus','recordedRunTimeMs','medianRunTimeMs','runsWithRecordedTime','longestRecordedStreak','runsWithRecordedStreak','reviewMinimumResponses']];
+  const rows=[['section','game','topicOrQuestion','questionID','questionRevision','answers','correct','knownCorrectness','accuracy','gameRuns','files','exposureFilter','assistanceFilter','modeFilter','objectiveID','keyStatus','recordedRunTimeMs','medianRunTimeMs','runsWithRecordedTime','longestRecordedStreak','runsWithRecordedStreak','reviewMinimumResponses','averageResponseTimeMs','medianResponseTimeMs','responsesWithRecordedTime']];
   const o=summary.overview;
-  rows.push(['class','','','','',summary.stats.included,o.correct,o.knownCorrectness,o.knownCorrectness?o.correct/o.knownCorrectness:'',o.runs,o.files,...filters,'','',o.recordedTimeMs??'',o.medianRunTimeMs??'',o.timedRuns,o.bestStreak??'',o.streakRuns,byId('minimum').value]);
+  rows.push(['class','','','','',summary.stats.included,o.correct,o.knownCorrectness,o.knownCorrectness?o.correct/o.knownCorrectness:'',o.runs,o.files,...filters,'','',o.recordedTimeMs??'',o.medianRunTimeMs??'',o.timedRuns,o.bestStreak??'',o.streakRuns,byId('minimum').value,o.averageResponseTimeMs??'',o.medianResponseTimeMs??'',o.timedResponses]);
   for(const t of summary.topics)rows.push(['topic',t.game,t.topic,'','',t.count,t.correct,t.knownCorrectness,t.knownCorrectness?t.correct/t.knownCorrectness:'',t.runCount,'',...filters,'','']);
   for(const t of summary.objectives)rows.push(['objective',t.game,MQAnswerAnalysis.objectiveLabel(t),'','',t.count,t.correct,t.knownCorrectness,t.knownCorrectness?t.correct/t.knownCorrectness:'',t.runCount,'',...filters,t.objective,'']);
-  for(const g of summary.groups)rows.push(['question',g.games.join(', '),g.prompt,g.questionID,g.revision,g.count,g.correct,g.knownCorrectness,g.knownCorrectness?g.correct/g.knownCorrectness:'',g.runCount,'',...filters,'',g.keyStatus]);
+  for(const g of summary.groups)rows.push(['question',g.games.join(', '),g.prompt,g.questionID,g.revision,g.count,g.correct,g.knownCorrectness,g.knownCorrectness?g.correct/g.knownCorrectness:'',g.runCount,'',...filters,'',g.keyStatus,'','','','','','',g.averageResponseTimeMs??'',g.medianResponseTimeMs??'',g.timedResponses]);
   for(const row of rows)while(row.length<rows[0].length)row.push('');
   downloadCSV(rows,'mastery-quests-class-summary.csv');
 });
