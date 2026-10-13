@@ -152,11 +152,17 @@
     if(s.keyConflicts||s.objectiveConflicts)lines.push('Conflicting answer-key or objective information needs review. Comparative conclusions are withheld until those records are checked.');
     else if(eligible.length){
       const low=eligible[0],high=eligible.at(-1);
-      if(eligible.length>1&&low.correct/low.knownCorrectness<high.correct/high.knownCorrectness){lines.push(`Start the review with ${describe(low)}.`,`Stronger results in this selection: ${describe(high)}.`);}
-      else lines.push(`Results meeting the review minimum: ${eligible.slice(0,3).map(describe).join('; ')}.${eligible.length>3?' See the report for the other results.':''}`);
+      const differentRates=low.correct/low.knownCorrectness<high.correct/high.knownCorrectness;
+      const priorities=eligible.filter(a=>a.correct<a.knownCorrectness&&(!differentRates||a.correct/a.knownCorrectness<high.correct/high.knownCorrectness));
+      if(priorities.length){
+        lines.push(`Start the review with ${describe(priorities[0])}.`);
+        if(priorities.length>1)lines.push('Also review:\n'+priorities.slice(1,3).map(a=>`- ${describe(a)}.`).join('\n'));
+        if(priorities.length>3)lines.push(`${plural(priorities.length-3,grouping==='objectives'?'additional learning objective':'additional topic')} with incorrect answers also ${priorities.length===4?'meets':'meet'} the review minimum. See the report for those results.`);
+      }else lines.push(`Results meeting the review minimum: ${eligible.slice(0,3).map(describe).join('; ')}.${eligible.length>3?' See the report for the other results.':''}`);
+      if(differentRates)lines.push(`Stronger results in this selection: ${describe(high)}.`);
       if(eligible.some(a=>!sufficient(a)))lines.push('Limited evidence: results below five responses or two identified runs are starting points for discussion.');
     }else lines.push(`There is too little evidence for a comparison at the selected minimum of ${plural(min,'response')}. No available ${grouping==='objectives'?'learning objectives':'topics'} meet that minimum.`);
-    const review=reviewQuestions(result,min).slice(0,2);
+    const review=reviewQuestions(result,min).slice(0,2),reviewArea=eligible.find(a=>a.correct<a.knownCorrectness);
     if(!s.keyConflicts&&!s.objectiveConflicts){
       if(review.length){
         lines.push('Questions to discuss:\n'+review.map(q=>{
@@ -166,11 +172,14 @@
         }).join('\n'));
         lines.push('Suggested next step: ask the class to explain the reasoning behind these choices, work through an example, then check understanding with a fresh question.');
       }else if(o.knownCorrectness&&o.correct===o.knownCorrectness)lines.push('All shown answers with a recorded result were correct. A fresh question or application can help check whether that understanding carries over.');
-      else if(s.included)lines.push('No question with an incorrect answer meets the selected review minimum. Add more results or lower the minimum to choose specific questions for discussion.');
+      else if(reviewArea){
+        lines.push(`The ${grouping==='objectives'?'learning-objective':'topic'} results support a review, even though no individual question with an incorrect answer reaches the selected minimum of ${plural(min,'response')}.`);
+        lines.push(`Suggested next step: ${sufficient(reviewArea)?'revisit':'explore'} ${label(reviewArea)} with a worked example, ask students to explain each step, then use a fresh question to check understanding.${sufficient(reviewArea)?'':' Treat this as an initial discussion because the evidence is limited.'}`);
+      }else if(s.included)lines.push(`More responses are needed to choose a specific question or ${grouping==='objectives'?'learning objective':'topic'} to revisit at the selected review minimum.`);
     }
     lines.push(o.timedResponses?`Time per answered question: ${responseDuration(o.averageResponseTimeMs)} average; ${responseDuration(o.medianResponseTimeMs)} median (middle value), based on ${o.timedResponses} of ${plural(s.included,'shown answer')}.`:'Time per answered question: not recorded in the shown answers.');
     lines.push(runContextText(o));
-    lines.push(`Selection: ${plural(fileCount,'file')} loaded; ${plural(o.files,'file')} represented. ${filters.exposure[f.exposure||'all']||'all attempts'}; ${filters.assistance[f.assistance||'all']||'all responses regardless of choice removal'}; mode ${f.mode&&f.mode!=='all'?f.mode:'all modes'}. Review minimum: ${plural(min,'response')} with a recorded result per topic, objective, or question.`);
+    lines.push(`Selection: ${plural(fileCount,'file')} loaded; ${plural(o.files,'file')} represented. Filters: ${filters.exposure[f.exposure||'all']||'all attempts'}; ${filters.assistance[f.assistance||'all']||'all responses regardless of choice removal'}; mode ${f.mode&&f.mode!=='all'?f.mode:'all modes'}. Review minimum: ${plural(min,'response')} with a recorded result per topic, objective, or question.`);
     if(s.unresolved)lines.push(`${plural(s.unresolved,'accepted response')} lacked usable saved question details; this analysis excludes those records.`);
     if(s.missingObjectives)lines.push(`${plural(s.missingObjectives,'shown response')} had no learning objective.`);
     if(result.objectives.some(a=>a.labelConflict))lines.push('Some learning-objective descriptions conflict. Their original labels remain in the report; those objectives are excluded from feedback comparisons.');

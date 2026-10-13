@@ -50,3 +50,28 @@ assert(a.feedbackSummary(a.analyze(tied),{minResponses:1}).includes('2 incorrect
 const conflict=structuredClone(rows);const bad=JSON.parse(conflict[0].answerSnapshotJSON);bad.correctOptionIndices=[0];conflict[0].answerSnapshotJSON=JSON.stringify(bad);
 assert(!a.feedbackSummary(a.analyze(conflict)).includes('Suggested next step:'));
 console.log('PASS: answer-weighted average and median, timing coverage, filters, deduplication, missing/invalid time, private fields, exclusions, all-correct results, tied choices and safe review suggestions.');
+// Varied question pools can support topic review before any individual question repeats enough.
+const dispersed=releaseRows().map((row,i)=>({...row,answerSnapshotJSON:JSON.stringify({...JSON.parse(row.answerSnapshotJSON),questionID:'distinct-'+i})}));
+const dispersedResult=a.analyze(dispersed);assert.equal(a.reviewQuestions(dispersedResult,5).length,0);
+const topicFeedback=a.feedbackSummary(dispersedResult),objectiveFeedback=a.feedbackSummary(dispersedResult,{grouping:'objectives'});
+assert(topicFeedback.includes('The topic results support a review'));assert(topicFeedback.includes('Suggested next step: revisit tax incidence less elastic side with a worked example'));
+assert(objectiveFeedback.includes('The learning-objective results support a review'));assert(objectiveFeedback.includes('Suggested next step: revisit Tax incidence with a worked example'));
+assert(!topicFeedback.includes('lower the minimum'));assert(!topicFeedback.includes('Most common choice marked incorrect:'));
+const tentative=a.feedbackSummary(a.analyze(dispersed.slice(0,8)),{minResponses:2});assert(tentative.includes('Suggested next step: explore'));assert(tentative.includes('evidence is limited'));
+assert(!a.feedbackSummary(a.analyze(dispersed.slice(0,8)),{minResponses:5}).includes('Suggested next step:'));
+assert(!a.feedbackSummary(dispersedResult,{minResponses:50}).includes('Suggested next step:'));
+console.log('PASS: varied questions receive topic/objective follow-up without lowering the threshold or inventing question-level findings; small samples remain tentative.');
+const coverageRows=Array.from({length:8},(_,topic)=>Array.from({length:8},(_,run)=>{
+ const row=releaseRows()[0],snap=JSON.parse(row.answerSnapshotJSON),correct=run<topic;
+ return {...row,eventID:`coverage-${topic}-${run}`,attemptID:`coverage-${topic}-${run}`,runID:`coverage-run-${run}`,tag:`topic_${topic}`,correct:Number(correct),answerSnapshotJSON:JSON.stringify({...snap,questionID:`coverage-question-${topic}-${run}`,objectiveID:`objective-${topic}`,objectiveLabel:`Objective ${topic}`,selectedIndex:correct?1:0,selectedAnswer:snap.options[correct?1:0]})};
+})).flat();
+const coverage=a.analyze(coverageRows),coverageText=a.feedbackSummary(coverage);
+assert(coverageText.includes('Start the review with topic 0: 0% (0/8; 8 runs)'));
+assert(coverageText.includes('Also review:\n- topic 1: 13% (1/8; 8 runs).\n- topic 2: 25% (2/8; 8 runs).'));
+assert(coverageText.includes('4 additional topics'));assert(coverageText.includes('Stronger results in this selection: topic 7: 88% (7/8; 8 runs)'));
+assert(a.feedbackSummary(coverage,{grouping:'objectives'}).includes('Also review:\n- Objective 1:'));
+assert(!a.feedbackSummary(coverage,{minResponses:10}).includes('Also review:'));
+const tiedCoverage=a.analyze(coverageRows.filter(r=>r.correct===0).map(r=>({...r,tag:JSON.parse(r.answerSnapshotJSON).objectiveID})));
+assert(a.feedbackSummary(tiedCoverage).includes('Also review:'),'Equal low rates should still surface multiple eligible topics');
+assert(!a.feedbackSummary(a.analyze(coverageRows.filter(r=>r.correct===1))).includes('Also review:'),'All-correct topics should not be review priorities');
+console.log('PASS: multiple well-covered topics and objectives appear in a compact three-priority summary; threshold, ties and all-correct selections are respected.');
