@@ -18,7 +18,8 @@
   const json=value=>{try{return typeof value==='string'?JSON.parse(value):value;}catch(_){return null;}};
   const flag=value=>value===true||value===1||value==='1'||value==='true';
   function analyze(rows,filters={}){
-    const groups=new Map(),seen=new Set();
+    const groups=new Map(),seen=new Set(),runs=new Set(),topics=new Map();
+    const overview={correct:0,knownCorrectness:0,unknownRunAnswers:0};
     const stats={accepted:0,included:0,unresolved:0,duplicates:0,rapidGuesses:0,drafts:0};
     for(const row of rows){
       const extras=json(row.extras_json)||{},r={...extras,...Object.fromEntries(Object.entries(row).filter(([,v])=>v!==''&&v!=null))},event=r.event||r.event_type;
@@ -48,14 +49,36 @@
       const g=groups.get(key);
       if(g.options.length!==s.options.length||g.options.some((o,i)=>o.text!==s.options[i])||g.prompt!==s.prompt){stats.unresolved++;stats.included--;continue;}
       g.count++;g[exposure]++;g[assistance==='unknown'?'unknownAssistance':assistance]++;
+      const run=r.runID||r.run_id;
+      if(run)runs.add(run);else overview.unknownRunAnswers++;
+      const game=r.game||r.game_id||'Unknown game',topic=String(r.tag||'Topic unavailable');
+      const topicKey=JSON.stringify([game,topic]);
+      if(!topics.has(topicKey))topics.set(topicKey,{game,topic,count:0,correct:0,knownCorrectness:0});
+      const topicResult=topics.get(topicKey);topicResult.count++;
       g.games.add(r.game||r.game_id||'Unknown game');g.modes.add(mode);
       const option=g.options[s.selectedIndex];option.count++;
       if([0,1,'0','1',true,false,'true','false'].includes(r.correct)){
         g.knownCorrectness++;option.knownCorrectness++;
-        if(flag(r.correct)){g.correct++;option.correct++;}
+        overview.knownCorrectness++;topicResult.knownCorrectness++;
+        if(flag(r.correct)){g.correct++;option.correct++;overview.correct++;topicResult.correct++;}
       }
     }
-    return {stats,groups:[...groups.values()].map(g=>({...g,games:[...g.games],modes:[...g.modes]}))};
+    return {stats,overview:{...overview,runs:runs.size,questions:groups.size},topics:[...topics.values()],groups:[...groups.values()].map(g=>({...g,games:[...g.games],modes:[...g.modes]}))};
   }
-  const api={parseCSV,analyze};if(typeof module==='object'&&module.exports)module.exports=api;else root.MQAnswerAnalysis=api;
+  // Preserve each import so faculty can add or remove files without losing earlier work.
+  function createCollection(){
+    const files=new Map(),contents=new Map();let nextID=0;
+    return {
+      add(name,text){
+        if(contents.has(text))return false;
+        const rows=parseCSV(text),id=++nextID;
+        files.set(id,{id,name,rows,text,answers:analyze(rows).stats.accepted});contents.set(text,id);return true;
+      },
+      remove(id){const file=files.get(id);if(file){contents.delete(file.text);files.delete(id);}},
+      clear(){files.clear();contents.clear();},
+      entries(){return [...files.values()].map(({text,rows,...file})=>file);},
+      rows(){return [...files.values()].flatMap(file=>file.rows);}
+    };
+  }
+  const api={parseCSV,analyze,createCollection};if(typeof module==='object'&&module.exports)module.exports=api;else root.MQAnswerAnalysis=api;
 })(globalThis);

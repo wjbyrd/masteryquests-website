@@ -1,0 +1,31 @@
+import fs from 'node:fs';import path from 'node:path';import http from 'node:http';import assert from 'node:assert/strict';import {createRequire} from 'node:module';
+import {fixture,csv} from './class-check.mjs';
+const require=createRequire(import.meta.url),root=process.cwd(),out=path.join(root,'tmp/class-analysis-browser');fs.mkdirSync(out,{recursive:true});
+const server=http.createServer((req,res)=>{try{let p=path.resolve(root,'.'+new URL(req.url,'http://local').pathname);if(!p.startsWith(root+path.sep))throw Error('path');if(fs.statSync(p).isDirectory())p=path.join(p,'index.html');res.setHeader('Content-Type',({'.html':'text/html','.js':'text/javascript','.css':'text/css'})[path.extname(p)]||'application/octet-stream');res.end(fs.readFileSync(p));}catch(_){res.writeHead(404).end();}});
+await new Promise(r=>server.listen(0,'127.0.0.1',r));const origin='http://127.0.0.1:'+server.address().port;
+const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');let browser;
+try{
+ browser=await chromium.launch({channel:'msedge',headless:true});const context=await browser.newContext({acceptDownloads:true}),page=await context.newPage(),errors=[];
+ await context.route('**/*',r=>r.request().url().startsWith(origin)?r.continue():r.abort());page.on('pageerror',e=>errors.push(e.message));await page.goto(origin+'/tools/answer-analysis/');
+ const supplied=process.argv.slice(2),inputs=supplied.length?supplied.map(file=>({name:path.basename(file),mimeType:'text/csv',buffer:fs.readFileSync(file)})):[{name:'class-a.csv',mimeType:'text/csv',buffer:Buffer.from(csv(fixture('one',15,12)))},{name:'class-b.csv',mimeType:'text/csv',buffer:Buffer.from(csv(fixture('two',10,4)))}];
+ await page.locator('#files').setInputFiles(inputs[0]);await page.waitForFunction(()=>document.querySelector('#status').textContent.startsWith('15 recorded answers'));
+ await page.locator('#files').setInputFiles(inputs[1]);await page.waitForFunction(()=>document.querySelector('#status').textContent.startsWith('25 recorded answers'));
+ assert.equal(await page.locator('#file-list li').count(),2);assert((await page.locator('#overview').innerText()).includes('Class overview'));
+ await page.locator('#files').setInputFiles(inputs[0]);await page.waitForFunction(()=>document.querySelector('#import-status').textContent.includes('1 identical files'));assert.equal(await page.locator('#file-list li').count(),2);
+ const [download]=await Promise.all([page.waitForEvent('download'),page.locator('#download-summary').click()]);await download.saveAs(path.join(out,'summary.csv'));assert(fs.readFileSync(path.join(out,'summary.csv'),'utf8').includes('"25"'));
+ await page.setViewportSize({width:390,height:844});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await page.screenshot({path:path.join(out,'class-report-mobile.png')});await page.evaluate(()=>window.scrollTo(0,document.querySelector('#overview').offsetTop));await page.screenshot({path:path.join(out,'class-overview-mobile.png')});
+ await page.locator('#file-list button').first().click();assert((await page.locator('#status').innerText()).startsWith('10 recorded answers'));
+ await page.locator('#files').setInputFiles({name:'broken.csv',mimeType:'text/csv',buffer:Buffer.from('bad file')});await page.waitForFunction(()=>document.querySelector('#errors').textContent.includes('broken.csv'));assert((await page.locator('#status').innerText()).startsWith('10 recorded answers'));
+ await page.locator('#clear').click();assert.equal(await page.locator('#file-list li').count(),0);assert(await page.locator('#download-summary').isDisabled());
+ // Classroom-sized batch and fast separate imports must both survive async reads.
+ const batch=Array.from({length:30},(_,i)=>({name:`class-${i}.csv`,mimeType:'text/csv',buffer:Buffer.from(csv(fixture('batch'+i,15,10)))}));
+ await page.locator('#files').setInputFiles(batch);await page.waitForFunction(()=>document.querySelector('#status').textContent.startsWith('450 recorded answers'));assert.equal(await page.locator('#file-list li').count(),30);
+ await page.locator('#mode').selectOption('quiz');assert((await page.locator('#status').innerText()).includes('210 shown'));await page.locator('#mode').selectOption('all');
+ await page.setViewportSize({width:1440,height:1000});await page.screenshot({path:path.join(out,'class-report-desktop.png'),fullPage:true});
+ await page.locator('#clear').click();await page.evaluate(async()=>{let begin,finish;const started=new Promise(r=>begin=r);addFiles([{name:'slow.csv',text:()=>{begin();return new Promise(r=>finish=r);}}]);await started;document.querySelector('#clear').click();finish('event\nquestion');await importQueue;});assert.equal(await page.locator('#file-list li').count(),0);
+ await page.evaluate(async data=>{addFiles([{name:'fast-a.csv',text:async()=>data[0]}]);addFiles([{name:'fast-b.csv',text:async()=>data[1]}]);await importQueue;},[csv(fixture('fast-a',15,12)),csv(fixture('fast-b',10,4))]);assert((await page.locator('#status').innerText()).startsWith('25 recorded answers'));
+ await page.locator('#clear').click();await page.evaluate(text=>{const data=new DataTransfer();data.items.add(new File([text],'dropped.csv',{type:'text/csv'}));document.querySelector('#drop-zone').dispatchEvent(new DragEvent('drop',{dataTransfer:data,bubbles:true,cancelable:true}));},csv(fixture('drop',15,12)));await page.waitForFunction(()=>document.querySelector('#status').textContent.startsWith('15 recorded answers'));
+ await page.locator('.question summary').first().click();assert(await page.locator('.question[open] table').first().isVisible());
+ await page.goto(origin+'/how-to/');assert.equal(await page.locator('.howto-hero-note a[href="/tools/answer-analysis/"]').count(),1);assert((await page.locator('#faculty-guides article').first().innerText()).includes('Class Answer Analysis'));await page.screenshot({path:path.join(out,'faculty-resources.png')});assert.deepEqual(errors,[]);
+ console.log('PASS: separate uploads combine to 25; duplicates, removal, malformed files, summary download, 30-file batch, filters, clear-during-read, mobile layout and Faculty Resources placement.');
+}finally{await browser?.close();server.close();}
