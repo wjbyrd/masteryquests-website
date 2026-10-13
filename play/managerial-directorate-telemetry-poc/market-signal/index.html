@@ -9974,29 +9974,26 @@ function titleCase(value){
 
 function formatMasteryLabel(key){
     if(!key) return "Unlabeled Concept";
-
-    const text = String(key);
-    const exactLabel = TEMPLATE_OBJECTIVE_LABELS[text];
-
-    if(exactLabel){
-        return exactLabel;
+    const text = String(key).trim();
+    const clean = value => String(value || "").replace(/^LO\s*\d+(?:\.\d+)*(?:\s*[—–:_-]\s*|\s+|$)/i, "").trim();
+    const maps = [
+        typeof TEMPLATE_OBJECTIVE_LABELS === "undefined" ? {} : TEMPLATE_OBJECTIVE_LABELS,
+        typeof objectiveLabels === "undefined" ? {} : objectiveLabels,
+        typeof LABYRINTH_OF_CHOICE_OBJECTIVE_LABELS === "undefined" ? {} : LABYRINTH_OF_CHOICE_OBJECTIVE_LABELS
+    ];
+    for(const labels of maps){
+        if(clean(labels[text])) return clean(labels[text]);
     }
-
-    const objectiveMatch = text.match(/^(LO\d+\.\d+)/);
-
-    if(objectiveMatch && TEMPLATE_OBJECTIVE_LABELS[objectiveMatch[1]]){
-        const suffix = text
-            .replace(objectiveMatch[1], "")
-            .replace(/^_+/, "")
-            .replace(/^-+/, "")
-            .trim();
-
-        return suffix
-            ? `${TEMPLATE_OBJECTIVE_LABELS[objectiveMatch[1]]}: ${titleCase(suffix)}`
-            : TEMPLATE_OBJECTIVE_LABELS[objectiveMatch[1]];
+    const objectiveMatch = text.match(/^LO\s*(\d+(?:\.\d+)*)(?=$|[\s_—–:-])/i);
+    if(objectiveMatch){
+        const suffix = text.slice(objectiveMatch[0].length).replace(/^[\s_—–:-]+/, "");
+        for(const labels of maps){
+            const label = clean(labels["LO" + objectiveMatch[1]]);
+            if(label) return suffix ? `${label}: ${titleCase(suffix)}` : label;
+        }
+        return suffix ? titleCase(suffix) : "Learning objective description unavailable";
     }
-
-    return titleCase(text);
+    return /^\d+(?:\.\d+)+$/.test(text) ? "Learning objective description unavailable" : titleCase(text);
 }
 
 function formatPercent(value){
@@ -10307,7 +10304,7 @@ function getRecommendedResources(weakObjectiveIds){
     return Array.from(selected.values()).slice(0,maximum);
 }
 function getWeakLearningObjectiveIds(report){ return report?.hasObjectiveWeakness&&Array.isArray(report.weakestObjectives)?report.weakestObjectives.map(e=>e?.key).filter(id=>normalizeLearningObjectiveId(id)):[]; }
-function getInstructionalObjectiveTitle(id){ const normalized=normalizeLearningObjectiveId(id); return objectiveLabels[normalized] || normalized || String(id||""); }
+function getInstructionalObjectiveTitle(id){ return formatMasteryLabel(id); }
 function getInstructionalResourceActionLabel(resource){ return typeof resource?.actionLabel==="string"&&resource.actionLabel.trim()?resource.actionLabel:(resource?.type==="slides"?"Open Slides":"Watch Video"); }
 function renderInstructionalResourceCards(resources){
     return resources.map(resource=>{ const type=INSTRUCTIONAL_RESOURCE_TYPE_LABELS[resource.type]||INSTRUCTIONAL_RESOURCE_TYPE_LABELS.other; const desc=resource.description?`<p class="resource-card-description">${escapeHTML(resource.description)}</p>`:""; return `<article class="resource-card"><div class="resource-card-header"><h4 class="resource-card-title">${escapeHTML(resource.title)}</h4><span class="resource-card-type">${escapeHTML(type)}</span></div>${desc}<a data-telemetry-resource="${escapeHTML(resource.id)}" class="resource-card-link" href="${escapeHTML(resource.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(getInstructionalResourceActionLabel(resource))}<span class="sr-only">: ${escapeHTML(resource.title)}</span></a></article>`; }).join("");

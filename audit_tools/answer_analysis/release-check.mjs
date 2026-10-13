@@ -45,6 +45,8 @@ const otherRoom={runID:'run',mode:'exam',event:'question',questionID:q.id,select
 c.stamp(otherRoom,{adaptiveMode:'exam-commit'});assert.equal(JSON.parse(otherRoom.answerSnapshotJSON).prompt,'Synthetic');assert.deepEqual(JSON.parse(otherRoom.answerSnapshotJSON).correctOptionIndices,[0]);
 assert.throws(()=>validateContractField('answerSnapshotJSON',JSON.stringify(s),{eventType:'exam_answer_initial'}));
 assert.throws(()=>validateContractField('answerSnapshotJSON',JSON.stringify(s),{eventType:'answer_evaluated',acceptedAttempt:false}));
+values.objectiveLabels={};values.LABYRINTH_OF_CHOICE_OBJECTIVE_LABELS={LO1:'LO 1 — Consumer choice'};
+assert.equal(JSON.parse(stamp('question',q).answerSnapshotJSON).objectiveLabel,'Consumer choice');
 const legacyKey={...s,schema:'mq-answer-snapshot/1'};assert.throws(()=>validateContractField('answerSnapshotJSON',JSON.stringify(legacyKey),{}));
 const output=process.env.MQ_EVIDENCE_DIR||'tmp/answer-release';fs.mkdirSync(output,{recursive:true});
 const classCollection=a.createCollection();for(let i=0;i<6;i++)classCollection.add('run'+i+'.csv',csv(rows.slice(i*8,i*8+8)));

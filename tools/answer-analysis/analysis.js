@@ -97,6 +97,11 @@
       groups:[...groups.values()].map(({runs,...g})=>({...g,runCount:runs.size,games:[...g.games],modes:[...g.modes]}))};
   }
   const plural=(n,one,many=one+'s')=>`${n} ${n===1?one:many}`;
+  function objectiveLabel(group){
+    const clean=value=>String(value||'').replace(/^LO\s*\d+(?:\.\d+)*(?:\s*[—–:_-]\s*|\s+|$)/i,'').replaceAll('_',' ').trim();
+    const labels=[...new Set((group.labels||[]).map(clean).filter(Boolean))];
+    return labels.join(' / ')||clean(group.objective)||'Learning objective description unavailable';
+  }
   const accuracy=a=>a.knownCorrectness?`${Math.round(100*a.correct/a.knownCorrectness)}%`:'unavailable';
   const sufficient=(a,min=5)=>a.knownCorrectness>=min&&a.runCount>=2;
   function reviewQuestions(result,min=5){return result.groups.filter(g=>g.keyStatus!=='conflict'&&g.knownCorrectness>=min&&g.correct<g.knownCorrectness).sort((a,b)=>a.correct/a.knownCorrectness-b.correct/b.knownCorrectness||b.runCount-a.runCount||b.count-a.count).slice(0,5);}
@@ -109,7 +114,7 @@
     const min=Math.max(5,Number(minResponses)||5);
     const source=grouping==='objectives'?result.objectives.filter(a=>a.objective&&!a.labelConflict):result.topics.filter(a=>a.topic!=='Topic unavailable');
     const eligible=source.filter(a=>sufficient(a,min)).sort((a,b)=>a.correct/a.knownCorrectness-b.correct/b.knownCorrectness||b.runCount-a.runCount);
-    const label=a=>(o.games.length>1?a.game+' — ':'')+(grouping==='objectives'?`${a.objective}${a.labels.length?' — '+a.labels[0]:''}`:a.topic.replaceAll('_',' '));
+    const label=a=>(o.games.length>1?a.game+' — ':'')+(grouping==='objectives'?objectiveLabel(a):a.topic.replaceAll('_',' '));
     const describe=a=>`${label(a)}: ${accuracy(a)} (${a.correct}/${a.knownCorrectness}; ${plural(a.runCount,'run')})`;
     if(s.keyConflicts||s.objectiveConflicts)lines.push('Conflicting answer-key or objective information needs review. Comparative conclusions are withheld until those records are checked.');
     else if(eligible.length){
@@ -142,5 +147,5 @@
       rows(){return [...files.values()].flatMap(file=>file.rows);}
     };
   }
-  const api={parseCSV,analyze,createCollection,normalizeRow,plural,accuracy,sufficient,reviewQuestions,feedbackSummary};if(typeof module==='object'&&module.exports)module.exports=api;else root.MQAnswerAnalysis=api;
+  const api={parseCSV,analyze,createCollection,normalizeRow,plural,objectiveLabel,accuracy,sufficient,reviewQuestions,feedbackSummary};if(typeof module==='object'&&module.exports)module.exports=api;else root.MQAnswerAnalysis=api;
 })(globalThis);

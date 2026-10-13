@@ -27,10 +27,10 @@ function renderOverview(){
   const topics=[...(objectiveView?summary.objectives:summary.topics)].sort((a,b)=>(a.knownCorrectness?a.correct/a.knownCorrectness:2)-(b.knownCorrectness?b.correct/b.knownCorrectness:2)||b.count-a.count);
   const multipleGames=new Set(topics.map(t=>t.game)).size>1;
   const topicTable=table([objectiveView?'Learning objective':'Topic',...(multipleGames?['Game']:[]),'Responses','Runs','Accuracy','Evidence'],topics.map(t=>[
-    objectiveView?(t.objective?`${t.objective}${t.labels.length?' — '+t.labels.join(' / '):''}${t.labelConflict?' (conflicting descriptions)':''}`:'Learning objective unavailable'):t.topic.replaceAll('_',' ').replaceAll('-',' '),
+    objectiveView?MQAnswerAnalysis.objectiveLabel(t)+(t.labelConflict?' (conflicting descriptions)':''):t.topic.replaceAll('_',' ').replaceAll('-',' '),
     ...(multipleGames?[t.game]:[]),t.count,t.runCount,percent(t.correct,t.knownCorrectness),MQAnswerAnalysis.sufficient(t)?'Broader sample':t.knownCorrectness<5?'Limited evidence (fewer than 5 responses)':'One run or run count unavailable']));
   if(!multipleGames)topicTable.classList.add('topic-results');
-  container.append(el('h3',objectiveView?'Results by learning objective':'Results by topic'),el('p',objectiveView?'Objectives are grouped by their recorded identifier within each game. Original labels are retained. Older files may lack descriptions.':'Topics use the labels recorded by each game. The current filters apply to every result below.','meta'),topicTable);
+  container.append(el('h3',objectiveView?'Results by learning objective':'Results by topic'),el('p',objectiveView?'Compare the learning objectives covered in these runs. Older files may lack descriptions.':'Topics use the labels recorded by each game. The current filters apply to every result below.','meta'),topicTable);
   if(summary.stats.missingObjectives||summary.stats.objectiveConflicts)container.append(el('p',`${plural(summary.stats.missingObjectives,'response')} without an objective; ${plural(summary.stats.objectiveConflicts,'question version')} with inconsistent objective assignments. Original labels remain in the tables.`,'meta'));
   const lowest=MQAnswerAnalysis.reviewQuestions(summary,Number(byId('minimum').value));
   if(lowest.length){
@@ -124,7 +124,7 @@ byId('download-summary').addEventListener('click',()=>{
   const o=summary.overview;
   rows.push(['class','','','','',summary.stats.included,o.correct,o.knownCorrectness,o.knownCorrectness?o.correct/o.knownCorrectness:'',o.runs,o.files,...filters,'','']);
   for(const t of summary.topics)rows.push(['topic',t.game,t.topic,'','',t.count,t.correct,t.knownCorrectness,t.knownCorrectness?t.correct/t.knownCorrectness:'',t.runCount,'',...filters,'','']);
-  for(const t of summary.objectives)rows.push(['objective',t.game,t.labels.join(' / '),'','',t.count,t.correct,t.knownCorrectness,t.knownCorrectness?t.correct/t.knownCorrectness:'',t.runCount,'',...filters,t.objective,'']);
+  for(const t of summary.objectives)rows.push(['objective',t.game,MQAnswerAnalysis.objectiveLabel(t),'','',t.count,t.correct,t.knownCorrectness,t.knownCorrectness?t.correct/t.knownCorrectness:'',t.runCount,'',...filters,t.objective,'']);
   for(const g of summary.groups)rows.push(['question',g.games.join(', '),g.prompt,g.questionID,g.revision,g.count,g.correct,g.knownCorrectness,g.knownCorrectness?g.correct/g.knownCorrectness:'',g.runCount,'',...filters,'',g.keyStatus]);
   downloadCSV(rows,'mastery-quests-class-summary.csv');
 });

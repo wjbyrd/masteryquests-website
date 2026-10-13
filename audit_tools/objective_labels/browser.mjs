@@ -1,0 +1,15 @@
+import fs from 'node:fs';import path from 'node:path';import http from 'node:http';import assert from 'node:assert/strict';import {createRequire} from 'node:module';
+const require=createRequire(import.meta.url),root=process.cwd(),out='validation_artifacts/objective_labels/browser';fs.mkdirSync(out,{recursive:true});
+const server=http.createServer((req,res)=>{try{let p=path.resolve(root,'.'+new URL(req.url,'http://local').pathname);if(p!==root&&!p.startsWith(root+path.sep))throw Error('path');if(fs.statSync(p).isDirectory())p=path.join(p,'index.html');res.setHeader('Content-Type',({'.html':'text/html','.js':'text/javascript','.css':'text/css','.webp':'image/webp','.png':'image/png'})[path.extname(p)]||'application/octet-stream');res.end(fs.readFileSync(p));}catch{res.writeHead(404).end();}});
+await new Promise(r=>server.listen(0,'127.0.0.1',r));const origin='http://127.0.0.1:'+server.address().port,{chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');let browser;
+try{
+ browser=await chromium.launch({channel:'msedge',headless:true});const context=await browser.newContext(),page=await context.newPage(),errors=[];
+ await context.route('**/*',r=>r.request().url().startsWith(origin)?r.continue():r.abort());page.on('pageerror',e=>errors.push(e.message));
+ await page.goto(origin+'/');
+ for(const width of [1440,768,390]){await page.setViewportSize({width,height:950});const button=page.locator('.footer-updates');await button.focus();assert(await button.evaluate(el=>document.activeElement===el));assert.equal(await button.textContent(),'Updates');assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await page.locator('.site-footer').screenshot({path:path.join(out,`footer-${width}.png`)});}
+ await page.keyboard.press('Enter');await page.waitForURL(origin+'/about/updates/');assert.equal(await page.title(),'Mastery Quests Updates');
+ await page.goto(origin+'/about/');assert.equal(await page.locator('main a[href="/about/updates/"]').count(),1);
+ const games=[['economic-realm','market-gate','LO4.3'],['macro-command-system','national-engine','LO2.1'],['micro-domains','labyrinth-of-choice','LO3.1'],['managerial-intelligence-directorate','cost-directive','LO1.1'],['managerial-directorate-classroom','cost-directive','LO1.1'],['managerial-directorate-telemetry-poc','cost-directive','LO1.1']];
+ const labels=[];for(const [family,game,key] of games){await page.goto(`${origin}/play/${family}/${game}/`);const label=await page.evaluate(key=>formatMasteryLabel(key),key);assert(!/\bLO\s*\d/.test(label));assert.notEqual(label,'Learning objective description unavailable',game);labels.push({family,game,key,label});}
+ assert.deepEqual(errors,[]);fs.writeFileSync(path.join(out,'labels-and-footer.json'),JSON.stringify({status:'PASS',labels,footerWidths:[1440,768,390],keyboardNavigation:'PASS',aboutLinkPreserved:true},null,2));console.log('PASS: description-only labels in six live build families; responsive footer button, keyboard navigation, and original About link.');
+}finally{await browser?.close();server.close();}

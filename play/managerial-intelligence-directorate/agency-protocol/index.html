@@ -8264,30 +8264,26 @@ function titleCase(value){
 
 function formatMasteryLabel(key){
     if(!key) return "Unlabeled Concept";
-
-    const text = String(key);
-    const exactLabel = AGENCY_PROTOCOL_OBJECTIVE_LABELS[text];
-
-    if(exactLabel){
-        return /^LO\d+\.\d+$/.test(text)
-            ? `${text} — ${exactLabel}`
-            : exactLabel;
+    const text = String(key).trim();
+    const clean = value => String(value || "").replace(/^LO\s*\d+(?:\.\d+)*(?:\s*[—–:_-]\s*|\s+|$)/i, "").trim();
+    const maps = [
+        typeof TEMPLATE_OBJECTIVE_LABELS === "undefined" ? {} : TEMPLATE_OBJECTIVE_LABELS,
+        typeof objectiveLabels === "undefined" ? {} : objectiveLabels,
+        typeof LABYRINTH_OF_CHOICE_OBJECTIVE_LABELS === "undefined" ? {} : LABYRINTH_OF_CHOICE_OBJECTIVE_LABELS
+    ];
+    for(const labels of maps){
+        if(clean(labels[text])) return clean(labels[text]);
     }
-
-    const objectiveMatch = text.match(/^(LO\d+\.\d+)/);
-    if(objectiveMatch && AGENCY_PROTOCOL_OBJECTIVE_LABELS[objectiveMatch[1]]){
-        const suffix = text
-            .replace(objectiveMatch[1], "")
-            .replace(/^_+/, "")
-            .replace(/_/g, " ")
-            .trim();
-
-        return suffix
-            ? `${objectiveMatch[1]} — ${AGENCY_PROTOCOL_OBJECTIVE_LABELS[objectiveMatch[1]]}: ${titleCase(suffix)}`
-            : `${objectiveMatch[1]} — ${AGENCY_PROTOCOL_OBJECTIVE_LABELS[objectiveMatch[1]]}`;
+    const objectiveMatch = text.match(/^LO\s*(\d+(?:\.\d+)*)(?=$|[\s_—–:-])/i);
+    if(objectiveMatch){
+        const suffix = text.slice(objectiveMatch[0].length).replace(/^[\s_—–:-]+/, "");
+        for(const labels of maps){
+            const label = clean(labels["LO" + objectiveMatch[1]]);
+            if(label) return suffix ? `${label}: ${titleCase(suffix)}` : label;
+        }
+        return suffix ? titleCase(suffix) : "Learning objective description unavailable";
     }
-
-    return titleCase(text);
+    return /^\d+(?:\.\d+)+$/.test(text) ? "Learning objective description unavailable" : titleCase(text);
 }
 
 function formatPercent(value){
@@ -8590,7 +8586,7 @@ function getInstructionalObjectiveTitle(objectiveId){
     const normalized = normalizeLearningObjectiveId(objectiveId);
     const config = getInstructionalResourceConfig();
     const mappedTitle = normalized ? getObjectiveResourceMapping(config, normalized)?.title : "";
-    return mappedTitle ? `LO ${normalized} — ${mappedTitle}` : (normalized ? `LO ${normalized}` : formatMasteryLabel(objectiveId));
+    return formatMasteryLabel(mappedTitle || objectiveId);
 }
 function getInstructionalResourceActionLabel(resource){
     if(typeof resource?.actionLabel === "string" && resource.actionLabel.trim()) return resource.actionLabel;
@@ -9912,29 +9908,26 @@ function renderEvidenceBadge(evidence){
 
 function formatMasteryLabel(key){
     if(!key) return "Unlabeled Concept";
-
-    const text = String(key);
-    const exactLabel = AGENCY_PROTOCOL_OBJECTIVE_LABELS[text];
-
-    if(exactLabel){
-        return exactLabel;
+    const text = String(key).trim();
+    const clean = value => String(value || "").replace(/^LO\s*\d+(?:\.\d+)*(?:\s*[—–:_-]\s*|\s+|$)/i, "").trim();
+    const maps = [
+        typeof TEMPLATE_OBJECTIVE_LABELS === "undefined" ? {} : TEMPLATE_OBJECTIVE_LABELS,
+        typeof objectiveLabels === "undefined" ? {} : objectiveLabels,
+        typeof LABYRINTH_OF_CHOICE_OBJECTIVE_LABELS === "undefined" ? {} : LABYRINTH_OF_CHOICE_OBJECTIVE_LABELS
+    ];
+    for(const labels of maps){
+        if(clean(labels[text])) return clean(labels[text]);
     }
-
-    const objectiveMatch = text.match(/^(LO\d+\.\d+)/);
-
-    if(objectiveMatch && AGENCY_PROTOCOL_OBJECTIVE_LABELS[objectiveMatch[1]]){
-        const suffix = text
-            .replace(objectiveMatch[1], "")
-            .replace(/^_+/, "")
-            .replace(/^-+/, "")
-            .trim();
-
-        return suffix
-            ? `${AGENCY_PROTOCOL_OBJECTIVE_LABELS[objectiveMatch[1]]}: ${titleCase(suffix)}`
-            : AGENCY_PROTOCOL_OBJECTIVE_LABELS[objectiveMatch[1]];
+    const objectiveMatch = text.match(/^LO\s*(\d+(?:\.\d+)*)(?=$|[\s_—–:-])/i);
+    if(objectiveMatch){
+        const suffix = text.slice(objectiveMatch[0].length).replace(/^[\s_—–:-]+/, "");
+        for(const labels of maps){
+            const label = clean(labels["LO" + objectiveMatch[1]]);
+            if(label) return suffix ? `${label}: ${titleCase(suffix)}` : label;
+        }
+        return suffix ? titleCase(suffix) : "Learning objective description unavailable";
     }
-
-    return titleCase(text);
+    return /^\d+(?:\.\d+)+$/.test(text) ? "Learning objective description unavailable" : titleCase(text);
 }
 
 function getBucketEntry(key, bucket, category = "concept"){

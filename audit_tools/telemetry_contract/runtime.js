@@ -87,8 +87,9 @@ function createTelemetryContract(get, registry) {
       const content={gameID,questionID:String(q.id??q.questionId),questionVersion:String(q.version??1),prompt,
         options:ordered,optionOrder:canonical?'canonical':'displayed',assetRevision:b.assetRevision};
       const objectiveID=String(row.objective||q.objective||'').slice(0,300);
-      const labels=get('objectiveLabels',{}),templateLabels=get('TEMPLATE_OBJECTIVE_LABELS',{});
-      const objectiveLabel=String(labels?.[objectiveID]||templateLabels?.[objectiveID]||'').slice(0,2000);
+      const labels=get('objectiveLabels',{}),templateLabels=get('TEMPLATE_OBJECTIVE_LABELS',{}),microLabels=get('LABYRINTH_OF_CHOICE_OBJECTIVE_LABELS',{});
+      const objectiveLabel=String(labels?.[objectiveID]||templateLabels?.[objectiveID]||microLabels?.[objectiveID]||'')
+        .replace(/^LO\s*\d+(?:\.\d+)*(?:\s*[—–:_-]\s*|\s+|$)/i,'').trim().slice(0,2000);
       const snapshot={schema:'mq-answer-snapshot/2',...content,questionRevision:hash(content),objectiveID,objectiveLabel,
         correctOptionIndices:row.event==='question'?correctOptions(q,options,canonical?mapping:options.map((_,i)=>i)):null,
         contentRevision:q.telemetryContentRevision||null,selectedIndex:canonical?mapping[selected]:selected,
