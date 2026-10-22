@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-22",
+  "baseline": "5e1d5644cc4dffcf60a614c7dd12c568238e0e14",
+  "node": "v24.14.1",
+  "playwright": "1.62.1",
+  "axe": "4.11.0",
+  "edge": "155.0.4283.62",
+  "chrome": "155.0.8059.85",
+  "routes": 83,
+  "currentRoutes": 77,
+  "questionStates": 24,
+  "currentRuntimeErrors": [],
+  "remainingCurrentAutomatedFindings": [
+    {
+      "route": "/how-to/learning-outcomes/index.html",
+      "landing": [
+        "landmark-complementary-is-top-level"
+      ]
+    }
+  ],
+  "suites": {
+    "modes": {
+      "file": "closeout-v2/modes.json",
+      "cases": 48,
+      "passed": 48,
+      "failed": 0
+    },
+    "representative": {
+      "file": "representative-final/representative.json",
+      "cases": 13,
+      "passed": 13,
+      "failed": 0
+    },
+    "states": {
+      "file": "closeout/states.json",
+      "cases": 10,
+      "passed": 10,
+      "failed": 0
+    },
+    "interactions": {
+      "file": "closeout-v2/interactions.json",
+      "cases": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "faculty": {
+      "file": "final-v3/faculty.json",
+      "cases": 7,
+      "passed": 7,
+      "failed": 0
+    }
+  },
+  "protected": {
+    "files": 26,
+    "checks": 430,
+    "failures": [],
+    "bankChanges": []
+  },
+  "sync": {
+    "files": 32,
+    "changed": []
+  },
+  "screenReader": "NOT PERFORMED",
+  "firefox": "Unavailable executable",
+  "webkit": "Unavailable executable"
+}

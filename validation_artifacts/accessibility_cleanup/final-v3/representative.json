@@ -1,0 +1,51 @@
+[
+  {
+    "name": "standard release and focus",
+    "status": "PASS"
+  },
+  {
+    "name": "timed release and focus",
+    "status": "PASS"
+  },
+  {
+    "name": "exam release and focus",
+    "status": "PASS"
+  },
+  {
+    "name": "quiz release and focus",
+    "status": "PASS"
+  },
+  {
+    "name": "unlimited release and focus",
+    "status": "PASS"
+  },
+  {
+    "name": "legendary release and focus",
+    "status": "PASS"
+  },
+  {
+    "name": "score release and focus",
+    "status": "PASS"
+  },
+  {
+    "name": "trialGraph release and focus",
+    "status": "PASS"
+  },
+  {
+    "name": "fadingFortune release and focus",
+    "status": "PASS"
+  },
+  {
+    "name": "riskReward release and focus",
+    "status": "PASS"
+  },
+  {
+    "name": "Graph description, dialog trap, close and focus restoration",
+    "status": "FAIL",
+    "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(await graph.evaluate(e=>e===document.activeElement))\n\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/accessibility_cleanup/representative.mjs:44:70\n    at async test (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/accessibility_cleanup/representative.mjs:5:34)\n    at async file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/accessibility_cleanup/representative.mjs:27:2"
+  },
+  {
+    "name": "Setup cancel, exit cancel and motion control",
+    "status": "PASS"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "scan": {
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "aria-valid-attr-value",
+        "count": 1
+      },
+      {
+        "id": "color-contrast",
+        "count": 19
+      }
+    ],
+    "passes": 35
+  },
+  "released": true,
+  "tree": "- status: Entering Score Attack. Stage One. Room 1 of 30.\n- status:\n  - status \"Today's Daily. Get 5 correct answers. 0 / 5. Complete today's task in any eligible mode. Tap for details.\": Today's Daily Get 5 correct answers 0 / 5 Complete today's task in any eligible mode. Tap for details.\n- main \"Current game\":\n  - button \"GAME MENU\"\n  - heading \"Faculty Starter Practice\" [level=1]\n  - img \"Current room 1 of 30\": 🟦\n  - img \"Room 2 of 30\": 🟨\n  - img \"Room 3 of 30\": 🟨\n  - img \"Room 4 of 30\": 🟨\n  - img \"Room 5 of 30\": 🟨\n  - img \"Room 6 of 30\": 🟨\n  - img \"Room 7 of 30\": 🟨\n  - img \"Room 8 of 30\": 🟨\n  - img \"Room 9 of 30\": 🟨\n  - img \"Room 10 of 30\": ①\n  - img \"Room 11 of 30\": 🟨\n  - img \"Room 12 of 30\": 🟨\n  - img \"Room 13 of 30\": 🟨\n  - img \"Room 14 of 30\": 🟨\n  - img \"Room 15 of 30\": 🟨\n  - img \"Room 16 of 30\": 🟨\n  - img \"Room 17 of 30\": 🟨\n  - img \"Room 18 of 30\": 🟨\n  - img \"Room 19 of 30\": 🟨\n  - img \"Room 20 of 30\": ②\n  - img \"Room 21 of 30\": 🟨\n  - img \"Room 22 of 30\": 🟨\n  - img \"Room 23 of 30\": 🟨\n  - img \"Room 24 of 30\": 🟨\n  - img \"Room 25 of 30\": 🟨\n  - img \"Room 26 of 30\": 🟨\n  - img \"Room 27 of 30\": 🟨\n  - img \"Room 28 of 30\": 🟨\n  - img \"Room 29 of 30\": 🟨\n  - img \"Room 30 of 30\": ③\n  - text: ⍟ Score Attack Active\n  - paragraph: Score Attack — Stage One (1/30)\n  - text: Score 0 Best 0\n  - paragraph\n  - 'button \"Enlarge graph: Bar chart comparing two groups of items.\"'\n  - group: Graph description\n  - text: Enlarge graph\n  - 'heading \"Graph practice 12: How many items do groups A and B contain altogether?\" [level=2]'\n  - paragraph: Choose the best answer.\n  - 'button \"Answer option: 6\" [disabled]': \"6\"\n  - 'button \"Answer option: 4\" [disabled]': \"4\"\n  - 'button \"Answer option: 8\" [disabled]': \"8\"\n  - 'button \"Answer option: 2\" [disabled]': \"2\"\n  - button \"Reduced motion enabled\" [disabled] [pressed]"
+}

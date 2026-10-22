@@ -3,14 +3,19 @@ import { readFile, stat } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 export const gameRoot = fileURLToPath(new URL('./game/', import.meta.url));
+const growthRoot = fileURLToPath(new URL('../../play/growth-realms/', import.meta.url));
 export function previewServer() {
   return createServer(async (req, res) => {
     try {
       let name = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
       // Canonical public name, with the historical source/test folder retained.
       if(name==='/games/signal-house'||name.startsWith('/games/signal-house/'))name=name.replace('/games/signal-house','/games/the-shock-house');
-      let file = path.resolve(gameRoot, `.${name}`);
-      if (file !== path.resolve(gameRoot) && !file.startsWith(gameRoot)) { res.writeHead(403).end(); return; }
+      // Match the publication builder's external-game mapping in local QA too.
+      const isGrowth=name==='/games/growth-realms'||name.startsWith('/games/growth-realms/');
+      const sourceRoot=isGrowth?growthRoot:gameRoot;
+      if(isGrowth)name=name.slice('/games/growth-realms'.length)||'/';
+      let file = path.resolve(sourceRoot, `.${name}`);
+      if (file !== path.resolve(sourceRoot) && !file.startsWith(path.resolve(sourceRoot)+path.sep)) { res.writeHead(403).end(); return; }
       if ((await stat(file)).isDirectory()) file = path.join(file, 'index.html');
       const body = await readFile(file);
       res.writeHead(200, { 'Content-Type': ({ '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.svg': 'image/svg+xml', '.webp': 'image/webp' })[path.extname(file)] || 'application/octet-stream',

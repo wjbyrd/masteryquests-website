@@ -1,0 +1,14 @@
+locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('button[data-action="search"][data-id="groceries"]:not([inert] *):visible').first()[22m
+
+    at act (C:\Users\Jennings\Documents\GitHub\masteryquests-website\audit_tools\econ_rpg\tests\shock-house\__accessibility_panorama.cjs:12:144)
+    at search (C:\Users\Jennings\Documents\GitHub\masteryquests-website\audit_tools\econ_rpg\tests\shock-house\__accessibility_panorama.cjs:13:19)
+    at path (C:\Users\Jennings\Documents\GitHub\masteryquests-website\audit_tools\econ_rpg\tests\shock-house\__accessibility_panorama.cjs:18:55)
+    at async household (C:\Users\Jennings\Documents\GitHub\masteryquests-website\audit_tools\econ_rpg\tests\shock-house\__accessibility_panorama.cjs:32:28)
+    at async C:\Users\Jennings\Documents\GitHub\masteryquests-website\audit_tools\econ_rpg\tests\shock-house\__accessibility_panorama.cjs:51:231 {
+  log: [
+    `  - waiting for locator('button[data-action="search"][data-id="groceries"]:not([inert] *):visible').first()`
+  ],
+  name: 'TimeoutError'
+}

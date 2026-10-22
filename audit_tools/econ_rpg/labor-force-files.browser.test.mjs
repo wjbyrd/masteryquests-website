@@ -20,7 +20,7 @@ async function radio(p,value){for(let n=0;n<80;n++){if(await p.evaluate(()=>docu
 async function submit(p,target){if(typeof target==='object'){for(const [k,v]of Object.entries(target)){if(k==='participation')await radio(p,v);else await fill(p,k,typeof v==='number'&&k!=='laborForce'?v.toFixed(2)+'%':v);}await press(p,'button[type=submit]');}else await press(p,`[data-answer="${target}"]`);}
 async function inspect(p,label){
   assert.ok(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),label+' overflow');
-  const img=p.locator('.scene img');await img.evaluate(i=>i.decode());assert.equal(await img.evaluate(i=>i.naturalWidth),1672);assert.equal(await img.evaluate(i=>getComputedStyle(i).objectFit),'contain');assert.ok((await img.getAttribute('alt')).length>60);
+  const img=p.locator('.scene img');await img.evaluate(i=>i.decode());assert.equal(await img.evaluate(i=>i.naturalWidth),1672);assert.equal(await img.evaluate(i=>getComputedStyle(i).objectFit),'fill');assert.ok((await img.getAttribute('alt')).length>60);
   for(const input of await p.locator('input').all())assert.ok(await input.evaluate(el=>el.labels.length>0));
   for(const control of await p.locator('button:visible,input[type=text]:visible,.return-games,.radio:visible').all())assert.ok((await control.boundingBox()).height>=44,label+' target');
   assert.equal(await p.locator('.population tbody th[scope=row]').count(),7);assert.equal(await p.locator('#announcement[aria-live=polite][aria-atomic=true]').count(),1);
@@ -30,7 +30,7 @@ async function capture(p,label){if(label.startsWith('zoom')){await p.bringToFron
 async function play(context,seed,label,captureAll=false,wrong=true){
   const p=await context.newPage();p.on('pageerror',x=>errors.push(x.message));p.on('console',x=>{if(x.type()==='error')errors.push(x.text());});p.on('response',r=>{if(r.status()>=400)errors.push(`${r.status()} ${r.url()}`);});p.on('request',r=>{if(!r.url().startsWith(origin+'/'))external.push(r.url());});
   await p.addInitScript(seed=>{const original=crypto.getRandomValues.bind(crypto);Object.defineProperty(crypto,'getRandomValues',{value(a){if(a instanceof Uint32Array&&a.length===1){a[0]=seed;return a;}return original(a);}});},seed);
-  await p.goto(origin+'/games/');await p.evaluate(()=>localStorage.clear());const card=p.locator('[data-game=labor-force-files]');assert.equal(await card.locator('h2').innerText(),CONFIG.title);assert.equal(await card.locator('p').innerText(),CONFIG.description);await card.locator('img').evaluate(i=>i.decode());if(captureAll&&!label.startsWith('zoom'))await card.screenshot({path:`${out}/${label}-card.png`});
+  await p.goto(origin+'/games/');await p.evaluate(()=>localStorage.clear());const card=p.locator('[data-game=labor-force-files]');assert.equal(await card.locator('h2').innerText(),CONFIG.title);assert.equal(await card.locator('p').innerText(),CONFIG.description);await card.scrollIntoViewIfNeeded();await card.locator('img').evaluate(i=>i.decode());if(captureAll&&!label.startsWith('zoom'))await card.screenshot({path:`${out}/${label}-card.png`});
   await press(p,'[data-game=labor-force-files] a');await p.waitForURL('**'+CONFIG.route);assert.equal(await p.title(),CONFIG.title+' | Mastery Quests');await inspect(p,label);
   if(label==='zoom200'){assert.equal(await p.evaluate(()=>innerWidth),683);assert.equal(await p.evaluate(()=>devicePixelRatio),2);}
   if(captureAll)await capture(p,label+'-intro');

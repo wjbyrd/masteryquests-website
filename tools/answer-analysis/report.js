@@ -100,6 +100,8 @@ function addFiles(files){
     }catch(e){errors.push(`${file.name}: ${e.message}`);}}
     if(generation!==loadGeneration)return;
     byId('errors').textContent=errors.join('\n');
+    byId('files').setAttribute('aria-invalid',String(errors.length>0));
+    byId('files').setAttribute('aria-describedby','errors import-status');
     byId('import-status').textContent=`${plural(added,'file')} added. ${plural(duplicates,'identical file')} already loaded. ${plural(collection.entries().length,'file')} in this report.`;
     update();
   });
@@ -110,7 +112,7 @@ dropZone.addEventListener('dragover',event=>{event.preventDefault();dropZone.cla
 dropZone.addEventListener('dragleave',()=>dropZone.classList.remove('dragging'));
 dropZone.addEventListener('drop',event=>{event.preventDefault();dropZone.classList.remove('dragging');addFiles(Array.from(event.dataTransfer.files));});
 for(const id of ['exposure','assistance','mode','grouping','minimum'])byId(id).addEventListener('change',refresh);
-byId('clear').addEventListener('click',()=>{loadGeneration++;collection.clear();byId('files').value='';byId('errors').textContent='';byId('import-status').textContent='';byId('summary-editor').hidden=true;byId('summary-text').value='';byId('copy-status').textContent='';for(const id of ['exposure','assistance','mode'])byId(id).value='all';update();});
+byId('clear').addEventListener('click',()=>{loadGeneration++;collection.clear();byId('files').value='';byId('files').removeAttribute('aria-invalid');byId('errors').textContent='';byId('import-status').textContent='';byId('summary-editor').hidden=true;byId('summary-text').value='';byId('copy-status').textContent='';for(const id of ['exposure','assistance','mode'])byId(id).value='all';update();});
 byId('copy-summary').addEventListener('click',async()=>{
   const text=summaryText();byId('summary-editor').hidden=false;byId('summary-text').value=text;
   try{await navigator.clipboard.writeText(text);byId('copy-status').textContent='Class summary copied. You can edit the text below before using it.';}
@@ -120,6 +122,7 @@ function downloadCSV(rows,name){
   const escape=value=>'"'+String(value).replace(/^[=+@\-\t\r]/,"'$&").replaceAll('"','""')+'"';
   const url=URL.createObjectURL(new Blob(['\uFEFF'+rows.map(row=>row.map(escape).join(',')).join('\r\n')],{type:'text/csv;charset=utf-8'}));
   const link=el('a','');link.href=url;link.download=name;link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+  byId('copy-status').textContent=`Download prepared: ${name}.`;
 }
 byId('download').addEventListener('click',()=>{
   const rows=[['gameID','questionID','questionRevision','question','choice','count','share','correctAnswer','keyStatus','correctCount','knownCorrectness','runCount','exposureFilter','assistanceFilter','modeFilter']];

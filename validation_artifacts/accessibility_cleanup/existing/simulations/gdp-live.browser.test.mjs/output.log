@@ -1,0 +1,101 @@
+{
+  "results": [
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "seed": 10,
+      "audit": "audit-transfer",
+      "reducedMotion": false,
+      "finalGDP": 25071,
+      "events": 49
+    },
+    {
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "seed": 4,
+      "audit": "audit-import",
+      "reducedMotion": false,
+      "finalGDP": 25086,
+      "events": 49
+    },
+    {
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "seed": 2,
+      "audit": "audit-inventory",
+      "reducedMotion": false,
+      "finalGDP": 25069,
+      "events": 49
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "seed": 7,
+      "audit": "audit-housing",
+      "reducedMotion": true,
+      "finalGDP": 25090,
+      "events": 49
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "seed": 1,
+      "audit": "audit-used",
+      "reducedMotion": true,
+      "finalGDP": 25078,
+      "events": 49
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "seed": 10,
+      "audit": "audit-transfer",
+      "reducedMotion": false,
+      "finalGDP": 25071,
+      "events": 49
+    }
+  ],
+  "errors": [
+    "404 http://127.0.0.1:55216/games/growth-realms/card.js",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "external": []
+}
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
++ actual - expected
+
++ [
++   '404 http://127.0.0.1:55216/games/growth-realms/card.js',
++   'Failed to load resource: the server responded with a status of 404 (Not Found)'
++ ]
+- []
+
+    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/econ_rpg/__accessibility_gdp-live.browser.test.mjs:191:10 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: [
+    '404 http://127.0.0.1:55216/games/growth-realms/card.js',
+    'Failed to load resource: the server responded with a status of 404 (Not Found)'
+  ],
+  expected: [],
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.14.1

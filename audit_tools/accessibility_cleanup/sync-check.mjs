@@ -1,0 +1,5 @@
+import fs from 'node:fs';import crypto from 'node:crypto';import {execFileSync} from 'node:child_process';import assert from 'node:assert/strict';
+const files=execFileSync('git',['-c','core.safecrlf=false','diff','--name-only'],{encoding:'utf8'}).trim().split(/\r?\n/).filter(f=>f.endsWith('.html'));
+const hash=file=>crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');const before=new Map(files.map(f=>[f,hash(f)]));
+for(const script of ['accessibility_cleanup/sync.mjs','economic_realm_engine/sync.mjs','macro_command_engine/sync.mjs','accessibility_cleanup/legacy.mjs','accessibility_cleanup/hubs.mjs'])execFileSync(process.execPath,['audit_tools/'+script],{stdio:'pipe'});
+const changed=files.filter(f=>before.get(f)!==hash(f));const result={files:files.length,changed};fs.writeFileSync('validation_artifacts/accessibility_cleanup/closeout/sync-check.json',JSON.stringify(result,null,2));assert.deepEqual(changed,[]);console.log('PASS canonical/generated presentation is synchronized and propagation is idempotent.');

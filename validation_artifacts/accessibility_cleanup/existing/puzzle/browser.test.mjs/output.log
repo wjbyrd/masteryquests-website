@@ -1,0 +1,16 @@
+PASS Games entry opens the standalone landing page
+PASS keyboard selection, arrow navigation, escape and submit gating
+PASS selection capped at four, shuffle preserves selection, solved group persists after reload
+PASS win state, all explanations, elapsed time, result focus and share summary
+PASS three-strike loss, repeat protection, reveal, revisit and distinct lifetime stats
+PASS UTC midnight at 8 p.m. Eastern does not change local puzzles or statuses
+PASS local midnight starts a new board and preserves completed history byte for byte
+PASS 320px, 390px, 420px and 768px layouts: no horizontal overflow; readable, >=44px tile targets
+PASS another tab’s completion synchronizes without a second counted game
+PASS legacy lifetime totals survive; v2 has independent status; midnight preserves an unfinished game
+PASS local midnight and streak carry across 23/25-hour days, year boundary, leap day and month boundary
+PASS 1 away live feedback, keyboard focus, selected tiles, duplicate/reload protection, 2/4 silence and third-strike loss
+PASS touch/mobile 320/390/420/768: all 384 labels fit, natural wrapping, solved typography, sticky controls and result actions
+PASS blocked localStorage displays a warning while play remains available
+PASS no JavaScript runtime errors
+15 browser checks passed. Screenshots: C:\Users\Jennings\Documents\GitHub\masteryquests-website\tmp\accessibility_cleanup\econnections

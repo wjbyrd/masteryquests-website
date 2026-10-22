@@ -24,7 +24,7 @@ if (menuButton && navigation) {
   });
 
   document.addEventListener("keydown", (event) => {
-    if (event.key !== "Escape") {
+    if (event.key !== "Escape" || !navigation.classList.contains("is-open")) {
       return;
     }
 

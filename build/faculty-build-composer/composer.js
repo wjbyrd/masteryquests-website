@@ -716,6 +716,7 @@ async function useCustomImage(slotId, file){
 function renderThemePresets(){
   const container = $('themePresetOptions');
   if(!container || !ThemeLibrary) return;
+  const focusedPreset = container.contains(document.activeElement) ? document.activeElement.dataset.themePreset : null;
   const assets = new Map(ThemeLibrary.assets.map(asset => [asset.id, asset]));
   container.innerHTML = Object.values(ThemeLibrary.presets).filter(preset => preset.facultyVisible !== false).map(preset => {
     const preview = assets.get(preset.previewAssetId) || null;
@@ -725,6 +726,7 @@ function renderThemePresets(){
       <span class="theme-preset-copy"><strong>${esc(preset.label)}</strong><small>${esc(preset.description || '')}</small></span>
     </button>`;
   }).join('');
+  if(focusedPreset) container.querySelector(`[data-theme-preset="${CSS.escape(focusedPreset)}"]`)?.focus({preventScroll:true});
   container.querySelectorAll('[data-theme-preset]').forEach(button => {
     button.addEventListener('click', () => {
       state.appearance.presetId = button.dataset.themePreset;
@@ -739,6 +741,9 @@ function renderThemePresets(){
 function renderThemeSlots(){
   const container = $('themeSlotGroups');
   if(!container || !ThemeLibrary) return;
+  const focused = container.contains(document.activeElement) ? document.activeElement : null;
+  const focusSlot = focused?.dataset.themeSlotSelect || focused?.dataset.customUploadButton || focused?.dataset.themeReset;
+  const focusKind = focused?.dataset.customUploadButton ? 'data-custom-upload-button' : 'data-theme-slot-select';
   rememberThemeGroupOpenState(container);
   const resolved = currentResolvedTheme();
   const groups = new Map();
@@ -776,16 +781,17 @@ function renderThemeSlots(){
               ${options.map(asset => `<option value="${esc(asset.id)}" ${selectedOverride === asset.id ? 'selected' : ''}>${esc(asset.label)}</option>`).join('')}
             </select>
             <div class="custom-image-actions">
-              <button type="button" class="custom-upload" data-custom-upload-button="${esc(slotId)}">${customAsset ? 'Replace Image' : 'Upload My Image'}</button>
+              <button type="button" class="custom-upload" data-custom-upload-button="${esc(slotId)}" aria-label="${customAsset ? 'Replace Image' : 'Upload My Image'}: ${esc(definition.label)}" ${message ? `aria-describedby="custom-status-${esc(slotId)}"` : ''}>${customAsset ? 'Replace Image' : 'Upload My Image'}</button>
               <input class="hidden" type="file" data-custom-upload-input="${esc(slotId)}" accept="image/webp,image/png,image/jpeg,.webp,.png,.jpg,.jpeg">
               ${customDetails ? `<span class="custom-image-meta">${esc(customDetails)}</span>` : ''}
             </div>
-            ${message ? `<div class="custom-image-message ${esc(messageType)}" role="status">${esc(message)}</div>` : ''}
+            ${message ? `<div id="custom-status-${esc(slotId)}" class="custom-image-message ${esc(messageType)}" role="status">${esc(message)}</div>` : ''}
           </div>
-          ${selectedOverride || customId ? `<button type="button" class="theme-reset" data-theme-reset="${esc(slotId)}" title="Reset ${esc(definition.label)} to selected theme" aria-label="Reset ${esc(definition.label)} to selected theme">Reset to Theme</button>` : ''}
+          ${selectedOverride || customId ? `<button type="button" class="theme-reset" data-theme-reset="${esc(slotId)}" title="Reset ${esc(definition.label)} to selected theme" aria-label="Reset to Theme: ${esc(definition.label)}">Reset to Theme</button>` : ''}
         </div>`;
       }).join('')}</div>
     </details>`).join('');
+  if(focusSlot) container.querySelector(`[${focusKind}="${CSS.escape(focusSlot)}"]`)?.focus({preventScroll:true});
 
   container.querySelectorAll('[data-theme-group]').forEach(group => {
     group.addEventListener('toggle', () => themeGroupOpenState.set(group.dataset.themeGroup, group.open));
@@ -1487,11 +1493,13 @@ function switchStep(step){
   });
   document.querySelectorAll('.step-nav [data-step]').forEach(button => {
     button.classList.toggle('active', Number(button.dataset.step) === state.step);
+    if(Number(button.dataset.step) === state.step) button.setAttribute('aria-current','step');
+    else button.removeAttribute('aria-current');
   });
   $('prevStep').disabled = state.step === 1;
   $('nextStep').disabled = state.step === 7;
   if(state.step >= 6) refreshGeneratedSizeEstimate();
-  window.scrollTo({top: 0, behavior: 'smooth'});
+  window.scrollTo({top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'});
 }
 
 function downloadBlob(blob, name){
@@ -1501,6 +1509,7 @@ function downloadBlob(blob, name){
   document.body.appendChild(anchor);
   anchor.click();
   anchor.remove();
+  announce(`Download prepared: ${name}.`);
   setTimeout(() => URL.revokeObjectURL(anchor.href), 1000);
 }
 

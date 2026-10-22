@@ -32,7 +32,7 @@ async function contrast(p){
 }
 async function check(context,label){
   const p=await context.newPage();p.on('pageerror',err=>errors.push(err.message));p.on('console',m=>{if(m.type()==='error')errors.push(m.text());});p.on('response',r=>{if(r.status()>=400)errors.push(r.status()+' '+r.url());});
-  await p.goto(origin+'/games/');const hubImage=p.locator('[data-game=labor-force-files] img');await hubImage.evaluate(i=>i.decode());assert.ok(await hubImage.evaluate(i=>Math.abs(i.clientWidth/i.clientHeight-4/3)<.02),'hub image matches the shared 4:3 card frame');assert.equal(await hubImage.evaluate(i=>getComputedStyle(i).objectFit),'fill');if(!label.startsWith('zoom'))await p.locator('[data-game=labor-force-files]').screenshot({path:`${out}/${label}-hub.png`});
+  await p.goto(origin+'/games/');const hubImage=p.locator('[data-game=labor-force-files] img');await hubImage.scrollIntoViewIfNeeded();await hubImage.evaluate(i=>i.decode());assert.ok(await hubImage.evaluate(i=>Math.abs(i.clientWidth/i.clientHeight-4/3)<.02),'hub image matches the shared 4:3 card frame');assert.equal(await hubImage.evaluate(i=>getComputedStyle(i).objectFit),'fill');if(!label.startsWith('zoom'))await p.locator('[data-game=labor-force-files]').screenshot({path:`${out}/${label}-hub.png`});
   await p.goto(origin+'/games/labor-force-files/');assert.equal(await p.locator('.edition').count(),0);assert.doesNotMatch(await p.locator('.hero').innerText(),/POPULATION · EMPLOYMENT · PARTICIPATION/);
   const r=fixture('direct-calc'),target=e.expected(r);await load(p,r);await imageFit(p,'.scene img');await screenshot(p,label+'-paper');
   if(label==='1366x768'){

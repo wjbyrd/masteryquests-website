@@ -176,7 +176,9 @@ const STORAGE_PREFIX =`);
   }
   for(const m of html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g))new vm.Script(m[1]);
   if(check)assert.equal(fs.readFileSync(`${base}/index.html`,'utf8').replace(/\r\n/g,'\n'),html,`${game} engine drift`);
-  else fs.writeFileSync(`${base}/index.html`,html);
+  else if(fs.readFileSync(`${base}/index.html`,'utf8')!==html){
+    const temporary=`${base}/index.html.sync-tmp`;fs.writeFileSync(temporary,html);fs.renameSync(temporary,`${base}/index.html`);
+  }
   results.push({game,modes,graphCandidates:graph.length,ordinary:ordinary.length,missingImages});
 }
 console.log(JSON.stringify(results,null,2));

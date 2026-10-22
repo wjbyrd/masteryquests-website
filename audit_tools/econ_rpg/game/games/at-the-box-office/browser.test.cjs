@@ -85,7 +85,7 @@ const server=http.createServer((req,res)=>{
         assert.notEqual(next.season.seed,season.seed);next.season.variants.forEach((v,i)=>assert.notEqual(v,season.variants[i]));
         assert.notDeepEqual(next.season.scenarios.map(s=>s.startingState),season.scenarios.map(s=>s.startingState));assert.equal(next.selections.length,0);
       }
-      await page.goto(origin+prefix);assert.equal(await page.locator('.game-card').count(),13);
+      await page.goto(origin+prefix);assert.equal(await page.locator('.game-card').count(),JSON.parse(fs.readFileSync('audit_tools/econ_rpg/games-preview.json','utf8')).gameCount);
       const card=page.locator('[data-game="at-the-box-office"]');await card.locator('img').evaluate(i=>i.decode());
       const box=await card.locator('img').boundingBox();assert(Math.abs(box.width/box.height-4/3)<.02);
       await card.locator('a').click();await page.waitForURL(url);await page.close();
