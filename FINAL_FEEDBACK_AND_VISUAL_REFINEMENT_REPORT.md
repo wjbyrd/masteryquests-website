@@ -1,5 +1,7 @@
 # Final Feedback and Visual Refinement Report
 
+Evidence-path note (PR cleanup): Generated files referenced under `validation_artifacts/` are retained locally as ignored test outputs and are not included in the current PR tree. The three captured production inputs for the boss comparison remain tracked. See [ACCESSIBILITY_PR_CLEANUP_REPORT.md](ACCESSIBILITY_PR_CLEANUP_REPORT.md) for retention details. Historical test conclusions below are unchanged.
+
 22 October 2026 · `accessibility-preview` · comparison baseline `90f12687`
 
 ## Executive summary

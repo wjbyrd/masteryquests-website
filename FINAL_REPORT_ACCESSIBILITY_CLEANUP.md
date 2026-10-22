@@ -1,5 +1,7 @@
 # Accessibility cleanup handoff
 
+Evidence-path note (PR cleanup): Generated files referenced under `validation_artifacts/` are retained locally as ignored test outputs and are not included in the current PR tree. The three captured production inputs for the boss comparison remain tracked. See [ACCESSIBILITY_PR_CLEANUP_REPORT.md](ACCESSIBILITY_PR_CLEANUP_REPORT.md) for retention details. Historical test conclusions below are unchanged.
+
 Targeted repairs are implemented locally across the site, faculty tools, shared templates, 22 maintained missions, beta Composer game, manual downloads and six collection hubs. No push or deployment was performed. The baseline/rollback reference is `5e1d5644cc4dffcf60a614c7dd12c568238e0e14` on `main`.
 
 The visible changes serve specific access needs: darker teal links; clear focus; readable narrow-screen reports/maze/dialogs; visible graph-description disclosures; a decorative-motion control; and a disclosure for feedback already released during the current run. Existing art, themes, music, routes, question content and the “Turn practice into a path toward mastery.” wording remain.

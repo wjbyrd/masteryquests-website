@@ -1,5 +1,7 @@
 # Standard Campaign boss checkpoint regression
 
+Evidence-path note (PR cleanup): Generated files referenced under `validation_artifacts/` are retained locally as ignored test outputs and are not included in the current PR tree. The three captured production inputs for the boss comparison remain tracked. See [ACCESSIBILITY_PR_CLEANUP_REPORT.md](ACCESSIBILITY_PR_CLEANUP_REPORT.md) for retention details. Historical test conclusions below are unchanged.
+
 Branch: `accessibility-preview`
 
 Investigation baseline: `a4b247fd`

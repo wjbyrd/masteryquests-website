@@ -1,5 +1,7 @@
 # Targeted accessibility cleanup audit
 
+Evidence-path note (PR cleanup): Generated files referenced under `validation_artifacts/` are retained locally as ignored test outputs and are not included in the current PR tree. The three captured production inputs for the boss comparison remain tracked. See [ACCESSIBILITY_PR_CLEANUP_REPORT.md](../ACCESSIBILITY_PR_CLEANUP_REPORT.md) for retention details. Historical test conclusions below are unchanged.
+
 Audit date: 22 October 2026 (America/New_York). Starting branch: `main`. Starting commit: `5e1d5644cc4dffcf60a614c7dd12c568238e0e14`. The working tree was clean at the initial inspection. Work stayed local; no commit, push, deployment, live form submission, or production student-data access was performed. No applicable `AGENTS.md` was found in the inspected repository hierarchy.
 
 This is a maintenance audit against applicable WCAG 2.2 A/AA requirements, with APG used for interaction guidance. It is not a conformance determination. Automated results, browser interaction checks, code comparisons, and limited visual inspection have different evidential limits.

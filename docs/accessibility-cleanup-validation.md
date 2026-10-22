@@ -1,5 +1,7 @@
 # Accessibility cleanup validation
 
+Evidence-path note (PR cleanup): Generated files referenced under `validation_artifacts/` are retained locally as ignored test outputs and are not included in the current PR tree. The three captured production inputs for the boss comparison remain tracked. See [ACCESSIBILITY_PR_CLEANUP_REPORT.md](../ACCESSIBILITY_PR_CLEANUP_REPORT.md) for retention details. Historical test conclusions below are unchanged.
+
 Date: 22 October 2026. Baseline: `5e1d5644cc4dffcf60a614c7dd12c568238e0e14`, branch `main`. Run from the repository root. All browser sessions used fresh synthetic profiles; external requests were blocked by `support.mjs` or `browser-guard.cjs`. No real saved progress was cleared and no test events reached production collectors.
 
 ## Tools and repeatability
