@@ -9,6 +9,8 @@ function exercise(text,mode){
  const elements=new Map();const element=()=>({innerHTML:'',innerText:'',className:'',classList:{remove(){}}});
  const context={room:30,bossHealth:3,bossPool:[{},{},{}],gameMode:mode,phase15CompletionLocked:false,runPhase:'question',lastCheckpointOutcome:{room:30,outcome:'secured'},bossCheckpoint:21,TIMING:{checkpointTransition:0},results:0,standardResults:0,freezeCompletionTime(){},clearSavedGame(){},saveGameState(){},playExplorationMusic(){},facultyEscapeAttribute:s=>s,getCheckpointOutcomePresentation:()=>({title:'Complete',summary:'Done',transition:'Done',lead:''}),document:{getElementById:id=>{if(!elements.has(id))elements.set(id,element());return elements.get(id);}},scheduleForCurrentRun:fn=>fn(),modeAllowsRealmProgress:()=>mode==='standard',handlePracticeModeComplete(){},handleScoreAttackVictory(){},finalizeCheckpointOutcome:()=>({outcome:'secured',correct:3,total:3}),recordBossDefeatForAchievements(){},sendGameData(){},FACULTY_COMPOSITION_CONFIG:{title:'Test'},runID:'test',username:'test',earnArtifact(){},updateMissionArtifactCountFromVault(){}};
  vm.createContext(context);
+ context.runSessionId=1;
+ context.getCheckpointOutcome=()=> 'secured';
  // Use exact bounded declarations, avoiding unrelated intervening runtime code.
  const complete=text.slice(text.indexOf('function completeCheckpointEncounter(){'),text.indexOf('// =============================================\n// PLAYER NAME RESTORE')).trim();
  const knowledge=declaration(text,'showKnowledgeRoom','handleLegendaryVictory');

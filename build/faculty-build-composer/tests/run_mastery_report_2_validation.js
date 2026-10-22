@@ -66,7 +66,7 @@ function simulateManualEnd(mode){
     difficultyCapture:template.includes('byDifficulty')&&template.includes('__mqDifficulty'),
     battleMenuFunnelsPractice:template.includes('if(gameMode === "exam" || gameMode === "unlimited"){\n        confirmEndPractice();'),
     reportDestination:template.includes('reportDestination:"mastery"'),
-    evidenceSection:template.includes('<h3>Evidence Strength</h3>'),
+    evidenceSection:template.includes('<h2>Evidence Strength</h2>'),
     copyIncludesEvidence:template.includes('`Evidence: ${report.evidence.label}`')
   };
   Object.entries(sourceChecks).forEach(([k,v])=>{if(!v)issues.push(`source ${k}`)});

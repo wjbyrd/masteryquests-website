@@ -139,7 +139,7 @@ try {
     assert.equal(await text(page, '#actual-output'), `${width === 390 ? 0 : 53} / 80`); await act(page, 'continue');
     await pSafeLab(page, width); await layout(page, width);
     await page.getByRole('link', { name: 'RETURN TO GAMES', exact: true }).click();
-    assert.deepEqual(await page.locator('[aria-labelledby=microeconomics-heading] .game-card').evaluateAll(xs => xs.map(x => x.dataset.game)), ['ppf', 'housing-crisis', 'megastar-mania', 'at-the-box-office', 'takeout-taco-lunch-rush', 'takeout-taco-counting-the-cost', 'main-attraction', 'gameday-rivals']);
+    assert.deepEqual(await page.locator('[aria-labelledby=microeconomics-heading] .game-card').evaluateAll(xs => xs.map(x => x.dataset.game)), ['ppf', 'housing-crisis', 'megastar-mania', 'at-the-box-office', 'takeout-taco-lunch-rush', 'takeout-taco-counting-the-cost', 'main-attraction', 'gameday-rivals', 'the-investment-desk', 'the-road-ahead']);
     assert.equal(await page.locator('[aria-labelledby=macroeconomics-heading] .game-card').count(), 7);
     await page.screenshot({ path: `${out}/ordered-hub-${width}.png`, fullPage: true });
     await page.locator('[data-game=takeout-taco-counting-the-cost] a').click(); await page.locator('[data-action=start]').waitFor({ state: 'visible' });

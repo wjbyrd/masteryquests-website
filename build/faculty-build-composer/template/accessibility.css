@@ -1,0 +1,51 @@
+/* Embedded with the game; no main-site stylesheet dependency. */
+.mq-motion-setting{display:flex;flex-direction:column;align-items:stretch;gap:6px;font:inherit;color:inherit;grid-column:1/-1;width:100%;margin:8px 0}
+.mq-motion-setting .game-menu-option{width:100%;font:inherit}
+.mq-motion-setting .game-menu-option:focus-visible{outline:3px solid #8bdcff;outline-offset:4px}
+.mq-recovery-intro,.mq-recovery-label,.mq-recovery-copy{display:block;text-align:left;overflow-wrap:anywhere;white-space:pre-wrap}
+.mq-recovery-label{margin:22px 0 8px;font-size:.85em;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:inherit}
+.mq-recovery-copy{line-height:1.6}
+#mqUtilityMenu[hidden]{display:none}
+:focus-visible{outline:3px solid #8bdcff;outline-offset:4px}
+#question:focus{outline-offset:6px}
+#mqExplanationReview{grid-column:1/-1;width:100%;overflow-wrap:anywhere}
+#mqExplanationReview[hidden]{display:none}
+#mqExplanationDialog{display:flex;z-index:10000}
+#mqExplanationDialog[hidden]{display:none}
+#mqExplanationEntries{line-height:1.6;text-align:left;overflow-wrap:anywhere;padding-inline-start:1.5em}
+#mqExplanationEntries li{margin-block:16px}
+.mq-review-question{font-weight:bold}
+#hallwayTransition.mq-feedback-held{z-index:4000;pointer-events:auto;overflow:auto;box-sizing:border-box;padding:24px;align-items:safe center}
+.mq-feedback-held #hallwayText{max-height:calc(100dvh - 48px);overflow:auto;box-sizing:border-box;overflow-wrap:anywhere}
+#mqFeedbackContinue{display:block;margin:24px auto 0;min-height:44px}
+.graph-description{margin:6px auto 0;max-width:100%;box-sizing:border-box;color:inherit;background:rgba(0,0,0,.22);border:1px solid currentColor;padding:0;border-radius:6px;line-height:1.5;text-align:left;overflow-wrap:anywhere;font:inherit}
+.graph-description summary{cursor:pointer;min-height:24px;padding:8px 12px;font-weight:bold;letter-spacing:.025em}
+.graph-description p{padding:0 12px 12px;margin:4px 0 0}
+#graphLightbox{overflow:auto;flex-direction:column;gap:12px}
+#graphLightbox .graph-description{width:min(850px,90vw);box-sizing:border-box;flex-shrink:0}
+#graphLightbox img{object-fit:contain;flex-shrink:0}
+.game-modal,.quiz-setup-modal{box-sizing:border-box;overflow:auto;padding:20px}
+.game-modal-card,.quiz-setup-panel{max-height:calc(100dvh - 40px);overflow:auto;box-sizing:border-box;max-width:100%}
+.mode-card,.continue-btn,.answers button{overflow-wrap:anywhere}
+#soundToggle,#graphLightboxClose,.daily-details-close{min-width:24px;min-height:24px}
+#artifactVault h2{font-size:1.17em}
+.mastery-section h2{font-size:1.17em;margin:0 0 12px;color:#f7d982;letter-spacing:1px;text-shadow:0 0 10px rgba(247,217,130,.34)}
+.mastery-report-screen{box-sizing:border-box;max-width:100%;overflow-wrap:anywhere}
+.mastery-evidence-badge{white-space:normal}
+.mastery-summary-grid,.mastery-evidence-grid{grid-template-columns:repeat(auto-fit,minmax(min(145px,100%),1fr))}
+html.mq-motion-paused *,html.mq-motion-paused *::before,html.mq-motion-paused *::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+html.mq-motion-paused #hallwayTransition{transform:none!important}
+html.mq-motion-paused .fade-out-text{animation:none!important;opacity:1!important}
+@media(max-width:400px){
+ .start-content{box-sizing:border-box;max-width:100%;min-width:0;padding-inline:16px}
+ .start-content .title{max-width:100%;overflow-wrap:anywhere;white-space:normal}
+ #gameShell,.main-panel{box-sizing:border-box;min-width:0;max-width:100%}
+ .dungeon-container{box-sizing:border-box;max-width:100%;padding-inline:10px}
+ .mode-select-panel{box-sizing:border-box;max-width:100%;padding-inline:12px}
+ .mode-grid{grid-template-columns:minmax(0,1fr)}
+ .game-modal-actions,.practice-mode-controls{flex-wrap:wrap}
+ #gameBox{box-sizing:border-box;min-width:0;max-width:100%}
+ #mazeTrackContainer{box-sizing:border-box;max-width:100%}
+ #mazeTrack{grid-template-columns:repeat(10,minmax(0,1fr));width:100%;gap:3px}
+ #mazeTrack .maze-box{box-sizing:border-box;min-width:0;width:100%;height:auto;aspect-ratio:1;overflow-wrap:anywhere}
+}

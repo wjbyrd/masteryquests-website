@@ -47,5 +47,23 @@ node_modules/
 /tmp/signal-house-release/
 /tmp/games-preview/
 
+# Isolated accessibility test dependencies, profiles, and generated faculty fixtures.
+/tmp/accessibility_cleanup/
+
 # Local Macro review workbook and its bundled dependency junction.
 /outputs/01a11165-45cb-76a1-b231-c5a8f88d691a/
+
+# Generated accessibility validation evidence; preserve local runs, not Git history.
+/validation_artifacts/accessibility_cleanup/
+/validation_artifacts/accessibility_refinements/
+/validation_artifacts/feedback_progression/
+/validation_artifacts/final_feedback_refinement/
+/validation_artifacts/boss_checkpoint_regression/*
+# Captured public production inputs required by the boss baseline comparison runners.
+!/validation_artifacts/boss_checkpoint_regression/production-market-gate.html
+!/validation_artifacts/boss_checkpoint_regression/production-market_gate_questions_student.js
+!/validation_artifacts/boss_checkpoint_regression/production-instructional_resources.js
+
+# Generated portable boss-test games and synthetic answer-analysis test exports.
+/tmp/boss-checkpoint-regression/
+/tmp/answer-release/

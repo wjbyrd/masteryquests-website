@@ -24,6 +24,26 @@
     "BREVO_LIST_ID": "3",
     "BREVO_DOI_TEMPLATE_ID": "1"
   },
+  "previews": {
+    // Use the branch's top-level ASSETS configuration. Keep both services closed.
+    "vars": {
+      "SUBSCRIPTIONS_ENABLED": "false",
+      "CLASSROOM_CLOSED": "true",
+      // Empty values prevent use of credentials or IDs from Previews Base.
+      "BREVO_API_KEY": "",
+      "BREVO_LIST_ID": "",
+      "BREVO_DOI_TEMPLATE_ID": "",
+      "CLASSROOM_ACCESS_CODE": "",
+      "CLASSROOM_SESSION_SECRET": ""
+    },
+    // Separate namespaces: preview traffic must never consume production limits.
+    "ratelimits": [
+      { "name": "SUBSCRIPTION_IP_LIMIT", "namespace_id": "2026102201", "simple": { "limit": 5, "period": 60 } },
+      { "name": "SUBSCRIPTION_EMAIL_LIMIT", "namespace_id": "2026102202", "simple": { "limit": 1, "period": 60 } },
+      { "name": "SUBSCRIPTION_GLOBAL_LIMIT", "namespace_id": "2026102203", "simple": { "limit": 30, "period": 60 } },
+      { "name": "CLASSROOM_LOGIN_LIMIT", "namespace_id": "2026102204", "simple": { "limit": 120, "period": 60 } }
+    ]
+  },
   "observability": { "enabled": false },
   "ratelimits": [
     { "name": "SUBSCRIPTION_IP_LIMIT", "namespace_id": "2026101201", "simple": { "limit": 5, "period": 60 } },

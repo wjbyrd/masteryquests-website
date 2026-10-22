@@ -2,7 +2,7 @@
   --navy-950: #031638;
   --navy-900: #062454;
   --navy-800: #0a3472;
-  --teal-600: #009f9a;
+  --teal-600: #007b77;
   --teal-500: #10bcb4;
   --teal-300: #77d9d3;
   --white: #ffffff;
@@ -3309,6 +3309,7 @@ button:focus-visible {
 
 /* Staged Signal House card; uses the public Games card layout when released. */
 .signal-house-card-image{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:12px;margin:16px 0}
+.resource-card .text-link{color:var(--teal-600)}
 
 /* Email subscription entry points. */
 .primary-navigation { gap: 20px; }

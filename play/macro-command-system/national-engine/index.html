@@ -35,7 +35,7 @@ DO NOT RENAME REQUIRED HTML IDS OR CORE ENGINE VARIABLES.
 ===================================================== -->
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -3072,6 +3072,61 @@ body.boss-reveal-active{overflow:hidden}
 
 
 </style>
+<!-- MQ ACCESSIBILITY style START -->
+<style>
+/* Embedded with the game; no main-site stylesheet dependency. */
+.mq-motion-setting{display:flex;flex-direction:column;align-items:stretch;gap:6px;font:inherit;color:inherit;grid-column:1/-1;width:100%;margin:8px 0}
+.mq-motion-setting .game-menu-option{width:100%;font:inherit}
+.mq-motion-setting .game-menu-option:focus-visible{outline:3px solid #8bdcff;outline-offset:4px}
+.mq-recovery-intro,.mq-recovery-label,.mq-recovery-copy{display:block;text-align:left;overflow-wrap:anywhere;white-space:pre-wrap}
+.mq-recovery-label{margin:22px 0 8px;font-size:.85em;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:inherit}
+.mq-recovery-copy{line-height:1.6}
+#mqUtilityMenu[hidden]{display:none}
+:focus-visible{outline:3px solid #8bdcff;outline-offset:4px}
+#question:focus{outline-offset:6px}
+#mqExplanationReview{grid-column:1/-1;width:100%;overflow-wrap:anywhere}
+#mqExplanationReview[hidden]{display:none}
+#mqExplanationDialog{display:flex;z-index:10000}
+#mqExplanationDialog[hidden]{display:none}
+#mqExplanationEntries{line-height:1.6;text-align:left;overflow-wrap:anywhere;padding-inline-start:1.5em}
+#mqExplanationEntries li{margin-block:16px}
+.mq-review-question{font-weight:bold}
+#hallwayTransition.mq-feedback-held{z-index:4000;pointer-events:auto;overflow:auto;box-sizing:border-box;padding:24px;align-items:safe center}
+.mq-feedback-held #hallwayText{max-height:calc(100dvh - 48px);overflow:auto;box-sizing:border-box;overflow-wrap:anywhere}
+#mqFeedbackContinue{display:block;margin:24px auto 0;min-height:44px}
+.graph-description{margin:6px auto 0;max-width:100%;box-sizing:border-box;color:inherit;background:rgba(0,0,0,.22);border:1px solid currentColor;padding:0;border-radius:6px;line-height:1.5;text-align:left;overflow-wrap:anywhere;font:inherit}
+.graph-description summary{cursor:pointer;min-height:24px;padding:8px 12px;font-weight:bold;letter-spacing:.025em}
+.graph-description p{padding:0 12px 12px;margin:4px 0 0}
+#graphLightbox{overflow:auto;flex-direction:column;gap:12px}
+#graphLightbox .graph-description{width:min(850px,90vw);box-sizing:border-box;flex-shrink:0}
+#graphLightbox img{object-fit:contain;flex-shrink:0}
+.game-modal,.quiz-setup-modal{box-sizing:border-box;overflow:auto;padding:20px}
+.game-modal-card,.quiz-setup-panel{max-height:calc(100dvh - 40px);overflow:auto;box-sizing:border-box;max-width:100%}
+.mode-card,.continue-btn,.answers button{overflow-wrap:anywhere}
+#soundToggle,#graphLightboxClose,.daily-details-close{min-width:24px;min-height:24px}
+#artifactVault h2{font-size:1.17em}
+.mastery-section h2{font-size:1.17em;margin:0 0 12px;color:#f7d982;letter-spacing:1px;text-shadow:0 0 10px rgba(247,217,130,.34)}
+.mastery-report-screen{box-sizing:border-box;max-width:100%;overflow-wrap:anywhere}
+.mastery-evidence-badge{white-space:normal}
+.mastery-summary-grid,.mastery-evidence-grid{grid-template-columns:repeat(auto-fit,minmax(min(145px,100%),1fr))}
+html.mq-motion-paused *,html.mq-motion-paused *::before,html.mq-motion-paused *::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+html.mq-motion-paused #hallwayTransition{transform:none!important}
+html.mq-motion-paused .fade-out-text{animation:none!important;opacity:1!important}
+@media(max-width:400px){
+ .start-content{box-sizing:border-box;max-width:100%;min-width:0;padding-inline:16px}
+ .start-content .title{max-width:100%;overflow-wrap:anywhere;white-space:normal}
+ #gameShell,.main-panel{box-sizing:border-box;min-width:0;max-width:100%}
+ .dungeon-container{box-sizing:border-box;max-width:100%;padding-inline:10px}
+ .mode-select-panel{box-sizing:border-box;max-width:100%;padding-inline:12px}
+ .mode-grid{grid-template-columns:minmax(0,1fr)}
+ .game-modal-actions,.practice-mode-controls{flex-wrap:wrap}
+ #gameBox{box-sizing:border-box;min-width:0;max-width:100%}
+ #mazeTrackContainer{box-sizing:border-box;max-width:100%}
+ #mazeTrack{grid-template-columns:repeat(10,minmax(0,1fr));width:100%;gap:3px}
+ #mazeTrack .maze-box{box-sizing:border-box;min-width:0;width:100%;height:auto;aspect-ratio:1;overflow-wrap:anywhere}
+}
+</style>
+<!-- MQ ACCESSIBILITY style END -->
 </head>
 
 <!-- =========================================
@@ -3129,7 +3184,7 @@ Respect structure strictly.
 <body class="blank-builder-template">
 <!-- Screen reader announcements (accessibility — do not remove) -->
   <div id="srAnnouncements"
-     aria-live="assertive"
+     aria-live="polite"
      aria-atomic="true"
      style="position:absolute; left:-9999px; height:1px; width:1px; overflow:hidden;">
 </div>
@@ -3366,7 +3421,7 @@ Respect structure strictly.
 
 <div class="dungeon-container">
     <button id="returnMenuBtn" class="return-menu-btn" type="button" onclick="openGameMenu()" aria-haspopup="dialog" aria-controls="gameModal">GAME MENU</button>
-    <button id="soundToggle" class="sound-toggle" onclick="toggleGameSound()" aria-label="Toggle sound">Sound On</button>
+    <button id="soundToggle" class="sound-toggle" onclick="toggleGameSound()">Sound On</button>
 
 <!-- =========================================
 TOP PANEL (HUD)
@@ -3396,7 +3451,7 @@ DO NOT REMOVE:
 
     <!-- Artifact slots (IDs must match unlock system in JS) -->
 <div id="artifactVault" style="display:none;">
-    <h3>Acquired Artifacts</h3>
+    <h2>Acquired Artifacts</h2>
     <div class="vaultRow">
         <button id="vaultCompass" class="artifactSlot" type="button" onclick="activateArtifactPower('compass')" disabled>
             <span aria-hidden="true">1</span>
@@ -3481,7 +3536,7 @@ DO NOT REMOVE:
 
             <div id="questionContainer">
                 <div id="questionImageBox"></div>
-                <div id="question"></div>
+                <div id="question" role="heading" aria-level="2" tabindex="-1"></div>
                 <p id="message"></p>
                 <div id="formulaHint" class="hint-box"></div>
             </div>
@@ -3521,7 +3576,7 @@ DO NOT REMOVE:
 <div id="graphLightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Expanded question graph">
   <button id="graphLightboxClose" type="button" aria-label="Close expanded graph">×</button>
   <img id="graphLightboxImg" alt="" aria-describedby="graphLightboxDescription">
-  <p id="graphLightboxDescription" class="sr-only"></p>
+  <details class="graph-description"><summary>Graph description</summary><p id="graphLightboxDescription"></p></details>
 </div>
 
 <!-- =========================================
@@ -4941,6 +4996,7 @@ function syncRealmAttemptState(){
     localStorage.setItem(REALM_ROOM_KEY, String(room || 1));
 }
 function beginRunSession(){
+    window.MQFeedbackProgression?.cancel();
     runSessionId += 1;
     return runSessionId;
 }
@@ -6706,7 +6762,7 @@ function getCheckpointOutcome(state = checkpointAttemptState){
     const correct = Math.max(0, Number(state?.correct || 0));
     const total = Math.max(0, Number(state?.total || 0));
     if(total >= 3 && correct === total) return "secured";
-    if(total >= 3 && correct >= 2) return "cleared";
+    if(gameMode !== "standard" && total >= 3 && correct >= 2) return "cleared";
     return "not-secured";
 }
 
@@ -6755,6 +6811,11 @@ function advanceCheckpointAttempt(){
 }
 
 function completeCheckpointEncounter(){
+    // Standard Campaign is a gate: every boss answer must be correct.
+    if(gameMode === "standard" && getCheckpointOutcome() !== "secured"){
+        failStandardCheckpoint();
+        return;
+    }
     const completedOutcome = finalizeCheckpointOutcome();
     recordBossDefeatForAchievements();
     sendGameData({
@@ -6790,6 +6851,31 @@ function completeCheckpointEncounter(){
     showKnowledgeRoom(room);
     bossHealth = 3;
     bossPool = [];
+}
+
+function failStandardCheckpoint(){
+    finalizeCheckpointOutcome();
+    window.MQFeedbackProgression?.cancel();
+    document.getElementById("streakDisplay").innerText = "";
+    bossRevealShownKeys.delete(getBossEncounterKey());
+    activeBossEncounter = null;
+    bossHealth = 3;
+    bossPool = [];
+    // Retain the original boss setback and the last successfully cleared gate.
+    room = Math.max(bossCheckpoint, room - 3);
+    if(modeAllowsRealmProgress()) localStorage.setItem(ROOM_KEY, String(room));
+    const session = runSessionId;
+    let continued = false;
+    showGameModal({
+        title: "Wrong Turn",
+        text: window.MQFeedbackProgression.wrongTurn(`Incorrect! You trip in the darkness and tumble back to Room ${room}.`, currentQuestion, true),
+        confirmText: "Continue",
+        onConfirm: function(){
+            if(continued || session !== runSessionId) return;
+            continued = true;
+            loadQuestion();
+        }
+    });
 }
 
 // =============================================
@@ -8260,6 +8346,7 @@ showContinueButtonIfSaved();
 // - progression bugs
 // =============================================
 function startGame(shouldResume = false) {
+    window.MQAccessibility?.resetFeedback();
     const preflight = validateFacultyMode(gameMode);
     if(!preflight.ok){
         showFacultyPreflightFailure(gameMode, preflight.issues);
@@ -8409,6 +8496,7 @@ updateArtifactVaultUI();
 
 
 function resetRunStateForNewMode(){
+    window.MQAccessibility?.resetFeedback();
     finalElapsedTimeMs = null;
     runEnding = false;
     answerSubmissionPending = false;
@@ -11792,13 +11880,14 @@ function playFinalBossMusic(){
 function getQuestionGraphAccessibility(question){
     const rawPath = String(question?.image || "").replace(/^data\//, "");
     const filename = rawPath.split("/").pop();
-    const metadata = questionAssetMetadata[rawPath]
-        || questionAssetMetadata[filename]
-        || Object.entries(questionAssetMetadata).find(([key]) => key.split("/").pop() === filename)?.[1]
+    const metadataMap = typeof questionAssetMetadata === 'object' ? questionAssetMetadata : {};
+    const metadata = metadataMap[rawPath]
+        || metadataMap[filename]
+        || Object.entries(metadataMap).find(([key]) => key.split("/").pop() === filename)?.[1]
         || {};
     return {
-        imageAlt: String(metadata.imageAlt || "Economics graph with labeled axes, curves, points, and visible values."),
-        graphDescription: String(metadata.graphDescription || "The graph description metadata is unavailable.")
+        imageAlt: String(question?.imageAlt || metadata.imageAlt || "Economics graph with labeled axes, curves, points, and visible values."),
+        graphDescription: String(question?.graphDescription || metadata.graphDescription || "The graph description metadata is unavailable.")
     };
 }
 
@@ -11816,15 +11905,13 @@ function renderQuestionGraph(question){
     const accessibility = getQuestionGraphAccessibility(question);
     const alt = escapeHTML(accessibility.imageAlt);
     const description = escapeHTML(accessibility.graphDescription);
-    imageBox.innerHTML = `<img src="${resolveQuestionImage(question.image)}" alt="${alt}" aria-describedby="questionGraphDescription" data-graph-description="${description}" title="Click to enlarge" role="button" tabindex="0" aria-label="Open expanded graph: ${alt}"><p id="questionGraphDescription" class="sr-only">${description}</p><div class="graph-zoom-note">Click graph to enlarge</div>`;
+    imageBox.innerHTML = `<img src="${typeof resolveQuestionImage === 'function' ? resolveQuestionImage(question.image) : question.image}" alt="${alt}" aria-describedby="questionGraphDescription" data-graph-description="${description}" title="Enlarge graph" role="button" tabindex="0" aria-label="Enlarge graph: ${alt}"><details class="graph-description"><summary>Graph description</summary><p id="questionGraphDescription">${description}</p></details><div class="graph-zoom-note">Enlarge graph</div>`;
     imageBox.style.display = "block";
     const graphImage = imageBox.querySelector("img");
     graphImage?.addEventListener("error", () => {
         questionGraphLoadFailed = true;
         imageBox.innerHTML = `<div role="alert"><strong>Required graph failed to load.</strong><br>This question cannot be answered safely. Return to the mode menu and regenerate the Quest.</div>`;
         setAnswerButtonsDisabled(true);
-        const announcements = document.getElementById("srAnnouncements");
-        if(announcements) announcements.innerText = "Required graph failed to load. This question cannot be answered safely.";
     }, {once:true});
 }
 
@@ -12329,6 +12416,9 @@ function displayQuestion() {
     answerSubmissionPending = false;
     resetQuestionVisibilityTiming();
     const optionsElement = document.getElementById("answers");
+    const previousAnswerFocus = optionsElement.contains(document.activeElement) ? document.activeElement.dataset.answerIndex : null;
+    const sameQuestion = optionsElement.dataset.focusQuestionId === String(currentQuestion.id);
+    optionsElement.dataset.focusQuestionId = String(currentQuestion.id);
     optionsElement.innerHTML = "";
 
     currentQuestion.options.forEach((option, index) => {
@@ -12355,16 +12445,16 @@ function displayQuestion() {
         }
 
         btn.onclick = () => {
-            btn.blur();
             answer(index);
         };
 
-        btn.addEventListener("touchend", () => {
-            btn.blur();
-        }, { passive: true });
-
         optionsElement.appendChild(btn);
     });
+
+    if(previousAnswerFocus != null){
+        const target = sameQuestion ? optionsElement.querySelector(`[data-answer-index="${previousAnswerFocus}"]:not(:disabled)`) : null;
+        (target || document.getElementById('question'))?.focus({preventScroll:true});
+    }
 
     if(questionGraphLoadFailed) setAnswerButtonsDisabled(true);
 
@@ -12378,6 +12468,10 @@ function displayQuestion() {
 }
 
 function setAnswerButtonsDisabled(disabled){
+    // Retain a stable reading position when the focused answer becomes unavailable.
+    if(disabled && document.getElementById('answers')?.contains(document.activeElement)){
+        document.getElementById('question')?.focus({preventScroll:true});
+    }
     document.querySelectorAll("#answers button").forEach(btn => {
         btn.disabled = disabled;
         btn.style.opacity = disabled ? "0.55" : "1";
@@ -12440,6 +12534,7 @@ function checkRapidGuessing(isCorrect, responseTime){
 // Check for artifact names and CHANGE
 
 async function answer(choice) {
+    const resolvingRecovery = remediationState.active;
     const answerSessionId = runSessionId;
 
     if(isTimedModeTerminal()) return;
@@ -12794,6 +12889,7 @@ if(isBossRoom) recordCheckpointAttempt(isCorrect);
     }
 
     const returnRoom = remediationState.returnRoom ?? room;
+    const releasedRecoveryOrigin = remediationState.mqOriginFeedback;
 
     resetRemediationState();
     adaptiveMode = "support";
@@ -12804,7 +12900,7 @@ if(isBossRoom) recordCheckpointAttempt(isCorrect);
     room = returnRoom;
        if(modeAllowsRealmProgress()) localStorage.setItem(ROOM_KEY, String(room));
 
-    scheduleForCurrentRun(loadQuestion, TIMING.normal);
+    window.MQFeedbackProgression.finishRecovery(releasedRecoveryOrigin, msgElement.innerText, () => loadQuestion(), TIMING.normal);
     return;
 }
 
@@ -12849,6 +12945,7 @@ if(isBossRoom) recordCheckpointAttempt(isCorrect);
     // --- NORMAL ROOM PROGRESSION ---
     // This code ONLY runs if choice === currentQuestion.a
     // AND it wasn't a Boss Room (or a Detour).
+   const resolvedGuideLine = msgElement.innerText;
    msgElement.innerHTML = "";
    room++;
    timedHighestRoom = Math.max(timedHighestRoom, Math.min(room, 30));
@@ -12861,10 +12958,9 @@ if(isBossRoom) recordCheckpointAttempt(isCorrect);
    }
 
    if(isBossRoomForMode(room)){
-       loadQuestion();
+       showHallwayTransition(currentQuestion.feedback, {leadText:resolvedGuideLine});
        return;
    }
-
    showHallwayTransition(currentQuestion.feedback);
    return;
     }
@@ -12914,6 +13010,10 @@ if(isBossRoom) recordCheckpointAttempt(isCorrect);
 
      msgElement.innerHTML = `<span class='fade-out-text'>${showImmediateFeedback ? bossLine : "Response recorded."}</span>`;
 
+     if(gameMode === "standard"){
+        failStandardCheckpoint();
+        return;
+     }
      const checkpointComplete = advanceCheckpointAttempt();
      if(checkpointComplete){
         completeCheckpointEncounter();
@@ -12951,6 +13051,7 @@ if(remediationState.active){
 // --- STAGED REMEDIATION TRIGGER ---
 if (remediationTransitionAllowed(currentQuestion) && shouldTriggerDetour(currentQuestion)) {
     remediationState = planRemediation(currentQuestion, activeResponseTime) || remediationState;
+    window.MQFeedbackProgression.rememberRecoveryOrigin(remediationState, currentQuestion);
     detourActive = true;
     detourReturnRoom = room;
 
@@ -13015,7 +13116,7 @@ if(gameMode === "timed") timedSetbacks++;
 
 showGameModal({
     title: "Wrong Turn",
-    text: `Incorrect! You trip in the darkness and tumble back to Room ${room}.`,
+    text: window.MQFeedbackProgression.wrongTurn(`Incorrect! You trip in the darkness and tumble back to Room ${room}.`, currentQuestion, isBossRoom || resolvingRecovery),
     confirmText: "Continue",
     onConfirm: function(){
         loadQuestion();
@@ -13146,15 +13247,19 @@ function showHallwayTransition(feedback, options = {}){
 
     overlay.classList.add("active");
     document.getElementById("srAnnouncements").innerText = announcement;
+    window.MQAccessibility?.recordReleasedFeedback(announcement);
 
-    scheduleForCurrentRun(() => {
+    const advanceFeedback = () => {
         overlay.classList.remove("active");
         scheduleForCurrentRun(() => {
             if(nextAction === "victory") handleVictory();
             else if(nextAction === "practice-results") handlePracticeModeComplete();
             else loadQuestion();
         }, 0);
-    }, presentationDuration);
+    };
+    if(!window.MQFeedbackProgression.holdHallway(advanceFeedback, !options.announcement)){
+        scheduleForCurrentRun(advanceFeedback, presentationDuration);
+    }
 }
 
 // Displays artifact reward popup
@@ -13305,7 +13410,12 @@ function showKnowledgeRoom(bossRoom) {
     scheduleForCurrentRun(() => {
         const continueButton = document.getElementById("continueBtn");
         if(!continueButton) return;
+        const session = runSessionId;
+        let continued = false;
         continueButton.onclick = () => {
+            if(continued || session !== runSessionId || room !== bossRoom) return;
+            continued = true;
+            continueButton.disabled = true;
             const slotId = bossRoom === 10 ? "hallway1" : bossRoom === 20 ? "hallway2" : "hallway3";
             if(bossRoom !== 30) room++;
             showHallwayTransition(
@@ -14250,7 +14360,7 @@ function renderMasteryDiagnosticSection({
 
     return `
         <div class="mastery-section">
-            <h3>${escapeHTML(title)}</h3>
+            <h2>${escapeHTML(title)}</h2>
             ${body}
         </div>
     `;
@@ -14526,7 +14636,7 @@ function renderConceptReviewSection(result){
         <p class="concept-review-intro">The run identified a broad concept family, but not one reliable subtopic. Choose the part that felt hardest.</p>
         <details class="concept-review-more" open><summary>Choose a review topic</summary><div class="concept-review-compact-list">${choices.map(item => renderConceptReviewLink(item, true)).join("")}</div></details>` : "";
     return `<section class="mastery-section concept-review-section" aria-labelledby="conceptReviewHeading">
-        <h3 id="conceptReviewHeading">Concept Review</h3>
+        <h2 id="conceptReviewHeading">Concept Review</h2>
         <p class="concept-review-intro">Use the review below to repair the specific evidence gap from this run.</p>
         ${direct}${chooser}
     </section>`;
@@ -14550,7 +14660,7 @@ async function showMasteryReportScreen(options = {}){
         : "";
     const fadingFortuneSection = report.fadingFortune ? `
             <div class="mastery-section">
-                <h3>Independence Under Pressure</h3>
+                <h2>Independence Under Pressure</h2>
                 <div class="mastery-row"><div class="mastery-row-main"><span class="mastery-row-name">No answer reduction</span><span class="mastery-row-score">${report.fadingFortune.distribution[100] || 0}</span></div><span class="mastery-row-meta">Answered while all four choices were still visible. Correct: ${report.fadingFortune.correctByValue[100] || 0}.</span></div>
                 <div class="mastery-row"><div class="mastery-row-main"><span class="mastery-row-name">One answer removed</span><span class="mastery-row-score">${report.fadingFortune.distribution[75] || 0}</span></div><span class="mastery-row-meta">Answered at 75 points. Correct: ${report.fadingFortune.correctByValue[75] || 0}.</span></div>
                 <div class="mastery-row"><div class="mastery-row-main"><span class="mastery-row-name">Two answers removed</span><span class="mastery-row-score">${report.fadingFortune.distribution[50] || 0}</span></div><span class="mastery-row-meta">Answered at 50 points. Correct: ${report.fadingFortune.correctByValue[50] || 0}.</span></div>
@@ -14559,7 +14669,7 @@ async function showMasteryReportScreen(options = {}){
             </div>` : "";
     const riskRewardSection = report.riskReward ? `
             <div class="mastery-section">
-                <h3>Risk & Confidence</h3>
+                <h2>Risk & Confidence</h2>
                 <div class="mastery-row"><div class="mastery-row-main"><span class="mastery-row-name">Starting → Final bankroll</span><span class="mastery-row-score">${report.riskReward.startingBankroll} → ${report.riskReward.finalBankroll}</span></div><span class="mastery-row-meta">Net ${report.riskReward.net >= 0 ? "+" : ""}${report.riskReward.net}. Wagering behavior is separate from mastery evidence.</span></div>
                 <div class="mastery-row"><div class="mastery-row-main"><span class="mastery-row-name">Peak bankroll</span><span class="mastery-row-score">${report.riskReward.peakBankroll}</span></div><span class="mastery-row-meta">Largest single wager: ${report.riskReward.largestWager}. Average wager: ${report.riskReward.averageWagerPercent}% of bankroll.</span></div>
                 ${['10%','25%','50%','ALL IN'].map(tier => { const attempts=report.riskReward.attemptsByTier[tier]||0; const correct=report.riskReward.correctByTier[tier]||0; const accuracy=attempts ? Math.round(correct/attempts*100) : 0; return `<div class="mastery-row"><div class="mastery-row-main"><span class="mastery-row-name">${tier} wagers</span><span class="mastery-row-score">${report.riskReward.wagerCounts[tier]||0}</span></div><span class="mastery-row-meta">Answered ${attempts}; correct ${correct}${attempts ? ` (${accuracy}%)` : ''}.</span></div>`; }).join('')}
@@ -14585,7 +14695,7 @@ async function showMasteryReportScreen(options = {}){
             <div class="mastery-verdict">${escapeHTML(report.verdict)}</div>
 
             <div class="mastery-section">
-                <h3>Evidence Strength</h3>
+                <h2>Evidence Strength</h2>
                 <div class="mastery-row-main">
                     <span class="mastery-row-name">${escapeHTML(report.evidence.label)}</span>
                     ${renderEvidenceBadge(report.evidence)}
@@ -14601,7 +14711,7 @@ async function showMasteryReportScreen(options = {}){
             </div>
 
             <div class="mastery-section">
-                <h3>${report.sampleAware ? "Observed Strong Signals" : "Strongest Signals"}</h3>
+                <h2>${report.sampleAware ? "Observed Strong Signals" : "Strongest Signals"}</h2>
                 ${renderMasteryRows(report.strongest, "No clear strength signal yet. The run did not create enough repeated evidence.")}
             </div>
 
@@ -14636,7 +14746,7 @@ async function showMasteryReportScreen(options = {}){
             ${riskRewardSection}
 
             <div class="mastery-section">
-                <h3>Behavior Signals</h3>
+                <h2>Behavior Signals</h2>
                 <div class="mastery-row">
                     <div class="mastery-row-main">
                         <span class="mastery-row-name">Recent Accuracy</span>
@@ -14663,7 +14773,7 @@ async function showMasteryReportScreen(options = {}){
             ${conceptReviewSection}
 
             <div class="mastery-section">
-                <h3>Next Moves</h3>
+                <h2>Next Moves</h2>
                 ${report.nextSteps.map(step => `<div class="mastery-row"><span class="mastery-row-name">${escapeHTML(step)}</span></div>`).join("")}
             </div>
 
@@ -15750,6 +15860,13 @@ const phase15BaseLoadQuestion = loadQuestion;
 loadQuestion = function(...args){
     if(phase15ResumeLifecyclePending){
         phase15ResumeLifecyclePending = false;
+        // An in-progress save from the assessment-only engine may contain a boss miss.
+        if(gameMode === "standard" && isBossRoomForMode(room) && Number(checkpointAttemptState?.incorrect || 0) > 0){
+            runPhase = "resolved";
+            failStandardCheckpoint();
+            persistStandardRunAfterStateChange("resolved");
+            return;
+        }
         if(runPhase === "boss-summary" && phase15BossSummaryRoom){
             showKnowledgeRoom(phase15BossSummaryRoom);
             return;
@@ -15904,10 +16021,349 @@ phase15LayoutStyle.textContent = [
 document.head.appendChild(phase15LayoutStyle);
 
 
+</script>
+<!-- MQ ACCESSIBILITY script START -->
+<script>
+/* Embedded in games and hubs: one origin-wide preference, no game-state writes. */
+(() => {
+  'use strict';
+  const key = 'mq:accessibility:decorative-motion';
+  const preference = matchMedia('(prefers-reduced-motion: reduce)');
+  const controls = new Set();
+  let choice = 'system';
+  function read() {
+    try {
+      const value = localStorage.getItem(key);
+      choice = value === 'paused' || value === 'playing' ? value : 'system';
+    } catch { /* Keep the in-memory choice when storage is unavailable. */ }
+  }
+  const paused = () => choice === 'system' ? preference.matches : choice === 'paused';
+  function apply() {
+    document.documentElement.classList.toggle('mq-motion-paused', paused());
+    controls.forEach(control => {
+      control.textContent = `DECORATIVE MOTION: ${paused() ? 'OFF' : 'ON'}`;
+    });
+    document.querySelectorAll('video[autoplay]').forEach(video => {
+      if(paused()) video.pause();
+      else video.play().catch(() => {});
+    });
+  }
+  window.MQMotionPreference = {
+    createControl(id) {
+      const label = document.createElement('div');
+      label.className = 'mq-motion-setting';
+      const control = document.createElement('button'),status=document.createElement('span');
+      control.id=id;control.type='button';control.className='game-menu-option';
+      status.className='sr-only';status.setAttribute('role','status');
+      function setChoice(value){
+        choice=value;
+        try {
+          localStorage.setItem(key, choice);
+        } catch { /* A standalone file still supports an in-memory preference. */ }
+        apply();
+        status.textContent=`Decorative motion ${paused()?'off':'on'}.`;
+      }
+      control.addEventListener('click',()=>setChoice(paused()?'playing':'paused'));
+      controls.add(control);label.append(control,status);apply();
+      return label;
+    }
+  };
+  // Autoplay initiated by a screen transition must respect the same preference.
+  document.addEventListener('play', event => {
+    if(event.target.matches?.('video[autoplay]') && paused()) event.target.pause();
+  }, true);
+  preference.addEventListener('change', apply);
+  window.addEventListener('storage', event => { if(event.key === key || event.key === null) { read(); apply(); } });
+  window.addEventListener('pageshow', () => { read(); apply(); });
+  read(); apply();
+})();
+
+/* Presentation callbacks only. Answer verification, scoring and selection remain in each engine. */
+(() => {
+  'use strict';
+  let pending = null;
+  const manual = () => ['standard','unlimited','quiz','trialGraph','legendary','score','fadingFortune','riskReward'].includes(gameMode);
+  const plain = value => {
+    const template=document.createElement('template');template.innerHTML=String(value || '');
+    return template.content.textContent.trim();
+  };
+  const snapshot = question => ({id:question?.id ?? '',q:plain(question?.q),feedback:plain(question?.feedback)});
+  function cancel() {
+    pending?.button.remove();pending=null;
+    const hallway=document.getElementById('hallwayTransition');
+    hallway?.removeAttribute('role');hallway?.removeAttribute('aria-modal');
+    hallway?.removeAttribute('aria-label');hallway?.classList.remove('mq-feedback-held','active');
+  }
+  function holdHallway(advance, instructional = true) {
+    // Active repair/bridge/retest retains its original automatic transitions.
+    if(!manual() || !instructional || remediationState.active)return false;
+    const hallway=document.getElementById('hallwayTransition'),text=document.getElementById('hallwayText');
+    // Cancel only a stale control, without dismissing this newly painted scene.
+    pending?.button.remove();
+    const button=document.createElement('button');button.type='button';button.id='mqFeedbackContinue';
+    button.className='continue-btn';button.textContent='Continue';
+    const token={button,session:runSessionId};pending=token;
+    hallway.classList.add('mq-feedback-held');hallway.setAttribute('role','dialog');
+    hallway.setAttribute('aria-hidden','false');
+    hallway.setAttribute('aria-modal','true');hallway.setAttribute('aria-label','Question feedback');
+    text.tabIndex=-1;text.append(button);
+    // Dialog focus delivers this readable content; avoid a competing live announcement.
+    const live=document.getElementById('srAnnouncements');if(live)live.textContent='';
+    button.addEventListener('click',()=>{
+      if(pending!==token || token.session!==runSessionId || button.disabled)return;
+      button.disabled=true;pending=null;button.remove();
+      hallway.classList.remove('mq-feedback-held');hallway.removeAttribute('role');
+      hallway.removeAttribute('aria-modal');hallway.removeAttribute('aria-label');
+      advance();
+      // The callback may open a boss reveal or results. Respect that focus owner.
+      queueMicrotask(()=>{
+        window.MQAccessibility?.sync();
+        const q=document.getElementById('question');
+        if(!document.querySelector('[aria-modal="true"]:not([aria-hidden="true"]):not([hidden])') && q)q.focus({preventScroll:true});
+      });
+    });
+    window.MQAccessibility?.sync();
+    text.focus({preventScroll:true});
+    return true;
+  }
+  window.MQFeedbackProgression={
+    cancel,holdHallway,
+    wrongTurn(narrative,question,withheld=false){
+      const campaign=['standard','unlimited','legendary'].includes(gameMode);
+      const feedback=manual() && !campaign && !withheld ? plain(question?.feedback) : '';
+      return feedback ? `${narrative}\n\n${feedback}` : narrative;
+    },
+    rememberRecoveryOrigin(state,question){
+      // Optional compatible member of the already-saved remediation state; no bank lookup.
+      if(manual() && state?.active)state.mqOriginFeedback=snapshot(question);
+    },
+    finishRecovery(origin,outcome,advance,delay){
+      if(!manual() || !origin?.feedback){scheduleForCurrentRun(advance,delay);return;}
+      const destination=plain(typeof FACULTY_COMPOSITION_CONFIG==='object' ? FACULTY_COMPOSITION_CONFIG.title : document.title) || 'the game';
+      const session=runSessionId;let continued=false;
+      showGameModal({title:'Recovery Complete',text:'',confirmText:`Continue to ${destination}`,onConfirm:()=>{
+        if(continued || session!==runSessionId)return;
+        continued=true;advance();
+      }});
+      const text=document.getElementById('gameModalText');
+      const part=(className,content,heading=false)=>{
+        const span=document.createElement('span');span.className=className;span.textContent=content;
+        if(heading){span.setAttribute('role','heading');span.setAttribute('aria-level','3');}
+        return span;
+      };
+      // Phrasing elements keep the existing modal paragraph valid; content is never parsed as markup.
+      text.replaceChildren(
+        part('mq-recovery-intro',`${plain(outcome) || "You've completed the recovery challenge."} Before continuing, revisit the question that sent you here.`),
+        part('mq-recovery-label','The original question',true),part('mq-recovery-copy',origin.q),
+        part('mq-recovery-label','The economic connection',true),part('mq-recovery-copy',origin.feedback)
+      );
+      window.MQAccessibility?.sync();
+    }
+  };
+})();
+
+/* Embedded in standalone games by audit_tools/accessibility_cleanup/sync.mjs.
+ * Presentation only: never reads answer keys, changes timers, or writes run data. */
+(() => {
+  'use strict';
+  const byId = id => document.getElementById(id);
+  const visible = node => Boolean(node && !node.hidden && node.getClientRects().length && getComputedStyle(node).visibility !== 'hidden');
+  const reviewDialog=document.createElement('section');
+  reviewDialog.id='mqExplanationDialog';reviewDialog.className='game-modal';reviewDialog.hidden=true;
+  reviewDialog.setAttribute('role','dialog');reviewDialog.setAttribute('aria-modal','true');reviewDialog.setAttribute('aria-labelledby','mqExplanationTitle');
+  reviewDialog.innerHTML='<div class="game-modal-card"><h2 id="mqExplanationTitle" tabindex="-1">Review Explanations</h2><ol id="mqExplanationEntries"></ol><button id="mqExplanationBack" class="continue-btn" type="button">Back to Game Menu</button></div>';
+  document.body.append(reviewDialog);
+  const closeReview=()=>{reviewDialog.hidden=true;sync();};
+  byId('mqExplanationBack').onclick=closeReview;
+  const dialogVisible=node=>visible(node) && (node.id!=='hallwayTransition' || node.classList.contains('mq-feedback-held'));
+  const controls = node => [...node.querySelectorAll('button,input,select,textarea,a[href],summary,[tabindex]')]
+    .filter(el => visible(el) && !el.disabled && el.tabIndex >= 0 && !el.closest('[inert]'));
+  const dialogs = ['mqExplanationDialog','hallwayTransition','graphLightbox','gameModal','quizSetupModal','trialGraphSetupModal','fadingFortuneSetupModal','riskRewardSetupModal','guideIntroScreen','bossRevealScreen'].map(byId).filter(Boolean);
+  const screens = ['startScreen','modeSelectScreen'].map(byId).filter(Boolean);
+  const ownedInert = new Set();
+  const openers = new Map();
+  let active = null, lastControl = null;
+  document.documentElement.lang ||= 'en';
+  const game = document.querySelector('.dungeon-container');
+  if(game) { game.setAttribute('role','main'); game.setAttribute('aria-label','Current game'); }
+  screens.forEach(el => el.setAttribute('role','main'));
+  document.querySelectorAll('.mode-card[aria-label]').forEach(el=>el.removeAttribute('aria-label'));
+  document.querySelectorAll('#artifactVault img:not([alt])').forEach(el=>el.alt='');
+  // The adjacent guide name already identifies this repeated portrait.
+  if(byId('wizardName')?.textContent.trim())document.querySelector('#wizardImage:not([alt])')?.setAttribute('alt','');
+  const gameTitle=byId('facultyTopTitle') || document.querySelector('.top-title');
+  if(gameTitle){gameTitle.setAttribute('role','heading');gameTitle.setAttribute('aria-level','1');}
+  const question=byId('question');
+  if(question){question.setAttribute('role','heading');question.setAttribute('aria-level','2');question.tabIndex=-1;}
+  const hallway=byId('hallwayTransition');
+  if(hallway){
+    const syncHallway=()=>{const shown=hallway.classList.contains('active');hallway.setAttribute('aria-hidden',String(!shown));if(shown)window.MQAccessibility?.recordReleasedFeedback();};
+    new MutationObserver(syncHallway).observe(hallway,{attributes:true,attributeFilter:['class']});syncHallway();
+  }
+  const live = byId('srAnnouncements');
+  if(live) { live.setAttribute('aria-live','polite'); live.setAttribute('role','status'); }
+  // These values are already included in the dedicated event announcement.
+  ['fadingFortuneHud','riskRewardHud'].forEach(id => byId(id)?.removeAttribute('aria-live'));
+  const focus = el => { if(!visible(el) || el.closest('[inert]')) return false; el.focus({preventScroll:true}); return document.activeElement === el; };
+  function sync() {
+    const previouslyFocused=document.activeElement;
+    observeFeedback();
+    const next = dialogs.filter(dialogVisible).sort((a,b) => (+getComputedStyle(b).zIndex || 0) - (+getComputedStyle(a).zIndex || 0))[0]
+      || screens.find(visible) || null;
+    for(const el of ownedInert) el.inert = false;
+    ownedInert.clear();
+    if(next) {
+      // Inert siblings at every level, supporting a dialog nested in a game shell.
+      for(let branch=next; branch && branch!==document.body; branch=branch.parentElement) {
+        for(const sibling of branch.parentElement.children) {
+          if(sibling===branch || ['SCRIPT','STYLE','LINK'].includes(sibling.tagName) || sibling===live) continue;
+          if(!sibling.inert) { sibling.inert=true; ownedInert.add(sibling); }
+        }
+      }
+    }
+    if(next!==active) {
+      const previous=active, previousOpener=openers.get(previous);
+      active=next;
+      if(next && !openers.has(next)){
+        const candidate=previouslyFocused!==document.body && visible(previouslyFocused) && !next.contains(previouslyFocused)
+          ? previouslyFocused : lastControl && visible(lastControl) && !next.contains(lastControl) ? lastControl : null;
+        openers.set(next,candidate);
+      }
+      if(previous && !dialogVisible(previous))openers.delete(previous);
+      if(previous && dialogs.includes(previous) && (!next || next.contains(previousOpener)) && focus(previousOpener)) {
+        // Return to the triggering control, including a setup dialog over mode selection.
+      } else if(next && !next.contains(document.activeElement)) {
+        const first=next.querySelector('h1,h2') || controls(next)[0] || next;
+        if(!first.hasAttribute('tabindex') && !first.matches('button,input,select,a,summary')) first.tabIndex=-1;
+        focus(first);
+      } else if(!next && previous && (previous.contains(document.activeElement) || document.activeElement===document.body)) {
+        if(!focus(previousOpener)) focus(byId('question')) || focus(byId('returnMenuBtn'));
+      }
+    }
+  }
+  document.addEventListener('click',event => {lastControl=event.target.closest('button,a,input,select,summary,[tabindex]');},true);
+  document.addEventListener('keydown',event => {
+    if(event.key==='Enter' || event.key===' ') lastControl=document.activeElement;
+    if((event.key==='Enter' || event.key===' ') && event.target.matches('#questionImageBox img[role="button"]')){
+      event.preventDefault();event.stopImmediatePropagation();event.target.click();return;
+    }
+    if(!active || !dialogs.includes(active)) return;
+    if(event.key==='Tab') {
+      const items=controls(active), index=items.indexOf(document.activeElement);
+      if(!items.length) {event.preventDefault();active.tabIndex=-1;focus(active);}
+      else if(event.shiftKey && index<=0) {event.preventDefault();focus(items.at(-1));}
+      else if(!event.shiftKey && (index<0 || index===items.length-1)) {event.preventDefault();focus(items[0]);}
+    }
+    if(event.key==='Escape') {
+      const closers={mqExplanationDialog:closeReview,graphLightbox:()=>closeGraphLightbox(),quizSetupModal:()=>closeQuizSetup(),trialGraphSetupModal:()=>closeTrialGraphSetup(),fadingFortuneSetupModal:()=>closeFadingFortuneSetup(),riskRewardSetupModal:()=>closeRiskRewardSetup()};
+      const cancel=byId('gameModalCancel');
+      const close=closers[active.id] || (active.id==='gameModal' && visible(cancel) ? ()=>cancel.click() : null);
+      if(close) {event.preventDefault();event.stopImmediatePropagation();close();}
+    }
+  },true);
+  const observer=new MutationObserver(sync);
+  [...dialogs,...screens].forEach(el=>observer.observe(el,{attributes:true,attributeFilter:['style','class','hidden']}));
+  // Keep utilities inside the existing menu, never inside released-feedback views.
+  let menu=byId('gameMenuOptions');
+  if(!menu && byId('returnMenuBtn') && byId('gameModalText')) {
+    // The older Labyrinth engine has only an Operation Menu return confirmation.
+    // Add utilities to that entry point, retaining its original return action.
+    menu=document.createElement('div');menu.id='mqUtilityMenu';menu.hidden=true;
+    byId('gameModalText').after(menu);
+    const returnButton=byId('returnMenuBtn'), originalAction=returnButton.onclick;
+    returnButton.onclick=()=>{
+      showGameModal({title:'Operation Menu',text:'Choose a utility or return to mode selection.',confirmText:'Mode Selection',cancelText:'Close',
+        onConfirm:()=>{menu.hidden=true;originalAction?.call(returnButton);},onCancel:()=>{menu.hidden=true;}});
+      menu.hidden=false;
+    };
+    new MutationObserver(()=>{
+      if(!visible(byId('gameModal')) || byId('gameModalTitle')?.textContent!=='Operation Menu')menu.hidden=true;
+    }).observe(byId('gameModal'),{attributes:true,attributeFilter:['style'],childList:true,subtree:true});
+  }
+  const history=document.createElement('button');history.id='mqExplanationReview';
+  history.type='button';history.className='game-menu-option';history.textContent='Review Explanations';
+  const entries=byId('mqExplanationEntries');
+  menu?.append(window.MQMotionPreference.createControl('mqMotionControl'),history);
+  if(menu?.id==='mqUtilityMenu'){
+    byId('mqMotionControl').classList.add('continue-btn');history.classList.add('continue-btn');
+  }
+  const released=new Map();
+  // Timed Trial alone retains automatic explanation progression. Never archive Exam metadata.
+  const permitsReleasedHistory=()=>['timed','timed-complete'].includes(gameMode);
+  const permitsImmediateAnnouncement=()=>typeof modeAllowsImmediateCorrectnessFeedback==='function'
+    ? modeAllowsImmediateCorrectnessFeedback() : gameMode!=='exam';
+  const normalize=text=>String(text||'').replace(/\s+/g,' ').trim();
+  function record() {
+    if(!permitsReleasedHistory() || typeof currentQuestion==='undefined' || !currentQuestion)return;
+    // Match only the current question's feedback field against actual released text.
+    // Never read answer keys, banks, guide lines, reports or unreleased feedback.
+    const fragment=document.createElement('template');fragment.innerHTML=String(currentQuestion.feedback||'');
+    const explanation=normalize(fragment.content.textContent);
+    if(!explanation)return;
+    const hallwayFeedback=hallway?.classList.contains('active') ? byId('hallwayText')?.children[1] : null;
+    const modalFeedback=visible(byId('gameModal')) && menu?.hidden ? byId('gameModalText') : null;
+    const releasedInHallway=visible(hallwayFeedback) && normalize(hallwayFeedback.innerText)===explanation;
+    const releasedInModal=visible(modalFeedback) && ['Incorrect. '+explanation,'Incorrect! '+explanation,explanation].includes(normalize(modalFeedback.innerText));
+    if(!releasedInHallway && !releasedInModal)return;
+    const questionText=normalize(currentQuestion.q || byId('question')?.innerText);
+    const id=String(currentQuestion.id ?? '');
+    released.set(JSON.stringify([id,questionText,explanation]),{id,questionText,explanation});
+    history.hidden=false;
+    if(!reviewDialog.hidden)renderReview();
+  }
+  function renderReview() {
+    entries.replaceChildren();
+    if(!permitsReleasedHistory()){reviewDialog.hidden=true;history.hidden=true;return;}
+    for(const {id,questionText,explanation} of released.values()) {
+      const li=document.createElement('li'),questionLabel=document.createElement('p'),text=document.createElement('p');
+      questionLabel.className='mq-review-question';
+      questionLabel.textContent=questionText || (id ? 'Question '+id : 'Question');
+      text.textContent=explanation;li.append(questionLabel,text);entries.append(li);
+    }
+  }
+  history.addEventListener('click',()=>{if(!permitsReleasedHistory() || !released.size)return;renderReview();reviewDialog.hidden=false;sync();});
+  function syncReview() {
+    history.hidden=!permitsReleasedHistory() || !released.size;
+    if(!permitsReleasedHistory()){reviewDialog.hidden=true;entries.replaceChildren();}
+    record();
+  }
+  window.MQAccessibility={
+    recordReleasedFeedback:record,
+    resetFeedback(){released.clear();entries.replaceChildren();history.hidden=true;reviewDialog.hidden=true;},
+    sync
+  };
+  const reviewObserver=new MutationObserver(syncReview);
+  if(menu)reviewObserver.observe(menu,{attributes:true,attributeFilter:['hidden']});
+  if(byId('gameModal'))reviewObserver.observe(byId('gameModal'),{attributes:true,attributeFilter:['style']});
+  if(byId('gameModalText'))reviewObserver.observe(byId('gameModalText'),{childList:true,subtree:true,characterData:true});
+  let observedMessage=null;
+  const feedbackObserver=new MutationObserver(()=>{
+    if(!visible(observedMessage))return;
+    const text=observedMessage.innerText.trim();
+    // Read only released presentation text. Dialog entry announces its own feedback.
+    if(text && live && permitsImmediateAnnouncement()
+      && !dialogs.some(dialogVisible) && !hallway?.classList.contains('active') && !live.innerText.includes(text))live.innerText=text;
+  });
+  function observeFeedback(){
+    const message=byId('message');if(message===observedMessage)return;
+    feedbackObserver.disconnect();observedMessage=message;
+    if(message)feedbackObserver.observe(message,{childList:true,subtree:true,characterData:true});
+  }
+  const gameBox=byId('gameBox');
+  if(gameBox)new MutationObserver(()=>{
+    observeFeedback();
+    const heading=gameBox.querySelector('#masteryReportScreen h1,h1,h2');
+    if(heading && (document.activeElement===document.body || lastControl&&!lastControl.isConnected)){
+      heading.tabIndex=-1;focus(heading);
+    }
+  }).observe(gameBox,{childList:true});
+  syncReview();sync();
+})();
 
 const realmSoundButton=document.getElementById('soundToggle');
 realmSoundButton.className='game-menu-option';
 document.getElementById('gameMenuOptions').appendChild(realmSoundButton);
 </script>
+<!-- MQ ACCESSIBILITY script END -->
 </body>
 </html>
