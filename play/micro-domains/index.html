@@ -2560,21 +2560,79 @@ function selectGame(gameKey){
  
 </script>
 <!-- MQ HUB ACCESSIBILITY START -->
-<style>#hubMotionControl{position:relative;display:block;margin:12px auto;z-index:10000;padding:9px 12px;border:1px solid #8bdcff;border-radius:8px;background:#07111e;color:#eef6ff;font:inherit;font-size:12px;max-width:calc(100% - 16px);white-space:normal;cursor:pointer}
-#hubMotionControl.hub-splash-motion{position:fixed;top:8px;left:8px;margin:0}
+<style>.mq-motion-setting{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font:inherit;color:inherit;margin:8px 0}
+.mq-motion-setting select{font:inherit;max-width:100%;padding:8px;border:1px solid currentColor;border-radius:6px;background:#07111e;color:#eef6ff}
 :focus-visible{outline:3px solid #8bdcff;outline-offset:4px}
 [role=dialog]{overflow:auto;box-sizing:border-box;max-height:100dvh}
-html.hub-motion-paused *,html.hub-motion-paused *::before,html.hub-motion-paused *::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}}</style>
-<script>/* Collection-hub presentation: preserves mission, unlock and audio logic. */
+html.mq-motion-paused *,html.mq-motion-paused *::before,html.mq-motion-paused *::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}</style>
+<script>/* Embedded in games and hubs: one origin-wide preference, no game-state writes. */
 (() => {
- const byId=id=>document.getElementById(id),button=document.createElement('button');
- button.id='hubMotionControl';button.type='button';document.body.append(button);
- const preference=matchMedia('(prefers-reduced-motion: reduce)');let paused=preference.matches;
- try{paused=paused||localStorage.getItem('mq:accessibility:decorative-motion')==='paused';}catch{}
- function motion(){const effective=paused||preference.matches;document.documentElement.classList.toggle('hub-motion-paused',effective);button.textContent=preference.matches?'Reduced motion enabled':paused?'Resume decorative motion':'Pause decorative motion';button.disabled=preference.matches;button.setAttribute('aria-pressed',String(effective));document.querySelectorAll('video[autoplay]').forEach(v=>{if(effective)v.pause();else v.play().catch(()=>{});});}
- button.onclick=()=>{paused=!paused;try{localStorage.setItem('mq:accessibility:decorative-motion',paused?'paused':'playing');}catch{}motion();};
- preference.addEventListener('change',e=>{paused=e.matches;motion();});motion();
+  'use strict';
+  const key = 'mq:accessibility:decorative-motion';
+  const preference = matchMedia('(prefers-reduced-motion: reduce)');
+  const controls = new Set();
+  let choice = 'system';
+  function read() {
+    try {
+      const value = localStorage.getItem(key);
+      choice = value === 'paused' || value === 'playing' ? value : 'system';
+    } catch { /* Keep the in-memory choice when storage is unavailable. */ }
+  }
+  const paused = () => choice === 'system' ? preference.matches : choice === 'paused';
+  function apply() {
+    document.documentElement.classList.toggle('mq-motion-paused', paused());
+    controls.forEach(control => { control.value = choice; });
+    document.querySelectorAll('video[autoplay]').forEach(video => {
+      if(paused()) video.pause();
+      else video.play().catch(() => {});
+    });
+  }
+  window.MQMotionPreference = {
+    createControl(id) {
+      const label = document.createElement('label');
+      label.className = 'mq-motion-setting';
+      label.htmlFor = id;
+      label.append('Decorative motion ');
+      const control = document.createElement('select');
+      control.id = id;
+      for(const [value, text] of [['system','Use device setting'],['paused','Paused'],['playing','Playing']]) {
+        const option = document.createElement('option');
+        option.value = value; option.textContent = text; control.append(option);
+      }
+      control.value = choice;
+      control.addEventListener('change', () => {
+        choice = control.value;
+        try {
+          if(choice === 'system') localStorage.removeItem(key);
+          else localStorage.setItem(key, choice);
+        } catch { /* A standalone file still supports an in-memory preference. */ }
+        apply();
+      });
+      controls.add(control); label.append(control);
+      return label;
+    }
+  };
+  // Autoplay initiated by a screen transition must respect the same preference.
+  document.addEventListener('play', event => {
+    if(event.target.matches?.('video[autoplay]') && paused()) event.target.pause();
+  }, true);
+  preference.addEventListener('change', apply);
+  window.addEventListener('storage', event => { if(event.key === key || event.key === null) { read(); apply(); } });
+  window.addEventListener('pageshow', () => { read(); apply(); });
+  read(); apply();
+})();
+
+/* Collection-hub presentation: preserves mission, unlock and audio logic. */
+(() => {
+ const byId=id=>document.getElementById(id);
+ const setting=window.MQMotionPreference.createControl('hubMotionControl');
+ const menu=document.querySelector('#realmMenuModal,#macroMenuModal,#directorateMenuModal,#microMenuModal');
+ if(menu)(menu.querySelector('[class$="-menu-actions"]')||menu.firstElementChild||menu).append(setting);
+ else {
+  const settings=document.createElement('details'),label=document.createElement('summary');
+  label.textContent='Settings';settings.append(label,setting);
+  (document.querySelector('main')||document.body).append(settings);
+ }
  const splash=byId('splashScreen'),main=byId('mainMenu');
  const dialogs=['realmMenuModal','macroMenuModal','directorateMenuModal','microMenuModal','helpModal','artifactModal','achievementModal'].map(byId).filter(Boolean);
  dialogs.forEach(el=>{el.setAttribute('role','dialog');el.setAttribute('aria-modal','true');});
@@ -2585,10 +2643,7 @@ html.hub-motion-paused *,html.hub-motion-paused *::before,html.hub-motion-paused
  function sync(){
   const next=dialogs.filter(el=>el.classList.contains('active')&&visible(el)).sort((a,b)=>(+getComputedStyle(b).zIndex||0)-(+getComputedStyle(a).zIndex||0))[0] || (visible(splash)?splash:null);
   release();
-  button.classList.toggle('hub-splash-motion',next===splash);
-  const host=next?(next===splash?splash:(next.firstElementChild||next)):(main?.querySelector('header')||document.body);
-  if(button.parentElement!==host)host.append(button);
-  if(next)for(let branch=next;branch&&branch!==document.body;branch=branch.parentElement)for(const el of branch.parentElement.children){if(el!==branch&&el!==button&&!['SCRIPT','STYLE'].includes(el.tagName)&&!el.inert){el.inert=true;owned.add(el);}}
+  if(next)for(let branch=next;branch&&branch!==document.body;branch=branch.parentElement)for(const el of branch.parentElement.children){if(el!==branch&&!['SCRIPT','STYLE'].includes(el.tagName)&&!el.inert){el.inert=true;owned.add(el);}}
   for(const dialog of dialogs)dialog.setAttribute('aria-hidden',String(!dialog.classList.contains('active')));
   if(next!==active){
    const previous=active;active=next;
@@ -2602,7 +2657,7 @@ html.hub-motion-paused *,html.hub-motion-paused *::before,html.hub-motion-paused
  document.addEventListener('keydown',e=>{
   if(['Enter',' '].includes(e.key))lastControl=document.activeElement;
   if(!active||active===splash)return;
-  if(e.key==='Tab'){const items=[...new Set([...active.querySelectorAll('button,input,select,a[href],summary,[tabindex]'),button])].filter(el=>visible(el)&&!el.disabled&&el.tabIndex>=0&&!el.closest('[inert]'));const index=items.indexOf(document.activeElement);if(e.shiftKey&&index<=0){e.preventDefault();focus(items.at(-1));}else if(!e.shiftKey&&(index<0||index===items.length-1)){e.preventDefault();focus(items[0]);}}
+  if(e.key==='Tab'){const items=[...active.querySelectorAll('button,input,select,a[href],summary,[tabindex]')].filter(el=>visible(el)&&!el.disabled&&el.tabIndex>=0&&!el.closest('[inert]'));const index=items.indexOf(document.activeElement);if(e.shiftKey&&index<=0){e.preventDefault();focus(items.at(-1));}else if(!e.shiftKey&&(index<0||index===items.length-1)){e.preventDefault();focus(items[0]);}}
   if(e.key==='Escape'){const close=active.querySelector('button[onclick^="close"]');if(close){e.preventDefault();e.stopImmediatePropagation();close.click();}}
  },true);
  const observer=new MutationObserver(sync);[splash,...dialogs].filter(Boolean).forEach(el=>observer.observe(el,{attributes:true,attributeFilter:['class','style','hidden']}));

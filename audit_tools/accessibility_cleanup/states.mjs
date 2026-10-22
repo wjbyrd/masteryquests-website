@@ -14,7 +14,7 @@ try{
    await start(page);size=await fits(page);assert(size.content<=size.width+1,JSON.stringify(size));
    await page.screenshot({path:path.join(out,'state-'+name+'-320.png'),fullPage:true});
    await page.locator('#returnMenuBtn').click();await page.waitForTimeout(50);assert(await page.locator('#gameModal').evaluate(el=>el.contains(document.activeElement)));
-   for(let i=0;i<12;i++){await page.keyboard.press('Tab');assert(await page.evaluate(()=>document.querySelector('#gameModal').contains(document.activeElement)||document.activeElement.id==='mqMotionControl'));}
+   for(let i=0;i<12;i++){await page.keyboard.press('Tab');assert(await page.evaluate(()=>document.querySelector('#gameModal').contains(document.activeElement)));}
    await page.keyboard.press('Escape');await page.waitForTimeout(50);assert(await page.locator('#returnMenuBtn').evaluate(el=>el===document.activeElement));
    const saved=await page.evaluate(()=>{saveGameState();return {room,runID};});await page.reload();await page.locator('#continueRunBtn').click();
    if(await page.locator('#guideIntroProceed').isVisible())await page.locator('#guideIntroProceed').click();await page.waitForFunction(()=>Boolean(currentQuestion));assert.deepEqual(await page.evaluate(()=>({room,runID})),saved);
@@ -31,7 +31,8 @@ try{
  for(const hub of ['economic-realm','macro-command-system','managerial-intelligence-directorate','micro-domains'])await test(hub+' splash, motion and modal',async()=>{
   const {page,context}=await isolated(browser,origin,{viewport:{width:320,height:850},reducedMotion:'reduce'});try{
    await page.goto(origin+'/play/'+hub+'/');await page.waitForTimeout(150);assert(await page.locator('#mainMenu').evaluate(e=>e.inert));
-   assert(await page.locator('#hubMotionControl').getAttribute('aria-pressed')==='true');
+   assert(await page.locator('html').evaluate(e=>e.classList.contains('mq-motion-paused')));
+   assert.equal(await page.locator('#hubMotionControl').isVisible(),false);
    await page.locator('#enterHubButton').click();await page.waitForTimeout(100);assert.equal(await page.locator('#mainMenu').evaluate(e=>e.inert),false);
    await spacing(page);const size=await fits(page);assert(size.content<=size.width+1,JSON.stringify(size));
    const menu=page.locator('#realmMenuButton,#macroMenuButton,#directorateMenuButton,#microMenuButton');if(await menu.count()){

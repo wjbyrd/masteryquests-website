@@ -17,7 +17,7 @@ try{
    await page.locator('#answers button').nth(wrong).focus();await page.keyboard.press('Enter');
    await page.waitForTimeout(100);
    if(!released){
-    assert.equal(await page.locator('#mqReleasedFeedback li').count(),0);
+    assert.equal(await page.locator('#mqExplanationReview li').count(),0);
     const tree=await page.locator('body').ariaSnapshot();assert(!tree.includes(q.feedback),'unreleased feedback absent from accessibility tree');
    }
    assert.notEqual(await page.evaluate(()=>document.activeElement.tagName),'BODY','answer activation must retain focus');
@@ -29,7 +29,7 @@ try{
    await page.goto(origin+'/downloads/resources/mastery-quests-faculty-starter.html');await start(page,'trialGraph');
    const graph=page.locator('#questionImageBox img');await graph.focus();await page.keyboard.press('Enter');await page.waitForTimeout(50);
    assert(await page.locator('#graphLightbox').evaluate(e=>e.contains(document.activeElement)));
-   for(let i=0;i<8;i++){await page.keyboard.press('Tab');assert(await page.evaluate(()=>document.querySelector('#graphLightbox').contains(document.activeElement)||document.activeElement.id==='mqMotionControl'));}
+   for(let i=0;i<8;i++){await page.keyboard.press('Tab');assert(await page.evaluate(()=>document.querySelector('#graphLightbox').contains(document.activeElement)));}
    await page.locator('#graphLightbox summary').click();assert(await page.locator('#graphLightboxDescription').isVisible());
    await page.screenshot({path:path.join(out,'after-graph-320.png'),fullPage:true});
    await page.keyboard.press('Escape');await page.waitForTimeout(50);assert(await graph.evaluate(e=>e===document.activeElement));
@@ -61,7 +61,8 @@ try{
    const quiz=page.locator('[data-mode=quiz]');await quiz.focus();await page.keyboard.press('Enter');await page.waitForTimeout(50);
    assert(await page.locator('#quizSetupModal').evaluate(e=>e.contains(document.activeElement)));
    await page.keyboard.press('Escape');await page.waitForTimeout(50);assert(await quiz.evaluate(e=>e===document.activeElement));
-   await page.locator('#mqMotionControl').click();assert(await page.locator('html').evaluate(e=>e.classList.contains('mq-motion-paused')));
+   await start(page,'quiz');await page.locator('#returnMenuBtn').click();
+   await page.locator('#mqMotionControl').selectOption('paused');assert(await page.locator('html').evaluate(e=>e.classList.contains('mq-motion-paused')));
    await page.reload();assert(await page.locator('html').evaluate(e=>e.classList.contains('mq-motion-paused')));
   }finally{await context.close();}
  });

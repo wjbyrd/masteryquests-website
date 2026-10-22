@@ -16,7 +16,7 @@ async function sequence(file,mode,baseline){const {page,context}=await open(file
   const choice=await page.evaluate(async want=>{for(let i=0;i<4;i++)if(await isQuestionAnswerCorrect(currentQuestion,i)===want)return i;},wantCorrect);
   const answer=page.locator('#answers button').nth(choice);if(await answer.isDisabled())continue;
   await answer.focus();await page.keyboard.press('Enter');await page.clock.runFor(100);
-  if(!q.immediate && !baseline){const tree=await page.locator('body').ariaSnapshot();assert(!q.feedback||!tree.includes(q.feedback),'delayed feedback leaked');assert.equal(await page.locator('#mqReleasedFeedback li').count(),0);}
+  if(!q.immediate && !baseline){const tree=await page.locator('body').ariaSnapshot();assert(!q.feedback||!tree.includes(q.feedback),'delayed feedback leaked');assert.equal(await page.locator('#mqExplanationReview li').count(),0);}
   release.push({question:q.id,immediate:q.immediate});
   await page.clock.runFor(4000);
   states.push(await page.evaluate(()=>({question:currentQuestion?.id,room,totalAttempts,correctAnswers,streak,score:typeof scoreAttackScore==='undefined'?null:scoreAttackScore,fading:typeof fadingFortuneScore==='undefined'?null:fadingFortuneScore,risk:typeof riskRewardBankroll==='undefined'?null:riskRewardBankroll,repair:typeof remediationState==='undefined'?null:JSON.parse(JSON.stringify(remediationState))})));

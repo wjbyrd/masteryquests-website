@@ -1,13 +1,14 @@
 /* Embedded with the game; no main-site stylesheet dependency. */
-#mqMotionControl{position:relative;z-index:7000;display:block;margin:12px auto;padding:9px 14px;max-width:calc(100% - 24px);white-space:normal;border:1px solid #8bdcff;border-radius:8px;background:#07111e;color:#eef6ff;font:inherit;cursor:pointer}
-body:has(#startScreen:not([style*="display: none"]):not([style*="display:none"])) #mqMotionControl,
-body.mode-selection-active #mqMotionControl{position:fixed;right:8px;bottom:8px;margin:0;font-size:12px}
-#mqMotionControl.mq-in-dialog{position:static;margin:12px auto}
+.mq-motion-setting{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font:inherit;color:inherit;margin:8px 0}
+.mq-motion-setting select{font:inherit;max-width:100%;padding:8px;border:1px solid currentColor;border-radius:6px;background:#07111e;color:#eef6ff}
+#mqUtilityMenu[hidden]{display:none}
 :focus-visible{outline:3px solid #8bdcff;outline-offset:4px}
 #question:focus{outline-offset:6px}
-#mqReleasedFeedback{margin:20px auto;max-width:900px;padding:12px 16px;border:1px solid #8bdcff;border-radius:8px;background:#07111e;color:#eef6ff;line-height:1.5;text-align:left;overflow-wrap:anywhere}
-#mqReleasedFeedback[hidden]{display:none}
-#mqReleasedFeedback li{margin-block:12px}
+#mqExplanationReview{grid-column:1/-1;line-height:1.5;text-align:left;overflow-wrap:anywhere}
+#mqExplanationReview[hidden]{display:none}
+#mqExplanationReview summary{cursor:pointer;padding:8px 0;min-height:24px}
+#mqExplanationReview li{margin-block:12px}
+#mqExplanationReview .mq-review-question{font-weight:bold}
 .graph-description{margin:10px auto;max-width:100%;color:#eef6ff;background:#07111e;padding:10px 14px;border-radius:8px;line-height:1.5;text-align:left;overflow-wrap:anywhere}
 .graph-description summary{cursor:pointer;min-height:24px}
 #graphLightbox{overflow:auto;flex-direction:column;gap:12px}
@@ -25,11 +26,6 @@ body.mode-selection-active #mqMotionControl{position:fixed;right:8px;bottom:8px;
 html.mq-motion-paused *,html.mq-motion-paused *::before,html.mq-motion-paused *::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
 html.mq-motion-paused #hallwayTransition{transform:none!important}
 html.mq-motion-paused .fade-out-text{animation:none!important;opacity:1!important}
-@media(prefers-reduced-motion:reduce){
- *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
- #hallwayTransition{transform:none!important}
- .fade-out-text{animation:none!important;opacity:1!important}
-}
 @media(max-width:400px){
  .start-content{box-sizing:border-box;max-width:100%;min-width:0;padding-inline:16px}
  .start-content .title{max-width:100%;overflow-wrap:anywhere;white-space:normal}
