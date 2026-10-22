@@ -4,8 +4,7 @@
 <body><main><p class="label">Private class build</p><h1>Managerial Intelligence Directorate</h1><p>Choose an operation to begin or continue your game.</p><nav aria-label="Managerial games"><a href="./cost-directive/">Cost Directive</a><a href="./market-signal/">Market Signal</a><a href="./strategy-desk/">Strategy Desk</a><a href="./agency-protocol/">Agency Protocol</a></nav><details><summary>About this class build</summary><p>Remote anonymous collection is OFF by default and requires explicit instructor/deployer enablement. When enabled, this private or class-specific build sends anonymous gameplay and interaction telemetry to Mastery Quests for operational, instructional, and product analytics, not research by default. Separately designated research requires its own institutional/research decisions and dataset handling. Names, email addresses, LMS account identifiers, university identifiers, and free-text responses are not intentionally included in application telemetry. This build records game interactions, including answers, timing, and counts of relevant selection/copy actions. It never stores selected or copied content, clipboard contents, keystrokes, or unrelated-tab activity. A random browser ID can link runs without identifying a person. Use Download Game Data to inspect your own record. A tab switch or copy action alone does not establish misconduct, intent, attention, cognition, or learning. Turning off future transmission cancels pending unsent events and keeps local downloads available; the choice persists after refresh when browser storage is available. Re-enabling does not replay cancelled events. It cannot retract in-flight requests or delete accepted server records, downloaded copies, provider logs, or backups. Already accepted application data remains under our 730-day whole-run policy, automatically evaluated daily from the latest stored server receipt. Disclosure mq-disclosure/2; governance mq-governance/2.</p></details></main><!-- MQ HUB ACCESSIBILITY START -->
 <style>.mq-motion-setting{display:flex;flex-direction:column;align-items:stretch;gap:6px;font:inherit;color:inherit;width:100%;grid-column:1/-1;margin:8px 0}
 .mq-motion-setting .game-menu-option{width:100%;font:inherit;color:inherit;background:rgba(0,0,0,.25);border:1px solid currentColor;border-radius:8px;padding:12px;cursor:pointer}
-.mq-motion-default{align-self:center;font:inherit;font-size:.85em;color:inherit;background:transparent;border:0;text-decoration:underline;min-height:28px;padding:4px 8px;cursor:pointer}
-.mq-motion-default:disabled{cursor:default;text-decoration:none}
+.mq-motion-setting .game-menu-option:focus-visible{outline:3px solid #8bdcff;outline-offset:4px}
 .mq-motion-setting .sr-only{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 :focus-visible{outline:3px solid #8bdcff;outline-offset:4px}
 [role=dialog]{overflow:auto;box-sizing:border-box;max-height:100dvh}
@@ -26,10 +25,8 @@ html.mq-motion-paused *,html.mq-motion-paused *::before,html.mq-motion-paused *:
   const paused = () => choice === 'system' ? preference.matches : choice === 'paused';
   function apply() {
     document.documentElement.classList.toggle('mq-motion-paused', paused());
-    controls.forEach(({control,reset}) => {
-      control.textContent = `DECORATIVE MOTION: ${paused() ? 'PAUSED' : 'ON'}`;
-      reset.disabled=choice==='system';
-      reset.textContent=choice==='system' ? 'Using device setting' : 'Use device setting';
+    controls.forEach(control => {
+      control.textContent = `DECORATIVE MOTION: ${paused() ? 'OFF' : 'ON'}`;
     });
     document.querySelectorAll('video[autoplay]').forEach(video => {
       if(paused()) video.pause();
@@ -40,22 +37,19 @@ html.mq-motion-paused *,html.mq-motion-paused *::before,html.mq-motion-paused *:
     createControl(id) {
       const label = document.createElement('div');
       label.className = 'mq-motion-setting';
-      const control = document.createElement('button'),reset=document.createElement('button'),status=document.createElement('span');
+      const control = document.createElement('button'),status=document.createElement('span');
       control.id=id;control.type='button';control.className='game-menu-option';
-      reset.type='button';reset.className='mq-motion-default';
       status.className='sr-only';status.setAttribute('role','status');
       function setChoice(value){
         choice=value;
         try {
-          if(choice === 'system') localStorage.removeItem(key);
-          else localStorage.setItem(key, choice);
+          localStorage.setItem(key, choice);
         } catch { /* A standalone file still supports an in-memory preference. */ }
         apply();
-        status.textContent=`Decorative motion ${paused()?'paused':'on'}.${choice==='system'?' Using device setting.':''}`;
+        status.textContent=`Decorative motion ${paused()?'off':'on'}.`;
       }
       control.addEventListener('click',()=>setChoice(paused()?'playing':'paused'));
-      reset.addEventListener('click',()=>{setChoice('system');control.focus();});
-      controls.add({control,reset});label.append(control,reset,status);apply();
+      controls.add(control);label.append(control,status);apply();
       return label;
     }
   };

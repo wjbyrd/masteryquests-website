@@ -26,6 +26,8 @@ try{
    await page.goto(origin+'/'+file);await start(page,'quiz');await page.evaluate(()=>{questionStartTime=Date.now()-30000;});const before=await page.evaluate(()=>totalAttempts);
    await page.locator('#answers button').first().focus();for(let i=0;i<5;i++)await page.keyboard.down('Enter');await page.keyboard.up('Enter');await page.waitForTimeout(100);
    assert.equal(await page.evaluate(()=>totalAttempts),before+1);
+   // Finish the real held-feedback modal before injecting a separate dialog fixture.
+   if(await page.locator('#mqFeedbackContinue').isVisible()){await page.locator('#mqFeedbackContinue').click();await page.waitForTimeout(100);}
    await page.evaluate(()=>showGameModal({title:'QA confirmation',text:'Synthetic fixture',cancelText:'Cancel'}));await page.waitForTimeout(50);
    const outside=await page.evaluate(()=>[...document.querySelectorAll('button,input,select,a[href]')].filter(e=>e.getClientRects().length&&!e.disabled&&!e.closest('#gameModal,[inert]')&&getComputedStyle(e).visibility!=='hidden').map(e=>e.id||e.outerHTML.slice(0,80)));
    assert.deepEqual(outside,[]);assert.equal(await page.locator('[tabindex]').evaluateAll(es=>es.some(e=>e.tabIndex>0)),false);

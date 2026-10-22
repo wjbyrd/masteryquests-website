@@ -15,7 +15,8 @@
     hallway?.removeAttribute('aria-label');hallway?.classList.remove('mq-feedback-held','active');
   }
   function holdHallway(advance, instructional = true) {
-    if(!manual() || !instructional)return false;
+    // Active repair/bridge/retest retains its original automatic transitions.
+    if(!manual() || !instructional || remediationState.active)return false;
     const hallway=document.getElementById('hallwayTransition'),text=document.getElementById('hallwayText');
     // Cancel only a stale control, without dismissing this newly painted scene.
     pending?.button.remove();
@@ -48,7 +49,8 @@
   window.MQFeedbackProgression={
     cancel,holdHallway,
     wrongTurn(narrative,question,withheld=false){
-      const feedback=manual() && !withheld ? plain(question?.feedback) : '';
+      const campaign=['standard','unlimited','legendary'].includes(gameMode);
+      const feedback=manual() && !campaign && !withheld ? plain(question?.feedback) : '';
       return feedback ? `${narrative}\n\n${feedback}` : narrative;
     },
     rememberRecoveryOrigin(state,question){
@@ -57,7 +59,25 @@
     },
     finishRecovery(origin,outcome,advance,delay){
       if(!manual() || !origin?.feedback){scheduleForCurrentRun(advance,delay);return;}
-      showGameModal({title:'Recovery Complete',text:`${outcome}\n\n${origin.q}\n\n${origin.feedback}`,confirmText:'Continue',onConfirm:advance});
+      const destination=plain(typeof FACULTY_COMPOSITION_CONFIG==='object' ? FACULTY_COMPOSITION_CONFIG.title : document.title) || 'the game';
+      const session=runSessionId;let continued=false;
+      showGameModal({title:'Recovery Complete',text:'',confirmText:`Continue to ${destination}`,onConfirm:()=>{
+        if(continued || session!==runSessionId)return;
+        continued=true;advance();
+      }});
+      const text=document.getElementById('gameModalText');
+      const part=(className,content,heading=false)=>{
+        const span=document.createElement('span');span.className=className;span.textContent=content;
+        if(heading){span.setAttribute('role','heading');span.setAttribute('aria-level','3');}
+        return span;
+      };
+      // Phrasing elements keep the existing modal paragraph valid; content is never parsed as markup.
+      text.replaceChildren(
+        part('mq-recovery-intro',`${plain(outcome) || "You've completed the recovery challenge."} Before continuing, revisit the question that sent you here.`),
+        part('mq-recovery-label','The original question',true),part('mq-recovery-copy',origin.q),
+        part('mq-recovery-label','The economic connection',true),part('mq-recovery-copy',origin.feedback)
+      );
+      window.MQAccessibility?.sync();
     }
   };
 })();

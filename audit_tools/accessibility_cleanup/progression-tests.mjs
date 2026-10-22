@@ -3,8 +3,8 @@ import {createHash} from 'node:crypto';
 import {applyFeedbackProgression} from './progression-source.mjs';
 process.env.MQ_A11Y_OUT ||= 'validation_artifacts/feedback_progression';
 const {pw,serve,isolated,start,save}=await import('./support.mjs');
-const baseline='aa74a1e2',git=args=>execFileSync('git',['-c','core.safecrlf=false',...args],{encoding:'utf8',maxBuffer:30e6});
-const strip=s=>s.replace(/\r\n/g,'\n').replace(/<!-- MQ ACCESSIBILITY (style|script) START -->[\s\S]*?<!-- MQ ACCESSIBILITY \1 END -->/g,'').replace(/<!-- MQ HUB ACCESSIBILITY START -->[\s\S]*?<!-- MQ HUB ACCESSIBILITY END -->/g,'');
+const baseline=process.env.MQ_FEEDBACK_BASELINE || 'aa74a1e2',git=args=>execFileSync('git',['-c','core.safecrlf=false',...args],{encoding:'utf8',maxBuffer:30e6});
+const strip=s=>s.replace(/\r\n/g,'\n').replace(/<!-- MQ ACCESSIBILITY (style|script) START -->[\s\S]*?<!-- MQ ACCESSIBILITY \1 END -->/g,'').replace(/<!-- MQ HUB ACCESSIBILITY START -->[\s\S]*?<!-- MQ HUB ACCESSIBILITY END -->/g,'').replace(/<!-- MQ ECONOMIC CHARACTER STYLE START -->[\s\S]*?<!-- MQ ECONOMIC CHARACTER STYLE END -->\n/g,'');
 const results=[];async function test(name,fn){try{const detail=await fn();results.push({name,status:'PASS',detail});}catch(e){results.push({name,status:'FAIL',error:e.stack});process.exitCode=1;}console.log(name,results.at(-1).status);}
 await test('Only approved source transformations outside embedded presentation blocks',()=>{
  const files=git(['diff',baseline,'--name-only']).trim().split(/\r?\n/).filter(f=>f.endsWith('.html'));
@@ -22,7 +22,8 @@ async function sequence(file,mode,want,old){const {page:p,context,blocked}=await
  const original=await p.evaluate(()=>({q:currentQuestion.q,feedback:currentQuestion.feedback}));const i=await p.evaluate(async want=>{for(let i=0;i<4;i++)if(await isQuestionAnswerCorrect(currentQuestion,i)===want)return i;},want);
  await p.locator('#answers button').nth(i).focus();await p.keyboard.press('Enter');await p.waitForTimeout(50);await p.clock.runFor(1000);const resolved=await state(p);
  const held=await p.locator('#mqFeedbackContinue').isVisible();if(!old && want && !['exam','timed'].includes(mode)){assert(held,'manual continuation absent');assert.equal(await p.locator('#mqMotionControl').isVisible(),false);assert((await p.locator('#hallwayText').innerText()).includes(original.feedback));}
- if(!old && !want && !['exam','timed'].includes(mode))assert((await p.locator('#gameModalText').innerText()).includes(original.feedback),'wrong explanation absent');
+ if(!old && !want && ['standard','unlimited','legendary'].includes(mode))assert(!(await p.locator('#gameModalText').innerText()).includes(original.feedback),'campaign Wrong Turn leaked explanation');
+ if(!old && !want && ['quiz','trialGraph','score','fadingFortune','riskReward'].includes(mode))assert((await p.locator('#gameModalText').innerText()).includes(original.feedback),'wrong explanation absent');
  if(!old && mode==='exam'){assert.equal(await p.locator('#mqExplanationReview').isVisible(),false);assert(!held);}
  await p.clock.runFor(7000);
  if(held){assert.deepEqual(await state(p),resolved,'reading changed protected state');await p.locator('#mqFeedbackContinue').evaluate(e=>{e.click();e.click();});await p.clock.runFor(30);}

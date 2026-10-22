@@ -25,8 +25,9 @@ for(const file of files){const before=git(['show','HEAD:'+file]),after=fs.readFi
 }
 const changed=git(['diff','--name-only']).trim().split('\n');
 const bankChanges=changed.filter(f=>/question.*\.(js|json)$|(?:composer_library|engine|model|storage)\.js$/.test(f));
-fs.mkdirSync('validation_artifacts/accessibility_cleanup',{recursive:true});
-fs.writeFileSync('validation_artifacts/accessibility_cleanup/protected.json',JSON.stringify({baseline:git(['rev-parse','HEAD']).trim(),bankChanges,results},null,2));
+const out=process.env.MQ_A11Y_OUT || 'validation_artifacts/accessibility_cleanup';
+fs.mkdirSync(out,{recursive:true});
+fs.writeFileSync(out+'/protected.json',JSON.stringify({baseline:git(['rev-parse','HEAD']).trim(),bankChanges,results},null,2));
 const failures=results.flatMap(r=>r.checks.filter(c=>!c.unchanged).map(c=>({file:r.file,...c})));
 console.log(JSON.stringify({files:files.length,checks:results.reduce((n,r)=>n+r.checks.length,0),failures,bankChanges},null,2));
 if(failures.length||bankChanges.length)process.exitCode=1;

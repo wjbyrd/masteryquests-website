@@ -1,8 +1,10 @@
 /* Embedded with the game; no main-site stylesheet dependency. */
 .mq-motion-setting{display:flex;flex-direction:column;align-items:stretch;gap:6px;font:inherit;color:inherit;grid-column:1/-1;width:100%;margin:8px 0}
 .mq-motion-setting .game-menu-option{width:100%;font:inherit}
-.mq-motion-default{align-self:center;font:inherit;font-size:.85em;color:inherit;background:transparent;border:0;text-decoration:underline;min-height:28px;padding:4px 8px;cursor:pointer}
-.mq-motion-default:disabled{cursor:default;text-decoration:none}
+.mq-motion-setting .game-menu-option:focus-visible{outline:3px solid #8bdcff;outline-offset:4px}
+.mq-recovery-intro,.mq-recovery-label,.mq-recovery-copy{display:block;text-align:left;overflow-wrap:anywhere;white-space:pre-wrap}
+.mq-recovery-label{margin:22px 0 8px;font-size:.85em;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:inherit}
+.mq-recovery-copy{line-height:1.6}
 #mqUtilityMenu[hidden]{display:none}
 :focus-visible{outline:3px solid #8bdcff;outline-offset:4px}
 #question:focus{outline-offset:6px}

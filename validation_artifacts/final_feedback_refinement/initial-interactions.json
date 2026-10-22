@@ -1,0 +1,19 @@
+[
+  {
+    "name": "Realm recovery, sequential access, nested artifact and achievements keyboard dialogs",
+    "status": "PASS"
+  },
+  {
+    "name": "downloads/resources/mastery-quests-faculty-starter.html repeated Enter and modal background isolation",
+    "status": "PASS"
+  },
+  {
+    "name": "play/managerial-intelligence-directorate/cost-directive/index.html repeated Enter and modal background isolation",
+    "status": "PASS"
+  },
+  {
+    "name": "play/micro-domains/labyrinth-of-choice/index.html repeated Enter and modal background isolation",
+    "status": "FAIL",
+    "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'mqFeedbackContinue'\n+ ]\n- []\n\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/accessibility_cleanup/interactions.mjs:31:11\n    at async test (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/accessibility_cleanup/interactions.mjs:3:34)\n    at async file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/accessibility_cleanup/interactions.mjs:24:201"
+  }
+]

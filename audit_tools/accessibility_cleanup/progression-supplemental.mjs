@@ -7,7 +7,7 @@ const browser=await pw.chromium.launch({channel:'msedge',headless:true}),results
 async function test(name,fn){try{results.push({name,status:'PASS',detail:await fn()});}catch(e){results.push({name,status:'FAIL',error:e.stack});process.exitCode=1;}console.log(name,results.at(-1).status);}
 async function open(file,old=false){
  const x=await isolated(browser,origin,{reducedMotion:'reduce'});
- if(old)await x.context.route(origin+'/'+file,r=>r.fulfill({contentType:'text/html',body:execFileSync('git',['show','aa74a1e2:'+file],{encoding:'utf8',maxBuffer:20e6})}));
+ if(old)await x.context.route(origin+'/'+file,r=>r.fulfill({contentType:'text/html',body:execFileSync('git',['show',(process.env.MQ_FEEDBACK_BASELINE || 'aa74a1e2')+':'+file],{encoding:'utf8',maxBuffer:20e6})}));
  await x.page.addInitScript(()=>{let seed=16427;Math.random=()=>{seed=(1664525*seed+1013904223)>>>0;return seed/4294967296;};});
  await x.page.clock.install({time:new Date('2026-10-22T16:00:00Z')});await x.page.clock.pauseAt(new Date('2026-10-22T16:00:01Z'));
  await x.page.goto(origin+'/'+file);return x;

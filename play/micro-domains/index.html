@@ -2562,8 +2562,7 @@ function selectGame(gameKey){
 <!-- MQ HUB ACCESSIBILITY START -->
 <style>.mq-motion-setting{display:flex;flex-direction:column;align-items:stretch;gap:6px;font:inherit;color:inherit;width:100%;grid-column:1/-1;margin:8px 0}
 .mq-motion-setting .game-menu-option{width:100%;font:inherit;color:inherit;background:rgba(0,0,0,.25);border:1px solid currentColor;border-radius:8px;padding:12px;cursor:pointer}
-.mq-motion-default{align-self:center;font:inherit;font-size:.85em;color:inherit;background:transparent;border:0;text-decoration:underline;min-height:28px;padding:4px 8px;cursor:pointer}
-.mq-motion-default:disabled{cursor:default;text-decoration:none}
+.mq-motion-setting .game-menu-option:focus-visible{outline:3px solid #8bdcff;outline-offset:4px}
 .mq-motion-setting .sr-only{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 :focus-visible{outline:3px solid #8bdcff;outline-offset:4px}
 [role=dialog]{overflow:auto;box-sizing:border-box;max-height:100dvh}
@@ -2584,10 +2583,8 @@ html.mq-motion-paused *,html.mq-motion-paused *::before,html.mq-motion-paused *:
   const paused = () => choice === 'system' ? preference.matches : choice === 'paused';
   function apply() {
     document.documentElement.classList.toggle('mq-motion-paused', paused());
-    controls.forEach(({control,reset}) => {
-      control.textContent = `DECORATIVE MOTION: ${paused() ? 'PAUSED' : 'ON'}`;
-      reset.disabled=choice==='system';
-      reset.textContent=choice==='system' ? 'Using device setting' : 'Use device setting';
+    controls.forEach(control => {
+      control.textContent = `DECORATIVE MOTION: ${paused() ? 'OFF' : 'ON'}`;
     });
     document.querySelectorAll('video[autoplay]').forEach(video => {
       if(paused()) video.pause();
@@ -2598,22 +2595,19 @@ html.mq-motion-paused *,html.mq-motion-paused *::before,html.mq-motion-paused *:
     createControl(id) {
       const label = document.createElement('div');
       label.className = 'mq-motion-setting';
-      const control = document.createElement('button'),reset=document.createElement('button'),status=document.createElement('span');
+      const control = document.createElement('button'),status=document.createElement('span');
       control.id=id;control.type='button';control.className='game-menu-option';
-      reset.type='button';reset.className='mq-motion-default';
       status.className='sr-only';status.setAttribute('role','status');
       function setChoice(value){
         choice=value;
         try {
-          if(choice === 'system') localStorage.removeItem(key);
-          else localStorage.setItem(key, choice);
+          localStorage.setItem(key, choice);
         } catch { /* A standalone file still supports an in-memory preference. */ }
         apply();
-        status.textContent=`Decorative motion ${paused()?'paused':'on'}.${choice==='system'?' Using device setting.':''}`;
+        status.textContent=`Decorative motion ${paused()?'off':'on'}.`;
       }
       control.addEventListener('click',()=>setChoice(paused()?'playing':'paused'));
-      reset.addEventListener('click',()=>{setChoice('system');control.focus();});
-      controls.add({control,reset});label.append(control,reset,status);apply();
+      controls.add(control);label.append(control,status);apply();
       return label;
     }
   };

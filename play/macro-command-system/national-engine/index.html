@@ -3077,8 +3077,10 @@ body.boss-reveal-active{overflow:hidden}
 /* Embedded with the game; no main-site stylesheet dependency. */
 .mq-motion-setting{display:flex;flex-direction:column;align-items:stretch;gap:6px;font:inherit;color:inherit;grid-column:1/-1;width:100%;margin:8px 0}
 .mq-motion-setting .game-menu-option{width:100%;font:inherit}
-.mq-motion-default{align-self:center;font:inherit;font-size:.85em;color:inherit;background:transparent;border:0;text-decoration:underline;min-height:28px;padding:4px 8px;cursor:pointer}
-.mq-motion-default:disabled{cursor:default;text-decoration:none}
+.mq-motion-setting .game-menu-option:focus-visible{outline:3px solid #8bdcff;outline-offset:4px}
+.mq-recovery-intro,.mq-recovery-label,.mq-recovery-copy{display:block;text-align:left;overflow-wrap:anywhere;white-space:pre-wrap}
+.mq-recovery-label{margin:22px 0 8px;font-size:.85em;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:inherit}
+.mq-recovery-copy{line-height:1.6}
 #mqUtilityMenu[hidden]{display:none}
 :focus-visible{outline:3px solid #8bdcff;outline-offset:4px}
 #question:focus{outline-offset:6px}
@@ -15992,10 +15994,8 @@ document.head.appendChild(phase15LayoutStyle);
   const paused = () => choice === 'system' ? preference.matches : choice === 'paused';
   function apply() {
     document.documentElement.classList.toggle('mq-motion-paused', paused());
-    controls.forEach(({control,reset}) => {
-      control.textContent = `DECORATIVE MOTION: ${paused() ? 'PAUSED' : 'ON'}`;
-      reset.disabled=choice==='system';
-      reset.textContent=choice==='system' ? 'Using device setting' : 'Use device setting';
+    controls.forEach(control => {
+      control.textContent = `DECORATIVE MOTION: ${paused() ? 'OFF' : 'ON'}`;
     });
     document.querySelectorAll('video[autoplay]').forEach(video => {
       if(paused()) video.pause();
@@ -16006,22 +16006,19 @@ document.head.appendChild(phase15LayoutStyle);
     createControl(id) {
       const label = document.createElement('div');
       label.className = 'mq-motion-setting';
-      const control = document.createElement('button'),reset=document.createElement('button'),status=document.createElement('span');
+      const control = document.createElement('button'),status=document.createElement('span');
       control.id=id;control.type='button';control.className='game-menu-option';
-      reset.type='button';reset.className='mq-motion-default';
       status.className='sr-only';status.setAttribute('role','status');
       function setChoice(value){
         choice=value;
         try {
-          if(choice === 'system') localStorage.removeItem(key);
-          else localStorage.setItem(key, choice);
+          localStorage.setItem(key, choice);
         } catch { /* A standalone file still supports an in-memory preference. */ }
         apply();
-        status.textContent=`Decorative motion ${paused()?'paused':'on'}.${choice==='system'?' Using device setting.':''}`;
+        status.textContent=`Decorative motion ${paused()?'off':'on'}.`;
       }
       control.addEventListener('click',()=>setChoice(paused()?'playing':'paused'));
-      reset.addEventListener('click',()=>{setChoice('system');control.focus();});
-      controls.add({control,reset});label.append(control,reset,status);apply();
+      controls.add(control);label.append(control,status);apply();
       return label;
     }
   };
@@ -16052,7 +16049,8 @@ document.head.appendChild(phase15LayoutStyle);
     hallway?.removeAttribute('aria-label');hallway?.classList.remove('mq-feedback-held','active');
   }
   function holdHallway(advance, instructional = true) {
-    if(!manual() || !instructional)return false;
+    // Active repair/bridge/retest retains its original automatic transitions.
+    if(!manual() || !instructional || remediationState.active)return false;
     const hallway=document.getElementById('hallwayTransition'),text=document.getElementById('hallwayText');
     // Cancel only a stale control, without dismissing this newly painted scene.
     pending?.button.remove();
@@ -16085,7 +16083,8 @@ document.head.appendChild(phase15LayoutStyle);
   window.MQFeedbackProgression={
     cancel,holdHallway,
     wrongTurn(narrative,question,withheld=false){
-      const feedback=manual() && !withheld ? plain(question?.feedback) : '';
+      const campaign=['standard','unlimited','legendary'].includes(gameMode);
+      const feedback=manual() && !campaign && !withheld ? plain(question?.feedback) : '';
       return feedback ? `${narrative}\n\n${feedback}` : narrative;
     },
     rememberRecoveryOrigin(state,question){
@@ -16094,7 +16093,25 @@ document.head.appendChild(phase15LayoutStyle);
     },
     finishRecovery(origin,outcome,advance,delay){
       if(!manual() || !origin?.feedback){scheduleForCurrentRun(advance,delay);return;}
-      showGameModal({title:'Recovery Complete',text:`${outcome}\n\n${origin.q}\n\n${origin.feedback}`,confirmText:'Continue',onConfirm:advance});
+      const destination=plain(typeof FACULTY_COMPOSITION_CONFIG==='object' ? FACULTY_COMPOSITION_CONFIG.title : document.title) || 'the game';
+      const session=runSessionId;let continued=false;
+      showGameModal({title:'Recovery Complete',text:'',confirmText:`Continue to ${destination}`,onConfirm:()=>{
+        if(continued || session!==runSessionId)return;
+        continued=true;advance();
+      }});
+      const text=document.getElementById('gameModalText');
+      const part=(className,content,heading=false)=>{
+        const span=document.createElement('span');span.className=className;span.textContent=content;
+        if(heading){span.setAttribute('role','heading');span.setAttribute('aria-level','3');}
+        return span;
+      };
+      // Phrasing elements keep the existing modal paragraph valid; content is never parsed as markup.
+      text.replaceChildren(
+        part('mq-recovery-intro',`${plain(outcome) || "You've completed the recovery challenge."} Before continuing, revisit the question that sent you here.`),
+        part('mq-recovery-label','The original question',true),part('mq-recovery-copy',origin.q),
+        part('mq-recovery-label','The economic connection',true),part('mq-recovery-copy',origin.feedback)
+      );
+      window.MQAccessibility?.sync();
     }
   };
 })();

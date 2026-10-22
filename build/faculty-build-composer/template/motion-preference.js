@@ -14,10 +14,8 @@
   const paused = () => choice === 'system' ? preference.matches : choice === 'paused';
   function apply() {
     document.documentElement.classList.toggle('mq-motion-paused', paused());
-    controls.forEach(({control,reset}) => {
-      control.textContent = `DECORATIVE MOTION: ${paused() ? 'PAUSED' : 'ON'}`;
-      reset.disabled=choice==='system';
-      reset.textContent=choice==='system' ? 'Using device setting' : 'Use device setting';
+    controls.forEach(control => {
+      control.textContent = `DECORATIVE MOTION: ${paused() ? 'OFF' : 'ON'}`;
     });
     document.querySelectorAll('video[autoplay]').forEach(video => {
       if(paused()) video.pause();
@@ -28,22 +26,19 @@
     createControl(id) {
       const label = document.createElement('div');
       label.className = 'mq-motion-setting';
-      const control = document.createElement('button'),reset=document.createElement('button'),status=document.createElement('span');
+      const control = document.createElement('button'),status=document.createElement('span');
       control.id=id;control.type='button';control.className='game-menu-option';
-      reset.type='button';reset.className='mq-motion-default';
       status.className='sr-only';status.setAttribute('role','status');
       function setChoice(value){
         choice=value;
         try {
-          if(choice === 'system') localStorage.removeItem(key);
-          else localStorage.setItem(key, choice);
+          localStorage.setItem(key, choice);
         } catch { /* A standalone file still supports an in-memory preference. */ }
         apply();
-        status.textContent=`Decorative motion ${paused()?'paused':'on'}.${choice==='system'?' Using device setting.':''}`;
+        status.textContent=`Decorative motion ${paused()?'off':'on'}.`;
       }
       control.addEventListener('click',()=>setChoice(paused()?'playing':'paused'));
-      reset.addEventListener('click',()=>{setChoice('system');control.focus();});
-      controls.add({control,reset});label.append(control,reset,status);apply();
+      controls.add(control);label.append(control,status);apply();
       return label;
     }
   };

@@ -1,0 +1,3218 @@
+[
+  {
+    "name": "Inspect original Economic Realm character asset contact sheet",
+    "status": "PASS",
+    "detail": {
+      "assets": 20
+    }
+  },
+  {
+    "name": "Economic Realm natural first boss, character styles and visual evidence: market-gate",
+    "status": "PASS",
+    "detail": {
+      "before": {
+        "state": {
+          "room": 10,
+          "attempts": 13,
+          "correct": 12,
+          "streak": 12,
+          "bossHealth": 3,
+          "bossCheckpoint": 11
+        },
+        "beforeStyles": {
+          "wizard": {
+            "filter": "drop-shadow(rgba(56, 189, 248, 0.65) 0px 0px 10px) drop-shadow(rgba(215, 179, 90, 0.45) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "wizardFloat",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guideImage": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guidePanel": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(19, 57, 86, 0.66), rgba(11, 34, 56, 0.88) 52%, rgba(2, 6, 23, 0.98))",
+            "shadow": "rgba(0, 0, 0, 0.78) 0px 0px 26px 0px inset, rgba(56, 189, 248, 0.16) 0px 0px 18px 0px, rgba(247, 217, 130, 0.08) 0px 0px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "478.797px",
+            "transform": "none"
+          },
+          "guideName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(56, 189, 248, 0.45) 0px 0px 6px, rgba(215, 179, 90, 0.35) 0px 0px 10px",
+            "animation": "none",
+            "width": "111.453px",
+            "height": "14px",
+            "transform": "none"
+          },
+          "boss": null,
+          "bossName": null,
+          "intro": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.7) 0px 20px 28px) drop-shadow(rgba(247, 217, 130, 0.22) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "100%",
+            "height": "612px",
+            "transform": "none"
+          },
+          "frame": {
+            "filter": "none",
+            "background": "radial-gradient(circle at 50% 34%, rgba(247, 217, 130, 0.18), rgba(2, 8, 20, 0.86) 68%)",
+            "shadow": "rgba(0, 0, 0, 0.72) 0px 22px 70px 0px, rgba(56, 189, 248, 0.15) 0px 0px 38px 0px, rgba(247, 217, 130, 0.06) 0px 0px 34px 0px inset",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "aura": {
+            "filter": "none",
+            "background": "radial-gradient(circle at 28% 42%, rgba(247, 217, 130, 0.2), rgba(0, 0, 0, 0) 38%), linear-gradient(90deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.42))",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "panel": {
+            "filter": "none",
+            "background": "radial-gradient(circle, rgba(56, 189, 248, 0.13) 0%, rgba(15, 23, 42, 0.58) 46%, rgba(3, 10, 24, 0.94) 74%, rgba(2, 6, 23, 0.99) 100%)",
+            "shadow": "rgba(56, 189, 248, 0.18) 0px 0px 22px 0px, rgba(240, 200, 106, 0.1) 0px 0px 58px 0px, rgba(15, 23, 42, 0.72) 0px 0px 72px 0px, rgba(0, 0, 0, 0.78) 0px 0px 42px 0px inset",
+            "textShadow": "none",
+            "animation": "torchFlicker",
+            "width": "778px",
+            "height": "500.797px",
+            "transform": "none"
+          },
+          "button": {
+            "filter": "none",
+            "background": "linear-gradient(rgb(247, 217, 130), rgb(205, 169, 76))",
+            "shadow": "rgba(247, 217, 130, 0.25) 0px 0px 24px 0px, rgba(0, 0, 0, 0.42) 0px 12px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          }
+        },
+        "introStyles": {
+          "wizard": {
+            "filter": "drop-shadow(rgba(56, 189, 248, 0.65) 0px 0px 10px) drop-shadow(rgba(215, 179, 90, 0.45) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "wizardFloat",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guideImage": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guidePanel": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(19, 57, 86, 0.66), rgba(11, 34, 56, 0.88) 52%, rgba(2, 6, 23, 0.98))",
+            "shadow": "rgba(0, 0, 0, 0.78) 0px 0px 26px 0px inset, rgba(56, 189, 248, 0.16) 0px 0px 18px 0px, rgba(247, 217, 130, 0.08) 0px 0px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "509.594px",
+            "transform": "none"
+          },
+          "guideName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(56, 189, 248, 0.45) 0px 0px 6px, rgba(215, 179, 90, 0.35) 0px 0px 10px",
+            "animation": "none",
+            "width": "111.453px",
+            "height": "14px",
+            "transform": "none"
+          },
+          "boss": null,
+          "bossName": null,
+          "intro": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.7) 0px 20px 28px) drop-shadow(rgba(247, 217, 130, 0.22) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "501.203px",
+            "height": "612px",
+            "transform": "none"
+          },
+          "frame": {
+            "filter": "none",
+            "background": "radial-gradient(circle at 50% 34%, rgba(247, 217, 130, 0.22), rgba(2, 8, 20, 0.86) 68%)",
+            "shadow": "rgba(0, 0, 0, 0.72) 0px 22px 70px 0px, rgba(56, 189, 248, 0.15) 0px 0px 38px 0px, rgba(247, 217, 130, 0.06) 0px 0px 34px 0px inset",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "501.203px",
+            "height": "612px",
+            "transform": "none"
+          },
+          "aura": {
+            "filter": "none",
+            "background": "radial-gradient(circle at 28% 42%, rgba(247, 217, 130, 0.22), rgba(0, 0, 0, 0) 38%), linear-gradient(90deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.42))",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "1280px",
+            "height": "900px",
+            "transform": "none"
+          },
+          "panel": {
+            "filter": "none",
+            "background": "radial-gradient(circle, rgba(56, 189, 248, 0.13) 0%, rgba(15, 23, 42, 0.58) 46%, rgba(3, 10, 24, 0.94) 74%, rgba(2, 6, 23, 0.99) 100%)",
+            "shadow": "rgba(56, 189, 248, 0.18) 0px 0px 22px 0px, rgba(240, 200, 106, 0.1) 0px 0px 58px 0px, rgba(15, 23, 42, 0.72) 0px 0px 72px 0px, rgba(0, 0, 0, 0.78) 0px 0px 42px 0px inset",
+            "textShadow": "none",
+            "animation": "torchFlicker",
+            "width": "778px",
+            "height": "531.594px",
+            "transform": "none"
+          },
+          "button": {
+            "filter": "none",
+            "background": "linear-gradient(rgb(247, 217, 130), rgb(205, 169, 76))",
+            "shadow": "rgba(247, 217, 130, 0.25) 0px 0px 24px 0px, rgba(0, 0, 0, 0.42) 0px 12px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "301.734px",
+            "height": "48px",
+            "transform": "none"
+          }
+        },
+        "encounterStyles": {
+          "wizard": {
+            "filter": "drop-shadow(rgba(56, 189, 248, 0.65) 0px 0px 10px) drop-shadow(rgba(215, 179, 90, 0.45) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "wizardFloat",
+            "width": "100%",
+            "height": "auto",
+            "transform": "none"
+          },
+          "guideImage": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "100%",
+            "height": "auto",
+            "transform": "none"
+          },
+          "guidePanel": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(19, 57, 86, 0.66), rgba(11, 34, 56, 0.88) 52%, rgba(2, 6, 23, 0.98))",
+            "shadow": "rgba(0, 0, 0, 0.78) 0px 0px 26px 0px inset, rgba(56, 189, 248, 0.16) 0px 0px 18px 0px, rgba(247, 217, 130, 0.08) 0px 0px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "auto",
+            "transform": "none"
+          },
+          "guideName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(56, 189, 248, 0.45) 0px 0px 6px, rgba(215, 179, 90, 0.35) 0px 0px 10px",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "boss": {
+            "filter": "drop-shadow(rgb(215, 179, 90) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(0, 0, 0, 0.9) 0px 2px 5px, rgba(56, 189, 248, 0.14) 0px 0px 8px",
+            "animation": "none",
+            "width": "220px",
+            "height": "210px",
+            "transform": "none"
+          },
+          "bossName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(247, 217, 130, 0.68) 0px 0px 10px, rgba(56, 189, 248, 0.3) 0px 0px 28px, rgba(0, 0, 0, 0.92) 0px 3px 8px",
+            "animation": "none",
+            "width": "936px",
+            "height": "39.1875px",
+            "transform": "none"
+          },
+          "intro": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.7) 0px 20px 28px) drop-shadow(rgba(247, 217, 130, 0.22) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "100%",
+            "height": "612px",
+            "transform": "none"
+          },
+          "frame": {
+            "filter": "none",
+            "background": "radial-gradient(circle at 50% 34%, rgba(247, 217, 130, 0.22), rgba(2, 8, 20, 0.86) 68%)",
+            "shadow": "rgba(0, 0, 0, 0.72) 0px 22px 70px 0px, rgba(56, 189, 248, 0.15) 0px 0px 38px 0px, rgba(247, 217, 130, 0.06) 0px 0px 34px 0px inset",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "aura": {
+            "filter": "none",
+            "background": "radial-gradient(circle at 28% 42%, rgba(247, 217, 130, 0.22), rgba(0, 0, 0, 0) 38%), linear-gradient(90deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.42))",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "panel": {
+            "filter": "none",
+            "background": "radial-gradient(circle, rgba(56, 189, 248, 0.13) 0%, rgba(15, 23, 42, 0.58) 46%, rgba(3, 10, 24, 0.94) 74%, rgba(2, 6, 23, 0.99) 100%)",
+            "shadow": "rgba(56, 189, 248, 0.36) 0px 0px 34px 0px, rgba(247, 217, 130, 0.2) 0px 0px 72px 0px, rgba(15, 42, 64, 0.78) 0px 0px 92px 0px, rgba(0, 0, 0, 0.86) 0px 0px 46px 0px inset",
+            "textShadow": "none",
+            "animation": "torchFlicker",
+            "width": "980px",
+            "height": "860.188px",
+            "transform": "none"
+          },
+          "button": {
+            "filter": "none",
+            "background": "linear-gradient(rgb(247, 217, 130), rgb(205, 169, 76))",
+            "shadow": "rgba(247, 217, 130, 0.25) 0px 0px 24px 0px, rgba(0, 0, 0, 0.42) 0px 12px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          }
+        },
+        "shots": [
+          "market-gate-custodian-before.png",
+          "market-gate-wrong-turn-before.png",
+          "market-gate-hallway-before.png",
+          "market-gate-boss-intro-before.png",
+          "market-gate-boss-encounter-before.png",
+          "market-gate-checkpoint-victory-before.png",
+          "market-gate-mobile-victory-before.png"
+        ]
+      },
+      "after": {
+        "state": {
+          "room": 10,
+          "attempts": 13,
+          "correct": 12,
+          "streak": 12,
+          "bossHealth": 3,
+          "bossCheckpoint": 11
+        },
+        "beforeStyles": {
+          "wizard": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "wizardFloat",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guideImage": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guidePanel": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(19, 57, 86, 0.66), rgba(11, 34, 56, 0.88) 52%, rgba(2, 6, 23, 0.98))",
+            "shadow": "rgba(0, 0, 0, 0.78) 0px 0px 26px 0px inset, rgba(0, 0, 0, 0.35) 0px 8px 16px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "478.797px",
+            "transform": "none"
+          },
+          "guideName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(0, 0, 0, 0.88) 0px 2px 5px",
+            "animation": "none",
+            "width": "111.453px",
+            "height": "14px",
+            "transform": "none"
+          },
+          "boss": null,
+          "bossName": null,
+          "intro": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.7) 0px 20px 28px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "100%",
+            "height": "612px",
+            "transform": "none"
+          },
+          "frame": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(12, 18, 24, 0.7), rgba(2, 8, 20, 0.86))",
+            "shadow": "rgba(0, 0, 0, 0.72) 0px 22px 70px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "aura": {
+            "filter": "none",
+            "background": "linear-gradient(90deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.42))",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "panel": {
+            "filter": "none",
+            "background": "radial-gradient(circle, rgba(56, 189, 248, 0.13) 0%, rgba(15, 23, 42, 0.58) 46%, rgba(3, 10, 24, 0.94) 74%, rgba(2, 6, 23, 0.99) 100%)",
+            "shadow": "rgba(56, 189, 248, 0.18) 0px 0px 22px 0px, rgba(240, 200, 106, 0.1) 0px 0px 58px 0px, rgba(15, 23, 42, 0.72) 0px 0px 72px 0px, rgba(0, 0, 0, 0.78) 0px 0px 42px 0px inset",
+            "textShadow": "none",
+            "animation": "torchFlicker",
+            "width": "778px",
+            "height": "500.797px",
+            "transform": "none"
+          },
+          "button": {
+            "filter": "none",
+            "background": "linear-gradient(rgb(247, 217, 130), rgb(205, 169, 76))",
+            "shadow": "rgba(247, 217, 130, 0.25) 0px 0px 24px 0px, rgba(0, 0, 0, 0.42) 0px 12px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          }
+        },
+        "introStyles": {
+          "wizard": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "wizardFloat",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guideImage": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guidePanel": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(19, 57, 86, 0.66), rgba(11, 34, 56, 0.88) 52%, rgba(2, 6, 23, 0.98))",
+            "shadow": "rgba(0, 0, 0, 0.78) 0px 0px 26px 0px inset, rgba(0, 0, 0, 0.35) 0px 8px 16px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "509.594px",
+            "transform": "none"
+          },
+          "guideName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(0, 0, 0, 0.88) 0px 2px 5px",
+            "animation": "none",
+            "width": "111.453px",
+            "height": "14px",
+            "transform": "none"
+          },
+          "boss": null,
+          "bossName": null,
+          "intro": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.7) 0px 20px 28px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "501.203px",
+            "height": "612px",
+            "transform": "none"
+          },
+          "frame": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(12, 18, 24, 0.7), rgba(2, 8, 20, 0.86))",
+            "shadow": "rgba(0, 0, 0, 0.72) 0px 22px 70px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "501.203px",
+            "height": "612px",
+            "transform": "none"
+          },
+          "aura": {
+            "filter": "none",
+            "background": "linear-gradient(90deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.42))",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "1280px",
+            "height": "900px",
+            "transform": "none"
+          },
+          "panel": {
+            "filter": "none",
+            "background": "radial-gradient(circle, rgba(56, 189, 248, 0.13) 0%, rgba(15, 23, 42, 0.58) 46%, rgba(3, 10, 24, 0.94) 74%, rgba(2, 6, 23, 0.99) 100%)",
+            "shadow": "rgba(56, 189, 248, 0.18) 0px 0px 22px 0px, rgba(240, 200, 106, 0.1) 0px 0px 58px 0px, rgba(15, 23, 42, 0.72) 0px 0px 72px 0px, rgba(0, 0, 0, 0.78) 0px 0px 42px 0px inset",
+            "textShadow": "none",
+            "animation": "torchFlicker",
+            "width": "778px",
+            "height": "531.594px",
+            "transform": "none"
+          },
+          "button": {
+            "filter": "none",
+            "background": "linear-gradient(rgb(247, 217, 130), rgb(205, 169, 76))",
+            "shadow": "rgba(247, 217, 130, 0.25) 0px 0px 24px 0px, rgba(0, 0, 0, 0.42) 0px 12px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "301.734px",
+            "height": "48px",
+            "transform": "none"
+          }
+        },
+        "encounterStyles": {
+          "wizard": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "wizardFloat",
+            "width": "100%",
+            "height": "auto",
+            "transform": "none"
+          },
+          "guideImage": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "100%",
+            "height": "auto",
+            "transform": "none"
+          },
+          "guidePanel": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(19, 57, 86, 0.66), rgba(11, 34, 56, 0.88) 52%, rgba(2, 6, 23, 0.98))",
+            "shadow": "rgba(0, 0, 0, 0.78) 0px 0px 26px 0px inset, rgba(0, 0, 0, 0.35) 0px 8px 16px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "auto",
+            "transform": "none"
+          },
+          "guideName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(0, 0, 0, 0.88) 0px 2px 5px",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "boss": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(0, 0, 0, 0.9) 0px 2px 5px, rgba(56, 189, 248, 0.14) 0px 0px 8px",
+            "animation": "none",
+            "width": "220px",
+            "height": "210px",
+            "transform": "none"
+          },
+          "bossName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(0, 0, 0, 0.92) 0px 3px 8px",
+            "animation": "none",
+            "width": "936px",
+            "height": "39.1875px",
+            "transform": "none"
+          },
+          "intro": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.7) 0px 20px 28px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "100%",
+            "height": "612px",
+            "transform": "none"
+          },
+          "frame": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(12, 18, 24, 0.7), rgba(2, 8, 20, 0.86))",
+            "shadow": "rgba(0, 0, 0, 0.72) 0px 22px 70px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "aura": {
+            "filter": "none",
+            "background": "linear-gradient(90deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.42))",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "panel": {
+            "filter": "none",
+            "background": "radial-gradient(circle, rgba(56, 189, 248, 0.13) 0%, rgba(15, 23, 42, 0.58) 46%, rgba(3, 10, 24, 0.94) 74%, rgba(2, 6, 23, 0.99) 100%)",
+            "shadow": "rgba(56, 189, 248, 0.36) 0px 0px 34px 0px, rgba(247, 217, 130, 0.2) 0px 0px 72px 0px, rgba(15, 42, 64, 0.78) 0px 0px 92px 0px, rgba(0, 0, 0, 0.86) 0px 0px 46px 0px inset",
+            "textShadow": "none",
+            "animation": "torchFlicker",
+            "width": "980px",
+            "height": "860.188px",
+            "transform": "none"
+          },
+          "button": {
+            "filter": "none",
+            "background": "linear-gradient(rgb(247, 217, 130), rgb(205, 169, 76))",
+            "shadow": "rgba(247, 217, 130, 0.25) 0px 0px 24px 0px, rgba(0, 0, 0, 0.42) 0px 12px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          }
+        },
+        "shots": [
+          "market-gate-custodian-after.png",
+          "market-gate-wrong-turn-after.png",
+          "market-gate-hallway-after.png",
+          "market-gate-boss-intro-after.png",
+          "market-gate-boss-encounter-after.png",
+          "market-gate-checkpoint-victory-after.png",
+          "market-gate-mobile-victory-after.png"
+        ]
+      }
+    }
+  },
+  {
+    "name": "Economic Realm natural first boss, character styles and visual evidence: national-ledger",
+    "status": "PASS",
+    "detail": {
+      "before": {
+        "state": {
+          "room": 10,
+          "attempts": 12,
+          "correct": 12,
+          "streak": 12,
+          "bossHealth": 3,
+          "bossCheckpoint": 11
+        },
+        "beforeStyles": {
+          "wizard": {
+            "filter": "drop-shadow(rgba(56, 189, 248, 0.65) 0px 0px 10px) drop-shadow(rgba(215, 179, 90, 0.45) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "wizardFloat",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guideImage": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guidePanel": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(19, 57, 86, 0.66), rgba(11, 34, 56, 0.88) 52%, rgba(2, 6, 23, 0.98))",
+            "shadow": "rgba(0, 0, 0, 0.78) 0px 0px 26px 0px inset, rgba(56, 189, 248, 0.16) 0px 0px 18px 0px, rgba(247, 217, 130, 0.08) 0px 0px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "509.594px",
+            "transform": "none"
+          },
+          "guideName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(56, 189, 248, 0.45) 0px 0px 6px, rgba(215, 179, 90, 0.35) 0px 0px 10px",
+            "animation": "none",
+            "width": "111.453px",
+            "height": "14px",
+            "transform": "none"
+          },
+          "boss": null,
+          "bossName": null,
+          "intro": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.7) 0px 20px 28px) drop-shadow(rgba(247, 217, 130, 0.22) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "100%",
+            "height": "612px",
+            "transform": "none"
+          },
+          "frame": {
+            "filter": "none",
+            "background": "radial-gradient(circle at 50% 34%, rgba(247, 217, 130, 0.18), rgba(2, 8, 20, 0.86) 68%)",
+            "shadow": "rgba(0, 0, 0, 0.72) 0px 22px 70px 0px, rgba(56, 189, 248, 0.15) 0px 0px 38px 0px, rgba(247, 217, 130, 0.06) 0px 0px 34px 0px inset",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "aura": {
+            "filter": "none",
+            "background": "radial-gradient(circle at 28% 42%, rgba(247, 217, 130, 0.2), rgba(0, 0, 0, 0) 38%), linear-gradient(90deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.42))",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "panel": {
+            "filter": "none",
+            "background": "radial-gradient(circle, rgba(56, 189, 248, 0.13) 0%, rgba(15, 23, 42, 0.58) 46%, rgba(3, 10, 24, 0.94) 74%, rgba(2, 6, 23, 0.99) 100%)",
+            "shadow": "rgba(56, 189, 248, 0.18) 0px 0px 22px 0px, rgba(240, 200, 106, 0.1) 0px 0px 58px 0px, rgba(15, 23, 42, 0.72) 0px 0px 72px 0px, rgba(0, 0, 0, 0.78) 0px 0px 42px 0px inset",
+            "textShadow": "none",
+            "animation": "torchFlicker",
+            "width": "778px",
+            "height": "531.594px",
+            "transform": "none"
+          },
+          "button": {
+            "filter": "none",
+            "background": "linear-gradient(rgb(247, 217, 130), rgb(205, 169, 76))",
+            "shadow": "rgba(247, 217, 130, 0.25) 0px 0px 24px 0px, rgba(0, 0, 0, 0.42) 0px 12px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          }
+        },
+        "introStyles": {
+          "wizard": {
+            "filter": "drop-shadow(rgba(56, 189, 248, 0.65) 0px 0px 10px) drop-shadow(rgba(215, 179, 90, 0.45) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "wizardFloat",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guideImage": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guidePanel": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(19, 57, 86, 0.66), rgba(11, 34, 56, 0.88) 52%, rgba(2, 6, 23, 0.98))",
+            "shadow": "rgba(0, 0, 0, 0.78) 0px 0px 26px 0px inset, rgba(56, 189, 248, 0.16) 0px 0px 18px 0px, rgba(247, 217, 130, 0.08) 0px 0px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "509.594px",
+            "transform": "none"
+          },
+          "guideName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(56, 189, 248, 0.45) 0px 0px 6px, rgba(215, 179, 90, 0.35) 0px 0px 10px",
+            "animation": "none",
+            "width": "111.453px",
+            "height": "14px",
+            "transform": "none"
+          },
+          "boss": null,
+          "bossName": null,
+          "intro": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.7) 0px 20px 28px) drop-shadow(rgba(247, 217, 130, 0.22) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "501.203px",
+            "height": "612px",
+            "transform": "none"
+          },
+          "frame": {
+            "filter": "none",
+            "background": "radial-gradient(circle at 50% 34%, rgba(247, 217, 130, 0.22), rgba(2, 8, 20, 0.86) 68%)",
+            "shadow": "rgba(0, 0, 0, 0.72) 0px 22px 70px 0px, rgba(56, 189, 248, 0.15) 0px 0px 38px 0px, rgba(247, 217, 130, 0.06) 0px 0px 34px 0px inset",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "501.203px",
+            "height": "612px",
+            "transform": "none"
+          },
+          "aura": {
+            "filter": "none",
+            "background": "radial-gradient(circle at 28% 42%, rgba(247, 217, 130, 0.22), rgba(0, 0, 0, 0) 38%), linear-gradient(90deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.42))",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "1280px",
+            "height": "900px",
+            "transform": "none"
+          },
+          "panel": {
+            "filter": "none",
+            "background": "radial-gradient(circle, rgba(56, 189, 248, 0.13) 0%, rgba(15, 23, 42, 0.58) 46%, rgba(3, 10, 24, 0.94) 74%, rgba(2, 6, 23, 0.99) 100%)",
+            "shadow": "rgba(56, 189, 248, 0.18) 0px 0px 22px 0px, rgba(240, 200, 106, 0.1) 0px 0px 58px 0px, rgba(15, 23, 42, 0.72) 0px 0px 72px 0px, rgba(0, 0, 0, 0.78) 0px 0px 42px 0px inset",
+            "textShadow": "none",
+            "animation": "torchFlicker",
+            "width": "778px",
+            "height": "531.594px",
+            "transform": "none"
+          },
+          "button": {
+            "filter": "none",
+            "background": "linear-gradient(rgb(247, 217, 130), rgb(205, 169, 76))",
+            "shadow": "rgba(247, 217, 130, 0.25) 0px 0px 24px 0px, rgba(0, 0, 0, 0.42) 0px 12px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "301.734px",
+            "height": "48px",
+            "transform": "none"
+          }
+        },
+        "encounterStyles": {
+          "wizard": {
+            "filter": "drop-shadow(rgba(56, 189, 248, 0.65) 0px 0px 10px) drop-shadow(rgba(215, 179, 90, 0.45) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "wizardFloat",
+            "width": "100%",
+            "height": "auto",
+            "transform": "none"
+          },
+          "guideImage": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "100%",
+            "height": "auto",
+            "transform": "none"
+          },
+          "guidePanel": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(19, 57, 86, 0.66), rgba(11, 34, 56, 0.88) 52%, rgba(2, 6, 23, 0.98))",
+            "shadow": "rgba(0, 0, 0, 0.78) 0px 0px 26px 0px inset, rgba(56, 189, 248, 0.16) 0px 0px 18px 0px, rgba(247, 217, 130, 0.08) 0px 0px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "auto",
+            "transform": "none"
+          },
+          "guideName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(56, 189, 248, 0.45) 0px 0px 6px, rgba(215, 179, 90, 0.35) 0px 0px 10px",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "boss": {
+            "filter": "drop-shadow(rgb(215, 179, 90) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(0, 0, 0, 0.9) 0px 2px 5px, rgba(56, 189, 248, 0.14) 0px 0px 8px",
+            "animation": "none",
+            "width": "220px",
+            "height": "210px",
+            "transform": "none"
+          },
+          "bossName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(247, 217, 130, 0.68) 0px 0px 10px, rgba(56, 189, 248, 0.3) 0px 0px 28px, rgba(0, 0, 0, 0.92) 0px 3px 8px",
+            "animation": "none",
+            "width": "936px",
+            "height": "39.1875px",
+            "transform": "none"
+          },
+          "intro": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.7) 0px 20px 28px) drop-shadow(rgba(247, 217, 130, 0.22) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "100%",
+            "height": "612px",
+            "transform": "none"
+          },
+          "frame": {
+            "filter": "none",
+            "background": "radial-gradient(circle at 50% 34%, rgba(247, 217, 130, 0.22), rgba(2, 8, 20, 0.86) 68%)",
+            "shadow": "rgba(0, 0, 0, 0.72) 0px 22px 70px 0px, rgba(56, 189, 248, 0.15) 0px 0px 38px 0px, rgba(247, 217, 130, 0.06) 0px 0px 34px 0px inset",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "aura": {
+            "filter": "none",
+            "background": "radial-gradient(circle at 28% 42%, rgba(247, 217, 130, 0.22), rgba(0, 0, 0, 0) 38%), linear-gradient(90deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.42))",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "panel": {
+            "filter": "none",
+            "background": "radial-gradient(circle, rgba(56, 189, 248, 0.13) 0%, rgba(15, 23, 42, 0.58) 46%, rgba(3, 10, 24, 0.94) 74%, rgba(2, 6, 23, 0.99) 100%)",
+            "shadow": "rgba(56, 189, 248, 0.36) 0px 0px 34px 0px, rgba(247, 217, 130, 0.2) 0px 0px 72px 0px, rgba(15, 42, 64, 0.78) 0px 0px 92px 0px, rgba(0, 0, 0, 0.86) 0px 0px 46px 0px inset",
+            "textShadow": "none",
+            "animation": "torchFlicker",
+            "width": "980px",
+            "height": "896.188px",
+            "transform": "none"
+          },
+          "button": {
+            "filter": "none",
+            "background": "linear-gradient(rgb(247, 217, 130), rgb(205, 169, 76))",
+            "shadow": "rgba(247, 217, 130, 0.25) 0px 0px 24px 0px, rgba(0, 0, 0, 0.42) 0px 12px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          }
+        },
+        "shots": [
+          "national-ledger-custodian-before.png",
+          "national-ledger-boss-intro-before.png",
+          "national-ledger-boss-encounter-before.png"
+        ]
+      },
+      "after": {
+        "state": {
+          "room": 10,
+          "attempts": 12,
+          "correct": 12,
+          "streak": 12,
+          "bossHealth": 3,
+          "bossCheckpoint": 11
+        },
+        "beforeStyles": {
+          "wizard": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "wizardFloat",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guideImage": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guidePanel": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(19, 57, 86, 0.66), rgba(11, 34, 56, 0.88) 52%, rgba(2, 6, 23, 0.98))",
+            "shadow": "rgba(0, 0, 0, 0.78) 0px 0px 26px 0px inset, rgba(0, 0, 0, 0.35) 0px 8px 16px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "509.594px",
+            "transform": "none"
+          },
+          "guideName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(0, 0, 0, 0.88) 0px 2px 5px",
+            "animation": "none",
+            "width": "111.453px",
+            "height": "14px",
+            "transform": "none"
+          },
+          "boss": null,
+          "bossName": null,
+          "intro": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.7) 0px 20px 28px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "100%",
+            "height": "612px",
+            "transform": "none"
+          },
+          "frame": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(12, 18, 24, 0.7), rgba(2, 8, 20, 0.86))",
+            "shadow": "rgba(0, 0, 0, 0.72) 0px 22px 70px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "aura": {
+            "filter": "none",
+            "background": "linear-gradient(90deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.42))",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "panel": {
+            "filter": "none",
+            "background": "radial-gradient(circle, rgba(56, 189, 248, 0.13) 0%, rgba(15, 23, 42, 0.58) 46%, rgba(3, 10, 24, 0.94) 74%, rgba(2, 6, 23, 0.99) 100%)",
+            "shadow": "rgba(56, 189, 248, 0.18) 0px 0px 22px 0px, rgba(240, 200, 106, 0.1) 0px 0px 58px 0px, rgba(15, 23, 42, 0.72) 0px 0px 72px 0px, rgba(0, 0, 0, 0.78) 0px 0px 42px 0px inset",
+            "textShadow": "none",
+            "animation": "torchFlicker",
+            "width": "778px",
+            "height": "531.594px",
+            "transform": "none"
+          },
+          "button": {
+            "filter": "none",
+            "background": "linear-gradient(rgb(247, 217, 130), rgb(205, 169, 76))",
+            "shadow": "rgba(247, 217, 130, 0.25) 0px 0px 24px 0px, rgba(0, 0, 0, 0.42) 0px 12px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          }
+        },
+        "introStyles": {
+          "wizard": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "wizardFloat",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guideImage": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guidePanel": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(19, 57, 86, 0.66), rgba(11, 34, 56, 0.88) 52%, rgba(2, 6, 23, 0.98))",
+            "shadow": "rgba(0, 0, 0, 0.78) 0px 0px 26px 0px inset, rgba(0, 0, 0, 0.35) 0px 8px 16px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "509.594px",
+            "transform": "none"
+          },
+          "guideName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(0, 0, 0, 0.88) 0px 2px 5px",
+            "animation": "none",
+            "width": "111.453px",
+            "height": "14px",
+            "transform": "none"
+          },
+          "boss": null,
+          "bossName": null,
+          "intro": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.7) 0px 20px 28px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "501.203px",
+            "height": "612px",
+            "transform": "none"
+          },
+          "frame": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(12, 18, 24, 0.7), rgba(2, 8, 20, 0.86))",
+            "shadow": "rgba(0, 0, 0, 0.72) 0px 22px 70px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "501.203px",
+            "height": "612px",
+            "transform": "none"
+          },
+          "aura": {
+            "filter": "none",
+            "background": "linear-gradient(90deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.42))",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "1280px",
+            "height": "900px",
+            "transform": "none"
+          },
+          "panel": {
+            "filter": "none",
+            "background": "radial-gradient(circle, rgba(56, 189, 248, 0.13) 0%, rgba(15, 23, 42, 0.58) 46%, rgba(3, 10, 24, 0.94) 74%, rgba(2, 6, 23, 0.99) 100%)",
+            "shadow": "rgba(56, 189, 248, 0.18) 0px 0px 22px 0px, rgba(240, 200, 106, 0.1) 0px 0px 58px 0px, rgba(15, 23, 42, 0.72) 0px 0px 72px 0px, rgba(0, 0, 0, 0.78) 0px 0px 42px 0px inset",
+            "textShadow": "none",
+            "animation": "torchFlicker",
+            "width": "778px",
+            "height": "531.594px",
+            "transform": "none"
+          },
+          "button": {
+            "filter": "none",
+            "background": "linear-gradient(rgb(247, 217, 130), rgb(205, 169, 76))",
+            "shadow": "rgba(247, 217, 130, 0.25) 0px 0px 24px 0px, rgba(0, 0, 0, 0.42) 0px 12px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "301.734px",
+            "height": "48px",
+            "transform": "none"
+          }
+        },
+        "encounterStyles": {
+          "wizard": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "wizardFloat",
+            "width": "100%",
+            "height": "auto",
+            "transform": "none"
+          },
+          "guideImage": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "100%",
+            "height": "auto",
+            "transform": "none"
+          },
+          "guidePanel": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(19, 57, 86, 0.66), rgba(11, 34, 56, 0.88) 52%, rgba(2, 6, 23, 0.98))",
+            "shadow": "rgba(0, 0, 0, 0.78) 0px 0px 26px 0px inset, rgba(0, 0, 0, 0.35) 0px 8px 16px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "auto",
+            "transform": "none"
+          },
+          "guideName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(0, 0, 0, 0.88) 0px 2px 5px",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "boss": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(0, 0, 0, 0.9) 0px 2px 5px, rgba(56, 189, 248, 0.14) 0px 0px 8px",
+            "animation": "none",
+            "width": "220px",
+            "height": "210px",
+            "transform": "none"
+          },
+          "bossName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(0, 0, 0, 0.92) 0px 3px 8px",
+            "animation": "none",
+            "width": "936px",
+            "height": "39.1875px",
+            "transform": "none"
+          },
+          "intro": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.7) 0px 20px 28px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "100%",
+            "height": "612px",
+            "transform": "none"
+          },
+          "frame": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(12, 18, 24, 0.7), rgba(2, 8, 20, 0.86))",
+            "shadow": "rgba(0, 0, 0, 0.72) 0px 22px 70px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "aura": {
+            "filter": "none",
+            "background": "linear-gradient(90deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.42))",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "panel": {
+            "filter": "none",
+            "background": "radial-gradient(circle, rgba(56, 189, 248, 0.13) 0%, rgba(15, 23, 42, 0.58) 46%, rgba(3, 10, 24, 0.94) 74%, rgba(2, 6, 23, 0.99) 100%)",
+            "shadow": "rgba(56, 189, 248, 0.36) 0px 0px 34px 0px, rgba(247, 217, 130, 0.2) 0px 0px 72px 0px, rgba(15, 42, 64, 0.78) 0px 0px 92px 0px, rgba(0, 0, 0, 0.86) 0px 0px 46px 0px inset",
+            "textShadow": "none",
+            "animation": "torchFlicker",
+            "width": "980px",
+            "height": "896.188px",
+            "transform": "none"
+          },
+          "button": {
+            "filter": "none",
+            "background": "linear-gradient(rgb(247, 217, 130), rgb(205, 169, 76))",
+            "shadow": "rgba(247, 217, 130, 0.25) 0px 0px 24px 0px, rgba(0, 0, 0, 0.42) 0px 12px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          }
+        },
+        "shots": [
+          "national-ledger-custodian-after.png",
+          "national-ledger-boss-intro-after.png",
+          "national-ledger-boss-encounter-after.png"
+        ]
+      }
+    }
+  },
+  {
+    "name": "Economic Realm natural first boss, character styles and visual evidence: equilibrium-crisis",
+    "status": "PASS",
+    "detail": {
+      "before": {
+        "state": {
+          "room": 10,
+          "attempts": 12,
+          "correct": 12,
+          "streak": 12,
+          "bossHealth": 3,
+          "bossCheckpoint": 11
+        },
+        "beforeStyles": {
+          "wizard": {
+            "filter": "drop-shadow(rgba(56, 189, 248, 0.65) 0px 0px 10px) drop-shadow(rgba(215, 179, 90, 0.45) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "wizardFloat",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guideImage": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guidePanel": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(19, 57, 86, 0.66), rgba(11, 34, 56, 0.88) 52%, rgba(2, 6, 23, 0.98))",
+            "shadow": "rgba(0, 0, 0, 0.78) 0px 0px 26px 0px inset, rgba(56, 189, 248, 0.16) 0px 0px 18px 0px, rgba(247, 217, 130, 0.08) 0px 0px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "478.797px",
+            "transform": "none"
+          },
+          "guideName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(56, 189, 248, 0.45) 0px 0px 6px, rgba(215, 179, 90, 0.35) 0px 0px 10px",
+            "animation": "none",
+            "width": "111.453px",
+            "height": "14px",
+            "transform": "none"
+          },
+          "boss": null,
+          "bossName": null,
+          "intro": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.7) 0px 20px 28px) drop-shadow(rgba(247, 217, 130, 0.22) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "100%",
+            "height": "612px",
+            "transform": "none"
+          },
+          "frame": {
+            "filter": "none",
+            "background": "radial-gradient(circle at 50% 34%, rgba(247, 217, 130, 0.18), rgba(2, 8, 20, 0.86) 68%)",
+            "shadow": "rgba(0, 0, 0, 0.72) 0px 22px 70px 0px, rgba(56, 189, 248, 0.15) 0px 0px 38px 0px, rgba(247, 217, 130, 0.06) 0px 0px 34px 0px inset",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "aura": {
+            "filter": "none",
+            "background": "radial-gradient(circle at 28% 42%, rgba(247, 217, 130, 0.2), rgba(0, 0, 0, 0) 38%), linear-gradient(90deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.42))",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "panel": {
+            "filter": "none",
+            "background": "radial-gradient(circle, rgba(56, 189, 248, 0.13) 0%, rgba(15, 23, 42, 0.58) 46%, rgba(3, 10, 24, 0.94) 74%, rgba(2, 6, 23, 0.99) 100%)",
+            "shadow": "rgba(56, 189, 248, 0.18) 0px 0px 22px 0px, rgba(240, 200, 106, 0.1) 0px 0px 58px 0px, rgba(15, 23, 42, 0.72) 0px 0px 72px 0px, rgba(0, 0, 0, 0.78) 0px 0px 42px 0px inset",
+            "textShadow": "none",
+            "animation": "torchFlicker",
+            "width": "778px",
+            "height": "500.797px",
+            "transform": "none"
+          },
+          "button": {
+            "filter": "none",
+            "background": "linear-gradient(rgb(247, 217, 130), rgb(205, 169, 76))",
+            "shadow": "rgba(247, 217, 130, 0.25) 0px 0px 24px 0px, rgba(0, 0, 0, 0.42) 0px 12px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          }
+        },
+        "introStyles": {
+          "wizard": {
+            "filter": "drop-shadow(rgba(56, 189, 248, 0.65) 0px 0px 10px) drop-shadow(rgba(215, 179, 90, 0.45) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "wizardFloat",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guideImage": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guidePanel": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(19, 57, 86, 0.66), rgba(11, 34, 56, 0.88) 52%, rgba(2, 6, 23, 0.98))",
+            "shadow": "rgba(0, 0, 0, 0.78) 0px 0px 26px 0px inset, rgba(56, 189, 248, 0.16) 0px 0px 18px 0px, rgba(247, 217, 130, 0.08) 0px 0px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "509.594px",
+            "transform": "none"
+          },
+          "guideName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(56, 189, 248, 0.45) 0px 0px 6px, rgba(215, 179, 90, 0.35) 0px 0px 10px",
+            "animation": "none",
+            "width": "111.453px",
+            "height": "14px",
+            "transform": "none"
+          },
+          "boss": null,
+          "bossName": null,
+          "intro": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.7) 0px 20px 28px) drop-shadow(rgba(247, 217, 130, 0.22) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "501.203px",
+            "height": "612px",
+            "transform": "none"
+          },
+          "frame": {
+            "filter": "none",
+            "background": "radial-gradient(circle at 50% 34%, rgba(247, 217, 130, 0.22), rgba(2, 8, 20, 0.86) 68%)",
+            "shadow": "rgba(0, 0, 0, 0.72) 0px 22px 70px 0px, rgba(56, 189, 248, 0.15) 0px 0px 38px 0px, rgba(247, 217, 130, 0.06) 0px 0px 34px 0px inset",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "501.203px",
+            "height": "612px",
+            "transform": "none"
+          },
+          "aura": {
+            "filter": "none",
+            "background": "radial-gradient(circle at 28% 42%, rgba(247, 217, 130, 0.22), rgba(0, 0, 0, 0) 38%), linear-gradient(90deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.42))",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "1280px",
+            "height": "900px",
+            "transform": "none"
+          },
+          "panel": {
+            "filter": "none",
+            "background": "radial-gradient(circle, rgba(56, 189, 248, 0.13) 0%, rgba(15, 23, 42, 0.58) 46%, rgba(3, 10, 24, 0.94) 74%, rgba(2, 6, 23, 0.99) 100%)",
+            "shadow": "rgba(56, 189, 248, 0.18) 0px 0px 22px 0px, rgba(240, 200, 106, 0.1) 0px 0px 58px 0px, rgba(15, 23, 42, 0.72) 0px 0px 72px 0px, rgba(0, 0, 0, 0.78) 0px 0px 42px 0px inset",
+            "textShadow": "none",
+            "animation": "torchFlicker",
+            "width": "778px",
+            "height": "531.594px",
+            "transform": "none"
+          },
+          "button": {
+            "filter": "none",
+            "background": "linear-gradient(rgb(247, 217, 130), rgb(205, 169, 76))",
+            "shadow": "rgba(247, 217, 130, 0.25) 0px 0px 24px 0px, rgba(0, 0, 0, 0.42) 0px 12px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "301.734px",
+            "height": "48px",
+            "transform": "none"
+          }
+        },
+        "encounterStyles": {
+          "wizard": {
+            "filter": "drop-shadow(rgba(56, 189, 248, 0.65) 0px 0px 10px) drop-shadow(rgba(215, 179, 90, 0.45) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "wizardFloat",
+            "width": "100%",
+            "height": "auto",
+            "transform": "none"
+          },
+          "guideImage": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "100%",
+            "height": "auto",
+            "transform": "none"
+          },
+          "guidePanel": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(19, 57, 86, 0.66), rgba(11, 34, 56, 0.88) 52%, rgba(2, 6, 23, 0.98))",
+            "shadow": "rgba(0, 0, 0, 0.78) 0px 0px 26px 0px inset, rgba(56, 189, 248, 0.16) 0px 0px 18px 0px, rgba(247, 217, 130, 0.08) 0px 0px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "auto",
+            "transform": "none"
+          },
+          "guideName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(56, 189, 248, 0.45) 0px 0px 6px, rgba(215, 179, 90, 0.35) 0px 0px 10px",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "boss": {
+            "filter": "drop-shadow(rgb(215, 179, 90) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(0, 0, 0, 0.9) 0px 2px 5px, rgba(56, 189, 248, 0.14) 0px 0px 8px",
+            "animation": "none",
+            "width": "220px",
+            "height": "210px",
+            "transform": "none"
+          },
+          "bossName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(247, 217, 130, 0.68) 0px 0px 10px, rgba(56, 189, 248, 0.3) 0px 0px 28px, rgba(0, 0, 0, 0.92) 0px 3px 8px",
+            "animation": "none",
+            "width": "936px",
+            "height": "39.1875px",
+            "transform": "none"
+          },
+          "intro": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.7) 0px 20px 28px) drop-shadow(rgba(247, 217, 130, 0.22) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "100%",
+            "height": "612px",
+            "transform": "none"
+          },
+          "frame": {
+            "filter": "none",
+            "background": "radial-gradient(circle at 50% 34%, rgba(247, 217, 130, 0.22), rgba(2, 8, 20, 0.86) 68%)",
+            "shadow": "rgba(0, 0, 0, 0.72) 0px 22px 70px 0px, rgba(56, 189, 248, 0.15) 0px 0px 38px 0px, rgba(247, 217, 130, 0.06) 0px 0px 34px 0px inset",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "aura": {
+            "filter": "none",
+            "background": "radial-gradient(circle at 28% 42%, rgba(247, 217, 130, 0.22), rgba(0, 0, 0, 0) 38%), linear-gradient(90deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.42))",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "panel": {
+            "filter": "none",
+            "background": "radial-gradient(circle, rgba(56, 189, 248, 0.13) 0%, rgba(15, 23, 42, 0.58) 46%, rgba(3, 10, 24, 0.94) 74%, rgba(2, 6, 23, 0.99) 100%)",
+            "shadow": "rgba(56, 189, 248, 0.36) 0px 0px 34px 0px, rgba(247, 217, 130, 0.2) 0px 0px 72px 0px, rgba(15, 42, 64, 0.78) 0px 0px 92px 0px, rgba(0, 0, 0, 0.86) 0px 0px 46px 0px inset",
+            "textShadow": "none",
+            "animation": "torchFlicker",
+            "width": "980px",
+            "height": "860.188px",
+            "transform": "none"
+          },
+          "button": {
+            "filter": "none",
+            "background": "linear-gradient(rgb(247, 217, 130), rgb(205, 169, 76))",
+            "shadow": "rgba(247, 217, 130, 0.25) 0px 0px 24px 0px, rgba(0, 0, 0, 0.42) 0px 12px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          }
+        },
+        "shots": [
+          "equilibrium-crisis-custodian-before.png",
+          "equilibrium-crisis-boss-intro-before.png",
+          "equilibrium-crisis-boss-encounter-before.png"
+        ]
+      },
+      "after": {
+        "state": {
+          "room": 10,
+          "attempts": 12,
+          "correct": 12,
+          "streak": 12,
+          "bossHealth": 3,
+          "bossCheckpoint": 11
+        },
+        "beforeStyles": {
+          "wizard": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "wizardFloat",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guideImage": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guidePanel": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(19, 57, 86, 0.66), rgba(11, 34, 56, 0.88) 52%, rgba(2, 6, 23, 0.98))",
+            "shadow": "rgba(0, 0, 0, 0.78) 0px 0px 26px 0px inset, rgba(0, 0, 0, 0.35) 0px 8px 16px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "478.797px",
+            "transform": "none"
+          },
+          "guideName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(0, 0, 0, 0.88) 0px 2px 5px",
+            "animation": "none",
+            "width": "111.453px",
+            "height": "14px",
+            "transform": "none"
+          },
+          "boss": null,
+          "bossName": null,
+          "intro": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.7) 0px 20px 28px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "100%",
+            "height": "612px",
+            "transform": "none"
+          },
+          "frame": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(12, 18, 24, 0.7), rgba(2, 8, 20, 0.86))",
+            "shadow": "rgba(0, 0, 0, 0.72) 0px 22px 70px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "aura": {
+            "filter": "none",
+            "background": "linear-gradient(90deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.42))",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "panel": {
+            "filter": "none",
+            "background": "radial-gradient(circle, rgba(56, 189, 248, 0.13) 0%, rgba(15, 23, 42, 0.58) 46%, rgba(3, 10, 24, 0.94) 74%, rgba(2, 6, 23, 0.99) 100%)",
+            "shadow": "rgba(56, 189, 248, 0.18) 0px 0px 22px 0px, rgba(240, 200, 106, 0.1) 0px 0px 58px 0px, rgba(15, 23, 42, 0.72) 0px 0px 72px 0px, rgba(0, 0, 0, 0.78) 0px 0px 42px 0px inset",
+            "textShadow": "none",
+            "animation": "torchFlicker",
+            "width": "778px",
+            "height": "500.797px",
+            "transform": "none"
+          },
+          "button": {
+            "filter": "none",
+            "background": "linear-gradient(rgb(247, 217, 130), rgb(205, 169, 76))",
+            "shadow": "rgba(247, 217, 130, 0.25) 0px 0px 24px 0px, rgba(0, 0, 0, 0.42) 0px 12px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          }
+        },
+        "introStyles": {
+          "wizard": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "wizardFloat",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guideImage": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guidePanel": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(19, 57, 86, 0.66), rgba(11, 34, 56, 0.88) 52%, rgba(2, 6, 23, 0.98))",
+            "shadow": "rgba(0, 0, 0, 0.78) 0px 0px 26px 0px inset, rgba(0, 0, 0, 0.35) 0px 8px 16px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "509.594px",
+            "transform": "none"
+          },
+          "guideName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(0, 0, 0, 0.88) 0px 2px 5px",
+            "animation": "none",
+            "width": "111.453px",
+            "height": "14px",
+            "transform": "none"
+          },
+          "boss": null,
+          "bossName": null,
+          "intro": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.7) 0px 20px 28px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "501.203px",
+            "height": "612px",
+            "transform": "none"
+          },
+          "frame": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(12, 18, 24, 0.7), rgba(2, 8, 20, 0.86))",
+            "shadow": "rgba(0, 0, 0, 0.72) 0px 22px 70px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "501.203px",
+            "height": "612px",
+            "transform": "none"
+          },
+          "aura": {
+            "filter": "none",
+            "background": "linear-gradient(90deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.42))",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "1280px",
+            "height": "900px",
+            "transform": "none"
+          },
+          "panel": {
+            "filter": "none",
+            "background": "radial-gradient(circle, rgba(56, 189, 248, 0.13) 0%, rgba(15, 23, 42, 0.58) 46%, rgba(3, 10, 24, 0.94) 74%, rgba(2, 6, 23, 0.99) 100%)",
+            "shadow": "rgba(56, 189, 248, 0.18) 0px 0px 22px 0px, rgba(240, 200, 106, 0.1) 0px 0px 58px 0px, rgba(15, 23, 42, 0.72) 0px 0px 72px 0px, rgba(0, 0, 0, 0.78) 0px 0px 42px 0px inset",
+            "textShadow": "none",
+            "animation": "torchFlicker",
+            "width": "778px",
+            "height": "531.594px",
+            "transform": "none"
+          },
+          "button": {
+            "filter": "none",
+            "background": "linear-gradient(rgb(247, 217, 130), rgb(205, 169, 76))",
+            "shadow": "rgba(247, 217, 130, 0.25) 0px 0px 24px 0px, rgba(0, 0, 0, 0.42) 0px 12px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "301.734px",
+            "height": "48px",
+            "transform": "none"
+          }
+        },
+        "encounterStyles": {
+          "wizard": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "wizardFloat",
+            "width": "100%",
+            "height": "auto",
+            "transform": "none"
+          },
+          "guideImage": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "100%",
+            "height": "auto",
+            "transform": "none"
+          },
+          "guidePanel": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(19, 57, 86, 0.66), rgba(11, 34, 56, 0.88) 52%, rgba(2, 6, 23, 0.98))",
+            "shadow": "rgba(0, 0, 0, 0.78) 0px 0px 26px 0px inset, rgba(0, 0, 0, 0.35) 0px 8px 16px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "auto",
+            "transform": "none"
+          },
+          "guideName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(0, 0, 0, 0.88) 0px 2px 5px",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "boss": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(0, 0, 0, 0.9) 0px 2px 5px, rgba(56, 189, 248, 0.14) 0px 0px 8px",
+            "animation": "none",
+            "width": "220px",
+            "height": "210px",
+            "transform": "none"
+          },
+          "bossName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(0, 0, 0, 0.92) 0px 3px 8px",
+            "animation": "none",
+            "width": "936px",
+            "height": "39.1875px",
+            "transform": "none"
+          },
+          "intro": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.7) 0px 20px 28px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "100%",
+            "height": "612px",
+            "transform": "none"
+          },
+          "frame": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(12, 18, 24, 0.7), rgba(2, 8, 20, 0.86))",
+            "shadow": "rgba(0, 0, 0, 0.72) 0px 22px 70px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "aura": {
+            "filter": "none",
+            "background": "linear-gradient(90deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.42))",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "panel": {
+            "filter": "none",
+            "background": "radial-gradient(circle, rgba(56, 189, 248, 0.13) 0%, rgba(15, 23, 42, 0.58) 46%, rgba(3, 10, 24, 0.94) 74%, rgba(2, 6, 23, 0.99) 100%)",
+            "shadow": "rgba(56, 189, 248, 0.36) 0px 0px 34px 0px, rgba(247, 217, 130, 0.2) 0px 0px 72px 0px, rgba(15, 42, 64, 0.78) 0px 0px 92px 0px, rgba(0, 0, 0, 0.86) 0px 0px 46px 0px inset",
+            "textShadow": "none",
+            "animation": "torchFlicker",
+            "width": "980px",
+            "height": "860.188px",
+            "transform": "none"
+          },
+          "button": {
+            "filter": "none",
+            "background": "linear-gradient(rgb(247, 217, 130), rgb(205, 169, 76))",
+            "shadow": "rgba(247, 217, 130, 0.25) 0px 0px 24px 0px, rgba(0, 0, 0, 0.42) 0px 12px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          }
+        },
+        "shots": [
+          "equilibrium-crisis-custodian-after.png",
+          "equilibrium-crisis-boss-intro-after.png",
+          "equilibrium-crisis-boss-encounter-after.png"
+        ]
+      }
+    }
+  },
+  {
+    "name": "Economic Realm natural first boss, character styles and visual evidence: liquidity-grid",
+    "status": "PASS",
+    "detail": {
+      "before": {
+        "state": {
+          "room": 10,
+          "attempts": 12,
+          "correct": 12,
+          "streak": 12,
+          "bossHealth": 3,
+          "bossCheckpoint": 11
+        },
+        "beforeStyles": {
+          "wizard": {
+            "filter": "drop-shadow(rgba(56, 189, 248, 0.65) 0px 0px 10px) drop-shadow(rgba(215, 179, 90, 0.45) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "wizardFloat",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guideImage": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guidePanel": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(19, 57, 86, 0.66), rgba(11, 34, 56, 0.88) 52%, rgba(2, 6, 23, 0.98))",
+            "shadow": "rgba(0, 0, 0, 0.78) 0px 0px 26px 0px inset, rgba(56, 189, 248, 0.16) 0px 0px 18px 0px, rgba(247, 217, 130, 0.08) 0px 0px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "478.797px",
+            "transform": "none"
+          },
+          "guideName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(56, 189, 248, 0.45) 0px 0px 6px, rgba(215, 179, 90, 0.35) 0px 0px 10px",
+            "animation": "none",
+            "width": "111.453px",
+            "height": "14px",
+            "transform": "none"
+          },
+          "boss": null,
+          "bossName": null,
+          "intro": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.7) 0px 20px 28px) drop-shadow(rgba(247, 217, 130, 0.22) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "100%",
+            "height": "612px",
+            "transform": "none"
+          },
+          "frame": {
+            "filter": "none",
+            "background": "radial-gradient(circle at 50% 34%, rgba(247, 217, 130, 0.18), rgba(2, 8, 20, 0.86) 68%)",
+            "shadow": "rgba(0, 0, 0, 0.72) 0px 22px 70px 0px, rgba(56, 189, 248, 0.15) 0px 0px 38px 0px, rgba(247, 217, 130, 0.06) 0px 0px 34px 0px inset",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "aura": {
+            "filter": "none",
+            "background": "radial-gradient(circle at 28% 42%, rgba(247, 217, 130, 0.2), rgba(0, 0, 0, 0) 38%), linear-gradient(90deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.42))",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "panel": {
+            "filter": "none",
+            "background": "radial-gradient(circle, rgba(56, 189, 248, 0.13) 0%, rgba(15, 23, 42, 0.58) 46%, rgba(3, 10, 24, 0.94) 74%, rgba(2, 6, 23, 0.99) 100%)",
+            "shadow": "rgba(56, 189, 248, 0.18) 0px 0px 22px 0px, rgba(240, 200, 106, 0.1) 0px 0px 58px 0px, rgba(15, 23, 42, 0.72) 0px 0px 72px 0px, rgba(0, 0, 0, 0.78) 0px 0px 42px 0px inset",
+            "textShadow": "none",
+            "animation": "torchFlicker",
+            "width": "778px",
+            "height": "500.797px",
+            "transform": "none"
+          },
+          "button": {
+            "filter": "none",
+            "background": "linear-gradient(rgb(247, 217, 130), rgb(205, 169, 76))",
+            "shadow": "rgba(247, 217, 130, 0.25) 0px 0px 24px 0px, rgba(0, 0, 0, 0.42) 0px 12px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          }
+        },
+        "introStyles": {
+          "wizard": {
+            "filter": "drop-shadow(rgba(56, 189, 248, 0.65) 0px 0px 10px) drop-shadow(rgba(215, 179, 90, 0.45) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "wizardFloat",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guideImage": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guidePanel": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(19, 57, 86, 0.66), rgba(11, 34, 56, 0.88) 52%, rgba(2, 6, 23, 0.98))",
+            "shadow": "rgba(0, 0, 0, 0.78) 0px 0px 26px 0px inset, rgba(56, 189, 248, 0.16) 0px 0px 18px 0px, rgba(247, 217, 130, 0.08) 0px 0px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "571.188px",
+            "transform": "none"
+          },
+          "guideName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(56, 189, 248, 0.45) 0px 0px 6px, rgba(215, 179, 90, 0.35) 0px 0px 10px",
+            "animation": "none",
+            "width": "111.453px",
+            "height": "14px",
+            "transform": "none"
+          },
+          "boss": null,
+          "bossName": null,
+          "intro": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.7) 0px 20px 28px) drop-shadow(rgba(247, 217, 130, 0.22) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "501.203px",
+            "height": "612px",
+            "transform": "none"
+          },
+          "frame": {
+            "filter": "none",
+            "background": "radial-gradient(circle at 50% 34%, rgba(247, 217, 130, 0.22), rgba(2, 8, 20, 0.86) 68%)",
+            "shadow": "rgba(0, 0, 0, 0.72) 0px 22px 70px 0px, rgba(56, 189, 248, 0.15) 0px 0px 38px 0px, rgba(247, 217, 130, 0.06) 0px 0px 34px 0px inset",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "501.203px",
+            "height": "612px",
+            "transform": "none"
+          },
+          "aura": {
+            "filter": "none",
+            "background": "radial-gradient(circle at 28% 42%, rgba(247, 217, 130, 0.22), rgba(0, 0, 0, 0) 38%), linear-gradient(90deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.42))",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "1280px",
+            "height": "900px",
+            "transform": "none"
+          },
+          "panel": {
+            "filter": "none",
+            "background": "radial-gradient(circle, rgba(56, 189, 248, 0.13) 0%, rgba(15, 23, 42, 0.58) 46%, rgba(3, 10, 24, 0.94) 74%, rgba(2, 6, 23, 0.99) 100%)",
+            "shadow": "rgba(56, 189, 248, 0.18) 0px 0px 22px 0px, rgba(240, 200, 106, 0.1) 0px 0px 58px 0px, rgba(15, 23, 42, 0.72) 0px 0px 72px 0px, rgba(0, 0, 0, 0.78) 0px 0px 42px 0px inset",
+            "textShadow": "none",
+            "animation": "torchFlicker",
+            "width": "778px",
+            "height": "593.188px",
+            "transform": "none"
+          },
+          "button": {
+            "filter": "none",
+            "background": "linear-gradient(rgb(247, 217, 130), rgb(205, 169, 76))",
+            "shadow": "rgba(247, 217, 130, 0.25) 0px 0px 24px 0px, rgba(0, 0, 0, 0.42) 0px 12px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "301.734px",
+            "height": "48px",
+            "transform": "none"
+          }
+        },
+        "encounterStyles": {
+          "wizard": {
+            "filter": "drop-shadow(rgba(56, 189, 248, 0.65) 0px 0px 10px) drop-shadow(rgba(215, 179, 90, 0.45) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "wizardFloat",
+            "width": "100%",
+            "height": "auto",
+            "transform": "none"
+          },
+          "guideImage": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "100%",
+            "height": "auto",
+            "transform": "none"
+          },
+          "guidePanel": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(19, 57, 86, 0.66), rgba(11, 34, 56, 0.88) 52%, rgba(2, 6, 23, 0.98))",
+            "shadow": "rgba(0, 0, 0, 0.78) 0px 0px 26px 0px inset, rgba(56, 189, 248, 0.16) 0px 0px 18px 0px, rgba(247, 217, 130, 0.08) 0px 0px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "auto",
+            "transform": "none"
+          },
+          "guideName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(56, 189, 248, 0.45) 0px 0px 6px, rgba(215, 179, 90, 0.35) 0px 0px 10px",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "boss": {
+            "filter": "drop-shadow(rgb(215, 179, 90) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(0, 0, 0, 0.9) 0px 2px 5px, rgba(56, 189, 248, 0.14) 0px 0px 8px",
+            "animation": "none",
+            "width": "220px",
+            "height": "210px",
+            "transform": "none"
+          },
+          "bossName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(247, 217, 130, 0.68) 0px 0px 10px, rgba(56, 189, 248, 0.3) 0px 0px 28px, rgba(0, 0, 0, 0.92) 0px 3px 8px",
+            "animation": "none",
+            "width": "936px",
+            "height": "39.1875px",
+            "transform": "none"
+          },
+          "intro": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.7) 0px 20px 28px) drop-shadow(rgba(247, 217, 130, 0.22) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "100%",
+            "height": "612px",
+            "transform": "none"
+          },
+          "frame": {
+            "filter": "none",
+            "background": "radial-gradient(circle at 50% 34%, rgba(247, 217, 130, 0.22), rgba(2, 8, 20, 0.86) 68%)",
+            "shadow": "rgba(0, 0, 0, 0.72) 0px 22px 70px 0px, rgba(56, 189, 248, 0.15) 0px 0px 38px 0px, rgba(247, 217, 130, 0.06) 0px 0px 34px 0px inset",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "aura": {
+            "filter": "none",
+            "background": "radial-gradient(circle at 28% 42%, rgba(247, 217, 130, 0.22), rgba(0, 0, 0, 0) 38%), linear-gradient(90deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.42))",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "panel": {
+            "filter": "none",
+            "background": "radial-gradient(circle, rgba(56, 189, 248, 0.13) 0%, rgba(15, 23, 42, 0.58) 46%, rgba(3, 10, 24, 0.94) 74%, rgba(2, 6, 23, 0.99) 100%)",
+            "shadow": "rgba(56, 189, 248, 0.36) 0px 0px 34px 0px, rgba(247, 217, 130, 0.2) 0px 0px 72px 0px, rgba(15, 42, 64, 0.78) 0px 0px 92px 0px, rgba(0, 0, 0, 0.86) 0px 0px 46px 0px inset",
+            "textShadow": "none",
+            "animation": "torchFlicker",
+            "width": "980px",
+            "height": "896.188px",
+            "transform": "none"
+          },
+          "button": {
+            "filter": "none",
+            "background": "linear-gradient(rgb(247, 217, 130), rgb(205, 169, 76))",
+            "shadow": "rgba(247, 217, 130, 0.25) 0px 0px 24px 0px, rgba(0, 0, 0, 0.42) 0px 12px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          }
+        },
+        "shots": [
+          "liquidity-grid-custodian-before.png",
+          "liquidity-grid-boss-intro-before.png",
+          "liquidity-grid-boss-encounter-before.png"
+        ]
+      },
+      "after": {
+        "state": {
+          "room": 10,
+          "attempts": 12,
+          "correct": 12,
+          "streak": 12,
+          "bossHealth": 3,
+          "bossCheckpoint": 11
+        },
+        "beforeStyles": {
+          "wizard": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "wizardFloat",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guideImage": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guidePanel": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(19, 57, 86, 0.66), rgba(11, 34, 56, 0.88) 52%, rgba(2, 6, 23, 0.98))",
+            "shadow": "rgba(0, 0, 0, 0.78) 0px 0px 26px 0px inset, rgba(0, 0, 0, 0.35) 0px 8px 16px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "478.797px",
+            "transform": "none"
+          },
+          "guideName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(0, 0, 0, 0.88) 0px 2px 5px",
+            "animation": "none",
+            "width": "111.453px",
+            "height": "14px",
+            "transform": "none"
+          },
+          "boss": null,
+          "bossName": null,
+          "intro": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.7) 0px 20px 28px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "100%",
+            "height": "612px",
+            "transform": "none"
+          },
+          "frame": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(12, 18, 24, 0.7), rgba(2, 8, 20, 0.86))",
+            "shadow": "rgba(0, 0, 0, 0.72) 0px 22px 70px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "aura": {
+            "filter": "none",
+            "background": "linear-gradient(90deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.42))",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "panel": {
+            "filter": "none",
+            "background": "radial-gradient(circle, rgba(56, 189, 248, 0.13) 0%, rgba(15, 23, 42, 0.58) 46%, rgba(3, 10, 24, 0.94) 74%, rgba(2, 6, 23, 0.99) 100%)",
+            "shadow": "rgba(56, 189, 248, 0.18) 0px 0px 22px 0px, rgba(240, 200, 106, 0.1) 0px 0px 58px 0px, rgba(15, 23, 42, 0.72) 0px 0px 72px 0px, rgba(0, 0, 0, 0.78) 0px 0px 42px 0px inset",
+            "textShadow": "none",
+            "animation": "torchFlicker",
+            "width": "778px",
+            "height": "500.797px",
+            "transform": "none"
+          },
+          "button": {
+            "filter": "none",
+            "background": "linear-gradient(rgb(247, 217, 130), rgb(205, 169, 76))",
+            "shadow": "rgba(247, 217, 130, 0.25) 0px 0px 24px 0px, rgba(0, 0, 0, 0.42) 0px 12px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          }
+        },
+        "introStyles": {
+          "wizard": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "wizardFloat",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guideImage": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guidePanel": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(19, 57, 86, 0.66), rgba(11, 34, 56, 0.88) 52%, rgba(2, 6, 23, 0.98))",
+            "shadow": "rgba(0, 0, 0, 0.78) 0px 0px 26px 0px inset, rgba(0, 0, 0, 0.35) 0px 8px 16px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "571.188px",
+            "transform": "none"
+          },
+          "guideName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(0, 0, 0, 0.88) 0px 2px 5px",
+            "animation": "none",
+            "width": "111.453px",
+            "height": "14px",
+            "transform": "none"
+          },
+          "boss": null,
+          "bossName": null,
+          "intro": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.7) 0px 20px 28px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "501.203px",
+            "height": "612px",
+            "transform": "none"
+          },
+          "frame": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(12, 18, 24, 0.7), rgba(2, 8, 20, 0.86))",
+            "shadow": "rgba(0, 0, 0, 0.72) 0px 22px 70px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "501.203px",
+            "height": "612px",
+            "transform": "none"
+          },
+          "aura": {
+            "filter": "none",
+            "background": "linear-gradient(90deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.42))",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "1280px",
+            "height": "900px",
+            "transform": "none"
+          },
+          "panel": {
+            "filter": "none",
+            "background": "radial-gradient(circle, rgba(56, 189, 248, 0.13) 0%, rgba(15, 23, 42, 0.58) 46%, rgba(3, 10, 24, 0.94) 74%, rgba(2, 6, 23, 0.99) 100%)",
+            "shadow": "rgba(56, 189, 248, 0.18) 0px 0px 22px 0px, rgba(240, 200, 106, 0.1) 0px 0px 58px 0px, rgba(15, 23, 42, 0.72) 0px 0px 72px 0px, rgba(0, 0, 0, 0.78) 0px 0px 42px 0px inset",
+            "textShadow": "none",
+            "animation": "torchFlicker",
+            "width": "778px",
+            "height": "593.188px",
+            "transform": "none"
+          },
+          "button": {
+            "filter": "none",
+            "background": "linear-gradient(rgb(247, 217, 130), rgb(205, 169, 76))",
+            "shadow": "rgba(247, 217, 130, 0.25) 0px 0px 24px 0px, rgba(0, 0, 0, 0.42) 0px 12px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "301.734px",
+            "height": "48px",
+            "transform": "none"
+          }
+        },
+        "encounterStyles": {
+          "wizard": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "wizardFloat",
+            "width": "100%",
+            "height": "auto",
+            "transform": "none"
+          },
+          "guideImage": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "100%",
+            "height": "auto",
+            "transform": "none"
+          },
+          "guidePanel": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(19, 57, 86, 0.66), rgba(11, 34, 56, 0.88) 52%, rgba(2, 6, 23, 0.98))",
+            "shadow": "rgba(0, 0, 0, 0.78) 0px 0px 26px 0px inset, rgba(0, 0, 0, 0.35) 0px 8px 16px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "auto",
+            "transform": "none"
+          },
+          "guideName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(0, 0, 0, 0.88) 0px 2px 5px",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "boss": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(0, 0, 0, 0.9) 0px 2px 5px, rgba(56, 189, 248, 0.14) 0px 0px 8px",
+            "animation": "none",
+            "width": "220px",
+            "height": "210px",
+            "transform": "none"
+          },
+          "bossName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(0, 0, 0, 0.92) 0px 3px 8px",
+            "animation": "none",
+            "width": "936px",
+            "height": "39.1875px",
+            "transform": "none"
+          },
+          "intro": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.7) 0px 20px 28px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "100%",
+            "height": "612px",
+            "transform": "none"
+          },
+          "frame": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(12, 18, 24, 0.7), rgba(2, 8, 20, 0.86))",
+            "shadow": "rgba(0, 0, 0, 0.72) 0px 22px 70px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "aura": {
+            "filter": "none",
+            "background": "linear-gradient(90deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.42))",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "panel": {
+            "filter": "none",
+            "background": "radial-gradient(circle, rgba(56, 189, 248, 0.13) 0%, rgba(15, 23, 42, 0.58) 46%, rgba(3, 10, 24, 0.94) 74%, rgba(2, 6, 23, 0.99) 100%)",
+            "shadow": "rgba(56, 189, 248, 0.36) 0px 0px 34px 0px, rgba(247, 217, 130, 0.2) 0px 0px 72px 0px, rgba(15, 42, 64, 0.78) 0px 0px 92px 0px, rgba(0, 0, 0, 0.86) 0px 0px 46px 0px inset",
+            "textShadow": "none",
+            "animation": "torchFlicker",
+            "width": "980px",
+            "height": "896.188px",
+            "transform": "none"
+          },
+          "button": {
+            "filter": "none",
+            "background": "linear-gradient(rgb(247, 217, 130), rgb(205, 169, 76))",
+            "shadow": "rgba(247, 217, 130, 0.25) 0px 0px 24px 0px, rgba(0, 0, 0, 0.42) 0px 12px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          }
+        },
+        "shots": [
+          "liquidity-grid-custodian-after.png",
+          "liquidity-grid-boss-intro-after.png",
+          "liquidity-grid-boss-encounter-after.png"
+        ]
+      }
+    }
+  },
+  {
+    "name": "Economic Realm natural first boss, character styles and visual evidence: stabilization-protocol",
+    "status": "PASS",
+    "detail": {
+      "before": {
+        "state": {
+          "room": 10,
+          "attempts": 12,
+          "correct": 12,
+          "streak": 12,
+          "bossHealth": 3,
+          "bossCheckpoint": 11
+        },
+        "beforeStyles": {
+          "wizard": {
+            "filter": "drop-shadow(rgba(56, 189, 248, 0.65) 0px 0px 10px) drop-shadow(rgba(215, 179, 90, 0.45) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "wizardFloat",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guideImage": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guidePanel": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(19, 57, 86, 0.66), rgba(11, 34, 56, 0.88) 52%, rgba(2, 6, 23, 0.98))",
+            "shadow": "rgba(0, 0, 0, 0.78) 0px 0px 26px 0px inset, rgba(56, 189, 248, 0.16) 0px 0px 18px 0px, rgba(247, 217, 130, 0.08) 0px 0px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "944.797px",
+            "transform": "none"
+          },
+          "guideName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(56, 189, 248, 0.45) 0px 0px 6px, rgba(215, 179, 90, 0.35) 0px 0px 10px",
+            "animation": "none",
+            "width": "111.453px",
+            "height": "14px",
+            "transform": "none"
+          },
+          "boss": null,
+          "bossName": null,
+          "intro": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.7) 0px 20px 28px) drop-shadow(rgba(247, 217, 130, 0.22) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "100%",
+            "height": "612px",
+            "transform": "none"
+          },
+          "frame": {
+            "filter": "none",
+            "background": "radial-gradient(circle at 50% 34%, rgba(247, 217, 130, 0.18), rgba(2, 8, 20, 0.86) 68%)",
+            "shadow": "rgba(0, 0, 0, 0.72) 0px 22px 70px 0px, rgba(56, 189, 248, 0.15) 0px 0px 38px 0px, rgba(247, 217, 130, 0.06) 0px 0px 34px 0px inset",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "aura": {
+            "filter": "none",
+            "background": "radial-gradient(circle at 28% 42%, rgba(247, 217, 130, 0.2), rgba(0, 0, 0, 0) 38%), linear-gradient(90deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.42))",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "panel": {
+            "filter": "none",
+            "background": "radial-gradient(circle, rgba(56, 189, 248, 0.13) 0%, rgba(15, 23, 42, 0.58) 46%, rgba(3, 10, 24, 0.94) 74%, rgba(2, 6, 23, 0.99) 100%)",
+            "shadow": "rgba(56, 189, 248, 0.18) 0px 0px 22px 0px, rgba(240, 200, 106, 0.1) 0px 0px 58px 0px, rgba(15, 23, 42, 0.72) 0px 0px 72px 0px, rgba(0, 0, 0, 0.78) 0px 0px 42px 0px inset",
+            "textShadow": "none",
+            "animation": "torchFlicker",
+            "width": "778px",
+            "height": "966.797px",
+            "transform": "none"
+          },
+          "button": {
+            "filter": "none",
+            "background": "linear-gradient(rgb(247, 217, 130), rgb(205, 169, 76))",
+            "shadow": "rgba(247, 217, 130, 0.25) 0px 0px 24px 0px, rgba(0, 0, 0, 0.42) 0px 12px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          }
+        },
+        "introStyles": {
+          "wizard": {
+            "filter": "drop-shadow(rgba(56, 189, 248, 0.65) 0px 0px 10px) drop-shadow(rgba(215, 179, 90, 0.45) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "wizardFloat",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guideImage": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guidePanel": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(19, 57, 86, 0.66), rgba(11, 34, 56, 0.88) 52%, rgba(2, 6, 23, 0.98))",
+            "shadow": "rgba(0, 0, 0, 0.78) 0px 0px 26px 0px inset, rgba(56, 189, 248, 0.16) 0px 0px 18px 0px, rgba(247, 217, 130, 0.08) 0px 0px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "509.594px",
+            "transform": "none"
+          },
+          "guideName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(56, 189, 248, 0.45) 0px 0px 6px, rgba(215, 179, 90, 0.35) 0px 0px 10px",
+            "animation": "none",
+            "width": "111.453px",
+            "height": "14px",
+            "transform": "none"
+          },
+          "boss": null,
+          "bossName": null,
+          "intro": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.7) 0px 20px 28px) drop-shadow(rgba(247, 217, 130, 0.22) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "501.203px",
+            "height": "612px",
+            "transform": "none"
+          },
+          "frame": {
+            "filter": "none",
+            "background": "radial-gradient(circle at 50% 34%, rgba(247, 217, 130, 0.22), rgba(2, 8, 20, 0.86) 68%)",
+            "shadow": "rgba(0, 0, 0, 0.72) 0px 22px 70px 0px, rgba(56, 189, 248, 0.15) 0px 0px 38px 0px, rgba(247, 217, 130, 0.06) 0px 0px 34px 0px inset",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "501.203px",
+            "height": "612px",
+            "transform": "none"
+          },
+          "aura": {
+            "filter": "none",
+            "background": "radial-gradient(circle at 28% 42%, rgba(247, 217, 130, 0.22), rgba(0, 0, 0, 0) 38%), linear-gradient(90deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.42))",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "1280px",
+            "height": "900px",
+            "transform": "none"
+          },
+          "panel": {
+            "filter": "none",
+            "background": "radial-gradient(circle, rgba(56, 189, 248, 0.13) 0%, rgba(15, 23, 42, 0.58) 46%, rgba(3, 10, 24, 0.94) 74%, rgba(2, 6, 23, 0.99) 100%)",
+            "shadow": "rgba(56, 189, 248, 0.18) 0px 0px 22px 0px, rgba(240, 200, 106, 0.1) 0px 0px 58px 0px, rgba(15, 23, 42, 0.72) 0px 0px 72px 0px, rgba(0, 0, 0, 0.78) 0px 0px 42px 0px inset",
+            "textShadow": "none",
+            "animation": "torchFlicker",
+            "width": "778px",
+            "height": "531.594px",
+            "transform": "none"
+          },
+          "button": {
+            "filter": "none",
+            "background": "linear-gradient(rgb(247, 217, 130), rgb(205, 169, 76))",
+            "shadow": "rgba(247, 217, 130, 0.25) 0px 0px 24px 0px, rgba(0, 0, 0, 0.42) 0px 12px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "301.734px",
+            "height": "48px",
+            "transform": "none"
+          }
+        },
+        "encounterStyles": {
+          "wizard": {
+            "filter": "drop-shadow(rgba(56, 189, 248, 0.65) 0px 0px 10px) drop-shadow(rgba(215, 179, 90, 0.45) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "wizardFloat",
+            "width": "100%",
+            "height": "auto",
+            "transform": "none"
+          },
+          "guideImage": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "100%",
+            "height": "auto",
+            "transform": "none"
+          },
+          "guidePanel": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(19, 57, 86, 0.66), rgba(11, 34, 56, 0.88) 52%, rgba(2, 6, 23, 0.98))",
+            "shadow": "rgba(0, 0, 0, 0.78) 0px 0px 26px 0px inset, rgba(56, 189, 248, 0.16) 0px 0px 18px 0px, rgba(247, 217, 130, 0.08) 0px 0px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "auto",
+            "transform": "none"
+          },
+          "guideName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(56, 189, 248, 0.45) 0px 0px 6px, rgba(215, 179, 90, 0.35) 0px 0px 10px",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "boss": {
+            "filter": "drop-shadow(rgb(215, 179, 90) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(0, 0, 0, 0.9) 0px 2px 5px, rgba(56, 189, 248, 0.14) 0px 0px 8px",
+            "animation": "none",
+            "width": "220px",
+            "height": "210px",
+            "transform": "none"
+          },
+          "bossName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(247, 217, 130, 0.68) 0px 0px 10px, rgba(56, 189, 248, 0.3) 0px 0px 28px, rgba(0, 0, 0, 0.92) 0px 3px 8px",
+            "animation": "none",
+            "width": "936px",
+            "height": "39.1875px",
+            "transform": "none"
+          },
+          "intro": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.7) 0px 20px 28px) drop-shadow(rgba(247, 217, 130, 0.22) 0px 0px 18px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "100%",
+            "height": "612px",
+            "transform": "none"
+          },
+          "frame": {
+            "filter": "none",
+            "background": "radial-gradient(circle at 50% 34%, rgba(247, 217, 130, 0.22), rgba(2, 8, 20, 0.86) 68%)",
+            "shadow": "rgba(0, 0, 0, 0.72) 0px 22px 70px 0px, rgba(56, 189, 248, 0.15) 0px 0px 38px 0px, rgba(247, 217, 130, 0.06) 0px 0px 34px 0px inset",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "aura": {
+            "filter": "none",
+            "background": "radial-gradient(circle at 28% 42%, rgba(247, 217, 130, 0.22), rgba(0, 0, 0, 0) 38%), linear-gradient(90deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.42))",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "panel": {
+            "filter": "none",
+            "background": "radial-gradient(circle, rgba(56, 189, 248, 0.13) 0%, rgba(15, 23, 42, 0.58) 46%, rgba(3, 10, 24, 0.94) 74%, rgba(2, 6, 23, 0.99) 100%)",
+            "shadow": "rgba(56, 189, 248, 0.36) 0px 0px 34px 0px, rgba(247, 217, 130, 0.2) 0px 0px 72px 0px, rgba(15, 42, 64, 0.78) 0px 0px 92px 0px, rgba(0, 0, 0, 0.86) 0px 0px 46px 0px inset",
+            "textShadow": "none",
+            "animation": "torchFlicker",
+            "width": "980px",
+            "height": "968.188px",
+            "transform": "none"
+          },
+          "button": {
+            "filter": "none",
+            "background": "linear-gradient(rgb(247, 217, 130), rgb(205, 169, 76))",
+            "shadow": "rgba(247, 217, 130, 0.25) 0px 0px 24px 0px, rgba(0, 0, 0, 0.42) 0px 12px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          }
+        },
+        "shots": [
+          "stabilization-protocol-custodian-before.png",
+          "stabilization-protocol-boss-intro-before.png",
+          "stabilization-protocol-boss-encounter-before.png"
+        ]
+      },
+      "after": {
+        "state": {
+          "room": 10,
+          "attempts": 12,
+          "correct": 12,
+          "streak": 12,
+          "bossHealth": 3,
+          "bossCheckpoint": 11
+        },
+        "beforeStyles": {
+          "wizard": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "wizardFloat",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guideImage": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guidePanel": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(19, 57, 86, 0.66), rgba(11, 34, 56, 0.88) 52%, rgba(2, 6, 23, 0.98))",
+            "shadow": "rgba(0, 0, 0, 0.78) 0px 0px 26px 0px inset, rgba(0, 0, 0, 0.35) 0px 8px 16px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "944.797px",
+            "transform": "none"
+          },
+          "guideName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(0, 0, 0, 0.88) 0px 2px 5px",
+            "animation": "none",
+            "width": "111.453px",
+            "height": "14px",
+            "transform": "none"
+          },
+          "boss": null,
+          "bossName": null,
+          "intro": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.7) 0px 20px 28px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "100%",
+            "height": "612px",
+            "transform": "none"
+          },
+          "frame": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(12, 18, 24, 0.7), rgba(2, 8, 20, 0.86))",
+            "shadow": "rgba(0, 0, 0, 0.72) 0px 22px 70px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "aura": {
+            "filter": "none",
+            "background": "linear-gradient(90deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.42))",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "panel": {
+            "filter": "none",
+            "background": "radial-gradient(circle, rgba(56, 189, 248, 0.13) 0%, rgba(15, 23, 42, 0.58) 46%, rgba(3, 10, 24, 0.94) 74%, rgba(2, 6, 23, 0.99) 100%)",
+            "shadow": "rgba(56, 189, 248, 0.18) 0px 0px 22px 0px, rgba(240, 200, 106, 0.1) 0px 0px 58px 0px, rgba(15, 23, 42, 0.72) 0px 0px 72px 0px, rgba(0, 0, 0, 0.78) 0px 0px 42px 0px inset",
+            "textShadow": "none",
+            "animation": "torchFlicker",
+            "width": "778px",
+            "height": "966.797px",
+            "transform": "none"
+          },
+          "button": {
+            "filter": "none",
+            "background": "linear-gradient(rgb(247, 217, 130), rgb(205, 169, 76))",
+            "shadow": "rgba(247, 217, 130, 0.25) 0px 0px 24px 0px, rgba(0, 0, 0, 0.42) 0px 12px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          }
+        },
+        "introStyles": {
+          "wizard": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "wizardFloat",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guideImage": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "213.328px",
+            "transform": "none"
+          },
+          "guidePanel": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(19, 57, 86, 0.66), rgba(11, 34, 56, 0.88) 52%, rgba(2, 6, 23, 0.98))",
+            "shadow": "rgba(0, 0, 0, 0.78) 0px 0px 26px 0px inset, rgba(0, 0, 0, 0.35) 0px 8px 16px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "509.594px",
+            "transform": "none"
+          },
+          "guideName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(0, 0, 0, 0.88) 0px 2px 5px",
+            "animation": "none",
+            "width": "111.453px",
+            "height": "14px",
+            "transform": "none"
+          },
+          "boss": null,
+          "bossName": null,
+          "intro": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.7) 0px 20px 28px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "501.203px",
+            "height": "612px",
+            "transform": "none"
+          },
+          "frame": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(12, 18, 24, 0.7), rgba(2, 8, 20, 0.86))",
+            "shadow": "rgba(0, 0, 0, 0.72) 0px 22px 70px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "501.203px",
+            "height": "612px",
+            "transform": "none"
+          },
+          "aura": {
+            "filter": "none",
+            "background": "linear-gradient(90deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.42))",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "1280px",
+            "height": "900px",
+            "transform": "none"
+          },
+          "panel": {
+            "filter": "none",
+            "background": "radial-gradient(circle, rgba(56, 189, 248, 0.13) 0%, rgba(15, 23, 42, 0.58) 46%, rgba(3, 10, 24, 0.94) 74%, rgba(2, 6, 23, 0.99) 100%)",
+            "shadow": "rgba(56, 189, 248, 0.18) 0px 0px 22px 0px, rgba(240, 200, 106, 0.1) 0px 0px 58px 0px, rgba(15, 23, 42, 0.72) 0px 0px 72px 0px, rgba(0, 0, 0, 0.78) 0px 0px 42px 0px inset",
+            "textShadow": "none",
+            "animation": "torchFlicker",
+            "width": "778px",
+            "height": "531.594px",
+            "transform": "none"
+          },
+          "button": {
+            "filter": "none",
+            "background": "linear-gradient(rgb(247, 217, 130), rgb(205, 169, 76))",
+            "shadow": "rgba(247, 217, 130, 0.25) 0px 0px 24px 0px, rgba(0, 0, 0, 0.42) 0px 12px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "301.734px",
+            "height": "48px",
+            "transform": "none"
+          }
+        },
+        "encounterStyles": {
+          "wizard": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "wizardFloat",
+            "width": "100%",
+            "height": "auto",
+            "transform": "none"
+          },
+          "guideImage": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "100%",
+            "height": "auto",
+            "transform": "none"
+          },
+          "guidePanel": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(19, 57, 86, 0.66), rgba(11, 34, 56, 0.88) 52%, rgba(2, 6, 23, 0.98))",
+            "shadow": "rgba(0, 0, 0, 0.78) 0px 0px 26px 0px inset, rgba(0, 0, 0, 0.35) 0px 8px 16px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "160px",
+            "height": "auto",
+            "transform": "none"
+          },
+          "guideName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(0, 0, 0, 0.88) 0px 2px 5px",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "boss": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.55) 0px 8px 16px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(0, 0, 0, 0.9) 0px 2px 5px, rgba(56, 189, 248, 0.14) 0px 0px 8px",
+            "animation": "none",
+            "width": "220px",
+            "height": "210px",
+            "transform": "none"
+          },
+          "bossName": {
+            "filter": "none",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "rgba(0, 0, 0, 0.92) 0px 3px 8px",
+            "animation": "none",
+            "width": "936px",
+            "height": "39.1875px",
+            "transform": "none"
+          },
+          "intro": {
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.7) 0px 20px 28px)",
+            "background": "none",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "100%",
+            "height": "612px",
+            "transform": "none"
+          },
+          "frame": {
+            "filter": "none",
+            "background": "linear-gradient(rgba(12, 18, 24, 0.7), rgba(2, 8, 20, 0.86))",
+            "shadow": "rgba(0, 0, 0, 0.72) 0px 22px 70px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "aura": {
+            "filter": "none",
+            "background": "linear-gradient(90deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.42))",
+            "shadow": "none",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          },
+          "panel": {
+            "filter": "none",
+            "background": "radial-gradient(circle, rgba(56, 189, 248, 0.13) 0%, rgba(15, 23, 42, 0.58) 46%, rgba(3, 10, 24, 0.94) 74%, rgba(2, 6, 23, 0.99) 100%)",
+            "shadow": "rgba(56, 189, 248, 0.36) 0px 0px 34px 0px, rgba(247, 217, 130, 0.2) 0px 0px 72px 0px, rgba(15, 42, 64, 0.78) 0px 0px 92px 0px, rgba(0, 0, 0, 0.86) 0px 0px 46px 0px inset",
+            "textShadow": "none",
+            "animation": "torchFlicker",
+            "width": "980px",
+            "height": "968.188px",
+            "transform": "none"
+          },
+          "button": {
+            "filter": "none",
+            "background": "linear-gradient(rgb(247, 217, 130), rgb(205, 169, 76))",
+            "shadow": "rgba(247, 217, 130, 0.25) 0px 0px 24px 0px, rgba(0, 0, 0, 0.42) 0px 12px 30px 0px",
+            "textShadow": "none",
+            "animation": "none",
+            "width": "auto",
+            "height": "auto",
+            "transform": "none"
+          }
+        },
+        "shots": [
+          "stabilization-protocol-custodian-after.png",
+          "stabilization-protocol-boss-intro-after.png",
+          "stabilization-protocol-boss-encounter-after.png"
+        ]
+      }
+    }
+  },
+  {
+    "name": "Other collections retain character effects; hub character presentation inventory",
+    "status": "PASS",
+    "detail": {
+      "rows": [
+        {
+          "file": "play/micro-domains/labyrinth-of-choice/index.html",
+          "unchanged": true
+        },
+        {
+          "file": "play/macro-command-system/national-engine/index.html",
+          "unchanged": true
+        },
+        {
+          "file": "play/managerial-intelligence-directorate/cost-directive/index.html",
+          "unchanged": true
+        }
+      ],
+      "hub": "No Custodian/boss portrait presentation; artifact/achievement/scene effects retained."
+    }
+  }
+]

@@ -1,0 +1,2511 @@
+[
+  {
+    "name": "Natural recovery success: play/economic-realm/market-gate/index.html",
+    "status": "PASS",
+    "detail": {
+      "sequence": [
+        true,
+        true,
+        true
+      ],
+      "states": [
+        {
+          "q": 41002,
+          "room": 1,
+          "attempts": 7,
+          "correct": 0,
+          "streak": 0,
+          "maxStreak": 0,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "repair",
+            "tag": "circular_flow",
+            "objective": "LO2.2",
+            "skill": "firms_role_circular_flow",
+            "commonError": "reverses_firm_and_household_roles",
+            "remediationConceptId": null,
+            "sourceType": "interpretation",
+            "returnRoom": 1,
+            "originQuestionId": 22,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false,
+            "history": {
+              "repair": [
+                "id:41002"
+              ],
+              "bridge": []
+            }
+          },
+          "mastery": "b1d88da9cb26afe029485a071de4d3d2e61284a53229095d1adb4f0e9db08daa",
+          "concept": "1e22283902860fac7248a692dde91845d6a103b735fe0d958a54f42fb22e7bb2"
+        },
+        {
+          "q": 6016,
+          "room": 1,
+          "attempts": 8,
+          "correct": 1,
+          "streak": 1,
+          "maxStreak": 1,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "bridge",
+            "tag": "circular_flow",
+            "objective": "LO2.2",
+            "skill": "firms_role_circular_flow",
+            "commonError": "reverses_firm_and_household_roles",
+            "remediationConceptId": null,
+            "sourceType": "interpretation",
+            "returnRoom": 1,
+            "originQuestionId": 22,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false,
+            "history": {
+              "repair": [
+                "id:41002"
+              ],
+              "bridge": [
+                "id:6016"
+              ]
+            }
+          },
+          "mastery": "87caecb1d8cc21c826570767668168a2a975634bb7399732d2e57e6bde2c3b93",
+          "concept": "64e46e74ee25631e3093ee7154e2ff9c354bee92ba840b384b337407d8f4f0d0"
+        },
+        {
+          "q": 24,
+          "room": 1,
+          "attempts": 9,
+          "correct": 2,
+          "streak": 2,
+          "maxStreak": 2,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "retest",
+            "tag": "circular_flow",
+            "objective": "LO2.2",
+            "skill": "firms_role_circular_flow",
+            "commonError": "reverses_firm_and_household_roles",
+            "remediationConceptId": null,
+            "sourceType": "interpretation",
+            "returnRoom": 1,
+            "originQuestionId": 22,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false,
+            "history": {
+              "repair": [
+                "id:41002"
+              ],
+              "bridge": [
+                "id:6016"
+              ]
+            }
+          },
+          "mastery": "ee8d20b10c16c44463a2c143091f46d3da0f507a0bc1118afb7cb103cf558f66",
+          "concept": "9e853afc97e89c99a212b9067f5328fb69721163d8db972d2eaadafa5fcec4f6"
+        },
+        {
+          "q": 24,
+          "room": 1,
+          "attempts": 10,
+          "correct": 3,
+          "streak": 3,
+          "maxStreak": 3,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": false,
+            "stage": null,
+            "tag": null,
+            "objective": null,
+            "skill": null,
+            "commonError": null,
+            "sourceType": null,
+            "returnRoom": null,
+            "originQuestionId": null,
+            "careless": false,
+            "history": {
+              "repair": [],
+              "bridge": []
+            }
+          },
+          "mastery": "e5636489105008d4ace0d9b91a67eae3d29549cc4a5e7d3bf7ab75d8ee666708",
+          "concept": "3046468fad1594bd07eee262690672788a3c0e57c34b4fe558f91645bc3c7f70"
+        },
+        {
+          "q": 66,
+          "room": 1,
+          "attempts": 10,
+          "correct": 3,
+          "streak": 3,
+          "maxStreak": 3,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": false,
+            "stage": null,
+            "tag": null,
+            "objective": null,
+            "skill": null,
+            "commonError": null,
+            "sourceType": null,
+            "returnRoom": null,
+            "originQuestionId": null,
+            "careless": false,
+            "history": {
+              "repair": [],
+              "bridge": []
+            }
+          },
+          "mastery": "e5636489105008d4ace0d9b91a67eae3d29549cc4a5e7d3bf7ab75d8ee666708",
+          "concept": "3046468fad1594bd07eee262690672788a3c0e57c34b4fe558f91645bc3c7f70"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Natural recovery repairRetry: play/economic-realm/market-gate/index.html",
+    "status": "PASS",
+    "detail": {
+      "sequence": [
+        false,
+        true,
+        true,
+        true
+      ],
+      "states": [
+        {
+          "q": 41002,
+          "room": 1,
+          "attempts": 7,
+          "correct": 0,
+          "streak": 0,
+          "maxStreak": 0,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "repair",
+            "tag": "circular_flow",
+            "objective": "LO2.2",
+            "skill": "firms_role_circular_flow",
+            "commonError": "reverses_firm_and_household_roles",
+            "remediationConceptId": null,
+            "sourceType": "interpretation",
+            "returnRoom": 1,
+            "originQuestionId": 22,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false,
+            "history": {
+              "repair": [
+                "id:41002"
+              ],
+              "bridge": []
+            }
+          },
+          "mastery": "b1d88da9cb26afe029485a071de4d3d2e61284a53229095d1adb4f0e9db08daa",
+          "concept": "1e22283902860fac7248a692dde91845d6a103b735fe0d958a54f42fb22e7bb2"
+        },
+        {
+          "q": 41000,
+          "room": 1,
+          "attempts": 8,
+          "correct": 0,
+          "streak": 0,
+          "maxStreak": 0,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "repair",
+            "tag": "circular_flow",
+            "objective": "LO2.2",
+            "skill": "firms_role_circular_flow",
+            "commonError": "reverses_firm_and_household_roles",
+            "remediationConceptId": null,
+            "sourceType": "interpretation",
+            "returnRoom": 1,
+            "originQuestionId": 22,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false,
+            "history": {
+              "repair": [
+                "id:41002",
+                "id:41000"
+              ],
+              "bridge": []
+            }
+          },
+          "mastery": "5f2399e147993436fc2c64ab838ce71c3ce3bc7f0c65205e789776d0571e8bc2",
+          "concept": "1eef6a9e50472e7db43b4bd059ba9381f1a08daae52bbca5b0610921b6584cd3"
+        },
+        {
+          "q": 6017,
+          "room": 1,
+          "attempts": 9,
+          "correct": 1,
+          "streak": 1,
+          "maxStreak": 1,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "bridge",
+            "tag": "circular_flow",
+            "objective": "LO2.2",
+            "skill": "firms_role_circular_flow",
+            "commonError": "reverses_firm_and_household_roles",
+            "remediationConceptId": null,
+            "sourceType": "interpretation",
+            "returnRoom": 1,
+            "originQuestionId": 22,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false,
+            "history": {
+              "repair": [
+                "id:41002",
+                "id:41000"
+              ],
+              "bridge": [
+                "id:6017"
+              ]
+            }
+          },
+          "mastery": "f8391c629954857e450b5e1879d028f61d84d43532f3201ff69537a22d6271ca",
+          "concept": "2412c5ab610a1347c8aae34337eeac7f1c8d03c0eacaab46f14e1452c030b429"
+        },
+        {
+          "q": 26,
+          "room": 1,
+          "attempts": 10,
+          "correct": 2,
+          "streak": 2,
+          "maxStreak": 2,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "retest",
+            "tag": "circular_flow",
+            "objective": "LO2.2",
+            "skill": "firms_role_circular_flow",
+            "commonError": "reverses_firm_and_household_roles",
+            "remediationConceptId": null,
+            "sourceType": "interpretation",
+            "returnRoom": 1,
+            "originQuestionId": 22,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false,
+            "history": {
+              "repair": [
+                "id:41002",
+                "id:41000"
+              ],
+              "bridge": [
+                "id:6017"
+              ]
+            }
+          },
+          "mastery": "553dafa4b033a1ed702b2288b8a3a6362924a218d2e177fa8911b1cd2a9109cb",
+          "concept": "3e76082586d345e10fd4681bf6e1af8c06e4bab93003c27adafcbe59980a1fc2"
+        },
+        {
+          "q": 26,
+          "room": 1,
+          "attempts": 11,
+          "correct": 3,
+          "streak": 3,
+          "maxStreak": 3,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": false,
+            "stage": null,
+            "tag": null,
+            "objective": null,
+            "skill": null,
+            "commonError": null,
+            "sourceType": null,
+            "returnRoom": null,
+            "originQuestionId": null,
+            "careless": false,
+            "history": {
+              "repair": [],
+              "bridge": []
+            }
+          },
+          "mastery": "20c868a4288ceafc974d167ae9c9e3d9d96b96dcd264c2754dd6517e89e5d514",
+          "concept": "11cbaa6cc65c0ba4b4504925983712ffca4227810fd258ceb0783e36d804478d"
+        },
+        {
+          "q": 29,
+          "room": 1,
+          "attempts": 11,
+          "correct": 3,
+          "streak": 3,
+          "maxStreak": 3,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": false,
+            "stage": null,
+            "tag": null,
+            "objective": null,
+            "skill": null,
+            "commonError": null,
+            "sourceType": null,
+            "returnRoom": null,
+            "originQuestionId": null,
+            "careless": false,
+            "history": {
+              "repair": [],
+              "bridge": []
+            }
+          },
+          "mastery": "20c868a4288ceafc974d167ae9c9e3d9d96b96dcd264c2754dd6517e89e5d514",
+          "concept": "11cbaa6cc65c0ba4b4504925983712ffca4227810fd258ceb0783e36d804478d"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Natural recovery bridgeRetry: play/economic-realm/market-gate/index.html",
+    "status": "PASS",
+    "detail": {
+      "sequence": [
+        true,
+        false,
+        true,
+        true
+      ],
+      "states": [
+        {
+          "q": 41002,
+          "room": 1,
+          "attempts": 7,
+          "correct": 0,
+          "streak": 0,
+          "maxStreak": 0,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "repair",
+            "tag": "circular_flow",
+            "objective": "LO2.2",
+            "skill": "firms_role_circular_flow",
+            "commonError": "reverses_firm_and_household_roles",
+            "remediationConceptId": null,
+            "sourceType": "interpretation",
+            "returnRoom": 1,
+            "originQuestionId": 22,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false,
+            "history": {
+              "repair": [
+                "id:41002"
+              ],
+              "bridge": []
+            }
+          },
+          "mastery": "b1d88da9cb26afe029485a071de4d3d2e61284a53229095d1adb4f0e9db08daa",
+          "concept": "1e22283902860fac7248a692dde91845d6a103b735fe0d958a54f42fb22e7bb2"
+        },
+        {
+          "q": 6016,
+          "room": 1,
+          "attempts": 8,
+          "correct": 1,
+          "streak": 1,
+          "maxStreak": 1,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "bridge",
+            "tag": "circular_flow",
+            "objective": "LO2.2",
+            "skill": "firms_role_circular_flow",
+            "commonError": "reverses_firm_and_household_roles",
+            "remediationConceptId": null,
+            "sourceType": "interpretation",
+            "returnRoom": 1,
+            "originQuestionId": 22,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false,
+            "history": {
+              "repair": [
+                "id:41002"
+              ],
+              "bridge": [
+                "id:6016"
+              ]
+            }
+          },
+          "mastery": "87caecb1d8cc21c826570767668168a2a975634bb7399732d2e57e6bde2c3b93",
+          "concept": "64e46e74ee25631e3093ee7154e2ff9c354bee92ba840b384b337407d8f4f0d0"
+        },
+        {
+          "q": 6017,
+          "room": 1,
+          "attempts": 9,
+          "correct": 1,
+          "streak": 0,
+          "maxStreak": 1,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "bridge",
+            "tag": "circular_flow",
+            "objective": "LO2.2",
+            "skill": "firms_role_circular_flow",
+            "commonError": "reverses_firm_and_household_roles",
+            "remediationConceptId": null,
+            "sourceType": "interpretation",
+            "returnRoom": 1,
+            "originQuestionId": 22,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false,
+            "history": {
+              "repair": [
+                "id:41002"
+              ],
+              "bridge": [
+                "id:6016",
+                "id:6017"
+              ]
+            }
+          },
+          "mastery": "f7004bc4ff0e073deae8bede903a27c0e5dc0adc220858941d73e9e972f0b35f",
+          "concept": "72bff1877329471048b1b33cc3d3f51b135cd6873dcb2b2329ce37a4b4d6124a"
+        },
+        {
+          "q": 26,
+          "room": 1,
+          "attempts": 10,
+          "correct": 2,
+          "streak": 1,
+          "maxStreak": 1,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "retest",
+            "tag": "circular_flow",
+            "objective": "LO2.2",
+            "skill": "firms_role_circular_flow",
+            "commonError": "reverses_firm_and_household_roles",
+            "remediationConceptId": null,
+            "sourceType": "interpretation",
+            "returnRoom": 1,
+            "originQuestionId": 22,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false,
+            "history": {
+              "repair": [
+                "id:41002"
+              ],
+              "bridge": [
+                "id:6016",
+                "id:6017"
+              ]
+            }
+          },
+          "mastery": "8e1245550eb79974b4640115edbfa63132936eeeb3b7bbedce39b2e7e573dd37",
+          "concept": "fa886300c419e1b7fedb5d4f39c79de3f4915ddb12f54b6691dbf273fde5b10a"
+        },
+        {
+          "q": 26,
+          "room": 1,
+          "attempts": 11,
+          "correct": 3,
+          "streak": 2,
+          "maxStreak": 2,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": false,
+            "stage": null,
+            "tag": null,
+            "objective": null,
+            "skill": null,
+            "commonError": null,
+            "sourceType": null,
+            "returnRoom": null,
+            "originQuestionId": null,
+            "careless": false,
+            "history": {
+              "repair": [],
+              "bridge": []
+            }
+          },
+          "mastery": "a9b656860c3aa4d6d7e2de36c71571d83328f1acf1696310ed6c2fbf88650d9a",
+          "concept": "82092b3d72bf5392cdc27188cb9ab45c893374b6fe1dfcb18ab6a113102fd811"
+        },
+        {
+          "q": 28,
+          "room": 1,
+          "attempts": 11,
+          "correct": 3,
+          "streak": 2,
+          "maxStreak": 2,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": false,
+            "stage": null,
+            "tag": null,
+            "objective": null,
+            "skill": null,
+            "commonError": null,
+            "sourceType": null,
+            "returnRoom": null,
+            "originQuestionId": null,
+            "careless": false,
+            "history": {
+              "repair": [],
+              "bridge": []
+            }
+          },
+          "mastery": "a9b656860c3aa4d6d7e2de36c71571d83328f1acf1696310ed6c2fbf88650d9a",
+          "concept": "82092b3d72bf5392cdc27188cb9ab45c893374b6fe1dfcb18ab6a113102fd811"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Natural recovery retestRetry: play/economic-realm/market-gate/index.html",
+    "status": "PASS",
+    "detail": {
+      "sequence": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "states": [
+        {
+          "q": 41002,
+          "room": 1,
+          "attempts": 7,
+          "correct": 0,
+          "streak": 0,
+          "maxStreak": 0,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "repair",
+            "tag": "circular_flow",
+            "objective": "LO2.2",
+            "skill": "firms_role_circular_flow",
+            "commonError": "reverses_firm_and_household_roles",
+            "remediationConceptId": null,
+            "sourceType": "interpretation",
+            "returnRoom": 1,
+            "originQuestionId": 22,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false,
+            "history": {
+              "repair": [
+                "id:41002"
+              ],
+              "bridge": []
+            }
+          },
+          "mastery": "b1d88da9cb26afe029485a071de4d3d2e61284a53229095d1adb4f0e9db08daa",
+          "concept": "1e22283902860fac7248a692dde91845d6a103b735fe0d958a54f42fb22e7bb2"
+        },
+        {
+          "q": 6016,
+          "room": 1,
+          "attempts": 8,
+          "correct": 1,
+          "streak": 1,
+          "maxStreak": 1,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "bridge",
+            "tag": "circular_flow",
+            "objective": "LO2.2",
+            "skill": "firms_role_circular_flow",
+            "commonError": "reverses_firm_and_household_roles",
+            "remediationConceptId": null,
+            "sourceType": "interpretation",
+            "returnRoom": 1,
+            "originQuestionId": 22,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false,
+            "history": {
+              "repair": [
+                "id:41002"
+              ],
+              "bridge": [
+                "id:6016"
+              ]
+            }
+          },
+          "mastery": "87caecb1d8cc21c826570767668168a2a975634bb7399732d2e57e6bde2c3b93",
+          "concept": "64e46e74ee25631e3093ee7154e2ff9c354bee92ba840b384b337407d8f4f0d0"
+        },
+        {
+          "q": 24,
+          "room": 1,
+          "attempts": 9,
+          "correct": 2,
+          "streak": 2,
+          "maxStreak": 2,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "retest",
+            "tag": "circular_flow",
+            "objective": "LO2.2",
+            "skill": "firms_role_circular_flow",
+            "commonError": "reverses_firm_and_household_roles",
+            "remediationConceptId": null,
+            "sourceType": "interpretation",
+            "returnRoom": 1,
+            "originQuestionId": 22,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false,
+            "history": {
+              "repair": [
+                "id:41002"
+              ],
+              "bridge": [
+                "id:6016"
+              ]
+            }
+          },
+          "mastery": "ee8d20b10c16c44463a2c143091f46d3da0f507a0bc1118afb7cb103cf558f66",
+          "concept": "9e853afc97e89c99a212b9067f5328fb69721163d8db972d2eaadafa5fcec4f6"
+        },
+        {
+          "q": 26,
+          "room": 1,
+          "attempts": 10,
+          "correct": 2,
+          "streak": 0,
+          "maxStreak": 2,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "retest",
+            "tag": "circular_flow",
+            "objective": "LO2.2",
+            "skill": "firms_role_circular_flow",
+            "commonError": "reverses_firm_and_household_roles",
+            "remediationConceptId": null,
+            "sourceType": "interpretation",
+            "returnRoom": 1,
+            "originQuestionId": 22,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false,
+            "history": {
+              "repair": [
+                "id:41002"
+              ],
+              "bridge": [
+                "id:6016"
+              ]
+            }
+          },
+          "mastery": "570d5b88d745a5e47d983d4a1f51a45e6735361f12ae880e739787a9c8b96f1b",
+          "concept": "8d55115c0a3dd41e309c3ec04a39c251910cb5d1747ae50ecbb519e7cc099b3c"
+        },
+        {
+          "q": 26,
+          "room": 1,
+          "attempts": 11,
+          "correct": 3,
+          "streak": 1,
+          "maxStreak": 2,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": false,
+            "stage": null,
+            "tag": null,
+            "objective": null,
+            "skill": null,
+            "commonError": null,
+            "sourceType": null,
+            "returnRoom": null,
+            "originQuestionId": null,
+            "careless": false,
+            "history": {
+              "repair": [],
+              "bridge": []
+            }
+          },
+          "mastery": "f8fbfbd397ed82957a509487a866939f2cc7bdf33460a0d4683bc90a393040d5",
+          "concept": "8f5adeb2d67bf6094fb4f27cf457efaea6a5aa48dd680c3fd9b2ba21c0bc3549"
+        },
+        {
+          "q": 32,
+          "room": 1,
+          "attempts": 11,
+          "correct": 3,
+          "streak": 1,
+          "maxStreak": 2,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": false,
+            "stage": null,
+            "tag": null,
+            "objective": null,
+            "skill": null,
+            "commonError": null,
+            "sourceType": null,
+            "returnRoom": null,
+            "originQuestionId": null,
+            "careless": false,
+            "history": {
+              "repair": [],
+              "bridge": []
+            }
+          },
+          "mastery": "f8fbfbd397ed82957a509487a866939f2cc7bdf33460a0d4683bc90a393040d5",
+          "concept": "8f5adeb2d67bf6094fb4f27cf457efaea6a5aa48dd680c3fd9b2ba21c0bc3549"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Natural recovery success: play/managerial-intelligence-directorate/cost-directive/index.html",
+    "status": "PASS",
+    "detail": {
+      "sequence": [
+        true,
+        true,
+        true
+      ],
+      "states": [
+        {
+          "q": 5037,
+          "room": 1,
+          "attempts": 2,
+          "correct": 0,
+          "streak": 0,
+          "maxStreak": 0,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "repair",
+            "tag": "organization_wealth_creation",
+            "objective": "LO2.5",
+            "skill": "organization_wealth_creation",
+            "commonError": "centralizes_against_information",
+            "remediationConceptId": null,
+            "sourceType": "application",
+            "returnRoom": 1,
+            "originQuestionId": 30,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false
+          },
+          "mastery": "6e551fb209a03033c461e6ecf85571ff4b9919e062b87b94c3309a588fe41bce",
+          "concept": "5dd250a8b5b93f2b31b33e87f50c4189b48c789fa367c6b03869c4fa6d5bec7d"
+        },
+        {
+          "q": 6036,
+          "room": 1,
+          "attempts": 3,
+          "correct": 1,
+          "streak": 1,
+          "maxStreak": 1,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "bridge",
+            "tag": "organization_wealth_creation",
+            "objective": "LO2.5",
+            "skill": "organization_wealth_creation",
+            "commonError": "centralizes_against_information",
+            "remediationConceptId": null,
+            "sourceType": "application",
+            "returnRoom": 1,
+            "originQuestionId": 30,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false
+          },
+          "mastery": "de44f378b57ed43f0079efae587d5367a2cd867c8755a4925860c9a98feb6c3a",
+          "concept": "03a6e8c70fb542dc57a0d993e307b0eca90a419aa625a2f2ee916c80e2e6ad21"
+        },
+        {
+          "q": 29,
+          "room": 1,
+          "attempts": 4,
+          "correct": 2,
+          "streak": 2,
+          "maxStreak": 2,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "retest",
+            "tag": "organization_wealth_creation",
+            "objective": "LO2.5",
+            "skill": "organization_wealth_creation",
+            "commonError": "centralizes_against_information",
+            "remediationConceptId": null,
+            "sourceType": "application",
+            "returnRoom": 1,
+            "originQuestionId": 30,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false
+          },
+          "mastery": "86bb94e6317b2e2529324c9f17d40ab141308b1d165df4a3821f8e40e7a1ffb2",
+          "concept": "fe39156517ab406b71d34492d0b387c8125db83b00f265c3e3d85ac58fdab544"
+        },
+        {
+          "q": 29,
+          "room": 1,
+          "attempts": 5,
+          "correct": 3,
+          "streak": 3,
+          "maxStreak": 3,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": false,
+            "stage": null,
+            "tag": null,
+            "objective": null,
+            "skill": null,
+            "commonError": null,
+            "sourceType": null,
+            "returnRoom": null,
+            "originQuestionId": null,
+            "careless": false
+          },
+          "mastery": "9a1feddb5b47412e2bae6c01de5d281f3ffb76f7cec3262436473a9b52baa87d",
+          "concept": "2b341a7792f779f381da2f0a23df2c34bcec4efd0544cd0a94002dde83ef0b48"
+        },
+        {
+          "q": 123,
+          "room": 1,
+          "attempts": 5,
+          "correct": 3,
+          "streak": 3,
+          "maxStreak": 3,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": false,
+            "stage": null,
+            "tag": null,
+            "objective": null,
+            "skill": null,
+            "commonError": null,
+            "sourceType": null,
+            "returnRoom": null,
+            "originQuestionId": null,
+            "careless": false
+          },
+          "mastery": "9a1feddb5b47412e2bae6c01de5d281f3ffb76f7cec3262436473a9b52baa87d",
+          "concept": "2b341a7792f779f381da2f0a23df2c34bcec4efd0544cd0a94002dde83ef0b48"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Natural recovery repairRetry: play/managerial-intelligence-directorate/cost-directive/index.html",
+    "status": "PASS",
+    "detail": {
+      "sequence": [
+        false,
+        true,
+        true,
+        true
+      ],
+      "states": [
+        {
+          "q": 5037,
+          "room": 1,
+          "attempts": 2,
+          "correct": 0,
+          "streak": 0,
+          "maxStreak": 0,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "repair",
+            "tag": "organization_wealth_creation",
+            "objective": "LO2.5",
+            "skill": "organization_wealth_creation",
+            "commonError": "centralizes_against_information",
+            "remediationConceptId": null,
+            "sourceType": "application",
+            "returnRoom": 1,
+            "originQuestionId": 30,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false
+          },
+          "mastery": "6e551fb209a03033c461e6ecf85571ff4b9919e062b87b94c3309a588fe41bce",
+          "concept": "5dd250a8b5b93f2b31b33e87f50c4189b48c789fa367c6b03869c4fa6d5bec7d"
+        },
+        {
+          "q": 5036,
+          "room": 1,
+          "attempts": 3,
+          "correct": 0,
+          "streak": 0,
+          "maxStreak": 0,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "repair",
+            "tag": "organization_wealth_creation",
+            "objective": "LO2.5",
+            "skill": "organization_wealth_creation",
+            "commonError": "centralizes_against_information",
+            "remediationConceptId": null,
+            "sourceType": "application",
+            "returnRoom": 1,
+            "originQuestionId": 30,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false
+          },
+          "mastery": "03b00024fbf476de592ae6d3145ee79a416e9d62a904ef0d8931b3a72af14442",
+          "concept": "b04031a77c8e8a91a9822d8674d8115eb5d90621d016991f4ae6d3acef7a2076"
+        },
+        {
+          "q": 6036,
+          "room": 1,
+          "attempts": 4,
+          "correct": 1,
+          "streak": 1,
+          "maxStreak": 1,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "bridge",
+            "tag": "organization_wealth_creation",
+            "objective": "LO2.5",
+            "skill": "organization_wealth_creation",
+            "commonError": "centralizes_against_information",
+            "remediationConceptId": null,
+            "sourceType": "application",
+            "returnRoom": 1,
+            "originQuestionId": 30,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false
+          },
+          "mastery": "0c78c2f59c0345a257d30fef59a1c8b7d9d9f8f6344a4d342638b0d9e1ff2aa9",
+          "concept": "63c51623f7595f2fc285cba8106230c000b8881b25ed42cddc5367d005cd105d"
+        },
+        {
+          "q": 29,
+          "room": 1,
+          "attempts": 5,
+          "correct": 2,
+          "streak": 2,
+          "maxStreak": 2,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "retest",
+            "tag": "organization_wealth_creation",
+            "objective": "LO2.5",
+            "skill": "organization_wealth_creation",
+            "commonError": "centralizes_against_information",
+            "remediationConceptId": null,
+            "sourceType": "application",
+            "returnRoom": 1,
+            "originQuestionId": 30,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false
+          },
+          "mastery": "f3be1707efa9d262d37cda84b0fe6677033d147425d5326db8b7e2bf0ddecea8",
+          "concept": "0f1c18911b1e8ef15d1cbe9456a76fbc159eec9d49f86982c62662a2c22aeaf1"
+        },
+        {
+          "q": 29,
+          "room": 1,
+          "attempts": 6,
+          "correct": 3,
+          "streak": 3,
+          "maxStreak": 3,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": false,
+            "stage": null,
+            "tag": null,
+            "objective": null,
+            "skill": null,
+            "commonError": null,
+            "sourceType": null,
+            "returnRoom": null,
+            "originQuestionId": null,
+            "careless": false
+          },
+          "mastery": "92f87d4f373e384de2428d1cd0c68d179447b34266a6133607b54bb673910f63",
+          "concept": "6478f16227ae7d140ced10539bc5c2fc0eb9f89ef9b53681ceb76b7acbd4fb18"
+        },
+        {
+          "q": 66,
+          "room": 1,
+          "attempts": 6,
+          "correct": 3,
+          "streak": 3,
+          "maxStreak": 3,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": false,
+            "stage": null,
+            "tag": null,
+            "objective": null,
+            "skill": null,
+            "commonError": null,
+            "sourceType": null,
+            "returnRoom": null,
+            "originQuestionId": null,
+            "careless": false
+          },
+          "mastery": "92f87d4f373e384de2428d1cd0c68d179447b34266a6133607b54bb673910f63",
+          "concept": "6478f16227ae7d140ced10539bc5c2fc0eb9f89ef9b53681ceb76b7acbd4fb18"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Natural recovery bridgeRetry: play/managerial-intelligence-directorate/cost-directive/index.html",
+    "status": "PASS",
+    "detail": {
+      "sequence": [
+        true,
+        false,
+        true,
+        true
+      ],
+      "states": [
+        {
+          "q": 5037,
+          "room": 1,
+          "attempts": 2,
+          "correct": 0,
+          "streak": 0,
+          "maxStreak": 0,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "repair",
+            "tag": "organization_wealth_creation",
+            "objective": "LO2.5",
+            "skill": "organization_wealth_creation",
+            "commonError": "centralizes_against_information",
+            "remediationConceptId": null,
+            "sourceType": "application",
+            "returnRoom": 1,
+            "originQuestionId": 30,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false
+          },
+          "mastery": "6e551fb209a03033c461e6ecf85571ff4b9919e062b87b94c3309a588fe41bce",
+          "concept": "5dd250a8b5b93f2b31b33e87f50c4189b48c789fa367c6b03869c4fa6d5bec7d"
+        },
+        {
+          "q": 6036,
+          "room": 1,
+          "attempts": 3,
+          "correct": 1,
+          "streak": 1,
+          "maxStreak": 1,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "bridge",
+            "tag": "organization_wealth_creation",
+            "objective": "LO2.5",
+            "skill": "organization_wealth_creation",
+            "commonError": "centralizes_against_information",
+            "remediationConceptId": null,
+            "sourceType": "application",
+            "returnRoom": 1,
+            "originQuestionId": 30,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false
+          },
+          "mastery": "de44f378b57ed43f0079efae587d5367a2cd867c8755a4925860c9a98feb6c3a",
+          "concept": "03a6e8c70fb542dc57a0d993e307b0eca90a419aa625a2f2ee916c80e2e6ad21"
+        },
+        {
+          "q": 6037,
+          "room": 1,
+          "attempts": 4,
+          "correct": 1,
+          "streak": 0,
+          "maxStreak": 1,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "bridge",
+            "tag": "organization_wealth_creation",
+            "objective": "LO2.5",
+            "skill": "organization_wealth_creation",
+            "commonError": "centralizes_against_information",
+            "remediationConceptId": null,
+            "sourceType": "application",
+            "returnRoom": 1,
+            "originQuestionId": 30,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false
+          },
+          "mastery": "dfb4d26949688fa844b2e94115fa54e61abec0cef0e852373abcbb2257e2dbe8",
+          "concept": "858d124eb71d58e3b47f9e957e8f13bb7346f711fe066190e78fa22e6527d509"
+        },
+        {
+          "q": 29,
+          "room": 1,
+          "attempts": 5,
+          "correct": 2,
+          "streak": 1,
+          "maxStreak": 1,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "retest",
+            "tag": "organization_wealth_creation",
+            "objective": "LO2.5",
+            "skill": "organization_wealth_creation",
+            "commonError": "centralizes_against_information",
+            "remediationConceptId": null,
+            "sourceType": "application",
+            "returnRoom": 1,
+            "originQuestionId": 30,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false
+          },
+          "mastery": "dbb294c558d9d7cd339a70748bfd05be3dcd80f9614d4491735f74ab4b6bb1cc",
+          "concept": "d5239d4fcbe68bb61bab12793e77655381bad6baa7d5658703d41eaca068aa52"
+        },
+        {
+          "q": 29,
+          "room": 1,
+          "attempts": 6,
+          "correct": 3,
+          "streak": 2,
+          "maxStreak": 2,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": false,
+            "stage": null,
+            "tag": null,
+            "objective": null,
+            "skill": null,
+            "commonError": null,
+            "sourceType": null,
+            "returnRoom": null,
+            "originQuestionId": null,
+            "careless": false
+          },
+          "mastery": "30fc521628a0d12ae870cc441daf14c5e76d21ab3709a5d03d88f824eff6b658",
+          "concept": "5d4f888fe30da11e8d4705ab1b4285fa3ec1269ab2864461bb2d28a7930e389e"
+        },
+        {
+          "q": 66,
+          "room": 1,
+          "attempts": 6,
+          "correct": 3,
+          "streak": 2,
+          "maxStreak": 2,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": false,
+            "stage": null,
+            "tag": null,
+            "objective": null,
+            "skill": null,
+            "commonError": null,
+            "sourceType": null,
+            "returnRoom": null,
+            "originQuestionId": null,
+            "careless": false
+          },
+          "mastery": "30fc521628a0d12ae870cc441daf14c5e76d21ab3709a5d03d88f824eff6b658",
+          "concept": "5d4f888fe30da11e8d4705ab1b4285fa3ec1269ab2864461bb2d28a7930e389e"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Natural recovery retestRetry: play/managerial-intelligence-directorate/cost-directive/index.html",
+    "status": "PASS",
+    "detail": {
+      "sequence": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "states": [
+        {
+          "q": 5037,
+          "room": 1,
+          "attempts": 2,
+          "correct": 0,
+          "streak": 0,
+          "maxStreak": 0,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "repair",
+            "tag": "organization_wealth_creation",
+            "objective": "LO2.5",
+            "skill": "organization_wealth_creation",
+            "commonError": "centralizes_against_information",
+            "remediationConceptId": null,
+            "sourceType": "application",
+            "returnRoom": 1,
+            "originQuestionId": 30,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false
+          },
+          "mastery": "6e551fb209a03033c461e6ecf85571ff4b9919e062b87b94c3309a588fe41bce",
+          "concept": "5dd250a8b5b93f2b31b33e87f50c4189b48c789fa367c6b03869c4fa6d5bec7d"
+        },
+        {
+          "q": 6036,
+          "room": 1,
+          "attempts": 3,
+          "correct": 1,
+          "streak": 1,
+          "maxStreak": 1,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "bridge",
+            "tag": "organization_wealth_creation",
+            "objective": "LO2.5",
+            "skill": "organization_wealth_creation",
+            "commonError": "centralizes_against_information",
+            "remediationConceptId": null,
+            "sourceType": "application",
+            "returnRoom": 1,
+            "originQuestionId": 30,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false
+          },
+          "mastery": "de44f378b57ed43f0079efae587d5367a2cd867c8755a4925860c9a98feb6c3a",
+          "concept": "03a6e8c70fb542dc57a0d993e307b0eca90a419aa625a2f2ee916c80e2e6ad21"
+        },
+        {
+          "q": 29,
+          "room": 1,
+          "attempts": 4,
+          "correct": 2,
+          "streak": 2,
+          "maxStreak": 2,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "retest",
+            "tag": "organization_wealth_creation",
+            "objective": "LO2.5",
+            "skill": "organization_wealth_creation",
+            "commonError": "centralizes_against_information",
+            "remediationConceptId": null,
+            "sourceType": "application",
+            "returnRoom": 1,
+            "originQuestionId": 30,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false
+          },
+          "mastery": "86bb94e6317b2e2529324c9f17d40ab141308b1d165df4a3821f8e40e7a1ffb2",
+          "concept": "fe39156517ab406b71d34492d0b387c8125db83b00f265c3e3d85ac58fdab544"
+        },
+        {
+          "q": 30,
+          "room": 1,
+          "attempts": 5,
+          "correct": 2,
+          "streak": 0,
+          "maxStreak": 2,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "retest",
+            "tag": "organization_wealth_creation",
+            "objective": "LO2.5",
+            "skill": "organization_wealth_creation",
+            "commonError": "centralizes_against_information",
+            "remediationConceptId": null,
+            "sourceType": "application",
+            "returnRoom": 1,
+            "originQuestionId": 30,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false
+          },
+          "mastery": "1b4e31a3b094951afd20bc123af7563b1cea2db7eb4f87dcb04da10104d777dd",
+          "concept": "1036e7f6afd646ca398e46b953f8a17d6e9bb8dde1396f3ccdad7b04f95014eb"
+        },
+        {
+          "q": 30,
+          "room": 1,
+          "attempts": 6,
+          "correct": 3,
+          "streak": 1,
+          "maxStreak": 2,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": false,
+            "stage": null,
+            "tag": null,
+            "objective": null,
+            "skill": null,
+            "commonError": null,
+            "sourceType": null,
+            "returnRoom": null,
+            "originQuestionId": null,
+            "careless": false
+          },
+          "mastery": "434be1a740e4d119ee9bd09b2ef7ac5f4f82687522fdc7ce0f77da12b0af46bc",
+          "concept": "e6abc06ce8f4bc442839d12cd618f22f972607863a0690b135bb974f060c573e"
+        },
+        {
+          "q": 66,
+          "room": 1,
+          "attempts": 6,
+          "correct": 3,
+          "streak": 1,
+          "maxStreak": 2,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": false,
+            "stage": null,
+            "tag": null,
+            "objective": null,
+            "skill": null,
+            "commonError": null,
+            "sourceType": null,
+            "returnRoom": null,
+            "originQuestionId": null,
+            "careless": false
+          },
+          "mastery": "434be1a740e4d119ee9bd09b2ef7ac5f4f82687522fdc7ce0f77da12b0af46bc",
+          "concept": "e6abc06ce8f4bc442839d12cd618f22f972607863a0690b135bb974f060c573e"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Natural recovery success: play/micro-domains/labyrinth-of-choice/index.html",
+    "status": "PASS",
+    "detail": {
+      "sequence": [
+        true,
+        true,
+        true
+      ],
+      "states": [
+        {
+          "q": 5021,
+          "room": 1,
+          "attempts": 6,
+          "correct": 0,
+          "streak": 0,
+          "maxStreak": 0,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "repair",
+            "tag": "budget_line_changes",
+            "objective": "LO3.3",
+            "skill": "budget_line_changes",
+            "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+            "sourceType": "interpretation",
+            "returnRoom": 1,
+            "originQuestionId": 18,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false,
+            "remediationHistory": {
+              "repair": [
+                5021
+              ],
+              "bridge": []
+            }
+          },
+          "mastery": "9a6b4171b6d1fee66792b21a460077bf03d30f6699bb26f8ca54a00d655ddb67",
+          "concept": "f76695cc42913c9451046bcfc9500d05258be2572352091f65f648fc055c6371"
+        },
+        {
+          "q": 600023,
+          "room": 1,
+          "attempts": 7,
+          "correct": 1,
+          "streak": 1,
+          "maxStreak": 1,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "bridge",
+            "tag": "budget_line_changes",
+            "objective": "LO3.3",
+            "skill": "budget_line_changes",
+            "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+            "sourceType": "interpretation",
+            "returnRoom": 1,
+            "originQuestionId": 18,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false,
+            "remediationHistory": {
+              "repair": [
+                5021
+              ],
+              "bridge": [
+                600023
+              ]
+            }
+          },
+          "mastery": "2f28415fde5ceb1d74caf1e12f77f53ff6be13971dda2ac5d8b9682659537a04",
+          "concept": "ac52c8d6e0ce1ab8de4e263924cde85ccd8c61cce3ffb56edc3cbd870f5bcdf5"
+        },
+        {
+          "q": 36,
+          "room": 1,
+          "attempts": 8,
+          "correct": 2,
+          "streak": 2,
+          "maxStreak": 2,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "retest",
+            "tag": "budget_line_changes",
+            "objective": "LO3.3",
+            "skill": "budget_line_changes",
+            "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+            "sourceType": "interpretation",
+            "returnRoom": 1,
+            "originQuestionId": 18,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false,
+            "remediationHistory": {
+              "repair": [
+                5021
+              ],
+              "bridge": [
+                600023
+              ]
+            }
+          },
+          "mastery": "39e3a03b269e470a212df91283e9205611ffb2908c04a791120a6a9f73ba88d8",
+          "concept": "eb633a3dae3857a088d24ea4b452f796fca8ca4fe23d693585bb614a053bedda"
+        },
+        {
+          "q": 36,
+          "room": 1,
+          "attempts": 9,
+          "correct": 3,
+          "streak": 3,
+          "maxStreak": 3,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": false,
+            "stage": null,
+            "tag": null,
+            "objective": null,
+            "skill": null,
+            "commonError": null,
+            "sourceType": null,
+            "returnRoom": null,
+            "originQuestionId": null,
+            "careless": false,
+            "remediationHistory": {
+              "repair": [],
+              "bridge": []
+            }
+          },
+          "mastery": "98a642deab8131bcbaf5d8ff5f64674204d286260bf7b974f8b6b4761a61364c",
+          "concept": "d376ccb94b0990b032e2609ec0f2565bc4c140ac0c10c7ac3f755b7a2cb1ad1b"
+        },
+        {
+          "q": 110000,
+          "room": 1,
+          "attempts": 9,
+          "correct": 3,
+          "streak": 3,
+          "maxStreak": 3,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": false,
+            "stage": null,
+            "tag": null,
+            "objective": null,
+            "skill": null,
+            "commonError": null,
+            "sourceType": null,
+            "returnRoom": null,
+            "originQuestionId": null,
+            "careless": false,
+            "remediationHistory": {
+              "repair": [],
+              "bridge": []
+            }
+          },
+          "mastery": "98a642deab8131bcbaf5d8ff5f64674204d286260bf7b974f8b6b4761a61364c",
+          "concept": "d376ccb94b0990b032e2609ec0f2565bc4c140ac0c10c7ac3f755b7a2cb1ad1b"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Natural recovery repairRetry: play/micro-domains/labyrinth-of-choice/index.html",
+    "status": "PASS",
+    "detail": {
+      "sequence": [
+        false,
+        true,
+        true,
+        true
+      ],
+      "states": [
+        {
+          "q": 5021,
+          "room": 1,
+          "attempts": 6,
+          "correct": 0,
+          "streak": 0,
+          "maxStreak": 0,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "repair",
+            "tag": "budget_line_changes",
+            "objective": "LO3.3",
+            "skill": "budget_line_changes",
+            "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+            "sourceType": "interpretation",
+            "returnRoom": 1,
+            "originQuestionId": 18,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false,
+            "remediationHistory": {
+              "repair": [
+                5021
+              ],
+              "bridge": []
+            }
+          },
+          "mastery": "9a6b4171b6d1fee66792b21a460077bf03d30f6699bb26f8ca54a00d655ddb67",
+          "concept": "f76695cc42913c9451046bcfc9500d05258be2572352091f65f648fc055c6371"
+        },
+        {
+          "q": 500006,
+          "room": 1,
+          "attempts": 7,
+          "correct": 0,
+          "streak": 0,
+          "maxStreak": 0,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "repair",
+            "tag": "budget_line_changes",
+            "objective": "LO3.3",
+            "skill": "budget_line_changes",
+            "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+            "sourceType": "interpretation",
+            "returnRoom": 1,
+            "originQuestionId": 18,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false,
+            "remediationHistory": {
+              "repair": [
+                5021,
+                500006
+              ],
+              "bridge": []
+            }
+          },
+          "mastery": "f7b300ddbeb1312e2a71b0dc1871546f1e4fbc3c4ed34e8c01e48e5629741526",
+          "concept": "5f2ecb29622719785c86c0e670725b33ca011a72362edf446fb5d50fe388575f"
+        },
+        {
+          "q": 600021,
+          "room": 1,
+          "attempts": 8,
+          "correct": 1,
+          "streak": 1,
+          "maxStreak": 1,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "bridge",
+            "tag": "budget_line_changes",
+            "objective": "LO3.3",
+            "skill": "budget_line_changes",
+            "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+            "sourceType": "interpretation",
+            "returnRoom": 1,
+            "originQuestionId": 18,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false,
+            "remediationHistory": {
+              "repair": [
+                5021,
+                500006
+              ],
+              "bridge": [
+                600021
+              ]
+            }
+          },
+          "mastery": "ba8ed7ac06ae8e1fbe3df80d7d1c46b08db62b167f8265e92e2bc00ec7707ef6",
+          "concept": "a36f454ca9dac1c0d4f7e6f18554f06cbd828cf0de6741e3f2a4db162faacdea"
+        },
+        {
+          "q": 36,
+          "room": 1,
+          "attempts": 9,
+          "correct": 2,
+          "streak": 2,
+          "maxStreak": 2,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "retest",
+            "tag": "budget_line_changes",
+            "objective": "LO3.3",
+            "skill": "budget_line_changes",
+            "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+            "sourceType": "interpretation",
+            "returnRoom": 1,
+            "originQuestionId": 18,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false,
+            "remediationHistory": {
+              "repair": [
+                5021,
+                500006
+              ],
+              "bridge": [
+                600021
+              ]
+            }
+          },
+          "mastery": "35965041131e11642e320cf8aa4386af4757e0c33c1144f130889d0b6e68f85f",
+          "concept": "2624b68d858f9fee98bb1f0609fdc9f76e2abe9ff25bcf87d0843de0aefb0205"
+        },
+        {
+          "q": 36,
+          "room": 1,
+          "attempts": 10,
+          "correct": 3,
+          "streak": 3,
+          "maxStreak": 3,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": false,
+            "stage": null,
+            "tag": null,
+            "objective": null,
+            "skill": null,
+            "commonError": null,
+            "sourceType": null,
+            "returnRoom": null,
+            "originQuestionId": null,
+            "careless": false,
+            "remediationHistory": {
+              "repair": [],
+              "bridge": []
+            }
+          },
+          "mastery": "e9f1fffaae43642f3a1fc4d7d19171a976021f9a8755c35ce059a76eefa764b6",
+          "concept": "96ab2345fd2ae2c0d2117ef6454949f619ec394a4140806b3a8bd81331391d44"
+        },
+        {
+          "q": 9,
+          "room": 1,
+          "attempts": 10,
+          "correct": 3,
+          "streak": 3,
+          "maxStreak": 3,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": false,
+            "stage": null,
+            "tag": null,
+            "objective": null,
+            "skill": null,
+            "commonError": null,
+            "sourceType": null,
+            "returnRoom": null,
+            "originQuestionId": null,
+            "careless": false,
+            "remediationHistory": {
+              "repair": [],
+              "bridge": []
+            }
+          },
+          "mastery": "e9f1fffaae43642f3a1fc4d7d19171a976021f9a8755c35ce059a76eefa764b6",
+          "concept": "96ab2345fd2ae2c0d2117ef6454949f619ec394a4140806b3a8bd81331391d44"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Natural recovery bridgeRetry: play/micro-domains/labyrinth-of-choice/index.html",
+    "status": "PASS",
+    "detail": {
+      "sequence": [
+        true,
+        false,
+        true,
+        true
+      ],
+      "states": [
+        {
+          "q": 5021,
+          "room": 1,
+          "attempts": 6,
+          "correct": 0,
+          "streak": 0,
+          "maxStreak": 0,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "repair",
+            "tag": "budget_line_changes",
+            "objective": "LO3.3",
+            "skill": "budget_line_changes",
+            "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+            "sourceType": "interpretation",
+            "returnRoom": 1,
+            "originQuestionId": 18,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false,
+            "remediationHistory": {
+              "repair": [
+                5021
+              ],
+              "bridge": []
+            }
+          },
+          "mastery": "9a6b4171b6d1fee66792b21a460077bf03d30f6699bb26f8ca54a00d655ddb67",
+          "concept": "f76695cc42913c9451046bcfc9500d05258be2572352091f65f648fc055c6371"
+        },
+        {
+          "q": 600023,
+          "room": 1,
+          "attempts": 7,
+          "correct": 1,
+          "streak": 1,
+          "maxStreak": 1,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "bridge",
+            "tag": "budget_line_changes",
+            "objective": "LO3.3",
+            "skill": "budget_line_changes",
+            "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+            "sourceType": "interpretation",
+            "returnRoom": 1,
+            "originQuestionId": 18,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false,
+            "remediationHistory": {
+              "repair": [
+                5021
+              ],
+              "bridge": [
+                600023
+              ]
+            }
+          },
+          "mastery": "2f28415fde5ceb1d74caf1e12f77f53ff6be13971dda2ac5d8b9682659537a04",
+          "concept": "ac52c8d6e0ce1ab8de4e263924cde85ccd8c61cce3ffb56edc3cbd870f5bcdf5"
+        },
+        {
+          "q": 600021,
+          "room": 1,
+          "attempts": 8,
+          "correct": 1,
+          "streak": 0,
+          "maxStreak": 1,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "bridge",
+            "tag": "budget_line_changes",
+            "objective": "LO3.3",
+            "skill": "budget_line_changes",
+            "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+            "sourceType": "interpretation",
+            "returnRoom": 1,
+            "originQuestionId": 18,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false,
+            "remediationHistory": {
+              "repair": [
+                5021
+              ],
+              "bridge": [
+                600023,
+                600021
+              ]
+            }
+          },
+          "mastery": "d0d8653561a5fe758e35d478f8da4e38a327e326cad608c081461ed38718aab2",
+          "concept": "896481c399c5a938275c646aa627171d86201f8586b3b195f7522f0180dc3e77"
+        },
+        {
+          "q": 36,
+          "room": 1,
+          "attempts": 9,
+          "correct": 2,
+          "streak": 1,
+          "maxStreak": 1,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "retest",
+            "tag": "budget_line_changes",
+            "objective": "LO3.3",
+            "skill": "budget_line_changes",
+            "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+            "sourceType": "interpretation",
+            "returnRoom": 1,
+            "originQuestionId": 18,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false,
+            "remediationHistory": {
+              "repair": [
+                5021
+              ],
+              "bridge": [
+                600023,
+                600021
+              ]
+            }
+          },
+          "mastery": "c7bd89f1fd770576d8cf0443f9fd23a60fdcba66ab25e86d3f1fd67aad9d659e",
+          "concept": "a18e964d8c957d42ec92e83579f001d158c5225e0a247c94c8e124ea930aefc0"
+        },
+        {
+          "q": 36,
+          "room": 1,
+          "attempts": 10,
+          "correct": 3,
+          "streak": 2,
+          "maxStreak": 2,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": false,
+            "stage": null,
+            "tag": null,
+            "objective": null,
+            "skill": null,
+            "commonError": null,
+            "sourceType": null,
+            "returnRoom": null,
+            "originQuestionId": null,
+            "careless": false,
+            "remediationHistory": {
+              "repair": [],
+              "bridge": []
+            }
+          },
+          "mastery": "bbcf3c31f8aa4be0cbc4e3d5aa42bf2ef8f774ab3c3ab5919a0c786ce1fa0acd",
+          "concept": "10f39ece4473d0609ba8afb0315a2417c7829d185a60bc2f25f499a086f828f9"
+        },
+        {
+          "q": 9,
+          "room": 1,
+          "attempts": 10,
+          "correct": 3,
+          "streak": 2,
+          "maxStreak": 2,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": false,
+            "stage": null,
+            "tag": null,
+            "objective": null,
+            "skill": null,
+            "commonError": null,
+            "sourceType": null,
+            "returnRoom": null,
+            "originQuestionId": null,
+            "careless": false,
+            "remediationHistory": {
+              "repair": [],
+              "bridge": []
+            }
+          },
+          "mastery": "bbcf3c31f8aa4be0cbc4e3d5aa42bf2ef8f774ab3c3ab5919a0c786ce1fa0acd",
+          "concept": "10f39ece4473d0609ba8afb0315a2417c7829d185a60bc2f25f499a086f828f9"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Natural recovery retestRetry: play/micro-domains/labyrinth-of-choice/index.html",
+    "status": "PASS",
+    "detail": {
+      "sequence": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "states": [
+        {
+          "q": 5021,
+          "room": 1,
+          "attempts": 6,
+          "correct": 0,
+          "streak": 0,
+          "maxStreak": 0,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "repair",
+            "tag": "budget_line_changes",
+            "objective": "LO3.3",
+            "skill": "budget_line_changes",
+            "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+            "sourceType": "interpretation",
+            "returnRoom": 1,
+            "originQuestionId": 18,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false,
+            "remediationHistory": {
+              "repair": [
+                5021
+              ],
+              "bridge": []
+            }
+          },
+          "mastery": "9a6b4171b6d1fee66792b21a460077bf03d30f6699bb26f8ca54a00d655ddb67",
+          "concept": "f76695cc42913c9451046bcfc9500d05258be2572352091f65f648fc055c6371"
+        },
+        {
+          "q": 600023,
+          "room": 1,
+          "attempts": 7,
+          "correct": 1,
+          "streak": 1,
+          "maxStreak": 1,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "bridge",
+            "tag": "budget_line_changes",
+            "objective": "LO3.3",
+            "skill": "budget_line_changes",
+            "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+            "sourceType": "interpretation",
+            "returnRoom": 1,
+            "originQuestionId": 18,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false,
+            "remediationHistory": {
+              "repair": [
+                5021
+              ],
+              "bridge": [
+                600023
+              ]
+            }
+          },
+          "mastery": "2f28415fde5ceb1d74caf1e12f77f53ff6be13971dda2ac5d8b9682659537a04",
+          "concept": "ac52c8d6e0ce1ab8de4e263924cde85ccd8c61cce3ffb56edc3cbd870f5bcdf5"
+        },
+        {
+          "q": 36,
+          "room": 1,
+          "attempts": 8,
+          "correct": 2,
+          "streak": 2,
+          "maxStreak": 2,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "retest",
+            "tag": "budget_line_changes",
+            "objective": "LO3.3",
+            "skill": "budget_line_changes",
+            "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+            "sourceType": "interpretation",
+            "returnRoom": 1,
+            "originQuestionId": 18,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false,
+            "remediationHistory": {
+              "repair": [
+                5021
+              ],
+              "bridge": [
+                600023
+              ]
+            }
+          },
+          "mastery": "39e3a03b269e470a212df91283e9205611ffb2908c04a791120a6a9f73ba88d8",
+          "concept": "eb633a3dae3857a088d24ea4b452f796fca8ca4fe23d693585bb614a053bedda"
+        },
+        {
+          "q": 310016,
+          "room": 1,
+          "attempts": 9,
+          "correct": 2,
+          "streak": 0,
+          "maxStreak": 2,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": true,
+            "stage": "retest",
+            "tag": "budget_line_changes",
+            "objective": "LO3.3",
+            "skill": "budget_line_changes",
+            "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+            "sourceType": "interpretation",
+            "returnRoom": 1,
+            "originQuestionId": 18,
+            "careless": false,
+            "repeatedObjectiveMiss": true,
+            "slowStruggle": false,
+            "remediationHistory": {
+              "repair": [
+                5021
+              ],
+              "bridge": [
+                600023
+              ]
+            }
+          },
+          "mastery": "8917f75905a568ce046c51ee5056999f118dafca2978026b9b3f39430a94e6b7",
+          "concept": "c0163fdcdd617b2deac30302eaa0542559e33cd8039d6a9778721c8bf9634109"
+        },
+        {
+          "q": 310016,
+          "room": 1,
+          "attempts": 10,
+          "correct": 3,
+          "streak": 1,
+          "maxStreak": 2,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": false,
+            "stage": null,
+            "tag": null,
+            "objective": null,
+            "skill": null,
+            "commonError": null,
+            "sourceType": null,
+            "returnRoom": null,
+            "originQuestionId": null,
+            "careless": false,
+            "remediationHistory": {
+              "repair": [],
+              "bridge": []
+            }
+          },
+          "mastery": "b8b41035c104a13adbb05d35d3d6adc0707776b26af68b121f324ed966aa489c",
+          "concept": "43ab7b57634e2630cbda3fc4519103309760386b3f52d05881afcc18321755df"
+        },
+        {
+          "q": 9,
+          "room": 1,
+          "attempts": 10,
+          "correct": 3,
+          "streak": 1,
+          "maxStreak": 2,
+          "score": 0,
+          "fading": 0,
+          "risk": 1000,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "repair": {
+            "active": false,
+            "stage": null,
+            "tag": null,
+            "objective": null,
+            "skill": null,
+            "commonError": null,
+            "sourceType": null,
+            "returnRoom": null,
+            "originQuestionId": null,
+            "careless": false,
+            "remediationHistory": {
+              "repair": [],
+              "bridge": []
+            }
+          },
+          "mastery": "b8b41035c104a13adbb05d35d3d6adc0707776b26af68b121f324ed966aa489c",
+          "concept": "43ab7b57634e2630cbda3fc4519103309760386b3f52d05881afcc18321755df"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Resume active recovery with original context",
+    "status": "PASS",
+    "detail": {
+      "legacy": false,
+      "origin": 22
+    }
+  },
+  {
+    "name": "Resume active recovery without origin context",
+    "status": "FAIL",
+    "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\ntrue !== false\n\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/accessibility_cleanup/final-feedback-focused.mjs:55:22\n    at async test (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/accessibility_cleanup/final-feedback-focused.mjs:11:74)\n    at async file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/accessibility_cleanup/final-feedback-focused.mjs:49:35"
+  },
+  {
+    "name": "Recovery long-text layout at mobile and 200% text; original modal cleanup",
+    "status": "PASS",
+    "detail": {
+      "origin": 22,
+      "viewport": 390,
+      "textScale": 2
+    }
+  },
+  {
+    "name": "Single motion button: defaults, legacy values, all inputs, persistence: play/economic-realm/market-gate/index.html",
+    "status": "FAIL",
+    "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(await button.evaluate(e=>getComputedStyle(e).outlineStyle!=='none'))\n\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/accessibility_cleanup/final-feedback-focused.mjs:79:269\n    at async test (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/accessibility_cleanup/final-feedback-focused.mjs:11:74)\n    at async file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/accessibility_cleanup/final-feedback-focused.mjs:73:25"
+  },
+  {
+    "name": "Single motion button: defaults, legacy values, all inputs, persistence: play/managerial-intelligence-directorate/cost-directive/index.html",
+    "status": "PASS",
+    "detail": {
+      "legacyValues": [
+        "playing",
+        "paused"
+      ],
+      "inputs": [
+        "mouse",
+        "touch",
+        "Enter",
+        "Space"
+      ]
+    }
+  },
+  {
+    "name": "Single motion button: defaults, legacy values, all inputs, persistence: play/micro-domains/labyrinth-of-choice/index.html",
+    "status": "PASS",
+    "detail": {
+      "legacyValues": [
+        "playing",
+        "paused"
+      ],
+      "inputs": [
+        "mouse",
+        "touch",
+        "Enter",
+        "Space"
+      ]
+    }
+  },
+  {
+    "name": "Motion helper works when storage is unavailable",
+    "status": "PASS",
+    "detail": {
+      "storageThrows": true,
+      "inMemoryChoiceRetained": true
+    }
+  }
+]
