@@ -3093,18 +3093,26 @@ body.boss-reveal-active{overflow:hidden}
 <!-- MQ ACCESSIBILITY style START -->
 <style>
 /* Embedded with the game; no main-site stylesheet dependency. */
-.mq-motion-setting{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font:inherit;color:inherit;margin:8px 0}
-.mq-motion-setting select{font:inherit;max-width:100%;padding:8px;border:1px solid currentColor;border-radius:6px;background:#07111e;color:#eef6ff}
+.mq-motion-setting{display:flex;flex-direction:column;align-items:stretch;gap:6px;font:inherit;color:inherit;grid-column:1/-1;width:100%;margin:8px 0}
+.mq-motion-setting .game-menu-option{width:100%;font:inherit}
+.mq-motion-default{align-self:center;font:inherit;font-size:.85em;color:inherit;background:transparent;border:0;text-decoration:underline;min-height:28px;padding:4px 8px;cursor:pointer}
+.mq-motion-default:disabled{cursor:default;text-decoration:none}
 #mqUtilityMenu[hidden]{display:none}
 :focus-visible{outline:3px solid #8bdcff;outline-offset:4px}
 #question:focus{outline-offset:6px}
-#mqExplanationReview{grid-column:1/-1;line-height:1.5;text-align:left;overflow-wrap:anywhere}
+#mqExplanationReview{grid-column:1/-1;width:100%;overflow-wrap:anywhere}
 #mqExplanationReview[hidden]{display:none}
-#mqExplanationReview summary{cursor:pointer;padding:8px 0;min-height:24px}
-#mqExplanationReview li{margin-block:12px}
-#mqExplanationReview .mq-review-question{font-weight:bold}
-.graph-description{margin:10px auto;max-width:100%;color:#eef6ff;background:#07111e;padding:10px 14px;border-radius:8px;line-height:1.5;text-align:left;overflow-wrap:anywhere}
-.graph-description summary{cursor:pointer;min-height:24px}
+#mqExplanationDialog{display:flex;z-index:10000}
+#mqExplanationDialog[hidden]{display:none}
+#mqExplanationEntries{line-height:1.6;text-align:left;overflow-wrap:anywhere;padding-inline-start:1.5em}
+#mqExplanationEntries li{margin-block:16px}
+.mq-review-question{font-weight:bold}
+#hallwayTransition.mq-feedback-held{z-index:4000;pointer-events:auto;overflow:auto;box-sizing:border-box;padding:24px;align-items:safe center}
+.mq-feedback-held #hallwayText{max-height:calc(100dvh - 48px);overflow:auto;box-sizing:border-box;overflow-wrap:anywhere}
+#mqFeedbackContinue{display:block;margin:24px auto 0;min-height:44px}
+.graph-description{margin:6px auto 0;max-width:100%;box-sizing:border-box;color:inherit;background:rgba(0,0,0,.22);border:1px solid currentColor;padding:0;border-radius:6px;line-height:1.5;text-align:left;overflow-wrap:anywhere;font:inherit}
+.graph-description summary{cursor:pointer;min-height:24px;padding:8px 12px;font-weight:bold;letter-spacing:.025em}
+.graph-description p{padding:0 12px 12px;margin:4px 0 0}
 #graphLightbox{overflow:auto;flex-direction:column;gap:12px}
 #graphLightbox .graph-description{width:min(850px,90vw);box-sizing:border-box;flex-shrink:0}
 #graphLightbox img{object-fit:contain;flex-shrink:0}
@@ -4975,7 +4983,7 @@ function syncRealmAttemptState(){
     localStorage.setItem(REALM_ROOM_KEY, String(room || 1));
 }
 function beginRunSession(){
-    window.MQAccessibility?.resetFeedback();
+    window.MQFeedbackProgression?.cancel();
     runSessionId += 1;
     return runSessionId;
 }
@@ -8295,6 +8303,7 @@ showContinueButtonIfSaved();
 // - progression bugs
 // =============================================
 function startGame(shouldResume = false) {
+    window.MQAccessibility?.resetFeedback();
     const preflight = validateFacultyMode(gameMode);
     if(!preflight.ok){
         showFacultyPreflightFailure(gameMode, preflight.issues);
@@ -8444,6 +8453,7 @@ updateArtifactVaultUI();
 
 
 function resetRunStateForNewMode(){
+    window.MQAccessibility?.resetFeedback();
     finalElapsedTimeMs = null;
     runEnding = false;
     answerSubmissionPending = false;
@@ -13191,6 +13201,7 @@ function checkRapidGuessing(isCorrect, responseTime){
 // Check for artifact names and CHANGE
 
 async function answer(choice) {
+    const resolvingRecovery = remediationState.active;
     const answerSessionId = runSessionId;
 
     if(isTimedModeTerminal()) return;
@@ -13545,6 +13556,7 @@ if(isBossRoom) recordCheckpointAttempt(isCorrect);
     }
 
     const returnRoom = remediationState.returnRoom ?? room;
+    const releasedRecoveryOrigin = remediationState.mqOriginFeedback;
 
     resetRemediationState();
     adaptiveMode = "support";
@@ -13555,7 +13567,7 @@ if(isBossRoom) recordCheckpointAttempt(isCorrect);
     room = returnRoom;
        if(modeAllowsRealmProgress()) localStorage.setItem(ROOM_KEY, String(room));
 
-    scheduleForCurrentRun(loadQuestion, TIMING.normal);
+    window.MQFeedbackProgression.finishRecovery(releasedRecoveryOrigin, msgElement.innerText, () => loadQuestion(), TIMING.normal);
     return;
 }
 
@@ -13600,6 +13612,7 @@ if(isBossRoom) recordCheckpointAttempt(isCorrect);
     // --- NORMAL ROOM PROGRESSION ---
     // This code ONLY runs if choice === currentQuestion.a
     // AND it wasn't a Boss Room (or a Detour).
+   const resolvedGuideLine = msgElement.innerText;
    msgElement.innerHTML = "";
    room++;
    timedHighestRoom = Math.max(timedHighestRoom, Math.min(room, 30));
@@ -13612,10 +13625,9 @@ if(isBossRoom) recordCheckpointAttempt(isCorrect);
    }
 
    if(isBossRoomForMode(room)){
-       loadQuestion();
+       showHallwayTransition(currentQuestion.feedback, {leadText:resolvedGuideLine});
        return;
    }
-
    showHallwayTransition(currentQuestion.feedback);
    return;
     }
@@ -13702,6 +13714,7 @@ if(remediationState.active){
 // --- STAGED REMEDIATION TRIGGER ---
 if (remediationTransitionAllowed(currentQuestion) && shouldTriggerDetour(currentQuestion)) {
     remediationState = planRemediation(currentQuestion, activeResponseTime) || remediationState;
+    window.MQFeedbackProgression.rememberRecoveryOrigin(remediationState, currentQuestion);
     detourActive = true;
     detourReturnRoom = room;
 
@@ -13766,7 +13779,7 @@ if(gameMode === "timed") timedSetbacks++;
 
 showGameModal({
     title: "Wrong Turn",
-    text: `Incorrect! You trip in the darkness and tumble back to Room ${room}.`,
+    text: window.MQFeedbackProgression.wrongTurn(`Incorrect! You trip in the darkness and tumble back to Room ${room}.`, currentQuestion, isBossRoom || resolvingRecovery),
     confirmText: "Continue",
     onConfirm: function(){
         loadQuestion();
@@ -13899,14 +13912,17 @@ function showHallwayTransition(feedback, options = {}){
     document.getElementById("srAnnouncements").innerText = announcement;
     window.MQAccessibility?.recordReleasedFeedback(announcement);
 
-    scheduleForCurrentRun(() => {
+    const advanceFeedback = () => {
         overlay.classList.remove("active");
         scheduleForCurrentRun(() => {
             if(nextAction === "victory") handleVictory();
             else if(nextAction === "practice-results") handlePracticeModeComplete();
             else loadQuestion();
         }, 0);
-    }, presentationDuration);
+    };
+    if(!window.MQFeedbackProgression.holdHallway(advanceFeedback, !options.announcement)){
+        scheduleForCurrentRun(advanceFeedback, presentationDuration);
+    }
 }
 
 // Displays artifact reward popup
@@ -16869,7 +16885,11 @@ document.head.appendChild(phase15LayoutStyle);
   const paused = () => choice === 'system' ? preference.matches : choice === 'paused';
   function apply() {
     document.documentElement.classList.toggle('mq-motion-paused', paused());
-    controls.forEach(control => { control.value = choice; });
+    controls.forEach(({control,reset}) => {
+      control.textContent = `DECORATIVE MOTION: ${paused() ? 'PAUSED' : 'ON'}`;
+      reset.disabled=choice==='system';
+      reset.textContent=choice==='system' ? 'Using device setting' : 'Use device setting';
+    });
     document.querySelectorAll('video[autoplay]').forEach(video => {
       if(paused()) video.pause();
       else video.play().catch(() => {});
@@ -16877,26 +16897,24 @@ document.head.appendChild(phase15LayoutStyle);
   }
   window.MQMotionPreference = {
     createControl(id) {
-      const label = document.createElement('label');
+      const label = document.createElement('div');
       label.className = 'mq-motion-setting';
-      label.htmlFor = id;
-      label.append('Decorative motion ');
-      const control = document.createElement('select');
-      control.id = id;
-      for(const [value, text] of [['system','Use device setting'],['paused','Paused'],['playing','Playing']]) {
-        const option = document.createElement('option');
-        option.value = value; option.textContent = text; control.append(option);
-      }
-      control.value = choice;
-      control.addEventListener('change', () => {
-        choice = control.value;
+      const control = document.createElement('button'),reset=document.createElement('button'),status=document.createElement('span');
+      control.id=id;control.type='button';control.className='game-menu-option';
+      reset.type='button';reset.className='mq-motion-default';
+      status.className='sr-only';status.setAttribute('role','status');
+      function setChoice(value){
+        choice=value;
         try {
           if(choice === 'system') localStorage.removeItem(key);
           else localStorage.setItem(key, choice);
         } catch { /* A standalone file still supports an in-memory preference. */ }
         apply();
-      });
-      controls.add(control); label.append(control);
+        status.textContent=`Decorative motion ${paused()?'paused':'on'}.${choice==='system'?' Using device setting.':''}`;
+      }
+      control.addEventListener('click',()=>setChoice(paused()?'playing':'paused'));
+      reset.addEventListener('click',()=>{setChoice('system');control.focus();});
+      controls.add({control,reset});label.append(control,reset,status);apply();
       return label;
     }
   };
@@ -16910,15 +16928,87 @@ document.head.appendChild(phase15LayoutStyle);
   read(); apply();
 })();
 
+/* Presentation callbacks only. Answer verification, scoring and selection remain in each engine. */
+(() => {
+  'use strict';
+  let pending = null;
+  const manual = () => ['standard','unlimited','quiz','trialGraph','legendary','score','fadingFortune','riskReward'].includes(gameMode);
+  const plain = value => {
+    const template=document.createElement('template');template.innerHTML=String(value || '');
+    return template.content.textContent.trim();
+  };
+  const snapshot = question => ({id:question?.id ?? '',q:plain(question?.q),feedback:plain(question?.feedback)});
+  function cancel() {
+    pending?.button.remove();pending=null;
+    const hallway=document.getElementById('hallwayTransition');
+    hallway?.removeAttribute('role');hallway?.removeAttribute('aria-modal');
+    hallway?.removeAttribute('aria-label');hallway?.classList.remove('mq-feedback-held','active');
+  }
+  function holdHallway(advance, instructional = true) {
+    if(!manual() || !instructional)return false;
+    const hallway=document.getElementById('hallwayTransition'),text=document.getElementById('hallwayText');
+    // Cancel only a stale control, without dismissing this newly painted scene.
+    pending?.button.remove();
+    const button=document.createElement('button');button.type='button';button.id='mqFeedbackContinue';
+    button.className='continue-btn';button.textContent='Continue';
+    const token={button,session:runSessionId};pending=token;
+    hallway.classList.add('mq-feedback-held');hallway.setAttribute('role','dialog');
+    hallway.setAttribute('aria-hidden','false');
+    hallway.setAttribute('aria-modal','true');hallway.setAttribute('aria-label','Question feedback');
+    text.tabIndex=-1;text.append(button);
+    // Dialog focus delivers this readable content; avoid a competing live announcement.
+    const live=document.getElementById('srAnnouncements');if(live)live.textContent='';
+    button.addEventListener('click',()=>{
+      if(pending!==token || token.session!==runSessionId || button.disabled)return;
+      button.disabled=true;pending=null;button.remove();
+      hallway.classList.remove('mq-feedback-held');hallway.removeAttribute('role');
+      hallway.removeAttribute('aria-modal');hallway.removeAttribute('aria-label');
+      advance();
+      // The callback may open a boss reveal or results. Respect that focus owner.
+      queueMicrotask(()=>{
+        window.MQAccessibility?.sync();
+        const q=document.getElementById('question');
+        if(!document.querySelector('[aria-modal="true"]:not([aria-hidden="true"]):not([hidden])') && q)q.focus({preventScroll:true});
+      });
+    });
+    window.MQAccessibility?.sync();
+    text.focus({preventScroll:true});
+    return true;
+  }
+  window.MQFeedbackProgression={
+    cancel,holdHallway,
+    wrongTurn(narrative,question,withheld=false){
+      const feedback=manual() && !withheld ? plain(question?.feedback) : '';
+      return feedback ? `${narrative}\n\n${feedback}` : narrative;
+    },
+    rememberRecoveryOrigin(state,question){
+      // Optional compatible member of the already-saved remediation state; no bank lookup.
+      if(manual() && state?.active)state.mqOriginFeedback=snapshot(question);
+    },
+    finishRecovery(origin,outcome,advance,delay){
+      if(!manual() || !origin?.feedback){scheduleForCurrentRun(advance,delay);return;}
+      showGameModal({title:'Recovery Complete',text:`${outcome}\n\n${origin.q}\n\n${origin.feedback}`,confirmText:'Continue',onConfirm:advance});
+    }
+  };
+})();
+
 /* Embedded in standalone games by audit_tools/accessibility_cleanup/sync.mjs.
  * Presentation only: never reads answer keys, changes timers, or writes run data. */
 (() => {
   'use strict';
   const byId = id => document.getElementById(id);
   const visible = node => Boolean(node && !node.hidden && node.getClientRects().length && getComputedStyle(node).visibility !== 'hidden');
+  const reviewDialog=document.createElement('section');
+  reviewDialog.id='mqExplanationDialog';reviewDialog.className='game-modal';reviewDialog.hidden=true;
+  reviewDialog.setAttribute('role','dialog');reviewDialog.setAttribute('aria-modal','true');reviewDialog.setAttribute('aria-labelledby','mqExplanationTitle');
+  reviewDialog.innerHTML='<div class="game-modal-card"><h2 id="mqExplanationTitle" tabindex="-1">Review Explanations</h2><ol id="mqExplanationEntries"></ol><button id="mqExplanationBack" class="continue-btn" type="button">Back to Game Menu</button></div>';
+  document.body.append(reviewDialog);
+  const closeReview=()=>{reviewDialog.hidden=true;sync();};
+  byId('mqExplanationBack').onclick=closeReview;
+  const dialogVisible=node=>visible(node) && (node.id!=='hallwayTransition' || node.classList.contains('mq-feedback-held'));
   const controls = node => [...node.querySelectorAll('button,input,select,textarea,a[href],summary,[tabindex]')]
     .filter(el => visible(el) && !el.disabled && el.tabIndex >= 0 && !el.closest('[inert]'));
-  const dialogs = ['graphLightbox','gameModal','quizSetupModal','trialGraphSetupModal','fadingFortuneSetupModal','riskRewardSetupModal','guideIntroScreen','bossRevealScreen'].map(byId).filter(Boolean);
+  const dialogs = ['mqExplanationDialog','hallwayTransition','graphLightbox','gameModal','quizSetupModal','trialGraphSetupModal','fadingFortuneSetupModal','riskRewardSetupModal','guideIntroScreen','bossRevealScreen'].map(byId).filter(Boolean);
   const screens = ['startScreen','modeSelectScreen'].map(byId).filter(Boolean);
   const ownedInert = new Set();
   const openers = new Map();
@@ -16948,7 +17038,7 @@ document.head.appendChild(phase15LayoutStyle);
   function sync() {
     const previouslyFocused=document.activeElement;
     observeFeedback();
-    const next = dialogs.filter(visible).sort((a,b) => (+getComputedStyle(b).zIndex || 0) - (+getComputedStyle(a).zIndex || 0))[0]
+    const next = dialogs.filter(dialogVisible).sort((a,b) => (+getComputedStyle(b).zIndex || 0) - (+getComputedStyle(a).zIndex || 0))[0]
       || screens.find(visible) || null;
     for(const el of ownedInert) el.inert = false;
     ownedInert.clear();
@@ -16969,7 +17059,7 @@ document.head.appendChild(phase15LayoutStyle);
           ? previouslyFocused : lastControl && visible(lastControl) && !next.contains(lastControl) ? lastControl : null;
         openers.set(next,candidate);
       }
-      if(previous && !visible(previous))openers.delete(previous);
+      if(previous && !dialogVisible(previous))openers.delete(previous);
       if(previous && dialogs.includes(previous) && (!next || next.contains(previousOpener)) && focus(previousOpener)) {
         // Return to the triggering control, including a setup dialog over mode selection.
       } else if(next && !next.contains(document.activeElement)) {
@@ -16995,7 +17085,7 @@ document.head.appendChild(phase15LayoutStyle);
       else if(!event.shiftKey && (index<0 || index===items.length-1)) {event.preventDefault();focus(items[0]);}
     }
     if(event.key==='Escape') {
-      const closers={graphLightbox:()=>closeGraphLightbox(),quizSetupModal:()=>closeQuizSetup(),trialGraphSetupModal:()=>closeTrialGraphSetup(),fadingFortuneSetupModal:()=>closeFadingFortuneSetup(),riskRewardSetupModal:()=>closeRiskRewardSetup()};
+      const closers={mqExplanationDialog:closeReview,graphLightbox:()=>closeGraphLightbox(),quizSetupModal:()=>closeQuizSetup(),trialGraphSetupModal:()=>closeTrialGraphSetup(),fadingFortuneSetupModal:()=>closeFadingFortuneSetup(),riskRewardSetupModal:()=>closeRiskRewardSetup()};
       const cancel=byId('gameModalCancel');
       const close=closers[active.id] || (active.id==='gameModal' && visible(cancel) ? ()=>cancel.click() : null);
       if(close) {event.preventDefault();event.stopImmediatePropagation();close();}
@@ -17020,16 +17110,18 @@ document.head.appendChild(phase15LayoutStyle);
       if(!visible(byId('gameModal')) || byId('gameModalTitle')?.textContent!=='Operation Menu')menu.hidden=true;
     }).observe(byId('gameModal'),{attributes:true,attributeFilter:['style'],childList:true,subtree:true});
   }
-  const history=document.createElement('details');history.id='mqExplanationReview';
-  const summary=document.createElement('summary');summary.textContent='Review Explanations';
-  const entries=document.createElement('ol'),empty=document.createElement('p');
-  empty.textContent='No question explanations have been released in this run.';
-  history.append(summary,empty,entries);
+  const history=document.createElement('button');history.id='mqExplanationReview';
+  history.type='button';history.className='game-menu-option';history.textContent='Review Explanations';
+  const entries=byId('mqExplanationEntries');
   menu?.append(window.MQMotionPreference.createControl('mqMotionControl'),history);
+  if(menu?.id==='mqUtilityMenu'){
+    byId('mqMotionControl').classList.add('continue-btn');history.classList.add('continue-btn');
+  }
   const released=new Map();
-  // Independent legacy runtimes predate the capability helper; their Exam mode also withholds feedback.
-  const permitsReleasedHistory=()=>typeof modeAllowsImmediateCorrectnessFeedback==='function'
-    ? modeAllowsImmediateCorrectnessFeedback() : typeof gameMode==='string' && gameMode!=='exam';
+  // Timed Trial alone retains automatic explanation progression. Never archive Exam metadata.
+  const permitsReleasedHistory=()=>['timed','timed-complete'].includes(gameMode);
+  const permitsImmediateAnnouncement=()=>typeof modeAllowsImmediateCorrectnessFeedback==='function'
+    ? modeAllowsImmediateCorrectnessFeedback() : gameMode!=='exam';
   const normalize=text=>String(text||'').replace(/\s+/g,' ').trim();
   function record() {
     if(!permitsReleasedHistory() || typeof currentQuestion==='undefined' || !currentQuestion)return;
@@ -17046,12 +17138,12 @@ document.head.appendChild(phase15LayoutStyle);
     const questionText=normalize(currentQuestion.q || byId('question')?.innerText);
     const id=String(currentQuestion.id ?? '');
     released.set(JSON.stringify([id,questionText,explanation]),{id,questionText,explanation});
-    if(history.open)renderReview();
+    history.hidden=false;
+    if(!reviewDialog.hidden)renderReview();
   }
   function renderReview() {
     entries.replaceChildren();
-    if(!permitsReleasedHistory()){history.open=false;history.hidden=true;return;}
-    empty.hidden=released.size>0;
+    if(!permitsReleasedHistory()){reviewDialog.hidden=true;history.hidden=true;return;}
     for(const {id,questionText,explanation} of released.values()) {
       const li=document.createElement('li'),questionLabel=document.createElement('p'),text=document.createElement('p');
       questionLabel.className='mq-review-question';
@@ -17059,15 +17151,15 @@ document.head.appendChild(phase15LayoutStyle);
       text.textContent=explanation;li.append(questionLabel,text);entries.append(li);
     }
   }
-  history.addEventListener('toggle',()=>{if(history.open)renderReview();});
+  history.addEventListener('click',()=>{if(!permitsReleasedHistory() || !released.size)return;renderReview();reviewDialog.hidden=false;sync();});
   function syncReview() {
-    history.hidden=!permitsReleasedHistory();
-    if(history.hidden || !visible(menu)){history.open=false;entries.replaceChildren();}
+    history.hidden=!permitsReleasedHistory() || !released.size;
+    if(!permitsReleasedHistory()){reviewDialog.hidden=true;entries.replaceChildren();}
     record();
   }
   window.MQAccessibility={
     recordReleasedFeedback:record,
-    resetFeedback(){released.clear();entries.replaceChildren();empty.hidden=false;history.open=false;},
+    resetFeedback(){released.clear();entries.replaceChildren();history.hidden=true;reviewDialog.hidden=true;},
     sync
   };
   const reviewObserver=new MutationObserver(syncReview);
@@ -17079,8 +17171,8 @@ document.head.appendChild(phase15LayoutStyle);
     if(!visible(observedMessage))return;
     const text=observedMessage.innerText.trim();
     // Read only released presentation text. Dialog entry announces its own feedback.
-    if(text && live && permitsReleasedHistory()
-      && !dialogs.some(visible) && !hallway?.classList.contains('active') && !live.innerText.includes(text))live.innerText=text;
+    if(text && live && permitsImmediateAnnouncement()
+      && !dialogs.some(dialogVisible) && !hallway?.classList.contains('active') && !live.innerText.includes(text))live.innerText=text;
   });
   function observeFeedback(){
     const message=byId('message');if(message===observedMessage)return;

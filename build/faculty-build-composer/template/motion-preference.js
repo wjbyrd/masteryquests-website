@@ -14,7 +14,11 @@
   const paused = () => choice === 'system' ? preference.matches : choice === 'paused';
   function apply() {
     document.documentElement.classList.toggle('mq-motion-paused', paused());
-    controls.forEach(control => { control.value = choice; });
+    controls.forEach(({control,reset}) => {
+      control.textContent = `DECORATIVE MOTION: ${paused() ? 'PAUSED' : 'ON'}`;
+      reset.disabled=choice==='system';
+      reset.textContent=choice==='system' ? 'Using device setting' : 'Use device setting';
+    });
     document.querySelectorAll('video[autoplay]').forEach(video => {
       if(paused()) video.pause();
       else video.play().catch(() => {});
@@ -22,26 +26,24 @@
   }
   window.MQMotionPreference = {
     createControl(id) {
-      const label = document.createElement('label');
+      const label = document.createElement('div');
       label.className = 'mq-motion-setting';
-      label.htmlFor = id;
-      label.append('Decorative motion ');
-      const control = document.createElement('select');
-      control.id = id;
-      for(const [value, text] of [['system','Use device setting'],['paused','Paused'],['playing','Playing']]) {
-        const option = document.createElement('option');
-        option.value = value; option.textContent = text; control.append(option);
-      }
-      control.value = choice;
-      control.addEventListener('change', () => {
-        choice = control.value;
+      const control = document.createElement('button'),reset=document.createElement('button'),status=document.createElement('span');
+      control.id=id;control.type='button';control.className='game-menu-option';
+      reset.type='button';reset.className='mq-motion-default';
+      status.className='sr-only';status.setAttribute('role','status');
+      function setChoice(value){
+        choice=value;
         try {
           if(choice === 'system') localStorage.removeItem(key);
           else localStorage.setItem(key, choice);
         } catch { /* A standalone file still supports an in-memory preference. */ }
         apply();
-      });
-      controls.add(control); label.append(control);
+        status.textContent=`Decorative motion ${paused()?'paused':'on'}.${choice==='system'?' Using device setting.':''}`;
+      }
+      control.addEventListener('click',()=>setChoice(paused()?'playing':'paused'));
+      reset.addEventListener('click',()=>{setChoice('system');control.focus();});
+      controls.add({control,reset});label.append(control,reset,status);apply();
       return label;
     }
   };

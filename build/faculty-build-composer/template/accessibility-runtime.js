@@ -4,9 +4,17 @@
   'use strict';
   const byId = id => document.getElementById(id);
   const visible = node => Boolean(node && !node.hidden && node.getClientRects().length && getComputedStyle(node).visibility !== 'hidden');
+  const reviewDialog=document.createElement('section');
+  reviewDialog.id='mqExplanationDialog';reviewDialog.className='game-modal';reviewDialog.hidden=true;
+  reviewDialog.setAttribute('role','dialog');reviewDialog.setAttribute('aria-modal','true');reviewDialog.setAttribute('aria-labelledby','mqExplanationTitle');
+  reviewDialog.innerHTML='<div class="game-modal-card"><h2 id="mqExplanationTitle" tabindex="-1">Review Explanations</h2><ol id="mqExplanationEntries"></ol><button id="mqExplanationBack" class="continue-btn" type="button">Back to Game Menu</button></div>';
+  document.body.append(reviewDialog);
+  const closeReview=()=>{reviewDialog.hidden=true;sync();};
+  byId('mqExplanationBack').onclick=closeReview;
+  const dialogVisible=node=>visible(node) && (node.id!=='hallwayTransition' || node.classList.contains('mq-feedback-held'));
   const controls = node => [...node.querySelectorAll('button,input,select,textarea,a[href],summary,[tabindex]')]
     .filter(el => visible(el) && !el.disabled && el.tabIndex >= 0 && !el.closest('[inert]'));
-  const dialogs = ['graphLightbox','gameModal','quizSetupModal','trialGraphSetupModal','fadingFortuneSetupModal','riskRewardSetupModal','guideIntroScreen','bossRevealScreen'].map(byId).filter(Boolean);
+  const dialogs = ['mqExplanationDialog','hallwayTransition','graphLightbox','gameModal','quizSetupModal','trialGraphSetupModal','fadingFortuneSetupModal','riskRewardSetupModal','guideIntroScreen','bossRevealScreen'].map(byId).filter(Boolean);
   const screens = ['startScreen','modeSelectScreen'].map(byId).filter(Boolean);
   const ownedInert = new Set();
   const openers = new Map();
@@ -36,7 +44,7 @@
   function sync() {
     const previouslyFocused=document.activeElement;
     observeFeedback();
-    const next = dialogs.filter(visible).sort((a,b) => (+getComputedStyle(b).zIndex || 0) - (+getComputedStyle(a).zIndex || 0))[0]
+    const next = dialogs.filter(dialogVisible).sort((a,b) => (+getComputedStyle(b).zIndex || 0) - (+getComputedStyle(a).zIndex || 0))[0]
       || screens.find(visible) || null;
     for(const el of ownedInert) el.inert = false;
     ownedInert.clear();
@@ -57,7 +65,7 @@
           ? previouslyFocused : lastControl && visible(lastControl) && !next.contains(lastControl) ? lastControl : null;
         openers.set(next,candidate);
       }
-      if(previous && !visible(previous))openers.delete(previous);
+      if(previous && !dialogVisible(previous))openers.delete(previous);
       if(previous && dialogs.includes(previous) && (!next || next.contains(previousOpener)) && focus(previousOpener)) {
         // Return to the triggering control, including a setup dialog over mode selection.
       } else if(next && !next.contains(document.activeElement)) {
@@ -83,7 +91,7 @@
       else if(!event.shiftKey && (index<0 || index===items.length-1)) {event.preventDefault();focus(items[0]);}
     }
     if(event.key==='Escape') {
-      const closers={graphLightbox:()=>closeGraphLightbox(),quizSetupModal:()=>closeQuizSetup(),trialGraphSetupModal:()=>closeTrialGraphSetup(),fadingFortuneSetupModal:()=>closeFadingFortuneSetup(),riskRewardSetupModal:()=>closeRiskRewardSetup()};
+      const closers={mqExplanationDialog:closeReview,graphLightbox:()=>closeGraphLightbox(),quizSetupModal:()=>closeQuizSetup(),trialGraphSetupModal:()=>closeTrialGraphSetup(),fadingFortuneSetupModal:()=>closeFadingFortuneSetup(),riskRewardSetupModal:()=>closeRiskRewardSetup()};
       const cancel=byId('gameModalCancel');
       const close=closers[active.id] || (active.id==='gameModal' && visible(cancel) ? ()=>cancel.click() : null);
       if(close) {event.preventDefault();event.stopImmediatePropagation();close();}
@@ -108,16 +116,18 @@
       if(!visible(byId('gameModal')) || byId('gameModalTitle')?.textContent!=='Operation Menu')menu.hidden=true;
     }).observe(byId('gameModal'),{attributes:true,attributeFilter:['style'],childList:true,subtree:true});
   }
-  const history=document.createElement('details');history.id='mqExplanationReview';
-  const summary=document.createElement('summary');summary.textContent='Review Explanations';
-  const entries=document.createElement('ol'),empty=document.createElement('p');
-  empty.textContent='No question explanations have been released in this run.';
-  history.append(summary,empty,entries);
+  const history=document.createElement('button');history.id='mqExplanationReview';
+  history.type='button';history.className='game-menu-option';history.textContent='Review Explanations';
+  const entries=byId('mqExplanationEntries');
   menu?.append(window.MQMotionPreference.createControl('mqMotionControl'),history);
+  if(menu?.id==='mqUtilityMenu'){
+    byId('mqMotionControl').classList.add('continue-btn');history.classList.add('continue-btn');
+  }
   const released=new Map();
-  // Independent legacy runtimes predate the capability helper; their Exam mode also withholds feedback.
-  const permitsReleasedHistory=()=>typeof modeAllowsImmediateCorrectnessFeedback==='function'
-    ? modeAllowsImmediateCorrectnessFeedback() : typeof gameMode==='string' && gameMode!=='exam';
+  // Timed Trial alone retains automatic explanation progression. Never archive Exam metadata.
+  const permitsReleasedHistory=()=>['timed','timed-complete'].includes(gameMode);
+  const permitsImmediateAnnouncement=()=>typeof modeAllowsImmediateCorrectnessFeedback==='function'
+    ? modeAllowsImmediateCorrectnessFeedback() : gameMode!=='exam';
   const normalize=text=>String(text||'').replace(/\s+/g,' ').trim();
   function record() {
     if(!permitsReleasedHistory() || typeof currentQuestion==='undefined' || !currentQuestion)return;
@@ -134,12 +144,12 @@
     const questionText=normalize(currentQuestion.q || byId('question')?.innerText);
     const id=String(currentQuestion.id ?? '');
     released.set(JSON.stringify([id,questionText,explanation]),{id,questionText,explanation});
-    if(history.open)renderReview();
+    history.hidden=false;
+    if(!reviewDialog.hidden)renderReview();
   }
   function renderReview() {
     entries.replaceChildren();
-    if(!permitsReleasedHistory()){history.open=false;history.hidden=true;return;}
-    empty.hidden=released.size>0;
+    if(!permitsReleasedHistory()){reviewDialog.hidden=true;history.hidden=true;return;}
     for(const {id,questionText,explanation} of released.values()) {
       const li=document.createElement('li'),questionLabel=document.createElement('p'),text=document.createElement('p');
       questionLabel.className='mq-review-question';
@@ -147,15 +157,15 @@
       text.textContent=explanation;li.append(questionLabel,text);entries.append(li);
     }
   }
-  history.addEventListener('toggle',()=>{if(history.open)renderReview();});
+  history.addEventListener('click',()=>{if(!permitsReleasedHistory() || !released.size)return;renderReview();reviewDialog.hidden=false;sync();});
   function syncReview() {
-    history.hidden=!permitsReleasedHistory();
-    if(history.hidden || !visible(menu)){history.open=false;entries.replaceChildren();}
+    history.hidden=!permitsReleasedHistory() || !released.size;
+    if(!permitsReleasedHistory()){reviewDialog.hidden=true;entries.replaceChildren();}
     record();
   }
   window.MQAccessibility={
     recordReleasedFeedback:record,
-    resetFeedback(){released.clear();entries.replaceChildren();empty.hidden=false;history.open=false;},
+    resetFeedback(){released.clear();entries.replaceChildren();history.hidden=true;reviewDialog.hidden=true;},
     sync
   };
   const reviewObserver=new MutationObserver(syncReview);
@@ -167,8 +177,8 @@
     if(!visible(observedMessage))return;
     const text=observedMessage.innerText.trim();
     // Read only released presentation text. Dialog entry announces its own feedback.
-    if(text && live && permitsReleasedHistory()
-      && !dialogs.some(visible) && !hallway?.classList.contains('active') && !live.innerText.includes(text))live.innerText=text;
+    if(text && live && permitsImmediateAnnouncement()
+      && !dialogs.some(dialogVisible) && !hallway?.classList.contains('active') && !live.innerText.includes(text))live.innerText=text;
   });
   function observeFeedback(){
     const message=byId('message');if(message===observedMessage)return;

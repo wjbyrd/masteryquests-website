@@ -1,7 +1,10 @@
 import fs from 'node:fs';
 const files=['economic-realm','macro-command-system','micro-domains','managerial-intelligence-directorate','managerial-directorate-classroom','managerial-directorate-telemetry-poc'].map(g=>`play/${g}/index.html`);
-const css=`.mq-motion-setting{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font:inherit;color:inherit;margin:8px 0}
-.mq-motion-setting select{font:inherit;max-width:100%;padding:8px;border:1px solid currentColor;border-radius:6px;background:#07111e;color:#eef6ff}
+const css=`.mq-motion-setting{display:flex;flex-direction:column;align-items:stretch;gap:6px;font:inherit;color:inherit;width:100%;grid-column:1/-1;margin:8px 0}
+.mq-motion-setting .game-menu-option{width:100%;font:inherit;color:inherit;background:rgba(0,0,0,.25);border:1px solid currentColor;border-radius:8px;padding:12px;cursor:pointer}
+.mq-motion-default{align-self:center;font:inherit;font-size:.85em;color:inherit;background:transparent;border:0;text-decoration:underline;min-height:28px;padding:4px 8px;cursor:pointer}
+.mq-motion-default:disabled{cursor:default;text-decoration:none}
+.mq-motion-setting .sr-only{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 :focus-visible{outline:3px solid #8bdcff;outline-offset:4px}
 [role=dialog]{overflow:auto;box-sizing:border-box;max-height:100dvh}
 html.mq-motion-paused *,html.mq-motion-paused *::before,html.mq-motion-paused *::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}`;

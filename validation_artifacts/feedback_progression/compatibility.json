@@ -1,0 +1,154 @@
+[
+  {
+    "name": "Continue supports pointer, touch, Enter and Space: play/economic-realm/market-gate/index.html",
+    "status": "PASS",
+    "detail": {
+      "inputs": [
+        "mouse",
+        "touch",
+        "Enter",
+        "Space"
+      ]
+    }
+  },
+  {
+    "name": "Continue supports pointer, touch, Enter and Space: play/managerial-intelligence-directorate/cost-directive/index.html",
+    "status": "PASS",
+    "detail": {
+      "inputs": [
+        "mouse",
+        "touch",
+        "Enter",
+        "Space"
+      ]
+    }
+  },
+  {
+    "name": "Continue supports pointer, touch, Enter and Space: play/micro-domains/labyrinth-of-choice/index.html",
+    "status": "PASS",
+    "detail": {
+      "inputs": [
+        "mouse",
+        "touch",
+        "Enter",
+        "Space"
+      ]
+    }
+  },
+  {
+    "name": "Pre-change Standard save resumes unchanged: play/economic-realm/market-gate/index.html",
+    "status": "PASS",
+    "detail": {
+      "saved": {
+        "attempts": 1,
+        "room": 2,
+        "q": 19,
+        "correct": 1,
+        "streak": 1
+      },
+      "resumed": {
+        "attempts": 1,
+        "room": 2,
+        "q": 19,
+        "correct": 1,
+        "streak": 1
+      },
+      "csvColumns": 117
+    }
+  },
+  {
+    "name": "Pre-change Standard save resumes unchanged: play/managerial-intelligence-directorate/cost-directive/index.html",
+    "status": "PASS",
+    "detail": {
+      "saved": {
+        "attempts": 1,
+        "room": 2,
+        "q": 18,
+        "correct": 1,
+        "streak": 1
+      },
+      "resumed": {
+        "attempts": 1,
+        "room": 2,
+        "q": 18,
+        "correct": 1,
+        "streak": 1
+      },
+      "csvColumns": 88
+    }
+  },
+  {
+    "name": "Pre-change Standard save resumes unchanged: play/micro-domains/labyrinth-of-choice/index.html",
+    "status": "PASS",
+    "detail": {
+      "saved": {
+        "attempts": 1,
+        "room": 2,
+        "q": 24,
+        "correct": 1,
+        "streak": 1
+      },
+      "resumed": {
+        "attempts": 1,
+        "room": 2,
+        "q": 24,
+        "correct": 1,
+        "streak": 1
+      },
+      "csvColumns": 70
+    }
+  },
+  {
+    "name": "Boss miss retains withholding boundary: play/economic-realm/market-gate/index.html",
+    "status": "PASS",
+    "detail": {
+      "question": 2014,
+      "boss": true
+    }
+  },
+  {
+    "name": "Boss miss retains withholding boundary: play/managerial-intelligence-directorate/cost-directive/index.html",
+    "status": "PASS",
+    "detail": {
+      "question": 12000,
+      "boss": true
+    }
+  },
+  {
+    "name": "Boss miss retains withholding boundary: play/micro-domains/labyrinth-of-choice/index.html",
+    "status": "PASS",
+    "detail": {
+      "question": 1007,
+      "boss": true
+    }
+  },
+  {
+    "name": "Recovery origin survives resumed remediation; older saves without context remain accepted",
+    "status": "PASS",
+    "detail": {
+      "originId": 22,
+      "legacyAccepted": true
+    }
+  },
+  {
+    "name": "Question feedback content issues (no content edited)",
+    "status": "PASS",
+    "detail": [
+      {
+        "file": "play/economic-realm/market-gate/index.html",
+        "missing": 0,
+        "terseCandidates": 0
+      },
+      {
+        "file": "play/managerial-intelligence-directorate/cost-directive/index.html",
+        "missing": 0,
+        "terseCandidates": 0
+      },
+      {
+        "file": "play/micro-domains/labyrinth-of-choice/index.html",
+        "missing": 0,
+        "terseCandidates": 4
+      }
+    ]
+  }
+]

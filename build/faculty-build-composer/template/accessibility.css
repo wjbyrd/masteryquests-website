@@ -1,16 +1,24 @@
 /* Embedded with the game; no main-site stylesheet dependency. */
-.mq-motion-setting{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font:inherit;color:inherit;margin:8px 0}
-.mq-motion-setting select{font:inherit;max-width:100%;padding:8px;border:1px solid currentColor;border-radius:6px;background:#07111e;color:#eef6ff}
+.mq-motion-setting{display:flex;flex-direction:column;align-items:stretch;gap:6px;font:inherit;color:inherit;grid-column:1/-1;width:100%;margin:8px 0}
+.mq-motion-setting .game-menu-option{width:100%;font:inherit}
+.mq-motion-default{align-self:center;font:inherit;font-size:.85em;color:inherit;background:transparent;border:0;text-decoration:underline;min-height:28px;padding:4px 8px;cursor:pointer}
+.mq-motion-default:disabled{cursor:default;text-decoration:none}
 #mqUtilityMenu[hidden]{display:none}
 :focus-visible{outline:3px solid #8bdcff;outline-offset:4px}
 #question:focus{outline-offset:6px}
-#mqExplanationReview{grid-column:1/-1;line-height:1.5;text-align:left;overflow-wrap:anywhere}
+#mqExplanationReview{grid-column:1/-1;width:100%;overflow-wrap:anywhere}
 #mqExplanationReview[hidden]{display:none}
-#mqExplanationReview summary{cursor:pointer;padding:8px 0;min-height:24px}
-#mqExplanationReview li{margin-block:12px}
-#mqExplanationReview .mq-review-question{font-weight:bold}
-.graph-description{margin:10px auto;max-width:100%;color:#eef6ff;background:#07111e;padding:10px 14px;border-radius:8px;line-height:1.5;text-align:left;overflow-wrap:anywhere}
-.graph-description summary{cursor:pointer;min-height:24px}
+#mqExplanationDialog{display:flex;z-index:10000}
+#mqExplanationDialog[hidden]{display:none}
+#mqExplanationEntries{line-height:1.6;text-align:left;overflow-wrap:anywhere;padding-inline-start:1.5em}
+#mqExplanationEntries li{margin-block:16px}
+.mq-review-question{font-weight:bold}
+#hallwayTransition.mq-feedback-held{z-index:4000;pointer-events:auto;overflow:auto;box-sizing:border-box;padding:24px;align-items:safe center}
+.mq-feedback-held #hallwayText{max-height:calc(100dvh - 48px);overflow:auto;box-sizing:border-box;overflow-wrap:anywhere}
+#mqFeedbackContinue{display:block;margin:24px auto 0;min-height:44px}
+.graph-description{margin:6px auto 0;max-width:100%;box-sizing:border-box;color:inherit;background:rgba(0,0,0,.22);border:1px solid currentColor;padding:0;border-radius:6px;line-height:1.5;text-align:left;overflow-wrap:anywhere;font:inherit}
+.graph-description summary{cursor:pointer;min-height:24px;padding:8px 12px;font-weight:bold;letter-spacing:.025em}
+.graph-description p{padding:0 12px 12px;margin:4px 0 0}
 #graphLightbox{overflow:auto;flex-direction:column;gap:12px}
 #graphLightbox .graph-description{width:min(850px,90vw);box-sizing:border-box;flex-shrink:0}
 #graphLightbox img{object-fit:contain;flex-shrink:0}

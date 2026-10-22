@@ -1,0 +1,109 @@
+[
+  {
+    "name": "Pre-change Standard save resumes unchanged: play/economic-realm/market-gate/index.html",
+    "status": "PASS",
+    "detail": {
+      "saved": {
+        "attempts": 1,
+        "room": 2,
+        "q": 19,
+        "correct": 1,
+        "streak": 1
+      },
+      "resumed": {
+        "attempts": 1,
+        "room": 2,
+        "q": 19,
+        "correct": 1,
+        "streak": 1
+      },
+      "csvColumns": 117
+    }
+  },
+  {
+    "name": "Pre-change Standard save resumes unchanged: play/managerial-intelligence-directorate/cost-directive/index.html",
+    "status": "PASS",
+    "detail": {
+      "saved": {
+        "attempts": 1,
+        "room": 2,
+        "q": 18,
+        "correct": 1,
+        "streak": 1
+      },
+      "resumed": {
+        "attempts": 1,
+        "room": 2,
+        "q": 18,
+        "correct": 1,
+        "streak": 1
+      },
+      "csvColumns": 88
+    }
+  },
+  {
+    "name": "Pre-change Standard save resumes unchanged: play/micro-domains/labyrinth-of-choice/index.html",
+    "status": "PASS",
+    "detail": {
+      "saved": {
+        "attempts": 1,
+        "room": 2,
+        "q": 24,
+        "correct": 1,
+        "streak": 1
+      },
+      "resumed": {
+        "attempts": 1,
+        "room": 2,
+        "q": 24,
+        "correct": 1,
+        "streak": 1
+      },
+      "csvColumns": 70
+    }
+  },
+  {
+    "name": "Boss miss retains withholding boundary: play/economic-realm/market-gate/index.html",
+    "status": "FAIL",
+    "error": "locator.click: Timeout 7000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#mqFeedbackContinue')\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"button\" class=\"continue-btn\" id=\"mqFeedbackContinue\">Continue</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <body class=\"blank-builder-template mq-themed game-active\">…</body> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <body class=\"blank-builder-template mq-themed game-active\">…</body> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    13 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <body class=\"blank-builder-template mq-themed game-active\">…</body> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at next (C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\audit_tools\\accessibility_cleanup\\progression-compatibility.mjs:9:117)\n    at async file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/accessibility_cleanup/progression-compatibility.mjs:12:195\n    at async test (C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\audit_tools\\accessibility_cleanup\\progression-compatibility.mjs:5:74)\n    at async file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/accessibility_cleanup/progression-compatibility.mjs:12:25"
+  },
+  {
+    "name": "Boss miss retains withholding boundary: play/managerial-intelligence-directorate/cost-directive/index.html",
+    "status": "FAIL",
+    "error": "locator.click: Timeout 7000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#mqFeedbackContinue')\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"button\" class=\"continue-btn\" id=\"mqFeedbackContinue\">Continue</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <body class=\"cost-directive command-cost game-active\">…</body> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <body class=\"cost-directive command-cost game-active\">…</body> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    13 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <body class=\"cost-directive command-cost game-active\">…</body> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at next (C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\audit_tools\\accessibility_cleanup\\progression-compatibility.mjs:9:117)\n    at async file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/accessibility_cleanup/progression-compatibility.mjs:12:195\n    at async test (C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\audit_tools\\accessibility_cleanup\\progression-compatibility.mjs:5:74)\n    at async file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/accessibility_cleanup/progression-compatibility.mjs:12:25"
+  },
+  {
+    "name": "Boss miss retains withholding boundary: play/micro-domains/labyrinth-of-choice/index.html",
+    "status": "FAIL",
+    "error": "locator.click: Timeout 7000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#mqFeedbackContinue')\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"button\" class=\"continue-btn\" id=\"mqFeedbackContinue\">Continue</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <body class=\"labyrinth-of-choice command-agency game-active\">…</body> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <body class=\"labyrinth-of-choice command-agency game-active\">…</body> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    13 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <body class=\"labyrinth-of-choice command-agency game-active\">…</body> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at next (C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\audit_tools\\accessibility_cleanup\\progression-compatibility.mjs:9:117)\n    at async file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/accessibility_cleanup/progression-compatibility.mjs:12:195\n    at async test (C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\audit_tools\\accessibility_cleanup\\progression-compatibility.mjs:5:74)\n    at async file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/accessibility_cleanup/progression-compatibility.mjs:12:25"
+  },
+  {
+    "name": "Recovery origin survives resumed remediation; older saves without context remain accepted",
+    "status": "PASS",
+    "detail": {
+      "originId": 22,
+      "legacyAccepted": true
+    }
+  },
+  {
+    "name": "Question feedback content issues (no content edited)",
+    "status": "PASS",
+    "detail": [
+      {
+        "file": "play/economic-realm/market-gate/index.html",
+        "missing": 0,
+        "terseCandidates": 0
+      },
+      {
+        "file": "play/managerial-intelligence-directorate/cost-directive/index.html",
+        "missing": 0,
+        "terseCandidates": 0
+      },
+      {
+        "file": "play/micro-domains/labyrinth-of-choice/index.html",
+        "missing": 0,
+        "terseCandidates": 4
+      }
+    ]
+  }
+]

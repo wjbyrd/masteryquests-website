@@ -1,10 +1,11 @@
 import fs from 'node:fs';import assert from 'node:assert/strict';import vm from 'node:vm';
 import {fn} from '../economic_realm_engine/source.mjs';
+import {applyFeedbackProgression} from './progression-source.mjs';
 const template=fs.readFileSync('build/faculty-build-composer/template/mastery-quests-faculty-template-composer-ready.html','utf8');
 const files=['play/managerial-intelligence-directorate','play/managerial-directorate-classroom','play/managerial-directorate-telemetry-poc'].flatMap(base=>['cost-directive','market-signal','strategy-desk','agency-protocol'].map(g=>`${base}/${g}/index.html`));
 files.push('play/micro-domains/labyrinth-of-choice/index.html','beta-testing/composer-telemetry-live-test/index.html','downloads/resources/mastery-quests-faculty-starter.html','downloads/resources/mastery-quests-faculty-template.html');
 for(const file of files){
- let html=fs.readFileSync(file,'utf8');
+ let html=applyFeedbackProgression(fs.readFileSync(file,'utf8').replace(/\r\n/g,'\n'));
  html=html.replace(/(<(?:div|section)[^>]*class="[^"]*mastery-section[^"]*"[^>]*>\s*)<h3([^>]*)>([\s\S]*?)<\/h3>/g,'$1<h2$2>$3</h2>');
  html=html.replace(/(<div id="artifactVault"[^>]*>\s*)<h3>([^<]*)<\/h3>/g,'$1<h2>$2</h2>');
  html=html.replaceAll('${resolveQuestionImage(question.image)}','${typeof resolveQuestionImage === \'function\' ? resolveQuestionImage(question.image) : question.image}');
