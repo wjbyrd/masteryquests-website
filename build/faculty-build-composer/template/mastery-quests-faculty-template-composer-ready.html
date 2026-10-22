@@ -6456,7 +6456,7 @@ function getCheckpointOutcome(state = checkpointAttemptState){
     const correct = Math.max(0, Number(state?.correct || 0));
     const total = Math.max(0, Number(state?.total || 0));
     if(total >= 3 && correct === total) return "secured";
-    if(total >= 3 && correct >= 2) return "cleared";
+    if(gameMode !== "standard" && total >= 3 && correct >= 2) return "cleared";
     return "not-secured";
 }
 
@@ -6505,6 +6505,11 @@ function advanceCheckpointAttempt(){
 }
 
 function completeCheckpointEncounter(){
+    // Standard Campaign is a gate: every boss answer must be correct.
+    if(gameMode === "standard" && getCheckpointOutcome() !== "secured"){
+        failStandardCheckpoint();
+        return;
+    }
     const completedOutcome = finalizeCheckpointOutcome();
     recordBossDefeatForAchievements();
     sendGameData({
@@ -6540,6 +6545,31 @@ function completeCheckpointEncounter(){
     showKnowledgeRoom(room);
     bossHealth = 3;
     bossPool = [];
+}
+
+function failStandardCheckpoint(){
+    finalizeCheckpointOutcome();
+    window.MQFeedbackProgression?.cancel();
+    document.getElementById("streakDisplay").innerText = "";
+    bossRevealShownKeys.delete(getBossEncounterKey());
+    activeBossEncounter = null;
+    bossHealth = 3;
+    bossPool = [];
+    // Retain the original boss setback and the last successfully cleared gate.
+    room = Math.max(bossCheckpoint, room - 3);
+    if(modeAllowsRealmProgress()) localStorage.setItem(ROOM_KEY, String(room));
+    const session = runSessionId;
+    let continued = false;
+    showGameModal({
+        title: "Wrong Turn",
+        text: window.MQFeedbackProgression.wrongTurn(`Incorrect! You trip in the darkness and tumble back to Room ${room}.`, currentQuestion, true),
+        confirmText: "Continue",
+        onConfirm: function(){
+            if(continued || session !== runSessionId) return;
+            continued = true;
+            loadQuestion();
+        }
+    });
 }
 
 // =============================================
@@ -11745,6 +11775,10 @@ if(isBossRoom) recordCheckpointAttempt(isCorrect);
 
      msgElement.innerHTML = `<span class='fade-out-text'>${showImmediateFeedback ? bossLine : "Response recorded."}</span>`;
 
+     if(gameMode === "standard"){
+        failStandardCheckpoint();
+        return;
+     }
      const checkpointComplete = advanceCheckpointAttempt();
      if(checkpointComplete){
         completeCheckpointEncounter();
@@ -12131,7 +12165,12 @@ function showKnowledgeRoom(bossRoom) {
     scheduleForCurrentRun(() => {
         const continueButton = document.getElementById("continueBtn");
         if(!continueButton) return;
+        const session = runSessionId;
+        let continued = false;
         continueButton.onclick = () => {
+            if(continued || session !== runSessionId || room !== bossRoom) return;
+            continued = true;
+            continueButton.disabled = true;
             const slotId = bossRoom === 10 ? "hallway1" : bossRoom === 20 ? "hallway2" : "hallway3";
             if(bossRoom !== 30) room++;
             showHallwayTransition(
@@ -14592,6 +14631,13 @@ const phase15BaseLoadQuestion = loadQuestion;
 loadQuestion = function(...args){
     if(phase15ResumeLifecyclePending){
         phase15ResumeLifecyclePending = false;
+        // An in-progress save from the assessment-only engine may contain a boss miss.
+        if(gameMode === "standard" && isBossRoomForMode(room) && Number(checkpointAttemptState?.incorrect || 0) > 0){
+            runPhase = "resolved";
+            failStandardCheckpoint();
+            persistStandardRunAfterStateChange("resolved");
+            return;
+        }
         if(runPhase === "boss-summary" && phase15BossSummaryRoom){
             showKnowledgeRoom(phase15BossSummaryRoom);
             return;

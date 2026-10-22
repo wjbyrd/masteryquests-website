@@ -7741,7 +7741,12 @@ aContainer.innerHTML = `
 //
 // Breaking this = progression failure
 // =============================================    
-document.getElementById("continueBtn").onclick = () => {
+const session = runSessionId;
+    let continued = false;
+    document.getElementById("continueBtn").onclick = () => {
+        if(continued || session !== runSessionId || room !== bossRoom) return;
+        continued = true;
+        document.getElementById("continueBtn").disabled = true;
     // --- RESET BOSS STATE (THIS IS THE FIX) ---
     document.getElementById("gameShell").classList.remove("boss-mode");
     document.getElementById("gameBox").classList.remove("boss-mode");
@@ -12048,7 +12053,7 @@ if(remediationState.active){
 }
 
 // --- STAGED REMEDIATION TRIGGER ---
-if (gameMode !== "legendary" && gameMode !== "quiz" && !remediationState.active && gameMode !== "trialGraph" && gameMode !== "fadingFortune" && gameMode !== "riskReward" && currentQuestion.tag && shouldTriggerDetour(currentQuestion)) {
+if (!(gameMode === "standard" && isBossRoom) && gameMode !== "legendary" && gameMode !== "quiz" && !remediationState.active && gameMode !== "trialGraph" && gameMode !== "fadingFortune" && gameMode !== "riskReward" && currentQuestion.tag && shouldTriggerDetour(currentQuestion)) {
     remediationState = planRemediation(currentQuestion, responseTime) || remediationState;
     window.MQFeedbackProgression.rememberRecoveryOrigin(remediationState, currentQuestion);
     detourActive = true;

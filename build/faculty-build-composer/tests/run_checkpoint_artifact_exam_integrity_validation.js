@@ -32,7 +32,7 @@ function run(){
   scripts.forEach((match,index) => new vm.Script(match[1], {filename:`checkpoint-artifact-exam-${index + 1}.js`}));
   check(scripts.length > 0, 'Template scripts did not parse');
 
-  const outcomeContext = {checkpointAttemptState:null, Math, Number};
+  const outcomeContext = {checkpointAttemptState:null, gameMode:'exam', Math, Number};
   vm.createContext(outcomeContext);
   vm.runInContext(functionSource('getCheckpointOutcome'), outcomeContext);
   check(outcomeContext.getCheckpointOutcome({total:3,correct:3}) === 'secured', '3/3 is not secured');
@@ -40,6 +40,8 @@ function run(){
   check(outcomeContext.getCheckpointOutcome({total:3,correct:1}) === 'not-secured', '1/3 is not mastery-not-secured');
   check(outcomeContext.getCheckpointOutcome({total:3,correct:0}) === 'not-secured', '0/3 is not mastery-not-secured');
   check(outcomeContext.getCheckpointOutcome({total:2,correct:2}) !== 'secured', 'Incomplete checkpoint can be secured');
+  outcomeContext.gameMode = 'standard';
+  for(let correct=0;correct<=3;correct++) check(outcomeContext.getCheckpointOutcome({total:3,correct}) === (correct===3?'secured':'not-secured'), `Standard checkpoint incorrectly classified ${correct}/3`);
 
   [
     [/checkpointAttemptState = \{key,room:Number\(room\),objective,label,total:0,correct:0,incorrect:0\}/,'Checkpoint outcome state is not initialized from the adaptive encounter'],

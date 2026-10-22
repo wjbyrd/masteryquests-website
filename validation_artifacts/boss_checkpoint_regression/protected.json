@@ -1,0 +1,4085 @@
+{
+  "baseline": "a4b247fdf054b4fff975755a518456c2b5641fc6",
+  "bankChanges": [],
+  "results": [
+    {
+      "file": "beta-testing/composer-telemetry-live-test/index.html",
+      "checks": [
+        {
+          "name": "questionBanks",
+          "unchanged": true,
+          "before": "5aa1a3d0f16f1d9c00f017ab69a9c208e1f00ebaf1c4733dead51ad4085f20d7",
+          "after": "5aa1a3d0f16f1d9c00f017ab69a9c208e1f00ebaf1c4733dead51ad4085f20d7"
+        },
+        {
+          "name": "microSkillRepairPools",
+          "unchanged": true,
+          "before": "0f0464570fa4adece640e9fea50c532646a1132aa07f82d4f64f0fb35d068783",
+          "after": "0f0464570fa4adece640e9fea50c532646a1132aa07f82d4f64f0fb35d068783"
+        },
+        {
+          "name": "microSkillBridgePools",
+          "unchanged": true,
+          "before": "1ed6e385ffa82664c0b334b39f2f779d21de9715feabfebb571c13863546abb3",
+          "after": "1ed6e385ffa82664c0b334b39f2f779d21de9715feabfebb571c13863546abb3"
+        },
+        {
+          "name": "skillRepairSeedPools",
+          "unchanged": true,
+          "before": "f17b81efe19a2482ce886d9dd0d6c75a4470a122605fed335286d1027f7ce4b9",
+          "after": "f17b81efe19a2482ce886d9dd0d6c75a4470a122605fed335286d1027f7ce4b9"
+        },
+        {
+          "name": "repairQuestions",
+          "unchanged": true,
+          "before": "f32a236b1a8ce318ff63952080601cf3adce56ac58d0f4e19b7aede34dbdc190",
+          "after": "f32a236b1a8ce318ff63952080601cf3adce56ac58d0f4e19b7aede34dbdc190"
+        },
+        {
+          "name": "bridgeQuestions",
+          "unchanged": true,
+          "before": "4f1ef63a04c75ddef6ac665b91c723295073d65dc28e75dcde245c59c1a2e363",
+          "after": "4f1ef63a04c75ddef6ac665b91c723295073d65dc28e75dcde245c59c1a2e363"
+        },
+        {
+          "name": "FACULTY_COMPOSITION_CONFIG",
+          "unchanged": true,
+          "before": "5fb6421c8bbf028d7b541605933110c396a40adf3be782b23b682143af34d134",
+          "after": "5fb6421c8bbf028d7b541605933110c396a40adf3be782b23b682143af34d134"
+        },
+        {
+          "name": "TIMING",
+          "unchanged": true,
+          "before": "922ceb79abb5ee37284fe43f9922118202bf123437ab36ae3aff2a6bc988f1ee",
+          "after": "922ceb79abb5ee37284fe43f9922118202bf123437ab36ae3aff2a6bc988f1ee"
+        },
+        {
+          "name": "RAPID_GUESS_CONFIG",
+          "unchanged": true,
+          "before": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290",
+          "after": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290"
+        },
+        {
+          "name": "FACULTY_MODE_REQUIREMENTS",
+          "unchanged": true,
+          "before": "e94724a89da94ea4ba882111c6c451b56b43c3bde70388a7f9a88d6287f2bc74",
+          "after": "e94724a89da94ea4ba882111c6c451b56b43c3bde70388a7f9a88d6287f2bc74"
+        },
+        {
+          "name": "TELEMETRY_COLUMNS",
+          "unchanged": true,
+          "before": "f4c376c65f3607e471ca274662415e8590dce7568c2a15a132bbba9f3910cdfd",
+          "after": "f4c376c65f3607e471ca274662415e8590dce7568c2a15a132bbba9f3910cdfd"
+        },
+        {
+          "name": "questionAssetMetadata",
+          "unchanged": true,
+          "before": "dd7d44c282ed8da5ef2d80d5812f30286606089bb8e9eac7c34bcec733c0de9d",
+          "after": "dd7d44c282ed8da5ef2d80d5812f30286606089bb8e9eac7c34bcec733c0de9d"
+        },
+        {
+          "name": "answer",
+          "unchanged": true,
+          "before": "30c3e3d07c711d0231090cacf731c564afa497ebd974b478597f8cd930b189c9",
+          "after": "30c3e3d07c711d0231090cacf731c564afa497ebd974b478597f8cd930b189c9"
+        },
+        {
+          "name": "loadQuestion",
+          "unchanged": true,
+          "before": "643ba9a835969548b7d7d1d0c47c053ef794b7e6fa8633be4f0c7dbb048dc210",
+          "after": "643ba9a835969548b7d7d1d0c47c053ef794b7e6fa8633be4f0c7dbb048dc210"
+        },
+        {
+          "name": "shuffleOptions",
+          "unchanged": true,
+          "before": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d",
+          "after": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d"
+        },
+        {
+          "name": "buildBossQuestionSet",
+          "unchanged": true,
+          "before": "3a797204121d8ff9895205f1dfb79691b242de86f74ae9ffa84c0cfb8d664361",
+          "after": "3a797204121d8ff9895205f1dfb79691b242de86f74ae9ffa84c0cfb8d664361"
+        },
+        {
+          "name": "getWeakestBossObjective",
+          "unchanged": true,
+          "before": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc",
+          "after": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc"
+        },
+        {
+          "name": "isQuestionAnswerCorrect",
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        {
+          "name": "recordCheckpointAttempt",
+          "unchanged": true,
+          "before": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3",
+          "after": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3"
+        },
+        {
+          "name": "finalizeCheckpointOutcome",
+          "unchanged": true,
+          "before": "23c9279d5ce3399f1ae2b054d139cb85243784b445ac1fc41acb69a331970b5d",
+          "after": "23c9279d5ce3399f1ae2b054d139cb85243784b445ac1fc41acb69a331970b5d"
+        },
+        {
+          "name": "advanceCheckpointAttempt",
+          "unchanged": true,
+          "before": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3",
+          "after": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3"
+        },
+        {
+          "name": "recordAdaptiveAttempt",
+          "unchanged": true,
+          "before": "c8ad9692bef730fca9bd40550c63455c97887f0f3a492c515103df366e16aa9a",
+          "after": "c8ad9692bef730fca9bd40550c63455c97887f0f3a492c515103df366e16aa9a"
+        },
+        {
+          "name": "getModeCapabilities",
+          "unchanged": true,
+          "before": "ff1237ae2df9808bbc15476e213b55b95850a6e26321186db28e9715184fb10b",
+          "after": "ff1237ae2df9808bbc15476e213b55b95850a6e26321186db28e9715184fb10b"
+        },
+        {
+          "name": "getDifficultyForMode",
+          "unchanged": true,
+          "before": "afa80302d5435ef847f1c6186e2523c57bd8efb375b11bc83835b1c13e849761",
+          "after": "afa80302d5435ef847f1c6186e2523c57bd8efb375b11bc83835b1c13e849761"
+        },
+        {
+          "name": "modeAllowsImmediateCorrectnessFeedback",
+          "unchanged": true,
+          "before": "5d8090da6887f2c9ee2d8e6577581be39f0d807551dcf4a49fe547de57b395f2",
+          "after": "5d8090da6887f2c9ee2d8e6577581be39f0d807551dcf4a49fe547de57b395f2"
+        },
+        {
+          "name": "applyScoreAttackForAnswer",
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        },
+        {
+          "name": "settleRiskRewardAnswer",
+          "unchanged": true,
+          "before": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa",
+          "after": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa"
+        },
+        {
+          "name": "saveGameState",
+          "unchanged": true,
+          "before": "ea7189f0b9184e25b09222350e05c0b5612c1c2dc7de3bf2bb13d124acbe8480",
+          "after": "ea7189f0b9184e25b09222350e05c0b5612c1c2dc7de3bf2bb13d124acbe8480"
+        },
+        {
+          "name": "loadSavedGame",
+          "unchanged": true,
+          "before": "3fe661e4380e976cac0a31e8a44f215be75bb58e69127079e272df8091b0ac19",
+          "after": "3fe661e4380e976cac0a31e8a44f215be75bb58e69127079e272df8091b0ac19"
+        },
+        {
+          "name": "getExamRoomState",
+          "unchanged": true,
+          "before": "efd4a2827ea5c896f8fefb7de5aa880092b615c77859fec3e6dddebe9362cb3a",
+          "after": "efd4a2827ea5c896f8fefb7de5aa880092b615c77859fec3e6dddebe9362cb3a"
+        },
+        {
+          "name": "sendGameData",
+          "unchanged": true,
+          "before": "70a517954a31a63c981265352ef14c7f2fe27801e058a7ed6f84e6df9aec2cfc",
+          "after": "70a517954a31a63c981265352ef14c7f2fe27801e058a7ed6f84e6df9aec2cfc"
+        },
+        {
+          "name": "earnArtifact",
+          "unchanged": true,
+          "before": "711d076babe59e577e39d0395f5893a10b6e37eb7ac4900639c7f8b5b6e0a92f",
+          "after": "711d076babe59e577e39d0395f5893a10b6e37eb7ac4900639c7f8b5b6e0a92f"
+        }
+      ]
+    },
+    {
+      "file": "build/faculty-build-composer/template/mastery-quests-faculty-template-composer-ready.html",
+      "checks": [
+        {
+          "name": "questionBanks",
+          "unchanged": true,
+          "before": "70885e310d8aee38e48c027961306252e51b55769e7ec64589916b94497dddef",
+          "after": "70885e310d8aee38e48c027961306252e51b55769e7ec64589916b94497dddef"
+        },
+        {
+          "name": "microSkillRepairPools",
+          "unchanged": true,
+          "before": "6838c0f9a2c8497915a9e9f1692ee983b4c278800b5b887404a7687271c11185",
+          "after": "6838c0f9a2c8497915a9e9f1692ee983b4c278800b5b887404a7687271c11185"
+        },
+        {
+          "name": "microSkillBridgePools",
+          "unchanged": true,
+          "before": "e86756fb4c0e2957e97196328286c8bb185bcea64d60f58e4cbfc8f48ad0dc2c",
+          "after": "e86756fb4c0e2957e97196328286c8bb185bcea64d60f58e4cbfc8f48ad0dc2c"
+        },
+        {
+          "name": "skillRepairSeedPools",
+          "unchanged": true,
+          "before": "c18f16195c6ff0d8e9d2638b39e10ff5e57877f07cfaa38f1fabf11b7c17856d",
+          "after": "c18f16195c6ff0d8e9d2638b39e10ff5e57877f07cfaa38f1fabf11b7c17856d"
+        },
+        {
+          "name": "repairQuestions",
+          "unchanged": true,
+          "before": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5",
+          "after": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5"
+        },
+        {
+          "name": "bridgeQuestions",
+          "unchanged": true,
+          "before": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416",
+          "after": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416"
+        },
+        {
+          "name": "FACULTY_COMPOSITION_CONFIG",
+          "unchanged": true,
+          "before": "90b4ebb92355f40a21383dd0dda40d972c2ed2828b7ba7c7b3d20085342ae7f2",
+          "after": "90b4ebb92355f40a21383dd0dda40d972c2ed2828b7ba7c7b3d20085342ae7f2"
+        },
+        {
+          "name": "TIMING",
+          "unchanged": true,
+          "before": "922ceb79abb5ee37284fe43f9922118202bf123437ab36ae3aff2a6bc988f1ee",
+          "after": "922ceb79abb5ee37284fe43f9922118202bf123437ab36ae3aff2a6bc988f1ee"
+        },
+        {
+          "name": "RAPID_GUESS_CONFIG",
+          "unchanged": true,
+          "before": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290",
+          "after": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290"
+        },
+        {
+          "name": "FACULTY_MODE_REQUIREMENTS",
+          "unchanged": true,
+          "before": "3e0243b9407fa8903d309c126f05c13ca34c9fcf961b4d9ac71a51276c32d783",
+          "after": "3e0243b9407fa8903d309c126f05c13ca34c9fcf961b4d9ac71a51276c32d783"
+        },
+        {
+          "name": "TELEMETRY_COLUMNS",
+          "unchanged": true,
+          "before": "2ad01bfb3d296a7a269474d132111c25c02721bcd86da5f3418c1a1723536e09",
+          "after": "2ad01bfb3d296a7a269474d132111c25c02721bcd86da5f3418c1a1723536e09"
+        },
+        {
+          "name": "questionAssetMetadata",
+          "unchanged": true,
+          "before": "d8e8b8c666f36cfb7b34841621ccd6873050ad6bc6879027aff0670fd2cbd110",
+          "after": "d8e8b8c666f36cfb7b34841621ccd6873050ad6bc6879027aff0670fd2cbd110"
+        },
+        {
+          "name": "answer",
+          "unchanged": true,
+          "before": "30c3e3d07c711d0231090cacf731c564afa497ebd974b478597f8cd930b189c9",
+          "after": "30c3e3d07c711d0231090cacf731c564afa497ebd974b478597f8cd930b189c9"
+        },
+        {
+          "name": "loadQuestion",
+          "unchanged": true,
+          "before": "643ba9a835969548b7d7d1d0c47c053ef794b7e6fa8633be4f0c7dbb048dc210",
+          "after": "643ba9a835969548b7d7d1d0c47c053ef794b7e6fa8633be4f0c7dbb048dc210"
+        },
+        {
+          "name": "shuffleOptions",
+          "unchanged": true,
+          "before": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d",
+          "after": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d"
+        },
+        {
+          "name": "buildBossQuestionSet",
+          "unchanged": true,
+          "before": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d",
+          "after": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d"
+        },
+        {
+          "name": "getWeakestBossObjective",
+          "unchanged": true,
+          "before": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc",
+          "after": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc"
+        },
+        {
+          "name": "isQuestionAnswerCorrect",
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        {
+          "name": "recordCheckpointAttempt",
+          "unchanged": true,
+          "before": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3",
+          "after": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3"
+        },
+        {
+          "name": "finalizeCheckpointOutcome",
+          "unchanged": true,
+          "before": "23c9279d5ce3399f1ae2b054d139cb85243784b445ac1fc41acb69a331970b5d",
+          "after": "23c9279d5ce3399f1ae2b054d139cb85243784b445ac1fc41acb69a331970b5d"
+        },
+        {
+          "name": "advanceCheckpointAttempt",
+          "unchanged": true,
+          "before": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3",
+          "after": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3"
+        },
+        {
+          "name": "recordAdaptiveAttempt",
+          "unchanged": true,
+          "before": "c8ad9692bef730fca9bd40550c63455c97887f0f3a492c515103df366e16aa9a",
+          "after": "c8ad9692bef730fca9bd40550c63455c97887f0f3a492c515103df366e16aa9a"
+        },
+        {
+          "name": "getModeCapabilities",
+          "unchanged": true,
+          "before": "ff1237ae2df9808bbc15476e213b55b95850a6e26321186db28e9715184fb10b",
+          "after": "ff1237ae2df9808bbc15476e213b55b95850a6e26321186db28e9715184fb10b"
+        },
+        {
+          "name": "getDifficultyForMode",
+          "unchanged": true,
+          "before": "afa80302d5435ef847f1c6186e2523c57bd8efb375b11bc83835b1c13e849761",
+          "after": "afa80302d5435ef847f1c6186e2523c57bd8efb375b11bc83835b1c13e849761"
+        },
+        {
+          "name": "modeAllowsImmediateCorrectnessFeedback",
+          "unchanged": true,
+          "before": "5d8090da6887f2c9ee2d8e6577581be39f0d807551dcf4a49fe547de57b395f2",
+          "after": "5d8090da6887f2c9ee2d8e6577581be39f0d807551dcf4a49fe547de57b395f2"
+        },
+        {
+          "name": "applyScoreAttackForAnswer",
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        },
+        {
+          "name": "settleRiskRewardAnswer",
+          "unchanged": true,
+          "before": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa",
+          "after": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa"
+        },
+        {
+          "name": "saveGameState",
+          "unchanged": true,
+          "before": "ea7189f0b9184e25b09222350e05c0b5612c1c2dc7de3bf2bb13d124acbe8480",
+          "after": "ea7189f0b9184e25b09222350e05c0b5612c1c2dc7de3bf2bb13d124acbe8480"
+        },
+        {
+          "name": "loadSavedGame",
+          "unchanged": true,
+          "before": "3fe661e4380e976cac0a31e8a44f215be75bb58e69127079e272df8091b0ac19",
+          "after": "3fe661e4380e976cac0a31e8a44f215be75bb58e69127079e272df8091b0ac19"
+        },
+        {
+          "name": "getExamRoomState",
+          "unchanged": true,
+          "before": "efd4a2827ea5c896f8fefb7de5aa880092b615c77859fec3e6dddebe9362cb3a",
+          "after": "efd4a2827ea5c896f8fefb7de5aa880092b615c77859fec3e6dddebe9362cb3a"
+        },
+        {
+          "name": "sendGameData",
+          "unchanged": true,
+          "before": "fa21cb68c0f40d2e0e5e161868ed0790d587abb3f9624b30b7de3b7b4a5cf358",
+          "after": "fa21cb68c0f40d2e0e5e161868ed0790d587abb3f9624b30b7de3b7b4a5cf358"
+        },
+        {
+          "name": "earnArtifact",
+          "unchanged": true,
+          "before": "711d076babe59e577e39d0395f5893a10b6e37eb7ac4900639c7f8b5b6e0a92f",
+          "after": "711d076babe59e577e39d0395f5893a10b6e37eb7ac4900639c7f8b5b6e0a92f"
+        }
+      ]
+    },
+    {
+      "file": "downloads/resources/mastery-quests-faculty-starter.html",
+      "checks": [
+        {
+          "name": "questionBanks",
+          "unchanged": true,
+          "before": "7a77a940cccce337bf19cc495659e93131a1d2c8311e3e312eeb959960c4fbe3",
+          "after": "7a77a940cccce337bf19cc495659e93131a1d2c8311e3e312eeb959960c4fbe3"
+        },
+        {
+          "name": "microSkillRepairPools",
+          "unchanged": true,
+          "before": "da3287355807eca2c76e9b845d6c7fb7841d5d6afeb189d24458f34a5f8566a9",
+          "after": "da3287355807eca2c76e9b845d6c7fb7841d5d6afeb189d24458f34a5f8566a9"
+        },
+        {
+          "name": "microSkillBridgePools",
+          "unchanged": true,
+          "before": "4d2d9738b7ce24bfeb43890c945190c72b0dedcfd08f7ffcb53ceaa665be537c",
+          "after": "4d2d9738b7ce24bfeb43890c945190c72b0dedcfd08f7ffcb53ceaa665be537c"
+        },
+        {
+          "name": "skillRepairSeedPools",
+          "unchanged": true,
+          "before": "2249be572f56e4529c475e6c3c209006e7d56f9b2d527ea6dc98bf4562b336e6",
+          "after": "2249be572f56e4529c475e6c3c209006e7d56f9b2d527ea6dc98bf4562b336e6"
+        },
+        {
+          "name": "repairQuestions",
+          "unchanged": true,
+          "before": "823bfda0f9b413a41e3ca42c193ea81d8ceb14496bbe9778f416b45c6fce2949",
+          "after": "823bfda0f9b413a41e3ca42c193ea81d8ceb14496bbe9778f416b45c6fce2949"
+        },
+        {
+          "name": "bridgeQuestions",
+          "unchanged": true,
+          "before": "69e5891fe8ca0dc9abc09727f173946c150667400f052188064c347090ea3e56",
+          "after": "69e5891fe8ca0dc9abc09727f173946c150667400f052188064c347090ea3e56"
+        },
+        {
+          "name": "FACULTY_COMPOSITION_CONFIG",
+          "unchanged": true,
+          "before": "25b6b63be11fdf11cf8a9af1a5a57b1fda98780aca11ecea84b60b04371884f4",
+          "after": "25b6b63be11fdf11cf8a9af1a5a57b1fda98780aca11ecea84b60b04371884f4"
+        },
+        {
+          "name": "TIMING",
+          "unchanged": true,
+          "before": "922ceb79abb5ee37284fe43f9922118202bf123437ab36ae3aff2a6bc988f1ee",
+          "after": "922ceb79abb5ee37284fe43f9922118202bf123437ab36ae3aff2a6bc988f1ee"
+        },
+        {
+          "name": "RAPID_GUESS_CONFIG",
+          "unchanged": true,
+          "before": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290",
+          "after": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290"
+        },
+        {
+          "name": "FACULTY_MODE_REQUIREMENTS",
+          "unchanged": true,
+          "before": "e94724a89da94ea4ba882111c6c451b56b43c3bde70388a7f9a88d6287f2bc74",
+          "after": "e94724a89da94ea4ba882111c6c451b56b43c3bde70388a7f9a88d6287f2bc74"
+        },
+        {
+          "name": "TELEMETRY_COLUMNS",
+          "unchanged": true,
+          "before": "2ad01bfb3d296a7a269474d132111c25c02721bcd86da5f3418c1a1723536e09",
+          "after": "2ad01bfb3d296a7a269474d132111c25c02721bcd86da5f3418c1a1723536e09"
+        },
+        {
+          "name": "questionAssetMetadata",
+          "unchanged": true,
+          "before": "381aedc2659fe3d17d47c9baaf05e5b9987888a660857a5d61cde393d9db2e82",
+          "after": "381aedc2659fe3d17d47c9baaf05e5b9987888a660857a5d61cde393d9db2e82"
+        },
+        {
+          "name": "MANUAL_QUESTION_PACKAGE",
+          "unchanged": true,
+          "before": "87f4a0357ad2a911ccc7a8425a10805009226186c720c308826667ae559a41db",
+          "after": "87f4a0357ad2a911ccc7a8425a10805009226186c720c308826667ae559a41db"
+        },
+        {
+          "name": "answer",
+          "unchanged": true,
+          "before": "050a5f6e7095db29501efe5f5be5812627dc09865b1eef313d539c8c3ee457a1",
+          "after": "050a5f6e7095db29501efe5f5be5812627dc09865b1eef313d539c8c3ee457a1"
+        },
+        {
+          "name": "loadQuestion",
+          "unchanged": true,
+          "before": "8b68491bdd032911ded19721d38c51f15f6b4c60827d6456eb0d402e27b5080f",
+          "after": "8b68491bdd032911ded19721d38c51f15f6b4c60827d6456eb0d402e27b5080f"
+        },
+        {
+          "name": "shuffleOptions",
+          "unchanged": true,
+          "before": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d",
+          "after": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d"
+        },
+        {
+          "name": "buildBossQuestionSet",
+          "unchanged": true,
+          "before": "3a797204121d8ff9895205f1dfb79691b242de86f74ae9ffa84c0cfb8d664361",
+          "after": "3a797204121d8ff9895205f1dfb79691b242de86f74ae9ffa84c0cfb8d664361"
+        },
+        {
+          "name": "getWeakestBossObjective",
+          "unchanged": true,
+          "before": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc",
+          "after": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc"
+        },
+        {
+          "name": "isQuestionAnswerCorrect",
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        {
+          "name": "recordCheckpointAttempt",
+          "unchanged": true,
+          "before": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3",
+          "after": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3"
+        },
+        {
+          "name": "finalizeCheckpointOutcome",
+          "unchanged": true,
+          "before": "23c9279d5ce3399f1ae2b054d139cb85243784b445ac1fc41acb69a331970b5d",
+          "after": "23c9279d5ce3399f1ae2b054d139cb85243784b445ac1fc41acb69a331970b5d"
+        },
+        {
+          "name": "advanceCheckpointAttempt",
+          "unchanged": true,
+          "before": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3",
+          "after": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3"
+        },
+        {
+          "name": "recordAdaptiveAttempt",
+          "unchanged": true,
+          "before": "c8ad9692bef730fca9bd40550c63455c97887f0f3a492c515103df366e16aa9a",
+          "after": "c8ad9692bef730fca9bd40550c63455c97887f0f3a492c515103df366e16aa9a"
+        },
+        {
+          "name": "getModeCapabilities",
+          "unchanged": true,
+          "before": "ff1237ae2df9808bbc15476e213b55b95850a6e26321186db28e9715184fb10b",
+          "after": "ff1237ae2df9808bbc15476e213b55b95850a6e26321186db28e9715184fb10b"
+        },
+        {
+          "name": "getDifficultyForMode",
+          "unchanged": true,
+          "before": "afa80302d5435ef847f1c6186e2523c57bd8efb375b11bc83835b1c13e849761",
+          "after": "afa80302d5435ef847f1c6186e2523c57bd8efb375b11bc83835b1c13e849761"
+        },
+        {
+          "name": "modeAllowsImmediateCorrectnessFeedback",
+          "unchanged": true,
+          "before": "5d8090da6887f2c9ee2d8e6577581be39f0d807551dcf4a49fe547de57b395f2",
+          "after": "5d8090da6887f2c9ee2d8e6577581be39f0d807551dcf4a49fe547de57b395f2"
+        },
+        {
+          "name": "applyScoreAttackForAnswer",
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        },
+        {
+          "name": "settleRiskRewardAnswer",
+          "unchanged": true,
+          "before": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa",
+          "after": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa"
+        },
+        {
+          "name": "saveGameState",
+          "unchanged": true,
+          "before": "ea7189f0b9184e25b09222350e05c0b5612c1c2dc7de3bf2bb13d124acbe8480",
+          "after": "ea7189f0b9184e25b09222350e05c0b5612c1c2dc7de3bf2bb13d124acbe8480"
+        },
+        {
+          "name": "loadSavedGame",
+          "unchanged": true,
+          "before": "3fe661e4380e976cac0a31e8a44f215be75bb58e69127079e272df8091b0ac19",
+          "after": "3fe661e4380e976cac0a31e8a44f215be75bb58e69127079e272df8091b0ac19"
+        },
+        {
+          "name": "getExamRoomState",
+          "unchanged": true,
+          "before": "efd4a2827ea5c896f8fefb7de5aa880092b615c77859fec3e6dddebe9362cb3a",
+          "after": "efd4a2827ea5c896f8fefb7de5aa880092b615c77859fec3e6dddebe9362cb3a"
+        },
+        {
+          "name": "sendGameData",
+          "unchanged": true,
+          "before": "814aa04ae21b746e0c98c714f0d7b66fb68bdf1c5d52b91c5af840449117cff0",
+          "after": "814aa04ae21b746e0c98c714f0d7b66fb68bdf1c5d52b91c5af840449117cff0"
+        },
+        {
+          "name": "earnArtifact",
+          "unchanged": true,
+          "before": "711d076babe59e577e39d0395f5893a10b6e37eb7ac4900639c7f8b5b6e0a92f",
+          "after": "711d076babe59e577e39d0395f5893a10b6e37eb7ac4900639c7f8b5b6e0a92f"
+        }
+      ]
+    },
+    {
+      "file": "downloads/resources/mastery-quests-faculty-template.html",
+      "checks": [
+        {
+          "name": "questionBanks",
+          "unchanged": true,
+          "before": "7a77a940cccce337bf19cc495659e93131a1d2c8311e3e312eeb959960c4fbe3",
+          "after": "7a77a940cccce337bf19cc495659e93131a1d2c8311e3e312eeb959960c4fbe3"
+        },
+        {
+          "name": "microSkillRepairPools",
+          "unchanged": true,
+          "before": "da3287355807eca2c76e9b845d6c7fb7841d5d6afeb189d24458f34a5f8566a9",
+          "after": "da3287355807eca2c76e9b845d6c7fb7841d5d6afeb189d24458f34a5f8566a9"
+        },
+        {
+          "name": "microSkillBridgePools",
+          "unchanged": true,
+          "before": "4d2d9738b7ce24bfeb43890c945190c72b0dedcfd08f7ffcb53ceaa665be537c",
+          "after": "4d2d9738b7ce24bfeb43890c945190c72b0dedcfd08f7ffcb53ceaa665be537c"
+        },
+        {
+          "name": "skillRepairSeedPools",
+          "unchanged": true,
+          "before": "2249be572f56e4529c475e6c3c209006e7d56f9b2d527ea6dc98bf4562b336e6",
+          "after": "2249be572f56e4529c475e6c3c209006e7d56f9b2d527ea6dc98bf4562b336e6"
+        },
+        {
+          "name": "repairQuestions",
+          "unchanged": true,
+          "before": "823bfda0f9b413a41e3ca42c193ea81d8ceb14496bbe9778f416b45c6fce2949",
+          "after": "823bfda0f9b413a41e3ca42c193ea81d8ceb14496bbe9778f416b45c6fce2949"
+        },
+        {
+          "name": "bridgeQuestions",
+          "unchanged": true,
+          "before": "69e5891fe8ca0dc9abc09727f173946c150667400f052188064c347090ea3e56",
+          "after": "69e5891fe8ca0dc9abc09727f173946c150667400f052188064c347090ea3e56"
+        },
+        {
+          "name": "FACULTY_COMPOSITION_CONFIG",
+          "unchanged": true,
+          "before": "8b04aa3c9c13456f68793a42a741f5d3a581eb5e5ad7fbe2af9e397b187d6c8f",
+          "after": "8b04aa3c9c13456f68793a42a741f5d3a581eb5e5ad7fbe2af9e397b187d6c8f"
+        },
+        {
+          "name": "TIMING",
+          "unchanged": true,
+          "before": "922ceb79abb5ee37284fe43f9922118202bf123437ab36ae3aff2a6bc988f1ee",
+          "after": "922ceb79abb5ee37284fe43f9922118202bf123437ab36ae3aff2a6bc988f1ee"
+        },
+        {
+          "name": "RAPID_GUESS_CONFIG",
+          "unchanged": true,
+          "before": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290",
+          "after": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290"
+        },
+        {
+          "name": "FACULTY_MODE_REQUIREMENTS",
+          "unchanged": true,
+          "before": "e94724a89da94ea4ba882111c6c451b56b43c3bde70388a7f9a88d6287f2bc74",
+          "after": "e94724a89da94ea4ba882111c6c451b56b43c3bde70388a7f9a88d6287f2bc74"
+        },
+        {
+          "name": "TELEMETRY_COLUMNS",
+          "unchanged": true,
+          "before": "2ad01bfb3d296a7a269474d132111c25c02721bcd86da5f3418c1a1723536e09",
+          "after": "2ad01bfb3d296a7a269474d132111c25c02721bcd86da5f3418c1a1723536e09"
+        },
+        {
+          "name": "questionAssetMetadata",
+          "unchanged": true,
+          "before": "381aedc2659fe3d17d47c9baaf05e5b9987888a660857a5d61cde393d9db2e82",
+          "after": "381aedc2659fe3d17d47c9baaf05e5b9987888a660857a5d61cde393d9db2e82"
+        },
+        {
+          "name": "MANUAL_QUESTION_PACKAGE",
+          "unchanged": true,
+          "before": "83664c228cc913dc61673dc110e9fae427a3c555fdddd989a1c38e81409a8bb4",
+          "after": "83664c228cc913dc61673dc110e9fae427a3c555fdddd989a1c38e81409a8bb4"
+        },
+        {
+          "name": "answer",
+          "unchanged": true,
+          "before": "050a5f6e7095db29501efe5f5be5812627dc09865b1eef313d539c8c3ee457a1",
+          "after": "050a5f6e7095db29501efe5f5be5812627dc09865b1eef313d539c8c3ee457a1"
+        },
+        {
+          "name": "loadQuestion",
+          "unchanged": true,
+          "before": "8b68491bdd032911ded19721d38c51f15f6b4c60827d6456eb0d402e27b5080f",
+          "after": "8b68491bdd032911ded19721d38c51f15f6b4c60827d6456eb0d402e27b5080f"
+        },
+        {
+          "name": "shuffleOptions",
+          "unchanged": true,
+          "before": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d",
+          "after": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d"
+        },
+        {
+          "name": "buildBossQuestionSet",
+          "unchanged": true,
+          "before": "3a797204121d8ff9895205f1dfb79691b242de86f74ae9ffa84c0cfb8d664361",
+          "after": "3a797204121d8ff9895205f1dfb79691b242de86f74ae9ffa84c0cfb8d664361"
+        },
+        {
+          "name": "getWeakestBossObjective",
+          "unchanged": true,
+          "before": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc",
+          "after": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc"
+        },
+        {
+          "name": "isQuestionAnswerCorrect",
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        {
+          "name": "recordCheckpointAttempt",
+          "unchanged": true,
+          "before": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3",
+          "after": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3"
+        },
+        {
+          "name": "finalizeCheckpointOutcome",
+          "unchanged": true,
+          "before": "23c9279d5ce3399f1ae2b054d139cb85243784b445ac1fc41acb69a331970b5d",
+          "after": "23c9279d5ce3399f1ae2b054d139cb85243784b445ac1fc41acb69a331970b5d"
+        },
+        {
+          "name": "advanceCheckpointAttempt",
+          "unchanged": true,
+          "before": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3",
+          "after": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3"
+        },
+        {
+          "name": "recordAdaptiveAttempt",
+          "unchanged": true,
+          "before": "c8ad9692bef730fca9bd40550c63455c97887f0f3a492c515103df366e16aa9a",
+          "after": "c8ad9692bef730fca9bd40550c63455c97887f0f3a492c515103df366e16aa9a"
+        },
+        {
+          "name": "getModeCapabilities",
+          "unchanged": true,
+          "before": "ff1237ae2df9808bbc15476e213b55b95850a6e26321186db28e9715184fb10b",
+          "after": "ff1237ae2df9808bbc15476e213b55b95850a6e26321186db28e9715184fb10b"
+        },
+        {
+          "name": "getDifficultyForMode",
+          "unchanged": true,
+          "before": "afa80302d5435ef847f1c6186e2523c57bd8efb375b11bc83835b1c13e849761",
+          "after": "afa80302d5435ef847f1c6186e2523c57bd8efb375b11bc83835b1c13e849761"
+        },
+        {
+          "name": "modeAllowsImmediateCorrectnessFeedback",
+          "unchanged": true,
+          "before": "5d8090da6887f2c9ee2d8e6577581be39f0d807551dcf4a49fe547de57b395f2",
+          "after": "5d8090da6887f2c9ee2d8e6577581be39f0d807551dcf4a49fe547de57b395f2"
+        },
+        {
+          "name": "applyScoreAttackForAnswer",
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        },
+        {
+          "name": "settleRiskRewardAnswer",
+          "unchanged": true,
+          "before": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa",
+          "after": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa"
+        },
+        {
+          "name": "saveGameState",
+          "unchanged": true,
+          "before": "ea7189f0b9184e25b09222350e05c0b5612c1c2dc7de3bf2bb13d124acbe8480",
+          "after": "ea7189f0b9184e25b09222350e05c0b5612c1c2dc7de3bf2bb13d124acbe8480"
+        },
+        {
+          "name": "loadSavedGame",
+          "unchanged": true,
+          "before": "3fe661e4380e976cac0a31e8a44f215be75bb58e69127079e272df8091b0ac19",
+          "after": "3fe661e4380e976cac0a31e8a44f215be75bb58e69127079e272df8091b0ac19"
+        },
+        {
+          "name": "getExamRoomState",
+          "unchanged": true,
+          "before": "efd4a2827ea5c896f8fefb7de5aa880092b615c77859fec3e6dddebe9362cb3a",
+          "after": "efd4a2827ea5c896f8fefb7de5aa880092b615c77859fec3e6dddebe9362cb3a"
+        },
+        {
+          "name": "sendGameData",
+          "unchanged": true,
+          "before": "814aa04ae21b746e0c98c714f0d7b66fb68bdf1c5d52b91c5af840449117cff0",
+          "after": "814aa04ae21b746e0c98c714f0d7b66fb68bdf1c5d52b91c5af840449117cff0"
+        },
+        {
+          "name": "earnArtifact",
+          "unchanged": true,
+          "before": "711d076babe59e577e39d0395f5893a10b6e37eb7ac4900639c7f8b5b6e0a92f",
+          "after": "711d076babe59e577e39d0395f5893a10b6e37eb7ac4900639c7f8b5b6e0a92f"
+        }
+      ]
+    },
+    {
+      "file": "play/economic-realm/equilibrium-crisis/index.html",
+      "checks": [
+        {
+          "name": "repairQuestions",
+          "unchanged": true,
+          "before": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5",
+          "after": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5"
+        },
+        {
+          "name": "bridgeQuestions",
+          "unchanged": true,
+          "before": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416",
+          "after": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416"
+        },
+        {
+          "name": "FACULTY_COMPOSITION_CONFIG",
+          "unchanged": true,
+          "before": "4866900b172fc3871ce2fa4ce0a2940ad34c001c13c0b5d74f779fa7198d457c",
+          "after": "4866900b172fc3871ce2fa4ce0a2940ad34c001c13c0b5d74f779fa7198d457c"
+        },
+        {
+          "name": "TIMING",
+          "unchanged": true,
+          "before": "922ceb79abb5ee37284fe43f9922118202bf123437ab36ae3aff2a6bc988f1ee",
+          "after": "922ceb79abb5ee37284fe43f9922118202bf123437ab36ae3aff2a6bc988f1ee"
+        },
+        {
+          "name": "RAPID_GUESS_CONFIG",
+          "unchanged": true,
+          "before": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290",
+          "after": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290"
+        },
+        {
+          "name": "FACULTY_MODE_REQUIREMENTS",
+          "unchanged": true,
+          "before": "3e0243b9407fa8903d309c126f05c13ca34c9fcf961b4d9ac71a51276c32d783",
+          "after": "3e0243b9407fa8903d309c126f05c13ca34c9fcf961b4d9ac71a51276c32d783"
+        },
+        {
+          "name": "TELEMETRY_COLUMNS",
+          "unchanged": true,
+          "before": "2ad01bfb3d296a7a269474d132111c25c02721bcd86da5f3418c1a1723536e09",
+          "after": "2ad01bfb3d296a7a269474d132111c25c02721bcd86da5f3418c1a1723536e09"
+        },
+        {
+          "name": "questionAssetMetadata",
+          "unchanged": true,
+          "before": "cb46ebfdb3aeed03928654a7de55b7e96c4672a1d429b38e5ddd6374f688090f",
+          "after": "cb46ebfdb3aeed03928654a7de55b7e96c4672a1d429b38e5ddd6374f688090f"
+        },
+        {
+          "name": "answer",
+          "unchanged": true,
+          "before": "3a770f198ba2cc5f9818f4e0c2e87397d57db513921aeb8f68140dbba41ed023",
+          "after": "3a770f198ba2cc5f9818f4e0c2e87397d57db513921aeb8f68140dbba41ed023"
+        },
+        {
+          "name": "loadQuestion",
+          "unchanged": true,
+          "before": "f44ffd08bd9799790dd5a654b02946d0f0fdd00a47d74b66886ab76bb83f3b59",
+          "after": "f44ffd08bd9799790dd5a654b02946d0f0fdd00a47d74b66886ab76bb83f3b59"
+        },
+        {
+          "name": "shuffleOptions",
+          "unchanged": true,
+          "before": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d",
+          "after": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d"
+        },
+        {
+          "name": "buildBossQuestionSet",
+          "unchanged": true,
+          "before": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d",
+          "after": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d"
+        },
+        {
+          "name": "getWeakestBossObjective",
+          "unchanged": true,
+          "before": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc",
+          "after": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc"
+        },
+        {
+          "name": "isQuestionAnswerCorrect",
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        {
+          "name": "recordCheckpointAttempt",
+          "unchanged": true,
+          "before": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3",
+          "after": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3"
+        },
+        {
+          "name": "finalizeCheckpointOutcome",
+          "unchanged": true,
+          "before": "23c9279d5ce3399f1ae2b054d139cb85243784b445ac1fc41acb69a331970b5d",
+          "after": "23c9279d5ce3399f1ae2b054d139cb85243784b445ac1fc41acb69a331970b5d"
+        },
+        {
+          "name": "advanceCheckpointAttempt",
+          "unchanged": true,
+          "before": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3",
+          "after": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3"
+        },
+        {
+          "name": "recordAdaptiveAttempt",
+          "unchanged": true,
+          "before": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d",
+          "after": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d"
+        },
+        {
+          "name": "getModeCapabilities",
+          "unchanged": true,
+          "before": "ff1237ae2df9808bbc15476e213b55b95850a6e26321186db28e9715184fb10b",
+          "after": "ff1237ae2df9808bbc15476e213b55b95850a6e26321186db28e9715184fb10b"
+        },
+        {
+          "name": "getDifficultyForMode",
+          "unchanged": true,
+          "before": "afa80302d5435ef847f1c6186e2523c57bd8efb375b11bc83835b1c13e849761",
+          "after": "afa80302d5435ef847f1c6186e2523c57bd8efb375b11bc83835b1c13e849761"
+        },
+        {
+          "name": "modeAllowsImmediateCorrectnessFeedback",
+          "unchanged": true,
+          "before": "5d8090da6887f2c9ee2d8e6577581be39f0d807551dcf4a49fe547de57b395f2",
+          "after": "5d8090da6887f2c9ee2d8e6577581be39f0d807551dcf4a49fe547de57b395f2"
+        },
+        {
+          "name": "applyScoreAttackForAnswer",
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        },
+        {
+          "name": "settleRiskRewardAnswer",
+          "unchanged": true,
+          "before": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa",
+          "after": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa"
+        },
+        {
+          "name": "saveGameState",
+          "unchanged": true,
+          "before": "ea7189f0b9184e25b09222350e05c0b5612c1c2dc7de3bf2bb13d124acbe8480",
+          "after": "ea7189f0b9184e25b09222350e05c0b5612c1c2dc7de3bf2bb13d124acbe8480"
+        },
+        {
+          "name": "loadSavedGame",
+          "unchanged": true,
+          "before": "410289a6c5866dbd4bb8064dc2bdf57bf76db0806c797d60d5ef0b6299977553",
+          "after": "410289a6c5866dbd4bb8064dc2bdf57bf76db0806c797d60d5ef0b6299977553"
+        },
+        {
+          "name": "getExamRoomState",
+          "unchanged": true,
+          "before": "efd4a2827ea5c896f8fefb7de5aa880092b615c77859fec3e6dddebe9362cb3a",
+          "after": "efd4a2827ea5c896f8fefb7de5aa880092b615c77859fec3e6dddebe9362cb3a"
+        },
+        {
+          "name": "sendGameData",
+          "unchanged": true,
+          "before": "fa21cb68c0f40d2e0e5e161868ed0790d587abb3f9624b30b7de3b7b4a5cf358",
+          "after": "fa21cb68c0f40d2e0e5e161868ed0790d587abb3f9624b30b7de3b7b4a5cf358"
+        },
+        {
+          "name": "earnArtifact",
+          "unchanged": true,
+          "before": "711d076babe59e577e39d0395f5893a10b6e37eb7ac4900639c7f8b5b6e0a92f",
+          "after": "711d076babe59e577e39d0395f5893a10b6e37eb7ac4900639c7f8b5b6e0a92f"
+        }
+      ]
+    },
+    {
+      "file": "play/economic-realm/liquidity-grid/index.html",
+      "checks": [
+        {
+          "name": "repairQuestions",
+          "unchanged": true,
+          "before": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5",
+          "after": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5"
+        },
+        {
+          "name": "bridgeQuestions",
+          "unchanged": true,
+          "before": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416",
+          "after": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416"
+        },
+        {
+          "name": "FACULTY_COMPOSITION_CONFIG",
+          "unchanged": true,
+          "before": "298517fcb0fb1b8199e21575de22db770ea2f45f39b08b89da94b5f98b8863b3",
+          "after": "298517fcb0fb1b8199e21575de22db770ea2f45f39b08b89da94b5f98b8863b3"
+        },
+        {
+          "name": "TIMING",
+          "unchanged": true,
+          "before": "922ceb79abb5ee37284fe43f9922118202bf123437ab36ae3aff2a6bc988f1ee",
+          "after": "922ceb79abb5ee37284fe43f9922118202bf123437ab36ae3aff2a6bc988f1ee"
+        },
+        {
+          "name": "RAPID_GUESS_CONFIG",
+          "unchanged": true,
+          "before": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290",
+          "after": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290"
+        },
+        {
+          "name": "FACULTY_MODE_REQUIREMENTS",
+          "unchanged": true,
+          "before": "3e0243b9407fa8903d309c126f05c13ca34c9fcf961b4d9ac71a51276c32d783",
+          "after": "3e0243b9407fa8903d309c126f05c13ca34c9fcf961b4d9ac71a51276c32d783"
+        },
+        {
+          "name": "TELEMETRY_COLUMNS",
+          "unchanged": true,
+          "before": "2ad01bfb3d296a7a269474d132111c25c02721bcd86da5f3418c1a1723536e09",
+          "after": "2ad01bfb3d296a7a269474d132111c25c02721bcd86da5f3418c1a1723536e09"
+        },
+        {
+          "name": "questionAssetMetadata",
+          "unchanged": true,
+          "before": "22348cad8bd67653ce825c8a1a7ec89d677388d398bae2df51a3941dbf96948e",
+          "after": "22348cad8bd67653ce825c8a1a7ec89d677388d398bae2df51a3941dbf96948e"
+        },
+        {
+          "name": "answer",
+          "unchanged": true,
+          "before": "3a770f198ba2cc5f9818f4e0c2e87397d57db513921aeb8f68140dbba41ed023",
+          "after": "3a770f198ba2cc5f9818f4e0c2e87397d57db513921aeb8f68140dbba41ed023"
+        },
+        {
+          "name": "loadQuestion",
+          "unchanged": true,
+          "before": "f44ffd08bd9799790dd5a654b02946d0f0fdd00a47d74b66886ab76bb83f3b59",
+          "after": "f44ffd08bd9799790dd5a654b02946d0f0fdd00a47d74b66886ab76bb83f3b59"
+        },
+        {
+          "name": "shuffleOptions",
+          "unchanged": true,
+          "before": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d",
+          "after": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d"
+        },
+        {
+          "name": "buildBossQuestionSet",
+          "unchanged": true,
+          "before": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d",
+          "after": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d"
+        },
+        {
+          "name": "getWeakestBossObjective",
+          "unchanged": true,
+          "before": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc",
+          "after": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc"
+        },
+        {
+          "name": "isQuestionAnswerCorrect",
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        {
+          "name": "recordCheckpointAttempt",
+          "unchanged": true,
+          "before": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3",
+          "after": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3"
+        },
+        {
+          "name": "finalizeCheckpointOutcome",
+          "unchanged": true,
+          "before": "23c9279d5ce3399f1ae2b054d139cb85243784b445ac1fc41acb69a331970b5d",
+          "after": "23c9279d5ce3399f1ae2b054d139cb85243784b445ac1fc41acb69a331970b5d"
+        },
+        {
+          "name": "advanceCheckpointAttempt",
+          "unchanged": true,
+          "before": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3",
+          "after": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3"
+        },
+        {
+          "name": "recordAdaptiveAttempt",
+          "unchanged": true,
+          "before": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d",
+          "after": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d"
+        },
+        {
+          "name": "getModeCapabilities",
+          "unchanged": true,
+          "before": "ff1237ae2df9808bbc15476e213b55b95850a6e26321186db28e9715184fb10b",
+          "after": "ff1237ae2df9808bbc15476e213b55b95850a6e26321186db28e9715184fb10b"
+        },
+        {
+          "name": "getDifficultyForMode",
+          "unchanged": true,
+          "before": "afa80302d5435ef847f1c6186e2523c57bd8efb375b11bc83835b1c13e849761",
+          "after": "afa80302d5435ef847f1c6186e2523c57bd8efb375b11bc83835b1c13e849761"
+        },
+        {
+          "name": "modeAllowsImmediateCorrectnessFeedback",
+          "unchanged": true,
+          "before": "5d8090da6887f2c9ee2d8e6577581be39f0d807551dcf4a49fe547de57b395f2",
+          "after": "5d8090da6887f2c9ee2d8e6577581be39f0d807551dcf4a49fe547de57b395f2"
+        },
+        {
+          "name": "applyScoreAttackForAnswer",
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        },
+        {
+          "name": "settleRiskRewardAnswer",
+          "unchanged": true,
+          "before": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa",
+          "after": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa"
+        },
+        {
+          "name": "saveGameState",
+          "unchanged": true,
+          "before": "ea7189f0b9184e25b09222350e05c0b5612c1c2dc7de3bf2bb13d124acbe8480",
+          "after": "ea7189f0b9184e25b09222350e05c0b5612c1c2dc7de3bf2bb13d124acbe8480"
+        },
+        {
+          "name": "loadSavedGame",
+          "unchanged": true,
+          "before": "410289a6c5866dbd4bb8064dc2bdf57bf76db0806c797d60d5ef0b6299977553",
+          "after": "410289a6c5866dbd4bb8064dc2bdf57bf76db0806c797d60d5ef0b6299977553"
+        },
+        {
+          "name": "getExamRoomState",
+          "unchanged": true,
+          "before": "efd4a2827ea5c896f8fefb7de5aa880092b615c77859fec3e6dddebe9362cb3a",
+          "after": "efd4a2827ea5c896f8fefb7de5aa880092b615c77859fec3e6dddebe9362cb3a"
+        },
+        {
+          "name": "sendGameData",
+          "unchanged": true,
+          "before": "fa21cb68c0f40d2e0e5e161868ed0790d587abb3f9624b30b7de3b7b4a5cf358",
+          "after": "fa21cb68c0f40d2e0e5e161868ed0790d587abb3f9624b30b7de3b7b4a5cf358"
+        },
+        {
+          "name": "earnArtifact",
+          "unchanged": true,
+          "before": "711d076babe59e577e39d0395f5893a10b6e37eb7ac4900639c7f8b5b6e0a92f",
+          "after": "711d076babe59e577e39d0395f5893a10b6e37eb7ac4900639c7f8b5b6e0a92f"
+        }
+      ]
+    },
+    {
+      "file": "play/economic-realm/market-gate/index.html",
+      "checks": [
+        {
+          "name": "repairQuestions",
+          "unchanged": true,
+          "before": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5",
+          "after": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5"
+        },
+        {
+          "name": "bridgeQuestions",
+          "unchanged": true,
+          "before": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416",
+          "after": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416"
+        },
+        {
+          "name": "FACULTY_COMPOSITION_CONFIG",
+          "unchanged": true,
+          "before": "98b3d506969e7b793c2d660696c17255457f8111df6819a966c3fca24d4fd520",
+          "after": "98b3d506969e7b793c2d660696c17255457f8111df6819a966c3fca24d4fd520"
+        },
+        {
+          "name": "TIMING",
+          "unchanged": true,
+          "before": "922ceb79abb5ee37284fe43f9922118202bf123437ab36ae3aff2a6bc988f1ee",
+          "after": "922ceb79abb5ee37284fe43f9922118202bf123437ab36ae3aff2a6bc988f1ee"
+        },
+        {
+          "name": "RAPID_GUESS_CONFIG",
+          "unchanged": true,
+          "before": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290",
+          "after": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290"
+        },
+        {
+          "name": "FACULTY_MODE_REQUIREMENTS",
+          "unchanged": true,
+          "before": "3e0243b9407fa8903d309c126f05c13ca34c9fcf961b4d9ac71a51276c32d783",
+          "after": "3e0243b9407fa8903d309c126f05c13ca34c9fcf961b4d9ac71a51276c32d783"
+        },
+        {
+          "name": "TELEMETRY_COLUMNS",
+          "unchanged": true,
+          "before": "2ad01bfb3d296a7a269474d132111c25c02721bcd86da5f3418c1a1723536e09",
+          "after": "2ad01bfb3d296a7a269474d132111c25c02721bcd86da5f3418c1a1723536e09"
+        },
+        {
+          "name": "questionAssetMetadata",
+          "unchanged": true,
+          "before": "234f887ae5b24e05826d6cf81fb5d2a7df7e5ea420e5aa343f8c4fcd95ac93b6",
+          "after": "234f887ae5b24e05826d6cf81fb5d2a7df7e5ea420e5aa343f8c4fcd95ac93b6"
+        },
+        {
+          "name": "answer",
+          "unchanged": true,
+          "before": "3a770f198ba2cc5f9818f4e0c2e87397d57db513921aeb8f68140dbba41ed023",
+          "after": "3a770f198ba2cc5f9818f4e0c2e87397d57db513921aeb8f68140dbba41ed023"
+        },
+        {
+          "name": "loadQuestion",
+          "unchanged": true,
+          "before": "f44ffd08bd9799790dd5a654b02946d0f0fdd00a47d74b66886ab76bb83f3b59",
+          "after": "f44ffd08bd9799790dd5a654b02946d0f0fdd00a47d74b66886ab76bb83f3b59"
+        },
+        {
+          "name": "shuffleOptions",
+          "unchanged": true,
+          "before": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d",
+          "after": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d"
+        },
+        {
+          "name": "buildBossQuestionSet",
+          "unchanged": true,
+          "before": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d",
+          "after": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d"
+        },
+        {
+          "name": "getWeakestBossObjective",
+          "unchanged": true,
+          "before": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc",
+          "after": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc"
+        },
+        {
+          "name": "isQuestionAnswerCorrect",
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        {
+          "name": "recordCheckpointAttempt",
+          "unchanged": true,
+          "before": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3",
+          "after": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3"
+        },
+        {
+          "name": "finalizeCheckpointOutcome",
+          "unchanged": true,
+          "before": "23c9279d5ce3399f1ae2b054d139cb85243784b445ac1fc41acb69a331970b5d",
+          "after": "23c9279d5ce3399f1ae2b054d139cb85243784b445ac1fc41acb69a331970b5d"
+        },
+        {
+          "name": "advanceCheckpointAttempt",
+          "unchanged": true,
+          "before": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3",
+          "after": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3"
+        },
+        {
+          "name": "recordAdaptiveAttempt",
+          "unchanged": true,
+          "before": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d",
+          "after": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d"
+        },
+        {
+          "name": "getModeCapabilities",
+          "unchanged": true,
+          "before": "ff1237ae2df9808bbc15476e213b55b95850a6e26321186db28e9715184fb10b",
+          "after": "ff1237ae2df9808bbc15476e213b55b95850a6e26321186db28e9715184fb10b"
+        },
+        {
+          "name": "getDifficultyForMode",
+          "unchanged": true,
+          "before": "afa80302d5435ef847f1c6186e2523c57bd8efb375b11bc83835b1c13e849761",
+          "after": "afa80302d5435ef847f1c6186e2523c57bd8efb375b11bc83835b1c13e849761"
+        },
+        {
+          "name": "modeAllowsImmediateCorrectnessFeedback",
+          "unchanged": true,
+          "before": "5d8090da6887f2c9ee2d8e6577581be39f0d807551dcf4a49fe547de57b395f2",
+          "after": "5d8090da6887f2c9ee2d8e6577581be39f0d807551dcf4a49fe547de57b395f2"
+        },
+        {
+          "name": "applyScoreAttackForAnswer",
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        },
+        {
+          "name": "settleRiskRewardAnswer",
+          "unchanged": true,
+          "before": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa",
+          "after": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa"
+        },
+        {
+          "name": "saveGameState",
+          "unchanged": true,
+          "before": "ea7189f0b9184e25b09222350e05c0b5612c1c2dc7de3bf2bb13d124acbe8480",
+          "after": "ea7189f0b9184e25b09222350e05c0b5612c1c2dc7de3bf2bb13d124acbe8480"
+        },
+        {
+          "name": "loadSavedGame",
+          "unchanged": true,
+          "before": "410289a6c5866dbd4bb8064dc2bdf57bf76db0806c797d60d5ef0b6299977553",
+          "after": "410289a6c5866dbd4bb8064dc2bdf57bf76db0806c797d60d5ef0b6299977553"
+        },
+        {
+          "name": "getExamRoomState",
+          "unchanged": true,
+          "before": "efd4a2827ea5c896f8fefb7de5aa880092b615c77859fec3e6dddebe9362cb3a",
+          "after": "efd4a2827ea5c896f8fefb7de5aa880092b615c77859fec3e6dddebe9362cb3a"
+        },
+        {
+          "name": "sendGameData",
+          "unchanged": true,
+          "before": "fa21cb68c0f40d2e0e5e161868ed0790d587abb3f9624b30b7de3b7b4a5cf358",
+          "after": "fa21cb68c0f40d2e0e5e161868ed0790d587abb3f9624b30b7de3b7b4a5cf358"
+        },
+        {
+          "name": "earnArtifact",
+          "unchanged": true,
+          "before": "711d076babe59e577e39d0395f5893a10b6e37eb7ac4900639c7f8b5b6e0a92f",
+          "after": "711d076babe59e577e39d0395f5893a10b6e37eb7ac4900639c7f8b5b6e0a92f"
+        }
+      ]
+    },
+    {
+      "file": "play/economic-realm/national-ledger/index.html",
+      "checks": [
+        {
+          "name": "repairQuestions",
+          "unchanged": true,
+          "before": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5",
+          "after": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5"
+        },
+        {
+          "name": "bridgeQuestions",
+          "unchanged": true,
+          "before": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416",
+          "after": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416"
+        },
+        {
+          "name": "FACULTY_COMPOSITION_CONFIG",
+          "unchanged": true,
+          "before": "38669be02249149cd8274113e94523478ade103dd6355966f5e54e35bf724119",
+          "after": "38669be02249149cd8274113e94523478ade103dd6355966f5e54e35bf724119"
+        },
+        {
+          "name": "TIMING",
+          "unchanged": true,
+          "before": "922ceb79abb5ee37284fe43f9922118202bf123437ab36ae3aff2a6bc988f1ee",
+          "after": "922ceb79abb5ee37284fe43f9922118202bf123437ab36ae3aff2a6bc988f1ee"
+        },
+        {
+          "name": "RAPID_GUESS_CONFIG",
+          "unchanged": true,
+          "before": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290",
+          "after": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290"
+        },
+        {
+          "name": "FACULTY_MODE_REQUIREMENTS",
+          "unchanged": true,
+          "before": "3e0243b9407fa8903d309c126f05c13ca34c9fcf961b4d9ac71a51276c32d783",
+          "after": "3e0243b9407fa8903d309c126f05c13ca34c9fcf961b4d9ac71a51276c32d783"
+        },
+        {
+          "name": "TELEMETRY_COLUMNS",
+          "unchanged": true,
+          "before": "2ad01bfb3d296a7a269474d132111c25c02721bcd86da5f3418c1a1723536e09",
+          "after": "2ad01bfb3d296a7a269474d132111c25c02721bcd86da5f3418c1a1723536e09"
+        },
+        {
+          "name": "questionAssetMetadata",
+          "unchanged": true,
+          "before": "c2b423a100c00affac2446ea96d3fbff4d67568fb3fa41c7ef4d66e4e389a4ab",
+          "after": "c2b423a100c00affac2446ea96d3fbff4d67568fb3fa41c7ef4d66e4e389a4ab"
+        },
+        {
+          "name": "answer",
+          "unchanged": true,
+          "before": "3a770f198ba2cc5f9818f4e0c2e87397d57db513921aeb8f68140dbba41ed023",
+          "after": "3a770f198ba2cc5f9818f4e0c2e87397d57db513921aeb8f68140dbba41ed023"
+        },
+        {
+          "name": "loadQuestion",
+          "unchanged": true,
+          "before": "f44ffd08bd9799790dd5a654b02946d0f0fdd00a47d74b66886ab76bb83f3b59",
+          "after": "f44ffd08bd9799790dd5a654b02946d0f0fdd00a47d74b66886ab76bb83f3b59"
+        },
+        {
+          "name": "shuffleOptions",
+          "unchanged": true,
+          "before": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d",
+          "after": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d"
+        },
+        {
+          "name": "buildBossQuestionSet",
+          "unchanged": true,
+          "before": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d",
+          "after": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d"
+        },
+        {
+          "name": "getWeakestBossObjective",
+          "unchanged": true,
+          "before": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc",
+          "after": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc"
+        },
+        {
+          "name": "isQuestionAnswerCorrect",
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        {
+          "name": "recordCheckpointAttempt",
+          "unchanged": true,
+          "before": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3",
+          "after": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3"
+        },
+        {
+          "name": "finalizeCheckpointOutcome",
+          "unchanged": true,
+          "before": "23c9279d5ce3399f1ae2b054d139cb85243784b445ac1fc41acb69a331970b5d",
+          "after": "23c9279d5ce3399f1ae2b054d139cb85243784b445ac1fc41acb69a331970b5d"
+        },
+        {
+          "name": "advanceCheckpointAttempt",
+          "unchanged": true,
+          "before": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3",
+          "after": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3"
+        },
+        {
+          "name": "recordAdaptiveAttempt",
+          "unchanged": true,
+          "before": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d",
+          "after": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d"
+        },
+        {
+          "name": "getModeCapabilities",
+          "unchanged": true,
+          "before": "ff1237ae2df9808bbc15476e213b55b95850a6e26321186db28e9715184fb10b",
+          "after": "ff1237ae2df9808bbc15476e213b55b95850a6e26321186db28e9715184fb10b"
+        },
+        {
+          "name": "getDifficultyForMode",
+          "unchanged": true,
+          "before": "afa80302d5435ef847f1c6186e2523c57bd8efb375b11bc83835b1c13e849761",
+          "after": "afa80302d5435ef847f1c6186e2523c57bd8efb375b11bc83835b1c13e849761"
+        },
+        {
+          "name": "modeAllowsImmediateCorrectnessFeedback",
+          "unchanged": true,
+          "before": "5d8090da6887f2c9ee2d8e6577581be39f0d807551dcf4a49fe547de57b395f2",
+          "after": "5d8090da6887f2c9ee2d8e6577581be39f0d807551dcf4a49fe547de57b395f2"
+        },
+        {
+          "name": "applyScoreAttackForAnswer",
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        },
+        {
+          "name": "settleRiskRewardAnswer",
+          "unchanged": true,
+          "before": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa",
+          "after": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa"
+        },
+        {
+          "name": "saveGameState",
+          "unchanged": true,
+          "before": "ea7189f0b9184e25b09222350e05c0b5612c1c2dc7de3bf2bb13d124acbe8480",
+          "after": "ea7189f0b9184e25b09222350e05c0b5612c1c2dc7de3bf2bb13d124acbe8480"
+        },
+        {
+          "name": "loadSavedGame",
+          "unchanged": true,
+          "before": "410289a6c5866dbd4bb8064dc2bdf57bf76db0806c797d60d5ef0b6299977553",
+          "after": "410289a6c5866dbd4bb8064dc2bdf57bf76db0806c797d60d5ef0b6299977553"
+        },
+        {
+          "name": "getExamRoomState",
+          "unchanged": true,
+          "before": "efd4a2827ea5c896f8fefb7de5aa880092b615c77859fec3e6dddebe9362cb3a",
+          "after": "efd4a2827ea5c896f8fefb7de5aa880092b615c77859fec3e6dddebe9362cb3a"
+        },
+        {
+          "name": "sendGameData",
+          "unchanged": true,
+          "before": "fa21cb68c0f40d2e0e5e161868ed0790d587abb3f9624b30b7de3b7b4a5cf358",
+          "after": "fa21cb68c0f40d2e0e5e161868ed0790d587abb3f9624b30b7de3b7b4a5cf358"
+        },
+        {
+          "name": "earnArtifact",
+          "unchanged": true,
+          "before": "711d076babe59e577e39d0395f5893a10b6e37eb7ac4900639c7f8b5b6e0a92f",
+          "after": "711d076babe59e577e39d0395f5893a10b6e37eb7ac4900639c7f8b5b6e0a92f"
+        }
+      ]
+    },
+    {
+      "file": "play/economic-realm/stabilization-protocol/index.html",
+      "checks": [
+        {
+          "name": "repairQuestions",
+          "unchanged": true,
+          "before": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5",
+          "after": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5"
+        },
+        {
+          "name": "bridgeQuestions",
+          "unchanged": true,
+          "before": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416",
+          "after": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416"
+        },
+        {
+          "name": "FACULTY_COMPOSITION_CONFIG",
+          "unchanged": true,
+          "before": "afe67b3c7e8309dae62b36eb12ec8f913308164e7491ca4afaad5f4856eea02b",
+          "after": "afe67b3c7e8309dae62b36eb12ec8f913308164e7491ca4afaad5f4856eea02b"
+        },
+        {
+          "name": "TIMING",
+          "unchanged": true,
+          "before": "922ceb79abb5ee37284fe43f9922118202bf123437ab36ae3aff2a6bc988f1ee",
+          "after": "922ceb79abb5ee37284fe43f9922118202bf123437ab36ae3aff2a6bc988f1ee"
+        },
+        {
+          "name": "RAPID_GUESS_CONFIG",
+          "unchanged": true,
+          "before": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290",
+          "after": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290"
+        },
+        {
+          "name": "FACULTY_MODE_REQUIREMENTS",
+          "unchanged": true,
+          "before": "3e0243b9407fa8903d309c126f05c13ca34c9fcf961b4d9ac71a51276c32d783",
+          "after": "3e0243b9407fa8903d309c126f05c13ca34c9fcf961b4d9ac71a51276c32d783"
+        },
+        {
+          "name": "TELEMETRY_COLUMNS",
+          "unchanged": true,
+          "before": "2ad01bfb3d296a7a269474d132111c25c02721bcd86da5f3418c1a1723536e09",
+          "after": "2ad01bfb3d296a7a269474d132111c25c02721bcd86da5f3418c1a1723536e09"
+        },
+        {
+          "name": "questionAssetMetadata",
+          "unchanged": true,
+          "before": "08af19143a4fe9c1fe799407e009c21a5381233948fb7f06c32599f9cca04dcf",
+          "after": "08af19143a4fe9c1fe799407e009c21a5381233948fb7f06c32599f9cca04dcf"
+        },
+        {
+          "name": "answer",
+          "unchanged": true,
+          "before": "3a770f198ba2cc5f9818f4e0c2e87397d57db513921aeb8f68140dbba41ed023",
+          "after": "3a770f198ba2cc5f9818f4e0c2e87397d57db513921aeb8f68140dbba41ed023"
+        },
+        {
+          "name": "loadQuestion",
+          "unchanged": true,
+          "before": "f44ffd08bd9799790dd5a654b02946d0f0fdd00a47d74b66886ab76bb83f3b59",
+          "after": "f44ffd08bd9799790dd5a654b02946d0f0fdd00a47d74b66886ab76bb83f3b59"
+        },
+        {
+          "name": "shuffleOptions",
+          "unchanged": true,
+          "before": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d",
+          "after": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d"
+        },
+        {
+          "name": "buildBossQuestionSet",
+          "unchanged": true,
+          "before": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d",
+          "after": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d"
+        },
+        {
+          "name": "getWeakestBossObjective",
+          "unchanged": true,
+          "before": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc",
+          "after": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc"
+        },
+        {
+          "name": "isQuestionAnswerCorrect",
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        {
+          "name": "recordCheckpointAttempt",
+          "unchanged": true,
+          "before": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3",
+          "after": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3"
+        },
+        {
+          "name": "finalizeCheckpointOutcome",
+          "unchanged": true,
+          "before": "23c9279d5ce3399f1ae2b054d139cb85243784b445ac1fc41acb69a331970b5d",
+          "after": "23c9279d5ce3399f1ae2b054d139cb85243784b445ac1fc41acb69a331970b5d"
+        },
+        {
+          "name": "advanceCheckpointAttempt",
+          "unchanged": true,
+          "before": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3",
+          "after": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3"
+        },
+        {
+          "name": "recordAdaptiveAttempt",
+          "unchanged": true,
+          "before": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d",
+          "after": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d"
+        },
+        {
+          "name": "getModeCapabilities",
+          "unchanged": true,
+          "before": "ff1237ae2df9808bbc15476e213b55b95850a6e26321186db28e9715184fb10b",
+          "after": "ff1237ae2df9808bbc15476e213b55b95850a6e26321186db28e9715184fb10b"
+        },
+        {
+          "name": "getDifficultyForMode",
+          "unchanged": true,
+          "before": "afa80302d5435ef847f1c6186e2523c57bd8efb375b11bc83835b1c13e849761",
+          "after": "afa80302d5435ef847f1c6186e2523c57bd8efb375b11bc83835b1c13e849761"
+        },
+        {
+          "name": "modeAllowsImmediateCorrectnessFeedback",
+          "unchanged": true,
+          "before": "5d8090da6887f2c9ee2d8e6577581be39f0d807551dcf4a49fe547de57b395f2",
+          "after": "5d8090da6887f2c9ee2d8e6577581be39f0d807551dcf4a49fe547de57b395f2"
+        },
+        {
+          "name": "applyScoreAttackForAnswer",
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        },
+        {
+          "name": "settleRiskRewardAnswer",
+          "unchanged": true,
+          "before": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa",
+          "after": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa"
+        },
+        {
+          "name": "saveGameState",
+          "unchanged": true,
+          "before": "ea7189f0b9184e25b09222350e05c0b5612c1c2dc7de3bf2bb13d124acbe8480",
+          "after": "ea7189f0b9184e25b09222350e05c0b5612c1c2dc7de3bf2bb13d124acbe8480"
+        },
+        {
+          "name": "loadSavedGame",
+          "unchanged": true,
+          "before": "410289a6c5866dbd4bb8064dc2bdf57bf76db0806c797d60d5ef0b6299977553",
+          "after": "410289a6c5866dbd4bb8064dc2bdf57bf76db0806c797d60d5ef0b6299977553"
+        },
+        {
+          "name": "getExamRoomState",
+          "unchanged": true,
+          "before": "efd4a2827ea5c896f8fefb7de5aa880092b615c77859fec3e6dddebe9362cb3a",
+          "after": "efd4a2827ea5c896f8fefb7de5aa880092b615c77859fec3e6dddebe9362cb3a"
+        },
+        {
+          "name": "sendGameData",
+          "unchanged": true,
+          "before": "fa21cb68c0f40d2e0e5e161868ed0790d587abb3f9624b30b7de3b7b4a5cf358",
+          "after": "fa21cb68c0f40d2e0e5e161868ed0790d587abb3f9624b30b7de3b7b4a5cf358"
+        },
+        {
+          "name": "earnArtifact",
+          "unchanged": true,
+          "before": "711d076babe59e577e39d0395f5893a10b6e37eb7ac4900639c7f8b5b6e0a92f",
+          "after": "711d076babe59e577e39d0395f5893a10b6e37eb7ac4900639c7f8b5b6e0a92f"
+        }
+      ]
+    },
+    {
+      "file": "play/macro-command-system/command-nexus/index.html",
+      "checks": [
+        {
+          "name": "skillRepairSeedPools",
+          "unchanged": true,
+          "before": "c18f16195c6ff0d8e9d2638b39e10ff5e57877f07cfaa38f1fabf11b7c17856d",
+          "after": "c18f16195c6ff0d8e9d2638b39e10ff5e57877f07cfaa38f1fabf11b7c17856d"
+        },
+        {
+          "name": "repairQuestions",
+          "unchanged": true,
+          "before": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5",
+          "after": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5"
+        },
+        {
+          "name": "bridgeQuestions",
+          "unchanged": true,
+          "before": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416",
+          "after": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416"
+        },
+        {
+          "name": "FACULTY_COMPOSITION_CONFIG",
+          "unchanged": true,
+          "before": "56bc14e14de88d8bb7ffabbaefe8f540d74819670d3ce268849693ce689283fc",
+          "after": "56bc14e14de88d8bb7ffabbaefe8f540d74819670d3ce268849693ce689283fc"
+        },
+        {
+          "name": "TIMING",
+          "unchanged": true,
+          "before": "922ceb79abb5ee37284fe43f9922118202bf123437ab36ae3aff2a6bc988f1ee",
+          "after": "922ceb79abb5ee37284fe43f9922118202bf123437ab36ae3aff2a6bc988f1ee"
+        },
+        {
+          "name": "RAPID_GUESS_CONFIG",
+          "unchanged": true,
+          "before": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290",
+          "after": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290"
+        },
+        {
+          "name": "FACULTY_MODE_REQUIREMENTS",
+          "unchanged": true,
+          "before": "3e0243b9407fa8903d309c126f05c13ca34c9fcf961b4d9ac71a51276c32d783",
+          "after": "3e0243b9407fa8903d309c126f05c13ca34c9fcf961b4d9ac71a51276c32d783"
+        },
+        {
+          "name": "TELEMETRY_COLUMNS",
+          "unchanged": true,
+          "before": "2ad01bfb3d296a7a269474d132111c25c02721bcd86da5f3418c1a1723536e09",
+          "after": "2ad01bfb3d296a7a269474d132111c25c02721bcd86da5f3418c1a1723536e09"
+        },
+        {
+          "name": "questionAssetMetadata",
+          "unchanged": true,
+          "before": "a6a40efa5543606e741997f98002132d3bb6da49ec3c44d0444b91b05695c87a",
+          "after": "a6a40efa5543606e741997f98002132d3bb6da49ec3c44d0444b91b05695c87a"
+        },
+        {
+          "name": "answer",
+          "unchanged": true,
+          "before": "3a770f198ba2cc5f9818f4e0c2e87397d57db513921aeb8f68140dbba41ed023",
+          "after": "3a770f198ba2cc5f9818f4e0c2e87397d57db513921aeb8f68140dbba41ed023"
+        },
+        {
+          "name": "loadQuestion",
+          "unchanged": true,
+          "before": "f44ffd08bd9799790dd5a654b02946d0f0fdd00a47d74b66886ab76bb83f3b59",
+          "after": "f44ffd08bd9799790dd5a654b02946d0f0fdd00a47d74b66886ab76bb83f3b59"
+        },
+        {
+          "name": "shuffleOptions",
+          "unchanged": true,
+          "before": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d",
+          "after": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d"
+        },
+        {
+          "name": "buildBossQuestionSet",
+          "unchanged": true,
+          "before": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d",
+          "after": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d"
+        },
+        {
+          "name": "getWeakestBossObjective",
+          "unchanged": true,
+          "before": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc",
+          "after": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc"
+        },
+        {
+          "name": "isQuestionAnswerCorrect",
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        {
+          "name": "recordCheckpointAttempt",
+          "unchanged": true,
+          "before": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3",
+          "after": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3"
+        },
+        {
+          "name": "finalizeCheckpointOutcome",
+          "unchanged": true,
+          "before": "23c9279d5ce3399f1ae2b054d139cb85243784b445ac1fc41acb69a331970b5d",
+          "after": "23c9279d5ce3399f1ae2b054d139cb85243784b445ac1fc41acb69a331970b5d"
+        },
+        {
+          "name": "advanceCheckpointAttempt",
+          "unchanged": true,
+          "before": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3",
+          "after": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3"
+        },
+        {
+          "name": "recordAdaptiveAttempt",
+          "unchanged": true,
+          "before": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d",
+          "after": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d"
+        },
+        {
+          "name": "getModeCapabilities",
+          "unchanged": true,
+          "before": "ff1237ae2df9808bbc15476e213b55b95850a6e26321186db28e9715184fb10b",
+          "after": "ff1237ae2df9808bbc15476e213b55b95850a6e26321186db28e9715184fb10b"
+        },
+        {
+          "name": "getDifficultyForMode",
+          "unchanged": true,
+          "before": "afa80302d5435ef847f1c6186e2523c57bd8efb375b11bc83835b1c13e849761",
+          "after": "afa80302d5435ef847f1c6186e2523c57bd8efb375b11bc83835b1c13e849761"
+        },
+        {
+          "name": "modeAllowsImmediateCorrectnessFeedback",
+          "unchanged": true,
+          "before": "5d8090da6887f2c9ee2d8e6577581be39f0d807551dcf4a49fe547de57b395f2",
+          "after": "5d8090da6887f2c9ee2d8e6577581be39f0d807551dcf4a49fe547de57b395f2"
+        },
+        {
+          "name": "applyScoreAttackForAnswer",
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        },
+        {
+          "name": "settleRiskRewardAnswer",
+          "unchanged": true,
+          "before": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa",
+          "after": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa"
+        },
+        {
+          "name": "saveGameState",
+          "unchanged": true,
+          "before": "ea7189f0b9184e25b09222350e05c0b5612c1c2dc7de3bf2bb13d124acbe8480",
+          "after": "ea7189f0b9184e25b09222350e05c0b5612c1c2dc7de3bf2bb13d124acbe8480"
+        },
+        {
+          "name": "loadSavedGame",
+          "unchanged": true,
+          "before": "410289a6c5866dbd4bb8064dc2bdf57bf76db0806c797d60d5ef0b6299977553",
+          "after": "410289a6c5866dbd4bb8064dc2bdf57bf76db0806c797d60d5ef0b6299977553"
+        },
+        {
+          "name": "getExamRoomState",
+          "unchanged": true,
+          "before": "efd4a2827ea5c896f8fefb7de5aa880092b615c77859fec3e6dddebe9362cb3a",
+          "after": "efd4a2827ea5c896f8fefb7de5aa880092b615c77859fec3e6dddebe9362cb3a"
+        },
+        {
+          "name": "sendGameData",
+          "unchanged": true,
+          "before": "fa21cb68c0f40d2e0e5e161868ed0790d587abb3f9624b30b7de3b7b4a5cf358",
+          "after": "fa21cb68c0f40d2e0e5e161868ed0790d587abb3f9624b30b7de3b7b4a5cf358"
+        },
+        {
+          "name": "earnArtifact",
+          "unchanged": true,
+          "before": "711d076babe59e577e39d0395f5893a10b6e37eb7ac4900639c7f8b5b6e0a92f",
+          "after": "711d076babe59e577e39d0395f5893a10b6e37eb7ac4900639c7f8b5b6e0a92f"
+        }
+      ]
+    },
+    {
+      "file": "play/macro-command-system/exchange-citadel/index.html",
+      "checks": [
+        {
+          "name": "skillRepairSeedPools",
+          "unchanged": true,
+          "before": "c18f16195c6ff0d8e9d2638b39e10ff5e57877f07cfaa38f1fabf11b7c17856d",
+          "after": "c18f16195c6ff0d8e9d2638b39e10ff5e57877f07cfaa38f1fabf11b7c17856d"
+        },
+        {
+          "name": "repairQuestions",
+          "unchanged": true,
+          "before": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5",
+          "after": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5"
+        },
+        {
+          "name": "bridgeQuestions",
+          "unchanged": true,
+          "before": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416",
+          "after": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416"
+        },
+        {
+          "name": "FACULTY_COMPOSITION_CONFIG",
+          "unchanged": true,
+          "before": "a62f7dfba4515e5ac733bf13891922a2969822b71999a9054a80c3921c341370",
+          "after": "a62f7dfba4515e5ac733bf13891922a2969822b71999a9054a80c3921c341370"
+        },
+        {
+          "name": "TIMING",
+          "unchanged": true,
+          "before": "922ceb79abb5ee37284fe43f9922118202bf123437ab36ae3aff2a6bc988f1ee",
+          "after": "922ceb79abb5ee37284fe43f9922118202bf123437ab36ae3aff2a6bc988f1ee"
+        },
+        {
+          "name": "RAPID_GUESS_CONFIG",
+          "unchanged": true,
+          "before": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290",
+          "after": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290"
+        },
+        {
+          "name": "FACULTY_MODE_REQUIREMENTS",
+          "unchanged": true,
+          "before": "3e0243b9407fa8903d309c126f05c13ca34c9fcf961b4d9ac71a51276c32d783",
+          "after": "3e0243b9407fa8903d309c126f05c13ca34c9fcf961b4d9ac71a51276c32d783"
+        },
+        {
+          "name": "TELEMETRY_COLUMNS",
+          "unchanged": true,
+          "before": "2ad01bfb3d296a7a269474d132111c25c02721bcd86da5f3418c1a1723536e09",
+          "after": "2ad01bfb3d296a7a269474d132111c25c02721bcd86da5f3418c1a1723536e09"
+        },
+        {
+          "name": "questionAssetMetadata",
+          "unchanged": true,
+          "before": "a260718b83e92c1ef9afceb01f134cc1abf6a65400837fef0c7f32d551a3b541",
+          "after": "a260718b83e92c1ef9afceb01f134cc1abf6a65400837fef0c7f32d551a3b541"
+        },
+        {
+          "name": "answer",
+          "unchanged": true,
+          "before": "3a770f198ba2cc5f9818f4e0c2e87397d57db513921aeb8f68140dbba41ed023",
+          "after": "3a770f198ba2cc5f9818f4e0c2e87397d57db513921aeb8f68140dbba41ed023"
+        },
+        {
+          "name": "loadQuestion",
+          "unchanged": true,
+          "before": "f44ffd08bd9799790dd5a654b02946d0f0fdd00a47d74b66886ab76bb83f3b59",
+          "after": "f44ffd08bd9799790dd5a654b02946d0f0fdd00a47d74b66886ab76bb83f3b59"
+        },
+        {
+          "name": "shuffleOptions",
+          "unchanged": true,
+          "before": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d",
+          "after": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d"
+        },
+        {
+          "name": "buildBossQuestionSet",
+          "unchanged": true,
+          "before": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d",
+          "after": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d"
+        },
+        {
+          "name": "getWeakestBossObjective",
+          "unchanged": true,
+          "before": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc",
+          "after": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc"
+        },
+        {
+          "name": "isQuestionAnswerCorrect",
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        {
+          "name": "recordCheckpointAttempt",
+          "unchanged": true,
+          "before": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3",
+          "after": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3"
+        },
+        {
+          "name": "finalizeCheckpointOutcome",
+          "unchanged": true,
+          "before": "23c9279d5ce3399f1ae2b054d139cb85243784b445ac1fc41acb69a331970b5d",
+          "after": "23c9279d5ce3399f1ae2b054d139cb85243784b445ac1fc41acb69a331970b5d"
+        },
+        {
+          "name": "advanceCheckpointAttempt",
+          "unchanged": true,
+          "before": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3",
+          "after": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3"
+        },
+        {
+          "name": "recordAdaptiveAttempt",
+          "unchanged": true,
+          "before": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d",
+          "after": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d"
+        },
+        {
+          "name": "getModeCapabilities",
+          "unchanged": true,
+          "before": "ff1237ae2df9808bbc15476e213b55b95850a6e26321186db28e9715184fb10b",
+          "after": "ff1237ae2df9808bbc15476e213b55b95850a6e26321186db28e9715184fb10b"
+        },
+        {
+          "name": "getDifficultyForMode",
+          "unchanged": true,
+          "before": "afa80302d5435ef847f1c6186e2523c57bd8efb375b11bc83835b1c13e849761",
+          "after": "afa80302d5435ef847f1c6186e2523c57bd8efb375b11bc83835b1c13e849761"
+        },
+        {
+          "name": "modeAllowsImmediateCorrectnessFeedback",
+          "unchanged": true,
+          "before": "5d8090da6887f2c9ee2d8e6577581be39f0d807551dcf4a49fe547de57b395f2",
+          "after": "5d8090da6887f2c9ee2d8e6577581be39f0d807551dcf4a49fe547de57b395f2"
+        },
+        {
+          "name": "applyScoreAttackForAnswer",
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        },
+        {
+          "name": "settleRiskRewardAnswer",
+          "unchanged": true,
+          "before": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa",
+          "after": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa"
+        },
+        {
+          "name": "saveGameState",
+          "unchanged": true,
+          "before": "ea7189f0b9184e25b09222350e05c0b5612c1c2dc7de3bf2bb13d124acbe8480",
+          "after": "ea7189f0b9184e25b09222350e05c0b5612c1c2dc7de3bf2bb13d124acbe8480"
+        },
+        {
+          "name": "loadSavedGame",
+          "unchanged": true,
+          "before": "410289a6c5866dbd4bb8064dc2bdf57bf76db0806c797d60d5ef0b6299977553",
+          "after": "410289a6c5866dbd4bb8064dc2bdf57bf76db0806c797d60d5ef0b6299977553"
+        },
+        {
+          "name": "getExamRoomState",
+          "unchanged": true,
+          "before": "efd4a2827ea5c896f8fefb7de5aa880092b615c77859fec3e6dddebe9362cb3a",
+          "after": "efd4a2827ea5c896f8fefb7de5aa880092b615c77859fec3e6dddebe9362cb3a"
+        },
+        {
+          "name": "sendGameData",
+          "unchanged": true,
+          "before": "fa21cb68c0f40d2e0e5e161868ed0790d587abb3f9624b30b7de3b7b4a5cf358",
+          "after": "fa21cb68c0f40d2e0e5e161868ed0790d587abb3f9624b30b7de3b7b4a5cf358"
+        },
+        {
+          "name": "earnArtifact",
+          "unchanged": true,
+          "before": "711d076babe59e577e39d0395f5893a10b6e37eb7ac4900639c7f8b5b6e0a92f",
+          "after": "711d076babe59e577e39d0395f5893a10b6e37eb7ac4900639c7f8b5b6e0a92f"
+        }
+      ]
+    },
+    {
+      "file": "play/macro-command-system/mint-ash-gold/index.html",
+      "checks": [
+        {
+          "name": "skillRepairSeedPools",
+          "unchanged": true,
+          "before": "c18f16195c6ff0d8e9d2638b39e10ff5e57877f07cfaa38f1fabf11b7c17856d",
+          "after": "c18f16195c6ff0d8e9d2638b39e10ff5e57877f07cfaa38f1fabf11b7c17856d"
+        },
+        {
+          "name": "repairQuestions",
+          "unchanged": true,
+          "before": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5",
+          "after": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5"
+        },
+        {
+          "name": "bridgeQuestions",
+          "unchanged": true,
+          "before": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416",
+          "after": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416"
+        },
+        {
+          "name": "FACULTY_COMPOSITION_CONFIG",
+          "unchanged": true,
+          "before": "3b3f09aafe87fd91085af602f86016962d13f86fac812e43979f6f64cc03e0bc",
+          "after": "3b3f09aafe87fd91085af602f86016962d13f86fac812e43979f6f64cc03e0bc"
+        },
+        {
+          "name": "TIMING",
+          "unchanged": true,
+          "before": "922ceb79abb5ee37284fe43f9922118202bf123437ab36ae3aff2a6bc988f1ee",
+          "after": "922ceb79abb5ee37284fe43f9922118202bf123437ab36ae3aff2a6bc988f1ee"
+        },
+        {
+          "name": "RAPID_GUESS_CONFIG",
+          "unchanged": true,
+          "before": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290",
+          "after": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290"
+        },
+        {
+          "name": "FACULTY_MODE_REQUIREMENTS",
+          "unchanged": true,
+          "before": "3e0243b9407fa8903d309c126f05c13ca34c9fcf961b4d9ac71a51276c32d783",
+          "after": "3e0243b9407fa8903d309c126f05c13ca34c9fcf961b4d9ac71a51276c32d783"
+        },
+        {
+          "name": "TELEMETRY_COLUMNS",
+          "unchanged": true,
+          "before": "2ad01bfb3d296a7a269474d132111c25c02721bcd86da5f3418c1a1723536e09",
+          "after": "2ad01bfb3d296a7a269474d132111c25c02721bcd86da5f3418c1a1723536e09"
+        },
+        {
+          "name": "questionAssetMetadata",
+          "unchanged": true,
+          "before": "50eeeb401958de66c159a4492081bc400d00efec2219a2f8dd29aa0ed9941f5c",
+          "after": "50eeeb401958de66c159a4492081bc400d00efec2219a2f8dd29aa0ed9941f5c"
+        },
+        {
+          "name": "answer",
+          "unchanged": true,
+          "before": "3a770f198ba2cc5f9818f4e0c2e87397d57db513921aeb8f68140dbba41ed023",
+          "after": "3a770f198ba2cc5f9818f4e0c2e87397d57db513921aeb8f68140dbba41ed023"
+        },
+        {
+          "name": "loadQuestion",
+          "unchanged": true,
+          "before": "f44ffd08bd9799790dd5a654b02946d0f0fdd00a47d74b66886ab76bb83f3b59",
+          "after": "f44ffd08bd9799790dd5a654b02946d0f0fdd00a47d74b66886ab76bb83f3b59"
+        },
+        {
+          "name": "shuffleOptions",
+          "unchanged": true,
+          "before": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d",
+          "after": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d"
+        },
+        {
+          "name": "buildBossQuestionSet",
+          "unchanged": true,
+          "before": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d",
+          "after": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d"
+        },
+        {
+          "name": "getWeakestBossObjective",
+          "unchanged": true,
+          "before": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc",
+          "after": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc"
+        },
+        {
+          "name": "isQuestionAnswerCorrect",
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        {
+          "name": "recordCheckpointAttempt",
+          "unchanged": true,
+          "before": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3",
+          "after": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3"
+        },
+        {
+          "name": "finalizeCheckpointOutcome",
+          "unchanged": true,
+          "before": "23c9279d5ce3399f1ae2b054d139cb85243784b445ac1fc41acb69a331970b5d",
+          "after": "23c9279d5ce3399f1ae2b054d139cb85243784b445ac1fc41acb69a331970b5d"
+        },
+        {
+          "name": "advanceCheckpointAttempt",
+          "unchanged": true,
+          "before": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3",
+          "after": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3"
+        },
+        {
+          "name": "recordAdaptiveAttempt",
+          "unchanged": true,
+          "before": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d",
+          "after": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d"
+        },
+        {
+          "name": "getModeCapabilities",
+          "unchanged": true,
+          "before": "ff1237ae2df9808bbc15476e213b55b95850a6e26321186db28e9715184fb10b",
+          "after": "ff1237ae2df9808bbc15476e213b55b95850a6e26321186db28e9715184fb10b"
+        },
+        {
+          "name": "getDifficultyForMode",
+          "unchanged": true,
+          "before": "afa80302d5435ef847f1c6186e2523c57bd8efb375b11bc83835b1c13e849761",
+          "after": "afa80302d5435ef847f1c6186e2523c57bd8efb375b11bc83835b1c13e849761"
+        },
+        {
+          "name": "modeAllowsImmediateCorrectnessFeedback",
+          "unchanged": true,
+          "before": "5d8090da6887f2c9ee2d8e6577581be39f0d807551dcf4a49fe547de57b395f2",
+          "after": "5d8090da6887f2c9ee2d8e6577581be39f0d807551dcf4a49fe547de57b395f2"
+        },
+        {
+          "name": "applyScoreAttackForAnswer",
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        },
+        {
+          "name": "settleRiskRewardAnswer",
+          "unchanged": true,
+          "before": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa",
+          "after": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa"
+        },
+        {
+          "name": "saveGameState",
+          "unchanged": true,
+          "before": "ea7189f0b9184e25b09222350e05c0b5612c1c2dc7de3bf2bb13d124acbe8480",
+          "after": "ea7189f0b9184e25b09222350e05c0b5612c1c2dc7de3bf2bb13d124acbe8480"
+        },
+        {
+          "name": "loadSavedGame",
+          "unchanged": true,
+          "before": "410289a6c5866dbd4bb8064dc2bdf57bf76db0806c797d60d5ef0b6299977553",
+          "after": "410289a6c5866dbd4bb8064dc2bdf57bf76db0806c797d60d5ef0b6299977553"
+        },
+        {
+          "name": "getExamRoomState",
+          "unchanged": true,
+          "before": "efd4a2827ea5c896f8fefb7de5aa880092b615c77859fec3e6dddebe9362cb3a",
+          "after": "efd4a2827ea5c896f8fefb7de5aa880092b615c77859fec3e6dddebe9362cb3a"
+        },
+        {
+          "name": "sendGameData",
+          "unchanged": true,
+          "before": "fa21cb68c0f40d2e0e5e161868ed0790d587abb3f9624b30b7de3b7b4a5cf358",
+          "after": "fa21cb68c0f40d2e0e5e161868ed0790d587abb3f9624b30b7de3b7b4a5cf358"
+        },
+        {
+          "name": "earnArtifact",
+          "unchanged": true,
+          "before": "711d076babe59e577e39d0395f5893a10b6e37eb7ac4900639c7f8b5b6e0a92f",
+          "after": "711d076babe59e577e39d0395f5893a10b6e37eb7ac4900639c7f8b5b6e0a92f"
+        }
+      ]
+    },
+    {
+      "file": "play/macro-command-system/national-engine/index.html",
+      "checks": [
+        {
+          "name": "skillRepairSeedPools",
+          "unchanged": true,
+          "before": "c18f16195c6ff0d8e9d2638b39e10ff5e57877f07cfaa38f1fabf11b7c17856d",
+          "after": "c18f16195c6ff0d8e9d2638b39e10ff5e57877f07cfaa38f1fabf11b7c17856d"
+        },
+        {
+          "name": "repairQuestions",
+          "unchanged": true,
+          "before": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5",
+          "after": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5"
+        },
+        {
+          "name": "bridgeQuestions",
+          "unchanged": true,
+          "before": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416",
+          "after": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416"
+        },
+        {
+          "name": "FACULTY_COMPOSITION_CONFIG",
+          "unchanged": true,
+          "before": "b0e27260fece2df11a31b104b2b04ae063656f411494bd59d9617fd61d2a8fe4",
+          "after": "b0e27260fece2df11a31b104b2b04ae063656f411494bd59d9617fd61d2a8fe4"
+        },
+        {
+          "name": "TIMING",
+          "unchanged": true,
+          "before": "922ceb79abb5ee37284fe43f9922118202bf123437ab36ae3aff2a6bc988f1ee",
+          "after": "922ceb79abb5ee37284fe43f9922118202bf123437ab36ae3aff2a6bc988f1ee"
+        },
+        {
+          "name": "RAPID_GUESS_CONFIG",
+          "unchanged": true,
+          "before": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290",
+          "after": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290"
+        },
+        {
+          "name": "FACULTY_MODE_REQUIREMENTS",
+          "unchanged": true,
+          "before": "3e0243b9407fa8903d309c126f05c13ca34c9fcf961b4d9ac71a51276c32d783",
+          "after": "3e0243b9407fa8903d309c126f05c13ca34c9fcf961b4d9ac71a51276c32d783"
+        },
+        {
+          "name": "TELEMETRY_COLUMNS",
+          "unchanged": true,
+          "before": "2ad01bfb3d296a7a269474d132111c25c02721bcd86da5f3418c1a1723536e09",
+          "after": "2ad01bfb3d296a7a269474d132111c25c02721bcd86da5f3418c1a1723536e09"
+        },
+        {
+          "name": "questionAssetMetadata",
+          "unchanged": true,
+          "before": "8b35f9a5969ee2ac51f33a3182dee2d5e6dd110804504693c71e8fa6cf7d568a",
+          "after": "8b35f9a5969ee2ac51f33a3182dee2d5e6dd110804504693c71e8fa6cf7d568a"
+        },
+        {
+          "name": "answer",
+          "unchanged": true,
+          "before": "3a770f198ba2cc5f9818f4e0c2e87397d57db513921aeb8f68140dbba41ed023",
+          "after": "3a770f198ba2cc5f9818f4e0c2e87397d57db513921aeb8f68140dbba41ed023"
+        },
+        {
+          "name": "loadQuestion",
+          "unchanged": true,
+          "before": "f44ffd08bd9799790dd5a654b02946d0f0fdd00a47d74b66886ab76bb83f3b59",
+          "after": "f44ffd08bd9799790dd5a654b02946d0f0fdd00a47d74b66886ab76bb83f3b59"
+        },
+        {
+          "name": "shuffleOptions",
+          "unchanged": true,
+          "before": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d",
+          "after": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d"
+        },
+        {
+          "name": "buildBossQuestionSet",
+          "unchanged": true,
+          "before": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d",
+          "after": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d"
+        },
+        {
+          "name": "getWeakestBossObjective",
+          "unchanged": true,
+          "before": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc",
+          "after": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc"
+        },
+        {
+          "name": "isQuestionAnswerCorrect",
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        {
+          "name": "recordCheckpointAttempt",
+          "unchanged": true,
+          "before": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3",
+          "after": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3"
+        },
+        {
+          "name": "finalizeCheckpointOutcome",
+          "unchanged": true,
+          "before": "23c9279d5ce3399f1ae2b054d139cb85243784b445ac1fc41acb69a331970b5d",
+          "after": "23c9279d5ce3399f1ae2b054d139cb85243784b445ac1fc41acb69a331970b5d"
+        },
+        {
+          "name": "advanceCheckpointAttempt",
+          "unchanged": true,
+          "before": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3",
+          "after": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3"
+        },
+        {
+          "name": "recordAdaptiveAttempt",
+          "unchanged": true,
+          "before": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d",
+          "after": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d"
+        },
+        {
+          "name": "getModeCapabilities",
+          "unchanged": true,
+          "before": "ff1237ae2df9808bbc15476e213b55b95850a6e26321186db28e9715184fb10b",
+          "after": "ff1237ae2df9808bbc15476e213b55b95850a6e26321186db28e9715184fb10b"
+        },
+        {
+          "name": "getDifficultyForMode",
+          "unchanged": true,
+          "before": "afa80302d5435ef847f1c6186e2523c57bd8efb375b11bc83835b1c13e849761",
+          "after": "afa80302d5435ef847f1c6186e2523c57bd8efb375b11bc83835b1c13e849761"
+        },
+        {
+          "name": "modeAllowsImmediateCorrectnessFeedback",
+          "unchanged": true,
+          "before": "5d8090da6887f2c9ee2d8e6577581be39f0d807551dcf4a49fe547de57b395f2",
+          "after": "5d8090da6887f2c9ee2d8e6577581be39f0d807551dcf4a49fe547de57b395f2"
+        },
+        {
+          "name": "applyScoreAttackForAnswer",
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        },
+        {
+          "name": "settleRiskRewardAnswer",
+          "unchanged": true,
+          "before": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa",
+          "after": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa"
+        },
+        {
+          "name": "saveGameState",
+          "unchanged": true,
+          "before": "ea7189f0b9184e25b09222350e05c0b5612c1c2dc7de3bf2bb13d124acbe8480",
+          "after": "ea7189f0b9184e25b09222350e05c0b5612c1c2dc7de3bf2bb13d124acbe8480"
+        },
+        {
+          "name": "loadSavedGame",
+          "unchanged": true,
+          "before": "410289a6c5866dbd4bb8064dc2bdf57bf76db0806c797d60d5ef0b6299977553",
+          "after": "410289a6c5866dbd4bb8064dc2bdf57bf76db0806c797d60d5ef0b6299977553"
+        },
+        {
+          "name": "getExamRoomState",
+          "unchanged": true,
+          "before": "efd4a2827ea5c896f8fefb7de5aa880092b615c77859fec3e6dddebe9362cb3a",
+          "after": "efd4a2827ea5c896f8fefb7de5aa880092b615c77859fec3e6dddebe9362cb3a"
+        },
+        {
+          "name": "sendGameData",
+          "unchanged": true,
+          "before": "fa21cb68c0f40d2e0e5e161868ed0790d587abb3f9624b30b7de3b7b4a5cf358",
+          "after": "fa21cb68c0f40d2e0e5e161868ed0790d587abb3f9624b30b7de3b7b4a5cf358"
+        },
+        {
+          "name": "earnArtifact",
+          "unchanged": true,
+          "before": "711d076babe59e577e39d0395f5893a10b6e37eb7ac4900639c7f8b5b6e0a92f",
+          "after": "711d076babe59e577e39d0395f5893a10b6e37eb7ac4900639c7f8b5b6e0a92f"
+        }
+      ]
+    },
+    {
+      "file": "play/managerial-directorate-classroom/agency-protocol/index.html",
+      "checks": [
+        {
+          "name": "FACULTY_COMPOSITION_CONFIG",
+          "unchanged": true,
+          "before": "6d9ae3a4cc79727de3a180aa4fbe01dfb0270b6cdba8c848055ce63ce3f2faa6",
+          "after": "6d9ae3a4cc79727de3a180aa4fbe01dfb0270b6cdba8c848055ce63ce3f2faa6"
+        },
+        {
+          "name": "TIMING",
+          "unchanged": true,
+          "before": "b172f98feeafa50cc8ccbc3673875e140f3da53e8d977aa98d175d865f5e23cb",
+          "after": "b172f98feeafa50cc8ccbc3673875e140f3da53e8d977aa98d175d865f5e23cb"
+        },
+        {
+          "name": "RAPID_GUESS_CONFIG",
+          "unchanged": true,
+          "before": "5c2741891e88b5b58b7e7c4169ee69e5b04f9f935b407da1226482434388d02c",
+          "after": "5c2741891e88b5b58b7e7c4169ee69e5b04f9f935b407da1226482434388d02c"
+        },
+        {
+          "name": "TELEMETRY_COLUMNS",
+          "unchanged": true,
+          "before": "fb1ba15adf2a68064e4e7d3ea8dec86ce2e33aee84b7aefc7f9d46931a7e8580",
+          "after": "fb1ba15adf2a68064e4e7d3ea8dec86ce2e33aee84b7aefc7f9d46931a7e8580"
+        },
+        {
+          "name": "answer",
+          "unchanged": true,
+          "before": "9757faf32fa195a3f9d43ff9a5bff7de7fa70c1c84e6bd341c0a04df7ca7e351",
+          "after": "9757faf32fa195a3f9d43ff9a5bff7de7fa70c1c84e6bd341c0a04df7ca7e351"
+        },
+        {
+          "name": "loadQuestion",
+          "unchanged": true,
+          "before": "ed603b4933f1d0f31fd2f3d8e6019d76446e75f4ea1964c1bb57988ce28f1802",
+          "after": "ed603b4933f1d0f31fd2f3d8e6019d76446e75f4ea1964c1bb57988ce28f1802"
+        },
+        {
+          "name": "shuffleOptions",
+          "unchanged": true,
+          "before": "3286b0e4a0f8c10efbca3697d40043b7376901b55e24e83a030ad626a6d680e0",
+          "after": "3286b0e4a0f8c10efbca3697d40043b7376901b55e24e83a030ad626a6d680e0"
+        },
+        {
+          "name": "buildBossQuestionSet",
+          "unchanged": true,
+          "before": "24c500b4c2104c7c0df891727482d31ed4272799606fdcb8dd202df63e7d7447",
+          "after": "24c500b4c2104c7c0df891727482d31ed4272799606fdcb8dd202df63e7d7447"
+        },
+        {
+          "name": "getWeakestBossObjective",
+          "unchanged": true,
+          "before": "a420dcdb671c27055cdbc00654e951a78676e03fabda23f7afd821732eb7c100",
+          "after": "a420dcdb671c27055cdbc00654e951a78676e03fabda23f7afd821732eb7c100"
+        },
+        {
+          "name": "isQuestionAnswerCorrect",
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        {
+          "name": "recordAdaptiveAttempt",
+          "unchanged": true,
+          "before": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054",
+          "after": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054"
+        },
+        {
+          "name": "getDifficultyForMode",
+          "unchanged": true,
+          "before": "e3946bf39b26f1f8f95ecb7f73073bfba583383c8ca81590466196fa908f61c4",
+          "after": "e3946bf39b26f1f8f95ecb7f73073bfba583383c8ca81590466196fa908f61c4"
+        },
+        {
+          "name": "applyScoreAttackForAnswer",
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        },
+        {
+          "name": "settleRiskRewardAnswer",
+          "unchanged": true,
+          "before": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa",
+          "after": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa"
+        },
+        {
+          "name": "saveGameState",
+          "unchanged": true,
+          "before": "01905c2e53f3abbb3ab9adf3cb1d98771ada7e934a238f13052b0daffb15ee32",
+          "after": "01905c2e53f3abbb3ab9adf3cb1d98771ada7e934a238f13052b0daffb15ee32"
+        },
+        {
+          "name": "loadSavedGame",
+          "unchanged": true,
+          "before": "8838d3b92f58645256f1acba4e9c772c36c5e3fed6f9f809393d97cdf757377a",
+          "after": "8838d3b92f58645256f1acba4e9c772c36c5e3fed6f9f809393d97cdf757377a"
+        },
+        {
+          "name": "sendGameData",
+          "unchanged": true,
+          "before": "fe4957c7ab1e2a1549c1c52213abf05911f6e828f9ebcfeea4e147e03d335c31",
+          "after": "fe4957c7ab1e2a1549c1c52213abf05911f6e828f9ebcfeea4e147e03d335c31"
+        }
+      ]
+    },
+    {
+      "file": "play/managerial-directorate-classroom/cost-directive/index.html",
+      "checks": [
+        {
+          "name": "skillRepairSeedPools",
+          "unchanged": true,
+          "before": "c18f16195c6ff0d8e9d2638b39e10ff5e57877f07cfaa38f1fabf11b7c17856d",
+          "after": "c18f16195c6ff0d8e9d2638b39e10ff5e57877f07cfaa38f1fabf11b7c17856d"
+        },
+        {
+          "name": "repairQuestions",
+          "unchanged": true,
+          "before": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5",
+          "after": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5"
+        },
+        {
+          "name": "bridgeQuestions",
+          "unchanged": true,
+          "before": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416",
+          "after": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416"
+        },
+        {
+          "name": "FACULTY_COMPOSITION_CONFIG",
+          "unchanged": true,
+          "before": "518459be12c408aaa31641d51539eaa658e6e8b170a39a1548c2d2b0ab0c4a68",
+          "after": "518459be12c408aaa31641d51539eaa658e6e8b170a39a1548c2d2b0ab0c4a68"
+        },
+        {
+          "name": "TIMING",
+          "unchanged": true,
+          "before": "b172f98feeafa50cc8ccbc3673875e140f3da53e8d977aa98d175d865f5e23cb",
+          "after": "b172f98feeafa50cc8ccbc3673875e140f3da53e8d977aa98d175d865f5e23cb"
+        },
+        {
+          "name": "RAPID_GUESS_CONFIG",
+          "unchanged": true,
+          "before": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290",
+          "after": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290"
+        },
+        {
+          "name": "FACULTY_MODE_REQUIREMENTS",
+          "unchanged": true,
+          "before": "e94724a89da94ea4ba882111c6c451b56b43c3bde70388a7f9a88d6287f2bc74",
+          "after": "e94724a89da94ea4ba882111c6c451b56b43c3bde70388a7f9a88d6287f2bc74"
+        },
+        {
+          "name": "TELEMETRY_COLUMNS",
+          "unchanged": true,
+          "before": "fb1ba15adf2a68064e4e7d3ea8dec86ce2e33aee84b7aefc7f9d46931a7e8580",
+          "after": "fb1ba15adf2a68064e4e7d3ea8dec86ce2e33aee84b7aefc7f9d46931a7e8580"
+        },
+        {
+          "name": "questionAssetMetadata",
+          "unchanged": true,
+          "before": "d8e8b8c666f36cfb7b34841621ccd6873050ad6bc6879027aff0670fd2cbd110",
+          "after": "d8e8b8c666f36cfb7b34841621ccd6873050ad6bc6879027aff0670fd2cbd110"
+        },
+        {
+          "name": "answer",
+          "unchanged": true,
+          "before": "3b491744acc77caeeb0b683345ebac6a91a3bc0c37463127c10d99dd8a78a68e",
+          "after": "3b491744acc77caeeb0b683345ebac6a91a3bc0c37463127c10d99dd8a78a68e"
+        },
+        {
+          "name": "loadQuestion",
+          "unchanged": true,
+          "before": "6ca17f9c6c7824b753d4076c818334569066a6b845480e742b272a7601c07131",
+          "after": "6ca17f9c6c7824b753d4076c818334569066a6b845480e742b272a7601c07131"
+        },
+        {
+          "name": "shuffleOptions",
+          "unchanged": true,
+          "before": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d",
+          "after": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d"
+        },
+        {
+          "name": "buildBossQuestionSet",
+          "unchanged": true,
+          "before": "3a797204121d8ff9895205f1dfb79691b242de86f74ae9ffa84c0cfb8d664361",
+          "after": "3a797204121d8ff9895205f1dfb79691b242de86f74ae9ffa84c0cfb8d664361"
+        },
+        {
+          "name": "getWeakestBossObjective",
+          "unchanged": true,
+          "before": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc",
+          "after": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc"
+        },
+        {
+          "name": "isQuestionAnswerCorrect",
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        {
+          "name": "recordAdaptiveAttempt",
+          "unchanged": true,
+          "before": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054",
+          "after": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054"
+        },
+        {
+          "name": "getDifficultyForMode",
+          "unchanged": true,
+          "before": "b51bf684dd8b6862fe1e0ba4c68946f2560a7065980540a1ba53c18e3b444c93",
+          "after": "b51bf684dd8b6862fe1e0ba4c68946f2560a7065980540a1ba53c18e3b444c93"
+        },
+        {
+          "name": "applyScoreAttackForAnswer",
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        },
+        {
+          "name": "settleRiskRewardAnswer",
+          "unchanged": true,
+          "before": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa",
+          "after": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa"
+        },
+        {
+          "name": "saveGameState",
+          "unchanged": true,
+          "before": "20a87cdf50dbed47f6b0acbcdb78f113cba2e9035f97096a6e7c6172ba9641fc",
+          "after": "20a87cdf50dbed47f6b0acbcdb78f113cba2e9035f97096a6e7c6172ba9641fc"
+        },
+        {
+          "name": "loadSavedGame",
+          "unchanged": true,
+          "before": "deaea42ce770ee6ea273f96c4d50f45cb3e0cafe4f095b05fded477457f58d0a",
+          "after": "deaea42ce770ee6ea273f96c4d50f45cb3e0cafe4f095b05fded477457f58d0a"
+        },
+        {
+          "name": "sendGameData",
+          "unchanged": true,
+          "before": "5fd7e85ce7382c7ca8f10b95e8f0d57c7f3a3cb2a9ae61f4e004420daf23714f",
+          "after": "5fd7e85ce7382c7ca8f10b95e8f0d57c7f3a3cb2a9ae61f4e004420daf23714f"
+        }
+      ]
+    },
+    {
+      "file": "play/managerial-directorate-classroom/market-signal/index.html",
+      "checks": [
+        {
+          "name": "microSkillRepairPools",
+          "unchanged": true,
+          "before": "6e645be9de67a9d115b751dc2ac68e6df4f943e7408dba07687a0d32aefa5804",
+          "after": "6e645be9de67a9d115b751dc2ac68e6df4f943e7408dba07687a0d32aefa5804"
+        },
+        {
+          "name": "microSkillBridgePools",
+          "unchanged": true,
+          "before": "fe6ec7fe583ac857af0270302930cd2f1436096380758996431e1c9a778ba1e8",
+          "after": "fe6ec7fe583ac857af0270302930cd2f1436096380758996431e1c9a778ba1e8"
+        },
+        {
+          "name": "skillRepairSeedPools",
+          "unchanged": true,
+          "before": "c18f16195c6ff0d8e9d2638b39e10ff5e57877f07cfaa38f1fabf11b7c17856d",
+          "after": "c18f16195c6ff0d8e9d2638b39e10ff5e57877f07cfaa38f1fabf11b7c17856d"
+        },
+        {
+          "name": "repairQuestions",
+          "unchanged": true,
+          "before": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5",
+          "after": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5"
+        },
+        {
+          "name": "bridgeQuestions",
+          "unchanged": true,
+          "before": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416",
+          "after": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416"
+        },
+        {
+          "name": "FACULTY_COMPOSITION_CONFIG",
+          "unchanged": true,
+          "before": "ea60a1df745ce1f740b2993093018f7a1ea6a89e46a00800cff5b9a0e5c3056a",
+          "after": "ea60a1df745ce1f740b2993093018f7a1ea6a89e46a00800cff5b9a0e5c3056a"
+        },
+        {
+          "name": "TIMING",
+          "unchanged": true,
+          "before": "b172f98feeafa50cc8ccbc3673875e140f3da53e8d977aa98d175d865f5e23cb",
+          "after": "b172f98feeafa50cc8ccbc3673875e140f3da53e8d977aa98d175d865f5e23cb"
+        },
+        {
+          "name": "RAPID_GUESS_CONFIG",
+          "unchanged": true,
+          "before": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290",
+          "after": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290"
+        },
+        {
+          "name": "FACULTY_MODE_REQUIREMENTS",
+          "unchanged": true,
+          "before": "e94724a89da94ea4ba882111c6c451b56b43c3bde70388a7f9a88d6287f2bc74",
+          "after": "e94724a89da94ea4ba882111c6c451b56b43c3bde70388a7f9a88d6287f2bc74"
+        },
+        {
+          "name": "TELEMETRY_COLUMNS",
+          "unchanged": true,
+          "before": "fb1ba15adf2a68064e4e7d3ea8dec86ce2e33aee84b7aefc7f9d46931a7e8580",
+          "after": "fb1ba15adf2a68064e4e7d3ea8dec86ce2e33aee84b7aefc7f9d46931a7e8580"
+        },
+        {
+          "name": "questionAssetMetadata",
+          "unchanged": true,
+          "before": "44d6c873083171c3f83550b7951840308e6abaab639013f6eaffb1f355729843",
+          "after": "44d6c873083171c3f83550b7951840308e6abaab639013f6eaffb1f355729843"
+        },
+        {
+          "name": "answer",
+          "unchanged": true,
+          "before": "ee2667cdc69bc801334fac567cb16e040de45731357bc7a8d710d54adce21899",
+          "after": "ee2667cdc69bc801334fac567cb16e040de45731357bc7a8d710d54adce21899"
+        },
+        {
+          "name": "loadQuestion",
+          "unchanged": true,
+          "before": "cf87cd15194b7ce22c155695548f15a87adba2c69552928607206a7706295938",
+          "after": "cf87cd15194b7ce22c155695548f15a87adba2c69552928607206a7706295938"
+        },
+        {
+          "name": "shuffleOptions",
+          "unchanged": true,
+          "before": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d",
+          "after": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d"
+        },
+        {
+          "name": "buildBossQuestionSet",
+          "unchanged": true,
+          "before": "3a797204121d8ff9895205f1dfb79691b242de86f74ae9ffa84c0cfb8d664361",
+          "after": "3a797204121d8ff9895205f1dfb79691b242de86f74ae9ffa84c0cfb8d664361"
+        },
+        {
+          "name": "getWeakestBossObjective",
+          "unchanged": true,
+          "before": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc",
+          "after": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc"
+        },
+        {
+          "name": "isQuestionAnswerCorrect",
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        {
+          "name": "recordAdaptiveAttempt",
+          "unchanged": true,
+          "before": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054",
+          "after": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054"
+        },
+        {
+          "name": "getDifficultyForMode",
+          "unchanged": true,
+          "before": "b51bf684dd8b6862fe1e0ba4c68946f2560a7065980540a1ba53c18e3b444c93",
+          "after": "b51bf684dd8b6862fe1e0ba4c68946f2560a7065980540a1ba53c18e3b444c93"
+        },
+        {
+          "name": "applyScoreAttackForAnswer",
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        },
+        {
+          "name": "settleRiskRewardAnswer",
+          "unchanged": true,
+          "before": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa",
+          "after": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa"
+        },
+        {
+          "name": "saveGameState",
+          "unchanged": true,
+          "before": "622df62590006f268b03e097331269870c0cb858eec50aac80ca631b22c41ea8",
+          "after": "622df62590006f268b03e097331269870c0cb858eec50aac80ca631b22c41ea8"
+        },
+        {
+          "name": "loadSavedGame",
+          "unchanged": true,
+          "before": "6cab46352029e2fa83100a9514b1deb3c7dade6c9c8b238f12f6901ec2e0c71e",
+          "after": "6cab46352029e2fa83100a9514b1deb3c7dade6c9c8b238f12f6901ec2e0c71e"
+        },
+        {
+          "name": "sendGameData",
+          "unchanged": true,
+          "before": "5fd7e85ce7382c7ca8f10b95e8f0d57c7f3a3cb2a9ae61f4e004420daf23714f",
+          "after": "5fd7e85ce7382c7ca8f10b95e8f0d57c7f3a3cb2a9ae61f4e004420daf23714f"
+        }
+      ]
+    },
+    {
+      "file": "play/managerial-directorate-classroom/strategy-desk/index.html",
+      "checks": [
+        {
+          "name": "skillRepairSeedPools",
+          "unchanged": true,
+          "before": "c18f16195c6ff0d8e9d2638b39e10ff5e57877f07cfaa38f1fabf11b7c17856d",
+          "after": "c18f16195c6ff0d8e9d2638b39e10ff5e57877f07cfaa38f1fabf11b7c17856d"
+        },
+        {
+          "name": "repairQuestions",
+          "unchanged": true,
+          "before": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5",
+          "after": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5"
+        },
+        {
+          "name": "bridgeQuestions",
+          "unchanged": true,
+          "before": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416",
+          "after": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416"
+        },
+        {
+          "name": "FACULTY_COMPOSITION_CONFIG",
+          "unchanged": true,
+          "before": "e8ed405e0ee5c3afa26310eaf69b0aba66f7f618cf67e9f79efb2c46813bb14a",
+          "after": "e8ed405e0ee5c3afa26310eaf69b0aba66f7f618cf67e9f79efb2c46813bb14a"
+        },
+        {
+          "name": "TIMING",
+          "unchanged": true,
+          "before": "b172f98feeafa50cc8ccbc3673875e140f3da53e8d977aa98d175d865f5e23cb",
+          "after": "b172f98feeafa50cc8ccbc3673875e140f3da53e8d977aa98d175d865f5e23cb"
+        },
+        {
+          "name": "RAPID_GUESS_CONFIG",
+          "unchanged": true,
+          "before": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290",
+          "after": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290"
+        },
+        {
+          "name": "FACULTY_MODE_REQUIREMENTS",
+          "unchanged": true,
+          "before": "e94724a89da94ea4ba882111c6c451b56b43c3bde70388a7f9a88d6287f2bc74",
+          "after": "e94724a89da94ea4ba882111c6c451b56b43c3bde70388a7f9a88d6287f2bc74"
+        },
+        {
+          "name": "TELEMETRY_COLUMNS",
+          "unchanged": true,
+          "before": "fb1ba15adf2a68064e4e7d3ea8dec86ce2e33aee84b7aefc7f9d46931a7e8580",
+          "after": "fb1ba15adf2a68064e4e7d3ea8dec86ce2e33aee84b7aefc7f9d46931a7e8580"
+        },
+        {
+          "name": "questionAssetMetadata",
+          "unchanged": true,
+          "before": "a1c765957ccf5aa8b67d087a73ebdb1b12b938480e887ae74936e8f1123c605c",
+          "after": "a1c765957ccf5aa8b67d087a73ebdb1b12b938480e887ae74936e8f1123c605c"
+        },
+        {
+          "name": "answer",
+          "unchanged": true,
+          "before": "b95bd35bfbdd8d1503f9d2fbac7a81a443830aadffb85e1782c34646d8496e6c",
+          "after": "b95bd35bfbdd8d1503f9d2fbac7a81a443830aadffb85e1782c34646d8496e6c"
+        },
+        {
+          "name": "loadQuestion",
+          "unchanged": true,
+          "before": "e6a770f01862b8264b3cb98903b58e7247e5ac3413b8f03359132b6e53db35c8",
+          "after": "e6a770f01862b8264b3cb98903b58e7247e5ac3413b8f03359132b6e53db35c8"
+        },
+        {
+          "name": "shuffleOptions",
+          "unchanged": true,
+          "before": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d",
+          "after": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d"
+        },
+        {
+          "name": "buildBossQuestionSet",
+          "unchanged": true,
+          "before": "ee5f21989949a770864d1dbab5ffdb42542109e43a05a535bc6ca02b41361c65",
+          "after": "ee5f21989949a770864d1dbab5ffdb42542109e43a05a535bc6ca02b41361c65"
+        },
+        {
+          "name": "getWeakestBossObjective",
+          "unchanged": true,
+          "before": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc",
+          "after": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc"
+        },
+        {
+          "name": "isQuestionAnswerCorrect",
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        {
+          "name": "recordAdaptiveAttempt",
+          "unchanged": true,
+          "before": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054",
+          "after": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054"
+        },
+        {
+          "name": "getDifficultyForMode",
+          "unchanged": true,
+          "before": "b51bf684dd8b6862fe1e0ba4c68946f2560a7065980540a1ba53c18e3b444c93",
+          "after": "b51bf684dd8b6862fe1e0ba4c68946f2560a7065980540a1ba53c18e3b444c93"
+        },
+        {
+          "name": "applyScoreAttackForAnswer",
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        },
+        {
+          "name": "settleRiskRewardAnswer",
+          "unchanged": true,
+          "before": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa",
+          "after": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa"
+        },
+        {
+          "name": "saveGameState",
+          "unchanged": true,
+          "before": "622df62590006f268b03e097331269870c0cb858eec50aac80ca631b22c41ea8",
+          "after": "622df62590006f268b03e097331269870c0cb858eec50aac80ca631b22c41ea8"
+        },
+        {
+          "name": "loadSavedGame",
+          "unchanged": true,
+          "before": "6cab46352029e2fa83100a9514b1deb3c7dade6c9c8b238f12f6901ec2e0c71e",
+          "after": "6cab46352029e2fa83100a9514b1deb3c7dade6c9c8b238f12f6901ec2e0c71e"
+        },
+        {
+          "name": "sendGameData",
+          "unchanged": true,
+          "before": "5fd7e85ce7382c7ca8f10b95e8f0d57c7f3a3cb2a9ae61f4e004420daf23714f",
+          "after": "5fd7e85ce7382c7ca8f10b95e8f0d57c7f3a3cb2a9ae61f4e004420daf23714f"
+        }
+      ]
+    },
+    {
+      "file": "play/managerial-directorate-telemetry-poc/agency-protocol/index.html",
+      "checks": [
+        {
+          "name": "FACULTY_COMPOSITION_CONFIG",
+          "unchanged": true,
+          "before": "6d9ae3a4cc79727de3a180aa4fbe01dfb0270b6cdba8c848055ce63ce3f2faa6",
+          "after": "6d9ae3a4cc79727de3a180aa4fbe01dfb0270b6cdba8c848055ce63ce3f2faa6"
+        },
+        {
+          "name": "TIMING",
+          "unchanged": true,
+          "before": "b172f98feeafa50cc8ccbc3673875e140f3da53e8d977aa98d175d865f5e23cb",
+          "after": "b172f98feeafa50cc8ccbc3673875e140f3da53e8d977aa98d175d865f5e23cb"
+        },
+        {
+          "name": "RAPID_GUESS_CONFIG",
+          "unchanged": true,
+          "before": "5c2741891e88b5b58b7e7c4169ee69e5b04f9f935b407da1226482434388d02c",
+          "after": "5c2741891e88b5b58b7e7c4169ee69e5b04f9f935b407da1226482434388d02c"
+        },
+        {
+          "name": "TELEMETRY_COLUMNS",
+          "unchanged": true,
+          "before": "fb1ba15adf2a68064e4e7d3ea8dec86ce2e33aee84b7aefc7f9d46931a7e8580",
+          "after": "fb1ba15adf2a68064e4e7d3ea8dec86ce2e33aee84b7aefc7f9d46931a7e8580"
+        },
+        {
+          "name": "answer",
+          "unchanged": true,
+          "before": "8ff359317909b32e6e255c4035803b185dbfb29ee2ff865d2df72e11aaf2279b",
+          "after": "8ff359317909b32e6e255c4035803b185dbfb29ee2ff865d2df72e11aaf2279b"
+        },
+        {
+          "name": "loadQuestion",
+          "unchanged": true,
+          "before": "c04ce894468bd7f16420afecd1ea5e4c488bafb40ce283bd4fc786d988b2d88a",
+          "after": "c04ce894468bd7f16420afecd1ea5e4c488bafb40ce283bd4fc786d988b2d88a"
+        },
+        {
+          "name": "shuffleOptions",
+          "unchanged": true,
+          "before": "3286b0e4a0f8c10efbca3697d40043b7376901b55e24e83a030ad626a6d680e0",
+          "after": "3286b0e4a0f8c10efbca3697d40043b7376901b55e24e83a030ad626a6d680e0"
+        },
+        {
+          "name": "buildBossQuestionSet",
+          "unchanged": true,
+          "before": "24c500b4c2104c7c0df891727482d31ed4272799606fdcb8dd202df63e7d7447",
+          "after": "24c500b4c2104c7c0df891727482d31ed4272799606fdcb8dd202df63e7d7447"
+        },
+        {
+          "name": "getWeakestBossObjective",
+          "unchanged": true,
+          "before": "a420dcdb671c27055cdbc00654e951a78676e03fabda23f7afd821732eb7c100",
+          "after": "a420dcdb671c27055cdbc00654e951a78676e03fabda23f7afd821732eb7c100"
+        },
+        {
+          "name": "isQuestionAnswerCorrect",
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        {
+          "name": "recordAdaptiveAttempt",
+          "unchanged": true,
+          "before": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054",
+          "after": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054"
+        },
+        {
+          "name": "getDifficultyForMode",
+          "unchanged": true,
+          "before": "e3946bf39b26f1f8f95ecb7f73073bfba583383c8ca81590466196fa908f61c4",
+          "after": "e3946bf39b26f1f8f95ecb7f73073bfba583383c8ca81590466196fa908f61c4"
+        },
+        {
+          "name": "applyScoreAttackForAnswer",
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        },
+        {
+          "name": "settleRiskRewardAnswer",
+          "unchanged": true,
+          "before": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa",
+          "after": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa"
+        },
+        {
+          "name": "saveGameState",
+          "unchanged": true,
+          "before": "01905c2e53f3abbb3ab9adf3cb1d98771ada7e934a238f13052b0daffb15ee32",
+          "after": "01905c2e53f3abbb3ab9adf3cb1d98771ada7e934a238f13052b0daffb15ee32"
+        },
+        {
+          "name": "loadSavedGame",
+          "unchanged": true,
+          "before": "8838d3b92f58645256f1acba4e9c772c36c5e3fed6f9f809393d97cdf757377a",
+          "after": "8838d3b92f58645256f1acba4e9c772c36c5e3fed6f9f809393d97cdf757377a"
+        },
+        {
+          "name": "sendGameData",
+          "unchanged": true,
+          "before": "fe4957c7ab1e2a1549c1c52213abf05911f6e828f9ebcfeea4e147e03d335c31",
+          "after": "fe4957c7ab1e2a1549c1c52213abf05911f6e828f9ebcfeea4e147e03d335c31"
+        }
+      ]
+    },
+    {
+      "file": "play/managerial-directorate-telemetry-poc/cost-directive/index.html",
+      "checks": [
+        {
+          "name": "skillRepairSeedPools",
+          "unchanged": true,
+          "before": "c18f16195c6ff0d8e9d2638b39e10ff5e57877f07cfaa38f1fabf11b7c17856d",
+          "after": "c18f16195c6ff0d8e9d2638b39e10ff5e57877f07cfaa38f1fabf11b7c17856d"
+        },
+        {
+          "name": "repairQuestions",
+          "unchanged": true,
+          "before": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5",
+          "after": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5"
+        },
+        {
+          "name": "bridgeQuestions",
+          "unchanged": true,
+          "before": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416",
+          "after": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416"
+        },
+        {
+          "name": "FACULTY_COMPOSITION_CONFIG",
+          "unchanged": true,
+          "before": "518459be12c408aaa31641d51539eaa658e6e8b170a39a1548c2d2b0ab0c4a68",
+          "after": "518459be12c408aaa31641d51539eaa658e6e8b170a39a1548c2d2b0ab0c4a68"
+        },
+        {
+          "name": "TIMING",
+          "unchanged": true,
+          "before": "b172f98feeafa50cc8ccbc3673875e140f3da53e8d977aa98d175d865f5e23cb",
+          "after": "b172f98feeafa50cc8ccbc3673875e140f3da53e8d977aa98d175d865f5e23cb"
+        },
+        {
+          "name": "RAPID_GUESS_CONFIG",
+          "unchanged": true,
+          "before": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290",
+          "after": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290"
+        },
+        {
+          "name": "FACULTY_MODE_REQUIREMENTS",
+          "unchanged": true,
+          "before": "e94724a89da94ea4ba882111c6c451b56b43c3bde70388a7f9a88d6287f2bc74",
+          "after": "e94724a89da94ea4ba882111c6c451b56b43c3bde70388a7f9a88d6287f2bc74"
+        },
+        {
+          "name": "TELEMETRY_COLUMNS",
+          "unchanged": true,
+          "before": "fb1ba15adf2a68064e4e7d3ea8dec86ce2e33aee84b7aefc7f9d46931a7e8580",
+          "after": "fb1ba15adf2a68064e4e7d3ea8dec86ce2e33aee84b7aefc7f9d46931a7e8580"
+        },
+        {
+          "name": "questionAssetMetadata",
+          "unchanged": true,
+          "before": "d8e8b8c666f36cfb7b34841621ccd6873050ad6bc6879027aff0670fd2cbd110",
+          "after": "d8e8b8c666f36cfb7b34841621ccd6873050ad6bc6879027aff0670fd2cbd110"
+        },
+        {
+          "name": "answer",
+          "unchanged": true,
+          "before": "4514ae68b9a1fcee8a09143a6f4ad4c064de5f2fc07d6c7453eb753641b95b15",
+          "after": "4514ae68b9a1fcee8a09143a6f4ad4c064de5f2fc07d6c7453eb753641b95b15"
+        },
+        {
+          "name": "loadQuestion",
+          "unchanged": true,
+          "before": "665855eb89b6d215a91957485d11a9507dc686043a1519b89dd9dcab238e8f6a",
+          "after": "665855eb89b6d215a91957485d11a9507dc686043a1519b89dd9dcab238e8f6a"
+        },
+        {
+          "name": "shuffleOptions",
+          "unchanged": true,
+          "before": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d",
+          "after": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d"
+        },
+        {
+          "name": "buildBossQuestionSet",
+          "unchanged": true,
+          "before": "3a797204121d8ff9895205f1dfb79691b242de86f74ae9ffa84c0cfb8d664361",
+          "after": "3a797204121d8ff9895205f1dfb79691b242de86f74ae9ffa84c0cfb8d664361"
+        },
+        {
+          "name": "getWeakestBossObjective",
+          "unchanged": true,
+          "before": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc",
+          "after": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc"
+        },
+        {
+          "name": "isQuestionAnswerCorrect",
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        {
+          "name": "recordAdaptiveAttempt",
+          "unchanged": true,
+          "before": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054",
+          "after": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054"
+        },
+        {
+          "name": "getDifficultyForMode",
+          "unchanged": true,
+          "before": "b51bf684dd8b6862fe1e0ba4c68946f2560a7065980540a1ba53c18e3b444c93",
+          "after": "b51bf684dd8b6862fe1e0ba4c68946f2560a7065980540a1ba53c18e3b444c93"
+        },
+        {
+          "name": "applyScoreAttackForAnswer",
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        },
+        {
+          "name": "settleRiskRewardAnswer",
+          "unchanged": true,
+          "before": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa",
+          "after": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa"
+        },
+        {
+          "name": "saveGameState",
+          "unchanged": true,
+          "before": "20a87cdf50dbed47f6b0acbcdb78f113cba2e9035f97096a6e7c6172ba9641fc",
+          "after": "20a87cdf50dbed47f6b0acbcdb78f113cba2e9035f97096a6e7c6172ba9641fc"
+        },
+        {
+          "name": "loadSavedGame",
+          "unchanged": true,
+          "before": "deaea42ce770ee6ea273f96c4d50f45cb3e0cafe4f095b05fded477457f58d0a",
+          "after": "deaea42ce770ee6ea273f96c4d50f45cb3e0cafe4f095b05fded477457f58d0a"
+        },
+        {
+          "name": "sendGameData",
+          "unchanged": true,
+          "before": "5fd7e85ce7382c7ca8f10b95e8f0d57c7f3a3cb2a9ae61f4e004420daf23714f",
+          "after": "5fd7e85ce7382c7ca8f10b95e8f0d57c7f3a3cb2a9ae61f4e004420daf23714f"
+        }
+      ]
+    },
+    {
+      "file": "play/managerial-directorate-telemetry-poc/market-signal/index.html",
+      "checks": [
+        {
+          "name": "microSkillRepairPools",
+          "unchanged": true,
+          "before": "6e645be9de67a9d115b751dc2ac68e6df4f943e7408dba07687a0d32aefa5804",
+          "after": "6e645be9de67a9d115b751dc2ac68e6df4f943e7408dba07687a0d32aefa5804"
+        },
+        {
+          "name": "microSkillBridgePools",
+          "unchanged": true,
+          "before": "fe6ec7fe583ac857af0270302930cd2f1436096380758996431e1c9a778ba1e8",
+          "after": "fe6ec7fe583ac857af0270302930cd2f1436096380758996431e1c9a778ba1e8"
+        },
+        {
+          "name": "skillRepairSeedPools",
+          "unchanged": true,
+          "before": "c18f16195c6ff0d8e9d2638b39e10ff5e57877f07cfaa38f1fabf11b7c17856d",
+          "after": "c18f16195c6ff0d8e9d2638b39e10ff5e57877f07cfaa38f1fabf11b7c17856d"
+        },
+        {
+          "name": "repairQuestions",
+          "unchanged": true,
+          "before": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5",
+          "after": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5"
+        },
+        {
+          "name": "bridgeQuestions",
+          "unchanged": true,
+          "before": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416",
+          "after": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416"
+        },
+        {
+          "name": "FACULTY_COMPOSITION_CONFIG",
+          "unchanged": true,
+          "before": "ea60a1df745ce1f740b2993093018f7a1ea6a89e46a00800cff5b9a0e5c3056a",
+          "after": "ea60a1df745ce1f740b2993093018f7a1ea6a89e46a00800cff5b9a0e5c3056a"
+        },
+        {
+          "name": "TIMING",
+          "unchanged": true,
+          "before": "b172f98feeafa50cc8ccbc3673875e140f3da53e8d977aa98d175d865f5e23cb",
+          "after": "b172f98feeafa50cc8ccbc3673875e140f3da53e8d977aa98d175d865f5e23cb"
+        },
+        {
+          "name": "RAPID_GUESS_CONFIG",
+          "unchanged": true,
+          "before": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290",
+          "after": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290"
+        },
+        {
+          "name": "FACULTY_MODE_REQUIREMENTS",
+          "unchanged": true,
+          "before": "e94724a89da94ea4ba882111c6c451b56b43c3bde70388a7f9a88d6287f2bc74",
+          "after": "e94724a89da94ea4ba882111c6c451b56b43c3bde70388a7f9a88d6287f2bc74"
+        },
+        {
+          "name": "TELEMETRY_COLUMNS",
+          "unchanged": true,
+          "before": "fb1ba15adf2a68064e4e7d3ea8dec86ce2e33aee84b7aefc7f9d46931a7e8580",
+          "after": "fb1ba15adf2a68064e4e7d3ea8dec86ce2e33aee84b7aefc7f9d46931a7e8580"
+        },
+        {
+          "name": "questionAssetMetadata",
+          "unchanged": true,
+          "before": "44d6c873083171c3f83550b7951840308e6abaab639013f6eaffb1f355729843",
+          "after": "44d6c873083171c3f83550b7951840308e6abaab639013f6eaffb1f355729843"
+        },
+        {
+          "name": "answer",
+          "unchanged": true,
+          "before": "66ff7830da382f4a3699b9257ce19c65e620363d3d780eb83f1d72d3ac9cfe51",
+          "after": "66ff7830da382f4a3699b9257ce19c65e620363d3d780eb83f1d72d3ac9cfe51"
+        },
+        {
+          "name": "loadQuestion",
+          "unchanged": true,
+          "before": "ebfb23200819ef0d701bce6d066a6767738b83b005cd29bdf6e25bfc39a2a69f",
+          "after": "ebfb23200819ef0d701bce6d066a6767738b83b005cd29bdf6e25bfc39a2a69f"
+        },
+        {
+          "name": "shuffleOptions",
+          "unchanged": true,
+          "before": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d",
+          "after": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d"
+        },
+        {
+          "name": "buildBossQuestionSet",
+          "unchanged": true,
+          "before": "3a797204121d8ff9895205f1dfb79691b242de86f74ae9ffa84c0cfb8d664361",
+          "after": "3a797204121d8ff9895205f1dfb79691b242de86f74ae9ffa84c0cfb8d664361"
+        },
+        {
+          "name": "getWeakestBossObjective",
+          "unchanged": true,
+          "before": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc",
+          "after": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc"
+        },
+        {
+          "name": "isQuestionAnswerCorrect",
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        {
+          "name": "recordAdaptiveAttempt",
+          "unchanged": true,
+          "before": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054",
+          "after": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054"
+        },
+        {
+          "name": "getDifficultyForMode",
+          "unchanged": true,
+          "before": "b51bf684dd8b6862fe1e0ba4c68946f2560a7065980540a1ba53c18e3b444c93",
+          "after": "b51bf684dd8b6862fe1e0ba4c68946f2560a7065980540a1ba53c18e3b444c93"
+        },
+        {
+          "name": "applyScoreAttackForAnswer",
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        },
+        {
+          "name": "settleRiskRewardAnswer",
+          "unchanged": true,
+          "before": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa",
+          "after": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa"
+        },
+        {
+          "name": "saveGameState",
+          "unchanged": true,
+          "before": "622df62590006f268b03e097331269870c0cb858eec50aac80ca631b22c41ea8",
+          "after": "622df62590006f268b03e097331269870c0cb858eec50aac80ca631b22c41ea8"
+        },
+        {
+          "name": "loadSavedGame",
+          "unchanged": true,
+          "before": "6cab46352029e2fa83100a9514b1deb3c7dade6c9c8b238f12f6901ec2e0c71e",
+          "after": "6cab46352029e2fa83100a9514b1deb3c7dade6c9c8b238f12f6901ec2e0c71e"
+        },
+        {
+          "name": "sendGameData",
+          "unchanged": true,
+          "before": "5fd7e85ce7382c7ca8f10b95e8f0d57c7f3a3cb2a9ae61f4e004420daf23714f",
+          "after": "5fd7e85ce7382c7ca8f10b95e8f0d57c7f3a3cb2a9ae61f4e004420daf23714f"
+        }
+      ]
+    },
+    {
+      "file": "play/managerial-directorate-telemetry-poc/strategy-desk/index.html",
+      "checks": [
+        {
+          "name": "skillRepairSeedPools",
+          "unchanged": true,
+          "before": "c18f16195c6ff0d8e9d2638b39e10ff5e57877f07cfaa38f1fabf11b7c17856d",
+          "after": "c18f16195c6ff0d8e9d2638b39e10ff5e57877f07cfaa38f1fabf11b7c17856d"
+        },
+        {
+          "name": "repairQuestions",
+          "unchanged": true,
+          "before": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5",
+          "after": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5"
+        },
+        {
+          "name": "bridgeQuestions",
+          "unchanged": true,
+          "before": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416",
+          "after": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416"
+        },
+        {
+          "name": "FACULTY_COMPOSITION_CONFIG",
+          "unchanged": true,
+          "before": "e8ed405e0ee5c3afa26310eaf69b0aba66f7f618cf67e9f79efb2c46813bb14a",
+          "after": "e8ed405e0ee5c3afa26310eaf69b0aba66f7f618cf67e9f79efb2c46813bb14a"
+        },
+        {
+          "name": "TIMING",
+          "unchanged": true,
+          "before": "b172f98feeafa50cc8ccbc3673875e140f3da53e8d977aa98d175d865f5e23cb",
+          "after": "b172f98feeafa50cc8ccbc3673875e140f3da53e8d977aa98d175d865f5e23cb"
+        },
+        {
+          "name": "RAPID_GUESS_CONFIG",
+          "unchanged": true,
+          "before": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290",
+          "after": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290"
+        },
+        {
+          "name": "FACULTY_MODE_REQUIREMENTS",
+          "unchanged": true,
+          "before": "e94724a89da94ea4ba882111c6c451b56b43c3bde70388a7f9a88d6287f2bc74",
+          "after": "e94724a89da94ea4ba882111c6c451b56b43c3bde70388a7f9a88d6287f2bc74"
+        },
+        {
+          "name": "TELEMETRY_COLUMNS",
+          "unchanged": true,
+          "before": "fb1ba15adf2a68064e4e7d3ea8dec86ce2e33aee84b7aefc7f9d46931a7e8580",
+          "after": "fb1ba15adf2a68064e4e7d3ea8dec86ce2e33aee84b7aefc7f9d46931a7e8580"
+        },
+        {
+          "name": "questionAssetMetadata",
+          "unchanged": true,
+          "before": "a1c765957ccf5aa8b67d087a73ebdb1b12b938480e887ae74936e8f1123c605c",
+          "after": "a1c765957ccf5aa8b67d087a73ebdb1b12b938480e887ae74936e8f1123c605c"
+        },
+        {
+          "name": "answer",
+          "unchanged": true,
+          "before": "aba7e44877ce496d812d06b6f0aca1977dd341609ef5bddab7976c57a7d4c6db",
+          "after": "aba7e44877ce496d812d06b6f0aca1977dd341609ef5bddab7976c57a7d4c6db"
+        },
+        {
+          "name": "loadQuestion",
+          "unchanged": true,
+          "before": "ceb55a9c7a5172a6826c6d010b9a3918a65cc57d5e83d3270c14bebcbfc467c5",
+          "after": "ceb55a9c7a5172a6826c6d010b9a3918a65cc57d5e83d3270c14bebcbfc467c5"
+        },
+        {
+          "name": "shuffleOptions",
+          "unchanged": true,
+          "before": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d",
+          "after": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d"
+        },
+        {
+          "name": "buildBossQuestionSet",
+          "unchanged": true,
+          "before": "ee5f21989949a770864d1dbab5ffdb42542109e43a05a535bc6ca02b41361c65",
+          "after": "ee5f21989949a770864d1dbab5ffdb42542109e43a05a535bc6ca02b41361c65"
+        },
+        {
+          "name": "getWeakestBossObjective",
+          "unchanged": true,
+          "before": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc",
+          "after": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc"
+        },
+        {
+          "name": "isQuestionAnswerCorrect",
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        {
+          "name": "recordAdaptiveAttempt",
+          "unchanged": true,
+          "before": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054",
+          "after": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054"
+        },
+        {
+          "name": "getDifficultyForMode",
+          "unchanged": true,
+          "before": "b51bf684dd8b6862fe1e0ba4c68946f2560a7065980540a1ba53c18e3b444c93",
+          "after": "b51bf684dd8b6862fe1e0ba4c68946f2560a7065980540a1ba53c18e3b444c93"
+        },
+        {
+          "name": "applyScoreAttackForAnswer",
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        },
+        {
+          "name": "settleRiskRewardAnswer",
+          "unchanged": true,
+          "before": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa",
+          "after": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa"
+        },
+        {
+          "name": "saveGameState",
+          "unchanged": true,
+          "before": "622df62590006f268b03e097331269870c0cb858eec50aac80ca631b22c41ea8",
+          "after": "622df62590006f268b03e097331269870c0cb858eec50aac80ca631b22c41ea8"
+        },
+        {
+          "name": "loadSavedGame",
+          "unchanged": true,
+          "before": "6cab46352029e2fa83100a9514b1deb3c7dade6c9c8b238f12f6901ec2e0c71e",
+          "after": "6cab46352029e2fa83100a9514b1deb3c7dade6c9c8b238f12f6901ec2e0c71e"
+        },
+        {
+          "name": "sendGameData",
+          "unchanged": true,
+          "before": "5fd7e85ce7382c7ca8f10b95e8f0d57c7f3a3cb2a9ae61f4e004420daf23714f",
+          "after": "5fd7e85ce7382c7ca8f10b95e8f0d57c7f3a3cb2a9ae61f4e004420daf23714f"
+        }
+      ]
+    },
+    {
+      "file": "play/managerial-intelligence-directorate/agency-protocol/index.html",
+      "checks": [
+        {
+          "name": "FACULTY_COMPOSITION_CONFIG",
+          "unchanged": true,
+          "before": "6d9ae3a4cc79727de3a180aa4fbe01dfb0270b6cdba8c848055ce63ce3f2faa6",
+          "after": "6d9ae3a4cc79727de3a180aa4fbe01dfb0270b6cdba8c848055ce63ce3f2faa6"
+        },
+        {
+          "name": "TIMING",
+          "unchanged": true,
+          "before": "b172f98feeafa50cc8ccbc3673875e140f3da53e8d977aa98d175d865f5e23cb",
+          "after": "b172f98feeafa50cc8ccbc3673875e140f3da53e8d977aa98d175d865f5e23cb"
+        },
+        {
+          "name": "RAPID_GUESS_CONFIG",
+          "unchanged": true,
+          "before": "5c2741891e88b5b58b7e7c4169ee69e5b04f9f935b407da1226482434388d02c",
+          "after": "5c2741891e88b5b58b7e7c4169ee69e5b04f9f935b407da1226482434388d02c"
+        },
+        {
+          "name": "TELEMETRY_COLUMNS",
+          "unchanged": true,
+          "before": "fb1ba15adf2a68064e4e7d3ea8dec86ce2e33aee84b7aefc7f9d46931a7e8580",
+          "after": "fb1ba15adf2a68064e4e7d3ea8dec86ce2e33aee84b7aefc7f9d46931a7e8580"
+        },
+        {
+          "name": "answer",
+          "unchanged": true,
+          "before": "aa665c8bf0d579cbfab0d1d99f8a8f15ba7ef3ca6893f98b42a86ef595c7b08a",
+          "after": "aa665c8bf0d579cbfab0d1d99f8a8f15ba7ef3ca6893f98b42a86ef595c7b08a"
+        },
+        {
+          "name": "loadQuestion",
+          "unchanged": true,
+          "before": "ed603b4933f1d0f31fd2f3d8e6019d76446e75f4ea1964c1bb57988ce28f1802",
+          "after": "ed603b4933f1d0f31fd2f3d8e6019d76446e75f4ea1964c1bb57988ce28f1802"
+        },
+        {
+          "name": "shuffleOptions",
+          "unchanged": true,
+          "before": "3286b0e4a0f8c10efbca3697d40043b7376901b55e24e83a030ad626a6d680e0",
+          "after": "3286b0e4a0f8c10efbca3697d40043b7376901b55e24e83a030ad626a6d680e0"
+        },
+        {
+          "name": "buildBossQuestionSet",
+          "unchanged": true,
+          "before": "7e8135ad64a60a2c782032712b13393bc39a615c08d4ae765cef2b696f8162ae",
+          "after": "7e8135ad64a60a2c782032712b13393bc39a615c08d4ae765cef2b696f8162ae"
+        },
+        {
+          "name": "getWeakestBossObjective",
+          "unchanged": true,
+          "before": "a420dcdb671c27055cdbc00654e951a78676e03fabda23f7afd821732eb7c100",
+          "after": "a420dcdb671c27055cdbc00654e951a78676e03fabda23f7afd821732eb7c100"
+        },
+        {
+          "name": "isQuestionAnswerCorrect",
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        {
+          "name": "recordAdaptiveAttempt",
+          "unchanged": true,
+          "before": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054",
+          "after": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054"
+        },
+        {
+          "name": "getDifficultyForMode",
+          "unchanged": true,
+          "before": "e3946bf39b26f1f8f95ecb7f73073bfba583383c8ca81590466196fa908f61c4",
+          "after": "e3946bf39b26f1f8f95ecb7f73073bfba583383c8ca81590466196fa908f61c4"
+        },
+        {
+          "name": "applyScoreAttackForAnswer",
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        },
+        {
+          "name": "settleRiskRewardAnswer",
+          "unchanged": true,
+          "before": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa",
+          "after": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa"
+        },
+        {
+          "name": "saveGameState",
+          "unchanged": true,
+          "before": "01905c2e53f3abbb3ab9adf3cb1d98771ada7e934a238f13052b0daffb15ee32",
+          "after": "01905c2e53f3abbb3ab9adf3cb1d98771ada7e934a238f13052b0daffb15ee32"
+        },
+        {
+          "name": "loadSavedGame",
+          "unchanged": true,
+          "before": "8838d3b92f58645256f1acba4e9c772c36c5e3fed6f9f809393d97cdf757377a",
+          "after": "8838d3b92f58645256f1acba4e9c772c36c5e3fed6f9f809393d97cdf757377a"
+        },
+        {
+          "name": "sendGameData",
+          "unchanged": true,
+          "before": "fe4957c7ab1e2a1549c1c52213abf05911f6e828f9ebcfeea4e147e03d335c31",
+          "after": "fe4957c7ab1e2a1549c1c52213abf05911f6e828f9ebcfeea4e147e03d335c31"
+        }
+      ]
+    },
+    {
+      "file": "play/managerial-intelligence-directorate/cost-directive/index.html",
+      "checks": [
+        {
+          "name": "skillRepairSeedPools",
+          "unchanged": true,
+          "before": "c18f16195c6ff0d8e9d2638b39e10ff5e57877f07cfaa38f1fabf11b7c17856d",
+          "after": "c18f16195c6ff0d8e9d2638b39e10ff5e57877f07cfaa38f1fabf11b7c17856d"
+        },
+        {
+          "name": "repairQuestions",
+          "unchanged": true,
+          "before": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5",
+          "after": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5"
+        },
+        {
+          "name": "bridgeQuestions",
+          "unchanged": true,
+          "before": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416",
+          "after": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416"
+        },
+        {
+          "name": "FACULTY_COMPOSITION_CONFIG",
+          "unchanged": true,
+          "before": "518459be12c408aaa31641d51539eaa658e6e8b170a39a1548c2d2b0ab0c4a68",
+          "after": "518459be12c408aaa31641d51539eaa658e6e8b170a39a1548c2d2b0ab0c4a68"
+        },
+        {
+          "name": "TIMING",
+          "unchanged": true,
+          "before": "b172f98feeafa50cc8ccbc3673875e140f3da53e8d977aa98d175d865f5e23cb",
+          "after": "b172f98feeafa50cc8ccbc3673875e140f3da53e8d977aa98d175d865f5e23cb"
+        },
+        {
+          "name": "RAPID_GUESS_CONFIG",
+          "unchanged": true,
+          "before": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290",
+          "after": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290"
+        },
+        {
+          "name": "FACULTY_MODE_REQUIREMENTS",
+          "unchanged": true,
+          "before": "e94724a89da94ea4ba882111c6c451b56b43c3bde70388a7f9a88d6287f2bc74",
+          "after": "e94724a89da94ea4ba882111c6c451b56b43c3bde70388a7f9a88d6287f2bc74"
+        },
+        {
+          "name": "TELEMETRY_COLUMNS",
+          "unchanged": true,
+          "before": "fb1ba15adf2a68064e4e7d3ea8dec86ce2e33aee84b7aefc7f9d46931a7e8580",
+          "after": "fb1ba15adf2a68064e4e7d3ea8dec86ce2e33aee84b7aefc7f9d46931a7e8580"
+        },
+        {
+          "name": "questionAssetMetadata",
+          "unchanged": true,
+          "before": "d8e8b8c666f36cfb7b34841621ccd6873050ad6bc6879027aff0670fd2cbd110",
+          "after": "d8e8b8c666f36cfb7b34841621ccd6873050ad6bc6879027aff0670fd2cbd110"
+        },
+        {
+          "name": "answer",
+          "unchanged": true,
+          "before": "f47123111a8f0fee7248a184eada58d5615e3fb4dfeec254b2ce3429b0105fb7",
+          "after": "f47123111a8f0fee7248a184eada58d5615e3fb4dfeec254b2ce3429b0105fb7"
+        },
+        {
+          "name": "loadQuestion",
+          "unchanged": true,
+          "before": "6ca17f9c6c7824b753d4076c818334569066a6b845480e742b272a7601c07131",
+          "after": "6ca17f9c6c7824b753d4076c818334569066a6b845480e742b272a7601c07131"
+        },
+        {
+          "name": "shuffleOptions",
+          "unchanged": true,
+          "before": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d",
+          "after": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d"
+        },
+        {
+          "name": "buildBossQuestionSet",
+          "unchanged": true,
+          "before": "f67ac686fe061d6b9c2e76bd81be7d7686ff83454da883b51d0325cf8dcc080e",
+          "after": "f67ac686fe061d6b9c2e76bd81be7d7686ff83454da883b51d0325cf8dcc080e"
+        },
+        {
+          "name": "getWeakestBossObjective",
+          "unchanged": true,
+          "before": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc",
+          "after": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc"
+        },
+        {
+          "name": "isQuestionAnswerCorrect",
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        {
+          "name": "recordAdaptiveAttempt",
+          "unchanged": true,
+          "before": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054",
+          "after": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054"
+        },
+        {
+          "name": "getDifficultyForMode",
+          "unchanged": true,
+          "before": "b51bf684dd8b6862fe1e0ba4c68946f2560a7065980540a1ba53c18e3b444c93",
+          "after": "b51bf684dd8b6862fe1e0ba4c68946f2560a7065980540a1ba53c18e3b444c93"
+        },
+        {
+          "name": "applyScoreAttackForAnswer",
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        },
+        {
+          "name": "settleRiskRewardAnswer",
+          "unchanged": true,
+          "before": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa",
+          "after": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa"
+        },
+        {
+          "name": "saveGameState",
+          "unchanged": true,
+          "before": "20a87cdf50dbed47f6b0acbcdb78f113cba2e9035f97096a6e7c6172ba9641fc",
+          "after": "20a87cdf50dbed47f6b0acbcdb78f113cba2e9035f97096a6e7c6172ba9641fc"
+        },
+        {
+          "name": "loadSavedGame",
+          "unchanged": true,
+          "before": "deaea42ce770ee6ea273f96c4d50f45cb3e0cafe4f095b05fded477457f58d0a",
+          "after": "deaea42ce770ee6ea273f96c4d50f45cb3e0cafe4f095b05fded477457f58d0a"
+        },
+        {
+          "name": "sendGameData",
+          "unchanged": true,
+          "before": "5fd7e85ce7382c7ca8f10b95e8f0d57c7f3a3cb2a9ae61f4e004420daf23714f",
+          "after": "5fd7e85ce7382c7ca8f10b95e8f0d57c7f3a3cb2a9ae61f4e004420daf23714f"
+        }
+      ]
+    },
+    {
+      "file": "play/managerial-intelligence-directorate/market-signal/index.html",
+      "checks": [
+        {
+          "name": "microSkillRepairPools",
+          "unchanged": true,
+          "before": "6e645be9de67a9d115b751dc2ac68e6df4f943e7408dba07687a0d32aefa5804",
+          "after": "6e645be9de67a9d115b751dc2ac68e6df4f943e7408dba07687a0d32aefa5804"
+        },
+        {
+          "name": "microSkillBridgePools",
+          "unchanged": true,
+          "before": "fe6ec7fe583ac857af0270302930cd2f1436096380758996431e1c9a778ba1e8",
+          "after": "fe6ec7fe583ac857af0270302930cd2f1436096380758996431e1c9a778ba1e8"
+        },
+        {
+          "name": "skillRepairSeedPools",
+          "unchanged": true,
+          "before": "c18f16195c6ff0d8e9d2638b39e10ff5e57877f07cfaa38f1fabf11b7c17856d",
+          "after": "c18f16195c6ff0d8e9d2638b39e10ff5e57877f07cfaa38f1fabf11b7c17856d"
+        },
+        {
+          "name": "repairQuestions",
+          "unchanged": true,
+          "before": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5",
+          "after": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5"
+        },
+        {
+          "name": "bridgeQuestions",
+          "unchanged": true,
+          "before": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416",
+          "after": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416"
+        },
+        {
+          "name": "FACULTY_COMPOSITION_CONFIG",
+          "unchanged": true,
+          "before": "ea60a1df745ce1f740b2993093018f7a1ea6a89e46a00800cff5b9a0e5c3056a",
+          "after": "ea60a1df745ce1f740b2993093018f7a1ea6a89e46a00800cff5b9a0e5c3056a"
+        },
+        {
+          "name": "TIMING",
+          "unchanged": true,
+          "before": "b172f98feeafa50cc8ccbc3673875e140f3da53e8d977aa98d175d865f5e23cb",
+          "after": "b172f98feeafa50cc8ccbc3673875e140f3da53e8d977aa98d175d865f5e23cb"
+        },
+        {
+          "name": "RAPID_GUESS_CONFIG",
+          "unchanged": true,
+          "before": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290",
+          "after": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290"
+        },
+        {
+          "name": "FACULTY_MODE_REQUIREMENTS",
+          "unchanged": true,
+          "before": "e94724a89da94ea4ba882111c6c451b56b43c3bde70388a7f9a88d6287f2bc74",
+          "after": "e94724a89da94ea4ba882111c6c451b56b43c3bde70388a7f9a88d6287f2bc74"
+        },
+        {
+          "name": "TELEMETRY_COLUMNS",
+          "unchanged": true,
+          "before": "fb1ba15adf2a68064e4e7d3ea8dec86ce2e33aee84b7aefc7f9d46931a7e8580",
+          "after": "fb1ba15adf2a68064e4e7d3ea8dec86ce2e33aee84b7aefc7f9d46931a7e8580"
+        },
+        {
+          "name": "questionAssetMetadata",
+          "unchanged": true,
+          "before": "3f7a45812cb512dfcd86854eccf095a557ecffe8222ac40f491f63b852624898",
+          "after": "3f7a45812cb512dfcd86854eccf095a557ecffe8222ac40f491f63b852624898"
+        },
+        {
+          "name": "answer",
+          "unchanged": true,
+          "before": "ce36f0bc1f76e2a887ff92bc08644fd175f4e37dd4ccd21fafb61751a8b5d717",
+          "after": "ce36f0bc1f76e2a887ff92bc08644fd175f4e37dd4ccd21fafb61751a8b5d717"
+        },
+        {
+          "name": "loadQuestion",
+          "unchanged": true,
+          "before": "cf87cd15194b7ce22c155695548f15a87adba2c69552928607206a7706295938",
+          "after": "cf87cd15194b7ce22c155695548f15a87adba2c69552928607206a7706295938"
+        },
+        {
+          "name": "shuffleOptions",
+          "unchanged": true,
+          "before": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d",
+          "after": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d"
+        },
+        {
+          "name": "buildBossQuestionSet",
+          "unchanged": true,
+          "before": "f67ac686fe061d6b9c2e76bd81be7d7686ff83454da883b51d0325cf8dcc080e",
+          "after": "f67ac686fe061d6b9c2e76bd81be7d7686ff83454da883b51d0325cf8dcc080e"
+        },
+        {
+          "name": "getWeakestBossObjective",
+          "unchanged": true,
+          "before": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc",
+          "after": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc"
+        },
+        {
+          "name": "isQuestionAnswerCorrect",
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        {
+          "name": "recordAdaptiveAttempt",
+          "unchanged": true,
+          "before": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054",
+          "after": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054"
+        },
+        {
+          "name": "getDifficultyForMode",
+          "unchanged": true,
+          "before": "b51bf684dd8b6862fe1e0ba4c68946f2560a7065980540a1ba53c18e3b444c93",
+          "after": "b51bf684dd8b6862fe1e0ba4c68946f2560a7065980540a1ba53c18e3b444c93"
+        },
+        {
+          "name": "applyScoreAttackForAnswer",
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        },
+        {
+          "name": "settleRiskRewardAnswer",
+          "unchanged": true,
+          "before": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa",
+          "after": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa"
+        },
+        {
+          "name": "saveGameState",
+          "unchanged": true,
+          "before": "622df62590006f268b03e097331269870c0cb858eec50aac80ca631b22c41ea8",
+          "after": "622df62590006f268b03e097331269870c0cb858eec50aac80ca631b22c41ea8"
+        },
+        {
+          "name": "loadSavedGame",
+          "unchanged": true,
+          "before": "6cab46352029e2fa83100a9514b1deb3c7dade6c9c8b238f12f6901ec2e0c71e",
+          "after": "6cab46352029e2fa83100a9514b1deb3c7dade6c9c8b238f12f6901ec2e0c71e"
+        },
+        {
+          "name": "sendGameData",
+          "unchanged": true,
+          "before": "5fd7e85ce7382c7ca8f10b95e8f0d57c7f3a3cb2a9ae61f4e004420daf23714f",
+          "after": "5fd7e85ce7382c7ca8f10b95e8f0d57c7f3a3cb2a9ae61f4e004420daf23714f"
+        }
+      ]
+    },
+    {
+      "file": "play/managerial-intelligence-directorate/strategy-desk/index.html",
+      "checks": [
+        {
+          "name": "skillRepairSeedPools",
+          "unchanged": true,
+          "before": "c18f16195c6ff0d8e9d2638b39e10ff5e57877f07cfaa38f1fabf11b7c17856d",
+          "after": "c18f16195c6ff0d8e9d2638b39e10ff5e57877f07cfaa38f1fabf11b7c17856d"
+        },
+        {
+          "name": "repairQuestions",
+          "unchanged": true,
+          "before": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5",
+          "after": "4a5354c06f2e81e39fdc5d3d62d96a8b7d919530fd07b93120bc673424a3bfd5"
+        },
+        {
+          "name": "bridgeQuestions",
+          "unchanged": true,
+          "before": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416",
+          "after": "7bf083549c7460fbaa6b97b7ba3d7b06dfb537155e3f9bba3f23877485583416"
+        },
+        {
+          "name": "FACULTY_COMPOSITION_CONFIG",
+          "unchanged": true,
+          "before": "e8ed405e0ee5c3afa26310eaf69b0aba66f7f618cf67e9f79efb2c46813bb14a",
+          "after": "e8ed405e0ee5c3afa26310eaf69b0aba66f7f618cf67e9f79efb2c46813bb14a"
+        },
+        {
+          "name": "TIMING",
+          "unchanged": true,
+          "before": "b172f98feeafa50cc8ccbc3673875e140f3da53e8d977aa98d175d865f5e23cb",
+          "after": "b172f98feeafa50cc8ccbc3673875e140f3da53e8d977aa98d175d865f5e23cb"
+        },
+        {
+          "name": "RAPID_GUESS_CONFIG",
+          "unchanged": true,
+          "before": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290",
+          "after": "2d77d3181f09dc5f264c73066aac812bb4d2c278c5a85bd72d003293178ba290"
+        },
+        {
+          "name": "FACULTY_MODE_REQUIREMENTS",
+          "unchanged": true,
+          "before": "e94724a89da94ea4ba882111c6c451b56b43c3bde70388a7f9a88d6287f2bc74",
+          "after": "e94724a89da94ea4ba882111c6c451b56b43c3bde70388a7f9a88d6287f2bc74"
+        },
+        {
+          "name": "TELEMETRY_COLUMNS",
+          "unchanged": true,
+          "before": "fb1ba15adf2a68064e4e7d3ea8dec86ce2e33aee84b7aefc7f9d46931a7e8580",
+          "after": "fb1ba15adf2a68064e4e7d3ea8dec86ce2e33aee84b7aefc7f9d46931a7e8580"
+        },
+        {
+          "name": "questionAssetMetadata",
+          "unchanged": true,
+          "before": "ca5dc23a49db90f924736a37696fd9f0383b17bffb8c1ad3e090134635b6443d",
+          "after": "ca5dc23a49db90f924736a37696fd9f0383b17bffb8c1ad3e090134635b6443d"
+        },
+        {
+          "name": "answer",
+          "unchanged": true,
+          "before": "26b47b2e584d10e7ed56a6c8114e3bd89a1c6c249cbf1bb43f2ca5f737a84433",
+          "after": "26b47b2e584d10e7ed56a6c8114e3bd89a1c6c249cbf1bb43f2ca5f737a84433"
+        },
+        {
+          "name": "loadQuestion",
+          "unchanged": true,
+          "before": "e6a770f01862b8264b3cb98903b58e7247e5ac3413b8f03359132b6e53db35c8",
+          "after": "e6a770f01862b8264b3cb98903b58e7247e5ac3413b8f03359132b6e53db35c8"
+        },
+        {
+          "name": "shuffleOptions",
+          "unchanged": true,
+          "before": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d",
+          "after": "da7f897ed208eb6d6bf799a1d6e5104d4d5b28e217de578abcff37f74710c83d"
+        },
+        {
+          "name": "buildBossQuestionSet",
+          "unchanged": true,
+          "before": "4b5d5ea7a6cecbfb9668006e95d31cc2ec7abc050707ccde4f6b136f8f7d8e09",
+          "after": "4b5d5ea7a6cecbfb9668006e95d31cc2ec7abc050707ccde4f6b136f8f7d8e09"
+        },
+        {
+          "name": "getWeakestBossObjective",
+          "unchanged": true,
+          "before": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc",
+          "after": "95994033a234e56c03ee96e7b69bdd16f10fab1e8e3e69d2036eb3a1e484efdc"
+        },
+        {
+          "name": "isQuestionAnswerCorrect",
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        {
+          "name": "recordAdaptiveAttempt",
+          "unchanged": true,
+          "before": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054",
+          "after": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054"
+        },
+        {
+          "name": "getDifficultyForMode",
+          "unchanged": true,
+          "before": "b51bf684dd8b6862fe1e0ba4c68946f2560a7065980540a1ba53c18e3b444c93",
+          "after": "b51bf684dd8b6862fe1e0ba4c68946f2560a7065980540a1ba53c18e3b444c93"
+        },
+        {
+          "name": "applyScoreAttackForAnswer",
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        },
+        {
+          "name": "settleRiskRewardAnswer",
+          "unchanged": true,
+          "before": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa",
+          "after": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa"
+        },
+        {
+          "name": "saveGameState",
+          "unchanged": true,
+          "before": "622df62590006f268b03e097331269870c0cb858eec50aac80ca631b22c41ea8",
+          "after": "622df62590006f268b03e097331269870c0cb858eec50aac80ca631b22c41ea8"
+        },
+        {
+          "name": "loadSavedGame",
+          "unchanged": true,
+          "before": "6cab46352029e2fa83100a9514b1deb3c7dade6c9c8b238f12f6901ec2e0c71e",
+          "after": "6cab46352029e2fa83100a9514b1deb3c7dade6c9c8b238f12f6901ec2e0c71e"
+        },
+        {
+          "name": "sendGameData",
+          "unchanged": true,
+          "before": "5fd7e85ce7382c7ca8f10b95e8f0d57c7f3a3cb2a9ae61f4e004420daf23714f",
+          "after": "5fd7e85ce7382c7ca8f10b95e8f0d57c7f3a3cb2a9ae61f4e004420daf23714f"
+        }
+      ]
+    },
+    {
+      "file": "play/micro-domains/labyrinth-of-choice/index.html",
+      "checks": [
+        {
+          "name": "FACULTY_COMPOSITION_CONFIG",
+          "unchanged": true,
+          "before": "63001012fba7806b27cc080f98aebbd7f1b5644fe68c4f7b18e07a945f11acba",
+          "after": "63001012fba7806b27cc080f98aebbd7f1b5644fe68c4f7b18e07a945f11acba"
+        },
+        {
+          "name": "TIMING",
+          "unchanged": true,
+          "before": "b172f98feeafa50cc8ccbc3673875e140f3da53e8d977aa98d175d865f5e23cb",
+          "after": "b172f98feeafa50cc8ccbc3673875e140f3da53e8d977aa98d175d865f5e23cb"
+        },
+        {
+          "name": "RAPID_GUESS_CONFIG",
+          "unchanged": true,
+          "before": "5c2741891e88b5b58b7e7c4169ee69e5b04f9f935b407da1226482434388d02c",
+          "after": "5c2741891e88b5b58b7e7c4169ee69e5b04f9f935b407da1226482434388d02c"
+        },
+        {
+          "name": "TELEMETRY_COLUMNS",
+          "unchanged": true,
+          "before": "f26ca08eb30b2397265259ea979f824f44aebc0cce94a5cbce31336c6e4a2485",
+          "after": "f26ca08eb30b2397265259ea979f824f44aebc0cce94a5cbce31336c6e4a2485"
+        },
+        {
+          "name": "answer",
+          "unchanged": true,
+          "before": "d50819552d69e88b9ccc250fb80b5f84142e0a4158b0261be0027c0dc2469d6e",
+          "after": "d50819552d69e88b9ccc250fb80b5f84142e0a4158b0261be0027c0dc2469d6e"
+        },
+        {
+          "name": "loadQuestion",
+          "unchanged": true,
+          "before": "ed9b93c116ea19281338ba638513f499b3f2100dfa7c9f2783d9181b07ac00ad",
+          "after": "ed9b93c116ea19281338ba638513f499b3f2100dfa7c9f2783d9181b07ac00ad"
+        },
+        {
+          "name": "shuffleOptions",
+          "unchanged": true,
+          "before": "c2786b33f88fab22db1c3268c6ff5f3df6186e19329ac5d0cc6e177a4c332ee6",
+          "after": "c2786b33f88fab22db1c3268c6ff5f3df6186e19329ac5d0cc6e177a4c332ee6"
+        },
+        {
+          "name": "buildBossQuestionSet",
+          "unchanged": true,
+          "before": "bf276d936fec80187b84a5a1122dffc4558bbeeaf0d20b76b7668dd1faaba815",
+          "after": "bf276d936fec80187b84a5a1122dffc4558bbeeaf0d20b76b7668dd1faaba815"
+        },
+        {
+          "name": "getWeakestBossObjective",
+          "unchanged": true,
+          "before": "a420dcdb671c27055cdbc00654e951a78676e03fabda23f7afd821732eb7c100",
+          "after": "a420dcdb671c27055cdbc00654e951a78676e03fabda23f7afd821732eb7c100"
+        },
+        {
+          "name": "isQuestionAnswerCorrect",
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        {
+          "name": "recordAdaptiveAttempt",
+          "unchanged": true,
+          "before": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054",
+          "after": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054"
+        },
+        {
+          "name": "getDifficultyForMode",
+          "unchanged": true,
+          "before": "8a10c49e373d60dcb34723c557448cc3be4f64f25b29ec9e98287dad1b6e83bd",
+          "after": "8a10c49e373d60dcb34723c557448cc3be4f64f25b29ec9e98287dad1b6e83bd"
+        },
+        {
+          "name": "applyScoreAttackForAnswer",
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        },
+        {
+          "name": "settleRiskRewardAnswer",
+          "unchanged": true,
+          "before": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa",
+          "after": "347ce72c7efb2fa915748f6ab4dfbc2f379d4601b3aa9eb56eb456ad295d19fa"
+        },
+        {
+          "name": "saveGameState",
+          "unchanged": true,
+          "before": "370e14c60acb92a4c03992b346be0c1bd26bfbd62dd2ffed27be48aa0a3f0439",
+          "after": "370e14c60acb92a4c03992b346be0c1bd26bfbd62dd2ffed27be48aa0a3f0439"
+        },
+        {
+          "name": "loadSavedGame",
+          "unchanged": true,
+          "before": "48198e47d087e74823772600d2a8213ce3802e87f004b95eaa303bd2b4491ccf",
+          "after": "48198e47d087e74823772600d2a8213ce3802e87f004b95eaa303bd2b4491ccf"
+        },
+        {
+          "name": "sendGameData",
+          "unchanged": true,
+          "before": "23727cf65271be83ab076d37b46c8a5c4c7082b82dd1a7e8b0a36f661c6c7812",
+          "after": "23727cf65271be83ab076d37b46c8a5c4c7082b82dd1a7e8b0a36f661c6c7812"
+        }
+      ]
+    }
+  ],
+  "failed": []
+}

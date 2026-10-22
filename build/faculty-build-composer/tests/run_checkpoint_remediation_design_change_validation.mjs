@@ -59,6 +59,9 @@ check(new Set(selectionContext.selected.map(q=>q.primarySkill)).size===3,"target
 check(selectionContext.selected.every(q=>q.objective==='OLI.2'),"skill variety preserves the diagnosed objective");
 for(const expression of [/tagWeakness >= 2\.2/,/typeBucket\.attempts >= 2/,/typeAccuracy < 0\.6/,/objectiveAccuracy < 0\.5/,/objectiveAttempts >= 2/,/objectiveAccuracy < 0\.6/])check(expression.test(template),`remediation threshold retained ${expression}`);
 
+// This historical simulation describes assessment modes only. Standard's
+// immediate first-miss setback is exercised by run_standard_boss_progression_validation.mjs
+// and the real-browser boss-checkpoint-regression.mjs matrix.
 function simulate({checkpointAnswers=[],postCheckpointMiss=false,weaknessWouldTrigger=true}){
   const state={room:checkpointAnswers.length?10:9,checkpointActive:checkpointAnswers.length>0,remaining:checkpointAnswers.length?3:0,evidence:[],transitions:[],remediation:null};
   const record=(correct,location)=>state.evidence.push({correct,location,questionId:100+state.evidence.length,concept:"consumer-choice",objective:"CC.1",skill:"construct_budget_constraint"});
@@ -87,6 +90,6 @@ check(mastery.attempts===3&&mastery.misses===2&&mastery.accuracy===1/3&&mastery.
 check(ordinary.transitions.join(",")==="repair,bridge,retest,resume-origin-room"&&ordinary.room===9,"TEST J: ordinary Repair → Bridge → Recovery Retest behavior is unchanged");
 check(finalMiss.transitions.at(-1)==="checkpoint-complete"&&!finalMiss.transitions.includes("repair"),"final checkpoint question resolves before any remediation transition");
 
-const output={status:errors.length?"FAIL":"PASS",checks:checks.length,errors,simulation:{oneMiss,twoMisses,finalMiss,clean,deferred,ordinary}};
+const output={status:errors.length?"FAIL":"PASS",checks:checks.length,errors,simulationScope:"assessment modes; Standard has a separate first-miss gate regression",simulation:{oneMiss,twoMisses,finalMiss,clean,deferred,ordinary}};
 console.log(JSON.stringify(output,null,2));
 if(errors.length)process.exit(1);

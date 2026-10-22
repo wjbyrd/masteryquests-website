@@ -1,0 +1,1508 @@
+[
+  {
+    "status": "PASS",
+    "file": "play/economic-realm/market-gate/index.html",
+    "version": "current",
+    "pattern": [
+      false,
+      false,
+      false
+    ],
+    "bossRoom": 10,
+    "resume": false,
+    "double": true,
+    "natural": false,
+    "initial": {
+      "room": 10,
+      "bossHealth": 3,
+      "bossCheckpoint": 1,
+      "attempts": 0,
+      "correct": 0,
+      "checkpoint": {
+        "key": "standard:10",
+        "room": 10,
+        "objective": "GE.7.7",
+        "label": "economist policy role",
+        "total": 0,
+        "correct": 0,
+        "incorrect": 0
+      },
+      "outcome": null,
+      "remediation": false,
+      "question": "ERQ-P77-EPOL-EASYB-023",
+      "title": "THE FRONTIER KEEPER\nWhat can an economist contribute without choosing society’s values?",
+      "modal": "Signal Warning",
+      "inventory": [
+        0,
+        0,
+        0
+      ]
+    },
+    "trace": [
+      {
+        "wanted": false,
+        "before": {
+          "room": 10,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "attempts": 0,
+          "correct": 0,
+          "checkpoint": {
+            "key": "standard:10",
+            "room": 10,
+            "objective": "GE.7.7",
+            "label": "economist policy role",
+            "total": 0,
+            "correct": 0,
+            "incorrect": 0
+          },
+          "outcome": null,
+          "remediation": false,
+          "question": "ERQ-P77-EPOL-EASYB-023",
+          "title": "THE FRONTIER KEEPER\nWhat can an economist contribute without choosing society’s values?",
+          "modal": "Signal Warning",
+          "inventory": [
+            0,
+            0,
+            0
+          ]
+        },
+        "after": {
+          "room": 7,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "attempts": 1,
+          "correct": 0,
+          "checkpoint": null,
+          "outcome": {
+            "outcome": "not-secured",
+            "room": 10,
+            "correct": 0,
+            "total": 1,
+            "objective": "GE.7.7",
+            "label": "economist policy role"
+          },
+          "remediation": false,
+          "question": "ERQ-P77-EPOL-EASYB-023",
+          "title": "THE FRONTIER KEEPER\nWhat can an economist contribute without choosing society’s values?",
+          "modal": "Wrong Turn",
+          "inventory": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    ],
+    "summary": {
+      "room": 7,
+      "bossHealth": 3,
+      "bossCheckpoint": 1,
+      "attempts": 1,
+      "correct": 0,
+      "checkpoint": null,
+      "outcome": {
+        "outcome": "not-secured",
+        "room": 10,
+        "correct": 0,
+        "total": 1,
+        "objective": "GE.7.7",
+        "label": "economist policy role"
+      },
+      "remediation": false,
+      "question": "ERQ-P77-EPOL-EASYB-023",
+      "title": "THE FRONTIER KEEPER\nWhat can an economist contribute without choosing society’s values?",
+      "modal": "Wrong Turn",
+      "inventory": [
+        0,
+        0,
+        0
+      ]
+    },
+    "afterContinue": {
+      "room": 7,
+      "bossHealth": 3,
+      "bossCheckpoint": 1,
+      "attempts": 1,
+      "correct": 0,
+      "checkpoint": null,
+      "outcome": {
+        "outcome": "not-secured",
+        "room": 10,
+        "correct": 0,
+        "total": 1,
+        "objective": "GE.7.7",
+        "label": "economist policy role"
+      },
+      "remediation": false,
+      "question": "ERQ-P77-EPOL-E-002",
+      "title": "An economist estimates how a bus fee changes ridership. What role is primary?",
+      "modal": "Wrong Turn",
+      "inventory": [
+        0,
+        0,
+        0
+      ]
+    },
+    "repeatedClickRoom": null
+  },
+  {
+    "status": "PASS",
+    "file": "play/economic-realm/market-gate/index.html",
+    "version": "current",
+    "pattern": [
+      false,
+      false,
+      true
+    ],
+    "bossRoom": 10,
+    "resume": false,
+    "double": true,
+    "natural": false,
+    "initial": {
+      "room": 10,
+      "bossHealth": 3,
+      "bossCheckpoint": 1,
+      "attempts": 0,
+      "correct": 0,
+      "checkpoint": {
+        "key": "standard:10",
+        "room": 10,
+        "objective": "GE.7.7",
+        "label": "economist policy role",
+        "total": 0,
+        "correct": 0,
+        "incorrect": 0
+      },
+      "outcome": null,
+      "remediation": false,
+      "question": "ERQ-P77-EPOL-EASYB-023",
+      "title": "THE FRONTIER KEEPER\nWhat can an economist contribute without choosing society’s values?",
+      "modal": "Signal Warning",
+      "inventory": [
+        0,
+        0,
+        0
+      ]
+    },
+    "trace": [
+      {
+        "wanted": false,
+        "before": {
+          "room": 10,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "attempts": 0,
+          "correct": 0,
+          "checkpoint": {
+            "key": "standard:10",
+            "room": 10,
+            "objective": "GE.7.7",
+            "label": "economist policy role",
+            "total": 0,
+            "correct": 0,
+            "incorrect": 0
+          },
+          "outcome": null,
+          "remediation": false,
+          "question": "ERQ-P77-EPOL-EASYB-023",
+          "title": "THE FRONTIER KEEPER\nWhat can an economist contribute without choosing society’s values?",
+          "modal": "Signal Warning",
+          "inventory": [
+            0,
+            0,
+            0
+          ]
+        },
+        "after": {
+          "room": 7,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "attempts": 1,
+          "correct": 0,
+          "checkpoint": null,
+          "outcome": {
+            "outcome": "not-secured",
+            "room": 10,
+            "correct": 0,
+            "total": 1,
+            "objective": "GE.7.7",
+            "label": "economist policy role"
+          },
+          "remediation": false,
+          "question": "ERQ-P77-EPOL-EASYB-023",
+          "title": "THE FRONTIER KEEPER\nWhat can an economist contribute without choosing society’s values?",
+          "modal": "Wrong Turn",
+          "inventory": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    ],
+    "summary": {
+      "room": 7,
+      "bossHealth": 3,
+      "bossCheckpoint": 1,
+      "attempts": 1,
+      "correct": 0,
+      "checkpoint": null,
+      "outcome": {
+        "outcome": "not-secured",
+        "room": 10,
+        "correct": 0,
+        "total": 1,
+        "objective": "GE.7.7",
+        "label": "economist policy role"
+      },
+      "remediation": false,
+      "question": "ERQ-P77-EPOL-EASYB-023",
+      "title": "THE FRONTIER KEEPER\nWhat can an economist contribute without choosing society’s values?",
+      "modal": "Wrong Turn",
+      "inventory": [
+        0,
+        0,
+        0
+      ]
+    },
+    "afterContinue": {
+      "room": 7,
+      "bossHealth": 3,
+      "bossCheckpoint": 1,
+      "attempts": 1,
+      "correct": 0,
+      "checkpoint": null,
+      "outcome": {
+        "outcome": "not-secured",
+        "room": 10,
+        "correct": 0,
+        "total": 1,
+        "objective": "GE.7.7",
+        "label": "economist policy role"
+      },
+      "remediation": false,
+      "question": "ERQ-P77-EPOL-E-002",
+      "title": "An economist estimates how a bus fee changes ridership. What role is primary?",
+      "modal": "Wrong Turn",
+      "inventory": [
+        0,
+        0,
+        0
+      ]
+    },
+    "repeatedClickRoom": null
+  },
+  {
+    "status": "PASS",
+    "file": "play/economic-realm/market-gate/index.html",
+    "version": "current",
+    "pattern": [
+      false,
+      true,
+      false
+    ],
+    "bossRoom": 10,
+    "resume": false,
+    "double": true,
+    "natural": false,
+    "initial": {
+      "room": 10,
+      "bossHealth": 3,
+      "bossCheckpoint": 1,
+      "attempts": 0,
+      "correct": 0,
+      "checkpoint": {
+        "key": "standard:10",
+        "room": 10,
+        "objective": "GE.7.7",
+        "label": "economist policy role",
+        "total": 0,
+        "correct": 0,
+        "incorrect": 0
+      },
+      "outcome": null,
+      "remediation": false,
+      "question": "ERQ-P77-EPOL-EASYB-023",
+      "title": "THE FRONTIER KEEPER\nWhat can an economist contribute without choosing society’s values?",
+      "modal": "Signal Warning",
+      "inventory": [
+        0,
+        0,
+        0
+      ]
+    },
+    "trace": [
+      {
+        "wanted": false,
+        "before": {
+          "room": 10,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "attempts": 0,
+          "correct": 0,
+          "checkpoint": {
+            "key": "standard:10",
+            "room": 10,
+            "objective": "GE.7.7",
+            "label": "economist policy role",
+            "total": 0,
+            "correct": 0,
+            "incorrect": 0
+          },
+          "outcome": null,
+          "remediation": false,
+          "question": "ERQ-P77-EPOL-EASYB-023",
+          "title": "THE FRONTIER KEEPER\nWhat can an economist contribute without choosing society’s values?",
+          "modal": "Signal Warning",
+          "inventory": [
+            0,
+            0,
+            0
+          ]
+        },
+        "after": {
+          "room": 7,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "attempts": 1,
+          "correct": 0,
+          "checkpoint": null,
+          "outcome": {
+            "outcome": "not-secured",
+            "room": 10,
+            "correct": 0,
+            "total": 1,
+            "objective": "GE.7.7",
+            "label": "economist policy role"
+          },
+          "remediation": false,
+          "question": "ERQ-P77-EPOL-EASYB-023",
+          "title": "THE FRONTIER KEEPER\nWhat can an economist contribute without choosing society’s values?",
+          "modal": "Wrong Turn",
+          "inventory": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    ],
+    "summary": {
+      "room": 7,
+      "bossHealth": 3,
+      "bossCheckpoint": 1,
+      "attempts": 1,
+      "correct": 0,
+      "checkpoint": null,
+      "outcome": {
+        "outcome": "not-secured",
+        "room": 10,
+        "correct": 0,
+        "total": 1,
+        "objective": "GE.7.7",
+        "label": "economist policy role"
+      },
+      "remediation": false,
+      "question": "ERQ-P77-EPOL-EASYB-023",
+      "title": "THE FRONTIER KEEPER\nWhat can an economist contribute without choosing society’s values?",
+      "modal": "Wrong Turn",
+      "inventory": [
+        0,
+        0,
+        0
+      ]
+    },
+    "afterContinue": {
+      "room": 7,
+      "bossHealth": 3,
+      "bossCheckpoint": 1,
+      "attempts": 1,
+      "correct": 0,
+      "checkpoint": null,
+      "outcome": {
+        "outcome": "not-secured",
+        "room": 10,
+        "correct": 0,
+        "total": 1,
+        "objective": "GE.7.7",
+        "label": "economist policy role"
+      },
+      "remediation": false,
+      "question": "ERQ-P77-EPOL-E-002",
+      "title": "An economist estimates how a bus fee changes ridership. What role is primary?",
+      "modal": "Wrong Turn",
+      "inventory": [
+        0,
+        0,
+        0
+      ]
+    },
+    "repeatedClickRoom": null
+  },
+  {
+    "status": "PASS",
+    "file": "play/economic-realm/market-gate/index.html",
+    "version": "current",
+    "pattern": [
+      false,
+      true,
+      true
+    ],
+    "bossRoom": 10,
+    "resume": false,
+    "double": true,
+    "natural": false,
+    "initial": {
+      "room": 10,
+      "bossHealth": 3,
+      "bossCheckpoint": 1,
+      "attempts": 0,
+      "correct": 0,
+      "checkpoint": {
+        "key": "standard:10",
+        "room": 10,
+        "objective": "GE.7.7",
+        "label": "economist policy role",
+        "total": 0,
+        "correct": 0,
+        "incorrect": 0
+      },
+      "outcome": null,
+      "remediation": false,
+      "question": "ERQ-P77-EPOL-EASYB-023",
+      "title": "THE FRONTIER KEEPER\nWhat can an economist contribute without choosing society’s values?",
+      "modal": "Signal Warning",
+      "inventory": [
+        0,
+        0,
+        0
+      ]
+    },
+    "trace": [
+      {
+        "wanted": false,
+        "before": {
+          "room": 10,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "attempts": 0,
+          "correct": 0,
+          "checkpoint": {
+            "key": "standard:10",
+            "room": 10,
+            "objective": "GE.7.7",
+            "label": "economist policy role",
+            "total": 0,
+            "correct": 0,
+            "incorrect": 0
+          },
+          "outcome": null,
+          "remediation": false,
+          "question": "ERQ-P77-EPOL-EASYB-023",
+          "title": "THE FRONTIER KEEPER\nWhat can an economist contribute without choosing society’s values?",
+          "modal": "Signal Warning",
+          "inventory": [
+            0,
+            0,
+            0
+          ]
+        },
+        "after": {
+          "room": 7,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "attempts": 1,
+          "correct": 0,
+          "checkpoint": null,
+          "outcome": {
+            "outcome": "not-secured",
+            "room": 10,
+            "correct": 0,
+            "total": 1,
+            "objective": "GE.7.7",
+            "label": "economist policy role"
+          },
+          "remediation": false,
+          "question": "ERQ-P77-EPOL-EASYB-023",
+          "title": "THE FRONTIER KEEPER\nWhat can an economist contribute without choosing society’s values?",
+          "modal": "Wrong Turn",
+          "inventory": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    ],
+    "summary": {
+      "room": 7,
+      "bossHealth": 3,
+      "bossCheckpoint": 1,
+      "attempts": 1,
+      "correct": 0,
+      "checkpoint": null,
+      "outcome": {
+        "outcome": "not-secured",
+        "room": 10,
+        "correct": 0,
+        "total": 1,
+        "objective": "GE.7.7",
+        "label": "economist policy role"
+      },
+      "remediation": false,
+      "question": "ERQ-P77-EPOL-EASYB-023",
+      "title": "THE FRONTIER KEEPER\nWhat can an economist contribute without choosing society’s values?",
+      "modal": "Wrong Turn",
+      "inventory": [
+        0,
+        0,
+        0
+      ]
+    },
+    "afterContinue": {
+      "room": 7,
+      "bossHealth": 3,
+      "bossCheckpoint": 1,
+      "attempts": 1,
+      "correct": 0,
+      "checkpoint": null,
+      "outcome": {
+        "outcome": "not-secured",
+        "room": 10,
+        "correct": 0,
+        "total": 1,
+        "objective": "GE.7.7",
+        "label": "economist policy role"
+      },
+      "remediation": false,
+      "question": "ERQ-P77-EPOL-E-002",
+      "title": "An economist estimates how a bus fee changes ridership. What role is primary?",
+      "modal": "Wrong Turn",
+      "inventory": [
+        0,
+        0,
+        0
+      ]
+    },
+    "repeatedClickRoom": null
+  },
+  {
+    "status": "PASS",
+    "file": "play/economic-realm/market-gate/index.html",
+    "version": "current",
+    "pattern": [
+      true,
+      false,
+      false
+    ],
+    "bossRoom": 10,
+    "resume": false,
+    "double": true,
+    "natural": false,
+    "initial": {
+      "room": 10,
+      "bossHealth": 3,
+      "bossCheckpoint": 1,
+      "attempts": 0,
+      "correct": 0,
+      "checkpoint": {
+        "key": "standard:10",
+        "room": 10,
+        "objective": "GE.7.7",
+        "label": "economist policy role",
+        "total": 0,
+        "correct": 0,
+        "incorrect": 0
+      },
+      "outcome": null,
+      "remediation": false,
+      "question": "ERQ-P77-EPOL-EASYB-023",
+      "title": "THE FRONTIER KEEPER\nWhat can an economist contribute without choosing society’s values?",
+      "modal": "Signal Warning",
+      "inventory": [
+        0,
+        0,
+        0
+      ]
+    },
+    "trace": [
+      {
+        "wanted": true,
+        "before": {
+          "room": 10,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "attempts": 0,
+          "correct": 0,
+          "checkpoint": {
+            "key": "standard:10",
+            "room": 10,
+            "objective": "GE.7.7",
+            "label": "economist policy role",
+            "total": 0,
+            "correct": 0,
+            "incorrect": 0
+          },
+          "outcome": null,
+          "remediation": false,
+          "question": "ERQ-P77-EPOL-EASYB-023",
+          "title": "THE FRONTIER KEEPER\nWhat can an economist contribute without choosing society’s values?",
+          "modal": "Signal Warning",
+          "inventory": [
+            0,
+            0,
+            0
+          ]
+        },
+        "after": {
+          "room": 10,
+          "bossHealth": 2,
+          "bossCheckpoint": 1,
+          "attempts": 1,
+          "correct": 1,
+          "checkpoint": {
+            "key": "standard:10",
+            "room": 10,
+            "objective": "GE.7.7",
+            "label": "economist policy role",
+            "total": 1,
+            "correct": 1,
+            "incorrect": 0
+          },
+          "outcome": null,
+          "remediation": false,
+          "question": "ERQ-P77-MVM-EASYB-023",
+          "title": "THE FRONTIER KEEPER\nA café chooses how many baristas to schedule. Which level is primary?",
+          "modal": "Signal Warning",
+          "inventory": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "wanted": false,
+        "before": {
+          "room": 10,
+          "bossHealth": 2,
+          "bossCheckpoint": 1,
+          "attempts": 1,
+          "correct": 1,
+          "checkpoint": {
+            "key": "standard:10",
+            "room": 10,
+            "objective": "GE.7.7",
+            "label": "economist policy role",
+            "total": 1,
+            "correct": 1,
+            "incorrect": 0
+          },
+          "outcome": null,
+          "remediation": false,
+          "question": "ERQ-P77-MVM-EASYB-023",
+          "title": "THE FRONTIER KEEPER\nA café chooses how many baristas to schedule. Which level is primary?",
+          "modal": "Signal Warning",
+          "inventory": [
+            0,
+            0,
+            0
+          ]
+        },
+        "after": {
+          "room": 7,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "attempts": 2,
+          "correct": 1,
+          "checkpoint": null,
+          "outcome": {
+            "outcome": "not-secured",
+            "room": 10,
+            "correct": 1,
+            "total": 2,
+            "objective": "GE.7.7",
+            "label": "economist policy role"
+          },
+          "remediation": false,
+          "question": "ERQ-P77-MVM-EASYB-023",
+          "title": "THE FRONTIER KEEPER\nA café chooses how many baristas to schedule. Which level is primary?",
+          "modal": "Wrong Turn",
+          "inventory": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    ],
+    "summary": {
+      "room": 7,
+      "bossHealth": 3,
+      "bossCheckpoint": 1,
+      "attempts": 2,
+      "correct": 1,
+      "checkpoint": null,
+      "outcome": {
+        "outcome": "not-secured",
+        "room": 10,
+        "correct": 1,
+        "total": 2,
+        "objective": "GE.7.7",
+        "label": "economist policy role"
+      },
+      "remediation": false,
+      "question": "ERQ-P77-MVM-EASYB-023",
+      "title": "THE FRONTIER KEEPER\nA café chooses how many baristas to schedule. Which level is primary?",
+      "modal": "Wrong Turn",
+      "inventory": [
+        0,
+        0,
+        0
+      ]
+    },
+    "afterContinue": {
+      "room": 7,
+      "bossHealth": 3,
+      "bossCheckpoint": 1,
+      "attempts": 2,
+      "correct": 1,
+      "checkpoint": null,
+      "outcome": {
+        "outcome": "not-secured",
+        "room": 10,
+        "correct": 1,
+        "total": 2,
+        "objective": "GE.7.7",
+        "label": "economist policy role"
+      },
+      "remediation": false,
+      "question": 52,
+      "title": "If the market price is above equilibrium, the market has:",
+      "modal": "Wrong Turn",
+      "inventory": [
+        0,
+        0,
+        0
+      ]
+    },
+    "repeatedClickRoom": null
+  },
+  {
+    "status": "PASS",
+    "file": "play/economic-realm/market-gate/index.html",
+    "version": "current",
+    "pattern": [
+      true,
+      false,
+      true
+    ],
+    "bossRoom": 10,
+    "resume": false,
+    "double": true,
+    "natural": false,
+    "initial": {
+      "room": 10,
+      "bossHealth": 3,
+      "bossCheckpoint": 1,
+      "attempts": 0,
+      "correct": 0,
+      "checkpoint": {
+        "key": "standard:10",
+        "room": 10,
+        "objective": "GE.7.7",
+        "label": "economist policy role",
+        "total": 0,
+        "correct": 0,
+        "incorrect": 0
+      },
+      "outcome": null,
+      "remediation": false,
+      "question": "ERQ-P77-EPOL-EASYB-023",
+      "title": "THE FRONTIER KEEPER\nWhat can an economist contribute without choosing society’s values?",
+      "modal": "Signal Warning",
+      "inventory": [
+        0,
+        0,
+        0
+      ]
+    },
+    "trace": [
+      {
+        "wanted": true,
+        "before": {
+          "room": 10,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "attempts": 0,
+          "correct": 0,
+          "checkpoint": {
+            "key": "standard:10",
+            "room": 10,
+            "objective": "GE.7.7",
+            "label": "economist policy role",
+            "total": 0,
+            "correct": 0,
+            "incorrect": 0
+          },
+          "outcome": null,
+          "remediation": false,
+          "question": "ERQ-P77-EPOL-EASYB-023",
+          "title": "THE FRONTIER KEEPER\nWhat can an economist contribute without choosing society’s values?",
+          "modal": "Signal Warning",
+          "inventory": [
+            0,
+            0,
+            0
+          ]
+        },
+        "after": {
+          "room": 10,
+          "bossHealth": 2,
+          "bossCheckpoint": 1,
+          "attempts": 1,
+          "correct": 1,
+          "checkpoint": {
+            "key": "standard:10",
+            "room": 10,
+            "objective": "GE.7.7",
+            "label": "economist policy role",
+            "total": 1,
+            "correct": 1,
+            "incorrect": 0
+          },
+          "outcome": null,
+          "remediation": false,
+          "question": "ERQ-P77-MVM-EASYB-023",
+          "title": "THE FRONTIER KEEPER\nA café chooses how many baristas to schedule. Which level is primary?",
+          "modal": "Signal Warning",
+          "inventory": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "wanted": false,
+        "before": {
+          "room": 10,
+          "bossHealth": 2,
+          "bossCheckpoint": 1,
+          "attempts": 1,
+          "correct": 1,
+          "checkpoint": {
+            "key": "standard:10",
+            "room": 10,
+            "objective": "GE.7.7",
+            "label": "economist policy role",
+            "total": 1,
+            "correct": 1,
+            "incorrect": 0
+          },
+          "outcome": null,
+          "remediation": false,
+          "question": "ERQ-P77-MVM-EASYB-023",
+          "title": "THE FRONTIER KEEPER\nA café chooses how many baristas to schedule. Which level is primary?",
+          "modal": "Signal Warning",
+          "inventory": [
+            0,
+            0,
+            0
+          ]
+        },
+        "after": {
+          "room": 7,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "attempts": 2,
+          "correct": 1,
+          "checkpoint": null,
+          "outcome": {
+            "outcome": "not-secured",
+            "room": 10,
+            "correct": 1,
+            "total": 2,
+            "objective": "GE.7.7",
+            "label": "economist policy role"
+          },
+          "remediation": false,
+          "question": "ERQ-P77-MVM-EASYB-023",
+          "title": "THE FRONTIER KEEPER\nA café chooses how many baristas to schedule. Which level is primary?",
+          "modal": "Wrong Turn",
+          "inventory": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    ],
+    "summary": {
+      "room": 7,
+      "bossHealth": 3,
+      "bossCheckpoint": 1,
+      "attempts": 2,
+      "correct": 1,
+      "checkpoint": null,
+      "outcome": {
+        "outcome": "not-secured",
+        "room": 10,
+        "correct": 1,
+        "total": 2,
+        "objective": "GE.7.7",
+        "label": "economist policy role"
+      },
+      "remediation": false,
+      "question": "ERQ-P77-MVM-EASYB-023",
+      "title": "THE FRONTIER KEEPER\nA café chooses how many baristas to schedule. Which level is primary?",
+      "modal": "Wrong Turn",
+      "inventory": [
+        0,
+        0,
+        0
+      ]
+    },
+    "afterContinue": {
+      "room": 7,
+      "bossHealth": 3,
+      "bossCheckpoint": 1,
+      "attempts": 2,
+      "correct": 1,
+      "checkpoint": null,
+      "outcome": {
+        "outcome": "not-secured",
+        "room": 10,
+        "correct": 1,
+        "total": 2,
+        "objective": "GE.7.7",
+        "label": "economist policy role"
+      },
+      "remediation": false,
+      "question": 52,
+      "title": "If the market price is above equilibrium, the market has:",
+      "modal": "Wrong Turn",
+      "inventory": [
+        0,
+        0,
+        0
+      ]
+    },
+    "repeatedClickRoom": null
+  },
+  {
+    "status": "PASS",
+    "file": "play/economic-realm/market-gate/index.html",
+    "version": "current",
+    "pattern": [
+      true,
+      true,
+      false
+    ],
+    "bossRoom": 10,
+    "resume": false,
+    "double": true,
+    "natural": false,
+    "initial": {
+      "room": 10,
+      "bossHealth": 3,
+      "bossCheckpoint": 1,
+      "attempts": 0,
+      "correct": 0,
+      "checkpoint": {
+        "key": "standard:10",
+        "room": 10,
+        "objective": "GE.7.7",
+        "label": "economist policy role",
+        "total": 0,
+        "correct": 0,
+        "incorrect": 0
+      },
+      "outcome": null,
+      "remediation": false,
+      "question": "ERQ-P77-EPOL-EASYB-023",
+      "title": "THE FRONTIER KEEPER\nWhat can an economist contribute without choosing society’s values?",
+      "modal": "Signal Warning",
+      "inventory": [
+        0,
+        0,
+        0
+      ]
+    },
+    "trace": [
+      {
+        "wanted": true,
+        "before": {
+          "room": 10,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "attempts": 0,
+          "correct": 0,
+          "checkpoint": {
+            "key": "standard:10",
+            "room": 10,
+            "objective": "GE.7.7",
+            "label": "economist policy role",
+            "total": 0,
+            "correct": 0,
+            "incorrect": 0
+          },
+          "outcome": null,
+          "remediation": false,
+          "question": "ERQ-P77-EPOL-EASYB-023",
+          "title": "THE FRONTIER KEEPER\nWhat can an economist contribute without choosing society’s values?",
+          "modal": "Signal Warning",
+          "inventory": [
+            0,
+            0,
+            0
+          ]
+        },
+        "after": {
+          "room": 10,
+          "bossHealth": 2,
+          "bossCheckpoint": 1,
+          "attempts": 1,
+          "correct": 1,
+          "checkpoint": {
+            "key": "standard:10",
+            "room": 10,
+            "objective": "GE.7.7",
+            "label": "economist policy role",
+            "total": 1,
+            "correct": 1,
+            "incorrect": 0
+          },
+          "outcome": null,
+          "remediation": false,
+          "question": "ERQ-P77-MVM-EASYB-023",
+          "title": "THE FRONTIER KEEPER\nA café chooses how many baristas to schedule. Which level is primary?",
+          "modal": "Signal Warning",
+          "inventory": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "wanted": true,
+        "before": {
+          "room": 10,
+          "bossHealth": 2,
+          "bossCheckpoint": 1,
+          "attempts": 1,
+          "correct": 1,
+          "checkpoint": {
+            "key": "standard:10",
+            "room": 10,
+            "objective": "GE.7.7",
+            "label": "economist policy role",
+            "total": 1,
+            "correct": 1,
+            "incorrect": 0
+          },
+          "outcome": null,
+          "remediation": false,
+          "question": "ERQ-P77-MVM-EASYB-023",
+          "title": "THE FRONTIER KEEPER\nA café chooses how many baristas to schedule. Which level is primary?",
+          "modal": "Signal Warning",
+          "inventory": [
+            0,
+            0,
+            0
+          ]
+        },
+        "after": {
+          "room": 10,
+          "bossHealth": 1,
+          "bossCheckpoint": 1,
+          "attempts": 2,
+          "correct": 2,
+          "checkpoint": {
+            "key": "standard:10",
+            "room": 10,
+            "objective": "GE.7.7",
+            "label": "economist policy role",
+            "total": 2,
+            "correct": 2,
+            "incorrect": 0
+          },
+          "outcome": null,
+          "remediation": false,
+          "question": 2005,
+          "title": "THE FRONTIER KEEPER\nA vendor already spent 100 tokens setting up a stall. Staying open one more hour costs 12 tokens and brings in 20 tokens. What should matter now?",
+          "modal": "Signal Warning",
+          "inventory": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "wanted": false,
+        "before": {
+          "room": 10,
+          "bossHealth": 1,
+          "bossCheckpoint": 1,
+          "attempts": 2,
+          "correct": 2,
+          "checkpoint": {
+            "key": "standard:10",
+            "room": 10,
+            "objective": "GE.7.7",
+            "label": "economist policy role",
+            "total": 2,
+            "correct": 2,
+            "incorrect": 0
+          },
+          "outcome": null,
+          "remediation": false,
+          "question": 2005,
+          "title": "THE FRONTIER KEEPER\nA vendor already spent 100 tokens setting up a stall. Staying open one more hour costs 12 tokens and brings in 20 tokens. What should matter now?",
+          "modal": "Signal Warning",
+          "inventory": [
+            0,
+            0,
+            0
+          ]
+        },
+        "after": {
+          "room": 7,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "attempts": 3,
+          "correct": 2,
+          "checkpoint": null,
+          "outcome": {
+            "outcome": "not-secured",
+            "room": 10,
+            "correct": 2,
+            "total": 3,
+            "objective": "GE.7.7",
+            "label": "economist policy role"
+          },
+          "remediation": false,
+          "question": 2005,
+          "title": "THE FRONTIER KEEPER\nA vendor already spent 100 tokens setting up a stall. Staying open one more hour costs 12 tokens and brings in 20 tokens. What should matter now?",
+          "modal": "Wrong Turn",
+          "inventory": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    ],
+    "summary": {
+      "room": 7,
+      "bossHealth": 3,
+      "bossCheckpoint": 1,
+      "attempts": 3,
+      "correct": 2,
+      "checkpoint": null,
+      "outcome": {
+        "outcome": "not-secured",
+        "room": 10,
+        "correct": 2,
+        "total": 3,
+        "objective": "GE.7.7",
+        "label": "economist policy role"
+      },
+      "remediation": false,
+      "question": 2005,
+      "title": "THE FRONTIER KEEPER\nA vendor already spent 100 tokens setting up a stall. Staying open one more hour costs 12 tokens and brings in 20 tokens. What should matter now?",
+      "modal": "Wrong Turn",
+      "inventory": [
+        0,
+        0,
+        0
+      ]
+    },
+    "afterContinue": {
+      "room": 7,
+      "bossHealth": 3,
+      "bossCheckpoint": 1,
+      "attempts": 3,
+      "correct": 2,
+      "checkpoint": null,
+      "outcome": {
+        "outcome": "not-secured",
+        "room": 10,
+        "correct": 2,
+        "total": 3,
+        "objective": "GE.7.7",
+        "label": "economist policy role"
+      },
+      "remediation": false,
+      "question": 43,
+      "title": "Two goods are complements when:",
+      "modal": "Wrong Turn",
+      "inventory": [
+        0,
+        0,
+        0
+      ]
+    },
+    "repeatedClickRoom": null
+  },
+  {
+    "status": "PASS",
+    "file": "play/economic-realm/market-gate/index.html",
+    "version": "current",
+    "pattern": [
+      true,
+      true,
+      true
+    ],
+    "bossRoom": 10,
+    "resume": false,
+    "double": true,
+    "natural": false,
+    "initial": {
+      "room": 10,
+      "bossHealth": 3,
+      "bossCheckpoint": 1,
+      "attempts": 0,
+      "correct": 0,
+      "checkpoint": {
+        "key": "standard:10",
+        "room": 10,
+        "objective": "GE.7.7",
+        "label": "economist policy role",
+        "total": 0,
+        "correct": 0,
+        "incorrect": 0
+      },
+      "outcome": null,
+      "remediation": false,
+      "question": "ERQ-P77-EPOL-EASYB-023",
+      "title": "THE FRONTIER KEEPER\nWhat can an economist contribute without choosing society’s values?",
+      "modal": "Signal Warning",
+      "inventory": [
+        0,
+        0,
+        0
+      ]
+    },
+    "trace": [
+      {
+        "wanted": true,
+        "before": {
+          "room": 10,
+          "bossHealth": 3,
+          "bossCheckpoint": 1,
+          "attempts": 0,
+          "correct": 0,
+          "checkpoint": {
+            "key": "standard:10",
+            "room": 10,
+            "objective": "GE.7.7",
+            "label": "economist policy role",
+            "total": 0,
+            "correct": 0,
+            "incorrect": 0
+          },
+          "outcome": null,
+          "remediation": false,
+          "question": "ERQ-P77-EPOL-EASYB-023",
+          "title": "THE FRONTIER KEEPER\nWhat can an economist contribute without choosing society’s values?",
+          "modal": "Signal Warning",
+          "inventory": [
+            0,
+            0,
+            0
+          ]
+        },
+        "after": {
+          "room": 10,
+          "bossHealth": 2,
+          "bossCheckpoint": 1,
+          "attempts": 1,
+          "correct": 1,
+          "checkpoint": {
+            "key": "standard:10",
+            "room": 10,
+            "objective": "GE.7.7",
+            "label": "economist policy role",
+            "total": 1,
+            "correct": 1,
+            "incorrect": 0
+          },
+          "outcome": null,
+          "remediation": false,
+          "question": "ERQ-P77-MVM-EASYB-023",
+          "title": "THE FRONTIER KEEPER\nA café chooses how many baristas to schedule. Which level is primary?",
+          "modal": "Signal Warning",
+          "inventory": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "wanted": true,
+        "before": {
+          "room": 10,
+          "bossHealth": 2,
+          "bossCheckpoint": 1,
+          "attempts": 1,
+          "correct": 1,
+          "checkpoint": {
+            "key": "standard:10",
+            "room": 10,
+            "objective": "GE.7.7",
+            "label": "economist policy role",
+            "total": 1,
+            "correct": 1,
+            "incorrect": 0
+          },
+          "outcome": null,
+          "remediation": false,
+          "question": "ERQ-P77-MVM-EASYB-023",
+          "title": "THE FRONTIER KEEPER\nA café chooses how many baristas to schedule. Which level is primary?",
+          "modal": "Signal Warning",
+          "inventory": [
+            0,
+            0,
+            0
+          ]
+        },
+        "after": {
+          "room": 10,
+          "bossHealth": 1,
+          "bossCheckpoint": 1,
+          "attempts": 2,
+          "correct": 2,
+          "checkpoint": {
+            "key": "standard:10",
+            "room": 10,
+            "objective": "GE.7.7",
+            "label": "economist policy role",
+            "total": 2,
+            "correct": 2,
+            "incorrect": 0
+          },
+          "outcome": null,
+          "remediation": false,
+          "question": 2005,
+          "title": "THE FRONTIER KEEPER\nA vendor already spent 100 tokens setting up a stall. Staying open one more hour costs 12 tokens and brings in 20 tokens. What should matter now?",
+          "modal": "Signal Warning",
+          "inventory": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "wanted": true,
+        "before": {
+          "room": 10,
+          "bossHealth": 1,
+          "bossCheckpoint": 1,
+          "attempts": 2,
+          "correct": 2,
+          "checkpoint": {
+            "key": "standard:10",
+            "room": 10,
+            "objective": "GE.7.7",
+            "label": "economist policy role",
+            "total": 2,
+            "correct": 2,
+            "incorrect": 0
+          },
+          "outcome": null,
+          "remediation": false,
+          "question": 2005,
+          "title": "THE FRONTIER KEEPER\nA vendor already spent 100 tokens setting up a stall. Staying open one more hour costs 12 tokens and brings in 20 tokens. What should matter now?",
+          "modal": "Signal Warning",
+          "inventory": [
+            0,
+            0,
+            0
+          ]
+        },
+        "after": {
+          "room": 10,
+          "bossHealth": 3,
+          "bossCheckpoint": 11,
+          "attempts": 3,
+          "correct": 3,
+          "checkpoint": null,
+          "outcome": {
+            "outcome": "secured",
+            "room": 10,
+            "correct": 3,
+            "total": 3,
+            "objective": "GE.7.7",
+            "label": "economist policy role"
+          },
+          "remediation": false,
+          "question": 2005,
+          "title": "CHECKPOINT I SECURED\nYou proved your command of economist policy role.",
+          "modal": "Signal Warning",
+          "inventory": [
+            1,
+            0,
+            0
+          ]
+        }
+      }
+    ],
+    "summary": {
+      "room": 10,
+      "bossHealth": 3,
+      "bossCheckpoint": 11,
+      "attempts": 3,
+      "correct": 3,
+      "checkpoint": null,
+      "outcome": {
+        "outcome": "secured",
+        "room": 10,
+        "correct": 3,
+        "total": 3,
+        "objective": "GE.7.7",
+        "label": "economist policy role"
+      },
+      "remediation": false,
+      "question": 2005,
+      "title": "CHECKPOINT I SECURED\nYou proved your command of economist policy role.",
+      "modal": "Signal Warning",
+      "inventory": [
+        1,
+        0,
+        0
+      ]
+    },
+    "afterContinue": {
+      "room": 11,
+      "bossHealth": 3,
+      "bossCheckpoint": 11,
+      "attempts": 3,
+      "correct": 3,
+      "checkpoint": null,
+      "outcome": {
+        "outcome": "secured",
+        "room": 10,
+        "correct": 3,
+        "total": 3,
+        "objective": "GE.7.7",
+        "label": "economist policy role"
+      },
+      "remediation": false,
+      "question": 152,
+      "title": "Refer to the PPF graph. Which point is currently unattainable?",
+      "modal": "Signal Warning",
+      "inventory": [
+        1,
+        0,
+        0
+      ]
+    },
+    "repeatedClickRoom": 11
+  }
+]

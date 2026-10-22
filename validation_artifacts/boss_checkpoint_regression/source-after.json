@@ -1,0 +1,1264 @@
+{
+  "baseline": "5e1d5644",
+  "head": "a4b247fdf054b4fff975755a518456c2b5641fc6",
+  "retrievedAt": "2026-10-22T17:10:26.569Z",
+  "files": [
+    {
+      "file": "downloads/resources/mastery-quests-faculty-starter.html",
+      "engine": "three-response assessment",
+      "functions": {
+        "getCheckpointOutcome": {
+          "unchanged": false,
+          "before": "d3a2370997212ea124c37a09e484d675c1f0493768c81ab13521d8ac90056f9e",
+          "after": "83b741553dcb3721f33f95f7f3c86c50e8fbeb60ae3c600a105d7a7168bb8ec8"
+        },
+        "recordCheckpointAttempt": {
+          "unchanged": true,
+          "before": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3",
+          "after": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3"
+        },
+        "advanceCheckpointAttempt": {
+          "unchanged": true,
+          "before": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3",
+          "after": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3"
+        },
+        "completeCheckpointEncounter": {
+          "unchanged": false,
+          "before": "3b9f3f832636fb7d23c0b01a9a663fbfc2a60503d26a3f4b02f205274977102d",
+          "after": "9c696597ed071ee5759754ad8117d9a7a2aee369c133936021d0e7fd3232f50f"
+        },
+        "showKnowledgeRoom": {
+          "unchanged": false,
+          "before": "6d4e3037e5249d729aeea22e1f3ea19e0a0534bd698287f149f0fa66b4c61572",
+          "after": "2c1653b5995aa805855763763efa6766b43e9ab6c8f8aef21edbc1584f9e71ee"
+        },
+        "buildBossQuestionSet": {
+          "unchanged": true,
+          "before": "3a797204121d8ff9895205f1dfb79691b242de86f74ae9ffa84c0cfb8d664361",
+          "after": "3a797204121d8ff9895205f1dfb79691b242de86f74ae9ffa84c0cfb8d664361"
+        },
+        "isQuestionAnswerCorrect": {
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        "recordAdaptiveAttempt": {
+          "unchanged": true,
+          "before": "c8ad9692bef730fca9bd40550c63455c97887f0f3a492c515103df366e16aa9a",
+          "after": "c8ad9692bef730fca9bd40550c63455c97887f0f3a492c515103df366e16aa9a"
+        },
+        "applyScoreAttackForAnswer": {
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        }
+      }
+    },
+    {
+      "file": "downloads/resources/mastery-quests-faculty-template-old.html",
+      "engine": "legacy correct-hit boss",
+      "functions": {
+        "showKnowledgeRoom": {
+          "unchanged": true,
+          "before": "0a358e0a687d228982084d49fa2dd4824a9a11be53acb7db1e74dc014344b659",
+          "after": "0a358e0a687d228982084d49fa2dd4824a9a11be53acb7db1e74dc014344b659"
+        },
+        "buildBossQuestionSet": {
+          "unchanged": true,
+          "before": "0670c675230621043ad3913b1fe53b804e7bafd1877428aea5d843624b31f3bd",
+          "after": "0670c675230621043ad3913b1fe53b804e7bafd1877428aea5d843624b31f3bd"
+        },
+        "recordAdaptiveAttempt": {
+          "unchanged": true,
+          "before": "39870fa8028248cf4ec6251756cf3eed9703a854c78db8e63f81d47c5df428ac",
+          "after": "39870fa8028248cf4ec6251756cf3eed9703a854c78db8e63f81d47c5df428ac"
+        },
+        "applyScoreAttackForAnswer": {
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        }
+      }
+    },
+    {
+      "file": "downloads/resources/mastery-quests-faculty-template.html",
+      "engine": "three-response assessment",
+      "functions": {
+        "getCheckpointOutcome": {
+          "unchanged": false,
+          "before": "d3a2370997212ea124c37a09e484d675c1f0493768c81ab13521d8ac90056f9e",
+          "after": "83b741553dcb3721f33f95f7f3c86c50e8fbeb60ae3c600a105d7a7168bb8ec8"
+        },
+        "recordCheckpointAttempt": {
+          "unchanged": true,
+          "before": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3",
+          "after": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3"
+        },
+        "advanceCheckpointAttempt": {
+          "unchanged": true,
+          "before": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3",
+          "after": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3"
+        },
+        "completeCheckpointEncounter": {
+          "unchanged": false,
+          "before": "3b9f3f832636fb7d23c0b01a9a663fbfc2a60503d26a3f4b02f205274977102d",
+          "after": "9c696597ed071ee5759754ad8117d9a7a2aee369c133936021d0e7fd3232f50f"
+        },
+        "showKnowledgeRoom": {
+          "unchanged": false,
+          "before": "6d4e3037e5249d729aeea22e1f3ea19e0a0534bd698287f149f0fa66b4c61572",
+          "after": "2c1653b5995aa805855763763efa6766b43e9ab6c8f8aef21edbc1584f9e71ee"
+        },
+        "buildBossQuestionSet": {
+          "unchanged": true,
+          "before": "3a797204121d8ff9895205f1dfb79691b242de86f74ae9ffa84c0cfb8d664361",
+          "after": "3a797204121d8ff9895205f1dfb79691b242de86f74ae9ffa84c0cfb8d664361"
+        },
+        "isQuestionAnswerCorrect": {
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        "recordAdaptiveAttempt": {
+          "unchanged": true,
+          "before": "c8ad9692bef730fca9bd40550c63455c97887f0f3a492c515103df366e16aa9a",
+          "after": "c8ad9692bef730fca9bd40550c63455c97887f0f3a492c515103df366e16aa9a"
+        },
+        "applyScoreAttackForAnswer": {
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        }
+      }
+    },
+    {
+      "file": "play/economic-realm/Equilibrium_Crisis_index_fixed.html",
+      "engine": "legacy correct-hit boss",
+      "functions": {
+        "showKnowledgeRoom": {
+          "unchanged": true,
+          "before": "aeb4b073e9c3fbb98ed81952e1e2a506a2f54889abddfe9cc98c08327fcae212",
+          "after": "aeb4b073e9c3fbb98ed81952e1e2a506a2f54889abddfe9cc98c08327fcae212"
+        },
+        "buildBossQuestionSet": {
+          "unchanged": true,
+          "before": "0670c675230621043ad3913b1fe53b804e7bafd1877428aea5d843624b31f3bd",
+          "after": "0670c675230621043ad3913b1fe53b804e7bafd1877428aea5d843624b31f3bd"
+        },
+        "isQuestionAnswerCorrect": {
+          "unchanged": true,
+          "before": "122c9ae05aadbd6c9e147e8b02e7c37ee2741a7035d02f88d2b8eb1e260508aa",
+          "after": "122c9ae05aadbd6c9e147e8b02e7c37ee2741a7035d02f88d2b8eb1e260508aa"
+        },
+        "recordAdaptiveAttempt": {
+          "unchanged": true,
+          "before": "39870fa8028248cf4ec6251756cf3eed9703a854c78db8e63f81d47c5df428ac",
+          "after": "39870fa8028248cf4ec6251756cf3eed9703a854c78db8e63f81d47c5df428ac"
+        },
+        "applyScoreAttackForAnswer": {
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        }
+      }
+    },
+    {
+      "file": "play/economic-realm/Liquidity_Grid_index_fixed.html",
+      "engine": "legacy correct-hit boss",
+      "functions": {
+        "showKnowledgeRoom": {
+          "unchanged": true,
+          "before": "c57498a24fbb875b0e33b9bd22eb40d27504d7f02a27fa64510112023e2f3fca",
+          "after": "c57498a24fbb875b0e33b9bd22eb40d27504d7f02a27fa64510112023e2f3fca"
+        },
+        "buildBossQuestionSet": {
+          "unchanged": true,
+          "before": "0670c675230621043ad3913b1fe53b804e7bafd1877428aea5d843624b31f3bd",
+          "after": "0670c675230621043ad3913b1fe53b804e7bafd1877428aea5d843624b31f3bd"
+        },
+        "isQuestionAnswerCorrect": {
+          "unchanged": true,
+          "before": "122c9ae05aadbd6c9e147e8b02e7c37ee2741a7035d02f88d2b8eb1e260508aa",
+          "after": "122c9ae05aadbd6c9e147e8b02e7c37ee2741a7035d02f88d2b8eb1e260508aa"
+        },
+        "recordAdaptiveAttempt": {
+          "unchanged": true,
+          "before": "183d90a4d09e6260138a4acb79b2db6ca12b477ebf1368b683689ba0ef7f8103",
+          "after": "183d90a4d09e6260138a4acb79b2db6ca12b477ebf1368b683689ba0ef7f8103"
+        },
+        "applyScoreAttackForAnswer": {
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        }
+      }
+    },
+    {
+      "file": "play/economic-realm/Market_Gate_index_fixed.html",
+      "engine": "legacy correct-hit boss",
+      "functions": {
+        "showKnowledgeRoom": {
+          "unchanged": true,
+          "before": "9275401c6dbbe808a15fdf8ef4e5dab26278428dc2b44d798ce5f324ec938cb7",
+          "after": "9275401c6dbbe808a15fdf8ef4e5dab26278428dc2b44d798ce5f324ec938cb7"
+        },
+        "buildBossQuestionSet": {
+          "unchanged": true,
+          "before": "0670c675230621043ad3913b1fe53b804e7bafd1877428aea5d843624b31f3bd",
+          "after": "0670c675230621043ad3913b1fe53b804e7bafd1877428aea5d843624b31f3bd"
+        },
+        "isQuestionAnswerCorrect": {
+          "unchanged": true,
+          "before": "84c6939ae1415dea224ce7c390e6cdf29dbe77edf242f2b3289fdc6c98b42430",
+          "after": "84c6939ae1415dea224ce7c390e6cdf29dbe77edf242f2b3289fdc6c98b42430"
+        },
+        "recordAdaptiveAttempt": {
+          "unchanged": true,
+          "before": "39870fa8028248cf4ec6251756cf3eed9703a854c78db8e63f81d47c5df428ac",
+          "after": "39870fa8028248cf4ec6251756cf3eed9703a854c78db8e63f81d47c5df428ac"
+        },
+        "applyScoreAttackForAnswer": {
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        }
+      }
+    },
+    {
+      "file": "play/economic-realm/National_Ledger_index_fixed.html",
+      "engine": "legacy correct-hit boss",
+      "functions": {
+        "showKnowledgeRoom": {
+          "unchanged": true,
+          "before": "74324a61f7ffe4d98cf3222a527aa05f4e00de5acf02bd27635d337119b89c64",
+          "after": "74324a61f7ffe4d98cf3222a527aa05f4e00de5acf02bd27635d337119b89c64"
+        },
+        "buildBossQuestionSet": {
+          "unchanged": true,
+          "before": "0670c675230621043ad3913b1fe53b804e7bafd1877428aea5d843624b31f3bd",
+          "after": "0670c675230621043ad3913b1fe53b804e7bafd1877428aea5d843624b31f3bd"
+        },
+        "isQuestionAnswerCorrect": {
+          "unchanged": true,
+          "before": "122c9ae05aadbd6c9e147e8b02e7c37ee2741a7035d02f88d2b8eb1e260508aa",
+          "after": "122c9ae05aadbd6c9e147e8b02e7c37ee2741a7035d02f88d2b8eb1e260508aa"
+        },
+        "recordAdaptiveAttempt": {
+          "unchanged": true,
+          "before": "183d90a4d09e6260138a4acb79b2db6ca12b477ebf1368b683689ba0ef7f8103",
+          "after": "183d90a4d09e6260138a4acb79b2db6ca12b477ebf1368b683689ba0ef7f8103"
+        },
+        "applyScoreAttackForAnswer": {
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        }
+      }
+    },
+    {
+      "file": "play/economic-realm/Stabilization_Protocol_index_fixed.html",
+      "engine": "legacy correct-hit boss",
+      "functions": {
+        "showKnowledgeRoom": {
+          "unchanged": true,
+          "before": "b072c5873f548c8b5370a7a682c16fb0bf4c892cf46ca91aa99c2b06460ec789",
+          "after": "b072c5873f548c8b5370a7a682c16fb0bf4c892cf46ca91aa99c2b06460ec789"
+        },
+        "buildBossQuestionSet": {
+          "unchanged": true,
+          "before": "0670c675230621043ad3913b1fe53b804e7bafd1877428aea5d843624b31f3bd",
+          "after": "0670c675230621043ad3913b1fe53b804e7bafd1877428aea5d843624b31f3bd"
+        },
+        "isQuestionAnswerCorrect": {
+          "unchanged": true,
+          "before": "122c9ae05aadbd6c9e147e8b02e7c37ee2741a7035d02f88d2b8eb1e260508aa",
+          "after": "122c9ae05aadbd6c9e147e8b02e7c37ee2741a7035d02f88d2b8eb1e260508aa"
+        },
+        "recordAdaptiveAttempt": {
+          "unchanged": true,
+          "before": "183d90a4d09e6260138a4acb79b2db6ca12b477ebf1368b683689ba0ef7f8103",
+          "after": "183d90a4d09e6260138a4acb79b2db6ca12b477ebf1368b683689ba0ef7f8103"
+        },
+        "applyScoreAttackForAnswer": {
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        }
+      }
+    },
+    {
+      "file": "play/economic-realm/equilibrium-crisis/index.html",
+      "engine": "three-response assessment",
+      "functions": {
+        "getCheckpointOutcome": {
+          "unchanged": false,
+          "before": "d3a2370997212ea124c37a09e484d675c1f0493768c81ab13521d8ac90056f9e",
+          "after": "83b741553dcb3721f33f95f7f3c86c50e8fbeb60ae3c600a105d7a7168bb8ec8"
+        },
+        "recordCheckpointAttempt": {
+          "unchanged": true,
+          "before": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3",
+          "after": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3"
+        },
+        "advanceCheckpointAttempt": {
+          "unchanged": true,
+          "before": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3",
+          "after": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3"
+        },
+        "completeCheckpointEncounter": {
+          "unchanged": false,
+          "before": "3b9f3f832636fb7d23c0b01a9a663fbfc2a60503d26a3f4b02f205274977102d",
+          "after": "9c696597ed071ee5759754ad8117d9a7a2aee369c133936021d0e7fd3232f50f"
+        },
+        "showKnowledgeRoom": {
+          "unchanged": false,
+          "before": "6d4e3037e5249d729aeea22e1f3ea19e0a0534bd698287f149f0fa66b4c61572",
+          "after": "2c1653b5995aa805855763763efa6766b43e9ab6c8f8aef21edbc1584f9e71ee"
+        },
+        "buildBossQuestionSet": {
+          "unchanged": true,
+          "before": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d",
+          "after": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d"
+        },
+        "isQuestionAnswerCorrect": {
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        "recordAdaptiveAttempt": {
+          "unchanged": true,
+          "before": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d",
+          "after": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d"
+        },
+        "applyScoreAttackForAnswer": {
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        }
+      }
+    },
+    {
+      "file": "play/economic-realm/liquidity-grid/index.html",
+      "engine": "three-response assessment",
+      "functions": {
+        "getCheckpointOutcome": {
+          "unchanged": false,
+          "before": "d3a2370997212ea124c37a09e484d675c1f0493768c81ab13521d8ac90056f9e",
+          "after": "83b741553dcb3721f33f95f7f3c86c50e8fbeb60ae3c600a105d7a7168bb8ec8"
+        },
+        "recordCheckpointAttempt": {
+          "unchanged": true,
+          "before": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3",
+          "after": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3"
+        },
+        "advanceCheckpointAttempt": {
+          "unchanged": true,
+          "before": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3",
+          "after": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3"
+        },
+        "completeCheckpointEncounter": {
+          "unchanged": false,
+          "before": "3b9f3f832636fb7d23c0b01a9a663fbfc2a60503d26a3f4b02f205274977102d",
+          "after": "9c696597ed071ee5759754ad8117d9a7a2aee369c133936021d0e7fd3232f50f"
+        },
+        "showKnowledgeRoom": {
+          "unchanged": false,
+          "before": "6d4e3037e5249d729aeea22e1f3ea19e0a0534bd698287f149f0fa66b4c61572",
+          "after": "2c1653b5995aa805855763763efa6766b43e9ab6c8f8aef21edbc1584f9e71ee"
+        },
+        "buildBossQuestionSet": {
+          "unchanged": true,
+          "before": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d",
+          "after": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d"
+        },
+        "isQuestionAnswerCorrect": {
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        "recordAdaptiveAttempt": {
+          "unchanged": true,
+          "before": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d",
+          "after": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d"
+        },
+        "applyScoreAttackForAnswer": {
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        }
+      }
+    },
+    {
+      "file": "play/economic-realm/market-gate/index.html",
+      "engine": "three-response assessment",
+      "functions": {
+        "getCheckpointOutcome": {
+          "unchanged": false,
+          "before": "d3a2370997212ea124c37a09e484d675c1f0493768c81ab13521d8ac90056f9e",
+          "after": "83b741553dcb3721f33f95f7f3c86c50e8fbeb60ae3c600a105d7a7168bb8ec8"
+        },
+        "recordCheckpointAttempt": {
+          "unchanged": true,
+          "before": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3",
+          "after": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3"
+        },
+        "advanceCheckpointAttempt": {
+          "unchanged": true,
+          "before": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3",
+          "after": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3"
+        },
+        "completeCheckpointEncounter": {
+          "unchanged": false,
+          "before": "3b9f3f832636fb7d23c0b01a9a663fbfc2a60503d26a3f4b02f205274977102d",
+          "after": "9c696597ed071ee5759754ad8117d9a7a2aee369c133936021d0e7fd3232f50f"
+        },
+        "showKnowledgeRoom": {
+          "unchanged": false,
+          "before": "6d4e3037e5249d729aeea22e1f3ea19e0a0534bd698287f149f0fa66b4c61572",
+          "after": "2c1653b5995aa805855763763efa6766b43e9ab6c8f8aef21edbc1584f9e71ee"
+        },
+        "buildBossQuestionSet": {
+          "unchanged": true,
+          "before": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d",
+          "after": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d"
+        },
+        "isQuestionAnswerCorrect": {
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        "recordAdaptiveAttempt": {
+          "unchanged": true,
+          "before": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d",
+          "after": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d"
+        },
+        "applyScoreAttackForAnswer": {
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        }
+      }
+    },
+    {
+      "file": "play/economic-realm/national-ledger/index.html",
+      "engine": "three-response assessment",
+      "functions": {
+        "getCheckpointOutcome": {
+          "unchanged": false,
+          "before": "d3a2370997212ea124c37a09e484d675c1f0493768c81ab13521d8ac90056f9e",
+          "after": "83b741553dcb3721f33f95f7f3c86c50e8fbeb60ae3c600a105d7a7168bb8ec8"
+        },
+        "recordCheckpointAttempt": {
+          "unchanged": true,
+          "before": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3",
+          "after": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3"
+        },
+        "advanceCheckpointAttempt": {
+          "unchanged": true,
+          "before": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3",
+          "after": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3"
+        },
+        "completeCheckpointEncounter": {
+          "unchanged": false,
+          "before": "3b9f3f832636fb7d23c0b01a9a663fbfc2a60503d26a3f4b02f205274977102d",
+          "after": "9c696597ed071ee5759754ad8117d9a7a2aee369c133936021d0e7fd3232f50f"
+        },
+        "showKnowledgeRoom": {
+          "unchanged": false,
+          "before": "6d4e3037e5249d729aeea22e1f3ea19e0a0534bd698287f149f0fa66b4c61572",
+          "after": "2c1653b5995aa805855763763efa6766b43e9ab6c8f8aef21edbc1584f9e71ee"
+        },
+        "buildBossQuestionSet": {
+          "unchanged": true,
+          "before": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d",
+          "after": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d"
+        },
+        "isQuestionAnswerCorrect": {
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        "recordAdaptiveAttempt": {
+          "unchanged": true,
+          "before": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d",
+          "after": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d"
+        },
+        "applyScoreAttackForAnswer": {
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        }
+      }
+    },
+    {
+      "file": "play/economic-realm/stabilization-protocol/index.html",
+      "engine": "three-response assessment",
+      "functions": {
+        "getCheckpointOutcome": {
+          "unchanged": false,
+          "before": "d3a2370997212ea124c37a09e484d675c1f0493768c81ab13521d8ac90056f9e",
+          "after": "83b741553dcb3721f33f95f7f3c86c50e8fbeb60ae3c600a105d7a7168bb8ec8"
+        },
+        "recordCheckpointAttempt": {
+          "unchanged": true,
+          "before": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3",
+          "after": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3"
+        },
+        "advanceCheckpointAttempt": {
+          "unchanged": true,
+          "before": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3",
+          "after": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3"
+        },
+        "completeCheckpointEncounter": {
+          "unchanged": false,
+          "before": "3b9f3f832636fb7d23c0b01a9a663fbfc2a60503d26a3f4b02f205274977102d",
+          "after": "9c696597ed071ee5759754ad8117d9a7a2aee369c133936021d0e7fd3232f50f"
+        },
+        "showKnowledgeRoom": {
+          "unchanged": false,
+          "before": "6d4e3037e5249d729aeea22e1f3ea19e0a0534bd698287f149f0fa66b4c61572",
+          "after": "2c1653b5995aa805855763763efa6766b43e9ab6c8f8aef21edbc1584f9e71ee"
+        },
+        "buildBossQuestionSet": {
+          "unchanged": true,
+          "before": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d",
+          "after": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d"
+        },
+        "isQuestionAnswerCorrect": {
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        "recordAdaptiveAttempt": {
+          "unchanged": true,
+          "before": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d",
+          "after": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d"
+        },
+        "applyScoreAttackForAnswer": {
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        }
+      }
+    },
+    {
+      "file": "play/macro-command-system/command-nexus/index.html",
+      "engine": "three-response assessment",
+      "functions": {
+        "getCheckpointOutcome": {
+          "unchanged": false,
+          "before": "d3a2370997212ea124c37a09e484d675c1f0493768c81ab13521d8ac90056f9e",
+          "after": "83b741553dcb3721f33f95f7f3c86c50e8fbeb60ae3c600a105d7a7168bb8ec8"
+        },
+        "recordCheckpointAttempt": {
+          "unchanged": true,
+          "before": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3",
+          "after": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3"
+        },
+        "advanceCheckpointAttempt": {
+          "unchanged": true,
+          "before": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3",
+          "after": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3"
+        },
+        "completeCheckpointEncounter": {
+          "unchanged": false,
+          "before": "3b9f3f832636fb7d23c0b01a9a663fbfc2a60503d26a3f4b02f205274977102d",
+          "after": "9c696597ed071ee5759754ad8117d9a7a2aee369c133936021d0e7fd3232f50f"
+        },
+        "showKnowledgeRoom": {
+          "unchanged": false,
+          "before": "6d4e3037e5249d729aeea22e1f3ea19e0a0534bd698287f149f0fa66b4c61572",
+          "after": "2c1653b5995aa805855763763efa6766b43e9ab6c8f8aef21edbc1584f9e71ee"
+        },
+        "buildBossQuestionSet": {
+          "unchanged": true,
+          "before": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d",
+          "after": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d"
+        },
+        "isQuestionAnswerCorrect": {
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        "recordAdaptiveAttempt": {
+          "unchanged": true,
+          "before": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d",
+          "after": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d"
+        },
+        "applyScoreAttackForAnswer": {
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        }
+      }
+    },
+    {
+      "file": "play/macro-command-system/exchange-citadel/index.html",
+      "engine": "three-response assessment",
+      "functions": {
+        "getCheckpointOutcome": {
+          "unchanged": false,
+          "before": "d3a2370997212ea124c37a09e484d675c1f0493768c81ab13521d8ac90056f9e",
+          "after": "83b741553dcb3721f33f95f7f3c86c50e8fbeb60ae3c600a105d7a7168bb8ec8"
+        },
+        "recordCheckpointAttempt": {
+          "unchanged": true,
+          "before": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3",
+          "after": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3"
+        },
+        "advanceCheckpointAttempt": {
+          "unchanged": true,
+          "before": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3",
+          "after": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3"
+        },
+        "completeCheckpointEncounter": {
+          "unchanged": false,
+          "before": "3b9f3f832636fb7d23c0b01a9a663fbfc2a60503d26a3f4b02f205274977102d",
+          "after": "9c696597ed071ee5759754ad8117d9a7a2aee369c133936021d0e7fd3232f50f"
+        },
+        "showKnowledgeRoom": {
+          "unchanged": false,
+          "before": "6d4e3037e5249d729aeea22e1f3ea19e0a0534bd698287f149f0fa66b4c61572",
+          "after": "2c1653b5995aa805855763763efa6766b43e9ab6c8f8aef21edbc1584f9e71ee"
+        },
+        "buildBossQuestionSet": {
+          "unchanged": true,
+          "before": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d",
+          "after": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d"
+        },
+        "isQuestionAnswerCorrect": {
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        "recordAdaptiveAttempt": {
+          "unchanged": true,
+          "before": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d",
+          "after": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d"
+        },
+        "applyScoreAttackForAnswer": {
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        }
+      }
+    },
+    {
+      "file": "play/macro-command-system/mint-ash-gold/index.html",
+      "engine": "three-response assessment",
+      "functions": {
+        "getCheckpointOutcome": {
+          "unchanged": false,
+          "before": "d3a2370997212ea124c37a09e484d675c1f0493768c81ab13521d8ac90056f9e",
+          "after": "83b741553dcb3721f33f95f7f3c86c50e8fbeb60ae3c600a105d7a7168bb8ec8"
+        },
+        "recordCheckpointAttempt": {
+          "unchanged": true,
+          "before": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3",
+          "after": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3"
+        },
+        "advanceCheckpointAttempt": {
+          "unchanged": true,
+          "before": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3",
+          "after": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3"
+        },
+        "completeCheckpointEncounter": {
+          "unchanged": false,
+          "before": "3b9f3f832636fb7d23c0b01a9a663fbfc2a60503d26a3f4b02f205274977102d",
+          "after": "9c696597ed071ee5759754ad8117d9a7a2aee369c133936021d0e7fd3232f50f"
+        },
+        "showKnowledgeRoom": {
+          "unchanged": false,
+          "before": "6d4e3037e5249d729aeea22e1f3ea19e0a0534bd698287f149f0fa66b4c61572",
+          "after": "2c1653b5995aa805855763763efa6766b43e9ab6c8f8aef21edbc1584f9e71ee"
+        },
+        "buildBossQuestionSet": {
+          "unchanged": true,
+          "before": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d",
+          "after": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d"
+        },
+        "isQuestionAnswerCorrect": {
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        "recordAdaptiveAttempt": {
+          "unchanged": true,
+          "before": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d",
+          "after": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d"
+        },
+        "applyScoreAttackForAnswer": {
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        }
+      }
+    },
+    {
+      "file": "play/macro-command-system/national-engine/index.html",
+      "engine": "three-response assessment",
+      "functions": {
+        "getCheckpointOutcome": {
+          "unchanged": false,
+          "before": "d3a2370997212ea124c37a09e484d675c1f0493768c81ab13521d8ac90056f9e",
+          "after": "83b741553dcb3721f33f95f7f3c86c50e8fbeb60ae3c600a105d7a7168bb8ec8"
+        },
+        "recordCheckpointAttempt": {
+          "unchanged": true,
+          "before": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3",
+          "after": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3"
+        },
+        "advanceCheckpointAttempt": {
+          "unchanged": true,
+          "before": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3",
+          "after": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3"
+        },
+        "completeCheckpointEncounter": {
+          "unchanged": false,
+          "before": "3b9f3f832636fb7d23c0b01a9a663fbfc2a60503d26a3f4b02f205274977102d",
+          "after": "9c696597ed071ee5759754ad8117d9a7a2aee369c133936021d0e7fd3232f50f"
+        },
+        "showKnowledgeRoom": {
+          "unchanged": false,
+          "before": "6d4e3037e5249d729aeea22e1f3ea19e0a0534bd698287f149f0fa66b4c61572",
+          "after": "2c1653b5995aa805855763763efa6766b43e9ab6c8f8aef21edbc1584f9e71ee"
+        },
+        "buildBossQuestionSet": {
+          "unchanged": true,
+          "before": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d",
+          "after": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d"
+        },
+        "isQuestionAnswerCorrect": {
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        "recordAdaptiveAttempt": {
+          "unchanged": true,
+          "before": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d",
+          "after": "61b1c3562af33d838595e2f08b130ccb2d4df1cf88349a93f34e5f890bf25c7d"
+        },
+        "applyScoreAttackForAnswer": {
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        }
+      }
+    },
+    {
+      "file": "play/managerial-directorate-classroom/agency-protocol/index.html",
+      "engine": "legacy correct-hit boss",
+      "functions": {
+        "showKnowledgeRoom": {
+          "unchanged": false,
+          "before": "cefa3526b8447ad4dd66cb9c004b19d1658ec70fd724bba5d00f777a49cf15e3",
+          "after": "8285818c109f803bf9f2f4a11c4e210d80d5ed7a23c0efc2683df3606dd7c8b9"
+        },
+        "buildBossQuestionSet": {
+          "unchanged": true,
+          "before": "24c500b4c2104c7c0df891727482d31ed4272799606fdcb8dd202df63e7d7447",
+          "after": "24c500b4c2104c7c0df891727482d31ed4272799606fdcb8dd202df63e7d7447"
+        },
+        "isQuestionAnswerCorrect": {
+          "unchanged": true,
+          "before": "122c9ae05aadbd6c9e147e8b02e7c37ee2741a7035d02f88d2b8eb1e260508aa",
+          "after": "122c9ae05aadbd6c9e147e8b02e7c37ee2741a7035d02f88d2b8eb1e260508aa"
+        },
+        "recordAdaptiveAttempt": {
+          "unchanged": true,
+          "before": "39870fa8028248cf4ec6251756cf3eed9703a854c78db8e63f81d47c5df428ac",
+          "after": "39870fa8028248cf4ec6251756cf3eed9703a854c78db8e63f81d47c5df428ac"
+        },
+        "applyScoreAttackForAnswer": {
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        }
+      }
+    },
+    {
+      "file": "play/managerial-directorate-classroom/cost-directive/index.html",
+      "engine": "legacy correct-hit boss",
+      "functions": {
+        "showKnowledgeRoom": {
+          "unchanged": false,
+          "before": "af3ef4ce3dfb3cd2b3d88d506fb316649efc837fa5ecc9da9cff186220b0f9ed",
+          "after": "482e74c41058d702268ed511e5ed8a922e03f845cba3c9fcc47f44abdf7a7711"
+        },
+        "buildBossQuestionSet": {
+          "unchanged": true,
+          "before": "3a797204121d8ff9895205f1dfb79691b242de86f74ae9ffa84c0cfb8d664361",
+          "after": "3a797204121d8ff9895205f1dfb79691b242de86f74ae9ffa84c0cfb8d664361"
+        },
+        "isQuestionAnswerCorrect": {
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        "recordAdaptiveAttempt": {
+          "unchanged": true,
+          "before": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054",
+          "after": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054"
+        },
+        "applyScoreAttackForAnswer": {
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        }
+      }
+    },
+    {
+      "file": "play/managerial-directorate-classroom/market-signal/index.html",
+      "engine": "legacy correct-hit boss",
+      "functions": {
+        "showKnowledgeRoom": {
+          "unchanged": false,
+          "before": "bb5943932130fe5f7ac4d912dc7e378ec333122e062a809333331f0a45c45721",
+          "after": "a993db4d6931c1c36d3a90213bbeb0623b5fc8f14a9920c2ec3b9782679454a9"
+        },
+        "buildBossQuestionSet": {
+          "unchanged": true,
+          "before": "3a797204121d8ff9895205f1dfb79691b242de86f74ae9ffa84c0cfb8d664361",
+          "after": "3a797204121d8ff9895205f1dfb79691b242de86f74ae9ffa84c0cfb8d664361"
+        },
+        "isQuestionAnswerCorrect": {
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        "recordAdaptiveAttempt": {
+          "unchanged": true,
+          "before": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054",
+          "after": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054"
+        },
+        "applyScoreAttackForAnswer": {
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        }
+      }
+    },
+    {
+      "file": "play/managerial-directorate-classroom/strategy-desk/index.html",
+      "engine": "legacy correct-hit boss",
+      "functions": {
+        "showKnowledgeRoom": {
+          "unchanged": false,
+          "before": "dc10851ae2967e660f9417a09797adf3ff51faef118b4cda113864a8314b31b6",
+          "after": "806d8ed85bed57ed5bef7e587ed9654aae1c877110bfab27b66d1f878ea1e53a"
+        },
+        "buildBossQuestionSet": {
+          "unchanged": true,
+          "before": "ee5f21989949a770864d1dbab5ffdb42542109e43a05a535bc6ca02b41361c65",
+          "after": "ee5f21989949a770864d1dbab5ffdb42542109e43a05a535bc6ca02b41361c65"
+        },
+        "isQuestionAnswerCorrect": {
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        "recordAdaptiveAttempt": {
+          "unchanged": true,
+          "before": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054",
+          "after": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054"
+        },
+        "applyScoreAttackForAnswer": {
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        }
+      }
+    },
+    {
+      "file": "play/managerial-directorate-telemetry-poc/agency-protocol/index.html",
+      "engine": "legacy correct-hit boss",
+      "functions": {
+        "showKnowledgeRoom": {
+          "unchanged": false,
+          "before": "cefa3526b8447ad4dd66cb9c004b19d1658ec70fd724bba5d00f777a49cf15e3",
+          "after": "8285818c109f803bf9f2f4a11c4e210d80d5ed7a23c0efc2683df3606dd7c8b9"
+        },
+        "buildBossQuestionSet": {
+          "unchanged": true,
+          "before": "24c500b4c2104c7c0df891727482d31ed4272799606fdcb8dd202df63e7d7447",
+          "after": "24c500b4c2104c7c0df891727482d31ed4272799606fdcb8dd202df63e7d7447"
+        },
+        "isQuestionAnswerCorrect": {
+          "unchanged": true,
+          "before": "122c9ae05aadbd6c9e147e8b02e7c37ee2741a7035d02f88d2b8eb1e260508aa",
+          "after": "122c9ae05aadbd6c9e147e8b02e7c37ee2741a7035d02f88d2b8eb1e260508aa"
+        },
+        "recordAdaptiveAttempt": {
+          "unchanged": true,
+          "before": "39870fa8028248cf4ec6251756cf3eed9703a854c78db8e63f81d47c5df428ac",
+          "after": "39870fa8028248cf4ec6251756cf3eed9703a854c78db8e63f81d47c5df428ac"
+        },
+        "applyScoreAttackForAnswer": {
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        }
+      }
+    },
+    {
+      "file": "play/managerial-directorate-telemetry-poc/cost-directive/index.html",
+      "engine": "legacy correct-hit boss",
+      "functions": {
+        "showKnowledgeRoom": {
+          "unchanged": false,
+          "before": "af3ef4ce3dfb3cd2b3d88d506fb316649efc837fa5ecc9da9cff186220b0f9ed",
+          "after": "482e74c41058d702268ed511e5ed8a922e03f845cba3c9fcc47f44abdf7a7711"
+        },
+        "buildBossQuestionSet": {
+          "unchanged": true,
+          "before": "3a797204121d8ff9895205f1dfb79691b242de86f74ae9ffa84c0cfb8d664361",
+          "after": "3a797204121d8ff9895205f1dfb79691b242de86f74ae9ffa84c0cfb8d664361"
+        },
+        "isQuestionAnswerCorrect": {
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        "recordAdaptiveAttempt": {
+          "unchanged": true,
+          "before": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054",
+          "after": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054"
+        },
+        "applyScoreAttackForAnswer": {
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        }
+      }
+    },
+    {
+      "file": "play/managerial-directorate-telemetry-poc/market-signal/index.html",
+      "engine": "legacy correct-hit boss",
+      "functions": {
+        "showKnowledgeRoom": {
+          "unchanged": false,
+          "before": "bb5943932130fe5f7ac4d912dc7e378ec333122e062a809333331f0a45c45721",
+          "after": "a993db4d6931c1c36d3a90213bbeb0623b5fc8f14a9920c2ec3b9782679454a9"
+        },
+        "buildBossQuestionSet": {
+          "unchanged": true,
+          "before": "3a797204121d8ff9895205f1dfb79691b242de86f74ae9ffa84c0cfb8d664361",
+          "after": "3a797204121d8ff9895205f1dfb79691b242de86f74ae9ffa84c0cfb8d664361"
+        },
+        "isQuestionAnswerCorrect": {
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        "recordAdaptiveAttempt": {
+          "unchanged": true,
+          "before": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054",
+          "after": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054"
+        },
+        "applyScoreAttackForAnswer": {
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        }
+      }
+    },
+    {
+      "file": "play/managerial-directorate-telemetry-poc/strategy-desk/index.html",
+      "engine": "legacy correct-hit boss",
+      "functions": {
+        "showKnowledgeRoom": {
+          "unchanged": false,
+          "before": "dc10851ae2967e660f9417a09797adf3ff51faef118b4cda113864a8314b31b6",
+          "after": "806d8ed85bed57ed5bef7e587ed9654aae1c877110bfab27b66d1f878ea1e53a"
+        },
+        "buildBossQuestionSet": {
+          "unchanged": true,
+          "before": "ee5f21989949a770864d1dbab5ffdb42542109e43a05a535bc6ca02b41361c65",
+          "after": "ee5f21989949a770864d1dbab5ffdb42542109e43a05a535bc6ca02b41361c65"
+        },
+        "isQuestionAnswerCorrect": {
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        "recordAdaptiveAttempt": {
+          "unchanged": true,
+          "before": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054",
+          "after": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054"
+        },
+        "applyScoreAttackForAnswer": {
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        }
+      }
+    },
+    {
+      "file": "play/managerial-intelligence-directorate/agency-protocol/index.html",
+      "engine": "legacy correct-hit boss",
+      "functions": {
+        "showKnowledgeRoom": {
+          "unchanged": false,
+          "before": "cefa3526b8447ad4dd66cb9c004b19d1658ec70fd724bba5d00f777a49cf15e3",
+          "after": "8285818c109f803bf9f2f4a11c4e210d80d5ed7a23c0efc2683df3606dd7c8b9"
+        },
+        "buildBossQuestionSet": {
+          "unchanged": true,
+          "before": "7e8135ad64a60a2c782032712b13393bc39a615c08d4ae765cef2b696f8162ae",
+          "after": "7e8135ad64a60a2c782032712b13393bc39a615c08d4ae765cef2b696f8162ae"
+        },
+        "isQuestionAnswerCorrect": {
+          "unchanged": true,
+          "before": "122c9ae05aadbd6c9e147e8b02e7c37ee2741a7035d02f88d2b8eb1e260508aa",
+          "after": "122c9ae05aadbd6c9e147e8b02e7c37ee2741a7035d02f88d2b8eb1e260508aa"
+        },
+        "recordAdaptiveAttempt": {
+          "unchanged": true,
+          "before": "39870fa8028248cf4ec6251756cf3eed9703a854c78db8e63f81d47c5df428ac",
+          "after": "39870fa8028248cf4ec6251756cf3eed9703a854c78db8e63f81d47c5df428ac"
+        },
+        "applyScoreAttackForAnswer": {
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        }
+      }
+    },
+    {
+      "file": "play/managerial-intelligence-directorate/cost-directive/index.html",
+      "engine": "legacy correct-hit boss",
+      "functions": {
+        "showKnowledgeRoom": {
+          "unchanged": false,
+          "before": "af3ef4ce3dfb3cd2b3d88d506fb316649efc837fa5ecc9da9cff186220b0f9ed",
+          "after": "482e74c41058d702268ed511e5ed8a922e03f845cba3c9fcc47f44abdf7a7711"
+        },
+        "buildBossQuestionSet": {
+          "unchanged": true,
+          "before": "f67ac686fe061d6b9c2e76bd81be7d7686ff83454da883b51d0325cf8dcc080e",
+          "after": "f67ac686fe061d6b9c2e76bd81be7d7686ff83454da883b51d0325cf8dcc080e"
+        },
+        "isQuestionAnswerCorrect": {
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        "recordAdaptiveAttempt": {
+          "unchanged": true,
+          "before": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054",
+          "after": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054"
+        },
+        "applyScoreAttackForAnswer": {
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        }
+      }
+    },
+    {
+      "file": "play/managerial-intelligence-directorate/market-signal/index.html",
+      "engine": "legacy correct-hit boss",
+      "functions": {
+        "showKnowledgeRoom": {
+          "unchanged": false,
+          "before": "bb5943932130fe5f7ac4d912dc7e378ec333122e062a809333331f0a45c45721",
+          "after": "a993db4d6931c1c36d3a90213bbeb0623b5fc8f14a9920c2ec3b9782679454a9"
+        },
+        "buildBossQuestionSet": {
+          "unchanged": true,
+          "before": "f67ac686fe061d6b9c2e76bd81be7d7686ff83454da883b51d0325cf8dcc080e",
+          "after": "f67ac686fe061d6b9c2e76bd81be7d7686ff83454da883b51d0325cf8dcc080e"
+        },
+        "isQuestionAnswerCorrect": {
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        "recordAdaptiveAttempt": {
+          "unchanged": true,
+          "before": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054",
+          "after": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054"
+        },
+        "applyScoreAttackForAnswer": {
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        }
+      }
+    },
+    {
+      "file": "play/managerial-intelligence-directorate/strategy-desk/index.html",
+      "engine": "legacy correct-hit boss",
+      "functions": {
+        "showKnowledgeRoom": {
+          "unchanged": false,
+          "before": "dc10851ae2967e660f9417a09797adf3ff51faef118b4cda113864a8314b31b6",
+          "after": "806d8ed85bed57ed5bef7e587ed9654aae1c877110bfab27b66d1f878ea1e53a"
+        },
+        "buildBossQuestionSet": {
+          "unchanged": true,
+          "before": "4b5d5ea7a6cecbfb9668006e95d31cc2ec7abc050707ccde4f6b136f8f7d8e09",
+          "after": "4b5d5ea7a6cecbfb9668006e95d31cc2ec7abc050707ccde4f6b136f8f7d8e09"
+        },
+        "isQuestionAnswerCorrect": {
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        "recordAdaptiveAttempt": {
+          "unchanged": true,
+          "before": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054",
+          "after": "30e4fa589a2d927ed07cbcdb42725fc360810d0e49947e4beeace968aaa51054"
+        },
+        "applyScoreAttackForAnswer": {
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        }
+      }
+    },
+    {
+      "file": "play/micro-domains/labyrinth-of-choice/index.html",
+      "engine": "legacy correct-hit boss",
+      "functions": {
+        "showKnowledgeRoom": {
+          "unchanged": false,
+          "before": "84bbdeff8bebed0a0db4025655251794f161b213c5ae0d3d000a25d313dcd8b4",
+          "after": "729f393fc53f5d26b25aef45f18cc1743e228db32352cbea102fed0ec163e071"
+        },
+        "buildBossQuestionSet": {
+          "unchanged": true,
+          "before": "bf276d936fec80187b84a5a1122dffc4558bbeeaf0d20b76b7668dd1faaba815",
+          "after": "bf276d936fec80187b84a5a1122dffc4558bbeeaf0d20b76b7668dd1faaba815"
+        },
+        "isQuestionAnswerCorrect": {
+          "unchanged": true,
+          "before": "122c9ae05aadbd6c9e147e8b02e7c37ee2741a7035d02f88d2b8eb1e260508aa",
+          "after": "122c9ae05aadbd6c9e147e8b02e7c37ee2741a7035d02f88d2b8eb1e260508aa"
+        },
+        "recordAdaptiveAttempt": {
+          "unchanged": true,
+          "before": "39870fa8028248cf4ec6251756cf3eed9703a854c78db8e63f81d47c5df428ac",
+          "after": "39870fa8028248cf4ec6251756cf3eed9703a854c78db8e63f81d47c5df428ac"
+        },
+        "applyScoreAttackForAnswer": {
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        }
+      }
+    },
+    {
+      "file": "build/faculty-build-composer/template/mastery-quests-faculty-template-composer-ready.html",
+      "engine": "three-response assessment",
+      "functions": {
+        "getCheckpointOutcome": {
+          "unchanged": false,
+          "before": "d3a2370997212ea124c37a09e484d675c1f0493768c81ab13521d8ac90056f9e",
+          "after": "83b741553dcb3721f33f95f7f3c86c50e8fbeb60ae3c600a105d7a7168bb8ec8"
+        },
+        "recordCheckpointAttempt": {
+          "unchanged": true,
+          "before": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3",
+          "after": "cb35e315ab133894bbc3b8a68aeb73bfa1342d709dce07ccc2f9e3af04fa22f3"
+        },
+        "advanceCheckpointAttempt": {
+          "unchanged": true,
+          "before": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3",
+          "after": "327d0a142c11e7b1c1024b19f5eeadb7c21a652c2ad42a8bb800cb354c6d2bf3"
+        },
+        "completeCheckpointEncounter": {
+          "unchanged": false,
+          "before": "3b9f3f832636fb7d23c0b01a9a663fbfc2a60503d26a3f4b02f205274977102d",
+          "after": "9c696597ed071ee5759754ad8117d9a7a2aee369c133936021d0e7fd3232f50f"
+        },
+        "showKnowledgeRoom": {
+          "unchanged": false,
+          "before": "6d4e3037e5249d729aeea22e1f3ea19e0a0534bd698287f149f0fa66b4c61572",
+          "after": "2c1653b5995aa805855763763efa6766b43e9ab6c8f8aef21edbc1584f9e71ee"
+        },
+        "buildBossQuestionSet": {
+          "unchanged": true,
+          "before": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d",
+          "after": "44952bcb039b0dedb72b404463adab80ceada6ce9058c9f39e4cda44342c2e4d"
+        },
+        "isQuestionAnswerCorrect": {
+          "unchanged": true,
+          "before": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3",
+          "after": "5f8fb2e7c07c49c8ed42d5d2317dccce72febdb2fcb55e8b3f874fa5c62f2bb3"
+        },
+        "recordAdaptiveAttempt": {
+          "unchanged": true,
+          "before": "c8ad9692bef730fca9bd40550c63455c97887f0f3a492c515103df366e16aa9a",
+          "after": "c8ad9692bef730fca9bd40550c63455c97887f0f3a492c515103df366e16aa9a"
+        },
+        "applyScoreAttackForAnswer": {
+          "unchanged": true,
+          "before": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9",
+          "after": "ac287c112a2879af09c8a93fca7dccfb691be535538e2e2e195b8731a687edd9"
+        }
+      }
+    }
+  ],
+  "production": {
+    "url": "https://masteryquests.org/play/economic-realm/market-gate/",
+    "files": [
+      {
+        "saved": "production-market-gate.html",
+        "sha256": "b3227d3f4da30e92a90bc3491a7cb3f4f162a5b9b31afaef8ac29eb48651a783",
+        "matchesCurrent": false,
+        "matchesBaseline": true
+      },
+      {
+        "saved": "production-market_gate_questions_student.js",
+        "sha256": "46fea122948021b410258c157f569dd1ddc872b3c9770e5bf3321c12489acfaf",
+        "matchesCurrent": true,
+        "matchesBaseline": true
+      },
+      {
+        "saved": "production-instructional_resources.js",
+        "sha256": "d445f2bc6268976148f467c5ccda7b31e34236aa2d3c7d9d1ac7a38f16525ce1",
+        "matchesCurrent": true,
+        "matchesBaseline": true
+      }
+    ],
+    "functions": {
+      "getCheckpointOutcome": {
+        "matchesBaseline": true,
+        "matchesCurrent": false
+      },
+      "recordCheckpointAttempt": {
+        "matchesBaseline": true,
+        "matchesCurrent": true
+      },
+      "advanceCheckpointAttempt": {
+        "matchesBaseline": true,
+        "matchesCurrent": true
+      },
+      "completeCheckpointEncounter": {
+        "matchesBaseline": true,
+        "matchesCurrent": false
+      },
+      "showKnowledgeRoom": {
+        "matchesBaseline": true,
+        "matchesCurrent": false
+      },
+      "buildBossQuestionSet": {
+        "matchesBaseline": true,
+        "matchesCurrent": true
+      },
+      "isQuestionAnswerCorrect": {
+        "matchesBaseline": true,
+        "matchesCurrent": true
+      },
+      "recordAdaptiveAttempt": {
+        "matchesBaseline": true,
+        "matchesCurrent": true
+      },
+      "applyScoreAttackForAnswer": {
+        "matchesBaseline": true,
+        "matchesCurrent": true
+      }
+    }
+  }
+}

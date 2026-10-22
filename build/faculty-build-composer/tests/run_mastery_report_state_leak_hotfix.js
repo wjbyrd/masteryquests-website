@@ -17,8 +17,8 @@ function extractFunction(src,name){
 
 const issues=[];
 assertCanonicalCoreVersion(core);
-if(!template.includes('<div id="question"></div>')) issues.push('question container is not block-safe');
-if(template.includes('<p id="question"></p>')) issues.push('legacy paragraph question container remains');
+if(!/<div id="question"(?:\s[^>]*)?><\/div>/.test(template)) issues.push('question container is not block-safe');
+if(/<p\b[^>]*\bid="question"/.test(template)) issues.push('legacy paragraph question container remains');
 if(!/function startGame\(shouldResume = false\)[\s\S]{0,420}restoreGameplayShell\(true\)/.test(template)) issues.push('new runs do not force pristine shell restoration');
 if(!/latestResultsScreenHTML = "";/.test(extractFunction(template,'returnToModeSelectFromRun'))) issues.push('mode return does not clear cached results');
 
@@ -48,7 +48,7 @@ const result={
   ok:issues.length===0,
   composerVersion:core.COMPOSER_VERSION,
   checks:{
-    blockSafeQuestionContainer:template.includes('<div id="question"></div>'),
+    blockSafeQuestionContainer:/<div id="question"(?:\s[^>]*)?><\/div>/.test(template),
     forcedPristineShellOnStart:/restoreGameplayShell\(true\)/.test(template),
     cacheClearedOnModeReturn:/latestResultsScreenHTML = "";/.test(extractFunction(template,'returnToModeSelectFromRun')),
     forcedRestoreSimulation:{gameBoxHTML:gameBox.innerHTML,cache:ctx.latestResultsScreenHTML}

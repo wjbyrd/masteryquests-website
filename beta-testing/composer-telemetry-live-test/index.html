@@ -67825,7 +67825,12 @@ function showKnowledgeRoom(bossRoom) {
     scheduleForCurrentRun(() => {
         const continueButton = document.getElementById("continueBtn");
         if(!continueButton) return;
-        continueButton.onclick = () => {
+        const session = runSessionId;
+    let continued = false;
+    continueButton.onclick = () => {
+        if(continued || session !== runSessionId || room !== bossRoom) return;
+        continued = true;
+        document.getElementById("continueBtn").disabled = true;
             const slotId = bossRoom === 10 ? "hallway1" : bossRoom === 20 ? "hallway2" : "hallway3";
             if(bossRoom !== 30) room++;
             showHallwayTransition(
