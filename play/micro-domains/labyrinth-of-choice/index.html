@@ -8735,7 +8735,7 @@ function createTelemetryContract(get, registry) {
   return {fields,stamp,show,exportRows,wrapShuffle,hash,stable,build,state,resources,installResources};
 }
 
-  const MQContract=createTelemetryContract((name,fallback)=>{try{return eval(name);}catch(_){return fallback;}}, /* RELEASE REGISTRY */ {"contractID":"mq-measurement/1","measurementRevision":"mq-tracker-2026.10.13-answers2","localSchema":"mq-local-csv/1","anonymousEnvelope":3,"manifestSchema":"mq-run-manifest/1","trackerSourceRevision":"a4aa7ad4f0a42faf32a6848402ba344d455f6597e19e38331811c1cb723cc52a","games":{"cost-directive":{"engineRevision":"a6fd020b86e34510c8dbebe603e3652c8b32e088cdbc6968aebc7cae25d4e42d","pocEngineRevision":"da38c602891febfab862477d10a368d5d1c74d7e6cf92c5d4a4b94964d38cb42","classroomEngineRevision":"350382b57641a345dea9a3255d2417e022d6afa4770d890a86cdd6118e32e2b6","assetRevision":"e84ae7d58d4f614ec045fb1b8f1327e9acb14060321b757e92ee42277369eb71"},"market-signal":{"engineRevision":"a4a8d447659904380db5e6d254d74034814e89fec15b0c52ef23cc4565a3565b","pocEngineRevision":"544f1bb25b0f7473fecfe59a8b54c45def2508d83c7cf4afa5c5ebbb50fe354a","classroomEngineRevision":"1f5aae36d56dd5d28e0ad46b83bf6bbdcb96e625bca2e50e8945c729b4e4d3d6","assetRevision":"8e884e9efd09d7d6bb819e8bf88777acd87c54c3d5606ed0861a9861725add5c"},"strategy-desk":{"engineRevision":"3dc3c384a4ff45d8dd40920654eaeb6244bb3eb295d1323adf811db7146b4465","pocEngineRevision":"7e8dcaa625baec16518ee9bd9982d717880a9b20dddde52b69d64f48d3574068","classroomEngineRevision":"b3222dac65ae17d4a05d08a6654cea2ca9ad5170822ea6770468d387150b985d","assetRevision":"6daeef8858732666d4a8f79dce498db26f463a85428e930b70d9c298deb974e6"},"agency-protocol":{"engineRevision":"01a79ea3c0b983ac6226314115915d850cd0b18eba723577afb9d20f8a848181","pocEngineRevision":"7491f94983656d4942bdf1e8d39fa78e232ce7d42116449736f9b8051a4131ea","classroomEngineRevision":"dce22dd3e102aa773cfc25ff7a378437fdfdab3c89da6b8b5a88db3e35903546","assetRevision":"90b45185b2f7b58e87bb619618a0c7642860be1748eb45ef768820db614faec8"},"composer":{"engineRevision":"7ec75da04dfe22b3cdad5f1e55cfbb85534dbfb0a222ddc72ce0e95c65247434","assetRevision":"b843eaf7f8d5a2568ac458d71a9519c91e57c19bfe1f99314688479d0471e314"},"equilibrium-crisis":{"engineRevision":"085f924aaad403e72bd74de0bef3248216f4228268c05e944e95cd11dea58d48","assetRevision":"e0bc167ef5bf6085998fa7620a66df587614e079e8a425d00b3378f748050d9e"},"liquidity-grid":{"engineRevision":"5a98243ccc14b84a218e125646372910172a3115e274ec32ad47085b5a4126c1","assetRevision":"9b4b4b9b956894944dfbd880edaa7d21315e9a565fe36c6e99c435adba40b640"},"market-gate":{"engineRevision":"9baa7b71fab8f86f648782cabab0e84c3102e774417e362695a0961bab2ec5a5","assetRevision":"a4b6a2220411fc0367e726bedb815bc2b0f23d866104389f3e64fe424e3ec9d6"},"national-ledger":{"engineRevision":"0fb43d43f0a3c43e1df19d98b6b1d01e52fcc993caf8d047da3233d73a017c16","assetRevision":"5edc2f9729237cc6638954a521fd65163fdc4cc1febbf4c012620b2ec5bbacde"},"stabilization-protocol":{"engineRevision":"be0e94de47faeb8850f55d9ee7a21d541b3ec3c4d2dc1590569ef895be7eef7c","assetRevision":"e0fdef674656ba0a2cf18e8483ef3724281013338f2671c141cc66c587f2348f"},"command-nexus":{"engineRevision":"a12017705e6740b8d929dd540c4dde19c68b0928eb1a49a6089de5fbf91a9800","assetRevision":"97f92412cf740f7de62e5f77f5838543aff5426bee9ceaf4f81aeb1bc427f36f"},"exchange-citadel":{"engineRevision":"3898b649c440e124ec4d2e9a50d60fc282851f33b5089b46518d11a3819112be","assetRevision":"7da393ab7e26acca52dedd1349a2455252439af297df7fa0e5e39d8a7c861505"},"mint-ash-gold":{"engineRevision":"21b0656bcd05ce0c286b9ad294f3db612700de43d55aa156ce309bbebd2e9336","assetRevision":"c8785e093302b9df20935e7a26cd0f2626764d492f02fe00839d929772016125"},"national-engine":{"engineRevision":"0e04d6f75df0795c2e54f779c43a865d0ae283163e3e76d79ece91a60251ef18","assetRevision":"524f4b7ee38d9ea9d1f08b0505a74699c68ca3f4bb6314dcef177285d686abd5"},"labyrinth-of-choice":{"engineRevision":"6ebefe4e297e62ed56105ff2a58d6c79d5bee1702fa8235cd9caf919537845ff","assetRevision":"44d1f4a1da9ae15503499c30c0e7974481674f5ed4b2a6aa5860ba1d08eb0aca"},"labyrinth-choice":{"engineRevision":"6ebefe4e297e62ed56105ff2a58d6c79d5bee1702fa8235cd9caf919537845ff","assetRevision":"44d1f4a1da9ae15503499c30c0e7974481674f5ed4b2a6aa5860ba1d08eb0aca"}}});
+  const MQContract=createTelemetryContract((name,fallback)=>{try{return eval(name);}catch(_){return fallback;}}, /* RELEASE REGISTRY */ {"contractID":"mq-measurement/1","measurementRevision":"mq-tracker-2026.10.13-answers2","localSchema":"mq-local-csv/1","anonymousEnvelope":3,"manifestSchema":"mq-run-manifest/1","trackerSourceRevision":"a4aa7ad4f0a42faf32a6848402ba344d455f6597e19e38331811c1cb723cc52a","games":{"cost-directive":{"engineRevision":"a6fd020b86e34510c8dbebe603e3652c8b32e088cdbc6968aebc7cae25d4e42d","pocEngineRevision":"da38c602891febfab862477d10a368d5d1c74d7e6cf92c5d4a4b94964d38cb42","classroomEngineRevision":"350382b57641a345dea9a3255d2417e022d6afa4770d890a86cdd6118e32e2b6","assetRevision":"e84ae7d58d4f614ec045fb1b8f1327e9acb14060321b757e92ee42277369eb71"},"market-signal":{"engineRevision":"a4a8d447659904380db5e6d254d74034814e89fec15b0c52ef23cc4565a3565b","pocEngineRevision":"544f1bb25b0f7473fecfe59a8b54c45def2508d83c7cf4afa5c5ebbb50fe354a","classroomEngineRevision":"1f5aae36d56dd5d28e0ad46b83bf6bbdcb96e625bca2e50e8945c729b4e4d3d6","assetRevision":"8e884e9efd09d7d6bb819e8bf88777acd87c54c3d5606ed0861a9861725add5c"},"strategy-desk":{"engineRevision":"3dc3c384a4ff45d8dd40920654eaeb6244bb3eb295d1323adf811db7146b4465","pocEngineRevision":"7e8dcaa625baec16518ee9bd9982d717880a9b20dddde52b69d64f48d3574068","classroomEngineRevision":"b3222dac65ae17d4a05d08a6654cea2ca9ad5170822ea6770468d387150b985d","assetRevision":"6daeef8858732666d4a8f79dce498db26f463a85428e930b70d9c298deb974e6"},"agency-protocol":{"engineRevision":"01a79ea3c0b983ac6226314115915d850cd0b18eba723577afb9d20f8a848181","pocEngineRevision":"7491f94983656d4942bdf1e8d39fa78e232ce7d42116449736f9b8051a4131ea","classroomEngineRevision":"dce22dd3e102aa773cfc25ff7a378437fdfdab3c89da6b8b5a88db3e35903546","assetRevision":"90b45185b2f7b58e87bb619618a0c7642860be1748eb45ef768820db614faec8"},"composer":{"engineRevision":"7ec75da04dfe22b3cdad5f1e55cfbb85534dbfb0a222ddc72ce0e95c65247434","assetRevision":"b843eaf7f8d5a2568ac458d71a9519c91e57c19bfe1f99314688479d0471e314"},"equilibrium-crisis":{"engineRevision":"085f924aaad403e72bd74de0bef3248216f4228268c05e944e95cd11dea58d48","assetRevision":"e0bc167ef5bf6085998fa7620a66df587614e079e8a425d00b3378f748050d9e"},"liquidity-grid":{"engineRevision":"5a98243ccc14b84a218e125646372910172a3115e274ec32ad47085b5a4126c1","assetRevision":"9b4b4b9b956894944dfbd880edaa7d21315e9a565fe36c6e99c435adba40b640"},"market-gate":{"engineRevision":"9baa7b71fab8f86f648782cabab0e84c3102e774417e362695a0961bab2ec5a5","assetRevision":"a4b6a2220411fc0367e726bedb815bc2b0f23d866104389f3e64fe424e3ec9d6"},"national-ledger":{"engineRevision":"0fb43d43f0a3c43e1df19d98b6b1d01e52fcc993caf8d047da3233d73a017c16","assetRevision":"5edc2f9729237cc6638954a521fd65163fdc4cc1febbf4c012620b2ec5bbacde"},"stabilization-protocol":{"engineRevision":"be0e94de47faeb8850f55d9ee7a21d541b3ec3c4d2dc1590569ef895be7eef7c","assetRevision":"e0fdef674656ba0a2cf18e8483ef3724281013338f2671c141cc66c587f2348f"},"command-nexus":{"engineRevision":"a12017705e6740b8d929dd540c4dde19c68b0928eb1a49a6089de5fbf91a9800","assetRevision":"97f92412cf740f7de62e5f77f5838543aff5426bee9ceaf4f81aeb1bc427f36f"},"exchange-citadel":{"engineRevision":"3898b649c440e124ec4d2e9a50d60fc282851f33b5089b46518d11a3819112be","assetRevision":"7da393ab7e26acca52dedd1349a2455252439af297df7fa0e5e39d8a7c861505"},"mint-ash-gold":{"engineRevision":"21b0656bcd05ce0c286b9ad294f3db612700de43d55aa156ce309bbebd2e9336","assetRevision":"c8785e093302b9df20935e7a26cd0f2626764d492f02fe00839d929772016125"},"national-engine":{"engineRevision":"0e04d6f75df0795c2e54f779c43a865d0ae283163e3e76d79ece91a60251ef18","assetRevision":"524f4b7ee38d9ea9d1f08b0505a74699c68ca3f4bb6314dcef177285d686abd5"},"labyrinth-of-choice":{"engineRevision":"72c27fc8305151e0b8568c3c3d1312e3cf74a8ce4902b88c61a8a168d4e36288","assetRevision":"44d1f4a1da9ae15503499c30c0e7974481674f5ed4b2a6aa5860ba1d08eb0aca"},"labyrinth-choice":{"engineRevision":"72c27fc8305151e0b8568c3c3d1312e3cf74a8ce4902b88c61a8a168d4e36288","assetRevision":"44d1f4a1da9ae15503499c30c0e7974481674f5ed4b2a6aa5860ba1d08eb0aca"}}});
   // END MEASUREMENT CONTRACT
 const TELEMETRY_COLUMNS = [
     "eventID","timestamp","telemetryVersion","gameVersion","runID","game","mode","event",
@@ -14321,15 +14321,38 @@ MQContract.build();
 </script>
 <!-- Labyrinth Exam Drill: isolated assessment path; other modes delegate unchanged. -->
 <style id="labyrinth-exam-styles">
-#mazeTrack .labyrinth-exam-room {font:inherit;font-size:.8rem;color:#e2e8f0;min-width:0;padding:0;cursor:pointer}
+#mazeTrack .labyrinth-exam-room {font:inherit;font-size:.75rem;color:#e2e8f0;min-width:0;padding:0}
 #mazeTrack .labyrinth-exam-answered {border:2px solid #8bdcff;background:#17334d}
 #mazeTrack .labyrinth-exam-locked {opacity:.65}
-#mazeTrack.labyrinth-exam-grid {grid-template-columns:repeat(10,minmax(44px,1fr));gap:5px}
-#mazeTrack.labyrinth-exam-grid .maze-box {box-sizing:border-box;width:100%;min-height:48px;height:auto;line-height:1.3;margin:0;white-space:normal}
-#mazeTrack.labyrinth-exam-grid .exam-checkpoint {font-size:.625rem}
-#mazeTrack.labyrinth-exam-grid button:focus-visible {outline:3px solid #8bdcff;outline-offset:2px}
-#examSectionStatus {font-size:.85rem;color:#cbd5e1;text-align:center;margin:.5rem 0}
-@media(max-width:650px){#mazeTrack.labyrinth-exam-grid {grid-template-columns:repeat(5,minmax(44px,1fr))}}
+body.labyrinth-exam-active {align-items:flex-start}
+body.labyrinth-exam-active #mazeTrack {margin:10px auto;gap:4px;grid-template-columns:repeat(10,minmax(0,1fr));max-width:440px}
+body.labyrinth-exam-active #mazeTrack .maze-box {box-sizing:border-box;width:100%;height:28px;aspect-ratio:auto}
+#labyrinthExamReviewButton,#labyrinthExamEnter {min-height:44px;padding:7px 12px;font-size:.75rem}
+body.labyrinth-exam-active #practiceModeControls {flex-direction:row;justify-content:center}
+#labyrinthExamReview {position:fixed;inset:0;box-sizing:border-box;width:min(480px,calc(100% - 24px));max-height:90dvh;overflow:auto;padding:20px;background:#071322;color:#e2e8f0;border:1px solid #d4af37;border-radius:14px;text-align:center}
+#labyrinthExamReview::backdrop {background:rgba(0,0,0,.8)}
+#labyrinthExamReview h2 {color:#f7d982;font-size:1.3rem;margin:0 0 10px}
+#labyrinthExamReviewGrid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:16px 0}
+#labyrinthExamReview button {min-height:48px;white-space:normal;margin:0;font:inherit;color:#e2e8f0;background:#10263a;border:1px solid #51829f;border-radius:8px;padding:8px}
+#labyrinthExamReviewGrid button {font-size:.8rem;overflow-wrap:anywhere}
+#labyrinthExamReview button:focus-visible {outline:3px solid #8bdcff;outline-offset:2px}
+#labyrinthExamReview button[aria-current] {border:2px solid #f7d982}
+#labyrinthExamReview button[data-saved] {background:#173b50}
+#labyrinthExamReview button:disabled {color:#94a3b8;border-style:dashed;cursor:not-allowed}
+#labyrinthExamReview .exam-review-actions {display:flex;flex-wrap:wrap;gap:10px}
+#labyrinthExamReview .exam-review-actions button {flex:1 1 150px}
+#labyrinthExamArtifacts {margin:12px auto;width:min(420px,100%);color:#cbd5e1;box-sizing:border-box}
+#labyrinthExamArtifacts summary {cursor:pointer;padding:12px;min-height:44px;box-sizing:border-box}
+#labyrinthExamArtifacts #artifactVault {display:block!important;width:100%}
+body.labyrinth-exam-active #message:empty {display:none}
+@media(max-width:768px){
+ body.labyrinth-exam-active #wizardBox {flex-direction:row;justify-content:center;max-width:none;gap:12px;min-height:0;box-sizing:border-box}
+ body.labyrinth-exam-active #wizardImage {width:48px;max-height:64px;object-fit:contain;margin:0}
+ body.labyrinth-exam-active #wizardName {font-size:.65rem}
+ body.labyrinth-exam-active .top-panel {gap:4px}
+ body.labyrinth-exam-active #mazeTrackContainer {padding:0 12px}
+ body.labyrinth-exam-active #gameBox {padding:8px}
+}
 #answers button.exam-selected {outline:3px solid #8bdcff;outline-offset:2px;background:#17334d}
 </style>
 <script id="labyrinth-exam">
@@ -14367,34 +14390,70 @@ MQContract.build();
         return original.startGame.call(this,shouldResume,requestedMode,...args);
     };
 
+    const vault=byId('artifactVault'), vaultParent=vault.parentElement;
+    const artifactDetails=document.createElement('details');artifactDetails.id='labyrinthExamArtifacts';artifactDetails.hidden=true;
+    artifactDetails.innerHTML='<summary>Artifacts</summary>';vaultParent.parentElement.append(artifactDetails);
+    const reviewButton=document.createElement('button');reviewButton.id='labyrinthExamReviewButton';reviewButton.type='button';reviewButton.className='end-practice-btn';reviewButton.textContent='Review Questions';reviewButton.hidden=true;
+    const enterButton=document.createElement('button');enterButton.id='labyrinthExamEnter';enterButton.type='button';enterButton.className='end-practice-btn';enterButton.textContent='Enter Checkpoint';enterButton.hidden=true;
+    byId('practiceModeControls').append(reviewButton,enterButton);
+    const review=document.createElement('dialog');review.id='labyrinthExamReview';review.setAttribute('aria-labelledby','examReviewTitle');review.setAttribute('aria-describedby','examReviewStatus');
+    review.innerHTML='<h2 id="examReviewTitle">Review Questions</h2><p id="examReviewStatus"></p><div id="labyrinthExamReviewGrid"></div><div class="exam-review-actions"><button type="button" id="examReviewCommit">Enter Checkpoint</button><button type="button" id="examReviewClose">Return to Question</button></div>';
+    document.body.append(review);
+    const closeReview=(restore=true)=>{review.close();if(restore)reviewButton.focus({preventScroll:true});};
+    byId('examReviewClose').onclick=()=>closeReview();
+    review.addEventListener('cancel',event=>{event.preventDefault();closeReview();});
+    review.addEventListener('keydown',event=>{
+        if(event.key==='Escape'){event.preventDefault();event.stopPropagation();closeReview();}
+        if(event.key==='Tab'){
+            const buttons=[...review.querySelectorAll('button:not(:disabled)')],index=buttons.indexOf(document.activeElement);
+            if(event.shiftKey&&index<=0){event.preventDefault();buttons.at(-1).focus();}
+            else if(!event.shiftKey&&(index<0||index===buttons.length-1)){event.preventDefault();buttons[0].focus();}
+        }
+    });
+    reviewButton.onclick=()=>{renderReview();review.showModal();byId('labyrinthExamReviewGrid').querySelector('[aria-current]')?.focus();};
+    const enter=()=>{const s=sectionState();if(!complete(s)||s.committed||answerSubmissionPending||runEnding)return;closeReview(false);commitSection(s);};
+    enterButton.onclick=enter;byId('examReviewCommit').onclick=enter;
+    function renderReview(){
+        const s=sectionState();if(!s)return;
+        const count=Array.from({length:9},(_,i)=>assessment.rooms[s.start+i]).filter(r=>r?.selectedIndex!=null).length;
+        byId('examReviewTitle').textContent=`Review Section ${s.index+1}`;
+        byId('examReviewStatus').textContent=`${count} of 9 responses saved`;
+        const grid=byId('labyrinthExamReviewGrid');grid.replaceChildren();
+        for(let n=s.start;n<=s.end;n++){
+            const saved=assessment.rooms[n]?.selectedIndex!=null,button=document.createElement('button');
+            button.type='button';button.dataset.examRoom=String(n);button.textContent=`${n} · ${saved?'Saved':'Unanswered'}`;
+            button.disabled=s.committed||answerSubmissionPending||runEnding;
+            button.setAttribute('aria-label',`Question ${n}, ${saved?'response saved':'unanswered'}${n===room?', current':''}${button.disabled?', locked':''}`);
+            if(saved)button.dataset.saved='true';if(n===room)button.setAttribute('aria-current','step');
+            button.onclick=()=>{closeReview(false);navigate(n);};grid.append(button);
+        }
+        byId('examReviewCommit').disabled=!complete(s)||s.committed||answerSubmissionPending||runEnding;
+    }
     function renderNavigation(){
-        const s=sectionState(), track=byId('mazeTrack');
-        if(!s || !track) return;
-        track.classList.add('labyrinth-exam-grid');
+        const s=sectionState(),track=byId('mazeTrack');if(!s||!track)return;
+        document.body.classList.add('labyrinth-exam-active');
+        byId('practiceModeControls').append(reviewButton,enterButton);
+        artifactDetails.hidden=false;if(vault.parentElement!==artifactDetails)artifactDetails.append(vault);
         track.replaceChildren();
         for(let n=1;n<=30;n++){
-            const target=sectionState(n), isCheckpoint=n===target.boss, active=target===s;
-            const answered=assessment.rooms[n]?.selectedIndex!=null;
-            const enabled=!runEnding&&!answerSubmissionPending&&active&&!s.committed&&(!isCheckpoint||complete(s));
-            const item=document.createElement(enabled?'button':'div');
-            item.className='maze-box labyrinth-exam-room';
-            item.textContent=isCheckpoint?'Checkpoint '+['I','II','III'][target.index]:String(n);
-            if(isCheckpoint){item.classList.add('exam-checkpoint');item.setAttribute('aria-describedby','examSectionStatus');}
-            if(answered)item.classList.add('labyrinth-exam-answered');
-            if(!enabled)item.classList.add('labyrinth-exam-locked');
+            const target=sectionState(n),checkpoint=n===target.boss,active=target===s,saved=assessment.rooms[n]?.selectedIndex!=null;
+            const item=document.createElement('div');item.className='maze-box labyrinth-exam-room';item.setAttribute('role','img');
+            item.textContent=checkpoint?['I','II','III'][target.index]:String(n);
+            if(saved)item.classList.add('labyrinth-exam-answered');
+            const locked=!active||target.committed||(checkpoint&&!complete(s));if(locked)item.classList.add('labyrinth-exam-locked');
             if(n===room){item.classList.add('active');item.setAttribute('aria-current','step');}
-            const label=target.committed?'committed':isCheckpoint?(enabled?'available':'locked'):answered?'response saved':active?'unanswered':'locked';
-            item.setAttribute('aria-label',`${isCheckpoint?'Checkpoint':'Question'} ${n}, ${label}${n===room?', current':''}`);
-            if(enabled){item.type='button';item.dataset.examRoom=String(n);item.onclick=()=>isCheckpoint?commitSection(s):navigate(n);}
-            else item.setAttribute('role','img');
-            track.append(item);
+            item.setAttribute('aria-label',`${checkpoint?'Checkpoint':'Question'} ${n}, ${target.committed?'committed':locked?'locked':saved?'response saved':'unanswered'}${n===room?', current':''}`);track.append(item);
         }
-        let status=byId('examSectionStatus');
-        if(!status){status=document.createElement('p');status.id='examSectionStatus';track.before(status);}
-        const count=Array.from({length:9},(_,i)=>assessment.rooms[s.start+i]).filter(r=>r?.selectedIndex!=null).length;
-        status.textContent=`Section ${s.index+1}: ${count} of 9 responses saved. ${s.committed?'Section committed.':complete(s)?'Select Checkpoint '+['I','II','III'][s.index]+' to commit and enter.':'Checkpoint requires all 9 responses.'}`;
+        reviewButton.hidden=s.committed||runEnding;reviewButton.disabled=answerSubmissionPending;
+        enterButton.hidden=s.committed||runEnding||!complete(s);enterButton.disabled=answerSubmissionPending;
+        if(review.open)renderReview();
     }
-    window.updateMazeTrack = function(...args){if(gameMode==='exam')return renderNavigation();byId('mazeTrack')?.classList.remove('labyrinth-exam-grid');byId('examSectionStatus')?.remove();return original.updateMazeTrack.apply(this,args);};
+    function clearExamPresentation(){
+        document.body.classList.remove('labyrinth-exam-active');review.close();reviewButton.hidden=true;enterButton.hidden=true;
+        artifactDetails.hidden=true;artifactDetails.open=false;if(vault.parentElement!==vaultParent)vaultParent.append(vault);
+    }
+    window.updateMazeTrack = function(...args){if(gameMode==='exam')return renderNavigation();clearExamPresentation();return original.updateMazeTrack.apply(this,args);};
+
     function navigate(target){
         const s=sectionState();
         if(gameMode!=='exam'||runEnding||answerSubmissionPending||!ordinary(target)||s?.committed||sectionState(target)!==s)return false;
@@ -14446,12 +14505,12 @@ MQContract.build();
         }else{playExplorationMusic();byId('question').innerHTML=`<div>${currentQuestion.q}</div>`;}
         byId('bossMessage').textContent=checkpoint?`ASSESSMENT CHECKPOINT — Response ${s.checkpointIndex+1} of 3`:'';
         byId('formulaHint').textContent=currentQuestion.hint?'💡 Hint: '+currentQuestion.hint:'';
-        byId('message').textContent=checkpoint?'Responses are recorded without immediate correctness feedback.':'Choose a response, then use the section navigation to review or continue.';
+        byId('message').textContent='';
         byId('streakDisplay').textContent='';
         byId('areaDisplay').textContent=`Exam Drill — Section ${s.index+1} · ${checkpoint?'Checkpoint':`Question ${room-s.start+1} of 9`}`;
         byId('progressFill').style.width=`${((s.index*12+(checkpoint?9+s.checkpointIndex:0))/36)*100}%`;
         byId('artifactDrop').style.display='none';
-        wizardSpeak('Your responses remain sealed until the assessment permits a summary. Take your time.');
+        // Navigation is available through Review Questions without repeated instructions.
         displayQuestion();renderNavigation();
         window.MQAccessibility?.sync();
         // Heading focus supplies question context; the live region is only a neutral status.
@@ -14551,12 +14610,12 @@ MQContract.build();
         renderNavigation();byId('question').focus({preventScroll:true});live('');runPhase='boss-summary';
     }
     window.handlePracticeModeComplete = function(...args){
-        if(gameMode==='exam'){byId('labyrinthExamNavigation')?.remove();live('');}
+        if(gameMode==='exam'){clearExamPresentation();live('');}
         // Uncommitted drafts are not accepted answers or automatic zeros, including early exit.
         return original.handlePracticeModeComplete.apply(this,args);
     };
     window.returnToModeSelectFromRun = function(...args){
-        if(gameMode==='exam')byId('labyrinthExamNavigation')?.remove();
+        if(gameMode==='exam')clearExamPresentation();
         return original.returnToModeSelectFromRun.apply(this,args);
     };
 })();
