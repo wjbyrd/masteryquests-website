@@ -90,3 +90,8 @@ body #returnMenuBtn.return-menu-btn:hover {box-shadow:var(--mq-hover-shadow)!imp
 .fading-fortune-value,.risk-reward-value,.score-attack-value,.target-unlimited-symbol {color:var(--mq-heading)}
 .risk-wager-card,.risk-wager-panel {background-image:var(--mq-modal-paint);border-color:var(--mq-panel-border);color:var(--mq-text)}
 #shareBtn {color:var(--mq-dark)!important;background:linear-gradient(var(--mq-heading),var(--mq-focus))!important}
+
+/* The shared Auditor uses the existing Custodian artwork without a portrait halo. */
+body #wizardImage,body #wizardImage.mq-guide-image img,#guideIntroScreen .guide-intro-image {filter:none;box-shadow:none}
+#guideIntroScreen .guide-intro-portrait-frame {background-image:none;box-shadow:none}
+#guideIntroScreen::before {background:none}

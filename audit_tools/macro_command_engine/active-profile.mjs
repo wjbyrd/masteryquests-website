@@ -1,9 +1,14 @@
 // Captured profiles remain a record of the frozen pages. These explicit corrections
-// select the intended existing bank without rewriting any of its question records.
+// select the intended existing bank and current guide presentation without rewriting question records.
 import fs from 'node:fs';
 const objectiveLabels=JSON.parse(fs.readFileSync(new URL('./objective-labels.json',import.meta.url),'utf8'));
 export function activeProfile(game, profiles){
-  const p={...profiles[game],objectiveLabels:objectiveLabels[game]||profiles[game].objectiveLabels};
+  const original=profiles[game];
+  const p={...original,objectiveLabels:objectiveLabels[game]||original.objectiveLabels,
+    guideName:'The Auditor',guideImage:'custodian.webp',
+    wizardFeedback:Object.fromEntries(Object.entries(original.wizardFeedback).map(([kind,lines])=>
+      [kind,lines.map(line=>line.replaceAll('The Custodian','The Auditor'))]))
+  };
   if(game!=='national-engine')return p;
   return {...p,
     bank:'national_engine_question_bank_student.js',inlineBank:null,inlineAuxiliary:null,
