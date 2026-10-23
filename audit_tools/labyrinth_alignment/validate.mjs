@@ -9,6 +9,10 @@ process.env.MQ_A11Y_OUT ||= 'tmp/accessibility_cleanup/labyrinth-modernization';
 const {pw,serve,isolated,scan}=await import('../accessibility_cleanup/support.mjs');
 const out=path.resolve(process.env.MQ_A11Y_OUT),file='play/micro-domains/labyrinth-of-choice/index.html';
 const baseline=execFileSync('git',['show',`${process.env.MQ_LABYRINTH_BASELINE||'47485dd34788de6f23d0db325801aa7dd4640317'}:${file}`],{encoding:'utf8',maxBuffer:5e6});
+// Production predates the approved revisable Exam and neutral guardian reveals.
+// Keep it for non-Exam/save compatibility; pin Exam to the approved branch tip.
+const examBaselineRef=process.env.MQ_LABYRINTH_EXAM_BASELINE||'0a28f2eb9f2409d903b85582091e04a018a80b86';
+const examBaseline=execFileSync('git',['show',`${examBaselineRef}:${file}`],{encoding:'utf8',maxBuffer:5e6});
 const stage=process.argv[2]||'phase1',results=[];
 if(stage==='phase2'&&(!process.argv[3]||process.argv[3].includes('Exam'))){
  const require=createRequire(import.meta.url),core=require('../../build/faculty-build-composer/composer-core.js');
@@ -24,7 +28,7 @@ async function open(old=false,width=1440,extra={},target=file){
  x.errors=[];x.page.on('pageerror',e=>x.errors.push(e.message));
  await x.page.addInitScript(()=>{window.__randomCalls=0;let n=16427;Math.random=()=>{window.__randomCalls++;return((n=(n*1664525+1013904223)>>>0)/4294967296);};});
  await x.page.clock.install({time:new Date('2026-10-23T16:00:00Z')});await x.page.clock.pauseAt(new Date('2026-10-23T16:00:01Z'));
- if(old)await x.page.route('**/'+file,r=>r.fulfill({contentType:'text/html',body:baseline}));
+ if(old)await x.page.route('**/'+file,r=>r.fulfill({contentType:'text/html',body:old==='approved-exam'?examBaseline:baseline}));
  await x.page.goto(origin+'/'+target,{timeout:30000});return x;
 }
 async function shot(p,name){await p.screenshot({path:path.join(out,stage+'-'+name+'.png'),fullPage:true});}
@@ -44,9 +48,89 @@ async function answer(p,want){
 async function check(name,fn){if(process.argv[3]&&!name.includes(process.argv[3]))return;try{const details=await fn();results.push({name,status:'PASS',details});}catch(e){results.push({name,status:'FAIL',error:e.stack});}fs.writeFileSync(path.join(out,stage+(process.argv[3]?'-focused':'')+'-results.json'),JSON.stringify(results,null,2));console.log(name,results.at(-1).status);}
 try{
  if(['phase1','phase2'].includes(stage)){
- for(const mode of ['standard','timed','quiz','unlimited','legendary','score','trialGraph','fadingFortune','riskReward',...(stage==='phase1'?['exam']:[])])await check('baseline parity '+mode,async()=>{
+ for(const mode of ['standard','timed','quiz','unlimited','legendary','score','trialGraph','fadingFortune','riskReward'])await check('baseline parity '+mode,async()=>{
   const runs=[];for(const old of [true,false]){const x=await open(old);try{await start(x.page,mode);const snapshots=[await state(x.page)];for(const want of [true,false]){await answer(x.page,want);snapshots.push(await state(x.page));await next(x.page);}assert.deepEqual(x.errors,[]);runs.push(snapshots);}finally{await x.context.close();}}
   assert.deepEqual(runs[1],runs[0]);return {snapshots:runs[1]};
+ });
+ await check('baseline parity exam',async()=>{
+  const runs=[];
+  for(const reference of ['approved-exam',false]){
+   const x=await open(reference,390),p=x.page;
+   try{
+    await start(p,'exam');
+    const snapshots=[];
+    async function capture(){
+     snapshots.push({...await state(p),...await p.evaluate(()=>({
+      drafts:Array.from({length:30},(_,i)=>i+1).filter(n=>n%10).map(n=>getExamRoomState(n)),
+      report:getMasteryReportData(),daily:MQLabyrinthDaily.getState(),
+      navigation:[...document.querySelectorAll('#mazeTrack [data-exam-room]')].map(e=>({room:e.dataset.examRoom,label:e.getAttribute('aria-label'),disabled:e.getAttribute('aria-disabled'),current:e.getAttribute('aria-current')}))
+     }))});
+    }
+    async function withheld(){
+     assert(!await p.locator('#artifactVault').isVisible());
+     assert(!await p.locator('#artifactDrop').isVisible());
+     assert(!await p.locator('.principal-skip-btn').isVisible());
+     assert(!await p.locator('#hallwayTransition').evaluate(e=>e.classList.contains('active')));
+     assert.equal(await p.locator('#streakDisplay').innerText(),'');
+     const feedback=await p.evaluate(()=>currentQuestion?.feedback);
+     if(feedback)assert(!(await p.locator('body').innerText()).includes(feedback));
+     assert(!/correct|incorrect|streak|hit!/i.test(await p.locator('#srAnnouncements').innerText()));
+    }
+    assert.equal(await p.locator('#mazeTrack [data-exam-room]').count(),30);
+    await capture();
+    for(const [sectionIndex,first] of [1,11,21].entries()){
+     const accepted=sectionIndex*12,checkpoint=first+9;
+     assert.equal(await p.evaluate(n=>selectExamCheckpoint(n),checkpoint),false);
+     // Revise a wrong draft, visit another room and return without reshuffling.
+     const options=await p.evaluate(()=>currentQuestion.options);
+     await answer(p,false);await withheld();await capture();
+     await answer(p,true);await withheld();await capture();
+     const selected=await p.evaluate(n=>getExamRoomState(n).selectedIndex,first);
+     await p.locator(`[data-exam-room="${first+1}"]`).click();
+     await p.locator(`[data-exam-room="${first}"]`).click();
+     assert.deepEqual(await p.evaluate(()=>currentQuestion.options),options);
+     assert.equal(await p.evaluate(n=>getExamRoomState(n).selectedIndex,first),selected);
+     for(let n=first+1;n<checkpoint;n++){
+      await p.locator(`[data-exam-room="${n}"]`).click();
+      await answer(p,n%2===1);await withheld();
+      assert.equal(await p.evaluate(()=>totalAttempts),accepted);
+      await capture();
+     }
+     await p.locator(`[data-exam-room="${checkpoint}"]`).click();
+     assert.equal(await p.evaluate(()=>totalAttempts),accepted+9);
+     assert.equal(await p.evaluate(n=>selectExamCheckpoint(n),checkpoint),false);
+     assert(await p.locator('#labyrinthExamGuardianIntroduction').isVisible());
+     assert.equal(await p.locator('#labyrinthExamGuardianName').innerText(),['THE WARDEN','THE DECOMPOSER','THE SOVEREIGN'][sectionIndex]);
+     assert((await p.locator('#labyrinthExamGuardianIntroduction').innerText()).includes('Three responses. Feedback follows the checkpoint.'));
+     await withheld();await capture();
+     await p.locator('#labyrinthExamGuardianContinue').click();
+     // Misses must consume all three responses, never trigger a Standard setback.
+     for(const [i,want] of [[false,true,false],[true,false,true],[true,true,true]][sectionIndex].entries()){
+      await answer(p,want);
+      assert.equal(await p.evaluate(()=>room),checkpoint);
+      assert.equal(await p.evaluate(()=>totalAttempts),accepted+10+i);
+      assert.equal(await p.evaluate(()=>remediationState.active),false);
+      assert(!await p.locator('#labyrinthExamGuardianIntroduction').isVisible());
+      await withheld();await capture();
+     }
+     assert((await p.locator('#question').innerText()).includes(['MASTERY NOT YET SECURED','CLEARED','SECURED'][sectionIndex]));
+     await p.locator('#continueBtn').click();await capture();
+    }
+    const final=await state(p);
+    assert.equal(final.attempts,36);assert.equal(final.correct,21);
+    assert.equal(final.columns.length,70);
+    assert.equal(final.events.filter(e=>e.event==='question').length,36);
+    assert.equal(final.events.filter(e=>e.event==='exam_section_commit').length,3);
+    assert.equal(final.events.filter(e=>e.event==='exam_answer_revision').length,3);
+    assert.equal(final.events.filter(e=>e.event==='exam_complete').length,1);
+    assert.equal(await p.evaluate(()=>runEnding),true);
+    assert(Object.values(final.vault).every(value=>value!=='true'));
+    assert(!await p.locator('#artifactVault').isVisible());
+    assert.deepEqual(x.errors,[]);runs.push(snapshots);
+   }finally{await x.context.close();}
+  }
+  assert.deepEqual(runs[1],runs[0]);
+  return {baseline:examBaselineRef,statesCompared:runs[0].length,sections:3,ordinaryPerSection:9,guardianPerSection:3,acceptedResponses:36};
  });
  for(const width of [1440,820,390,320])await check('menu and responsive '+width,async()=>{const x=await open(false,width);try{const p=x.page;await start(p,'unlimited');await shot(p,'question-'+width);assert.equal(await p.locator('.fullscreenBtn').count(),0);assert.equal(await p.locator('#mqUtilityMenu #soundToggle').count(),1);await p.locator('#returnMenuBtn').focus();await p.keyboard.press('Enter');await p.waitForTimeout(50);await shot(p,'menu-'+width);
   for(const key of ['Tab','Tab','Shift+Tab','Tab','Tab','Tab','Tab','Tab','Tab','Shift+Tab']){await p.keyboard.press(key);assert(await p.locator('#gameModal').evaluate(e=>e.contains(document.activeElement)));}
@@ -94,7 +178,11 @@ try{
  await check('Graph keyboard description focus and motion default',async()=>{const runs=[];for(const old of [true,false]){const x=await open(old,390);try{const p=x.page;await start(p,'trialGraph');assert(await p.evaluate(()=>document.documentElement.classList.contains('mq-motion-paused')));const graph=p.locator('#questionImageBox img');const before=await graph.evaluate(e=>({alt:e.alt,description:document.getElementById(e.getAttribute('aria-describedby'))?.textContent}));assert(before.alt&&before.description);await p.locator('#questionImageBox summary').focus();await p.keyboard.press('Enter');assert(await p.locator('#questionGraphDescription').isVisible());await graph.focus();await p.keyboard.press('Enter');for(const key of ['Tab','Shift+Tab','Tab','Tab']){await p.keyboard.press(key);assert(await p.locator('#graphLightbox').evaluate(e=>e.contains(document.activeElement)));}await p.keyboard.press('Escape');assert(await graph.evaluate(e=>e===document.activeElement));runs.push(before);}finally{await x.context.close();}}assert.deepEqual(runs[1],runs[0]);return {graph:runs[1],limitation:runs[1].description.includes('unavailable')?'This authored graph has descriptive alt text but no extended description at baseline; bank metadata was not edited.':null};});
  await check('Full Quiz baseline report and selection parity',async()=>{const traces=[];for(const old of [true,false]){const x=await open(old);try{const p=x.page;await start(p,'quiz');const trace=[];for(let i=0;i<10;i++){trace.push(await state(p));await answer(p,i%2===0);await next(p);}const final=await state(p);assert.equal(final.attempts,10);assert(final.events.some(e=>e.event==='quiz_complete'));trace.push(final);traces.push(trace);}finally{await x.context.close();}}assert.deepEqual(traces[1],traces[0]);return {final:traces[1].at(-1)};});
  await check('Score resolve and Fading timer preservation',async()=>{const results=[];for(const mode of ['score','fadingFortune']){const runs=[];for(const old of [true,false]){const x=await open(old);try{const p=x.page;await start(p,mode);if(mode==='fadingFortune'){await p.waitForTimeout(50);await p.clock.runFor(9000);assert(await p.evaluate(()=>fadingFortuneFadeCount>0));}await answer(p,true);const settled=await state(p);await p.clock.runFor(30000);assert.deepEqual(await state(p),settled);await next(p);if(mode==='fadingFortune')assert.equal(await p.evaluate(()=>fadingFortuneQuestionValue),100);runs.push({settled,next:await state(p)});}finally{await x.context.close();}}assert.deepEqual(runs[1],runs[0]);results.push({mode,...runs[1]});}return results;});
- await check('Risk all-in bust baseline parity',async()=>{const runs=[];for(const old of [true,false]){const x=await open(old);try{const p=x.page;await p.evaluate(()=>{showModeSelect();startSelectedMode('riskReward',{riskRewardConfirmed:true});});await p.getByRole('button',{name:/ALL IN/i}).click();await answer(p,false);const final=await state(p);assert.equal(final.bankroll,0);assert(final.events.some(e=>e.event==='riskReward_bust'));runs.push(final);}finally{await x.context.close();}}assert.deepEqual(runs[1],runs[0]);return runs[1];});
+ await check('Risk all-in bust baseline parity',async()=>{const runs=[];for(const old of [true,false]){const x=await open(old);try{const p=x.page;await p.evaluate(()=>{showModeSelect();startSelectedMode('riskReward',{riskRewardConfirmed:true});});
+  // Follow the approved introduction gate without the start helper's default 10% wager.
+  for(const id of ['guideIntroProceed','labyrinthIntroProceed'])if(await p.locator('#'+id).isVisible())await p.locator('#'+id).click();
+  await p.waitForFunction(()=>Boolean(currentQuestion));
+  await p.getByRole('button',{name:/ALL IN/i}).click();await answer(p,false);const final=await state(p);assert.equal(final.bankroll,0);assert(final.events.some(e=>e.event==='riskReward_bust'));runs.push(final);}finally{await x.context.close();}}assert.deepEqual(runs[1],runs[0]);return runs[1];});
  }
 }finally{await browser.close();server.close();}
 if(results.some(r=>r.status==='FAIL'))process.exitCode=1;
