@@ -1,31 +1,92 @@
-/* Macro's original low-light charcoal, gold and bronze surfaces.
-   Only paint properties belong here: the aligned layout and all state logic stay
-   in their existing sources. Green/red semantic feedback remains distinguishable. */
-#gameBox {
-  background:radial-gradient(circle at center,rgba(42,74,64,.34) 0%,rgba(18,24,24,.92) 52%,rgba(4,5,5,.98) 100%);
-  border-color:rgba(214,177,92,.34);
-  box-shadow:0 0 24px rgba(214,177,92,.24),0 0 70px rgba(88,28,24,.28),inset 0 0 38px rgba(0,0,0,.72);
+/* Shared paint for components added after the individual historical themes.
+   Variables are defined independently per game in themes.json. No geometry,
+   visibility, motion preferences or gameplay state is set in this stylesheet. */
+body {color:var(--mq-text)}
+body.blank-builder-template {--mq-gameplay-scene-overlay:linear-gradient(rgba(0,0,0,.30),rgba(0,0,0,.48))}
+.mode-select-screen {background-color:var(--mq-dark);background-image:linear-gradient(rgba(0,0,0,.42),rgba(0,0,0,.78)),var(--mq-start-image)}
+.mode-select-panel,.quiz-setup-panel,.mastery-stat-card,.mastery-section {
+  background-color:var(--mq-surface);background-image:var(--mq-panel-paint);
+  border-color:var(--mq-panel-border);box-shadow:var(--mq-panel-shadow);color:var(--mq-text);
 }
-#gameShell {
-  background:linear-gradient(180deg,rgba(18,24,24,.96),rgba(4,5,5,.98));
-  border-color:rgba(214,177,92,.28);
-}
-#wizardBox {
-  background:radial-gradient(circle at top,rgba(65,95,78,.26),rgba(12,18,18,.90) 48%,rgba(4,5,5,.98));
-  border-color:rgba(214,177,92,.42);
-}
-#progressFill,.daily-progress-fill,.mastery-bar-fill {
-  background:linear-gradient(90deg,#2f4f43,#d6b15c,#8a3a24);
-  box-shadow:0 0 12px rgba(214,177,92,.45),0 0 22px rgba(138,58,36,.25);
-}
-/* Runtime guardian colors remain in the preserved engine. Override their visual
-   variables here, including checkpoint 20, without changing encounter behavior. */
-.boss-reveal-screen {--bossRevealGlow:rgba(214,177,92,.25)!important;--bossRevealBorder:rgba(214,177,92,.42)!important}
-.generic-boss-image,.boss-q {--bossColor:#d6b15c!important}
-#bossMessage,.boss-title,.generic-boss-symbol {color:#f4d58d!important}
-/* Victory and Wrong Turn markup is generated with inline paint declarations. */
-#hallwayText > div:last-child {color:#d8c7a0!important}
-#gameBox .victory {text-shadow:0 0 18px rgba(240,200,106,.9),0 0 34px rgba(214,177,92,.35)!important}
-#gameBox .victory + div {background:rgba(18,24,24,.92)!important;box-shadow:0 0 24px rgba(0,0,0,.65),inset 0 0 22px rgba(214,177,92,.08)!important}
-#archivistLine {color:#d8c7a0!important;text-shadow:0 0 8px rgba(214,177,92,.35)!important}
-#gameBox button[onclick="downloadTelemetryCsv()"],#gameBox button[onclick="showMasteryReportScreen()"] {background:linear-gradient(180deg,#61472b,#10120f)!important}
+.mode-title,.mode-card-title,.quiz-setup-title,.mastery-report-title,.mastery-stat-value,.mastery-section h3 {color:var(--mq-heading);text-shadow:0 0 12px rgba(var(--mq-accent),.3)}
+.mode-subtitle,.mode-card-text,.quiz-setup-subtitle,.mastery-report-subtitle,.mastery-stat-label,.mastery-note,.mastery-small,.mastery-evidence-copy {color:var(--mq-muted)}
+.mode-card {background-color:var(--mq-surface);background-image:none;color:var(--mq-text);border-color:var(--mq-panel-border)}
+.mode-card .mode-symbol {background-image:var(--mq-panel-paint);color:var(--mq-heading);border-color:var(--mq-panel-border)}
+.mode-card .mode-symbol::after {color:var(--mq-heading);text-shadow:0 0 15px rgba(var(--mq-accent),.4)}
+.mode-card:hover {border-color:var(--mq-focus);box-shadow:0 0 22px rgba(var(--mq-accent),.3)}
+/* The aligned launcher's legacy inline/important paint needs a narrow override. */
+body #returnMenuBtn.return-menu-btn {color:var(--mq-text)!important;background:var(--mq-button-paint)!important;border-color:var(--mq-button-border)!important;box-shadow:var(--mq-button-shadow)}
+body #returnMenuBtn.return-menu-btn:hover {background:var(--mq-hover-paint)!important;border-color:var(--mq-hover-border)!important;box-shadow:var(--mq-hover-shadow)}
+#gameMenuOptions .game-menu-option,#gameMenuOptions #soundToggle {color:var(--mq-text);background:var(--mq-button-paint);border-color:var(--mq-button-border);box-shadow:var(--mq-button-shadow)}
+#gameMenuOptions .game-menu-option:hover,#gameMenuOptions #soundToggle:hover {background:var(--mq-hover-paint);border-color:var(--mq-hover-border);box-shadow:var(--mq-hover-shadow)}
+.game-modal,.quiz-setup-modal {background-color:rgba(0,0,0,.72)}
+.game-modal-card {background-image:var(--mq-modal-paint);background-color:var(--mq-dark);border-color:var(--mq-panel-border);box-shadow:var(--mq-modal-shadow);color:var(--mq-text)}
+.game-modal-card h2 {color:var(--mq-heading)}
+.game-modal-card p {color:var(--mq-muted)}
+.secondary-modal-btn,.secondary-start-btn,.end-practice-btn {color:var(--mq-heading);background-image:var(--mq-button-paint);border-color:var(--mq-button-border)}
+/* New Exam states retain their existing labels, disabled/locked opacity, and
+   selected-state border widths. Saved answers do not imply correctness. */
+button.maze-box.exam-nav-room {color:var(--mq-text)}
+button.maze-box.exam-nav-room.exam-unanswered {background-image:var(--mq-tile-paint);border-color:var(--mq-tile-border)}
+button.maze-box.exam-nav-room.exam-answered {background-image:var(--mq-saved-paint);border-color:var(--mq-heading)}
+button.maze-box.exam-nav-room.exam-boss-ready {background-image:var(--mq-active-paint);border-color:var(--mq-focus);box-shadow:var(--mq-active-shadow)}
+button.maze-box.exam-nav-room.active {background-image:var(--mq-active-paint);border-color:var(--mq-focus);box-shadow:var(--mq-active-shadow)}
+button.maze-box.exam-nav-room.exam-committed {background-image:var(--mq-saved-paint);border-color:var(--mq-panel-border)}
+button.maze-box.exam-nav-room:hover,button.maze-box.exam-nav-room:focus-visible {border-color:var(--mq-focus);box-shadow:0 0 0 3px rgba(var(--mq-accent),.28),0 0 14px rgba(var(--mq-accent),.42)}
+#answers button.selected,#answers button[aria-pressed="true"] {background-image:var(--mq-active-paint)!important;border-color:var(--mq-focus)!important;box-shadow:var(--mq-active-shadow)!important}
+body[data-macro-mode="exam"] #message {text-shadow:none}
+/* Independent palettes extend to introductions absent from the historical UI. */
+.guide-intro-screen,.boss-reveal-screen {color:var(--mq-text);background-color:var(--mq-dark);background-image:linear-gradient(115deg,var(--mq-dark),var(--mq-surface)),var(--mq-guide-intro-image,var(--mq-start-image,none))}
+.boss-reveal-screen {background-image:linear-gradient(115deg,var(--mq-dark),var(--mq-surface)),var(--mq-boss-reveal-image,none);--bossRevealGlow:rgba(var(--mq-accent),.25)!important;--bossRevealBorder:var(--mq-panel-border)!important}
+.guide-intro-screen::before {background:radial-gradient(circle at 28% 42%,rgba(var(--mq-accent),.16),transparent 36%),linear-gradient(90deg,rgba(0,0,0,.16),transparent 48%,rgba(0,0,0,.36))}
+.guide-intro-portrait-frame {background-image:radial-gradient(circle at 50% 34%,rgba(var(--mq-accent),.19),var(--mq-dark) 66%);border-color:var(--mq-panel-border);box-shadow:0 22px 70px rgba(0,0,0,.72),0 0 38px rgba(var(--mq-accent),.15)}
+.boss-reveal-screen .guide-intro-portrait-frame {background-image:radial-gradient(circle at 50% 34%,rgba(var(--mq-accent),.25),var(--mq-dark) 68%)}
+.guide-intro-name,.guide-intro-kicker,.guide-intro-fallback {color:var(--mq-heading)}
+.guide-intro-dialogue {color:var(--mq-text)}
+.guide-intro-dialogue.secondary {color:var(--mq-muted)}
+.guide-intro-proceed {color:var(--mq-dark);background:linear-gradient(var(--mq-heading),var(--mq-focus));border-color:var(--mq-focus);box-shadow:0 0 24px rgba(var(--mq-accent),.25),0 12px 30px rgba(0,0,0,.42)}
+.guide-intro-proceed:hover,.guide-intro-proceed:focus-visible {outline-color:var(--mq-focus);box-shadow:0 0 32px rgba(var(--mq-accent),.4)}
+.generic-boss-image,.boss-q {--bossColor:var(--mq-focus)!important}
+.boss-title,.generic-boss-symbol,#gameBox.boss-mode #bossMessage {color:var(--mq-heading)!important}
+/* Feedback text is authored by the preserved engine with inline colors. */
+#hallwayText > div:first-child {color:var(--mq-heading)!important}
+#hallwayText > div:nth-child(2) {color:var(--mq-text)!important}
+#hallwayText > div:last-child {color:var(--mq-muted)!important}
+/* Daily status-specific success rules remain more specific than these bases. */
+.daily-task-pill,.daily-details-panel,.daily-toast {color:var(--mq-text);background-image:var(--mq-modal-paint);background-color:var(--mq-dark);border-color:var(--mq-panel-border);box-shadow:var(--mq-modal-shadow)}
+.daily-task-pill:hover,.daily-task-pill:focus-visible {border-color:var(--mq-focus);box-shadow:var(--mq-hover-shadow)}
+.daily-details-close {color:var(--mq-text);background:var(--mq-button-paint);border-color:var(--mq-button-border)}
+.daily-details-title,.daily-toast-title {color:var(--mq-text)}
+.daily-details-kicker,.daily-stat-value,.daily-toast-kicker {color:var(--mq-heading)}
+.daily-details-meta,.daily-stat-label,.daily-toast-copy,.daily-toast-progress {color:var(--mq-muted)}
+.daily-progress-track,.daily-stat,.mastery-evidence-cell {background:rgba(var(--mq-accent),.08);border-color:rgba(var(--mq-accent),.24)}
+.daily-progress-fill {background-image:var(--mq-progress-paint);box-shadow:0 0 12px rgba(var(--mq-accent),.45)}
+.targeted-repair-indicator {background:var(--mq-surface);color:var(--mq-heading);border-color:var(--mq-panel-border)}
+.mastery-report-screen {color:var(--mq-text)}
+.mastery-bar {background:var(--mq-dark);border-color:var(--mq-panel-border)}
+.mastery-bar-fill {background-image:var(--mq-progress-paint);box-shadow:0 0 10px rgba(var(--mq-accent),.38)}
+.mastery-evidence-badge[data-evidence="strong"] {color:var(--mq-text);border-color:var(--mq-focus)}
+.mastery-actions button {background-image:var(--mq-button-paint);border-color:var(--mq-button-border);color:var(--mq-text)}
+.fading-fortune-hud,.risk-reward-hud,.score-attack-hud {background-image:var(--mq-panel-paint);border-color:var(--mq-panel-border)}
+/* Completion markup also carries inline paint. These exceptions are scoped to
+   that markup, not to universal elements or success/error feedback. */
+#gameBox .victory {color:var(--mq-heading)!important;text-shadow:0 0 18px rgba(var(--mq-accent),.9)!important}
+#gameBox .victory + div {background:var(--mq-surface)!important;border-color:var(--mq-panel-border)!important;box-shadow:var(--mq-panel-shadow)!important}
+#archivistLine {color:var(--mq-muted)!important;text-shadow:0 0 8px rgba(var(--mq-accent),.35)!important}
+#gameBox button[onclick="downloadTelemetryCsv()"],#gameBox button[onclick="showMasteryReportScreen()"] {background:var(--mq-button-paint)!important;color:var(--mq-text)!important;border-color:var(--mq-button-border)!important}
+/* The current room grid is the presentation state source; no engine mutation
+   or new markup is needed for historical checkpoint-stage colors. */
+body {--mq-checkpoint:var(--mq-boss-1);--mq-checkpoint-text:var(--mq-boss-text-1)}
+body:has(#mazeTrack .active:nth-child(20)) {--mq-checkpoint:var(--mq-boss-2);--mq-checkpoint-text:var(--mq-boss-text-2)}
+body:has(#mazeTrack .active:nth-child(30)) {--mq-checkpoint:var(--mq-boss-3);--mq-checkpoint-text:var(--mq-boss-text-3)}
+.boss-reveal-screen {--bossRevealGlow:color-mix(in srgb,var(--mq-checkpoint) 25%,transparent)!important}
+.generic-boss-image,.boss-q {--bossColor:var(--mq-checkpoint)!important}
+.boss-title,.generic-boss-symbol,#gameBox.boss-mode #bossMessage {color:var(--mq-checkpoint-text)!important}
+.boss-reveal-screen .guide-intro-name,.boss-reveal-screen .guide-intro-kicker {color:var(--mq-checkpoint-text)}
+body.blank-builder-template #message {color:var(--mq-muted)}
+body #returnMenuBtn.return-menu-btn {box-shadow:var(--mq-button-shadow)!important}
+body #returnMenuBtn.return-menu-btn:hover {box-shadow:var(--mq-hover-shadow)!important}
+.score-attack-label,.fading-fortune-label,.fading-fortune-subtitle,.risk-reward-label,.risk-wager-kicker,.risk-wager-copy {color:var(--mq-muted)}
+.fading-fortune-value,.risk-reward-value,.score-attack-value,.target-unlimited-symbol {color:var(--mq-heading)}
+.risk-wager-card,.risk-wager-panel {background-image:var(--mq-modal-paint);border-color:var(--mq-panel-border);color:var(--mq-text)}
+#shareBtn {color:var(--mq-dark)!important;background:linear-gradient(var(--mq-heading),var(--mq-focus))!important}

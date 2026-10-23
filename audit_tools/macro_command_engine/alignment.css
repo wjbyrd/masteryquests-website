@@ -2,8 +2,8 @@
 body #returnMenuBtn.return-menu-btn {
   min-height:44px!important;padding:11px 16px!important;font-size:13px!important;
   line-height:1.25!important;border-radius:10px!important;
-  color:#e0f2fe!important;border:1px solid rgba(56,189,248,.38)!important;
-  background:linear-gradient(180deg,rgba(18,48,79,.96),rgba(4,16,31,.98))!important;
+  border-width:1px;border-style:solid;
+
 }
 #gameMenuOptions #soundToggle {
   position:static!important;display:block!important;visibility:visible!important;
@@ -14,7 +14,7 @@ body #returnMenuBtn.return-menu-btn {
 #gameMenuOptions > .game-menu-option,
 #gameMenuOptions .mq-motion-setting {box-sizing:border-box;width:100%;margin:0}
 #gameMenuOptions .game-menu-option:focus-visible,
-#returnMenuBtn:focus-visible {outline:2px solid #8bdcff;outline-offset:3px}
+#returnMenuBtn:focus-visible {outline:2px solid var(--mq-focus);outline-offset:3px}
 #gameMenuOptions .game-menu-option {
   box-sizing:border-box;width:100%!important;max-width:none!important;
   margin:0!important;transform:none!important;min-height:48px;
@@ -31,7 +31,7 @@ body[data-macro-mode="exam"] #mazeTrack .maze-box {
 }
 /* Opaque scene backing prevents gameplay text bleeding through introductions;
    retain the existing themed image and gradient layers above this backing. */
-.guide-intro-screen,.boss-reveal-screen {background-color:#020617}
+.guide-intro-screen,.boss-reveal-screen {background-color:var(--mq-dark)}
 /* Long authored guardian names must fit even at 320px. */
 .guide-intro-stage {min-width:0;grid-template-columns:minmax(0,42%) minmax(0,1fr)}
 .guide-intro-copy {min-width:0}

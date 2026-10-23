@@ -176,7 +176,7 @@ const STORAGE_PREFIX =`);
     }
   }
   // Profile/resource fragments may use CRLF on Windows; normalize the complete output.
-  html=alignMacroPresentation(html).replace(/\r\n/g,'\n');
+  html=alignMacroPresentation(html,game).replace(/\r\n/g,'\n');
   for(const m of html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g))new vm.Script(m[1]);
   if(check)assert.equal(fs.readFileSync(`${base}/index.html`,'utf8').replace(/\r\n/g,'\n'),html,`${game} engine drift`);
   else if(fs.readFileSync(`${base}/index.html`,'utf8')!==html){
