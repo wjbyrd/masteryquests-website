@@ -7148,7 +7148,7 @@ const questionBanks = {
     },
     {
       "id": 9081,
-      "q": "On the AD-SRAS panel, which movement shows recovery from Y1 toward Y2 with a higher P?",
+      "q": "On the AD-SRAS panel, which movement shows output rising from Y1 to the natural level Y2 while the price level falls?",
       "options": [
         "B to A",
         "C to A",
@@ -7160,7 +7160,7 @@ const questionBanks = {
       "objective": "LO13.5",
       "image": "is_lm_lras.webp",
       "primarySkill": "depression_crisis_mechanisms",
-      "feedback": "A to B moves output from Y1 to Y2 and price level from P3 to P2 on the displayed labels.",
+      "feedback": "A to B moves output from Y1 to Y2 and lowers the price level to P2. Y2 lies on LRAS.",
       "aHash": "f94657ff2449f0842bae83f3de09ddcd9967267e5a0a39a979cf3be816ef1ea5"
     },
     {

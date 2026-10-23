@@ -1,5 +1,16 @@
 # Macro Command System engine alignment — 2026-10-11
 
+## Approved graph question corrections — 2026-10-23
+
+The owner reviewed four question/image discrepancies and approved stem corrections. `question-corrections.json` records the exact original and approved fields. `question-corrections.mjs` applies those changes during `sync.mjs` generation and rejects unexpected edits to those fields. This is the maintained correction source for the historical published banks; the private faculty publisher source is not present in this worktree.
+
+- National Engine 9011 uses the graph's output sequence 0, 15, 25, 32, 38, 40, 38, 32. At W/P = 9, the answer changes from 3 to **2 workers** (published option D); its hash and explanation are corrected.
+- Mint, Ash & Gold 9053 starts at **k3**, where depreciation exceeds saving. Its key and explanation are unchanged.
+- Mint, Ash & Gold 9077 describes an increase from **AD1 to AD3**, with LRAS unchanged. Its key and explanation are unchanged.
+- Command Nexus 9081 asks for output rising from Y1 to Y2 while the price level **falls**. The answer remains **A to B** (published option D); the explanation now says the price falls to P2 without inventing a P3 axis label.
+
+The maintained source check compares banks with the protected baseline plus only these explicit field changes. All other question fields, records, assets, and protected engine functions remain covered. Run `node audit_tools/macro_command_engine/sync.mjs` to apply/regenerate, then `node audit_tools/macro_command_engine/check.mjs` to verify. Historical descriptions below reflect the original engine-only scope.
+
 ## National Engine bank correction
 
 After the engine-only pass, the owner confirmed that National Engine should not contain the discovered microeconomic questions. The active page now loads the existing `national_engine_question_bank_student.js` unchanged: **474 main/checkpoint questions, 73 repair questions and 84 bridge questions (631 total)**. It covers national accounts, inflation measurement, production/factor income, saving/investment, loanable funds and unemployment. All six referenced graph files exist and decode. Legendary is now available, making nine supported modes.

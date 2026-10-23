@@ -121,18 +121,22 @@ node tmp/macro-managerial-alignment/graph-focused.mjs
 
 For the existing Daily suite, set `MQ_DAILY_GAME` to each of the four slugs and run `node tmp/macro-managerial-alignment/daily-runner.cjs`. The adapter redirects the template read to that published game and normalizes Windows line endings; the shared test suite is unchanged.
 
-## Remaining authoring review items
+## Authoring review items resolved after owner review
 
-There are **no unresolved accessibility metadata or image-loading gaps**. The review identified these existing question/image discrepancies, preserved because the authorized scope forbids editing questions, answers, or images:
+The original accessibility-only pass left four content discrepancies unchanged for faculty review. On 2026-10-23, the owner approved correcting all four stems. The subsequent content correction changes four stems, two explanations, and one answer hash across three published banks. Options, IDs, objectives, pool placement, graph assets, and accessibility descriptions are unchanged.
 
-| Game / question | Existing discrepancy |
-| --- | --- |
-| National Engine / 9011 (`totalproduct.webp`) | The stem supplies output 0, 15, 29, 40, 48, 51, while the image marks 15, 25, 32, 38, 40, 38, 32 at labor 1 through 7. This may be a hypothetical data sequence, but it does not reproduce the attached graph. The description reports only the visible graph values. |
-| Mint, Ash & Gold / 9053 (`steadystate.webp`) | The stem places k2 where depreciation exceeds saving. The image places the intersection c at k2. The description preserves the image label k2 and does not move the intersection. |
-| Mint, Ash & Gold / 9077 (`adlras.webp`) | The stem says AD rises from AD1 to AD2. In this image, AD2 is left/below AD1; AD3 is the right/upper line. The description preserves the actual curve labels. |
-| Command Nexus / 9081 (`is_lm_lras.webp`) | The stem describes recovery from Y1 toward Y2 with a higher P. In the right panel, A at Y1 is above B at Y2, so that depicted movement has a lower P. The description preserves the visible point and price positions. |
+| Game / question | Approved correction | Published key |
+| --- | --- | --- |
+| National Engine / 9011 | Output now follows the graph: 0, 15, 25, 32, 38, 40, 38, 32 for workers 0 through 7. MPL is 15, 10, 7, 6, 2, -2, -6. With W/P = 9, hire two workers. Explanation and hash updated. | D — 2, changed from A — 3 |
+| Mint, Ash & Gold / 9053 | Starts at k3, where depreciation exceeds saving. | A, unchanged |
+| Mint, Ash & Gold / 9077 | Describes an aggregate-demand increase from AD1 to AD3 with unchanged LRAS. | A, unchanged |
+| Command Nexus / 9081 | Asks for output rising from Y1 to Y2 while the price level falls. Explanation describes the fall to P2 and removes the unprinted P3 label. | D — A to B, unchanged |
 
-These are content-review items, not changes made by this correction. Descriptions faithfully retain the actual graphical evidence, even when it conflicts with a stem. Testing used local Edge/Chromium and keyboard interaction at the specified viewports; this is not a certification across all browsers or screen-reader products. No redesign or deployment was undertaken.
+The authoritative amendments are in `audit_tools/macro_command_engine/question-corrections.json`; the synchronization workflow applies them through `question-corrections.mjs`. Source protection allows these exact fields and continues to protect the other bank contents. The earlier report sections describe the accessibility-only pass; this section records the later approved content correction. The original review document and inventory remain evidence of the pre-correction questions.
+
+Correction validation: the maintained source and synchronization checks pass, covering 22 engine functions per game and 159 companion files with the approved amendments. The focused browser check exercises all four corrected records at desktop and mobile widths, verifies every option against its hash and after option shuffling, submits the correct answer through actual scoring, checks the published feedback, and opens both graph views. All 33 graph assets retain their inventoried hashes. Evidence is in `tmp/macro-managerial-alignment/question-corrections-results.json` and `question-corrections-source/source-results.json`.
+
+No authoring issues remain from these four findings. No push, merge, or deployment was performed.
 
 ## Complete graph inventory and descriptions
 
