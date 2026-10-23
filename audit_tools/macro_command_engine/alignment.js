@@ -59,3 +59,10 @@
     return download.apply(this,arguments);
   };
 })();
+
+// Match Managerial's keyboard skip using the existing once-only proceed actions.
+document.addEventListener('keydown',event=>{
+  if(event.key!=='Escape' || event.defaultPrevented)return;
+  if(activeGuideIntroduction){event.preventDefault();proceedGuideIntroduction();}
+  else if(activeBossReveal){event.preventDefault();proceedBossReveal();}
+});

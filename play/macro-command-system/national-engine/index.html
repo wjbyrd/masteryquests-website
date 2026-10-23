@@ -3160,6 +3160,22 @@ body[data-macro-mode="exam"] #message {
 body[data-macro-mode="exam"] #mazeTrack .maze-box {
   box-sizing:border-box;margin:0;padding:0;transform:none;
 }
+/* Opaque scene backing prevents gameplay text bleeding through introductions;
+   retain the existing themed image and gradient layers above this backing. */
+.guide-intro-screen,.boss-reveal-screen {background-color:#020617}
+/* Long authored guardian names must fit even at 320px. */
+.guide-intro-stage {min-width:0;grid-template-columns:minmax(0,42%) minmax(0,1fr)}
+.guide-intro-copy {min-width:0}
+.guide-intro-name {overflow-wrap:anywhere;font-size:clamp(30px,4vw,60px)}
+.guide-intro-proceed {max-width:100%;white-space:normal}
+.mastery-summary-grid {grid-template-columns:repeat(auto-fit,minmax(min(180px,100%),1fr))}
+@media(max-width:760px){
+  .guide-intro-stage {grid-template-columns:minmax(0,1fr)}
+  .guide-intro-name {font-size:30px;line-height:1.08}
+}
+@media(max-width:560px){
+  body.game-active .dungeon-container {padding-top:48px}
+}
 </style>
 </head>
 
@@ -16461,6 +16477,13 @@ document.getElementById('gameMenuOptions').appendChild(realmSoundButton);
     return download.apply(this,arguments);
   };
 })();
+
+// Match Managerial's keyboard skip using the existing once-only proceed actions.
+document.addEventListener('keydown',event=>{
+  if(event.key!=='Escape' || event.defaultPrevented)return;
+  if(activeGuideIntroduction){event.preventDefault();proceedGuideIntroduction();}
+  else if(activeBossReveal){event.preventDefault();proceedBossReveal();}
+});
 </script>
 </body>
 </html>
