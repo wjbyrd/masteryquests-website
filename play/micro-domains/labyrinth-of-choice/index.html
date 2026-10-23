@@ -2759,7 +2759,7 @@ Respect structure strictly.
 
 <div class="dungeon-container">
 <button class="fullscreenBtn" onclick="goFullscreen()">FULLSCREEN</button>
-<button class="return-menu-btn" id="returnMenuBtn" onclick="confirmReturnToModeMenu()">OPERATION MENU</button>
+<button class="return-menu-btn" id="returnMenuBtn" onclick="confirmReturnToModeMenu()">GAME MENU</button>
 <button class="sound-toggle" id="soundToggle" onclick="toggleGameSound()">Sound On</button>
 <!-- =========================================
 TOP PANEL (HUD)
@@ -8735,7 +8735,7 @@ function createTelemetryContract(get, registry) {
   return {fields,stamp,show,exportRows,wrapShuffle,hash,stable,build,state,resources,installResources};
 }
 
-  const MQContract=createTelemetryContract((name,fallback)=>{try{return eval(name);}catch(_){return fallback;}}, /* RELEASE REGISTRY */ {"contractID":"mq-measurement/1","measurementRevision":"mq-tracker-2026.10.13-answers2","localSchema":"mq-local-csv/1","anonymousEnvelope":3,"manifestSchema":"mq-run-manifest/1","trackerSourceRevision":"a4aa7ad4f0a42faf32a6848402ba344d455f6597e19e38331811c1cb723cc52a","games":{"cost-directive":{"engineRevision":"a6fd020b86e34510c8dbebe603e3652c8b32e088cdbc6968aebc7cae25d4e42d","pocEngineRevision":"da38c602891febfab862477d10a368d5d1c74d7e6cf92c5d4a4b94964d38cb42","classroomEngineRevision":"350382b57641a345dea9a3255d2417e022d6afa4770d890a86cdd6118e32e2b6","assetRevision":"e84ae7d58d4f614ec045fb1b8f1327e9acb14060321b757e92ee42277369eb71"},"market-signal":{"engineRevision":"a4a8d447659904380db5e6d254d74034814e89fec15b0c52ef23cc4565a3565b","pocEngineRevision":"544f1bb25b0f7473fecfe59a8b54c45def2508d83c7cf4afa5c5ebbb50fe354a","classroomEngineRevision":"1f5aae36d56dd5d28e0ad46b83bf6bbdcb96e625bca2e50e8945c729b4e4d3d6","assetRevision":"8e884e9efd09d7d6bb819e8bf88777acd87c54c3d5606ed0861a9861725add5c"},"strategy-desk":{"engineRevision":"3dc3c384a4ff45d8dd40920654eaeb6244bb3eb295d1323adf811db7146b4465","pocEngineRevision":"7e8dcaa625baec16518ee9bd9982d717880a9b20dddde52b69d64f48d3574068","classroomEngineRevision":"b3222dac65ae17d4a05d08a6654cea2ca9ad5170822ea6770468d387150b985d","assetRevision":"6daeef8858732666d4a8f79dce498db26f463a85428e930b70d9c298deb974e6"},"agency-protocol":{"engineRevision":"01a79ea3c0b983ac6226314115915d850cd0b18eba723577afb9d20f8a848181","pocEngineRevision":"7491f94983656d4942bdf1e8d39fa78e232ce7d42116449736f9b8051a4131ea","classroomEngineRevision":"dce22dd3e102aa773cfc25ff7a378437fdfdab3c89da6b8b5a88db3e35903546","assetRevision":"90b45185b2f7b58e87bb619618a0c7642860be1748eb45ef768820db614faec8"},"composer":{"engineRevision":"7ec75da04dfe22b3cdad5f1e55cfbb85534dbfb0a222ddc72ce0e95c65247434","assetRevision":"b843eaf7f8d5a2568ac458d71a9519c91e57c19bfe1f99314688479d0471e314"},"equilibrium-crisis":{"engineRevision":"085f924aaad403e72bd74de0bef3248216f4228268c05e944e95cd11dea58d48","assetRevision":"e0bc167ef5bf6085998fa7620a66df587614e079e8a425d00b3378f748050d9e"},"liquidity-grid":{"engineRevision":"5a98243ccc14b84a218e125646372910172a3115e274ec32ad47085b5a4126c1","assetRevision":"9b4b4b9b956894944dfbd880edaa7d21315e9a565fe36c6e99c435adba40b640"},"market-gate":{"engineRevision":"9baa7b71fab8f86f648782cabab0e84c3102e774417e362695a0961bab2ec5a5","assetRevision":"a4b6a2220411fc0367e726bedb815bc2b0f23d866104389f3e64fe424e3ec9d6"},"national-ledger":{"engineRevision":"0fb43d43f0a3c43e1df19d98b6b1d01e52fcc993caf8d047da3233d73a017c16","assetRevision":"5edc2f9729237cc6638954a521fd65163fdc4cc1febbf4c012620b2ec5bbacde"},"stabilization-protocol":{"engineRevision":"be0e94de47faeb8850f55d9ee7a21d541b3ec3c4d2dc1590569ef895be7eef7c","assetRevision":"e0fdef674656ba0a2cf18e8483ef3724281013338f2671c141cc66c587f2348f"},"command-nexus":{"engineRevision":"a12017705e6740b8d929dd540c4dde19c68b0928eb1a49a6089de5fbf91a9800","assetRevision":"97f92412cf740f7de62e5f77f5838543aff5426bee9ceaf4f81aeb1bc427f36f"},"exchange-citadel":{"engineRevision":"3898b649c440e124ec4d2e9a50d60fc282851f33b5089b46518d11a3819112be","assetRevision":"7da393ab7e26acca52dedd1349a2455252439af297df7fa0e5e39d8a7c861505"},"mint-ash-gold":{"engineRevision":"21b0656bcd05ce0c286b9ad294f3db612700de43d55aa156ce309bbebd2e9336","assetRevision":"c8785e093302b9df20935e7a26cd0f2626764d492f02fe00839d929772016125"},"national-engine":{"engineRevision":"0e04d6f75df0795c2e54f779c43a865d0ae283163e3e76d79ece91a60251ef18","assetRevision":"524f4b7ee38d9ea9d1f08b0505a74699c68ca3f4bb6314dcef177285d686abd5"},"labyrinth-of-choice":{"engineRevision":"23785ecb139f036974b2b89719c7133330ba194ad3a89a009eacb879567ab1b4","assetRevision":"44d1f4a1da9ae15503499c30c0e7974481674f5ed4b2a6aa5860ba1d08eb0aca"},"labyrinth-choice":{"engineRevision":"23785ecb139f036974b2b89719c7133330ba194ad3a89a009eacb879567ab1b4","assetRevision":"44d1f4a1da9ae15503499c30c0e7974481674f5ed4b2a6aa5860ba1d08eb0aca"}}});
+  const MQContract=createTelemetryContract((name,fallback)=>{try{return eval(name);}catch(_){return fallback;}}, /* RELEASE REGISTRY */ {"contractID":"mq-measurement/1","measurementRevision":"mq-tracker-2026.10.13-answers2","localSchema":"mq-local-csv/1","anonymousEnvelope":3,"manifestSchema":"mq-run-manifest/1","trackerSourceRevision":"a4aa7ad4f0a42faf32a6848402ba344d455f6597e19e38331811c1cb723cc52a","games":{"cost-directive":{"engineRevision":"a6fd020b86e34510c8dbebe603e3652c8b32e088cdbc6968aebc7cae25d4e42d","pocEngineRevision":"da38c602891febfab862477d10a368d5d1c74d7e6cf92c5d4a4b94964d38cb42","classroomEngineRevision":"350382b57641a345dea9a3255d2417e022d6afa4770d890a86cdd6118e32e2b6","assetRevision":"e84ae7d58d4f614ec045fb1b8f1327e9acb14060321b757e92ee42277369eb71"},"market-signal":{"engineRevision":"a4a8d447659904380db5e6d254d74034814e89fec15b0c52ef23cc4565a3565b","pocEngineRevision":"544f1bb25b0f7473fecfe59a8b54c45def2508d83c7cf4afa5c5ebbb50fe354a","classroomEngineRevision":"1f5aae36d56dd5d28e0ad46b83bf6bbdcb96e625bca2e50e8945c729b4e4d3d6","assetRevision":"8e884e9efd09d7d6bb819e8bf88777acd87c54c3d5606ed0861a9861725add5c"},"strategy-desk":{"engineRevision":"3dc3c384a4ff45d8dd40920654eaeb6244bb3eb295d1323adf811db7146b4465","pocEngineRevision":"7e8dcaa625baec16518ee9bd9982d717880a9b20dddde52b69d64f48d3574068","classroomEngineRevision":"b3222dac65ae17d4a05d08a6654cea2ca9ad5170822ea6770468d387150b985d","assetRevision":"6daeef8858732666d4a8f79dce498db26f463a85428e930b70d9c298deb974e6"},"agency-protocol":{"engineRevision":"01a79ea3c0b983ac6226314115915d850cd0b18eba723577afb9d20f8a848181","pocEngineRevision":"7491f94983656d4942bdf1e8d39fa78e232ce7d42116449736f9b8051a4131ea","classroomEngineRevision":"dce22dd3e102aa773cfc25ff7a378437fdfdab3c89da6b8b5a88db3e35903546","assetRevision":"90b45185b2f7b58e87bb619618a0c7642860be1748eb45ef768820db614faec8"},"composer":{"engineRevision":"7ec75da04dfe22b3cdad5f1e55cfbb85534dbfb0a222ddc72ce0e95c65247434","assetRevision":"b843eaf7f8d5a2568ac458d71a9519c91e57c19bfe1f99314688479d0471e314"},"equilibrium-crisis":{"engineRevision":"085f924aaad403e72bd74de0bef3248216f4228268c05e944e95cd11dea58d48","assetRevision":"e0bc167ef5bf6085998fa7620a66df587614e079e8a425d00b3378f748050d9e"},"liquidity-grid":{"engineRevision":"5a98243ccc14b84a218e125646372910172a3115e274ec32ad47085b5a4126c1","assetRevision":"9b4b4b9b956894944dfbd880edaa7d21315e9a565fe36c6e99c435adba40b640"},"market-gate":{"engineRevision":"9baa7b71fab8f86f648782cabab0e84c3102e774417e362695a0961bab2ec5a5","assetRevision":"a4b6a2220411fc0367e726bedb815bc2b0f23d866104389f3e64fe424e3ec9d6"},"national-ledger":{"engineRevision":"0fb43d43f0a3c43e1df19d98b6b1d01e52fcc993caf8d047da3233d73a017c16","assetRevision":"5edc2f9729237cc6638954a521fd65163fdc4cc1febbf4c012620b2ec5bbacde"},"stabilization-protocol":{"engineRevision":"be0e94de47faeb8850f55d9ee7a21d541b3ec3c4d2dc1590569ef895be7eef7c","assetRevision":"e0fdef674656ba0a2cf18e8483ef3724281013338f2671c141cc66c587f2348f"},"command-nexus":{"engineRevision":"a12017705e6740b8d929dd540c4dde19c68b0928eb1a49a6089de5fbf91a9800","assetRevision":"97f92412cf740f7de62e5f77f5838543aff5426bee9ceaf4f81aeb1bc427f36f"},"exchange-citadel":{"engineRevision":"3898b649c440e124ec4d2e9a50d60fc282851f33b5089b46518d11a3819112be","assetRevision":"7da393ab7e26acca52dedd1349a2455252439af297df7fa0e5e39d8a7c861505"},"mint-ash-gold":{"engineRevision":"21b0656bcd05ce0c286b9ad294f3db612700de43d55aa156ce309bbebd2e9336","assetRevision":"c8785e093302b9df20935e7a26cd0f2626764d492f02fe00839d929772016125"},"national-engine":{"engineRevision":"0e04d6f75df0795c2e54f779c43a865d0ae283163e3e76d79ece91a60251ef18","assetRevision":"524f4b7ee38d9ea9d1f08b0505a74699c68ca3f4bb6314dcef177285d686abd5"},"labyrinth-of-choice":{"engineRevision":"2c0e13e65f25147d3e35502957dc1fa68f3413423ce2891a2396bfdff674beeb","assetRevision":"44d1f4a1da9ae15503499c30c0e7974481674f5ed4b2a6aa5860ba1d08eb0aca"},"labyrinth-choice":{"engineRevision":"2c0e13e65f25147d3e35502957dc1fa68f3413423ce2891a2396bfdff674beeb","assetRevision":"44d1f4a1da9ae15503499c30c0e7974481674f5ed4b2a6aa5860ba1d08eb0aca"}}});
   // END MEASUREMENT CONTRACT
 const TELEMETRY_COLUMNS = [
     "eventID","timestamp","telemetryVersion","gameVersion","runID","game","mode","event",
@@ -14102,12 +14102,12 @@ MQContract.build();
     byId('gameModalText').after(menu);
     const returnButton=byId('returnMenuBtn'), originalAction=returnButton.onclick;
     returnButton.onclick=()=>{
-      showGameModal({title:'Operation Menu',text:'Choose a utility or return to mode selection.',confirmText:'Mode Selection',cancelText:'Close',
+      showGameModal({title:'Game Menu',text:'',confirmText:'Mode Selection',cancelText:'Close',
         onConfirm:()=>{menu.hidden=true;originalAction?.call(returnButton);},onCancel:()=>{menu.hidden=true;}});
       menu.hidden=false;
     };
     new MutationObserver(()=>{
-      if(!visible(byId('gameModal')) || byId('gameModalTitle')?.textContent!=='Operation Menu')menu.hidden=true;
+      if(!visible(byId('gameModal')) || byId('gameModalTitle')?.textContent!=='Game Menu')menu.hidden=true;
     }).observe(byId('gameModal'),{attributes:true,attributeFilter:['style'],childList:true,subtree:true});
   }
   const history=document.createElement('button');history.id='mqExplanationReview';
@@ -14204,6 +14204,12 @@ MQContract.build();
 #mqUtilityStatus {margin:0;color:#cbd5e1}
 #mqUtilityStatus:empty {display:none}
 .labyrinth-menu-open #gameModalText {margin-bottom:16px}
+.labyrinth-menu-open #gameModalText:empty {display:none}
+#labyrinthIntroduction {box-sizing:border-box;width:min(620px,calc(100% - 24px));max-height:90dvh;overflow:auto;padding:24px;border:1px solid #d4af37;border-radius:14px;background:#071322;color:#e2e8f0;text-align:center}
+#labyrinthIntroduction::backdrop {background:rgba(0,0,0,.85)}
+#labyrinthIntroduction img {display:block;width:100%;max-height:50dvh;object-fit:contain;margin-bottom:16px}
+#labyrinthIntroduction h2 {font-size:1.5rem;color:#d4af37}
+#labyrinthIntroduction button {min-height:48px;white-space:normal}
 .labyrinth-menu-open .game-modal-actions {display:flex;flex-direction:column;gap:10px;width:min(360px,100%);margin:0 auto}
 #graphLightbox.active {justify-content:flex-start}
 #graphLightbox img {max-width:100%;box-sizing:border-box}
@@ -14264,11 +14270,46 @@ MQContract.build();
         syncFullscreen();
     };
     document.addEventListener('fullscreenchange', syncFullscreen);
+    const confirm = document.getElementById('gameModalConfirm');
+    const actions = confirm.parentElement;
+    // Other confirmations retain their original buttons and actions.
+    const showModal = window.showGameModal;
+    window.showGameModal = function(...args){actions.prepend(confirm);return showModal.apply(this,args);};
+    const daily = document.createElement('button');
+    daily.id='gameMenuDaily';daily.type='button';daily.className='game-menu-option continue-btn';
+    daily.textContent='Daily Task';daily.hidden=true; // Enabled by the canonical Daily adapter.
+    const replay = document.createElement('button');
+    replay.id='gameMenuGuideIntro';replay.type='button';replay.className='game-menu-option continue-btn';
+    replay.textContent='Replay Introduction';
+    const introduction=document.createElement('dialog');
+    introduction.id='labyrinthIntroduction';introduction.setAttribute('aria-labelledby','labyrinthIntroductionTitle');
+    const title=document.createElement('h2');title.id='labyrinthIntroductionTitle';
+    title.textContent=document.querySelector('#startScreen .title').textContent;
+    const art=document.createElement('img');art.src='start-screen-image.webp';art.alt='';
+    const skip=document.createElement('button');skip.type='button';skip.className='continue-btn';skip.textContent='Skip / Return to Game';
+    introduction.append(title,art,skip);document.body.append(introduction);
+    const closeIntroduction=()=>{introduction.close();opener.focus({preventScroll:true});};
+    skip.onclick=closeIntroduction;
+    introduction.addEventListener('keydown',event=>{
+        if(event.key==='Tab'){event.preventDefault();skip.focus();}
+        // Do not bubble Escape to the legacy graph closer, which resumes its timer.
+        if(event.key==='Escape'){event.preventDefault();event.stopPropagation();closeIntroduction();}
+    });
+    introduction.addEventListener('cancel',event=>{event.preventDefault();closeIntroduction();});
+    replay.onclick=()=>{
+        closeGameModal(); // Resume the existing Fading Fortune menu pause; replay itself never pauses a clock.
+        window.MQAccessibility?.sync();
+        introduction.showModal();skip.focus();
+    };
+    new MutationObserver(()=>{if(introduction.open&&runEnding)closeIntroduction();})
+        .observe(document.getElementById('gameShell'),{childList:true,subtree:true});
     const openMenu = opener.onclick;
     opener.onclick = function(){
         status.textContent = '';
         openMenu.call(this);
-        document.getElementById('gameModalConfirm').textContent = 'Return to Mode Selection';
+        confirm.textContent = 'Mode Selection';
+        menu.prepend(confirm,fullscreen,daily,replay,sound,document.getElementById('mqMotionControl').closest('.mq-motion-setting'));
+        window.MQLabyrinthDaily?.refresh();
         syncFullscreen();
         window.MQAccessibility?.sync();
     };
