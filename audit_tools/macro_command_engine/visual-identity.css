@@ -1,0 +1,31 @@
+/* Macro's original low-light charcoal, gold and bronze surfaces.
+   Only paint properties belong here: the aligned layout and all state logic stay
+   in their existing sources. Green/red semantic feedback remains distinguishable. */
+#gameBox {
+  background:radial-gradient(circle at center,rgba(42,74,64,.34) 0%,rgba(18,24,24,.92) 52%,rgba(4,5,5,.98) 100%);
+  border-color:rgba(214,177,92,.34);
+  box-shadow:0 0 24px rgba(214,177,92,.24),0 0 70px rgba(88,28,24,.28),inset 0 0 38px rgba(0,0,0,.72);
+}
+#gameShell {
+  background:linear-gradient(180deg,rgba(18,24,24,.96),rgba(4,5,5,.98));
+  border-color:rgba(214,177,92,.28);
+}
+#wizardBox {
+  background:radial-gradient(circle at top,rgba(65,95,78,.26),rgba(12,18,18,.90) 48%,rgba(4,5,5,.98));
+  border-color:rgba(214,177,92,.42);
+}
+#progressFill,.daily-progress-fill,.mastery-bar-fill {
+  background:linear-gradient(90deg,#2f4f43,#d6b15c,#8a3a24);
+  box-shadow:0 0 12px rgba(214,177,92,.45),0 0 22px rgba(138,58,36,.25);
+}
+/* Runtime guardian colors remain in the preserved engine. Override their visual
+   variables here, including checkpoint 20, without changing encounter behavior. */
+.boss-reveal-screen {--bossRevealGlow:rgba(214,177,92,.25)!important;--bossRevealBorder:rgba(214,177,92,.42)!important}
+.generic-boss-image,.boss-q {--bossColor:#d6b15c!important}
+#bossMessage,.boss-title,.generic-boss-symbol {color:#f4d58d!important}
+/* Victory and Wrong Turn markup is generated with inline paint declarations. */
+#hallwayText > div:last-child {color:#d8c7a0!important}
+#gameBox .victory {text-shadow:0 0 18px rgba(240,200,106,.9),0 0 34px rgba(214,177,92,.35)!important}
+#gameBox .victory + div {background:rgba(18,24,24,.92)!important;box-shadow:0 0 24px rgba(0,0,0,.65),inset 0 0 22px rgba(214,177,92,.08)!important}
+#archivistLine {color:#d8c7a0!important;text-shadow:0 0 8px rgba(214,177,92,.35)!important}
+#gameBox button[onclick="downloadTelemetryCsv()"],#gameBox button[onclick="showMasteryReportScreen()"] {background:linear-gradient(180deg,#61472b,#10120f)!important}
