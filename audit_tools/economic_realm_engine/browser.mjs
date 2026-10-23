@@ -7,7 +7,7 @@ import {execFileSync} from 'node:child_process';
 import {games,baselineCommit} from './source.mjs';
 const require=createRequire(import.meta.url);
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
-const root=process.cwd(),out=path.join(root,'validation_artifacts/economic_realm_engine');
+const root=process.cwd(),out=path.resolve(process.env.MQ_REALM_OUT||path.join(root,'validation_artifacts/economic_realm_engine'));
 fs.mkdirSync(out,{recursive:true});
 const profiles=JSON.parse(fs.readFileSync('audit_tools/economic_realm_engine/profiles.json','utf8'));
 const legacy=Object.fromEntries(games.map(g=>[g,execFileSync('git',['show',`${baselineCommit}:play/economic-realm/${g}/index.html`],{encoding:'utf8',maxBuffer:8e6})]));
@@ -102,20 +102,21 @@ try{
     assert.equal(after.artifact,'true');
     if(phase==='checkpoint'){assert.equal(after.checkpoint.total,1);assert.equal(after.checkpoint.correct,1);}
   });
-  await check(`${game}: checkpoint misses finish three attempts without remediation`,async()=>{
+  await check(`${game}: first checkpoint miss ends encounter with three-room setback`,async()=>{
     await page.goto(`${origin}/play/economic-realm/${game}/`);await page.evaluate(()=>{
-      localStorage.setItem(GUIDE_INTRO_SEEN_KEY,'true');username='Checkpoint QA';startSelectedMode('standard');
-      room=10;bossHealth=3;bossPool=[];loadQuestion();if(activeBossReveal)proceedBossReveal();
+      localStorage.setItem(GUIDE_INTRO_SEEN_KEY,'true');startSelectedMode('standard');
+      room=10;bossCheckpoint=1;bossHealth=3;bossPool=[];loadQuestion();if(activeBossReveal)proceedBossReveal();
       Object.keys(TIMING).forEach(k=>TIMING[k]=1);
     });
-    for(let attempt=1;attempt<=3;attempt++){
-      await page.evaluate(async()=>{rapidGuessHistory=[];questionStartTime=Date.now()-10000;for(let i=0;i<4;i++)if(!await isQuestionAnswerCorrect(currentQuestion,i)){await answer(i);return;}});
-      await page.waitForFunction(()=>!answerSubmissionPending||lastCheckpointOutcome?.room===10);
-      assert.equal(await page.evaluate(()=>remediationState.active),false);
-      if(attempt<3)await page.waitForFunction(expected=>bossHealth===expected&&!answerSubmissionPending,3-attempt);
-    }
-    const outcome=await page.evaluate(()=>({outcome:lastCheckpointOutcome,events:readLocalTelemetry().filter(e=>e.event==='checkpoint_outcome')}));
-    assert.equal(outcome.outcome.total,3);assert.equal(outcome.outcome.correct,0);assert.equal(outcome.events.length,1);
+    const inventory=await page.evaluate(()=>['compass','lens','scales'].map(getArtifactInventoryCount));
+    await page.evaluate(async()=>{rapidGuessHistory=[];questionStartTime=Date.now()-10000;for(let i=0;i<4;i++)if(!await isQuestionAnswerCorrect(currentQuestion,i)){await answer(i);return;}});
+    await page.waitForFunction(()=>lastCheckpointOutcome?.room===10);
+    assert.equal(await page.evaluate(()=>remediationState.active),false);
+    assert.equal(await page.evaluate(()=>room),7);
+    assert.equal(await page.evaluate(()=>bossCheckpoint),1);
+    assert.deepEqual(await page.evaluate(()=>['compass','lens','scales'].map(getArtifactInventoryCount)),inventory);
+    const outcome=await page.evaluate(()=>lastCheckpointOutcome);
+    assert.equal(outcome.total,1);assert.equal(outcome.correct,0);assert.equal(outcome.outcome,'not-secured');
   });
   await check(`${game}: exam revisions score once at section commit`,async()=>{
     await page.goto(`${origin}/play/economic-realm/${game}/`);await page.evaluate(()=>{localStorage.setItem(GUIDE_INTRO_SEEN_KEY,'true');username='Exam QA';startSelectedMode('exam');});

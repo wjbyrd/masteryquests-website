@@ -13,7 +13,7 @@
     if(field||row.length){row.push(field);rows.push(row);}
     const headers=rows.shift();if(!headers)throw Error('This file is empty.');headers[0]=headers[0].replace(/^\uFEFF/,'');
     if(new Set(headers).size!==headers.length||!headers.some(h=>h==='event'||h==='event_type'))throw Error('This file is not a supported game-data CSV.');
-    return rows.map((r,i)=>{if(r.length!==headers.length)throw Error(`CSV row ${i+2} has the wrong number of columns.`);return Object.fromEntries(headers.map((h,j)=>[h,r[j]]));});
+    return rows.map((r,i)=>{if(r.length!==headers.length)throw Error(`CSV row ${i+2} has the wrong number of columns.`);const record=Object.fromEntries(headers.map((h,j)=>[h,r[j]]));if(headers.includes('csvSchemaVersion')&&record.csvSchemaVersion!=='mq-rpg-csv/1')throw Error('Unsupported RPG CSV version; no measurements were interpreted.');return record;});
   }
   const json=value=>{try{return typeof value==='string'?JSON.parse(value):value;}catch(_){return null;}};
   const flag=value=>value===true||value===1||value==='1'||value==='true';

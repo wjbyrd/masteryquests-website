@@ -35,7 +35,7 @@ function harness(source){
     currentQuestion: null, adaptiveMode: '', remediationState: null,
     scoreAttackScore: 0, scoreAttackBestScore: 0, fadingFortuneScore: 0
   });
-  const functions = ['createTelemetryContract','createTelemetryEventID','getTelemetryKey',
+  const functions = ['createRpgCsvContract','createTelemetryContract','createTelemetryEventID','getTelemetryKey',
     'readLocalTelemetry','sendGameData','escapeCsvValue','downloadTelemetryCsv'];
   vm.runInContext(functions.map(name => fn(source,name)).join('\n') + '\n' +
     declaration(source.replace(/^ +const MQContract/gm,'const MQContract'),'MQContract') + '\n' + declaration(source,'TELEMETRY_COLUMNS'),context);

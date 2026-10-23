@@ -8,7 +8,7 @@ const dir=path.resolve(__dirname,'../../../audit_tools/micro_faculty_remediation
 const read=n=>JSON.parse(fs.readFileSync(path.join(dir,n),'utf8')),ledger=read('expectations.json');
 const faculty=read('faculty_decisions.json'),fMap=new Map(faculty.map(r=>[r.id,r])),patches=read('patches.json'),unreviewed=read('unreviewed_scope.json'),dispositions=read('dispositions.json');
 const sha=x=>crypto.createHash('sha256').update(x).digest('hex'),stable=core.stableStringify;
-const source=fs.readFileSync(path.join(dir,'baseline_composer_library.js'),'utf8');
+const source=fs.readFileSync(path.join(dir,'baseline_composer_library.js'),'utf8').replace(/\r\n/g,'\n');
 assert.equal(sha(source),read('baseline_hashes.json')['build/faculty-build-composer/data/composer_library.js']);
 const baseline=JSON.parse(source.slice('window.MQ_COMPOSER_LIBRARY='.length).trim().slice(0,-1));
 const beforeMap=new Map(questionRecords(baseline).map(r=>[String(r.question.id),r.question]));

@@ -6,6 +6,7 @@ import {createRequire} from 'node:module';
 import {execFileSync} from 'node:child_process';
 import vm from 'node:vm';
 import {games,baselineCommit} from './source.mjs';
+import {activeProfile} from './active-profile.mjs';
 const require=createRequire(import.meta.url);
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
 const root=process.cwd(),out=path.resolve(root,process.env.MQ_MACRO_OUT || 'validation_artifacts/macro_command_engine');
@@ -40,7 +41,7 @@ try{
   await check(`${game}: initialized and branded`,async()=>{
     assert.equal(await page.title(),profiles[game].title);
     assert.equal(await page.evaluate(()=>typeof startSelectedMode),'function');
-    assert.equal(await page.locator('#wizardName').textContent(),profiles[game].guideName);
+    assert.equal(await page.locator('#wizardName').textContent(),activeProfile(game,profiles).guideName);
   });
   await check(`${game}: all configured modes validate`,async()=>{
     const modes=await page.evaluate(()=>FACULTY_COMPOSITION_CONFIG.supportedModes.map(mode=>({mode,...validateFacultyMode(mode)})));

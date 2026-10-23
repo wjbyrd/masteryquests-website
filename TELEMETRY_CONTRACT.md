@@ -1,5 +1,7 @@
 # Mastery Quests measurement contract 1
 
+Current local RPG export layout: **mq-rpg-csv/1, 137 columns**, defined by [UNIFIED_RPG_TELEMETRY_CONTRACT.md](UNIFIED_RPG_TELEMETRY_CONTRACT.md) and its canonical field registry. The 70/88/117-column layouts described below are retained historical formats. The underlying measurement identity and private envelope remain unchanged; the new local boundary preserves original tracker labels, adds explicit availability reasons, and does not alter Worker transport.
+
 Status: release candidate; the final report records the release-gate verdict. This contract describes measurements, not educational policy or a claim of regulatory compliance.
 
 ## Canonical sources and version responsibilities

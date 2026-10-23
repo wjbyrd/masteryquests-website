@@ -5,6 +5,7 @@ import path from 'node:path';
 import assert from 'node:assert/strict';
 import {execFileSync} from 'node:child_process';
 import {createRequire} from 'node:module';
+import {validateCSV} from '../telemetry_contract/validate.mjs';
 process.env.MQ_A11Y_OUT ||= 'tmp/accessibility_cleanup/labyrinth-modernization';
 const {pw,serve,isolated,scan}=await import('../accessibility_cleanup/support.mjs');
 const out=path.resolve(process.env.MQ_A11Y_OUT),file='play/micro-domains/labyrinth-of-choice/index.html';
@@ -32,7 +33,7 @@ async function open(old=false,width=1440,extra={},target=file){
  await x.page.goto(origin+'/'+target,{timeout:30000});return x;
 }
 async function shot(p,name){await p.screenshot({path:path.join(out,stage+'-'+name+'.png'),fullPage:true});}
-async function state(p){return p.evaluate(()=>({randomCalls:window.__randomCalls,q:currentQuestion?.id,options:currentQuestion?.options,difficulty:currentQuestion?.__mqDifficulty,room,attempts:totalAttempts,correct:correctAnswers,streak,maxStreak,bossHealth,bossCheckpoint,remediation:JSON.parse(JSON.stringify(remediationState)),adaptiveMode,conceptMemory,masteryState,score:scoreAttackScore,fading:fadingFortuneScore,bankroll:riskRewardBankroll,events:readLocalTelemetry(runID).map(r=>({event:r.event,q:r.questionID,correct:r.correct,response:r.responseTimeMs,attempt:r.attempt,streak:r.streak,score:r.score})),columns:TELEMETRY_COLUMNS,vault:Object.fromEntries(Object.entries(ARTIFACT_STORAGE_KEYS).map(([k,v])=>[k,localStorage.getItem(v)]))}));}
+async function state(p){return p.evaluate(()=>({randomCalls:window.__randomCalls,q:currentQuestion?.id,options:currentQuestion?.options,difficulty:currentQuestion?.__mqDifficulty,room,attempts:totalAttempts,correct:correctAnswers,streak,maxStreak,bossHealth,bossCheckpoint,remediation:JSON.parse(JSON.stringify(remediationState)),adaptiveMode,conceptMemory,masteryState,score:scoreAttackScore,fading:fadingFortuneScore,bankroll:riskRewardBankroll,events:readLocalTelemetry(runID).map(r=>({event:r.event,q:r.questionID,correct:r.correct,response:r.responseTimeMs,attempt:r.attempt,streak:r.streak,score:r.score})),vault:Object.fromEntries(Object.entries(ARTIFACT_STORAGE_KEYS).map(([k,v])=>[k,localStorage.getItem(v)]))}));}
 async function next(p){
  if(await p.locator('.principal-skip-btn').isVisible()){await p.locator('.principal-skip-btn').focus();await p.keyboard.press('Enter');return;}
  for(const id of ['mqFeedbackContinue','gameModalConfirm','continueBtn','guideIntroProceed','bossRevealProceed'])if(await p.locator('#'+id).isVisible()){await p.locator('#'+id).focus();await p.keyboard.press('Enter');await p.clock.runFor(50);await p.waitForTimeout(20);return;}
@@ -118,12 +119,20 @@ try{
     }
     const final=await state(p);
     assert.equal(final.attempts,36);assert.equal(final.correct,21);
-    assert.equal(final.columns.length,70);
+    assert.equal(await p.evaluate(()=>TELEMETRY_COLUMNS.length),reference?70:JSON.parse(fs.readFileSync('audit_tools/unified_rpg_telemetry/schema.json')).columns.length);
     assert.equal(final.events.filter(e=>e.event==='question').length,36);
     assert.equal(final.events.filter(e=>e.event==='exam_section_commit').length,3);
     assert.equal(final.events.filter(e=>e.event==='exam_answer_revision').length,3);
     assert.equal(final.events.filter(e=>e.event==='exam_complete').length,1);
     assert.equal(await p.evaluate(()=>runEnding),true);
+    if(!reference){
+      const [download]=await Promise.all([p.waitForEvent('download'),p.evaluate(()=>downloadTelemetryCsv())]);
+      const csvPath=path.join(out,'exam-complete.csv');await download.saveAs(csvPath);
+      const csv=fs.readFileSync(csvPath,'utf8'),validation=validateCSV(csv);
+      assert.equal(validation.status,'PASS',JSON.stringify(validation.issues));assert.equal(validation.acceptedAttempts,36);
+      const analysis=createRequire(import.meta.url)('../../tools/answer-analysis/analysis.js');
+      const report=analysis.analyze(analysis.parseCSV(csv));assert.equal(report.stats.included,36);assert.equal(report.stats.duplicates,0);assert.equal(report.overview.correct,21);
+    }
     assert(Object.values(final.vault).every(value=>value!=='true'));
     assert(!await p.locator('#artifactVault').isVisible());
     assert.deepEqual(x.errors,[]);runs.push(snapshots);

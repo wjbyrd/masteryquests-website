@@ -60,5 +60,5 @@ for(const game of games){
  console.log(JSON.stringify({game,rows:records.length,added:records.filter(r=>r.added).length,pools:Object.fromEntries(Object.entries(bank.questionBanks).map(([p,q])=>[p,q.length])),assets:files.size}));
 }
 const releasePath='audit_tools/economic_realm_questions/release.json',serialized=JSON.stringify(release,null,2)+'\n';
-if(check)assert.equal(fs.readFileSync(releasePath,'utf8'),serialized,'Release manifest drift');
+if(check)assert.equal(fs.readFileSync(releasePath,'utf8').replace(/\r\n/g,'\n'),serialized,'Release manifest drift');
 else fs.writeFileSync(releasePath,serialized);

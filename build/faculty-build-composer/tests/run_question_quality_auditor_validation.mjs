@@ -248,7 +248,7 @@ assert.equal(foundationsAuthorization.anticipatedPostRemediationReviews.length, 
 assert.equal(foundationsRemediation.changes.length, 99, "Foundations remediation count changed");
 assert(library.libraryVersion.includes(foundationsRemediation.phase), "Foundations curation phase disappeared from the current library lineage");
 assert.equal(
-  sha256(fs.readFileSync(path.join(foundationsArtifactDir, "foundations_quality_audit_pre_remediation.json"))),
+  sha256(fs.readFileSync(path.join(foundationsArtifactDir, "foundations_quality_audit_pre_remediation.json"), "utf8").replace(/\r\n/g, "\n")),
   foundationsRemediation.originalBaselineAuditSha256,
   "Immutable Foundations baseline audit changed"
 );
@@ -276,7 +276,7 @@ for (const change of graphIntegrityRemediation.changes) {
   assert.deepEqual(collectComposerQuestions(library).find(entry => String(entry.id) === String(change.id))?.question, currentAuditedQuestion(change.id, change.after), `Current graph audit lineage: ${change.id}`);
   if (laterCuration) assert.deepEqual(laterCuration.before, change.after, `Graph integrity remediation state changed outside the authorized human-read ledger for ${change.id}`);
 }
-assert.equal(sha256(fs.readFileSync(path.join(foundationsArtifactDir, "graph_assessment_integrity_pre_remediation.json"))), graphIntegrityRemediation.baselineAuditSha256, "Immutable graph integrity baseline changed");
+assert.equal(sha256(fs.readFileSync(path.join(foundationsArtifactDir, "graph_assessment_integrity_pre_remediation.json"), "utf8").replace(/\r\n/g, "\n")), graphIntegrityRemediation.baselineAuditSha256, "Immutable graph integrity baseline changed");
 const scopedGraphEntries = collectComposerQuestions(library, { concepts: ["demand", "supply", "market-equilibrium", "production-possibilities-frontier"] })
   .filter(entry => entry.question.image || entry.question.asset || entry.question.graphRequired || /graph/i.test(entry.question.type || ""));
 assert.equal(scopedGraphEntries.length, 115, "Scoped graph inventory changed");

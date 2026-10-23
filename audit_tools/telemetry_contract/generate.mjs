@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import '../unified_rpg_telemetry/sync.mjs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import {fileURLToPath} from 'node:url';

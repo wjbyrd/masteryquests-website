@@ -14,15 +14,23 @@ export function validateCSV(text){
  const issue=(code,row,detail)=>issues.push({code,row,detail});
  const anonymous=columns.includes('event_id'),current=columns.includes('contractID');
  const inventory=JSON.parse(fs.readFileSync(new URL('./schema.json',import.meta.url),'utf8'));
- const recognized=inventory.schemas.find(s=>s.columns.length===columns.length&&s.columns.every((c,i)=>columns[i]===c));
+ const rpgSchema=JSON.parse(fs.readFileSync(new URL('../unified_rpg_telemetry/schema.json',import.meta.url),'utf8'));
+ const recognized=[...inventory.schemas,{id:rpgSchema.version,columns:rpgSchema.columns}].find(s=>s.columns.length===columns.length&&s.columns.every((c,i)=>columns[i]===c));
  if(!recognized)issue('UNKNOWN_SCHEMA',0,'Header not a supported ordered schema; no assumptions about future meanings.');
  if(new Set(columns).size!==columns.length)issue('DUPLICATE_COLUMN',0,'Duplicate header');
  if(!recognized)return {status:'UNSUPPORTED_SCHEMA',schema:'unknown',rows:table.length,acceptedAttempts:null,manifestRows:null,versions:[],issues,limitations:['No measurements interpreted for an unrecognized schema.']};
  const records=table.map((r,i)=>{if(r.length!==columns.length)issue('COLUMN_COUNT',i+2,'CSV row has wrong field count');return Object.fromEntries(columns.map((c,j)=>[c,r[j]??'']));});
+ if(columns.includes('csvSchemaVersion')&&records.some(r=>r.csvSchemaVersion!==rpgSchema.version))return {status:'UNSUPPORTED_SCHEMA',schema:recognized.id,rows:records.length,acceptedAttempts:null,manifestRows:null,versions:[],issues:[{code:'UNKNOWN_CSV_VERSION',row:0,detail:'Unsupported RPG CSV version.'}],limitations:[]};
  if(records.some(r=>r.contractID&&r.contractID!=='mq-measurement/1'||r.schema_version&&!['1','2','3'].includes(r.schema_version)))return {status:'UNSUPPORTED_SCHEMA',schema:recognized.id,rows:records.length,acceptedAttempts:null,manifestRows:null,versions:[],issues:[{code:'UNKNOWN_CONTRACT',row:0,detail:'Future contract/envelope; interpretation stopped.'}],limitations:['No measurements interpreted for an unsupported contract.']};
  const manifests=new Map(),eventIds=new Set(),sequences=new Map(),commits=new Set(),presentations=new Set(),versions=new Set(),runs=new Map();
  for(const [i,r] of records.entries()){
   const event=anonymous?r.event_type:r.event,run=anonymous?r.run_id:r.runID,id=anonymous?r.event_id:r.eventID,row=i+2;
+  if(r.csvSchemaVersion){
+   let availability;try{availability=JSON.parse(r.fieldAvailabilityJSON);}catch(_){issue('AVAILABILITY_INVALID',row,'Missing or malformed availability map');}
+   if(!availability||Array.isArray(availability)||typeof availability!=='object')issue('AVAILABILITY_INVALID',row,'Expected an object');
+   else for(const [key,reason] of Object.entries(availability))if(!columns.includes(key)||!['not-applicable','not-measured','unavailable','legacy-ambiguous'].includes(reason)||r[key]!=='')issue('AVAILABILITY_INVALID',row,key+': reason must describe a blank declared field');
+   if(!['faculty-composer','economic-realm','managerial-intelligence-directorate','micro-domains','macro-command-system'].includes(r.collectionID))issue('COLLECTION_INVALID',row,'Unknown RPG collection');
+  }
   const meta=anonymous&&r.extras_json?JSON.parse(r.extras_json):{};for(const k of CONTRACT_FIELDS)if(!r[k]&&meta[k]!=null)r[k]=typeof meta[k]==='object'?JSON.stringify(meta[k]):String(meta[k]);
   const contract=r.contractID,manifest=r.manifestID;
   if(contract&&contract!=='mq-measurement/1')issue('UNKNOWN_CONTRACT',row,contract);
@@ -46,13 +54,14 @@ export function validateCSV(text){
   const response=anonymous?['answer_evaluated','answer_submitted','exam_answer_initial','exam_answer_revision','question_interrupted'].includes(event):['question','rapid_guessing','exam_answer_initial','exam_answer_revision'].includes(event);
   const elapsed=r.responseTimeMs||r.response_time_ms;
   if(response&&contract){
-   for(const key of ['responseTimeMs','activeResponseTimeMs','hiddenTimeMs'])if(columns.includes(key)){if(r[key]===''||r[key]===undefined)issue('MISSING_MEASUREMENT',row,key);}else limitations.push(key+' is unavailable in this export schema.');
+   const availability=r.fieldAvailabilityJSON?JSON.parse(r.fieldAvailabilityJSON):{};
+   for(const key of ['responseTimeMs','activeResponseTimeMs','hiddenTimeMs'])if(columns.includes(key)){if(r[key]===''||r[key]===undefined){if(['not-measured','not-applicable','unavailable','legacy-ambiguous'].includes(availability[key]))limitations.push(key+': '+availability[key]);else issue('MISSING_MEASUREMENT',row,key);}}else limitations.push(key+' is unavailable in this export schema.');
    for(const [countKey,valueKeys] of [['tabSwitchCount',['timeAfterReturnMs','timeCopyToHideMs']],['focusLossCount',['timeAfterFocusMs','timeCopyToBlurMs']],['copyCount',['lastCopyElapsedMs','timeCopyToHideMs','timeCopyToBlurMs']]])if(Number(r[countKey])===0)for(const key of valueKeys)if(r[key]!==undefined&&r[key]!=='')issue('CONDITIONAL_FIELD',row,key+' without '+countKey);
   }
   if(response&&elapsed!==''){
    const total=Number(elapsed),active=r.activeResponseTimeMs,hidden=r.hiddenTimeMs;
    if(!Number.isFinite(total)||total<0)issue('IMPOSSIBLE_TIMING',row,'Invalid elapsed time');
-   if(active!==''&&hidden!==''&&Math.abs(Number(active)+Number(hidden)-total)>2)issue('IMPOSSIBLE_TIMING',row,'Visible + hidden differs from elapsed');
+   if(active!=null&&hidden!=null&&active!==''&&hidden!==''&&Math.abs(Number(active)+Number(hidden)-total)>2)issue('IMPOSSIBLE_TIMING',row,'Visible + hidden differs from elapsed');
    for(const key of ['unfocusedTimeMs','timeAfterReturnMs','timeAfterFocusMs','lastCopyElapsedMs','timeCopyToHideMs','timeCopyToBlurMs'])if(r[key]!==undefined&&r[key]!==''&&(Number(r[key])<0||Number(r[key])>total))issue('IMPOSSIBLE_TIMING',row,key);
   }
   if(r.deliveryQuality)try{const q=JSON.parse(r.deliveryQuality);for(const [k,v] of Object.entries(q))if(['overflow','permanentlyRejected','storageFailures','knownMissingPrefix','cancelled','remoteOverflow','remoteCancelled','remotePermanentlyRejected','remoteStorageFailures'].includes(k)&&v>0)issue('OBSERVED_DELIVERY_LIMIT',row,k+': '+v);}catch(e){issue('QUALITY_INVALID',row,e.message);}
