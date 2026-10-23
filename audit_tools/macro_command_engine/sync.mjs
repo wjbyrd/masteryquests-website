@@ -4,6 +4,7 @@ import assert from 'node:assert/strict';
 import {createRequire} from 'node:module';
 import {games, templatePath, declaration, fn, value} from './source.mjs';
 import {activeProfile} from './active-profile.mjs';
+import {alignMacroPresentation} from './alignment.mjs';
 const require=createRequire(import.meta.url);
 const core=require('../../build/faculty-build-composer/composer-core.js');
 const profiles=JSON.parse(fs.readFileSync('audit_tools/macro_command_engine/profiles.json','utf8'));
@@ -174,6 +175,8 @@ const STORAGE_PREFIX =`);
       html=html.replace(name==='easyConceptPools'?current.replace(/^const /,''):current,original);
     }
   }
+  // Profile/resource fragments may use CRLF on Windows; normalize the complete output.
+  html=alignMacroPresentation(html).replace(/\r\n/g,'\n');
   for(const m of html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g))new vm.Script(m[1]);
   if(check)assert.equal(fs.readFileSync(`${base}/index.html`,'utf8').replace(/\r\n/g,'\n'),html,`${game} engine drift`);
   else if(fs.readFileSync(`${base}/index.html`,'utf8')!==html){
