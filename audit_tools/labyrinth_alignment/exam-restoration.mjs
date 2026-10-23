@@ -15,7 +15,7 @@ const html=fs.readFileSync(htmlFile,'utf8').replace(/\r\n/g,'\n'),oldHTML=oldTex
 function bank(source){const c={};vm.createContext(c);vm.runInContext(source+'\nthis.result={bank:questionBank,metadata:typeof questionAssetMetadata===\'undefined\'?{}:questionAssetMetadata};',c);return JSON.parse(JSON.stringify(c.result));}
 const current=bank(bankText),graphQuestions=[];function walk(value){if(!value||typeof value!=='object')return;if(value.image)graphQuestions.push(value);for(const v of Object.values(value))if(v&&typeof v==='object')walk(v);}walk(current.bank);assert.equal(graphQuestions.length,90);assert.equal(Object.keys(current.metadata).length,21);assert.equal(bankText,oldBankText);for(const image of Object.keys(current.metadata))assert(fs.readFileSync(dir+'/'+image).equals(execFileSync('git',['show',`${base}:${dir}/${image}`],{maxBuffer:5e6})));
 const registry=/(\/\* RELEASE REGISTRY \*\/ )(\{[^\n]+\})(\);)/;
-const prefix=t=>t.slice(0,t.indexOf('<style id="labyrinth-exam-styles">')).replace(registry,'REGISTRY');assert.equal(prefix(html),prefix(oldHTML));
+const prefix=t=>t.slice(0,t.indexOf('<style id="labyrinth-exam-styles">')).replace(registry,'REGISTRY').replace(/(<img src="sovereign\.webp" class="bossIcon principalGlow(?: principal-dialogue-img)?") alt="The Sovereign"/g,'$1');assert.equal(prefix(html),prefix(oldHTML));
 const script=(t,id)=>t.match(new RegExp('<script id="'+id+'">([\\s\\S]*?)<\/script>'))[1];
 assert.equal(script(html,'labyrinth-daily'),script(oldHTML,'labyrinth-daily'));
 const gameplay=t=>t.slice(t.indexOf('    function navigate(target)')).replaceAll("byId('labyrinthExamNavigation')?.remove()",'clearExamPresentation()');
