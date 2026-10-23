@@ -3127,6 +3127,296 @@ html.mq-motion-paused .fade-out-text{animation:none!important;opacity:1!importan
 }
 </style>
 <!-- MQ ACCESSIBILITY style END -->
+<!-- Macro Managerial presentation alignment -->
+<style>
+/* Match the established Game Menu controls while retaining each Macro theme. */
+body #returnMenuBtn.return-menu-btn {
+  min-height:44px!important;padding:11px 16px!important;font-size:13px!important;
+  line-height:1.25!important;border-radius:10px!important;
+  border-width:1px;border-style:solid;
+
+}
+#gameMenuOptions #soundToggle {
+  position:static!important;display:block!important;visibility:visible!important;
+  width:100%!important;max-width:none!important;margin:0!important;transform:none!important;
+  box-sizing:border-box;padding:13px 18px;font:inherit;letter-spacing:1px;
+  border-radius:10px;
+}
+#gameMenuOptions > .game-menu-option,
+#gameMenuOptions .mq-motion-setting {box-sizing:border-box;width:100%;margin:0}
+#gameMenuOptions .game-menu-option:focus-visible,
+#returnMenuBtn:focus-visible {outline:2px solid var(--mq-focus);outline-offset:3px}
+#gameMenuOptions .game-menu-option {
+  box-sizing:border-box;width:100%!important;max-width:none!important;
+  margin:0!important;transform:none!important;min-height:48px;
+  padding:11px 16px!important;font-family:inherit;font-size:16px!important;
+  font-weight:400;line-height:1.25;
+}
+/* Cost Directive's understated instruction within the existing question area. */
+body[data-macro-mode="exam"] #message {
+  font-size:16px;font-weight:400;letter-spacing:0;line-height:1.2;
+  text-shadow:none;margin-top:10px;
+}
+body[data-macro-mode="exam"] #mazeTrack .maze-box {
+  box-sizing:border-box;margin:0;padding:0;transform:none;
+}
+/* Opaque scene backing prevents gameplay text bleeding through introductions;
+   retain the existing themed image and gradient layers above this backing. */
+.guide-intro-screen,.boss-reveal-screen {background-color:var(--mq-dark)}
+/* Long authored guardian names must fit even at 320px. */
+.guide-intro-stage {min-width:0;grid-template-columns:minmax(0,42%) minmax(0,1fr)}
+.guide-intro-copy {min-width:0}
+.guide-intro-name {overflow-wrap:anywhere;font-size:clamp(30px,4vw,60px)}
+.guide-intro-proceed {max-width:100%;white-space:normal}
+.mastery-summary-grid {grid-template-columns:repeat(auto-fit,minmax(min(180px,100%),1fr))}
+@media(max-width:760px){
+  .guide-intro-stage {grid-template-columns:minmax(0,1fr)}
+  .guide-intro-name {font-size:30px;line-height:1.08}
+}
+@media(max-width:560px){
+  body.game-active .dungeon-container {padding-top:48px}
+}
+
+/* mint-ash-gold: Emerald, ash and pale gold; historical reference a0f1dea1889ce9ccfa4c27e57fd3c82d225c85c5. */
+:root{--mq-text:rgb(243, 234, 210);--mq-muted:rgb(214, 177, 92);--mq-heading:#f4d58d;--mq-focus:#f0c75e;--mq-dark:#03050c;--mq-surface:#18120c;--mq-accent:52,211,153;--mq-secondary:245,214,130;--mq-panel-paint:radial-gradient(circle, rgba(52, 211, 153, 0.1) 0%, rgba(245, 214, 130, 0.12) 36%, rgba(24, 18, 12, 0.92) 72%, rgba(3, 5, 12, 0.99) 100%);--mq-panel-shadow:rgba(52, 211, 153, 0.14) 0px 0px 22px, rgba(245, 214, 130, 0.13) 0px 0px 58px, rgba(3, 5, 12, 0.72) 0px 0px 72px, rgba(0, 0, 0, 0.78) 0px 0px 42px inset;--mq-panel-border:rgba(245, 214, 130, 0.36);--mq-button-paint:linear-gradient(rgb(91, 58, 31), rgb(27, 23, 17));--mq-button-shadow:rgba(214, 177, 92, 0.24) 0px 0px 12px, rgba(88, 28, 24, 0.18) 0px 0px 24px, rgba(0, 0, 0, 0.62) 0px 0px 10px inset;--mq-button-border:rgba(214, 177, 92, 0.42);--mq-hover-paint:linear-gradient(rgb(122, 74, 37), rgb(42, 27, 18));--mq-hover-shadow:rgba(240, 199, 94, 0.48) 0px 0px 18px, rgba(127, 29, 29, 0.28) 0px 0px 34px, rgba(0, 0, 0, 0.68) 0px 0px 12px inset;--mq-hover-border:rgba(240, 199, 94, 0.7);--mq-tile-paint:linear-gradient(rgba(22, 30, 28, 0.72), rgba(7, 9, 9, 0.86));--mq-tile-border:rgba(214, 177, 92, 0.18);--mq-active-paint:radial-gradient(circle, rgba(214, 177, 92, 0.48), rgba(65, 95, 78, 0.36), rgba(12, 18, 18, 0.92));--mq-active-shadow:rgba(240, 199, 94, 0.78) 0px 0px 12px, rgba(214, 177, 92, 0.48) 0px 0px 24px, rgba(0, 0, 0, 0.62) 0px 0px 12px inset;--mq-saved-paint:linear-gradient(rgba(65, 95, 78, 0.62), rgba(20, 31, 28, 0.88));--mq-progress-paint:linear-gradient(90deg, rgb(47, 79, 67), rgb(214, 177, 92), rgb(138, 58, 36));--mq-modal-paint:radial-gradient(circle at center top, rgba(65, 95, 78, 0.26), rgba(12, 18, 18, 0.9) 48%, rgba(4, 5, 5, 0.98));--mq-modal-shadow:rgba(0, 0, 0, 0.88) 0px 0px 34px, rgba(214, 177, 92, 0.18) 0px 0px 38px, rgba(127, 29, 29, 0.12) 0px 0px 46px, rgba(0, 0, 0, 0.72) 0px 0px 30px inset;--mq-boss-1:#a78bfa;--mq-boss-text-1:#a78bfa;--mq-boss-2:#7c3aed;--mq-boss-text-2:#c4b5fd;--mq-boss-3:#991b1b;--mq-boss-text-3:#fca5a5;}
+/* Shared paint for components added after the individual historical themes.
+   Variables are defined independently per game in themes.json. No geometry,
+   visibility, motion preferences or gameplay state is set in this stylesheet. */
+body {color:var(--mq-text)}
+body.blank-builder-template {--mq-gameplay-scene-overlay:linear-gradient(rgba(0,0,0,.30),rgba(0,0,0,.48))}
+.mode-select-screen {background-color:var(--mq-dark);background-image:linear-gradient(rgba(0,0,0,.42),rgba(0,0,0,.78)),var(--mq-start-image)}
+.mode-select-panel,.quiz-setup-panel,.mastery-stat-card,.mastery-section {
+  background-color:var(--mq-surface);background-image:var(--mq-panel-paint);
+  border-color:var(--mq-panel-border);box-shadow:var(--mq-panel-shadow);color:var(--mq-text);
+}
+.mode-title,.mode-card-title,.quiz-setup-title,.mastery-report-title,.mastery-stat-value,.mastery-section h3 {color:var(--mq-heading);text-shadow:0 0 12px rgba(var(--mq-accent),.3)}
+.mode-subtitle,.mode-card-text,.quiz-setup-subtitle,.mastery-report-subtitle,.mastery-stat-label,.mastery-note,.mastery-small,.mastery-evidence-copy {color:var(--mq-muted)}
+.mode-card {background-color:var(--mq-surface);background-image:none;color:var(--mq-text);border-color:var(--mq-panel-border)}
+.mode-card .mode-symbol {background-image:var(--mq-panel-paint);color:var(--mq-heading);border-color:var(--mq-panel-border)}
+.mode-card .mode-symbol::after {color:var(--mq-heading);text-shadow:0 0 15px rgba(var(--mq-accent),.4)}
+.mode-card:hover {border-color:var(--mq-focus);box-shadow:0 0 22px rgba(var(--mq-accent),.3)}
+/* The aligned launcher's legacy inline/important paint needs a narrow override. */
+body #returnMenuBtn.return-menu-btn {color:var(--mq-text)!important;background:var(--mq-button-paint)!important;border-color:var(--mq-button-border)!important;box-shadow:var(--mq-button-shadow)}
+body #returnMenuBtn.return-menu-btn:hover {background:var(--mq-hover-paint)!important;border-color:var(--mq-hover-border)!important;box-shadow:var(--mq-hover-shadow)}
+#gameMenuOptions .game-menu-option,#gameMenuOptions #soundToggle {color:var(--mq-text);background:var(--mq-button-paint);border-color:var(--mq-button-border);box-shadow:var(--mq-button-shadow)}
+#gameMenuOptions .game-menu-option:hover,#gameMenuOptions #soundToggle:hover {background:var(--mq-hover-paint);border-color:var(--mq-hover-border);box-shadow:var(--mq-hover-shadow)}
+.game-modal,.quiz-setup-modal {background-color:rgba(0,0,0,.72)}
+.game-modal-card {background-image:var(--mq-modal-paint);background-color:var(--mq-dark);border-color:var(--mq-panel-border);box-shadow:var(--mq-modal-shadow);color:var(--mq-text)}
+.game-modal-card h2 {color:var(--mq-heading)}
+.game-modal-card p {color:var(--mq-muted)}
+.secondary-modal-btn,.secondary-start-btn,.end-practice-btn {color:var(--mq-heading);background-image:var(--mq-button-paint);border-color:var(--mq-button-border)}
+/* New Exam states retain their existing labels, disabled/locked opacity, and
+   selected-state border widths. Saved answers do not imply correctness. */
+button.maze-box.exam-nav-room {color:var(--mq-text)}
+button.maze-box.exam-nav-room.exam-unanswered {background-image:var(--mq-tile-paint);border-color:var(--mq-tile-border)}
+button.maze-box.exam-nav-room.exam-answered {background-image:var(--mq-saved-paint);border-color:var(--mq-heading)}
+button.maze-box.exam-nav-room.exam-boss-ready {background-image:var(--mq-active-paint);border-color:var(--mq-focus);box-shadow:var(--mq-active-shadow)}
+button.maze-box.exam-nav-room.active {background-image:var(--mq-active-paint);border-color:var(--mq-focus);box-shadow:var(--mq-active-shadow)}
+button.maze-box.exam-nav-room.exam-committed {background-image:var(--mq-saved-paint);border-color:var(--mq-panel-border)}
+button.maze-box.exam-nav-room:hover,button.maze-box.exam-nav-room:focus-visible {border-color:var(--mq-focus);box-shadow:0 0 0 3px rgba(var(--mq-accent),.28),0 0 14px rgba(var(--mq-accent),.42)}
+#answers button.selected,#answers button[aria-pressed="true"] {background-image:var(--mq-active-paint)!important;border-color:var(--mq-focus)!important;box-shadow:var(--mq-active-shadow)!important}
+body[data-macro-mode="exam"] #message {text-shadow:none}
+/* Independent palettes extend to introductions absent from the historical UI. */
+.guide-intro-screen,.boss-reveal-screen {color:var(--mq-text);background-color:var(--mq-dark);background-image:linear-gradient(115deg,var(--mq-dark),var(--mq-surface)),var(--mq-guide-intro-image,var(--mq-start-image,none))}
+.boss-reveal-screen {background-image:linear-gradient(115deg,var(--mq-dark),var(--mq-surface)),var(--mq-boss-reveal-image,none);--bossRevealGlow:rgba(var(--mq-accent),.25)!important;--bossRevealBorder:var(--mq-panel-border)!important}
+.guide-intro-screen::before {background:radial-gradient(circle at 28% 42%,rgba(var(--mq-accent),.16),transparent 36%),linear-gradient(90deg,rgba(0,0,0,.16),transparent 48%,rgba(0,0,0,.36))}
+.guide-intro-portrait-frame {background-image:radial-gradient(circle at 50% 34%,rgba(var(--mq-accent),.19),var(--mq-dark) 66%);border-color:var(--mq-panel-border);box-shadow:0 22px 70px rgba(0,0,0,.72),0 0 38px rgba(var(--mq-accent),.15)}
+.boss-reveal-screen .guide-intro-portrait-frame {background-image:radial-gradient(circle at 50% 34%,rgba(var(--mq-accent),.25),var(--mq-dark) 68%)}
+.guide-intro-name,.guide-intro-kicker,.guide-intro-fallback {color:var(--mq-heading)}
+.guide-intro-dialogue {color:var(--mq-text)}
+.guide-intro-dialogue.secondary {color:var(--mq-muted)}
+.guide-intro-proceed {color:var(--mq-dark);background:linear-gradient(var(--mq-heading),var(--mq-focus));border-color:var(--mq-focus);box-shadow:0 0 24px rgba(var(--mq-accent),.25),0 12px 30px rgba(0,0,0,.42)}
+.guide-intro-proceed:hover,.guide-intro-proceed:focus-visible {outline-color:var(--mq-focus);box-shadow:0 0 32px rgba(var(--mq-accent),.4)}
+.generic-boss-image,.boss-q {--bossColor:var(--mq-focus)!important}
+.boss-title,.generic-boss-symbol,#gameBox.boss-mode #bossMessage {color:var(--mq-heading)!important}
+/* Feedback text is authored by the preserved engine with inline colors. */
+#hallwayText > div:first-child {color:var(--mq-heading)!important}
+#hallwayText > div:nth-child(2) {color:var(--mq-text)!important}
+#hallwayText > div:last-child {color:var(--mq-muted)!important}
+/* Daily status-specific success rules remain more specific than these bases. */
+.daily-task-pill,.daily-details-panel,.daily-toast {color:var(--mq-text);background-image:var(--mq-modal-paint);background-color:var(--mq-dark);border-color:var(--mq-panel-border);box-shadow:var(--mq-modal-shadow)}
+.daily-task-pill:hover,.daily-task-pill:focus-visible {border-color:var(--mq-focus);box-shadow:var(--mq-hover-shadow)}
+.daily-details-close {color:var(--mq-text);background:var(--mq-button-paint);border-color:var(--mq-button-border)}
+.daily-details-title,.daily-toast-title {color:var(--mq-text)}
+.daily-details-kicker,.daily-stat-value,.daily-toast-kicker {color:var(--mq-heading)}
+.daily-details-meta,.daily-stat-label,.daily-toast-copy,.daily-toast-progress {color:var(--mq-muted)}
+.daily-progress-track,.daily-stat,.mastery-evidence-cell {background:rgba(var(--mq-accent),.08);border-color:rgba(var(--mq-accent),.24)}
+.daily-progress-fill {background-image:var(--mq-progress-paint);box-shadow:0 0 12px rgba(var(--mq-accent),.45)}
+.targeted-repair-indicator {background:var(--mq-surface);color:var(--mq-heading);border-color:var(--mq-panel-border)}
+.mastery-report-screen {color:var(--mq-text)}
+.mastery-bar {background:var(--mq-dark);border-color:var(--mq-panel-border)}
+.mastery-bar-fill {background-image:var(--mq-progress-paint);box-shadow:0 0 10px rgba(var(--mq-accent),.38)}
+.mastery-evidence-badge[data-evidence="strong"] {color:var(--mq-text);border-color:var(--mq-focus)}
+.mastery-actions button {background-image:var(--mq-button-paint);border-color:var(--mq-button-border);color:var(--mq-text)}
+.fading-fortune-hud,.risk-reward-hud,.score-attack-hud {background-image:var(--mq-panel-paint);border-color:var(--mq-panel-border)}
+/* Completion markup also carries inline paint. These exceptions are scoped to
+   that markup, not to universal elements or success/error feedback. */
+#gameBox .victory {color:var(--mq-heading)!important;text-shadow:0 0 18px rgba(var(--mq-accent),.9)!important}
+#gameBox .victory + div {background:var(--mq-surface)!important;border-color:var(--mq-panel-border)!important;box-shadow:var(--mq-panel-shadow)!important}
+#archivistLine {color:var(--mq-muted)!important;text-shadow:0 0 8px rgba(var(--mq-accent),.35)!important}
+#gameBox button[onclick="downloadTelemetryCsv()"],#gameBox button[onclick="showMasteryReportScreen()"] {background:var(--mq-button-paint)!important;color:var(--mq-text)!important;border-color:var(--mq-button-border)!important}
+/* The current room grid is the presentation state source; no engine mutation
+   or new markup is needed for historical checkpoint-stage colors. */
+body {--mq-checkpoint:var(--mq-boss-1);--mq-checkpoint-text:var(--mq-boss-text-1)}
+body:has(#mazeTrack .active:nth-child(20)) {--mq-checkpoint:var(--mq-boss-2);--mq-checkpoint-text:var(--mq-boss-text-2)}
+body:has(#mazeTrack .active:nth-child(30)) {--mq-checkpoint:var(--mq-boss-3);--mq-checkpoint-text:var(--mq-boss-text-3)}
+.boss-reveal-screen {--bossRevealGlow:color-mix(in srgb,var(--mq-checkpoint) 25%,transparent)!important}
+.generic-boss-image,.boss-q {--bossColor:var(--mq-checkpoint)!important}
+.boss-title,.generic-boss-symbol,#gameBox.boss-mode #bossMessage {color:var(--mq-checkpoint-text)!important}
+.boss-reveal-screen .guide-intro-name,.boss-reveal-screen .guide-intro-kicker {color:var(--mq-checkpoint-text)}
+body.blank-builder-template #message {color:var(--mq-muted)}
+body #returnMenuBtn.return-menu-btn {box-shadow:var(--mq-button-shadow)!important}
+body #returnMenuBtn.return-menu-btn:hover {box-shadow:var(--mq-hover-shadow)!important}
+.score-attack-label,.fading-fortune-label,.fading-fortune-subtitle,.risk-reward-label,.risk-wager-kicker,.risk-wager-copy {color:var(--mq-muted)}
+.fading-fortune-value,.risk-reward-value,.score-attack-value,.target-unlimited-symbol {color:var(--mq-heading)}
+.risk-wager-card,.risk-wager-panel {background-image:var(--mq-modal-paint);border-color:var(--mq-panel-border);color:var(--mq-text)}
+#shareBtn {color:var(--mq-dark)!important;background:linear-gradient(var(--mq-heading),var(--mq-focus))!important}
+
+/* The shared Auditor uses the existing Custodian artwork without a portrait halo. */
+body #wizardImage,body #wizardImage.mq-guide-image img,#guideIntroScreen .guide-intro-image {filter:none;box-shadow:none}
+#guideIntroScreen .guide-intro-portrait-frame {background-image:none;box-shadow:none}
+#guideIntroScreen::before {background:none}
+
+body{color:rgb(243, 234, 210);background-color:initial;}
+body::after{background-image:radial-gradient(circle, rgba(245, 214, 130, 0.09), rgba(30, 24, 18, 0.34) 48%, rgba(3, 5, 12, 0.82) 100%);background-color:initial;}
+.title{color:rgb(244, 213, 141);text-shadow:rgba(214, 177, 92, 0.85) 0px 0px 14px, rgba(180, 83, 9, 0.55) 0px 0px 34px, rgba(0, 0, 0, 0.9) 0px 3px 8px;}
+.subtitle{color:rgb(185, 135, 70);text-shadow:rgba(185, 135, 70, 0.45) 0px 0px 10px, rgba(119, 18, 40, 0.55) 0px 0px 34px, rgba(0, 0, 0, 0.9) 0px 3px 8px;}
+.tagline{color:rgb(216, 199, 160);text-shadow:rgba(0, 0, 0, 0.85) 0px 2px 6px, rgba(0, 0, 0, 0.88) 0px 2px 6px;}
+.name-input{background-image:initial;background-color:rgba(12, 18, 18, 0.88);color:rgb(243, 234, 210);outline-color:initial;box-shadow:rgba(214, 177, 92, 0.28) 0px 0px 14px, rgba(0, 0, 0, 0.65) 0px 0px 12px inset;border-color:rgba(214, 177, 92, 0.45);}
+.name-input:focus{box-shadow:rgba(240, 199, 94, 0.45) 0px 0px 18px, rgba(100, 36, 24, 0.35) 0px 0px 32px, rgba(0, 0, 0, 0.75) 0px 0px 12px inset;border-color:rgba(240, 199, 94, 0.75);}
+.secondary-start-btn{background-image:linear-gradient(rgb(63, 95, 74), rgb(20, 28, 24));background-color:initial;color:rgb(244, 213, 141);border-color:rgba(240, 199, 94, 0.62);}
+#username::placeholder{color:rgba(216, 199, 160, 0.52);}
+#gameBox{background-image:radial-gradient(circle, rgba(52, 211, 153, 0.1) 0%, rgba(245, 214, 130, 0.12) 36%, rgba(24, 18, 12, 0.92) 72%, rgba(3, 5, 12, 0.99) 100%);background-color:initial;box-shadow:rgba(52, 211, 153, 0.14) 0px 0px 22px, rgba(245, 214, 130, 0.13) 0px 0px 58px, rgba(3, 5, 12, 0.72) 0px 0px 72px, rgba(0, 0, 0, 0.78) 0px 0px 42px inset;border-color:rgba(245, 214, 130, 0.36);}
+#gameBox.boss-mode{box-shadow:rgba(214, 177, 92, 0.58) 0px 0px 32px, rgba(100, 36, 24, 0.48) 0px 0px 64px, rgba(0, 0, 0, 0.78) 0px 0px 42px inset;border-color:rgb(214, 177, 92);}
+.boss10 .boss-icon{filter:drop-shadow(rgba(214, 177, 92, 0.85) 0px 0px 6px) drop-shadow(rgba(65, 95, 78, 0.55) 0px 0px 12px);}
+.boss20 .boss-icon{filter:drop-shadow(rgba(196, 106, 58, 0.9) 0px 0px 8px) drop-shadow(rgba(99, 35, 24, 0.65) 0px 0px 16px);}
+.boss30 .boss-icon{filter:drop-shadow(rgb(240, 199, 94) 0px 0px 10px) drop-shadow(rgba(127, 29, 29, 0.85) 0px 0px 24px);}
+.hit{box-shadow:rgba(127, 29, 29, 0.95) 0px 0px 60px, rgba(240, 199, 94, 0.35) 0px 0px 28px, rgba(88, 28, 24, 0.85) 0px 0px 42px inset;}
+#autosave{color:rgb(216, 199, 160);text-shadow:rgba(214, 177, 92, 0.35) 0px 0px 6px;}
+#questionImageBox img{box-shadow:rgba(214, 177, 92, 0.16) 0px 0px 14px, rgba(0, 0, 0, 0.65) 0px 0px 28px;border-color:rgba(214, 177, 92, 0.22);}
+#questionImageBox .graph-zoom-note{color:rgba(243, 234, 210, 0.72);}
+#graphLightbox{background-image:initial;background-color:rgba(4, 5, 5, 0.88);}
+#graphLightbox img{background-image:initial;background-color:rgb(255, 255, 255);box-shadow:rgba(240, 199, 94, 0.34) 0px 0px 28px, rgba(0, 0, 0, 0.86) 0px 0px 70px;border-color:rgba(240, 199, 94, 0.52);}
+#graphLightboxClose{color:rgb(255, 247, 214);background-image:initial;background-color:rgba(18, 10, 6, 0.94);box-shadow:rgba(240, 199, 94, 0.34) 0px 0px 20px, rgba(0, 0, 0, 0.78) 0px 0px 12px inset;border-color:rgba(240, 199, 94, 0.62);}
+h2{text-shadow:rgba(244, 213, 141, 0.24) 0px 0px 10px, rgba(214, 177, 92, 0.22) 0px 0px 20px, rgba(0, 0, 0, 0.85) 0px 2px 6px;}
+#question{color:rgb(243, 234, 210);text-shadow:rgba(0, 0, 0, 0.85) 0px 2px 5px, rgba(214, 177, 92, 0.12) 0px 0px 8px;}
+.boss-title{color:rgb(244, 213, 141);text-shadow:rgba(240, 199, 94, 0.62) 0px 0px 10px, rgba(127, 29, 29, 0.42) 0px 0px 26px, rgba(0, 0, 0, 0.9) 0px 3px 8px;}
+.area-title{color:rgb(185, 168, 121);text-shadow:rgba(214, 177, 92, 0.18) 0px 0px 8px, rgba(0, 0, 0, 0.85) 0px 2px 5px;}
+.boss-q{border-left-color:rgb(138, 58, 36);color:rgb(243, 234, 210);box-shadow:rgba(127, 29, 29, 0.34) -4px 0px 12px;text-shadow:rgba(0, 0, 0, 0.8) 0px 2px 5px;}
+.hint-box{color:rgb(214, 177, 92);text-shadow:rgba(214, 177, 92, 0.25) 0px 0px 6px;}
+.fade-out-text{color:rgb(240, 199, 94);text-shadow:rgba(240, 199, 94, 0.55) 0px 0px 8px, rgba(0, 0, 0, 0.85) 0px 2px 5px;}
+#message{color:rgb(216, 199, 160);text-shadow:rgba(214, 177, 92, 0.18) 0px 0px 7px, rgba(0, 0, 0, 0.85) 0px 2px 5px;}
+.mint-ash-gold #message, .mint #message{color:rgb(214, 177, 92);text-shadow:rgba(214, 177, 92, 0.42) 0px 0px 8px, rgba(100, 36, 24, 0.25) 0px 0px 18px, rgba(0, 0, 0, 0.85) 0px 2px 6px;}
+button{background-image:linear-gradient(rgb(91, 58, 31), rgb(27, 23, 17));background-color:initial;color:rgb(243, 234, 210);box-shadow:rgba(214, 177, 92, 0.24) 0px 0px 12px, rgba(88, 28, 24, 0.18) 0px 0px 24px, rgba(0, 0, 0, 0.62) 0px 0px 10px inset;border-color:rgba(214, 177, 92, 0.42);}
+button:hover{background-image:linear-gradient(rgb(122, 74, 37), rgb(42, 27, 18));background-color:initial;box-shadow:rgba(240, 199, 94, 0.48) 0px 0px 18px, rgba(127, 29, 29, 0.28) 0px 0px 34px, rgba(0, 0, 0, 0.68) 0px 0px 12px inset;border-color:rgba(240, 199, 94, 0.7);}
+.answers button{background-image:linear-gradient(rgba(50, 76, 58, 0.98), rgba(12, 24, 20, 0.98));background-color:initial;color:rgb(243, 234, 210);box-shadow:rgba(214, 177, 92, 0.16) 0px 0px 10px, rgba(65, 95, 78, 0.16) 0px 0px 18px, rgba(0, 0, 0, 0.7) 0px 0px 14px inset;border-color:rgba(214, 177, 92, 0.34);}
+.answers button:hover{background-image:linear-gradient(rgba(68, 105, 76, 0.98), rgba(24, 46, 34, 0.98));background-color:initial;box-shadow:rgba(214, 177, 92, 0.38) 0px 0px 18px, rgba(65, 120, 82, 0.35) 0px 0px 34px, rgba(0, 0, 0, 0.68) 0px 0px 14px inset;border-color:rgba(240, 199, 94, 0.68);}
+.fullscreenBtn{color:rgb(243, 234, 210);background-image:linear-gradient(rgb(74, 51, 32), rgb(17, 16, 13));background-color:initial;box-shadow:rgba(214, 177, 92, 0.22) 0px 0px 10px, rgba(0, 0, 0, 0.72) 0px 0px 7px inset;border-color:rgba(214, 177, 92, 0.34);}
+.fullscreenBtn:hover{background-image:linear-gradient(rgb(106, 71, 38), rgb(28, 21, 16));background-color:initial;box-shadow:rgba(214, 177, 92, 0.42) 0px 0px 16px, rgba(0, 0, 0, 0.72) 0px 0px 8px inset;border-color:rgba(240, 199, 94, 0.62);}
+.fullscreenBtn:active{box-shadow:rgba(214, 177, 92, 0.28) 0px 0px 8px, rgba(0, 0, 0, 0.85) 0px 0px 10px inset;}
+.return-menu-btn{color:rgb(243, 234, 210);background-image:linear-gradient(rgb(74, 51, 32), rgb(17, 16, 13));background-color:initial;box-shadow:rgba(214, 177, 92, 0.22) 0px 0px 10px, rgba(0, 0, 0, 0.72) 0px 0px 7px inset;border-color:rgba(214, 177, 92, 0.34);}
+.return-menu-btn:hover{color:rgb(244, 213, 141);background-image:linear-gradient(rgb(106, 71, 38), rgb(28, 21, 16));background-color:initial;box-shadow:rgba(56, 189, 248, 0.34) 0px 0px 16px, rgba(0, 0, 0, 0.76) 0px 0px 8px inset;border-color:rgba(240, 199, 94, 0.62);}
+.continue-btn{background-image:linear-gradient(rgb(138, 79, 37), rgb(58, 31, 20));background-color:initial;color:rgb(243, 234, 210);box-shadow:rgba(214, 177, 92, 0.38) 0px 0px 16px, rgba(127, 29, 29, 0.28) 0px 0px 34px, rgba(0, 0, 0, 0.65) 0px 0px 12px inset;border-color:rgba(240, 199, 94, 0.52);}
+.continue-btn:hover{background-image:linear-gradient(rgb(167, 99, 44), rgb(91, 42, 25));background-color:initial;box-shadow:rgba(240, 199, 94, 0.58) 0px 0px 24px, rgba(127, 29, 29, 0.36) 0px 0px 42px, rgba(0, 0, 0, 0.65) 0px 0px 12px inset;}
+#continueBtn:active{box-shadow:rgba(214, 177, 92, 0.28) 0px 0px 10px, rgba(0, 0, 0, 0.75) 0px 0px 10px inset;}
+#progressBar{background-image:linear-gradient(rgba(12, 18, 18, 0.95), rgba(4, 5, 5, 0.98));background-color:initial;box-shadow:rgba(0, 0, 0, 0.82) 0px 0px 12px inset, rgba(214, 177, 92, 0.12) 0px 0px 10px;border-color:rgba(214, 177, 92, 0.22);}
+#progressFill{background-image:linear-gradient(90deg, rgb(47, 79, 67), rgb(214, 177, 92), rgb(138, 58, 36));background-color:initial;box-shadow:rgba(214, 177, 92, 0.45) 0px 0px 12px, rgba(127, 29, 29, 0.25) 0px 0px 22px;}
+.maze-box{background-image:linear-gradient(rgba(22, 30, 28, 0.72), rgba(7, 9, 9, 0.86));background-color:initial;box-shadow:rgba(0, 0, 0, 0.72) 0px 0px 10px inset, rgba(214, 177, 92, 0.08) 0px 0px 5px;border-color:rgba(214, 177, 92, 0.18);}
+.maze-box.active{background-image:radial-gradient(circle, rgba(214, 177, 92, 0.48), rgba(65, 95, 78, 0.36), rgba(12, 18, 18, 0.92));background-color:initial;box-shadow:rgba(240, 199, 94, 0.78) 0px 0px 12px, rgba(214, 177, 92, 0.48) 0px 0px 24px, rgba(0, 0, 0, 0.62) 0px 0px 12px inset;border-color:rgb(240, 199, 94);}
+.maze-box.completed{background-image:linear-gradient(rgba(65, 95, 78, 0.62), rgba(20, 31, 28, 0.88));background-color:initial;box-shadow:rgba(214, 177, 92, 0.28) 0px 0px 8px, rgba(0, 0, 0, 0.7) 0px 0px 10px inset;border-color:rgba(214, 177, 92, 0.38);}
+.maze-box:nth-child(10){text-shadow:rgb(214, 177, 92) 0px 0px 8px, rgba(65, 95, 78, 0.8) 0px 0px 18px;}
+.maze-box:nth-child(20){text-shadow:rgb(196, 106, 58) 0px 0px 8px, rgba(127, 29, 29, 0.75) 0px 0px 18px;}
+.maze-box:nth-child(30){text-shadow:rgb(240, 199, 94) 0px 0px 10px, rgba(127, 29, 29, 0.95) 0px 0px 24px, rgba(214, 177, 92, 0.42) 0px 0px 34px;}
+.streak{color:rgba(243, 234, 210, 0.94);text-shadow:rgba(214, 177, 92, 0.32) 0px 0px 7px, rgba(0, 0, 0, 0.85) 0px 2px 5px;}
+.streak-icon{filter:drop-shadow(rgba(214, 177, 92, 0.75) 0px 0px 8px) drop-shadow(rgba(100, 36, 24, 0.52) 0px 0px 15px);background-image:radial-gradient(circle, rgba(240, 199, 94, 0.46) 0%, rgba(65, 95, 78, 0.34) 45%, transparent 72%);background-color:initial;}
+#artifactDrop{background-image:radial-gradient(circle, rgba(65, 95, 78, 0.34), rgba(12, 18, 18, 0.96) 62%, rgba(4, 5, 5, 0.98));background-color:initial;box-shadow:rgba(214, 177, 92, 0.28) 0px 0px 22px, rgba(127, 29, 29, 0.22) 0px 0px 42px, rgba(0, 0, 0, 0.76) 0px 0px 28px inset;border-color:rgba(214, 177, 92, 0.34);}
+#artifactDrop img{filter:drop-shadow(rgba(240, 199, 94, 0.82) 0px 0px 14px) drop-shadow(rgba(127, 29, 29, 0.42) 0px 0px 26px);}
+#artifactVault{background-image:radial-gradient(circle at center top, rgba(65, 95, 78, 0.42), rgba(12, 18, 18, 0.96) 58%, rgba(4, 5, 5, 0.98));background-color:initial;box-shadow:rgba(214, 177, 92, 0.22) 0px 0px 20px, rgba(88, 28, 24, 0.2) 0px 0px 38px, rgba(0, 0, 0, 0.76) 0px 0px 30px inset;border-color:rgba(214, 177, 92, 0.3);}
+#artifactVault h3{color:rgb(244, 213, 141);text-shadow:rgba(214, 177, 92, 0.52) 0px 0px 10px, rgba(0, 0, 0, 0.85) 0px 2px 6px;}
+.artifactSlot span{color:rgba(216, 199, 160, 0.38);}
+.artifactSlot.unlocked img{filter:drop-shadow(rgba(240, 199, 94, 0.86) 0px 0px 14px) drop-shadow(rgba(214, 177, 92, 0.46) 0px 0px 26px) drop-shadow(rgba(127, 29, 29, 0.24) 0px 0px 34px);}
+.artifactSlot.unlocked span{color:rgb(243, 234, 210);text-shadow:rgba(214, 177, 92, 0.38) 0px 0px 7px, rgba(0, 0, 0, 0.85) 0px 2px 5px;}
+.liquidityGlow{filter:drop-shadow(rgba(214, 177, 92, 0.84) 0px 0px 12px) drop-shadow(rgba(65, 95, 78, 0.58) 0px 0px 24px) drop-shadow(rgba(0, 0, 0, 0.78) 0px 0px 34px);}
+.steadyStateGlow{filter:drop-shadow(rgba(196, 106, 58, 0.86) 0px 0px 14px) drop-shadow(rgba(92, 64, 36, 0.62) 0px 0px 28px) drop-shadow(rgba(0, 0, 0, 0.8) 0px 0px 38px);}
+.shockSovereignGlow{filter:drop-shadow(rgba(240, 199, 94, 0.96) 0px 0px 16px) drop-shadow(rgba(127, 29, 29, 0.74) 0px 0px 34px) drop-shadow(rgba(214, 177, 92, 0.34) 0px 0px 46px) drop-shadow(rgba(0, 0, 0, 0.84) 0px 0px 52px);}
+.torch{filter:drop-shadow(rgba(240, 199, 94, 0.68) 0px 0px 12px) drop-shadow(rgba(127, 29, 29, 0.26) 0px 0px 24px);}
+#hallwayTransition{background-color:initial;color:rgb(243, 234, 210);}
+#hallwayText{background-image:radial-gradient(circle, rgba(65, 95, 78, 0.3), rgba(12, 18, 18, 0.82) 58%, rgba(4, 5, 5, 0.92));background-color:initial;box-shadow:rgba(0, 0, 0, 0.82) 0px 0px 24px, rgba(214, 177, 92, 0.18) 0px 0px 28px, rgba(0, 0, 0, 0.72) 0px 0px 26px inset;color:rgb(243, 234, 210);text-shadow:rgba(214, 177, 92, 0.26) 0px 0px 8px, rgba(0, 0, 0, 0.9) 0px 2px 6px;border-color:rgba(214, 177, 92, 0.28);}
+.game-modal{background-image:initial;background-color:rgba(4, 5, 5, 0.72);}
+.game-modal-card{background-image:radial-gradient(circle at center top, rgba(65, 95, 78, 0.26), rgba(12, 18, 18, 0.9) 48%, rgba(4, 5, 5, 0.98));background-color:initial;box-shadow:rgba(0, 0, 0, 0.88) 0px 0px 34px, rgba(214, 177, 92, 0.18) 0px 0px 38px, rgba(127, 29, 29, 0.12) 0px 0px 46px, rgba(0, 0, 0, 0.72) 0px 0px 30px inset;border-color:rgba(214, 177, 92, 0.42);}
+.game-modal-card h2{color:rgb(244, 213, 141);}
+.game-modal-card p{color:rgb(216, 199, 160);}
+.secondary-modal-btn{color:rgb(216, 199, 160);border-color:rgba(214, 177, 92, 0.42);}
+.top-title{color:rgb(244, 213, 141);text-shadow:rgba(214, 177, 92, 0.45) 0px 0px 10px, rgba(0, 0, 0, 0.9) 0px 2px 6px;}
+#gameShell{background-image:linear-gradient(rgba(18, 24, 24, 0.96), rgba(4, 5, 5, 0.98));background-color:initial;box-shadow:rgba(0, 0, 0, 0.92) 0px 0px 30px, rgba(214, 177, 92, 0.16) 0px 0px 58px, rgba(88, 28, 24, 0.16) 0px 0px 76px, rgba(0, 0, 0, 0.74) 0px 0px 42px inset;border-color:rgba(214, 177, 92, 0.28);}
+#wizardBox{background-image:linear-gradient(rgba(42, 55, 49, 0.94), rgba(8, 10, 10, 0.98));background-color:initial;box-shadow:rgba(0, 0, 0, 0.78) 0px 0px 26px inset, rgba(214, 177, 92, 0.12) 0px 0px 18px;border-color:rgba(214, 177, 92, 0.26);}
+#wizardName{color:rgb(214, 177, 92);border-bottom-color:rgba(214, 177, 92, 0.34);text-shadow:rgba(214, 177, 92, 0.48) 0px 0px 6px, rgba(0, 0, 0, 0.85) 0px 2px 5px;}
+#wizardImage{filter:drop-shadow(rgba(214, 177, 92, 0.62) 0px 0px 12px) drop-shadow(rgba(65, 95, 78, 0.28) 0px 0px 24px) drop-shadow(rgba(0, 0, 0, 0.82) 0px 0px 30px);}
+.boss-mode #gameBox{box-shadow:rgba(240, 199, 94, 0.42) 0px 0px 34px, rgba(127, 29, 29, 0.42) 0px 0px 72px, rgba(0, 0, 0, 0.82) 0px 0px 46px inset;border-color:rgba(240, 199, 94, 0.72);}
+.boss-mode #gameShell{box-shadow:rgba(0, 0, 0, 0.94) 0px 0px 36px, rgba(214, 177, 92, 0.24) 0px 0px 64px, rgba(127, 29, 29, 0.26) 0px 0px 90px, rgba(0, 0, 0, 0.78) 0px 0px 48px inset;border-color:rgba(240, 199, 94, 0.42);}
+@media (max-width: 768px){.return-menu-btn{background-image:initial;background-color:rgba(0, 0, 0, 0.58);color:rgba(255, 255, 255, 0.86);box-shadow:rgba(56, 189, 248, 0.24) 0px 0px 14px, rgba(0, 0, 0, 0.55) 0px 0px 18px;border-color:rgba(56, 189, 248, 0.42);}}
+@media (max-width: 768px){#gameShell{box-shadow:rgba(0, 0, 0, 0.9) 0px 0px 24px, rgba(56, 189, 248, 0.14) 0px 0px 38px, rgba(0, 0, 0, 0.78) 0px 0px 30px inset;border-color:rgba(56, 189, 248, 0.22);}}
+.mode-select-screen{background-color:initial;}
+.mode-select-panel{background-image:initial;background-color:rgba(12, 18, 18, 0.86);box-shadow:rgba(0, 0, 0, 0.82) 0px 0px 36px, rgba(214, 177, 92, 0.18) 0px 0px 44px, rgba(0, 0, 0, 0.62) 0px 0px 36px inset;border-color:rgba(214, 177, 92, 0.36);}
+.mode-title{color:rgb(244, 213, 141);text-shadow:rgba(240, 199, 94, 0.62) 0px 0px 14px, rgba(127, 29, 29, 0.22) 0px 0px 28px, rgba(0, 0, 0, 0.9) 0px 3px 8px;}
+.mode-subtitle{color:rgb(216, 199, 160);}
+.mode-card{background-image:initial;background-color:rgba(12, 18, 18, 0.94);color:rgb(243, 234, 210);box-shadow:rgba(0, 0, 0, 0.68) 0px 0px 22px, rgba(0, 0, 0, 0.58) 0px 0px 18px inset;border-color:rgba(214, 177, 92, 0.3);}
+.mode-card:hover{box-shadow:rgba(214, 177, 92, 0.3) 0px 0px 28px, rgba(127, 29, 29, 0.18) 0px 0px 38px, rgba(0, 0, 0, 0.62) 0px 0px 18px inset;border-color:rgba(240, 199, 94, 0.78);}
+.mode-card img{border-bottom-color:rgba(214, 177, 92, 0.22);background-image:linear-gradient(rgba(65, 95, 78, 0.8), rgba(12, 18, 18, 0.98));background-color:initial;}
+.mode-card-title{color:rgb(244, 213, 141);}
+.mode-card-text{color:rgba(216, 199, 160, 0.88);}
+.sr-only{border-color:currentcolor;}
+.timed-mode-hud{background-image:linear-gradient(rgba(65, 95, 78, 0.64), rgba(12, 18, 18, 0.96));background-color:initial;box-shadow:rgba(214, 177, 92, 0.22) 0px 0px 16px, rgba(127, 29, 29, 0.12) 0px 0px 26px, rgba(0, 0, 0, 0.72) 0px 0px 12px inset;border-color:rgba(240, 199, 94, 0.48);}
+.timer-label{color:rgb(216, 199, 160);}
+.timer-display{color:rgb(244, 213, 141);text-shadow:rgba(240, 199, 94, 0.62) 0px 0px 10px, rgba(127, 29, 29, 0.18) 0px 0px 18px;}
+.sound-toggle{background-image:initial;background-color:rgba(0, 0, 0, 0.46);color:rgba(255, 255, 255, 0.72);box-shadow:rgba(0, 0, 0, 0.45) 0px 0px 18px;border-color:rgba(255, 255, 255, 0.22);}
+.sound-toggle:hover{color:rgb(255, 255, 255);background-image:initial;background-color:rgba(255, 255, 255, 0.08);border-color:rgba(255, 255, 255, 0.42);}
+@media (hover: none), (pointer: coarse){.answers button:hover{background-image:linear-gradient(rgba(50, 76, 58, 0.98), rgba(12, 24, 20, 0.98));background-color:initial;box-shadow:rgba(214, 177, 92, 0.16) 0px 0px 10px, rgba(65, 95, 78, 0.16) 0px 0px 18px, rgba(0, 0, 0, 0.7) 0px 0px 14px inset;border-color:rgba(214, 177, 92, 0.34);}}
+@media (hover: none), (pointer: coarse){.answers button:active{background-image:linear-gradient(rgba(68, 105, 76, 0.98), rgba(24, 46, 34, 0.98));background-color:initial;box-shadow:rgba(214, 177, 92, 0.38) 0px 0px 18px, rgba(65, 120, 82, 0.35) 0px 0px 34px, rgba(0, 0, 0, 0.68) 0px 0px 14px inset;border-color:rgba(240, 199, 94, 0.68);}}
+@media (hover: none), (pointer: coarse){.answers button:focus, .answers button:focus-visible{outline-color:initial;}}
+#returnMenuBtn.return-menu-btn{background-image:initial;background-color:rgba(0, 0, 0, 0.62);color:rgba(255, 255, 255, 0.88);box-shadow:rgba(56, 189, 248, 0.24) 0px 0px 14px, rgba(0, 0, 0, 0.55) 0px 0px 18px;border-color:rgba(56, 189, 248, 0.48);}
+#soundToggle.sound-toggle{background-image:initial;background-color:rgba(0, 0, 0, 0.62);color:rgba(255, 255, 255, 0.78);box-shadow:rgba(0, 0, 0, 0.55) 0px 0px 14px;border-color:rgba(255, 255, 255, 0.22);}
+.score-attack-hud{background-image:linear-gradient(rgba(11, 34, 56, 0.88), rgba(2, 6, 23, 0.96));background-color:initial;box-shadow:rgba(56, 189, 248, 0.24) 0px 0px 16px, rgba(247, 217, 130, 0.18) 0px 0px 26px, rgba(0, 0, 0, 0.74) 0px 0px 12px inset;border-color:rgba(247, 217, 130, 0.5);}
+.score-attack-label, .score-attack-best-label{color:rgb(199, 236, 255);}
+.score-attack-value{color:rgb(247, 217, 130);text-shadow:rgba(247, 217, 130, 0.7) 0px 0px 12px, rgba(56, 189, 248, 0.24) 0px 0px 18px;}
+.score-attack-best{color:rgb(224, 242, 254);text-shadow:rgba(56, 189, 248, 0.46) 0px 0px 10px;}
+.score-float{text-shadow:rgba(0, 0, 0, 0.96) 0px 0px 10px, rgba(56, 189, 248, 0.42) 0px 0px 18px;}
+.score-float.positive{color:rgb(247, 217, 130);}
+.score-float.negative{color:rgb(248, 113, 113);}
+.score-float.neutral{color:rgb(199, 236, 255);}
+.sound-toggle{background-image:linear-gradient(rgba(11, 34, 56, 0.72), rgba(2, 6, 23, 0.82));background-color:initial;color:rgba(224, 242, 254, 0.78);box-shadow:rgba(0, 0, 0, 0.48) 0px 0px 18px, rgba(56, 189, 248, 0.14) 0px 0px 18px, rgba(0, 0, 0, 0.72) 0px 0px 10px inset;border-color:rgba(56, 189, 248, 0.3);}
+.sound-toggle:hover{color:rgb(247, 217, 130);background-image:linear-gradient(rgba(19, 57, 86, 0.84), rgba(4, 14, 28, 0.9));background-color:initial;box-shadow:rgba(0, 0, 0, 0.52) 0px 0px 22px, rgba(56, 189, 248, 0.22) 0px 0px 20px, rgba(247, 217, 130, 0.14) 0px 0px 26px, rgba(0, 0, 0, 0.74) 0px 0px 10px inset;border-color:rgba(247, 217, 130, 0.56);}
+@media (hover: none), (pointer: coarse){.answers button:hover{background-image:linear-gradient(rgba(50, 76, 58, 0.98), rgba(12, 24, 20, 0.98));background-color:initial;box-shadow:rgba(214, 177, 92, 0.16) 0px 0px 10px, rgba(65, 95, 78, 0.16) 0px 0px 18px, rgba(0, 0, 0, 0.7) 0px 0px 14px inset;border-color:rgba(214, 177, 92, 0.34);}}
+@media (hover: none), (pointer: coarse){.answers button:active{background-image:linear-gradient(rgba(68, 105, 76, 0.98), rgba(24, 46, 34, 0.98));background-color:initial;box-shadow:rgba(214, 177, 92, 0.38) 0px 0px 18px, rgba(65, 120, 82, 0.35) 0px 0px 34px, rgba(0, 0, 0, 0.68) 0px 0px 14px inset;border-color:rgba(240, 199, 94, 0.68);}}
+@media (hover: none), (pointer: coarse){.answers button:focus, .answers button:focus-visible{outline-color:initial;}}
+#returnMenuBtn.return-menu-btn{background-image:initial;background-color:rgba(0, 0, 0, 0.62);color:rgba(255, 255, 255, 0.88);box-shadow:rgba(56, 189, 248, 0.24) 0px 0px 14px, rgba(0, 0, 0, 0.55) 0px 0px 18px;border-color:rgba(56, 189, 248, 0.48);}
+#soundToggle.sound-toggle{background-image:initial;background-color:rgba(0, 0, 0, 0.62);color:rgba(255, 255, 255, 0.78);box-shadow:rgba(0, 0, 0, 0.55) 0px 0px 14px;border-color:rgba(255, 255, 255, 0.22);}
+.mastery-report-screen{color:rgb(238, 246, 255);}
+.mastery-report-title{color:rgb(247, 217, 130);text-shadow:rgba(247, 217, 130, 0.7) 0px 0px 16px, rgba(56, 189, 248, 0.28) 0px 0px 30px, rgba(0, 0, 0, 0.92) 0px 3px 8px;}
+.mastery-report-subtitle{color:rgb(199, 236, 255);}
+.mastery-stat-card, .mastery-section{background-image:radial-gradient(circle at center top, rgba(56, 189, 248, 0.14), rgba(11, 34, 56, 0.82) 45%, rgba(2, 6, 23, 0.96));background-color:initial;box-shadow:rgba(0, 0, 0, 0.62) 0px 0px 18px, rgba(0, 0, 0, 0.52) 0px 0px 20px inset;border-color:rgba(247, 217, 130, 0.28);}
+.mastery-stat-label{color:rgb(199, 236, 255);}
+.mastery-stat-value{color:rgb(247, 217, 130);text-shadow:rgba(247, 217, 130, 0.4) 0px 0px 10px;}
+.mastery-section h3{color:rgb(247, 217, 130);text-shadow:rgba(247, 217, 130, 0.34) 0px 0px 10px;}
+.mastery-verdict{border-left-color:rgb(247, 217, 130);background-image:initial;background-color:rgba(2, 6, 23, 0.54);color:rgb(224, 242, 254);}
+.mastery-row{border-top-color:rgba(224, 242, 254, 0.12);}
+.mastery-row:first-child{border-top-color:currentcolor;}
+.mastery-row-name{color:rgb(238, 246, 255);}
+.mastery-row-score{color:rgb(247, 217, 130);}
+.mastery-row-meta{color:rgba(199, 236, 255, 0.72);}
+.mastery-bar{background-image:initial;background-color:rgba(2, 6, 23, 0.82);border-color:rgba(56, 189, 248, 0.18);}
+.mastery-bar-fill{background-image:linear-gradient(90deg, rgb(185, 28, 28), rgb(56, 189, 248), rgb(247, 217, 130));background-color:initial;box-shadow:rgba(56, 189, 248, 0.38) 0px 0px 10px;}
+.mastery-empty{color:rgba(224, 242, 254, 0.74);}
+.targeted-repair-indicator{background-image:initial;background-color:rgba(4, 16, 31, 0.94);color:rgb(247, 217, 130);border-color:rgba(247, 217, 130, 0.55);}
+.targeted-repair-indicator span{color:rgba(255, 255, 255, 0.8);}
+.repair-weak-areas-btn{box-shadow:rgba(74, 222, 128, 0.22) 0px 0px 18px;border-color:rgba(74, 222, 128, 0.75);}
+.target-unlimited-symbol{color:rgb(247, 217, 130);}
+@keyframes activePulse{0%{transform:scale(1.06);box-shadow:rgba(214, 177, 92, 0.68) 0px 0px 8px, rgba(0, 0, 0, 0.6) 0px 0px 10px inset;}45%{transform:scale(1.13);box-shadow:rgba(240, 199, 94, 0.92) 0px 0px 18px, rgba(214, 177, 92, 0.48) 0px 0px 32px, rgba(65, 95, 78, 0.24) 0px 0px 42px, rgba(0, 0, 0, 0.64) 0px 0px 12px inset;}70%{transform:scale(1.09);box-shadow:rgba(214, 177, 92, 0.78) 0px 0px 12px, rgba(127, 29, 29, 0.24) 0px 0px 24px, rgba(0, 0, 0, 0.64) 0px 0px 11px inset;}100%{transform:scale(1.11);box-shadow:rgba(240, 199, 94, 0.72) 0px 0px 15px, rgba(214, 177, 92, 0.36) 0px 0px 30px, rgba(0, 0, 0, 0.68) 0px 0px 12px inset;}}
+@keyframes victoryGlow{0%, 100%{transform:scale(1);text-shadow:rgba(240, 199, 94, 0.72) 0px 0px 10px, rgba(0, 0, 0, 0.9) 0px 2px 6px;}50%{transform:scale(1.08);text-shadow:rgba(240, 199, 94, 0.95) 0px 0px 24px, rgba(214, 177, 92, 0.62) 0px 0px 42px, rgba(127, 29, 29, 0.36) 0px 0px 52px, rgba(0, 0, 0, 0.9) 0px 3px 8px;}}
+@keyframes relicPulse{0%, 100%{transform:scale(1.05);filter:drop-shadow(rgba(214, 177, 92, 0.66) 0px 0px 8px) drop-shadow(rgba(65, 95, 78, 0.34) 0px 0px 18px) drop-shadow(rgba(0, 0, 0, 0.55) 0px 0px 24px);}50%{transform:scale(1.1);filter:drop-shadow(rgba(240, 199, 94, 0.92) 0px 0px 16px) drop-shadow(rgba(214, 177, 92, 0.55) 0px 0px 30px) drop-shadow(rgba(127, 29, 29, 0.24) 0px 0px 38px);}}
+@keyframes timerWarningPulse{0%{transform:scale(1);}100%{transform:scale(1.08);text-shadow:rgba(248, 113, 113, 0.9) 0px 0px 14px, rgba(240, 199, 94, 0.42) 0px 0px 24px;}}
+body :focus-visible{outline-color:var(--mq-focus)}
+</style>
 </head>
 
 <!-- =========================================
@@ -3181,7 +3471,7 @@ Edit appearance freely.
 Respect structure strictly.
 
 ========================================= -->
-<body class="blank-builder-template">
+<body class="blank-builder-template mint-ash-gold">
 <!-- Screen reader announcements (accessibility — do not remove) -->
   <div id="srAnnouncements"
      aria-live="polite"
@@ -4300,7 +4590,7 @@ const FACULTY_COMPOSITION_CONFIG = {
   },
   "selectedConceptIds": [],
   "guide": {
-    "displayName": "The Custodian",
+    "displayName": "The Auditor",
     "introLines": [
       "Welcome to The Mint of Ash and Gold. I’ll guide you through the challenges ahead.",
       "If you are ready, follow me."
@@ -4328,8 +4618,8 @@ const FACULTY_COMPOSITION_CONFIG = {
       },
       "guideImage": {
         "src": "custodian.webp",
-        "displayName": "The Custodian",
-        "alt": "The Custodian",
+        "displayName": "The Auditor",
+        "alt": "The Auditor",
         "source": "published",
         "presentationMode": "custom-image"
       },
@@ -9021,16 +9311,46 @@ const embeddedQuestionAssets = {
   "shockpluspolicy.webp": "shockpluspolicy.webp"
 };
 const questionAssetMetadata = {
-  "solowproductionfunction.webp": {},
-  "steadystate.webp": {},
-  "steadystatechanges.webp": {},
-  "adsras.webp": {},
-  "adone.webp": {},
-  "adtwo.webp": {},
-  "demandshock.webp": {},
-  "adlras.webp": {},
-  "supplyshock.webp": {},
-  "shockpluspolicy.webp": {}
+  "solowproductionfunction.webp": {
+    "imageAlt": "Two rising, flattening Solow curves, with points c and d at the same capital coordinate e.",
+    "graphDescription": "The vertical axis is labeled y/l and the horizontal axis k/l. Two curves begin at the origin, rise, and become flatter. The upper dark curve is labeled y, f(k); the lower red curve is labeled s, sf(k). At horizontal coordinate e, point c lies on the upper curve at vertical level a, and point d lies on the lower curve at level b. Dashed horizontal guides run from a to c and from b to d; a vertical dashed guide connects both points to e. No numerical scales are printed."
+  },
+  "steadystate.webp": {
+    "imageAlt": "Solow investment and depreciation curves with points a, b, c, and d and capital labels k1 through k3.",
+    "graphDescription": "The vertical axis is Investment and Depreciation; the horizontal axis is Capital per Worker. A straight rising blue line d(k) and a rising, flattening dark curve sf(k) start at the origin. They intersect at point c, at k2 and dk3. At k1, point a is on sf(k) at dk2, while point b is on d(k) at the lower level dk1. Point d is a separate marked point at (k2, dk1), below both curves there. At k3, an unlabeled red point on d(k) is at dk4, above sf(k). Dashed guides connect marked levels and coordinates. From left to right the capital labels are k1, k2, k3; from bottom to top the vertical labels are dk1, dk2, dk3, dk4. No numerical values are supplied."
+  },
+  "steadystatechanges.webp": {
+    "imageAlt": "Three Solow saving curves meeting depreciation at A, B, and C.",
+    "graphDescription": "The vertical axis is Investment and Depreciation; the horizontal axis is Capital per Worker. Blue d(k) is a straight rising line from the origin. Three rising, flattening curves also start at the origin: red sf(k)1 is lowest, dark sf(k)2 is in the middle, and green sf(k)3 is highest. They intersect d(k) at A = (k1, dk1), B = (k2, dk2), and C = (k3, dk3), respectively. Dashed guides connect each intersection to both axes. Capital increases from k1 to k3 and vertical levels increase from dk1 to dk3. The labels are symbolic; there are no directional arrows or numerical values."
+  },
+  "adsras.webp": {
+    "imageAlt": "Three downward AD lines intersecting a horizontal SRAS line at price P1.",
+    "graphDescription": "The vertical axis is P and the horizontal axis Y. SRAS is horizontal at P1. Three parallel downward-sloping lines cross it: green AD2 at Y2, black AD1 at Y1, and red AD3 at Y3. The horizontal-axis order is Y2, Y1, Y3 from left to right. Black dots mark the three intersections, with dashed vertical guides to the corresponding Y labels. There are no numerical values or arrows."
+  },
+  "adone.webp": {
+    "imageAlt": "A single downward aggregate-demand curve with points A, B, and C.",
+    "graphDescription": "The vertical axis is P and the horizontal axis Y. The downward-sloping blue line AD contains A at (Y1, P1), B at (Y2, P2), and C at (Y3, P3). Dashed guides connect every point to both axes. Y1, Y2, Y3 run left to right, while P1, P2, P3 run top to bottom. No numerical prices or output values are printed."
+  },
+  "adtwo.webp": {
+    "imageAlt": "Three downward AD curves with six marked points at P1 and P2.",
+    "graphDescription": "The vertical axis is P and the horizontal axis Y. Green AD3 is the leftmost downward-sloping line, black AD1 is in the middle, and red AD2 is rightmost. The upper dashed price guide is P1 and the lower is P2. At P1, A lies on AD3 at Y1, B on AD1 at Y2, and C on AD2 at Y3. At P2, D lies on AD3 at Y2, E on AD1 at Y3, and F on AD2 at Y4. Vertical dashed guides mark Y1 through Y4 in increasing order. No numerical scales or direction arrows are shown."
+  },
+  "demandshock.webp": {
+    "imageAlt": "Three AD curves crossing horizontal SRAS and vertical LRAS.",
+    "graphDescription": "The vertical axis is P and the horizontal axis Y. LRAS is vertical at Y1, and SRAS is horizontal at P1. Black AD1, red AD2, and green AD3 slope downward; AD2 is right of AD1 and AD3 is left of it. AD1 crosses both supply lines at (Y1, P1). AD2 has marked crossings at (Y2, P1) on SRAS and (Y1, P2) on LRAS. AD3 has marked crossings at (Y3, P1) on SRAS and (Y1, P3) on LRAS. Y3 is left of Y1, which is left of Y2; P2 is above P1, which is above P3. Dashed guides connect these symbolic coordinates. The marked dots have no letter labels."
+  },
+  "adlras.webp": {
+    "imageAlt": "Vertical LRAS intersecting three aggregate-demand lines at A, B, and C.",
+    "graphDescription": "The vertical axis is P and the horizontal axis Y. LRAS is a vertical line at Y1. Three parallel downward-sloping curves cross it: red AD3 at A and the highest labeled level P3; blue AD1 at B and middle level P1; green AD2 at C and lowest level P2. Dashed horizontal guides connect the intersections to the price labels. All three points have the same horizontal coordinate Y1. No numerical values or arrows are given."
+  },
+  "supplyshock.webp": {
+    "imageAlt": "Three horizontal SRAS lines, vertical LRAS, and one downward AD line with points A through E.",
+    "graphDescription": "The vertical axis is P and the horizontal axis Y. LRAS is vertical at Y1. SRAS2 is the upper red horizontal line at P2, SRAS1 the middle black line at P1, and SRAS3 the lower green line at P3. The downward black AD line intersects them at C = (Y2, P2), A = (Y1, P1), and E = (Y3, P3). B marks (Y1, P2) on LRAS and SRAS2; D marks (Y1, P3) on LRAS and SRAS3. Dashed vertical guides mark Y2 to the left of Y1 and Y3 to the right. No numerical values or directional arrows are shown."
+  },
+  "shockpluspolicy.webp": {
+    "imageAlt": "Two AD lines and two horizontal SRAS lines with vertical LRAS and points A through D.",
+    "graphDescription": "The vertical axis is P and the horizontal axis Y. LRAS is vertical at Y1. Black SRAS1 is horizontal at P1; red SRAS2 is horizontal at the higher level P2. Black AD1 slopes downward; red AD2 is parallel and to its right. A = (Y1, P1) is on AD1 and SRAS1. B = (Y3, P1) is on AD2 and SRAS1. C = (Y2, P2) is on AD1 and SRAS2. D = (Y1, P2) is on AD2, SRAS2, and LRAS. Dashed vertical guides mark Y2 left of Y1 and Y3 right of Y1. No numerical values, arrows, or timeline are shown."
+  }
 };
 const trialGraphQuestionIds = [];
 const fadingFortuneQuestionIds = [
@@ -16488,5 +16808,75 @@ realmSoundButton.className='game-menu-option';
 document.getElementById('gameMenuOptions').appendChild(realmSoundButton);
 </script>
 <!-- MQ ACCESSIBILITY script END -->
+<script>
+// Keep utility order identical to Cost Directive without adding controls.
+(() => {
+  const menu=document.getElementById('gameMenuOptions');
+  const sound=document.getElementById('soundToggle');
+  const motion=document.getElementById('mqMotionControl')?.closest('.mq-motion-setting');
+  if(menu && sound && motion)menu.insertBefore(sound,motion);
+})();
+
+// Assessment privacy is a presentation boundary. Keep scoring, canonical Daily
+// state, telemetry rows and the 117-column export contract unchanged.
+(() => {
+  const examActive=()=>gameMode==='exam' && !runEnding;
+  const challenge=getBossChallengeLine;
+  getBossChallengeLine=function(...args){
+    return gameMode==='exam'
+      ? 'Respond to all three checkpoint questions. Results are shown together after the checkpoint.'
+      : challenge.apply(this,args);
+  };
+  const track=updateMazeTrack;
+  updateMazeTrack=function(...args){
+    document.body.dataset.macroMode=gameMode;
+    return track.apply(this,args);
+  };
+  const menuDaily=updateGameMenuDailyAction;
+  updateGameMenuDailyAction=function(...args){
+    const result=menuDaily.apply(this,args);
+    if(examActive())document.getElementById('gameMenuDaily').textContent='Daily Task';
+    return result;
+  };
+  const dailyUI=updateDailyUI;
+  updateDailyUI=function(...args){
+    if(!examActive())return dailyUI.apply(this,args);
+    document.getElementById('dailyTaskDock').hidden=true;
+    updateGameMenuDailyAction();
+  };
+  const toast=showDailyToast;
+  showDailyToast=function(...args){if(!examActive())return toast.apply(this,args);};
+  const dailyDetails=openDailyFromGameMenu;
+  openDailyFromGameMenu=function(...args){
+    if(!examActive())return dailyDetails.apply(this,args);
+    closeGameModal();
+    showGameModal({title:'Daily Task',text:'Daily Task progress is saved. Progress and completion details are available after you finish Exam Drill.',confirmText:'Return to Exam'});
+  };
+  const start=startGame;
+  startGame=function(...args){
+    const result=start.apply(this,args);
+    if(examActive()){
+      document.getElementById('dailyToastRegion').replaceChildren();
+      updateDailyUI();
+    }
+    return result;
+  };
+  const download=downloadTelemetryCsv;
+  downloadTelemetryCsv=function(activeRunID=runID){
+    if(examActive() && (!activeRunID || activeRunID===runID)){
+      showGameModal({title:'Game Data',text:'Game data are available after you finish Exam Drill.',confirmText:'Return to Exam'});
+      return;
+    }
+    return download.apply(this,arguments);
+  };
+})();
+
+// Match Managerial's keyboard skip using the existing once-only proceed actions.
+document.addEventListener('keydown',event=>{
+  if(event.key!=='Escape' || event.defaultPrevented)return;
+  if(activeGuideIntroduction){event.preventDefault();proceedGuideIntroduction();}
+  else if(activeBossReveal){event.preventDefault();proceedBossReveal();}
+});
+</script>
 </body>
 </html>

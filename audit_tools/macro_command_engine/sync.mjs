@@ -4,6 +4,9 @@ import assert from 'node:assert/strict';
 import {createRequire} from 'node:module';
 import {games, templatePath, declaration, fn, value} from './source.mjs';
 import {activeProfile} from './active-profile.mjs';
+import {alignMacroPresentation} from './alignment.mjs';
+import {buildGraphMetadata} from './graph-metadata.mjs';
+import {applyApprovedQuestionCorrections} from './question-corrections.mjs';
 const require=createRequire(import.meta.url);
 const core=require('../../build/faculty-build-composer/composer-core.js');
 const profiles=JSON.parse(fs.readFileSync('audit_tools/macro_command_engine/profiles.json','utf8'));
@@ -13,7 +16,11 @@ const js=v=>JSON.stringify(v,null,2).replace(/<\/script/gi,'<\\/script');
 const results=[];
 for(const game of games){
   const p=activeProfile(game,profiles),base=`play/macro-command-system/${game}`;
-  const bankSource=p.inlineBank?[p.inlineBank,...Object.values(p.inlineAuxiliary)].join('\n'):fs.readFileSync(`${base}/${p.bank}`,'utf8');
+  let bankSource=p.inlineBank?[p.inlineBank,...Object.values(p.inlineAuxiliary)].join('\n'):fs.readFileSync(`${base}/${p.bank}`,'utf8');
+  const correctedBank=applyApprovedQuestionCorrections(game,bankSource);
+  if(check)assert.equal(bankSource,correctedBank,`${game}: approved question corrections need synchronization`);
+  else if(correctedBank!==bankSource)fs.writeFileSync(`${base}/${p.bank}`,correctedBank);
+  bankSource=correctedBank;
   const context=vm.createContext({});
   vm.runInContext(bankSource,context);
   const banks=vm.runInContext('questionBanks',context);
@@ -38,7 +45,7 @@ for(const game of games){
   // Published question scripts remain the sole question source. Supplemental maps
   // in those scripts execute unchanged, including their direct-skill backfills.
   const allQuestions=[...Object.values(banks).flat(),...['microSkillRepairPools','microSkillBridgePools','skillRepairSeedPools'].flatMap(k=>vm.runInContext(`typeof ${k}==='undefined'?[]:Object.values(${k}).flat()`,context))];
-  const metadata=Object.fromEntries(allQuestions.filter(q=>q.image).map(q=>[q.image,{imageAlt:q.imageAlt,graphDescription:q.graphDescription||q.imageAlt}]));
+  const metadata=buildGraphMetadata(game,allQuestions,base);
   const imagePaths=[...new Set(allQuestions.map(q=>q.image).filter(Boolean))];
   const missingImages=imagePaths.filter(image=>!fs.existsSync(`${base}/${image}`));
   assert.deepEqual(missingImages,[],`${game}: missing question images`);
@@ -174,6 +181,8 @@ const STORAGE_PREFIX =`);
       html=html.replace(name==='easyConceptPools'?current.replace(/^const /,''):current,original);
     }
   }
+  // Profile/resource fragments may use CRLF on Windows; normalize the complete output.
+  html=alignMacroPresentation(html,game).replace(/\r\n/g,'\n');
   for(const m of html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g))new vm.Script(m[1]);
   if(check)assert.equal(fs.readFileSync(`${base}/index.html`,'utf8').replace(/\r\n/g,'\n'),html,`${game} engine drift`);
   else if(fs.readFileSync(`${base}/index.html`,'utf8')!==html){

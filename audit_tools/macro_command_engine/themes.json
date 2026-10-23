@@ -1,0 +1,994 @@
+{
+  "reference": "a0f1dea1889ce9ccfa4c27e57fd3c82d225c85c5",
+  "description": "Independent historical paint recipes; no layout, behavior, artwork or universal palette replacement.",
+  "games": {
+    "national-engine": {
+      "name": "Green charcoal, bronze and aged gold",
+      "source": "play/macro-command-system/national-engine/index.html",
+      "variables": {
+        "text": "rgb(243, 234, 210)",
+        "muted": "rgb(214, 177, 92)",
+        "heading": "#f4d58d",
+        "focus": "#f0c75e",
+        "dark": "#040505",
+        "surface": "#0c1212",
+        "accent": "214,177,92",
+        "secondary": "138,58,36",
+        "panel-paint": "radial-gradient(circle, rgba(42, 74, 64, 0.34) 0%, rgba(18, 24, 24, 0.92) 52%, rgba(4, 5, 5, 0.98) 100%)",
+        "panel-shadow": "rgba(214, 177, 92, 0.24) 0px 0px 24px, rgba(88, 28, 24, 0.28) 0px 0px 70px, rgba(0, 0, 0, 0.72) 0px 0px 38px inset",
+        "panel-border": "rgba(214, 177, 92, 0.34)",
+        "button-paint": "linear-gradient(rgb(91, 58, 31), rgb(27, 23, 17))",
+        "button-shadow": "rgba(214, 177, 92, 0.24) 0px 0px 12px, rgba(88, 28, 24, 0.18) 0px 0px 24px, rgba(0, 0, 0, 0.62) 0px 0px 10px inset",
+        "button-border": "rgba(214, 177, 92, 0.42)",
+        "hover-paint": "linear-gradient(rgb(122, 74, 37), rgb(42, 27, 18))",
+        "hover-shadow": "rgba(240, 199, 94, 0.48) 0px 0px 18px, rgba(127, 29, 29, 0.28) 0px 0px 34px, rgba(0, 0, 0, 0.68) 0px 0px 12px inset",
+        "hover-border": "rgba(240, 199, 94, 0.7)",
+        "tile-paint": "linear-gradient(rgba(22, 30, 28, 0.72), rgba(7, 9, 9, 0.86))",
+        "tile-border": "rgba(214, 177, 92, 0.18)",
+        "active-paint": "radial-gradient(circle, rgba(214, 177, 92, 0.48), rgba(65, 95, 78, 0.36), rgba(12, 18, 18, 0.92))",
+        "active-shadow": "rgba(240, 199, 94, 0.78) 0px 0px 12px, rgba(214, 177, 92, 0.48) 0px 0px 24px, rgba(0, 0, 0, 0.62) 0px 0px 12px inset",
+        "saved-paint": "linear-gradient(rgba(65, 95, 78, 0.62), rgba(20, 31, 28, 0.88))",
+        "progress-paint": "linear-gradient(90deg, rgb(47, 79, 67), rgb(214, 177, 92), rgb(138, 58, 36))",
+        "modal-paint": "radial-gradient(circle, rgba(65, 95, 78, 0.3), rgba(12, 18, 18, 0.82) 58%, rgba(4, 5, 5, 0.92))",
+        "modal-shadow": "rgba(0, 0, 0, 0.82) 0px 0px 24px, rgba(214, 177, 92, 0.18) 0px 0px 28px, rgba(0, 0, 0, 0.72) 0px 0px 26px inset",
+        "boss-1": "#a78bfa",
+        "boss-text-1": "#a78bfa",
+        "boss-2": "#7c3aed",
+        "boss-text-2": "#c4b5fd",
+        "boss-3": "#991b1b",
+        "boss-text-3": "#fca5a5"
+      },
+      "historicalPaint": [
+        {"selector":"body","declarations":{"color":"rgb(243, 234, 210)","background-color":"initial"}},
+        {"selector":".title","declarations":{"color":"rgb(244, 213, 141)","text-shadow":"rgba(214, 177, 92, 0.85) 0px 0px 14px, rgba(180, 83, 9, 0.55) 0px 0px 34px, rgba(0, 0, 0, 0.9) 0px 3px 8px"}},
+        {"selector":".subtitle","declarations":{"color":"rgb(185, 135, 70)","text-shadow":"rgba(185, 135, 70, 0.45) 0px 0px 10px, rgba(0, 0, 0, 0.85) 0px 2px 6px"}},
+        {"selector":".tagline","declarations":{"color":"rgb(216, 199, 160)","text-shadow":"rgba(0, 0, 0, 0.85) 0px 2px 6px"}},
+        {"selector":".name-input","declarations":{"background-image":"initial","background-color":"rgba(12, 18, 18, 0.88)","color":"rgb(243, 234, 210)","outline-color":"initial","box-shadow":"rgba(214, 177, 92, 0.28) 0px 0px 14px, rgba(0, 0, 0, 0.65) 0px 0px 12px inset","border-color":"rgba(214, 177, 92, 0.45)"}},
+        {"selector":".name-input:focus","declarations":{"box-shadow":"rgba(240, 199, 94, 0.45) 0px 0px 18px, rgba(100, 36, 24, 0.35) 0px 0px 32px, rgba(0, 0, 0, 0.75) 0px 0px 12px inset","border-color":"rgba(240, 199, 94, 0.75)"}},
+        {"selector":"#emailInput::placeholder, #username::placeholder","declarations":{"color":"rgba(216, 199, 160, 0.52)"}},
+        {"selector":"#gameBox","declarations":{"background-image":"radial-gradient(circle, rgba(42, 74, 64, 0.34) 0%, rgba(18, 24, 24, 0.92) 52%, rgba(4, 5, 5, 0.98) 100%)","background-color":"initial","box-shadow":"rgba(214, 177, 92, 0.24) 0px 0px 24px, rgba(88, 28, 24, 0.28) 0px 0px 70px, rgba(0, 0, 0, 0.72) 0px 0px 38px inset","border-color":"rgba(214, 177, 92, 0.34)"}},
+        {"selector":"#gameBox.boss-mode","declarations":{"box-shadow":"rgba(214, 177, 92, 0.58) 0px 0px 32px, rgba(100, 36, 24, 0.48) 0px 0px 64px, rgba(0, 0, 0, 0.78) 0px 0px 42px inset","border-color":"rgb(214, 177, 92)"}},
+        {"selector":".boss10 .boss-icon","declarations":{"filter":"drop-shadow(rgba(214, 177, 92, 0.85) 0px 0px 6px) drop-shadow(rgba(65, 95, 78, 0.55) 0px 0px 12px)"}},
+        {"selector":".boss20 .boss-icon","declarations":{"filter":"drop-shadow(rgba(196, 106, 58, 0.9) 0px 0px 8px) drop-shadow(rgba(99, 35, 24, 0.65) 0px 0px 16px)"}},
+        {"selector":".boss30 .boss-icon","declarations":{"filter":"drop-shadow(rgb(240, 199, 94) 0px 0px 10px) drop-shadow(rgba(127, 29, 29, 0.85) 0px 0px 24px)"}},
+        {"selector":".hit","declarations":{"box-shadow":"rgba(127, 29, 29, 0.95) 0px 0px 60px, rgba(240, 199, 94, 0.35) 0px 0px 28px, rgba(88, 28, 24, 0.85) 0px 0px 42px inset"}},
+        {"selector":"#autosave","declarations":{"color":"rgb(216, 199, 160)","text-shadow":"rgba(214, 177, 92, 0.35) 0px 0px 6px"}},
+        {"selector":"#questionImageBox img","declarations":{"box-shadow":"rgba(214, 177, 92, 0.16) 0px 0px 14px, rgba(0, 0, 0, 0.65) 0px 0px 28px","border-color":"rgba(214, 177, 92, 0.22)"}},
+        {"selector":"h2","declarations":{"text-shadow":"rgba(244, 213, 141, 0.24) 0px 0px 10px, rgba(214, 177, 92, 0.22) 0px 0px 20px, rgba(0, 0, 0, 0.85) 0px 2px 6px"}},
+        {"selector":"#question","declarations":{"color":"rgb(243, 234, 210)","text-shadow":"rgba(0, 0, 0, 0.85) 0px 2px 5px, rgba(214, 177, 92, 0.12) 0px 0px 8px"}},
+        {"selector":".boss-title","declarations":{"color":"rgb(244, 213, 141)","text-shadow":"rgba(240, 199, 94, 0.62) 0px 0px 10px, rgba(127, 29, 29, 0.42) 0px 0px 26px, rgba(0, 0, 0, 0.9) 0px 3px 8px"}},
+        {"selector":".area-title","declarations":{"color":"rgb(185, 168, 121)","text-shadow":"rgba(214, 177, 92, 0.18) 0px 0px 8px, rgba(0, 0, 0, 0.85) 0px 2px 5px"}},
+        {"selector":".boss-q","declarations":{"border-left-color":"rgb(138, 58, 36)","color":"rgb(243, 234, 210)","box-shadow":"rgba(127, 29, 29, 0.34) -4px 0px 12px","text-shadow":"rgba(0, 0, 0, 0.8) 0px 2px 5px"}},
+        {"selector":".hint-box","declarations":{"color":"rgb(214, 177, 92)","text-shadow":"rgba(214, 177, 92, 0.25) 0px 0px 6px"}},
+        {"selector":".fade-out-text","declarations":{"color":"rgb(240, 199, 94)","text-shadow":"rgba(240, 199, 94, 0.55) 0px 0px 8px, rgba(0, 0, 0, 0.85) 0px 2px 5px"}},
+        {"selector":"#message","declarations":{"color":"rgb(216, 199, 160)","text-shadow":"rgba(214, 177, 92, 0.18) 0px 0px 7px, rgba(0, 0, 0, 0.85) 0px 2px 5px"}},
+        {"selector":".national-engine #message","declarations":{"color":"rgb(214, 177, 92)","text-shadow":"rgba(214, 177, 92, 0.42) 0px 0px 8px, rgba(100, 36, 24, 0.25) 0px 0px 18px, rgba(0, 0, 0, 0.85) 0px 2px 6px"}},
+        {"selector":"button","declarations":{"background-image":"linear-gradient(rgb(91, 58, 31), rgb(27, 23, 17))","background-color":"initial","color":"rgb(243, 234, 210)","box-shadow":"rgba(214, 177, 92, 0.24) 0px 0px 12px, rgba(88, 28, 24, 0.18) 0px 0px 24px, rgba(0, 0, 0, 0.62) 0px 0px 10px inset","border-color":"rgba(214, 177, 92, 0.42)"}},
+        {"selector":"button:hover","declarations":{"background-image":"linear-gradient(rgb(122, 74, 37), rgb(42, 27, 18))","background-color":"initial","box-shadow":"rgba(240, 199, 94, 0.48) 0px 0px 18px, rgba(127, 29, 29, 0.28) 0px 0px 34px, rgba(0, 0, 0, 0.68) 0px 0px 12px inset","border-color":"rgba(240, 199, 94, 0.7)"}},
+        {"selector":".answers button","declarations":{"background-image":"linear-gradient(rgba(55, 70, 58, 0.96), rgba(12, 18, 18, 0.98))","background-color":"initial","color":"rgb(243, 234, 210)","box-shadow":"rgba(214, 177, 92, 0.16) 0px 0px 10px, rgba(0, 0, 0, 0.7) 0px 0px 14px inset","border-color":"rgba(214, 177, 92, 0.34)"}},
+        {"selector":".answers button:hover","declarations":{"background-image":"linear-gradient(rgba(73, 92, 72, 0.98), rgba(31, 40, 34, 0.98))","background-color":"initial","box-shadow":"rgba(214, 177, 92, 0.38) 0px 0px 18px, rgba(65, 95, 78, 0.22) 0px 0px 32px, rgba(0, 0, 0, 0.68) 0px 0px 14px inset","border-color":"rgba(240, 199, 94, 0.68)"}},
+        {"selector":".fullscreenBtn","declarations":{"color":"rgb(243, 234, 210)","background-image":"linear-gradient(rgb(74, 51, 32), rgb(17, 16, 13))","background-color":"initial","box-shadow":"rgba(214, 177, 92, 0.22) 0px 0px 10px, rgba(0, 0, 0, 0.72) 0px 0px 7px inset","border-color":"rgba(214, 177, 92, 0.34)"}},
+        {"selector":".fullscreenBtn:hover","declarations":{"background-image":"linear-gradient(rgb(106, 71, 38), rgb(28, 21, 16))","background-color":"initial","box-shadow":"rgba(214, 177, 92, 0.42) 0px 0px 16px, rgba(0, 0, 0, 0.72) 0px 0px 8px inset","border-color":"rgba(240, 199, 94, 0.62)"}},
+        {"selector":".fullscreenBtn:active","declarations":{"box-shadow":"rgba(214, 177, 92, 0.28) 0px 0px 8px, rgba(0, 0, 0, 0.85) 0px 0px 10px inset"}},
+        {"selector":".continue-btn","declarations":{"background-image":"linear-gradient(rgb(138, 79, 37), rgb(58, 31, 20))","background-color":"initial","color":"rgb(243, 234, 210)","box-shadow":"rgba(214, 177, 92, 0.38) 0px 0px 16px, rgba(127, 29, 29, 0.28) 0px 0px 34px, rgba(0, 0, 0, 0.65) 0px 0px 12px inset","border-color":"rgba(240, 199, 94, 0.52)"}},
+        {"selector":".continue-btn:hover","declarations":{"background-image":"linear-gradient(rgb(167, 99, 44), rgb(91, 42, 25))","background-color":"initial","box-shadow":"rgba(240, 199, 94, 0.58) 0px 0px 24px, rgba(127, 29, 29, 0.36) 0px 0px 42px, rgba(0, 0, 0, 0.65) 0px 0px 12px inset"}},
+        {"selector":"#continueBtn:active","declarations":{"box-shadow":"rgba(214, 177, 92, 0.28) 0px 0px 10px, rgba(0, 0, 0, 0.75) 0px 0px 10px inset"}},
+        {"selector":"#progressBar","declarations":{"background-image":"linear-gradient(rgba(12, 18, 18, 0.95), rgba(4, 5, 5, 0.98))","background-color":"initial","box-shadow":"rgba(0, 0, 0, 0.82) 0px 0px 12px inset, rgba(214, 177, 92, 0.12) 0px 0px 10px","border-color":"rgba(214, 177, 92, 0.22)"}},
+        {"selector":"#progressFill","declarations":{"background-image":"linear-gradient(90deg, rgb(47, 79, 67), rgb(214, 177, 92), rgb(138, 58, 36))","background-color":"initial","box-shadow":"rgba(214, 177, 92, 0.45) 0px 0px 12px, rgba(127, 29, 29, 0.25) 0px 0px 22px"}},
+        {"selector":".maze-box","declarations":{"background-image":"linear-gradient(rgba(22, 30, 28, 0.72), rgba(7, 9, 9, 0.86))","background-color":"initial","box-shadow":"rgba(0, 0, 0, 0.72) 0px 0px 10px inset, rgba(214, 177, 92, 0.08) 0px 0px 5px","border-color":"rgba(214, 177, 92, 0.18)"}},
+        {"selector":".maze-box.active","declarations":{"background-image":"radial-gradient(circle, rgba(214, 177, 92, 0.48), rgba(65, 95, 78, 0.36), rgba(12, 18, 18, 0.92))","background-color":"initial","box-shadow":"rgba(240, 199, 94, 0.78) 0px 0px 12px, rgba(214, 177, 92, 0.48) 0px 0px 24px, rgba(0, 0, 0, 0.62) 0px 0px 12px inset","border-color":"rgb(240, 199, 94)"}},
+        {"selector":".maze-box.completed","declarations":{"background-image":"linear-gradient(rgba(65, 95, 78, 0.62), rgba(20, 31, 28, 0.88))","background-color":"initial","box-shadow":"rgba(214, 177, 92, 0.28) 0px 0px 8px, rgba(0, 0, 0, 0.7) 0px 0px 10px inset","border-color":"rgba(214, 177, 92, 0.38)"}},
+        {"selector":".maze-box:nth-child(10)","declarations":{"text-shadow":"rgb(214, 177, 92) 0px 0px 8px, rgba(65, 95, 78, 0.8) 0px 0px 18px"}},
+        {"selector":".maze-box:nth-child(20)","declarations":{"text-shadow":"rgb(196, 106, 58) 0px 0px 8px, rgba(127, 29, 29, 0.75) 0px 0px 18px"}},
+        {"selector":".maze-box:nth-child(30)","declarations":{"text-shadow":"rgb(240, 199, 94) 0px 0px 10px, rgba(127, 29, 29, 0.95) 0px 0px 24px, rgba(214, 177, 92, 0.42) 0px 0px 34px"}},
+        {"selector":".streak","declarations":{"color":"rgba(243, 234, 210, 0.94)","text-shadow":"rgba(214, 177, 92, 0.32) 0px 0px 7px, rgba(0, 0, 0, 0.85) 0px 2px 5px"}},
+        {"selector":".streak-icon","declarations":{"filter":"drop-shadow(rgba(214, 177, 92, 0.75) 0px 0px 8px) drop-shadow(rgba(100, 36, 24, 0.52) 0px 0px 15px)","background-image":"radial-gradient(circle, rgba(240, 199, 94, 0.46) 0%, rgba(65, 95, 78, 0.34) 45%, transparent 72%)","background-color":"initial"}},
+        {"selector":"#artifactDrop","declarations":{"background-image":"radial-gradient(circle, rgba(65, 95, 78, 0.34), rgba(12, 18, 18, 0.96) 62%, rgba(4, 5, 5, 0.98))","background-color":"initial","box-shadow":"rgba(214, 177, 92, 0.28) 0px 0px 22px, rgba(127, 29, 29, 0.22) 0px 0px 42px, rgba(0, 0, 0, 0.76) 0px 0px 28px inset","border-color":"rgba(214, 177, 92, 0.34)"}},
+        {"selector":"#artifactDrop img","declarations":{"filter":"drop-shadow(rgba(240, 199, 94, 0.82) 0px 0px 14px) drop-shadow(rgba(127, 29, 29, 0.42) 0px 0px 26px)"}},
+        {"selector":"#artifactVault","declarations":{"background-image":"radial-gradient(circle at center top, rgba(65, 95, 78, 0.42), rgba(12, 18, 18, 0.96) 58%, rgba(4, 5, 5, 0.98))","background-color":"initial","box-shadow":"rgba(214, 177, 92, 0.22) 0px 0px 20px, rgba(88, 28, 24, 0.2) 0px 0px 38px, rgba(0, 0, 0, 0.76) 0px 0px 30px inset","border-color":"rgba(214, 177, 92, 0.3)"}},
+        {"selector":"#artifactVault h3","declarations":{"color":"rgb(244, 213, 141)","text-shadow":"rgba(214, 177, 92, 0.52) 0px 0px 10px, rgba(0, 0, 0, 0.85) 0px 2px 6px"}},
+        {"selector":".artifactSlot span","declarations":{"color":"rgba(216, 199, 160, 0.38)"}},
+        {"selector":".artifactSlot.unlocked img","declarations":{"filter":"drop-shadow(rgba(240, 199, 94, 0.86) 0px 0px 14px) drop-shadow(rgba(214, 177, 92, 0.46) 0px 0px 26px) drop-shadow(rgba(127, 29, 29, 0.24) 0px 0px 34px)"}},
+        {"selector":".artifactSlot.unlocked span","declarations":{"color":"rgb(243, 234, 210)","text-shadow":"rgba(214, 177, 92, 0.38) 0px 0px 7px, rgba(0, 0, 0, 0.85) 0px 2px 5px"}},
+        {"selector":".registrarGlow","declarations":{"filter":"drop-shadow(rgba(214, 177, 92, 0.82) 0px 0px 12px) drop-shadow(rgba(65, 95, 78, 0.5) 0px 0px 24px) drop-shadow(rgba(0, 0, 0, 0.75) 0px 0px 34px)"}},
+        {"selector":".wardenGlow","declarations":{"filter":"drop-shadow(rgba(196, 106, 58, 0.88) 0px 0px 14px) drop-shadow(rgba(127, 29, 29, 0.58) 0px 0px 28px) drop-shadow(rgba(0, 0, 0, 0.78) 0px 0px 38px)"}},
+        {"selector":".comptrollerGlow","declarations":{"filter":"drop-shadow(rgba(240, 199, 94, 0.96) 0px 0px 16px) drop-shadow(rgba(127, 29, 29, 0.74) 0px 0px 34px) drop-shadow(rgba(214, 177, 92, 0.34) 0px 0px 46px) drop-shadow(rgba(0, 0, 0, 0.82) 0px 0px 52px)"}},
+        {"selector":".torch","declarations":{"filter":"drop-shadow(rgba(240, 199, 94, 0.68) 0px 0px 12px) drop-shadow(rgba(127, 29, 29, 0.26) 0px 0px 24px)"}},
+        {"selector":"#hallwayTransition","declarations":{"background-color":"initial","color":"rgb(243, 234, 210)"}},
+        {"selector":"#hallwayText","declarations":{"background-image":"radial-gradient(circle, rgba(65, 95, 78, 0.3), rgba(12, 18, 18, 0.82) 58%, rgba(4, 5, 5, 0.92))","background-color":"initial","box-shadow":"rgba(0, 0, 0, 0.82) 0px 0px 24px, rgba(214, 177, 92, 0.18) 0px 0px 28px, rgba(0, 0, 0, 0.72) 0px 0px 26px inset","color":"rgb(243, 234, 210)","text-shadow":"rgba(214, 177, 92, 0.26) 0px 0px 8px, rgba(0, 0, 0, 0.9) 0px 2px 6px","border-color":"rgba(214, 177, 92, 0.28)"}},
+        {"selector":".top-title","declarations":{"color":"rgb(244, 213, 141)","text-shadow":"rgba(214, 177, 92, 0.45) 0px 0px 10px, rgba(0, 0, 0, 0.9) 0px 2px 6px"}},
+        {"selector":"#gameShell","declarations":{"background-image":"linear-gradient(rgba(18, 24, 24, 0.96), rgba(4, 5, 5, 0.98))","background-color":"initial","box-shadow":"rgba(0, 0, 0, 0.92) 0px 0px 30px, rgba(214, 177, 92, 0.16) 0px 0px 58px, rgba(88, 28, 24, 0.16) 0px 0px 76px, rgba(0, 0, 0, 0.74) 0px 0px 42px inset","border-color":"rgba(214, 177, 92, 0.28)"}},
+        {"selector":"#wizardBox","declarations":{"background-image":"linear-gradient(rgba(42, 55, 49, 0.94), rgba(8, 10, 10, 0.98))","background-color":"initial","box-shadow":"rgba(0, 0, 0, 0.78) 0px 0px 26px inset, rgba(214, 177, 92, 0.12) 0px 0px 18px","border-color":"rgba(214, 177, 92, 0.26)"}},
+        {"selector":"#wizardName","declarations":{"color":"rgb(214, 177, 92)","border-bottom-color":"rgba(214, 177, 92, 0.34)","text-shadow":"rgba(214, 177, 92, 0.48) 0px 0px 6px, rgba(0, 0, 0, 0.85) 0px 2px 5px"}},
+        {"selector":"#wizardImage","declarations":{"filter":"drop-shadow(rgba(214, 177, 92, 0.62) 0px 0px 12px) drop-shadow(rgba(65, 95, 78, 0.28) 0px 0px 24px) drop-shadow(rgba(0, 0, 0, 0.82) 0px 0px 30px)"}},
+        {"selector":".boss-mode #gameBox","declarations":{"box-shadow":"rgba(240, 199, 94, 0.42) 0px 0px 34px, rgba(127, 29, 29, 0.42) 0px 0px 72px, rgba(0, 0, 0, 0.82) 0px 0px 46px inset","border-color":"rgba(240, 199, 94, 0.72)"}},
+        {"selector":".boss-mode #gameShell","declarations":{"box-shadow":"rgba(0, 0, 0, 0.94) 0px 0px 36px, rgba(214, 177, 92, 0.24) 0px 0px 64px, rgba(127, 29, 29, 0.26) 0px 0px 90px, rgba(0, 0, 0, 0.78) 0px 0px 48px inset","border-color":"rgba(240, 199, 94, 0.42)"}},
+        {"selector":".targeted-repair-indicator","declarations":{"background-image":"initial","background-color":"rgba(4, 16, 31, 0.94)","color":"rgb(247, 217, 130)","border-color":"rgba(247, 217, 130, 0.55)"}},
+        {"selector":".targeted-repair-indicator span","declarations":{"color":"rgba(255, 255, 255, 0.8)"}},
+        {"selector":".repair-weak-areas-btn","declarations":{"box-shadow":"rgba(74, 222, 128, 0.22) 0px 0px 18px","border-color":"rgba(74, 222, 128, 0.75)"}},
+        {"selector":".target-unlimited-symbol","declarations":{"color":"rgb(247, 217, 130)"}},
+        {"selector":".national-mode-select","declarations":{"background-image":"initial","background-color":"rgba(4, 5, 5, 0.96)","color":"rgb(243, 234, 210)"}},
+        {"selector":".national-mode-card","declarations":{"background-image":"initial","background-color":"rgba(12, 18, 18, 0.94)","color":"rgb(243, 234, 210)","border-color":"rgba(214, 177, 92, 0.5)"}},
+        {"selector":".national-mode-card strong","declarations":{"color":"rgb(244, 213, 141)"}},
+        {"selector":".mastery-report-screen","declarations":{"background-image":"initial","background-color":"rgba(4, 5, 5, 0.98)"}},
+        {"selector":".mastery-summary-grid > div, .mastery-section","declarations":{"background-image":"initial","background-color":"rgba(12, 18, 18, 0.7)","border-color":"rgba(214, 177, 92, 0.35)"}},
+        {"selector":".mastery-row","declarations":{"border-top-color":"rgba(255, 255, 255, 0.1)"}},
+        {"selector":".mode-select-screen","declarations":{"background-image":"initial","background-color":"rgba(4, 5, 5, 0.96)","color":"rgb(243, 234, 210)"}},
+        {"selector":".mode-card","declarations":{"background-image":"initial","background-color":"rgba(12, 18, 18, 0.94)","color":"rgb(243, 234, 210)","border-color":"rgba(214, 177, 92, 0.5)"}},
+        {"selector":".mode-card-title","declarations":{"color":"rgb(244, 213, 141)"}}
+      ],
+      "animations": [
+        {
+          "group": "@keyframes activePulse",
+          "rules": [
+            {
+              "selector": "0%",
+              "declarations": {
+                "transform": "scale(1.06)",
+                "box-shadow": "rgba(214, 177, 92, 0.68) 0px 0px 8px, rgba(0, 0, 0, 0.6) 0px 0px 10px inset"
+              }
+            },
+            {
+              "selector": "45%",
+              "declarations": {
+                "transform": "scale(1.13)",
+                "box-shadow": "rgba(240, 199, 94, 0.92) 0px 0px 18px, rgba(214, 177, 92, 0.48) 0px 0px 32px, rgba(65, 95, 78, 0.24) 0px 0px 42px, rgba(0, 0, 0, 0.64) 0px 0px 12px inset"
+              }
+            },
+            {
+              "selector": "70%",
+              "declarations": {
+                "transform": "scale(1.09)",
+                "box-shadow": "rgba(214, 177, 92, 0.78) 0px 0px 12px, rgba(127, 29, 29, 0.24) 0px 0px 24px, rgba(0, 0, 0, 0.64) 0px 0px 11px inset"
+              }
+            },
+            {
+              "selector": "100%",
+              "declarations": {
+                "transform": "scale(1.11)",
+                "box-shadow": "rgba(240, 199, 94, 0.72) 0px 0px 15px, rgba(214, 177, 92, 0.36) 0px 0px 30px, rgba(0, 0, 0, 0.68) 0px 0px 12px inset"
+              }
+            }
+          ]
+        },
+        {
+          "group": "@keyframes victoryGlow",
+          "rules": [
+            {
+              "selector": "0%, 100%",
+              "declarations": {
+                "transform": "scale(1)",
+                "text-shadow": "rgba(240, 199, 94, 0.72) 0px 0px 10px, rgba(0, 0, 0, 0.9) 0px 2px 6px"
+              }
+            },
+            {
+              "selector": "50%",
+              "declarations": {
+                "transform": "scale(1.08)",
+                "text-shadow": "rgba(240, 199, 94, 0.95) 0px 0px 24px, rgba(214, 177, 92, 0.62) 0px 0px 42px, rgba(127, 29, 29, 0.36) 0px 0px 52px, rgba(0, 0, 0, 0.9) 0px 3px 8px"
+              }
+            }
+          ]
+        },
+        {
+          "group": "@keyframes relicPulse",
+          "rules": [
+            {
+              "selector": "0%, 100%",
+              "declarations": {
+                "transform": "scale(1.05)",
+                "filter": "drop-shadow(rgba(214, 177, 92, 0.66) 0px 0px 8px) drop-shadow(rgba(65, 95, 78, 0.34) 0px 0px 18px) drop-shadow(rgba(0, 0, 0, 0.55) 0px 0px 24px)"
+              }
+            },
+            {
+              "selector": "50%",
+              "declarations": {
+                "transform": "scale(1.1)",
+                "filter": "drop-shadow(rgba(240, 199, 94, 0.92) 0px 0px 16px) drop-shadow(rgba(214, 177, 92, 0.55) 0px 0px 30px) drop-shadow(rgba(127, 29, 29, 0.24) 0px 0px 38px)"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "mint-ash-gold": {
+      "name": "Emerald, ash and pale gold",
+      "source": "play/macro-command-system/mint-ash-gold/index.html",
+      "variables": {
+        "text": "rgb(243, 234, 210)",
+        "muted": "rgb(214, 177, 92)",
+        "heading": "#f4d58d",
+        "focus": "#f0c75e",
+        "dark": "#03050c",
+        "surface": "#18120c",
+        "accent": "52,211,153",
+        "secondary": "245,214,130",
+        "panel-paint": "radial-gradient(circle, rgba(52, 211, 153, 0.1) 0%, rgba(245, 214, 130, 0.12) 36%, rgba(24, 18, 12, 0.92) 72%, rgba(3, 5, 12, 0.99) 100%)",
+        "panel-shadow": "rgba(52, 211, 153, 0.14) 0px 0px 22px, rgba(245, 214, 130, 0.13) 0px 0px 58px, rgba(3, 5, 12, 0.72) 0px 0px 72px, rgba(0, 0, 0, 0.78) 0px 0px 42px inset",
+        "panel-border": "rgba(245, 214, 130, 0.36)",
+        "button-paint": "linear-gradient(rgb(91, 58, 31), rgb(27, 23, 17))",
+        "button-shadow": "rgba(214, 177, 92, 0.24) 0px 0px 12px, rgba(88, 28, 24, 0.18) 0px 0px 24px, rgba(0, 0, 0, 0.62) 0px 0px 10px inset",
+        "button-border": "rgba(214, 177, 92, 0.42)",
+        "hover-paint": "linear-gradient(rgb(122, 74, 37), rgb(42, 27, 18))",
+        "hover-shadow": "rgba(240, 199, 94, 0.48) 0px 0px 18px, rgba(127, 29, 29, 0.28) 0px 0px 34px, rgba(0, 0, 0, 0.68) 0px 0px 12px inset",
+        "hover-border": "rgba(240, 199, 94, 0.7)",
+        "tile-paint": "linear-gradient(rgba(22, 30, 28, 0.72), rgba(7, 9, 9, 0.86))",
+        "tile-border": "rgba(214, 177, 92, 0.18)",
+        "active-paint": "radial-gradient(circle, rgba(214, 177, 92, 0.48), rgba(65, 95, 78, 0.36), rgba(12, 18, 18, 0.92))",
+        "active-shadow": "rgba(240, 199, 94, 0.78) 0px 0px 12px, rgba(214, 177, 92, 0.48) 0px 0px 24px, rgba(0, 0, 0, 0.62) 0px 0px 12px inset",
+        "saved-paint": "linear-gradient(rgba(65, 95, 78, 0.62), rgba(20, 31, 28, 0.88))",
+        "progress-paint": "linear-gradient(90deg, rgb(47, 79, 67), rgb(214, 177, 92), rgb(138, 58, 36))",
+        "modal-paint": "radial-gradient(circle at center top, rgba(65, 95, 78, 0.26), rgba(12, 18, 18, 0.9) 48%, rgba(4, 5, 5, 0.98))",
+        "modal-shadow": "rgba(0, 0, 0, 0.88) 0px 0px 34px, rgba(214, 177, 92, 0.18) 0px 0px 38px, rgba(127, 29, 29, 0.12) 0px 0px 46px, rgba(0, 0, 0, 0.72) 0px 0px 30px inset",
+        "boss-1": "#a78bfa",
+        "boss-text-1": "#a78bfa",
+        "boss-2": "#7c3aed",
+        "boss-text-2": "#c4b5fd",
+        "boss-3": "#991b1b",
+        "boss-text-3": "#fca5a5"
+      },
+      "historicalPaint": [
+        {"selector":"body","declarations":{"color":"rgb(243, 234, 210)","background-color":"initial"}},
+        {"selector":"body::after","declarations":{"background-image":"radial-gradient(circle, rgba(245, 214, 130, 0.09), rgba(30, 24, 18, 0.34) 48%, rgba(3, 5, 12, 0.82) 100%)","background-color":"initial"}},
+        {"selector":".title","declarations":{"color":"rgb(244, 213, 141)","text-shadow":"rgba(214, 177, 92, 0.85) 0px 0px 14px, rgba(180, 83, 9, 0.55) 0px 0px 34px, rgba(0, 0, 0, 0.9) 0px 3px 8px"}},
+        {"selector":".subtitle","declarations":{"color":"rgb(185, 135, 70)","text-shadow":"rgba(185, 135, 70, 0.45) 0px 0px 10px, rgba(119, 18, 40, 0.55) 0px 0px 34px, rgba(0, 0, 0, 0.9) 0px 3px 8px"}},
+        {"selector":".tagline","declarations":{"color":"rgb(216, 199, 160)","text-shadow":"rgba(0, 0, 0, 0.85) 0px 2px 6px, rgba(0, 0, 0, 0.88) 0px 2px 6px"}},
+        {"selector":".name-input","declarations":{"background-image":"initial","background-color":"rgba(12, 18, 18, 0.88)","color":"rgb(243, 234, 210)","outline-color":"initial","box-shadow":"rgba(214, 177, 92, 0.28) 0px 0px 14px, rgba(0, 0, 0, 0.65) 0px 0px 12px inset","border-color":"rgba(214, 177, 92, 0.45)"}},
+        {"selector":".name-input:focus","declarations":{"box-shadow":"rgba(240, 199, 94, 0.45) 0px 0px 18px, rgba(100, 36, 24, 0.35) 0px 0px 32px, rgba(0, 0, 0, 0.75) 0px 0px 12px inset","border-color":"rgba(240, 199, 94, 0.75)"}},
+        {"selector":".secondary-start-btn","declarations":{"background-image":"linear-gradient(rgb(63, 95, 74), rgb(20, 28, 24))","background-color":"initial","color":"rgb(244, 213, 141)","border-color":"rgba(240, 199, 94, 0.62)"}},
+        {"selector":"#username::placeholder","declarations":{"color":"rgba(216, 199, 160, 0.52)"}},
+        {"selector":"#gameBox","declarations":{"background-image":"radial-gradient(circle, rgba(52, 211, 153, 0.1) 0%, rgba(245, 214, 130, 0.12) 36%, rgba(24, 18, 12, 0.92) 72%, rgba(3, 5, 12, 0.99) 100%)","background-color":"initial","box-shadow":"rgba(52, 211, 153, 0.14) 0px 0px 22px, rgba(245, 214, 130, 0.13) 0px 0px 58px, rgba(3, 5, 12, 0.72) 0px 0px 72px, rgba(0, 0, 0, 0.78) 0px 0px 42px inset","border-color":"rgba(245, 214, 130, 0.36)"}},
+        {"selector":"#gameBox.boss-mode","declarations":{"box-shadow":"rgba(214, 177, 92, 0.58) 0px 0px 32px, rgba(100, 36, 24, 0.48) 0px 0px 64px, rgba(0, 0, 0, 0.78) 0px 0px 42px inset","border-color":"rgb(214, 177, 92)"}},
+        {"selector":".boss10 .boss-icon","declarations":{"filter":"drop-shadow(rgba(214, 177, 92, 0.85) 0px 0px 6px) drop-shadow(rgba(65, 95, 78, 0.55) 0px 0px 12px)"}},
+        {"selector":".boss20 .boss-icon","declarations":{"filter":"drop-shadow(rgba(196, 106, 58, 0.9) 0px 0px 8px) drop-shadow(rgba(99, 35, 24, 0.65) 0px 0px 16px)"}},
+        {"selector":".boss30 .boss-icon","declarations":{"filter":"drop-shadow(rgb(240, 199, 94) 0px 0px 10px) drop-shadow(rgba(127, 29, 29, 0.85) 0px 0px 24px)"}},
+        {"selector":".hit","declarations":{"box-shadow":"rgba(127, 29, 29, 0.95) 0px 0px 60px, rgba(240, 199, 94, 0.35) 0px 0px 28px, rgba(88, 28, 24, 0.85) 0px 0px 42px inset"}},
+        {"selector":"#autosave","declarations":{"color":"rgb(216, 199, 160)","text-shadow":"rgba(214, 177, 92, 0.35) 0px 0px 6px"}},
+        {"selector":"#questionImageBox img","declarations":{"box-shadow":"rgba(214, 177, 92, 0.16) 0px 0px 14px, rgba(0, 0, 0, 0.65) 0px 0px 28px","border-color":"rgba(214, 177, 92, 0.22)"}},
+        {"selector":"#questionImageBox .graph-zoom-note","declarations":{"color":"rgba(243, 234, 210, 0.72)"}},
+        {"selector":"#graphLightbox","declarations":{"background-image":"initial","background-color":"rgba(4, 5, 5, 0.88)"}},
+        {"selector":"#graphLightbox img","declarations":{"background-image":"initial","background-color":"rgb(255, 255, 255)","box-shadow":"rgba(240, 199, 94, 0.34) 0px 0px 28px, rgba(0, 0, 0, 0.86) 0px 0px 70px","border-color":"rgba(240, 199, 94, 0.52)"}},
+        {"selector":"#graphLightboxClose","declarations":{"color":"rgb(255, 247, 214)","background-image":"initial","background-color":"rgba(18, 10, 6, 0.94)","box-shadow":"rgba(240, 199, 94, 0.34) 0px 0px 20px, rgba(0, 0, 0, 0.78) 0px 0px 12px inset","border-color":"rgba(240, 199, 94, 0.62)"}},
+        {"selector":"h2","declarations":{"text-shadow":"rgba(244, 213, 141, 0.24) 0px 0px 10px, rgba(214, 177, 92, 0.22) 0px 0px 20px, rgba(0, 0, 0, 0.85) 0px 2px 6px"}},
+        {"selector":"#question","declarations":{"color":"rgb(243, 234, 210)","text-shadow":"rgba(0, 0, 0, 0.85) 0px 2px 5px, rgba(214, 177, 92, 0.12) 0px 0px 8px"}},
+        {"selector":".boss-title","declarations":{"color":"rgb(244, 213, 141)","text-shadow":"rgba(240, 199, 94, 0.62) 0px 0px 10px, rgba(127, 29, 29, 0.42) 0px 0px 26px, rgba(0, 0, 0, 0.9) 0px 3px 8px"}},
+        {"selector":".area-title","declarations":{"color":"rgb(185, 168, 121)","text-shadow":"rgba(214, 177, 92, 0.18) 0px 0px 8px, rgba(0, 0, 0, 0.85) 0px 2px 5px"}},
+        {"selector":".boss-q","declarations":{"border-left-color":"rgb(138, 58, 36)","color":"rgb(243, 234, 210)","box-shadow":"rgba(127, 29, 29, 0.34) -4px 0px 12px","text-shadow":"rgba(0, 0, 0, 0.8) 0px 2px 5px"}},
+        {"selector":".hint-box","declarations":{"color":"rgb(214, 177, 92)","text-shadow":"rgba(214, 177, 92, 0.25) 0px 0px 6px"}},
+        {"selector":".fade-out-text","declarations":{"color":"rgb(240, 199, 94)","text-shadow":"rgba(240, 199, 94, 0.55) 0px 0px 8px, rgba(0, 0, 0, 0.85) 0px 2px 5px"}},
+        {"selector":"#message","declarations":{"color":"rgb(216, 199, 160)","text-shadow":"rgba(214, 177, 92, 0.18) 0px 0px 7px, rgba(0, 0, 0, 0.85) 0px 2px 5px"}},
+        {"selector":".mint-ash-gold #message, .mint #message","declarations":{"color":"rgb(214, 177, 92)","text-shadow":"rgba(214, 177, 92, 0.42) 0px 0px 8px, rgba(100, 36, 24, 0.25) 0px 0px 18px, rgba(0, 0, 0, 0.85) 0px 2px 6px"}},
+        {"selector":"button","declarations":{"background-image":"linear-gradient(rgb(91, 58, 31), rgb(27, 23, 17))","background-color":"initial","color":"rgb(243, 234, 210)","box-shadow":"rgba(214, 177, 92, 0.24) 0px 0px 12px, rgba(88, 28, 24, 0.18) 0px 0px 24px, rgba(0, 0, 0, 0.62) 0px 0px 10px inset","border-color":"rgba(214, 177, 92, 0.42)"}},
+        {"selector":"button:hover","declarations":{"background-image":"linear-gradient(rgb(122, 74, 37), rgb(42, 27, 18))","background-color":"initial","box-shadow":"rgba(240, 199, 94, 0.48) 0px 0px 18px, rgba(127, 29, 29, 0.28) 0px 0px 34px, rgba(0, 0, 0, 0.68) 0px 0px 12px inset","border-color":"rgba(240, 199, 94, 0.7)"}},
+        {"selector":".answers button","declarations":{"background-image":"linear-gradient(rgba(50, 76, 58, 0.98), rgba(12, 24, 20, 0.98))","background-color":"initial","color":"rgb(243, 234, 210)","box-shadow":"rgba(214, 177, 92, 0.16) 0px 0px 10px, rgba(65, 95, 78, 0.16) 0px 0px 18px, rgba(0, 0, 0, 0.7) 0px 0px 14px inset","border-color":"rgba(214, 177, 92, 0.34)"}},
+        {"selector":".answers button:hover","declarations":{"background-image":"linear-gradient(rgba(68, 105, 76, 0.98), rgba(24, 46, 34, 0.98))","background-color":"initial","box-shadow":"rgba(214, 177, 92, 0.38) 0px 0px 18px, rgba(65, 120, 82, 0.35) 0px 0px 34px, rgba(0, 0, 0, 0.68) 0px 0px 14px inset","border-color":"rgba(240, 199, 94, 0.68)"}},
+        {"selector":".fullscreenBtn","declarations":{"color":"rgb(243, 234, 210)","background-image":"linear-gradient(rgb(74, 51, 32), rgb(17, 16, 13))","background-color":"initial","box-shadow":"rgba(214, 177, 92, 0.22) 0px 0px 10px, rgba(0, 0, 0, 0.72) 0px 0px 7px inset","border-color":"rgba(214, 177, 92, 0.34)"}},
+        {"selector":".fullscreenBtn:hover","declarations":{"background-image":"linear-gradient(rgb(106, 71, 38), rgb(28, 21, 16))","background-color":"initial","box-shadow":"rgba(214, 177, 92, 0.42) 0px 0px 16px, rgba(0, 0, 0, 0.72) 0px 0px 8px inset","border-color":"rgba(240, 199, 94, 0.62)"}},
+        {"selector":".fullscreenBtn:active","declarations":{"box-shadow":"rgba(214, 177, 92, 0.28) 0px 0px 8px, rgba(0, 0, 0, 0.85) 0px 0px 10px inset"}},
+        {"selector":".return-menu-btn","declarations":{"color":"rgb(243, 234, 210)","background-image":"linear-gradient(rgb(74, 51, 32), rgb(17, 16, 13))","background-color":"initial","box-shadow":"rgba(214, 177, 92, 0.22) 0px 0px 10px, rgba(0, 0, 0, 0.72) 0px 0px 7px inset","border-color":"rgba(214, 177, 92, 0.34)"}},
+        {"selector":".return-menu-btn:hover","declarations":{"color":"rgb(244, 213, 141)","background-image":"linear-gradient(rgb(106, 71, 38), rgb(28, 21, 16))","background-color":"initial","box-shadow":"rgba(56, 189, 248, 0.34) 0px 0px 16px, rgba(0, 0, 0, 0.76) 0px 0px 8px inset","border-color":"rgba(240, 199, 94, 0.62)"}},
+        {"selector":".continue-btn","declarations":{"background-image":"linear-gradient(rgb(138, 79, 37), rgb(58, 31, 20))","background-color":"initial","color":"rgb(243, 234, 210)","box-shadow":"rgba(214, 177, 92, 0.38) 0px 0px 16px, rgba(127, 29, 29, 0.28) 0px 0px 34px, rgba(0, 0, 0, 0.65) 0px 0px 12px inset","border-color":"rgba(240, 199, 94, 0.52)"}},
+        {"selector":".continue-btn:hover","declarations":{"background-image":"linear-gradient(rgb(167, 99, 44), rgb(91, 42, 25))","background-color":"initial","box-shadow":"rgba(240, 199, 94, 0.58) 0px 0px 24px, rgba(127, 29, 29, 0.36) 0px 0px 42px, rgba(0, 0, 0, 0.65) 0px 0px 12px inset"}},
+        {"selector":"#continueBtn:active","declarations":{"box-shadow":"rgba(214, 177, 92, 0.28) 0px 0px 10px, rgba(0, 0, 0, 0.75) 0px 0px 10px inset"}},
+        {"selector":"#progressBar","declarations":{"background-image":"linear-gradient(rgba(12, 18, 18, 0.95), rgba(4, 5, 5, 0.98))","background-color":"initial","box-shadow":"rgba(0, 0, 0, 0.82) 0px 0px 12px inset, rgba(214, 177, 92, 0.12) 0px 0px 10px","border-color":"rgba(214, 177, 92, 0.22)"}},
+        {"selector":"#progressFill","declarations":{"background-image":"linear-gradient(90deg, rgb(47, 79, 67), rgb(214, 177, 92), rgb(138, 58, 36))","background-color":"initial","box-shadow":"rgba(214, 177, 92, 0.45) 0px 0px 12px, rgba(127, 29, 29, 0.25) 0px 0px 22px"}},
+        {"selector":".maze-box","declarations":{"background-image":"linear-gradient(rgba(22, 30, 28, 0.72), rgba(7, 9, 9, 0.86))","background-color":"initial","box-shadow":"rgba(0, 0, 0, 0.72) 0px 0px 10px inset, rgba(214, 177, 92, 0.08) 0px 0px 5px","border-color":"rgba(214, 177, 92, 0.18)"}},
+        {"selector":".maze-box.active","declarations":{"background-image":"radial-gradient(circle, rgba(214, 177, 92, 0.48), rgba(65, 95, 78, 0.36), rgba(12, 18, 18, 0.92))","background-color":"initial","box-shadow":"rgba(240, 199, 94, 0.78) 0px 0px 12px, rgba(214, 177, 92, 0.48) 0px 0px 24px, rgba(0, 0, 0, 0.62) 0px 0px 12px inset","border-color":"rgb(240, 199, 94)"}},
+        {"selector":".maze-box.completed","declarations":{"background-image":"linear-gradient(rgba(65, 95, 78, 0.62), rgba(20, 31, 28, 0.88))","background-color":"initial","box-shadow":"rgba(214, 177, 92, 0.28) 0px 0px 8px, rgba(0, 0, 0, 0.7) 0px 0px 10px inset","border-color":"rgba(214, 177, 92, 0.38)"}},
+        {"selector":".maze-box:nth-child(10)","declarations":{"text-shadow":"rgb(214, 177, 92) 0px 0px 8px, rgba(65, 95, 78, 0.8) 0px 0px 18px"}},
+        {"selector":".maze-box:nth-child(20)","declarations":{"text-shadow":"rgb(196, 106, 58) 0px 0px 8px, rgba(127, 29, 29, 0.75) 0px 0px 18px"}},
+        {"selector":".maze-box:nth-child(30)","declarations":{"text-shadow":"rgb(240, 199, 94) 0px 0px 10px, rgba(127, 29, 29, 0.95) 0px 0px 24px, rgba(214, 177, 92, 0.42) 0px 0px 34px"}},
+        {"selector":".streak","declarations":{"color":"rgba(243, 234, 210, 0.94)","text-shadow":"rgba(214, 177, 92, 0.32) 0px 0px 7px, rgba(0, 0, 0, 0.85) 0px 2px 5px"}},
+        {"selector":".streak-icon","declarations":{"filter":"drop-shadow(rgba(214, 177, 92, 0.75) 0px 0px 8px) drop-shadow(rgba(100, 36, 24, 0.52) 0px 0px 15px)","background-image":"radial-gradient(circle, rgba(240, 199, 94, 0.46) 0%, rgba(65, 95, 78, 0.34) 45%, transparent 72%)","background-color":"initial"}},
+        {"selector":"#artifactDrop","declarations":{"background-image":"radial-gradient(circle, rgba(65, 95, 78, 0.34), rgba(12, 18, 18, 0.96) 62%, rgba(4, 5, 5, 0.98))","background-color":"initial","box-shadow":"rgba(214, 177, 92, 0.28) 0px 0px 22px, rgba(127, 29, 29, 0.22) 0px 0px 42px, rgba(0, 0, 0, 0.76) 0px 0px 28px inset","border-color":"rgba(214, 177, 92, 0.34)"}},
+        {"selector":"#artifactDrop img","declarations":{"filter":"drop-shadow(rgba(240, 199, 94, 0.82) 0px 0px 14px) drop-shadow(rgba(127, 29, 29, 0.42) 0px 0px 26px)"}},
+        {"selector":"#artifactVault","declarations":{"background-image":"radial-gradient(circle at center top, rgba(65, 95, 78, 0.42), rgba(12, 18, 18, 0.96) 58%, rgba(4, 5, 5, 0.98))","background-color":"initial","box-shadow":"rgba(214, 177, 92, 0.22) 0px 0px 20px, rgba(88, 28, 24, 0.2) 0px 0px 38px, rgba(0, 0, 0, 0.76) 0px 0px 30px inset","border-color":"rgba(214, 177, 92, 0.3)"}},
+        {"selector":"#artifactVault h3","declarations":{"color":"rgb(244, 213, 141)","text-shadow":"rgba(214, 177, 92, 0.52) 0px 0px 10px, rgba(0, 0, 0, 0.85) 0px 2px 6px"}},
+        {"selector":".artifactSlot span","declarations":{"color":"rgba(216, 199, 160, 0.38)"}},
+        {"selector":".artifactSlot.unlocked img","declarations":{"filter":"drop-shadow(rgba(240, 199, 94, 0.86) 0px 0px 14px) drop-shadow(rgba(214, 177, 92, 0.46) 0px 0px 26px) drop-shadow(rgba(127, 29, 29, 0.24) 0px 0px 34px)"}},
+        {"selector":".artifactSlot.unlocked span","declarations":{"color":"rgb(243, 234, 210)","text-shadow":"rgba(214, 177, 92, 0.38) 0px 0px 7px, rgba(0, 0, 0, 0.85) 0px 2px 5px"}},
+        {"selector":".liquidityGlow","declarations":{"filter":"drop-shadow(rgba(214, 177, 92, 0.84) 0px 0px 12px) drop-shadow(rgba(65, 95, 78, 0.58) 0px 0px 24px) drop-shadow(rgba(0, 0, 0, 0.78) 0px 0px 34px)"}},
+        {"selector":".steadyStateGlow","declarations":{"filter":"drop-shadow(rgba(196, 106, 58, 0.86) 0px 0px 14px) drop-shadow(rgba(92, 64, 36, 0.62) 0px 0px 28px) drop-shadow(rgba(0, 0, 0, 0.8) 0px 0px 38px)"}},
+        {"selector":".shockSovereignGlow","declarations":{"filter":"drop-shadow(rgba(240, 199, 94, 0.96) 0px 0px 16px) drop-shadow(rgba(127, 29, 29, 0.74) 0px 0px 34px) drop-shadow(rgba(214, 177, 92, 0.34) 0px 0px 46px) drop-shadow(rgba(0, 0, 0, 0.84) 0px 0px 52px)"}},
+        {"selector":".torch","declarations":{"filter":"drop-shadow(rgba(240, 199, 94, 0.68) 0px 0px 12px) drop-shadow(rgba(127, 29, 29, 0.26) 0px 0px 24px)"}},
+        {"selector":"#hallwayTransition","declarations":{"background-color":"initial","color":"rgb(243, 234, 210)"}},
+        {"selector":"#hallwayText","declarations":{"background-image":"radial-gradient(circle, rgba(65, 95, 78, 0.3), rgba(12, 18, 18, 0.82) 58%, rgba(4, 5, 5, 0.92))","background-color":"initial","box-shadow":"rgba(0, 0, 0, 0.82) 0px 0px 24px, rgba(214, 177, 92, 0.18) 0px 0px 28px, rgba(0, 0, 0, 0.72) 0px 0px 26px inset","color":"rgb(243, 234, 210)","text-shadow":"rgba(214, 177, 92, 0.26) 0px 0px 8px, rgba(0, 0, 0, 0.9) 0px 2px 6px","border-color":"rgba(214, 177, 92, 0.28)"}},
+        {"selector":".game-modal","declarations":{"background-image":"initial","background-color":"rgba(4, 5, 5, 0.72)"}},
+        {"selector":".game-modal-card","declarations":{"background-image":"radial-gradient(circle at center top, rgba(65, 95, 78, 0.26), rgba(12, 18, 18, 0.9) 48%, rgba(4, 5, 5, 0.98))","background-color":"initial","box-shadow":"rgba(0, 0, 0, 0.88) 0px 0px 34px, rgba(214, 177, 92, 0.18) 0px 0px 38px, rgba(127, 29, 29, 0.12) 0px 0px 46px, rgba(0, 0, 0, 0.72) 0px 0px 30px inset","border-color":"rgba(214, 177, 92, 0.42)"}},
+        {"selector":".game-modal-card h2","declarations":{"color":"rgb(244, 213, 141)"}},
+        {"selector":".game-modal-card p","declarations":{"color":"rgb(216, 199, 160)"}},
+        {"selector":".secondary-modal-btn","declarations":{"color":"rgb(216, 199, 160)","border-color":"rgba(214, 177, 92, 0.42)"}},
+        {"selector":".top-title","declarations":{"color":"rgb(244, 213, 141)","text-shadow":"rgba(214, 177, 92, 0.45) 0px 0px 10px, rgba(0, 0, 0, 0.9) 0px 2px 6px"}},
+        {"selector":"#gameShell","declarations":{"background-image":"linear-gradient(rgba(18, 24, 24, 0.96), rgba(4, 5, 5, 0.98))","background-color":"initial","box-shadow":"rgba(0, 0, 0, 0.92) 0px 0px 30px, rgba(214, 177, 92, 0.16) 0px 0px 58px, rgba(88, 28, 24, 0.16) 0px 0px 76px, rgba(0, 0, 0, 0.74) 0px 0px 42px inset","border-color":"rgba(214, 177, 92, 0.28)"}},
+        {"selector":"#wizardBox","declarations":{"background-image":"linear-gradient(rgba(42, 55, 49, 0.94), rgba(8, 10, 10, 0.98))","background-color":"initial","box-shadow":"rgba(0, 0, 0, 0.78) 0px 0px 26px inset, rgba(214, 177, 92, 0.12) 0px 0px 18px","border-color":"rgba(214, 177, 92, 0.26)"}},
+        {"selector":"#wizardName","declarations":{"color":"rgb(214, 177, 92)","border-bottom-color":"rgba(214, 177, 92, 0.34)","text-shadow":"rgba(214, 177, 92, 0.48) 0px 0px 6px, rgba(0, 0, 0, 0.85) 0px 2px 5px"}},
+        {"selector":"#wizardImage","declarations":{"filter":"drop-shadow(rgba(214, 177, 92, 0.62) 0px 0px 12px) drop-shadow(rgba(65, 95, 78, 0.28) 0px 0px 24px) drop-shadow(rgba(0, 0, 0, 0.82) 0px 0px 30px)"}},
+        {"selector":".boss-mode #gameBox","declarations":{"box-shadow":"rgba(240, 199, 94, 0.42) 0px 0px 34px, rgba(127, 29, 29, 0.42) 0px 0px 72px, rgba(0, 0, 0, 0.82) 0px 0px 46px inset","border-color":"rgba(240, 199, 94, 0.72)"}},
+        {"selector":".boss-mode #gameShell","declarations":{"box-shadow":"rgba(0, 0, 0, 0.94) 0px 0px 36px, rgba(214, 177, 92, 0.24) 0px 0px 64px, rgba(127, 29, 29, 0.26) 0px 0px 90px, rgba(0, 0, 0, 0.78) 0px 0px 48px inset","border-color":"rgba(240, 199, 94, 0.42)"}},
+        {"selector":".return-menu-btn","media":["@media (max-width: 768px)"],"declarations":{"background-image":"initial","background-color":"rgba(0, 0, 0, 0.58)","color":"rgba(255, 255, 255, 0.86)","box-shadow":"rgba(56, 189, 248, 0.24) 0px 0px 14px, rgba(0, 0, 0, 0.55) 0px 0px 18px","border-color":"rgba(56, 189, 248, 0.42)"}},
+        {"selector":"#gameShell","media":["@media (max-width: 768px)"],"declarations":{"box-shadow":"rgba(0, 0, 0, 0.9) 0px 0px 24px, rgba(56, 189, 248, 0.14) 0px 0px 38px, rgba(0, 0, 0, 0.78) 0px 0px 30px inset","border-color":"rgba(56, 189, 248, 0.22)"}},
+        {"selector":".mode-select-screen","declarations":{"background-color":"initial"}},
+        {"selector":".mode-select-panel","declarations":{"background-image":"initial","background-color":"rgba(12, 18, 18, 0.86)","box-shadow":"rgba(0, 0, 0, 0.82) 0px 0px 36px, rgba(214, 177, 92, 0.18) 0px 0px 44px, rgba(0, 0, 0, 0.62) 0px 0px 36px inset","border-color":"rgba(214, 177, 92, 0.36)"}},
+        {"selector":".mode-title","declarations":{"color":"rgb(244, 213, 141)","text-shadow":"rgba(240, 199, 94, 0.62) 0px 0px 14px, rgba(127, 29, 29, 0.22) 0px 0px 28px, rgba(0, 0, 0, 0.9) 0px 3px 8px"}},
+        {"selector":".mode-subtitle","declarations":{"color":"rgb(216, 199, 160)"}},
+        {"selector":".mode-card","declarations":{"background-image":"initial","background-color":"rgba(12, 18, 18, 0.94)","color":"rgb(243, 234, 210)","box-shadow":"rgba(0, 0, 0, 0.68) 0px 0px 22px, rgba(0, 0, 0, 0.58) 0px 0px 18px inset","border-color":"rgba(214, 177, 92, 0.3)"}},
+        {"selector":".mode-card:hover","declarations":{"box-shadow":"rgba(214, 177, 92, 0.3) 0px 0px 28px, rgba(127, 29, 29, 0.18) 0px 0px 38px, rgba(0, 0, 0, 0.62) 0px 0px 18px inset","border-color":"rgba(240, 199, 94, 0.78)"}},
+        {"selector":".mode-card img","declarations":{"border-bottom-color":"rgba(214, 177, 92, 0.22)","background-image":"linear-gradient(rgba(65, 95, 78, 0.8), rgba(12, 18, 18, 0.98))","background-color":"initial"}},
+        {"selector":".mode-card-title","declarations":{"color":"rgb(244, 213, 141)"}},
+        {"selector":".mode-card-text","declarations":{"color":"rgba(216, 199, 160, 0.88)"}},
+        {"selector":".sr-only","declarations":{"border-color":"currentcolor"}},
+        {"selector":".timed-mode-hud","declarations":{"background-image":"linear-gradient(rgba(65, 95, 78, 0.64), rgba(12, 18, 18, 0.96))","background-color":"initial","box-shadow":"rgba(214, 177, 92, 0.22) 0px 0px 16px, rgba(127, 29, 29, 0.12) 0px 0px 26px, rgba(0, 0, 0, 0.72) 0px 0px 12px inset","border-color":"rgba(240, 199, 94, 0.48)"}},
+        {"selector":".timer-label","declarations":{"color":"rgb(216, 199, 160)"}},
+        {"selector":".timer-display","declarations":{"color":"rgb(244, 213, 141)","text-shadow":"rgba(240, 199, 94, 0.62) 0px 0px 10px, rgba(127, 29, 29, 0.18) 0px 0px 18px"}},
+        {"selector":".sound-toggle","declarations":{"background-image":"initial","background-color":"rgba(0, 0, 0, 0.46)","color":"rgba(255, 255, 255, 0.72)","box-shadow":"rgba(0, 0, 0, 0.45) 0px 0px 18px","border-color":"rgba(255, 255, 255, 0.22)"}},
+        {"selector":".sound-toggle:hover","declarations":{"color":"rgb(255, 255, 255)","background-image":"initial","background-color":"rgba(255, 255, 255, 0.08)","border-color":"rgba(255, 255, 255, 0.42)"}},
+        {"selector":".answers button:hover","media":["@media (hover: none), (pointer: coarse)"],"declarations":{"background-image":"linear-gradient(rgba(50, 76, 58, 0.98), rgba(12, 24, 20, 0.98))","background-color":"initial","box-shadow":"rgba(214, 177, 92, 0.16) 0px 0px 10px, rgba(65, 95, 78, 0.16) 0px 0px 18px, rgba(0, 0, 0, 0.7) 0px 0px 14px inset","border-color":"rgba(214, 177, 92, 0.34)"}},
+        {"selector":".answers button:active","media":["@media (hover: none), (pointer: coarse)"],"declarations":{"background-image":"linear-gradient(rgba(68, 105, 76, 0.98), rgba(24, 46, 34, 0.98))","background-color":"initial","box-shadow":"rgba(214, 177, 92, 0.38) 0px 0px 18px, rgba(65, 120, 82, 0.35) 0px 0px 34px, rgba(0, 0, 0, 0.68) 0px 0px 14px inset","border-color":"rgba(240, 199, 94, 0.68)"}},
+        {"selector":".answers button:focus, .answers button:focus-visible","media":["@media (hover: none), (pointer: coarse)"],"declarations":{"outline-color":"initial"}},
+        {"selector":"#returnMenuBtn.return-menu-btn","declarations":{"background-image":"initial","background-color":"rgba(0, 0, 0, 0.62)","color":"rgba(255, 255, 255, 0.88)","box-shadow":"rgba(56, 189, 248, 0.24) 0px 0px 14px, rgba(0, 0, 0, 0.55) 0px 0px 18px","border-color":"rgba(56, 189, 248, 0.48)"}},
+        {"selector":"#soundToggle.sound-toggle","declarations":{"background-image":"initial","background-color":"rgba(0, 0, 0, 0.62)","color":"rgba(255, 255, 255, 0.78)","box-shadow":"rgba(0, 0, 0, 0.55) 0px 0px 14px","border-color":"rgba(255, 255, 255, 0.22)"}},
+        {"selector":".score-attack-hud","declarations":{"background-image":"linear-gradient(rgba(11, 34, 56, 0.88), rgba(2, 6, 23, 0.96))","background-color":"initial","box-shadow":"rgba(56, 189, 248, 0.24) 0px 0px 16px, rgba(247, 217, 130, 0.18) 0px 0px 26px, rgba(0, 0, 0, 0.74) 0px 0px 12px inset","border-color":"rgba(247, 217, 130, 0.5)"}},
+        {"selector":".score-attack-label, .score-attack-best-label","declarations":{"color":"rgb(199, 236, 255)"}},
+        {"selector":".score-attack-value","declarations":{"color":"rgb(247, 217, 130)","text-shadow":"rgba(247, 217, 130, 0.7) 0px 0px 12px, rgba(56, 189, 248, 0.24) 0px 0px 18px"}},
+        {"selector":".score-attack-best","declarations":{"color":"rgb(224, 242, 254)","text-shadow":"rgba(56, 189, 248, 0.46) 0px 0px 10px"}},
+        {"selector":".score-float","declarations":{"text-shadow":"rgba(0, 0, 0, 0.96) 0px 0px 10px, rgba(56, 189, 248, 0.42) 0px 0px 18px"}},
+        {"selector":".score-float.positive","declarations":{"color":"rgb(247, 217, 130)"}},
+        {"selector":".score-float.negative","declarations":{"color":"rgb(248, 113, 113)"}},
+        {"selector":".score-float.neutral","declarations":{"color":"rgb(199, 236, 255)"}},
+        {"selector":".sound-toggle","declarations":{"background-image":"linear-gradient(rgba(11, 34, 56, 0.72), rgba(2, 6, 23, 0.82))","background-color":"initial","color":"rgba(224, 242, 254, 0.78)","box-shadow":"rgba(0, 0, 0, 0.48) 0px 0px 18px, rgba(56, 189, 248, 0.14) 0px 0px 18px, rgba(0, 0, 0, 0.72) 0px 0px 10px inset","border-color":"rgba(56, 189, 248, 0.3)"}},
+        {"selector":".sound-toggle:hover","declarations":{"color":"rgb(247, 217, 130)","background-image":"linear-gradient(rgba(19, 57, 86, 0.84), rgba(4, 14, 28, 0.9))","background-color":"initial","box-shadow":"rgba(0, 0, 0, 0.52) 0px 0px 22px, rgba(56, 189, 248, 0.22) 0px 0px 20px, rgba(247, 217, 130, 0.14) 0px 0px 26px, rgba(0, 0, 0, 0.74) 0px 0px 10px inset","border-color":"rgba(247, 217, 130, 0.56)"}},
+        {"selector":".answers button:hover","media":["@media (hover: none), (pointer: coarse)"],"declarations":{"background-image":"linear-gradient(rgba(50, 76, 58, 0.98), rgba(12, 24, 20, 0.98))","background-color":"initial","box-shadow":"rgba(214, 177, 92, 0.16) 0px 0px 10px, rgba(65, 95, 78, 0.16) 0px 0px 18px, rgba(0, 0, 0, 0.7) 0px 0px 14px inset","border-color":"rgba(214, 177, 92, 0.34)"}},
+        {"selector":".answers button:active","media":["@media (hover: none), (pointer: coarse)"],"declarations":{"background-image":"linear-gradient(rgba(68, 105, 76, 0.98), rgba(24, 46, 34, 0.98))","background-color":"initial","box-shadow":"rgba(214, 177, 92, 0.38) 0px 0px 18px, rgba(65, 120, 82, 0.35) 0px 0px 34px, rgba(0, 0, 0, 0.68) 0px 0px 14px inset","border-color":"rgba(240, 199, 94, 0.68)"}},
+        {"selector":".answers button:focus, .answers button:focus-visible","media":["@media (hover: none), (pointer: coarse)"],"declarations":{"outline-color":"initial"}},
+        {"selector":"#returnMenuBtn.return-menu-btn","declarations":{"background-image":"initial","background-color":"rgba(0, 0, 0, 0.62)","color":"rgba(255, 255, 255, 0.88)","box-shadow":"rgba(56, 189, 248, 0.24) 0px 0px 14px, rgba(0, 0, 0, 0.55) 0px 0px 18px","border-color":"rgba(56, 189, 248, 0.48)"}},
+        {"selector":"#soundToggle.sound-toggle","declarations":{"background-image":"initial","background-color":"rgba(0, 0, 0, 0.62)","color":"rgba(255, 255, 255, 0.78)","box-shadow":"rgba(0, 0, 0, 0.55) 0px 0px 14px","border-color":"rgba(255, 255, 255, 0.22)"}},
+        {"selector":".mastery-report-screen","declarations":{"color":"rgb(238, 246, 255)"}},
+        {"selector":".mastery-report-title","declarations":{"color":"rgb(247, 217, 130)","text-shadow":"rgba(247, 217, 130, 0.7) 0px 0px 16px, rgba(56, 189, 248, 0.28) 0px 0px 30px, rgba(0, 0, 0, 0.92) 0px 3px 8px"}},
+        {"selector":".mastery-report-subtitle","declarations":{"color":"rgb(199, 236, 255)"}},
+        {"selector":".mastery-stat-card, .mastery-section","declarations":{"background-image":"radial-gradient(circle at center top, rgba(56, 189, 248, 0.14), rgba(11, 34, 56, 0.82) 45%, rgba(2, 6, 23, 0.96))","background-color":"initial","box-shadow":"rgba(0, 0, 0, 0.62) 0px 0px 18px, rgba(0, 0, 0, 0.52) 0px 0px 20px inset","border-color":"rgba(247, 217, 130, 0.28)"}},
+        {"selector":".mastery-stat-label","declarations":{"color":"rgb(199, 236, 255)"}},
+        {"selector":".mastery-stat-value","declarations":{"color":"rgb(247, 217, 130)","text-shadow":"rgba(247, 217, 130, 0.4) 0px 0px 10px"}},
+        {"selector":".mastery-section h3","declarations":{"color":"rgb(247, 217, 130)","text-shadow":"rgba(247, 217, 130, 0.34) 0px 0px 10px"}},
+        {"selector":".mastery-verdict","declarations":{"border-left-color":"rgb(247, 217, 130)","background-image":"initial","background-color":"rgba(2, 6, 23, 0.54)","color":"rgb(224, 242, 254)"}},
+        {"selector":".mastery-row","declarations":{"border-top-color":"rgba(224, 242, 254, 0.12)"}},
+        {"selector":".mastery-row:first-child","declarations":{"border-top-color":"currentcolor"}},
+        {"selector":".mastery-row-name","declarations":{"color":"rgb(238, 246, 255)"}},
+        {"selector":".mastery-row-score","declarations":{"color":"rgb(247, 217, 130)"}},
+        {"selector":".mastery-row-meta","declarations":{"color":"rgba(199, 236, 255, 0.72)"}},
+        {"selector":".mastery-bar","declarations":{"background-image":"initial","background-color":"rgba(2, 6, 23, 0.82)","border-color":"rgba(56, 189, 248, 0.18)"}},
+        {"selector":".mastery-bar-fill","declarations":{"background-image":"linear-gradient(90deg, rgb(185, 28, 28), rgb(56, 189, 248), rgb(247, 217, 130))","background-color":"initial","box-shadow":"rgba(56, 189, 248, 0.38) 0px 0px 10px"}},
+        {"selector":".mastery-empty","declarations":{"color":"rgba(224, 242, 254, 0.74)"}},
+        {"selector":".targeted-repair-indicator","declarations":{"background-image":"initial","background-color":"rgba(4, 16, 31, 0.94)","color":"rgb(247, 217, 130)","border-color":"rgba(247, 217, 130, 0.55)"}},
+        {"selector":".targeted-repair-indicator span","declarations":{"color":"rgba(255, 255, 255, 0.8)"}},
+        {"selector":".repair-weak-areas-btn","declarations":{"box-shadow":"rgba(74, 222, 128, 0.22) 0px 0px 18px","border-color":"rgba(74, 222, 128, 0.75)"}},
+        {"selector":".target-unlimited-symbol","declarations":{"color":"rgb(247, 217, 130)"}}
+      ],
+      "animations": [
+        {
+          "group": "@keyframes activePulse",
+          "rules": [
+            {
+              "selector": "0%",
+              "declarations": {
+                "transform": "scale(1.06)",
+                "box-shadow": "rgba(214, 177, 92, 0.68) 0px 0px 8px, rgba(0, 0, 0, 0.6) 0px 0px 10px inset"
+              }
+            },
+            {
+              "selector": "45%",
+              "declarations": {
+                "transform": "scale(1.13)",
+                "box-shadow": "rgba(240, 199, 94, 0.92) 0px 0px 18px, rgba(214, 177, 92, 0.48) 0px 0px 32px, rgba(65, 95, 78, 0.24) 0px 0px 42px, rgba(0, 0, 0, 0.64) 0px 0px 12px inset"
+              }
+            },
+            {
+              "selector": "70%",
+              "declarations": {
+                "transform": "scale(1.09)",
+                "box-shadow": "rgba(214, 177, 92, 0.78) 0px 0px 12px, rgba(127, 29, 29, 0.24) 0px 0px 24px, rgba(0, 0, 0, 0.64) 0px 0px 11px inset"
+              }
+            },
+            {
+              "selector": "100%",
+              "declarations": {
+                "transform": "scale(1.11)",
+                "box-shadow": "rgba(240, 199, 94, 0.72) 0px 0px 15px, rgba(214, 177, 92, 0.36) 0px 0px 30px, rgba(0, 0, 0, 0.68) 0px 0px 12px inset"
+              }
+            }
+          ]
+        },
+        {
+          "group": "@keyframes victoryGlow",
+          "rules": [
+            {
+              "selector": "0%, 100%",
+              "declarations": {
+                "transform": "scale(1)",
+                "text-shadow": "rgba(240, 199, 94, 0.72) 0px 0px 10px, rgba(0, 0, 0, 0.9) 0px 2px 6px"
+              }
+            },
+            {
+              "selector": "50%",
+              "declarations": {
+                "transform": "scale(1.08)",
+                "text-shadow": "rgba(240, 199, 94, 0.95) 0px 0px 24px, rgba(214, 177, 92, 0.62) 0px 0px 42px, rgba(127, 29, 29, 0.36) 0px 0px 52px, rgba(0, 0, 0, 0.9) 0px 3px 8px"
+              }
+            }
+          ]
+        },
+        {
+          "group": "@keyframes relicPulse",
+          "rules": [
+            {
+              "selector": "0%, 100%",
+              "declarations": {
+                "transform": "scale(1.05)",
+                "filter": "drop-shadow(rgba(214, 177, 92, 0.66) 0px 0px 8px) drop-shadow(rgba(65, 95, 78, 0.34) 0px 0px 18px) drop-shadow(rgba(0, 0, 0, 0.55) 0px 0px 24px)"
+              }
+            },
+            {
+              "selector": "50%",
+              "declarations": {
+                "transform": "scale(1.1)",
+                "filter": "drop-shadow(rgba(240, 199, 94, 0.92) 0px 0px 16px) drop-shadow(rgba(214, 177, 92, 0.55) 0px 0px 30px) drop-shadow(rgba(127, 29, 29, 0.24) 0px 0px 38px)"
+              }
+            }
+          ]
+        },
+        {
+          "group": "@keyframes timerWarningPulse",
+          "rules": [
+            {
+              "selector": "0%",
+              "declarations": {
+                "transform": "scale(1)"
+              }
+            },
+            {
+              "selector": "100%",
+              "declarations": {
+                "transform": "scale(1.08)",
+                "text-shadow": "rgba(248, 113, 113, 0.9) 0px 0px 14px, rgba(240, 199, 94, 0.42) 0px 0px 24px"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "command-nexus": {
+      "name": "Steel blue, navy and gold",
+      "source": "play/macro-command-system/command-nexus/index.html",
+      "variables": {
+        "text": "rgb(230, 236, 245)",
+        "muted": "rgb(159, 199, 245)",
+        "heading": "#f0c86a",
+        "focus": "#78b4ff",
+        "dark": "#02050c",
+        "surface": "#060e1c",
+        "accent": "80,140,220",
+        "secondary": "240,200,106",
+        "panel-paint": "radial-gradient(circle, rgba(80, 140, 220, 0.18) 0%, rgba(25, 70, 120, 0.42) 46%, rgba(8, 16, 32, 0.94) 74%, rgba(2, 4, 10, 0.99) 100%)",
+        "panel-shadow": "rgba(80, 140, 220, 0.22) 0px 0px 22px, rgba(240, 200, 106, 0.1) 0px 0px 58px, rgba(10, 45, 95, 0.46) 0px 0px 72px, rgba(0, 0, 0, 0.78) 0px 0px 42px inset",
+        "panel-border": "rgba(240, 200, 106, 0.34)",
+        "button-paint": "linear-gradient(rgb(18, 52, 90), rgb(7, 17, 31))",
+        "button-shadow": "rgba(80, 140, 220, 0.28) 0px 0px 12px, rgba(10, 45, 95, 0.22) 0px 0px 24px, rgba(0, 0, 0, 0.68) 0px 0px 10px inset",
+        "button-border": "rgba(240, 200, 106, 0.38)",
+        "hover-paint": "linear-gradient(rgb(27, 79, 134), rgb(11, 31, 56))",
+        "hover-shadow": "rgba(100, 170, 255, 0.5) 0px 0px 18px, rgba(240, 200, 106, 0.22) 0px 0px 34px, rgba(0, 0, 0, 0.7) 0px 0px 12px inset",
+        "hover-border": "rgba(240, 200, 106, 0.72)",
+        "tile-paint": "linear-gradient(rgba(10, 24, 46, 0.76), rgba(3, 8, 18, 0.9))",
+        "tile-border": "rgba(120, 180, 255, 0.18)",
+        "active-paint": "radial-gradient(circle, rgba(100, 170, 255, 0.48), rgba(18, 58, 102, 0.42), rgba(3, 8, 18, 0.94))",
+        "active-shadow": "rgba(100, 170, 255, 0.78) 0px 0px 12px, rgba(240, 200, 106, 0.36) 0px 0px 24px, rgba(0, 0, 0, 0.66) 0px 0px 12px inset",
+        "saved-paint": "linear-gradient(rgba(24, 82, 135, 0.62), rgba(8, 24, 44, 0.9))",
+        "progress-paint": "linear-gradient(90deg, rgb(18, 58, 102), rgb(79, 159, 232), rgb(240, 200, 106))",
+        "modal-paint": "radial-gradient(circle at center top, rgba(24, 82, 135, 0.28), rgba(6, 14, 28, 0.92) 48%, rgba(2, 5, 12, 0.98))",
+        "modal-shadow": "rgba(0, 0, 0, 0.88) 0px 0px 34px, rgba(80, 140, 220, 0.2) 0px 0px 38px, rgba(240, 200, 106, 0.12) 0px 0px 46px, rgba(0, 0, 0, 0.74) 0px 0px 30px inset",
+        "boss-1": "#f0c86a",
+        "boss-text-1": "#f0c86a",
+        "boss-2": "#6eb4ff",
+        "boss-text-2": "#6eb4ff",
+        "boss-3": "#991b1b",
+        "boss-text-3": "#fca5a5"
+      },
+      "historicalPaint": [
+        {"selector":"body","declarations":{"color":"rgb(230, 236, 245)","background-color":"initial"}},
+        {"selector":"body::after","declarations":{"background-image":"radial-gradient(circle, rgba(245, 214, 130, 0.09), rgba(30, 24, 18, 0.34) 48%, rgba(3, 5, 12, 0.82) 100%)","background-color":"initial"}},
+        {"selector":".title","declarations":{"color":"rgb(240, 200, 106)","text-shadow":"rgba(240, 200, 106, 0.7) 0px 0px 10px, rgba(40, 90, 160, 0.5) 0px 0px 25px, rgba(0, 0, 0, 0.9) 0px 3px 8px"}},
+        {"selector":".subtitle","declarations":{"color":"rgb(127, 168, 214)","text-shadow":"rgba(80, 130, 200, 0.45) 0px 0px 12px, rgba(64, 96, 142, 0.55) 0px 0px 34px, rgba(0, 0, 0, 0.9) 0px 3px 8px"}},
+        {"selector":".tagline","declarations":{"color":"rgb(201, 212, 230)","text-shadow":"rgba(0, 0, 0, 0.85) 0px 2px 6px, rgba(0, 0, 0, 0.88) 0px 2px 6px"}},
+        {"selector":".name-input","declarations":{"background-image":"initial","background-color":"rgba(8, 14, 28, 0.9)","color":"rgb(230, 236, 245)","outline-color":"initial","box-shadow":"rgba(80, 130, 200, 0.35) 0px 0px 12px, rgba(0, 0, 0, 0.7) 0px 0px 12px inset","border-color":"rgba(120, 170, 255, 0.45)"}},
+        {"selector":".name-input:focus","declarations":{"box-shadow":"rgba(120, 180, 255, 0.6) 0px 0px 18px, rgba(40, 90, 160, 0.5) 0px 0px 35px, rgba(0, 0, 0, 0.8) 0px 0px 12px inset","border-color":"rgba(140, 190, 255, 0.8)"}},
+        {"selector":".secondary-start-btn","declarations":{"background-image":"linear-gradient(rgb(27, 91, 152), rgb(9, 33, 61))","background-color":"initial","color":"rgb(240, 200, 106)","border-color":"rgba(240, 200, 106, 0.56)"}},
+        {"selector":"#username::placeholder","declarations":{"color":"rgba(180, 200, 230, 0.55)"}},
+        {"selector":"#gameBox","declarations":{"background-image":"radial-gradient(circle, rgba(80, 140, 220, 0.18) 0%, rgba(25, 70, 120, 0.42) 46%, rgba(8, 16, 32, 0.94) 74%, rgba(2, 4, 10, 0.99) 100%)","background-color":"initial","box-shadow":"rgba(80, 140, 220, 0.22) 0px 0px 22px, rgba(240, 200, 106, 0.1) 0px 0px 58px, rgba(10, 45, 95, 0.46) 0px 0px 72px, rgba(0, 0, 0, 0.78) 0px 0px 42px inset","border-color":"rgba(240, 200, 106, 0.34)"}},
+        {"selector":"#gameBox.boss-mode","declarations":{"box-shadow":"rgba(240, 200, 106, 0.52) 0px 0px 32px, rgba(60, 130, 220, 0.45) 0px 0px 64px, rgba(0, 0, 0, 0.82) 0px 0px 42px inset","border-color":"rgb(240, 200, 106)"}},
+        {"selector":".boss10 .boss-icon","declarations":{"filter":"drop-shadow(rgba(240, 200, 106, 0.85) 0px 0px 6px) drop-shadow(rgba(70, 140, 220, 0.55) 0px 0px 12px)"}},
+        {"selector":".boss20 .boss-icon","declarations":{"filter":"drop-shadow(rgba(110, 180, 255, 0.9) 0px 0px 8px) drop-shadow(rgba(240, 200, 106, 0.55) 0px 0px 18px)"}},
+        {"selector":".boss30 .boss-icon","declarations":{"filter":"drop-shadow(rgb(240, 200, 106) 0px 0px 10px) drop-shadow(rgba(127, 29, 29, 0.85) 0px 0px 24px)"}},
+        {"selector":".hit","declarations":{"box-shadow":"rgba(127, 29, 29, 0.95) 0px 0px 60px, rgba(240, 200, 106, 0.35) 0px 0px 28px, rgba(80, 10, 18, 0.85) 0px 0px 42px inset"}},
+        {"selector":"#autosave","declarations":{"color":"rgb(201, 212, 230)","text-shadow":"rgba(100, 170, 255, 0.38) 0px 0px 6px"}},
+        {"selector":"#questionImageBox img","declarations":{"box-shadow":"rgba(80, 140, 220, 0.22) 0px 0px 14px, rgba(0, 0, 0, 0.68) 0px 0px 28px","border-color":"rgba(240, 200, 106, 0.24)"}},
+        {"selector":"#questionImageBox .graph-zoom-note","declarations":{"color":"rgba(230, 236, 245, 0.72)"}},
+        {"selector":"#graphLightbox","declarations":{"background-image":"initial","background-color":"rgba(2, 5, 12, 0.88)"}},
+        {"selector":"#graphLightbox img","declarations":{"background-image":"initial","background-color":"rgb(255, 255, 255)","box-shadow":"rgba(100, 170, 255, 0.32) 0px 0px 28px, rgba(0, 0, 0, 0.86) 0px 0px 70px","border-color":"rgba(240, 200, 106, 0.54)"}},
+        {"selector":"#graphLightboxClose","declarations":{"color":"rgb(255, 247, 214)","background-image":"initial","background-color":"rgba(6, 14, 28, 0.94)","box-shadow":"rgba(100, 170, 255, 0.34) 0px 0px 20px, rgba(0, 0, 0, 0.78) 0px 0px 12px inset","border-color":"rgba(240, 200, 106, 0.62)"}},
+        {"selector":"h2","declarations":{"text-shadow":"rgba(180, 210, 255, 0.24) 0px 0px 10px, rgba(80, 140, 220, 0.22) 0px 0px 20px, rgba(0, 0, 0, 0.85) 0px 2px 6px"}},
+        {"selector":"#question","declarations":{"color":"rgb(230, 236, 245)","text-shadow":"rgba(0, 0, 0, 0.88) 0px 2px 5px, rgba(100, 170, 255, 0.14) 0px 0px 8px"}},
+        {"selector":".boss-title","declarations":{"color":"rgb(240, 200, 106)","text-shadow":"rgba(240, 200, 106, 0.62) 0px 0px 10px, rgba(80, 140, 220, 0.42) 0px 0px 26px, rgba(0, 0, 0, 0.9) 0px 3px 8px"}},
+        {"selector":".area-title","declarations":{"color":"rgb(143, 182, 230)","text-shadow":"rgba(100, 170, 255, 0.22) 0px 0px 8px, rgba(0, 0, 0, 0.85) 0px 2px 5px"}},
+        {"selector":".boss-q","declarations":{"border-left-color":"rgb(240, 200, 106)","color":"rgb(230, 236, 245)","box-shadow":"rgba(80, 140, 220, 0.34) -4px 0px 12px","text-shadow":"rgba(0, 0, 0, 0.85) 0px 2px 5px"}},
+        {"selector":".hint-box","declarations":{"color":"rgb(240, 200, 106)","text-shadow":"rgba(240, 200, 106, 0.28) 0px 0px 6px"}},
+        {"selector":".fade-out-text","declarations":{"color":"rgb(240, 200, 106)","text-shadow":"rgba(240, 200, 106, 0.55) 0px 0px 8px, rgba(80, 140, 220, 0.28) 0px 0px 18px, rgba(0, 0, 0, 0.85) 0px 2px 5px"}},
+        {"selector":"#message","declarations":{"color":"rgb(201, 212, 230)","text-shadow":"rgba(100, 170, 255, 0.22) 0px 0px 7px, rgba(0, 0, 0, 0.85) 0px 2px 5px"}},
+        {"selector":".nexus #message, .command-nexus #message","declarations":{"color":"rgb(159, 199, 245)","text-shadow":"rgba(100, 170, 255, 0.45) 0px 0px 8px, rgba(240, 200, 106, 0.18) 0px 0px 18px, rgba(0, 0, 0, 0.85) 0px 2px 6px"}},
+        {"selector":"button","declarations":{"background-image":"linear-gradient(rgb(18, 52, 90), rgb(7, 17, 31))","background-color":"initial","color":"rgb(230, 236, 245)","box-shadow":"rgba(80, 140, 220, 0.28) 0px 0px 12px, rgba(10, 45, 95, 0.22) 0px 0px 24px, rgba(0, 0, 0, 0.68) 0px 0px 10px inset","border-color":"rgba(240, 200, 106, 0.38)"}},
+        {"selector":"button:hover","declarations":{"background-image":"linear-gradient(rgb(27, 79, 134), rgb(11, 31, 56))","background-color":"initial","box-shadow":"rgba(100, 170, 255, 0.5) 0px 0px 18px, rgba(240, 200, 106, 0.22) 0px 0px 34px, rgba(0, 0, 0, 0.7) 0px 0px 12px inset","border-color":"rgba(240, 200, 106, 0.72)"}},
+        {"selector":".answers button","declarations":{"background-image":"linear-gradient(rgba(18, 54, 92, 0.98), rgba(7, 18, 34, 0.98))","background-color":"initial","color":"rgb(230, 236, 245)","box-shadow":"rgba(80, 140, 220, 0.18) 0px 0px 10px, rgba(240, 200, 106, 0.12) 0px 0px 18px, rgba(0, 0, 0, 0.74) 0px 0px 14px inset","border-color":"rgba(120, 180, 255, 0.34)"}},
+        {"selector":".answers button:hover","declarations":{"background-image":"linear-gradient(rgba(28, 82, 135, 0.98), rgba(10, 34, 62, 0.98))","background-color":"initial","box-shadow":"rgba(100, 170, 255, 0.42) 0px 0px 18px, rgba(240, 200, 106, 0.22) 0px 0px 34px, rgba(0, 0, 0, 0.7) 0px 0px 14px inset","border-color":"rgba(240, 200, 106, 0.68)"}},
+        {"selector":".fullscreenBtn","declarations":{"color":"rgb(230, 236, 245)","background-image":"linear-gradient(rgb(16, 44, 77), rgb(5, 11, 20))","background-color":"initial","box-shadow":"rgba(80, 140, 220, 0.28) 0px 0px 10px, rgba(0, 0, 0, 0.76) 0px 0px 7px inset","border-color":"rgba(120, 180, 255, 0.34)"}},
+        {"selector":".fullscreenBtn:hover","declarations":{"background-image":"linear-gradient(rgb(26, 77, 130), rgb(11, 29, 52))","background-color":"initial","box-shadow":"rgba(100, 170, 255, 0.44) 0px 0px 16px, rgba(0, 0, 0, 0.74) 0px 0px 8px inset","border-color":"rgba(240, 200, 106, 0.62)"}},
+        {"selector":".fullscreenBtn:active","declarations":{"box-shadow":"rgba(80, 140, 220, 0.3) 0px 0px 8px, rgba(0, 0, 0, 0.86) 0px 0px 10px inset"}},
+        {"selector":".return-menu-btn","declarations":{"color":"rgb(230, 236, 245)","background-image":"linear-gradient(rgb(16, 44, 77), rgb(5, 11, 20))","background-color":"initial","box-shadow":"rgba(80, 140, 220, 0.28) 0px 0px 10px, rgba(0, 0, 0, 0.76) 0px 0px 7px inset","border-color":"rgba(120, 180, 255, 0.34)"}},
+        {"selector":".return-menu-btn:hover","declarations":{"color":"rgb(240, 200, 106)","background-image":"linear-gradient(rgb(26, 77, 130), rgb(11, 29, 52))","background-color":"initial","box-shadow":"rgba(56, 189, 248, 0.34) 0px 0px 16px, rgba(0, 0, 0, 0.76) 0px 0px 8px inset","border-color":"rgba(240, 200, 106, 0.62)"}},
+        {"selector":".continue-btn","declarations":{"background-image":"linear-gradient(rgb(27, 91, 152), rgb(9, 33, 61))","background-color":"initial","color":"rgb(230, 236, 245)","box-shadow":"rgba(100, 170, 255, 0.42) 0px 0px 16px, rgba(240, 200, 106, 0.22) 0px 0px 34px, rgba(0, 0, 0, 0.68) 0px 0px 12px inset","border-color":"rgba(240, 200, 106, 0.54)"}},
+        {"selector":".continue-btn:hover","declarations":{"background-image":"linear-gradient(rgb(36, 112, 184), rgb(15, 53, 95))","background-color":"initial","box-shadow":"rgba(100, 170, 255, 0.62) 0px 0px 24px, rgba(240, 200, 106, 0.28) 0px 0px 42px, rgba(0, 0, 0, 0.68) 0px 0px 12px inset"}},
+        {"selector":"#continueBtn:active","declarations":{"box-shadow":"rgba(80, 140, 220, 0.32) 0px 0px 10px, rgba(0, 0, 0, 0.78) 0px 0px 10px inset"}},
+        {"selector":"#progressBar","declarations":{"background-image":"linear-gradient(rgba(6, 14, 28, 0.96), rgba(2, 5, 12, 0.98))","background-color":"initial","box-shadow":"rgba(0, 0, 0, 0.84) 0px 0px 12px inset, rgba(80, 140, 220, 0.18) 0px 0px 10px","border-color":"rgba(120, 180, 255, 0.24)"}},
+        {"selector":"#progressFill","declarations":{"background-image":"linear-gradient(90deg, rgb(18, 58, 102), rgb(79, 159, 232), rgb(240, 200, 106))","background-color":"initial","box-shadow":"rgba(100, 170, 255, 0.46) 0px 0px 12px, rgba(240, 200, 106, 0.26) 0px 0px 22px"}},
+        {"selector":".maze-box","declarations":{"background-image":"linear-gradient(rgba(10, 24, 46, 0.76), rgba(3, 8, 18, 0.9))","background-color":"initial","box-shadow":"rgba(0, 0, 0, 0.76) 0px 0px 10px inset, rgba(80, 140, 220, 0.1) 0px 0px 5px","border-color":"rgba(120, 180, 255, 0.18)"}},
+        {"selector":".maze-box.active","declarations":{"background-image":"radial-gradient(circle, rgba(100, 170, 255, 0.48), rgba(18, 58, 102, 0.42), rgba(3, 8, 18, 0.94))","background-color":"initial","box-shadow":"rgba(100, 170, 255, 0.78) 0px 0px 12px, rgba(240, 200, 106, 0.36) 0px 0px 24px, rgba(0, 0, 0, 0.66) 0px 0px 12px inset","border-color":"rgb(240, 200, 106)"}},
+        {"selector":".maze-box.completed","declarations":{"background-image":"linear-gradient(rgba(24, 82, 135, 0.62), rgba(8, 24, 44, 0.9))","background-color":"initial","box-shadow":"rgba(80, 140, 220, 0.32) 0px 0px 8px, rgba(0, 0, 0, 0.72) 0px 0px 10px inset","border-color":"rgba(240, 200, 106, 0.36)"}},
+        {"selector":".maze-box:nth-child(10)","declarations":{"text-shadow":"rgb(240, 200, 106) 0px 0px 8px, rgba(80, 140, 220, 0.78) 0px 0px 18px"}},
+        {"selector":".maze-box:nth-child(20)","declarations":{"text-shadow":"rgb(110, 180, 255) 0px 0px 8px, rgba(240, 200, 106, 0.58) 0px 0px 18px"}},
+        {"selector":".maze-box:nth-child(30)","declarations":{"text-shadow":"rgb(240, 200, 106) 0px 0px 10px, rgba(127, 29, 29, 0.9) 0px 0px 24px, rgba(80, 140, 220, 0.35) 0px 0px 34px"}},
+        {"selector":".streak","declarations":{"color":"rgba(230, 236, 245, 0.95)","text-shadow":"rgba(100, 170, 255, 0.34) 0px 0px 7px, rgba(0, 0, 0, 0.85) 0px 2px 5px"}},
+        {"selector":".streak-icon","declarations":{"filter":"drop-shadow(rgba(100, 170, 255, 0.76) 0px 0px 8px) drop-shadow(rgba(240, 200, 106, 0.42) 0px 0px 15px)","background-image":"radial-gradient(circle, rgba(100, 170, 255, 0.48) 0%, rgba(240, 200, 106, 0.28) 42%, transparent 72%)","background-color":"initial"}},
+        {"selector":"#artifactDrop","declarations":{"background-image":"radial-gradient(circle, rgba(24, 82, 135, 0.36), rgba(6, 14, 28, 0.96) 62%, rgba(2, 5, 12, 0.98))","background-color":"initial","box-shadow":"rgba(100, 170, 255, 0.3) 0px 0px 22px, rgba(240, 200, 106, 0.18) 0px 0px 42px, rgba(0, 0, 0, 0.78) 0px 0px 28px inset","border-color":"rgba(240, 200, 106, 0.34)"}},
+        {"selector":"#artifactDrop img","declarations":{"filter":"drop-shadow(rgba(100, 170, 255, 0.82) 0px 0px 14px) drop-shadow(rgba(240, 200, 106, 0.34) 0px 0px 26px)"}},
+        {"selector":"#artifactVault","declarations":{"background-image":"radial-gradient(circle at center top, rgba(24, 82, 135, 0.42), rgba(6, 14, 28, 0.96) 58%, rgba(2, 5, 12, 0.98))","background-color":"initial","box-shadow":"rgba(80, 140, 220, 0.26) 0px 0px 20px, rgba(240, 200, 106, 0.14) 0px 0px 38px, rgba(0, 0, 0, 0.78) 0px 0px 30px inset","border-color":"rgba(120, 180, 255, 0.28)"}},
+        {"selector":"#artifactVault h3","declarations":{"color":"rgb(240, 200, 106)","text-shadow":"rgba(240, 200, 106, 0.48) 0px 0px 10px, rgba(100, 170, 255, 0.22) 0px 0px 18px, rgba(0, 0, 0, 0.85) 0px 2px 6px"}},
+        {"selector":".artifactSlot span","declarations":{"color":"rgba(180, 200, 230, 0.42)"}},
+        {"selector":".artifactSlot.unlocked img","declarations":{"filter":"drop-shadow(rgba(100, 170, 255, 0.86) 0px 0px 14px) drop-shadow(rgba(240, 200, 106, 0.42) 0px 0px 26px) drop-shadow(rgba(80, 140, 220, 0.24) 0px 0px 34px)"}},
+        {"selector":".artifactSlot.unlocked span","declarations":{"color":"rgb(230, 236, 245)","text-shadow":"rgba(100, 170, 255, 0.38) 0px 0px 7px, rgba(240, 200, 106, 0.18) 0px 0px 14px, rgba(0, 0, 0, 0.85) 0px 2px 5px"}},
+        {"selector":".cartographerGlow","declarations":{"filter":"drop-shadow(rgba(240, 200, 106, 0.82) 0px 0px 12px) drop-shadow(rgba(80, 140, 220, 0.58) 0px 0px 24px) drop-shadow(rgba(0, 0, 0, 0.8) 0px 0px 34px)"}},
+        {"selector":".rateEngineerGlow","declarations":{"filter":"drop-shadow(rgba(110, 180, 255, 0.88) 0px 0px 14px) drop-shadow(rgba(240, 200, 106, 0.44) 0px 0px 28px) drop-shadow(rgba(0, 0, 0, 0.82) 0px 0px 38px)"}},
+        {"selector":".shockForecasterGlow","declarations":{"filter":"drop-shadow(rgba(240, 200, 106, 0.96) 0px 0px 16px) drop-shadow(rgba(127, 29, 29, 0.76) 0px 0px 34px) drop-shadow(rgba(80, 140, 220, 0.26) 0px 0px 46px) drop-shadow(rgba(0, 0, 0, 0.86) 0px 0px 52px)"}},
+        {"selector":".torch","declarations":{"filter":"drop-shadow(rgba(100, 170, 255, 0.54) 0px 0px 12px) drop-shadow(rgba(240, 200, 106, 0.24) 0px 0px 24px)"}},
+        {"selector":"#hallwayTransition","declarations":{"background-color":"initial","color":"rgb(230, 236, 245)"}},
+        {"selector":"#hallwayText","declarations":{"background-image":"radial-gradient(circle, rgba(24, 82, 135, 0.32), rgba(6, 14, 28, 0.84) 58%, rgba(2, 5, 12, 0.94))","background-color":"initial","box-shadow":"rgba(0, 0, 0, 0.84) 0px 0px 24px, rgba(100, 170, 255, 0.2) 0px 0px 28px, rgba(240, 200, 106, 0.12) 0px 0px 42px, rgba(0, 0, 0, 0.74) 0px 0px 26px inset","color":"rgb(230, 236, 245)","text-shadow":"rgba(100, 170, 255, 0.3) 0px 0px 8px, rgba(240, 200, 106, 0.14) 0px 0px 16px, rgba(0, 0, 0, 0.9) 0px 2px 6px","border-color":"rgba(240, 200, 106, 0.28)"}},
+        {"selector":".game-modal","declarations":{"background-image":"initial","background-color":"rgba(2, 5, 12, 0.74)"}},
+        {"selector":".game-modal-card","declarations":{"background-image":"radial-gradient(circle at center top, rgba(24, 82, 135, 0.28), rgba(6, 14, 28, 0.92) 48%, rgba(2, 5, 12, 0.98))","background-color":"initial","box-shadow":"rgba(0, 0, 0, 0.88) 0px 0px 34px, rgba(80, 140, 220, 0.2) 0px 0px 38px, rgba(240, 200, 106, 0.12) 0px 0px 46px, rgba(0, 0, 0, 0.74) 0px 0px 30px inset","border-color":"rgba(240, 200, 106, 0.38)"}},
+        {"selector":".game-modal-card h2","declarations":{"color":"rgb(240, 200, 106)"}},
+        {"selector":".game-modal-card p","declarations":{"color":"rgb(201, 212, 230)"}},
+        {"selector":".secondary-modal-btn","declarations":{"color":"rgb(201, 212, 230)","border-color":"rgba(120, 180, 255, 0.42)"}},
+        {"selector":".top-title","declarations":{"color":"rgb(240, 200, 106)","text-shadow":"rgba(240, 200, 106, 0.42) 0px 0px 10px, rgba(100, 170, 255, 0.22) 0px 0px 18px, rgba(0, 0, 0, 0.9) 0px 2px 6px"}},
+        {"selector":"#gameShell","declarations":{"background-image":"linear-gradient(rgba(6, 14, 28, 0.96), rgba(2, 5, 12, 0.98))","background-color":"initial","box-shadow":"rgba(0, 0, 0, 0.92) 0px 0px 30px, rgba(80, 140, 220, 0.18) 0px 0px 58px, rgba(240, 200, 106, 0.1) 0px 0px 76px, rgba(0, 0, 0, 0.76) 0px 0px 42px inset","border-color":"rgba(120, 180, 255, 0.26)"}},
+        {"selector":"#wizardBox","declarations":{"background-image":"linear-gradient(rgba(18, 54, 92, 0.92), rgba(4, 10, 20, 0.98))","background-color":"initial","box-shadow":"rgba(0, 0, 0, 0.8) 0px 0px 26px inset, rgba(80, 140, 220, 0.16) 0px 0px 18px, rgba(240, 200, 106, 0.08) 0px 0px 30px","border-color":"rgba(120, 180, 255, 0.28)"}},
+        {"selector":"#wizardName","declarations":{"color":"rgb(159, 199, 245)","border-bottom-color":"rgba(240, 200, 106, 0.32)","text-shadow":"rgba(100, 170, 255, 0.48) 0px 0px 6px, rgba(240, 200, 106, 0.16) 0px 0px 12px"}},
+        {"selector":"#wizardImage","declarations":{"filter":"drop-shadow(rgba(100, 170, 255, 0.62) 0px 0px 12px) drop-shadow(rgba(240, 200, 106, 0.22) 0px 0px 24px) drop-shadow(rgba(0, 0, 0, 0.84) 0px 0px 30px)"}},
+        {"selector":".boss-mode #gameBox","declarations":{"box-shadow":"rgba(100, 170, 255, 0.46) 0px 0px 34px, rgba(240, 200, 106, 0.24) 0px 0px 72px, rgba(127, 29, 29, 0.22) 0px 0px 92px, rgba(0, 0, 0, 0.84) 0px 0px 46px inset","border-color":"rgba(240, 200, 106, 0.72)"}},
+        {"selector":".boss-mode #gameShell","declarations":{"box-shadow":"rgba(0, 0, 0, 0.94) 0px 0px 36px, rgba(80, 140, 220, 0.26) 0px 0px 64px, rgba(240, 200, 106, 0.14) 0px 0px 90px, rgba(0, 0, 0, 0.8) 0px 0px 48px inset","border-color":"rgba(120, 180, 255, 0.42)"}},
+        {"selector":".return-menu-btn","media":["@media (max-width: 768px)"],"declarations":{"background-image":"initial","background-color":"rgba(0, 0, 0, 0.58)","color":"rgba(255, 255, 255, 0.86)","box-shadow":"rgba(56, 189, 248, 0.24) 0px 0px 14px, rgba(0, 0, 0, 0.55) 0px 0px 18px","border-color":"rgba(56, 189, 248, 0.42)"}},
+        {"selector":"#gameShell","media":["@media (max-width: 768px)"],"declarations":{"box-shadow":"rgba(0, 0, 0, 0.9) 0px 0px 24px, rgba(56, 189, 248, 0.14) 0px 0px 38px, rgba(0, 0, 0, 0.78) 0px 0px 30px inset","border-color":"rgba(56, 189, 248, 0.22)"}},
+        {"selector":".mode-select-screen","declarations":{"background-color":"initial"}},
+        {"selector":".mode-select-panel","declarations":{"background-image":"initial","background-color":"rgba(6, 14, 28, 0.88)","box-shadow":"rgba(0, 0, 0, 0.84) 0px 0px 36px, rgba(80, 140, 220, 0.2) 0px 0px 44px, rgba(0, 0, 0, 0.64) 0px 0px 36px inset","border-color":"rgba(120, 180, 255, 0.34)"}},
+        {"selector":".mode-title","declarations":{"color":"rgb(240, 200, 106)","text-shadow":"rgba(240, 200, 106, 0.62) 0px 0px 14px, rgba(80, 140, 220, 0.28) 0px 0px 28px, rgba(0, 0, 0, 0.9) 0px 3px 8px"}},
+        {"selector":".mode-subtitle","declarations":{"color":"rgb(201, 212, 230)"}},
+        {"selector":".mode-card","declarations":{"background-image":"initial","background-color":"rgba(6, 14, 28, 0.94)","color":"rgb(230, 236, 245)","box-shadow":"rgba(0, 0, 0, 0.68) 0px 0px 22px, rgba(0, 0, 0, 0.58) 0px 0px 18px inset","border-color":"rgba(120, 180, 255, 0.3)"}},
+        {"selector":".mode-card:hover","declarations":{"box-shadow":"rgba(80, 140, 220, 0.32) 0px 0px 28px, rgba(240, 200, 106, 0.16) 0px 0px 38px, rgba(0, 0, 0, 0.62) 0px 0px 18px inset","border-color":"rgba(240, 200, 106, 0.78)"}},
+        {"selector":".mode-card img","declarations":{"border-bottom-color":"rgba(240, 200, 106, 0.22)","background-image":"linear-gradient(rgba(24, 82, 135, 0.8), rgba(6, 14, 28, 0.98))","background-color":"initial"}},
+        {"selector":".mode-card-title","declarations":{"color":"rgb(240, 200, 106)"}},
+        {"selector":".mode-card-text","declarations":{"color":"rgba(201, 212, 230, 0.88)"}},
+        {"selector":".sr-only","declarations":{"border-color":"currentcolor"}},
+        {"selector":".timed-mode-hud","declarations":{"background-image":"linear-gradient(rgba(24, 82, 135, 0.64), rgba(6, 14, 28, 0.96))","background-color":"initial","box-shadow":"rgba(80, 140, 220, 0.24) 0px 0px 16px, rgba(240, 200, 106, 0.12) 0px 0px 26px, rgba(0, 0, 0, 0.72) 0px 0px 12px inset","border-color":"rgba(240, 200, 106, 0.48)"}},
+        {"selector":".timer-label","declarations":{"color":"rgb(201, 212, 230)"}},
+        {"selector":".timer-display","declarations":{"color":"rgb(240, 200, 106)","text-shadow":"rgba(240, 200, 106, 0.62) 0px 0px 10px, rgba(100, 170, 255, 0.24) 0px 0px 18px"}},
+        {"selector":".score-attack-hud","declarations":{"background-image":"linear-gradient(rgba(11, 34, 56, 0.88), rgba(2, 6, 23, 0.96))","background-color":"initial","box-shadow":"rgba(56, 189, 248, 0.24) 0px 0px 16px, rgba(247, 217, 130, 0.18) 0px 0px 26px, rgba(0, 0, 0, 0.74) 0px 0px 12px inset","border-color":"rgba(247, 217, 130, 0.5)"}},
+        {"selector":".score-attack-label, .score-attack-best-label","declarations":{"color":"rgb(199, 236, 255)"}},
+        {"selector":".score-attack-value","declarations":{"color":"rgb(247, 217, 130)","text-shadow":"rgba(247, 217, 130, 0.7) 0px 0px 12px, rgba(56, 189, 248, 0.24) 0px 0px 18px"}},
+        {"selector":".score-attack-best","declarations":{"color":"rgb(224, 242, 254)","text-shadow":"rgba(56, 189, 248, 0.46) 0px 0px 10px"}},
+        {"selector":".score-float","declarations":{"text-shadow":"rgba(0, 0, 0, 0.96) 0px 0px 10px, rgba(56, 189, 248, 0.42) 0px 0px 18px"}},
+        {"selector":".score-float.positive","declarations":{"color":"rgb(247, 217, 130)"}},
+        {"selector":".score-float.negative","declarations":{"color":"rgb(248, 113, 113)"}},
+        {"selector":".score-float.neutral","declarations":{"color":"rgb(199, 236, 255)"}},
+        {"selector":".sound-toggle","declarations":{"background-image":"initial","background-color":"rgba(0, 0, 0, 0.46)","color":"rgba(255, 255, 255, 0.72)","box-shadow":"rgba(0, 0, 0, 0.45) 0px 0px 18px","border-color":"rgba(255, 255, 255, 0.22)"}},
+        {"selector":".sound-toggle:hover","declarations":{"color":"rgb(255, 255, 255)","background-image":"initial","background-color":"rgba(255, 255, 255, 0.08)","border-color":"rgba(255, 255, 255, 0.42)"}},
+        {"selector":".answers button:hover","media":["@media (hover: none), (pointer: coarse)"],"declarations":{"background-image":"linear-gradient(rgba(50, 76, 58, 0.98), rgba(12, 24, 20, 0.98))","background-color":"initial","box-shadow":"rgba(214, 177, 92, 0.16) 0px 0px 10px, rgba(65, 95, 78, 0.16) 0px 0px 18px, rgba(0, 0, 0, 0.7) 0px 0px 14px inset","border-color":"rgba(214, 177, 92, 0.34)"}},
+        {"selector":".answers button:active","media":["@media (hover: none), (pointer: coarse)"],"declarations":{"background-image":"linear-gradient(rgba(68, 105, 76, 0.98), rgba(24, 46, 34, 0.98))","background-color":"initial","box-shadow":"rgba(214, 177, 92, 0.38) 0px 0px 18px, rgba(65, 120, 82, 0.35) 0px 0px 34px, rgba(0, 0, 0, 0.68) 0px 0px 14px inset","border-color":"rgba(240, 199, 94, 0.68)"}},
+        {"selector":".answers button:focus, .answers button:focus-visible","media":["@media (hover: none), (pointer: coarse)"],"declarations":{"outline-color":"initial"}},
+        {"selector":"#returnMenuBtn.return-menu-btn","declarations":{"background-image":"initial","background-color":"rgba(0, 0, 0, 0.62)","color":"rgba(255, 255, 255, 0.88)","box-shadow":"rgba(56, 189, 248, 0.24) 0px 0px 14px, rgba(0, 0, 0, 0.55) 0px 0px 18px","border-color":"rgba(56, 189, 248, 0.48)"}},
+        {"selector":"#soundToggle.sound-toggle","declarations":{"background-image":"initial","background-color":"rgba(0, 0, 0, 0.62)","color":"rgba(255, 255, 255, 0.78)","box-shadow":"rgba(0, 0, 0, 0.55) 0px 0px 14px","border-color":"rgba(255, 255, 255, 0.22)"}},
+        {"selector":".mastery-report-screen","declarations":{"color":"rgb(238, 246, 255)"}},
+        {"selector":".mastery-report-title","declarations":{"color":"rgb(247, 217, 130)","text-shadow":"rgba(247, 217, 130, 0.7) 0px 0px 16px, rgba(56, 189, 248, 0.28) 0px 0px 30px, rgba(0, 0, 0, 0.92) 0px 3px 8px"}},
+        {"selector":".mastery-report-subtitle","declarations":{"color":"rgb(199, 236, 255)"}},
+        {"selector":".mastery-stat-card, .mastery-section","declarations":{"background-image":"radial-gradient(circle at center top, rgba(56, 189, 248, 0.14), rgba(11, 34, 56, 0.82) 45%, rgba(2, 6, 23, 0.96))","background-color":"initial","box-shadow":"rgba(0, 0, 0, 0.62) 0px 0px 18px, rgba(0, 0, 0, 0.52) 0px 0px 20px inset","border-color":"rgba(247, 217, 130, 0.28)"}},
+        {"selector":".mastery-stat-label","declarations":{"color":"rgb(199, 236, 255)"}},
+        {"selector":".mastery-stat-value","declarations":{"color":"rgb(247, 217, 130)","text-shadow":"rgba(247, 217, 130, 0.4) 0px 0px 10px"}},
+        {"selector":".mastery-section h3","declarations":{"color":"rgb(247, 217, 130)","text-shadow":"rgba(247, 217, 130, 0.34) 0px 0px 10px"}},
+        {"selector":".mastery-verdict","declarations":{"border-left-color":"rgb(247, 217, 130)","background-image":"initial","background-color":"rgba(2, 6, 23, 0.54)","color":"rgb(224, 242, 254)"}},
+        {"selector":".mastery-row","declarations":{"border-top-color":"rgba(224, 242, 254, 0.12)"}},
+        {"selector":".mastery-row:first-child","declarations":{"border-top-color":"currentcolor"}},
+        {"selector":".mastery-row-name","declarations":{"color":"rgb(238, 246, 255)"}},
+        {"selector":".mastery-row-score","declarations":{"color":"rgb(247, 217, 130)"}},
+        {"selector":".mastery-row-meta","declarations":{"color":"rgba(199, 236, 255, 0.72)"}},
+        {"selector":".mastery-bar","declarations":{"background-image":"initial","background-color":"rgba(2, 6, 23, 0.82)","border-color":"rgba(56, 189, 248, 0.18)"}},
+        {"selector":".mastery-bar-fill","declarations":{"background-image":"linear-gradient(90deg, rgb(185, 28, 28), rgb(56, 189, 248), rgb(247, 217, 130))","background-color":"initial","box-shadow":"rgba(56, 189, 248, 0.38) 0px 0px 10px"}},
+        {"selector":".mastery-empty","declarations":{"color":"rgba(224, 242, 254, 0.74)"}},
+        {"selector":".targeted-repair-indicator","declarations":{"background-image":"initial","background-color":"rgba(4, 16, 31, 0.94)","color":"rgb(247, 217, 130)","border-color":"rgba(247, 217, 130, 0.55)"}},
+        {"selector":".targeted-repair-indicator span","declarations":{"color":"rgba(255, 255, 255, 0.8)"}},
+        {"selector":".repair-weak-areas-btn","declarations":{"box-shadow":"rgba(74, 222, 128, 0.22) 0px 0px 18px","border-color":"rgba(74, 222, 128, 0.75)"}},
+        {"selector":".target-unlimited-symbol","declarations":{"color":"rgb(247, 217, 130)"}}
+      ],
+      "animations": [
+        {
+          "group": "@keyframes activePulse",
+          "rules": [
+            {
+              "selector": "0%",
+              "declarations": {
+                "transform": "scale(1.06)",
+                "box-shadow": "rgba(100, 170, 255, 0.68) 0px 0px 8px, rgba(0, 0, 0, 0.62) 0px 0px 10px inset"
+              }
+            },
+            {
+              "selector": "45%",
+              "declarations": {
+                "transform": "scale(1.13)",
+                "box-shadow": "rgba(100, 170, 255, 0.92) 0px 0px 18px, rgba(240, 200, 106, 0.42) 0px 0px 32px, rgba(24, 82, 135, 0.3) 0px 0px 42px, rgba(0, 0, 0, 0.66) 0px 0px 12px inset"
+              }
+            },
+            {
+              "selector": "70%",
+              "declarations": {
+                "transform": "scale(1.09)",
+                "box-shadow": "rgba(100, 170, 255, 0.78) 0px 0px 12px, rgba(240, 200, 106, 0.22) 0px 0px 24px, rgba(0, 0, 0, 0.66) 0px 0px 11px inset"
+              }
+            },
+            {
+              "selector": "100%",
+              "declarations": {
+                "transform": "scale(1.11)",
+                "box-shadow": "rgba(100, 170, 255, 0.72) 0px 0px 15px, rgba(240, 200, 106, 0.32) 0px 0px 30px, rgba(0, 0, 0, 0.68) 0px 0px 12px inset"
+              }
+            }
+          ]
+        },
+        {
+          "group": "@keyframes victoryGlow",
+          "rules": [
+            {
+              "selector": "0%, 100%",
+              "declarations": {
+                "transform": "scale(1)",
+                "text-shadow": "rgba(240, 200, 106, 0.72) 0px 0px 10px, rgba(100, 170, 255, 0.24) 0px 0px 18px, rgba(0, 0, 0, 0.9) 0px 2px 6px"
+              }
+            },
+            {
+              "selector": "50%",
+              "declarations": {
+                "transform": "scale(1.08)",
+                "text-shadow": "rgba(240, 200, 106, 0.95) 0px 0px 24px, rgba(100, 170, 255, 0.58) 0px 0px 42px, rgba(24, 82, 135, 0.38) 0px 0px 52px, rgba(0, 0, 0, 0.9) 0px 3px 8px"
+              }
+            }
+          ]
+        },
+        {
+          "group": "@keyframes relicPulse",
+          "rules": [
+            {
+              "selector": "0%, 100%",
+              "declarations": {
+                "transform": "scale(1.05)",
+                "filter": "drop-shadow(rgba(100, 170, 255, 0.68) 0px 0px 8px) drop-shadow(rgba(240, 200, 106, 0.32) 0px 0px 18px) drop-shadow(rgba(0, 0, 0, 0.58) 0px 0px 24px)"
+              }
+            },
+            {
+              "selector": "50%",
+              "declarations": {
+                "transform": "scale(1.1)",
+                "filter": "drop-shadow(rgba(100, 170, 255, 0.94) 0px 0px 16px) drop-shadow(rgba(240, 200, 106, 0.48) 0px 0px 30px) drop-shadow(rgba(24, 82, 135, 0.26) 0px 0px 38px)"
+              }
+            }
+          ]
+        },
+        {
+          "group": "@keyframes timerWarningPulse",
+          "rules": [
+            {
+              "selector": "0%",
+              "declarations": {
+                "transform": "scale(1)"
+              }
+            },
+            {
+              "selector": "100%",
+              "declarations": {
+                "transform": "scale(1.08)",
+                "text-shadow": "rgba(248, 113, 113, 0.9) 0px 0px 14px, rgba(240, 200, 106, 0.42) 0px 0px 24px"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "exchange-citadel": {
+      "name": "Amethyst, lavender and gold, with cyan room accents",
+      "source": "play/macro-command-system/exchange-citadel/index.html",
+      "variables": {
+        "text": "rgb(245, 243, 255)",
+        "muted": "rgb(245, 243, 255)",
+        "heading": "#fff7d6",
+        "focus": "#c4b5fd",
+        "dark": "#050312",
+        "surface": "#140a26",
+        "accent": "196,181,253",
+        "secondary": "240,200,106",
+        "panel-paint": "radial-gradient(circle at center top, rgba(196, 181, 253, 0.18), rgba(109, 40, 217, 0.16) 34%, rgba(20, 10, 38, 0.94) 72%, rgba(5, 3, 18, 0.98))",
+        "panel-shadow": "rgba(196, 181, 253, 0.2) 0px 0px 24px, rgba(109, 40, 217, 0.18) 0px 0px 62px, rgba(0, 0, 0, 0.72) 0px 0px 36px inset",
+        "panel-border": "rgba(240, 200, 106, 0.44)",
+        "button-paint": "linear-gradient(rgba(76, 29, 149, 0.96), rgba(18, 8, 32, 0.98))",
+        "button-shadow": "rgba(56, 189, 248, 0.24) 0px 0px 12px, rgba(8, 47, 73, 0.18) 0px 0px 24px, rgba(0, 0, 0, 0.62) 0px 0px 10px inset",
+        "button-border": "rgba(240, 200, 106, 0.48)",
+        "hover-paint": "linear-gradient(rgba(109, 40, 217, 0.98), rgba(46, 16, 101, 0.98))",
+        "hover-shadow": "rgba(196, 181, 253, 0.46) 0px 0px 20px, rgba(240, 200, 106, 0.18) 0px 0px 36px, rgba(0, 0, 0, 0.66) 0px 0px 12px inset",
+        "hover-border": "rgba(255, 247, 214, 0.72)",
+        "tile-paint": "linear-gradient(rgba(11, 34, 56, 0.72), rgba(2, 6, 23, 0.86))",
+        "tile-border": "rgba(56, 189, 248, 0.18)",
+        "active-paint": "radial-gradient(circle, rgba(56, 189, 248, 0.48), rgba(37, 99, 235, 0.36), rgba(3, 10, 24, 0.92))",
+        "active-shadow": "rgba(248, 217, 129, 0.78) 0px 0px 12px, rgba(56, 189, 248, 0.48) 0px 0px 24px, rgba(0, 0, 0, 0.62) 0px 0px 12px inset",
+        "saved-paint": "linear-gradient(rgba(37, 99, 235, 0.62), rgba(3, 10, 24, 0.88))",
+        "progress-paint": "linear-gradient(90deg, rgb(76, 29, 149), rgb(196, 181, 253), rgb(240, 200, 106))",
+        "modal-paint": "radial-gradient(circle at center top, rgba(196, 181, 253, 0.18), rgba(109, 40, 217, 0.16) 34%, rgba(20, 10, 38, 0.94) 72%, rgba(5, 3, 18, 0.98))",
+        "modal-shadow": "rgba(196, 181, 253, 0.2) 0px 0px 24px, rgba(109, 40, 217, 0.18) 0px 0px 62px, rgba(0, 0, 0, 0.72) 0px 0px 36px inset",
+        "boss-1": "#38bdf8",
+        "boss-text-1": "#38bdf8",
+        "boss-2": "#f8d981",
+        "boss-text-2": "#f8d981",
+        "boss-3": "#fff8e7",
+        "boss-text-3": "#fff8e7"
+      },
+      "historicalPaint": [
+        {"selector":"body","declarations":{"color":"rgb(238, 248, 255)","background-color":"initial"}},
+        {"selector":"body::after","declarations":{"background-image":"radial-gradient(circle, rgba(245, 214, 130, 0.09), rgba(30, 24, 18, 0.34) 48%, rgba(3, 5, 12, 0.82) 100%)","background-color":"initial"}},
+        {"selector":".title","declarations":{"color":"rgb(248, 217, 129)","text-shadow":"rgba(56, 189, 248, 0.85) 0px 0px 14px, rgba(180, 83, 9, 0.55) 0px 0px 34px, rgba(0, 0, 0, 0.9) 0px 3px 8px"}},
+        {"selector":".subtitle","declarations":{"color":"rgb(114, 215, 255)","text-shadow":"rgba(185, 135, 70, 0.45) 0px 0px 10px, rgba(42, 23, 165, 0.55) 0px 0px 34px, rgba(0, 0, 0, 0.9) 0px 3px 8px"}},
+        {"selector":".tagline","declarations":{"color":"rgb(199, 236, 255)","text-shadow":"rgba(0, 0, 0, 0.85) 0px 2px 6px, rgba(0, 0, 0, 0.88) 0px 2px 6px"}},
+        {"selector":".name-input","declarations":{"background-image":"initial","background-color":"rgba(3, 10, 24, 0.88)","color":"rgb(238, 248, 255)","outline-color":"initial","box-shadow":"rgba(56, 189, 248, 0.28) 0px 0px 14px, rgba(0, 0, 0, 0.65) 0px 0px 12px inset","border-color":"rgba(56, 189, 248, 0.45)"}},
+        {"selector":".name-input:focus","declarations":{"box-shadow":"rgba(248, 217, 129, 0.45) 0px 0px 18px, rgba(14, 116, 144, 0.35) 0px 0px 32px, rgba(0, 0, 0, 0.75) 0px 0px 12px inset","border-color":"rgba(248, 217, 129, 0.75)"}},
+        {"selector":".secondary-start-btn","declarations":{"background-image":"linear-gradient(rgb(11, 59, 90), rgb(4, 16, 31))","background-color":"initial","color":"rgb(248, 217, 129)","border-color":"rgba(248, 217, 129, 0.62)"}},
+        {"selector":"#username::placeholder","declarations":{"color":"rgba(216, 199, 160, 0.52)"}},
+        {"selector":"#gameBox","declarations":{"background-image":"radial-gradient(circle, rgba(168, 85, 247, 0.12) 0%, rgba(245, 214, 130, 0.09) 40%, rgba(20, 12, 30, 0.94) 74%, rgba(3, 5, 12, 0.99) 100%)","background-color":"initial","box-shadow":"rgba(168, 85, 247, 0.17) 0px 0px 22px, rgba(245, 214, 130, 0.11) 0px 0px 58px, rgba(3, 5, 12, 0.72) 0px 0px 72px, rgba(0, 0, 0, 0.78) 0px 0px 42px inset","border-color":"rgba(216, 180, 254, 0.34)"}},
+        {"selector":"#gameBox.boss-mode","declarations":{"box-shadow":"rgba(56, 189, 248, 0.58) 0px 0px 32px, rgba(14, 116, 144, 0.48) 0px 0px 64px, rgba(0, 0, 0, 0.78) 0px 0px 42px inset","border-color":"rgb(56, 189, 248)"}},
+        {"selector":".boss10 .boss-icon","declarations":{"filter":"drop-shadow(rgba(56, 189, 248, 0.85) 0px 0px 6px) drop-shadow(rgba(37, 99, 235, 0.55) 0px 0px 12px)"}},
+        {"selector":".boss20 .boss-icon","declarations":{"filter":"drop-shadow(rgba(96, 165, 250, 0.9) 0px 0px 8px) drop-shadow(rgba(99, 35, 24, 0.65) 0px 0px 16px)"}},
+        {"selector":".boss30 .boss-icon","declarations":{"filter":"drop-shadow(rgb(248, 217, 129) 0px 0px 10px) drop-shadow(rgba(14, 165, 233, 0.85) 0px 0px 24px)"}},
+        {"selector":".hit","declarations":{"box-shadow":"rgba(14, 165, 233, 0.95) 0px 0px 60px, rgba(248, 217, 129, 0.35) 0px 0px 28px, rgba(8, 47, 73, 0.85) 0px 0px 42px inset"}},
+        {"selector":"#autosave","declarations":{"color":"rgb(199, 236, 255)","text-shadow":"rgba(56, 189, 248, 0.35) 0px 0px 6px"}},
+        {"selector":"#questionImageBox img","declarations":{"box-shadow":"rgba(56, 189, 248, 0.16) 0px 0px 14px, rgba(0, 0, 0, 0.65) 0px 0px 28px","border-color":"rgba(56, 189, 248, 0.22)"}},
+        {"selector":"#questionImageBox .graph-zoom-note","declarations":{"color":"rgba(245, 243, 255, 0.72)"}},
+        {"selector":"#graphLightbox","declarations":{"background-image":"initial","background-color":"rgba(2, 6, 23, 0.88)"}},
+        {"selector":"#graphLightbox img","declarations":{"background-image":"initial","background-color":"rgb(255, 255, 255)","box-shadow":"rgba(196, 181, 253, 0.34) 0px 0px 28px, rgba(0, 0, 0, 0.86) 0px 0px 70px","border-color":"rgba(240, 200, 106, 0.52)"}},
+        {"selector":"#graphLightboxClose","declarations":{"color":"rgb(255, 247, 214)","background-image":"initial","background-color":"rgba(20, 10, 38, 0.94)","box-shadow":"rgba(196, 181, 253, 0.34) 0px 0px 20px, rgba(0, 0, 0, 0.78) 0px 0px 12px inset","border-color":"rgba(240, 200, 106, 0.62)"}},
+        {"selector":"h2","declarations":{"text-shadow":"rgba(244, 213, 141, 0.24) 0px 0px 10px, rgba(56, 189, 248, 0.22) 0px 0px 20px, rgba(0, 0, 0, 0.85) 0px 2px 6px"}},
+        {"selector":"#question","declarations":{"color":"rgb(238, 248, 255)","text-shadow":"rgba(0, 0, 0, 0.85) 0px 2px 5px, rgba(56, 189, 248, 0.12) 0px 0px 8px"}},
+        {"selector":".boss-title","declarations":{"color":"rgb(248, 217, 129)","text-shadow":"rgba(248, 217, 129, 0.62) 0px 0px 10px, rgba(14, 165, 233, 0.42) 0px 0px 26px, rgba(0, 0, 0, 0.9) 0px 3px 8px"}},
+        {"selector":".area-title","declarations":{"color":"rgb(185, 168, 121)","text-shadow":"rgba(56, 189, 248, 0.18) 0px 0px 8px, rgba(0, 0, 0, 0.85) 0px 2px 5px"}},
+        {"selector":".boss-q","declarations":{"border-left-color":"rgb(14, 165, 233)","color":"rgb(238, 248, 255)","box-shadow":"rgba(14, 165, 233, 0.34) -4px 0px 12px","text-shadow":"rgba(0, 0, 0, 0.8) 0px 2px 5px"}},
+        {"selector":".hint-box","declarations":{"color":"rgb(56, 189, 248)","text-shadow":"rgba(56, 189, 248, 0.25) 0px 0px 6px"}},
+        {"selector":".fade-out-text","declarations":{"color":"rgb(248, 217, 129)","text-shadow":"rgba(248, 217, 129, 0.55) 0px 0px 8px, rgba(0, 0, 0, 0.85) 0px 2px 5px"}},
+        {"selector":"#message","declarations":{"color":"rgb(199, 236, 255)","text-shadow":"rgba(56, 189, 248, 0.18) 0px 0px 7px, rgba(0, 0, 0, 0.85) 0px 2px 5px"}},
+        {"selector":".exchange-citadel #message","declarations":{"color":"rgb(56, 189, 248)","text-shadow":"rgba(56, 189, 248, 0.42) 0px 0px 8px, rgba(14, 116, 144, 0.25) 0px 0px 18px, rgba(0, 0, 0, 0.85) 0px 2px 6px"}},
+        {"selector":"button","declarations":{"background-image":"linear-gradient(rgb(18, 48, 79), rgb(4, 16, 31))","background-color":"initial","color":"rgb(238, 248, 255)","box-shadow":"rgba(56, 189, 248, 0.24) 0px 0px 12px, rgba(8, 47, 73, 0.18) 0px 0px 24px, rgba(0, 0, 0, 0.62) 0px 0px 10px inset","border-color":"rgba(56, 189, 248, 0.42)"}},
+        {"selector":"button:hover","declarations":{"background-image":"linear-gradient(rgb(29, 77, 115), rgb(11, 34, 56))","background-color":"initial","box-shadow":"rgba(248, 217, 129, 0.48) 0px 0px 18px, rgba(14, 165, 233, 0.28) 0px 0px 34px, rgba(0, 0, 0, 0.68) 0px 0px 12px inset","border-color":"rgba(248, 217, 129, 0.7)"}},
+        {"selector":".answers button","declarations":{"background-image":"linear-gradient(rgba(11, 34, 56, 0.96), rgba(3, 10, 24, 0.98))","background-color":"initial","color":"rgb(238, 248, 255)","box-shadow":"rgba(56, 189, 248, 0.16) 0px 0px 10px, rgba(0, 0, 0, 0.7) 0px 0px 14px inset","border-color":"rgba(56, 189, 248, 0.34)"}},
+        {"selector":".answers button:hover","declarations":{"background-image":"linear-gradient(rgba(19, 57, 86, 0.98), rgba(8, 24, 42, 0.98))","background-color":"initial","box-shadow":"rgba(56, 189, 248, 0.38) 0px 0px 18px, rgba(37, 99, 235, 0.22) 0px 0px 32px, rgba(0, 0, 0, 0.68) 0px 0px 14px inset","border-color":"rgba(248, 217, 129, 0.68)"}},
+        {"selector":".fullscreenBtn","declarations":{"color":"rgb(238, 248, 255)","background-image":"linear-gradient(rgb(18, 48, 79), rgb(4, 16, 31))","background-color":"initial","box-shadow":"rgba(56, 189, 248, 0.22) 0px 0px 10px, rgba(0, 0, 0, 0.72) 0px 0px 7px inset","border-color":"rgba(56, 189, 248, 0.34)"}},
+        {"selector":".fullscreenBtn:hover","declarations":{"background-image":"linear-gradient(rgb(29, 77, 115), rgb(11, 34, 56))","background-color":"initial","box-shadow":"rgba(56, 189, 248, 0.42) 0px 0px 16px, rgba(0, 0, 0, 0.72) 0px 0px 8px inset","border-color":"rgba(248, 217, 129, 0.62)"}},
+        {"selector":".fullscreenBtn:active","declarations":{"box-shadow":"rgba(56, 189, 248, 0.28) 0px 0px 8px, rgba(0, 0, 0, 0.85) 0px 0px 10px inset"}},
+        {"selector":".return-menu-btn","declarations":{"color":"rgb(238, 248, 255)","background-image":"linear-gradient(rgb(18, 48, 79), rgb(4, 16, 31))","background-color":"initial","box-shadow":"rgba(56, 189, 248, 0.22) 0px 0px 10px, rgba(0, 0, 0, 0.72) 0px 0px 7px inset","border-color":"rgba(56, 189, 248, 0.34)"}},
+        {"selector":".return-menu-btn:hover","declarations":{"color":"rgb(248, 217, 129)","box-shadow":"rgba(56, 189, 248, 0.34) 0px 0px 16px, rgba(0, 0, 0, 0.76) 0px 0px 8px inset","border-color":"rgba(248, 217, 129, 0.62)"}},
+        {"selector":".continue-btn","declarations":{"background-image":"linear-gradient(rgb(29, 77, 115), rgb(4, 16, 31))","background-color":"initial","color":"rgb(238, 248, 255)","box-shadow":"rgba(56, 189, 248, 0.38) 0px 0px 16px, rgba(14, 165, 233, 0.28) 0px 0px 34px, rgba(0, 0, 0, 0.65) 0px 0px 12px inset","border-color":"rgba(248, 217, 129, 0.52)"}},
+        {"selector":".continue-btn:hover","declarations":{"background-image":"linear-gradient(rgb(36, 98, 143), rgb(11, 34, 56))","background-color":"initial","box-shadow":"rgba(248, 217, 129, 0.58) 0px 0px 24px, rgba(14, 165, 233, 0.36) 0px 0px 42px, rgba(0, 0, 0, 0.65) 0px 0px 12px inset"}},
+        {"selector":"#continueBtn:active","declarations":{"box-shadow":"rgba(56, 189, 248, 0.28) 0px 0px 10px, rgba(0, 0, 0, 0.75) 0px 0px 10px inset"}},
+        {"selector":"#progressBar","declarations":{"background-image":"linear-gradient(rgba(3, 10, 24, 0.95), rgba(2, 6, 23, 0.98))","background-color":"initial","box-shadow":"rgba(0, 0, 0, 0.82) 0px 0px 12px inset, rgba(56, 189, 248, 0.12) 0px 0px 10px","border-color":"rgba(56, 189, 248, 0.22)"}},
+        {"selector":"#progressFill","declarations":{"background-image":"linear-gradient(90deg, rgb(11, 59, 90), rgb(56, 189, 248), rgb(14, 165, 233))","background-color":"initial","box-shadow":"rgba(56, 189, 248, 0.45) 0px 0px 12px, rgba(14, 165, 233, 0.25) 0px 0px 22px"}},
+        {"selector":".maze-box","declarations":{"background-image":"linear-gradient(rgba(11, 34, 56, 0.72), rgba(2, 6, 23, 0.86))","background-color":"initial","box-shadow":"rgba(0, 0, 0, 0.72) 0px 0px 10px inset, rgba(56, 189, 248, 0.08) 0px 0px 5px","border-color":"rgba(56, 189, 248, 0.18)"}},
+        {"selector":".maze-box.active","declarations":{"background-image":"radial-gradient(circle, rgba(56, 189, 248, 0.48), rgba(37, 99, 235, 0.36), rgba(3, 10, 24, 0.92))","background-color":"initial","box-shadow":"rgba(248, 217, 129, 0.78) 0px 0px 12px, rgba(56, 189, 248, 0.48) 0px 0px 24px, rgba(0, 0, 0, 0.62) 0px 0px 12px inset","border-color":"rgb(248, 217, 129)"}},
+        {"selector":".maze-box.completed","declarations":{"background-image":"linear-gradient(rgba(37, 99, 235, 0.62), rgba(3, 10, 24, 0.88))","background-color":"initial","box-shadow":"rgba(56, 189, 248, 0.28) 0px 0px 8px, rgba(0, 0, 0, 0.7) 0px 0px 10px inset","border-color":"rgba(56, 189, 248, 0.38)"}},
+        {"selector":".maze-box:nth-child(10)","declarations":{"text-shadow":"rgb(56, 189, 248) 0px 0px 8px, rgba(37, 99, 235, 0.8) 0px 0px 18px"}},
+        {"selector":".maze-box:nth-child(20)","declarations":{"text-shadow":"rgb(96, 165, 250) 0px 0px 8px, rgba(14, 165, 233, 0.75) 0px 0px 18px"}},
+        {"selector":".maze-box:nth-child(30)","declarations":{"text-shadow":"rgb(248, 217, 129) 0px 0px 10px, rgba(14, 165, 233, 0.95) 0px 0px 24px, rgba(56, 189, 248, 0.42) 0px 0px 34px"}},
+        {"selector":".streak","declarations":{"color":"rgba(243, 234, 210, 0.94)","text-shadow":"rgba(56, 189, 248, 0.32) 0px 0px 7px, rgba(0, 0, 0, 0.85) 0px 2px 5px"}},
+        {"selector":".streak-icon","declarations":{"filter":"drop-shadow(rgba(56, 189, 248, 0.75) 0px 0px 8px) drop-shadow(rgba(14, 116, 144, 0.52) 0px 0px 15px)","background-image":"radial-gradient(circle, rgba(248, 217, 129, 0.46) 0%, rgba(37, 99, 235, 0.34) 45%, transparent 72%)","background-color":"initial"}},
+        {"selector":"#artifactDrop","declarations":{"background-image":"radial-gradient(circle, rgba(37, 99, 235, 0.34), rgba(3, 10, 24, 0.96) 62%, rgba(2, 6, 23, 0.98))","background-color":"initial","box-shadow":"rgba(56, 189, 248, 0.28) 0px 0px 22px, rgba(14, 165, 233, 0.22) 0px 0px 42px, rgba(0, 0, 0, 0.76) 0px 0px 28px inset","border-color":"rgba(56, 189, 248, 0.34)"}},
+        {"selector":"#artifactDrop img","declarations":{"filter":"drop-shadow(rgba(248, 217, 129, 0.82) 0px 0px 14px) drop-shadow(rgba(14, 165, 233, 0.42) 0px 0px 26px)"}},
+        {"selector":"#artifactVault","declarations":{"background-image":"radial-gradient(circle at center top, rgba(37, 99, 235, 0.42), rgba(3, 10, 24, 0.96) 58%, rgba(2, 6, 23, 0.98))","background-color":"initial","box-shadow":"rgba(56, 189, 248, 0.22) 0px 0px 20px, rgba(8, 47, 73, 0.2) 0px 0px 38px, rgba(0, 0, 0, 0.76) 0px 0px 30px inset","border-color":"rgba(56, 189, 248, 0.3)"}},
+        {"selector":"#artifactVault h3","declarations":{"color":"rgb(248, 217, 129)","text-shadow":"rgba(56, 189, 248, 0.52) 0px 0px 10px, rgba(0, 0, 0, 0.85) 0px 2px 6px"}},
+        {"selector":".artifactSlot span","declarations":{"color":"rgba(216, 199, 160, 0.38)"}},
+        {"selector":".artifactSlot.unlocked img","declarations":{"filter":"drop-shadow(rgba(248, 217, 129, 0.86) 0px 0px 14px) drop-shadow(rgba(56, 189, 248, 0.46) 0px 0px 26px) drop-shadow(rgba(14, 165, 233, 0.24) 0px 0px 34px)"}},
+        {"selector":".artifactSlot.unlocked span","declarations":{"color":"rgb(238, 248, 255)","text-shadow":"rgba(56, 189, 248, 0.38) 0px 0px 7px, rgba(0, 0, 0, 0.85) 0px 2px 5px"}},
+        {"selector":".keeperGlow","declarations":{"filter":"drop-shadow(rgba(56, 189, 248, 0.82) 0px 0px 12px) drop-shadow(rgba(37, 99, 235, 0.5) 0px 0px 24px) drop-shadow(rgba(0, 0, 0, 0.75) 0px 0px 34px)"}},
+        {"selector":".chancellorGlow","declarations":{"filter":"drop-shadow(rgba(245, 230, 184, 0.88) 0px 0px 14px) drop-shadow(rgba(124, 58, 237, 0.56) 0px 0px 28px) drop-shadow(rgba(0, 0, 0, 0.84) 0px 0px 38px)"}},
+        {"selector":".custodianGlow","declarations":{"filter":"drop-shadow(rgba(248, 217, 129, 0.96) 0px 0px 16px) drop-shadow(rgba(14, 165, 233, 0.74) 0px 0px 34px) drop-shadow(rgba(56, 189, 248, 0.34) 0px 0px 46px) drop-shadow(rgba(0, 0, 0, 0.82) 0px 0px 52px)"}},
+        {"selector":".torch","declarations":{"filter":"drop-shadow(rgba(248, 217, 129, 0.68) 0px 0px 12px) drop-shadow(rgba(14, 165, 233, 0.26) 0px 0px 24px)"}},
+        {"selector":"#hallwayTransition","declarations":{"background-color":"initial","color":"rgb(238, 248, 255)"}},
+        {"selector":"#hallwayText","declarations":{"background-image":"radial-gradient(circle, rgba(37, 99, 235, 0.3), rgba(3, 10, 24, 0.82) 58%, rgba(2, 6, 23, 0.92))","background-color":"initial","box-shadow":"rgba(0, 0, 0, 0.82) 0px 0px 24px, rgba(56, 189, 248, 0.18) 0px 0px 28px, rgba(0, 0, 0, 0.72) 0px 0px 26px inset","color":"rgb(238, 248, 255)","text-shadow":"rgba(56, 189, 248, 0.26) 0px 0px 8px, rgba(0, 0, 0, 0.9) 0px 2px 6px","border-color":"rgba(56, 189, 248, 0.28)"}},
+        {"selector":".game-modal","declarations":{"background-image":"initial","background-color":"rgba(2, 6, 23, 0.72)"}},
+        {"selector":".game-modal-card","declarations":{"background-image":"radial-gradient(circle at center top, rgba(56, 189, 248, 0.18), rgba(14, 116, 144, 0.72) 45%, rgba(2, 6, 23, 0.98))","background-color":"initial","box-shadow":"rgba(0, 0, 0, 0.88) 0px 0px 34px, rgba(56, 189, 248, 0.22) 0px 0px 38px, rgba(0, 0, 0, 0.72) 0px 0px 30px inset","border-color":"rgba(248, 217, 129, 0.42)"}},
+        {"selector":".game-modal-card h2","declarations":{"color":"rgb(248, 217, 129)"}},
+        {"selector":".game-modal-card p","declarations":{"color":"rgb(238, 248, 255)"}},
+        {"selector":".secondary-modal-btn","declarations":{"color":"rgb(238, 248, 255)","border-color":"rgba(56, 189, 248, 0.42)"}},
+        {"selector":".top-title","declarations":{"color":"rgb(248, 217, 129)","text-shadow":"rgba(56, 189, 248, 0.45) 0px 0px 10px, rgba(0, 0, 0, 0.9) 0px 2px 6px"}},
+        {"selector":"#gameShell","declarations":{"background-image":"linear-gradient(rgba(3, 12, 28, 0.96), rgba(2, 6, 23, 0.98))","background-color":"initial","box-shadow":"rgba(0, 0, 0, 0.92) 0px 0px 30px, rgba(56, 189, 248, 0.16) 0px 0px 58px, rgba(8, 47, 73, 0.16) 0px 0px 76px, rgba(0, 0, 0, 0.74) 0px 0px 42px inset","border-color":"rgba(56, 189, 248, 0.28)"}},
+        {"selector":"#wizardBox","declarations":{"background-image":"linear-gradient(rgba(11, 34, 56, 0.94), rgba(8, 10, 10, 0.98))","background-color":"initial","box-shadow":"rgba(0, 0, 0, 0.78) 0px 0px 26px inset, rgba(56, 189, 248, 0.12) 0px 0px 18px","border-color":"rgba(56, 189, 248, 0.26)"}},
+        {"selector":"#wizardName","declarations":{"color":"rgb(56, 189, 248)","border-bottom-color":"rgba(56, 189, 248, 0.34)","text-shadow":"rgba(56, 189, 248, 0.48) 0px 0px 6px, rgba(0, 0, 0, 0.85) 0px 2px 5px"}},
+        {"selector":"#wizardImage","declarations":{"filter":"drop-shadow(rgba(56, 189, 248, 0.62) 0px 0px 12px) drop-shadow(rgba(37, 99, 235, 0.28) 0px 0px 24px) drop-shadow(rgba(0, 0, 0, 0.82) 0px 0px 30px)"}},
+        {"selector":".boss-mode #gameBox","declarations":{"box-shadow":"rgba(248, 217, 129, 0.42) 0px 0px 34px, rgba(14, 165, 233, 0.42) 0px 0px 72px, rgba(0, 0, 0, 0.82) 0px 0px 46px inset","border-color":"rgba(248, 217, 129, 0.72)"}},
+        {"selector":".boss-mode #gameShell","declarations":{"box-shadow":"rgba(0, 0, 0, 0.94) 0px 0px 36px, rgba(56, 189, 248, 0.24) 0px 0px 64px, rgba(14, 165, 233, 0.26) 0px 0px 90px, rgba(0, 0, 0, 0.78) 0px 0px 48px inset","border-color":"rgba(248, 217, 129, 0.42)"}},
+        {"selector":".return-menu-btn","media":["@media (max-width: 768px)"],"declarations":{"background-image":"initial","background-color":"rgba(0, 0, 0, 0.58)","color":"rgba(255, 255, 255, 0.86)","box-shadow":"rgba(56, 189, 248, 0.24) 0px 0px 14px, rgba(0, 0, 0, 0.55) 0px 0px 18px","border-color":"rgba(56, 189, 248, 0.42)"}},
+        {"selector":"#gameShell","media":["@media (max-width: 768px)"],"declarations":{"box-shadow":"rgba(0, 0, 0, 0.9) 0px 0px 24px, rgba(56, 189, 248, 0.14) 0px 0px 38px, rgba(0, 0, 0, 0.78) 0px 0px 30px inset","border-color":"rgba(56, 189, 248, 0.22)"}},
+        {"selector":".mode-select-screen","declarations":{"background-color":"initial"}},
+        {"selector":".mode-select-panel","declarations":{"background-image":"initial","background-color":"rgba(3, 10, 24, 0.88)","box-shadow":"rgba(0, 0, 0, 0.82) 0px 0px 36px, rgba(56, 189, 248, 0.18) 0px 0px 44px, rgba(0, 0, 0, 0.62) 0px 0px 36px inset","border-color":"rgba(56, 189, 248, 0.38)"}},
+        {"selector":".mode-title","declarations":{"color":"rgb(248, 217, 129)","text-shadow":"rgba(56, 189, 248, 0.68) 0px 0px 14px, rgba(0, 0, 0, 0.9) 0px 3px 8px"}},
+        {"selector":".mode-subtitle","declarations":{"color":"rgb(199, 236, 255)"}},
+        {"selector":".mode-card","declarations":{"background-image":"initial","background-color":"rgba(3, 10, 24, 0.94)","color":"rgb(238, 248, 255)","box-shadow":"rgba(0, 0, 0, 0.68) 0px 0px 22px, rgba(0, 0, 0, 0.58) 0px 0px 18px inset","border-color":"rgba(56, 189, 248, 0.3)"}},
+        {"selector":".mode-card:hover","declarations":{"box-shadow":"rgba(56, 189, 248, 0.32) 0px 0px 28px, rgba(0, 0, 0, 0.62) 0px 0px 18px inset","border-color":"rgba(248, 217, 129, 0.78)"}},
+        {"selector":".mode-card img","declarations":{"border-bottom-color":"rgba(248, 217, 129, 0.22)","background-image":"linear-gradient(rgba(37, 99, 235, 0.4), rgba(2, 6, 23, 0.98))","background-color":"initial"}},
+        {"selector":".mode-card-title","declarations":{"color":"rgb(248, 217, 129)"}},
+        {"selector":".mode-card-text","declarations":{"color":"rgba(243, 234, 210, 0.86)"}},
+        {"selector":".sr-only","declarations":{"border-color":"currentcolor"}},
+        {"selector":".timed-mode-hud","declarations":{"background-image":"linear-gradient(rgba(14, 116, 144, 0.75), rgba(2, 6, 23, 0.96))","background-color":"initial","box-shadow":"rgba(56, 189, 248, 0.24) 0px 0px 16px, rgba(0, 0, 0, 0.72) 0px 0px 12px inset","border-color":"rgba(248, 217, 129, 0.48)"}},
+        {"selector":".timer-label","declarations":{"color":"rgb(199, 236, 255)"}},
+        {"selector":".timer-display","declarations":{"color":"rgb(248, 217, 129)","text-shadow":"rgba(56, 189, 248, 0.62) 0px 0px 10px"}},
+        {"selector":".sound-toggle","declarations":{"background-image":"initial","background-color":"rgba(0, 0, 0, 0.46)","color":"rgba(255, 255, 255, 0.72)","box-shadow":"rgba(0, 0, 0, 0.45) 0px 0px 18px","border-color":"rgba(255, 255, 255, 0.22)"}},
+        {"selector":".sound-toggle:hover","declarations":{"color":"rgb(255, 255, 255)","background-image":"initial","background-color":"rgba(255, 255, 255, 0.08)","border-color":"rgba(255, 255, 255, 0.42)"}},
+        {"selector":".exchange-citadel","declarations":{"color":"rgb(245, 243, 255)"}},
+        {"selector":".exchange-citadel .title, .exchange-citadel .top-title, .exchange-citadel .boss-title, .exchange-citadel #artifactVault h3","declarations":{"color":"rgb(255, 247, 214)","text-shadow":"rgba(240, 200, 106, 0.72) 0px 0px 12px, rgba(196, 181, 253, 0.34) 0px 0px 28px, rgba(0, 0, 0, 0.88) 0px 3px 8px"}},
+        {"selector":".exchange-citadel .subtitle, .exchange-citadel .tagline, .exchange-citadel #question, .exchange-citadel .boss-q, .exchange-citadel #message","declarations":{"color":"rgb(245, 243, 255)"}},
+        {"selector":".exchange-citadel #gameShell, .exchange-citadel #gameBox, .exchange-citadel #wizardBox, .exchange-citadel #artifactVault, .exchange-citadel #artifactDrop, .exchange-citadel .mode-select-panel, .exchange-citadel .game-modal-card","declarations":{"background-image":"radial-gradient(circle at center top, rgba(196, 181, 253, 0.18), rgba(109, 40, 217, 0.16) 34%, rgba(20, 10, 38, 0.94) 72%, rgba(5, 3, 18, 0.98))","background-color":"initial","box-shadow":"rgba(196, 181, 253, 0.2) 0px 0px 24px, rgba(109, 40, 217, 0.18) 0px 0px 62px, rgba(0, 0, 0, 0.72) 0px 0px 36px inset","border-color":"rgba(240, 200, 106, 0.44)"}},
+        {"selector":".exchange-citadel button, .exchange-citadel .answers button, .exchange-citadel .continue-btn, .exchange-citadel .mode-card","declarations":{"background-image":"linear-gradient(rgba(76, 29, 149, 0.96), rgba(18, 8, 32, 0.98))","background-color":"initial","color":"rgb(245, 243, 255)","border-color":"rgba(240, 200, 106, 0.48)"}},
+        {"selector":".exchange-citadel button:hover, .exchange-citadel .answers button:hover, .exchange-citadel .mode-card:hover","declarations":{"background-image":"linear-gradient(rgba(109, 40, 217, 0.98), rgba(46, 16, 101, 0.98))","background-color":"initial","box-shadow":"rgba(196, 181, 253, 0.46) 0px 0px 20px, rgba(240, 200, 106, 0.18) 0px 0px 36px, rgba(0, 0, 0, 0.66) 0px 0px 12px inset","border-color":"rgba(255, 247, 214, 0.72)"}},
+        {"selector":".exchange-citadel #progressFill","declarations":{"background-image":"linear-gradient(90deg, rgb(76, 29, 149), rgb(196, 181, 253), rgb(240, 200, 106))","background-color":"initial"}},
+        {"selector":".exchange-citadel #wizardName, .exchange-citadel .hint-box","declarations":{"color":"rgb(240, 200, 106)","border-color":"rgba(240, 200, 106, 0.42)"}},
+        {"selector":".keeperGlow","declarations":{"filter":"drop-shadow(rgba(240, 200, 106, 0.84) 0px 0px 12px) drop-shadow(rgba(196, 181, 253, 0.52) 0px 0px 24px) drop-shadow(rgba(0, 0, 0, 0.82) 0px 0px 34px)"}},
+        {"selector":".custodianGlow","declarations":{"filter":"drop-shadow(rgba(240, 200, 106, 0.96) 0px 0px 16px) drop-shadow(rgba(124, 58, 237, 0.82) 0px 0px 34px) drop-shadow(rgba(196, 181, 253, 0.26) 0px 0px 46px) drop-shadow(rgba(0, 0, 0, 0.88) 0px 0px 52px)"}},
+        {"selector":".chancellor-intro .bossIcon","declarations":{"filter":"drop-shadow(rgba(255, 248, 231, 0.95) 0px 0px 12px) drop-shadow(rgba(248, 217, 129, 0.55) 0px 0px 32px) drop-shadow(rgba(56, 189, 248, 0.38) 0px 0px 58px)"}},
+        {"selector":".chancellor-intro-title","declarations":{"color":"rgb(255, 248, 231)","text-shadow":"rgba(255, 248, 231, 0.85) 0px 0px 12px, rgba(248, 217, 129, 0.45) 0px 0px 32px, rgba(0, 0, 0, 0.95) 0px 3px 8px"}},
+        {"selector":".chancellor-intro-line","declarations":{"color":"rgb(248, 217, 129)","text-shadow":"rgba(248, 217, 129, 0.55) 0px 0px 10px, rgba(0, 0, 0, 0.95) 0px 2px 6px"}},
+        {"selector":".chancellor-intro-subline","declarations":{"color":"rgb(199, 236, 255)","text-shadow":"rgba(56, 189, 248, 0.42) 0px 0px 8px, rgba(0, 0, 0, 0.95) 0px 2px 6px"}},
+        {"selector":".answers button:hover","media":["@media (hover: none), (pointer: coarse)"],"declarations":{"background-image":"linear-gradient(rgba(50, 76, 58, 0.98), rgba(12, 24, 20, 0.98))","background-color":"initial","box-shadow":"rgba(214, 177, 92, 0.16) 0px 0px 10px, rgba(65, 95, 78, 0.16) 0px 0px 18px, rgba(0, 0, 0, 0.7) 0px 0px 14px inset","border-color":"rgba(214, 177, 92, 0.34)"}},
+        {"selector":".answers button:active","media":["@media (hover: none), (pointer: coarse)"],"declarations":{"background-image":"linear-gradient(rgba(68, 105, 76, 0.98), rgba(24, 46, 34, 0.98))","background-color":"initial","box-shadow":"rgba(214, 177, 92, 0.38) 0px 0px 18px, rgba(65, 120, 82, 0.35) 0px 0px 34px, rgba(0, 0, 0, 0.68) 0px 0px 14px inset","border-color":"rgba(240, 199, 94, 0.68)"}},
+        {"selector":".answers button:focus, .answers button:focus-visible","media":["@media (hover: none), (pointer: coarse)"],"declarations":{"outline-color":"initial"}},
+        {"selector":"#returnMenuBtn.return-menu-btn","declarations":{"background-image":"initial","background-color":"rgba(0, 0, 0, 0.62)","color":"rgba(255, 255, 255, 0.88)","box-shadow":"rgba(56, 189, 248, 0.24) 0px 0px 14px, rgba(0, 0, 0, 0.55) 0px 0px 18px","border-color":"rgba(56, 189, 248, 0.48)"}},
+        {"selector":"#soundToggle.sound-toggle","declarations":{"background-image":"initial","background-color":"rgba(0, 0, 0, 0.62)","color":"rgba(255, 255, 255, 0.78)","box-shadow":"rgba(0, 0, 0, 0.55) 0px 0px 14px","border-color":"rgba(255, 255, 255, 0.22)"}},
+        {"selector":".score-attack-hud","declarations":{"background-image":"linear-gradient(rgba(11, 34, 56, 0.88), rgba(2, 6, 23, 0.96))","background-color":"initial","box-shadow":"rgba(56, 189, 248, 0.24) 0px 0px 16px, rgba(247, 217, 130, 0.18) 0px 0px 26px, rgba(0, 0, 0, 0.74) 0px 0px 12px inset","border-color":"rgba(247, 217, 130, 0.5)"}},
+        {"selector":".score-attack-label, .score-attack-best-label","declarations":{"color":"rgb(199, 236, 255)"}},
+        {"selector":".score-attack-value","declarations":{"color":"rgb(247, 217, 130)","text-shadow":"rgba(247, 217, 130, 0.7) 0px 0px 12px, rgba(56, 189, 248, 0.24) 0px 0px 18px"}},
+        {"selector":".score-attack-best","declarations":{"color":"rgb(224, 242, 254)","text-shadow":"rgba(56, 189, 248, 0.46) 0px 0px 10px"}},
+        {"selector":".score-float","declarations":{"text-shadow":"rgba(0, 0, 0, 0.96) 0px 0px 10px, rgba(56, 189, 248, 0.42) 0px 0px 18px"}},
+        {"selector":".score-float.positive","declarations":{"color":"rgb(247, 217, 130)"}},
+        {"selector":".score-float.negative","declarations":{"color":"rgb(248, 113, 113)"}},
+        {"selector":".score-float.neutral","declarations":{"color":"rgb(199, 236, 255)"}},
+        {"selector":".sound-toggle","declarations":{"background-image":"linear-gradient(rgba(11, 34, 56, 0.72), rgba(2, 6, 23, 0.82))","background-color":"initial","color":"rgba(224, 242, 254, 0.78)","box-shadow":"rgba(0, 0, 0, 0.48) 0px 0px 18px, rgba(56, 189, 248, 0.14) 0px 0px 18px, rgba(0, 0, 0, 0.72) 0px 0px 10px inset","border-color":"rgba(56, 189, 248, 0.3)"}},
+        {"selector":".sound-toggle:hover","declarations":{"color":"rgb(247, 217, 130)","background-image":"linear-gradient(rgba(19, 57, 86, 0.84), rgba(4, 14, 28, 0.9))","background-color":"initial","box-shadow":"rgba(0, 0, 0, 0.52) 0px 0px 22px, rgba(56, 189, 248, 0.22) 0px 0px 20px, rgba(247, 217, 130, 0.14) 0px 0px 26px, rgba(0, 0, 0, 0.74) 0px 0px 10px inset","border-color":"rgba(247, 217, 130, 0.56)"}},
+        {"selector":".answers button:hover","media":["@media (hover: none), (pointer: coarse)"],"declarations":{"background-image":"linear-gradient(rgba(50, 76, 58, 0.98), rgba(12, 24, 20, 0.98))","background-color":"initial","box-shadow":"rgba(214, 177, 92, 0.16) 0px 0px 10px, rgba(65, 95, 78, 0.16) 0px 0px 18px, rgba(0, 0, 0, 0.7) 0px 0px 14px inset","border-color":"rgba(214, 177, 92, 0.34)"}},
+        {"selector":".answers button:active","media":["@media (hover: none), (pointer: coarse)"],"declarations":{"background-image":"linear-gradient(rgba(68, 105, 76, 0.98), rgba(24, 46, 34, 0.98))","background-color":"initial","box-shadow":"rgba(214, 177, 92, 0.38) 0px 0px 18px, rgba(65, 120, 82, 0.35) 0px 0px 34px, rgba(0, 0, 0, 0.68) 0px 0px 14px inset","border-color":"rgba(240, 199, 94, 0.68)"}},
+        {"selector":".answers button:focus, .answers button:focus-visible","media":["@media (hover: none), (pointer: coarse)"],"declarations":{"outline-color":"initial"}},
+        {"selector":"#returnMenuBtn.return-menu-btn","declarations":{"background-image":"initial","background-color":"rgba(0, 0, 0, 0.62)","color":"rgba(255, 255, 255, 0.88)","box-shadow":"rgba(56, 189, 248, 0.24) 0px 0px 14px, rgba(0, 0, 0, 0.55) 0px 0px 18px","border-color":"rgba(56, 189, 248, 0.48)"}},
+        {"selector":"#soundToggle.sound-toggle","declarations":{"background-image":"initial","background-color":"rgba(0, 0, 0, 0.62)","color":"rgba(255, 255, 255, 0.78)","box-shadow":"rgba(0, 0, 0, 0.55) 0px 0px 14px","border-color":"rgba(255, 255, 255, 0.22)"}},
+        {"selector":".mastery-report-screen","declarations":{"color":"rgb(238, 248, 255)"}},
+        {"selector":".mastery-report-title","declarations":{"color":"rgb(247, 217, 130)","text-shadow":"rgba(247, 217, 130, 0.7) 0px 0px 16px, rgba(56, 189, 248, 0.28) 0px 0px 30px, rgba(0, 0, 0, 0.92) 0px 3px 8px"}},
+        {"selector":".mastery-report-subtitle","declarations":{"color":"rgb(199, 236, 255)"}},
+        {"selector":".mastery-stat-card, .mastery-section","declarations":{"background-image":"radial-gradient(circle at center top, rgba(56, 189, 248, 0.14), rgba(11, 34, 56, 0.82) 45%, rgba(2, 6, 23, 0.96))","background-color":"initial","box-shadow":"rgba(0, 0, 0, 0.62) 0px 0px 18px, rgba(0, 0, 0, 0.52) 0px 0px 20px inset","border-color":"rgba(247, 217, 130, 0.28)"}},
+        {"selector":".mastery-stat-label","declarations":{"color":"rgb(199, 236, 255)"}},
+        {"selector":".mastery-stat-value","declarations":{"color":"rgb(247, 217, 130)","text-shadow":"rgba(247, 217, 130, 0.4) 0px 0px 10px"}},
+        {"selector":".mastery-section h3","declarations":{"color":"rgb(247, 217, 130)","text-shadow":"rgba(247, 217, 130, 0.34) 0px 0px 10px"}},
+        {"selector":".mastery-verdict","declarations":{"border-left-color":"rgb(247, 217, 130)","background-image":"initial","background-color":"rgba(2, 6, 23, 0.54)","color":"rgb(224, 242, 254)"}},
+        {"selector":".mastery-row","declarations":{"border-top-color":"rgba(224, 242, 254, 0.12)"}},
+        {"selector":".mastery-row:first-child","declarations":{"border-top-color":"currentcolor"}},
+        {"selector":".mastery-row-name","declarations":{"color":"rgb(238, 248, 255)"}},
+        {"selector":".mastery-row-score","declarations":{"color":"rgb(247, 217, 130)"}},
+        {"selector":".mastery-row-meta","declarations":{"color":"rgba(199, 236, 255, 0.72)"}},
+        {"selector":".mastery-bar","declarations":{"background-image":"initial","background-color":"rgba(2, 6, 23, 0.82)","border-color":"rgba(56, 189, 248, 0.18)"}},
+        {"selector":".mastery-bar-fill","declarations":{"background-image":"linear-gradient(90deg, rgb(185, 28, 28), rgb(56, 189, 248), rgb(247, 217, 130))","background-color":"initial","box-shadow":"rgba(56, 189, 248, 0.38) 0px 0px 10px"}},
+        {"selector":".mastery-empty","declarations":{"color":"rgba(224, 242, 254, 0.74)"}},
+        {"selector":".targeted-repair-indicator","declarations":{"background-image":"initial","background-color":"rgba(4, 16, 31, 0.94)","color":"rgb(247, 217, 130)","border-color":"rgba(247, 217, 130, 0.55)"}},
+        {"selector":".targeted-repair-indicator span","declarations":{"color":"rgba(255, 255, 255, 0.8)"}},
+        {"selector":".repair-weak-areas-btn","declarations":{"box-shadow":"rgba(74, 222, 128, 0.22) 0px 0px 18px","border-color":"rgba(74, 222, 128, 0.75)"}},
+        {"selector":".target-unlimited-symbol","declarations":{"color":"rgb(247, 217, 130)"}}
+      ],
+      "animations": [
+        {
+          "group": "@keyframes activePulse",
+          "rules": [
+            {
+              "selector": "0%",
+              "declarations": {
+                "transform": "scale(1.06)",
+                "box-shadow": "rgba(56, 189, 248, 0.68) 0px 0px 8px, rgba(0, 0, 0, 0.6) 0px 0px 10px inset"
+              }
+            },
+            {
+              "selector": "45%",
+              "declarations": {
+                "transform": "scale(1.13)",
+                "box-shadow": "rgba(248, 217, 129, 0.92) 0px 0px 18px, rgba(56, 189, 248, 0.48) 0px 0px 32px, rgba(37, 99, 235, 0.24) 0px 0px 42px, rgba(0, 0, 0, 0.64) 0px 0px 12px inset"
+              }
+            },
+            {
+              "selector": "70%",
+              "declarations": {
+                "transform": "scale(1.09)",
+                "box-shadow": "rgba(56, 189, 248, 0.78) 0px 0px 12px, rgba(14, 165, 233, 0.24) 0px 0px 24px, rgba(0, 0, 0, 0.64) 0px 0px 11px inset"
+              }
+            },
+            {
+              "selector": "100%",
+              "declarations": {
+                "transform": "scale(1.11)",
+                "box-shadow": "rgba(248, 217, 129, 0.72) 0px 0px 15px, rgba(56, 189, 248, 0.36) 0px 0px 30px, rgba(0, 0, 0, 0.68) 0px 0px 12px inset"
+              }
+            }
+          ]
+        },
+        {
+          "group": "@keyframes victoryGlow",
+          "rules": [
+            {
+              "selector": "0%, 100%",
+              "declarations": {
+                "transform": "scale(1)",
+                "text-shadow": "rgba(248, 217, 129, 0.72) 0px 0px 10px, rgba(0, 0, 0, 0.9) 0px 2px 6px"
+              }
+            },
+            {
+              "selector": "50%",
+              "declarations": {
+                "transform": "scale(1.08)",
+                "text-shadow": "rgba(248, 217, 129, 0.95) 0px 0px 24px, rgba(56, 189, 248, 0.62) 0px 0px 42px, rgba(14, 165, 233, 0.36) 0px 0px 52px, rgba(0, 0, 0, 0.9) 0px 3px 8px"
+              }
+            }
+          ]
+        },
+        {
+          "group": "@keyframes relicPulse",
+          "rules": [
+            {
+              "selector": "0%, 100%",
+              "declarations": {
+                "transform": "scale(1.05)",
+                "filter": "drop-shadow(rgba(56, 189, 248, 0.66) 0px 0px 8px) drop-shadow(rgba(37, 99, 235, 0.34) 0px 0px 18px) drop-shadow(rgba(0, 0, 0, 0.55) 0px 0px 24px)"
+              }
+            },
+            {
+              "selector": "50%",
+              "declarations": {
+                "transform": "scale(1.1)",
+                "filter": "drop-shadow(rgba(248, 217, 129, 0.92) 0px 0px 16px) drop-shadow(rgba(56, 189, 248, 0.55) 0px 0px 30px) drop-shadow(rgba(14, 165, 233, 0.24) 0px 0px 38px)"
+              }
+            }
+          ]
+        },
+        {
+          "group": "@keyframes timerWarningPulse",
+          "rules": [
+            {
+              "selector": "0%",
+              "declarations": {
+                "transform": "scale(1)"
+              }
+            },
+            {
+              "selector": "100%",
+              "declarations": {
+                "transform": "scale(1.08)",
+                "text-shadow": "rgba(248, 113, 113, 0.9) 0px 0px 14px, rgba(248, 217, 129, 0.42) 0px 0px 24px"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

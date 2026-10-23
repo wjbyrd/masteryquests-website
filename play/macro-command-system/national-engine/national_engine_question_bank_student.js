@@ -301,7 +301,7 @@ const questionBanks = {
     {
       "id": 9011,
       "sourceGame": "nationalEngine",
-      "q": "Output rises from 0 to 15 to 29 to 40 to 48 to 51. If W/P = 9, how many workers should be hired?",
+      "q": "Refer to the total-product graph. Output is 0 with no workers, rises to 15, 25, 32, 38, and 40 with 1 through 5 workers, then falls to 38 with 6 workers and 32 with 7 workers. If W/P = 9, how many workers should be hired?",
       "options": [
         "3",
         "4",
@@ -319,9 +319,9 @@ const questionBanks = {
       ],
       "repairSkill": "total_product_to_marginal_product",
       "commonError": "uses_total_product_levels_not_marginal_product",
-      "feedback": "MPL values are 15, 14, 11, 8, and 3. The firm hires the first three workers and stops before the fourth because MPL falls below W/P.",
+      "feedback": "MPL values for workers 1 through 7 are 15, 10, 7, 6, 2, -2, and -6. The firm hires two workers because their MPL exceeds the real wage of 9, and stops before the third worker because that worker adds only 7 units of output.",
       "image": "totalproduct.webp",
-      "aHash": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce"
+      "aHash": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
     },
     {
       "id": 9012,

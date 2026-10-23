@@ -1,0 +1,47 @@
+/* Match the established Game Menu controls while retaining each Macro theme. */
+body #returnMenuBtn.return-menu-btn {
+  min-height:44px!important;padding:11px 16px!important;font-size:13px!important;
+  line-height:1.25!important;border-radius:10px!important;
+  border-width:1px;border-style:solid;
+
+}
+#gameMenuOptions #soundToggle {
+  position:static!important;display:block!important;visibility:visible!important;
+  width:100%!important;max-width:none!important;margin:0!important;transform:none!important;
+  box-sizing:border-box;padding:13px 18px;font:inherit;letter-spacing:1px;
+  border-radius:10px;
+}
+#gameMenuOptions > .game-menu-option,
+#gameMenuOptions .mq-motion-setting {box-sizing:border-box;width:100%;margin:0}
+#gameMenuOptions .game-menu-option:focus-visible,
+#returnMenuBtn:focus-visible {outline:2px solid var(--mq-focus);outline-offset:3px}
+#gameMenuOptions .game-menu-option {
+  box-sizing:border-box;width:100%!important;max-width:none!important;
+  margin:0!important;transform:none!important;min-height:48px;
+  padding:11px 16px!important;font-family:inherit;font-size:16px!important;
+  font-weight:400;line-height:1.25;
+}
+/* Cost Directive's understated instruction within the existing question area. */
+body[data-macro-mode="exam"] #message {
+  font-size:16px;font-weight:400;letter-spacing:0;line-height:1.2;
+  text-shadow:none;margin-top:10px;
+}
+body[data-macro-mode="exam"] #mazeTrack .maze-box {
+  box-sizing:border-box;margin:0;padding:0;transform:none;
+}
+/* Opaque scene backing prevents gameplay text bleeding through introductions;
+   retain the existing themed image and gradient layers above this backing. */
+.guide-intro-screen,.boss-reveal-screen {background-color:var(--mq-dark)}
+/* Long authored guardian names must fit even at 320px. */
+.guide-intro-stage {min-width:0;grid-template-columns:minmax(0,42%) minmax(0,1fr)}
+.guide-intro-copy {min-width:0}
+.guide-intro-name {overflow-wrap:anywhere;font-size:clamp(30px,4vw,60px)}
+.guide-intro-proceed {max-width:100%;white-space:normal}
+.mastery-summary-grid {grid-template-columns:repeat(auto-fit,minmax(min(180px,100%),1fr))}
+@media(max-width:760px){
+  .guide-intro-stage {grid-template-columns:minmax(0,1fr)}
+  .guide-intro-name {font-size:30px;line-height:1.08}
+}
+@media(max-width:560px){
+  body.game-active .dungeon-container {padding-top:48px}
+}

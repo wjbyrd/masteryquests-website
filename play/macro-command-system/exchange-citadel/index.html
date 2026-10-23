@@ -3127,6 +3127,310 @@ html.mq-motion-paused .fade-out-text{animation:none!important;opacity:1!importan
 }
 </style>
 <!-- MQ ACCESSIBILITY style END -->
+<!-- Macro Managerial presentation alignment -->
+<style>
+/* Match the established Game Menu controls while retaining each Macro theme. */
+body #returnMenuBtn.return-menu-btn {
+  min-height:44px!important;padding:11px 16px!important;font-size:13px!important;
+  line-height:1.25!important;border-radius:10px!important;
+  border-width:1px;border-style:solid;
+
+}
+#gameMenuOptions #soundToggle {
+  position:static!important;display:block!important;visibility:visible!important;
+  width:100%!important;max-width:none!important;margin:0!important;transform:none!important;
+  box-sizing:border-box;padding:13px 18px;font:inherit;letter-spacing:1px;
+  border-radius:10px;
+}
+#gameMenuOptions > .game-menu-option,
+#gameMenuOptions .mq-motion-setting {box-sizing:border-box;width:100%;margin:0}
+#gameMenuOptions .game-menu-option:focus-visible,
+#returnMenuBtn:focus-visible {outline:2px solid var(--mq-focus);outline-offset:3px}
+#gameMenuOptions .game-menu-option {
+  box-sizing:border-box;width:100%!important;max-width:none!important;
+  margin:0!important;transform:none!important;min-height:48px;
+  padding:11px 16px!important;font-family:inherit;font-size:16px!important;
+  font-weight:400;line-height:1.25;
+}
+/* Cost Directive's understated instruction within the existing question area. */
+body[data-macro-mode="exam"] #message {
+  font-size:16px;font-weight:400;letter-spacing:0;line-height:1.2;
+  text-shadow:none;margin-top:10px;
+}
+body[data-macro-mode="exam"] #mazeTrack .maze-box {
+  box-sizing:border-box;margin:0;padding:0;transform:none;
+}
+/* Opaque scene backing prevents gameplay text bleeding through introductions;
+   retain the existing themed image and gradient layers above this backing. */
+.guide-intro-screen,.boss-reveal-screen {background-color:var(--mq-dark)}
+/* Long authored guardian names must fit even at 320px. */
+.guide-intro-stage {min-width:0;grid-template-columns:minmax(0,42%) minmax(0,1fr)}
+.guide-intro-copy {min-width:0}
+.guide-intro-name {overflow-wrap:anywhere;font-size:clamp(30px,4vw,60px)}
+.guide-intro-proceed {max-width:100%;white-space:normal}
+.mastery-summary-grid {grid-template-columns:repeat(auto-fit,minmax(min(180px,100%),1fr))}
+@media(max-width:760px){
+  .guide-intro-stage {grid-template-columns:minmax(0,1fr)}
+  .guide-intro-name {font-size:30px;line-height:1.08}
+}
+@media(max-width:560px){
+  body.game-active .dungeon-container {padding-top:48px}
+}
+
+/* exchange-citadel: Amethyst, lavender and gold, with cyan room accents; historical reference a0f1dea1889ce9ccfa4c27e57fd3c82d225c85c5. */
+:root{--mq-text:rgb(245, 243, 255);--mq-muted:rgb(245, 243, 255);--mq-heading:#fff7d6;--mq-focus:#c4b5fd;--mq-dark:#050312;--mq-surface:#140a26;--mq-accent:196,181,253;--mq-secondary:240,200,106;--mq-panel-paint:radial-gradient(circle at center top, rgba(196, 181, 253, 0.18), rgba(109, 40, 217, 0.16) 34%, rgba(20, 10, 38, 0.94) 72%, rgba(5, 3, 18, 0.98));--mq-panel-shadow:rgba(196, 181, 253, 0.2) 0px 0px 24px, rgba(109, 40, 217, 0.18) 0px 0px 62px, rgba(0, 0, 0, 0.72) 0px 0px 36px inset;--mq-panel-border:rgba(240, 200, 106, 0.44);--mq-button-paint:linear-gradient(rgba(76, 29, 149, 0.96), rgba(18, 8, 32, 0.98));--mq-button-shadow:rgba(56, 189, 248, 0.24) 0px 0px 12px, rgba(8, 47, 73, 0.18) 0px 0px 24px, rgba(0, 0, 0, 0.62) 0px 0px 10px inset;--mq-button-border:rgba(240, 200, 106, 0.48);--mq-hover-paint:linear-gradient(rgba(109, 40, 217, 0.98), rgba(46, 16, 101, 0.98));--mq-hover-shadow:rgba(196, 181, 253, 0.46) 0px 0px 20px, rgba(240, 200, 106, 0.18) 0px 0px 36px, rgba(0, 0, 0, 0.66) 0px 0px 12px inset;--mq-hover-border:rgba(255, 247, 214, 0.72);--mq-tile-paint:linear-gradient(rgba(11, 34, 56, 0.72), rgba(2, 6, 23, 0.86));--mq-tile-border:rgba(56, 189, 248, 0.18);--mq-active-paint:radial-gradient(circle, rgba(56, 189, 248, 0.48), rgba(37, 99, 235, 0.36), rgba(3, 10, 24, 0.92));--mq-active-shadow:rgba(248, 217, 129, 0.78) 0px 0px 12px, rgba(56, 189, 248, 0.48) 0px 0px 24px, rgba(0, 0, 0, 0.62) 0px 0px 12px inset;--mq-saved-paint:linear-gradient(rgba(37, 99, 235, 0.62), rgba(3, 10, 24, 0.88));--mq-progress-paint:linear-gradient(90deg, rgb(76, 29, 149), rgb(196, 181, 253), rgb(240, 200, 106));--mq-modal-paint:radial-gradient(circle at center top, rgba(196, 181, 253, 0.18), rgba(109, 40, 217, 0.16) 34%, rgba(20, 10, 38, 0.94) 72%, rgba(5, 3, 18, 0.98));--mq-modal-shadow:rgba(196, 181, 253, 0.2) 0px 0px 24px, rgba(109, 40, 217, 0.18) 0px 0px 62px, rgba(0, 0, 0, 0.72) 0px 0px 36px inset;--mq-boss-1:#38bdf8;--mq-boss-text-1:#38bdf8;--mq-boss-2:#f8d981;--mq-boss-text-2:#f8d981;--mq-boss-3:#fff8e7;--mq-boss-text-3:#fff8e7;}
+/* Shared paint for components added after the individual historical themes.
+   Variables are defined independently per game in themes.json. No geometry,
+   visibility, motion preferences or gameplay state is set in this stylesheet. */
+body {color:var(--mq-text)}
+body.blank-builder-template {--mq-gameplay-scene-overlay:linear-gradient(rgba(0,0,0,.30),rgba(0,0,0,.48))}
+.mode-select-screen {background-color:var(--mq-dark);background-image:linear-gradient(rgba(0,0,0,.42),rgba(0,0,0,.78)),var(--mq-start-image)}
+.mode-select-panel,.quiz-setup-panel,.mastery-stat-card,.mastery-section {
+  background-color:var(--mq-surface);background-image:var(--mq-panel-paint);
+  border-color:var(--mq-panel-border);box-shadow:var(--mq-panel-shadow);color:var(--mq-text);
+}
+.mode-title,.mode-card-title,.quiz-setup-title,.mastery-report-title,.mastery-stat-value,.mastery-section h3 {color:var(--mq-heading);text-shadow:0 0 12px rgba(var(--mq-accent),.3)}
+.mode-subtitle,.mode-card-text,.quiz-setup-subtitle,.mastery-report-subtitle,.mastery-stat-label,.mastery-note,.mastery-small,.mastery-evidence-copy {color:var(--mq-muted)}
+.mode-card {background-color:var(--mq-surface);background-image:none;color:var(--mq-text);border-color:var(--mq-panel-border)}
+.mode-card .mode-symbol {background-image:var(--mq-panel-paint);color:var(--mq-heading);border-color:var(--mq-panel-border)}
+.mode-card .mode-symbol::after {color:var(--mq-heading);text-shadow:0 0 15px rgba(var(--mq-accent),.4)}
+.mode-card:hover {border-color:var(--mq-focus);box-shadow:0 0 22px rgba(var(--mq-accent),.3)}
+/* The aligned launcher's legacy inline/important paint needs a narrow override. */
+body #returnMenuBtn.return-menu-btn {color:var(--mq-text)!important;background:var(--mq-button-paint)!important;border-color:var(--mq-button-border)!important;box-shadow:var(--mq-button-shadow)}
+body #returnMenuBtn.return-menu-btn:hover {background:var(--mq-hover-paint)!important;border-color:var(--mq-hover-border)!important;box-shadow:var(--mq-hover-shadow)}
+#gameMenuOptions .game-menu-option,#gameMenuOptions #soundToggle {color:var(--mq-text);background:var(--mq-button-paint);border-color:var(--mq-button-border);box-shadow:var(--mq-button-shadow)}
+#gameMenuOptions .game-menu-option:hover,#gameMenuOptions #soundToggle:hover {background:var(--mq-hover-paint);border-color:var(--mq-hover-border);box-shadow:var(--mq-hover-shadow)}
+.game-modal,.quiz-setup-modal {background-color:rgba(0,0,0,.72)}
+.game-modal-card {background-image:var(--mq-modal-paint);background-color:var(--mq-dark);border-color:var(--mq-panel-border);box-shadow:var(--mq-modal-shadow);color:var(--mq-text)}
+.game-modal-card h2 {color:var(--mq-heading)}
+.game-modal-card p {color:var(--mq-muted)}
+.secondary-modal-btn,.secondary-start-btn,.end-practice-btn {color:var(--mq-heading);background-image:var(--mq-button-paint);border-color:var(--mq-button-border)}
+/* New Exam states retain their existing labels, disabled/locked opacity, and
+   selected-state border widths. Saved answers do not imply correctness. */
+button.maze-box.exam-nav-room {color:var(--mq-text)}
+button.maze-box.exam-nav-room.exam-unanswered {background-image:var(--mq-tile-paint);border-color:var(--mq-tile-border)}
+button.maze-box.exam-nav-room.exam-answered {background-image:var(--mq-saved-paint);border-color:var(--mq-heading)}
+button.maze-box.exam-nav-room.exam-boss-ready {background-image:var(--mq-active-paint);border-color:var(--mq-focus);box-shadow:var(--mq-active-shadow)}
+button.maze-box.exam-nav-room.active {background-image:var(--mq-active-paint);border-color:var(--mq-focus);box-shadow:var(--mq-active-shadow)}
+button.maze-box.exam-nav-room.exam-committed {background-image:var(--mq-saved-paint);border-color:var(--mq-panel-border)}
+button.maze-box.exam-nav-room:hover,button.maze-box.exam-nav-room:focus-visible {border-color:var(--mq-focus);box-shadow:0 0 0 3px rgba(var(--mq-accent),.28),0 0 14px rgba(var(--mq-accent),.42)}
+#answers button.selected,#answers button[aria-pressed="true"] {background-image:var(--mq-active-paint)!important;border-color:var(--mq-focus)!important;box-shadow:var(--mq-active-shadow)!important}
+body[data-macro-mode="exam"] #message {text-shadow:none}
+/* Independent palettes extend to introductions absent from the historical UI. */
+.guide-intro-screen,.boss-reveal-screen {color:var(--mq-text);background-color:var(--mq-dark);background-image:linear-gradient(115deg,var(--mq-dark),var(--mq-surface)),var(--mq-guide-intro-image,var(--mq-start-image,none))}
+.boss-reveal-screen {background-image:linear-gradient(115deg,var(--mq-dark),var(--mq-surface)),var(--mq-boss-reveal-image,none);--bossRevealGlow:rgba(var(--mq-accent),.25)!important;--bossRevealBorder:var(--mq-panel-border)!important}
+.guide-intro-screen::before {background:radial-gradient(circle at 28% 42%,rgba(var(--mq-accent),.16),transparent 36%),linear-gradient(90deg,rgba(0,0,0,.16),transparent 48%,rgba(0,0,0,.36))}
+.guide-intro-portrait-frame {background-image:radial-gradient(circle at 50% 34%,rgba(var(--mq-accent),.19),var(--mq-dark) 66%);border-color:var(--mq-panel-border);box-shadow:0 22px 70px rgba(0,0,0,.72),0 0 38px rgba(var(--mq-accent),.15)}
+.boss-reveal-screen .guide-intro-portrait-frame {background-image:radial-gradient(circle at 50% 34%,rgba(var(--mq-accent),.25),var(--mq-dark) 68%)}
+.guide-intro-name,.guide-intro-kicker,.guide-intro-fallback {color:var(--mq-heading)}
+.guide-intro-dialogue {color:var(--mq-text)}
+.guide-intro-dialogue.secondary {color:var(--mq-muted)}
+.guide-intro-proceed {color:var(--mq-dark);background:linear-gradient(var(--mq-heading),var(--mq-focus));border-color:var(--mq-focus);box-shadow:0 0 24px rgba(var(--mq-accent),.25),0 12px 30px rgba(0,0,0,.42)}
+.guide-intro-proceed:hover,.guide-intro-proceed:focus-visible {outline-color:var(--mq-focus);box-shadow:0 0 32px rgba(var(--mq-accent),.4)}
+.generic-boss-image,.boss-q {--bossColor:var(--mq-focus)!important}
+.boss-title,.generic-boss-symbol,#gameBox.boss-mode #bossMessage {color:var(--mq-heading)!important}
+/* Feedback text is authored by the preserved engine with inline colors. */
+#hallwayText > div:first-child {color:var(--mq-heading)!important}
+#hallwayText > div:nth-child(2) {color:var(--mq-text)!important}
+#hallwayText > div:last-child {color:var(--mq-muted)!important}
+/* Daily status-specific success rules remain more specific than these bases. */
+.daily-task-pill,.daily-details-panel,.daily-toast {color:var(--mq-text);background-image:var(--mq-modal-paint);background-color:var(--mq-dark);border-color:var(--mq-panel-border);box-shadow:var(--mq-modal-shadow)}
+.daily-task-pill:hover,.daily-task-pill:focus-visible {border-color:var(--mq-focus);box-shadow:var(--mq-hover-shadow)}
+.daily-details-close {color:var(--mq-text);background:var(--mq-button-paint);border-color:var(--mq-button-border)}
+.daily-details-title,.daily-toast-title {color:var(--mq-text)}
+.daily-details-kicker,.daily-stat-value,.daily-toast-kicker {color:var(--mq-heading)}
+.daily-details-meta,.daily-stat-label,.daily-toast-copy,.daily-toast-progress {color:var(--mq-muted)}
+.daily-progress-track,.daily-stat,.mastery-evidence-cell {background:rgba(var(--mq-accent),.08);border-color:rgba(var(--mq-accent),.24)}
+.daily-progress-fill {background-image:var(--mq-progress-paint);box-shadow:0 0 12px rgba(var(--mq-accent),.45)}
+.targeted-repair-indicator {background:var(--mq-surface);color:var(--mq-heading);border-color:var(--mq-panel-border)}
+.mastery-report-screen {color:var(--mq-text)}
+.mastery-bar {background:var(--mq-dark);border-color:var(--mq-panel-border)}
+.mastery-bar-fill {background-image:var(--mq-progress-paint);box-shadow:0 0 10px rgba(var(--mq-accent),.38)}
+.mastery-evidence-badge[data-evidence="strong"] {color:var(--mq-text);border-color:var(--mq-focus)}
+.mastery-actions button {background-image:var(--mq-button-paint);border-color:var(--mq-button-border);color:var(--mq-text)}
+.fading-fortune-hud,.risk-reward-hud,.score-attack-hud {background-image:var(--mq-panel-paint);border-color:var(--mq-panel-border)}
+/* Completion markup also carries inline paint. These exceptions are scoped to
+   that markup, not to universal elements or success/error feedback. */
+#gameBox .victory {color:var(--mq-heading)!important;text-shadow:0 0 18px rgba(var(--mq-accent),.9)!important}
+#gameBox .victory + div {background:var(--mq-surface)!important;border-color:var(--mq-panel-border)!important;box-shadow:var(--mq-panel-shadow)!important}
+#archivistLine {color:var(--mq-muted)!important;text-shadow:0 0 8px rgba(var(--mq-accent),.35)!important}
+#gameBox button[onclick="downloadTelemetryCsv()"],#gameBox button[onclick="showMasteryReportScreen()"] {background:var(--mq-button-paint)!important;color:var(--mq-text)!important;border-color:var(--mq-button-border)!important}
+/* The current room grid is the presentation state source; no engine mutation
+   or new markup is needed for historical checkpoint-stage colors. */
+body {--mq-checkpoint:var(--mq-boss-1);--mq-checkpoint-text:var(--mq-boss-text-1)}
+body:has(#mazeTrack .active:nth-child(20)) {--mq-checkpoint:var(--mq-boss-2);--mq-checkpoint-text:var(--mq-boss-text-2)}
+body:has(#mazeTrack .active:nth-child(30)) {--mq-checkpoint:var(--mq-boss-3);--mq-checkpoint-text:var(--mq-boss-text-3)}
+.boss-reveal-screen {--bossRevealGlow:color-mix(in srgb,var(--mq-checkpoint) 25%,transparent)!important}
+.generic-boss-image,.boss-q {--bossColor:var(--mq-checkpoint)!important}
+.boss-title,.generic-boss-symbol,#gameBox.boss-mode #bossMessage {color:var(--mq-checkpoint-text)!important}
+.boss-reveal-screen .guide-intro-name,.boss-reveal-screen .guide-intro-kicker {color:var(--mq-checkpoint-text)}
+body.blank-builder-template #message {color:var(--mq-muted)}
+body #returnMenuBtn.return-menu-btn {box-shadow:var(--mq-button-shadow)!important}
+body #returnMenuBtn.return-menu-btn:hover {box-shadow:var(--mq-hover-shadow)!important}
+.score-attack-label,.fading-fortune-label,.fading-fortune-subtitle,.risk-reward-label,.risk-wager-kicker,.risk-wager-copy {color:var(--mq-muted)}
+.fading-fortune-value,.risk-reward-value,.score-attack-value,.target-unlimited-symbol {color:var(--mq-heading)}
+.risk-wager-card,.risk-wager-panel {background-image:var(--mq-modal-paint);border-color:var(--mq-panel-border);color:var(--mq-text)}
+#shareBtn {color:var(--mq-dark)!important;background:linear-gradient(var(--mq-heading),var(--mq-focus))!important}
+
+/* The shared Auditor uses the existing Custodian artwork without a portrait halo. */
+body #wizardImage,body #wizardImage.mq-guide-image img,#guideIntroScreen .guide-intro-image {filter:none;box-shadow:none}
+#guideIntroScreen .guide-intro-portrait-frame {background-image:none;box-shadow:none}
+#guideIntroScreen::before {background:none}
+
+body{color:rgb(238, 248, 255);background-color:initial;}
+body::after{background-image:radial-gradient(circle, rgba(245, 214, 130, 0.09), rgba(30, 24, 18, 0.34) 48%, rgba(3, 5, 12, 0.82) 100%);background-color:initial;}
+.title{color:rgb(248, 217, 129);text-shadow:rgba(56, 189, 248, 0.85) 0px 0px 14px, rgba(180, 83, 9, 0.55) 0px 0px 34px, rgba(0, 0, 0, 0.9) 0px 3px 8px;}
+.subtitle{color:rgb(114, 215, 255);text-shadow:rgba(185, 135, 70, 0.45) 0px 0px 10px, rgba(42, 23, 165, 0.55) 0px 0px 34px, rgba(0, 0, 0, 0.9) 0px 3px 8px;}
+.tagline{color:rgb(199, 236, 255);text-shadow:rgba(0, 0, 0, 0.85) 0px 2px 6px, rgba(0, 0, 0, 0.88) 0px 2px 6px;}
+.name-input{background-image:initial;background-color:rgba(3, 10, 24, 0.88);color:rgb(238, 248, 255);outline-color:initial;box-shadow:rgba(56, 189, 248, 0.28) 0px 0px 14px, rgba(0, 0, 0, 0.65) 0px 0px 12px inset;border-color:rgba(56, 189, 248, 0.45);}
+.name-input:focus{box-shadow:rgba(248, 217, 129, 0.45) 0px 0px 18px, rgba(14, 116, 144, 0.35) 0px 0px 32px, rgba(0, 0, 0, 0.75) 0px 0px 12px inset;border-color:rgba(248, 217, 129, 0.75);}
+.secondary-start-btn{background-image:linear-gradient(rgb(11, 59, 90), rgb(4, 16, 31));background-color:initial;color:rgb(248, 217, 129);border-color:rgba(248, 217, 129, 0.62);}
+#username::placeholder{color:rgba(216, 199, 160, 0.52);}
+#gameBox{background-image:radial-gradient(circle, rgba(168, 85, 247, 0.12) 0%, rgba(245, 214, 130, 0.09) 40%, rgba(20, 12, 30, 0.94) 74%, rgba(3, 5, 12, 0.99) 100%);background-color:initial;box-shadow:rgba(168, 85, 247, 0.17) 0px 0px 22px, rgba(245, 214, 130, 0.11) 0px 0px 58px, rgba(3, 5, 12, 0.72) 0px 0px 72px, rgba(0, 0, 0, 0.78) 0px 0px 42px inset;border-color:rgba(216, 180, 254, 0.34);}
+#gameBox.boss-mode{box-shadow:rgba(56, 189, 248, 0.58) 0px 0px 32px, rgba(14, 116, 144, 0.48) 0px 0px 64px, rgba(0, 0, 0, 0.78) 0px 0px 42px inset;border-color:rgb(56, 189, 248);}
+.boss10 .boss-icon{filter:drop-shadow(rgba(56, 189, 248, 0.85) 0px 0px 6px) drop-shadow(rgba(37, 99, 235, 0.55) 0px 0px 12px);}
+.boss20 .boss-icon{filter:drop-shadow(rgba(96, 165, 250, 0.9) 0px 0px 8px) drop-shadow(rgba(99, 35, 24, 0.65) 0px 0px 16px);}
+.boss30 .boss-icon{filter:drop-shadow(rgb(248, 217, 129) 0px 0px 10px) drop-shadow(rgba(14, 165, 233, 0.85) 0px 0px 24px);}
+.hit{box-shadow:rgba(14, 165, 233, 0.95) 0px 0px 60px, rgba(248, 217, 129, 0.35) 0px 0px 28px, rgba(8, 47, 73, 0.85) 0px 0px 42px inset;}
+#autosave{color:rgb(199, 236, 255);text-shadow:rgba(56, 189, 248, 0.35) 0px 0px 6px;}
+#questionImageBox img{box-shadow:rgba(56, 189, 248, 0.16) 0px 0px 14px, rgba(0, 0, 0, 0.65) 0px 0px 28px;border-color:rgba(56, 189, 248, 0.22);}
+#questionImageBox .graph-zoom-note{color:rgba(245, 243, 255, 0.72);}
+#graphLightbox{background-image:initial;background-color:rgba(2, 6, 23, 0.88);}
+#graphLightbox img{background-image:initial;background-color:rgb(255, 255, 255);box-shadow:rgba(196, 181, 253, 0.34) 0px 0px 28px, rgba(0, 0, 0, 0.86) 0px 0px 70px;border-color:rgba(240, 200, 106, 0.52);}
+#graphLightboxClose{color:rgb(255, 247, 214);background-image:initial;background-color:rgba(20, 10, 38, 0.94);box-shadow:rgba(196, 181, 253, 0.34) 0px 0px 20px, rgba(0, 0, 0, 0.78) 0px 0px 12px inset;border-color:rgba(240, 200, 106, 0.62);}
+h2{text-shadow:rgba(244, 213, 141, 0.24) 0px 0px 10px, rgba(56, 189, 248, 0.22) 0px 0px 20px, rgba(0, 0, 0, 0.85) 0px 2px 6px;}
+#question{color:rgb(238, 248, 255);text-shadow:rgba(0, 0, 0, 0.85) 0px 2px 5px, rgba(56, 189, 248, 0.12) 0px 0px 8px;}
+.boss-title{color:rgb(248, 217, 129);text-shadow:rgba(248, 217, 129, 0.62) 0px 0px 10px, rgba(14, 165, 233, 0.42) 0px 0px 26px, rgba(0, 0, 0, 0.9) 0px 3px 8px;}
+.area-title{color:rgb(185, 168, 121);text-shadow:rgba(56, 189, 248, 0.18) 0px 0px 8px, rgba(0, 0, 0, 0.85) 0px 2px 5px;}
+.boss-q{border-left-color:rgb(14, 165, 233);color:rgb(238, 248, 255);box-shadow:rgba(14, 165, 233, 0.34) -4px 0px 12px;text-shadow:rgba(0, 0, 0, 0.8) 0px 2px 5px;}
+.hint-box{color:rgb(56, 189, 248);text-shadow:rgba(56, 189, 248, 0.25) 0px 0px 6px;}
+.fade-out-text{color:rgb(248, 217, 129);text-shadow:rgba(248, 217, 129, 0.55) 0px 0px 8px, rgba(0, 0, 0, 0.85) 0px 2px 5px;}
+#message{color:rgb(199, 236, 255);text-shadow:rgba(56, 189, 248, 0.18) 0px 0px 7px, rgba(0, 0, 0, 0.85) 0px 2px 5px;}
+.exchange-citadel #message{color:rgb(56, 189, 248);text-shadow:rgba(56, 189, 248, 0.42) 0px 0px 8px, rgba(14, 116, 144, 0.25) 0px 0px 18px, rgba(0, 0, 0, 0.85) 0px 2px 6px;}
+button{background-image:linear-gradient(rgb(18, 48, 79), rgb(4, 16, 31));background-color:initial;color:rgb(238, 248, 255);box-shadow:rgba(56, 189, 248, 0.24) 0px 0px 12px, rgba(8, 47, 73, 0.18) 0px 0px 24px, rgba(0, 0, 0, 0.62) 0px 0px 10px inset;border-color:rgba(56, 189, 248, 0.42);}
+button:hover{background-image:linear-gradient(rgb(29, 77, 115), rgb(11, 34, 56));background-color:initial;box-shadow:rgba(248, 217, 129, 0.48) 0px 0px 18px, rgba(14, 165, 233, 0.28) 0px 0px 34px, rgba(0, 0, 0, 0.68) 0px 0px 12px inset;border-color:rgba(248, 217, 129, 0.7);}
+.answers button{background-image:linear-gradient(rgba(11, 34, 56, 0.96), rgba(3, 10, 24, 0.98));background-color:initial;color:rgb(238, 248, 255);box-shadow:rgba(56, 189, 248, 0.16) 0px 0px 10px, rgba(0, 0, 0, 0.7) 0px 0px 14px inset;border-color:rgba(56, 189, 248, 0.34);}
+.answers button:hover{background-image:linear-gradient(rgba(19, 57, 86, 0.98), rgba(8, 24, 42, 0.98));background-color:initial;box-shadow:rgba(56, 189, 248, 0.38) 0px 0px 18px, rgba(37, 99, 235, 0.22) 0px 0px 32px, rgba(0, 0, 0, 0.68) 0px 0px 14px inset;border-color:rgba(248, 217, 129, 0.68);}
+.fullscreenBtn{color:rgb(238, 248, 255);background-image:linear-gradient(rgb(18, 48, 79), rgb(4, 16, 31));background-color:initial;box-shadow:rgba(56, 189, 248, 0.22) 0px 0px 10px, rgba(0, 0, 0, 0.72) 0px 0px 7px inset;border-color:rgba(56, 189, 248, 0.34);}
+.fullscreenBtn:hover{background-image:linear-gradient(rgb(29, 77, 115), rgb(11, 34, 56));background-color:initial;box-shadow:rgba(56, 189, 248, 0.42) 0px 0px 16px, rgba(0, 0, 0, 0.72) 0px 0px 8px inset;border-color:rgba(248, 217, 129, 0.62);}
+.fullscreenBtn:active{box-shadow:rgba(56, 189, 248, 0.28) 0px 0px 8px, rgba(0, 0, 0, 0.85) 0px 0px 10px inset;}
+.return-menu-btn{color:rgb(238, 248, 255);background-image:linear-gradient(rgb(18, 48, 79), rgb(4, 16, 31));background-color:initial;box-shadow:rgba(56, 189, 248, 0.22) 0px 0px 10px, rgba(0, 0, 0, 0.72) 0px 0px 7px inset;border-color:rgba(56, 189, 248, 0.34);}
+.return-menu-btn:hover{color:rgb(248, 217, 129);box-shadow:rgba(56, 189, 248, 0.34) 0px 0px 16px, rgba(0, 0, 0, 0.76) 0px 0px 8px inset;border-color:rgba(248, 217, 129, 0.62);}
+.continue-btn{background-image:linear-gradient(rgb(29, 77, 115), rgb(4, 16, 31));background-color:initial;color:rgb(238, 248, 255);box-shadow:rgba(56, 189, 248, 0.38) 0px 0px 16px, rgba(14, 165, 233, 0.28) 0px 0px 34px, rgba(0, 0, 0, 0.65) 0px 0px 12px inset;border-color:rgba(248, 217, 129, 0.52);}
+.continue-btn:hover{background-image:linear-gradient(rgb(36, 98, 143), rgb(11, 34, 56));background-color:initial;box-shadow:rgba(248, 217, 129, 0.58) 0px 0px 24px, rgba(14, 165, 233, 0.36) 0px 0px 42px, rgba(0, 0, 0, 0.65) 0px 0px 12px inset;}
+#continueBtn:active{box-shadow:rgba(56, 189, 248, 0.28) 0px 0px 10px, rgba(0, 0, 0, 0.75) 0px 0px 10px inset;}
+#progressBar{background-image:linear-gradient(rgba(3, 10, 24, 0.95), rgba(2, 6, 23, 0.98));background-color:initial;box-shadow:rgba(0, 0, 0, 0.82) 0px 0px 12px inset, rgba(56, 189, 248, 0.12) 0px 0px 10px;border-color:rgba(56, 189, 248, 0.22);}
+#progressFill{background-image:linear-gradient(90deg, rgb(11, 59, 90), rgb(56, 189, 248), rgb(14, 165, 233));background-color:initial;box-shadow:rgba(56, 189, 248, 0.45) 0px 0px 12px, rgba(14, 165, 233, 0.25) 0px 0px 22px;}
+.maze-box{background-image:linear-gradient(rgba(11, 34, 56, 0.72), rgba(2, 6, 23, 0.86));background-color:initial;box-shadow:rgba(0, 0, 0, 0.72) 0px 0px 10px inset, rgba(56, 189, 248, 0.08) 0px 0px 5px;border-color:rgba(56, 189, 248, 0.18);}
+.maze-box.active{background-image:radial-gradient(circle, rgba(56, 189, 248, 0.48), rgba(37, 99, 235, 0.36), rgba(3, 10, 24, 0.92));background-color:initial;box-shadow:rgba(248, 217, 129, 0.78) 0px 0px 12px, rgba(56, 189, 248, 0.48) 0px 0px 24px, rgba(0, 0, 0, 0.62) 0px 0px 12px inset;border-color:rgb(248, 217, 129);}
+.maze-box.completed{background-image:linear-gradient(rgba(37, 99, 235, 0.62), rgba(3, 10, 24, 0.88));background-color:initial;box-shadow:rgba(56, 189, 248, 0.28) 0px 0px 8px, rgba(0, 0, 0, 0.7) 0px 0px 10px inset;border-color:rgba(56, 189, 248, 0.38);}
+.maze-box:nth-child(10){text-shadow:rgb(56, 189, 248) 0px 0px 8px, rgba(37, 99, 235, 0.8) 0px 0px 18px;}
+.maze-box:nth-child(20){text-shadow:rgb(96, 165, 250) 0px 0px 8px, rgba(14, 165, 233, 0.75) 0px 0px 18px;}
+.maze-box:nth-child(30){text-shadow:rgb(248, 217, 129) 0px 0px 10px, rgba(14, 165, 233, 0.95) 0px 0px 24px, rgba(56, 189, 248, 0.42) 0px 0px 34px;}
+.streak{color:rgba(243, 234, 210, 0.94);text-shadow:rgba(56, 189, 248, 0.32) 0px 0px 7px, rgba(0, 0, 0, 0.85) 0px 2px 5px;}
+.streak-icon{filter:drop-shadow(rgba(56, 189, 248, 0.75) 0px 0px 8px) drop-shadow(rgba(14, 116, 144, 0.52) 0px 0px 15px);background-image:radial-gradient(circle, rgba(248, 217, 129, 0.46) 0%, rgba(37, 99, 235, 0.34) 45%, transparent 72%);background-color:initial;}
+#artifactDrop{background-image:radial-gradient(circle, rgba(37, 99, 235, 0.34), rgba(3, 10, 24, 0.96) 62%, rgba(2, 6, 23, 0.98));background-color:initial;box-shadow:rgba(56, 189, 248, 0.28) 0px 0px 22px, rgba(14, 165, 233, 0.22) 0px 0px 42px, rgba(0, 0, 0, 0.76) 0px 0px 28px inset;border-color:rgba(56, 189, 248, 0.34);}
+#artifactDrop img{filter:drop-shadow(rgba(248, 217, 129, 0.82) 0px 0px 14px) drop-shadow(rgba(14, 165, 233, 0.42) 0px 0px 26px);}
+#artifactVault{background-image:radial-gradient(circle at center top, rgba(37, 99, 235, 0.42), rgba(3, 10, 24, 0.96) 58%, rgba(2, 6, 23, 0.98));background-color:initial;box-shadow:rgba(56, 189, 248, 0.22) 0px 0px 20px, rgba(8, 47, 73, 0.2) 0px 0px 38px, rgba(0, 0, 0, 0.76) 0px 0px 30px inset;border-color:rgba(56, 189, 248, 0.3);}
+#artifactVault h3{color:rgb(248, 217, 129);text-shadow:rgba(56, 189, 248, 0.52) 0px 0px 10px, rgba(0, 0, 0, 0.85) 0px 2px 6px;}
+.artifactSlot span{color:rgba(216, 199, 160, 0.38);}
+.artifactSlot.unlocked img{filter:drop-shadow(rgba(248, 217, 129, 0.86) 0px 0px 14px) drop-shadow(rgba(56, 189, 248, 0.46) 0px 0px 26px) drop-shadow(rgba(14, 165, 233, 0.24) 0px 0px 34px);}
+.artifactSlot.unlocked span{color:rgb(238, 248, 255);text-shadow:rgba(56, 189, 248, 0.38) 0px 0px 7px, rgba(0, 0, 0, 0.85) 0px 2px 5px;}
+.keeperGlow{filter:drop-shadow(rgba(56, 189, 248, 0.82) 0px 0px 12px) drop-shadow(rgba(37, 99, 235, 0.5) 0px 0px 24px) drop-shadow(rgba(0, 0, 0, 0.75) 0px 0px 34px);}
+.chancellorGlow{filter:drop-shadow(rgba(245, 230, 184, 0.88) 0px 0px 14px) drop-shadow(rgba(124, 58, 237, 0.56) 0px 0px 28px) drop-shadow(rgba(0, 0, 0, 0.84) 0px 0px 38px);}
+.custodianGlow{filter:drop-shadow(rgba(248, 217, 129, 0.96) 0px 0px 16px) drop-shadow(rgba(14, 165, 233, 0.74) 0px 0px 34px) drop-shadow(rgba(56, 189, 248, 0.34) 0px 0px 46px) drop-shadow(rgba(0, 0, 0, 0.82) 0px 0px 52px);}
+.torch{filter:drop-shadow(rgba(248, 217, 129, 0.68) 0px 0px 12px) drop-shadow(rgba(14, 165, 233, 0.26) 0px 0px 24px);}
+#hallwayTransition{background-color:initial;color:rgb(238, 248, 255);}
+#hallwayText{background-image:radial-gradient(circle, rgba(37, 99, 235, 0.3), rgba(3, 10, 24, 0.82) 58%, rgba(2, 6, 23, 0.92));background-color:initial;box-shadow:rgba(0, 0, 0, 0.82) 0px 0px 24px, rgba(56, 189, 248, 0.18) 0px 0px 28px, rgba(0, 0, 0, 0.72) 0px 0px 26px inset;color:rgb(238, 248, 255);text-shadow:rgba(56, 189, 248, 0.26) 0px 0px 8px, rgba(0, 0, 0, 0.9) 0px 2px 6px;border-color:rgba(56, 189, 248, 0.28);}
+.game-modal{background-image:initial;background-color:rgba(2, 6, 23, 0.72);}
+.game-modal-card{background-image:radial-gradient(circle at center top, rgba(56, 189, 248, 0.18), rgba(14, 116, 144, 0.72) 45%, rgba(2, 6, 23, 0.98));background-color:initial;box-shadow:rgba(0, 0, 0, 0.88) 0px 0px 34px, rgba(56, 189, 248, 0.22) 0px 0px 38px, rgba(0, 0, 0, 0.72) 0px 0px 30px inset;border-color:rgba(248, 217, 129, 0.42);}
+.game-modal-card h2{color:rgb(248, 217, 129);}
+.game-modal-card p{color:rgb(238, 248, 255);}
+.secondary-modal-btn{color:rgb(238, 248, 255);border-color:rgba(56, 189, 248, 0.42);}
+.top-title{color:rgb(248, 217, 129);text-shadow:rgba(56, 189, 248, 0.45) 0px 0px 10px, rgba(0, 0, 0, 0.9) 0px 2px 6px;}
+#gameShell{background-image:linear-gradient(rgba(3, 12, 28, 0.96), rgba(2, 6, 23, 0.98));background-color:initial;box-shadow:rgba(0, 0, 0, 0.92) 0px 0px 30px, rgba(56, 189, 248, 0.16) 0px 0px 58px, rgba(8, 47, 73, 0.16) 0px 0px 76px, rgba(0, 0, 0, 0.74) 0px 0px 42px inset;border-color:rgba(56, 189, 248, 0.28);}
+#wizardBox{background-image:linear-gradient(rgba(11, 34, 56, 0.94), rgba(8, 10, 10, 0.98));background-color:initial;box-shadow:rgba(0, 0, 0, 0.78) 0px 0px 26px inset, rgba(56, 189, 248, 0.12) 0px 0px 18px;border-color:rgba(56, 189, 248, 0.26);}
+#wizardName{color:rgb(56, 189, 248);border-bottom-color:rgba(56, 189, 248, 0.34);text-shadow:rgba(56, 189, 248, 0.48) 0px 0px 6px, rgba(0, 0, 0, 0.85) 0px 2px 5px;}
+#wizardImage{filter:drop-shadow(rgba(56, 189, 248, 0.62) 0px 0px 12px) drop-shadow(rgba(37, 99, 235, 0.28) 0px 0px 24px) drop-shadow(rgba(0, 0, 0, 0.82) 0px 0px 30px);}
+.boss-mode #gameBox{box-shadow:rgba(248, 217, 129, 0.42) 0px 0px 34px, rgba(14, 165, 233, 0.42) 0px 0px 72px, rgba(0, 0, 0, 0.82) 0px 0px 46px inset;border-color:rgba(248, 217, 129, 0.72);}
+.boss-mode #gameShell{box-shadow:rgba(0, 0, 0, 0.94) 0px 0px 36px, rgba(56, 189, 248, 0.24) 0px 0px 64px, rgba(14, 165, 233, 0.26) 0px 0px 90px, rgba(0, 0, 0, 0.78) 0px 0px 48px inset;border-color:rgba(248, 217, 129, 0.42);}
+@media (max-width: 768px){.return-menu-btn{background-image:initial;background-color:rgba(0, 0, 0, 0.58);color:rgba(255, 255, 255, 0.86);box-shadow:rgba(56, 189, 248, 0.24) 0px 0px 14px, rgba(0, 0, 0, 0.55) 0px 0px 18px;border-color:rgba(56, 189, 248, 0.42);}}
+@media (max-width: 768px){#gameShell{box-shadow:rgba(0, 0, 0, 0.9) 0px 0px 24px, rgba(56, 189, 248, 0.14) 0px 0px 38px, rgba(0, 0, 0, 0.78) 0px 0px 30px inset;border-color:rgba(56, 189, 248, 0.22);}}
+.mode-select-screen{background-color:initial;}
+.mode-select-panel{background-image:initial;background-color:rgba(3, 10, 24, 0.88);box-shadow:rgba(0, 0, 0, 0.82) 0px 0px 36px, rgba(56, 189, 248, 0.18) 0px 0px 44px, rgba(0, 0, 0, 0.62) 0px 0px 36px inset;border-color:rgba(56, 189, 248, 0.38);}
+.mode-title{color:rgb(248, 217, 129);text-shadow:rgba(56, 189, 248, 0.68) 0px 0px 14px, rgba(0, 0, 0, 0.9) 0px 3px 8px;}
+.mode-subtitle{color:rgb(199, 236, 255);}
+.mode-card{background-image:initial;background-color:rgba(3, 10, 24, 0.94);color:rgb(238, 248, 255);box-shadow:rgba(0, 0, 0, 0.68) 0px 0px 22px, rgba(0, 0, 0, 0.58) 0px 0px 18px inset;border-color:rgba(56, 189, 248, 0.3);}
+.mode-card:hover{box-shadow:rgba(56, 189, 248, 0.32) 0px 0px 28px, rgba(0, 0, 0, 0.62) 0px 0px 18px inset;border-color:rgba(248, 217, 129, 0.78);}
+.mode-card img{border-bottom-color:rgba(248, 217, 129, 0.22);background-image:linear-gradient(rgba(37, 99, 235, 0.4), rgba(2, 6, 23, 0.98));background-color:initial;}
+.mode-card-title{color:rgb(248, 217, 129);}
+.mode-card-text{color:rgba(243, 234, 210, 0.86);}
+.sr-only{border-color:currentcolor;}
+.timed-mode-hud{background-image:linear-gradient(rgba(14, 116, 144, 0.75), rgba(2, 6, 23, 0.96));background-color:initial;box-shadow:rgba(56, 189, 248, 0.24) 0px 0px 16px, rgba(0, 0, 0, 0.72) 0px 0px 12px inset;border-color:rgba(248, 217, 129, 0.48);}
+.timer-label{color:rgb(199, 236, 255);}
+.timer-display{color:rgb(248, 217, 129);text-shadow:rgba(56, 189, 248, 0.62) 0px 0px 10px;}
+.sound-toggle{background-image:initial;background-color:rgba(0, 0, 0, 0.46);color:rgba(255, 255, 255, 0.72);box-shadow:rgba(0, 0, 0, 0.45) 0px 0px 18px;border-color:rgba(255, 255, 255, 0.22);}
+.sound-toggle:hover{color:rgb(255, 255, 255);background-image:initial;background-color:rgba(255, 255, 255, 0.08);border-color:rgba(255, 255, 255, 0.42);}
+.exchange-citadel{color:rgb(245, 243, 255);}
+.exchange-citadel .title, .exchange-citadel .top-title, .exchange-citadel .boss-title, .exchange-citadel #artifactVault h3{color:rgb(255, 247, 214);text-shadow:rgba(240, 200, 106, 0.72) 0px 0px 12px, rgba(196, 181, 253, 0.34) 0px 0px 28px, rgba(0, 0, 0, 0.88) 0px 3px 8px;}
+.exchange-citadel .subtitle, .exchange-citadel .tagline, .exchange-citadel #question, .exchange-citadel .boss-q, .exchange-citadel #message{color:rgb(245, 243, 255);}
+.exchange-citadel #gameShell, .exchange-citadel #gameBox, .exchange-citadel #wizardBox, .exchange-citadel #artifactVault, .exchange-citadel #artifactDrop, .exchange-citadel .mode-select-panel, .exchange-citadel .game-modal-card{background-image:radial-gradient(circle at center top, rgba(196, 181, 253, 0.18), rgba(109, 40, 217, 0.16) 34%, rgba(20, 10, 38, 0.94) 72%, rgba(5, 3, 18, 0.98));background-color:initial;box-shadow:rgba(196, 181, 253, 0.2) 0px 0px 24px, rgba(109, 40, 217, 0.18) 0px 0px 62px, rgba(0, 0, 0, 0.72) 0px 0px 36px inset;border-color:rgba(240, 200, 106, 0.44);}
+.exchange-citadel button, .exchange-citadel .answers button, .exchange-citadel .continue-btn, .exchange-citadel .mode-card{background-image:linear-gradient(rgba(76, 29, 149, 0.96), rgba(18, 8, 32, 0.98));background-color:initial;color:rgb(245, 243, 255);border-color:rgba(240, 200, 106, 0.48);}
+.exchange-citadel button:hover, .exchange-citadel .answers button:hover, .exchange-citadel .mode-card:hover{background-image:linear-gradient(rgba(109, 40, 217, 0.98), rgba(46, 16, 101, 0.98));background-color:initial;box-shadow:rgba(196, 181, 253, 0.46) 0px 0px 20px, rgba(240, 200, 106, 0.18) 0px 0px 36px, rgba(0, 0, 0, 0.66) 0px 0px 12px inset;border-color:rgba(255, 247, 214, 0.72);}
+.exchange-citadel #progressFill{background-image:linear-gradient(90deg, rgb(76, 29, 149), rgb(196, 181, 253), rgb(240, 200, 106));background-color:initial;}
+.exchange-citadel #wizardName, .exchange-citadel .hint-box{color:rgb(240, 200, 106);border-color:rgba(240, 200, 106, 0.42);}
+.keeperGlow{filter:drop-shadow(rgba(240, 200, 106, 0.84) 0px 0px 12px) drop-shadow(rgba(196, 181, 253, 0.52) 0px 0px 24px) drop-shadow(rgba(0, 0, 0, 0.82) 0px 0px 34px);}
+.custodianGlow{filter:drop-shadow(rgba(240, 200, 106, 0.96) 0px 0px 16px) drop-shadow(rgba(124, 58, 237, 0.82) 0px 0px 34px) drop-shadow(rgba(196, 181, 253, 0.26) 0px 0px 46px) drop-shadow(rgba(0, 0, 0, 0.88) 0px 0px 52px);}
+.chancellor-intro .bossIcon{filter:drop-shadow(rgba(255, 248, 231, 0.95) 0px 0px 12px) drop-shadow(rgba(248, 217, 129, 0.55) 0px 0px 32px) drop-shadow(rgba(56, 189, 248, 0.38) 0px 0px 58px);}
+.chancellor-intro-title{color:rgb(255, 248, 231);text-shadow:rgba(255, 248, 231, 0.85) 0px 0px 12px, rgba(248, 217, 129, 0.45) 0px 0px 32px, rgba(0, 0, 0, 0.95) 0px 3px 8px;}
+.chancellor-intro-line{color:rgb(248, 217, 129);text-shadow:rgba(248, 217, 129, 0.55) 0px 0px 10px, rgba(0, 0, 0, 0.95) 0px 2px 6px;}
+.chancellor-intro-subline{color:rgb(199, 236, 255);text-shadow:rgba(56, 189, 248, 0.42) 0px 0px 8px, rgba(0, 0, 0, 0.95) 0px 2px 6px;}
+@media (hover: none), (pointer: coarse){.answers button:hover{background-image:linear-gradient(rgba(50, 76, 58, 0.98), rgba(12, 24, 20, 0.98));background-color:initial;box-shadow:rgba(214, 177, 92, 0.16) 0px 0px 10px, rgba(65, 95, 78, 0.16) 0px 0px 18px, rgba(0, 0, 0, 0.7) 0px 0px 14px inset;border-color:rgba(214, 177, 92, 0.34);}}
+@media (hover: none), (pointer: coarse){.answers button:active{background-image:linear-gradient(rgba(68, 105, 76, 0.98), rgba(24, 46, 34, 0.98));background-color:initial;box-shadow:rgba(214, 177, 92, 0.38) 0px 0px 18px, rgba(65, 120, 82, 0.35) 0px 0px 34px, rgba(0, 0, 0, 0.68) 0px 0px 14px inset;border-color:rgba(240, 199, 94, 0.68);}}
+@media (hover: none), (pointer: coarse){.answers button:focus, .answers button:focus-visible{outline-color:initial;}}
+#returnMenuBtn.return-menu-btn{background-image:initial;background-color:rgba(0, 0, 0, 0.62);color:rgba(255, 255, 255, 0.88);box-shadow:rgba(56, 189, 248, 0.24) 0px 0px 14px, rgba(0, 0, 0, 0.55) 0px 0px 18px;border-color:rgba(56, 189, 248, 0.48);}
+#soundToggle.sound-toggle{background-image:initial;background-color:rgba(0, 0, 0, 0.62);color:rgba(255, 255, 255, 0.78);box-shadow:rgba(0, 0, 0, 0.55) 0px 0px 14px;border-color:rgba(255, 255, 255, 0.22);}
+.score-attack-hud{background-image:linear-gradient(rgba(11, 34, 56, 0.88), rgba(2, 6, 23, 0.96));background-color:initial;box-shadow:rgba(56, 189, 248, 0.24) 0px 0px 16px, rgba(247, 217, 130, 0.18) 0px 0px 26px, rgba(0, 0, 0, 0.74) 0px 0px 12px inset;border-color:rgba(247, 217, 130, 0.5);}
+.score-attack-label, .score-attack-best-label{color:rgb(199, 236, 255);}
+.score-attack-value{color:rgb(247, 217, 130);text-shadow:rgba(247, 217, 130, 0.7) 0px 0px 12px, rgba(56, 189, 248, 0.24) 0px 0px 18px;}
+.score-attack-best{color:rgb(224, 242, 254);text-shadow:rgba(56, 189, 248, 0.46) 0px 0px 10px;}
+.score-float{text-shadow:rgba(0, 0, 0, 0.96) 0px 0px 10px, rgba(56, 189, 248, 0.42) 0px 0px 18px;}
+.score-float.positive{color:rgb(247, 217, 130);}
+.score-float.negative{color:rgb(248, 113, 113);}
+.score-float.neutral{color:rgb(199, 236, 255);}
+.sound-toggle{background-image:linear-gradient(rgba(11, 34, 56, 0.72), rgba(2, 6, 23, 0.82));background-color:initial;color:rgba(224, 242, 254, 0.78);box-shadow:rgba(0, 0, 0, 0.48) 0px 0px 18px, rgba(56, 189, 248, 0.14) 0px 0px 18px, rgba(0, 0, 0, 0.72) 0px 0px 10px inset;border-color:rgba(56, 189, 248, 0.3);}
+.sound-toggle:hover{color:rgb(247, 217, 130);background-image:linear-gradient(rgba(19, 57, 86, 0.84), rgba(4, 14, 28, 0.9));background-color:initial;box-shadow:rgba(0, 0, 0, 0.52) 0px 0px 22px, rgba(56, 189, 248, 0.22) 0px 0px 20px, rgba(247, 217, 130, 0.14) 0px 0px 26px, rgba(0, 0, 0, 0.74) 0px 0px 10px inset;border-color:rgba(247, 217, 130, 0.56);}
+@media (hover: none), (pointer: coarse){.answers button:hover{background-image:linear-gradient(rgba(50, 76, 58, 0.98), rgba(12, 24, 20, 0.98));background-color:initial;box-shadow:rgba(214, 177, 92, 0.16) 0px 0px 10px, rgba(65, 95, 78, 0.16) 0px 0px 18px, rgba(0, 0, 0, 0.7) 0px 0px 14px inset;border-color:rgba(214, 177, 92, 0.34);}}
+@media (hover: none), (pointer: coarse){.answers button:active{background-image:linear-gradient(rgba(68, 105, 76, 0.98), rgba(24, 46, 34, 0.98));background-color:initial;box-shadow:rgba(214, 177, 92, 0.38) 0px 0px 18px, rgba(65, 120, 82, 0.35) 0px 0px 34px, rgba(0, 0, 0, 0.68) 0px 0px 14px inset;border-color:rgba(240, 199, 94, 0.68);}}
+@media (hover: none), (pointer: coarse){.answers button:focus, .answers button:focus-visible{outline-color:initial;}}
+#returnMenuBtn.return-menu-btn{background-image:initial;background-color:rgba(0, 0, 0, 0.62);color:rgba(255, 255, 255, 0.88);box-shadow:rgba(56, 189, 248, 0.24) 0px 0px 14px, rgba(0, 0, 0, 0.55) 0px 0px 18px;border-color:rgba(56, 189, 248, 0.48);}
+#soundToggle.sound-toggle{background-image:initial;background-color:rgba(0, 0, 0, 0.62);color:rgba(255, 255, 255, 0.78);box-shadow:rgba(0, 0, 0, 0.55) 0px 0px 14px;border-color:rgba(255, 255, 255, 0.22);}
+.mastery-report-screen{color:rgb(238, 248, 255);}
+.mastery-report-title{color:rgb(247, 217, 130);text-shadow:rgba(247, 217, 130, 0.7) 0px 0px 16px, rgba(56, 189, 248, 0.28) 0px 0px 30px, rgba(0, 0, 0, 0.92) 0px 3px 8px;}
+.mastery-report-subtitle{color:rgb(199, 236, 255);}
+.mastery-stat-card, .mastery-section{background-image:radial-gradient(circle at center top, rgba(56, 189, 248, 0.14), rgba(11, 34, 56, 0.82) 45%, rgba(2, 6, 23, 0.96));background-color:initial;box-shadow:rgba(0, 0, 0, 0.62) 0px 0px 18px, rgba(0, 0, 0, 0.52) 0px 0px 20px inset;border-color:rgba(247, 217, 130, 0.28);}
+.mastery-stat-label{color:rgb(199, 236, 255);}
+.mastery-stat-value{color:rgb(247, 217, 130);text-shadow:rgba(247, 217, 130, 0.4) 0px 0px 10px;}
+.mastery-section h3{color:rgb(247, 217, 130);text-shadow:rgba(247, 217, 130, 0.34) 0px 0px 10px;}
+.mastery-verdict{border-left-color:rgb(247, 217, 130);background-image:initial;background-color:rgba(2, 6, 23, 0.54);color:rgb(224, 242, 254);}
+.mastery-row{border-top-color:rgba(224, 242, 254, 0.12);}
+.mastery-row:first-child{border-top-color:currentcolor;}
+.mastery-row-name{color:rgb(238, 248, 255);}
+.mastery-row-score{color:rgb(247, 217, 130);}
+.mastery-row-meta{color:rgba(199, 236, 255, 0.72);}
+.mastery-bar{background-image:initial;background-color:rgba(2, 6, 23, 0.82);border-color:rgba(56, 189, 248, 0.18);}
+.mastery-bar-fill{background-image:linear-gradient(90deg, rgb(185, 28, 28), rgb(56, 189, 248), rgb(247, 217, 130));background-color:initial;box-shadow:rgba(56, 189, 248, 0.38) 0px 0px 10px;}
+.mastery-empty{color:rgba(224, 242, 254, 0.74);}
+.targeted-repair-indicator{background-image:initial;background-color:rgba(4, 16, 31, 0.94);color:rgb(247, 217, 130);border-color:rgba(247, 217, 130, 0.55);}
+.targeted-repair-indicator span{color:rgba(255, 255, 255, 0.8);}
+.repair-weak-areas-btn{box-shadow:rgba(74, 222, 128, 0.22) 0px 0px 18px;border-color:rgba(74, 222, 128, 0.75);}
+.target-unlimited-symbol{color:rgb(247, 217, 130);}
+@keyframes activePulse{0%{transform:scale(1.06);box-shadow:rgba(56, 189, 248, 0.68) 0px 0px 8px, rgba(0, 0, 0, 0.6) 0px 0px 10px inset;}45%{transform:scale(1.13);box-shadow:rgba(248, 217, 129, 0.92) 0px 0px 18px, rgba(56, 189, 248, 0.48) 0px 0px 32px, rgba(37, 99, 235, 0.24) 0px 0px 42px, rgba(0, 0, 0, 0.64) 0px 0px 12px inset;}70%{transform:scale(1.09);box-shadow:rgba(56, 189, 248, 0.78) 0px 0px 12px, rgba(14, 165, 233, 0.24) 0px 0px 24px, rgba(0, 0, 0, 0.64) 0px 0px 11px inset;}100%{transform:scale(1.11);box-shadow:rgba(248, 217, 129, 0.72) 0px 0px 15px, rgba(56, 189, 248, 0.36) 0px 0px 30px, rgba(0, 0, 0, 0.68) 0px 0px 12px inset;}}
+@keyframes victoryGlow{0%, 100%{transform:scale(1);text-shadow:rgba(248, 217, 129, 0.72) 0px 0px 10px, rgba(0, 0, 0, 0.9) 0px 2px 6px;}50%{transform:scale(1.08);text-shadow:rgba(248, 217, 129, 0.95) 0px 0px 24px, rgba(56, 189, 248, 0.62) 0px 0px 42px, rgba(14, 165, 233, 0.36) 0px 0px 52px, rgba(0, 0, 0, 0.9) 0px 3px 8px;}}
+@keyframes relicPulse{0%, 100%{transform:scale(1.05);filter:drop-shadow(rgba(56, 189, 248, 0.66) 0px 0px 8px) drop-shadow(rgba(37, 99, 235, 0.34) 0px 0px 18px) drop-shadow(rgba(0, 0, 0, 0.55) 0px 0px 24px);}50%{transform:scale(1.1);filter:drop-shadow(rgba(248, 217, 129, 0.92) 0px 0px 16px) drop-shadow(rgba(56, 189, 248, 0.55) 0px 0px 30px) drop-shadow(rgba(14, 165, 233, 0.24) 0px 0px 38px);}}
+@keyframes timerWarningPulse{0%{transform:scale(1);}100%{transform:scale(1.08);text-shadow:rgba(248, 113, 113, 0.9) 0px 0px 14px, rgba(248, 217, 129, 0.42) 0px 0px 24px;}}
+body :focus-visible{outline-color:var(--mq-focus)}
+</style>
 </head>
 
 <!-- =========================================
@@ -3181,7 +3485,7 @@ Edit appearance freely.
 Respect structure strictly.
 
 ========================================= -->
-<body class="blank-builder-template">
+<body class="blank-builder-template exchange-citadel">
 <!-- Screen reader announcements (accessibility — do not remove) -->
   <div id="srAnnouncements"
      aria-live="polite"
@@ -4300,7 +4604,7 @@ const FACULTY_COMPOSITION_CONFIG = {
   },
   "selectedConceptIds": [],
   "guide": {
-    "displayName": "The Custodian",
+    "displayName": "The Auditor",
     "introLines": [
       "Welcome to The Exchange Citadel. I’ll guide you through the challenges ahead.",
       "If you are ready, follow me."
@@ -4328,8 +4632,8 @@ const FACULTY_COMPOSITION_CONFIG = {
       },
       "guideImage": {
         "src": "custodian.webp",
-        "displayName": "The Custodian",
-        "alt": "The Custodian",
+        "displayName": "The Auditor",
+        "alt": "The Auditor",
         "source": "published",
         "presentationMode": "custom-image"
       },
@@ -8910,7 +9214,7 @@ const wizardFeedback = {
     "That exchange chain breaks.",
     "No. That answer turns the model into rubble.",
     "Bad signal. Fix the diagnosis.",
-    "The Custodian cannot accept that result yet."
+    "The Auditor cannot accept that result yet."
   ]
 };
 
@@ -9031,17 +9335,50 @@ const embeddedQuestionAssets = {
   "mundell_adas.png": "mundell_adas.png"
 };
 const questionAssetMetadata = {
-  "loanablefunds.png": {},
-  "realexchangerates.png": {},
-  "impossibletrinity.png": {},
-  "mundell_ad.png": {},
-  "islm_exchangerates.png": {},
-  "islm_er_change.png": {},
-  "loanablefunds_changes.png": {},
-  "loanablefunds_changes_investment.png": {},
-  "rer_changes.png": {},
-  "tradepolicies.png": {},
-  "mundell_adas.png": {}
+  "loanablefunds.png": {
+    "imageAlt": "Open-economy saving and investment graph with seven points at three world interest-rate levels.",
+    "graphDescription": "The vertical axis is real interest rate, r, and the horizontal axis is Investment, Saving (I, S). A gray line I(r) slopes downward. A vertical line S stands at I2. Dashed guides mark r_w1 above r_w2 above r_w3 and I1, I2, I3 from left to right. Points are A = (I1, r_w1), B = (I2, r_w1), C = (I1, r_w2), D = (I2, r_w2), E = (I1, r_w3), F = (I2, r_w3), and G = (I3, r_w3). A, D, and G lie on I(r); B, D, and F lie on S. No numerical values are given."
+  },
+  "realexchangerates.png": {
+    "imageAlt": "Real-exchange-rate graph with a downward line, vertical S minus I, and points A through G.",
+    "graphDescription": "The vertical axis is real exchange rate, R, and the horizontal axis is Net Exports. An unlabeled gray line slopes downward; a vertical line labeled S - I stands at NX2. Dashed guides mark R1 above R2 above R3 and NX1, NX2, NX3 from left to right. Points are A = (NX1, R1), B = (NX2, R1), C = (NX1, R2), D = (NX2, R2), E = (NX1, R3), F = (NX2, R3), and G = (NX3, R3). A, D, and G lie on the downward line; B, D, and F lie on S - I. No numerical values or arrows are shown."
+  },
+  "impossibletrinity.png": {
+    "imageAlt": "Triangle with three policy-goal labels and sides numbered 1, 2, and 3.",
+    "graphDescription": "A purple triangle has Independent monetary policy above its top vertex, Fixed exchange rate beside its bottom-left vertex, and Free capital mobility beside its bottom-right vertex. Side 1 is the left sloping edge connecting Fixed exchange rate and Independent monetary policy. Side 2 is the right sloping edge connecting Independent monetary policy and Free capital mobility. Side 3 is the horizontal bottom edge connecting Fixed exchange rate and Free capital mobility. There are no axes, marked interior points, directional arrows, or additional written claims."
+  },
+  "mundell_ad.png": {
+    "imageAlt": "Paired exchange-rate and aggregate-demand panels with points A, B, and C.",
+    "graphDescription": "Left panel: the vertical axis is epsilon (ε) and the horizontal axis Y. A downward gray line labeled IS crosses three vertical lines: gray LM*(P1) at Y1, red LM*(P2) at Y2, and blue LM*(P3) at Y3. The intersections are A = (Y1, ε1), B = (Y2, ε2), and C = (Y3, ε3). Dashed horizontal guides show ε1 above ε2 above ε3; Y1, Y2, Y3 increase left to right. Right panel: the vertical axis is P and the horizontal axis Y. A downward line AD contains A = (Y1, P1), B = (Y2, P2), and C = (Y3, P3). Dashed horizontal and vertical guides connect these points to the axes. P1 is above P2 above P3. There are no numerical scales or arrows."
+  },
+  "islm_exchangerates.png": {
+    "imageAlt": "Three downward IS curves intersecting one vertical LM line at exchange-rate points A, B, and C.",
+    "graphDescription": "The vertical axis is Exchange rate, e, and the horizontal axis Y. LM is vertical at Y*. Three parallel downward lines are red IS1 at the upper/right position, gray IS2 in the middle, and blue IS3 at the lower/left position. Their intersections with LM are A = (Y*, e1), B = (Y*, e2), and C = (Y*, e3), respectively. Dashed horizontal guides show e1 above e2 above e3. All three marked points share Y*. There are no numerical values or arrows."
+  },
+  "islm_er_change.png": {
+    "imageAlt": "One downward IS curve intersecting three vertical LM lines at A, B, and C.",
+    "graphDescription": "The vertical axis is Exchange rate, e, and the horizontal axis Y. Gray IS slopes downward. Three vertical lines are blue LM1 at Y1, gray LM2 at Y2, and red LM3 at Y3, ordered left to right. Their intersections with IS are A = (Y1, e1), B = (Y2, e2), and C = (Y3, e3). Dashed horizontal guides show e1 above e2 above e3. No numerical values or arrows are shown."
+  },
+  "loanablefunds_changes.png": {
+    "imageAlt": "Three vertical saving lines and one downward investment line with points A through G.",
+    "graphDescription": "The vertical axis is real interest rate, r, and the horizontal axis Investment, Saving (I, S). Red S1, gray S2, and blue S3 are vertical at I1, I2, and I3, respectively, from left to right. A gray I(r) line slopes downward. Horizontal dashed guides mark r_w1 above r_w2 above r_w3. The marked points are A = (I1, r_w1), B = (I2, r_w1), C = (I1, r_w2), D = (I2, r_w2), E = (I3, r_w2), F = (I2, r_w3), and G = (I3, r_w3). A, D, and G lie on I(r). The other dots lie on the saving lines at the indicated levels. No numerical values or arrows are given."
+  },
+  "loanablefunds_changes_investment.png": {
+    "imageAlt": "Three investment-demand lines and one vertical saving line with points A through H.",
+    "graphDescription": "The vertical axis is real interest rate, r, and the horizontal axis Investment, Saving (I, S). Three parallel downward curves are blue I(r)1 at the lower/left position, gray I(r)2 in the middle, and red I(r)3 at the upper/right position. S1 is vertical at I2. Dashed guides mark r_w1 above r_w2 above r_w3 and I1, I2, I3 from left to right. Points are A = (I1, r_w1), B = (I2, r_w1), C = (I1, r_w2), D = (I2, r_w2), E = (I3, r_w2), F = (I1, r_w3), G = (I2, r_w3), and H = (I3, r_w3). C and G lie on I(r)1; A and D lie on I(r)2; B and E lie on I(r)3. B, D, and G lie on S1. F and H are marked guide points off the three investment curves. No numerical values are supplied."
+  },
+  "rer_changes.png": {
+    "imageAlt": "Three vertical saving-minus-investment lines and a downward curve with a nine-point grid.",
+    "graphDescription": "The vertical axis is real exchange rate, R, and the horizontal axis Net Exports. Three vertical lines stand at NX1, NX2, and NX3: red S1 - I1, gray S2 - I2, and blue S3 - I3, respectively. An unlabeled gray line slopes downward. Dashed horizontal guides mark R1 above R2 above R3. Across NX1, NX2, NX3, the top row is A, B, C at R1; the middle row is D, E, F at R2; the bottom row is G, H, I at R3. The downward line passes through A = (NX1, R1), E = (NX2, R2), and I = (NX3, R3). The other six dots lie off that line. No numerical scales or arrows are shown."
+  },
+  "tradepolicies.png": {
+    "imageAlt": "Three downward net-export curves crossing a fixed vertical S-minus-I line.",
+    "graphDescription": "The vertical axis is real exchange rate, R, and the horizontal axis Net Exports. A vertical line S - I is at the horizontal-axis label NX. Three parallel downward lines are red NX(R)1 at the upper/right position, gray NX(R)2 in the middle, and blue NX(R)3 at the lower/left position. Their intersections with S - I are A at (NX, R1), B at (NX, R2), and C at (NX, R3), respectively. Dashed horizontal guides show R1 above R2 above R3. All three points have the same NX coordinate. No numerical values or arrows are shown."
+  },
+  "mundell_adas.png": {
+    "imageAlt": "Exchange-rate panel beside an AD-SRAS-LRAS panel, both with points A, B, and C.",
+    "graphDescription": "Left panel: the vertical axis is epsilon (ε) and the horizontal axis Y. A downward gray line labeled IS crosses three vertical lines: gray LM*(P1) at Y1, red LM*(P2) at Y2, and blue LM*(P3) at Y3. The intersections are A = (Y1, ε1), B = (Y2, ε2), and C = (Y3, ε3). Dashed horizontal guides show ε1 above ε2 above ε3; Y1, Y2, Y3 increase left to right. Right panel: the vertical axis is P and the horizontal axis Y. A downward gray AD line crosses horizontal SRAS1 at A = (Y1, P1), horizontal red SRAS2 at B = (Y2, P2), and horizontal blue SRAS3 at C = (Y3, P3). P1 is above P2 above P3. A vertical LRAS line passes through B at Y2; vertical dashed guides mark Y1 and Y3. There are no numerical scales or directional arrows."
+  }
 };
 const trialGraphQuestionIds = [];
 const fadingFortuneQuestionIds = [
@@ -16583,5 +16920,75 @@ realmSoundButton.className='game-menu-option';
 document.getElementById('gameMenuOptions').appendChild(realmSoundButton);
 </script>
 <!-- MQ ACCESSIBILITY script END -->
+<script>
+// Keep utility order identical to Cost Directive without adding controls.
+(() => {
+  const menu=document.getElementById('gameMenuOptions');
+  const sound=document.getElementById('soundToggle');
+  const motion=document.getElementById('mqMotionControl')?.closest('.mq-motion-setting');
+  if(menu && sound && motion)menu.insertBefore(sound,motion);
+})();
+
+// Assessment privacy is a presentation boundary. Keep scoring, canonical Daily
+// state, telemetry rows and the 117-column export contract unchanged.
+(() => {
+  const examActive=()=>gameMode==='exam' && !runEnding;
+  const challenge=getBossChallengeLine;
+  getBossChallengeLine=function(...args){
+    return gameMode==='exam'
+      ? 'Respond to all three checkpoint questions. Results are shown together after the checkpoint.'
+      : challenge.apply(this,args);
+  };
+  const track=updateMazeTrack;
+  updateMazeTrack=function(...args){
+    document.body.dataset.macroMode=gameMode;
+    return track.apply(this,args);
+  };
+  const menuDaily=updateGameMenuDailyAction;
+  updateGameMenuDailyAction=function(...args){
+    const result=menuDaily.apply(this,args);
+    if(examActive())document.getElementById('gameMenuDaily').textContent='Daily Task';
+    return result;
+  };
+  const dailyUI=updateDailyUI;
+  updateDailyUI=function(...args){
+    if(!examActive())return dailyUI.apply(this,args);
+    document.getElementById('dailyTaskDock').hidden=true;
+    updateGameMenuDailyAction();
+  };
+  const toast=showDailyToast;
+  showDailyToast=function(...args){if(!examActive())return toast.apply(this,args);};
+  const dailyDetails=openDailyFromGameMenu;
+  openDailyFromGameMenu=function(...args){
+    if(!examActive())return dailyDetails.apply(this,args);
+    closeGameModal();
+    showGameModal({title:'Daily Task',text:'Daily Task progress is saved. Progress and completion details are available after you finish Exam Drill.',confirmText:'Return to Exam'});
+  };
+  const start=startGame;
+  startGame=function(...args){
+    const result=start.apply(this,args);
+    if(examActive()){
+      document.getElementById('dailyToastRegion').replaceChildren();
+      updateDailyUI();
+    }
+    return result;
+  };
+  const download=downloadTelemetryCsv;
+  downloadTelemetryCsv=function(activeRunID=runID){
+    if(examActive() && (!activeRunID || activeRunID===runID)){
+      showGameModal({title:'Game Data',text:'Game data are available after you finish Exam Drill.',confirmText:'Return to Exam'});
+      return;
+    }
+    return download.apply(this,arguments);
+  };
+})();
+
+// Match Managerial's keyboard skip using the existing once-only proceed actions.
+document.addEventListener('keydown',event=>{
+  if(event.key!=='Escape' || event.defaultPrevented)return;
+  if(activeGuideIntroduction){event.preventDefault();proceedGuideIntroduction();}
+  else if(activeBossReveal){event.preventDefault();proceedBossReveal();}
+});
+</script>
 </body>
 </html>

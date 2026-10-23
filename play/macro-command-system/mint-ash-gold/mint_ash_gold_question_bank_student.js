@@ -1360,7 +1360,7 @@ const questionBanks = {
     {
       "id": 9053,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the steady-state graph. If the economy starts at k2 where depreciation exceeds saving, which sequence is correct?",
+      "q": "Refer to the steady-state graph. If the economy starts at k3, where depreciation exceeds saving, which sequence is correct?",
       "options": [
         "Δk is negative, k falls, and output per worker declines toward k*",
         "Δk is positive, k rises, and output per worker rises forever",
@@ -1966,7 +1966,7 @@ const questionBanks = {
     {
       "id": 9077,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the AD-LRAS graph. AD rises from AD1 to AD2. Which answer best separates short-run temptation from long-run result?",
+      "q": "Refer to the AD-LRAS graph. Aggregate demand increases from AD1 to AD3 while LRAS is unchanged. What is the long-run result?",
       "options": [
         "Higher prices in the long run with output back at natural output",
         "Permanently higher output because AD is stronger",

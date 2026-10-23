@@ -3127,6 +3127,238 @@ html.mq-motion-paused .fade-out-text{animation:none!important;opacity:1!importan
 }
 </style>
 <!-- MQ ACCESSIBILITY style END -->
+<!-- Macro Managerial presentation alignment -->
+<style>
+/* Match the established Game Menu controls while retaining each Macro theme. */
+body #returnMenuBtn.return-menu-btn {
+  min-height:44px!important;padding:11px 16px!important;font-size:13px!important;
+  line-height:1.25!important;border-radius:10px!important;
+  border-width:1px;border-style:solid;
+
+}
+#gameMenuOptions #soundToggle {
+  position:static!important;display:block!important;visibility:visible!important;
+  width:100%!important;max-width:none!important;margin:0!important;transform:none!important;
+  box-sizing:border-box;padding:13px 18px;font:inherit;letter-spacing:1px;
+  border-radius:10px;
+}
+#gameMenuOptions > .game-menu-option,
+#gameMenuOptions .mq-motion-setting {box-sizing:border-box;width:100%;margin:0}
+#gameMenuOptions .game-menu-option:focus-visible,
+#returnMenuBtn:focus-visible {outline:2px solid var(--mq-focus);outline-offset:3px}
+#gameMenuOptions .game-menu-option {
+  box-sizing:border-box;width:100%!important;max-width:none!important;
+  margin:0!important;transform:none!important;min-height:48px;
+  padding:11px 16px!important;font-family:inherit;font-size:16px!important;
+  font-weight:400;line-height:1.25;
+}
+/* Cost Directive's understated instruction within the existing question area. */
+body[data-macro-mode="exam"] #message {
+  font-size:16px;font-weight:400;letter-spacing:0;line-height:1.2;
+  text-shadow:none;margin-top:10px;
+}
+body[data-macro-mode="exam"] #mazeTrack .maze-box {
+  box-sizing:border-box;margin:0;padding:0;transform:none;
+}
+/* Opaque scene backing prevents gameplay text bleeding through introductions;
+   retain the existing themed image and gradient layers above this backing. */
+.guide-intro-screen,.boss-reveal-screen {background-color:var(--mq-dark)}
+/* Long authored guardian names must fit even at 320px. */
+.guide-intro-stage {min-width:0;grid-template-columns:minmax(0,42%) minmax(0,1fr)}
+.guide-intro-copy {min-width:0}
+.guide-intro-name {overflow-wrap:anywhere;font-size:clamp(30px,4vw,60px)}
+.guide-intro-proceed {max-width:100%;white-space:normal}
+.mastery-summary-grid {grid-template-columns:repeat(auto-fit,minmax(min(180px,100%),1fr))}
+@media(max-width:760px){
+  .guide-intro-stage {grid-template-columns:minmax(0,1fr)}
+  .guide-intro-name {font-size:30px;line-height:1.08}
+}
+@media(max-width:560px){
+  body.game-active .dungeon-container {padding-top:48px}
+}
+
+/* national-engine: Green charcoal, bronze and aged gold; historical reference a0f1dea1889ce9ccfa4c27e57fd3c82d225c85c5. */
+:root{--mq-text:rgb(243, 234, 210);--mq-muted:rgb(214, 177, 92);--mq-heading:#f4d58d;--mq-focus:#f0c75e;--mq-dark:#040505;--mq-surface:#0c1212;--mq-accent:214,177,92;--mq-secondary:138,58,36;--mq-panel-paint:radial-gradient(circle, rgba(42, 74, 64, 0.34) 0%, rgba(18, 24, 24, 0.92) 52%, rgba(4, 5, 5, 0.98) 100%);--mq-panel-shadow:rgba(214, 177, 92, 0.24) 0px 0px 24px, rgba(88, 28, 24, 0.28) 0px 0px 70px, rgba(0, 0, 0, 0.72) 0px 0px 38px inset;--mq-panel-border:rgba(214, 177, 92, 0.34);--mq-button-paint:linear-gradient(rgb(91, 58, 31), rgb(27, 23, 17));--mq-button-shadow:rgba(214, 177, 92, 0.24) 0px 0px 12px, rgba(88, 28, 24, 0.18) 0px 0px 24px, rgba(0, 0, 0, 0.62) 0px 0px 10px inset;--mq-button-border:rgba(214, 177, 92, 0.42);--mq-hover-paint:linear-gradient(rgb(122, 74, 37), rgb(42, 27, 18));--mq-hover-shadow:rgba(240, 199, 94, 0.48) 0px 0px 18px, rgba(127, 29, 29, 0.28) 0px 0px 34px, rgba(0, 0, 0, 0.68) 0px 0px 12px inset;--mq-hover-border:rgba(240, 199, 94, 0.7);--mq-tile-paint:linear-gradient(rgba(22, 30, 28, 0.72), rgba(7, 9, 9, 0.86));--mq-tile-border:rgba(214, 177, 92, 0.18);--mq-active-paint:radial-gradient(circle, rgba(214, 177, 92, 0.48), rgba(65, 95, 78, 0.36), rgba(12, 18, 18, 0.92));--mq-active-shadow:rgba(240, 199, 94, 0.78) 0px 0px 12px, rgba(214, 177, 92, 0.48) 0px 0px 24px, rgba(0, 0, 0, 0.62) 0px 0px 12px inset;--mq-saved-paint:linear-gradient(rgba(65, 95, 78, 0.62), rgba(20, 31, 28, 0.88));--mq-progress-paint:linear-gradient(90deg, rgb(47, 79, 67), rgb(214, 177, 92), rgb(138, 58, 36));--mq-modal-paint:radial-gradient(circle, rgba(65, 95, 78, 0.3), rgba(12, 18, 18, 0.82) 58%, rgba(4, 5, 5, 0.92));--mq-modal-shadow:rgba(0, 0, 0, 0.82) 0px 0px 24px, rgba(214, 177, 92, 0.18) 0px 0px 28px, rgba(0, 0, 0, 0.72) 0px 0px 26px inset;--mq-boss-1:#a78bfa;--mq-boss-text-1:#a78bfa;--mq-boss-2:#7c3aed;--mq-boss-text-2:#c4b5fd;--mq-boss-3:#991b1b;--mq-boss-text-3:#fca5a5;}
+/* Shared paint for components added after the individual historical themes.
+   Variables are defined independently per game in themes.json. No geometry,
+   visibility, motion preferences or gameplay state is set in this stylesheet. */
+body {color:var(--mq-text)}
+body.blank-builder-template {--mq-gameplay-scene-overlay:linear-gradient(rgba(0,0,0,.30),rgba(0,0,0,.48))}
+.mode-select-screen {background-color:var(--mq-dark);background-image:linear-gradient(rgba(0,0,0,.42),rgba(0,0,0,.78)),var(--mq-start-image)}
+.mode-select-panel,.quiz-setup-panel,.mastery-stat-card,.mastery-section {
+  background-color:var(--mq-surface);background-image:var(--mq-panel-paint);
+  border-color:var(--mq-panel-border);box-shadow:var(--mq-panel-shadow);color:var(--mq-text);
+}
+.mode-title,.mode-card-title,.quiz-setup-title,.mastery-report-title,.mastery-stat-value,.mastery-section h3 {color:var(--mq-heading);text-shadow:0 0 12px rgba(var(--mq-accent),.3)}
+.mode-subtitle,.mode-card-text,.quiz-setup-subtitle,.mastery-report-subtitle,.mastery-stat-label,.mastery-note,.mastery-small,.mastery-evidence-copy {color:var(--mq-muted)}
+.mode-card {background-color:var(--mq-surface);background-image:none;color:var(--mq-text);border-color:var(--mq-panel-border)}
+.mode-card .mode-symbol {background-image:var(--mq-panel-paint);color:var(--mq-heading);border-color:var(--mq-panel-border)}
+.mode-card .mode-symbol::after {color:var(--mq-heading);text-shadow:0 0 15px rgba(var(--mq-accent),.4)}
+.mode-card:hover {border-color:var(--mq-focus);box-shadow:0 0 22px rgba(var(--mq-accent),.3)}
+/* The aligned launcher's legacy inline/important paint needs a narrow override. */
+body #returnMenuBtn.return-menu-btn {color:var(--mq-text)!important;background:var(--mq-button-paint)!important;border-color:var(--mq-button-border)!important;box-shadow:var(--mq-button-shadow)}
+body #returnMenuBtn.return-menu-btn:hover {background:var(--mq-hover-paint)!important;border-color:var(--mq-hover-border)!important;box-shadow:var(--mq-hover-shadow)}
+#gameMenuOptions .game-menu-option,#gameMenuOptions #soundToggle {color:var(--mq-text);background:var(--mq-button-paint);border-color:var(--mq-button-border);box-shadow:var(--mq-button-shadow)}
+#gameMenuOptions .game-menu-option:hover,#gameMenuOptions #soundToggle:hover {background:var(--mq-hover-paint);border-color:var(--mq-hover-border);box-shadow:var(--mq-hover-shadow)}
+.game-modal,.quiz-setup-modal {background-color:rgba(0,0,0,.72)}
+.game-modal-card {background-image:var(--mq-modal-paint);background-color:var(--mq-dark);border-color:var(--mq-panel-border);box-shadow:var(--mq-modal-shadow);color:var(--mq-text)}
+.game-modal-card h2 {color:var(--mq-heading)}
+.game-modal-card p {color:var(--mq-muted)}
+.secondary-modal-btn,.secondary-start-btn,.end-practice-btn {color:var(--mq-heading);background-image:var(--mq-button-paint);border-color:var(--mq-button-border)}
+/* New Exam states retain their existing labels, disabled/locked opacity, and
+   selected-state border widths. Saved answers do not imply correctness. */
+button.maze-box.exam-nav-room {color:var(--mq-text)}
+button.maze-box.exam-nav-room.exam-unanswered {background-image:var(--mq-tile-paint);border-color:var(--mq-tile-border)}
+button.maze-box.exam-nav-room.exam-answered {background-image:var(--mq-saved-paint);border-color:var(--mq-heading)}
+button.maze-box.exam-nav-room.exam-boss-ready {background-image:var(--mq-active-paint);border-color:var(--mq-focus);box-shadow:var(--mq-active-shadow)}
+button.maze-box.exam-nav-room.active {background-image:var(--mq-active-paint);border-color:var(--mq-focus);box-shadow:var(--mq-active-shadow)}
+button.maze-box.exam-nav-room.exam-committed {background-image:var(--mq-saved-paint);border-color:var(--mq-panel-border)}
+button.maze-box.exam-nav-room:hover,button.maze-box.exam-nav-room:focus-visible {border-color:var(--mq-focus);box-shadow:0 0 0 3px rgba(var(--mq-accent),.28),0 0 14px rgba(var(--mq-accent),.42)}
+#answers button.selected,#answers button[aria-pressed="true"] {background-image:var(--mq-active-paint)!important;border-color:var(--mq-focus)!important;box-shadow:var(--mq-active-shadow)!important}
+body[data-macro-mode="exam"] #message {text-shadow:none}
+/* Independent palettes extend to introductions absent from the historical UI. */
+.guide-intro-screen,.boss-reveal-screen {color:var(--mq-text);background-color:var(--mq-dark);background-image:linear-gradient(115deg,var(--mq-dark),var(--mq-surface)),var(--mq-guide-intro-image,var(--mq-start-image,none))}
+.boss-reveal-screen {background-image:linear-gradient(115deg,var(--mq-dark),var(--mq-surface)),var(--mq-boss-reveal-image,none);--bossRevealGlow:rgba(var(--mq-accent),.25)!important;--bossRevealBorder:var(--mq-panel-border)!important}
+.guide-intro-screen::before {background:radial-gradient(circle at 28% 42%,rgba(var(--mq-accent),.16),transparent 36%),linear-gradient(90deg,rgba(0,0,0,.16),transparent 48%,rgba(0,0,0,.36))}
+.guide-intro-portrait-frame {background-image:radial-gradient(circle at 50% 34%,rgba(var(--mq-accent),.19),var(--mq-dark) 66%);border-color:var(--mq-panel-border);box-shadow:0 22px 70px rgba(0,0,0,.72),0 0 38px rgba(var(--mq-accent),.15)}
+.boss-reveal-screen .guide-intro-portrait-frame {background-image:radial-gradient(circle at 50% 34%,rgba(var(--mq-accent),.25),var(--mq-dark) 68%)}
+.guide-intro-name,.guide-intro-kicker,.guide-intro-fallback {color:var(--mq-heading)}
+.guide-intro-dialogue {color:var(--mq-text)}
+.guide-intro-dialogue.secondary {color:var(--mq-muted)}
+.guide-intro-proceed {color:var(--mq-dark);background:linear-gradient(var(--mq-heading),var(--mq-focus));border-color:var(--mq-focus);box-shadow:0 0 24px rgba(var(--mq-accent),.25),0 12px 30px rgba(0,0,0,.42)}
+.guide-intro-proceed:hover,.guide-intro-proceed:focus-visible {outline-color:var(--mq-focus);box-shadow:0 0 32px rgba(var(--mq-accent),.4)}
+.generic-boss-image,.boss-q {--bossColor:var(--mq-focus)!important}
+.boss-title,.generic-boss-symbol,#gameBox.boss-mode #bossMessage {color:var(--mq-heading)!important}
+/* Feedback text is authored by the preserved engine with inline colors. */
+#hallwayText > div:first-child {color:var(--mq-heading)!important}
+#hallwayText > div:nth-child(2) {color:var(--mq-text)!important}
+#hallwayText > div:last-child {color:var(--mq-muted)!important}
+/* Daily status-specific success rules remain more specific than these bases. */
+.daily-task-pill,.daily-details-panel,.daily-toast {color:var(--mq-text);background-image:var(--mq-modal-paint);background-color:var(--mq-dark);border-color:var(--mq-panel-border);box-shadow:var(--mq-modal-shadow)}
+.daily-task-pill:hover,.daily-task-pill:focus-visible {border-color:var(--mq-focus);box-shadow:var(--mq-hover-shadow)}
+.daily-details-close {color:var(--mq-text);background:var(--mq-button-paint);border-color:var(--mq-button-border)}
+.daily-details-title,.daily-toast-title {color:var(--mq-text)}
+.daily-details-kicker,.daily-stat-value,.daily-toast-kicker {color:var(--mq-heading)}
+.daily-details-meta,.daily-stat-label,.daily-toast-copy,.daily-toast-progress {color:var(--mq-muted)}
+.daily-progress-track,.daily-stat,.mastery-evidence-cell {background:rgba(var(--mq-accent),.08);border-color:rgba(var(--mq-accent),.24)}
+.daily-progress-fill {background-image:var(--mq-progress-paint);box-shadow:0 0 12px rgba(var(--mq-accent),.45)}
+.targeted-repair-indicator {background:var(--mq-surface);color:var(--mq-heading);border-color:var(--mq-panel-border)}
+.mastery-report-screen {color:var(--mq-text)}
+.mastery-bar {background:var(--mq-dark);border-color:var(--mq-panel-border)}
+.mastery-bar-fill {background-image:var(--mq-progress-paint);box-shadow:0 0 10px rgba(var(--mq-accent),.38)}
+.mastery-evidence-badge[data-evidence="strong"] {color:var(--mq-text);border-color:var(--mq-focus)}
+.mastery-actions button {background-image:var(--mq-button-paint);border-color:var(--mq-button-border);color:var(--mq-text)}
+.fading-fortune-hud,.risk-reward-hud,.score-attack-hud {background-image:var(--mq-panel-paint);border-color:var(--mq-panel-border)}
+/* Completion markup also carries inline paint. These exceptions are scoped to
+   that markup, not to universal elements or success/error feedback. */
+#gameBox .victory {color:var(--mq-heading)!important;text-shadow:0 0 18px rgba(var(--mq-accent),.9)!important}
+#gameBox .victory + div {background:var(--mq-surface)!important;border-color:var(--mq-panel-border)!important;box-shadow:var(--mq-panel-shadow)!important}
+#archivistLine {color:var(--mq-muted)!important;text-shadow:0 0 8px rgba(var(--mq-accent),.35)!important}
+#gameBox button[onclick="downloadTelemetryCsv()"],#gameBox button[onclick="showMasteryReportScreen()"] {background:var(--mq-button-paint)!important;color:var(--mq-text)!important;border-color:var(--mq-button-border)!important}
+/* The current room grid is the presentation state source; no engine mutation
+   or new markup is needed for historical checkpoint-stage colors. */
+body {--mq-checkpoint:var(--mq-boss-1);--mq-checkpoint-text:var(--mq-boss-text-1)}
+body:has(#mazeTrack .active:nth-child(20)) {--mq-checkpoint:var(--mq-boss-2);--mq-checkpoint-text:var(--mq-boss-text-2)}
+body:has(#mazeTrack .active:nth-child(30)) {--mq-checkpoint:var(--mq-boss-3);--mq-checkpoint-text:var(--mq-boss-text-3)}
+.boss-reveal-screen {--bossRevealGlow:color-mix(in srgb,var(--mq-checkpoint) 25%,transparent)!important}
+.generic-boss-image,.boss-q {--bossColor:var(--mq-checkpoint)!important}
+.boss-title,.generic-boss-symbol,#gameBox.boss-mode #bossMessage {color:var(--mq-checkpoint-text)!important}
+.boss-reveal-screen .guide-intro-name,.boss-reveal-screen .guide-intro-kicker {color:var(--mq-checkpoint-text)}
+body.blank-builder-template #message {color:var(--mq-muted)}
+body #returnMenuBtn.return-menu-btn {box-shadow:var(--mq-button-shadow)!important}
+body #returnMenuBtn.return-menu-btn:hover {box-shadow:var(--mq-hover-shadow)!important}
+.score-attack-label,.fading-fortune-label,.fading-fortune-subtitle,.risk-reward-label,.risk-wager-kicker,.risk-wager-copy {color:var(--mq-muted)}
+.fading-fortune-value,.risk-reward-value,.score-attack-value,.target-unlimited-symbol {color:var(--mq-heading)}
+.risk-wager-card,.risk-wager-panel {background-image:var(--mq-modal-paint);border-color:var(--mq-panel-border);color:var(--mq-text)}
+#shareBtn {color:var(--mq-dark)!important;background:linear-gradient(var(--mq-heading),var(--mq-focus))!important}
+
+/* The shared Auditor uses the existing Custodian artwork without a portrait halo. */
+body #wizardImage,body #wizardImage.mq-guide-image img,#guideIntroScreen .guide-intro-image {filter:none;box-shadow:none}
+#guideIntroScreen .guide-intro-portrait-frame {background-image:none;box-shadow:none}
+#guideIntroScreen::before {background:none}
+
+body{color:rgb(243, 234, 210);background-color:initial;}
+.title{color:rgb(244, 213, 141);text-shadow:rgba(214, 177, 92, 0.85) 0px 0px 14px, rgba(180, 83, 9, 0.55) 0px 0px 34px, rgba(0, 0, 0, 0.9) 0px 3px 8px;}
+.subtitle{color:rgb(185, 135, 70);text-shadow:rgba(185, 135, 70, 0.45) 0px 0px 10px, rgba(0, 0, 0, 0.85) 0px 2px 6px;}
+.tagline{color:rgb(216, 199, 160);text-shadow:rgba(0, 0, 0, 0.85) 0px 2px 6px;}
+.name-input{background-image:initial;background-color:rgba(12, 18, 18, 0.88);color:rgb(243, 234, 210);outline-color:initial;box-shadow:rgba(214, 177, 92, 0.28) 0px 0px 14px, rgba(0, 0, 0, 0.65) 0px 0px 12px inset;border-color:rgba(214, 177, 92, 0.45);}
+.name-input:focus{box-shadow:rgba(240, 199, 94, 0.45) 0px 0px 18px, rgba(100, 36, 24, 0.35) 0px 0px 32px, rgba(0, 0, 0, 0.75) 0px 0px 12px inset;border-color:rgba(240, 199, 94, 0.75);}
+#emailInput::placeholder, #username::placeholder{color:rgba(216, 199, 160, 0.52);}
+#gameBox{background-image:radial-gradient(circle, rgba(42, 74, 64, 0.34) 0%, rgba(18, 24, 24, 0.92) 52%, rgba(4, 5, 5, 0.98) 100%);background-color:initial;box-shadow:rgba(214, 177, 92, 0.24) 0px 0px 24px, rgba(88, 28, 24, 0.28) 0px 0px 70px, rgba(0, 0, 0, 0.72) 0px 0px 38px inset;border-color:rgba(214, 177, 92, 0.34);}
+#gameBox.boss-mode{box-shadow:rgba(214, 177, 92, 0.58) 0px 0px 32px, rgba(100, 36, 24, 0.48) 0px 0px 64px, rgba(0, 0, 0, 0.78) 0px 0px 42px inset;border-color:rgb(214, 177, 92);}
+.boss10 .boss-icon{filter:drop-shadow(rgba(214, 177, 92, 0.85) 0px 0px 6px) drop-shadow(rgba(65, 95, 78, 0.55) 0px 0px 12px);}
+.boss20 .boss-icon{filter:drop-shadow(rgba(196, 106, 58, 0.9) 0px 0px 8px) drop-shadow(rgba(99, 35, 24, 0.65) 0px 0px 16px);}
+.boss30 .boss-icon{filter:drop-shadow(rgb(240, 199, 94) 0px 0px 10px) drop-shadow(rgba(127, 29, 29, 0.85) 0px 0px 24px);}
+.hit{box-shadow:rgba(127, 29, 29, 0.95) 0px 0px 60px, rgba(240, 199, 94, 0.35) 0px 0px 28px, rgba(88, 28, 24, 0.85) 0px 0px 42px inset;}
+#autosave{color:rgb(216, 199, 160);text-shadow:rgba(214, 177, 92, 0.35) 0px 0px 6px;}
+#questionImageBox img{box-shadow:rgba(214, 177, 92, 0.16) 0px 0px 14px, rgba(0, 0, 0, 0.65) 0px 0px 28px;border-color:rgba(214, 177, 92, 0.22);}
+h2{text-shadow:rgba(244, 213, 141, 0.24) 0px 0px 10px, rgba(214, 177, 92, 0.22) 0px 0px 20px, rgba(0, 0, 0, 0.85) 0px 2px 6px;}
+#question{color:rgb(243, 234, 210);text-shadow:rgba(0, 0, 0, 0.85) 0px 2px 5px, rgba(214, 177, 92, 0.12) 0px 0px 8px;}
+.boss-title{color:rgb(244, 213, 141);text-shadow:rgba(240, 199, 94, 0.62) 0px 0px 10px, rgba(127, 29, 29, 0.42) 0px 0px 26px, rgba(0, 0, 0, 0.9) 0px 3px 8px;}
+.area-title{color:rgb(185, 168, 121);text-shadow:rgba(214, 177, 92, 0.18) 0px 0px 8px, rgba(0, 0, 0, 0.85) 0px 2px 5px;}
+.boss-q{border-left-color:rgb(138, 58, 36);color:rgb(243, 234, 210);box-shadow:rgba(127, 29, 29, 0.34) -4px 0px 12px;text-shadow:rgba(0, 0, 0, 0.8) 0px 2px 5px;}
+.hint-box{color:rgb(214, 177, 92);text-shadow:rgba(214, 177, 92, 0.25) 0px 0px 6px;}
+.fade-out-text{color:rgb(240, 199, 94);text-shadow:rgba(240, 199, 94, 0.55) 0px 0px 8px, rgba(0, 0, 0, 0.85) 0px 2px 5px;}
+#message{color:rgb(216, 199, 160);text-shadow:rgba(214, 177, 92, 0.18) 0px 0px 7px, rgba(0, 0, 0, 0.85) 0px 2px 5px;}
+.national-engine #message{color:rgb(214, 177, 92);text-shadow:rgba(214, 177, 92, 0.42) 0px 0px 8px, rgba(100, 36, 24, 0.25) 0px 0px 18px, rgba(0, 0, 0, 0.85) 0px 2px 6px;}
+button{background-image:linear-gradient(rgb(91, 58, 31), rgb(27, 23, 17));background-color:initial;color:rgb(243, 234, 210);box-shadow:rgba(214, 177, 92, 0.24) 0px 0px 12px, rgba(88, 28, 24, 0.18) 0px 0px 24px, rgba(0, 0, 0, 0.62) 0px 0px 10px inset;border-color:rgba(214, 177, 92, 0.42);}
+button:hover{background-image:linear-gradient(rgb(122, 74, 37), rgb(42, 27, 18));background-color:initial;box-shadow:rgba(240, 199, 94, 0.48) 0px 0px 18px, rgba(127, 29, 29, 0.28) 0px 0px 34px, rgba(0, 0, 0, 0.68) 0px 0px 12px inset;border-color:rgba(240, 199, 94, 0.7);}
+.answers button{background-image:linear-gradient(rgba(55, 70, 58, 0.96), rgba(12, 18, 18, 0.98));background-color:initial;color:rgb(243, 234, 210);box-shadow:rgba(214, 177, 92, 0.16) 0px 0px 10px, rgba(0, 0, 0, 0.7) 0px 0px 14px inset;border-color:rgba(214, 177, 92, 0.34);}
+.answers button:hover{background-image:linear-gradient(rgba(73, 92, 72, 0.98), rgba(31, 40, 34, 0.98));background-color:initial;box-shadow:rgba(214, 177, 92, 0.38) 0px 0px 18px, rgba(65, 95, 78, 0.22) 0px 0px 32px, rgba(0, 0, 0, 0.68) 0px 0px 14px inset;border-color:rgba(240, 199, 94, 0.68);}
+.fullscreenBtn{color:rgb(243, 234, 210);background-image:linear-gradient(rgb(74, 51, 32), rgb(17, 16, 13));background-color:initial;box-shadow:rgba(214, 177, 92, 0.22) 0px 0px 10px, rgba(0, 0, 0, 0.72) 0px 0px 7px inset;border-color:rgba(214, 177, 92, 0.34);}
+.fullscreenBtn:hover{background-image:linear-gradient(rgb(106, 71, 38), rgb(28, 21, 16));background-color:initial;box-shadow:rgba(214, 177, 92, 0.42) 0px 0px 16px, rgba(0, 0, 0, 0.72) 0px 0px 8px inset;border-color:rgba(240, 199, 94, 0.62);}
+.fullscreenBtn:active{box-shadow:rgba(214, 177, 92, 0.28) 0px 0px 8px, rgba(0, 0, 0, 0.85) 0px 0px 10px inset;}
+.continue-btn{background-image:linear-gradient(rgb(138, 79, 37), rgb(58, 31, 20));background-color:initial;color:rgb(243, 234, 210);box-shadow:rgba(214, 177, 92, 0.38) 0px 0px 16px, rgba(127, 29, 29, 0.28) 0px 0px 34px, rgba(0, 0, 0, 0.65) 0px 0px 12px inset;border-color:rgba(240, 199, 94, 0.52);}
+.continue-btn:hover{background-image:linear-gradient(rgb(167, 99, 44), rgb(91, 42, 25));background-color:initial;box-shadow:rgba(240, 199, 94, 0.58) 0px 0px 24px, rgba(127, 29, 29, 0.36) 0px 0px 42px, rgba(0, 0, 0, 0.65) 0px 0px 12px inset;}
+#continueBtn:active{box-shadow:rgba(214, 177, 92, 0.28) 0px 0px 10px, rgba(0, 0, 0, 0.75) 0px 0px 10px inset;}
+#progressBar{background-image:linear-gradient(rgba(12, 18, 18, 0.95), rgba(4, 5, 5, 0.98));background-color:initial;box-shadow:rgba(0, 0, 0, 0.82) 0px 0px 12px inset, rgba(214, 177, 92, 0.12) 0px 0px 10px;border-color:rgba(214, 177, 92, 0.22);}
+#progressFill{background-image:linear-gradient(90deg, rgb(47, 79, 67), rgb(214, 177, 92), rgb(138, 58, 36));background-color:initial;box-shadow:rgba(214, 177, 92, 0.45) 0px 0px 12px, rgba(127, 29, 29, 0.25) 0px 0px 22px;}
+.maze-box{background-image:linear-gradient(rgba(22, 30, 28, 0.72), rgba(7, 9, 9, 0.86));background-color:initial;box-shadow:rgba(0, 0, 0, 0.72) 0px 0px 10px inset, rgba(214, 177, 92, 0.08) 0px 0px 5px;border-color:rgba(214, 177, 92, 0.18);}
+.maze-box.active{background-image:radial-gradient(circle, rgba(214, 177, 92, 0.48), rgba(65, 95, 78, 0.36), rgba(12, 18, 18, 0.92));background-color:initial;box-shadow:rgba(240, 199, 94, 0.78) 0px 0px 12px, rgba(214, 177, 92, 0.48) 0px 0px 24px, rgba(0, 0, 0, 0.62) 0px 0px 12px inset;border-color:rgb(240, 199, 94);}
+.maze-box.completed{background-image:linear-gradient(rgba(65, 95, 78, 0.62), rgba(20, 31, 28, 0.88));background-color:initial;box-shadow:rgba(214, 177, 92, 0.28) 0px 0px 8px, rgba(0, 0, 0, 0.7) 0px 0px 10px inset;border-color:rgba(214, 177, 92, 0.38);}
+.maze-box:nth-child(10){text-shadow:rgb(214, 177, 92) 0px 0px 8px, rgba(65, 95, 78, 0.8) 0px 0px 18px;}
+.maze-box:nth-child(20){text-shadow:rgb(196, 106, 58) 0px 0px 8px, rgba(127, 29, 29, 0.75) 0px 0px 18px;}
+.maze-box:nth-child(30){text-shadow:rgb(240, 199, 94) 0px 0px 10px, rgba(127, 29, 29, 0.95) 0px 0px 24px, rgba(214, 177, 92, 0.42) 0px 0px 34px;}
+.streak{color:rgba(243, 234, 210, 0.94);text-shadow:rgba(214, 177, 92, 0.32) 0px 0px 7px, rgba(0, 0, 0, 0.85) 0px 2px 5px;}
+.streak-icon{filter:drop-shadow(rgba(214, 177, 92, 0.75) 0px 0px 8px) drop-shadow(rgba(100, 36, 24, 0.52) 0px 0px 15px);background-image:radial-gradient(circle, rgba(240, 199, 94, 0.46) 0%, rgba(65, 95, 78, 0.34) 45%, transparent 72%);background-color:initial;}
+#artifactDrop{background-image:radial-gradient(circle, rgba(65, 95, 78, 0.34), rgba(12, 18, 18, 0.96) 62%, rgba(4, 5, 5, 0.98));background-color:initial;box-shadow:rgba(214, 177, 92, 0.28) 0px 0px 22px, rgba(127, 29, 29, 0.22) 0px 0px 42px, rgba(0, 0, 0, 0.76) 0px 0px 28px inset;border-color:rgba(214, 177, 92, 0.34);}
+#artifactDrop img{filter:drop-shadow(rgba(240, 199, 94, 0.82) 0px 0px 14px) drop-shadow(rgba(127, 29, 29, 0.42) 0px 0px 26px);}
+#artifactVault{background-image:radial-gradient(circle at center top, rgba(65, 95, 78, 0.42), rgba(12, 18, 18, 0.96) 58%, rgba(4, 5, 5, 0.98));background-color:initial;box-shadow:rgba(214, 177, 92, 0.22) 0px 0px 20px, rgba(88, 28, 24, 0.2) 0px 0px 38px, rgba(0, 0, 0, 0.76) 0px 0px 30px inset;border-color:rgba(214, 177, 92, 0.3);}
+#artifactVault h3{color:rgb(244, 213, 141);text-shadow:rgba(214, 177, 92, 0.52) 0px 0px 10px, rgba(0, 0, 0, 0.85) 0px 2px 6px;}
+.artifactSlot span{color:rgba(216, 199, 160, 0.38);}
+.artifactSlot.unlocked img{filter:drop-shadow(rgba(240, 199, 94, 0.86) 0px 0px 14px) drop-shadow(rgba(214, 177, 92, 0.46) 0px 0px 26px) drop-shadow(rgba(127, 29, 29, 0.24) 0px 0px 34px);}
+.artifactSlot.unlocked span{color:rgb(243, 234, 210);text-shadow:rgba(214, 177, 92, 0.38) 0px 0px 7px, rgba(0, 0, 0, 0.85) 0px 2px 5px;}
+.registrarGlow{filter:drop-shadow(rgba(214, 177, 92, 0.82) 0px 0px 12px) drop-shadow(rgba(65, 95, 78, 0.5) 0px 0px 24px) drop-shadow(rgba(0, 0, 0, 0.75) 0px 0px 34px);}
+.wardenGlow{filter:drop-shadow(rgba(196, 106, 58, 0.88) 0px 0px 14px) drop-shadow(rgba(127, 29, 29, 0.58) 0px 0px 28px) drop-shadow(rgba(0, 0, 0, 0.78) 0px 0px 38px);}
+.comptrollerGlow{filter:drop-shadow(rgba(240, 199, 94, 0.96) 0px 0px 16px) drop-shadow(rgba(127, 29, 29, 0.74) 0px 0px 34px) drop-shadow(rgba(214, 177, 92, 0.34) 0px 0px 46px) drop-shadow(rgba(0, 0, 0, 0.82) 0px 0px 52px);}
+.torch{filter:drop-shadow(rgba(240, 199, 94, 0.68) 0px 0px 12px) drop-shadow(rgba(127, 29, 29, 0.26) 0px 0px 24px);}
+#hallwayTransition{background-color:initial;color:rgb(243, 234, 210);}
+#hallwayText{background-image:radial-gradient(circle, rgba(65, 95, 78, 0.3), rgba(12, 18, 18, 0.82) 58%, rgba(4, 5, 5, 0.92));background-color:initial;box-shadow:rgba(0, 0, 0, 0.82) 0px 0px 24px, rgba(214, 177, 92, 0.18) 0px 0px 28px, rgba(0, 0, 0, 0.72) 0px 0px 26px inset;color:rgb(243, 234, 210);text-shadow:rgba(214, 177, 92, 0.26) 0px 0px 8px, rgba(0, 0, 0, 0.9) 0px 2px 6px;border-color:rgba(214, 177, 92, 0.28);}
+.top-title{color:rgb(244, 213, 141);text-shadow:rgba(214, 177, 92, 0.45) 0px 0px 10px, rgba(0, 0, 0, 0.9) 0px 2px 6px;}
+#gameShell{background-image:linear-gradient(rgba(18, 24, 24, 0.96), rgba(4, 5, 5, 0.98));background-color:initial;box-shadow:rgba(0, 0, 0, 0.92) 0px 0px 30px, rgba(214, 177, 92, 0.16) 0px 0px 58px, rgba(88, 28, 24, 0.16) 0px 0px 76px, rgba(0, 0, 0, 0.74) 0px 0px 42px inset;border-color:rgba(214, 177, 92, 0.28);}
+#wizardBox{background-image:linear-gradient(rgba(42, 55, 49, 0.94), rgba(8, 10, 10, 0.98));background-color:initial;box-shadow:rgba(0, 0, 0, 0.78) 0px 0px 26px inset, rgba(214, 177, 92, 0.12) 0px 0px 18px;border-color:rgba(214, 177, 92, 0.26);}
+#wizardName{color:rgb(214, 177, 92);border-bottom-color:rgba(214, 177, 92, 0.34);text-shadow:rgba(214, 177, 92, 0.48) 0px 0px 6px, rgba(0, 0, 0, 0.85) 0px 2px 5px;}
+#wizardImage{filter:drop-shadow(rgba(214, 177, 92, 0.62) 0px 0px 12px) drop-shadow(rgba(65, 95, 78, 0.28) 0px 0px 24px) drop-shadow(rgba(0, 0, 0, 0.82) 0px 0px 30px);}
+.boss-mode #gameBox{box-shadow:rgba(240, 199, 94, 0.42) 0px 0px 34px, rgba(127, 29, 29, 0.42) 0px 0px 72px, rgba(0, 0, 0, 0.82) 0px 0px 46px inset;border-color:rgba(240, 199, 94, 0.72);}
+.boss-mode #gameShell{box-shadow:rgba(0, 0, 0, 0.94) 0px 0px 36px, rgba(214, 177, 92, 0.24) 0px 0px 64px, rgba(127, 29, 29, 0.26) 0px 0px 90px, rgba(0, 0, 0, 0.78) 0px 0px 48px inset;border-color:rgba(240, 199, 94, 0.42);}
+.targeted-repair-indicator{background-image:initial;background-color:rgba(4, 16, 31, 0.94);color:rgb(247, 217, 130);border-color:rgba(247, 217, 130, 0.55);}
+.targeted-repair-indicator span{color:rgba(255, 255, 255, 0.8);}
+.repair-weak-areas-btn{box-shadow:rgba(74, 222, 128, 0.22) 0px 0px 18px;border-color:rgba(74, 222, 128, 0.75);}
+.target-unlimited-symbol{color:rgb(247, 217, 130);}
+.national-mode-select{background-image:initial;background-color:rgba(4, 5, 5, 0.96);color:rgb(243, 234, 210);}
+.national-mode-card{background-image:initial;background-color:rgba(12, 18, 18, 0.94);color:rgb(243, 234, 210);border-color:rgba(214, 177, 92, 0.5);}
+.national-mode-card strong{color:rgb(244, 213, 141);}
+.mastery-report-screen{background-image:initial;background-color:rgba(4, 5, 5, 0.98);}
+.mastery-summary-grid > div, .mastery-section{background-image:initial;background-color:rgba(12, 18, 18, 0.7);border-color:rgba(214, 177, 92, 0.35);}
+.mastery-row{border-top-color:rgba(255, 255, 255, 0.1);}
+.mode-select-screen{background-image:initial;background-color:rgba(4, 5, 5, 0.96);color:rgb(243, 234, 210);}
+.mode-card{background-image:initial;background-color:rgba(12, 18, 18, 0.94);color:rgb(243, 234, 210);border-color:rgba(214, 177, 92, 0.5);}
+.mode-card-title{color:rgb(244, 213, 141);}
+@keyframes activePulse{0%{transform:scale(1.06);box-shadow:rgba(214, 177, 92, 0.68) 0px 0px 8px, rgba(0, 0, 0, 0.6) 0px 0px 10px inset;}45%{transform:scale(1.13);box-shadow:rgba(240, 199, 94, 0.92) 0px 0px 18px, rgba(214, 177, 92, 0.48) 0px 0px 32px, rgba(65, 95, 78, 0.24) 0px 0px 42px, rgba(0, 0, 0, 0.64) 0px 0px 12px inset;}70%{transform:scale(1.09);box-shadow:rgba(214, 177, 92, 0.78) 0px 0px 12px, rgba(127, 29, 29, 0.24) 0px 0px 24px, rgba(0, 0, 0, 0.64) 0px 0px 11px inset;}100%{transform:scale(1.11);box-shadow:rgba(240, 199, 94, 0.72) 0px 0px 15px, rgba(214, 177, 92, 0.36) 0px 0px 30px, rgba(0, 0, 0, 0.68) 0px 0px 12px inset;}}
+@keyframes victoryGlow{0%, 100%{transform:scale(1);text-shadow:rgba(240, 199, 94, 0.72) 0px 0px 10px, rgba(0, 0, 0, 0.9) 0px 2px 6px;}50%{transform:scale(1.08);text-shadow:rgba(240, 199, 94, 0.95) 0px 0px 24px, rgba(214, 177, 92, 0.62) 0px 0px 42px, rgba(127, 29, 29, 0.36) 0px 0px 52px, rgba(0, 0, 0, 0.9) 0px 3px 8px;}}
+@keyframes relicPulse{0%, 100%{transform:scale(1.05);filter:drop-shadow(rgba(214, 177, 92, 0.66) 0px 0px 8px) drop-shadow(rgba(65, 95, 78, 0.34) 0px 0px 18px) drop-shadow(rgba(0, 0, 0, 0.55) 0px 0px 24px);}50%{transform:scale(1.1);filter:drop-shadow(rgba(240, 199, 94, 0.92) 0px 0px 16px) drop-shadow(rgba(214, 177, 92, 0.55) 0px 0px 30px) drop-shadow(rgba(127, 29, 29, 0.24) 0px 0px 38px);}}
+body :focus-visible{outline-color:var(--mq-focus)}
+</style>
 </head>
 
 <!-- =========================================
@@ -3181,7 +3413,7 @@ Edit appearance freely.
 Respect structure strictly.
 
 ========================================= -->
-<body class="blank-builder-template">
+<body class="blank-builder-template national-engine">
 <!-- Screen reader announcements (accessibility — do not remove) -->
   <div id="srAnnouncements"
      aria-live="polite"
@@ -4327,7 +4559,7 @@ const FACULTY_COMPOSITION_CONFIG = {
         "presentationMode": "custom-image"
       },
       "guideImage": {
-        "src": "auditor.webp",
+        "src": "custodian.webp",
         "displayName": "The Auditor",
         "alt": "The Auditor",
         "source": "published",
@@ -9013,12 +9245,30 @@ const embeddedQuestionAssets = {
   "minimumwage.webp": "minimumwage.webp"
 };
 const questionAssetMetadata = {
-  "totalproduct.webp": {},
-  "marginalproduct.webp": {},
-  "consumptionfunction.webp": {},
-  "investmentfunction.webp": {},
-  "loanablefunds.webp": {},
-  "minimumwage.webp": {}
+  "totalproduct.webp": {
+    "imageAlt": "Total product curve TP plotted against labor, with dashed output guides.",
+    "graphDescription": "The horizontal axis is Labor, labeled 1 through 7, and the vertical axis is Output. The blue curve TP starts at the origin, rises, flattens near labor 5, and then falls. Dashed guides show labor-output pairs (1, 15), (2, 25), (3, 32), (4, 38), (5, 40), (6, 38), and (7, 32). The highest marked output is 40 at labor 5. No other units or curves are shown."
+  },
+  "marginalproduct.webp": {
+    "imageAlt": "Marginal product curve MP with labor values and dashed output guides.",
+    "graphDescription": "The horizontal axis is Labor, labeled 1 through 7; the vertical axis is labeled Output. The blue line MP rises sharply from the origin to labor 1 and output 15, then slopes downward. Dashed guides mark (1, 15), (2, 10), (3, 8), (4, 6), and (5, 2). The descending line crosses the horizontal axis between labor 5 and 6 and continues below it, ending near labor 6. No exact zero-crossing or negative output value is labeled."
+  },
+  "consumptionfunction.webp": {
+    "imageAlt": "Three upward-sloping consumption lines C1, C2, and C3 against disposable income.",
+    "graphDescription": "The vertical axis is Consumption and the horizontal axis is Disposable Income. Three approximately parallel straight lines slope upward. Blue C2 is highest, orange C1 is in the middle, and green C3 is lowest at the same disposable income. All three begin above the horizontal axis. There are no numerical scales, marked points, arrows, or dashed guides."
+  },
+  "investmentfunction.webp": {
+    "imageAlt": "Two downward-sloping investment curves with points A through D at two interest rates.",
+    "graphDescription": "The vertical axis is Interest Rate and the horizontal axis is Investment. Orange I1 slopes downward; blue I2 is parallel and to its right. The upper dashed horizontal guide is r2 and the lower is r1. Investment labels increase from Q1 to Q4. Point A is on I1 at (Q1, r2), C is on I1 at (Q2, r1), B is on I2 at (Q3, r2), and D is on I2 at (Q4, r1). Vertical dashed guides connect each point to its investment label. These are symbolic labels, not numerical values."
+  },
+  "loanablefunds.webp": {
+    "imageAlt": "Loanable-funds diagram with two vertical saving lines, two investment curves, and points A through D.",
+    "graphDescription": "The vertical axis is Interest Rate and the horizontal axis is Investment. S1 is a vertical line at Q1; S2 is vertical at the larger quantity Q2. Orange I1 and blue I2 slope downward, with I2 above and to the right of I1. Point A is the intersection of S1 and I2, above r2; its interest-rate level is not labeled. C is at S1 and I1, at (Q1, r2). B is at S2 and I2, at (Q2, r2). D is at S2 and I1, at (Q2, r1). Dashed horizontal guides mark r2 above r1. No numerical scale is given."
+  },
+  "minimumwage.webp": {
+    "imageAlt": "Labor supply and demand with wages from $8 to $20 and worker quantities from 1000 to 3000.",
+    "graphDescription": "The vertical axis is Wage and the horizontal axis is Quantity of Workers. Red S_L slopes upward and blue D_L slopes downward. They cross at 2000 workers and $13. Dashed guides mark worker quantities 1000, 1500, 2000, 2500, and 3000, and wages $8, $11, $13, $15, and $20. On S_L, the guides show (1000, $8), (1500, $11), (2000, $13), (2500, $15), and (3000, $20). On D_L, they show (1000, $20), (1500, $15), (2000, $13), (2500, $11), and (3000, $8). No separate wage-floor line is labeled."
+  }
 };
 const trialGraphQuestionIds = [];
 const fadingFortuneQuestionIds = [
@@ -16365,5 +16615,75 @@ realmSoundButton.className='game-menu-option';
 document.getElementById('gameMenuOptions').appendChild(realmSoundButton);
 </script>
 <!-- MQ ACCESSIBILITY script END -->
+<script>
+// Keep utility order identical to Cost Directive without adding controls.
+(() => {
+  const menu=document.getElementById('gameMenuOptions');
+  const sound=document.getElementById('soundToggle');
+  const motion=document.getElementById('mqMotionControl')?.closest('.mq-motion-setting');
+  if(menu && sound && motion)menu.insertBefore(sound,motion);
+})();
+
+// Assessment privacy is a presentation boundary. Keep scoring, canonical Daily
+// state, telemetry rows and the 117-column export contract unchanged.
+(() => {
+  const examActive=()=>gameMode==='exam' && !runEnding;
+  const challenge=getBossChallengeLine;
+  getBossChallengeLine=function(...args){
+    return gameMode==='exam'
+      ? 'Respond to all three checkpoint questions. Results are shown together after the checkpoint.'
+      : challenge.apply(this,args);
+  };
+  const track=updateMazeTrack;
+  updateMazeTrack=function(...args){
+    document.body.dataset.macroMode=gameMode;
+    return track.apply(this,args);
+  };
+  const menuDaily=updateGameMenuDailyAction;
+  updateGameMenuDailyAction=function(...args){
+    const result=menuDaily.apply(this,args);
+    if(examActive())document.getElementById('gameMenuDaily').textContent='Daily Task';
+    return result;
+  };
+  const dailyUI=updateDailyUI;
+  updateDailyUI=function(...args){
+    if(!examActive())return dailyUI.apply(this,args);
+    document.getElementById('dailyTaskDock').hidden=true;
+    updateGameMenuDailyAction();
+  };
+  const toast=showDailyToast;
+  showDailyToast=function(...args){if(!examActive())return toast.apply(this,args);};
+  const dailyDetails=openDailyFromGameMenu;
+  openDailyFromGameMenu=function(...args){
+    if(!examActive())return dailyDetails.apply(this,args);
+    closeGameModal();
+    showGameModal({title:'Daily Task',text:'Daily Task progress is saved. Progress and completion details are available after you finish Exam Drill.',confirmText:'Return to Exam'});
+  };
+  const start=startGame;
+  startGame=function(...args){
+    const result=start.apply(this,args);
+    if(examActive()){
+      document.getElementById('dailyToastRegion').replaceChildren();
+      updateDailyUI();
+    }
+    return result;
+  };
+  const download=downloadTelemetryCsv;
+  downloadTelemetryCsv=function(activeRunID=runID){
+    if(examActive() && (!activeRunID || activeRunID===runID)){
+      showGameModal({title:'Game Data',text:'Game data are available after you finish Exam Drill.',confirmText:'Return to Exam'});
+      return;
+    }
+    return download.apply(this,arguments);
+  };
+})();
+
+// Match Managerial's keyboard skip using the existing once-only proceed actions.
+document.addEventListener('keydown',event=>{
+  if(event.key!=='Escape' || event.defaultPrevented)return;
+  if(activeGuideIntroduction){event.preventDefault();proceedGuideIntroduction();}
+  else if(activeBossReveal){event.preventDefault();proceedBossReveal();}
+});
+</script>
 </body>
 </html>
