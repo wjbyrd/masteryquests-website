@@ -21,13 +21,13 @@ const {server,origin}=await serve(),browser=await pw.chromium.launch({channel:'m
 async function open(old=false,width=1440,extra={},target=file){
  const x=await isolated(browser,origin,{viewport:{width,height:1000},reducedMotion:'reduce',acceptDownloads:true,...extra});
  x.errors=[];x.page.on('pageerror',e=>x.errors.push(e.message));
- await x.page.addInitScript(()=>{let n=16427;Math.random=()=>((n=(n*1664525+1013904223)>>>0)/4294967296);});
+ await x.page.addInitScript(()=>{window.__randomCalls=0;let n=16427;Math.random=()=>{window.__randomCalls++;return((n=(n*1664525+1013904223)>>>0)/4294967296);};});
  await x.page.clock.install({time:new Date('2026-10-23T16:00:00Z')});await x.page.clock.pauseAt(new Date('2026-10-23T16:00:01Z'));
  if(old)await x.page.route('**/'+file,r=>r.fulfill({contentType:'text/html',body:baseline}));
  await x.page.goto(origin+'/'+target,{timeout:30000});return x;
 }
 async function shot(p,name){await p.screenshot({path:path.join(out,stage+'-'+name+'.png'),fullPage:true});}
-async function state(p){return p.evaluate(()=>({q:currentQuestion?.id,options:currentQuestion?.options,difficulty:currentQuestion?.__mqDifficulty,room,attempts:totalAttempts,correct:correctAnswers,streak,maxStreak,bossHealth,bossCheckpoint,remediation:JSON.parse(JSON.stringify(remediationState)),adaptiveMode,conceptMemory,masteryState,score:scoreAttackScore,fading:fadingFortuneScore,bankroll:riskRewardBankroll,events:readLocalTelemetry(runID).map(r=>({event:r.event,q:r.questionID,correct:r.correct,response:r.responseTimeMs,attempt:r.attempt,streak:r.streak,score:r.score})),columns:TELEMETRY_COLUMNS,vault:Object.fromEntries(Object.entries(ARTIFACT_STORAGE_KEYS).map(([k,v])=>[k,localStorage.getItem(v)]))}));}
+async function state(p){return p.evaluate(()=>({randomCalls:window.__randomCalls,q:currentQuestion?.id,options:currentQuestion?.options,difficulty:currentQuestion?.__mqDifficulty,room,attempts:totalAttempts,correct:correctAnswers,streak,maxStreak,bossHealth,bossCheckpoint,remediation:JSON.parse(JSON.stringify(remediationState)),adaptiveMode,conceptMemory,masteryState,score:scoreAttackScore,fading:fadingFortuneScore,bankroll:riskRewardBankroll,events:readLocalTelemetry(runID).map(r=>({event:r.event,q:r.questionID,correct:r.correct,response:r.responseTimeMs,attempt:r.attempt,streak:r.streak,score:r.score})),columns:TELEMETRY_COLUMNS,vault:Object.fromEntries(Object.entries(ARTIFACT_STORAGE_KEYS).map(([k,v])=>[k,localStorage.getItem(v)]))}));}
 async function next(p){
  if(await p.locator('.principal-skip-btn').isVisible()){await p.locator('.principal-skip-btn').focus();await p.keyboard.press('Enter');return;}
  for(const id of ['mqFeedbackContinue','gameModalConfirm','continueBtn','guideIntroProceed','bossRevealProceed'])if(await p.locator('#'+id).isVisible()){await p.locator('#'+id).focus();await p.keyboard.press('Enter');await p.clock.runFor(50);await p.waitForTimeout(20);return;}
