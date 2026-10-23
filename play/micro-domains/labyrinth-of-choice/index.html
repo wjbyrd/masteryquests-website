@@ -8555,7 +8555,7 @@ Verified by The Archivist`;
 // =============================================
 const TELEMETRY_PREFIX = "labyrinthChoiceTelemetry_";
 const TELEMETRY_VERSION = "LabyrinthOfChoice-local-telemetry-v4-hashed-bank";
-const GAME_VERSION = "Labyrinth-of-Choice-2026.08.24-phase1.5";
+const GAME_VERSION = "Labyrinth-of-Choice-2026.10.23-interface-exam";
   // BEGIN MEASUREMENT CONTRACT
 /* Maintained measurement metadata only. No clocks, scoring, network or learner identity. */
 function createTelemetryContract(get, registry) {
@@ -8735,7 +8735,7 @@ function createTelemetryContract(get, registry) {
   return {fields,stamp,show,exportRows,wrapShuffle,hash,stable,build,state,resources,installResources};
 }
 
-  const MQContract=createTelemetryContract((name,fallback)=>{try{return eval(name);}catch(_){return fallback;}}, /* RELEASE REGISTRY */ {"contractID":"mq-measurement/1","measurementRevision":"mq-tracker-2026.10.13-answers2","localSchema":"mq-local-csv/1","anonymousEnvelope":3,"manifestSchema":"mq-run-manifest/1","trackerSourceRevision":"a4aa7ad4f0a42faf32a6848402ba344d455f6597e19e38331811c1cb723cc52a","games":{"cost-directive":{"engineRevision":"a6fd020b86e34510c8dbebe603e3652c8b32e088cdbc6968aebc7cae25d4e42d","pocEngineRevision":"da38c602891febfab862477d10a368d5d1c74d7e6cf92c5d4a4b94964d38cb42","classroomEngineRevision":"350382b57641a345dea9a3255d2417e022d6afa4770d890a86cdd6118e32e2b6","assetRevision":"e84ae7d58d4f614ec045fb1b8f1327e9acb14060321b757e92ee42277369eb71"},"market-signal":{"engineRevision":"a4a8d447659904380db5e6d254d74034814e89fec15b0c52ef23cc4565a3565b","pocEngineRevision":"544f1bb25b0f7473fecfe59a8b54c45def2508d83c7cf4afa5c5ebbb50fe354a","classroomEngineRevision":"1f5aae36d56dd5d28e0ad46b83bf6bbdcb96e625bca2e50e8945c729b4e4d3d6","assetRevision":"8e884e9efd09d7d6bb819e8bf88777acd87c54c3d5606ed0861a9861725add5c"},"strategy-desk":{"engineRevision":"3dc3c384a4ff45d8dd40920654eaeb6244bb3eb295d1323adf811db7146b4465","pocEngineRevision":"7e8dcaa625baec16518ee9bd9982d717880a9b20dddde52b69d64f48d3574068","classroomEngineRevision":"b3222dac65ae17d4a05d08a6654cea2ca9ad5170822ea6770468d387150b985d","assetRevision":"6daeef8858732666d4a8f79dce498db26f463a85428e930b70d9c298deb974e6"},"agency-protocol":{"engineRevision":"01a79ea3c0b983ac6226314115915d850cd0b18eba723577afb9d20f8a848181","pocEngineRevision":"7491f94983656d4942bdf1e8d39fa78e232ce7d42116449736f9b8051a4131ea","classroomEngineRevision":"dce22dd3e102aa773cfc25ff7a378437fdfdab3c89da6b8b5a88db3e35903546","assetRevision":"90b45185b2f7b58e87bb619618a0c7642860be1748eb45ef768820db614faec8"},"composer":{"engineRevision":"7ec75da04dfe22b3cdad5f1e55cfbb85534dbfb0a222ddc72ce0e95c65247434","assetRevision":"b843eaf7f8d5a2568ac458d71a9519c91e57c19bfe1f99314688479d0471e314"},"equilibrium-crisis":{"engineRevision":"085f924aaad403e72bd74de0bef3248216f4228268c05e944e95cd11dea58d48","assetRevision":"e0bc167ef5bf6085998fa7620a66df587614e079e8a425d00b3378f748050d9e"},"liquidity-grid":{"engineRevision":"5a98243ccc14b84a218e125646372910172a3115e274ec32ad47085b5a4126c1","assetRevision":"9b4b4b9b956894944dfbd880edaa7d21315e9a565fe36c6e99c435adba40b640"},"market-gate":{"engineRevision":"9baa7b71fab8f86f648782cabab0e84c3102e774417e362695a0961bab2ec5a5","assetRevision":"a4b6a2220411fc0367e726bedb815bc2b0f23d866104389f3e64fe424e3ec9d6"},"national-ledger":{"engineRevision":"0fb43d43f0a3c43e1df19d98b6b1d01e52fcc993caf8d047da3233d73a017c16","assetRevision":"5edc2f9729237cc6638954a521fd65163fdc4cc1febbf4c012620b2ec5bbacde"},"stabilization-protocol":{"engineRevision":"be0e94de47faeb8850f55d9ee7a21d541b3ec3c4d2dc1590569ef895be7eef7c","assetRevision":"e0fdef674656ba0a2cf18e8483ef3724281013338f2671c141cc66c587f2348f"},"command-nexus":{"engineRevision":"a12017705e6740b8d929dd540c4dde19c68b0928eb1a49a6089de5fbf91a9800","assetRevision":"97f92412cf740f7de62e5f77f5838543aff5426bee9ceaf4f81aeb1bc427f36f"},"exchange-citadel":{"engineRevision":"3898b649c440e124ec4d2e9a50d60fc282851f33b5089b46518d11a3819112be","assetRevision":"7da393ab7e26acca52dedd1349a2455252439af297df7fa0e5e39d8a7c861505"},"mint-ash-gold":{"engineRevision":"21b0656bcd05ce0c286b9ad294f3db612700de43d55aa156ce309bbebd2e9336","assetRevision":"c8785e093302b9df20935e7a26cd0f2626764d492f02fe00839d929772016125"},"national-engine":{"engineRevision":"0e04d6f75df0795c2e54f779c43a865d0ae283163e3e76d79ece91a60251ef18","assetRevision":"524f4b7ee38d9ea9d1f08b0505a74699c68ca3f4bb6314dcef177285d686abd5"},"labyrinth-of-choice":{"engineRevision":"a1d83fb7d286a0bf0dff11dc179d48971e5093be484e9745085bfde1257252f8","assetRevision":"44d1f4a1da9ae15503499c30c0e7974481674f5ed4b2a6aa5860ba1d08eb0aca"},"labyrinth-choice":{"engineRevision":"a1d83fb7d286a0bf0dff11dc179d48971e5093be484e9745085bfde1257252f8","assetRevision":"44d1f4a1da9ae15503499c30c0e7974481674f5ed4b2a6aa5860ba1d08eb0aca"}}});
+  const MQContract=createTelemetryContract((name,fallback)=>{try{return eval(name);}catch(_){return fallback;}}, /* RELEASE REGISTRY */ {"contractID":"mq-measurement/1","measurementRevision":"mq-tracker-2026.10.13-answers2","localSchema":"mq-local-csv/1","anonymousEnvelope":3,"manifestSchema":"mq-run-manifest/1","trackerSourceRevision":"a4aa7ad4f0a42faf32a6848402ba344d455f6597e19e38331811c1cb723cc52a","games":{"cost-directive":{"engineRevision":"a6fd020b86e34510c8dbebe603e3652c8b32e088cdbc6968aebc7cae25d4e42d","pocEngineRevision":"da38c602891febfab862477d10a368d5d1c74d7e6cf92c5d4a4b94964d38cb42","classroomEngineRevision":"350382b57641a345dea9a3255d2417e022d6afa4770d890a86cdd6118e32e2b6","assetRevision":"e84ae7d58d4f614ec045fb1b8f1327e9acb14060321b757e92ee42277369eb71"},"market-signal":{"engineRevision":"a4a8d447659904380db5e6d254d74034814e89fec15b0c52ef23cc4565a3565b","pocEngineRevision":"544f1bb25b0f7473fecfe59a8b54c45def2508d83c7cf4afa5c5ebbb50fe354a","classroomEngineRevision":"1f5aae36d56dd5d28e0ad46b83bf6bbdcb96e625bca2e50e8945c729b4e4d3d6","assetRevision":"8e884e9efd09d7d6bb819e8bf88777acd87c54c3d5606ed0861a9861725add5c"},"strategy-desk":{"engineRevision":"3dc3c384a4ff45d8dd40920654eaeb6244bb3eb295d1323adf811db7146b4465","pocEngineRevision":"7e8dcaa625baec16518ee9bd9982d717880a9b20dddde52b69d64f48d3574068","classroomEngineRevision":"b3222dac65ae17d4a05d08a6654cea2ca9ad5170822ea6770468d387150b985d","assetRevision":"6daeef8858732666d4a8f79dce498db26f463a85428e930b70d9c298deb974e6"},"agency-protocol":{"engineRevision":"01a79ea3c0b983ac6226314115915d850cd0b18eba723577afb9d20f8a848181","pocEngineRevision":"7491f94983656d4942bdf1e8d39fa78e232ce7d42116449736f9b8051a4131ea","classroomEngineRevision":"dce22dd3e102aa773cfc25ff7a378437fdfdab3c89da6b8b5a88db3e35903546","assetRevision":"90b45185b2f7b58e87bb619618a0c7642860be1748eb45ef768820db614faec8"},"composer":{"engineRevision":"7ec75da04dfe22b3cdad5f1e55cfbb85534dbfb0a222ddc72ce0e95c65247434","assetRevision":"b843eaf7f8d5a2568ac458d71a9519c91e57c19bfe1f99314688479d0471e314"},"equilibrium-crisis":{"engineRevision":"085f924aaad403e72bd74de0bef3248216f4228268c05e944e95cd11dea58d48","assetRevision":"e0bc167ef5bf6085998fa7620a66df587614e079e8a425d00b3378f748050d9e"},"liquidity-grid":{"engineRevision":"5a98243ccc14b84a218e125646372910172a3115e274ec32ad47085b5a4126c1","assetRevision":"9b4b4b9b956894944dfbd880edaa7d21315e9a565fe36c6e99c435adba40b640"},"market-gate":{"engineRevision":"9baa7b71fab8f86f648782cabab0e84c3102e774417e362695a0961bab2ec5a5","assetRevision":"a4b6a2220411fc0367e726bedb815bc2b0f23d866104389f3e64fe424e3ec9d6"},"national-ledger":{"engineRevision":"0fb43d43f0a3c43e1df19d98b6b1d01e52fcc993caf8d047da3233d73a017c16","assetRevision":"5edc2f9729237cc6638954a521fd65163fdc4cc1febbf4c012620b2ec5bbacde"},"stabilization-protocol":{"engineRevision":"be0e94de47faeb8850f55d9ee7a21d541b3ec3c4d2dc1590569ef895be7eef7c","assetRevision":"e0fdef674656ba0a2cf18e8483ef3724281013338f2671c141cc66c587f2348f"},"command-nexus":{"engineRevision":"a12017705e6740b8d929dd540c4dde19c68b0928eb1a49a6089de5fbf91a9800","assetRevision":"97f92412cf740f7de62e5f77f5838543aff5426bee9ceaf4f81aeb1bc427f36f"},"exchange-citadel":{"engineRevision":"3898b649c440e124ec4d2e9a50d60fc282851f33b5089b46518d11a3819112be","assetRevision":"7da393ab7e26acca52dedd1349a2455252439af297df7fa0e5e39d8a7c861505"},"mint-ash-gold":{"engineRevision":"21b0656bcd05ce0c286b9ad294f3db612700de43d55aa156ce309bbebd2e9336","assetRevision":"c8785e093302b9df20935e7a26cd0f2626764d492f02fe00839d929772016125"},"national-engine":{"engineRevision":"0e04d6f75df0795c2e54f779c43a865d0ae283163e3e76d79ece91a60251ef18","assetRevision":"524f4b7ee38d9ea9d1f08b0505a74699c68ca3f4bb6314dcef177285d686abd5"},"labyrinth-of-choice":{"engineRevision":"b4106fef8d6ed557d9d514e90ab79bf3d5d18df5a7af53f32c8f65e370e7c5ec","assetRevision":"44d1f4a1da9ae15503499c30c0e7974481674f5ed4b2a6aa5860ba1d08eb0aca"},"labyrinth-choice":{"engineRevision":"b4106fef8d6ed557d9d514e90ab79bf3d5d18df5a7af53f32c8f65e370e7c5ec","assetRevision":"44d1f4a1da9ae15503499c30c0e7974481674f5ed4b2a6aa5860ba1d08eb0aca"}}});
   // END MEASUREMENT CONTRACT
 const TELEMETRY_COLUMNS = [
     "eventID","timestamp","telemetryVersion","gameVersion","runID","game","mode","event",
@@ -14269,6 +14269,253 @@ MQContract.build();
     new MutationObserver(() => modal.classList.toggle('labyrinth-menu-open', !menu.hidden))
         .observe(menu, {attributes:true,attributeFilter:['hidden']});
     syncFullscreen();
+})();
+</script>
+<!-- Labyrinth Exam Drill: isolated assessment path; other modes delegate unchanged. -->
+<style id="labyrinth-exam-styles">
+#mazeTrack .labyrinth-exam-room {font:inherit;font-size:.8rem;color:#e2e8f0;min-width:0;padding:0;cursor:pointer}
+#mazeTrack .labyrinth-exam-answered {border:2px solid #8bdcff;background:#17334d}
+#mazeTrack .labyrinth-exam-locked {opacity:.65}
+#labyrinthExamNavigation {margin:1rem 0;padding:1rem;border:1px solid #51829f;border-radius:10px;background:#071426}
+#labyrinthExamNavigation p {line-height:1.5;margin:0 0 .75rem}
+#labyrinthExamNavigation .exam-actions {display:flex;flex-wrap:wrap;gap:.65rem}
+#labyrinthExamNavigation button {min-height:44px;flex:1 1 140px;white-space:normal}
+#answers button.exam-selected {outline:3px solid #8bdcff;outline-offset:2px;background:#17334d}
+</style>
+<script id="labyrinth-exam">
+(() => {
+    'use strict';
+    // Composer's section/commit rules, with Labyrinth's existing wall-clock timer.
+    // Visibility/view aggregation and extra CSV fields belong to Phase 3.
+    const sections = [
+        {index:0,start:1,end:9,boss:10,difficulty:'easy',bossDifficulty:'easyBoss',guardian:'THE WARDEN',image:'warden.webp',color:'#b91c1c'},
+        {index:1,start:11,end:19,boss:20,difficulty:'medium',bossDifficulty:'mediumBoss',guardian:'THE DECOMPOSER',image:'decomposer.webp',color:'#38bdf8'},
+        {index:2,start:21,end:29,boss:30,difficulty:'hard',bossDifficulty:'finalBoss',guardian:'THE SOVEREIGN',image:'sovereign.webp',color:'#fff8e7'}
+    ];
+    let assessment = null;
+    const byId = id => document.getElementById(id);
+    const sectionFor = value => sections.find(s => value >= s.start && value <= s.boss);
+    const ordinary = value => {const s=sectionFor(value);return Boolean(s && value <= s.end);};
+    const sectionState = (value=room) => assessment?.sections[sectionFor(value)?.index] || null;
+    const complete = s => Boolean(s && Array.from({length:9},(_,i)=>assessment.rooms[s.start+i]).every(r=>r?.selectedIndex != null));
+    const live = text => {byId('srAnnouncements').textContent=text;};
+    const original = Object.fromEntries(['startGame','loadQuestion','answer','displayQuestion','updateMazeTrack','getDifficultyForMode','isBossRoomForMode','handlePracticeModeComplete','returnToModeSelectFromRun'].map(name=>[name,window[name]]));
+
+    // The existing contract runtime uses this hook to resolve committed snapshots.
+    window.getExamRoomState = value => assessment?.rooms[value] || null;
+    window.getExamSectionState = sectionState;
+    window.modeAllowsImmediateCorrectnessFeedback = () => gameMode !== 'exam';
+    window.getDifficultyForMode = function(...args){
+        if(gameMode !== 'exam') return original.getDifficultyForMode.apply(this,args);
+        const s=sectionFor(room);return room===s?.boss?s.bossDifficulty:s?.difficulty||'easy';
+    };
+    window.isBossRoomForMode = function(value,...args){
+        return gameMode==='exam' ? value===sectionFor(value)?.boss : original.isBossRoomForMode.call(this,value,...args);
+    };
+    window.startGame = function(shouldResume=false,requestedMode=null,...args){
+        assessment = {sections:sections.map(s=>({...s,committed:false,checkpointIndex:0,checkpointCorrect:0,checkpointComplete:false,checkpointQuestions:[]})),rooms:{}};
+        return original.startGame.call(this,shouldResume,requestedMode,...args);
+    };
+
+    function renderNavigation(){
+        const s=sectionState(), track=byId('mazeTrack');
+        if(!s || !track) return;
+        track.replaceChildren();
+        for(let n=1;n<=30;n++){
+            const target=sectionState(n), isCheckpoint=n===target.boss, active=target===s;
+            const answered=assessment.rooms[n]?.selectedIndex!=null;
+            const enabled=!runEnding&&!answerSubmissionPending&&active&&!s.committed&&(!isCheckpoint||complete(s));
+            const item=document.createElement(enabled?'button':'div');
+            item.className='maze-box labyrinth-exam-room';
+            item.textContent=isCheckpoint?['I','II','III'][target.index]:String(n);
+            if(answered)item.classList.add('labyrinth-exam-answered');
+            if(!enabled)item.classList.add('labyrinth-exam-locked');
+            if(n===room){item.classList.add('active');item.setAttribute('aria-current','step');}
+            const label=target.committed?'committed':isCheckpoint?(enabled?'available':'locked'):answered?'response saved':active?'unanswered':'locked';
+            item.setAttribute('aria-label',`${isCheckpoint?'Checkpoint':'Question'} ${n}, ${label}${n===room?', current':''}`);
+            if(enabled){item.type='button';item.dataset.examRoom=String(n);item.onclick=()=>isCheckpoint?commitSection(s):navigate(n);}
+            else item.setAttribute('role','img');
+            track.append(item);
+        }
+        let nav=byId('labyrinthExamNavigation');
+        if(!nav){nav=document.createElement('section');nav.id='labyrinthExamNavigation';nav.setAttribute('aria-label','Exam section navigation');byId('answers').after(nav);}
+        nav.hidden=s.committed||runEnding;
+        if(nav.hidden)return;
+        const count=Array.from({length:9},(_,i)=>assessment.rooms[s.start+i]).filter(r=>r?.selectedIndex!=null).length;
+        nav.innerHTML='<p></p><div class="exam-actions"></div>';
+        nav.querySelector('p').textContent=`Section ${s.index+1}: ${count} of 9 responses saved. Revise any response before entering the checkpoint. All nine are required; entering commits them once.`;
+        const actions=nav.querySelector('.exam-actions');
+        for(const [id,label,disabled,action] of [
+            ['examPrevious','Previous Question',room===s.start,()=>navigate(room-1)],
+            ['examNext','Next Question',room===s.end,()=>navigate(room+1)],
+            ['examCommit','Enter Checkpoint',!complete(s),()=>commitSection(s)]
+        ]){const button=document.createElement('button');button.id=id;button.type='button';button.className='continue-btn';button.textContent=label;button.disabled=disabled||answerSubmissionPending;button.onclick=action;actions.append(button);}
+    }
+    window.updateMazeTrack = function(...args){if(gameMode==='exam')return renderNavigation();return original.updateMazeTrack.apply(this,args);};
+    function navigate(target){
+        const s=sectionState();
+        if(gameMode!=='exam'||runEnding||answerSubmissionPending||!ordinary(target)||s?.committed||sectionState(target)!==s)return false;
+        sendGameData({runID,event:'exam_navigation',room,questionId:currentQuestion?.id||0,adaptiveMode:'exam-navigation'});
+        room=target;
+        sendGameData({runID,event:'exam_navigation_arrive',room,questionId:assessment.rooms[room]?.question?.id||0,adaptiveMode:'exam-navigation'});
+        loadQuestion();return true;
+    }
+    window.navigateExamRoom = navigate;
+    window.selectExamCheckpoint = value => value===sectionState()?.boss && commitSection(sectionState());
+
+    function renderQuestion(){
+        if(runEnding)return;
+        const s=sectionState();if(!s)return;
+        if(s.checkpointComplete){showCheckpointSummary(s);return;}
+        answerSubmissionPending=false;
+        const checkpoint=room===s.boss;
+        if(checkpoint){
+            if(!s.committed)return;
+            if(!s.checkpointQuestions.length){
+                const bank=[...(questionBanks[s.bossDifficulty]||[])];
+                s.target=getWeakestBossObjective(bank);
+                let pool=buildBossQuestionSet(bank,s.bossDifficulty,s.target);
+                if(pool.length<3)pool=shuffle([...bank]).slice(0,3);
+                s.checkpointQuestions=pool.map(q=>{const value=shuffleOptions(q);if(value)value.__mqDifficulty=s.bossDifficulty;return value;});
+                if(usedQuestions[s.bossDifficulty])pool.forEach(q=>{if(!usedQuestions[s.bossDifficulty].includes(q.id))usedQuestions[s.bossDifficulty].push(q.id);});
+            }
+            currentQuestion=s.checkpointQuestions[s.checkpointIndex];
+            adaptiveMode='exam-checkpoint';
+        }else{
+            let item=assessment.rooms[room];
+            if(!item){
+                const profile=getSelectionProfile();
+                const question=shuffleOptions(getAdaptiveQuestion(s.difficulty,getWeakestTag(),{mode:'support',preferredTypes:profile?.preferredTypes||[],purpose:'exam-navigation'}));
+                if(question)question.__mqDifficulty=s.difficulty;
+                item=assessment.rooms[room]={question,selectedIndex:null,initialSelectedIndex:null,initialCorrect:null,finalCorrect:null,revisionCount:0,responseTime:0};
+            }
+            currentQuestion=item.question;adaptiveMode='exam-navigation';
+        }
+        if(!currentQuestion){showGameModal({title:'Question Selection Stopped',text:'Exam Drill could not select a valid question.',confirmText:'Return to Modes',onConfirm:returnToModeSelectFromRun});return;}
+        runPhase='question';
+        closeGraphLightbox();byId('questionImageBox').replaceChildren();byId('questionImageBox').style.display='none';
+        renderQuestionGraph(currentQuestion);
+        byId('gameShell').classList.toggle('boss-mode',checkpoint);byId('gameBox').classList.toggle('boss-mode',checkpoint);
+        if(checkpoint){
+            byId('gameBox').style.setProperty('--bossColor',s.color);
+            if(s.boss===30)playFinalBossMusic();else playBossMusic();
+            byId('question').innerHTML=`<img src="${s.image}" class="bossIcon ${['underwriterGlow','auditorGlow','principalGlow'][s.index]}" alt="${s.guardian}"><span class="boss-title" style="color:${s.color}">${s.guardian}</span><div class="boss-q" style="--bossColor:${s.color}">${currentQuestion.q}</div>`;
+        }else{playExplorationMusic();byId('question').innerHTML=`<div>${currentQuestion.q}</div>`;}
+        byId('bossMessage').textContent=checkpoint?`ASSESSMENT CHECKPOINT — Response ${s.checkpointIndex+1} of 3`:'';
+        byId('formulaHint').textContent=currentQuestion.hint?'💡 Hint: '+currentQuestion.hint:'';
+        byId('message').textContent=checkpoint?'Responses are recorded without immediate correctness feedback.':'Choose a response, then use the section navigation to review or continue.';
+        byId('streakDisplay').textContent='';
+        byId('areaDisplay').textContent=`Exam Drill — Section ${s.index+1} · ${checkpoint?'Checkpoint':`Question ${room-s.start+1} of 9`}`;
+        byId('progressFill').style.width=`${((s.index*12+(checkpoint?9+s.checkpointIndex:0))/36)*100}%`;
+        byId('artifactDrop').style.display='none';
+        wizardSpeak('Your responses remain sealed until the assessment permits a summary. Take your time.');
+        displayQuestion();renderNavigation();
+        window.MQAccessibility?.sync();
+        // Heading focus supplies question context; the live region is only a neutral status.
+        byId('question').focus({preventScroll:true});live('');
+    }
+    window.loadQuestion = function(...args){if(gameMode==='exam')return renderQuestion();return original.loadQuestion.apply(this,args);};
+    window.displayQuestion = function(...args){
+        const result=original.displayQuestion.apply(this,args);
+        if(gameMode==='exam'&&ordinary(room)){
+            const selected=assessment.rooms[room]?.selectedIndex;
+            byId('answers').querySelectorAll('button').forEach((button,i)=>{button.classList.toggle('exam-selected',selected===i);button.setAttribute('aria-pressed',String(selected===i));});
+        }
+        return result;
+    };
+
+    function scoreResponse(roomNumber,item,checkpoint=false){
+        const prior=currentQuestion;currentQuestion=item.question;
+        const q=item.question, correct=Boolean(item.finalCorrect), responseTime=item.responseTime;
+        Object.keys(conceptMemory).forEach(tag=>{conceptMemory[tag]*=.95;});
+        totalAttempts++;recordAdaptiveAttempt(q,correct,responseTime);
+        if(correct){
+            streak++;correctAnswers++;maxStreak=Math.max(maxStreak,streak);
+            if(q.tag){
+                const expected=getTypeTargetMs(q.type);
+                const bonus=checkpoint ? (responseTime<=expected*.85 ? .45 : responseTime<=expected*1.15 ? .3 : .15) : .2;
+                conceptMemory[q.tag]=Math.max(0,(conceptMemory[q.tag]||0)*.68-bonus);
+            }
+        }else{streak=0;if(q.tag)conceptMemory[q.tag]=(conceptMemory[q.tag]||0)+(checkpoint&&responseTime<getTypeTargetMs(q.type)*.65?1.25:1);}
+        // Existing supported fields only. The fixed serializer/header remain unchanged.
+        sendGameData({runID,event:'question',room:roomNumber,questionId:q.id,questionVersion:q.version||1,difficulty:q.__mqDifficulty,
+            selectedIndex:item.selectedIndex,correct:correct?1:0,tag:q.tag||'',type:q.type||'',objective:q.objective||inferObjective(q),
+            responseTime,attempt:totalAttempts,streak,elapsedTime:getElapsedTimeMs(),adaptiveMode:checkpoint?'exam-checkpoint':'exam-commit'});
+        currentQuestion=prior;
+    }
+    function commitSection(s){
+        if(gameMode!=='exam'||runEnding||answerSubmissionPending||s!==sectionState()||s.committed||!complete(s))return false;
+        s.committed=true;
+        for(let n=s.start;n<=s.end;n++)scoreResponse(n,assessment.rooms[n]);
+        sendGameData({runID,event:'exam_section_commit',room:s.boss,adaptiveMode:'exam-commit'});
+        room=s.boss;bossHealth=3;bossPool=[];loadQuestion();return true;
+    }
+    window.answer = async function(choice,...args){
+        if(gameMode!=='exam')return original.answer.call(this,choice,...args);
+        if(runEnding||answerSubmissionPending||!Number.isInteger(choice)||!currentQuestion?.options?.[choice])return;
+        const s=sectionState(), q=currentQuestion, answerRoom=room, session=runSessionId;
+        if(!s||s.checkpointComplete)return;
+        const item=ordinary(room)?assessment.rooms[room]:null;
+        if(item?.selectedIndex===choice)return;
+        const responseTime=Math.max(0,Date.now()-questionStartTime);
+        answerSubmissionPending=true;setAnswerButtonsDisabled(true);renderNavigation();
+        let correct;
+        try{correct=await isQuestionAnswerCorrect(q,choice);}catch(_){
+            if(session!==runSessionId||runEnding||gameMode!=='exam')return;
+            answerSubmissionPending=false;setAnswerButtonsDisabled(false);renderNavigation();
+            showGameModal({title:'Answer Check Unavailable',text:'Your response could not be saved. Close this message and try again.',confirmText:'Return to Question'});return;
+        }
+        if(session!==runSessionId||runEnding||gameMode!=='exam'||room!==answerRoom||currentQuestion!==q)return;
+        if(item){
+            const revision=item.selectedIndex!==null;
+            if(!revision){item.initialSelectedIndex=choice;item.initialCorrect=correct;}else item.revisionCount++;
+            item.selectedIndex=choice;item.finalCorrect=correct;item.responseTime=responseTime;
+            sendGameData({runID,event:revision?'exam_answer_revision':'exam_answer_initial',room,questionId:q.id,selectedIndex:choice,
+                tag:q.tag||'',type:q.type||'',objective:q.objective||inferObjective(q),responseTime,adaptiveMode:'exam-navigation'});
+            answerSubmissionPending=false;displayQuestion();renderNavigation();
+            byId('message').textContent=revision?'Response updated. You may revise it again or choose another question.':'Response saved. You may revise it or choose another question.';
+            byId('answers').querySelector(`[data-answer-index="${choice}"]`)?.focus({preventScroll:true});
+            live(revision?'Response updated.':'Response saved.');
+        }else{
+            if(!s.committed)return;
+            scoreResponse(room,{question:q,selectedIndex:choice,finalCorrect:correct,responseTime},true);
+            s.checkpointIndex++;if(correct)s.checkpointCorrect++;
+            bossHealth=3-s.checkpointIndex;
+            byId('message').textContent='Response recorded.';live('Response recorded.');
+            if(s.checkpointIndex<3){scheduleForCurrentRun(loadQuestion,TIMING.boss);return;}
+            s.checkpointComplete=true;
+            sendGameData({runID,event:'boss_defeated',room,adaptiveMode:'exam-checkpoint'});
+            showCheckpointSummary(s);
+        }
+    };
+    function showCheckpointSummary(s){
+        // Composer releases only the aggregate encounter outcome here, not an answer key.
+        const outcome=s.checkpointCorrect===3?'secured':s.checkpointCorrect>=2?'cleared':'not-secured';
+        const ordinal=['I','II','III'][s.index];
+        const title=outcome==='not-secured'?'MASTERY NOT YET SECURED':`CHECKPOINT ${ordinal} ${outcome.toUpperCase()}`;
+        const summary=outcome==='secured'?'You proved your command of this encounter.':outcome==='cleared'?'The encounter is complete, but these concepts still deserve attention.':'This encounter exposed concepts to revisit. Your responses have been recorded.';
+        playExplorationMusic();byId('gameShell').classList.remove('boss-mode');byId('gameBox').classList.remove('boss-mode');
+        byId('bossMessage').textContent='';byId('message').textContent='';byId('formulaHint').textContent='';
+        closeGraphLightbox();byId('questionImageBox').replaceChildren();byId('questionImageBox').style.display='none';
+        byId('question').innerHTML=`<span class="boss-title">${title}</span><div class="boss-q">${summary}</div>`;
+        byId('answers').innerHTML=`<button id="continueBtn" class="continue-btn">${s.boss===30?'VIEW RESULTS →':`CONTINUE TO ROOM ${s.boss+1} →`}</button>`;
+        const button=byId('continueBtn'),session=runSessionId;let continued=false;
+        button.onclick=()=>{
+            if(continued||session!==runSessionId||runEnding||gameMode!=='exam'||room!==s.boss)return;
+            continued=true;button.disabled=true;bossHealth=3;bossPool=[];bossCheckpoint=s.boss+1;
+            if(s.boss===30)handlePracticeModeComplete();else{room=s.boss+1;loadQuestion();}
+        };
+        renderNavigation();byId('question').focus({preventScroll:true});live('');runPhase='boss-summary';
+    }
+    window.handlePracticeModeComplete = function(...args){
+        if(gameMode==='exam'){byId('labyrinthExamNavigation')?.remove();live('');}
+        // Uncommitted drafts are not accepted answers or automatic zeros, including early exit.
+        return original.handlePracticeModeComplete.apply(this,args);
+    };
+    window.returnToModeSelectFromRun = function(...args){
+        if(gameMode==='exam')byId('labyrinthExamNavigation')?.remove();
+        return original.returnToModeSelectFromRun.apply(this,args);
+    };
 })();
 </script>
 </body>
