@@ -6844,7 +6844,7 @@ const questionBank = {
       "feedback": "D1 lies to the left of D0, so consumers want less at every price. That is a decrease in demand.",
       "source": "graph_batch_demand_20260816",
       "image": "DEMAND-05.png",
-      "imageAlt": "Hamburger demand graph with D0 above D1, showing a leftward decrease in demand.",
+      "imageAlt": "Hamburger graph with two parallel downward-sloping lines; D1 lies below and left of D0.",
       "graphRequired": true,
       "aHash": "694a08284bba5da73688d49e505d3933e4eae0008f1d3f731b262bce4b8d2c50"
     },
@@ -6872,7 +6872,7 @@ const questionBank = {
       "feedback": "A to B is movement down the same demand curve: price drops from $10 to $5, so quantity demanded rises.",
       "source": "graph_batch_demand_20260816",
       "image": "DEMAND-01.png",
-      "imageAlt": "Taco demand graph D0 with point A at price 10 quantity 100 and point B at price 5 quantity 225.",
+      "imageAlt": "Taco graph with downward-sloping D0 and labeled points A and B.",
       "graphRequired": true,
       "aHash": "3788080942a517ed7e3c352124e142cf141771f00dbc41d5ce24d4c4ce52aa20"
     },
@@ -6900,7 +6900,7 @@ const questionBank = {
       "feedback": "Point A is at a price of $12 while point B is at $6, so point A reflects the higher willingness to pay.",
       "source": "graph_batch_demand_20260816",
       "image": "DEMAND-02.png",
-      "imageAlt": "Taco demand graph D0 with point A at price 12 quantity 50 and point B at price 6 quantity 200.",
+      "imageAlt": "Taco graph with downward-sloping D0 and points A at 50 thousand, $12 and B at 200 thousand, $6.",
       "graphRequired": true,
       "aHash": "502372a865dba96f36d1ac2a30db3c6a80aa6a963e27bb2acc1ec3bbb0a830a0"
     },
@@ -6928,7 +6928,7 @@ const questionBank = {
       "feedback": "A rightward shift from D0 to D1 means consumers demand more tacos at each price.",
       "source": "graph_batch_demand_20260816",
       "image": "DEMAND-03.png",
-      "imageAlt": "Taco demand graph with D0 shifting right to D1.",
+      "imageAlt": "Taco graph with parallel downward-sloping D0 and D1 and a right-pointing arrow between them.",
       "graphRequired": true,
       "aHash": "95cdfc2f0636fb8e396d27aad36048f34247f60e60306f306269b1d0f6b45174"
     },
@@ -6954,7 +6954,7 @@ const questionBank = {
       "feedback": "Along a downward-sloping linear demand curve, demand is more elastic toward the high-price, low-quantity end. Point C is in that region.",
       "source": "graph_batch_elasticity_20260816",
       "image": "ELASTICITY-01.png",
-      "imageAlt": "Downward-sloping linear demand curve with point C at quantity 30 price 12, point B at quantity 45 price 10, and point A at quantity 75 price 6.",
+      "imageAlt": "Straight downward-sloping Demand line with labeled points C, B and A.",
       "graphRequired": true,
       "aHash": "1ddf7973e5b61d38fa9b006a2114abd9568562684cd21fbe42afe7e33e63fb6a"
     },
@@ -6980,7 +6980,7 @@ const questionBank = {
       "feedback": "A vertical demand curve means quantity demanded does not change when price changes, so elasticity is zero: perfectly inelastic.",
       "source": "graph_batch_elasticity_20260816",
       "image": "ELASTICITY-02.png",
-      "imageAlt": "Vertical demand curve at quantity 70 with point A at price 6 and point B at price 10.",
+      "imageAlt": "Vertical Demand line at quantity 70 with A at price 6 and B at price 10.",
       "graphRequired": true,
       "aHash": "4664732ebe659706470f23ecb814a2d98f222e18800c8f8984691ae4c3b9603c"
     },
@@ -7006,7 +7006,7 @@ const questionBank = {
       "feedback": "D1 shows a much larger quantity response to the same $5-to-$3 price change, so D1 is more elastic.",
       "source": "graph_batch_elasticity_20260816",
       "image": "ELASTICITY-03.png",
-      "imageAlt": "Two downward-sloping demand curves. D1 is flatter with points B at quantity 35 price 5 and A at quantity 75 price 3. D2 is steeper with points D at quantity 47 price 5 and C at quantity 55 price 3.",
+      "imageAlt": "Two intersecting downward-sloping lines, flatter blue D1 and steeper red D2, with four labeled points.",
       "graphRequired": true,
       "aHash": "8b53639f152c8fc6ef30802fde462ba0be9cf085f7580dc69efd72e002abbb35"
     },
@@ -7032,7 +7032,7 @@ const questionBank = {
       "feedback": "A horizontal demand curve represents perfectly elastic demand: even a tiny price increase above the shown price eliminates quantity demanded.",
       "source": "graph_batch_elasticity_20260816",
       "image": "ELASTICITY-05.png",
-      "imageAlt": "Horizontal demand curve at price 10 with point A at quantity 50 and point B at quantity 100.",
+      "imageAlt": "Horizontal Demand line at price 10 with A at quantity 50 and B at quantity 100.",
       "graphRequired": true,
       "aHash": "4ce3dd0496412b51b4c3529c44337174d685ae60aa83c60e04ce26c656a7b8eb"
     },
@@ -7058,7 +7058,7 @@ const questionBank = {
       "feedback": "Higher indifference curves represent higher utility. IC3 is above IC2 and IC1, so it gives the greatest satisfaction.",
       "source": "graph_batch_indifference_20260816",
       "image": "IC-01.png",
-      "imageAlt": "Indifference curve graph with IC2 in the middle, IC1 below it, and IC3 above it.",
+      "imageAlt": "Three downward-curving indifference curves, IC1 lowest, IC2 in the middle and IC3 highest.",
       "graphRequired": true,
       "aHash": "1e94404e9ad3ef3b579079e2f448df711a97d917ad6d18916ccdc168c1bc3a12"
     },
@@ -7084,7 +7084,7 @@ const questionBank = {
       "feedback": "Straight, downward-sloping and parallel indifference curves are the classic shape for perfect substitutes.",
       "source": "graph_batch_indifference_20260816",
       "image": "IC-05.png",
-      "imageAlt": "Three parallel downward-sloping indifference curves labeled IC1, IC2, and IC3.",
+      "imageAlt": "Three parallel downward-sloping straight indifference curves labeled IC1, IC2 and IC3.",
       "graphRequired": true,
       "aHash": "da08e99e60590d4d758e071e3e76b760bc5732ea127c333456c06789d8a591b6"
     },
@@ -7110,7 +7110,7 @@ const questionBank = {
       "feedback": "L-shaped indifference curves show perfect complements because utility depends on consuming the goods together in fixed proportions.",
       "source": "graph_batch_indifference_20260816",
       "image": "IC-06.png",
-      "imageAlt": "Three right-angle indifference curves labeled IC1, IC2, and IC3.",
+      "imageAlt": "Three right-angle indifference curves with corners progressing upward and right from IC1 to IC3.",
       "graphRequired": true,
       "aHash": "bda66d4f831df6cc15cdcefe77eb878a83318ad42bfe76a1c67ce813fd686a9c"
     },
@@ -7138,7 +7138,7 @@ const questionBank = {
       "feedback": "Because the Y-intercept is unchanged and the X-intercept increases, Good X became cheaper.",
       "source": "graph_batch_indifference_20260816",
       "image": "INCOME-SUB-01.png",
-      "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept, and points A, B, and C showing substitution and income effects.",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C.",
       "graphRequired": true,
       "aHash": "fc4ef110eb01f9a087be12c680b018a2b6d05bf4e84d605e4804f50687487d14"
     },
@@ -7166,7 +7166,7 @@ const questionBank = {
       "feedback": "When the X-intercept stays fixed and the Y-intercept rises, Good Y has become cheaper.",
       "source": "graph_batch_indifference_20260816",
       "image": "INCOME-SUB-03.png",
-      "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the X-intercept, and points A, B, and C showing substitution and income effects.",
+      "imageAlt": "Two budget lines sharing an X intercept, curves U0 and U1, and points A, B and C; Budget1 reaches higher on Y.",
       "graphRequired": true,
       "aHash": "c4e99f6ffcb5dfb4ca9d56b76cbf30e5bb10600931e9b32b03e5be6cf159406c"
     },
@@ -7194,7 +7194,7 @@ const questionBank = {
       "feedback": "A larger X-intercept with the same Y-intercept means Good X became cheaper.",
       "source": "graph_batch_indifference_20260816",
       "image": "INCOME-SUB-04.png",
-      "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept and points A, B, and C marking a price drop in Good X.",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and labeled bundles A, B and C.",
       "graphRequired": true,
       "aHash": "fc4ef110eb01f9a087be12c680b018a2b6d05bf4e84d605e4804f50687487d14"
     },
@@ -7222,7 +7222,7 @@ const questionBank = {
       "feedback": "Point C is located at 10 on the Good X axis and 10 on the Good Y axis.",
       "source": "graph_batch_indifference_actual_20260816",
       "image": "IC-02.png",
-      "imageAlt": "Budget-line and indifference-curve graph with points A, B, and C, where C is the tangency point on IC2.",
+      "imageAlt": "Budget line and three indifference curves with A, B and a tangency at C.",
       "graphRequired": true,
       "aHash": "461479214bf11f98358d54cd5089d421ecab7c2310a75233c9bfca7212b83a46"
     },
@@ -7248,7 +7248,7 @@ const questionBank = {
       "feedback": "Point A is at 10 on the horizontal axis and 20 on the vertical axis.",
       "source": "graph_batch_indifference_actual_20260816",
       "image": "IC-03.png",
-      "imageAlt": "Budget line tangent to IC2 at point A, with IC1 below and IC3 above.",
+      "imageAlt": "Budget line touching the middle indifference curve IC2 at A, with IC1 below and IC3 above.",
       "graphRequired": true,
       "aHash": "83a1a52cda3931e39d15f1b86afa7fb6af1fc8d4d07bd2e3e8f82334379a735a"
     },
@@ -7274,7 +7274,7 @@ const questionBank = {
       "feedback": "Point A is at 15 on the Good X axis and 10 on the Good Y axis.",
       "source": "graph_batch_indifference_actual_20260816",
       "image": "IC-04.png",
-      "imageAlt": "Budget line tangent to IC2 at point A.",
+      "imageAlt": "Budget line and downward-curving IC2 touching at point A, Good X 15 and Good Y 10.",
       "graphRequired": true,
       "aHash": "50066600cbc254b1de742d0ee46c9f35db87558887e2f0c3357109c93dea7fcb"
     },
@@ -7300,7 +7300,7 @@ const questionBank = {
       "feedback": "IC1 is the lowest curve, so it represents the lowest level of utility.",
       "source": "graph_batch_indifference_actual_20260816",
       "image": "IC-01.png",
-      "imageAlt": "Indifference curve graph with IC2 in the middle, IC1 below it, and IC3 above it.",
+      "imageAlt": "Three downward-curving indifference curves, IC1 lowest, IC2 in the middle and IC3 highest.",
       "graphRequired": true,
       "aHash": "a4a2c3fe57903188470ca34e14ce973446feb274ff4623d33ff9b111f8f8377e"
     },
@@ -7328,7 +7328,7 @@ const questionBank = {
       "feedback": "Point A is on the original budget line and original utility curve, so it is the initial choice before the price of Good X falls.",
       "source": "graph_batch_indifference_actual_20260816",
       "image": "INCOME-SUB-01.png",
-      "imageAlt": "Consumer-choice graph showing Budget0, Budget1, U0, U1, and points A, B, and C after a fall in the price of Good X.",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C.",
       "graphRequired": true,
       "aHash": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb"
     }
@@ -8738,7 +8738,7 @@ const questionBank = {
       "feedback": "Reading across the graph at $5, quantity demanded drops from roughly 225 thousand to 125 thousand. That is a decrease of 100 thousand units.",
       "source": "graph_batch_demand_20260816",
       "image": "DEMAND-05.png",
-      "imageAlt": "Hamburger demand graph with D0 above D1, showing a leftward decrease in demand.",
+      "imageAlt": "Hamburger graph with two parallel downward-sloping lines; D1 lies below and left of D0.",
       "graphRequired": true,
       "aHash": "e32dfc65431cbfd52d1251e9db1b729827353b63bc3ad12e1e49bb83d195a38d"
     },
@@ -8766,7 +8766,7 @@ const questionBank = {
       "feedback": "Quantity demanded rises from 100 thousand to 225 thousand, so the increase is 125 thousand.",
       "source": "graph_batch_demand_20260816",
       "image": "DEMAND-01.png",
-      "imageAlt": "Taco demand graph D0 with point A at price 10 quantity 100 and point B at price 5 quantity 225.",
+      "imageAlt": "Taco graph with downward-sloping D0 and labeled points A and B.",
       "graphRequired": true,
       "aHash": "86d0e9d813d48e132a194eb153fbc04ee215570f1f970fd4a91aa41384a64384"
     },
@@ -8794,7 +8794,7 @@ const questionBank = {
       "feedback": "The price falls from $12 at A to $6 at B, so the change is a decrease of $6.",
       "source": "graph_batch_demand_20260816",
       "image": "DEMAND-02.png",
-      "imageAlt": "Taco demand graph D0 with point A at price 12 quantity 50 and point B at price 6 quantity 200.",
+      "imageAlt": "Taco graph with downward-sloping D0 and points A at 50 thousand, $12 and B at 200 thousand, $6.",
       "graphRequired": true,
       "aHash": "0515b99084c67e889e1ca62bcbb0d7f52635c0f097afd047f7d64508e9575316"
     },
@@ -8822,7 +8822,7 @@ const questionBank = {
       "feedback": "A rightward shift in demand comes from a nonprice demand determinant, such as a rise in popularity.",
       "source": "graph_batch_demand_20260816",
       "image": "DEMAND-04.png",
-      "imageAlt": "Peanut butter demand graph with D0 shifting right to D1.",
+      "imageAlt": "Peanut butter graph with parallel downward-sloping D0 and D1; A and B are on D0.",
       "graphRequired": true,
       "aHash": "96c80d83563ca6d53eb7cc087b9bb18bc8e16d86b03fb70b0ed8add6f178bcd9"
     },
@@ -8850,7 +8850,7 @@ const questionBank = {
       "feedback": "The midpoint percentage change in quantity is 30/60 = 50%, while the midpoint percentage change in price is 4/8 = 50%. The elasticity coefficient is 1.",
       "source": "graph_batch_elasticity_20260816",
       "image": "ELASTICITY-01.png",
-      "imageAlt": "Downward-sloping linear demand curve with point C at quantity 30 price 12, point B at quantity 45 price 10, and point A at quantity 75 price 6.",
+      "imageAlt": "Straight downward-sloping Demand line with labeled points C, B and A.",
       "graphRequired": true,
       "aHash": "9a643cf5dcd22f83a67be1168305fb5af5e8a6221e1299027e74c458f4e5589c"
     },
@@ -8876,7 +8876,7 @@ const questionBank = {
       "feedback": "Quantity demanded does not change at all, so the percentage change in quantity is zero and elasticity equals zero.",
       "source": "graph_batch_elasticity_20260816",
       "image": "ELASTICITY-02.png",
-      "imageAlt": "Vertical demand curve at quantity 70 with point A at price 6 and point B at price 10.",
+      "imageAlt": "Vertical Demand line at quantity 70 with A at price 6 and B at price 10.",
       "graphRequired": true,
       "aHash": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
     },
@@ -8904,7 +8904,7 @@ const questionBank = {
       "feedback": "At B, total revenue is 5\u00d735 = 175. At A, total revenue is 3\u00d775 = 225. Revenue rises when price falls, consistent with elastic demand.",
       "source": "graph_batch_elasticity_20260816",
       "image": "ELASTICITY-03.png",
-      "imageAlt": "Two downward-sloping demand curves. D1 is flatter with points B at quantity 35 price 5 and A at quantity 75 price 3. D2 is steeper with points D at quantity 47 price 5 and C at quantity 55 price 3.",
+      "imageAlt": "Two intersecting downward-sloping lines, flatter blue D1 and steeper red D2, with four labeled points.",
       "graphRequired": true,
       "aHash": "ff4354bae2601d1f5d39b2b6f6ac2bae6563d90df3a78ae1ca140e29596888c9"
     },
@@ -8932,7 +8932,7 @@ const questionBank = {
       "feedback": "At B, total revenue is 7\u00d720 = 140. At A, total revenue is 2\u00d770 = 140. Revenue is unchanged.",
       "source": "graph_batch_elasticity_20260816",
       "image": "ELASTICITY-04.png",
-      "imageAlt": "Curved demand curve with point B at quantity 20 price 7 and point A at quantity 70 price 2.",
+      "imageAlt": "Downward-curving Demand line with B at quantity 20, price 7 and A at quantity 70, price 2.",
       "graphRequired": true,
       "aHash": "0aedddfcefa47278621796463d85455bea4e07d9e0b99b82d6b7bf19af7e82b3"
     },
@@ -8958,7 +8958,7 @@ const questionBank = {
       "feedback": "Perfectly elastic demand exists at one price. A price even slightly above that level results in zero quantity demanded.",
       "source": "graph_batch_elasticity_20260816",
       "image": "ELASTICITY-05.png",
-      "imageAlt": "Horizontal demand curve at price 10 with point A at quantity 50 and point B at quantity 100.",
+      "imageAlt": "Horizontal Demand line at price 10 with A at quantity 50 and B at quantity 100.",
       "graphRequired": true,
       "aHash": "81403360a768328122a9714d7f5f88fbfb66797c4de0c17dcfdc6d9f20582db5"
     },
@@ -8984,7 +8984,7 @@ const questionBank = {
       "feedback": "IC2 is the middle curve, so it delivers more utility than IC1 and less utility than IC3.",
       "source": "graph_batch_indifference_20260816",
       "image": "IC-01.png",
-      "imageAlt": "Indifference curve graph with IC2 in the middle, IC1 below it, and IC3 above it.",
+      "imageAlt": "Three downward-curving indifference curves, IC1 lowest, IC2 in the middle and IC3 highest.",
       "graphRequired": true,
       "aHash": "485386942b79859fae7a5a54540f4bc5f99d56f075b23aebed8148b8ab32cde0"
     },
@@ -9012,7 +9012,7 @@ const questionBank = {
       "feedback": "Point C is where the budget line is tangent to the highest attainable indifference curve, so it is the utility-maximizing bundle.",
       "source": "graph_batch_indifference_20260816",
       "image": "IC-02.png",
-      "imageAlt": "Budget-line and indifference-curve graph with points A, B, and C, where C is the tangency point on IC2.",
+      "imageAlt": "Budget line and three indifference curves with A, B and a tangency at C.",
       "graphRequired": true,
       "aHash": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
     },
@@ -9040,7 +9040,7 @@ const questionBank = {
       "feedback": "A consumer maximizes utility at the highest attainable indifference curve that just touches the budget line. That is exactly what point A shows.",
       "source": "graph_batch_indifference_20260816",
       "image": "IC-03.png",
-      "imageAlt": "Budget line tangent to IC2 at point A, with lower and higher indifference curves shown.",
+      "imageAlt": "Budget line touching the middle indifference curve IC2 at A, with IC1 below and IC3 above.",
       "graphRequired": true,
       "aHash": "19018491b824be55953361cdd5c8d4698a661f55def745d811664d5f410862d4"
     },
@@ -9066,7 +9066,7 @@ const questionBank = {
       "feedback": "Even with perfect substitutes, higher indifference curves still represent higher utility. IC3 is the highest.",
       "source": "graph_batch_indifference_20260816",
       "image": "IC-05.png",
-      "imageAlt": "Three parallel downward-sloping indifference curves labeled IC1, IC2, and IC3.",
+      "imageAlt": "Three parallel downward-sloping straight indifference curves labeled IC1, IC2 and IC3.",
       "graphRequired": true,
       "aHash": "1e94404e9ad3ef3b579079e2f448df711a97d917ad6d18916ccdc168c1bc3a12"
     },
@@ -9092,7 +9092,7 @@ const questionBank = {
       "feedback": "For perfect complements, extra units of only one good do not increase utility. Utility rises only when both goods increase together.",
       "source": "graph_batch_indifference_20260816",
       "image": "IC-06.png",
-      "imageAlt": "Three right-angle indifference curves labeled IC1, IC2, and IC3.",
+      "imageAlt": "Three right-angle indifference curves with corners progressing upward and right from IC1 to IC3.",
       "graphRequired": true,
       "aHash": "1bef35c53bc64cbd19184f172c761d6a52043c6eeaaf0ee3235e18c027669375"
     },
@@ -9120,7 +9120,7 @@ const questionBank = {
       "feedback": "A smaller X-intercept with the same Y-intercept means Good X became more expensive.",
       "source": "graph_batch_indifference_20260816",
       "image": "INCOME-SUB-02.png",
-      "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept, and points A, B, and C showing a price increase in Good X.",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C; Budget1 is steeper.",
       "graphRequired": true,
       "aHash": "834e731e3e3063cc18d67f6f20673dd8a35bc9b01946e975c9d23e7cc5cd23da"
     },
@@ -9148,7 +9148,7 @@ const questionBank = {
       "feedback": "Point C lies on IC2, while A and B lie on lower attainable curves.",
       "source": "graph_batch_indifference_actual_20260816",
       "image": "IC-02.png",
-      "imageAlt": "Budget-line and indifference-curve graph with points A, B, and C, where C is the tangency point on IC2.",
+      "imageAlt": "Budget line and three indifference curves with A, B and a tangency at C.",
       "graphRequired": true,
       "aHash": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
     },
@@ -9176,7 +9176,7 @@ const questionBank = {
       "feedback": "The budget line just touches IC2 at point A, so IC2 is the optimal indifference curve.",
       "source": "graph_batch_indifference_actual_20260816",
       "image": "IC-03.png",
-      "imageAlt": "Budget line tangent to IC2 at point A, with IC1 below and IC3 above.",
+      "imageAlt": "Budget line touching the middle indifference curve IC2 at A, with IC1 below and IC3 above.",
       "graphRequired": true,
       "aHash": "dd38f2a6bf8b518141a2c88e898b5e71669fb8e8dcf5ed6960ae9aa5c506def2"
     },
@@ -9204,7 +9204,7 @@ const questionBank = {
       "feedback": "Perfect substitutes have straight-line indifference curves, which means the MRS is constant.",
       "source": "graph_batch_indifference_actual_20260816",
       "image": "IC-05.png",
-      "imageAlt": "Three straight, parallel indifference curves labeled IC1, IC2, and IC3.",
+      "imageAlt": "Three parallel downward-sloping straight indifference curves labeled IC1, IC2 and IC3.",
       "graphRequired": true,
       "aHash": "89e33773aaf7d6d3098d2312be48c5a965fe80a2c06fbb5af040ea363e734839"
     },
@@ -9230,7 +9230,7 @@ const questionBank = {
       "feedback": "L-shaped indifference curves represent perfect complements, meaning the goods are consumed in fixed proportions.",
       "source": "graph_batch_indifference_actual_20260816",
       "image": "IC-06.png",
-      "imageAlt": "Three L-shaped indifference curves labeled IC1, IC2, and IC3.",
+      "imageAlt": "Three right-angle indifference curves with corners progressing upward and right from IC1 to IC3.",
       "graphRequired": true,
       "aHash": "c7530b9748ed503e4d0b93abe8e75dc299a3e48546fcd3f77b80204150671e26"
     },
@@ -9258,7 +9258,7 @@ const questionBank = {
       "feedback": "The X-intercept stays the same while the Y-intercept rises, so Good Y becomes cheaper.",
       "source": "graph_batch_indifference_actual_20260816",
       "image": "INCOME-SUB-03.png",
-      "imageAlt": "Consumer-choice graph showing a pivot from Budget0 to Budget1 caused by a fall in the price of Good Y.",
+      "imageAlt": "Two budget lines sharing an X intercept, curves U0 and U1, and points A, B and C; Budget1 reaches higher on Y.",
       "graphRequired": true,
       "aHash": "bc3f7f738025403c98c6c9c896e67ad52784db34e603d754d10f8c041186b12c"
     }
@@ -10673,7 +10673,7 @@ const questionBank = {
       "feedback": "Because D1 is left of D0, D0 shows the larger quantity demanded at every common price.",
       "source": "graph_batch_demand_20260816",
       "image": "DEMAND-05.png",
-      "imageAlt": "Hamburger demand graph with D0 above D1, showing a leftward decrease in demand.",
+      "imageAlt": "Hamburger graph with two parallel downward-sloping lines; D1 lies below and left of D0.",
       "graphRequired": true,
       "aHash": "9e9e524e6544d723e524648baaf3fb9a9c833af9c3d535b6c61ac2d79e4c7a14"
     },
@@ -10701,7 +10701,7 @@ const questionBank = {
       "feedback": "The entire curve shifts right, which means demand increased because of a nonprice determinant.",
       "source": "graph_batch_demand_20260816",
       "image": "DEMAND-03.png",
-      "imageAlt": "Taco demand graph with D0 shifting right to D1.",
+      "imageAlt": "Taco graph with parallel downward-sloping D0 and D1 and a right-pointing arrow between them.",
       "graphRequired": true,
       "aHash": "5ae7509f640114ec6db907c65a6f155edf0edae296eb6071c96450ee79241e1c"
     },
@@ -10729,7 +10729,7 @@ const questionBank = {
       "feedback": "From A to B on D0, price falls and quantity demanded increases, which matches the law of demand.",
       "source": "graph_batch_demand_20260816",
       "image": "DEMAND-04.png",
-      "imageAlt": "Peanut butter demand graph with point A on D0 at a higher price and point B on D0 at a lower price.",
+      "imageAlt": "Peanut butter graph with parallel downward-sloping D0 and D1; A and B are on D0.",
       "graphRequired": true,
       "aHash": "5a00d82bf48f9860644424b2132369a9d754baa168a9f552c42616bac962d2ee"
     },
@@ -10757,7 +10757,7 @@ const questionBank = {
       "feedback": "Reversing the move from B to A means a higher price and a lower quantity demanded on the same curve.",
       "source": "graph_batch_demand_20260816",
       "image": "DEMAND-02.png",
-      "imageAlt": "Taco demand graph D0 with point A at price 12 quantity 50 and point B at price 6 quantity 200.",
+      "imageAlt": "Taco graph with downward-sloping D0 and points A at 50 thousand, $12 and B at 200 thousand, $6.",
       "graphRequired": true,
       "aHash": "6284c96a075348b8289468cc77ab613b3ce383367e41fda1a8427fb8ae205f74"
     },
@@ -10783,7 +10783,7 @@ const questionBank = {
       "feedback": "On a straight-line demand curve, elasticity declines as price falls and quantity rises. Thus C is most elastic, then B, then A.",
       "source": "graph_batch_elasticity_20260816",
       "image": "ELASTICITY-01.png",
-      "imageAlt": "Downward-sloping linear demand curve with point C at quantity 30 price 12, point B at quantity 45 price 10, and point A at quantity 75 price 6.",
+      "imageAlt": "Straight downward-sloping Demand line with labeled points C, B and A.",
       "graphRequired": true,
       "aHash": "745a8ba91ac05c30cef5f062493979c2778066eaf83ecf48f918b2e2432bc96b"
     },
@@ -10811,7 +10811,7 @@ const questionBank = {
       "feedback": "The quantity remains fixed at 70. Elasticity is therefore zero even though a higher price mechanically raises total revenue.",
       "source": "graph_batch_elasticity_20260816",
       "image": "ELASTICITY-02.png",
-      "imageAlt": "Vertical demand curve at quantity 70 with point A at price 6 and point B at price 10.",
+      "imageAlt": "Vertical Demand line at quantity 70 with A at price 6 and B at price 10.",
       "graphRequired": true,
       "aHash": "26ff71763a8baece69a3d90472810172d925def5e3e5e3b3d9f9dc237088b04f"
     },
@@ -10839,7 +10839,7 @@ const questionBank = {
       "feedback": "For D1, quantity changes by 40 around a midpoint of 55, while price changes by 2 around a midpoint of 4. The ratio is about 72.7%/50% = 1.45.",
       "source": "graph_batch_elasticity_20260816",
       "image": "ELASTICITY-03.png",
-      "imageAlt": "Two downward-sloping demand curves. D1 is flatter with points B at quantity 35 price 5 and A at quantity 75 price 3. D2 is steeper with points D at quantity 47 price 5 and C at quantity 55 price 3.",
+      "imageAlt": "Two intersecting downward-sloping lines, flatter blue D1 and steeper red D2, with four labeled points.",
       "graphRequired": true,
       "aHash": "6918de1a26a10e9b603116c8dfc0c092ec727da4e8f830125357cd8ad5eddd50"
     },
@@ -10867,7 +10867,7 @@ const questionBank = {
       "feedback": "Quantity changes from 20 to 70: 50/45 \u2248 111.1%. Price changes from 7 to 2: 5/4.5 \u2248 111.1%. Their ratio is 1.",
       "source": "graph_batch_elasticity_20260816",
       "image": "ELASTICITY-04.png",
-      "imageAlt": "Curved demand curve with point B at quantity 20 price 7 and point A at quantity 70 price 2.",
+      "imageAlt": "Downward-curving Demand line with B at quantity 20, price 7 and A at quantity 70, price 2.",
       "graphRequired": true,
       "aHash": "d0ff5974b6aa52cf562bea5921840c032a860a91a3512f7fe8f768f6bbe005f6"
     },
@@ -10893,7 +10893,7 @@ const questionBank = {
       "feedback": "With perfectly elastic demand, the market accepts the shown price, and quantities can vary along that horizontal line; a higher price drives quantity demanded to zero.",
       "source": "graph_batch_elasticity_20260816",
       "image": "ELASTICITY-05.png",
-      "imageAlt": "Horizontal demand curve at price 10 with point A at quantity 50 and point B at quantity 100.",
+      "imageAlt": "Horizontal Demand line at price 10 with A at quantity 50 and B at quantity 100.",
       "graphRequired": true,
       "aHash": "55c4479fff1dd7d62524eedfd829499db0dc16eaa694ad182591c09a17b9a75f"
     },
@@ -10921,7 +10921,7 @@ const questionBank = {
       "feedback": "A and B are feasible, but C lies on the highest attainable indifference curve, so A and B are inferior choices.",
       "source": "graph_batch_indifference_20260816",
       "image": "IC-02.png",
-      "imageAlt": "Budget-line and indifference-curve graph with points A, B, and C, where C is the tangency point on IC2.",
+      "imageAlt": "Budget line and three indifference curves with A, B and a tangency at C.",
       "graphRequired": true,
       "aHash": "d7e5e9816b62f08fdf3e8826148ee98f49ccbe006837214d9f2ae268532c16bb"
     },
@@ -10949,7 +10949,7 @@ const questionBank = {
       "feedback": "IC3 is above the budget line at every relevant point, so it is preferred but unattainable with the current budget.",
       "source": "graph_batch_indifference_20260816",
       "image": "IC-03.png",
-      "imageAlt": "Budget line tangent to IC2 at point A, with lower and higher indifference curves shown.",
+      "imageAlt": "Budget line touching the middle indifference curve IC2 at A, with IC1 below and IC3 above.",
       "graphRequired": true,
       "aHash": "943cbfc7eb265d70a8b33702628c5254a5427a190bdc986ace13c8b89a07b201"
     },
@@ -10977,7 +10977,7 @@ const questionBank = {
       "feedback": "At an interior optimum, the slope of the indifference curve equals the slope of the budget line, so MRS equals the price ratio.",
       "source": "graph_batch_indifference_20260816",
       "image": "IC-04.png",
-      "imageAlt": "Budget line tangent to IC2 at point A.",
+      "imageAlt": "Budget line and downward-curving IC2 touching at point A, Good X 15 and Good Y 10.",
       "graphRequired": true,
       "aHash": "210baedb4c17c1f63b8a8ecdf1afa78920926017c9557ac4934ee817cd941d8f"
     },
@@ -11003,7 +11003,7 @@ const questionBank = {
       "feedback": "For ordinary goods, indifference curves should slope downward. Upward-sloping curves imply that getting more of both goods leaves utility unchanged, which is not consistent with more-is-better.",
       "source": "graph_batch_indifference_20260816",
       "image": "IC-07.png",
-      "imageAlt": "Three upward-sloping parallel curves labeled IC1, IC2, and IC3.",
+      "imageAlt": "Three parallel upward-sloping lines labeled IC1, IC2 and IC3.",
       "graphRequired": true,
       "aHash": "4ebbf43d2872ae4e1dbcd01045bb5d024c659ddcff94c740cbc302da6e2f987d"
     },
@@ -11031,7 +11031,7 @@ const questionBank = {
       "feedback": "A to B is the substitution effect: the consumer responds to the new relative price of Good X while staying on the original utility level U\u2080.",
       "source": "graph_batch_indifference_20260816",
       "image": "INCOME-SUB-01.png",
-      "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept, and points A, B, and C showing substitution and income effects.",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C.",
       "graphRequired": true,
       "aHash": "82dfe3b7a4869112f86b0bd8fa7b76f2d42047e31637afebee3604717a05340b"
     },
@@ -11059,7 +11059,7 @@ const questionBank = {
       "feedback": "B to C is the income effect. After the price drop in Good X raises real purchasing power, the consumer moves to a higher utility level U\u2081.",
       "source": "graph_batch_indifference_20260816",
       "image": "INCOME-SUB-01.png",
-      "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept, and points A, B, and C showing substitution and income effects.",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C.",
       "graphRequired": true,
       "aHash": "63082db471cf9c97f398a5c11aaff4349407cc276cbbdb9ca8705a0ae6e9f797"
     },
@@ -11087,7 +11087,7 @@ const questionBank = {
       "feedback": "A to B is the substitution effect: the consumer substitutes away from the now relatively more expensive Good X.",
       "source": "graph_batch_indifference_20260816",
       "image": "INCOME-SUB-02.png",
-      "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept, and points A, B, and C showing a price increase in Good X.",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C; Budget1 is steeper.",
       "graphRequired": true,
       "aHash": "82dfe3b7a4869112f86b0bd8fa7b76f2d42047e31637afebee3604717a05340b"
     },
@@ -11115,7 +11115,7 @@ const questionBank = {
       "feedback": "Point C lies on the new budget line and the highest attainable indifference curve after the price change, so C is the final chosen bundle.",
       "source": "graph_batch_indifference_20260816",
       "image": "INCOME-SUB-03.png",
-      "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the X-intercept, and points A, B, and C showing substitution and income effects.",
+      "imageAlt": "Two budget lines sharing an X intercept, curves U0 and U1, and points A, B and C; Budget1 reaches higher on Y.",
       "graphRequired": true,
       "aHash": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
     },
@@ -11143,7 +11143,7 @@ const questionBank = {
       "feedback": "Point C is where the budget line reaches the highest attainable indifference curve, so it maximizes utility.",
       "source": "graph_batch_indifference_actual_20260816",
       "image": "IC-02.png",
-      "imageAlt": "Budget-line and indifference-curve graph with points A, B, and C, where C is the tangency point on IC2.",
+      "imageAlt": "Budget line and three indifference curves with A, B and a tangency at C.",
       "graphRequired": true,
       "aHash": "8d2617f6592affbc6b333068bb01e8ed6cdb5c86b4cb3bae35d8e620e02ad123"
     },
@@ -11171,7 +11171,7 @@ const questionBank = {
       "feedback": "At an interior optimum, the indifference curve is tangent to the budget line, so the MRS equals the market tradeoff given by the price ratio.",
       "source": "graph_batch_indifference_actual_20260816",
       "image": "IC-03.png",
-      "imageAlt": "Budget line tangent to IC2 at point A, with IC1 below and IC3 above.",
+      "imageAlt": "Budget line touching the middle indifference curve IC2 at A, with IC1 below and IC3 above.",
       "graphRequired": true,
       "aHash": "399f0a4ee9a59d58ff77b51e779198886a2d4bf425e879c6bf290054fe9f95d8"
     },
@@ -11197,7 +11197,7 @@ const questionBank = {
       "feedback": "For ordinary goods, indifference curves should slope downward. Upward-sloping curves would imply that more of both goods leaves utility unchanged.",
       "source": "graph_batch_indifference_actual_20260816",
       "image": "IC-07.png",
-      "imageAlt": "Three upward-sloping curves labeled IC1, IC2, and IC3.",
+      "imageAlt": "Three parallel upward-sloping lines labeled IC1, IC2 and IC3.",
       "graphRequired": true,
       "aHash": "739bc436e633eddd0cd33606b9191098e7b9f84a0acd10dec2eedf4bb0a88cf6"
     },
@@ -11225,7 +11225,7 @@ const questionBank = {
       "feedback": "From A to B, Good X rises from 5 to 10 while Good Y falls from 20 to 10. That is the substitution effect.",
       "source": "graph_batch_indifference_actual_20260816",
       "image": "INCOME-SUB-01.png",
-      "imageAlt": "Consumer-choice graph showing A, B, and C after a fall in the price of Good X.",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C.",
       "graphRequired": true,
       "aHash": "546f3969649081edead524a24503802a566b7aafe83d88bf29c28aaf73c3a507"
     },
@@ -11253,7 +11253,7 @@ const questionBank = {
       "feedback": "From A to B, Good X falls from 20 to 10 while Good Y rises from 5 to 10, which is the substitution effect toward the cheaper good Y.",
       "source": "graph_batch_indifference_actual_20260816",
       "image": "INCOME-SUB-03.png",
-      "imageAlt": "Consumer-choice graph showing A, B, and C after a fall in the price of Good Y.",
+      "imageAlt": "Two budget lines sharing an X intercept, curves U0 and U1, and points A, B and C; Budget1 reaches higher on Y.",
       "graphRequired": true,
       "aHash": "fa66951af26b0feb75b2762a47f1a2350d498789551ae2ecfd5f11f3e8c75289"
     },
@@ -11281,7 +11281,7 @@ const questionBank = {
       "feedback": "Point C lies on the lower curve U1 rather than the original curve U0, so the consumer is worse off after the price increase.",
       "source": "graph_batch_indifference_actual_20260816",
       "image": "INCOME-SUB-02.png",
-      "imageAlt": "Consumer-choice graph showing A, B, and C after an increase in the price of Good X.",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C; Budget1 is steeper.",
       "graphRequired": true,
       "aHash": "87905b2c03987189aeac6bb5929ee00a851847ab5889a8dd367251a9dfbd9d4d"
     }
@@ -12697,7 +12697,7 @@ const questionBank = {
       "feedback": "Quantity changes 15/37.5 = 40%. Price changes 2/11 \u2248 18.2%. Elasticity is about 40/18.2 = 2.2.",
       "source": "graph_batch_elasticity_20260816",
       "image": "ELASTICITY-01.png",
-      "imageAlt": "Downward-sloping linear demand curve with point C at quantity 30 price 12, point B at quantity 45 price 10, and point A at quantity 75 price 6.",
+      "imageAlt": "Straight downward-sloping Demand line with labeled points C, B and A.",
       "graphRequired": true,
       "aHash": "914204c25f3f144ddec3469c61a6faea695c87590ab78a5eb25b0f3904cf84e0"
     },
@@ -12726,7 +12726,7 @@ const questionBank = {
       "feedback": "For D1, revenue rises from 175 to 225 as price falls, so demand is elastic. For D2, revenue falls from 235 to 165 as price falls, so demand is inelastic.",
       "source": "graph_batch_elasticity_20260816",
       "image": "ELASTICITY-03.png",
-      "imageAlt": "Two downward-sloping demand curves. D1 is flatter with points B at quantity 35 price 5 and A at quantity 75 price 3. D2 is steeper with points D at quantity 47 price 5 and C at quantity 55 price 3.",
+      "imageAlt": "Two intersecting downward-sloping lines, flatter blue D1 and steeper red D2, with four labeled points.",
       "graphRequired": true,
       "aHash": "fcc1334068982de8b792517185c75ff76d256e70b6367a413e927cb8de2fb1b6"
     },
@@ -12754,7 +12754,7 @@ const questionBank = {
       "feedback": "Price falls while quantity rises enough to leave total revenue unchanged at 140. That is the total-revenue signature of unit elasticity.",
       "source": "graph_batch_elasticity_20260816",
       "image": "ELASTICITY-04.png",
-      "imageAlt": "Curved demand curve with point B at quantity 20 price 7 and point A at quantity 70 price 2.",
+      "imageAlt": "Downward-curving Demand line with B at quantity 20, price 7 and A at quantity 70, price 2.",
       "graphRequired": true,
       "aHash": "94c91649771132d388c42292891ef450001fc31b210b4cb4c188333b3f6c7466"
     },
@@ -12782,7 +12782,7 @@ const questionBank = {
       "feedback": "At tangency, the slope of the indifference curve equals the slope of the budget line, so the consumer\u2019s MRS equals the market tradeoff.",
       "source": "graph_batch_indifference_20260816",
       "image": "IC-02.png",
-      "imageAlt": "Budget-line and indifference-curve graph with points A, B, and C, where C is the tangency point on IC2.",
+      "imageAlt": "Budget line and three indifference curves with A, B and a tangency at C.",
       "graphRequired": true,
       "aHash": "d3817858d5f7fa26acbdb6e7b53ecfe91d042e09af7ab3a0fce338c95a2f4a8f"
     },
@@ -12808,7 +12808,7 @@ const questionBank = {
       "feedback": "Upward-sloping indifference curves are inconsistent with ordinary goods. They could only be rationalized if at least one item were a bad or the axes were interpreted differently.",
       "source": "graph_batch_indifference_20260816",
       "image": "IC-07.png",
-      "imageAlt": "Three upward-sloping parallel curves labeled IC1, IC2, and IC3.",
+      "imageAlt": "Three parallel upward-sloping lines labeled IC1, IC2 and IC3.",
       "graphRequired": true,
       "aHash": "0dd1dce7e4edebc6994dd2c1c624f2f0879cd6b4672c2539dbf2da15ac8bb9c8"
     },
@@ -12837,7 +12837,7 @@ const questionBank = {
       "feedback": "The final choice is point C, where the consumer reaches the new higher utility curve U\u2081 on Budget\u2081.",
       "source": "graph_batch_indifference_20260816",
       "image": "INCOME-SUB-01.png",
-      "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept, and points A, B, and C showing substitution and income effects.",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C.",
       "graphRequired": true,
       "aHash": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
     },
@@ -12865,7 +12865,7 @@ const questionBank = {
       "feedback": "Point C lies on a lower indifference curve than point A, so the consumer ends up worse off after the price increase in Good X.",
       "source": "graph_batch_indifference_20260816",
       "image": "INCOME-SUB-02.png",
-      "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept, and points A, B, and C showing a price increase in Good X.",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C; Budget1 is steeper.",
       "graphRequired": true,
       "aHash": "066a1b9e57f490e93c671d33c17b6652e1330325bb92025af0b975ef755ec366"
     },
@@ -12893,7 +12893,7 @@ const questionBank = {
       "feedback": "When Good Y becomes cheaper, the substitution effect pushes the consumer toward more Y and away from X. That is the A to B movement shown here.",
       "source": "graph_batch_indifference_20260816",
       "image": "INCOME-SUB-03.png",
-      "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the X-intercept, and points A, B, and C showing substitution and income effects.",
+      "imageAlt": "Two budget lines sharing an X intercept, curves U0 and U1, and points A, B and C; Budget1 reaches higher on Y.",
       "graphRequired": true,
       "aHash": "fa66951af26b0feb75b2762a47f1a2350d498789551ae2ecfd5f11f3e8c75289"
     },
@@ -12921,7 +12921,7 @@ const questionBank = {
       "feedback": "Because Good X became cheaper, the substitution effect moves consumption toward X and away from Y. That is the A to B move.",
       "source": "graph_batch_indifference_20260816",
       "image": "INCOME-SUB-04.png",
-      "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept and points A, B, and C marking a price drop in Good X.",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and labeled bundles A, B and C.",
       "graphRequired": true,
       "aHash": "546f3969649081edead524a24503802a566b7aafe83d88bf29c28aaf73c3a507"
     },
@@ -12950,7 +12950,7 @@ const questionBank = {
       "feedback": "Point A is about (5, 20) and point C is about (20, 20), so the consumer ends with more Good X and the same amount of Good Y.",
       "source": "graph_batch_indifference_actual_20260816",
       "image": "INCOME-SUB-01.png",
-      "imageAlt": "Consumer-choice graph showing A, B, and C after a fall in the price of Good X.",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C.",
       "graphRequired": true,
       "aHash": "fa7d3b4504708f977ef98c2b020f4f06fb40e19384e87fa92c90ba17ceef869c"
     },
@@ -12979,7 +12979,7 @@ const questionBank = {
       "feedback": "Point A is about (20, 5) and point C is about (20, 20), so Good X stays the same while Good Y increases.",
       "source": "graph_batch_indifference_actual_20260816",
       "image": "INCOME-SUB-03.png",
-      "imageAlt": "Consumer-choice graph showing A, B, and C after a fall in the price of Good Y.",
+      "imageAlt": "Two budget lines sharing an X intercept, curves U0 and U1, and points A, B and C; Budget1 reaches higher on Y.",
       "graphRequired": true,
       "aHash": "0419e66c983c7c20c26b029f9f4a365b8216e94e67d46b7dfb871ddf93f6b3d7"
     },
@@ -13008,7 +13008,7 @@ const questionBank = {
       "feedback": "Point A is about (20, 20) and point C is about (5, 20), so the consumer ends with less Good X and the same amount of Good Y.",
       "source": "graph_batch_indifference_actual_20260816",
       "image": "INCOME-SUB-02.png",
-      "imageAlt": "Consumer-choice graph showing A, B, and C after an increase in the price of Good X.",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C; Budget1 is steeper.",
       "graphRequired": true,
       "aHash": "fd45ba3df3bf946f3686940737eff2be832969766b4bfce2b8939aca71c9a4c2"
     },
@@ -13037,7 +13037,7 @@ const questionBank = {
       "feedback": "Point A is about (10, 20) and point C is about (15, 25), so both goods increase in the final bundle.",
       "source": "graph_batch_indifference_actual_20260816",
       "image": "INCOME-SUB-04.png",
-      "imageAlt": "Consumer-choice graph showing A, B, and C after a fall in the price of Good X, with both goods increasing from the initial to the final bundle.",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and labeled bundles A, B and C.",
       "graphRequired": true,
       "aHash": "86d7604f974695a66f7b8d52d5a6f735fd179810b9ae03a2ff2056ae94a01c63"
     },
@@ -13065,7 +13065,7 @@ const questionBank = {
       "feedback": "With perfect complements, extra units of only one good do not raise utility, so the optimum occurs at the kink of the highest attainable indifference curve.",
       "source": "graph_batch_indifference_actual_20260816",
       "image": "IC-06.png",
-      "imageAlt": "Three L-shaped indifference curves labeled IC1, IC2, and IC3.",
+      "imageAlt": "Three right-angle indifference curves with corners progressing upward and right from IC1 to IC3.",
       "graphRequired": true,
       "aHash": "75eaea62592320adb9e2384e69370d028f34a68c7b9bd79da240254ff64647ba"
     }
@@ -14488,7 +14488,7 @@ const questionBank = {
       "feedback": "B\u2192A has midpoint elasticity 1. C\u2192B has midpoint elasticity about 2.2. Elasticity therefore declines as the movement proceeds down the linear curve.",
       "source": "graph_batch_elasticity_20260816",
       "image": "ELASTICITY-01.png",
-      "imageAlt": "Downward-sloping linear demand curve with point C at quantity 30 price 12, point B at quantity 45 price 10, and point A at quantity 75 price 6.",
+      "imageAlt": "Straight downward-sloping Demand line with labeled points C, B and A.",
       "graphRequired": true,
       "aHash": "b8bdf0cd58d0b04e6da31164859be6c15df7046c62d49b5d4f25e0fc98c48fa0"
     },
@@ -14517,7 +14517,7 @@ const questionBank = {
       "feedback": "D1 changes quantity by 40 around a midpoint of 55, producing elasticity about 1.45. D2 changes quantity by only 8 around a midpoint of 51, producing elasticity about 0.31.",
       "source": "graph_batch_elasticity_20260816",
       "image": "ELASTICITY-03.png",
-      "imageAlt": "Two downward-sloping demand curves. D1 is flatter with points B at quantity 35 price 5 and A at quantity 75 price 3. D2 is steeper with points D at quantity 47 price 5 and C at quantity 55 price 3.",
+      "imageAlt": "Two intersecting downward-sloping lines, flatter blue D1 and steeper red D2, with four labeled points.",
       "graphRequired": true,
       "aHash": "85feb8ad028b3a521ff6c3dfb78fa93064117719ad3ec319bb805d78da1a8406"
     },
@@ -14543,7 +14543,7 @@ const questionBank = {
       "feedback": "Slope orientation matters here: vertical demand is perfectly inelastic, while horizontal demand is perfectly elastic.",
       "source": "graph_batch_elasticity_20260816",
       "image": "ELASTICITY-05.png",
-      "imageAlt": "Horizontal demand curve at price 10 with point A at quantity 50 and point B at quantity 100.",
+      "imageAlt": "Horizontal Demand line at price 10 with A at quantity 50 and B at quantity 100.",
       "graphRequired": true,
       "aHash": "8d831302e3a137e0797df55a24f56efe0ff4c238c40c8690fcc903b35e27fd7b"
     },
@@ -14571,7 +14571,7 @@ const questionBank = {
       "feedback": "At an interior optimum, the indifference curve and the budget line share a common slope. That is the MRS = price ratio condition.",
       "source": "graph_batch_indifference_20260816",
       "image": "IC-04.png",
-      "imageAlt": "Budget line tangent to IC2 at point A.",
+      "imageAlt": "Budget line and downward-curving IC2 touching at point A, Good X 15 and Good Y 10.",
       "graphRequired": true,
       "aHash": "5eb06c0d47f7167b3d1a732d987e9643b5e84946a95601b46633f662148a6b5d"
     },
@@ -14599,7 +14599,7 @@ const questionBank = {
       "feedback": "From B to C, the consumer gives up some X but buys more Y. The income effect partly offsets the substitution effect for X while increasing Y.",
       "source": "graph_batch_indifference_20260816",
       "image": "INCOME-SUB-04.png",
-      "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept and points A, B, and C marking a price drop in Good X.",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and labeled bundles A, B and C.",
       "graphRequired": true,
       "aHash": "82f2b3dc96d8a8f8c53ff2dfa46467d17372ebad5eda90396c0cc5cbe2d6920c"
     },
@@ -14628,7 +14628,7 @@ const questionBank = {
       "feedback": "Point A is about (10, 20) and point C is about (15, 25), so the final bundle contains more of both goods than the initial bundle.",
       "source": "graph_batch_indifference_20260816",
       "image": "INCOME-SUB-04.png",
-      "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept and points A, B, and C marking a price drop in Good X.",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and labeled bundles A, B and C.",
       "graphRequired": true,
       "aHash": "cab23d63ec3db6c65dc608a509e6beda3ce0bfbbc72c70d35438c1c731a689d9"
     },
@@ -14656,7 +14656,7 @@ const questionBank = {
       "feedback": "Point B sits on the compensated budget line tangent to the original utility level, so it isolates the substitution effect.",
       "source": "graph_batch_indifference_20260816",
       "image": "INCOME-SUB-02.png",
-      "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept, and points A, B, and C showing a price increase in Good X.",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C; Budget1 is steeper.",
       "graphRequired": true,
       "aHash": "8f2565d7a0c4d42ee4ecc9ceaba32d8472b7bbbf3bf04eb2c5a98d1f2ca1e5e3"
     },
@@ -14684,7 +14684,7 @@ const questionBank = {
       "feedback": "Point B is the compensated bundle: it lies on the dashed line and the original indifference curve, isolating the substitution effect.",
       "source": "graph_batch_indifference_20260816",
       "image": "INCOME-SUB-03.png",
-      "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the X-intercept, and points A, B, and C showing substitution and income effects.",
+      "imageAlt": "Two budget lines sharing an X intercept, curves U0 and U1, and points A, B and C; Budget1 reaches higher on Y.",
       "graphRequired": true,
       "aHash": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d"
     },
@@ -14712,7 +14712,7 @@ const questionBank = {
       "feedback": "The lower price raises real purchasing power, so after substitution and income effects the consumer reaches a higher indifference curve at C.",
       "source": "graph_batch_indifference_20260816",
       "image": "INCOME-SUB-01.png",
-      "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept, and points A, B, and C showing substitution and income effects.",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C.",
       "graphRequired": true,
       "aHash": "1f0a5da8b1ef9e94161a17a3f0833f9c19ea4e3642d3aa997c350fa2f517e348"
     },
@@ -14740,7 +14740,7 @@ const questionBank = {
       "feedback": "From B to C, Good X rises from 10 to 20 and Good Y rises from 10 to 20. The income effect raises consumption of both goods in this graph.",
       "source": "graph_batch_indifference_actual_20260816",
       "image": "INCOME-SUB-01.png",
-      "imageAlt": "Consumer-choice graph showing A, B, and C after a fall in the price of Good X.",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C.",
       "graphRequired": true,
       "aHash": "83e984e191fcb7e862cde7dc74a0f636dd5a9d072ac0d70ba8a4742634570fba"
     },
@@ -14768,7 +14768,7 @@ const questionBank = {
       "feedback": "From B at (10, 10) to C at (20, 20), the consumer buys more of both goods. That is the income effect after Good Y becomes cheaper.",
       "source": "graph_batch_indifference_actual_20260816",
       "image": "INCOME-SUB-03.png",
-      "imageAlt": "Consumer-choice graph showing A, B, and C after a fall in the price of Good Y.",
+      "imageAlt": "Two budget lines sharing an X intercept, curves U0 and U1, and points A, B and C; Budget1 reaches higher on Y.",
       "graphRequired": true,
       "aHash": "cfaae0b55e001e397e1b58b21c054b4ea393c90f71f5dfe46b4e1b77ceff1466"
     },
@@ -14796,7 +14796,7 @@ const questionBank = {
       "feedback": "From A at (20, 20) to B at (10, 40), Good X falls and Good Y rises. The substitution effect pushes the consumer away from the now more expensive Good X.",
       "source": "graph_batch_indifference_actual_20260816",
       "image": "INCOME-SUB-02.png",
-      "imageAlt": "Consumer-choice graph showing A, B, and C after an increase in the price of Good X.",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C; Budget1 is steeper.",
       "graphRequired": true,
       "aHash": "fa66951af26b0feb75b2762a47f1a2350d498789551ae2ecfd5f11f3e8c75289"
     },
@@ -14824,7 +14824,7 @@ const questionBank = {
       "feedback": "From B at (10, 40) to C at (5, 20), both goods decrease. The income effect lowers real purchasing power.",
       "source": "graph_batch_indifference_actual_20260816",
       "image": "INCOME-SUB-02.png",
-      "imageAlt": "Consumer-choice graph showing A, B, and C after an increase in the price of Good X.",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C; Budget1 is steeper.",
       "graphRequired": true,
       "aHash": "565aa66afe948be1602a81fd1d34e5d52d79f23db3d44d526abd698b224f406b"
     },
@@ -14853,7 +14853,7 @@ const questionBank = {
       "feedback": "Point B is the compensated bundle on the original utility curve U\u2080. The final choice is point C on the new budget line and higher utility curve U\u2081.",
       "source": "graph_batch_indifference_actual_20260816",
       "image": "INCOME-SUB-04.png",
-      "imageAlt": "Consumer-choice graph showing A, B, and C after a fall in the price of Good X, with B as the compensated bundle and C as the final optimum.",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and labeled bundles A, B and C.",
       "graphRequired": true,
       "aHash": "f22b31925da5c739bd742058cc16d5f0df19b71101365f9444625f5c66fc774f"
     }
@@ -15632,4 +15632,93 @@ const questionBank = {
 // The Labyrinth HTML consumes `questionBanks.easy`, `questionBanks.medium`, etc.
 // The rebuilt bank stores those pools under `questionBank.questionBanks`.
 const questionBanks = questionBank.questionBanks;
+
+// Image descriptions verified against the published artwork. Consumed by the
+// existing getQuestionGraphAccessibility helper in normal and enlarged views.
+const questionAssetMetadata = {
+  "DEMAND-01.png": {
+    "imageAlt": "Taco graph with downward-sloping D0 and labeled points A and B.",
+    "graphDescription": "The horizontal axis is Quantity of Tacos (in thousands), marked every 25 up to 350. The vertical axis is Price of Tacos, marked in dollars from $1 to $15. A straight blue line labeled D0 descends from the vertical axis at $14 to the horizontal axis at 350 thousand. Point A is at 100 thousand and $10; point B is farther right and lower, at 225 thousand and $5. Dashed horizontal and vertical guides connect both points to their axis values. No shift arrow or second curve is shown."
+  },
+  "DEMAND-02.png": {
+    "imageAlt": "Taco graph with downward-sloping D0 and points A at 50 thousand, $12 and B at 200 thousand, $6.",
+    "graphDescription": "The horizontal axis is Quantity of Tacos (in thousands), marked every 25 up to 350. The vertical axis is Price of Tacos, marked in dollars from $1 to $15. A straight blue line labeled D0 descends from $14 on the vertical axis to 350 thousand on the horizontal axis. Point A is at 50 thousand and $12. Point B is to its right and below it at 200 thousand and $6. Dashed guides connect each point to both axes. Both points are on the same line; no second curve is shown."
+  },
+  "DEMAND-03.png": {
+    "imageAlt": "Taco graph with parallel downward-sloping D0 and D1 and a right-pointing arrow between them.",
+    "graphDescription": "The horizontal axis is Quantity of Tacos (in thousands), marked every 25 up to 350; the vertical axis is Price of Tacos, marked in dollars from $1 to $15. The dark-blue straight line D0 reaches the horizontal axis at 300 thousand. Point A on D0 is at 50 thousand and $8; point B is at 175 thousand and $4, with dashed guides to the axes. The light-blue line D1 is parallel, above and to the right of D0, meeting the vertical axis at $12 and still above the horizontal axis at 350 thousand. A horizontal arrow points right from D0 toward D1 near the $7 level."
+  },
+  "DEMAND-04.png": {
+    "imageAlt": "Peanut butter graph with parallel downward-sloping D0 and D1; A and B are on D0.",
+    "graphDescription": "The horizontal axis is Quantity of Peanut Butter (in thousands), marked every 25 up to 350. The vertical axis is Price of Peanut Butter, marked in dollars from $1 to $15. Dark-blue D0 is a straight line from $12 on the vertical axis to 300 thousand on the horizontal axis. A is at 50 thousand and $10; B is at 175 thousand and $5. Dashed guides connect A and B to their axis values. Light-blue D1 is parallel and above/right of D0, running from $15 on the vertical axis to $1 at 350 thousand. No shift arrow is drawn."
+  },
+  "DEMAND-05.png": {
+    "imageAlt": "Hamburger graph with two parallel downward-sloping lines; D1 lies below and left of D0.",
+    "graphDescription": "The horizontal axis is Quantity of Hamburgers (in thousands), marked every 25 up to 350. The vertical axis is Price of Hamburgers, marked in dollars from $1 to $15. Dark-blue D0 runs straight from $14 on the vertical axis to 350 thousand on the horizontal axis. Light-blue D1 runs parallel below and to its left, from $10 on the vertical axis to 250 thousand on the horizontal axis. At the $5 gridline, D0 crosses at 225 thousand and D1 at 125 thousand. The two lines do not intersect. There are no labeled points or arrows."
+  },
+  "ELASTICITY-01.png": {
+    "imageAlt": "Straight downward-sloping Demand line with labeled points C, B and A.",
+    "graphDescription": "The horizontal axis is Quantity, from 0 to 150 in steps of 15; the vertical axis is Price, from 0 to 18 in steps of 2. No commodity or further unit is named. The blue straight line labeled Demand runs from quantity 0, price 16 to quantity 120, price 0. In quantity-price order, C is (30, 12), B is (45, 10), and A is (75, 6). Dashed horizontal and vertical guides connect all three points to their axis values. C is highest and leftmost, B is between C and A, and A is lowest and rightmost."
+  },
+  "ELASTICITY-02.png": {
+    "imageAlt": "Vertical Demand line at quantity 70 with A at price 6 and B at price 10.",
+    "graphDescription": "The horizontal axis is Quantity, displayed from 40 to 100 in steps of 10; the vertical axis is Price, from 0 to 18 in steps of 2. No commodity or further unit is named. A blue vertical line labeled Demand stands at quantity 70. A is on this line at price 6 and B is directly above it at price 10. Dashed horizontal guides run from those points to the price axis, and the vertical guide coincides with the demand line down to quantity 70."
+  },
+  "ELASTICITY-03.png": {
+    "imageAlt": "Two intersecting downward-sloping lines, flatter blue D1 and steeper red D2, with four labeled points.",
+    "graphDescription": "The horizontal axis is Quantity, from 0 to 100; the vertical axis is Price, from 0 to 20. No commodity or further unit is named. Blue D1 slopes gently downward and red D2 slopes more steeply downward. Dashed horizontal guides mark prices 5 and 3. On D1, B is at quantity 35, price 5, and A is at quantity 75, price 3. On D2, D is at quantity 47, price 5, and C is at quantity 55, price 3. Dashed vertical guides identify quantities 35, 47, 55 and 75. D2 crosses D1 between quantities 47 and 55 and between prices 3 and 5; the crossing has no point label or exact coordinates."
+  },
+  "ELASTICITY-04.png": {
+    "imageAlt": "Downward-curving Demand line with B at quantity 20, price 7 and A at quantity 70, price 2.",
+    "graphDescription": "The horizontal axis is Quantity, from 0 to 120 in steps of 10; the vertical axis is Price, from 0 to 10 in steps of 1. No commodity or further unit is named. A blue curve labeled Demand descends steeply on the left and becomes progressively flatter toward the right. B is at quantity 20 and price 7; A is to its right and below it at quantity 70 and price 2. Dashed guides connect both points to the axes. The curve enters from above the displayed price range and remains above the horizontal axis at quantity 120."
+  },
+  "ELASTICITY-05.png": {
+    "imageAlt": "Horizontal Demand line at price 10 with A at quantity 50 and B at quantity 100.",
+    "graphDescription": "The horizontal axis is Quantity with labeled ticks 50, 100 and 150. The vertical axis is Price with labeled ticks 5, 10, 15 and 20. No commodity or further unit is named. A blue horizontal line labeled Demand lies at price 10. Point A is at quantity 50 and point B at quantity 100, both on that same line. B is directly to the right of A at the same height. No other curve, arrow or shaded area is drawn."
+  },
+  "IC-01.png": {
+    "imageAlt": "Three downward-curving indifference curves, IC1 lowest, IC2 in the middle and IC3 highest.",
+    "graphDescription": "Good X is on the horizontal axis and Good Y on the vertical axis; both run from 0 to 25 in steps of 5, with no further units named. Three purple curves slope downward and flatten as X increases, bending toward the origin. Dashed IC1 is lowest and closest to the origin; solid IC2 is above/right of IC1; dashed IC3 is above/right of IC2. The curves do not intersect. Their labels appear at their right ends. There are no marked bundles, budget lines or arrows."
+  },
+  "IC-02.png": {
+    "imageAlt": "Budget line and three indifference curves with A, B and a tangency at C.",
+    "graphDescription": "Good X is horizontal and Good Y vertical, each from 0 to 25 in steps of 5. A blue straight budget line joins (X 0, Y 20) and (X 20, Y 0). A is on the line at (5, 15), B at (15, 5), and C at (10, 10). Dashed guides mark each bundle on both axes. Solid purple IC2 slopes downward, flattens to the right, and touches the budget line at C. A and B lie below IC2. Dashed IC1 is below IC2 and crosses the budget line nearer its ends; dashed IC3 is above IC2 and does not meet the budget line. No additional units or utility values are printed."
+  },
+  "IC-03.png": {
+    "imageAlt": "Budget line touching the middle indifference curve IC2 at A, with IC1 below and IC3 above.",
+    "graphDescription": "The horizontal Good X axis runs from 0 to 25 in steps of 5. The vertical Good Y axis runs from 0 to 50 in steps of 10. A blue straight budget line connects (X 0, Y 40) and (X 20, Y 0). Point A is at (10, 20), with dashed guides to the axes. The solid purple downward-curving IC2 touches the budget line at A. Dashed IC1 lies below/left of IC2 and crosses the budget line nearer its ends. Dashed IC3 lies above/right of IC2 and does not meet the budget line. No further units or utility values are printed."
+  },
+  "IC-04.png": {
+    "imageAlt": "Budget line and downward-curving IC2 touching at point A, Good X 15 and Good Y 10.",
+    "graphDescription": "Good X is horizontal, from 0 to 25 in steps of 5; Good Y is vertical, from 0 to 50 in steps of 10. A blue straight budget line runs from (X 0, Y 40) to (X 20, Y 0). Purple IC2 slopes downward, becoming flatter toward the right, and touches the budget line at A. Dashed guides locate A at (X 15, Y 10). IC2 lies above the line on either side of this contact. No other indifference curve, labeled point, additional unit or utility value appears."
+  },
+  "IC-05.png": {
+    "imageAlt": "Three parallel downward-sloping straight indifference curves labeled IC1, IC2 and IC3.",
+    "graphDescription": "Good X is horizontal and Good Y vertical, both from 0 to 25 in steps of 5, with no further units named. Three straight purple lines slope downward at the same angle and never intersect. Dashed IC1 is lowest and leftmost, solid IC2 is in the middle, and dashed IC3 is highest and rightmost. Each line meets both axes, with IC1's intercepts closest to the origin and IC3's farthest away. Their exact intercepts are not labeled. There are no marked bundles, budget line, arrows or numerical utility labels."
+  },
+  "IC-06.png": {
+    "imageAlt": "Three right-angle indifference curves with corners progressing upward and right from IC1 to IC3.",
+    "graphDescription": "Good X is horizontal and Good Y vertical, each from 0 to 25 in steps of 5, with no further units named. Each purple curve has a vertical arm extending up from a dotted corner and a horizontal arm extending right. Dashed IC1 has its corner just above/right of (5, 5); solid IC2 has its corner near (10, 10); dashed IC3 has its corner just below/left of (15, 15). Exact corner coordinates are not printed. The curves do not intersect. Their horizontal arms retain the same Y level as X increases. No budget line or other marked bundles appear."
+  },
+  "IC-07.png": {
+    "imageAlt": "Three parallel upward-sloping lines labeled IC1, IC2 and IC3.",
+    "graphDescription": "Good X is horizontal and Good Y vertical, each from 0 to 25 in steps of 5, with no further units named. Three purple straight lines rise from left to right at the same angle. At a given X where all three are visible, dashed IC1 is highest, solid IC2 is in the middle, and dashed IC3 is lowest. IC1 meets the horizontal axis farthest left, IC2 farther right and IC3 at the 10 tick. The lines do not cross. There are no marked bundles, budget lines or utility values."
+  },
+  "INCOME-SUB-01.png": {
+    "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C.",
+    "graphDescription": "Good X is horizontal and Good Y vertical, each displayed from 0 to 50, with no further units named. Blue Budget0 joins (0, 40) to (10, 0); green Budget1 joins (0, 40) to (40, 0), sharing the vertical intercept and extending farther right. Purple U0 and dark-green U1 slope downward and flatten to the right; U1 lies above U0. In X-Y order, A is (5, 20), B is (10, 10), and C is (20, 20), with dashed guides to the axes. Budget0 touches U0 at A; Budget1 touches U1 at C. An unlabeled dashed orange line joins (0, 20) to (20, 0), runs parallel to Budget1 and touches U0 at B. No arrows or named effect labels are drawn."
+  },
+  "INCOME-SUB-02.png": {
+    "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C; Budget1 is steeper.",
+    "graphDescription": "The title is Indifference Curves. Good X is horizontal and Good Y vertical, each displayed from 0 to 50, with no further units named. Blue Budget0 joins (0, 40) to (40, 0). Green Budget1 shares the vertical intercept at 40 but meets the horizontal axis at 10. Purple U0 lies above dark-green U1; both slope downward and flatten to the right. In X-Y order, A is (20, 20), B is (10, 40), and C is (5, 20), with dashed guides to the axes. Budget0 touches U0 at A and Budget1 touches U1 at C. An unlabeled dashed orange line, parallel to Budget1, touches U0 at B and reaches the horizontal axis at 20; its vertical intercept is outside the displayed range. No arrows or named effect labels appear."
+  },
+  "INCOME-SUB-03.png": {
+    "imageAlt": "Two budget lines sharing an X intercept, curves U0 and U1, and points A, B and C; Budget1 reaches higher on Y.",
+    "graphDescription": "Good X is horizontal and Good Y vertical, each from 0 to 50 in steps of 5, with no further units named. Blue Budget0 joins (0, 10) to (40, 0). Green Budget1 joins (0, 40) to (40, 0), sharing the horizontal intercept and reaching higher on the vertical axis. Purple U0 and dark-green U1 slope downward and flatten to the right; U1 lies above U0. In X-Y order, A is (20, 5), B is (10, 10), and C is (20, 20), with dashed guides to the axes. Budget0 touches U0 at A; Budget1 touches U1 at C. An unlabeled dashed orange line joins (0, 20) to (20, 0), runs parallel to Budget1 and touches U0 at B. No arrows or named effect labels appear."
+  },
+  "INCOME-SUB-04.png": {
+    "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and labeled bundles A, B and C.",
+    "graphDescription": "Good X is horizontal and Good Y vertical, each from 0 to 50 in steps of 5, with no further units named. Blue Budget0 joins (0, 40) to (20, 0); green Budget1 joins (0, 40) to (40, 0), sharing the vertical intercept and extending farther right. In X-Y order, A is (10, 20), B is (20, 10), and C is (15, 25), with dashed guides to the axes. Purple U0 slopes downward through A and B, while dark-green U1 lies above it and touches Budget1 at C. Budget0 touches U0 at A. An unlabeled dashed orange line joins (0, 30) to (30, 0), runs parallel to Budget1, passes through A and touches U0 at B. No arrows or named effect labels are drawn."
+  }
+};
 

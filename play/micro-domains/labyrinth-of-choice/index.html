@@ -2759,7 +2759,7 @@ Respect structure strictly.
 
 <div class="dungeon-container">
 <button class="fullscreenBtn" onclick="goFullscreen()">FULLSCREEN</button>
-<button class="return-menu-btn" id="returnMenuBtn" onclick="confirmReturnToModeMenu()">OPERATION MENU</button>
+<button class="return-menu-btn" id="returnMenuBtn" onclick="confirmReturnToModeMenu()">GAME MENU</button>
 <button class="sound-toggle" id="soundToggle" onclick="toggleGameSound()">Sound On</button>
 <!-- =========================================
 TOP PANEL (HUD)
@@ -5202,7 +5202,7 @@ function showPrincipalIntro(step = 1){
     if (step === 1) {
         questionElement.innerHTML = `
             <div class="principal-intro">
-                <img src="sovereign.webp" class="bossIcon principalGlow principal-dialogue-img">
+                <img src="sovereign.webp" class="bossIcon principalGlow principal-dialogue-img" alt="The Sovereign">
                 <div class="principal-intro-title">THE SOVEREIGN</div>
 
                 <div class="principal-dialogue">
@@ -5225,7 +5225,7 @@ function showPrincipalIntro(step = 1){
 
     questionElement.innerHTML = `
         <div class="principal-intro">
-            <img src="sovereign.webp" class="bossIcon principalGlow">
+            <img src="sovereign.webp" class="bossIcon principalGlow" alt="The Sovereign">
             <div class="principal-intro-title">THE SOVEREIGN</div>
 
             <div class="principal-dialogue">
@@ -5272,7 +5272,7 @@ function showPrincipalSuspenseIntro(){
 
     questionElement.innerHTML = `
         <div class="principal-intro principal-suspense">
-            <img src="sovereign.webp" class="bossIcon principalGlow">
+            <img src="sovereign.webp" class="bossIcon principalGlow" alt="The Sovereign">
             <div class="principal-intro-title">THE SOVEREIGN</div>
             <div class="principal-intro-line">Final guardian revealed.</div>
             <div class="principal-intro-subline">The maze itself gives way to its final guardian.</div>
@@ -7164,15 +7164,15 @@ function showKnowledgeRoom(bossRoom) {
 // =============================================    
 if (bossRoom === 10) {
     title = "THE WARDEN YIELDS: THE SEAL OF PREFERENCES IS YOURS";
-    summary = "The fine print burns clean. You have priced hidden risk, exposed adverse selection, and forced bad information out of the shadows.";
+    summary = "The Warden lowers the seal. You have followed preferences through the choices before you. The next chamber of the Labyrinth opens.";
 } 
 else if (bossRoom === 20) {
     title = "THE DECOMPOSER FALLS: THE PRISM OF TRADEOFFS IS YOURS";
-    summary = "The surveillance floor goes silent. You have traced hidden action, exposed shirking, and shown how monitoring and incentives reshape behavior.";
+    summary = "The Decomposer's prism grows still. You have traced the tradeoffs within consumer choice. Its light now guides you toward the final chamber.";
 } 
 else if (bossRoom === 30) {
     title = "THE SOVEREIGN FALLS: THE SCEPTER OF ELASTICITY IS YOURS";
-    summary = "The final protocol locks into place. You have read the principal-agent conflict, anticipated how incentives get gamed, and proven you can design the system instead of being played by it.";
+    summary = "The Sovereign yields the Scepter of Elasticity. Your passage through preferences, tradeoffs, and consumer responses is complete. The Archivist awaits your final record.";
 }
   
     // Update the UI
@@ -7183,7 +7183,7 @@ else if (bossRoom === 30) {
     
     // logic to ensure Room 30 triggers the end game, while 10 and 20 trigger the next level
     let nextAction = bossRoom === 30 ? "handleVictory()" : "room++; loadQuestion();";
-    let buttonLabel = bossRoom === 30 ? "FINALIZE THE AGENCY'S PROTOCOL →" : `CONTINUE TO ROOM ${bossRoom + 1} →`;
+    let buttonLabel = bossRoom === 30 ? "COMPLETE THE LABYRINTH →" : `CONTINUE TO ROOM ${bossRoom + 1} →`;
 
 aContainer.innerHTML = `
 <button id="continueBtn" class="continue-btn">
@@ -8555,7 +8555,7 @@ Verified by The Archivist`;
 // =============================================
 const TELEMETRY_PREFIX = "labyrinthChoiceTelemetry_";
 const TELEMETRY_VERSION = "LabyrinthOfChoice-local-telemetry-v4-hashed-bank";
-const GAME_VERSION = "Labyrinth-of-Choice-2026.08.24-phase1.5";
+const GAME_VERSION = "Labyrinth-of-Choice-2026.10.23-interface-exam";
   // BEGIN MEASUREMENT CONTRACT
 /* Maintained measurement metadata only. No clocks, scoring, network or learner identity. */
 function createTelemetryContract(get, registry) {
@@ -8735,7 +8735,7 @@ function createTelemetryContract(get, registry) {
   return {fields,stamp,show,exportRows,wrapShuffle,hash,stable,build,state,resources,installResources};
 }
 
-  const MQContract=createTelemetryContract((name,fallback)=>{try{return eval(name);}catch(_){return fallback;}}, /* RELEASE REGISTRY */ {"contractID":"mq-measurement/1","measurementRevision":"mq-tracker-2026.10.13-answers2","localSchema":"mq-local-csv/1","anonymousEnvelope":3,"manifestSchema":"mq-run-manifest/1","trackerSourceRevision":"a4aa7ad4f0a42faf32a6848402ba344d455f6597e19e38331811c1cb723cc52a","games":{"cost-directive":{"engineRevision":"a6fd020b86e34510c8dbebe603e3652c8b32e088cdbc6968aebc7cae25d4e42d","pocEngineRevision":"da38c602891febfab862477d10a368d5d1c74d7e6cf92c5d4a4b94964d38cb42","classroomEngineRevision":"350382b57641a345dea9a3255d2417e022d6afa4770d890a86cdd6118e32e2b6","assetRevision":"e84ae7d58d4f614ec045fb1b8f1327e9acb14060321b757e92ee42277369eb71"},"market-signal":{"engineRevision":"a4a8d447659904380db5e6d254d74034814e89fec15b0c52ef23cc4565a3565b","pocEngineRevision":"544f1bb25b0f7473fecfe59a8b54c45def2508d83c7cf4afa5c5ebbb50fe354a","classroomEngineRevision":"1f5aae36d56dd5d28e0ad46b83bf6bbdcb96e625bca2e50e8945c729b4e4d3d6","assetRevision":"8e884e9efd09d7d6bb819e8bf88777acd87c54c3d5606ed0861a9861725add5c"},"strategy-desk":{"engineRevision":"3dc3c384a4ff45d8dd40920654eaeb6244bb3eb295d1323adf811db7146b4465","pocEngineRevision":"7e8dcaa625baec16518ee9bd9982d717880a9b20dddde52b69d64f48d3574068","classroomEngineRevision":"b3222dac65ae17d4a05d08a6654cea2ca9ad5170822ea6770468d387150b985d","assetRevision":"6daeef8858732666d4a8f79dce498db26f463a85428e930b70d9c298deb974e6"},"agency-protocol":{"engineRevision":"01a79ea3c0b983ac6226314115915d850cd0b18eba723577afb9d20f8a848181","pocEngineRevision":"7491f94983656d4942bdf1e8d39fa78e232ce7d42116449736f9b8051a4131ea","classroomEngineRevision":"dce22dd3e102aa773cfc25ff7a378437fdfdab3c89da6b8b5a88db3e35903546","assetRevision":"90b45185b2f7b58e87bb619618a0c7642860be1748eb45ef768820db614faec8"},"composer":{"engineRevision":"7ec75da04dfe22b3cdad5f1e55cfbb85534dbfb0a222ddc72ce0e95c65247434","assetRevision":"b843eaf7f8d5a2568ac458d71a9519c91e57c19bfe1f99314688479d0471e314"},"equilibrium-crisis":{"engineRevision":"085f924aaad403e72bd74de0bef3248216f4228268c05e944e95cd11dea58d48","assetRevision":"e0bc167ef5bf6085998fa7620a66df587614e079e8a425d00b3378f748050d9e"},"liquidity-grid":{"engineRevision":"5a98243ccc14b84a218e125646372910172a3115e274ec32ad47085b5a4126c1","assetRevision":"9b4b4b9b956894944dfbd880edaa7d21315e9a565fe36c6e99c435adba40b640"},"market-gate":{"engineRevision":"9baa7b71fab8f86f648782cabab0e84c3102e774417e362695a0961bab2ec5a5","assetRevision":"a4b6a2220411fc0367e726bedb815bc2b0f23d866104389f3e64fe424e3ec9d6"},"national-ledger":{"engineRevision":"0fb43d43f0a3c43e1df19d98b6b1d01e52fcc993caf8d047da3233d73a017c16","assetRevision":"5edc2f9729237cc6638954a521fd65163fdc4cc1febbf4c012620b2ec5bbacde"},"stabilization-protocol":{"engineRevision":"be0e94de47faeb8850f55d9ee7a21d541b3ec3c4d2dc1590569ef895be7eef7c","assetRevision":"e0fdef674656ba0a2cf18e8483ef3724281013338f2671c141cc66c587f2348f"},"command-nexus":{"engineRevision":"a12017705e6740b8d929dd540c4dde19c68b0928eb1a49a6089de5fbf91a9800","assetRevision":"97f92412cf740f7de62e5f77f5838543aff5426bee9ceaf4f81aeb1bc427f36f"},"exchange-citadel":{"engineRevision":"3898b649c440e124ec4d2e9a50d60fc282851f33b5089b46518d11a3819112be","assetRevision":"7da393ab7e26acca52dedd1349a2455252439af297df7fa0e5e39d8a7c861505"},"mint-ash-gold":{"engineRevision":"21b0656bcd05ce0c286b9ad294f3db612700de43d55aa156ce309bbebd2e9336","assetRevision":"c8785e093302b9df20935e7a26cd0f2626764d492f02fe00839d929772016125"},"national-engine":{"engineRevision":"0e04d6f75df0795c2e54f779c43a865d0ae283163e3e76d79ece91a60251ef18","assetRevision":"524f4b7ee38d9ea9d1f08b0505a74699c68ca3f4bb6314dcef177285d686abd5"},"labyrinth-of-choice":{"engineRevision":"a1d83fb7d286a0bf0dff11dc179d48971e5093be484e9745085bfde1257252f8","assetRevision":"44d1f4a1da9ae15503499c30c0e7974481674f5ed4b2a6aa5860ba1d08eb0aca"},"labyrinth-choice":{"engineRevision":"a1d83fb7d286a0bf0dff11dc179d48971e5093be484e9745085bfde1257252f8","assetRevision":"44d1f4a1da9ae15503499c30c0e7974481674f5ed4b2a6aa5860ba1d08eb0aca"}}});
+  const MQContract=createTelemetryContract((name,fallback)=>{try{return eval(name);}catch(_){return fallback;}}, /* RELEASE REGISTRY */ {"contractID":"mq-measurement/1","measurementRevision":"mq-tracker-2026.10.13-answers2","localSchema":"mq-local-csv/1","anonymousEnvelope":3,"manifestSchema":"mq-run-manifest/1","trackerSourceRevision":"a4aa7ad4f0a42faf32a6848402ba344d455f6597e19e38331811c1cb723cc52a","games":{"cost-directive":{"engineRevision":"a6fd020b86e34510c8dbebe603e3652c8b32e088cdbc6968aebc7cae25d4e42d","pocEngineRevision":"da38c602891febfab862477d10a368d5d1c74d7e6cf92c5d4a4b94964d38cb42","classroomEngineRevision":"350382b57641a345dea9a3255d2417e022d6afa4770d890a86cdd6118e32e2b6","assetRevision":"e84ae7d58d4f614ec045fb1b8f1327e9acb14060321b757e92ee42277369eb71"},"market-signal":{"engineRevision":"a4a8d447659904380db5e6d254d74034814e89fec15b0c52ef23cc4565a3565b","pocEngineRevision":"544f1bb25b0f7473fecfe59a8b54c45def2508d83c7cf4afa5c5ebbb50fe354a","classroomEngineRevision":"1f5aae36d56dd5d28e0ad46b83bf6bbdcb96e625bca2e50e8945c729b4e4d3d6","assetRevision":"8e884e9efd09d7d6bb819e8bf88777acd87c54c3d5606ed0861a9861725add5c"},"strategy-desk":{"engineRevision":"3dc3c384a4ff45d8dd40920654eaeb6244bb3eb295d1323adf811db7146b4465","pocEngineRevision":"7e8dcaa625baec16518ee9bd9982d717880a9b20dddde52b69d64f48d3574068","classroomEngineRevision":"b3222dac65ae17d4a05d08a6654cea2ca9ad5170822ea6770468d387150b985d","assetRevision":"6daeef8858732666d4a8f79dce498db26f463a85428e930b70d9c298deb974e6"},"agency-protocol":{"engineRevision":"01a79ea3c0b983ac6226314115915d850cd0b18eba723577afb9d20f8a848181","pocEngineRevision":"7491f94983656d4942bdf1e8d39fa78e232ce7d42116449736f9b8051a4131ea","classroomEngineRevision":"dce22dd3e102aa773cfc25ff7a378437fdfdab3c89da6b8b5a88db3e35903546","assetRevision":"90b45185b2f7b58e87bb619618a0c7642860be1748eb45ef768820db614faec8"},"composer":{"engineRevision":"7ec75da04dfe22b3cdad5f1e55cfbb85534dbfb0a222ddc72ce0e95c65247434","assetRevision":"b843eaf7f8d5a2568ac458d71a9519c91e57c19bfe1f99314688479d0471e314"},"equilibrium-crisis":{"engineRevision":"085f924aaad403e72bd74de0bef3248216f4228268c05e944e95cd11dea58d48","assetRevision":"e0bc167ef5bf6085998fa7620a66df587614e079e8a425d00b3378f748050d9e"},"liquidity-grid":{"engineRevision":"5a98243ccc14b84a218e125646372910172a3115e274ec32ad47085b5a4126c1","assetRevision":"9b4b4b9b956894944dfbd880edaa7d21315e9a565fe36c6e99c435adba40b640"},"market-gate":{"engineRevision":"9baa7b71fab8f86f648782cabab0e84c3102e774417e362695a0961bab2ec5a5","assetRevision":"a4b6a2220411fc0367e726bedb815bc2b0f23d866104389f3e64fe424e3ec9d6"},"national-ledger":{"engineRevision":"0fb43d43f0a3c43e1df19d98b6b1d01e52fcc993caf8d047da3233d73a017c16","assetRevision":"5edc2f9729237cc6638954a521fd65163fdc4cc1febbf4c012620b2ec5bbacde"},"stabilization-protocol":{"engineRevision":"be0e94de47faeb8850f55d9ee7a21d541b3ec3c4d2dc1590569ef895be7eef7c","assetRevision":"e0fdef674656ba0a2cf18e8483ef3724281013338f2671c141cc66c587f2348f"},"command-nexus":{"engineRevision":"a12017705e6740b8d929dd540c4dde19c68b0928eb1a49a6089de5fbf91a9800","assetRevision":"97f92412cf740f7de62e5f77f5838543aff5426bee9ceaf4f81aeb1bc427f36f"},"exchange-citadel":{"engineRevision":"3898b649c440e124ec4d2e9a50d60fc282851f33b5089b46518d11a3819112be","assetRevision":"7da393ab7e26acca52dedd1349a2455252439af297df7fa0e5e39d8a7c861505"},"mint-ash-gold":{"engineRevision":"21b0656bcd05ce0c286b9ad294f3db612700de43d55aa156ce309bbebd2e9336","assetRevision":"c8785e093302b9df20935e7a26cd0f2626764d492f02fe00839d929772016125"},"national-engine":{"engineRevision":"0e04d6f75df0795c2e54f779c43a865d0ae283163e3e76d79ece91a60251ef18","assetRevision":"524f4b7ee38d9ea9d1f08b0505a74699c68ca3f4bb6314dcef177285d686abd5"},"labyrinth-of-choice":{"engineRevision":"9275160b6951c3a87a13f5f52d84182d9dbf44ce7380e66eea17692bd709bf9b","assetRevision":"44d1f4a1da9ae15503499c30c0e7974481674f5ed4b2a6aa5860ba1d08eb0aca"},"labyrinth-choice":{"engineRevision":"9275160b6951c3a87a13f5f52d84182d9dbf44ce7380e66eea17692bd709bf9b","assetRevision":"44d1f4a1da9ae15503499c30c0e7974481674f5ed4b2a6aa5860ba1d08eb0aca"}}});
   // END MEASUREMENT CONTRACT
 const TELEMETRY_COLUMNS = [
     "eventID","timestamp","telemetryVersion","gameVersion","runID","game","mode","event",
@@ -10831,6 +10831,7 @@ function startSelectedMode(mode,options={}){
     if(requestedMode==="riskReward" && !options.riskRewardConfirmed){ openRiskRewardSetup(); return; }
     const preflight=validateFacultyMode(requestedMode);
     if(!preflight.ok){ showFacultyPreflightFailure(requestedMode,preflight.issues); return; }
+    if(window.MQLabyrinthIntroduction?.offer(()=>startSelectedMode(requestedMode,options))) return;
     beginRunSession(); runEnding=false; closeGraphLightbox(); gameMode=requestedMode; localStorage.setItem(CURRENT_MODE_KEY,gameMode);
     const modeScreen=document.getElementById("modeSelectScreen"); if(modeScreen) modeScreen.style.display="none";
     if(gameMode==="standard"){ startGame(false,"standard"); return; }
@@ -10847,6 +10848,7 @@ function confirmReturnToModeMenu(){
     });
 }
 function startGame(shouldResume=false,requestedMode=null){
+    if(!shouldResume && window.MQLabyrinthIntroduction?.offer(()=>startGame(false,requestedMode))) return;
     window.MQAccessibility?.resetFeedback();
     const launchMode=requestedMode||gameMode||"standard";
     gameMode=launchMode; resetGameSurfaceForNewRun(true);
@@ -10889,6 +10891,7 @@ function continueSavedRun(){
     gameMode="standard"; resumedSavedRunThisSession=true; beginRunSession(); resetGameSurfaceForNewRun(true); startGame(true,"standard");
 }
 function startNewRun(){
+    if(window.MQLabyrinthIntroduction?.offer(()=>startNewRun())) return;
     gameMode="standard"; clearSavedGame(); beginRunSession(); resetGameSurfaceForNewRun(true); resetRunStateForNewMode(); startGame(false,"standard");
 }
 function returnToModeSelectFromRun(){
@@ -14102,12 +14105,12 @@ MQContract.build();
     byId('gameModalText').after(menu);
     const returnButton=byId('returnMenuBtn'), originalAction=returnButton.onclick;
     returnButton.onclick=()=>{
-      showGameModal({title:'Operation Menu',text:'Choose a utility or return to mode selection.',confirmText:'Mode Selection',cancelText:'Close',
+      showGameModal({title:'Game Menu',text:'',confirmText:'Mode Selection',cancelText:'Close',
         onConfirm:()=>{menu.hidden=true;originalAction?.call(returnButton);},onCancel:()=>{menu.hidden=true;}});
       menu.hidden=false;
     };
     new MutationObserver(()=>{
-      if(!visible(byId('gameModal')) || byId('gameModalTitle')?.textContent!=='Operation Menu')menu.hidden=true;
+      if(!visible(byId('gameModal')) || byId('gameModalTitle')?.textContent!=='Game Menu')menu.hidden=true;
     }).observe(byId('gameModal'),{attributes:true,attributeFilter:['style'],childList:true,subtree:true});
   }
   const history=document.createElement('button');history.id='mqExplanationReview';
@@ -14191,5 +14194,1043 @@ MQContract.build();
 })();
 </script>
 <!-- MQ ACCESSIBILITY script END -->
+<!-- Labyrinth-only presentation. Keep outside synchronized shared helpers. -->
+<style id="labyrinth-interface-styles">
+#mqUtilityMenu {display:flex;flex-direction:column;gap:10px;width:min(360px,100%);margin:0 auto 10px}
+#mqUtilityMenu[hidden] {display:none}
+.labyrinth-menu-open #mqUtilityMenu button,.labyrinth-menu-open .game-modal-actions button {box-sizing:border-box;width:100%;min-height:48px;margin:0;padding:11px 16px;font-family:inherit;font-size:.85rem;font-weight:700;line-height:1.4;letter-spacing:.06em;text-transform:uppercase;color:#e2e8f0;background:linear-gradient(180deg,#17334d,#071426);border:1px solid #51829f;border-radius:10px;box-shadow:0 0 12px rgba(56,189,248,.15),inset 0 0 9px rgba(0,0,0,.6);white-space:normal;cursor:pointer}
+.labyrinth-menu-open #mqUtilityMenu button:not(:disabled):hover,.labyrinth-menu-open .game-modal-actions button:hover {color:#f7d982;border-color:#f7d982;background:linear-gradient(180deg,#20435e,#0b1d32)}
+.labyrinth-menu-open #mqUtilityMenu button:focus-visible,.labyrinth-menu-open .game-modal-actions button:focus-visible {outline:3px solid #8bdcff;outline-offset:3px;border-color:#f7d982}
+.labyrinth-menu-open #mqUtilityMenu button:disabled {color:#bac6d0;border-color:#64748b;box-shadow:none;cursor:not-allowed}
+#mqUtilityMenu .mq-motion-setting {margin:0}
+#mqUtilityMenu #soundToggle {position:static!important;inset:auto!important;transform:none!important;max-width:100%}
+#mqUtilityStatus {margin:0;color:#cbd5e1}
+#mqUtilityStatus:empty {display:none}
+.labyrinth-menu-open #gameModalText {margin-bottom:16px}
+.labyrinth-menu-open #gameModalText:empty {display:none}
+:is(#labyrinthIntroduction,#labyrinthExamGuardianIntroduction) {box-sizing:border-box;width:min(620px,calc(100% - 24px));max-height:90dvh;overflow:auto;padding:24px;border:1px solid #d4af37;border-radius:14px;background:#071322;color:#e2e8f0;text-align:center}
+:is(#labyrinthIntroduction,#labyrinthExamGuardianIntroduction)::backdrop {background:rgba(0,0,0,.85)}
+:is(#labyrinthIntroduction,#labyrinthExamGuardianIntroduction) img {display:block;width:100%;height:240px;max-height:32dvh;object-fit:contain;margin:0 auto 16px}
+:is(#labyrinthIntroduction,#labyrinthExamGuardianIntroduction) h2 {font-size:1.5rem;color:#d4af37}
+:is(#labyrinthIntroduction,#labyrinthExamGuardianIntroduction) button {min-height:48px;white-space:normal}
+:is(#labyrinthIntroduction,#labyrinthExamGuardianIntroduction) p {line-height:1.6;margin:14px 0;color:#e2e8f0}
+:is(#labyrinthIntroduction,#labyrinthExamGuardianIntroduction) .introduction-actions {display:flex;justify-content:center;flex-wrap:wrap;gap:10px}
+:is(#labyrinthIntroduction,#labyrinthExamGuardianIntroduction) .introduction-actions button {flex:1 1 150px;margin:0}
+:is(#labyrinthIntroduction,#labyrinthExamGuardianIntroduction) :focus-visible {outline:3px solid #8bdcff;outline-offset:3px}
+@media(max-width:480px){:is(#labyrinthIntroduction,#labyrinthExamGuardianIntroduction) {padding:18px}:is(#labyrinthIntroduction,#labyrinthExamGuardianIntroduction) img {height:190px;max-height:27dvh}}
+
+.labyrinth-menu-open .game-modal-actions {display:flex;flex-direction:column;gap:10px;width:min(360px,100%);margin:0 auto}
+#graphLightbox.active {justify-content:flex-start}
+#graphLightbox img {max-width:100%;box-sizing:border-box}
+#graphLightbox .graph-description {max-width:100%}
+#returnMenuBtn.return-menu-btn {min-height:44px;font-size:.75rem!important;line-height:1.3!important}
+#artifactVault {box-sizing:border-box}
+#artifactVault .artifactSlot {opacity:1}
+#artifactVault .artifactSlot:not(.unlocked) img {opacity:.3}
+#artifactVault .artifactSlot span {font-size:.875rem;line-height:1.35;color:#cbd5e1;word-break:normal;overflow-wrap:normal}
+#artifactVault .artifactSlot.unlocked span {color:#e2e8f0}
+#masteryReportScreen .mastery-stat-value {word-break:normal;overflow-wrap:normal}
+@media(max-width:768px){
+  .top-title {padding-top:3.5rem}
+  #artifactVault {padding:12px 10px}
+  #artifactVault .artifactSlot img {width:32px}
+  #artifactVault .vaultRow {gap:12px;flex-wrap:wrap}
+  #artifactVault .artifactSlot {flex:1 1 90px}
+}
+@media(max-width:480px){
+  #masteryReportScreen .mastery-summary-grid {grid-template-columns:minmax(0,1fr)}
+  #masteryReportScreen .mastery-stat-value {font-size:1.5rem;line-height:1.35}
+  #masteryReportScreen .mastery-evidence-value {font-size:1.15rem}
+}
+</style>
+<script id="labyrinth-interface">
+(() => {
+    'use strict';
+    const menu = document.getElementById('mqUtilityMenu');
+    const opener = document.getElementById('returnMenuBtn');
+    const modal = document.getElementById('gameModal');
+    const sound = document.getElementById('soundToggle');
+    const fullscreen = document.querySelector('.fullscreenBtn');
+    if(!menu || !opener || !sound || !fullscreen) return;
+    // Move the original controls, preserving the existing audio state and handler.
+    sound.className = 'game-menu-option continue-btn';
+    sound.type = 'button';
+    fullscreen.className = 'game-menu-option continue-btn';
+    fullscreen.id = 'labyrinthFullscreen';
+    fullscreen.type = 'button';
+    menu.prepend(sound, fullscreen);
+    const status = document.createElement('p');
+    status.id = 'mqUtilityStatus';
+    status.setAttribute('role', 'status');
+    menu.append(status);
+    const syncFullscreen = () => {
+        const active = Boolean(document.fullscreenElement);
+        const supported = active || Boolean(document.fullscreenEnabled && document.documentElement.requestFullscreen);
+        fullscreen.disabled = !supported;
+        fullscreen.textContent = !supported ? 'Fullscreen unavailable on this device' : active ? 'Exit Fullscreen' : 'Enter Fullscreen';
+    };
+    fullscreen.onclick = async () => {
+        // Invoke the browser API directly from the user gesture; do not simulate it.
+        status.textContent = '';
+        try {
+            if(document.fullscreenElement) await document.exitFullscreen();
+            else if(document.fullscreenEnabled && document.documentElement.requestFullscreen) await document.documentElement.requestFullscreen();
+        } catch (_) { status.textContent = 'Fullscreen could not be opened. You can continue playing in this window.'; }
+        syncFullscreen();
+    };
+    document.addEventListener('fullscreenchange', syncFullscreen);
+    const confirm = document.getElementById('gameModalConfirm');
+    const actions = confirm.parentElement;
+    // Other confirmations retain their original buttons and actions.
+    const showModal = window.showGameModal;
+    window.showGameModal = function(...args){actions.prepend(confirm);return showModal.apply(this,args);};
+    const daily = document.createElement('button');
+    daily.id='gameMenuDaily';daily.type='button';daily.className='game-menu-option continue-btn';
+    daily.textContent='Daily Task';daily.hidden=true; // Enabled by the canonical Daily adapter.
+    const replay = document.createElement('button');
+    replay.id='gameMenuGuideIntro';replay.type='button';replay.className='game-menu-option continue-btn';
+    replay.textContent='Replay Introduction';
+    menu.append(daily,replay);
+    // Authored Arcane Archive guide: composer-core.js BUILT_IN_GUIDE_INTROS.archivist.
+    // Portrait/alternative: official_theme_library.js arcane-guide (the existing local wizard.webp).
+    const introduction=document.createElement('dialog');
+    introduction.id='labyrinthIntroduction';introduction.setAttribute('aria-labelledby','labyrinthIntroductionTitle');
+    introduction.innerHTML='<img src="wizard.webp" alt="The Archivist, an arcane guide"><h2 id="labyrinthIntroductionTitle" tabindex="-1">The Archivist</h2><p>Greetings. I am the Archivist. It is my responsibility to guide you through these halls and ensure you know your economics.</p><p>If you are ready, follow me.</p><div class="introduction-actions"><button id="labyrinthIntroProceed" type="button" class="continue-btn">Proceed</button><button id="labyrinthIntroSkip" type="button" class="continue-btn">Skip</button></div>';
+    document.body.append(introduction);
+    const seenKey=`${STORAGE_PREFIX}:guideIntroSeen`;
+    let seenInMemory=false,activeIntroduction=null;
+    const hasSeen=()=>{try{return seenInMemory||localStorage.getItem(seenKey)==='true';}catch(_){return seenInMemory;}};
+    const closeIntroduction=()=>{
+        const active=activeIntroduction;if(!active)return;
+        activeIntroduction=null;seenInMemory=true;
+        try{localStorage.setItem(seenKey,'true');}catch(_){}
+        introduction.close();
+        active.screens.forEach(([screen,display])=>{screen.style.display=display;});
+        window.MQAccessibility?.sync();
+        if(active.onProceed)active.onProceed();
+        else if(!runEnding)opener.focus({preventScroll:true});
+    };
+    const openIntroduction=onProceed=>{
+        if(activeIntroduction)return;
+        // Release the pre-game screen's inert/focus ownership before opening a native modal.
+        // No gameplay initialization, timer control, RNG, or run-data write happens here.
+        const screens=['startScreen','modeSelectScreen'].map(id=>document.getElementById(id)).filter(screen=>screen&&getComputedStyle(screen).display!=='none').map(screen=>[screen,screen.style.display]);
+        screens.forEach(([screen])=>{screen.style.display='none';});
+        activeIntroduction={onProceed,screens};
+        window.MQAccessibility?.sync();
+        introduction.showModal();document.getElementById('labyrinthIntroductionTitle').focus();
+    };
+    document.getElementById('labyrinthIntroProceed').onclick=closeIntroduction;
+    document.getElementById('labyrinthIntroSkip').onclick=closeIntroduction;
+    introduction.addEventListener('keydown',event=>{
+        if(event.key==='Tab'){
+            const buttons=[...introduction.querySelectorAll('button')],index=buttons.indexOf(document.activeElement);
+            if(event.shiftKey&&index<=0){event.preventDefault();buttons.at(-1).focus();}
+            else if(!event.shiftKey&&(index<0||index===buttons.length-1)){event.preventDefault();buttons[0].focus();}
+            event.stopPropagation();
+        }
+        // Do not bubble Escape to the legacy graph closer, which resumes its timer.
+        if(event.key==='Escape'){event.preventDefault();event.stopPropagation();closeIntroduction();}
+    });
+    introduction.addEventListener('cancel',event=>{event.preventDefault();closeIntroduction();});
+    window.MQLabyrinthIntroduction=Object.freeze({offer(onProceed){if(hasSeen())return false;openIntroduction(onProceed);return true;}});
+    replay.onclick=()=>{
+        closeGameModal(); // Preserve Labyrinth's existing replay policy: clocks continue, including Fading Fortune.
+        openIntroduction(null);
+    };
+    new MutationObserver(()=>{if(activeIntroduction&&!activeIntroduction.onProceed&&runEnding)closeIntroduction();})
+        .observe(document.getElementById('gameShell'),{childList:true,subtree:true});
+    const openMenu = opener.onclick;
+    opener.onclick = function(){
+        status.textContent = '';
+        openMenu.call(this);
+        confirm.textContent = 'Mode Selection';
+        menu.prepend(confirm,fullscreen,daily,replay,sound,document.getElementById('mqMotionControl').closest('.mq-motion-setting'));
+        window.MQLabyrinthDaily?.refresh();
+        syncFullscreen();
+        window.MQAccessibility?.sync();
+    };
+    new MutationObserver(() => modal.classList.toggle('labyrinth-menu-open', !menu.hidden))
+        .observe(menu, {attributes:true,attributeFilter:['hidden']});
+    syncFullscreen();
+})();
+</script>
+<!-- Labyrinth Exam Drill: isolated assessment path; other modes delegate unchanged. -->
+<style id="labyrinth-exam-styles">
+#mazeTrack .labyrinth-exam-room {font:inherit;font-size:14px;color:#e2e8f0;min-width:0;padding:0;margin:0}
+#mazeTrack .labyrinth-exam-answered {border:2px solid #8bdcff;background:#17334d}
+#mazeTrack .labyrinth-exam-locked {opacity:.65}
+body.labyrinth-exam-active {align-items:flex-start}
+body.labyrinth-exam-active #mazeTrack {margin:10px auto;gap:6px;grid-template-columns:repeat(10,minmax(0,1fr));max-width:440px}
+body.labyrinth-exam-active #mazeTrack .maze-box {box-sizing:border-box;width:100%;height:36px;aspect-ratio:auto}
+#mazeTrack button.labyrinth-exam-room {cursor:pointer;transition:border-color .15s,box-shadow .15s}
+#mazeTrack button.labyrinth-exam-room:hover,#mazeTrack button.labyrinth-exam-room:focus-visible {outline:2px solid #8bdcff;outline-offset:2px;border-color:#f7d982;box-shadow:0 0 12px rgba(247,217,130,.35)}
+#mazeTrack .labyrinth-exam-ready {background:linear-gradient(180deg,#805b19,#352407);border-color:#f7d982}
+#mazeTrack button.labyrinth-exam-room:disabled {cursor:not-allowed;opacity:.65}
+body.labyrinth-exam-active #message {font-size:.85rem;line-height:1.5;margin:10px 0}
+body.labyrinth-exam-active #message:empty {display:none}
+@media(max-width:768px){
+ body.labyrinth-exam-active #mazeTrack {gap:3px}
+ body.labyrinth-exam-active #mazeTrack .maze-box {height:28px;font-size:12px}
+ body.labyrinth-exam-active #wizardBox {flex-direction:row;justify-content:center;max-width:none;gap:12px;min-height:0;box-sizing:border-box}
+ body.labyrinth-exam-active #wizardImage {width:48px;max-height:64px;object-fit:contain;margin:0}
+ body.labyrinth-exam-active #wizardName {font-size:.65rem}
+ body.labyrinth-exam-active .top-panel {gap:4px}
+ body.labyrinth-exam-active #mazeTrackContainer {padding:0 12px}
+ body.labyrinth-exam-active #gameBox {padding:8px}
+}
+#answers button.exam-selected {outline:3px solid #8bdcff;outline-offset:2px;background:#17334d}
+</style>
+<script id="labyrinth-exam">
+(() => {
+    'use strict';
+    // Composer's section/commit rules, with Labyrinth's existing wall-clock timer.
+    // Visibility/view aggregation and extra CSV fields belong to Phase 3.
+    const sections = [
+        {index:0,start:1,end:9,boss:10,difficulty:'easy',bossDifficulty:'easyBoss',guardian:'THE WARDEN',image:'warden.webp',color:'#b91c1c'},
+        {index:1,start:11,end:19,boss:20,difficulty:'medium',bossDifficulty:'mediumBoss',guardian:'THE DECOMPOSER',image:'decomposer.webp',color:'#38bdf8'},
+        {index:2,start:21,end:29,boss:30,difficulty:'hard',bossDifficulty:'finalBoss',guardian:'THE SOVEREIGN',image:'sovereign.webp',color:'#fff8e7'}
+    ];
+    let assessment = null;
+    const byId = id => document.getElementById(id);
+    const sectionFor = value => sections.find(s => value >= s.start && value <= s.boss);
+    const ordinary = value => {const s=sectionFor(value);return Boolean(s && value <= s.end);};
+    const sectionState = (value=room) => assessment?.sections[sectionFor(value)?.index] || null;
+    const complete = s => Boolean(s && Array.from({length:9},(_,i)=>assessment.rooms[s.start+i]).every(r=>r?.selectedIndex != null));
+    const live = text => {byId('srAnnouncements').textContent=text;};
+    const original = Object.fromEntries(['startGame','loadQuestion','answer','displayQuestion','updateMazeTrack','getDifficultyForMode','isBossRoomForMode','handlePracticeModeComplete','returnToModeSelectFromRun'].map(name=>[name,window[name]]));
+
+    // The existing contract runtime uses this hook to resolve committed snapshots.
+    window.getExamRoomState = value => assessment?.rooms[value] || null;
+    window.getExamSectionState = sectionState;
+    window.modeAllowsImmediateCorrectnessFeedback = () => gameMode !== 'exam';
+    window.getDifficultyForMode = function(...args){
+        if(gameMode !== 'exam') return original.getDifficultyForMode.apply(this,args);
+        const s=sectionFor(room);return room===s?.boss?s.bossDifficulty:s?.difficulty||'easy';
+    };
+    window.isBossRoomForMode = function(value,...args){
+        return gameMode==='exam' ? value===sectionFor(value)?.boss : original.isBossRoomForMode.call(this,value,...args);
+    };
+    window.startGame = function(shouldResume=false,requestedMode=null,...args){
+        closeGuardianIntroduction(false);
+        assessment = {sections:sections.map(s=>({...s,committed:false,checkpointIndex:0,checkpointCorrect:0,checkpointComplete:false,checkpointQuestions:[]})),rooms:{}};
+        return original.startGame.call(this,shouldResume,requestedMode,...args);
+    };
+
+    // Exam-only checkpoint reveals: existing identity/art, never performance-dependent dialogue.
+    const guardianIntroduction=document.createElement('dialog');
+    guardianIntroduction.id='labyrinthExamGuardianIntroduction';
+    guardianIntroduction.setAttribute('aria-labelledby','labyrinthExamGuardianName');
+    guardianIntroduction.innerHTML='<p id="labyrinthExamGuardianCheckpoint"></p><img id="labyrinthExamGuardianImage" alt=""><h2 id="labyrinthExamGuardianName" tabindex="-1"></h2><p>Three responses. Feedback follows the checkpoint.</p><div class="introduction-actions"><button type="button" class="continue-btn" id="labyrinthExamGuardianContinue">Enter the Checkpoint</button><button type="button" class="continue-btn" id="labyrinthExamGuardianSkip">Skip</button></div>';
+    document.body.append(guardianIntroduction);
+    let activeGuardianIntroduction=null;
+    function closeGuardianIntroduction(proceed=true){
+        const pending=activeGuardianIntroduction;if(!pending)return;
+        activeGuardianIntroduction=null;guardianIntroduction.close();
+        if(proceed&&pending.session===runSessionId&&pending.assessment===assessment&&gameMode==='exam'&&!runEnding&&room===pending.room)loadQuestion();
+    }
+    function openGuardianIntroduction(s){
+        answerSubmissionPending=true;
+        activeGuardianIntroduction={session:runSessionId,assessment,room:s.boss};
+        byId('labyrinthExamGuardianCheckpoint').textContent=`Checkpoint ${['I','II','III'][s.index]}`;
+        byId('labyrinthExamGuardianName').textContent=s.guardian;
+        const image=byId('labyrinthExamGuardianImage');image.src=s.image;image.alt=s.guardian;
+        renderNavigation();live('');window.MQAccessibility?.sync();
+        guardianIntroduction.showModal();byId('labyrinthExamGuardianName').focus();
+    }
+    byId('labyrinthExamGuardianContinue').onclick=()=>closeGuardianIntroduction();
+    byId('labyrinthExamGuardianSkip').onclick=()=>closeGuardianIntroduction();
+    guardianIntroduction.addEventListener('cancel',event=>{event.preventDefault();closeGuardianIntroduction();});
+    guardianIntroduction.addEventListener('keydown',event=>{
+        if(event.key==='Escape'){event.preventDefault();event.stopPropagation();closeGuardianIntroduction();}
+        if(event.key==='Tab'){
+            const buttons=[...guardianIntroduction.querySelectorAll('button')],index=buttons.indexOf(document.activeElement);
+            if(event.shiftKey&&index<=0){event.preventDefault();buttons.at(-1).focus();}
+            else if(!event.shiftKey&&(index<0||index===buttons.length-1)){event.preventDefault();buttons[0].focus();}
+            event.stopPropagation();
+        }
+    });
+
+    function renderNavigation(){
+        const s=sectionState(),track=byId('mazeTrack');if(!s||!track)return;
+        document.body.classList.add('labyrinth-exam-active');
+        // Override the legacy vault's display:block!important for assessment only.
+        byId('artifactVault').style.setProperty('display','none','important');
+        track.replaceChildren();
+        for(let n=1;n<=30;n++){
+            const target=sectionState(n),checkpoint=n===target.boss,active=target===s,saved=assessment.rooms[n]?.selectedIndex!=null;
+            const locked=!active||target.committed||(checkpoint&&!complete(s));
+            const item=document.createElement(locked?'div':'button');item.className='maze-box labyrinth-exam-room';item.dataset.examRoom=String(n);
+            item.textContent=checkpoint?['I','II','III'][target.index]:String(n);
+            if(locked){item.setAttribute('role','img');item.setAttribute('aria-disabled','true');item.classList.add('labyrinth-exam-locked');}
+            else{
+                item.type='button';item.disabled=answerSubmissionPending||runEnding;
+                item.onclick=()=>checkpoint?window.selectExamCheckpoint(n):navigate(n);
+                if(checkpoint)item.classList.add('labyrinth-exam-ready');
+            }
+            if(saved)item.classList.add('labyrinth-exam-answered');
+            if(n===room){item.classList.add('active');item.setAttribute('aria-current','step');}
+            item.setAttribute('aria-label',`${checkpoint?'Checkpoint':'Question'} ${n}, ${target.committed?'committed':locked?'locked':checkpoint?'available':saved?'response saved':'unanswered'}${n===room?', current':''}`);track.append(item);
+        }
+    }
+    function clearExamPresentation(){
+        closeGuardianIntroduction(false);
+        document.body.classList.remove('labyrinth-exam-active');
+    }
+
+    window.updateMazeTrack = function(...args){if(gameMode==='exam')return renderNavigation();clearExamPresentation();return original.updateMazeTrack.apply(this,args);};
+
+    function navigate(target){
+        const s=sectionState();
+        if(gameMode!=='exam'||runEnding||answerSubmissionPending||!ordinary(target)||s?.committed||sectionState(target)!==s)return false;
+        sendGameData({runID,event:'exam_navigation',room,questionId:currentQuestion?.id||0,adaptiveMode:'exam-navigation'});
+        room=target;
+        sendGameData({runID,event:'exam_navigation_arrive',room,questionId:assessment.rooms[room]?.question?.id||0,adaptiveMode:'exam-navigation'});
+        loadQuestion();return true;
+    }
+    window.navigateExamRoom = navigate;
+    window.selectExamCheckpoint = value => value===sectionState()?.boss && commitSection(sectionState());
+
+    function renderQuestion(){
+        if(runEnding||activeGuardianIntroduction)return;
+        const s=sectionState();if(!s)return;
+        if(s.checkpointComplete){showCheckpointSummary(s);return;}
+        answerSubmissionPending=false;
+        const checkpoint=room===s.boss;
+        if(checkpoint){
+            if(!s.committed)return;
+            if(!s.checkpointQuestions.length){
+                const bank=[...(questionBanks[s.bossDifficulty]||[])];
+                s.target=getWeakestBossObjective(bank);
+                let pool=buildBossQuestionSet(bank,s.bossDifficulty,s.target);
+                if(pool.length<3)pool=shuffle([...bank]).slice(0,3);
+                s.checkpointQuestions=pool.map(q=>{const value=shuffleOptions(q);if(value)value.__mqDifficulty=s.bossDifficulty;return value;});
+                if(usedQuestions[s.bossDifficulty])pool.forEach(q=>{if(!usedQuestions[s.bossDifficulty].includes(q.id))usedQuestions[s.bossDifficulty].push(q.id);});
+            }
+            currentQuestion=s.checkpointQuestions[s.checkpointIndex];
+            adaptiveMode='exam-checkpoint';
+        }else{
+            let item=assessment.rooms[room];
+            if(!item){
+                const profile=getSelectionProfile();
+                const question=shuffleOptions(getAdaptiveQuestion(s.difficulty,getWeakestTag(),{mode:'support',preferredTypes:profile?.preferredTypes||[],purpose:'exam-navigation'}));
+                if(question)question.__mqDifficulty=s.difficulty;
+                item=assessment.rooms[room]={question,selectedIndex:null,initialSelectedIndex:null,initialCorrect:null,finalCorrect:null,revisionCount:0,responseTime:0};
+            }
+            currentQuestion=item.question;adaptiveMode='exam-navigation';
+        }
+        if(!currentQuestion){showGameModal({title:'Question Selection Stopped',text:'Exam Drill could not select a valid question.',confirmText:'Return to Modes',onConfirm:returnToModeSelectFromRun});return;}
+        runPhase='question';
+        closeGraphLightbox();byId('questionImageBox').replaceChildren();byId('questionImageBox').style.display='none';
+        renderQuestionGraph(currentQuestion);
+        byId('gameShell').classList.toggle('boss-mode',checkpoint);byId('gameBox').classList.toggle('boss-mode',checkpoint);
+        if(checkpoint){
+            byId('gameBox').style.setProperty('--bossColor',s.color);
+            if(s.boss===30)playFinalBossMusic();else playBossMusic();
+            byId('question').innerHTML=`<img src="${s.image}" class="bossIcon ${['underwriterGlow','auditorGlow','principalGlow'][s.index]}" alt="${s.guardian}"><span class="boss-title" style="color:${s.color}">${s.guardian}</span><div class="boss-q" style="--bossColor:${s.color}">${currentQuestion.q}</div>`;
+        }else{playExplorationMusic();byId('question').innerHTML=`<div>${currentQuestion.q}</div>`;}
+        byId('bossMessage').textContent=checkpoint?`ASSESSMENT CHECKPOINT — Response ${s.checkpointIndex+1} of 3`:'';
+        byId('formulaHint').textContent=currentQuestion.hint?'💡 Hint: '+currentQuestion.hint:'';
+        byId('message').textContent=checkpoint?'':'Select any room in this section. Responses remain revisable until you enter the checkpoint.';
+        byId('streakDisplay').textContent='';
+        byId('areaDisplay').textContent=`Exam Drill — Section ${s.index+1} · ${checkpoint?'Checkpoint':`Question ${room-s.start+1} of 9`}`;
+        byId('progressFill').style.width=`${((s.index*12+(checkpoint?9+s.checkpointIndex:0))/36)*100}%`;
+        byId('artifactDrop').style.display='none';
+        // The compact room grid supplies section navigation.
+        displayQuestion();renderNavigation();
+        window.MQAccessibility?.sync();
+        // Heading focus supplies question context; the live region is only a neutral status.
+        byId('question').focus({preventScroll:true});live('');
+    }
+    window.loadQuestion = function(...args){if(gameMode==='exam')return renderQuestion();return original.loadQuestion.apply(this,args);};
+    window.displayQuestion = function(...args){
+        const result=original.displayQuestion.apply(this,args);
+        if(gameMode==='exam'&&ordinary(room)){
+            const selected=assessment.rooms[room]?.selectedIndex;
+            byId('answers').querySelectorAll('button').forEach((button,i)=>{button.classList.toggle('exam-selected',selected===i);button.setAttribute('aria-pressed',String(selected===i));});
+        }
+        return result;
+    };
+
+    function scoreResponse(roomNumber,item,checkpoint=false){
+        const prior=currentQuestion;currentQuestion=item.question;
+        const q=item.question, correct=Boolean(item.finalCorrect), responseTime=item.responseTime;
+        Object.keys(conceptMemory).forEach(tag=>{conceptMemory[tag]*=.95;});
+        totalAttempts++;recordAdaptiveAttempt(q,correct,responseTime);
+        if(correct){
+            streak++;correctAnswers++;maxStreak=Math.max(maxStreak,streak);
+            if(q.tag){
+                const expected=getTypeTargetMs(q.type);
+                const bonus=checkpoint ? (responseTime<=expected*.85 ? .45 : responseTime<=expected*1.15 ? .3 : .15) : .2;
+                conceptMemory[q.tag]=Math.max(0,(conceptMemory[q.tag]||0)*.68-bonus);
+            }
+        }else{streak=0;if(q.tag)conceptMemory[q.tag]=(conceptMemory[q.tag]||0)+(checkpoint&&responseTime<getTypeTargetMs(q.type)*.65?1.25:1);}
+        // Existing supported fields only. The fixed serializer/header remain unchanged.
+        sendGameData({runID,event:'question',room:roomNumber,questionId:q.id,questionVersion:q.version||1,difficulty:q.__mqDifficulty,
+            selectedIndex:item.selectedIndex,correct:correct?1:0,tag:q.tag||'',type:q.type||'',objective:q.objective||inferObjective(q),
+            responseTime,attempt:totalAttempts,streak,elapsedTime:getElapsedTimeMs(),adaptiveMode:checkpoint?'exam-checkpoint':'exam-commit'});
+        currentQuestion=prior;
+    }
+    function commitSection(s){
+        if(gameMode!=='exam'||runEnding||answerSubmissionPending||s!==sectionState()||s.committed||!complete(s))return false;
+        s.committed=true;
+        for(let n=s.start;n<=s.end;n++)scoreResponse(n,assessment.rooms[n]);
+        sendGameData({runID,event:'exam_section_commit',room:s.boss,adaptiveMode:'exam-commit'});
+        room=s.boss;bossHealth=3;bossPool=[];openGuardianIntroduction(s);return true;
+    }
+    window.answer = async function(choice,...args){
+        if(gameMode!=='exam')return original.answer.call(this,choice,...args);
+        if(runEnding||answerSubmissionPending||!Number.isInteger(choice)||!currentQuestion?.options?.[choice])return;
+        const s=sectionState(), q=currentQuestion, answerRoom=room, session=runSessionId;
+        if(!s||s.checkpointComplete)return;
+        const item=ordinary(room)?assessment.rooms[room]:null;
+        if(item?.selectedIndex===choice)return;
+        const responseTime=Math.max(0,Date.now()-questionStartTime);
+        answerSubmissionPending=true;setAnswerButtonsDisabled(true);renderNavigation();
+        let correct;
+        try{correct=await isQuestionAnswerCorrect(q,choice);}catch(_){
+            if(session!==runSessionId||runEnding||gameMode!=='exam')return;
+            answerSubmissionPending=false;setAnswerButtonsDisabled(false);renderNavigation();
+            showGameModal({title:'Answer Check Unavailable',text:'Your response could not be saved. Close this message and try again.',confirmText:'Return to Question'});return;
+        }
+        if(session!==runSessionId||runEnding||gameMode!=='exam'||room!==answerRoom||currentQuestion!==q)return;
+        if(item){
+            const revision=item.selectedIndex!==null;
+            if(!revision){item.initialSelectedIndex=choice;item.initialCorrect=correct;}else item.revisionCount++;
+            item.selectedIndex=choice;item.finalCorrect=correct;item.responseTime=responseTime;
+            sendGameData({runID,event:revision?'exam_answer_revision':'exam_answer_initial',room,questionId:q.id,selectedIndex:choice,
+                tag:q.tag||'',type:q.type||'',objective:q.objective||inferObjective(q),responseTime,adaptiveMode:'exam-navigation'});
+            answerSubmissionPending=false;displayQuestion();renderNavigation();
+            byId('message').textContent=revision?'Response updated. You may revise it again or choose another question.':'Response saved. You may revise it or choose another question.';
+            byId('answers').querySelector(`[data-answer-index="${choice}"]`)?.focus({preventScroll:true});
+            live(revision?'Response updated.':'Response saved.');
+        }else{
+            if(!s.committed)return;
+            scoreResponse(room,{question:q,selectedIndex:choice,finalCorrect:correct,responseTime},true);
+            s.checkpointIndex++;if(correct)s.checkpointCorrect++;
+            bossHealth=3-s.checkpointIndex;
+            byId('message').textContent='Response recorded.';live('Response recorded.');
+            if(s.checkpointIndex<3){scheduleForCurrentRun(loadQuestion,TIMING.boss);return;}
+            s.checkpointComplete=true;
+            sendGameData({runID,event:'boss_defeated',room,adaptiveMode:'exam-checkpoint'});
+            showCheckpointSummary(s);
+        }
+    };
+    function showCheckpointSummary(s){
+        // Composer releases only the aggregate encounter outcome here, not an answer key.
+        const outcome=s.checkpointCorrect===3?'secured':s.checkpointCorrect>=2?'cleared':'not-secured';
+        const ordinal=['I','II','III'][s.index];
+        const title=outcome==='not-secured'?'MASTERY NOT YET SECURED':`CHECKPOINT ${ordinal} ${outcome.toUpperCase()}`;
+        const summary=outcome==='secured'?'You proved your command of this encounter.':outcome==='cleared'?'The encounter is complete, but these concepts still deserve attention.':'This encounter exposed concepts to revisit. Your responses have been recorded.';
+        playExplorationMusic();byId('gameShell').classList.remove('boss-mode');byId('gameBox').classList.remove('boss-mode');
+        byId('bossMessage').textContent='';byId('message').textContent='';byId('formulaHint').textContent='';
+        closeGraphLightbox();byId('questionImageBox').replaceChildren();byId('questionImageBox').style.display='none';
+        byId('question').innerHTML=`<span class="boss-title">${title}</span><div class="boss-q">${summary}</div>`;
+        byId('answers').innerHTML=`<button id="continueBtn" class="continue-btn">${s.boss===30?'VIEW RESULTS →':`CONTINUE TO ROOM ${s.boss+1} →`}</button>`;
+        const button=byId('continueBtn'),session=runSessionId;let continued=false;
+        button.onclick=()=>{
+            if(continued||session!==runSessionId||runEnding||gameMode!=='exam'||room!==s.boss)return;
+            continued=true;button.disabled=true;bossHealth=3;bossPool=[];bossCheckpoint=s.boss+1;
+            if(s.boss===30)handlePracticeModeComplete();else{room=s.boss+1;loadQuestion();}
+        };
+        renderNavigation();byId('question').focus({preventScroll:true});live('');runPhase='boss-summary';
+    }
+    window.handlePracticeModeComplete = function(...args){
+        if(gameMode==='exam'){clearExamPresentation();live('');}
+        // Uncommitted drafts are not accepted answers or automatic zeros, including early exit.
+        return original.handlePracticeModeComplete.apply(this,args);
+    };
+    window.returnToModeSelectFromRun = function(...args){
+        if(gameMode==='exam')clearExamPresentation();
+        return original.returnToModeSelectFromRun.apply(this,args);
+    };
+})();
+</script>
+
+<style id="labyrinth-daily-styles">
+.labyrinth-daily-title,.labyrinth-daily-meta {display:block;margin:0 0 12px}
+.labyrinth-daily-title {font-weight:700;color:#f7d982}
+#gameModalText progress {width:100%;height:16px;accent-color:#8bdcff;margin:0 0 12px}
+</style>
+<script id="labyrinth-daily">
+(() => {
+'use strict';
+// Canonical DailyChallengesCore, identical to Composer / Economic / Macro / Managerial.
+const DailyChallengesCore = (() => {
+    const FAMILY_ORDER = [
+        "correct_answers",
+        "streak",
+        "accuracy_window",
+        "perfect_stretch",
+        "graph_questions",
+        "concept_variety"
+    ];
+    const MILESTONES = [1,3,5,10,20,30,50,75,100];
+    const UNIVERSAL_FAMILIES = FAMILY_ORDER.slice(0, 4);
+    const GRAMMAR = {
+        correct_answers: [
+            {target:5,tier:"quick"},{target:8,tier:"standard"},{target:10,tier:"standard"},{target:12,tier:"stretch"}
+        ],
+        streak: [
+            {target:4,tier:"quick"},{target:5,tier:"standard"},{target:6,tier:"standard"},{target:8,tier:"stretch"}
+        ],
+        accuracy_window: [
+            {target:4,windowSize:5,tier:"quick"},{target:6,windowSize:8,tier:"standard"},{target:8,windowSize:10,tier:"stretch"}
+        ],
+        perfect_stretch: [
+            {target:3,tier:"quick"},{target:5,tier:"standard"},{target:7,tier:"stretch"}
+        ],
+        graph_questions: [
+            {target:2,tier:"quick",minimumAccessible:4},{target:3,tier:"standard",minimumAccessible:6},{target:5,tier:"stretch",minimumAccessible:10}
+        ],
+        concept_variety: [
+            {target:2,tier:"quick"},{target:3,tier:"standard"},{target:4,tier:"stretch"}
+        ]
+    };
+
+    function localDateKey(value = new Date()){
+        const date = value instanceof Date ? value : new Date(value);
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1).padStart(2, "0");
+        const day = String(date.getDate()).padStart(2, "0");
+        return `${year}-${month}-${day}`;
+    }
+
+    function hash32(input){
+        let hash = 2166136261;
+        const text = String(input || "");
+        for(let index = 0; index < text.length; index++){
+            hash ^= text.charCodeAt(index);
+            hash = Math.imul(hash, 16777619);
+        }
+        return hash >>> 0;
+    }
+
+    function stableQuestionIdentity(question){
+        return String(question?.id ?? question?.questionId ?? `${question?.q || ""}:${JSON.stringify(question?.options || [])}`);
+    }
+
+    function isGraphQuestion(question){
+        return Boolean(
+            question?.image
+            || question?.graph
+            || question?.requiresGraph
+            || /(?:^|[_\s-])graph(?:$|[_\s-])/i.test(String(question?.type || ""))
+        );
+    }
+
+    function conceptIdentity(question){
+        return String(
+            question?.primaryConceptId
+            || question?.conceptId
+            || question?.objective
+            || question?.tag
+            || ""
+        ).trim();
+    }
+
+    function getAccessibleQuestions(banks, supportedModes, modeRequirements){
+        const poolNames = new Set();
+        (supportedModes || []).forEach(mode => {
+            (modeRequirements?.[mode] || []).forEach(poolName => {
+                if(poolName !== "repair" && poolName !== "bridge") poolNames.add(poolName);
+            });
+        });
+        const seen = new Set();
+        const questions = [];
+        poolNames.forEach(poolName => {
+            (Array.isArray(banks?.[poolName]) ? banks[poolName] : []).forEach(question => {
+                if(!question || !Array.isArray(question.options) || question.options.length < 2) return;
+                const identity = stableQuestionIdentity(question);
+                if(seen.has(identity)) return;
+                seen.add(identity);
+                questions.push(question);
+            });
+        });
+        return questions;
+    }
+
+    function getEligibilityContext(banks, supportedModes, modeRequirements){
+        const accessibleQuestions = getAccessibleQuestions(banks, supportedModes, modeRequirements);
+        const graphQuestionCount = accessibleQuestions.filter(isGraphQuestion).length;
+        const concepts = new Set(accessibleQuestions.map(conceptIdentity).filter(Boolean));
+        return {
+            accessibleQuestionCount: accessibleQuestions.length,
+            graphQuestionCount,
+            conceptCount: concepts.size
+        };
+    }
+
+    function getEligibleFamilies(context){
+        const eligible = [...UNIVERSAL_FAMILIES];
+        if(Number(context?.graphQuestionCount || 0) >= 4) eligible.push("graph_questions");
+        if(Number(context?.conceptCount || 0) >= 2) eligible.push("concept_variety");
+        return eligible;
+    }
+
+    function getParameterOptions(family, context){
+        const options = [...(GRAMMAR[family] || [])];
+        if(family === "graph_questions"){
+            return options.filter(option => Number(context?.graphQuestionCount || 0) >= option.minimumAccessible);
+        }
+        if(family === "concept_variety"){
+            return options.filter(option => Number(context?.conceptCount || 0) >= option.target);
+        }
+        return options;
+    }
+
+    function selectFamily(eligibleFamilies, seed, history = [], date){
+        const eligible = FAMILY_ORDER.filter(family => (eligibleFamilies || []).includes(family));
+        if(!eligible.length) return "correct_answers";
+        const recent = [...history]
+            .filter(item => item?.family && item?.date !== date)
+            .sort((a,b) => String(b.date || "").localeCompare(String(a.date || "")))
+            .map(item => item.family);
+        let candidates = [...eligible];
+        const cooldownDepth = eligible.length >= 4 ? 2 : eligible.length >= 2 ? 1 : 0;
+        for(let index = 0; index < cooldownDepth; index++){
+            const filtered = candidates.filter(family => family !== recent[index]);
+            if(filtered.length) candidates = filtered;
+        }
+        return candidates[hash32(`${seed}:family`) % candidates.length];
+    }
+
+    function selectParameters(family, context, seed){
+        const options = getParameterOptions(family, context);
+        const fallback = GRAMMAR[family]?.[0] || {target:5,tier:"quick"};
+        if(!options.length) return {...fallback};
+        const tierRotation = ["quick","standard","standard","stretch"];
+        const desiredTier = tierRotation[hash32(`${seed}:tier`) % tierRotation.length];
+        const tierOptions = options.filter(option => option.tier === desiredTier);
+        const candidates = tierOptions.length ? tierOptions : options;
+        return {...candidates[hash32(`${seed}:parameters`) % candidates.length]};
+    }
+
+    function previousDateKey(date, offset = 1){
+        const parts = String(date || "").split("-").map(Number);
+        if(parts.length !== 3 || parts.some(part => !Number.isFinite(part))) return date;
+        const previous = new Date(parts[0], parts[1] - 1, parts[2]);
+        previous.setDate(previous.getDate() - offset);
+        return localDateKey(previous);
+    }
+
+    function describe(family, parameters){
+        const target = Number(parameters?.target || 0);
+        if(family === "correct_answers") return `Get ${target} correct answers`;
+        if(family === "streak") return `Reach a streak of ${target}`;
+        if(family === "accuracy_window") return `Get ${target} of the next ${parameters.windowSize} correct`;
+        if(family === "perfect_stretch") return `Get ${target} correct without a miss`;
+        if(family === "graph_questions") return `Get ${target} graph questions correct`;
+        if(family === "concept_variety") return `Get correct answers from ${target} different concepts`;
+        return `Get ${target} correct answers`;
+    }
+
+    function resolveDaily({identity,date,eligibleFamilies,history = [],context = {}}){
+        const seed = `${identity}|${date}`;
+        // Derive the cooldown window from the same deterministic rotation so a
+        // fresh browser and a returning browser resolve the same Quest/date alike.
+        // Persisted history remains available for diagnostics and migration, but
+        // cannot make today's locked Daily differ across devices.
+        const deterministicHistory = [];
+        for(let offset = 2; offset >= 1; offset--){
+            const priorDate = previousDateKey(date, offset);
+            const priorFamily = selectFamily(
+                eligibleFamilies,
+                `${identity}|${priorDate}`,
+                deterministicHistory,
+                priorDate
+            );
+            deterministicHistory.push({date:priorDate,family:priorFamily});
+        }
+        const cooldownHistory = deterministicHistory.length ? deterministicHistory : history;
+        let family = selectFamily(eligibleFamilies, seed, cooldownHistory, date);
+        let parameters = selectParameters(family, context, seed);
+        if(!parameters?.target){
+            family = "correct_answers";
+            parameters = selectParameters(family, context, seed);
+        }
+        return {
+            id: `${date}:${hash32(`${seed}:${family}:${parameters.target}:${parameters.windowSize || 0}`).toString(36)}`,
+            date,
+            family,
+            target:Number(parameters.target),
+            windowSize:Number(parameters.windowSize || 0),
+            tier:parameters.tier || "standard",
+            description:describe(family, parameters),
+            eligibleFamilies:[...(eligibleFamilies || [])],
+            eligibility:{
+                accessibleQuestionCount:Number(context.accessibleQuestionCount || 0),
+                graphQuestionCount:Number(context.graphQuestionCount || 0),
+                conceptCount:Number(context.conceptCount || 0)
+            }
+        };
+    }
+
+    function createProgress(){
+        return {
+            value:0,
+            completed:false,
+            startedAt:null,
+            completedAt:null,
+            qualifyingQuestions:0,
+            perfectCurrent:0,
+            windowAttempts:0,
+            windowCorrect:0,
+            windowNumber:1,
+            uniqueConcepts:[],
+            postCompletionQuestions:0,
+            lastQuestionAt:null
+        };
+    }
+
+    function applyProgress(daily, existingProgress, event){
+        const progress = {...createProgress(), ...(existingProgress || {})};
+        progress.uniqueConcepts = Array.isArray(progress.uniqueConcepts) ? [...progress.uniqueConcepts] : [];
+        const before = Number(progress.value || 0);
+        const alreadyComplete = Boolean(progress.completed);
+        const now = event?.timestamp || new Date().toISOString();
+        const windowAttemptBefore = Number(progress.windowNumber || 1);
+        const result = {progress,before,after:before,completedNow:false,alreadyComplete,windowFailed:false,windowAttemptBefore};
+        if(alreadyComplete){
+            progress.postCompletionQuestions = Number(progress.postCompletionQuestions || 0) + 1;
+            progress.lastQuestionAt = now;
+            return result;
+        }
+
+        if(!progress.startedAt) progress.startedAt = now;
+        progress.qualifyingQuestions = Number(progress.qualifyingQuestions || 0) + 1;
+        progress.lastQuestionAt = now;
+        const correct = Boolean(event?.correct);
+
+        if(daily.family === "correct_answers"){
+            if(correct) progress.value = before + 1;
+        } else if(daily.family === "streak"){
+            progress.value = Math.max(before, Number(event?.streak || 0));
+        } else if(daily.family === "perfect_stretch"){
+            progress.perfectCurrent = correct ? Number(progress.perfectCurrent || 0) + 1 : 0;
+            progress.value = progress.perfectCurrent;
+        } else if(daily.family === "graph_questions"){
+            if(correct && event?.isGraph) progress.value = before + 1;
+        } else if(daily.family === "concept_variety"){
+            if(correct && event?.concept && !progress.uniqueConcepts.includes(event.concept)){
+                progress.uniqueConcepts.push(event.concept);
+            }
+            progress.value = progress.uniqueConcepts.length;
+        } else if(daily.family === "accuracy_window"){
+            progress.windowAttempts = Number(progress.windowAttempts || 0) + 1;
+            if(correct) progress.windowCorrect = Number(progress.windowCorrect || 0) + 1;
+            progress.value = progress.windowCorrect;
+            if(progress.windowAttempts >= daily.windowSize){
+                if(progress.windowCorrect >= daily.target){
+                    progress.value = daily.target;
+                } else {
+                    result.windowFailed = true;
+                    progress.windowNumber = Number(progress.windowNumber || 1) + 1;
+                    progress.windowAttempts = 0;
+                    progress.windowCorrect = 0;
+                    progress.value = 0;
+                }
+            }
+        }
+
+        const accuracyWindowReady = daily.family !== "accuracy_window"
+            || progress.windowAttempts >= daily.windowSize;
+        if(Number(progress.value || 0) >= daily.target && accuracyWindowReady){
+            progress.value = daily.target;
+            progress.completed = true;
+            progress.completedAt = now;
+            result.completedNow = true;
+        }
+        result.after = Number(progress.value || 0);
+        return result;
+    }
+
+    return {
+        FAMILY_ORDER,
+        MILESTONES,
+        localDateKey,
+        hash32,
+        isGraphQuestion,
+        conceptIdentity,
+        getAccessibleQuestions,
+        getEligibilityContext,
+        getEligibleFamilies,
+        getParameterOptions,
+        selectFamily,
+        resolveDaily,
+        createProgress,
+        applyProgress
+    };
+})();
+globalThis.MQDailyChallengesCore = DailyChallengesCore;
+
+// Labyrinth adapter: accepted events only; the canonical core above is unmodified.
+const DAILY_STORAGE_KEY = `${STORAGE_PREFIX}:daily:v1`;
+let dailyState = null, dailyRolloverTimer = null, lastDailyEvent = null;
+const FACULTY_MODE_REQUIREMENTS = {
+    standard:['easy','medium','hard','easyBoss','mediumBoss','finalBoss'],
+    exam:['easy','medium','hard','easyBoss','mediumBoss','finalBoss'],
+    score:['easy','medium','hard','easyBoss','mediumBoss','finalBoss'],
+    timed:['easy','medium','hard'],unlimited:['easy','medium','hard'],quiz:['easy','medium','hard'],
+    legendary:['legendary','legendaryBoss'],trialGraph:[],fadingFortune:[],riskReward:[]
+};
+
+function dailyChallengesAreEnabled(){
+    return FACULTY_COMPOSITION_CONFIG.dailyChallengesEnabled !== false;
+}
+
+function readDailyState(){
+    try {
+        const raw = localStorage.getItem(DAILY_STORAGE_KEY);
+        return raw ? JSON.parse(raw) : null;
+    } catch(error){
+        console.warn("Daily task state could not be read:", error);
+        return null;
+    }
+}
+
+function persistDailyState(){
+    if(!dailyState) return;
+    try {
+        localStorage.setItem(DAILY_STORAGE_KEY, JSON.stringify(dailyState));
+    } catch(error){
+        console.warn("Daily task state could not be saved:", error);
+    }
+}
+
+function getDailyQuestIdentity(){
+    return FACULTY_COMPOSITION_CONFIG.compositionFingerprint
+        || FACULTY_COMPOSITION_CONFIG.compositionId
+        || FACULTY_COMPOSITION_CONFIG.slug
+        || FACULTY_COMPOSITION_CONFIG.title
+        || "mastery-quest";
+}
+
+function getDailyEligibility(){
+    const supportedModes = (FACULTY_COMPOSITION_CONFIG.supportedModes || [])
+        .filter(mode => FACULTY_MODE_REQUIREMENTS[mode]);
+    const eligibilityBanks = {...questionBanks};
+    const eligibilityRequirements = {...FACULTY_MODE_REQUIREMENTS};
+    if(supportedModes.includes("trialGraph") && typeof getTrialGraphCandidates === "function"){
+        eligibilityBanks.trialGraph = getTrialGraphCandidates();
+        eligibilityRequirements.trialGraph = ["trialGraph"];
+    }
+    if(supportedModes.includes("fadingFortune") && typeof getFadingFortuneCandidates === "function"){
+        eligibilityBanks.fadingFortune = getFadingFortuneCandidates();
+        eligibilityRequirements.fadingFortune = ["fadingFortune"];
+    }
+    if(supportedModes.includes("riskReward") && typeof getRiskRewardCandidates === "function"){
+        eligibilityBanks.riskReward = getRiskRewardCandidates();
+        eligibilityRequirements.riskReward = ["riskReward"];
+    }
+    const context = DailyChallengesCore.getEligibilityContext(
+        eligibilityBanks,
+        supportedModes,
+        eligibilityRequirements
+    );
+    return {context, families:DailyChallengesCore.getEligibleFamilies(context)};
+}
+
+function normalizeDailyState(stored){
+    const creditedDates = Array.isArray(stored?.creditedDates)
+        ? [...new Set(stored.creditedDates.map(String))]
+        : [];
+    return {
+        version:1,
+        totalCompleted:Math.max(Number(stored?.totalCompleted || 0), creditedDates.length),
+        creditedDates,
+        familyHistory:Array.isArray(stored?.familyHistory) ? stored.familyHistory.slice(-8) : [],
+        today:stored?.today || null
+    };
+}
+
+function scheduleDailyRollover(now = new Date()){
+    if(dailyRolloverTimer) clearTimeout(dailyRolloverTimer);
+    const nextMidnight = new Date(now);
+    nextMidnight.setHours(24,0,0,100);
+    dailyRolloverTimer = setTimeout(() => initializeDailyChallenges(new Date()), Math.max(1000, nextMidnight - now));
+}
+
+function getNextDailyMilestone(total = 0){
+    return DailyChallengesCore.MILESTONES.find(value => value > total)
+        || DailyChallengesCore.MILESTONES[DailyChallengesCore.MILESTONES.length - 1];
+}
+
+function getDailyProgressText(daily = dailyState?.today){
+    if(!daily) return "";
+    const progress = daily.progress || DailyChallengesCore.createProgress();
+    if(daily.family === "accuracy_window" && !progress.completed){
+        return `${progress.windowCorrect}/${daily.target} · question ${progress.windowAttempts}/${daily.windowSize} · window ${progress.windowNumber}`;
+    }
+    return `${Math.min(Number(progress.value || 0), daily.target)} / ${daily.target}`;
+}
+
+function creditDailyCompletion(date){
+    if(dailyState.creditedDates.includes(date)) return false;
+    dailyState.creditedDates.push(date);
+    dailyState.totalCompleted = Number(dailyState.totalCompleted || 0) + 1;
+    return true;
+}
+
+function getDailyTelemetrySnapshot(overrides = {}){
+    const daily = dailyState?.today;
+    if(!daily) return overrides;
+    const progress = daily.progress || DailyChallengesCore.createProgress();
+    const completedAtMs = progress.completedAt ? Date.parse(progress.completedAt) : 0;
+    const startedAtMs = progress.startedAt ? Date.parse(progress.startedAt) : 0;
+    return {
+        dailyID:daily.id,
+        dailyDate:daily.date,
+        dailyFamily:daily.family,
+        dailyTarget:daily.target,
+        dailyWindowSize:daily.windowSize || 0,
+        dailyEligibleFamilies:(daily.eligibleFamilies || []).join("|"),
+        dailyProgressBefore:Number(progress.value || 0),
+        dailyProgressAfter:Number(progress.value || 0),
+        dailyWindowAttempt:Number(progress.windowNumber || 1),
+        dailyCompleted:progress.completed ? 1 : 0,
+        dailyCompletionTimestamp:progress.completedAt || "",
+        dailyAlreadyComplete:progress.completed ? 1 : 0,
+        dailyPostCompletionQuestions:Number(progress.postCompletionQuestions || 0),
+        dailyMsSinceCompletion:completedAtMs ? Math.max(0, Date.now() - completedAtMs) : 0,
+        dailyQuestionsToComplete:progress.completed ? Number(progress.qualifyingQuestions || 0) : 0,
+        dailyElapsedToCompleteMs:progress.completed && startedAtMs && completedAtMs ? Math.max(0, completedAtMs - startedAtMs) : 0,
+        dailyConcept:"",
+        ...overrides
+    };
+}
+
+function recordDailyGameplayEvent({correct,streak:currentStreak,question,timestamp = new Date().toISOString()}){
+    if(!dailyChallengesAreEnabled()) return {};
+    const today = DailyChallengesCore.localDateKey();
+    if(!dailyState?.today || dailyState.today.date !== today) initializeDailyChallenges();
+    const daily = dailyState?.today;
+    if(!daily) return {};
+    const concept = DailyChallengesCore.conceptIdentity(question);
+    const result = DailyChallengesCore.applyProgress(daily,daily.progress,{
+        correct,
+        streak:currentStreak,
+        isGraph:DailyChallengesCore.isGraphQuestion(question),
+        concept,
+        timestamp
+    });
+    daily.progress = result.progress;
+    let creditedNow = false;
+    if(result.completedNow){
+        creditedNow = creditDailyCompletion(daily.date);
+    }
+    persistDailyState();
+    updateDailyUI();
+
+    if(result.completedNow){
+        const total = Number(dailyState.totalCompleted || 0);
+        const nextMilestone = getNextDailyMilestone(total);
+        showDailyToast({
+            kicker:"Daily Complete",
+            title:daily.description,
+            progress:`${daily.target} / ${daily.target} · ${total} Dailies completed`,
+            copy:total >= DailyChallengesCore.MILESTONES.at(-1)
+                ? "All current milestones reached. Keep building your lifetime total."
+                : `Next milestone: ${nextMilestone}`,
+            complete:true
+        });
+    }
+
+    const completedAtMs = daily.progress.completedAt ? Date.parse(daily.progress.completedAt) : 0;
+    return getDailyTelemetrySnapshot({
+        dailyProgressBefore:result.before,
+        dailyProgressAfter:result.after,
+        dailyWindowAttempt:Number(result.windowAttemptBefore || daily.progress.windowNumber || 1),
+        dailyCompleted:daily.progress.completed ? 1 : 0,
+        dailyAlreadyComplete:result.alreadyComplete ? 1 : 0,
+        dailyPostCompletionQuestions:Number(daily.progress.postCompletionQuestions || 0),
+        dailyMsSinceCompletion:result.alreadyComplete && completedAtMs ? Math.max(0, Date.now() - completedAtMs) : 0,
+        dailyConcept:concept,
+        dailyCompletedNow:result.completedNow ? 1 : 0,
+        dailyCreditedNow:creditedNow ? 1 : 0,
+        dailyWindowFailed:result.windowFailed ? 1 : 0
+    });
+}
+
+function initializeDailyChallenges(now = new Date()){
+    const date = DailyChallengesCore.localDateKey(now);
+    dailyState = normalizeDailyState(readDailyState() || dailyState);
+    if(!dailyState.today || dailyState.today.date !== date){
+        const eligibility = getDailyEligibility();
+        const daily = DailyChallengesCore.resolveDaily({
+            identity:getDailyQuestIdentity(),date,eligibleFamilies:eligibility.families,
+            history:dailyState.familyHistory,context:eligibility.context
+        });
+        daily.progress = DailyChallengesCore.createProgress();
+        dailyState.today = daily;
+        dailyState.familyHistory = [...dailyState.familyHistory.filter(item=>item?.date!==date),{date,family:daily.family}].slice(-8);
+        persistDailyState();
+    }else dailyState.today.progress = {...DailyChallengesCore.createProgress(),...(dailyState.today.progress || {})};
+    updateDailyUI();scheduleDailyRollover(now);
+    return dailyState.today;
+}
+
+const dailyButton = document.getElementById('gameMenuDaily');
+const examWithheld = () => gameMode === 'exam' && !runEnding;
+let detailsOpen = false;
+function updateDailyUI(){
+    const daily=dailyState?.today;
+    dailyButton.hidden=!dailyChallengesAreEnabled() || !daily;
+    if(!daily)return;
+    dailyButton.textContent=examWithheld()?'Daily Task':daily.progress.completed?'Daily Task ✓':`Daily Task · ${Math.min(Number(daily.progress.value || 0),daily.target)}/${daily.target}`;
+    if(detailsOpen && document.getElementById('gameModalTitle').textContent==='Daily Task')renderDailyDetails();
+}
+function renderDailyDetails(){
+    const daily=dailyState.today, text=document.getElementById('gameModalText');
+    text.replaceChildren();
+    const line=(content,className)=>{const span=document.createElement('span');span.className=className;span.textContent=content;text.append(span);};
+    line(daily.description,'labyrinth-daily-title');
+    if(examWithheld()){
+        line('Progress is available after this assessment ends.','labyrinth-daily-meta');
+        return;
+    }
+    line(`${daily.progress.completed?'Complete':'In progress'} · ${getDailyProgressText(daily)}`,'labyrinth-daily-meta');
+    const bar=document.createElement('progress');bar.max=daily.target;bar.value=Math.min(Number(daily.progress.value || 0),daily.target);
+    bar.setAttribute('aria-label','Daily Task progress');text.append(bar);
+    const total=Number(dailyState.totalCompleted || 0),next=getNextDailyMilestone(total);
+    line(`Dailies completed: ${total}`,'labyrinth-daily-meta');
+    line(total>=DailyChallengesCore.MILESTONES.at(-1)?'All current milestones reached. Keep building your lifetime total.':`Next milestone: ${next}`,'labyrinth-daily-meta');
+}
+dailyButton.onclick=()=>{
+    closeGameModal();initializeDailyChallenges();detailsOpen=true;
+    showGameModal({title:'Daily Task',text:'',confirmText:'Back to Game Menu',cancelText:'Close',
+        onConfirm:()=>{detailsOpen=false;document.getElementById('returnMenuBtn').click();dailyButton.focus();},
+        onCancel:()=>{detailsOpen=false;}});
+    renderDailyDetails();window.MQAccessibility?.sync();
+};
+// Canonical adapters announce via toasts. Labyrinth keeps updates inside the menu,
+// avoiding question obstruction and any correctness-dependent Exam announcement.
+function showDailyToast(){}
+
+const sendAcceptedEvent=window.sendGameData;
+window.sendGameData=function(data={}){
+    const result=sendAcceptedEvent.apply(this,arguments);
+    if(data.event==='question' && isFacultyModeSupported(gameMode)){
+        try{
+            // Exam scoreResponse temporarily restores the committed question here.
+            lastDailyEvent=recordDailyGameplayEvent({correct:Boolean(Number(data.correct)),streak:Number(data.streak || 0),question:currentQuestion});
+        }catch(error){console.warn('Daily progress unavailable',error);}
+    }
+    return result;
+};
+// Match Managerial's legacy integration: existing question events stay untouched.
+// No extra event IDs/RNG calls, unsupported CSV columns, or telemetry networking.
+window.MQLabyrinthDaily={refresh:initializeDailyChallenges,getEligibility:getDailyEligibility,
+    getState:()=>JSON.parse(JSON.stringify(dailyState)),
+    getLastEvent:()=>lastDailyEvent?{...lastDailyEvent}:null};
+initializeDailyChallenges();
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)initializeDailyChallenges();});
+document.addEventListener('focusin',()=>{
+    // Terminal assessment progress becomes visible on the next menu interaction.
+    if(document.activeElement===dailyButton)updateDailyUI();
+});
+
+})();
+</script>
 </body>
 </html>

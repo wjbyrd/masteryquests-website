@@ -1,6 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "masteryquests-website",
+  "preview_urls": true,
   "routes": [
     { "pattern": "masteryquests.org", "zone_name": "masteryquests.org", "custom_domain": true }
   ],
