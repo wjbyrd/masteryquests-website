@@ -1,5 +1,6 @@
 // Preview refinements: real published graphs, UI and approved-baseline comparisons.
 import fs from 'node:fs';
+import {start,withoutIntroductionIntegration} from './test-start.mjs';
 import path from 'node:path';
 import vm from 'node:vm';
 import assert from 'node:assert/strict';
@@ -7,7 +8,7 @@ import {execFileSync} from 'node:child_process';
 import {createHash} from 'node:crypto';
 import {fn} from '../economic_realm_engine/source.mjs';
 process.env.MQ_A11Y_OUT ||= 'tmp/accessibility_cleanup/labyrinth-final-alignment/stage-1';
-const {pw,serve,isolated,start,scan}=await import('../accessibility_cleanup/support.mjs');
+const {pw,serve,isolated,scan}=await import('../accessibility_cleanup/support.mjs');
 const out=path.resolve(process.env.MQ_A11Y_OUT),base='0ff47257';
 const dir='play/micro-domains/labyrinth-of-choice',htmlFile=dir+'/index.html',bankFile=dir+'/labyrinth_of_choice_question_bank_student.js';
 const oldText=file=>execFileSync('git',['show',`${base}:${file}`],{encoding:'utf8',maxBuffer:5e6}).replace(/\r\n/g,'\n');
@@ -15,7 +16,7 @@ const html=fs.readFileSync(htmlFile,'utf8').replace(/\r\n/g,'\n'),oldHTML=oldTex
 function bank(source){const c={};vm.createContext(c);vm.runInContext(source+'\nthis.result={bank:questionBank,metadata:typeof questionAssetMetadata===\'undefined\'?{}:questionAssetMetadata};',c);return JSON.parse(JSON.stringify(c.result));}
 const current=bank(bankText),graphQuestions=[];function walk(value){if(!value||typeof value!=='object')return;if(value.image)graphQuestions.push(value);for(const v of Object.values(value))if(v&&typeof v==='object')walk(v);}walk(current.bank);assert.equal(graphQuestions.length,90);assert.equal(Object.keys(current.metadata).length,21);assert.equal(bankText,oldBankText);for(const image of Object.keys(current.metadata))assert(fs.readFileSync(dir+'/'+image).equals(execFileSync('git',['show',`${base}:${dir}/${image}`],{maxBuffer:5e6})));
 const registry=/(\/\* RELEASE REGISTRY \*\/ )(\{[^\n]+\})(\);)/;
-const prefix=t=>t.slice(0,t.indexOf('<style id="labyrinth-exam-styles">')).replace(registry,'REGISTRY').replace(/(<img src="sovereign\.webp" class="bossIcon principalGlow(?: principal-dialogue-img)?") alt="The Sovereign"/g,'$1');assert.equal(prefix(html),prefix(oldHTML));
+const prefix=t=>withoutIntroductionIntegration(t.slice(0,t.indexOf('<style id="labyrinth-exam-styles">'))).replace(registry,'REGISTRY').replace(/(<img src="sovereign\.webp" class="bossIcon principalGlow(?: principal-dialogue-img)?") alt="The Sovereign"/g,'$1');assert.equal(prefix(html),prefix(oldHTML));
 const script=(t,id)=>t.match(new RegExp('<script id="'+id+'">([\\s\\S]*?)<\/script>'))[1];
 assert.equal(script(html,'labyrinth-daily'),script(oldHTML,'labyrinth-daily'));
 const gameplay=t=>t.slice(t.indexOf('    function navigate(target)')).replaceAll("byId('labyrinthExamNavigation')?.remove()",'clearExamPresentation()');
