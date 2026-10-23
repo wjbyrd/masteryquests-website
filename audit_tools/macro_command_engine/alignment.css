@@ -21,3 +21,11 @@ body #returnMenuBtn.return-menu-btn {
   padding:11px 16px!important;font-family:inherit;font-size:16px!important;
   font-weight:400;line-height:1.25;
 }
+/* Cost Directive's understated instruction within the existing question area. */
+body[data-macro-mode="exam"] #message {
+  font-size:16px;font-weight:400;letter-spacing:0;line-height:1.2;
+  text-shadow:none;margin-top:10px;
+}
+body[data-macro-mode="exam"] #mazeTrack .maze-box {
+  box-sizing:border-box;margin:0;padding:0;transform:none;
+}

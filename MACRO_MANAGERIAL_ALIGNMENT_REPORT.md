@@ -50,3 +50,11 @@ Pending subsequent gates. All generated evidence stays under `tmp/macro-manageri
 Confirmed fixes: Sound precedes Decorative Motion; every utility has the same width, spacing and stable hover geometry; Game Menu launcher matches the reference 44px minimum height. Existing Sound, Motion, Escape and conditional Timed review controls retained. All four games pass `gate2.mjs` at 1440/820/390/320 (`gate2-results.json`), with real after screenshots. Visually inspected desktop and narrow mobile captures.
 
 The baseline synchronization failure was exclusively mixed CRLF/LF in imported resource fragments (97 CR bytes in National Engine's otherwise LF-generated output). Normalized current/generated documents were identical. The generator now normalizes its complete output; `sync.mjs --check` passes. No gameplay correction was bundled into that fix.
+
+### Gate 3 — Exam and introductions
+
+All four games pass `gate3.mjs` (`gate3-results.json`). Fresh Standard starts show the authored guide; returning starts and saved-run resume suppress it as designed. Replay preserves question/options, mode, room, attempts, score/streak, adaptive memory, artifacts, telemetry count and Exam drafts/revisions. Nine saved responses enable the existing checkpoint tile; commitment counts nine attempts exactly once.
+
+Macro-only presentation changes: neutral guardian dialogue in Exam; understated instructional sentence; removal of inherited button margins so the existing grid tiles align in exactly three rows. The grid itself and assessment engine were retained. Guardian images/names and non-Exam authored challenge lines are unchanged.
+
+Daily computations, persistence and event records continue normally. While Exam is active, its menu uses a neutral Daily Task label/details and suppresses progress/completion toasts. Progress is available after ending Exam. Active-run CSV download is deferred until Exam ends because retained draft revision-direction fields could reveal correctness; completed-run CSV rows and headers remain unchanged. This addresses shared Composer presentation dependencies locally, without editing shared sources.
