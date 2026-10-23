@@ -81,3 +81,21 @@ node audit_tools/labyrinth_alignment/update-fingerprint.mjs --check
 ```
 
 The two requested integrations are confined to Labyrinth. Earlier audit findings in Composer/Economic/Macro and older telemetry variants remain outside this task; they were not silently propagated into Labyrinth. The guide seen flag follows browser storage, so another device/profile (or cleared storage) shows the introduction again. Manual screen-reader certification and the owner's Cloudflare preview inspection remain external follow-ups. No push, merge or deployment was performed; production release remains the owner's decision.
+
+## Follow-up — Exam guardian introductions
+
+At the owner's request, Exam now presents the Warden, Decomposer and Sovereign once at checkpoints I, II and III. Baseline for this follow-up: `fd6db1d1`. Each reveal uses the guardian's existing local portrait and name, the established introduction dialog styling, and Enter the Checkpoint / Skip controls. It contains only neutral assessment instructions; it does not import adaptive performance commentary or the Standard Sovereign combat story.
+
+The existing checkpoint tile still commits the nine responses exactly once. The reveal then blocks answer submission and question loading until dismissed. Continue, Skip and Escape all start the same existing checkpoint question selection path. Reading consumes no RNG, changes no mastery/score/artifacts, and creates no additional telemetry event. The first guardian question's response timer begins after dismissal; the assessment's existing overall elapsed wall clock continues during reading. The reveal does not recur between its three responses. New-run and mode-exit cleanup invalidate any stale dialog callback.
+
+Validation: a complete 36-response real-bank Exam matches the approved baseline across 19 protected snapshots, including question/options, RNG counts, scoring, mastery, Daily state, report, checkpoint/artifact state and local events. There remain three section commits, 36 accepted question events, one Exam completion and exactly 70 CSV columns. The existing six Exam privacy/commitment/report/graph checks pass. All four introduction viewport checks (1440/820/390/320) pass axe, image loading, keyboard focus containment, Escape, text enlargement and a 20-second reading period. Stale callbacks cannot restart a question after leaving Exam, and a new assessment gets new reveals. Standard's existing guardian sequence and all nine non-Exam modes remain protected; their focused regressions pass. The Archivist lifecycle, question bank, Daily logic and Standard story were not modified.
+
+Artifacts remain hidden in Exam play/results, and are visible again in Standard. Evidence is ignored under `tmp/accessibility_cleanup/labyrinth-final-alignment/guardian-introductions/`; `final-results.json` combines the complete-assessment/lifecycle run with the final accessibility checks. The source-protection assertion compares the full HTML against the baseline except the reviewed dialog, its narrowly scoped lifecycle hooks, shared introduction CSS selectors and release fingerprint.
+
+![Warden introduction](tmp/accessibility_cleanup/labyrinth-final-alignment/guardian-introductions/guardian-10-viewport.png)
+
+![Decomposer introduction](tmp/accessibility_cleanup/labyrinth-final-alignment/guardian-introductions/guardian-20-viewport.png)
+
+![Sovereign introduction](tmp/accessibility_cleanup/labyrinth-final-alignment/guardian-introductions/guardian-30-viewport.png)
+
+No push, merge, deployment, Cloudflare change or telemetry migration is included.

@@ -35,6 +35,7 @@ async function next(p){
  await p.clock.runFor(3500);await p.waitForTimeout(20);
 }
 async function answer(p,want){
+ if(await p.locator('#labyrinthExamGuardianContinue').isVisible())await p.locator('#labyrinthExamGuardianContinue').click();
  await p.clock.runFor(6500);
  if(await p.evaluate(()=>gameMode==='riskReward'&&!riskRewardWagerLocked))await p.evaluate(()=>lockRiskRewardWager(.1));
  const index=await p.evaluate(async want=>{for(let i=0;i<currentQuestion.options.length;i++)if(await isQuestionAnswerCorrect(currentQuestion,i)===want)return i;throw Error('No matching answer');},want);
