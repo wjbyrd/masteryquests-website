@@ -9296,12 +9296,30 @@ const embeddedQuestionAssets = {
   "pe_ae.webp": "pe_ae.webp"
 };
 const questionAssetMetadata = {
-  "is_curves.webp": {},
-  "lm_curves.webp": {},
-  "is_lm_curves.webp": {},
-  "is_lm_ad.webp": {},
-  "is_lm_lras.webp": {},
-  "pe_ae.webp": {}
+  "is_curves.webp": {
+    "imageAlt": "Three downward IS curves with points A through G on labeled income and interest-rate guides.",
+    "graphDescription": "The vertical axis is r and the horizontal axis Y. Three parallel downward lines are black IS1 on the left, red IS2 in the middle, and blue IS3 on the right. Dashed guides mark r1 above r2 above r3 and Y1 through Y4 from left to right. On IS1, A = (Y1, r1), D = (Y2, r2), and G = (Y3, r3). On IS2, B = (Y2, r1) and E = (Y3, r2). On IS3, C = (Y3, r1) and F = (Y4, r2). Coordinates are symbolic, with no numerical scale or arrows."
+  },
+  "lm_curves.webp": {
+    "imageAlt": "Three upward LM curves with points A through F.",
+    "graphDescription": "The vertical axis is r and the horizontal axis Y. Three parallel upward lines are black LM1 on the left, red LM2 in the middle, and blue LM3 on the right. At the same Y, LM1 is above LM2, which is above LM3. Dashed guides mark r1 above r2 above r3 and Y1 through Y4 from left to right. A = (Y1, r2) and B = (Y2, r1) lie on LM1. E = (Y2, r3), D = (Y3, r2), and C = (Y4, r1) lie on LM2. F = (Y4, r3) lies on LM3. No numerical values or arrows are given."
+  },
+  "is_lm_curves.webp": {
+    "imageAlt": "IS-LM grid with three IS lines, three LM lines, and eight labeled intersections.",
+    "graphDescription": "The vertical axis is r and the horizontal axis Y. Downward lines IS1, IS2, IS3 are black, red, and blue, respectively, ordered left to right. Upward lines LM1, LM2, LM3 use the same color order and are also ordered left to right. Dashed guides mark r1, r2, r3, r4 from top to bottom and Y1 through Y5 from left to right. Marked intersections are A = (Y1, r2), IS1 with LM1; B = (Y2, r1), IS2 with LM1; C = (Y4, r1), IS3 with LM2; D = (Y3, r2), IS2 with LM2; E = (Y5, r2), IS3 with LM3; F = (Y2, r3), IS1 with LM2; G = (Y4, r3), IS2 with LM3; and H = (Y3, r4), IS1 with LM3. There are no numerical values or arrows."
+  },
+  "is_lm_ad.webp": {
+    "imageAlt": "Two panels showing an IS-LM intersection grid and three AD curves with numbered points.",
+    "graphDescription": "Left panel: The vertical axis is r and the horizontal axis Y. Downward lines IS1, IS2, IS3 are black, red, and blue, respectively, ordered left to right. Upward lines LM1, LM2, LM3 use the same color order and are also ordered left to right. Dashed guides mark r1, r2, r3, r4 from top to bottom and Y1 through Y5 from left to right. Marked intersections are A = (Y1, r2), IS1 with LM1; B = (Y2, r1), IS2 with LM1; C = (Y4, r1), IS3 with LM2; D = (Y3, r2), IS2 with LM2; E = (Y5, r2), IS3 with LM3; F = (Y2, r3), IS1 with LM2; G = (Y4, r3), IS2 with LM3; and H = (Y3, r4), IS1 with LM3. Right panel: the vertical axis is P and the horizontal axis Y. Three parallel downward lines are black AD1 on the left, red AD2 in the middle, and blue AD3 on the right. Dashed guides mark P1 above P2 above P3 and Y1 through Y4 from left to right. AD1 contains point 1 at (Y1, P1), point 4 at (Y2, P2), and point 7 at (Y3, P3). AD2 contains point 2 at (Y2, P1) and point 5 at (Y3, P2). AD3 contains point 3 at (Y3, P1) and point 6 at (Y4, P2). Both panels use symbolic labels without numerical units or arrows."
+  },
+  "is_lm_lras.webp": {
+    "imageAlt": "Two panels showing IS-LM with LRAS and AD with three horizontal SRAS lines.",
+    "graphDescription": "Left panel: the vertical axis is r and the horizontal axis Y. Black IS1 and red IS2 slope downward, with IS2 to the right. Black LM1 and red LM2 slope upward, with LM2 to the right. LRAS is vertical at Y2. A = (Y2, r1) is IS1 with LM2; B = (Y1, r2) is IS1 with LM1; C = (Y3, r2) is IS2 with LM2; D = (Y2, r3) is IS2 with LM1. Dashed guides mark r3 above r2 above r1 and Y1 left of Y2 left of Y3. Right panel: the vertical axis is P and the horizontal axis Y. A downward AD line crosses upper purple SRAS3 at A with output Y1, middle black SRAS2 at B = (Y2, P2), and lower red SRAS1 at C = (Y3, P1). LRAS is vertical through B at Y2. The price level at A is not labeled on the axis. Vertical dashed guides mark Y1 and Y3. There are no numerical values or arrows."
+  },
+  "pe_ae.webp": {
+    "imageAlt": "Expenditure diagram with lines AE, PE1, and PE2 and points A through E.",
+    "graphDescription": "The vertical axis is PE and the horizontal axis Y. Blue AE is a steep upward line through the origin. Black PE1 and red PE2 are shallower parallel upward lines, with PE2 above PE1. Points A, B, C, D, and E all lie on AE: A = (Y1, PE1), B = (Y2, PE2), C = (Y3, PE3), D = (Y4, PE4), and E = (Y5, PE5), where PE1 through PE5 here denote the vertical-axis levels. B is also the intersection with the black PE1 line; D is also the intersection with the red PE2 line. Dashed guides connect the five points to the axes. Both axis levels and curve names use PE labels; no numerical values are printed."
+  }
 };
 const trialGraphQuestionIds = [];
 const fadingFortuneQuestionIds = [

@@ -5,6 +5,7 @@ import {createRequire} from 'node:module';
 import {games, templatePath, declaration, fn, value} from './source.mjs';
 import {activeProfile} from './active-profile.mjs';
 import {alignMacroPresentation} from './alignment.mjs';
+import {buildGraphMetadata} from './graph-metadata.mjs';
 const require=createRequire(import.meta.url);
 const core=require('../../build/faculty-build-composer/composer-core.js');
 const profiles=JSON.parse(fs.readFileSync('audit_tools/macro_command_engine/profiles.json','utf8'));
@@ -39,7 +40,7 @@ for(const game of games){
   // Published question scripts remain the sole question source. Supplemental maps
   // in those scripts execute unchanged, including their direct-skill backfills.
   const allQuestions=[...Object.values(banks).flat(),...['microSkillRepairPools','microSkillBridgePools','skillRepairSeedPools'].flatMap(k=>vm.runInContext(`typeof ${k}==='undefined'?[]:Object.values(${k}).flat()`,context))];
-  const metadata=Object.fromEntries(allQuestions.filter(q=>q.image).map(q=>[q.image,{imageAlt:q.imageAlt,graphDescription:q.graphDescription||q.imageAlt}]));
+  const metadata=buildGraphMetadata(game,allQuestions,base);
   const imagePaths=[...new Set(allQuestions.map(q=>q.image).filter(Boolean))];
   const missingImages=imagePaths.filter(image=>!fs.existsSync(`${base}/${image}`));
   assert.deepEqual(missingImages,[],`${game}: missing question images`);

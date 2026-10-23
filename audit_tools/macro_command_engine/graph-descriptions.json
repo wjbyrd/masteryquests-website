@@ -1,0 +1,178 @@
+{
+  "description": "Visually verified Macro graph metadata, keyed by game and exact published asset path. Hashes bind descriptions to inspected image bytes. No gameplay fields are changed.",
+  "games": {
+    "national-engine": {
+      "totalproduct.webp": {
+        "sha256": "1267e1d31fad35ba9c1cd62f152bf33b243e1ccadb1679319a8ec25027ebee9e",
+        "imageAlt": "Total product curve TP plotted against labor, with dashed output guides.",
+        "graphDescription": "The horizontal axis is Labor, labeled 1 through 7, and the vertical axis is Output. The blue curve TP starts at the origin, rises, flattens near labor 5, and then falls. Dashed guides show labor-output pairs (1, 15), (2, 25), (3, 32), (4, 38), (5, 40), (6, 38), and (7, 32). The highest marked output is 40 at labor 5. No other units or curves are shown."
+      },
+      "marginalproduct.webp": {
+        "sha256": "0543e3c5bba0a33099ac04a5c2761a05de7eacf93a6db51a4bfc3f78acee0cd1",
+        "imageAlt": "Marginal product curve MP with labor values and dashed output guides.",
+        "graphDescription": "The horizontal axis is Labor, labeled 1 through 7; the vertical axis is labeled Output. The blue line MP rises sharply from the origin to labor 1 and output 15, then slopes downward. Dashed guides mark (1, 15), (2, 10), (3, 8), (4, 6), and (5, 2). The descending line crosses the horizontal axis between labor 5 and 6 and continues below it, ending near labor 6. No exact zero-crossing or negative output value is labeled."
+      },
+      "consumptionfunction.webp": {
+        "sha256": "46ce8ca852cc90bb832ac2402fbcb0830f95c379852b1d580098748d67b36c6e",
+        "imageAlt": "Three upward-sloping consumption lines C1, C2, and C3 against disposable income.",
+        "graphDescription": "The vertical axis is Consumption and the horizontal axis is Disposable Income. Three approximately parallel straight lines slope upward. Blue C2 is highest, orange C1 is in the middle, and green C3 is lowest at the same disposable income. All three begin above the horizontal axis. There are no numerical scales, marked points, arrows, or dashed guides."
+      },
+      "investmentfunction.webp": {
+        "sha256": "51b18dca0127e65421c2e94d5ee992f87dd43b01fcc9222f8d8791b51b620cd9",
+        "imageAlt": "Two downward-sloping investment curves with points A through D at two interest rates.",
+        "graphDescription": "The vertical axis is Interest Rate and the horizontal axis is Investment. Orange I1 slopes downward; blue I2 is parallel and to its right. The upper dashed horizontal guide is r2 and the lower is r1. Investment labels increase from Q1 to Q4. Point A is on I1 at (Q1, r2), C is on I1 at (Q2, r1), B is on I2 at (Q3, r2), and D is on I2 at (Q4, r1). Vertical dashed guides connect each point to its investment label. These are symbolic labels, not numerical values."
+      },
+      "loanablefunds.webp": {
+        "sha256": "9669aa017c1144cc0c690a95105541168d684cb76ec53ad962121df410b68d45",
+        "imageAlt": "Loanable-funds diagram with two vertical saving lines, two investment curves, and points A through D.",
+        "graphDescription": "The vertical axis is Interest Rate and the horizontal axis is Investment. S1 is a vertical line at Q1; S2 is vertical at the larger quantity Q2. Orange I1 and blue I2 slope downward, with I2 above and to the right of I1. Point A is the intersection of S1 and I2, above r2; its interest-rate level is not labeled. C is at S1 and I1, at (Q1, r2). B is at S2 and I2, at (Q2, r2). D is at S2 and I1, at (Q2, r1). Dashed horizontal guides mark r2 above r1. No numerical scale is given."
+      },
+      "minimumwage.webp": {
+        "sha256": "179febd886ebf08f46a8bb112aeb08d7a050aa0d02fa9846679289b6f539aa9c",
+        "imageAlt": "Labor supply and demand with wages from $8 to $20 and worker quantities from 1000 to 3000.",
+        "graphDescription": "The vertical axis is Wage and the horizontal axis is Quantity of Workers. Red S_L slopes upward and blue D_L slopes downward. They cross at 2000 workers and $13. Dashed guides mark worker quantities 1000, 1500, 2000, 2500, and 3000, and wages $8, $11, $13, $15, and $20. On S_L, the guides show (1000, $8), (1500, $11), (2000, $13), (2500, $15), and (3000, $20). On D_L, they show (1000, $20), (1500, $15), (2000, $13), (2500, $11), and (3000, $8). No separate wage-floor line is labeled."
+      }
+    },
+    "mint-ash-gold": {
+      "solowproductionfunction.webp": {
+        "sha256": "b56a5257a08eabfbef1995f1f04d1f738f9a4ad96fa0fcf608b9d9021a11b56b",
+        "imageAlt": "Two rising, flattening Solow curves, with points c and d at the same capital coordinate e.",
+        "graphDescription": "The vertical axis is labeled y/l and the horizontal axis k/l. Two curves begin at the origin, rise, and become flatter. The upper dark curve is labeled y, f(k); the lower red curve is labeled s, sf(k). At horizontal coordinate e, point c lies on the upper curve at vertical level a, and point d lies on the lower curve at level b. Dashed horizontal guides run from a to c and from b to d; a vertical dashed guide connects both points to e. No numerical scales are printed."
+      },
+      "steadystate.webp": {
+        "sha256": "d5c10e429956351bca8c36764d5fec8e0eba082694772fe40c1f0bad8881e2dd",
+        "imageAlt": "Solow investment and depreciation curves with points a, b, c, and d and capital labels k1 through k3.",
+        "graphDescription": "The vertical axis is Investment and Depreciation; the horizontal axis is Capital per Worker. A straight rising blue line d(k) and a rising, flattening dark curve sf(k) start at the origin. They intersect at point c, at k2 and dk3. At k1, point a is on sf(k) at dk2, while point b is on d(k) at the lower level dk1. Point d is a separate marked point at (k2, dk1), below both curves there. At k3, an unlabeled red point on d(k) is at dk4, above sf(k). Dashed guides connect marked levels and coordinates. From left to right the capital labels are k1, k2, k3; from bottom to top the vertical labels are dk1, dk2, dk3, dk4. No numerical values are supplied."
+      },
+      "steadystatechanges.webp": {
+        "sha256": "033446ce3055df92fb1b75e38e05891d89c48ba23f17f56d1781769ff3d2a126",
+        "imageAlt": "Three Solow saving curves meeting depreciation at A, B, and C.",
+        "graphDescription": "The vertical axis is Investment and Depreciation; the horizontal axis is Capital per Worker. Blue d(k) is a straight rising line from the origin. Three rising, flattening curves also start at the origin: red sf(k)1 is lowest, dark sf(k)2 is in the middle, and green sf(k)3 is highest. They intersect d(k) at A = (k1, dk1), B = (k2, dk2), and C = (k3, dk3), respectively. Dashed guides connect each intersection to both axes. Capital increases from k1 to k3 and vertical levels increase from dk1 to dk3. The labels are symbolic; there are no directional arrows or numerical values."
+      },
+      "adsras.webp": {
+        "sha256": "8985de05069b23b5cbad7e246fa1609972a4b2283169d51c8c269921d741911f",
+        "imageAlt": "Three downward AD lines intersecting a horizontal SRAS line at price P1.",
+        "graphDescription": "The vertical axis is P and the horizontal axis Y. SRAS is horizontal at P1. Three parallel downward-sloping lines cross it: green AD2 at Y2, black AD1 at Y1, and red AD3 at Y3. The horizontal-axis order is Y2, Y1, Y3 from left to right. Black dots mark the three intersections, with dashed vertical guides to the corresponding Y labels. There are no numerical values or arrows."
+      },
+      "adone.webp": {
+        "sha256": "9868722d4675564cf51ec055cc1390ab98ef4fc01e0416c5fa31c940cc4d5b80",
+        "imageAlt": "A single downward aggregate-demand curve with points A, B, and C.",
+        "graphDescription": "The vertical axis is P and the horizontal axis Y. The downward-sloping blue line AD contains A at (Y1, P1), B at (Y2, P2), and C at (Y3, P3). Dashed guides connect every point to both axes. Y1, Y2, Y3 run left to right, while P1, P2, P3 run top to bottom. No numerical prices or output values are printed."
+      },
+      "adtwo.webp": {
+        "sha256": "7cd12217688d36c4a6309a49af59b4f5a8e7c3803549f24c3d61ea1672ea9eb8",
+        "imageAlt": "Three downward AD curves with six marked points at P1 and P2.",
+        "graphDescription": "The vertical axis is P and the horizontal axis Y. Green AD3 is the leftmost downward-sloping line, black AD1 is in the middle, and red AD2 is rightmost. The upper dashed price guide is P1 and the lower is P2. At P1, A lies on AD3 at Y1, B on AD1 at Y2, and C on AD2 at Y3. At P2, D lies on AD3 at Y2, E on AD1 at Y3, and F on AD2 at Y4. Vertical dashed guides mark Y1 through Y4 in increasing order. No numerical scales or direction arrows are shown."
+      },
+      "demandshock.webp": {
+        "sha256": "8d614c70ac226c93633a94fc064660973dfc218bd89cd71f110428e40c8cc552",
+        "imageAlt": "Three AD curves crossing horizontal SRAS and vertical LRAS.",
+        "graphDescription": "The vertical axis is P and the horizontal axis Y. LRAS is vertical at Y1, and SRAS is horizontal at P1. Black AD1, red AD2, and green AD3 slope downward; AD2 is right of AD1 and AD3 is left of it. AD1 crosses both supply lines at (Y1, P1). AD2 has marked crossings at (Y2, P1) on SRAS and (Y1, P2) on LRAS. AD3 has marked crossings at (Y3, P1) on SRAS and (Y1, P3) on LRAS. Y3 is left of Y1, which is left of Y2; P2 is above P1, which is above P3. Dashed guides connect these symbolic coordinates. The marked dots have no letter labels."
+      },
+      "adlras.webp": {
+        "sha256": "51ae4173d32cf8da93e20939cf0d43adb8ce0f7b3d0ff70a04ede99c69e6202e",
+        "imageAlt": "Vertical LRAS intersecting three aggregate-demand lines at A, B, and C.",
+        "graphDescription": "The vertical axis is P and the horizontal axis Y. LRAS is a vertical line at Y1. Three parallel downward-sloping curves cross it: red AD3 at A and the highest labeled level P3; blue AD1 at B and middle level P1; green AD2 at C and lowest level P2. Dashed horizontal guides connect the intersections to the price labels. All three points have the same horizontal coordinate Y1. No numerical values or arrows are given."
+      },
+      "supplyshock.webp": {
+        "sha256": "c1429a75f0f28e78c889dd8c2d22585dd9bf1b05c8a3c727a6f587c21e07b299",
+        "imageAlt": "Three horizontal SRAS lines, vertical LRAS, and one downward AD line with points A through E.",
+        "graphDescription": "The vertical axis is P and the horizontal axis Y. LRAS is vertical at Y1. SRAS2 is the upper red horizontal line at P2, SRAS1 the middle black line at P1, and SRAS3 the lower green line at P3. The downward black AD line intersects them at C = (Y2, P2), A = (Y1, P1), and E = (Y3, P3). B marks (Y1, P2) on LRAS and SRAS2; D marks (Y1, P3) on LRAS and SRAS3. Dashed vertical guides mark Y2 to the left of Y1 and Y3 to the right. No numerical values or directional arrows are shown."
+      },
+      "shockpluspolicy.webp": {
+        "sha256": "3508c7abe40b83bb721b85441f285d9929fc2b74d19010d54d09127f1aac6d8f",
+        "imageAlt": "Two AD lines and two horizontal SRAS lines with vertical LRAS and points A through D.",
+        "graphDescription": "The vertical axis is P and the horizontal axis Y. LRAS is vertical at Y1. Black SRAS1 is horizontal at P1; red SRAS2 is horizontal at the higher level P2. Black AD1 slopes downward; red AD2 is parallel and to its right. A = (Y1, P1) is on AD1 and SRAS1. B = (Y3, P1) is on AD2 and SRAS1. C = (Y2, P2) is on AD1 and SRAS2. D = (Y1, P2) is on AD2, SRAS2, and LRAS. Dashed vertical guides mark Y2 left of Y1 and Y3 right of Y1. No numerical values, arrows, or timeline are shown."
+      }
+    },
+    "command-nexus": {
+      "is_curves.webp": {
+        "sha256": "a96520b6d398047a2e370be1f9f7ef0bc0012d5457019bb97d3ccdd4fe151c68",
+        "imageAlt": "Three downward IS curves with points A through G on labeled income and interest-rate guides.",
+        "graphDescription": "The vertical axis is r and the horizontal axis Y. Three parallel downward lines are black IS1 on the left, red IS2 in the middle, and blue IS3 on the right. Dashed guides mark r1 above r2 above r3 and Y1 through Y4 from left to right. On IS1, A = (Y1, r1), D = (Y2, r2), and G = (Y3, r3). On IS2, B = (Y2, r1) and E = (Y3, r2). On IS3, C = (Y3, r1) and F = (Y4, r2). Coordinates are symbolic, with no numerical scale or arrows."
+      },
+      "lm_curves.webp": {
+        "sha256": "14f33a6dd4fdf932f26581a245527c917a875ace665cdec9854ea3961493c085",
+        "imageAlt": "Three upward LM curves with points A through F.",
+        "graphDescription": "The vertical axis is r and the horizontal axis Y. Three parallel upward lines are black LM1 on the left, red LM2 in the middle, and blue LM3 on the right. At the same Y, LM1 is above LM2, which is above LM3. Dashed guides mark r1 above r2 above r3 and Y1 through Y4 from left to right. A = (Y1, r2) and B = (Y2, r1) lie on LM1. E = (Y2, r3), D = (Y3, r2), and C = (Y4, r1) lie on LM2. F = (Y4, r3) lies on LM3. No numerical values or arrows are given."
+      },
+      "is_lm_curves.webp": {
+        "sha256": "b8f17059cb4dca41a7868afc9a2f09e85f5ec326a15f655d3bd0751e33632df3",
+        "imageAlt": "IS-LM grid with three IS lines, three LM lines, and eight labeled intersections.",
+        "graphDescription": "The vertical axis is r and the horizontal axis Y. Downward lines IS1, IS2, IS3 are black, red, and blue, respectively, ordered left to right. Upward lines LM1, LM2, LM3 use the same color order and are also ordered left to right. Dashed guides mark r1, r2, r3, r4 from top to bottom and Y1 through Y5 from left to right. Marked intersections are A = (Y1, r2), IS1 with LM1; B = (Y2, r1), IS2 with LM1; C = (Y4, r1), IS3 with LM2; D = (Y3, r2), IS2 with LM2; E = (Y5, r2), IS3 with LM3; F = (Y2, r3), IS1 with LM2; G = (Y4, r3), IS2 with LM3; and H = (Y3, r4), IS1 with LM3. There are no numerical values or arrows."
+      },
+      "is_lm_ad.webp": {
+        "sha256": "275b028f880f50b648dd82a9e0ea24f66c0170dde7d10db3dd3deacc6854c5a0",
+        "imageAlt": "Two panels showing an IS-LM intersection grid and three AD curves with numbered points.",
+        "graphDescription": "Left panel: The vertical axis is r and the horizontal axis Y. Downward lines IS1, IS2, IS3 are black, red, and blue, respectively, ordered left to right. Upward lines LM1, LM2, LM3 use the same color order and are also ordered left to right. Dashed guides mark r1, r2, r3, r4 from top to bottom and Y1 through Y5 from left to right. Marked intersections are A = (Y1, r2), IS1 with LM1; B = (Y2, r1), IS2 with LM1; C = (Y4, r1), IS3 with LM2; D = (Y3, r2), IS2 with LM2; E = (Y5, r2), IS3 with LM3; F = (Y2, r3), IS1 with LM2; G = (Y4, r3), IS2 with LM3; and H = (Y3, r4), IS1 with LM3. Right panel: the vertical axis is P and the horizontal axis Y. Three parallel downward lines are black AD1 on the left, red AD2 in the middle, and blue AD3 on the right. Dashed guides mark P1 above P2 above P3 and Y1 through Y4 from left to right. AD1 contains point 1 at (Y1, P1), point 4 at (Y2, P2), and point 7 at (Y3, P3). AD2 contains point 2 at (Y2, P1) and point 5 at (Y3, P2). AD3 contains point 3 at (Y3, P1) and point 6 at (Y4, P2). Both panels use symbolic labels without numerical units or arrows."
+      },
+      "is_lm_lras.webp": {
+        "sha256": "add4f9644f9e4ae81c330cba8612aaa2457c8379c2cc328fdc62f3886f35bcfb",
+        "imageAlt": "Two panels showing IS-LM with LRAS and AD with three horizontal SRAS lines.",
+        "graphDescription": "Left panel: the vertical axis is r and the horizontal axis Y. Black IS1 and red IS2 slope downward, with IS2 to the right. Black LM1 and red LM2 slope upward, with LM2 to the right. LRAS is vertical at Y2. A = (Y2, r1) is IS1 with LM2; B = (Y1, r2) is IS1 with LM1; C = (Y3, r2) is IS2 with LM2; D = (Y2, r3) is IS2 with LM1. Dashed guides mark r3 above r2 above r1 and Y1 left of Y2 left of Y3. Right panel: the vertical axis is P and the horizontal axis Y. A downward AD line crosses upper purple SRAS3 at A with output Y1, middle black SRAS2 at B = (Y2, P2), and lower red SRAS1 at C = (Y3, P1). LRAS is vertical through B at Y2. The price level at A is not labeled on the axis. Vertical dashed guides mark Y1 and Y3. There are no numerical values or arrows."
+      },
+      "pe_ae.webp": {
+        "sha256": "478e080e3a8eaec32fe45f7c6d324ce1ef39bed064c06760ffeabc06f505b56c",
+        "imageAlt": "Expenditure diagram with lines AE, PE1, and PE2 and points A through E.",
+        "graphDescription": "The vertical axis is PE and the horizontal axis Y. Blue AE is a steep upward line through the origin. Black PE1 and red PE2 are shallower parallel upward lines, with PE2 above PE1. Points A, B, C, D, and E all lie on AE: A = (Y1, PE1), B = (Y2, PE2), C = (Y3, PE3), D = (Y4, PE4), and E = (Y5, PE5), where PE1 through PE5 here denote the vertical-axis levels. B is also the intersection with the black PE1 line; D is also the intersection with the red PE2 line. Dashed guides connect the five points to the axes. Both axis levels and curve names use PE labels; no numerical values are printed."
+      }
+    },
+    "exchange-citadel": {
+      "loanablefunds.png": {
+        "sha256": "a0abb04774c930b633253fabc8f99e4ba16c00a45ac6cf6cd455d3d4cc78c07d",
+        "imageAlt": "Open-economy saving and investment graph with seven points at three world interest-rate levels.",
+        "graphDescription": "The vertical axis is real interest rate, r, and the horizontal axis is Investment, Saving (I, S). A gray line I(r) slopes downward. A vertical line S stands at I2. Dashed guides mark r_w1 above r_w2 above r_w3 and I1, I2, I3 from left to right. Points are A = (I1, r_w1), B = (I2, r_w1), C = (I1, r_w2), D = (I2, r_w2), E = (I1, r_w3), F = (I2, r_w3), and G = (I3, r_w3). A, D, and G lie on I(r); B, D, and F lie on S. No numerical values are given."
+      },
+      "realexchangerates.png": {
+        "sha256": "a8b9f6ec8064dc4361dec1d6c477da803bea3cd8718ccc3de0dedde675d7759c",
+        "imageAlt": "Real-exchange-rate graph with a downward line, vertical S minus I, and points A through G.",
+        "graphDescription": "The vertical axis is real exchange rate, R, and the horizontal axis is Net Exports. An unlabeled gray line slopes downward; a vertical line labeled S - I stands at NX2. Dashed guides mark R1 above R2 above R3 and NX1, NX2, NX3 from left to right. Points are A = (NX1, R1), B = (NX2, R1), C = (NX1, R2), D = (NX2, R2), E = (NX1, R3), F = (NX2, R3), and G = (NX3, R3). A, D, and G lie on the downward line; B, D, and F lie on S - I. No numerical values or arrows are shown."
+      },
+      "impossibletrinity.png": {
+        "sha256": "7758a7d859e69b5e7de1da61ed294d511de575ff1b06a792ae855839370135cf",
+        "imageAlt": "Triangle with three policy-goal labels and sides numbered 1, 2, and 3.",
+        "graphDescription": "A purple triangle has Independent monetary policy above its top vertex, Fixed exchange rate beside its bottom-left vertex, and Free capital mobility beside its bottom-right vertex. Side 1 is the left sloping edge connecting Fixed exchange rate and Independent monetary policy. Side 2 is the right sloping edge connecting Independent monetary policy and Free capital mobility. Side 3 is the horizontal bottom edge connecting Fixed exchange rate and Free capital mobility. There are no axes, marked interior points, directional arrows, or additional written claims."
+      },
+      "mundell_ad.png": {
+        "sha256": "ccab25a0032a6e339cd089c99bc6b9d2cc0ca06cad4c8d4cdfb84ed7b5095797",
+        "imageAlt": "Paired exchange-rate and aggregate-demand panels with points A, B, and C.",
+        "graphDescription": "Left panel: the vertical axis is epsilon (ε) and the horizontal axis Y. A downward gray line labeled IS crosses three vertical lines: gray LM*(P1) at Y1, red LM*(P2) at Y2, and blue LM*(P3) at Y3. The intersections are A = (Y1, ε1), B = (Y2, ε2), and C = (Y3, ε3). Dashed horizontal guides show ε1 above ε2 above ε3; Y1, Y2, Y3 increase left to right. Right panel: the vertical axis is P and the horizontal axis Y. A downward line AD contains A = (Y1, P1), B = (Y2, P2), and C = (Y3, P3). Dashed horizontal and vertical guides connect these points to the axes. P1 is above P2 above P3. There are no numerical scales or arrows."
+      },
+      "islm_exchangerates.png": {
+        "sha256": "6eb6a6629c39aa80aaf37928d38496af3a402b1b44fca370377337fd0ec32048",
+        "imageAlt": "Three downward IS curves intersecting one vertical LM line at exchange-rate points A, B, and C.",
+        "graphDescription": "The vertical axis is Exchange rate, e, and the horizontal axis Y. LM is vertical at Y*. Three parallel downward lines are red IS1 at the upper/right position, gray IS2 in the middle, and blue IS3 at the lower/left position. Their intersections with LM are A = (Y*, e1), B = (Y*, e2), and C = (Y*, e3), respectively. Dashed horizontal guides show e1 above e2 above e3. All three marked points share Y*. There are no numerical values or arrows."
+      },
+      "islm_er_change.png": {
+        "sha256": "b5b534fee5af74c06b338ae6a45115587746e105452c484f57fc4c888dc275ba",
+        "imageAlt": "One downward IS curve intersecting three vertical LM lines at A, B, and C.",
+        "graphDescription": "The vertical axis is Exchange rate, e, and the horizontal axis Y. Gray IS slopes downward. Three vertical lines are blue LM1 at Y1, gray LM2 at Y2, and red LM3 at Y3, ordered left to right. Their intersections with IS are A = (Y1, e1), B = (Y2, e2), and C = (Y3, e3). Dashed horizontal guides show e1 above e2 above e3. No numerical values or arrows are shown."
+      },
+      "loanablefunds_changes.png": {
+        "sha256": "acda23b382d6c71ca5fc1118afb20ebb08868edc4a44be0f00b5ed7bfdfffc04",
+        "imageAlt": "Three vertical saving lines and one downward investment line with points A through G.",
+        "graphDescription": "The vertical axis is real interest rate, r, and the horizontal axis Investment, Saving (I, S). Red S1, gray S2, and blue S3 are vertical at I1, I2, and I3, respectively, from left to right. A gray I(r) line slopes downward. Horizontal dashed guides mark r_w1 above r_w2 above r_w3. The marked points are A = (I1, r_w1), B = (I2, r_w1), C = (I1, r_w2), D = (I2, r_w2), E = (I3, r_w2), F = (I2, r_w3), and G = (I3, r_w3). A, D, and G lie on I(r). The other dots lie on the saving lines at the indicated levels. No numerical values or arrows are given."
+      },
+      "loanablefunds_changes_investment.png": {
+        "sha256": "407fc5de01173f41f794f3461a61b1c92cc8fc1ec20aa9aec4e0b640443ce1cd",
+        "imageAlt": "Three investment-demand lines and one vertical saving line with points A through H.",
+        "graphDescription": "The vertical axis is real interest rate, r, and the horizontal axis Investment, Saving (I, S). Three parallel downward curves are blue I(r)1 at the lower/left position, gray I(r)2 in the middle, and red I(r)3 at the upper/right position. S1 is vertical at I2. Dashed guides mark r_w1 above r_w2 above r_w3 and I1, I2, I3 from left to right. Points are A = (I1, r_w1), B = (I2, r_w1), C = (I1, r_w2), D = (I2, r_w2), E = (I3, r_w2), F = (I1, r_w3), G = (I2, r_w3), and H = (I3, r_w3). C and G lie on I(r)1; A and D lie on I(r)2; B and E lie on I(r)3. B, D, and G lie on S1. F and H are marked guide points off the three investment curves. No numerical values are supplied."
+      },
+      "rer_changes.png": {
+        "sha256": "b3aaf9c72cad26be421715e194739417cba4212386265b45804f2c250dba77e9",
+        "imageAlt": "Three vertical saving-minus-investment lines and a downward curve with a nine-point grid.",
+        "graphDescription": "The vertical axis is real exchange rate, R, and the horizontal axis Net Exports. Three vertical lines stand at NX1, NX2, and NX3: red S1 - I1, gray S2 - I2, and blue S3 - I3, respectively. An unlabeled gray line slopes downward. Dashed horizontal guides mark R1 above R2 above R3. Across NX1, NX2, NX3, the top row is A, B, C at R1; the middle row is D, E, F at R2; the bottom row is G, H, I at R3. The downward line passes through A = (NX1, R1), E = (NX2, R2), and I = (NX3, R3). The other six dots lie off that line. No numerical scales or arrows are shown."
+      },
+      "tradepolicies.png": {
+        "sha256": "814021d0bd05bba0cc4719d540a12d80e417c7d6aa05569107512d9c9ad2b0b3",
+        "imageAlt": "Three downward net-export curves crossing a fixed vertical S-minus-I line.",
+        "graphDescription": "The vertical axis is real exchange rate, R, and the horizontal axis Net Exports. A vertical line S - I is at the horizontal-axis label NX. Three parallel downward lines are red NX(R)1 at the upper/right position, gray NX(R)2 in the middle, and blue NX(R)3 at the lower/left position. Their intersections with S - I are A at (NX, R1), B at (NX, R2), and C at (NX, R3), respectively. Dashed horizontal guides show R1 above R2 above R3. All three points have the same NX coordinate. No numerical values or arrows are shown."
+      },
+      "mundell_adas.png": {
+        "sha256": "6bf5d2bd833d5579751b6ce277a3a2d781360be7b539fdccbbab07c053bcf8a7",
+        "imageAlt": "Exchange-rate panel beside an AD-SRAS-LRAS panel, both with points A, B, and C.",
+        "graphDescription": "Left panel: the vertical axis is epsilon (ε) and the horizontal axis Y. A downward gray line labeled IS crosses three vertical lines: gray LM*(P1) at Y1, red LM*(P2) at Y2, and blue LM*(P3) at Y3. The intersections are A = (Y1, ε1), B = (Y2, ε2), and C = (Y3, ε3). Dashed horizontal guides show ε1 above ε2 above ε3; Y1, Y2, Y3 increase left to right. Right panel: the vertical axis is P and the horizontal axis Y. A downward gray AD line crosses horizontal SRAS1 at A = (Y1, P1), horizontal red SRAS2 at B = (Y2, P2), and horizontal blue SRAS3 at C = (Y3, P3). P1 is above P2 above P3. A vertical LRAS line passes through B at Y2; vertical dashed guides mark Y1 and Y3. There are no numerical scales or directional arrows."
+      }
+    }
+  }
+}
