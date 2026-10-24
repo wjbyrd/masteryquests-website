@@ -837,7 +837,7 @@ const questionBanks = {
     {
       "id": 41,
       "sourceGame": "marketSignal",
-      "q": "For price discrimination to work, a firm must usually be able to do what?",
+      "q": "Which ability is usually necessary for a firm to practice price discrimination?",
       "options": [
         "Separate customers and limit resale",
         "Allow low-price buyers to resell freely to high-price buyers",
@@ -952,7 +952,7 @@ const questionBanks = {
     {
       "id": 46,
       "sourceGame": "marketSignal",
-      "q": "A Type I error occurs when a manager does what?",
+      "q": "Which managerial decision is an example of a Type I error?",
       "options": [
         "Fails to detect an effect that is present",
         "Acts on an effect that is not actually present",
@@ -975,7 +975,7 @@ const questionBanks = {
     {
       "id": 47,
       "sourceGame": "marketSignal",
-      "q": "A Type II error occurs when a manager does what?",
+      "q": "Which managerial decision is an example of a Type II error?",
       "options": [
         "Correctly detects a real effect",
         "Concludes an effect exists when it does not",
@@ -1152,7 +1152,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "market_definition",
       "commonError": "Choosing the broadest category rather than the most specific market",
-      "feedback": "The first scope restricts the product/use, geographic area and days. A narrower scope is not automatically the correct market for every question.",
+      "feedback": "Weekday lunch delivery within downtown Chicago restricts the product/use, geographic area and days. A narrower scope is not automatically the correct market for every question.",
       "aHash": "66cf6fd4e748e8a850f8139261ea7c3a37d51a4faa3c415ff3ccd692c8272d4f",
       "canonicalDifficulty": "easy"
     },
@@ -1251,7 +1251,7 @@ const questionBanks = {
     {
       "id": 59,
       "sourceGame": "marketSignal",
-      "q": "A price increase causes consumers to buy fewer units of the same product. This is what kind of change?",
+      "q": "When a higher price leads buyers to purchase fewer units of a good, what type of change has occurred?",
       "options": [
         "A decrease in demand",
         "An increase in supply",
@@ -1274,7 +1274,7 @@ const questionBanks = {
     {
       "id": 60,
       "sourceGame": "marketSignal",
-      "q": "A price decrease causes firms to offer fewer units for sale. This is what kind of change?",
+      "q": "When a lower price leads sellers to offer fewer units of a good, what type of change has occurred?",
       "options": [
         "A decrease in supply",
         "An increase in demand",
@@ -1991,7 +1991,7 @@ const questionBanks = {
     {
       "id": 357,
       "sourceGame": "marketSignal",
-      "q": "Refer to the graph. Which paired shocks move equilibrium from S2/D2 to S1/D1?",
+      "q": "Refer to the supply and demand graph. Which paired shocks move equilibrium from S2/D2 to S1/D1?",
       "options": [
         "An increase in demand and a decrease in supply",
         "A decrease in demand and an increase in supply",
@@ -2018,7 +2018,7 @@ const questionBanks = {
     {
       "id": 160,
       "sourceGame": "marketSignal",
-      "q": "Refer to the graph. Which price and quantity occur where S2 intersects D1?",
+      "q": "Refer to the supply and demand graph. Which price and quantity occur where S2 intersects D1?",
       "options": [
         "$48 and 72 units",
         "$60 and 48 units",
@@ -2227,7 +2227,7 @@ const questionBanks = {
     {
       "id": 159,
       "sourceGame": "marketSignal",
-      "q": "Refer to the graph. The market is on S0 and D0. What are the equilibrium labels?",
+      "q": "Refer to the supply and demand graph. The market is on S0 and D0. What are the equilibrium labels?",
       "options": [
         "P0 and QC",
         "P1 and QA",
@@ -3259,7 +3259,7 @@ const questionBanks = {
     {
       "id": 147,
       "sourceGame": "marketSignal",
-      "q": "A buyer is unsure whether it will need extra capacity next year. Which arrangement preserves flexibility without requiring immediate full investment?",
+      "q": "A buyer is unsure whether they will need extra capacity next year. Which arrangement preserves flexibility without requiring the full investment today?",
       "options": [
         "A nonbinding promise with no reserved capacity or exercise terms",
         "An obligation to buy the maximum capacity regardless of realized demand",
@@ -3349,29 +3349,6 @@ const questionBanks = {
       "canonicalDifficulty": "medium"
     },
     {
-      "id": 156,
-      "sourceGame": "marketSignal",
-      "q": "Market demand is Qd = 180 - 6P and market supply is Qs = 30 + 4P. What are the equilibrium price and quantity?",
-      "options": [
-        "P = $10 and Q = 120",
-        "P = $15 and Q = 90",
-        "P = $18 and Q = 72",
-        "P = $25 and Q = 130"
-      ],
-      "tag": "equilibrium_equations",
-      "type": "calculation",
-      "objective": "LO8.3",
-      "difficulty": "medium",
-      "conceptCluster": "market_equilibrium",
-      "primarySkill": "equilibrium_calculation",
-      "secondarySkills": [],
-      "repairSkill": "equilibrium_shortage_surplus",
-      "commonError": "Setting price equal to quantity or solving only one equation",
-      "feedback": "Set demand equal to supply: 180 - 6P = 30 + 4P, so P = 15 and Q = 90.",
-      "aHash": "4e7f049e4cd469911f5d07fede404094725d958f2f56e4775ba9cc90b79f8e23",
-      "canonicalDifficulty": "medium"
-    },
-    {
       "id": 157,
       "sourceGame": "marketSignal",
       "q": "At a posted price of $14, customers order 170 units while suppliers offer 95. Restoring a delivery route adds 40 units to the quantity supplied at that price; demand is unchanged. What imbalance remains?",
@@ -3397,7 +3374,7 @@ const questionBanks = {
     {
       "id": 161,
       "sourceGame": "marketSignal",
-      "q": "The market is initially at S2 and D1 in the supplied graph. A price ceiling of $48 is enforced. What shortage results?",
+      "q": "Refer to the supply and demand graph. The market is initially at S2 and D1 in the supplied graph. A price ceiling of $48 is enforced. What shortage results?",
       "options": [
         "96 units",
         "24 units",
@@ -3424,7 +3401,7 @@ const questionBanks = {
     {
       "id": 162,
       "sourceGame": "marketSignal",
-      "q": "Refer to the graph. The market begins on S0 and D0. Consumer income rises for a normal good, shifting demand to D1. What is the new short-run equilibrium?",
+      "q": "Refer to the supply and demand graph. The market begins on S0 and D0. Consumer income rises for a normal good, shifting demand to D1. What is the new short-run equilibrium?",
       "options": [
         "P2 and QD",
         "P2 and QA",
@@ -3449,7 +3426,7 @@ const questionBanks = {
     {
       "id": 163,
       "sourceGame": "marketSignal",
-      "q": "Refer to the graph. The market starts at S2 and D1. A fall in input prices shifts supply to S1 while demand stays at D1. What is the new equilibrium?",
+      "q": "Refer to the supply and demand graph. The market starts at S2 and D1. A fall in input prices shifts supply to S1 while demand stays at D1. What is the new equilibrium?",
       "options": [
         "$36 and 96 units",
         "$48 and 48 units",
@@ -3474,7 +3451,7 @@ const questionBanks = {
     {
       "id": 164,
       "sourceGame": "marketSignal",
-      "q": "Refer to the graph. The market starts at S2 and D1. Demand rises to D2 while supply remains S2. What is the new equilibrium?",
+      "q": "Refer to the supply and demand graph. The market starts at S2 and D1. Demand rises to D2 while supply remains S2. What is the new equilibrium?",
       "options": [
         "$72 and 96 units",
         "$72 and 72 units",
@@ -3499,7 +3476,7 @@ const questionBanks = {
     {
       "id": 165,
       "sourceGame": "marketSignal",
-      "q": "Refer to the graph. The market starts at S2 and D1. Demand rises to D2 and supply rises to S1. What happens?",
+      "q": "Refer to the supply and demand graph. The market starts at S2 and D1. Demand rises to D2 and supply rises to S1. What happens?",
       "options": [
         "Quantity rises to 96 while price remains $60",
         "Quantity rises to 72 and price rises to $72",
@@ -3593,7 +3570,7 @@ const questionBanks = {
     {
       "id": 169,
       "sourceGame": "marketSignal",
-      "q": "Refer to the graph. Starting at point A in the right panel, demand increases from D0 to D1. What is the immediate market outcome before entry occurs?",
+      "q": "Refer to the long-run competition graph. Starting at point A in the right panel, demand increases from D0 to D1. What is the immediate market outcome before entry occurs?",
       "options": [
         "Point B",
         "Point C",
@@ -3618,7 +3595,7 @@ const questionBanks = {
     {
       "id": 173,
       "sourceGame": "marketSignal",
-      "q": "Refer to the graph. The market moves from A to B after demand increases. What does the price P2 imply for the representative firm in the left panel?",
+      "q": "Refer to the long-run competition graph. The market moves from A to B after demand increases. What does the price P2 imply for the representative firm in the left panel?",
       "options": [
         "The firm produces Q1 and earns zero economic profit",
         "The firm shuts down at Q0",
@@ -3643,7 +3620,7 @@ const questionBanks = {
     {
       "id": 174,
       "sourceGame": "marketSignal",
-      "q": "Refer to the graph. Why does the market move from point B toward point D?",
+      "q": "Refer to the long-run competition graph. Why does the market move from point B toward point D?",
       "options": [
         "Economic profit attracts entry, shifting supply from S0 to S1",
         "Economic losses cause exit, shifting supply from S1 to S0",
@@ -3783,7 +3760,7 @@ const questionBanks = {
     {
       "id": 256,
       "sourceGame": "marketSignal",
-      "q": "Using the numerical graph, the market begins at S1 and D1. Demand increases to D2. What are the changes in equilibrium price and quantity?",
+      "q": "Refer to the supply and demand graph. The market begins at S1 and D1. Demand increases to D2. What are the changes in equilibrium price and quantity?",
       "options": [
         "Price rises by $12 and quantity rises by 24",
         "Price falls by $12 and quantity rises by 24",
@@ -3808,7 +3785,7 @@ const questionBanks = {
     {
       "id": 257,
       "sourceGame": "marketSignal",
-      "q": "Using the numerical graph, the market begins at S2 and D2. Supply increases to S1. What happens to equilibrium?",
+      "q": "Refer to the supply and demand graph. The market begins at S2 and D2. Supply increases to S1. What happens to equilibrium?",
       "options": [
         "Price rises by $12 and quantity rises by 24",
         "Price falls by $12 and quantity rises by 24",
@@ -3856,7 +3833,7 @@ const questionBanks = {
     {
       "id": 9058,
       "sourceGame": "marketSignal",
-      "q": "The market begins at S1 and D2. A production-cost increase shifts supply to S2 while demand simultaneously falls to D1. Where does the market end?",
+      "q": "Refer to the supply and demand graph. The market begins at S1 and D2. A production-cost increase shifts supply to S2 while demand simultaneously falls to D1. Where does the market end?",
       "options": [
         "At price $48 and quantity 48",
         "At price $60 and quantity 24",
@@ -3884,7 +3861,7 @@ const questionBanks = {
     {
       "id": 9153,
       "sourceGame": "marketSignal",
-      "q": "Refer to the numerical graph. Which pair of distinct curve combinations produces the same equilibrium quantity of 72 but different prices?",
+      "q": "Refer to the supply and demand graph. Which pair of distinct curve combinations produces the same equilibrium quantity of 72 but different prices?",
       "options": [
         "S2 with D1 produces $60, while S1 with D2 produces $60",
         "S2 with D2 produces $72, while S1 with D1 produces $48",
@@ -3938,7 +3915,7 @@ const questionBanks = {
     {
       "id": 248,
       "sourceGame": "marketSignal",
-      "q": "Using the graph, the market begins at S1 and D1. A price floor of $72 creates what immediate outcome?",
+      "q": "Refer to the supply and demand graph. The market begins at S1 and D1. A price floor of $72 creates what immediate outcome?",
       "options": [
         "A surplus of 96 units",
         "A shortage of 96 units",
@@ -3981,7 +3958,7 @@ const questionBanks = {
       ],
       "repairSkill": "monopoly_welfare_regulation",
       "commonError": "Assuming efficient marginal-cost pricing automatically covers fixed cost",
-      "feedback": "Marginal-cost pricing supports efficient use in this model but leaves a total-cost shortfall. A subsidy can finance that gap; specialized tariff design is a separate pricing topic.",
+      "feedback": "Marginal-cost pricing supports efficient use when there are no externalities but leaves a total-cost shortfall. A subsidy can finance that gap; specialized tariff design is a separate pricing topic.",
       "aHash": "e4e70d1073b7170451b7d1fcd52871b1374b2e9f9f53d1f272f2dccb42458277",
       "canonicalDifficulty": "medium"
     },
@@ -4495,32 +4472,9 @@ const questionBanks = {
       "canonicalDifficulty": "medium"
     },
     {
-      "id": 245,
-      "sourceGame": "marketSignal",
-      "q": "Demand is Qd = 300 - 10P and supply is Qs = 60 + 5P. At a price of $12, what market condition exists?",
-      "options": [
-        "A surplus of 60 units",
-        "A shortage of 60 units",
-        "A shortage of 120 units",
-        "A surplus of 120 units"
-      ],
-      "tag": "linear_shortage",
-      "type": "calculation",
-      "objective": "LO8.3",
-      "difficulty": "medium",
-      "conceptCluster": "medium_marketSignal_shortage_surplus_calculation",
-      "primarySkill": "shortage_surplus_calculation",
-      "secondarySkills": [],
-      "repairSkill": "equilibrium_shortage_surplus",
-      "commonError": "Reversing excess demand or calculating only one side",
-      "feedback": "At $12, demand is 180 and supply is 120, creating a 60-unit shortage.",
-      "aHash": "892d0367be0992e8d05b40bd7a49d32d0e1ddbe05068274bd4ac3c0696cd038f",
-      "canonicalDifficulty": "medium"
-    },
-    {
       "id": 252,
       "sourceGame": "marketSignal",
-      "q": "Using the symbolic graph, the market starts at S0 and D1. Supply then increases to S1. Where does equilibrium move?",
+      "q": "Refer to the supply and demand graph. The market starts at S0 and D1. Supply then increases to S1. Where does equilibrium move?",
       "options": [
         "P1 and QD",
         "P2 and QB",
@@ -4545,7 +4499,7 @@ const questionBanks = {
     {
       "id": 253,
       "sourceGame": "marketSignal",
-      "q": "Using the symbolic graph, both demand and supply increase from D0 and S0 to D1 and S1. What happens?",
+      "q": "Refer to the supply and demand graph. Both demand and supply increase from D0 and S0 to D1 and S1. What happens?",
       "options": [
         "Price rises to P2 and quantity rises to QD",
         "Price remains P1 and quantity rises to QD",
@@ -4570,7 +4524,7 @@ const questionBanks = {
     {
       "id": 254,
       "sourceGame": "marketSignal",
-      "q": "In the symbolic graph, one observation is at price P2 and quantity QB; a later observation is at P1 and QD. Which pair of curve combinations matches these observations?",
+      "q": "Refer to the supply and demand graph. One observation is at price P2 and quantity QB; a later observation is at P1 and QD. Which pair of curve combinations matches these observations?",
       "options": [
         "First S1 with D1; then S0 with D1",
         "First S0 with D0; then S1 with D1",
@@ -5133,31 +5087,6 @@ const questionBanks = {
       "canonicalDifficulty": "medium"
     },
     {
-      "id": 349,
-      "sourceGame": "marketSignal",
-      "q": "Demand is Qd=900-15P and supply is Qs=100+5P. A per-unit production tax shifts supply to Qs=100+5(P-8). What are the new equilibrium buyer price and quantity?",
-      "options": [
-        "$38 and 330 units",
-        "$42 and 270 units",
-        "$40 and 300 units",
-        "$46 and 210 units"
-      ],
-      "tag": "tax_shift_equilibrium",
-      "type": "calculation",
-      "objective": "LO8.2",
-      "difficulty": "medium",
-      "conceptCluster": "medium_marketSignal_equilibrium_calculation",
-      "primarySkill": "equilibrium_calculation",
-      "secondarySkills": [
-        "supply_behavior"
-      ],
-      "repairSkill": "buyer_seller_behavior",
-      "commonError": "Shifting demand or applying the tax to the buyer equation incorrectly",
-      "feedback": "Set 900-15P=100+5(P-8); equilibrium is P=$42 and Q=270.",
-      "aHash": "3130f89d4695c830b33ac36db53e9fd48d2b9b5660ef0ec680f99ddbf6bde9cb",
-      "canonicalDifficulty": "medium"
-    },
-    {
       "id": 351,
       "sourceGame": "marketSignal",
       "q": "A commodity price rises. Existing firms expand output along their supply curves, and new firms enter months later. Which statement correctly separates the responses?",
@@ -5233,34 +5162,9 @@ const questionBanks = {
       "canonicalDifficulty": "medium"
     },
     {
-      "id": 355,
-      "sourceGame": "marketSignal",
-      "q": "Market demand is Qd=1,200-20P and supply is Qs=200+30P. The government sets price at $16. What shortage or surplus results?",
-      "options": [
-        "A surplus of 200 units",
-        "A shortage of 400 units",
-        "No imbalance",
-        "A shortage of 200 units"
-      ],
-      "tag": "equation_shortage",
-      "type": "calculation",
-      "objective": "LO8.3",
-      "difficulty": "medium",
-      "conceptCluster": "medium_marketSignal_shortage_surplus",
-      "primarySkill": "shortage_surplus",
-      "secondarySkills": [
-        "equilibrium_calculation"
-      ],
-      "repairSkill": "equilibrium_shortage_surplus",
-      "commonError": "Subtracting demand from supply with the wrong sign",
-      "feedback": "At $16, Qd=880 and Qs=680, so shortage is 200.",
-      "aHash": "12a617cc2618dad0f82d991070283a971868212e658232abfef9cc1782e4d807",
-      "canonicalDifficulty": "medium"
-    },
-    {
       "id": 358,
       "sourceGame": "marketSignal",
-      "q": "Refer to the graph. Starting at S0/D0, demand increases to D1 while supply later increases to S1. Which result is certain from initial to final equilibrium?",
+      "q": "Refer to the supply and demand graph. Starting at S0/D0, demand increases to D1 while supply later increases to S1. Which result is certain from initial to final equilibrium?",
       "options": [
         "Quantity rises from QA to QC while price returns to P1",
         "Quantity rises from QA to QD while price stays at P2",
@@ -5313,7 +5217,7 @@ const questionBanks = {
     {
       "id": 363,
       "sourceGame": "marketSignal",
-      "q": "In the supplied symbolic graph, the market starts at S0/D1 and moves to price P1 and quantity QD. Which event is consistent with that movement?",
+      "q": "Refer to the supply and demand graph. The market starts at S0/D1 and moves to price P1 and quantity QD. Which event is consistent with that movement?",
       "options": [
         "A cheaper substitute decreases demand",
         "Higher production costs decrease supply",
@@ -5611,6 +5515,127 @@ const questionBanks = {
       "feedback": "The clause protects the supplier from being pushed below cost after investing. That can support efficient investment.",
       "aHash": "4658228b29448c5290bf13ee82193037075b157cd0466d3e0974801fa479b4f2",
       "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 40156,
+      "sourceGame": "marketSignal",
+      "q": "At the current price, buyers want more units than sellers offer. There are no price controls. Which adjustment moves this market toward equilibrium?",
+      "options": [
+        "The price rises, reducing quantity demanded and increasing quantity supplied",
+        "The price falls, reducing the shortage",
+        "Demand shifts to the left solely because the price rises",
+        "Supply shifts to the right solely because buyers compete for goods"
+      ],
+      "tag": "equilibrium_equations",
+      "type": "application",
+      "objective": "LO8.3",
+      "difficulty": "medium",
+      "conceptCluster": "market_equilibrium",
+      "primarySkill": "equilibrium_calculation",
+      "secondarySkills": [],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "A shortage puts upward pressure on price. Along unchanged curves, buyers reduce desired purchases and sellers increase planned sales until the quantities match.",
+      "aHash": "96cdd0398610f3668f9ba6a08da8daa38ae3456917c97cc0d1de19afc683c1e8",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 40245,
+      "sourceGame": "marketSignal",
+      "q": "A store keeps its posted price below the market-clearing price. Customers arrive wanting more units than the store can obtain from suppliers. What is the market condition?",
+      "options": [
+        "A surplus because the posted price is low",
+        "A shortage because desired purchases exceed units supplied",
+        "Equilibrium because the store sells everything it has",
+        "A decrease in demand because some customers leave empty-handed"
+      ],
+      "tag": "linear_shortage",
+      "type": "application",
+      "objective": "LO8.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_shortage_surplus_calculation",
+      "primarySkill": "shortage_surplus_calculation",
+      "secondarySkills": [],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "Selling all available stock does not establish equilibrium. A shortage exists when buyers want more than sellers supply at the posted price.",
+      "aHash": "82b997b00f2131af6812c43af062c118eaebfff29b6923b212d70c4d84fe35f6",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 40349,
+      "sourceGame": "marketSignal",
+      "q": "A per-unit production tax raises sellers’ costs while buyers’ preferences remain unchanged. In a competitive market with upward-sloping supply and downward-sloping demand, what happens to the price buyers pay and the quantity traded?",
+      "options": [
+        "The buyer price falls and the quantity rises",
+        "The buyer price rises and the quantity falls",
+        "The buyer price rises and the quantity rises",
+        "Neither changes because sellers remit the tax"
+      ],
+      "tag": "tax_shift_equilibrium",
+      "type": "application",
+      "objective": "LO8.2",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_equilibrium_calculation",
+      "primarySkill": "equilibrium_calculation",
+      "secondarySkills": [
+        "supply_behavior"
+      ],
+      "repairSkill": "buyer_seller_behavior",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "The tax reduces supply at each buyer price. The new equilibrium has a higher buyer price and fewer units traded; the legal obligation to remit the tax does not determine its entire economic burden.",
+      "aHash": "9b4a1ff6a0346f1c2129f835852c7f9583274aa1ff4d1d8c90d318371b0f1158",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 40355,
+      "sourceGame": "marketSignal",
+      "q": "A binding price ceiling prevents a market price from rising to its equilibrium level. Which comparison describes planned purchases and planned sales?",
+      "options": [
+        "Planned sales exceed planned purchases",
+        "They must be equal because the price is legally fixed",
+        "Neither side responds to the controlled price",
+        "Planned purchases exceed planned sales"
+      ],
+      "tag": "equation_shortage",
+      "type": "application",
+      "objective": "LO8.3",
+      "difficulty": "medium",
+      "conceptCluster": "medium_marketSignal_shortage_surplus",
+      "primarySkill": "shortage_surplus",
+      "secondarySkills": [
+        "equilibrium_calculation"
+      ],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "At a binding ceiling, the low price encourages purchases and discourages supply. The resulting shortage requires some form of rationing.",
+      "aHash": "2ad36b07e97c92cb8dd667b9a0a5675c868d4e4ced05e2316336932eeeb7f460",
+      "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 49052,
+      "sourceGame": "marketSignal",
+      "q": "At a posted price, sellers plan to offer more units than buyers want. Demand and supply remain unchanged. Which price adjustment tends to clear the market?",
+      "options": [
+        "A lower price, which raises quantity demanded and lowers quantity supplied",
+        "A higher price, which eliminates excess supply",
+        "No change, because excess supply is an equilibrium condition",
+        "A lower price that shifts the demand curve to the right"
+      ],
+      "tag": "linear_equilibrium_legendary",
+      "type": "application",
+      "objective": "LO8.3",
+      "difficulty": "medium",
+      "conceptCluster": "market_equilibrium",
+      "primarySkill": "equilibrium_calculation",
+      "secondarySkills": [
+        "buyer_behavior",
+        "seller_behavior"
+      ],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "A surplus puts downward pressure on price. The adjustment is a movement along the existing demand and supply curves.",
+      "aHash": "4ee003e2c4e690992ef4ccdf7e31d76c58b49e63df86190bc1e8984f43d0f62c"
     }
   ],
   "hard": [
@@ -5753,75 +5778,6 @@ const questionBanks = {
       "canonicalDifficulty": "hard"
     },
     {
-      "id": 241,
-      "sourceGame": "marketSignal",
-      "q": "Initially Qd = 210 − 5P and Qs = −30 + 5P. A production improvement adds 40 units to supply at every price; demand is unchanged. Relative to the original equilibrium, how do price and quantity change?",
-      "options": [
-        "Price falls $8 and quantity rises 40 units",
-        "Price falls $4 and quantity rises 20 units",
-        "Price stays unchanged and quantity rises 40 units",
-        "Price rises $4 and quantity falls 20 units"
-      ],
-      "tag": "shifted_equilibrium_calculation",
-      "type": "calculation",
-      "objective": "LO8.4",
-      "difficulty": "hard",
-      "conceptCluster": "hard_marketSignal_shifted_equilibrium_calculation",
-      "primarySkill": "shifted_equilibrium_calculation",
-      "secondarySkills": [],
-      "repairSkill": "demand_supply_shifts",
-      "commonError": "equates_horizontal_supply_shift_with_equilibrium_quantity_change",
-      "feedback": "Originally P = 24 and Q = 90. New supply is Qs = 10 + 5P, so P = 20 and Q = 110. A 40-unit horizontal shift is not a 40-unit equilibrium-quantity increase.",
-      "aHash": "1556be2b87e838151476f743d277ce378c2bd94698875fe826d555f3bb4b3d77",
-      "canonicalDifficulty": "hard"
-    },
-    {
-      "id": 246,
-      "sourceGame": "marketSignal",
-      "q": "Demand is Qd = 200 - 5Pc and supply is Qs = 20 + 5Ps. A tax creates Pc = Ps + $8. What quantity is traded?",
-      "options": [
-        "70 units",
-        "100 units",
-        "90 units",
-        "110 units"
-      ],
-      "tag": "tax_wedge_equilibrium",
-      "type": "calculation",
-      "objective": "LO8.3",
-      "difficulty": "hard",
-      "conceptCluster": "market_equilibrium",
-      "primarySkill": "tax_wedge_calculation",
-      "secondarySkills": [],
-      "repairSkill": "equilibrium_shortage_surplus",
-      "commonError": "Using one price for buyers and sellers after a per-unit tax",
-      "feedback": "Solving with the $8 wedge gives Ps = $14, Pc = $22, and Q = 90.",
-      "aHash": "e9b0c6b9b34dbf67d5b4f5ff67d33780e3941447ee52edca2e7d7d696c3cf14a",
-      "canonicalDifficulty": "hard"
-    },
-    {
-      "id": 250,
-      "sourceGame": "marketSignal",
-      "q": "Initial demand is Qd = 200 - 5P and supply is Qs = 20 + 5P. Demand then rises by 30 units at every price. What is the new equilibrium price?",
-      "options": [
-        "$18",
-        "$20",
-        "$21",
-        "$24"
-      ],
-      "tag": "equation_demand_shift",
-      "type": "calculation",
-      "objective": "LO8.4",
-      "difficulty": "hard",
-      "conceptCluster": "market_equilibrium",
-      "primarySkill": "shifted_equilibrium_calculation",
-      "secondarySkills": [],
-      "repairSkill": "demand_supply_shifts",
-      "commonError": "Changing quantity but leaving the demand equation unchanged",
-      "feedback": "New demand is 230 - 5P; equating it with supply gives P = 21.",
-      "aHash": "3d41d958955832461b3be9ef1a80cf7985932df222d73ebfb3f78d78a7b6120c",
-      "canonicalDifficulty": "hard"
-    },
-    {
       "id": 259,
       "sourceGame": "marketSignal",
       "q": "Port damage reduces freight-service supply while new export orders increase demand. The market price rises sharply, but total shipments barely change. What is the best inference, holding other determinants fixed?",
@@ -5829,7 +5785,7 @@ const questionBanks = {
         "Both shifts necessarily reduced the quantity traded",
         "Only demand changed",
         "Only supply changed",
-        "The two shifts have roughly offsetting effects on quantity"
+        "The shifts roughly offset each other’s quantity effects"
       ],
       "tag": "reverse_simultaneous_inference",
       "type": "analysis",
@@ -5841,7 +5797,7 @@ const questionBanks = {
       "repairSkill": "simultaneous_market_changes",
       "commonError": "Ignoring that opposing shifts can offset in quantity",
       "feedback": "The demand increase pushes quantity up while the supply reduction pushes it down. A nearly unchanged total can reflect offsetting effects; it does not mean neither curve moved.",
-      "aHash": "ac0bb1ca9dbc546a8cfd694bdd372669b0356487946bef5b9750c791143a29a3",
+      "aHash": "1c4b6d435e126e0338644145332781b25177fabf2f017ca1d937794a37a674e0",
       "canonicalDifficulty": "hard"
     },
     {
@@ -5870,7 +5826,7 @@ const questionBanks = {
     {
       "id": 264,
       "sourceGame": "marketSignal",
-      "q": "Using the long-run competition graph, demand rises from D0 to D1 while market supply is initially S0. What sequence follows?",
+      "q": "Refer to the long-run competition graph. Demand rises from D0 to D1 while market supply is initially S0. What sequence follows?",
       "options": [
         "A → B → D",
         "A → D → B",
@@ -5895,7 +5851,7 @@ const questionBanks = {
     {
       "id": 266,
       "sourceGame": "marketSignal",
-      "q": "At point C in the long-run competition graph, which conclusion is supported?",
+      "q": "Refer to the long-run competition graph. At point C in the long-run competition graph, which conclusion is supported?",
       "options": [
         "Firms earn positive profit, creating pressure for entry",
         "Firms must shut down immediately",
@@ -5918,58 +5874,12 @@ const questionBanks = {
       "canonicalDifficulty": "hard"
     },
     {
-      "id": 283,
-      "sourceGame": "marketSignal",
-      "q": "Demand is P = 100 − Q and MC = $20, with no fixed costs or externalities. Competition produces 80 units at $20; a single-price monopoly produces 40 at $60. Of the reduction in consumer surplus, how much becomes monopoly profit and how much is lost total surplus?",
-      "options": [
-        "$1,600 becomes profit and $1,600 is lost surplus",
-        "$2,400 becomes profit and no surplus is lost",
-        "$800 becomes profit and $1,600 is lost surplus",
-        "$1,600 becomes profit and $800 is lost surplus"
-      ],
-      "tag": "monopoly_surplus_effect",
-      "type": "calculation",
-      "objective": "LO9.6",
-      "difficulty": "hard",
-      "conceptCluster": "hard_marketSignal_monopoly_market_effects",
-      "primarySkill": "monopoly_market_effects",
-      "secondarySkills": [],
-      "repairSkill": "monopoly_welfare_regulation",
-      "commonError": "Treating every consumer loss as a transfer to the monopolist",
-      "feedback": "Competitive consumer surplus is 0.5 × 80 × 80 = $3,200; monopoly consumer surplus is 0.5 × 40 × 40 = $800. The $2,400 reduction divides into $1,600 profit and $800 deadweight loss.",
-      "aHash": "fe63af52dc897069433c12a8c4c23297cafbecdd7ea38ace6fcdc63cf44cee31",
-      "canonicalDifficulty": "hard"
-    },
-    {
-      "id": 285,
-      "sourceGame": "marketSignal",
-      "q": "Demand is P = 70 - Q and marginal cost rises from $10 to $20. There is no avoidable fixed cost. How does the monopoly solution change?",
-      "options": [
-        "Output rises from 30 to 40 while price falls because higher marginal cost expands supply",
-        "Output falls from 30 to 25 and price rises from $40 to $45",
-        "Output stays 30 and price rises to $50",
-        "Output falls from 60 to 50 and price stays $20"
-      ],
-      "tag": "monopoly_cost_shift",
-      "type": "calculation",
-      "objective": "LO9.6",
-      "difficulty": "hard",
-      "conceptCluster": "hard_marketSignal_monopoly_price_output",
-      "primarySkill": "monopoly_price_output",
-      "secondarySkills": [],
-      "repairSkill": "monopoly_output_profit",
-      "commonError": "Using the competitive rule P = MC",
-      "feedback": "With MR = 70 - 2Q, Q falls from 30 to 25; demand then gives prices $40 and $45.",
-      "aHash": "de8cc8c55b06c3516eaa8eb385067193a32ce39125e33d29658f0cdbcc0020ba",
-      "canonicalDifficulty": "hard"
-    },
-    {
       "id": 291,
       "sourceGame": "marketSignal",
       "q": "A proposed buyer-supplier project creates $120,000 of gross present value before a $70,000 supplier-specific investment. After anticipated renegotiation, the supplier expects only $55,000 in receipts, while bearing the full investment cost. With no other costs or outside recovery, which conclusion follows?",
       "options": [
         "The supplier gains $50,000 because it receives all joint value",
-        "The project has $50,000 joint net value but a $15,000 supplier loss, so it may not be undertaken",
+        "Joint net value is $50,000, but the supplier’s $15,000 loss may prevent the project",
         "The supplier should ignore the $70,000 before deciding whether to invest",
         "The project destroys $15,000 of total value because the supplier loses that amount"
       ],
@@ -5983,7 +5893,7 @@ const questionBanks = {
       "repairSkill": "post_investment_holdup",
       "commonError": "misses_renegotiation_risk",
       "feedback": "Joint net value is $120,000 − $70,000 = $50,000. Supplier NPV is $55,000 − $70,000 = −$15,000. Private appropriation can prevent a jointly valuable specific investment.",
-      "aHash": "b8b7181a980bb395c33f4563804f46af90763966321cf48ccdfa7b70246f193a",
+      "aHash": "3e1bfc8fbe8d289563176ac8da76b1a0fcadf7f30aefefd9b2e0256465e8c627",
       "canonicalDifficulty": "hard"
     },
     {
@@ -5992,7 +5902,7 @@ const questionBanks = {
       "q": "A manager says, “The supplier already bought the custom equipment, so now we should force the lowest possible price.” What cost should the manager recognize?",
       "options": [
         "Historical investment must be recovered on every new order regardless of alternatives",
-        "Aggressive renegotiation may reduce future supplier investment or raise required contract protections",
+        "Renegotiation may discourage future investment or lead suppliers to demand protection",
         "Once equipment is sunk, future suppliers will disregard any history of renegotiation",
         "A lower payment today guarantees greater total value over all future contracts"
       ],
@@ -6006,13 +5916,13 @@ const questionBanks = {
       "repairSkill": "post_investment_holdup",
       "commonError": "ignores_future_investment_incentives_from_renegotiation",
       "feedback": "Squeezing a locked-in supplier may save money today but can destroy future investment incentives, quality, reliability, or willingness to contract.",
-      "aHash": "369dae494b2456405864e464b399edb963f9003a219d3f88960c6afeca46484e",
+      "aHash": "b15ee9fba54ac51bf50257647137ee7c7f2aa9a6f20bcb2ba8b18890f844629a",
       "canonicalDifficulty": "hard"
     },
     {
       "id": 9165,
       "sourceGame": "marketSignal",
-      "q": "Refer to the numerical graph. The market is observed at price $72 and quantity 72. A later observation shows price $48 and quantity 72. Which change is consistent with the graph?",
+      "q": "Refer to the supply and demand graph. The market is observed at price $72 and quantity 72. A later observation shows price $48 and quantity 72. Which change is consistent with the graph?",
       "options": [
         "Demand D1 → D2 and supply S1 → S2",
         "Demand D2 → D1 and supply S2 → S1",
@@ -6059,40 +5969,14 @@ const questionBanks = {
       ],
       "repairSkill": "monopoly_welfare_regulation",
       "commonError": "Assuming marginal-cost pricing automatically covers large fixed cost",
-      "feedback": "P = MC implements efficient usage in this model; a separate lump-sum subsidy covers TC minus revenue without changing the marginal price.",
+      "feedback": "P = MC implements efficient usage when there are no externalities; a separate lump-sum subsidy covers TC minus revenue without changing the marginal price.",
       "aHash": "ecfd2ed7fb1cd2b147ecc9ee3fdc14a77a56be55c348a219d824cad6e00c9709",
-      "canonicalDifficulty": "hard"
-    },
-    {
-      "id": 9184,
-      "sourceGame": "marketSignal",
-      "q": "A monopolist faces P = 120 - Q and MC = $20. A regulator imposes a binding price cap of $50. Assuming the firm must charge one price and will serve demand while price exceeds MC, what output results?",
-      "options": [
-        "Q = 70, which is above the unregulated monopoly quantity of 50 but below the efficient quantity of 100",
-        "Q = 50, because regulation cannot change monopoly output",
-        "Q = 100, because any price cap forces marginal-cost pricing",
-        "Q = 20, because the cap equals marginal cost plus $30"
-      ],
-      "tag": "boss_monopoly_price_cap_output",
-      "type": "calculation",
-      "objective": "LO9.6",
-      "difficulty": "hard",
-      "conceptCluster": "hard_marketSignal_monopoly_regulation",
-      "primarySkill": "monopoly_regulation",
-      "secondarySkills": [
-        "monopoly_output_profit",
-        "market_efficiency"
-      ],
-      "repairSkill": "monopoly_welfare_regulation",
-      "commonError": "Keeping the unregulated MR=MC quantity after the cap changes the firm's feasible revenue schedule",
-      "feedback": "Unregulated MR=120-2Q gives Q=50. At capped price $50, demand is Q=70, and serving those units remains profitable because $50>$20.",
-      "aHash": "54ad45cd9c3b0742f8d1d36f120ac295d10a36183c39e5d37b24e51f859612ed",
       "canonicalDifficulty": "hard"
     },
     {
       "id": 356,
       "sourceGame": "marketSignal",
-      "q": "Refer to the graph. The market begins at S2 and D1. Demand rises to D2, then production costs fall and supply moves to S1. What is the complete equilibrium path?",
+      "q": "Refer to the supply and demand graph. The market begins at S2 and D1. Demand rises to D2, then production costs fall and supply moves to S1. What is the complete equilibrium path?",
       "options": [
         "$60 and 48, then $72 and 72, then $60 and 96",
         "$60 and 48, then $84 and 72, then $60 and 96",
@@ -6118,59 +6002,9 @@ const questionBanks = {
       "canonicalDifficulty": "hard"
     },
     {
-      "id": 384,
-      "sourceGame": "marketSignal",
-      "q": "A monopolist faces P = 138 - 2Q and constant MC = $30. There is no avoidable fixed cost. Which price-output pair maximizes profit?",
-      "options": [
-        "Q = 27 and P = $84",
-        "Q = 54 and P = $30",
-        "Q = 34.5 and P = $69",
-        "Q = 27 and P = $54"
-      ],
-      "tag": "linear_monopoly_solution",
-      "type": "calculation",
-      "objective": "LO9.6",
-      "difficulty": "hard",
-      "conceptCluster": "hard_marketSignal_monopoly_output_rule",
-      "primarySkill": "monopoly_output_rule",
-      "secondarySkills": [
-        "inverse_demand"
-      ],
-      "repairSkill": "monopoly_output_profit",
-      "commonError": "Setting price equal to marginal cost rather than marginal revenue equal to marginal cost",
-      "feedback": "MR = 138 - 4Q. Setting it equal to 30 gives Q = 27; demand gives P = 84.",
-      "aHash": "6aac7193953fcd38555ccba8284b4c7667056db514454f9c8005c8125cf84f7b",
-      "canonicalDifficulty": "hard"
-    },
-    {
-      "id": 385,
-      "sourceGame": "marketSignal",
-      "q": "A single-price monopolist faces demand P = 100 − Q and constant MC = $20, with no fixed costs or externalities. What is deadweight loss relative to competition?",
-      "options": [
-        "$400",
-        "$800",
-        "$1,600",
-        "$3,200"
-      ],
-      "tag": "monopoly_deadweight_loss",
-      "type": "calculation",
-      "objective": "LO9.6",
-      "difficulty": "hard",
-      "conceptCluster": "hard_marketSignal_monopoly_market_effects",
-      "primarySkill": "monopoly_market_effects",
-      "secondarySkills": [
-        "welfare_analysis"
-      ],
-      "repairSkill": "monopoly_welfare_regulation",
-      "commonError": "Using the monopoly profit rectangle instead of the lost-trade triangle",
-      "feedback": "Competitive Q is 80, monopoly Q is 40, and the wedge at Q=40 is $40; DWL=.5(40)(40)=$800.",
-      "aHash": "752cf93704f4a6dea555249feb7cfecec1f2587839021a6b4040f57170baae9c",
-      "canonicalDifficulty": "hard"
-    },
-    {
       "id": 9059,
       "sourceGame": "marketSignal",
-      "q": "In the numerical graph, demand is D1 and supply initially S2. A subsidy shifts supply to S1, while a price floor stays at $60. At that posted price on the new curves, what quantities and imbalance result?",
+      "q": "Refer to the supply and demand graph. Demand is D1 and supply initially S2. A subsidy shifts supply to S1, while a price floor stays at $60. At that posted price on the new curves, what quantities and imbalance result?",
       "options": [
         "Qd = 24, Qs = 120: a 96-unit surplus",
         "Qd = 96, Qs = 48: a 48-unit shortage",
@@ -6196,35 +6030,9 @@ const questionBanks = {
       "canonicalDifficulty": "hard"
     },
     {
-      "id": 9175,
-      "sourceGame": "marketSignal",
-      "q": "A monopolist faces P = 100 - Q, constant marginal cost of $20, and fixed cost of $400. What are the monopoly quantity, price, and profit?",
-      "options": [
-        "Q = 80, P = $20, profit = -$400",
-        "Q = 40, P = $40, profit = $400",
-        "Q = 30, P = $70, profit = $1,100",
-        "Q = 40, P = $60, profit = $1,200"
-      ],
-      "tag": "boss_monopoly_linear_demand_profit",
-      "type": "calculation",
-      "objective": "LO9.6",
-      "difficulty": "hard",
-      "conceptCluster": "hard_marketSignal_monopoly_output_profit",
-      "primarySkill": "monopoly_output_profit",
-      "secondarySkills": [
-        "monopoly_marginal_revenue",
-        "profit_calculation"
-      ],
-      "repairSkill": "monopoly_output_profit",
-      "commonError": "Setting price equal to marginal cost or treating demand as marginal revenue",
-      "feedback": "MR=100-2Q. Set MR=20 to get Q=40; demand gives P=$60. Profit=(60-20)40-400=$1,200.",
-      "aHash": "1d39e746584a3a00fcaac0ec074e5712191639e1add86ae0bdaf42da9035712c",
-      "canonicalDifficulty": "hard"
-    },
-    {
       "id": 9057,
       "sourceGame": "marketSignal",
-      "q": "In the numerical graph, start at S2 and D1. First supply changes to S1 with demand fixed; then demand changes to D2 with S1 fixed. What fraction of the total quantity increase occurs in the first step?",
+      "q": "Refer to the supply and demand graph. Start at S2 and D1. First supply changes to S1 with demand fixed; then demand changes to D2 with S1 fixed. What fraction of the total quantity increase occurs in the first step?",
       "options": [
         "One-quarter",
         "One-half",
@@ -6379,7 +6187,7 @@ const questionBanks = {
       "options": [
         "Difference-in-differences can never be used with scores",
         "The control group must improve by zero",
-        "Participants may differ systematically in motivation or ability",
+        "Participants may differ in motivation or ability",
         "Voluntary programs eliminate selection bias"
       ],
       "tag": "voluntary_selection_bias",
@@ -6394,7 +6202,7 @@ const questionBanks = {
       "repairSkill": "experiments_causality",
       "commonError": "Treating self-selected groups as if assignment were random",
       "feedback": "The observed difference in improvement is 8 points. Self-selection may be associated with different improvement trends even without training. Constant starting-level differences alone do not invalidate difference-in-differences; parallel untreated trends are the key assumption.",
-      "aHash": "acfc38d4b4ce1e11cb8c8b11284ba4b4794ecd497e0c5d6a5089ba8d474a4876",
+      "aHash": "1af554090f3fe989e8ad20e49bf0b68e50f2c2b3c987e7af6d7c951f9bd70fc5",
       "canonicalDifficulty": "hard"
     },
     {
@@ -6429,7 +6237,7 @@ const questionBanks = {
       "options": [
         "Give one side all future rights without a disclosure or dispute process",
         "Fix today’s price and let each side interpret future rights independently",
-        "Define decision rights, information sharing, and a formula for splitting gains from new uses",
+        "Specify decision rights, information sharing and how new-use gains are divided",
         "List today’s known uses while leaving future decision authority unspecified"
       ],
       "tag": "innovation_contingency_governance",
@@ -6444,7 +6252,7 @@ const questionBanks = {
       "repairSkill": "contingency_contracts",
       "commonError": "Trying to enumerate every future use instead of designing a process for adaptation",
       "feedback": "Governance rules can allocate control and gains when future contingencies cannot be fully written down.",
-      "aHash": "2850d87893ad3d08cd03d86a740cb82f456d642a06efc9a32db0fda8396ea60b",
+      "aHash": "b84ad98626e43fdc858a3cf3aff4f3cb458c9991d551dcc11824517b8492795b",
       "canonicalDifficulty": "hard"
     },
     {
@@ -6477,7 +6285,7 @@ const questionBanks = {
       "sourceGame": "marketSignal",
       "q": "A candidate market contains all local repair shops. Together they sell 1,000 repairs at $100 each, with constant avoidable cost $60 per repair. A hypothetical sole supplier raises all their prices to $105. Buyers then shift 150 repairs to services outside the candidate market. Assume other costs and conditions do not change. What do the profit comparison and switching evidence suggest?",
       "options": [
-        "Contribution falls from $40,000 to $38,250; the candidate may exclude important substitutes",
+        "Contribution falls to $38,250; the candidate may exclude important substitutes",
         "Contribution rises from $40,000 to $44,625; the candidate is broad enough",
         "Contribution falls from $40,000 to $38,250; the candidate is necessarily too broad",
         "Contribution rises by $5,000 because all original buyers pay $5 more"
@@ -6495,7 +6303,7 @@ const questionBanks = {
       "repairSkill": "market_definition",
       "commonError": "Interpreting strong substitution as evidence of a self-contained market",
       "feedback": "Initial contribution is 1,000×40 = $40,000. After switching, 850×45 = $38,250. The candidate-wide rise is unprofitable because buyers switch outward, suggesting that relevant substitutes were omitted. The inference depends on the stated baseline and unchanged costs.",
-      "aHash": "16c98da85e993f5c3e91c11393114a2fa4a3a31112825229483bebf1b287e872",
+      "aHash": "506f0714897de17b887d75cf78ce105168e8d60be7aa6d52582727fcc290294d",
       "canonicalDifficulty": "hard"
     },
     {
@@ -6519,7 +6327,7 @@ const questionBanks = {
       ],
       "repairSkill": "buyer_seller_behavior",
       "commonError": "Ignoring aggregation across buyers or counting price payments as gains from trade",
-      "feedback": "At $28, A buys two units and B buys one; the seller offers three. Their values total $107 and costs total $43, so gains are $64. At $25 demand4 exceeds supply3; at $30 demand3 is below supply4. Price allocates the gain rather than adding to it.",
+      "feedback": "At $28, Customer A buys two units and Customer B buys one; the seller supplies three. The buyers’ values total $107 and production costs total $43, so the gains from trade are $64. At $25, demand is 4 units but supply is only 3. At $30, demand is 3 units but supply is 4. The price allocates the gains between buyers and sellers; it does not add to the total gains.",
       "aHash": "c6c9544490c2ef7068b5b3fb3dba0ba592535ffd958a1a430c95fcb936bcbd96",
       "canonicalDifficulty": "hard"
     },
@@ -6528,7 +6336,7 @@ const questionBanks = {
       "sourceGame": "marketSignal",
       "q": "Demand is unchanged and incumbent firms have upward-sloping marginal cost. After entry, market price falls from $25 to $20 and total quantity rises from 1,000 to 1,300. Which conclusion follows?",
       "options": [
-        "Market output rises, but each otherwise unchanged incumbent reduces its own profit-maximizing output",
+        "Industry output rises while each unchanged incumbent produces less",
         "Market output rises, so every incumbent must expand its own output",
         "Market price falls, so the demand curve must have shifted left",
         "Market price falls, so every incumbent must immediately shut down"
@@ -6545,7 +6353,7 @@ const questionBanks = {
       "repairSkill": "demand_supply_shifts",
       "commonError": "Inferring incumbent output from total market output or treating price decline as only demand driven",
       "feedback": "Entry shifts market supply right. The lower price reduces each unchanged incumbent’s chosen output along its MC curve, while entrants make total market output larger. Shutdown requires separate variable-cost information.",
-      "aHash": "bb3d23e5e060c54a21d5f8290e693975544d619590216b32e12bbaf4deafe940",
+      "aHash": "89b70e88ac33cb8e082914284d176734df37aeead7ede78753a9f4dba0db1ef0",
       "canonicalDifficulty": "hard"
     },
     {
@@ -6578,7 +6386,7 @@ const questionBanks = {
     {
       "id": 371,
       "sourceGame": "marketSignal",
-      "q": "Refer to the graph. At point C, which adjustment moves the market toward A if demand is D0?",
+      "q": "Refer to the long-run competition graph. At point C, which adjustment moves the market toward A if demand is D0?",
       "options": [
         "Firms enter, shifting supply farther right",
         "Demand rises automatically to D1",
@@ -6607,7 +6415,7 @@ const questionBanks = {
       "sourceGame": "marketSignal",
       "q": "Two equally skilled workers receive different wages because one works nights in a hazardous location. Which evidence would best distinguish a compensating differential from discrimination?",
       "options": [
-        "Whether the wage gap tracks measurable job disamenities across otherwise comparable workers",
+        "Whether otherwise comparable workers earn more for measurable job disamenities",
         "Whether the gap remains without controlling for worker qualifications",
         "Whether both workers receive more than the statutory minimum wage",
         "Whether the hazardous employer pays more because it hires more productive workers"
@@ -6624,7 +6432,7 @@ const questionBanks = {
       "repairSkill": "compensating_differentials",
       "commonError": "Labeling any wage gap as compensation without controlling for worker and job differences",
       "feedback": "A compensating differential should be systematically linked to undesirable job attributes, holding other factors constant.",
-      "aHash": "5f8bdc0e0f873d3300f4f53408040284d8c7468366e25cf9ce0abce16326db4e",
+      "aHash": "a924fdfa79aa99ae4f89c02b9acb7a1938e966dc255edc6b2a048cca84582c0e",
       "canonicalDifficulty": "hard"
     },
     {
@@ -6659,7 +6467,7 @@ const questionBanks = {
       "options": [
         "Its demand becomes less elastic and profit rises",
         "Its marginal revenue becomes equal to price at every output",
-        "The original firm’s demand becomes more elastic and its economic profit falls",
+        "Its demand becomes more elastic and its economic profit falls",
         "Its fixed cost becomes sunk only after imitation"
       ],
       "tag": "imitation_demand_elasticity",
@@ -6674,7 +6482,7 @@ const questionBanks = {
       "repairSkill": "profit_erosion_entry_imitation",
       "commonError": "Assuming imitation changes only costs rather than customers’ alternatives",
       "feedback": "More substitutes make customers more responsive to price and erode the incumbent’s margin.",
-      "aHash": "f029be14a88fe7a6db21b41b8bc618bc887ee6cf3bda33f5b3b75901e98cd50b",
+      "aHash": "90f9c435321791ad30d8c1e70973e0ddfe96e81c48eff58568619b610f7a22c2",
       "canonicalDifficulty": "hard"
     },
     {
@@ -6683,7 +6491,7 @@ const questionBanks = {
       "q": "A buyer claims there is no hold-up problem because the supplier’s investment cost is sunk after purchase. What is wrong with that reasoning?",
       "options": [
         "Sunk costs must always be repaid by the buyer",
-        "The supplier will anticipate the later bargaining problem before deciding whether to invest",
+        "The supplier anticipates renegotiation when deciding whether to invest",
         "A sunk cost is the same thing as marginal cost",
         "The buyer’s willingness to pay disappears once the supplier invests"
       ],
@@ -6697,7 +6505,7 @@ const questionBanks = {
       "repairSkill": "post_investment_holdup",
       "commonError": "misses_renegotiation_risk",
       "feedback": "The key decision happens before investment. If the supplier expects opportunistic renegotiation later, it may underinvest now.",
-      "aHash": "6ad4c9f63b93dada3e4d9e3a50b548e4d8f195eb34951ecb295be2277c5f9913",
+      "aHash": "e204d83554349e3205d30086b3907079febba7d1e6466c72d9c04ce5f3629e26",
       "canonicalDifficulty": "hard"
     },
     {
@@ -6708,7 +6516,7 @@ const questionBanks = {
         "Include expected supplier underinvestment in procurement performance measures",
         "Evaluate purchasing staff using joint value created over the contract term",
         "Reward enforceable commitments that lower suppliers’ investment risk",
-        "Reward buyers mainly for extracting price cuts after suppliers make specific investments"
+        "Reward buyers for extracting price cuts after suppliers make specific investments"
       ],
       "tag": "post_investment_holdup",
       "type": "application",
@@ -6720,7 +6528,224 @@ const questionBanks = {
       "repairSkill": "post_investment_holdup",
       "commonError": "misses_renegotiation_risk",
       "feedback": "Rewarding ex post price concessions can scare suppliers away from efficient specific investments.",
-      "aHash": "eed6022bd629990f5a2db3106df19b5cd8fa93436143b0aeebafd28dc2dbfd30",
+      "aHash": "cf47d3278a55212897411323a8f98af74e5aa75f750cda09dda33e4419025282",
+      "canonicalDifficulty": "hard"
+    },
+    {
+      "id": 40241,
+      "sourceGame": "marketSignal",
+      "q": "A production improvement lets firms offer more at every price. Demand remains downward sloping and unchanged. A manager predicts that equilibrium sales will rise by the full increase in supply measured at the old price. What is wrong with that forecast?",
+      "options": [
+        "The improvement shifts demand rather than supply",
+        "The lower equilibrium price partly offsets the quantity gain measured at the old price",
+        "The improvement must raise the equilibrium price because suppliers offer more at the old price",
+        "The old equilibrium quantity cannot change"
+      ],
+      "tag": "shifted_equilibrium_calculation",
+      "type": "application",
+      "objective": "LO8.4",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_shifted_equilibrium_calculation",
+      "primarySkill": "shifted_equilibrium_calculation",
+      "secondarySkills": [],
+      "repairSkill": "demand_supply_shifts",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "Supply increases, lowering the equilibrium price and raising sales. The horizontal supply shift at a fixed price is not the same as the change between equilibria because firms also respond to the lower price.",
+      "aHash": "8c55a4079d5a412dc789b885a8d5b782d437e8de25fec7a2438e8538395ff78d",
+      "canonicalDifficulty": "hard"
+    },
+    {
+      "id": 40246,
+      "sourceGame": "marketSignal",
+      "q": "A tax is legally collected from sellers in a competitive market. Demand is relatively unresponsive to price, while supply is highly responsive. Which assessment of the tax burden is most reasonable?",
+      "options": [
+        "Sellers bear all of it because they send the payment to the government",
+        "The burden must be split equally",
+        "Buyers bear more of it because they have fewer ways to reduce purchases",
+        "Neither side bears a burden if the tax is passed on"
+      ],
+      "tag": "tax_wedge_equilibrium",
+      "type": "application",
+      "objective": "LO8.3",
+      "difficulty": "hard",
+      "conceptCluster": "market_equilibrium",
+      "primarySkill": "tax_wedge_calculation",
+      "secondarySkills": [],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "The less price-responsive side bears more of the burden. Legal collection from sellers does not prevent the buyer price from rising.",
+      "aHash": "273924990b794cba6b5f09e99c4baa35b4730973621d54d0c26f88f3ceb3752b",
+      "canonicalDifficulty": "hard"
+    },
+    {
+      "id": 40250,
+      "sourceGame": "marketSignal",
+      "q": "Demand increases while supply remains upward sloping and unchanged. A manager says the higher equilibrium sales prove that supply increased. Which explanation corrects the reasoning?",
+      "options": [
+        "Both curves must shift whenever sales increase",
+        "The price must fall because more units are sold",
+        "The higher price causes a movement along the existing supply curve",
+        "Supply shifts right because buyers become more willing to pay"
+      ],
+      "tag": "equation_demand_shift",
+      "type": "application",
+      "objective": "LO8.4",
+      "difficulty": "hard",
+      "conceptCluster": "market_equilibrium",
+      "primarySkill": "shifted_equilibrium_calculation",
+      "secondarySkills": [],
+      "repairSkill": "demand_supply_shifts",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "Stronger demand raises both price and equilibrium quantity. Sellers supply more in response to the higher price without any change in supply conditions.",
+      "aHash": "f8e97731a0991f0250cdadf873a98e7191071f86a6b8b5f04fa86d7be316071d",
+      "canonicalDifficulty": "hard"
+    },
+    {
+      "id": 40283,
+      "sourceGame": "marketSignal",
+      "q": "A competitive industry becomes a single-price monopoly with unchanged costs and no externalities. The monopoly raises price and restricts output. Why is the resulting loss to consumers larger than the transfer to the monopolist?",
+      "options": [
+        "Every dollar lost by consumers becomes a production cost",
+        "The monopoly creates additional gains from trades that no longer occur",
+        "The price increase eliminates all producer surplus",
+        "Beneficial trades disappear, leaving surplus that neither side receives"
+      ],
+      "tag": "monopoly_surplus_effect",
+      "type": "application",
+      "objective": "LO9.6",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_monopoly_market_effects",
+      "primarySkill": "monopoly_market_effects",
+      "secondarySkills": [],
+      "repairSkill": "monopoly_welfare_regulation",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "Part of the consumer loss transfers to the firm through a higher price on units still sold. Another part reflects beneficial trades that no longer take place, so total surplus falls.",
+      "aHash": "e403f9a8ee9b19715060a556c9a101675558735f96dcddb5c6aa47188e5f1291",
+      "canonicalDifficulty": "hard"
+    },
+    {
+      "id": 40285,
+      "sourceGame": "marketSignal",
+      "q": "A single-price monopolist faces unchanged demand, but producing each additional unit becomes more costly. Why might it reduce output and raise price rather than keep selling the old quantity?",
+      "options": [
+        "Every unit becomes more profitable because buyers cover the higher cost",
+        "Some previously profitable units now cost more than their extra revenue",
+        "A monopolist can sell any quantity at any chosen price",
+        "Higher marginal cost necessarily increases marginal revenue"
+      ],
+      "tag": "monopoly_cost_shift",
+      "type": "application",
+      "objective": "LO9.6",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_monopoly_price_output",
+      "primarySkill": "monopoly_price_output",
+      "secondarySkills": [],
+      "repairSkill": "monopoly_output_profit",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "Higher marginal cost changes the comparison with marginal revenue. The firm gives up units whose added cost now exceeds added revenue; along downward-sloping demand, selling fewer units permits a higher price.",
+      "aHash": "296f3b63667c2eaed57709f6625b9ba09d9af72266eebb70b6be85ae91e7e8e1",
+      "canonicalDifficulty": "hard"
+    },
+    {
+      "id": 49184,
+      "sourceGame": "marketSignal",
+      "q": "A regulator caps a monopolist’s price below its unregulated price but above marginal cost. The firm can profitably meet demand at the cap and is required to do so. Which outcome is consistent with this policy?",
+      "options": [
+        "More customers buy, but some beneficial trades may still be excluded",
+        "All beneficial trades occur because any price cap makes buyers pay marginal cost",
+        "Any binding cap guarantees the fully efficient quantity",
+        "Output must fall because the firm receives less per unit"
+      ],
+      "tag": "boss_monopoly_price_cap_output",
+      "type": "application",
+      "objective": "LO9.6",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_monopoly_regulation",
+      "primarySkill": "monopoly_regulation",
+      "secondarySkills": [
+        "monopoly_output_profit",
+        "market_efficiency"
+      ],
+      "repairSkill": "monopoly_welfare_regulation",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "A lower price increases purchases when the firm serves demand. A cap still above marginal cost need not reach the efficient quantity, so some gains from trade can remain unrealized.",
+      "aHash": "7c1b5d2dd1b4ddf5fa242f85bf8b27ae1c3ff8f2af6e3121ae147fdffd0f3ae3",
+      "canonicalDifficulty": "hard"
+    },
+    {
+      "id": 40384,
+      "sourceGame": "marketSignal",
+      "q": "A single-price monopolist can sell one more unit only by lowering the price on all units sold. Why should it compare the additional unit’s marginal revenue with marginal cost instead of comparing price with marginal cost?",
+      "options": [
+        "The sale adds revenue, but the price cut reduces revenue on earlier units",
+        "A price cut changes fixed cost on every earlier unit",
+        "Marginal revenue always equals the price of the extra unit",
+        "Only the extra unit affects revenue because earlier buyers keep paying the old price"
+      ],
+      "tag": "linear_monopoly_solution",
+      "type": "application",
+      "objective": "LO9.6",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_monopoly_output_rule",
+      "primarySkill": "monopoly_output_rule",
+      "secondarySkills": [
+        "inverse_demand"
+      ],
+      "repairSkill": "monopoly_output_profit",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "Marginal revenue includes both revenue from the additional unit and revenue lost by charging less on existing sales. Price alone overstates the gain from expanding output.",
+      "aHash": "53befc5f8de190076359c5387494adf12ca2d0cae2f090bd03eefeca2efaff38",
+      "canonicalDifficulty": "hard"
+    },
+    {
+      "id": 40385,
+      "sourceGame": "marketSignal",
+      "q": "A monopolist refuses to sell an additional unit even though the buyer values it above its marginal cost. Selling that unit would require a lower uniform price on all sales. With no externalities, what explains the welfare loss?",
+      "options": [
+        "No beneficial trade is lost because the firm’s profit maximum also maximizes total surplus",
+        "A beneficial trade is lost because the price cut reduces revenue on existing sales",
+        "Every transfer from consumers to producers destroys total surplus",
+        "Fixed costs increase whenever the monopolist limits output"
+      ],
+      "tag": "monopoly_deadweight_loss",
+      "type": "application",
+      "objective": "LO9.6",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_monopoly_market_effects",
+      "primarySkill": "monopoly_market_effects",
+      "secondarySkills": [
+        "welfare_analysis"
+      ],
+      "repairSkill": "monopoly_welfare_regulation",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "The buyer’s value exceeds the resource cost, so the missing trade represents a lost gain. The monopolist may still reject it because the price reduction on existing sales makes expansion privately unprofitable.",
+      "aHash": "d0aef58143151392e4c0a17d09448ac0b10cc2f2bd9445eef0f154603fb0d913",
+      "canonicalDifficulty": "hard"
+    },
+    {
+      "id": 49175,
+      "sourceGame": "marketSignal",
+      "q": "A single-price monopolist is already producing the quantity where marginal revenue equals marginal cost. An unavoidable fixed lease payment rises while demand and marginal cost stay unchanged. What happens to its current output choice and profit?",
+      "options": [
+        "Output rises to spread the lease cost over more units",
+        "Output falls until price covers the higher average cost",
+        "Both output and profit remain unchanged",
+        "Optimal output stays unchanged, but profit falls"
+      ],
+      "tag": "boss_monopoly_linear_demand_profit",
+      "type": "application",
+      "objective": "LO9.6",
+      "difficulty": "hard",
+      "conceptCluster": "hard_marketSignal_monopoly_output_profit",
+      "primarySkill": "monopoly_output_profit",
+      "secondarySkills": [
+        "monopoly_marginal_revenue",
+        "profit_calculation"
+      ],
+      "repairSkill": "monopoly_output_profit",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "An unavoidable fixed payment does not change the revenue or cost of an additional unit. It lowers profit without changing the current output choice; an avoidable future cost would require a separate continuation decision.",
+      "aHash": "d43a6ee2be1eaaa797d9845e099a8007218a20628d23832f51b6b6466815b077",
       "canonicalDifficulty": "hard"
     }
   ],
@@ -6732,7 +6757,7 @@ const questionBanks = {
       "options": [
         "Each local plant is a separate market because emergency customers switch infrequently",
         "All oxygen purchases form one national market because the physical product is identical",
-        "Emergency and routine purchases may face different geographic markets because feasible substitution differs",
+        "Feasible substitutes may differ, giving emergency and routine purchases different markets",
         "Emergency purchases belong to the national market because distant posted prices are lower"
       ],
       "tag": "market_definition",
@@ -6747,7 +6772,7 @@ const questionBanks = {
       "repairSkill": "market_definition",
       "commonError": "Using national seller counts despite local switching constraints",
       "feedback": "Delivery time makes distant plants ineffective substitutes for emergency purchases but effective substitutes for routine orders. Market boundaries depend on feasible alternatives in the relevant period; this evidence does not make each local seller a separate market.",
-      "aHash": "0b095522f073512f8e3af346bf43589cd77ebb61e9ed5cb9e72614b4eb5b8369",
+      "aHash": "91ddb7e360af4169ae4ba50bf5fbd9ccd86b84eea8b5e67f0f57de90c5a2d5c7",
       "canonicalDifficulty": "elite"
     },
     {
@@ -6774,32 +6799,6 @@ const questionBanks = {
       "commonError": "Equating total desired purchases with feasible mutually beneficial trades",
       "feedback": "At $30 the $50 and $35 buyers purchase, and the $10 and $25 sellers supply. Two units clear, creating (50 + 35) − (10 + 25) = $50. Price divides these gains rather than adding to their total.",
       "aHash": "bdc683e3e058121169a766975b25542eb144e43e0cef0fcd4d9818322eb69800",
-      "canonicalDifficulty": "elite"
-    },
-    {
-      "id": 305,
-      "sourceGame": "marketSignal",
-      "q": "Demand is Qd = 240 − 4Pb and supply is Qs = 40 + 6Ps, where Pb is buyers’ price and Ps is sellers’ net receipt. A $5 tax makes Pb = Ps + 5. A ceiling limits Pb to $21. With no government purchases or inventories, what are the unconstrained taxed buyer price and the maximum trade under the ceiling?",
-      "options": [
-        "$20 without the ceiling; at most 160 units under the ceiling",
-        "$23 without the ceiling; at most 136 units under the ceiling",
-        "$23 without the ceiling; at most 156 units under the ceiling",
-        "$25 without the ceiling; at most 166 units under the ceiling"
-      ],
-      "tag": "shortage_surplus",
-      "type": "synthesis",
-      "objective": "LO8.3",
-      "difficulty": "elite",
-      "conceptCluster": "elite_marketSignal_shortage_surplus",
-      "primarySkill": "shortage_surplus",
-      "secondarySkills": [
-        "equilibrium_calculation",
-        "market_interventions"
-      ],
-      "repairSkill": "equilibrium_shortage_surplus",
-      "commonError": "Applying a tax to buyer and seller prices without the wedge",
-      "feedback": "Without the ceiling, 240 − 4Pb = 40 + 6(Pb − 5), so Pb = $23. At the ceiling, sellers receive $16 and offer 136, while buyers demand 156. The shortage is 20 and transactions cannot exceed 136.",
-      "aHash": "89b0a12dc605bece85cd98c59999d4b03e47848782f6229cf304797bdfd7e816",
       "canonicalDifficulty": "elite"
     },
     {
@@ -6855,84 +6854,6 @@ const questionBanks = {
       "canonicalDifficulty": "elite"
     },
     {
-      "id": 310,
-      "sourceGame": "marketSignal",
-      "q": "Initially Qd = 300 − 5P and Qs = 60 + 3P. A marketing change adds 40 units of demand at every price and a process improvement adds 80 units of supply. A manager plans to raise the forecast market price because demand increased. Which revised forecast is justified?",
-      "options": [
-        "Price stays $30 and quantity rises from 150 to 270",
-        "Price rises from $30 to $35 and quantity rises from 150 to 165",
-        "Price falls from $30 to $25 and quantity rises from 150 to 215",
-        "Price falls from $30 to $20 and quantity rises from 150 to 240"
-      ],
-      "tag": "comparative_statics",
-      "type": "synthesis",
-      "objective": "LO8.4",
-      "difficulty": "elite",
-      "conceptCluster": "elite_marketSignal_comparative_statics",
-      "primarySkill": "comparative_statics",
-      "secondarySkills": [
-        "equilibrium_calculation",
-        "demand_shift_analysis",
-        "supply_shift_analysis"
-      ],
-      "repairSkill": "simultaneous_market_changes",
-      "commonError": "Using a demand increase alone to predict price after a cost change",
-      "feedback": "The initial equilibrium is $30 and 150. New equilibrium solves 340 − 5P = 140 + 3P, giving $25 and 215. Both shifts raise quantity, but the larger supply increase lowers price.",
-      "aHash": "4a40d60167830c71973783c17842ee34c47b21cdba8007c243e3029d1087b6b3",
-      "canonicalDifficulty": "elite"
-    },
-    {
-      "id": 311,
-      "sourceGame": "marketSignal",
-      "q": "A competitive industry’s output rises from 10,000 to 13,000 after entry, while price falls from $30 to $24. An incumbent has MC = 10 + 0.02q and total cost TC = 4,000 + 10q + 0.01q². These costs and demand conditions other than entry are unchanged. What happens to this incumbent’s profit-maximizing output and economic profit?",
-      "options": [
-        "Output remains 1,000; profit falls from $6,000 to zero",
-        "Output rises from 1,000 to 1,300; profit rises with market output",
-        "Output falls from 1,000 to 700; profit becomes zero because entry occurred",
-        "Output falls from 1,000 to 700; profit falls from $6,000 to $900"
-      ],
-      "tag": "competitive_returns",
-      "type": "synthesis",
-      "objective": "LO9.1",
-      "difficulty": "elite",
-      "conceptCluster": "elite_marketSignal_competitive_returns",
-      "primarySkill": "competitive_returns",
-      "secondarySkills": [
-        "firm_market_linkage",
-        "economic_profit_interpretation"
-      ],
-      "repairSkill": "competitive_returns",
-      "commonError": "Inferring each incumbent’s output from expanding industry output",
-      "feedback": "Set price equal to MC: q changes from 1,000 to 700. Profit is Pq − TC: initially $30,000 − $24,000 = $6,000; afterward $16,800 − $15,900 = $900. Total industry output can grow while each incumbent contracts, and entry need not already have eliminated all profit.",
-      "aHash": "b8181936a7ab80e9c271f379d31b4af09626e86bb68a048dd760616ad7936087",
-      "canonicalDifficulty": "elite"
-    },
-    {
-      "id": 314,
-      "sourceGame": "marketSignal",
-      "q": "A firm has fixed cost $80,000 and constant variable cost $16 per unit. Demand is Q = 60,000 − 2,000P. Which two prices each produce zero profit?",
-      "options": [
-        "$22 and $24",
-        "$18 and $28",
-        "$20 and $26",
-        "$16 and $30"
-      ],
-      "tag": "break_even_with_demand",
-      "type": "calculation",
-      "objective": "LO5.4",
-      "difficulty": "elite",
-      "conceptCluster": "break_even_analysis",
-      "primarySkill": "break_even_price",
-      "secondarySkills": [
-        "demand_behavior"
-      ],
-      "repairSkill": "break_even_technology",
-      "commonError": "Using price equal to variable cost or ignoring how price changes quantity demanded",
-      "feedback": "Profit is (P − 16)(60,000 − 2,000P) − 80,000 = −2,000(P − 20)(P − 26). Both $20 at 20,000 units and $26 at 8,000 units break even. Higher price also reduces sales.",
-      "aHash": "6d21cec9bc7fc1e725feb452c0bec9c78412463142b211a92b142f91722a8e9a",
-      "canonicalDifficulty": "elite"
-    },
-    {
       "id": 317,
       "sourceGame": "marketSignal",
       "q": "A risk-neutral manager chooses one facility for a single period. Price is $14, and sales are 20,000 units with probability 0.6 or 50,000 with probability 0.4. A costs $120,000 fixed plus $8 per unit; B costs $240,000 fixed plus $4 per unit. Both can meet all sales, and all costs are avoidable before choice. Which facility has higher expected profit?",
@@ -6966,7 +6887,7 @@ const questionBanks = {
         "No: subtract the cost from only one year’s $90,000 profit",
         "No: entry makes even the first two years of profit worth zero",
         "Yes: capitalize $90,000 forever, giving a $760,000 NPV",
-        "Yes: temporary profits have PV about $156,198, exceeding cost by about $16,198"
+        "Yes: profits have PV about $156,198, above the $140,000 cost"
       ],
       "tag": "mean_reversion_entry_exit",
       "type": "synthesis",
@@ -6981,7 +6902,7 @@ const questionBanks = {
       "repairSkill": "mean_reversion_entry_exit",
       "commonError": "Capitalizing temporary scarcity profits as permanent income",
       "feedback": "Mean reversion limits the profit window rather than erasing the early gains. PV is 90,000/1.1 + 90,000/1.1² = $156,198.35, so NPV is $16,198.35. Treating the temporary profit as a perpetuity overvalues the opportunity.",
-      "aHash": "f5f116f23583ea850c5bd76fccf3954f194c4ff72e26e8aa7b6865b322b0b579",
+      "aHash": "113eda31aeeef4d42183debb737a3bcb0edefbb2ef48ec812f778aacd4142ec4",
       "canonicalDifficulty": "elite"
     },
     {
@@ -7061,58 +6982,6 @@ const questionBanks = {
       "canonicalDifficulty": "elite"
     },
     {
-      "id": 359,
-      "sourceGame": "marketSignal",
-      "q": "Demand is initially Qd = 600 − 10P and supply Qs = 60 + 8P. Later equilibrium is observed at P = $32 and Q = 370. Demand and supply slopes are unchanged, and any changes are parallel shifts. Which intercept changes explain the observation?",
-      "options": [
-        "Supply increases by 130 units at every price; demand is unchanged",
-        "Demand increases by 54 units at every price; supply increases by 90",
-        "Demand increases by 70 units at every price; supply is unchanged",
-        "Demand increases by 90 units at every price; supply increases by 54"
-      ],
-      "tag": "comparative_statics",
-      "type": "synthesis",
-      "objective": "LO8.4",
-      "difficulty": "elite",
-      "conceptCluster": "elite_marketSignal_comparative_statics",
-      "primarySkill": "comparative_statics",
-      "secondarySkills": [
-        "equilibrium_calculation",
-        "reverse_shift_inference"
-      ],
-      "repairSkill": "simultaneous_market_changes",
-      "commonError": "Applying only one shift or treating an intercept change as a price change",
-      "feedback": "At price $32, original demand would be 280 units, so reaching 370 requires a 90-unit increase. Original supply would be 316, so reaching 370 requires a 54-unit increase. Both curves shift right even though equilibrium price rises; a higher price alone does not establish that supply fell.",
-      "aHash": "753eef8d86ab4a68eb4fe21e69a309687d034d4033dd704eb2de8d6c6d77077c",
-      "canonicalDifficulty": "elite"
-    },
-    {
-      "id": 361,
-      "sourceGame": "marketSignal",
-      "q": "Before imitation, an incumbent’s residual demand is P = 90 − Q. Entry changes it to P = 70 − Q even though total market demand is unchanged. The firm charges one price, has constant MC $10 and no fixed cost. How do its optimal output, price and profit change?",
-      "options": [
-        "Output 40 to 30; price $50 to $40; profit remains $1,600",
-        "Output 40 to 30; price $50 to $40; profit $1,600 to $900",
-        "Output remains 40; price remains $50; profit falls to $900",
-        "Output 80 to 60; price stays $10; profit stays zero"
-      ],
-      "tag": "profit_erosion_entry_imitation",
-      "type": "synthesis",
-      "objective": "LO9.5",
-      "difficulty": "elite",
-      "conceptCluster": "elite_marketSignal_profit_erosion_entry_imitation",
-      "primarySkill": "profit_erosion_entry_imitation",
-      "secondarySkills": [
-        "monopoly_price_output",
-        "entry_and_imitation"
-      ],
-      "repairSkill": "profit_erosion_entry_imitation",
-      "commonError": "Confusing unchanged market demand with unchanged demand for the incumbent",
-      "feedback": "Entry diverts buyers from the incumbent. MR = 90 − 2Q initially and 70 − 2Q afterward. Equating each with MC gives Q40 then30, P50 then40, and profits 40×40 = $1,600 then30×30 = $900. Unchanged total demand does not protect an individual seller’s residual demand.",
-      "aHash": "f1c5f4e5ea86f3207e35de7ee0ac1ce425c3afd787900e3565761805566f238c",
-      "canonicalDifficulty": "elite"
-    },
-    {
       "id": 374,
       "sourceGame": "marketSignal",
       "q": "A safer process eliminates a $3 hourly hazard premium for each of 20,000 annual labor hours. It also lowers priced project risk, reducing the required annual capital return from 12% to 9% on $500,000. Other productivity, financing and operating costs are unchanged. Which interpretation and annual cost reduction are correct?",
@@ -7139,32 +7008,6 @@ const questionBanks = {
       "canonicalDifficulty": "elite"
     },
     {
-      "id": 375,
-      "sourceGame": "marketSignal",
-      "q": "A natural monopoly has demand P = 50 − Q, constant MC $10 and fixed cost $300. It charges one price. A regulator can instead set $10, $20 or $30, without a subsidy. What is unregulated monopoly output, and which allowed regulated price serves the largest quantity while covering all costs?",
-      "options": [
-        "Monopoly output 30; regulated price $20 serves 30 and earns $300",
-        "Monopoly output 40; regulated price $10 serves 40 and breaks even",
-        "Monopoly output 20; regulated price $30 serves 20 and breaks even",
-        "Monopoly output 20; regulated price $20 serves 30 and breaks even"
-      ],
-      "tag": "monopoly_welfare_regulation",
-      "type": "synthesis",
-      "objective": "LO9.6",
-      "difficulty": "elite",
-      "conceptCluster": "elite_marketSignal_monopoly_welfare_regulation",
-      "primarySkill": "monopoly_welfare_regulation",
-      "secondarySkills": [
-        "monopoly_output_profit",
-        "market_efficiency"
-      ],
-      "repairSkill": "monopoly_welfare_regulation",
-      "commonError": "Assuming marginal-cost pricing finances a firm with fixed cost",
-      "feedback": "MR = 50 − 2Q equals MC of $10 at monopoly output 20, with price $30 and profit $100. At regulated price $10, sales of 40 leave a $300 fixed-cost loss. At $20, sales of 30 contribute $300 and break even. Price $30 earns $100 but serves fewer buyers. Among the feasible listed policies, $20 maximizes output.",
-      "aHash": "0e50b503a68a619e9a630d9c7bf42cc9ab9a265f9013e8dce8a1152c0f64ebb7",
-      "canonicalDifficulty": "elite"
-    },
-    {
       "id": 391,
       "sourceGame": "marketSignal",
       "q": "Buyer-specific tooling costs $90,000 now. For each of the next two years, an order creates $90,000 of gross buyer value and requires $10,000 of operating cost. Without commitment the buyer is expected to pay the supplier only $55,000 each year; an enforceable contract would guarantee $65,000 each year. Use a 10% discount rate for all flows. Which investment conclusion is correct?",
@@ -7188,6 +7031,188 @@ const questionBanks = {
       "commonError": "misses_renegotiation_risk",
       "feedback": "Joint NPV is 80,000/1.1 + 80,000/1.1² −90,000 = $48,842.98. Supplier NPV with $55,000 receipts is −$11,900.83 after operating cost; with $65,000 receipts it is $5,454.55. The contract protects a privately viable share of a positive joint surplus.",
       "aHash": "a6937fbccfd72ecbb052ab6003f67e61fc36570d8313b26d76aa30a9269f6362",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 40305,
+      "sourceGame": "marketSignal",
+      "q": "A binding price ceiling holds the buyer price fixed. A new seller tax lowers the seller’s net receipt, so supply falls from 100 to 80 units while desired purchases remain 140. A proposal would allocate the available units by lottery. With no imports or inventories, which assessment correctly combines the tax, shortage, and allocation effects?",
+      "options": [
+        "The shortage remains 40 because the buyer price did not change",
+        "The shortage is 60; at most 80 trade, potentially excluding higher-value buyers",
+        "All 140 units trade because the ceiling makes them affordable",
+        "The lottery restores trade to 100 units by spreading the tax burden across buyers"
+      ],
+      "tag": "shortage_surplus",
+      "type": "integration",
+      "objective": "LO8.3",
+      "difficulty": "elite",
+      "conceptCluster": "elite_marketSignal_shortage_surplus",
+      "primarySkill": "shortage_surplus",
+      "secondarySkills": [
+        "equilibrium_calculation",
+        "market_interventions"
+      ],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "The fixed buyer price leaves desired purchases at 140, but the tax reduces units supplied to 80. Excess demand is therefore 60. A lottery allocates limited units without guaranteeing that the recipients have the highest willingness to pay.",
+      "aHash": "ef2dd8f7edd1514b64195fdce8bf088f0d485fc526e892582cb6f8f6b60e33f3",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 40310,
+      "sourceGame": "marketSignal",
+      "q": "Both demand and supply increase. Market sales rise and the market price falls. A retailer buys at that market price, earns a fixed dollar contribution per unit after purchase costs, and has spare capacity. It expects to keep the same market share. Which forecast best combines the market evidence with the retailer’s situation?",
+      "options": [
+        "Sales fall because every price decline signals weaker demand",
+        "Demand dominated the price effect; lower prices mean total contribution must fall despite higher sales",
+        "Supply dominated the price effect; more units raise contribution under the stated assumptions",
+        "Higher total contribution proves that demand was unchanged"
+      ],
+      "tag": "comparative_statics",
+      "type": "integration",
+      "objective": "LO8.4",
+      "difficulty": "elite",
+      "conceptCluster": "elite_marketSignal_comparative_statics",
+      "primarySkill": "comparative_statics",
+      "secondarySkills": [
+        "equilibrium_calculation",
+        "demand_shift_analysis",
+        "supply_shift_analysis"
+      ],
+      "repairSkill": "simultaneous_market_changes",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "Both shifts increase market quantity; their price effects oppose one another. The observed lower price means the supply effect dominates. With a stable share, available capacity, and unchanged contribution per unit, higher volume raises the retailer’s total contribution.",
+      "aHash": "8a7d8510dec8cdfb6c2e8a30c2c306bc329351e9ebd3bcfedade216b95d26627",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 40311,
+      "sourceGame": "marketSignal",
+      "q": "Entry lowers the competitive market price. At the new price, an incumbent’s best output is smaller than before. Revenue at that output covers all avoidable costs but not an unavoidable lease payment. Industry sales nevertheless rise. Which recommendation and explanation are consistent with these facts?",
+      "options": [
+        "Shut down immediately because any accounting loss makes current production wasteful",
+        "Expand to the old output solely to spread the lease payment over more units",
+        "Keep the old output because industry sales increased",
+        "Continue at the smaller output; entrants can expand total sales as incumbents contract"
+      ],
+      "tag": "competitive_returns",
+      "type": "integration",
+      "objective": "LO9.1",
+      "difficulty": "elite",
+      "conceptCluster": "elite_marketSignal_competitive_returns",
+      "primarySkill": "competitive_returns",
+      "secondarySkills": [
+        "firm_market_linkage",
+        "economic_profit_interpretation"
+      ],
+      "repairSkill": "competitive_returns",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "The incumbent’s output decision responds to the new price and incremental costs. Continuing contributes toward the unavoidable lease if revenue exceeds avoidable costs. Industry output can increase because entrants add supply. Renewal of the lease is a separate future decision.",
+      "aHash": "9faf3047b432a2edb36a89691e38098cc8f55dd62619d0a776bdcbc13174ce87",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 40314,
+      "sourceGame": "marketSignal",
+      "q": "A firm has $20,000 in avoidable fixed operating costs and a $10 unit variable cost. It can charge $20 and sell 2,500 units or charge $25 and sell 1,200 units. Capacity is sufficient, and there are no other costs or sales. Which pricing decision best combines the demand response with cost recovery?",
+      "options": [
+        "Charge $25 because its higher unit margin guarantees more total profit",
+        "Both prices break even because both exceed variable cost",
+        "Charge $20: contribution is $25,000 and profit is $5,000",
+        "Charge $25 because fewer units always reduce total cost by more than lost revenue"
+      ],
+      "tag": "break_even_with_demand",
+      "type": "integration",
+      "objective": "LO5.4",
+      "difficulty": "elite",
+      "conceptCluster": "break_even_analysis",
+      "primarySkill": "break_even_price",
+      "secondarySkills": [
+        "demand_behavior"
+      ],
+      "repairSkill": "break_even_technology",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "At $20, contribution is ($20 − $10) × 2,500 = $25,000, leaving $5,000 after fixed costs. At $25, contribution is $15 × 1,200 = $18,000, leaving a $2,000 loss. The higher margin per unit does not offset lost volume.",
+      "aHash": "1c617550dc3573c69a542df76cc32f46f321377ab80ce729316266147395e5b2",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 40359,
+      "sourceGame": "marketSignal",
+      "q": "Market price and sales both rise. An analyst recommends expanding a supplier’s capacity, claiming these observations prove demand increased and competing supply fell. Capacity is costly and cannot be resold. Which response best separates what the market evidence shows from what the investment decision requires?",
+      "options": [
+        "Invest immediately because a higher price proves competitors left the market",
+        "Reject investment because higher sales prove demand fell",
+        "Assume both curves shifted by identical amounts and forecast the current price forever",
+        "Both may have increased; check the shifts and their persistence before expanding capacity"
+      ],
+      "tag": "comparative_statics",
+      "type": "integration",
+      "objective": "LO8.4",
+      "difficulty": "elite",
+      "conceptCluster": "elite_marketSignal_comparative_statics",
+      "primarySkill": "comparative_statics",
+      "secondarySkills": [
+        "equilibrium_calculation",
+        "reverse_shift_inference"
+      ],
+      "repairSkill": "simultaneous_market_changes",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "The same price-and-quantity pattern can arise from different combinations of shifts. A demand increase can outweigh a simultaneous supply increase. An irreversible investment requires a forecast of future returns, so the observed outcome alone does not justify assuming a lasting shortage of competing capacity.",
+      "aHash": "b810455e3f51f845f02acb92f1e12d4402ea7948d982cb05746a2f120a20640d",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 40361,
+      "sourceGame": "marketSignal",
+      "q": "A rival’s entry reduces an incumbent’s pricing power without changing total market demand. At its revised best price, the incumbent earns positive contribution after avoidable operating costs but cannot recover an earlier nonrecoverable development expense. Which decision and explanation fit these facts?",
+      "options": [
+        "Exit because total market demand did not rise",
+        "Continue with positive contribution; reassess future investment as demand has weakened",
+        "Keep the old price and output because the development expense is sunk",
+        "Increase price until all historical development costs are recovered, regardless of lost buyers"
+      ],
+      "tag": "profit_erosion_entry_imitation",
+      "type": "integration",
+      "objective": "LO9.5",
+      "difficulty": "elite",
+      "conceptCluster": "elite_marketSignal_profit_erosion_entry_imitation",
+      "primarySkill": "profit_erosion_entry_imitation",
+      "secondarySkills": [
+        "monopoly_price_output",
+        "entry_and_imitation"
+      ],
+      "repairSkill": "profit_erosion_entry_imitation",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "Entry can reduce a particular firm’s demand even if market demand is unchanged. The sunk development expense does not determine whether current sales add value. Lower prospective returns still matter for new investment or other avoidable future commitments.",
+      "aHash": "c9d5c571246280af97b579e9a744332c994be96c02bbac0cecabc099afc6f7f8",
+      "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 40375,
+      "sourceGame": "marketSignal",
+      "q": "A natural monopoly can serve 100 customers at a price equal to marginal cost, but then loses $2,000 after fixed costs. A higher uniform price covers all costs while serving only 80. A lump-sum subsidy could cover the $2,000 loss without changing marginal incentives; there are no externalities. Which comparison correctly separates usage efficiency from financing?",
+      "options": [
+        "The break-even price is fully efficient because zero profit guarantees all beneficial trades occur",
+        "The subsidy necessarily reduces efficient usage by raising marginal cost",
+        "Marginal-cost pricing recovers all fixed costs without any subsidy",
+        "The subsidy finances efficient use; break-even pricing excludes some beneficial trades"
+      ],
+      "tag": "monopoly_welfare_regulation",
+      "type": "integration",
+      "objective": "LO9.6",
+      "difficulty": "elite",
+      "conceptCluster": "elite_marketSignal_monopoly_welfare_regulation",
+      "primarySkill": "monopoly_welfare_regulation",
+      "secondarySkills": [
+        "monopoly_output_profit",
+        "market_efficiency"
+      ],
+      "repairSkill": "monopoly_welfare_regulation",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "A price equal to marginal cost permits all beneficial uses but need not recover fixed costs. A lump-sum subsidy finances the shortfall without raising the marginal price. Requiring cost recovery from a higher uniform price can reduce usage below the efficient level.",
+      "aHash": "138b7c7448640f0f38a686e6cc1daa0bbf8b9246a10cc7ffd348f2f4ac52015a",
       "canonicalDifficulty": "elite"
     }
   ],
@@ -7369,12 +7394,12 @@ const questionBanks = {
     {
       "id": 9007,
       "sourceGame": "marketSignal",
-      "q": "A firm estimates a project beta of 1.4. The risk-free rate is 4% and the market risk premium is 6%. Using a simple risk-adjusted hurdle of 4% + beta times the market premium, what hurdle rate should the firm use?",
+      "q": "A firm must invest $100 now for an expected $112 in one year. It discounts expected cash flow at 4% + beta × 6%. The project beta could be anywhere from 0.8 to 1.4; use the project beta, not the firm average. Which decision and sensitivity conclusion is correct?",
       "options": [
-        "8.4%",
-        "10.0%",
-        "14.4%",
-        "12.4%"
+        "Accept throughout the beta range because the expected payoff exceeds the initial cost",
+        "Reject throughout the beta range because any positive beta makes NPV negative",
+        "Accept only when beta exceeds 4/3 because a higher hurdle raises present value",
+        "Acceptance is not robust: NPV is positive below beta 4/3 and negative above it"
       ],
       "tag": "risk_adjusted_hurdle_beta",
       "type": "calculation",
@@ -7387,8 +7412,8 @@ const questionBanks = {
       ],
       "repairSkill": "risk_adjusted_cost_of_capital",
       "commonError": "Adding beta directly to the interest rate or ignoring the market premium",
-      "feedback": "The hurdle is 4% + 1.4(6%) = 12.4%.",
-      "aHash": "8fb63d72caeb74e0ddc16c03b03161640e978c7d536308948b11a2b80b2e5e2c"
+      "feedback": "At beta 0.8 the hurdle is 8.8% and NPV=112/1.088−100≈$2.94. At beta 1.4 the hurdle is 12.4% and NPV≈−$0.36. Break-even requires 4%+beta×6%=12%, so beta=4/3; NPV is zero there. Higher project risk lowers present value.",
+      "aHash": "eeaa4e047612241859eaf8abfc4e7c8aefa864e3c998f4c1c1830e1e1b4ef1e5"
     },
     {
       "id": 9008,
@@ -7443,7 +7468,7 @@ const questionBanks = {
     {
       "id": 9010,
       "sourceGame": "marketSignal",
-      "q": "A project costs $240,000. It returns $90,000 in years 1 and 2, then $80,000 in year 3. A rival project returns $120,000 in years 1 and 2 but nothing afterward. At 10%, which conclusion is correct?",
+      "q": "A project costs $240,000. It returns $90,000 in years 1 and 2, then $80,000 in year 3. A rival project also costs $240,000 today and returns $120,000 in years 1 and 2 but nothing afterward. At 10%, which conclusion is correct?",
       "options": [
         "The second project has the higher NPV because it pays back sooner",
         "Both projects have equal NPV because nominal inflows are equal",
@@ -7518,12 +7543,12 @@ const questionBanks = {
     {
       "id": 9013,
       "sourceGame": "marketSignal",
-      "q": "Technology A has fixed cost $800,000 and marginal cost $6. Technology B has fixed cost $300,000 and marginal cost $11. At what annual output are total costs equal?",
+      "q": "A firm minimizes expected annual cost. Technology A costs $800,000 + $6Q; B costs $300,000 + $11Q. Output will be 60,000 with probability 0.4 or 140,000 with probability 0.6, with the same output and revenue under either technology. It can commit now, or pay $20,000 to choose after output is known. All costs occur in the same period. Which policy is cheapest, compared with the best commitment?",
       "options": [
-        "50,000 units",
-        "100,000 units",
-        "160,000 units",
-        "220,000 units"
+        "Commit to B; its lower fixed cost saves $500,000 regardless of output",
+        "Wait, choose B at low output and A at high output; save $60,000 versus committing to A",
+        "Commit to A; waiting cannot help because expected output exceeds the crossover",
+        "Wait and choose A at low output and B at high output; save $60,000 versus committing to A"
       ],
       "tag": "technology_indifference_large_scale",
       "type": "calculation",
@@ -7536,8 +7561,8 @@ const questionBanks = {
       ],
       "repairSkill": "technology_cost_comparison",
       "commonError": "Dividing the fixed-cost difference by the wrong marginal-cost difference",
-      "feedback": "Set 800,000+6Q=300,000+11Q. The $500,000 fixed-cost gap divided by $5 gives 100,000 units.",
-      "aHash": "8397129fc51aa5fbcab23ddf8fa6ace7582c1edb447cd97eeeb6ed73368cfdd0"
+      "feedback": "The crossover is 100,000 units. At expected Q=108,000, committing to A costs $1,448,000 versus B’s $1,488,000. After observing output, B costs $960,000 in the low state and A costs $1,640,000 in the high state. Expected flexible cost including the fee is 0.4($960,000)+0.6($1,640,000)+$20,000=$1,388,000, saving $60,000. Flexibility before the fee is worth $80,000.",
+      "aHash": "d0030d4940884567fb89f1d94b1687f6a5b27e34f26edbfd82cd58b0d97594a0"
     },
     {
       "id": 9014,
@@ -8488,31 +8513,6 @@ const questionBanks = {
       "aHash": "a9b45a15af4db8706c8d15b7ca1318bde56d38b602f62401ea0da1266fdab7d8"
     },
     {
-      "id": 9052,
-      "sourceGame": "marketSignal",
-      "q": "Market demand is Qd=500-10P and supply is Qs=50+5P. What are equilibrium price and quantity?",
-      "options": [
-        "$30 and 200 units",
-        "$20 and 300 units",
-        "$25 and 250 units",
-        "$35 and 150 units"
-      ],
-      "tag": "linear_equilibrium_legendary",
-      "type": "calculation",
-      "objective": "LO8.3",
-      "difficulty": "legendary",
-      "conceptCluster": "market_equilibrium",
-      "primarySkill": "equilibrium_calculation",
-      "secondarySkills": [
-        "buyer_behavior",
-        "seller_behavior"
-      ],
-      "repairSkill": "equilibrium_shortage_surplus",
-      "commonError": "Solving only one equation or substituting price incorrectly",
-      "feedback": "Set 500-10P=50+5P. Then 450=15P, so P=$30 and Q=200.",
-      "aHash": "ec56515c60c408cdb3fcb5fe9843d5ac3f0bfb6f57dad620135a2dc6bb020221"
-    },
-    {
       "id": 9053,
       "sourceGame": "marketSignal",
       "q": "For Qd=500-10P and Qs=50+5P, a price ceiling is set at $20. What shortage results?",
@@ -8615,7 +8615,7 @@ const questionBanks = {
     {
       "id": 9060,
       "sourceGame": "marketSignal",
-      "q": "On the symbolic graph, the market moves from S0/D0 to S1/D1 and price returns to P1 while quantity rises from QA to QD. What can be inferred?",
+      "q": "Refer to the supply and demand graph. The market moves from S0/D0 to S1/D1 and price returns to P1 while quantity rises from QA to QD. What can be inferred?",
       "options": [
         "Both demand and supply increased",
         "Demand increased while supply decreased",
@@ -8642,7 +8642,7 @@ const questionBanks = {
     {
       "id": 9061,
       "sourceGame": "marketSignal",
-      "q": "On the symbolic graph, the market starts at S1/D0 and ends at S0/D1. Which changes occurred?",
+      "q": "Refer to the supply and demand graph. The market starts at S1/D0 and ends at S0/D1. Which changes occurred?",
       "options": [
         "Supply increased and demand decreased, lowering price",
         "Supply fell and demand rose; price increased from P0 to P2",
@@ -8744,7 +8744,7 @@ const questionBanks = {
     {
       "id": 9065,
       "sourceGame": "marketSignal",
-      "q": "A demand increase initially raises price and quantity. Entry then shifts market supply right. Which long-run statement is most plausible in a constant-cost competitive industry?",
+      "q": "Refer to the long-run competition graph. A demand increase initially raises price and quantity. Entry then shifts market supply right. Which long-run statement is most plausible in a constant-cost competitive industry?",
       "options": [
         "Price rises permanently and firm profits remain above normal",
         "Price returns; market quantity stays higher",
@@ -8846,7 +8846,7 @@ const questionBanks = {
     {
       "id": 9069,
       "sourceGame": "marketSignal",
-      "q": "In the right panel, demand rises from D0 to D1 and the market moves from A to B. What condition exists for the representative firm in the left panel at the corresponding price?",
+      "q": "Refer to the long-run competition graph. Demand rises from D0 to D1 and the market moves from A to B. What condition exists for the representative firm in the left panel at the corresponding price?",
       "options": [
         "P2 equals ATC at Q2, so the firm earns zero economic profit",
         "P2 exceeds ATC at Q2, so the firm earns economic profit",
@@ -8873,7 +8873,7 @@ const questionBanks = {
     {
       "id": 9070,
       "sourceGame": "marketSignal",
-      "q": "After the market moves from A to B, what sequence produces the long-run point D?",
+      "q": "Refer to the long-run competition graph. After the market moves from A to B, what sequence produces the long-run point D?",
       "options": [
         "Entry shifts supply to S1 and price down to P0",
         "Exit shifts supply to S0 and price back to P1",
@@ -8900,7 +8900,7 @@ const questionBanks = {
     {
       "id": 9071,
       "sourceGame": "marketSignal",
-      "q": "At point C in the right panel, what long-run force moves the market back toward A if demand is D0?",
+      "q": "Refer to the long-run competition graph. At point C in the right panel, what long-run force moves the market back toward A if demand is D0?",
       "options": [
         "Profits cause entry; supply shifts toward S0 and price toward P1",
         "Profits cause entry; supply shifts toward S1 and price toward P0",
@@ -9078,7 +9078,7 @@ const questionBanks = {
     {
       "id": 9078,
       "sourceGame": "marketSignal",
-      "q": "A risky project offers expected return 12%, the safe rate is 4%, expected loss is 5%, and investors require an additional 4% uncertainty premium. What is the net compensation beyond required risk?",
+      "q": "A risky project offers a promised return of 12% before expected credit losses, the safe rate is 4%, expected loss is 5%, and investors require an additional 4% uncertainty premium. What is the net compensation beyond required risk?",
       "options": [
         "3 percentage points",
         "4 percentage points",
@@ -9228,7 +9228,7 @@ const questionBanks = {
       "q": "A supplier’s specialized tool costs $200,000. The deal creates $260,000 in value, but after investment the buyer can credibly force the supplier down to a $170,000 payoff. What is the likely ex ante result?",
       "options": [
         "The supplier invests because total surplus is $60,000",
-        "The supplier refuses or underinvests because expected private payoff is below investment cost",
+        "Expected private returns do not cover the cost, discouraging investment",
         "The buyer refuses because the tool has too much outside value",
         "The investment is efficient because the supplier’s accounting cost is sunk later"
       ],
@@ -9242,14 +9242,14 @@ const questionBanks = {
       "repairSkill": "post_investment_holdup",
       "commonError": "misses_renegotiation_risk",
       "feedback": "The project creates joint value, but the supplier expects to lose $30,000 privately. That is the underinvestment problem created by hold-up.",
-      "aHash": "216050777e14ff3d82f8d0b59eed2ee7ba5e13bfd25330cabdb14de857105219"
+      "aHash": "66289ce15df85f811bb690aca537441863c85355406efdf35bab9354a6934e6c"
     },
     {
       "id": 9092,
       "sourceGame": "marketSignal",
       "q": "A firm threatens to switch buyers unless its customer signs a commitment before a custom buildout. The customer says, “That is just the supplier being greedy.” Which response is best?",
       "options": [
-        "The supplier may be protecting against a predictable hold-up problem created by specific investment",
+        "The supplier may be protecting its specific investment against later hold-up",
         "The supplier is irrational because commitments reduce flexibility",
         "The customer should wait until the buildout is complete to negotiate harder",
         "The supplier should ignore outside options because the investment will be sunk"
@@ -9264,7 +9264,7 @@ const questionBanks = {
       "repairSkill": "post_investment_holdup",
       "commonError": "misses_renegotiation_risk",
       "feedback": "A commitment can be a way to support efficient investment, not merely a grab for surplus.",
-      "aHash": "7a82d8acf6fb90548b0052aeee6f2f08503afa043e8a8567ce94b7b340890f45"
+      "aHash": "fb2c078ea31b2b391e40b776a8f537339647893a6b38a9c960ee8a59e7d74f28"
     },
     {
       "id": 9093,
@@ -9294,7 +9294,7 @@ const questionBanks = {
       "q": "A buyer wants a supplier to make a relationship-specific investment. The efficient contract should focus on which managerial tradeoff?",
       "options": [
         "Maximizing the buyer’s bargaining power after the investment is sunk",
-        "Balancing flexibility for changed conditions with protection against opportunistic renegotiation",
+        "Balancing flexibility with protection against opportunistic renegotiation",
         "Removing all fixed costs from the supplier’s accounting statements",
         "Setting price equal to average cost in every possible future state"
       ],
@@ -9308,7 +9308,802 @@ const questionBanks = {
       "repairSkill": "post_investment_holdup",
       "commonError": "misses_renegotiation_risk",
       "feedback": "Good design protects the specific investment while preserving enough flexibility for legitimate changes in cost or demand.",
-      "aHash": "ad42a5076014dfe7b9b2cbe5fc251fa1ae2f950fa2f4e0206ff3ee139bb1c48f"
+      "aHash": "78a24e26053b1c7234dcf1a2af3da6e9f0c6cd967b6b6d19625fd0c7d1047286"
+    },
+    {
+      "id": 156,
+      "sourceGame": "marketSignal",
+      "q": "Market demand is Qd = 180 - 6P and market supply is Qs = 30 + 4P. What are the equilibrium price and quantity?",
+      "options": [
+        "P = $10 and Q = 120",
+        "P = $15 and Q = 90",
+        "P = $18 and Q = 72",
+        "P = $25 and Q = 130"
+      ],
+      "tag": "equilibrium_equations",
+      "type": "calculation",
+      "objective": "LO8.3",
+      "difficulty": "legendary",
+      "conceptCluster": "market_equilibrium",
+      "primarySkill": "equilibrium_calculation",
+      "secondarySkills": [],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Setting price equal to quantity or solving only one equation",
+      "feedback": "Set demand equal to supply: 180 - 6P = 30 + 4P, so P = 15 and Q = 90.",
+      "aHash": "4e7f049e4cd469911f5d07fede404094725d958f2f56e4775ba9cc90b79f8e23",
+      "canonicalDifficulty": "legendary"
+    },
+    {
+      "id": 245,
+      "sourceGame": "marketSignal",
+      "q": "Demand is Qd = 300 - 10P and supply is Qs = 60 + 5P. At a price of $12, what market condition exists?",
+      "options": [
+        "A surplus of 60 units",
+        "A shortage of 60 units",
+        "A shortage of 120 units",
+        "A surplus of 120 units"
+      ],
+      "tag": "linear_shortage",
+      "type": "calculation",
+      "objective": "LO8.3",
+      "difficulty": "legendary",
+      "conceptCluster": "legendary_marketSignal_shortage_surplus_calculation",
+      "primarySkill": "shortage_surplus_calculation",
+      "secondarySkills": [],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Reversing excess demand or calculating only one side",
+      "feedback": "At $12, demand is 180 and supply is 120, creating a 60-unit shortage.",
+      "aHash": "892d0367be0992e8d05b40bd7a49d32d0e1ddbe05068274bd4ac3c0696cd038f",
+      "canonicalDifficulty": "legendary"
+    },
+    {
+      "id": 349,
+      "sourceGame": "marketSignal",
+      "q": "Demand is Qd=900-15P and supply is Qs=100+5P. A per-unit production tax shifts supply to Qs=100+5(P-8). What are the new equilibrium buyer price and quantity?",
+      "options": [
+        "$38 and 330 units",
+        "$42 and 270 units",
+        "$40 and 300 units",
+        "$46 and 210 units"
+      ],
+      "tag": "tax_shift_equilibrium",
+      "type": "calculation",
+      "objective": "LO8.2",
+      "difficulty": "legendary",
+      "conceptCluster": "legendary_marketSignal_equilibrium_calculation",
+      "primarySkill": "equilibrium_calculation",
+      "secondarySkills": [
+        "supply_behavior"
+      ],
+      "repairSkill": "buyer_seller_behavior",
+      "commonError": "Shifting demand or applying the tax to the buyer equation incorrectly",
+      "feedback": "Set 900-15P=100+5(P-8); equilibrium is P=$42 and Q=270.",
+      "aHash": "3130f89d4695c830b33ac36db53e9fd48d2b9b5660ef0ec680f99ddbf6bde9cb",
+      "canonicalDifficulty": "legendary"
+    },
+    {
+      "id": 355,
+      "sourceGame": "marketSignal",
+      "q": "Market demand is Qd=1,200-20P and supply is Qs=200+30P. The government sets price at $16. What shortage or surplus results?",
+      "options": [
+        "A surplus of 200 units",
+        "A shortage of 400 units",
+        "No imbalance",
+        "A shortage of 200 units"
+      ],
+      "tag": "equation_shortage",
+      "type": "calculation",
+      "objective": "LO8.3",
+      "difficulty": "legendary",
+      "conceptCluster": "legendary_marketSignal_shortage_surplus",
+      "primarySkill": "shortage_surplus",
+      "secondarySkills": [
+        "equilibrium_calculation"
+      ],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Subtracting demand from supply with the wrong sign",
+      "feedback": "At $16, Qd=880 and Qs=680, so shortage is 200.",
+      "aHash": "12a617cc2618dad0f82d991070283a971868212e658232abfef9cc1782e4d807",
+      "canonicalDifficulty": "legendary"
+    },
+    {
+      "id": 9052,
+      "sourceGame": "marketSignal",
+      "q": "Market demand is Qd=500-10P and supply is Qs=50+5P. What are equilibrium price and quantity?",
+      "options": [
+        "$30 and 200 units",
+        "$20 and 300 units",
+        "$25 and 250 units",
+        "$35 and 150 units"
+      ],
+      "tag": "linear_equilibrium_legendary",
+      "type": "calculation",
+      "objective": "LO8.3",
+      "difficulty": "legendary",
+      "conceptCluster": "market_equilibrium",
+      "primarySkill": "equilibrium_calculation",
+      "secondarySkills": [
+        "buyer_behavior",
+        "seller_behavior"
+      ],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Solving only one equation or substituting price incorrectly",
+      "feedback": "Set 500-10P=50+5P. Then 450=15P, so P=$30 and Q=200.",
+      "aHash": "ec56515c60c408cdb3fcb5fe9843d5ac3f0bfb6f57dad620135a2dc6bb020221"
+    },
+    {
+      "id": 241,
+      "sourceGame": "marketSignal",
+      "q": "Initially Qd = 210 − 5P and Qs = −30 + 5P. A production improvement adds 40 units to supply at every price; demand is unchanged. Relative to the original equilibrium, how do price and quantity change?",
+      "options": [
+        "Price falls $8 and quantity rises 40 units",
+        "Price falls $4 and quantity rises 20 units",
+        "Price stays unchanged and quantity rises 40 units",
+        "Price rises $4 and quantity falls 20 units"
+      ],
+      "tag": "shifted_equilibrium_calculation",
+      "type": "calculation",
+      "objective": "LO8.4",
+      "difficulty": "legendary",
+      "conceptCluster": "legendary_marketSignal_shifted_equilibrium_calculation",
+      "primarySkill": "shifted_equilibrium_calculation",
+      "secondarySkills": [],
+      "repairSkill": "demand_supply_shifts",
+      "commonError": "equates_horizontal_supply_shift_with_equilibrium_quantity_change",
+      "feedback": "Originally P = 24 and Q = 90. New supply is Qs = 10 + 5P, so P = 20 and Q = 110. A 40-unit horizontal shift is not a 40-unit equilibrium-quantity increase.",
+      "aHash": "1556be2b87e838151476f743d277ce378c2bd94698875fe826d555f3bb4b3d77",
+      "canonicalDifficulty": "legendary"
+    },
+    {
+      "id": 246,
+      "sourceGame": "marketSignal",
+      "q": "Demand is Qd = 200 - 5Pc and supply is Qs = 20 + 5Ps. A tax creates Pc = Ps + $8. What quantity is traded?",
+      "options": [
+        "70 units",
+        "100 units",
+        "90 units",
+        "110 units"
+      ],
+      "tag": "tax_wedge_equilibrium",
+      "type": "calculation",
+      "objective": "LO8.3",
+      "difficulty": "legendary",
+      "conceptCluster": "market_equilibrium",
+      "primarySkill": "tax_wedge_calculation",
+      "secondarySkills": [],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Using one price for buyers and sellers after a per-unit tax",
+      "feedback": "Solving with the $8 wedge gives Ps = $14, Pc = $22, and Q = 90.",
+      "aHash": "e9b0c6b9b34dbf67d5b4f5ff67d33780e3941447ee52edca2e7d7d696c3cf14a",
+      "canonicalDifficulty": "legendary"
+    },
+    {
+      "id": 250,
+      "sourceGame": "marketSignal",
+      "q": "Initial demand is Qd = 200 - 5P and supply is Qs = 20 + 5P. Demand then rises by 30 units at every price. What is the new equilibrium price?",
+      "options": [
+        "$18",
+        "$20",
+        "$21",
+        "$24"
+      ],
+      "tag": "equation_demand_shift",
+      "type": "calculation",
+      "objective": "LO8.4",
+      "difficulty": "legendary",
+      "conceptCluster": "market_equilibrium",
+      "primarySkill": "shifted_equilibrium_calculation",
+      "secondarySkills": [],
+      "repairSkill": "demand_supply_shifts",
+      "commonError": "Changing quantity but leaving the demand equation unchanged",
+      "feedback": "New demand is 230 - 5P; equating it with supply gives P = 21.",
+      "aHash": "3d41d958955832461b3be9ef1a80cf7985932df222d73ebfb3f78d78a7b6120c",
+      "canonicalDifficulty": "legendary"
+    },
+    {
+      "id": 283,
+      "sourceGame": "marketSignal",
+      "q": "Demand is P = 100 − Q and MC = $20, with no fixed costs or externalities. Competition produces 80 units at $20; a single-price monopoly produces 40 at $60. Of the reduction in consumer surplus, how much becomes monopoly profit and how much is lost total surplus?",
+      "options": [
+        "$1,600 becomes profit and $1,600 is lost surplus",
+        "$2,400 becomes profit and no surplus is lost",
+        "$800 becomes profit and $1,600 is lost surplus",
+        "$1,600 becomes profit and $800 is lost surplus"
+      ],
+      "tag": "monopoly_surplus_effect",
+      "type": "calculation",
+      "objective": "LO9.6",
+      "difficulty": "legendary",
+      "conceptCluster": "legendary_marketSignal_monopoly_market_effects",
+      "primarySkill": "monopoly_market_effects",
+      "secondarySkills": [],
+      "repairSkill": "monopoly_welfare_regulation",
+      "commonError": "Treating every consumer loss as a transfer to the monopolist",
+      "feedback": "Competitive consumer surplus is 0.5 × 80 × 80 = $3,200; monopoly consumer surplus is 0.5 × 40 × 40 = $800. The $2,400 reduction divides into $1,600 profit and $800 deadweight loss.",
+      "aHash": "fe63af52dc897069433c12a8c4c23297cafbecdd7ea38ace6fcdc63cf44cee31",
+      "canonicalDifficulty": "legendary"
+    },
+    {
+      "id": 285,
+      "sourceGame": "marketSignal",
+      "q": "Demand is P = 70 - Q and marginal cost rises from $10 to $20. There is no avoidable fixed cost. How does the monopoly solution change?",
+      "options": [
+        "Output rises from 30 to 40 while price falls because higher marginal cost expands supply",
+        "Output falls from 30 to 25 and price rises from $40 to $45",
+        "Output stays 30 and price rises to $50",
+        "Output falls from 60 to 50 and price stays $20"
+      ],
+      "tag": "monopoly_cost_shift",
+      "type": "calculation",
+      "objective": "LO9.6",
+      "difficulty": "legendary",
+      "conceptCluster": "legendary_marketSignal_monopoly_price_output",
+      "primarySkill": "monopoly_price_output",
+      "secondarySkills": [],
+      "repairSkill": "monopoly_output_profit",
+      "commonError": "Using the competitive rule P = MC",
+      "feedback": "With MR = 70 - 2Q, Q falls from 30 to 25; demand then gives prices $40 and $45.",
+      "aHash": "de8cc8c55b06c3516eaa8eb385067193a32ce39125e33d29658f0cdbcc0020ba",
+      "canonicalDifficulty": "legendary"
+    },
+    {
+      "id": 9184,
+      "sourceGame": "marketSignal",
+      "q": "A monopolist faces P = 120 - Q and MC = $20. A regulator imposes a binding price cap of $50. Assuming the firm must charge one price and will serve demand while price exceeds MC, what output results?",
+      "options": [
+        "Q = 70: above monopoly output, below efficient output",
+        "Q = 50, because regulation cannot change monopoly output",
+        "Q = 100, because any price cap forces marginal-cost pricing",
+        "Q = 20, because the cap equals marginal cost plus $30"
+      ],
+      "tag": "boss_monopoly_price_cap_output",
+      "type": "calculation",
+      "objective": "LO9.6",
+      "difficulty": "legendary",
+      "conceptCluster": "legendary_marketSignal_monopoly_regulation",
+      "primarySkill": "monopoly_regulation",
+      "secondarySkills": [
+        "monopoly_output_profit",
+        "market_efficiency"
+      ],
+      "repairSkill": "monopoly_welfare_regulation",
+      "commonError": "Keeping the unregulated MR=MC quantity after the cap changes the firm's feasible revenue schedule",
+      "feedback": "Unregulated MR=120-2Q gives Q=50. At capped price $50, demand is Q=70, and serving those units remains profitable because $50>$20.",
+      "aHash": "0fc9e1d821666f89c11972b258b0c6689c8cb15bdaf6176e2c008173a70388e8",
+      "canonicalDifficulty": "legendary"
+    },
+    {
+      "id": 384,
+      "sourceGame": "marketSignal",
+      "q": "A monopolist faces P = 138 - 2Q and constant MC = $30. There is no avoidable fixed cost. Which price-output pair maximizes profit?",
+      "options": [
+        "Q = 27 and P = $84",
+        "Q = 54 and P = $30",
+        "Q = 34.5 and P = $69",
+        "Q = 27 and P = $54"
+      ],
+      "tag": "linear_monopoly_solution",
+      "type": "calculation",
+      "objective": "LO9.6",
+      "difficulty": "legendary",
+      "conceptCluster": "legendary_marketSignal_monopoly_output_rule",
+      "primarySkill": "monopoly_output_rule",
+      "secondarySkills": [
+        "inverse_demand"
+      ],
+      "repairSkill": "monopoly_output_profit",
+      "commonError": "Setting price equal to marginal cost rather than marginal revenue equal to marginal cost",
+      "feedback": "MR = 138 - 4Q. Setting it equal to 30 gives Q = 27; demand gives P = 84.",
+      "aHash": "6aac7193953fcd38555ccba8284b4c7667056db514454f9c8005c8125cf84f7b",
+      "canonicalDifficulty": "legendary"
+    },
+    {
+      "id": 385,
+      "sourceGame": "marketSignal",
+      "q": "A single-price monopolist faces demand P = 100 − Q and constant MC = $20, with no fixed costs or externalities. What is deadweight loss relative to competition?",
+      "options": [
+        "$400",
+        "$800",
+        "$1,600",
+        "$3,200"
+      ],
+      "tag": "monopoly_deadweight_loss",
+      "type": "calculation",
+      "objective": "LO9.6",
+      "difficulty": "legendary",
+      "conceptCluster": "legendary_marketSignal_monopoly_market_effects",
+      "primarySkill": "monopoly_market_effects",
+      "secondarySkills": [
+        "welfare_analysis"
+      ],
+      "repairSkill": "monopoly_welfare_regulation",
+      "commonError": "Using the monopoly profit rectangle instead of the lost-trade triangle",
+      "feedback": "Competitive Q is 80, monopoly Q is 40, and the wedge at Q=40 is $40; DWL=.5(40)(40)=$800.",
+      "aHash": "752cf93704f4a6dea555249feb7cfecec1f2587839021a6b4040f57170baae9c",
+      "canonicalDifficulty": "legendary"
+    },
+    {
+      "id": 9175,
+      "sourceGame": "marketSignal",
+      "q": "A monopolist faces P = 100 - Q, constant marginal cost of $20, and fixed cost of $400. What are the monopoly quantity, price, and profit?",
+      "options": [
+        "Q = 80, P = $20, profit = -$400",
+        "Q = 40, P = $40, profit = $400",
+        "Q = 30, P = $70, profit = $1,100",
+        "Q = 40, P = $60, profit = $1,200"
+      ],
+      "tag": "boss_monopoly_linear_demand_profit",
+      "type": "calculation",
+      "objective": "LO9.6",
+      "difficulty": "legendary",
+      "conceptCluster": "legendary_marketSignal_monopoly_output_profit",
+      "primarySkill": "monopoly_output_profit",
+      "secondarySkills": [
+        "monopoly_marginal_revenue",
+        "profit_calculation"
+      ],
+      "repairSkill": "monopoly_output_profit",
+      "commonError": "Setting price equal to marginal cost or treating demand as marginal revenue",
+      "feedback": "MR=100-2Q. Set MR=20 to get Q=40; demand gives P=$60. Profit=(60-20)40-400=$1,200.",
+      "aHash": "1d39e746584a3a00fcaac0ec074e5712191639e1add86ae0bdaf42da9035712c",
+      "canonicalDifficulty": "legendary"
+    },
+    {
+      "id": 305,
+      "sourceGame": "marketSignal",
+      "q": "Demand is Qd = 240 − 4Pb and supply is Qs = 40 + 6Ps, where Pb is buyers’ price and Ps is sellers’ net receipt. A $5 tax makes Pb = Ps + 5. A ceiling limits Pb to $21. With no government purchases or inventories, what are the unconstrained taxed buyer price and the maximum trade under the ceiling?",
+      "options": [
+        "$20 without the ceiling; at most 160 units under the ceiling",
+        "$23 without the ceiling; at most 136 units under the ceiling",
+        "$23 without the ceiling; at most 156 units under the ceiling",
+        "$25 without the ceiling; at most 166 units under the ceiling"
+      ],
+      "tag": "shortage_surplus",
+      "type": "synthesis",
+      "objective": "LO8.3",
+      "difficulty": "legendary",
+      "conceptCluster": "legendary_marketSignal_shortage_surplus",
+      "primarySkill": "shortage_surplus",
+      "secondarySkills": [
+        "equilibrium_calculation",
+        "market_interventions"
+      ],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Applying a tax to buyer and seller prices without the wedge",
+      "feedback": "Without the ceiling, 240 − 4Pb = 40 + 6(Pb − 5), so Pb = $23. At the ceiling, sellers receive $16 and offer 136, while buyers demand 156. The shortage is 20 and transactions cannot exceed 136.",
+      "aHash": "89b0a12dc605bece85cd98c59999d4b03e47848782f6229cf304797bdfd7e816",
+      "canonicalDifficulty": "legendary"
+    },
+    {
+      "id": 310,
+      "sourceGame": "marketSignal",
+      "q": "Initially Qd = 300 − 5P and Qs = 60 + 3P. A marketing change adds 40 units of demand at every price and a process improvement adds 80 units of supply. A manager plans to raise the forecast market price because demand increased. Which revised forecast is justified?",
+      "options": [
+        "Price stays $30 and quantity rises from 150 to 270",
+        "Price rises from $30 to $35 and quantity rises from 150 to 165",
+        "Price falls from $30 to $25 and quantity rises from 150 to 215",
+        "Price falls from $30 to $20 and quantity rises from 150 to 240"
+      ],
+      "tag": "comparative_statics",
+      "type": "synthesis",
+      "objective": "LO8.4",
+      "difficulty": "legendary",
+      "conceptCluster": "legendary_marketSignal_comparative_statics",
+      "primarySkill": "comparative_statics",
+      "secondarySkills": [
+        "equilibrium_calculation",
+        "demand_shift_analysis",
+        "supply_shift_analysis"
+      ],
+      "repairSkill": "simultaneous_market_changes",
+      "commonError": "Using a demand increase alone to predict price after a cost change",
+      "feedback": "The initial equilibrium is $30 and 150. New equilibrium solves 340 − 5P = 140 + 3P, giving $25 and 215. Both shifts raise quantity, but the larger supply increase lowers price.",
+      "aHash": "4a40d60167830c71973783c17842ee34c47b21cdba8007c243e3029d1087b6b3",
+      "canonicalDifficulty": "legendary"
+    },
+    {
+      "id": 311,
+      "sourceGame": "marketSignal",
+      "q": "A competitive industry’s output rises from 10,000 to 13,000 after entry, while price falls from $30 to $24. An incumbent has MC = 10 + 0.02q and total cost TC = 4,000 + 10q + 0.01q². These costs and demand conditions other than entry are unchanged. What happens to this incumbent’s profit-maximizing output and economic profit?",
+      "options": [
+        "Output remains 1,000; profit falls from $6,000 to zero",
+        "Output rises from 1,000 to 1,300; profit rises with market output",
+        "Output falls from 1,000 to 700; profit becomes zero because entry occurred",
+        "Output falls from 1,000 to 700; profit falls from $6,000 to $900"
+      ],
+      "tag": "competitive_returns",
+      "type": "synthesis",
+      "objective": "LO9.1",
+      "difficulty": "legendary",
+      "conceptCluster": "legendary_marketSignal_competitive_returns",
+      "primarySkill": "competitive_returns",
+      "secondarySkills": [
+        "firm_market_linkage",
+        "economic_profit_interpretation"
+      ],
+      "repairSkill": "competitive_returns",
+      "commonError": "Inferring each incumbent’s output from expanding industry output",
+      "feedback": "Set price equal to MC: q changes from 1,000 to 700. Profit is Pq − TC: initially $30,000 − $24,000 = $6,000; afterward $16,800 − $15,900 = $900. Total industry output can grow while each incumbent contracts, and entry need not already have eliminated all profit.",
+      "aHash": "b8181936a7ab80e9c271f379d31b4af09626e86bb68a048dd760616ad7936087",
+      "canonicalDifficulty": "legendary"
+    },
+    {
+      "id": 314,
+      "sourceGame": "marketSignal",
+      "q": "A firm has fixed cost $80,000 and constant variable cost $16 per unit. Demand is Q = 60,000 − 2,000P. Which two prices each produce zero profit?",
+      "options": [
+        "$22 and $24",
+        "$18 and $28",
+        "$20 and $26",
+        "$16 and $30"
+      ],
+      "tag": "break_even_with_demand",
+      "type": "calculation",
+      "objective": "LO5.4",
+      "difficulty": "legendary",
+      "conceptCluster": "break_even_analysis",
+      "primarySkill": "break_even_price",
+      "secondarySkills": [
+        "demand_behavior"
+      ],
+      "repairSkill": "break_even_technology",
+      "commonError": "Using price equal to variable cost or ignoring how price changes quantity demanded",
+      "feedback": "Profit is (P − 16)(60,000 − 2,000P) − 80,000 = −2,000(P − 20)(P − 26). Both $20 at 20,000 units and $26 at 8,000 units break even. Higher price also reduces sales.",
+      "aHash": "6d21cec9bc7fc1e725feb452c0bec9c78412463142b211a92b142f91722a8e9a",
+      "canonicalDifficulty": "legendary"
+    },
+    {
+      "id": 359,
+      "sourceGame": "marketSignal",
+      "q": "Demand is initially Qd = 600 − 10P and supply Qs = 60 + 8P. Later equilibrium is observed at P = $32 and Q = 370. Demand and supply slopes are unchanged, and any changes are parallel shifts. Which intercept changes explain the observation?",
+      "options": [
+        "Supply increases by 130 units at every price; demand is unchanged",
+        "Demand increases by 54 units at every price; supply increases by 90",
+        "Demand increases by 70 units at every price; supply is unchanged",
+        "Demand increases by 90 units at every price; supply increases by 54"
+      ],
+      "tag": "comparative_statics",
+      "type": "synthesis",
+      "objective": "LO8.4",
+      "difficulty": "legendary",
+      "conceptCluster": "legendary_marketSignal_comparative_statics",
+      "primarySkill": "comparative_statics",
+      "secondarySkills": [
+        "equilibrium_calculation",
+        "reverse_shift_inference"
+      ],
+      "repairSkill": "simultaneous_market_changes",
+      "commonError": "Applying only one shift or treating an intercept change as a price change",
+      "feedback": "At price $32, original demand would be 280 units, so reaching 370 requires a 90-unit increase. Original supply would be 316, so reaching 370 requires a 54-unit increase. Both curves shift right even though equilibrium price rises; a higher price alone does not establish that supply fell.",
+      "aHash": "753eef8d86ab4a68eb4fe21e69a309687d034d4033dd704eb2de8d6c6d77077c",
+      "canonicalDifficulty": "legendary"
+    },
+    {
+      "id": 361,
+      "sourceGame": "marketSignal",
+      "q": "Before imitation, an incumbent’s residual demand is P = 90 − Q. Entry changes it to P = 70 − Q even though total market demand is unchanged. The firm charges one price, has constant MC $10 and no fixed cost. How do its optimal output, price and profit change?",
+      "options": [
+        "Output 40 to 30; price $50 to $40; profit remains $1,600",
+        "Output 40 to 30; price $50 to $40; profit $1,600 to $900",
+        "Output remains 40; price remains $50; profit falls to $900",
+        "Output 80 to 60; price stays $10; profit stays zero"
+      ],
+      "tag": "profit_erosion_entry_imitation",
+      "type": "synthesis",
+      "objective": "LO9.5",
+      "difficulty": "legendary",
+      "conceptCluster": "legendary_marketSignal_profit_erosion_entry_imitation",
+      "primarySkill": "profit_erosion_entry_imitation",
+      "secondarySkills": [
+        "monopoly_price_output",
+        "entry_and_imitation"
+      ],
+      "repairSkill": "profit_erosion_entry_imitation",
+      "commonError": "Confusing unchanged market demand with unchanged demand for the incumbent",
+      "feedback": "Entry reduces the demand facing the incumbent. Initially, marginal revenue is 90 − 2Q; after entry it is 70 − 2Q. Setting each equal to the $10 marginal cost gives outputs of 40 and 30, with prices of $50 and $40. Profit falls from ($50 − $10) × 40 = $1,600 to ($40 − $10) × 30 = $900. Total market demand can stay unchanged while an individual firm loses customers.",
+      "aHash": "f1c5f4e5ea86f3207e35de7ee0ac1ce425c3afd787900e3565761805566f238c",
+      "canonicalDifficulty": "legendary"
+    },
+    {
+      "id": 375,
+      "sourceGame": "marketSignal",
+      "q": "A natural monopoly has demand P = 50 − Q, constant MC $10 and fixed cost $300. It charges one price. A regulator can instead set $10, $20 or $30, without a subsidy. What is unregulated monopoly output, and which allowed regulated price serves the largest quantity while covering all costs?",
+      "options": [
+        "Monopoly output 30; regulated price $20 serves 30 and earns $300",
+        "Monopoly output 40; regulated price $10 serves 40 and breaks even",
+        "Monopoly output 20; regulated price $30 serves 20 and breaks even",
+        "Monopoly output 20; regulated price $20 serves 30 and breaks even"
+      ],
+      "tag": "monopoly_welfare_regulation",
+      "type": "synthesis",
+      "objective": "LO9.6",
+      "difficulty": "legendary",
+      "conceptCluster": "legendary_marketSignal_monopoly_welfare_regulation",
+      "primarySkill": "monopoly_welfare_regulation",
+      "secondarySkills": [
+        "monopoly_output_profit",
+        "market_efficiency"
+      ],
+      "repairSkill": "monopoly_welfare_regulation",
+      "commonError": "Assuming marginal-cost pricing finances a firm with fixed cost",
+      "feedback": "MR = 50 − 2Q equals MC of $10 at monopoly output 20, with price $30 and profit $100. At regulated price $10, sales of 40 leave a $300 fixed-cost loss. At $20, sales of 30 contribute $300 and break even. Price $30 earns $100 but serves fewer buyers. Among the feasible listed policies, $20 maximizes output.",
+      "aHash": "0e50b503a68a619e9a630d9c7bf42cc9ab9a265f9013e8dce8a1152c0f64ebb7",
+      "canonicalDifficulty": "legendary"
+    },
+    {
+      "id": 2001,
+      "sourceGame": "marketSignal",
+      "q": "Demand is Qd = 180 − 3P and supply is Qs = 20 + 5P. What price and quantity clear the market?",
+      "options": [
+        "$20 and 100 units",
+        "$20 and 120 units",
+        "$40 and 60 units",
+        "$16 and 132 units"
+      ],
+      "tag": "equilibrium_calculation",
+      "type": "calculation",
+      "objective": "LO8.3",
+      "difficulty": "legendary",
+      "conceptCluster": "legendary_marketSignal_equilibrium_calculation",
+      "primarySkill": "equilibrium_calculation",
+      "secondarySkills": [],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Failing to equate demand and supply",
+      "feedback": "Set 180 − 3P = 20 + 5P, so 8P = 160. At P = $20 both quantities equal 120.",
+      "aHash": "4b9e0c223bfbcc293c6e02fe94d67f887e452280666aee60d7a9e6c97d8fc589"
+    },
+    {
+      "id": 2002,
+      "sourceGame": "marketSignal",
+      "q": "Demand is Qd = 180 − 3P and supply is Qs = 20 + 5P. At a posted price of $15, what imbalance and price pressure arise if price can adjust?",
+      "options": [
+        "A shortage of 135 units creates upward price pressure",
+        "A surplus of 40 units creates downward price pressure",
+        "A shortage of 40 units creates upward price pressure",
+        "A surplus of 95 units creates downward price pressure"
+      ],
+      "tag": "shortage_surplus",
+      "type": "analysis",
+      "objective": "LO8.3",
+      "difficulty": "legendary",
+      "conceptCluster": "legendary_marketSignal_shortage_surplus",
+      "primarySkill": "shortage_surplus",
+      "secondarySkills": [],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Confusing excess demand with excess supply",
+      "feedback": "At $15 buyers want 135 units and sellers offer 95. The 40-unit shortage creates upward price pressure.",
+      "aHash": "1db29f9926ba44615cd48091fcd6c9577549a93f8a37660f973e14fc14ee2559"
+    },
+    {
+      "id": 2005,
+      "sourceGame": "marketSignal",
+      "q": "Initially Qd = 180 − 3P and Qs = 20 + 5P. A preference change adds 24 units to demand at every price, while cheaper inputs add 24 units to supply at every price. What happens to equilibrium?",
+      "options": [
+        "Price stays $20 and quantity rises from 120 to 144",
+        "Price rises to $23 and quantity rises to 135",
+        "Price falls to $17 and quantity rises to 129",
+        "Price stays $20 and quantity rises from 120 to 168"
+      ],
+      "tag": "comparative_statics",
+      "type": "analysis",
+      "objective": "LO8.4",
+      "difficulty": "legendary",
+      "conceptCluster": "legendary_marketSignal_comparative_statics",
+      "primarySkill": "comparative_statics",
+      "secondarySkills": [],
+      "repairSkill": "simultaneous_market_changes",
+      "commonError": "Applying only one of two industry changes",
+      "feedback": "The new equations are 204 − 3P = 44 + 5P, giving P = $20 and Q = 144. Equal horizontal increases offset in price but increase quantity.",
+      "aHash": "2e7b89d5f0b6aeb2f396e24b5e4a548fb8f97b804734a474da93215f239db989"
+    },
+    {
+      "id": 4006,
+      "sourceGame": "marketSignal",
+      "q": "Market demand is Qd = 200 - 4P and competitive market supply is Qs = 40 + 4P. What are the competitive equilibrium price and quantity?",
+      "options": [
+        "P = $15 and Q = 100",
+        "P = $25 and Q = 100",
+        "P = $20 and Q = 120",
+        "P = $30 and Q = 80"
+      ],
+      "tag": "final_boss_competitive_equilibrium_equations",
+      "type": "calculation",
+      "objective": "LO8.3",
+      "difficulty": "legendary",
+      "conceptCluster": "final_boss_equilibrium_to_monopoly",
+      "primarySkill": "equilibrium_calculation",
+      "secondarySkills": [
+        "demand_supply_equations"
+      ],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Solving only one equation or failing to set quantity demanded equal to quantity supplied",
+      "feedback": "Set 200 - 4P = 40 + 4P. This gives P = 20 and Q = 120.",
+      "aHash": "3377a924a2b4d015bfa34b0578800e46d8d21cc7b9c16f80a3a941e13073f4ec"
+    },
+    {
+      "id": 4007,
+      "sourceGame": "marketSignal",
+      "q": "Demand is Qd = 200 − 4P and supply is Qs = 40 + 4P. A binding price ceiling fixes P at $15. What are planned purchases, planned sales and the shortage?",
+      "options": [
+        "140 demanded, 100 supplied, shortage 100",
+        "120 demanded, 120 supplied, shortage 0",
+        "100 demanded, 140 supplied, surplus 40",
+        "140 demanded, 100 supplied, shortage 40"
+      ],
+      "tag": "shortage_surplus",
+      "type": "calculation",
+      "objective": "LO8.3",
+      "difficulty": "legendary",
+      "conceptCluster": "legendary_marketSignal_shortage_surplus",
+      "primarySkill": "shortage_surplus",
+      "secondarySkills": [],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Using equilibrium quantity at a controlled price",
+      "feedback": "Substitution at the controlled price gives demand 140 and supply 100. The 40-unit shortage is excess demand; it is not actual sales.",
+      "aHash": "d6ada1b5fa80f89a5733e12cbf71c8fd6d04d26acda30bf9d73e4f60760fc407"
+    },
+    {
+      "id": 4008,
+      "sourceGame": "marketSignal",
+      "q": "Demand is Qd = 200 − 4P and supply is Qs = 40 + 4P. At a binding $15 ceiling, buyers want 140 units and sellers offer 100. With no imports, inventories or forced sales, which statement is justified?",
+      "options": [
+        "At most 100 units trade, and nonprice allocation determines which buyers receive them",
+        "All 140 desired units trade because demand sets the number of transactions",
+        "Exactly 120 units trade because that is the uncontrolled equilibrium quantity",
+        "The ceiling guarantees that the 100 buyers with the highest willingness to pay receive the units"
+      ],
+      "tag": "shortage_surplus",
+      "type": "analysis",
+      "objective": "LO8.3",
+      "difficulty": "legendary",
+      "conceptCluster": "legendary_marketSignal_shortage_surplus",
+      "primarySkill": "shortage_surplus",
+      "secondarySkills": [],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Equating quantity demanded with completed sales under a ceiling",
+      "feedback": "Actual transactions cannot exceed offered supply. A shortage requires rationing, and a low posted price alone does not guarantee allocation to the highest-value buyers.",
+      "aHash": "6f8c94b8841fba81b67cceadd260d5892d826440bb34d155ee83ccbb3a3248ab"
+    },
+    {
+      "id": 4027,
+      "sourceGame": "marketSignal",
+      "q": "A market has demand P = 100 - Q and constant marginal cost of $20. With perfect competition and no fixed cost, what are price and quantity?",
+      "options": [
+        "P = $60 and Q = 40",
+        "P = $40 and Q = 60",
+        "P = $100 and Q = 20",
+        "P = $20 and Q = 80"
+      ],
+      "tag": "final_boss_competitive_benchmark_monopoly",
+      "type": "calculation",
+      "objective": "LO9.6",
+      "difficulty": "legendary",
+      "conceptCluster": "legendary_marketSignal_competitive_equilibrium",
+      "primarySkill": "competitive_equilibrium",
+      "secondarySkills": [
+        "gains_from_trade",
+        "monopoly_comparison"
+      ],
+      "repairSkill": "monopoly_output_profit",
+      "commonError": "Using the monopoly marginal-revenue condition for the competitive benchmark",
+      "feedback": "Competition drives price to marginal cost. Setting 100 - Q = 20 gives Q = 80 and P = 20.",
+      "aHash": "40464f30939bdf1e307e86045e91a50e070c5f943ede3dba6dc0fe240823ec8d"
+    },
+    {
+      "id": 4028,
+      "sourceGame": "marketSignal",
+      "q": "A market has demand P = 100 - Q and constant marginal cost of $20, with no fixed cost. If one firm supplies the market at a single price, what price and quantity maximize profit?",
+      "options": [
+        "P = $60 and Q = 40",
+        "P = $20 and Q = 80",
+        "P = $40 and Q = 60",
+        "P = $80 and Q = 20"
+      ],
+      "tag": "final_boss_monopoly_price_output_linear_demand",
+      "type": "calculation",
+      "objective": "LO9.6",
+      "difficulty": "legendary",
+      "conceptCluster": "legendary_marketSignal_monopoly_price_output",
+      "primarySkill": "monopoly_price_output",
+      "secondarySkills": [
+        "monopoly_marginal_revenue",
+        "profit_calculation"
+      ],
+      "repairSkill": "monopoly_output_profit",
+      "commonError": "Setting demand equal to marginal cost instead of marginal revenue equal to marginal cost",
+      "feedback": "Marginal revenue is 100 - 2Q. Setting MR = 20 gives Q = 40, and demand gives P = 60.",
+      "aHash": "e35da6d7f7e463cf11adc0fb635333c0d4680cdc646f0ae690e1a798b55a1978"
+    },
+    {
+      "id": 4029,
+      "sourceGame": "marketSignal",
+      "q": "A market has demand P = 100 - Q and constant marginal cost of $20, with no fixed cost. Competition yields Q = 80 and P = $20; single-price monopoly yields Q = 40 and P = $60. Which comparison is correct?",
+      "options": [
+        "Monopoly transfers all $2,400 of lost consumer surplus to the firm",
+        "Monopoly reduces quantity by 40 units and creates deadweight loss of $800",
+        "Monopoly creates $1,600 of deadweight loss, equal to its profit",
+        "Monopoly creates $2,400 of deadweight loss, equal to the consumer surplus loss"
+      ],
+      "tag": "final_boss_monopoly_welfare_loss",
+      "type": "synthesis",
+      "objective": "LO9.6",
+      "difficulty": "legendary",
+      "conceptCluster": "legendary_marketSignal_monopoly_welfare_regulation",
+      "primarySkill": "monopoly_welfare_regulation",
+      "secondarySkills": [
+        "consumer_surplus",
+        "market_efficiency"
+      ],
+      "repairSkill": "monopoly_welfare_regulation",
+      "commonError": "Treating the producer’s gain as equal to the entire consumer loss and ignoring forgone trades",
+      "feedback": "Competition produces 80 units; monopoly produces 40. The deadweight-loss triangle is one-half times 40 times $40, or $800.",
+      "aHash": "b911fa423376516a4b6a7ff6cf40fe113e04c83d3062289896596b504b14ee97"
+    },
+    {
+      "id": 6028,
+      "sourceGame": "marketSignal",
+      "q": "Demand is Qd=100-2P and supply is Qs=20+2P. What are equilibrium price and quantity?",
+      "options": [
+        "P=$10 and Q=80",
+        "P=$30 and Q=40",
+        "P=$20 and Q=60",
+        "P=$40 and Q=20"
+      ],
+      "tag": "bridge_equilibrium_shortage_surplus_1",
+      "type": "calculation",
+      "objective": "LO8.3",
+      "difficulty": "legendary",
+      "conceptCluster": "market_equilibrium",
+      "primarySkill": "equilibrium_shortage_surplus",
+      "secondarySkills": [],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Solving one equation without setting quantities equal",
+      "feedback": "Set 100-2P = 20+2P. Then P=20 and Q=60.",
+      "aHash": "ad4933ccafc6ad114a66c78a372d0e4e7287846290ba4147dd296a24f94c75f5"
+    },
+    {
+      "id": 6046,
+      "sourceGame": "marketSignal",
+      "q": "A single-price monopolist faces P=80-Q and constant marginal cost of $20. What output and price maximize profit?",
+      "options": [
+        "Q=30 and P=$50",
+        "Q=60 and P=$20",
+        "Q=20 and P=$60",
+        "Q=40 and P=$40"
+      ],
+      "tag": "bridge_monopoly_output_profit_1",
+      "type": "calculation",
+      "objective": "LO9.6",
+      "difficulty": "legendary",
+      "conceptCluster": "monopoly_analysis",
+      "primarySkill": "monopoly_output_profit",
+      "secondarySkills": [],
+      "repairSkill": "monopoly_output_profit",
+      "commonError": "Setting price equal to marginal cost",
+      "feedback": "MR=80-2Q. Setting MR=20 gives Q=30; demand gives P=$50.",
+      "aHash": "2490311bc06677cbdc1c73c89841bd329a7b6b46f7a22303decf114ff2e830a9"
+    },
+    {
+      "id": 6048,
+      "sourceGame": "marketSignal",
+      "q": "Assume no externalities. Demand is P=60-Q and marginal cost is $20. Monopoly output is 20 and competitive output is 40. What is monopoly deadweight loss?",
+      "options": [
+        "$100",
+        "$400",
+        "$200",
+        "$800"
+      ],
+      "tag": "bridge_monopoly_welfare_regulation_1",
+      "type": "calculation",
+      "objective": "LO9.6",
+      "difficulty": "legendary",
+      "conceptCluster": "monopoly_analysis",
+      "primarySkill": "monopoly_welfare_regulation",
+      "secondarySkills": [],
+      "repairSkill": "monopoly_welfare_regulation",
+      "commonError": "Using the profit rectangle instead of the lost-trade triangle",
+      "feedback": "The wedge at Q=20 is $20, so DWL is 0.5(20)(20) = $200.",
+      "aHash": "981d56ae89e6190172955cbf003de4d1732e9612b5c2759cbff5a7dc0e932685"
     }
   ],
   "easyBoss": [
@@ -9334,52 +10129,6 @@ const questionBanks = {
       "feedback": "Equilibrium requires planned purchases to equal planned sales at the same price. It does not require identical firms or full physical capacity.",
       "aHash": "3f31c7a67b7f5335006437ed1321275529ea64335ab25b1579988a0c3bf66662",
       "bossStage": "opening"
-    },
-    {
-      "id": 2001,
-      "sourceGame": "marketSignal",
-      "q": "Demand is Qd = 180 − 3P and supply is Qs = 20 + 5P. What price and quantity clear the market?",
-      "options": [
-        "$20 and 100 units",
-        "$20 and 120 units",
-        "$40 and 60 units",
-        "$16 and 132 units"
-      ],
-      "tag": "equilibrium_calculation",
-      "type": "calculation",
-      "objective": "LO8.3",
-      "difficulty": "easyBoss",
-      "conceptCluster": "easyBoss_marketSignal_equilibrium_calculation",
-      "primarySkill": "equilibrium_calculation",
-      "secondarySkills": [],
-      "repairSkill": "equilibrium_shortage_surplus",
-      "commonError": "Failing to equate demand and supply",
-      "feedback": "Set 180 − 3P = 20 + 5P, so 8P = 160. At P = $20 both quantities equal 120.",
-      "aHash": "4b9e0c223bfbcc293c6e02fe94d67f887e452280666aee60d7a9e6c97d8fc589",
-      "bossStage": "middle"
-    },
-    {
-      "id": 2002,
-      "sourceGame": "marketSignal",
-      "q": "Demand is Qd = 180 − 3P and supply is Qs = 20 + 5P. At a posted price of $15, what imbalance and price pressure arise if price can adjust?",
-      "options": [
-        "A shortage of 135 units creates upward price pressure",
-        "A surplus of 40 units creates downward price pressure",
-        "A shortage of 40 units creates upward price pressure",
-        "A surplus of 95 units creates downward price pressure"
-      ],
-      "tag": "shortage_surplus",
-      "type": "analysis",
-      "objective": "LO8.3",
-      "difficulty": "easyBoss",
-      "conceptCluster": "easyBoss_marketSignal_shortage_surplus",
-      "primarySkill": "shortage_surplus",
-      "secondarySkills": [],
-      "repairSkill": "equilibrium_shortage_surplus",
-      "commonError": "Confusing excess demand with excess supply",
-      "feedback": "At $15 buyers want 135 units and sellers offer 95. The 40-unit shortage creates upward price pressure.",
-      "aHash": "1db29f9926ba44615cd48091fcd6c9577549a93f8a37660f973e14fc14ee2559",
-      "bossStage": "final"
     },
     {
       "id": 2003,
@@ -9426,29 +10175,6 @@ const questionBanks = {
       "feedback": "Lower costs shift industry supply right. The new equilibrium has a lower price and more sales.",
       "aHash": "4d202f7cc48aa834e5cece8bb5162f121d25c0ef94586e39e18fd193c6c8ecfc",
       "bossStage": "middle"
-    },
-    {
-      "id": 2005,
-      "sourceGame": "marketSignal",
-      "q": "Initially Qd = 180 − 3P and Qs = 20 + 5P. A preference change adds 24 units to demand at every price, while cheaper inputs add 24 units to supply at every price. What happens to equilibrium?",
-      "options": [
-        "Price stays $20 and quantity rises from 120 to 144",
-        "Price rises to $23 and quantity rises to 135",
-        "Price falls to $17 and quantity rises to 129",
-        "Price stays $20 and quantity rises from 120 to 168"
-      ],
-      "tag": "comparative_statics",
-      "type": "analysis",
-      "objective": "LO8.4",
-      "difficulty": "easyBoss",
-      "conceptCluster": "easyBoss_marketSignal_comparative_statics",
-      "primarySkill": "comparative_statics",
-      "secondarySkills": [],
-      "repairSkill": "simultaneous_market_changes",
-      "commonError": "Applying only one of two industry changes",
-      "feedback": "The new equations are 204 − 3P = 44 + 5P, giving P = $20 and Q = 144. Equal horizontal increases offset in price but increase quantity.",
-      "aHash": "2e7b89d5f0b6aeb2f396e24b5e4a548fb8f97b804734a474da93215f239db989",
-      "bossStage": "final"
     },
     {
       "id": 2006,
@@ -9679,6 +10405,75 @@ const questionBanks = {
       "commonError": "Relying on an unenforceable promise or preserving a costless exit after the specialized investment",
       "feedback": "A minimum-purchase commitment and termination payment make opportunistic cancellation costly and protect the specialized investment.",
       "aHash": "90183c0f3ed4f3e8346c8c70c5c13dd8c68b73beb31399dd7e4dee9c665f06eb",
+      "bossStage": "final"
+    },
+    {
+      "id": 42001,
+      "sourceGame": "marketSignal",
+      "q": "A market initially has excess supply. Sellers can change prices, and demand and supply conditions do not shift. Which adjustment tends to restore equilibrium?",
+      "options": [
+        "Price rises until buyers stop purchasing",
+        "Price falls, increasing purchases and reducing the quantity offered",
+        "Demand shifts left because sellers compete",
+        "Supply shifts right because inventories grow"
+      ],
+      "tag": "equilibrium_calculation",
+      "type": "application",
+      "objective": "LO8.3",
+      "difficulty": "easyBoss",
+      "conceptCluster": "easyBoss_marketSignal_equilibrium_calculation",
+      "primarySkill": "equilibrium_calculation",
+      "secondarySkills": [],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "A surplus encourages price reductions. Buyers then demand more and sellers plan to supply less along unchanged curves.",
+      "aHash": "a91d2fd76549585d547ecf36a558fb74e1d68aa9d488052dcac44266daf47154",
+      "bossStage": "middle"
+    },
+    {
+      "id": 42002,
+      "sourceGame": "marketSignal",
+      "q": "A posted price is below equilibrium, and sellers cannot meet all desired purchases. What price pressure and quantity responses tend to reduce the shortage?",
+      "options": [
+        "Downward price pressure reduces desired purchases",
+        "Upward price pressure shifts demand to the right",
+        "Upward price pressure reduces quantity demanded and increases quantity supplied",
+        "No price pressure arises because every available unit sells"
+      ],
+      "tag": "shortage_surplus",
+      "type": "application",
+      "objective": "LO8.3",
+      "difficulty": "easyBoss",
+      "conceptCluster": "easyBoss_marketSignal_shortage_surplus",
+      "primarySkill": "shortage_surplus",
+      "secondarySkills": [],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "A shortage creates upward price pressure. The resulting movements along demand and supply reduce excess demand.",
+      "aHash": "242fff21a23654c740e0db2256934a17bd3cf5e78fe3445ccf68f1ee6a6a549f",
+      "bossStage": "final"
+    },
+    {
+      "id": 42005,
+      "sourceGame": "marketSignal",
+      "q": "At the old equilibrium price, a preference change adds the same number of desired purchases as a production improvement adds units offered. With ordinary downward-sloping demand and upward-sloping supply, what happens to equilibrium?",
+      "options": [
+        "The price stays unchanged while equilibrium sales increase by that common amount",
+        "Price rises because any demand increase dominates supply",
+        "Price falls because any supply increase dominates demand",
+        "Sales rise by twice the common increase at the old price"
+      ],
+      "tag": "comparative_statics",
+      "type": "application",
+      "objective": "LO8.4",
+      "difficulty": "easyBoss",
+      "conceptCluster": "easyBoss_marketSignal_comparative_statics",
+      "primarySkill": "comparative_statics",
+      "secondarySkills": [],
+      "repairSkill": "simultaneous_market_changes",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "At the old price, planned purchases and planned sales remain equal after equal increases. Both sides now trade the larger common quantity, not the sum of their increases.",
+      "aHash": "5fe955f551fc88a6f1f2194df178f62d11a12742658df98601843c17c1bbc0cc",
       "bossStage": "final"
     }
   ],
@@ -10378,80 +11173,9 @@ const questionBanks = {
       "bossStage": "final"
     },
     {
-      "id": 4006,
-      "sourceGame": "marketSignal",
-      "q": "Market demand is Qd = 200 - 4P and competitive market supply is Qs = 40 + 4P. What are the competitive equilibrium price and quantity?",
-      "options": [
-        "P = $15 and Q = 100",
-        "P = $25 and Q = 100",
-        "P = $20 and Q = 120",
-        "P = $30 and Q = 80"
-      ],
-      "tag": "final_boss_competitive_equilibrium_equations",
-      "type": "calculation",
-      "objective": "LO8.3",
-      "difficulty": "finalBoss",
-      "conceptCluster": "final_boss_equilibrium_to_monopoly",
-      "primarySkill": "equilibrium_calculation",
-      "secondarySkills": [
-        "demand_supply_equations"
-      ],
-      "repairSkill": "equilibrium_shortage_surplus",
-      "commonError": "Solving only one equation or failing to set quantity demanded equal to quantity supplied",
-      "feedback": "Set 200 - 4P = 40 + 4P. This gives P = 20 and Q = 120.",
-      "aHash": "3377a924a2b4d015bfa34b0578800e46d8d21cc7b9c16f80a3a941e13073f4ec",
-      "bossStage": "opening"
-    },
-    {
-      "id": 4007,
-      "sourceGame": "marketSignal",
-      "q": "Demand is Qd = 200 − 4P and supply is Qs = 40 + 4P. A binding price ceiling fixes P at $15. What are planned purchases, planned sales and the shortage?",
-      "options": [
-        "140 demanded, 100 supplied, shortage 100",
-        "120 demanded, 120 supplied, shortage 0",
-        "100 demanded, 140 supplied, surplus 40",
-        "140 demanded, 100 supplied, shortage 40"
-      ],
-      "tag": "shortage_surplus",
-      "type": "calculation",
-      "objective": "LO8.3",
-      "difficulty": "finalBoss",
-      "conceptCluster": "finalBoss_marketSignal_shortage_surplus",
-      "primarySkill": "shortage_surplus",
-      "secondarySkills": [],
-      "repairSkill": "equilibrium_shortage_surplus",
-      "commonError": "Using equilibrium quantity at a controlled price",
-      "feedback": "Substitution at the controlled price gives demand 140 and supply 100. The 40-unit shortage is excess demand; it is not actual sales.",
-      "aHash": "d6ada1b5fa80f89a5733e12cbf71c8fd6d04d26acda30bf9d73e4f60760fc407",
-      "bossStage": "middle"
-    },
-    {
-      "id": 4008,
-      "sourceGame": "marketSignal",
-      "q": "Demand is Qd = 200 − 4P and supply is Qs = 40 + 4P. At a binding $15 ceiling, buyers want 140 units and sellers offer 100. With no imports, inventories or forced sales, which statement is justified?",
-      "options": [
-        "At most 100 units trade, and nonprice allocation determines which buyers receive them",
-        "All 140 desired units trade because demand sets the number of transactions",
-        "Exactly 120 units trade because that is the uncontrolled equilibrium quantity",
-        "The ceiling guarantees that the 100 buyers with the highest willingness to pay receive the units"
-      ],
-      "tag": "shortage_surplus",
-      "type": "analysis",
-      "objective": "LO8.3",
-      "difficulty": "finalBoss",
-      "conceptCluster": "finalBoss_marketSignal_shortage_surplus",
-      "primarySkill": "shortage_surplus",
-      "secondarySkills": [],
-      "repairSkill": "equilibrium_shortage_surplus",
-      "commonError": "Equating quantity demanded with completed sales under a ceiling",
-      "feedback": "Actual transactions cannot exceed offered supply. A shortage requires rationing, and a low posted price alone does not guarantee allocation to the highest-value buyers.",
-      "aHash": "6f8c94b8841fba81b67cceadd260d5892d826440bb34d155ee83ccbb3a3248ab",
-      "bossStage": "final"
-    },
-    {
       "id": 4009,
       "sourceGame": "marketSignal",
-      "q": "The graph begins at S2 and D1. A production technology lowers sellers’ costs, shifting supply to S1 while demand stays at D1. What is the new equilibrium?",
+      "q": "Refer to the supply and demand graph. The graph begins at S2 and D1. A production technology lowers sellers’ costs, shifting supply to S1 while demand stays at D1. What is the new equilibrium?",
       "options": [
         "Price $72 and quantity 72",
         "Price $48 and quantity 72",
@@ -10479,7 +11203,7 @@ const questionBanks = {
     {
       "id": 4010,
       "sourceGame": "marketSignal",
-      "q": "In the supplied graph, supply stays at S1 while demand shifts from D1 to D2. How does total sales revenue change between those equilibria?",
+      "q": "Refer to the supply and demand graph. Supply stays at S1 while demand shifts from D1 to D2. How does total sales revenue change between those equilibria?",
       "options": [
         "It rises by $864",
         "It rises by $1,440",
@@ -10507,7 +11231,7 @@ const questionBanks = {
     {
       "id": 4011,
       "sourceGame": "marketSignal",
-      "q": "In the supplied numerical graph, which transition leaves equilibrium price unchanged while doubling quantity, and what explains it?",
+      "q": "Refer to the supply and demand graph. Which transition leaves equilibrium price unchanged while doubling quantity, and what explains it?",
       "options": [
         "S1/D2 to S2/D1: both curves move right",
         "S1/D1 to S2/D2: both curves move right",
@@ -10535,7 +11259,7 @@ const questionBanks = {
     {
       "id": 4012,
       "sourceGame": "marketSignal",
-      "q": "In the long-run competition graph, demand has shifted from D0 to D1 while market supply is still S0. At point B, what is happening to a representative firm?",
+      "q": "Refer to the long-run competition graph. Demand has shifted from D0 to D1 while market supply is still S0. At point B, what is happening to a representative firm?",
       "options": [
         "It produces Q2 at price P2 and earns positive economic profit",
         "It produces Q1 at price P2 and earns positive economic profit",
@@ -10563,7 +11287,7 @@ const questionBanks = {
     {
       "id": 4013,
       "sourceGame": "marketSignal",
-      "q": "In the supplied long-run competition graph, the market is at B on D1. Firms can enter freely and their costs are unchanged. At which labeled equilibrium does the entry adjustment end?",
+      "q": "Refer to the long-run competition graph. The market is at B on D1. Firms can enter freely and their costs are unchanged. At which labeled equilibrium does the entry adjustment end?",
       "options": [
         "A, at P1 and QA",
         "D, at P1 and QD",
@@ -10591,7 +11315,7 @@ const questionBanks = {
     {
       "id": 4014,
       "sourceGame": "marketSignal",
-      "q": "Suppose a legal barrier prevents entry after the demand increase. How does that alter the return adjustment shown from B to D?",
+      "q": "Refer to the long-run competition graph. Suppose a legal barrier prevents entry after the demand increase. How does that alter the return adjustment shown from B to D?",
       "options": [
         "The barrier reduces demand until firms earn normal returns without any supply response",
         "The barrier eliminates current profit because legal protection raises output automatically",
@@ -10619,7 +11343,7 @@ const questionBanks = {
     {
       "id": 4015,
       "sourceGame": "marketSignal",
-      "q": "In the long-run competition graph, what shock moves the market from point A to point B before firms have time to enter?",
+      "q": "Refer to the long-run competition graph. What shock moves the market from point A to point B before firms have time to enter?",
       "options": [
         "A decrease in supply from S1 to S0",
         "A decrease in demand from D1 to D0",
@@ -10647,7 +11371,7 @@ const questionBanks = {
     {
       "id": 4016,
       "sourceGame": "marketSignal",
-      "q": "Why do profits tend to revert after the market reaches point B?",
+      "q": "Refer to the long-run competition graph. Why do profits tend to revert after the market reaches point B?",
       "options": [
         "Profit attracts entry, which expands supply and drives price and returns toward normal",
         "Profit causes demand to return to its earlier position without any new information",
@@ -10675,7 +11399,7 @@ const questionBanks = {
     {
       "id": 4017,
       "sourceGame": "marketSignal",
-      "q": "In the supplied long-run competition graph, the market begins at C on D0. Firms can exit freely and survivors’ costs are unchanged. At which labeled price/quantity pair does exit restore normal returns?",
+      "q": "Refer to the long-run competition graph. The market begins at C on D0. Firms can exit freely and survivors’ costs are unchanged. At which labeled price/quantity pair does exit restore normal returns?",
       "options": [
         "P1 and QD",
         "P1 and QA",
@@ -10858,7 +11582,7 @@ const questionBanks = {
     {
       "id": 4024,
       "sourceGame": "marketSignal",
-      "q": "The symbolic graph begins at S0 and D0. Imitators enter with close substitutes, increasing market supply to S1 while demand remains D0. Where does equilibrium move?",
+      "q": "Refer to the supply and demand graph. The symbolic graph begins at S0 and D0. Imitators enter with close substitutes, increasing market supply to S1 while demand remains D0. Where does equilibrium move?",
       "options": [
         "From P1-QA to P0-QC",
         "From P1-QA to P0-QB",
@@ -10937,17 +11661,88 @@ const questionBanks = {
       "graphRequired": false
     },
     {
-      "id": 4027,
+      "id": 44006,
       "sourceGame": "marketSignal",
-      "q": "A market has demand P = 100 - Q and constant marginal cost of $20. With perfect competition and no fixed cost, what are price and quantity?",
+      "q": "In a competitive market with no externalities, the current price leaves some buyers unable to purchase even though sellers could profitably expand production at a higher price. What adjustment moves the market toward equilibrium?",
       "options": [
-        "P = $60 and Q = 40",
-        "P = $40 and Q = 60",
-        "P = $100 and Q = 20",
-        "P = $20 and Q = 80"
+        "A price cut that encourages more desired purchases",
+        "A permanent limit on supply without changing price",
+        "A price increase that reduces desired purchases and expands supply",
+        "A price increase that shifts demand to the right"
+      ],
+      "tag": "final_boss_competitive_equilibrium_equations",
+      "type": "application",
+      "objective": "LO8.3",
+      "difficulty": "finalBoss",
+      "conceptCluster": "final_boss_equilibrium_to_monopoly",
+      "primarySkill": "equilibrium_calculation",
+      "secondarySkills": [
+        "demand_supply_equations"
+      ],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "Excess demand puts upward pressure on price. Buyers and sellers adjust their quantities until planned purchases and sales coincide.",
+      "aHash": "171c6df667650e4f2a8a192b7d379c8719b72b4bae35a3af2467596af1209907",
+      "bossStage": "opening"
+    },
+    {
+      "id": 44007,
+      "sourceGame": "marketSignal",
+      "q": "A binding price ceiling leads buyers to want 140 units while sellers offer 100. Which statement correctly separates the shortage from actual sales?",
+      "options": [
+        "The shortage is 100 units because that is all sellers offer",
+        "There is no shortage if all 100 available units sell",
+        "There is a 40-unit surplus because desired purchases exceed supply",
+        "The shortage is 40 units, and actual sales cannot exceed 100 without another source of supply"
+      ],
+      "tag": "shortage_surplus",
+      "type": "application",
+      "objective": "LO8.3",
+      "difficulty": "finalBoss",
+      "conceptCluster": "finalBoss_marketSignal_shortage_surplus",
+      "primarySkill": "shortage_surplus",
+      "secondarySkills": [],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "The shortage is desired purchases minus offered supply: 140 − 100 = 40. It measures unmet demand, not the number of completed transactions.",
+      "aHash": "14970f1912bc35109530c6028b63461a07cc124c24b6be373b02be0fa94674b3",
+      "bossStage": "middle"
+    },
+    {
+      "id": 44008,
+      "sourceGame": "marketSignal",
+      "q": "A binding price ceiling leaves fewer units available than buyers want. There are no imports or inventories to fill the gap. What can be concluded about who obtains the goods?",
+      "options": [
+        "Available supply limits sales, and waiting, connections, or another allocation rule may determine who receives it",
+        "Every buyer willing to pay the ceiling must receive a unit",
+        "The lowest posted price guarantees allocation to buyers with the highest willingness to pay",
+        "The shortage disappears whenever sellers sell all their stock"
+      ],
+      "tag": "shortage_surplus",
+      "type": "application",
+      "objective": "LO8.3",
+      "difficulty": "finalBoss",
+      "conceptCluster": "finalBoss_marketSignal_shortage_surplus",
+      "primarySkill": "shortage_surplus",
+      "secondarySkills": [],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "A ceiling limits price but does not itself specify an efficient allocation rule. Nonprice rationing can determine who gets the limited supply.",
+      "aHash": "df03b3708885c201269c323fc8ac6c52883dfd105826b9dc6527631e64012a46",
+      "bossStage": "final"
+    },
+    {
+      "id": 44027,
+      "sourceGame": "marketSignal",
+      "q": "A competitive industry has unchanged costs and no externalities. Why does producing units whose buyer value exceeds marginal cost create gains from trade?",
+      "options": [
+        "Those units necessarily cover every seller’s historical fixed cost",
+        "Each additional trade raises total surplus only if price rises",
+        "The seller’s revenue is itself a resource cost",
+        "The benefit to the buyer exceeds the resources used to produce the unit"
       ],
       "tag": "final_boss_competitive_benchmark_monopoly",
-      "type": "calculation",
+      "type": "application",
       "objective": "LO9.6",
       "difficulty": "finalBoss",
       "conceptCluster": "finalBoss_marketSignal_competitive_equilibrium",
@@ -10957,23 +11752,23 @@ const questionBanks = {
         "monopoly_comparison"
       ],
       "repairSkill": "monopoly_output_profit",
-      "commonError": "Using the monopoly marginal-revenue condition for the competitive benchmark",
-      "feedback": "Competition drives price to marginal cost. Setting 100 - Q = 20 gives Q = 80 and P = 20.",
-      "aHash": "40464f30939bdf1e307e86045e91a50e070c5f943ede3dba6dc0fe240823ec8d",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "The gain from a trade is the buyer’s value minus the resource cost. Price determines how the gain is divided between buyer and seller.",
+      "aHash": "cc4aeaf80588906a4687001dabbdc2b41921bb259e5ee27b5120ea2e243eb7f3",
       "bossStage": "opening"
     },
     {
-      "id": 4028,
+      "id": 44028,
       "sourceGame": "marketSignal",
-      "q": "A market has demand P = 100 - Q and constant marginal cost of $20, with no fixed cost. If one firm supplies the market at a single price, what price and quantity maximize profit?",
+      "q": "One firm replaces the competitive sellers and charges a single price. Demand slopes downward and costs do not change. Why might it supply fewer units than the competitive industry?",
       "options": [
-        "P = $60 and Q = 40",
-        "P = $20 and Q = 80",
-        "P = $40 and Q = 60",
-        "P = $80 and Q = 20"
+        "Selling more requires a price cut on existing units, so marginal revenue can be below the price buyers pay",
+        "The firm can charge every buyer a different price by assumption",
+        "Monopoly ownership necessarily raises marginal cost",
+        "A single seller faces perfectly elastic demand"
       ],
       "tag": "final_boss_monopoly_price_output_linear_demand",
-      "type": "calculation",
+      "type": "application",
       "objective": "LO9.6",
       "difficulty": "finalBoss",
       "conceptCluster": "finalBoss_marketSignal_monopoly_price_output",
@@ -10983,23 +11778,23 @@ const questionBanks = {
         "profit_calculation"
       ],
       "repairSkill": "monopoly_output_profit",
-      "commonError": "Setting demand equal to marginal cost instead of marginal revenue equal to marginal cost",
-      "feedback": "Marginal revenue is 100 - 2Q. Setting MR = 20 gives Q = 40, and demand gives P = 60.",
-      "aHash": "e35da6d7f7e463cf11adc0fb635333c0d4680cdc646f0ae690e1a798b55a1978",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "The uniform-price monopolist accounts for revenue lost on existing sales when expanding output. It can therefore stop short of the quantity where buyer value equals marginal cost.",
+      "aHash": "646f54b0104100442e9a27740fb0630bc4d38c7c5a86c773f26534454354cee9",
       "bossStage": "middle"
     },
     {
-      "id": 4029,
+      "id": 44029,
       "sourceGame": "marketSignal",
-      "q": "A market has demand P = 100 - Q and constant marginal cost of $20, with no fixed cost. Competition yields Q = 80 and P = $20; single-price monopoly yields Q = 40 and P = $60. Which comparison is correct?",
+      "q": "A single-price monopoly raises price and restricts output relative to competition, with unchanged costs and no externalities. Which comparison distinguishes a transfer from a loss of total surplus?",
       "options": [
-        "Monopoly transfers all $2,400 of lost consumer surplus to the firm",
-        "Monopoly reduces quantity by 40 units and creates deadweight loss of $800",
-        "Monopoly creates $1,600 of deadweight loss, equal to its profit",
-        "Monopoly creates $2,400 of deadweight loss, equal to the consumer surplus loss"
+        "All consumer losses become monopoly profit",
+        "Higher payments on remaining sales transfer surplus, while forgone beneficial trades create deadweight loss",
+        "All monopoly profit is deadweight loss",
+        "Fewer sales necessarily increase total surplus"
       ],
       "tag": "final_boss_monopoly_welfare_loss",
-      "type": "synthesis",
+      "type": "application",
       "objective": "LO9.6",
       "difficulty": "finalBoss",
       "conceptCluster": "finalBoss_marketSignal_monopoly_welfare_regulation",
@@ -11009,9 +11804,9 @@ const questionBanks = {
         "market_efficiency"
       ],
       "repairSkill": "monopoly_welfare_regulation",
-      "commonError": "Treating the producer’s gain as equal to the entire consumer loss and ignoring forgone trades",
-      "feedback": "Competition produces 80 units; monopoly produces 40. The deadweight-loss triangle is one-half times 40 times $40, or $800.",
-      "aHash": "b911fa423376516a4b6a7ff6cf40fe113e04c83d3062289896596b504b14ee97",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "A higher payment on an existing sale changes who receives surplus. A beneficial sale that no longer occurs reduces the total surplus available to both sides.",
+      "aHash": "59647ef8e37b23c87936f35614e4a7eeda59ada9e6dc993586ba3bd6c6bc242f",
       "bossStage": "final"
     }
   ],
@@ -11046,7 +11841,7 @@ const questionBanks = {
       "sourceGame": "marketSignal",
       "q": "Two projects each require $300,000 now. Project A pays $520,000 in year 2 with probability 0.65 and $80,000 in year 2 otherwise. Project B pays $430,000 in year 3 with probability 0.80 and $150,000 in year 1 otherwise. At 10%, which project has the larger expected NPV?",
       "options": [
-        "Project B, by about $-16,754",
+        "Project B, by about $16,754",
         "Project A, by about $16,754",
         "Project A, because its expected nominal payoff is $366,000",
         "Project B, because its success probability is higher"
@@ -11445,7 +12240,7 @@ const questionBanks = {
       "sourceGame": "marketSignal",
       "q": "Machine A costs $300,000, lasts 3 years, has annual operating cost $70,000, and salvage value $30,000. Machine B costs $420,000, lasts 5 years, has annual operating cost $50,000, and salvage value $60,000. At 8%, which has the lower equivalent annual cost?",
       "options": [
-        "Machine A, by about $-32,205 per year",
+        "Machine A, by about $32,205 per year",
         "Machine B, by about $32,205 per year",
         "Machine A, because its purchase price is $120,000 lower",
         "Machine B, because its undiscounted salvage value is larger"
@@ -11768,7 +12563,7 @@ const questionBanks = {
     {
       "id": 9130,
       "sourceGame": "marketSignal",
-      "q": "Customers are randomly offered a coupon, but only some redeem it, and some control customers find similar coupons elsewhere. Which comparison preserves the cleanest causal interpretation of the offer itself?",
+      "q": "Customers are randomly offered a coupon, but only some redeem it, and some control customers find similar coupons elsewhere. Which comparison preserves a valid causal interpretation of the offer itself?",
       "options": [
         "Compare redeemers with nonredeemers",
         "Drop control customers who found other coupons",
@@ -12268,7 +13063,7 @@ const questionBanks = {
     {
       "id": 9150,
       "sourceGame": "marketSignal",
-      "q": "Refer to the symbolic supply-and-demand graph. The market begins at S0 and D0 and ends at quantity QD with price P1. Which curve movements produced the final equilibrium?",
+      "q": "Refer to the supply and demand graph. The market begins at S0 and D0 and ends at quantity QD with price P1. Which curve movements produced the final equilibrium?",
       "options": [
         "Demand increased while supply decreased",
         "Demand decreased while supply increased",
@@ -12295,7 +13090,7 @@ const questionBanks = {
     {
       "id": 9151,
       "sourceGame": "marketSignal",
-      "q": "Refer to the symbolic graph. Starting at S0 and D0, demand first shifts to D1 and then supply shifts to S1. What sequence of equilibria occurs?",
+      "q": "Refer to the supply and demand graph. Starting at S0 and D0, demand first shifts to D1 and then supply shifts to S1. What sequence of equilibria occurs?",
       "options": [
         "P1, QA to P0, QC to P1, QD",
         "P1, QA to P2, QB to P0, QC",
@@ -12497,7 +13292,7 @@ const questionBanks = {
     {
       "id": 9161,
       "sourceGame": "marketSignal",
-      "q": "Demand is Qd = 180 - 2P and supply is Qs = 30 + P. An import quota limits total quantity to 70 units. What are the buyer price, seller reservation price, and per-unit quota rent?",
+      "q": "Demand is Qd = 180 - 2P and supply is Qs = 30 + P. A sales quota caps total market sales at 70 units. What are the buyer price, seller reservation price, and per-unit quota rent?",
       "options": [
         "Buyer price $40, seller reservation price $55, quota rent $15",
         "Buyer price $55, seller reservation price $40, quota rent $15",
@@ -12547,7 +13342,7 @@ const questionBanks = {
     {
       "id": 9163,
       "sourceGame": "marketSignal",
-      "q": "Buyers expect next month’s price to rise sharply, while sellers expect production costs to fall next month and can store the product cheaply. What is the likely current-market effect?",
+      "q": "Buyers expect next month’s price to rise sharply, while sellers expect production costs to fall next month and can store the product cheaply. What is the likely current-market effect? Assume sellers expect the future selling price net of carrying costs to exceed today’s price and can store the good.",
       "options": [
         "Current demand decreases and current supply increases, lowering price",
         "Both current demand and supply increase, making price ambiguous and quantity higher",
@@ -14271,7 +15066,7 @@ const repairPoolGroups = {
     {
       "id": 5083,
       "sourceGame": "marketSignal",
-      "q": "A contract can reduce hold-up risk by doing what?",
+      "q": "How can a contract reduce the risk of post-investment hold-up?",
       "options": [
         "Leaving all price terms vague until after investment",
         "Forbidding volume commitments",
@@ -14940,28 +15735,6 @@ const bridgePoolGroups = {
   ],
   "equilibrium_shortage_surplus": [
     {
-      "id": 6028,
-      "sourceGame": "marketSignal",
-      "q": "Demand is Qd=100-2P and supply is Qs=20+2P. What are equilibrium price and quantity?",
-      "options": [
-        "P=$10 and Q=80",
-        "P=$30 and Q=40",
-        "P=$20 and Q=60",
-        "P=$40 and Q=20"
-      ],
-      "tag": "bridge_equilibrium_shortage_surplus_1",
-      "type": "calculation",
-      "objective": "LO8.3",
-      "difficulty": "bridge",
-      "conceptCluster": "market_equilibrium",
-      "primarySkill": "equilibrium_shortage_surplus",
-      "secondarySkills": [],
-      "repairSkill": "equilibrium_shortage_surplus",
-      "commonError": "Solving one equation without setting quantities equal",
-      "feedback": "Set 100-2P = 20+2P. Then P=20 and Q=60.",
-      "aHash": "ad4933ccafc6ad114a66c78a372d0e4e7287846290ba4147dd296a24f94c75f5"
-    },
-    {
       "id": 6029,
       "sourceGame": "marketSignal",
       "q": "At the current price, quantity demanded exceeds quantity supplied. With no price control, what market pressure follows?",
@@ -14982,6 +15755,28 @@ const bridgePoolGroups = {
       "commonError": "Reversing the adjustment caused by a shortage",
       "feedback": "Buyers compete for scarce units, putting upward pressure on price.",
       "aHash": "99254a8907d49d46529f6a3481769d1c768da3e29f575e4ba97490e5dd0a0d84"
+    },
+    {
+      "id": 46028,
+      "sourceGame": "marketSignal",
+      "q": "At the current price, buyers plan to buy more than sellers plan to sell. If the price can adjust and neither curve shifts, which response reduces this imbalance?",
+      "options": [
+        "Price falls and quantity demanded rises",
+        "Sellers reduce supply at every price",
+        "Price rises and buyers reduce quantity demanded while sellers offer more",
+        "Demand shifts right solely because buyers compete"
+      ],
+      "tag": "bridge_equilibrium_shortage_surplus_1",
+      "type": "application",
+      "objective": "LO8.3",
+      "difficulty": "bridge",
+      "conceptCluster": "market_equilibrium",
+      "primarySkill": "equilibrium_shortage_surplus",
+      "secondarySkills": [],
+      "repairSkill": "equilibrium_shortage_surplus",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "A shortage prompts a higher price. The resulting movements along the existing curves bring desired purchases and sales closer together.",
+      "aHash": "cbe0d54791255a5d302a64c3fa385ce6b0fb51a9362358726cec9f935b8d6676"
     }
   ],
   "demand_supply_shifts": [
@@ -15056,7 +15851,7 @@ const bridgePoolGroups = {
     {
       "id": 6033,
       "sourceGame": "marketSignal",
-      "q": "On the supplied graph, the market moves from S2/D1 to S1/D2. What is the new equilibrium?",
+      "q": "Refer to the supply and demand graph. The market moves from S2/D1 to S1/D2. What is the new equilibrium?",
       "options": [
         "Price $72 and quantity 72",
         "Price $48 and quantity 72",
@@ -15174,7 +15969,7 @@ const bridgePoolGroups = {
     {
       "id": 6038,
       "sourceGame": "marketSignal",
-      "q": "On the long-run competition graph, demand rises from D0 to D1 and the market moves from A to B. What drives the later movement toward D?",
+      "q": "Refer to the long-run competition graph. Demand rises from D0 to D1 and the market moves from A to B. What drives the later movement toward D?",
       "options": [
         "Entry shifts market supply from S0 to S1",
         "Exit shifts demand back to D0",
@@ -15358,28 +16153,6 @@ const bridgePoolGroups = {
   ],
   "monopoly_output_profit": [
     {
-      "id": 6046,
-      "sourceGame": "marketSignal",
-      "q": "A single-price monopolist faces P=80-Q and constant marginal cost of $20. What output and price maximize profit?",
-      "options": [
-        "Q=30 and P=$50",
-        "Q=60 and P=$20",
-        "Q=20 and P=$60",
-        "Q=40 and P=$40"
-      ],
-      "tag": "bridge_monopoly_output_profit_1",
-      "type": "calculation",
-      "objective": "LO9.6",
-      "difficulty": "bridge",
-      "conceptCluster": "monopoly_analysis",
-      "primarySkill": "monopoly_output_profit",
-      "secondarySkills": [],
-      "repairSkill": "monopoly_output_profit",
-      "commonError": "Setting price equal to marginal cost",
-      "feedback": "MR=80-2Q. Setting MR=20 gives Q=30; demand gives P=$50.",
-      "aHash": "2490311bc06677cbdc1c73c89841bd329a7b6b46f7a22303decf114ff2e830a9"
-    },
-    {
       "id": 6047,
       "sourceGame": "marketSignal",
       "q": "A monopoly supplier reports $7,920 in sales from 220 identical units. Each unit uses $17 in variable inputs, and period fixed cost is $1,450. What is total profit?",
@@ -15400,31 +16173,31 @@ const bridgePoolGroups = {
       "commonError": "reports_contribution_without_subtracting_fixed_cost",
       "feedback": "Variable cost is 220 × $17 = $3,740. Subtract both variable and fixed costs from revenue: $7,920 − $3,740 − $1,450 = $2,730. Contribution of $4,180 still includes fixed costs.",
       "aHash": "cef6daae4338b3822320f3d2ade75ff362af76ef7d35b4b5ed8715e9691f92f5"
-    }
-  ],
-  "monopoly_welfare_regulation": [
+    },
     {
-      "id": 6048,
+      "id": 46046,
       "sourceGame": "marketSignal",
-      "q": "Assume no externalities. Demand is P=60-Q and marginal cost is $20. Monopoly output is 20 and competitive output is 40. What is monopoly deadweight loss?",
+      "q": "A monopolist’s next unit would add more to revenue than to cost, even after accounting for the price cut on existing sales. What should it do to raise profit?",
       "options": [
-        "$100",
-        "$400",
-        "$200",
-        "$800"
+        "Expand sales while marginal revenue exceeds marginal cost",
+        "Cut sales because every price reduction lowers profit",
+        "Ignore marginal revenue and maximize the price",
+        "Keep output unchanged whenever average cost is falling"
       ],
-      "tag": "bridge_monopoly_welfare_regulation_1",
-      "type": "calculation",
+      "tag": "bridge_monopoly_output_profit_1",
+      "type": "application",
       "objective": "LO9.6",
       "difficulty": "bridge",
       "conceptCluster": "monopoly_analysis",
-      "primarySkill": "monopoly_welfare_regulation",
+      "primarySkill": "monopoly_output_profit",
       "secondarySkills": [],
-      "repairSkill": "monopoly_welfare_regulation",
-      "commonError": "Using the profit rectangle instead of the lost-trade triangle",
-      "feedback": "The wedge at Q=20 is $20, so DWL is 0.5(20)(20) = $200.",
-      "aHash": "981d56ae89e6190172955cbf003de4d1732e9612b5c2759cbff5a7dc0e932685"
-    },
+      "repairSkill": "monopoly_output_profit",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "An additional unit raises profit when its marginal revenue exceeds its marginal cost. The firm should continue comparing those increments as sales expand.",
+      "aHash": "ffdd6cd33d8aac26fdf17b53cb7acbc738d89dd6d85207df9db0dfe9086ea44e"
+    }
+  ],
+  "monopoly_welfare_regulation": [
     {
       "id": 6049,
       "sourceGame": "marketSignal",
@@ -15446,6 +16219,28 @@ const bridgePoolGroups = {
       "commonError": "Ignoring the financing problem under marginal-cost pricing",
       "feedback": "Average-cost pricing can keep the firm viable, though it sacrifices some allocative efficiency.",
       "aHash": "3f418caf262504a9a3ad440c96311d2deb02064f0e922d6fd55ae7ee6064dda0"
+    },
+    {
+      "id": 46048,
+      "sourceGame": "marketSignal",
+      "q": "A monopoly leaves some units unsold even though buyers value them above marginal cost. With no externalities, what does this imply?",
+      "options": [
+        "The firm’s profit measures the entire welfare loss",
+        "Consumers receive all gains from the missing trades",
+        "Forgone gains from trade create deadweight loss",
+        "Producing those units would necessarily waste resources"
+      ],
+      "tag": "bridge_monopoly_welfare_regulation_1",
+      "type": "application",
+      "objective": "LO9.6",
+      "difficulty": "bridge",
+      "conceptCluster": "monopoly_analysis",
+      "primarySkill": "monopoly_welfare_regulation",
+      "secondarySkills": [],
+      "repairSkill": "monopoly_welfare_regulation",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "When the buyer’s benefit exceeds the resource cost, a trade could create total surplus. Leaving it unrealized creates deadweight loss.",
+      "aHash": "dc4eae02357ece2fda6dfd198c2b8155b841f29edf9778ce385838608c2c1be5"
     }
   ],
   "post_investment_holdup": [

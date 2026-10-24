@@ -13,6 +13,9 @@ import math
 import operator
 import re
 import unicodedata
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'approved_question_banks'))
+from replay import rewind_game, apply_game
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
@@ -244,7 +247,13 @@ def main():
         path = ROOT / "play/managerial-intelligence-directorate" / game / (game.replace("-", "_") + "_question_bank_student.js")
         paths[game] = path
         sources[game] = path.read_text(encoding='utf-8-sig')
-    proposed, counts, numeric_count = plan_sources(sources, patches)
+    historical = {game: rewind_game(game, source) for game, source in sources.items()}
+    proposed, counts, numeric_count = plan_sources(historical, patches)
+    proposed = {game: apply_game(game, source) for game, source in proposed.items()}
+    for game, source in proposed.items():
+        _, records = inspect(source)
+        validate_records(records)
+        counts[game] = {'records': len(records), 'pending': int(source != sources[game])}
     package = json.loads((HERE / 'package-patch.json').read_text(encoding='utf-8'))
     text_proposals = {}
     package_pending = 0

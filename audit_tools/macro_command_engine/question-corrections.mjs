@@ -1,11 +1,12 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import vm from 'node:vm';
+import {rewindGame,applyGame} from '../approved_question_banks/replay.mjs';
 
 // Keep the approved content edits separate from the historical publisher output.
 // Only the named fields may differ from the protected baseline bank.
 const {corrections}=JSON.parse(fs.readFileSync(new URL('./question-corrections.json',import.meta.url),'utf8'));
-export function applyApprovedQuestionCorrections(game, source){
+function applyHistoricalQuestionCorrections(game, source){
   const approved=corrections.filter(c=>c.game===game);
   if(!approved.length)return source;
   const banks=vm.runInNewContext(source+'; questionBanks',{});
@@ -26,4 +27,7 @@ export function applyApprovedQuestionCorrections(game, source){
     updated=updated.replace(original,replacement);
   }
   return updated;
+}
+export function applyApprovedQuestionCorrections(game,source){
+  return applyGame(game,applyHistoricalQuestionCorrections(game,rewindGame(game,source)));
 }

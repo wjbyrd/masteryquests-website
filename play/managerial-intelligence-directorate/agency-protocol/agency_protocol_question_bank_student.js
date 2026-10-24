@@ -1803,7 +1803,7 @@ const questionBanks = {
     {
       "id": 1,
       "sourceGame": "agencyProtocol",
-      "q": "Insurance can create value even when the premium exceeds the buyer’s expected claim because it...",
+      "q": "Why can insurance create value even when the premium exceeds the buyer’s expected claim?",
       "options": [
         "Raises the buyer’s expected cash wealth by the amount of the premium",
         "Transfers financial risk to a party better able to pool and bear it",
@@ -1825,7 +1825,7 @@ const questionBanks = {
     {
       "id": 4,
       "sourceGame": "agencyProtocol",
-      "q": "Adverse selection arises when private information about type affects who trades, so that...",
+      "q": "How does adverse selection change the composition of participants when information about risk or quality is private?",
       "options": [
         "Less favorable types are disproportionately represented in the resulting pool",
         "Participants reduce care after their losses are covered",
@@ -1847,7 +1847,7 @@ const questionBanks = {
     {
       "id": 8,
       "sourceGame": "agencyProtocol",
-      "q": "An insurer verifies applicants’ risk before enrollment and charges premiums reflecting that risk. This chiefly reduces...",
+      "q": "An insurer verifies applicants’ risk before enrollment and charges premiums reflecting that risk. Which problem does this chiefly reduce?",
       "options": [
         "The incentive to neglect precautions after full coverage starts",
         "Cross-subsidies that can drive lower-risk applicants out of a pooled plan",
@@ -1891,7 +1891,7 @@ const questionBanks = {
     {
       "id": 11,
       "sourceGame": "agencyProtocol",
-      "q": "Signaling occurs when...",
+      "q": "Which situation illustrates signaling?",
       "options": [
         "An informed party chooses an observable action that credibly reveals its type",
         "An uninformed party designs a test to discover another party’s type",
@@ -1913,7 +1913,7 @@ const questionBanks = {
     {
       "id": 12,
       "sourceGame": "agencyProtocol",
-      "q": "Applicants voluntarily earn a certification that is easier for high-ability applicants to obtain. If employers value it and weak applicants find it too costly to imitate, it serves as...",
+      "q": "Applicants voluntarily earn a certification that is easier for high-ability applicants to obtain. Employers value it, and weaker applicants find it too costly to imitate. What role does the certification serve?",
       "options": [
         "A signal of ability",
         "Screening initiated by employers",
@@ -1935,7 +1935,7 @@ const questionBanks = {
     {
       "id": 13,
       "sourceGame": "agencyProtocol",
-      "q": "Online reviews help reduce adverse selection because they...",
+      "q": "How can online reviews reduce adverse selection?",
       "options": [
         "Make seller quality more visible",
         "Make a seller’s future effort contractually observable",
@@ -1957,7 +1957,7 @@ const questionBanks = {
     {
       "id": 14,
       "sourceGame": "agencyProtocol",
-      "q": "An online seller voluntarily offers an enforceable refund guarantee. Poor-quality sellers would face many more refund claims. The guarantee can serve as...",
+      "q": "An online seller voluntarily offers an enforceable refund guarantee. Poor-quality sellers would face many more claims. What role can the guarantee serve?",
       "options": [
         "A signal of product quality",
         "A buyer-designed screening test",
@@ -1981,7 +1981,7 @@ const questionBanks = {
     {
       "id": 16,
       "sourceGame": "agencyProtocol",
-      "q": "Moral hazard occurs when...",
+      "q": "Which situation illustrates moral hazard?",
       "options": [
         "A party chooses a hard-to-observe action because it does not bear the full consequences",
         "A party’s private risk type changes the composition of applicants",
@@ -2003,7 +2003,7 @@ const questionBanks = {
     {
       "id": 19,
       "sourceGame": "agencyProtocol",
-      "q": "A deductible helps reduce moral hazard because it...",
+      "q": "How does a deductible help reduce moral hazard?",
       "options": [
         "Makes the insured person bear part of the cost",
         "Lets the insurer observe each precaution directly",
@@ -2025,7 +2025,7 @@ const questionBanks = {
     {
       "id": 22,
       "sourceGame": "agencyProtocol",
-      "q": "Monitoring reduces moral hazard because it...",
+      "q": "How does monitoring reduce moral hazard?",
       "options": [
         "Makes hidden actions easier to observe",
         "Changes the agent’s share of output without observing behavior",
@@ -2047,7 +2047,7 @@ const questionBanks = {
     {
       "id": 25,
       "sourceGame": "agencyProtocol",
-      "q": "Shirking means...",
+      "q": "What is shirking?",
       "options": [
         "Avoiding effort when effort is hard to observe",
         "Accepting a job with ability the employer cannot observe",
@@ -2069,7 +2069,7 @@ const questionBanks = {
     {
       "id": 29,
       "sourceGame": "agencyProtocol",
-      "q": "Collateral reduces moral hazard in lending because it...",
+      "q": "How does collateral reduce moral hazard in lending?",
       "options": [
         "Gives the borrower something to lose if they default",
         "Reveals every project choice directly to the lender",
@@ -2091,7 +2091,7 @@ const questionBanks = {
     {
       "id": 31,
       "sourceGame": "agencyProtocol",
-      "q": "A principal–agent relationship exists when...",
+      "q": "Which arrangement establishes a principal–agent relationship?",
       "options": [
         "One party delegates decisions to another acting on its behalf",
         "Two parties sell unrelated products to the same customers",
@@ -2113,7 +2113,7 @@ const questionBanks = {
     {
       "id": 32,
       "sourceGame": "agencyProtocol",
-      "q": "Shareholders hire a manager to operate their company. In this relationship...",
+      "q": "Shareholders hire a manager to operate their company. Which statement identifies their respective roles?",
       "options": [
         "Shareholders are the principals; the manager is their agent",
         "The manager is the principal; shareholders are the agents",
@@ -2157,7 +2157,7 @@ const questionBanks = {
     {
       "id": 35,
       "sourceGame": "agencyProtocol",
-      "q": "Centralization of decision rights means...",
+      "q": "What does centralization of decision rights mean?",
       "options": [
         "Senior managers retain authority over the specified decisions",
         "Local managers receive authority over the specified decisions",
@@ -2179,7 +2179,7 @@ const questionBanks = {
     {
       "id": 36,
       "sourceGame": "agencyProtocol",
-      "q": "Decentralization of decision rights means...",
+      "q": "What does decentralization of decision rights mean?",
       "options": [
         "Lower-level managers receive authority over specified decisions",
         "Lower-level managers advise headquarters but cannot authorize decisions",
@@ -2467,7 +2467,7 @@ const questionBanks = {
     {
       "id": 130,
       "sourceGame": "agencyProtocol",
-      "q": "Division A sells parts to Division B inside the same company. The price charged between them is called...",
+      "q": "Division A sells parts to Division B within the same company. What is the price charged between them called?",
       "options": [
         "A transfer price",
         "External market price paid by an independent customer",
@@ -2489,7 +2489,7 @@ const questionBanks = {
     {
       "id": 132,
       "sourceGame": "agencyProtocol",
-      "q": "A maintenance department must provide specified service quality and is evaluated mainly on the cost of doing so. It is a...",
+      "q": "A maintenance department must provide specified service quality and is evaluated mainly on the cost of doing so. How is this department classified?",
       "options": [
         "Cost center",
         "Profit center",
@@ -2511,7 +2511,7 @@ const questionBanks = {
     {
       "id": 133,
       "sourceGame": "agencyProtocol",
-      "q": "Functional units are useful because they...",
+      "q": "What is an advantage of organizing employees into functional units?",
       "options": [
         "Group employees with similar skills and tasks",
         "Group all activities for each product into a separate business division",
@@ -2533,7 +2533,7 @@ const questionBanks = {
     {
       "id": 135,
       "sourceGame": "agencyProtocol",
-      "q": "A multidivisional structure organizes the firm around...",
+      "q": "How does a multidivisional structure organize a firm?",
       "options": [
         "Separate divisions such as products, regions, or business lines",
         "Company-wide departments grouped by specialist function",
@@ -3568,7 +3568,7 @@ const questionBanks = {
     {
       "id": 9054,
       "sourceGame": "agencyProtocol",
-      "q": "A team bonus is paid equally. One worker quietly reduces effort because the group reward barely changes. What is the cleanest diagnosis?",
+      "q": "A team bonus is paid equally. One worker quietly reduces effort because the group reward barely changes. What is the most accurate diagnosis?",
       "options": [
         "Productive specialization because the worker completed all assigned effort",
         "Adverse selection because the worker concealed ability before joining",
@@ -4011,7 +4011,7 @@ const questionBanks = {
       "sourceGame": "agencyProtocol",
       "q": "A platform displays verified seller histories and withholds payment until verified delivery. New buyers choose more reliable sellers, and existing sellers ship more promptly. Which evidence identifies each mechanism?",
       "options": [
-        "Changed seller choice shows selection; improved existing-seller effort shows an action response",
+        "Seller choice reveals selection; faster shipment reveals changed effort",
         "Both changes show adverse selection because every seller has a history",
         "Both changes show moral hazard because the platform holds money",
         "Prompt shipment proves histories perfectly revealed every seller’s type"
@@ -4026,7 +4026,7 @@ const questionBanks = {
       "repairSkill": "reputation",
       "commonError": "treats_reviews_as_perfect_information_instead_of_noisy_market_discipline",
       "feedback": "Seller composition and behavior by a fixed set of sellers are different margins. Reputation informs selection; conditional payment can strengthen delivery incentives.",
-      "aHash": "96e264060f19568795fc3a5c21627dbcc0a12438ebd25b9155bdd1abb3fb7448"
+      "aHash": "b12b418c18218607dcafeb42299060d9a73471cb3570d7de3bb0fc9b8c56d261"
     },
     {
       "id": 220,
@@ -4055,7 +4055,7 @@ const questionBanks = {
       "sourceGame": "agencyProtocol",
       "q": "A platform bans sellers after one complaint, although complaints sometimes reflect delivery delays outside the seller’s control. Reliable new sellers begin leaving. Which revision best addresses this evidence?",
       "options": [
-        "Verify patterns and responsibility while retaining sanctions for proven misconduct",
+        "Verify responsibility and sanction proven patterns of misconduct",
         "Ban after any unverified report to maximize the number removed",
         "Remove all complaint records because some complaints are noisy",
         "Treat remaining sellers as reliable once the first bans occur"
@@ -4070,14 +4070,14 @@ const questionBanks = {
       "repairSkill": "reputation",
       "commonError": "treats_reviews_as_perfect_information_instead_of_noisy_market_discipline",
       "feedback": "Noisy complaints can cause false exclusions and worsen selection. Verified patterns target poor quality or misconduct without abandoning discipline.",
-      "aHash": "b5e3845af8e1c3d13979a645388acf2ef910458fb5fe0c315857f8ed07175918"
+      "aHash": "2f8b56b9d8fb127ea5fc2c163a1af9bf151c5fd8f2e43db272f16157b284f8bc"
     },
     {
       "id": 223,
       "sourceGame": "agencyProtocol",
       "q": "A plan attracts applicants with high pre-existing risk and later sees insured customers reduce care. A manager proposes only an entry medical exam. Which evaluation is strongest?",
       "options": [
-        "The exam can improve selection, but care still needs incentives or monitoring",
+        "The exam addresses selection; care still needs incentives or monitoring",
         "The exam addresses reduced care but reveals no pre-existing risk",
         "A more accurate exam necessarily restores precautions after coverage",
         "A deductible cannot affect care because it is written before coverage"
@@ -4094,14 +4094,14 @@ const questionBanks = {
       "repairSkill": "moral_hazard",
       "commonError": "assumes_successful_screening_controls_later_hidden_action",
       "feedback": "Entry screening informs type selection. It does not itself change the payoff from taking care. The date a contract is written does not determine the mechanism.",
-      "aHash": "e083896c4c7ba1ec0d3a9416450f6638d9023c80ef23f880828e5453c03cdea6"
+      "aHash": "a24e69180eb83b4c455bc5dae73932074cc068acadc38b1c5661f1df3a14e006"
     },
     {
       "id": 227,
       "sourceGame": "agencyProtocol",
       "q": "A contractor can secretly skip a quality check costing $40 in effort. Skipping raises expected client repair costs by $150. Verification costs the client $25 per job and detects every skipped check, triggering a $70 loss of contractor pay. Which conclusion follows?",
       "options": [
-        "Verification deters skipping; the $65 checking-plus-verification cost is below $150 damage avoided",
+        "Verify: checking and verification cost $65 and prevent $150 in damage",
         "The contractor checks without control because the client’s loss exceeds $40",
         "A $70 pay loss cannot deter skipping because it is below the client’s $150 loss",
         "Verification destroys value because every control expense is a pure loss"
@@ -4116,14 +4116,14 @@ const questionBanks = {
       "repairSkill": "moral_hazard",
       "commonError": "confuses_post_contract_behavior_with_pre_contract_type_selection",
       "feedback": "The contractor would save $40 by skipping but lose $70 when verified. Deterrence restores $40 of checking effort and costs $25 to verify, avoiding $150 expected damage: net gain $85.",
-      "aHash": "312812f247485cbddfdc96563d92900f7741b3dbc1d128075179461cce06dd8a"
+      "aHash": "e3e8c26e44f056c19d1afc62d04dc1c08a8dba8f0144dd48d1b0fbce4ef1ea4b"
     },
     {
       "id": 230,
       "sourceGame": "agencyProtocol",
       "q": "Workers can falsely mark undelivered parcels as complete. A firm monitors those marks, and raising completion bonuses increases false reporting. Which control most directly repairs the incentive?",
       "options": [
-        "Reward independently verified delivery and audit suspicious patterns",
+        "Reward verified deliveries and audit suspicious reporting",
         "Raise the same completion bonus without verifying delivery",
         "Screen driving ability at hiring but keep current payment rules",
         "Pay for scanner activity because it is easier to observe"
@@ -4140,7 +4140,7 @@ const questionBanks = {
       "repairSkill": "monitoring",
       "commonError": "mistakes_observable_self_reports_for_verified_actions",
       "feedback": "Self-reported marks can be manipulated. Independent verification links rewards to delivery; ability screening does not correct the current reporting incentive.",
-      "aHash": "fcc4ce56436563757eee3db8652a569a8ee6e06da0b92a29948f179300db90a0"
+      "aHash": "4567029a4d69cb3c9d50d14306080af1b65c4b71a6c58414859f6323360a25ab"
     },
     {
       "id": 233,
@@ -4169,7 +4169,7 @@ const questionBanks = {
       "sourceGame": "agencyProtocol",
       "q": "After a loan, a borrower secretly chooses a project. The safe project returns $120 for sure; the risky project returns $220 with probability 0.5 and zero otherwise. Debt repayment is $100 when feasible and the borrower has limited liability. Ignoring other costs, what conflict arises?",
       "options": [
-        "The borrower prefers risky residual $60 over $20, although total expected return falls from $120 to $110",
+        "The borrower prefers $60 to $20, although expected total returns fall to $110",
         "The borrower prefers safe payoff $120 over $110 because debt is irrelevant",
         "The lender prefers risky repayment $110 over safe repayment $100",
         "Both parties prefer risk because its successful return is $220"
@@ -4184,7 +4184,7 @@ const questionBanks = {
       "repairSkill": "lending",
       "commonError": "assumes_borrowers_and_lenders_share_the_same_risk_incentives_after_funding",
       "feedback": "Borrower residuals are 120−100=20 and 0.5×(220−100)=60. Total expected risky return is 110, below 120; expected lender repayment falls from 100 to 50.",
-      "aHash": "a4bae27780ade965f5016bf8120de0c797452fbca2b949f3aac8a8ad3875d662"
+      "aHash": "01bb6b7d7aec5a69a84e0922979fa681a6cbf73887a96293bb0519f99082d45e"
     },
     {
       "id": 241,
@@ -4213,7 +4213,7 @@ const questionBanks = {
       "sourceGame": "agencyProtocol",
       "q": "A manager hired after an ability test performs well on isolated tasks but neglects teamwork after individual-output bonuses begin. Output also falls during a power outage. Which diagnosis fits?",
       "options": [
-        "Separate bonus-induced teamwork distortion from the outage; neither proves the ability test failed",
+        "Distinguish distorted teamwork incentives from the independent outage",
         "Treat both teamwork neglect and the outage as low pre-hire ability",
         "Treat the outage as shirking and the bonus response as adverse selection",
         "Retest ability only because successful screening removes later conflict"
@@ -4228,7 +4228,7 @@ const questionBanks = {
       "repairSkill": "principal_agent",
       "commonError": "misidentifies_delegated_roles_or_ignores_private_rewards_and_information",
       "feedback": "Ability, effort allocation and uncontrollable shocks are different. Bonus-related neglect points to incentives; the outage does not establish low effort.",
-      "aHash": "61fe0618f6318c88142ca9fe48468019b8fe7ae51ac143be138878693d12990c"
+      "aHash": "6f612e16d8765e7e5669ad0054cedc5152cc86eb3fe5d6734743eefc029291a0"
     },
     {
       "id": 246,
@@ -4279,7 +4279,7 @@ const questionBanks = {
       "sourceGame": "agencyProtocol",
       "q": "Branches know urgent customer needs; headquarters knows shared-capacity constraints. Local volume bonuses cause overpromising, but central approval loses time-sensitive orders. Which design uses both kinds of information?",
       "options": [
-        "Delegate routine promises with current capacity costs and margin rewards; escalate major spillovers",
+        "Delegate with capacity costs and margin rewards; escalate major spillovers",
         "Delegate every promise and keep local volume rewards unchanged",
         "Centralize every promise without collecting current local demand",
         "Keep local authority but report only historical revenue, excluding capacity costs"
@@ -4294,7 +4294,7 @@ const questionBanks = {
       "repairSkill": "organization",
       "commonError": "confuses_information_location_with_rights_or_ignores_coordination_cost",
       "feedback": "Current resource information and aligned rewards preserve speed while internalizing spillovers. Large cross-unit effects can still require central coordination.",
-      "aHash": "0bec726ca7bcf9a28191175dff1557aa79a24aaadc2066789ec6adde57df62fa"
+      "aHash": "874c507b92e8652926099b0abd8e48a81aa44a77746b733fdc6554d943649874"
     },
     {
       "id": 264,
@@ -4337,7 +4337,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "parent_company",
       "commonError": "counts_local_gain_without_other_divisions_real_effects",
-      "feedback": "Closing saves70 but loses40+50, reducing company profit by20 thousand. The unchanged30 allocation is not an incremental saving. A’s reported loss omits its support for B and includes an unavoidable allocation.",
+      "feedback": "Closing the division saves $70,000 but loses $40,000 in revenue and $50,000 in contribution elsewhere, reducing company profit by $20,000. The allocated headquarters cost remains and therefore does not count as a saving from closure.",
       "aHash": "87fb357f2ecae058866eb03ed037412ea119080ee28fb1dc9973139ad9a2702d"
     },
     {
@@ -4345,7 +4345,7 @@ const questionBanks = {
       "sourceGame": "agencyProtocol",
       "q": "A supplier division is at capacity. It sells components outside for $68, paying $4 in selling expenses avoided on internal orders. Production costs $37 either way. A sister division can buy the same component outside for $61. What should the company do?",
       "options": [
-        "Buy outside: internal supply forgoes $64 net external revenue to avoid a $61 purchase",
+        "Buy outside: internal supply sacrifices $64 to avoid a $61 purchase",
         "Transfer internally: $37 production cost is below the $61 outside price",
         "Transfer internally: any price below $68 creates company value",
         "Be indifferent: internal prices cancel, so sourcing has no real effect"
@@ -4360,14 +4360,14 @@ const questionBanks = {
       "repairSkill": "transfer_pricing",
       "commonError": "sets_transfer_price_from_division_politics_instead_of_opportunity_cost_and_total_firm_value",
       "feedback": "At capacity the internal opportunity cost is 68−4=$64. Outside purchase at $61 is $3 cheaper; production cost alone misses displaced sales.",
-      "aHash": "d6dd1b848f4ed0e7091ead5b0819512daded944ffdc48ee06b96ea7963596a07"
+      "aHash": "63b6b29862632498736b95c6bfacf2e3023bd2b2ff632e28bbf2828498b1e64d"
     },
     {
       "id": 273,
       "sourceGame": "agencyProtocol",
       "q": "A product manager controls prices and production costs but shifts support costs to a shared unit. Reported product profit rises $50,000 while uncharged support costs rise $75,000. Which evaluation change fits?",
       "options": [
-        "Keep profit accountability but include attributable support costs and service effects",
+        "Include attributable support costs and service effects in profit evaluation",
         "Reclassify the unit as a cost center and ignore its pricing decisions",
         "Keep the current measure because costs outside the unit are irrelevant",
         "Reward revenue alone so allocation disputes no longer affect bonuses"
@@ -4382,14 +4382,14 @@ const questionBanks = {
       "repairSkill": "profit_center",
       "commonError": "assumes_local_profit_center_success_always_improves_total_firm_profit",
       "feedback": "The unit has profit-center rights. Its measure needs the costs it causes; otherwise reported gain conceals a $25,000 company loss.",
-      "aHash": "f2d3154d852386e64d33201a60798c043ce97c9f3bd39e4c09176b49db06cf78"
+      "aHash": "5164724ed23bdc19da0e586af2ebea4ec0fd610aa6fd0b1bac03fc3b9f3ea76e"
     },
     {
       "id": 275,
       "sourceGame": "agencyProtocol",
       "q": "A support unit controls effort and cost but not sales prices. Cutting checks saves $12,000 and causes $30,000 in downstream defects; preserving checks avoids both. Which accountability rule fits?",
       "options": [
-        "Evaluate controllable costs with verified quality and downstream defect effects",
+        "Assess controllable costs, verified quality and downstream defects",
         "Reward the lowest support cost without a service condition",
         "Evaluate sales prices set only by headquarters",
         "Remove accountability because some outcomes are outside the unit"
@@ -4404,7 +4404,7 @@ const questionBanks = {
       "repairSkill": "cost_center",
       "commonError": "equates_cost_reduction_with_value_creation",
       "feedback": "A cost center should deliver specified service efficiently. Quality and attributable downstream effects discourage a saving that loses $18,000 overall.",
-      "aHash": "ee375bdfe366d0084a15be51a2d0d87f9e3565a8f8144f02412902c63c67af1e"
+      "aHash": "f6c14b19ea528aaa062c6bb9c7c18f0ec77d32191cc7259de958d029b0d48fe3"
     },
     {
       "id": 277,
@@ -4477,7 +4477,7 @@ const questionBanks = {
       "sourceGame": "agencyProtocol",
       "q": "Managers submit forecasts and earn bonuses for beating targets derived from them. One deliberately understates known demand; another honestly forecasts but misses after an unexpected shock. Which diagnosis and redesign fit?",
       "options": [
-        "The first creates slack; the second is not shown to game. Separate forecasts from negotiable bonus hurdles",
+        "Only the first creates slack; separate forecasts from bonus targets",
         "Both game because every forecast error shows dishonest reporting",
         "Only the second games because a missed target proves low effort",
         "Neither can game because the submitted numbers concern the future"
@@ -4492,7 +4492,7 @@ const questionBanks = {
       "repairSkill": "budget_games",
       "commonError": "mistakes_budget_compliance_for_honest_forecasting_or_value_creation",
       "feedback": "Intentional misrepresentation for an easier reward threshold is gaming. Uncertainty can cause honest errors; forecast use and rewards should distinguish them.",
-      "aHash": "84429c7f5c662db061e53ca3dd7bfc2af1c263241cb25c615fae60a58f1e5cbb"
+      "aHash": "0f7f50edfe84b1fb1e8bcba34d7694ffdcd65cd45a5d01b0afffdd43f48dc4a8"
     },
     {
       "id": 7000,
@@ -4522,7 +4522,7 @@ const questionBanks = {
       "q": "A bank begins using credit checks and project covenants. New borrowers default less, but the same borrowers still switch secretly to riskier projects after receiving funds. Which assessment is strongest?",
       "options": [
         "Lower entrant default establishes that covenants stopped project switching",
-        "Selection may have improved; the continuing project switches show a post-loan control gap",
+        "Selection may improve while post-loan project switching remains unchecked",
         "Later project switches identify only a pre-loan ability problem",
         "Good credit screening makes enforcement of project limits unnecessary"
       ],
@@ -4536,14 +4536,14 @@ const questionBanks = {
       "repairSkill": "lending",
       "commonError": "assumes_borrowers_and_lenders_share_the_same_risk_incentives_after_funding",
       "feedback": "Evidence about entrants and evidence about later actions identify different margins. Better selection does not establish that project choice is controlled.",
-      "aHash": "c9afa9064a5b4905698393349b554842fd03cd5c994352b54c470b47c90f48bd"
+      "aHash": "3cc9333e484aae023b613e7325219e49ff443c5df9268f76c57f416ff2a18b54"
     },
     {
       "id": 7020,
       "sourceGame": "agencyProtocol",
       "q": "Local menu changes create 75 in customer value and 30 in added ingredient costs, but impose 55 in chain-wide purchasing losses. A common menu avoids those effects. What should headquarters infer?",
       "options": [
-        "The local changes lose 10 overall; local knowledge alone does not justify unrestricted menu authority",
+        "The changes lose 10 overall; unrestricted local authority is not justified",
         "The changes gain 45 because purchasing losses belong to another unit",
         "The changes gain 20 because ingredient cost is an internal charge",
         "The changes lose 85 because customer value should be omitted"
@@ -4558,7 +4558,7 @@ const questionBanks = {
       "repairSkill": "organization",
       "commonError": "confuses_information_location_with_rights_or_ignores_coordination_cost",
       "feedback": "Net effect is 75-30-55=-10. With a smaller coordination cost the conclusion could reverse, so the result is conditional rather than a blanket centralization rule.",
-      "aHash": "76deac87c21091ec63d9ca4ae1fdd8ccc27a20be49b9d08fad8a598b89d2588e"
+      "aHash": "5d57da4160c1fac94fff249e3266686088f8fc77d15b77b2fb0be7ae6514cdf4"
     },
     {
       "id": 7024,
@@ -4612,7 +4612,7 @@ const questionBanks = {
       "q": "A new insurance contract attracts safer applicants but reduces each enrollee’s precautions. Average claims stay unchanged. Management wants to keep the entry advantage and improve care. Which evaluation and redesign best fit?",
       "options": [
         "Keep the contract unchanged because average claims show neither mechanism changed",
-        "Separate selection from behavior; compare care incentives and monitoring while checking effects on safer applicants’ participation",
+        "Compare care controls while preserving the participation of safer applicants",
         "Tighten entry screening only because safer applicants cannot reduce care",
         "Raise loss sharing without checking whether safer applicants leave or protection loses value"
       ],
@@ -4629,7 +4629,7 @@ const questionBanks = {
       "repairSkill": "moral_hazard",
       "commonError": "ignores_offsetting_selection_and_care_changes",
       "feedback": "Favorable composition and worsening care can offset. A care reform must be evaluated for its behavior effect, selection effect and lost insurance value rather than judged only by average claims.",
-      "aHash": "a33b70a9fb673602fe842805a3344a0a66287e176f4cc3483858620f152d77e5"
+      "aHash": "83888ee4ce6a5f1ef235b9fe302214aa30bf265b6b7a7756b8a2c3e880fd4e23"
     },
     {
       "id": 7002,
@@ -4638,7 +4638,7 @@ const questionBanks = {
       "options": [
         "Use a harder entry test as the sole remedy for both later problems",
         "Increase output bonuses without adjusting for storms or teamwork",
-        "Screening helps selection; pay still needs to address noise and unmeasured cooperative effort",
+        "Pay must address output noise and teamwork despite successful screening",
         "Use storm-affected output alone to decide which applicants had low ability"
       ],
       "tag": "principal_agent",
@@ -4654,7 +4654,7 @@ const questionBanks = {
       "repairSkill": "principal_agent",
       "commonError": "misidentifies_delegated_roles_or_ignores_private_rewards_and_information",
       "feedback": "Selection, uncontrollable noise and later effort allocation are different margins. A successful ability test cannot fully repair a distorted performance measure.",
-      "aHash": "702023c53fa0183b67ac706e8d85eb94e0bde20044b79d933f86dace32a93d0f"
+      "aHash": "1b7cd0f3cff9b2a649b07e0ac5a08f8effc9d86fb75952f027689c542113d161"
     },
     {
       "id": 7003,
@@ -4664,7 +4664,7 @@ const questionBanks = {
         "Both types offer it because any warranty premium makes a signal profitable",
         "It remains a separating signal because reliable sellers still have lower claims cost",
         "Unreliable sellers now offer it because coverage lowers buyer care",
-        "Both types now prefer not to offer it; buyer moral hazard has undermined the separating signal"
+        "Neither type now offers the warranty; buyer moral hazard breaks separation"
       ],
       "tag": "signaling",
       "type": "integration",
@@ -4676,7 +4676,7 @@ const questionBanks = {
       "repairSkill": "signaling",
       "commonError": "confuses_type_composition_with_behavior_or_signal_incentives",
       "feedback": "Initially net gains are 20 and -10. After reduced care they are -5 and -35. Relative cost advantage alone does not make signaling worthwhile; behavior on the other side can change the incentive to signal.",
-      "aHash": "3c8d448bfeb1410c5909acce8eaa62d6dde4389f8257910f6de2e0c92b94b8c2"
+      "aHash": "421140c2a8f55b73efdbc8422e2f48b28b509289cda848d4e273f6cc4210b53e"
     },
     {
       "id": 7005,
@@ -4772,7 +4772,7 @@ const questionBanks = {
       "q": "Headquarters centralizes discount approval after revenue bonuses cause unprofitable sales. Profit improves, but response delays lose some high-margin customers. Which next comparison is most useful?",
       "options": [
         "Restore revenue-only rewards because delay alone establishes delegation is superior",
-        "Compare central approval with delegated margin-based pay and targeted audits, including both delay and control costs",
+        "Compare approval with delegated margin pay, including audit and delay costs",
         "Retain full central approval because improvement over the old design proves optimality",
         "Delegate with margin pay but exclude audit cost and lost-order effects from comparison"
       ],
@@ -4786,7 +4786,7 @@ const questionBanks = {
       "repairSkill": "organization",
       "commonError": "confuses_information_location_with_rights_or_ignores_coordination_cost",
       "feedback": "The observed improvement establishes a gain over the old design, not optimality. A hybrid may retain local speed while addressing the original metric distortion.",
-      "aHash": "164a6816ff6d1b7410b51aeddc40c60ce126ca1d3d8a5a56120ff253befc42b8"
+      "aHash": "00b67c54c4be7de2146c57140bbeb1fe0403686498c83c2b8973008105b690ce"
     },
     {
       "id": 7023,
@@ -4816,7 +4816,7 @@ const questionBanks = {
       "q": "Headquarters sets prices, product mix and demand forecasts for a service unit; its manager controls staffing and purchasing. Total-profit targets have caused service cuts when headquarters discounts prices. A proposal would give the unit customer and pricing decisions but those prices could divert sales from a sister unit. Which evaluation design fits both stages?",
       "options": [
         "Now use total profit despite central prices; with pricing rights, use only controllable cost",
-        "Now use controllable cost with service standards; with pricing rights, use profit adjusted for effects on the sister unit",
+        "Use cost and service standards now; later include profit and sister-unit effects",
         "Now use cost alone despite service cuts; with pricing rights, use unadjusted local profit",
         "Now use revenue alone; with pricing rights, charge every headquarters expense regardless of controllability"
       ],
@@ -4833,7 +4833,7 @@ const questionBanks = {
       "repairSkill": "cost_center",
       "commonError": "assigns_accountability_without_control_or_service_safeguards",
       "feedback": "A cost-center measure fits current rights only with service safeguards. Broader revenue and cost control can support profit-center accountability, but local profit omitting diverted sister-unit sales may conflict with company profit. Rights, measurement and cross-unit incentives must change together.",
-      "aHash": "3e843bc9e1877ac77ff701b1952ab51388a00048fb7de1990cb19855e3d28ffa"
+      "aHash": "ec8cc563ec7bf875431c5d5623dc5c92758ab35e131a4bec2706ef8354b94652"
     },
     {
       "id": 7031,
@@ -4843,7 +4843,7 @@ const questionBanks = {
         "Choose divisions; oversight is an internal allocation with no real cost",
         "Choose divisions; the $230,000 recovery exceeds the teams’ $150,000",
         "Choose teams; divisions become better whenever duplication is below $140,000",
-        "Choose functional teams; divisions become better if duplicate support falls below $125,000"
+        "Choose teams; divisions win if duplicate support falls below $125,000"
       ],
       "tag": "multidivisional",
       "type": "integration",
@@ -4855,14 +4855,14 @@ const questionBanks = {
       "repairSkill": "multidivisional",
       "commonError": "assumes_divisional_accountability_eliminates_coordination_and_agency_problems",
       "feedback": "Teams net 60,000; divisions net 45,000. Divisions beat teams when 230,000−45,000−duplication exceeds 60,000, or duplication is below 125,000.",
-      "aHash": "3edbb4648348f35cebde61acae024fd3e48b52c4e9b63c80d32d6f182830023f"
+      "aHash": "eb88c857ec7c1d259a623d89199e7b6ffced996f126503caaf9cd6b457ebc5c1"
     },
     {
       "id": 9004,
       "sourceGame": "agencyProtocol",
       "q": "A firm compares two pre-hire tests and hires every passer. Test A admits 72 capable and 8 weak applicants and costs $1,000. Test B admits 64 capable and 2 weak applicants and costs $4,000. Each capable hire creates $200 net value; each weak hire loses $500, after pay and other hiring costs. Both groups can later shirk if effort incentives are poor. Which conclusion follows?",
       "options": [
-        "Choose A: $9,400 net versus $7,800; its higher weak share does not remove the need for effort incentives",
+        "Choose A: net value is $9,400 versus $7,800; effort incentives still matter",
         "Choose B: the lowest weak share necessarily yields the highest total net hiring value",
         "Choose A: $9,400 net; selecting capable applicants also resolves later hidden effort",
         "Choose B: compare $11,800 before test cost with A’s $9,400 after test cost"
@@ -4877,7 +4877,7 @@ const questionBanks = {
       "repairSkill": "screening",
       "commonError": "confuses_type_composition_with_behavior_or_signal_incentives",
       "feedback": "A nets 72×200−8×500−1000=9400; B nets 64×200−2×500−4000=7800. B has a lower weak share (2/66 versus 8/80), but rejects more capable applicants and costs more. Pre-hire screening does not guarantee effort after hiring.",
-      "aHash": "a919a2bb02da3ec2a10817d48f6a6ae2798a8d530f475ca3603f7af0bc737857"
+      "aHash": "38b17f17a16bece228980eedf585e9049f4e9531b0731f838e887d1c32ee9070"
     },
     {
       "id": 9031,
@@ -4952,7 +4952,7 @@ const questionBanks = {
       "options": [
         "Treat the later loss rise as proof the original selection was adverse; replace all entrants",
         "Treat the low-risk pool as adverse selection and buy the redundant entry screen",
-        "Retain the favorable selection and check precautions; the $15,000 net control gain addresses hidden action",
+        "Keep the favorable pool; checking care creates a $15,000 net gain",
         "Retain the pool without care controls because favorable selection guarantees low future claims"
       ],
       "tag": "favorable_selection",
@@ -4968,7 +4968,7 @@ const questionBanks = {
       "repairSkill": "favorable_selection",
       "commonError": "treats_favorable_entry_as_a_guarantee_of_later_care_or_confuses_changed_actions_with_type_selection",
       "feedback": "Lower-cost types disproportionately enter, which is favorable selection. Their later reduction in precautions is a separate moral-hazard response. The redundant entry screen has no stated information benefit; precaution checks net24−9=15 thousand. Good selection does not guarantee aligned later behavior.",
-      "aHash": "c50d8d37afda5186ebc71d351483bb2ca96bc977068c5ad54ff0fd90a9829cd0"
+      "aHash": "97346418fa5e6d61a8e1d9f6aa1271dff3a963eaa6ecffdff1c27209547e9110"
     },
     {
       "id": 9202,
@@ -5090,7 +5090,7 @@ const questionBanks = {
       "sourceGame": "agencyProtocol",
       "q": "Departments inflate next year’s requests because headquarters routinely cuts every request by 10%. They also buy unwanted equipment because unused funds reduce future allocations. Allowing carryover would remove the spending deadline but leave managers’ private estimates of need. Which redesign addresses both behaviors without assuming information becomes free?",
       "options": [
-        "Allow justified carryover and review requests against activity evidence; weigh verification cost and remaining slack",
+        "Permit justified carryover; verify requests and weigh control costs against slack",
         "Allow unlimited carryover and retain uniform cuts; ending the deadline also makes requests truthful",
         "Ban carryover and stop uniform cuts; truthful requests would eliminate waste from expiring funds",
         "Keep both rules and reward low year-end balances; tighter measurement aligns spending with real need"
@@ -5105,7 +5105,7 @@ const questionBanks = {
       "repairSkill": "budget_games",
       "commonError": "mistakes_budget_compliance_for_honest_forecasting_or_value_creation",
       "feedback": "Carryover reduces the incentive to exhaust allocations. Replacing predictable uniform cuts with evidence-based review weakens request inflation. Managers still know more about needs, and verification consumes resources; neither truthful budgets nor zero slack is guaranteed.",
-      "aHash": "ab29c4711b98df24bacb457e2112009fa2c897512598f176a5a1b94848432647"
+      "aHash": "579c334c24c0f5c606c91a712fafb9072b41b95ae7396440d763f014ae5eac9a"
     }
   ],
   "legendary": [
@@ -5317,7 +5317,7 @@ const questionBanks = {
       "sourceGame": "agencyProtocol",
       "q": "A division knows a process saving that would permanently cut cost. Revealing it immediately lowers all future budget targets; its manager receives only this year’s saving bonus and expects to remain for three years. The parent needs the information for investment planning. Which reform addresses withholding without paying for mere accounting reclassification?",
       "options": [
-        "Commit to sharing independently verified recurring savings for several years, with clawback for shifted costs",
+        "Share verified recurring savings over several years, reclaiming rewards for shifted costs",
         "Increase the first-year saving percentage while continuing to reset every later target immediately",
         "Freeze all budgets permanently and share reported savings without checking costs in other periods",
         "Pay for forecast accuracy but leave the immediate target reset and savings bonus unchanged"
@@ -5335,7 +5335,7 @@ const questionBanks = {
       "repairSkill": "budget_games",
       "commonError": "a_larger_first_year_reward_may_help_but_does_not_directly_remove_the_continuing_ratchet_identified_in_the_stem",
       "feedback": "Immediate ratcheting makes useful private information costly to reveal. A credible multi-year share preserves the revelation reward; independent verification and cross-period clawbacks distinguish real process gains from timing changes.",
-      "aHash": "33443ef0403c8801ee342de9be19505541c8e053c136d9caa59e558827370d0b",
+      "aHash": "45f5764bc23ca1aafddfc163d9910157a21eb6b1e583d1343cc112f38851e738",
       "canonicalDifficulty": "legendary"
     },
     {
@@ -5395,7 +5395,7 @@ const questionBanks = {
       "options": [
         "Choose A at net 12,000; B wins when its cost falls below 8,000",
         "Choose B at net 13,000 because rejected good contracts create no accounting loss",
-        "Choose A at net 6,000 rather than B at 4,000; B wins only if its cost falls below 5,000",
+        "Choose A: net 6,000 versus 4,000; B wins with a cost below 5,000",
         "Choose B because avoiding two additional bad contracts creates 4,000 of extra value"
       ],
       "tag": "screening",
@@ -5409,7 +5409,7 @@ const questionBanks = {
       "repairSkill": "screening",
       "commonError": "the_added_avoidance_is_offset_by_an_extra_false_rejection_and_higher_screening_expense",
       "feedback": "A creates 16,000−6,000−4,000=6,000; B creates 20,000−9,000−7,000=4,000. At variable cost c, B creates 11,000−c and beats A only for c<5,000. Forgone good contracts are economic costs.",
-      "aHash": "abccdb0b0cfca62a2c55af7ceaf5e92161977e22844985d30e3d5f4ff1a71595"
+      "aHash": "c82ca335b45e3c10f938eae229d63d99a4e2aaf9d769f1ad503547607d188e3b"
     },
     {
       "id": 23003,
@@ -5470,7 +5470,7 @@ const questionBanks = {
         "Both types choose full cover because its premium is below each uninsured certainty-equivalent cost",
         "Both types choose the deductible because its quoted premium is below the full-cover premium",
         "Low-risk buyers remain uninsured because expected loss is 50; high-risk buyers choose full cover",
-        "Low-risk buyers choose the deductible at cost 185; high-risk buyers choose full cover at 250; both participate"
+        "Both join: low-risk buyers choose the deductible at 185; high-risk buyers pay 250 for full cover"
       ],
       "tag": "screening",
       "type": "multi-step",
@@ -5483,7 +5483,7 @@ const questionBanks = {
       "repairSkill": "screening",
       "commonError": "for_low_risk_buyers_full_cover_is_more_expensive_than_both_relevant_alternatives",
       "feedback": "Low-risk deductible cost is 100+25+60=185, below full cover 250 and uninsured 240. High-risk deductible cost is 100+100+80=280, above full cover 250 but below uninsured 480. The less-informed insurer’s menu separates types and meets participation using the supplied risk valuations.",
-      "aHash": "a7d616bfcff122a213da5bcfc8eac20bb82eae7f7d47037a0d3ce21331c9e8af"
+      "aHash": "10e611132c559c4ea62a74d83657f5f4941e1bffbe8e1d2716334d4023ee6665"
     },
     {
       "id": 23006,
@@ -5492,7 +5492,7 @@ const questionBanks = {
       "options": [
         "D = 160 separates types because the unreliable supplier earns exactly zero from imitating",
         "D below 120 separates types because a smaller required bond raises reliable participation",
-        "Strict separation requires 160 < D < 800, so no feasible bond admits the reliable suppliers and separates types",
+        "Separation requires 160 < D < 800, exceeding reliable suppliers’ pledge limit",
         "Any D above 80 separates types, so the feasible bond D = 120 implements separation"
       ],
       "tag": "signaling",
@@ -5506,7 +5506,7 @@ const questionBanks = {
       "repairSkill": "signaling",
       "commonError": "at_120_the_unreliable_supplier_still_gains_20",
       "feedback": "Reliable net return 80−0.1D must be positive, so D<800; unreliable return 80−0.5D must be negative, so D>160. Reliable liquidity caps D at 120. Credibility and ability to finance a signal are different constraints.",
-      "aHash": "266cae16653b308a56dabcfdeb602a404fb601ccab7523b75d781997f7ab760a"
+      "aHash": "e123da02a2c7dde4cb40593f63694c5c8e00994817037aa38cc219038fd682be"
     },
     {
       "id": 23007,
@@ -5539,7 +5539,7 @@ const questionBanks = {
       "sourceGame": "agencyProtocol",
       "q": "A cooperative insures many independent machine breakdowns, but every member also faces the same regional shutdown shock. Adding members makes the breakdown component predictable; it does not diversify the common shock. Members value protection from both. Which expansion rule respects wealth creation and insurer participation?",
       "options": [
-        "Price or externally share the common exposure while pooling breakdowns; compare the added loading with members’ coverage value",
+        "Pool breakdowns and price or share common risk, checking whether members value the coverage",
         "Price both exposures at their independent-event averages because a larger membership removes aggregate risk",
         "Screen members more accurately and treat any remaining common exposure as evidence of adverse selection",
         "Eliminate common-shock cover because undiversified risk precludes a mutually beneficial premium at any price"
@@ -5557,7 +5557,7 @@ const questionBanks = {
       "repairSkill": "insurance",
       "commonError": "the_stipulated_common_shock_remains_correlated_as_membership_grows",
       "feedback": "Pooling independent losses and transferring common risk are different operations. Common risk may require capital or outside risk bearing; coverage can still create gains if willingness to pay exceeds full cost. Neither type screening nor membership size alone eliminates covariance.",
-      "aHash": "b026690b7ede8f4b8bcc4004aca7b4d7ebcf881227d6992d98491e981bd0a620"
+      "aHash": "4a139099e57ff5dbb17e7387602d2e58c45c1bbdf953aaad36430856506b24ff"
     },
     {
       "id": 23009,
@@ -5614,7 +5614,7 @@ const questionBanks = {
       "q": "A team receives a success bonus pot of 90 shared equally. Holding others’ effort fixed, one worker’s effort raises success probability by 0.30 and costs that worker 12. Bonuses are enforceable and workers are risk-neutral. Headquarters can keep four-person teams, increase the four-person pot to at most 140, or use two-person teams with the same pot of 90. Ignore other effects. Which change creates a strict private incentive to exert effort?",
       "options": [
         "Use either structure: positive expected team surplus ensures an individual effort incentive",
-        "Use two-person teams: the incremental reward is 13.5, while even a four-person pot of 140 yields only 10.5",
+        "Two-person teams: extra reward 13.5 exceeds 12; four-person teams offer at most 10.5",
         "Keep four-person teams at 90: the incremental team reward of 27 exceeds the worker’s cost",
         "Use four-person teams at 140: each worker’s bonus share of 35 exceeds the worker’s cost"
       ],
@@ -5631,7 +5631,7 @@ const questionBanks = {
       "repairSkill": "shirking",
       "commonError": "the_worker_does_not_receive_the_entire_team_bonus",
       "feedback": "The worker captures only one share of the incremental expected pot. Four-person rewards are .3×90/4=6.75 or .3×140/4=10.5, both below 12; two-person reward is .3×90/2=13.5. Team gains and private gains differ.",
-      "aHash": "b9840645597add777b49be24c96fc0f8171a2e0ff6ad5f36b46081b842f947a6"
+      "aHash": "d16a33b3a580be994f60ffb336866e642b091426d6f47a4152868caba259b25b"
     },
     {
       "id": 23012,
@@ -5667,7 +5667,7 @@ const questionBanks = {
         "Retain sole approval and pay for lower quoted prices, while allowing supplier-funded referral compensation",
         "Remove the expert from all assessment and let headquarters rank technical claims by the lowest purchase price",
         "Require disclosure but retain sole approval and reward the number of suppliers rapidly accepted",
-        "Require disclosure and independent checks on conflicted recommendations, while retaining technical advice and separating final approval"
+        "Keep technical advice, require disclosure and independent checks, and separate final approval"
       ],
       "tag": "principal_agent",
       "type": "integration",
@@ -5683,7 +5683,7 @@ const questionBanks = {
       "repairSkill": "principal_agent",
       "commonError": "a_low_price_metric_does_not_remove_referral_incentives_or_measure_technical_quality",
       "feedback": "The conflict concerns a delegated informed decision with private compensation. Disclosure alone leaves the reward in place; price or throughput metrics can miss technical value. Separating conflicted approval from advice and checking selected claims retains information while constraining biased choices.",
-      "aHash": "c3ea19d5455a525b4ae90ba33e939a982cba1fead6eb75e567e8756d1ad3f009"
+      "aHash": "6602ee48e86de4d715db0e7ce8c35e6b0ec4123aa45bb96bbfe2076a21a05658"
     },
     {
       "id": 23014,
@@ -5692,7 +5692,7 @@ const questionBanks = {
       "options": [
         "Both interventions improve selection because every output difference reveals a difference in worker type",
         "The demand shock establishes that neither intervention changes behavior or selection in its randomized comparison",
-        "The screen changes observed ability composition; checks affect behavior; the common output rise need not reflect either mechanism",
+        "Screening changes ability mix; checks change effort; the common shock is a separate effect",
         "The screen solves hidden action because higher ability is an action, while checks identify pre-hire ability"
       ],
       "tag": "principal_agent",
@@ -5709,7 +5709,7 @@ const questionBanks = {
       "repairSkill": "principal_agent",
       "commonError": "ability_known_before_hiring_is_not_effort_chosen_afterward",
       "feedback": "Pre-job ability differences concern selection. A randomized post-hire check with comparisons at given scores supports an action effect. A common demand shock can coexist with both treatment effects; aggregate output is not itself a measure of either mechanism.",
-      "aHash": "cb0f6324388c8d8fa3c119fafb106c894a04d8a51771dc6ec7b828240b08c0e4"
+      "aHash": "d11d3e6f7c05d8cdac47015b94b6c2abee3ded509c1e13fc27609628fac826c0"
     },
     {
       "id": 23015,
@@ -5770,7 +5770,7 @@ const questionBanks = {
         "Penalize reported reopenings more heavily while letting staff continue assigning the ticket identity",
         "Increase the same-day closure reward and publish average response speed for each employee",
         "Pay solely on employee-reported customer satisfaction collected when each ticket is initially closed",
-        "Reward durable repairs identified through independent customer/equipment follow-up, with a delay before final credit"
+        "Delay repair credit until independent customer or equipment checks confirm durability"
       ],
       "tag": "gaming",
       "type": "integration",
@@ -5786,7 +5786,7 @@ const questionBanks = {
       "repairSkill": "gaming",
       "commonError": "the_worker_can_evade_the_penalty_by_relabeling_the_fault",
       "feedback": "Speed rewards can shift effort away from durability. A reopening penalty is ineffective if the agent controls identity linking. Independent longitudinal follow-up and delayed credit change both the target and its verifiability, rather than rewarding a second manipulable proxy.",
-      "aHash": "3a5e6c09b9685af576b830983e6fd4c2e5cb27ee97b44da242c9c7265b1e4624"
+      "aHash": "f78573927c25ee9ed089905845d2a51a293b2812089f83ac2e399a7983d27dfa"
     },
     {
       "id": 23018,
@@ -5795,7 +5795,7 @@ const questionBanks = {
       "options": [
         "Order margins fall during a demand shock, and acceptance falls under both reward systems",
         "Capacity reports remain unverified, and the manager claims the contribution reward is easier to understand",
-        "Orders are feasible under verified capacity, and acceptance rises when the contribution-based reward replaces unit-cost pay",
+        "Verified capacity permits the orders, and contribution pay increases acceptance",
         "Orders remain infeasible under verified capacity, and acceptance remains low under the new reward"
       ],
       "tag": "principal_agent",
@@ -5812,7 +5812,7 @@ const questionBanks = {
       "repairSkill": "principal_agent",
       "commonError": "this_supports_the_capacity_explanation_rather_than_a_rejected_feasible_opportunity",
       "feedback": "The informative comparison holds the capacity explanation to independent evidence and changes the decision maker’s payoff. Feasibility plus a response to incentives supports the conflict diagnosis. Infeasibility, common shocks and unverified claims do not separate the competing explanations.",
-      "aHash": "7f21cbafc4844159913a07f88fc0117340a96e281f119e6c3c86167f6ff40286"
+      "aHash": "0e9347123645f673501a4a57dab8e142632bbe35b82b1d73c5b758988b6c237f"
     },
     {
       "id": 23019,
@@ -5921,7 +5921,7 @@ const questionBanks = {
       "sourceGame": "agencyProtocol",
       "q": "Sales promises customized rush orders and is rewarded on booked margin before expediting costs. Operations controls the shared line and is rewarded on average unit cost, so it delays even rush orders whose customer premium exceeds all incremental disruption costs. Which paired change addresses both distortions?",
       "options": [
-        "Charge verified disruption cost to each order’s margin and evaluate operations on company contribution from the jointly scheduled portfolio",
+        "Charge disruption costs to order margins; reward operations for joint portfolio contribution",
         "Charge sales an equal share of total factory overhead and continue judging operations on average unit cost",
         "Let sales approve every rush order and compensate operations whenever average unit cost rises",
         "Give operations final authority over all rush orders and continue excluding delay losses from its score"
@@ -5940,7 +5940,7 @@ const questionBanks = {
       "repairSkill": "coordination",
       "commonError": "average_overhead_does_not_price_the_order_s_marginal_disruption",
       "feedback": "Sales must face the order’s incremental disruption cost; operations must recognize the contribution sacrificed by excessive delay. Allocated averages, blanket reimbursement or unilateral vetoes each leave a stated margin unpriced or manipulable.",
-      "aHash": "3faf1d3f1782aa6bd0468800a6c4b634beb28f652c9f33b8b9f848bf8d16185a"
+      "aHash": "b6cc1d4b42dd27aaaa7aac3a4b8910d6340a35ebd481b4014ec608a9394d7bd7"
     },
     {
       "id": 23025,
@@ -5950,7 +5950,7 @@ const questionBanks = {
         "Duplicate the research platform in every product division and judge each only on its own current-year profit",
         "Keep all commercial choices in functional silos and use product profit reports solely as headquarters summaries",
         "Give products autonomous budgets and allocate shared research exclusively by whichever division bids highest this year",
-        "Give product divisions commercial profit responsibility, retain shared research, and govern access and cross-product knowledge explicitly"
+        "Delegate commercial profit responsibility while sharing research and governing cross-product access"
       ],
       "tag": "multidivisional",
       "type": "integration",
@@ -5966,7 +5966,7 @@ const questionBanks = {
       "repairSkill": "multidivisional",
       "commonError": "duplication_sacrifices_the_stipulated_research_economies_and_spillovers",
       "feedback": "Product-level accountability exploits distinct markets, while retaining shared research preserves specialization and spillovers. Governance of shared resources is still needed; short-run divisional bidding alone may undervalue knowledge benefits to other products.",
-      "aHash": "11b713c8ecf83feabca0dad4f3873c4981bb2beccdf2a4b76b46b58b4243bd4b"
+      "aHash": "91ed98852784b52cb0e7ba1bde8e599d9297e8dae63dc2d39197d65ce9173a5f"
     },
     {
       "id": 23026,

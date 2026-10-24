@@ -40,7 +40,7 @@ const questionBanks = {
       "sourceGame": "nationalEngine",
       "q": "GDP rises from 5000 to 5600, while real GDP rises from 5000 to 5250. Which memo best reads the signal?",
       "options": [
-        "Output rose, but much of GDP growth came from prices",
+        "Output rose; prices explain much of GDP growth",
         "Output rose by 12%, with no price pressure",
         "Prices rose, but output was unchanged",
         "GDP rose only because imports increased"
@@ -57,14 +57,14 @@ const questionBanks = {
       "repairSkill": "real_vs_nominal_gdp",
       "commonError": "reads_nominal_growth_as_real_growth",
       "feedback": "Nominal GDP rose 12%, while real GDP rose 5%, so output increased but prices explain much of the nominal gain.",
-      "aHash": "fc8d8b7dbcff9f666681db5c503e73e070bf0d2afb4e9e4d72c34342660c9513"
+      "aHash": "685d13a36ded5c7042bc2387b0407a6c0b0994828ce9898efaefc63ba98a1858"
     },
     {
       "id": 9001,
       "sourceGame": "nationalEngine",
-      "q": "A country imports 200 more consumer goods, so C rises by 200 and imports rise by 200. At the same time, domestic investment falls by 50. What happens to GDP?",
+      "q": "A country imports 200 more consumer goods, so consumption rises by 200 and imports rise by 200. At the same time, domestic investment falls by 50. What happens to GDP?",
       "options": [
-        "GDP falls by 50 because imports offset the consumption gain and investment falls",
+        "GDP falls by 50; imports offset consumption, leaving lower investment",
         "GDP rises by 150 because consumption rises more than investment falls",
         "GDP is unchanged because imports always cancel all spending changes",
         "GDP rises by 200 because consumption is the largest GDP component"
@@ -80,8 +80,8 @@ const questionBanks = {
       ],
       "repairSkill": "gdp_components_identity",
       "commonError": "forgets_import_offset_and_investment_change",
-      "feedback": "The imported-goods purchase raises C by 200 but lowers NX by 200, so that part cancels. Investment falls by 50, so GDP falls by 50.",
-      "aHash": "acca5d1a53714b1fce9b2c40286b325f95f98bc41c159159e2a15c5183b5b030"
+      "feedback": "The imported-goods purchase raises consumption by 200 but lowers net exports by 200, so that part cancels. Investment falls by 50, so GDP falls by 50.",
+      "aHash": "c1fde2eefd08540e21487cd2f6c13e4ddb61c5530ff3f390e59e447ed93ed146"
     },
     {
       "id": 9002,
@@ -160,7 +160,7 @@ const questionBanks = {
       "sourceGame": "nationalEngine",
       "q": "A domestic firm produces machines, sells half to firms, stores the rest as inventory, and later sells one used machine from last year. Which treatment is right?",
       "options": [
-        "New machines and inventory count as investment; the used-machine resale does not count as new output",
+        "New machines, including inventory, count; the used-machine resale does not",
         "Only the machines sold to firms count because inventories are not final goods",
         "All machine sales count because every transaction happens this year",
         "Only the used-machine resale counts because it is the current transaction"
@@ -177,12 +177,12 @@ const questionBanks = {
       "repairSkill": "gdp_inclusion_exclusion",
       "commonError": "excludes_inventory_or_counts_used_goods",
       "feedback": "New capital goods count as investment, and unsold current production counts as inventory investment. Used goods were produced earlier, so their resale is not new output.",
-      "aHash": "3387c4b715e223d1de588319bf2ecbdd7b86bc437b35b02648807dbd4f41b351"
+      "aHash": "7493f95d52a87031e6dad4b2ce1106b263d9c54cc1daf66f89263514348237c8"
     },
     {
       "id": 9006,
       "sourceGame": "nationalEngine",
-      "q": "A production function is Y = A K^0.4 L^0.5. Technology rises 3%, K rises 5%, and L rises 4%. Approximate output growth is what?",
+      "q": "A production function is Y = A K^0.4 L^0.5. Technology rises 3%, capital rises 5%, and labor rises 4%. What is the approximate growth rate of output?",
       "options": [
         "7.0%",
         "9.0%",
@@ -206,7 +206,7 @@ const questionBanks = {
     {
       "id": 9007,
       "sourceGame": "nationalEngine",
-      "q": "A model has fixed K, fixed L, and fixed A. Government spending rises by 300. What should the Chapter 3 advisor say?",
+      "q": "In the classical closed-economy model, capital, labor, and technology are fixed. Government purchases rise by 300. What happens to output and the composition of spending?",
       "options": [
         "Output stays fixed; investment is crowded out",
         "Output rises by 300; investment is unchanged",
@@ -224,7 +224,7 @@ const questionBanks = {
       ],
       "repairSkill": "production_function_output",
       "commonError": "imports_multiplier_logic_into_fixed_output_model",
-      "feedback": "In Chapter 3, output is fixed by K, L, and A. Higher G reduces saving and crowds out investment.",
+      "feedback": "In the classical closed-economy model, output is fixed by capital, labor, and technology. Higher government purchases reduce national saving and crowd out investment.",
       "aHash": "fa2083916bfd5c7c263a9399ac045ad8120cf5899b4a4c2fa0ee63a439487952"
     },
     {
@@ -254,12 +254,12 @@ const questionBanks = {
     {
       "id": 9009,
       "sourceGame": "nationalEngine",
-      "q": "Output is fixed by production. Taxes fall, MPC is 0.8, and G is fixed. What happens to demand composition?",
+      "q": "Output is fixed by production. Taxes fall, MPC is 0.8, and government purchases are fixed. What happens to demand composition?",
       "options": [
-        "C rises, saving falls, and investment is pressured down",
-        "C falls, saving rises, and investment rises",
-        "C rises, output rises, and investment is unchanged",
-        "C is unchanged, saving falls, and output rises"
+        "Consumption rises, saving falls, and investment is pressured down",
+        "Consumption falls, saving rises, and investment rises",
+        "Consumption rises, output rises, and investment is unchanged",
+        "Consumption is unchanged, saving falls, and output rises"
       ],
       "tag": "production",
       "type": "integration",
@@ -273,8 +273,8 @@ const questionBanks = {
       ],
       "repairSkill": "production_function_output",
       "commonError": "treats_tax_cut_as_output_expansion_in_fixed_output_model",
-      "feedback": "With output fixed, a tax cut raises consumption, lowers national saving, raises r, and pressures investment down.",
-      "aHash": "6fcde862e5ff7b08434c8eac0293d5b6c8f12a791bb2438f0013de3181f51f78"
+      "feedback": "With output fixed, a tax cut raises consumption, lowers national saving, raises the real interest rate, and pressures investment down.",
+      "aHash": "d0cc7a5359b29820e2faae1f13ebb771d31011b34b304d63e71ef294472916c1"
     },
     {
       "id": 9010,
@@ -301,7 +301,7 @@ const questionBanks = {
     {
       "id": 9011,
       "sourceGame": "nationalEngine",
-      "q": "Refer to the total-product graph. Output is 0 with no workers, rises to 15, 25, 32, 38, and 40 with 1 through 5 workers, then falls to 38 with 6 workers and 32 with 7 workers. If W/P = 9, how many workers should be hired?",
+      "q": "Refer to the total product graph. Output is 0 with no workers, rises to 15, 25, 32, 38, and 40 with 1 through 5 workers, then falls to 38 with 6 workers and 32 with 7 workers. If W/P = 9, how many workers should be hired?",
       "options": [
         "3",
         "4",
@@ -352,7 +352,7 @@ const questionBanks = {
       "sourceGame": "nationalEngine",
       "q": "Refer to the marginal product graph. A real wage increase plus better technology affects labor demand how?",
       "options": [
-        "Quantity effect is ambiguous because wage and MPL shift conflict",
+        "Employment is uncertain because the effects conflict",
         "Labor demand must rise because technology improves",
         "Labor demand must fall because wages rise",
         "Labor demand is fixed by the CPI"
@@ -370,7 +370,7 @@ const questionBanks = {
       "commonError": "ignores_offsetting_wage_and_productivity_effects",
       "feedback": "Higher technology shifts MPL up, but a higher real wage moves the firm toward less labor. The net quantity effect is ambiguous.",
       "image": "marginalproduct.webp",
-      "aHash": "555c899f2e7b1b7ab2a3a8a7357dcbfbe2b2ae47e24bf0de6927aec6feb04d4d"
+      "aHash": "88e6f18ef59d53583d45cabc6e904e555c18c5e27014aafbaae0b9e8d675629e"
     },
     {
       "id": 9014,
@@ -421,7 +421,7 @@ const questionBanks = {
     {
       "id": 9016,
       "sourceGame": "nationalEngine",
-      "q": "If alpha = 0.35, technology grows 2%, capital grows 6%, and labor grows 2%, approximate output growth is what?",
+      "q": "In a Cobb–Douglas production function, capital's share is 0.35. Technology grows 2%, capital grows 6%, and labor grows 2%. What is the approximate growth rate of output?",
       "options": [
         "5.4%",
         "4.6%",
@@ -471,8 +471,8 @@ const questionBanks = {
       "sourceGame": "nationalEngine",
       "q": "Technology raises output, but capital’s income share also rises. Which critique fits the basic Cobb-Douglas benchmark?",
       "options": [
-        "Stable factor shares may fail when technology favors capital",
-        "Technology cannot affect income distribution",
+        "Capital-favoring technology may change factor shares",
+        "Technology changes output but can never change income distribution",
         "Capital share must fall when output rises",
         "Labor always receives all productivity gains"
       ],
@@ -488,7 +488,7 @@ const questionBanks = {
       "repairSkill": "factor_income_distribution",
       "commonError": "treats_cobb_douglas_as_literal_always_true",
       "feedback": "Basic Cobb-Douglas gives stable shares, but capital-biased technology can push capital’s actual share upward.",
-      "aHash": "9ffdb9446ceecd388bfd85530247c6306ad4dda6b1e3814dd6be338ae9202daa"
+      "aHash": "37b62fc3f25f4e8073cf5235f23c70e350fd4f799f76460622eb6677c9466443"
     },
     {
       "id": 9019,
@@ -515,7 +515,7 @@ const questionBanks = {
     {
       "id": 9020,
       "sourceGame": "nationalEngine",
-      "q": "Alpha is 0.25. Capital rises 8%, labor falls 4%, and technology rises 3%. Approximate output growth is what?",
+      "q": "In a Cobb–Douglas production function, capital's share is 0.25. Capital rises 8%, labor falls 4%, and technology rises 3%. What is the approximate growth rate of output?",
       "options": [
         "2.0%",
         "4.0%",
@@ -565,10 +565,10 @@ const questionBanks = {
       "sourceGame": "nationalEngine",
       "q": "A tax cut of 200 occurs with MPC = 0.6, Y and G fixed. What happens to consumption and national saving?",
       "options": [
-        "C rises 120; S falls 120",
-        "C rises 80; S falls 80",
-        "C rises 200; S unchanged",
-        "C falls 120; S rises 120"
+        "Consumption rises 120; S falls 120",
+        "Consumption rises 80; S falls 80",
+        "Consumption rises 200; S unchanged",
+        "Consumption falls 120; S rises 120"
       ],
       "tag": "consumption",
       "type": "multi-step",
@@ -582,17 +582,17 @@ const questionBanks = {
       "repairSkill": "mpc_disposable_income",
       "commonError": "uses_mps_or_public_saving_only",
       "feedback": "A 200 tax cut raises disposable income by 200, consumption by 120, and lowers national saving by 120.",
-      "aHash": "a8451fe6c99902254a05d2f1b1ee19a833b1f584eb04eacb48c41426de8e8fe5"
+      "aHash": "0293146acd365fdcc82aaba51996585fc251ce7863cbe9b73f5a7abecdbf7ea5"
     },
     {
       "id": 9023,
       "sourceGame": "nationalEngine",
       "q": "Refer to the consumption function graph. Wealth falls while taxes also fall. What is the net effect on consumption?",
       "options": [
-        "Ambiguous because wealth shifts down and taxes raise disposable income",
-        "Consumption must rise because taxes fall",
+        "Consumption is ambiguous because the two effects conflict",
+        "Consumption must rise; tax cuts outweigh any loss of wealth",
         "Consumption must fall because wealth falls",
-        "Consumption is fixed because Y is fixed"
+        "Consumption is fixed because output is fixed"
       ],
       "tag": "consumption_function",
       "type": "graph_integration",
@@ -607,7 +607,7 @@ const questionBanks = {
       "commonError": "ignores_offsetting_shift_and_movement",
       "feedback": "Lower wealth shifts consumption down, while lower taxes raise disposable income and move along the function. Net effect is ambiguous.",
       "image": "consumptionfunction.webp",
-      "aHash": "9a482aa0a556c6193de1dc1b116a1b14344b9e5ffb1acf698448357beeb7a32b"
+      "aHash": "76a393434f1ca4fd35679fd40ddfbb916958f9a15feeb6c1f8f291167fb1adac"
     },
     {
       "id": 9024,
@@ -636,11 +636,11 @@ const questionBanks = {
     {
       "id": 9025,
       "sourceGame": "nationalEngine",
-      "q": "Refer to the investment function graph. Expected profits rise while r rises. What must be true?",
+      "q": "Refer to the investment demand graph. Expected profits rise while the real interest rate rises. What must be true?",
       "options": [
         "The effect on investment depends on relative sizes",
         "Investment must rise because the curve shifts right",
-        "Investment must fall because r rises",
+        "Investment must fall because the real interest rate rises",
         "Investment must stay fixed by saving"
       ],
       "tag": "investment_function",
@@ -659,7 +659,7 @@ const questionBanks = {
     {
       "id": 9026,
       "sourceGame": "nationalEngine",
-      "q": "Investment is I = 2600 - 100r. Nominal r stays 8%, inflation rises from 2% to 5%. What happens to investment?",
+      "q": "Investment is I = 2600 - 100r. Nominal the real interest rate stays 8%, inflation rises from 2% to 5%. What happens to investment?",
       "options": [
         "It rises by 300",
         "It falls by 300",
@@ -675,13 +675,13 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "real_interest_investment_calculation",
       "commonError": "misses_real_rate_decline",
-      "feedback": "Real r falls from 6 to 3, so investment rises from 2000 to 2300.",
+      "feedback": "The real interest rate falls from 6 to 3, so investment rises from 2000 to 2300.",
       "aHash": "b2ab241bc260f7d891100cf6f2f4c77211719875fb19276df840576384a9e753"
     },
     {
       "id": 9027,
       "sourceGame": "nationalEngine",
-      "q": "Refer to the investment graph. A move from I1 at high r to I2 at low r means what combined forces occurred?",
+      "q": "Refer to the investment demand graph. Which two changes are represented by a move from I1 at a high real interest rate to I2 at a low real interest rate?",
       "options": [
         "Investment demand rose and the real interest rate fell",
         "Investment demand fell and the real interest rate rose",
@@ -697,7 +697,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "investment_function_movement_vs_shift",
       "commonError": "sees_shift_or_movement_but_not_both",
-      "feedback": "Moving from I1 to I2 means investment demand increased, while the move to lower r means borrowing costs fell.",
+      "feedback": "Moving from I1 to I2 means investment demand increased, while the move to lower real interest rate means borrowing costs fell.",
       "image": "investmentfunction.webp",
       "aHash": "6332c794603e86f55670ee8d5ce05e7e5c7de90b0be1b4af60a16668ccccf1e7"
     },
@@ -726,7 +726,7 @@ const questionBanks = {
     {
       "id": 9029,
       "sourceGame": "nationalEngine",
-      "q": "A balanced-budget increase raises G and T by 400. MPC = 0.75 and Y is fixed. What happens to national saving?",
+      "q": "A balanced-budget increase raises government purchases and T by 400. MPC = 0.75 and output is fixed. What happens to national saving?",
       "options": [
         "It falls by 100",
         "It rises by 100",
@@ -744,7 +744,7 @@ const questionBanks = {
       ],
       "repairSkill": "fiscal_policy_crowding_out",
       "commonError": "assumes_balanced_budget_means_no_saving_change",
-      "feedback": "Higher G lowers S by 400, while higher T lowers C by 300, raising S by 300. Net S falls by 100.",
+      "feedback": "Higher government purchases lower S by 400, while higher taxes lower consumption by 300, raising S by 300. Net S falls by 100.",
       "aHash": "661a52d0f4c09218a0fffc19c4a0a30a09ad4ddb551e4be64ea1ce864bbf5d7f"
     },
     {
@@ -768,18 +768,18 @@ const questionBanks = {
       ],
       "repairSkill": "saving_identity_calculation",
       "commonError": "looks_only_at_private_saving",
-      "feedback": "Disposable income rises 500, C rises 400, so private saving rises 100. Public saving falls 500. National saving falls 400.",
+      "feedback": "Disposable income rises 500, consumption rises 400, so private saving rises 100. Public saving falls 500. National saving falls 400.",
       "aHash": "55d67d1c0a7acd6804e8a92b4c260df67b406f7722f698eee8eb5edb859c569f"
     },
     {
       "id": 9031,
       "sourceGame": "nationalEngine",
-      "q": "Refer to loanable funds. Saving shifts left and investment demand shifts right. What is guaranteed?",
+      "q": "Refer to the loanable funds graph. Saving shifts left and investment demand shifts right. What happens to the equilibrium real interest rate? Use the classical closed-economy model with vertical national saving.",
       "options": [
         "The real interest rate rises",
-        "Investment rises",
-        "Investment falls",
-        "The real interest rate falls"
+        "The real interest rate falls",
+        "The real interest rate remains unchanged",
+        "The direction of the real interest rate is indeterminate"
       ],
       "tag": "loanable_funds",
       "type": "graph_integration",
@@ -792,19 +792,19 @@ const questionBanks = {
       ],
       "repairSkill": "loanable_funds_graph_shifts",
       "commonError": "claims_quantity_effect_when_ambiguous",
-      "feedback": "Both lower saving and higher investment demand push the real interest rate upward. Investment quantity is ambiguous.",
+      "feedback": "Lower saving and higher investment demand both raise the real interest rate. Because the saving schedule is vertical, equilibrium investment falls to equal the lower saving quantity.",
       "image": "loanablefunds.webp",
       "aHash": "b18d2d8610275911d67838216e6fdfba8a0b22b8e57a41d417b5585936554da0"
     },
     {
       "id": 9032,
       "sourceGame": "nationalEngine",
-      "q": "Refer to loanable funds. Saving shifts right and investment demand shifts left. What is guaranteed?",
+      "q": "Refer to the loanable funds graph. Saving shifts right and investment demand shifts left. What happens to the equilibrium real interest rate? Use the classical closed-economy model with vertical national saving.",
       "options": [
         "The real interest rate falls",
-        "Investment rises",
-        "Investment falls",
-        "The real interest rate rises"
+        "The real interest rate rises",
+        "The real interest rate remains unchanged",
+        "The direction of the real interest rate is indeterminate"
       ],
       "tag": "loanable_funds",
       "type": "graph_integration",
@@ -817,14 +817,14 @@ const questionBanks = {
       ],
       "repairSkill": "loanable_funds_graph_shifts",
       "commonError": "claims_quantity_effect_when_ambiguous",
-      "feedback": "Higher saving lowers r, and lower investment demand also lowers r. Investment quantity is ambiguous.",
+      "feedback": "Higher saving and lower investment demand both lower the real interest rate. Because the saving schedule is vertical, equilibrium investment rises to equal the higher saving quantity.",
       "image": "loanablefunds.webp",
       "aHash": "b81a7663ff174528eb6b1ce598da65736d849c821e874d26e3e059f97097aabf"
     },
     {
       "id": 9033,
       "sourceGame": "nationalEngine",
-      "q": "Refer to loanable funds. Saving shifts right and investment demand shifts right. What is guaranteed?",
+      "q": "Refer to the loanable funds graph. Saving shifts right and investment demand shifts right. What is guaranteed?",
       "options": [
         "Investment rises",
         "The real interest rate rises",
@@ -891,7 +891,7 @@ const questionBanks = {
       ],
       "repairSkill": "saving_investment_equilibrium",
       "commonError": "gets_saving_effect_on_r_backward",
-      "feedback": "At S = 900, r = 8. At S = 1100, r = 6. Higher saving lowers r.",
+      "feedback": "At S = 900, r = 8. At S = 1100, r = 6. Higher saving lowers the real interest rate.",
       "aHash": "aa3f734238bdf3ec04bb83e9657b13f77aa25cd4c09395449eb00c6cca2e829f"
     },
     {
@@ -915,15 +915,15 @@ const questionBanks = {
       ],
       "repairSkill": "investment_demand_vs_saving_shift",
       "commonError": "misses_saving_constraint",
-      "feedback": "If saving is fixed, higher investment demand mostly raises r. More national saving shifts funds outward and allows more investment.",
+      "feedback": "If saving is fixed, higher investment demand mostly raises the real interest rate. More national saving shifts funds outward and allows more investment.",
       "aHash": "37fc826663df134e5d1aa102d6aac0111e9205d0709d0454baaf4d956ba78a8e"
     },
     {
       "id": 9037,
       "sourceGame": "nationalEngine",
-      "q": "A deficit raises r and lowers investment. Why is the long-run concern not mainly current GDP in Chapter 3?",
+      "q": "A deficit raises the real interest rate and lowers investment. Why is the long-run concern not mainly current GDP in the classical closed-economy model?",
       "options": [
-        "Lower investment reduces future capital accumulation",
+        "Less investment slows capital accumulation",
         "Current GDP must fall immediately",
         "CPI must rise faster than GDP",
         "Unemployment must equal the natural rate"
@@ -939,8 +939,8 @@ const questionBanks = {
       ],
       "repairSkill": "fiscal_policy_crowding_out",
       "commonError": "misses_future_capital_channel",
-      "feedback": "Output is fixed in the current Chapter 3 model, but lower investment can reduce future capital and future output.",
-      "aHash": "81b5625cac2a46ada887e4c2e97756f72e1233b5b35ba5f03056613f3d385a21"
+      "feedback": "Output is fixed in the current classical closed-economy model, but lower investment can reduce future capital and future output.",
+      "aHash": "50a3bcd3084badc3185ebdc86e0e414786eabf0e39e0599235d45b359a58bcd1"
     },
     {
       "id": 9038,
@@ -1111,7 +1111,7 @@ const questionBanks = {
       "sourceGame": "nationalEngine",
       "q": "A policy lowers s but also lowers f. Which conclusion is safest?",
       "options": [
-        "The unemployment-rate effect is ambiguous",
+        "Unemployment may rise or fall",
         "Unemployment must fall",
         "Unemployment must rise",
         "The natural rate becomes zero"
@@ -1126,7 +1126,7 @@ const questionBanks = {
       "repairSkill": "job_finding_job_separation_logic",
       "commonError": "focuses_on_one_rate_in_two_rate_model",
       "feedback": "Lower s reduces unemployment, but lower f raises it. The net effect depends on magnitudes.",
-      "aHash": "7c7e91e300c3cc076799e3dc5be9270b327e0b59817043daf194995acd3a3ea1"
+      "aHash": "b4abb78196bf38eaa1e4cb24ece27db3e58afc8367b07e51a2599161a0205cc6"
     },
     {
       "id": 9046,
@@ -1155,10 +1155,10 @@ const questionBanks = {
     {
       "id": 9047,
       "sourceGame": "nationalEngine",
-      "q": "Refer to the minimum wage graph. A wage floor rises above equilibrium, but firms cut hours rather than workers. What should the best answer note?",
+      "q": "Refer to the labor market graph. A wage floor rises above equilibrium, but firms cut hours rather than workers. What should the best answer note?",
       "options": [
-        "Labor-cost adjustment can occur through hours, hiring, and benefits",
-        "No structural pressure exists unless headcount falls",
+        "Firms can adjust hours, hiring and benefits as well as headcount",
+        "Structural pressure cannot exist if firms retain the same number of workers",
         "The wage floor shifts labor demand right",
         "The policy only changes CPI measurement"
       ],
@@ -1175,15 +1175,15 @@ const questionBanks = {
       "commonError": "looks_only_at_headcount_effects",
       "feedback": "A binding wage floor can affect hours, hiring, benefits, prices, and job availability, not only headcount.",
       "image": "minimumwage.webp",
-      "aHash": "0e8516b0fc6e6dc5c05418e77b08df806a993a92b0496a79aad788d2d845f252"
+      "aHash": "5fcc4b0a41d4d45b1f434e3d27533594d074966d2a66af8748dc2e3a67ea7495"
     },
     {
       "id": 9048,
       "sourceGame": "nationalEngine",
-      "q": "A firm pays above-market wages to reduce turnover and discourage shirking. What is the cleanest interpretation?",
+      "q": "A firm pays above-market wages to reduce turnover and discourage shirking. What is the most accurate interpretation?",
       "options": [
-        "Efficiency wages can improve retention and effort but may ration jobs",
-        "Efficiency wages eliminate structural unemployment",
+        "Better retention and effort may come at the cost of fewer jobs",
+        "Efficiency wages eliminate structural unemployment by improving worker retention",
         "Efficiency wages only affect CPI calculation",
         "Efficiency wages lower real wages by definition"
       ],
@@ -1199,7 +1199,7 @@ const questionBanks = {
       "repairSkill": "efficiency_wage_theory",
       "commonError": "ignores_job_rationing_tradeoff",
       "feedback": "Efficiency wages may reduce turnover and shirking, but above-equilibrium wages can also create job rationing.",
-      "aHash": "434e0927a7b29ad973c038dd57e758284fc2f9e859f33c6b7e60507e29f1222f"
+      "aHash": "f4db414d789683548ec5d0b2d5624dfb034480ad786bc7ef9f19626ba35353fc"
     },
     {
       "id": 9049,
@@ -1244,7 +1244,7 @@ const questionBanks = {
       ],
       "repairSkill": "gdp_expenditure_calculation",
       "commonError": "solves_for_net_exports_but_not_imports_or_adds_imports",
-      "feedback": "Initially, 7000 = 4200 + 900 + 1600 + 500 - M, so imports are 200. If imports rise by 100, NX falls by 100 and GDP falls to 6900.",
+      "feedback": "Initially, 7000 = 4200 + 900 + 1600 + 500 - M, so imports are 200. If imports rise by 100, net exports fall by 100 and GDP falls to 6900.",
       "aHash": "a9459d82f55900ab6cd832d8bc0899e795abc65f7f6482b83107d5ae50c4e781"
     },
     {
@@ -1276,7 +1276,7 @@ const questionBanks = {
       "sourceGame": "nationalEngine",
       "q": "Nominal GDP rises 9%, real GDP rises 2%, and employment rises 1%. Which memo best avoids overclaiming?",
       "options": [
-        "Output and employment rose, but most nominal GDP growth reflects prices",
+        "Both rose; prices explain most nominal GDP growth",
         "Real output rose 9%, and employment explains the entire gain",
         "Inflation must be exactly 7%, and productivity must have fallen",
         "GDP growth proves the natural rate of unemployment fell"
@@ -1293,7 +1293,7 @@ const questionBanks = {
       "repairSkill": "real_vs_nominal_gdp",
       "commonError": "reads_nominal_growth_as_real_growth_or_overclaims_labor_market_effect",
       "feedback": "Real GDP rose 2%, so output rose. Nominal GDP rose much faster, so prices explain much of the nominal gain. Employment rose too, but that alone does not prove the natural rate changed.",
-      "aHash": "87a1fd740eb76f4d78f054a51a0422530b5c83ec4e56c6b28828e46de9a96fa1"
+      "aHash": "5d6cc4db8b160421c62c2add39bdfd4c0fc18760fb00a4729330004d6ce98770"
     },
     {
       "id": 9053,
@@ -1322,7 +1322,7 @@ const questionBanks = {
     {
       "id": 9054,
       "sourceGame": "nationalEngine",
-      "q": "A country has Y = A K^0.3 L^0.7. Technology rises 1%, capital rises 10%, and labor falls 2%. Approximate output growth is what?",
+      "q": "Output is Y = A K^0.3 L^0.7. Technology rises 1%, capital rises 10%, and labor falls 2%. What is the approximate growth rate of output?",
       "options": [
         "2.6%",
         "4.0%",
@@ -1346,9 +1346,9 @@ const questionBanks = {
     {
       "id": 9055,
       "sourceGame": "nationalEngine",
-      "q": "In the fixed-output Chapter 3 model, a business tax credit raises investment demand while government spending also rises. What happens to r?",
+      "q": "Refer to the loanable funds graph. In the classical closed-economy model with fixed output, a business tax credit raises investment demand while government spending also rises. What happens to r?",
       "options": [
-        "It rises from both stronger investment demand and lower saving",
+        "It rises: investment demand rises and saving falls",
         "It falls because firms want more investment",
         "It is ambiguous because both curves shift right",
         "It stays fixed because output is fixed"
@@ -1366,7 +1366,7 @@ const questionBanks = {
       "commonError": "misses_same_direction_pressure_on_real_interest_rate",
       "feedback": "Higher investment demand pushes r up, and higher government spending lowers saving, which also pushes r up.",
       "image": "loanablefunds.webp",
-      "aHash": "b5761675e41f5730f26ada37b0ab0f624874612708306b5a00967c4cd6f2622f"
+      "aHash": "ba4df6fbb423fae04805a327786fd244d2bb931abde53ab8e80d8e497dd9c725"
     },
     {
       "id": 9056,
@@ -1489,12 +1489,12 @@ const questionBanks = {
     {
       "id": 9061,
       "sourceGame": "nationalEngine",
-      "q": "Households become more pessimistic and consume less at every income level. What happens to saving, r, and investment in the Chapter 3 loanable funds logic?",
+      "q": "Households become more pessimistic and consume less at every income level. What happens to saving, r, and investment in the classical closed-economy loanable funds model?",
       "options": [
-        "Saving rises, r falls, and investment rises",
-        "Saving falls, r rises, and investment falls",
-        "Saving rises, r rises, and investment falls",
-        "Saving falls, r falls, and investment rises"
+        "Saving rises, the real interest rate falls, and investment rises",
+        "Saving falls, the real interest rate rises, and investment falls",
+        "Saving rises, the real interest rate rises, and investment falls",
+        "Saving falls, the real interest rate falls, and investment rises"
       ],
       "tag": "consumption_function",
       "type": "integration",
@@ -1507,8 +1507,8 @@ const questionBanks = {
       ],
       "repairSkill": "consumption_movement_vs_shift",
       "commonError": "misses_consumption_saving_link",
-      "feedback": "Lower consumption at each income raises saving, shifts saving right, lowers r, and raises investment.",
-      "aHash": "30285308c47da12c9b90b135c0671a4dd2e516349756d3044b4e2895d56aee82"
+      "feedback": "Lower consumption at each income raises saving, shifts saving right, lowers the real interest rate, and raises investment.",
+      "aHash": "8f7524634741827766172ffb03434564784ae7d49ca72bccce710402629f6819"
     },
     {
       "id": 9062,
@@ -1537,12 +1537,12 @@ const questionBanks = {
     {
       "id": 9063,
       "sourceGame": "nationalEngine",
-      "q": "Refer to the investment graph. A tax credit shifts investment demand right, but a deficit shifts saving left. What is guaranteed in loanable funds?",
+      "q": "Refer to the loanable funds graph. A tax credit shifts investment demand right, but a deficit shifts saving left. What happens to the equilibrium real interest rate? Use the classical closed-economy model with vertical national saving.",
       "options": [
         "The real interest rate rises",
-        "Investment rises",
-        "Investment falls",
-        "The real interest rate falls"
+        "The real interest rate falls",
+        "The real interest rate remains unchanged",
+        "The direction of the real interest rate is indeterminate"
       ],
       "tag": "loanable_funds",
       "type": "graph_integration",
@@ -1555,7 +1555,7 @@ const questionBanks = {
       ],
       "repairSkill": "loanable_funds_graph_shifts",
       "commonError": "claims_investment_quantity_effect_when_ambiguous",
-      "feedback": "Higher investment demand raises r, and lower saving also raises r. The quantity of investment depends on which shift dominates.",
+      "feedback": "Lower saving and higher investment demand both raise the real interest rate. Because the saving schedule is vertical, equilibrium investment falls to equal the lower saving quantity.",
       "image": "loanablefunds.webp",
       "aHash": "b18d2d8610275911d67838216e6fdfba8a0b22b8e57a41d417b5585936554da0"
     },
@@ -1660,7 +1660,7 @@ const questionBanks = {
       "sourceGame": "nationalEngine",
       "q": "A city minimum wage raises pay, reduces turnover, cuts hours, and lowers new hiring. Which memo is best?",
       "options": [
-        "The policy has mixed margins: retention improves, but job rationing can worsen",
+        "Better retention may come with fewer opportunities for job seekers",
         "The policy clearly lowers structural unemployment for all workers",
         "The policy affects only CPI and not labor markets",
         "The policy removes frictional unemployment by raising wages"
@@ -1677,7 +1677,7 @@ const questionBanks = {
       "repairSkill": "minimum_wage_structural_unemployment",
       "commonError": "ignores_multiple_adjustment_margins",
       "feedback": "Higher wages can reduce turnover for those employed while reducing hours or new hiring for others. That is the tradeoff.",
-      "aHash": "5f535cac77c15914960838e964e78d6b04ffff7620919bc14eae093f825fc6e3"
+      "aHash": "f48a6674c628310d0add65a2e8bb4c6ac1ad373974f289b4e7b5b7b40ad161c7"
     },
     {
       "id": 9069,
@@ -1946,12 +1946,12 @@ const questionBanks = {
     {
       "id": 9110,
       "sourceGame": "nationalEngine",
-      "q": "Taxes rise by 400, G rises by 400, and MPC = 0.8 with output fixed. What happens to consumption and national saving?",
+      "q": "Taxes rise by 400, government purchases rise by 400, and MPC = 0.8 with output fixed. What happens to consumption and national saving?",
       "options": [
-        "C falls 320; S falls 80",
-        "C falls 400; S unchanged",
-        "C falls 80; S falls 320",
-        "C rises 320; S rises 80"
+        "Consumption falls 320; S falls 80",
+        "Consumption falls 400; S unchanged",
+        "Consumption falls 80; S falls 320",
+        "Consumption rises 320; S rises 80"
       ],
       "tag": "fiscal_policy",
       "type": "multi-step",
@@ -1964,13 +1964,13 @@ const questionBanks = {
       ],
       "repairSkill": "fiscal_policy_crowding_out",
       "commonError": "assumes_balanced_budget_means_no_saving_effect",
-      "feedback": "Higher taxes reduce consumption by 320, which raises saving by 320, but higher G lowers saving by 400. Net national saving falls by 80.",
-      "aHash": "6887846d1d09ab4e68e9079852eb08313834f06915fb9c7ea13e5f7daecb98ed"
+      "feedback": "Higher taxes reduce consumption by 320, which raises saving by 320, but higher government purchases lower saving by 400. Net national saving falls by 80.",
+      "aHash": "78aa74c213eb267f4304e3740dbefaf2b484284de57148d6f9d3a7f13f59cdc8"
     },
     {
       "id": 9111,
       "sourceGame": "nationalEngine",
-      "q": "Refer to loanable funds. Saving shifts left and investment demand shifts left at the same time. What is guaranteed?",
+      "q": "Refer to the loanable funds graph. Saving shifts left and investment demand shifts left at the same time. What is guaranteed?",
       "options": [
         "Investment falls",
         "The real interest rate rises",
@@ -2020,12 +2020,12 @@ const questionBanks = {
     {
       "id": 9113,
       "sourceGame": "nationalEngine",
-      "q": "A tax cut raises consumption, a business tax credit raises investment demand, and output is fixed. What is the most defensible Chapter 3 prediction?",
+      "q": "In the classical closed economy with fixed output, a tax cut raises consumption, a business tax credit raises investment demand, and government purchases are unchanged. What happens?",
       "options": [
-        "r rises, while equilibrium investment is ambiguous",
-        "r falls, while equilibrium investment rises",
-        "r is unchanged, while output rises",
-        "r rises, while output rises"
+        "The real interest rate rises and equilibrium investment falls",
+        "The real interest rate falls, while equilibrium investment rises",
+        "The real interest rate is unchanged, while output rises",
+        "The real interest rate rises, while output rises"
       ],
       "tag": "loanable_funds",
       "type": "integration",
@@ -2038,8 +2038,8 @@ const questionBanks = {
       ],
       "repairSkill": "fiscal_policy_crowding_out",
       "commonError": "turns_fixed_output_model_into_multiplier_model",
-      "feedback": "The tax cut lowers saving and the credit raises investment demand, both pushing r up. Investment quantity is ambiguous because the shifts work against each other.",
-      "aHash": "841d98d3d5b0486c678e56e45c2f2f96d0053feb919593412bea7c92d3f10622"
+      "feedback": "The tax cut raises consumption, so S=Y−C−G falls. Since equilibrium I=S, investment falls. Lower saving and higher investment demand both push r upward; they do not make the investment quantity ambiguous.",
+      "aHash": "195c1875511ef1dc969ee0bf9a8a22ddf7ca2fba23a2f17b85681d88653bc523"
     },
     {
       "id": 9114,
@@ -2186,7 +2186,7 @@ const questionBanks = {
     {
       "id": 9120,
       "sourceGame": "nationalEngine",
-      "q": "Refer to the minimum wage graph. A wage floor above equilibrium reduces separations among current workers but lowers new hiring. Which memo is strongest?",
+      "q": "Refer to the labor market graph. A wage floor above equilibrium reduces separations among current workers but lowers new hiring. Which memo is strongest?",
       "options": [
         "The policy may lower turnover while worsening job rationing",
         "The policy must lower natural unemployment for everyone",
@@ -2329,10 +2329,10 @@ const questionBanks = {
       "sourceGame": "nationalEngine",
       "q": "A productivity boom raises investment demand and output capacity, but the government also runs a larger deficit. What is the loanable-funds concern?",
       "options": [
-        "Higher r may choke off some investment despite better opportunities",
+        "Higher real interest rate may choke off some investment despite better opportunities",
         "Investment must rise because opportunities improved",
         "Saving must rise because output capacity improved",
-        "The deficit lowers r and expands investment"
+        "The deficit lowers the real interest rate and expands investment"
       ],
       "tag": "loanable_funds",
       "type": "integration",
@@ -2345,8 +2345,8 @@ const questionBanks = {
       ],
       "repairSkill": "investment_demand_vs_saving_shift",
       "commonError": "ignores_deficit_pressure_on_r",
-      "feedback": "Better investment opportunities shift investment demand right, but deficits reduce saving and raise r, limiting actual investment gains.",
-      "aHash": "f804e8313bd3d109dae0a742901590ee432c92ffa68ff9b1db4dd8210aba4e53"
+      "feedback": "Better investment opportunities shift investment demand right, but deficits reduce saving and raise the real interest rate, limiting actual investment gains.",
+      "aHash": "7136fcb069cd82445243e28d994fa2cf32914a1f4e8d86294d71ab2028d48fad"
     },
     {
       "id": 9127,
@@ -2425,7 +2425,7 @@ const questionBanks = {
     {
       "id": 2000,
       "sourceGame": "nationalEngine",
-      "q": "The Registrar speaks: 'Begin with the ledger.' What does GDP measure?",
+      "q": "What does gross domestic product measure?",
       "options": [
         "Total spending and income from final goods and services",
         "Only financial assets traded during the year",
@@ -2447,7 +2447,7 @@ const questionBanks = {
     {
       "id": 2001,
       "sourceGame": "nationalEngine",
-      "q": "The Registrar checks the entry: 'Do not count the same output twice.' Why are intermediate goods excluded from GDP?",
+      "q": "Why are intermediate goods excluded from GDP when their value is already included in final goods?",
       "options": [
         "Their value is already included in final goods",
         "They are always imported from abroad",
@@ -2469,7 +2469,7 @@ const questionBanks = {
     {
       "id": 2002,
       "sourceGame": "nationalEngine",
-      "q": "The Registrar points to a shipment: 'A household buys an imported television.' How does this affect GDP accounting?",
+      "q": "A household buys an imported television. How does this affect GDP accounting?",
       "options": [
         "Consumption rises, but imports subtract the same production",
         "GDP rises because consumption rises",
@@ -2493,7 +2493,7 @@ const questionBanks = {
     {
       "id": 2003,
       "sourceGame": "nationalEngine",
-      "q": "The Registrar opens the price archive: 'Which index follows a fixed consumer basket?'",
+      "q": "Which index follows a fixed consumer basket?",
       "options": [
         "CPI",
         "GDP deflator",
@@ -2515,7 +2515,7 @@ const questionBanks = {
     {
       "id": 2004,
       "sourceGame": "nationalEngine",
-      "q": "The Registrar asks: 'Which price measure covers currently produced domestic output?'",
+      "q": "Which price measure covers currently produced domestic output?",
       "options": [
         "GDP deflator",
         "CPI",
@@ -2539,7 +2539,7 @@ const questionBanks = {
     {
       "id": 2005,
       "sourceGame": "nationalEngine",
-      "q": "The Registrar warns: 'A fixed basket can mislead.' Which problem can cause CPI to overstate cost-of-living increases?",
+      "q": "The CPI uses a fixed basket of consumer goods and services. Which limitation can cause it to overstate increases in the cost of living?",
       "options": [
         "Consumers substitute toward cheaper goods",
         "Consumers never change what they buy",
@@ -2561,7 +2561,7 @@ const questionBanks = {
     {
       "id": 2006,
       "sourceGame": "nationalEngine",
-      "q": "The Registrar scans the labor rolls: 'Who is officially unemployed?'",
+      "q": "Who is officially unemployed?",
       "options": [
         "A person without a job who recently searched for work",
         "A retired person who does not want work",
@@ -2583,7 +2583,7 @@ const questionBanks = {
     {
       "id": 2007,
       "sourceGame": "nationalEngine",
-      "q": "The Registrar marks a worker inactive: 'They want work but stopped searching.' How are they treated in U-3?",
+      "q": "A person wants a job but has stopped searching for work. How is this person classified in the U-3 unemployment measure?",
       "options": [
         "Out of the labor force",
         "Unemployed",
@@ -2607,7 +2607,7 @@ const questionBanks = {
     {
       "id": 2008,
       "sourceGame": "nationalEngine",
-      "q": "The Registrar asks: 'What group forms the labor force?'",
+      "q": "What group forms the labor force?",
       "options": [
         "Employed plus unemployed",
         "Employed plus retired",
@@ -2629,7 +2629,7 @@ const questionBanks = {
     {
       "id": 2009,
       "sourceGame": "nationalEngine",
-      "q": "The Registrar locks the ledger: 'C = 500, I = 120, G = 200, and NX = -40.' What is GDP?",
+      "q": "C = 500, I = 120, G = 200, and NX = -40. What is GDP?",
       "options": [
         "780",
         "860",
@@ -2651,7 +2651,7 @@ const questionBanks = {
     {
       "id": 2010,
       "sourceGame": "nationalEngine",
-      "q": "The Registrar removes one veil: 'GDP is 1000, C = 600, I = 150, and G = 200.' What is NX?",
+      "q": "GDP is 1000, C = 600, I = 150, and G = 200. What is NX?",
       "options": [
         "50",
         "250",
@@ -2673,7 +2673,7 @@ const questionBanks = {
     {
       "id": 2011,
       "sourceGame": "nationalEngine",
-      "q": "The Registrar checks prices: 'Nominal GDP is 1500 and real GDP is 1200.' What is the GDP deflator?",
+      "q": "Nominal GDP is 1500 and real GDP is 1200. What is the GDP deflator?",
       "options": [
         "125",
         "80",
@@ -2695,7 +2695,7 @@ const questionBanks = {
     {
       "id": 2012,
       "sourceGame": "nationalEngine",
-      "q": "The Registrar opens the basket: 'The basket cost 80 in the base year and 100 this year.' What is the CPI?",
+      "q": "The basket cost 80 in the base year and 100 this year. What is the CPI?",
       "options": [
         "125",
         "80",
@@ -2717,7 +2717,7 @@ const questionBanks = {
     {
       "id": 2013,
       "sourceGame": "nationalEngine",
-      "q": "The Registrar compares two years: 'The CPI rises from 120 to 132.' What is the inflation rate?",
+      "q": "The CPI rises from 120 to 132. What is the inflation rate?",
       "options": [
         "10%",
         "12%",
@@ -2739,7 +2739,7 @@ const questionBanks = {
     {
       "id": 2014,
       "sourceGame": "nationalEngine",
-      "q": "The Registrar narrows his eyes: 'The basket cost 200 last year and 230 this year.' What is the inflation rate?",
+      "q": "The basket cost 200 last year and 230 this year. What is the inflation rate?",
       "options": [
         "15%",
         "13%",
@@ -2761,7 +2761,7 @@ const questionBanks = {
     {
       "id": 2015,
       "sourceGame": "nationalEngine",
-      "q": "The Registrar counts the hall: '180 are employed and 20 are unemployed.' What is the unemployment rate?",
+      "q": "180 are employed and 20 are unemployed. What is the unemployment rate?",
       "options": [
         "10%",
         "20%",
@@ -2783,7 +2783,7 @@ const questionBanks = {
     {
       "id": 2016,
       "sourceGame": "nationalEngine",
-      "q": "The Registrar checks participation: 'The labor force is 240 and the adult population is 300.' What is the labor force participation rate?",
+      "q": "The labor force is 240 and the adult population is 300. What is the labor force participation rate?",
       "options": [
         "80%",
         "60%",
@@ -2805,7 +2805,7 @@ const questionBanks = {
     {
       "id": 2017,
       "sourceGame": "nationalEngine",
-      "q": "The Registrar changes the record: '100 are employed, 10 are unemployed, and 20 are out of the labor force.' What is the unemployment rate?",
+      "q": "100 are employed, 10 are unemployed, and 20 are out of the labor force. What is the unemployment rate?",
       "options": [
         "9.1%",
         "10%",
@@ -2831,7 +2831,7 @@ const questionBanks = {
     {
       "id": 3000,
       "sourceGame": "nationalEngine",
-      "q": "The Warden speaks: 'Unemployment is never still.' What is the natural rate of unemployment?",
+      "q": "What is the natural rate of unemployment?",
       "options": [
         "The average rate around which unemployment fluctuates",
         "The unemployment rate when no one is jobless",
@@ -2853,7 +2853,7 @@ const questionBanks = {
     {
       "id": 3001,
       "sourceGame": "nationalEngine",
-      "q": "The Warden narrows the ledger: 'Actual unemployment is 8% and the natural rate is 5%.' What is cyclical unemployment?",
+      "q": "Actual unemployment is 8% and the natural rate is 5%. What is cyclical unemployment?",
       "options": [
         "3 percentage points",
         "5 percentage points",
@@ -2875,7 +2875,7 @@ const questionBanks = {
     {
       "id": 3002,
       "sourceGame": "nationalEngine",
-      "q": "The Warden warns: 'Do not confuse the cycle with the baseline.' Which unemployment is not part of the natural rate?",
+      "q": "Which unemployment is not part of the natural rate?",
       "options": [
         "Cyclical unemployment",
         "Frictional unemployment",
@@ -2899,7 +2899,7 @@ const questionBanks = {
     {
       "id": 3003,
       "sourceGame": "nationalEngine",
-      "q": "The Warden asks: 'Which reform lowers the baseline, not just the cycle?' Which policy most directly lowers the natural rate?",
+      "q": "Which policy most directly lowers the natural rate of unemployment?",
       "options": [
         "Improving job matching so workers find jobs faster",
         "Increasing demand for one quarter only",
@@ -2923,7 +2923,7 @@ const questionBanks = {
     {
       "id": 3004,
       "sourceGame": "nationalEngine",
-      "q": "The Warden presses: 'Actual unemployment falls below the natural rate.' What should the advisor avoid claiming?",
+      "q": "Actual unemployment falls below its natural rate. Which conclusion is not justified?",
       "options": [
         "The natural rate has permanently become zero",
         "The economy may be temporarily hot",
@@ -2945,7 +2945,7 @@ const questionBanks = {
     {
       "id": 3005,
       "sourceGame": "nationalEngine",
-      "q": "The Warden opens two gates: 'One reduces search time; one reduces wage rigidity.' What happens to the natural rate?",
+      "q": "Two reforms reduce job-search time and wage rigidity, respectively. What is their expected effect on the natural rate of unemployment?",
       "options": [
         "It likely falls because frictional and structural unemployment fall",
         "It rises because all policies increase job separation",
@@ -2969,7 +2969,7 @@ const questionBanks = {
     {
       "id": 3006,
       "sourceGame": "nationalEngine",
-      "q": "The Warden points to two doors: 'One leaves work. One finds work.' What does the job separation rate measure?",
+      "q": "What does the job separation rate measure?",
       "options": [
         "The fraction of employed workers who leave or lose jobs",
         "The fraction of unemployed workers who find jobs",
@@ -2991,7 +2991,7 @@ const questionBanks = {
     {
       "id": 3007,
       "sourceGame": "nationalEngine",
-      "q": "The Warden asks for the other door: 'What does the job finding rate measure?'",
+      "q": "What does the job finding rate measure?",
       "options": [
         "The fraction of unemployed workers who find jobs",
         "The fraction of employed workers who lose jobs",
@@ -3013,7 +3013,7 @@ const questionBanks = {
     {
       "id": 3008,
       "sourceGame": "nationalEngine",
-      "q": "The Warden balances the flow: 'At steady state, what must be true?'",
+      "q": "In a labor market with a constant labor force, what must be true for the unemployment rate to remain at its steady-state level?",
       "options": [
         "Job losses from employment equal job findings from unemployment",
         "Every unemployed worker finds a job immediately",
@@ -3035,7 +3035,7 @@ const questionBanks = {
     {
       "id": 3009,
       "sourceGame": "nationalEngine",
-      "q": "The Warden gives the numbers: 's = 0.02 and f = 0.18.' What is steady-state unemployment?",
+      "q": "s = 0.02 and f = 0.18. What is steady-state unemployment?",
       "options": [
         "10%",
         "2%",
@@ -3057,7 +3057,7 @@ const questionBanks = {
     {
       "id": 3010,
       "sourceGame": "nationalEngine",
-      "q": "The Warden changes the flow: 's stays at 0.03, but f rises from 0.27 to 0.47.' What happens to steady-state unemployment?",
+      "q": "s stays at 0.03, but f rises from 0.27 to 0.47. What happens to steady-state unemployment?",
       "options": [
         "It falls",
         "It rises",
@@ -3081,7 +3081,7 @@ const questionBanks = {
     {
       "id": 3011,
       "sourceGame": "nationalEngine",
-      "q": "The Warden sharpens the test: 's = 0.04 and f = 0.36. Last month unemployment was 12%.' What is the steady-state rate and direction?",
+      "q": "The monthly job separation rate is 0.04 and the job finding rate is 0.36. Current unemployment is 12%. What is the steady-state unemployment rate, and in which direction will unemployment move if these rates persist?",
       "options": [
         "10%, so unemployment falls",
         "10%, so unemployment rises",
@@ -3105,7 +3105,7 @@ const questionBanks = {
     {
       "id": 3012,
       "sourceGame": "nationalEngine",
-      "q": "The Warden hears movement: 'Workers are searching for better job matches.' What type of unemployment is this?",
+      "q": "Workers are searching for better job matches. What type of unemployment is this?",
       "options": [
         "Frictional unemployment",
         "Structural unemployment",
@@ -3127,7 +3127,7 @@ const questionBanks = {
     {
       "id": 3013,
       "sourceGame": "nationalEngine",
-      "q": "The Warden shows a factory closing and a growing tech sector: 'Workers need retraining and relocation.' What does this mainly create first?",
+      "q": "A factory closes while jobs expand in another sector. Displaced workers must search, retrain, or relocate before accepting new jobs. What type of unemployment does this sectoral shift initially create?",
       "options": [
         "Frictional unemployment from sectoral shifts",
         "Structural unemployment from a wage floor only",
@@ -3151,7 +3151,7 @@ const questionBanks = {
     {
       "id": 3014,
       "sourceGame": "nationalEngine",
-      "q": "The Warden offers a policy lever: 'Which tool best reduces frictional unemployment?'",
+      "q": "Which tool best reduces frictional unemployment?",
       "options": [
         "Better job information and matching services",
         "A wage floor above equilibrium",
@@ -3173,7 +3173,7 @@ const questionBanks = {
     {
       "id": 3015,
       "sourceGame": "nationalEngine",
-      "q": "The Warden locks the wage gate: 'The wage is held above equilibrium.' What type of unemployment can result?",
+      "q": "The wage is held above equilibrium. What type of unemployment can result?",
       "options": [
         "Structural unemployment",
         "Frictional unemployment",
@@ -3195,7 +3195,7 @@ const questionBanks = {
     {
       "id": 3016,
       "sourceGame": "nationalEngine",
-      "q": "The Warden points to the minimum wage graph: 'A binding wage floor sits above equilibrium.' What happens in the labor market?",
+      "q": "Refer to the labor market graph. A binding minimum wage is set above the market-clearing wage. What happens to labor supplied and labor demanded?",
       "options": [
         "Labor supplied exceeds labor demanded",
         "Labor demanded exceeds labor supplied",
@@ -3220,7 +3220,7 @@ const questionBanks = {
     {
       "id": 3017,
       "sourceGame": "nationalEngine",
-      "q": "The Warden asks why firms might choose high wages: 'They pay above equilibrium to reduce shirking and turnover.' What theory is this?",
+      "q": "A firm pays above-market wages to reduce shirking and turnover. Which theory explains this decision?",
       "options": [
         "Efficiency wage theory",
         "CPI substitution theory",
@@ -3246,7 +3246,7 @@ const questionBanks = {
     {
       "id": 4000,
       "sourceGame": "nationalEngine",
-      "q": "The Comptroller speaks: 'The engine begins with production.' In the Chapter 3 model, what determines total output?",
+      "q": "In the classical closed-economy model, what determines total output?",
       "options": [
         "Capital, labor, and technology",
         "Consumption, taxes, and CPI",
@@ -3262,13 +3262,13 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "production_function_output",
       "commonError": "confuses_output_determinants_with_demand_components",
-      "feedback": "In the Chapter 3 model, output is determined by the production function using capital, labor, and technology.",
+      "feedback": "In the classical closed-economy model, output is determined by the production function using capital, labor, and technology.",
       "aHash": "074ae91838f851d61b2be97f83c9a3a455913e11e1999fd95a405dfbc133570c"
     },
     {
       "id": 4001,
       "sourceGame": "nationalEngine",
-      "q": "The Comptroller fixes the inputs: 'K, L, and A do not move.' Government purchases rise. What happens to output and investment pressure in this model?",
+      "q": "In the classical closed-economy model, capital, labor, technology, and taxes remain fixed while government purchases rise. What happens to output and private investment?",
       "options": [
         "Output stays fixed while investment is crowded out",
         "Output rises by the full increase in government purchases",
@@ -3286,13 +3286,13 @@ const questionBanks = {
       ],
       "repairSkill": "production_function_output",
       "commonError": "imports_multiplier_logic_into_fixed_output_model",
-      "feedback": "With K, L, and A fixed, output is fixed. Higher government purchases lower saving, raise r, and pressure investment down.",
+      "feedback": "With K, L, and A fixed, output is fixed. Higher government purchases lower saving, raise the real interest rate, and pressure investment down.",
       "aHash": "a14da5382a4236bf422358cda3439ec4ca58f4470474e390730636e649a525b5"
     },
     {
       "id": 4002,
       "sourceGame": "nationalEngine",
-      "q": "The Comptroller gives the function: 'Y = A K^0.4 L^0.6.' Technology rises 2%, capital rises 5%, and labor rises 1%. What is approximate output growth?",
+      "q": "Y = A K^0.4 L^0.6. Technology rises 2%, capital rises 5%, and labor rises 1%. What is approximate output growth?",
       "options": [
         "4.6%",
         "8.0%",
@@ -3316,7 +3316,7 @@ const questionBanks = {
     {
       "id": 4003,
       "sourceGame": "nationalEngine",
-      "q": "The Comptroller weighs labor: 'A firm faces a nominal wage of $80 and output price of $5.' What real wage matters for hiring?",
+      "q": "A firm faces a nominal wage of $80 and output price of $5. What real wage matters for hiring?",
       "options": [
         "16 units of output",
         "85 units of output",
@@ -3338,7 +3338,7 @@ const questionBanks = {
     {
       "id": 4004,
       "sourceGame": "nationalEngine",
-      "q": "The Comptroller reads the MPL schedule: 'MPL = 30, 24, 18, 12, 6. The real wage is 18.' How many workers should be hired?",
+      "q": "MPL = 30, 24, 18, 12, 6. The real wage is 18. How many workers should be hired?",
       "options": [
         "3",
         "2",
@@ -3362,7 +3362,7 @@ const questionBanks = {
     {
       "id": 4005,
       "sourceGame": "nationalEngine",
-      "q": "The Comptroller breaks a machine line: 'Capital falls while labor is unchanged.' What factor-price pattern follows?",
+      "q": "Capital falls while labor and technology remain unchanged in a production function with complementary capital and labor inputs. What happens to the real wage and the real rental price of capital?",
       "options": [
         "MPK rises and MPL falls",
         "MPK falls and MPL rises",
@@ -3386,7 +3386,7 @@ const questionBanks = {
     {
       "id": 4006,
       "sourceGame": "nationalEngine",
-      "q": "The Comptroller opens the income vault: 'Alpha is 0.35 and total income is 10,000.' What are capital and labor income?",
+      "q": "Alpha is 0.35 and total income is 10,000. What are capital and labor income?",
       "options": [
         "Capital 3500; labor 6500",
         "Capital 6500; labor 3500",
@@ -3408,7 +3408,7 @@ const questionBanks = {
     {
       "id": 4007,
       "sourceGame": "nationalEngine",
-      "q": "The Comptroller gives the growth record: 'Alpha = 0.3, capital rises 6%, labor rises 3%, and technology rises 1%.' What is approximate output growth?",
+      "q": "Alpha = 0.3, capital rises 6%, labor rises 3%, and technology rises 1%. What is approximate output growth?",
       "options": [
         "4.9%",
         "10.0%",
@@ -3432,7 +3432,7 @@ const questionBanks = {
     {
       "id": 4008,
       "sourceGame": "nationalEngine",
-      "q": "The Comptroller challenges the theory: 'Workers are not paid their marginal products because bargaining power is weak.' Which assumption is being strained?",
+      "q": "Workers are not paid their marginal products because bargaining power is weak. Which assumption is being strained?",
       "options": [
         "Competitive factor markets pay factors their marginal products",
         "CPI always uses a fixed basket",
@@ -3454,7 +3454,7 @@ const questionBanks = {
     {
       "id": 4009,
       "sourceGame": "nationalEngine",
-      "q": "The Comptroller unlocks demand: 'C = 300 + 0.75(Y - T), Y = 4000, and T = 800.' What is consumption?",
+      "q": "C = 300 + 0.75(Y - T), Y = 4000, and T = 800. What is consumption?",
       "options": [
         "2700",
         "3000",
@@ -3478,7 +3478,7 @@ const questionBanks = {
     {
       "id": 4010,
       "sourceGame": "nationalEngine",
-      "q": "The Comptroller cuts taxes by 200: 'MPC = 0.8 and output is fixed.' What happens to consumption and national saving?",
+      "q": "In a closed economy with fixed output and government purchases, taxes fall by 200 and the marginal propensity to consume is 0.8. What happens to consumption and national saving?",
       "options": [
         "Consumption rises 160; national saving falls 160",
         "Consumption rises 40; national saving falls 40",
@@ -3502,7 +3502,7 @@ const questionBanks = {
     {
       "id": 4011,
       "sourceGame": "nationalEngine",
-      "q": "The Comptroller points to the investment function: 'Nominal r is 10%, inflation is 3%, and I = 2500 - 200r.' What is investment?",
+      "q": "The nominal interest rate is 10% and expected inflation is 3%. Investment is I = 2500 − 200r, where r is the real interest rate measured in percentage points. Using the approximate Fisher relation, what is investment?",
       "options": [
         "1100",
         "500",
@@ -3526,7 +3526,7 @@ const questionBanks = {
     {
       "id": 4012,
       "sourceGame": "nationalEngine",
-      "q": "The Comptroller demands the saving split: 'Y = 5000, T = 1200, C = 3100, and G = 1500.' What are private, public, and national saving?",
+      "q": "Y = 5000, T = 1200, C = 3100, and G = 1500. What are private, public, and national saving?",
       "options": [
         "Private 700; public -300; national 400",
         "Private 400; public 300; national 700",
@@ -3548,7 +3548,7 @@ const questionBanks = {
     {
       "id": 4013,
       "sourceGame": "nationalEngine",
-      "q": "The Comptroller raises both taxes and spending by 500: 'MPC = 0.6 and output is fixed.' What happens to national saving?",
+      "q": "In a closed economy with fixed output, taxes and government purchases both rise by 500. The marginal propensity to consume is 0.6. What happens to national saving?",
       "options": [
         "It falls by 200",
         "It rises by 200",
@@ -3566,18 +3566,18 @@ const questionBanks = {
       ],
       "repairSkill": "fiscal_policy_crowding_out",
       "commonError": "assumes_balanced_budget_change_has_no_saving_effect",
-      "feedback": "Higher taxes reduce consumption by 300, raising saving by 300. Higher G lowers saving by 500. Net national saving falls by 200.",
+      "feedback": "Higher taxes reduce consumption by 300, raising saving by 300. Higher government purchases lower saving by 500. Net national saving falls by 200.",
       "aHash": "5b23d59ec4985a6ca2d26a5c1eed6d3935a6929ee37b10485e1271fcd89fda93"
     },
     {
       "id": 4014,
       "sourceGame": "nationalEngine",
-      "q": "The Comptroller sees a deficit: 'Government purchases rise while taxes and output are fixed.' What is the loanable funds chain?",
+      "q": "In the classical closed-economy model, government purchases rise while taxes and output stay fixed. How do national saving, the real interest rate, and investment adjust?",
       "options": [
-        "National saving falls, r rises, and investment falls",
-        "National saving rises, r falls, and investment rises",
-        "Investment demand shifts right, r rises, and saving rises",
-        "Consumption falls, r falls, and investment rises"
+        "National saving falls, the real interest rate rises, and investment falls",
+        "National saving rises, the real interest rate falls, and investment rises",
+        "Investment demand shifts right, the real interest rate rises, and saving rises",
+        "Consumption falls, the real interest rate falls, and investment rises"
       ],
       "tag": "crowding_out",
       "type": "interpretation",
@@ -3590,13 +3590,13 @@ const questionBanks = {
       ],
       "repairSkill": "fiscal_policy_crowding_out",
       "commonError": "gets_crowding_out_chain_backward",
-      "feedback": "Higher G lowers public and national saving. In loanable funds, r rises and private investment is crowded out.",
-      "aHash": "ead6c0f247e67b8c6d40cad8ac405e29d9a3e696a13bbb45cda937d7c5b18a24"
+      "feedback": "Higher government purchases lower public and national saving. In loanable funds, the real interest rate rises and private investment is crowded out.",
+      "aHash": "9ea1ba61c06fed2e7809df69139da6a2b2df6c690f1edaa41139807557a8bd55"
     },
     {
       "id": 4015,
       "sourceGame": "nationalEngine",
-      "q": "The Comptroller sets the market: 'National saving is 900 and investment demand is I = 1500 - 100r.' What is equilibrium r?",
+      "q": "National saving is 900 and investment demand is I = 1500 - 100r. What is equilibrium r?",
       "options": [
         "6",
         "9",
@@ -3620,12 +3620,12 @@ const questionBanks = {
     {
       "id": 4016,
       "sourceGame": "nationalEngine",
-      "q": "The Comptroller shifts the graph: 'Saving shifts left and investment demand shifts right.' What is guaranteed?",
+      "q": "Refer to the loanable funds graph. Saving shifts left and investment demand shifts right. What happens to the equilibrium real interest rate? Use the classical closed-economy model with vertical national saving.",
       "options": [
         "The real interest rate rises",
-        "Investment rises",
-        "Investment falls",
-        "The real interest rate falls"
+        "The real interest rate falls",
+        "The real interest rate remains unchanged",
+        "The direction of the real interest rate is indeterminate"
       ],
       "tag": "loanable_funds",
       "type": "graph_interpretation",
@@ -3638,14 +3638,14 @@ const questionBanks = {
       ],
       "repairSkill": "loanable_funds_graph_shifts",
       "commonError": "claims_quantity_effect_when_ambiguous",
-      "feedback": "Both lower saving and higher investment demand push the real interest rate upward. The investment quantity effect is ambiguous.",
+      "feedback": "Lower saving and higher investment demand both raise the real interest rate. Because the saving schedule is vertical, equilibrium investment falls to equal the lower saving quantity.",
       "image": "loanablefunds.webp",
       "aHash": "b18d2d8610275911d67838216e6fdfba8a0b22b8e57a41d417b5585936554da0"
     },
     {
       "id": 4017,
       "sourceGame": "nationalEngine",
-      "q": "The Comptroller makes the final demand: 'Investment demand rises, but saving is vertical and fixed.' What happens first in loanable funds?",
+      "q": "Refer to the loanable funds graph. In the classical closed-economy loanable funds model, investment demand increases while national saving remains fixed. How does the market reach a new equilibrium?",
       "options": [
         "The real interest rate rises more than investment quantity",
         "Investment quantity rises with no interest-rate change",
@@ -3798,7 +3798,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "gdp_components_identity",
       "commonError": "reverses_exports_and_imports",
-      "feedback": "Net exports are exports minus imports.",
+      "feedback": "Exports are goods and services produced domestically and sold abroad; imports are produced abroad and bought domestically. Subtract imports from exports to find net exports. A negative result means imports exceed exports.",
       "aHash": "5c24529a0caa6aab717e3e5cb71857ec8fd41df439a1df55ab3bcc3e4b0d6524"
     },
     {
@@ -4068,7 +4068,7 @@ const questionBanks = {
     {
       "id": 19,
       "sourceGame": "nationalEngine",
-      "q": "What determines total output in the basic Chapter 3 model?",
+      "q": "In the classical closed-economy model, which factors determine total output?",
       "options": [
         "Capital, labor, and technology",
         "Only government spending",
@@ -4112,7 +4112,7 @@ const questionBanks = {
     {
       "id": 21,
       "sourceGame": "nationalEngine",
-      "q": "Constant returns to scale means what?",
+      "q": "What is meant by constant returns to scale?",
       "options": [
         "Doubling inputs doubles output",
         "Doubling inputs less than doubles output",
@@ -4134,7 +4134,7 @@ const questionBanks = {
     {
       "id": 22,
       "sourceGame": "nationalEngine",
-      "q": "Diminishing marginal product means what?",
+      "q": "What does diminishing marginal product mean?",
       "options": [
         "Each additional unit of an input adds less output than before",
         "Total output must always fall when more labor is added",
@@ -4244,7 +4244,7 @@ const questionBanks = {
     {
       "id": 27,
       "sourceGame": "nationalEngine",
-      "q": "If alpha is capital’s share, labor’s share is what?",
+      "q": "In a Cobb–Douglas production function where capital's share of income is α, what is labor's share?",
       "options": [
         "1 - alpha",
         "alpha + 1",
@@ -4266,7 +4266,7 @@ const questionBanks = {
     {
       "id": 28,
       "sourceGame": "nationalEngine",
-      "q": "Consumption depends most directly on what in the Chapter 3 model?",
+      "q": "Consumption depends most directly on what in the classical closed-economy model?",
       "options": [
         "Disposable income",
         "The money multiplier",
@@ -4288,7 +4288,7 @@ const questionBanks = {
     {
       "id": 29,
       "sourceGame": "nationalEngine",
-      "q": "The marginal propensity to consume measures what?",
+      "q": "What does the marginal propensity to consume measure?",
       "options": [
         "How much consumption changes when disposable income rises by one dollar",
         "How much unemployment changes when GDP rises",
@@ -4332,7 +4332,7 @@ const questionBanks = {
     {
       "id": 31,
       "sourceGame": "nationalEngine",
-      "q": "A lower real interest rate usually causes what along a fixed investment function?",
+      "q": "Along a fixed investment-demand curve, how does a lower real interest rate affect investment?",
       "options": [
         "A movement toward higher investment",
         "A movement toward lower investment",
@@ -4596,7 +4596,7 @@ const questionBanks = {
     {
       "id": 43,
       "sourceGame": "nationalEngine",
-      "q": "Frictional unemployment is mainly caused by what?",
+      "q": "Which cause gives rise to frictional unemployment?",
       "options": [
         "Time spent searching and matching workers to jobs",
         "Wages held above equilibrium by policy or institutions",
@@ -4640,7 +4640,7 @@ const questionBanks = {
     {
       "id": 45,
       "sourceGame": "nationalEngine",
-      "q": "Unemployment insurance can increase frictional unemployment because it does what?",
+      "q": "Through which effect can unemployment insurance increase frictional unemployment?",
       "options": [
         "Lowers the cost of remaining unemployed while searching",
         "Forces every firm to fire workers",
@@ -4684,7 +4684,7 @@ const questionBanks = {
     {
       "id": 47,
       "sourceGame": "nationalEngine",
-      "q": "Wage rigidity means what?",
+      "q": "What does wage rigidity mean?",
       "options": [
         "Wages fail to adjust to clear the labor market",
         "Wages always fall instantly",
@@ -4728,7 +4728,7 @@ const questionBanks = {
     {
       "id": 49,
       "sourceGame": "nationalEngine",
-      "q": "Unions can create structural unemployment by doing what?",
+      "q": "Through which action can unions create structural unemployment?",
       "options": [
         "Bargaining wages above equilibrium",
         "Making workers search faster",
@@ -4750,7 +4750,7 @@ const questionBanks = {
     {
       "id": 50,
       "sourceGame": "nationalEngine",
-      "q": "Efficiency wages are wages that firms pay above equilibrium mainly to do what?",
+      "q": "Why might a firm pay an efficiency wage?",
       "options": [
         "Increase productivity, effort, retention, or worker quality",
         "Lower all prices in the CPI",
@@ -4972,7 +4972,7 @@ const questionBanks = {
     {
       "id": 60,
       "sourceGame": "nationalEngine",
-      "q": "Which answer best identifies the main role of the loanable funds market in Chapter 3?",
+      "q": "Which answer best identifies the main role of the loanable funds market in the classical closed-economy model?",
       "options": [
         "It links saving and investment through the real interest rate",
         "It measures the CPI basket",
@@ -5126,7 +5126,7 @@ const questionBanks = {
     {
       "id": 67,
       "sourceGame": "nationalEngine",
-      "q": "If doubling capital and labor more than doubles output, the production function shows what?",
+      "q": "If doubling capital and labor more than doubles output, what type of returns to scale does the production function exhibit?",
       "options": [
         "Increasing returns to scale",
         "Constant returns to scale",
@@ -5148,7 +5148,7 @@ const questionBanks = {
     {
       "id": 68,
       "sourceGame": "nationalEngine",
-      "q": "If doubling capital and labor less than doubles output, the production function shows what?",
+      "q": "If doubling capital and labor less than doubles output, what type of returns to scale does the production function exhibit?",
       "options": [
         "Decreasing returns to scale",
         "Increasing returns to scale",
@@ -5192,7 +5192,7 @@ const questionBanks = {
     {
       "id": 70,
       "sourceGame": "nationalEngine",
-      "q": "A firm should keep hiring workers while MPL is what relative to the real wage?",
+      "q": "A competitive firm is deciding whether to hire another worker. How must that worker's marginal product of labor compare with the real wage for hiring to increase profit?",
       "options": [
         "Greater than the real wage",
         "Less than the real wage",
@@ -5324,7 +5324,7 @@ const questionBanks = {
     {
       "id": 76,
       "sourceGame": "nationalEngine",
-      "q": "The natural rate of unemployment is a long-run concept because workers are constantly doing what?",
+      "q": "Which ongoing labor-market activity explains why the natural rate of unemployment is a long-run concept?",
       "options": [
         "Moving into and out of jobs",
         "Buying only final goods",
@@ -5706,7 +5706,7 @@ const questionBanks = {
     {
       "id": 112,
       "sourceGame": "nationalEngine",
-      "q": "In the Chapter 3 model, why is output fixed in the short-run setup?",
+      "q": "In the classical closed-economy model, why is output fixed when capital, labor, and technology are held constant?",
       "options": [
         "Capital, labor, and technology are assumed fixed",
         "Consumption must always equal zero",
@@ -5750,7 +5750,7 @@ const questionBanks = {
     {
       "id": 114,
       "sourceGame": "nationalEngine",
-      "q": "A production function has constant returns to scale. If capital and labor both rise by 10%, output should do what?",
+      "q": "With constant returns to scale, how does output change when capital and labor both increase by 10 percent?",
       "options": [
         "Rise by 10%",
         "Rise by more than 10%",
@@ -5862,7 +5862,7 @@ const questionBanks = {
     {
       "id": 119,
       "sourceGame": "nationalEngine",
-      "q": "A firm faces a real wage of 5. It should hire the next worker if that worker’s MPL is what?",
+      "q": "A firm faces a real wage of 5. How high must the next worker's marginal product of labor be for hiring that worker to increase profit?",
       "options": [
         "Greater than 5",
         "Less than 5",
@@ -6088,7 +6088,7 @@ const questionBanks = {
     {
       "id": 129,
       "sourceGame": "nationalEngine",
-      "q": "Which statement best separates economic profit from accounting profit in the Chapter 3 discussion?",
+      "q": "Which statement best separates economic profit from accounting profit in the competitive factor-market model?",
       "options": [
         "Accounting profit includes the return to owner-supplied capital",
         "Economic profit ignores all factor payments",
@@ -6156,7 +6156,7 @@ const questionBanks = {
     {
       "id": 132,
       "sourceGame": "nationalEngine",
-      "q": "Refer to the consumption function graph. A rise in disposable income with the same consumption function causes what?",
+      "q": "Refer to the consumption function graph. How is an increase in disposable income represented when the consumption function is unchanged?",
       "options": [
         "A movement along the consumption function",
         "An upward shift of the consumption function",
@@ -6179,7 +6179,7 @@ const questionBanks = {
     {
       "id": 133,
       "sourceGame": "nationalEngine",
-      "q": "Refer to the consumption function graph. A stock-market boom that increases household wealth would most likely do what?",
+      "q": "Refer to the consumption function graph. How would an increase in household wealth affect the consumption-function graph at each level of disposable income?",
       "options": [
         "Shift the consumption function upward",
         "Move downward along the same consumption function",
@@ -6202,7 +6202,7 @@ const questionBanks = {
     {
       "id": 134,
       "sourceGame": "nationalEngine",
-      "q": "Refer to the investment function graph. Moving down along the same investment curve is caused by what?",
+      "q": "Refer to the investment demand graph. Which change produces a movement toward greater investment along a fixed investment-demand curve?",
       "options": [
         "A lower real interest rate",
         "A lower expected profit at every interest rate",
@@ -6225,7 +6225,7 @@ const questionBanks = {
     {
       "id": 135,
       "sourceGame": "nationalEngine",
-      "q": "Refer to the investment function graph. Better expected profits would most likely cause what?",
+      "q": "Refer to the investment demand graph. Better expected profits would most likely cause what?",
       "options": [
         "A rightward shift of investment demand",
         "A movement up along the same investment curve",
@@ -6362,7 +6362,7 @@ const questionBanks = {
     {
       "id": 141,
       "sourceGame": "nationalEngine",
-      "q": "Refer to the loanable funds graph. A rise in investment demand with fixed saving mainly causes what?",
+      "q": "Refer to the loanable funds graph. How does an increase in investment demand affect the real interest rate and investment when saving is vertical and fixed?",
       "options": [
         "A higher real interest rate with little change in investment",
         "A lower real interest rate and lower investment",
@@ -6791,6 +6791,695 @@ const questionBanks = {
       "commonError": "confuses_number_of_people_with_total_weeks",
       "feedback": "Long spells can contribute many total weeks of unemployment even when the number of long-term unemployed is small.",
       "aHash": "6a68fa7b24ac382a02f2d92b75bc17a4568d8d8b462c55defd2e085d1a279b58"
+    },
+    {
+      "id": 301,
+      "sourceGame": "nationalEngine",
+      "q": "A policymaker wants a cost-of-living measure for households buying imported consumer goods. Which measure fits better than the GDP deflator?",
+      "options": [
+        "CPI",
+        "Nominal GDP",
+        "Real GDP",
+        "National saving"
+      ],
+      "tag": "gdp_deflator_vs_cpi",
+      "type": "application",
+      "objective": "LO2.1",
+      "difficulty": "medium",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "price_index_comparison",
+      "secondarySkills": [
+        "cpi_measurement"
+      ],
+      "repairSkill": "price_index_comparison",
+      "commonError": "uses_gdp_deflator_for_imported_consumer_costs",
+      "feedback": "The CPI includes imported consumer goods, while the GDP deflator excludes imports because they are not domestically produced.",
+      "aHash": "5d2ada361b47f8411cc7140b300861fd561bc77297247b0e58de37666e5b0a7b"
+    },
+    {
+      "id": 366,
+      "sourceGame": "nationalEngine",
+      "q": "A policy lowers structural unemployment but leaves frictional unemployment unchanged. What happens to the natural rate?",
+      "options": [
+        "It falls",
+        "It rises",
+        "It becomes zero",
+        "It becomes cyclical unemployment"
+      ],
+      "tag": "natural_rate",
+      "type": "application",
+      "objective": "LO7.1",
+      "difficulty": "medium",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "natural_rate_definition",
+      "secondarySkills": [
+        "wage_rigidity_structural_unemployment"
+      ],
+      "repairSkill": "natural_rate_definition",
+      "commonError": "thinks_frictional_only_defines_natural_rate",
+      "feedback": "The natural rate includes frictional plus structural unemployment, so lowering structural unemployment lowers the natural rate.",
+      "aHash": "51a961febd461ad1ea9db3f345c3907f42988e7937e56390ff5e6b439ae33884"
+    },
+    {
+      "id": 384,
+      "sourceGame": "nationalEngine",
+      "q": "A firm pays above-market wages because replacing trained workers is expensive. Which efficiency wage channel is this?",
+      "options": [
+        "Lower turnover",
+        "Better nutrition",
+        "Higher CPI accuracy",
+        "Public saving"
+      ],
+      "tag": "efficiency_wages",
+      "type": "application",
+      "objective": "LO7.3",
+      "difficulty": "medium",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "efficiency_wage_theory",
+      "secondarySkills": [],
+      "repairSkill": "efficiency_wage_theory",
+      "commonError": "misses_turnover_channel",
+      "feedback": "Paying higher wages can reduce turnover when hiring and training replacements is costly.",
+      "aHash": "db0a66c73811faf7db790c8bc772d808da4dd31cc62d1077abe4beada2d5dab7"
+    },
+    {
+      "id": 314,
+      "sourceGame": "nationalEngine",
+      "q": "A production function has Y = A K^0.5 L^0.3. What returns to scale does it show?",
+      "options": [
+        "Decreasing returns to scale",
+        "Constant returns to scale",
+        "Increasing returns to scale",
+        "No input relationship"
+      ],
+      "tag": "returns_to_scale",
+      "type": "calculation",
+      "objective": "LO3.1",
+      "difficulty": "medium",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "returns_to_scale_classification",
+      "secondarySkills": [],
+      "repairSkill": "returns_to_scale_classification",
+      "commonError": "does_not_add_exponents",
+      "feedback": "The exponents add to 0.8, so doubling inputs less than doubles output.",
+      "aHash": "1ccfca62406e75b88927edb55372aeb324dc8a3fd1a6214eddcbea139fe034d6"
+    },
+    {
+      "id": 303,
+      "sourceGame": "nationalEngine",
+      "q": "A worker has no job, wants one, searched six weeks ago, and is available. What is the most accurate classification?",
+      "options": [
+        "Marginally attached, not U-3 unemployed",
+        "U-3 unemployed, not marginally attached",
+        "Employed in the household survey",
+        "Outside all labor underutilization measures"
+      ],
+      "tag": "labor_force",
+      "type": "trap",
+      "objective": "LO2.1",
+      "difficulty": "medium",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "employment_status_classification",
+      "secondarySkills": [
+        "labor_underutilization_classification"
+      ],
+      "repairSkill": "employment_status_classification",
+      "commonError": "counts_marginally_attached_as_officially_unemployed",
+      "feedback": "Because the worker did not search in the last four weeks, they are not officially unemployed, but they are marginally attached.",
+      "aHash": "4d35ddb27ad17102e71c8a6521e0f313b7e3b735f683f470b2045d95937cc5f2"
+    },
+    {
+      "id": 306,
+      "sourceGame": "nationalEngine",
+      "q": "An economy has C = 1400, I = 350, G = 500, exports = 220, and imports = 470. What is GDP?",
+      "options": [
+        "2000",
+        "2470",
+        "2940",
+        "1530"
+      ],
+      "tag": "gdp_components",
+      "type": "calculation",
+      "objective": "LO2.2",
+      "difficulty": "medium",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "gdp_expenditure_calculation",
+      "secondarySkills": [],
+      "repairSkill": "gdp_expenditure_calculation",
+      "commonError": "adds_imports_instead_of_subtracting",
+      "feedback": "GDP = 1400 + 350 + 500 + 220 - 470 = 2000.",
+      "aHash": "81a83544cf93c245178cbc1620030f1123f435af867c79d87135983c52ab39d9"
+    },
+    {
+      "id": 315,
+      "sourceGame": "nationalEngine",
+      "q": "A production function has Y = A K^0.6 L^0.6. If both inputs double, what happens to output?",
+      "options": [
+        "It more than doubles",
+        "It exactly doubles",
+        "It less than doubles",
+        "It stays fixed"
+      ],
+      "tag": "returns_to_scale",
+      "type": "calculation",
+      "objective": "LO3.1",
+      "difficulty": "medium",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "returns_to_scale_classification",
+      "secondarySkills": [],
+      "repairSkill": "returns_to_scale_classification",
+      "commonError": "misses_exponents_sum_above_one",
+      "feedback": "The exponents add to 1.2, so doubling inputs more than doubles output.",
+      "aHash": "f6a18d71f15bc233a9f631090f1fb945167a03074c1f0305c79cfebb0f0c0475"
+    },
+    {
+      "id": 318,
+      "sourceGame": "nationalEngine",
+      "q": "In the classical closed-economy model, capital, labor, and technology are fixed. A tax cut raises consumption. What happens to total output?",
+      "options": [
+        "Output stays fixed while saving and investment adjust",
+        "Output rises by the full tax cut",
+        "Output falls because consumption rises",
+        "Output equals nominal GDP by definition"
+      ],
+      "tag": "production",
+      "type": "trap",
+      "objective": "LO3.1",
+      "difficulty": "medium",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "production_function_output",
+      "secondarySkills": [
+        "fiscal_policy_crowding_out"
+      ],
+      "repairSkill": "production_function_output",
+      "commonError": "imports_keynesian_multiplier_into_fixed_output_model",
+      "feedback": "In this model, output is fixed by K, L, and A; the tax cut changes saving and investment pressure.",
+      "aHash": "2026058227b6275ff47da90ee1e4c0e4ac0fa790e79214692271bd6caea18ab4"
+    },
+    {
+      "id": 323,
+      "sourceGame": "nationalEngine",
+      "q": "If the nominal wage rises 20% and the output price rises 25%, what happens to the real wage?",
+      "options": [
+        "It falls",
+        "It rises",
+        "It is unchanged",
+        "It becomes zero"
+      ],
+      "tag": "factor_prices",
+      "type": "calculation",
+      "objective": "LO3.2",
+      "difficulty": "medium",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "labor_demand_mpl_real_wage",
+      "secondarySkills": [],
+      "repairSkill": "labor_demand_mpl_real_wage",
+      "commonError": "looks_only_at_nominal_wage_growth",
+      "feedback": "The output price rose faster than the nominal wage, so the wage measured in output falls.",
+      "aHash": "51a961febd461ad1ea9db3f345c3907f42988e7937e56390ff5e6b439ae33884"
+    },
+    {
+      "id": 324,
+      "sourceGame": "nationalEngine",
+      "q": "Refer to the marginal product graph. A fall in the real wage should move the firm toward what outcome?",
+      "options": [
+        "More labor hired along the MPL curve",
+        "Less labor hired along the MPL curve",
+        "A leftward shift of the MPL curve",
+        "A lower total product at every labor level"
+      ],
+      "tag": "labor_demand",
+      "type": "graph_interpretation",
+      "objective": "LO3.2",
+      "difficulty": "medium",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "labor_demand_mpl_real_wage",
+      "secondarySkills": [],
+      "repairSkill": "labor_demand_mpl_real_wage",
+      "commonError": "gets_real_wage_labor_demand_backward",
+      "feedback": "A lower real wage makes additional lower-MPL workers profitable, so labor demanded rises along the MPL curve.",
+      "image": "marginalproduct.webp",
+      "aHash": "d8cb2b98a35325fc665ad2dc499f7bd85ad082bec6450ff85b896f24e4571c92"
+    },
+    {
+      "id": 328,
+      "sourceGame": "nationalEngine",
+      "q": "A firm hires a worker with MPL = 9 when W/P = 11. What should happen to profit?",
+      "options": [
+        "It falls because the worker adds less output than the real wage cost",
+        "It rises because all positive MPL workers are profitable",
+        "It is unchanged because nominal wages do not matter",
+        "It rises only if CPI falls"
+      ],
+      "tag": "labor_demand",
+      "type": "trap",
+      "objective": "LO3.2",
+      "difficulty": "medium",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "labor_demand_mpl_real_wage",
+      "secondarySkills": [],
+      "repairSkill": "labor_demand_mpl_real_wage",
+      "commonError": "hires_positive_mpl_even_when_below_real_wage",
+      "feedback": "A worker must produce at least the real wage in extra output. MPL = 9 is below W/P = 11, so profit falls.",
+      "aHash": "c6427338ea953952a5eab2dbafec0e7e8d812c69e858b7dd05b5b400a1f2df26"
+    },
+    {
+      "id": 329,
+      "sourceGame": "nationalEngine",
+      "q": "Refer to the total product graph. If the curve gets flatter but still rises, which interpretation is best?",
+      "options": [
+        "MPL is positive but falling",
+        "MPL is negative and falling",
+        "Total output is falling",
+        "The real wage must be zero"
+      ],
+      "tag": "marginal_product",
+      "type": "graph_interpretation",
+      "objective": "LO3.2",
+      "difficulty": "medium",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "total_product_to_marginal_product",
+      "secondarySkills": [
+        "diminishing_marginal_product"
+      ],
+      "repairSkill": "total_product_to_marginal_product",
+      "commonError": "confuses_falling_mpl_with_negative_mpl",
+      "feedback": "A rising but flattening total product curve means each extra worker still adds output, but by less than before.",
+      "image": "totalproduct.webp",
+      "aHash": "b3d4e4e08c9ed53ab9d1445ac3f07a28dc8d4be689cb745d35e95981094ff79d"
+    },
+    {
+      "id": 330,
+      "sourceGame": "nationalEngine",
+      "q": "If alpha = 0.35 and total income is 5000, what are capital and labor income?",
+      "options": [
+        "Capital 1750; labor 3250",
+        "Capital 3250; labor 1750",
+        "Capital 3500; labor 1500",
+        "Capital 1500; labor 3500"
+      ],
+      "tag": "factor_shares",
+      "type": "calculation",
+      "objective": "LO3.3",
+      "difficulty": "medium",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "cobb_douglas_factor_share_calculation",
+      "secondarySkills": [],
+      "repairSkill": "cobb_douglas_factor_share_calculation",
+      "commonError": "reverses_capital_and_labor_shares",
+      "feedback": "Capital income = 0.35×5000 = 1750; labor income = 0.65×5000 = 3250.",
+      "aHash": "8a112fe693d3b176a33d678dac18d3266bdd6f17700a2893278977ff6b2c007c"
+    },
+    {
+      "id": 334,
+      "sourceGame": "nationalEngine",
+      "q": "If labor is paid less than its marginal product because bargaining power weakens, what assumption is being strained?",
+      "options": [
+        "Factors are paid their marginal products",
+        "The CPI uses a fixed basket",
+        "The labor force equals employed plus unemployed",
+        "Imports are subtracted from GDP"
+      ],
+      "tag": "income_distribution",
+      "type": "application",
+      "objective": "LO3.3",
+      "difficulty": "medium",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "factor_income_distribution",
+      "secondarySkills": [],
+      "repairSkill": "factor_income_distribution",
+      "commonError": "misses_distribution_assumption",
+      "feedback": "The neoclassical distribution result depends on factors receiving their marginal products in competitive markets.",
+      "aHash": "d04ec8ec5dea575778d3b569d72f6da459626a14c2e749e7dbcee7f0fe66212c"
+    },
+    {
+      "id": 336,
+      "sourceGame": "nationalEngine",
+      "q": "If output is exhausted by payments to labor and capital under constant returns, what is the implication?",
+      "options": [
+        "Economic profit is zero in the ideal model",
+        "Accounting profit must be zero in all records",
+        "Labor receives all income",
+        "Capital receives all income"
+      ],
+      "tag": "income_distribution",
+      "type": "interpretation",
+      "objective": "LO3.3",
+      "difficulty": "medium",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "factor_income_distribution",
+      "secondarySkills": [
+        "returns_to_scale_classification"
+      ],
+      "repairSkill": "factor_income_distribution",
+      "commonError": "misses_output_exhaustion_logic",
+      "feedback": "With constant returns and factors paid marginal products, total output is exhausted by factor payments, leaving zero economic profit.",
+      "aHash": "b0ccabcf24c068ccfb39e3d604edd065de281ea4fd2c731a36f6d188bdd11339"
+    },
+    {
+      "id": 347,
+      "sourceGame": "nationalEngine",
+      "q": "If a wealth boom shifts consumption upward while Y and G are fixed, what must happen to national saving?",
+      "options": [
+        "It falls because consumption rises",
+        "It rises because wealth rises",
+        "It stays fixed because output is fixed",
+        "It becomes equal to investment demand"
+      ],
+      "tag": "consumption_function",
+      "type": "application",
+      "objective": "LO3.4",
+      "difficulty": "medium",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "consumption_movement_vs_shift",
+      "secondarySkills": [
+        "saving_identity_calculation"
+      ],
+      "repairSkill": "consumption_movement_vs_shift",
+      "commonError": "confuses_household_wealth_with_national_saving",
+      "feedback": "National saving is Y - C - G. If consumption rises while Y and G are fixed, national saving falls.",
+      "aHash": "2d06f878c7a1f63704d80bcb826891c6fde6c7db96f0d5012688854c16f1be3c"
+    },
+    {
+      "id": 349,
+      "sourceGame": "nationalEngine",
+      "q": "If the real interest rate falls but investment does not rise much, which explanation fits the investment function best?",
+      "options": [
+        "Investment demand may have shifted left at the same time",
+        "The law of investment demand is impossible",
+        "Lower real interest rate always shifts investment demand left",
+        "CPI bias cancels investment by definition"
+      ],
+      "tag": "investment_function",
+      "type": "trap",
+      "objective": "LO3.4",
+      "difficulty": "medium",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "investment_function_movement_vs_shift",
+      "secondarySkills": [],
+      "repairSkill": "investment_function_movement_vs_shift",
+      "commonError": "ignores_simultaneous_curve_shift",
+      "feedback": "A lower real interest rate raises investment along a curve, but a leftward shift in investment demand can offset that movement.",
+      "aHash": "75343ebb62a11092b544c135b1b15aa5515ac313dacc030a30fe5ae27a67475a"
+    },
+    {
+      "id": 361,
+      "sourceGame": "nationalEngine",
+      "q": "If national saving is fixed at 800 and investment demand is I = 1200 - 50r, what is equilibrium r?",
+      "options": [
+        "8",
+        "6",
+        "10",
+        "4"
+      ],
+      "tag": "loanable_funds",
+      "type": "calculation",
+      "objective": "LO3.5",
+      "difficulty": "medium",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "saving_investment_equilibrium",
+      "secondarySkills": [
+        "real_interest_investment_calculation"
+      ],
+      "repairSkill": "saving_investment_equilibrium",
+      "commonError": "does_not_set_saving_equal_to_investment",
+      "feedback": "Set 800 = 1200 - 50r. Then 50r = 400, so r = 8.",
+      "aHash": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3"
+    },
+    {
+      "id": 365,
+      "sourceGame": "nationalEngine",
+      "q": "Actual unemployment is 6.5%, frictional is 1.8%, structural is 3.2%. What is cyclical unemployment?",
+      "options": [
+        "1.5%",
+        "5.0%",
+        "3.3%",
+        "6.5%"
+      ],
+      "tag": "natural_rate",
+      "type": "calculation",
+      "objective": "LO7.1",
+      "difficulty": "medium",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "natural_rate_definition",
+      "secondarySkills": [
+        "frictional_vs_other_unemployment"
+      ],
+      "repairSkill": "natural_rate_definition",
+      "commonError": "includes_natural_rate_as_cyclical",
+      "feedback": "Natural unemployment is 1.8 + 3.2 = 5.0%. Cyclical unemployment is 6.5 - 5.0 = 1.5%.",
+      "aHash": "c25677b600e7013a35dd12215ef0d22493be0cd0250c4fb93abf19028158a5a8"
+    },
+    {
+      "id": 369,
+      "sourceGame": "nationalEngine",
+      "q": "If s = 0.04 and f = 0.16, what is steady-state unemployment?",
+      "options": [
+        "20%",
+        "4%",
+        "16%",
+        "25%"
+      ],
+      "tag": "steady_state_unemployment",
+      "type": "calculation",
+      "objective": "LO7.2",
+      "difficulty": "medium",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "steady_state_unemployment_calculation",
+      "secondarySkills": [],
+      "repairSkill": "steady_state_unemployment_calculation",
+      "commonError": "uses_s_or_f_as_unemployment_rate",
+      "feedback": "u = s/(s+f) = 0.04/(0.20) = 20%.",
+      "aHash": "dc934fe30a942bca07b4c288b4b3e48aa79a717d6db2b586553cd2416dc8b9b8"
+    },
+    {
+      "id": 373,
+      "sourceGame": "nationalEngine",
+      "q": "At steady state, sE = fU. If separations exceed findings for a period, what happens before a new steady state?",
+      "options": [
+        "Unemployment rises",
+        "Unemployment falls",
+        "Labor force becomes zero",
+        "Inflation becomes negative"
+      ],
+      "tag": "steady_state_unemployment",
+      "type": "interpretation",
+      "objective": "LO7.2",
+      "difficulty": "medium",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "job_finding_job_separation_logic",
+      "secondarySkills": [],
+      "repairSkill": "job_finding_job_separation_logic",
+      "commonError": "misreads_flow_imbalance",
+      "feedback": "If more workers enter unemployment than leave it, unemployment rises.",
+      "aHash": "0b17148103b12921b0c0ab20451da4e517d248a511873e081e4dc553a86719f3"
+    },
+    {
+      "id": 378,
+      "sourceGame": "nationalEngine",
+      "q": "A retraining program shortens job search for displaced workers but does not affect layoffs. Which parameter changes first?",
+      "options": [
+        "f rises",
+        "s rises",
+        "s falls",
+        "L falls"
+      ],
+      "tag": "job_finding",
+      "type": "policy",
+      "objective": "LO7.2",
+      "difficulty": "medium",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "job_finding_job_separation_logic",
+      "secondarySkills": [
+        "sectoral_shift_matching"
+      ],
+      "repairSkill": "job_finding_job_separation_logic",
+      "commonError": "confuses_finding_rate_with_separation_rate",
+      "feedback": "Retraining and matching programs help unemployed workers find jobs faster, raising f.",
+      "aHash": "cb7ae6baeb8732154edee7583503a7458b677143ca33e720c6baab80b4737a17"
+    },
+    {
+      "id": 379,
+      "sourceGame": "nationalEngine",
+      "q": "A 100% experience-rated unemployment insurance system makes firms bear more layoff costs. Which parameter is targeted?",
+      "options": [
+        "s falls",
+        "f falls",
+        "u rises by formula",
+        "L becomes fixed"
+      ],
+      "tag": "job_separation",
+      "type": "policy",
+      "objective": "LO7.2",
+      "difficulty": "medium",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "job_finding_job_separation_logic",
+      "secondarySkills": [],
+      "repairSkill": "job_finding_job_separation_logic",
+      "commonError": "confuses_layoff_incentive_with_job_finding",
+      "feedback": "Experience rating raises the cost of layoffs for firms, targeting a lower separation rate s.",
+      "aHash": "f184665d4d583435f5c598fe421a65b154fe15b3b375fec71cd793fa041630c3"
+    },
+    {
+      "id": 381,
+      "sourceGame": "nationalEngine",
+      "q": "Refer to the labor market graph. If a wage floor is below equilibrium, what is the likely unemployment effect in that market?",
+      "options": [
+        "No binding structural unemployment from the floor",
+        "A labor surplus from the wage floor",
+        "A labor shortage from the wage floor",
+        "Immediate elimination of frictional unemployment"
+      ],
+      "tag": "minimum_wage",
+      "type": "graph_interpretation",
+      "objective": "LO7.3",
+      "difficulty": "medium",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "minimum_wage_structural_unemployment",
+      "secondarySkills": [],
+      "repairSkill": "minimum_wage_structural_unemployment",
+      "commonError": "treats_all_minimum_wages_as_binding",
+      "feedback": "A wage floor below equilibrium is not binding and does not create structural unemployment in that market.",
+      "image": "minimumwage.webp",
+      "aHash": "0a6782bab2df4a3a8b2e2e506346facbc0afa10edcdba10bcd6707305e68936f"
+    },
+    {
+      "id": 382,
+      "sourceGame": "nationalEngine",
+      "q": "A wage floor is above equilibrium. Which group is most directly rationed out of jobs?",
+      "options": [
+        "Workers willing to work at the equilibrium wage but unable to get hired",
+        "Firms willing to hire more at the higher wage",
+        "Consumers buying imported goods",
+        "Capital owners receiving rental income"
+      ],
+      "tag": "minimum_wage",
+      "type": "application",
+      "objective": "LO7.3",
+      "difficulty": "medium",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "minimum_wage_structural_unemployment",
+      "secondarySkills": [
+        "wage_rigidity_structural_unemployment"
+      ],
+      "repairSkill": "minimum_wage_structural_unemployment",
+      "commonError": "confuses_labor_supply_surplus_with_labor_demand_shortage",
+      "feedback": "When wages are held above equilibrium, more workers want jobs than firms want to hire, so some workers are rationed out.",
+      "aHash": "f043024ba0f474fa7a209f97c1e0aa1d40f474659105bf16c070b20806390c83"
+    },
+    {
+      "id": 385,
+      "sourceGame": "nationalEngine",
+      "q": "A firm pays above-market wages because workers cannot be perfectly monitored. Which problem is the firm addressing?",
+      "options": [
+        "Moral hazard",
+        "Substitution bias",
+        "Crowding out",
+        "GDP double counting"
+      ],
+      "tag": "efficiency_wages",
+      "type": "application",
+      "objective": "LO7.3",
+      "difficulty": "medium",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "efficiency_wage_theory",
+      "secondarySkills": [],
+      "repairSkill": "efficiency_wage_theory",
+      "commonError": "confuses_moral_hazard_with_adverse_selection",
+      "feedback": "When effort cannot be perfectly monitored, workers may shirk; higher wages can reduce that moral hazard.",
+      "aHash": "d1a35d9aaaa341fa2cd6626750c9072eb1dd20de5b4492a56fcd40b3ffdaa74c"
+    },
+    {
+      "id": 386,
+      "sourceGame": "nationalEngine",
+      "q": "A firm pays high wages to attract better applicants before observing worker quality. Which problem is closest?",
+      "options": [
+        "Adverse selection",
+        "Moral hazard",
+        "CPI bias",
+        "Public deficit"
+      ],
+      "tag": "efficiency_wages",
+      "type": "application",
+      "objective": "LO7.3",
+      "difficulty": "medium",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "efficiency_wage_theory",
+      "secondarySkills": [],
+      "repairSkill": "efficiency_wage_theory",
+      "commonError": "confuses_adverse_selection_with_moral_hazard",
+      "feedback": "When worker quality is hard to observe before hiring, high wages can attract better applicants, addressing adverse selection.",
+      "aHash": "31e55046b3ece7183b1f616a145a03936065f7548d4dae52c5583dd6e87e8bb0"
+    },
+    {
+      "id": 389,
+      "sourceGame": "nationalEngine",
+      "q": "Which case is structural rather than frictional unemployment?",
+      "options": [
+        "A wage set above equilibrium leaves qualified workers unable to get jobs",
+        "A worker searches two weeks for a better job match",
+        "A new graduate compares offers across cities",
+        "A worker relocates after a sectoral shift"
+      ],
+      "tag": "structural_unemployment",
+      "type": "trap",
+      "objective": "LO7.3",
+      "difficulty": "medium",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "frictional_vs_other_unemployment",
+      "secondarySkills": [
+        "wage_rigidity_structural_unemployment"
+      ],
+      "repairSkill": "frictional_vs_other_unemployment",
+      "commonError": "confuses_search_with_wage_rigidity",
+      "feedback": "Structural unemployment comes from wage rigidity and job rationing, not ordinary search and matching time.",
+      "aHash": "bde83cea32caaa5c7e118ee70f6cadbf3885defda6bd5a90fc8076eb5f3651a3"
+    },
+    {
+      "id": 392,
+      "sourceGame": "nationalEngine",
+      "q": "A worker is part time because full-time work is unavailable. Which broader measure captures this better than U-3?",
+      "options": [
+        "U-6",
+        "GDP deflator",
+        "CPI-U only",
+        "Natural rate formula"
+      ],
+      "tag": "labor_underutilization",
+      "type": "identification",
+      "objective": "LO7.3",
+      "difficulty": "medium",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "labor_underutilization_classification",
+      "secondarySkills": [],
+      "repairSkill": "labor_underutilization_classification",
+      "commonError": "misses_part_time_for_economic_reasons_in_u6",
+      "feedback": "U-6 includes unemployed, marginally attached workers, and those working part time for economic reasons.",
+      "aHash": "50507465c472e904e2bff85b6ec444425bdd44020e00d1da6b95b8509e6a2ab1"
+    },
+    {
+      "id": 397,
+      "sourceGame": "nationalEngine",
+      "q": "Which policy could reduce separations without mainly raising job finding?",
+      "options": [
+        "Experience-rated UI that makes layoffs more costly for firms",
+        "A job board that improves vacancy information",
+        "Relocation support for displaced workers",
+        "A faster application matching platform"
+      ],
+      "tag": "job_separation",
+      "type": "policy",
+      "objective": "LO7.3",
+      "difficulty": "medium",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "job_finding_job_separation_logic",
+      "secondarySkills": [
+        "ui_and_job_search_incentives"
+      ],
+      "repairSkill": "job_finding_job_separation_logic",
+      "commonError": "confuses_f_policy_with_s_policy",
+      "feedback": "Experience rating changes firms’ incentives to lay off workers, targeting the separation rate.",
+      "aHash": "7d5ab1b3ac7be6263e26ebda96f3c37a4eac4ab1a02fb4126f4d923ca123fbc4"
     }
   ],
   "hard": [
@@ -6799,7 +7488,7 @@ const questionBanks = {
       "sourceGame": "nationalEngine",
       "q": "A senator claims GDP rose, so household well-being must have risen. Which response is strongest?",
       "options": [
-        "GDP measures production, but it misses distribution, nonmarket work, and some quality-of-life issues",
+        "GDP omits distribution and some aspects of well-being",
         "GDP measures only income inequality, so the claim is backward",
         "GDP measures only unemployment, so production is irrelevant",
         "GDP already includes happiness, so no other indicator is needed"
@@ -6816,7 +7505,7 @@ const questionBanks = {
       "repairSkill": "gdp_inclusion_exclusion",
       "commonError": "treats_gdp_as_complete_welfare_measure",
       "feedback": "GDP is useful for output, but it does not fully measure well-being, distribution, unpaid work, or broader living conditions.",
-      "aHash": "33ba2937004027476cc69ad1e3f7329de00324a9ce6c76d2df5fce4163f35c35"
+      "aHash": "9bc27d44d2c0af2ca15fd00eef7ab6506c648159fff6ccb99f054693c8ba6876"
     },
     {
       "id": 201,
@@ -7071,7 +7760,7 @@ const questionBanks = {
     {
       "id": 212,
       "sourceGame": "nationalEngine",
-      "q": "In the Chapter 3 model, output is fixed but demand depends on C, I, and G. What variable adjusts to bring goods demand into line with fixed output?",
+      "q": "In the classical closed-economy model, output is fixed but demand depends on C, I, and G. What variable adjusts to bring goods demand into line with fixed output?",
       "options": [
         "The real interest rate",
         "The CPI basket",
@@ -7165,10 +7854,10 @@ const questionBanks = {
     {
       "id": 216,
       "sourceGame": "nationalEngine",
-      "q": "Why does a closed-economy Chapter 3 model need the loanable funds market after output is fixed by production?",
+      "q": "Why does a closed-economy classical closed-economy model need the loanable funds market after output is fixed by production?",
       "options": [
-        "Because the interest rate must reconcile desired investment with saving",
-        "Because GDP cannot be measured without the CPI",
+        "The interest rate brings investment into line with saving",
+        "The interest rate establishes the CPI needed to measure GDP",
         "Because unemployment must equal zero",
         "Because imports must equal exports"
       ],
@@ -7184,7 +7873,7 @@ const questionBanks = {
       "repairSkill": "production_function_output",
       "commonError": "misses_goods_market_balance_problem",
       "feedback": "Once output is fixed, the real interest rate adjusts so planned demand and saving-investment conditions are consistent.",
-      "aHash": "dbc586381f300347857be31d04cde1d1d2ed8589c9197d79ac6fed33e5aea5f4"
+      "aHash": "b33ea2d29810f9b9971eff7c7f16e0915ceb5145519ca74a16a5c8c9df112f06"
     },
     {
       "id": 217,
@@ -7213,9 +7902,9 @@ const questionBanks = {
     {
       "id": 218,
       "sourceGame": "nationalEngine",
-      "q": "A model assumes capital, labor, and technology are fixed, but government spending rises. What happens to total output in the Chapter 3 setup?",
+      "q": "In the classical closed-economy model, capital, labor, and technology are fixed. Government purchases rise. What happens to total output?",
       "options": [
-        "Output stays fixed, while demand-side components must adjust",
+        "Output stays fixed; spending components must adjust",
         "Output rises one-for-one with government spending",
         "Output falls because public saving rises",
         "Output becomes equal to CPI"
@@ -7232,7 +7921,7 @@ const questionBanks = {
       "repairSkill": "production_function_output",
       "commonError": "treats_fixed_output_model_as_multiplier_model",
       "feedback": "In this model, output is fixed by production inputs; higher government spending changes demand and saving, not total output directly.",
-      "aHash": "bd327053e8d04ae0a28c445ba3da86e93cd66969a8001e4e2933a51ccf2e4d0c"
+      "aHash": "42032fb89a7f2503372f3fbb5ca7551db6200d8d3fb31c786c1252b6cf941435"
     },
     {
       "id": 219,
@@ -7283,7 +7972,7 @@ const questionBanks = {
       "sourceGame": "nationalEngine",
       "q": "Refer to the marginal product graph. If the real wage rises, what happens to the amount of labor demanded?",
       "options": [
-        "It falls as the firm moves to a lower quantity of labor on MPL",
+        "It falls along the marginal product of labor curve",
         "It rises because labor is now more expensive",
         "It stays fixed because MPL is unrelated to wages",
         "It becomes equal to national saving"
@@ -7301,7 +7990,7 @@ const questionBanks = {
       "commonError": "gets_real_wage_labor_demand_backward",
       "feedback": "A higher real wage means the firm hires fewer workers because fewer workers have MPL high enough to justify the wage.",
       "image": "marginalproduct.webp",
-      "aHash": "eba9e2917b0e5020f33aaeddaf168600923d5125ebbf1b11954eb70da204d965"
+      "aHash": "305f617f0e6a6579a183e3b2cc53149333981828d7b4afafcdb7ee849287cf40"
     },
     {
       "id": 222,
@@ -7354,7 +8043,7 @@ const questionBanks = {
       "sourceGame": "nationalEngine",
       "q": "If capital falls after a disaster while labor is unchanged, what happens to MPK in the factor market logic?",
       "options": [
-        "MPK rises because remaining capital is scarcer",
+        "MPK rises as capital becomes scarcer",
         "MPK falls because capital is less useful",
         "MPK becomes equal to CPI",
         "MPK becomes the unemployment rate"
@@ -7371,7 +8060,7 @@ const questionBanks = {
       "repairSkill": "diminishing_marginal_product",
       "commonError": "gets_scarcity_effect_on_mpk_backward",
       "feedback": "When capital becomes scarcer, the marginal product of remaining capital rises.",
-      "aHash": "edb62020f4991c42b43d5c4eb6fed82ede894c9495871f366ca077c41eebd51b"
+      "aHash": "abc14ecc8de8215e381853d3594752cdeec20c3a7f7264dcade668fe5b39a63f"
     },
     {
       "id": 225,
@@ -7535,7 +8224,7 @@ const questionBanks = {
       "sourceGame": "nationalEngine",
       "q": "If capital’s share has risen over time, why might basic Cobb-Douglas still be useful but incomplete?",
       "options": [
-        "It gives a clear benchmark, but constant shares may not hold in reality",
+        "Constant shares provide a useful benchmark",
         "It proves capital shares can never change",
         "It ignores marginal products entirely",
         "It only applies to unemployment spells"
@@ -7552,14 +8241,14 @@ const questionBanks = {
       "repairSkill": "factor_income_distribution",
       "commonError": "treats_model_as_literal_fact",
       "feedback": "Cobb-Douglas is a useful benchmark, but real-world factor shares can change with technology, bargaining power, and globalization.",
-      "aHash": "ee03786a691573751ad7f3db3d0d13d976920002b865fdbbc4facf6f940b8688"
+      "aHash": "339894f7e1d19841d443f865d901b6b6037fa38762c980028ecaac242035e33a"
     },
     {
       "id": 233,
       "sourceGame": "nationalEngine",
       "q": "A firm owns its own capital instead of renting it from households. Why does this matter for measured profit?",
       "options": [
-        "Accounting profit includes the return to owner-supplied capital",
+        "It includes income from the firm’s own capital",
         "Economic profit becomes equal to CPI inflation",
         "Labor income disappears from GDP",
         "Capital no longer has a marginal product"
@@ -7574,7 +8263,7 @@ const questionBanks = {
       "repairSkill": "factor_income_distribution",
       "commonError": "confuses_accounting_profit_with_economic_profit",
       "feedback": "When firms own capital, accounting profit includes both economic profit and the return to that capital.",
-      "aHash": "83994b47e4963190f6925b95e8bb28b87cf2e4cdbda39646bd79b831ae61e677"
+      "aHash": "155d1356b7605e014175806cd5199701a6ac39bb448808a39ecc6ef6d3418cb8"
     },
     {
       "id": 234,
@@ -7740,7 +8429,7 @@ const questionBanks = {
     {
       "id": 241,
       "sourceGame": "nationalEngine",
-      "q": "Refer to the investment function graph. Which event moves the economy along a given investment curve rather than shifting it?",
+      "q": "Refer to the investment demand graph. Which event moves the economy along a given investment curve rather than shifting it?",
       "options": [
         "A decrease in the real interest rate",
         "A permanent rise in expected profits",
@@ -7763,7 +8452,7 @@ const questionBanks = {
     {
       "id": 242,
       "sourceGame": "nationalEngine",
-      "q": "Refer to the investment function graph. If expected profits rise while the real interest rate also falls, which point movement is most consistent with higher investment from both forces?",
+      "q": "Refer to the investment demand graph. If expected profits rise while the real interest rate also falls, which point movement is most consistent with higher investment from both forces?",
       "options": [
         "Toward the farthest right investment point",
         "Toward the highest interest-rate point on the original curve",
@@ -7923,10 +8612,10 @@ const questionBanks = {
       "sourceGame": "nationalEngine",
       "q": "Refer to the loanable funds graph. If government purchases rise with output and taxes fixed, which movement is most likely?",
       "options": [
-        "Saving shifts left, r rises, and investment falls",
-        "Saving shifts right, r falls, and investment rises",
-        "Investment demand shifts right, r rises, and saving falls",
-        "Investment demand shifts left, r falls, and G rises"
+        "Saving shifts left, the real interest rate rises, and investment falls",
+        "Saving shifts right, the real interest rate falls, and investment rises",
+        "Investment demand shifts right, the real interest rate rises, and saving falls",
+        "Investment demand shifts left, the real interest rate falls, and government purchases rise"
       ],
       "tag": "crowding_out",
       "type": "graph_interpretation",
@@ -7941,15 +8630,15 @@ const questionBanks = {
       "commonError": "gets_crowding_out_chain_backward",
       "feedback": "Higher government purchases lower public saving, shift national saving left, raise the real interest rate, and reduce investment.",
       "image": "loanablefunds.webp",
-      "aHash": "07f6a0457043152dd4a88bd7cc080dd2e73439eb4dc8fe473572ba69335791bc"
+      "aHash": "ac8474e928a2ab3cc25d4dd94bb2be2a0315672dd80d45c1a5dbb4a618685402"
     },
     {
       "id": 250,
       "sourceGame": "nationalEngine",
       "q": "Refer to the loanable funds graph. If investment demand shifts right while saving is vertical, what happens first?",
       "options": [
-        "The real interest rate rises while equilibrium investment is pinned by saving",
-        "Investment rises greatly with no interest-rate change",
+        "The real interest rate rises; investment equals fixed saving",
+        "Investment rises substantially without any increase in the real interest rate",
         "Saving shifts left automatically",
         "Public saving must become negative"
       ],
@@ -7966,12 +8655,12 @@ const questionBanks = {
       "commonError": "assumes_vertical_saving_allows_large_quantity_change",
       "feedback": "With vertical saving, a rightward shift in investment demand mainly raises the real interest rate because saving pins the quantity.",
       "image": "loanablefunds.webp",
-      "aHash": "5884c92f2412b9440517775b9ce5b03d8215f6977442880ea40aafb9fffe3817"
+      "aHash": "79547d3dd78c83ecf5a05708ec4651d578971045832f56e1277cbf424fb3d042"
     },
     {
       "id": 251,
       "sourceGame": "nationalEngine",
-      "q": "A government cuts taxes by 100 and MPC = 0.8. In the Chapter 3 saving logic, what is the direct change in private saving?",
+      "q": "A government cuts taxes by 100 and MPC = 0.8. In the closed-economy saving identities, what is the direct change in private saving?",
       "options": [
         "Private saving rises by 20",
         "Private saving falls by 80",
@@ -8019,11 +8708,11 @@ const questionBanks = {
     {
       "id": 253,
       "sourceGame": "nationalEngine",
-      "q": "Refer to the loanable funds graph. A policy that increases national saving should do what to the real interest rate and investment?",
+      "q": "Refer to the loanable funds graph. How does an increase in national saving affect the equilibrium real interest rate and investment?",
       "options": [
-        "Lower r and raise investment",
-        "Raise r and lower investment",
-        "Raise both r and investment demand",
+        "Lower real interest rate and raise investment",
+        "Raise the real interest rate and lower investment",
+        "Raise both the real interest rate and investment demand",
         "Lower both saving and investment"
       ],
       "tag": "loanable_funds",
@@ -8037,14 +8726,14 @@ const questionBanks = {
       "commonError": "gets_saving_shift_effect_backward",
       "feedback": "Higher national saving shifts saving right, lowering the real interest rate and increasing investment.",
       "image": "loanablefunds.webp",
-      "aHash": "cdecf590a0db29961a8666aae953364f49937450c6bb276c074da22dae7419f5"
+      "aHash": "d73bebf8cd6d2b7129073cbe00bc94ec5c41c3dac43649e033ede34bf3c58646"
     },
     {
       "id": 254,
       "sourceGame": "nationalEngine",
       "q": "If investment demand rises because of new technology but national saving is fixed, why might actual investment fail to rise much?",
       "options": [
-        "The real interest rate rises to ration the fixed saving",
+        "Higher real interest rations fixed saving",
         "The CPI blocks investment from entering GDP",
         "Government purchases automatically fall",
         "The unemployment rate must rise one-for-one"
@@ -8061,7 +8750,7 @@ const questionBanks = {
       "repairSkill": "investment_demand_vs_saving_shift",
       "commonError": "misses_fixed_saving_constraint",
       "feedback": "If saving is fixed, stronger investment demand raises the real interest rate rather than greatly increasing investment.",
-      "aHash": "8cb6a3dbdef968b6a407586d1ff3ea59ef285b4a7025d9b8bc74d029a43c772c"
+      "aHash": "70360ba289b2cacc498cf0079787e12af7944f2c6d3726a1ab25fc55526128c3"
     },
     {
       "id": 255,
@@ -8110,9 +8799,9 @@ const questionBanks = {
     {
       "id": 257,
       "sourceGame": "nationalEngine",
-      "q": "A policy memo says, 'Deficit-financed spending raises output in Chapter 3 because output is demand-determined.' What is the best correction?",
+      "q": "A policy memo says, 'Deficit-financed spending raises output in the classical closed-economy model because output is demand-determined.' What is the best correction?",
       "options": [
-        "In this model output is fixed by production, so the deficit mainly lowers saving and crowds out investment",
+        "Output is fixed; lower saving crowds out investment",
         "In this model GDP is measured only by CPI, so deficits cannot matter",
         "In this model taxes always raise investment demand directly",
         "In this model imports must rise by the full deficit"
@@ -8128,8 +8817,8 @@ const questionBanks = {
       ],
       "repairSkill": "fiscal_policy_crowding_out",
       "commonError": "imports_multiplier_logic_into_fixed_output_model",
-      "feedback": "Chapter 3 treats output as fixed by production; deficit-financed spending lowers national saving and crowds out investment.",
-      "aHash": "3ec1e4b777f34fa813f41b31e4499545446ea8f1eb09685930b5a664a9e6191b"
+      "feedback": "The classical closed-economy model treats output as fixed by production; deficit-financed spending lowers national saving and crowds out investment.",
+      "aHash": "ad5fbc5631b0d9b53f37d403198ba29a3103355e55bb6eb9493c46c4b3666d7a"
     },
     {
       "id": 258,
@@ -8160,9 +8849,9 @@ const questionBanks = {
       "sourceGame": "nationalEngine",
       "q": "If actual unemployment is below the natural rate, which interpretation is most careful?",
       "options": [
-        "The economy may be temporarily overheated, but normal labor-market frictions still exist",
+        "Temporary overheating can coexist with normal job-search frictions",
         "The natural rate has become zero",
-        "Structural unemployment has disappeared forever",
+        "Structural unemployment has permanently vanished because unemployment is unusually low",
         "The CPI must be overstating inflation"
       ],
       "tag": "natural_rate",
@@ -8175,7 +8864,7 @@ const questionBanks = {
       "repairSkill": "natural_rate_definition",
       "commonError": "thinks_below_natural_means_no_labor_market_frictions",
       "feedback": "Unemployment below the natural rate can happen temporarily, but frictional and structural unemployment still exist.",
-      "aHash": "90fc81add0bfcff24725871b0a6374fd1a79469aedc523a6004ce3176264abca"
+      "aHash": "e4fcc34531a158e9008cddb41e32d9dece2cd77d9f0480b76f9cd266133b9d5b"
     },
     {
       "id": 260,
@@ -8206,7 +8895,7 @@ const questionBanks = {
       "sourceGame": "nationalEngine",
       "q": "Which statement is best for a policy memo about the natural rate?",
       "options": [
-        "Reducing the natural rate requires improving matching, lowering separations, or reducing wage rigidity",
+        "Improve matching, reduce separations or reduce wage rigidity",
         "Reducing the natural rate requires only raising current GDP spending",
         "The natural rate is fixed forever by the CPI basket",
         "The natural rate falls whenever nominal GDP rises"
@@ -8223,14 +8912,14 @@ const questionBanks = {
       "repairSkill": "natural_rate_definition",
       "commonError": "confuses_demand_policy_with_natural_rate_policy",
       "feedback": "The natural rate is tied to job flows and labor-market structure, not just current aggregate spending.",
-      "aHash": "e2a77fb7481feea4a0ee1a89dc7f6dd1d38a9486433c749925db886be16da745"
+      "aHash": "07990c1a5f90871b8d24aefdea2bde23178d93706dd576b4fcd4f7b59b47cdac"
     },
     {
       "id": 262,
       "sourceGame": "nationalEngine",
       "q": "A recession raises unemployment from 5% to 9%, but frictional and structural unemployment together remain 5%. What changed?",
       "options": [
-        "Cyclical unemployment rose by 4 percentage points",
+        "Cyclical unemployment rose by 4 points",
         "The natural rate rose to 9%",
         "Frictional unemployment disappeared",
         "Structural unemployment became negative"
@@ -8245,7 +8934,7 @@ const questionBanks = {
       "repairSkill": "natural_rate_definition",
       "commonError": "treats_recession_unemployment_as_natural_rate",
       "feedback": "The natural rate remains 5%; the increase to 9% reflects 4 percentage points of cyclical unemployment.",
-      "aHash": "2372d7fba32c341b128718af50ad9bc258c8c8de8283373fbbe6767fdedb8d20"
+      "aHash": "17ed683bd731ec07d2e3a6ae89eeda60bb9c939277070aa21864eaec61a4753c"
     },
     {
       "id": 263,
@@ -8342,7 +9031,7 @@ const questionBanks = {
       "sourceGame": "nationalEngine",
       "q": "A recession raises job separations from 0.02 to 0.06 while f remains 0.24. What happens to steady-state unemployment?",
       "options": [
-        "It rises from about 7.7% to 20%",
+        "It rises from 7.7% to 20%",
         "It falls from 20% to 7.7%",
         "It stays at 24%",
         "It becomes zero"
@@ -8359,7 +9048,7 @@ const questionBanks = {
       "repairSkill": "steady_state_unemployment_calculation",
       "commonError": "gets_separation_effect_backward",
       "feedback": "Initial u = 0.02/0.26 ≈ 7.7%. New u = 0.06/0.30 = 20%.",
-      "aHash": "04110dbbe169ce27e2e1878916d192ccfd08ae2e9b0ac2bc5c17090104b90b63"
+      "aHash": "9b089ff4bc6ce4864303d1dbc3a29184f6c1c7a3edbc0dcc5c1014ce7f4d0916"
     },
     {
       "id": 268,
@@ -8480,7 +9169,7 @@ const questionBanks = {
     {
       "id": 273,
       "sourceGame": "nationalEngine",
-      "q": "Refer to the minimum wage graph. If the actual wage is held above equilibrium, what creates structural unemployment?",
+      "q": "Refer to the labor market graph. If the actual wage is held above equilibrium, what creates structural unemployment?",
       "options": [
         "Labor supplied exceeds labor demanded",
         "Labor demanded exceeds labor supplied",
@@ -8507,8 +9196,8 @@ const questionBanks = {
       "sourceGame": "nationalEngine",
       "q": "A city raises the minimum wage and firms respond by cutting hours rather than headcount. What is the best interpretation?",
       "options": [
-        "Employment effects can show up through hours and benefits, not just jobs",
-        "The policy cannot affect labor costs",
+        "Employment can adjust through hours and benefits",
+        "Labor costs cannot change unless the number of workers changes",
         "Structural unemployment must be zero",
         "The CPI must fall because wages rose"
       ],
@@ -8522,7 +9211,7 @@ const questionBanks = {
       "repairSkill": "minimum_wage_structural_unemployment",
       "commonError": "looks_only_at_headcount_effects",
       "feedback": "Minimum wage effects may appear through reduced hours, benefits, or hiring, not only through measured job losses.",
-      "aHash": "f0ea059fe1a0c381de35062a63b417d1c5fee877847fd69df5b9842b2b6575d3"
+      "aHash": "422419f404563dbaa8a601d527fedac7ce6ffccb61d5bd0d2dfee1e5709b23f2"
     },
     {
       "id": 275,
@@ -8597,7 +9286,7 @@ const questionBanks = {
       "sourceGame": "nationalEngine",
       "q": "Which policy best targets frictional unemployment without directly creating wage rigidity?",
       "options": [
-        "Better job vacancy information and retraining for displaced workers",
+        "Better vacancy information and retraining for displaced workers",
         "A wage floor above equilibrium",
         "A union contract that restricts hiring",
         "A permanent increase in benefits with no search requirements"
@@ -8614,14 +9303,14 @@ const questionBanks = {
       "repairSkill": "sectoral_shift_matching",
       "commonError": "chooses_structural_policy_for_frictional_problem",
       "feedback": "Information and retraining improve matching and reduce search time without directly holding wages above equilibrium.",
-      "aHash": "1a36da93a165942ad804c6003ecebe21cd4c6e4fe9e513cb576d4cf4a52989c9"
+      "aHash": "d19a10071dfe18e64a108c11be6d0514b4355729be9c9231dfcf024e16487097"
     },
     {
       "id": 279,
       "sourceGame": "nationalEngine",
       "q": "A person wants work, is available, searched two months ago, but did not search in the last four weeks. Where do they fit best?",
       "options": [
-        "Marginally attached but not officially unemployed",
+        "Marginally attached, not officially unemployed",
         "Officially unemployed in U-3",
         "Employed in the establishment survey",
         "Not part of any broader unemployment measure"
@@ -8636,10 +9325,8 @@ const questionBanks = {
       "repairSkill": "labor_underutilization_classification",
       "commonError": "counts_marginally_attached_as_u3_unemployed",
       "feedback": "They are marginally attached because they want work and searched sometime recently, but not within the last four weeks.",
-      "aHash": "2fd68efb044466cc9e2901c73ca80de2a8e4df27a18c023c6683356b713420ab"
-    }
-  ],
-  "elite": [
+      "aHash": "b539e0b31e13f7287393745b034aa4cfa1695591ca6234c6137a65471fe1f6ef"
+    },
     {
       "id": 300,
       "sourceGame": "nationalEngine",
@@ -8653,7 +9340,7 @@ const questionBanks = {
       "tag": "gdp",
       "type": "trap",
       "objective": "LO2.1",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "national_engine_elite",
       "primarySkill": "gdp_components_identity",
       "secondarySkills": [
@@ -8665,35 +9352,11 @@ const questionBanks = {
       "aHash": "501e3fbcd9a8ab597f37b07316b855b4d61c39daf7d7247976805d0d3855ceb4"
     },
     {
-      "id": 301,
-      "sourceGame": "nationalEngine",
-      "q": "A policymaker wants a cost-of-living measure for households buying imported consumer goods. Which measure fits better than the GDP deflator?",
-      "options": [
-        "CPI",
-        "Nominal GDP",
-        "Real GDP",
-        "National saving"
-      ],
-      "tag": "gdp_deflator_vs_cpi",
-      "type": "application",
-      "objective": "LO2.1",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "price_index_comparison",
-      "secondarySkills": [
-        "cpi_measurement"
-      ],
-      "repairSkill": "price_index_comparison",
-      "commonError": "uses_gdp_deflator_for_imported_consumer_costs",
-      "feedback": "The CPI includes imported consumer goods, while the GDP deflator excludes imports because they are not domestically produced.",
-      "aHash": "5d2ada361b47f8411cc7140b300861fd561bc77297247b0e58de37666e5b0a7b"
-    },
-    {
       "id": 302,
       "sourceGame": "nationalEngine",
       "q": "A senator asks why CPI inflation can exceed the GDP deflator during an oil shock. Which answer is best?",
       "options": [
-        "Imported oil can affect consumer prices without entering domestic output prices",
+        "Imports affect consumer prices but are not domestic output",
         "Imported oil raises real GDP before it raises consumption",
         "The GDP deflator uses only food and energy prices",
         "The CPI excludes imported goods and services"
@@ -8701,45 +9364,21 @@ const questionBanks = {
       "tag": "gdp_deflator_vs_cpi",
       "type": "application",
       "objective": "LO2.1",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "national_engine_elite",
       "primarySkill": "price_index_comparison",
       "secondarySkills": [],
       "repairSkill": "price_index_comparison",
       "commonError": "misses_imported_goods_difference",
       "feedback": "An imported consumer good can raise the CPI while being excluded from the GDP deflator.",
-      "aHash": "f6b3848afc4b7c67ad099e84569f813352399b13e618635a89c09bef1a58a300"
-    },
-    {
-      "id": 303,
-      "sourceGame": "nationalEngine",
-      "q": "A worker has no job, wants one, searched six weeks ago, and is available. What is the cleanest classification?",
-      "options": [
-        "Marginally attached, not U-3 unemployed",
-        "U-3 unemployed, not marginally attached",
-        "Employed in the household survey",
-        "Outside all labor underutilization measures"
-      ],
-      "tag": "labor_force",
-      "type": "trap",
-      "objective": "LO2.1",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "employment_status_classification",
-      "secondarySkills": [
-        "labor_underutilization_classification"
-      ],
-      "repairSkill": "employment_status_classification",
-      "commonError": "counts_marginally_attached_as_officially_unemployed",
-      "feedback": "Because the worker did not search in the last four weeks, they are not officially unemployed, but they are marginally attached.",
-      "aHash": "4d35ddb27ad17102e71c8a6521e0f313b7e3b735f683f470b2045d95937cc5f2"
+      "aHash": "26901e6ce876016271710e9f0a1c2923484130d37fed57a4271373e3996e0b91"
     },
     {
       "id": 304,
       "sourceGame": "nationalEngine",
       "q": "A firm produces steel, sells some to automakers, and stores the rest as inventory. Which GDP treatment is correct?",
       "options": [
-        "Steel sold as intermediate input is counted through final cars, while inventory counts as investment",
+        "Sold steel counts through cars; stored steel counts as investment",
         "All steel sales are excluded because steel is never final output",
         "Only exported steel can count in GDP",
         "Stored steel is ignored until a household buys it"
@@ -8747,14 +9386,14 @@ const questionBanks = {
       "tag": "gdp",
       "type": "application",
       "objective": "LO2.1",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "national_engine_elite",
       "primarySkill": "gdp_inclusion_exclusion",
       "secondarySkills": [],
       "repairSkill": "gdp_inclusion_exclusion",
       "commonError": "excludes_inventory_or_double_counts_intermediate_goods",
       "feedback": "Intermediate steel is counted in final cars, while unsold current production is counted as inventory investment.",
-      "aHash": "b8717c739ca4e82fac4c65cadcc42c7049aa9eeab8ce611e556b0e26027c4142"
+      "aHash": "930d5bd10880cf9ce48b9e39c237cabfbae1a010f429c4ec1b55b657be9422b6"
     },
     {
       "id": 305,
@@ -8769,7 +9408,7 @@ const questionBanks = {
       "tag": "gdp_components",
       "type": "calculation",
       "objective": "LO2.2",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "national_engine_elite",
       "primarySkill": "gdp_expenditure_calculation",
       "secondarySkills": [],
@@ -8777,28 +9416,6 @@ const questionBanks = {
       "commonError": "solves_for_nx_but_not_exports",
       "feedback": "4800 = 2900 + 760 + 900 + X - 420, so X = 660.",
       "aHash": "fc9e91cc78e1817d80b4ba8c2dc9a638d0c57959825ee34f5e3d7688ad80dfb9"
-    },
-    {
-      "id": 306,
-      "sourceGame": "nationalEngine",
-      "q": "An economy has C = 1400, I = 350, G = 500, exports = 220, and imports = 470. What is GDP?",
-      "options": [
-        "2000",
-        "2470",
-        "2940",
-        "1530"
-      ],
-      "tag": "gdp_components",
-      "type": "calculation",
-      "objective": "LO2.2",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "gdp_expenditure_calculation",
-      "secondarySkills": [],
-      "repairSkill": "gdp_expenditure_calculation",
-      "commonError": "adds_imports_instead_of_subtracting",
-      "feedback": "GDP = 1400 + 350 + 500 + 220 - 470 = 2000.",
-      "aHash": "81a83544cf93c245178cbc1620030f1123f435af867c79d87135983c52ab39d9"
     },
     {
       "id": 307,
@@ -8813,7 +9430,7 @@ const questionBanks = {
       "tag": "real_nominal_gdp",
       "type": "interpretation",
       "objective": "LO2.2",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "national_engine_elite",
       "primarySkill": "real_vs_nominal_gdp",
       "secondarySkills": [
@@ -8837,7 +9454,7 @@ const questionBanks = {
       "tag": "gdp_deflator",
       "type": "calculation",
       "objective": "LO2.2",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "national_engine_elite",
       "primarySkill": "gdp_deflator_inflation",
       "secondarySkills": [],
@@ -8859,7 +9476,7 @@ const questionBanks = {
       "tag": "cpi",
       "type": "calculation",
       "objective": "LO2.2",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "national_engine_elite",
       "primarySkill": "cpi_inflation_calculation",
       "secondarySkills": [],
@@ -8881,7 +9498,7 @@ const questionBanks = {
       "tag": "unemployment_rate",
       "type": "calculation",
       "objective": "LO2.2",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "national_engine_elite",
       "primarySkill": "labor_force_statistics_calculation",
       "secondarySkills": [
@@ -8905,7 +9522,7 @@ const questionBanks = {
       "tag": "labor_force",
       "type": "calculation",
       "objective": "LO2.2",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "national_engine_elite",
       "primarySkill": "labor_force_statistics_calculation",
       "secondarySkills": [
@@ -8929,7 +9546,7 @@ const questionBanks = {
       "tag": "cpi",
       "type": "calculation",
       "objective": "LO2.2",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "national_engine_elite",
       "primarySkill": "cpi_inflation_calculation",
       "secondarySkills": [],
@@ -8951,7 +9568,7 @@ const questionBanks = {
       "tag": "real_nominal_gdp",
       "type": "interpretation",
       "objective": "LO2.2",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "national_engine_elite",
       "primarySkill": "real_vs_nominal_gdp",
       "secondarySkills": [
@@ -8963,55 +9580,11 @@ const questionBanks = {
       "aHash": "925d15de1e5f196c872106ed2aff8190089bae550f1f4e9e75d19f117d1a20fe"
     },
     {
-      "id": 314,
-      "sourceGame": "nationalEngine",
-      "q": "A production function has Y = A K^0.5 L^0.3. What returns to scale does it show?",
-      "options": [
-        "Decreasing returns to scale",
-        "Constant returns to scale",
-        "Increasing returns to scale",
-        "No input relationship"
-      ],
-      "tag": "returns_to_scale",
-      "type": "calculation",
-      "objective": "LO3.1",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "returns_to_scale_classification",
-      "secondarySkills": [],
-      "repairSkill": "returns_to_scale_classification",
-      "commonError": "does_not_add_exponents",
-      "feedback": "The exponents add to 0.8, so doubling inputs less than doubles output.",
-      "aHash": "1ccfca62406e75b88927edb55372aeb324dc8a3fd1a6214eddcbea139fe034d6"
-    },
-    {
-      "id": 315,
-      "sourceGame": "nationalEngine",
-      "q": "A production function has Y = A K^0.6 L^0.6. If both inputs double, what happens to output?",
-      "options": [
-        "It more than doubles",
-        "It exactly doubles",
-        "It less than doubles",
-        "It stays fixed"
-      ],
-      "tag": "returns_to_scale",
-      "type": "calculation",
-      "objective": "LO3.1",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "returns_to_scale_classification",
-      "secondarySkills": [],
-      "repairSkill": "returns_to_scale_classification",
-      "commonError": "misses_exponents_sum_above_one",
-      "feedback": "The exponents add to 1.2, so doubling inputs more than doubles output.",
-      "aHash": "f6a18d71f15bc233a9f631090f1fb945167a03074c1f0305c79cfebb0f0c0475"
-    },
-    {
       "id": 316,
       "sourceGame": "nationalEngine",
-      "q": "In the Chapter 3 model, output is fixed by production, while investment depends on the real interest rate. Why does r matter?",
+      "q": "In the classical closed-economy model, output is fixed by production, while investment depends on the real interest rate. Why does r matter?",
       "options": [
-        "It adjusts demand by changing investment until spending matches fixed output",
+        "It adjusts investment until spending matches fixed output",
         "It directly changes technology in the production function",
         "It sets the CPI basket used for inflation",
         "It determines whether workers are counted as unemployed"
@@ -9019,7 +9592,7 @@ const questionBanks = {
       "tag": "production",
       "type": "integration",
       "objective": "LO3.1",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "national_engine_elite",
       "primarySkill": "production_function_output",
       "secondarySkills": [
@@ -9028,14 +9601,14 @@ const questionBanks = {
       "repairSkill": "production_function_output",
       "commonError": "misses_role_of_interest_rate_in_fixed_output_model",
       "feedback": "With output fixed, the real interest rate adjusts investment demand so aggregate demand matches output.",
-      "aHash": "ac9d32bf79f74b4a38a707c46a5ce81b9044059ad046a8a475b5437da063f7d0"
+      "aHash": "0b37b93d76898264c318c71e8e7cb1aff7a3ccb88562d06686e84e657b60bb53"
     },
     {
       "id": 317,
       "sourceGame": "nationalEngine",
-      "q": "A technology improvement raises output with the same K and L. In the Chapter 3 model, what else likely changes directly?",
+      "q": "A technology improvement raises output with the same K and L. In the classical closed-economy model, what else likely changes directly?",
       "options": [
-        "Marginal products of both labor and capital rise",
+        "Labor and capital productivity rise",
         "The CPI basket becomes fixed",
         "The unemployment rate must become zero",
         "Public saving must become negative"
@@ -9043,7 +9616,7 @@ const questionBanks = {
       "tag": "production_function",
       "type": "application",
       "objective": "LO3.1",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "national_engine_elite",
       "primarySkill": "production_function_output",
       "secondarySkills": [
@@ -9052,31 +9625,7 @@ const questionBanks = {
       "repairSkill": "production_function_output",
       "commonError": "misses_productivity_effect_on_marginal_products",
       "feedback": "Better technology raises output from given inputs and tends to raise the marginal products of labor and capital.",
-      "aHash": "5b8f876bbcf61c291941bd88f3b19663ba81657f13ee2c291bf7eeae87be7e1c"
-    },
-    {
-      "id": 318,
-      "sourceGame": "nationalEngine",
-      "q": "A model has fixed K, fixed L, and fixed A. A tax cut raises consumption demand. What does the Chapter 3 model predict about output?",
-      "options": [
-        "Output stays fixed while saving and investment adjust",
-        "Output rises by the full tax cut",
-        "Output falls because consumption rises",
-        "Output equals nominal GDP by definition"
-      ],
-      "tag": "production",
-      "type": "trap",
-      "objective": "LO3.1",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "production_function_output",
-      "secondarySkills": [
-        "fiscal_policy_crowding_out"
-      ],
-      "repairSkill": "production_function_output",
-      "commonError": "imports_keynesian_multiplier_into_fixed_output_model",
-      "feedback": "In this model, output is fixed by K, L, and A; the tax cut changes saving and investment pressure.",
-      "aHash": "2026058227b6275ff47da90ee1e4c0e4ac0fa790e79214692271bd6caea18ab4"
+      "aHash": "1cba6b458aa005a86af1f2a7d0aa5669aa42f0b19677de8023e5e680a6196f39"
     },
     {
       "id": 319,
@@ -9091,7 +9640,7 @@ const questionBanks = {
       "tag": "goods_market_equilibrium",
       "type": "integration",
       "objective": "LO3.1",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "national_engine_elite",
       "primarySkill": "production_function_output",
       "secondarySkills": [
@@ -9105,17 +9654,17 @@ const questionBanks = {
     {
       "id": 320,
       "sourceGame": "nationalEngine",
-      "q": "A student says, 'Higher G always means higher Y in Chapter 3.' What is the cleanest correction?",
+      "q": "A student says, 'Higher government purchases always means higher output in the classical closed-economy model.' Which explanation correctly applies these assumptions?",
       "options": [
-        "Y is supply-determined here; higher G mainly reallocates demand",
-        "Y is CPI-determined here; higher G lowers prices",
-        "Y is unemployment-determined here; higher G changes f",
-        "Y is import-determined here; higher G changes NX only"
+        "Output is fixed by supply; higher purchases reallocate spending",
+        "Y is CPI-determined here; higher government purchases lower prices",
+        "Y is unemployment-determined here; higher government purchases changes f",
+        "Y is import-determined here; higher government purchases changes NX only"
       ],
       "tag": "production",
       "type": "trap",
       "objective": "LO3.1",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "national_engine_elite",
       "primarySkill": "production_function_output",
       "secondarySkills": [
@@ -9123,8 +9672,8 @@ const questionBanks = {
       ],
       "repairSkill": "production_function_output",
       "commonError": "misreads_chapter_3_as_short_run_demand_model",
-      "feedback": "Chapter 3 fixes output from production inputs, so fiscal changes shift demand composition rather than total output.",
-      "aHash": "2b58c9b75be57a98d5e482f20dc3a2000a7ce9bfb03a9ed1eb9f1b97e4b00f5e"
+      "feedback": "The classical closed-economy model fixes output through capital, labor, and technology. Fiscal changes therefore change the composition of demand rather than total output.",
+      "aHash": "6c51325c1fb76a1d97a2959a27c30956cbbde10b43abd2984806800763c95c25"
     },
     {
       "id": 321,
@@ -9139,7 +9688,7 @@ const questionBanks = {
       "tag": "labor_demand",
       "type": "calculation",
       "objective": "LO3.2",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "national_engine_elite",
       "primarySkill": "labor_demand_mpl_real_wage",
       "secondarySkills": [],
@@ -9161,7 +9710,7 @@ const questionBanks = {
       "tag": "labor_demand",
       "type": "calculation",
       "objective": "LO3.2",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "national_engine_elite",
       "primarySkill": "total_product_to_marginal_product",
       "secondarySkills": [
@@ -9171,51 +9720,6 @@ const questionBanks = {
       "commonError": "uses_total_product_instead_of_mpl",
       "feedback": "MPL values are 20, 16, 12, and 8. The firm hires three workers, stopping before MPL falls below 10.",
       "aHash": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce"
-    },
-    {
-      "id": 323,
-      "sourceGame": "nationalEngine",
-      "q": "If the nominal wage rises 20% and the output price rises 25%, what happens to the real wage?",
-      "options": [
-        "It falls",
-        "It rises",
-        "It is unchanged",
-        "It becomes zero"
-      ],
-      "tag": "factor_prices",
-      "type": "calculation",
-      "objective": "LO3.2",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "labor_demand_mpl_real_wage",
-      "secondarySkills": [],
-      "repairSkill": "labor_demand_mpl_real_wage",
-      "commonError": "looks_only_at_nominal_wage_growth",
-      "feedback": "The output price rose faster than the nominal wage, so the wage measured in output falls.",
-      "aHash": "51a961febd461ad1ea9db3f345c3907f42988e7937e56390ff5e6b439ae33884"
-    },
-    {
-      "id": 324,
-      "sourceGame": "nationalEngine",
-      "q": "Refer to the marginal product graph. A fall in the real wage should move the firm toward what outcome?",
-      "options": [
-        "More labor hired along the MPL curve",
-        "Less labor hired along the MPL curve",
-        "A leftward shift of the MPL curve",
-        "A lower total product at every labor level"
-      ],
-      "tag": "labor_demand",
-      "type": "graph_interpretation",
-      "objective": "LO3.2",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "labor_demand_mpl_real_wage",
-      "secondarySkills": [],
-      "repairSkill": "labor_demand_mpl_real_wage",
-      "commonError": "gets_real_wage_labor_demand_backward",
-      "feedback": "A lower real wage makes additional lower-MPL workers profitable, so labor demanded rises along the MPL curve.",
-      "image": "marginalproduct.webp",
-      "aHash": "d8cb2b98a35325fc665ad2dc499f7bd85ad082bec6450ff85b896f24e4571c92"
     },
     {
       "id": 325,
@@ -9230,7 +9734,7 @@ const questionBanks = {
       "tag": "factor_markets",
       "type": "integration",
       "objective": "LO3.2",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "national_engine_elite",
       "primarySkill": "diminishing_marginal_product",
       "secondarySkills": [
@@ -9254,7 +9758,7 @@ const questionBanks = {
       "tag": "factor_prices",
       "type": "application",
       "objective": "LO3.2",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "national_engine_elite",
       "primarySkill": "diminishing_marginal_product",
       "secondarySkills": [
@@ -9278,7 +9782,7 @@ const questionBanks = {
       "tag": "factor_prices",
       "type": "application",
       "objective": "LO3.2",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "national_engine_elite",
       "primarySkill": "diminishing_marginal_product",
       "secondarySkills": [
@@ -9288,75 +9792,6 @@ const questionBanks = {
       "commonError": "misses_capital_labor_complementarity",
       "feedback": "Scarcer capital raises MPK, but with less capital per worker, labor’s marginal product can fall.",
       "aHash": "7099040d7119d93475f9fd90b8b2077dddad410005c976db1c76e8cc67d415b9"
-    },
-    {
-      "id": 328,
-      "sourceGame": "nationalEngine",
-      "q": "A firm hires a worker with MPL = 9 when W/P = 11. What should happen to profit?",
-      "options": [
-        "It falls because the worker adds less output than the real wage cost",
-        "It rises because all positive MPL workers are profitable",
-        "It is unchanged because nominal wages do not matter",
-        "It rises only if CPI falls"
-      ],
-      "tag": "labor_demand",
-      "type": "trap",
-      "objective": "LO3.2",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "labor_demand_mpl_real_wage",
-      "secondarySkills": [],
-      "repairSkill": "labor_demand_mpl_real_wage",
-      "commonError": "hires_positive_mpl_even_when_below_real_wage",
-      "feedback": "A worker must produce at least the real wage in extra output. MPL = 9 is below W/P = 11, so profit falls.",
-      "aHash": "c6427338ea953952a5eab2dbafec0e7e8d812c69e858b7dd05b5b400a1f2df26"
-    },
-    {
-      "id": 329,
-      "sourceGame": "nationalEngine",
-      "q": "Refer to the total product graph. If the curve gets flatter but still rises, which interpretation is best?",
-      "options": [
-        "MPL is positive but falling",
-        "MPL is negative and falling",
-        "Total output is falling",
-        "The real wage must be zero"
-      ],
-      "tag": "marginal_product",
-      "type": "graph_interpretation",
-      "objective": "LO3.2",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "total_product_to_marginal_product",
-      "secondarySkills": [
-        "diminishing_marginal_product"
-      ],
-      "repairSkill": "total_product_to_marginal_product",
-      "commonError": "confuses_falling_mpl_with_negative_mpl",
-      "feedback": "A rising but flattening total product curve means each extra worker still adds output, but by less than before.",
-      "image": "totalproduct.webp",
-      "aHash": "b3d4e4e08c9ed53ab9d1445ac3f07a28dc8d4be689cb745d35e95981094ff79d"
-    },
-    {
-      "id": 330,
-      "sourceGame": "nationalEngine",
-      "q": "If alpha = 0.35 and total income is 5000, what are capital and labor income?",
-      "options": [
-        "Capital 1750; labor 3250",
-        "Capital 3250; labor 1750",
-        "Capital 3500; labor 1500",
-        "Capital 1500; labor 3500"
-      ],
-      "tag": "factor_shares",
-      "type": "calculation",
-      "objective": "LO3.3",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "cobb_douglas_factor_share_calculation",
-      "secondarySkills": [],
-      "repairSkill": "cobb_douglas_factor_share_calculation",
-      "commonError": "reverses_capital_and_labor_shares",
-      "feedback": "Capital income = 0.35×5000 = 1750; labor income = 0.65×5000 = 3250.",
-      "aHash": "8a112fe693d3b176a33d678dac18d3266bdd6f17700a2893278977ff6b2c007c"
     },
     {
       "id": 331,
@@ -9371,7 +9806,7 @@ const questionBanks = {
       "tag": "cobb_douglas",
       "type": "calculation",
       "objective": "LO3.3",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "national_engine_elite",
       "primarySkill": "cobb_douglas_factor_share_calculation",
       "secondarySkills": [],
@@ -9393,7 +9828,7 @@ const questionBanks = {
       "tag": "cobb_douglas",
       "type": "calculation",
       "objective": "LO3.3",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "national_engine_elite",
       "primarySkill": "cobb_douglas_factor_share_calculation",
       "secondarySkills": [
@@ -9405,57 +9840,11 @@ const questionBanks = {
       "aHash": "f9c014befb62299934be76baa550e42d4421c01053675813b0b94802320b91ef"
     },
     {
-      "id": 333,
-      "sourceGame": "nationalEngine",
-      "q": "A Cobb-Douglas model predicts stable factor shares, but labor’s share falls. Which explanation fits the caveat best?",
-      "options": [
-        "Technology and bargaining shifts can change real-world shares",
-        "The model says labor’s share must be zero",
-        "The CPI basket determines factor shares",
-        "The unemployment rate directly sets alpha"
-      ],
-      "tag": "income_distribution",
-      "type": "application",
-      "objective": "LO3.3",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "factor_income_distribution",
-      "secondarySkills": [
-        "cobb_douglas_factor_share_calculation"
-      ],
-      "repairSkill": "factor_income_distribution",
-      "commonError": "treats_benchmark_model_as_literal_fact",
-      "feedback": "Cobb-Douglas is a benchmark; real factor shares can move when technology, union power, or globalization changes.",
-      "aHash": "f3097a5867d178286650bc53cb6a8d78464eb6c26845974eb3f703bf22070789"
-    },
-    {
-      "id": 334,
-      "sourceGame": "nationalEngine",
-      "q": "If labor is paid less than its marginal product because bargaining power weakens, what assumption is being strained?",
-      "options": [
-        "Factors are paid their marginal products",
-        "The CPI uses a fixed basket",
-        "The labor force equals employed plus unemployed",
-        "Imports are subtracted from GDP"
-      ],
-      "tag": "income_distribution",
-      "type": "application",
-      "objective": "LO3.3",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "factor_income_distribution",
-      "secondarySkills": [],
-      "repairSkill": "factor_income_distribution",
-      "commonError": "misses_distribution_assumption",
-      "feedback": "The neoclassical distribution result depends on factors receiving their marginal products in competitive markets.",
-      "aHash": "d04ec8ec5dea575778d3b569d72f6da459626a14c2e749e7dbcee7f0fe66212c"
-    },
-    {
       "id": 335,
       "sourceGame": "nationalEngine",
       "q": "If capital owners also own the firm, why can accounting profit exceed economic profit?",
       "options": [
-        "It includes the return to owner-supplied capital",
+        "It includes returns to owners’ capital",
         "It excludes depreciation from every account",
         "It counts transfer payments as profit",
         "It measures CPI overstatement"
@@ -9463,60 +9852,14 @@ const questionBanks = {
       "tag": "income_distribution",
       "type": "interpretation",
       "objective": "LO3.3",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "national_engine_elite",
       "primarySkill": "factor_income_distribution",
       "secondarySkills": [],
       "repairSkill": "factor_income_distribution",
       "commonError": "confuses_accounting_profit_and_capital_return",
       "feedback": "Accounting profit includes both economic profit and the return to capital owned by the firm’s owners.",
-      "aHash": "4f89c44687bf2b63a4d8754b135d2950fa43b36b16a907d1c6d876fd221bf38c"
-    },
-    {
-      "id": 336,
-      "sourceGame": "nationalEngine",
-      "q": "If output is exhausted by payments to labor and capital under constant returns, what is the implication?",
-      "options": [
-        "Economic profit is zero in the ideal model",
-        "Accounting profit must be zero in all records",
-        "Labor receives all income",
-        "Capital receives all income"
-      ],
-      "tag": "income_distribution",
-      "type": "interpretation",
-      "objective": "LO3.3",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "factor_income_distribution",
-      "secondarySkills": [
-        "returns_to_scale_classification"
-      ],
-      "repairSkill": "factor_income_distribution",
-      "commonError": "misses_output_exhaustion_logic",
-      "feedback": "With constant returns and factors paid marginal products, total output is exhausted by factor payments, leaving zero economic profit.",
-      "aHash": "b0ccabcf24c068ccfb39e3d604edd065de281ea4fd2c731a36f6d188bdd11339"
-    },
-    {
-      "id": 337,
-      "sourceGame": "nationalEngine",
-      "q": "A country’s capital share rises while average labor productivity also rises. Which policy concern follows most directly?",
-      "options": [
-        "Productivity gains may not translate fully into labor income",
-        "Real GDP must be falling",
-        "The GDP deflator must equal CPI",
-        "The job finding rate must be zero"
-      ],
-      "tag": "income_distribution",
-      "type": "application",
-      "objective": "LO3.3",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "factor_income_distribution",
-      "secondarySkills": [],
-      "repairSkill": "factor_income_distribution",
-      "commonError": "assumes_productivity_growth_guarantees_wage_share_growth",
-      "feedback": "If capital’s share rises, labor may not capture productivity gains as wages to the same degree.",
-      "aHash": "d202f1633300eab80d08db5550f4ac4d4be2e97bdc133c94d6979bf0d50131cb"
+      "aHash": "4cf938e46f46dc1776717cb9b8498f2c4e14fa724e771cc45bc2d323c5f4814f"
     },
     {
       "id": 338,
@@ -9531,7 +9874,7 @@ const questionBanks = {
       "tag": "consumption_function",
       "type": "calculation",
       "objective": "LO3.4",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "national_engine_elite",
       "primarySkill": "consumption_function_calculation",
       "secondarySkills": [
@@ -9555,7 +9898,7 @@ const questionBanks = {
       "tag": "consumption",
       "type": "calculation",
       "objective": "LO3.4",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "national_engine_elite",
       "primarySkill": "mpc_disposable_income",
       "secondarySkills": [
@@ -9571,15 +9914,15 @@ const questionBanks = {
       "sourceGame": "nationalEngine",
       "q": "Refer to the consumption function graph. Which pair correctly separates movement from shift?",
       "options": [
-        "Higher Y-T moves along; higher wealth shifts up",
-        "Higher wealth moves along; higher Y-T shifts up",
+        "Higher output-T moves along; higher wealth shifts up",
+        "Higher wealth moves along; higher output-T shifts up",
         "Higher taxes always shift up; higher wealth moves down",
         "Higher CPI always moves along; higher income shifts down"
       ],
       "tag": "consumption_function",
       "type": "graph_interpretation",
       "objective": "LO3.4",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "national_engine_elite",
       "primarySkill": "consumption_movement_vs_shift",
       "secondarySkills": [],
@@ -9587,7 +9930,7 @@ const questionBanks = {
       "commonError": "reverses_movement_and_shift",
       "feedback": "A change in disposable income moves along the function; a wealth change shifts consumption at each income level.",
       "image": "consumptionfunction.webp",
-      "aHash": "5f478a792668058718261cd5709251b333c4a56eba9364e25fe8b5ed3c559f27"
+      "aHash": "aa9990ab75c5a7286e65ed76e7e3562fd811d662b0c7d794912b73386fff7932"
     },
     {
       "id": 341,
@@ -9602,7 +9945,7 @@ const questionBanks = {
       "tag": "investment",
       "type": "calculation",
       "objective": "LO3.4",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "national_engine_elite",
       "primarySkill": "real_interest_investment_calculation",
       "secondarySkills": [],
@@ -9624,7 +9967,7 @@ const questionBanks = {
       "tag": "investment",
       "type": "calculation",
       "objective": "LO3.4",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "national_engine_elite",
       "primarySkill": "real_interest_investment_calculation",
       "secondarySkills": [
@@ -9632,83 +9975,13 @@ const questionBanks = {
       ],
       "repairSkill": "real_interest_investment_calculation",
       "commonError": "misses_real_rate_fall_when_inflation_rises",
-      "feedback": "Real r falls from 7 to 4. Investment rises from 1100 to 1700, an increase of 600.",
+      "feedback": "The real interest rate falls from 7 to 4. Investment rises from 1100 to 1700, an increase of 600.",
       "aHash": "e7c53530f1fc0df29a9857a211adc7c85f7bfd45ada7a644c18821abf7d28d72"
-    },
-    {
-      "id": 343,
-      "sourceGame": "nationalEngine",
-      "q": "Refer to the investment function graph. Expected profits rise while the real interest rate rises. What is the careful answer?",
-      "options": [
-        "Investment effect is ambiguous without shift size and rate change",
-        "Investment must rise because profits rose",
-        "Investment must fall because r rose",
-        "Investment cannot change because both forces cancel exactly"
-      ],
-      "tag": "investment_function",
-      "type": "graph_interpretation",
-      "objective": "LO3.4",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "investment_function_movement_vs_shift",
-      "secondarySkills": [],
-      "repairSkill": "investment_function_movement_vs_shift",
-      "commonError": "ignores_offsetting_shift_and_movement",
-      "feedback": "Higher expected profits shift investment right, but a higher real interest rate moves up the curve; the net effect depends on magnitudes.",
-      "image": "investmentfunction.webp",
-      "aHash": "6542d09f7c449e38a6fbaa7d40674d4dae2416b343735723a70d3ff5f36955e3"
-    },
-    {
-      "id": 344,
-      "sourceGame": "nationalEngine",
-      "q": "Refer to the investment function graph. A move from a low-r point on I1 to a high-r point on I2 means what likely happened?",
-      "options": [
-        "Investment demand rose while the real interest rate also rose",
-        "Investment demand fell while the real interest rate fell",
-        "Only the real interest rate changed",
-        "Only the CPI basket changed"
-      ],
-      "tag": "investment_function",
-      "type": "graph_interpretation",
-      "objective": "LO3.4",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "investment_function_movement_vs_shift",
-      "secondarySkills": [],
-      "repairSkill": "investment_function_movement_vs_shift",
-      "commonError": "sees_only_shift_or_only_movement",
-      "feedback": "Moving from I1 to I2 indicates higher investment demand, while moving to a higher-r point means the real interest rate rose.",
-      "image": "investmentfunction.webp",
-      "aHash": "df8ec86bc8eed1cb9b805d10d19cfdd10c432c0b013cbe61477efeb530e8bcde"
-    },
-    {
-      "id": 345,
-      "sourceGame": "nationalEngine",
-      "q": "A tax credit raises expected capital returns, but the loanable funds market later raises r. What is the best sequence?",
-      "options": [
-        "Investment demand shifts right, then higher r limits the quantity response",
-        "Saving shifts left, then lower r raises investment",
-        "Consumption shifts down, then CPI lowers investment",
-        "Labor supply rises, then MPL lowers investment"
-      ],
-      "tag": "investment_function",
-      "type": "integration",
-      "objective": "LO3.4",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "investment_function_movement_vs_shift",
-      "secondarySkills": [
-        "investment_demand_vs_saving_shift"
-      ],
-      "repairSkill": "investment_function_movement_vs_shift",
-      "commonError": "misses_market_feedback_on_investment_demand_shift",
-      "feedback": "The tax credit shifts investment demand right, but the resulting higher real interest rate can limit the increase in equilibrium investment.",
-      "aHash": "4c784ae10b83a07dfb6be0ccd17cc2a2f55f91e4b338b70bbc7d78b5de832680"
     },
     {
       "id": 346,
       "sourceGame": "nationalEngine",
-      "q": "Suppose C = 100 + 0.8(Y - T), Y is fixed at 2000, and T falls by 100. What happens to consumption and national saving if G is fixed?",
+      "q": "Suppose C = 100 + 0.8(Y - T), output is fixed at 2000, and taxes fall by 100. What happens to consumption and national saving if government purchases are fixed?",
       "options": [
         "Consumption rises 80; national saving falls 80",
         "Consumption rises 100; national saving stays fixed",
@@ -9718,7 +9991,7 @@ const questionBanks = {
       "tag": "consumption",
       "type": "integration",
       "objective": "LO3.4",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "national_engine_elite",
       "primarySkill": "mpc_disposable_income",
       "secondarySkills": [
@@ -9726,32 +9999,8 @@ const questionBanks = {
       ],
       "repairSkill": "mpc_disposable_income",
       "commonError": "looks_only_at_private_saving_after_tax_cut",
-      "feedback": "The tax cut raises consumption by 80. With Y and G fixed, higher C lowers national saving by 80.",
+      "feedback": "The tax cut raises consumption by 80. With Y and G fixed, higher consumption lowers national saving by 80.",
       "aHash": "4f6e18ca672a6d009cc0c4f62917d75113ad8687a8742996c847f3b5a34ac84f"
-    },
-    {
-      "id": 347,
-      "sourceGame": "nationalEngine",
-      "q": "If a wealth boom shifts consumption upward while Y and G are fixed, what must happen to national saving?",
-      "options": [
-        "It falls because consumption rises",
-        "It rises because wealth rises",
-        "It stays fixed because Y is fixed",
-        "It becomes equal to investment demand"
-      ],
-      "tag": "consumption_function",
-      "type": "application",
-      "objective": "LO3.4",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "consumption_movement_vs_shift",
-      "secondarySkills": [
-        "saving_identity_calculation"
-      ],
-      "repairSkill": "consumption_movement_vs_shift",
-      "commonError": "confuses_household_wealth_with_national_saving",
-      "feedback": "National saving is Y - C - G. If C rises while Y and G are fixed, national saving falls.",
-      "aHash": "2d06f878c7a1f63704d80bcb826891c6fde6c7db96f0d5012688854c16f1be3c"
     },
     {
       "id": 348,
@@ -9766,7 +10015,7 @@ const questionBanks = {
       "tag": "consumption_function",
       "type": "integration",
       "objective": "LO3.4",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "national_engine_elite",
       "primarySkill": "consumption_movement_vs_shift",
       "secondarySkills": [
@@ -9776,28 +10025,6 @@ const questionBanks = {
       "commonError": "misses_consumption_saving_link",
       "feedback": "More saving at each income means less consumption and higher national saving, shifting saving right in loanable funds.",
       "aHash": "bbcd8ebe0619b977c6b18178538ca53e534ab97f9e4da904c3d4a60832dcb674"
-    },
-    {
-      "id": 349,
-      "sourceGame": "nationalEngine",
-      "q": "If real r falls but investment does not rise much, which explanation fits the investment function best?",
-      "options": [
-        "Investment demand may have shifted left at the same time",
-        "The law of investment demand is impossible",
-        "Lower r always shifts investment demand left",
-        "CPI bias cancels investment by definition"
-      ],
-      "tag": "investment_function",
-      "type": "trap",
-      "objective": "LO3.4",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "investment_function_movement_vs_shift",
-      "secondarySkills": [],
-      "repairSkill": "investment_function_movement_vs_shift",
-      "commonError": "ignores_simultaneous_curve_shift",
-      "feedback": "A lower r raises investment along a curve, but a leftward shift in investment demand can offset that movement.",
-      "aHash": "75343ebb62a11092b544c135b1b15aa5515ac313dacc030a30fe5ae27a67475a"
     },
     {
       "id": 350,
@@ -9812,7 +10039,7 @@ const questionBanks = {
       "tag": "national_saving",
       "type": "calculation",
       "objective": "LO3.5",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "national_engine_elite",
       "primarySkill": "saving_identity_calculation",
       "secondarySkills": [],
@@ -9834,7 +10061,7 @@ const questionBanks = {
       "tag": "national_saving",
       "type": "calculation",
       "objective": "LO3.5",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "national_engine_elite",
       "primarySkill": "saving_identity_calculation",
       "secondarySkills": [
@@ -9858,7 +10085,7 @@ const questionBanks = {
       "tag": "national_saving",
       "type": "calculation",
       "objective": "LO3.5",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "national_engine_elite",
       "primarySkill": "saving_identity_calculation",
       "secondarySkills": [
@@ -9874,15 +10101,15 @@ const questionBanks = {
       "sourceGame": "nationalEngine",
       "q": "Refer to the loanable funds graph. If public saving falls, which point movement is most consistent?",
       "options": [
-        "From higher saving/lower r toward lower saving/higher r",
-        "From lower saving/higher r toward higher saving/lower r",
+        "From higher saving/lower real interest rate toward lower saving/higher real interest rate",
+        "From lower saving/higher real interest rate toward higher saving/lower real interest rate",
         "From I1 to I2 with saving unchanged",
-        "From lower r to lower investment on the same saving curve"
+        "From lower real interest rate to lower investment on the same saving curve"
       ],
       "tag": "loanable_funds",
       "type": "graph_interpretation",
       "objective": "LO3.5",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "national_engine_elite",
       "primarySkill": "loanable_funds_graph_shifts",
       "secondarySkills": [
@@ -9892,17 +10119,525 @@ const questionBanks = {
       "commonError": "gets_saving_shift_direction_backward",
       "feedback": "Lower public saving reduces national saving, shifting saving left, raising r, and lowering investment.",
       "image": "loanablefunds.webp",
-      "aHash": "0702f110747e410ee4c4cbdae88f373b7eb76d8badd43d40598619fab9a6bb81"
+      "aHash": "a9af11984aefe1de775ff403679e4def766dadb92fb8364882ed07a26c646258"
+    },
+    {
+      "id": 360,
+      "sourceGame": "nationalEngine",
+      "q": "A deficit raises the real interest rate and lowers investment. Why does this matter in the classical closed-economy model?",
+      "options": [
+        "Lower investment can reduce future capital accumulation",
+        "Lower investment raises current CPI by definition",
+        "Lower investment increases current labor force size",
+        "Lower investment raises current output immediately"
+      ],
+      "tag": "crowding_out",
+      "type": "policy",
+      "objective": "LO3.5",
+      "difficulty": "hard",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "fiscal_policy_crowding_out",
+      "secondarySkills": [],
+      "repairSkill": "fiscal_policy_crowding_out",
+      "commonError": "misses_long_run_capital_accumulation_channel",
+      "feedback": "Crowding out matters because less investment today can mean less capital accumulation and lower future productive capacity.",
+      "aHash": "89181721917029139734306c09c4f3d75c8833ad4c3f5fd19c3b5a65cb6fa7e7"
+    },
+    {
+      "id": 362,
+      "sourceGame": "nationalEngine",
+      "q": "National saving rises from 700 to 900. Investment demand is I = 1300 - 100r. What happens to r?",
+      "options": [
+        "It falls from 6 to 4",
+        "It rises from 4 to 6",
+        "It falls from 7 to 9",
+        "It stays at 6"
+      ],
+      "tag": "loanable_funds",
+      "type": "calculation",
+      "objective": "LO3.5",
+      "difficulty": "hard",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "saving_investment_equilibrium",
+      "secondarySkills": [
+        "loanable_funds_graph_shifts"
+      ],
+      "repairSkill": "saving_investment_equilibrium",
+      "commonError": "gets_saving_interest_rate_effect_backward",
+      "feedback": "At S=700, r=6. At S=900, r=4. Higher saving lowers the real interest rate.",
+      "aHash": "5e935eb2705329b84600613999cd5b13baca45648b5b146b55102bcf08266652"
+    },
+    {
+      "id": 364,
+      "sourceGame": "nationalEngine",
+      "q": "In the classical closed-economy model, government purchases fall while taxes, output, and the consumption function stay fixed. How do saving and investment adjust?",
+      "options": [
+        "Public and national saving rise; the real interest rate falls and investment rises",
+        "Government purchases fall, public saving falls, the real interest rate rises, investment falls",
+        "Government purchases fall, consumption rises automatically, investment falls",
+        "Government purchases fall, GDP rises immediately, investment is unchanged"
+      ],
+      "tag": "fiscal_policy",
+      "type": "policy",
+      "objective": "LO3.5",
+      "difficulty": "hard",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "fiscal_policy_crowding_out",
+      "secondarySkills": [
+        "loanable_funds_graph_shifts"
+      ],
+      "repairSkill": "fiscal_policy_crowding_out",
+      "commonError": "gets_fiscal_saving_chain_backward",
+      "feedback": "Lower government purchases raise public and national saving, lower the real interest rate, and increase investment.",
+      "aHash": "fb78c0af3e96b28db1d2f4194e0f91bda637f1deb763ce9f76ee5614fae1b2d7"
+    },
+    {
+      "id": 367,
+      "sourceGame": "nationalEngine",
+      "q": "A central bank boosts demand and unemployment temporarily falls below the natural rate. What should an advisor avoid claiming?",
+      "options": [
+        "That the natural rate has permanently fallen",
+        "That actual unemployment can move below natural temporarily",
+        "That cyclical unemployment can be negative",
+        "That labor-market frictions still exist"
+      ],
+      "tag": "natural_rate",
+      "type": "trap",
+      "objective": "LO7.1",
+      "difficulty": "hard",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "natural_rate_definition",
+      "secondarySkills": [],
+      "repairSkill": "natural_rate_definition",
+      "commonError": "confuses_actual_unemployment_with_natural_rate",
+      "feedback": "Actual unemployment can fall below the natural rate temporarily, but that does not prove the natural rate permanently changed.",
+      "aHash": "0a0c4e9aa507b981bd8ffcfb52836f276e0e9d1ef32038b10ecc985f86670e45"
+    },
+    {
+      "id": 368,
+      "sourceGame": "nationalEngine",
+      "q": "A country reduces wage rigidity and improves matching. Which unemployment components are targeted?",
+      "options": [
+        "Structural and frictional",
+        "Cyclical and nominal unemployment",
+        "GDP and CPI",
+        "Investment and saving"
+      ],
+      "tag": "natural_rate",
+      "type": "policy",
+      "objective": "LO7.1",
+      "difficulty": "hard",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "natural_rate_definition",
+      "secondarySkills": [
+        "frictional_vs_other_unemployment"
+      ],
+      "repairSkill": "natural_rate_definition",
+      "commonError": "misses_components_of_natural_rate",
+      "feedback": "Wage rigidity is structural; matching problems are frictional. Both are part of the natural rate.",
+      "aHash": "a436537ae93109027100abe162b4adf2e4672263473935fe48b66c1a55e935f5"
+    },
+    {
+      "id": 370,
+      "sourceGame": "nationalEngine",
+      "q": "If steady-state unemployment is 12% and f = 0.44, what is s closest to?",
+      "options": [
+        "0.06",
+        "0.12",
+        "0.44",
+        "0.50"
+      ],
+      "tag": "steady_state_unemployment",
+      "type": "calculation",
+      "objective": "LO7.2",
+      "difficulty": "hard",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "steady_state_unemployment_calculation",
+      "secondarySkills": [],
+      "repairSkill": "steady_state_unemployment_calculation",
+      "commonError": "does_not_solve_for_separation_rate",
+      "feedback": "s = uf/(1-u) = 0.12×0.44/0.88 = 0.06.",
+      "aHash": "bb1a364b44db63819dccae493a7d0cf92a7015ead0d9a92e48c643320aa064ca"
+    },
+    {
+      "id": 371,
+      "sourceGame": "nationalEngine",
+      "q": "If s rises from 0.02 to 0.04 and f rises from 0.18 to 0.36, what happens to steady-state unemployment?",
+      "options": [
+        "It stays at 10%",
+        "It rises to 20%",
+        "It falls to 5%",
+        "It becomes 40%"
+      ],
+      "tag": "steady_state_unemployment",
+      "type": "calculation",
+      "objective": "LO7.2",
+      "difficulty": "hard",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "job_finding_job_separation_logic",
+      "secondarySkills": [
+        "steady_state_unemployment_calculation"
+      ],
+      "repairSkill": "job_finding_job_separation_logic",
+      "commonError": "focuses_on_one_flow_rate_only",
+      "feedback": "Initial u = 0.02/0.20 = 10%. New u = 0.04/0.40 = 10%. Both rates doubled.",
+      "aHash": "2c3bc2e0c5f719363b894af1875350fa791010b9353f05e78c60aab39a396a71"
+    },
+    {
+      "id": 372,
+      "sourceGame": "nationalEngine",
+      "q": "A policy reduces s from 0.06 to 0.03 while f stays at 0.27. What happens to steady-state unemployment?",
+      "options": [
+        "It falls from about 18% to 10%",
+        "It rises from 10% to about 18%",
+        "It stays at 27%",
+        "It becomes 3%"
+      ],
+      "tag": "steady_state_unemployment",
+      "type": "calculation",
+      "objective": "LO7.2",
+      "difficulty": "hard",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "steady_state_unemployment_calculation",
+      "secondarySkills": [
+        "job_finding_job_separation_logic"
+      ],
+      "repairSkill": "steady_state_unemployment_calculation",
+      "commonError": "gets_separation_policy_effect_backward",
+      "feedback": "Initial u = 0.06/0.33 ≈ 18%. New u = 0.03/0.30 = 10%.",
+      "aHash": "010b8cbeac77f61ed2cb0205f39fa569a1ddd2c2d764c9823bbfa15abf7da359"
+    },
+    {
+      "id": 374,
+      "sourceGame": "nationalEngine",
+      "q": "If f = 0.20, what is the average unemployment spell, and what happens if f doubles?",
+      "options": [
+        "5 months; it falls to 2.5 months",
+        "20 months; it falls to 10 months",
+        "5 months; it rises to 10 months",
+        "2 months; it falls to 1 month"
+      ],
+      "tag": "job_finding",
+      "type": "calculation",
+      "objective": "LO7.2",
+      "difficulty": "hard",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "steady_state_unemployment_calculation",
+      "secondarySkills": [],
+      "repairSkill": "steady_state_unemployment_calculation",
+      "commonError": "uses_f_as_duration_not_inverse",
+      "feedback": "Average unemployment spell is 1/f = 5 months. If f doubles to 0.40, duration falls to 2.5 months.",
+      "aHash": "41e28dc36d285a0f533e9f71d048f88aa6448cfd26e2b9d57cec76549e3aeb08"
+    },
+    {
+      "id": 375,
+      "sourceGame": "nationalEngine",
+      "q": "If s = 0.025, what is the average employment spell, and what happens if s rises to 0.05?",
+      "options": [
+        "40 months; it falls to 20 months",
+        "25 months; it rises to 50 months",
+        "4 months; it falls to 2 months",
+        "20 months; it rises to 40 months"
+      ],
+      "tag": "job_separation",
+      "type": "calculation",
+      "objective": "LO7.2",
+      "difficulty": "hard",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "steady_state_unemployment_calculation",
+      "secondarySkills": [],
+      "repairSkill": "steady_state_unemployment_calculation",
+      "commonError": "uses_s_as_spell_length",
+      "feedback": "Average employment spell is 1/s = 40 months. If s rises to 0.05, it falls to 20 months.",
+      "aHash": "3829a7b9b41362588d28ae809dd82895b7e44be72f885d1e9a4cc8078a95b8b6"
+    },
+    {
+      "id": 377,
+      "sourceGame": "nationalEngine",
+      "q": "If u = s/(s+f), which policy pair most directly lowers u?",
+      "options": [
+        "Lower s and raise f",
+        "Raise s and lower f",
+        "Raise both s and f equally",
+        "Lower both s and f equally"
+      ],
+      "tag": "steady_state_unemployment",
+      "type": "policy",
+      "objective": "LO7.2",
+      "difficulty": "hard",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "job_finding_job_separation_logic",
+      "secondarySkills": [],
+      "repairSkill": "job_finding_job_separation_logic",
+      "commonError": "misses_direction_of_flow_policy",
+      "feedback": "Lower job separation and higher job finding both reduce steady-state unemployment.",
+      "aHash": "d792a60c086c42f98cb59e2dd820618e55d59802eecbf8e5f0e451ec2b50ca8e"
+    },
+    {
+      "id": 380,
+      "sourceGame": "nationalEngine",
+      "q": "A laid-off worker rejects the first available job to search for a better match. Which interpretation is strongest?",
+      "options": [
+        "Longer search may improve matches but raises frictional unemployment",
+        "This is structural unemployment caused by a wage floor",
+        "This is always cyclical unemployment from low spending",
+        "Rejecting an initial offer immediately removes the worker from the labor force"
+      ],
+      "tag": "frictional_unemployment",
+      "type": "application",
+      "objective": "LO7.3",
+      "difficulty": "hard",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "ui_and_job_search_incentives",
+      "secondarySkills": [
+        "frictional_vs_other_unemployment"
+      ],
+      "repairSkill": "ui_and_job_search_incentives",
+      "commonError": "treats_search_as_purely_bad_or_structural",
+      "feedback": "Search can increase frictional unemployment duration, but it can also help workers find better matches.",
+      "aHash": "2a29443e450a8fa6e924aa142a0e02cf0217ec7c45ac65dc1c11ad8723714ffa"
+    },
+    {
+      "id": 387,
+      "sourceGame": "nationalEngine",
+      "q": "Fifty short-term workers are unemployed for 3 weeks each; five long-term workers are unemployed for 45 weeks each. What share of unemployment weeks is long-term?",
+      "options": [
+        "60%",
+        "10%",
+        "40%",
+        "75%"
+      ],
+      "tag": "unemployment_duration",
+      "type": "calculation",
+      "objective": "LO7.3",
+      "difficulty": "hard",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "unemployment_duration_calculation",
+      "secondarySkills": [],
+      "repairSkill": "unemployment_duration_calculation",
+      "commonError": "uses_people_share_instead_of_weeks_share",
+      "feedback": "Short-term weeks = 150. Long-term weeks = 225. Long-term share = 225/375 = 60%.",
+      "aHash": "f3586438923090c61a133d885dc5ae63c33bdbeeeab5c7efe1a63b7ff6db1156"
+    },
+    {
+      "id": 390,
+      "sourceGame": "nationalEngine",
+      "q": "A city raises the minimum wage and firms reduce nonwage benefits. What does this show?",
+      "options": [
+        "Firms can adjust benefits as well as employment",
+        "The wage floor was not binding by definition",
+        "Structural unemployment must disappear",
+        "The CPI excludes labor costs"
+      ],
+      "tag": "minimum_wage",
+      "type": "policy",
+      "objective": "LO7.3",
+      "difficulty": "hard",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "minimum_wage_structural_unemployment",
+      "secondarySkills": [],
+      "repairSkill": "minimum_wage_structural_unemployment",
+      "commonError": "looks_only_at_job_count_effect",
+      "feedback": "Labor-cost policy effects can show up through hours, hiring, benefits, prices, and job availability.",
+      "aHash": "ad691a0e87bb980cda70290d877b212471ad82b7ae8e36c52a65f5857e3295e1"
+    },
+    {
+      "id": 391,
+      "sourceGame": "nationalEngine",
+      "q": "An advisor wants to reduce frictional unemployment from sectoral shifts. Which package fits best?",
+      "options": [
+        "Job information, retraining and relocation aid",
+        "Higher wage floors and stricter union entry",
+        "Lower CPI weights and higher GDP deflator",
+        "Higher public deficits and lower saving"
+      ],
+      "tag": "frictional_unemployment",
+      "type": "policy",
+      "objective": "LO7.3",
+      "difficulty": "hard",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "sectoral_shift_matching",
+      "secondarySkills": [],
+      "repairSkill": "sectoral_shift_matching",
+      "commonError": "chooses_structural_policy_for_matching_problem",
+      "feedback": "Frictional unemployment from sectoral shifts is reduced by improving worker-job matching and mobility.",
+      "aHash": "19e54ea0a9a6f314f9f3069d098fa384e3a4c7498710c6214307c4df43f6b186"
+    },
+    {
+      "id": 393,
+      "sourceGame": "nationalEngine",
+      "q": "If discouraged workers begin searching again before finding jobs, what happens to U-3 unemployment at first?",
+      "options": [
+        "It rises because they reenter unemployment",
+        "It falls because they are optimistic",
+        "It is unchanged because they are still jobless",
+        "It becomes U-6 automatically"
+      ],
+      "tag": "discouraged_workers",
+      "type": "application",
+      "objective": "LO7.3",
+      "difficulty": "hard",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "labor_underutilization_classification",
+      "secondarySkills": [
+        "employment_status_classification"
+      ],
+      "repairSkill": "labor_underutilization_classification",
+      "commonError": "misses_reentry_into_labor_force",
+      "feedback": "When discouraged workers resume searching, they reenter the labor force as unemployed, raising U-3 initially.",
+      "aHash": "c884ce70a61254d91d0acd8c571cbca79570d9fcb2deae59c27ec0e057f75350"
+    },
+    {
+      "id": 395,
+      "sourceGame": "nationalEngine",
+      "q": "Which explanation best links sectoral shifts and unemployment duration?",
+      "options": [
+        "Mismatched skills and locations can prolong job searches",
+        "Repeated shifts eliminate job search because workers move instantly",
+        "Repeated shifts create only CPI inflation",
+        "Repeated shifts lower unemployment by raising wage rigidity"
+      ],
+      "tag": "sectoral_shifts",
+      "type": "application",
+      "objective": "LO7.3",
+      "difficulty": "hard",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "sectoral_shift_matching",
+      "secondarySkills": [
+        "unemployment_duration_calculation"
+      ],
+      "repairSkill": "sectoral_shift_matching",
+      "commonError": "misses_skill_location_matching_delay",
+      "feedback": "Sectoral shifts change where and what jobs exist, creating matching problems that can lengthen unemployment spells.",
+      "aHash": "19064ae3c46828ce708a6fe0f05335ad0725e07d3f3cddd30ed4bda88bc36da6"
+    }
+  ],
+  "elite": [
+    {
+      "id": 333,
+      "sourceGame": "nationalEngine",
+      "q": "A Cobb-Douglas model predicts stable factor shares, but labor’s share falls. Which explanation fits the caveat best?",
+      "options": [
+        "Technology and bargaining can alter factor shares",
+        "The model requires labor’s share to be zero once technology improves",
+        "The CPI basket determines factor shares",
+        "The unemployment rate directly sets alpha"
+      ],
+      "tag": "income_distribution",
+      "type": "application",
+      "objective": "LO3.3",
+      "difficulty": "elite",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "factor_income_distribution",
+      "secondarySkills": [
+        "cobb_douglas_factor_share_calculation"
+      ],
+      "repairSkill": "factor_income_distribution",
+      "commonError": "treats_benchmark_model_as_literal_fact",
+      "feedback": "Cobb-Douglas is a benchmark; real factor shares can move when technology, union power, or globalization changes.",
+      "aHash": "444ba3ad3f1c8a7ecbe78b25400ccedda332d26f961a50d2207b3ce082fbdec0"
+    },
+    {
+      "id": 337,
+      "sourceGame": "nationalEngine",
+      "q": "A country’s capital share rises while average labor productivity also rises. Which policy concern follows most directly?",
+      "options": [
+        "Labor income may capture less of the productivity gain",
+        "Rising capital shares mean real GDP must fall even when output per worker rises",
+        "The GDP deflator must equal CPI",
+        "The job finding rate must be zero"
+      ],
+      "tag": "income_distribution",
+      "type": "application",
+      "objective": "LO3.3",
+      "difficulty": "elite",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "factor_income_distribution",
+      "secondarySkills": [],
+      "repairSkill": "factor_income_distribution",
+      "commonError": "assumes_productivity_growth_guarantees_wage_share_growth",
+      "feedback": "If capital’s share rises, labor may not capture productivity gains as wages to the same degree.",
+      "aHash": "bd8717f28d8e5a3636cf2322d13697c8a44eeb3e94c70d44dfaae227aabe47a1"
+    },
+    {
+      "id": 343,
+      "sourceGame": "nationalEngine",
+      "q": "Refer to the investment demand graph. Expected profits rise while the real interest rate rises. What is the careful answer?",
+      "options": [
+        "Investment is ambiguous without the size of each change",
+        "Investment must rise because profits rose",
+        "Investment must fall because r rose",
+        "Investment cannot change because both forces cancel exactly"
+      ],
+      "tag": "investment_function",
+      "type": "graph_interpretation",
+      "objective": "LO3.4",
+      "difficulty": "elite",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "investment_function_movement_vs_shift",
+      "secondarySkills": [],
+      "repairSkill": "investment_function_movement_vs_shift",
+      "commonError": "ignores_offsetting_shift_and_movement",
+      "feedback": "Higher expected profits shift investment right, but a higher real interest rate moves up the curve; the net effect depends on magnitudes.",
+      "image": "investmentfunction.webp",
+      "aHash": "e7cd8ecc8a3c1209e34f52cd5274f2a02b8e814db5876dab8f06a6850dc47b2d"
+    },
+    {
+      "id": 344,
+      "sourceGame": "nationalEngine",
+      "q": "Refer to the investment demand graph. What changes are represented by a move from I1 at a low real interest rate to I2 at a high real interest rate?",
+      "options": [
+        "Investment demand rose while the real interest rate also rose",
+        "Investment demand fell while the real interest rate fell",
+        "Only the real interest rate changed",
+        "Only the CPI basket changed"
+      ],
+      "tag": "investment_function",
+      "type": "graph_interpretation",
+      "objective": "LO3.4",
+      "difficulty": "elite",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "investment_function_movement_vs_shift",
+      "secondarySkills": [],
+      "repairSkill": "investment_function_movement_vs_shift",
+      "commonError": "sees_only_shift_or_only_movement",
+      "feedback": "Moving from I1 to I2 indicates higher investment demand, while moving to a higher-r point means the real interest rate rose.",
+      "image": "investmentfunction.webp",
+      "aHash": "df8ec86bc8eed1cb9b805d10d19cfdd10c432c0b013cbe61477efeb530e8bcde"
+    },
+    {
+      "id": 345,
+      "sourceGame": "nationalEngine",
+      "q": "A tax credit raises expected capital returns, but the loanable funds market later raises the real interest rate. What is the best sequence?",
+      "options": [
+        "Investment demand rises, but a higher real interest rate limits the increase",
+        "Saving falls, and the resulting lower real interest rate increases investment",
+        "Consumption shifts down, then CPI lowers investment",
+        "Labor supply rises, then MPL lowers investment"
+      ],
+      "tag": "investment_function",
+      "type": "integration",
+      "objective": "LO3.4",
+      "difficulty": "elite",
+      "conceptCluster": "national_engine_elite",
+      "primarySkill": "investment_function_movement_vs_shift",
+      "secondarySkills": [
+        "investment_demand_vs_saving_shift"
+      ],
+      "repairSkill": "investment_function_movement_vs_shift",
+      "commonError": "misses_market_feedback_on_investment_demand_shift",
+      "feedback": "The tax credit shifts investment demand right, but the resulting higher real interest rate can limit the increase in equilibrium investment.",
+      "aHash": "6a90d2d9ce51f7b86241ee91a1bbcb0ad9f2834cb3691ff86374eb4cf49f4fb3"
     },
     {
       "id": 354,
       "sourceGame": "nationalEngine",
-      "q": "Refer to the loanable funds graph. Investment demand shifts right and saving shifts left at the same time. What is unambiguous?",
+      "q": "Refer to the loanable funds graph. Investment demand shifts right and saving shifts left at the same time. What happens to the equilibrium real interest rate? Use the classical closed-economy model with vertical national saving.",
       "options": [
         "The real interest rate rises",
-        "Investment definitely rises",
-        "Investment definitely falls",
-        "The real interest rate falls"
+        "The real interest rate falls",
+        "The real interest rate remains unchanged",
+        "The direction of the real interest rate is indeterminate"
       ],
       "tag": "loanable_funds",
       "type": "graph_interpretation",
@@ -9915,7 +10650,7 @@ const questionBanks = {
       ],
       "repairSkill": "loanable_funds_graph_shifts",
       "commonError": "claims_quantity_effect_when_ambiguous",
-      "feedback": "Higher investment demand raises r, and lower saving also raises r. The quantity of investment depends on relative shifts.",
+      "feedback": "Lower saving and higher investment demand both raise the real interest rate. Because the saving schedule is vertical, equilibrium investment falls to equal the lower saving quantity.",
       "image": "loanablefunds.webp",
       "aHash": "b18d2d8610275911d67838216e6fdfba8a0b22b8e57a41d417b5585936554da0"
     },
@@ -9947,12 +10682,12 @@ const questionBanks = {
     {
       "id": 356,
       "sourceGame": "nationalEngine",
-      "q": "Refer to the loanable funds graph. Saving shifts right while investment demand shifts left. What is unambiguous?",
+      "q": "Refer to the loanable funds graph. Saving shifts right while investment demand shifts left. What happens to the equilibrium real interest rate? Use the classical closed-economy model with vertical national saving.",
       "options": [
         "The real interest rate falls",
-        "Investment rises",
-        "Investment falls",
-        "The real interest rate rises"
+        "The real interest rate rises",
+        "The real interest rate remains unchanged",
+        "The direction of the real interest rate is indeterminate"
       ],
       "tag": "loanable_funds",
       "type": "graph_interpretation",
@@ -9965,7 +10700,7 @@ const questionBanks = {
       ],
       "repairSkill": "loanable_funds_graph_shifts",
       "commonError": "claims_quantity_effect_when_ambiguous",
-      "feedback": "Higher saving lowers r, and lower investment demand also lowers r. Investment quantity depends on relative shifts.",
+      "feedback": "Higher saving and lower investment demand both lower the real interest rate. Because the saving schedule is vertical, equilibrium investment rises to equal the higher saving quantity.",
       "image": "loanablefunds.webp",
       "aHash": "b81a7663ff174528eb6b1ce598da65736d849c821e874d26e3e059f97097aabf"
     },
@@ -9974,8 +10709,8 @@ const questionBanks = {
       "sourceGame": "nationalEngine",
       "q": "A policy raises government purchases but also raises taxes by the same amount. With MPC below 1, what happens to national saving?",
       "options": [
-        "It falls because G rises more than C falls",
-        "It rises because taxes fully offset spending",
+        "It falls: spending rises more than consumption falls",
+        "It rises: the tax increase fully finances spending and raises private saving",
         "It is unchanged because the budget is balanced",
         "It falls only if imports rise"
       ],
@@ -9990,8 +10725,8 @@ const questionBanks = {
       ],
       "repairSkill": "fiscal_policy_crowding_out",
       "commonError": "assumes_balanced_budget_means_no_saving_effect",
-      "feedback": "Higher G lowers saving by the full increase, while higher T lowers C only by MPC times the increase, so national saving falls.",
-      "aHash": "f2d3047c26f962f00e0987b7a367acf0fdf8af5d485fd91684a533d760da7682"
+      "feedback": "Higher government purchases lower saving by the full increase, while higher taxes lower consumption only by MPC times the increase, so national saving falls.",
+      "aHash": "423a7433ff8054790871a49ec0576d121d9b6a16e4f6db2ab7182f6e33375922"
     },
     {
       "id": 358,
@@ -10042,81 +10777,11 @@ const questionBanks = {
       "aHash": "b1a231397256d1ffd22fa9ae055f9f4c009f6c9743974d6cbc7ca1742641e6c8"
     },
     {
-      "id": 360,
-      "sourceGame": "nationalEngine",
-      "q": "A deficit raises r and lowers investment. Why does this matter in the Chapter 3 long-run model?",
-      "options": [
-        "Lower investment can reduce future capital accumulation",
-        "Lower investment raises current CPI by definition",
-        "Lower investment increases current labor force size",
-        "Lower investment raises current output immediately"
-      ],
-      "tag": "crowding_out",
-      "type": "policy",
-      "objective": "LO3.5",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "fiscal_policy_crowding_out",
-      "secondarySkills": [],
-      "repairSkill": "fiscal_policy_crowding_out",
-      "commonError": "misses_long_run_capital_accumulation_channel",
-      "feedback": "Crowding out matters because less investment today can mean less capital accumulation and lower future productive capacity.",
-      "aHash": "89181721917029139734306c09c4f3d75c8833ad4c3f5fd19c3b5a65cb6fa7e7"
-    },
-    {
-      "id": 361,
-      "sourceGame": "nationalEngine",
-      "q": "If national saving is fixed at 800 and investment demand is I = 1200 - 50r, what is equilibrium r?",
-      "options": [
-        "8",
-        "6",
-        "10",
-        "4"
-      ],
-      "tag": "loanable_funds",
-      "type": "calculation",
-      "objective": "LO3.5",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "saving_investment_equilibrium",
-      "secondarySkills": [
-        "real_interest_investment_calculation"
-      ],
-      "repairSkill": "saving_investment_equilibrium",
-      "commonError": "does_not_set_saving_equal_to_investment",
-      "feedback": "Set 800 = 1200 - 50r. Then 50r = 400, so r = 8.",
-      "aHash": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3"
-    },
-    {
-      "id": 362,
-      "sourceGame": "nationalEngine",
-      "q": "National saving rises from 700 to 900. Investment demand is I = 1300 - 100r. What happens to r?",
-      "options": [
-        "It falls from 6 to 4",
-        "It rises from 4 to 6",
-        "It falls from 7 to 9",
-        "It stays at 6"
-      ],
-      "tag": "loanable_funds",
-      "type": "calculation",
-      "objective": "LO3.5",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "saving_investment_equilibrium",
-      "secondarySkills": [
-        "loanable_funds_graph_shifts"
-      ],
-      "repairSkill": "saving_investment_equilibrium",
-      "commonError": "gets_saving_interest_rate_effect_backward",
-      "feedback": "At S=700, r=6. At S=900, r=4. Higher saving lowers r.",
-      "aHash": "5e935eb2705329b84600613999cd5b13baca45648b5b146b55102bcf08266652"
-    },
-    {
       "id": 363,
       "sourceGame": "nationalEngine",
-      "q": "Refer to the loanable funds graph. If saving is vertical, why does a rightward investment demand shift mainly raise r instead of investment?",
+      "q": "Refer to the loanable funds graph. If saving is vertical, why does a rightward investment demand shift mainly raise the real interest rate instead of investment?",
       "options": [
-        "Saving fixes the quantity of funds available",
+        "Fixed saving limits the available funds",
         "Investment demand fixes the price level",
         "The CPI basket fixes investment",
         "Labor force participation fixes r"
@@ -10132,291 +10797,15 @@ const questionBanks = {
       "commonError": "misses_vertical_saving_constraint",
       "feedback": "When saving is vertical and fixed, stronger investment demand bids up r instead of greatly raising investment.",
       "image": "loanablefunds.webp",
-      "aHash": "280197e34292f5e048b6a721e43f4084b73c8c6eef3760cf7b89da6b25e5ce7e"
-    },
-    {
-      "id": 364,
-      "sourceGame": "nationalEngine",
-      "q": "A fiscal hawk argues that cutting G raises investment. In the Chapter 3 model, what is the chain?",
-      "options": [
-        "G falls, public saving rises, national saving rises, r falls, investment rises",
-        "G falls, public saving falls, r rises, investment falls",
-        "G falls, consumption rises automatically, investment falls",
-        "G falls, GDP rises immediately, investment is unchanged"
-      ],
-      "tag": "fiscal_policy",
-      "type": "policy",
-      "objective": "LO3.5",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "fiscal_policy_crowding_out",
-      "secondarySkills": [
-        "loanable_funds_graph_shifts"
-      ],
-      "repairSkill": "fiscal_policy_crowding_out",
-      "commonError": "gets_fiscal_saving_chain_backward",
-      "feedback": "Lower government purchases raise public and national saving, lower the real interest rate, and increase investment.",
-      "aHash": "d0a45f1561df0820434280ac626a95420fe5357455c2b5e8112c05ccbea09b45"
-    },
-    {
-      "id": 365,
-      "sourceGame": "nationalEngine",
-      "q": "Actual unemployment is 6.5%, frictional is 1.8%, structural is 3.2%. What is cyclical unemployment?",
-      "options": [
-        "1.5%",
-        "5.0%",
-        "3.3%",
-        "6.5%"
-      ],
-      "tag": "natural_rate",
-      "type": "calculation",
-      "objective": "LO7.1",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "natural_rate_definition",
-      "secondarySkills": [
-        "frictional_vs_other_unemployment"
-      ],
-      "repairSkill": "natural_rate_definition",
-      "commonError": "includes_natural_rate_as_cyclical",
-      "feedback": "Natural unemployment is 1.8 + 3.2 = 5.0%. Cyclical unemployment is 6.5 - 5.0 = 1.5%.",
-      "aHash": "c25677b600e7013a35dd12215ef0d22493be0cd0250c4fb93abf19028158a5a8"
-    },
-    {
-      "id": 366,
-      "sourceGame": "nationalEngine",
-      "q": "A policy lowers structural unemployment but leaves frictional unemployment unchanged. What happens to the natural rate?",
-      "options": [
-        "It falls",
-        "It rises",
-        "It becomes zero",
-        "It becomes cyclical unemployment"
-      ],
-      "tag": "natural_rate",
-      "type": "application",
-      "objective": "LO7.1",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "natural_rate_definition",
-      "secondarySkills": [
-        "wage_rigidity_structural_unemployment"
-      ],
-      "repairSkill": "natural_rate_definition",
-      "commonError": "thinks_frictional_only_defines_natural_rate",
-      "feedback": "The natural rate includes frictional plus structural unemployment, so lowering structural unemployment lowers the natural rate.",
-      "aHash": "51a961febd461ad1ea9db3f345c3907f42988e7937e56390ff5e6b439ae33884"
-    },
-    {
-      "id": 367,
-      "sourceGame": "nationalEngine",
-      "q": "A central bank boosts demand and unemployment temporarily falls below the natural rate. What should an advisor avoid claiming?",
-      "options": [
-        "That the natural rate has permanently fallen",
-        "That actual unemployment can move below natural temporarily",
-        "That cyclical unemployment can be negative",
-        "That labor-market frictions still exist"
-      ],
-      "tag": "natural_rate",
-      "type": "trap",
-      "objective": "LO7.1",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "natural_rate_definition",
-      "secondarySkills": [],
-      "repairSkill": "natural_rate_definition",
-      "commonError": "confuses_actual_unemployment_with_natural_rate",
-      "feedback": "Actual unemployment can fall below the natural rate temporarily, but that does not prove the natural rate permanently changed.",
-      "aHash": "0a0c4e9aa507b981bd8ffcfb52836f276e0e9d1ef32038b10ecc985f86670e45"
-    },
-    {
-      "id": 368,
-      "sourceGame": "nationalEngine",
-      "q": "A country reduces wage rigidity and improves matching. Which unemployment components are targeted?",
-      "options": [
-        "Structural and frictional",
-        "Cyclical and nominal",
-        "GDP and CPI",
-        "Investment and saving"
-      ],
-      "tag": "natural_rate",
-      "type": "policy",
-      "objective": "LO7.1",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "natural_rate_definition",
-      "secondarySkills": [
-        "frictional_vs_other_unemployment"
-      ],
-      "repairSkill": "natural_rate_definition",
-      "commonError": "misses_components_of_natural_rate",
-      "feedback": "Wage rigidity is structural; matching problems are frictional. Both are part of the natural rate.",
-      "aHash": "a436537ae93109027100abe162b4adf2e4672263473935fe48b66c1a55e935f5"
-    },
-    {
-      "id": 369,
-      "sourceGame": "nationalEngine",
-      "q": "If s = 0.04 and f = 0.16, what is steady-state unemployment?",
-      "options": [
-        "20%",
-        "4%",
-        "16%",
-        "25%"
-      ],
-      "tag": "steady_state_unemployment",
-      "type": "calculation",
-      "objective": "LO7.2",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "steady_state_unemployment_calculation",
-      "secondarySkills": [],
-      "repairSkill": "steady_state_unemployment_calculation",
-      "commonError": "uses_s_or_f_as_unemployment_rate",
-      "feedback": "u = s/(s+f) = 0.04/(0.20) = 20%.",
-      "aHash": "dc934fe30a942bca07b4c288b4b3e48aa79a717d6db2b586553cd2416dc8b9b8"
-    },
-    {
-      "id": 370,
-      "sourceGame": "nationalEngine",
-      "q": "If steady-state unemployment is 12% and f = 0.44, what is s closest to?",
-      "options": [
-        "0.06",
-        "0.12",
-        "0.44",
-        "0.50"
-      ],
-      "tag": "steady_state_unemployment",
-      "type": "calculation",
-      "objective": "LO7.2",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "steady_state_unemployment_calculation",
-      "secondarySkills": [],
-      "repairSkill": "steady_state_unemployment_calculation",
-      "commonError": "does_not_solve_for_separation_rate",
-      "feedback": "s = uf/(1-u) = 0.12×0.44/0.88 = 0.06.",
-      "aHash": "bb1a364b44db63819dccae493a7d0cf92a7015ead0d9a92e48c643320aa064ca"
-    },
-    {
-      "id": 371,
-      "sourceGame": "nationalEngine",
-      "q": "If s rises from 0.02 to 0.04 and f rises from 0.18 to 0.36, what happens to steady-state unemployment?",
-      "options": [
-        "It stays at 10%",
-        "It rises to 20%",
-        "It falls to 5%",
-        "It becomes 40%"
-      ],
-      "tag": "steady_state_unemployment",
-      "type": "calculation",
-      "objective": "LO7.2",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "job_finding_job_separation_logic",
-      "secondarySkills": [
-        "steady_state_unemployment_calculation"
-      ],
-      "repairSkill": "job_finding_job_separation_logic",
-      "commonError": "focuses_on_one_flow_rate_only",
-      "feedback": "Initial u = 0.02/0.20 = 10%. New u = 0.04/0.40 = 10%. Both rates doubled.",
-      "aHash": "2c3bc2e0c5f719363b894af1875350fa791010b9353f05e78c60aab39a396a71"
-    },
-    {
-      "id": 372,
-      "sourceGame": "nationalEngine",
-      "q": "A policy reduces s from 0.06 to 0.03 while f stays at 0.27. What happens to steady-state unemployment?",
-      "options": [
-        "It falls from about 18% to 10%",
-        "It rises from 10% to about 18%",
-        "It stays at 27%",
-        "It becomes 3%"
-      ],
-      "tag": "steady_state_unemployment",
-      "type": "calculation",
-      "objective": "LO7.2",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "steady_state_unemployment_calculation",
-      "secondarySkills": [
-        "job_finding_job_separation_logic"
-      ],
-      "repairSkill": "steady_state_unemployment_calculation",
-      "commonError": "gets_separation_policy_effect_backward",
-      "feedback": "Initial u = 0.06/0.33 ≈ 18%. New u = 0.03/0.30 = 10%.",
-      "aHash": "010b8cbeac77f61ed2cb0205f39fa569a1ddd2c2d764c9823bbfa15abf7da359"
-    },
-    {
-      "id": 373,
-      "sourceGame": "nationalEngine",
-      "q": "At steady state, sE = fU. If separations exceed findings for a period, what happens before a new steady state?",
-      "options": [
-        "Unemployment rises",
-        "Unemployment falls",
-        "Labor force becomes zero",
-        "Inflation becomes negative"
-      ],
-      "tag": "steady_state_unemployment",
-      "type": "interpretation",
-      "objective": "LO7.2",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "job_finding_job_separation_logic",
-      "secondarySkills": [],
-      "repairSkill": "job_finding_job_separation_logic",
-      "commonError": "misreads_flow_imbalance",
-      "feedback": "If more workers enter unemployment than leave it, unemployment rises.",
-      "aHash": "0b17148103b12921b0c0ab20451da4e517d248a511873e081e4dc553a86719f3"
-    },
-    {
-      "id": 374,
-      "sourceGame": "nationalEngine",
-      "q": "If f = 0.20, what is the average unemployment spell, and what happens if f doubles?",
-      "options": [
-        "5 months; it falls to 2.5 months",
-        "20 months; it falls to 10 months",
-        "5 months; it rises to 10 months",
-        "2 months; it falls to 1 month"
-      ],
-      "tag": "job_finding",
-      "type": "calculation",
-      "objective": "LO7.2",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "steady_state_unemployment_calculation",
-      "secondarySkills": [],
-      "repairSkill": "steady_state_unemployment_calculation",
-      "commonError": "uses_f_as_duration_not_inverse",
-      "feedback": "Average unemployment spell is 1/f = 5 months. If f doubles to 0.40, duration falls to 2.5 months.",
-      "aHash": "41e28dc36d285a0f533e9f71d048f88aa6448cfd26e2b9d57cec76549e3aeb08"
-    },
-    {
-      "id": 375,
-      "sourceGame": "nationalEngine",
-      "q": "If s = 0.025, what is the average employment spell, and what happens if s rises to 0.05?",
-      "options": [
-        "40 months; it falls to 20 months",
-        "25 months; it rises to 50 months",
-        "4 months; it falls to 2 months",
-        "20 months; it rises to 40 months"
-      ],
-      "tag": "job_separation",
-      "type": "calculation",
-      "objective": "LO7.2",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "steady_state_unemployment_calculation",
-      "secondarySkills": [],
-      "repairSkill": "steady_state_unemployment_calculation",
-      "commonError": "uses_s_as_spell_length",
-      "feedback": "Average employment spell is 1/s = 40 months. If s rises to 0.05, it falls to 20 months.",
-      "aHash": "3829a7b9b41362588d28ae809dd82895b7e44be72f885d1e9a4cc8078a95b8b6"
+      "aHash": "927912f33169dd66d1f943b734d5d27794ceeb5b7773282ec96d64915f17c295"
     },
     {
       "id": 376,
       "sourceGame": "nationalEngine",
       "q": "A policy raises f but also raises s. What is the careful steady-state conclusion?",
       "options": [
-        "The effect on unemployment is ambiguous without magnitudes",
-        "Unemployment must fall because f rose",
+        "The effect depends on the size of each change",
+        "Unemployment must fall whenever job finding improves",
         "Unemployment must rise because s rose",
         "Unemployment must remain unchanged"
       ],
@@ -10430,146 +10819,7 @@ const questionBanks = {
       "repairSkill": "job_finding_job_separation_logic",
       "commonError": "focuses_on_one_rate_in_two_rate_model",
       "feedback": "Higher f lowers unemployment, while higher s raises it; the net effect depends on the size of each change.",
-      "aHash": "1e5236b81ccc957e14d266516da515c8ff7362f3fce716e53b51ece568e77749"
-    },
-    {
-      "id": 377,
-      "sourceGame": "nationalEngine",
-      "q": "If u = s/(s+f), which policy pair most directly lowers u?",
-      "options": [
-        "Lower s and raise f",
-        "Raise s and lower f",
-        "Raise both s and f equally",
-        "Lower both s and f equally"
-      ],
-      "tag": "steady_state_unemployment",
-      "type": "policy",
-      "objective": "LO7.2",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "job_finding_job_separation_logic",
-      "secondarySkills": [],
-      "repairSkill": "job_finding_job_separation_logic",
-      "commonError": "misses_direction_of_flow_policy",
-      "feedback": "Lower job separation and higher job finding both reduce steady-state unemployment.",
-      "aHash": "d792a60c086c42f98cb59e2dd820618e55d59802eecbf8e5f0e451ec2b50ca8e"
-    },
-    {
-      "id": 378,
-      "sourceGame": "nationalEngine",
-      "q": "A retraining program shortens job search for displaced workers but does not affect layoffs. Which parameter changes first?",
-      "options": [
-        "f rises",
-        "s rises",
-        "s falls",
-        "L falls"
-      ],
-      "tag": "job_finding",
-      "type": "policy",
-      "objective": "LO7.2",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "job_finding_job_separation_logic",
-      "secondarySkills": [
-        "sectoral_shift_matching"
-      ],
-      "repairSkill": "job_finding_job_separation_logic",
-      "commonError": "confuses_finding_rate_with_separation_rate",
-      "feedback": "Retraining and matching programs help unemployed workers find jobs faster, raising f.",
-      "aHash": "cb7ae6baeb8732154edee7583503a7458b677143ca33e720c6baab80b4737a17"
-    },
-    {
-      "id": 379,
-      "sourceGame": "nationalEngine",
-      "q": "A 100% experience-rated unemployment insurance system makes firms bear more layoff costs. Which parameter is targeted?",
-      "options": [
-        "s falls",
-        "f falls",
-        "u rises by formula",
-        "L becomes fixed"
-      ],
-      "tag": "job_separation",
-      "type": "policy",
-      "objective": "LO7.2",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "job_finding_job_separation_logic",
-      "secondarySkills": [],
-      "repairSkill": "job_finding_job_separation_logic",
-      "commonError": "confuses_layoff_incentive_with_job_finding",
-      "feedback": "Experience rating raises the cost of layoffs for firms, targeting a lower separation rate s.",
-      "aHash": "f184665d4d583435f5c598fe421a65b154fe15b3b375fec71cd793fa041630c3"
-    },
-    {
-      "id": 380,
-      "sourceGame": "nationalEngine",
-      "q": "A laid-off worker rejects the first available job to search for a better match. Which interpretation is strongest?",
-      "options": [
-        "This can raise frictional unemployment but may improve match quality",
-        "This is structural unemployment caused by a wage floor",
-        "This is always cyclical unemployment from low spending",
-        "This removes the worker from the labor force immediately"
-      ],
-      "tag": "frictional_unemployment",
-      "type": "application",
-      "objective": "LO7.3",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "ui_and_job_search_incentives",
-      "secondarySkills": [
-        "frictional_vs_other_unemployment"
-      ],
-      "repairSkill": "ui_and_job_search_incentives",
-      "commonError": "treats_search_as_purely_bad_or_structural",
-      "feedback": "Search can increase frictional unemployment duration, but it can also help workers find better matches.",
-      "aHash": "a6b672bb89f7fd4e9a2c051d0b060163f8563a7371088e68539c1feb15a0251b"
-    },
-    {
-      "id": 381,
-      "sourceGame": "nationalEngine",
-      "q": "Refer to the minimum wage graph. If a wage floor is below equilibrium, what is the likely unemployment effect in that market?",
-      "options": [
-        "No binding structural unemployment from the floor",
-        "A labor surplus from the wage floor",
-        "A labor shortage from the wage floor",
-        "Immediate elimination of frictional unemployment"
-      ],
-      "tag": "minimum_wage",
-      "type": "graph_interpretation",
-      "objective": "LO7.3",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "minimum_wage_structural_unemployment",
-      "secondarySkills": [],
-      "repairSkill": "minimum_wage_structural_unemployment",
-      "commonError": "treats_all_minimum_wages_as_binding",
-      "feedback": "A wage floor below equilibrium is not binding and does not create structural unemployment in that market.",
-      "image": "minimumwage.webp",
-      "aHash": "0a6782bab2df4a3a8b2e2e506346facbc0afa10edcdba10bcd6707305e68936f"
-    },
-    {
-      "id": 382,
-      "sourceGame": "nationalEngine",
-      "q": "A wage floor is above equilibrium. Which group is most directly rationed out of jobs?",
-      "options": [
-        "Workers willing to work at the equilibrium wage but unable to get hired",
-        "Firms willing to hire more at the higher wage",
-        "Consumers buying imported goods",
-        "Capital owners receiving rental income"
-      ],
-      "tag": "minimum_wage",
-      "type": "application",
-      "objective": "LO7.3",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "minimum_wage_structural_unemployment",
-      "secondarySkills": [
-        "wage_rigidity_structural_unemployment"
-      ],
-      "repairSkill": "minimum_wage_structural_unemployment",
-      "commonError": "confuses_labor_supply_surplus_with_labor_demand_shortage",
-      "feedback": "When wages are held above equilibrium, more workers want jobs than firms want to hire, so some workers are rationed out.",
-      "aHash": "f043024ba0f474fa7a209f97c1e0aa1d40f474659105bf16c070b20806390c83"
+      "aHash": "a2d2ac08ee1d4efe7b55f0b7db1745f532c9148391757ee2e6c971b971721c21"
     },
     {
       "id": 383,
@@ -10596,99 +10846,11 @@ const questionBanks = {
       "aHash": "6698d28e808727075b83faea522324c1db80d6dd0d0afc01970e2221dc1ac51e"
     },
     {
-      "id": 384,
-      "sourceGame": "nationalEngine",
-      "q": "A firm pays above-market wages because replacing trained workers is expensive. Which efficiency wage channel is this?",
-      "options": [
-        "Lower turnover",
-        "Better nutrition",
-        "Higher CPI accuracy",
-        "Public saving"
-      ],
-      "tag": "efficiency_wages",
-      "type": "application",
-      "objective": "LO7.3",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "efficiency_wage_theory",
-      "secondarySkills": [],
-      "repairSkill": "efficiency_wage_theory",
-      "commonError": "misses_turnover_channel",
-      "feedback": "Paying higher wages can reduce turnover when hiring and training replacements is costly.",
-      "aHash": "db0a66c73811faf7db790c8bc772d808da4dd31cc62d1077abe4beada2d5dab7"
-    },
-    {
-      "id": 385,
-      "sourceGame": "nationalEngine",
-      "q": "A firm pays above-market wages because workers cannot be perfectly monitored. Which problem is the firm addressing?",
-      "options": [
-        "Moral hazard",
-        "Substitution bias",
-        "Crowding out",
-        "GDP double counting"
-      ],
-      "tag": "efficiency_wages",
-      "type": "application",
-      "objective": "LO7.3",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "efficiency_wage_theory",
-      "secondarySkills": [],
-      "repairSkill": "efficiency_wage_theory",
-      "commonError": "confuses_moral_hazard_with_adverse_selection",
-      "feedback": "When effort cannot be perfectly monitored, workers may shirk; higher wages can reduce that moral hazard.",
-      "aHash": "d1a35d9aaaa341fa2cd6626750c9072eb1dd20de5b4492a56fcd40b3ffdaa74c"
-    },
-    {
-      "id": 386,
-      "sourceGame": "nationalEngine",
-      "q": "A firm pays high wages to attract better applicants before observing worker quality. Which problem is closest?",
-      "options": [
-        "Adverse selection",
-        "Moral hazard",
-        "CPI bias",
-        "Public deficit"
-      ],
-      "tag": "efficiency_wages",
-      "type": "application",
-      "objective": "LO7.3",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "efficiency_wage_theory",
-      "secondarySkills": [],
-      "repairSkill": "efficiency_wage_theory",
-      "commonError": "confuses_adverse_selection_with_moral_hazard",
-      "feedback": "When worker quality is hard to observe before hiring, high wages can attract better applicants, addressing adverse selection.",
-      "aHash": "31e55046b3ece7183b1f616a145a03936065f7548d4dae52c5583dd6e87e8bb0"
-    },
-    {
-      "id": 387,
-      "sourceGame": "nationalEngine",
-      "q": "Fifty short-term workers are unemployed for 3 weeks each; five long-term workers are unemployed for 45 weeks each. What share of unemployment weeks is long-term?",
-      "options": [
-        "60%",
-        "10%",
-        "40%",
-        "75%"
-      ],
-      "tag": "unemployment_duration",
-      "type": "calculation",
-      "objective": "LO7.3",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "unemployment_duration_calculation",
-      "secondarySkills": [],
-      "repairSkill": "unemployment_duration_calculation",
-      "commonError": "uses_people_share_instead_of_weeks_share",
-      "feedback": "Short-term weeks = 150. Long-term weeks = 225. Long-term share = 225/375 = 60%.",
-      "aHash": "f3586438923090c61a133d885dc5ae63c33bdbeeeab5c7efe1a63b7ff6db1156"
-    },
-    {
       "id": 388,
       "sourceGame": "nationalEngine",
       "q": "A policy expands UI benefits but also requires verified job search and provides placement services. What is the best assessment?",
       "options": [
-        "The net effect on frictional unemployment depends on search incentives and matching gains",
+        "The effect depends on search incentives and better matching",
         "Frictional unemployment must rise because UI exists",
         "Frictional unemployment must fall because placement exists",
         "Structural unemployment must become zero"
@@ -10705,129 +10867,15 @@ const questionBanks = {
       "repairSkill": "ui_and_job_search_incentives",
       "commonError": "treats_ui_effect_as_one_direction_only",
       "feedback": "UI can reduce urgency to accept jobs, but search requirements and placement services can improve matching, so the net effect depends on design.",
-      "aHash": "8d1f444a085963181bbe03cfafd52cf54179a0be078a4b17e06e8cdcc82b76ff"
-    },
-    {
-      "id": 389,
-      "sourceGame": "nationalEngine",
-      "q": "Which case is structural rather than frictional unemployment?",
-      "options": [
-        "A wage set above equilibrium leaves qualified workers unable to get jobs",
-        "A worker searches two weeks for a better job match",
-        "A new graduate compares offers across cities",
-        "A worker relocates after a sectoral shift"
-      ],
-      "tag": "structural_unemployment",
-      "type": "trap",
-      "objective": "LO7.3",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "frictional_vs_other_unemployment",
-      "secondarySkills": [
-        "wage_rigidity_structural_unemployment"
-      ],
-      "repairSkill": "frictional_vs_other_unemployment",
-      "commonError": "confuses_search_with_wage_rigidity",
-      "feedback": "Structural unemployment comes from wage rigidity and job rationing, not ordinary search and matching time.",
-      "aHash": "bde83cea32caaa5c7e118ee70f6cadbf3885defda6bd5a90fc8076eb5f3651a3"
-    },
-    {
-      "id": 390,
-      "sourceGame": "nationalEngine",
-      "q": "A city raises the minimum wage and firms reduce nonwage benefits. What does this show?",
-      "options": [
-        "Adjustment can occur through compensation margins besides headcount",
-        "The wage floor was not binding by definition",
-        "Structural unemployment must disappear",
-        "The CPI excludes labor costs"
-      ],
-      "tag": "minimum_wage",
-      "type": "policy",
-      "objective": "LO7.3",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "minimum_wage_structural_unemployment",
-      "secondarySkills": [],
-      "repairSkill": "minimum_wage_structural_unemployment",
-      "commonError": "looks_only_at_job_count_effect",
-      "feedback": "Labor-cost policy effects can show up through hours, hiring, benefits, prices, and job availability.",
-      "aHash": "fd78c1f82fb9cbc593cf88f0257e70067dffacbdb3e9e65dc43deb60cd8960b3"
-    },
-    {
-      "id": 391,
-      "sourceGame": "nationalEngine",
-      "q": "An advisor wants to reduce frictional unemployment from sectoral shifts. Which package fits best?",
-      "options": [
-        "Job information, retraining, and relocation support",
-        "Higher wage floors and stricter union entry",
-        "Lower CPI weights and higher GDP deflator",
-        "Higher public deficits and lower saving"
-      ],
-      "tag": "frictional_unemployment",
-      "type": "policy",
-      "objective": "LO7.3",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "sectoral_shift_matching",
-      "secondarySkills": [],
-      "repairSkill": "sectoral_shift_matching",
-      "commonError": "chooses_structural_policy_for_matching_problem",
-      "feedback": "Frictional unemployment from sectoral shifts is reduced by improving worker-job matching and mobility.",
-      "aHash": "bcdea45a789cf2a90b4c9415fe907da8633b46e2da6e57024fae2791344a5c0b"
-    },
-    {
-      "id": 392,
-      "sourceGame": "nationalEngine",
-      "q": "A worker is part time because full-time work is unavailable. Which broader measure captures this better than U-3?",
-      "options": [
-        "U-6",
-        "GDP deflator",
-        "CPI-U only",
-        "Natural rate formula"
-      ],
-      "tag": "labor_underutilization",
-      "type": "identification",
-      "objective": "LO7.3",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "labor_underutilization_classification",
-      "secondarySkills": [],
-      "repairSkill": "labor_underutilization_classification",
-      "commonError": "misses_part_time_for_economic_reasons_in_u6",
-      "feedback": "U-6 includes unemployed, marginally attached workers, and those working part time for economic reasons.",
-      "aHash": "50507465c472e904e2bff85b6ec444425bdd44020e00d1da6b95b8509e6a2ab1"
-    },
-    {
-      "id": 393,
-      "sourceGame": "nationalEngine",
-      "q": "If discouraged workers begin searching again before finding jobs, what happens to U-3 unemployment at first?",
-      "options": [
-        "It rises because they reenter unemployment",
-        "It falls because they are optimistic",
-        "It is unchanged because they are still jobless",
-        "It becomes U-6 automatically"
-      ],
-      "tag": "discouraged_workers",
-      "type": "application",
-      "objective": "LO7.3",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "labor_underutilization_classification",
-      "secondarySkills": [
-        "employment_status_classification"
-      ],
-      "repairSkill": "labor_underutilization_classification",
-      "commonError": "misses_reentry_into_labor_force",
-      "feedback": "When discouraged workers resume searching, they reenter the labor force as unemployed, raising U-3 initially.",
-      "aHash": "c884ce70a61254d91d0acd8c571cbca79570d9fcb2deae59c27ec0e057f75350"
+      "aHash": "8928350b1430ceb1bd1c6bd327fd089c157c57a6a2bde172de7412216b0cd38f"
     },
     {
       "id": 394,
       "sourceGame": "nationalEngine",
       "q": "A policy raises wages above equilibrium to reduce turnover, but some applicants cannot get jobs. What tradeoff is present?",
       "options": [
-        "Efficiency gains may come with structural unemployment",
-        "CPI accuracy may come with lower GDP",
+        "Efficiency gains may leave more applicants without jobs",
+        "More accurate CPI measurement may reduce the economy’s real output",
         "Higher imports may come with lower exports",
         "Real GDP may come with nominal GDP"
       ],
@@ -10843,38 +10891,14 @@ const questionBanks = {
       "repairSkill": "efficiency_wage_theory",
       "commonError": "ignores_job_rationing_from_above_equilibrium_wages",
       "feedback": "Efficiency wages can improve productivity or retention, but above-equilibrium wages can also ration jobs.",
-      "aHash": "8a816ed8105c3a2efa8603f8e009147b0ff4016079b2c63ca8e2185a4a47871c"
-    },
-    {
-      "id": 395,
-      "sourceGame": "nationalEngine",
-      "q": "Which explanation best links sectoral shifts and unemployment duration?",
-      "options": [
-        "Repeated shifts can lengthen search when skills and locations no longer match openings",
-        "Repeated shifts eliminate job search because workers move instantly",
-        "Repeated shifts create only CPI inflation",
-        "Repeated shifts lower unemployment by raising wage rigidity"
-      ],
-      "tag": "sectoral_shifts",
-      "type": "application",
-      "objective": "LO7.3",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "sectoral_shift_matching",
-      "secondarySkills": [
-        "unemployment_duration_calculation"
-      ],
-      "repairSkill": "sectoral_shift_matching",
-      "commonError": "misses_skill_location_matching_delay",
-      "feedback": "Sectoral shifts change where and what jobs exist, creating matching problems that can lengthen unemployment spells.",
-      "aHash": "5c2d0de4535e0da28cdde2dbaa2161159bd81e7cc4c1e03b14766ebb45fb6752"
+      "aHash": "8ebe9a04f83425de5b1840b30b27092c642d5a73602a20be6cabb6efd0a09df9"
     },
     {
       "id": 396,
       "sourceGame": "nationalEngine",
       "q": "A worker loses a job in a recession, but the wage in their industry is also held above equilibrium by contract. Which answer is most careful?",
       "options": [
-        "Both cyclical and structural forces may be present",
+        "Both cyclical and structural forces may matter",
         "Only frictional unemployment can be present",
         "The worker cannot be unemployed officially",
         "The case belongs only to CPI bias"
@@ -10891,39 +10915,15 @@ const questionBanks = {
       "repairSkill": "frictional_vs_other_unemployment",
       "commonError": "forces_single_unemployment_type_when_multiple_apply",
       "feedback": "A recession can create cyclical unemployment, while wage rigidity can create structural unemployment at the same time.",
-      "aHash": "5d6e6518191866c45d01e58ea01754368b285d15334047a4d9d1f9360e75aa16"
-    },
-    {
-      "id": 397,
-      "sourceGame": "nationalEngine",
-      "q": "Which policy could reduce separations without mainly raising job finding?",
-      "options": [
-        "Experience-rated UI that makes layoffs more costly for firms",
-        "A job board that improves vacancy information",
-        "Relocation support for displaced workers",
-        "A faster application matching platform"
-      ],
-      "tag": "job_separation",
-      "type": "policy",
-      "objective": "LO7.3",
-      "difficulty": "elite",
-      "conceptCluster": "national_engine_elite",
-      "primarySkill": "job_finding_job_separation_logic",
-      "secondarySkills": [
-        "ui_and_job_search_incentives"
-      ],
-      "repairSkill": "job_finding_job_separation_logic",
-      "commonError": "confuses_f_policy_with_s_policy",
-      "feedback": "Experience rating changes firms’ incentives to lay off workers, targeting the separation rate.",
-      "aHash": "7d5ab1b3ac7be6263e26ebda96f3c37a4eac4ab1a02fb4126f4d923ca123fbc4"
+      "aHash": "19432c81ce3f7b6602a347af6b9c6dc6c66a57cd940b894c64cf9fd51f98988d"
     },
     {
       "id": 398,
       "sourceGame": "nationalEngine",
       "q": "A minimum wage hike reduces turnover among employed workers but reduces hiring of new workers. What is the best assessment?",
       "options": [
-        "The policy can improve retention while worsening job rationing",
-        "The policy must reduce all structural unemployment",
+        "Better retention can come with fewer opportunities to find work",
+        "Better retention guarantees less structural unemployment for every worker",
         "The policy has no labor-market tradeoffs",
         "The policy affects only the CPI basket"
       ],
@@ -10939,15 +10939,15 @@ const questionBanks = {
       "repairSkill": "minimum_wage_structural_unemployment",
       "commonError": "ignores_multiple_labor_market_margins",
       "feedback": "Higher wages can reduce turnover for employed workers while reducing hiring opportunities for others.",
-      "aHash": "e9e961be416fd6dc3e7c91b6572746144f64d86c9805bb4178879f39b7551346"
+      "aHash": "c8356375b2314263202cea08d4862b150bf854db99390e4d00bd9915377be402"
     },
     {
       "id": 399,
       "sourceGame": "nationalEngine",
       "q": "A labor-market dashboard shows U-3 falling while U-6 stays high. What is the best warning?",
       "options": [
-        "Official unemployment may miss underemployment and marginal attachment",
-        "GDP must be overstating output",
+        "U-3 can miss underemployment and marginal attachment",
+        "Falling official unemployment proves measured GDP overstates actual production",
         "CPI must be understating imports",
         "Investment demand must be vertical"
       ],
@@ -10963,7 +10963,7 @@ const questionBanks = {
       "repairSkill": "labor_underutilization_classification",
       "commonError": "treats_u3_as_complete_labor_slack_measure",
       "feedback": "U-3 can improve while broader labor underutilization remains elevated through marginal attachment or part-time work for economic reasons.",
-      "aHash": "d64cb0a4f8a32d49a10feb3face3b47d190530bd1d0589e184a698d5fabc1b5f"
+      "aHash": "c9b58d74b8aa29523a30054f4fd778d0d77ec71aa18de0dfabd9828ffb0878a0"
     }
   ]
 };
@@ -10988,7 +10988,7 @@ const microSkillRepairPools = {
       "primarySkill": "gdp_components_identity",
       "repairSkill": "gdp_components_identity",
       "commonError": "misstates_gdp_identity",
-      "feedback": "GDP by expenditure is C + I + G + NX.",
+      "feedback": "The expenditure approach adds consumption, investment, government purchases, and net exports. Net exports subtract spending on imports because GDP measures production within the country.",
       "aHash": "939e17d747c4823e036228ae27c0f24f2d76fcbebf65f9fab857f2b8bfa85bfc"
     },
     {
@@ -11009,7 +11009,7 @@ const microSkillRepairPools = {
       "primarySkill": "gdp_components_identity",
       "repairSkill": "gdp_components_identity",
       "commonError": "reverses_exports_and_imports",
-      "feedback": "Net exports are exports minus imports.",
+      "feedback": "Exports are goods and services produced domestically and sold abroad; imports are produced abroad and bought domestically. Subtract imports from exports to find net exports. A negative result means imports exceed exports.",
       "aHash": "5c24529a0caa6aab717e3e5cb71857ec8fd41df439a1df55ab3bcc3e4b0d6524"
     }
   ],
@@ -11053,7 +11053,7 @@ const microSkillRepairPools = {
       "primarySkill": "gdp_inclusion_exclusion",
       "repairSkill": "gdp_inclusion_exclusion",
       "commonError": "double_counts_intermediate_goods",
-      "feedback": "Intermediate goods are excluded to avoid double counting.",
+      "feedback": "The vegetables are inputs used to produce the meals. Their value is already included in the price of the final meals, so counting both would count the same production twice.",
       "aHash": "984970aacd01cebb2ae912b6f806b624f73d44a9325a5ef9e5b9f35b29f09b07"
     }
   ],
@@ -11061,7 +11061,7 @@ const microSkillRepairPools = {
     {
       "id": 5004,
       "sourceGame": "nationalEngine",
-      "q": "If C = 200, I = 80, G = 70, and NX = -20, what is GDP?",
+      "q": "An economy spends 200 on consumption, 80 on investment, and 70 on government purchases. Net exports are −20. What is GDP using the expenditure approach?",
       "options": [
         "330",
         "370",
@@ -11076,13 +11076,13 @@ const microSkillRepairPools = {
       "primarySkill": "gdp_expenditure_calculation",
       "repairSkill": "gdp_expenditure_calculation",
       "commonError": "forgets_negative_net_exports",
-      "feedback": "GDP = 200 + 80 + 70 - 20 = 330.",
+      "feedback": "Add spending on final output: 200 + 80 + 70 − 20 = 330. Net exports are negative because imports exceed exports; subtracting that net amount keeps foreign production out of domestic GDP.",
       "aHash": "5426d2ca50f244fb43fe9eafc82da08f33f3b4f8d9140802bd0102e780b629d6"
     },
     {
       "id": 5005,
       "sourceGame": "nationalEngine",
-      "q": "GDP is 600, C is 350, I is 100, and G is 120. What is NX?",
+      "q": "An economy has GDP of 600, consumption of 350, investment of 100, and government purchases of 120. What are net exports?",
       "options": [
         "30",
         "70",
@@ -11097,7 +11097,7 @@ const microSkillRepairPools = {
       "primarySkill": "gdp_expenditure_calculation",
       "repairSkill": "gdp_expenditure_calculation",
       "commonError": "does_not_solve_for_net_exports",
-      "feedback": "NX = 600 - 350 - 100 - 120 = 30.",
+      "feedback": "GDP equals consumption + investment + government purchases + net exports. Subtract the three known spending components: 600 − 350 − 100 − 120 = 30. Positive net exports mean exports exceed imports by 30.",
       "aHash": "624b60c58c9d8bfb6ff1886c2fd605d2adeb6ea4da576068201b6c6958ce93f4"
     }
   ],
@@ -11120,7 +11120,7 @@ const microSkillRepairPools = {
       "primarySkill": "real_vs_nominal_gdp",
       "repairSkill": "real_vs_nominal_gdp",
       "commonError": "confuses_nominal_and_real_gdp",
-      "feedback": "Nominal GDP uses current-year prices.",
+      "feedback": "Nominal GDP values each year’s production at that year’s prices. It can rise because production rises, prices rise, or both; real GDP separates production changes from price changes.",
       "aHash": "9034485a9930200856806081137c8cca5f07b017b5bad609b2bb95005bac3018"
     },
     {
@@ -11371,7 +11371,7 @@ const microSkillRepairPools = {
     {
       "id": 5018,
       "sourceGame": "nationalEngine",
-      "q": "There are 90 employed and 10 unemployed. What is the unemployment rate?",
+      "q": "A community has 90 employed people and 10 people who are unemployed and actively looking for work. What is the unemployment rate?",
       "options": [
         "10%",
         "11.1%",
@@ -11386,13 +11386,13 @@ const microSkillRepairPools = {
       "primarySkill": "labor_force_statistics_calculation",
       "repairSkill": "labor_force_statistics_calculation",
       "commonError": "uses_employed_instead_of_labor_force",
-      "feedback": "Labor force = 90 + 10 = 100. Unemployment rate = 10/100 = 10%.",
+      "feedback": "The labor force includes the 90 employed and 10 unemployed people, for a total of 100. Divide the 10 unemployed people by that labor force: 10/100 × 100 = 10%. The denominator is not just the number employed.",
       "aHash": "3ccce1f4da948035fd36a399576a50a5248ddc02dd008f3c3668df57c0aa75b5"
     },
     {
       "id": 5019,
       "sourceGame": "nationalEngine",
-      "q": "Labor force is 160 and adult population is 200. What is labor force participation?",
+      "q": "Out of an adult population of 200, 160 people are either employed or unemployed and actively looking for work. What is the labor force participation rate?",
       "options": [
         "80%",
         "40%",
@@ -11407,7 +11407,7 @@ const microSkillRepairPools = {
       "primarySkill": "labor_force_statistics_calculation",
       "repairSkill": "labor_force_statistics_calculation",
       "commonError": "confuses_lfpr_with_unemployment_rate",
-      "feedback": "LFPR = labor force / adult population × 100 = 160/200 = 80%.",
+      "feedback": "The labor force is 160 and the adult population is 200. Participation is 160/200 × 100 = 80%. This measures the share participating in the labor market, not the share of participants who are unemployed.",
       "aHash": "f39dda09980ef9a67b8524c7ab4fe02526c9c91d00f11fae1824c7d0954d257a"
     }
   ],
@@ -11415,7 +11415,7 @@ const microSkillRepairPools = {
     {
       "id": 5020,
       "sourceGame": "nationalEngine",
-      "q": "In the Chapter 3 model, total output is determined by what?",
+      "q": "In the classical closed-economy model, total output is determined by what?",
       "options": [
         "Capital, labor, and technology",
         "Taxes, CPI, and unemployment",
@@ -11436,12 +11436,12 @@ const microSkillRepairPools = {
     {
       "id": 5021,
       "sourceGame": "nationalEngine",
-      "q": "If K, L, and technology are fixed, what happens to output in the Chapter 3 model when G rises?",
+      "q": "In the long-run production model, the economy’s capital, labor, and technology stay fixed. What happens to total output when government purchases rise?",
       "options": [
         "Output stays fixed",
-        "Output rises by G",
-        "Output falls by G",
-        "Output becomes CPI"
+        "Output rises by the amount of the additional government purchases",
+        "Output falls by the amount of the additional government purchases",
+        "Output becomes the consumer price index"
       ],
       "tag": "production",
       "type": "repair",
@@ -11451,7 +11451,7 @@ const microSkillRepairPools = {
       "primarySkill": "production_function_output",
       "repairSkill": "production_function_output",
       "commonError": "imports_multiplier_logic_into_fixed_output_model",
-      "feedback": "With K, L, and technology fixed, output stays fixed.",
+      "feedback": "In this long-run production model, capital, labor, and technology determine output. If all three stay fixed, higher government purchases change how output is used rather than increasing the amount produced.",
       "aHash": "d15d031053c18ae8faab32a94443dc49096dd6a5da547d9690bd58e7452298f9"
     }
   ],
@@ -11474,7 +11474,7 @@ const microSkillRepairPools = {
       "primarySkill": "returns_to_scale_classification",
       "repairSkill": "returns_to_scale_classification",
       "commonError": "confuses_returns_to_scale_types",
-      "feedback": "Constant returns means doubling inputs doubles output.",
+      "feedback": "Constant returns to scale means increasing all inputs by the same proportion increases output by that proportion. Doubling both capital and labor therefore doubles output; changing only one input is a different experiment.",
       "aHash": "d1a427425fea5bf04eaaaba82969d29cb2c7e754da184528f8700ff37b81a316"
     },
     {
@@ -11539,7 +11539,7 @@ const microSkillRepairPools = {
       "primarySkill": "diminishing_marginal_product",
       "repairSkill": "diminishing_marginal_product",
       "commonError": "misses_fixed_capital_diminishing_mpl",
-      "feedback": "With capital fixed, adding more labor eventually lowers MPL.",
+      "feedback": "Each additional worker must share the same amount of equipment with more workers. Eventually, the extra output contributed by another worker falls. Total output can still rise even while marginal product falls.",
       "aHash": "2cd09168947543c2843379db453da229be35287a33cb6627077a6dd5be7e987f"
     }
   ],
@@ -11547,7 +11547,7 @@ const microSkillRepairPools = {
     {
       "id": 5026,
       "sourceGame": "nationalEngine",
-      "q": "Output rises from 20 to 32 when one more worker is hired. What is that worker’s MPL?",
+      "q": "A workshop’s output rises from 20 to 32 units when it hires one more worker and keeps other inputs fixed. What is the marginal product of the additional worker?",
       "options": [
         "12",
         "32",
@@ -11562,7 +11562,7 @@ const microSkillRepairPools = {
       "primarySkill": "total_product_to_marginal_product",
       "repairSkill": "total_product_to_marginal_product",
       "commonError": "uses_total_output_instead_of_change_in_output",
-      "feedback": "MPL is the change in output: 32 - 20 = 12.",
+      "feedback": "Marginal product is the extra output generated by the additional worker: 32 − 20 = 12 units. Total output is now 32, but only the increase of 12 is attributed to that extra worker.",
       "aHash": "6b51d431df5d7f141cbececcf79edf3dd861c3b4069f0b11661a3eefacbba918"
     },
     {
@@ -11583,7 +11583,7 @@ const microSkillRepairPools = {
       "primarySkill": "total_product_to_marginal_product",
       "repairSkill": "total_product_to_marginal_product",
       "commonError": "confuses_total_product_level_with_marginal_product",
-      "feedback": "Marginal product is the slope, or change, of total product.",
+      "feedback": "Marginal product measures the extra output from one additional unit of an input. On a total product graph, it is the slope: the change in output divided by the change in the input.",
       "aHash": "036e71fa542522bb8587824cf78c26619dfe6c0497c80b4893f92aced4ae92df"
     }
   ],
@@ -11606,7 +11606,7 @@ const microSkillRepairPools = {
       "primarySkill": "labor_demand_mpl_real_wage",
       "repairSkill": "labor_demand_mpl_real_wage",
       "commonError": "misses_mpl_real_wage_rule",
-      "feedback": "A competitive firm hires until MPL equals the real wage.",
+      "feedback": "An additional worker adds the marginal product of labor to output. Hiring is worthwhile while that extra output is worth more than the worker’s wage. At the interior profit-maximizing choice, marginal product equals the wage measured in units of output.",
       "aHash": "8e049efa0cca8823fb9c361816627abf6548a4b2236af15dd8d0a77ead598458"
     },
     {
@@ -11769,7 +11769,7 @@ const microSkillRepairPools = {
     {
       "id": 5036,
       "sourceGame": "nationalEngine",
-      "q": "Higher disposable income with the same consumption function causes what?",
+      "q": "How is a change in disposable income represented on an unchanged consumption function?",
       "options": [
         "Movement along the consumption function",
         "An upward shift of the consumption function",
@@ -11790,7 +11790,7 @@ const microSkillRepairPools = {
     {
       "id": 5037,
       "sourceGame": "nationalEngine",
-      "q": "Higher household wealth causes what to the consumption function?",
+      "q": "How does an increase in wealth affect the consumption function at each level of disposable income?",
       "options": [
         "It shifts upward",
         "It shifts downward automatically",
@@ -11880,7 +11880,7 @@ const microSkillRepairPools = {
     {
       "id": 5041,
       "sourceGame": "nationalEngine",
-      "q": "A lower real interest rate causes what on a fixed investment function?",
+      "q": "How does a lower real interest rate affect investment along a fixed investment-demand curve?",
       "options": [
         "Movement toward higher investment",
         "A leftward shift of investment demand",
@@ -11939,7 +11939,7 @@ const microSkillRepairPools = {
       "primarySkill": "saving_identity_calculation",
       "repairSkill": "saving_identity_calculation",
       "commonError": "uses_income_instead_of_disposable_income",
-      "feedback": "Private saving = Y - T - C = 1000 - 200 - 650 = 150.",
+      "feedback": "Private saving is Y−T−C=1200−250−700=250. Taxes reduce disposable income; consumption uses part of the remainder.",
       "aHash": "1e472b39b105d349bcd069c4a711b44a2fffb8e274714bb07ecfff69a9a7f67b"
     },
     {
@@ -12035,7 +12035,7 @@ const microSkillRepairPools = {
     {
       "id": 5048,
       "sourceGame": "nationalEngine",
-      "q": "In loanable funds, an increase in national saving usually does what to r?",
+      "q": "How does an increase in national saving affect the equilibrium real interest rate in the loanable-funds market?",
       "options": [
         "Lowers r",
         "Raises r",
@@ -12094,7 +12094,7 @@ const microSkillRepairPools = {
       "primarySkill": "fiscal_policy_crowding_out",
       "repairSkill": "fiscal_policy_crowding_out",
       "commonError": "misses_crowding_out_channel",
-      "feedback": "Crowding out occurs when lower saving raises r and reduces private investment.",
+      "feedback": "Crowding out occurs when lower saving raises the real interest rate and reduces private investment.",
       "aHash": "b548ad9748081c01ed87272ee854a746fb5d12624e55df3c7f5089ff00303cec"
     }
   ],
@@ -12433,7 +12433,7 @@ const microSkillRepairPools = {
     {
       "id": 5066,
       "sourceGame": "nationalEngine",
-      "q": "A wage floor above equilibrium causes what?",
+      "q": "How does a wage floor above the market-clearing wage affect the labor market?",
       "options": [
         "Labor supplied exceeds labor demanded",
         "Labor demanded exceeds labor supplied",
@@ -12479,7 +12479,7 @@ const microSkillRepairPools = {
     {
       "id": 5068,
       "sourceGame": "nationalEngine",
-      "q": "Efficiency wages are paid above equilibrium mainly to do what?",
+      "q": "Why might a firm pay an efficiency wage?",
       "options": [
         "Improve effort, retention, or worker quality",
         "Lower GDP by definition",
@@ -12616,8 +12616,8 @@ const microSkillBridgePools = {
       "sourceGame": "nationalEngine",
       "q": "A household buys a foreign-made laptop for school. What is the correct GDP accounting logic?",
       "options": [
-        "C rises, imports rise, and domestic GDP is not increased by the foreign production",
-        "C rises, so GDP must rise by the full laptop price",
+        "Consumption rises, imports rise, and domestic GDP is not increased by the foreign production",
+        "Consumption rises, so GDP must rise by the full laptop price",
         "Imports fall because the laptop was bought domestically",
         "Investment rises because the laptop lasts more than one year"
       ],
@@ -12630,7 +12630,7 @@ const microSkillBridgePools = {
       "repairSkill": "gdp_components_identity",
       "commonError": "forgets_import_offset",
       "feedback": "The purchase enters consumption, but the import is subtracted through NX, so foreign production is not counted in domestic GDP.",
-      "aHash": "6e10d4af7ec5b886c1999d7c9bf3b9aafbcc93c39f62ac58d70863633d84b6f1"
+      "aHash": "5ec1e603cf53c504bd20f3dddee5de9d0631cfbe0a1565858f114b809dfdf6bf"
     }
   ],
   "gdp_inclusion_exclusion": [
@@ -12702,7 +12702,7 @@ const microSkillBridgePools = {
     {
       "id": 6005,
       "sourceGame": "nationalEngine",
-      "q": "C rises by 100 because consumers buy more imported goods, and imports also rise by 100. What happens to GDP, all else equal?",
+      "q": "Consumption rises by 100 because consumers buy more imported goods, and imports also rise by 100. What happens to GDP, all else equal?",
       "options": [
         "GDP is unchanged",
         "GDP rises by 100",
@@ -12989,7 +12989,7 @@ const microSkillBridgePools = {
     {
       "id": 6018,
       "sourceGame": "nationalEngine",
-      "q": "In the Chapter 3 model, K, L, and technology are fixed. A tax cut raises consumption. What happens to output?",
+      "q": "In the classical closed-economy model, K, L, and technology are fixed. A tax cut raises consumption. What happens to output?",
       "options": [
         "Output stays fixed; demand composition adjusts",
         "Output rises by the full tax cut",
@@ -13004,7 +13004,7 @@ const microSkillBridgePools = {
       "primarySkill": "production_function_output",
       "repairSkill": "production_function_output",
       "commonError": "imports_multiplier_logic_into_fixed_output_model",
-      "feedback": "Chapter 3 fixes output by production inputs. The tax cut changes consumption, saving, and investment pressure.",
+      "feedback": "The classical closed-economy model fixes output through production inputs. The tax cut changes consumption, national saving, and the pressure on the equilibrium interest rate and investment.",
       "aHash": "960fb855f9d5721a6f04a4685d91d7c9024c3cb602ad99d412af1a76327ddd89"
     },
     {
@@ -13320,10 +13320,10 @@ const microSkillBridgePools = {
       "sourceGame": "nationalEngine",
       "q": "Taxes rise by 200 and MPC = 0.6. What happens to consumption and private saving?",
       "options": [
-        "C falls 120; private saving falls 80",
-        "C falls 80; private saving falls 120",
-        "C rises 120; private saving rises 80",
-        "C falls 200; private saving is unchanged"
+        "Consumption falls 120; private saving falls 80",
+        "Consumption falls 80; private saving falls 120",
+        "Consumption rises 120; private saving rises 80",
+        "Consumption falls 200; private saving is unchanged"
       ],
       "tag": "consumption",
       "type": "diagnostic_calculation",
@@ -13334,7 +13334,7 @@ const microSkillBridgePools = {
       "repairSkill": "mpc_disposable_income",
       "commonError": "confuses_consumption_change_with_saving_change",
       "feedback": "Disposable income falls 200. Consumption falls 120 and private saving falls by the remaining 80.",
-      "aHash": "81e04abe99e95af3fb7f034542abceec941df3bc2a872da1cf69c887454e1149"
+      "aHash": "5f4ecc3d922c8e8a6dc8918a968a2609ceb5aead6d09a649f5ce5e8b4876ef78"
     }
   ],
   "consumption_function_calculation": [
@@ -13421,7 +13421,7 @@ const microSkillBridgePools = {
       "primarySkill": "consumption_movement_vs_shift",
       "repairSkill": "consumption_movement_vs_shift",
       "commonError": "ignores_offsetting_movement_and_shift",
-      "feedback": "Higher disposable income raises C along the curve, but lower wealth shifts the curve down.",
+      "feedback": "Higher disposable income raises consumption along the curve, but lower wealth shifts the curve down.",
       "aHash": "38dd270789c01d67ddf3e1e26099406551477b4510dc4fe7c7e2323b8d965f2d"
     }
   ],
@@ -13465,7 +13465,7 @@ const microSkillBridgePools = {
       "primarySkill": "real_interest_investment_calculation",
       "repairSkill": "real_interest_investment_calculation",
       "commonError": "misses_real_rate_decline",
-      "feedback": "Real r falls from 6 to 3, so investment rises from 900 to 1200.",
+      "feedback": "The real interest rate falls from 6 to 3, so investment rises from 900 to 1200.",
       "aHash": "b2ab241bc260f7d891100cf6f2f4c77211719875fb19276df840576384a9e753"
     }
   ],
@@ -13509,7 +13509,7 @@ const microSkillBridgePools = {
       "primarySkill": "investment_function_movement_vs_shift",
       "repairSkill": "investment_function_movement_vs_shift",
       "commonError": "ignores_offsetting_shift_and_movement",
-      "feedback": "Higher expected profits shift demand right, while higher r reduces investment along the curve.",
+      "feedback": "Higher expected profits shift demand right, while higher real interest rate reduces investment along the curve.",
       "aHash": "38dd270789c01d67ddf3e1e26099406551477b4510dc4fe7c7e2323b8d965f2d"
     }
   ],
@@ -13563,9 +13563,9 @@ const microSkillBridgePools = {
       "sourceGame": "nationalEngine",
       "q": "Government purchases rise with taxes and output fixed. What is the correct loanable funds chain?",
       "options": [
-        "Saving falls, r rises, investment falls",
-        "Saving rises, r falls, investment rises",
-        "Investment demand falls, r falls, saving rises",
+        "Saving falls, the real interest rate rises, investment falls",
+        "Saving rises, the real interest rate falls, investment rises",
+        "Investment demand falls, the real interest rate falls, saving rises",
         "CPI rises, saving rises, investment rises"
       ],
       "tag": "crowding_out",
@@ -13576,8 +13576,8 @@ const microSkillBridgePools = {
       "primarySkill": "fiscal_policy_crowding_out",
       "repairSkill": "fiscal_policy_crowding_out",
       "commonError": "gets_crowding_out_chain_backward",
-      "feedback": "Higher G lowers public saving and national saving, raising r and crowding out investment.",
-      "aHash": "dc94a67da5708a768ddec83b2289d93c302ad77af05490905b871425b6202909"
+      "feedback": "Higher government purchases lower public saving and national saving, raising r and crowding out investment.",
+      "aHash": "33857cdff48eb2a840c141907ae18b989962b2fbc22b452b54280c788e4dbd65"
     },
     {
       "id": 6045,
@@ -13597,7 +13597,7 @@ const microSkillBridgePools = {
       "primarySkill": "fiscal_policy_crowding_out",
       "repairSkill": "fiscal_policy_crowding_out",
       "commonError": "assumes_balanced_budget_means_no_saving_effect",
-      "feedback": "Higher taxes lower C by 150, raising saving by 150. Higher G lowers saving by 200. Net saving falls by 50.",
+      "feedback": "Higher taxes lower consumption by 150, raising saving by 150. Higher government purchases lower saving by 200. Net saving falls by 50.",
       "aHash": "9fb529f4a0da1472f3722f59cc94c818f6e40153b5467acdbfe2fbd41d6d30f8"
     }
   ],
@@ -13607,10 +13607,10 @@ const microSkillBridgePools = {
       "sourceGame": "nationalEngine",
       "q": "Saving shifts right and investment demand does not change. What happens in loanable funds?",
       "options": [
-        "r falls and investment rises",
-        "r rises and investment falls",
-        "r falls and investment falls",
-        "r rises and investment rises"
+        "The real interest rate falls and investment rises",
+        "The real interest rate rises and investment falls",
+        "The real interest rate falls and investment falls",
+        "The real interest rate rises and investment rises"
       ],
       "tag": "loanable_funds",
       "type": "diagnostic",
@@ -13621,17 +13621,17 @@ const microSkillBridgePools = {
       "repairSkill": "loanable_funds_graph_shifts",
       "commonError": "gets_saving_shift_effect_backward",
       "feedback": "More saving lowers the real interest rate and raises investment.",
-      "aHash": "af29fe57530f89786555192375cdea1ab709a19be5e8ac623fba46097e2df333"
+      "aHash": "b8668b69ae307dabed1ae3301f250010747141c8f3ffafc607be24f311dbc896"
     },
     {
       "id": 6047,
       "sourceGame": "nationalEngine",
-      "q": "Saving shifts left while investment demand shifts right. What is guaranteed?",
+      "q": "Saving shifts left while investment demand shifts right. What happens to the equilibrium real interest rate? Use the classical closed-economy model with vertical national saving.",
       "options": [
         "The real interest rate rises",
-        "Investment rises",
-        "Investment falls",
-        "The real interest rate falls"
+        "The real interest rate falls",
+        "The real interest rate remains unchanged",
+        "The direction of the real interest rate is indeterminate"
       ],
       "tag": "loanable_funds",
       "type": "diagnostic",
@@ -13641,7 +13641,7 @@ const microSkillBridgePools = {
       "primarySkill": "loanable_funds_graph_shifts",
       "repairSkill": "loanable_funds_graph_shifts",
       "commonError": "claims_quantity_effect_when_ambiguous",
-      "feedback": "Both shifts push r upward. Investment quantity is ambiguous.",
+      "feedback": "Lower saving and higher investment demand both raise the real interest rate. Because the saving schedule is vertical, equilibrium investment falls to equal the lower saving quantity.",
       "aHash": "b18d2d8610275911d67838216e6fdfba8a0b22b8e57a41d417b5585936554da0"
     }
   ],
@@ -13651,7 +13651,7 @@ const microSkillBridgePools = {
       "sourceGame": "nationalEngine",
       "q": "Better expected profits raise investment demand, but national saving is fixed. What happens first?",
       "options": [
-        "r rises more than investment quantity",
+        "The real interest rate rises more than investment quantity",
         "Investment rises with no r change",
         "Saving shifts right automatically",
         "Investment demand shifts left"
@@ -13665,7 +13665,7 @@ const microSkillBridgePools = {
       "repairSkill": "investment_demand_vs_saving_shift",
       "commonError": "ignores_fixed_saving_constraint",
       "feedback": "With fixed saving, stronger investment demand mainly bids up the real interest rate.",
-      "aHash": "fbb0256d07a0cebc193c17bb577027f4fc684bd62989ad40e43798f2f2da6e91"
+      "aHash": "33cd7406cd674b744370c196c323b6c9591709d429a947144c77010c40f75d2e"
     },
     {
       "id": 6049,
@@ -13673,8 +13673,8 @@ const microSkillBridgePools = {
       "q": "Investment demand shifts right and saving shifts right at the same time. What is guaranteed?",
       "options": [
         "Investment rises",
-        "r rises",
-        "r falls",
+        "The real interest rate rises",
+        "The real interest rate falls",
         "Investment falls"
       ],
       "tag": "loanable_funds",
@@ -14110,9 +14110,9 @@ const microSkillBridgePools = {
     {
       "id": 6069,
       "sourceGame": "nationalEngine",
-      "q": "Investment demand rises while national saving is fixed. Which equilibrium change follows?",
+      "q": "In the closed-economy loanable-funds model, investment demand rises while national saving is fixed. Which equilibrium change follows?",
       "options": [
-        "The real interest rate rises while investment rises",
+        "The real interest rate rises while investment remains fixed",
         "The real interest rate falls while investment rises",
         "The real interest rate rises while investment falls",
         "Both remain fixed"
@@ -14125,8 +14125,8 @@ const microSkillBridgePools = {
       "primarySkill": "saving_investment_equilibrium",
       "repairSkill": "saving_investment_equilibrium",
       "commonError": "treats_investment_demand_shift_as_movement_only",
-      "feedback": "Higher investment demand raises both the equilibrium real interest rate and investment quantity.",
-      "aHash": "02fa835907ec25a55e8bdadfcb68459b67a8eabbcc4f0ad45926460e85185652"
+      "feedback": "In the closed-economy model, equilibrium investment equals the fixed national saving quantity. Higher investment demand therefore raises the real interest rate until desired investment again equals saving.",
+      "aHash": "d77a40242da34538473f89d5220d267104b23ac11010e12f0bbc2e950c1add7c"
     }
   ],
   "ui_and_job_search_incentives": [
@@ -14154,7 +14154,7 @@ const microSkillBridgePools = {
     {
       "id": 6071,
       "sourceGame": "nationalEngine",
-      "q": "Experience-rated unemployment insurance taxes are designed mainly to do what?",
+      "q": "What is the main purpose of experience-rated unemployment-insurance taxes?",
       "options": [
         "Make firms bear more of the cost when they lay off workers",
         "Force every unemployed worker to accept the first job",
@@ -14389,7 +14389,7 @@ const microSkillBridgePools = {
       "primarySkill": "private_public_national_saving",
       "repairSkill": "private_public_national_saving",
       "commonError": "reverses_public_saving_effect",
-      "feedback": "Public saving is T - G, so higher G lowers public saving.",
+      "feedback": "Public saving is T - G, so higher government purchases lower public saving.",
       "aHash": "51a961febd461ad1ea9db3f345c3907f42988e7937e56390ff5e6b439ae33884"
     }
   ],
