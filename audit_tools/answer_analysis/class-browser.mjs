@@ -1,6 +1,6 @@
 import fs from 'node:fs';import path from 'node:path';import http from 'node:http';import assert from 'node:assert/strict';import {createRequire} from 'node:module';
 import {fixture,csv} from './class-check.mjs';
-const require=createRequire(import.meta.url),root=process.cwd(),out=path.join(root,'tmp/class-analysis-browser');fs.mkdirSync(out,{recursive:true});
+const require=createRequire(import.meta.url),root=process.cwd(),out=path.join(root,'tmp/answer-release/class-browser');fs.mkdirSync(out,{recursive:true});
 const server=http.createServer((req,res)=>{try{let p=path.resolve(root,'.'+new URL(req.url,'http://local').pathname);if(!p.startsWith(root+path.sep))throw Error('path');if(fs.statSync(p).isDirectory())p=path.join(p,'index.html');res.setHeader('Content-Type',({'.html':'text/html','.js':'text/javascript','.css':'text/css'})[path.extname(p)]||'application/octet-stream');res.end(fs.readFileSync(p));}catch(_){res.writeHead(404).end();}});
 await new Promise(r=>server.listen(0,'127.0.0.1',r));const origin='http://127.0.0.1:'+server.address().port;
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');let browser;
@@ -10,11 +10,11 @@ try{
  const supplied=process.argv.slice(2),inputs=supplied.length?supplied.map(file=>({name:path.basename(file),mimeType:'text/csv',buffer:fs.readFileSync(file)})):[{name:'class-a.csv',mimeType:'text/csv',buffer:Buffer.from(csv(fixture('one',15,12)))},{name:'class-b.csv',mimeType:'text/csv',buffer:Buffer.from(csv(fixture('two',10,4)))}];
  await page.locator('#files').setInputFiles(inputs[0]);await page.waitForFunction(()=>document.querySelector('#status').textContent.startsWith('15 recorded answers'));
  await page.locator('#files').setInputFiles(inputs[1]);await page.waitForFunction(()=>document.querySelector('#status').textContent.startsWith('25 recorded answers'));
- assert.equal(await page.locator('#file-list li').count(),2);assert((await page.locator('#overview').innerText()).includes('Class overview'));
+ assert.equal(await page.locator('#file-list li').count(),2);assert((await page.locator('#overview').innerText()).includes('How is the class performing?'));
  await page.locator('#files').setInputFiles(inputs[0]);await page.waitForFunction(()=>document.querySelector('#import-status').textContent.includes('1 identical file'));assert.equal(await page.locator('#file-list li').count(),2);
  const [download]=await Promise.all([page.waitForEvent('download'),page.locator('#download-summary').click()]);await download.saveAs(path.join(out,'summary.csv'));assert(fs.readFileSync(path.join(out,'summary.csv'),'utf8').includes('"25"'));
  await page.setViewportSize({width:390,height:844});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await page.screenshot({path:path.join(out,'class-report-mobile.png')});await page.evaluate(()=>window.scrollTo(0,document.querySelector('#overview').offsetTop));await page.screenshot({path:path.join(out,'class-overview-mobile.png')});
- await page.locator('#file-list button').first().click();assert((await page.locator('#status').innerText()).startsWith('10 recorded answers'));
+ await page.locator('#loaded-files').evaluate(node=>node.open=true);await page.locator('#file-list button').first().click();assert((await page.locator('#status').innerText()).startsWith('10 recorded answers'));
  await page.locator('#files').setInputFiles({name:'broken.csv',mimeType:'text/csv',buffer:Buffer.from('bad file')});await page.waitForFunction(()=>document.querySelector('#errors').textContent.includes('broken.csv'));assert((await page.locator('#status').innerText()).startsWith('10 recorded answers'));
  await page.locator('#clear').click();assert.equal(await page.locator('#file-list li').count(),0);assert(await page.locator('#download-summary').isDisabled());
  // Classroom-sized batch and fast separate imports must both survive async reads.

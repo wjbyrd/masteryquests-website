@@ -36,7 +36,7 @@ assert(one.includes('Review minimum: 1 response'));assert(one.includes('Results 
 assert(a.feedbackSummary(small,{fileCount:1,minResponses:5}).includes('selected minimum of 5 responses'));
 assert(a.feedbackSummary(small,{fileCount:1,minResponses:10}).includes('selected minimum of 10 responses'));
 assert(a.feedbackSummary(result,{fileCount:6}).includes('recorded run time 21m; median run time 3m 30s; longest recorded correct-answer streak 3'));
-assert(a.feedbackSummary(result,{fileCount:6}).includes('Average completion time: 3m 30s, based on 6 runs'));
+assert(a.feedbackSummary(result,{fileCount:6}).includes('Mean ended-run duration: 3m 30s, based on 6 runs'));
 assert(a.feedbackSummary(result,{fileCount:6}).includes('Review 1: '+a.reviewQuestions(result)[0].prompt));
 console.log('PASS: time/streak totals, overlapping exports, partial and missing data, zero values, filters, private fields, and shared 1/5/10 response thresholds.');
 assert.equal(o.averageResponseTimeMs,6500);assert.equal(o.medianResponseTimeMs,6500);assert.equal(o.timedResponses,48);
@@ -53,7 +53,7 @@ assert.equal(a.analyze([]).overview.timedResponses,0);
 assert.equal(a.responseDuration(6500),'6.5s');assert.equal(a.responseDuration(null),'Not recorded');
 const useful=a.feedbackSummary(result,{fileCount:6,grouping:'objectives'});
 assert(useful.indexOf('Start the review with Tax incidence')<useful.indexOf('Selection:'));
-assert(useful.includes('Most common choice marked incorrect:'));assert(useful.includes('Suggested next step:'));assert(useful.includes('6.5s average; 6.5s median'));
+assert(useful.includes('Most common choice marked incorrect:'));assert(useful.includes('Suggested next step:'));assert(useful.includes('6.5s median (middle value); 6.5s average'));
 assert(a.feedbackSummary(a.analyze(rows.filter(r=>r.answerSnapshotJSON&&JSON.parse(r.answerSnapshotJSON).questionID==='S1')),{minResponses:1}).includes('All shown answers with a recorded result were correct'));
 const tied=releaseRows().filter(r=>JSON.parse(r.answerSnapshotJSON).questionID==='T2').slice(0,2).map((r,i)=>{const snap=JSON.parse(r.answerSnapshotJSON);snap.selectedIndex=i?2:0;snap.selectedAnswer=snap.options[snap.selectedIndex];return {...r,correct:0,answerSnapshotJSON:JSON.stringify(snap)};});
 assert(a.feedbackSummary(a.analyze(tied),{minResponses:1}).includes('2 incorrect choices tied at 1 response each'));

@@ -1,0 +1,275 @@
+[
+  {
+    "width": 1440,
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "targets": [
+          [
+            "#summary-text"
+          ]
+        ],
+        "summary": [
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        ]
+      }
+    ],
+    "passes": 47
+  },
+  {
+    "width": 768,
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "targets": [
+          [
+            "#summary-text"
+          ]
+        ],
+        "summary": [
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        ]
+      }
+    ],
+    "passes": 47
+  },
+  {
+    "width": 390,
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "targets": [
+          [
+            "tr:nth-child(1) > td:nth-child(5) > .rate"
+          ],
+          [
+            "#difficulty > .table-wrap[role=\"region\"] > table > tbody > tr:nth-child(1) > td:nth-child(6)"
+          ],
+          [
+            "tr:nth-child(2) > td:nth-child(5) > .rate"
+          ],
+          [
+            "#difficulty > .table-wrap[role=\"region\"] > table > tbody > tr:nth-child(2) > td:nth-child(6)"
+          ],
+          [
+            "tr:nth-child(3) > td:nth-child(5) > .rate"
+          ],
+          [
+            "#difficulty > .table-wrap[role=\"region\"] > table > tbody > tr:nth-child(3) > td:nth-child(6)"
+          ],
+          [
+            "tr:nth-child(4) > td:nth-child(5) > .rate"
+          ],
+          [
+            "#difficulty > .table-wrap[role=\"region\"] > table > tbody > tr:nth-child(4) > td:nth-child(6)"
+          ],
+          [
+            "tr:nth-child(5) > td:nth-child(5) > .rate"
+          ],
+          [
+            "#difficulty > .table-wrap[role=\"region\"] > table > tbody > tr:nth-child(5) > td:nth-child(6)"
+          ],
+          [
+            "tr:nth-child(6) > td:nth-child(5) > .rate"
+          ],
+          [
+            "#difficulty > .table-wrap[role=\"region\"] > table > tbody > tr:nth-child(6) > td:nth-child(6)"
+          ],
+          [
+            "#encounters > .compact-table.table-wrap[role=\"region\"] > table > tbody > tr:nth-child(1) > td:nth-child(3) > .rate"
+          ],
+          [
+            "#encounters > .compact-table.table-wrap[role=\"region\"] > table > tbody > tr:nth-child(2) > td:nth-child(3) > .rate"
+          ],
+          [
+            "#encounters > .compact-table.table-wrap[role=\"region\"] > table > tbody > tr:nth-child(3) > td:nth-child(3) > .rate"
+          ],
+          [
+            "#progression > .table-wrap[role=\"region\"] > table > tbody > tr:nth-child(1) > td:nth-child(3)"
+          ],
+          [
+            "#progression > .table-wrap[role=\"region\"] > table > tbody > tr:nth-child(2) > td:nth-child(3)"
+          ],
+          [
+            "#progression > .table-wrap[role=\"region\"] > table > tbody > tr:nth-child(3) > td:nth-child(3)"
+          ],
+          [
+            "#progression > .table-wrap[role=\"region\"] > table > tbody > tr:nth-child(4) > td:nth-child(3)"
+          ],
+          [
+            "#progression > .table-wrap[role=\"region\"] > table > tbody > tr:nth-child(5) > td:nth-child(3)"
+          ],
+          [
+            "#progression > .table-wrap[role=\"region\"] > table > tbody > tr:nth-child(6) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(7) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(8) > td:nth-child(3)"
+          ],
+          [
+            "#topic-results > .table-wrap[role=\"region\"] > table > tbody > tr:nth-child(1) > td:nth-child(5)"
+          ],
+          [
+            "#topic-results > .table-wrap[role=\"region\"] > table > tbody > tr:nth-child(1) > td:nth-child(6)"
+          ],
+          [
+            "tr:nth-child(1) > td:nth-child(7) > .evidence"
+          ],
+          [
+            "tr:nth-child(1) > td:nth-child(7) > .evidence > .review-tag"
+          ],
+          [
+            "#topic-results > .table-wrap[role=\"region\"] > table > tbody > tr:nth-child(2) > td:nth-child(5)"
+          ],
+          [
+            "#topic-results > .table-wrap[role=\"region\"] > table > tbody > tr:nth-child(2) > td:nth-child(6)"
+          ],
+          [
+            "tr:nth-child(2) > td:nth-child(7) > .evidence"
+          ],
+          [
+            "tr:nth-child(2) > td:nth-child(7) > .evidence > .review-tag"
+          ],
+          [
+            "#topic-results > .table-wrap[role=\"region\"] > table > tbody > tr:nth-child(3) > td:nth-child(5)"
+          ],
+          [
+            "#topic-results > .table-wrap[role=\"region\"] > table > tbody > tr:nth-child(3) > td:nth-child(6)"
+          ],
+          [
+            "tr:nth-child(3) > td:nth-child(7) > .evidence"
+          ],
+          [
+            "tr:nth-child(3) > td:nth-child(7) > .evidence > .review-tag"
+          ],
+          [
+            "#topic-results > .table-wrap[role=\"region\"] > table > tbody > tr:nth-child(4) > td:nth-child(5)"
+          ],
+          [
+            "#topic-results > .table-wrap[role=\"region\"] > table > tbody > tr:nth-child(4) > td:nth-child(6)"
+          ],
+          [
+            "tr:nth-child(4) > td:nth-child(7) > .evidence"
+          ],
+          [
+            "#review-results > .table-wrap[role=\"region\"] > table > tbody > tr:nth-child(1) > td:nth-child(4) > .rate"
+          ],
+          [
+            "#review-results > .table-wrap[role=\"region\"] > table > tbody > tr:nth-child(1) > td:nth-child(5)"
+          ],
+          [
+            "#review-results > .table-wrap[role=\"region\"] > table > tbody > tr:nth-child(2) > td:nth-child(4) > .rate"
+          ],
+          [
+            "#review-results > .table-wrap[role=\"region\"] > table > tbody > tr:nth-child(2) > td:nth-child(5)"
+          ],
+          [
+            "#review-results > .table-wrap[role=\"region\"] > table > tbody > tr:nth-child(3) > td:nth-child(4) > .rate"
+          ],
+          [
+            "#review-results > .table-wrap[role=\"region\"] > table > tbody > tr:nth-child(3) > td:nth-child(5)"
+          ],
+          [
+            "#summary-text"
+          ],
+          [
+            "#q-WyJzeW50aGV0aWMtbWFya2V0IiwiVDEiLCJjYzJhM2UwMzMzNmU4ZjcwZDcyMjBiYzg4YzMxMGI0ZmE4N2IwMzljMWE0OGNkMWZjYmQyZjBmYTI0NmEyMDNiIl0 > summary > h3"
+          ],
+          [
+            "caption"
+          ],
+          [
+            "div[aria-label=\"Export support matrix\"] > table > tbody > tr:nth-child(1) > td:nth-child(4)"
+          ],
+          [
+            "div[aria-label=\"Export support matrix\"] > table > tbody > tr:nth-child(1) > td:nth-child(5)"
+          ],
+          [
+            "div[aria-label=\"Export support matrix\"] > table > tbody > tr:nth-child(2) > td:nth-child(4)"
+          ],
+          [
+            "div[aria-label=\"Export support matrix\"] > table > tbody > tr:nth-child(2) > td:nth-child(5)"
+          ],
+          [
+            "div[aria-label=\"Export support matrix\"] > table > tbody > tr:nth-child(3) > td:nth-child(4)"
+          ],
+          [
+            "div[aria-label=\"Export support matrix\"] > table > tbody > tr:nth-child(3) > td:nth-child(5)"
+          ],
+          [
+            "div[aria-label=\"Export support matrix\"] > table > tbody > tr:nth-child(4) > td:nth-child(4)"
+          ],
+          [
+            "div[aria-label=\"Export support matrix\"] > table > tbody > tr:nth-child(4) > td:nth-child(5)"
+          ]
+        ],
+        "summary": [
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        ]
+      }
+    ],
+    "passes": 48
+  }
+]

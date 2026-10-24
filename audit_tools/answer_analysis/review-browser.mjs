@@ -41,8 +41,8 @@ try{
     await page.waitForFunction(()=>document.querySelector('#import-status').textContent.startsWith('1 file added.'));
   }
   await load([...rows,...versions]);
-  const completion=page.locator('.run-metrics .metric').filter({hasText:'Average completion time'});
-  assert.equal(await completion.locator('strong').innerText(),'3m 30s');
+  const completion=page.locator('#progression tr').filter({hasText:'Mean ended-run duration'}).locator('td').nth(1);
+  assert.equal(await completion.innerText(),'3m 30s');
   assert.equal(await page.locator('.run-metrics .metric').count(),4);
   assert.equal(await page.locator('.review-link').count(),5);
   async function checkLinks(){
@@ -61,13 +61,13 @@ try{
   await checkLinks();
   await page.locator('#copy-summary').click();
   assert((await page.locator('#summary-text').inputValue()).includes('Review 1: Which side'));
-  assert((await page.locator('#summary-text').inputValue()).includes('Average completion time: 3m 30s'));
+  assert((await page.locator('#summary-text').inputValue()).includes('Mean ended-run duration: 3m 30s'));
   await page.locator('#overview').screenshot({path:path.join(out,'overview-desktop.png')});
   await page.locator('#results').screenshot({path:path.join(out,'review-desktop.png')});
   await page.locator('#mode').selectOption('quiz');
   await page.locator('#minimum').selectOption('1');
   await checkLinks();
-  assert.equal(await completion.locator('strong').innerText(),'3m');
+  assert.equal(await completion.innerText(),'3m');
   const [download]=await Promise.all([page.waitForEvent('download'),page.locator('#download-summary').click()]);
   const downloaded=path.join(out,'summary.csv');await download.saveAs(downloaded);
   const exported=parseCSV(fs.readFileSync(downloaded,'utf8')),headers=exported.shift().map(value=>value.replace(/^\uFEFF/,''));
@@ -87,7 +87,7 @@ try{
   const positions=await page.locator('.run-metrics .metric').evaluateAll(cards=>cards.map(card=>({top:card.offsetTop,left:card.offsetLeft})));
   assert.equal(positions[0].top,positions[1].top);assert.equal(positions[2].top,positions[3].top);
   await load(rows.filter(row=>row.event==='question'));
-  assert.equal(await completion.locator('strong').innerText(),'Not recorded');
+  assert.equal(await completion.innerText(),'Not available');
   await load(releaseRows().map(row=>({...row,correct:''})));
   assert.equal(await page.locator('.review-link').count(),0);
   assert((await page.locator('.question summary p').first().innerText()).includes('Unavailable'));

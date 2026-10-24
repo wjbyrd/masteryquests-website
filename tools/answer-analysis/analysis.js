@@ -1,5 +1,6 @@
 (function(root){
   'use strict';
+  const dashboard=typeof module==='object'&&module.exports?require('./dashboard-analysis.js'):root.MQDashboardAnalysis;
   function parseCSV(text){
     const rows=[];let row=[],field='',quoted=false;
     for(let i=0;i<text.length;i++){
@@ -28,9 +29,9 @@
   const groupKey=(r,s)=>JSON.stringify([gameKey(r,s),String(s.questionID),s.questionRevision]);
   function conditions(r,s){
     const support=json(r.supportJSON),n=s.priorExposureCount;
-    return {exposure:n===0?'first':Number.isInteger(n)&&n>0?'repeat':'unknown',assistance:support?(support.artifactApplied||support.artifactRemovedCanonical?.length||support.modeRemovedCanonical?.length?'assisted':'unassisted'):'unknown',mode:r.mode||'unknown'};
+    return {exposure:n===0?'first':Number.isInteger(n)&&n>0?'repeat':'unknown',assistance:support?(support.artifactApplied||support.artifactRemovedCanonical?.length||support.modeRemovedCanonical?.length?'assisted':'unassisted'):'unknown',mode:r.mode||'unknown',game:gameKey(r,s),run:JSON.stringify([gameKey(r,s),r.runID||r.run_id||''])};
   }
-  const matches=(c,f)=>['exposure','assistance','mode'].every(k=>!f[k]||f[k]==='all'||f[k]===c[k]);
+  const matches=(c,f)=>['exposure','assistance','mode','game','run'].every(k=>!f[k]||f[k]==='all'||f[k]===c[k]);
   const numeric=value=>value!==null&&value!==undefined&&value!==''&&typeof value!=='boolean'&&Number.isFinite(Number(value))&&Number(value)>=0?Number(value):null;
   const median=values=>{const sorted=[...values].sort((a,b)=>a-b),mid=Math.floor(sorted.length/2);return sorted.length?(sorted.length%2?sorted[mid]:(sorted[mid-1]+sorted[mid])/2):null;};
   const timing=values=>({averageResponseTimeMs:values.length?values.reduce((a,b)=>a+b,0)/values.length:null,medianResponseTimeMs:median(values),timedResponses:values.length});
@@ -73,7 +74,7 @@
       }
       metadata.set(key,m);
     }
-    const groups=new Map(),seen=new Set(),runs=new Set(),runAliases=new Map(),topics=new Map(),objectives=new Map(),files=new Set(),games=new Set();
+    const groups=new Map(),seen=new Set(),runs=new Set(),runAliases=new Map(),topics=new Map(),objectives=new Map(),files=new Set(),games=new Set(),allAnswers=[],answers=[],events=[];
     const overview={correct:0,knownCorrectness:0,unknownRunAnswers:0},responseTimes=[];
     const stats={accepted:0,included:0,unresolved:0,duplicates:0,rapidGuesses:0,drafts:0,unverifiableIDs:0,missingObjectives:0,keyConflicts:0,objectiveConflicts:0};
     function aggregate(map,key,fields,r,run){
@@ -92,12 +93,17 @@
       const eventIdentity=eventId?JSON.stringify(['event',eventScope,run||'',eventId]):null;
       if((identity&&seen.has(identity))||(eventIdentity&&seen.has(eventIdentity))){stats.duplicates++;continue;}
       if(identity)seen.add(identity);if(eventIdentity)seen.add(eventIdentity);
+      events.push(r);
       if(!isAccepted){if(['rapid_guessing','rapid_guess_detected'].includes(event)||event==='answer_evaluated'&&(flag(r.rapid_guess)||flag(r.rapidGuess)))stats.rapidGuesses++;if(['exam_answer_initial','exam_answer_revision'].includes(event))stats.drafts++;continue;}
       stats.accepted++;if(!id)stats.unverifiableIDs++;
       if(!s){stats.unresolved++;continue;}
-      const c=conditions(r,s);if(!matches(c,filters))continue;
+      const c=conditions(r,s);
       const key=groupKey(r,s),m=metadata.get(key);
-      if(m.signatures.size>1){stats.unresolved++;continue;}
+      if(m.signatures.size>1){if(matches(c,filters))stats.unresolved++;continue;}
+      const item={row:r,snapshot:s,key,runKey:run?JSON.stringify([gameKey(r,s),run]):null,exposure:c.exposure};
+      allAnswers.push(item);
+      if(!matches(c,filters))continue;
+      answers.push(item);
       stats.included++;
       const game=r.game||r.game_id||s.gameID||'Unknown game',gameID=gameKey(r,s);games.add(game);
       if(!groups.has(key)){
@@ -125,14 +131,15 @@
     }
     const rollup=map=>[...map.values()].map(({runs,labels,...a})=>({...a,runCount:runs.size,labels:[...labels],labelConflict:labels.size>1}));
     const objectiveResults=rollup(objectives);
-    return {stats,filters:{...filters},overview:{...overview,...timing(responseTimes),...runContext(prepared,runs,runAliases),runs:runs.size,questions:groups.size,files:files.size,games:[...games]},topics:rollup(topics),objectives:objectiveResults,
+    const result={stats,filters:{...filters},overview:{...overview,...timing(responseTimes),...runContext(prepared,runs,runAliases),runs:runs.size,questions:groups.size,files:files.size,games:[...games]},topics:rollup(topics),objectives:objectiveResults,
       groups:[...groups.values()].map(({runs,responseTimes,...g})=>({...g,...timing(responseTimes),runCount:runs.size,games:[...g.games],modes:[...g.modes]}))};
+    return dashboard.enrich(result,{allAnswers,answers,events,runEvents:prepared,runAliases,snapshot,gameKey,runAlias});
   }
   const plural=(n,one,many=one+'s')=>`${n} ${n===1?one:many}`;
   function duration(ms){if(ms===null||ms===undefined)return 'Not recorded';const seconds=Math.round(ms/1000),hours=Math.floor(seconds/3600),minutes=Math.floor(seconds%3600/60);return [hours?hours+'h':'',minutes?minutes+'m':'',seconds%60||!seconds?(seconds%60)+'s':''].filter(Boolean).join(' ');}
   function responseDuration(ms){return ms==null?'Not recorded':ms<100?'less than 0.1s':ms<60000?`${Number((ms/1000).toFixed(1))}s`:duration(ms);}
   const reviewMinimum=value=>Math.max(1,Math.floor(Number(value)||5));
-  function runContextText(o){return `Whole-run context: recorded run time ${duration(o.recordedTimeMs)}; median run time ${duration(o.medianRunTimeMs)}; longest recorded correct-answer streak ${o.bestStreak===null?'not recorded':o.bestStreak}. Average completion time: ${duration(o.averageCompletionTimeMs)}, based on ${plural(o.completionRuns,'run')} with a recorded end time (including runs ended early). Time recorded for ${o.timedRuns}/${o.runs} runs; streaks for ${o.streakRuns}/${o.runs}. Includes answers outside the filters; incomplete exports may understate these values.`;}
+  function runContextText(o){return `Whole-run context: recorded run time ${duration(o.recordedTimeMs)}; median run time ${duration(o.medianRunTimeMs)}; longest recorded correct-answer streak ${o.bestStreak===null?'not recorded':o.bestStreak}. Mean ended-run duration: ${duration(o.averageCompletionTimeMs)}, based on ${plural(o.completionRuns,'run')} with a recorded end time (including runs ended early). This is not successful completion time. Time recorded for ${o.timedRuns}/${o.runs} runs; streaks for ${o.streakRuns}/${o.runs}. Includes answers outside the filters; incomplete exports may understate these values.`;}
   function objectiveLabel(group){
     const clean=value=>String(value||'').replace(/^LO\s*\d+(?:\.\d+)*(?:\s*[—–:_-]\s*|\s+|$)/i,'').replaceAll('_',' ').trim();
     const labels=[...new Set((group.labels||[]).map(clean).filter(Boolean))];
@@ -179,9 +186,24 @@
         lines.push(`Suggested next step: ${sufficient(reviewArea)?'revisit':'explore'} ${label(reviewArea)} with a worked example, ask students to explain each step, then use a fresh question to check understanding.${sufficient(reviewArea)?'':' Treat this as an initial discussion because the evidence is limited.'}`);
       }else if(s.included)lines.push(`More responses are needed to choose a specific question or ${grouping==='objectives'?'learning objective':'topic'} to revisit at the selected review minimum.`);
     }
-    lines.push(o.timedResponses?`Time per answered question: ${responseDuration(o.averageResponseTimeMs)} average; ${responseDuration(o.medianResponseTimeMs)} median (middle value), based on ${o.timedResponses} of ${plural(s.included,'shown answer')}.`:'Time per answered question: not recorded in the shown answers.');
+    const supportedDifficulty=result.difficulties.filter(g=>g.label!=='Unknown'&&sufficient(g,Math.max(5,min)));
+    if(!s.keyConflicts&&!result.quality.difficultyConflicts&&supportedDifficulty.length>1){
+      lines.push('Authored difficulty observations: '+supportedDifficulty.map(g=>`${g.label}: ${accuracy(g)} (${g.correct}/${g.knownCorrectness}), median response ${responseDuration(g.medianResponseTimeMs)}`).join('; ')+'. Different question mixes and runs may explain these differences.');
+    }else lines.push('Difficulty comparison: insufficient verified authored difficulty or response coverage for a comparison. Unverified recorded labels are kept separate.');
+    const support=result.remediation.roles.filter(g=>g.count);
+    if(support.length){
+      lines.push('Instructional support observations: '+support.map(g=>`${g.label}: ${accuracy(g)} (${g.correct}/${g.knownCorrectness}; ${plural(g.runCount,'run')}${sufficient(g)?'':'; limited evidence'})`).join('; ')+'. Repair success does not establish mastery.');
+      const retest=result.remediation.linkedRetests;
+      lines.push(retest.count?`Post-remediation retest accuracy: ${accuracy(retest)} (${retest.correct}/${retest.knownCorrectness}; ${plural(retest.runCount,'run')}${sufficient(retest)?'':'; limited evidence'}), using explicitly linked, ordered responses. This does not establish a causal learning gain.`:'Post-remediation retest accuracy: not available without an observed incorrect origin and a linked, ordered repair or bridge.');
+    }else lines.push('Remediation outcomes: not available in this selection.');
+    lines.push('Sequence initiation, completion and abandonment, skill encounters, and checkpoint retry rates are not available from consistent explicit records.');
+    const p=result.progression;
+    lines.push(`Game progression: ${p.successful} successful completions, ${p.early} early endings, ${p.unsuccessful} unsuccessful endings, ${p.unknown} unknown. Observed successful completion rate: ${p.successfulRate===null?'not available':Math.round(p.successfulRate*100)+'%'} (${p.successful}/${p.represented} represented runs; unknown outcomes remain in the denominator). Median successful completion time: ${duration(p.medianSuccessfulTimeMs)} (${p.successfulTimedRuns} timed successes). Normal mode completion does not establish mastery.`);
+    lines.push(`Coverage depth: ${result.coverage.encountered} question versions encountered; ${result.coverage.atLeastFive} with at least five graded responses; ${result.coverage.atLeastTen} with at least ten. Total-bank percentage is unavailable without an authoritative inventory.`);
+    lines.push(o.timedResponses?`Time per answered question: ${responseDuration(o.medianResponseTimeMs)} median (middle value); ${responseDuration(o.averageResponseTimeMs)} average, based on ${o.timedResponses} of ${plural(s.included,'shown answer')}.`:'Time per answered question: not recorded in the shown answers.');
     lines.push(runContextText(o));
     lines.push(`Selection: ${plural(fileCount,'file')} loaded; ${plural(o.files,'file')} represented. Filters: ${filters.exposure[f.exposure||'all']||'all attempts'}; ${filters.assistance[f.assistance||'all']||'all responses regardless of choice removal'}; mode ${f.mode&&f.mode!=='all'?f.mode:'all modes'}. Review minimum: ${plural(min,'response')} with a recorded result per topic, objective, or question.`);
+    if(f.game&&f.game!=='all'||f.run&&f.run!=='all')lines.push(`Additional selection: game ${f.game&&f.game!=='all'?f.game:'all games'}; run ${f.run&&f.run!=='all'?f.run:'all runs'}.`);
     if(s.unresolved)lines.push(`${plural(s.unresolved,'accepted response')} lacked usable saved question details; this analysis excludes those records.`);
     if(s.missingObjectives)lines.push(`${plural(s.missingObjectives,'shown response')} had no learning objective.`);
     if(result.objectives.some(a=>a.labelConflict))lines.push('Some learning-objective descriptions conflict. Their original labels remain in the report; those objectives are excluded from feedback comparisons.');

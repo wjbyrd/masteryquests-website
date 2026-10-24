@@ -1,0 +1,119 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import http from 'node:http';
+import assert from 'node:assert/strict';
+import {createRequire} from 'node:module';
+import {dashboardRows,referenceShapeRows} from './dashboard-fixtures.mjs';
+import {csv} from './release-fixtures.mjs';
+import {parseCSV} from '../telemetry_contract/validate.mjs';
+const require=createRequire(import.meta.url),root=process.cwd();
+const out=path.join(root,'audit_tools/answer_analysis/dashboard-evidence');fs.mkdirSync(out,{recursive:true});
+const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
+const server=http.createServer((req,res)=>{try{
+  let file=path.resolve(root,'.'+new URL(req.url,'http://local').pathname);if(!file.startsWith(root+path.sep))throw Error('path');
+  if(fs.statSync(file).isDirectory())file=path.join(file,'index.html');
+  res.setHeader('Content-Type',({'.html':'text/html','.js':'text/javascript','.css':'text/css'})[path.extname(file)]||'application/octet-stream');res.end(fs.readFileSync(file));
+}catch{res.writeHead(404).end();}});
+await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
+const origin='http://127.0.0.1:'+server.address().port;let browser;
+try{
+  browser=await chromium.launch({channel:'msedge',headless:true});
+  const context=await browser.newContext({viewport:{width:1440,height:1000},permissions:['clipboard-read','clipboard-write'],acceptDownloads:true});
+  const page=await context.newPage(),errors=[],external=[];page.on('pageerror',error=>errors.push(error.message));
+  await context.route('**/*',route=>{if(route.request().url().startsWith(origin))return route.continue();external.push(route.request().url());return route.abort();});
+  await page.goto(origin+'/tools/answer-analysis/');
+  await page.locator('#files').setInputFiles({name:'synthetic-class.csv',mimeType:'text/csv',buffer:Buffer.from(csv(dashboardRows()))});
+  await page.waitForFunction(()=>document.querySelector('#status').textContent.startsWith('48 recorded answers'));
+  const stage=process.argv.includes('--before')?'before':'after';
+  await page.screenshot({path:path.join(out,stage+'-desktop.png'),fullPage:true});
+  await page.setViewportSize({width:390,height:844});
+  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+  await page.screenshot({path:path.join(out,stage+'-mobile.png'),fullPage:true});
+  if(stage==='after'){
+    const checks=[];
+    await page.locator('#overview').screenshot({path:path.join(out,'after-overview-mobile.png')});
+    await page.setViewportSize({width:1440,height:1000});
+    await page.locator('#overview').screenshot({path:path.join(out,'after-overview-desktop.png')});
+    assert.equal(await page.locator('#overview .metric').count(),6);
+    assert((await page.locator('#overview').innerText()).includes('46s'));
+    assert((await page.locator('#progression').innerText()).includes('11m'));
+    assert((await page.locator('#difficulty').innerText()).includes('0 of 48'));
+    assert((await page.locator('#remediation').innerText()).includes('6 linked responses'));
+    checks.push('Median headline, successful duration, unknown local difficulty and linked support');
+    await page.locator('.review-link').first().focus();await page.keyboard.press('Enter');
+    const first=await page.locator('.question[open]').getAttribute('id');
+    assert(await page.locator('.question[open] summary').evaluate(node=>document.activeElement===node));
+    await page.getByRole('button',{name:'Review next: 2',exact:true}).click();
+    assert.notEqual(await page.locator('.question[open]').getAttribute('id'),first);
+    await page.locator('.question[open]').screenshot({path:path.join(out,'after-question-desktop.png')});
+    await page.locator('#topic-sort').selectOption('name');
+    const names=await page.locator('#topic-results .cell-link').allTextContents();assert.deepEqual(names,[...names].sort((a,b)=>a.localeCompare(b)));
+    for(const sort of ['runs','responses','time','accuracy'])await page.locator('#topic-sort').selectOption(sort);
+    await page.locator('#topic-results .cell-link').first().click();assert.equal(await page.locator('.question').count(),1);
+    assert((await page.locator('#status').innerText()).includes('48 shown'));
+    await page.locator('#show-all-questions').click();assert.equal(await page.locator('.question').count(),4);
+    await page.locator('#question-search').fill('T2');assert.equal(await page.locator('.question').count(),1);
+    await page.locator('#show-all-questions').click();
+    await page.evaluate(()=>location.hash='question-0');await page.waitForFunction(()=>document.querySelector('.question[open]'));
+    checks.push('Keyboard review links and next, original hash alias, topic sorting, drill-down and search');
+    await page.locator('#exposure').selectOption('repeat');assert((await page.locator('#status').innerText()).includes('24 shown'));
+    assert((await page.locator('#progression').innerText()).includes('11m'));
+    assert((await page.locator('#encounters').innerText()).includes('Repeat encounter'));
+    assert((await page.locator('#remediation').innerText()).includes('6 linked responses'));
+    await page.locator('#copy-summary').click();
+    const feedback=await page.locator('#summary-text').inputValue();assert(feedback.includes('Game progression: 3 successful completions'));assert(feedback.includes('Time per answered question:'));
+    const [download]=await Promise.all([page.waitForEvent('download'),page.locator('#download-summary').click()]);
+    const csvPath=path.join(out,'filtered-summary.csv');await download.saveAs(csvPath);
+    const table=parseCSV(fs.readFileSync(csvPath,'utf8')),header=table.shift().map(v=>v.replace(/^\uFEFF/,''));assert(table.every(row=>row.length===header.length));
+    const overall=Object.fromEntries(header.map((h,i)=>[h,table.find(row=>row[0]==='class')[i]]));
+    assert.equal(overall.answers,'24');assert.equal(overall.successfulRuns,'3');assert.equal(overall.medianSuccessfulCompletionTimeMs,'660000');assert.equal(overall.successfulCompletionRate,'0.5');
+    assert(table.some(row=>row[0]==='question_encounter'));assert(table.some(row=>row[0]==='post_remediation_retest'));
+    await page.locator('#summary-text').fill('Edited teaching plan.');
+    const [teaching]=await Promise.all([page.waitForEvent('download'),page.locator('#download-feedback').click()]);const teachingPath=path.join(out,'teaching-summary.txt');await teaching.saveAs(teachingPath);assert.equal(fs.readFileSync(teachingPath,'utf8'),'Edited teaching plan.');
+    await page.locator('#reset-filters').click();
+    await page.locator('#run').selectOption(JSON.stringify(['synthetic-market','run-3']));assert((await page.locator('#status').innerText()).includes('8 shown'));assert((await page.locator('#progression').innerText()).includes('Ended early'));
+    await page.locator('#mode').selectOption('quiz');assert((await page.locator('#status').innerText()).includes('0 shown'));assert((await page.locator('#overview').innerText()).includes('No usable responses'));
+    await page.locator('#reset-filters').click();
+    checks.push('Response filters preserve whole-run denominators; run/mode intersection, reset, CSV and edited teaching summary');
+    await context.setOffline(true);
+    await page.locator('#mode').selectOption('quiz');await page.locator('#minimum').selectOption('1');await page.locator('.review-link').first().click();
+    assert(await page.locator('.question[open] table').isVisible());await page.locator('#reset-filters').click();
+    checks.push('Already-loaded dashboard operates offline, including filtering and review');
+    await context.setOffline(false);
+    await page.addScriptTag({path:process.env.AXE_MODULE||path.join(root,'tmp/answer-release/a11y/node_modules/axe-core/axe.min.js')});
+    const accessibility=[];
+    for(const width of [1440,768,390]){
+      await page.setViewportSize({width,height:1000});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+      await page.locator('#methodology').evaluate(node=>node.open=true);await page.locator('#summary-preview').evaluate(node=>node.open=true);
+      const scan=await page.evaluate(async()=>{const r=await axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa','best-practice']}});return {violations:r.violations,incomplete:r.incomplete.map(v=>({id:v.id,impact:v.impact,targets:v.nodes.map(n=>n.target),summary:v.nodes.map(n=>n.failureSummary)})),passes:r.passes.length};});
+      accessibility.push({width,...scan});
+    }
+    fs.writeFileSync(path.join(out,'accessibility.json'),JSON.stringify(accessibility,null,2));
+    assert(accessibility.every(scan=>scan.violations.length===0),JSON.stringify(accessibility.map(scan=>({width:scan.width,violations:scan.violations.map(v=>({id:v.id,targets:v.nodes.map(n=>n.target)}))}))));
+    const contrasts=await page.evaluate(()=>{
+      function luminance(color){const rgb=color.match(/[\d.]+/g).slice(0,3).map(Number).map(v=>{v/=255;return v<=.04045?v/12.92:((v+.055)/1.055)**2.4;});return .2126*rgb[0]+.7152*rgb[1]+.0722*rgb[2];}
+      return ['#summary-text','.rate','.meta','.review-tag','.review-link','.metric strong','.metric span','.metric small'].map(selector=>{
+        const node=document.querySelector(selector),foreground=getComputedStyle(node).color;let ancestor=node,background='rgb(255,255,255)';
+        while(ancestor){const value=getComputedStyle(ancestor).backgroundColor;if(value!=='rgba(0, 0, 0, 0)'&&value!=='transparent'){background=value;break;}ancestor=ancestor.parentElement;}
+        const a=luminance(foreground),b=luminance(background);return {selector,foreground,background,ratio:(Math.max(a,b)+.05)/(Math.min(a,b)+.05)};
+      });
+    });
+    assert(contrasts.every(item=>item.ratio>=4.5),JSON.stringify(contrasts));fs.writeFileSync(path.join(out,'contrast-check.json'),JSON.stringify(contrasts,null,2));
+    checks.push('axe-core WCAG A/AA and best-practice checks at desktop, tablet and mobile widths');
+    await page.locator('#clear').click();await page.locator('#files').setInputFiles({name:'synthetic-reference-shape.csv',mimeType:'text/csv',buffer:Buffer.from(csv(referenceShapeRows()))});
+    await page.waitForFunction(()=>document.querySelector('#status').textContent.startsWith('881 recorded answers'));
+    assert.equal(await page.locator('.question').count(),25);assert((await page.locator('#overview').innerText()).includes('787 / 881'));
+    await page.locator('#show-all-questions').click();
+    await page.getByRole('button',{name:'Next page',exact:true}).click();assert((await page.locator('#question-context').innerText()).includes('26–50'));
+    await page.locator('#question-search').fill('synthetic-cost-353');assert.equal(await page.locator('.question').count(),1);
+    await page.locator('#question-search').fill('no matching item');assert.equal(await page.locator('.question').count(),0);
+    await page.locator('#show-all-questions').click();assert.equal(await page.locator('.question').count(),25);
+    await page.locator('#overview').screenshot({path:path.join(out,'synthetic-reference-overview.png')});
+    await page.locator('#clear').click();assert(await page.locator('#empty-state').isVisible());assert.equal(await page.locator('.question').count(),0);
+    checks.push('Synthetic 18/881/354/787 reference, median/mean, pagination, search and clear');
+    fs.writeFileSync(path.join(out,'browser-results.json'),JSON.stringify({checks,errors,external},null,2));
+    console.log(checks.map(check=>'PASS: '+check).join('\n'));
+  }
+  assert.deepEqual(errors,[]);assert.deepEqual(external,[]);
+  console.log('PASS: '+stage+' screenshots, mobile overflow, local-only assets and console.');
+}finally{await browser?.close();server.close();}
